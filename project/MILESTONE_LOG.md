@@ -54,3 +54,15 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 | 2026-09-29（核验日） | DEMO-001 | product | REVIEW | 完整交付元数据 | v0.1 | deliverables/product/DEMO-001/v0.1/DELIVERABLE.json | 6项验收PASS | Task所列产物实际存在，规格与交付元数据一致 |
 | 2026-09-29（核验日） | DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 产品规格评审 | v0.1 | deliverables/product/DEMO-001/v0.1/REVIEW.json | APPROVED | 专业评审通过，不替代用户批准 |
 | 2026-09-29（核验日） | DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.1 | tasks/DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 两条正式任务线均停于USER_REVIEW，无空转任务；Demo下游未创建/解锁 |
+| 2026-09-29（用户决定日） | DEMO-001 | producer | USER_APPROVED | 产品规格审批记录 | v0.1 | tasks/DEMO-001/ARTIFACT_APPROVAL.json | 用户明确批准 | Master通知Producer记录；后续Tech Lead、Art、UI规格任务可解锁，不代表其交付物获批 |
+| 2026-09-29（核验日） | DEMO-001 | producer | DONE / CONTINUITY_CHECK | 产品规格任务 | v0.1 | tasks/DEMO-001/TASK.json | 产品阶段完成 | 6项验收PASS、Master专业评审APPROVED及用户审批具备；PRODUCT-001仍USER_REVIEW，Master须继续推进已解锁下游至下一门禁 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | master | TASK_READY | 技术设计任务包 | v0.1（计划） | tasks/TECH-DEMO-001/TASK.json | 上游DEMO-001规格USER_APPROVED | Master创建并解锁；技术产物尚未产生，未登记TASK_STARTED |
+| 2026-09-29（核验日） | ART-DEMO-001 | master | TASK_READY | 美术方向任务包 | v0.1（计划） | tasks/ART-DEMO-001/TASK.json | 上游DEMO-001规格USER_APPROVED | Master创建并解锁；美术产物尚未产生，未登记TASK_STARTED；UI需待Art用户批准 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | tech_lead | TASK_STARTED / DRAFT_SUBMITTED | 技术设计 | v0.1 | deliverables/tech_lead/TECH-DEMO-001/v0.1/TECH_DESIGN.md | 未批准 | 已有真实技术文档；Producer在交付核验时补录开工与提交证据，原始时刻未记录 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | tech_lead | REVIEW | 自评与交付元数据 | v0.1 | deliverables/tech_lead/TECH-DEMO-001/v0.1/DELIVERABLE.json | 5项验收PASS | REVIEW.md与Task所列文件均已核验存在 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 独立技术评审 | v0.1 | deliverables/tech_lead/TECH-DEMO-001/v0.1/MASTER_REVIEW.json | APPROVED | 专业评审不替代用户批准 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.1 | tasks/TECH-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认 | TECH-DEMO-001到审批门禁，Client/QA关闭；ART-DEMO-001仍READY需继续推进 |
+| 2026-09-29（核验日） | ART-DEMO-001 | art | TASK_STARTED / DRAFT_SUBMITTED | 美术方向与资产规格 | v0.1 | deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md | 未批准 | 方向、Brief、资产清单与设计说明真实存在；Producer补录开工与提交证据，原始时刻未记录 |
+| 2026-09-29（核验日） | ART-DEMO-001 | art | REVIEW | 交付元数据 | v0.1 | deliverables/art/ART-DEMO-001/v0.1/DELIVERABLE.json | 5项验收PASS | Task所列文件及交付清单已核验 |
+| 2026-09-29（核验日） | ART-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 美术专业评审 | v0.1 | deliverables/art/ART-DEMO-001/v0.1/REVIEW.json | APPROVED | 专业评审不替代用户批准 |
+| 2026-09-29（核验日） | ART-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.1 | tasks/ART-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 三项任务在USER_REVIEW、Demo产品阶段DONE，无空转任务；UI和Client视觉实现仍锁定 |

@@ -1,0 +1,46 @@
+{
+  "task_id": "TECH-DEMO-001",
+  "owner": "tech_lead",
+  "summary": "基于已批准的 DEMO-001 v0.1 产品规格，完成单机场景 Demo 的模块、相机、修复、顾客路径、资源与性能技术设计，提交专业评审。",
+  "artifacts": [
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "定义场景节点、相机、输入、摊位状态、店长、顾客路径和最简UI之间的模块边界，避免把产品规则散落在表现层",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第2、4节"
+    },
+    {
+      "criterion": "定义地图与相机边界、拖拽/缩放手势冲突处理、摊位命中与修复幂等实现方案",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第3、4节"
+    },
+    {
+      "criterion": "定义顾客入口、路径点、出口与复用策略；不引入导航网格、服务端或复杂避让",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第5节"
+    },
+    {
+      "criterion": "给出Cocos资源组织、图集/合批、同屏对象、更新频率和60帧验证建议及低性能降级边界",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第6节"
+    },
+    {
+      "criterion": "列出Client和QA所需的实现与测试输入，不直接开始编码或修改项目级架构",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第7、8节；本任务只新增技术交付文档"
+    }
+  ],
+  "assumptions": [
+    "本任务是无永久存档的单机场景验证切片；重新进入 Demo 回到破败初态。",
+    "概念图只供构图和前后视觉方向参考，生产资产、路径锚点和设备参数由后续获批规格与 Client 集成确定。"
+  ],
+  "risks": [
+    "大地图生产资产可能造成纹理内存、透明绘制与加载成本；需在目标移动设备实测。",
+    "路径点及遮挡必须按生产资产复核，否则顾客可能穿越建筑或水面。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

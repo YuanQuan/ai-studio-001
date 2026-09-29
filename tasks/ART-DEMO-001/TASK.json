@@ -1,0 +1,38 @@
+{
+  "id": "ART-DEMO-001",
+  "title": "百鬼夜市核心场景 Demo 美术方向与资产规格",
+  "type": "art",
+  "owner": "art",
+  "parent": "DEMO-001",
+  "objective": "基于已批准的DEMO-001产品规格和项目内修复前后参考图，产出可量产、可集成的Demo美术方向与资产清单，明确破败到首店修复的模块化场景表现、可爱鬼怪顾客、可替换店长及冥界夜市地标。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-ruin-reference-v1.png",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-first-shop-reference-v1.png",
+    "project/ARCHITECTURE.md"
+  ],
+  "deliverables": [
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/ART-DEMO-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DEMO-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/ART-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "明确远景2.5D、可爱卡通冥界夜市的长期视觉规则，避免电影级材质、复杂单体建筑和不可复用效果",
+    "将摊位拆为可重复组合的破败/修复状态、屋顶/柜台/遮阳棚/灯笼/小装饰模块，说明店长替换不影响摊位构图",
+    "定义奈何桥入口、夜市石路、右下离开桥、远端阎罗殿等地标的层级与可读性",
+    "定义最少的可爱鬼怪顾客与店长视觉需求、远景行动表现、尺寸/格式/图集与性能约束建议",
+    "登记概念参考的使用边界，说明哪些素材为Demo可集成资产、哪些仅为方向参考；不直接制作完整游戏资产"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 DEMO_PRODUCT_SPEC.md USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "视觉参考图是方向输入，不得直接当作可运行游戏素材。",
+    "本任务优先资产规格与可实现性；如需概念图，只制作能帮助用户评审模块拆分的低数量示意。",
+    "v0.1美术方向、Brief、资产清单、设计说明与交付元数据已核验，5项验收PASS；Master专业评审APPROVED。Producer推进USER_REVIEW，用户未批准前UI和Client视觉实现不得解锁。"
+  ]
+}

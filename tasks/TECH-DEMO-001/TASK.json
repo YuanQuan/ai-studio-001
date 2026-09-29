@@ -1,0 +1,36 @@
+{
+  "id": "TECH-DEMO-001",
+  "title": "百鬼夜市核心场景 Demo 技术设计",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "DEMO-001",
+  "objective": "基于已批准的DEMO-001产品规格，制定可在Cocos Creator 3.8.8 + TypeScript中实现的单机客户端技术设计，覆盖大地图相机拖拽缩放、一次性摊位状态切换、店长生成、顾客路径循环、资源组织和性能验证边界。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "project/ARCHITECTURE.md",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-ruin-reference-v1.png",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-first-shop-reference-v1.png"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "定义场景节点、相机、输入、摊位状态、店长、顾客路径和最简UI之间的模块边界，避免把产品规则散落在表现层",
+    "定义地图与相机边界、拖拽/缩放手势冲突处理、摊位命中与修复幂等实现方案",
+    "定义顾客入口、路径点、出口与复用策略；不引入导航网格、服务端或复杂避让",
+    "给出Cocos资源组织、图集/合批、同屏对象、更新频率和60帧验证建议及低性能降级边界",
+    "列出Client和QA所需的实现与测试输入，不直接开始编码或修改项目级架构"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 DEMO_PRODUCT_SPEC.md USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "仅为Demo技术规格；不设计服务器、账号、存档、经济、真实全局光照或流体模拟。",
+    "60FPS是主流中高端目标验证，不承诺所有设备全效果60FPS；低端机降级须不破坏产品验收。",
+    "v0.1技术设计、Tech Lead自评REVIEW.md及DELIVERABLE.json均已核验，5项验收PASS；Master独立评审APPROVED。Producer推进USER_REVIEW，用户未批准前不解锁Client/QA正式执行。"
+  ]
+}

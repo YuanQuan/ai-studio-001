@@ -1,0 +1,47 @@
+{
+  "task_id": "ART-DEMO-001",
+  "owner": "art",
+  "summary": "为百鬼夜市核心场景 Demo 定义可量产的远景2.5D视觉方向、模块化摊位修复状态、可替换店长、可爱鬼怪顾客、冥界地标和基础资产规格。",
+  "artifacts": [
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/ART-DEMO-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DEMO-001/v0.1/DESIGN_RATIONALE.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确远景2.5D、可爱卡通冥界夜市的长期视觉规则，避免电影级材质、复杂单体建筑和不可复用效果",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION.md 第2、3、7节；ART_BRIEF.md 的平台与性能边界。"
+    },
+    {
+      "criterion": "将摊位拆为可重复组合的破败/修复状态、屋顶/柜台/遮阳棚/灯笼/小装饰模块，说明店长替换不影响摊位构图",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION.md 摊位模块；ART_BRIEF.md 修复状态对照；ASSET_MANIFEST.md 摊位与店长资产。"
+    },
+    {
+      "criterion": "定义奈何桥入口、夜市石路、右下离开桥、远端阎罗殿等地标的层级与可读性",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION.md 场景与地标；ART_BRIEF.md 场景分层。"
+    },
+    {
+      "criterion": "定义最少的可爱鬼怪顾客与店长视觉需求、远景行动表现、尺寸/格式/图集与性能约束建议",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION.md 角色；ART_BRIEF.md 角色与动画、平台与性能边界；ASSET_MANIFEST.md。"
+    },
+    {
+      "criterion": "登记概念参考的使用边界，说明哪些素材为Demo可集成资产、哪些仅为方向参考；不直接制作完整游戏资产",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION.md 第4、6节；ASSET_MANIFEST.md 中参考与待制作状态。"
+    }
+  ],
+  "assumptions": [
+    "Demo 使用项目既有 Cocos Creator 3.8.8 + TypeScript 基线，实际地图尺寸和图集压缩由后续 Tech/Client 确认。",
+    "当前两张视觉参考图仅用作方向输入；本版不登记为可运行资产。"
+  ],
+  "risks": [
+    "用户尚未批准此美术方向，UI、VFX 和 Client 不得将其作为正式视觉输入。",
+    "场景图集尺寸、同屏顾客数和动态效果等级须经过后续技术规格及真机验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
