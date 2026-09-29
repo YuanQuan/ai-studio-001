@@ -18,6 +18,8 @@
 游戏立项或大型版本开始时先交付产品总纲/模块树，使用 `agents/product/PRODUCT_OUTLINE_TEMPLATE.md` 或等价结构：
 - 先划分游戏大模块，再拆子模块和具体功能。
 - 每个正式功能 PRD 必须能追溯到所属大模块/子模块；新增模块时同步更新总纲与 PRD 索引。
+- 初期头脑风暴以脑图作为主阅读入口，并附简短说明：核心循环、稳定模块编号及边界、跨模块输入输出、用户确认/产品假设/待决状态和来源。脑图与说明登记为同版本 Artifact；专业 Review、用户审批与 Producer 追踪规则不变。脑图可替代初期长篇叙述，不可单独充当详细 PRD 或开发输入。
+- 需要脑图时优先用 MindMap AI 创建可交互版本；Deliverable 记录项目链接、本地可编辑文字源与提交时静态快照的真实路径。外部链接不单独成为事实源，版本内容仍须可在项目内读取和追溯；外部图后续编辑需作为新版本进入评审，不能静默改变已批准 Artifact。MindMap AI 不可用时可用 Mermaid 等可编辑格式替代，不改变评审与审批门禁。
 
 非琐碎产品/功能任务至少交付：
 - `PRD.md`：尽量详细描述目标、范围、所属模块/子模块、玩家流程、规则、状态、边界、数值/内容需求、异常情况、依赖和潜在返工风险。
@@ -26,7 +28,7 @@
 - 已 `USER_APPROVED` 的 PRD 在开发开始后变更时，必须先提交 `CHANGE_IMPACT.md`：列出受影响模块、Artifact、配置/协议、Client/Server/QA 范围、返工风险和需要重新审批的环节，再生成新 PRD 版本。
 - 存在真实取舍时记录候选方案、收益/成本/风险和推荐结论；不存在关键取舍时直接记录最优推荐，不机械制造多方案。
 
-Product 产物是 Art/UI/Tech/Client/Server/QA 的产品语义事实源。Product 对数值设计负责，初期可先形成简单模型，后续逐步细化；公共配置表结构仍由 Tech Lead 按 `project/config/README.md` 治理。
+Product 产物是 Art/UI/Tech/Client/Server/QA 的产品语义事实源。Product 对数值设计负责，初期可先形成简单模型，后续逐步细化；公共配置的业务结构由 Product 主导，并按 `project/config/README.md` 接受 Tech Lead 技术评审。
 
 Product 承担外部研究任务时，必须将研究文档独立存入 `project/research/`，至少记录 Research Question、Scope、Sources、Findings、Analysis、Confidence、Product Implications、Open Questions 和 Recommendation。研究资料是决策依据而不是正式需求；只有被已批准 PRD / Decision 显式引用采用后才成为下游正式输入。版权/IP/合规类研究必须标明其为初步风险评估，高风险事项需要进一步专业确认。
 
@@ -64,7 +66,7 @@ Art Agent 同时承担项目 Art Director / 视觉总监职责。涉及视觉资
 - `REVIEW.md`：架构或 Code Review 结论、问题和 Review Action。
 - 需要公共数据驱动时设计正式配置表及数据字典，见 `project/config/README.md`。
 
-Tech Lead 负责公共配置的结构、字段类型、ID/引用、约束、校验和生成规范；Product 负责玩法含义、平衡目标和数值内容。不得由技术角色擅自决定玩法数值，也不得由产品角色随意破坏配置结构。
+Product 主导公共配置的业务表结构、字段语义、业务 ID 与关联规则、平衡目标及数值内容；Tech Lead 评审字段类型、稳定 ID／引用完整性、约束可执行性、跨端可见范围和兼容性，并负责生成与技术校验规范。业务结构变更须经技术影响评审；技术角色不得擅自决定玩法数值。
 
 ### Client Agent
 非琐碎客户端任务至少交付：

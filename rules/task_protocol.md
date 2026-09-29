@@ -26,7 +26,7 @@
 5. 任务范围改变时更新 Task 或创建 Change Request，禁止静默漂移。
 6. 每个正式任务必须根据 `rules/artifact_contract.md` 明确 Required Artifacts，不能只写模糊的“设计/开发完成”。
 7. 下游任务依赖上游正式产物时，必须把具体 Artifact 路径与已批准版本写入 `inputs`；依赖产物未达到 `USER_APPROVED` 时不得进入 READY。
-8. 公共配置表需求必须拆出 Tech Lead 配置结构/校验职责与 Product 数值/语义职责，避免单一角色同时决定技术结构和玩法数值。
+8. 公共配置表需求必须明确 Product 的业务表结构、字段语义与数值职责，以及 Tech Lead 的类型／引用评审、生成与技术校验职责；两者的 Artifact 和审批门禁需可追溯。
 9. Master 创建任务线后必须让 Producer 登记到 `project/WORKFLOW_STATUS.md`；任何 Owner 从 READY 进入 IN_PROGRESS 前，Producer 必须建立当前 Milestone 与 Artifact 路径占位，并在后续每个关键节点同步更新 `WORKFLOW_STATUS.md`、`project/MILESTONE_LOG.md` 和 `project/dashboard/index.html`。每个专业阶段都必须声明用户审批门禁和下一解锁条件。
 10. Product / Art / UI 等高迭代任务允许多轮 Draft/Revision，但 Task 的正式输出必须指向最终用户批准版本。
 11. Client / Server 功能任务准备进入正式编码前，Master/Producer 同步解锁 QA 测试计划任务；QA 的 `TEST_PLAN.md` 与相关 Client/Server `FEATURE_BRIEF.md` 组成同一“开发开工包”，一起提交用户审批。只有开发设计与测试计划都 `USER_APPROVED` 后才进入正式编码；QA 同时明确 Client/Web / Server 用例范围、Visual QA 证据需求和默认不测试项。

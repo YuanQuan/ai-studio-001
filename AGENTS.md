@@ -89,6 +89,10 @@
 
 ## 6. 工作流
 
+新游戏或大型版本的产品讨论先进入轻量头脑风暴：Product 以脑图作为主要阅读入口，简短记录核心循环、模块编号与边界、跨模块关系、用户已确认方向、产品假设及待决问题。脑图与短说明共同构成同版本 Artifact，仍需 Task、Review、用户审批和 Producer 版本追踪。初期不要求把所有功能写成详细 PRD；方向明确后再按模块逐层细化。脑图不能单独替代正式开发输入或跳过审批门禁。
+
+所有项目开发中需要制作脑图时，优先使用已连接的 **MindMap AI** 生成和展示可交互脑图。交付时须在项目内保留可编辑的文字源、提交时的静态快照、对应版本与外部脑图链接，供追溯和迁移；外部脑图后续编辑不得静默改变已评审或已批准版本。工具未连接、不可用或额度受限时，可使用 Mermaid 等可编辑方式完成，不阻塞任务。此工具偏好不改变专业职责、用户审批或正式开发输入门禁。
+
 所有正式功能迭代默认启用逐环节用户审批。专业子任务通常遵循：
 `BACKLOG -> SPEC -> READY -> IN_PROGRESS -> REVIEW -> USER_REVIEW -> DONE`。
 用户退回进入 `REVISION` 后再次提交新版本。复合父任务仍可使用 `INTEGRATION / QA` 阶段。
@@ -123,7 +127,7 @@ Artifact 审批记录必须符合 `schemas/artifact_approval.schema.json`。
 - 下游依赖的上游 Artifact 未提交、未通过专业 Review 或未获得用户 `USER_APPROVED` 时，不得绕过并自行猜测。
 - Product / Art / UI 等允许多轮 Draft/Revision；只有用户批准的最终版本可以正式交付 Tech Lead / Client / Server / QA。
 - Producer 持续维护全部任务线当前状态、关键节点历史、审批记录和 Dashboard；任何角色进入执行后，关键节点及对应 Artifact 版本/真实路径必须持续可视化，用户可随时查询当前所有任务线和历史流转。
-- 公共游戏配置表由 Tech Lead 负责结构/校验规范、Product 负责玩法语义和数值内容，统一遵守 `project/config/README.md`。
+- 公共游戏配置表由 Product 主导业务结构、字段语义、业务关联和数值内容；Tech Lead 评审字段类型、ID／引用完整性、跨端可见性，并负责技术校验与生成规范，统一遵守 `project/config/README.md`。
 - 凡需用户审批的文档型 Artifact 默认以中文为主要表达语言；仅代码、路径、接口/字段名、固定状态枚举与必要专有名词保留英文。模板、正式交付文档和 Review 文档均遵守该规则，除非用户明确要求其他语言。
 影响跨角色或项目级的能力变更提案必须符合 `schemas/capability_change.schema.json`，并遵循 `governance/capability_change_protocol.md`。
 
@@ -164,18 +168,15 @@ Master 负责向用户呈现待审批产物与反馈；Producer 负责记录批�
 - **组织级规则变更的当前项目双同步例外**：当用户在某个当前游戏中明确要求修改 Workflow、Agent 职责/约束、审批/Artifact Gate、Artifact Contract、用户审批文档格式/语言规范、跨角色治理或仓库同步规则时，除非用户明确限定“仅当前项目”，默认视为组织级变更。Master 必须在同一轮同时更新当前 Game Repository 的对应 Studio Layer 快照、`YuanQuan/ai-studio-template` 主 Studio Layer，以及 `templates/game/` 中受影响的标准项目模板默认项，使未来新游戏继承最新规则。其他已经存在但未参与本次变更的游戏仍保持 pinned，不自动改写。
 - 单项目玩法/技术/视觉经验仍只有在用户明确确认升级为组织级规则后才能回写 `ai-studio-template`；但用户明确提出的流程、职责、交付规范与治理修改按上一条默认双同步规则处理。
 
-## 12. Git 操作必须逐次由用户明确授权
+## 12. 日常修改自动提交与推送
 
-所有 Studio Repository 与 Game Repository 默认禁止 Agent 自行产生 Git 动作。Agent 可以在用户授权的项目范围内编辑文件和 Artifact，但编辑完成后必须停留在工作区，不得自动执行 Git 或等价远程仓库写操作。
+用户已于 2026-09-29 明确授予持续权限：Studio Repository 和本组织管理的 Game Repository 每次完成获授权的修改并完成必要验证后，Agent 可以直接执行日常 `git add`、`git commit`、`git push`，无需逐次请示。可使用 `status`、`diff`、`ls-remote` 等只读操作确认提交范围和远端状态。提交与推送不是 Artifact 的用户批准，不改变第 6、7、10 节的审批门禁。
 
-以下动作均要求用户对该次操作明确授权：`init`、clone、remote 配置、add、commit、pull、fetch、push、checkout/switch、branch、merge、rebase、cherry-pick、reset、revert、restore、tag、force-push、history rewrite，以及通过 GitHub API/插件产生等价 commit、branch、文件写入、删除或合并。
-
-授权不得扩大解释：
-- 用户说“commit/提交”不代表允许 push。
-- 用户说“push/推送”不代表允许后续持续自动 push。
-- 用户说“定期同步”不构成自动同步授权。
-- 某个仓库获得授权不代表其他仓库同时获得授权。
+- 只暂存本次任务及已核对的既有交付文件；先检查改动和敏感内容，不把其他仓库、无关文件、临时脚本或秘密带入提交。Studio 模板只提交 Studio Layer 与标准模板，具体游戏内容只提交到对应 Game Repository。
+- 在当前已配置的仓库、分支和远端执行普通推送；记录实际 commit 与推送结果。远端领先、分歧或拒绝推送时停止自动推送并报告，不自行强制推送、合并、变基或改写历史。
+- `init`、clone、remote 配置、checkout/switch、branch、merge、rebase、cherry-pick、reset、revert、restore、tag、force-push、history rewrite，以及删除远端内容等超出日常提交推送的动作，仍需用户对该次操作明确授权。
+- 用户可以随时撤销、暂停或限定自动推送权限；新限制从其指令生效。
 
 ## 13. 最终原则
 
-这个项目不是 Agent 群聊系统，而是一个由 Master 负责编排与用户沟通、Producer 负责流程监督与审批门禁、专业 Agent 基于固定 Artifact 协作的虚拟手游开发流水线。Studio 组织能力与具体游戏项目事实必须保持仓库级隔离；Git 历史和远程仓库变化始终由用户显式控制。
+这个项目不是 Agent 群聊系统，而是一个由 Master 负责编排与用户沟通、Producer 负责流程监督与审批门禁、专业 Agent 基于固定 Artifact 协作的虚拟手游开发流水线。Studio 组织能力与具体游戏项目事实必须保持仓库级隔离；日常 Git 提交推送遵循用户持续授权，其他 Git 历史与远端变更仍由用户逐次控制。

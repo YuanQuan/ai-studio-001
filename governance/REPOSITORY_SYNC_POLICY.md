@@ -103,7 +103,7 @@ ai-studio-template/              # Studio Template Repository
 
 这样当前项目立即使用新规则，未来新游戏也会从最新模板继承。其他已经存在、但未参与本次变更的 Game Repository 仍保持各自 pinned 版本，不自动改写。
 
-该“双同步”只授权文件内容修改，不扩大为 Git 授权。若模板仓库尚未产生新的 commit，不得伪造 `.studio-lock.json` 的 commit；锁文件只在用户另行授权并实际形成可引用模板 commit 后更新。
+该“双同步”确定文件内容修改范围；普通 Git 提交与推送依第 8 节用户持续授权执行。若模板仓库尚未产生新的 commit，不得伪造 `.studio-lock.json` 的 commit；锁文件只在实际形成可引用模板 commit 后更新。
 
 ### 4.2 普通已有游戏升级
 
@@ -128,7 +128,7 @@ ai-studio-template/              # Studio Template Repository
 
 只对本轮授权的仓库进行文件级应用；其他游戏保持 pinned。目标仓库不可访问或被排除时标记 PENDING_TEMPLATE_SYNC / PENDING_PROJECT_SYNC，而不是报告双同步完成。运行中的任务先固定其规则，在安全交接点通过差异计划迁移。
 
-本地应用、已验证、已提交和已推送分别记录。没有真实新 commit 时保留 .studio-lock.json；不得用规则文本版本或文件摘要冒充 Git 提交。所有 Git 操作仍受第 8 节逐次授权限制。
+本地应用、已验证、已提交和已推送分别记录。没有真实新 commit 时保留 .studio-lock.json；不得用规则文本版本或文件摘要冒充 Git 提交。日常提交与推送遵守第 8 节持续授权及例外边界。
 
 ## 5. 项目例外与覆盖
 
@@ -163,7 +163,7 @@ ai-studio-template/              # Studio Template Repository
 
 ### Master
 - 判断变更属于 Studio Layer 还是 Project Layer；用户对流程、职责/约束、审批门禁、Artifact Contract、审批文档格式/语言规范与治理方式的明确修改，默认按第 4.1 节作为组织级双同步，除非用户明确限定仅当前项目。
-- 对组织级流程/职责/交付规范变更，在同一执行轮同时修改当前 Game Repository 对应 Studio 快照、主 `ai-studio-template` Studio Layer 与受影响的 `templates/game/` 默认项；文件同步完成不等于获得 Git commit/push 授权。
+- 对组织级流程/职责/交付规范变更，在同一执行轮同时修改当前 Game Repository 对应 Studio 快照、主 `ai-studio-template` Studio Layer 与受影响的 `templates/game/` 默认项；验证后按第 8 节提交并推送。
 - 创建新游戏仓库时使用模板仓库最新已确认版本。
 - 不把玩法、数值、技术选型、视觉等单项目决策错误升级为全局组织规则。
 
@@ -176,26 +176,14 @@ ai-studio-template/              # Studio Template Repository
 
 ## 8. Git 操作授权边界
 
-所有 Studio Repository 和 Game Repository 默认禁止 Agent 自行产生任何 Git 动作。文件编辑完成不代表允许进入 Git 历史或远程仓库。
+用户于 2026-09-29 授予本组织持续执行日常 `git add`、`git commit`、`git push` 的权限：Studio Repository 与本组织管理的 Game Repository 在获授权修改完成并验证后直接提交、推送到其已配置的当前分支与远端，不需逐次请示。可使用 `status`、`diff`、`ls-remote` 等只读操作检查范围与远端。该授权可由用户随时撤销或缩小。
 
-只有用户明确下达对应 Git 指令后，Agent 才能执行该次明确授权范围内的操作，包括但不限于：
-- `git init` / clone / remote 配置；
-- `git add` / commit；
-- pull / fetch / push；
-- checkout / switch / branch；
-- merge / rebase / cherry-pick；
-- reset / revert / restore；
-- tag / force-push / history rewrite；
-- 通过 GitHub API、插件或其他方式产生等价的远程 commit、branch、file write、merge 或删除。
+- 每次提交仅包含已核对的本任务及相关既有交付文件；不得把当前游戏 Project Layer 放入 Studio 模板，或将其他仓库、秘密及临时文件混入提交。分别记录本地应用、验证、commit 和 push 结果。
+- Git 提交或推送不等于 Artifact 用户批准；Draft/Revision 可以入库，但下游仍必须等待获批版本。
+- 若远端领先、发生分歧或推送被拒绝，停止自动推送并报告；不自动执行 merge、rebase、force-push 或历史改写。
+- `init`、clone、remote 配置、checkout/switch、branch、merge、rebase、cherry-pick、reset、revert、restore、tag、force-push、history rewrite、远端删除及等价的破坏性操作仍需用户对该次动作明确授权。
 
-默认工作方式：
-- Agent 可以直接编辑用户授权范围内的项目文件与 Artifact。
-- 编辑后保持工作区状态，不自动 add、commit、push 或同步远端。
-- 不把“定期同步”“仓库已连接”“之前允许过一次 push”解释为持续 Git 授权。
-- 用户说“提交”只授权 commit，不自动包含 push；说“推送”才授权 push；说“拉取/同步远端”才授权 pull/fetch 等对应动作。
-- 需要执行破坏性 Git 操作时，即使用户要求 Git 操作，也必须严格按其明确范围执行，不扩展到其他仓库。
-
-该规则适用于 Master、Producer 和所有专业 Agent，以及父 Studio Repository 和所有 Game Repository。
+该持续授权适用于 Master、Producer 和专业 Agent 的日常交付，但不扩大其文件职责、项目范围或审批权限。
 
 ## 9. 不采用自动实时继承
 

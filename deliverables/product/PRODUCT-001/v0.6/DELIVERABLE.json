@@ -1,0 +1,54 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "v0.6按最新用户指令修正排队语义，增加少量定时任务、中期全天自动经营和独立长线目标，并以简洁脑图展示多玩法闭环。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.6/PRODUCT_OUTLINE.md",
+    "deliverables/product/PRODUCT-001/v0.6/BRAINSTORM_MAP.md",
+    "project/PRD.md",
+    "project/config/CONFIG_CATALOG.md",
+    "project/config/schema/CUSTOMER_CONFIG.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "排队不因久等使顾客反感离开，仅影响收益效率；闹事独立保留",
+      "result": "PASS",
+      "evidence": "概要第1节v0.6方向、M01.04、M11.04、到访流程、第3A节，以及配置目录和顾客字典覆盖说明。"
+    },
+    {
+      "criterion": "少量固定任务只在两个指定窗口触发且相邻至少1小时",
+      "result": "PASS",
+      "evidence": "概要v0.6方向、M08.01.02和Q21；具体数量、时区及错过处理待定。"
+    },
+    {
+      "criterion": "中期由手动走向24小时含离线自动经营并保留收益成长方向",
+      "result": "PASS",
+      "evidence": "概要M01.05及第3A节中期动机；收益曲线待定。"
+    },
+    {
+      "criterion": "独立长线目标线按多条件触发，间隔整体短到长且非纯线性",
+      "result": "PASS",
+      "evidence": "概要M08.03及Q23；分支或并行仅为候选。"
+    },
+    {
+      "criterion": "简洁脑图表达系统层次、闭环与边界",
+      "result": "PASS",
+      "evidence": "同目录BRAINSTORM_MAP.md含Mermaid mindmap、关键循环和用户明确／待定说明。"
+    },
+    {
+      "criterion": "保留v0.1至v0.5且v0.6未批准不解锁下游",
+      "result": "PASS",
+      "evidence": "历史文件保留，project/PRD.md标明无获批需求；v0.6首页标为待评审与审批。"
+    }
+  ],
+  "assumptions": [
+    "本轮属于头脑风暴概要修订，不定义详细收益曲线、任务数值或技术状态机。",
+    "既有顾客样表未包含本轮运行状态候选，保持原版本。"
+  ],
+  "risks": [
+    "早期手动较优与中期纯自动更优之间的转折尚未验证。",
+    "定时任务可能造成打卡压力，错过窗口的处理需另定。",
+    "长线任务间隔与自动经营收益若叠加不当可能削弱主动游玩。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

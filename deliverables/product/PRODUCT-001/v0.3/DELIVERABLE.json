@@ -1,0 +1,47 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "v0.3将进货扩为独立的18层地府探索系统，按用户方向连接后期世界每日限量资源与公共竞争，保留未定机制与私人资产保护边界。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.3/PRODUCT_OUTLINE.md",
+    "project/PRD.md",
+    "project/config/CONFIG_CATALOG.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "保留v0.2，创建v0.3概要并保持稳定编号",
+      "evidence": "v0.2仍存在；v0.3三级编号检查无重复。",
+      "result": "PASS"
+    },
+    {
+      "criterion": "M04覆盖独立进货、18层、资源差异、逐层解锁与递增难度",
+      "evidence": "PRODUCT_OUTLINE.md 第1节v0.3方向及第3节M04.03–M04.04。",
+      "result": "PASS"
+    },
+    {
+      "criterion": "世界每日固定产量与M07竞争衔接，保持私人资产安全",
+      "evidence": "第3节M04.05、跨模块边界及M07.04；世界范围、周期、分配及归属待定。",
+      "result": "PASS"
+    },
+    {
+      "criterion": "区分用户已定方向、产品建议和待决细节",
+      "evidence": "第1节、第3节M04、第7节Q10–Q13；不设战斗、付费、数量、刷新或胜负分配规则。",
+      "result": "PASS"
+    },
+    {
+      "criterion": "更新PRD索引和未来配置目录，不建空表或数值",
+      "evidence": "project/PRD.md指向v0.3；CONFIG_CATALOG.md新增层级产出、日配额及争夺目录候选。",
+      "result": "PASS"
+    }
+  ],
+  "assumptions": [
+    "用户明确方向不等于整版Artifact批准。",
+    "探索路线与风险收益仅为产品讨论建议；没有决定战斗、派遣或失败损失。"
+  ],
+  "risks": [
+    "18层内容规模与独立玩法可能扩大首版范围。",
+    "世界资源池覆盖范围、每日周期、准入、分配与资产归属待定，不能作为实施契约。",
+    "限量资源用途未定，普通经营是否依赖稀缺资源需后续分析。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

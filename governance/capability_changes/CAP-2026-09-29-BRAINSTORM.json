@@ -1,0 +1,17 @@
+{
+  "id": "CAP-2026-09-29-BRAINSTORM",
+  "agent": "product",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "所有新游戏和大型版本先用简洁脑图组织头脑风暴，再进入产品总纲与详细PRD；脑图可作为初期概要的主阅读入口，配短说明保留模块编号、已确认方向、假设和待决问题。",
+  "reason": "本项目v0.1至v0.5概要反复增补，初期长文带来阅读和修订成本；v0.6脑图试验可更快展示玩法层次与闭环，但单独一张图无法承载审批状态及跨模块输入输出。",
+  "impact": [
+    "Product初期交付顺序与产品总纲模板",
+    "Master任务拆分和用户讨论入口",
+    "Producer记录初期Artifact版本与审批状态",
+    "规则与模板双同步：当前游戏Studio Layer和主ai-studio-template模板"
+  ],
+  "affected_agents": ["master", "producer", "product"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

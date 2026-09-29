@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mini Game · Producer Dashboard</title>
+  <title>代号001 · 流程看板</title>
   <style>
     :root{--bg:#0b1020;--panel:#121a2d;--line:#283754;--text:#edf3ff;--muted:#94a6c3;--info:#66d6ff;--ok:#57d39b;--warn:#ffcc66;--danger:#ff7a90}
     *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text)}
@@ -13,19 +13,19 @@
     table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;border-top:1px solid var(--line);padding:11px 9px;vertical-align:top}th{color:var(--muted);font-size:10px;text-transform:uppercase}.empty{border:1px dashed #3b506f;border-radius:12px;padding:22px;text-align:center;color:var(--muted)}
     .two{grid-template-columns:1fr 1fr}.roles{grid-template-columns:repeat(2,1fr)}.role b{display:block;margin-bottom:6px}.role span{color:var(--muted);font-size:12px;line-height:1.6}.footer{margin-top:20px;color:var(--muted);font-size:11px;line-height:1.6}
     @media(max-width:900px){.stats,.two,.roles{grid-template-columns:1fr 1fr}}@media(max-width:620px){.stats,.two,.roles{grid-template-columns:1fr}.wrap{padding:18px}.top{display:block}}
-  </style>
+  a{color:var(--info);overflow-wrap:anywhere}</style>
 </head>
 <body>
 <div class="wrap">
   <div class="top">
-    <div><div class="info">STANDARD MINI GAME TEMPLATE</div><h1>项目流程与进度总览</h1><div class="muted">Producer 维护的静态快照。正式事实源仍是 Task / Artifact / Review / WORKFLOW_STATUS / MILESTONE_LOG / APPROVAL_LOG。</div></div>
-    <div class="muted">项目：TBD<br>模板状态：INITIALIZED</div>
+    <div><div class="info">代号001 · 项目启动</div><h1>项目流程与进度总览</h1><div class="muted">Producer 维护的静态快照。正式事实源仍是 Task / Artifact / Review / WORKFLOW_STATUS / MILESTONE_LOG / APPROVAL_LOG。</div></div>
+    <div class="muted">项目：代号001<br>当前阶段：产品概要 USER_REVIEW</div>
   </div>
 
   <div class="grid stats">
-    <div class="card"><div class="muted">正式任务线</div><div class="n info">0</div><small class="muted">尚未创建任务</small></div>
-    <div class="card"><div class="muted">待用户审批</div><div class="n warn">0</div><small class="muted">暂无待确认 Artifact</small></div>
-    <div class="card"><div class="muted">流程阻塞</div><div class="n ok">0</div><small class="muted">暂无 BLOCKED</small></div>
+    <div class="card"><div class="muted">正式任务线</div><div class="n info">1</div><small class="muted">PRODUCT-001</small></div>
+    <div class="card"><div class="muted">待用户审批</div><div class="n warn">1</div><small class="muted">v0.6 等待确认</small></div>
+    <div class="card"><div class="muted">流程阻塞</div><div class="n ok">0</div><small class="muted">本轮任务无阻塞；历史初始化未重验</small></div>
     <div class="card"><div class="muted">发布目标</div><div class="n">Mini Game</div><small class="muted">Web dev · WeChat · Douyin</small></div>
   </div>
 
@@ -43,13 +43,13 @@
   </section>
 
   <div class="grid two" style="margin-top:14px">
-    <section class="card"><h2>当前任务线</h2><div class="empty">暂无正式任务。第一条任务创建后，Producer 必须立即登记 Owner、Stage、Artifact 版本/路径、审批、阻塞和下一动作。</div></section>
-    <section class="card"><h2>等待你审批</h2><div class="empty">暂无待审批 Artifact。</div></section>
+    <section class="card"><h2>当前任务线</h2><div class="empty">PRODUCT-001 · USER_REVIEW · Product<br><a href="../../deliverables/product/PRODUCT-001/v0.6/BRAINSTORM_MAP.md">v0.6脑图</a> · <a href="../../deliverables/product/PRODUCT-001/v0.6/PRODUCT_OUTLINE.md">概要与短说明</a><br><a href="../../tasks/PRODUCT-001/TASK.json">正式任务包</a> · <a href="../../deliverables/product/PRODUCT-001/v0.6/DELIVERABLE.json">交付清单</a><br>下一动作：Master呈现v0.6供用户审阅。</div></section>
+    <section class="card"><h2>版本与审批</h2><div class="empty">v0.1至v0.5历史版本和审批决定保留。<br><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.5.json">v0.5修订决定</a> · <a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">v0.6当前状态</a><br><a href="../../deliverables/product/PRODUCT-001/v0.6/REVIEW.json">Master评审APPROVED</a><br>v0.6 USER_REVIEW，用户未批准；下游关闭。</div></section>
   </div>
 
   <section class="card" style="margin-top:14px">
     <h2>关键节点追踪</h2>
-    <table><thead><tr><th>Time</th><th>Task</th><th>Owner</th><th>Milestone</th><th>Artifact / Version</th><th>Path</th><th>Status</th></tr></thead><tbody><tr><td colspan="7" class="muted">暂无节点。TASK_STARTED 起必须持续更新，禁止任务结束后一次性补录。</td></tr></tbody></table>
+    <table><thead><tr><th>Time</th><th>Task</th><th>Owner</th><th>Milestone</th><th>Artifact / Version</th><th>Path</th><th>Status</th></tr></thead><tbody><tr><td colspan="7" class="muted">2026-09-27 22:01 · PRODUCT-001 · Master · TASK_READY · <a href="../../tasks/PRODUCT-001/TASK.json">tasks/PRODUCT-001/TASK.json</a> · 尚无用户审批</td></tr><tr><td>2026-09-27 22:04</td><td>PRODUCT-001</td><td>Product</td><td>TASK_STARTED / DRAFT_SUBMITTED</td><td>产品概要 v0.1</td><td><a href="../../deliverables/product/PRODUCT-001/v0.1/PRODUCT_OUTLINE.md">deliverables/product/PRODUCT-001/v0.1/PRODUCT_OUTLINE.md</a></td><td>初稿已落地，未批准</td></tr><tr><td>2026-09-27 22:05</td><td>PRODUCT-001</td><td>Product / Master</td><td>REVIEW / PROFESSIONAL_REVIEW_APPROVED</td><td>完整交付包 v0.1</td><td><a href="../../deliverables/product/PRODUCT-001/v0.1/DELIVERABLE.json">DELIVERABLE.json</a><br><a href="../../deliverables/product/PRODUCT-001/v0.1/REVIEW.json">REVIEW.json</a></td><td>5项验收PASS；专业评审APPROVED</td></tr><tr><td>2026-09-27 22:05</td><td>PRODUCT-001</td><td>Producer</td><td>USER_REVIEW / CONTINUITY_CHECK</td><td>概要审批 v0.1</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">tasks/PRODUCT-001/ARTIFACT_APPROVAL.json</a><br><a href="../WORKFLOW_STATUS.md">project/WORKFLOW_STATUS.md</a></td><td>待用户确认；连续执行检查PASS，无空转任务</td></tr><tr><td>2026-09-28 23:19</td><td>PRODUCT-001</td><td>Producer</td><td>REVISION_REQUESTED</td><td>v0.1 → v0.2</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.1.json">v0.1审批记录</a></td><td>用户要求修订；未批准</td></tr><tr><td>2026-09-28 23:21</td><td>PRODUCT-001</td><td>Product</td><td>TASK_STARTED</td><td>v0.2 修订</td><td><a href="../../tasks/PRODUCT-001/TASK.json">执行证据记录</a></td><td>IN_PROGRESS；文件待核验</td></tr><tr><td>2026-09-28 23:28</td><td>PRODUCT-001</td><td>Product / Master / Tech Lead</td><td>DRAFT / REVIEW</td><td>概要v0.2 / 样表v0.1</td><td><a href="../../deliverables/product/PRODUCT-001/v0.2/DELIVERABLE.json">完整路径及验收清单</a><br><a href="../config/source/CUSTOMER_CONFIG_v0.1.xlsx">project/config/source/CUSTOMER_CONFIG_v0.1.xlsx</a></td><td>Master通过；Tech Lead概要有条件通过</td></tr><tr><td>2026-09-28 23:28</td><td>PRODUCT-001</td><td>Producer</td><td>USER_REVIEW / CONTINUITY_CHECK</td><td>v0.2</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">审批状态</a></td><td>用户未批准；产品流程检查PASS，Master继续治理同步</td></tr><tr><td>2026-09-28 23:34</td><td>PRODUCT-001</td><td>Master / Producer</td><td>GOVERNANCE_SYNC_APPLIED / CONTINUITY_CHECK</td><td>v0.2</td><td><a href="../../governance/capability_changes/CAP-2026-09-28-CONFIG.json">职责变更APPLIED</a></td><td>同步完成；复核PASS；保持USER_REVIEW</td></tr><tr><td>2026-09-28 23:38</td><td>PRODUCT-001</td><td>Producer</td><td>REVISION_REQUESTED</td><td>v0.2 → v0.3</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.2.json">v0.2决定</a></td><td>用户要求进货与限量资源修订，未批准</td></tr><tr><td>2026-09-28 23:41</td><td>PRODUCT-001</td><td>Product</td><td>TASK_STARTED / DRAFT_SUBMITTED / REVIEW</td><td>v0.3</td><td><a href="../../deliverables/product/PRODUCT-001/v0.3/DELIVERABLE.json">交付清单</a></td><td>已核验真实文件，待专业评审</td></tr><tr><td>2026-09-28 23:43</td><td>PRODUCT-001</td><td>Master / Tech Lead / Producer</td><td>专业评审 / USER_REVIEW / CONTINUITY_CHECK</td><td>v0.3</td><td><a href="../../deliverables/product/PRODUCT-001/v0.3/REVIEW.json">Master评审</a><br><a href="../../deliverables/tech_lead/PRODUCT-001/WORLD_RESOURCE_REVIEW.md">技术影响评审</a></td><td>用户待确认，流程检查PASS</td></tr><tr><td>2026-09-28 23:47</td><td>PRODUCT-001</td><td>Producer</td><td>REVISION_REQUESTED</td><td>v0.3 → v0.4</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.3.json">v0.3决定</a></td><td>要求修订，未批准整包</td></tr><tr><td>2026-09-29（核验日）</td><td>PRODUCT-001</td><td>Product / Master / Tech Lead / Producer</td><td>TASK_STARTED / DRAFT_SUBMITTED / REVIEW / USER_REVIEW / CONTINUITY_CHECK</td><td>产品概要 v0.4</td><td><a href="../../deliverables/product/PRODUCT-001/v0.4/PRODUCT_OUTLINE.md">概要</a><br><a href="../../deliverables/product/PRODUCT-001/v0.4/DELIVERABLE.json">交付清单</a><br><a href="../../deliverables/product/PRODUCT-001/v0.4/REVIEW.json">Master评审</a><br><a href="../../deliverables/tech_lead/PRODUCT-001/SINGLE_WORLD_CUSTOMER_REVIEW.md">Tech Lead评审</a><br><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">审批状态</a></td><td>专业评审完成；用户待确认；流程检查PASS；下游关闭</td></tr><tr><td>2026-09-29（反馈／核验日）</td><td>PRODUCT-001</td><td>Producer / Product</td><td>REVISION_REQUESTED / REVISION_DRAFT</td><td>v0.4 → v0.5</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.4.json">v0.4修订决定</a><br><a href="../../deliverables/product/PRODUCT-001/v0.5/PRODUCT_OUTLINE.md">v0.5草稿</a></td><td>旧版未批准；新版本交付与评审进行中</td></tr><tr><td>2026-09-29（核验日）</td><td>PRODUCT-001</td><td>Product / Master / Producer</td><td>DRAFT_SUBMITTED / PROFESSIONAL_REVIEW_APPROVED / USER_REVIEW / CONTINUITY_CHECK</td><td>产品概要 v0.5</td><td><a href="../../deliverables/product/PRODUCT-001/v0.5/PRODUCT_OUTLINE.md">概要</a><br><a href="../../deliverables/product/PRODUCT-001/v0.5/DELIVERABLE.json">交付清单</a><br><a href="../../deliverables/product/PRODUCT-001/v0.5/REVIEW.json">Master评审</a><br><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">审批状态</a></td><td>6项验收PASS，专业评审APPROVED；用户待确认，下游关闭</td></tr><tr><td>2026-09-29（反馈／核验日）</td><td>PRODUCT-001</td><td>Producer / Product</td><td>REVISION_REQUESTED / REVISION_DRAFT</td><td>v0.5 → v0.6</td><td><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.5.json">v0.5修订决定</a><br><a href="../../deliverables/product/PRODUCT-001/v0.6/PRODUCT_OUTLINE.md">v0.6概要草稿</a></td><td>旧版未批准；新版本脑图、交付与评审进行中</td></tr><tr><td>2026-09-29（核验日）</td><td>PRODUCT-001</td><td>Product / Master / Producer</td><td>DRAFT_SUBMITTED / PROFESSIONAL_REVIEW_APPROVED / USER_REVIEW / CONTINUITY_CHECK</td><td>产品概要与脑图 v0.6</td><td><a href="../../deliverables/product/PRODUCT-001/v0.6/BRAINSTORM_MAP.md">脑图</a><br><a href="../../deliverables/product/PRODUCT-001/v0.6/PRODUCT_OUTLINE.md">概要</a><br><a href="../../deliverables/product/PRODUCT-001/v0.6/DELIVERABLE.json">交付清单</a><br><a href="../../deliverables/product/PRODUCT-001/v0.6/REVIEW.json">Master评审</a><br><a href="../../tasks/PRODUCT-001/ARTIFACT_APPROVAL.json">审批状态</a></td><td>6项验收PASS，专业评审APPROVED；用户待确认，下游关闭</td></tr><tr><td>2026-09-29（核验日）</td><td>PRODUCT-001</td><td>Producer</td><td>GOVERNANCE_SYNC_VERIFIED</td><td>脑图方法提案</td><td><a href="../../governance/capability_changes/CAP-2026-09-29-BRAINSTORM.json">组织级提案</a><br><a href="../../governance/capability_changes/CAP-2026-09-29-BRAINSTORM_PRODUCER_REVIEW.md">Producer评审</a></td><td>提案记用户批准；Studio文件同步核验；游戏概要另待审批，提案状态字段待Master更新</td></tr></tbody></table>
   </section>
 
   <section class="card" style="margin-top:14px">
@@ -68,7 +68,7 @@
     </div>
   </section>
 
-  <div class="footer">Producer update rule: Task creation/start, Artifact draft/review/user approval/rejection, handoff, blocked/unblocked, implementation done, QA start/result and task done are all Dashboard-visible milestones. Every Artifact-bearing milestone must show its real repository path and version.</div>
+  <div class="footer">本轮只形成产品概要与模块树，不创建下游实施任务。历史初始化阻塞见 PROJECT_INIT.md / PROJECT_IDENTITY.json，本轮未重新验证。<br><a href="../WORKFLOW_STATUS.md">工作流状态</a> · <a href="../MILESTONE_LOG.md">关键节点</a> · <a href="../APPROVAL_LOG.md">审批记录</a></div>
 </div>
 </body>
 </html>

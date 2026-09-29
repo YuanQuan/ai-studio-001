@@ -1,0 +1,45 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "基于历史方案整理中文概要，建立10个大模块的三级功能树、范围候选及用户逐项讨论入口，保留全部游戏语义未批准状态。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.1/PRODUCT_OUTLINE.md",
+    "project/PRD.md"
+  ],
+  "acceptance_results": [
+    {
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md 第3节：10个大模块及三级稳定编号。",
+      "criterion": "提供大模块、子模块、功能点三级结构及稳定编号"
+    },
+    {
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md 第2、4节：目标、边界、依赖、OUTLINE成熟度与细化入口。",
+      "criterion": "明确各模块目标、边界、依赖与成熟度"
+    },
+    {
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md 第1、5、7节：来源、产品建议与待用户决定分开，未声明批准。",
+      "criterion": "区分历史方案、当前建议和待用户决定事项，不伪造批准"
+    },
+    {
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md 第5、6、8节及project/PRD.md：范围候选、讨论顺序、索引和自检。",
+      "criterion": "列出范围候选、讨论顺序、PRD索引及可验证文档验收结果"
+    },
+    {
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md 第1、3节：内容来自S1–S5；未新增付费点、玩法或开发任务。",
+      "criterion": "不新增未授权玩法、付费点或开发任务"
+    }
+  ],
+  "assumptions": [
+    "历史Research仅为整理素材，不替代正式批准；模块归类和讨论顺序是本轮产品建议。",
+    "运行时QA不适用于本轮文档整理。"
+  ],
+  "risks": [
+    "首版范围、玩法规则、平台与横竖屏尚未确定。",
+    "历史数量、天数、用户画像及广告频次均未经本项目验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

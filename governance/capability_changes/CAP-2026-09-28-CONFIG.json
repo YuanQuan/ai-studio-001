@@ -1,0 +1,23 @@
+{
+  "id": "CAP-2026-09-28-CONFIG",
+  "agent": "product",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "公共游戏配置表由Product主导目录与业务结构设计；Tech Lead审查技术结构并负责生成、校验实现。",
+  "reason": "用户要求先由产品侧建立顾客及同类配置表结构，以供后续数值调整和程序开发。",
+  "impact": [
+    "Product定义表目录、业务字段及语义、触发组合、可调参数、业务ID与关联约束、样例源表。",
+    "Tech Lead审查字段类型、稳定ID及引用完整性、Client/Server可见性、兼容性，并负责生成与技术校验实现；不擅改产品语义。",
+    "Client/Server只消费经评审与用户批准的配置契约，不自行扩展字段语义。",
+    "需同步当前游戏Studio快照、模板主Studio Layer和标准项目模板默认项；不涉及Git操作。"
+  ],
+  "affected_agents": [
+    "product",
+    "tech_lead",
+    "client",
+    "server",
+    "producer"
+  ],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "代号001概要v0.2、独立顾客系统和顾客配置逻辑结构草案，供用户逐项分析与后续数值/技术评审。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.2/PRODUCT_OUTLINE.md",
+    "project/config/CONFIG_CATALOG.md",
+    "project/config/schema/CUSTOMER_CONFIG.md",
+    "project/config/source/CUSTOMER_CONFIG_v0.1.xlsx"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "店铺、店长、普通店员、顾客和经营行为边界与闭环",
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md第2、3节"
+    },
+    {
+      "criterion": "顾客独立模块、多触发及特殊互动",
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md M11与CUSTOMER_CONFIG.md第2–6节"
+    },
+    {
+      "criterion": "配置目录、字段、引用与校验规则",
+      "result": "PASS",
+      "evidence": "CONFIG_CATALOG.md与CUSTOMER_CONFIG.md第1–9节"
+    },
+    {
+      "criterion": "顾客样表可供产品、数值与程序评审，示例非正式数值",
+      "result": "PASS",
+      "evidence": "CUSTOMER_CONFIG_v0.1.xlsx五个工作表，全部样例enabled=false且status=DRAFT"
+    },
+    {
+      "criterion": "v0.1保留，v0.2未获用户批准",
+      "result": "PASS",
+      "evidence": "deliverables/product/PRODUCT-001/v0.1/与v0.2/并存；WORKFLOW_STATUS.md用户审批未批准"
+    }
+  ],
+  "assumptions": [
+    "TIMED和NUMERIC为用户明确要求；自然客流、事件/任务信号与组合机制仅为产品建议。",
+    "示例ID与内容均为占位，未形成正式角色、概率、阈值或奖励。"
+  ],
+  "risks": [
+    "同次到访多互动选择、条件目标字典、时间计划及冷却并发尚待详细PRD和技术契约。",
+    "跨角色配置职责需同步模板主Studio Layer；当前工作区之外的模板仓库写入需要文件权限。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

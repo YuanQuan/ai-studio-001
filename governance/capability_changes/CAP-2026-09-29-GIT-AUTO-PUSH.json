@@ -1,0 +1,17 @@
+{
+  "id": "CAP-2026-09-29-GIT-AUTO-PUSH",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "用户授予 Studio 和当前及未来游戏项目持续执行日常 Git add、commit、push 的权限；每次完成获授权的文件修改并验证后可直接提交推送，无需逐次请示。",
+  "reason": "用户明确要求今后每次修改落地都由 Agent 直接推送到 Git，以保持工作区与远端同步。",
+  "impact": [
+    "Master和专业 Agent 的交付收尾流程",
+    "Producer对本地修改、已提交、已推送状态的追踪",
+    "Studio Repository 与 Game Repository 的 Git 授权边界",
+    "当前游戏 Studio Layer、主 Studio Layer 与标准小游戏模板默认规则"
+  ],
+  "affected_agents": ["master", "producer", "product", "tech_lead", "art", "ui", "vfx", "client", "server", "qa"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

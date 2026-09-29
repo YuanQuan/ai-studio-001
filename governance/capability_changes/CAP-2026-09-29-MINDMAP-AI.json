@@ -1,0 +1,17 @@
+{
+  "id": "CAP-2026-09-29-MINDMAP-AI",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "以后各项目需要制作脑图时优先使用已连接的 MindMap AI；同时保留项目内可编辑的文字源和版本记录，工具不可用时使用可编辑的等价方式。",
+  "reason": "用户明确要求将本次使用的 MindMap AI 作为未来项目开发中脑图制作的优先选项；本项目已用它生成可交互的玩法闭环脑图。",
+  "impact": [
+    "所有角色制作脑图时的工具选择顺序",
+    "Product初期头脑风暴脑图的交付方式",
+    "Producer对外部脑图链接与本地Artifact版本的追踪",
+    "当前项目Studio Layer及主Studio模板同步"
+  ],
+  "affected_agents": ["master", "producer", "product"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

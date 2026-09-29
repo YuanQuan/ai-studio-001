@@ -1,0 +1,48 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "v0.4补充弱社交与单一共享世界，顾客偏好和多摊访问、接待容量与排队流失、闹事事件概要，并补配置逻辑候选。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.4/PRODUCT_OUTLINE.md",
+    "project/PRD.md",
+    "project/config/CONFIG_CATALOG.md",
+    "project/config/schema/CUSTOMER_CONFIG.md"
+  ],
+  "acceptance_results": [
+    {
+      "evidence": "v0.3保留，project/PRD.md指向v0.4。",
+      "criterion": "保留旧版并创建v0.4，更新PRD索引",
+      "result": "PASS"
+    },
+    {
+      "evidence": "概要第1节、M04/M07范围；不等同单物理进程或顾客全球唯一。",
+      "criterion": "记录弱社交与单一共享世界",
+      "result": "PASS"
+    },
+    {
+      "evidence": "M01.04/M02.01.02/M11.04及到访概要状态；初始容量1，上限N与时间待定。",
+      "criterion": "顾客偏好、多摊访问、驻足、容量与排队流失形成概要闭环",
+      "result": "PASS"
+    },
+    {
+      "evidence": "M11.05及事件概要；闹事者不强制归类消费顾客，不引入战斗或私人资产抢夺。",
+      "criterion": "闹事作为事件，惩罚边界与处理方式待定",
+      "result": "PASS"
+    },
+    {
+      "evidence": "CONFIG_CATALOG新增三个目录候选；CUSTOMER_CONFIG第10节分静态配置与到访/访问段运行状态，未操作XLSX。",
+      "criterion": "配置仅逻辑扩展，不修改XLSX",
+      "result": "PASS"
+    }
+  ],
+  "assumptions": [
+    "明确方向不代表完整Artifact批准。",
+    "现有XLSX保持原版本，新结构启用需另行版本与评审。"
+  ],
+  "risks": [
+    "驻足/服务/排队计时及异常离开范围尚待定。",
+    "容量N、队列上限、闹事处理与惩罚概率未定，不能直接实现。",
+    "弱社交下历史坊会功能需重新评估。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

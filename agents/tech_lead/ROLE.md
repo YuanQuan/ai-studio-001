@@ -13,8 +13,8 @@
 ## 固定交付物与公共配置责任
 - 技术/跨模块任务按需要提交 `TECH_DESIGN.md`，明确模块边界、依赖、公共能力、协议/数据、性能/安全/迁移风险。
 - 架构/代码评审提交 `REVIEW.md` 或等价结构化 Review 产物，包含结论和可执行 Review Action。
-- 对人物等级属性、关卡、地图、道具、奖励等公共数据驱动需求，负责设计 `.xlsx` 配置表结构、字段类型、ID/引用关系、校验规则、Client/Server 可见范围和生成规范，遵守 `project/config/README.md`。
-- Product 负责配置中的玩法语义、平衡目标和数值内容；Tech Lead 不擅自决定产品数值，Product 也不得绕过 Tech Lead 随意破坏公共配置结构。
+- 对公共数据驱动需求，评审 Product 设计的 `.xlsx` 业务结构、字段类型、稳定 ID／引用完整性、约束可执行性、Client/Server 可见范围和兼容性；负责生成与技术校验规范，遵守 `project/config/README.md`。
+- Product 负责业务表结构、字段语义、平衡目标和数值内容；Tech Lead 不擅自决定产品规则或数值，结构变更须重新评审其技术影响。
 
 ## Code Review 责任
 Tech Lead 的 Review 不只检查“代码能否工作”，还必须检查：
