@@ -1,0 +1,46 @@
+{
+  "task_id": "TECH-DEMO-001",
+  "owner": "tech_lead",
+  "summary": "在 v0.1 基础上按用户采纳方案明确等距 TileMap 地表、独立地标 Prefab 与固定顾客路径，并补齐排序、命中、地图边界和 Client 输入。",
+  "artifacts": [
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/REVIEW.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "定义场景节点、相机、输入、摊位状态、店长、顾客路径和最简UI之间的模块边界，避免把产品规则散落在表现层",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第2、2.1、4节"
+    },
+    {
+      "criterion": "定义地图与相机边界、拖拽/缩放手势冲突处理、摊位命中与修复幂等实现方案",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第3、4节"
+    },
+    {
+      "criterion": "定义顾客入口、路径点、出口与复用策略；不引入导航网格、服务端或复杂避让",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第5节"
+    },
+    {
+      "criterion": "给出Cocos资源组织、图集/合批、同屏对象、更新频率和60帧验证建议及低性能降级边界",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第6节"
+    },
+    {
+      "criterion": "列出Client和QA所需的实现与测试输入，不直接开始编码或修改项目级架构",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第7、8节；本版只新增技术交付文档"
+    }
+  ],
+  "assumptions": [
+    "用户采纳的混合地图方案作为本次 v0.2 修订输入，不改变已批准的 DEMO-001 v0.1 产品语义。",
+    "TileMap 的图块尺度、地标 Prefab 尺寸、遮挡锚点和路径坐标由后续生产资产确定。"
+  ],
+  "risks": [
+    "地标 Prefab 的透明遮挡与动态深度排序可能增加绘制开销，需要目标设备实测。",
+    "地图边界若只按地表 Tile 范围计算，缩放时可能露出地标外沿或空白。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -12,9 +12,9 @@
     "deliverables/visual-concepts/DEMO-001/nightmarket-first-shop-reference-v1.png"
   ],
   "deliverables": [
-    "deliverables/tech_lead/TECH-DEMO-001/v0.1/TECH_DESIGN.md",
-    "deliverables/tech_lead/TECH-DEMO-001/v0.1/REVIEW.md",
-    "deliverables/tech_lead/TECH-DEMO-001/v0.1/DELIVERABLE.json"
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/REVIEW.md",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
     "定义场景节点、相机、输入、摊位状态、店长、顾客路径和最简UI之间的模块边界，避免把产品规则散落在表现层",
@@ -31,6 +31,8 @@
   "notes": [
     "仅为Demo技术规格；不设计服务器、账号、存档、经济、真实全局光照或流体模拟。",
     "60FPS是主流中高端目标验证，不承诺所有设备全效果60FPS；低端机降级须不破坏产品验收。",
-    "v0.1技术设计、Tech Lead自评REVIEW.md及DELIVERABLE.json均已核验，5项验收PASS；Master独立评审APPROVED。Producer推进USER_REVIEW，用户未批准前不解锁Client/QA正式执行。"
+    "v0.1技术设计、Tech Lead自评REVIEW.md及DELIVERABLE.json均已核验，5项验收PASS；Master独立评审APPROVED。Producer推进USER_REVIEW，用户未批准前不解锁Client/QA正式执行。",
+    "2026-09-29用户采纳混合地图方案：地表等距TileMap，摊位与地标独立Prefab，顾客固定路径点。v0.1进入要求修订并保留旧版；v0.2交付与评审待完成。正式deliverables路径由Master同步到v0.2。",
+    "v0.2技术设计、Tech Lead自评及交付元数据已核验，5项验收PASS；Master独立评审APPROVED。Producer推进USER_REVIEW；用户未批准前Client/QA正式执行关闭。"
   ]
 }

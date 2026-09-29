@@ -66,3 +66,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 | 2026-09-29（核验日） | ART-DEMO-001 | art | REVIEW | 交付元数据 | v0.1 | deliverables/art/ART-DEMO-001/v0.1/DELIVERABLE.json | 5项验收PASS | Task所列文件及交付清单已核验 |
 | 2026-09-29（核验日） | ART-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 美术专业评审 | v0.1 | deliverables/art/ART-DEMO-001/v0.1/REVIEW.json | APPROVED | 专业评审不替代用户批准 |
 | 2026-09-29（核验日） | ART-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.1 | tasks/ART-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 三项任务在USER_REVIEW、Demo产品阶段DONE，无空转任务；UI和Client视觉实现仍锁定 |
+| 2026-09-29（用户决定日） | TECH-DEMO-001 | producer | REVISION_REQUESTED | v0.1技术设计审批决定 | v0.1 | tasks/TECH-DEMO-001/ARTIFACT_APPROVAL_v0.1.json | REJECTED（要求修订） | 用户采纳混合地图方案，v0.1原文与专业评审保留；v0.2待修订，Client/QA关闭 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | tech_lead | TASK_STARTED / DRAFT_SUBMITTED | 混合地图技术设计 | v0.2 | deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md | 未批准 | Tech Lead已实际修订；Producer补录执行与提交证据，原始时刻未记录 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | tech_lead | REVIEW | 自评与交付元数据 | v0.2 | deliverables/tech_lead/TECH-DEMO-001/v0.2/DELIVERABLE.json | 5项验收PASS | Task所列产物均存在，v0.1历史保留 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 独立评审 | v0.2 | deliverables/tech_lead/TECH-DEMO-001/v0.2/MASTER_REVIEW.json | APPROVED | 专业评审不替代用户批准 |
+| 2026-09-29（核验日） | TECH-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.2 | tasks/TECH-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 三项任务在USER_REVIEW，Demo产品阶段DONE，无空转任务；Client/QA门禁关闭 |
