@@ -1,0 +1,49 @@
+{
+  "task_id": "UI-DEMO-001",
+  "owner": "ui",
+  "summary": "完成百鬼夜市 Demo 竖屏修复交互的最简 UI 规格、配色、三态界面稿和组件状态稿；效果图为可评审布局概念，附可重生成脚本。",
+  "artifacts": [
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UI-DEMO-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UI-DEMO-001/v0.1/screens/repair-flow.png",
+    "deliverables/ui/UI-DEMO-001/v0.1/components/repair-controls.png",
+    "deliverables/ui/UI-DEMO-001/v0.1/mockups.py",
+    "deliverables/ui/UI-DEMO-001/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "竖屏主场景 UI 保持简洁，只含目标提示、确认修复、关闭、完成提示；不增加经济和其他玩法按钮",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 页面结构；screens/repair-flow.png 三态布局"
+    },
+    {
+      "criterion": "明确正常、按下、禁用和已完成等必要状态，目标摊位点击与地图拖拽/双指缩放不冲突",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 输入优先级与状态；components/repair-controls.png"
+    },
+    {
+      "criterion": "明确安全区、可点击区域与缩放状态下的屏幕位置；UI 不遮住修复摊位及主要顾客路线",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 布局与适配；图稿显示目标位于确认卡上方，正式集成时实景复核"
+    },
+    {
+      "criterion": "配色与形状遵循已批准 Art Direction，并通过 Art 视觉一致性评审",
+      "result": "PASS",
+      "evidence": "COLOR_SYSTEM.md；Art 视觉一致性评审 REVIEW.json 结论 APPROVED"
+    },
+    {
+      "criterion": "提供用户可评审的关键界面和组件效果图，标注概念与可集成资产边界",
+      "result": "PASS",
+      "evidence": "两张 PNG；UI_SPEC.md 组件与资源边界；mockups.py"
+    }
+  ],
+  "assumptions": [
+    "390 × 844 逻辑像素为布局基准，实际安全区和像素由目标设备验证。",
+    "三态效果图中的简化场景几何仅用于展示 UI 位置，Art 正式资产另行制作。"
+  ],
+  "risks": [
+    "正式场景资源集成后需复核相机、面板与目标摊位的空间关系，避免较短屏幕遮挡。",
+    "点击容差和相机微调的实现数值由 Client 在目标设备标定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

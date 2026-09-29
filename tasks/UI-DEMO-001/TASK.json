@@ -1,0 +1,41 @@
+{
+  "id": "UI-DEMO-001",
+  "title": "百鬼夜市 Demo 最简 UI 规格",
+  "type": "ui",
+  "owner": "ui",
+  "parent": "DEMO-001",
+  "objective": "依据已批准产品规格与美术方向，定义修复提示、确认/关闭按钮及完成反馈的竖屏布局、状态与触控边界，制作可评审的轻量界面效果图。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）"
+  ],
+  "deliverables": [
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UI-DEMO-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UI-DEMO-001/v0.1/screens/repair-flow.png",
+    "deliverables/ui/UI-DEMO-001/v0.1/components/repair-controls.png",
+    "deliverables/ui/UI-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "竖屏主场景 UI 保持简洁，只含目标提示、确认修复、关闭、完成提示；不增加经济和其他玩法按钮",
+    "明确正常、按下、禁用和已完成等必要状态，目标摊位点击与地图拖拽/双指缩放不冲突",
+    "明确安全区、可点击区域与缩放状态下的屏幕位置；UI 不遮住修复摊位及主要顾客路线",
+    "配色与形状遵循已批准 Art Direction，并通过 Art 视觉一致性评审",
+    "提供用户可评审的关键界面和组件效果图，标注概念与可集成资产边界"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 USER_APPROVED",
+    "ART-DEMO-001 v0.1 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "UI 只为 Demo 验证服务，不设计正式游戏信息架构。",
+    "正式客户端视觉集成须等待本规格用户批准。",
+    "Master于本轮确认UI Owner已实际启动v0.1规格制作；Producer登记TASK_STARTED，当前交付文件待落地核验。",
+    "v0.1 UI规格、配色、界面效果图、组件效果图及交付元数据均已提交；4项验收PASS，Art视觉一致性评审尚未返回，相关验收项NOT_TESTED。Producer登记REVIEW，不推进USER_REVIEW。",
+    "Art视觉一致性评审及Master独立评审均APPROVED，UI v0.1五项验收PASS，必需文件均存在；Producer推进USER_REVIEW。用户批准前Client正式UI集成关闭。"
+  ]
+}

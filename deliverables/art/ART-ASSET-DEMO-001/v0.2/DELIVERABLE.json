@@ -1,0 +1,23 @@
+{
+  "task_id": "ART-ASSET-DEMO-001",
+  "owner": "art",
+  "summary": "v0.2 修正最小美术资产包：保留 v0.1 草稿，替换有邻接残片的破败／修复摊位、两桥与两类顾客为独立透明 PNG，并逐张复核全包。",
+  "artifacts": [
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_AUDIT.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSEMBLY_GUIDE.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/scenes/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/characters/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/props/"
+  ],
+  "acceptance_results": [
+    {"criterion":"提供可拼成大于初始竖屏视野的等距地面、石路、水岸和水面图块，至少两座桥与阎罗殿远端地标","result":"PASS","evidence":"scenes/ 含四种 Tile、两张完整桥 PNG 与阎罗殿；ASSET_AUDIT.md 确认桥两端轮廓。"},
+    {"criterion":"提供可复用破败摊位模块、同锚点修复状态模块及少量蛛网/杂草/灯笼；其他摊位维持破败","result":"PASS","evidence":"两个 768×512 单体摊位不含邻接残片；ASSET_MANIFEST.md 与 ASSEMBLY_GUIDE.md 规定同锚点切换。"},
+    {"criterion":"提供一名可替换锚点店长与至少三种可爱鬼怪顾客的最小可行动画或方向帧","result":"PASS","evidence":"店长、浮游鬼、符纸鬼与小妖兽均在 characters/；三类顾客均有两帧微动。"},
+    {"criterion":"资产可单独导入 Cocos Creator，透明边、锚点、分层与命名有清晰说明，概念图不冒充运行资产","result":"PASS","evidence":"ASSET_AUDIT.md 逐项复核，ASSEMBLY_GUIDE.md 规定导入、锚点和分层；概念图未被引用为纹理。"},
+    {"criterion":"视觉密度足以验证一处修复前后对比与桥入口到桥出口的客流，同时保留主流手机60帧目标的压缩/合批空间","result":"PASS","evidence":"模块化 Tile 和分组图集支持复用；重生成资产已缩放为 768×512 或 512×384，未引入实时特效。"}
+  ],
+  "assumptions": ["v0.2 是待用户审批的修正版本，后续 Client 只可消费获批版本。", "最终图集压缩与目标机性能仍由 Client/QA 在 Cocos 中实测。"],
+  "risks": ["生成式单体资源需在实际场景确认与 TileMap 的视觉尺度。", "无残片审计不替代 Cocos 导入后的 atlas 串色与遮挡测试。"],
+  "status": "READY_FOR_REVIEW"
+}

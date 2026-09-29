@@ -71,3 +71,18 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 | 2026-09-29（核验日） | TECH-DEMO-001 | tech_lead | REVIEW | 自评与交付元数据 | v0.2 | deliverables/tech_lead/TECH-DEMO-001/v0.2/DELIVERABLE.json | 5项验收PASS | Task所列产物均存在，v0.1历史保留 |
 | 2026-09-29（核验日） | TECH-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 独立评审 | v0.2 | deliverables/tech_lead/TECH-DEMO-001/v0.2/MASTER_REVIEW.json | APPROVED | 专业评审不替代用户批准 |
 | 2026-09-29（核验日） | TECH-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.2 | tasks/TECH-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 三项任务在USER_REVIEW，Demo产品阶段DONE，无空转任务；Client/QA门禁关闭 |
+| 2026-09-29（用户决定日） | TECH-DEMO-001 | producer | USER_APPROVED / DONE | 技术设计审批记录 | v0.2 | tasks/TECH-DEMO-001/ARTIFACT_APPROVAL.json | 用户批准 | Master同时呈现TECH v0.2与ART v0.1后，用户回复“继续吧”；技术阶段完成，后续Client/QA仍需开工包审批 |
+| 2026-09-29（用户决定日） | ART-DEMO-001 | producer | USER_APPROVED / DONE | 美术方向审批记录 | v0.1 | tasks/ART-DEMO-001/ARTIFACT_APPROVAL.json | 用户批准 | 同一用户回复覆盖明确呈现的ART v0.1；美术阶段完成，UI规格任务可由Master创建 |
+| 2026-09-29（核验日） | TECH-DEMO-001 / ART-DEMO-001 | producer | CONTINUITY_CHECK | 已批准阶段状态 | v0.2 / v0.1 | project/WORKFLOW_STATUS.md | PASS | PRODUCT-001仍USER_REVIEW；UI规格已具备输入但待Master创建；无空转READY/IN_PROGRESS |
+| 2026-09-29（Master确认日） | UI-DEMO-001 | ui | TASK_STARTED | UI规格制作 | v0.1 | tasks/UI-DEMO-001/TASK.json | 上游产品、Art、Tech均USER_APPROVED | Master确认Owner已实际启动；预定交付目录deliverables/ui/UI-DEMO-001/v0.1/尚无文件，后续核验真实产物 |
+| 2026-09-29（Master确认日） | ART-ASSET-DEMO-001 | art | TASK_STARTED | 可集成资产制作 | v0.1 | tasks/ART-ASSET-DEMO-001/TASK.json | 上游产品、Art、Tech均USER_APPROVED | Master确认Owner已实际启动；预定交付目录deliverables/art/ART-ASSET-DEMO-001/v0.1/尚无文件，后续核验真实产物 |
+| 2026-09-29（核验日） | UI-DEMO-001 | ui | WORK_IN_PROGRESS | UI规格与配色草稿 | v0.1 | deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md | DRAFT | UI_SPEC.md与COLOR_SYSTEM.md真实存在；效果图、元数据和评审待提交 |
+| 2026-09-29（核验日） | UI-DEMO-001 | ui | DRAFT_SUBMITTED / REVIEW | UI完整交付包 | v0.1 | deliverables/ui/UI-DEMO-001/v0.1/DELIVERABLE.json | 4项PASS；Art一致性项NOT_TESTED | Task所列规格、配色和两张PNG真实存在；等待Art视觉一致性评审及Master评审 |
+| 2026-09-29（核验日） | UI-DEMO-001 | art | VISUAL_REVIEW_APPROVED | UI视觉一致性评审 | v0.1 | deliverables/ui/UI-DEMO-001/v0.1/REVIEW.json | APPROVED | UI交付元数据已更新为5项PASS；Master独立评审仍待完成 |
+| 2026-09-29（核验日） | ART-ASSET-DEMO-001 | art | WORK_IN_PROGRESS | 场景/角色/道具首批图像 | v0.1 | deliverables/art/ART-ASSET-DEMO-001/v0.1/scenes/tile_ground.png | 未批准 | scenes、characters、props目录已有真实PNG；清单、装配说明、交付元数据及评审待核验 |
+| 2026-09-29（核验日） | UI-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | UI独立评审 | v0.1 | deliverables/ui/UI-DEMO-001/v0.1/MASTER_REVIEW.json | APPROVED | Art一致性评审亦APPROVED；专业评审不替代用户批准 |
+| 2026-09-29（核验日） | UI-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | UI当前审批记录 | v0.1 | tasks/UI-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认 | 5项验收PASS，UI到审批门禁；Art资产包继续实际产出，Client视觉集成关闭 |
+| 2026-09-29（核验日） | ART-ASSET-DEMO-001 | art | DRAFT_SUBMITTED / REVIEW | 可集成资产包交付清单 | v0.1 | deliverables/art/ART-ASSET-DEMO-001/v0.1/DELIVERABLE.json | 5项验收PASS | 资产清单、装配说明和三个图像目录均真实存在；专业评审待完成 |
+| 2026-09-29（核验日） | ART-ASSET-DEMO-001 | art | REVISION_DRAFT / DRAFT_SUBMITTED | 修正后的可集成资产包 | v0.2 | deliverables/art/ART-ASSET-DEMO-001/v0.2/DELIVERABLE.json | 5项验收PASS | v0.1未进入用户审批、保留为草稿；v0.2资产审计、装配说明与21张PNG已核验 |
+| 2026-09-29（核验日） | ART-ASSET-DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 资产包独立评审 | v0.2 | deliverables/art/ART-ASSET-DEMO-001/v0.2/REVIEW.json | APPROVED | 专业评审不替代用户批准 |
+| 2026-09-29（核验日） | ART-ASSET-DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.2 | tasks/ART-ASSET-DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 三项开放任务均到USER_REVIEW，Client视觉集成保持关闭 |

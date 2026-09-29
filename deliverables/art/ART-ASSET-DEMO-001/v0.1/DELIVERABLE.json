@@ -1,0 +1,48 @@
+{
+  "task_id": "ART-ASSET-DEMO-001",
+  "owner": "art",
+  "summary": "交付百鬼夜市 Demo 的最小可导入 PNG 美术包：等距地表、水岸与石路图块、两桥和阎罗殿地标、破败和修复摊位、灯笼与树、店长及三类可爱鬼怪顾客两帧微动资源。",
+  "artifacts": [
+    "deliverables/art/ART-ASSET-DEMO-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.1/ASSEMBLY_GUIDE.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.1/scenes/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.1/characters/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.1/props/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "提供可拼成大于初始竖屏视野的等距地面、石路、水岸和水面图块，至少两座桥与阎罗殿远端地标",
+      "result": "PASS",
+      "evidence": "scenes/ 下含 4 个 256×128 Tile、两座独立桥与 yama_palace；ASSEMBLY_GUIDE.md 第2、3节说明拼装。"
+    },
+    {
+      "criterion": "提供可复用破败摊位模块、同锚点修复状态模块及少量蛛网/杂草/灯笼；其他摊位维持破败",
+      "result": "PASS",
+      "evidence": "props/stall_ruined.png 含破棚、蛛网和杂草；stall_restored.png 含完整营业摊位与暖灯；ASSET_MANIFEST.md 规定同锚点切换。"
+    },
+    {
+      "criterion": "提供一名可替换锚点店长与至少三种可爱鬼怪顾客的最小可行动画或方向帧",
+      "result": "PASS",
+      "evidence": "characters/ 含 keeper_ghost 与三类顾客各自 walk_01/walk_02；ASSEMBLY_GUIDE.md 第4节规定两帧循环和镜像。"
+    },
+    {
+      "criterion": "资产可单独导入 Cocos Creator，透明边、锚点、分层与命名有清晰说明，概念图不冒充运行资产",
+      "result": "PASS",
+      "evidence": "所有运行资产为独立 PNG；ASSET_MANIFEST.md 与 ASSEMBLY_GUIDE.md 规定 alpha、锚点、命名、分层和概念图边界。"
+    },
+    {
+      "criterion": "视觉密度足以验证一处修复前后对比与桥入口到桥出口的客流，同时保留主流手机60帧目标的压缩/合批空间",
+      "result": "PASS",
+      "evidence": "模块化复用和三类顾客变体支持街区密度；ASSEMBLY_GUIDE.md 第1、5节按地表/地标/角色分组，未引入实时光照。"
+    }
+  ],
+  "assumptions": [
+    "Client 将根据场景实际世界单位决定最终缩放、图集尺寸和相机边界。",
+    "两帧顾客资源服务 Demo 行走可读性；正式角色动画另立美术任务。"
+  ],
+  "risks": [
+    "生成式图像切分后需在 Cocos 中检查透明边、图集串色和跨层遮挡。",
+    "60 FPS 为后续目标机型实测目标，资产包不构成帧率承诺。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "ART-ASSET-DEMO-001",
+  "title": "百鬼夜市 Demo 最小可集成美术资产包",
+  "type": "art",
+  "owner": "art",
+  "parent": "DEMO-001",
+  "objective": "按已批准美术方向与混合地图技术规格，制作可供 Cocos Demo 拼装和角色行走验证的最小 2D 资产包。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md（USER_APPROVED）",
+    "deliverables/art/ART-DEMO-001/v0.1/ASSET_MANIFEST.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）"
+  ],
+  "deliverables": [
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_AUDIT.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSEMBLY_GUIDE.md",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/scenes/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/characters/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/props/",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "提供可拼成大于初始竖屏视野的等距地面、石路、水岸和水面图块，至少两座桥与阎罗殿远端地标",
+    "提供可复用破败摊位模块、同锚点修复状态模块及少量蛛网/杂草/灯笼；其他摊位维持破败",
+    "提供一名可替换锚点店长与至少三种可爱鬼怪顾客的最小可行动画或方向帧",
+    "资产可单独导入 Cocos Creator，透明边、锚点、分层与命名有清晰说明，概念图不冒充运行资产",
+    "视觉密度足以验证一处修复前后对比与桥入口到桥出口的客流，同时保留主流手机60帧目标的压缩/合批空间"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 USER_APPROVED",
+    "ART-DEMO-001 v0.1 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本包是 Demo 最小资产，不扩展完整店铺和角色库。",
+    "必要时可分批提交，但可集成版本须整体通过 Art 专业评审与用户审批。",
+    "v0.1 保留为有图集裁切残片的草稿；当前评审对象为 v0.2 独立单体修正资产包。",
+    "Master于本轮确认Art Owner已实际启动v0.1最小资产包制作；Producer登记TASK_STARTED，当前交付文件待落地核验。",
+    "v0.2资产审计、清单、装配说明、21张PNG及交付元数据已核验，5项验收PASS；Master独立评审APPROVED。Producer推进USER_REVIEW；v0.1草稿保留，用户未批准前Client不得正式消费。"
+  ]
+}
