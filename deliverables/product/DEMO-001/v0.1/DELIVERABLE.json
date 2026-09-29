@@ -1,0 +1,49 @@
+{
+  "task_id": "DEMO-001",
+  "owner": "product",
+  "summary": "竖屏远景2.5D夜市Demo产品规格：单张大地图拖拽缩放、一处破败摊位修复并生成一名店长、可爱鬼怪顾客从奈何桥入口经夜市至右下桥离开，以及最简点击UI。",
+  "artifacts": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "单张大于初始视野的竖屏2.5D地图，镜头可拖拽缩放且有可验证边界",
+      "result": "PASS",
+      "evidence": "规格第2节、第8节场景1；具体比例与性能交Tech Lead。"
+    },
+    {
+      "criterion": "破败摊位点击修复、生成一名店长、重复点击不重复生成",
+      "result": "PASS",
+      "evidence": "规格第3节状态表、第8节场景2和3。"
+    },
+    {
+      "criterion": "可爱鬼怪从奈何桥入口经过夜市并从右下桥离开",
+      "result": "PASS",
+      "evidence": "规格第4节、第8节场景4。"
+    },
+    {
+      "criterion": "UI仅含验证必需按钮，明确不做项",
+      "result": "PASS",
+      "evidence": "规格第5至6节、第8节场景5。"
+    },
+    {
+      "criterion": "两张参考图用于风格和修复前后状态，保留地标及模块化摊位",
+      "result": "PASS",
+      "evidence": "规格第1至2节对两图的可见信息和使用边界。"
+    },
+    {
+      "criterion": "列出Tech Lead、Art、UI、Client、QA输入边界及可观察验收证据",
+      "result": "PASS",
+      "evidence": "规格第7节角色边界、第8节五项验收场景；明确下游未解锁。"
+    }
+  ],
+  "assumptions": [
+    "任务包指定竖屏手机、单人本地Demo，重启回初始状态以便重复验证。",
+    "参考图的多个摊位与复杂栏位仅作场景氛围，不纳入可操作范围。"
+  ],
+  "risks": [
+    "概念图不定义游戏坐标、可导航范围或可交互命中区，后续需Tech/UI/Art对齐。",
+    "大地图与多个移动顾客的实际设备性能需在技术规格及QA阶段验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

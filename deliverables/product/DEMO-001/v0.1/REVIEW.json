@@ -1,0 +1,24 @@
+{
+  "task_id": "DEMO-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "规格把Demo范围收敛为远景2.5D大地图、一次性摊位修复与单店长生成、奈何桥入口至右下桥出口的顾客路线及最简UI，未把未批准的完整经营系统带入实现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "破败、确认修复、已修复三种状态和重复点击幂等结果清晰；顾客入口、经过、出口三段及镜头拖拽缩放均有可录屏证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "两张项目内视觉参考图已作为同一场景的修复前后风格输入；后续角色、摊位、美术、技术和测试责任边界已写明。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "地图坐标、缩放比例、同屏顾客数和帧率目标须由Tech Lead在批准产品规格后确定；不影响本版作为用户评审输入。"
+    }
+  ],
+  "next_action": "Producer核验交付与专业评审后推进USER_REVIEW；用户明确批准v0.1产品规格前，不创建或解锁Tech、Art、UI、Client和QA正式执行任务。"
+}

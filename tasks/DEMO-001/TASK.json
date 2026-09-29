@@ -1,0 +1,37 @@
+{
+  "id": "DEMO-001",
+  "title": "百鬼夜市核心场景全流程验证 Demo",
+  "type": "design",
+  "owner": "product",
+  "parent": null,
+  "objective": "产出可审批的最小 Demo 产品规格，作为后续 UI、美术、技术、客户端和 QA 全流程验证的唯一输入。Demo 验证远景2.5D夜市地图拖拽缩放、破败摊位点击修复并生成店长、顾客从奈何桥入口穿过夜市后由右下桥离开。",
+  "inputs": [
+    "用户2026-09-29 Demo 指令",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-ruin-reference-v1.png",
+    "deliverables/visual-concepts/DEMO-001/nightmarket-first-shop-reference-v1.png",
+    "project/ARCHITECTURE.md（Cocos Creator 3.8.8 + TypeScript）",
+    "deliverables/product/PRODUCT-001/v0.7/PRODUCT_OUTLINE.md（仅作未批准的背景参考，不作为已批准上游输入）"
+  ],
+  "deliverables": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md",
+    "deliverables/product/DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "明确单张可拖拽、可缩放、尺寸大于初始可视区域的夜市地图验证范围，并定义默认镜头和可验证的边界",
+    "明确初始破败摊位、点击目标、修复结果、店长生成及重复点击行为；不扩展经营、资源、任务或数值系统",
+    "明确顾客从奈何桥入口生成、经过夜市区域并从右下桥离开的可验证路径，顾客为可爱卡通鬼怪",
+    "明确 UI 只保留满足验证的简易可点击按钮；列出明确不做项",
+    "将两张视觉参考作为风格与成长状态参考，保留模块化摊位、远景镜头和冥界地标语义",
+    "列出后续 Tech Lead、Art/UI、Client、QA 的输入输出边界与验收证据，不直接解锁下游实现"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本任务是全流程与技术实现验证，不是完整游戏首版。",
+    "默认采用竖屏手机、2.5D远景等距场景、单人本地 Demo；平台与帧率验证方法由后续技术规格确认。",
+    "用户要求之外的细节一律最小化；只有影响验证目标的重大歧义才向用户提问。",
+    "PRODUCT-001 v0.7仍处于USER_REVIEW；DEMO-001仅以用户最新明确指令为产品输入，不消费未批准概要。",
+    "Product v0.1规格与交付元数据已核验，6项验收PASS；Master专业评审APPROVED。Producer推进USER_REVIEW；用户未批准，Demo下游任务保持关闭。"
+  ]
+}

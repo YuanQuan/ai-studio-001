@@ -49,3 +49,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 | 2026-09-29（核验日） | PRODUCT-001 | product | DRAFT_SUBMITTED / REVIEW | 概要、可编辑脑图与MindMap AI快照 | v0.7 | deliverables/product/PRODUCT-001/v0.7/DELIVERABLE.json | 5项验收PASS | Required Artifacts与PRD索引核验；交互图URL同版登记，快照引用一致，历史版本保留 |
 | 2026-09-29（核验日） | PRODUCT-001 | master | PROFESSIONAL_REVIEW_APPROVED | 概要评审 | v0.7 | deliverables/product/PRODUCT-001/v0.7/REVIEW.json | APPROVED | 专业评审不替代用户批准 |
 | 2026-09-29（核验日） | PRODUCT-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前概要审批记录 | v0.7 | tasks/PRODUCT-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 唯一任务到审批门禁，无空转任务，下游关闭 |
+| 2026-09-29（核验日） | DEMO-001 | master | TASK_SPEC_CREATED | 正式任务包 | v0.1（计划） | tasks/DEMO-001/TASK.json | 尚无产品审批 | Master创建Demo产品规格任务；当前无实际写作产物，Producer不登记TASK_STARTED；后续专业任务待产品规格用户批准 |
+| 2026-09-29（核验日） | DEMO-001 | product | TASK_STARTED / DRAFT_SUBMITTED | Demo产品规格 | v0.1 | deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md | 未批准 | Product实际完成规格；Producer于交付核验时补录开工与提交证据，原始时刻未记录 |
+| 2026-09-29（核验日） | DEMO-001 | product | REVIEW | 完整交付元数据 | v0.1 | deliverables/product/DEMO-001/v0.1/DELIVERABLE.json | 6项验收PASS | Task所列产物实际存在，规格与交付元数据一致 |
+| 2026-09-29（核验日） | DEMO-001 | master | PROFESSIONAL_REVIEW_APPROVED | 产品规格评审 | v0.1 | deliverables/product/DEMO-001/v0.1/REVIEW.json | APPROVED | 专业评审通过，不替代用户批准 |
+| 2026-09-29（核验日） | DEMO-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前审批记录 | v0.1 | tasks/DEMO-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 两条正式任务线均停于USER_REVIEW，无空转任务；Demo下游未创建/解锁 |

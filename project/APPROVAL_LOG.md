@@ -12,5 +12,6 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-09-29 | PRODUCT-001 | 产品概要与脑图 | v0.6 | deliverables/product/PRODUCT-001/v0.6/PRODUCT_OUTLINE.md | REJECTED（要求修订） | Master转达：系统玩法为脑图主干，补摊位与经济资源闭环；分享等改为节点标签；每个定时任务限时至少1小时 | v0.7修订中，未批准 |
 
 ## 当前门禁
-- 历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。
+- PRODUCT-001历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。
+- DEMO-001 v0.1产品规格已通过专业评审，处于USER_REVIEW，用户尚未作出批准或退回决定；正式审批状态见 `tasks/DEMO-001/ARTIFACT_APPROVAL.json`。
 - 用户明确方向由Master记录，不等于整包批准；下游关闭。
