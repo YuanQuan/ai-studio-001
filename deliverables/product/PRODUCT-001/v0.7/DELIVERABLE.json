@@ -1,0 +1,50 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "v0.7以系统玩法为主线修订概要和脑图，纠正定时任务的至少1小时为单任务限时，补摊位升级／改造／装饰及S2历史资源与系统闭环映射；MindMap AI交互图、项目内可编辑源与静态快照同版登记。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.7/PRODUCT_OUTLINE.md",
+    "deliverables/product/PRODUCT-001/v0.7/BRAINSTORM_MAP.md",
+    "deliverables/product/PRODUCT-001/v0.7/MINDMAP_AI_SNAPSHOT.md",
+    "https://mindmapai.app/canvas/c600834c508250f6f306a774bf7026543a7d7aa3447072ead057524cca48b0b8/edit",
+    "project/PRD.md",
+    "project/config/CONFIG_CATALOG.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "以系统玩法为脑图主干，体验标签落在具体节点",
+      "result": "PASS",
+      "evidence": "BRAINSTORM_MAP.md按M04/M02/M03/M11/M01/M06/M08/M07等系统分枝，标签置于子节点。"
+    },
+    {
+      "criterion": "摊位包含升级、改造和加装饰",
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md M02.01/M02.03及Q24；作用和数值仍待验证。"
+    },
+    {
+      "criterion": "既有资源和成长指标逐项映射来源用途及闭环",
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md M06资源与指标映射引用历史S2，另列其他候选产出。"
+    },
+    {
+      "criterion": "每个定时任务至少1小时，撤销相邻触发间隔解释",
+      "result": "PASS",
+      "evidence": "PRODUCT_OUTLINE.md v0.7用户方向、M08.01.02、Q21及BRAINSTORM_MAP.md；两个窗口不变。"
+    },
+    {
+      "criterion": "历史版本保留、本地脑图可编辑、外部交互图与静态快照同版",
+      "result": "PASS",
+      "evidence": "v0.1至v0.6保留；BRAINSTORM_MAP.md、MINDMAP_AI_SNAPSHOT.md与交互图同为v0.7。已核对八个系统主枝、十种资源/指标、任务时长及标签；两条可能误导的箭头已从交互图和快照移除。"
+    }
+  ],
+  "assumptions": [
+    "本轮仍为头脑风暴，不确认历史资源成为正式货币或首版范围。",
+    "MindMap AI交互图与静态快照由Master制作，Product核对同版产品语义。"
+  ],
+  "risks": [
+    "经济表来自历史S2，弱社交与基础免费成长方向可能要求删改旧来源用途。",
+    "升级、改造、装饰的边界和产销关系未定。",
+    "外部交互图和本地源可能产生版本漂移，需同版核对。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

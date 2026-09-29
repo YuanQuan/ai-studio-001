@@ -44,3 +44,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 | 2026-09-29（核验日） | PRODUCT-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前概要审批记录 | v0.6 | tasks/PRODUCT-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 唯一任务已到审批门禁，无空转任务或下游解锁 |
 | 2026-09-29（核验日） | PRODUCT-001 | producer | GOVERNANCE_SYNC_VERIFIED | 脑图方法提案与Studio文件 | CAP-2026-09-29-BRAINSTORM | governance/capability_changes/CAP-2026-09-29-BRAINSTORM.json | 提案记录user_approval=APPROVED；游戏概要未批准 | 当前游戏与主模板的Product ROLE、总纲模板、Artifact Contract三文件哈希一致；标准项目模板PRD含脑图初期规则。提案status仍为PROPOSED，待Master校正治理记录；无Git操作 |
 | 2026-09-29 12:17 | PRODUCT-001 | producer | STUDIO_LOCK_UPDATED | 主模板已推送commit | 1d155c993e7d33696ade22a39e3e92901c16d38a | .studio-lock.json | 模板同步；游戏概要仍USER_REVIEW | 主模板工作区干净；当前游戏与主模板本轮13个通用Studio文件哈希一致；更新模板锁。该commit不构成游戏Artifact用户批准；Producer未执行Git提交推送 |
+| 2026-09-29（反馈日） | PRODUCT-001 | producer | REVISION_REQUESTED | v0.6审批决定 | v0.6 | tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.6.json | REJECTED（要求修订） | 系统玩法脑图、摊位与经济闭环、节点标签及定时任务限时含义修订；整版未批准 |
+| 2026-09-29（核验日） | PRODUCT-001 | product | REVISION_DRAFT | 概要草稿 | v0.7 | deliverables/product/PRODUCT-001/v0.7/PRODUCT_OUTLINE.md | DRAFT | 文件已出现；交互图、本地文字源/快照、交付元数据与专业评审待核验 |
+| 2026-09-29（核验日） | PRODUCT-001 | product | DRAFT_SUBMITTED / REVIEW | 概要、可编辑脑图与MindMap AI快照 | v0.7 | deliverables/product/PRODUCT-001/v0.7/DELIVERABLE.json | 5项验收PASS | Required Artifacts与PRD索引核验；交互图URL同版登记，快照引用一致，历史版本保留 |
+| 2026-09-29（核验日） | PRODUCT-001 | master | PROFESSIONAL_REVIEW_APPROVED | 概要评审 | v0.7 | deliverables/product/PRODUCT-001/v0.7/REVIEW.json | APPROVED | 专业评审不替代用户批准 |
+| 2026-09-29（核验日） | PRODUCT-001 | producer | USER_REVIEW / CONTINUITY_CHECK | 当前概要审批记录 | v0.7 | tasks/PRODUCT-001/ARTIFACT_APPROVAL.json | 用户待确认；流程检查PASS | 唯一任务到审批门禁，无空转任务，下游关闭 |
