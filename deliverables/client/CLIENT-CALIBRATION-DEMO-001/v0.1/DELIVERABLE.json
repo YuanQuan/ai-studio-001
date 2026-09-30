@@ -1,0 +1,46 @@
+{
+  "task_id": "CLIENT-CALIBRATION-DEMO-001",
+  "owner": "client",
+  "summary": "Creator 3.8.8 官方模板工程和 21 张已批准 PNG 已实际落地，编辑器已生成正式资源元数据；GUI 操作通道中断，静态场景与参数截图尚未完成。",
+  "artifacts": [
+    "apps/client/",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/CALIBRATION_APPENDIX.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/IMPLEMENTATION_REPORT.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "使用 Cocos Creator 3.8.8 建立唯一工程 apps/client/，README 说明从仓库根目录打开和 Web 预览/构建方式",
+      "result": "PASS",
+      "evidence": "apps/client/package.json 的 creator.version=3.8.8；apps/client/README.md；Creator asset-db:ready 日志"
+    },
+    {
+      "criterion": "导入已批准的 21 张生产 PNG 并记录源路径、导入映射、尺寸与资源检查结果",
+      "result": "PASS",
+      "evidence": "apps/client/assets/demo/ 21 张 PNG 与相邻 Creator 生成的 .meta；CALIBRATION_APPENDIX.md 记录 21/21 SHA-256 一致及尺寸"
+    },
+    {
+      "criterion": "仅搭建 TileMap、桥、阎罗殿、摊位两态、角色示意、相机和路径锚点；不得添加玩法代码",
+      "result": "NOT_TESTED",
+      "evidence": "工程没有玩法代码；因 GUI 输入中断，静态场景尚未创建"
+    },
+    {
+      "criterion": "校准附录记录实际场景参数并附规定视图截图",
+      "result": "NOT_TESTED",
+      "evidence": "CALIBRATION_APPENDIX.md 明确列出尚未量测的参数与缺失截图"
+    },
+    {
+      "criterion": "Tech Lead 场景参数、层级遮挡、相机边界和路径可行性评审通过，Artifact 进入 USER_REVIEW",
+      "result": "NOT_TESTED",
+      "evidence": "静态场景尚未形成，未提交专业评审或用户审批"
+    }
+  ],
+  "assumptions": [
+    "apps/client/ 是唯一 Creator 3.8.8 工程入口。",
+    "自动导入元数据来自 Editor 运行；不将资产导入成功等同于 Demo 可运行。"
+  ],
+  "risks": [
+    "当前缺少可用的 Creator GUI 画布操作通道，无法按批准规格创建静态场景和截图。",
+    "Tile 图片自动裁剪后的 SpriteFrame 有效尺寸与原图可能不同，TileSet 拼装前须复核接缝。"
+  ],
+  "status": "BLOCKED"
+}

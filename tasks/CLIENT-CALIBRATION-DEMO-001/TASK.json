@@ -33,11 +33,14 @@
     "UI-DEMO-001 v0.1 USER_APPROVED",
     "TECH-PERF-DEMO-001 v0.1 USER_APPROVED"
   ],
-  "status": "READY",
+  "status": "BLOCKED",
   "approval": "APPROVAL",
   "notes": [
     "Client Brief v0.2 的批准不解锁玩法逻辑开发，仅解锁 Creator 工程准备、已批准资产导入和无业务逻辑的静态场景校准。",
     "若本机没有可用的 Creator 3.8.8 编辑器，本任务进入 BLOCKED 并记录具体缺口；不得以 Dashboard 已安装推定 Creator 可用。",
-    "校准附录与截图须形成 Client 新版本，经 Tech Lead 专业评审和用户审批后，才可创建/解锁正式玩法编码任务。"
+    "校准附录与截图须形成 Client 新版本，经 Tech Lead 专业评审和用户审批后，才可创建/解锁正式玩法编码任务。",
+    "2026-09-30 Client已实际启动并提交v0.1部分交付：Creator 3.8.8官方工程apps/client/与21张批准PNG及Creator元数据已核验；DELIVERABLE验收2项PASS、3项NOT_TESTED。",
+    "真实阻塞：当前无可用Creator GUI画布操作通道，静态DemoScene、校准实际参数及规定截图无法完成，Tech Lead无法进行场景专业评审。",
+    "解除条件：在可交互Windows会话中用Creator 3.8.8打开apps/client/，保存静态场景，补齐实际参数与截图并交Tech Lead评审；新Client Artifact经用户批准前，正式玩法编码关闭。"
   ]
 }
