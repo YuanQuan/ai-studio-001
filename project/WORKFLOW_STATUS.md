@@ -21,7 +21,7 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 | QA-PLAN-DEMO-001 Demo测试计划与客户端用例 | DONE（计划阶段） | qa | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md；CLIENT_TEST_CASES.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.2 | 5项PASS；Tech Lead与Master评审APPROVED | USER_APPROVED | 无 | 实施后另行执行测试并交TEST_REPORT |
 | TECH-PERF-DEMO-001 Demo性能预算与测量口径 | DONE（预算阶段） | tech_lead | project/quality/PERFORMANCE_BUDGET.md；deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json | v0.1 | 5项PASS；Tech Lead自检与Master独立评审APPROVED | USER_APPROVED | 无 | 实施时锁定设备并采样验证 |
 
-| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/assets/DemoScene.scene及.meta；apps/client/assets/demo/tilemaps/NightMarket.tmx；deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.2/DELIVERABLE.json | v0.2（静态草稿） | 2项PASS、3项NOT_TESTED；正式TileMap/Prefab与Tech Review未完成 | 未批准 | Creator已正常打开，但画面捕获FrameArrived timed out；TMX无.meta，重载画面、实测参数和截图未验证 | 恢复可截图交互通道，刷新资源/重开场景，完成正式TileMap/Prefab、校准与截图后交Tech Lead评审 |
+| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/assets/DemoScene.scene；apps/client/assets/demo/tilemaps/NightMarket.tmx及.meta；apps/client/settings/v2/packages/project.json | v0.2后续场景更新（e7ebf77） | 旧草稿截图已确认可显示；新TiledMap画面、相机校准及Tech Review待完成 | 未批准 | 新TiledMap与720×1280竖屏画面尚待用户复核；实际相机、路径遮挡、规定截图与Tech Review未完成 | 复核新版画面，完成静态校准、Prefab及截图材料后交Tech Lead评审；玩法编码关闭 |
 
 ## 版本与边界
 - v0.1至v0.6原文保留；历史审批决定保存为tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.x.json。
@@ -37,5 +37,5 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
-2026-09-30复核：CLIENT-CALIBRATION-DEMO-001已有真实DemoScene及.meta、静态场景草稿和TMX源，v0.2部分交付已核验；Master报告commit 063cd84已推送。Creator 3.8.8正常打开，启动插件错误已清除；当前真实阻塞是画面捕获连续超时，无法验证外部场景重载和完成画布校准。新TMX尚无.meta，正式TileMap/Prefab、规定截图、实测校准及Tech Review未完成，仍为BLOCKED。其他开放任务PRODUCT-001在USER_REVIEW，无空转READY/IN_PROGRESS任务。恢复可截图交互通道后继续校准；新Client Artifact经过Tech Lead评审和用户批准前，玩法编码保持关闭。
+2026-09-30最新复核：用户截图已确认旧静态DemoScene在Creator可显示地面、桥、摊位和静态角色。Master随后切换为Creator已导入的NightMarket TMX/TiledMap并设置720×1280竖屏；核验TMX .meta、cc.TiledMap组件及项目尺寸存在，commit e7ebf77已推送。此前“TMX无.meta／尚无TiledMap”已不再是当前阻塞；用户旧截图不作为新版本画面证据。新版画面与相机校准仍待用户复核，Prefab、规定截图及Tech Review尚未完成，保持BLOCKED。v0.2报告保留其提交时状态，最新变化以本节点与提交为准，后续Client需补齐新交付版本。PRODUCT-001仍USER_REVIEW，无空转READY/IN_PROGRESS；新Client Artifact通过Tech Lead评审并获用户批准前，玩法编码关闭。
 
