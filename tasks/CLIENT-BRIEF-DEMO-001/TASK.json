@@ -1,0 +1,44 @@
+{
+  "id": "CLIENT-BRIEF-DEMO-001",
+  "title": "百鬼夜市 Demo 客户端开工概要",
+  "type": "design",
+  "owner": "client",
+  "parent": "DEMO-001",
+  "objective": "为 Cocos Creator 3.8.8 Demo 编码准备可评审的 FEATURE_BRIEF，锁定场景拼装、相机、修复、客流、UI、资源接入和性能测量方案。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md（USER_APPROVED）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md（USER_APPROVED）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSEMBLY_GUIDE.md（USER_APPROVED）",
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md（USER_APPROVED）",
+    "agents/client/FEATURE_BRIEF_TEMPLATE.md"
+  ],
+  "deliverables": [
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "明确新建最小 Cocos Creator 3.8.8 工程的目录、场景、脚本和资产导入方案，且不改项目级技术栈",
+    "明确 TileMap/Prefab 拼装、脚点排序、相机拖拽缩放边界、目标命中、一次修复和唯一店长、顾客固定路径点与对象池的实现",
+    "明确 UI/世界输入隔离、竖屏安全区与手势冲突处理，逐项追溯已批准的产品/UI/技术规格",
+    "明确 Web 开发运行入口、移动端构建/实测路径、日志、性能采样和可复现调试入口",
+    "列出编码前仍需验证的 Creator 安装、资源导入和设备条件；不在本任务写正式功能代码"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED",
+    "ART-DEMO-001 v0.1 USER_APPROVED",
+    "ART-ASSET-DEMO-001 v0.2 USER_APPROVED",
+    "UI-DEMO-001 v0.1 USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本 FEATURE_BRIEF 与 QA TEST_PLAN 组成客户端编码开工包，二者用户批准前不进入正式实现。",
+    "仓库当前仅有 client/README.md 和 COCOS_VERSION，没有实际 Creator 工程；应在 Brief 中给出创建步骤与验证证据。",
+    "Master确认Client Owner本轮已实际启动v0.1 FEATURE_BRIEF编制；Producer登记TASK_STARTED，文件待落地核验。正式编码仍受本Brief与QA计划双审批门禁限制。",
+    "当前提交版本v0.2；v0.1交叉评审要求修订并留档。用户尚未批准，正式功能编码保持锁定。",
+    "v0.2待用户审批范围仅工程创建、已批准资产导入、无业务逻辑静态场景校准；实际参数与截图须新版本经Tech Lead及用户批准后方可正式功能编码。"
+  ]
+}

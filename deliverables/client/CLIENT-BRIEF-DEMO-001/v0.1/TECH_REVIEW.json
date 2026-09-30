@@ -1,0 +1,20 @@
+{
+  "task_id": "CLIENT-BRIEF-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "已批准 TECH-DEMO-001 v0.2 第7节要求在编码前 FEATURE_BRIEF 锁定实际 TileMap 尺寸、地图可显示包围矩形、相机倍率范围、点击容差、目标 Prefab 命中区、桥与摊位锚点、固定路径坐标、演示参数、目标设备和采样方法；本 Brief 第3、4、6、7节把大部分坐标、倍率和路径点延至资产导入后的实现报告。请在 v0.2 Brief 中给出开工前校准门槛：可先完成 Creator 工程/资产导入与无业务逻辑的场景标定，形成带实际数值的校准附录并经 Tech Lead 复核；通过前不得开始相机、命中、修复和顾客路径正式编码。目标手机现无具体型号，可先锁定代表设备选择规则与采样方法，正式手机性能测试前再落盘型号；不因此阻止工程准备。若无法取得生产资产，相关正式实现保持待开工。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Brief 将新 Creator 工程放在 apps/client/，现有 client/ 仍有 README.md 与 COCOS_VERSION。该选择符合 project/ARCHITECTURE.md 的默认结构，但请明确 apps/client/ 为唯一可运行工程入口，client/ 两文件仅作历史版本标记或同步至新入口，并在 README 给出从仓库根目录打开工程和构建路径，避免 Client/QA 使用两个入口。无需为此修改项目级架构。"
+    },
+    {
+      "severity": "INFO",
+      "message": "混合地图、摊位幂等、固定路径和禁用未批准玩法的拆分与已批准产品/技术规格一致；性能采样在 project/quality/PERFORMANCE_BUDGET.md v0.1 获用户批准后应引用其版本与三轮手机采样口径。"
+    }
+  ],
+  "next_action": "Client 修订 FEATURE_BRIEF 为 v0.2，完成开工前参数校准附录与唯一工程入口说明；Tech Lead 复评后再交用户审批并解锁编码。"
+}

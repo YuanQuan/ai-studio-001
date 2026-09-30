@@ -1,0 +1,35 @@
+{
+  "id": "TECH-PERF-DEMO-001",
+  "title": "百鬼夜市 Demo 性能预算与测量口径",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "DEMO-001",
+  "objective": "为 Demo 的客户端开工包制定可操作的性能预算与采样方法，明确60FPS目标、设备类别、帧时间/卡顿、纹理/绘制和加载指标的判定口径。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.1/TEST_PLAN.md（QA草稿，仅用于发现测量缺口）"
+  ],
+  "deliverables": [
+    "project/quality/PERFORMANCE_BUDGET.md",
+    "deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "将60FPS定义为目标设备上可实测的运行目标，并给出采样时长、场景负载、重复次数与帧时间/卡顿判定",
+    "明确当前尚无目标手机时如何选择代表设备及如何记录型号、系统、分辨率、构建和画质档",
+    "给出draw call、纹理内存、活跃顾客数量和加载耗时的预算或观察/调优门槛，并区分硬性验收和观察值",
+    "明确Web测量只用于开发诊断，不能代替手机性能结论；低端机降级仍须满足产品核心验收",
+    "只制定Demo范围的性能要求，不修改已批准产品或技术功能语义"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本预算与CLIENT-BRIEF-DEMO-001、QA-PLAN-DEMO-001共同组成编码开工包。",
+    "尚无指定目标手机，若具体型号影响结论，可先定义设备选择规则并把真机结论留待执行时验证。"
+  ]
+}

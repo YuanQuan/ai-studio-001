@@ -1,0 +1,20 @@
+{
+  "task_id": "CLIENT-BRIEF-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.1 的主要问题已按阶段门槛解决：v0.2 第3、4、8节明确实际地图边界、相机倍率、命中区、锚点、路径坐标和演示参数不能延至实现报告；先允许 Creator 工程创建、已批准资产导入及无业务逻辑的静态场景标定，实际数值与截图形成新版校准附录并由 Tech Lead 复核。在该附录复核且完成相应用户审批前，不得编写相机、命中、修复、顾客路径等正式功能代码。故本 APPROVED 仅支持进入校准准备阶段，不代表完整客户端编码开工包已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 的工程入口问题已解决：第2节指定 apps/client/ 为唯一可运行 Creator 工程，client/ 两文件仅为现有版本标记，并要求工程 README 指明打开与构建路径。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 的性能意见已解决：第6、8节引用待审批 PERFORMANCE_BUDGET v0.1 的三轮各60秒口径，先锁代表设备选择规则，正式手机性能测试前落盘具体型号；候选数值不作为当前硬性验收。"
+    }
+  ],
+  "next_action": "Master/Producer 可将 v0.2 提交用户作仅限工程与静态场景校准阶段的审批，并明确记录限制；Client 校准后提交含实际参数、截图及版本的新 Brief/附录，由 Tech Lead 再评审并经过所需用户审批，之后才能解锁正式功能编码。"
+}

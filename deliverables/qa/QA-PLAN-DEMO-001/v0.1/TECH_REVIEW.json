@@ -1,0 +1,20 @@
+{
+  "task_id": "QA-PLAN-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "计划第4节仅按范围概括验证项，缺少用例 ID 到 DEMO-001 v0.1 第8节五个验收场景的逐项追溯。请补一张用例矩阵，逐项列出地图边界/手势、修复前后、重复点击唯一店长、顾客完整路线、最简 UI，以及关联技术/Art/UI 版本和预期证据；不能只在未来 TEST_REPORT 才补追溯。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "性能测试计划已覆盖初态/修复后、缩放两端和客流，但应在 v0.2 中引用待批的 project/quality/PERFORMANCE_BUDGET.md v0.1：每场景稳定后连续采样60秒、同条件重复3次，记录 p50/p95/p99、>33.3ms 与 >50ms 帧数及时间点，冷/热加载分别记录，并明确缺少真机时手机性能 NOT_TESTED。预算尚未批准前不要将候选优化目标写作 QA 硬性通过标准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Web 与手机结果分开、不扩展服务端/弱网/平台发布范围、视觉需专业复核的边界正确。"
+    }
+  ],
+  "next_action": "QA 修订 TEST_PLAN 为 v0.2，加入验收场景到用例的追溯矩阵并与获批性能预算对齐；Tech Lead 复评后进入用户审批。"
+}

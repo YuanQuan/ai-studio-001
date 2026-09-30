@@ -1,0 +1,20 @@
+{
+  "task_id": "CLIENT-BRIEF-DEMO-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 已解决 Tech Lead 的评审意见，并明确 apps/client/ 是唯一的 Creator 工程入口。概要规定首阶段仅创建工程、导入已批准资产和进行无玩法逻辑的场景校准。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本次审批仅限校准准备阶段。地图边界、相机数值、命中区、锚点、路径坐标和 Demo 参数尚未填写。Client 必须在新版本中提交实际参数及截图，经 Tech Lead 评审和用户批准后，才能开始相机、命中检测、修复或顾客流程的正式功能编码。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本机是否可用 Cocos Creator 3.8.8 尚未核实；目前还没有可运行的 Creator 工程或 Demo。"
+    }
+  ],
+  "next_action": "将 v0.2 提交用户评审，审批范围仅含工程准备、已批准资产导入和静态场景校准。实际校准版通过 Tech Lead 评审并获用户批准前，继续锁定正式玩法编码。"
+}

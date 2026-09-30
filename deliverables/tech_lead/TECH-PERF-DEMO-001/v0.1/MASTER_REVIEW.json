@@ -1,0 +1,16 @@
+{
+  "task_id": "TECH-PERF-DEMO-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "预算明确区分产品功能硬门槛、目标手机的 60 FPS 优化目标和观察阈值；采样窗口、重复次数、卡顿记录与原始证据要求可执行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "目标手机尚未指定，平均 FPS 和帧时间仍为候选目标；在真实设备与构建可用前，不能给出性能通过结论。"
+    }
+  ],
+  "next_action": "与 Client 功能概要、QA 测试计划一起提交用户评审；获批后锁定代表设备并在实际 Demo 上测量。"
+}

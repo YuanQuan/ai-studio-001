@@ -1,0 +1,42 @@
+{
+  "id": "QA-PLAN-DEMO-001",
+  "title": "百鬼夜市 Demo 测试计划与客户端用例",
+  "type": "test",
+  "owner": "qa",
+  "parent": "DEMO-001",
+  "objective": "在正式编码前产出可追溯的 TEST_PLAN 和 CLIENT_TEST_CASES，与客户端 FEATURE_BRIEF 共同构成用户审批的开工包。",
+  "inputs": [
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md（USER_APPROVED）",
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md（USER_APPROVED）",
+    "rules/qa_protocol.md",
+    "agents/qa/VISUAL_QA_GUIDE.md"
+  ],
+  "deliverables": [
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md",
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.2/CLIENT_TEST_CASES.md",
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "覆盖地图初始视野、拖拽缩放边界、手势与摊位点击冲突、修复/取消/重复点击、单店长和重启回初态",
+    "覆盖顾客从奈何桥经夜市到右下桥离开、持续生成、镜头移动中路径固定和角色不穿越建筑/水面",
+    "规定截图/连续录屏与日志证据，视觉比较引用已批准 Art/UI 版本，不以概念图逐像素一致为通过条件",
+    "区分 Web 功能验证与目标手机性能验证，明确60帧是目标而非未测即通过；列出设备与环境记录要求",
+    "明确本 Demo 不测服务端、网络、经济、存档、付费和广泛发布兼容性，缺失性能阈值或设备时如实标记待测"
+  ],
+  "dependencies": [
+    "DEMO-001 v0.1 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED",
+    "ART-ASSET-DEMO-001 v0.2 USER_APPROVED",
+    "UI-DEMO-001 v0.1 USER_APPROVED"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "QA 计划与 Client FEATURE_BRIEF 一起获得用户批准后，才允许客户端正式编码。",
+    "本任务只制定测试计划和用例；运行测试及 TEST_REPORT 在实现完成后另立任务。",
+    "Master确认QA Owner本轮已实际启动v0.1测试计划和客户端用例编制；Producer登记TASK_STARTED，文件待落地核验。正式编码仍受本计划与Client Brief双审批门禁限制。",
+    "当前提交版本v0.2；v0.1交叉评审要求修订并留档。用户尚未批准，正式功能编码保持锁定。"
+  ]
+}

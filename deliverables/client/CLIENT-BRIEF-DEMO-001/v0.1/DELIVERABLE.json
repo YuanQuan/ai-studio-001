@@ -1,0 +1,45 @@
+{
+  "task_id": "CLIENT-BRIEF-DEMO-001",
+  "owner": "client",
+  "summary": "完成百鬼夜市 Demo 的客户端编码前概要，覆盖 Cocos 3.8.8 工程、混合地图、修复状态、顾客路径、输入/UI、资源、平台与性能验证；尚未编写正式功能代码。",
+  "artifacts": [
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.1/FEATURE_BRIEF.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确新建最小 Cocos Creator 3.8.8 工程的目录、场景、脚本和资产导入方案，且不改项目级技术栈",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第 2、3、5 节；client/COCOS_VERSION 和 project/ARCHITECTURE.md"
+    },
+    {
+      "criterion": "明确 TileMap/Prefab 拼装、脚点排序、相机拖拽缩放边界、目标命中、一次修复和唯一店长、顾客固定路径点与对象池的实现",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第 3、4、6 节"
+    },
+    {
+      "criterion": "明确 UI/世界输入隔离、竖屏安全区与手势冲突处理，逐项追溯已批准的产品/UI/技术规格",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第 1、4 节"
+    },
+    {
+      "criterion": "明确 Web 开发运行入口、移动端构建/实测路径、日志、性能采样和可复现调试入口",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第 5、6 节"
+    },
+    {
+      "criterion": "列出编码前仍需验证的 Creator 安装、资源导入和设备条件；不在本任务写正式功能代码",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第 5、7 节；本机只读检查显示仅有 Cocos Dashboard，未证实 Creator 3.8.8 安装"
+    }
+  ],
+  "assumptions": [
+    "18×18 地表是首轮拼装起点，坐标、倍率和命中区在导入资产后标定并记录于实现报告。",
+    "UI 正式切图未包含在当前 v0.2 美术资产包中，可先按已批准 UI 规格使用 Creator 内置图形与文字。"
+  ],
+  "risks": [
+    "本机未确认 Cocos Creator 3.8.8 编辑器可运行，正式编码及 Web 构建前需核验。",
+    "等距地标、桥栏杆和角色脚点遮挡需在导入后真机检查。",
+    "目标手机、触控安全区和性能采样条件尚需落地确认。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "QA-PLAN-DEMO-001",
+  "owner": "qa",
+  "summary": "完成百鬼夜市 Demo 编码前测试计划与客户端用例，区分 Web 功能、视觉与目标手机性能验证；尚未执行测试。",
+  "artifacts": [
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.1/CLIENT_TEST_CASES.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "覆盖地图、镜头手势、修复幂等、单店长与重启初态", "result": "PASS", "evidence": "CLIENT_TEST_CASES.md C01-C08、C12"},
+    {"criterion": "覆盖顾客完整路径、持续生成、镜头独立与穿越遮挡", "result": "PASS", "evidence": "CLIENT_TEST_CASES.md C09-C11"},
+    {"criterion": "定义截图、连续录屏、日志及批准视觉版本对照", "result": "PASS", "evidence": "TEST_PLAN.md 验证范围与证据章节；CLIENT_TEST_CASES.md 证据列"},
+    {"criterion": "区分 Web 与目标手机性能，60 FPS 不作未测通过结论", "result": "PASS", "evidence": "TEST_PLAN.md 开工条件和性能章节；CLIENT_TEST_CASES.md C13"},
+    {"criterion": "列明不测范围以及设备、预算、Creator 环境缺口", "result": "PASS", "evidence": "TEST_PLAN.md 开工条件与不测试范围"}
+  ],
+  "assumptions": ["本计划使用已批准的四份正式 Demo 上游 Artifact；PRODUCT-001 概要未获批准，不作为测试依据。"],
+  "risks": ["当前无 Creator 工程及本机 Creator 3.8.8 可执行程序；尚未指定目标手机和性能预算，正式功能与性能测试均未执行。"],
+  "status": "READY_FOR_REVIEW"
+}

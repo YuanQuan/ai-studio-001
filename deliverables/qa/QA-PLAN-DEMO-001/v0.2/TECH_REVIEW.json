@@ -1,0 +1,20 @@
+{
+  "task_id": "QA-PLAN-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.1 的主要追溯问题已解决：v0.2 的矩阵把 DEMO-001 v0.1 第8节五个验收场景分别映射到 C01–C12 的用例 ID，并列出已批准技术、Art、资产、UI 版本和预期截图、录屏、日志证据。实际用例步骤与结果仍在后续 QA 用例和执行报告中完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 的性能口径问题已解决：计划引用待审批 PERFORMANCE_BUDGET v0.1，包含每场景稳定后60秒、同条件3次、p50/p95/p99、>33.3ms 与 >50ms、冷热加载和原始序列；无真机时手机性能标 NOT_TESTED，Web 只用于诊断。预算获批后须锁定相同版本执行，候选优化值不自动成为产品硬门槛。"
+    },
+    {
+      "severity": "INFO",
+      "message": "测试范围保持在 Demo 产品规格内，视觉专业复核、无服务端与无广泛平台发布测试的边界清晰。"
+    }
+  ],
+  "next_action": "QA v0.2 可进入用户审批；正式执行前取得已批准性能预算、具体构建与测试设备，并按矩阵补齐详细用例、证据和 TEST_REPORT。"
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "QA-PLAN-DEMO-001",
+  "owner": "qa",
+  "summary": "v0.2 补齐五项产品验收至 C01-C13 的追溯矩阵，并将手机性能采样与待审批预算 v0.1 对齐；尚未执行测试。",
+  "artifacts": [
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md",
+    "deliverables/qa/QA-PLAN-DEMO-001/v0.2/CLIENT_TEST_CASES.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "覆盖地图、镜头手势、修复幂等、单店长与重启初态", "result": "PASS", "evidence": "CLIENT_TEST_CASES.md C01-C08、C12"},
+    {"criterion": "覆盖顾客完整路径、持续生成、镜头独立与穿越遮挡", "result": "PASS", "evidence": "CLIENT_TEST_CASES.md C09-C11"},
+    {"criterion": "逐项追溯 DEMO-001 第8节五个验收及相关技术/视觉版本与证据", "result": "PASS", "evidence": "TEST_PLAN.md 产品验收到用例的追溯矩阵"},
+    {"criterion": "区分 Web 与手机性能，按待审批预算定义 60 秒×3 次和帧时间/卡顿记录", "result": "PASS", "evidence": "TEST_PLAN.md 性能测量；CLIENT_TEST_CASES.md C13"},
+    {"criterion": "列明不测范围和 Creator 工程、设备、预算缺口", "result": "PASS", "evidence": "TEST_PLAN.md 开工条件与不测试范围"}
+  ],
+  "assumptions": ["性能预算 v0.1 尚待用户批准，数值仅为候选目标，正式 QA 结论取决于获批版本及实际测量。"],
+  "risks": ["当前无 Creator 工程及本机 Creator 3.8.8 可执行程序；目标手机未指定，性能预算待审批；所有实际测试均 NOT_TESTED。"],
+  "status": "READY_FOR_REVIEW"
+}

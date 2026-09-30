@@ -1,0 +1,16 @@
+{
+  "task_id": "QA-PLAN-DEMO-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 追溯矩阵将 DEMO-001 五项验收场景映射到 C01-C12、已批准的技术与视觉版本及预期证据。C13 按性能预算规定采样；缺少目标设备时将手机性能记为 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前没有声称已执行测试。正式 QA 结果仍需依赖获批的预算版本、实际构建和测试设备，并在后续 TEST_REPORT 中提供证据。"
+    }
+  ],
+  "next_action": "将 QA-PLAN-DEMO-001 v0.2 与性能预算一并提交用户审批；待实现和环境准备完成后再执行测试计划。"
+}

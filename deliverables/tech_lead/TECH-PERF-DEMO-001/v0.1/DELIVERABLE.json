@@ -1,0 +1,20 @@
+{
+  "task_id": "TECH-PERF-DEMO-001",
+  "owner": "tech_lead",
+  "summary": "制定百鬼夜市 Demo 的手机性能预算、代表设备选择与三轮采样口径，区分产品硬门槛和观察性调优指标。",
+  "artifacts": [
+    "project/quality/PERFORMANCE_BUDGET.md",
+    "deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "将60FPS定义为目标设备上可实测的运行目标，并给出采样时长、场景负载、重复次数与帧时间/卡顿判定", "result": "PASS", "evidence": "PERFORMANCE_BUDGET.md 第1、3、4节"},
+    {"criterion": "明确当前尚无目标手机时如何选择代表设备及如何记录型号、系统、分辨率、构建和画质档", "result": "PASS", "evidence": "PERFORMANCE_BUDGET.md 第2节"},
+    {"criterion": "给出draw call、纹理内存、活跃顾客数量和加载耗时的预算或观察/调优门槛，并区分硬性验收和观察值", "result": "PASS", "evidence": "PERFORMANCE_BUDGET.md 第1、4节"},
+    {"criterion": "明确Web测量只用于开发诊断，不能代替手机性能结论；低端机降级仍须满足产品核心验收", "result": "PASS", "evidence": "PERFORMANCE_BUDGET.md 第5节"},
+    {"criterion": "只制定Demo范围的性能要求，不修改已批准产品或技术功能语义", "result": "PASS", "evidence": "PERFORMANCE_BUDGET.md 第1、5节"}
+  ],
+  "assumptions": ["尚未指定目标手机；预算给出选择和记录规则，真机数值需执行时验证。"],
+  "risks": ["目标设备和生产资产变化可能使候选优化目标需要复核；纹理 GPU 内存若工具不可得须注明估算方法。"],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,46 @@
+{
+  "task_id": "CLIENT-BRIEF-DEMO-001",
+  "owner": "client",
+  "summary": "按 Tech Lead 退回意见修订 v0.2：锁定 apps/client 为唯一工程入口，新增资产导入与静态场景标定门槛；实际参数与 Tech Lead 复核通过前不写正式功能代码。",
+  "artifacts": [
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确新建最小 Cocos Creator 3.8.8 工程的目录、场景、脚本和资产导入方案，且不改项目级技术栈",
+      "result": "PASS",
+      "evidence": "v0.2/FEATURE_BRIEF.md 第 2、3、5 节；client/COCOS_VERSION 和 project/ARCHITECTURE.md"
+    },
+    {
+      "criterion": "明确 TileMap/Prefab 拼装、脚点排序、相机拖拽缩放边界、目标命中、一次修复和唯一店长、顾客固定路径点与对象池的实现",
+      "result": "PASS",
+      "evidence": "v0.2/FEATURE_BRIEF.md 第 3、4、6 节"
+    },
+    {
+      "criterion": "明确 UI/世界输入隔离、竖屏安全区与手势冲突处理，逐项追溯已批准的产品/UI/技术规格",
+      "result": "PASS",
+      "evidence": "v0.2/FEATURE_BRIEF.md 第 1、4 节"
+    },
+    {
+      "criterion": "明确 Web 开发运行入口、移动端构建/实测路径、日志、性能采样和可复现调试入口",
+      "result": "PASS",
+      "evidence": "v0.2/FEATURE_BRIEF.md 第 5、6 节"
+    },
+    {
+      "criterion": "列出编码前仍需验证的 Creator 安装、资源导入和设备条件；不在本任务写正式功能代码",
+      "result": "PASS",
+      "evidence": "v0.2/FEATURE_BRIEF.md 第 5、7 节；本机只读检查显示仅有 Cocos Dashboard，未证实 Creator 3.8.8 安装"
+    }
+  ],
+  "assumptions": [
+    "18×18/256×128 与 8 px 只用于试铺和调试，不作为已锁定实现参数。",
+    "Creator 3.8.8 与生产资产导入后，另行形成带实际数值的 Brief 校准附录，Tech Lead 复核前不启动正式功能编码。",
+    "UI 正式切图未包含在当前 v0.2 美术资产包中，按批准 UI 规格先用 Creator 内置图形和文字。"
+  ],
+  "risks": [
+    "本机只发现 Cocos Dashboard，未证实 Creator 3.8.8 编辑器可用。",
+    "实际地图边界、相机倍率、命中区和路径坐标均待静态场景标定并经 Tech Lead 复核。",
+    "代表手机型号及性能结论待真机测试前落盘；性能预算 v0.1 仍待用户审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
