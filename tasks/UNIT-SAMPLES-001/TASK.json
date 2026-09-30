@@ -1,0 +1,35 @@
+{
+  "id": "UNIT-SAMPLES-001",
+  "title": "九个菜单可切换的 Cocos Creator 单元样例",
+  "type": "integration",
+  "owner": "master",
+  "parent": null,
+  "objective": "以现有百鬼夜市资源在Cocos Creator 3.8.8实现U01至U09的独立交互样例，菜单可切换，并对资源缺口与手机性能作明确标注。",
+  "inputs": [
+    "用户2026-10-01要求当前所有单元均做样例",
+    "project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md",
+    "tasks/UNIT-TEST-PLAN-001/ARTIFACT_APPROVAL.json",
+    "apps/client/assets/demo/"
+  ],
+  "deliverables": [
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "project/unit_tests/UNIT_SAMPLES_v0.1.md",
+    "deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json",
+    "deliverables/master/UNIT-SAMPLES-001/v0.1/VERIFICATION.md"
+  ],
+  "acceptance": [
+    "公共菜单可进入并返回U01至U09，各单元可独立重置",
+    "瓦片、镜头、建筑占格阻挡、角色移动、遮挡、特效、UI和密度样例均有可操作验证点",
+    "四方向及特效素材缺口在运行画面和交付说明中清楚标注，不把占位形体当正式资产",
+    "Cocos Creator 3.8.8 Web Mobile构建成功，并完成浏览器逐项操作验证",
+    "正式手机性能、双指触控和美术分层缺口如实记录"
+  ],
+  "dependencies": ["UNIT-TEST-PLAN-001"],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户授权制作样例；此任务不恢复旧整体Demo，也不声明正式四方向美术或手机60FPS已验证。",
+    "Master按用户直接授权进行最小集成实现；正式专业评审、QA与用户验收仍需基于本版成果继续。"
+  ]
+}

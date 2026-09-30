@@ -1,0 +1,47 @@
+{
+  "task_id": "UNIT-SAMPLES-001",
+  "owner": "master",
+  "summary": "完成百鬼夜市 U01 至 U09 的同菜单可切换 Cocos Creator 3.8.8 独立交互样例，并记录桌面浏览器验证与正式资产、手机性能边界。",
+  "artifacts": [
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "project/unit_tests/UNIT_SAMPLES_v0.1.md",
+    "deliverables/master/UNIT-SAMPLES-001/v0.1/VERIFICATION.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "公共菜单可进入并返回U01至U09，各单元可独立重置",
+      "result": "PASS",
+      "evidence": "Web Mobile 构建在桌面浏览器逐项打开九个入口，验证返回及重置；见 VERIFICATION.md。"
+    },
+    {
+      "criterion": "瓦片、镜头、建筑占格阻挡、角色移动、遮挡、特效、UI和密度样例均有可操作验证点",
+      "result": "PASS",
+      "evidence": "U01至U09操作记录见 VERIFICATION.md；U03阻挡格和U05脚点坐标已实际验证。"
+    },
+    {
+      "criterion": "四方向及特效素材缺口在运行画面和交付说明中清楚标注，不把占位形体当正式资产",
+      "result": "PASS",
+      "evidence": "U04、U05、U06、U07 画面文案和 UNIT_SAMPLES_v0.1.md 标明程序占位与正式资产缺口。"
+    },
+    {
+      "criterion": "Cocos Creator 3.8.8 Web Mobile构建成功，并完成浏览器逐项操作验证",
+      "result": "PASS",
+      "evidence": "Creator构建进程退出码36，日志显示构建完成；逐项结果见 VERIFICATION.md。"
+    },
+    {
+      "criterion": "正式手机性能、双指触控和美术分层缺口如实记录",
+      "result": "PASS",
+      "evidence": "VERIFICATION.md 尚待正式验收的边界与 UNIT_SAMPLES_v0.1.md 技术边界列明未测项。"
+    }
+  ],
+  "assumptions": [
+    "本轮目标是每个单元一个可操作样例，正式四方向美术与目标手机性能结论在后续独立验收。"
+  ],
+  "risks": [
+    "双指缩放与目标手机性能未实测。",
+    "建筑和角色四方向源图及精确屋檐分层资源尚未制作。",
+    "专业评审、QA报告和用户验收尚未完成。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
