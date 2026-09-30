@@ -21,7 +21,7 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 | QA-PLAN-DEMO-001 Demo测试计划与客户端用例 | DONE（计划阶段） | qa | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md；CLIENT_TEST_CASES.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.2 | 5项PASS；Tech Lead与Master评审APPROVED | USER_APPROVED | 无 | 实施后另行执行测试并交TEST_REPORT |
 | TECH-PERF-DEMO-001 Demo性能预算与测量口径 | DONE（预算阶段） | tech_lead | project/quality/PERFORMANCE_BUDGET.md；deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json | v0.1 | 5项PASS；Tech Lead自检与Master独立评审APPROVED | USER_APPROVED | 无 | 实施时锁定设备并采样验证 |
 
-| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/；deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/CALIBRATION_APPENDIX.md、IMPLEMENTATION_REPORT.md、DELIVERABLE.json | v0.1（部分交付） | 2项PASS、3项NOT_TESTED；无静态场景及Tech Review | 未批准 | Creator GUI画布操作通道不可用，无法创建静态场景、量测参数和截图 | 可交互Windows会话打开Creator 3.8.8工程，完成静态场景和附录后交Tech Lead评审 |
+| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/assets/DemoScene.scene及.meta；apps/client/assets/demo/tilemaps/NightMarket.tmx；deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.2/DELIVERABLE.json | v0.2（静态草稿） | 2项PASS、3项NOT_TESTED；正式TileMap/Prefab与Tech Review未完成 | 未批准 | Creator已正常打开，但画面捕获FrameArrived timed out；TMX无.meta，重载画面、实测参数和截图未验证 | 恢复可截图交互通道，刷新资源/重开场景，完成正式TileMap/Prefab、校准与截图后交Tech Lead评审 |
 
 ## 版本与边界
 - v0.1至v0.6原文保留；历史审批决定保存为tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.x.json。
@@ -37,4 +37,5 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
-2026-09-30连续执行检查：三项开工包已USER_APPROVED并完成文档阶段；PRODUCT-001仍USER_REVIEW。CLIENT-CALIBRATION-DEMO-001已实际产出工程与21张导入资源，但因Creator GUI画布通道不可用而BLOCKED；2项验收PASS、3项NOT_TESTED，没有静态场景/截图/Tech Review，不得进入USER_REVIEW或DONE。解除条件为可交互Creator会话完成场景校准并获得Tech Lead评审；新Client Artifact获用户批准前，正式功能编码关闭。
+2026-09-30复核：CLIENT-CALIBRATION-DEMO-001已有真实DemoScene及.meta、静态场景草稿和TMX源，v0.2部分交付已核验；Master报告commit 063cd84已推送。Creator 3.8.8正常打开，启动插件错误已清除；当前真实阻塞是画面捕获连续超时，无法验证外部场景重载和完成画布校准。新TMX尚无.meta，正式TileMap/Prefab、规定截图、实测校准及Tech Review未完成，仍为BLOCKED。其他开放任务PRODUCT-001在USER_REVIEW，无空转READY/IN_PROGRESS任务。恢复可截图交互通道后继续校准；新Client Artifact经过Tech Lead评审和用户批准前，玩法编码保持关闭。
+
