@@ -1,0 +1,43 @@
+{
+  "id": "CLIENT-CALIBRATION-DEMO-001",
+  "title": "百鬼夜市 Demo Creator 工程与静态场景校准",
+  "type": "integration",
+  "owner": "client",
+  "parent": "DEMO-001",
+  "objective": "依据已批准的 Client Brief v0.2 建立 Cocos Creator 3.8.8 工程，导入已批准 Demo 资产并完成无玩法逻辑的静态场景标定，提交实际数值、截图和技术评审材料；本任务不实现任何正式玩法逻辑。",
+  "inputs": [
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md（USER_APPROVED，仅校准准备范围）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md（USER_APPROVED）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSEMBLY_GUIDE.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）",
+    "project/quality/PERFORMANCE_BUDGET.md（USER_APPROVED）"
+  ],
+  "deliverables": [
+    "apps/client/Creator 工程源文件",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/CALIBRATION_APPENDIX.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/TECH_REVIEW.json"
+  ],
+  "acceptance": [
+    "使用 Cocos Creator 3.8.8 建立唯一工程 apps/client/，README 说明从仓库根目录打开和 Web 预览/构建方式；若编辑器不可用，明确记录阻塞，不伪造工程文件",
+    "导入已批准的 21 张生产 PNG 并记录源路径、导入映射、尺寸与资源检查结果",
+    "仅搭建 TileMap、桥、阎罗殿、摊位两态、角色示意、相机和路径锚点；不得添加相机控制、命中检测、修复状态或顾客移动等玩法代码",
+    "校准附录记录实际 TileMap 尺寸、地图可显示包围矩形、初始/最远/最近相机参数、点击容差与目标命中区、桥/摊位/店长锚点、固定路径坐标、本地演示参数与采样环境，并附规定视图截图",
+    "Tech Lead 对场景参数、层级遮挡、相机边界和路径可行性评审通过，生成的新 Client Artifact 进入 USER_REVIEW；用户批准前不得开始正式功能编码"
+  ],
+  "dependencies": [
+    "CLIENT-BRIEF-DEMO-001 v0.2 USER_APPROVED（校准准备范围）",
+    "ART-ASSET-DEMO-001 v0.2 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED",
+    "UI-DEMO-001 v0.1 USER_APPROVED",
+    "TECH-PERF-DEMO-001 v0.1 USER_APPROVED"
+  ],
+  "status": "READY",
+  "approval": "APPROVAL",
+  "notes": [
+    "Client Brief v0.2 的批准不解锁玩法逻辑开发，仅解锁 Creator 工程准备、已批准资产导入和无业务逻辑的静态场景校准。",
+    "若本机没有可用的 Creator 3.8.8 编辑器，本任务进入 BLOCKED 并记录具体缺口；不得以 Dashboard 已安装推定 Creator 可用。",
+    "校准附录与截图须形成 Client 新版本，经 Tech Lead 专业评审和用户审批后，才可创建/解锁正式玩法编码任务。"
+  ]
+}

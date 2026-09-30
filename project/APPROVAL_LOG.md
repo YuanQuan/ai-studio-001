@@ -20,7 +20,14 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-09-29 | CLIENT-BRIEF-DEMO-001 | Demo客户端开工概要 | v0.1 | deliverables/client/CLIENT-BRIEF-DEMO-001/v0.1/FEATURE_BRIEF.md | REVISION | Tech Lead交叉评审CHANGES_REQUESTED | v0.1留档，需v0.2复评；未提交用户审批 |
 | 2026-09-29 | TECH-PERF-DEMO-001 | Demo性能预算与测量口径 | v0.1 | project/quality/PERFORMANCE_BUDGET.md | USER_REVIEW | 5项验收PASS，Master独立评审APPROVED | 待与Client/QA修订版共同呈现；不解锁正式编码 |
 
-| 2026-09-30 | CLIENT-BRIEF-DEMO-001 | Demo客户端开工概要 | v0.2 | deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md | USER_REVIEW | 5项PASS，Tech Lead与Master评审APPROVED | 待用户确认；范围仅工程创建、资产导入及静态校准，正式功能编码仍锁定 |`r`n| 2026-09-30 | QA-PLAN-DEMO-001 | Demo测试计划与客户端用例 | v0.2 | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md | USER_REVIEW | 5项PASS，Tech Lead与Master评审APPROVED | 待用户确认；测试尚未执行 |`r`n`r`n## 当前门禁
+| 2026-09-30 | CLIENT-BRIEF-DEMO-001 | Demo客户端开工概要 | v0.2 | deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md | USER_REVIEW | 5项PASS，Tech Lead与Master评审APPROVED | 待用户确认；范围仅工程创建、资产导入及静态校准，正式功能编码仍锁定 |
+| 2026-09-30 | QA-PLAN-DEMO-001 | Demo测试计划与客户端用例 | v0.2 | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md | USER_REVIEW | 5项PASS，Tech Lead与Master评审APPROVED | 待用户确认；测试尚未执行 |
+
+| 2026-09-30 | CLIENT-BRIEF-DEMO-001 | Demo客户端开工概要 | v0.2 | deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md | USER_APPROVED | 用户明确回复“批准这三项” | 仅工程创建、已批准资产导入与静态场景校准；实际参数/截图新版获批前禁止功能编码 |
+| 2026-09-30 | QA-PLAN-DEMO-001 | Demo测试计划与客户端用例 | v0.2 | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md | USER_APPROVED | 同一明确批准覆盖本版 | 计划阶段完成，测试尚未执行 |
+| 2026-09-30 | TECH-PERF-DEMO-001 | Demo性能预算与测量口径 | v0.1 | project/quality/PERFORMANCE_BUDGET.md | USER_APPROVED | 同一明确批准覆盖本版 | 预算阶段完成，目标手机性能尚未实测 |
+
+## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。
 - DEMO-001 v0.1产品规格已获用户明确批准，产品阶段DONE；正式审批状态见 `tasks/DEMO-001/ARTIFACT_APPROVAL.json`。Tech Lead、Art、UI规格阶段可由Master创建并解锁。
 - TECH-DEMO-001 v0.1要求修订的历史决定保留；v0.2已USER_APPROVED，可作后续正式技术输入。历史决定见 `tasks/TECH-DEMO-001/ARTIFACT_APPROVAL_v0.1.json`。
@@ -28,4 +35,4 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - UI-DEMO-001 v0.1已USER_APPROVED，规格阶段DONE；审批状态见 `tasks/UI-DEMO-001/ARTIFACT_APPROVAL.json`。
 - ART-ASSET-DEMO-001 v0.2已USER_APPROVED，可集成资产阶段DONE；v0.1保留为未提交用户审批的草稿，审批状态见 `tasks/ART-ASSET-DEMO-001/ARTIFACT_APPROVAL.json`。
 - PRODUCT-001仍未获用户批准，其独立下游保持关闭。
-- TECH-PERF-DEMO-001 v0.1、Client Brief v0.2与QA Plan v0.2均处USER_REVIEW，作为同一开工审批包呈现；各版本分别记录，尚无用户批准。Client Brief v0.2仅允许审批工程创建、批准资产导入和静态校准；实际参数与截图新版本经Tech Lead及用户批准前，正式功能编码关闭。
+- 用户已批准TECH-PERF-DEMO-001 v0.1、Client Brief v0.2与QA Plan v0.2，各版本独立登记。Client Brief v0.2仅授权Creator工程创建、已批准资产导入和静态校准；CLIENT-CALIBRATION-DEMO-001的新参数与截图经Tech Lead评审及用户批准前，正式功能编码关闭。
