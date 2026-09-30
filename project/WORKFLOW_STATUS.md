@@ -21,7 +21,7 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 | QA-PLAN-DEMO-001 Demo测试计划与客户端用例 | DONE（计划阶段） | qa | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md；CLIENT_TEST_CASES.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.2 | 5项PASS；Tech Lead与Master评审APPROVED | USER_APPROVED | 无 | 实施后另行执行测试并交TEST_REPORT |
 | TECH-PERF-DEMO-001 Demo性能预算与测量口径 | DONE（预算阶段） | tech_lead | project/quality/PERFORMANCE_BUDGET.md；deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json | v0.1 | 5项PASS；Tech Lead自检与Master独立评审APPROVED | USER_APPROVED | 无 | 实施时锁定设备并采样验证 |
 
-| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/assets/DemoScene.scene；apps/client/assets/demo/tilemaps/NightMarket.tmx及.meta；apps/client/settings/v2/packages/project.json | v0.2后续场景更新（e7ebf77） | 旧草稿截图已确认可显示；新TiledMap画面、相机校准及Tech Review待完成 | 未批准 | 新TiledMap与720×1280竖屏画面尚待用户复核；实际相机、路径遮挡、规定截图与Tech Review未完成 | 复核新版画面，完成静态校准、Prefab及截图材料后交Tech Lead评审；玩法编码关闭 |
+| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED | client | apps/client/assets/DemoScene.scene；apps/client/assets/demo/tilemaps/NightMarket.tmx及.meta；apps/client/settings/v2/packages/project.json | v0.2后续场景更新（e7ebf77） | 旧草稿截图已确认可显示；新TiledMap画面、相机校准及Tech Review待完成 | 未批准 | 第二张截图仍显示旧Sprite场景和横屏预览；Ctrl+R重载因无法排除未保存修改被自动审批拒绝，待用户本次许可 | 用户明确许可重载后执行Creator重载并核验新版画面，再完成校准/Prefab/截图及Tech Review；玩法编码关闭 |
 
 ## 版本与边界
 - v0.1至v0.6原文保留；历史审批决定保存为tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.x.json。
@@ -38,4 +38,8 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 
 ## 连续执行检查
 2026-09-30最新复核：用户截图已确认旧静态DemoScene在Creator可显示地面、桥、摊位和静态角色。Master随后切换为Creator已导入的NightMarket TMX/TiledMap并设置720×1280竖屏；核验TMX .meta、cc.TiledMap组件及项目尺寸存在，commit e7ebf77已推送。此前“TMX无.meta／尚无TiledMap”已不再是当前阻塞；用户旧截图不作为新版本画面证据。新版画面与相机校准仍待用户复核，Prefab、规定截图及Tech Review尚未完成，保持BLOCKED。v0.2报告保留其提交时状态，最新变化以本节点与提交为准，后续Client需补齐新交付版本。PRODUCT-001仍USER_REVIEW，无空转READY/IN_PROGRESS；新Client Artifact通过Tech Lead评审并获用户批准前，玩法编码关闭。
+
+
+### 最新重载阻塞（2026-09-30）
+Master核对用户第二张截图：Creator窗口仍显示旧逐张地表Sprite与横屏预览；磁盘e7ebf77场景含TiledMap、旧地表已禁用，720×1280设置完整。自动审批审查拒绝Creator官方Ctrl+R重载，理由是无法排除窗口存在未保存修改。Master已请求用户对本次重载明确许可，许可前不执行或绕过重载。任务保持BLOCKED；本次操作许可不等于Client Artifact批准。continuity check：实际阻塞已记录，无空转任务；玩法编码继续关闭。
 
