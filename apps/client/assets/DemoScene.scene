@@ -459,6 +459,9 @@
     },
     "_children": [
       {
+        "__id__": 759
+      },
+      {
         "__id__": 18
       },
       {
@@ -505,7 +508,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "GroundTileMap_DraftSprites",
+    "_name": "DraftSpriteFallback_Disabled",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -1188,7 +1191,7 @@
         "__id__": 694
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_lpos": {
@@ -27999,5 +28002,92 @@
     "_useGrayscale": false,
     "_atlas": null,
     "_id": "g8EeO0-vBJoCcX37lN7tog"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "GroundTileMap",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "_parent": {
+      "__id__": 17
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 760
+      },
+      {
+        "__id__": 761
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_mobility": 0,
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "agbgUe2jMQaonLuds42Oag"
+  },
+  {
+    "__type__": "cc.UITransform",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 759
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 3840,
+      "height": 1920
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_id": "NSXNZbCFl7aPUC7/wZDzxQ"
+  },
+  {
+    "__type__": "cc.TiledMap",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 759
+    },
+    "_enabled": true,
+    "__prefab": null,
+    "_tmxFile": {
+      "__uuid__": "3affc159-d837-4bb8-a030-4fb2df02b0e3"
+    },
+    "_enableCulling": true,
+    "cleanupImageCache": true,
+    "_id": "CimIeGat5cVi0AHVRQED+A"
   }
 ]
