@@ -1,0 +1,48 @@
+{
+  "task_id": "CLIENT-CALIBRATION-DEMO-001",
+  "owner": "client",
+  "summary": "Creator 已保存真实 DemoScene；静态场景草稿和 TMX 源文件已落盘。编辑器画面、正式 TiledMap/Prefab、截图与技术评审尚未完成。",
+  "artifacts": [
+    "apps/client/assets/DemoScene.scene",
+    "apps/client/assets/DemoScene.scene.meta",
+    "apps/client/assets/demo/tilemaps/NightMarket.tmx",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.2/CALIBRATION_APPENDIX.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.2/IMPLEMENTATION_REPORT.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "使用 Cocos Creator 3.8.8 建立唯一工程 apps/client/，说明打开和预览方式",
+      "result": "PASS",
+      "evidence": "apps/client/package.json；apps/client/README.md；Creator 生成的 DemoScene.scene.meta"
+    },
+    {
+      "criterion": "导入已批准的 21 张 PNG 并检查来源、尺寸和资源元数据",
+      "result": "PASS",
+      "evidence": "v0.1 CALIBRATION_APPENDIX.md 的逐文件检查和 apps/client/assets/demo/ 的 21 个 Creator 元数据"
+    },
+    {
+      "criterion": "搭建正式 TileMap、地标 Prefab、摊位两态、角色示意、相机和路径锚点，且不添加玩法代码",
+      "result": "NOT_TESTED",
+      "evidence": "已形成静态场景草稿与 TMX 源；正式 TiledMap/Prefab 和 Creator 画面验证未完成"
+    },
+    {
+      "criterion": "记录实际校准参数并附默认、最近、最远、命中及完整道路截图",
+      "result": "NOT_TESTED",
+      "evidence": "v0.2 CALIBRATION_APPENDIX.md 仅记录文件内初值；所需截图和设备校准缺失"
+    },
+    {
+      "criterion": "Tech Lead 评审通过并进入用户评审",
+      "result": "NOT_TESTED",
+      "evidence": "尚无可验证的 Creator 画面和完整参数，不具备提交专业评审条件"
+    }
+  ],
+  "assumptions": [
+    "15×15 等距布局及当前坐标均为静态画面校准起点，未提升为产品规则。"
+  ],
+  "risks": [
+    "Creator 对外部场景文件的重新加载尚未得到画面证据。",
+    "TMX 资源尚未由 Creator 导入并生成元数据，当前场景地表仍为 Sprite 草稿。",
+    "竖屏设计分辨率、路径遮挡、相机边界及移动端性能尚未验证。"
+  ],
+  "status": "BLOCKED"
+}
