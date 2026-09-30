@@ -1,0 +1,32 @@
+{
+  "task_id": "CLIENT-CALIBRATION-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "最新磁盘版的结构检查通过：DemoScene.scene 共 151 个序列化对象、12 个场景 Prefab 实例，实例引用与九个已导入 Prefab 的 UUID/根 fileId 匹配；cc.TiledMap 指向 17×17、256×128 的 NightMarket.tmx。validate-static-scene.mjs 通过，并确认 Entry→Exit 五段的静态采样处于石路图块。Creator 已重新打开并保存该场景。这些证据支持资源关联和道路静态坐标，不代替最终画面或移动验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "入口桥 (-225,410)、BeforeEntry(-325,560)→Entry(-160,480) 及出口桥 (260,-775)、Exit(180,-650)→BeyondExit(350,-700) 已按桥贴图左上至右下的方向重排。更新后的 path-and-hit-area.png 显示黄线路径落在两桥的斜向桥面附近，先前按桥外接矩形却直穿灯柱/水边的明显错位已修正为合理候选；该图仍是离线拼装，真实桥面及栏杆遮挡尚未证实。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "修正后的真实 Creator 默认、最近、最远及桥面/完整路线截图均缺失。现存 creator-preview-before-exit-alignment.jpg 拍摄于两桥和路径最终重排之前，无法证明 151 对象最终场景的可见画面；三个倍率与拖到菱形边界后的画面也未验证。保守相机边界公式成立，720×1280 下最远 1600 的单轴中心限值约为 X±126、Y±63，但仍需实际预览检查地表裁边、目标可辨认和桥的入/出点。当前浏览器工具的 localhost URL 安全限制是取证缺口，不能据旧图判为通过。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "BeyondExit(350,-700) 位于出口桥右下端附近，但仍在地表菱形内部：|350|/2176+|700|/1088≈0.804＜1，部分合法相机位置下可能可见。TECH-DEMO-001 v0.2 第5节要求顾客越过桥的可见边界后再回收，当前静态路径未锁定桥后续行/遮挡或安全回收点。请补桥后退出点和不可见回收条件，或在最终运行画面中证实回收时不会在镜头内突然消失。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "场景仍将 ActorsRoot_StaticExamples 整组置于 LandmarkRoot 之后，未见独立桥栏/屋檐前景节点或按脚点深度安排的静态层级。旧版真实预览中的顾客与右下摊位屋檐有叠压；最新离线图不能证明问题消失。需在静态阶段明确关键遮挡层和脚点锚位，并以最终 Creator 画面核查入口/出口桥及摊位前后；动态排序代码须等待功能编码审批。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Camera 与 WorldRoot 同处 ScreenCanvas 层级，屏幕 UI 与移动世界镜头的隔离尚未运行验证。后续正式输入/UI 集成前须核对相机可见层、坐标变换及安全区；当前没有手势、命中、修复或顾客运动实现，不能从静态截图推断其效果或手机 60 FPS。"
+    }
+  ],
+  "next_action": "Client 保留本版已通过的 TileMap/Prefab/石路结构，补桥后退出与不可见回收点、关键前景遮挡和脚点标定；取得最终 151 对象场景的 Creator 默认、最近、最远、边界及两桥/目标路线真实画面后更新校准附录，再送 Tech Lead 复评。复评通过后仍须经 Master/Producer 提交用户明确批准；在此之前正式相机、命中、修复、客流和 UI 功能编码保持关闭。"
+}

@@ -14,10 +14,10 @@
   ],
   "deliverables": [
     "apps/client/Creator 工程源文件",
-    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/CALIBRATION_APPENDIX.md",
-    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/IMPLEMENTATION_REPORT.md",
-    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/DELIVERABLE.json",
-    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/TECH_REVIEW.json"
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/CALIBRATION_APPENDIX.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/DELIVERABLE.json",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/TECH_REVIEW.json"
   ],
   "acceptance": [
     "使用 Cocos Creator 3.8.8 建立唯一工程 apps/client/，README 说明从仓库根目录打开和 Web 预览/构建方式；若编辑器不可用，明确记录阻塞，不伪造工程文件",
@@ -39,8 +39,8 @@
     "Client Brief v0.2 的批准不解锁玩法逻辑开发，仅解锁 Creator 工程准备、已批准资产导入和无业务逻辑的静态场景校准。",
     "若本机没有可用的 Creator 3.8.8 编辑器，本任务进入 BLOCKED 并记录具体缺口；不得以 Dashboard 已安装推定 Creator 可用。",
     "校准附录与截图须形成 Client 新版本，经 Tech Lead 专业评审和用户审批后，才可创建/解锁正式玩法编码任务。",
-    "2026-09-30 Client已实际启动并提交v0.1部分交付：Creator 3.8.8官方工程apps/client/与21张批准PNG及Creator元数据已核验；DELIVERABLE验收2项PASS、3项NOT_TESTED。",
-    "真实阻塞：当前无可用Creator GUI画布操作通道，静态DemoScene、校准实际参数及规定截图无法完成，Tech Lead无法进行场景专业评审。",
-    "解除条件：在可交互Windows会话中用Creator 3.8.8打开apps/client/，保存静态场景，补齐实际参数与截图并交Tech Lead评审；新Client Artifact经用户批准前，正式玩法编码关闭。"
+    "2026-09-30 Client已在Creator 3.8.8中保存v0.3静态场景：17×17 TileMap、12个场景Prefab实例、两桥斜向静态路径与151个序列化对象；validate-static-scene.mjs通过；DELIVERABLE验收3项PASS、2项NOT_TESTED。v0.1保留为历史部分交付。",
+    "真实阻塞：Tech Lead对v0.3评审为CHANGES_REQUESTED。最终场景的真实默认/最近/最远、边界及完整路线画面，桥后安全回收条件，以及桥栏/屋檐遮挡和角色脚点证据仍缺；浏览器工具当前对localhost预览的URL安全限制阻止代理取证。",
+    "解除条件：补最终Creator画面与桥后回收、前景遮挡/脚点证据，更新同版Client Artifact并取得Tech Lead通过；新Client Artifact进入USER_REVIEW且获用户批准前，正式玩法编码关闭。"
   ]
 }

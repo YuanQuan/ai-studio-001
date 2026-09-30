@@ -29,6 +29,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 | 2026-09-30 | CLIENT-CALIBRATION-DEMO-001 | Creator工程与静态场景校准 | v0.1（部分交付） | deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.1/CALIBRATION_APPENDIX.md | 未提交用户审批（BLOCKED） | 2项PASS、3项NOT_TESTED；无静态场景与Tech Review | Creator GUI画布通道不可用；补齐场景、参数、截图并通过Tech Lead评审后方可进入USER_REVIEW |
 
+| 2026-09-30 | CLIENT-CALIBRATION-DEMO-001 | Creator静态场景校准 | v0.3 | deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/CALIBRATION_APPENDIX.md | 未提交用户审批（BLOCKED；专业评审要求修订） | 3项PASS、2项NOT_TESTED；Tech Lead TECH_REVIEW.json=CHANGES_REQUESTED | 17×17 TileMap、12场景Prefab实例、151对象已保存且结构验证通过；须补最终Creator画面、桥后安全回收及遮挡/脚点证据再复评 |
+
 ## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。
 - DEMO-001 v0.1产品规格已获用户明确批准，产品阶段DONE；正式审批状态见 `tasks/DEMO-001/ARTIFACT_APPROVAL.json`。Tech Lead、Art、UI规格阶段可由Master创建并解锁。
@@ -37,4 +39,4 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - UI-DEMO-001 v0.1已USER_APPROVED，规格阶段DONE；审批状态见 `tasks/UI-DEMO-001/ARTIFACT_APPROVAL.json`。
 - ART-ASSET-DEMO-001 v0.2已USER_APPROVED，可集成资产阶段DONE；v0.1保留为未提交用户审批的草稿，审批状态见 `tasks/ART-ASSET-DEMO-001/ARTIFACT_APPROVAL.json`。
 - PRODUCT-001仍未获用户批准，其独立下游保持关闭。
-- 用户已批准TECH-PERF-DEMO-001 v0.1、Client Brief v0.2与QA Plan v0.2，各版本独立登记。Client Brief v0.2仅授权Creator工程创建、已批准资产导入和静态校准；CLIENT-CALIBRATION-DEMO-001已有工程及21张导入PNG，但因Creator GUI画布通道不可用而BLOCKED；静态场景、参数、截图、Tech Review缺失。新参数与截图经Tech Lead评审及用户批准前，正式功能编码关闭。
+- 用户已批准TECH-PERF-DEMO-001 v0.1、Client Brief v0.2与QA Plan v0.2，各版本独立登记。Client Brief v0.2仅授权Creator工程创建、已批准资产导入和静态校准；CLIENT-CALIBRATION-DEMO-001 v0.3已保存17×17 TileMap、12场景Prefab实例与151对象；结构验证通过，但Tech Lead评审CHANGES_REQUESTED，最终真实预览、桥后安全回收及遮挡/脚点证据不足，故仍BLOCKED且未提交用户审批。后续版本经Tech Lead通过并获用户批准前，正式交互编码关闭。

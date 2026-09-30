@@ -1,0 +1,50 @@
+{
+  "task_id": "CLIENT-CALIBRATION-DEMO-001",
+  "owner": "client",
+  "summary": "17×17 正式 TileMap、十二个场景 Prefab 实例和竖屏构图校准值已落盘；出口桥斜向路线已校正，最终路线与镜头边界的真实预览及 Tech Lead 通过结论仍缺。",
+  "artifacts": [
+    "apps/client/assets/DemoScene.scene",
+    "apps/client/assets/demo/tilemaps/NightMarket.tmx",
+    "apps/client/assets/demo/prefabs/",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/CALIBRATION_APPENDIX.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/screens/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "使用 Cocos Creator 3.8.8 建立唯一工程 apps/client/，README 说明打开与 Web 预览方式",
+      "result": "PASS",
+      "evidence": "apps/client/package.json；apps/client/README.md；用户提供的 Chrome 竖屏预览截图"
+    },
+    {
+      "criterion": "导入已批准的 21 张 PNG 并记录来源、尺寸与资源检查",
+      "result": "PASS",
+      "evidence": "v0.1 CALIBRATION_APPENDIX.md 的逐文件哈希和尺寸记录；apps/client/assets/demo/ 的 Creator 元数据"
+    },
+    {
+      "criterion": "搭建 TileMap、地标 Prefab、摊位两态、角色示意、相机和路径锚点，且不添加玩法代码",
+      "result": "PASS",
+      "evidence": "TileMap、九个 Prefab 源和十二个场景实例由 Creator 保存；validate-static-scene.mjs 通过；微调前运行截图 screens/creator-preview-before-exit-alignment.jpg"
+    },
+    {
+      "criterion": "记录实际校准参数并附默认、最近、最远、命中及完整道路截图",
+      "result": "NOT_TESTED",
+      "evidence": "v0.3 CALIBRATION_APPENDIX.md 已列实际静态坐标与候选镜头；最终桥梁路线、最近、最远、命中及全路程真实截图仍缺"
+    },
+    {
+      "criterion": "Tech Lead 评审通过并进入用户评审",
+      "result": "NOT_TESTED",
+      "evidence": "TECH_REVIEW.json 为 CHANGES_REQUESTED；Prefab 实例和出口桥斜向路线已补充，镜头边界与遮挡仍待复评"
+    }
+  ],
+  "assumptions": [
+    "最近 900、最远 1600 为基于 720×1280 比例与 17×17 菱形边界计算的候选正交高度，须实机复核。",
+    "本地顾客节奏值仅为 Demo 调试建议，未作为产品规则或正式配置。"
+  ],
+  "risks": [
+    "只有出口桥微调前的默认镜头运行截图，最终路线及最近和最远镜头尚无实测画面。",
+    "桥栏及屋檐没有独立前景遮挡资源，静态人物与建筑的前后关系仍需技术复核。",
+    "长屏、双指手势和 60 FPS 均未在手机上验证。"
+  ],
+  "status": "BLOCKED"
+}
