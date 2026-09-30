@@ -1,0 +1,16 @@
+{
+  "task_id": "CP-DEMO-OCCLUSION-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "方案 A 保留左上奈何桥进入、沿夜市石路经过主要区域、穿过右下出口桥后越过地图边界回收的连续路线，符合 Demo 已定产品目标。固定路径避开栏杆和屋檐仅收窄本轮遮挡验收范围，没有改变摊位修复、店长、镜头、UI 或顾客行为语义。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "路线须以连续运行画面验证入口上桥、经过夜市、走过出口桥及离场；若桥面无法找到无明显叠压的连续走线，应按提案返回评审，不得以瞬移、绕桥或在可见区域回收代替。"
+    }
+  ],
+  "next_action": "交 Tech Lead、Art、Client、QA 审阅可实现性与受影响验收项；Master 汇总后提交用户决定。用户批准方案 A 前，保持现行已批准规格与开发门禁。"
+}

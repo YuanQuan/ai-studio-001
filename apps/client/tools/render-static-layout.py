@@ -116,7 +116,7 @@ camera_view('far-1600', 1600)
 camera_view('near-900', 900)
 annotated = canvas.copy()
 pen = ImageDraw.Draw(annotated)
-path_names = ['BeforeEntry', 'Entry', 'MarketTurnA', 'MarketCenter', 'TargetFront', 'MarketTurnB', 'Exit', 'BeyondExit']
+path_names = ['BeforeEntry', 'Entry', 'MarketTurnA', 'MarketCenter', 'TargetFront', 'MarketTurnB', 'Exit', 'BridgeTail', 'BeyondExit']
 path_points = []
 for name in path_names:
     index = next(i for i, item in enumerate(scene) if item.get('_name') == name)

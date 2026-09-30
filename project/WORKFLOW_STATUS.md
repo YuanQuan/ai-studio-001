@@ -3,7 +3,7 @@
 Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）。
 
 ## 汇总
-- 正式任务线：10
+- 正式任务线：12
 - 待用户审批：1
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
@@ -21,9 +21,12 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 | QA-PLAN-DEMO-001 Demo测试计划与客户端用例 | DONE（计划阶段） | qa | deliverables/qa/QA-PLAN-DEMO-001/v0.2/TEST_PLAN.md；CLIENT_TEST_CASES.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.2 | 5项PASS；Tech Lead与Master评审APPROVED | USER_APPROVED | 无 | 实施后另行执行测试并交TEST_REPORT |
 | TECH-PERF-DEMO-001 Demo性能预算与测量口径 | DONE（预算阶段） | tech_lead | project/quality/PERFORMANCE_BUDGET.md；deliverables/tech_lead/TECH-PERF-DEMO-001/v0.1/REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json | v0.1 | 5项PASS；Tech Lead自检与Master独立评审APPROVED | USER_APPROVED | 无 | 实施时锁定设备并采样验证 |
 
-| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | BLOCKED（v0.3复评要求修订） | client | deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/DELIVERABLE.json、CALIBRATION_APPENDIX.md、IMPLEMENTATION_REPORT.md、TECH_REVIEW.json；apps/client/assets/DemoScene.scene、demo/tilemaps/NightMarket.tmx（位于assets下） | v0.3（工作区交付） | 3项PASS、2项NOT_TESTED；Tech Lead CHANGES_REQUESTED | 未批准 | 最终真实Creator预览、桥后安全回收和前景遮挡/脚点证据不足 | 补最终倍率/边界/两桥画面、回收点与遮挡标定后Tech Lead复评；正式交互编码关闭 |
+| CLIENT-CALIBRATION-DEMO-001 Creator工程与静态场景校准 | CANCELLED（旧整体Demo作废） | client | deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/DELIVERABLE.json、CALIBRATION_APPENDIX.md、IMPLEMENTATION_REPORT.md、TECH_REVIEW.json；apps/client/assets/DemoScene.scene | v0.3（历史草稿） | 3项PASS、2项NOT_TESTED；Tech Lead CHANGES_REQUESTED | 未批准 | 用户明确取消旧整体Demo实施 | 停止校准与功能编码；已有资源供新单元清单盘点，不把历史草稿当新任务输入 |
+| ART-OCCLUSION-DEMO-001 桥栏与摊位屋檐前景分层 | CANCELLED（旧整体Demo作废） | art | deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSET_MANIFEST.md、ASSEMBLY_GUIDE.md、DELIVERABLE.json；tasks/ART-OCCLUSION-DEMO-001/TASK.json | v0.1（历史草稿） | 验收2项PASS、1项FAIL、1项NOT_TESTED；Tech Lead CHANGES_REQUESTED | 未批准 | 用户明确取消旧整体Demo实施 | 停止前景层制作；新遮挡单元另立规格 |
+| UNIT-TEST-PLAN-001 资源盘点与可切换单元清单 | REVIEW（范围草案） | master | project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md；deliverables/master/UNIT-TEST-PLAN-001/v0.1/DELIVERABLE.json；tasks/UNIT-TEST-PLAN-001/TASK.json | v0.1 | 清单自检4项PASS，待用户审阅与专业开发评审 | 未批准 | 无 | 呈现 8 个基础单元、1 个可后置性能单元及公共菜单，确认范围后再逐个立项 |
 
 ## 版本与边界
+- 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
 - v0.1至v0.6原文保留；历史审批决定保存为tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.x.json。
 - 当前ARTIFACT_APPROVAL.json为v0.7 USER_REVIEW；用户未批准，任务未DONE。
 - 用户明确方向由Master记入项目决策；整包概要和配置尚未获批，下游正式消费关闭。
@@ -37,4 +40,6 @@ Producer维护当前流程事实；更新时间：2026-09-30（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
-2026-09-30最新连续执行检查：v0.3已由Creator保存17×17 TileMap、12个场景Prefab实例及151个序列化对象，validate-static-scene.mjs通过；两桥斜向静态路径已更新。DELIVERABLE为3项PASS、2项NOT_TESTED，Tech Lead在deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/TECH_REVIEW.json要求修订：缺最终版真实Creator默认/最近/最远及边界预览、桥后不可见回收条件、前景遮挡与脚点证据。旧截图及离线图不能证明最终场景。维持BLOCKED并继续v0.3后续修订；PRODUCT-001仍USER_REVIEW，无空转READY/IN_PROGRESS。校准Artifact通过专业复评和用户批准前，正式交互编码关闭。
+2026-09-30（新方向）：旧整体Demo活动任务已按用户指令取消，不再继续旧校准、遮挡分层或功能编码。UNIT-TEST-PLAN-001 的资源盘点草案已落盘并提交用户审阅，尚未批准制作任何单元；历史批准和产物保留供盘点，不迁移审批状态。
+
+2026-09-30 19:38 连续执行检查：Client v0.3已由Creator重开保存17×17 TileMap、12个场景Prefab实例及152个序列化对象，validate-static-scene.mjs通过。BridgeTail(350,-700) 后新增地图外 BeyondExit(820,-840)，第12行第15、16列（零基）改为出口石路，静态采样通过。用户真实默认 Web 截图摄于新增出口段之前；新出口段、近远倍率及边界画面仍无真实Creator证据。Tech Lead对Client v0.3复评为 CHANGES_REQUESTED，Client保持BLOCKED。Art任务已实际开始并落盘v0.1清单、拼装说明和交付记录；四张精确前景PNG未能可靠制作，交付验收2项PASS、1项FAIL、1项NOT_TESTED，Art进入有明确原因的BLOCKED，Tech Lead正评审两种替代方案。PRODUCT-001仍USER_REVIEW；本次检查无仅靠READY/IN_PROGRESS占位的任务。Art新方案及Client当前版校准经专业评审与用户批准前，正式交互编码关闭。

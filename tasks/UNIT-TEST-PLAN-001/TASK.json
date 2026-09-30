@@ -1,0 +1,31 @@
+{
+  "id": "UNIT-TEST-PLAN-001",
+  "title": "百鬼夜市可切换单元测试清单与资源盘点",
+  "type": "coordination",
+  "owner": "master",
+  "parent": null,
+  "objective": "在旧整体 Demo 停止后盘点已产出的运行资源，并提出菜单可切换的独立验证单元清单供用户选择；本任务不开发任何单元。",
+  "inputs": [
+    "用户2026-09-30关于独立瓦片/建筑/精灵/特效单元和菜单切换的最新指令",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md",
+    "apps/client/assets/demo/",
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md"
+  ],
+  "deliverables": [
+    "project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md",
+    "deliverables/master/UNIT-TEST-PLAN-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "按已有资源类别列出实际数量和路径，区分运行资产、评审图及缺失资源",
+    "给出可通过菜单切换的独立小场景建议及数量，不把公共菜单混算成验证单元",
+    "明确建筑占格阻挡、桥面通行和四方向图的资源缺口，不沿用旧整体 Demo 的功能开发门禁",
+    "将清单作为草案提交用户审阅，未经批准不启动各单元实现"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "旧整体 Demo 实现任务由用户明确宣布作废，历史资产保留作可复用输入。",
+    "本清单是范围盘点，不是新单元的已批准设计或开发任务。"
+  ]
+}

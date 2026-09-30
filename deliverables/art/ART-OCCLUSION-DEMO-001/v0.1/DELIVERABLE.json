@@ -1,0 +1,41 @@
+{
+  "task_id": "ART-OCCLUSION-DEMO-001",
+  "owner": "art",
+  "summary": "核对已批准的两桥与两态摊位原图，给出前景遮挡的资产边界、全画布对齐要求和 Demo 降级提案。生成式分层无法保留原始像素；本版未生产可集成前景 PNG。",
+  "artifacts": [
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSEMBLY_GUIDE.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确每个前景层来自哪个已批准 PNG、尺寸、锚点、覆盖范围和在 Creator 中的绘制顺序，不重新设计桥或摊位",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md 列出四个资源 ID、源图尺寸和审查区域；ASSEMBLY_GUIDE.md 记录全画布锚点、Trim 对齐及绘制顺序。"
+    },
+    {
+      "criterion": "分别提供入口桥、出口桥、破败摊位、修复摊位的前景分层候选；透明区域和人物交叠示意可检查，原件保留",
+      "result": "FAIL",
+      "evidence": "仅形成四类制作规格；生成式试切改变源图像素与比例，已拒绝，未伪造可集成 PNG。原件保持未修改。"
+    },
+    {
+      "criterion": "记录无法准确分层的区域及可接受的演示降级方案；Art 专业自检后交 Tech Lead 评审，再由 Master 提交用户审批",
+      "result": "NOT_TESTED",
+      "evidence": "ASSEMBLY_GUIDE.md 已记录桥栏孔洞、火焰光晕、破棚布条、灯笼等边界，以及路径避让和运行时遮罩提案；Tech Lead 评审和用户审批尚未进行。"
+    },
+    {
+      "criterion": "未经用户批准的新 Art Artifact 不接入正式 Client 场景，也不解锁玩法编码",
+      "result": "PASS",
+      "evidence": "本版只写 Art 交付目录，未修改 apps/client；文档明确禁止未批准消费。"
+    }
+  ],
+  "assumptions": [
+    "原始 768×512 PNG 的像素必须原样保留，分层只能改变 alpha 归属。",
+    "目前两张桥源图像素相同且 Prefab 均为正向。"
+  ],
+  "risks": [
+    "精确蒙版需要可编辑源层或人工逐像素修边；当前只有合成 PNG。",
+    "Creator 自动 Trim 可能使新前景与底图错位。",
+    "单一前景层始终覆盖所有顾客会在人物走到地标前方时产生反向遮挡。"
+  ],
+  "status": "BLOCKED"
+}

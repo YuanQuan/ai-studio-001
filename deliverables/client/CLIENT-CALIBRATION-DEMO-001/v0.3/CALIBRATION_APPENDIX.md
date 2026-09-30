@@ -6,13 +6,13 @@
 
 | 项目 | 当前值与依据 |
 |---|---|
-| 设计视口 | `720×1280`，`fitWidth=true`；场景内 Canvas `720×1280`，Camera 正交高度 `1280`，初始中心 `(0,0)`。`screens/creator-preview-before-exit-alignment.jpg` 是出口桥路线微调前的 Creator Web 预览画面；显示瞬时 60 FPS，该数字不是持续性能测量。 |
+| 设计视口 | `720×1280`，`fitWidth=true`；场景内 Canvas `720×1280`，Camera 正交高度 `1280`，初始中心 `(0,0)`。用户提供的 `screens/creator-preview-final-default-user.png` 是两桥重排后的真实 Creator Web 默认画面；显示瞬时 60 FPS，该数字不是持续性能测量。 |
 | 地表 | 正式 `cc.TiledMap` 引用 Creator 导入的 `NightMarket.tmx`；17 列×17 行，等距菱形 Tile 原尺寸 `256×128`，地图节点与 `Ground` 层变换均为 `4352×2176`。中央原 15×15 格的世界坐标未变化，外围新增一圈水面。原 225 个 Sprite 草稿节点已移除。 |
 | 地表外包矩形 | `minX=-2176, maxX=2176, minY=-1088, maxY=1088`，以等距地图的菱形四顶点计算。地表可绘区域近似满足 `|x|/2176 + |y|/1088 ≤ 1`。不能仅用外包矩形限制相机，否则四角会露出底色。 |
 | 地标视觉外沿 | 当前最大地标视觉外沿均在地表外包矩形内；入口桥约 `x=-387…-63, y=410…639`；阎罗殿约 `x=89…351, y=450…701`；目标摊位约 `x=85…355, y=-375…-186`；出口桥约 `x=98…422, y=-775…-546`。这些是按场景 SpriteFrame 尺寸、缩放及底部锚点计算的近似范围，最终裁边以 Creator 预览为准。 |
 | 目标摊位 | `TargetStall=(220,-375)`；两态视觉同底部中心锚点，破败可见、修复态隐藏。`HitArea` 为局部中心 `(0,75)`、`260×160` 的矩形，世界中心 `(220,-300)`，范围 `x=90…350、y=-380…-220`。这里只标定命中区域，没有命中逻辑。 |
 | 店长 | `StaffAnchor` 相对摊位 `(7,42)`，世界 `(227,-333)`；静态示意角色隐藏，未生成实例。 |
-| 两桥 | `EntryBridge=(-225,410)`；`ExitBridge=(260,-775)`。两桥静态资源使用底部中心锚点和 `0.48` 缩放。`BeforeEntry=(-325,560)` 沿入口桥左上端进入，抵达石路 `Entry=(-160,480)`；出口桥左上端与道路 `Exit=(180,-650)` 对齐，`BeyondExit=(350,-700)` 沿桥面左上至右下方向；桥尾回收与遮挡仍须实测。 |
+| 两桥 | `EntryBridge=(-225,410)`；`ExitBridge=(260,-775)`。两桥静态资源使用底部中心锚点和 `0.48` 缩放。`BeforeEntry=(-325,560)` 沿入口桥左上端进入，抵达石路 `Entry=(-160,480)`；出口桥左上端与道路 `Exit=(180,-650)` 对齐，沿桥到 `BridgeTail=(350,-700)`，再沿出口石路前往地图外 `BeyondExit=(820,-840)`；角色真正离场仍须运行实测。 |
 | 可复用资源 | `assets/demo/prefabs/` 下九个 Prefab：两桥、阎罗殿、背景摊位、目标摊位、店长、三种顾客。九份 `.meta` 均由 Creator 生成，`imported=true`。场景有十二个 Creator 保存后的 Prefab 实例：两桥、阎罗殿、目标摊位、五个背景摊位、三名顾客示意。店长 Prefab 暂未实例化，留待修复交互阶段生成。 |
 
 路径按次序为：
@@ -26,9 +26,10 @@
 | `TargetFront` | `(75,-300)` |
 | `MarketTurnB` | `(190,-490)` |
 | `Exit` | `(180,-650)` |
-| `BeyondExit` | `(350,-700)` |
+| `BridgeTail` | `(350,-700)` |
+| `BeyondExit` | `(820,-840)` |
 
-`screens/path-and-hit-area.png` 用批准的 PNG 与当前场景坐标离线拼出道路、路线和命中框。`Entry→Exit` 五段经每段 101 点静态采样均在石路图块；`BeforeEntry→Entry` 与 `Exit→BeyondExit` 沿两座桥左上至右下的估算中心线。桥面弧形的实际可走线和桥尾消失方式尚待 Creator 预览核对。路线绕开左侧摊位；仍须检查桥栏、屋檐与角色脚点遮挡。
+`screens/path-and-hit-area.png` 用批准的 PNG 与当前场景坐标离线拼出道路、路线和命中框。`Entry→Exit` 五段经每段 101 点静态采样均在石路图块；`BridgeTail→BeyondExit` 在地图内的采样也落在新增出口石路。地图菱形边界指标在 `BridgeTail` 约为 0.80，在 `BeyondExit` 约为 1.15，最终回收点位于地表外。`BeforeEntry→Entry` 与 `Exit→BridgeTail` 沿两座桥左上至右下的估算中心线。桥面弧形的实际可走线、延伸石路的接缝及桥后消失方式尚待 Creator 预览核对。路线绕开左侧摊位；仍须检查桥栏、屋檐与角色脚点遮挡。
 
 ## 2. 相机与输入的编码前候选参数
 
@@ -36,7 +37,7 @@
 
 | 镜头 | 中心 | 正交高度 | 720×1280 等比视口宽度 | 证据 |
 |---|---:|---:|---:|---|
-| 初始 | `(0,0)` | `1280` | `720` | 场景文件中的实际值；构图模拟 `screens/initial-1280.png`；微调前 Creator 预览 `screens/creator-preview-before-exit-alignment.jpg` |
+| 初始 | `(0,0)` | `1280` | `720` | 场景文件中的实际值；真实 Creator 预览 `screens/creator-preview-final-default-user.png`；构图模拟 `screens/initial-1280.png` |
 | 最远候选 | `(0,0)` | `1600` | `900` | 计算无空白；构图模拟 `screens/far-1600.png` |
 | 最近候选 | `(0,0)` | `900` | `506.25` | 保留局部石路和摊位；构图模拟 `screens/near-900.png` |
 
@@ -50,6 +51,7 @@
 
 - `screens/user-preview-before-recalibration.png`：用户提供的真实 Chrome 预览，证实旧版竖屏场景可显示；该图早于本版 17×17 地图与地标重排。
 - `screens/creator-preview-before-exit-alignment.jpg`：17×17 场景及十二个 Prefab 实例在 Creator Web 默认镜头中的实际绘制，拍摄于出口桥和路线微调之前；不作为最终路线、交互、最近／最远镜头或手机性能证据。
+- `screens/creator-preview-final-default-user.png`：用户于 2026-09-30 提供的两桥重排后 Creator Web 默认镜头截图，拍摄于桥后石路与地图外回收点新增之前。17×17 地表、入口桥、阎罗殿、摊位、顾客和出口桥可见；两桥均在屏幕边缘，截图不能证明新增出口段、顾客实际过桥、遮挡或离场回收。FPS 60 只是截图时的显示值。
 - `screens/initial-1280.png`、`far-1600.png`、`near-900.png`、`map-overview.png`、`path-and-hit-area.png`：由 `tools/render-static-layout.py` 根据 PNG、TMX 与场景坐标生成的**离线构图图**，用于看布局与检查路线；不是 Creator 截图或性能证据。
-- `tools/validate-static-scene.mjs`：检查 151 个场景序列化对象的引用、17×17/289 格地图、TiledMap UUID、十二个 Creator 场景 Prefab 实例，并对 `Entry→Exit` 五段各采样 101 点确认落在石路图块；当前通过。微调前预览浏览器没有警告或错误日志。
-- 尚需：最终出口桥路线、候选最近/最远参数、命中区与完整道路的真实 Creator 预览画面；Tech Lead 的层级遮挡、相机边界和路线复核；代表手机型号及实际手势/性能采样。缺项完成前不宣称校准通过，不进入正式功能编码。
+- `tools/validate-static-scene.mjs`：检查 152 个场景序列化对象的引用、17×17/289 格地图、TiledMap UUID、十二个 Creator 场景 Prefab 实例，并对 `Entry→Exit` 五段和 `BridgeTail→BeyondExit` 在地表内的部分采样确认落在石路图块；当前通过。Creator 3.8.8 已重新打开并保存，项目日志未报本次资产导入错误；新出口段的运行画面仍未取到。
+- 尚需：候选最近/最远参数、相机边界、两桥通行、命中区与完整道路的真实 Creator 预览画面；Tech Lead 的层级遮挡、桥后回收、相机边界和路线复核；代表手机型号及实际手势/性能采样。缺项完成前不宣称校准通过，不进入正式功能编码。

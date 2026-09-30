@@ -25,7 +25,9 @@ for (let row = 0; row < mapSize; row++) {
     const edge = Math.min(oldRow, oldCol, 14 - oldRow, 14 - oldCol);
     const roadCenter = -250 + oldSum * 18;
     const road = edge >= 0 && Math.abs(x - roadCenter) < 155 && oldSum > 3 && oldSum < 25;
-    const kind = road ? 'tile_stone_road' : edge === 0 ? 'tile_water' : edge === 1 ? 'tile_shore' : 'tile_ground';
+    // Continue the exit bridge's stone route to the southeast map edge.
+    const exitRoad = row === 12 && (col === 15 || col === 16);
+    const kind = road || exitRoad ? 'tile_stone_road' : edge === 0 ? 'tile_water' : edge === 1 ? 'tile_shore' : 'tile_ground';
     cells.push(firstGid.get(kind));
   }
   rows.push(`      ${cells.join(',')}`);

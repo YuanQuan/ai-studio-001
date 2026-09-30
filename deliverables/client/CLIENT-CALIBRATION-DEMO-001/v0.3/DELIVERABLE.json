@@ -1,7 +1,7 @@
 {
   "task_id": "CLIENT-CALIBRATION-DEMO-001",
   "owner": "client",
-  "summary": "17×17 正式 TileMap、十二个场景 Prefab 实例和竖屏构图校准值已落盘；出口桥斜向路线已校正，最终路线与镜头边界的真实预览及 Tech Lead 通过结论仍缺。",
+  "summary": "17×17 正式 TileMap、十二个场景 Prefab 实例和竖屏构图校准值已落盘；出口桥后石路延伸至地图外回收点，最终路线与镜头边界的真实预览及 Tech Lead 通过结论仍缺。",
   "artifacts": [
     "apps/client/assets/DemoScene.scene",
     "apps/client/assets/demo/tilemaps/NightMarket.tmx",
@@ -24,17 +24,17 @@
     {
       "criterion": "搭建 TileMap、地标 Prefab、摊位两态、角色示意、相机和路径锚点，且不添加玩法代码",
       "result": "PASS",
-      "evidence": "TileMap、九个 Prefab 源和十二个场景实例由 Creator 保存；validate-static-scene.mjs 通过；微调前运行截图 screens/creator-preview-before-exit-alignment.jpg"
+      "evidence": "TileMap、九个 Prefab 源和十二个场景实例由 Creator 保存；新增桥后路线静态检查通过；两桥位置的默认运行截图 screens/creator-preview-final-default-user.png 拍摄于桥后出口段新增前"
     },
     {
       "criterion": "记录实际校准参数并附默认、最近、最远、命中及完整道路截图",
       "result": "NOT_TESTED",
-      "evidence": "v0.3 CALIBRATION_APPENDIX.md 已列实际静态坐标与候选镜头；最终桥梁路线、最近、最远、命中及全路程真实截图仍缺"
+      "evidence": "v0.3 CALIBRATION_APPENDIX.md 已列实际静态坐标与候选镜头；两桥重排后的默认镜头截图已归档，新增出口段及最近、最远、命中、桥面通行和全路程真实截图仍缺"
     },
     {
       "criterion": "Tech Lead 评审通过并进入用户评审",
       "result": "NOT_TESTED",
-      "evidence": "TECH_REVIEW.json 为 CHANGES_REQUESTED；Prefab 实例和出口桥斜向路线已补充，镜头边界与遮挡仍待复评"
+      "evidence": "TECH_REVIEW.json 为 CHANGES_REQUESTED；桥后出口段静态数据已补充，镜头边界、动态回收与遮挡仍待复评"
     }
   ],
   "assumptions": [
@@ -42,7 +42,7 @@
     "本地顾客节奏值仅为 Demo 调试建议，未作为产品规则或正式配置。"
   ],
   "risks": [
-    "只有出口桥微调前的默认镜头运行截图，最终路线及最近和最远镜头尚无实测画面。",
+    "两桥位置已有出口段新增前的默认镜头运行截图；新增出口段、最近和最远镜头及顾客通行仍无实测画面。",
     "桥栏及屋檐没有独立前景遮挡资源，静态人物与建筑的前后关系仍需技术复核。",
     "长屏、双指手势和 60 FPS 均未在手机上验证。"
   ],

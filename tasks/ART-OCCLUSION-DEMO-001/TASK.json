@@ -1,0 +1,40 @@
+{
+  "id": "ART-OCCLUSION-DEMO-001",
+  "title": "百鬼夜市 Demo 桥栏与摊位屋檐前景分层",
+  "type": "art",
+  "owner": "art",
+  "parent": "DEMO-001",
+  "objective": "依据已批准的 Demo 美术资产和场景设计，为入口/出口桥栏及破败/修复摊位屋檐形成可独立排序的前景资产候选，解决顾客脚点经过时的错误叠压；不改变原有视觉风格或增加新内容。",
+  "inputs": [
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSET_MANIFEST.md（USER_APPROVED）",
+    "deliverables/art/ART-ASSET-DEMO-001/v0.2/ASSEMBLY_GUIDE.md（USER_APPROVED）",
+    "deliverables/client/CLIENT-BRIEF-DEMO-001/v0.2/FEATURE_BRIEF.md（USER_APPROVED）",
+    "deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/screens/creator-preview-final-default-user.png（用户真实预览，出口段新增前）"
+  ],
+  "deliverables": [
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSEMBLY_GUIDE.md",
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ 中的前景 PNG 候选与可核对预览图"
+  ],
+  "acceptance": [
+    "明确每个前景层来自哪个已批准 PNG、尺寸、锚点、覆盖范围和在 Creator 中的绘制顺序，不重新设计桥或摊位",
+    "分别提供入口桥、出口桥、破败摊位、修复摊位的前景分层候选；透明区域和人物交叠示意可检查，原件保留",
+    "记录无法准确分层的区域及可接受的演示降级方案；Art 专业自检后交 Tech Lead 评审，再由 Master 提交用户审批",
+    "未经用户批准的新 Art Artifact 不接入正式 Client 场景，也不解锁玩法编码"
+  ],
+  "dependencies": [
+    "ART-ASSET-DEMO-001 v0.2 USER_APPROVED",
+    "CLIENT-BRIEF-DEMO-001 v0.2 USER_APPROVED",
+    "TECH-DEMO-001 v0.2 USER_APPROVED"
+  ],
+  "status": "CANCELLED",
+  "approval": "APPROVAL",
+  "notes": [
+    "这是现有 PNG 的遮挡分层候选，不增加角色、建筑或玩法。",
+    "本任务与 CLIENT-CALIBRATION-DEMO-001 的镜头/路径静态检查可并行，Client 正式消费仍受 Art Artifact 用户审批门禁约束。",
+    "2026-09-30 Art已实际启动并提交v0.1 ASSET_MANIFEST.md、ASSEMBLY_GUIDE.md与DELIVERABLE.json；四张精确前景PNG未产出，验收1项FAIL、1项NOT_TESTED、2项PASS。源图为单层合成PNG，在当前工具约束下无法可靠保留源像素并准确切层，故状态BLOCKED。Tech Lead正在评审路径避让和运行时遮罩两种候选；未评审通过或获用户批准前不得接入正式Client场景。",
+    "2026-09-30 用户明确宣布旧整体 Demo 任务作废；本任务停止并标记 CANCELLED，已有评估文件保留为历史，不继续生产前景层。"
+  ]
+}

@@ -48,6 +48,26 @@ for (let segment = 0; segment < path.length - 1; segment++) {
   }
 }
 assert(offRoad === 0, `${offRoad} path samples leave stone-road tiles`);
+assert(cells[12 * 17 + 15] === 2 && cells[12 * 17 + 16] === 2,
+  'Exit bridge has no stone-road continuation toward the map edge');
+const bridgeTail = node('BridgeTail')._lpos;
+const beyondExit = node('BeyondExit')._lpos;
+assert(bridgeTail.x === 350 && bridgeTail.y === -700, 'BridgeTail moved without route review');
+assert(beyondExit.x === 820 && beyondExit.y === -840, 'BeyondExit moved without route review');
+const diamond = ({ x, y }) => Math.abs(x) / 2176 + Math.abs(y) / 1088;
+assert(diamond(bridgeTail) < 1 && diamond(beyondExit) > 1.1,
+  'Exit route must continue from the bridge tail to a safe off-map recycle anchor');
+let exitOffRoad = 0;
+for (let step = 0; step <= 100; step++) {
+  const t = step / 100;
+  const point = {
+    x: bridgeTail.x + (beyondExit.x - bridgeTail.x) * t,
+    y: bridgeTail.y + (beyondExit.y - bridgeTail.y) * t,
+  };
+  if (diamond(point) <= 1 && !roadCenters.some(([rx, ry]) =>
+    Math.abs(point.x - rx) / 128 + Math.abs(point.y - ry) / 64 <= 1.001)) exitOffRoad++;
+}
+assert(exitOffRoad === 0, `${exitOffRoad} bridge-tail samples leave the stone exit road before the map edge`);
 assert(tmxMeta.importer === 'tiled-map' && tmxMeta.imported === true, 'TileMap is not imported by Creator');
 const tileComponent = scene.find((item) => item?.__type__ === 'cc.TiledMap');
 assert(tileComponent?._tmxFile?.__uuid__ === tmxMeta.uuid, 'Scene points at another TMX');
@@ -92,7 +112,7 @@ for (const [name, count] of Object.entries({
   'TargetStall.prefab': 1, 'BackgroundStall.prefab': 5,
   'GuestFloating.prefab': 1, 'GuestHorned.prefab': 1, 'GuestPaperTalisman.prefab': 1,
 })) assert(counts.get(name) === count, `${name}: expected ${count} scene instances`);
-for (const name of ['BeforeEntry', 'Entry', 'Exit', 'BeyondExit', 'TargetFront']) node(name);
+for (const name of ['BeforeEntry', 'Entry', 'Exit', 'BridgeTail', 'BeyondExit', 'TargetFront']) node(name);
 function instancePosition(prefabName) {
   const meta = JSON.parse(readFileSync(join(prefabs, `${prefabName}.prefab.meta`), 'utf8'));
   const info = prefabInfos.find((item) => item.asset.__uuid__ === meta.uuid);
@@ -108,7 +128,7 @@ for (const [name, x, y] of [
 }
 for (const [name, x, y] of [
   ['BeforeEntry', -325, 560], ['Entry', -160, 480],
-  ['Exit', 180, -650], ['BeyondExit', 350, -700],
+  ['Exit', 180, -650], ['BridgeTail', 350, -700], ['BeyondExit', 820, -840],
 ]) {
   const actual = node(name)._lpos;
   assert(actual.x === x && actual.y === y, `${name}: position changed without bridge calibration`);

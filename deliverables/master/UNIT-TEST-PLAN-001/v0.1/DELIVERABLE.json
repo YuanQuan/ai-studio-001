@@ -1,0 +1,38 @@
+{
+  "task_id": "UNIT-TEST-PLAN-001",
+  "owner": "master",
+  "summary": "盘点旧 Demo 的 21 张运行 PNG、9 个 Prefab、1 张 TileMap 及 UI 评审图，提出公共菜单下的 8 个基础验证单元和 1 个可后置性能单元；仅供用户审阅范围。",
+  "artifacts": [
+    "project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "按已有资源类别列出实际数量和路径，区分运行资产、评审图及缺失资源",
+      "result": "PASS",
+      "evidence": "文件盘点和本地数量校验：21 PNG、9 Prefab、1 TMX；UI 两张评审图非运行资产，特效资源为零。"
+    },
+    {
+      "criterion": "给出可通过菜单切换的独立小场景建议及数量，不把公共菜单混算成验证单元",
+      "result": "PASS",
+      "evidence": "RESOURCE_UNIT_INVENTORY_v0.1.md 列 U01–U08、可后置 U09，公共菜单明确不计数。"
+    },
+    {
+      "criterion": "明确建筑占格阻挡、桥面通行和四方向图的资源缺口，不沿用旧整体 Demo 的功能开发门禁",
+      "result": "PASS",
+      "evidence": "清单 U03/U04/U05 与边界说明记录占格、桥面例外、四方向缺口；DEC-UNIT-DEMO-001 记录新开发方式。"
+    },
+    {
+      "criterion": "将清单作为草案提交用户审阅，未经批准不启动各单元实现",
+      "result": "PASS",
+      "evidence": "清单标记草案；本轮未新建或实施 U01–U09 的开发任务。"
+    }
+  ],
+  "assumptions": [
+    "桥面保留可通行，栏杆和桥墩占阻挡格，以维持原先从桥进入和离开的方向；若用户改变桥规则须单独决定。"
+  ],
+  "risks": [
+    "四方向建筑、装饰和角色图目前缺失，U04/U05 不能直接以既有单向素材验收。",
+    "特效和游戏内 UI 运行素材尚未制作，U07/U08 需要另立资源输入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

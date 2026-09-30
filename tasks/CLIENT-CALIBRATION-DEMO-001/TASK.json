@@ -33,14 +33,16 @@
     "UI-DEMO-001 v0.1 USER_APPROVED",
     "TECH-PERF-DEMO-001 v0.1 USER_APPROVED"
   ],
-  "status": "BLOCKED",
+  "status": "CANCELLED",
   "approval": "APPROVAL",
   "notes": [
     "Client Brief v0.2 的批准不解锁玩法逻辑开发，仅解锁 Creator 工程准备、已批准资产导入和无业务逻辑的静态场景校准。",
     "若本机没有可用的 Creator 3.8.8 编辑器，本任务进入 BLOCKED 并记录具体缺口；不得以 Dashboard 已安装推定 Creator 可用。",
     "校准附录与截图须形成 Client 新版本，经 Tech Lead 专业评审和用户审批后，才可创建/解锁正式玩法编码任务。",
     "2026-09-30 Client已在Creator 3.8.8中保存v0.3静态场景：17×17 TileMap、12个场景Prefab实例、两桥斜向静态路径与151个序列化对象；validate-static-scene.mjs通过；DELIVERABLE验收3项PASS、2项NOT_TESTED。v0.1保留为历史部分交付。",
-    "真实阻塞：Tech Lead对v0.3评审为CHANGES_REQUESTED。最终场景的真实默认/最近/最远、边界及完整路线画面，桥后安全回收条件，以及桥栏/屋檐遮挡和角色脚点证据仍缺；浏览器工具当前对localhost预览的URL安全限制阻止代理取证。",
-    "解除条件：补最终Creator画面与桥后回收、前景遮挡/脚点证据，更新同版Client Artifact并取得Tech Lead通过；新Client Artifact进入USER_REVIEW且获用户批准前，正式玩法编码关闭。"
+    "2026-09-30同版修订：用户默认Web截图已归档，但拍摄于新增出口段前；BridgeTail→地图外BeyondExit及第12行第15、16列（零基）出口石路已落盘，Creator重开保存152对象、12场景Prefab实例，validate-static-scene.mjs通过。",
+    "真实阻塞：Tech Lead对更新后的v0.3复评仍为CHANGES_REQUESTED。新出口段及两桥、最近/最远、地图边界的真实Creator画面，以及桥栏/屋檐前景分层和角色脚点遮挡证据仍缺；浏览器工具当前对localhost预览的URL安全限制阻止代理取证。",
+    "解除条件：补当前版Creator画面与前景遮挡/脚点证据，更新同版Client Artifact并取得Tech Lead通过；新Client Artifact进入USER_REVIEW且获用户批准前，正式玩法编码关闭。",
+    "2026-09-30 用户明确宣布旧整体 Demo 任务作废；本任务停止并标记 CANCELLED。已有文件仅作为历史与新单元验证的可选资源，不继续评审或开发。"
   ]
 }

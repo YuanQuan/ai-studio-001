@@ -1,0 +1,28 @@
+{
+  "task_id": "ART-OCCLUSION-DEMO-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "四类前景的来源、全画布对齐、底部中心锚点及 SpriteFrame Trim 风险描述合理；已批准的两张桥源 PNG 的 SHA-256 确实一致。源图为 768×512，而 Creator 当前桥 SpriteFrame 经裁边约 676×478，前景若另行裁边，必须校准 trim offset 或统一关闭 Trim。当前材料是制作规格，没有四张可集成 PNG 或人物前后叠合图。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本任务要求的入口桥栏、出口桥栏、破败屋檐、修复屋檐四张精确前景 PNG 均未交付，DELIVERABLE.json 对分层候选及透明交叠验收明确记为 FAIL。现阶段不能批准 Art Artifact 作为正式 Client 输入，也不能依据未验证的遮挡方案解锁功能编码。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "固定顾客路线避开所有桥栏和屋檐交叠可作为低成本 Demo 降级候选，但须在 Creator 中对三种顾客尺寸、桥面两端、目标摊位前后及相机近远端逐帧验证，且不得牺牲从桥进入、经过夜市、从桥离开的已批准路线语义。TECH-DEMO-001 v0.2 与 CLIENT-BRIEF-DEMO-001 v0.2 明确要求桥栏/屋檐前景遮挡及关键位置复核；以避让替代这些验收场景属于跨角色技术/测试范围变更。须由 Master 形成变更提案，受影响 Art、Client、QA、Tech Lead 评审，并由用户批准修订版本后才能采用；目前不能自动视为已批准实现。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator 3.8.8 内置 cc.Mask 有 GRAPHICS_STENCIL 与 SPRITE_STENCIL，可探索复制原 SpriteFrame 的前景节点并施加遮罩；但直接把完整源图当遮罩只会保留整图轮廓，无法提取近侧栏杆/屋檐。仍需 Art 提供精确轮廓、孔洞及软边规范。Sprite stencil 使用 alphaThreshold 阈值，不能假定蓝焰/灯笼半透明光晕无缝还原；矩形/粗多边形不可替代逐像素边缘。若运行时遮罩在相同前景节点上实现原定遮挡语义，产品规则不必改变，但由前景 PNG 改为运行时遮罩形状是 Art→Client 资产契约变更，须交付可追溯蒙版数据、Creator 叠合与穿行证据，经 Tech Lead/Art 评审和用户批准；若引入自定义 Shader 或改变既定模块/性能预算，还须修订技术设计。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "路线避让不新增遮罩绘制，运行成本较低，但过窄通道会使顾客队列重叠或移动不自然；需实际录屏核验。前景 PNG 或运行时 stencil 都会增加渲染节点、透明覆盖与绘制/模板状态切换；单一全局 ForegroundRoot 也会造成反向遮挡。不得用桌面 Web 的瞬时 60 FPS 判断手机性能，应按已批准 PERFORMANCE_BUDGET 的代表设备、三轮各 60 秒记录帧时间、DrawCall 与纹理内存，并在桥/摊位近景及持续客流下复核。"
+    }
+  ],
+  "next_action": "Art 在本任务后续版本中交付四张与原图精确对齐的前景 PNG 和无人物/人物前后叠合证据；若改用路线避让或运行时精确遮罩，由 Master 组织受影响角色评审并取得用户对相应修订 Artifact 的明确批准。当前 v0.1 仅可作候选规格，不得交给 Client 作为正式可集成资产，也不解锁玩法编码。"
+}
