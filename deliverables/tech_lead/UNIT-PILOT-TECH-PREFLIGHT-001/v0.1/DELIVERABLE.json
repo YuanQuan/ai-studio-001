@@ -1,0 +1,26 @@
+{
+  "task_id": "UNIT-PILOT-TECH-PREFLIGHT-001",
+  "owner": "tech_lead",
+  "summary": "完成孟桃、奶茶店静态主体及可动件的单视角骨骼／单图集结构预审，给出出图前联合检查和 Creator 双入口同源候选契约；未放行正式图集或宣称性能通过。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/CP_REVIEW.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "逐对象审查单图集骨骼方案、动作/状态拆件、贴图尺寸与合批前提，区分可验证事实、估计和待测项", "result": "PASS", "evidence": "TECH_PREFLIGHT.md 第 2、3 节；尺寸与性能均明确为待测，未给出通过数值。"},
+    {"criterion": "给出正式图片输出前 Art 与 Tech 共同检查清单及目标设备验证口径，不虚构性能结论", "result": "PASS", "evidence": "TECH_PREFLIGHT.md 第 3、5 节；本轮结论为未放行正式图片。"},
+    {"criterion": "提出单元入口和主体游戏复用同一 Prefab/行为/UI/VFX 源的 Creator 边界，并识别现有集中脚本迁移风险", "result": "PASS", "evidence": "TECH_PREFLIGHT.md 第 1、4 节；`UnitSampleGallery.ts` 集中管理现状与双入口候选契约。"},
+    {"criterion": "评审 CP-UNIT-REUSE-001 与已批准产品/方向的关系，列出需用户决定或下游审批的技术契约", "result": "PASS", "evidence": "CP_REVIEW.md 条款评审和四项待审批契约。"}
+  ],
+  "assumptions": [
+    "现有 Creator 3.8.8 工程内已启用 Spine 3.8，可作为候选导入路径，但尚未用本样例数据在目标平台构建验证。",
+    "单一 Creator 工程与重复触发期间忽略输入是候选实现策略，尚非项目已批准决定。",
+    "Art v0.1 为出图前预案，不含获批概念图或正式资产。"
+  ],
+  "risks": [
+    "未取得目标设备清单、像素草排、图集纹理格式及真机基线，不能确定尺寸上限或性能预算是否满足。",
+    "Prefab 实例覆盖属性和 Asset Bundle 依赖可能使双入口产生细节分叉或资源副本。",
+    "正式图片、字体和 Spine 工具许可仍需按实际来源核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

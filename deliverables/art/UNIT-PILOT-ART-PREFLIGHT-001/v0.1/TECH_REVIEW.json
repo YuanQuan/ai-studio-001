@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-PILOT-ART-PREFLIGHT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次 APPROVED 仅表示 v0.1 出图前结构预案可进入下一轮概念设计与用户审阅。孟桃 MT_CHAR_01 和店铺可动件 MT_SHOP_MOTION_01 分为两个骨骼对象、各规划一张图集，店身 MT_SHOP_STATIC_01 保持静态独立；与已批准的 Product v0.1 和 DEC-UNIT-DIRECTION-002 的单视角范围相容。当前没有概念图、正式贴图、图集或骨骼数据。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "拆件与遮挡规划覆盖角色脚点、手部与柜台、店铺可动件的支点和复位，具备继续细化的条件。布片／挂件、具体部件数量及最终节点层级仍是候选，不得被本评审解释为已锁定造型或可集成 Prefab。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "正式图片和图集尚未放行。Art 须按对象补概念审批版本、逐件包围盒及一页图集草排、最近／最远显示尺度、裁切扩边、骨骼导出版本、版权来源与许可；Tech 须据目标设备核对纹理限制、压缩、导入显示、材质／混合模式和真机 DrawCall／内存口径。单对象一图集不保证跨对象合批，不能以桌面 Web 帧率宣称目标机性能达标。每次正式资源输出前都须 Art 与 Tech 对具体版本逐对象共同签认。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Tech 条件、Creator 同源 Prefab 候选边界及待测方法详见 deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md；该技术 Artifact 和 CP-UNIT-REUSE-001 均仍需各自正式 Review 与用户审批，本评审不代替这些门禁。"
+    }
+  ],
+  "next_action": "Art 将本结构预案和本技术评审送 Master 与用户审阅；获用户批准后可继续原创概念设计。正式图片／骨骼图集输出前，须完成具体概念与图集草排、目标设备和版权检查，由 Art 与 Tech Lead 对每个对象和每次版本共同签认，并取得相应 Artifact 的用户审批。未签认前不得将本预案交给 Client 当作正式可集成资产。"
+}

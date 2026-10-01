@@ -1,0 +1,29 @@
+{
+  "task_id": "UNIT-PILOT-ART-PREFLIGHT-001",
+  "owner": "art",
+  "summary": "提交孟桃与奶茶店单视角的原创视觉、骨骼拆件、单对象单图集及版权来源出图前结构预案；无正式图片。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/PARTS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/DESIGN_RATIONALE.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "孟桃四项历史设定有原创可执行的视觉表达方案，不复制旧图片或可识别参考作品", "result": "PASS", "evidence": "ART_BRIEF.md 视觉候选方案；DESIGN_RATIONALE.md 四项映射；REFERENCE_AUDIT.md 来源边界。具体概念图及相似性复查尚未发生。"},
+    {"criterion": "孟桃与奶茶店各自单视角，动态部分的骨骼拆件、动作和静态部分分清；不制作旅客", "result": "PASS", "evidence": "PARTS_PLAN.md 对象和运动边界、候选拆件；ASSET_MANIFEST.md 分对象清单。"},
+    {"criterion": "分别列出每个骨骼对象单图集的部件、状态、边界和待Tech确认的尺寸/合批问题，不擅自给出未经测量的可交付结论", "result": "PASS", "evidence": "PARTS_PLAN.md 联合出图前检查单及待 Tech Lead 书面结论；图集尺寸、DrawCall 与内存均未伪造。"},
+    {"criterion": "登记所有参考来源、授权与版权/IP/外观风险，标明本版无正式生产图片", "result": "PASS", "evidence": "REFERENCE_AUDIT.md 列明本轮仅项目文字输入、无图片或字体，并列出下一次出图前来源与相似性检查门禁。"}
+  ],
+  "assumptions": [
+    "店铺可动件暂以悬挂布片或挂件为候选，实际造型待概念评审；只需一处非玩法可动部分。",
+    "项目 Art Guide 尚无全游戏锁定方向，仅以已批准旧 Demo Art Direction 的宽泛文字原则做本轮风格参照。",
+    "尚未批准的其他产品草稿不作为本任务输入。"
+  ],
+  "risks": [
+    "目标设备、图集尺寸、压缩、骨骼运行时与合批表现未完成 Tech Lead 联合评审，不能出正式图。",
+    "后续概念图和生产图片必须重新进行来源、授权和可识别相似性检查。",
+    "未来若批准新的店长状态或姿态规格，须复核骨骼结构与单图集容量。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

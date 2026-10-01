@@ -1,0 +1,34 @@
+{
+  "id": "UNIT-PILOT-TECH-PREFLIGHT-001",
+  "title": "孟桃奶茶店骨骼图集与Creator同源接入预评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "UNIT-PILOT-SELECT-001",
+  "objective": "在正式出图前评审孟桃与奶茶店的单视角骨骼拆件、每对象单图集、合批与尺寸可行性，并明确单元/主体游戏同源接入的技术契约候选。",
+  "inputs": [
+    "tasks/UNIT-PILOT-PRODUCT-001/ARTIFACT_APPROVAL.json（v0.1 USER_APPROVED）",
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md",
+    "project/DECISIONS.md#DEC-UNIT-DIRECTION-002",
+    "project/changes/CP-UNIT-REUSE-001.md（跨角色提案，待评审）",
+    "deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/PARTS_PLAN.md（Art提交后仅作联合评审候选，不作已批准实现输入）",
+    "project/ARCHITECTURE.md；apps/client/（当前Creator结构只读盘点）"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/CP_REVIEW.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "逐对象审查单图集骨骼方案、动作/状态拆件、贴图尺寸与合批前提，区分可验证事实、估计和待测项",
+    "给出正式图片输出前Art与Tech共同检查清单及目标设备验证口径，不虚构性能结论",
+    "提出单元入口和主体游戏复用同一Prefab/行为/UI/VFX源的Creator边界，并识别现有集中脚本迁移风险",
+    "评审CP-UNIT-REUSE-001与已批准产品/方向的关系，列出需用户决定或下游审批的技术契约"
+  ],
+  "dependencies": ["UNIT-PILOT-PRODUCT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Art拆件候选已提交，仅用于专业联合Review，不视作Art已获用户批准。",
+    "本任务不输出生产图片或更改Creator工程，不用桌面瞬时FPS替代手机性能。"
+  ]
+}
