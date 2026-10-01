@@ -4,14 +4,14 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 
 ## 汇总
 - 正式任务线：15
-- 待用户审批：2
+- 待用户审批：1（PRODUCT-001 v0.8；孟桃奶茶店产品规格 v0.1 已单独获批）
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
 
 ## 当前任务线
 | 任务 | 阶段 | Owner | 当前 Artifact | 版本 | 专业评审 | 用户审批 | 阻塞 | 下一动作 |
 |---|---|---|---|---|---|---|---|---|
-| PRODUCT-001 概要需求与模块分层 | USER_REVIEW | product | deliverables/product/PRODUCT-001/v0.7/PRODUCT_OUTLINE.md；BRAINSTORM_MAP.md；MINDMAP_AI_SNAPSHOT.md（同目录，交互图URL登记于交付包） | v0.7 | Master评审APPROVED；5项验收PASS | v0.7待用户确认 | 无 | Master呈现交互脑图、快照及概要供用户审阅 |
+| PRODUCT-001 概要需求与模块分层 | USER_REVIEW | product | deliverables/product/PRODUCT-001/v0.8/PRODUCT_OUTLINE.md；BRAINSTORM_MAP.md；MINDMAP_AI_SNAPSHOT.md（同目录，交互图URL登记于交付包） | v0.8 | Master评审APPROVED；4项验收PASS | v0.8待用户确认；v0.7已退回 | 无 | Master呈现新版交互脑图、快照及影响说明供用户审阅 |
 | DEMO-001 核心场景全流程验证 Demo | DONE（产品规格阶段） | product | deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md；DELIVERABLE.json（同目录） | v0.1 | Master评审APPROVED；6项验收PASS | USER_APPROVED | 无 | Master创建并推进Tech Lead、Art、UI规格任务，逐阶段评审及用户审批 |
 | TECH-DEMO-001 Demo技术设计 | DONE | tech_lead | deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md；REVIEW.md和DELIVERABLE.json（同目录） | v0.2 | Tech Lead自评完成；Master独立评审APPROVED；5项验收PASS | USER_APPROVED | 无 | Master编排后续Client/QA开工包，继续各阶段审批 |
 | ART-DEMO-001 Demo美术方向与资产规格 | DONE | art | deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md；ART_BRIEF.md；ASSET_MANIFEST.md；DESIGN_RATIONALE.md；DELIVERABLE.json（同目录） | v0.1 | Master专业评审APPROVED；5项验收PASS | USER_APPROVED | 无 | Master创建UI规格任务；后续视觉实现仍待UI审批 |
@@ -26,12 +26,12 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 | UNIT-TEST-PLAN-001 资源盘点与可切换单元清单 | DONE（范围确认） | master | project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md；deliverables/master/UNIT-TEST-PLAN-001/v0.1/DELIVERABLE.json；tasks/UNIT-TEST-PLAN-001/ARTIFACT_APPROVAL.json | v0.1 | 清单自检4项PASS | USER_APPROVED（九单元实施范围） | 无 | 范围供 UNIT-SAMPLES-001 使用；样例成果另行验收 |
 | UNIT-SAMPLES-001 九个可切换单元样例 | REVIEW | master | apps/client/assets/UnitSamples.scene；apps/client/assets/UnitSampleGallery.ts；project/unit_tests/UNIT_SAMPLES_v0.1.md；deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json、VERIFICATION.md | v0.1 | 构建与桌面浏览器自检通过；待专业评审及QA | 样例版本未批准 | 真机触控/性能和正式四方向、分层资产待后续验证 | 专业评审和QA核验后呈用户验收；不将桌面FPS视为手机结论 |
 | UNIT-PILOT-SELECT-001 首个实战对象选型 | DONE（选型范围） | master | project/unit_tests/PILOT_SELECTION_v0.3.md；deliverables/master/UNIT-PILOT-SELECT-001/v0.3/DELIVERABLE.json、REVIEW.json | v0.3 | 修订自评APPROVED；3项验收PASS | USER_APPROVED（店铺/店长单视角、旅客四方向、从零制作） | 无 | Product基于已批准选型提出本轮最小正式语义 |
-| UNIT-PILOT-PRODUCT-001 孟桃奶茶店产品规格 | USER_REVIEW | product | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md；DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | v0.1待用户确认 | 身份四项仅为待批的本样例设计约束；技术结构/图集预算待后续评审 | Master呈现规格与P01–P11；批准前Art/UI/VFX/Tech正式消费关闭 |
+| UNIT-PILOT-PRODUCT-001 孟桃奶茶店产品规格 | DONE（产品规格） | product | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md；DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 技术结构/图集预算待后续评审 | Master按已批准规格推进后续专业阶段；各阶段仍需独立审批 |
 
 ## 版本与边界
 - 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
 - v0.1至v0.6原文保留；历史审批决定保存为tasks/PRODUCT-001/ARTIFACT_APPROVAL_v0.x.json。
-- 当前ARTIFACT_APPROVAL.json为v0.7 USER_REVIEW；用户未批准，任务未DONE。
+- 当前ARTIFACT_APPROVAL.json为v0.8 USER_REVIEW；v0.7退回记录已归档。用户未批准，任务未DONE。
 - 用户明确方向由Master记入项目决策；整包概要和配置尚未获批，下游正式消费关闭。
 - 当前游戏的Studio Layer快照与主模板提交 `1d155c993e7d33696ade22a39e3e92901c16d38a` 中本轮相关的13个通用文件核验一致；`.studio-lock.json` 已锁定该真实模板commit。主模板已由Master提交推送；本次Producer仅更新游戏工作区文件。
 - 脑图方法提案记录 `user_approval=APPROVED`、`status=APPLIED`；当前游戏与主模板Studio文件及标准项目模板默认项已核验同步。该组织级批准不代表PRODUCT-001 v0.6获批。
@@ -43,6 +43,8 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
+2026-10-01：用户要求落实店长与店铺绑定、三魂七魄恢复成长及四魂状态／三姿态表现。PRODUCT-001 v0.8交互图、可编辑源、导出快照、短说明、交付清单与评审已落盘；四项验收PASS，进入USER_REVIEW。无因此解锁的Art/UI/Tech/Client正式任务；现有其他任务线状态不因本版自动改变。
+
 2026-10-01：UNIT-PILOT-PRODUCT-001 已实际提交 v0.1 产品规格、P01–P11验收及交付清单，Master评审通过，进入 USER_REVIEW。下游依赖用户批准，当前新增任务无空转 READY/IN_PROGRESS；CP-UNIT-REUSE-001 同源契约仍待评审。
 
 2026-10-01：用户在选型v0.2呈现后提出方向修订并明确继续。v0.3已按单视角店铺/店长和四方向旅客修正，选型范围登记为USER_APPROVED；Product规格任务已创建并分派，后续将依据真实产出更新状态，不以READY作为本轮停点。

@@ -1,0 +1,43 @@
+{
+  "task_id": "PRODUCT-001",
+  "owner": "product",
+  "summary": "v0.8修订店铺与店长固定绑定、清扫迎接、等级/三魂七魄恢复及四魂状态三姿态的美术表达；移除抽卡、重复店长和跨店配置。",
+  "artifacts": [
+    "deliverables/product/PRODUCT-001/v0.8/PRODUCT_OUTLINE.md",
+    "deliverables/product/PRODUCT-001/v0.8/BRAINSTORM_MAP.md",
+    "deliverables/product/PRODUCT-001/v0.8/MINDMAP_AI_SNAPSHOT.md",
+    "https://mindmapai.app/canvas/ca3de2ca0bd9198b95d4c3b88ed23be70c4ace16febc0e03d0dd67e08e14b467/edit",
+    "project/PRD.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "清扫修复店铺与绑定店长、找回魂魄的闭环在脑图和说明中一致",
+      "result": "PASS",
+      "evidence": "BRAINSTORM_MAP.md M02/M03/M05；PRODUCT_OUTLINE.md 第1、2节"
+    },
+    {
+      "criterion": "移除抽卡、重复店长升星、跨店搭配及关联资源和广告口径",
+      "result": "PASS",
+      "evidence": "BRAINSTORM_MAP.md M02/M03/M06；PRODUCT_OUTLINE.md 第3节"
+    },
+    {
+      "criterion": "四魂状态、三姿态、三个展示场景及同骨骼换装空间明确",
+      "result": "PASS",
+      "evidence": "BRAINSTORM_MAP.md M03；PRODUCT_OUTLINE.md 第2、4节"
+    },
+    {
+      "criterion": "历史版本、交互脑图、本地可编辑源与导出快照同版保留",
+      "result": "PASS",
+      "evidence": "v0.7未覆盖；v0.8 BRAINSTORM_MAP.md、MINDMAP_AI_SNAPSHOT.md与交互图链接同版"
+    }
+  ],
+  "assumptions": [
+    "本版为头脑风暴方向，不锁定数值公式、魂魄来源和美术实现细节。",
+    "已找回魄累计保留；旧0魂7魄→1魂0魄例子不作为玩家显示规则。"
+  ],
+  "risks": [
+    "旧v0.7长文中店长相关规则只供历史追溯，后续详细PRD须按v0.8重新编写。",
+    "现有已批准Demo及待审批单元样例须分别评估影响，不自动改动。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

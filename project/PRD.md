@@ -7,11 +7,11 @@
 ## 产品总纲
 
 - 任务：PRODUCT-001。
-- 文件：[概要需求与功能分层](../deliverables/product/PRODUCT-001/v0.7/PRODUCT_OUTLINE.md)；[系统玩法脑图源](../deliverables/product/PRODUCT-001/v0.7/BRAINSTORM_MAP.md)；[MindMap AI静态快照](../deliverables/product/PRODUCT-001/v0.7/MINDMAP_AI_SNAPSHOT.md)。
-- 版本：v0.7。
+- 文件：[概要与变更说明](../deliverables/product/PRODUCT-001/v0.8/PRODUCT_OUTLINE.md)；[系统玩法脑图源](../deliverables/product/PRODUCT-001/v0.8/BRAINSTORM_MAP.md)；[MindMap AI静态快照](../deliverables/product/PRODUCT-001/v0.8/MINDMAP_AI_SNAPSHOT.md)；[交互脑图](https://mindmapai.app/canvas/ca3de2ca0bd9198b95d4c3b88ed23be70c4ace16febc0e03d0dd67e08e14b467/edit)。
+- 版本：v0.8。
 - 文档成熟度：OUTLINE；用户审批：未批准。
-- 范围：M01 夜市经营、M02 建设与装修、M03 店长收集与养成（普通店员辅助）、M04 地府探索与进货、M05 世界主线与角色叙事、M06 资源与经济、M07 好友／坊会／公共经营、M08 日常目标与长期活动、M09 广告增益、M10 体验验证与数据观察、M11 顾客系统。
-- 模块 → 子模块 → 功能点及候选PRD拆分见概要第3、6节；不代表正式开发任务。
+- 范围：M01 夜市经营、M02 店铺建设与绑定店长、M03 店长找回三魂七魄、M04 地府探索与进货、M05 世界主线与角色叙事、M06 资源与经济、M07 好友／坊会／公共经营、M08 日常目标与长期活动、M09 广告增益、M10 体验验证与数据观察、M11 顾客系统。
+- v0.8 是脑图与短说明形式的修订；v0.7 的其他模块长文仅供未变动背景参考，旧店长招募／升星／跨店配置规则已失效。详细功能拆分仍待后续获批 PRD。
 
 ## 已批准功能 PRD 索引
 
@@ -33,3 +33,4 @@
 - v0.4概要保留于deliverables/product/PRODUCT-001/v0.4/PRODUCT_OUTLINE.md；v0.5增加多玩法留存、双向闭环、分享回流与自愿广告边界的头脑风暴分析。配置目录本轮没有新增确定字段或表。
 - v0.5概要保留于deliverables/product/PRODUCT-001/v0.5/PRODUCT_OUTLINE.md；v0.6按用户最新意见改为排队不造成久等离开，并加入定时任务、自动经营与长线目标。v0.4/v0.5的排队流失表述仅保留为历史，不再作为现行方向。
 - v0.6概要与脑图保留；v0.7纠正定时任务“至少1小时”指每个任务限时时长，补摊位改造／装饰和资源经济映射，并以系统玩法重组脑图。MindMap AI交互图及静态快照已同版登记。
+- v0.7未获整版批准并保留追溯；v0.8按用户新方向取消抽卡与跨店配置，改为店铺绑定店长及三魂七魄恢复成长，并明确四魂状态、三姿态和三处表现。
