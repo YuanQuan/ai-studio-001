@@ -1,10 +1,10 @@
 # 工作流状态
 
-Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）。孟桃概念 v0.2 已按用户反馈退回，v0.3 已通过概念评审并进入用户审阅。
+Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）。孟桃概念 v0.3 已按用户反馈退回，v0.4 完成概念评审并进入用户审阅。
 
 ## 汇总
 - 正式任务线：18
-- 待用户审批：2（PRODUCT-001 当前版本；孟桃奶茶店原创概念 v0.3；v0.1/v0.2 已退回）
+- 待用户审批：2（PRODUCT-001 当前版本；孟桃奶茶店原创概念 v0.4；v0.1/v0.2/v0.3 已退回）
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
 
@@ -29,7 +29,7 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 | UNIT-PILOT-PRODUCT-001 孟桃奶茶店产品规格 | DONE（产品规格） | product | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md；DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 技术结构/图集预算待后续评审 | Master按已批准规格推进后续专业阶段；各阶段仍需独立审批 |
 | UNIT-PILOT-ART-PREFLIGHT-001 出图前美术预案 | DONE | art | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md、PARTS_PLAN.md、ASSET_MANIFEST.md、REFERENCE_AUDIT.md、DESIGN_RATIONALE.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.1 | Tech Lead与Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 无概念图或正式图集；出图还需逐对象签认 | 可供原创概念设计使用，不放行正式资源 |
 | UNIT-PILOT-TECH-PREFLIGHT-001 骨骼图集与同源接入预审 | DONE | tech_lead | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md、CP_REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 目标设备、像素草排和真机性能尚缺；CP仍PROPOSED | 可供原创概念设计参考；正式出图与Creator实现仍锁定 |
-| UNIT-PILOT-ART-CONCEPT-001 孟桃与奶茶店原创概念 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/REVISION_BRIEF.md、ART_BRIEF.md、characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、DELIVERABLE.json、PRODUCT_SCOPE_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.3 | 三张图与来源记录已落盘；5项验收PASS；Product范围、Tech Lead与Master评审APPROVED，仅限概念 | v0.1/v0.2被用户退回；v0.3待用户明确决定 | 没有统一分层源、骨骼、图集、目标设备性能与Creator集成 | Master呈现修订三图及审阅要点；用户批准后再启动统一分层源和逐对象图集草排 |
+| UNIT-PILOT-ART-CONCEPT-001 孟桃与奶茶店原创概念 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md、ART_BRIEF.md、characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、DELIVERABLE.json、PRODUCT_SCOPE_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.4 | 三张图与来源记录已落盘；5项验收PASS；Product范围、Tech Lead与Master评审APPROVED，仅限概念 | v0.1/v0.2/v0.3被用户退回；v0.4待用户明确决定 | 没有统一分层源、骨骼、图集、目标设备性能与Creator集成 | Master呈现三图及审阅要点；用户批准后再启动统一分层源和逐对象图集草排 |
 
 ## 版本与边界
 - 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
@@ -46,6 +46,10 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
+2026-10-01：UNIT-PILOT-ART-CONCEPT-001 v0.4 的三张概念图、设计说明、来源档案与交付清单已落盘，五项验收PASS；Product范围、Tech Lead与Master评审均APPROVED，仅限概念。任务和审批记录进入USER_REVIEW，等待用户明确决定。Producer核验全部Task状态，无READY或IN_PROGRESS空转任务；PRODUCT-001独立保持USER_REVIEW。正式分层源、骨骼单页图集、目标设备性能与Creator接入仍须后续审批。
+
+2026-10-01：用户退回 UNIT-PILOT-ART-CONCEPT-001 v0.3，要求店铺logo换为带吸管的奶茶杯，孟桃只在一枚腰牌保留“孟”字。v0.3 REJECTED 决定已归档；v0.4 修订输入已落盘，Art与Product执行中。三张图、Tech Lead与Master复评未齐，故保持REVISION，不计入待用户审批。正式分层源、骨骼单页图集与Creator接入仍锁定。
+
 2026-10-01：用户批准美术与技术出图前预案后，Art实际生成角色、店铺、同屏关系三张概念图并提交完整来源档案；Tech Lead与Master复核通过，UNIT-PILOT-ART-CONCEPT-001进入USER_REVIEW。Art/Tech预案任务DONE；新建概念任务已产出，无仅靠READY/IN_PROGRESS占位的新增任务。正式图片、骨骼与Creator实施仍锁定。
 
 2026-10-01：获批Product v0.1后，Art出图前预案与Tech图集/Creator同源预审均已实际产出、通过专业及Master评审，进入各自USER_REVIEW。两项只放行下一轮原创概念设计准备，不构成正式图片/骨骼图集或性能通过；无新增空转READY/IN_PROGRESS任务。
