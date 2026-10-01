@@ -33,7 +33,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-01 | UNIT-TEST-PLAN-001 | 资源与单元清单 | v0.1 | project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md | USER_APPROVED（实施范围） | 用户明确要求当前所有单元均做一个样例 | 仅批准U01至U09及公共菜单的实施范围；不批准样例成果 |
 | 2026-10-01 | UNIT-SAMPLES-001 | 九单元样例 | v0.1 | deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json | 未提交用户审批（REVIEW） | 本轮桌面构建和浏览器自检通过；专业评审、QA尚未完成 | 样例交付版待复核，不能记为DONE |
 | 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.1 | project/unit_tests/PILOT_SELECTION_v0.1.md | REVISION（用户退回） | 用户指出未定义经营品类与店长，要求按历史产品定义且不使用现有资源 | v0.1保留追溯，不作为正式制作输入 |
-| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.2 | project/unit_tests/PILOT_SELECTION_v0.2.md | USER_REVIEW（待决定） | 建议历史概念种子孟桃与奶茶店；明确未获正式定稿、资源从零制作 | 确认选型后先由Product提交新规格；不直接批准角色造型或经营规则 |
+| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.2 | project/unit_tests/PILOT_SELECTION_v0.2.md | REJECTED（方向范围） | 用户明确店长与店铺不用四方向，旅客需要 | v0.2保留追溯，按用户新约束修订 |
+| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.3 | project/unit_tests/PILOT_SELECTION_v0.3.md | USER_APPROVED（选型范围） | 用户要求按新方向继续推进；孟桃奶茶店选型与从零制作范围按指令修订 | 不批准具体角色造型、商品、经营数值或运行效果 |
+| 2026-10-01 | UNIT-PILOT-PRODUCT-001 | 孟桃奶茶店最小产品规格 | v0.1 | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md（同目录） | USER_REVIEW（待决定） | 四项交付验收PASS，Master评审APPROVED；P01–P11可供用户审阅 | 未批准前不解锁Art/UI/VFX/Tech正式输入 |
 
 ## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。

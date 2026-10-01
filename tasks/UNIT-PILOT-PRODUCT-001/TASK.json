@@ -1,0 +1,33 @@
+{
+  "id": "UNIT-PILOT-PRODUCT-001",
+  "title": "孟桃奶茶店单元产品规格与验收",
+  "type": "feature",
+  "owner": "product",
+  "parent": "UNIT-PILOT-SELECT-001",
+  "objective": "在获批选型和用户方向决定下，定义从美术到运行效果样例所需的最小孟桃/奶茶店语义、可见状态、交互与验收，不扩展完整经营系统。",
+  "inputs": [
+    "tasks/UNIT-PILOT-SELECT-001/ARTIFACT_APPROVAL.json（v0.3 USER_APPROVED，仅选型范围）",
+    "project/unit_tests/PILOT_SELECTION_v0.3.md",
+    "project/DECISIONS.md#DEC-UNIT-DIRECTION-002",
+    "project/research/历史市场调研与方案_v0.2/03_世界观与角色叙事框架.md（历史概念来源，非自动批准的需求）",
+    "用户2026-10-01要求店长/店铺单视角、旅客四方向，继续推进"
+  ],
+  "deliverables": [
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md",
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "区分已获用户确认的选型与仍待批准的角色、店铺和经营细节，并映射M01/M02/M03/M05模块",
+    "定义首个可运行单元的最小可见状态、触发、UI信息和效果边界，不发明饮品种类、数值或收益规则",
+    "明确店长和店铺单视角，旅客四方向留给后续单元，且本轮从新资源制作",
+    "给出可验证的验收条件和后续Art/UI/VFX/Tech/Client/QA依赖"
+  ],
+  "dependencies": ["UNIT-PILOT-SELECT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Product正式交付需专业Review与用户逐环节审批；未批准前Art/Tech/Client不得将其当正式输入。",
+    "PRODUCT-001 v0.7和历史研究仅供背景核对，不自动批准首店商品与经营规则。"
+  ]
+}

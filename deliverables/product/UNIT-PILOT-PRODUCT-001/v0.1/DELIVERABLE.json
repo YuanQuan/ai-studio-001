@@ -1,0 +1,41 @@
+{
+  "task_id": "UNIT-PILOT-PRODUCT-001",
+  "owner": "product",
+  "summary": "基于已批准的孟桃奶茶店选型，提出四项历史角色种子作为本样例待批设计约束，并定义最小演示状态、共用 UI、反馈边界和逐项验收；具体造型、商品及经营规则仍待后续审批。",
+  "artifacts": [
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md",
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/ACCEPTANCE.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "区分已确认选型与待批的四项角色种子、具体造型和经营细节，并映射 M01/M02/M03/M05",
+      "result": "PASS",
+      "evidence": "PRODUCT_SPEC.md 第 1、2 节逐项列出历史角色种子及本样例设计约束；ACCEPTANCE.md P11；本版约束仍待用户批准。"
+    },
+    {
+      "criterion": "定义最小可见状态、触发、UI 信息与效果边界，不发明饮品或经济规则",
+      "result": "PASS",
+      "evidence": "PRODUCT_SPEC.md 第 3 节及 ACCEPTANCE.md P03、P05、P06、P07、P10。"
+    },
+    {
+      "criterion": "明确店铺和店长单视角、旅客四方向另任务，并从新资源制作",
+      "result": "PASS",
+      "evidence": "PRODUCT_SPEC.md 第 1、2、3.1、4 节及 ACCEPTANCE.md P02、P08。"
+    },
+    {
+      "criterion": "给出可验证条件和 Art/UI/VFX/Tech/Client/QA 依赖",
+      "result": "PASS",
+      "evidence": "ACCEPTANCE.md P01–P11；PRODUCT_SPEC.md 第 5 节。"
+    }
+  ],
+  "assumptions": [
+    "工作表现为独立单元的演示触发，不成为主体游戏的玩家操作或经营结算。",
+    "本稿不决定 Creator 工程组织或技术性能预算，CP-UNIT-REUSE-001 仍待批准。"
+  ],
+  "risks": [
+    "孟桃四项历史种子是本版待批的样例设计约束；具体造型、身份细节及主体游戏首店定位仍需后续审批。",
+    "若将演示专用状态和控件混入正式经营 UI，会形成未批准的产品规则并造成双入口差异。",
+    "新资产出图前仍需 Art 与 Tech Lead 完成图集及性能协同评审。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,11 @@
+{
+  "task_id": "UNIT-PILOT-PRODUCT-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已将孟桃四项历史设定逐项列为本样例待用户审批的设计约束，来源与批准状态清晰；没有把旧研究自动当成正式需求。"},
+    {"severity": "INFO", "message": "店铺和店长单视角、旅客四方向另任务，且不引用旧资源；常态和工作表现有可验证触发与退出，未增加饮品品类、收益、订单或经营数值。"},
+    {"severity": "MINOR", "message": "主体游戏集成入口和单图集性能预算尚未由Tech Lead定案，后续技术阶段须明确可验证实现与目标设备，当前产品规格未擅自给出技术阈值。"}
+  ],
+  "next_action": "提交PRODUCT_SPEC.md与ACCEPTANCE.md v0.1供用户审阅；获明确批准后才解锁Art/UI/VFX/Tech等下游正式规格。"
+}
