@@ -42,6 +42,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-01 | UNIT-PILOT-ART-PREFLIGHT-001 | 出图前美术预案 | v0.1 | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md；PARTS_PLAN.md（同目录） | USER_APPROVED | 用户明确回复“批准美术与技术预案”；Tech Lead与Master评审APPROVED | 仅解锁原创概念设计；正式图片、骨骼图集仍需后续审批 |
 | 2026-10-01 | UNIT-PILOT-TECH-PREFLIGHT-001 | 图集与Creator同源接入预审 | v0.1 | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md；CP_REVIEW.md（同目录） | USER_APPROVED | 用户明确回复“批准美术与技术预案”；Master评审APPROVED | 技术预审获批，目标设备、真机性能、CP项目级契约尚未批准 |
 | 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.1 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ART_BRIEF.md；三张PNG（同目录 characters/ 与 scenes/） | USER_REVIEW（待决定） | Tech Lead与Master评审APPROVED，仅限概念；五项交付验收PASS | 图片不可作为正式骨骼/图集或Creator资源；获批后仍须统一分层源和逐对象Art/Tech签认 |
+| 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.1 | tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL_v0.1.json；deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ART_BRIEF.md | REJECTED（用户要求修订） | 用户要求孟桃造型体现孟婆家族背景，可用挂件或衣服标识；奶茶店改为现代风格，加入奶茶机、价目表和牛奶瓶 | v0.1保留历史，不作为正式视觉输入；v0.2承接修订 |
+| 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.2 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/REVISION_BRIEF.md；三张PNG、DELIVERABLE.json、PRODUCT_SCOPE_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | USER_REVIEW（待决定） | 三张修订概念图与来源记录已落盘；五项验收PASS，Product范围、Tech Lead及Master评审APPROVED，仅限概念 | 不预设商品、价格、配方或新玩法；正式资产、骨骼图集与Creator接入仍锁定 |
 
 ## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；v0.7已按用户新方向退回，当前v0.8专业评审已通过，处于USER_REVIEW，等待用户确认。

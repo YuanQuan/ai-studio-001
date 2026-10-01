@@ -1,0 +1,54 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "owner": "art",
+  "summary": "按用户反馈修订孟桃及奶茶店三张原创概念图：角色以围裙刺绣和肩扣挂件体现孟婆家族线索；现代店铺以大牛奶瓶、瓶列、奶茶制作设备和空白价目表表达经营类别。仅供概念评审。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/REVISION_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/REFERENCE_AUDIT.md",
+    "project/art_reference/misc/UNIT-PILOT-ART-CONCEPT-001-v0.2.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "分别呈现孟桃角色、奶茶店主体及二者同屏关系，所有图像标为原创概念稿而非正式生产资产",
+      "result": "PASS",
+      "evidence": "三张 v0.2 PNG 均已生成并逐张目视核对；ART_BRIEF.md 和 ASSET_MANIFEST.md 标注用途与概念状态。"
+    },
+    {
+      "criterion": "孟桃以原创挂件或衣装标识明确表达孟婆家族线索；店铺采用较现代的奶茶店语言，牛奶瓶、奶茶机与价目表版面可辨，不预定真实商品名、数字价格或经营规则；仍不加入旅客四方向及尚未批准的成长状态",
+      "result": "PASS",
+      "evidence": "角色胸前汤碗、汤勺和雾线刺绣与肩扣挂件可见；店铺大牛奶瓶、瓶列、机械摇杯架、封口机及空白条目价格槽可见；同屏背景人形剪影已移除。"
+    },
+    {
+      "criterion": "说明角色和店铺的造型、色彩、世界观关系及骨骼拆件可行性，不虚构已完成的图集、性能或Creator集成",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 和 DESIGN_RATIONALE.md 说明对象与单视角边界，并明确尚无分层源、骨骼、图集、设备测试或 Creator 集成。"
+    },
+    {
+      "criterion": "记录生成过程、参考与字体来源、版权/IP/外观相似风险，并对风险项作处置",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT.md 记录全部五次图像生成/编辑的输入与完整提示词、无外部图片或字体、相似风险及人影/设备问题的修订；独立来源归档已写入 project/art_reference。"
+    },
+    {
+      "criterion": "列明概念通过后仍需Art与Tech逐对象确认的图集和设备检查项",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 列出最大显示尺寸、极限姿态、单页草排、纹理、合批、目标设备与 Creator 导入验证门禁。"
+    }
+  ],
+  "assumptions": [
+    "汤碗汤勺雾线图案仅为角色家族线索候选，不是已锁定家徽、法器或能力。",
+    "奶茶机、牛奶瓶、价目表仅用于店铺类别识别；价目表没有获批商品和真实价格。",
+    "同屏图由生成器重新绘制，不等于角色与店铺独立图的精确同源合成。"
+  ],
+  "risks": [
+    "生成概念缺少可编辑分层源、骨骼、经签认的单页图集和真机性能数据，不可直接作为 Creator 生产资源。",
+    "汤碗汤勺标识、牛奶瓶轮廓和店面组合尚未完成目标市场的商标及 trade dress 近似检索。",
+    "正式字体、商品文案和价目表内容仍需获批 Product/UI 规格与许可；不得从本版空白版面推定规则。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
