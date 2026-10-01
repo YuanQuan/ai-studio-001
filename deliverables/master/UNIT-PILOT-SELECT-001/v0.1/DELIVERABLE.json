@@ -1,0 +1,14 @@
+{
+  "task_id": "UNIT-PILOT-SELECT-001",
+  "owner": "master",
+  "summary": "比较现有建筑、顾客和店长资料，建议以中央可修复摊位作为首个从美术到运行效果的可复用单元样例。",
+  "artifacts": ["project/unit_tests/PILOT_SELECTION_v0.1.md"],
+  "acceptance_results": [
+    {"criterion": "对建筑、顾客、店长给出可核对的首版代表性比较和选择理由", "result": "PASS", "evidence": "PILOT_SELECTION_v0.1.md 候选表引用产品、Art、UI与资源盘点资料。"},
+    {"criterion": "明确首版样例的资产、骨骼、四方向、交互、UI、VFX、工程复用和验证范围", "result": "PASS", "evidence": "PILOT_SELECTION_v0.1.md 首版正式样例边界第1至7项。"},
+    {"criterion": "标明现有资源缺口、授权来源检查与下游正式Artifact审批门禁", "result": "PASS", "evidence": "选型表说明合成PNG缺口；边界第2、3、5项及下游顺序列出检查与门禁。"}
+  ],
+  "assumptions": ["首轮只制作一个目标摊位；店长占位仅用于站位/遮挡测试。"],
+  "risks": ["现有两态PNG不是可编辑骨骼拆件。", "目标设备和单图集尺寸上限尚待Art与Tech Lead评审。", "旧整体Demo已取消，相关产品语义需在新单元任务中重新获批。"],
+  "status": "READY_FOR_REVIEW"
+}

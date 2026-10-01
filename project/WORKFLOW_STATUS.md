@@ -3,8 +3,8 @@
 Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）。本轮新单元记录由 Master 依据用户授权补录，待 Producer 后续复核。
 
 ## 汇总
-- 正式任务线：13
-- 待用户审批：1
+- 正式任务线：14
+- 待用户审批：2
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
 
@@ -25,6 +25,7 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 | ART-OCCLUSION-DEMO-001 桥栏与摊位屋檐前景分层 | CANCELLED（旧整体Demo作废） | art | deliverables/art/ART-OCCLUSION-DEMO-001/v0.1/ASSET_MANIFEST.md、ASSEMBLY_GUIDE.md、DELIVERABLE.json；tasks/ART-OCCLUSION-DEMO-001/TASK.json | v0.1（历史草稿） | 验收2项PASS、1项FAIL、1项NOT_TESTED；Tech Lead CHANGES_REQUESTED | 未批准 | 用户明确取消旧整体Demo实施 | 停止前景层制作；新遮挡单元另立规格 |
 | UNIT-TEST-PLAN-001 资源盘点与可切换单元清单 | DONE（范围确认） | master | project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md；deliverables/master/UNIT-TEST-PLAN-001/v0.1/DELIVERABLE.json；tasks/UNIT-TEST-PLAN-001/ARTIFACT_APPROVAL.json | v0.1 | 清单自检4项PASS | USER_APPROVED（九单元实施范围） | 无 | 范围供 UNIT-SAMPLES-001 使用；样例成果另行验收 |
 | UNIT-SAMPLES-001 九个可切换单元样例 | REVIEW | master | apps/client/assets/UnitSamples.scene；apps/client/assets/UnitSampleGallery.ts；project/unit_tests/UNIT_SAMPLES_v0.1.md；deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json、VERIFICATION.md | v0.1 | 构建与桌面浏览器自检通过；待专业评审及QA | 样例版本未批准 | 真机触控/性能和正式四方向、分层资产待后续验证 | 专业评审和QA核验后呈用户验收；不将桌面FPS视为手机结论 |
+| UNIT-PILOT-SELECT-001 首个实战对象选型 | USER_REVIEW | master | project/unit_tests/PILOT_SELECTION_v0.1.md；deliverables/master/UNIT-PILOT-SELECT-001/v0.1/DELIVERABLE.json、REVIEW.json | v0.1 | 选型与范围自评APPROVED；3项验收PASS | 待用户确认中央可修复摊位选型 | 新单元正式规格与图集可行性尚未批准 | Master呈现选型稿；批准后才启动下游正式Artifact |
 
 ## 版本与边界
 - 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
@@ -41,6 +42,8 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
+2026-10-01：UNIT-PILOT-SELECT-001 v0.1 已比较建筑、顾客与店长并提交中央可修复摊位选型，进入 USER_REVIEW。新样例正式产品、美术、技术、UI、VFX和QA仍受逐环节审批门禁约束；无以 READY/IN_PROGRESS 占位的新增任务。
+
 2026-10-01：用户明确要求当前九个单元全部做样例，UNIT-TEST-PLAN-001 v0.1 实施范围获批。UNIT-SAMPLES-001 v0.1 场景、脚本、说明与验证记录已落盘；Creator Web Mobile 构建和桌面浏览器逐项操作通过，任务进入 REVIEW。不存在仅靠 READY/IN_PROGRESS 占位的可继续样例任务；专业评审、QA和用户验收仍待后续流程，正式手机性能及美术源图不在本版通过项内。
 
 2026-09-30（新方向）：旧整体Demo活动任务已按用户指令取消，不再继续旧校准、遮挡分层或功能编码。UNIT-TEST-PLAN-001 的资源盘点草案已落盘并提交用户审阅，尚未批准制作任何单元；历史批准和产物保留供盘点，不迁移审批状态。

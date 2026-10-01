@@ -1,0 +1,32 @@
+{
+  "id": "UNIT-PILOT-SELECT-001",
+  "title": "首个可复用单元实战对象选型",
+  "type": "coordination",
+  "owner": "master",
+  "parent": null,
+  "objective": "从既有建筑、顾客与店长设计中选择一个对象，明确从美术到运行效果的首版实战范围与下游审批门禁。",
+  "inputs": [
+    "用户2026-10-01要求选一个代表性对象制作正式样例",
+    "deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md（历史已批准产品资料，仅供选型参考）",
+    "deliverables/art/ART-DEMO-001/v0.1/ART_DIRECTION.md（历史视觉资料）",
+    "deliverables/ui/UI-DEMO-001/v0.1/UI_SPEC.md（历史UI资料）",
+    "project/changes/CP-UNIT-REUSE-001.md（待评审复用提案）"
+  ],
+  "deliverables": [
+    "project/unit_tests/PILOT_SELECTION_v0.1.md",
+    "deliverables/master/UNIT-PILOT-SELECT-001/v0.1/DELIVERABLE.json",
+    "deliverables/master/UNIT-PILOT-SELECT-001/v0.1/REVIEW.json"
+  ],
+  "acceptance": [
+    "对建筑、顾客、店长给出可核对的首版代表性比较和选择理由",
+    "明确首版样例的资产、骨骼、四方向、交互、UI、VFX、工程复用和验证范围",
+    "标明现有资源缺口、授权来源检查与下游正式Artifact审批门禁"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本任务仅选择首个对象和实战边界，不批准美术源图、骨骼方案、技术指标或运行效果。",
+    "旧整体Demo实施已取消，历史Artifact不自动成为新样例的已批准正式输入。"
+  ]
+}
