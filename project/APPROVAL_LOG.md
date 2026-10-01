@@ -39,6 +39,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-01 | UNIT-PILOT-PRODUCT-001 | 孟桃奶茶店最小产品规格 | v0.1 | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md（同目录） | USER_APPROVED | 用户在呈现v0.1后回复“好的请继续”；批准四项角色约束、常态/工作表现及P01–P11范围 | 具体造型、商品、数值和技术结构仍需后续阶段批准 |
 | 2026-10-01 | UNIT-PILOT-ART-PREFLIGHT-001 | 出图前美术预案 | v0.1 | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md；PARTS_PLAN.md（同目录） | USER_REVIEW（待决定） | Tech Lead与Master评审APPROVED；四项交付验收PASS | 本版无图片；批准仅允许继续原创概念设计，不放行生产图集 |
 | 2026-10-01 | UNIT-PILOT-TECH-PREFLIGHT-001 | 图集与Creator同源接入预审 | v0.1 | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md；CP_REVIEW.md（同目录） | USER_REVIEW（待决定） | Master评审APPROVED；四项交付验收PASS | 单图集不保证跨对象合批；目标设备/性能和正式出图均待后续批准 |
+| 2026-10-01 | UNIT-PILOT-ART-PREFLIGHT-001 | 出图前美术预案 | v0.1 | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md；PARTS_PLAN.md（同目录） | USER_APPROVED | 用户明确回复“批准美术与技术预案”；Tech Lead与Master评审APPROVED | 仅解锁原创概念设计；正式图片、骨骼图集仍需后续审批 |
+| 2026-10-01 | UNIT-PILOT-TECH-PREFLIGHT-001 | 图集与Creator同源接入预审 | v0.1 | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md；CP_REVIEW.md（同目录） | USER_APPROVED | 用户明确回复“批准美术与技术预案”；Master评审APPROVED | 技术预审获批，目标设备、真机性能、CP项目级契约尚未批准 |
+| 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.1 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ART_BRIEF.md；三张PNG（同目录 characters/ 与 scenes/） | USER_REVIEW（待决定） | Tech Lead与Master评审APPROVED，仅限概念；五项交付验收PASS | 图片不可作为正式骨骼/图集或Creator资源；获批后仍须统一分层源和逐对象Art/Tech签认 |
 
 ## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；v0.7已按用户新方向退回，当前v0.8专业评审已通过，处于USER_REVIEW，等待用户确认。

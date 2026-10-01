@@ -27,8 +27,9 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 | UNIT-SAMPLES-001 九个可切换单元样例 | REVIEW | master | apps/client/assets/UnitSamples.scene；apps/client/assets/UnitSampleGallery.ts；project/unit_tests/UNIT_SAMPLES_v0.1.md；deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json、VERIFICATION.md | v0.1 | 构建与桌面浏览器自检通过；待专业评审及QA | 样例版本未批准 | 真机触控/性能和正式四方向、分层资产待后续验证 | 专业评审和QA核验后呈用户验收；不将桌面FPS视为手机结论 |
 | UNIT-PILOT-SELECT-001 首个实战对象选型 | DONE（选型范围） | master | project/unit_tests/PILOT_SELECTION_v0.3.md；deliverables/master/UNIT-PILOT-SELECT-001/v0.3/DELIVERABLE.json、REVIEW.json | v0.3 | 修订自评APPROVED；3项验收PASS | USER_APPROVED（店铺/店长单视角、旅客四方向、从零制作） | 无 | Product基于已批准选型提出本轮最小正式语义 |
 | UNIT-PILOT-PRODUCT-001 孟桃奶茶店产品规格 | DONE（产品规格） | product | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md；DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 技术结构/图集预算待后续评审 | Master按已批准规格推进后续专业阶段；各阶段仍需独立审批 |
-| UNIT-PILOT-ART-PREFLIGHT-001 出图前美术预案 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md、PARTS_PLAN.md、ASSET_MANIFEST.md、REFERENCE_AUDIT.md、DESIGN_RATIONALE.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.1 | Tech Lead与Master评审APPROVED；4项交付验收PASS | v0.1待用户确认 | 无概念图或正式图集；出图还需逐对象签认 | Master呈现预案；仅批准进入原创概念设计，不放行正式资源 |
-| UNIT-PILOT-TECH-PREFLIGHT-001 骨骼图集与同源接入预审 | USER_REVIEW | tech_lead | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md、CP_REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | v0.1待用户确认 | 目标设备、像素草排和真机性能尚缺；CP仍PROPOSED | Master呈现技术预审；正式出图与Creator实现仍锁定 |
+| UNIT-PILOT-ART-PREFLIGHT-001 出图前美术预案 | DONE | art | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md、PARTS_PLAN.md、ASSET_MANIFEST.md、REFERENCE_AUDIT.md、DESIGN_RATIONALE.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.1 | Tech Lead与Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 无概念图或正式图集；出图还需逐对象签认 | 可供原创概念设计使用，不放行正式资源 |
+| UNIT-PILOT-TECH-PREFLIGHT-001 骨骼图集与同源接入预审 | DONE | tech_lead | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md、CP_REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 目标设备、像素草排和真机性能尚缺；CP仍PROPOSED | 可供原创概念设计参考；正式出图与Creator实现仍锁定 |
+| UNIT-PILOT-ART-CONCEPT-001 孟桃与奶茶店原创概念 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ART_BRIEF.md、characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.1 | Tech Lead与Master评审APPROVED，仅限概念；5项验收PASS | v0.1待用户审批 | 没有分层源、骨骼、图集、目标设备性能与Creator集成 | Master呈现三张概念图与风险；获批后方进入统一分层原画和逐对象图集草排 |
 
 ## 版本与边界
 - 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
@@ -45,6 +46,8 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 - 用户于2026-09-30明确批准Client Brief v0.2、QA Plan v0.2和性能预算v0.1三项；各自审批记录独立保留，v0.1修订历史保留。Client Brief批准范围仅工程创建、已批准资产导入及无业务逻辑静态场景校准。Master已创建CLIENT-CALIBRATION-DEMO-001；实际参数/截图的新版本经Tech Lead评审和用户批准前，不得正式功能编码。
 
 ## 连续执行检查
+2026-10-01：用户批准美术与技术出图前预案后，Art实际生成角色、店铺、同屏关系三张概念图并提交完整来源档案；Tech Lead与Master复核通过，UNIT-PILOT-ART-CONCEPT-001进入USER_REVIEW。Art/Tech预案任务DONE；新建概念任务已产出，无仅靠READY/IN_PROGRESS占位的新增任务。正式图片、骨骼与Creator实施仍锁定。
+
 2026-10-01：获批Product v0.1后，Art出图前预案与Tech图集/Creator同源预审均已实际产出、通过专业及Master评审，进入各自USER_REVIEW。两项只放行下一轮原创概念设计准备，不构成正式图片/骨骼图集或性能通过；无新增空转READY/IN_PROGRESS任务。
 
 2026-10-01：用户要求落实店长与店铺绑定、三魂七魄恢复成长及四魂状态／三姿态表现。PRODUCT-001 v0.8交互图、可编辑源、导出快照、短说明、交付清单与评审已落盘；四项验收PASS，进入USER_REVIEW。无因此解锁的Art/UI/Tech/Client正式任务；现有其他任务线状态不因本版自动改变。
