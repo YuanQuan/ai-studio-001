@@ -1,0 +1,54 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "owner": "art",
+  "summary": "按用户反馈重做 v0.3 原创概念：孟桃转可爱卡通造型并加清楚的“孟”字；店铺转木砖瓦檐复古中式风，用无品牌纸盒牛奶替代瓶装奶；保留空白价目表、制作设备与同屏关系。仅供概念评审。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/REVISION_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/REFERENCE_AUDIT.md",
+    "project/art_reference/misc/UNIT-PILOT-ART-CONCEPT-001-v0.3.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "分别呈现孟桃角色、奶茶店主体及二者同屏关系，所有图像标为原创概念稿而非正式生产资产",
+      "result": "PASS",
+      "evidence": "三张 v0.3 PNG 已生成、落盘并逐张目视检查；ART_BRIEF.md 和 ASSET_MANIFEST.md 标明概念状态及生产门禁。"
+    },
+    {
+      "criterion": "孟桃为可爱卡通人物，胸前及挂件出现清楚正确的“孟”字；店铺为木砖瓦檐复古中式风，纸盒牛奶、奶茶设备和空白价目表可见；不加入未批准商品价格与经营规则",
+      "result": "PASS",
+      "evidence": "人物及同屏图的“孟”字均人工目视核对为子在上、皿在下；店铺与同屏图可见木柱、红砖、弯檐瓦顶、无品牌折顶纸盒、机械摇杯架、封口机、仅空线及空价格栏的价目表；已移除成品杯、瓶装奶与柜前可动布片。"
+    },
+    {
+      "criterion": "说明角色与店铺造型、风格统一、对象边界与骨骼拆件可行性，不虚构已完成的图集、性能或 Creator 集成",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md、ASSET_MANIFEST.md 和 DESIGN_RATIONALE.md 说明左挂旗是唯一店铺可动骨骼候选，其余静态或氛围；同时说明尚无分层原画、骨骼、图集、真机数据与 Creator 集成。"
+    },
+    {
+      "criterion": "记录生成过程、参考与字体来源、版权/IP/外观相似风险，并对风险项作处置",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT.md 留存全部六次内置 image_gen 完整提示词、输入、人工目视与透明度检查，指出“孟”字需人工正式重绘与字体许可核验；独立来源归档已写入 project/art_reference。"
+    },
+    {
+      "criterion": "列明概念通过后仍需 Art 与 Tech 逐对象确认的图集、尺寸、合批与设备检查项",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 列明极限姿态、单页图集草排、纹理内存、合批、目标设备及 Creator 导入门禁；两张独立图角点 alpha=0 已核验，不把概念尺寸当成生产预算。"
+    }
+  ],
+  "assumptions": [
+    "“孟”字仅为家族身份视觉候选，不自动确立正式家徽、品牌、法器或能力；图像不改变已批准的“孟婆外孙女”产品文本。",
+    "纸盒牛奶、设备与价目表仅用于类别识别；无实际商品、价格、品牌、配方或交易定义。",
+    "同屏图由生成器关系重绘，不等于独立图的精确像素合成；屋外小立牌和远景建筑不扩成生产对象。"
+  ],
+  "risks": [
+    "生成概念缺少统一可编辑分层源、骨骼、经签认单页图集和真机性能数据，不可直接作为 Creator 生产资源。",
+    "“孟”字、纸盒轮廓和店面组合尚未做目标市场商标、徽章及 trade dress 近似检索；正式原画需人工校字与相似复核。",
+    "正式字体、商品文案、菜单内容仍依获批 Product/UI 规格及实际许可；修改既有字体不等于取得授权。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
