@@ -46,6 +46,7 @@ Art Agent 同时承担项目 Art Director / 视觉总监职责。涉及视觉资
 - 重要最终视觉产物必须在 `ART_DIRECTION.md` / `ART_BRIEF.md` / `DESIGN_RATIONALE.md` 中说明设计思路，而不是只给图片。
 - 概念稿和可集成最终资产必须标注状态，不能互相冒充。
 - 视觉参考、素材来源与版权/IP/外观风险记录独立维护在 `project/art_reference/`；参考资料不等同于最终生产资产。
+- 图片和字体进入正式资产前须登记来源、授权/许可、允许的使用与修改范围及风险检查结论；来源不明或许可不覆盖实际用途时不得交付。字体改造须保留原字体许可及修改记录；修改本身不消除原有权利或许可条件。
 
 ### UI Agent
 涉及 UI 时至少交付；视觉部分必须以用户批准的 Art Direction / `project/ART_GUIDE.md` 为基线，并先通过 Art Agent 的视觉一致性 Review：
@@ -54,6 +55,7 @@ Art Agent 同时承担项目 Art Director / 视觉总监职责。涉及视觉资
 - `screens/`：关键页面效果图。
 - `components/`：公共组件效果图及 normal/pressed/disabled/selected/loading 等必要状态。
 - 重要交互必须在文档中说明，不允许只给静态图。
+- `UI_SPEC.md` 还须列出可复用组件/图标/状态资源、复用范围及差异原因，并列出系统字体和美术字体的来源、许可状态、嵌入/分发/修改方式；正式资源须通过 Art 与 Client 的相应检查。
 
 ### VFX Agent
 特效允许以轻量描述为主；视觉方向必须以用户批准的 Art Direction / `project/ART_GUIDE.md` 为基线，并先通过 Art Agent 的视觉一致性 Review，至少交付：
