@@ -1,0 +1,14 @@
+{
+  "task_id": "UNIT-PILOT-SELECT-001",
+  "owner": "master",
+  "summary": "按用户反馈将未定义经营内容的旧中央摊位选型修订为历史角色概念种子孟桃及其奶茶店方向，明确未批准语义和从零制作边界。",
+  "artifacts": ["project/unit_tests/PILOT_SELECTION_v0.2.md"],
+  "acceptance_results": [
+    {"criterion": "说明摊位经营内容与店长身份，并标明历史资料的审批状态", "result": "PASS", "evidence": "PILOT_SELECTION_v0.2.md 选型结论及已有文字与待确认内容；引用历史角色资料第7节。"},
+    {"criterion": "不使用目前存在的资源作为本次正式美术或运行资源", "result": "PASS", "evidence": "PILOT_SELECTION_v0.2.md 从零制作第1、2项排除旧PNG、Prefab、UI图稿与占位形体。"},
+    {"criterion": "说明四方向骨骼、图集、UI、VFX与主体游戏同源复用的首轮范围", "result": "PASS", "evidence": "PILOT_SELECTION_v0.2.md 从零制作第2至6项和下游门禁。"}
+  ],
+  "assumptions": ["孟桃与奶茶店仅为基于历史概念种子的选型建议，正式身份与首店关系待用户及Product规格确认。"],
+  "risks": ["旧产品资料未批准首店品类、孟桃正式身份或具体经营规则。", "本轮所有美术与Creator资源需从新的可编辑源制作。"],
+  "status": "READY_FOR_REVIEW"
+}

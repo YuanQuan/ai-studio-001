@@ -32,7 +32,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-09-30 | CLIENT-CALIBRATION-DEMO-001 | Creator静态场景校准 | v0.3 | deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/CALIBRATION_APPENDIX.md | 未提交用户审批（BLOCKED；专业评审要求修订） | 3项PASS、2项NOT_TESTED；Tech Lead TECH_REVIEW.json=CHANGES_REQUESTED | 当前152对象、12场景Prefab实例、地图外BeyondExit与出口石路静态验证通过；用户真实默认截图拍摄于新增出口段前。当前版两桥/出口段、近远和边界真实画面及桥栏/屋檐遮挡证据仍缺，须复评通过再呈用户审批 |
 | 2026-10-01 | UNIT-TEST-PLAN-001 | 资源与单元清单 | v0.1 | project/unit_tests/RESOURCE_UNIT_INVENTORY_v0.1.md | USER_APPROVED（实施范围） | 用户明确要求当前所有单元均做一个样例 | 仅批准U01至U09及公共菜单的实施范围；不批准样例成果 |
 | 2026-10-01 | UNIT-SAMPLES-001 | 九单元样例 | v0.1 | deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json | 未提交用户审批（REVIEW） | 本轮桌面构建和浏览器自检通过；专业评审、QA尚未完成 | 样例交付版待复核，不能记为DONE |
-| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.1 | project/unit_tests/PILOT_SELECTION_v0.1.md | USER_REVIEW（待决定） | 建议中央可修复摊位；三项选型验收PASS | 用户确认后才可启动新单元下游规格，不等于批准美术或实现 |
+| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.1 | project/unit_tests/PILOT_SELECTION_v0.1.md | REVISION（用户退回） | 用户指出未定义经营品类与店长，要求按历史产品定义且不使用现有资源 | v0.1保留追溯，不作为正式制作输入 |
+| 2026-10-01 | UNIT-PILOT-SELECT-001 | 首个实战对象选型 | v0.2 | project/unit_tests/PILOT_SELECTION_v0.2.md | USER_REVIEW（待决定） | 建议历史概念种子孟桃与奶茶店；明确未获正式定稿、资源从零制作 | 确认选型后先由Product提交新规格；不直接批准角色造型或经营规则 |
 
 ## 当前门禁
 - PRODUCT-001历史概要与审批记录保留；当前v0.7专业评审已通过，处于USER_REVIEW，用户尚未作出批准或退回决定。
