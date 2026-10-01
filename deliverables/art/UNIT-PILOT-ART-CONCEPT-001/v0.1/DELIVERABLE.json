@@ -1,0 +1,55 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "owner": "art",
+  "summary": "提交孟桃角色、独立奶茶店与同屏归属的三张新生成原创概念候选图及中文设计、资产和权利初筛记录；仅供概念评审，尚非正式生产图片。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/characters/drafts/mengtao-concept-initial.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.1/REFERENCE_AUDIT.md",
+    "project/art_reference/misc/UNIT-PILOT-ART-CONCEPT-001-v0.1.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "分别呈现孟桃角色、奶茶店主体及二者同屏关系，所有图像标为原创概念稿而非正式生产资产",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 视觉稿表、ASSET_MANIFEST.md 逐文件用途；三张对应 PNG 均存在并经目视核对。"
+    },
+    {
+      "criterion": "角色与店铺只画实际使用视角，不加入旅客四方向、商品、价格、经营或尚未批准的成长状态",
+      "result": "PASS",
+      "evidence": "三张 PNG 均为单一三分之四正面视角，未见旅客、价格、菜单或成长状态；角色初稿钱币形挂饰已在正式候选中删除。"
+    },
+    {
+      "criterion": "说明角色和店铺的造型、色彩、世界观关系及骨骼拆件可行性，不虚构已完成的图集、性能或Creator集成",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 和 DESIGN_RATIONALE.md 阐述造型、分层可能与待测项；ASSET_MANIFEST.md 明确无骨骼、图集、Prefab 和性能结论。"
+    },
+    {
+      "criterion": "记录生成过程、参考与字体来源、版权/IP/外观相似风险，并对风险项作处置",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT.md 记录项目文字来源、内置 image_gen 步骤、完整提示词、无外部图片或字体、初筛局限与钱币形挂饰移除。"
+    },
+    {
+      "criterion": "列明概念通过后仍需Art与Tech逐对象确认的图集和设备检查项",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 后续制作门禁和 DESIGN_RATIONALE.md 待确认项列明逐对象拆件、尺寸、一页图集、内存、合批与目标设备验证。"
+    }
+  ],
+  "assumptions": [
+    "概念图中的店铺悬挂布片仅是唯一可动件候选，用户尚未批准其最终造型。",
+    "同屏生成图仅用于构图关系，不是独立角色和店铺 PNG 的精确同源合成。",
+    "画面背景和店内器皿仅为氛围示意，不扩大本任务的正式资产范围。"
+  ],
+  "risks": [
+    "生成结果没有可编辑分层源、骨骼数据或经 Art 与 Tech 签认的单页图集草排，不可直接作为 Creator 资产。",
+    "三张图的衣装、发束和店面细节并非完全一致，正式原画需统一并消除跨图差异。",
+    "版权、商标与外观初筛并非全域检索；正式生产前需针对实际参考和目标市场再次复核。",
+    "未来采用任何字体前须核验显示、嵌入、分发及可能的修改许可，本版没有字体选择。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
