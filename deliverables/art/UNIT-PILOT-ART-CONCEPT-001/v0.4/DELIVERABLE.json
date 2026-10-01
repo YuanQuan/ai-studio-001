@@ -1,0 +1,54 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "owner": "art",
+  "summary": "按用户最新反馈完成 v0.4 原创概念：店铺屋顶、左挂旗和同屏外立牌统一奶茶杯加吸管标识；孟桃仅在束带前侧一枚腰牌保留正确“孟”字，胸前及肩部无字。保持可爱卡通人物、复古中式木砖瓦檐店铺、无品牌纸盒静态陈列、设备和空白价目表；仅供概念评审。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REFERENCE_AUDIT.md",
+    "project/art_reference/misc/UNIT-PILOT-ART-CONCEPT-001-v0.4.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "分别呈现孟桃角色、奶茶店主体及二者同屏关系，三张图均为原创概念稿而非正式生产资产",
+      "result": "PASS",
+      "evidence": "三张 v0.4 PNG 已分别生成落盘并逐张目视核对；ART_BRIEF.md 和 ASSET_MANIFEST.md 明确概念状态、生产对象边界及后续门禁。"
+    },
+    {
+      "criterion": "奶茶店各处对外标识统一为原创奶茶杯加吸管；孟桃只有腰带处一枚正确“孟”字腰牌且同屏可见；保留既定风格、设备与空白价目表，不增加未经批准的商品规则",
+      "result": "PASS",
+      "evidence": "人物与同屏图目视核对胸前、肩部无“孟”，腰带正面仅一枚腰牌，字形为上“子”下“皿”，同屏腰牌位于柜台上缘。独立店铺与同屏图屋顶、左挂旗及同屏外立牌均为杯加吸管；纸盒仅无品牌货架／柜内陈列。木砖瓦檐、摇杯、封口设备和空白菜单保留。"
+    },
+    {
+      "criterion": "说明可复用标识母版、角色与店铺统一、对象边界和骨骼拆件可行性，不虚构图集、性能或 Creator 集成",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md、ASSET_MANIFEST.md 和 DESIGN_RATIONALE.md 明确一个同源杯形 logo 概念及三处应用、左挂旗唯一店铺可动候选、角色与旗各自骨骼／单页图集规划；同时说明尚无分层原画、骨骼、图集、真机数据或 Creator 集成。"
+    },
+    {
+      "criterion": "记录生成输入与完整提示词、参考和字体来源、版权/IP/商标外观相似风险及处置",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT.md 留存三次内置 image_gen 完整提示词、编辑输入、目视核对和尺寸/透明检查；project/art_reference 独立归档；“孟”字和杯形标识要求正式人工重绘与许可／近似复核。"
+    },
+    {
+      "criterion": "列明概念通过后 Art 与 Tech 需逐对象确认的图集、尺寸、合批与设备检查项",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 列明极限姿态、单页图集草排、纹理内存、采样留白、合批、目标设备和 Creator 导入门禁。两张独立图为 RGBA PNG 且四角 alpha=0；同屏关系为 RGB PNG；概念尺寸未作为正式预算。"
+    }
+  ],
+  "assumptions": [
+    "“孟”字仅作家族身份候选视觉线索，不自动确立家徽、商标、法器或能力；不改变已批准的“孟婆外孙女”产品文本。",
+    "杯加吸管 logo 只表达店铺类别；纸盒仅是无品牌静态原料陈列，不定义饮品、包装、配方、价格或交易规则。",
+    "同屏图为关系重绘而非独立图像素合成；屋外立牌及夜街不自动增加本轮生产对象。"
+  ],
+  "risks": [
+    "生成概念尚无统一可编辑分层源、准确同源 logo 母版、骨骼、经签认单页图集和真机性能数据，不能直接作为 Creator 生产资源。",
+    "杯形标识、单字“孟”及店面组合尚未进行目标市场商标、徽章和 trade dress 近似检索；正式原画需人工校字、重绘及相似风险复核。",
+    "正式字体、菜单内容、UI 资源仍依获批 Product/UI 规格与实际许可；修改既有字体并不等于取得授权。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
