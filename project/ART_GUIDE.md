@@ -1,27 +1,38 @@
-# Art Guide
+# 百鬼夜市｜项目美术指南
 
-## Status
-No project Art Direction has been approved yet.
+更新：2026-10-02。唯一版本化方向文档：[ART-DIRECTION-FIRST-STREET-001 v0.1](../deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_DIRECTION.md)。当前Art与Tech专业评审通过（仅概念阶段），USER_REVIEW，新细则尚未获用户批准。本指南是索引与状态摘要，不复制完整制作规范。
 
-Art Director creates and maintains the visual baseline after Product direction is sufficiently clear. Only user-approved visual direction becomes a project-wide baseline for Art/UI/VFX.
+## 已确认方向
 
-## Core Visual Keywords
-TBD
+用户2026-10-02明确采纳第一街v0.3的布局与画风：近似平视的横向长街、精细像素感二维游戏插画、可爱角色、复古中式材料、冷夜蓝与暖灯焦点。六店在同一条可读地面线上无遮挡展开，宽通路、桌椅、少水面与祈愿纸船保留。主街视角决策见 `DEC-FIRST-STREET-VIEW-001`。这不撤销四方向旅客和菜单式独立单元的历史审批。
 
-## Character / Scene / Prop Language
-TBD
+用户同时要求新稿采用附件建筑类别：奶茶/理发木砖瓦房、糖画纸伞木车、炭烤布棚、花灯竹木架、开放投壶。其重新设计图和精确制作细则仍须具体Artifact审批，不直接复制附件。
 
-## Color / Material / Shape System
-TBD
+## 待审批的长期细则
 
-## UI Visual Direction
-TBD
+`ART_DIRECTION.md` v0.1提出八条持续规则：
 
-## VFX Visual Direction
-TBD
+1. 精细像素感画风与横向镜头一致；输出像素尺度在手机样张验证后确定。
+2. 冷夜底色、暖灯焦点；候选母色为夜蓝/瓦灰/木棕/石灰/灯橙/暗红/柳绿，比例候选60/30/10，详见版本文档。
+3. 共用材料模块，保留六店建筑轮廓与经营身份；翻新脚线/开口/挂点保持稳定。
+4. 可爱角色剪影、六店长身份独立；孟桃仅腰牌“孟”字，禁止克隆店员替代未定稿角色。
+5. 主体明、背景静；通行带和服务点留白，限制前景遮挡与装饰密度。
+6. UI和VFX采用同一色材与形态语言，状态资源同源；各自交互/触发规格由责任角色维护。
+7. 通用图源维护母版，专属件独立；每动态骨骼对象附件一页，正式图片产出前Art+Tech签认尺寸/图集/性能。图源复用、共图集、一次Draw Call分别核验。
+8. 新Brief引用基线版本并自检；镜头、画风、配色结构、角色身份/比例和材质时代的偏离走Change Proposal、跨角色Review与用户审批，不静默改写。
 
-## Consistency / Drift Guardrails
-TBD
+以上细则是本项目v0.1待审提案；仅用户批准的正式版本能作为下游生产视觉输入。当前主图是整体效果概念，未有分层源、骨骼、生产图集或Creator接入完成证据。
 
-## Approved Art Direction Artifacts
-None yet.
+## 来源与后续稳定性
+
+参考与生成记录见同版本 `REFERENCE_AUDIT.md`；权利未知的附件只提炼通用构造，正式源必须重新设计并作版权/IP/商标外观复核。所有字体核验使用、嵌入、分发和修改许可；改字不等于获授权。
+
+后续原画、UI与VFX视觉由Art按批准版本Review，生产前与Tech核对图集尺寸、单页骨骼、四方向和遮挡。单元示例与主体最终引用同一批准资产源/Prefab/配置/公共UI。此指南仅本游戏有效，不自动修改Studio或其他游戏。
+
+## Artifact状态索引
+
+| 版本/入口 | 状态 | 适用范围 |
+|---|---|---|
+| `project/art_reference/misc/BAIGUI_NIGHT_MARKET_STYLE_STUDY_v0.3.png` | 用户采纳布局/画风方向 | 第一街构图与画风，不作为生产切图 |
+| `deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/` | 专业评审通过（概念阶段），USER_REVIEW | 新建筑概念、八条原则与候选细则，未获用户批准 |
+| `deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/` | 历史角色/店铺候选，审批见任务记录 | 孟桃与奶茶独立概念，不由全街图代为定稿 |

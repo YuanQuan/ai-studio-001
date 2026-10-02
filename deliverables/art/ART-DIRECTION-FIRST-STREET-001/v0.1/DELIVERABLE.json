@@ -1,0 +1,38 @@
+{
+  "task_id": "ART-DIRECTION-FIRST-STREET-001",
+  "owner": "art",
+  "summary": "保留用户采纳的横向布局/画风，依据通用建筑类型重新设计六店v0.4效果图，并提出八条长期美术原则、母版与独有件边界、版本偏离治理；所有新细则待用户具体版本批准。",
+  "artifacts": [
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_DIRECTION.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/GENERATION_PROMPT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/references/user-building-reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/scenes/night-market-v0.4.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/TECH_REVIEW.json",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "保留横向平视、六店顺序和桥/殿布局，六店不互遮，水面祈愿纸船与桌椅保留", "result": "PASS", "evidence": "Art实际查看scenes/night-market-v0.4.png，六店顺序、两桥、左端殿、共同脚线、宽铺地、店间桌椅和六只折纸烛船保留；REFERENCE_AUDIT记录目视结果。"},
+    {"criterion": "六店建筑分别表现木砖瓦房、伞棚糖画车、布棚炭烤、竹木花灯架及开放投壶，保持区别与通用资源家族", "result": "PASS", "evidence": "主图01/04木砖瓦房、02红伞轮车、03红布棚烤台、05竹木灯架、06开放三壶+箭，顶部/门面无遮挡；木石灯具桌椅同材料家族，ASSET_MANIFEST区分共用母版与身份独有件。"},
+    {"criterion": "明确画风、配色、形体/材质、角色、光照/密度、UI/VFX、复用与持续评审原则及可变边界", "result": "PASS", "evidence": "ART_DIRECTION八条原则含候选色号与60/30/10面积例、允许变化与Change Proposal流程；ART_GUIDE区分用户采纳方向和待审数值/新建筑细则。"},
+    {"criterion": "来源与版权/字体初筛可追溯，完整提示词记录，生成效果不冒充可复用生产资产", "result": "PASS", "evidence": "REFERENCE_AUDIT留存两输入来源/权利状态、PNG尺寸格式和SHA256，GENERATION_PROMPT保存实际完整提示词；主图明确仅概念，生产母版/字体许可/相似复核/骨骼图集/Creator尚未完成。"},
+    {"criterion": "Art与Tech评审概念可制作性，项目指南标明已确认部分与待审批细则，正式生产门禁不提前放行", "result": "PASS", "evidence": "ART_REVIEW.json与独立TECH_REVIEW.json均APPROVED，仅限概念阶段可制作性；TECH_PREFLIGHT.json记录生产前签认与候选尺寸/图集边界。ART_GUIDE和方向首部已标明专业评审通过、USER_REVIEW，细则未获用户批准且正式生产门禁未放行。"}
+  ],
+  "assumptions": [
+    "Product v0.20仍待整版审批；本轮用户对画面探索和基线的明确授权不等于其余产品规则或新角色已批准。",
+    "六店名称/店长绑定沿现有产品定义，图形标识和设备不增加商品、价格、配方或商业规则。",
+    "主图示意像素感与冷暖方向，候选色号/比例不是像素统计承诺，手机纹理尺度和视口后续签认。"
+  ],
+  "risks": [
+    "未知权利参考只能研究；正式分层原画与图形标识须重新设计并复核许可、商标与可识别相似风险。",
+    "没有可编辑母版、骨骼、单页图集、Creator集成或设备性能证据，生成重复部件不证明同源资源复用。",
+    "孟桃腰牌与角色小细节、手机单屏点击/桥导航/前景遮挡尚需独立近景和技术验证；四方向旅客历史范围不被撤销。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

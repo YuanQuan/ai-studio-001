@@ -3,14 +3,15 @@
 Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）。孟桃概念 v0.3 已按用户反馈退回，v0.4 完成概念评审并进入用户审阅。
 
 ## 汇总
-- 正式任务线：18
-- 待用户审批：2（PRODUCT-001 当前版本；孟桃奶茶店原创概念 v0.4；v0.1/v0.2/v0.3 已退回）
+- 正式任务线：19
+- 待用户审批：3（PRODUCT-001；孟桃原创概念；横向主街美术基线v0.1）
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
 
 ## 当前任务线
 | 任务 | 阶段 | Owner | 当前 Artifact | 版本 | 专业评审 | 用户审批 | 阻塞 | 下一动作 |
 |---|---|---|---|---|---|---|---|---|
+| ART-DIRECTION-FIRST-STREET-001 横向主街美术基线与建筑修订 | USER_REVIEW | art | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_DIRECTION.md、ART_BRIEF.md、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、GENERATION_PROMPT.md、scenes/night-market-v0.4.png、DELIVERABLE.json、ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json；project/ART_GUIDE.md | v0.1（含效果图v0.4） | 五项验收PASS；Art、Tech Lead及Master概念评审APPROVED | 用户仅已采纳v0.3布局/画风；本版建筑和八条原则待具体版本批准 | 无概念交付阻塞；分层母版、骨骼单页图集、手机预览/性能及Creator集成未验证 | Master呈现效果图和八条美术原则；用户批准后作为项目基线，正式生产另行签认审批 |
 | PRODUCT-001 概要需求与模块分层 | USER_REVIEW | product | deliverables/product/PRODUCT-001/v0.8/PRODUCT_OUTLINE.md；BRAINSTORM_MAP.md；MINDMAP_AI_SNAPSHOT.md（同目录，交互图URL登记于交付包） | v0.8 | Master评审APPROVED；4项验收PASS | v0.8待用户确认；v0.7已退回 | 无 | Master呈现新版交互脑图、快照及影响说明供用户审阅 |
 | DEMO-001 核心场景全流程验证 Demo | DONE（产品规格阶段） | product | deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md；DELIVERABLE.json（同目录） | v0.1 | Master评审APPROVED；6项验收PASS | USER_APPROVED | 无 | Master创建并推进Tech Lead、Art、UI规格任务，逐阶段评审及用户审批 |
 | TECH-DEMO-001 Demo技术设计 | DONE | tech_lead | deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md；REVIEW.md和DELIVERABLE.json（同目录） | v0.2 | Tech Lead自评完成；Master独立评审APPROVED；5项验收PASS | USER_APPROVED | 无 | Master编排后续Client/QA开工包，继续各阶段审批 |
@@ -75,3 +76,11 @@ Producer维护当前流程事实；更新时间：2026-10-01（Asia/Shanghai）�
 
 2026-10-01：用户退回 UNIT-PILOT-ART-CONCEPT-001 v0.2，要求复古中式木构或砖房、可爱卡通孟桃与可辨认“孟”字、纸盒装牛奶。v0.2 REJECTED 决定已归档；v0.3 修订输入及Product概念范围评审已落盘，Art正在修订，Tech Lead与Master复评未齐，故保持REVISION，暂不计入待用户审批。正式分层源、骨骼单页图集和Creator接入仍锁定。
 2026-10-01：UNIT-PILOT-ART-CONCEPT-001 v0.3 的三张最终概念图、设计说明、来源与交付清单已落盘；五项验收PASS，Product范围、Tech Lead与Master评审均APPROVED，仅限概念。任务和审批记录均进入USER_REVIEW，等待用户明确决定。Producer核验全部Task状态，无READY或IN_PROGRESS空转任务；PRODUCT-001 v0.16独立保持USER_REVIEW。统一分层源、骨骼单页图集、目标设备性能与Creator接入仍须后续审批。
+
+## 横向主街美术基线本轮记录
+
+- 待用户审批：3（PRODUCT-001 v0.20；孟桃奶茶店原创概念 v0.4；ART-DIRECTION-FIRST-STREET-001 v0.1含效果图v0.4；原Art/Tech出图前预案各v0.1已获批）
+
+- 用户于2026-10-02明确采纳STYLE_STUDY v0.3的布局和画风；具体范围见tasks/ART-DIRECTION-FIRST-STREET-001/SCOPE_ACCEPTANCE.md。新建筑修订及长期美术原则由ART-DIRECTION-FIRST-STREET-001另立版本审批；本次未批准PRODUCT-001 v0.20或孟桃概念v0.4整版。
+
+2026-10-02：ART-DIRECTION-FIRST-STREET-001 v0.1的八条美术原则、v0.4横向效果图、来源/提示词档案、资产清单、Art/Tech/Master三Review及项目指南已实际落盘；五项验收PASS，三Review均APPROVED，仅限概念方向。任务与审批记录转USER_REVIEW；Producer扫描全部Task，更新后无READY/IN_PROGRESS空转任务。PRODUCT-001 v0.20和孟桃概念v0.4仍独立待审；用户已采纳v0.3布局/画风的局部范围不会提前放行新细则、分层母版、骨骼单页图集或Creator正式生产。

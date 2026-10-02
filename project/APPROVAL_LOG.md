@@ -50,7 +50,11 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.4 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md；tasks/UNIT-PILOT-ART-CONCEPT-001/TASK.json | REVISION（制作与复评中） | 用户修订输入已落盘；三张图及Product、Tech Lead、Master评审尚待齐备 | 未提交用户审批；正式资产、骨骼图集与Creator接入继续锁定 |
 | 2026-10-01 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃、奶茶店与同屏关系概念 | v0.4 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、DELIVERABLE.json、PRODUCT_SCOPE_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录）；tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL.json | USER_REVIEW（待决定） | 三张图、来源记录和说明已落盘；五项验收PASS，Product、Tech Lead与Master评审APPROVED，仅限概念 | 奶茶杯加吸管标识与唯一“孟”字腰牌待用户确认；正式分层源、骨骼图集、性能与Creator接入仍锁定 |
 
+| 2026-10-02 | ART-DIRECTION-FIRST-STREET-001 | 横向主街布局与画风确认范围 | STYLE_STUDY v0.3；基线v0.1待产出 | project/art_reference/misc/BAIGUI_NIGHT_MARKET_STYLE_STUDY_v0.3.png；tasks/ART-DIRECTION-FIRST-STREET-001/SCOPE_ACCEPTANCE.md、ARTIFACT_APPROVAL.json | USER_ACCEPTED_PARTIAL_SCOPE | 用户明确“布局可以，画风也可以采纳”，要求按新建筑参考出稿并制定长期美术原则 | 仅采纳布局/画风；建筑修订与原则细则待审；PRODUCT-001 v0.20和孟桃v0.4独立审批不变 |
+| 2026-10-02 | ART-DIRECTION-FIRST-STREET-001 | 横向主街美术基线、六店建筑修订与效果图 | v0.1（含效果图v0.4） | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.1/ART_DIRECTION.md、scenes/night-market-v0.4.png、DELIVERABLE.json、ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json；project/ART_GUIDE.md；tasks/ART-DIRECTION-FIRST-STREET-001/ARTIFACT_APPROVAL.json | USER_REVIEW（待决定） | 五项验收PASS，Art、Tech Lead与Master概念评审APPROVED；八条原则和新建筑版本供用户确认 | 仅v0.3布局/画风已采纳；本版未USER_APPROVED，正式母版、骨骼图集与Creator集成仍须后续门禁 |
+
 ## 当前门禁
+- ART-DIRECTION-FIRST-STREET-001 v0.1（含效果图v0.4）已完成五项验收及Art/Tech/Master概念评审，处于USER_REVIEW。用户已采纳STYLE_STUDY v0.3布局/画风；建筑修订和八条原则细则仍待当前版本明确批准，不推定PRODUCT-001 v0.20或孟桃v0.4整版批准。
 - PRODUCT-001历史概要与审批记录保留；v0.7已按用户新方向退回，当前v0.8专业评审已通过，处于USER_REVIEW，等待用户确认。
 - DEMO-001 v0.1产品规格已获用户明确批准，产品阶段DONE；正式审批状态见 `tasks/DEMO-001/ARTIFACT_APPROVAL.json`。Tech Lead、Art、UI规格阶段可由Master创建并解锁。
 - TECH-DEMO-001 v0.1要求修订的历史决定保留；v0.2已USER_APPROVED，可作后续正式技术输入。历史决定见 `tasks/TECH-DEMO-001/ARTIFACT_APPROVAL_v0.1.json`。
