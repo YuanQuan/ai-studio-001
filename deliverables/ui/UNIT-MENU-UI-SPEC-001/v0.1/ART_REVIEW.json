@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已审UI_SPEC、COLOR_SYSTEM、COMPONENT_SPEC、SCREEN_STATES及三份可编辑SVG，并实际查看Master渲染的menu-and-lab、mengtao-dialogue、shared-controls预览；复看修正后的menu-and-lab，板凳、树木、花草、灯笼四项为独立按钮，原树/花合并问题已解决。该评审仅批准UI规格与示意视觉一致性。"
+    },
+    {
+      "severity": "INFO",
+      "message": "冷夜蓝、暖纸色、木棕边框及琥珀选中态与ART_GUIDE的非像素可爱中式夜市一致。菜单七项及3A/3B层级清楚，奶茶杯吸管身份标识可辨；背景、店身、人物形块明确是布局示意，未冒充已批准孟桃/店铺资产。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按钮、卡片、开关和对话共用母版及颜色状态，未另画七套资源。Lab控件与可复用身份卡/对话壳边界明确；演示对白注明非正式剧情，不改变产品语义。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵左右选择只表达状态意图，文字、身份卡、方向标签与对话位于非镜像UI层。独立开关与坐姿缺板凳、资源未就绪、忙碌/返回/重置的可见反馈有规格依据；触控遮挡和实际状态联动仍由Tech/Client/QA验证。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "预览采用本机字体渲染，不能证明最终字体文件已获许可或手机可读性通过。Noto Sans CJK SC为候选；生产前须记录实际版本/文件哈希、许可与版权声明及嵌入、分发、修改条件。本机回退字体与生成图中文字不得冒充获批生产字库。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280、字号与触控目标均属布局候选；手机小屏、横向街景裁切、不同平台字体回退、按钮状态和场景/对话命中需后续真机证据。正式UI切图、九宫格、图标和字体每次产出仍需Art/Tech尺寸合批与权利联合签认。"
+    }
+  ],
+  "next_action": "交Master专业整合与用户审批本v0.1；批准后按获批Art/Tech输入制作正式可复用组件资源。此Review不授权直接将SVG示意形块裁切导入，不替代字体许可、Creator运行或QA验收。"
+}

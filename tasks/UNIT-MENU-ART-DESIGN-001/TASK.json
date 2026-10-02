@@ -1,0 +1,41 @@
+{
+  "id": "UNIT-MENU-ART-DESIGN-001",
+  "title": "七项菜单场景、幽灵与可切换元素概念及资源预检",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "在已选未加宽非像素夜市风格下，为新空背景、幽灵顾客、板凳和树花灯建立可审阅的原创视觉方案、分层与单页骨骼出图预检；复用已批准孟桃奶茶店概念。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md、ACCEPTANCE.md（USER_APPROVED）",
+    "project/ART_GUIDE.md 与 DEC-UNIT-DIRECTION-003",
+    "UNIT-PILOT-ART-CONCEPT-001 v0.5（USER_APPROVED，仅奶茶店/孟桃）",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/ART_IMPACT_REVIEW.json",
+    "UNIT-PILOT-ART-SOURCE-PREFLIGHT-001 v0.1（USER_REVIEW，仅候选）"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/LAYER_OCCLUSION_PLAN.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ATLAS_PREFLIGHT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/scenes/empty-scene-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/characters/ghost-customer-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/props/toggle-elements-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "三类原创概念图分别表达空背景、单方向幽灵与板凳、可切换树花灯；概念图不是正式骨骼/atlas或可直接导入Creator的成品",
+    "空背景保留天空远景、地面、河岸水面、桥与栏杆，奶茶店、角色、板凳、树花灯及各自特效为独立层/对象，不烘成全景",
+    "幽灵只设计一个原始朝向，水平翻转覆盖左右移动/跑动/高兴/沮丧/坐姿；避免固定左右含义的图文装饰，坐姿与独立板凳两向接触可检",
+    "列资产ID、母版/附件、支点、极限包围盒、单对象单页草排、版权来源及字体许可；每次正式出图前 Art/Tech 共同签认尺寸合批与授权",
+    "保留奶茶杯吸管牌匾、木砖瓦店、孟桃唯一孟腰牌及已批准比例；画面原创，不复制附件或旧Demo资源；未有合法生产许可的项目标注阻塞"
+  ],
+  "dependencies": ["UNIT-MENU-PRODUCT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": ["本任务仅审概念与出图前资源方案；具体可编辑分层、骨骼、正式图集和生产素材须在本版用户批准后另立任务。", "旧四方向要求由DEC-UNIT-DIRECTION-003覆盖；旧专业v0.1不自动获批。"]
+}

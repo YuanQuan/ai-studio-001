@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "七顶层入口与3A/3B子项、返回/重进/重置和顾客左右×五状态控制均与已批准Product v0.1对应。"
+    },
+    {
+      "severity": "INFO",
+      "message": "主体可共用身份卡与对话壳；Lab导航、诊断、状态和孟桃示例文案保持独立。对话打开时场景镜头输入由浮层拦截。"
+    },
+    {
+      "severity": "INFO",
+      "message": "三张SVG为720×1280可编辑UI布局样张，未嵌入正式图像或字体文件；字体许可、Art视觉及实机字形仍需后续门禁。"
+    }
+  ],
+  "next_action": "由Art Agent执行视觉一致性Review，再由Master复核并呈用户审阅；UI获批后Client/QA方可据此作为正式界面实现输入。"
+}

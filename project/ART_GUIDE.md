@@ -17,6 +17,8 @@
 
 ## 当前单元与生产边界
 
+新七项菜单Product v0.1已获批准，新增空底板、单向幽灵/板凳、树花灯当前概念入口为[UNIT-MENU-ART-DESIGN v0.1](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_BRIEF.md)，正在本阶段专业Review/用户待审。与已批准孟桃/奶茶店同画风，不把本候选自动当生产源；原四份专业v0.1需按新菜单范围修订或补充，不能因Product批准代批准。
+
 孟桃奶茶店v0.5已新生成独立全身、无人店身和工作关系图，并列出脚点/挂点/前柜遮挡/替换手型/单页PARTS_PLAN。现店图包含半透明暖光晕，不能作为干净生产Sprite；正式源需统一重绘分层、补齐遮挡、分离光效、校字/字体许可与图集签认。尚无骨骼、atlas、Prefab或Creator新单元完成证据。
 
 单元与主体最终共用批准源/Prefab/配置/UI，Lab控制不进入主体游戏。关系图不作为一个合并生产资产。
@@ -32,5 +34,6 @@
 | UNIT-PILOT v0.4 | 旧人物/店概念，当前入口被v0.5替换，历史保留 |
 | UNIT-PILOT v0.5 | 新三图与拆件方案已获 USER_APPROVED；正式分层、骨骼、atlas仍未制作 |
 | UNIT-PILOT-ART-SOURCE-PREFLIGHT v0.1 | 出图前分件包围盒、单页候选与来源审查，处于专业 Review/用户审阅流程；数值未锁 |
+| UNIT-MENU-ART-DESIGN v0.1 | 新空底板、右向幽灵/独立板凳、树花灯三概念与分层/单页预检；专业Review/用户待审，尚非生产源 |
 
 来源见对应REFERENCE_AUDIT与project/art_reference。权利未知图片只作研究，不能临摹或直接生产；字体使用、嵌入、分发、修改许可均需核验，改字不等于获得授权。本指南只适用本游戏。

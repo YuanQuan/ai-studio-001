@@ -1,0 +1,54 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "owner": "ui",
+  "summary": "提交七入口、3A/3B、共用身份卡、Lab控制和孟桃演示对话的中文UI规格与三张可编辑SVG；基于Creator现有720×1280画布做竖屏布局候选，正式资源和运行实现尚未完成。",
+  "artifacts": [
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/COMPONENT_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/screens/menu-and-lab.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/screens/mengtao-dialogue.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/components/shared-controls.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/REVIEW.json",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "七个顶层入口与第3项孟桃/幽灵子项可读；返回、重进、重置、繁忙/禁用与组合开关状态明确，Lab诊断控制与主体UI分离",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md第1、3节、SCREEN_STATES.md第1、2节及screens/menu-and-lab.svg、components/shared-controls.svg。此PASS仅为规格覆盖。"
+    },
+    {
+      "criterion": "孟桃对话只含明确标记的演示文字、打开/继续/关闭/重置和场景拖拽冲突处置，不新增剧情分支与经营UI",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md第4节、SCREEN_STATES.md第3、4节及screens/mengtao-dialogue.svg。"
+    },
+    {
+      "criterion": "说明身份卡、按钮、图标、状态、字体与对话框的同源复用索引；翻转顾客时文字与UI不镜像",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md第1、5节，COMPONENT_SPEC.md及components/shared-controls.svg。"
+    },
+    {
+      "criterion": "提供基于现有720×1280画布的可编辑关键界面与组件状态图，标注镜头触控区域、中文可读性及目标设备后续验证",
+      "result": "PASS",
+      "evidence": "三张SVG均为可解析XML；UI_SPEC.md第2、3、6节及SCREEN_STATES.md第4节。尚未完成真机或最终像素视觉验收。"
+    },
+    {
+      "criterion": "遵循ART_GUIDE及图片/系统字体/美术字体许可，未经授权的字体或参考图不得标为正式资产",
+      "result": "PASS",
+      "evidence": "COLOR_SYSTEM.md、UI_SPEC.md第5节及COMPONENT_SPEC.md资源说明；SVG明确为示意且未嵌入字体/正式参考图。"
+    }
+  ],
+  "assumptions": [
+    "720×1280是当前Creator设计画布，不代表主体游戏最终锁定竖屏；横向街景取景由Tech/Client与Art复核。",
+    "旧UNIT-PILOT-UI-SPEC-001 v0.1仍在USER_REVIEW，仅作为组件语义候选核对，不作为已批准正式输入。",
+    "本版示意背景与人物形块由SVG基本几何绘制，仅作布局审查，不进入生产美术。"
+  ],
+  "risks": [
+    "尚无经用户批准的生产字体文件、美术字、对话头像与正式UI切图；Art视觉Review和字体真实许可/嵌入/分发核验未完成。",
+    "横向长景在720×1280竖屏下可能影响店铺牌匾与角色可读性，需目标设备检查与必要的跨角色适配修订。",
+    "本地Chrome无头渲染因权限限制未生成预览PNG；已做SVG XML结构校验，视觉效果仍需Art及目标设备复核。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

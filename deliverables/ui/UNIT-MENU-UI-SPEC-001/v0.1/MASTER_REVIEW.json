@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已阅读UI规格、状态与复用组件说明，并实际渲染查看三张SVG；七入口、3A/3B、孟桃示例对话、共享身份卡和Lab专用控件的边界与已批准Product v0.1一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "组合场景样张原先将树木/花草合并为一个按钮；UI Owner已拆为树木、花草两个独立按钮，连同板凳和灯笼均可分别选择，Art已复看并正式APPROVED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "720×1280布局、字形、触控面积和长幅场景裁切仅为样张候选；正式字体文件许可及各平台真机可读性尚未通过，不能从SVG和本机渲染推定生产资源可用。"
+    }
+  ],
+  "next_action": "提交UI规格v0.1供用户审阅；获批后按Art/Tech双签和许可门禁制作同源正式组件，由Client/QA实测交互与屏幕适配。"
+}

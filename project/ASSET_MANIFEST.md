@@ -30,3 +30,13 @@
 | CONCEPT_MT_REL_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png | PNG 1536×1024 RGB | USER_APPROVED关系概念，不能合图生产 |
 
 正式独立对象、候选ID/挂点与前后层见[本轮生产前Manifest](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md)与PARTS_BOUNDING_PLAN；MT_CHAR_01/MT_SHOP_STATIC_01/MT_SHOP_MOTION_01尚无分层/骨骼/atlas文件。旧pilotv0.4当前入口被替换，历史保留；老Creator九示例尚未替换代码或资源。
+
+## 新七菜单美术候选 v0.1
+
+| ID | 图稿 | 实际规格 | 状态 |
+|---|---|---|---|
+| UC_BASE_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/scenes/empty-scene-concept.png | RGB PNG 2172×724 | 空底板概念待审，固定蓝远景与可切换绿柳区分 |
+| UC_GHOST_BENCH_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/characters/ghost-customer-concept.png | RGBA PNG 1536×1024 | 原右向5姿态/独立空板凳概念待审；左向仅同源翻转 |
+| UC_ELEMENTS_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/props/toggle-elements-concept.png | RGBA PNG 1536×1024 | 柳树/花草簇/灯3类概念待审，非合并运行资产 |
+
+拟独立UG_GHOST_01/BENCH_01/UE_TREE_01/UE_GRASS_01/UE_LANTERN_01与基础层详见[七菜单Manifest](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ASSET_MANIFEST.md)和LAYER_OCCLUSION_PLAN/ATLAS_PREFLIGHT。透明板有环境软晕，母版/骨骼/真实单页/UUID尚未交付；未知权利只研究、正式许可待核验，不直接裁PNG入Creator。

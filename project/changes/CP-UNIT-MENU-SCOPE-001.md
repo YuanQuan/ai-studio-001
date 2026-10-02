@@ -1,6 +1,6 @@
 # CP-UNIT-MENU-SCOPE-001｜以七项新菜单样例替代旧九菜单任务
 
-状态：`PROPOSED`；2026-10-02。Master 提案。用户明确提出七项新菜单内容，逐项原文语义见 [范围输入](../unit_tests/UNIT_MENU_SCOPE_INPUT_v0.1.md)。旧 `UNIT-SAMPLES-001` 已取消并保留历史文件；新实现不能复用旧图片、Prefab、UI 图稿或程序形体充当正式产物。
+状态：`PRODUCT_SCOPE_APPROVED`（2026-10-02 用户批准 `UNIT-MENU-PRODUCT-001 v0.1`；跨角色工程/资产契约仍待专项 Artifact 审批）。Master 提案。用户明确提出七项新菜单内容，逐项原文语义见 [范围输入](../unit_tests/UNIT_MENU_SCOPE_INPUT_v0.1.md)。旧 `UNIT-SAMPLES-001` 已取消并保留历史文件；新实现不能复用旧图片、Prefab、UI 图稿或程序形体充当正式产物。
 
 ## 拟议变更
 
@@ -21,4 +21,4 @@
 | Client | Creator 场景、切换/装配与状态逻辑的实现范围和旧工程迁移 | 本提案影响评审；获批开工包后实现 |
 | QA | 七单元独立、左右翻转及视觉正确性、坐姿、镜头操作与组合遮挡的取证 | 本提案影响评审；获批测试计划后正式验收 |
 
-当前只授权方案与影响评审。Product、各专业、Master 评审通过后呈用户审阅；未获批准前不修改 `project/DECISIONS.md` 为生效决定，不解锁新顾客/场景元素/对话正式原画或 Creator 功能实现。
+Product、六专业影响评审和 Master 评审已通过，用户随后批准七项菜单产品 v0.1；方向决定 `DEC-UNIT-DIRECTION-003` 已依用户最新明确指令生效。Master 已创建 Tech、Art、UI、VFX 四个独立专业任务，见 [下一阶段依赖图](../unit_tests/UNIT_MENU_NEXT_STAGE_v0.1.md)。本次产品批准允许这些专业规格制作与审阅；具体工程形态、真实美术分层/骨骼/图集、UI/VFX 正式资源、Creator 实现和 QA 仍需各阶段专业 Review 与用户审批。

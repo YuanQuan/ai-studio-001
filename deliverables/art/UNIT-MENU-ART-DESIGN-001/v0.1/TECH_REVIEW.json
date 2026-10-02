@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-ART-DESIGN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已实际打开三张概念PNG并阅读ART_BRIEF、ASSET_MANIFEST、LAYER_OCCLUSION_PLAN、ATLAS_PREFLIGHT、REFERENCE_AUDIT、DESIGN_RATIONALE、GENERATION_PROMPT及Art自评/交付登记。空底板、原右向幽灵五态与独立板凳、分离树花灯均满足本任务概念与预检范围；此次通过不放行生产分层、骨骼、atlas或Creator导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "UG_GHOST_01、BENCH_01、UE_TREE_01、UE_GRASS_01、UE_LANTERN_01与Tech方案一致；背景及tree/flower-grass/lantern等可编辑母版候选目录和Creator输出候选目录已对齐。每动态骨骼对象一页、幽灵原右向零新增左向图，1024²/512²仅草排起点；没有实际附件bbox、打包页数或合批/内存实测。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "空底板首稿明显树冠已修，但终稿低蓝远景起伏仍可能被识别为林影。Art已登记固定UB_DISTANCE与独立绿柳UE_TREE_01的色/形/层区分；后续入口1/4关闭树实看若仍同类歧义，须退回修图，不可用文案代替画面结果。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "两张1536×1024 RGBA展示板最高alpha254且带环境软晕；幽灵五态及坐姿/空凳存在概念重绘尺度差异。禁止裁概念PNG充当Spine附件或生产atlas；正式源需去晕、补被遮面、统一尺度/座点，并在左右两向核对手势、世界光、前后遮挡和碰撞。"
+    },
+    {
+      "severity": "INFO",
+      "message": "正式出图前Art/Tech须再次按真实分层源逐附件签权利与字体/作者工具许可、Spine 3.8兼容导出、极限姿态union bbox、单页实际尺寸、alpha边缘、材质断批和目标真机；当前没有可重开母版、合法席位凭证、Creator运行或10格验收。"
+    }
+  ],
+  "next_action": "Master复核后交Producer进入本Art概念版USER_REVIEW；若用户批准，另立生产源/骨骼/实际atlas任务，每次正式出图前重新由Art与Tech联合签认，Client不得将三张概念展示板直接集成。"
+}

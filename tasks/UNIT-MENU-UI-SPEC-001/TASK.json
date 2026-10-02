@@ -1,0 +1,37 @@
+{
+  "id": "UNIT-MENU-UI-SPEC-001",
+  "title": "七项菜单、复用组件及孟桃对话界面规格",
+  "type": "ui",
+  "owner": "ui",
+  "parent": null,
+  "objective": "设计七入口菜单、单元控制、共享身份UI和孟桃演示对话的结构、状态与竖屏适配，使独立样例和组合/未来主体引用同一正式组件。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md、FLOW.md、ACCEPTANCE.md（USER_APPROVED）",
+    "project/ART_GUIDE.md；UNIT-PILOT-ART-CONCEPT-001 v0.5（USER_APPROVED）",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/UI_IMPACT_REVIEW.json",
+    "UNIT-PILOT-UI-SPEC-001 v0.1（USER_REVIEW，仅候选）"
+  ],
+  "deliverables": [
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/COMPONENT_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/screens/menu-and-lab.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/screens/mengtao-dialogue.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/components/shared-controls.svg",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "七个顶层入口与第3项孟桃/幽灵子项可读；返回、重进、重置、繁忙/禁用与组合开关状态明确，Lab诊断控制与主体UI分离",
+    "孟桃对话只含明确标记的演示文字、打开/继续/关闭/重置和场景拖拽冲突处置，不新增剧情分支与经营UI",
+    "说明身份卡、按钮、图标、状态、字体与对话框的同源复用索引；翻转顾客时文字与UI不镜像",
+    "提供基于现有720×1280画布的可编辑关键界面与组件状态图，标注镜头触控区域、中文可读性及目标设备后续验证",
+    "遵循ART_GUIDE及图片/系统字体/美术字体许可，未经授权的字体或参考图不得标为正式资产"
+  ],
+  "dependencies": ["UNIT-MENU-PRODUCT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": ["视觉一致性需 Art Review，正式用户审批后才能作为 Client 视觉实现输入。", "旧孟桃UI v0.1保持历史待审，不因本任务而自动获批。"]
+}

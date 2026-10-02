@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1280" viewBox="0 0 1480 1280" role="img" aria-label="七项菜单和组合场景 Lab 竖屏界面示意，两页各 720×1280">
+  <title>七项菜单与组合场景 Lab｜720×1280 双页 UI 样张</title>
+  <desc>可编辑布局与组件示意，场景形块并非正式游戏资产。左页是七顶层菜单；右页是组合场景的导航、镜头触控区和底部开关。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2343"/><stop offset="0.66" stop-color="#244875"/><stop offset="1" stop-color="#365A78"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF0D4"/><stop offset="1" stop-color="#E9D3AC"/></linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#244A78"/><stop offset="1" stop-color="#112A4E"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#06152E" flood-opacity=".52"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="15"/></filter>
+    <pattern id="grain" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="3" cy="5" r="1" fill="#FFFFFF" opacity=".08"/><circle cx="22" cy="21" r="1" fill="#FFFFFF" opacity=".05"/></pattern>
+    <g id="lamp"><path d="M0 -24 L11 -15 L11 17 L0 25 L-11 17 L-11 -15Z" fill="#D8813C" stroke="#F9D494" stroke-width="3"/><ellipse cx="0" cy="0" rx="7" ry="15" fill="#FFDC8F"/><path d="M0 -33V-24M0 25V34" stroke="#B37A45" stroke-width="3"/></g>
+    <g id="cup"><path d="M-13 -8H13L9 15H-9Z" fill="#F7E5C2" stroke="#6D432F" stroke-width="3"/><path d="M-17 -9H17M0 -11L8 -23" fill="none" stroke="#6D432F" stroke-width="3"/><circle cx="-4" cy="8" r="2" fill="#6D432F"/><circle cx="3" cy="7" r="2" fill="#6D432F"/></g>
+    <style>text{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif}.cream{fill:#F8EDDA}.ink{fill:#342B2C}.muted{fill:#B9CBE0}.small{font-size:20px}.tiny{font-size:17px}.strong{font-weight:700}.cardtitle{font-size:28px;font-weight:700;fill:#342B2C}.cardsub{font-size:17px;fill:#645650}</style>
+  </defs>
+  <rect width="1480" height="1280" fill="#07172E"/>
+  <rect x="0" y="0" width="720" height="1280" fill="url(#sky)"/>
+  <rect x="760" y="0" width="720" height="1280" fill="url(#sky)"/>
+  <rect x="0" y="0" width="720" height="1280" fill="url(#grain)"/>
+  <rect x="760" y="0" width="720" height="1280" fill="url(#grain)"/>
+  <path d="M0 198 Q160 92 300 175 T720 155V0H0Z" fill="#0C2447" opacity=".48"/>
+  <circle cx="585" cy="96" r="45" fill="#FFE2AC" opacity=".17" filter="url(#glow)"/><circle cx="585" cy="96" r="26" fill="#F8DCA5"/>
+  <g transform="translate(54 94)"><use href="#lamp"/></g><g transform="translate(663 94)"><use href="#lamp"/></g>
+  <text x="360" y="93" text-anchor="middle" class="cream strong" font-size="40">百鬼夜市</text>
+  <text x="360" y="128" text-anchor="middle" class="muted" font-size="20">可独立打磨的单元样例</text>
+  <path d="M110 150H610" stroke="#D69C5A" stroke-width="2" opacity=".75"/>
+  <text x="42" y="195" class="cream strong" font-size="23">选择一个验证入口</text>
+  <text x="675" y="194" text-anchor="end" class="muted" font-size="18">7 项</text>
+  <!-- top menu rows -->
+  <g filter="url(#shadow)">
+    <rect x="28" y="218" width="322" height="138" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+    <rect x="370" y="218" width="322" height="138" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+    <rect x="28" y="372" width="322" height="150" rx="17" fill="url(#card)" stroke="#F6AD55" stroke-width="5"/>
+    <rect x="370" y="372" width="322" height="150" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+    <rect x="28" y="538" width="322" height="138" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+    <rect x="370" y="538" width="322" height="138" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+    <rect x="28" y="692" width="664" height="142" rx="17" fill="url(#card)" stroke="#8F603F" stroke-width="4"/>
+  </g>
+  <g fill="#6D432F" font-size="22" font-weight="700">
+    <text x="54" y="255">01</text><text x="396" y="255">02</text><text x="54" y="409">03</text><text x="396" y="409">04</text><text x="54" y="575">05</text><text x="396" y="575">06</text><text x="54" y="731">07</text>
+  </g>
+  <g class="cardtitle">
+    <text x="54" y="298">空场景与镜头</text><text x="396" y="298">店铺效果</text>
+    <text x="54" y="450">角色效果</text><text x="396" y="450">场景其他元素</text>
+    <text x="54" y="618">UI 界面</text><text x="396" y="618">孟桃对话</text>
+    <text x="54" y="776">组合场景</text>
+  </g>
+  <g class="cardsub">
+    <text x="54" y="331">拖动街景 · 缩放镜头</text><text x="396" y="331">奶茶店动效 · 光影</text>
+    <text x="54" y="484">3A 孟桃  ·  3B 幽灵</text><text x="396" y="484">树木 · 花草 · 灯笼</text>
+    <text x="54" y="652">共享卡 · 控件状态</text><text x="396" y="652">示例文字 · 非正式剧情</text>
+    <text x="54" y="811">逐项添加对象，观察遮挡与同源表现</text>
+  </g>
+  <g fill="#8A5D3D"><path d="M316 285l10 10-10 10"/><path d="M658 285l10 10-10 10"/><path d="M316 447l10 10-10 10"/><path d="M658 447l10 10-10 10"/><path d="M316 607l10 10-10 10"/><path d="M658 607l10 10-10 10"/><path d="M658 760l10 10-10 10"/></g>
+  <rect x="28" y="871" width="664" height="162" rx="18" fill="#153154" stroke="#577392" stroke-width="2"/>
+  <text x="50" y="911" class="cream strong" font-size="23">本轮范围</text>
+  <text x="50" y="949" class="muted small">1 家奶茶店 · 1 位店长孟桃 · 1 名幽灵顾客</text>
+  <text x="50" y="984" class="muted small">街景与对象分层，可随时从单元回到菜单</text>
+  <text x="360" y="1114" text-anchor="middle" class="muted tiny">所有按钮与诊断仅属单元 Lab，不进入主体游戏</text>
+  <text x="360" y="1176" text-anchor="middle" class="muted tiny">UI 样张 v0.1 · 720 × 1280 · 非生产贴图</text>
+  <!-- second artboard: combined scene lab -->
+  <g transform="translate(760 0)">
+    <rect x="0" y="0" width="720" height="132" fill="#102A4B" opacity=".96"/>
+    <rect x="22" y="50" width="92" height="54" rx="12" fill="#F7E5C2" stroke="#6D432F" stroke-width="3"/>
+    <text x="68" y="85" text-anchor="middle" class="ink strong" font-size="21">返回</text>
+    <text x="358" y="85" text-anchor="middle" class="cream strong" font-size="30">07 组合场景</text>
+    <rect x="593" y="50" width="104" height="54" rx="12" fill="#F7E5C2" stroke="#6D432F" stroke-width="3"/>
+    <text x="645" y="85" text-anchor="middle" class="ink strong" font-size="21">重置</text>
+    <!-- scene schematic: fixed background -->
+    <rect x="0" y="132" width="720" height="713" fill="url(#sky)"/>
+    <circle cx="561" cy="208" r="31" fill="#F9DEAB"/>
+    <path d="M0 438 Q120 324 250 405 T480 378 T720 397V587H0Z" fill="#19385D"/>
+    <path d="M0 523 Q140 465 305 520 T720 507V649H0Z" fill="#25466A"/>
+    <rect x="0" y="648" width="720" height="92" fill="#8D8A84"/>
+    <path d="M0 665H720M0 707H720" stroke="#B8B1A4" stroke-width="5"/>
+    <rect x="0" y="740" width="720" height="105" fill="url(#river)"/>
+    <path d="M18 772q40 13 80 0m72 28q45 14 86 0m135-13q40 13 81 0m100 24q52 12 91-2" fill="none" stroke="#5A9BC1" stroke-width="4" opacity=".65"/>
+    <path d="M257 655 Q352 523 467 655" fill="none" stroke="#B6AEA3" stroke-width="21"/>
+    <path d="M253 666H471" stroke="#544C52" stroke-width="8"/>
+    <!-- clearly labeled replaceable schematic objects -->
+    <rect x="69" y="477" width="211" height="175" rx="8" fill="#79553B" stroke="#EAC995" stroke-width="5"/>
+    <path d="M53 481l123-82 121 82Z" fill="#243650" stroke="#D1BA9A" stroke-width="5"/>
+    <rect x="93" y="512" width="163" height="50" fill="#F7E5C2" stroke="#6D432F" stroke-width="4"/>
+    <text x="175" y="546" text-anchor="middle" class="ink strong" font-size="24">奶茶店</text>
+    <circle cx="316" cy="572" r="23" fill="#C29B75"/><path d="M289 643q3-55 27-55t27 55" fill="#729A76" stroke="#F0D5A7" stroke-width="3"/>
+    <circle cx="542" cy="584" r="22" fill="#F7F2E6"/><path d="M517 640q-8-58 25-58t25 58Z" fill="#F7F2E6"/>
+    <circle cx="534" cy="581" r="2.5" fill="#342B2C"/><circle cx="551" cy="581" r="2.5" fill="#342B2C"/>
+    <rect x="579" y="623" width="98" height="12" rx="4" fill="#81583D"/>
+    <rect x="591" y="634" width="8" height="25" fill="#81583D"/><rect x="658" y="634" width="8" height="25" fill="#81583D"/>
+    <use href="#lamp" x="396" y="521"/>
+    <rect x="24" y="148" width="245" height="70" rx="14" fill="#F7E5C2" stroke="#6D432F" stroke-width="3"/>
+    <g transform="translate(61 184)"><use href="#cup"/></g>
+    <text x="90" y="180" class="ink strong" font-size="21">奶茶店</text><text x="90" y="205" class="ink" font-size="17">店长 孟桃</text>
+    <rect x="436" y="150" width="254" height="42" rx="10" fill="#102A4B" stroke="#94C3D7"/>
+    <text x="563" y="178" text-anchor="middle" class="cream" font-size="18">场景触控区：拖动 / 缩放</text>
+    <rect x="0" y="845" width="720" height="435" fill="#102A4B"/>
+    <path d="M0 845H720" stroke="#D49A59" stroke-width="4"/>
+    <text x="28" y="889" class="cream strong" font-size="24">动态添加 / 移除</text>
+    <text x="688" y="886" text-anchor="end" class="muted" font-size="17">演示控件 · Lab 专有</text>
+    <g font-size="19" font-weight="700" text-anchor="middle">
+      <rect x="25" y="913" width="206" height="70" rx="13" fill="#F7E5C2" stroke="#F6AD55" stroke-width="4"/><text x="128" y="956" class="ink">奶茶店 ✓</text>
+      <rect x="257" y="913" width="206" height="70" rx="13" fill="#F7E5C2" stroke="#F6AD55" stroke-width="4"/><text x="360" y="956" class="ink">孟桃 ✓</text>
+      <rect x="489" y="913" width="206" height="70" rx="13" fill="#F7E5C2" stroke="#F6AD55" stroke-width="4"/><text x="592" y="956" class="ink">幽灵 ✓</text>
+      <rect x="25" y="997" width="155" height="70" rx="13" fill="#F7E5C2" stroke="#8F603F" stroke-width="3"/><text x="102" y="1040" class="ink">板凳</text>
+      <rect x="196" y="997" width="155" height="70" rx="13" fill="#F7E5C2" stroke="#8F603F" stroke-width="3"/><text x="273" y="1040" class="ink">树木</text>
+      <rect x="367" y="997" width="155" height="70" rx="13" fill="#F7E5C2" stroke="#8F603F" stroke-width="3"/><text x="444" y="1040" class="ink">花草</text>
+      <rect x="538" y="997" width="155" height="70" rx="13" fill="#F7E5C2" stroke="#8F603F" stroke-width="3"/><text x="615" y="1040" class="ink">灯笼</text>
+    </g>
+    <rect x="25" y="1084" width="670" height="76" rx="12" fill="#193B61" stroke="#6D8DA8" stroke-width="2"/>
+    <text x="48" y="1115" class="cream strong" font-size="19">演示 · 空底板 + 同源对象</text>
+    <text x="48" y="1144" class="muted" font-size="17">点选对象后查看脚点、前后遮挡；重置回空场景</text>
+    <text x="360" y="1220" text-anchor="middle" class="muted tiny">示意形块不作为正式店铺 / 角色 / 特效资产</text>
+  </g>
+</svg>

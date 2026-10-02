@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-VFX-SPEC-001",
+  "owner": "vfx",
+  "summary": "定义七菜单样例的奶茶店亮部与邻近阴影联动、轻量热气、顾客情绪边界、树花灯骨骼与暖光、组合场景清理、资源和性能降级；本版仅为中文规格，未制作或集成正式特效资产。",
+  "artifacts": [
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/VFX_SPEC.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/ASSET_REQUIREMENTS.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/PERFORMANCE_AND_CLEANUP.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/REVIEW.json",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐项定义奶茶店亮部和邻近暗部/投影的联动触发、时序、层级、持续与复位，不能只开关发光点",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md第1至2节SHOP_LIGHT_PAIR含明暗影联动及同镜头前中后帧，第3至4节列遮挡和清理；PERFORMANCE_AND_CLEANUP.md第1、3节给取证。"
+    },
+    {
+      "criterion": "树木、花草、灯笼各自效果有对象归属、骨骼/VFX挂点、显示隐藏、移除和重置清理；组合场景不复制效果资源",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md第2至4节分别列TREE_SWAY、FLOWER_NOD、LANTERN_SWAY_GLOW和组合生命周期；ASSET_REQUIREMENTS.md对象表与PERFORMANCE_AND_CLEANUP.md第3节。"
+    },
+    {
+      "criterion": "顾客左右翻转时局部挂点随骨骼、世界受光和地面影保持正确方向；高兴/沮丧不引入奖励或新魔法语义",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md第1至3节GHOST_MOOD及左右翻转规则；ASSET_REQUIREMENTS.md明确顾客无新增情绪图像资产。"
+    },
+    {
+      "criterion": "列需要的原创资产、单页/合批条件、同时数量与性能测量、低端机降级及不可削减的必验表现",
+      "result": "PASS",
+      "evidence": "ASSET_REQUIREMENTS.md逐件列表、双签字段；PERFORMANCE_AND_CLEANUP.md第1至2节的实例上限、目标平台测量和降级保底。候选值不代表实测通过。"
+    },
+    {
+      "criterion": "遵循已选非像素冷夜暖灯风格，完成 Art 视觉一致性Review，旧未批准特效规格不自动作为正式输入",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md第1、5节与本REVIEW.json自检风格及上游门禁；Art已在同版ART_REVIEW.json正式签署APPROVED，并明确旧USER_REVIEW稿不自动作为批准输入。"
+    }
+  ],
+  "assumptions": [
+    "各类场景元素当前按至少各一个样例对象编制实例上限，不扩成完整第一街的全量装饰密度。",
+    "相对时长和层级均为候选，须对真实骨骼、正式Art/Tech规格及目标设备重新校准。",
+    "可选孟桃动作线沿用旧待审思路仅作影响记录；其资源未获用户批准时不进入运行。"
+  ],
+  "risks": [
+    "正式骨骼作者工具许可、实际图集打包和Creator 3.8.8导入尚未验证，单页不保证单Draw Call。",
+    "横向夜市参考在当前720×1280竖屏画布上的灯影、热气、牌匾、孟桃与幽灵表情可读性需真机确认。",
+    "用户审批尚未完成，完整店铺亮暗投影和三类场景元素的必要表现不能以可选降级静默取消。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

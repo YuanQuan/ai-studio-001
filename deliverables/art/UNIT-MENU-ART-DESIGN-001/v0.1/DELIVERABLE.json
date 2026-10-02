@@ -1,0 +1,61 @@
+{
+  "task_id": "UNIT-MENU-ART-DESIGN-001",
+  "owner": "art",
+  "summary": "基于获批七菜单Product完成空底板、原右向幽灵五态/独立板凳、独立树花灯三类原创概念，给出分层遮挡/挂点/单页预检；只候选，不冒充生产源、骨骼或Creator。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/LAYER_OCCLUSION_PLAN.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ATLAS_PREFLIGHT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/GENERATION_PROMPT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/scenes/empty-scene-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/characters/ghost-customer-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/props/toggle-elements-concept.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/candidates/empty-scene-foliage-rejected.png",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_REVIEW.json",
+    "project/art_reference/misc/UNIT-MENU-ART-DESIGN-001-v0.1.md",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "三类原创概念图分别表达空背景、单方向幽灵与板凳、可切换树花灯；概念图不是正式骨骼/atlas或可直接导入Creator的成品",
+      "result": "PASS",
+      "evidence": "三类新PNG已生成并逐张view_image，实际尺寸/模式/透明与非生产边界见ART_BRIEF/ATLAS_PREFLIGHT。"
+    },
+    {
+      "criterion": "空背景保留天空远景、地面、河岸水面、桥与栏杆，奶茶店、角色、板凳、树花灯及各自特效为独立层/对象，不烘成全景",
+      "result": "PASS",
+      "evidence": "空板及LAYER说明基础层/固定低蓝远景与独立绿柳区分，无开关店/人/板凳/前景树花灯；组合复用同层母版，不裁全景。"
+    },
+    {
+      "criterion": "幽灵只设计一个原始朝向，水平翻转覆盖左右移动/跑动/高兴/沮丧/坐姿；避免固定左右含义的图文装饰，坐姿与独立板凳两向接触可检",
+      "result": "PASS",
+      "evidence": "幽灵板五态均原右向、单源翻左，独立空板凳与坐姿接触候选；LAYER明确两向座点/底部参考、世界光/UI非镜像与尚未实测门禁。"
+    },
+    {
+      "criterion": "列资产ID、母版/附件、支点、极限包围盒、单对象单页草排、版权来源及字体许可；每次正式出图前 Art/Tech 共同签认尺寸合批与授权",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST列ID/母版候选，LAYER列支点/附件/骨骼/前后层；ATLAS给极限pose union bbox提交方法/单页草排与实际概念总bbox，逐次Art+Tech签认和来源/全prompt均留。"
+    },
+    {
+      "criterion": "保留奶茶杯吸管牌匾、木砖瓦店、孟桃唯一孟腰牌及已批准比例；画面原创，不复制附件或旧Demo资源；未有合法生产许可的项目标注阻塞",
+      "result": "PASS",
+      "evidence": "已批准MT三对象仅复用边界不重绘；原始参考只提炼通用语言，未裁复制旧Demo。REFERENCE_AUDIT标未知参考/字体/作者工具许可锁生产，图像软晕需去除。"
+    }
+  ],
+  "assumptions": [
+    "一类一对象候选，目录由后续获批Tech Design锁定；左右只原源翻转。",
+    "固定低蓝远景可能有类林影歧义，与前景绿柳分清；后续视觉证据不能靠文案解释通过。"
+  ],
+  "risks": [
+    "没有可重开分层母版、骨骼、实际atlas、合法工具/许可与Creator资源，新动态对象单页实际容积/设备性能未验证。",
+    "概念RGBA最高alpha254并有环境软晕；坐姿/空凳与五态尺度有重绘差异，生产需统一源、去晕、补绘。",
+    "未知权利参考只研究，正式图像/字体/工具使用许可未证实项锁定生产；左右坐姿、世界光/碰撞/遮挡和手机可读性尚待验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
