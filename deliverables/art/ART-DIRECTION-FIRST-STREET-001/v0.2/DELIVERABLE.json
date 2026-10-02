@@ -1,0 +1,65 @@
+{
+  "task_id": "ART-DIRECTION-FIRST-STREET-001",
+  "owner": "art",
+  "summary": "中央桥支流通前景河道、六店类别牌匾与小标识修订；实际交付原插画A与轻像素B供用户比较，八条美术原则延续且表现方式待用户选择。首轮A牌匾错位及首轮B柜台孟牌经实际Review退回并完成定点修正，候选与提示词保留。",
+  "artifacts": [
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/ART_DIRECTION.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/REFERENCE_AUDIT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/GENERATION_PROMPT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/reviews/ART_REVIEW_B_FIRST.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/references/bridge-reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/references/plaque-reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/scenes/night-market-v0.5-original.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/scenes/night-market-v0.5-pixel.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/scenes/candidates/original-signs-rejected.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/scenes/candidates/pixel-counter-badge-rejected.png",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/ART_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/TECH_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "桥下支流连通前景河道，桥口前无铺地/栏杆封口，左右坡道接街且无新增建筑遮挡",
+      "result": "PASS",
+      "evidence": "Art分别view_image核对最终A/B：中央完整拱洞、两坡接街，蓝水连到前景河道，岸石/栏杆两侧断开；未新增遮挡店体。"
+    },
+    {
+      "criterion": "六店各有可识别类别牌匾，奶茶杯吸管为小标识，不出现屋顶超大漂浮杯",
+      "result": "PASS",
+      "evidence": "两版六牌依次奶茶、糖画、炭烤、理发、花灯、投壶对应店体，奶茶杯为小侧标识；首轮A错位牌匾已定点修正、首轮B柜台孟牌已移除并保留候选。"
+    },
+    {
+      "criterion": "A原插画/B轻像素两个完整全景同构图同店序同关键内容，B有真实统一像素块和阶梯边缘而非只改颜色",
+      "result": "PASS",
+      "evidence": "Art实际检查A和B及重查B修正版，主构图/店序/桥河/牌匾/建筑设备一致；B瓦石树水角色有明显方块色簇和阶梯边缘。局部背景/幽灵与光色发生生成重绘，诚实记录为关键内容同布局，不声称逐像素一致。"
+    },
+    {
+      "criterion": "美术八条原则和两风格待选范围、版权/字体来源与完整实际提示词可追溯",
+      "result": "PASS",
+      "evidence": "ART_DIRECTION八条原则延续，指南明确A/B待用户选定。REFERENCE_AUDIT记录实际来源/权利/字形门禁/哈希，GENERATION_PROMPT留存实际完整调用文本。"
+    },
+    {
+      "criterion": "Art/Tech/Master概念评审通过并提交具体版本USER_REVIEW，不冒充生产资产或用户批准",
+      "result": "PASS",
+      "evidence": "ART_PREFLIGHT与TECH_PREFLIGHT批准概念出图；ART_REVIEW、TECH_REVIEW、MASTER_REVIEW均APPROVED仅概念提交，最终A/B实际检查及真实路径齐备。Art方向/项目指南明确专业评审通过、USER_REVIEW、A/B待用户选择，细则尚未获用户批准，正式母版/骨骼/图集/Creator门禁未放行。"
+    }
+  ],
+  "assumptions": [
+    "用户已采纳v0.3布局/画风，A/B比较是新的明确授权，B未自动替代原画风；v0.1未获整版批准。",
+    "不新增店名、菜单价格、商品规则、角色定义；Product v0.20及孟桃独立概念未由本轮代批准。",
+    "生成汉字只概念字形，没有导入字体文件；像素网格/手机采样未锁定。"
+  ],
+  "risks": [
+    "未知权利用户参考仅研究，不能裁用生产；正式源与字形须原创/许可和可识别相似风险复核。",
+    "没有分层母版、骨骼、单页图集、Creator或Draw Call/设备验证，同源视觉不证明资源复用。",
+    "生成式风格转换有局部重绘，关键布局可比较而非每像素相同；孟桃腰部被柜台遮挡，不强行显示可读孟字。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

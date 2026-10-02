@@ -1,0 +1,11 @@
+{
+  "task_id": "ART-DIRECTION-FIRST-STREET-001",
+  "reviewer": "art",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {"severity": "INFO", "message": "Art已使用view_image分别查看最终A与首轮B。A中央石拱与左右坡道接街，桥下水流从桥口连前景，岸石/栏杆左右断开；六店类别文字对应正确，巨杯/剪刀已降为小标识。B保持这些关键结构并在瓦、石、树、角色、水面出现明显方块/阶梯边缘，具备可比较轻像素表现。"},
+    {"severity": "MAJOR", "message": "首轮B在奶茶柜台正面新增可读孟字方牌，挂点没有连接孟桃腰带，违反仅腰牌有孟字的用户限制。需只移除柜台孟牌并恢复木纹；孟桃腰部被柜台遮住，当前全景不必强行补可读字。"},
+    {"severity": "INFO", "message": "B有局部背景/幽灵和光色变异，不宣称逐坐标相同。原全景与像素转换都不是严格生产网格、分层母版、图集或字体资产。"}
+  ],
+  "next_action": "Master通过内置image_gen定点移除首轮B柜台孟牌，保留首轮B候选和实际提示词；Art复查修正版后再产出最终ART_REVIEW。"
+}

@@ -1,0 +1,65 @@
+{
+  "task_id": "ART-DIRECTION-FIRST-STREET-001",
+  "owner": "art",
+  "summary": "六店横向经营面加宽、休息桌椅靠栏杆形成连续通路、少量可爱地府装饰；实际原插画A/轻像素B均已检查，八条原则延续、表现方式待用户选择。记录实际3:1与请求4:1差异，未冒充生产资源或用户批准。",
+  "artifacts": [
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ART_DIRECTION.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ART_BRIEF.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/DESIGN_RATIONALE.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/REFERENCE_AUDIT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/GENERATION_PROMPT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ART_PREFLIGHT.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/TECH_PREFLIGHT.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/reviews/ART_REVIEW_A_FIRST.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/scenes/night-market-v0.6-original.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/scenes/night-market-v0.6-pixel.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/scenes/candidates/original-counter-badge-rejected.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/scenes/candidates/original-width-refinement-input.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/references/bridge-reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.2/references/plaque-reference.png",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/TECH_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "桌椅全部靠栏杆休息带摆放，主顾客通行带/桥两端与水口无遮挡",
+      "result": "PASS",
+      "evidence": "Art实际view_image核对最终A/B：六组休息桌椅紧靠栏杆内侧、凳椅收拢，店前连续客流带及桥两端/水口未被家具封堵，工作理发椅保留店内。"
+    },
+    {
+      "criterion": "六店比前版横向更宽、工作台和经营面舒展，六店与桥殿独立可读",
+      "result": "PASS",
+      "evidence": "首轮后四店变化不足后，第3次定向加强长炭烤台/宽理发屋/宽灯架/投壶开放面；最终两版六店服务面舒展、桥殿无遮挡。实际3:1未实现请求4:1；20～25%或25～30%非实测输出。"
+    },
+    {
+      "criterion": "少量可爱鬼灯/牛头马面装饰小石雕/彼岸花融入冷夜暖灯，无恐怖元素且不改玩法",
+      "result": "PASS",
+      "evidence": "两版均有两盏笑脸鬼灯、左殿旁牛头马面小石雕pair、边缘约5彼岸花小簇，圆润友好、无恐怖元素/新NPC玩法；实际花数多于初始1～2候选且已审计。"
+    },
+    {
+      "criterion": "完整石拱桥支流通河、六类别牌匾、小杯吸管/纸盒/孟桃身份约束保持，A原插画/B轻像素同布局关键内容有清楚风格差异",
+      "result": "PASS",
+      "evidence": "Art分别实查A/B：桥拱支流通河、断栏/六牌/小杯吸管/纸盒/孟桃候选保持，柜台小牌已移除；A插画/B方块色簇和阶梯边清楚，同布局关键内容，局部重绘如实记录。"
+    },
+    {
+      "criterion": "八条原则、全部实际prompt/来源及Art/Tech/Master评审可追溯，五项概念验收PASS后USER_REVIEW，不冒充生产资源或用户批准",
+      "result": "PASS",
+      "evidence": "ART_PREFLIGHT、TECH_PREFLIGHT批准本轮概念出图；ART_REVIEW、TECH_REVIEW、MASTER_REVIEW均APPROVED仅概念提交，五项概念验收PASS。A/B、实际四次prompt/来源/候选/图像hash及数量画幅差异可追溯，Art指南/方向/Manifest明确专业评审通过、USER_REVIEW且未用户批准；生产母版/骨骼/图集/Creator/导航性能门禁未放行。"
+    }
+  ],
+  "assumptions": [
+    "用户追加视觉范围修订并非整盘拒绝八条原则；v0.2尚未整版批准，本轮A/B仍待用户选择。",
+    "牛头马面仅装饰石雕、鬼灯和彼岸花为授权装饰，不新增NPC/店铺/玩法/价格/角色规则。",
+    "实际输出3:1和约5花簇已明示，概念目标比例未逐店量化，像素网格/手机采样未锁定。"
+  ],
+  "risks": [
+    "未知许可参考仅研究，正式源/字形仍须原创或核验许可及可识别相似风险。",
+    "无分层母版、独立装饰源、骨骼、单页图集、Creator导航/碰撞或设备DrawCall证据。",
+    "生成重绘有局部表情/背景/光色变化，A/B比较主布局关键内容，不逐像素对应；孟桃腰牌仍待独立近景校字。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
