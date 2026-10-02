@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已逐项核对用户七项菜单要求：空背景镜头、奶茶店、孟桃及幽灵顾客、树花灯、UI、孟桃演示对话、同底板动态装配与遮挡。第3项以3A/3B区分，未增加第八项或将未来可切换扩成当前额外资产。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户最新平视方向已记录为DEC-UNIT-DIRECTION-003；产品正式验收采用顾客左/右×五类状态10格，只制作一个方向原始骨骼图像，另一方向水平翻转。不可镜像的通用文字/UI保持独立同源节点；另一朝向专属新绘附件须显式变更并获用户批准。旧四方向仅作历史追溯。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Product PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT、PRODUCT_REVIEW、DELIVERABLE齐全；Tech、Art、UI、VFX、Client、QA对同一v0.1稿的影响评审均为APPROVED，所列小风险明确留待各自正式规格和设备验证。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前只有产品规格和影响评审。720×1280竖屏工程与横向街景的镜头适配、左右坐姿座点、单页图集实际尺寸与性能、合法骨骼工具、图片及字体许可仍待专业Artifact、出图前联合签认及目标设备取证；不得把本评审视为Creator实现或美术生产通过。"
+    }
+  ],
+  "next_action": "Producer核对Task/Artifact版本、全部必需文件及审批状态后将UNIT-MENU-PRODUCT-001 v0.1提交USER_REVIEW；待用户明确批准本产品版本，再按受影响角色分别修订并审批技术、美术、UI、VFX、Client开工包和QA测试计划。"
+}

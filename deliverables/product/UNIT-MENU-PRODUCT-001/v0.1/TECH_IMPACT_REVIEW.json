@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已实读同版PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT及CP。七个顶层入口和第3项孟桃/幽灵双子入口均有独立操作与复位条件；旧UNIT-SAMPLES-001九菜单仅作历史。当前Creator仍是720×1280的UnitSamples.scene及集中UnitSampleGallery.ts，新七项须在获批技术/Client开工包后形成独立Scene/Prefab，不复制21张旧Demo图、9旧Prefab或旧程序占位。"
+    },
+    {
+      "severity": "INFO",
+      "message": "最新DEC-UNIT-DIRECTION-003已覆盖旧四方向条款。顾客左右×移动/跑动/高兴/沮丧/坐姿共10格的产品取证矩阵明确；同一原创方向的Skeleton和一页图集水平翻转复用另一向。后续Tech/Art/QA须验证非对称件、手/持物、字与标识、受光、骨骼/VFX挂点、脚点/碰撞、前后层及坐下/离座接触；非镜像文字/UI应在翻转视觉根节点外维护同源引用。若另向需专属图像附件，按PRD先走显式变更与用户审批。当前尚无顾客骨骼和实际页面积，不能据此宣称单页可装或性能达标。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "左右坐姿与街边独立板凳的座点、接近路径及板凳两侧可坐摆位尚无具体资产和坐标。产品已要求两向各验进座/稳定/离座及移除板凳安全退出；Art/Tech新规格须用实际骨骼极值和组合场景层级给出可验证的接触点与遮挡方案，不能以水平翻转本身代替坐姿验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "空场景与组合场景共用固定背景和镜头是可实施的源边界；奶茶店、顾客、板凳、树/花/灯笼必须独立装配并按生命周期清理。现工程设计分辨率720×1280，而选定第一街参考为横向长幅；镜头水平拖拽/缩放边界、屏幕适配与UI输入互斥需后续Tech/Client在目标手机实测，不能从视觉参考推断横竖屏或倍率值。"
+    },
+    {
+      "severity": "INFO",
+      "message": "第7项可逐项加入/移除并取店前、柜前、板凳、桥栏和场景元素遮挡证据；验收应扫描Lab与组合入口相同的Prefab/.meta UUID、状态控制、UI/VFX版本和实例override，并至少执行一次改正式源后两入口同时生效。主体游戏入口建成时再核对同源；旧集中Gallery不能作为已完成证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "奶茶店的可辨暖灯光影、三类可切换场景元素、幽灵骨骼与孟桃对话均超出已批准孟桃最小Product v0.1。原TECH-DESIGN、ART-SOURCE-PREFLIGHT、UI-SPEC、VFX-SPEC四份v0.1仍为USER_REVIEW候选；本产品稿的影响评审不能将其升级为实现输入。获批本产品范围后应提交相应修订/新增专业规格、Art/Tech每次正式出图签认、Client FEATURE_BRIEF和QA TEST_PLAN并逐阶段获用户批准。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "动态对象单骨骼单页、翻转后合批/透明边缘、店铺光影叠加与组合峰值负载仍缺实际图集、合法Spine作者工具/导出兼容、目标机纹理格式和DrawCall/内存/帧时数据。PRD将其列为后续技术与设备门禁，当前可批准产品验证范围，不能宣称资源生产或Creator功能已通过。"
+    }
+  ],
+  "next_action": "Master/Producer将七项产品v0.1与各专业影响评审呈用户审阅；获批准后Tech Lead提交覆盖七入口、镜头、左右单源翻转、座点/装配、同源UUID和性能的新版正式技术设计，Art/UI/VFX分别补规格，Client与QA按批准的开工包和测试计划实施验证。"
+}

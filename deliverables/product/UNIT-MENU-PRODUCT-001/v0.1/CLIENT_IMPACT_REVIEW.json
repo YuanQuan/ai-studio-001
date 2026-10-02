@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已按Client职责核对同版PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT与Creator源。现有UnitSamples.scene/UnitSampleGallery.ts通过一个类的openUnit分支、clearPage和旧frames管理U01–U09，资源均在旧demo目录；七项新菜单及第3项3A/3B不能靠改标题或复制旧程序形体完成。获批后Client须先提交FEATURE_BRIEF，与Tech对齐独立Scene/Prefab及共用表现组件，再实施新入口和旧菜单迁移。"
+    },
+    {
+      "severity": "INFO",
+      "message": "每项返回、重进、重置及第7项任意顺序添加/移除需要明确对象所有权和生命周期：停止Skeleton轨道、取消事件/计时器、回收VFX、卸载/释放资源，并处理坐姿中移除板凳、移除店/孟桃后身份卡变化及对话浮层关闭。独立Lab控制和正式共用UI/状态不得各实现一套；实现报告须记录清理和跨入口回归证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "项目设计分辨率当前为720×1280，横向第一街参考不等于已决定横屏。第1/7项共用背景和镜头，水平拖拽、缩放、边界、重置、鼠标滚轮/触屏手势及对话/UI触摸优先级须在实际Creator和目标手机测定；旧sampleCamera只可供历史分析，不能拿旧0.7–2.0倍率或旧7×7地图当新视口验收。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "DEC-UNIT-DIRECTION-003要求顾客单方向骨骼及图集水平翻转覆盖左右×五状态。Client候选为只镜像视觉子树，移动方向、碰撞/点击区域、脚点、座点与非镜像文字/UI保持世界坐标；Creator 3.8.8中Spine挂点、材质/裁剪、手持物、VFX位置及前后层翻转效果必须用真实资产实测，不能仅因负X缩放成功就把10格标PASS。若另一朝向需专属图像附件须先按产品稿走用户变更审批。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "独立板凳Prefab及顾客进座/坐稳/离座需由Art/Tech给左右座点和姿态边界；Client应保持顾客与座椅独立实例，以同源挂点对位，并在转向、座椅移除及场景卸载时保证不会悬空或残留碰撞。顾客状态快速切换要取消旧回调，最终呈现最后一次有效选择；不引入未批准寻路、消费或AI。"
+    },
+    {
+      "severity": "INFO",
+      "message": "第7项必须使用第1项同一背景与第2–4项相同Prefab/.meta UUID、骨骼、脚本、UI/VFX版本；前柜/人物、桥栏/顾客、树灯/前后景遮挡应依源层和脚点测试，不能以组合专用扁平图蒙混。实现阶段须扫描Prefab实例override与依赖，并至少改一次源后对照独立入口和组合入口；主体入口建立后再做同源复核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "暖灯光影、树花灯动态、对话与多Skeleton同屏会增加透明Overdraw、DrawCall、节点/回调及图集内存压力。工程只有spine-3.8运行配置，缺新骨骼和实际作者导出；Client应在已批准Art/Tech/UI/VFX/QA开工包后导入，并按Web/微信/抖音目标设备记录帧时、纹理内存、加载/释放和动作复位。此评审批准的是产品范围可实施性，不是代码、真机或资源通过。"
+    }
+  ],
+  "next_action": "Master/Producer先完成Product v0.1各专业影响Review及用户审批；Art、Tech、UI、VFX修订规格并分别获批后，Client提交FEATURE_BRIEF与QA TEST_PLAN组成开工包，经用户批准再实现七独立入口、共用Prefab/表现及组合场景，最后提供IMPLEMENTATION_REPORT和设备/同源证据。"
+}

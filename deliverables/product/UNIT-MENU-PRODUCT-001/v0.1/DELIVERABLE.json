@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "owner": "product",
+  "summary": "形成七项新菜单单元样例的产品范围、流程、验收和变更影响；按最新平视左右指令，以单方向原创骨骼水平翻转复用顾客另一朝向。当前只交付产品规格，Creator和美术成品尚未完成。",
+  "artifacts": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/FLOW.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "七项顶层菜单逐项保留用户语义，第3项清楚区分孟桃店长和幽灵顾客的可切换动作，说明当前只制作一个店铺和一位店长的示例范围",
+      "result": "PASS",
+      "evidence": "PRD.md第2、3节逐项列出七菜单、第3项双子入口和一店一店长一幽灵边界；ACCEPTANCE.md A01/B02-B04。"
+    },
+    {
+      "criterion": "定义空场景拖拽/缩放、各单元独立展示与重置、组合场景逐项加入和移除、遮挡观察及异常/边界条件，避免复制另一套逻辑或美术",
+      "result": "PASS",
+      "evidence": "PRD.md第3.1与3.6节、FLOW.md第1-3节、ACCEPTANCE.md A02-A03/B01/B08-B09/D03。"
+    },
+    {
+      "criterion": "明确顾客方向、动态对象骨骼与每骨骼对象单页图集、出图前Art/Tech联合签认、可复用UI与图片字体版权要求，以及目标设备验证",
+      "result": "PASS",
+      "evidence": "依据最新用户指令改为顾客左右×五状态及单方向源水平翻转；PRD.md第3.3、4、5节与ACCEPTANCE.md C/D01-D06。旧四方向要求由DEC-UNIT-DIRECTION-003覆盖。"
+    },
+    {
+      "criterion": "列出与已批准孟桃产品及四份待审专业v0.1的关系、旧九菜单任务的替代范围、受影响角色与重新审批门禁，不把待审稿当正式输入",
+      "result": "PASS",
+      "evidence": "PRD.md第1、6节及CHANGE_IMPACT.md第1-4节。"
+    },
+    {
+      "criterion": "对每项给出可在Creator运行与QA取证的验收条件，不新增价格、订单、收益、主线剧情或尚未批准的角色/商品规则",
+      "result": "PASS",
+      "evidence": "ACCEPTANCE.md A01-D07逐项列后续运行证据；PRD.md第2、3.5、5节限制演示语义。此处PASS仅代表规格覆盖，不代表未来运行测试已通过。"
+    }
+  ],
+  "assumptions": [
+    "顾客样例当前只制作一名原创幽灵；未来选择其他角色的扩展入口不等于当前生产其他种类。",
+    "M00/M10/M11是未获整版批准产品总纲的候选模块索引；本版只规定单元验证范围。",
+    "具体镜头参数、屏幕方向、骨骼编辑器及图集大小由后续正式专业版本评审。"
+  ],
+  "risks": [
+    "镜像后非对称挂件、手势、文字、光影、骨骼和VFX挂点及坐姿可能不合理；应先调整单向原始设计和同源非镜像节点，若需另一方向新图像附件必须显式变更并获用户批准。",
+    "四份先前专业v0.1仍在USER_REVIEW，新增七项和最新方向修正需影响Review及修订；不能直接解锁Creator实现。",
+    "Creator当前竖屏720×1280与横向街景参考存在视口适配风险，真机可读性与性能尚无验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

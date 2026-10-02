@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已按固定顺序读取UI五配置，审阅本版PRD、FLOW、ACCEPTANCE、CHANGE_IMPACT、用户七项范围输入、ART_GUIDE、CP-UNIT-MENU-SCOPE-001，并核对原待审UNIT-PILOT-UI-SPEC-001 v0.1的身份卡、Lab隔离及竖屏候选。结论仅限新Product范围和UI影响，不批准新UI规格、资源或Creator实现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "七个顶层入口及第3项3A孟桃/3B幽灵子入口结构清楚，公共返回/重置/标题不计第八项；FLOW明确子入口独立初始化和跨入口清理。现阶段只一店、一店长、一代表顾客，未来切换能力未扩大成多套内容，满足界面信息架构范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "第5项独立UI样例只承接奶茶店/孟桃共享身份组件，公共身份卡与Lab状态、动作/方向控制、组合开关和诊断隔离；第7项使用同一组件源及文案，移除对象时身份展示必须与实际存在对象一致。原UI v0.1仍待审，需修订为七入口范围，不可直接当作新正式输入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "第6项只演示孟桃和玩家一轮对话，示例标记可见，具备打开、继续/关闭和重置，未加入正史、分支、订单、奖励或持久记录。FLOW要求对话浮层优先处理交互、防误拖、关闭后恢复场景操作；后续UI规格须写清阅读页数、继续与关闭的可见状态及返回/重置清理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ART_GUIDE的非像素可爱中式、冷夜暖灯、木棕浅纸和杯吸管标识为统一视觉边界。导航/控制/状态组件及身份卡、对话基础资源应列同源复用索引；姓名、牌匾和对话文字保持非镜像UI，不能随顾客骨骼翻转。图片不裁切旧Demo/概念图作正式UI，字体需锁定实际文件版本并核验运行、嵌入、分发和修改许可，不能将原待审字体候选或系统回退当作生产许可完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本版明确720×1280竖屏工程与横向参考的适配风险，不擅定横竖屏切换。后续UI修订须提供七入口、角色子项、组合开关和对话的竖屏安全区/触控样张，保证控件不挡角色脸、双手、牌匾、脚点和板凳接触；与Tech/Client共同定义UI事件阻断及镜头操作区域，并在目标设备核验中文阅读和触控，当前数值尚非生效布局。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Product定义了必要状态和异常外显原则，尚未列全各控件normal/pressed/selected/disabled/loading/error、忙碌重入反馈、对象不可用和关闭板凳时坐姿控制状态；这是后续UI_SPEC/SCREEN_STATES/COMPONENT_SPEC及关键样张必须补齐的设计输入，不构成本版Product范围的重大缺陷。正式状态变化应来自共用控制结果，不能由Lab按钮自行推断完成或复制主体逻辑。"
+    }
+  ],
+  "next_action": "Master汇总专业影响Review并呈用户批准七项Product v0.1。批准后由UI提交受影响的修订版UI_SPEC、COLOR_SYSTEM、SCREEN_STATES/组件规格、七入口及对话关键样张、复用索引与实际字体许可记录，经过Art视觉一致性Review和用户独立批准后方可交Client/QA；本Review不解锁UI生产或新菜单实现。"
+}

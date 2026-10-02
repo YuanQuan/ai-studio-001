@@ -86,3 +86,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-02 | UNIT-PILOT-VFX-SPEC-001 | 摇杯工作轻反馈规格 | v0.1 | tasks/UNIT-PILOT-VFX-SPEC-001/ARTIFACT_APPROVAL.json；deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/DELIVERABLE.json | USER_REVIEW | 3项PASS，Art/Master评审APPROVED；时序/同源/资源需求待用户审批 | 128²特效骨骼页仅候选，正式资产与真机另验 |
 | 2026-10-02 | UNIT-SAMPLES-001 | 旧九菜单单元样例 | v0.1 | tasks/UNIT-SAMPLES-001/TASK.json；deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json | CANCELLED（任务；Artifact未获批） | 用户要求重启单元并替换旧版，Master正式取消此旧任务 | 旧场景/脚本和桌面自测留档；无专业/QA/用户验收，不能记DONE；新孟桃单元由四专业v0.1与后续Client任务承接 |
 <!-- UNIT-NEXTSTAGE-20261002 END -->
+
+<!-- UNIT-MENU-20261002 START -->
+| 2026-10-02 | UNIT-MENU-PRODUCT-001 | 新七项菜单产品规格与影响评审 | v0.1 | deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md；ACCEPTANCE.md；FLOW.md；CHANGE_IMPACT.md；DELIVERABLE.json；PRODUCT_REVIEW.json；TECH_IMPACT_REVIEW.json；ART_IMPACT_REVIEW.json；UI_IMPACT_REVIEW.json；VFX_IMPACT_REVIEW.json；CLIENT_IMPACT_REVIEW.json；QA_IMPACT_REVIEW.json；MASTER_REVIEW.json；tasks/UNIT-MENU-PRODUCT-001/ARTIFACT_APPROVAL.json | USER_REVIEW（待用户决定） | 用户七项与最新左右翻转方向已纳入；五项PASS，Product/六专业/Master八Review均APPROVED。项目方向决定并不等于本版产品整包批准 | 获用户明确批准后方可作为下游新资源、专业规格、Creator与QA计划输入；未批准前保持关闭 |
+<!-- UNIT-MENU-20261002 END -->

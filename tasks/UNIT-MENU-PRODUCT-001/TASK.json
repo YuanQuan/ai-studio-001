@@ -1,0 +1,45 @@
+{
+  "id": "UNIT-MENU-PRODUCT-001",
+  "title": "新七项菜单单元样例产品规格与变更影响",
+  "type": "feature",
+  "owner": "product",
+  "parent": null,
+  "objective": "按用户新列的七项菜单样例定义可独立验收的产品范围、菜单流程、组合场景复用与受影响阶段，替代旧九菜单任务范围，不改变未批准的经营规则。",
+  "inputs": [
+    "project/unit_tests/UNIT_MENU_SCOPE_INPUT_v0.1.md（用户2026-10-02明确七项）",
+    "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md（已批准的孟桃奶茶店最小语义）",
+    "tasks/UNIT-SAMPLES-001/TASK.json（CANCELLED，仅历史对照）",
+    "project/changes/CP-UNIT-MENU-SCOPE-001.md（Master跨角色提案，PROPOSED）",
+    "project/ART_GUIDE.md（已选风格约束）"
+  ],
+  "deliverables": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/FLOW.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/VFX_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "七项顶层菜单逐项保留用户语义，第3项清楚区分孟桃店长和幽灵顾客的可切换动作，说明当前只制作一个店铺和一位店长的示例范围",
+    "定义空场景拖拽/缩放、各单元独立展示与重置、组合场景逐项加入和移除、遮挡观察及异常/边界条件，避免复制另一套逻辑或美术",
+    "明确平视角顾客左右两方向由一方向骨骼资源水平翻转复用及视觉验收、动态对象骨骼与每骨骼对象单页图集、出图前Art/Tech联合签认、可复用UI与图片字体版权要求，以及目标设备验证",
+    "列出与已批准孟桃产品及四份待审专业v0.1的关系、旧九菜单任务的替代范围、受影响角色与重新审批门禁，不把待审稿当正式输入",
+    "对每项给出可在Creator运行与QA取证的验收条件，不新增价格、订单、收益、主线剧情或尚未批准的角色/商品规则"
+  ],
+  "dependencies": ["UNIT-PILOT-PRODUCT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master按用户2026-10-02新七项菜单要求创建，Product须直接对照用户输入形成正式产品Artifact。",
+    "本任务止于新菜单产品规格及受影响专业审阅；Creator实现和新原画不在此任务交付范围。",
+    "Tech/Art/UI/VFX/Client/QA分别评审本版Draft的可行性、资产、界面、效果、实现和测试影响；这些评审不等于用户批准或正式下游实现输入。专业Review文件由对应角色签署，不由Product代写。"
+  ]
+}
