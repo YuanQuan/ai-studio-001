@@ -1,35 +1,36 @@
 {
   "id": "UNIT-MENU-TECH-DESIGN-001",
-  "title": "七项菜单单元样例同源工程与平视骨骼技术设计",
+  "title": "七项菜单正式资源同源工程与幽灵序列帧技术设计",
   "type": "tech",
   "owner": "tech_lead",
   "parent": null,
-  "objective": "为已批准七项菜单产品规格设计可独立迭代且与未来主体游戏同源的 Creator 场景、Prefab、骨骼、镜头、遮挡和资源验证契约。",
+  "objective": "依据已批准 Product v0.2，修订单元与未来主体同源的 Creator 场景、Prefab、幽灵序列帧、其他动态骨骼、镜头、遮挡及正式资源验证契约。",
   "inputs": [
-    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
-    "project/DECISIONS.md#DEC-UNIT-DIRECTION-003",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
+    "project/DECISIONS.md#DEC-UNIT-FINAL-ASSET-004 与 DEC-UNIT-DIRECTION-003（幽灵骨骼条款已覆盖）",
     "project/ART_GUIDE.md 与已批准 UNIT-PILOT-ART-CONCEPT-001 v0.5",
-    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/TECH_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/（REJECTED，仅历史审计对照）",
     "UNIT-PILOT-TECH-DESIGN-001 v0.1（USER_REVIEW，仅候选，不作批准输入）"
   ],
   "deliverables": [
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/TECH_DESIGN.md",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/CREATOR_AUDIT.md",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/ASSET_PIPELINE.md",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/PERFORMANCE_PLAN.md",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/REVIEW.json",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/DELIVERABLE.json",
-    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.1/MASTER_REVIEW.json"
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/CREATOR_AUDIT.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/ASSET_PIPELINE.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/MASTER_REVIEW.json"
   ],
   "acceptance": [
     "实际审计当前 Creator 工程及旧九样例，逐项说明七入口、3A/3B、空场景镜头拖拽缩放及旧入口迁移；未改客户端代码",
     "确定独立对象的 Prefab/Scene/资源ID 与单元、组合、未来主体同源引用，定义添加移除、重进重置及遮挡顺序",
-    "规定幽灵单方向骨骼图像及同页图集水平翻转覆盖左右五状态，明确非镜像文字/UI、挂点、碰撞、坐姿座点、世界光影的实现和实测门禁",
-    "给出每类动态对象单页 atlas 的草排输入、出图前 Art/Tech 双签字段、图像尺寸和合批/内存候选，不将单页等同一 Draw Call",
+    "规定幽灵单方向原创透明序列帧及另一向显示节点翻转覆盖左右五状态；定义循环动作约4–6帧预算、首尾衔接、帧图原点、坐姿座点、状态取消和非镜像UI/世界光影契约",
+    "给出幽灵帧图集与其他动态骨骼对象各自单页的不同草排输入、出图前 Art/Tech 双签字段、图像尺寸和合批/内存实测计划，不将同图集等同一 Draw Call",
     "记录横向画面与当前竖屏画布的镜头/输入适配方案、目标设备性能测量计划及不可验证风险；不把未经批准专业草稿或旧资源当可集成资产"
   ],
   "dependencies": ["UNIT-MENU-PRODUCT-001"],
-  "status": "REVISION",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
-  "notes": ["用户2026-10-02批准七菜单Product v0.1并授权继续；此任务止于技术设计 USER_REVIEW，Creator实现另经开工包审批。", "仅 Owner 实际落盘产物后可转 IN_PROGRESS；Producer维护审批与流程记录。"]
+  "notes": ["用户2026-10-03批准七菜单 Product v0.2；本次为 v0.2 修订，旧 v0.1 整版 REJECTED 并留档。此任务止于技术设计 USER_REVIEW，Creator 实现另经开工包审批。", "仅 Owner 实际落盘产物后可转 IN_PROGRESS；Producer维护审批与流程记录。"]
 }

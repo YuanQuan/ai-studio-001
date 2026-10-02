@@ -43,7 +43,7 @@
 
 ## 当前正式资源方向｜DEC-UNIT-FINAL-ASSET-004
 
-[Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md)为正式资源与幽灵序列帧修订候选，仍待本版用户批准。当前无新幽灵正式逐帧母版、透明帧、真实图集或Creator稳定资源引用完成证据。
+[Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md)已于 2026-10-03 获 `USER_APPROVED`，正式资源与幽灵序列帧约束现可作为专业修订输入。[Art v0.2 出图前资产清单](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ASSET_MANIFEST.md)是待审制作方案，Tech Lead、UI、VFX 各 v0.2 也仍需各自专业与用户审批。当前无新幽灵正式逐帧母版、透明帧、真实图集或 Creator 稳定资源引用完成证据。
 
 | 对象/ID候选 | 当前制作方式 | 正式交付门槛 |
 |---|---|---|
@@ -52,4 +52,4 @@
 | MT_CHAR_01、MT_SHOP_MOTION_01、UE_TREE_01、UE_GRASS_01、UE_LANTERN_01 | 动态对象继续骨骼，每对象附件单页 | 实际可编辑分件/骨骼源、极限pose包围盒、真实单页导出及Creator/目标设备证据 |
 | MT_SHOP_STATIC_01与背景基础层 | 独立静态分层 | 材料/比例与已选风格一致；去除烘底环境软晕，灯影独立；背景不烘入可切换对象 |
 
-上述ID沿候选对象索引，正式资源身份和目录由获批Tech/Art契约锁定，不从此表推断文件已存在。每次正式出图前Art/Tech联合核对原创来源、版权/IP与字体/工具许可、动作/镜像、像素尺寸/透明留白及图集/合批；缺许可不得生产集成。单元、组合与未来主体最终引用同一批准源/导出/资源版本，共用UI/VFX；Lab控制可独立。Product v0.2、Art生产方案与正式资源须逐阶段审批；旧v0.1交付正文留档不改写。
+上述ID沿候选对象索引，正式资源身份和目录由获批Tech/Art契约锁定，不从此表推断文件已存在。每次正式出图前Art/Tech联合核对原创来源、版权/IP与字体/工具许可、动作/镜像、像素尺寸/透明留白及图集/合批；缺许可不得生产集成。单元、组合与未来主体最终引用同一批准源/导出/资源版本，共用UI/VFX；Lab控制可独立。Product v0.2 已获批准；Art/Tech/UI/VFX v0.2 与正式资源仍须各自逐阶段审批，旧v0.1交付正文留档不改写。

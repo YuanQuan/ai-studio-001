@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-TECH-DESIGN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已对照 USER_APPROVED 的 Product v0.2、DEC-UNIT-FINAL-ASSET-004、现有 Creator 3.8.8 工程和旧 Tech v0.1：七顶层入口、3A/3B、独立/组合同源、旧九项迁移与竖屏画布均有设计；旧幽灵骨骼条款已由 SpriteFrame 序列帧契约取代。此为技术设计自评，不代表正式资源、运行和用户审批已完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵一个原创方向的透明帧序列覆盖左右×五状态，另一向只镜像 VisualRoot；move/run 各以约 4–6 帧循环为草排起点，情绪与坐姿按一次动作/保持/进稳离管理，包含脚点、座点、非镜像 UI、世界受光、状态取消及快速切态。幽灵不受骨骼单页要求，其实际 atlas 页数和合批须双签与目标机测量。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前工程是 720×1280 竖屏；横幅底板可绘覆盖、镜头缩放边界、牌匾/腰牌/对话小字及触控输入尚无目标机证据。本文仅定义视口重算和测量矩阵，不擅自更改横竖屏或填造镜头数值。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "正式逐帧、动态骨骼源、图集、作者工具/字体/图片许可、Creator 导入、Web/微信/抖音运行和性能均为 NOT_TESTED。单元阶段双入口可复用验收与未来主体第三入口复验已分期；不会把尚不存在的主体接入写成已实测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本版不修改 Client、Server 或旧 v0.1 文件，不新增经营规则、剧情、店铺和顾客种类。每次正式出图须 Art 与 Tech 联签，Art/UI/VFX 正式版本和 Client/QA 开工包仍需各自用户审批。"
+    }
+  ],
+  "next_action": "请 Master 审查本版五项 Task 验收和依赖后交 Producer 维护状态；如相关专业 Review 与用户审批通过，本技术设计才进入 Client 正式输入。Art 每次正式出图前与 Tech 按 ASSET_PIPELINE.md 对真实资源版本联签；Creator/目标机由后续 Client/QA 实测。"
+}

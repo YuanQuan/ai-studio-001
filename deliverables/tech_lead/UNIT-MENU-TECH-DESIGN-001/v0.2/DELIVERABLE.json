@@ -1,0 +1,53 @@
+{
+  "task_id": "UNIT-MENU-TECH-DESIGN-001",
+  "owner": "tech_lead",
+  "summary": "根据已批准七菜单 Product v0.2，完成 Creator 现状审计、同源 Prefab/Scene 与状态生命周期、幽灵单向 SpriteFrame 序列帧及左右镜像、其他动态骨骼单页、逐次 Art/Tech 出图联签、镜头/遮挡和目标设备取证设计。正式资产、Creator 实现和 QA 实测尚未完成。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/CREATOR_AUDIT.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/ASSET_PIPELINE.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际审计当前 Creator 工程及旧九样例，逐项说明七入口、3A/3B、空场景镜头拖拽缩放及旧入口迁移；未改客户端代码",
+      "result": "PASS",
+      "evidence": "CREATOR_AUDIT.md 第 1–2 节记录 Creator 3.8.8、720×1280、旧 UnitId 0..9、21 PNG/9 Prefab、旧镜头局限和七入口逐项迁移；TECH_DESIGN.md 第 2、4 节。代码无本任务修改。"
+    },
+    {
+      "criterion": "确定独立对象的 Prefab/Scene/资源ID 与单元、组合、未来主体同源引用，定义添加移除、重进重置及遮挡顺序",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第 1–2、4 节列唯一逻辑 ID、目标 Prefab/Scene、允许实例覆盖、enter/reset/leave、组合装卸及前后片；CREATOR_AUDIT.md 第 3 节规定单元双入口与未来主体分期。实际 UUID/运行仍 NOT_TESTED。"
+    },
+    {
+      "criterion": "规定幽灵单方向原创透明序列帧及另一向显示节点翻转覆盖左右五状态；定义循环动作约4–6帧预算、首尾衔接、帧图原点、坐姿座点、状态取消和非镜像UI/世界光影契约",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第 3 节逐态列 SpriteFrame、循环/保持/过渡、VisualRoot 镜像与取消；ASSET_PIPELINE.md 第 2–4 节给逐帧画布/alpha/图集输入；PERFORMANCE_PLAN.md 第 2、4 节列左右十格取证。正式帧图与运行未测。"
+    },
+    {
+      "criterion": "给出幽灵帧图集与其他动态骨骼对象各自单页的不同草排输入、出图前 Art/Tech 双签字段、图像尺寸和合批/内存实测计划，不将同图集等同一 Draw Call",
+      "result": "PASS",
+      "evidence": "ASSET_PIPELINE.md 第 2–4 节将幽灵页数实排与骨骼对象单页分开，列实际像素、透明边、padding、材质、内存计算及每次出图前双签；PERFORMANCE_PLAN.md 第 3 节定义 DrawCall/帧时间/纹理格式目标机实测。"
+    },
+    {
+      "criterion": "记录横向画面与当前竖屏画布的镜头/输入适配方案、目标设备性能测量计划及不可验证风险；不把未经批准专业草稿或旧资源当可集成资产",
+      "result": "PASS",
+      "evidence": "CREATOR_AUDIT.md 第 1、4 节与 TECH_DESIGN.md 第 4–5 节说明 720×1280、视口边界、输入捕获、旧 Demo 排除；PERFORMANCE_PLAN.md 全篇列目标环境、负载/取证和 NOT_TESTED；ASSET_PIPELINE.md 区分概念图与正式资源。"
+    }
+  ],
+  "assumptions": [
+    "单物理 Creator 工程内分对象 Prefab 与独立 Lab Scene 是本版待用户审批的技术方案，不是已完成工程。",
+    "本单元阶段对正式同源资源的实际通过条件是独立与组合双入口；未来主体第三入口的同 UUID/版本复核留待接入后执行。",
+    "实际 UUID、幽灵最终帧数/帧率与图集页数、镜头数值、目标机型/性能阈值、Spine 作者工具和许可证由获批后生产与运行实测决定；大幅扩帧/另绘反向/退回骨骼须走变更审批。",
+    "MASTER_REVIEW.json 由 Master 另写，Producer 负责正式任务与审批状态。"
+  ],
+  "risks": [
+    "720×1280 现竖屏画布对横向长街的可见宽度、露白、桥遮挡和小字可读性尚未真机验证。",
+    "幽灵单方向序列帧的首尾循环、左右镜像、透明边、双向座姿和帧图集内存/批次尚无正式资源数据。",
+    "孟桃、店铺及动态树花灯骨骼作者工具/版本/许可与 Creator 3.8.8 实际导入缺证据；图片和字体权利也须逐件核验。",
+    "Art/UI/VFX 正式修订及 Client/QA 开工包尚未各自完成审批，不能以技术设计自评替代下游门禁。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

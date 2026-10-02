@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-VFX-SPEC-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已实读 VFX_SPEC、ASSET_REQUIREMENTS、PERFORMANCE_AND_CLEANUP。店铺灯罩、墙柜受光、地面暗部/投影作为同一逻辑效果联动，符合夜蓝环境与局部暖橙营业焦点；明确不遮挡木匾、杯标、孟桃脸和唯一孟腰牌。"
+    },
+    {
+      "severity": "INFO",
+      "message": "树、花草、灯笼采用低幅、各对象归属的骨骼动态和局部效果，保持可爱、安静的非像素夜市；幽灵五状态以原创透明序列帧表达，仅帧显示节点翻转，世界光、地影、座点、文字/UI不镜像。未增加恐怖符号、奖励粒子或新玩法语义。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧 v0.1 顾客骨骼条款明确失效；候选蒸汽和工作短线不是自动获批资产。空底板不烘可切换光影，独立与组合入口用同一正式源；降级保留亮暗投影联动和三类元素辨识。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "正式 VFX 原画、暖光透明面积、图集与目标机实测尚无；制作时需与 Art/Tech 逐批核对色温、光斑范围、局部遮挡和性能，不能以本规格通过代替实际视觉验收。"
+    }
+  ],
+  "next_action": "提交 Master 对 VFX v0.2 的综合 Review 和用户审批；正式出图及 Creator/目标设备表现按后续 Art/Tech/Client/QA 门禁取证。"
+}

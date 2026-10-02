@@ -4,30 +4,31 @@
   "type": "vfx",
   "owner": "vfx",
   "parent": null,
-  "objective": "定义奶茶店可辨认的暖灯亮暗投影、树花灯伴随动效、顾客状态反馈及组合场景清理与性能降级，保持独立单元和主体同源。",
+  "objective": "依据已批准 Product v0.2 修订奶茶店暖灯亮暗投影、树花灯骨骼伴随动效、幽灵序列帧状态配套、组合场景清理及性能降级，保持正式资源在独立单元和未来主体同源。",
   "inputs": [
-    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
-    "project/ART_GUIDE.md 与 DEC-UNIT-DIRECTION-003",
-    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.1/VFX_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
+    "project/ART_GUIDE.md 与 DEC-UNIT-FINAL-ASSET-004、DEC-UNIT-DIRECTION-003",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/VFX_IMPACT_REVIEW.json",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/（REJECTED，仅历史参考）",
     "UNIT-PILOT-VFX-SPEC-001 v0.1（USER_REVIEW，仅候选）"
   ],
   "deliverables": [
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/VFX_SPEC.md",
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/ASSET_REQUIREMENTS.md",
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/PERFORMANCE_AND_CLEANUP.md",
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/ART_REVIEW.json",
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/DELIVERABLE.json",
-    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/MASTER_REVIEW.json"
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/VFX_SPEC.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/ASSET_REQUIREMENTS.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/PERFORMANCE_AND_CLEANUP.md",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/ART_REVIEW.json",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/DELIVERABLE.json",
+    "deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/MASTER_REVIEW.json"
   ],
   "acceptance": [
     "逐项定义奶茶店亮部和邻近暗部/投影的联动触发、时序、层级、持续与复位，不能只开关发光点",
     "树木、花草、灯笼各自效果有对象归属、骨骼/VFX挂点、显示隐藏、移除和重置清理；组合场景不复制效果资源",
-    "顾客左右翻转时局部挂点随骨骼、世界受光和地面影保持正确方向；高兴/沮丧不引入奖励或新魔法语义",
-    "列需要的原创资产、单页/合批条件、同时数量与性能测量、低端机降级及不可削减的必验表现",
+    "顾客左右翻转时仅序列帧显示节点镜像，配套表情/光影按帧对象生命周期管理，世界受光、地面影、座点、文字/UI保持正确方向；高兴/沮丧不引入奖励或新魔法语义",
+    "列需要的原创资产、幽灵帧图集与其他骨骼对象单页的不同合批条件、同时数量与性能测量、低端机降级及不可削减的必验表现",
     "遵循已选非像素冷夜暖灯风格，完成 Art 视觉一致性Review，旧未批准特效规格不自动作为正式输入"
   ],
   "dependencies": ["UNIT-MENU-PRODUCT-001"],
-  "status": "REVISION",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
-  "notes": ["本任务只提交特效规格，不制作正式特效资产或修改Creator。", "正式资源生产与实现按后续Art/Tech/Client/QA门禁。", "Master在跨专业整合中可修正Art Review指出的非语义性审批措辞与既有店源ID映射，并同步交付登记；不改变VFX表现范围。"]
+  "notes": ["用户2026-10-03批准Product v0.2；旧VFX v0.1整版REJECTED，本版只提交修订特效规格，不制作正式特效资产或修改Creator。", "正式资源生产与实现按后续Art/Tech/Client/QA门禁。", "Master在跨专业整合中可修正Art Review指出的非语义性审批措辞与既有店源ID映射，并同步交付登记；不改变VFX表现范围。"]
 }

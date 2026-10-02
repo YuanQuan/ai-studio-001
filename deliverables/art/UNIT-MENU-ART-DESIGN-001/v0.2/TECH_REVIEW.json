@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-ART-DESIGN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已逐读本版 ART_BRIEF、ASSET_MANIFEST、LAYER_OCCLUSION_PLAN、GHOST_FLIPBOOK_PLAN、ATLAS_PREFLIGHT、REFERENCE_AUDIT、DESIGN_RATIONALE、PRODUCTION_GATE，并对照 USER_APPROVED 的 Product v0.2 与 Tech v0.2 设计。空背景的天空/路水/桥栏前后片与店、人、凳、树花灯独立对象的划分满足独立/组合引用同一背景和对象源的技术前提；旧概念与正式生产资源明确区分。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵方案明确一个原创方向、透明 SpriteFrame 逐帧母版，另一向仅显示节点翻转；move/run 各约 4–6 帧循环草排，情绪一次动作/保持、坐姿进/稳/离、左右五状态十格及脚点/座点/alpha/非镜像世界受光均被列入出图和后续运行检查。没有把旧展示板裁成帧，也没有沿用被覆盖的幽灵骨骼单页约束。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ATLAS_PREFLIGHT 把幽灵按逐帧实际 bbox、padding、材质、纹理内存与目标机草排页数，孟桃、店铺可动件和动态树花灯按每骨骼对象附件单页分流，且明确单页不等于一 DrawCall；逐批 Art/Tech 双签字段包含尺寸、许可、极限姿态、合批及重签条件。技术上同意作为正式出图前方案进入 Master Review。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Art 的 UB_SKY/UB_BRIDGE 等分层 ID 应在实施时登记为 Tech 所拟 STREET_BASE_01 Prefab 的子资源；BENCH_01、UG_GHOST_01 等对象 ID 与唯一 Prefab/资源 UUID 建立映射，保持独立/组合两个入口的实例覆盖可审计。此为接入期执行项，不是新增美术内容或本版阻塞。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本版没有真实逐帧画布、骨骼源、图集草排、许可证明、Creator 导入、目标机压缩/DrawCall/内存或双向坐姿视频；这些数值和通过结论仍为 NOT_TESTED。方案 Review 的 APPROVED 不构成具体某次正式出图的 Art/Tech 联签，也不代表资源可集成。"
+    }
+  ],
+  "next_action": "由 Master 审核 Art v0.2 的五项规格验收并提交用户审批；获批后为每批真实对象和版本填 ATLAS_PREFLIGHT 的 Art/Tech 双签，建立分层 ID→Prefab UUID/hash 映射。正式导出及 Creator/Web/微信/抖音目标机数据出来后再核 atlas 页数、循环缝、双向坐姿、受光、DrawCall 和纹理内存；未通过不得标 INTEGRABLE。"
+}

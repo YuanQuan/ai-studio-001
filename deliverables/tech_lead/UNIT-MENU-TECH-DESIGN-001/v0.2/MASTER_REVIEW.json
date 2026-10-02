@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-TECH-DESIGN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对 Task v0.2 五项验收、Product v0.2 USER_APPROVED、TECH_DESIGN/CREATOR_AUDIT/ASSET_PIPELINE/PERFORMANCE_PLAN、Tech Lead 自评及 DELIVERABLE。七项菜单、第3项双子入口、同一Creator工程中的独立Prefab/Scene、独立与组合同源、未来主体复验和旧九项隔离均有具体契约；五项方案验收均有文件证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵已从旧骨骼方案改为一个原创方向的SpriteFrame序列帧，另一向仅视觉节点翻转；移动和跑动分别以约4–6帧为循环草排起点，情绪和进稳离座按状态过渡管理。左右×五态、座点、脚点、状态取消、非镜像文字/世界光影均列入后续Creator与QA核验；其他动态骨骼对象各自单页。"
+    },
+    {
+      "severity": "INFO",
+      "message": "出图管线按每批资源版本列Art/Tech双签、来源及图片/字体/工具许可、真实帧图或骨骼附件尺寸、图集页数、材质、合批与内存；单图集不被误写为一DrawCall。旧概念图、SVG及Demo没有被登记为正式资源。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "720×1280竖屏画布与横向街景、镜头合法边界、双向坐姿、目标机性能和骨骼工具兼容仍待实际资源与设备测量。本评审只通过技术设计，不代表Creator实现或运行质量PASS。"
+    }
+  ],
+  "next_action": "Producer核对七项Required Artifact后将本技术设计v0.2推进USER_REVIEW，等待用户对本专业版本明确批准。获批后仍须相应Art/UI/VFX规格、逐次出图双签及Client/QA开工包门禁，才能作为正式实现输入。"
+}

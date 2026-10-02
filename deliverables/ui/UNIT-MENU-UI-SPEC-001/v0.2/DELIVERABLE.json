@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "owner": "ui",
+  "summary": "提交七项菜单 UI v0.2 规格：沿用已批准 v0.1 结构和孟桃对话，明确幽灵序列帧显示节点单独翻转、正式同源组件、字体和图片许可门槛。v0.1 SVG 仅作可编辑审阅示意；本交付不是正式 UI 图片或 Creator 实现。",
+  "artifacts": [
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/UI_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/COLOR_SYSTEM.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/COMPONENT_SPEC.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/SCREEN_STATES.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/VISUAL_REFERENCE_INDEX.md",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/RESOURCE_REUSE_AND_RIGHTS.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "七个顶层入口与第3项孟桃/幽灵子项可读；返回、重进、重置、繁忙/禁用与组合开关状态明确，Lab诊断控制与主体UI分离",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第1、2节；COMPONENT_SPEC.md 组件表；SCREEN_STATES.md 第1、2节。PASS 限于规格覆盖，非运行验收。"
+    },
+    {
+      "criterion": "孟桃对话只含明确标记的演示文字、打开/继续/关闭/重置和场景拖拽冲突处置，不新增剧情分支与经营UI",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第4节和 SCREEN_STATES.md 第3节；历史审阅图索引见 VISUAL_REFERENCE_INDEX.md。"
+    },
+    {
+      "criterion": "说明身份卡、按钮、图标、状态、字体与对话框的同源复用索引；仅翻转顾客序列帧显示节点，文字、身份卡、方向标签与世界UI不镜像，删除旧顾客骨骼表述",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第3、5节；COMPONENT_SPEC.md；RESOURCE_REUSE_AND_RIGHTS.md 第1节。"
+    },
+    {
+      "criterion": "引用已批v0.1可编辑关键界面与组件状态审阅图并标清其仅为示意，补充720×1280画布的镜头触控区域、中文可读性及目标设备后续验证；正式图像需另有源文件和运行证据",
+      "result": "PASS",
+      "evidence": "VISUAL_REFERENCE_INDEX.md 逐图引用 v0.1 三张 SVG；UI_SPEC.md 第2、5节和 RESOURCE_REUSE_AND_RIGHTS.md 第4节定义后续正式证据。PASS 只表示本版规格和索引完备。"
+    },
+    {
+      "criterion": "遵循ART_GUIDE及图片/系统字体/美术字体许可，记录实际使用、嵌入、分发与修改许可状态；未经授权的字体或参考图不得标为正式资产",
+      "result": "PASS",
+      "evidence": "COLOR_SYSTEM.md 与 RESOURCE_REUSE_AND_RIGHTS.md 第2、3节列出候选与待核证据，明确未获许可资产不得集成。"
+    }
+  ],
+  "assumptions": [
+    "720×1280 是现有 Creator 候选设计画布，非主体游戏最终屏幕方向或镜头数值。",
+    "v0.1 三张 SVG 的获批范围限于结构、交互和审阅示意；其文本与图形不进入正式生产。",
+    "旧 UNIT-PILOT-UI-SPEC-001 v0.1 仍是历史候选，不作为本版已批准生产资源。"
+  ],
+  "risks": [
+    "正式 UI 图片、字体文件、头像与 Creator 组件尚未制作或完成授权；本规格不能代替 Art＋Tech 出图前双签及独立/组合/目标设备取证。",
+    "竖屏候选画布下长街、牌匾、腰牌和对话小字可能不可读，需目标设备实测与跨角色适配评审。",
+    "本版色值仍是候选，须通过 Art 视觉 Review 和目标设备对照后方可锁定正式美术资产。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,53 @@
+{
+  "task_id": "UNIT-MENU-ART-DESIGN-001",
+  "owner": "art",
+  "summary": "七项菜单正式资源出图前美术方案 v0.2：将幽灵改为原创序列帧例外，保留孟桃和其他动态对象骨骼单页，建立独立分层、遮挡、来源、图集及逐次 Art/Tech 双签门禁；不声称实际资源已完成。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/LAYER_OCCLUSION_PLAN.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/GHOST_FLIPBOOK_PLAN.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ATLAS_PREFLIGHT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/PRODUCTION_GATE.md",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "把旧三类概念图与本版正式资源生产清单明确分开；列空背景、幽灵帧图、板凳、树花灯及奶茶店/孟桃各自可编辑母版、正式导出和未来主体同源身份的交付门槛，不以旧图或占位图冒充成品",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md、ASSET_MANIFEST.md、PRODUCTION_GATE.md 均标注正式源尚未制作，旧五姿态板禁止裁用。"
+    },
+    {
+      "criterion": "空背景保留天空远景、地面、河岸水面、桥与栏杆，奶茶店、角色、板凳、树花灯及各自特效为独立层/对象，不烘成全景",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md 与 LAYER_OCCLUSION_PLAN.md 列基础层、可切换对象和关键遮挡拍证位。"
+    },
+    {
+      "criterion": "幽灵用一个方向原创透明序列帧，另一向水平翻转覆盖左右五状态；移动/跑动等每循环动作以约4–6帧起步，列逐帧画布、原点、首尾接缝、透明边、板凳座点和非镜像元素检查，情绪及进稳离座按需要分段",
+      "result": "PASS",
+      "evidence": "GHOST_FLIPBOOK_PLAN.md 明确每循环动作预算、十格及进稳离座，禁旧骨骼与旧概念裁帧。"
+    },
+    {
+      "criterion": "列资产ID、母版/导出/骨骼附件、支点与极限包围盒；幽灵按实际帧图集/批次/内存，其他动态骨骼每对象单页草排；每次正式出图前 Art/Tech 双签尺寸、授权与性能，并标注尚未实际出图/实测的值",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md、LAYER_OCCLUSION_PLAN.md、ATLAS_PREFLIGHT.md 列签认字段并明确实际值 NOT_TESTED。"
+    },
+    {
+      "criterion": "保留奶茶杯吸管牌匾、木砖瓦店、孟桃唯一孟腰牌及已批准比例；画面原创，不复制附件或旧Demo资源；未有合法生产许可的项目标注阻塞",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md、REFERENCE_AUDIT.md、DESIGN_RATIONALE.md 保留紧凑木砖瓦奶茶店、杯吸管牌匾和唯一孟腰牌，来源不明阻止正式出图。"
+    }
+  ],
+  "assumptions": [
+    "UG_GHOST_01 原画方向暂建议向右；最终方向与真实帧率、尺寸、图集页数留给逐批 Art/Tech 签认。",
+    "桌椅与祈愿纸船/蜡烛的正式生产量未在本任务自动扩张，沿已选视觉意图等待范围确认。"
+  ],
+  "risks": [
+    "已批准概念没有可编辑逐帧、分层骨骼、真实图集或 Creator 资源，正式生产和性能验收均未执行。",
+    "参考图、字体及制作工具许可尚有待核实项，正式资源因此未被放行。",
+    "横向街景与现有竖屏 Creator 设置存在视窗和小字可读性风险，待 Tech/Client/QA 目标设备检验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

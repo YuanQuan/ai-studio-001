@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-UI-SPEC-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已实读 UI_SPEC、COLOR_SYSTEM、COMPONENT_SPEC、SCREEN_STATES、VISUAL_REFERENCE_INDEX 和 RESOURCE_REUSE_AND_RIGHTS。夜蓝、暖灯橙、浅纸、木框与未加宽非像素夜市方向一致；候选色值明确未锁定，角色与店铺主体仍由 Art 控制。"
+    },
+    {
+      "severity": "INFO",
+      "message": "身份卡、杯吸管图标、按钮及状态按同源组件复用；仅翻转幽灵序列帧显示节点，文字、方向标签、身份卡及世界光影保持正向。孟桃对话明确是演示，不加入未经批准的经营信息或剧情。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 三张 SVG 被标为获批结构与状态的审阅示意，未充作正式 Sprite、字体或 Creator 组件；字体文件、商用/嵌入/分发/修改许可和 Art+Tech 出图前签认仍是正式资源门禁。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前没有正式头像、字体、UI 切图和目标设备校色证据；后续生产应逐项核验小屏中文可读性、透明边与场景光下的实际对比，不能据本规格声称资源已完成。"
+    }
+  ],
+  "next_action": "提交 Master 对 UI v0.2 的综合 Review 和用户审批；获批后再按实际资产逐次 Art/Tech 出图签认，不直接导入审阅 SVG。"
+}
