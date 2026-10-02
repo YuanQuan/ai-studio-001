@@ -4,7 +4,7 @@
   "type": "art",
   "owner": "art",
   "parent": "UNIT-PILOT-SELECT-001",
-  "objective": "依据已批准的最小产品规格和出图前美术、技术预案，从零提出可审阅的孟桃、奶茶店及同屏关系概念图；保留设计理由、来源与版权风险记录，不将概念图冒充可集成骨骼资源。",
+  "objective": "按用户选定未加宽非像素全景重做孟桃奶茶店独立单元图稿及可执行拆件方案，替代旧v0.4视觉，保持骨骼单页与主体同源边界",
   "inputs": [
     "tasks/UNIT-PILOT-PRODUCT-001/ARTIFACT_APPROVAL.json（v0.1 USER_APPROVED）",
     "deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md",
@@ -16,31 +16,39 @@
     "project/DECISIONS.md#DEC-UNIT-DIRECTION-002",
     "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.2/REVISION_BRIEF.md（上一轮修订历史）",
     "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.3/REVISION_BRIEF.md（上一轮修订历史）",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md（用户2026-10-01最新修订要求）"
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md（用户2026-10-01最新修订要求）",
+    "用户2026-10-02重启单元并替换旧版；v0.5/REVISION_BRIEF.md和ART-DIRECTION v0.4用户选定附件"
   ],
   "deliverables": [
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/ART_BRIEF.md",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/characters/mengtao-concept.png",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/scenes/milk-tea-shop-concept.png",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/scenes/mengtao-shop-relationship.png",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/ASSET_MANIFEST.md",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/DESIGN_RATIONALE.md",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REFERENCE_AUDIT.md",
-    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/DELIVERABLE.json"
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/PARTS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DELIVERABLE.json"
   ],
   "acceptance": [
     "分别呈现孟桃角色、奶茶店主体及二者同屏关系，所有图像标为原创概念稿而非正式生产资产",
     "孟桃为可爱卡通造型，仅腰牌有字形正确的‘孟’字，其余部位无此字；店铺为复古中式木构或砖房，标识统一为带吸管奶茶杯，纸盒牛奶只作无品牌陈列，奶茶机与空白价目表可辨，不预定真实商品名、数字价格或经营规则；仍不加入旅客四方向及尚未批准的成长状态",
-    "说明角色和店铺的造型、色彩、世界观关系及骨骼拆件可行性，不虚构已完成的图集、性能或Creator集成",
+    "说明新选定画风与角色/店铺关系，并提供独立ID/支点/遮挡/层级/单页骨骼对象PARTS_PLAN；不虚构图集、性能或Creator集成",
     "记录生成过程、参考与字体来源、版权/IP/外观相似风险，并对风险项作处置",
     "列明概念通过后仍需Art与Tech逐对象确认的图集和设备检查项"
   ],
-  "dependencies": ["UNIT-PILOT-PRODUCT-001", "UNIT-PILOT-ART-PREFLIGHT-001", "UNIT-PILOT-TECH-PREFLIGHT-001"],
+  "dependencies": [
+    "UNIT-PILOT-PRODUCT-001",
+    "UNIT-PILOT-ART-PREFLIGHT-001",
+    "UNIT-PILOT-TECH-PREFLIGHT-001"
+  ],
   "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "本任务限原创概念图，生成式输出不得直接进入Creator正式资产。",
     "PRODUCT-001总纲的当前未批准修订版不可将新增的三魂七魄视觉状态当作本任务输入。",
-    "概念交付经专业与Master Review后进入USER_REVIEW；正式拆件、骨骼图集与Client实现依旧锁定。"
+    "概念交付经专业与Master Review后进入USER_REVIEW；正式拆件、骨骼图集与Client实现依旧锁定。",
+    "2026-10-02 UNIT-RESTART-20261002：Art/Tech联合预检实际落盘（v0.5/ART_PREFLIGHT.md、TECH_PREFLIGHT.json），Owner已开始概念出图及拆件。",
+    "2026-10-02 UNIT-RESTART-20261002：新三图/拆件与来源/现有Creator审计实际落盘，5项验收PASS；Art/Tech/Master评审APPROVED仅概念，当前v0.5 USER_REVIEW；旧v0.4 REJECTED留档，工程未替换。"
   ]
 }

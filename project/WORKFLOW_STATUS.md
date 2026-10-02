@@ -1,17 +1,17 @@
 # 工作流状态
 
-Producer维护当前流程事实；更新时间：2026-10-02（Asia/Shanghai）。孟桃概念 v0.3 已按用户反馈退回，v0.4 完成概念评审并进入用户审阅。
+Producer维护当前流程事实；更新时间：2026-10-02（Asia/Shanghai）。UNIT-RESTART-20261002：用户退回加宽全景，选用未加宽非像素附件；孟桃奶茶店旧v0.4概念退回，v0.5重新制作。
 
 ## 汇总
 - 正式任务线：19
-- 待用户审批：3（PRODUCT-001；孟桃原创概念；横向主街美术基线v0.1）
+- 待用户审批：2（PRODUCT-001独立待审；孟桃奶茶新概念与拆件v0.5待审；主街v0.4仅用户选定参考范围已批准） <!-- UNIT-RESTART-20261002 -->
 - 当前产品文档任务阻塞：0
 - 历史初始化阻塞本轮未重新验证。
 
 ## 当前任务线
 | 任务 | 阶段 | Owner | 当前 Artifact | 版本 | 专业评审 | 用户审批 | 阻塞 | 下一动作 |
 |---|---|---|---|---|---|---|---|---|
-| ART-DIRECTION-FIRST-STREET-001 横向主街美术基线与建筑修订 | USER_REVIEW | art | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.3/ART_DIRECTION.md、ART_BRIEF.md、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、GENERATION_PROMPT.md、scenes/night-market-v0.6-original.png、scenes/night-market-v0.6-pixel.png、DELIVERABLE.json、ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json；project/ART_GUIDE.md | v0.3（含效果图v0.6 A/B） | 五项验收PASS；Art、Tech Lead及Master最终概念评审APPROVED | v0.1/v0.2退回留档；v0.3布局/原画方向采纳保持；本版A/B选型和原则细则待用户批准 | 无概念交付阻塞；正式源、骨骼单页图集、导航/手机采样/性能与Creator未验证 | Master呈现加宽六店、栏边桌椅、可爱地府A原插画/B轻像素供比较，用户选择并批准具体版本；正式生产另行签认审批 |
+| ART-DIRECTION-FIRST-STREET-001 横向主街美术基线与建筑修订 | DONE（选定参考恢复范围） | art | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md、REFERENCE_AUDIT.md、scenes/night-market-selected-reference.png、DELIVERABLE.json、ART_REVIEW.json、MASTER_REVIEW.json | v0.4（精确恢复用户附件） | 3项验收PASS；Art、Master APPROVED仅恢复参考 | USER_APPROVED仅未加宽非像素附件的比例/布局/画风；旧v0.3加宽A/B REJECTED | 无恢复参考阻塞；生产参数和新单元未批准 | 供孟桃v0.5概念参考；正式图集/骨骼/字体/Creator另经签认审批 | <!-- UNIT-RESTART-20261002 -->
 | PRODUCT-001 概要需求与模块分层 | USER_REVIEW | product | deliverables/product/PRODUCT-001/v0.8/PRODUCT_OUTLINE.md；BRAINSTORM_MAP.md；MINDMAP_AI_SNAPSHOT.md（同目录，交互图URL登记于交付包） | v0.8 | Master评审APPROVED；4项验收PASS | v0.8待用户确认；v0.7已退回 | 无 | Master呈现新版交互脑图、快照及影响说明供用户审阅 |
 | DEMO-001 核心场景全流程验证 Demo | DONE（产品规格阶段） | product | deliverables/product/DEMO-001/v0.1/DEMO_PRODUCT_SPEC.md；DELIVERABLE.json（同目录） | v0.1 | Master评审APPROVED；6项验收PASS | USER_APPROVED | 无 | Master创建并推进Tech Lead、Art、UI规格任务，逐阶段评审及用户审批 |
 | TECH-DEMO-001 Demo技术设计 | DONE | tech_lead | deliverables/tech_lead/TECH-DEMO-001/v0.2/TECH_DESIGN.md；REVIEW.md和DELIVERABLE.json（同目录） | v0.2 | Tech Lead自评完成；Master独立评审APPROVED；5项验收PASS | USER_APPROVED | 无 | Master编排后续Client/QA开工包，继续各阶段审批 |
@@ -30,7 +30,7 @@ Producer维护当前流程事实；更新时间：2026-10-02（Asia/Shanghai）�
 | UNIT-PILOT-PRODUCT-001 孟桃奶茶店产品规格 | DONE（产品规格） | product | deliverables/product/UNIT-PILOT-PRODUCT-001/v0.1/PRODUCT_SPEC.md；ACCEPTANCE.md；DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 技术结构/图集预算待后续评审 | Master按已批准规格推进后续专业阶段；各阶段仍需独立审批 |
 | UNIT-PILOT-ART-PREFLIGHT-001 出图前美术预案 | DONE | art | deliverables/art/UNIT-PILOT-ART-PREFLIGHT-001/v0.1/ART_BRIEF.md、PARTS_PLAN.md、ASSET_MANIFEST.md、REFERENCE_AUDIT.md、DESIGN_RATIONALE.md、DELIVERABLE.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.1 | Tech Lead与Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 无概念图或正式图集；出图还需逐对象签认 | 可供原创概念设计使用，不放行正式资源 |
 | UNIT-PILOT-TECH-PREFLIGHT-001 骨骼图集与同源接入预审 | DONE | tech_lead | deliverables/tech_lead/UNIT-PILOT-TECH-PREFLIGHT-001/v0.1/TECH_PREFLIGHT.md、CP_REVIEW.md、DELIVERABLE.json、MASTER_REVIEW.json（同目录） | v0.1 | Master评审APPROVED；4项交付验收PASS | USER_APPROVED | 目标设备、像素草排和真机性能尚缺；CP仍PROPOSED | 可供原创概念设计参考；正式出图与Creator实现仍锁定 |
-| UNIT-PILOT-ART-CONCEPT-001 孟桃与奶茶店原创概念 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.4/REVISION_BRIEF.md、ART_BRIEF.md、characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、DELIVERABLE.json、PRODUCT_SCOPE_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json（同目录） | v0.4 | 三张图与来源记录已落盘；5项验收PASS；Product范围、Tech Lead与Master评审APPROVED，仅限概念 | v0.1/v0.2/v0.3被用户退回；v0.4待用户明确决定 | 没有统一分层源、骨骼、图集、目标设备性能与Creator集成 | Master呈现三图及审阅要点；用户批准后再启动统一分层源和逐对象图集草排 |
+| UNIT-PILOT-ART-CONCEPT-001 孟桃与奶茶店原创概念 | USER_REVIEW | art | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md、characters/mengtao-concept.png、scenes/milk-tea-shop-concept.png、scenes/mengtao-shop-relationship.png、PARTS_PLAN.md、ASSET_MANIFEST.md、DESIGN_RATIONALE.md、REFERENCE_AUDIT.md、GENERATION_PROMPT.md、RESTART_AUDIT.md、DELIVERABLE.json、ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json | v0.5（替换旧概念待审版） | 3张实图与独立拆件/工程审计落盘；5项PASS；Art/Tech/Master APPROVED仅概念 | 旧v0.4 REJECTED留档；当前v0.5未批准 | 分层母版/骨骼单页图集/正式字体/设备/Creator接入尚未完成 | Master呈新三图与拆件；用户批准后推进真实生产资源与后续工程门禁 | <!-- UNIT-RESTART-20261002 -->
 
 ## 版本与边界
 - 用户于2026-09-30明确宣布旧整体Demo实施任务作废。DEMO-001及已批准专业规格保持历史审批事实，不再解锁旧整体Demo后续执行；CLIENT-CALIBRATION-DEMO-001、ART-OCCLUSION-DEMO-001 已取消，遮挡变更提案 CP-DEMO-OCCLUSION-001 停止。新「单元测试」系列从资源盘点草案重新审阅，未经用户确认不开发单元。
@@ -90,3 +90,7 @@ Producer维护当前流程事实；更新时间：2026-10-02（Asia/Shanghai）�
 2026-10-02：ART-DIRECTION-FIRST-STREET-001 v0.2完整方向包、v0.5 A原插画/B轻像素双图及来源/四次实际提示词档案已落盘；五项验收PASS，Art/Tech/Master最终Review均APPROVED仅概念。Task和Approval转USER_REVIEW，19个Task扫描无READY/IN_PROGRESS/REVISION空转，见tasks/ART-DIRECTION-FIRST-STREET-001/CONTINUITY_CHECK_v0.2.md。用户采纳v0.3布局/原画方向保留，v0.1退回记录保留；A/B选择、八条原则和正式生产未自动批准，Product与孟桃独立审批保持。
 
 2026-10-02：用户退回ART-DIRECTION-FIRST-STREET-001 v0.1效果图的桥和牌匾，并授权A原插画/B轻像素双版比较；v0.1 REJECTED归档，v0.2修订输入和参考真实存在，当前REVISION，Master与Art/Tech本轮持续产出。五项验收和三Review未齐，尚不可USER_REVIEW；待完成后执行结束前continuity check。已采纳v0.3布局/原画方向保留，八条原则未被推定全部拒绝。
+
+<!-- UNIT-RESTART-20261002 START -->
+2026-10-02：用户精确附件v0.4已原样恢复，三项验收PASS且Art/Master复核通过，仅该未加宽非像素视觉参考范围USER_APPROVED；旧加宽A/B及旧孟桃v0.4退回历史保留。孟桃v0.5三张新图、可执行拆件方案、来源/三次实际提示词与旧Creator真实UUID审计全部落盘；五项验收PASS，Art/Tech/Master概念Review APPROVED，Task/Approval转USER_REVIEW。19Task全量连续检查无空转READY/IN_PROGRESS/REVISION，本轮停在新概念用户审阅门禁；正式骨骼/图集/同源Prefab/Creator工程替换未执行，也不移用旧桌面FPS记录证明新性能。
+<!-- UNIT-RESTART-20261002 END -->

@@ -1,0 +1,11 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"v0.5 三张概念图和独立拆件规划通过出图前技术条件检查，依据 TECH_PREFLIGHT.md；Art 须同步签认。仅概念出图放行。"},
+    {"severity":"INFO","message":"MT_CHAR_01 与 MT_SHOP_MOTION_01 各对象所有附件单纹理页；1024²/512²仅草排候选，无正式图集、骨骼、Creator 导入或真机合批性能通过结论。"},
+    {"severity":"INFO","message":"角色脚点、柜台前沿和可动件挂点独立；店长和店铺单视角，旅客四方向另单元。"}
+  ],
+  "next_action": "Art 完成本轮共同签认后生成三张新概念与 PARTS_PLAN；Tech 查看实图后复核。正式生产另补实际边界、草排、导出/设备参数并重新联合签认。"
+}

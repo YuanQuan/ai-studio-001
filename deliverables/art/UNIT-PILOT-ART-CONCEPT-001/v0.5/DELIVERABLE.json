@@ -1,0 +1,67 @@
+{
+  "task_id": "UNIT-PILOT-ART-CONCEPT-001",
+  "owner": "art",
+  "summary": "按用户精确选定未加宽非像素全景重做孟桃、无人奶茶店、工作关系三张新概念，替换旧v0.4当前入口，提供独立对象/支点/遮挡/单页拆件候选；不声称生产源或Creator完成。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/REVISION_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/characters/mengtao-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/milk-tea-shop-concept.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/PARTS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/GENERATION_PROMPT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_PREFLIGHT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_REVIEW.json",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/TECH_PREFLIGHT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/TECH_REVIEW.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/TECH_REVIEW.json",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/RESTART_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/PRODUCT_SCOPE_CHECK.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/REPLACEMENT_SCOPE.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/MASTER_REVIEW.json",
+    "project/art_reference/misc/UNIT-PILOT-ART-CONCEPT-001-v0.5.md",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "分别呈现孟桃角色、奶茶店主体及二者同屏关系，所有图像标为原创概念稿而非正式生产资产",
+      "result": "PASS",
+      "evidence": "三张新PNG已落盘、view_image逐张核验；人物1254² RGBA、店1536×1024 RGBA、关系1536×1024 RGB。ART_BRIEF标明非生产。"
+    },
+    {
+      "criterion": "孟桃为可爱卡通造型，仅腰牌有字形正确的‘孟’字，其余部位无此字；店铺为复古中式木构或砖房，标识统一为带吸管奶茶杯，纸盒牛奶只作无品牌陈列，奶茶机与空白价目表可辨，不预定真实商品名、数字价格或经营规则；仍不加入旅客四方向及尚未批准的成长状态",
+      "result": "PASS",
+      "evidence": "人物和关系唯一腰牌字；独立店无人物，奶茶匾/杯吸管/纸盒/机器/空价板可辨，PRODUCT_SCOPE_CHECK记录四产品身份，未加订单/经济/旅客。"
+    },
+    {
+      "criterion": "说明新选定画风与角色/店铺关系，并提供独立ID/支点/遮挡/层级/单页骨骼对象PARTS_PLAN；不虚构图集、性能或Creator集成",
+      "result": "PASS",
+      "evidence": "PARTS_PLAN记录候选normalized挂点、同root店后/前柜、人物柜后手高于台面、双手替换同锚同页、布帘三片单对象；TECH_REVIEW批准概念。"
+    },
+    {
+      "criterion": "记录生成过程、参考与字体来源、版权/IP/外观相似风险，并对风险项作处置",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT/GENERATION_PROMPT保留三次实际工具输入、全部prompt、原输出路径与权利初筛，project/art_reference同步，alpha问题明示。"
+    },
+    {
+      "criterion": "列明概念通过后仍需Art与Tech逐对象确认的图集和设备检查项",
+      "result": "PASS",
+      "evidence": "ART_PREFLIGHT+TECH_PREFLIGHT签认概念，PARTS_PLAN/Brief列生产分层、光晕剥离、姿态草排、单页、导入alpha/合批/设备门禁；1024²/512²仅候选。"
+    }
+  ],
+  "assumptions": [
+    "场景选定附件不替代新单元具体图稿审批。",
+    "人物工作位先用相对比例试装，生产坐标/atlas页尺寸须实测签认。"
+  ],
+  "risks": [
+    "店概念有半透明环境光晕（alpha最高254），不能直接生产；正式统一分层源须重绘剥离。",
+    "没有骨骼、动画、atlas、Prefab或新Creator入口；旧九单元仍旧资源，替换范围见REPLACEMENT_SCOPE。",
+    "无字体文件输入不代表正式字体许可；字形/标识许可与近似复核、手机最小可读性尚未生产验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

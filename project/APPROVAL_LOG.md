@@ -70,3 +70,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - ART-ASSET-DEMO-001 v0.2已USER_APPROVED，可集成资产阶段DONE；v0.1保留为未提交用户审批的草稿，审批状态见 `tasks/ART-ASSET-DEMO-001/ARTIFACT_APPROVAL.json`。
 - PRODUCT-001仍未获用户批准，其独立下游保持关闭。
 - 用户已批准TECH-PERF-DEMO-001 v0.1、Client Brief v0.2与QA Plan v0.2，各版本独立登记；这些历史批准未覆盖当前新单元。CLIENT-CALIBRATION-DEMO-001 v0.3 与 ART-OCCLUSION-DEMO-001 v0.1 均未获用户批准，2026-09-30 随旧整体 Demo 作废而取消；已落盘的部分成果仅作历史资料。UNIT-TEST-PLAN-001 v0.1 的九单元实施范围已由用户明确要求并批准；UNIT-SAMPLES-001 v0.1 样例成果仍在 REVIEW，尚未获用户验收。
+
+<!-- UNIT-RESTART-20261002 START -->
+| 2026-10-02 | ART-DIRECTION-FIRST-STREET-001 | 加宽全景A/B | v0.3 | tasks/ART-DIRECTION-FIRST-STREET-001/ARTIFACT_APPROVAL_v0.3.json | REJECTED | 用户“加宽版不好，还是还原到上一个版本”，本轮附件是指定视觉 | v0.4附件恢复；仅非像素、未加宽参考范围 |
+| 2026-10-02 | UNIT-PILOT-ART-CONCEPT-001 | 旧孟桃奶茶店三图 | v0.4 | tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL_v0.4.json | REJECTED（按新基线替换） | 用户要求重新开始单元示例并替换之前版本 | v0.5新三图及拆件实产，未批准 |
+| 2026-10-02 | ART-DIRECTION-FIRST-STREET-001 | 用户精确附件恢复参考 | v0.4 | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/DELIVERABLE.json；tasks/ART-DIRECTION-FIRST-STREET-001/ARTIFACT_APPROVAL.json | USER_APPROVED（限定范围） | 用户明确恢复最新附件未加宽非像素版本，Art/Master复核通过 | 仅视觉参考；不批准新单元或生产参数 |
+| 2026-10-02 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃/无人店身/关系三图及独立拆件 | v0.5 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DELIVERABLE.json；tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL.json | USER_REVIEW | 5项PASS，Art/Tech/Master概念评审APPROVED；待用户具体批准 | 替换旧v0.4当前待审版，正式生产及Creator仍锁定 |
+<!-- UNIT-RESTART-20261002 END -->

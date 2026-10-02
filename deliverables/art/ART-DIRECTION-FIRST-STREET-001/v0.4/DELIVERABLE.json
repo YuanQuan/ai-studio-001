@@ -1,0 +1,38 @@
+{
+  "task_id": "ART-DIRECTION-FIRST-STREET-001",
+  "owner": "master",
+  "summary": "根据用户明确指令，原样归档最新附件并恢复未加宽非像素视觉基准；旧加宽/像素稿留历史，孟桃奶茶单元重新制作v0.5。",
+  "artifacts": [
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/REFERENCE_AUDIT.md",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/scenes/night-market-selected-reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/ART_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/MASTER_REVIEW.json",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/DELIVERABLE.json",
+    "project/ART_GUIDE.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "归档图与最新附件字节一致，尺寸/哈希/来源可追溯，未经重绘",
+      "result": "PASS",
+      "evidence": "原样附件归档；2172×724 RGB，SHA256见REFERENCE_AUDIT；Master实际查看。"
+    },
+    {
+      "criterion": "恢复附件未加宽非像素风格，保留六牌、栏杆侧桌椅、通路、桥水口和可爱装饰",
+      "result": "PASS",
+      "evidence": "用户附件实际可见：六店比例、栏杆侧桌椅、完整石拱水口、六牌和友好装饰。"
+    },
+    {
+      "criterion": "历史加宽双稿留档但不作当前制作源；选择不代批准新单元或生产技术参数",
+      "result": "PASS",
+      "evidence": "SELECTED_REFERENCE、Master Review明确审批范围和历史保留；新单元v0.5独立审批。"
+    }
+  ],
+  "assumptions": [
+    "最新消息附图为用户要求恢复的准确视觉版本，不用旧候选替代。"
+  ],
+  "risks": [
+    "未知参考权利链、分层母版、骨骼、单页图集与设备性能不因视觉选择通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
