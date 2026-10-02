@@ -31,12 +31,25 @@
 
 正式独立对象、候选ID/挂点与前后层见[本轮生产前Manifest](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md)与PARTS_BOUNDING_PLAN；MT_CHAR_01/MT_SHOP_STATIC_01/MT_SHOP_MOTION_01尚无分层/骨骼/atlas文件。旧pilotv0.4当前入口被替换，历史保留；老Creator九示例尚未替换代码或资源。
 
-## 新七菜单美术候选 v0.1
+## 新七菜单历史美术候选 v0.1
 
 | ID | 图稿 | 实际规格 | 状态 |
 |---|---|---|---|
-| UC_BASE_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/scenes/empty-scene-concept.png | RGB PNG 2172×724 | 空底板概念待审，固定蓝远景与可切换绿柳区分 |
-| UC_GHOST_BENCH_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/characters/ghost-customer-concept.png | RGBA PNG 1536×1024 | 原右向5姿态/独立空板凳概念待审；左向仅同源翻转 |
-| UC_ELEMENTS_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/props/toggle-elements-concept.png | RGBA PNG 1536×1024 | 柳树/花草簇/灯3类概念待审，非合并运行资产 |
+| UC_BASE_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/scenes/empty-scene-concept.png | RGB PNG 2172×724 | 历史候选，所属Art v0.1整体REJECTED；固定蓝远景与可切换绿柳仍须视觉区分 |
+| UC_GHOST_BENCH_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/characters/ghost-customer-concept.png | RGBA PNG 1536×1024 | 历史五态/独立空凳概念，所属Art v0.1整体REJECTED；不可裁作最终帧序列 |
+| UC_ELEMENTS_CONCEPT_01 | deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/props/toggle-elements-concept.png | RGBA PNG 1536×1024 | 历史柳树/花草/灯候选，所属Art v0.1整体REJECTED；尚非可集成独立资产 |
 
-拟独立UG_GHOST_01/BENCH_01/UE_TREE_01/UE_GRASS_01/UE_LANTERN_01与基础层详见[七菜单Manifest](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ASSET_MANIFEST.md)和LAYER_OCCLUSION_PLAN/ATLAS_PREFLIGHT。透明板有环境软晕，母版/骨骼/真实单页/UUID尚未交付；未知权利只研究、正式许可待核验，不直接裁PNG入Creator。
+拟独立UG_GHOST_01/BENCH_01/UE_TREE_01/UE_GRASS_01/UE_LANTERN_01与基础层的历史清单见[七菜单Manifest v0.1](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ASSET_MANIFEST.md)。旧LAYER_OCCLUSION_PLAN/ATLAS_PREFLIGHT只保留追溯，幽灵骨骼方案被DEC-004覆盖；透明展示板有环境软晕，不能直接裁PNG作帧序列/Creator资源。
+
+## 当前正式资源方向｜DEC-UNIT-FINAL-ASSET-004
+
+[Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md)为正式资源与幽灵序列帧修订候选，仍待本版用户批准。当前无新幽灵正式逐帧母版、透明帧、真实图集或Creator稳定资源引用完成证据。
+
+| 对象/ID候选 | 当前制作方式 | 正式交付门槛 |
+|---|---|---|
+| UG_GHOST_01 | 一个原方向原创透明序列帧，另一方向水平翻转；不使用骨骼 | 原创可编辑逐帧源；需循环动作以每动作约4–6帧为预算起点；左右×五状态十格、首尾循环/节拍、原点/体量/透明边、板凳接触与遮挡；真实图集页数/材质/合批/内存签认 |
+| BENCH_01 | 独立可复用静态道具/前后遮挡片候选 | 不烘进顾客帧，两向座点、进稳离及关闭板凳安全退出可检 |
+| MT_CHAR_01、MT_SHOP_MOTION_01、UE_TREE_01、UE_GRASS_01、UE_LANTERN_01 | 动态对象继续骨骼，每对象附件单页 | 实际可编辑分件/骨骼源、极限pose包围盒、真实单页导出及Creator/目标设备证据 |
+| MT_SHOP_STATIC_01与背景基础层 | 独立静态分层 | 材料/比例与已选风格一致；去除烘底环境软晕，灯影独立；背景不烘入可切换对象 |
+
+上述ID沿候选对象索引，正式资源身份和目录由获批Tech/Art契约锁定，不从此表推断文件已存在。每次正式出图前Art/Tech联合核对原创来源、版权/IP与字体/工具许可、动作/镜像、像素尺寸/透明留白及图集/合批；缺许可不得生产集成。单元、组合与未来主体最终引用同一批准源/导出/资源版本，共用UI/VFX；Lab控制可独立。Product v0.2、Art生产方案与正式资源须逐阶段审批；旧v0.1交付正文留档不改写。

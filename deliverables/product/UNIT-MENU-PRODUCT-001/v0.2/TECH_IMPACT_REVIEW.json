@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已实读本版PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT及Task、DEC-UNIT-FINAL-ASSET-004、CP-UNIT-FINAL-ASSET-FLIPBOOK-002。七顶层入口和3A/3B、空底板镜头、组合装配、旧九项迁移与左右×五状态十格保留；新决定只把幽灵从骨骼改为单方向原创序列帧，不改变孟桃/店铺/动态树花灯的骨骼单页要求。产品范围技术上可进入专业v0.2设计，当前不能据此宣称正式资源或Creator已完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator 3.8官方AnimationClip/SpriteFrame机制支持帧序列与循环模式，故幽灵可由同一SpriteFrame序列驱动移动/跑动循环，高兴/沮丧一次动作加保持帧、坐姿进/稳/离分别管理；约4–6帧是各需循环动作的预算起点，不是五状态合计或强制每态循环。后续Tech/Client须明确帧顺序、播放采样率、完成/取消事件和切状态清理，Art/QA须实际看首尾接缝与动作辨识；未运行前不锁定帧率。依据：https://docs.cocos.com/creator/3.8/manual/en/animation/animation-clip.html 、https://docs.cocos.com/creator/3.8/manual/en/animation/edit-animation-clip.html 、https://docs.cocos.com/creator/3.8/api/en/class/AnimationClip 。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "左右翻转应只作用幽灵视觉Sprite节点；世界位移方向、碰撞/点击区域、地影、文字/UI和独立BENCH_01世界座点保持逻辑坐标。逐帧透明裁切/Packable、SpriteFrame原点与尺寸变化可能使脚点和坐姿抖动；正式帧母版需统一画布/脚点/接触基准，左右各验移动、跑动、情绪与进座/稳坐/离座，并检查板凳移除或快速切态。Creator SpriteFrame提供trim/packable配置，但效果须在项目中实测：https://docs.cocos.com/creator/3.8/manual/en/asset/sprite-frame.html 。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "幽灵序列帧不再受骨骼对象单页约束，但须在正式出图前按五状态实际帧尺寸、透明留白、padding/bleed、材质、采样和目标平台纹理格式排图并双签。共用图集只是有利于合批，不保证一DrawCall；Creator 3.8的2D批次还要求相同材质、混合/深度状态、同源纹理与相邻渲染顺序，遮挡片、UI和VFX可能断批。需在Web/微信/抖音目标设备记录实际页数、压缩回退、纹理内存、DrawCall、帧时及alpha边缘，不能从4–6帧或PNG文件大小推断性能。依据：https://docs.cocos.com/creator/3.8/manual/en/asset/atlas.html 、https://docs.cocos.com/creator/3.8/manual/en/ui-system/components/engine/ui-batch.html 。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ACCEPTANCE D00已分开两个证据节点：单元阶段凭原创可编辑源、权利/导出、稳定资源ID/Prefab与Creator真机、独立/组合双入口一致性验收为可复用正式资源；尚未建立的未来主体三入口实测标NOT_TESTED，接入时复验同一UUID/版本且不得重做一套。此分期不会把当前单元完成无期限绑到主体场景，也不会虚称未来接入已验证。旧概念板、SVG、旧Demo和占位图不能计正式资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现仓库Creator 3.8.8工程仍是720×1280且旧UnitSamples/UnitSampleGallery为九项集中Demo；未见新幽灵正式逐帧资源、图集或七项Prefab。原Tech/Art/VFX v0.1已REJECTED，UI v0.1仅结构/交互USER_APPROVED；下游需按Product v0.2获批后分别修订技术、资产和VFX/UI冲突语句，保留同源场景/Prefab及镜头方向但不得消费旧幽灵Spine方案或概念PNG裁图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "若约4–6帧在目标机无法满足循环自然、形体稳定或五态可辨，Art/Tech需给出帧数、贴图面积、批次/内存、质量与授权的可审阅方案，经Master组织变更和用户批准；不能静默大幅增帧、制作反向专属帧或退回骨骼。版权/字体/逐帧制作工具许可仍是正式生产门禁，Product本版没有擅自新增经营、剧情或服务端规则。"
+    }
+  ],
+  "next_action": "Master汇总六专业真实影响评审并将Product v0.2交用户审批；获批后由Tech Lead提交改为SpriteFrame序列、左右镜像/座姿状态、图集与性能实测契约的TECH_DESIGN v0.2，Art/VFX/UI修订受影响规格并逐阶段获用户批准，Client/QA再按正式开工包制作和取证。"
+}

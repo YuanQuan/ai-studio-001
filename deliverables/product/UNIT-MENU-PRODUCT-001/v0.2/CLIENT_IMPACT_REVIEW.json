@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已对照 PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT 与 DEC-UNIT-FINAL-ASSET-004。七个菜单可按共用底板、独立对象与组合入口实现；第3项保留孟桃和幽灵两个子入口。当前仓库的旧 UnitSamples/DemoScene 和 demo 资产只可作历史对照，不能作为新七菜单正式资源完成证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵改为单方向原创透明序列帧后，客户端应对同一帧资源播放移动、跑动及情绪/坐姿过渡，仅翻转顾客视觉节点；文字、不可镜像挂件、地影、世界受光与座位控制保持独立。左右乘五状态共十格均需在 Creator 中实际验证，约4–6帧是循环动作预算起点，不应对所有状态强套循环或同一帧数。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "坐姿与前后遮挡取决于逐帧统一原点、顾客脚点、独立板凳座点及对象层级；水平翻转后的坐点偏移、板凳移除时的安全离座、快速切换状态时的旧位移和帧播放终止，须在后续 Tech 设计和 Client FEATURE_BRIEF 中明确，不能只靠美术画面推断通过。产品 v0.2 已给出外显验收结果，暂不构成产品稿阻塞。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "同一正式 Prefab/资源身份应供独立入口与组合入口实例化，并将资源版本、依赖、加载释放及重置行为做双入口对照；未来主体入口尚未接入时按 D00 标 NOT_TESTED，不能宣称三入口实测。Lab 菜单和测试位置控制须与未来可复用对象逻辑分层，避免把演示控制带进主体。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "镜头左右拖拽、缩放边界与对话 UI 输入优先级需结合目标设备屏幕方向和安全区实测；现有 720×1280 设置与横向长街参考图存在裁切和小字可读风险，具体镜头/适配参数留待 Tech/UI/Client 正式规格及真机确认。正式图集、材质、骨骼数据版本、贴图内存和实际合批均不可因规格写明而视作已验证。"
+    }
+  ],
+  "next_action": "Product v0.2 可进入其他专业及 Master 评审和用户审批；获批后 Client 依据正式获批的 Product、Art、UI、VFX、Tech 规格，先提交 FEATURE_BRIEF 并与 Tech Lead 对齐共用 Prefab、序列帧状态机、镜头、遮挡、资源生命周期和性能验证，连同 QA TEST_PLAN 通过开发门禁后再实现。"
+}

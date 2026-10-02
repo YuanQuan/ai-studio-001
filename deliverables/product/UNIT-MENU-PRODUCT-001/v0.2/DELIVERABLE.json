@@ -1,0 +1,56 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "owner": "product",
+  "summary": "在已批七项菜单产品范围上形成 v0.2 修订：单元运行产物须为未来主体可直接同源复用的正式资源；幽灵顾客以一个原创方向的序列帧水平翻转覆盖左右五状态，其他动态对象继续骨骼单页。当前交付为产品规格与验收口径，正式资源和 Creator 实现尚未完成。",
+  "artifacts": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/ACCEPTANCE.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/FLOW.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "七项顶层菜单逐项保留用户语义，第3项清楚区分孟桃店长和幽灵顾客的可切换动作，说明当前只制作一个店铺和一位店长的示例范围",
+      "result": "PASS",
+      "evidence": "PRD.md 第2、3节逐项定义七入口与第3项双子入口；ACCEPTANCE.md A、B组逐项给后续运行验收。"
+    },
+    {
+      "criterion": "定义空场景拖拽/缩放、各单元独立展示与重置、组合场景逐项加入和移除、遮挡观察及异常/边界条件，避免复制另一套逻辑或美术",
+      "result": "PASS",
+      "evidence": "PRD.md 第3节和 FLOW.md 定义镜头、返回/重置、单元与组合流程、遮挡和异常；ACCEPTANCE.md B01、B08、B09、D03 规定取证。"
+    },
+    {
+      "criterion": "明确单元实际输出资源作为未来主体同源正式资源的交付门槛，不以概念/旧Demo/占位图充数；顾客为单方向约4–6帧可循环序列帧、另一向水平翻转；五状态左右、坐姿及连续切换验收不减",
+      "result": "PASS",
+      "evidence": "PRD.md 第3、4节明确正式资产身份与幽灵动画；ACCEPTANCE.md B04、C组十格矩阵和 D00。约4–6帧适用于需循环动作的预算起点，情绪和坐姿按其表现时序验收。"
+    },
+    {
+      "criterion": "明确幽灵以外动态骨骼对象仍遵守各对象单页，幽灵改按序列帧图集/合批实测；每次正式出图前Art/Tech联合签认，并保持可复用UI、图片字体授权和目标设备验证",
+      "result": "PASS",
+      "evidence": "PRD.md 第4、5节与 ACCEPTANCE.md D01–D06 分别列对象差异、联合签认、图集/性能、版权、共用 UI 与真机证据。"
+    },
+    {
+      "criterion": "列出与已批准孟桃产品及四份待审专业v0.1的关系、旧九菜单任务的替代范围、受影响角色与重新审批门禁，不把待审稿当正式输入",
+      "result": "PASS",
+      "evidence": "PRD.md 第1、6节及 CHANGE_IMPACT.md 记录已批/待审边界、旧任务取消、新决定覆盖和六专业重评及用户审批。"
+    },
+    {
+      "criterion": "对每项给出可在Creator运行与QA取证的验收条件，不新增价格、订单、收益、主线剧情或尚未批准的角色/商品规则",
+      "result": "PASS",
+      "evidence": "ACCEPTANCE.md A–D 给未来 Creator/QA 逐项证据；PRD.md 限定演示文案、店铺与角色范围。PASS 表示规格覆盖，不代表实现或 QA 已通过。"
+    }
+  ],
+  "assumptions": [
+    "本阶段只验收正式资源在单元独立与组合入口的同源可复用性；主体尚未接入，其第三入口同一资源 ID/版本实测列后续复验。",
+    "具体序列帧帧率、最终帧数、图集页数/尺寸、骨骼作者工具和目标设备预算由 Art/Tech 正式版本与实测确定。",
+    "M00/M10/M11 仅为候选模块索引，待产品总纲批准；本版不确立新主体游戏架构。"
+  ],
+  "risks": [
+    "单方向序列帧镜像后的不对称细节、接触点、坐姿及循环缝需要 Art/Tech/QA 在正式资产上核验；另一向新绘件须另提变更并获用户批准。",
+    "幽灵图集打包、透明边、内存和目标设备表现尚无正式实测；超出预算须专业重评，不可静默恢复骨骼或堆帧。",
+    "受影响的 Art/Tech/UI/VFX 等旧稿与用户新决定可能冲突，需各角色修订并获用户审批后才能供 Client 正式实现。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

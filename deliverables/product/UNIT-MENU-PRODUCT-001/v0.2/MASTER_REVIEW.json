@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对用户七项菜单原始要求、2026-10-02新增的正式资源与顾客序列帧要求、DEC-UNIT-FINAL-ASSET-004、Product v0.2四份正文和交付清单。七个顶层入口、第3项孟桃与幽灵子入口、空场景镜头、独立样例与组合遮挡均保留；未加入新的经营、剧情或服务端规则。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Product v0.2明确单元实际运行产物须是未来主体同源正式资源，不能用概念图、SVG示意、旧Demo或占位图充数。单元阶段用可编辑源、权利、正式导出、稳定资源身份、Creator和目标设备、独立/组合双入口证据判断可复用；尚未建立的主体入口实测列后续NOT_TESTED，不冒称已经通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵顾客采用一个原方向的原创透明序列帧，另一方向水平翻转；移动/跑动等循环动作以每动作约4–6帧为预算起点，首尾自然衔接须实测。高兴、沮丧和坐姿按动作与过渡需要设计，左右×五状态十格、进稳离座、快速切换和遮挡验收未缩减。孟桃、店铺动态件及决定动态的树花灯仍按骨骼与各对象单页；幽灵改按真实帧图集、合批和内存测量。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核对Task要求的13个Artifact中除本Master Review外12个均存在；Product DELIVERABLE六项验收结果逐字覆盖Task六条标准且均为规格层PASS；Product、Tech Lead、Art、UI、VFX、Client、QA七份角色评审均为APPROVED。各评审中对后续正式规格、坐姿/节点层级、灯光清理、图集、字体许可和目标设备取证的细化意见须保留为下游门禁，不是已完成实现的证据。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "已批UI v0.1仅保留结构和交互效力，旧顾客骨骼翻转句需在UI后继版本替换；Tech、Art、VFX v0.1因幽灵骨骼冲突整版退回。批准本产品稿不能恢复这些旧契约，也不能跳过Art/Tech每次正式出图前联合签认、各专业用户审批、Creator实现及QA实际报告。"
+    }
+  ],
+  "next_action": "Producer核对完整Artifact与专业评审，将UNIT-MENU-PRODUCT-001 v0.2推进USER_REVIEW并记录版本路径；Master向用户呈本版正式产品规格请求明确批准。用户批准后再编排Tech/Art/UI/VFX正式修订及资源制作，逐阶段经专业与用户审批，之后方可进入Client实现和QA实测。"
+}

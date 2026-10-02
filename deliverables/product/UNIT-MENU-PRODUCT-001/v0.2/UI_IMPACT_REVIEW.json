@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-PRODUCT-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对 PRD、ACCEPTANCE、FLOW、CHANGE_IMPACT v0.2 与 DEC-UNIT-FINAL-ASSET-004：七个顶层菜单及 3A/3B 子入口保持原有信息架构；第 5 项共享身份组件、第 6 项孟桃演示对话及第 7 项组合入口的语义一致，未增加经营 HUD、正式剧情或新店长。"
+    },
+    {
+      "severity": "INFO",
+      "message": "单元中的正式 UI 组件、图标和状态资源必须以同一源服务独立入口、组合入口及后续主体接入；七菜单导航、诊断与动作控制明确属于 Lab。旧 v0.1 的审阅 SVG 和候选颜色不能作为最终生产资产；正式 UI 仍需来源、许可、Art/Tech 出图前签认、稳定引用及目标设备可读性证据。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "已批准的 UNIT-MENU-UI-SPEC-001 v0.1 仅保留结构/交互效力，其 UI_SPEC.md 第 50 行仍写有‘顾客骨骼整体左右翻转’。后续 UI v0.2 应改为顾客序列帧显示节点水平翻转，并保持方向标签、文字、身份卡、气泡、按钮在独立 UI 层正向显示；该历史文字不得用于实现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "系统字体与美术字体均须锁定实际文件、来源及运行、嵌入、分发、修改许可；修改字形不能替代授权。牌匾、腰牌‘孟’属于 Art 资产，UI 不从场景图裁切字形；当前 Noto Sans CJK SC 仍只是已记录的候选，具体文件与许可复核之前不得当成正式嵌入字体。"
+    }
+  ],
+  "next_action": "Product v0.2 可进入 Master 与用户评审。待本版 USER_APPROVED 后，UI 提交修订版规格，替换过时骨骼表述并登记正式共享组件、非镜像 UI 层、字体许可、资源来源与 Creator 双入口/目标设备验收；该 UI 专业版仍须 Art 视觉 Review 与用户单独批准，之后才可作为 Client 正式输入。"
+}
