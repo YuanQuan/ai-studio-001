@@ -1,0 +1,11 @@
+{
+  "task_id": "UNIT-PILOT-VFX-SPEC-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已核对VFX规格、资产需求、三项验收与Art评审。两段低亮动作线只强调孟桃摇杯，未引入订单、收益、成品或魔法语义；独立Lab与主体同源要求清楚。"},
+    {"severity": "INFO", "message": "工作状态由角色char_work结束驱动，短帘及可选VFX不阻塞；重复触发去重、复位清理、无VFX降级和Web/微信/抖音设备检查均有具体条件。"},
+    {"severity": "MINOR", "message": "128×128单页骨骼特效是候选资源，尚无原创分层、合法作者工具、真实打包、Creator导入或真机批次数据。Art评审仅通过文字视觉方向，正式图片仍需Art/Tech联合实测签认。"}
+  ],
+  "next_action": "提交VFX规格v0.1给用户审阅；批准后才创建原创特效资源任务，随正式角色动作校准时序和层级，逐项验证单页、同源与设备表现。"
+}

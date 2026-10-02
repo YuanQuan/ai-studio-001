@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">孟桃奶茶店身份 UI：主体与单元演示对照</title>
+  <desc id="desc">两侧使用相同身份卡。左侧主体仅显示店铺与店长，右侧单元 Lab 另有演示状态、启动和重置按钮及诊断信息。</desc>
+  <defs>
+    <linearGradient id="page" x2="0" y2="1"><stop stop-color="#0D1C3D"/><stop offset="1" stop-color="#1B3564"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#FFF0D4"/><stop offset="1" stop-color="#EFCFA4"/></linearGradient>
+    <linearGradient id="oak" x2="0" y2="1"><stop stop-color="#B8814B"/><stop offset="1" stop-color="#583622"/></linearGradient>
+    <linearGradient id="amber" x2="0" y2="1"><stop stop-color="#FFD19A"/><stop offset="1" stop-color="#EF9A4C"/></linearGradient>
+    <pattern id="stars" width="78" height="56" patternUnits="userSpaceOnUse"><circle cx="19" cy="21" r="1" fill="#B7C5E8" opacity=".42"/><circle cx="56" cy="43" r=".8" fill="#B7C5E8" opacity=".30"/></pattern>
+    <filter id="shadow" x="-30%" y="-50%" width="160%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#070F23" flood-opacity=".5"/></filter>
+    <clipPath id="mainScene"><rect x="72" y="190" width="620" height="415" rx="18"/></clipPath>
+    <clipPath id="labScene"><rect x="748" y="190" width="620" height="415" rx="18"/></clipPath>
+    <g id="cup-mark" fill="none" stroke="#633D27" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h34l-4 31H6z" fill="#E7AD72"/><path d="M25 8l8-12"/><path d="M6 18h28"/><circle cx="14" cy="27" r="2" fill="#69432C" stroke="none"/><circle cx="23" cy="28" r="2" fill="#69432C" stroke="none"/></g>
+    <g id="identity-card">
+      <rect x="0" y="0" width="278" height="92" rx="13" fill="#35251E" filter="url(#shadow)"/>
+      <rect x="3" y="3" width="272" height="86" rx="11" fill="url(#oak)" stroke="#D2A369" stroke-width="2"/>
+      <rect x="10" y="10" width="258" height="72" rx="7" fill="url(#paper)" stroke="#5A3927" stroke-width="2"/>
+      <use xlink:href="#cup-mark" transform="translate(24 24) scale(.9)"/>
+      <path d="M78 48h167" stroke="#D2AB7B" stroke-width="1"/>
+      <text x="76" y="42" fill="#35261F" font-size="24" font-weight="700">奶茶店</text>
+      <text x="77" y="69" fill="#6F5B50" font-size="17">店长</text>
+      <text x="132" y="69" fill="#35261F" font-size="17" font-weight="700">孟桃</text>
+    </g>
+  </defs>
+  <g font-family="Noto Sans CJK SC, sans-serif">
+    <rect width="1440" height="900" fill="url(#page)"/>
+    <rect width="1440" height="900" fill="url(#stars)"/>
+    <path d="M0 742c215-70 343 36 555-18s421-71 600 2 225 15 285-2v176H0z" fill="#102044" opacity=".7"/>
+    <text x="72" y="75" fill="#FFF0D4" font-size="31" font-weight="700">奶茶店 · 孟桃</text>
+    <text x="73" y="108" fill="#B9C7E1" font-size="16">共用身份组件 / 双入口示意</text>
+    <g transform="translate(1184 44)" opacity=".88"><circle cx="0" cy="0" r="22" fill="#F8D7A1"/><circle cx="8" cy="-8" r="22" fill="#102044"/></g>
+
+    <rect x="58" y="145" width="648" height="660" rx="24" fill="#223B69" stroke="#5A759E" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="734" y="145" width="648" height="660" rx="24" fill="#223B69" stroke="#5A759E" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="72" y="160" width="620" height="41" rx="11" fill="#102044"/>
+    <text x="91" y="187" fill="#F3DFC0" font-size="18" font-weight="700">主体游戏入口</text>
+    <text x="557" y="186" fill="#B9C7E1" font-size="13">公共层</text>
+    <rect x="748" y="160" width="620" height="41" rx="11" fill="#102044"/>
+    <text x="767" y="187" fill="#F3DFC0" font-size="18" font-weight="700">独立单元 Lab</text>
+    <text x="1192" y="186" fill="#B9C7E1" font-size="13">演示层</text>
+
+    <rect x="72" y="190" width="620" height="415" rx="18" fill="#172E5A"/>
+    <image x="72" y="190" width="620" height="415" preserveAspectRatio="xMidYMid slice" clip-path="url(#mainScene)" xlink:href="../../../../art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png"/>
+    <rect x="72" y="190" width="620" height="415" rx="18" fill="none" stroke="#102044" stroke-width="3"/>
+    <rect x="748" y="190" width="620" height="415" rx="18" fill="#172E5A"/>
+    <image x="748" y="190" width="620" height="415" preserveAspectRatio="xMidYMid slice" clip-path="url(#labScene)" xlink:href="../../../../art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png"/>
+    <rect x="748" y="190" width="620" height="415" rx="18" fill="none" stroke="#102044" stroke-width="3"/>
+
+    <use xlink:href="#identity-card" transform="translate(91 211) scale(.81)"/>
+    <use xlink:href="#identity-card" transform="translate(767 211) scale(.81)"/>
+    <rect x="1125" y="219" width="222" height="47" rx="23" fill="#EF9A4C" stroke="#FFD19A" stroke-width="2" filter="url(#shadow)"/>
+    <circle cx="1146" cy="242" r="5" fill="#523522"/>
+    <text x="1160" y="248" fill="#35261F" font-size="16" font-weight="700">演示 · 工作中</text>
+
+    <rect x="72" y="623" width="620" height="160" rx="15" fill="#102044" opacity=".92" stroke="#5A759E"/>
+    <text x="98" y="664" fill="#FFF0D4" font-size="18" font-weight="700">同一身份卡</text>
+    <text x="98" y="698" fill="#B9C7E1" font-size="15">只标记店铺和在岗店长</text>
+    <text x="98" y="729" fill="#B9C7E1" font-size="15">没有测试操作与经营状态</text>
+    <path d="M552 701h98" stroke="#D09B5B" stroke-width="2"/><circle cx="651" cy="701" r="4" fill="#D09B5B"/>
+    <rect x="748" y="623" width="620" height="160" rx="15" fill="#102044" opacity=".95" stroke="#5A759E"/>
+    <rect x="768" y="649" width="250" height="57" rx="12" fill="#9C948C" stroke="#C1B7A7" stroke-width="2"/>
+    <text x="819" y="685" fill="#35261F" font-size="18" font-weight="700">工作进行中</text>
+    <rect x="1031" y="649" width="142" height="57" rx="12" fill="#F3DFC0" stroke="#B88050" stroke-width="2"/>
+    <text x="1078" y="685" fill="#35261F" font-size="18" font-weight="700">重置</text>
+    <rect x="1185" y="649" width="162" height="57" rx="12" fill="#243F73" stroke="#6680A5"/>
+    <text x="1213" y="682" fill="#D4DFF1" font-size="14">Lab 诊断</text>
+    <text x="768" y="747" fill="#B9C7E1" font-size="14">工作中主按钮禁用；重置由状态适配器确认</text>
+
+    <text x="72" y="852" fill="#B9C7E1" font-size="13">场景使用已批准 v0.5 关系概念图作尺寸与视觉参照；身份卡与控制区为本版可编辑 SVG，均非生产 Sprite。</text>
+  </g>
+</svg>

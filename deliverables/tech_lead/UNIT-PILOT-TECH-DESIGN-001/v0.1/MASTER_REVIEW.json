@@ -1,0 +1,13 @@
+{
+  "task_id": "UNIT-PILOT-TECH-DESIGN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "依据当前项目Creator 3.8.8配置与旧单元UUID审计，Tech给出单工程按类别独立Scene、Prefab和资源目录的具体方案；物理多工程的成本、迁移触发及带meta/版本锁的共享包路径已比较，满足用户分别打磨且Lab与主体同源的设计目标。"},
+    {"severity": "INFO", "message": "MT_CHAR_01、MT_SHOP_STATIC_01前后层、MT_SHOP_MOTION_01的Creator源、骨骼数据、单对象单页图集、脚点/帘轴/遮挡顺序和同UUID双入口校验可执行；状态机明确忙中重复触发拒绝、仅角色char_work正常结束驱动完成与复位，短帘和可选VFX不阻塞。"},
+    {"severity": "INFO", "message": "Web/微信/抖音设备与纹理格式、alpha边缘、DrawCall、帧时和资源回落的分段测量方法具备可验证性；720×1280现有竖屏与横向街景的适配冲突被列为待设备和主体镜头验证事项。"},
+    {"severity": "MINOR", "message": "本机有限范围未发现Spine作者工具或Creator编辑器，亦无合法作者席位、正式分层源、实际单页导出或真机性能证据。1024²/512²和约5MiB是基础草排候选；技术设计通过不放行购买、制作或正式Client代码。"},
+    {"severity": "INFO", "message": "CP-UNIT-REUSE-001仍为PROPOSED，本次Master评审仅同意将Tech v0.1方案呈用户，不静默修改项目级架构或批准整体变更提案。"}
+  ],
+  "next_action": "提交技术设计v0.1与Art分层出图前计划等具体专业Artifact进入USER_REVIEW。用户批准单工程独立Scene/Prefab同源契约后，Master再记录项目级决策；取得合法作者工具、Art/Tech正式双签及真实资产前不得进入骨骼或Client实现验收。"
+}

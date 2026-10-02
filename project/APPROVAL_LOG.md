@@ -77,3 +77,12 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-02 | ART-DIRECTION-FIRST-STREET-001 | 用户精确附件恢复参考 | v0.4 | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/DELIVERABLE.json；tasks/ART-DIRECTION-FIRST-STREET-001/ARTIFACT_APPROVAL.json | USER_APPROVED（限定范围） | 用户明确恢复最新附件未加宽非像素版本，Art/Master复核通过 | 仅视觉参考；不批准新单元或生产参数 |
 | 2026-10-02 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃/无人店身/关系三图及独立拆件 | v0.5 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DELIVERABLE.json；tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL.json | USER_REVIEW | 5项PASS，Art/Tech/Master概念评审APPROVED；待用户具体批准 | 替换旧v0.4当前待审版，正式生产及Creator仍锁定 |
 <!-- UNIT-RESTART-20261002 END -->
+
+<!-- UNIT-NEXTSTAGE-20261002 START -->
+| 2026-10-02 | UNIT-PILOT-ART-CONCEPT-001 | 孟桃/无人店身/关系三图及独立拆件 | v0.5 | tasks/UNIT-PILOT-ART-CONCEPT-001/ARTIFACT_APPROVAL.json；deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/DELIVERABLE.json | USER_APPROVED（概念范围） | Master先呈现三张具体图、拆件和待审批门禁，用户随后回复“好的继续把”；五项PASS且Art/Tech/Master评审APPROVED | 允许Tech/Art/UI/VFX使用本版作为设计输入；分层母版、骨骼、单页图集、Creator实现及性能另经评审与审批 |
+| 2026-10-02 | UNIT-PILOT-TECH-DESIGN-001 | 同工程独立单元及双入口同源技术设计 | v0.1 | tasks/UNIT-PILOT-TECH-DESIGN-001/ARTIFACT_APPROVAL.json；deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/DELIVERABLE.json | USER_REVIEW | 5项PASS，Tech/Master评审APPROVED；设计与可验证契约待用户审批 | CP-UNIT-REUSE-001仍PROPOSED；工程/骨骼/性能尚未实施 |
+| 2026-10-02 | UNIT-PILOT-ART-SOURCE-PREFLIGHT-001 | 分层母版及单页骨骼正式出图前方案 | v0.1 | tasks/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/ARTIFACT_APPROVAL.json；deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/DELIVERABLE.json | USER_REVIEW | 5项PASS，Art/Tech/Master评审APPROVED；草排及联合检查矩阵待用户审批 | 实际分件、atlas、合法工具与真机尚需后续签认 |
+| 2026-10-02 | UNIT-PILOT-UI-SPEC-001 | 同源身份卡与Lab控制UI规格 | v0.1 | tasks/UNIT-PILOT-UI-SPEC-001/ARTIFACT_APPROVAL.json；deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/DELIVERABLE.json | USER_REVIEW | 4项PASS，Art/Master评审APPROVED；三张可编辑SVG及审阅预览待用户审批 | 字体文件/真实Canvas/目标机测试另验 |
+| 2026-10-02 | UNIT-PILOT-VFX-SPEC-001 | 摇杯工作轻反馈规格 | v0.1 | tasks/UNIT-PILOT-VFX-SPEC-001/ARTIFACT_APPROVAL.json；deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/DELIVERABLE.json | USER_REVIEW | 3项PASS，Art/Master评审APPROVED；时序/同源/资源需求待用户审批 | 128²特效骨骼页仅候选，正式资产与真机另验 |
+| 2026-10-02 | UNIT-SAMPLES-001 | 旧九菜单单元样例 | v0.1 | tasks/UNIT-SAMPLES-001/TASK.json；deliverables/master/UNIT-SAMPLES-001/v0.1/DELIVERABLE.json | CANCELLED（任务；Artifact未获批） | 用户要求重启单元并替换旧版，Master正式取消此旧任务 | 旧场景/脚本和桌面自测留档；无专业/QA/用户验收，不能记DONE；新孟桃单元由四专业v0.1与后续Client任务承接 |
+<!-- UNIT-NEXTSTAGE-20261002 END -->

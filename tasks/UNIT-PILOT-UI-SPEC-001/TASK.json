@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-PILOT-UI-SPEC-001",
+  "title": "孟桃奶茶店单元与主体共用身份UI规格",
+  "type": "ui",
+  "owner": "ui",
+  "objective": "依据已批准最小产品语义和新美术方向，定义奶茶店/孟桃身份组件及Lab专用控制的可复用UI结构与状态",
+  "inputs": [
+    "已批准 UNIT-PILOT-PRODUCT-001 v0.1",
+    "已批准 UNIT-PILOT-ART-CONCEPT-001 v0.5",
+    "project/ART_GUIDE.md",
+    "旧 UNIT-SAMPLES-001 U08修复卡仅历史实验，不作为新UI源"
+  ],
+  "deliverables": [
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/screens/identity-work-state.svg",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/components/identity-card-states.svg",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/COMPONENT_SPEC.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "同一身份组件只表达店铺奶茶店与店长孟桃、状态准确；Lab按钮/诊断单独标识，不把测试控制放进主体界面",
+    "列出组件层级、位置/尺寸候选、待机/工作/恢复和重置状态、可访问/触控约束及截图或可编辑线框",
+    "复用同一图标/边框/状态源与Art色材语言，字体仅用许可已核验方案或保持待许可占位，不承诺改字即获授权",
+    "明确UI与共享状态接口/Prefab引用及屏幕适配候选，不加入订单、价格、金币、养成等未经批准内容"
+  ],
+  "dependencies": [
+    "UNIT-PILOT-ART-CONCEPT-001",
+    "UNIT-PILOT-PRODUCT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-02按用户继续指令创建。Producer核对上游USER_APPROVED后解锁；实际产出方可IN_PROGRESS。",
+    "本任务止于该专业Artifact与用户审阅门禁，未批准的正式Creator/生产资产/客户端实现不得提前消费。",
+    "用户先前要求单元与主体同源复用、动态骨骼单页、旅客四方向；本任务孟桃/店铺仅实际使用单视角。",
+    "2026-10-02 UNIT-NEXTSTAGE-20261002：UI Owner实际提交UI规格/色系/组件状态及3张可编辑SVG，Master生成审阅预览，记TASK_STARTED/IN_PROGRESS→REVIEW；4项PASS，Art/Master评审APPROVED，现USER_REVIEW，待用户批准v0.1；正式字体/Creator/真机另验。"
+  ]
+}

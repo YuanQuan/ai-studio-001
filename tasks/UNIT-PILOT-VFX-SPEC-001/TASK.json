@@ -1,0 +1,36 @@
+{
+  "id": "UNIT-PILOT-VFX-SPEC-001",
+  "title": "孟桃奶茶店工作表现轻量反馈规格",
+  "type": "vfx",
+  "owner": "vfx",
+  "objective": "为已批准一次制作类工作表现定义可结束、可复位的轻量反馈，遵循选定冷夜暖灯美术方向且服务单元与主体同源",
+  "inputs": [
+    "已批准 UNIT-PILOT-PRODUCT-001 v0.1",
+    "已批准 UNIT-PILOT-ART-CONCEPT-001 v0.5",
+    "project/ART_GUIDE.md"
+  ],
+  "deliverables": [
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/VFX_SPEC.md",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/ASSET_REQUIREMENTS.md",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "列启动、工作重点、结束/复位的触发/时序/层级和重复触发处置，表现不代表订单完成或收益",
+    "视觉形态与冷夜暖灯/可爱风格一致，给出实际独立资源需求、合批/降级/清理与性能核查",
+    "让Lab和主体引用同一VFX源与状态事件，不复制效果或新增魔法/商品规则"
+  ],
+  "dependencies": [
+    "UNIT-PILOT-ART-CONCEPT-001",
+    "UNIT-PILOT-PRODUCT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-02按用户继续指令创建。Producer核对上游USER_APPROVED后解锁；实际产出方可IN_PROGRESS。",
+    "本任务止于该专业Artifact与用户审阅门禁，未批准的正式Creator/生产资产/客户端实现不得提前消费。",
+    "用户先前要求单元与主体同源复用、动态骨骼单页、旅客四方向；本任务孟桃/店铺仅实际使用单视角。",
+    "2026-10-02 UNIT-NEXTSTAGE-20261002：VFX Owner实际提交摇杯轻反馈规格及资源需求，记TASK_STARTED/IN_PROGRESS→REVIEW；3项PASS，Art/Master评审APPROVED，现USER_REVIEW，待用户批准v0.1；128²特效骨骼页仅候选。"
+  ]
+}

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="1000" viewBox="0 0 1280 1000" role="img" aria-labelledby="title desc">
+  <title id="title">孟桃奶茶店：720×1280 竖屏候选布局</title>
+  <desc id="desc">左侧主体入口只有身份卡；右侧单元 Lab 使用相同身份卡，另有演示状态与下方独立操作带。</desc>
+  <defs>
+    <linearGradient id="night" x2="0" y2="1"><stop stop-color="#0D1C3D"/><stop offset="1" stop-color="#24427A"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#FFF0D4"/><stop offset="1" stop-color="#EACCA4"/></linearGradient>
+    <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#AF7B4B"/><stop offset="1" stop-color="#583622"/></linearGradient>
+    <linearGradient id="amber" x2="0" y2="1"><stop stop-color="#FFD19A"/><stop offset="1" stop-color="#EF9A4C"/></linearGradient>
+    <filter id="drop" x="-30%" y="-50%" width="160%" height="200%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#081329" flood-opacity=".5"/></filter>
+    <clipPath id="mainClip"><rect x="129" y="375" width="432" height="290"/></clipPath>
+    <clipPath id="labClip"><rect x="719" y="375" width="432" height="290"/></clipPath>
+    <clipPath id="mainGround"><rect x="129" y="690" width="432" height="186"/></clipPath>
+    <g id="mark" fill="none" stroke="#5D3E29" stroke-width="2.2" stroke-linecap="round"><path d="M2 7h29l-3 25H5z" fill="#E3AD74"/><path d="M21 8l7-11"/><path d="M6 16h23"/><circle cx="12" cy="24" r="1.8" fill="#67452F" stroke="none"/><circle cx="21" cy="25" r="1.8" fill="#67452F" stroke="none"/></g>
+    <g id="card"><rect width="313" height="93" rx="12" fill="url(#wood)" stroke="#D3A369" stroke-width="2" filter="url(#drop)"/><rect x="7" y="7" width="299" height="79" rx="7" fill="url(#paper)" stroke="#60402C" stroke-width="2"/><use xlink:href="#mark" transform="translate(19 31)"/><path d="M70 48h212" stroke="#D5B288"/><text x="68" y="41" fill="#35261F" font-size="23" font-weight="700">奶茶店</text><text x="68" y="70" fill="#6F5B50" font-size="16">店长</text><text x="120" y="70" fill="#35261F" font-size="17" font-weight="700">孟桃</text></g>
+  </defs>
+  <g font-family="Noto Sans CJK SC, sans-serif">
+    <rect width="1280" height="1000" fill="url(#night)"/>
+    <circle cx="1116" cy="84" r="34" fill="#F5D4A1" opacity=".85"/>
+    <text x="64" y="65" fill="#FFF0D4" font-size="30" font-weight="700">竖屏 720×1280 · 当前工程适配样张</text>
+    <text x="64" y="98" fill="#B9C7E1" font-size="15">画板缩放展示两个独立入口；主体相机与最终方向待产品/技术决定</text>
+
+    <text x="129" y="155" fill="#F3DFC0" font-size="20" font-weight="700">主体游戏入口</text>
+    <text x="719" y="155" fill="#F3DFC0" font-size="20" font-weight="700">独立单元 Lab</text>
+    <rect x="112" y="173" width="466" height="740" rx="32" fill="#0A1530" stroke="#869ABC" stroke-width="3" filter="url(#drop)"/>
+    <rect x="702" y="173" width="466" height="740" rx="32" fill="#0A1530" stroke="#869ABC" stroke-width="3" filter="url(#drop)"/>
+    <rect x="129" y="190" width="432" height="706" rx="22" fill="#18315F"/>
+    <rect x="719" y="190" width="432" height="706" rx="22" fill="#18315F"/>
+    <rect x="289" y="180" width="115" height="13" rx="7" fill="#061026"/>
+    <rect x="879" y="180" width="115" height="13" rx="7" fill="#061026"/>
+
+    <rect x="129" y="210" width="432" height="140" fill="#102044"/>
+    <rect x="719" y="210" width="432" height="140" fill="#102044"/>
+    <text x="150" y="237" fill="#9DB1D3" font-size="13">上方安全区 / 公共身份槽位</text>
+    <text x="740" y="237" fill="#9DB1D3" font-size="13">同一公共身份槽位</text>
+    <use xlink:href="#card" transform="translate(150 251)"/>
+    <use xlink:href="#card" transform="translate(740 251)"/>
+
+    <rect x="129" y="350" width="432" height="340" fill="#24427A"/>
+    <rect x="719" y="350" width="432" height="340" fill="#24427A"/>
+    <image x="129" y="375" width="432" height="290" preserveAspectRatio="xMidYMid meet" clip-path="url(#mainClip)" xlink:href="../../../../art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png"/>
+    <image x="719" y="375" width="432" height="290" preserveAspectRatio="xMidYMid meet" clip-path="url(#labClip)" xlink:href="../../../../art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png"/>
+    <text x="149" y="678" fill="#C5D4EA" font-size="13">店铺与角色可见区 · 示例取景</text>
+    <text x="739" y="678" fill="#C5D4EA" font-size="13">店铺与角色可见区 · 示例取景</text>
+
+    <rect x="129" y="690" width="432" height="186" fill="#203A6D"/>
+    <g clip-path="url(#mainGround)">
+    <path d="M129 726h432M129 769h432M129 814h432M129 859h432M175 690v36m111 0v43m125-79v36m-255 43v45m112 0v45m120-45v45m-246 0v45m122 0v17m126-17v17" fill="none" stroke="#435A82" stroke-width="3" opacity=".64"/>
+    <path d="M157 724v-22m0 0h25m-25 0h-8m365 22v-22m0 0h22m-22 0h-8" fill="none" stroke="#1B2540" stroke-width="5"/>
+    <rect x="150" y="690" width="14" height="25" rx="4" fill="#F5B55D" stroke="#5C3923" stroke-width="3"/>
+    <rect x="507" y="690" width="14" height="25" rx="4" fill="#F5B55D" stroke="#5C3923" stroke-width="3"/>
+    </g>
+
+    <rect x="719" y="690" width="432" height="186" fill="#102044"/>
+    <rect x="740" y="704" width="180" height="32" rx="16" fill="#EF9A4C" stroke="#FFD19A"/>
+    <circle cx="758" cy="720" r="4" fill="#503322"/>
+    <text x="772" y="725" fill="#35261F" font-size="14" font-weight="700">演示 · 工作中</text>
+    <text x="947" y="725" fill="#AFC1DD" font-size="12">Lab 状态</text>
+    <rect x="740" y="746" width="232" height="55" rx="11" fill="#9C948C" stroke="#C4B7A8" stroke-width="2"/>
+    <text x="803" y="780" fill="#35261F" font-size="17" font-weight="700">工作进行中</text>
+    <rect x="982" y="746" width="148" height="55" rx="11" fill="url(#paper)" stroke="#B98452" stroke-width="2"/>
+    <text x="1037" y="780" fill="#35261F" font-size="17" font-weight="700">重置</text>
+    <text x="741" y="837" fill="#AFC1DD" font-size="13">诊断折叠 ▸　仅在 Lab 可展开</text>
+    <text x="741" y="860" fill="#7992BA" font-size="12">状态由共享适配器确认</text>
+
+    <text x="64" y="957" fill="#B9C7E1" font-size="13">竖屏比例与现工程一致；图中场景仅引用批准概念图，实际相机、字体文件、安全区和 Creator 节点须另行评审。</text>
+  </g>
+</svg>

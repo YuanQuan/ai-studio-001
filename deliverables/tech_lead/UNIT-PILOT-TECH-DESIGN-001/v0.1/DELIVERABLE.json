@@ -1,0 +1,31 @@
+{
+  "task_id": "UNIT-PILOT-TECH-DESIGN-001",
+  "owner": "tech_lead",
+  "summary": "完成孟桃奶茶店单元的单Creator工程独立入口与双入口同源技术设计，核查当前骨骼依赖、提出Art/Tech单页出图和真机验证流程；没有生成真实骨骼、Prefab或性能结论。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/CREATOR_DEPENDENCY_AUDIT.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/CP_REVIEW.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/ASSET_PIPELINE.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "实际检查当前Creator设置、Spine运行/可用制作工具与旧单元引用，明确哪些已验证、哪些仅设计", "result": "PASS", "evidence": "CREATOR_DEPENDENCY_AUDIT.md：3.8.8与spine-3.8配置、21旧帧、9旧Prefab、0新骨骼；机器有限范围未发现作者/Creator编辑器，未导入未构建。"},
+    {"criterion": "比较同工程独立Scene/Prefab与物理多工程，共享资源UUID/版本/同步成本后给出推荐和迁移路径，不自改未批准项目级架构", "result": "PASS", "evidence": "CP_REVIEW.md方案表与升级条件；TECH_DESIGN.md独立文件清单及双入口证据；CP保持PROPOSED。"},
+    {"criterion": "明确人物、静态店、动态布帘各自Prefab/atlas/skeleton数据/支点/遮挡顺序，单骨骼对象附件单纹理页，UI/VFX与主体同源接口", "result": "PASS", "evidence": "TECH_DESIGN.md第2–4节；ASSET_PIPELINE.md第1–2节；状态/事件和可选VFX边界。"},
+    {"criterion": "定义Lab专有控制与主体共用idle-work-reset状态契约、重复触发和复位，以及主体入口同源一致性的验收方法", "result": "PASS", "evidence": "TECH_DESIGN.md第3–4节：仅char_work结束驱动正常完成，帘/VFX不阻塞；playWork拒绝忙中重触发、reset清理、双入口同UUID/哈希/override及变更同时生效。"},
+    {"criterion": "为Web/微信/抖音列可验证的图集上限候选、内存/DrawCall/alpha与真机测量计划；未测不宣称性能达标", "result": "PASS", "evidence": "ASSET_PIPELINE.md草排1024²/512²候选、基础约5MiB、平台压缩/透明/合批/帧时间矩阵及720×1280手机视口核对；设备和实测明确待定。"}
+  ],
+  "assumptions": [
+    "项目继续使用Creator 3.8.8及当前spine-3.8配置，实际导出版本与导入兼容由作者和构建工作站验证。",
+    "单Creator项目、多独立Scene/Prefab/目录是待用户批准的项目级建议；可编辑源仓库根art-source/units，Creator输出apps/client/assets/units。",
+    "单对象一页图集约束来自用户；1024²和512²仅草排上限候选，不是设备硬上限。"
+  ],
+  "risks": [
+    "本机未发现可用Spine编辑器及许可信息；未经合法作者工具真实导出不能进入骨骼生产验收。",
+    "没有逐片边界、授权字体、目标真机、实际图集/压缩/DrawCall数据；正式出图需Art/Tech双签并实测。",
+    "主体横向参考和现工程720×1280竖屏配置存在镜头适配未决；不得静默改产品屏幕方向。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

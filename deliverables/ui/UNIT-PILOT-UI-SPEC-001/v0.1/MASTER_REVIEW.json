@@ -1,0 +1,12 @@
+{
+  "task_id": "UNIT-PILOT-UI-SPEC-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已核对四份UI规格、三张可编辑SVG及对应PNG审阅预览，并实际查看竖屏、横向对照与组件状态画面。主体和Lab引用同一奶茶店/店长孟桃身份卡，演示状态及按钮只在Lab，未加入未获批经营UI。"},
+    {"severity": "INFO", "message": "竖屏样张按当前Creator 720×1280设计分辨率展示，店铺牌匾、孟桃工作位和底部Lab控制分区清楚；曾出现的铺地线溢出已由SVG裁剪修复并重新渲染核对。横向图仅为设计对照，不决定主体方向。"},
+    {"severity": "INFO", "message": "纸底、木框、暖橙与冷夜蓝及杯吸管小图标符合已批准Art方向；候选字体来源/许可条件有记录，正式字体文件尚未嵌入或分发。Art Review基于SVG源码、布局及色材通过，像素预览另由Master实际查看。"},
+    {"severity": "MINOR", "message": "三张PNG是审阅预览而非Creator生产Sprite，含v0.5概念关系图引用；目标设备、真实字体文件度量、安全区和最终相机仍需Client/Art/QA验证。"}
+  ],
+  "next_action": "提交UI规格v0.1给用户审阅；批准后按同源组件制作正式图形和Prefab，并在实际Creator画布与目标真机复核字体、触控与遮挡。"
+}

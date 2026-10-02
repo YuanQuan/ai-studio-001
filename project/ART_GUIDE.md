@@ -1,6 +1,6 @@
 # 百鬼夜市｜项目美术指南
 
-更新：2026-10-02。当前视觉选择：[第一街精确选定参考 v0.4](../deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md)。用户已退回加宽版并选定未加宽**非像素**附件；不再继续A/B生产方向。当前新单元：[孟桃奶茶店 v0.5](../deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md)，三图与拆件方案经专业评审后单独USER_REVIEW。全景选择不代替人物全身或生产图集审批。
+更新：2026-10-02。当前视觉选择：[第一街精确选定参考 v0.4](../deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md)。用户已退回加宽版并选定未加宽**非像素**附件；不再继续A/B生产方向。当前新单元：[孟桃奶茶店 v0.5](../deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md) 三图与拆件方案已获 USER_APPROVED。下一环节是[正式分层与单页图集出图前签认 v0.1](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_BRIEF.md)，仍待本阶段专业及用户审批。全景或概念批准都不等于生产骨骼/atlas/Creator完成。
 
 ## 当前选择与八条长期原则
 
@@ -30,6 +30,7 @@
 | ART-DIRECTION v0.3 | 加宽/像素候选被退回，保留历史 |
 | ART-DIRECTION v0.4 | 用户精确选定未加宽非像素附件，scoped视觉参考；不是生产切图 |
 | UNIT-PILOT v0.4 | 旧人物/店概念，当前入口被v0.5替换，历史保留 |
-| UNIT-PILOT v0.5 | 新三图与拆件候选，待具体USER_REVIEW，不由全景选图代批准 |
+| UNIT-PILOT v0.5 | 新三图与拆件方案已获 USER_APPROVED；正式分层、骨骼、atlas仍未制作 |
+| UNIT-PILOT-ART-SOURCE-PREFLIGHT v0.1 | 出图前分件包围盒、单页候选与来源审查，处于专业 Review/用户审阅流程；数值未锁 |
 
 来源见对应REFERENCE_AUDIT与project/art_reference。权利未知图片只作研究，不能临摹或直接生产；字体使用、嵌入、分发、修改许可均需核验，改字不等于获得授权。本指南只适用本游戏。

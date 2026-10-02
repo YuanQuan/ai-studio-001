@@ -1,0 +1,49 @@
+{
+  "task_id": "UNIT-PILOT-UI-SPEC-001",
+  "owner": "ui",
+  "summary": "依据已批准孟桃奶茶店产品和美术概念，完成主体与 Lab 同源身份卡、竖屏适配样张、演示状态和 Lab 专用操作规格；中文字体采用许可证已核验的候选，正式字体文件待生产集成锁定。",
+  "artifacts": [
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/COMPONENT_SPEC.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/screens/identity-portrait-adaptation.svg",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/screens/identity-portrait-adaptation-preview.png",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/screens/identity-work-state.svg",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/screens/identity-work-state-preview.png",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/components/identity-card-states.svg",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/components/identity-card-states-preview.png",
+    "deliverables/ui/UNIT-PILOT-UI-SPEC-001/v0.1/ART_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同一身份组件只表达店铺奶茶店与店长孟桃、状态准确；Lab按钮/诊断单独标识，不把测试控制放进主体界面",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第1节；SCREEN_STATES.md；竖屏双入口 SVG"
+    },
+    {
+      "criterion": "列出组件层级、位置/尺寸候选、待机/工作/恢复和重置状态、可访问/触控约束及截图或可编辑线框",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第2-3节、COMPONENT_SPEC.md、SCREEN_STATES.md、三张原生可编辑 SVG 及对应 Master 本地渲染审阅 PNG；SVG XML和外部参考路径已校验，Master已目视核对，Art Review 明确其源文件评审范围"
+    },
+    {
+      "criterion": "复用同一图标/边框/状态源与Art色材语言，字体仅用许可已核验方案或保持待许可占位，不承诺改字即获授权",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第4节、COLOR_SYSTEM.md；Noto Sans CJK SC 官方目录许可证和 SIL OFL 官方文本已核验；本稿未嵌入/分发字体文件，Art 真实视觉评审仍待完成"
+    },
+    {
+      "criterion": "明确UI与共享状态接口/Prefab引用及屏幕适配候选，不加入订单、价格、金币、养成等未经批准内容",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第2、3、5节；SCREEN_STATES.md；目前 Creator 720×1280 竖屏为主样张，主体最终相机/方向待另行批准；事件名仅候选"
+    }
+  ],
+  "assumptions": [
+    "独立 Lab 可设置自身调试取景以完整观察店铺，但主体最终相机和画布方向未由本 UI 任务决定。",
+    "Noto Sans CJK SC 为字体候选；当前 SVG 依赖查看设备字体回退，正式字库文件、版权声明及 OFL 许可文本在集成时锁定。"
+  ],
+  "risks": [
+    "UI Owner 的内置浏览器禁止 file:// 预览，本地 Chrome 未生成截图；UI Owner 完成 XML/尺寸/外链路径检查，Master 已用本地渲染工具目视核对三张，Art 的 APPROVED 范围为 SVG 源结构/几何/色材一致性。正式生产仍需字体回退、真实图像引用和目标机像素渲染证据。",
+    "色码、点击目标与竖屏取景为候选，实际设备、字体度量和 Creator 缩放方式待 Tech/Client 核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

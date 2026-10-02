@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1350" height="940" viewBox="0 0 1350 940" role="img" aria-labelledby="title desc">
+  <title id="title">孟桃身份卡与单元控制组件状态板</title>
+  <desc id="desc">展示同一只读身份卡、演示状态标签，以及 Lab 按钮的可点击、按下、禁用、复位和错误表现。</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#13264E"/><stop offset="1" stop-color="#223D6A"/></linearGradient>
+    <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#AA7445"/><stop offset="1" stop-color="#583622"/></linearGradient>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#FFF0D4"/><stop offset="1" stop-color="#E7CEAB"/></linearGradient>
+    <linearGradient id="btn" x2="0" y2="1"><stop stop-color="#FFD19A"/><stop offset="1" stop-color="#EF9A4C"/></linearGradient>
+    <filter id="drop" x="-30%" y="-50%" width="160%" height="200%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#09152C" flood-opacity=".45"/></filter>
+    <g id="mark" fill="none" stroke="#5D3E29" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 7h39l-5 32H6z" fill="#E3AD74"/><path d="M28 10l10-14"/><path d="M5 19h32"/><circle cx="16" cy="29" r="2.5" fill="#67452F" stroke="none"/><circle cx="26" cy="29" r="2.5" fill="#67452F" stroke="none"/></g>
+    <g id="card"><rect x="0" y="0" width="418" height="130" rx="16" fill="#2E211B" filter="url(#drop)"/><rect x="4" y="4" width="410" height="122" rx="13" fill="url(#wood)" stroke="#D4A66F" stroke-width="2"/><rect x="13" y="13" width="392" height="104" rx="8" fill="url(#paper)" stroke="#60402C" stroke-width="2"/><use xlink:href="#mark" transform="translate(35 44) scale(1.12)"/><path d="M114 68h257" stroke="#CCAA7F"/><text x="112" y="58" fill="#35261F" font-size="31" font-weight="700">奶茶店</text><text x="114" y="94" fill="#6F5B50" font-size="20">店长</text><text x="180" y="94" fill="#35261F" font-size="21" font-weight="700">孟桃</text></g>
+  </defs>
+  <g font-family="Noto Sans CJK SC, sans-serif">
+    <rect width="1350" height="940" fill="url(#bg)"/>
+    <text x="62" y="72" fill="#FFF0D4" font-size="32" font-weight="700">共用身份组件 / Lab 状态</text>
+    <text x="63" y="105" fill="#B9C7E1" font-size="16">冷夜蓝 · 木框浅纸 · 暖灯橙　|　原生可编辑 SVG 规格图</text>
+    <path d="M60 131h1230" stroke="#58719A"/>
+
+    <text x="62" y="171" fill="#F3DFC0" font-size="20" font-weight="700">01　身份卡：主体与 Lab 同源</text>
+    <use xlink:href="#card" transform="translate(66 196)"/>
+    <path d="M514 265h97" stroke="#D7AA74" stroke-width="2"/><path d="M606 259l9 6-9 6" fill="none" stroke="#D7AA74" stroke-width="2"/>
+    <use xlink:href="#card" transform="translate(645 196)"/>
+    <text x="66" y="354" fill="#B9C7E1" font-size="15">主体游戏 · 只读</text>
+    <text x="645" y="354" fill="#B9C7E1" font-size="15">独立 Lab · 仍是同一资源</text>
+    <rect x="1120" y="196" width="170" height="130" rx="12" fill="#1A315C" stroke="#7990B4"/>
+    <text x="1141" y="238" fill="#F3DFC0" font-size="16">无测试按钮</text>
+    <text x="1141" y="272" fill="#AFC0DE" font-size="15">无营业结论</text>
+    <path d="M60 390h1230" stroke="#58719A"/>
+
+    <text x="62" y="431" fill="#F3DFC0" font-size="20" font-weight="700">02　Lab 状态标签：明确“演示”</text>
+    <rect x="66" y="457" width="234" height="58" rx="29" fill="#294878" stroke="#9CB0CC" stroke-width="2"/>
+    <circle cx="92" cy="486" r="6" fill="#C4D0E0"/><text x="111" y="493" fill="#F3DFC0" font-size="18">演示 · 待机</text>
+    <rect x="326" y="457" width="260" height="58" rx="29" fill="#EF9A4C" stroke="#FFD19A" stroke-width="2"/>
+    <circle cx="354" cy="486" r="6" fill="#5D3C24"/><text x="374" y="493" fill="#35261F" font-size="18" font-weight="700">演示 · 工作中</text>
+    <rect x="612" y="457" width="282" height="58" rx="29" fill="#91603B" stroke="#DAB182" stroke-width="2"/>
+    <circle cx="640" cy="486" r="6" fill="#FFD19A"/><text x="660" y="493" fill="#FFF0D4" font-size="18">演示 · 返回待机</text>
+    <rect x="920" y="457" width="282" height="58" rx="29" fill="#8F3F36" stroke="#F1C1A9" stroke-width="2"/>
+    <circle cx="948" cy="486" r="6" fill="#FFF0D4"/><text x="968" y="493" fill="#FFF0D4" font-size="18">演示 · 资源未就绪</text>
+    <text x="68" y="547" fill="#B9C7E1" font-size="15">标签与身份卡分开挂载；状态必须由共享适配器确认。</text>
+    <path d="M60 578h1230" stroke="#58719A"/>
+
+    <text x="62" y="619" fill="#F3DFC0" font-size="20" font-weight="700">03　Lab 操作：可点、按下、禁用与复位</text>
+    <rect x="66" y="648" width="266" height="74" rx="14" fill="url(#btn)" stroke="#FFD9AC" stroke-width="2" filter="url(#drop)"/>
+    <text x="121" y="693" fill="#35261F" font-size="21" font-weight="700">启动工作表现</text>
+    <text x="67" y="753" fill="#B9C7E1" font-size="15">normal · 可启动</text>
+    <rect x="358" y="651" width="266" height="74" rx="14" fill="#D98740" stroke="#E8B376" stroke-width="2"/>
+    <text x="413" y="697" fill="#35261F" font-size="21" font-weight="700">启动工作表现</text>
+    <text x="359" y="753" fill="#B9C7E1" font-size="15">pressed · 下压 2 候选</text>
+    <rect x="650" y="648" width="266" height="74" rx="14" fill="#9C948C" stroke="#C4B7A8" stroke-width="2"/>
+    <text x="716" y="693" fill="#35261F" font-size="21" font-weight="700">工作进行中</text>
+    <text x="651" y="753" fill="#B9C7E1" font-size="15">disabled · 不再提交触发</text>
+    <rect x="942" y="648" width="198" height="74" rx="14" fill="url(#paper)" stroke="#B98452" stroke-width="2" filter="url(#drop)"/>
+    <text x="1018" y="693" fill="#35261F" font-size="21" font-weight="700">重置</text>
+    <text x="942" y="753" fill="#B9C7E1" font-size="15">Lab 独立控制</text>
+    <rect x="66" y="800" width="1220" height="76" rx="12" fill="#102044" stroke="#58719A"/>
+    <text x="88" y="834" fill="#F3DFC0" font-size="16" font-weight="700">触控与可读</text>
+    <text x="213" y="834" fill="#B9C7E1" font-size="15">目标至少 44×44 候选；工作态启动禁用；颜色之外用文字与轮廓区分。</text>
+    <text x="88" y="858" fill="#B9C7E1" font-size="14">字体为 Noto Sans CJK SC 候选，本 SVG 不嵌入字库；正式字体文件与许可证在客户端打包前核验。</text>
+    <text x="62" y="918" fill="#8DA5C9" font-size="13">UI 设计稿 v0.1 · 从已批准 Art v0.5 风格新绘组件；没有旧 Demo 图形引用。</text>
+  </g>
+</svg>

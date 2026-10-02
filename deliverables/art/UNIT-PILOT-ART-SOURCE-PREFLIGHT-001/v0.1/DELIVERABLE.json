@@ -1,0 +1,56 @@
+{
+  "task_id": "UNIT-PILOT-ART-SOURCE-PREFLIGHT-001",
+  "owner": "art",
+  "summary": "已批准孟桃v0.5概念转正式出图前分层/单页草排方案：三对象、全部附件、隐藏面补绘、同母版柜前遮挡、手机可读性与来源/字体/杯标风险清单；未宣称已生产分层、Spine、atlas或Creator资源。",
+  "artifacts": [
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/PARTS_BOUNDING_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ATLAS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/TECH_REVIEW.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/TECH_REVIEW.json",
+    "project/art_reference/misc/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001-v0.1.md",
+    "project/ART_GUIDE.md",
+    "project/ASSET_MANIFEST.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "列出三个独立对象的可编辑母版/分件、隐藏面补绘、支点、手型、短帘和前柜遮挡制作输入及来源风险",
+      "result": "PASS",
+      "evidence": "ART_BRIEF、PARTS_BOUNDING_PLAN、ASSET_MANIFEST、REFERENCE_AUDIT逐件定义；对未制作母版明确标注。"
+    },
+    {
+      "criterion": "分别提交孟桃与布帘全部附件的一页草排，标清尺寸、padding/出血、极限、alpha及单页条件的候选或实测状态",
+      "result": "PASS",
+      "evidence": "ATLAS_PLAN列全部附件非重叠图格、各页候选尺寸、8px格内空边、2px扩边候选、自动pack一页与实际尺寸验证条件；所有数值均未误写实测。"
+    },
+    {
+      "criterion": "正式出图前Art/Tech共同确认图集与合批条件及目标设备检查表，并处置环境暖晕/字体/杯标风险",
+      "result": "PASS",
+      "evidence": "Art的ATLAS_PLAN与REFERENCE_AUDIT列出图集/合批/设备及暖晕/字标检查矩阵，Tech在本版TECH_REVIEW.md/json正式APPROVED此预检矩阵；真实附件、图集、导入与真机性能另次签认，未在本版放行。"
+    },
+    {
+      "criterion": "界定通用与专属母版、可编辑源/导出版本与单元主体同源链路",
+      "result": "PASS",
+      "evidence": "ART_BRIEF、ASSET_MANIFEST与Tech设计候选路径统一：art-source/units/保存可编辑源，apps/client/assets/units/保存唯一Creator输出及.meta。"
+    },
+    {
+      "criterion": "工具、许可或目标平台参数缺失时给出证据、生产路径及下一Gate，不冒充已完成骨骼/atlas/Creator",
+      "result": "PASS",
+      "evidence": "ART_BRIEF、ATLAS_PLAN、REFERENCE_AUDIT明确实际分件/Spine/真机/授权缺口；Tech的TECH_REVIEW与Creator依赖审计记录本机未检到Spine作者工具/许可或Creator可执行，正式导出须后续实测。"
+    }
+  ],
+  "assumptions": [
+    "项目现有720×1280设计分辨率用于检查方法，主体相机与目标真机配置待正式确认。",
+    "1024²角色页与512²帘页、8px格内空边和2px扩边均为预检候选，不是已锁定生产规格。"
+  ],
+  "risks": [
+    "本机Spine编辑器/许可与Creator实际导入未完成验证，真实骨骼导出和压缩/性能不能签放行。",
+    "横向全景参考在720×1280手机视口中的工作位与文字投影尚无样张；孟牌、奶茶牌、双手摇杯可能缩得不可读。",
+    "生成店身概念含半透明环境暖晕；牌字和杯标需重新制作并完成实际字体/标识风险核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "UNIT-PILOT-ART-SOURCE-PREFLIGHT-001",
+  "title": "孟桃与店铺正式分层及单页骨骼出图前联合签认",
+  "type": "art",
+  "owner": "art",
+  "objective": "根据已批准v0.5概念，提交具体可编辑分层源与骨骼附件的出图前清单、包围盒和单页图集草排，联合技术确认性能与视觉不变项",
+  "inputs": [
+    "已批准 UNIT-PILOT-ART-CONCEPT-001 v0.5",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/PARTS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/REFERENCE_AUDIT.md",
+    "用户要求所有动态精灵骨骼、每骨骼对象一页且每次正式出图前美术/技术签认"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/PARTS_BOUNDING_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ATLAS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/REFERENCE_AUDIT.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "列出孟桃、无人店身、布帘各自可编辑母版/分件ID、隐蔽处补绘、支点、手型、帘幅和柜前遮挡的实际制作输入及来源风险",
+    "对MT_CHAR_01与MT_SHOP_MOTION_01分别提交单页草排及对象全部附件清单，尺寸、padding、出血、动作极限、alpha和一页装箱条件明确标记实测或候选",
+    "在正式图片生产前Art/Tech共同确认图集与动态合批条件、目标设备检查表；把概念图暖晕剥离、字体许可与杯标近似风险作为生产动作",
+    "界定共用木瓦/招牌/纸盒母版与孟桃和奶茶店专属件，给出可编辑源、导出、版本和主游戏复用链路",
+    "若制作工具、授权或目标平台参数缺失，写出具体证据、替代方案与下一Gate，不把未有的骨骼/atlas/Creator成果写成已完成"
+  ],
+  "dependencies": [
+    "UNIT-PILOT-ART-CONCEPT-001",
+    "UNIT-PILOT-PRODUCT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-02按用户继续指令创建。Producer核对上游USER_APPROVED后解锁；实际产出方可IN_PROGRESS。",
+    "本任务止于该专业Artifact与用户审阅门禁，未批准的正式Creator/生产资产/客户端实现不得提前消费。",
+    "用户先前要求单元与主体同源复用、动态骨骼单页、旅客四方向；本任务孟桃/店铺仅实际使用单视角。",
+    "2026-10-02 UNIT-NEXTSTAGE-20261002：Art Owner实际提交分件包围方案、单页草排、来源与预检文档，记TASK_STARTED/IN_PROGRESS→REVIEW；5项PASS，Art/Tech/Master评审APPROVED，现USER_REVIEW，待用户批准v0.1；真实逐片/atlas/Spine另行签认。"
+  ]
+}

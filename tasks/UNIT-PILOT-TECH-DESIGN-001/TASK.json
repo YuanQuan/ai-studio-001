@@ -1,0 +1,43 @@
+{
+  "id": "UNIT-PILOT-TECH-DESIGN-001",
+  "title": "孟桃单元同源工程与骨骼接入技术设计",
+  "type": "tech",
+  "owner": "tech_lead",
+  "objective": "基于已批准孟桃奶茶店v0.5概念与拆件，决定独立Creator单元入口和主体游戏共用源/Prefab的工程形态，给出Spine/图集/遮挡/状态接口/性能验证可执行契约",
+  "inputs": [
+    "已批准 UNIT-PILOT-PRODUCT-001 v0.1 与 UNIT-PILOT-ART-CONCEPT-001 v0.5",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/PARTS_PLAN.md",
+    "deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/RESTART_AUDIT.md",
+    "project/changes/CP-UNIT-REUSE-001.md",
+    "用户2026-10-02明确“好的继续把”"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/CREATOR_DEPENDENCY_AUDIT.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/CP_REVIEW.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/ASSET_PIPELINE.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-PILOT-TECH-DESIGN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "实际检查当前Creator设置、Spine运行/可用制作工具与旧单元引用，明确哪些已验证、哪些仅设计",
+    "比较同工程独立Scene/Prefab与物理多工程，共享资源UUID/版本/同步成本后给出推荐和迁移路径，不自改未批准项目级架构",
+    "明确人物、静态店、动态布帘各自Prefab/atlas/skeleton数据/支点/遮挡顺序，单骨骼对象附件单纹理页，UI/VFX与主体同源接口",
+    "定义Lab专有控制与主体共用idle-work-reset状态契约、重复触发和复位，以及主体入口同源一致性的验收方法",
+    "为Web/微信/抖音列可验证的图集上限候选、内存/DrawCall/alpha与真机测量计划；未测不宣称性能达标"
+  ],
+  "dependencies": [
+    "UNIT-PILOT-ART-CONCEPT-001",
+    "UNIT-PILOT-PRODUCT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-02按用户继续指令创建。Producer核对上游USER_APPROVED后解锁；实际产出方可IN_PROGRESS。",
+    "本任务止于该专业Artifact与用户审阅门禁，未批准的正式Creator/生产资产/客户端实现不得提前消费。",
+    "用户先前要求单元与主体同源复用、动态骨骼单页、旅客四方向；本任务孟桃/店铺仅实际使用单视角。",
+    "2026-10-02 UNIT-NEXTSTAGE-20261002：Tech Owner实际提交TECH_DESIGN、Creator依赖审计、CP评审、资产管线与REVIEW，记TASK_STARTED/IN_PROGRESS→REVIEW；5项PASS，Tech及Master评审APPROVED，现USER_REVIEW，待用户批准v0.1，未实现Creator或骨骼。"
+  ]
+}

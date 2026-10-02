@@ -1,6 +1,6 @@
 # 项目美术资产索引
 
-用户已退回加宽稿，选定v0.4未加宽非像素附件为视觉参考；新单位v0.5三图与拆件方案单独待审。此表记录实际概念与参考，不宣布生产资产、骨骼或Creator工程已完成。每个生产对象由各自正式Manifest维护尺寸、格式、状态和源路径。
+用户已退回加宽稿，选定v0.4未加宽非像素附件为视觉参考；新单元v0.5三图与拆件方案已获用户批准。正式出图前的[分层与图集计划 v0.1](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md)正在评审，此表不宣布生产资产、骨骼或Creator工程已完成。每个生产对象由各自正式Manifest维护尺寸、格式、状态和源路径。
 
 | Asset ID | 名称 | 类型 | Source Artifact | Format/Size | 状态 | 用途 | 说明 |
 |---|---|---|---|---|---|---|---|
@@ -25,8 +25,8 @@
 | ID | 路径 | 实际规格 | 状态/范围 |
 |---|---|---|---|
 | REF_FIRST_STREET_SELECTED_V04 | deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/scenes/night-market-selected-reference.png | PNG 2172×724 RGB | 用户精确选定未加宽非像素，参考不裁生产 |
-| CONCEPT_MT_CHAR_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/characters/mengtao-concept.png | PNG 1254² RGBA | 新全身概念待审，唯一腰牌孟 |
-| CONCEPT_MT_SHOP_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/milk-tea-shop-concept.png | PNG 1536×1024 RGBA | 新无人店身概念待审，存在半透明光晕 |
-| CONCEPT_MT_REL_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png | PNG 1536×1024 RGB | 新关系概念待审，不能合图生产 |
+| CONCEPT_MT_CHAR_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/characters/mengtao-concept.png | PNG 1254² RGBA | USER_APPROVED全身概念，唯一腰牌孟；非生产分层 |
+| CONCEPT_MT_SHOP_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/milk-tea-shop-concept.png | PNG 1536×1024 RGBA | USER_APPROVED无人店身概念，半透明光晕须剥离 |
+| CONCEPT_MT_REL_V05 | deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/scenes/mengtao-shop-relationship.png | PNG 1536×1024 RGB | USER_APPROVED关系概念，不能合图生产 |
 
-正式独立对象、候选ID/挂点与前后层见[新单元Manifest](../deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ASSET_MANIFEST.md)与PARTS_PLAN；MT_CHAR_01/MT_SHOP_STATIC_01/MT_SHOP_MOTION_01尚无分层/骨骼/atlas文件。旧pilotv0.4当前入口被替换，历史保留；老Creator九示例尚未替换代码或资源。
+正式独立对象、候选ID/挂点与前后层见[本轮生产前Manifest](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md)与PARTS_BOUNDING_PLAN；MT_CHAR_01/MT_SHOP_STATIC_01/MT_SHOP_MOTION_01尚无分层/骨骼/atlas文件。旧pilotv0.4当前入口被替换，历史保留；老Creator九示例尚未替换代码或资源。

@@ -1,0 +1,39 @@
+{
+  "task_id": "UNIT-PILOT-VFX-SPEC-001",
+  "owner": "vfx",
+  "summary": "已依据获批产品与孟桃概念定义一次摇杯工作表现的轻量动作线、触发/清理/重复触发、独立单页骨骼候选需求与 Lab/主体同源验证；不新增经营或奖励语义。本版仅为规格，Art 与 Master 评审已通过，待用户审批。",
+  "artifacts": [
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/VFX_SPEC.md",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/ASSET_REQUIREMENTS.md",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/vfx/UNIT-PILOT-VFX-SPEC-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "列启动、工作重点、结束/复位的触发/时序/层级和重复触发处置，表现不代表订单完成或收益",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md 第1-3节列角色动作进度候选、相对层级25、去重、及时清理及禁用的业务/奖励画面；这是规格覆盖，不是运行验证。"
+    },
+    {
+      "criterion": "视觉形态与冷夜暖灯/可爱风格一致，给出实际独立资源需求、合批/降级/清理与性能核查",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md 第1、2、4节和 ASSET_REQUIREMENTS.md 定义原创两段短弧、独立候选骨骼对象/128²一页、Art+Tech真实出图签认、Draw Call/三端检查矩阵及无VFX降级；ART_REVIEW.json 已 APPROVED 本版视觉语言，不签真实资产与性能。"
+    },
+    {
+      "criterion": "让Lab和主体引用同一VFX源与状态事件，不复制效果或新增魔法/商品规则",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md 第1、3节定义同Prefab/UUID/哈希及同一表现事件候选，Lab控制与主体入口隔离；ASSET_REQUIREMENTS.md定义唯一源/导出路径候选及无魔法语义。"
+    }
+  ],
+  "assumptions": [
+    "Tech设计 v0.1 的 started/completed/reset、idle/working/resetting 与相对层级尚待其本阶段用户审批；本稿只按同期候选复核，后续需映射正式接口。",
+    "角色 char_work 骨骼工作段结束信号单独驱动表现完成与复位；短帘和可选特效只同步表现，均不能参与完成判定。",
+    "候选 128×128 atlas、15–55%动作窗口及每角色最多一实例待实际美术分件和目标设备校准。"
+  ],
+  "risks": [
+    "独立特效骨骼会增加对象/可能的渲染批次；当前没有真实纹理、自动 pack、Spine 作者工具/许可、Creator 导入及三端实测。",
+    "项目设计分辨率当前为720×1280，而全景参考是横向长图；手机工作手势、牌匾和腰牌可读性尚未验收。",
+    "Art 与 Master Review 均已通过，用户审批尚待；真实分层、骨骼、单页图集、Creator 导入和设备验证尚未完成，本版不能作为正式客户端资源实现输入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

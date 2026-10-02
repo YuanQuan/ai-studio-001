@@ -1,0 +1,11 @@
+{
+  "task_id": "UNIT-PILOT-ART-SOURCE-PREFLIGHT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "分层和骨骼对象三分、同母版柜前后遮挡、独立母版/Creator输出路径与Tech Design一致，可作为下一轮正式制作的前置检查矩阵。"},
+    {"severity": "INFO", "message": "MT_CHAR_01与MT_SHOP_MOTION_01全部候选附件分别列在1024²/512²非重叠图格；8px格内边与2px透明扩边为候选，实测切片和自动pack一页尚无，当前不能宣称图集单页已通过。"},
+    {"severity": "MINOR", "message": "工程启用spine-3.8但本机未检到Spine作者工具/许可及Creator可执行路径，亦无目标真机/真实导出。正式图片前须新版本Art+Tech逐件签尺寸/页数/alpha/材质/DrawCall及授权，Creator实际导入和设备显示仍待证据。"}
+  ],
+  "next_action": "Master/Producer呈本版出图前方案给用户审阅；批准后Art开始可编辑母版，正式导出须在逐件像素、合法作者工具、单页自动pack、Creator兼容、目标设备与权利资料齐备后另做Art+Tech双签。"
+}
