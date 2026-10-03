@@ -14,6 +14,8 @@
 
 ## 规则
 
+视觉资产的审批对象必须包含可查看的实际图像及其对应设计基线、版本和 Art 视觉 Review；预案获批不等于成品图像获批。Art 视觉 Review 与 Tech 生产 Review 分别通过后，Master 才呈现正式资源给用户，Producer 记录用户对确切版本的决定。用户退回或专业 Review 失败的新稿使用新 Revision，不能覆盖旧版或继承旧版 `PASS`。
+
 1. Product / Art / UI / Tech / Client / Server / QA 的正式阶段产物都需要用户确认后才能解锁下一正式环节。
 2. Producer 负责检查专业 Review 是否完成、记录用户决定、维护版本链和解锁下游依赖。
 3. Master 负责把需要审批的产物呈现给用户并承接用户反馈；Producer 负责把决定落入正式状态。

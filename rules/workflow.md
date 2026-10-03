@@ -44,6 +44,8 @@
 
 ## 规则
 
+视觉类任务在进入 `USER_REVIEW` 前，Producer 须核同版视觉基线、首张样张前 Art/Tech 预签、代表样张逐锚点视觉结论、全量复签及正式资源 Art/Tech 双 Review。任何必要视觉锚点为 `REVISE` 或证据未测时，不得把该资源标为可批准的正式成品；保留失败样张及版本链。详见 `rules/visual_production_contract.md`。
+
 1. 没有 Acceptance Criteria 的任务不得进入 READY。
 2. 依赖未完成或所依赖 Artifact 尚未 `USER_APPROVED` 时不得进入 READY/IN_PROGRESS，除非 Task 明确是与其无关的可并行准备工作。
 3. REVIEW 不等于完成；专业 Review 通过后仍需进入 USER_REVIEW。

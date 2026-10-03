@@ -108,6 +108,10 @@ Product 主导公共配置的业务表结构、字段语义、业务 ID 与关�
 
 ## 3. Artifact Gate
 
+### 视觉设计到正式资源
+
+场景、角色、建筑、UI、VFX 等资源的设计继承与生产验收遵守 `rules/visual_production_contract.md`。Task Packet 应引用已批准的视觉基线，并将视觉锚点、原创可编辑母版、同尺度对照、Art 视觉 Review、Tech 生产 Review 与适用的运行画面列为 Required Artifacts 或验收证据。代表样张首次出图前必须完成 Art/Tech 同批预签；代表样张的视觉与技术结论、全量复签和正式资源的双结论分开记录。技术 `PASS`、构建成功和静态检查不能代替 Art 视觉 `PASS`。Server 配置引用视觉资源时只引用获批稳定 ID/版本，不改变视觉定义。
+
 典型依赖门禁：
 
 `Product PRD -> Tech/UI/Art -> Tech Design/Config + Visual Specs -> Client/Server -> QA -> Master`

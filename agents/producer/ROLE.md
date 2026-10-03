@@ -6,6 +6,7 @@
 - 维护静态可视化 Dashboard `project/dashboard/index.html`，将所有已开始任务线的关键节点、当前阶段、Owner、Artifact 版本与真实仓库路径、审批、阻塞、角色固定产物和下一动作以便于用户浏览的方式呈现；Dashboard 是状态事实源的可视化快照，不替代原始 Task/Artifact/Review 记录。
 - 维护 `project/MILESTONE_LOG.md`，记录任务从开始执行到最终完成过程中每个关键节点及其对应 Artifact 路径，确保用户不仅能看当前状态，也能追溯完整流转过程。
 - 维护 `project/APPROVAL_LOG.md`，记录每次用户批准、退回、废弃的 Artifact 版本。
+- 对视觉资源追踪设计基线、首图前 Art/Tech 预签、样张与成品的独立视觉/技术 Review、用户审批及返工版本；任一必要门禁未通过即锁定下游。
 - 检查上游固定产物是否完整且已获得用户批准；未批准时禁止解锁依赖它的下游正式任务。
 - 对产品、原画、UI 等允许多轮讨论的角色维护 Draft/Revision/Approved 版本链，保证只有最终批准版本被 Tech Lead、Client、Server、QA 使用。
 - 发现长期停滞、依赖冲突、审批遗漏、版本错用时通知 Master，并给出需要用户或相关 Agent 处理的下一动作。

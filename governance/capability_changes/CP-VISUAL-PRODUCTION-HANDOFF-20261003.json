@@ -1,0 +1,16 @@
+{
+  "id": "CP-VISUAL-PRODUCTION-HANDOFF-20261003",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "建立已批准视觉设计到原创可编辑资源、运行画面和最终验收的跨角色交接规则。",
+  "reason": "防止生产重绘、性能适配与程序接入过程中静默改变已确认的视觉设计。",
+  "impact": [
+    "各角色职责和约束增加视觉基线、出图前联签、独立评审和运行证据要求",
+    "Artifact、Workflow 与 Approval 门禁引用统一视觉交接契约",
+    "标准小游戏空白 Art、Asset、UI、Test 模板增加追溯字段"
+  ],
+  "affected_agents": ["master", "producer", "product", "art", "ui", "vfx", "tech_lead", "client", "server", "qa"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}
