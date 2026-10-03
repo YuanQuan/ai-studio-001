@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 对第三轮可编辑 SVG、23 张真实原方向 PNG、1024×512 单页图集、独立板凳前后片、左右五态 contact sheet 与 GIF 完成视觉复核。首轮正面方向不足已封存；第二轮三分之四脸及近远手差在当前预览中可辨，move/run 与 happy/sad/sit 分别可读。当前为待用户审阅正式资源候选，不是 Creator/真机已通过资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "来源记录与版权/IP/字体初筛见 RIGHTS_AND_SOURCE.md 和 project/art_reference/characters、props；正式图不含外部图片、字体、文字或 Logo，用户参考权利 UNKNOWN 且未作为像素源。23 帧源/导出/hash 与两轮修订签认可追溯。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "图集 alpha/padding 静态验证通过，但角色头顶部分帧离逻辑画布顶部仅 1 px；新增更高动作须重签。move 逐帧动感较轻，23 个唯一 hash 不能替代目标机动态辨识验收。目标设备缩小后方向/动作可读性、Creator 原点/两向坐姿接触、真实 DrawCall/帧时间与正式独立/组合/主体同源引用仍 NOT_TESTED，交给 Client/QA 实测。"
+    }
+  ],
+  "next_action": "Tech Lead 对实际导出尺寸/哈希/内存/页数与质量报告作 TECH_REVIEW；通过后提交 Master Review 与用户审批。本批未经用户批准前不可导入正式 Creator 新菜单。"
+}

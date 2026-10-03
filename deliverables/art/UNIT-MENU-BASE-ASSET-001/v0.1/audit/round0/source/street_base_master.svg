@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3072" height="1024" viewBox="0 0 3072 1024">
+  <title>STREET_BASE_01 百鬼夜市空背景可编辑分层母版</title>
+  <desc>从空白路径原创制作。各 symbol 是独立纹理源，scene-layout 仅用于编辑预览。无用户参考像素、外部图片、文字、字体或可开关对象。</desc>
+  <defs>
+    <linearGradient id="g-sky" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#102147"/><stop offset="0.36" stop-color="#203b6c"/><stop offset="0.67" stop-color="#263c63"/><stop offset="1" stop-color="#102b4d"/>
+    </linearGradient>
+    <radialGradient id="g-moon"><stop offset="0" stop-color="#fff4d6"/><stop offset="0.7" stop-color="#f5daa9"/><stop offset="1" stop-color="#dcae79"/></radialGradient>
+    <linearGradient id="g-mountain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#354e82"/><stop offset="1" stop-color="#1c365f"/></linearGradient>
+    <linearGradient id="g-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b1a4a0"/><stop offset="0.46" stop-color="#8a8995"/><stop offset="1" stop-color="#59677c"/></linearGradient>
+    <linearGradient id="g-bridge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8b99a9"/><stop offset="0.58" stop-color="#647488"/><stop offset="1" stop-color="#3d516e"/></linearGradient>
+    <linearGradient id="g-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a4671"/><stop offset="0.48" stop-color="#0c365f"/><stop offset="1" stop-color="#092747"/></linearGradient>
+    <pattern id="p-pavers" width="128" height="80" patternUnits="userSpaceOnUse">
+      <rect width="128" height="80" fill="#8c8d9a"/>
+      <path d="M0 0H128 M0 40H128 M0 80H128 M30 0V40 M90 0V40 M0 40V80 M64 40V80 M128 40V80" fill="none" stroke="#53677e" stroke-width="2.2" opacity=".72"/>
+      <path d="M5 3H26 M35 3H82 M98 4H123 M8 43H50 M71 44H119" fill="none" stroke="#d7c8bb" stroke-width="1.6" opacity=".48"/>
+      <path d="M47 20l4 2 M104 58l4 -1 M19 62l2 2" fill="none" stroke="#425772" stroke-width="1.2" opacity=".46"/>
+    </pattern>
+    <pattern id="p-ripple" width="128" height="96" patternUnits="userSpaceOnUse">
+      <rect width="128" height="96" fill="url(#g-water)"/>
+      <path d="M4 15q18 -5 43 0 M69 24q22 -5 49 0 M12 51q25 6 51 0 M82 63q20 -4 35 0 M7 82q26 -6 48 0" fill="none" stroke="#6a92ae" stroke-width="2" stroke-linecap="round" opacity=".39"/>
+      <path d="M33 35q17 3 36 0 M82 86q20 -3 39 0" fill="none" stroke="#e3c79b" stroke-width="1.8" stroke-linecap="round" opacity=".23"/>
+    </pattern>
+    <symbol id="sky_gradient" viewBox="0 0 32 1024" preserveAspectRatio="none"><rect width="32" height="1024" fill="url(#g-sky)"/></symbol>
+    <symbol id="moon" viewBox="0 0 128 128">
+      <circle cx="64" cy="64" r="61" fill="#e4d3b2" opacity=".1"/><circle cx="64" cy="64" r="48" fill="#f5d6a1" opacity=".15"/>
+      <circle cx="64" cy="64" r="39" fill="url(#g-moon)" stroke="#fff0cb" stroke-width="2"/>
+      <path d="M43 45q10 -5 15 3 M82 48q8 2 7 9 M47 77q9 7 17 4 M79 75q4 -5 11 -3" fill="none" stroke="#d2ad78" stroke-width="3" opacity=".34" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cloud_a" viewBox="0 0 512 192">
+      <path d="M0 146 Q35 130 63 141 Q87 110 126 126 Q161 84 208 102 Q233 68 280 80 Q317 57 348 87 Q395 72 420 109 Q471 94 512 133 L512 192 H0Z" fill="#7d90b6" opacity=".22"/>
+      <path d="M0 158 Q91 146 161 156 Q243 139 316 157 Q401 146 512 157" fill="none" stroke="#9cadd0" opacity=".21" stroke-width="9" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="cloud_b" viewBox="0 0 512 192">
+      <path d="M0 150 Q28 123 71 133 Q99 102 148 113 Q194 75 245 105 Q277 72 319 88 Q359 78 389 113 Q452 94 512 139 L512 192 H0Z" fill="#627cad" opacity=".24"/>
+      <path d="M35 155q70 -18 122 -1 M292 151q83 -20 171 1" fill="none" stroke="#9db4d0" stroke-width="8" stroke-linecap="round" opacity=".18"/>
+    </symbol>
+    <symbol id="distance_a" viewBox="0 0 1024 320">
+      <path d="M0 246 L75 198 L135 211 L233 80 L278 130 L332 111 L401 239 L501 170 L569 210 L676 61 L724 119 L787 112 L889 249 L963 174 L1024 213 L1024 320 H0Z" fill="url(#g-mountain)"/>
+      <path d="M0 287 Q142 246 253 273 Q388 238 511 278 Q622 241 723 265 Q866 239 1024 284 L1024 320 H0Z" fill="#213b64"/>
+      <path d="M213 115l22 -35 31 48 M667 75l13 -15 26 46" fill="none" stroke="#7186ad" stroke-width="4" opacity=".26"/>
+    </symbol>
+    <symbol id="distance_b" viewBox="0 0 1024 320">
+      <path d="M0 220 L65 158 L136 192 L223 110 L273 149 L350 54 L414 134 L494 102 L552 206 L628 130 L717 194 L813 71 L866 116 L924 102 L1024 230 L1024 320 H0Z" fill="url(#g-mountain)"/>
+      <path d="M0 278 Q128 256 234 268 Q388 236 520 275 Q656 243 791 266 Q922 243 1024 283 L1024 320 H0Z" fill="#20395f"/>
+      <path d="M337 78l14 -24 30 43 M800 88l14 -18 32 48" fill="none" stroke="#8299be" stroke-width="4" opacity=".27"/>
+    </symbol>
+    <symbol id="distance_c" viewBox="0 0 1024 320">
+      <path d="M0 229 L79 147 L141 173 L231 67 L290 133 L372 103 L441 222 L524 174 L592 212 L664 84 L722 132 L801 107 L893 233 L964 161 L1024 210 L1024 320 H0Z" fill="url(#g-mountain)"/>
+      <path d="M0 276 Q141 246 248 268 Q394 241 510 280 Q632 242 761 270 Q889 245 1024 278 L1024 320 H0Z" fill="#213c65"/>
+      <path d="M222 82l11 -15 37 58 M647 104l20 -20 32 47" fill="none" stroke="#8198bf" stroke-width="4" opacity=".25"/>
+    </symbol>
+    <symbol id="ground_full" viewBox="0 0 512 320">
+      <rect width="512" height="320" fill="url(#g-stone)"/>
+      <rect width="512" height="320" fill="url(#p-pavers)" opacity=".76"/>
+      <path d="M0 12H512 M0 303H512" fill="none" stroke="#d6c3ae" stroke-width="3" opacity=".35"/>
+    </symbol>
+    <symbol id="ground_half" viewBox="0 0 256 320">
+      <rect width="256" height="320" fill="url(#g-stone)"/>
+      <rect width="256" height="320" fill="url(#p-pavers)" opacity=".76"/>
+      <path d="M0 12H256 M0 303H256" fill="none" stroke="#d6c3ae" stroke-width="3" opacity=".35"/>
+    </symbol>
+    <symbol id="water_river" viewBox="0 0 512 192"><rect width="512" height="192" fill="url(#p-ripple)"/><path d="M0 6H512" stroke="#678aa5" stroke-width="2" opacity=".45"/></symbol>
+    <symbol id="water_branch" viewBox="0 0 384 256">
+      <path d="M58 0 Q75 85 21 132 L0 256 H384 L362 132 Q309 81 326 0Z" fill="url(#g-water)"/>
+      <path d="M80 28q98 -19 222 0 M57 94q126 -12 268 0 M24 175q166 -21 338 0 M19 221q169 -20 346 0" fill="none" stroke="#6f9bb9" stroke-width="5" opacity=".42" stroke-linecap="round"/>
+      <path d="M148 57q48 -7 85 0 M114 142q75 11 160 0 M138 206q59 -5 118 0" fill="none" stroke="#d7ba87" stroke-width="3" opacity=".19" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="bank" viewBox="0 0 512 96">
+      <path d="M0 7 Q128 4 256 7 Q384 4 512 7 L512 68 Q384 65 256 70 Q128 66 0 69Z" fill="#526479" stroke="#2d415d" stroke-width="3"/>
+      <path d="M0 0H512V16H0Z" fill="#8996a0" stroke="#334960" stroke-width="3"/>
+      <path d="M0 34H512 M0 61H512 M57 16v18 M188 34v27 M328 16v18 M458 34v27" fill="none" stroke="#344c66" stroke-width="3" opacity=".65"/>
+      <path d="M31 10h70 M224 9h75 M395 10h88" fill="none" stroke="#b9b7ad" stroke-width="2.4" opacity=".55" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="bridge_back" viewBox="0 0 512 384">
+      <path fill-rule="evenodd" d="M0 263 C52 247 102 209 145 170 C187 133 217 121 256 119 C296 121 326 133 367 170 C410 209 462 247 512 263 L512 384 H0Z M151 384 C153 302 191 246 256 246 C322 246 359 302 361 384Z" fill="url(#g-bridge)" stroke="#2e445d" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M0 262 C52 246 102 208 145 169 C188 132 220 120 256 119 C293 120 325 132 367 169 C411 208 462 246 512 262" fill="none" stroke="#c6b7a7" stroke-width="13" stroke-linecap="round"/>
+      <path d="M4 265 C52 250 106 215 149 175 C190 138 221 126 256 125 C291 126 322 138 363 175 C406 215 459 250 508 265" fill="none" stroke="#617990" stroke-width="3"/>
+      <path d="M44 272l13 55 M91 239l20 59 M144 180l25 65 M206 132l11 72 M297 132l-11 72 M368 181l-24 64 M420 240l-20 59 M468 272l-13 55" fill="none" stroke="#38516c" stroke-width="4" opacity=".75"/>
+      <path d="M61 319h71 M380 319h74 M31 351h80 M405 351h75 M149 365h20 M343 365h20" fill="none" stroke="#c2b8ad" stroke-width="2" opacity=".46" stroke-linecap="round"/>
+      <path d="M151 384 C153 302 191 246 256 246 C322 246 359 302 361 384" fill="none" stroke="#b0a898" stroke-width="8" opacity=".68"/>
+    </symbol>
+    <symbol id="bridge_front" viewBox="0 0 512 384">
+      <path d="M6 240 C76 220 121 163 170 128 C205 103 228 94 256 92 C285 94 310 103 342 128 C390 163 438 220 506 240" fill="none" stroke="#2a415c" stroke-width="14" stroke-linecap="round"/>
+      <path d="M6 236 C76 216 121 159 170 124 C205 99 228 90 256 88 C285 90 310 99 342 124 C390 159 438 216 506 236" fill="none" stroke="#9ba9b1" stroke-width="8" stroke-linecap="round"/>
+      <path d="M23 224v-38 M82 196v-48 M143 148v-48 M202 106V63 M256 91V45 M310 106V63 M369 148v-48 M430 196v-48 M489 224v-38" stroke="#2d435c" stroke-width="11" stroke-linecap="round"/>
+      <path d="M23 224v-38 M82 196v-48 M143 148v-48 M202 106V63 M256 91V45 M310 106V63 M369 148v-48 M430 196v-48 M489 224v-38" stroke="#8293a2" stroke-width="6" stroke-linecap="round"/>
+      <path d="M12 180 C112 136 176 74 256 53 C337 74 401 136 500 180" fill="none" stroke="#63758a" stroke-width="8" opacity=".85"/>
+      <path d="M148 384 C152 302 191 247 256 247 C322 247 360 302 364 384" fill="none" stroke="#243d59" stroke-width="13" opacity=".84"/>
+      <circle cx="256" cy="40" r="9" fill="#c5b9a8" stroke="#334962" stroke-width="4"/>
+    </symbol>
+    <symbol id="rail_back" viewBox="0 0 512 96">
+      <path d="M0 50H512 M0 72H512" stroke="#3f536b" stroke-width="9"/>
+      <path d="M0 47H512 M0 69H512" stroke="#8796a5" stroke-width="3.5"/>
+      <path d="M28 17v72 M156 17v72 M284 17v72 M412 17v72" stroke="#344a65" stroke-width="16" stroke-linecap="round"/>
+      <path d="M28 17v72 M156 17v72 M284 17v72 M412 17v72" stroke="#788a9d" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="28" cy="14" r="10" fill="#a9a9a8" stroke="#344a65" stroke-width="3"/><circle cx="156" cy="14" r="10" fill="#a9a9a8" stroke="#344a65" stroke-width="3"/><circle cx="284" cy="14" r="10" fill="#a9a9a8" stroke="#344a65" stroke-width="3"/><circle cx="412" cy="14" r="10" fill="#a9a9a8" stroke="#344a65" stroke-width="3"/>
+    </symbol>
+    <symbol id="rail_front" viewBox="0 0 512 96">
+      <path d="M0 36H512 M0 67H512" stroke="#243b56" stroke-width="11"/>
+      <path d="M0 32H512 M0 63H512" stroke="#8493a1" stroke-width="4"/>
+      <path d="M35 15v78 M163 15v78 M291 15v78 M419 15v78" stroke="#2d435e" stroke-width="19" stroke-linecap="round"/>
+      <path d="M35 15v78 M163 15v78 M291 15v78 M419 15v78" stroke="#6b7d91" stroke-width="11" stroke-linecap="round"/>
+      <path d="M35 4h1 M163 4h1 M291 4h1 M419 4h1" stroke="#9ba7ac" stroke-width="15" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+  <g id="scene-layout">
+    <use xlink:href="#sky_gradient" x="0" y="0" width="3072" height="1024"/>
+    <use xlink:href="#moon" x="1472" y="65" width="128" height="128"/>
+    <use xlink:href="#cloud_a" x="120" y="90" width="512" height="192" opacity=".8"/>
+    <use xlink:href="#cloud_b" x="610" y="160" width="512" height="192" opacity=".7"/>
+    <use xlink:href="#cloud_a" x="1880" y="105" width="512" height="192" opacity=".75"/>
+    <use xlink:href="#cloud_b" x="2430" y="170" width="512" height="192" opacity=".7"/>
+    <use xlink:href="#distance_a" x="0" y="225" width="1024" height="320"/>
+    <use xlink:href="#distance_b" x="1024" y="225" width="1024" height="320"/>
+    <use xlink:href="#distance_c" x="2048" y="225" width="1024" height="320"/>
+    <use xlink:href="#water_river" x="0" y="832" width="512" height="192"/><use xlink:href="#water_river" x="512" y="832" width="512" height="192"/><use xlink:href="#water_river" x="1024" y="832" width="512" height="192"/><use xlink:href="#water_river" x="1536" y="832" width="512" height="192"/><use xlink:href="#water_river" x="2048" y="832" width="512" height="192"/><use xlink:href="#water_river" x="2560" y="832" width="512" height="192"/>
+    <use xlink:href="#water_branch" x="1344" y="640" width="384" height="256"/>
+    <use xlink:href="#bank" x="0" y="790" width="512" height="96"/><use xlink:href="#bank" x="512" y="790" width="512" height="96"/><use xlink:href="#bank" x="1024" y="790" width="256" height="96"/><use xlink:href="#bank" x="1792" y="790" width="512" height="96"/><use xlink:href="#bank" x="2304" y="790" width="512" height="96"/><use xlink:href="#bank" x="2816" y="790" width="256" height="96"/>
+    <use xlink:href="#ground_full" x="0" y="470" width="512" height="320"/><use xlink:href="#ground_full" x="512" y="470" width="512" height="320"/><use xlink:href="#ground_half" x="1024" y="470" width="256" height="320"/><use xlink:href="#ground_full" x="1792" y="470" width="512" height="320"/><use xlink:href="#ground_full" x="2304" y="470" width="512" height="320"/><use xlink:href="#ground_half" x="2816" y="470" width="256" height="320"/>
+    <use xlink:href="#bridge_back" x="1280" y="450" width="512" height="384"/>
+    <use xlink:href="#rail_back" x="0" y="470" width="512" height="96"/><use xlink:href="#rail_back" x="512" y="470" width="512" height="96"/><use xlink:href="#rail_back" x="1024" y="470" width="256" height="96"/><use xlink:href="#rail_back" x="1792" y="470" width="512" height="96"/><use xlink:href="#rail_back" x="2304" y="470" width="512" height="96"/><use xlink:href="#rail_back" x="2816" y="470" width="256" height="96"/>
+    <use xlink:href="#bridge_front" x="1280" y="450" width="512" height="384"/>
+    <use xlink:href="#rail_front" x="0" y="756" width="512" height="96"/><use xlink:href="#rail_front" x="512" y="756" width="512" height="96"/><use xlink:href="#rail_front" x="1024" y="756" width="256" height="96"/><use xlink:href="#rail_front" x="1792" y="756" width="512" height="96"/><use xlink:href="#rail_front" x="2304" y="756" width="512" height="96"/><use xlink:href="#rail_front" x="2816" y="756" width="256" height="96"/>
+  </g>
+</svg>

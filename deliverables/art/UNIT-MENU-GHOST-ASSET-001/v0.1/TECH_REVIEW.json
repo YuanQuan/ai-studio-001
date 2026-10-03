@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 Review 仅批准 UG_GHOST_01 与 BENCH_01 v0.1 的真实源、导出及静态技术质量，作为待用户审批的正式资源候选，不表示 Creator/目标机可集成已通过。原始、朝向 REV1、图集 REV2 三轮 Art/Tech 出图前签认均存在；本机可读文件时间顺序为 TECH_PREFLIGHT 01:33:11 < round0 atlas 01:41:23、TECH_PREFLIGHT_REV1 01:48:14 < round1 atlas 01:50:28、TECH_PREFLIGHT_REV2 01:56:14 < 最终 atlas 01:57:54（均 2026-10-03 北京时间）。首轮和第二轮源/图/预览分别封存 audit/round0、audit/round1。文件系统时间只作辅助证据，正式版本与签认文本仍以仓库 Artifact 为准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立运行 tools/verify_assets.js 返回 PASS_STATIC_EXPORT_CHECKS：右向 23 张 160×192 透明 PNG 皆有不同 SHA256；move/run 各 6、happy/sad 各 3、sit 5，GIF 23 页；atlas 实际一页 1024×512，SHA256 为 1b897c97ea73183162606d13a4a8b6eab56ffd09968cfb533e8d8360c75a1983，所有帧 4px paddedRect 不交叠/不越界，最大右界 981、下界 477。RGBA8 基础量 2,097,152 B（2 MiB），不是 PNG 149,994 B 的文件大小。"
+    },
+    {
+      "severity": "INFO",
+      "message": "与 audit/round1 独立逐项比较：23 条完整帧记录及其 hash、ghost/bench SVG hash、左右 contact sheet、23 页 GIF 完全相同；当前 atlas 的 1024×512 像素逐字节等于 round1 1024×1024 atlas 的顶部 512 行，只有页高、atlas hash/索引及脚本相应参数变化。当前脚本检查全部三轮 Art/Tech preflight 为 APPROVED，源/帧/图集/座点身份链可重复导出。独立板凳的后片/前片及双座点不烘入顾客帧。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "静态相邻帧像素差中 move、run 的末→首相对相邻差中位数分别为 0.519、0.558，未见数值大跳，但移动动感偏轻；左右镜像朝向与情绪/坐姿已在预览可辨，不能据此判目标机缩放后的节奏、首尾自然度、两向座点接触和小屏辨识 PASS。部分 alpha 非零像素距逻辑画布顶部仅 1px，新增高头饰或抬升动作必须重测边界并重签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "图集同页不保证单 DrawCall；Creator 3.8.8 SpriteFrame 裁切/offset/pivot 实际导入、真实 alpha 过滤毛边、独立/组合 Prefab UUID 同源、目标机纹理上限/压缩回退/显存/帧时间、运行左右十格与未来主体第三入口均 NOT_TESTED。图片/字体来源和参考授权边界见 RIGHTS_AND_SOURCE.md；本批无外部图片/字体，用户参考仅作授权未知的高层风格研究。"
+    }
+  ],
+  "next_action": "Art 完成 DELIVERABLE.json，Master 对本批资源和五项 Task 验收做最终 Review 并提交用户审批。用户批准后 Client 方可在正式七菜单工程导入相同源版本的图集、板凳前后片并记录 .meta/Prefab UUID；Client/QA 对运行、遮挡、十格、目标机和性能逐项取证，未测项保持 NOT_TESTED。"
+}

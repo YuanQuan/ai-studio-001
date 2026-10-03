@@ -1,0 +1,16 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03 封存第二轮 source/23 帧/图集/预览及 hash 于 audit/round1，并核其 paddedRect 最右 981、最下 477，均含 4px 边；同帧直接放入 1024×512 可节约基础 RGBA8 纹理 2 MiB。签认依据 PREFLIGHT_REVISION_02.md，仅同一视觉帧的图集高度改变。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "目标机小屏左右十格、实际 GPU 占用、Creator 导入及 DrawCall 未测；第二轮预览已较首轮可辨，但不能据此声明游戏内质量 PASS。"
+    }
+  ],
+  "next_action": "Tech Lead 在 TECH_PREFLIGHT_REV2.json 复核第二轮真实矩形、页高与工具输出风险；批准落盘前不改脚本、不重新导出。批准后只调整 atlas 高度并验证 23 帧哈希和 rect 不变。"
+}

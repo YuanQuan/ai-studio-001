@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "2026-10-03T11:03:14+08:00 完成本批实际资源技术终审，结论仅针对 STREET_BASE_01 v0.1 REV2 的可编辑源、16 张静态层图、placement/镜头预览与出图证据，准予作为待 Master/用户审批的正式资源候选；不表示 Creator 已导入、目标设备或七菜单运行通过。三轮双签均先于对应图片：Art/Tech 原签 02:13:46/10:20:38 < round0 bridge_back 10:27:21，REV1 10:32:21/10:34:46 < round1 bridge_back 10:41:16，REV2 10:44:43/10:46:48 < 当前 bridge_back 10:51:34（2026-10-03 本机时间）。round0/round1 的源、层、预览、manifest 和 SHA256 均已封存。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立执行 tools/verify_layers.js 并拦截报告写入，返回 PASS_STATIC_CHECKS_ONLY 共 7 项：世界 3072×1024、16 张真实 PNG、42 个 world placement、逐图尺寸/SHA256/alpha bbox 与 LAYER_MANIFEST.json 一致；单张最大边 1024，总源纹理 2,211,840 px²，RGBA8 基础量 8,847,360 B = 8.4375 MiB。源 SVG SHA256 7ffa5218b2cee135242242b026c23f5dfb3b99b170486751206e949916ba09d2、全景 PNG SHA256 f817b9fae511223a3aeddb8626d1ef1ddcab409ad656fd263423be767e47ee46 均与清单一致，脚本 hash 和 16 PNG hash 亦逐项相符。"
+    },
+    {
+      "severity": "INFO",
+      "message": "32×1024 天空底图全部 alpha=255 并覆盖世界；全景与七张 720×1280 左/中/右/西/东候选镜头裁图均不露透明边。bridge_back 局部 (256,260)/(256,320)/(256,380) alpha=0、桥端和桥腹取样不透明；地面 x1280..1792 留出中央水口，water_branch y640..896 与前河 y832..1024 重叠，视觉可透出水层。桥、栏前后片独立 PNG/placement；相较 round1 仅 bridge_back 与 distance_a/b/c 变化，其余 12 张 PNG 哈希相同。预览由实际分层图与同一 placement 合成，不作为额外运行时大贴图。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "复用段接缝静态 RGB 相邻差：地面约 0.04/255、河/岸为 0；桥接街 x1280/1792 在 y480..745 约 13.81/13.55/255，属可见材质构造接缝。全景及中心竖屏预览中桥顶路线有浅色坡线，但正面石拱仍占较多画面；顾客沿两坡过桥的脚点/前后遮挡和手机缩放后的可行走辨识须由 Client/QA 以真实角色实例验证，必要时回 Art 修订。当前静态图不可替代该项运行视觉 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "解析相机 s_min=1.25 在现 720×1280 设计视口恰好用尽 1024 世界高，静态七裁图不露边不代表 Creator 真机安全区、DPR 与纹理滤波无露白；实际运行应重算合法可视半宽/半高并留采样余量。初始 s=1.35 仅见约 533 世界宽，中心 x1536 只见桥，西/东 x620/2452 只是同底板观察裁图，不自动批准新跳转 UI。菜单 1/7 的同 Prefab UUID、拖缩输入、目标机最大纹理/压缩回退/解码峰值/显存/DrawCall/帧时间与未来主体第三入口均 NOT_TESTED；16 张纹理和 8.4375 MiB 基础量不能推断实机资源占用或固定 DrawCall。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RIGHTS_AND_SOURCE.md 与 project/art_reference/backgrounds/STREET_BASE_01_v0.1.md 将用户参考作者/商用授权标 UNKNOWN，参考只用于高层构图/功能，不进入 SVG/PNG 像素；本批源无外部图片、字体、Logo，工具 Node v22.12.0/sharp 0.35.4/libvips 8.18.6 仅用于开发导出。该来源记录支持本批原创候选审阅，不是对未知参考取得授权的结论；出现可识别近似须停用并重评。"
+    }
+  ],
+  "next_action": "Art 将本 TECH_REVIEW 纳入 DELIVERABLE.json 并完成第五条文档/专业评审验收；Master 对静态资产、剩余可见桥端风险及用户选定风格作最终 Review 后提交用户审批。用户批准本批后 Client 才可导入相同源版本的 16 张层图，登记 Creator .meta/Prefab UUID、菜单 1/7 共源及真实运行镜头/遮挡/性能证据；所有未实测项保持 NOT_TESTED。"
+}

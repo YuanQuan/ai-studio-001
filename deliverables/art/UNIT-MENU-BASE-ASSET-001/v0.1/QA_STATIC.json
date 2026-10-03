@@ -1,0 +1,326 @@
+{
+  "taskId": "UNIT-MENU-BASE-ASSET-001",
+  "version": "v0.1-REV2",
+  "status": "PASS_STATIC_CHECKS_ONLY",
+  "sourceSha256": "7ffa5218b2cee135242242b026c23f5dfb3b99b170486751206e949916ba09d2",
+  "previewSha256": "f817b9fae511223a3aeddb8626d1ef1ddcab409ad656fd263423be767e47ee46",
+  "checks": [
+    {
+      "name": "source-scale-count",
+      "status": "PASS",
+      "evidence": "3072×1024，16 PNG，42 placements，8,847,360 B RGBA8"
+    },
+    {
+      "name": "actual-textures-hashes-alpha",
+      "status": "PASS",
+      "evidence": "逐张实际 PNG 尺寸、SHA-256、alpha bbox 与 manifest 完全一致"
+    },
+    {
+      "name": "sky-full-height-opaque",
+      "status": "PASS",
+      "evidence": "32×1024 底色所有 alpha=255，实例横铺整世界"
+    },
+    {
+      "name": "real-arch-alpha",
+      "status": "PASS",
+      "evidence": "桥后片拱洞三点真实 alpha=0，桥端/桥腹样点不透明"
+    },
+    {
+      "name": "channel-layout",
+      "status": "PASS",
+      "evidence": "地面中央 x1280..1792 留口，支流 y640..896 与前河 y832..1024 重叠"
+    },
+    {
+      "name": "full-scene-and-camera-alpha",
+      "status": "PASS",
+      "evidence": "3072×1024 全景与 7 张 720×1280 左/中/右/西/东镜头裁图均 alpha=255"
+    },
+    {
+      "name": "revision-scope",
+      "status": "PASS",
+      "evidence": "相较 round1 仅 bridge_back 与 3 张 distance PNG 像素改变；其余 12 张纹理 SHA-256 未变"
+    }
+  ],
+  "seamSamples": {
+    "ground": [
+      {
+        "x": 512,
+        "meanRgbStep": 0.04
+      },
+      {
+        "x": 1024,
+        "meanRgbStep": 0.04
+      },
+      {
+        "x": 2048,
+        "meanRgbStep": 0.04
+      },
+      {
+        "x": 2560,
+        "meanRgbStep": 0.04
+      }
+    ],
+    "bridgeEnds": [
+      {
+        "x": 1280,
+        "meanRgbStep": 13.81
+      },
+      {
+        "x": 1792,
+        "meanRgbStep": 13.55
+      }
+    ],
+    "river": [
+      {
+        "x": 512,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 1024,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 2048,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 2560,
+        "meanRgbStep": 0
+      }
+    ],
+    "bank": [
+      {
+        "x": 512,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 1024,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 2048,
+        "meanRgbStep": 0
+      },
+      {
+        "x": 2560,
+        "meanRgbStep": 0
+      }
+    ]
+  },
+  "textures": [
+    {
+      "id": "sky_gradient",
+      "width": 32,
+      "height": 1024,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 1024,
+        "visiblePixels": 32768
+      },
+      "sha256": "7b3e48996fcee6a783b65a8b0b130b06feb7ff92cf7b63f806074e7cbe138c28"
+    },
+    {
+      "id": "moon",
+      "width": 128,
+      "height": 128,
+      "alphaBBox": {
+        "x": 3,
+        "y": 3,
+        "width": 122,
+        "height": 122,
+        "visiblePixels": 11856
+      },
+      "sha256": "b0949bb0aa2991d85c96da0efa5ea877922cf1996c1e3487a36d9a90c3cc263b"
+    },
+    {
+      "id": "cloud_a",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 6,
+        "y": 55,
+        "width": 497,
+        "height": 106,
+        "visiblePixels": 32517
+      },
+      "sha256": "9633eef873704334a6acf5bdda1c8b2260743fc94e51bfdcd5744cb8ac3b15ce"
+    },
+    {
+      "id": "cloud_b",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 6,
+        "y": 70,
+        "width": 500,
+        "height": 93,
+        "visiblePixels": 29262
+      },
+      "sha256": "96af2d8b4ac99c530d7d098d223076619a6f95595c3fec276a564f45ab417b39"
+    },
+    {
+      "id": "distance_a",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 73,
+        "width": 1024,
+        "height": 247,
+        "visiblePixels": 153832
+      },
+      "sha256": "6a486b7a7d31d9e3868b4bd298d90ae9492b322439b7f551f579476122d9a8de"
+    },
+    {
+      "id": "distance_b",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 66,
+        "width": 1024,
+        "height": 254,
+        "visiblePixels": 173395
+      },
+      "sha256": "ced00cea82800caafe481d497a322c5717a9eb20b2780190de6d06f72f755702"
+    },
+    {
+      "id": "distance_c",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 82,
+        "width": 1024,
+        "height": 238,
+        "visiblePixels": 163246
+      },
+      "sha256": "b487d3551f562d5f2bb06ab662f12b4324fe3ff1ea920c11c1438f5637d09614"
+    },
+    {
+      "id": "water_river",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 192,
+        "visiblePixels": 98304
+      },
+      "sha256": "7cc35bd89904fc7307e30948448c93f8bbcfe85016ce4f1935cac125e6f2e8dd"
+    },
+    {
+      "id": "water_branch",
+      "width": 384,
+      "height": 256,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 256,
+        "visiblePixels": 81948
+      },
+      "sha256": "6ad0b13eed57c540a874293d82e60567d059a424a6d76ecc624bd604f0d81daa"
+    },
+    {
+      "id": "bank",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 72,
+        "visiblePixels": 35856
+      },
+      "sha256": "8850b22acabe112d4a8d20210318b13606f30f43aa808755e6f6f0b02133d49e"
+    },
+    {
+      "id": "ground_full",
+      "width": 512,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 320,
+        "visiblePixels": 163840
+      },
+      "sha256": "d2b0e8f74f446219688867ed34ca6bd5642e91bdc9ac4bdd9567850d8dad0e72"
+    },
+    {
+      "id": "ground_half",
+      "width": 256,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 320,
+        "visiblePixels": 81920
+      },
+      "sha256": "bdfe45201cc87c209b18a1e34a422470c7b39782e33bfd24e31291dcd6bc0dc7"
+    },
+    {
+      "id": "bridge_back",
+      "width": 512,
+      "height": 384,
+      "alphaBBox": {
+        "x": 0,
+        "y": 11,
+        "width": 512,
+        "height": 373,
+        "visiblePixels": 155629
+      },
+      "sha256": "159c641537acd23c1926538c48d8004ce98d11bd3ec92f4151f5ac5e3093e7d0"
+    },
+    {
+      "id": "rail_back",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 2,
+        "width": 512,
+        "height": 94,
+        "visiblePixels": 15328
+      },
+      "sha256": "10199edc3a42843b9db9c25e35401a7c89e436bef497e864e4b8f6364e6b4817"
+    },
+    {
+      "id": "bridge_front",
+      "width": 512,
+      "height": 384,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 384,
+        "visiblePixels": 18404
+      },
+      "sha256": "32916fa2ea9037d93564c7e4bc2be684dfd5efc24ce33bf613ae2055e0df19aa"
+    },
+    {
+      "id": "rail_front",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 96,
+        "visiblePixels": 17896
+      },
+      "sha256": "91c6d9b5028c1c239b0a528e1db6d0600e974e5d63dc5204087e392b6feea015"
+    }
+  ],
+  "notTested": [
+    "Creator 3.8.8 实际导入、画面拖拽与缩放",
+    "目标设备最大纹理边长/解码峰值/实际内存/DrawCall/帧时间",
+    "顾客在桥面移动与前后遮挡",
+    "菜单 1 与菜单 7 同一 UUID/Prefab 及对象创建后定位"
+  ]
+}

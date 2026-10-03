@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 于 2026-10-03T10:46:08+08:00 查看 round1 同源全景与 QUALITY_SELF_REVIEW_ROUND1.md：首轮矩形街桥断口已修正，但桥的正面承重石墙占比过大，左右可步行坡面不清，远山仍缺前后层次。round1 不能因静态尺寸/alpha 校验通过就作为正式视觉候选。原签认与 REV1 只覆盖此前两次出图，第三轮须以本 REV2 与 ART_PREFLIGHT_REV2.json 共同复签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "签认前正式 source/street_base_master.svg 与 audit/round1/source 的 SHA256 同为 d88afef3fda2416bd389950e0d10387b494cc01cdef880569a49391e84da6671；正式 tools/export_layers.js 与 audit/round1/tools 同为 e287def18af0b1ee0812b0258e0d69c34709853fd9309b8de2276b2d05f5dcb7。round0 与 round1 的完整源、脚本、16 图、manifest、预览和哈希各自封存，第三轮不得覆盖审计原件。"
+    },
+    {
+      "severity": "INFO",
+      "message": "批准的第三轮变化仅在原 512×384、世界 x=1280/y=410 的 bridge_back/front 内：两端约 x=0..110 与 402..512 改成接世界 y≈470 街面的可辨铺地坡面，中心较窄单孔拱承重体、桥顶比两端高约 35–55px；桥下中央约 x=145..367、世界 y≈630 以下保持真实 alpha 空洞，使 UB_WATER 支流连 y≈832 前河，不能用不透明深蓝假水口。前片栏杆/拱前缘须与后片路面曲线一致并保留未来顾客的前后插层空间。"
+    },
+    {
+      "severity": "INFO",
+      "message": "distance_a/b/c 仅在各自 1024×320 源纹理内增加原创近中远剪影和下部柔雾，邻接 x=1024/2048 的山线及透明边须可衔接；其他源只允许桥/山相邻局部明暗适配。保持 3072×1024、16 个纹理 ID/尺寸/格式、42 个 world placement、九类语义层、前后桥栏片、工具及 s_min=1.25/s_init=1.35/s_max=1.8；RGBA8 基础量仍 8,847,360 B（8.4375 MiB）。真实贴图/合批/设备内存需第三轮输出及 Creator/真机再测，不能把 16 张纹理当 16 DrawCall。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "第三轮导出后须从真实 16 张 PNG 与同一 placement 合成全景/桥遮挡图/七张 720×1280 视窗裁图；抽查街桥路面和两坡是否可步行、拱洞透水、x=512 铺地水纹栏杆边界、三山拼缝、sourceRect 与画布不露白，记录逐文件 SHA256/alpha bbox 并与 round1 比较。用户参考作者/商用许可 UNKNOWN，仅取高层风格；源仍不含外部图片、字体、Logo。Creator 导入、目标设备、对象遮挡、主体同源与性能均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "TECH_PREFLIGHT_REV2.json 与同版 ART_PREFLIGHT_REV2.json 对第三次正式 SVG 修改/PNG 导出构成出图前双签；Art 可按 PREFLIGHT_REVISION_02.md 修改桥与远山母版，并只为 REV2 gate 改导出脚本。完成后提交实际层图、哈希、alpha/透水与镜头/拼缝证据，Art 自评过关后 Tech 再做成品 Review。若必须改世界画布、16 张纹理数量/尺寸、42 placement、缩放边界、九类层、工具或许可，则暂停并再次双签。"
+}

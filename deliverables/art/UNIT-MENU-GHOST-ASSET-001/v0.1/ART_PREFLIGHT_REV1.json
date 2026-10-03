@@ -1,0 +1,16 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "2026-10-03 首轮出图的左右预览脸部偏正面，十格视觉方向不可充分辨识；原图集与预览已封存在 audit/round0，不作为用户审阅候选。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art 批准 PREFLIGHT_REVISION_01.md 的轻微右向三分之四脸和手部前后差修订，仅此造型调整。23 帧、160×192、板凳座点、1024² 候选一页、padding、普通透明材质、工具及许可不变；仍需 Tech Lead 同版新签后才可第二次出图。"
+    }
+  ],
+  "next_action": "等待 TECH_PREFLIGHT_REV1.json 对第二次出图给出 APPROVED；此前只允许文本预案与首轮证据审查，不修改母版或运行导出脚本。"
+}

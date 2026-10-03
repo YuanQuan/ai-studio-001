@@ -1,0 +1,76 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "owner": "art",
+  "summary": "完成首批幽灵顾客与独立板凳的原创可编辑 SVG、右向 23 张透明序列帧、单页 1024×512 真图集、板凳前后片、左右五态关键姿态与 23 页动画预览；三轮逐次出图均留 Art/Tech 预签和审计。此为待专业 Review/用户审批的正式资源候选，Creator/目标机仍未实测。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/PREFLIGHT_REVISION_01.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_PREFLIGHT_REV1.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_PREFLIGHT_REV1.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/PREFLIGHT_REVISION_02.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_PREFLIGHT_REV2.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_PREFLIGHT_REV2.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/source/ghost_master.svg",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/source/bench_master.svg",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/tools/export_assets.js",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/tools/verify_assets.js",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/frames/FRAME_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/ghost_atlas.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/ghost_atlas.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/bench.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/bench_back.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/bench_front.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/preview/contact_sheet.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/preview/frame_sheet.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/preview/loop_preview.gif",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/audit/round0/README.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/audit/round1/README.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/QUALITY_REPORT.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_REVIEW.json",
+    "project/art_reference/characters/UG_GHOST_01_v0.1.md",
+    "project/art_reference/props/BENCH_01_v0.1.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "任何正式图片生成或导出前，Art与Tech对本批资产的原创来源、状态帧表、画布/支点、透明边、板凳座点、图集面积/页数、合批与目标设备内存共同签认；签认时间与证据可追溯",
+      "result": "PASS",
+      "evidence": "首次、方向修订、图集缩高分别有 PREFLIGHT_PLAN / REVISION_01 / REVISION_02 与 ART/TECH_PREFLIGHT 双签；audit/round0、round1 保留前次源/图/哈希，签认先于相应图片输出。目标设备性能为预估且 NOT_TESTED。"
+    },
+    {
+      "criterion": "幽灵顾客仅一个原创方向的可编辑母版与透明帧，移动、跑动分别约4–6帧且首尾自然循环；高兴、沮丧及进座、稳坐、离座可辨，左右镜像预览覆盖五状态，不另绘第二方向整套帧",
+      "result": "PASS",
+      "evidence": "source/ghost_master.svg、frames/FRAME_MANIFEST.json、23 张唯一 hash 的 PNG、preview/contact_sheet.png 与 loop_preview.gif；move/run 各 6 帧、happy/sad 各 3 帧、sit 5 帧，左右关键帧共 10 格；静态接缝差值未出现大跳。move 动感较轻，Creator/目标机动态质量仍 NOT_TESTED。"
+    },
+    {
+      "criterion": "板凳是独立可编辑正式道具，不画入幽灵帧；两向座点、角色脚点与遮挡前后片在预览中可检查，所有帧统一显示尺寸和原点，不能以旧概念图、旧Demo或占位图充数",
+      "result": "PASS",
+      "evidence": "source/bench_master.svg、sprites/bench_back.png / bench_front.png、contact_sheet 坐姿两向与 FRAME_MANIFEST 座点/脚点；角色每张 160×192 同原点。Creator 实际分层与接触尚 NOT_TESTED。"
+    },
+    {
+      "criterion": "逐帧透明PNG、真实打包图集、可重复导出脚本、帧顺序/循环/支点/哈希清单及预览文件真实存在；实际页数、像素面积、alpha边与内存计算有证据，不以一页推断一DrawCall",
+      "result": "PASS",
+      "evidence": "frames/23 PNG、ghost_atlas.png/json、export_assets.js、verify_assets.js、FRAME_MANIFEST.json、QUALITY_REPORT.md 与 contact/frame sheet + GIF 均存在；图集真实 1024×512 一页、RGBA8 基础 2 MiB、4px padding 无重叠，DrawCall 未实测不宣称一页一批。"
+    },
+    {
+      "criterion": "资源与已选非像素可爱夜市风格一致，来源/版权/IP与字体工具许可可追溯，ART/TECH质量评审通过；Creator导入、目标机与未来主体第三入口尚未实测时明确标NOT_TESTED",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json 与 TECH_REVIEW.json 均 APPROVED，仅覆盖本批原创资源、来源/许可记录及静态质量；RIGHTS_AND_SOURCE.md 与 project/art_reference/characters、props 记录来源，用户参考权利 UNKNOWN 仅研究，工具版本可追溯。Creator 导入、目标机运行、独立/组合入口同源及未来主体第三入口明确 NOT_TESTED，不因本 Task 条件 PASS 推断运行验收通过。"
+    }
+  ],
+  "assumptions": [
+    "首批同屏假设一名顾客、一张板凳；主体并发量及目标设备清单由后续 Client/QA 锁定。",
+    "Atlas 的 PNG/JSON 为引擎中立交付，Creator SpriteFrame 与 Prefab UUID 由后续 Client 在获批后建立。"
+  ],
+  "risks": [
+    "move 六帧在当前预览中动感较轻，运行缩小后是否与 run 足够区分须目标设备检查；如需改动作帧，按已签规则重新 Art/Tech 出图前签认。",
+    "角色头顶有帧距 160×192 逻辑画布顶部仅 1 px，今后更高动作可能裁切；atlas 4px padding 的实际线性采样边仍需 Creator/真机实测。",
+    "本批还未获得用户资源审批、Creator/目标机质量证据或未来主体接入；不能直接宣称七菜单可交付。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

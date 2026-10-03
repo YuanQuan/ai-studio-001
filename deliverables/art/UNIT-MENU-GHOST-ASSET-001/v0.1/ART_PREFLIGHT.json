@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03（北京时间）对 v0.1 出图预案完成视觉与来源初筛；签认范围仅 UG_GHOST_01 与 BENCH_01，证据为同版 ART_BRIEF.md 与 PREFLIGHT_PLAN.md。此 APPROVED 是 Art 单方签认，须等 Tech Lead 对同版预案签认后才允许首次 SVG/PNG/GIF 正式出图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "右向唯一原画、move/run 各 6 帧、happy/sad 各 3 帧、sit 5 帧共 23 帧；左右镜像、独立板凳与双座点/前后片方案符合已批准 Art v0.2 和 Product v0.2。无字体、商标或第三方图像导入。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户参考图作者及商用授权未证实，仅作为风格研究，任何像素/轮廓不可直接沿用；完成图像后须再做可识别近似复核。Creator 导入和目标机性能仍 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Tech Lead 复核 v0.1 PREFLIGHT_PLAN.md、工具许可、实际页数与内存风险，在 TECH_PREFLIGHT.json 对同一版本签认；双签落盘后 Art 方可生成或导出图片。"
+}

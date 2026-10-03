@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 于 2026-10-03T10:34:09+08:00 复核 QUALITY_SELF_REVIEW_ROUND0.md、PREFLIGHT_REVISION_01.md、ART_PREFLIGHT_REV1.json 与首轮封存图。首轮桥两端街面在世界 x≈1280/1792 形成明显矩形空档，重复地砖/水纹和偏平云山不足以作为用户审阅候选；首轮 ART/TECH_PREFLIGHT 仅授权当次输出，不授权本次源形体修改。REV1 签认先于第二次源/脚本修改与图片重导出。"
+    },
+    {
+      "severity": "INFO",
+      "message": "签认时正式 source/street_base_master.svg 与 audit/round0/source 同为 SHA256 f7eb7a4b13af0603704008032d6c175fd8915a56968b4ee03ea9014b6ef2173e；正式 tools/export_layers.js 与 audit/round0/tools 同为 SHA256 8d37cd753bcda296c308baf3678d2a2ba1e22965c3d0700cfe05800955d64dcb。首轮 16 张层图、manifest 和预览及逐文件 SHA256 已封存 audit/round0，不得覆盖历史。"
+    },
+    {
+      "severity": "INFO",
+      "message": "REV1 仅批准同一 3072×1024 世界、16 个纹理 ID/尺寸、九类层语义和前后片内的原创桥坡/街面连接、石水云山月的局部形色修订；RGBA8 基础量仍 8,847,360 B（8.4375 MiB），工具链与参考/许可边界不变。桥 back/front 仍各 512×384、世界放置约 x=1280,y=410；桥路两端须在 y≈470 接左右 street ground，中央真实 alpha 拱洞下的支流连前景河，不能把水口涂成深色实心区。导出后应在同世界坐标逐像素复核桥脚、路面、岸线与角色可用行走带；若桥/纹理尺寸或层级需变，停下重新双签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "相机解析边界仍为 720×1280 示意视窗下 s_min=1.25、s_init=1.35、s_max=1.8，中心 reset x=1536/y=512；西 x≈620 与东 x≈2452 在 s=1.35 时各自可见半宽约 266.67，不越 0..3072 画布。西/东裁图只为同一 16 张 PNG/placement 的静态审阅点，不自动批准新 Lab 跳转交互或改变菜单 1/7 同源镜头；将来新增对象定位须由 Client/UI/QA 在获批开工包和 Creator 中定义。真实 DPR/安全区与 s=1.25 上下贴边的采样安全余量仍待实测。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "源纹理仍在同一 16 张上复用；修订后必须对所有 42 个当前 placement、sourceRect 半段、x=512 整数倍附近的石/水/栏接缝、alpha bbox 与桥洞透水做实图检查，不能用模块同名推断无缝或同材质推断固定 DrawCall。用户参考商用许可 UNKNOWN，仅取高层风格与桥水功能，禁止描摹具体山线、桥雕花、石缝；无外部图或字体。Creator 3.8.8、目标机纹理格式/内存、运行合批与动态对象遮挡仍 NOT_TESTED。"
+    }
+  ],
+  "next_action": "ART_PREFLIGHT_REV1.json 与本文件对第二次正式图片产出构成同批双签。Art 可按 PREFLIGHT_REVISION_01.md 修订 SVG/必要的预览脚本并重导出，保留 audit/round0；提交第二轮 16 张实际层图/清单/hash、全景/遮挡/西东镜头裁图与桥洞/接缝检查。Tech 在成品落盘后再做 TECH_REVIEW；若变更 16 张纹理数量/尺寸、相机缩放界、世界画布、层语义、工具或许可，须暂停并再次双签。"
+}

@@ -15,12 +15,12 @@
 
 以上为后续美术工作的定性边界。具体像素网格、色码、骨骼/页尺寸/设备预算仍走阶段Artifact审批。**当前动画方式以 DEC-UNIT-FINAL-ASSET-004 为准**：幽灵顾客不采用骨骼，制作一个方向的原创透明序列帧及可编辑逐帧源，另一方向水平翻转同源帧；移动、跑动等循环动作以每动作约4–6帧为预算起点，检查首尾节拍、形体体量、原点/透明边与状态辨识，不将五状态共压成4–6帧。高兴/沮丧可一次动作加保持帧，坐姿可进座/稳定/离座过渡。左右×五状态十格、板凳两向接触与遮挡验收保留。幽灵图集实际页数、面积、合批与内存由Art/Tech签认，不能套旧幽灵骨骼单页条款。
 
-孟桃、店铺可动件及其他决定动态的场景元素仍采用骨骼，每骨骼对象附件单页；店长/店铺保持一个实际使用视角。顾客取消四方向，非对称饰件、文字/手势、坐姿、光照方向须两向分别核验；世界光/地影、座点和通用文字/UI节点不随帧显示根镜像。若必须新增另一朝向专属绘制件或显著扩帧/退回骨骼，先提交显式变更并获得用户批准，不仅凭Art/Tech签认放行。孟桃腰牌“孟”及固定店铺牌匾不随顾客翻转。旧四方向与幽灵骨骼Artifact留历史，不能作当前生产要求。正式帧图/图集尚未制作，仍待四专业 v0.2 规格审批、逐次出图双签与正式资源审批。
+孟桃、店铺可动件及其他决定动态的场景元素仍采用骨骼，每骨骼对象附件单页；店长/店铺保持一个实际使用视角。顾客取消四方向，非对称饰件、文字/手势、坐姿、光照方向须两向分别核验；世界光/地影、座点和通用文字/UI节点不随帧显示根镜像。若必须新增另一朝向专属绘件或显著扩帧/退回骨骼，先提交显式变更并获得用户批准，不仅凭Art/Tech签认放行。孟桃腰牌“孟”及固定店铺牌匾不随顾客翻转。旧四方向与幽灵骨骼Artifact留历史，不能作当前生产要求。四专业 v0.2 规格已于 2026-10-03 获用户批准；幽灵/板凳首批真正图源与图集已完成逐次双签及 Art/Tech/Master Review，仍待用户审批；空底板独立批也已真实出图并通过 Art/Tech 成品 Review，待 Master/用户审阅。两批 Creator/目标机均未实测，其他资源各自另行逐批签认。
 
 
 ## 当前单元与生产边界
 
-新七项菜单 Product v0.1 范围及正式资源/幽灵序列帧修订入口 [Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md) 均已于 2026-10-03 获 `USER_APPROVED`。Art、Tech Lead、UI、VFX 四专业 v0.2 仍分别待本阶段专业 Review 与用户审批，不能因 Product 已批准而自动放行。空底板、右向幽灵/独立板凳与树花灯的[Art v0.1](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_BRIEF.md)整体已被退回，保留历史候选；五态展示板不能裁作最终帧序列，旧分件/骨骼文字不再作为幽灵生产输入。当前[Art v0.2 出图前方案](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md)明确原创逐帧源、干净透明导出和同源正式资源的门槛，但仍不是实际资源；孟桃、店铺和树花灯的骨骼/分层生产同样需要本阶段获批输入。
+新七项菜单 Product v0.1 范围及正式资源/幽灵序列帧修订入口 [Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md) 均已于 2026-10-03 获 `USER_APPROVED`。Art、Tech Lead、UI、VFX 四专业 v0.2 亦于 2026-10-03 获用户明确批准，现可作为后续正式制作输入；具体图片仍须逐批 Art/Tech 出图前双签、实际导出评审与用户审批。空底板、右向幽灵/独立板凳与树花灯的[Art v0.1](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.1/ART_BRIEF.md)整体已被退回，保留历史候选；五态展示板不能裁作最终帧序列，旧分件/骨骼文字不再作为幽灵生产输入。当前[Art v0.2 出图前方案](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md)明确生产门槛；[幽灵/板凳 v0.1](../deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ASSET_MANIFEST.md) 已按该门槛产出真实独立源、逐帧/图集并经 Art/Tech/Master Review，待用户审批。[空底板 v0.1](../deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md) 已独立出图并通过 Art/Tech 成品 Review，仍待 Master/用户审阅；孟桃、店铺和树花灯仍各自需要逐批双签与实际生产。
 
 孟桃奶茶店v0.5已新生成独立全身、无人店身和工作关系图，并列出脚点/挂点/前柜遮挡/替换手型/单页PARTS_PLAN。现店图包含半透明暖光晕，不能作为干净生产Sprite；正式源需统一重绘分层、补齐遮挡、分离光效、校字/字体许可与图集签认。尚无骨骼、atlas、Prefab或Creator新单元完成证据。
 
@@ -38,6 +38,8 @@
 | UNIT-PILOT v0.5 | 新三图与拆件方案已获 USER_APPROVED；正式分层、骨骼、atlas仍未制作 |
 | UNIT-PILOT-ART-SOURCE-PREFLIGHT v0.1 | 出图前分件包围盒、单页候选与来源审查，处于专业 Review/用户审阅流程；数值未锁 |
 | UNIT-MENU-ART-DESIGN v0.1 | 整版REJECTED，历史三概念候选；幽灵骨骼条款被DEC-004覆盖，不裁作生产帧 |
-| UNIT-MENU-PRODUCT v0.2 / Art v0.2 出图前方案 | 正式同源资源与幽灵序列帧新要求；Product v0.2 于 2026-10-03 获 `USER_APPROVED`，Art/Tech/UI/VFX v0.2 待各自审批，正式图源/图集/Creator 尚未制作 |
+| UNIT-MENU-PRODUCT v0.2 / Art、Tech、UI、VFX v0.2 | 正式同源资源与幽灵序列帧新要求；五份规格均于 2026-10-03 获 `USER_APPROVED`。各批图片仍须独立双签、资源评审和用户审批；Creator 七菜单尚未制作 |
+| UNIT-MENU-GHOST-ASSET v0.1 | 首批 `UG_GHOST_01` 23 帧/单页图集与 `BENCH_01` 独立前后片已真实制作并通过逐次 Art/Tech 双签及 Art/Tech/Master Review；待用户审批，Creator/目标机 `NOT_TESTED` |
+| UNIT-MENU-BASE-ASSET v0.1 REV2 | `STREET_BASE_01` 原创 3072×1024 分层母版、16 张静态纹理/42 placements 与七张竖屏审阅图已真实制作；三轮出图前 Art/Tech 双签，Art/Tech 成品 Review 通过，待 Master/用户审阅；Creator/目标机 `NOT_TESTED`。空景比完整参考更简洁，组合后画风仍须查。 |
 
 来源见对应REFERENCE_AUDIT与project/art_reference。权利未知图片只作研究，不能临摹或直接生产；字体使用、嵌入、分发、修改许可均需核验，改字不等于获得授权。本指南只适用本游戏。

@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-CLIENT-BRIEF-001",
+  "reviewer": "master",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 Task 五项文档验收、已批 Product/Tech/Art/UI/VFX v0.2、FEATURE_BRIEF、SCENE_PREFAB_PLAN、ASSET_GATE_MATRIX、DELIVERABLE 及同期 QA TEST_PLAN/用例。七顶层、3A/3B、1/7 共用底板、独立/组合同一 Prefab/资源身份、幽灵单方向序列帧与其他动态骨骼、座姿/遮挡/生命周期、G0–G6 正式资源门禁均有可实施说明；旧九项和占位图被隔离，尚无 Creator 代码变更。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 的 TECH_REVIEW.json 为 CHANGES_REQUESTED：USER_APPROVED 的 Tech v0.2 PERFORMANCE_PLAN 要求 Client/QA 获批开工包锁定目标机型、硬性能阈值与允许降级，本 v0.1 与 QA v0.1 仅列未来批准路径。现行上游契约未满足，不能将本包送 USER_REVIEW 或解锁正式编码。Master 已提出 CP-UNIT-MENU-PERF-GATE-001 供用户选择分阶段门禁或本轮具体锁机。"
+    },
+    {
+      "severity": "INFO",
+      "message": "客户端编码、正式资源 Creator 导入、SpriteFrame pivot、目标机画面与性能、QA 实际用例和未来主体第三入口均 NOT_TESTED；本 Review 仅评价编码前计划。"
+    }
+  ],
+  "next_action": "等待用户选择性能门禁路径；若本轮锁机，Client/QA 新版补机型/平台、硬阈值和降级并重评；若批准分阶段 CP，Tech 先出 v0.3 获批，Client/QA 新版依其重评。两包专业 Review 通过且用户批准前，不修改正式七菜单运行代码。"
+}

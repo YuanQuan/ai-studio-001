@@ -1,0 +1,48 @@
+{
+  "task_id": "UNIT-MENU-QA-PREBUILD-001",
+  "owner": "qa",
+  "summary": "基于已获批的Product与Tech/Art/UI/VFX v0.2，完成七菜单编码前测试计划、29条客户端待执行用例和14项视觉取证清单；已与同期Client Feature Brief及G0–G6资源门禁核对A/B/C/D范围。本文档不代表Creator、资产或设备运行通过。",
+  "artifacts": [
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/VISUAL_QA_CHECKLIST.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "对照Product v0.2 A01-A03、B01-B09、C左右五状态十格和D00-D07逐项列测试用例、证据类型与明确不测试项；空场景镜头、店灯光影、孟桃、幽灵、树花灯、UI/对话、组合遮挡均覆盖",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md §2追溯矩阵与§6排除项；CLIENT_TEST_CASES.md Q01–Q29及十格索引。此PASS只指计划覆盖完整，所有实际执行仍NOT_TESTED。"
+    },
+    {
+      "criterion": "幽灵移动与跑动分别按约4–6帧循环预算检查末帧接首帧、体量/原点/透明边与左右镜像；高兴沮丧可一次动作加保持，坐姿两向进稳离、快切、撤凳和影/座点不漂浮均有用例",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md §3；CLIENT_TEST_CASES.md Q10–Q15、十格证据索引；VISUAL_QA_CHECKLIST.md V05–V07。仅用例设计PASS。"
+    },
+    {
+      "criterion": "区分单元独立/组合双入口正式资源同源证据与未来主体第三入口尚未接入的NOT_TESTED复验；旧概念、SVG、Demo和占位图不能作为正式资源通过证据",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md §2 D00/D03与§6；CLIENT_TEST_CASES.md Q23–Q24、Q27；VISUAL_QA_CHECKLIST.md V12–V13。主体第三入口明确NOT_TESTED。"
+    },
+    {
+      "criterion": "锁定目标平台、代表设备/低端机候选及待批准性能阈值的决策路径，记录Creator/构建版本、图集页数与纹理格式/内存、DrawCall、帧时、镜头裁切、小字可读性、图片字体工具许可和Visual QA证据；未测项不填PASS",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md §4–§5列设备/阈值锁定责任、负载A–E与证据字段；CLIENT_TEST_CASES.md Q05–Q06、Q25–Q28；VISUAL_QA_CHECKLIST.md V01–V14。机型和硬阈值尚待获批，不伪造实测结论。"
+    },
+    {
+      "criterion": "TEST_PLAN与Client FEATURE_BRIEF交叉核对开工范围和资源门禁，列正式编码前用户审批要求、执行后的TEST_REPORT与缺陷闭环；本Task不声称已执行测试",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md §1、§7；已核Client v0.1 FEATURE_BRIEF.md、SCENE_PREFAB_PLAN.md、ASSET_GATE_MATRIX.md 的七入口、A/B/C/D索引、G0–G6、双入口/第三入口与性能未锁口径；Client正式Review待签。"
+    }
+  ],
+  "assumptions": [
+    "项目现有Creator 3.8.8与720×1280为当前工程事实和设计候选，不预设最终发布平台或横竖屏变更。",
+    "旧DEMO性能预算v0.1不自动成为七菜单硬阈值；Tech/Product/Client/QA需结合获批设备和正式资源另行锁定。",
+    "本任务无需服务器用例；主体游戏第三入口待真正接入后另行复验同一正式资源ID/版本。"
+  ],
+  "risks": [
+    "目标真机、低端机候选、具体平台容器与硬性能阈值尚未锁定，运行性能结论不可给PASS。",
+    "正式逐帧/骨骼/UI/背景源及图片、字体、作者工具许可需逐批出图前Art/Tech签认并获用户批准；目前无法运行实测。",
+    "客户端Feature Brief与本QA计划尚待共同用户审批；未来Client实现与TEST_REPORT另需专业评审及用户确认。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

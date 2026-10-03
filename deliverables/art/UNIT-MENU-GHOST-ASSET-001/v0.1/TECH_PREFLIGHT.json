@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-03 对本批 UG_GHOST_01 与 BENCH_01 的 v0.1 ART_BRIEF.md、PREFLIGHT_PLAN.md 及 ART_PREFLIGHT.json 签认 APPROVED_FOR_EXPORT；此签认早于首次 SVG 母版绘制和 PNG/GIF 导出，只覆盖预案所列右向 23 帧、160×192 统一逻辑画布、256×128 独立板凳及双座点/前后片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "move/run 各 6 帧符合每循环动作约 4–6 帧的已批准预算；happy/sad 各 3 帧为一次动作加保持，sit 5 帧含进座、稳坐和主动离座。ghostFoot=(80,168)、seatContact=(80,146)、seatRight=(76,56)、seatLeft=(180,56) 已明示；左向仅翻转同源帧显示节点，世界位移、板凳、地影、UI 与座点不翻转。真实首尾接缝、坐姿接触及十格视觉仍须出图后逐格核验。"
+    },
+    {
+      "severity": "INFO",
+      "message": "候选 1024×1024 RGBA8 atlas 的 4 px 四周透明边草排可容纳 6 列×5 行 168×200 单元（占 1008×1000，共 30 槽；计划 23 帧）；实际帧 bbox、裁切偏移、padding/bleed、alpha 邻接、页数、有效像素与 hash 须由导出脚本实测并与 FRAME_MANIFEST 对照。1024² 基础 RGBA8 为 4,194,304 B = 4 MiB，板凳合成 256×128 基础量为 131,072 B；解码源、分层板凳、mipmap、压缩回退及 GPU 副本需另计。"
+    },
+    {
+      "severity": "INFO",
+      "message": "核到本机 Node v22.12.0、sharp 0.35.4（package metadata Apache-2.0）、libvips 8.18.6；本批无字体、商标或第三方图片导入，用户参考图授权不明且仅用于高层风格研究，不可裁切、描摹或换色复刻。出图报告须记录实际工具链、脚本、源与产物 hash 并完成相似性复查。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "1024² 单页、透明边和尺寸只是出图前草排，并非已测结果；一页图集不保证一次 DrawCall。目标设备型号、最大纹理边长、实际压缩格式、Creator 3.8.8 导入、SpriteFrame 原点和左右坐姿、运行 DrawCall/帧时间/显存均 NOT_TESTED；实际超页、alpha 毛边、支点跳动、许可疑点或工具/帧数/尺寸/材质变更时暂停后续导出并重新 Art/Tech 签认。"
+    }
+  ],
+  "next_action": "本 v0.1 预案获 Art/Tech 双签，Art 可开始本批原创 SVG 母版及首次逐帧 PNG/图集/预览导出；输出后提交逐帧 alpha bbox、frame/atlas rect 与偏移、哈希、循环与左右十格预览、板凳前后片及真实纹理量。Tech 再按实际产物做 TECH_REVIEW；Creator 与目标设备仍由后续 Client/QA 取证，不在本次签认中判 PASS。"
+}

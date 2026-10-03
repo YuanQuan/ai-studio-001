@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-CLIENT-BRIEF-001",
+  "owner": "client",
+  "summary": "完成七项菜单 Cocos Creator 编码前 Feature Brief、Scene/Prefab 同源方案和正式资源接入门禁；已与 QA 测试计划和用例对齐 A/B/C/D 验收索引。本任务未修改客户端运行代码，也未声称正式资源、Creator 运行或真机已通过。",
+  "artifacts": [
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/SCENE_PREFAB_PLAN.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/ASSET_GATE_MATRIX.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "按已批七入口及第3项双子项定义Cocos Scene/Prefab与Lab菜单路由，空底板拖拽缩放和组合从同一背景源增删对象；明确旧九项与Demo资产不充正式资源",
+      "result": "PASS",
+      "evidence": "SCENE_PREFAB_PLAN.md 第1–3节列七顶层与3A/3B、同一 STREET_BASE_01 UUID/镜头、组合零实例初态及旧九项隔离；FEATURE_BRIEF.md 第1–3节说明镜头边界和输入。此 PASS 仅指开工文档覆盖。"
+    },
+    {
+      "criterion": "明确孟桃/店铺/树花灯骨骼与幽灵单向序列帧的不同导入和动画控制，左右镜像仅作用显示节点，五状态十格、板凳进稳离座、遮挡、快速切态和生命周期清理可实现且不新增玩法规则",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第3、5节与 SCENE_PREFAB_PLAN.md 第2–5节列不同动画路径、FrameVisual 镜像、五态坐姿和实例清理；ASSET_GATE_MATRIX.md 第2–3节列十格与骨骼单页/幽灵实排。运行实现未测试。"
+    },
+    {
+      "criterion": "明确正式源母版、图集/帧/骨骼、UI/VFX及Prefab UUID/版本的依赖门禁，独立/组合双入口共用同一对象和表现逻辑，未来主体接入复验同一ID；未获资源用户批准或Art/Tech签认时不得以旧图占位进入正式实现",
+      "result": "PASS",
+      "evidence": "ASSET_GATE_MATRIX.md G0–G6、逐入口依赖和源/导出/UUID/hash 登记；SCENE_PREFAB_PLAN.md 第2、5节规定允许实例覆盖和双入口扫描，未来主体第三入口 NOT_TESTED。"
+    },
+    {
+      "criterion": "列出资源加载释放、镜头/触控优先级、动画/特效实例归属、真实图集与DrawCall/显存/帧时等目标平台性能检查和中文调试日志，不假造已实测结果",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第3–5节列视口约束、UI 焦点、生命周期、A–E 负载、p50/p95/p99、DrawCall/纹理格式和中文日志；SCENE_PREFAB_PLAN.md 第3、5节列组件责任。所有真实数据明确待测。"
+    },
+    {
+      "criterion": "与QA TEST_PLAN及用例建立验收映射，列实施顺序、可回滚范围、未测试项和需要用户批准的开工门禁；本任务只提交开工概要，不修改客户端代码",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 第6–7节列审批门禁、实施顺序、回滚和 Product A/B/C/D 到 QA 用例映射；已互读 QA TEST_PLAN.md 与 CLIENT_TEST_CASES.md，索引一致。本任务只新增 deliverables/client/ 下文档，无 apps/client 代码修改。"
+    }
+  ],
+  "assumptions": [
+    "Tech v0.2 候选路径由 Client 实施时创建；Creator 实际 UUID、材质与导入表现须实测，不在概要中伪造。",
+    "目标机型、平台范围、帧时/DrawCall/纹理内存硬阈值和采样轮次须由 Tech/Product/Client/QA 在实际资源与设备清单确定后补充获批预算，当前不可给性能 PASS。",
+    "第2–6项展示底板的实际装配以获批资源和 UI/Art 核对为准；第1/7项必须同一 STREET_BASE_01。",
+    "TECH_REVIEW.json 由 Tech Lead 审阅后写入；MASTER_REVIEW.json 由 Master 写入；Producer 管理状态和用户审批。"
+  ],
+  "risks": [
+    "竖屏 720×1280 与横向长街对镜头覆盖、桥栏遮挡、牌匾/腰牌/对话小字的影响尚无真机证据。",
+    "正式幽灵逐帧和两向坐姿、骨骼单页、真实图集/材质批次、图片/字体/作者工具许可仍待生产批次验证。",
+    "Client 与 QA 本开工包尚待专业 Review 及用户明确批准；资产批次亦须分别签认和审批，现不得开始正式运行视觉接入。",
+    "主体游戏第三入口尚未接入，资源同 UUID/版本的三入口一致性保持 NOT_TESTED。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-QA-PREBUILD-001",
+  "reviewer": "master",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 USER_APPROVED 的 Product/Tech/Art/UI/VFX v0.2 输入、Task 五项验收、QA TEST_PLAN、Q01–Q29 CLIENT_TEST_CASES、V01–V14 VISUAL_QA_CHECKLIST、Client 交叉评审 APPROVED 与 DELIVERABLE。A01–A03、B01–B09、C 左右五态十格和 D00–D07 均有未来步骤、预期与证据；五项 Task 验收逐条仅对计划完备性判 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "幽灵 move/run 各约 4–6 帧、首尾循环、统一原点与透明边、两向座姿进稳离和撤凳/快切均有用例。独立与组合双入口的 UUID/hash、资源来源及遮挡取证独立于未来主体第三入口；第三入口和全部 Creator/真机运行当前保持 NOT_TESTED。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "已批 Tech v0.2 PERFORMANCE_PLAN 明定硬阈值、正式机型和允许降级须在后续获批 Client/QA 开工包锁定；本 QA v0.1 与 Client v0.1 将这些留到以后，虽正确标未测，仍与现行上游门禁冲突。已由 Master 提交 CP-UNIT-MENU-PERF-GATE-001 分阶段审批提案，未经用户批准不能视为改变现行要求。DELIVERABLE 第五项中‘Client正式Review待签’为提交时描述，现同版 CLIENT_REVIEW.json 已 APPROVED。"
+    }
+  ],
+  "next_action": "等待用户决定：本轮指定可测试机型/平台并让 Client/QA 新版本补锁硬阈值与降级，或批准 CP 分阶段门禁后由 Tech 出 v0.3、Client/QA 出新版本并重评。现有 Client/QA v0.1 不进入 USER_REVIEW，不开始七菜单正式编码；资源生产批次按既有规格独立推进。"
+}

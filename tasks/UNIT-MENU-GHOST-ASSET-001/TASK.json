@@ -1,0 +1,58 @@
+{
+  "id": "UNIT-MENU-GHOST-ASSET-001",
+  "title": "七菜单首批正式资源：幽灵顾客与独立板凳",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "制作未来主体可复用的第一批原创正式资源：一个原方向的幽灵顾客五态序列帧与独立板凳；先完成逐批Art/Tech出图签认，再生成可编辑母版、透明帧、图集和预览，供用户审阅及后续Creator接入。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md、GHOST_FLIPBOOK_PLAN.md、ATLAS_PREFLIGHT.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/ASSET_PIPELINE.md、PERFORMANCE_PLAN.md（USER_APPROVED）",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/RESOURCE_REUSE_AND_RIGHTS.md 与 VFX v0.2（USER_APPROVED）",
+    "project/ART_GUIDE.md 与 DEC-UNIT-FINAL-ASSET-004"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/source/ghost_master.svg",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/source/bench_master.svg",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/tools/export_assets.js",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/frames/FRAME_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/ghost_atlas.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/ghost_atlas.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/sprites/bench.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/preview/contact_sheet.png",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/preview/loop_preview.gif",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/QUALITY_REPORT.md",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "任何正式图片生成或导出前，Art与Tech对本批资产的原创来源、状态帧表、画布/支点、透明边、板凳座点、图集面积/页数、合批与目标设备内存共同签认；签认时间与证据可追溯",
+    "幽灵顾客仅一个原创方向的可编辑母版与透明帧，移动、跑动分别约4–6帧且首尾自然循环；高兴、沮丧及进座、稳坐、离座可辨，左右镜像预览覆盖五状态，不另绘第二方向整套帧",
+    "板凳是独立可编辑正式道具，不画入幽灵帧；两向座点、角色脚点与遮挡前后片在预览中可检查，所有帧统一显示尺寸和原点，不能以旧概念图、旧Demo或占位图充数",
+    "逐帧透明PNG、真实打包图集、可重复导出脚本、帧顺序/循环/支点/哈希清单及预览文件真实存在；实际页数、像素面积、alpha边与内存计算有证据，不以一页推断一DrawCall",
+    "资源与已选非像素可爱夜市风格一致，来源/版权/IP与字体工具许可可追溯，ART/TECH质量评审通过；Creator导入、目标机与未来主体第三入口尚未实测时明确标NOT_TESTED"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-ART-DESIGN-001",
+    "UNIT-MENU-TECH-DESIGN-001",
+    "UNIT-MENU-UI-SPEC-001",
+    "UNIT-MENU-VFX-SPEC-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本任务是首批正式资源生产与用户审阅，不包含其余背景/店铺/孟桃/树花灯资源或七菜单Creator实现；后续批次继续沿同源ID和逐批签认规则推进。",
+    "用户批准本批图片前它们保持待审正式候选；Creator与目标设备验收另由Client/QA实际取证。",
+    "PREFLIGHT_PLAN、ART_PREFLIGHT和TECH_PREFLIGHT必须先于任何图片生成/导出落盘；若签认不通过，先修订方案，不得越过出图门禁。"
+  ]
+}

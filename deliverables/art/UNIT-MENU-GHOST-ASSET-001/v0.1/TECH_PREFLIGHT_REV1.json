@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 于 2026-10-03 审核首轮封存 audit/round0/、PREFLIGHT_REVISION_01.md 和 ART_PREFLIGHT_REV1.json：首次左右十格预览脸部几乎正面，翻转虽成立但方向辨识不足，首轮图不可提交正式用户审阅。首轮原始 TECH_PREFLIGHT.json 仅覆盖首次产出，不授权这次母版形体变更；本 REV1 签认先于第二次源修改及导出。签认时正式 source/ghost_master.svg 的 SHA256 与 audit/round0/source/ghost_master.svg 相同，均为 610cf1d028381d219f3b219d8350ed07358e5b87daab894e60941e1e63d9e0b5。"
+    },
+    {
+      "severity": "INFO",
+      "message": "批准范围仅限把原有右向母版的眼、鼻口、两手前后层与局部头身轮廓调整为温和的面向右三分之四视角，使水平镜像的左向在缩小预览中可辨。仍只是一方向原创 23 帧；move/run 各 6 帧、happy/sad 各 3 帧、sit 5 帧、160×192 逻辑画布、ghostFoot=(80,168)、seatContact=(80,146)、独立 BENCH_01 及双座点/前后片均不变。不得新增第二套朝向、文字、外部图片、固定左右件或世界光/影。"
+    },
+    {
+      "severity": "INFO",
+      "message": "原导出脚本 frameSvg() 对 happy/sad 的眉口路径有硬编码覆盖，bodyPath() 对每帧身形有硬编码覆盖；Art 修改母版时必须同步调整这些脚本路径，避免普通帧呈三分之四而情绪帧或身体轮廓回到正面。第二轮后逐帧检查源脚本 hash、23 张帧的 bbox/原点/alpha 边与图集 rect，十格左右预览逐态看五官、手势、身形与坐姿接触。"
+    },
+    {
+      "severity": "INFO",
+      "message": "沿用原已签的 4 px padding、1024×1024 候选 atlas 与 RGBA8 4,194,304 B 基础估算、普通透明 Sprite 材质和 Node v22.12.0/sharp 0.35.4/libvips 8.18.6 工具链。实际 bbox 若使页数、纹理尺寸或 alpha 边变化，或引入新工具/素材/许可风险，立即停止导出并再次双签。单页不能推断一 DrawCall；Creator 3.8.8 导入、目标设备上限/内存/帧时间仍 NOT_TESTED。"
+    }
+  ],
+  "next_action": "本 REV1 与 ART_PREFLIGHT_REV1.json 对第二次出图构成 Art/Tech 双签，Art 可修改右向母版及脚本并第二次导出。保留 audit/round0 原件，形成第二轮新 hash/图集/十格预览并做视觉与技术复核；若左右朝向仍不可辨或任一签认约束改变，不得作为用户审阅候选。"
+}

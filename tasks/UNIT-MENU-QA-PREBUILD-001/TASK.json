@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-MENU-QA-PREBUILD-001",
+  "title": "七项菜单正式资源与Creator实现编码前测试计划",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "在编码前为七项菜单、正式同源资源、幽灵序列帧与其他骨骼对象建立可追溯TEST_PLAN和客户端用例；与Client FEATURE_BRIEF共同进入用户审批，不执行或虚报实际测试。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/ACCEPTANCE.md、PRD.md、FLOW.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md、PERFORMANCE_PLAN.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/GHOST_FLIPBOOK_PLAN.md 与 deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/UI_SPEC.md、deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/VFX_SPEC.md（USER_APPROVED）",
+    "tasks/UNIT-MENU-CLIENT-BRIEF-001/TASK.json 与同期FEATURE_BRIEF草案（交叉评审，不将未批草案当正式事实）"
+  ],
+  "deliverables": [
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/VISUAL_QA_CHECKLIST.md",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/UNIT-MENU-QA-PREBUILD-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "对照Product v0.2 A01-A03、B01-B09、C左右五状态十格和D00-D07逐项列测试用例、证据类型与明确不测试项；空场景镜头、店灯光影、孟桃、幽灵、树花灯、UI/对话、组合遮挡均覆盖",
+    "幽灵移动与跑动分别按约4–6帧循环预算检查末帧接首帧、体量/原点/透明边与左右镜像；高兴沮丧可一次动作加保持，坐姿两向进稳离、快切、撤凳和影/座点不漂浮均有用例",
+    "区分单元独立/组合双入口正式资源同源证据与未来主体第三入口尚未接入的NOT_TESTED复验；旧概念、SVG、Demo和占位图不能作为正式资源通过证据",
+    "锁定目标平台、代表设备/低端机候选及待批准性能阈值的决策路径，记录Creator/构建版本、图集页数与纹理格式/内存、DrawCall、帧时、镜头裁切、小字可读性、图片字体工具许可和Visual QA证据；未测项不填PASS",
+    "TEST_PLAN与Client FEATURE_BRIEF交叉核对开工范围和资源门禁，列正式编码前用户审批要求、执行后的TEST_REPORT与缺陷闭环；本Task不声称已执行测试"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-TECH-DESIGN-001",
+    "UNIT-MENU-ART-DESIGN-001",
+    "UNIT-MENU-UI-SPEC-001",
+    "UNIT-MENU-VFX-SPEC-001"
+  ],
+  "status": "REVISION",
+  "approval": "APPROVAL",
+  "notes": [
+    "本Task与UNIT-MENU-CLIENT-BRIEF-001共同组成编码前审批包；用户批准后仍需正式资源、Creator实现和实际QA报告各自通过。",
+    "服务器、经济、订单、剧情与尚未批准的其他角色不在本单元测试范围。"
+  ]
+}

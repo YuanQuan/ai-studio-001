@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-CLIENT-BRIEF-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md、SCENE_PREFAB_PLAN.md、ASSET_GATE_MATRIX.md 和 DELIVERABLE.json 已覆盖七顶层与 3A/3B、1/7 共用 STREET_BASE_01、正式对象 Prefab 同源 UUID/受限实例覆盖、骨骼对象单页与幽灵单方向序列帧、FrameVisual 独占镜像、双向五态/座点/遮挡、异步会话令牌和对象清理；旧九项及 Demo 资产隔离。Task 五项文档验收的方案覆盖总体成立，Creator 实现与资源/设备仍 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "G0–G6 资源门禁区分出图前 Art/Tech 双签、原创源/权利、用户批准、Creator 导入 UUID、独立/组合运行及目标设备 QA；缺批次资源时禁用该项，不用概念图或旧图占位。该设计符合已批准 Product v0.2 D00–D04 与 Tech v0.2 同源边界。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "已 USER_APPROVED 的 Tech v0.2 PERFORMANCE_PLAN.md 开头明确规定：硬阈值、正式机型和允许的降级须在后续获批 Client/QA 开工包中锁定。当前 FEATURE_BRIEF.md 第4、6节、DELIVERABLE.json assumptions 及同期 QA TEST_PLAN.md 第4节把设备清单、帧时/DrawCall/内存硬阈值与降级推迟到未来获批预算，因此本 v0.1 开工包尚未满足该上游合同。文档虽正确要求未锁预算前不能判数值 PASS，也不能仅凭该表述把未锁定的开工包判为全量合规。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Asset Gate G4/G6 和功能/视觉验证已经保留 Creator 3.8.8 及目标设备实测门禁；性能阈值补齐前应维持性能 NOT_TESTED，不以 PNG 文件大小、单页图集或 Web 模拟器结果声称真机达标。未来主体第三入口同 UUID 实测保持 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Client、QA 与 Tech/Product 补充并在本次开工包用户审批前锁定正式设备/平台范围、帧时/DrawCall/纹理内存硬阈值、采样轮次和允许降级；若决定分阶段先批代码设计、后批性能预算，Master 应组织受影响角色形成明确的上游 Tech v0.2 契约变更并经用户审批，再重提 Client/QA 开工包 Review。当前不得以本 Review 解锁正式七菜单编码或数值性能 PASS。"
+}

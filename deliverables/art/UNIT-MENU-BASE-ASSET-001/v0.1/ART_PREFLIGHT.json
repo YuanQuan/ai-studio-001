@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03 对 STREET_BASE_01 v0.1 本批出图前 ART_BRIEF.md 与 PREFLIGHT_PLAN.md 完成视觉、分层与来源签认。3072×1024 平视 3:1 全景、天空/远山/石地/河岸水面/单孔石桥/前后栏九类语义层，空底板排除店、人、板凳、树花灯、暖光与纸船蜡烛，符合已批准 Product/Art v0.2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本批候选 16 张最大边 1024 的可复用非骨骼静态纹理，含全高 32×1024 天空底色防透明拱洞露白，基础 RGBA8 面积 2,211,840 px²/8.4375 MiB；桥、栏杆前后片与通水拱洞独立。720×1280 镜头示意下限 s=1.25、初始 1.35、上限 1.8，真实 Creator/目标机、纹理上限与合批尚 NOT_TESTED，须 Tech 对尺寸/内存/镜头/许可共签。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户选定图的作者及商用授权 UNKNOWN，仅用于风格与桥水功能研究，严禁裁切/描摹；本批计划从空白 SVG 重构，无外部图片/字体/Logo。重复地砖、水纹和栏杆的接缝、竖屏小视窗的桥识别度须在出图后和 Creator/目标机分别验证。"
+    }
+  ],
+  "next_action": "Tech Lead 复核本批尺寸/贴图上界/镜头覆盖/层级及工具许可后写 TECH_PREFLIGHT.json；Tech 未 APPROVED 前 Art 不创建 SVG、不导出透明层或全景预览。"
+}

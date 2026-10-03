@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 对 REV2 真实 16 张 PNG、42 placement、同源合成全景/层级/七张竖屏裁图、可编辑 SVG 与两轮质量返工历史完成审阅。桥两端接街，中央石拱真实透明且支流通前河，冷夜蓝、暖月色、非像素柔和轮廓与当前项目空底板职责一致。可作为待 Tech/Master/用户审阅的正式背景资源候选，不代表七菜单运行资源已批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "来源、IP、字体与导出工具核对见 RIGHTS_AND_SOURCE.md；用户参考作者/商用授权 UNKNOWN，仅取高层构图、未裁切/描摹具体图像。round0/round1 双签及产物/哈希均封存，REV2 先双签后出图。QA_STATIC.json 对实际 PNG 尺寸/哈希/alpha/水口/七镜头无漏边静态检查 PASS。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "空底板刻意不含店、树灯和暖 VFX，单独画面比用户完整参考更简洁；最终组合后的非像素插画细腻度仍需用户审阅。桥端有可见材质接缝（平均邻接 RGB 差约 13.81/13.55/255），桥顶在手机尺度下的可行走坡感及顾客前后遮挡未实测。720×1280 初始中心镜头仅见桥，两侧新增对象需 Client 提供视点定位/拖动可达；Creator/真机内存、DrawCall、边缘采样及菜单1/7同 UUID 均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Tech Lead 基于实际资源、QA_STATIC.json、manifest/hash 和修订双签进行 TECH_REVIEW；通过后交 Master Review 与用户对本批正式背景视觉审批。Client/QA 在资源用户批准后再做 Creator/目标机/组合对象遮挡与双入口同源验收。"
+}

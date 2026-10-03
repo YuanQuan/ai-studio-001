@@ -1,0 +1,1017 @@
+{
+  "taskId": "UNIT-MENU-BASE-ASSET-001",
+  "version": "v0.1",
+  "assetId": "STREET_BASE_01",
+  "worldCanvas": {
+    "width": 3072,
+    "height": 1024
+  },
+  "source": {
+    "file": "source/street_base_master.svg",
+    "sha256": "f7eb7a4b13af0603704008032d6c175fd8915a56968b4ee03ea9014b6ef2173e",
+    "exportScript": "tools/export_layers.js",
+    "exportScriptSha256": "8d37cd753bcda296c308baf3678d2a2ba1e22965c3d0700cfe05800955d64dcb"
+  },
+  "tool": {
+    "node": "v22.12.0",
+    "sharp": "0.35.4",
+    "libvips": "8.18.6"
+  },
+  "textureCount": 16,
+  "rgba8BaseBytes": 8847360,
+  "textures": {
+    "sky_gradient": {
+      "assetId": "STREET_BASE_01/sky_gradient",
+      "semanticLayer": "UB_SKY",
+      "renderOrder": 0,
+      "file": "layers/sky_gradient.png",
+      "width": 32,
+      "height": 1024,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 1024,
+        "visiblePixels": 32768
+      },
+      "rgba8Bytes": 131072,
+      "sha256": "7ccb8ffff76d231a51953ded48567f03db70a1b988373cd73ed9287d09c31ce2"
+    },
+    "moon": {
+      "assetId": "STREET_BASE_01/moon",
+      "semanticLayer": "UB_SKY",
+      "renderOrder": 1,
+      "file": "layers/moon.png",
+      "width": 128,
+      "height": 128,
+      "alphaBBox": {
+        "x": 3,
+        "y": 3,
+        "width": 122,
+        "height": 122,
+        "visiblePixels": 11856
+      },
+      "rgba8Bytes": 65536,
+      "sha256": "b0949bb0aa2991d85c96da0efa5ea877922cf1996c1e3487a36d9a90c3cc263b"
+    },
+    "cloud_a": {
+      "assetId": "STREET_BASE_01/cloud_a",
+      "semanticLayer": "UB_SKY",
+      "renderOrder": 2,
+      "file": "layers/cloud_a.png",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 0,
+        "y": 70,
+        "width": 512,
+        "height": 122,
+        "visiblePixels": 45875
+      },
+      "rgba8Bytes": 393216,
+      "sha256": "81b364a6ed710a3328f46e716bd2eaa1309f2fd972a054caf33112b0828c62d4"
+    },
+    "cloud_b": {
+      "assetId": "STREET_BASE_01/cloud_b",
+      "semanticLayer": "UB_SKY",
+      "renderOrder": 2,
+      "file": "layers/cloud_b.png",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 0,
+        "y": 82,
+        "width": 512,
+        "height": 110,
+        "visiblePixels": 43552
+      },
+      "rgba8Bytes": 393216,
+      "sha256": "471e740d4c8b39575f9f6bc5d855c54270fcf80f87960f07c2786a114d32364d"
+    },
+    "distance_a": {
+      "assetId": "STREET_BASE_01/distance_a",
+      "semanticLayer": "UB_DISTANCE",
+      "renderOrder": 3,
+      "file": "layers/distance_a.png",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 56,
+        "width": 1024,
+        "height": 264,
+        "visiblePixels": 156962
+      },
+      "rgba8Bytes": 1310720,
+      "sha256": "9a55328181242b63505cfd088fb14995d704d70fb83f9ce2c2725e5139d59a2f"
+    },
+    "distance_b": {
+      "assetId": "STREET_BASE_01/distance_b",
+      "semanticLayer": "UB_DISTANCE",
+      "renderOrder": 3,
+      "file": "layers/distance_b.png",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 50,
+        "width": 1024,
+        "height": 270,
+        "visiblePixels": 184416
+      },
+      "rgba8Bytes": 1310720,
+      "sha256": "387971139f3cc08af2568520046abcabd8d2ddf5513368136f767b053e4adaee"
+    },
+    "distance_c": {
+      "assetId": "STREET_BASE_01/distance_c",
+      "semanticLayer": "UB_DISTANCE",
+      "renderOrder": 3,
+      "file": "layers/distance_c.png",
+      "width": 1024,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 63,
+        "width": 1024,
+        "height": 257,
+        "visiblePixels": 169747
+      },
+      "rgba8Bytes": 1310720,
+      "sha256": "c5acead31481da26de70295cf95ca2840511f79422581d9f2302cf1720af63f7"
+    },
+    "water_river": {
+      "assetId": "STREET_BASE_01/water_river",
+      "semanticLayer": "UB_WATER",
+      "renderOrder": 4,
+      "file": "layers/water_river.png",
+      "width": 512,
+      "height": 192,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 192,
+        "visiblePixels": 98304
+      },
+      "rgba8Bytes": 393216,
+      "sha256": "e5822be404f8b73c24bacd833f2911f5e3de27246085083403bef3137d316e6a"
+    },
+    "water_branch": {
+      "assetId": "STREET_BASE_01/water_branch",
+      "semanticLayer": "UB_WATER",
+      "renderOrder": 5,
+      "file": "layers/water_branch.png",
+      "width": 384,
+      "height": 256,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 256,
+        "visiblePixels": 81948
+      },
+      "rgba8Bytes": 393216,
+      "sha256": "6ad0b13eed57c540a874293d82e60567d059a424a6d76ecc624bd604f0d81daa"
+    },
+    "bank": {
+      "assetId": "STREET_BASE_01/bank",
+      "semanticLayer": "UB_BANK",
+      "renderOrder": 6,
+      "file": "layers/bank.png",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 72,
+        "visiblePixels": 35856
+      },
+      "rgba8Bytes": 196608,
+      "sha256": "8850b22acabe112d4a8d20210318b13606f30f43aa808755e6f6f0b02133d49e"
+    },
+    "ground_full": {
+      "assetId": "STREET_BASE_01/ground_full",
+      "semanticLayer": "UB_GROUND",
+      "renderOrder": 7,
+      "file": "layers/ground_full.png",
+      "width": 512,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 320,
+        "visiblePixels": 163840
+      },
+      "rgba8Bytes": 655360,
+      "sha256": "4d202661752e38094e43cd7f1741e2089721753cac4b437cf1aa7c6738fc05c8"
+    },
+    "ground_half": {
+      "assetId": "STREET_BASE_01/ground_half",
+      "semanticLayer": "UB_GROUND",
+      "renderOrder": 7,
+      "file": "layers/ground_half.png",
+      "width": 256,
+      "height": 320,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 320,
+        "visiblePixels": 81920
+      },
+      "rgba8Bytes": 327680,
+      "sha256": "c61b8afee4dc1a30f33738713ae56605954095516ee6dee5a2653a9117275808"
+    },
+    "bridge_back": {
+      "assetId": "STREET_BASE_01/bridge_back",
+      "semanticLayer": "UB_BRIDGE_BACK",
+      "renderOrder": 8,
+      "file": "layers/bridge_back.png",
+      "width": 512,
+      "height": 384,
+      "alphaBBox": {
+        "x": 0,
+        "y": 112,
+        "width": 512,
+        "height": 272,
+        "visiblePixels": 85109
+      },
+      "rgba8Bytes": 786432,
+      "sha256": "0947cb718c9bcb174a06647b0e1121ad6dbba264d2ad86a825ee5f28b59caaa4"
+    },
+    "rail_back": {
+      "assetId": "STREET_BASE_01/rail_back",
+      "semanticLayer": "UB_RAIL_BACK",
+      "renderOrder": 9,
+      "file": "layers/rail_back.png",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 2,
+        "width": 512,
+        "height": 94,
+        "visiblePixels": 15328
+      },
+      "rgba8Bytes": 196608,
+      "sha256": "10199edc3a42843b9db9c25e35401a7c89e436bef497e864e4b8f6364e6b4817"
+    },
+    "bridge_front": {
+      "assetId": "STREET_BASE_01/bridge_front",
+      "semanticLayer": "UB_BRIDGE_FRONT",
+      "renderOrder": 10,
+      "file": "layers/bridge_front.png",
+      "width": 512,
+      "height": 384,
+      "alphaBBox": {
+        "x": 0,
+        "y": 29,
+        "width": 512,
+        "height": 355,
+        "visiblePixels": 24293
+      },
+      "rgba8Bytes": 786432,
+      "sha256": "08a09270e457a924c4416ecf1fdddbed2459cc5218c75dcdba7932e2aa24e8ef"
+    },
+    "rail_front": {
+      "assetId": "STREET_BASE_01/rail_front",
+      "semanticLayer": "UB_RAIL_FRONT",
+      "renderOrder": 11,
+      "file": "layers/rail_front.png",
+      "width": 512,
+      "height": 96,
+      "alphaBBox": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 96,
+        "visiblePixels": 17896
+      },
+      "rgba8Bytes": 196608,
+      "sha256": "91c6d9b5028c1c239b0a528e1db6d0600e974e5d63dc5204087e392b6feea015"
+    }
+  },
+  "placements": [
+    {
+      "id": "sky_gradient",
+      "world": {
+        "x": 0,
+        "y": 0,
+        "width": 3072,
+        "height": 1024
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "moon",
+      "world": {
+        "x": 1472,
+        "y": 65,
+        "width": 128,
+        "height": 128
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "cloud_a",
+      "world": {
+        "x": 120,
+        "y": 90,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "cloud_b",
+      "world": {
+        "x": 610,
+        "y": 160,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "cloud_a",
+      "world": {
+        "x": 1880,
+        "y": 105,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "cloud_b",
+      "world": {
+        "x": 2430,
+        "y": 170,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "distance_a",
+      "world": {
+        "x": 0,
+        "y": 225,
+        "width": 1024,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "distance_b",
+      "world": {
+        "x": 1024,
+        "y": 225,
+        "width": 1024,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "distance_c",
+      "world": {
+        "x": 2048,
+        "y": 225,
+        "width": 1024,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 0,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 512,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 1024,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 1536,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 2048,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_river",
+      "world": {
+        "x": 2560,
+        "y": 832,
+        "width": 512,
+        "height": 192
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "water_branch",
+      "world": {
+        "x": 1344,
+        "y": 640,
+        "width": 384,
+        "height": 256
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 0,
+        "y": 790,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 512,
+        "y": 790,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 1792,
+        "y": 790,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 2304,
+        "y": 790,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 1024,
+        "y": 790,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bank",
+      "world": {
+        "x": 2816,
+        "y": 790,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_full",
+      "world": {
+        "x": 0,
+        "y": 470,
+        "width": 512,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_full",
+      "world": {
+        "x": 512,
+        "y": 470,
+        "width": 512,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_full",
+      "world": {
+        "x": 1792,
+        "y": 470,
+        "width": 512,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_full",
+      "world": {
+        "x": 2304,
+        "y": 470,
+        "width": 512,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_half",
+      "world": {
+        "x": 1024,
+        "y": 470,
+        "width": 256,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "ground_half",
+      "world": {
+        "x": 2816,
+        "y": 470,
+        "width": 256,
+        "height": 320
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bridge_back",
+      "world": {
+        "x": 1280,
+        "y": 450,
+        "width": 512,
+        "height": 384
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 0,
+        "y": 470,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 512,
+        "y": 470,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 1792,
+        "y": 470,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 2304,
+        "y": 470,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 1024,
+        "y": 470,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_back",
+      "world": {
+        "x": 2816,
+        "y": 470,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "bridge_front",
+      "world": {
+        "x": 1280,
+        "y": 450,
+        "width": 512,
+        "height": 384
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 0,
+        "y": 756,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 512,
+        "y": 756,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 1792,
+        "y": 756,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 2304,
+        "y": 756,
+        "width": 512,
+        "height": 96
+      },
+      "sourceRect": null,
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 1024,
+        "y": 756,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "rail_front",
+      "world": {
+        "x": 2816,
+        "y": 756,
+        "width": 256,
+        "height": 96
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 96
+      },
+      "anchor": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "preview": {
+    "file": "preview/empty_scene.png",
+    "sha256": "a6a1a0e95f1409dc702cc67ee04996b3452377d8d844cad6ad39b573d52ef620",
+    "cameraSamples": [
+      {
+        "name": "viewport_min_left",
+        "scale": 1.25,
+        "cameraCenter": {
+          "x": 288,
+          "y": 512
+        },
+        "sourceRect": {
+          "x": 0,
+          "y": 0,
+          "width": 576,
+          "height": 1024
+        },
+        "screen": {
+          "width": 720,
+          "height": 1280
+        }
+      },
+      {
+        "name": "viewport_min_center",
+        "scale": 1.25,
+        "cameraCenter": {
+          "x": 1536,
+          "y": 512
+        },
+        "sourceRect": {
+          "x": 1248,
+          "y": 0,
+          "width": 576,
+          "height": 1024
+        },
+        "screen": {
+          "width": 720,
+          "height": 1280
+        }
+      },
+      {
+        "name": "viewport_min_right",
+        "scale": 1.25,
+        "cameraCenter": {
+          "x": 2784,
+          "y": 512
+        },
+        "sourceRect": {
+          "x": 2496,
+          "y": 0,
+          "width": 576,
+          "height": 1024
+        },
+        "screen": {
+          "width": 720,
+          "height": 1280
+        }
+      },
+      {
+        "name": "viewport_init_center",
+        "scale": 1.35,
+        "cameraCenter": {
+          "x": 1536,
+          "y": 512
+        },
+        "sourceRect": {
+          "x": 1270,
+          "y": 38,
+          "width": 533,
+          "height": 948
+        },
+        "screen": {
+          "width": 720,
+          "height": 1280
+        }
+      },
+      {
+        "name": "viewport_max_center",
+        "scale": 1.8,
+        "cameraCenter": {
+          "x": 1536,
+          "y": 512
+        },
+        "sourceRect": {
+          "x": 1336,
+          "y": 157,
+          "width": 400,
+          "height": 711
+        },
+        "screen": {
+          "width": 720,
+          "height": 1280
+        }
+      }
+    ]
+  },
+  "runtimeWarnings": [
+    "preview/empty_scene.png is an audit composition, not a runtime texture",
+    "one texture or one atlas does not imply one DrawCall",
+    "Creator/target-device/dual-entry UUID still NOT_TESTED"
+  ]
+}

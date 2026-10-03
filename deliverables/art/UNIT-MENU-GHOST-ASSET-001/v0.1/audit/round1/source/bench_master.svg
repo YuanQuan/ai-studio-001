@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="128" viewBox="0 0 256 128">
+  <title>BENCH_01 独立木板凳可编辑母版</title>
+  <desc>bench-back 位于顾客后；bench-front 位于顾客前。两组由工具分别导出，也可合成预览。</desc>
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0.15" y2="1">
+      <stop offset="0" stop-color="#ad734d"/>
+      <stop offset="0.48" stop-color="#815b45"/>
+      <stop offset="1" stop-color="#54473f"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ba8960"/>
+      <stop offset="1" stop-color="#614936"/>
+    </linearGradient>
+  </defs>
+  <g id="bench-back">
+    <path d="M 40 45 L 42 16 Q 43 12 47 12 L 51 12 Q 55 12 56 17 L 55 48 Z" fill="url(#wood)" stroke="#29384b" stroke-width="3"/>
+    <path d="M 201 48 L 202 17 Q 203 12 207 12 L 211 12 Q 215 13 215 18 L 217 45 Z" fill="url(#wood)" stroke="#29384b" stroke-width="3"/>
+    <path d="M 49 20 Q 128 27 209 20 L 208 34 Q 128 41 49 34 Z" fill="url(#wood)" stroke="#29384b" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M 55 37 Q 128 43 202 37 L 201 44 Q 128 49 55 44 Z" fill="#9b6e4d" stroke="#34445a" stroke-width="2.6"/>
+    <path d="M 36 52 Q 128 47 220 52 L 221 64 Q 128 60 35 64 Z" fill="url(#edge)" stroke="#29384b" stroke-width="3.2" stroke-linejoin="round"/>
+    <path d="M 51 59 L 47 105 Q 47 109 51 109 L 61 109 Q 65 109 65 105 L 68 60 Z" fill="#584337" stroke="#29384b" stroke-width="3"/>
+    <path d="M 187 60 L 190 105 Q 190 109 194 109 L 204 109 Q 208 109 208 105 L 205 59 Z" fill="#584337" stroke="#29384b" stroke-width="3"/>
+    <path d="M 59 83 Q 128 89 197 83" fill="none" stroke="#6e5943" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g id="bench-front">
+    <path d="M 32 64 Q 128 59 224 64 L 222 76 Q 128 72 34 76 Z" fill="url(#wood)" stroke="#29384b" stroke-width="3.4" stroke-linejoin="round"/>
+    <path d="M 40 72 L 39 111 Q 39 115 44 115 L 53 115 Q 57 115 57 111 L 58 73 Z" fill="url(#edge)" stroke="#29384b" stroke-width="3"/>
+    <path d="M 198 73 L 199 111 Q 199 115 204 115 L 213 115 Q 218 115 218 111 L 217 72 Z" fill="url(#edge)" stroke="#29384b" stroke-width="3"/>
+    <path d="M 48 81 Q 128 78 208 81" fill="none" stroke="#c28a5c" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"/>
+    <path d="M 82 67 L 82 72 M 174 67 L 174 72" stroke="#413c3c" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

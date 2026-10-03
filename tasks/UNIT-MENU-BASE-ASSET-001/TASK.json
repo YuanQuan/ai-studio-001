@@ -1,0 +1,53 @@
+{
+  "id": "UNIT-MENU-BASE-ASSET-001",
+  "title": "七菜单正式空背景底板：长街、石桥、河岸与栏杆分层资源",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "制作第1项空场景与第7项组合场景共用的原创正式背景底板；保持用户选定的非像素平视夜市构图，将天空远山、街面、连续水面、石拱桥与栏杆拆成可编辑前后层，并交付可重复导出的正式图片、遮挡与镜头边界证据。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md、ASSET_MANIFEST.md、LAYER_OCCLUSION_PLAN.md、ATLAS_PREFLIGHT.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/ASSET_PIPELINE.md、PERFORMANCE_PLAN.md（USER_APPROVED）",
+    "project/ART_GUIDE.md、project/ASSET_MANIFEST.md 与用户已选未加宽长街参考图"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/source/street_base_master.svg",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/tools/export_layers.js",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/layers/LAYER_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/empty_scene.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/layer_occlusion.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/QUALITY_REPORT.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "正式图片输出前 Art 与 Tech 对本批原创来源、横向全景尺度、七菜单共用ID、各层边界/支点、贴图面积/分页/格式、镜头横拖缩放可见范围及目标设备内存共同签认并记录时间证据",
+    "空场景正式层只含天空月云、远景、石地、河岸连续水面、石拱桥及栏杆；不得烘入奶茶店、孟桃、顾客、板凳或可切换树花灯和暖光，祈愿纸船/蜡烛本批不擅自并入固定背景",
+    "石桥保留正面单孔石拱、两侧桥坡与栏杆，桥下支流连通前景河；桥体后/前片及栏杆前后片可独立遮挡，街道中央保持顾客动线，靠栏杆休息带留桌椅位置，空镜不露未绘制区域",
+    "交付可编辑原创分层母版、真实透明导出层、可重复导出脚本、层顺序/尺寸/坐标/哈希清单以及空景与遮挡预览；实际图片像素面积、alpha边、内存估算和镜头边界检查有证据，未实测 Creator/设备时标NOT_TESTED",
+    "资源符合已批非像素可爱夜市冷蓝暖橙原则且避免照搬用户参考的独特细节；来源与图片/工具/字体许可清楚，Art/Tech评审通过，供用户作为正式资源候选审阅"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-ART-DESIGN-001",
+    "UNIT-MENU-TECH-DESIGN-001",
+    "UNIT-MENU-UI-SPEC-001",
+    "UNIT-MENU-VFX-SPEC-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本批只制作空景固定底板；店、人、板凳、树花灯、UI、特效分批生产，空场景和组合场景必须引用本批同一源ID。",
+    "用户参考仅用于功能性桥型与长街构图提取，不能裁切、描摹或微调成正式图片。",
+    "如横向长街与当前720×1280工程视窗的镜头范围不能兼容，应在本批签认中提出具体尺寸和适配方案，不静默改变用户选定视角。"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-03 对第三次出图前 PREFLIGHT_REVISION_02.md、ART_PREFLIGHT_REV2.json 与 audit/round1 封存数据复核并签认。签认时正式 ghost_master.svg 与 round1 的 SHA256 均为 9f160728f28827f83aaa1ae6929a923c35a3c3805ecbaf8c6c37a8d0d488c972；正式 export_assets.js 与 round1 的 SHA256 均为 7306aa1c9d73c1c7669446e33725c8ca4b471df71ca35be29ef216027698edfe。此 REV2 签认先于 atlas 高度脚本修改与第三次重打包，旧 PRE/REV1 不自动授权尺寸变化。"
+    },
+    {
+      "severity": "INFO",
+      "message": "从 round1/frames/FRAME_MANIFEST.json 独立复算 23 帧 paddedRect 最右 981、最下 477，均含每帧四周 4 px padding；改为 1024×512 后右余 43 px、下余 35 px，按同坐标足以容纳。bbox 合计 328,970 px²，非零 alpha 像素合计 223,430 px²。RGBA8 基础纹理量从 4,194,304 B（4 MiB）减为 2,097,152 B（2 MiB）；PNG 压缩文件大小不等于 GPU 占用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次批准范围仅 1024×1024 → 1024×512 的图集高度、对应脚本常量与 atlas/manifest 元数据。23 张逐帧 PNG 的 SHA256、逻辑画布、动作节拍、atlas rect/trimOffset、源 SVG、板凳与双座点、4 px padding、普通透明材质、工具与许可均须保持 round1 原状。导出后逐一比较清单与 frame hash，并实查 PNG 元数据为 1024×512、alpha 邻接与左右十格预览；不一致即停止并再次双签。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "此为数据推算的出图前放行，不是运行性能通过；一页 atlas 不保证一 DrawCall。Creator 3.8.8 实际导入、目标设备纹理格式/上限、显存/帧时间及小屏方向辨识均 NOT_TESTED，需后续 Client/QA 取证。"
+    }
+  ],
+  "next_action": "ART_PREFLIGHT_REV2.json 与本文件共同批准第三次仅重打包 atlas 的导出。Art 可修改导出脚本 atlas 高度并重出图集/清单；保留 audit/round1 不覆写，按新结果逐帧比对 SHA256 和所有 rect/offset，完成 Art Review 后交 Tech 做成品 Review。"
+}

@@ -1,6 +1,6 @@
 # 项目美术资产索引
 
-用户已退回加宽稿，选定v0.4未加宽非像素附件为视觉参考；新单元v0.5三图与拆件方案已获用户批准。正式出图前的[分层与图集计划 v0.1](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ASSET_MANIFEST.md)正在评审，此表不宣布生产资产、骨骼或Creator工程已完成。每个生产对象由各自正式Manifest维护尺寸、格式、状态和源路径。
+用户已退回加宽稿，选定 v0.4 未加宽非像素附件为视觉参考；孟桃单元 v0.5 三图与拆件方案已获用户批准。七菜单 Product 与 Art/Tech/UI/VFX v0.2 已于 2026-10-03 获用户批准；`UG_GHOST_01` / `BENCH_01` 已有真正可编辑源与导出，Art/Tech 及 Master Review 已通过，**仍待用户审批及 Creator/目标机接入验收**。`STREET_BASE_01` 也已产出真实 16 张分层纹理和同源预览，Art/Tech 成品 Review 已通过、待 Master/用户审阅。其他对象尚无生产源/骨骼/图集证据。每个生产对象由各自正式 Manifest 维护尺寸、格式、状态和源路径。
 
 | Asset ID | 名称 | 类型 | Source Artifact | Format/Size | 状态 | 用途 | 说明 |
 |---|---|---|---|---|---|---|---|
@@ -43,7 +43,7 @@
 
 ## 当前正式资源方向｜DEC-UNIT-FINAL-ASSET-004
 
-[Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md)已于 2026-10-03 获 `USER_APPROVED`，正式资源与幽灵序列帧约束现可作为专业修订输入。[Art v0.2 出图前资产清单](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ASSET_MANIFEST.md)是待审制作方案，Tech Lead、UI、VFX 各 v0.2 也仍需各自专业与用户审批。当前无新幽灵正式逐帧母版、透明帧、真实图集或 Creator 稳定资源引用完成证据。
+[Product v0.2](../deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md)及 [Art v0.2 出图前资产清单](../deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ASSET_MANIFEST.md)、Tech Lead、UI、VFX 各 v0.2 已于 2026-10-03 获 `USER_APPROVED`。这些是正式制作输入，不替代每批出图双签。幽灵/板凳 v0.1 当前已有真正源与导出，但 Creator 稳定资源 UUID、运行十格与目标机证据仍未建立。
 
 | 对象/ID候选 | 当前制作方式 | 正式交付门槛 |
 |---|---|---|
@@ -52,4 +52,21 @@
 | MT_CHAR_01、MT_SHOP_MOTION_01、UE_TREE_01、UE_GRASS_01、UE_LANTERN_01 | 动态对象继续骨骼，每对象附件单页 | 实际可编辑分件/骨骼源、极限pose包围盒、真实单页导出及Creator/目标设备证据 |
 | MT_SHOP_STATIC_01与背景基础层 | 独立静态分层 | 材料/比例与已选风格一致；去除烘底环境软晕，灯影独立；背景不烘入可切换对象 |
 
-上述ID沿候选对象索引，正式资源身份和目录由获批Tech/Art契约锁定，不从此表推断文件已存在。每次正式出图前Art/Tech联合核对原创来源、版权/IP与字体/工具许可、动作/镜像、像素尺寸/透明留白及图集/合批；缺许可不得生产集成。单元、组合与未来主体最终引用同一批准源/导出/资源版本，共用UI/VFX；Lab控制可独立。Product v0.2 已获批准；Art/Tech/UI/VFX v0.2 与正式资源仍须各自逐阶段审批，旧v0.1交付正文留档不改写。
+除下表已存在的幽灵/板凳候选，其余 ID 仍是待生产索引，不从此表推断文件已存在。每次正式出图前 Art/Tech 联合核对原创来源、版权/IP与字体/工具许可、动作/镜像、像素尺寸/透明留白及图集/合批；缺许可不得生产集成。单元、组合与未来主体最终引用同一批准源/导出/资源版本，共用 UI/VFX；Lab 控制可独立。旧 v0.1 概念交付正文留档不改写。
+
+## 当前真实出图候选｜UNIT-MENU-GHOST-ASSET-001 v0.1
+
+| 对象 | 可编辑源与实际导出 | 当前状态与后续门禁 |
+|---|---|---|
+| `UG_GHOST_01` | [正式候选 Manifest](../deliverables/art/UNIT-MENU-GHOST-ASSET-001/v0.1/ASSET_MANIFEST.md)：右向 SVG 母版、23 张 `160×192` PNG、`1024×512` 单页图集与帧/哈希索引；左右预览 | 三轮出图前 Art/Tech 双签、出图后双专业及 Master Review 已通过；待用户审批。Creator 导入、目标机动态辨识、同源 UUID 与未来主体接入 `NOT_TESTED`。 |
+| `BENCH_01` | 同版 SVG 母版、`256×128` 独立后/前片及组合预览，双向座点/角色接触锚点已记录 | 与幽灵同批 Art/Tech/Master Review 通过；待用户审批。Creator 前后层与两向坐姿接触 `NOT_TESTED`。 |
+
+本批 1024×512 atlas 基础 RGBA8 为 2 MiB，不能据单页推断一次 DrawCall；详细来源、首轮退稿审计、权利与质量边界见同版 `RIGHTS_AND_SOURCE.md`、`QUALITY_REPORT.md`。正式 SpriteFrame/Prefab UUID 由 Client 在资源获用户批准后建立。
+
+## 当前真实空底板候选｜UNIT-MENU-BASE-ASSET-001 v0.1 REV2
+
+| 对象 | 可编辑源与实际导出 | 当前状态与后续门禁 |
+|---|---|---|
+| `STREET_BASE_01` | [本批正式 Manifest](../deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md)：3072×1024 SVG 母版、16 张独立 PNG / 42 placements、7 张竖屏审阅图、源/层哈希与真桥洞 alpha；RGBA8 基础 8.4375 MiB | 原版/REV1/REV2 每轮先 Art/Tech 双签后出图，round0/round1 均保留。Art/Tech 成品 Review 已通过，待 Master/用户资源审批；Creator 拖缩、桥上顾客、真机性能和菜单 1/7 同 UUID 均 `NOT_TESTED`。 |
+
+本批空景不烘奶茶店、人物、板凳、可切换树花灯、纸船蜡烛或暖 VFX。审阅合成全景不作为运行纹理；同源复用与 DrawCall 由后续 Creator/目标机实测，不按 16 图静态数量推断运行批次。

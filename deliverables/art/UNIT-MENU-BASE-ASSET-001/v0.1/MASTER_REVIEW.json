@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 Task 五项资源生产验收、Art/Tech 原版及 REV1/REV2 出图前签认、round0/round1 封存、REV2 源和层、ART_REVIEW 与 TECH_REVIEW 均 APPROVED。第一、二轮分别因桥端空档和桥形过于墙面化被内部退回，第三轮桥端接街、中央真透明石拱洞与连续支流在实际导出预览中可见；可作为 STREET_BASE_01 正式空背景资源候选送用户审阅。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立运行 tools/verify_layers.js 得 PASS_STATIC_CHECKS_ONLY：3072×1024 可编辑母版、16 张独立 PNG、42 个 placement，逐图尺寸/哈希/alpha bbox 与 manifest 一致；天空全高不透明，桥洞 alpha 为 0 且支流连前河，全景及七张 720×1280 裁图无透明漏边。RGBA8 源纹理基础量 8,847,360 B（8.4375 MiB）；预览由实际导出层合成，不是运行时另加载的一张整景贴图。空底板没有店、人、板凳、可切换树花灯、纸船蜡烛或其光效。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户选定的完整夜市参考包含店铺和暖光，本批刻意只有固定背景，因此单独画面明显更简洁；是否达到最终组合画风仍由用户审阅及后续独立资源装配验证。桥端有约 13.8/255 的材质接缝，中心竖屏桥面仍较显正面石拱；顾客行走脚点、桥前后遮挡、真实镜头安全区/DPR、目标机材质滤波/内存/DrawCall/帧时间、菜单 1/7 同 UUID 和未来主体第三入口均 NOT_TESTED。本 Review 不将静态合成图视作 Creator 完成证据。"
+    }
+  ],
+  "next_action": "提交 STREET_BASE_01 v0.1 的实际分层图、全景和竖屏预览供用户批准或退回；未经用户批准不得作为七菜单已集成资源。若获批，Client 使用同一母版导出版本建立菜单 1/7 共用 Prefab，并在目标设备上核镜头、桥行走/遮挡与性能。"
+}

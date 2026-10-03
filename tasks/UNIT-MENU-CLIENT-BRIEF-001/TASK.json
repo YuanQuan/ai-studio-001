@@ -1,0 +1,43 @@
+{
+  "id": "UNIT-MENU-CLIENT-BRIEF-001",
+  "title": "七项菜单正式资源同源接入客户端开工概要",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "在编码前定义七项菜单Cocos Creator实现切片、正式资源同源Prefab/Scene契约、幽灵序列帧状态机和镜头/遮挡/UI/VFX接入；与QA TEST_PLAN组成后续开发开工审批包，本任务不修改运行代码。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md、ASSET_PIPELINE.md、PERFORMANCE_PLAN.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ASSET_MANIFEST.md、LAYER_OCCLUSION_PLAN.md、GHOST_FLIPBOOK_PLAN.md（USER_APPROVED）",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/UI_SPEC.md 与 deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.2/VFX_SPEC.md（USER_APPROVED）",
+    "apps/client/ 当前Cocos Creator工程及旧九项审计（只读历史对照）"
+  ],
+  "deliverables": [
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/SCENE_PREFAB_PLAN.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/ASSET_GATE_MATRIX.md",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-MENU-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "按已批七入口及第3项双子项定义Cocos Scene/Prefab与Lab菜单路由，空底板拖拽缩放和组合从同一背景源增删对象；明确旧九项与Demo资产不充正式资源",
+    "明确孟桃/店铺/树花灯骨骼与幽灵单向序列帧的不同导入和动画控制，左右镜像仅作用显示节点，五状态十格、板凳进稳离座、遮挡、快速切态和生命周期清理可实现且不新增玩法规则",
+    "明确正式源母版、图集/帧/骨骼、UI/VFX及Prefab UUID/版本的依赖门禁，独立/组合双入口共用同一对象和表现逻辑，未来主体接入复验同一ID；未获资源用户批准或Art/Tech签认时不得以旧图占位进入正式实现",
+    "列出资源加载释放、镜头/触控优先级、动画/特效实例归属、真实图集与DrawCall/显存/帧时等目标平台性能检查和中文调试日志，不假造已实测结果",
+    "与QA TEST_PLAN及用例建立验收映射，列实施顺序、可回滚范围、未测试项和需要用户批准的开工门禁；本任务只提交开工概要，不修改客户端代码"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-TECH-DESIGN-001",
+    "UNIT-MENU-ART-DESIGN-001",
+    "UNIT-MENU-UI-SPEC-001",
+    "UNIT-MENU-VFX-SPEC-001"
+  ],
+  "status": "REVISION",
+  "approval": "APPROVAL",
+  "notes": [
+    "本Task与UNIT-MENU-QA-PREBUILD-001共同作为编码前审批包；二者用户批准前Client不得正式实现七项菜单。",
+    "正式资产生产可与开工包方案准备并行，但编码必须消费获批资源和相应源/图集/版权证据。"
+  ]
+}

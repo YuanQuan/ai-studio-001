@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-03T10:19:49+08:00 审核本批 ART_BRIEF.md、PREFLIGHT_PLAN.md、EXPORT_IMPLEMENTATION_PLAN.md 与 ART_PREFLIGHT.json，签认 STREET_BASE_01 v0.1 首次原创 SVG/PNG 出图预案；签认时 source/street_base_master.svg、layers PNG 和 preview/empty_scene.png 均不存在，故本签认先于正式图片输出。仅覆盖同一空底板的九类语义层、16 张候选静态纹理，不放行店、人、板凳、树花灯、纸船蜡烛、暖光或 UI。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立复算 3072×1024 世界画布与 720×1280 示意视窗：最小完全覆盖比例 max(720/3072,1280/1024)=1.25；此时世界可见宽 576、高 1024，水平中心合法 [288,2784]、垂直中心 512。初始 1.35 的可见宽约 533.33、高约 948.15；放大 1.8 的可见宽 400、高约 711.11。1.25 恰好触达上下画布边，Creator 实施须按真实视口/DPR/安全区重算并保留采样安全边或提高实际最小比例，验证左/中/右与 zoom 极值均不露白；预案数值不是已经通过的运行边界。"
+    },
+    {
+      "severity": "INFO",
+      "message": "16 张候选纹理面积复算为 2,211,840 px²，RGBA8 基础量 8,847,360 B = 8.4375 MiB；单张最大边 1024。32×1024 的不透明天空渐层按世界宽度铺展，月/云/山/地/河/岸/桥/栏分源复用，不把 3072×1024 审阅合成图作为运行纹理。重复 placement 不重复占用源贴图基础量，但节点数、材质/alpha、前后片与角色/VFX 插层可能断批；16 张纹理不等于固定 DrawCall 或实际显存。目标机纹理上限、压缩/回退、解码峰值和实际批次均 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "出图合同要求 UB_WATER 的桥下支流与前景河连续，UB_GROUND 的中央水口及 UB_BRIDGE_BACK/FRONT 拱洞为真实 alpha 空口；不能用深色实块假装透水。桥后/前、栏后/前均独立输出并记录世界 placement、sourceRect、支点及渲染顺序。对地砖/水纹/栏段复用，导出后须逐处查像素接缝和 sourceRect 采样污染；预览必须从实际 16 张 PNG 与同一清单合成，不能另画一张相似整景。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户选定图的作者及商用许可 UNKNOWN，只可抽取平视长街与单孔桥/水口等高层结构；源 SVG 不得包含其原图像素、特定石缝/栏柱/水纹描摹。方案无字体、外部图片、Logo；本机 Node v22.12.0、sharp 0.35.4、libvips 8.18.6 工具链用于导出且不随运行资源分发。若变更源参考、工具许可、16 张尺寸/数量、世界画布、镜头下限或层语义，暂停出图并重新 Art/Tech 双签。"
+    }
+  ],
+  "next_action": "本 TECH_PREFLIGHT.json 与同批 ART_PREFLIGHT.json 构成首次出图前双签，Art 可按计划绘制母版并导出透明层/同源空景预览。完成后提交 16 张实际 PNG、LAYER_MANIFEST 中源/输出 hash、alpha bbox、placement/sourceRect、桥洞透水/拼接与左中右镜头裁图证据；Tech 再按实际结果 Review。Creator 3.8.8、目标设备、双入口同 UUID、DrawCall/显存/帧时间维持 NOT_TESTED，用户资源审批仍独立。"
+}

@@ -1,0 +1,72 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "owner": "art",
+  "summary": "完成 STREET_BASE_01 原创 3072×1024 非像素空底板可编辑 SVG、16 张实际分层 PNG、42 placement 清单、同源全景/遮挡/七张竖屏镜头审阅图、可重复导出与静态验证脚本。首轮与第二轮质量返工均封存源图哈希并逐轮 Art/Tech 出图前双签；当前为待 Tech/Master/用户审阅的正式资源候选，Creator/目标机尚未实测。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/PREFLIGHT_REVISION_01.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_PREFLIGHT_REV1.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_PREFLIGHT_REV1.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/PREFLIGHT_REVISION_02.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_PREFLIGHT_REV2.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_PREFLIGHT_REV2.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/audit/round0/HASHES.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/audit/round1/HASHES.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/source/street_base_master.svg",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/tools/export_layers.js",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/tools/verify_layers.js",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/layers/LAYER_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/empty_scene.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/layer_occlusion.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/viewport_init_center.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/viewport_init_west.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/preview/viewport_init_east.png",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/QA_STATIC.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/QUALITY_REPORT.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/TECH_REVIEW.json",
+    "project/art_reference/backgrounds/STREET_BASE_01_v0.1.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "正式图片输出前 Art 与 Tech 对本批原创来源、横向全景尺度、七菜单共用ID、各层边界/支点、贴图面积/分页/格式、镜头横拖缩放可见范围及目标设备内存共同签认并记录时间证据",
+      "result": "PASS",
+      "evidence": "原版、REV1、REV2 均有同版 ART/TECH_PREFLIGHT APPROVED；audit/round0、round1 保留修改前源图/哈希，Tech 签认先于相应源修改/图片输出。16 图、尺寸、8.4375 MiB 基础量及缩放 1.25/1.35/1.8 实际复核；目标机内存是候选估算，运行仍 NOT_TESTED。"
+    },
+    {
+      "criterion": "空场景正式层只含天空月云、远景、石地、河岸连续水面、石拱桥及栏杆；不得烘入奶茶店、孟桃、顾客、板凳或可切换树花灯和暖光，祈愿纸船/蜡烛本批不擅自并入固定背景",
+      "result": "PASS",
+      "evidence": "source/street_base_master.svg 的 16 symbol / manifest 九类语义层与空景预览仅含签认背景；清单无店、角色、板凳、树灯、纸船蜡烛或暖 VFX。"
+    },
+    {
+      "criterion": "石桥保留正面单孔石拱、两侧桥坡与栏杆，桥下支流连通前景河；桥体后/前片及栏杆前后片可独立遮挡，街道中央保持顾客动线，靠栏杆休息带留桌椅位置，空镜不露未绘制区域",
+      "result": "PASS",
+      "evidence": "bridge_back/front 与 rail_back/front 均独立 PNG；桥端世界 y≈470 接街，后片中央洞三点 alpha=0；支流 y640..896 与前河 y832..1024 重叠；中央铺地保留缺口，左右街面留白；QA_STATIC 对全景/七镜头 alpha=255。实际顾客坡道/遮挡与目标机仍 NOT_TESTED。"
+    },
+    {
+      "criterion": "交付可编辑原创分层母版、真实透明导出层、可重复导出脚本、层顺序/尺寸/坐标/哈希清单以及空景与遮挡预览；实际图片像素面积、alpha边、内存估算和镜头边界检查有证据，未实测 Creator/设备时标NOT_TESTED",
+      "result": "PASS",
+      "evidence": "source SVG、export_layers.js、16 PNG、LAYER_MANIFEST.json、empty_scene/layer_occlusion/七镜头 PNG 与 verify_layers.js/QA_STATIC.json 实际存在；逐 PNG hash/bbox 与基础 RGBA8 8,847,360 B，最左/中/最右/西/东镜头均复核。Creator/目标机标 NOT_TESTED。"
+    },
+    {
+      "criterion": "资源符合已批非像素可爱夜市冷蓝暖橙原则且避免照搬用户参考的独特细节；来源与图片/工具/字体许可清楚，Art/Tech评审通过，供用户作为正式资源候选审阅",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json 与 TECH_REVIEW.json 均 APPROVED，仅覆盖本批原创分层资源、来源/许可记录与静态候选质量；RIGHTS_AND_SOURCE.md 记录参考权利 UNKNOWN 仅用于高层研究，实际 SVG/PNG 不含外部图片/字体。本批空景较完整参考更简洁、桥端接缝可见，仍待 Master/用户视觉审阅；Creator/目标机、顾客走桥与遮挡、菜单 1/7 及未来主体同源调用均 NOT_TESTED，不能凭本项 PASS 推断运行验收。"
+    }
+  ],
+  "assumptions": [
+    "菜单1/7运行时共享同一底板源 ID；Creator UUID/Prefab 由获批后的 Client 建立并由 QA 验证。",
+    "720×1280 是目前设计视窗；实际目标设备、DPR/安全区与缩放余量尚未锁定。"
+  ],
+  "risks": [
+    "空景较含商铺和灯效的用户选定完整参考更简洁，组合后整体插画层次尚待用户与后续分批资源检查。",
+    "桥端铺地与桥石材的构造接缝仍可见，720×1280 手机尺度下桥坡步行感、顾客遮挡与桥上足点需 Creator/真机实测。",
+    "最小缩放 1.25 在设计视窗恰好覆盖底板高，真实采样/安全区可能露边；目标机纹理/内存/DrawCall/帧时间及组合入口对象定位均未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

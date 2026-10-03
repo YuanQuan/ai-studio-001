@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03 对首轮已出图空背景自评 REVISE。首轮 source、16 张 PNG、预览、manifest、工具脚本及逐文件 SHA-256 已封存在 audit/round0。修订原因、图像证据与实际返工范围见 QUALITY_SELF_REVIEW_ROUND0.md 和 PREFLIGHT_REVISION_01.md；本 ART_PREFLIGHT_REV1 签于任何第二轮源修改/导出之前。"
+    },
+    {
+      "severity": "INFO",
+      "message": "REV1 保留 3072×1024、16 张静态纹理 ID/尺寸、8.4375 MiB RGBA8 基础量、九类层/前后片、工具版本与相机缩放 1.25/1.35/1.8。仅在同源 SVG 内改善桥坡与路口几何、重复纹理、云山石材和冷暖层次；桥洞真实 alpha 与水流连续、街面中央缺口仍为硬条件。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "初始 720×1280 中心视窗只见桥。REV1 增加同底板西/东镜头审阅裁图并记录组合入口新增对象定位建议；Client 的镜头跳转和菜单1/7同 UUID、Creator/目标机运行仍 NOT_TESTED。用户参考作者/许可 UNKNOWN，仅作高层氛围研究，不裁切描摹；无外部图片或字体。"
+    }
+  ],
+  "next_action": "等待 Tech Lead 对 PREFLIGHT_REVISION_01.md 与首轮审计做独立 TECH_PREFLIGHT_REV1.json APPROVED；此前 Art 不修改正式 SVG/脚本，不重导出 PNG 或预览。"
+}
