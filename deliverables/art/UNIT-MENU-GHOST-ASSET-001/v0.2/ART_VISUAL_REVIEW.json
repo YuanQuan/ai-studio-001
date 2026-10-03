@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "G1 REVISE：新样张较被退回版更偏侧向且身体较圆润，但面部朝向、双手位置与整体体量尚不稳定，未在同尺度左右翻转对照证明方向可读性。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "G2 REVISE：move 与 run 只做两张关键姿，未制作 4–6 帧循环及首尾接缝。并排静看运动差异仍偏弱，尾部更像平滑条带/裙边，缺少概念要求的宽软拖尾形变。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "G3 REVISE：happy/sad 的表情已有区别，但近手出现钩状或圆块并与口鼻重叠，身体上扬/下垂及尾部情绪表达不足。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "G4 REVISE：独立空凳已改为低矮无靠背造型，此子项方向正确；sit 只是单张蹲坐轮廓，没有凳上压座接触与前后遮挡合成，也无进座/稳定/离座姿态证明。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "G5 REVISE：新写 SVG 样张与导出记录存在，未沿用旧 SVG，但线面与造型仍是程序化简图，手部/尾部完成度不足以成为正式非像素插画。图集、Creator、目标机、同源消费与许可最终验收均未测试。"
+    }
+  ],
+  "next_action": "停止将本轮程序化 SVG 关键姿扩成完整序列。先提出更适合原创分层角色插画和逐帧编辑的工具/源格式，并在任何新增图片生成/导出前更新 Art 预案与 Art+Tech 双签；再重做侧向角色设定、走跑喜悲坐五态和无靠背空凳的同尺度对照，按 G1–G5 目视复核通过后才逐帧生产。"
+}

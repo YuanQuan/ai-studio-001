@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "art",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "B1 REVISE：新样张的拱洞已露出水面，但在 preview/sample_phone_center.png 的 720×1280 中央视窗里，桥的高大侧立面仍主导画面，桥面与左右街道没有形成一眼可读的连续步行坡道，仍像立在路中的墙。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "B2 REVISE：远中近山、雾、月与水反光仍主要依靠程序化轮廓和渐变，山体体块、云雾虚实与月光路径均缺少旧概念呈现的插画层次。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "B3 REVISE：街砖、岸石和河水虽然颜色分离，但笔触、形体与明暗过于整齐，实际尺度仍呈扁平示意感，未达到选定非像素风格的材料表现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "B4 样张范围内 PASS：当前固定空景样张未画入店铺、角色、独立板凳及可开关植被灯笼；横向完整街区和双侧视窗尚未制作，不能判定整体通路。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "B5 样张来源边界 PASS、正式落地 NOT_TESTED：当前 SVG 为新写可编辑样张，未裁旧概念或沿用被退回 SVG；导出及哈希清单存在。尚无同尺度概念/新稿对照板、Creator/目标设备证据，也未完成全量版权和性能验收。"
+    }
+  ],
+  "next_action": "停止将本轮程序化 SVG 继续扩成正式资源。美术先提出能实现插画级体块、材质和光感的分层绘制工具/源格式方案；如改变已签 PREFLIGHT_PLAN 的工具、源格式、尺寸或范围，必须在下一张图片生成/导出前更新 Art 预案并重新取得 Art+Tech 双签。新桥/山雾/街水样张须再次按 B1–B5 逐项目视评审，通过后才考虑全量资源。"
+}
