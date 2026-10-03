@@ -1,0 +1,52 @@
+{
+  "task_id": "UNIT-MENU-EMPTY-SCENE-PROPOSAL-001",
+  "owner": "art",
+  "summary": "第1项空场景的出资源前中文美术方案、视觉锚点与用户附件权利边界已形成v0.1；Art自审、Tech文字可行性评审及Master专业评审均批准送用户Gate 1。用户尚未批准，未制作本批新图或切图。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/ART_PRODUCTION_PROPOSAL.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/reference/user_reference_20261003.png",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/ART_REVIEW.json",
+    "deliverables/tech_lead/reviews/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/tech_lead/reviews/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/REVIEW.json",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "方案明确第1项空场景的固定底板与将来可切换店铺、店长、顾客、树花灯、桌凳、祈愿物等边界，不启动其余六项功能或资源制作",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PROPOSAL.md 第2节固定/可切换表及开头范围；VISUAL_ANCHORS.md E5。"
+    },
+    {
+      "criterion": "用户本轮附件只作有来源记录的视觉参考：非像素可爱中式夜景、平视长街、低矮单孔石桥、连续街道、克制前河、山雾月光；不得裁切、描摹或直接入正式资源",
+      "result": "PASS",
+      "evidence": "REFERENCE_AND_RIGHTS.md 登记仓内附件2172×724与SHA256、未知权利及禁用边界；VISUAL_ANCHORS.md E1–E4；Art已实看参考副本。"
+    },
+    {
+      "criterion": "方案给出左右拖拽、镜头缩放所需的长街画幅/安全边及中心和两侧审图方法，明确仍待技术核算的尺寸与性能项",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PROPOSAL.md 第3节横幅/720×1280全景、中心、左右、缩放预览要求；VISUAL_ANCHORS.md E6及NOT_TESTED边界。"
+    },
+    {
+      "criterion": "方案列出制作后 Art 与 Tech Lead、Client 的切图协商点、切片与同尺度重组效果的第二次用户审批、切后获批才交 Client 正式使用",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PROPOSAL.md 第4节切图交接与第5节Gate 2；ART_REVIEW.json核对先Gate 1、后Art/Tech首图双签、再切图Gate 2的顺序。"
+    },
+    {
+      "criterion": "本次只提交文字方案和已提供参考图，Art 与 Master 专业审查完成后把确切 v0.1 版本交用户审批；用户未批准前不产生新正式资源图片、母版、切片或 Creator 正式接入",
+      "result": "PASS",
+      "evidence": "三份文字方案与既有参考副本已齐；ART_REVIEW.json 为 Art APPROVED、Tech v0.1 REVIEW.json 为仅文字可行性 APPROVED、MASTER_REVIEW.json 为仅准送用户 Gate 1 的 APPROVED。Master/Tech 核对三份方案 SHA256 分别为 42DCE6084A0E4F21A506B63EF1AB1FBE484843EFE0EA49876B4805BA1DD4877B、E1CE3C6C6E992B79E57E3675D27E45D37E953DE1F231D72C495898AD48092C8C、F94D3ABD6DE0D0B9176AB9B1A27178E0B4478542E778E5B7DB5B0D4FD2464AC9。PASS 仅表示确切 v0.1 方案完成专业审查、具备用户送审条件；用户 Gate 1 仍待决定，未授权出图，当前无本任务新图片、母版、切片或 Creator 正式接入。"
+    }
+  ],
+  "assumptions": [
+    "极远低对比中式城郭/楼阁仅为不可互动固定远景剪影，不与六主体店铺或可切换建筑混淆；若用户Gate 1要求绝对无建筑，须修订版本。",
+    "街/岸/河百分比为待用户审批的视觉区间，非生产纹理像素或设备性能阈值。"
+  ],
+  "risks": [
+    "用户附件的作者及商业使用/改编授权未知，只可作视觉关系参考，不得裁切或描摹入正式源。",
+    "具体源工具、尺寸、图集、合批、相机安全边和目标设备尚待用户Gate 1后由Art/Tech首图前双签及后续实测。",
+    "切图效果尚未制作或经用户Gate 2批准；当前不得交Client正式使用。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

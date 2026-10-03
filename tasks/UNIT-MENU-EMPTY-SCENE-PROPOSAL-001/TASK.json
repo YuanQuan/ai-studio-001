@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-MENU-EMPTY-SCENE-PROPOSAL-001",
+  "title": "空场景正式资源制作前美术方案用户审批",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "在制作第1项空场景的任何新正式图片、可编辑母版或切片前，依据用户本轮参考图提交可审阅的视觉与制作方案，取得用户对确切版本的明确批准。此任务不产正式美术资源、不切图、不交 Client 接入。",
+  "inputs": [
+    "用户 2026-10-03 指令：七项单元示例先只做空场景；资源制作前审批方案，切图后再次审批效果，通过后才交程序正式使用",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/reference/user_reference_20261003.png（用户提供参考，仅审阅；权利状态待核）",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（既有 USER_APPROVED 范围，仅取第1项）",
+    "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md 与 project/ART_GUIDE.md（已批准且未被最新指令覆盖的视觉要求）",
+    "rules/visual_production_contract.md、rules/approval_protocol.md"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/ART_PRODUCTION_PROPOSAL.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-MENU-EMPTY-SCENE-PROPOSAL-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "方案明确第1项空场景的固定底板与将来可切换店铺、店长、顾客、树花灯、桌凳、祈愿物等边界，不启动其余六项功能或资源制作",
+    "用户本轮附件只作有来源记录的视觉参考：非像素可爱中式夜景、平视长街、低矮单孔石桥、连续街道、克制前河、山雾月光；不得裁切、描摹或直接入正式资源",
+    "方案给出左右拖拽、镜头缩放所需的长街画幅/安全边及中心和两侧审图方法，明确仍待技术核算的尺寸与性能项",
+    "方案列出制作后 Art 与 Tech Lead、Client 的切图协商点、切片与同尺度重组效果的第二次用户审批、切后获批才交 Client 正式使用",
+    "本次只提交文字方案和已提供参考图，Art 与 Master 专业审查完成后把确切 v0.1 版本交用户审批；用户未批准前不产生新正式资源图片、母版、切片或 Creator 正式接入"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-ART-DESIGN-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户对本轮流程规则的明确授权不等于对本 Art 制作方案的批准。",
+    "原 UNIT-MENU-BASE-ASSET-001 及其 R1–R4 探索保留历史，直到本任务获得 USER_APPROVED 才能按新版本重启正式资源制作。",
+    "第2–7项单元示例暂缓，不因空场景任务创建而自动开始。"
+  ]
+}

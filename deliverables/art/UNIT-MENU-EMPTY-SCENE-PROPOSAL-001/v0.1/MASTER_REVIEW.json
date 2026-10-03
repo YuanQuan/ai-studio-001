@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-EMPTY-SCENE-PROPOSAL-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Master 已实看用户本轮 2172×724 参考副本并逐项复核 v0.1 三份中文方案。制作提案、视觉锚点、参考权利文件 SHA256 分别为 42DCE6084A0E4F21A506B63EF1AB1FBE484843EFE0EA49876B4805BA1DD4877B、E1CE3C6C6E992B79E57E3675D27E45D37E953DE1F231D72C495898AD48092C8C、F94D3ABD6DE0D0B9176AB9B1A27178E0B4478542E778E5B7DB5B0D4FD2464AC9；参考副本 SHA256 为 0A8B9659536A8572A1A0F753BF5EC8801BC9A270C167B6CD0841ED130E35A749。本 APPROVED 只表示可呈用户 Gate 1 审阅，不是用户批准或正式资源视觉 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "范围严格限第1项空场景。固定内容拟含夜空/月云、山雾、低对比远景剪影、连续石街/岸/静水、低双坡单孔桥与固定石栏；主体店铺、孟桃、顾客幽灵、桌凳、近景树灯花草、纸船蜡烛及动态光/UI 均另批制作。远景中式楼阁仅是拟批低对比景深剪影，若用户要求绝对无建筑，应在 Gate 1 修订后再生产。"
+    },
+    {
+      "severity": "INFO",
+      "message": "视觉锚点 E1–E7 给出非像素近平视冷夜、可爱非恐怖、横向约3:1与720×1280中心/左右/缩放审图、宽街低岸薄河、桥坡连续通行和真透明水口。街顶25–30%、岸8–10%、前河10–15%仍是待用户确认的审图目标，不是已批准的像素或性能阈值。来源/版权边界明确：用户参考权利未核，不得裁、描、擦除补洞或作为正式底板；旧 R1–R4 探索仍为历史隔离候选。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art 自审与 Tech 文字可行性 Review 均允许送 Gate 1。Tech 的相机/内存数字仅条件估算，真实源工具、生产像素、分片/图集、目标设备和性能必须在 Gate 1 用户批准之后、首图之前另经 Art/Tech 同版双签；切图时再由 Art/Tech Lead/Client 协作。切图重组效果及版本须获用户 Gate 2 批准，随后 Client 才正式接入；拖拽缩放运行和 QA 当前 NOT_TESTED。"
+    }
+  ],
+  "next_action": "将 ART_PRODUCTION_PROPOSAL.md、VISUAL_ANCHORS.md、REFERENCE_AND_RIGHTS.md 的确切 v0.1 版本连同用户参考副本呈用户 Gate 1 审批。获明确批准前停止所有本批新正式图片、母版、切片与 Client 正式接入；若用户退回则保留 v0.1 并创建修订版。"
+}

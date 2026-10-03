@@ -1,10 +1,10 @@
 {
   "id": "UNIT-MENU-BASE-ASSET-001",
-  "title": "七菜单正式空背景底板：长街、石桥、河岸与栏杆分层资源",
+  "title": "第1项空场景正式底板：长街、石桥、河岸与栏杆分层资源",
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "制作第1项空场景与第7项组合场景共用的原创正式背景底板；保持用户选定的非像素平视夜市构图，将天空远山、街面、连续水面、石拱桥与栏杆拆成可编辑前后层，并交付可重复导出的正式图片、遮挡与镜头边界证据。",
+  "objective": "仅制作第1项空场景的原创正式背景底板，验证左右拖拽与镜头缩放所需的可见范围。保持用户选定的非像素平视夜市构图，将天空远山、街面、连续水面、石拱桥与栏杆拆成可编辑前后层；未来第7项组合场景可在获批后复用同一资源，本任务不实施第7项。正式资源制作须等待前置美术方案用户批准，切图效果须另经用户批准后才交 Client 正式使用。",
   "inputs": [
     "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md、FLOW.md（USER_APPROVED）",
     "deliverables/art/UNIT-MENU-ART-DESIGN-001/v0.2/ART_BRIEF.md、ASSET_MANIFEST.md、LAYER_OCCLUSION_PLAN.md、ATLAS_PREFLIGHT.md（USER_APPROVED）",
@@ -16,8 +16,10 @@
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/PREFLIGHT_PLAN.md",
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/ART_PREFLIGHT.json",
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/TECH_PREFLIGHT.json",
-    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/source/street_base_master.svg",
-    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/tools/export_layers.js",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/source/EDITABLE_SOURCE_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/CUT_COLLABORATION_PLAN.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/SLICED_EFFECT_REVIEW.md",
+    "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/tools/EXPORT_PROCEDURE.md",
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/layers/LAYER_MANIFEST.json",
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/preview/empty_scene.png",
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/preview/layer_occlusion.png",
@@ -35,14 +37,17 @@
     "deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.2/ART_VISUAL_REVIEW.json"
   ],
   "acceptance": [
-    "正式图片输出前 Art 与 Tech 对本批原创来源、横向全景尺度、七菜单共用ID、各层边界/支点、贴图面积/分页/格式、镜头横拖缩放可见范围及目标设备内存共同签认并记录时间证据",
+    "前置 UNIT-MENU-EMPTY-SCENE-PROPOSAL-001 的确切版本已获用户明确批准；未批准前不得新制作正式资源图片、母版或切片，历史 R1–R4 探索不充当正式输入",
+    "正式图片输出前 Art 与 Tech 对本批原创来源、横向全景尺度、可供未来组合场景复用的稳定ID、各层边界/支点、贴图面积/分页/格式、镜头横拖缩放可见范围及目标设备内存共同签认并记录时间证据",
     "空场景正式层只含天空月云、远景、石地、河岸连续水面、石拱桥及栏杆；不得烘入奶茶店、孟桃、顾客、板凳或可切换树花灯和暖光，祈愿纸船/蜡烛本批不擅自并入固定背景",
     "石桥保留正面单孔石拱、两侧桥坡与栏杆，桥下支流连通前景河；桥体后/前片及栏杆前后片可独立遮挡，街道中央保持顾客动线，靠栏杆休息带留桌椅位置，空镜不露未绘制区域",
     "交付可编辑原创分层母版、真实透明导出层、可重复导出脚本、层顺序/尺寸/坐标/哈希清单以及空景与遮挡预览；实际图片像素面积、alpha边、内存估算和镜头边界检查有证据，未实测 Creator/设备时标NOT_TESTED",
-    "资源符合已批非像素可爱夜市冷蓝暖橙原则且避免照搬用户参考的独特细节；来源与图片/工具/字体许可清楚，Art/Tech评审通过，供用户作为正式资源候选审阅",
-    "v0.2 代表样张出图前再次由 Art/Tech 双签；Art 对 B1 桥剪影、B2 山雾月光深度、B3 路岸水材质、B4 空景边界与通路、B5 原创可编辑源逐项提供同画幅同显示尺度的概念/新稿并排证据并全部判 PASS，任一 REVISE 不得送审为合格正式资源"
+    "Art 与 Tech Lead、Client 在切图前记录切片边界、遮挡、复用、接缝、镜头缩放与图集预算；切后提交源图、切片清单、同尺度重组和中心/左右视窗效果，Art/Tech独立评审后由用户对具体切图版本再次审批，批准前不交 Client 正式使用",
+    "资源符合已批非像素可爱夜市冷蓝暖橙原则且避免照搬用户参考的独特细节；来源与图片/工具/字体许可清楚，Art/Tech评审通过，供用户作为切图效果候选审阅",
+    "v0.2 代表样张出图前按新工具、源格式、层级和导出链再次由 Art/Tech 同版双签；可编辑源清单记录真实母版、独立层、版本及打开—改单层—保存—再导出证据；Art 对 B1 桥剪影、B2 山雾月光深度、B3 路岸水材质、B4 空景边界与通路、B5 原创可编辑源逐项提供同画幅同显示尺度的概念/新稿并排证据并全部判 PASS，任一 REVISE 不得送审为合格正式资源"
   ],
   "dependencies": [
+    "UNIT-MENU-EMPTY-SCENE-PROPOSAL-001",
     "UNIT-MENU-PRODUCT-001",
     "UNIT-MENU-ART-DESIGN-001",
     "UNIT-MENU-TECH-DESIGN-001",
@@ -52,9 +57,10 @@
   "status": "REVISION",
   "approval": "APPROVAL",
   "notes": [
-    "本批只制作空景固定底板；店、人、板凳、树花灯、UI、特效分批生产，空场景和组合场景必须引用本批同一源ID。",
+    "当前只推进第1项空场景；店、人、板凳、树花灯、UI、特效及第7项组合场景均暂缓。未来组合场景若启动，应复用本批获批源ID，不复制底板。",
+    "本任务在前置制作方案用户审批前不得继续出正式图片；切图效果第二次用户审批前不得交 Client 正式接入。",
     "用户参考仅用于功能性桥型与长街构图提取，不能裁切、描摹或微调成正式图片。",
     "如横向长街与当前720×1280工程视窗的镜头范围不能兼容，应在本批签认中提出具体尺寸和适配方案，不静默改变用户选定视角。",
-    "用户已退回本任务 v0.1 正式资源；旧 Art 概念 v0.1 因幽灵骨骼条款整版退回，但非冲突视觉特征作为本次原创重绘的对照锚点，禁止裁图/描摹。新版本视觉锚点见 v0.2 REVISION_BRIEF，静态技术 PASS 不能代替 Art 视觉 PASS。"
+    "用户已退回本任务 v0.1 正式资源；旧 Art 概念 v0.1 因幽灵骨骼条款整版退回，但非冲突视觉特征作为本次原创重绘的对照锚点，禁止裁图/描摹。新版本视觉锚点见 v0.2 VISUAL_ANCHORS；静态技术 PASS 不能代替 Art 视觉 PASS。原硬编码 SVG Required Artifact 已改为真实可编辑源清单与复现导出说明，源格式须先验证并双签，不预先宣称 ORA 或其他格式合格。"
   ]
 }

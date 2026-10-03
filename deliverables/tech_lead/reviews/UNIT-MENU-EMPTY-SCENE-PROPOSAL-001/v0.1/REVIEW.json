@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-EMPTY-SCENE-PROPOSAL-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 APPROVED 仅表示 v0.1 空场景中文文字方案在技术上可交 Master 作用户 Gate 1 审阅，不是首图 Art/Tech 预签、制作许可、切图 Gate 2、Creator 或设备 PASS。审阅三份定稿文字的 SHA256 分别为 ART_PRODUCTION_PROPOSAL.md=42DCE6084A0E4F21A506B63EF1AB1FBE484843EFE0EA49876B4805BA1DD4877B、VISUAL_ANCHORS.md=E1CE3C6C6E992B79E57E3675D27E45D37E953DE1F231D72C495898AD48092C8C、REFERENCE_AND_RIGHTS.md=F94D3ABD6DE0D0B9176AB9B1A27178E0B4478542E778E5B7DB5B0D4FD2464AC9。参考副本实测 2172×724 RGB、SHA256 0A8B9659536A8572A1A0F753BF5EC8801BC9A270C167B6CD0841ED130E35A749，仅作权利未明的视觉参考。详细核算与行动项见同目录 TECH_FEASIBILITY_REVIEW.md。"
+    },
+    {
+      "severity": "INFO",
+      "message": "约 3:1 横向逻辑街与现 720×1280 竖屏可共存，但须以真实相机视口和画面覆盖验证。若仅作 3072×1024、统一倍率 s 的条件示例，s=1.25 可见 576×1024 且上下无滤波安全边，s=1.35 可见约 533.33×948.15，s=1.8 可见约 400×711.11；设备宽高比、安全区和 fitWidth/fitHeight 仍须另算。首图预案应明确生产像素与世界单位映射、初始/缩放边界、横向相机合法区间和边缘延展；全景、中心、左右边界、缩放两端同显示尺度核无露白。现有文字没有把 2172×724 用户参考或旧 3072×1024 当成已签生产纹理尺寸，处理正确。"
+    },
+    {
+      "severity": "INFO",
+      "message": "固定底板与可切换内容边界明确。桥后/前片、栏杆后/前片、街/岸/水及远景须在实际母版保留独立语义层与全局锚点，桥洞真实透明，顾客脚点与桥坡、近栏前后关系后续可核。Art、Tech、Client 切图时还需同一原稿的 sourceRect/pivot/alpha bbox、滤波 padding/bleed、拼接缝、跨层材质/混合断批与同源重合成证据；整桥或整栏单片不应预设为可正确遮挡。页数/尺寸、最大纹理、压缩和实际 DrawCall 尚无源或设备数据，不能先判 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "若仅以 3072×1024 满幅 RGBA8 作量级示例，单层未压缩像素为 12,582,912 B=12 MiB；真实资源须逐层按宽×高×4 加总并核 atlas/分段、mipmap、压缩回退及峰值，PNG 文件大小不等于显存。目标机清单/硬阈值、Creator 导入、帧时、显存、DrawCall、实际拖缩和遮挡均 NOT_TESTED。真实源工具、尺寸、层/页/预算必须在用户 Gate 1 批准后、首图前另行 Art/Tech 同版双签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "审批顺序现与视觉生产契约一致：用户先批准本版 Gate 1 文字美术方案；获批后 Art/Tech 首图双签；Art 原创制作与逐锚点视觉审查；Art/Tech/Client 讨论并隔离验证切图；用户对具体重组与遮挡效果作 Gate 2；Client 仅在 Gate 2 后正式接入第 1 项。历史 R4-B 方向图只作探索，不参与本批正式资源。极远固定楼阁剪影属于方案所列视觉选择，用户若要求背景中绝对无建筑需在 Gate 1 修订确切版本。"
+    }
+  ],
+  "next_action": "Master 可将本 v0.1 文字方案和参考副本呈用户 Gate 1 审阅；Producer 记录确切 Artifact 版本与用户决定。未获 Gate 1 批准前不出新正式图。批准后 Art/Tech 另对实际工具许可、生产像素、相机边界/安全边、分层遮挡、atlas/内存预算和范围作首图前同版双签；切图经 Art/Tech/Client 复核及用户 Gate 2 批准前，Client 不得正式接入。"
+}

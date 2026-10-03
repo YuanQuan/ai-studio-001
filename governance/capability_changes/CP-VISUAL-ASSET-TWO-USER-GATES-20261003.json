@@ -1,0 +1,17 @@
+{
+  "id": "CP-VISUAL-ASSET-TWO-USER-GATES-20261003",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "视觉资源在正式出图前审批制作方案，切图后再次审批具体效果，通过后才交客户端正式使用。",
+  "reason": "用户要求把单元示例分项推进，并使美术出资源与程序接入分别受其审批控制。",
+  "impact": [
+    "Art 先提交可审阅制作方案；用户未批准时不得继续正式资源出图",
+    "Art 与 Tech Lead、Client 在切图阶段核层级、遮挡、复用和性能；切后效果另交用户批准",
+    "Producer 分别登记两个 Artifact Gate；Client 只能正式接入第二门禁批准的版本",
+    "当前游戏 Studio Layer 与主 Studio Layer、标准小游戏模板默认项同步"
+  ],
+  "affected_agents": ["master", "producer", "product", "art", "ui", "vfx", "tech_lead", "client", "server", "qa"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}
