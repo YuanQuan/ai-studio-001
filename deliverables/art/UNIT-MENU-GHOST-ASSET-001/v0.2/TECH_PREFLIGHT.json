@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-03T11:43:29+08:00 阅读同版 ART_BRIEF.md、PREFLIGHT_PLAN.md、ART_PREFLIGHT.json、REVISION_BRIEF.md G1–G5 及本 Task 后，对 UG_GHOST_01/BENCH_01 v0.2 六张原创代表样张的首次绘制/导出预案签认。签认时同版目录仅有文字文件，无新母版、帧 PNG、凳图或 atlas；签认早于本版第一次图片输出。旧 v0.1 的 23 帧/1024×512 图集及双签不延续。本签不批准完整五态逐帧、图集或 Creator 导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次范围为同一右向原创母版的移动大姿、跑动大姿、开心峰值、沮丧峰值、稳坐姿及独立无靠背空凳，共六个审美样张；左向仅镜像同源显示节点作对照，不另绘整套帧。凳子独立源和后/前片，坐姿合成只供审阅，不能烘入幽灵 PNG。世界位移、地影、世界光、文字/UI、板凳与座点不随角色视觉节点翻转；未来组合遮挡/撤凳还需 Creator 验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "认可幽灵 256×224、板凳 320×160 RGBA 为本次样张逻辑画布候选；ghostFoot≈(160,188) 只是起点，seatContact、凳左右座点/凳底中点须根据新透明 bbox 和双向压座画面实测后登记。每样张至少预留 4 px 透明安全边，导出后核可见 alpha bbox、抗锯齿渗色、支点与座点；柔尾/手势触边则先调整画布并重新双签，不裁剪形体。需展示原图及 720×1280 候选镜头中的左右实际投影大小，样张模拟不替代目标机可读性通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "后续完整 23 帧仅是估算接口：256×224×23=1,318,912 未裁切 px²，RGBA8 基础量 5,275,648 B≈5.03125 MiB；1024² 每页 4 MiB，不能凭此断言一页或两页必能装下。板凳 320×160 合成 RGBA8 另约 204,800 B，不含拆分片、mipmap/解码/GPU 副本。完整帧须按实际 alpha bbox、padding、trim/offset 和设备纹理上限重新打包/重签。素材页数、渲染批次、透明遮挡与材质状态分别记录；单页不等于一 DrawCall，不以图集预算压短双柔尾或改变角色侧向轮廓。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本机复核 Node v22.12.0、sharp v0.35.4 package 许可标 Apache-2.0、libvips v8.18.6；sharp 由本地 Codex workspace dependencies 的 NODE_PATH 提供，项目根目录直接 require('sharp') 不可解析。新 SVG 为可编辑源，工具仅供开发导出、不进入游戏运行包；导出脚本须记录实际可复现依赖/版本和源/PNG hash。用户概念及附件权利 UNKNOWN，只研究通用侧向软团与低木凳关系，不裁/描/微改具体五官、尾线、木纹；样张无字体、Logo、外部图片。引入第三方素材/笔刷/字体、变更工具或分发工具前补许可并重签。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "六个关键姿不是移动/跑动各 4–6 帧的闭环证据。样张后 Art 须先以同显示尺度对 G1–G5 逐项作视觉 PASS/REVISE；全身情绪、走跑剪影差、两向凳接触均需新实图验证。Creator 3.8.8、目标机实际显存/DrawCall/帧时、双向十格、完整循环与主体接入均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "本文件与同版 ART_PREFLIGHT.json 构成六张代表样张首次出图前双签。Art 可从空白绘制两个独立可编辑 SVG 源并导出六张透明样张与镜像/坐姿合成对照，记录逐张 alpha bbox、支点/座点、工具许可、hash 和概念/退稿同尺度比较。Art 对 G1–G5 视觉通过、Tech 用真实新姿态评估画布/图集/内存之后，完整帧、正式凳图和 atlas 均须再做新的 Art/Tech 出图前签认；本次 APPROVED 不授权量产。"
+}

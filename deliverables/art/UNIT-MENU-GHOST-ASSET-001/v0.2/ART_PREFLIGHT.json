@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-GHOST-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03 对 v0.2 新原创代表样张文字方案作单方签认：右向三分之四饱满软团、宽柔尾、走跑大姿和全身情绪、无靠背低木凳与两向压座关系。依据同版 ART_BRIEF.md、PREFLIGHT_PLAN.md、REVISION_BRIEF.md 的 G1–G5；本签只覆盖样张，绝非完整 23 帧或 atlas 生产批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "历史概念及用户附件仅作高层视觉关系研究，作者/商用授权 UNKNOWN；Art 将从空白新建可编辑母版，不裁旧图、不复用被退回 SVG 的路径和动作参数。样张无字、字体、Logo、第三方位图或世界光地影。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六个审美样张不是最终全帧数量；幽灵 256×224、板凳 320×160 及支点为待 Tech/Art 核对的候选。未来移动/跑动各约 4–6 帧起步，按新 bbox 决定图集实际页数；单页和 Draw Call 不等价，Creator/目标机仍 NOT_TESTED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "v0.1 的 23 帧、图集和板凳虽可复验却因视觉差距被用户退回；新样张尚未绘制。后续 Art 将逐项评 G1–G5，未通过的造型或矮凳不得扩成完整序列帧。"
+    }
+  ],
+  "next_action": "Tech Lead 对同一 v0.2 样张范围、工具许可、逻辑画布/支点、图集与内存计算、翻转和遮挡写 TECH_PREFLIGHT.json。Tech 未 APPROVED 前禁止生成或导出任何新图；双签后仅制作六张代表样张，完整帧/图集另签。"
+}

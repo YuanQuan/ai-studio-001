@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-03T11:43:29+08:00 阅读同版 ART_BRIEF.md、PREFLIGHT_PLAN.md、ART_PREFLIGHT.json、REVISION_BRIEF.md B1–B5 及本 Task 后，签认 STREET_BASE_01 v0.2 新原创代表样张的首次绘制/导出预案。签认时本版目录仅有文字预案，无 source、PNG 或图像预览；此签晚于 Art 预案、早于本版第一次图片输出。旧 v0.1 签字不沿用。本签只允许中央桥口、两侧街/水、山雾月光局部样张及同源审阅合成，不批准全景量产、正式运行贴图或 Creator 资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "逻辑世界候选 3072×1024，审阅样张中心裁窗暂按 x=768..2304、y=0..1024 的 1536×1024；桥、两坡街、支流水口、前河和月亮/山雾视觉焦点须落入裁窗。720×1280 中心相机示意按缩放 1.25/1.35/1.8 分别覆盖约 576×1024、533.33×948.15、400×711.11 世界单位；初始 1.35 中心可见 x≈1269.33..1802.67，在本裁窗内。1.25 竖向恰好贴边而无滤波安全余量；样张仅可检查中央构图，不能声称整条 3072 宽街西/中/东或真机拖缩边界已通过。变更画布、裁窗范围或月亮位置导致裁窗不足时，出图前重签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "认可 UB_SKY/UB_DISTANCE/UB_WATER/UB_GROUND/UB_BANK/UB_BRIDGE_BACK/UB_BRIDGE_FRONT/UB_RAIL_BACK/UB_RAIL_FRONT 的样张层语义；水口/拱洞应为真实 alpha 透水，桥面与左右街坡接平，桥与栏杆前后片独立，顾客/凳/店/可切换树花灯/动态暖光/纸船蜡烛不烘入本底板。固定月光水面回应可留在静态层。样张合成预览是审美证据，不计作一张运行纹理；中央以外尚未绘制处不得伪称全景无露白。"
+    },
+    {
+      "severity": "INFO",
+      "message": "每候选运行纹理最大边≤1024 仅作为样张拆分草排；实际导出需记录源尺寸、alpha bbox、世界 placement、可见像素面积、重复次数、材质、hash 及 RGBA8=宽×高×4 的基础量。旧版 16 张/8,847,360 B（8.4375 MiB）不是 v0.2 硬上限；同源复用与同 atlas 均不保证一 DrawCall，前后片/透明材质及将来角色、VFX、UI 会断批。全景贴图数量、压缩/解码峰值、合批及目标机预算尚无实图数据，完整资源出图前另需 Art/Tech 双签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本机复核 Node v22.12.0、sharp v0.35.4 package 许可标 Apache-2.0、libvips v8.18.6；sharp 由本地 Codex workspace dependencies 的 NODE_PATH 提供，项目根目录直接 require('sharp') 不可解析。导出脚本需明确可复现依赖路径/版本及 hash，工具仅供本地开发导出、不进入游戏运行包；若分发工具或引入第三方笔刷/位图、字体、更换工具/源格式，须补完整依赖许可并在再次图片输出前重签。用户参考及历史概念商业权利 UNKNOWN，只能研究通用冷夜/桥/材质关系，不得裁、描、换色或微调既有像素。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Art 后续必须对 B1–B5 用同画幅及 720×1280 实际显示尺度作独立视觉 PASS/REVISE；本技术预签不推定插画质量通过。Creator 3.8.8 导入、目标设备纹理上限/实际压缩、帧时、DrawCall、内存及主体同源接入均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "本文件与同版 ART_PREFLIGHT.json 构成代表样张第一次出图前双签。Art 可按已签方案新绘分层母版并导出局部透明层和同源审阅预览，保留可编辑源、来源/工具许可、alpha bbox/hash、中心镜头与概念/退稿同尺度对照。若要扩展到整条街、改变裁窗/纹理拆分或输出正式运行贴图，应先以实际样张完成 B1–B5 视觉 Review 和真实纹理草排，再重新 Art/Tech 签认；本次 APPROVED 不授权完整资源。"
+}

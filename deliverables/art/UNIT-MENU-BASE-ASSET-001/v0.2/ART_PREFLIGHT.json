@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-BASE-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-03 签认可审美的 v0.2 代表样张文字预案：低矮可走双坡单孔石拱、近中远山雾、石路/岸/水不同材质和月光水面回应。依据同版 ART_BRIEF.md、PREFLIGHT_PLAN.md、REVISION_BRIEF.md 的 B1–B5；本签只覆盖新绘样张，不批准全景正式导出。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户概念与第一街附件只作高层视觉关系研究，作者/商业授权 UNKNOWN；新可编辑源从空白原创，不裁、描、换色或微调历史图。样张不含店、人、板凳、树花灯、纸船蜡烛、可切换暖光或字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "逻辑世界 3072×1024 和中央约 1536×1024 审阅裁窗、每运行候选纹理最大边≤1024 均是待 Tech 核算的候选。旧 v0.1 16 张/8.4375 MiB 不是本版质量上限；共源、图集与 Draw Call 分开测，实际新图面积/内存、Creator 和目标机均 NOT_TESTED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "v0.1 正式资源已被用户退回，视觉锚点缺失是根因；本轮无任何新源或 PNG。即使 Tech 通过结构预检，Art 后续对 B1–B5 任一核心视觉项判 REVISE 时，不能把新样张扩展成正式资源或送用户作合格成品。"
+    }
+  ],
+  "next_action": "Tech Lead 对同一 v0.2 样张范围、尺寸/层/导出链许可/贴图与合批预算写 TECH_PREFLIGHT.json。Tech 未 APPROVED 前禁止生成、绘制或导出新图；双签后仅能制作代表样张，视觉通过后全量生产另签。"
+}
