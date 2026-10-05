@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+  "owner": "client",
+  "summary": "提交示例1四层固定背景与镜头的客户端编码前方案，包含功能概要、独立 Lab Scene/Prefab 结构计划、四张获批 PNG 的双目录资源映射和 S01–S09 计划验证边界。QA、Tech 与 Master 方案 Review 均已完成。未创建 Creator 资源、未导入图片、未编写运行代码或生成 UUID；尚待用户审批。",
+  "artifacts": [
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/SCENE_PREFAB_PLAN.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/ASSET_HANDOFF_PLAN.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实现范围仅为已批示例1四层固定背景、镜头、拖拽/缩放/重置及 Lab 控件隔离；逐项映射 S01–S09 并明确第4/7项接口只保留边界、不在本 Task 实现",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 的范围及 S01–S09 表、SCENE_PREFAB_PLAN.md 的节点职责。所有 Creator 运行结果与未来对象功能均为 NOT_TESTED。"
+    },
+    {
+      "criterion": "提出可复核的 zMin/zMax 与初始 cameraX/z 候选和理由，区分技术规格给出的几何约束与尚待用户批准的体验参数；鼠标和 Web 模拟触控共享状态并给出边界、手势取消和视口变化行为",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 与 SCENE_PREFAB_PLAN.md 提出 zMin=1.00、zMax=1.80、初始 cameraX=0/z=1.00；后3项均明确待批准。Web 输入取消、有效视口重算与边界夹取已描述。"
+    },
+    {
+      "criterion": "引用登记表逐件对应四张 PNG 的稳定 ID、美术目录/文件/哈希和计划 Creator 目录/文件名；说明 Creator 尚未导入，导入后分别回填 image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab UUID、场景引用与导入设置",
+      "result": "PASS",
+      "evidence": "ASSET_HANDOFF_PLAN.md 列明四图及全部映射；本轮 Get-FileHash 结果与批准登记表和 Tech v0.2 一致。Creator 目录尚不存在，UUID 留空并定义导入后回填字段。"
+    },
+    {
+      "criterion": "评估现有 Creator 工程复用点、场景/Prefab 职责、生命周期、纹理宽度风险、性能采样项、调试与回滚；不声称代码、画面、性能或 UUID 已测试",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 与 SCENE_PREFAB_PLAN.md 引用 package.json 的 Creator 3.8.8、UnitSamples.scene/UnitSampleGallery.ts 作为入口参考，排除旧 Demo 资源；报告纹理宽度与 RGBA 面积风险，并说明尚未实测。"
+    },
+    {
+      "criterion": "Client Brief 与 QA Test Plan 交叉 Review 通过；仅申请示例1编码前概要审批，不包含正式编码/资源导入许可，不锁 Web 测试矩阵或性能硬阈值，不要求实体手机",
+      "result": "PASS",
+      "evidence": "本任务 QA_REVIEW.json=APPROVED；QA Task 的 deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_REVIEW.json=APPROVED。双方矩阵/预算仍待另审；以上只完成专业交叉 Review。"
+    }
+  ],
+  "assumptions": [
+    "`apps/client/assets/UnitSamples.scene` 与 `UnitSampleGallery.ts` 仅作为入口/Lab复用参考；实现时仍需 Tech 审核职责是否应拆分，不复用其旧地图缩放参数。",
+    "镜头候选初始 cameraX=0 基于获批重组图的桥接近画布中轴；Creator 首帧实际辨识度尚待后续验证。"
+  ],
+  "risks": [
+    "当前方案虽已通过 QA、Tech 与 Master 方案 Review，仍待用户审批；该审批尚未授权 Creator 编码/导入。",
+    "zMax 和初始镜头体验参数是待审候选；Web 矩阵/性能预算及所有 Creator/Web 运行结果仍未锁定或未测试。",
+    "2172 像素宽贴图对目标 Web 纹理限制、实际格式及性能影响尚未实测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

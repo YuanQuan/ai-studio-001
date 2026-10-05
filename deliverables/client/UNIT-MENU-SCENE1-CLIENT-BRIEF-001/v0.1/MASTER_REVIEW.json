@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对 FEATURE_BRIEF.md、SCENE_PREFAB_PLAN.md、ASSET_HANDOFF_PLAN.md 与 QA/Tech Review。范围限示例1四层背景及镜头；UnitSamples 仅导航独立 Lab Scene `apps/client/assets/labs/menu/scn_unit_menu_scene1.scene`，该计划路径尚未创建。S01–S09 对应要求，第4/7项保持未来接口。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 PNG 的源目录、文件名、Gate2 v0.3 SHA-256、稳定 ID 与计划 Creator 路径逐项对照 `project/ASSET_HANDOFF_REGISTRY.md` 一致；计划明确标未导入，并区分 image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab UUID 与 Scene 引用回填。PSD 和审核核图标为不导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "zMin=1.00 作为 Tech 几何约束；zMax=1.80 与初始 cameraX=0/z=1.00 标为体验候选、待用户批准。当前文件没有宣称 Creator 代码、场景、UUID、Web 画面或性能已验证。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "真实 Creator/Web 运行、2172 像素纹理兼容性和性能仍未测试；浏览器、模拟视口、DPR、S03 容差及性能预算均须在运行验收前单独审批。本 Review 不授权编码或导入。"
+    }
+  ],
+  "next_action": "将 Client Brief v0.1 提交用户审批；须与同阶段 QA Plan v0.1 一并获批后，另行解锁正式编码及 Creator 资源导入。"
+}

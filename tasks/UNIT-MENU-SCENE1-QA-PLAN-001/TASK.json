@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-MENU-SCENE1-QA-PLAN-001",
+  "title": "单元示例1四层场景编码前 Web 测试计划",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "依据已获用户批准的示例1产品、切图和技术规格，提交仅覆盖四层场景的 Web 多模拟手机分辨率测试计划与用例；设计测试但不执行，不锁运行验收用的具体矩阵或性能阈值。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md 与 tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json（Gate2 USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md、PERFORMANCE_GATE_IMPACT.md、RESOURCE_PATH_AND_NAMING_SPEC.md（USER_APPROVED）",
+    "project/ASSET_HANDOFF_REGISTRY.md（四 PNG 实际美术路径、计划 Creator 路径；工程尚未导入）",
+    "project/changes/CP-UNIT-MENU-WEB-TEST-GATE-002.md 与 DEC-UNIT-MENU-WEB-TEST-005（当前范围为 Web 多模拟手机分辨率，非实体手机）",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md（同阶段交叉核对用的待审草案，不视为获批事实）"
+  ],
+  "deliverables": [
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/VISUAL_QA_CHECKLIST.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "逐项把获批 S01–S09 转成可执行检查，覆盖资源版本/哈希、层序/同尺度、视差比例、缩放边界、重置、UI 输入隔离和明显视觉缺陷；明确未来第4/7项条件只作 NOT_TESTED 接口",
+    "测试环境明确为 Web 浏览器中的多个模拟手机竖屏视口，不要求实体手机、微信/抖音容器或发布机型；候选视口/浏览器/DPR标为运行验收前另提并获批，不冒充已锁矩阵",
+    "区分规格/计划检查与 Creator 实际功能、Visual QA、性能实测；在 Web 矩阵和性能预算未获批前，硬阈值达标保持 NOT_TESTED，不输出运行 PASS",
+    "用例记录前置、操作、预期、证据类型与未测状态；列出运行前需锁的浏览器、视口、DPR、输入模拟方式、性能指标/阈值、样本步骤及版本证据，不自行填目标值",
+    "QA Plan 与 Client Feature Brief 交叉 Review 通过；本 Task 只提交计划，不执行测试、不产 TEST_REPORT、不要求实体设备"
+  ],
+  "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001", "UNIT-MENU-FOUR-LAYER-CUT-001", "UNIT-MENU-SCENE1-TECH-RUNTIME-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本 Task 只覆盖示例1四层场景，不为七菜单其他项目设计或执行测试。",
+    "Client Brief 与本 Test Plan 均获用户批准后才可解锁示例1正式编码；Web 运行矩阵及性能预算需在运行验收前另审。",
+    "2026-10-05 18:51 +08:00：Master 确认 QA Owner 已实际开始撰写本 Task 的计划与用例；状态 IN_PROGRESS 依据实际产出跟踪，不作为本轮停止点。",
+    "2026-10-05 18:53 +08:00：首份 Required Artifact TEST_PLAN.md 已实际落盘；随后 CLIENT_TEST_CASES.md、VISUAL_QA_CHECKLIST.md 及评审草稿已落盘。Client/QA 已完成双向范围与证据一致性核对；QA 任务待 Tech Review 职责确认及 Master/Producer 流程审阅。",
+    "2026-10-05 19:06 +08:00：七项 Required 齐全，Task 五项验收与 DELIVERABLE 逐字同序 PASS，Client/Tech/Master Review APPROVED；经 REVIEW 核验后进入 USER_REVIEW，用户尚未批准，本 Task 仍只提交计划、未执行运行测试。"
+  ]
+}

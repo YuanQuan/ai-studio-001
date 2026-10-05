@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已对照 USER_APPROVED 的 UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.2、Product S01–S09、Gate2 v0.3 和同阶段 QA 计划复核三份 Client 正文及 DELIVERABLE.json。方案限定四层固定背景、水平镜头、缩放/重置与 Lab 输入隔离；第4/7项仅保留未来接口，不把旧 Demo 图或 UUID 当正式资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "SCENE_PREFAB_PLAN.md 已明确计划新建 apps/client/assets/labs/menu/scn_unit_menu_scene1.scene，现有 UnitSamples.scene/UnitSampleGallery.ts 只加导航入口与场景切换；正式 STREET_BASE_01 Prefab 与 Lab 控件、镜头/输入控制分责清楚，未创建文件或扩大为通用相机框架。"
+    },
+    {
+      "severity": "INFO",
+      "message": "镜头沿获批 Tech v0.2 的 sCover、cameraX 边界和四层 0.3/0.8/1.0/1.0 系数；zMin=1 是适高几何下限，zMax=1.8 与初始 cameraX=0/z=1 为待用户批准的体验提案。鼠标与 Web 模拟触控共享状态，视口/DPR 改变、UI 捕获、指针取消、重置与再进入均有处理边界。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ASSET_HANDOFF_PLAN.md 逐张列稳定 ID、美术目录/文件名/SHA-256、计划 Creator 目录/文件名和未导入状态，PSD 与审核图不接入；image 主 UUID、Texture2D/SpriteFrame 子资源 UUID、Prefab UUID 及 Scene 引用均规定真实导入后回填。四张源 PNG 哈希与获批登记表一致。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "2172 像素纹理兼容、过滤边、实际压缩格式、DrawCall 与运行内存尚未实测；本 Review 批准的是编码前方案，不对 Creator 资源、画面或 Web 性能给 PASS。具体浏览器/模拟视口/DPR 矩阵及性能硬阈值在运行验收前另审。"
+    }
+  ],
+  "next_action": "交 Master 独立 Review 与用户审核 Client Brief v0.1；同阶段 QA Plan 也须独立获批。两份开工包均通过后，Client 才能按批准参数正式编码和导入四 PNG，并回填资源身份链。"
+}

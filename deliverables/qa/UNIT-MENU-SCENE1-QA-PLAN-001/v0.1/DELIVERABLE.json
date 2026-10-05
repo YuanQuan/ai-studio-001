@@ -1,0 +1,54 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-QA-PLAN-001",
+  "owner": "qa",
+  "summary": "完成示例1四层场景的 Web 多模拟手机分辨率测试计划、S01–S09 客户端用例和视觉 QA 检查表；Client、Tech 与 Master Review 均已 APPROVED，当前待用户审批。本阶段仅交付测试设计，未执行运行测试，不授权 Client 编码或导入资源。",
+  "artifacts": [
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/VISUAL_QA_CHECKLIST.md",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐项把获批 S01–S09 转成可执行检查，覆盖资源版本/哈希、层序/同尺度、视差比例、缩放边界、重置、UI 输入隔离和明显视觉缺陷；明确未来第4/7项条件只作 NOT_TESTED 接口",
+      "result": "PASS",
+      "evidence": "CLIENT_TEST_CASES.md 用例 SC1-WEB-001 至 SC1-WEB-009；S07/S08 当前为 NOT_TESTED。"
+    },
+    {
+      "criterion": "测试环境明确为 Web 浏览器中的多个模拟手机竖屏视口，不要求实体手机、微信/抖音容器或发布机型；候选视口/浏览器/DPR标为运行验收前另提并获批，不冒充已锁矩阵",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md 的目标与边界、开始运行前须锁定和明确排除章节；候选矩阵待另版批准。"
+    },
+    {
+      "criterion": "区分规格/计划检查与 Creator 实际功能、Visual QA、性能实测；在 Web 矩阵和性能预算未获批前，硬阈值达标保持 NOT_TESTED，不输出运行 PASS",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md 声明当前仅完成计划设计；用例及视觉清单运行状态为 NOT_TESTED；性能硬阈值待批准。"
+    },
+    {
+      "criterion": "用例记录前置、操作、预期、证据类型与未测状态；列出运行前需锁的浏览器、视口、DPR、输入模拟方式、性能指标/阈值、样本步骤及版本证据，不自行填目标值",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md、CLIENT_TEST_CASES.md 逐项记录源路径/hash、计划路径状态及实际导入后所需 UUID/依赖证据。"
+    },
+    {
+      "criterion": "QA Plan 与 Client Feature Brief 交叉 Review 通过；本 Task 只提交计划，不执行测试、不产 TEST_REPORT、不要求实体设备",
+      "result": "PASS",
+      "evidence": "同版对向评审均已记录：Client 对 QA Test Plan 的范围/预期/证据 Review 见 `deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/CLIENT_REVIEW.json`；QA 对 Client Brief 草案的对应 Review 见 `deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json`。此 PASS 只代表计划交叉评审和计划交付范围；Creator 功能、视觉、性能与所有运行用例仍为 NOT_TESTED，未生成 TEST_REPORT，未要求实体设备。"
+    }
+  ],
+  "assumptions": [
+    "UNIT-MENU-SCENE1-SCOPE-001 v0.1、UNIT-MENU-FOUR-LAYER-CUT-001 v0.3 和 UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.2 的审批状态以各自当前项目审批文件为准。",
+    "Web 测试矩阵和性能预算将在运行验收前另提并经用户批准；具体候选值不由本交付隐式锁定。",
+    "Client Brief 为同阶段交叉审核草案；CLIENT_REVIEW 只评估范围、预期和证据一致性，不将其视为用户批准输入。"
+  ],
+  "risks": [
+    "专业 Review 与 Master Review 已完成，但 Client Brief 和 QA Test Plan 尚待用户审批；本交付不授权 Client 正式编码或 Creator 资源导入。",
+    "当前四张 PNG 的 Creator 正式工程路径、哈希、.meta UUID 和场景引用均未实际回填；运行资源身份验证仍未完成。",
+    "本阶段没有执行 Creator 功能、视觉或性能测试，也未生成 TEST_REPORT；所有运行用例与运行结论保持 NOT_TESTED。",
+    "具体浏览器矩阵、输入模拟方式、视口/DPR、安全区处理、S03 最终测量容差、性能指标阈值和采样方法未批准，须在运行验收前另行提交审批。",
+    "实体手机、微信/抖音小游戏容器、发布平台及实际弱网不在当前阶段范围；Web 模拟结果不得外推为这些平台已通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

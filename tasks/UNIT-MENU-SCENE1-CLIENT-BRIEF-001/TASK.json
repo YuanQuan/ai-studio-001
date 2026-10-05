@@ -1,0 +1,41 @@
+{
+  "id": "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+  "title": "单元示例1四层场景客户端编码前概要",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "依据已获用户批准的示例1产品、切图和技术规格，提交仅覆盖四层背景与镜头的 Creator Web 客户端开工概要，明确待用户批准的倍率、初始视图、资源映射、输入与实施边界；不导入资源或修改运行代码。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md 与 tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json（Gate2 USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md、PERFORMANCE_GATE_IMPACT.md、RESOURCE_PATH_AND_NAMING_SPEC.md（USER_APPROVED）",
+    "project/ASSET_HANDOFF_REGISTRY.md（四 PNG 实际美术路径、计划 Creator 路径；工程尚未导入）",
+    "project/changes/CP-UNIT-MENU-WEB-TEST-GATE-002.md 与 DEC-UNIT-MENU-WEB-TEST-005（当前范围为 Web 多模拟手机分辨率，非实体手机）",
+    "apps/client/ 当前 Creator 3.8.8 工程（只读审计，不导入/改动资源）"
+  ],
+  "deliverables": [
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/SCENE_PREFAB_PLAN.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/ASSET_HANDOFF_PLAN.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "实现范围仅为已批示例1四层固定背景、镜头、拖拽/缩放/重置及 Lab 控件隔离；逐项映射 S01–S09 并明确第4/7项接口只保留边界、不在本 Task 实现",
+    "提出可复核的 zMin/zMax 与初始 cameraX/z 候选和理由，区分技术规格给出的几何约束与尚待用户批准的体验参数；鼠标和 Web 模拟触控共享状态并给出边界、手势取消和视口变化行为",
+    "引用登记表逐件对应四张 PNG 的稳定 ID、美术目录/文件/哈希和计划 Creator 目录/文件名；说明 Creator 尚未导入，导入后分别回填 image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab UUID、场景引用与导入设置",
+    "评估现有 Creator 工程复用点、场景/Prefab 职责、生命周期、纹理宽度风险、性能采样项、调试与回滚；不声称代码、画面、性能或 UUID 已测试",
+    "Client Brief 与 QA Test Plan 交叉 Review 通过；仅申请示例1编码前概要审批，不包含正式编码/资源导入许可，不锁 Web 测试矩阵或性能硬阈值，不要求实体手机"
+  ],
+  "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001", "UNIT-MENU-FOUR-LAYER-CUT-001", "UNIT-MENU-SCENE1-TECH-RUNTIME-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本 Task 只覆盖示例1四层场景，不解锁七菜单其他对象或第4/7项实现。",
+    "正式编码和 Creator 资源导入须等 Client Brief 与 QA Test Plan 均通过专业 Review 并获用户批准；Web 矩阵及性能预算在运行验收前另审。",
+    "2026-10-05 18:53 +08:00：Client Owner 已实际提交本 Task 首份 Required Artifact FEATURE_BRIEF.md，Task 进入 IN_PROGRESS；余 Required 与交叉 Review 继续办理。",
+    "2026-10-05 19:07 +08:00：七项 Required 齐全，Task 五项验收与 DELIVERABLE 逐字同序 PASS，Tech/QA/Master Review APPROVED；经 REVIEW 核验后进入 USER_REVIEW。用户尚未批准，正式编码及 Creator 资源导入继续锁定。"
+  ]
+}

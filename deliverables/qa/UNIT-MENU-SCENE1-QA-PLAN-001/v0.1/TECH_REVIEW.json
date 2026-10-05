@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-QA-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已按获批 UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.2 和同阶段 Client Brief 当前稿复核 TEST_PLAN.md、CLIENT_TEST_CASES.md、VISUAL_QA_CHECKLIST.md、CLIENT_REVIEW.json 及 DELIVERABLE.json。S01–S09 均有前置、操作、预期与证据，S07/S08 的第4/7项运行只列未来接口并保持 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "技术证据要求覆盖四张 Gate2 v0.3 PNG 的稳定 ID、真实美术路径和 SHA-256、实际导入路径/hash、image 主 UUID、Texture2D/SpriteFrame 子资源 UUID、Prefab UUID、Scene 实例与导入参数；计划 Creator 路径保留 PLANNED_NOT_IMPORTED，不被当作现有资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "视差 1:1:0.8:0.3、共同倍率/原点、有效视口边界、指针/UI 隔离、重置及透明边视觉检查均能与 Client 方案相互取证。测试范围明确为 Web 多模拟手机竖屏；实体机和小游戏容器不作为本阶段门禁，也不从模拟结果外推 PASS。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "具体 Web 浏览器/视口/DPR/输入模拟矩阵、S03 最终测量容差、性能硬阈值及采样预算尚未获批准；本计划允许先定义用例和记录原始值，矩阵覆盖或性能达标必须待后续版本获批并实际执行。当前 Creator 功能、画面、纹理兼容和性能全部 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "QA DELIVERABLE.json 第5项已按已完成的双向交叉 Review 更新为方案级 PASS；Client 对本计划的 CLIENT_REVIEW.json 和 QA 对 Client Brief 的 QA_REVIEW.json 均为 APPROVED，不代表实际测试通过。"
+    }
+  ],
+  "next_action": "交 Master 独立 Review 与用户审核 QA Plan v0.1；Client Brief 亦须单独获批。Client 接入后，在运行验收前另批 Web 矩阵、测量容差与性能预算，再由 QA 执行和出 TEST_REPORT。"
+}

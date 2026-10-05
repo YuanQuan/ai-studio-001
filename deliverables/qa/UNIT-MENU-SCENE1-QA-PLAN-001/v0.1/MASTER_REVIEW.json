@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-QA-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对 TEST_PLAN.md、CLIENT_TEST_CASES.md、VISUAL_QA_CHECKLIST.md 与 Client/Tech Review。S01–S09 均对应可复核的计划用例及证据；S07/S08 的第4/7项实际运行维持 NOT_TESTED。Client 已采用独立 Lab Scene 路径，Gallery 仅导航，与测试入口说明一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前测试范围清楚限定为 Web 浏览器内多个模拟手机竖屏视口，不要求实体手机、微信/抖音容器或发布平台。具体浏览器、视口、DPR、输入模拟方式和渲染后端留待运行验收前审批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "计划区分规格覆盖审查、Creator 功能/视觉运行和性能实测；未执行测试、未生成 TEST_REPORT，不以计划 Review 冒充运行 PASS。四张图片的来源路径/hash 与计划 Creator 路径、导入后 UUID 身份链均有记录要求。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Web 矩阵、S03 最终容差、性能预算和采样方法尚未审批；相关覆盖和达标结论须保持未测，待独立审批及实际运行证据。本 Review 不授权执行测试或判运行通过。"
+    }
+  ],
+  "next_action": "将 QA Plan v0.1 提交用户审批；须与 Client Brief v0.1 一并获批后才解锁 Client 实施。Web 矩阵、S03 容差与性能预算在运行验收前另行提交审批。"
+}

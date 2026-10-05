@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 Review 范围仅为 Client Brief 与 QA Test Plan 的测试范围、预期和证据一致性。Brief 的 S01–S09 映射与 QA 用例一致；双方均将倍率/初始状态保留为候选、运行矩阵与性能阈值留待另版审批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "双方均限定示例1四层固定背景/镜头，并将 Creator 功能、视觉、性能以及 S07/S08 未来对象/组合的运行结果标为 NOT_TESTED；Web 模拟触控不被称为实体触摸测试，实体手机和小游戏容器不属于本阶段。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Client Brief 仍为待审草案。本交叉 Review 不代表用户批准、实施许可或运行质量结论；QA 计划补充逐张美术源路径/hash与实际工程导入后 UUID 的证据要求。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已复核 Client Brief 与 SCENE_PREFAB_PLAN 的更新版本：独立 Lab Scene `apps/client/assets/labs/menu/scn_unit_menu_scene1.scene` 尚未创建，UnitSamples Gallery 仅承担导航与场景切换。QA TEST_PLAN 已同步该入口；独立场景职责不改变 S01–S09 测试范围、预期或证据边界，原 APPROVED 方案一致性决定仍适用。"
+    }
+  ],
+  "next_action": "由 Client 完成其他专业 Review；Client Brief 与 QA Test Plan 分别经 Master 审阅和用户批准后才可解锁正式编码。"
+}

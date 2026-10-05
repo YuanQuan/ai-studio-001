@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-QA-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已对照同阶段草案 `deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md` 审阅 QA `TEST_PLAN.md`、`CLIENT_TEST_CASES.md` 与 `VISUAL_QA_CHECKLIST.md`。范围限定相同：只规划示例1四层固定背景、镜头、输入和资源映射；S01–S09 均对应，S07/S08 的独立对象开关/组合运行保持未来接口并标记 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "QA 用例接受 Client 提出的 zMin=1.00 几何下限、zMax=1.80 与初始 cameraX/z 候选作为待审批参数，不把候选写成已锁定值。矩阵视口、浏览器、OS、DPR、模拟触控方式、性能阈值及采样参数均保留为运行验收前另审内容；Web 浏览器的多模拟手机竖屏与实体手机测试区分清楚。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资产用例要求核 Gate2 源路径/hash、实际导入路径/hash、image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab UUID 与场景引用；没有 Creator 导入或运行证据时均不得判 PASS。视觉检查与 Client 方案没有声称实现、视觉实测或性能测试已完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次只评方案一致性，QA 草案是未获用户批准的同阶段输入。本 Review 不代表 QA 计划已获用户批准，也不授权正式编码、资源导入或运行验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已复核更新后的 QA TEST_PLAN 入口描述：独立 `apps/client/assets/labs/menu/scn_unit_menu_scene1.scene` 为待用户审批后实施的计划路径；UnitSamples Gallery 只承担导航与切换。该拓扑与 Client Brief/SCENE_PREFAB_PLAN 一致，不改变测试范围与用例预期。"
+    }
+  ],
+  "next_action": "QA Test Plan 与 Client Feature Brief 分别完成 Tech/Master Review 和用户审批后，才可进入正式编码与资源导入；Web 矩阵及性能预算在运行验收前另行审批。"
+}

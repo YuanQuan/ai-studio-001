@@ -59,3 +59,12 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 主要原因（观察与推断分开）：观察为 v0.1 缺逐件美术交付与 Cocos 正式资源双目录说明，用户明确要求后才形成 v0.2 登记和命名稿；Creator 目标路径仍为计划、UUID 待生成。推断为未来若只维护单端目录可能再次产生资源版本错配，当前尚无实际错配证据。
 - 建议：Client 在获批开工包下首次导入四张 PNG 与 Prefab 时按 `project/ASSET_HANDOFF_REGISTRY.md` 分项回填实际路径、源/目标 hash、`.meta`/子资源 UUID 和 Scene 引用；预期减少资源身份不清的返工，代价为一次逐件登记，复核节点为 Client 实施报告的 Tech/Art Review。Producer 在下一次资源交接审批前核登记中的“已存在/计划”状态和用户批准版本；预期阻止未导入路径被当成可消费资源，代价为门禁检查，复核节点为下一批正式资源入库。
 - 后续复核：WR-20261005-004 对 Client/QA 开工包和 Web 预算的建议仍待相关版本提交；本文建议待复核。
+
+### WR-20261005-006｜示例1 Client/QA 编码前开工包送审
+
+- Owner / 结果 / 证据路径 / 当前门禁：Client 与 QA 分别提交 `UNIT-MENU-SCENE1-CLIENT-BRIEF-001 v0.1`、`UNIT-MENU-SCENE1-QA-PLAN-001 v0.1`；两 Task 均 7/7 Required、五项与 Task 逐字同序 `PASS`，各自三份同版 Review `APPROVED`，Producer 核后进入 `USER_REVIEW`。证据见两 Task 的 `TASK.json`、`ARTIFACT_APPROVAL.json` 和对应 `deliverables/client/`、`deliverables/qa/` v0.1 目录；本轮无用户对两包的批准，正式编码/导入仍锁定。
+- 起止时间、时区、总耗时与已知分段：2026-10-05 18:48:35（Asia/Shanghai）记录上游 Tech v0.2 用户批准，18:51 QA 开始编制，18:53 Client 首稿和 QA 首文件落盘，19:06 QA 进入 `USER_REVIEW`，19:07 Client 进入 `USER_REVIEW`。上游批准到两包送审的记录节点相隔约 18 分 25 秒，包含并行编制、交叉 Review 和流程核验，不能当作任一角色制作耗时；各 Owner 实际作业、用户等待与 Review 分段缺精确时间，总制作耗时未知。
+- 慢的判断依据：尚无同类双包编制基线，不断定整体偏慢。可证实的一次返工是 Client `DELIVERABLE.json` 原有五项 criterion 用概括语句，未与 Task 五项逐字一致，Producer 核出后由 Client 对齐；QA 曾有六项对五项不一致，也在本轮送审前修正。修正均未改变方案范围或证据结论。
+- 主要原因（观察与推断分开）：观察为两个交付文件初稿对 Task 验收文字各有一次结构对齐缺口，且 QA 早期 `MASTER_REVIEW.json` 是自检内容，后由 Master 独立评审替换。没有精确耗时、工具故障或后续质量影响证据；推断为若在交付自检时直接引用 Task 原文，可减少送审前重复编辑。
+- 建议：Client/QA Owner 在下一次提交 `DELIVERABLE.json` 前用 Task Packet 自动或人工逐字校验 criterion 数量、顺序与内容；预期减少门禁退回，代价为一次短核验，复核节点为下一批开工包 Producer Review。Master 在写 `MASTER_REVIEW.json` 前核 reviewer 身份与独立结论，预期避免自检文件误入正式门禁，代价为一次文件检查，复核节点为下一份 Master Review。
+- 后续复核：WR-20261005-004 对 Client/QA 开工包版本化与范围核验的建议在本轮执行；是否减少等待仍证据不足。WR-20261005-005 的导入 UUID 回填建议待 Client 获批实施后复核。
