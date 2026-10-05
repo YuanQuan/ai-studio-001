@@ -24,7 +24,8 @@
     "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_REVIEW.json",
     "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/ART_REVIEW.json",
     "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/CLIENT_REVIEW.json",
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/MASTER_REVIEW.json"
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/MASTER_REVIEW.json",
+    "deliverables/master/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/MASTER_ACCEPTANCE.md"
   ],
   "acceptance": [
     "锁定四张获批 PNG 的后前层序、统一原点与同尺度导入规则，列出 SpriteFrame trim/pivot/纹理设置、UUID/哈希追踪及 2172px 宽兼容风险，不声称未运行的环境 PASS",
@@ -35,12 +36,13 @@
     "给出可供后续正式资源复用的 Cocos 路径与文件命名约定、类型前缀、字符/大小写、唯一性、版本替换与 .meta/UUID 追踪；Art、Client 对各自职责完成同版 Review"
   ],
   "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001", "UNIT-MENU-FOUR-LAYER-CUT-001", "UNIT-MENU-TECH-DESIGN-001"],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
     "用户本轮“批准”只针对切图 Gate2，不视为对性能分阶段提案、具体倍率、Client 开工包或运行质量的批准。",
     "用户已明确选择分阶段路径，并澄清现阶段只做 Web 多模拟手机分辨率测试、非实体机测试；技术稿及 Client/QA 开工包仍须按版本完成专业评审与用户审核。",
     "2026-10-05：用户反馈 v0.1 主体基本可行，但要求双目录资源说明和统一 Cocos 命名，故 v0.1 未获整版批准；保留快照并以 v0.2 修订。",
-    "2026-10-05：v0.2 九项 Required、六项验收 PASS，Tech/Art/Client/Master 同版 Review APPROVED；Producer 核验送 USER_REVIEW，尚无用户对 v0.2 的批准。"
+    "2026-10-05：v0.2 九项 Required、六项验收 PASS，Tech/Art/Client/Master 同版 Review APPROVED；Producer 核验送 USER_REVIEW，尚无用户对 v0.2 的批准。",
+    "2026-10-05：用户已明确批准 v0.2，Producer 于 18:48:35 +08:00 登记；Master 于 deliverables/master/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/MASTER_ACCEPTANCE.md 最终接受。加入接受文档后 10/10 Required 齐全，本技术方案 Task DONE；Client/QA 开工包和 Creator 运行仍各有独立门禁。"
   ]
 }
