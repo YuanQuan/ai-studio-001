@@ -6,6 +6,7 @@
 - `design-rationale`：为重要视觉产物记录设计目标、思路、取舍和世界观/产品体验依据。
 - `asset-specification`：资产拆分、尺寸、格式、层级、命名和交付规格。
 - `psd-production-and-export`：维护完整多图层 PSD 母版，在既有图层上修订，并记录拆分/合并导出映射及重组效果。
+- `bggg-creator-image2psd`：无法直接生成 PSD 时，将当前图或现有分层资源转换为 PSD，并记录源图、图层、预览对照、验证结果及编辑限制。
 - `visual-consistency-review`：对新增原画、UI 视觉和 VFX 视觉进行一致性 Review，识别风格漂移。
 - `ui-art-direction-review`：Review UI 的配色、装饰、形状、纹理和视觉语言，保持与主体美术一致；不替代 UI 交互设计。
 - `vfx-art-direction-review`：Review VFX 色彩、形态、材质、节奏和世界观一致性；不替代 VFX 性能/触发实现职责。
