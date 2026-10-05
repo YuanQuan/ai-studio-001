@@ -5,6 +5,7 @@
 - 状态：`IMPACT_REVIEW_COMPLETE / PRODUCT_USER_REVIEW`。用户指令确立目标资源及演示方式；`UNIT-MENU-SCENE1-SCOPE-001 v0.1` 已完成 Product、Art、Tech、Client、QA 与 Master 的同版评审，等待用户审批。这不等于 `UNIT-MENU-BASE-ASSET-001` v0.2 的 Art/Tech 切图 Review、第二次用户审批或 Creator 接入已完成。
 - 资源版本：`deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd` 及同目录 `layer_sources/` 四张原始 PNG。不得用旧 `UnitSamples.scene`、旧 Demo 图片或另一版校色层替换。
 - 来源权利补充：用户于 2026-10-05 明确声明拥有原图及商用改编权；这是用户声明的来源证据，不冒充独立法律核验。Art 须把声明、原图到四张生成图及 PSD 的版本链和相似性初筛纳入本资源正式交接记录。
+- 最新决定：用户于 2026-10-05 明确撤回“首屏桥与月亮同见”的要求，并指示不改动美术资源。此前短暂启动的桥月同见修订与改图预案已取消；v0.1 产品候选稿中“不要求桥与月亮同时在首帧”的表述继续适用，原 PSD 与四张 PNG 保持不变。
 
 ## 与已批准规格的差异
 
