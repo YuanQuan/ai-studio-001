@@ -1,0 +1,51 @@
+{
+  "task_id": "UNIT-MENU-PARALLAX-PREVIEW-001",
+  "owner": "master",
+  "summary": "以当前四张原始 PNG 制作隔离竖屏视差交互预览，验证 1:1:0.8:0.3 的横移、缩放、重置和 12 组视口边界；列出正式接入前的规格冲突与可能改图条件。",
+  "artifacts": [
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/index.html",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/preview.js",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_check.py",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_report.json",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/REVIEW.md",
+    "project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅读取指定四张源图并保留源文件哈希",
+      "result": "PASS",
+      "evidence": "geometry_report.json、现有 source_hashes.json"
+    },
+    {
+      "criterion": "四层前后横移比例 1:1:0.8:0.3 与统一缩放",
+      "result": "PASS",
+      "evidence": "preview.js；浏览器中心和左右拖动检查"
+    },
+    {
+      "criterion": "竖屏 720×1280 与 390×844 在 1.0/1.8 倍中心、左右极限不露出图像范围",
+      "result": "PASS",
+      "evidence": "geometry_report.json 12 组边界；stills/；浏览器两种竖屏尺寸目视"
+    },
+    {
+      "criterion": "拖动、滚轮/按钮/滑杆缩放与重置可操作",
+      "result": "PASS",
+      "evidence": "浏览器交互目视；preview.js"
+    },
+    {
+      "criterion": "双指触控与 Creator 正式运行",
+      "result": "NOT_TESTED",
+      "evidence": "尚无触控设备或正式 Creator 导入；REVIEW.md 明示边界"
+    }
+  ],
+  "assumptions": [
+    "适高视野作为最低缩放 1.0×，预览最高 1.8×；实际产品范围待 Tech/Product 确认。",
+    "本任务只对当前四层的隔离显示负责，不解释为已批准固定树、纸船等产品语义。"
+  ],
+  "risks": [
+    "桥居中首帧不见月亮；如需两者同屏，可能要调整原图构图。",
+    "当前四层包含旧空场景规格不准烘入的树和纸船，需按变更提案修订相关 Artifact。",
+    "Art/Tech 切图审查、用户第二次审批、Creator 导入及目标机性能均未完成。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "UNIT-MENU-PARALLAX-PREVIEW-001",
+  "title": "单元示例1：当前四层资源的竖屏视差与缩放隔离预览",
+  "type": "coordination",
+  "owner": "master",
+  "parent": null,
+  "objective": "按用户最新指令，以当前四层 PSD 对应的原始 PNG 为输入，验证前后 1:1:0.8:0.3 的横向视差、竖屏适配、缩放和重置；提前列出需改图的条件，不触碰正式 Creator 接入门禁。",
+  "inputs": [
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/layer_sources/",
+    "用户 2026-10-05 最新指令：单元示例1、四层比例 1:1:0.8:0.3、支持缩放、竖屏、改图前告知"
+  ],
+  "deliverables": [
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/index.html",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/preview.js",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/serve.mjs",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_report.json",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/REVIEW.md",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/DELIVERABLE.json",
+    "project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md"
+  ],
+  "acceptance": [
+    "预览只读取用户刚选的四张 PNG，四层顺序和速度系数明确，源图哈希保持不变",
+    "竖屏 720×1280 与 390×844 的中心、左右极限及 1.0/1.8 倍范围不露未绘制区域",
+    "支持拖动、滚轮或双指缩放、按钮缩放与初始视野重置，控件操作不会拖动场景",
+    "记录当前原图在竖屏的构图限制、正式资源语义冲突与潜在改图范围；不把隔离预览冒充 Creator/QA 验收"
+  ],
+  "dependencies": ["UNIT-MENU-BASE-ASSET-001", "UNIT-MENU-PRODUCT-001", "UNIT-MENU-TECH-DESIGN-001"],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "这是 Master 的隔离视窗验证，不写入 apps/client 正式资源引用，也不解除 UNIT-MENU-BASE-ASSET-001 Gate2。",
+    "用户已指定当前图组为示例1的目标场景；其内容与旧版空场景固定底板范围有差异，须依变更提案更新受影响的正式 Artifact。"
+  ]
+}
