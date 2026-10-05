@@ -82,7 +82,7 @@
 - Client Agent：主要修改 `client/`。
 - Server Agent：主要修改 `server/` 与经批准的 API 实现。
 - QA Agent：主要维护 `tests/` 和 QA 交付物。
-- Producer Agent：维护 `project/WORKFLOW_STATUS.md`、`project/MILESTONE_LOG.md`、`project/APPROVAL_LOG.md` 与 `project/dashboard/index.html`，监督依赖、审批、版本流转、关键节点和 Artifact 路径追踪。
+- Producer Agent：维护 `project/WORKFLOW_STATUS.md`、`project/MILESTONE_LOG.md`、`project/APPROVAL_LOG.md`、`project/WORK_RETROSPECTIVE_LOG.md` 与 `project/dashboard/index.html`，监督依赖、审批、版本流转、关键节点、Artifact 路径及每轮工作流程复盘。
 - Master Agent：创建/拆解正式任务、整合跨角色结果、更新必要的项目决策并向用户沟通。
 
 跨职责修改必须在任务中明确授权。
@@ -102,6 +102,8 @@ Agent 只能推动自己有权限的阶段，Producer 负责审批门禁和状�
 当用户明确授权“继续”“进入下一流程”或等价推进指令后，Master 必须在同一执行周期持续推进所有已授权且无阻塞的任务，直到遇到下一次 `USER_REVIEW`、需要用户决定的重大事项、真实 `BLOCKED`，或任务已经 `DONE`。仅创建/解锁任务、把任务标成 `READY/IN_PROGRESS`、或描述“下一步会做什么”都不是合法停止点。
 
 `IN_PROGRESS` 必须有当前执行证据：Owner 已在本轮实际开始产出或验证 Required Artifact。若尚未真正开始，状态保持 `READY`；若无法继续，必须进入 `BLOCKED` 并记录具体原因。Producer 在每次结束已授权推进前必须执行 continuity check，确认不存在仅以 `READY/IN_PROGRESS` 占位但实际无产出的可继续任务。
+
+每次有明确结果的工作执行周期结束后，Producer 必须做一次简短流程复盘：记录结果与证据、可核对的起止时间和耗时、影响速度的主要环节及原因，并给出有负责人和复核点的合理化建议。用户等待、上游依赖、实际制作、返工和工具故障应区分；没有可靠时间或因果证据时明确标为未知，不猜测耗时或归责。复盘遵守 `rules/work_retrospective.md`，不新增用户审批门禁，也不能代替既有 Review、QA 或连续执行检查。
 
 任何 Agent 不得仅凭“我做完了”把任务标记为 `DONE`。
 `DONE` 至少需要：

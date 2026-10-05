@@ -7,3 +7,4 @@
 - `milestone-traceability`：角色开工后持续记录 TASK_STARTED、Draft、Review、用户审批、Handoff、阻塞、实现完成、QA、Done 等关键节点，并对齐 Artifact 版本与真实仓库路径后同步 Dashboard。
 - `static-dashboard-publish`：把 WORKFLOW_STATUS、APPROVAL_LOG、角色产物与阻塞信息同步为 `project/dashboard/index.html` 静态可视化快照，便于用户直观查看全局进度。
 - `approval-audit`：检查是否存在漏审批、错用旧版本、未批准版本被下游引用等流程异常。
+- `work-retrospective`：每轮有结果的工作结束后，核对耗时与瓶颈证据，写简短复盘并跟踪合理化建议的复核结果。

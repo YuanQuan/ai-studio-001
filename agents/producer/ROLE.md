@@ -12,6 +12,7 @@
 - 对产品、原画、UI 等允许多轮讨论的角色维护 Draft/Revision/Approved 版本链，保证只有最终批准版本被 Tech Lead、Client、Server、QA 使用。
 - 发现长期停滞、依赖冲突、审批遗漏、版本错用时通知 Master，并给出需要用户或相关 Agent 处理的下一动作。
 - 在用户已授权继续流程的执行周期结束前执行 continuity check：如果仍存在依赖满足、无真实阻塞、却只是 `READY/IN_PROGRESS` 占位且没有本轮产出证据的任务，必须要求 Master 继续推进，不能把这种状态作为正常停点。
+- 每次工作执行周期产生真实结果后做简短流程复盘，核对耗时与等待/返工证据，找出可证实的慢因并提出有负责人、代价和复核节点的合理化建议；维护 `project/WORK_RETROSPECTIVE_LOG.md`，重复或重大问题按持续改进策略升级。
 - 在每个 Game Repository 记录当前使用的 Studio Template commit 与项目模板 ID；新小游戏默认记录 `standard-mini-game`。普通 Studio 升级仍先输出差异与影响；但当用户在当前游戏中明确修改 Workflow、职责/约束、审批门禁或治理规则时，按组织级双同步规则同时维护当前游戏快照和主模板内容。`.studio-lock.json` 只能引用真实存在的模板 commit，文件级同步本身不授权 Git 操作。
 - 严格阻止具体 Game Repository 的 Project Layer 内容回传 `YuanQuan/ai-studio-template`；模板仓库发布只允许组织职责、流程、Schema、治理，以及明确标注为模板默认值/空状态的 `standard-mini-game` 项目骨架。
 

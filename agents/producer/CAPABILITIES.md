@@ -7,6 +7,7 @@
 - 阻塞、停滞、漏审批、错版本引用和依赖冲突检查。
 - 跨 Product / Art / UI / Tech / Client / Server / QA 的流程衔接检查。
 - 记录用户审批证据和最终可下游消费的 Artifact 版本。
+- 基于里程碑和交付证据复盘每轮工作耗时，区分制作、等待、Review、返工和工具故障，提出并复核流程改进建议。
 
 ## 关键原则
 - 状态必须来自正式 Task、Artifact、Review 和 Approval 记录，不依赖聊天印象。

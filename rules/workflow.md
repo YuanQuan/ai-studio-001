@@ -40,6 +40,7 @@
 - 创建 Task、解锁依赖、进入 `READY`、进入 `IN_PROGRESS`、更新 Dashboard 或说明下一步计划，都不是合法停止点。
 - `IN_PROGRESS` 只表示 Owner 已在本轮实际开始生产/验证 Required Artifact；不得用作“以后会继续”的占位状态。未开始执行时保持 `READY`。
 - Producer 在每次准备结束本轮已授权推进前必须执行 continuity check：所有开放任务必须处于 `USER_REVIEW`、`DONE`、有具体原因的 `BLOCKED`，或有本轮真实产出证据且因工具/会话边界无法再推进；发现无阻塞的空转 `READY/IN_PROGRESS` 时必须通知 Master 继续执行。
+- 到达本轮真实结果或下一门禁后，Producer 按 `rules/work_retrospective.md` 写一条简短流程复盘，分析可证实的耗时与慢因，并提出可复核的改进动作；复盘不成为新的状态或审批门禁。
 - 该规则不允许绕过用户审批门禁；它只禁止在两个 Gate 之间无故停顿。
 
 ## 规则

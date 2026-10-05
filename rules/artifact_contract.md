@@ -104,6 +104,7 @@ Product 主导公共配置的业务表结构、字段语义、业务 ID 与关�
 流程控制至少维护：
 - `project/WORKFLOW_STATUS.md`：所有任务线当前阶段、Owner、Artifact 版本、专业 Review、用户审批、阻塞和下一动作。
 - `project/APPROVAL_LOG.md`：用户批准/退回/废弃的具体 Artifact 版本记录。
+- `project/WORK_RETROSPECTIVE_LOG.md`：每次有明确结果的工作执行周期后，按 `rules/work_retrospective.md` 简短记录耗时、可证实的慢因和合理化建议。
 - 必要的流程异常报告：漏审批、错版本引用、依赖未满足、任务长期停滞。
 
 ## 3. Artifact Gate

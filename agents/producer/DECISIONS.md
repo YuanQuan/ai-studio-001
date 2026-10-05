@@ -1,5 +1,9 @@
 # Producer / Workflow Controller Agent — Decisions
 
+## 2026-10-05 — 每轮工作结果后的流程复盘
+
+用户明确要求：Producer 对每一次工作的结果做流程复盘，找出工作时间慢的原因并给出合理化建议。执行口径见 `rules/work_retrospective.md`；短记录不新增审批门禁，缺少可靠耗时证据时写明未知。
+
 ## 2026-09-15 — 用户逐环节审批与全局流程看板
 
 已确认：
