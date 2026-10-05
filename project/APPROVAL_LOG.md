@@ -103,3 +103,11 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-02 | UNIT-MENU-UI-SPEC-001 | 七菜单、孟桃对话及共享控件UI规格 | v0.1 | deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.1/UI_SPEC.md；screens/menu-and-lab.svg；screens/mengtao-dialogue.svg；components/shared-controls.svg；ART_REVIEW.json；DELIVERABLE.json；MASTER_REVIEW.json（同目录）；tasks/UNIT-MENU-UI-SPEC-001/ARTIFACT_APPROVAL.json | USER_REVIEW（待用户决定） | 十项Required齐、五项PASS、Art/Master Review APPROVED | 旧孟桃UI仍单独待审；本版用户批准前不作为Client正式视觉输入 |
 | 2026-10-02 | UNIT-MENU-VFX-SPEC-001 | 奶茶店亮暗投影及树花灯特效规格 | v0.1 | deliverables/vfx/UNIT-MENU-VFX-SPEC-001/v0.1/VFX_SPEC.md；ASSET_REQUIREMENTS.md；PERFORMANCE_AND_CLEANUP.md；ART_REVIEW.json；DELIVERABLE.json；MASTER_REVIEW.json（同目录）；tasks/UNIT-MENU-VFX-SPEC-001/ARTIFACT_APPROVAL.json | USER_REVIEW（待用户决定） | 六项Required齐、五项PASS、Art/Master Review APPROVED；先前NOT_TESTED已在同版补评后更新 | 旧孟桃VFX仍单独待审；正式特效资源、骨骼图集及Creator实现须后续批准 |
 <!-- UNIT-MENU-NEXT-20261002 END -->
+
+## 2026-10-05 最新审批与指令
+
+| 记录时间（+08:00） | 对象 | 用户决定 | 正式记录与边界 |
+|---|---|---|---|
+| 2026-10-05 17:56:22 | `UNIT-MENU-FOUR-LAYER-CUT-001 v0.3` Gate2 | 用户在看到具体切图效果后回复“批准”；`USER_APPROVED` | `tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json`、`deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md`；只批准当前 PSD、四 PNG 与同尺度重组效果，不批准 Creator/Web 运行或性能。上文 `USER_REVIEW` 为此前时间快照。 |
+| 2026-10-05 18:00（记录） | 示例1测试与性能门禁方向 | 用户选择“分阶段推进”，随后明确现阶段为 Web 端多个模拟手机分辨率测试，不是实体手机测试 | `project/changes/CP-UNIT-MENU-WEB-TEST-GATE-002.md`、`project/DECISIONS.md#DEC-UNIT-MENU-WEB-TEST-005`；路径和范围已确定，具体视口矩阵、性能数值、Client/QA 新开工包仍待正式审批。 |
+| 2026-10-05 18:10（状态核验） | `UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.1` | 尚无用户对本技术稿的批准或退回；当前 `USER_REVIEW` | `tasks/UNIT-MENU-SCENE1-TECH-RUNTIME-001/ARTIFACT_APPROVAL.json`；5/5 Required、四项验收 PASS、Tech/Master Review APPROVED 后送用户审核。Gate2 批准和 Web 分阶段选择不替代本技术稿审批；具体倍率、Client/QA 开工包、Web 矩阵与性能预算另审。 |

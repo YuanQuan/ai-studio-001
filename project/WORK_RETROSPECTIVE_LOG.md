@@ -23,3 +23,30 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 主要原因（观察与推断分开）：观察到主模板位于当前游戏工作区之外，同步时需要单独申请文件写入权限；该步骤实际获准并完成。未发现可证实的其他慢因，不将权限检查直接归为人员效率问题。
 - 建议：Producer 在下一次组织级双同步开工前核对两个仓库的可写范围并记录起点时间；预期减少中途发现权限限制的等待，代价是一次简短预检；下一次同类变更结束时复核。
 - 后续复核：待复核。
+
+### WR-20261005-002｜四层切图动态审查访问阻塞解除
+
+- Owner / 结果 / 证据路径 / 当前门禁：Producer 记录 `UNIT-MENU-FOUR-LAYER-CUT-001` 从 `BLOCKED` 转 `REVISION`；依据 `tasks/UNIT-MENU-FOUR-LAYER-CUT-001/TASK.json`、`ARTIFACT_APPROVAL.json`、`deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/MASTER_REVIEW.json`。Gate2 未申请，Art/Tech/Master 的 v0.1 `CHANGES_REQUESTED` 保持有效。
+- 起止时间、时区、总耗时与已知分段：2026-10-05 15:58（Asia/Shanghai）记录本地预览拒绝并阻塞；约 16:35 用户允许本机预览、Master CUA 实看，阻塞解除；16:39 完成状态同步。约 37 分钟是两个记录节点的间隔，含用户授权与会话过程，不能当作 Agent 制作耗时；具体制作/等待分段未知。
+- 慢的判断依据：尚无同类动态审查基线；可证实的关键路径等待是本地预览曾被浏览器策略拒绝，导致动态证据不能采集。
+- 主要原因（观察与推断分开）：观察为浏览器策略曾拒绝 `127.0.0.1:8765`，用户明确允许后 Master CUA 可访问；推断为访问门禁使 v0.1 动态验收保留 `NOT_TESTED`。现在仍缺可持久追溯的新证据，不能据主线程观察追认旧 Review。
+- 建议：Master 与 Art 在下一次 Gate2 动态审查前先确认当前预览入口可访问，并把两竖屏视口、倍率端点、连续拖缩/复位的可复验画面归档到对应版本；预期减少审查中途阻断与重复观看，代价是额外取证和存储，复核节点为本 Task 下一版 Art/Tech 正式 Review。
+- 后续复核：待复核。
+
+### WR-20261005-003｜单元示例1切图直接交用户审核
+
+- Owner / 结果 / 证据路径 / 当前门禁：Master 与 Producer 按用户最新流程决定同步当前游戏与主模板规则，形成 `deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md`；PSD/四 PNG 哈希复核一致，Task 到 `USER_REVIEW`。本轮没有 Gate2 用户批准。
+- 起止时间、时区、总耗时与已知分段：本轮开始时间未可靠记录；2026-10-05 17:43（Asia/Shanghai）已开始文件级规则同步，17:45 形成当前审核包。上述节点不覆盖整个执行周期，总耗时及用户等待时间未知。
+- 慢的判断依据：用户明确指出切图效果的专业复审和额外预览环境并非其所需交接方式；此前 v0.1 因动态预览证据进入返工，属于可证实的流程路径变化，不推断人员效率。
+- 主要原因（观察与推断分开）：观察为旧规则把 Art/Tech/Master Review 设在用户审核之前，用户现要求亲自看具体结果；迁移时保留旧评审历史并核对源文件。未测量旧流程与新流程的平均耗时。
+- 建议：Producer 在下一批自行切图 Task 建立时直接使用新门禁，并于首次 Gate2 用户审核后复核是否减少无效等待；负责人 Producer，风险是技术问题延至接入阶段，届时由 Tech/Client/QA 记录并返工。复核节点为本任务 Gate2 决定及后续 Creator 实测。
+- 后续复核：待复核。
+
+### WR-20261005-004｜示例1 Gate2 批准与 Web 接入技术稿送审
+
+- Owner / 结果 / 证据路径 / 当前门禁：用户批准 `UNIT-MENU-FOUR-LAYER-CUT-001 v0.3` Gate2，Master 接受该切图任务；Tech Lead 提交 `UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.1`，5/5 Required、四项验收 PASS，Tech/Master Review APPROVED；Producer 核验后送 `USER_REVIEW`。证据：两任务的 `TASK.json`、`ARTIFACT_APPROVAL.json`，`deliverables/master/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/ACCEPTANCE.md` 和 `deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/`。技术稿尚未获得用户批准，Creator/Web 实际运行与性能为 `NOT_TESTED`。
+- 起止时间、时区、总耗时与已知分段：2026-10-05 17:56:22（Asia/Shanghai）记录 Gate2 用户决定；18:00 为用户 Web 范围决定及 Tech 开工的约时记录；18:09:20 开始本次 Producer 文件核验，18:10 记录 `USER_REVIEW` 节点。此前 Tech 实际编制及专业 Review 的精确起止时间、用户等待时间均未知，整个授权周期总耗时未知；不能把上述节点间隔视作制作耗时。
+- 慢的判断依据：尚无同类接入技术稿时长基线；本轮未发现可证实的慢因。已观察到旧 Tech v0.2 的实体机硬门禁与用户最新 Web 模拟分辨率范围冲突，需要版本化技术增量和后续 Client/QA 开工包修订；这是范围澄清后的必要迁移，不归责人员。
+- 主要原因（观察与推断分开）：观察为用户直接批准具体切图并明确分阶段 Web 测试，Tech v0.1 已逐项列出旧条款冲突和待审预算；无工具故障或返工耗时证据。推断为若下游继续引用旧实体机措辞可能重复阻塞；尚未发生下游开工，不能记为已造成延误。
+- 建议：Producer 在 Client/QA 下一版开工包 Review 时逐项核对 `DEC-UNIT-MENU-WEB-TEST-005` 与 Tech v0.1 审批状态，预期避免错用实体机门禁；代价为一次短门禁核验，风险是技术稿若被用户退回须重核依赖；复核节点为 Client/QA 开工包提交。Tech Lead 在运行验收前给出可复验 Web 视口矩阵与数值预算供用户另审，预期减少 QA 临时补条件的返工；代价是需锁定浏览器/视口/采样口径，复核节点为 Web 预算 USER_REVIEW。
+- 后续复核：WR-20261005-003 的直接交用户审核已达成 Gate2 用户决定；其是否减少平均等待仍证据不足。本文两项建议待复核。

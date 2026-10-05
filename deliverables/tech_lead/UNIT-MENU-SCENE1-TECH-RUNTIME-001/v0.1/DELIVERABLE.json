@@ -1,0 +1,42 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "owner": "tech_lead",
+  "summary": "提交示例1已批准四层切图的 Creator Web 接入技术规格及实体机旧门禁向 Web 多模拟手机分辨率分阶段路径迁移的影响分析；只确认方案可供 Master 和用户审核，运行与性能未测。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/TECH_RUNTIME_SPEC.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/PERFORMANCE_GATE_IMPACT.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/TECH_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "锁定四张获批 PNG 的后前层序、统一原点与同尺度导入规则，列出 SpriteFrame trim/pivot/纹理设置、UUID/哈希追踪及 2172px 宽兼容风险，不声称未运行的环境 PASS",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第2节给出文件路径、SHA-256、2172×724、层序、Creator 导入核对字段与风险；第5节明确运行 NOT_TESTED。"
+    },
+    {
+      "criterion": "给出竖屏有效视口中的四层 1:1:0.8:0.3 水平位移、统一缩放、左右边界、重置和 UI 触控优先级的可实现契约；候选 1.0–1.8 倍与正式批准范围分开",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第3–4节给出有效视口、cover 与相机公式、逐层比值及建议测量容差、输入优先级和生命周期；正式 zMax/初视野由后续 Client FEATURE_BRIEF 明示并经用户审批。"
+    },
+    {
+      "criterion": "对照已批 Tech v0.2 标出实体机条款与最新用户指令的冲突；采用已获用户明确选择的分阶段路径，定义当前 Web 多模拟手机分辨率测试与后续性能预算审批边界，不填写虚构实体机、阈值或 PASS",
+      "result": "PASS",
+      "evidence": "PERFORMANCE_GATE_IMPACT.md 第1节逐条列出旧版冲突，第2节按场景方案、Web 矩阵预算、QA 结论划分门禁；依据 DEC-UNIT-MENU-WEB-TEST-005；无虚构机型/硬阈值。"
+    },
+    {
+      "criterion": "说明后续 Client Feature Brief、正式接入、Creator 截图录屏及 QA 在何种批准/实测之后才能分别开始或判 PASS，不改美术源或运行代码",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第5节与 PERFORMANCE_GATE_IMPACT.md 第2–3节逐阶段写出批准与证据要求；本任务只新增文档/结构化交付，未改美术或运行代码。"
+    }
+  ],
+  "assumptions": [
+    "示例1现阶段验收限于 Web 端多个模拟手机分辨率；实体手机及微信/抖音容器另立后续范围。",
+    "初始 cameraX=0、z=1 和 zMax=1.8 只是用于后续 Creator 取证的候选，不代表用户已批准最终画面与倍率。"
+  ],
+  "risks": [
+    "既有 Tech v0.2 和旧 Client/QA 开工包含实体机硬门禁语句；本 v0.1 获批后可作为示例1限定范围正式技术增量覆盖旧 Tech 冲突条款，Client/QA 仍须各自更新开工包并获用户审批。",
+    "2172 像素宽纹理、天空右侧 1 像素透明、半透明边及约 23.99 MiB 基础 RGBA8 面积均未在 Creator Web 环境实测。",
+    "具体 Web 浏览器/视口/DPR/渲染后端、性能硬阈值及允许降级尚未确定，运行验收前必须另审。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

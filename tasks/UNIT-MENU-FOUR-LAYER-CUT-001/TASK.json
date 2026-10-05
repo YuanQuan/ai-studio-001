@@ -35,13 +35,14 @@
     "用户对具体版本明确批准前不交 Client 正式 Creator 接入；竖屏连续拖缩、纹理与目标设备效果在接入和 QA 阶段另行验证，未测项不得判通过"
   ],
   "dependencies": ["UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001", "UNIT-MENU-SCENE1-SCOPE-001"],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
     "先复用当前 PSD 和已经存在的全画布层图/重组图，不重新生成或修补。只读检查、截图/录屏和文档可作为审阅证据；若实测表明必须改像素，立即停下并向用户提前呈具体范围与效果。",
     "旧空固定底板资源 Task 与此图组语义不同，不继承其 Gate1/Gate2。候选网页预览可作为动态检查的隔离证据，但不冒充 Creator 或设备。",
     "2026-10-05：静态同源、切图清单、同尺度重组已完成；动态可复验视觉证据因浏览器安全策略拒绝 127.0.0.1 预览而缺失。Art/Tech/Master 三方 v0.1 Review 均 CHANGES_REQUESTED；Gate2 不申请，源图不改。",
     "2026-10-05：用户明确允许本机 127.0.0.1:8765 仅用于示例1四层预览审查，Master 已通过 CUA 访问并实看两种竖屏、1.0/1.8 倍及左右端拖动画面，原浏览器访问阻塞解除。Art 正独立复核；尚无可持久追溯的新动态证据或 v0.2 正式 Review，故本任务从 BLOCKED 转 REVISION，保留 v0.1 CHANGES_REQUESTED，不推定任何验收 PASS。",
-    "2026-10-05：用户最新指令取消切图效果专业复审和额外预览环境门禁，现有用户提供 PSD/PNG 直接提交 v0.3 实际结果；旧评审保留历史。当前仅等待用户 Gate2 审核，未获批准前 Client 正式接入关闭。"
+    "2026-10-05：用户最新指令取消切图效果专业复审和额外预览环境门禁，现有用户提供 PSD/PNG 直接提交 v0.3 实际结果；旧评审保留历史。",
+    "2026-10-05：Master 展示 v0.3 具体重组图及 PSD/PNG 链接后，用户回复“批准”；Producer 记录本批 Gate2 USER_APPROVED，Master 接受本切图审核任务。Client 仍须取得自身开工包批准后才能正式编码，Creator/设备/QA 仍未验。"
   ]
 }
