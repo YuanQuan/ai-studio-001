@@ -20,7 +20,8 @@
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json",
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
-    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json"
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_ACCEPTANCE.md"
   ],
   "acceptance": [
     "实现范围仅为已批示例1四层固定背景、镜头、拖拽/缩放/重置及 Lab 控件隔离；逐项映射 S01–S09 并明确第4/7项接口只保留边界、不在本 Task 实现",
@@ -30,12 +31,13 @@
     "Client Brief 与 QA Test Plan 交叉 Review 通过；仅申请示例1编码前概要审批，不包含正式编码/资源导入许可，不锁 Web 测试矩阵或性能硬阈值，不要求实体手机"
   ],
   "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001", "UNIT-MENU-FOUR-LAYER-CUT-001", "UNIT-MENU-SCENE1-TECH-RUNTIME-001"],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
     "本 Task 只覆盖示例1四层场景，不解锁七菜单其他对象或第4/7项实现。",
     "正式编码和 Creator 资源导入须等 Client Brief 与 QA Test Plan 均通过专业 Review 并获用户批准；Web 矩阵及性能预算在运行验收前另审。",
     "2026-10-05 18:53 +08:00：Client Owner 已实际提交本 Task 首份 Required Artifact FEATURE_BRIEF.md，Task 进入 IN_PROGRESS；余 Required 与交叉 Review 继续办理。",
-    "2026-10-05 19:07 +08:00：七项 Required 齐全，Task 五项验收与 DELIVERABLE 逐字同序 PASS，Tech/QA/Master Review APPROVED；经 REVIEW 核验后进入 USER_REVIEW。用户尚未批准，正式编码及 Creator 资源导入继续锁定。"
+    "2026-10-05 19:07 +08:00：七项 Required 齐全，Task 五项验收与 DELIVERABLE 逐字同序 PASS，Tech/QA/Master Review APPROVED；经 REVIEW 核验后进入 USER_REVIEW。用户尚未批准，正式编码及 Creator 资源导入继续锁定。",
+    "2026-10-05 19:19:20 +08:00：Producer 登记用户对 v0.1 的明确‘批准继续’；Master 最终接受见 deliverables/master/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/MASTER_ACCEPTANCE.md。加入接受文件后 8/8 Required 齐全，本编码前概要 Task DONE；仅解锁示例1正式实现与四 PNG 导入，不表示实现完成或 QA 运行门禁打开。"
   ]
 }

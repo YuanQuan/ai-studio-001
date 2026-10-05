@@ -68,3 +68,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 主要原因（观察与推断分开）：观察为两个交付文件初稿对 Task 验收文字各有一次结构对齐缺口，且 QA 早期 `MASTER_REVIEW.json` 是自检内容，后由 Master 独立评审替换。没有精确耗时、工具故障或后续质量影响证据；推断为若在交付自检时直接引用 Task 原文，可减少送审前重复编辑。
 - 建议：Client/QA Owner 在下一次提交 `DELIVERABLE.json` 前用 Task Packet 自动或人工逐字校验 criterion 数量、顺序与内容；预期减少门禁退回，代价为一次短核验，复核节点为下一批开工包 Producer Review。Master 在写 `MASTER_REVIEW.json` 前核 reviewer 身份与独立结论，预期避免自检文件误入正式门禁，代价为一次文件检查，复核节点为下一份 Master Review。
 - 后续复核：WR-20261005-004 对 Client/QA 开工包版本化与范围核验的建议在本轮执行；是否减少等待仍证据不足。WR-20261005-005 的导入 UUID 回填建议待 Client 获批实施后复核。
+
+### WR-20261005-007｜示例1双开工包批准与 Client 实施启动
+
+- Owner / 结果 / 证据路径 / 当前门禁：用户明确“批准继续”Client Brief 与 QA Plan v0.1；Producer 登记两份 `ARTIFACT_APPROVAL.json`，Master 分别最终接受，两 Task `DONE`。新 `UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001 v0.1` 五依赖均 USER_APPROVED/DONE，Client 已实际复制四张 Gate2 PNG 至批准目标路径且四目标 SHA-256 与登记表相同，Task 进入 `IN_PROGRESS`。证据见三 Task Packet、两份 `deliverables/master/.../v0.1/MASTER_ACCEPTANCE.md`、`project/ASSET_HANDOFF_REGISTRY.md` 与四目标 PNG。本轮只解锁实现，Web 矩阵/预算与 QA 正式运行仍待审批。
+- 起止时间、时区、耗时：用户回复的精确时间未知；Producer 于 2026-10-05 19:19:20（Asia/Shanghai）登记批准，19:22:11 核两份 Master 接受与新 Task READY，Client Owner 记录 19:24 已有四 PNG 实产，Producer 于 19:26:12 核实。批准登记至首项实产节点相隔约 4 分 40 秒，包含任务包/接受核验及 Owner 工作，不能解释为 Client 制作时长；实际导入、专业 Review、用户等待和本实施 Task 总耗时均未知。
+- 慢的判断依据与原因：没有同类 Creator 接入基线，也没有本轮可证实的阻塞或返工，暂不判定慢。可观察到登记表正确区分真实美术源与计划 Creator 路径，首批复制哈希一次一致；真实 `.meta`/UUID 尚待 Editor 生成，不能从图片复制推断导入完成。
+- 建议与复核：Client Owner 在 Creator 实际导入后逐件回填 `.meta`、主/子 UUID、设置、目标 hash 与 Scene 引用；预期减少资产身份错配，代价为逐项登记，复核点为实施包 Art/Tech Review。Producer 在实施包送 `USER_REVIEW` 前核实这些值来自真实 Editor 文件和项目登记，并逐项区分 `PASS`/`NOT_TESTED`；预期避免计划态冒充验收，代价为一次身份链检查，复核点为本实施 Task 门禁。
+- 后续复核：WR-20261005-006 的验收原文逐字检查已用于两包结案核验；是否减少返工尚无后续样本。WR-20261005-005 的 UUID 回填建议在本 Task 实施后复核。

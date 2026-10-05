@@ -1,0 +1,59 @@
+{
+  "id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "title": "单元示例1四层背景 Creator 正式接入",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "依据已获用户批准的 Product S01–S09、Gate2 v0.3、Tech Runtime v0.2、Client Brief v0.1 与 QA Plan v0.1，在 Cocos Creator 3.8.8 中正式导入四张获批全画布 PNG，建立共享 STREET_BASE_01 Prefab、独立示例1 Lab Scene、镜头/输入与控件，并提供实现报告和可复核证据。",
+  "inputs": [
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md 与 tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json（Gate2 USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md、PERFORMANCE_GATE_IMPACT.md、RESOURCE_PATH_AND_NAMING_SPEC.md（USER_APPROVED）",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/v0.1/（USER_APPROVED；审批见 tasks/UNIT-MENU-SCENE1-CLIENT-BRIEF-001/ARTIFACT_APPROVAL.json）",
+    "deliverables/qa/UNIT-MENU-SCENE1-QA-PLAN-001/v0.1/（USER_APPROVED；仅作为实施可测性输入，不授权 QA 运行）",
+    "project/ASSET_HANDOFF_REGISTRY.md（双目录、哈希、稳定 ID 与命名事实源）",
+    "apps/client/ 当前 Cocos Creator 3.8.8 工程"
+  ],
+  "deliverables": [
+    "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png 与 Creator 生成的 .meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png 与 Creator 生成的 .meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png 与 Creator 生成的 .meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l04_foreground.png 与 Creator 生成的 .meta",
+    "apps/client/assets/units/background/prefabs/pf_street_base_01.prefab 与 Creator 生成的 .meta",
+    "apps/client/assets/labs/menu/scn_unit_menu_scene1.scene 与 Creator 生成的 .meta",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts 与 Creator 生成的 .meta",
+    "apps/client/assets/UnitSampleGallery.ts（仅新增示例1独立场景的导航/切换）",
+    "project/ASSET_HANDOFF_REGISTRY.md（实际导入路径、hash、设置、UUID 与引用链回填）",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/ART_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/MASTER_ACCEPTANCE.md"
+  ],
+  "acceptance": [
+    "逐字节从 Gate2 v0.3 复制四张 2172×724 RGBA 全画布 PNG 到获批计划路径，逐件源/目标 SHA-256 相同；由 Creator 生成真实 .meta，分别登记 image 主 UUID、Texture2D 与 SpriteFrame 子 UUID、子资源键、导入设置和实际工程路径；母版与审核合成图不导入，不裁切、调色、压缩替换或重绘图像。",
+    "创建 STREET_BASE_01 共用背景 Prefab 与独立 apps/client/assets/labs/menu/scn_unit_menu_scene1.scene；四层按后到前 `[0.3,0.8,1.0,1.0]` 系数顺序显示，保持相同 2172×724 画布、原点、居中锚点与几何尺度；Lab 控件留在 Scene，不放入正式背景 Prefab；UnitSampleGallery 只增加导航/切换。",
+    "实现已批准 `{zMin:1.00,zMax:1.80,cameraX0:0,z0:1.00}` 镜头参数与 Tech v0.2 覆盖、视差、水平边界和统一缩放公式；实现水平拖动、缩放、重置、Web 鼠标/模拟触控共用状态、UI 捕获优先、手势取消、视口/DPR 变化重算及退出再进入复位。",
+    "画面只包含批准的四层固定背景和隔离 Lab 控件，不添加店铺、角色、顾客、板凳、第4项独立对象、第7项组合内容或跨单元通用相机框架；不改动 UnitSamples 以外的既有样例或服务端/API。",
+    "更新项目资源登记表为真实导入状态，逐件保留美术路径/hash、Creator 实际路径/hash、稳定 ID、尺寸、导入参数、Creator 版本/commit、image/Texture2D/SpriteFrame UUID、Prefab UUID、Scene 引用和受影响复用边界；四张资源与 Prefab 的正式身份链无空缺或伪造值。",
+    "实现报告记录变更范围、场景/Prefab职责、回滚方式、代码及工程检查、Creator/Web 可复验构建或编辑器打开证据；可执行的实现级冒烟验证逐项记录结果和证据，无法实际验证项如实 NOT_TESTED/BLOCKED，不宣称性能或多分辨率 QA PASS；不得运行正式 QA 用例或生成 TEST_REPORT。",
+    "Art、Tech Lead、QA 对本版实际资源映射、技术实现与测试可测性分别完成同版专业 Review，Master Review 与最终接受齐全；只有专业 Review 通过后提交用户审核，不将本 Task 标 DONE。"
+  ],
+  "dependencies": [
+    "UNIT-MENU-SCENE1-SCOPE-001",
+    "UNIT-MENU-FOUR-LAYER-CUT-001",
+    "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+    "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
+    "UNIT-MENU-SCENE1-QA-PLAN-001"
+  ],
+  "status": "IN_PROGRESS",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户于 2026-10-05 明确批准 Client Brief 与 QA Plan v0.1 并要求继续；允许本 Task 对示例1进行正式编码与四 PNG 导入。",
+    "实施范围仅示例1；QA 执行门禁尚未打开。Web 模拟视口/浏览器/DPR矩阵、S03最终容差与性能预算仍须在运行验收前另行 USER_REVIEW。",
+    "Creator 必须真实生成资源 .meta/UUID；若 Creator 导入能力不可用或生成证据无法验证，报告阻塞并停止伪造导入状态。",
+    "2026-10-05 19:24 +08:00：Client Owner 已将 Gate2 四张 PNG 实际复制到批准的 Creator 目标纹理目录，Producer 核目标 SHA-256 与登记表逐项一致；据首项 Required 实产记录 TASK_STARTED，Task 由 READY 转 IN_PROGRESS。Creator .meta/UUID、Prefab/Scene/代码和运行结果仍待实际验证。"
+  ]
+}
