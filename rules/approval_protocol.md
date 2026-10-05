@@ -6,6 +6,8 @@
 
 `DRAFT -> PROFESSIONAL_REVIEW -> USER_REVIEW -> USER_APPROVED`
 
+本组织 Agent 自行切图或采用用户提供的 PSD/导出 PNG 时，切图效果 Artifact 在执行 Agent 完成文件与重组核对后可由 `DRAFT` 直接进入 `USER_REVIEW`；`PROFESSIONAL_REVIEW` 不是该环节的门禁。
+
 若用户要求修改：
 
 `USER_REVIEW -> REVISION -> DRAFT -> PROFESSIONAL_REVIEW -> USER_REVIEW`

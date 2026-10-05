@@ -17,7 +17,7 @@
 - `READY`：输入、依赖和验收标准足够，可以开始。
 - `IN_PROGRESS`：Owner 正在执行。
 - `REVIEW`：Owner 已提交交付物，等待专业 Review。
-- `USER_REVIEW`：专业 Review 已通过，等待用户确认当前 Artifact 版本。
+- `USER_REVIEW`：专业 Review 已通过，或符合自行切图直接交用户审核的明确例外，等待用户确认当前 Artifact 版本。
 - `REVISION`：用户或专业 Review 要求修改，Owner 正在准备新版本；旧版本必须保留可追溯。
 - `INTEGRATION`：多个已获用户批准的交付物正在合并、联调或接入。
 - `QA`：进入正式验证与回归。
