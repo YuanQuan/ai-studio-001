@@ -1,0 +1,29 @@
+{
+  "id": "UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001",
+  "title": "单元示例1当前四层 PSD 的技术只读预审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": null,
+  "objective": "核当前四层源和竖屏视差预览的尺寸、alpha、贴图面积、视口与缩放/拖动边界，给出 Cocos Creator 正式接入前的预算与实测清单；本任务不接入 Creator、不修改图片、不冒充 Gate2 生产 Review。",
+  "inputs": [
+    "deliverables/art/moonlit_psd_20261005_v2_raw/",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md",
+    "用户 2026-10-05 要求竖屏、四层前后 1:1:0.8:0.3、支持缩放"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_ASSESSMENT.md",
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "核实际像素尺寸、图层对应/哈希、透明像素范围和可复核的解码贴图面积",
+    "验证 720×1280 与至少一种手机竖屏比例在中心/左右极限和候选缩放范围是否露白，指明算法与剩余运行风险",
+    "列出正式 Creator 接入所需的输入、资源 UUID/格式/图集/内存/设备检查及不可由静态预览替代的证据",
+    "明确用户指定速度比例的工程表达与同步缩放；不编辑源图，不虚称 Creator 或真机测试"
+  ],
+  "dependencies": ["UNIT-MENU-TECH-DESIGN-001"],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": ["只读技术预审可与产品修订草稿并行，隔离预览仅作候选证据；正式 Gate2 生产 Review 待具体资源版本和已批规格另行完成。"]
+}

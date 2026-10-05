@@ -75,6 +75,7 @@ def main() -> None:
     # Stills match the browser's layer order and camera formula. They omit UI controls.
     g = geometry(720, 1280, 1)
     render(images, 720, 1280, 1, 0, HERE / "stills" / "portrait_720_center.png")
+    render(images, 720, 1280, 1, 500, HERE / "stills" / "portrait_720_midright.png")
     render(images, 720, 1280, 1, -g["max_camera_x"], HERE / "stills" / "portrait_720_left.png")
     render(images, 720, 1280, 1, g["max_camera_x"], HERE / "stills" / "portrait_720_right.png")
     render(images, 390, 844, 1, 0, HERE / "stills" / "portrait_390_center.png")

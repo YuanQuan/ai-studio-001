@@ -5,37 +5,32 @@
   "artifacts": [
     "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/index.html",
     "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/preview.js",
-    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_check.py",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/serve.mjs",
     "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_report.json",
-    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/",
     "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/REVIEW.md",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/DELIVERABLE.json",
     "project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md"
   ],
   "acceptance_results": [
     {
-      "criterion": "仅读取指定四张源图并保留源文件哈希",
+      "criterion": "预览只读取用户刚选的四张 PNG，四层顺序和速度系数明确，源图哈希保持不变",
       "result": "PASS",
-      "evidence": "geometry_report.json、现有 source_hashes.json"
+      "evidence": "preview.js、geometry_report.json、现有 source_hashes.json；四张源图 SHA-256 与 PSD 输入一致。"
     },
     {
-      "criterion": "四层前后横移比例 1:1:0.8:0.3 与统一缩放",
+      "criterion": "竖屏 720×1280 与 390×844 的中心、左右极限及 1.0/1.8 倍范围不露未绘制区域",
       "result": "PASS",
-      "evidence": "preview.js；浏览器中心和左右拖动检查"
+      "evidence": "geometry_report.json 的 12 组边界、stills/ 及两种竖屏尺寸的浏览器目视；这只覆盖候选网页预览范围。"
     },
     {
-      "criterion": "竖屏 720×1280 与 390×844 在 1.0/1.8 倍中心、左右极限不露出图像范围",
+      "criterion": "支持拖动、滚轮或双指缩放、按钮缩放与初始视野重置，控件操作不会拖动场景",
       "result": "PASS",
-      "evidence": "geometry_report.json 12 组边界；stills/；浏览器两种竖屏尺寸目视"
+      "evidence": "preview.js 实现四层同尺度与 1:1:0.8:0.3 横移、拖动/滚轮/双指/按钮缩放及重置；浏览器实际检查拖动、缩放控件和重置。触摸设备双指手势尚未实测。"
     },
     {
-      "criterion": "拖动、滚轮/按钮/滑杆缩放与重置可操作",
+      "criterion": "记录当前原图在竖屏的构图限制、正式资源语义冲突与潜在改图范围；不把隔离预览冒充 Creator/QA 验收",
       "result": "PASS",
-      "evidence": "浏览器交互目视；preview.js"
-    },
-    {
-      "criterion": "双指触控与 Creator 正式运行",
-      "result": "NOT_TESTED",
-      "evidence": "尚无触控设备或正式 Creator 导入；REVIEW.md 明示边界"
+      "evidence": "REVIEW.md 和 project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md 明示竖屏取景、树/纸船冲突、改图触发与 Creator/QA NOT_TESTED。"
     }
   ],
   "assumptions": [
@@ -45,7 +40,7 @@
   "risks": [
     "桥居中首帧不见月亮；如需两者同屏，可能要调整原图构图。",
     "当前四层包含旧空场景规格不准烘入的树和纸船，需按变更提案修订相关 Artifact。",
-    "Art/Tech 切图审查、用户第二次审批、Creator 导入及目标机性能均未完成。"
+    "触摸设备双指手势、Art/Tech 切图审查、用户第二次审批、Creator 导入及目标机性能均未完成。"
   ],
   "status": "READY_FOR_REVIEW"
 }

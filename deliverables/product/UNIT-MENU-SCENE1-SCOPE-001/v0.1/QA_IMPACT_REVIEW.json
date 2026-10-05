@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "S01–S09 均给出可观察的未来判定条件与最低证据；S03 还要求 Tech 锁定相同拖动路径、位置测量方法和像素容差，S04–S06 要覆盖边界、倍率、重置与 UI 输入隔离。此评审只确认产品验收设计具备可测试性，不是运行测试 PASS。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "现有 UNIT-MENU-QA-PREBUILD-001 v0.1 仍以旧 Product v0.2 为依据，Q03、Q04、V01 要求第1项底板没有固定树/灯，与本稿 S02、S07 的固定景物定义冲突；其审批状态仍为 DRAFT/REVISION。新产品版获得用户批准后，正式编码前须按 S01–S09 提交对应 QA 补充 TEST_PLAN、CLIENT_TEST_CASES 和视觉取证点，与 Client 开工包一起审批，不能沿用旧判据给第1项判 PASS。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "网页隔离预览及 geometry_report.json 仅支持 720×1280、390×844 在候选 1.00–1.80 倍下的数学图像覆盖与有限浏览器观察。当前四层切图 Gate2 用户审批、Creator 导入与真实运行、鼠标完整操作矩阵、双指触控、目标设备及安全区、正式视觉与性能测量均为 NOT_TESTED；不得把预览截图作为 S01、S03–S06、S09 的最终通过证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "S07 与 S08 明确属于暂缓的第4和第7项接口验收：本次仅检查固定景物资产清单及后续复用契约，未来开关和组合运行保持 NOT_TESTED，不应阻塞只制作第1项时的独立阶段结论，也不能提前标记通过。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "正式执行前仍需在获批开工包锁定 FUNCTIONAL 的固定 Web 环境、目标设备是否作为本任务额外范围、至少一种不同竖屏比例的设备/视口、触控取证方式，以及适用性能预算、阈值和测量方法；现有 QA 开工包正因机型与性能门禁未锁而处 REVISION。缺构建、设备或阈值时相应结果为 NOT_TESTED/BLOCKED，不能以 N/A 或网页流畅代替。"
+    }
+  ],
+  "next_action": "请 Master 汇总同版跨角色 Review 并提交本产品增量供用户审批。获批后由 QA 在正式编码前修订第1项 TEST_PLAN、CLIENT_TEST_CASES 与 Visual QA 取证；待具体四层切图版本取得 Art/Tech Review 和第二次用户审批、Creator 构建与测试环境具备后，分别执行功能、视觉、性能及获批范围内的设备验证。"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同意 Product v0.1 对第1项固定四层场景与第4、7项独立对象的边界修订；S03 将用户指定前到后 1:1:0.8:0.3 作为可观测水平位移关系，S04–S06 将竖屏拖缩、无露底、重置和 UI 隔离列为后续运行验收，未把隔离预览记为正式 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "技术只读预审对 2172×724 源坐标、720×1280 与 390×844 视口、相对适高 1.0/1.8 倍的左中右 12 组数学覆盖成立；720×1280、1.0 倍初视野仅约 407.25 源像素宽，Product 不要求桥与月亮同屏首帧，符合当前画幅。倍率 1.0–1.8 仍只是候选。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "旧 Tech v0.2 的 STREET_BASE_01 空背景/可切换树灯分层和旧入口描述与新固定物语义冲突。Product 新稿获用户批准后，须由 Tech 修订正式同源资源与镜头/遮挡契约、由 Art 更新固定与独立资产清单，Client/QA 只消费批准版本；当前技术影响 Review 不代替这些正式规格或切图 Gate2。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "四张源图按 RGBA8 展开基础量约 23.99 MiB，透明过绘与 2172 像素宽纹理的设备兼容性待 Creator 和目标机确认。Tech/Client 须在正式运行视口含安全区条件下锁定倍率/边界及 S03 的坐标空间、测量容差，并检查天空少 1 像素及 alpha 过滤边。"
+    }
+  ],
+  "next_action": "Product 保留此 v0.1 供 Master 汇总专业 Review 后呈用户审批；用户批准后 Tech 将已批产品语义写入修订技术契约，Art/Tech 完成具体资源版本切后实图和同尺度重组 Review，再提交该资源版本的用户 Gate2 审批。正式 Creator 导入和目标设备数据在后续 Client/QA 阶段取证；任何需要改 PNG/PSD 的方案先告知用户区域和视觉影响。"
+}

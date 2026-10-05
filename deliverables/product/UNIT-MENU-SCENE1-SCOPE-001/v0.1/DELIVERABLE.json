@@ -1,0 +1,56 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "owner": "product",
+  "summary": "提交单元示例1采用当前四层场景的产品增量、未来运行验收及已批准 v0.2 的变更影响；同版专业与 Master Review 已通过，仍待用户审批，不代表图片、Creator 或目标设备通过。",
+  "artifacts": [
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "新稿明确指定当前四层源版本及用途，保留旧 v0.2 的历史审批，不把本次候选稿写成已获用户批准",
+      "result": "PASS",
+      "evidence": "PRODUCT_DELTA.md 第1节及 CHANGE_IMPACT.md 引用已批 v0.2 和当前源路径；本版处于 USER_REVIEW，待用户审批。"
+    },
+    {
+      "criterion": "第1项以竖屏为准，写明前到后四层 1:1:0.8:0.3 的水平视差、缩放、重置及不露白验收；缩放 1.0–1.8 仅标为已验证候选范围",
+      "result": "PASS",
+      "evidence": "PRODUCT_DELTA.md 第1–2节；ACCEPTANCE.md S01–S06。"
+    },
+    {
+      "criterion": "对旧 A03 的树、右侧灯廊和纸船冲突给出明确覆盖关系，并说明未来第4项可切换元素及第7项组合场景如何避免重复烘入",
+      "result": "PASS",
+      "evidence": "PRODUCT_DELTA.md 第3节；CHANGE_IMPACT.md 第1节；ACCEPTANCE.md S02、S07–S08。"
+    },
+    {
+      "criterion": "列出何时必须改图、何时仅需改程序或规格；任何图像编辑前必须告知用户，不在本任务改动当前图像",
+      "result": "PASS",
+      "evidence": "PRODUCT_DELTA.md 第4节及 CHANGE_IMPACT.md 第3节；本提交仅含 Product 文档与元数据。"
+    },
+    {
+      "criterion": "Product、Art、Tech、Client、QA 与 Master 对同一版本的影响或最终 Review 齐备，未验证项如实标 NOT_TESTED；提交用户审阅后才可成为下游正式输入",
+      "result": "PASS",
+      "evidence": "同版六份 Review 均为 APPROVED：deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_REVIEW.json；deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json；deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json；deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json；deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json；deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/MASTER_REVIEW.json。此 PASS 仅表示这些评审齐备及未验证项已如实标记；用户尚未批准本产品版本，尚不可作为下游正式输入。Creator、目标设备仍 NOT_TESTED，当前四层图片 Gate2 未批准。"
+    }
+  ],
+  "assumptions": [
+    "用户‘当前资源’指 deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd 和同目录 layer_sources/，非较早校色或原始整图。",
+    "第4项未来可切换树/花/灯指另外新增的独立对象，当前四层画中的树/灯与纸船保持固定；这一语义须经用户审阅。",
+    "正式缩放上下限未锁定，1.00–1.80×只作已经在网页候选预览中验证的范围。"
+  ],
+  "risks": [
+    "旧 A03 与当前用户指定画面冲突，未批准本稿前不得沿用旧 A03 判定当前资源通过。",
+    "竖屏适高中心只见窄幅，桥居中首帧不见月亮；若要求同屏需改图并提前告知用户。",
+    "天空源比其他三张窄 1 像素，正式导出及目标设备边界视觉尚需 Art/Tech 验证。",
+    "隔离网页预览不能代表 Creator、真实触控、目标机贴图内存或 Art/Tech 切图门禁；Creator 与目标设备仍 NOT_TESTED，当前四层图片 Gate2 尚未批准。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001",
+  "title": "单元示例1当前四层 PSD 的美术只读预审",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "对用户选定的四层 PSD、导出 PNG、原始合成和竖屏视差预览进行视觉、透明边、遮挡与来源预审，明确正式使用前必须修改图片的条件与最小范围；本任务不编辑任何图片，不冒充切图效果 Gate2。",
+  "inputs": [
+    "deliverables/art/moonlit_psd_20261005_v2_raw/",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/",
+    "project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md",
+    "用户 2026-10-05 要求改图前提前告知"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/ART_ASSESSMENT.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "逐层核四张现图在竖屏中心和左右视野的构图、光晕边、透明边、接缝、遮挡及与原始整体画面差异，有真实可复查证据",
+    "逐项区分不改图即可演示、需改规格、需要定向改图及需要用户决定的范围，给出潜在改图的具体区域和影响",
+    "登记当前四层的来源/授权已知与未知信息，不把未知权利写成已清",
+    "不生成、修改或覆盖 PNG、PSD，不将只读预审判为 Gate2 最终通过"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": ["只读预审可与产品修订草稿并行，隔离预览仅作候选证据；正式 Art Gate2 Review 须在获批产品语义和具体版本上另行完成。"]
+}

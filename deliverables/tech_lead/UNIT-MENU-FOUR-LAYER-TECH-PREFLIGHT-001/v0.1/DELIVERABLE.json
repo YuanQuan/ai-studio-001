@@ -1,0 +1,43 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001",
+  "owner": "tech_lead",
+  "summary": "对用户指定的四张 PNG/PSD 做只读技术预审：核尺寸、哈希、alpha、贴图基础面积与 720×1280/390×844 竖屏视差边界，列出正式 Creator 导入和目标设备测试门槛。不修改图片、不宣称 Gate2 或运行通过。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_ASSESSMENT.md",
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "核实际像素尺寸、图层对应/哈希、透明像素范围和可复核的解码贴图面积",
+      "result": "PASS",
+      "evidence": "TECH_ASSESSMENT.md 第 1、3 节：四张源 PNG 的 SHA-256、RGB/RGBA 尺寸、零/部分/全不透明像素和 alpha_bbox；基础 RGBA8 6,289,388 像素、23.99 MiB。"
+    },
+    {
+      "criterion": "验证 720×1280 与至少一种手机竖屏比例在中心/左右极限和候选缩放范围是否露白，指明算法与剩余运行风险",
+      "result": "PASS",
+      "evidence": "TECH_ASSESSMENT.md 第 2 节推导边界；隔离预览 geometry_report.json 记录 720×1280 与 390×844、1.0/1.8 倍、左中右共 12 组源图坐标覆盖。Creator 的动态过滤缝仍为 NOT_TESTED。"
+    },
+    {
+      "criterion": "列出正式 Creator 接入所需的输入、资源 UUID/格式/图集/内存/设备检查及不可由静态预览替代的证据",
+      "result": "PASS",
+      "evidence": "TECH_ASSESSMENT.md 第 3–4 节列产品/Art/用户审批、导入 UUID/hash/trim/alpha/压缩、纹理兼容、DrawCall、帧时间和 Web/小游戏目标机取证。实际导入与设备数据明确 NOT_TESTED。"
+    },
+    {
+      "criterion": "明确用户指定速度比例的工程表达与同步缩放；不编辑源图，不虚称 Creator 或真机测试",
+      "result": "PASS",
+      "evidence": "TECH_ASSESSMENT.md 第 2 节公式：后→前 0.3/0.8/1/1，同一 s；第 1、4 节注明源 PNG/PSD 未编辑，Creator/真机仍缺证据。"
+    }
+  ],
+  "assumptions": [
+    "候选预览的 1.0–1.8 倍为相对竖屏适高的测试范围，不是 Product 已批准的正式倍率上限。",
+    "纹理基础面积以四张源图均展开成 RGBA8 计算；目标平台实际格式和峰值必须通过运行记录核验。"
+  ],
+  "risks": [
+    "当前四层含固定树、灯和纸船，与旧第1项空背景语义冲突，须按用户最新方向修订项目 Artifact。",
+    "2172 宽贴图在最大宽度仅 2048 的目标环境中需要评审分片或替代导出；现无目标设备能力数据。",
+    "天空短 1 像素且三透明层多数有内容像素为部分 alpha；缩放采样、颜色空间和压缩可能显示光晕杂色。",
+    "Creator 导入、资源 UUID、真实内存/DrawCall/帧时间、Web/微信/抖音目标设备及真机触控均未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

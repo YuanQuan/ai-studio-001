@@ -1,0 +1,41 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001",
+  "owner": "art",
+  "summary": "完成用户指定四层场景与 720×1280 竖屏中心/两端样张的只读美术预审；隔离演示可沿用原图，正式资源仍须解决构图、来源和动态边缘验证。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/ART_ASSESSMENT.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/ART_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐层核四张现图在竖屏中心和左右视野的构图、光晕边、透明边、接缝、遮挡及与原始整体画面差异，有真实可复查证据",
+      "result": "PASS",
+      "evidence": "ART_ASSESSMENT.md 的逐层视觉表，引用四张 layer_sources、original_reference.png、overall_from_psd.png、三张 720×1280 stills 与 validation.json。"
+    },
+    {
+      "criterion": "逐项区分不改图即可演示、需改规格、需要定向改图及需要用户决定的范围，给出潜在改图的具体区域和影响",
+      "result": "PASS",
+      "evidence": "ART_ASSESSMENT.md 的“修改边界及提前告知”四项。"
+    },
+    {
+      "criterion": "登记当前四层的来源/授权已知与未知信息，不把未知权利写成已清",
+      "result": "PASS",
+      "evidence": "ART_ASSESSMENT.md 的“来源、权利与正式交接”：记录 2026-10-05 用户声明拥有原图及商用改编权，同时如实列出未独立核验和生成记录缺口。"
+    },
+    {
+      "criterion": "不生成、修改或覆盖 PNG、PSD，不将只读预审判为 Gate2 最终通过",
+      "result": "PASS",
+      "evidence": "本任务仅产出预审文本和 JSON，未改 PNG/PSD；ART_REVIEW.json 的 APPROVED 仅针对预审报告，ART_ASSESSMENT.md 明确资源本身待审且 Gate2 未签认。"
+    }
+  ],
+  "assumptions": [
+    "以用户明确指定的原始四张生成 PNG 及现有 PSD 为准，不把最初整幅参考图视作逐像素相同的已批准生产母版。",
+    "当前 1.00–1.80 倍缩放区间和 720×1280 竖屏样张为隔离演示条件，正式镜头上限尚未审批。"
+  ],
+  "risks": [
+    "用户已声明拥有原图及商用改编权；本预审未独立查验权属文件，完整生成记录和相似初筛仍需归档。",
+    "静态样张不能验证连续拖动、触屏缩放、Creator 贴图采样及目标设备上的半透明边缘。",
+    "桥居中首屏看不到月亮，若改变构图或补画可能影响用户已选整体视觉。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

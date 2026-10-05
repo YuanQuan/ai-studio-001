@@ -25,11 +25,11 @@
     "支持拖动、滚轮或双指缩放、按钮缩放与初始视野重置，控件操作不会拖动场景",
     "记录当前原图在竖屏的构图限制、正式资源语义冲突与潜在改图范围；不把隔离预览冒充 Creator/QA 验收"
   ],
-  "dependencies": ["UNIT-MENU-BASE-ASSET-001", "UNIT-MENU-PRODUCT-001", "UNIT-MENU-TECH-DESIGN-001"],
+  "dependencies": ["UNIT-MENU-PRODUCT-001", "UNIT-MENU-TECH-DESIGN-001"],
   "status": "REVIEW",
   "approval": "REVIEW",
   "notes": [
-    "这是 Master 的隔离视窗验证，不写入 apps/client 正式资源引用，也不解除 UNIT-MENU-BASE-ASSET-001 Gate2。",
+    "这是与正式 BASE 资源 Task 可并行的 Master 隔离视窗验证，不写入 apps/client 正式资源引用，也不解除 UNIT-MENU-BASE-ASSET-001 Gate2。",
     "用户已指定当前图组为示例1的目标场景；其内容与旧版空场景固定底板范围有差异，须依变更提案更新受影响的正式 Artifact。"
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立核对 PRODUCT_DELTA.md、ACCEPTANCE.md、CHANGE_IMPACT.md、用户指定四层 PSD 的回读合成，以及 720×1280 中/左/中途向右/右端竖屏样张。草稿以用户最新指令为准，保留旧 Product v0.2 审批历史，明确旧空底板 A03 的固定树、灯和纸船冲突；第4项独立对象和第7项同源复用未被提前判通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "前到后 1:1:0.8:0.3 水平视差、四层同倍率缩放、竖屏、重置与不露底已转成 S01–S09 可观察条件。1.00–1.80×仍仅是隔离预览候选，不是正式锁定的 Creator/设备参数；桥居中首帧不见月亮，向右中途仅局部露出并受山/建筑/柳枝遮挡，产品稿已准确描述。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Art、Tech、Client、QA 对本产品稿的影响 Review 均 APPROVED。用户已于 2026-10-05 明确声明拥有原图及商用改编权，Art 应记录该声明并补齐生成/来源链及相似性初筛；动态 alpha/灯晕边、天空短一列、宽纹理兼容、目标机性能和具体切图 Gate2 仍未通过。这些属于后续资源/实现门禁，不能随产品稿批准一起放行；任何必要图片修改前须先把图层、区域及视觉差异告知用户。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本 Master Review 只批准将 v0.1 产品增量提交用户审阅，不批准图片、Creator 接入、触控/真机或 QA 运行结论。Product/Art/Tech/Client/QA 五份同版 Review 已核对；后续正式阶段须等待用户对本产品版本的明确决定。"
+    }
+  ],
+  "next_action": "Product 将 DELIVERABLE 第5项更新为六方 Review 齐备且 PASS，并保持 Creator/设备和资源 Gate2 为未测试/未批准；Producer 核文件、schema、版本及状态后把本 Product v0.1 推进 USER_REVIEW。Master 向用户呈本版固定场景语义与竖屏交互验收；只有用户批准后才解锁受影响的正式技术、美术与 Client/QA 输入。"
+}

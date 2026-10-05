@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Product 自评通过：本版只提出示例1四层场景语义和可验证的未来运行条件；旧 v0.2 已批准稿保留历史。此决定不代表 Art/Tech/Client/QA/Master 或用户批准。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "旧 A03 禁止树和灯烘入固定底板，与当前四层画面相冲突。必须在本版跨角色 Review 和用户审批后，才可把固定树/灯/纸船与未来独立可切换对象的新边界交下游执行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "1.00–1.80×仅是隔离预览候选范围；正式倍率、触控、纹理和不露白仍需 Tech/Client/QA 在 Creator 与目标设备验证。"
+    }
+  ],
+  "next_action": "请 Master 组织 Art、Tech、Client、QA 对 v0.1 同版做影响 Review，并提交 Master Review 与用户审批；Product 草案在批准前不作为正式下游输入。"
+}

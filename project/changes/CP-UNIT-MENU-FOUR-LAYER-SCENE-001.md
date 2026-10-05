@@ -2,8 +2,9 @@
 
 - 日期：2026-10-05
 - 来源：用户明确指定“以当前的资源作为单元示例1的场景资源”，要求四层前后移动比例 `1:1:0.8:0.3`、支持缩放、竖屏；若需改图须提前告知。
-- 状态：`USER_DIRECTION_RECORDED / IMPACT_REVIEW_PENDING`。这条用户指令确立目标资源及演示方式，不等于已有 `UNIT-MENU-BASE-ASSET-001` v0.2 的 Art/Tech 切图 Review、第二次用户审批或 Creator 接入已完成。
+- 状态：`IMPACT_REVIEW_COMPLETE / PRODUCT_USER_REVIEW`。用户指令确立目标资源及演示方式；`UNIT-MENU-SCENE1-SCOPE-001 v0.1` 已完成 Product、Art、Tech、Client、QA 与 Master 的同版评审，等待用户审批。这不等于 `UNIT-MENU-BASE-ASSET-001` v0.2 的 Art/Tech 切图 Review、第二次用户审批或 Creator 接入已完成。
 - 资源版本：`deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd` 及同目录 `layer_sources/` 四张原始 PNG。不得用旧 `UnitSamples.scene`、旧 Demo 图片或另一版校色层替换。
+- 来源权利补充：用户于 2026-10-05 明确声明拥有原图及商用改编权；这是用户声明的来源证据，不冒充独立法律核验。Art 须把声明、原图到四张生成图及 PSD 的版本链和相似性初筛纳入本资源正式交接记录。
 
 ## 与已批准规格的差异
 

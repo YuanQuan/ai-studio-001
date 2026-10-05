@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-MENU-SCENE1-SCOPE-001",
+  "title": "单元示例1采用当前四层场景后的产品范围与验收修订",
+  "type": "design",
+  "owner": "product",
+  "parent": null,
+  "objective": "将用户已指定的当前四层 PSD 场景落实为单元示例1的可审阅产品语义，明确竖屏、1:1:0.8:0.3 视差、缩放、重置、固定画面与未来可切换元素的边界，修订旧版‘空场景’冲突；不改写已批准历史版本或图片。",
+  "inputs": [
+    "用户 2026-10-05 明确指令：当前四层资源用于单元示例1、前到后移动比例 1:1:0.8:0.3、支持缩放、竖屏、改图前告知",
+    "用户 2026-10-05 本轮‘好的继续进行’",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd 和 layer_sources/",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/REVIEW.md、geometry_report.json、stills/",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md（已批准历史基线）",
+    "project/changes/CP-UNIT-MENU-FOUR-LAYER-SCENE-001.md"
+  ],
+  "deliverables": [
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "新稿明确指定当前四层源版本及用途，保留旧 v0.2 的历史审批，不把本次候选稿写成已获用户批准",
+    "第1项以竖屏为准，写明前到后四层 1:1:0.8:0.3 的水平视差、缩放、重置及不露白验收；缩放 1.0–1.8 仅标为已验证候选范围",
+    "对旧 A03 的树、右侧灯廊和纸船冲突给出明确覆盖关系，并说明未来第4项可切换元素及第7项组合场景如何避免重复烘入",
+    "列出何时必须改图、何时仅需改程序或规格；任何图像编辑前必须告知用户，不在本任务改动当前图像",
+    "Product、Art、Tech、Client、QA 与 Master 对同一版本的影响或最终 Review 齐备，未验证项如实标 NOT_TESTED；提交用户审阅后才可成为下游正式输入"
+  ],
+  "dependencies": ["UNIT-MENU-PRODUCT-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "仅推进单元示例1，不启动其他六个单元或旧九单元场景。",
+    "正式 Creator 接入仍受当前四层切图 Art/Tech Review 与第二次用户审批约束。隔离预览只作本版候选证据，不是获批下游依赖。"
+  ]
+}
