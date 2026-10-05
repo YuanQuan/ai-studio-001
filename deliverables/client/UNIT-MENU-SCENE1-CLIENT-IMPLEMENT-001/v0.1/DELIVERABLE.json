@@ -1,7 +1,7 @@
 {
   "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
   "owner": "client",
-  "summary": "实施过程中四张批准 PNG 已复制并验证哈希，示例1镜头控制器源码与 Gallery 导航已落盘；Creator 导入、真实 UUID、Prefab/Scene 创建因 Editor 导入索引阻塞而未完成。",
+  "summary": "四张批准 PNG 已复制并核验哈希，Creator 已生成四图与控制器真实 .meta/UUID；四份 SpriteFrame Library JSON 与 trimType=none 一致，完整导入几何均为2172×724且零offset。镜头控制器源码与 Gallery 导航已落盘。Prefab/Scene、可见Editor证据和成功构建/运行验证未完成，整体 BLOCKED。",
   "artifacts": [
     "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png",
     "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png",
@@ -13,13 +13,19 @@
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/ART_REVIEW.json",
     "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/TECH_REVIEW.json",
-    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json"
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png.meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png.meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png.meta",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l04_foreground.png.meta",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts.meta",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/MASTER_REVIEW.json"
   ],
   "acceptance_results": [
     {
       "criterion": "逐字节从 Gate2 v0.3 复制四张 2172×724 RGBA 全画布 PNG 到获批计划路径，逐件源/目标 SHA-256 相同；由 Creator 生成真实 .meta，分别登记 image 主 UUID、Texture2D 与 SpriteFrame 子 UUID、子资源键、导入设置和实际工程路径；母版与审核合成图不导入，不裁切、调色、压缩替换或重绘图像。",
       "result": "NOT_TESTED",
-      "evidence": "四张目标 PNG 与 Gate2 源文件逐件 SHA-256 一致，证据见 project/ASSET_HANDOFF_REGISTRY.md；Creator 未完成导入，无 .meta 或 UUID，因此该组合验收尚未通过。"
+      "evidence": "四张目标 PNG 与 Gate2 v0.3 源文件逐件 SHA-256 一致；Creator实际生成的四份 .meta 中 image主UUID、Texture2D子UUID(@6c48a)与SpriteFrame子UUID(@f9941)已登记。meta trimType=none与四份最新Library JSON一致，均为rect/originalSize=2172×724、offset=(0,0)，详见 project/ASSET_HANDOFF_REGISTRY.md。此条件静态核验完成，但复合验收其余导入参数/commit记录尚不齐，结果仍NOT_TESTED。"
     },
     {
       "criterion": "创建 STREET_BASE_01 共用背景 Prefab 与独立 apps/client/assets/labs/menu/scn_unit_menu_scene1.scene；四层按后到前 `[0.3,0.8,1.0,1.0]` 系数顺序显示，保持相同 2172×724 画布、原点、居中锚点与几何尺度；Lab 控件留在 Scene，不放入正式背景 Prefab；UnitSampleGallery 只增加导航/切换。",
@@ -39,12 +45,12 @@
     {
       "criterion": "更新项目资源登记表为真实导入状态，逐件保留美术路径/hash、Creator 实际路径/hash、稳定 ID、尺寸、导入参数、Creator 版本/commit、image/Texture2D/SpriteFrame UUID、Prefab UUID、Scene 引用和受影响复用边界；四张资源与 Prefab 的正式身份链无空缺或伪造值。",
       "result": "NOT_TESTED",
-      "evidence": "登记表保留稳定 ID、描述、美术目录/文件/hash、批准的正式目录/统一文件命名、目标文件hash及实际状态；Creator主/子UUID、导入设置和引用链作为明确待补字段，未填虚构值。"
+      "evidence": "登记表已包含稳定ID、描述、美术路径/hash、Creator实际路径/hash及真实主/子UUID和子资源键；四份Library几何映射与trimType=none已静态核验。Prefab/Scene身份链、实际依赖引用、导入commit仍缺，组合验收NOT_TESTED。"
     },
     {
       "criterion": "实现报告记录变更范围、场景/Prefab职责、回滚方式、代码及工程检查、Creator/Web 可复验构建或编辑器打开证据；可执行的实现级冒烟验证逐项记录结果和证据，无法实际验证项如实 NOT_TESTED/BLOCKED，不宣称性能或多分辨率 QA PASS；不得运行正式 QA 用例或生成 TEST_REPORT。",
       "result": "NOT_TESTED",
-      "evidence": "IMPLEMENTATION_REPORT.md 记录变更范围、回滚、哈希与源码检查、Creator阻塞和未测试边界；Creator/Web证据及正式QA仍未完成。"
+      "evidence": "IMPLEMENTATION_REPORT.md记录变更范围、回滚、哈希及Creator bundled tsc源码检查exit 0；Creator真实meta与Library全画布几何已核。一次隔离CLI build因CreateFile拒绝访问(0x5)后FATAL退出且无build输出，该尝试不是成功构建证据。未完成可见Editor打开/场景冒烟，正式QA未执行。"
     },
     {
       "criterion": "Art、Tech Lead、QA 对本版实际资源映射、技术实现与测试可测性分别完成同版专业 Review，Master Review 与最终接受齐全；只有专业 Review 通过后提交用户审核，不将本 Task 标 DONE。",
@@ -56,9 +62,9 @@
     "Web 正式矩阵与性能阈值仍在后续运行验收前审批；当前仅作 TypeScript 源码检查。"
   ],
   "risks": [
-    "Creator 3.8.8 尚未提供可确认的可见项目窗口/导入索引；无 PNG .meta 与真实 UUID。",
-    "无 Prefab/Scene 序列化资源；无法完成 Creator 编辑器构建或 Web 运行验证。",
-    "正式QA未执行，未生成TEST_REPORT。"
+    "四图meta身份和Library全画布几何已经静态核验，但Prefab、独立Scene、依赖引用及可见Editor/运行证据仍未完成。",
+    "一次Creator CLI隔离build因访问拒绝(0x5)崩溃且无输出；不视为构建结果。",
+    "正式QA未执行，Web模拟视口矩阵与性能预算仍待后续批准，未生成TEST_REPORT。"
   ],
   "status": "BLOCKED"
 }

@@ -5,19 +5,19 @@
   "findings": [
     {
       "severity": "INFO",
-      "message": "静态核对通过的范围：四张目标 PNG 与 Gate2 v0.3 对应源图逐件 SHA-256 相同，登记表逐件标为 COPIED_HASH_VERIFIED_CREATOR_IMPORT_BLOCKED；没有把计划路径、缺失的 .meta 或 UUID 冒充正式导入。Client 报告的 tsc --noEmit --skipLibCheck 源码检查 exit 0 只支持 TypeScript 源级结论，不支持 Creator 构建或运行 PASS。"
+      "message": "新证据下的静态核对范围：四张目标 PNG 与 Gate2 v0.3 对应源图逐件 SHA-256 相同；Creator 3.8.8 已实际生成四张 PNG 与控制器的 .meta，PNG image 主 UUID、Texture2D(@6c48a)/SpriteFrame(@f9941) 子 UUID 和脚本主 UUID 已与登记表核对。源码 tsc --noEmit --skipLibCheck exit 0 仍只支持 TypeScript 源级结论，不支持 Creator 构建或运行 PASS。"
     },
     {
       "severity": "INFO",
-      "message": "scene1_camera_controller.ts 已写入 z=1.00–1.80、初始 cameraX=0、四层比例 [0.3,0.8,1,1]、统一缩放和水平夹取、鼠标与触控手势、重置和监听解绑的源码路径；UnitSampleGallery.ts 的 U10 分支只导航至计划独立 Scene，未把旧九项资源复制为新背景。该评价仅是静态源码审查，层节点绑定及输入行为尚无 Editor/运行验证。"
+      "message": "scene1_camera_controller.ts 已写入 z=1.00–1.80、初始 cameraX=0、四层比例 [0.3,0.8,1,1]、统一缩放和水平夹取、鼠标与触控手势、重置和监听解绑的源码路径；本版新增 viewport Node.EventType.SIZE_CHANGED 在 onEnable/onDisable 以同一 onViewportChanged callback/context 成对注册与解除，回调无强制参数依赖，源码签名可用于尺寸变化重算。UnitSampleGallery.ts 的 U10 分支只导航至计划独立 Scene。该评价仅是静态源码审查，层节点绑定、尺寸事件和输入行为尚无 Editor/运行验证。"
     },
     {
       "severity": "MAJOR",
-      "message": "Creator 3.8.8 当前没有可确认的项目窗口/导入索引，四张 PNG 与控制器均无 Creator 生成的 .meta；pf_street_base_01.prefab 和 scn_unit_menu_scene1.scene 不存在。image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab/Scene 依赖、trim/pivot/过滤/压缩设置以及编辑器冒烟都无法核验，故整项任务不能签 APPROVED 或送完整实现验收。需恢复 Editor 可用性，由 Creator 真实导入、创建/序列化资源并回填身份链。"
+      "message": "整项仍受阻：四 PNG 与控制器已有 Creator 生成的 .meta/UUID，但无可交互 Editor、正式背景 Prefab 或独立 Scene，Prefab/Scene UUID 与节点依赖、实际安全区/输入、编辑器冒烟均无法核验。隔离 CLI build 日志报 CreateFile 拒绝访问(0x5)及 FATAL，且无输出；即使 shell 返回码为 0 也不能视为构建通过。须恢复可见 Creator Editor，创建/保存 Scene 与 Prefab、核资源引用并提供可复验证据后才能重审。"
     },
     {
       "severity": "INFO",
-      "message": "首轮有效视口 MAJOR 已在同版源码静态关闭：recalculate() 改取 SceneViewport 的 UITransform.contentSize，明确重新计算 coverScale=max(Vw/2172,Vh/724) 后求 visibleSourceWidth 与 cameraX 边界；输入点先转为该视口本地逻辑坐标。复审时发现一次遗漏 coverScale 重算的回归，Client 随即补回；本轮独立重跑 Creator 随附 tsc --noEmit --skipLibCheck exit 0。SceneViewport 实际安全区、节点坐标绑定与多视口画面仍待 Creator/Web 运行验证。"
+      "message": "首轮有效视口 MAJOR 保持源码静态关闭：recalculate() 取 SceneViewport 的 UITransform.contentSize，重新计算 coverScale=max(Vw/2172,Vh/724) 后求边界；输入点转本地逻辑坐标。SIZE_CHANGED 监听与 view 变化监听均在停用时成对解除。本轮 Creator 随附 tsc --noEmit --skipLibCheck exit 0。实际安全区、节点绑定与多视口画面仍待 Creator/Web 运行验证。"
     },
     {
       "severity": "INFO",
@@ -25,8 +25,8 @@
     },
     {
       "severity": "INFO",
-      "message": "IMPLEMENTATION_REPORT.md 与 DELIVERABLE.json 如实将完整资源导入、Prefab/Scene、UUID/引用链、运行冒烟及同版专业评审列为未完成或 BLOCKED；Web 多模拟视口、性能预算和正式 QA 未执行，不能据此 Review 标为 PASS。"
+      "message": "四份 PNG .meta 的 SpriteFrame userData.trimType 均为 none、pivot=(0.5,0.5)。本次独立读取四个当前 Library @f9941.json，均见 rect/originalSize=2172×724、offset=(0,0)，文件修改时间为 2026-10-05 22:32:00；L01/L04 不再呈报告中描述的旧自动裁切几何。这只证明当前磁盘元数据与 Library 静态几何一致，不能推断 GUI Inspector 操作、Prefab 实际显示或 Web 运行通过。Client 的 IMPLEMENTATION_REPORT.md、ASSET_HANDOFF_REGISTRY.md、DELIVERABLE.json 中旧 Library 裁切叙述需据此更新，Art/QA/Master Review 中同样过时的前提也需由各自 reviewer 复核。"
     }
   ],
-  "next_action": "两项源码 MAJOR 已静态关闭；Client 在 Creator Editor 可用后仍须完成四图真实导入、.meta/UUID、Prefab/Scene 与构建/编辑器冒烟，并在 Web 环境验证有效视口、安全区和 UI 双指事件。补齐登记表、实施报告及 Art/Tech/QA 同版完整评审后重新提交实现 Review。Master/Producer 对当前未完成范围维持真实阻塞记录，勿进入用户完整实现审批或 QA 运行。"
+  "next_action": "两项源码 MAJOR 与 SIZE_CHANGED 生命周期改动已静态复核；Client 先更新报告/登记表中过时的 L01/L04 Library 裁切事实，再在可交互 Creator Editor 中核当前四层 SpriteFrame 设置、创建/保存 Prefab 与 Scene、取得节点/引用及编辑器/构建证据，并在 Web 验证有效视口和 UI 双指事件。Art/QA/Master 对新证据续审；整 Task 保持 BLOCKED，不进入用户完整实现审批或 QA 运行。"
 }

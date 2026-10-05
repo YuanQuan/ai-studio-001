@@ -5,16 +5,16 @@
   "findings": [
     {
       "severity": "INFO",
-      "message": "Client 已逐字节复制四张 Gate2 v0.3 PNG，目标与源 SHA-256 匹配；控制器与示例1 U10 导航源码已产出。Tech 对当前控制器复审，确认 SceneViewport.contentSize/coverScale=max(width/2172,height/724)、尺寸变化监听和 UI/视口外触点取消逻辑已静态核验；Creator 随附 TypeScript 检查 exit 0。资源交接登记表和获批 RESOURCE_PATH_AND_NAMING_SPEC.md 分别记录美术目录、Cocos 计划目录、稳定 ID、描述、hash 与命名约定，实际 UUID/导入参数留待 Creator 生成。"
+      "message": "Client 已逐字节复制四张 Gate2 v0.3 PNG，目标与源 SHA-256 匹配；控制器与示例1 U10 导航源码已产出。Tech 对当前控制器复审，确认 SceneViewport.contentSize/coverScale=max(width/2172,height/724)、尺寸变化监听和 UI/视口外触点取消逻辑已静态核验；Creator 随附 TypeScript 检查 exit 0。Creator 已生成四张 PNG 与控制器真实 .meta/UUID；四张 SpriteFrame Library JSON 现均为 rect/originalSize 2172×724、offset=(0,0)，且四 .meta 为 trimType=none，Tech 已独立复核此数据。资源交接表记录美术/Cocos目录、稳定ID、描述、hash、UUID与命名映射。"
     },
     {
       "severity": "MAJOR",
-      "message": "Creator 3.8.8 尚无可确认项目窗口/导入索引，四张 PNG 和控制器没有 Creator 生成的 .meta/真实 UUID，STREET_BASE_01 Prefab、独立示例1 Scene、资源引用和 Creator/Web 冒烟证据均缺失。因此现有源码检查与字节校验不能证明工程接入、画面、输入或运行通过。Art、Tech、QA 同版 Review 均为 BLOCKED；QA 未运行测试且未生成 TEST_REPORT。"
+      "message": "四张 PNG 和控制器已有 Creator 真实 .meta/UUID，AssetDB Library JSON 的四个 SpriteFrame 也已同步为2172×724全画布及零偏移，Tech 对此完成静态复核。仍无可交互 Editor 窗口、STREET_BASE_01 Prefab、独立示例1 Scene 或 Creator 构建/运行冒烟证据；隔离 CLI build 尝试因 CreateFile access denied (0x5) 后 FATAL 退出、无构建输出，不能算构建通过。Art、Tech、QA 同版 Review 仍为 BLOCKED；QA 未运行测试且未生成 TEST_REPORT。"
     },
     {
       "severity": "INFO",
-      "message": "用户已批准 Client Brief 与 QA Plan 后授权继续实施。该批准不包含尚未提交的完整实现验收；Web 模拟视口/DPR矩阵、最终测量容差、性能预算及正式 QA 运行仍需后续单独批准。"
+      "message": "用户已批准 Client Brief 与 QA Plan 后授权继续实施；用户要求重试后 Creator 后台成功完成四层资源导入与全画布 Library 元数据同步。该批准不包含尚未提交的完整实现验收；Web 模拟视口/DPR矩阵、最终测量容差、性能预算及正式 QA 运行仍需后续单独批准。"
     }
   ],
-  "next_action": "等待 Creator 项目导入恢复：由 Creator 真实生成 .meta/UUID，创建并验证共用 Prefab 与独立 Scene，回填资源登记表，提供编辑器/Web 可复验证据；随后更新 Client 报告及交付摘要，并由 Art、Tech、QA 对完整同版产物续审。Web 矩阵、测量容差和性能预算获批前不启动正式 QA。解除阻塞且专业 Review 通过后再提交新的 Master Review 与完整实现版本用户审批；当前保持 BLOCKED，不生成最终接受记录，不标 DONE。"
+  "next_action": "需要恢复可交互 Creator 3.8.8：创建并验证 STREET_BASE_01 Prefab 与独立示例1 Scene、资源引用和编辑器冒烟；更新资源登记表/Client报告后，由 Art、Tech、QA 对完整同版产物续审。Web矩阵、测量容差和性能预算获批前不启动正式QA。解除阻塞且专业Review通过后再提交新的Master Review与完整实现版本用户审批；当前保持BLOCKED，不生成最终接受记录，不标DONE。"
 }

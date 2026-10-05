@@ -9,7 +9,7 @@
     },
     {
       "severity": "MAJOR",
-      "message": "当前工作区可见四张目标 PNG、`scene1_camera_controller.ts` 与 Gallery 源码；未见四张 PNG 的 Creator `.meta`、`pf_street_base_01.prefab`、独立 `scn_unit_menu_scene1.scene` 或其真实 UUID/引用链。IMPLEMENTATION_REPORT.md 与 ASSET_HANDOFF_REGISTRY.md 将 Creator 导入记为阻塞，记载引擎缓存写入 EPERM、无可确认 Editor 窗口/索引日志。故 QA 不能进入 S01–S06 Creator/Web 执行，也不能核验 S07/S08 以外的画面/输入验收。"
+      "message": "Client 与 Tech 最新同版 Review/报告及资源登记表已确认四张 PNG 的 SHA-256 与 Gate2 源相同，Creator 真实 `.meta` 主/子 UUID 已登记；四份 SpriteFrame Library 数据均为 rect/originalSize=2172×724、offset=(0,0)，且 trimType=none。当前仍没有可交互 Editor、`pf_street_base_01.prefab`、独立 `scn_unit_menu_scene1.scene`、可核的场景引用或成功构建/运行证据，因此 S01–S06 的 Creator/Web 实测仍不可执行，QA 结论保持 BLOCKED。"
     },
     {
       "severity": "INFO",
@@ -17,12 +17,12 @@
     },
     {
       "severity": "INFO",
-      "message": "Tech 最新复审仍给整体 Client 实施 `BLOCKED`，但已关闭源码层面的视口计算和第二触点两个问题；其余阻塞与本 QA 结论一致，均落在 Creator 导入、Prefab/Scene 序列化、资源 UUID/引用链及运行/编辑器证据缺失。Art Review 同样因无 Creator 场景与画面证据而 `BLOCKED`。"
+      "message": "Tech 最新复审已静态关闭 coverScale/视口尺寸、尺寸变化重算和 UI 第二触点处理修订；但 Tech 整体决定仍为 BLOCKED，因为没有可见 Editor、Prefab/Scene 绑定或成功构建/运行证据。Art Review 仍包含四图 `.meta` 不存在的旧状态，应据新的身份/Library证据续审；当前缺失场景与运行画面仍阻止其完成整合视觉判断。"
     },
     {
       "severity": "INFO",
-      "message": "Web 浏览器/模拟视口/DPR/输入矩阵、S03 最终测量容差与性能预算尚未获用户审批，符合分阶段决策下的运行前置阻塞。CLIENT_TEST_CASES.md 与 IMPLEMENTATION_REPORT.md 均将运行项标为 NOT_TESTED/BLOCKED；本 Review 未启动测试、未生成 TEST_REPORT，也未给出功能、视觉或性能 PASS。"
+      "message": "隔离 CLI build 因 CreateFile Access denied (0x5) 后 FATAL 退出且未生成输出；它是失败的构建尝试，不是成功构建结果。Web 浏览器/模拟视口/DPR/输入矩阵、S03 最终测量容差与性能预算仍未获用户审批。CLIENT_TEST_CASES.md 的运行前置尚未满足；本 Review 未执行编译、构建或运行测试，未生成 TEST_REPORT，也未给出功能、视觉或性能 PASS。"
     }
   ],
-  "next_action": "Creator 导入阻塞解除后，由 Client 创建真实 PNG .meta/UUID、Prefab 与独立 Scene，回填登记表并提供 Creator/构建及运行证据，供 Art/Tech/QA 续审。本 Review 保持 BLOCKED 的唯一原因是缺少上述 Creator 资源/场景和运行证据。QA 不执行测试；未来正式 Web 验收仍须先获批矩阵、S03 容差与性能预算，再由 QA 另行执行并提交 TEST_REPORT。"
+  "next_action": "在可交互 Creator Editor 中创建并保存共用 Prefab 与独立 Scene，核节点/安全区/输入绑定并提供成功编辑器或构建及运行证据；由 Art 更新过时的身份状态并完成所需续审。当前 QA Review 的 BLOCKED 原因是无可操作 Editor、Prefab/Scene 和成功构建/运行证据。运行测试仍须等待 Web 矩阵、S03 容差及性能预算获批；本 Review 不执行测试或生成 TEST_REPORT。"
 }
