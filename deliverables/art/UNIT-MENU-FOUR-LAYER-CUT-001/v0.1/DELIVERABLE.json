@@ -1,0 +1,66 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "owner": "art",
+  "summary": "本批 Gate1 及 Art/Tech 同版预签成立。Art 只读锁定当前 PSD、四张原 PNG 与四张全画布层图，核实 alpha/可见 RGB 和既有同尺度重组静态一致；现有竖屏静帧的主要视觉锚点可辨。连续拖缩、部分竖屏/倍率端点、Creator 与设备仍未测，Art 不给 Gate2 视觉 PASS，未改动任何美术资源。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/VISUAL_AND_EDGE_REVIEW.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CLIENT_CUT_DISCUSSION.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/01_01_94477409.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/02_02_933386cf.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/03_03_23db4183.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/04_04_c82fb659.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/portrait_720_center.png",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/portrait_720_left.png",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/portrait_720_right.png",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/portrait_720_midright.png",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/stills/portrait_390_center.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "当前四层专属 Gate1 已获用户明确批准；任何新的正式图片输出之前 Art 与 Tech 对同一版本的源 hash、画布、层序、贴图预算和导出范围完成文字预签，且本任务不改动任何已有美术资源",
+      "result": "PASS",
+      "evidence": "tasks/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/ARTIFACT_APPROVAL.json；本任务 PREFLIGHT_PLAN.md SHA-256 129f5a0aef67fc4cfd809637e6b1e87ae8278db1705f41ba1fbdda96036831dc；ART_PREFLIGHT.json 与 TECH_PREFLIGHT.json 同版 APPROVED；CUT_MANIFEST.json 逐项锁原文件哈希，本轮未改图。"
+    },
+    {
+      "criterion": "四张现有 2172×724 全画布层图与 PSD 四层一一对应，源路径、SHA-256、画布原点、alpha、层序及天空内容实际仅 2171 列的差异均在切图清单可追溯",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json：四层后到前映射、原点 (0,0)、原/全画布 SHA-256、alpha 零/部分/不透明计数与天空透明第 2172 列；本轮只读 PSD 通道比对四层 alpha 和可见 RGB 均相等。"
+    },
+    {
+      "criterion": "现有四层按原位同尺度重组与当前 PSD 合成效果一致；Art 逐锚点审查桥/栏杆、树/灯廊、山与建筑、月云天空及固定纸船/灯光，不把最初整图当成逐像素目标",
+      "result": "PASS",
+      "evidence": "VISUAL_AND_EDGE_REVIEW.md 第 1–2 节；overall_from_psd.png 与 PSD 平面合成、assembly_preview.png 逐像素相等；现有 720/390 静帧对各锚点作静态审查，明确最初整图不是逐像素目标。该 PASS 只限静态同源与重组，不覆盖动态边缘。"
+    },
+    {
+      "criterion": "在 720×1280 与另一候选竖屏视口的中心、左右端及批准或候选缩放边界审查连续拖缩中的灯晕、柳叶、门洞、链条、山缘和透明边；静态网页/数学检查与 Creator/目标设备证据分开记录，未测试项不得判通过",
+      "result": "NOT_TESTED",
+      "evidence": "VISUAL_AND_EDGE_REVIEW.md 第 2–3 节：现有 720 左/中/右/中途、390 中心静帧和 geometry_report.json 12 组数学边界；缺 390 左右、1.80× 完整端点及连续拖缩录屏。主/子线程访问本地网页受浏览器安全策略/通道故障阻断，未绕行；Creator/设备另记 NOT_TESTED。"
+    },
+    {
+      "criterion": "Art、Tech 对具体切图与重组实图独立 Review，Client 参与切图与导入边界讨论，Master 独立看图；仅四方证据充分时推进用户对具体版本的 Gate2 审批，获批前不交 Client 正式 Creator 接入",
+      "result": "NOT_TESTED",
+      "evidence": "ART_REVIEW.json 与 TECH_REVIEW.json 均为 CHANGES_REQUESTED（需动态边缘证据）；CLIENT_CUT_DISCUSSION.json 为 APPROVED，但仅批准切图和未来导入边界讨论；MASTER_REVIEW.json 独立看现有图片后为 CHANGES_REQUESTED。四方尚未充分通过，Gate2 未申请，Creator 正式接入关闭。"
+    }
+  ],
+  "assumptions": [
+    "候选 1.00–1.80× 是隔离预览范围，不是正式 Creator 缩放上限。",
+    "四张既有全画布 PNG 保留现有 RGB/alpha 和画布位置，未做新的正式导出。"
+  ],
+  "risks": [
+    "山/树/桥层半透明像素较多，当前静帧与零 alpha 隐藏 RGB 检查无法排除拖动时灯晕、柳叶、门洞和细链的背景色彩边或闪烁。",
+    "天空仅 2171 列有内容；候选镜头数学无越界不能证明实际纹理过滤或目标设备没有边缘缝。",
+    "四张全画布 RGBA8 理论面积约 23.995 MiB，2172px 宽的目标设备纹理兼容、内存和性能未测。",
+    "本地网页动态取证受浏览器安全策略阻断；现有证据不足以请求 Gate2 用户审批。"
+  ],
+  "status": "BLOCKED"
+}

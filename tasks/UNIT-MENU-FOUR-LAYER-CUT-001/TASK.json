@@ -1,0 +1,48 @@
+{
+  "id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "title": "单元示例1现有四层切图与同尺度重组效果 Gate2 审阅",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "在用户已批准的当前四层制作方案 v0.1 下，不修改 PSD、四张原始 PNG 或既有全画布层图，完成 Art/Tech 同版预签、现有四层切图版本锁定、同尺度重组及竖屏视差视觉与技术 Review，再把具体切图版本与效果提交用户 Gate2 审批。",
+  "inputs": [
+    "用户 2026-10-05 明确批准 UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001 v0.1 Gate1，且要求不改动美术资源、不要求桥月首屏同见",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、CUT_COLLABORATION_PLAN.md、RIGHTS_AND_SOURCE.md（Gate1 用户批准）",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd、psd_full_canvas_layers/、overall_from_psd.png、validation.json、source_hashes.json",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/geometry_report.json、REVIEW.md、stills/、index.html"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/VISUAL_AND_EDGE_REVIEW.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CLIENT_CUT_DISCUSSION.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/01_01_94477409.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/02_02_933386cf.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/03_03_23db4183.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/04_04_c82fb659.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png"
+  ],
+  "acceptance": [
+    "当前四层专属 Gate1 已获用户明确批准；任何新的正式图片输出之前 Art 与 Tech 对同一版本的源 hash、画布、层序、贴图预算和导出范围完成文字预签，且本任务不改动任何已有美术资源",
+    "四张现有 2172×724 全画布层图与 PSD 四层一一对应，源路径、SHA-256、画布原点、alpha、层序及天空内容实际仅 2171 列的差异均在切图清单可追溯",
+    "现有四层按原位同尺度重组与当前 PSD 合成效果一致；Art 逐锚点审查桥/栏杆、树/灯廊、山与建筑、月云天空及固定纸船/灯光，不把最初整图当成逐像素目标",
+    "在 720×1280 与另一候选竖屏视口的中心、左右端及批准或候选缩放边界审查连续拖缩中的灯晕、柳叶、门洞、链条、山缘和透明边；静态网页/数学检查与 Creator/目标设备证据分开记录，未测试项不得判通过",
+    "Art、Tech 对具体切图与重组实图独立 Review，Client 参与切图与导入边界讨论，Master 独立看图；仅四方证据充分时推进用户对具体版本的 Gate2 审批，获批前不交 Client 正式 Creator 接入"
+  ],
+  "dependencies": ["UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001", "UNIT-MENU-SCENE1-SCOPE-001"],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "先复用当前 PSD 和已经存在的全画布层图/重组图，不重新生成或修补。只读检查、截图/录屏和文档可作为审阅证据；若实测表明必须改像素，立即停下并向用户提前呈具体范围与效果。",
+    "旧空固定底板资源 Task 与此图组语义不同，不继承其 Gate1/Gate2。候选网页预览可作为动态检查的隔离证据，但不冒充 Creator 或设备。",
+    "2026-10-05：静态同源、切图清单、同尺度重组已完成；动态可复验视觉证据因浏览器安全策略拒绝 127.0.0.1 预览而缺失。Art/Tech/Master 三方 Review 均 CHANGES_REQUESTED，Task BLOCKED；Gate2 不申请，源图不改。"
+  ]
+}

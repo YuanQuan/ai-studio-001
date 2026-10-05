@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 仅预签 `deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/PREFLIGHT_PLAN.md` 的文字核验方案，SHA-256 129f5a0aef67fc4cfd809637e6b1e87ae8278db1705f41ba1fbdda96036831dc。该方案锁定当前 PSD、四张原 PNG、四张既有全画布 PNG 与既有重组图的哈希、2172×724 画布、后到前层序和 (0,0) 原点；天空原图 2171 列及 PSD 右侧透明列照实保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户已批准本图组制作方案 v0.1 Gate1，且要求不改动美术资源；旧空底板任务历史 Gate1 不继承。本 Art 预签只放行 Tech 对同一文件版本独立预签及双签后的只读取证，不批准生成、修补、重导出、裁切、降采样或替换任何图片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280 与候选 390×844、候选缩放 1.00–1.80×的截图/录屏仅能作为隔离审阅证据；灯晕、柳叶、门洞、细链、山缘及透明边的实图视觉结论尚为 NOT_TESTED。23.995 MiB 是四张全画布 RGBA8 简单估算，不能充当显存/设备 PASS。Creator、目标设备和本批 Gate2 仍未验证或批准。"
+    }
+  ],
+  "next_action": "Tech Lead 对 SHA-256 129f5a0aef67fc4cfd809637e6b1e87ae8278db1705f41ba1fbdda96036831dc 的同一 `PREFLIGHT_PLAN.md` 独立签认源/画布/预算/取证范围；Tech 签认前 Art 不进入后续切图实图审查，不提交最终 ART_REVIEW 或 DELIVERABLE。"
+}

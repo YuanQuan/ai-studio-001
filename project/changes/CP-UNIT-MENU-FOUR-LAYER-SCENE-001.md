@@ -2,10 +2,12 @@
 
 - 日期：2026-10-05
 - 来源：用户明确指定“以当前的资源作为单元示例1的场景资源”，要求四层前后移动比例 `1:1:0.8:0.3`、支持缩放、竖屏；若需改图须提前告知。
-- 状态：`PRODUCT_USER_APPROVED / ART_GATE1_USER_REVIEW`。用户于 2026-10-05 明确批准 `UNIT-MENU-SCENE1-SCOPE-001 v0.1`，此前 Product、Art、Tech、Client、QA 与 Master 的同版评审均已通过。本四层资源独立的制作与切图预案 v0.1 已完成 Art、Tech、Client、Master 评审并提交用户审阅；产品批准不等于该预案 Gate1、具体切图效果 Gate2 或 Creator 接入已获批准。
+- 状态：`PRODUCT_USER_APPROVED / ART_GATE1_USER_APPROVED / CUT_BLOCKED`。用户于 2026-10-05 明确批准 `UNIT-MENU-SCENE1-SCOPE-001 v0.1`，此前 Product、Art、Tech、Client、QA 与 Master 的同版评审均已通过。用户随后明确批准本四层资源制作与切图预案 `UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001 v0.1`，Producer 已记录 Gate1 批准。`UNIT-MENU-FOUR-LAYER-CUT-001 v0.1` 已对既有 PSD 与四张全画布层图完成只读静态核验，Art、Tech、Master 均要求补齐动态拖缩与透明边证据后复审；具体切图效果 Gate2 与 Creator 正式接入尚未获批准。
 - 资源版本：`deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd` 及同目录 `layer_sources/` 四张原始 PNG。不得用旧 `UnitSamples.scene`、旧 Demo 图片或另一版校色层替换。
 - 来源权利补充：用户于 2026-10-05 明确声明拥有原图及商用改编权；这是用户声明的来源证据，不冒充独立法律核验。Art 须把声明、原图到四张生成图及 PSD 的版本链和相似性初筛纳入本资源正式交接记录。
 - 最新决定：用户于 2026-10-05 明确撤回“首屏桥与月亮同见”的要求，并指示不改动美术资源。此前短暂启动的桥月同见修订与改图预案已取消；v0.1 产品候选稿中“不要求桥与月亮同时在首帧”的表述继续适用，原 PSD 与四张 PNG 保持不变。
+- 旧任务处置：旧 `UNIT-MENU-BASE-ASSET-001` 的“空固定底板”语义与当前获批四层场景冲突，已取消该正式任务；其历史 Gate1 不继承到当前图组。当前图组只使用已锁定的 PSD、原 PNG、全画布层 PNG 与既有重组效果图，未获用户新指令不修改美术像素。
+- 当前证据缺口：现有五张竖屏静帧和 12 组数学边界不足以核定连续拖缩中的灯晕、柳叶、门洞、链条、山缘及天空透明末列。主线程浏览器安全策略拒绝访问本地隔离预览，并明确禁止通过其他浏览器入口规避；因此本批动态视觉仍为 `NOT_TESTED`。当前没有已证实必须改动像素的坐标；须取得可复验动态画面并由 Art/Tech/Master 重审，不能把本批视为 Gate2 已通过。
 
 ## 与已批准规格的差异
 

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech 独立预签的同版文字预案为 PREFLIGHT_PLAN.md，SHA-256 129f5a0aef67fc4cfd809637e6b1e87ae8278db1705f41ba1fbdda96036831dc，与 ART_PREFLIGHT.json 所签版本一致。签认仅覆盖当前 PSD、四张原 PNG、四张既有全画布 PNG 和既有 PSD 回读重组图的只读审查、同源版本化范围；不授权改像素、补天空、修边、重导出或替换图片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已重新读取文件字节及图像：PSD SHA-256 为 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed，2172×724、四层；原图与全画布图的 8 个 SHA-256、尺寸及模式均与预案表一致。逐层读取 PSD 原始通道后，四张全画布 PNG 与对应 PSD 层的 alpha 和所有 alpha>0 处 RGB 相等，原 PNG 按 (0,0) 放置后亦相等。天空源宽 2171，PSD 和全画布层的第 2172 列 alpha 全为 0；其余原图宽 2172。overall_from_psd.png 与 assembly_preview.png 文件 SHA-256 相同。透明像素的隐藏 RGB 不在可见像素相等结论内，过滤时可能产生的彩边须后续动态检查。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 2172×724 全画布 RGBA8 贴图合计 6,290,112 像素、25,160,448 字节，即 23.994873 MiB；这是单份解码像素面积估算，不是显存峰值、压缩或性能 PASS。2172px 宽超过 2048px 假设限制，目标平台纹理能力、SpriteFrame trim/offset/pivot、过滤/颜色空间、图集、DrawCall 与内存须在正式导入和目标环境验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "以统一适高缩放、前至后横移倍率 1:1:0.8:0.3 独立重算 720×1280 和 390×844、候选 1.00×/1.80×、中心及左右端共 12 组数学边界，四层取样横向均在各自源宽内。这仅证明该候选镜头公式的静态几何覆盖；连续拖缩的灯晕/柳叶/门洞/细链、Creator 导入、目标设备与 Gate2 效果均为 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Art 与 Tech 双预签后，按同一文件哈希和预案进入只读实图、alpha 边缘、竖屏动态取证与独立 Art/Tech Review；由 Client 讨论正式导入边界，Master 独立看图。未获得用户对具体切图版本与效果的 Gate2 明确批准前，不交 Client 正式 Creator 接入。若需要更改任何图片像素或输出规格，先停止并由 Master 向用户提出具体改动与影响。"
+}

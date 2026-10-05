@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "reviewer": "master",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已独立打开 current PSD 的 overall_from_psd.png、四张 2172×724 全画布 PNG，以及现有 720×1280 中心/左/右/右中途和 390×844 中心静帧。桥栏、柳树地面右廊、山峦远建筑、月云天空的后前层序与当前固定场景语义一致；桥区首帧可辨，用户已撤回桥月首帧同见要求。现有整体画面与五张竖屏静帧未见可确认的静态大面积错位或空白。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核本批 Gate1 审批记录为 UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001 v0.1 USER_APPROVED；Art 与 Tech 对 SHA-256 129f5a0aef67fc4cfd809637e6b1e87ae8278db1705f41ba1fbdda96036831dc 同一只读预案预签。CUT_MANIFEST.json 锁定当前 PSD SHA-256 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed、四层 SHA-256、画布原点与透明统计。Art/Tech 各自复核全画布 PNG 与 PSD 层 alpha 和可见 RGB 相等、现有回读重组图与 PSD 平面图相等。源 PSD/PNG 未改动。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "当前仅有五张历史竖屏静帧，缺 390×844 左右端、两种视口候选 1.80× 端点及连续拖动/缩放/复位的可复验画面。Art 与 Tech 的本批最终 Review 均为 CHANGES_REQUESTED。大面积半透明山雾、柳叶、桥灯/廊灯暖晕、门洞、细链、山缘及天空透明末列在运动采样下的脏边或接缝风险不能以像素静态相等排除；Gate2 视觉与技术效果尚未通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已尝试访问现有 127.0.0.1 隔离浏览器预览以补动态取证，浏览器安全策略明确拒绝该 URL 并禁止改走其他浏览器入口；已停止此路径。当前数学报告的 12 组镜头边界仅证明候选公式静态覆盖，不是动态画面、Creator 或目标设备 PASS。Client 的切图讨论已记录 2172px 纹理宽度、共同原点、trim/offset/pivot 与过滤风险；正式导入仍未授权。"
+    }
+  ],
+  "next_action": "本批保留为只读候选，不向用户申请具体切图效果 Gate2 批准，也不交 Client 正式接入。补齐可复验的两个竖屏视口中心/左右、候选缩放边界和连续拖缩/复位画面后，由 Art、Tech、Master 重新审查；若发现确需修改美术，先向用户说明图层、位置及影响并取得新决定。当前 PSD 与 PNG 继续保持原样。"
+}

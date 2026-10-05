@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已独立复核同版 CUT_MANIFEST.json 和 VISUAL_AND_EDGE_REVIEW.md 所指当前 PSD、四张原 PNG、四张 2172×724 全画布层 PNG 与整体图。PSD SHA-256 为 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed、2172×724、四层；全部图像的 SHA-256、尺寸、RGBA/天空源 RGB 模式与清单一致。按后到前层序逐层读取 PSD 原始通道，各层 alpha 与对应全画布 PNG 全像素相等，alpha>0 的 RGB 相等；原 PNG 按 (0,0) 放置后亦相等。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用清单四张全画布 PNG 在黑底按普通 alpha 从后到前重组，与 overall_from_psd.png、PSD 存储平面图逐像素相等；overall_from_psd.png 与 assembly_preview.png 文件哈希相同。四层透明/半透明/不透明像素数和最右列非零 alpha 数均与清单一致，零 alpha 像素隐藏 RGB 均为 0。天空原 PNG 仅 2171×724，PSD 与全画布层的第 2172 列 724 个 alpha 全为 0；这不是已补画内容。上述结论只证明当前切片与当前 PSD 的静态同源，不证明最初原图或其他背景下的动态光晕。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 2172×724 RGBA8 图共 6,290,112 像素，单份解码面积 25,160,448 字节（23.994873 MiB），尚未计 mipmap、对齐、CPU/GPU 副本或运行峰值。按统一适高缩放和前至后 1:1:0.8:0.3 倍率，独立重算 720×1280 与 390×844、候选 1.00×/1.80×、中心/左右共 12 组横向几何边界，均未越过各自源宽。2172px 宽可能超过 2048px 目标纹理能力，实际平台上限、压缩回退、trim/offset/pivot、过滤/颜色空间、图集/DrawCall、过绘、帧时间与驻留/峰值内存均为 NOT_TESTED；数学覆盖与静态网页图不能充当 Creator 或设备 PASS。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "现有竖屏可视证据只有 720×1280 左/中/右/右中途及 390×844 中心静帧；缺 390 左右、两个视口 1.80× 端点以及连续拖动、缩放与复位的可复验录屏。山峦、地面树右廊、桥栏前景分别含 1,284,171、1,051,178、436,349 个半透明像素；静态相等无法判定柳叶、桥灯/右廊灯晕、门洞、细链、山缘及天空透明列在运动采样下无脏边、闪烁或接缝。本批 Task 要求的动态边缘检查尚未完成，故 Tech 对 Gate2 技术效果不予 APPROVED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Client 已在 CLIENT_CUT_DISCUSSION.json 明确同画布原点 (0,0)、统一 pivot、禁自动 trim/旋转打包或补偿 offset 的导入契约；该讨论不等于正式导入。用户只批准本图组 Gate1，具体四层版本与效果 Gate2 未批准；当前 PSD/PNG 本轮未编辑、复制导出或替换，Creator 正式接入仍关闭。"
+    }
+  ],
+  "next_action": "补齐 720×1280 与 390×844 的中心/左右、候选缩放两端及连续拖动、缩放、复位的可复验画面证据，并由 Art/Tech 分别复审半透明边、灯晕、门洞、细链、山缘与天空列；Creator/目标设备与贴图预算在 Gate2 批准后正式接入阶段实测，未测前保持 NOT_TESTED。如目标设备确有 2048px 上限或实图出现需改像素的缺陷，先由 Master 向用户说明具体图层、区域、成本和视觉影响，未经新决定不得改图或分片。Art 与 Tech 未各自通过完整 Gate2 审查前，不把该切图版本提交用户作为可批准的最终效果。"
+}
