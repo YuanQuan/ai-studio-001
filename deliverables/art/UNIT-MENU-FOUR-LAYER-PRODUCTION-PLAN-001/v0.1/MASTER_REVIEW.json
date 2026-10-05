@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立核对 ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、RIGHTS_AND_SOURCE.md、CUT_COLLABORATION_PLAN.md、现有 PSD 回读合成及 720×1280 中心/右端竖屏样张。方案以用户选定四张原始 PNG 与四层 PSD 为唯一图像输入，记录原图商用改编权用户声明、PSD/四 PNG 哈希、天空原图少一列和现有全画布 PNG 的来源；不把最初整图误称为当前 PSD 的逐像素目标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案与用户已批准的 UNIT-MENU-SCENE1-SCOPE-001 v0.1 一致：固定树、灯、纸船属于现有画面；竖屏首屏桥区可辨、无需桥月同屏；四层前到后 1:1:0.8:0.3 横向视差和共同缩放，1.00–1.80×仅为隔离预览候选。用户最新要求不改动美术资源，方案因此只允许 Gate1 前只读检查，获批及预签后只按字节相同方式核验/版本化现有文件；任何像素修改须先向用户说明并取得新决定。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art、Tech Lead、Client 的同版 Review 均 APPROVED，批准对象仅为 v0.1 制作与切图预案文本。已核同尺度重组、竖屏动态透明边/灯晕、天空 1 像素宽差、2172px 纹理和约 23.99 MiB 基础面积均列入后续实图与设备验证；当前没有 Creator 导入、触控、目标机性能或 Gate2 实图审查通过的证据。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户原图权利声明已记录，PSD 到四层的直接来源链可追；完整图像生成记录、外部相似性初筛和目标设备清单仍需在正式资源生产/验收前补齐。现有四张全画布 PNG 不能仅凭文件存在被视为正式获批切片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本 Master Review 仅批准将该 Gate1 v0.1 方案提交用户审批；不批准资源本身、切图 Gate2、Creator 接入或任何图片编辑。旧空景 Gate1 的审批不继承到当前四层图组。"
+    }
+  ],
+  "next_action": "Art 将 DELIVERABLE.json 的九项 Required Artifact、五项验收及四方同版 Review 更新为齐备和 PASS；Producer 复核后推进本方案 USER_REVIEW。Master 向用户呈 ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、RIGHTS_AND_SOURCE.md、CUT_COLLABORATION_PLAN.md 和方案边界请其明确决定。若批准，Art/Tech 先同版预签，随后以原样文件开展实际切图与同尺度重组审查，Gate2 另请用户批准；若出现必须改像素的情况，先停下并说明区域和视觉代价。"
+}

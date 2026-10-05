@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版 v0.1 方案文本技术预审通过。只读重算当前 PSD 和四张 layer_sources PNG 的 SHA-256，均与 RIGHTS_AND_SOURCE.md 一致；文档正确区分 2172×724 PSD/全画布层图与 2171×724 天空原始 PNG，透明最右列不被写成已补画内容。此结论仅覆盖方案，不是实际切图或 Creator 运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "视觉锚点和切图协作方案保持四层共同原点、后到前层序、统一缩放及前到后 1:1:0.8:0.3 的水平位移；720×1280 为设计视口，390×844 已明确为候选竖屏测试视口，1.00–1.80× 仅为候选测试范围。桥区首屏可辨但月亮无需同屏，与已批准产品 v0.1 一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户禁止改动美术资源的边界已写明：Gate1 前只读；Gate1 后及 Art/Tech 同版预签范围内才可核验或逐字节复制已有文件；天空补列、修 alpha/光晕、裁切、缩小、分片或更改导出像素均须先告知用户并重新决定。现有 psd_full_canvas_layers 可作为候选实图复核，但不因已有文件就视为 Gate2 获批。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "天空原图少 1 列、透明层的半透明 RGB/灯晕与柳叶边缘、2172px 宽纹理对 2048 上限设备的兼容，以及约 23.99 MiB RGBA8 基础面积，均属于后续真实导入和动态采样风险。方案已列同尺度重组、两种竖屏视口、连续拖缩、纹理设置、内存和性能取证；当前均不得宣称实测通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案正确区分制作前 Gate1、首图前 Art/Tech 预签、实际切图的 Art/Tech Review、具体效果 Gate2 用户批准和随后 Client 正式接入；网页隔离预览与旧空景资源审批没有被用于替代这些门禁。"
+    }
+  ],
+  "next_action": "待 Client 与 Master 对相同 v0.1 独立评审后，将方案交用户 Gate1 审批。用户批准后，Art 与 Tech Lead 对本批源 hash、画布/层序、候选视口、导入设置和目标设备预算作同版文字预签，再在不改图约束下检查现有全画布层图、动态 alpha 与宽纹理兼容；实图 Gate2 技术结论须另行提交。"
+}

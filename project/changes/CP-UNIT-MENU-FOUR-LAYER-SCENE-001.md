@@ -2,7 +2,7 @@
 
 - 日期：2026-10-05
 - 来源：用户明确指定“以当前的资源作为单元示例1的场景资源”，要求四层前后移动比例 `1:1:0.8:0.3`、支持缩放、竖屏；若需改图须提前告知。
-- 状态：`IMPACT_REVIEW_COMPLETE / PRODUCT_USER_REVIEW`。用户指令确立目标资源及演示方式；`UNIT-MENU-SCENE1-SCOPE-001 v0.1` 已完成 Product、Art、Tech、Client、QA 与 Master 的同版评审，等待用户审批。这不等于 `UNIT-MENU-BASE-ASSET-001` v0.2 的 Art/Tech 切图 Review、第二次用户审批或 Creator 接入已完成。
+- 状态：`PRODUCT_USER_APPROVED / ART_GATE1_USER_REVIEW`。用户于 2026-10-05 明确批准 `UNIT-MENU-SCENE1-SCOPE-001 v0.1`，此前 Product、Art、Tech、Client、QA 与 Master 的同版评审均已通过。本四层资源独立的制作与切图预案 v0.1 已完成 Art、Tech、Client、Master 评审并提交用户审阅；产品批准不等于该预案 Gate1、具体切图效果 Gate2 或 Creator 接入已获批准。
 - 资源版本：`deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd` 及同目录 `layer_sources/` 四张原始 PNG。不得用旧 `UnitSamples.scene`、旧 Demo 图片或另一版校色层替换。
 - 来源权利补充：用户于 2026-10-05 明确声明拥有原图及商用改编权；这是用户声明的来源证据，不冒充独立法律核验。Art 须把声明、原图到四张生成图及 PSD 的版本链和相似性初筛纳入本资源正式交接记录。
 - 最新决定：用户于 2026-10-05 明确撤回“首屏桥与月亮同见”的要求，并指示不改动美术资源。此前短暂启动的桥月同见修订与改图预案已取消；v0.1 产品候选稿中“不要求桥与月亮同时在首帧”的表述继续适用，原 PSD 与四张 PNG 保持不变。

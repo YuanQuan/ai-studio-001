@@ -1,0 +1,55 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "owner": "art",
+  "summary": "提交当前四层 PSD 与四张原始 PNG 的 Gate1 正式制作预案，锁定不改图的视觉锚点、来源权利、切图映射及后续动态/技术核验证据；本任务未修改、复制导出或生成图片。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/CUT_COLLABORATION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/TECH_PREFLIGHT_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "方案准确指向当前 PSD 和四张原始 PNG 的版本、哈希、层序及 2172×724 画布，记录天空源宽 2171 的已知差异和用户拥有原图商用改编权的声明",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第1节和 RIGHTS_AND_SOURCE.md：列明 PSD 与四 PNG SHA-256、后到前层序、2172×724 画布、天空源宽 2171 及用户 2026-10-05 权利声明；仅只读复核哈希。"
+    },
+    {
+      "criterion": "锁定竖屏首屏桥区可辨、月亮不要求同屏、四层 1:1:0.8:0.3 水平视差和统一缩放的视觉锚点；固定树、灯、纸船与未来独立对象的语义符合已批准产品 v0.1",
+      "result": "PASS",
+      "evidence": "VISUAL_ANCHORS.md 各项锚点与 ART_PRODUCTION_PLAN.md 第2节；对应已批准 PRODUCT_DELTA.md 的固定场景与未来独立对象边界。"
+    },
+    {
+      "criterion": "制作方法明确保持当前 PSD/PNG 像素与构图不变，列出允许的只读核验、同源复制和程序参数调整；任何需要改动图片的处理均另提方案先告知用户，不在本任务执行",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第3节、CUT_COLLABORATION_PLAN.md 第1与3节：分别界定 Gate1 前只读、Gate1 后获批范围内的字节相同复制、镜头/采样参数调整及改图暂停和提前告知。"
+    },
+    {
+      "criterion": "列出从当前 PSD 到四层交付、同尺度重组、720×1280 与另一竖屏视口动态边缘/光晕检查的证据清单，并说明 1 像素天空宽差、2172px 纹理、alpha 与性能风险如何在不改图前提下先测",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第4与5节、CUT_COLLABORATION_PLAN.md 第2与3节：列出现有四张全画布 PNG、PSD 映射、双视口动态录屏、alpha/灯晕与天空边界、纹理上限及内存/过绘的实测清单；未将估算当实测。"
+    },
+    {
+      "criterion": "Art、Tech、Client 和 Master 对同一 v0.1 方案完成各自 Review；本任务仅申请 Gate1 用户审批，不把已有隔离预览或旧空景 Gate1 当成当前资源 Gate2 或正式 Creator 验收",
+      "result": "PASS",
+      "evidence": "同一 v0.1 的 ART_REVIEW.json、TECH_PREFLIGHT_REVIEW.json、CLIENT_IMPACT_REVIEW.json、MASTER_REVIEW.json 均已落盘且各自 decision 为 APPROVED。此 PASS 仅指 Gate1 方案四方评审齐备；用户尚未批准本 Gate1，具体切图 Gate2、正式 Creator 与目标设备均未测试/未获批。"
+    }
+  ],
+  "assumptions": [
+    "用户已批准 UNIT-MENU-SCENE1-SCOPE-001 v0.1，明确不改动当前美术资源且无需桥月首屏同见。",
+    "以用户指定的四张原始生成 PNG 和现 PSD 为本批唯一图像输入；历史全画布 PNG 与重组图仅作为已存在的候选和验证文件。",
+    "网页隔离预览 1.00–1.80× 倍率只用于提出验证矩阵，正式倍率和目标机阈值尚未锁定。"
+  ],
+  "risks": [
+    "天空源宽 2171 比 PSD/全画布 PNG 少 1 像素；真实采样是否露边未验证，本任务禁止补画。",
+    "半透明层的桥灯暖晕、柳叶边、右廊门洞与细链在连续拖缩及 Creator 过滤/压缩后可能出现色边；必须先观察、再决定是否提出局部修订。",
+    "2172px 宽超过部分 2048 纹理上限，约 23.99 MiB RGBA8 仅为静态估算，目标设备兼容与内存/过绘未实测。",
+    "用户已声明原图商用改编权；权属文件、完整生成记录与第三方相似初筛尚未独立核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

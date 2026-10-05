@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 对本 v0.1 制作预案文本自审通过：现 PSD/四 PNG 身份、哈希和画布准确，视觉锚点遵循已批准产品语义，明确不改图及 Gate1/Gate2 边界。APPROVED 仅指方案文本的 Art 评审，不是现有切图实图视觉通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户 2026-10-05 声明拥有原图及商用改编权；直接源文件到 PSD 的复制和组装链已记录，权属文件、完整生成记录与第三方相似初筛未由本任务独立核验。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "天空原始输入 2171×724，而 PSD 与现有四张全画布 PNG 为 2172×724；额外最右列透明。当前不修补或重导出，后续真实竖屏边界和采样检查若有问题再向用户说明。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "桥灯及走廊灯光晕、柳叶/门洞、栏杆细链和半透明山缘的动态表现尚无 Creator/目标设备实测；禁止以静态网页样张代替正式视觉结论。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Tech、Client、Master 对本同一 v0.1 方案的独立 Review 尚未由 Art 提交；只有这些评审齐备，才可由 Master 向用户申请 Gate1。旧空景 Gate1 和隔离预览不能跨版本替代。"
+    }
+  ],
+  "next_action": "请 Tech Lead、Client、Master 分别审阅本 v0.1 四份方案及当前资源事实；通过后向用户提交 Gate1 制作方案审批。批准后 Art/Tech 再同版预签，在不改图约束下核现有文件并准备具体切图 Gate2 证据；任何需要改像素的方案先告知用户。"
+}

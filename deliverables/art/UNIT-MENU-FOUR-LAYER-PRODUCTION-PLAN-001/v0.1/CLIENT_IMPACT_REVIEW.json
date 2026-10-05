@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅批准同版 v0.1 的 Gate1 制作方案可提交用户审阅，不批准实际切片、Creator 接入或运行效果。方案与已批准的示例1产品 v0.1 一致：桥区首屏可辨，月亮无须同屏；四层从前到后水平位移为 1:1:0.8:0.3，统一缩放、原点 (0,0)、保持后到前层序，不改当前 PSD 或 PNG。"
+    },
+    {
+      "severity": "INFO",
+      "message": "客户端实施可依据 2172×724 的 PSD/全画布切片坐标建立共同画布原点；天空原 PNG 为 2171×724，其全画布版本最右列透明，不得把这一列当作已补画。Creator 3.8.8 的 SpriteFrame trim、offset、pivot、Atlas 自动处理及节点尺寸须在后续同源导入核对，确保层间不发生相对位移；任何重采样、挤边或修改切片像素须先走用户决定。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "线性过滤、颜色空间、alpha 混合、mipmap 与压缩格式可能改变柳叶、门洞、细链和暖灯光晕的动态边缘表现。方案已要求 720×1280 与 390×844 首帧、左右端、倍率端点及连续拖缩实图和录屏复查；网页预览和静态合成不能作为 Creator alpha 或光晕 PASS。若现有像素无法靠合规导入设置复现效果，应记录图层、局部区域和视觉差异，先告知用户，不在客户端静默修图。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "720×1280 是设计视口，390×844 是候选比例；实际 Canvas 适配、异形屏安全区和触控区域必须用运行时可见视口计算四层共同 cover、横向边界与重置位置。1.00–1.80× 只是候选倍率，不能写死为获批范围。真正的鼠标/单指拖动、双指缩放、UI 控件输入隔离、越界回拖和重置行为仍为 NOT_TESTED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "四层 RGBA8 基础面积约 23.99 MiB，2172px 宽可能触及 2048px 纹理上限；实际目标平台的导入回退、常驻与加载峰值、透明过绘、DrawCall、帧时间和触控性能均未测。正式接入前需按预案锁目标设备和导入配置，取得真实测量；不得由 PNG 磁盘体积或 12 组数学覆盖推断性能与设备兼容已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现有四张全画布 PNG 仍是待核的候选实图。只有 Gate1 用户批准、Art/Tech 同版首图前预签、实际切图与同尺度重组的 Art/Tech Review、Master 看图及具体版本 Gate2 用户批准均完成后，Client 才能将对应 hash 的切片正式接入 Creator Scene/Prefab；旧空景审批或隔离网页预览均不能代替该门禁。"
+    }
+  ],
+  "next_action": "Master 将本 Client 方案影响评审与 Art、Tech 同版 Review 一并提交用户 Gate1 审阅；获批后由 Art/Tech 完成首图前预签和真实切图验证。Client 后续参与源 hash、全画布对齐、导入设置、竖屏安全区及动态边缘讨论，待具体切图 Gate2 获用户批准后再正式接入并提供 Creator 与目标设备运行证据。"
+}

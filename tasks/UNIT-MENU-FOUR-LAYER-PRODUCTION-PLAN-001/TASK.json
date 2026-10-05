@@ -1,0 +1,42 @@
+{
+  "id": "UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001",
+  "title": "单元示例1当前四层资源的正式制作与切图预案",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "将用户已选的当前四层 PSD 与四张原始 PNG 作为单元示例1的待批准正式资源输入，提出保持像素与画面不变的制作、切图、同尺度重组和竖屏验证方案；先完成 Art/Tech/Client/Master 同版评审，再提交用户 Gate1 制作方案审批，不在本任务编辑或重新导出图片。",
+  "inputs": [
+    "用户 2026-10-05 明确批准 UNIT-MENU-SCENE1-SCOPE-001 v0.1，且指示不改动美术资源、不要求桥与月亮首屏同见",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd、layer_sources/、source_hashes.json、overall_from_psd.png、validation.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-ART-PREFLIGHT-001/v0.1/ART_ASSESSMENT.md",
+    "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_ASSESSMENT.md",
+    "deliverables/master/UNIT-MENU-PARALLAX-PREVIEW-001/v0.1/REVIEW.md、geometry_report.json、stills/",
+    "rules/visual_production_contract.md、rules/approval_protocol.md"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/CUT_COLLABORATION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/TECH_PREFLIGHT_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "方案准确指向当前 PSD 和四张原始 PNG 的版本、哈希、层序及 2172×724 画布，记录天空源宽 2171 的已知差异和用户拥有原图商用改编权的声明",
+    "锁定竖屏首屏桥区可辨、月亮不要求同屏、四层 1:1:0.8:0.3 水平视差和统一缩放的视觉锚点；固定树、灯、纸船与未来独立对象的语义符合已批准产品 v0.1",
+    "制作方法明确保持当前 PSD/PNG 像素与构图不变，列出允许的只读核验、同源复制和程序参数调整；任何需要改动图片的处理均另提方案先告知用户，不在本任务执行",
+    "列出从当前 PSD 到四层交付、同尺度重组、720×1280 与另一竖屏视口动态边缘/光晕检查的证据清单，并说明 1 像素天空宽差、2172px 纹理、alpha 与性能风险如何在不改图前提下先测",
+    "Art、Tech、Client 和 Master 对同一 v0.1 方案完成各自 Review；本任务仅申请 Gate1 用户审批，不把已有隔离预览或旧空景 Gate1 当成当前资源 Gate2 或正式 Creator 验收"
+  ],
+  "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "当前用户指令禁止改动美术资源；正式 Gate1 批准仅允许按获批方案核验、版本化和准备原样交付，若任何环节需修改像素必须先提出新用户决定。",
+    "Art/Tech 首图前同版预签及切图效果 Gate2 用户审批为独立后续门禁；Client 仅可提供技术意见，正式接入仍关闭。"
+  ]
+}
