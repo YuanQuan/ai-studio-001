@@ -1,6 +1,12 @@
 # 工作流状态
 
-Producer维护当前流程事实；更新时间：2026-10-02（Asia/Shanghai）。UNIT-RESTART-20261002：用户退回加宽全景，选用未加宽非像素附件；孟桃奶茶店旧v0.4概念退回，v0.5重新制作。
+2026-10-05 最新门禁：用户明确取消本组织自行切图及用户提供 PSD/导出 PNG 时的切图效果专业复审和额外预览环境前置环节。示例1现有 PSD、四张 PNG 与同尺度重组图已核版本并形成 v0.3 用户审核包；Gate2 当前 `USER_REVIEW`，等待用户审核具体结果，未获批准。v0.1 专业退回和 v0.2 Art 浏览器审查保留历史；PSD/PNG 原样，Creator 正式接入仍关闭。
+
+2026-10-05 先前增量（历史快照）：用户指定的四层场景用于单元示例1，已追加隔离预览、产品范围修订、Art/Tech 只读预审、当前图组 Gate1 制作预案及 Gate2 切图审查任务线。以下 2026-10-03 的 33 条统计及旧空景叙述保留为历史快照；本图组当前门禁以新增任务行及审批记录为准。Product v0.1 六方同版评审通过，用户明确批准，于 2026-10-05 14:36:14 +08:00 登记，Task DONE；当前资源 Art 预案 v0.1 已 9/9 Required、五项 PASS、Art/Tech/Client/Master 四份同版 Review APPROVED；用户于 2026-10-05 15:24:18 +08:00 明确批准本四层图组 Gate1，Task DONE。用户已声明拥有原图及商用改编权，此为声明证据，未独立核验权属或完整生成链。用户先前明确撤回“首屏桥与月亮同见”，并要求不改动美术资源；当前 PSD 与四张 PNG 保持原样，任何图像修改不启动。切图 v0.1 的 16/16 Required 文件已落盘，静态同源与同尺度重组三项验收 PASS；Art/Tech/Master Review 均 CHANGES_REQUESTED。用户已允许本机 127.0.0.1:8765 用于本图组预览，Master 通过 CUA 实看两种竖屏、1.0/1.8 倍及左右端拖动，旧访问阻塞解除；可持久追溯的新动态证据和 v0.2 正式 Review 尚未落盘，Task REVISION，不推定动态验收通过。四层切图 Gate2 与 Creator 正式接入继续关闭。
+
+本轮 continuity check：产品与当前资源 Gate1 预案均为 `DONE`；当前四层切图 v0.3 已提交 `USER_REVIEW`，这是本轮下一用户门禁。预览、v0.1 专业退回和 v0.2 Art 审查均保留历史，不再阻挡用户直接审核；Gate2 尚未批准，Creator 正式接入关闭。最近一次流程复盘见 project/WORK_RETROSPECTIVE_LOG.md 的 WR-20261005-003。旧空景 BASE Task 已取消，其活动 v0.2 草案标 `SUPERSEDED`，旧空景 Gate1 不继承。撤回的桥月同屏改图工作不再作为活动任务。
+
+以下为 2026-10-03 历史快照（由 Producer 当时维护，非当前四层图组状态）。当时范围：七项单元示例先仅第1项空场景；正式资源制作方案 v0.1 Gate 1 已 USER_APPROVED。R3 天空＋R5 月亮＋山雾 R2 A 的中央三层探索小样经 Art 阶段审图与 Tech 后验通过。Stage1 首张 `GROUND_STREET` 街面 Art 判 REVISE（街面过浅、两坡脚透明、水口过宽），岸/水/月影顺序停机；街面 R2 预案 Tech 判 CHANGES_REQUESTED，R2B 修订待完成新同版双签。BASE 仍 REVISION/DRAFT；旧 R1–R4 探索保留隔离历史，第2–7项暂缓，切图效果 Gate 2 未开始，Client 正式接入关闭。历史 UNIT-RESTART-20261002 记录仍保留。
 
 ## 汇总
 - 正式任务线：23 <!-- UNIT-NEXTSTAGE-20261002 -->

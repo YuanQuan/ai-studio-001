@@ -4,7 +4,7 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "在用户已批准的当前四层制作方案 v0.1 下，不修改 PSD、四张原始 PNG 或既有全画布层图，完成 Art/Tech 同版预签、现有四层切图版本锁定、同尺度重组及竖屏视差视觉与技术 Review，再把具体切图版本与效果提交用户 Gate2 审批。",
+  "objective": "在用户已批准的当前四层制作方案 v0.1 下，保持 PSD、四张原始 PNG 及既有全画布层图不变，核对切片版本与同尺度重组，直接向用户呈现具体结果供 Gate2 审核；取消切图效果专业复审和额外预览环境前置门禁。",
   "inputs": [
     "用户 2026-10-05 明确批准 UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001 v0.1 Gate1，且要求不改动美术资源、不要求桥月首屏同见",
     "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
@@ -17,12 +17,9 @@
     "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_PREFLIGHT.json",
     "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_PREFLIGHT.json",
     "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CUT_MANIFEST.json",
-    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/VISUAL_AND_EDGE_REVIEW.md",
-    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/ART_REVIEW.json",
-    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/TECH_REVIEW.json",
     "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CLIENT_CUT_DISCUSSION.json",
-    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/MASTER_REVIEW.json",
-    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/DELIVERABLE.json",
     "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
     "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/01_01_94477409.png",
     "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/02_02_933386cf.png",
@@ -33,16 +30,18 @@
   "acceptance": [
     "当前四层专属 Gate1 已获用户明确批准；任何新的正式图片输出之前 Art 与 Tech 对同一版本的源 hash、画布、层序、贴图预算和导出范围完成文字预签，且本任务不改动任何已有美术资源",
     "四张现有 2172×724 全画布层图与 PSD 四层一一对应，源路径、SHA-256、画布原点、alpha、层序及天空内容实际仅 2171 列的差异均在切图清单可追溯",
-    "现有四层按原位同尺度重组与当前 PSD 合成效果一致；Art 逐锚点审查桥/栏杆、树/灯廊、山与建筑、月云天空及固定纸船/灯光，不把最初整图当成逐像素目标",
-    "在 720×1280 与另一候选竖屏视口的中心、左右端及批准或候选缩放边界审查连续拖缩中的灯晕、柳叶、门洞、链条、山缘和透明边；静态网页/数学检查与 Creator/目标设备证据分开记录，未测试项不得判通过",
-    "Art、Tech 对具体切图与重组实图独立 Review，Client 参与切图与导入边界讨论，Master 独立看图；仅四方证据充分时推进用户对具体版本的 Gate2 审批，获批前不交 Client 正式 Creator 接入"
+    "现有四层按原位同尺度重组与当前 PSD 合成效果一致，重组图向用户展示；不把最初整图当成逐像素目标",
+    "执行 Agent 直接展示具体 PSD、四张 PNG、同尺度重组效果和版本清单供用户 Gate2 审核；不以专业复审或额外预览环境作为前置门禁",
+    "用户对具体版本明确批准前不交 Client 正式 Creator 接入；竖屏连续拖缩、纹理与目标设备效果在接入和 QA 阶段另行验证，未测项不得判通过"
   ],
   "dependencies": ["UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001", "UNIT-MENU-SCENE1-SCOPE-001"],
-  "status": "BLOCKED",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "先复用当前 PSD 和已经存在的全画布层图/重组图，不重新生成或修补。只读检查、截图/录屏和文档可作为审阅证据；若实测表明必须改像素，立即停下并向用户提前呈具体范围与效果。",
     "旧空固定底板资源 Task 与此图组语义不同，不继承其 Gate1/Gate2。候选网页预览可作为动态检查的隔离证据，但不冒充 Creator 或设备。",
-    "2026-10-05：静态同源、切图清单、同尺度重组已完成；动态可复验视觉证据因浏览器安全策略拒绝 127.0.0.1 预览而缺失。Art/Tech/Master 三方 Review 均 CHANGES_REQUESTED，Task BLOCKED；Gate2 不申请，源图不改。"
+    "2026-10-05：静态同源、切图清单、同尺度重组已完成；动态可复验视觉证据因浏览器安全策略拒绝 127.0.0.1 预览而缺失。Art/Tech/Master 三方 v0.1 Review 均 CHANGES_REQUESTED；Gate2 不申请，源图不改。",
+    "2026-10-05：用户明确允许本机 127.0.0.1:8765 仅用于示例1四层预览审查，Master 已通过 CUA 访问并实看两种竖屏、1.0/1.8 倍及左右端拖动画面，原浏览器访问阻塞解除。Art 正独立复核；尚无可持久追溯的新动态证据或 v0.2 正式 Review，故本任务从 BLOCKED 转 REVISION，保留 v0.1 CHANGES_REQUESTED，不推定任何验收 PASS。",
+    "2026-10-05：用户最新指令取消切图效果专业复审和额外预览环境门禁，现有用户提供 PSD/PNG 直接提交 v0.3 实际结果；旧评审保留历史。当前仅等待用户 Gate2 审核，未获批准前 Client 正式接入关闭。"
   ]
 }

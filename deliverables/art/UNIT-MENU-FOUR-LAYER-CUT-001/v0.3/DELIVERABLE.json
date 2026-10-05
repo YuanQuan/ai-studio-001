@@ -1,0 +1,40 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CUT-001",
+  "owner": "art",
+  "summary": "按用户最新指令，直接提交当前四层 PSD、四张原位全画布 PNG 与同尺度重组图供 Gate2 用户审核；取消切图效果专业复审及额外预览环境前置环节，文件未改动。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/01_01_94477409.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/02_02_933386cf.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/03_03_23db4183.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/04_04_c82fb659.png",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 制作方案已获用户批准，本次直接审核仅涉及现有四层资源",
+      "result": "PASS",
+      "evidence": "tasks/UNIT-MENU-FOUR-LAYER-PRODUCTION-PLAN-001/ARTIFACT_APPROVAL.json；USER_REVIEW_PACKET.md"
+    },
+    {
+      "criterion": "PSD 与四张 PNG 的版本、层序、尺寸、原点和 SHA-256 可追溯且未改动",
+      "result": "PASS",
+      "evidence": "v0.1/CUT_MANIFEST.json；2026-10-05 对 PSD 与四张 PNG 重新执行 SHA-256 核对均一致"
+    },
+    {
+      "criterion": "现有同尺度重组结果可查看并与 PSD 平面合成一致",
+      "result": "PASS",
+      "evidence": "deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png；v0.1/CUT_MANIFEST.json"
+    },
+    {
+      "criterion": "用户对具体切图版本和效果作 Gate2 审核",
+      "result": "NOT_TESTED",
+      "evidence": "本版已提交 USER_REVIEW，等待用户明确决定；不预填通过"
+    }
+  ],
+  "assumptions": ["用户提供的 PSD 与输出 PNG 原样交接，不重新切图或修图。"],
+  "risks": ["天空原始输入仅 2171 列，最右列透明；Creator 纹理过滤和目标设备显示未测。", "正式倍率、触控边界和运行性能需在 Gate2 后的 Creator 接入阶段验证。"],
+  "status": "READY_FOR_REVIEW"
+}
