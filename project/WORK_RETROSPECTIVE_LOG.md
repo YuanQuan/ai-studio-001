@@ -50,3 +50,12 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 主要原因（观察与推断分开）：观察为用户直接批准具体切图并明确分阶段 Web 测试，Tech v0.1 已逐项列出旧条款冲突和待审预算；无工具故障或返工耗时证据。推断为若下游继续引用旧实体机措辞可能重复阻塞；尚未发生下游开工，不能记为已造成延误。
 - 建议：Producer 在 Client/QA 下一版开工包 Review 时逐项核对 `DEC-UNIT-MENU-WEB-TEST-005` 与 Tech v0.1 审批状态，预期避免错用实体机门禁；代价为一次短门禁核验，风险是技术稿若被用户退回须重核依赖；复核节点为 Client/QA 开工包提交。Tech Lead 在运行验收前给出可复验 Web 视口矩阵与数值预算供用户另审，预期减少 QA 临时补条件的返工；代价是需锁定浏览器/视口/采样口径，复核节点为 Web 预算 USER_REVIEW。
 - 后续复核：WR-20261005-003 的直接交用户审核已达成 Gate2 用户决定；其是否减少平均等待仍证据不足。本文两项建议待复核。
+
+### WR-20261005-005｜示例1技术稿 v0.1 退回与双目录 v0.2 送审
+
+- Owner / 结果 / 证据路径 / 当前门禁：用户要求 `UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.1` 补美术交付/Cocos 正式资源双目录、用途描述和统一命名，旧版未获整版批准；Tech Lead 修订 v0.2，Art、Client、Tech、Master 同版 Review 均 `APPROVED`。Producer 核九项 Required、六项同序 PASS 和六个源文件 SHA-256 后送 `USER_REVIEW`。证据见 `tasks/UNIT-MENU-SCENE1-TECH-RUNTIME-001/ARTIFACT_APPROVAL_v0.1.json`、当前 `TASK.json`/`ARTIFACT_APPROVAL.json`、`deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/`、`project/ASSET_HANDOFF_REGISTRY.md`。v0.2 尚待用户决定，工程导入与运行未测。
+- 起止时间、时区、总耗时与已知分段：2026-10-05 18:21:25（Asia/Shanghai）为 v0.1 用户修订反馈的审批记录时间；18:35:15 Producer 本轮读取 Task/Review；18:37 登记 v0.2 送审节点。Tech 实际编制、Art/Client/Master Review 各自起止、用户等待与工具操作分段缺可靠时间，整个执行周期总耗时未知；不能将约 16 分钟节点间隔计为制作时长。
+- 慢的判断依据：尚无同类双目录交接规格基线，无法断定本轮偏慢。可证实的返工范围是用户在 v0.1 审阅时新增明确的资源路径/命名要求；未见工具故障或专业 Review 反复退回记录。
+- 主要原因（观察与推断分开）：观察为 v0.1 缺逐件美术交付与 Cocos 正式资源双目录说明，用户明确要求后才形成 v0.2 登记和命名稿；Creator 目标路径仍为计划、UUID 待生成。推断为未来若只维护单端目录可能再次产生资源版本错配，当前尚无实际错配证据。
+- 建议：Client 在获批开工包下首次导入四张 PNG 与 Prefab 时按 `project/ASSET_HANDOFF_REGISTRY.md` 分项回填实际路径、源/目标 hash、`.meta`/子资源 UUID 和 Scene 引用；预期减少资源身份不清的返工，代价为一次逐件登记，复核节点为 Client 实施报告的 Tech/Art Review。Producer 在下一次资源交接审批前核登记中的“已存在/计划”状态和用户批准版本；预期阻止未导入路径被当成可消费资源，代价为门禁检查，复核节点为下一批正式资源入库。
+- 后续复核：WR-20261005-004 对 Client/QA 开工包和 Web 预算的建议仍待相关版本提交；本文建议待复核。

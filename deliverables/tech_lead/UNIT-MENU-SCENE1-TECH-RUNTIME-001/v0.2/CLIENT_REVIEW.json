@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已按当前 Creator 3.8.8 工程只读核对：本批计划的 apps/client/assets/units/background/textures/ 与 prefabs/ 尚未创建，四张 tex_ 文件及 pf_street_base_01.prefab 无现存同名资源或 UUID 冲突；旧 StreetBase.prefab 仅是既有技术稿中的候选路径。"
+    },
+    {
+      "severity": "INFO",
+      "message": "交接登记表已逐件分列美术交付目录/文件名和计划 Creator 目录/文件名，四张源 PNG 的实际文件与 SHA-256 均核对一致；母版与审核合成图标明不接入，计划路径保持 PLANNED_NOT_IMPORTED，符合用户所需的双目录追踪。"
+    },
+    {
+      "severity": "INFO",
+      "message": "统一 snake_case、tex_/pf_ 等类型前缀、稳定资产 ID 与文件名分离、同一 Prefab/UUID 供独立和组合入口复用的规则可在现工程实施；现有旧 Demo 资产不因本稿被要求批量改名。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前工程 PNG .meta 同时包含 image 主 UUID 与 texture、spriteFrame 子资源 UUID；同版规范和登记表已明确分别回填。后续 Client 导入时还须核实际目录/文件名、源/目标哈希、导入设置、Prefab/Scene 引用及运行证据，本次只读评审不代表 Creator 导入或运行 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "rules/artifact_contract.md 的登记要求对现有项目可执行，仅要求交接记录与既有角色核对；文档明确不新增用户审批门禁。"
+    }
+  ],
+  "next_action": "Tech Lead 汇总同版 Art、Client 与技术评审，Master 复核后提交用户审核 v0.2；用户批准技术规格及后续 Client FEATURE_BRIEF/QA TEST_PLAN 开工包前，Client 不导入本批正式资源或修改运行场景。"
+}

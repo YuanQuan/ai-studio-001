@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 保留 v0.1 的四层坐标、Web 分阶段与性能边界，新增六个源文件的实际 hash 核对、四层逐件双目录/文件名分列和计划工程路径；PSD 与审核图明确不接入。PNG image 主 UUID、Texture2D/SpriteFrame 子资源 UUID 及 Prefab UUID 各有独立回填字段。该结论仅评技术方案，不代表 Creator 已导入或 Web 已运行。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "旧 Tech v0.2 的 StreetBase.prefab 是候选路径；本版改提 pf_street_base_01.prefab 以统一命名，保持 STREET_BASE_01 逻辑 ID 与单 Prefab 同源原则。Client 创建前须核现存同名/引用，实际 UUID 由 Creator 生成并回填，不预填。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "2172 宽纹理、半透明边、实际压缩格式、Web 多模拟视口的画面和性能均未运行；正式倍率、浏览器矩阵和硬阈值继续分别走 Client Brief 与运行验收前审批，不得从本 Review 推出 PASS。Art/Client 对交付及工程路径仍需同版独立 Review。"
+    }
+  ],
+  "next_action": "交 Art 核交付源与描述、Client 核工程目录和命名落地性，再由 Master 独立 Review、用户审核 v0.2；获批后 Client/QA 各自修订开工包，正式导入时回填 project/ASSET_HANDOFF_REGISTRY.md。"
+}

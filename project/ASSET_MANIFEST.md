@@ -1,6 +1,10 @@
 # 项目美术资产索引
 
-用户已退回加宽稿，选定 v0.4 未加宽非像素附件为视觉参考；孟桃单元 v0.5 三图与拆件方案已获用户批准。七菜单 Product 与 Art/Tech/UI/VFX v0.2 已于 2026-10-03 获用户批准；`UG_GHOST_01` / `BENCH_01` 已有真正可编辑源与导出，Art/Tech 及 Master Review 已通过，**仍待用户审批及 Creator/目标机接入验收**。`STREET_BASE_01` 也已产出真实 16 张分层纹理和同源预览，Art/Tech 成品 Review 已通过、待 Master/用户审阅。其他对象尚无生产源/骨骼/图集证据。每个生产对象由各自正式 Manifest 维护尺寸、格式、状态和源路径。
+## 示例1四层背景：当前已批交付入口
+
+`STREET_BASE_01_L01`–`L04` 的**实际美术目录、逐件文件与 SHA-256、层用途、Gate2 版本**，以及对应 **Creator 计划目录与待导入状态**，统一查 [美术交付与工程资源交接登记](ASSET_HANDOFF_REGISTRY.md)。四层 PSD 母版和同尺度整体审核图在该登记中单列为“不接入”；四张正式 PNG 的 Gate2 `v0.3` 已获用户批准。Creator 文件、`.meta`、UUID 和运行效果仍待 Client 实际导入与验证。下文 `UNIT-MENU-BASE-ASSET-001` 的 16 图空景为历史候选，不代表本次获批四层图组，也不能替代其交接记录。
+
+用户已退回加宽稿，选定 v0.4 未加宽非像素附件为视觉参考；孟桃单元 v0.5 三图与拆件方案已获用户批准。七菜单 Product 与 Art/Tech/UI/VFX v0.2 已于 2026-10-03 获用户批准；`UG_GHOST_01` / `BENCH_01` 已有真正可编辑源与导出，Art/Tech 及 Master Review 已通过，**仍待用户审批及 Creator/目标机接入验收**。历史 `UNIT-MENU-BASE-ASSET-001` 候选曾为 `STREET_BASE_01` 产出 16 张分层纹理和同源预览，Art/Tech 成品 Review 曾通过，但该任务已取消、v0.2 审批状态为 `SUPERSEDED`，不覆盖上方示例1四层已批交付。其他对象尚无生产源/骨骼/图集证据。每个生产对象由各自正式 Manifest 维护尺寸、格式、状态和源路径。
 
 | Asset ID | 名称 | 类型 | Source Artifact | Format/Size | 状态 | 用途 | 说明 |
 |---|---|---|---|---|---|---|---|
@@ -63,10 +67,10 @@
 
 本批 1024×512 atlas 基础 RGBA8 为 2 MiB，不能据单页推断一次 DrawCall；详细来源、首轮退稿审计、权利与质量边界见同版 `RIGHTS_AND_SOURCE.md`、`QUALITY_REPORT.md`。正式 SpriteFrame/Prefab UUID 由 Client 在资源获用户批准后建立。
 
-## 当前真实空底板候选｜UNIT-MENU-BASE-ASSET-001 v0.1 REV2
+## 历史空底板候选｜UNIT-MENU-BASE-ASSET-001 v0.1 REV2
 
 | 对象 | 可编辑源与实际导出 | 当前状态与后续门禁 |
 |---|---|---|
-| `STREET_BASE_01` | [本批正式 Manifest](../deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md)：3072×1024 SVG 母版、16 张独立 PNG / 42 placements、7 张竖屏审阅图、源/层哈希与真桥洞 alpha；RGBA8 基础 8.4375 MiB | 原版/REV1/REV2 每轮先 Art/Tech 双签后出图，round0/round1 均保留。Art/Tech 成品 Review 已通过，待 Master/用户资源审批；Creator 拖缩、桥上顾客、真机性能和菜单 1/7 同 UUID 均 `NOT_TESTED`。 |
+| `STREET_BASE_01` 历史候选 | [历史 Manifest](../deliverables/art/UNIT-MENU-BASE-ASSET-001/v0.1/ASSET_MANIFEST.md)：3072×1024 SVG 母版、16 张独立 PNG / 42 placements、7 张竖屏审阅图、源/层哈希与真桥洞 alpha；RGBA8 基础 8.4375 MiB | 原版/REV1/REV2 出图过程保留追溯；Art/Tech 成品 Review 曾通过，但正式任务已取消，v0.2 审批状态为 `SUPERSEDED`。不作为示例1四层 Gate2 已批资源；Creator 拖缩与菜单 1/7 同 UUID 均 `NOT_TESTED`。 |
 
 本批空景不烘奶茶店、人物、板凳、可切换树花灯、纸船蜡烛或暖 VFX。审阅合成全景不作为运行纹理；同源复用与 DrawCall 由后续 Creator/目标机实测，不按 16 图静态数量推断运行批次。

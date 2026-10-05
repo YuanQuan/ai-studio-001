@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已按 Gate2 USER_APPROVED 的 UNIT-MENU-FOUR-LAYER-CUT-001 v0.3 与 CUT_MANIFEST.json 复核：四张正式全画布 PNG 均为 2172×724，实际 SHA-256、从后到前层序、0.3/0.8/1.0/1.0 位移系数与登记表逐项一致；PSD 母版和整体审核图的实际 SHA-256 也一致。L04 的桥、栏杆、河水与前景描述经查看实图相符。"
+    },
+    {
+      "severity": "INFO",
+      "message": "project/ASSET_HANDOFF_REGISTRY.md 将每张图的实际美术交付目录与文件名分列，能逐件定位现存文件；Creator 端目录和文件名均明确为计划，状态 PLANNED_NOT_IMPORTED，实际工程文件、.meta、UUID 和运行证据留待 Client 导入后回填。PSD 母版与整体审核图标为不接入，不能误作运行纹理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_PATH_AND_NAMING_SPEC.md 明确 Art 核美术源、描述和版本，Client 核工程目标、导入参数和真实 UUID，Tech 核映射及复用；旧 16 图空景候选不充当本批已批资源。已在 project/ASSET_MANIFEST.md 顶部的“示例1四层背景：当前已批交付入口”加入指向同一交接登记的链接，并将旧候选标为历史取消。"
+    },
+    {
+      "severity": "INFO",
+      "message": "rules/artifact_contract.md 的双目录登记条款仅提供可追溯交接与命名约定，明确不替代 Gate2 用户审批、技术评审或运行 QA；本评审也不对尚未导入的 Creator 资源或运行效果给出 PASS。"
+    }
+  ],
+  "next_action": "提交同版 Tech、Client、Master Review 和用户审核；获批后由 Client 按开工包实际导入并回填工程文件及真实 UUID，Art 再核源图映射与运行画面。"
+}

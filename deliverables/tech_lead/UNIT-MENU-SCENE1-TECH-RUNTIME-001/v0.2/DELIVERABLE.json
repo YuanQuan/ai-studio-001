@@ -1,0 +1,57 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "owner": "tech_lead",
+  "summary": "修订示例1 Creator Web 接入技术稿，新增美术交付与 Creator 正式资源双目录登记、逐件用途/hash/稳定 ID、统一工程文件命名和导入后 UUID 回填契约；保留 v0.1 及 Web 分阶段性能边界。当前只提交方案，工程导入和运行均未测试。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/PERFORMANCE_GATE_IMPACT.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/RESOURCE_PATH_AND_NAMING_SPEC.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/ART_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/CLIENT_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "锁定四张获批 PNG 的后前层序、统一原点与同尺度导入规则，列出 SpriteFrame trim/pivot/纹理设置、UUID/哈希追踪及 2172px 宽兼容风险，不声称未运行的环境 PASS",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第2节与 ASSET_HANDOFF_REGISTRY.md；本轮实际复核 PSD、四 PNG、重组图六个文件 SHA-256 全部与 CUT_MANIFEST.json 相同；导入和运行明确 NOT_TESTED。"
+    },
+    {
+      "criterion": "给出竖屏有效视口中的四层 1:1:0.8:0.3 水平位移、统一缩放、左右边界、重置和 UI 触控优先级的可实现契约；候选 1.0–1.8 倍与正式批准范围分开",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第3–4节保留 v0.1 公式、输入和复位契约；正式倍率/初值仍由 Client FEATURE_BRIEF 明示后审批。"
+    },
+    {
+      "criterion": "对照已批 Tech v0.2 标出实体机条款与最新用户指令的冲突；采用已获用户明确选择的分阶段路径，定义当前 Web 多模拟手机分辨率测试与后续性能预算审批边界，不填写虚构实体机、阈值或 PASS",
+      "result": "PASS",
+      "evidence": "PERFORMANCE_GATE_IMPACT.md 第1–3节保留旧条款对照和现行 DEC-UNIT-MENU-WEB-TEST-005 的 Web 路径；v0.2 增加资源映射要求，不改性能边界。"
+    },
+    {
+      "criterion": "说明后续 Client Feature Brief、正式接入、Creator 截图录屏及 QA 在何种批准/实测之后才能分别开始或判 PASS，不改美术源或运行代码",
+      "result": "PASS",
+      "evidence": "TECH_RUNTIME_SPEC.md 第5节、PERFORMANCE_GATE_IMPACT.md 第2–3节给出分阶段门禁；本轮仅新增文档，未改美术源或 Creator 代码。"
+    },
+    {
+      "criterion": "交付双目录资源登记：四张已批 PNG 各有稳定资产 ID、美术实际路径、用途描述、哈希/版本、计划 Cocos 正式资源路径与命名，明确计划路径和 UUID 不能冒充已导入事实；母版/审核图标为不接入",
+      "result": "PASS",
+      "evidence": "RESOURCE_PATH_AND_NAMING_SPEC.md 第1–2节和 project/ASSET_HANDOFF_REGISTRY.md 逐件分列美术目录/文件名与计划 Creator 目录/文件名，登记四 PNG、PSD、审核重组图及计划 Prefab；Creator 目标均标 PLANNED_NOT_IMPORTED 或计划，实际目录、文件与 UUID 待回填。"
+    },
+    {
+      "criterion": "给出可供后续正式资源复用的 Cocos 路径与文件命名约定、类型前缀、字符/大小写、唯一性、版本替换与 .meta/UUID 追踪；Art、Client 对各自职责完成同版 Review",
+      "result": "PASS",
+      "evidence": "RESOURCE_PATH_AND_NAMING_SPEC.md 第3–4节已提出路径、tex_/pf_/scn_/mat_/anim_、snake_case、唯一性和 .meta/UUID 回填，并区分 image 主 UUID、Texture2D/SpriteFrame 子资源 UUID 与 Prefab UUID；同版 ART_REVIEW.json 与 CLIENT_REVIEW.json 均为 APPROVED。PASS 仅针对方案和跨角色评审，Creator 导入/运行仍 NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "示例1现阶段验收仅覆盖 Web 多模拟手机分辨率，实体手机/小游戏容器不在本阶段。",
+    "现有 STREET_BASE_01 是逻辑对象 ID；旧空景候选已取消，本批四层资源尚无 Creator UUID。",
+    "初始 cameraX=0、z=1 和 zMax=1.8 只是后续取证候选，不代表最终批准倍率。"
+  ],
+  "risks": [
+    "旧 Tech v0.2 的 StreetBase.prefab 候选路径与本版统一命名路径不同；本版尚待 Art/Client/Master/用户审核，Client 实施前需以获批版锁定。",
+    "2172 像素宽、透明边与约 23.99 MiB 基础 RGBA8 面积未经 Creator Web 实测；Web 矩阵与硬阈值仍待运行验收前另审。",
+    "Creator 正式图片/Prefab、.meta、UUID 与 Scene 引用尚不存在；不得把计划目录或同名视为导入成功。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

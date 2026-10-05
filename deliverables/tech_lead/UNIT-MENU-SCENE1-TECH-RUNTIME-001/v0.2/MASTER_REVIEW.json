@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-TECH-RUNTIME-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 将用户要求的两端目录和资源描述落实为逐件交接登记：四张已批切图各有稳定 ID、实际美术目录与文件、用途、SHA-256 和 Gate2 版本；Creator 目录与文件名分列且明确标为计划。PSD 母版、审核图不接入运行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Tech、Art、Client 同版 Review 均已批准；Cocos 新正式资源命名使用小写 snake_case 和类型前缀，导入后分别回填 image 主 UUID、Texture2D/SpriteFrame 子资源 UUID、Prefab UUID 与引用。登记和命名规则已同步当前项目 Studio Layer 与主 Studio 标准模板，项目具体四层路径只在当前项目记录。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本评审仅批准提交用户审核的技术方案，不是用户对 v0.2 的批准。Creator 文件、.meta、UUID、Web 模拟分辨率画面和性能数据尚未产生，运行结论保持 NOT_TESTED；Client 正式接入仍须等待本技术稿及自身开工包获用户批准。"
+    }
+  ],
+  "next_action": "Producer 核对 v0.1 退回与 v0.2 审核证据，登记 v0.2 USER_REVIEW；向用户提交修订稿及登记表，请其对具体 v0.2 版本审核。"
+}

@@ -4,7 +4,7 @@
   "type": "tech",
   "owner": "tech_lead",
   "parent": null,
-  "objective": "在示例1产品增量与当前四层切图 Gate2 已获用户批准的前提下，为 Client 编码前确定四层资源导入、竖屏视差/缩放/边界、触控和复用的技术契约，并评估已批 Tech v0.2 的目标设备及性能门禁如何落实；本任务不改图片或运行代码。",
+  "objective": "根据用户对 v0.1 的反馈，保留四层场景 Creator Web 接入方案，并补齐美术交付资源到 Cocos 工程正式资源的双目录映射、用途描述、稳定身份和工程资源统一命名；本任务不改图片或运行代码。",
   "inputs": [
     "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED）",
     "deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md 与 tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json（Gate2 USER_APPROVED）",
@@ -12,26 +12,35 @@
     "deliverables/tech_lead/UNIT-MENU-FOUR-LAYER-TECH-PREFLIGHT-001/v0.1/TECH_ASSESSMENT.md（只读预审）",
     "project/changes/CP-UNIT-MENU-PERF-GATE-001.md（历史 PROPOSED，实体机路线已由用户澄清覆盖）",
     "project/changes/CP-UNIT-MENU-WEB-TEST-GATE-002.md（用户明确选择分阶段与 Web 多模拟手机分辨率）",
-    "apps/client/ 当前 Creator 3.8.8 工程（只读审计）"
+    "apps/client/ 当前 Creator 3.8.8 工程（只读审计）",
+    "用户对 v0.1 的反馈：基本没问题，但须有文档记录美术交付与 Cocos 正式资源的目录、资源描述，并统一规划 Cocos 资源命名；v0.1 未获整版批准"
   ],
   "deliverables": [
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/TECH_RUNTIME_SPEC.md",
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/PERFORMANCE_GATE_IMPACT.md",
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/DELIVERABLE.json",
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/TECH_REVIEW.json",
-    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.1/MASTER_REVIEW.json"
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/PERFORMANCE_GATE_IMPACT.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/RESOURCE_PATH_AND_NAMING_SPEC.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/ART_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/MASTER_REVIEW.json"
   ],
   "acceptance": [
     "锁定四张获批 PNG 的后前层序、统一原点与同尺度导入规则，列出 SpriteFrame trim/pivot/纹理设置、UUID/哈希追踪及 2172px 宽兼容风险，不声称未运行的环境 PASS",
     "给出竖屏有效视口中的四层 1:1:0.8:0.3 水平位移、统一缩放、左右边界、重置和 UI 触控优先级的可实现契约；候选 1.0–1.8 倍与正式批准范围分开",
     "对照已批 Tech v0.2 标出实体机条款与最新用户指令的冲突；采用已获用户明确选择的分阶段路径，定义当前 Web 多模拟手机分辨率测试与后续性能预算审批边界，不填写虚构实体机、阈值或 PASS",
-    "说明后续 Client Feature Brief、正式接入、Creator 截图录屏及 QA 在何种批准/实测之后才能分别开始或判 PASS，不改美术源或运行代码"
+    "说明后续 Client Feature Brief、正式接入、Creator 截图录屏及 QA 在何种批准/实测之后才能分别开始或判 PASS，不改美术源或运行代码",
+    "交付双目录资源登记：四张已批 PNG 各有稳定资产 ID、美术实际路径、用途描述、哈希/版本、计划 Cocos 正式资源路径与命名，明确计划路径和 UUID 不能冒充已导入事实；母版/审核图标为不接入",
+    "给出可供后续正式资源复用的 Cocos 路径与文件命名约定、类型前缀、字符/大小写、唯一性、版本替换与 .meta/UUID 追踪；Art、Client 对各自职责完成同版 Review"
   ],
   "dependencies": ["UNIT-MENU-SCENE1-SCOPE-001", "UNIT-MENU-FOUR-LAYER-CUT-001", "UNIT-MENU-TECH-DESIGN-001"],
   "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "用户本轮“批准”只针对切图 Gate2，不视为对性能分阶段提案、具体倍率、Client 开工包或运行质量的批准。",
-    "用户已明确选择分阶段路径，并澄清现阶段只做 Web 多模拟手机分辨率测试、非实体机测试；技术稿及 Client/QA 开工包仍须按版本完成专业评审与用户审核。"
+    "用户已明确选择分阶段路径，并澄清现阶段只做 Web 多模拟手机分辨率测试、非实体机测试；技术稿及 Client/QA 开工包仍须按版本完成专业评审与用户审核。",
+    "2026-10-05：用户反馈 v0.1 主体基本可行，但要求双目录资源说明和统一 Cocos 命名，故 v0.1 未获整版批准；保留快照并以 v0.2 修订。",
+    "2026-10-05：v0.2 九项 Required、六项验收 PASS，Tech/Art/Client/Master 同版 Review APPROVED；Producer 核验送 USER_REVIEW，尚无用户对 v0.2 的批准。"
   ]
 }
