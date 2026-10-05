@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "reviewer": "art",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "美术资源交接子项核验通过：已将 Gate2 USER_APPROVED v0.3 的四张 2172×724 PNG 与 apps/client/assets/units/background/textures/ 下四张目标文件逐件计算 SHA-256，源/目标均相等，且与 project/ASSET_HANDOFF_REGISTRY.md 中 L01–L04 哈希一致。四层 ID、从后到前的天空/远山/地面/桥河前景描述及计划文件名对应正确。此结论仅证明静态文件按字节复制，目标 PNG 未作艺术改图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "登记表仍区分实际美术交付目录和目标 Creator 目录；四条状态为 COPIED_HASH_VERIFIED_CREATOR_IMPORT_BLOCKED。纹理目录目前只有四张 PNG，无对应 .meta；PSD 母版和整体审核图未进入该目录。Client 实施报告与 DELIVERABLE.json 如实记录复制完成、Creator 导入/真实 UUID/Prefab/Scene 未完成，全部整项验收仍 NOT_TESTED。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator Editor 导入索引受阻，pf_street_base_01.prefab、scn_unit_menu_scene1.scene、资源 .meta/UUID 及实际运行画面均不存在；Art 不能核实际节点层序、合成观感、接缝或有无运行时 tint/裁切，因此本版完整 Art 集成评审为 BLOCKED。不得把静态复制子项通过当作整 Task、Creator 导入或用户运行效果批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Gate2 切图效果 v0.3 已由用户批准；本 Review 不新增切图效果复审环境，也不重审 PSD 切图。"
+    }
+  ],
+  "next_action": "Client 排除 Creator 导入阻塞后，补真实 .meta/UUID、Prefab、Scene、工程引用及可查看的 Web 实际画面；Art 只对届时的源图映射和运行视觉作同版续审。完成 Tech/QA/Master 评审前，不推进本实现 Task 至 USER_REVIEW 或 DONE。"
+}

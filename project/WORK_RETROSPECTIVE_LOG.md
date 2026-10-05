@@ -76,3 +76,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 慢的判断依据与原因：没有同类 Creator 接入基线，也没有本轮可证实的阻塞或返工，暂不判定慢。可观察到登记表正确区分真实美术源与计划 Creator 路径，首批复制哈希一次一致；真实 `.meta`/UUID 尚待 Editor 生成，不能从图片复制推断导入完成。
 - 建议与复核：Client Owner 在 Creator 实际导入后逐件回填 `.meta`、主/子 UUID、设置、目标 hash 与 Scene 引用；预期减少资产身份错配，代价为逐项登记，复核点为实施包 Art/Tech Review。Producer 在实施包送 `USER_REVIEW` 前核实这些值来自真实 Editor 文件和项目登记，并逐项区分 `PASS`/`NOT_TESTED`；预期避免计划态冒充验收，代价为一次身份链检查，复核点为本实施 Task 门禁。
 - 后续复核：WR-20261005-006 的验收原文逐字检查已用于两包结案核验；是否减少返工尚无后续样本。WR-20261005-005 的 UUID 回填建议在本 Task 实施后复核。
+
+### WR-20261005-008｜示例1 Creator 实施受阻收敛
+
+- Owner / 结果 / 证据路径 / 门禁：Client 在 `UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001 v0.1` 产出四张哈希一致的目标 PNG、控制脚本、U10 导航、资源登记和部分实施报告；Art/Tech/QA/Master 同版 Review 均 `BLOCKED`。Tech 复审静态关闭有效视口与 UI 第二触点两项源码 MAJOR，独立 tsc 检查 exit 0；Creator `.meta`/真实 UUID、Prefab、Scene、编辑器冒烟和运行证据仍缺，七项完整验收均 `NOT_TESTED`，Task `BLOCKED`、Approval `DRAFT`，未送用户或运行 QA。证据见本 Task Packet、`deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/`、`project/ASSET_HANDOFF_REGISTRY.md` 和四目标 PNG。
+- 时间与耗时：2026-10-05 19:24（Asia/Shanghai）Owner 记录首份 PNG 实产；19:33:37/19:33:52 控制器和 Gallery 修改时间，19:39:03 初版报告修改时间；19:55:09 Producer 核四份 Review 后登记整体 BLOCKED。首项实产到阻塞登记间隔约 31 分 09 秒，包含源码、导入尝试、评审与流程核验，不能当作 Client 实际制作时长。Creator 尝试、专业 Review、工具等待和用户等待的独立耗时均无可靠分段，实际总制作耗时未知。
+- 慢的判断与原因：尚无同类 Creator 导入基线，不评价角色速度。直接观察为 Creator 安装路径的引擎缓存写入 EPERM 报错记录、后续无可确认项目窗口/索引及目标 `.meta`，使真实身份链与 Scene/Prefab 不能形成；Producer 未独立读取受限的项目日志，根因限于已有报告和专业 Review 的证据。源码两处静态问题经一次 Tech 复审关闭；实际运行风险仍未知。
+- 建议与复核：Master/Client 在恢复 Creator 项目可见性和索引后，由 Client 用 Editor 实际导入并逐件回填主/子 UUID、导入设置、Prefab/Scene 引用；预期消除无法核验正式资产身份的阻塞，代价为环境修复与逐件核对，复核点为下一次 Client 实施包 Art/Tech Review。Tech Lead 在 Creator 可用后用实际 Scene 与 Web 模拟视口验证安全区、尺寸变化和 UI 第二触点；预期发现静态检查遗漏，代价为运行冒烟，复核点为完整实现续审。Producer 在该前置证据出现前保持 BLOCKED/DRAFT，并复核 Web 矩阵/预算另审状态；预期避免部分静态 PASS 误作整项批准，代价为持续门禁追踪，复核点为阻塞解除申请。
+- 后续复核：WR-20261005-005/007 的 UUID 回填建议因 Creator 导入受阻未完成，恢复 Editor 后复核；WR-20261005-006 的验收逐字检查用于本包，七项条目与 Task 同序，质量收益仍缺后续样本。

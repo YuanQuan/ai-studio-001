@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "静态核对通过的范围：四张目标 PNG 与 Gate2 v0.3 对应源图逐件 SHA-256 相同，登记表逐件标为 COPIED_HASH_VERIFIED_CREATOR_IMPORT_BLOCKED；没有把计划路径、缺失的 .meta 或 UUID 冒充正式导入。Client 报告的 tsc --noEmit --skipLibCheck 源码检查 exit 0 只支持 TypeScript 源级结论，不支持 Creator 构建或运行 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "scene1_camera_controller.ts 已写入 z=1.00–1.80、初始 cameraX=0、四层比例 [0.3,0.8,1,1]、统一缩放和水平夹取、鼠标与触控手势、重置和监听解绑的源码路径；UnitSampleGallery.ts 的 U10 分支只导航至计划独立 Scene，未把旧九项资源复制为新背景。该评价仅是静态源码审查，层节点绑定及输入行为尚无 Editor/运行验证。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator 3.8.8 当前没有可确认的项目窗口/导入索引，四张 PNG 与控制器均无 Creator 生成的 .meta；pf_street_base_01.prefab 和 scn_unit_menu_scene1.scene 不存在。image 主 UUID、Texture2D/SpriteFrame 子 UUID、Prefab/Scene 依赖、trim/pivot/过滤/压缩设置以及编辑器冒烟都无法核验，故整项任务不能签 APPROVED 或送完整实现验收。需恢复 Editor 可用性，由 Creator 真实导入、创建/序列化资源并回填身份链。"
+    },
+    {
+      "severity": "INFO",
+      "message": "首轮有效视口 MAJOR 已在同版源码静态关闭：recalculate() 改取 SceneViewport 的 UITransform.contentSize，明确重新计算 coverScale=max(Vw/2172,Vh/724) 后求 visibleSourceWidth 与 cameraX 边界；输入点先转为该视口本地逻辑坐标。复审时发现一次遗漏 coverScale 重算的回归，Client 随即补回；本轮独立重跑 Creator 随附 tsc --noEmit --skipLibCheck exit 0。SceneViewport 实际安全区、节点坐标绑定与多视口画面仍待 Creator/Web 运行验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "首轮 UI 第二触点 MAJOR 已在同版源码静态关闭：触控 start/move/end/cancel 现由全局 input 监听；任一新触点落在 UI 捕获根、按钮或视口外时立即 clearGesture，第三指与鼠标/触控模式切换也清旧基准。onDisable 按相同 callback/context 解除监听。UI 命中层级与浏览器设备模拟触控事件顺序仍需 Creator/Web 实际验证，不能据静态代码判交互 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "IMPLEMENTATION_REPORT.md 与 DELIVERABLE.json 如实将完整资源导入、Prefab/Scene、UUID/引用链、运行冒烟及同版专业评审列为未完成或 BLOCKED；Web 多模拟视口、性能预算和正式 QA 未执行，不能据此 Review 标为 PASS。"
+    }
+  ],
+  "next_action": "两项源码 MAJOR 已静态关闭；Client 在 Creator Editor 可用后仍须完成四图真实导入、.meta/UUID、Prefab/Scene 与构建/编辑器冒烟，并在 Web 环境验证有效视口、安全区和 UI 双指事件。补齐登记表、实施报告及 Art/Tech/QA 同版完整评审后重新提交实现 Review。Master/Producer 对当前未完成范围维持真实阻塞记录，勿进入用户完整实现审批或 QA 运行。"
+}

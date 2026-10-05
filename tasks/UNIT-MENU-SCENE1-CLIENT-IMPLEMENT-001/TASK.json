@@ -48,12 +48,16 @@
     "UNIT-MENU-SCENE1-CLIENT-BRIEF-001",
     "UNIT-MENU-SCENE1-QA-PLAN-001"
   ],
-  "status": "IN_PROGRESS",
+  "status": "BLOCKED",
   "approval": "APPROVAL",
   "notes": [
     "用户于 2026-10-05 明确批准 Client Brief 与 QA Plan v0.1 并要求继续；允许本 Task 对示例1进行正式编码与四 PNG 导入。",
     "实施范围仅示例1；QA 执行门禁尚未打开。Web 模拟视口/浏览器/DPR矩阵、S03最终容差与性能预算仍须在运行验收前另行 USER_REVIEW。",
     "Creator 必须真实生成资源 .meta/UUID；若 Creator 导入能力不可用或生成证据无法验证，报告阻塞并停止伪造导入状态。",
-    "2026-10-05 19:24 +08:00：Client Owner 已将 Gate2 四张 PNG 实际复制到批准的 Creator 目标纹理目录，Producer 核目标 SHA-256 与登记表逐项一致；据首项 Required 实产记录 TASK_STARTED，Task 由 READY 转 IN_PROGRESS。Creator .meta/UUID、Prefab/Scene/代码和运行结果仍待实际验证。"
+    "2026-10-05 19:24 +08:00：Client Owner 已将 Gate2 四张 PNG 实际复制到批准的 Creator 目标纹理目录，Producer 核目标 SHA-256 与登记表逐项一致；据首项 Required 实产记录 TASK_STARTED，Task 由 READY 转 IN_PROGRESS。Creator .meta/UUID、Prefab/Scene/代码和运行结果仍待实际验证。",
+    "2026-10-05 19:34:24 +08:00（Producer 核验）：首份控制脚本 apps/client/assets/labs/menu/scene1_camera_controller.ts 已落盘，UnitSampleGallery.ts 已有示例1 U10 导航修改；这只证明代码产出，不代表 Creator 编译、Scene/Prefab 引用、.meta/UUID 或 Web 运行通过。Task 继续 IN_PROGRESS。",
+    "2026-10-05 19:39:25 +08:00（Producer 核验）：IMPLEMENTATION_REPORT.md 已落盘，记录四图 hash 与跳过第三方声明检查的 TypeScript 源码检查 PASS；Creator Editor 导入子项因引擎缓存写入 EPERM、无可见窗口/可读日志及 PNG .meta 而 BLOCKED，Prefab/Scene/UUID 未生成。Owner 仍继续可执行的 Review/交付结构，整体 Task 暂 IN_PROGRESS，不提前评审或用户门禁。",
+    "2026-10-05 19:47:07 +08:00（Producer 核验）：部分交付 DELIVERABLE 七项完整验收均 NOT_TESTED、status BLOCKED；Tech Lead 当时 TECH_REVIEW 决定 BLOCKED，并指出有效视口/安全区和 UI 第二触点立即取消手势两项 MAJOR 源码待修。Art/QA 评审及可修源码仍在推进，整体 Task 当时暂 IN_PROGRESS，不进入完整实现 USER_REVIEW 或 QA 运行。",
+    "2026-10-05 19:55:09 +08:00（Producer 核验）：Art、Tech、QA、Master 四份同版 Review 均已落盘且决定 BLOCKED；Tech 最新复审在控制器 SIZE_CHANGED 等源码修订之后，静态关闭两项源码 MAJOR，并独立 tsc exit 0。四 PNG hash PASS，但 Creator Editor 导入因 EPERM/无确认项目窗口及索引证据无法生成 .meta/UUID，Prefab、Scene 与运行冒烟缺失；所有七项完整验收仍 NOT_TESTED，后续无法靠当前可执行静态工作跨过必要门禁，Task 转真实 BLOCKED。解除条件：恢复 Creator 导入，生成真实资源身份链和 Scene/Prefab，完成编辑器冒烟及同版专业续审；Web 矩阵/性能预算和 QA 运行仍另审。"
   ]
 }

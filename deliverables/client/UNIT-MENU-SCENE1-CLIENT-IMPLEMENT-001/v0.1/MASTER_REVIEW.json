@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "reviewer": "master",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Client 已逐字节复制四张 Gate2 v0.3 PNG，目标与源 SHA-256 匹配；控制器与示例1 U10 导航源码已产出。Tech 对当前控制器复审，确认 SceneViewport.contentSize/coverScale=max(width/2172,height/724)、尺寸变化监听和 UI/视口外触点取消逻辑已静态核验；Creator 随附 TypeScript 检查 exit 0。资源交接登记表和获批 RESOURCE_PATH_AND_NAMING_SPEC.md 分别记录美术目录、Cocos 计划目录、稳定 ID、描述、hash 与命名约定，实际 UUID/导入参数留待 Creator 生成。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator 3.8.8 尚无可确认项目窗口/导入索引，四张 PNG 和控制器没有 Creator 生成的 .meta/真实 UUID，STREET_BASE_01 Prefab、独立示例1 Scene、资源引用和 Creator/Web 冒烟证据均缺失。因此现有源码检查与字节校验不能证明工程接入、画面、输入或运行通过。Art、Tech、QA 同版 Review 均为 BLOCKED；QA 未运行测试且未生成 TEST_REPORT。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户已批准 Client Brief 与 QA Plan 后授权继续实施。该批准不包含尚未提交的完整实现验收；Web 模拟视口/DPR矩阵、最终测量容差、性能预算及正式 QA 运行仍需后续单独批准。"
+    }
+  ],
+  "next_action": "等待 Creator 项目导入恢复：由 Creator 真实生成 .meta/UUID，创建并验证共用 Prefab 与独立 Scene，回填资源登记表，提供编辑器/Web 可复验证据；随后更新 Client 报告及交付摘要，并由 Art、Tech、QA 对完整同版产物续审。Web 矩阵、测量容差和性能预算获批前不启动正式 QA。解除阻塞且专业 Review 通过后再提交新的 Master Review 与完整实现版本用户审批；当前保持 BLOCKED，不生成最终接受记录，不标 DONE。"
+}

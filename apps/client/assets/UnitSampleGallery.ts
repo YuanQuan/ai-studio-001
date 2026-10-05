@@ -1,6 +1,6 @@
 import {
   _decorator, Color, Component, EventKeyboard, EventMouse, EventTouch, Graphics,
-  Input, input, KeyCode, Label, Node, Sprite, SpriteFrame, UITransform, Vec3,
+  director, Input, input, KeyCode, Label, Node, Sprite, SpriteFrame, UITransform, Vec3,
 } from 'cc';
 
 const { ccclass, property } = _decorator;
@@ -13,7 +13,7 @@ const MUTED = new Color(155, 178, 199);
 const PANEL = new Color(19, 34, 51);
 const GOLD = new Color(246, 189, 109);
 
-type UnitId = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+type UnitId = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
 type Cell = { row: number; col: number };
 type Actor = { node: Node; row: number; col: number; frame: number };
 
@@ -27,6 +27,7 @@ const UNITS = [
   ['U07', '场景轻特效', '切换灯光、水波、树叶微动'],
   ['U08', 'UI 与交互', '按钮状态、修复确认和返回操作'],
   ['U09', '密度与性能', '增加角色数量，观察样本帧率'],
+  ['U10', '四层场景镜头', '独立场景：四层视差、拖动与缩放'],
 ] as const;
 
 // Frames are serialized in UnitSamples.scene. The art is reused from assets/demo.
@@ -176,6 +177,10 @@ export class UnitSampleGallery extends Component {
   }
 
   private openUnit(id: UnitId): void {
+    if (id === 10) {
+      director.loadScene('scn_unit_menu_scene1');
+      return;
+    }
     this.unit = id;
     this.clearPage();
     const [number, name, detail] = UNITS[id - 1];

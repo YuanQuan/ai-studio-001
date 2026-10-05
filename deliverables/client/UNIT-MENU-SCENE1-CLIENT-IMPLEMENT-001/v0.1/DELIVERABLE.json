@@ -1,0 +1,64 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "实施过程中四张批准 PNG 已复制并验证哈希，示例1镜头控制器源码与 Gallery 导航已落盘；Creator 导入、真实 UUID、Prefab/Scene 创建因 Editor 导入索引阻塞而未完成。",
+  "artifacts": [
+    "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png",
+    "apps/client/assets/units/background/textures/tex_street_base_01_l04_foreground.png",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/ART_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐字节从 Gate2 v0.3 复制四张 2172×724 RGBA 全画布 PNG 到获批计划路径，逐件源/目标 SHA-256 相同；由 Creator 生成真实 .meta，分别登记 image 主 UUID、Texture2D 与 SpriteFrame 子 UUID、子资源键、导入设置和实际工程路径；母版与审核合成图不导入，不裁切、调色、压缩替换或重绘图像。",
+      "result": "NOT_TESTED",
+      "evidence": "四张目标 PNG 与 Gate2 源文件逐件 SHA-256 一致，证据见 project/ASSET_HANDOFF_REGISTRY.md；Creator 未完成导入，无 .meta 或 UUID，因此该组合验收尚未通过。"
+    },
+    {
+      "criterion": "创建 STREET_BASE_01 共用背景 Prefab 与独立 apps/client/assets/labs/menu/scn_unit_menu_scene1.scene；四层按后到前 `[0.3,0.8,1.0,1.0]` 系数顺序显示，保持相同 2172×724 画布、原点、居中锚点与几何尺度；Lab 控件留在 Scene，不放入正式背景 Prefab；UnitSampleGallery 只增加导航/切换。",
+      "result": "NOT_TESTED",
+      "evidence": "已写独立镜头控制器源码与 U10 导航；Creator Prefab 和独立 Scene 尚未创建，无法验证节点结构和运行引用。"
+    },
+    {
+      "criterion": "实现已批准 `{zMin:1.00,zMax:1.80,cameraX0:0,z0:1.00}` 镜头参数与 Tech v0.2 覆盖、视差、水平边界和统一缩放公式；实现水平拖动、缩放、重置、Web 鼠标/模拟触控共用状态、UI 捕获优先、手势取消、视口/DPR 变化重算及退出再进入复位。",
+      "result": "NOT_TESTED",
+      "evidence": "控制器使用 SceneViewport UITransform.contentSize，计算 coverScale=max(width/2172,height/724)，将输入点转换为 viewport 本地逻辑坐标，并在尺寸变化后重算/夹取；全局触控起点命中 UI/视口外时清除旧手势。Creator 随附 tsc源码检查 exit 0。安全区须由viewport布局体现，Creator Scene 尚未创建，因此运行时及DPR行为保持NOT_TESTED，Tech复审待确认。"
+    },
+    {
+      "criterion": "画面只包含批准的四层固定背景和隔离 Lab 控件，不添加店铺、角色、顾客、板凳、第4项独立对象、第7项组合内容或跨单元通用相机框架；不改动 UnitSamples 以外的既有样例或服务端/API。",
+      "result": "NOT_TESTED",
+      "evidence": "当前改动只触及示例1导航/镜头源码和四张获批背景文件；因 Scene/Prefab 未建立，最终画面范围仍待检。"
+    },
+    {
+      "criterion": "更新项目资源登记表为真实导入状态，逐件保留美术路径/hash、Creator 实际路径/hash、稳定 ID、尺寸、导入参数、Creator 版本/commit、image/Texture2D/SpriteFrame UUID、Prefab UUID、Scene 引用和受影响复用边界；四张资源与 Prefab 的正式身份链无空缺或伪造值。",
+      "result": "NOT_TESTED",
+      "evidence": "登记表保留稳定 ID、描述、美术目录/文件/hash、批准的正式目录/统一文件命名、目标文件hash及实际状态；Creator主/子UUID、导入设置和引用链作为明确待补字段，未填虚构值。"
+    },
+    {
+      "criterion": "实现报告记录变更范围、场景/Prefab职责、回滚方式、代码及工程检查、Creator/Web 可复验构建或编辑器打开证据；可执行的实现级冒烟验证逐项记录结果和证据，无法实际验证项如实 NOT_TESTED/BLOCKED，不宣称性能或多分辨率 QA PASS；不得运行正式 QA 用例或生成 TEST_REPORT。",
+      "result": "NOT_TESTED",
+      "evidence": "IMPLEMENTATION_REPORT.md 记录变更范围、回滚、哈希与源码检查、Creator阻塞和未测试边界；Creator/Web证据及正式QA仍未完成。"
+    },
+    {
+      "criterion": "Art、Tech Lead、QA 对本版实际资源映射、技术实现与测试可测性分别完成同版专业 Review，Master Review 与最终接受齐全；只有专业 Review 通过后提交用户审核，不将本 Task 标 DONE。",
+      "result": "NOT_TESTED",
+      "evidence": "ART_REVIEW.json、TECH_REVIEW.json、QA_REVIEW.json 与 MASTER_REVIEW.json 均已存在且判 BLOCKED；Tech 最新复审静态关闭两项源码 MAJOR，但 Creator 真实导入/Prefab/Scene、运行画面/事件验证缺失。Master 最终接受和用户审核未申请，整项验收未通过。"
+    }
+  ],
+  "assumptions": [
+    "Web 正式矩阵与性能阈值仍在后续运行验收前审批；当前仅作 TypeScript 源码检查。"
+  ],
+  "risks": [
+    "Creator 3.8.8 尚未提供可确认的可见项目窗口/导入索引；无 PNG .meta 与真实 UUID。",
+    "无 Prefab/Scene 序列化资源；无法完成 Creator 编辑器构建或 Web 运行验证。",
+    "正式QA未执行，未生成TEST_REPORT。"
+  ],
+  "status": "BLOCKED"
+}

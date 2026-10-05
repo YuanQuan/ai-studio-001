@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001",
+  "reviewer": "qa",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "范围受限评审：对照已批准 `UNIT-MENU-SCENE1-QA-PLAN-001 v0.1`，S01–S09 均有可观察的前置、操作、预期与证据设计；资源身份检查逐件要求源/目标路径与 SHA-256、Creator 导入后的 image/Texture2D/SpriteFrame UUID、Prefab/Scene 引用。性能计划单独列为 `SC1-PERF-001`。这些是测试设计可测性结论，不是实施通过或运行结果。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "当前工作区可见四张目标 PNG、`scene1_camera_controller.ts` 与 Gallery 源码；未见四张 PNG 的 Creator `.meta`、`pf_street_base_01.prefab`、独立 `scn_unit_menu_scene1.scene` 或其真实 UUID/引用链。IMPLEMENTATION_REPORT.md 与 ASSET_HANDOFF_REGISTRY.md 将 Creator 导入记为阻塞，记载引擎缓存写入 EPERM、无可确认 Editor 窗口/索引日志。故 QA 不能进入 S01–S06 Creator/Web 执行，也不能核验 S07/S08 以外的画面/输入验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本 QA Review 的上一版结论早于 Tech Lead 对当前同版源码的复审。最新 TECH_REVIEW.json 已静态确认 SceneViewport coverScale/本地坐标与全局 UI 第二触点处理修订，关闭首轮两个源码问题；Client 报告记载 tsc exit 0，Tech 复核也确认该结果。QA 未重跑编译或任何测试；Creator 场景事件路径仍无运行证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Tech 最新复审仍给整体 Client 实施 `BLOCKED`，但已关闭源码层面的视口计算和第二触点两个问题；其余阻塞与本 QA 结论一致，均落在 Creator 导入、Prefab/Scene 序列化、资源 UUID/引用链及运行/编辑器证据缺失。Art Review 同样因无 Creator 场景与画面证据而 `BLOCKED`。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Web 浏览器/模拟视口/DPR/输入矩阵、S03 最终测量容差与性能预算尚未获用户审批，符合分阶段决策下的运行前置阻塞。CLIENT_TEST_CASES.md 与 IMPLEMENTATION_REPORT.md 均将运行项标为 NOT_TESTED/BLOCKED；本 Review 未启动测试、未生成 TEST_REPORT，也未给出功能、视觉或性能 PASS。"
+    }
+  ],
+  "next_action": "Creator 导入阻塞解除后，由 Client 创建真实 PNG .meta/UUID、Prefab 与独立 Scene，回填登记表并提供 Creator/构建及运行证据，供 Art/Tech/QA 续审。本 Review 保持 BLOCKED 的唯一原因是缺少上述 Creator 资源/场景和运行证据。QA 不执行测试；未来正式 Web 验收仍须先获批矩阵、S03 容差与性能预算，再由 QA 另行执行并提交 TEST_REPORT。"
+}
