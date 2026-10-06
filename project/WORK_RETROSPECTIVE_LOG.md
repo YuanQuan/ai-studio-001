@@ -100,3 +100,36 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 慢的判断与原因：尚无同类 Creator 导入/场景建立基线，不评价角色速度。直接观察为首次导入解决“无 .meta/UUID”，22:32 的 Library 静态几何又解决旧自动裁切；但当前无可交互 Editor 建立/保存 Prefab 与 Scene。Client 报告的一次隔离 CLI build 有 `CreateFile 拒绝访问(0x5)`/FATAL 日志且无输出。能确认这条 CLI 路径失败；访问拒绝的底层原因及 GUI 恢复所需时间未知。
 - 建议与复核：Master/Client 在可交互 Creator Editor 中核四图 Inspector/Library，创建真实 Prefab/Scene 与引用链并取得成功构建/运行证据；预期解除当前可测性阻塞，代价为 Editor 环境恢复与逐项核验，复核点为下次 Client 完整交付。Art/Tech/QA 与 Master 在完整实产后分别同版续审，不沿用旧 BLOCKED Review 作为新通过；预期避免静态身份与几何证据被误判为功能通过，代价为一轮复评，复核点为下一次 `USER_REVIEW` 门禁。
 - 后续复核：WR-20261005-005/007/008 的真实 UUID 与同画布建议已部分完成；Prefab/Scene、Editor/Web 运行仍待复核。旧“Creator 无 .meta”和“L01/L04 Library 自动裁切”原因已失效，现阻塞如上；无本轮空转 `READY/IN_PROGRESS`。
+
+### WR-20261006-014｜Cocos CLI/内置浏览器治理Task启动
+
+- Owner / 结果 / 证据 / 门禁：`COCOS-CLI-BROWSER-POLICY-001`当前`IN_PROGRESS`。Producer核验第一批规则`rules/cocos_cli_browser_workflow.md`、共享skill及索引、两份reference和`CAP-20261006-COCOS-CLI-BROWSER.json`已落盘。Master报告Codex内置浏览器打开`http://localhost:7456`截图成功，并Canvas点击`[687,963]`进入既有U10四层页、再次截图成功；仅工具路线探测，不是正式QA。完整可行性/迁移报告、检查脚本、Studio/模板同步、全局安装、独立Review与最终生效记录待办。原U01实施Task仍BLOCKED。用户授权条件为专业Review通过后可直接应用并共享；本周期未宣称方法已获批准或已应用。证据见Task、首批治理文件及Master当轮浏览器结果。
+- 起止时间与耗时：Owner本轮实际开始时刻无精确记录；Producer于2026-10-06 13:57:41 +08:00核验产物与浏览器操作报告。完整实施周期尚未结束，耗时未知；制作、同步、Review与安装各自时长未知。
+- 速度与原因：没有组织级流程约束/共享skill治理任务的比较基线，不评价快慢。可确认治理草案已开始产生，浏览器跑通一个既有U10入口；尚无独立验证脚本和跨仓同步完成证据。
+- 建议与复核：Master/Tech/Client/QA完成独立行为Review与脚本对象图校验后，Producer核对当前Game、Studio主仓与标准模板路径及skill hash一致性；复核点为Required齐全且Review通过。Master按用户授权条件记录直接生效；未满足前不得写APPLIED/USER_APPROVED。Producer保持U01实施阻塞与QA门禁状态不变。
+- Continuity：治理Task有明确下一批产出可继续，保持IN_PROGRESS；U01实施为具体BLOCKED；没有空转READY/IN_PROGRESS任务，正式QA未执行。
+
+### WR-20261006-015｜Cocos CLI/内置浏览器治理同步与首轮构建仍在进行
+
+- Owner / 结果 / 证据 / 门禁：Producer核对Tech/Client/QA三份同版Review均APPROVED；同步校验显示规则与共享Skill在当前Game、parentStudio、templates/game和全局目录一致，十角色CONSTRAINTS/SKILLS及registry指向统一源。`policy-validation.json`为10静态fixture及schema/YAML PASS；QA另报告14个独立skill/checker fixture PASS（不是游戏QA）。迁移补充`project/changes/CP-COCOS-CLI-BROWSER-20261006.md`已引用到U01实施Task，旧Brief/审批留存。CLI隔离探针EPERM；RunAs证据admin=true、PID 35000、开始14:02:20。构建日志记录web-mobile阶段14:04:47结束但build progress为60%，`cli-admin-result.json`的exit_code仍null，Master报告首轮引擎编译正在运行。FEASIBILITY_AND_MIGRATION、MASTER_REVIEW、DELIVERABLE、ARTIFACT_APPROVAL尚未落盘，Task继续IN_PROGRESS；不记APPLIED/USER_APPROVED。U01 Implementation Task已回到IN_PROGRESS；功能实现与正式QA未判通过。
+- 起止时间与耗时：治理Task首次真实开始时间此前未提供精确时间；Producer于13:57:41核验首批文件/浏览器证据，本阶段核验14:05:30。两Producer节点相隔7分49秒，非总任务或Owner净制作时间。管理员构建证据记录14:02:20启动至当前日志14:04:47阶段事件；引擎编译仍在进行，完成时间与总耗时未知。同步、Review、安装和fixture运行各自耗时未知。
+- 速度与原因：无同类组织治理和引擎构建基线，不评快慢。隔离CLI探针EPERM而RunAs成功进入admin=true执行，显示执行环境权限影响首轮路径；目前引擎构建未返回终态，原因及余时未知。Reviewer通过和同步/fixture校验缩小了剩余工作，但尚不能据此宣称整体治理完成。
+- 建议与复核：Master/Client等候构建进程明确退出状态并补齐可行性/迁移报告；Producer复核终态日志与Task Required路径后再登记完整Artifact、Master Review、Approval及实际生效状态。Client继续U01实施时逐项记录受控Scene转换、引用、导入、真实HTTP浏览器证据，维持未测项NOT_TESTED；QA只在既有阶段门禁满足后执行。
+- Continuity：治理Task有已完成同步/评审/fixture产出且实际构建运行中，U01 Implementation Task为IN_PROGRESS且有构建活动，均非空转；未完成交付和引擎终态仍有Owner可继续处理，QA执行未开始。当前无需提前置DONE或判BLOCKED。
+
+### WR-20261006-016｜Creator CLI 模板构建与内置浏览器路线初步验证
+
+- Owner / 结果 / 证据 / 门禁：Producer核验`deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/FEASIBILITY_AND_MIGRATION.md`现已落盘。报告/evidence记管理员隔离官方模板CLI于14:03:11启动，14:04:47 web-mobile阶段产物生成（96,774ms），由HTTP `127.0.0.1:18038`提供并在Codex内置浏览器显示3D样例，console errors为空；截图`evidence/iab-cli-built-probe.png`。这是工具路线探针，不是当前U01工程构建、功能通过或正式QA。`cli-admin-result.json`仍为`exit_code:null`，报告要求再用进程句柄补采终态。Tech/Client/QA Review通过，跨仓同步与静态fixture校验PASS；最终Master Review、DELIVERABLE、Approval待。证据见FEASIBILITY报告、evidence目录、治理Task。
+- 起止时间与耗时：构建开始/产物日志记录14:03:11–14:04:47，间隔96.774秒，报告称build task 96,774ms；这是隔离官方模板CLI构建阶段耗时，不含启动器准确退出、HTTP启动/浏览器验证或全部治理Task周期。Producer于14:07:11核验报告，距离产物节点约2分24秒；治理Task总耗时、Reviews/同步/fixture各阶段时长未知。
+- 速度与原因：无跨平台构建基线，不判断快慢。首轮普通权限探针EPERM，RunAs admin=true后能产出隔离模板实际浏览器页面，说明管理员执行路径在此环境中可行；实际退出码仍null，不能确认启动器终态。没有证据证明模板成功可代表当前项目Scene/API等价转换已成功。
+- 建议与复核：Master完成退出码采集补测并更新报告附录，补齐Master Review、DELIVERABLE和Approval；Producer核对最终Required和证据范围后再记录方法生效。Client继续U01时单独记录该游戏的静态Scene转换、引擎导入/构建和真实HTTP浏览器证据；QA只能在实现门禁后另行执行。复核点为治理Task正式收尾和U01实施的新一轮验证。
+- Continuity：治理Task IN_PROGRESS有实建/实浏览器产出，剩余退出码与最终Artifacts仍可继续；U01实施Task IN_PROGRESS但未有功能/场景结果，QA未执行。无空转任务；不提前DONE或宣称游戏通过。
+
+### WR-20261006-017｜Cocos CLI/内置浏览器治理收尾与U01连续性核对
+
+- 结果与证据：`COCOS-CLI-BROWSER-POLICY-001`已由Master完成最终接受，Task为DONE、v0.1 Approval为USER_APPROVED、CAP为APPLIED。Task、Artifact Approval、Master Review、DELIVERABLE及Tech/Client/QA Review均已核；CLI补测`evidence/cli-exit-result.json`记录exit_code=36（14:06:49），`evidence/build-identity.json`对应的模板构建产物由IAB重载显示3D场景，无可见console错误。此为治理路线证据，不是U01 QA。Master报告Studio与Game治理提交已推送，commit分别为`1d65e7acaeed088fa11fe0801c491dddf25b2ab3`和`af4fd2ade8f38342603092b2bdcc60c30142daec`。
+- 起止时间与耗时：治理Task真实开始时间无可核精确记录；首批文件/浏览器证据Producer核验于13:57:41，最终收尾核验于14:12:03，两个Producer核验节点相隔14分22秒，只代表可核的观察窗口，不等于总任务或Owner制作时间。CLI证据记录14:02:20启动、14:06:49返回退出码，间隔4分29秒；IAB最终重载截图时间由build-identity记录，按Artifact核验。其它同步、评审、安装和脚本验证的耗时未知。
+- 影响因素与建议：补采明确exit_code=36使进程终态可记录，但现有成功浏览器截图与该退出码分别记录，不推断两者因果或将退出码解释为成功。Master下一复核点：要求Client将本轮报告的110对象映射、旧`frames[]`移除及实际构建/浏览器证据写入当前实施Artifact；Producer再检查映射、Scene路径与DELIVERABLE的一致性。负责人Client Owner；复核点为`IMPLEMENTATION_REPORT.md`、对象映射文件、`DELIVERABLE.json`及对应证据路径均落盘。
+- Continuity check：治理Task无遗留Required/Review门禁，已DONE。U01 Client Implementation仍IN_PROGRESS并有Master报告的本轮实际制作；但Client Artifact当前未反映110对象映射，故该项证据待同步/核实。正式QA仍未执行，不记录QA通过或实现完成；后续继续当前Client制作并更新Artifact，再按批准的QA计划及门禁推进。
+
+更正：Game治理commit为af4fd2ade8f38342603092b2bdcc60c30142daec。14:02:20首进程与14:06:15.625–14:06:49.203补测为不同进程；33.578秒为补测进程窗口，其中build10.814秒，exit36表示CLI成功。先前4分29秒只是跨两次探测的观察窗口。

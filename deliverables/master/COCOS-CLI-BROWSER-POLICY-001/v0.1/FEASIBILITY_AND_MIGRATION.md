@@ -43,3 +43,7 @@ Creator内置CLI主要提供导入/构建能力；Editor场景扩展API仍依赖
 ### 完成判据补测
 
 同一隔离模板在14:06:15再次启动，持有进程句柄后实际采集Creator退出码 **36**；日志14:06:46结束、构建10814ms，进程14:06:49退出。再次从HTTP加载并观察资源加载后的实际3D场景，可用error日志查询为空。初次null保留为未采集，不改写为36。完整当前产物哈希与服务/浏览器身份见 `evidence/build-identity.json`。CLI构建及IAB路线探测通过，仍不代表U01正式QA。
+
+### 双仓提交推送
+
+主Studio：`1d65e7acaeed088fa11fe0801c491dddf25b2ab3`，32个通用规则/skill/标准模板文件，普通push origin/main成功。Game：`af4fd2ade8f38342603092b2bdcc60c30142daec`，56个本次治理、迁移和验证文件，普通push origin/main成功；未暂存正在实施的代码/Scene或其他既有美术产品改动。生成日志保留原始换行与空格，diff检查的日志空白提示不改写原始证据；源码/规则差异无空白问题。补充同步commit单独登记，未将旧pinned lock冒充整体已升级。
