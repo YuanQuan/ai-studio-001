@@ -1,0 +1,28 @@
+{
+  "task_id": "COCOS-CLI-BROWSER-POLICY-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "受控Scene/Prefab转换约束具备可审查的安全边界：要求原文件/hash/可恢复副本、按稳定对象关系而非漂移行号定位；对嵌套`__id__`、父子/组件关系、Prefab实例及覆盖关系做完整重映射；保留Scene/Controller/Prefab/SpriteFrame UUID、`.meta`和已批准图像字节。检查器明确只做有限静态结构和显式UUID存在/缺失检查，未冒称覆盖Creator schema、Prefab语义、压缩UUID或资产解析。"
+    },
+    {
+      "severity": "INFO",
+      "message": "UUID和资源清理策略以活动引用/归属证据作删除门槛，保留共享或未知归属资源、审批历史及既有预删基线；引用解除后要求Creator导入/构建/运行复核。静态检查、导入、构建与运行分别报告，失败或未执行保持NOT_TESTED/BLOCKED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator构建CLI、Editor扩展API和独立cocos-cli被明确区分；没有把构建CLI误作通用Scene编辑器，也没有要求安装/升级独立CLI。Creator 3.8 CLI退出码32/34/36与GUI环境要求已对照官方3.8命令行构建文档；文档同时要求查看当前构建任务日志、产物和入口依赖，避免父进程或旧输出误报成功。"
+    },
+    {
+      "severity": "INFO",
+      "message": "内置浏览器规则以HTTP实际构建为目标并绑定构建身份/本地服务证据；明确Canvas坐标输入以最新截图为准、只读evaluate不注入游戏状态、后端不支持交互时将相应项NOT_TESTED/BLOCKED。浏览器权限拒绝、Creator能力缺口、真机/小游戏/原生/平台性能均保留正规例外与既有审批/QA门禁。"
+    },
+    {
+      "severity": "INFO",
+      "message": "共享Skill与组织约束维持角色责任、版本核验、最小工具复杂度和当前游戏/Studio同步边界；Skill安装不会被表述为会话自动加载，机器路径和实际验证证据要求存入项目内。"
+    }
+  ],
+  "next_action": "Tech Lead技术Review通过。Master/Client/QA及结构/行为评审按Task完成；实际CLI、场景转换、构建、浏览器路线的本机可行性由Task所列可复验运行证据判定，未执行的检查继续标记NOT_TESTED/BLOCKED。"
+}

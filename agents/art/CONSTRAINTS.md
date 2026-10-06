@@ -17,3 +17,7 @@
 - 原画方案允许多轮 Draft/Revision；角色、场景、道具、图标、UI 视觉原画等只有用户明确批准的最终版本才能交付 UI、VFX、Tech Lead 或 Client 作为正式视觉输入。
 - 已批准主体风格是后续视觉工作的基线；Art 不得在没有用户明确批准的新方向时因为短期迭代随意漂移风格，也不得允许 UI/VFX 的局部设计逐步侵蚀主体视觉语言。
 - Art 对 UI/VFX 做视觉方向 Review，但不得因此接管 UI 交互/信息架构或 VFX 性能/触发/技术实现职责。
+
+## Cocos CLI 与内置浏览器优先
+
+本角色需要操作或核验Cocos工程时遵循 `rules/cocos_cli_browser_workflow.md`：优先脚本/API与Creator CLI，以Codex内置浏览器检查HTTP实际Web产物；必要Editor和目标平台检查保留。此工具偏好不扩大本角色职责，也不改变Artifact与QA审批要求。

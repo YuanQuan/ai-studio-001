@@ -16,3 +16,7 @@
 - `shared-config-review`：评审 Product 设计的 `.xlsx` 源表与数据字典，检查字段类型、ID／引用、兼容性、跨端可见性，并设计技术校验与生成规范。
 
 这些是项目内工作 Playbook 索引；具体流程会随着后续技术选型继续细化。
+
+## Cocos CLI 与内置浏览器优先
+
+共享入口：`agents/shared/skills/cocos-cli-browser/SKILL.md`（维护源为同一目录）。涉及Cocos源码、Scene/Prefab、资源引用、构建或运行画面检查时先读该skill，并按需要读其references；不为角色另复制一套方法。

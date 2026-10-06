@@ -1,0 +1,29 @@
+{
+  "id": "CAP-20261006-COCOS-CLI-BROWSER",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "Cocos项目优先脚本/CLI开发、Codex内置浏览器验证；共享cocos-cli-browser skill并保留必要编辑器/目标平台证据。",
+  "reason": "用户明确要求在可行性分析通过后直接修改实施约束并推广给所有需要操作Cocos的角色。",
+  "impact": [
+    "Cocos开发/资源处理/场景转换的执行方法",
+    "CLI完成判据与HTTP实际构建验证",
+    "Codex内置浏览器的Canvas交互、截图和错误证据",
+    "相关角色约束与共享skill发现",
+    "当前游戏Studio快照、主Studio和标准模板默认项"
+  ],
+  "affected_agents": [
+    "master",
+    "producer",
+    "product",
+    "tech_lead",
+    "art",
+    "ui",
+    "vfx",
+    "client",
+    "server",
+    "qa"
+  ],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

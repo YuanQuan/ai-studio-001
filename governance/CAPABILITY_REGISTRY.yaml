@@ -48,3 +48,11 @@ agents:
     display_name: QA Agent
     config_root: agents/qa
     calibration_status: needs_user_calibration
+
+shared_skills:
+  cocos-cli-browser:
+    path: agents/shared/skills/cocos-cli-browser/SKILL.md
+    rule: rules/cocos_cli_browser_workflow.md
+    applicable_roles: [master, producer, product, tech_lead, art, ui, vfx, client, server, qa]
+    applicability: when_operating_or_verifying_cocos
+    change_ref: governance/capability_changes/CAP-20261006-COCOS-CLI-BROWSER.json

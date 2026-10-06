@@ -13,3 +13,7 @@
 - `performance-testing`：仅在用户/Task 要求时进行性能/内存/负载测试。
 
 具体自动化工具链可在实际 Game Repository 中再细化。
+
+## Cocos CLI 与内置浏览器优先
+
+共享入口：`agents/shared/skills/cocos-cli-browser/SKILL.md`（维护源为同一目录）。涉及Cocos源码、Scene/Prefab、资源引用、构建或运行画面检查时先读该skill，并按需要读其references；不为角色另复制一套方法。

@@ -63,3 +63,7 @@ Local Web should reproduce gameplay/business behavior/effects as fully as techni
 - Project-specific requirements, architecture changes, assets, tasks, approvals, code and test evidence live only in this Game Repository.
 - Do not push Project Layer content back to `YuanQuan/ai-studio-template`.
 - Ordinary Studio Layer upgrades require an explicit diff/impact review and user approval. A workflow/role/governance change explicitly requested while working in the current game follows the standing dual-sync rule above and does not require a second confirmation for that same current-game/template file update.
+
+## Cocos CLI 与内置浏览器优先
+
+Cocos开发与验证遵循 `rules/cocos_cli_browser_workflow.md` 和共享 `agents/shared/skills/cocos-cli-browser/SKILL.md`；CLI/脚本及Codex内置浏览器优先，必要编辑器与平台专项保留。当前任务迁移见 `project/changes/CP-COCOS-CLI-BROWSER-20261006.md`。

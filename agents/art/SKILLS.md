@@ -14,3 +14,7 @@
 - `copyright-risk-screening`：对参考素材、角色/IP、品牌/trade dress、独特外观做初步相似/版权风险筛查，高风险项转交进一步评估。
 
 这里是项目内 Skill / Playbook 索引，不代表已打包的 ChatGPT Skill。
+
+## Cocos CLI 与内置浏览器优先
+
+共享入口：`agents/shared/skills/cocos-cli-browser/SKILL.md`（维护源为同一目录）。涉及Cocos源码、Scene/Prefab、资源引用、构建或运行画面检查时先读该skill，并按需要读其references；不为角色另复制一套方法。

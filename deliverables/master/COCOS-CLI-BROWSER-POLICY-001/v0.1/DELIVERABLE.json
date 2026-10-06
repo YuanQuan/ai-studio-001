@@ -1,0 +1,62 @@
+{
+  "task_id": "COCOS-CLI-BROWSER-POLICY-001",
+  "owner": "master",
+  "summary": "完成Cocos CLI/脚本与Codex内置浏览器优先约束、共享skill、当前任务补充方法迁移和组织双同步；实际构建退出36且当前Web输出加载通过。",
+  "artifacts": [
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "agents/shared/skills/cocos-cli-browser/agents/openai.yaml",
+    "agents/shared/skills/cocos-cli-browser/references/scene-and-assets.md",
+    "agents/shared/skills/cocos-cli-browser/references/build-and-browser.md",
+    "agents/shared/skills/cocos-cli-browser/scripts/check-scene-links.mjs",
+    "governance/capability_changes/CAP-20261006-COCOS-CLI-BROWSER.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/FEASIBILITY_AND_MIGRATION.md",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/TECH_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/QA_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/DELIVERABLE.json",
+    "tasks/COCOS-CLI-BROWSER-POLICY-001/ARTIFACT_APPROVAL.json",
+    "project/changes/CP-COCOS-CLI-BROWSER-20261006.md",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/evidence/sync-validation.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/evidence/build-identity.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "区分Creator内置构建CLI、独立cocos-cli和Editor扩展API，验证可用路径，准确记录已验证/未验证/真实阻塞，未做的检查不判PASS。",
+      "result": "PASS",
+      "evidence": "FEASIBILITY_AND_MIGRATION.md；cli-exit-result=36；新产物build-identity与IAB截图"
+    },
+    {
+      "criterion": "共享约束优先脚本/CLI开发、HTTP提供实际构建、Codex内置浏览器运行；必要Editor/目标设备检查保留，质量、审批、资源身份链与版本约束不降低。",
+      "result": "PASS",
+      "evidence": "rules/cocos_cli_browser_workflow.md；三专业Review"
+    },
+    {
+      "criterion": "允许受控Scene/Prefab文件脚本转换作为Editor交互替代，要求备份、对象索引/引用核验、UUID/hash保留、引擎导入构建和实际运行证据；删除仍以归属和引用证明为门槛。",
+      "result": "PASS",
+      "evidence": "Scene/asset参考文档、静态脚本边界、补充方法CP"
+    },
+    {
+      "criterion": "skill可被相关角色发现，结构校验与独立行为评审通过；附带静态检查脚本以有效/无效对象图检验，明确静态PASS不等于引擎或运行PASS。",
+      "result": "PASS",
+      "evidence": "quick_validate有效；10+14fixture；policy-validation及QA Review"
+    },
+    {
+      "criterion": "当前Game、主Studio和标准模板受影响默认项完整同步；运行路径、具体游戏任务/资产/截图不进入Studio；全局发现目录安装的是相同skill内容。",
+      "result": "PASS",
+      "evidence": "sync-validation三处skill同hash、十角色索引及标准模板默认"
+    },
+    {
+      "criterion": "当前U01旧批准文档保留，任务从引用新执行补充约束处迁移；方法批准不当作功能实现或QA完成。按核验范围提交推送并由Producer记录事实。",
+      "result": "PASS",
+      "evidence": "CP与实施Task迁移；旧批准文件未覆盖；Git结果独立登记"
+    }
+  ],
+  "risks": [
+    "CLI仍要求机器具备图形环境；本机Creator写引擎缓存需正规管理员环境。",
+    "Web与静态脚本不能证明未覆盖的引擎关系、目标设备或平台性能；仍按批准计划实际验证。",
+    "本交付为路线探测及治理实施，不是U01实现验收、正式QA或发布判定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

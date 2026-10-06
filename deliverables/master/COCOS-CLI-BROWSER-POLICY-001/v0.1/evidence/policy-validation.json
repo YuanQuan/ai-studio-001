@@ -1,0 +1,66 @@
+{
+  "static_checker_cases": [
+    {
+      "case": "index_zero",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "PASS"
+    },
+    {
+      "case": "out_of_range",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "null_target",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "missing_keep",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "forbidden",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "empty_array",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "result": "PASS"
+    },
+    {
+      "case": "not_array",
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "result": "PASS"
+    },
+    {
+      "case": "fractional_index",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "empty_uuid",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "PASS"
+    },
+    {
+      "case": "invalid_json",
+      "actual_exit": 2,
+      "result": "PASS"
+    }
+  ],
+  "json_schema": "PASS",
+  "registry_yaml": "PASS",
+  "scope": "helper and governance only; engine/runtime not implied"
+}

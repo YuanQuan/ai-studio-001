@@ -1,0 +1,20 @@
+{
+  "task_id": "COCOS-CLI-BROWSER-POLICY-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "rules/cocos_cli_browser_workflow.md与cocos-cli-browser完整skill明确区分Creator构建CLI、Editor扩展API与独立cocos-cli；脚本转换要求记录基线/哈希/可恢复副本，按对象关系维护嵌套__id__、父子/组件/Prefab覆盖及UUID身份，禁止猜索引、广泛替换或删.meta掩盖引用。资源只有在归属明确、活动引用解除并完成相关导入/构建/运行核验后才可清理；静态检查器能力边界和STATIC_PASS非引擎PASS写明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实际Web产物通过loopback HTTP服务和Codex内置浏览器验证的流程可执行：需读取当前浏览器能力、按DOM或截图定位真实Canvas输入、动作后复核，并记录构建身份和证据；浏览器能力/权限不足时标NOT_TESTED或BLOCKED，不以外部浏览器、CDP、只读evaluate状态注入或Mock绕过。必要Editor/设备/平台性能检查及现有审批门禁保留。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "U01迁移边界必须在安全交接点落实到当前Client实施Task。已批准Client Brief v0.2与当前UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001仍明确要求Creator Inspector先清序列化引用并禁止手工.scene JSON编辑；新规则不覆盖这些历史文档，也不能单凭skill绕过该Task验收条款。Master/Producer应在解除BLOCKED并开始任何脚本Scene转换前，更新Task输入/执行补充引用与对应执行步骤；旧Brief和审批保留。"
+    }
+  ],
+  "next_action": "Client Review通过。由Master/Producer在当前U01 Client实施Task安全交接时登记本规则/skill为补充执行约束并维护原产品、资源和QA门禁；完成前当前实施Task保持BLOCKED，不能以方法规则本身宣告实现或QA完成。"
+}

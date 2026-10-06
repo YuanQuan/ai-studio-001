@@ -188,3 +188,7 @@ Master 负责向用户呈现待审批产物与反馈；Producer 负责记录批�
 已确认的效果图或概念方向进入正式资源制作时，Art Director 须锁定可检查的视觉锚点，并负责以多图层 PSD 保留完整画面、最终落地美术资源及输出图片。无法直接生成 PSD 时，使用 `bggg-creator-image2psd` skill 将当前图转换为 PSD，保留源图、预览与可编辑范围说明，不借转换重画或改变效果。已有资源的优化打磨须基于当前 PSD 和现有图层定向修改，除非用户明确要求重画，不得重新绘制或生成替代整体图；切图从当前 PSD 拆分图层或按确认方案合并后导出，保持母版效果，不影响效果时不额外修改图片。正式美术图片、母版或切片输出前，Art 的资源制作方案须先取得用户明确批准；随后首张样张前 Art 与 Tech Lead 对同一批次签认制作预案。Art 与 Tech Lead、Client 讨论切图。通常切后实图和同尺度重组效果分别通过 Art 视觉及 Tech 生产 Review，再由用户对具体切图版本和效果作第二次审批；若切图由本组织 Agent 自行完成，或直接采用用户提供的 PSD 及其导出 PNG，则提交实际切片、同尺度重组效果和版本清单后直接交用户审核，取消切图效果的专业复审及额外预览环境门禁。用户对具体版本明确批准前 Client 不得正式接入；接入后 Tech、Client、QA 仍核实际运行画面与技术指标。两次用户审批不能互相代替，具体交接与失败返工规则见 `rules/visual_production_contract.md`。
 
 这个项目不是 Agent 群聊系统，而是一个由 Master 负责编排与用户沟通、Producer 负责流程监督与审批门禁、专业 Agent 基于固定 Artifact 协作的虚拟手游开发流水线。Studio 组织能力与具体游戏项目事实必须保持仓库级隔离；日常 Git 提交推送遵循用户持续授权，其他 Git 历史与远端变更仍由用户逐次控制。
+
+## Cocos CLI 与内置浏览器优先
+
+凡涉及 Cocos 开发、资源接入、场景修改和验证，默认优先版本相容的脚本/API与Creator CLI，再通过本地HTTP实际Web产物和Codex内置浏览器验证。遵守 `rules/cocos_cli_browser_workflow.md` 并读取共享 `agents/shared/skills/cocos-cli-browser/SKILL.md`；必要Editor、目标平台及既有质量和审批门禁保留。

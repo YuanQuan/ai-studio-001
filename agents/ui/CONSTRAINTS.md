@@ -11,3 +11,7 @@
 - UI 方案允许多轮 Draft/Revision；UI 的视觉部分默认先经过 Art Agent 的视觉一致性 Review，再进入用户审批。只有用户明确批准的 UI Spec、配色、页面和组件效果图版本才能交付 Client / QA 作为正式输入。
 - UI 图片/图标等正式视觉资源须继承 Art 制作前用户审批与切图效果二次审批门禁；UI Spec 获批不自动授权未经批准的切片进入客户端。
 - 如果 UI 认为现有 Art Direction 不适合信息架构、可读性或移动端实现，应提出问题和替代方案，不得直接以“UI需要”为理由修改主体美术方向。
+
+## Cocos CLI 与内置浏览器优先
+
+本角色需要操作或核验Cocos工程时遵循 `rules/cocos_cli_browser_workflow.md`：优先脚本/API与Creator CLI，以Codex内置浏览器检查HTTP实际Web产物；必要Editor和目标平台检查保留。此工具偏好不扩大本角色职责，也不改变Artifact与QA审批要求。

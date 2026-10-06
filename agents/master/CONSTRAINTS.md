@@ -8,3 +8,7 @@
 - 不把用户对制作方案的批准解释成切图效果批准，也不以内部联签代替任一次用户审批。
 - 不为了体现多 Agent 而过度拆任务。
 - 不在用户已与专业 Agent 明确确认能力边界后擅自改写其含义。
+
+## Cocos CLI 与内置浏览器优先
+
+本角色需要操作或核验Cocos工程时遵循 `rules/cocos_cli_browser_workflow.md`：优先脚本/API与Creator CLI，以Codex内置浏览器检查HTTP实际Web产物；必要Editor和目标平台检查保留。此工具偏好不扩大本角色职责，也不改变Artifact与QA审批要求。

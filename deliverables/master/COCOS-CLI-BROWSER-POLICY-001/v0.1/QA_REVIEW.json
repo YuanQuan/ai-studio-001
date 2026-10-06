@@ -1,0 +1,32 @@
+{
+  "task_id": "COCOS-CLI-BROWSER-POLICY-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本Review检查AGENTS.md、QA角色ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS、Task、review schema、rules/cocos_cli_browser_workflow.md及共享skill全部五个文件，并对照rules/qa_protocol.md与rules/approval_protocol.md。CLI/脚本与Codex内置浏览器是执行路线偏好，文本未授权扩大Task范围、消费未批准上游资源或绕过原有用户审批。用户已明确授权可行后直接生效，此治理Review不要求对同一变更重复确认。"
+    },
+    {
+      "severity": "INFO",
+      "message": "2026-10-06在当前Game工作区使用bundled Node v24.19.0独立执行14个临时fixture探针，14项退出码及状态均符合预期：嵌套有效引用=0；越界、负数、小数索引、primitive引用目标、空UUID、缺少keep UUID、存在forbid UUID=1；损坏JSON、非数组、空数组=2；关系不一致、未引用primitive顶层元素=0；子资源UUID与提供的基础UUID不精确相等=1。临时fixture已清理，未修改被评审脚本。最初Node子进程探针未取得可执行结果，未计为通过；改为PowerShell直接调用同一Node后取得上述实际结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已实际证明静态误判边界：父子互逆关系不一致和顶层组件schema错误可得到STATIC_PASS，UUID只作精确字符串判断，不能证明资源解析或压缩UUID等价。脚本输出engine_schema_and_relations=NOT_CHECKED、asset_resolution=NOT_CHECKED、creator_import_build/runtime=NOT_TESTED，reference文档亦明确这些限制。受影响对象关系、Prefab实例/覆盖、活动Scene/Prefab/脚本/构建入口必须另行核验并经过当前锁定Creator导入、构建、实际运行；静态0不得作为引擎、资产完整性或QA通过证据。此限制在现有规则中得到充分隔离，无需以完整引擎验证器扩大本脚本范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "构建要求结束日志、版本相符的退出码、当前输出及基本加载验证，并记录来源/输出hash；不以父进程退出或旧build目录判成功。内置浏览器要求HTTP实际产物、最新截图定位Canvas真实输入及观察结果；缺少Canvas能力必须NOT_TESTED/BLOCKED，只读evaluate不可注入状态或调用游戏方法。权限拒绝、服务归属、loopback默认和恢复次数的规定可防止冒充验证或无限重复。Creator预览与实际构建证据明确区分。"
+    },
+    {
+      "severity": "INFO",
+      "message": "平台与质量边界保持现有QA协议：FUNCTIONAL覆盖已批计划中的功能、Visual QA和适用性能；RELEASE所需目标设备、小游戏SDK、原生、平台性能及其他声明专项仍须相应环境实测，Web结果不能替代。必要环境/证据缺失不记N/A或PASS，性能与视觉门槛不降低；Client实现级冒烟、方法安装或工具路线探测不等于正式QA。资源具体切片用户批准、实际接入版本一致性、历史Artifact与审批链保持可追溯。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次结论只批准共享执行约束及其声明范围内的静态检查器行为；未执行正式U01功能/视觉/性能QA，未判定任何游戏构建、资源退役或发布候选通过。本Review不证明当前Game、Studio主仓库、标准模板及全局skill安装已同步，最终同步完整性与当前任务迁移记录由Master/Producer核验。已批准历史计划不得覆盖，当前U01方法迁移须引用补充约束，原功能、资源、实现报告和TEST_REPORT审批门禁继续有效。"
+    }
+  ],
+  "next_action": "Master可结合Tech Lead与Client Review落实已获用户授权的治理变更；Producer核验双仓库/标准模板与skill版本同步、记录补充执行约束及原任务安全交接点。原U01实施与QA按既有批准Artifact和当前补充方法继续推进，实际缺失证据保留NOT_TESTED/BLOCKED。"
+}

@@ -12,3 +12,7 @@
 - `implementation-cost-review`：在质量和性能不下降的前提下控制上下文、输出和模型使用成本；确定性实现优先较快模型，高风险问题再升级推理能力。
 
 具体 UI、异步、资源、热更新、架构模式等专项 Playbook 待后续能力校准后再细化。
+
+## Cocos CLI 与内置浏览器优先
+
+共享入口：`agents/shared/skills/cocos-cli-browser/SKILL.md`（维护源为同一目录）。涉及Cocos源码、Scene/Prefab、资源引用、构建或运行画面检查时先读该skill，并按需要读其references；不为角色另复制一套方法。

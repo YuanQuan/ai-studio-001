@@ -1,0 +1,42 @@
+{
+  "id": "COCOS-CLI-BROWSER-POLICY-001",
+  "title": "Cocos CLI与Codex内置浏览器优先约束和共享skill",
+  "type": "coordination",
+  "owner": "master",
+  "parent": null,
+  "objective": "评估并落实用户授权的组织级Cocos开发验证偏好，修订当前U01实施约束；建立CLI/脚本优先与内置浏览器优先的共享规则和skill，同步当前Game、Studio主仓库及标准模板，不降低产品/资源/QA审批与质量要求。",
+  "inputs": ["用户本轮明确要求：修改实施约束，后续Cocos项目开发验证尽量CLI、通过Codex内置浏览器验证；可行则直接生效并共享skill", "AGENTS.md、governance/REPOSITORY_SYNC_POLICY.md、governance/capability_change_protocol.md", "当前批准的Client Brief v0.2、QA Plan v0.2、Tech Plan v0.1及BLOCKED实施Task", "Creator 3.8官方CLI/场景扩展文档、本机Creator与内置浏览器工具说明", "agents/master/DECISIONS.md现有CLI/内置浏览器偏好与本机执行环境约束"],
+  "deliverables": [
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "agents/shared/skills/cocos-cli-browser/agents/openai.yaml",
+    "agents/shared/skills/cocos-cli-browser/references/scene-and-assets.md",
+    "agents/shared/skills/cocos-cli-browser/references/build-and-browser.md",
+    "agents/shared/skills/cocos-cli-browser/scripts/check-scene-links.mjs",
+    "governance/capability_changes/CAP-20261006-COCOS-CLI-BROWSER.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/FEASIBILITY_AND_MIGRATION.md",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/TECH_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/QA_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/COCOS-CLI-BROWSER-POLICY-001/v0.1/DELIVERABLE.json",
+    "tasks/COCOS-CLI-BROWSER-POLICY-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "区分Creator内置构建CLI、独立cocos-cli和Editor扩展API，验证可用路径，准确记录已验证/未验证/真实阻塞，未做的检查不判PASS。",
+    "共享约束优先脚本/CLI开发、HTTP提供实际构建、Codex内置浏览器运行；必要Editor/目标设备检查保留，质量、审批、资源身份链与版本约束不降低。",
+    "允许受控Scene/Prefab文件脚本转换作为Editor交互替代，要求备份、对象索引/引用核验、UUID/hash保留、引擎导入构建和实际运行证据；删除仍以归属和引用证明为门槛。",
+    "skill可被相关角色发现，结构校验与独立行为评审通过；附带静态检查脚本以有效/无效对象图检验，明确静态PASS不等于引擎或运行PASS。",
+    "当前Game、主Studio和标准模板受影响默认项完整同步；运行路径、具体游戏任务/资产/截图不进入Studio；全局发现目录安装的是相同skill内容。",
+    "当前U01旧批准文档保留，任务从引用新执行补充约束处迁移；方法批准不当作功能实现或QA完成。按核验范围提交推送并由Producer记录事实。"
+  ],
+  "dependencies": [],
+  "status": "IN_PROGRESS",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户已授权可行后直接成为约束并共享，不要求对同一治理文件修改重复确认；跨角色评审和实际验证仍须完成。",
+    "Master明确授权本Task修改当前AGENTS、rules、角色CONSTRAINTS/SKILLS与索引、STUDIO及项目迁移记录，并同步Studio主仓库/标准模板、安装全局可发现skill。",
+    "实际开始证据：读取治理和skill-creator规范、检查本机CLI/角色既有决定，并通过Codex内置浏览器打开实际Creator预览、截图及Canvas点击进入四层示例；这是工具路线探测，不是正式QA执行。",
+    "本Task完成后继续原U01实施任务，若CLI、权限或浏览器存在真实阻塞则记录新的具体原因；不得以Editor截图超时作为CLI路线的自动阻塞。"
+  ]
+}
