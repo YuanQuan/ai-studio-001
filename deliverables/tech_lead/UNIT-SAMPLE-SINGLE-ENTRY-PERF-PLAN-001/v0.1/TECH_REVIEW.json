@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "自检通过仅指v0.1技术方案完整性：明确Web模拟范围、性能适用性、可复现B0/V0和各轮阈值；没有性能实测PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "候选指标独立于原Demo手机预算；理论纹理像素量、JS堆、GPU驻留和DrawCall均区分。"
+    },
+    {
+      "severity": "INFO",
+      "message": "同轮矩阵仍待批；Client/QA须确认采样、引擎完成帧及生命周期只读计数可执行，缺工具按BLOCKED处理。"
+    }
+  ],
+  "next_action": "请Master组织Client、QA、Master同版Review，核对矩阵版本与工具可执行性，再提交用户审批；批准后另行授权正式QA采样。"
+}

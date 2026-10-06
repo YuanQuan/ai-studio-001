@@ -206,3 +206,27 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 影响环节：首轮运行发现短桌面菜单可达性需补丁，发生一次补充构建。最后补充桌面截图被自动审批服务403阻断，未绕过，保留NOT_TESTED；已完成手机验证未失效。无同类速度基线，不归责。
 - 建议：Client下一次布局修订在首轮实现核菜单入口与场景可见尺寸，复核点为首次构建前布局检查；Master对已满足核心验收但可选截图工具故障的情况及时记录范围，复核点为送审报告的PASS/NOT_TESTED边界。Producer对共享日志只增本任务记录，复核点为暂存diff。
 - Continuity check：本任务不存在仅占位READY/IN_PROGRESS；下一门禁为用户对v0.2明确决定，正式QA按既有计划独立授权。
+
+### WR-20261006-U01-APPROVAL-001｜U01 Client 实现 v0.2 用户批准登记
+
+- Owner / 结果 / 证据 / 当前门禁：用户明确回复“好的批准”后，Producer于2026-10-06 17:13:08 +08:00登记 `UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001` 的 v0.2 `IMPLEMENTATION_REPORT.md` 为 `USER_APPROVED`；父 Task 为 `QA`。证据：`tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json`、`TASK.json`、`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md`、`project/APPROVAL_LOG.md`、`project/MILESTONE_LOG.md`。这只批准客户端实现，正式 QA 和 TEST_REPORT 未完成。
+- 可核时间与耗时：用户回复精确时刻未知；Producer 登记时刻为17:13:08 +08:00，本次状态、审批、里程碑、复盘与Dashboard记录核验在17:19:27 +08:00完成。登记到核验完成相隔6分19秒仅是观察窗口，不能视为制作或记录净耗时；本轮没有可靠的连续执行起点、专业评审耗时、用户等待耗时分解或工具故障证据，总工时未知。
+- 慢因判断与建议：无同类审批登记目标/基线，未发现可证实的慢因。Master已创建 QA 环境矩阵与性能口径两个 Task，但核验时均为 `READY` / Approval `DRAFT`，尚无 Required 实产或 `TASK_STARTED` 证据，依赖已满足且未见阻塞；这构成连续性待推进项。建议 Master 立即分派并推动 QA 与 Tech Lead Owner 实际产出，Producer在首份Required产物时登记开工节点；代价为按两条独立版本门禁分别跟踪，复核点为两 Task 的首份 Required 文件及 Task 状态更新。两份方案须完成 Review 和用户审批后才解锁对应 QA；TEST_REPORT 与其用户确认仍是最终门禁。
+- Continuity check：Client v0.2 已获批；QA-MATRIX-001 与 PERF-PLAN-001 是无阻塞的 READY 空转候选，当前没有本轮 Owner 实产证据。已向 Master 发出继续推进通知；不能以READY状态结束已授权流程。父 Task 保持 QA，不标 DONE。后续复核：待两 Owner 实际开工和首份 Artifact。
+
+### WR-20261006-U01-QA-PREP-001｜QA矩阵与性能口径首稿、同版评审推进
+
+- Owner / 结果 / 证据 / 当前门禁：QA Owner 提交 `UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001 v0.1` 的 `WEB_TEST_MATRIX.md`、`DELIVERABLE.json`、`QA_REVIEW.json`，QA自审 `APPROVED`，Task `REVIEW`；Tech Lead Owner 提交 `UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001 v0.1` 的 `PERFORMANCE_PLAN.md`、`DELIVERABLE.json`、`TECH_REVIEW.json`，Tech自审 `APPROVED`，Task现已同步为 `REVIEW`。两份Approval仍 `DRAFT`。Master负责推进其余同版Review，矩阵待Client/Tech/Master，性能计划待Client/QA/Master。证据目录分别为 `deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/` 与 `deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.1/`，Task及Approval在各自 `tasks/` 目录。正式QA/性能采样未执行，未生成TEST_REPORT。
+- 可核时间与耗时：QA Task notes记开始读取/实际编写于17:16，Required和自审文件时间17:20:02–03；Tech Task notes记核对与产出范围17:17–17:19，实际文件时间17:19:22–46。上述均为文件/Task可核节点，不能据此推算净制作工时。Producer发现Tech Task仍READY后通知Master；Master于17:20后同步至REVIEW，具体操作耗时未知。Producer核验记录17:19:27至17:22:25；该窗口包含审批后登记、连续性检查及Task状态复核，不是Owner工作耗时。用户等待、Review净等待、返工与工具故障无新增可靠证据，总耗时未知。
+- 慢因判断与建议：无同类矩阵/性能计划的约定耗时或历史基线，未发现可证实的慢因。直接观察到Tech Task状态字段落后于已提交的Required正文和自审；Producer报告后Master已同步为REVIEW，此改进在当前周期已有效。建议两Owner在首次Required提交时同步Task阶段和自审，Producer在各轮Review核验时抽查状态/Artifact一致性；代价是一次状态一致性检查，复核点为本两Task下轮同版Review齐备及送用户门禁核验。
+- Continuity check：截至17:22:25，两条专业任务均处REVIEW、有真实Required实产及Owner自审；跨角色Review由Master继续推进。无空转READY/IN_PROGRESS。矩阵与性能口径完成同版Review和用户审批前，正式QA与性能采样保持锁定；后续复核点为全部Review落盘后Producer核Required/DELIVERABLE/验收与Approval，再判是否进入USER_REVIEW。
+
+### WR-20261006-U01-QA-REVIEW-001｜QA矩阵部分Review通过与性能方案退回
+
+- Owner / 结果 / 证据 / 当前门禁：QA-MATRIX-001 v0.1 的 QA、Client、Tech Review 均 `APPROVED`，Master Review待；Task `REVIEW`、Approval `DRAFT`。PERF-PLAN-001 v0.1 Client Review `CHANGES_REQUESTED`，三项 `MAJOR` 指出完成帧/输入轨迹/监听计数缺可执行接口及Client支持Task契约。Tech自审仍为 `APPROVED`，但Client跨审未通过，v0.1不得送用户。Master已要求Tech另产v0.2并保留旧版；Producer核验时Task字段仍 `REVIEW`，待切至 `REVISION` 并登记新版链。证据在两个任务各自 `deliverables/.../v0.1/` 及 `tasks/.../TASK.json`、Approval；Master后续复核状态待。
+- 可核时间与耗时：QA矩阵的Owner产物时间17:20:02–03，Client/Tech Review文件17:21左右；Tech性能方案正文/自审文件17:19:22–46，Client Review在17:21落盘；Producer本次核验于17:23:05。文件时间表示可核提交顺序，不等于Review净耗时；Owner开始前准备、各Review等待/分析净时长、返工工时和用户等待均未知，任务总耗时未知。无工具故障记录。
+- 慢因判断与建议：没有同类Review耗时基线，不判断快慢。可证实原因是性能v0.1缺少跨角色实际可执行的数据采集合同，Client据实际源码提出三项重大缺口；这导致一次版本返工，属本次方案完善所需而非可归责的等待。Tech修订时应逐项响应Client三项MAJOR，并由Client/QA复核执行性；代价是新增测量支持任务与同版复审，预期避免正式QA中发现采集方法不可执行。复核点为v0.2 Review及关联Client支持Task契约。
+- Continuity check：QA矩阵有Master Review可继续；性能方案处于实质返修要求，Owner下一步是创建v0.2并更新Task至REVISION。当前两个Task JSON仍显示REVIEW，性能状态同步待Master/Owner完成；Producer已反馈该差异。两线均有明确下一动作，无空转READY/IN_PROGRESS。QA与性能采样、用户审批均未发生，v0.1性能稿不得进入USER_REVIEW。后续复核：v0.2落盘、性能Task版本链及QA矩阵Master Review。
+- 本周期后续节点（17:24:44核验）：QA-MATRIX v0.1随后补齐Master Review，Producer核7/7 Required存在、索引一致、四项方案送审验收PASS，将Task/Approval推进 `USER_REVIEW`；仅等待用户对环境矩阵决定，矩阵测试项未执行。Master已将PERF-PLAN v0.1 Client MAJOR退回落实为v0.2修订，Tech在17:23:23实际开始并提交新稿，Task `IN_PROGRESS`，历史v0.1保留且不送用户。Master另建Client测量支持Task，因矩阵和性能方案待用户批准而保持 `BACKLOG`。Continuity check更新：矩阵到用户门禁，性能修订有实际产出，测量支持依赖明确；无空转READY/IN_PROGRESS。正式QA/性能采样/TEST_REPORT未执行。
+- 速度复核：Producer此前建议有Required产物即同步状态；Master已依据证据同步PERF Task并启动v0.2，证实该动作可修正状态滞后。没有目标时限或可比基线，不判断整体快慢。后续复核点为性能v0.2逐项响应MAJOR、QA测量支持依赖解锁，以及用户对矩阵决定后的推进状态。
+- 后续同版Review节点（17:26:30核验）：PERF-PLAN v0.2获Client Review APPROVED，QA Review进行中，Master Review待；Task保持REVIEW而非IN_PROGRESS，v0.1 Client MAJOR退回历史留存。QA-MATRIX v0.1继续USER_REVIEW，等待用户决定；QA-MEASUREMENT-001仍BACKLOG，需矩阵及性能方案分别获批后才满足依赖。下一复核点是性能v0.2余下Review齐备后的送审门禁，以及用户对QA矩阵的决定。

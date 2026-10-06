@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立对照v0.1 CLIENT_REVIEW的三项MAJOR及两项INFO：v0.2引用Master已创建、目前BACKLOG的UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001，规定先审批矩阵与本方案，再审批支持Brief，交付契约、脚本、构建身份、试采原始轨迹并经Client/Tech/QA/Master评审和用户确认；缺这些前置不能执行或宣布正式性能QA。支持工具、CDP权限及Creator3.8.8具体API均未实现/试采，方案没有将其写成既成能力。"
+    },
+    {
+      "severity": "INFO",
+      "message": "冷导航前安装采集、导航与输入时间域校准、input_id关联DOM/Controller和首次包含变换的Director CPU提交帧，误差>2ms、关联缺失或完成信号不可靠时BLOCKED。v0.2明确把原候选‘操作到可见反馈’100/250ms重定义为‘操作到变换帧CPU提交’，不能把CPU提交、rAF回调或截图称为GPU完成/屏幕呈现；正式报告必须采用修订后的有限口径并把呈现延迟另列NOT_TESTED或真实证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "60Hz负载指定后续获授权CDP输入、计划与实际发送/接收时间戳、12～22ms实际间隔≥95%、>50ms或未关联>1%整轮无效；S1/S2明确两程各2.5秒、到屏幕边缘分段抬起重按，达不到镜头两端须修订负载而不能直接写cameraX。双指须确认Controller同时收到两个touch id及缩放/回收轨迹；touchCancel单列。矩阵人工手势不冒充性能负载。"
+    },
+    {
+      "severity": "INFO",
+      "message": "生命周期从Controller扩展到Gallery/菜单、四层与按钮，包含真实EventTarget绑定快照、once/targetOff解除、owner_id/scene_epoch、专属计时器和旧epoch全局保留引用；场景节点计数或on/off账本不能单独证明无泄漏。采集器自身归属、安装/卸载及heap诊断单列，缓存纹理不要求每次归零；真实集合无法核验时硬项BLOCKED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "指标按冷/热进入、四种稳定场景帧间隔、CPU响应、20次生命周期及诊断观察分项定义，B0/V0各3轮、五个WEB矩阵视口、无效轮及绝对/相对门槛清楚；M探针构建与U无探针对照分别锁hash、交替试采并设开销门槛，不能用M通过掩盖U失败。旧DEMO-001手机预算没有被套成U01 Web硬阈值，GPU驻留内存如实NOT_TESTED且明示非本Web硬项，实体机/小游戏仍不在FUNCTIONAL结论内。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "正文前半仍沿用v0.1‘操作到可见反馈’用语，末尾v0.2章节已明确替代为CPU提交口径。Master送审时应提醒用户本版以修订章节为准；后续支持Brief/TEST_REPORT必须只用‘CPU提交’命名，避免读者把100/250ms误解为屏幕可见延迟。性能数值获批准后，还应按rules/qa_protocol.md核对其在项目性能预算事实源中的登记，不借用旧DEMO-001待批项。此项不阻断本版方案Review。"
+    }
+  ],
+  "next_action": "QA对v0.2方案评审通过。待Client与Master同版Review、Producer核验Required产物并提交用户审批；矩阵与性能方案获批后，先推进QA-MEASUREMENT-001的Brief审批、支持实现试采及同版Review/用户确认，再解锁正式FUNCTIONAL QA。支持能力或必要数据缺失时相应硬项BLOCKED，本Review不生成任何实测PASS。"
+}

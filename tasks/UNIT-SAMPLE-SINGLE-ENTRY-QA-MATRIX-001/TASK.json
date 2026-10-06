@@ -1,0 +1,44 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "title": "U01正式功能QA Web测试环境矩阵",
+  "type": "test",
+  "owner": "qa",
+  "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "objective": "依据已批准的U01产品、技术、QA计划与客户端实现v0.2，提出正式FUNCTIONAL QA运行所用Web环境矩阵，明确浏览器/OS/模拟视口/DPR/渲染后端/输入方式、证据及排除范围，完成专业评审并提交用户审批。",
+  "inputs": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_PLAN.md、TEST_CASES.md（USER_APPROVED）",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md（USER_APPROVED）",
+    "project/DECISIONS.md DEC-UNIT-MENU-WEB-TEST-005；rules/qa_protocol.md"
+  ],
+  "deliverables": [
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/WEB_TEST_MATRIX.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "列明固定Web浏览器及版本、OS、模拟手机竖屏视口、DPR、渲染后端、输入方式和可复现的记录方法；缺失实际值标待执行，不把候选写为实测。",
+    "覆盖已批准QA计划全部适用功能与本次前景防穿帮改动；明确五比例与边界、缩放、返回重入、视觉核对、失败处置和证据。",
+    "区分Web模拟和实体手机/小游戏容器；正式QA运行不得在本矩阵获用户批准前开始。",
+    "QA、Client、Tech及Master同版Review后交用户批准。"
+  ],
+  "dependencies": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-06 17:13 +08:00 Master在实现v0.2获用户批准后创建；本Task只设计并审批正式QA环境矩阵，不执行TEST_REPORT。",
+    "2026-10-06 17:16 +08:00 QA开始读取已批准输入、规则与本机候选环境，实际编写v0.1 WEB_TEST_MATRIX.md。",
+    "2026-10-06 17:18 +08:00 WEB_TEST_MATRIX.md、DELIVERABLE.json和QA_REVIEW.json已形成；QA自审APPROVED，Task进入REVIEW。Client、Tech、Master同版Review与用户审批待完成；正式QA未执行。",
+    "2026-10-06 17:24 +08:00 Producer核验v0.1全部7/7 Required路径存在，Deliverable artifacts索引与Task一致；QA/Client/Tech/Master四份同版Review均APPROVED，四项方案送审验收PASS。Task进入USER_REVIEW，正式QA未执行。"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对Product v0.2、Tech v0.1、QA Plan v0.2、Client实现v0.2的批准记录和DEC-UNIT-MENU-WEB-TEST-005。v0.2给出五视口Web环境引用、冷/热进入、四状态帧间隔、输入响应、20次生命周期的候选阈值、B0/V0采样与缺证据处理；明确不继承旧DEMO手机预算。数值是待用户决定的方案，不是现有实测或产品承诺。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 Client CHANGES_REQUESTED的3项MAJOR和2项INFO保留历史，v0.2明确新增Client正式测量支持Task UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001及其Brief/探针实施/试采/同版评审/用户审批前置；输入轨迹、CPU提交帧关联、真实Gallery与Controller绑定观察、双指及60Hz负载、U/M构建身份和探针开销均定义了可核查条件，能力缺失时BLOCKED。Tech、Client、QA同版Review均APPROVED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "正文前半旧称‘操作到可见反馈’由v0.2修订章替代；若用户批准，应仅以‘操作到变换帧CPU提交’的100/250ms为指标口径，GPU呈现/真正屏幕可见延迟仍NOT_TESTED。后续支持Brief及TEST_REPORT须沿用这一准确名称；获批数值需在项目性能预算事实源中按U01范围登记，不能混同旧DEMO预算。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本方案可提交用户审阅；QA Matrix v0.1已单独进入USER_REVIEW，但两方案获批仍不授权立即执行正式性能QA。Client测量支持Task目前BACKLOG，需上游批准后按Brief审批、实施与试采门禁推进，再由Master解锁独立QA执行。"
+    }
+  ],
+  "next_action": "Producer核对v0.2 Required与四份同版Review后送USER_REVIEW；向用户呈现性能候选阈值及CPU提交局限。用户明确批准后再推进Client测量支持方案，正式QA/TEST_REPORT留待支持交付批准后执行。"
+}

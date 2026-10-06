@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "owner": "tech_lead",
+  "summary": "U01 Web FUNCTIONAL性能方案v0.1候选提案；已定义适用性、环境引用、B0/V0、重复采样、候选门槛和报告门禁，未实测、未获用户批准。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.1/PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.1/TECH_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "result": "PASS",
+      "evidence": "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.1/PERFORMANCE_PLAN.md：适用性至候选门槛章节（方案完整性）",
+      "criterion": "说明适用性、环境、相机/缩放/进退场景采样、方法、基线、候选阈值及依据"
+    },
+    {
+      "result": "PASS",
+      "evidence": "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.1/PERFORMANCE_PLAN.md：输入、环境、报告门禁章节",
+      "criterion": "功能视觉性能分列；不套用Demo或真机预算，缺条件明确NOT_TESTED/BLOCKED"
+    },
+    {
+      "result": "NOT_TESTED",
+      "evidence": "Tech自检完成；其余角色Review及用户审批由Master组织，本交付不代签",
+      "criterion": "Tech、Client、QA、Master同版Review并交用户批准"
+    }
+  ],
+  "assumptions": [
+    "当前同轮Web矩阵v0.1为环境候选，审批后才能使用；改版须交叉核对",
+    "Client在正式QA执行授权后提供可审查的只读计数及完成帧观察方法"
+  ],
+  "risks": [
+    "候选阈值尚未实测校准或批准，不能宣称达标",
+    "缺端到端完成帧、生命周期计数或固定环境时，相关必需项BLOCKED",
+    "GPU驻留内存目前NOT_TESTED，理论像素量与JS堆都不代表GPU实测"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已阅读 Client Implement v0.2 IMPLEMENTATION_REPORT、build-identity/build-result、实际 UnitSampleGallery.ts 和 scene1_camera_controller.ts 及已批 QA Plan v0.2。Controller 实际支持按触点 ID 维护最多两个有效触点、双指距离缩放、TOUCH_CANCEL、鼠标移出及尺寸变更清理；五视口、倍率和边界检查与实际实现相符。现有构建证据仅验证鼠标/按钮，不证明 Chrome 触控或双指已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Chrome Shift pinch 是待试采输入方案；矩阵明确要求确认游戏收到两个有效触点，并在失败时 BLOCKED，不能以页面缩放或按钮代替，此边界可接受。正式执行前必须提供游戏侧触点 ID/start/move/end/cancel 和 Controller 有效触点观察方法；DOM TouchEvent 的两个 touches 本身不证明 Controller 接收。触摸取消须记录实际产生 cancel 的动作/工具，缺方法则专项 BLOCKED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现有源码没有正式运行计数或事件轨迹导出接口。节点/Controller 可通过经审查的引擎场景遍历观察；监听、手势和完成帧不能从截图推断。Master 须在 QA 执行前安排 Client 测量支持，提供只读观察脚本及试采证据；若需修改源代码或附加探针，先走独立 Client Brief、Tech Review、实现及版本审批，锁定新构建并复核影响，不将额外 instrumentation 当成 v0.2 已存在能力。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本批准仅针对功能环境矩阵方案；精确 OS/Chrome、DPR/WebGL 和输入能力须正式执行复核。未采到必需证据保持 BLOCKED/NOT_TESTED；性能由独立获批方案控制，实体设备及发布结论不由桌面模拟证明。"
+    }
+  ],
+  "next_action": "完成同版 Review 和用户审批后，由 Master 创建 QA 执行与 Client 测量支持任务。先试采触点/取消/实例观察并核对构建身份，通过后执行正式矩阵；能力缺失如实阻塞相关项。本 Review 不代替 QA 执行。"
+}

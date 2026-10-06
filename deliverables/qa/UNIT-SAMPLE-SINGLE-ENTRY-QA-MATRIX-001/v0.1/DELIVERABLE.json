@@ -1,0 +1,47 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "owner": "qa",
+  "summary": "提出U01正式FUNCTIONAL QA的固定Web环境矩阵：Windows 10 Pro 22H2、Chrome 154.0.8037.98、WebGL 2、五种竖屏CSS视口及DPR 2/3，定义鼠标/模拟单指/双指输入、实际环境取证、功能与视觉覆盖及失败处置。本轮只设计矩阵，未执行正式QA。",
+  "artifacts": [
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/WEB_TEST_MATRIX.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "列明固定Web浏览器及版本、OS、模拟手机竖屏视口、DPR、渲染后端、输入方式和可复现记录方法；缺失实际值标待执行。",
+      "result": "PASS",
+      "evidence": "WEB_TEST_MATRIX.md的固定环境提案和WEB-01～WEB-05表列明Windows/Chrome精确版本、五个CSS视口、DPR 2/3、WebGL 2及分模式输入；固定记录章节要求运行时读取并保留实际版本/后端/Canvas/输入日志，所有矩阵项均NOT_TESTED。"
+    },
+    {
+      "criterion": "覆盖已批准QA计划全部适用功能与本次前景防穿帮改动；明确五比例与边界、缩放、返回重入、视觉核对、失败处置和证据。",
+      "result": "PASS",
+      "evidence": "WEB_TEST_MATRIX.md的用例分配与检查点引用获批计划各用例；五视口均要求中心/左右端、1×/1.8×、缩小回收、重置、菜单返回重进和悬浮控件隔离，并列原始日志、截图、录屏、Creator/资源身份与缺陷处置。"
+    },
+    {
+      "criterion": "区分Web模拟和实体手机/小游戏容器；正式QA运行不得在本矩阵获用户批准前开始。",
+      "result": "PASS",
+      "evidence": "WEB_TEST_MATRIX.md开篇及性能与范围界限明确本版只是环境方案，实体手机/安全区/小游戏容器/发布平台NOT_TESTED，用户批准矩阵及独立执行任务前不产生正式TEST_REPORT。"
+    },
+    {
+      "criterion": "QA、Client、Tech及Master同版Review后交用户批准。",
+      "result": "PASS",
+      "evidence": "已完成同一v0.1的QA_REVIEW.json、CLIENT_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json，四份decision均APPROVED；Producer核验Task Required七项路径全部存在且版本/路径一致。此PASS只证明方案专业评审齐备并可提交用户，不代表矩阵运行、正式QA或性能测试通过。"
+    }
+  ],
+  "assumptions": [
+    "按已登记的USER_APPROVED审批记录使用Product v0.2、Tech v0.1、QA Plan v0.2与Client实现v0.2作为方案输入；源文档中的撰写时待审状态是历史文字，不改写审批事实。",
+    "2026-10-06只读盘点的Windows/Chrome版本用于本版固定候选；正式执行前需再次核验精确版本、硬件加速及WebGL实际后端。",
+    "矩阵通过后由Master/Producer另行解锁正式QA执行任务；本任务不创建TEST_REPORT。"
+  ],
+  "risks": [
+    "Chrome或OS自动更新、WebGL回退或软件渲染会使固定环境失配；需修订矩阵和复审后再执行受影响项。",
+    "桌面Chrome设备模拟不证明实体手机系统安全区、真实双指硬件、多平台或RELEASE表现；设备模式未产生两点触控事件时pinch项BLOCKED。",
+    "U01适用性能指标、采样和预算尚需单独审批，不能从旧DEMO-001预算借阈值或用功能截图代替性能结论。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

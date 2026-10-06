@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "reviewer": "client",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对实际 Client v0.2 源码与构建报告：Gallery 同步创建四层 Prefab/Controller，返回以 director.loadScene 重载菜单；Controller 成对绑定/解除 8 个 input、2 个 viewport、2 个 view 监听及 4 个按钮 TOUCH_END 监听。Gallery 另有 2 个 input、2 个 view 监听及菜单按钮监听。未见 U01 schedule/update 或性能探针；静态配对不能证明运行释放。GPU 与 JS 堆边界、独立诊断轮、B0/V0 与绝对阈值分列的设计合理。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "必测完成帧、输入反馈和监听/计时器计数仅写为 Client 提供观察方法，未定义实际可执行接口与支持交付前置。当前 v0.2 没有完成帧序号、输入关联 ID、事件轨迹或监听计数接口；debug=false 也不能假定可从全局对象读取私有状态或 Profiler。修订须明确 Master 创建 Client 测量支持任务，交付测量 Feature Brief、版本兼容只读采集脚本/必要探针、字段定义、试采报告及 Tech/QA Review。采用引擎帧事件仅证明 CPU 渲染提交，须说明与 trace/presentation 的关联及 GPU 完成局限；启动观察须在导航前安装，不能遗漏冷导航时间。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "60Hz 等间隔拖动、双指和取消尚无锁定的可审查输入生成方式；人工 DevTools Shift 拖动不能保证每秒60事件。修订须指定允许工具、时间戳、坐标系/实际分发间隔及超限处理，保存浏览器输入与引擎接收轨迹，先试采确认两个触点被 Controller 接收。S1/S2 需定义每5秒往返的两程时长与边界换向/重新按下策略；当前 Controller 按按下位置计算拖动，有限屏幕幅度不一定一次触达源图两端，不能通过直接改 cameraX 达成负载。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "生命周期计数须定义绑定集合及归属：仅统计 Controller 的16项会漏掉 Gallery/菜单随重载累计的全局监听。修订需覆盖 Gallery 的 input/view、按钮节点、Controller、四层节点及专属计时器；区分场景仍存活、延迟 destroy、堆保留和引擎资源缓存。只读场景遍历可观察存活节点，但监听泄漏不能靠场景遍历或手工登记计数证明，需校验事件目标实际绑定/移除或快照保留引用，并记录采集器自己的监听和开销。"
+    },
+    {
+      "severity": "INFO",
+      "message": "若支持任务须改源码/附加运行探针，应先获相应 Brief/实现审批，锁定测量构建新 hash，说明与已批 v0.2 的关系、探针开销和无探针对照；不能继续声称完全同一已批构建。若只用外部只读采集则保留原构建身份并记录采集脚本 hash。按现稿缺硬项计数会 BLOCKED，因此先补齐方法比正式测试中再发现缺口更可执行。"
+    }
+  ],
+  "next_action": "Tech Lead 修订新版本，明确 Client 支持任务及采集/负载契约、支持交付的专业 Review 与审批前置、试采通过条件和测量构建身份；完成 Client/QA 交叉 Review 后再送用户审批。本轮不实施探针或执行性能测试。"
+}

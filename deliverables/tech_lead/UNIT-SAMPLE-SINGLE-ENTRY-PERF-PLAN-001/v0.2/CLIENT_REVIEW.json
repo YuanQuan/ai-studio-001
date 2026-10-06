@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已逐项复核 v0.1 CLIENT_REVIEW、v0.2 PERFORMANCE_PLAN、正式 UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001 TASK.json 与 DRAFT Approval，并沿用先前实际 Client v0.2 源码/构建身份核对。v0.1 三项 MAJOR 与构建身份 INFO 均在方案层关闭；修订正文记录来源为3项MAJOR及2项INFO，与v0.1 Review实际计数一致。批准仅说明方案前置清楚，不证明支持工具已经实现或试采通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "完成帧/响应缺口已关闭：正式 Client 支持 Task 声明 Brief、Contract、脚本/必要探针、试采报告及同版 Review/用户审批；方案定义导航前安装、时钟校准误差、scene_epoch/input_id、CPU提交序号及变换关联字段。CPU提交与GPU/屏幕呈现局限明确，100/250ms指标改为CPU提交口径须随v0.2批准。Task中可见帧措辞按本版具体有限口径解释，未来报告不得称其为已测端到端屏幕响应。"
+    },
+    {
+      "severity": "INFO",
+      "message": "输入生成缺口已关闭：锁定受控loopback CDP与隔离profile、60Hz计划/实际发送及接收轨迹、有效间隔条件、两次不合格暂停、分段重新按下与2.5秒两程、双触点及touchCancel验证；不改cameraX。仍需支持Brief确认锁定Chrome/CDP能力、真实边界触达及实际引擎接收，两点同时start在锁定引擎的展开行为必须以试采证明。任何方法失败按方案阻塞或修订，不降低频率冒充通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "生命周期缺口已关闭：完整覆盖Controller及Gallery的input/view、按钮、四层、计时器，按owner/epoch区分新菜单与旧场景；真实事件容器快照及全局保留引用校验补足自建账本局限，once/targetOff/销毁与采集器绑定单列。私有事件容器是明确的Creator3.8.8版本风险，必须在Brief与试采中证明可靠，失败时硬项BLOCKED，不把静态无timer推成实测零。"
+    },
+    {
+      "severity": "INFO",
+      "message": "instrumentation身份与开销缺口已关闭：M/U构建、脚本hash、源diff、卸载、有限缓冲、交替试采和开销预算已定义，支持Brief及交付用户批准后才解锁正式QA。当前支持Task保持BACKLOG、Approval DRAFT，符合上游待批状态。支持实现应记录受支持Director API及CPU提交事件具体语义；探针修改产生新Artifact，不能把M标作原v0.2，U硬指标失败亦不能被M覆盖。"
+    }
+  ],
+  "next_action": "完成v0.2同版QA/Master Review并送用户批准；本方案与矩阵批准后，由Master按正式Client测量Task推进Brief及其审批，再实施和试采，支持交付批准后才执行正式QA。本Review不实施探针、不执行性能测试，也不批准未制作的支持Artifact。"
+}

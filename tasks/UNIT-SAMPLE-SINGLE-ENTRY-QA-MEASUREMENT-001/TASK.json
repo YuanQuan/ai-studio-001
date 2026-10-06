@@ -1,0 +1,35 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001",
+  "title": "U01正式QA测量与输入取证支持",
+  "type": "tech",
+  "owner": "client",
+  "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "objective": "在Web测试矩阵与性能测量方案获批后，为正式QA提供可审查的输入轨迹、可见帧/响应、生命周期实例与监听计数方法及试采证据，锁定采集脚本和被测构建身份。",
+  "inputs": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001获用户批准的版本（待定）",
+    "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001获用户批准的版本（待定）",
+    "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 v0.2（USER_APPROVED）",
+    "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001 v0.2（USER_APPROVED）"
+  ],
+  "deliverables": [
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/MEASUREMENT_CONTRACT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/VALIDATION_REPORT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "确定只读采集优先的版本兼容方法，并试采验证双触点/取消、输入时间戳与分发间隔、引擎接收、可见帧对应、实例/监听/计时器真实数量及采集器开销。",
+    "提供可审查脚本/必要探针、字段定义、原始试采轨迹与成功/失败边界，明确GPU呈现局限；不得用静态配对或rAF回调单独冒充完成画面。",
+    "若改动已批准U01源码或附加探针构建，先由Brief及专业评审和用户审批解锁，再实施并重新锁定构建哈希/资源身份与无探针对照；不得冒称原v0.2构建。",
+    "Client、Tech、QA、Master同版Review及用户审批后方可作为正式QA采集支持。"
+  ],
+  "dependencies": ["UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001", "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001", "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"],
+  "status": "BACKLOG",
+  "approval": "APPROVAL",
+  "notes": ["2026-10-06 17:22 +08:00 Master依据PERF-PLAN v0.1 Client Review的MAJOR可执行性问题创建。上游矩阵及性能方案尚待用户批准；本Task当前不执行或改源码，仅锁定后续正式QA所需交付。"]
+}

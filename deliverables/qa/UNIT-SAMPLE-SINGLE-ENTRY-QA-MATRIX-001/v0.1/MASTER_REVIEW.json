@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "核对已批准Product v0.2、Tech v0.1、QA Plan v0.2、Client实现v0.2和项目决策。矩阵锁定五种CSS竖屏视口、DPR2/3、Windows/Chrome候选版本、WebGL2、输入模式及实际运行记录方式；五比例前景边界与唯一菜单、返回重入、历史/资源身份检查均有对应测试步骤。"
+    },
+    {
+      "severity": "INFO",
+      "message": "QA、Client、Tech三份同版Review均APPROVED。Client明确现有v0.2构建没有双指接收轨迹、监听计数或完成帧探针；矩阵要求正式执行前另行提供经审查的只读观察/试采方法，缺失项BLOCKED。该风险不阻止对测试环境方案送审，但不能把环境批准视为测试能力、运行结果或性能通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Chrome/OS版本仅经只读盘点，WebGL后端、DPR及双指实际接收仍待测试；正式QA须保留同版构建身份并执行环境试采。性能计划v0.1因Client专业评审CHANGES_REQUESTED正在修订，矩阵自身可独立送审，正式QA执行须等两份方案均获批。"
+    }
+  ],
+  "next_action": "Producer核对Required与同版评审后将矩阵v0.1送USER_REVIEW；等待用户对该具体矩阵明确决定。性能方案修订及Client测量支持前置继续推进，正式QA未执行。"
+}

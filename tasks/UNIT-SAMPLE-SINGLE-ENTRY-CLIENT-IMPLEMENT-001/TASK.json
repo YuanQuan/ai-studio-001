@@ -55,7 +55,7 @@
     "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
     "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001"
   ],
-  "status": "USER_REVIEW",
+  "status": "QA",
   "approval": "APPROVAL",
   "notes": [
     "用户原始任务授权将单元示例改为U01并删除其他旧示例及其专属资源；上述四项版本把实施顺序、保护边界和验收标准具体化。QA运行仍须等待本实施Artifact用户批准并另行建立/解锁QA执行Task。",
@@ -64,6 +64,7 @@
     "2026-10-06 14:05:17 +08:00 Client收到Master授权后实际开始实施：重读Task与CP-COCOS-CLI-BROWSER-20261006及锁定方法；采集git status/diff基线，记录UnitSamples.scene SHA256 E48FF6357E2B5647460F907BFC056CC637ECAF0511F76AA56764DE6476507BAD、UnitSampleGallery.ts SHA256 A7A7A4CBEC94FE95C07862C7B0D3E266C721EDF6D0614385DC942EDFF8EE2A8D；两文件在本Task开始前已有M状态，旧DemoScene/demo删除路径已有D状态。备份在系统临时目录C:\\Users\\admin\\AppData\\Local\\Temp\\UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001-20261006-140517；不纳入版本库。本轮不接收原有70个删除为本Task删除产出。",
     "2026-10-06 14:28:48 +08:00 Producer核验：v0.1所有路径类Required均存在，Client/Tech/Art/QA/Master同版Review全部APPROVED，DELIVERABLE为READY_FOR_REVIEW。最终Creator 3.8.8 debug build exit36；IAB实现级交互证据覆盖菜单、进入、缩放、拖动、重置、UI隔离、返回及重入。Task进入USER_REVIEW；正式QA未执行，本实现Artifact用户批准前不得进入独立QA或DONE。",
     "2026-10-06 16:34 +08:00：v0.1 USER_REVIEW收到明确修订反馈，进入REVISION后实际开始v0.2；已保存两源码备份/hash并开始全屏布局与边界修订。v0.1资料保留，QA未解锁。",
-    "2026-10-06T17:07:00+08:00 Producer核验：v0.2路径完整、六份同版Review APPROVED；Creator最终构建exit36、五比例Web与4280几何条件通过。Continuity check：本任务无空转READY/IN_PROGRESS，下一门禁为用户批准本实现；正式QA未解锁。"
+    "2026-10-06T17:07:00+08:00 Producer核验：v0.2路径完整、六份同版Review APPROVED；Creator最终构建exit36、五比例Web与4280几何条件通过。Continuity check：本任务无空转READY/IN_PROGRESS，下一门禁为用户批准本实现；正式QA未解锁。",
+    "2026-10-06T17:13:08+08:00 用户明确‘好的批准’，仅批准本Task客户端实现v0.2；Producer登记USER_APPROVED，Task进入QA门禁。正式QA执行前须获批环境矩阵与适用性能口径，TEST_REPORT及用户确认仍待完成，因此未标DONE。"
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "owner": "tech_lead",
+  "summary": "v0.2依据Client专业退回补齐正式测量支持Task、完成帧关联、CDP轨迹、真实监听与探针构建对照；未实施/未试采/未获用户批准。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/QA_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "evidence": "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md 全文及v0.2修订章节（方案完整性）",
+      "criterion": "性能适用性、环境、采样、基线、阈值依据与实际采集契约",
+      "result": "PASS"
+    },
+    {
+      "evidence": "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md 报告门禁与CPU提交/GPU局限",
+      "criterion": "不套用旧Demo/真机阈值，功能视觉性能分列，缺条件如实记录",
+      "result": "PASS"
+    },
+    {
+      "evidence": "v0.2的TECH_REVIEW.json、CLIENT_REVIEW.json、QA_REVIEW.json、MASTER_REVIEW.json四份decision均APPROVED；Task Required 7项全部存在，Deliverable索引一致。本PASS仅表示专业评审及送审就绪，Approval仍待用户决定，未执行性能采样，未形成达标结论。",
+      "criterion": "Tech、Client、QA、Master四份同版Review均通过，方案具备提交用户审阅条件；用户审批及性能达标仍待独立决定/实测。",
+      "result": "PASS"
+    }
+  ],
+  "assumptions": [
+    "采集方式是待批技术契约；Creator3.8.8具体帧事件/真实绑定容器由支持Brief核实",
+    "支持Task上游矩阵及性能获批后才启动；源码/探针须Brief再批准，支持交付须试采Review和用户确认"
+  ],
+  "risks": [
+    "CDP权限、真实绑定读取、CPU帧关联尚未验证；必要项不可用则BLOCKED",
+    "候选60Hz轨迹及两程2.5秒可达性须试采，无法达到须复审而非改cameraX",
+    "CPU提交非GPU完成或真实屏幕响应；探针构建新身份及对照不能冒称原已批构建"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

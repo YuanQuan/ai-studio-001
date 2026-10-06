@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "矩阵由已批准Product v0.2、Tech v0.1、QA Plan v0.2与Client实现v0.2及DEC-UNIT-MENU-WEB-TEST-005推导；固定Windows 10 Pro 22H2/Chrome 154.0.8037.98/WebGL 2和五竖屏CSS视口，DPR 2/3，运行时必须记录实际值。系统与浏览器版本仅作只读环境盘点，未冒充正式QA运行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "WEB_TEST_MATRIX.md把原QA计划静态、Creator导入、引用/历史核对与五比例Web运行分开，覆盖唯一菜单文字、进入/返回重进、最前景两端与1×/1.8×、缩小回收、重置、悬浮UI隔离、触摸取消及视觉证据。矩阵逐项NOT_TESTED，Client实现级证据不回填正式结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "遵循内置浏览器优先规则记录HTTP实际构建冒烟；正式DPR/触摸矩阵明确选Chrome设备模式。双指仅在输入轨迹证明两个同时有效触点时有效，否则pinch项BLOCKED。WebGL实际回退、浏览器升级或视口/DPR读数不符须修订/复审；实体手机、小游戏容器、动态安全区和RELEASE保持NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧DEMO-001待批性能预算不能借用作U01阈值。FUNCTIONAL性能适用性仍需另锁指标、采样、基线与预算；本矩阵和本自审不生成TEST_REPORT，也不授权正式QA执行。"
+    }
+  ],
+  "next_action": "QA同版自审通过；请Client、Tech与Master分别Review本版，Producer核验全部Required Artifact后提交用户审批。矩阵USER_APPROVED及正式执行任务解锁前，各运行用例维持NOT_TESTED。"
+}

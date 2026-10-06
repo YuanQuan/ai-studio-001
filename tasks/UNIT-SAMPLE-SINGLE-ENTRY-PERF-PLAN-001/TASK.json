@@ -1,0 +1,46 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001",
+  "title": "U01正式功能QA性能适用性与测量口径",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "objective": "评估U01四层全屏场景在FUNCTIONAL QA中的性能适用性，提出可执行的Web测量环境、指标、阈值、样本、基线及报告规则，完成专业评审并提交用户审批。",
+  "inputs": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md（USER_APPROVED）",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_PLAN.md（USER_APPROVED）",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md（USER_APPROVED）",
+    "rules/qa_protocol.md；project/quality/PERFORMANCE_BUDGET.md（原Demo预算仅供比对）"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/QA_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "说明性能适用性、Web测量环境、相机/缩放/进退场景的采样点、可复现测量方法、基线和候选阈值及选择依据。",
+    "功能、视觉、性能分别报告；不将原Demo或真实手机目标直接套作U01 Web硬阈值，缺基线或环境时明确NOT_TESTED/BLOCKED。",
+    "Tech、Client、QA、Master同版Review后交用户批准；批准前不作正式性能达标判定。"
+  ],
+  "dependencies": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-06 17:13 +08:00 Master在实现v0.2获用户批准后创建；本Task只提出并审批性能测量口径，不执行性能测试。",
+    "2026-10-06 17:17～17:19 +08:00 Tech Lead核对正式输入、qa_protocol、旧预算和Controller生命周期，产出v0.1 PERFORMANCE_PLAN/DELIVERABLE/TECH_REVIEW；上述时间为本轮可核对读取与写入记录范围，不包括此前未记录的准备耗时。未执行性能采样。交Master安排跨角色Review；状态由Producer维护。",
+    "2026-10-06 17:20 +08:00 Master核对三份自审产物实存且TECH_REVIEW APPROVED，Task由READY转REVIEW，跨角色同版Review继续。",
+    "2026-10-06T17:23:23.3683798+08:00 Client专业CHANGES_REQUESTED，v0.1仍DRAFT，无用户拒绝；开始v0.2修订。",
+    "2026-10-06T17:23:23.4306573+08:00 v0.2 PERFORMANCE_PLAN.md实际写作已开始，修订采集与支持门禁。",
+    "2026-10-06T17:25:24.7006701+08:00 v0.2三份Required Artifact实际完成，Tech自检APPROVED仅指方案；支持Task QA-MEASUREMENT-001维持BACKLOG，待Client/QA/Master同版复审及用户审批。",
+    "2026-10-06 17:33:15 +08:00 Producer核验v0.2全部7/7 Required存在，Deliverable索引一致；Tech/Client/QA/Master四份同版Review均APPROVED，三项方案送审验收PASS。Task进入USER_REVIEW；v0.1因Client专业Review CHANGES_REQUESTED留作历史，不补做其余Review。未执行性能采样，未形成性能PASS。"
+  ]
+}

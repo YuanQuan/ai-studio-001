@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立读取WEB_TEST_MATRIX.md v0.1、QA_REVIEW.json、已批QA Plan v0.2及PERF-PLAN v0.1；五竖屏视口、DPR2/3、1×/1.8×镜头与输入隔离覆盖符合已批范围，未变更产品镜头语义或扩展真实手机承诺。"
+    },
+    {
+      "severity": "INFO",
+      "message": "只读核对本机chrome.exe FileVersion=154.0.8037.98，工程package.json Creator=3.8.8，与候选一致。环境版本盘点不证明运行兼容；WebGL2/GPU/ANGLE仍为待测候选，方案要求执行时核对实际后端、拒绝静默WebGL1/软件渲染回退，技术边界合理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "矩阵说明内置浏览器基础核对与正式Chrome DPR/输入测量分工；鼠标和Mobile触摸模式分别记录并重载核验，双指须证明两个同时有效触点，否则BLOCKED且经Master处理，不用按钮/滚轮替代。当前未实测Shift拖动在本版Chrome是否产生两点触控，Review不将其写成可执行性已验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "PERF-PLAN v0.1引用此矩阵环境与五视口，并要求两份Artifact都批准后再执行、变更环境交叉核对、性能独立采样及不录屏采样。矩阵视觉截图/短录屏应在性能方案指定的独立诊断轮生成，二者不存在需同时执行的冲突。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按QA Plan保留Creator/静态身份链检查和必要环境门禁，功能、视觉、性能分列；旧Demo预算不套用，缺采样/后端/输入工具记录BLOCKED/NOT_TESTED。批准仅为方案技术Review通过，不是Chrome/WebGL兼容、输入、性能或正式QA通过。"
+    }
+  ],
+  "next_action": "Tech同版方案Review通过；请Master核验Client及其他Review并提交用户审批。正式执行前再核对OS/Chrome/GPU、实际WebGL与DPR及双指事件轨迹，联合批准PERF-PLAN后锁定测试工具与版本；不可用项按方案BLOCKED，不外推真机结论。"
+}
