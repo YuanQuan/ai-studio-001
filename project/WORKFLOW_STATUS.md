@@ -199,3 +199,7 @@ Continuity check：U01规格任务均DONE；实施任务仍受Creator场景可�
 
 2026-10-06 14:28:48 +08:00（Producer核验/送审）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 v0.1：Task Required中的12项交付描述均已落实，全部路径类项目存在；DELIVERABLE结构可解析、状态READY_FOR_REVIEW。CLIENT_REVIEW、TECH_REVIEW、ART_REVIEW、QA_REVIEW、MASTER_REVIEW五份同版评审均APPROVED。TASK状态由IN_PROGRESS推进USER_REVIEW；ARTIFACT_APPROVAL指向IMPLEMENTATION_REPORT.md v0.1，status=USER_REVIEW、review_ref为MASTER_REVIEW.json、decided_at=null。最终Creator 3.8.8 Web Mobile构建（debug=false）exit36；源/快照22项、构建35项及9张IAB截图hash身份一致；实现级冒烟覆盖菜单、进入、缩放、拖动、重置、UI隔离、返回、重入。70条旧Demo路径为开始前预存删除，已逐项核账并纳入相关提交而非新删除；11个旧Demo专属工具备份审计后退役。正式QA未执行，客户端实现Review不等同QA结论。
 Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作明确决定；Task不标DONE。QA执行保持关闭，须实现Artifact USER_APPROVED后由Master建立/解锁独立QA Task，并使用已批准Web模拟手机矩阵及适用性能指标/方法预算门禁。其它已授权工作无空转READY/IN_PROGRESS任务；治理Task保持DONE。
+
+2026-10-06 16:34 +08:00 U01客户端v0.2：用户退回待审v0.1展示，要求竖屏全屏、前景安全边界、悬浮控件。已保存源码备份/hash，v0.2 FEATURE_BRIEF落盘且两源码实际修订，Task IN_PROGRESS、Approval DRAFT。当前继续Creator CLI构建与内置浏览器比例/边界检查；正式QA未解锁。
+
+2026-10-06 17:07 +08:00 U01当前实现v0.2：UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 Task/Approval USER_REVIEW；六份同版Review APPROVED，五手机比例Web检查与4280几何条件PASS，最终Creator exit36。Artifact：deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md；最终截图evidence/final-portrait-9x19_5-center.png。Continuity check：本任务无空转READY/IN_PROGRESS，下一门禁为用户明确批准；正式QA未解锁。

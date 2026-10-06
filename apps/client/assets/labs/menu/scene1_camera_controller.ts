@@ -7,6 +7,16 @@ const { ccclass, property } = _decorator;
 const SOURCE_WIDTH = 2172;
 const SOURCE_HEIGHT = 724;
 const RATIOS = [0.3, 0.8, 1.0, 1.0];
+const EDGE_GUARD = 2;
+
+/** Full foreground canvas stays outside every viewport edge, including a sampling guard. */
+export function calculateScene1Bounds(width: number, height: number, zoom: number) {
+  const coverScale = Math.max((width + EDGE_GUARD * 2) / SOURCE_WIDTH,
+    (height + EDGE_GUARD * 2) / SOURCE_HEIGHT);
+  const scale = coverScale * zoom;
+  const maxCameraX = Math.max(0, (SOURCE_WIDTH - (width + EDGE_GUARD * 2) / scale) / 2);
+  return { coverScale, scale, maxCameraX };
+}
 
 /** 示例1 Lab 专用镜头与输入控制。该组件只驱动四层背景节点，不属于共享背景 Prefab。 */
 @ccclass('Scene1CameraController')
@@ -271,11 +281,9 @@ export class Scene1CameraController extends Component {
     if (!viewportTransform) return;
     const visible = viewportTransform.contentSize;
     if (visible.width <= 0 || visible.height <= 0) return;
-    this.coverScale = Math.max(visible.width / SOURCE_WIDTH, visible.height / SOURCE_HEIGHT);
-    const scale = this.coverScale * this.zoom;
-    const visibleSourceWidth = visible.width / scale;
-    if (visibleSourceWidth > SOURCE_WIDTH) return;
-    const maxCameraX = (SOURCE_WIDTH - visibleSourceWidth) / 2;
+    this.zoom = Math.max(this.minZoom, Math.min(this.maxZoom, this.zoom));
+    const { coverScale, scale, maxCameraX } = calculateScene1Bounds(visible.width, visible.height, this.zoom);
+    this.coverScale = coverScale;
     this.cameraX = Math.max(-maxCameraX, Math.min(maxCameraX, this.cameraX));
     for (let i = 0; i < this.layers.length; i++) {
       const layer = this.layers[i];

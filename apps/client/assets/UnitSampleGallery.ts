@@ -1,6 +1,6 @@
 import {
   _decorator, Color, Component, EventMouse, Graphics, Input, input,
-  Label, Node, Prefab, UITransform, Vec3, instantiate,
+  Label, Node, Prefab, ResolutionPolicy, UITransform, Vec3, instantiate, sys, view,
 } from 'cc';
 import { Scene1CameraController } from './labs/menu/scene1_camera_controller';
 
@@ -21,18 +21,28 @@ export class UnitSampleGallery extends Component {
   private page!: Node;
   private menuEntry: Node | null = null;
   private menuMouseDown = false;
+  private menuContent: Node | null = null;
+  private sceneViewport: Node | null = null;
+  private sceneControls: Node | null = null;
+  private sceneBack: Node | null = null;
 
   protected onLoad(): void {
+    // Keep the full phone viewport, including the extra height of tall phones.
+    view.setDesignResolutionSize(720, 1280, ResolutionPolicy.FIXED_WIDTH);
     this.root = this.makeNode('UnitSamplesRoot', this.node, 720, 1280);
     this.drawRect(this.root, 0, 0, 720, 1280, MENU_BG);
     this.openMenu();
     input.on(Input.EventType.MOUSE_DOWN, this.onMenuMouseDown, this);
     input.on(Input.EventType.MOUSE_UP, this.onMenuMouseUp, this);
+    view.on('canvas-resize', this.layoutScene, this);
+    view.on('design-resolution-changed', this.layoutScene, this);
   }
 
   protected onDestroy(): void {
     input.off(Input.EventType.MOUSE_DOWN, this.onMenuMouseDown, this);
     input.off(Input.EventType.MOUSE_UP, this.onMenuMouseUp, this);
+    view.off('canvas-resize', this.layoutScene, this);
+    view.off('design-resolution-changed', this.layoutScene, this);
   }
 
   private makeNode(name: string, parent: Node, width = 1, height = 1, x = 0, y = 0): Node {
@@ -95,25 +105,28 @@ export class UnitSampleGallery extends Component {
     this.page = this.makeNode('Page', this.root, 720, 1280);
     this.menuEntry = null;
     this.menuMouseDown = false;
+    this.menuContent = null;
+    this.sceneViewport = null;
+    this.sceneControls = null;
+    this.sceneBack = null;
   }
 
   private openMenu(): void {
     this.clearPage();
-    this.label(this.page, 'U01 四层场景镜头', 0, 400, 42, GOLD);
-    this.label(this.page, '查看四层场景视差，并拖动、缩放或重置镜头。',
+    this.menuContent = this.makeNode('MenuContent', this.page);
+    this.label(this.menuContent, 'U01 四层场景镜头', 0, 400, 42, GOLD);
+    this.label(this.menuContent, '查看四层场景视差，并拖动、缩放或重置镜头。',
       0, 320, 23, TEXT, 650, 76);
-    this.menuEntry = this.button(this.page, '进入 U01', 0, 170, 330, 92,
+    this.menuEntry = this.button(this.menuContent, '进入 U01', 0, 170, 330, 92,
       () => this.openUnit());
+    this.layoutScene();
   }
 
   private openUnit(): void {
     this.clearPage();
-    this.label(this.page, 'U01 四层场景镜头', 0, 555, 36, GOLD);
-    this.label(this.page, '查看四层场景视差，并拖动、缩放或重置镜头。',
-      0, 505, 19, TEXT, 690, 48);
-
-    const viewport = this.makeNode('Scene1Viewport', this.page, 660, 680, 0, 55);
-    this.drawRect(viewport, 0, 0, 660, 680, PANEL);
+    const visible = view.getVisibleSize();
+    const viewport = this.makeNode('Scene1Viewport', this.page, visible.width, visible.height);
+    this.sceneViewport = viewport;
     if (!this.streetBasePrefab) {
       this.label(this.page, '四层背景暂不可用，请检查已批准资源导入。',
         0, 0, 20, MUTED, 640, 80);
@@ -133,11 +146,13 @@ export class UnitSampleGallery extends Component {
       return;
     }
 
-    const controls = this.makeNode('Scene1Controls', this.page, 660, 148, 0, -478);
-    this.button(controls, '−', -216, 32, 110, 58);
-    this.button(controls, '重置', 0, 32, 150, 58);
-    this.button(controls, '+', 216, 32, 110, 58);
-    this.button(controls, '返回菜单', 0, -40, 230, 58);
+    const controls = this.makeNode('Scene1Controls', this.page, 470, 72);
+    this.sceneControls = controls;
+    this.button(controls, '−', -170, 0, 96, 64);
+    this.button(controls, '重置', 0, 0, 150, 64);
+    this.button(controls, '+', 170, 0, 96, 64);
+    this.sceneBack = this.button(this.page, '返回菜单', 0, 0, 180, 64);
+    this.layoutScene();
 
     const controllerNode = this.makeNode('Scene1CameraController', this.page);
     // Cocos may call onEnable as soon as the component is added. Keep the node
@@ -147,16 +162,30 @@ export class UnitSampleGallery extends Component {
     const controller = controllerNode.addComponent(Scene1CameraController);
     controller.layers = layers;
     controller.viewport = viewport;
-    controller.uiCaptureRoot = controls;
+    // Only buttons capture input; the transparent spaces between them remain draggable.
+    controller.uiCaptureRoot = null;
     controller.zoomOutButton = controls.getChildByName('Button_−');
     controller.resetButton = controls.getChildByName('Button_重置');
     controller.zoomInButton = controls.getChildByName('Button_+');
-    controller.backButton = controls.getChildByName('Button_返回菜单');
+    controller.backButton = this.sceneBack;
     controllerNode.active = true;
     controller.reset();
 
-    this.label(this.page, '拖动背景调整视差；使用缩放与重置控件。',
-      0, -350, 17, MUTED, 680, 42);
+  }
+
+  private layoutScene(): void {
+    const visible = view.getVisibleSize();
+    this.root.getComponent(UITransform)!.setContentSize(visible);
+    this.page.getComponent(UITransform)!.setContentSize(visible);
+    // Retain a reachable menu when the Web preview is opened in a short desktop window.
+    this.menuContent?.setPosition(0, visible.height < 900 ? -290 : 0);
+    if (!this.sceneViewport?.isValid) return;
+    const origin = view.getVisibleOrigin();
+    const safe = sys.getSafeAreaRect(false);
+    this.sceneViewport.getComponent(UITransform)!.setContentSize(visible);
+    this.sceneControls?.setPosition(0, -visible.height / 2 + safe.y - origin.y + 68);
+    this.sceneBack?.setPosition(-visible.width / 2 + safe.x - origin.x + 114,
+      -visible.height / 2 + safe.y + safe.height - origin.y - 68);
   }
 
   private isInside(node: Node, point: { x: number; y: number }): boolean {

@@ -1,0 +1,14 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"本结论仅覆盖客户端实现 Artifact v0.2。已读取同版 FEATURE_BRIEF、IMPLEMENTATION_REPORT、DELIVERABLE、Gallery/Controller 源码、已批准四层制作方案 VISUAL_ANCHORS、project/ASSET_HANDOFF_REGISTRY 和 Gate2 v0.3 批准记录；未制作或替换图片。"},
+    {"severity":"INFO","message":"通过 view_image 逐张实看 evidence/portrait-9x16、9x18、9x19_5、9x20、9x21 的 center、left-min、left-max、right-min、right-max 共25张实际Web截图。五种比例场景均覆盖整个画面，中心石拱桥可辨；左右端及1.8倍放大端没有看到图幅外空白、边缝或额外底色。放大端河面退出视窗、柳树/右廊局部裁切属于现有图幅内的镜头裁切，不改变源图。"},
+    {"severity":"INFO","message":"实看 evidence/final-portrait-9x19_5-center.png、right-max.png、shrink.png、reset.png，最终版仍全屏，缩小回收后覆盖完整，重置恢复桥区。五比例矩阵对应首轮16:37:30构建；后续仅菜单短窗口位置补丁，Controller及四图不变，最终16:45:58构建截图用于最终版本复核，未把首轮截图冒充最终构建截图。"},
+    {"severity":"INFO","message":"实看 deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png 并与手机截图核对：冷蓝夜色、蓝紫远山、柳绿、暖橙灯晕、石桥/栏杆/河水和纸船固定景物保持。四层共同等比缩放，层序天空→远山建筑→地面树木右廊→桥栏杆河面、速度0.3/0.8/1/1与锚点一致；既有alpha孔隙不被误认成缺图。"},
+    {"severity":"INFO","message":"重新计算工程四PNG SHA-256，分别为 fbc51da7…、3ff0afcb…、af07fc56…、8a715d77…，与ASSET_HANDOFF_REGISTRY的Gate2 v0.3哈希及build-identity.json一致。源码采用2172×724完整图幅、每边2 UI单位余量，并按最前景计算限位；没有为全屏重绘、调色、逐层拉伸或替换已批资源。"},
+    {"severity":"INFO","message":"已有深色悬浮按钮复用Gallery绘制方式，位于场景上方，文字可辨；五比例截图中没有控件被前景覆盖。当前查看的是已有HTTP实际Web构建截图，静态截图无法独立证明连续运动细叶边缘、真实设备显示、实体安全区或目标平台表现，这些仍按正式QA门禁验证。"}
+  ],
+  "next_action": "提交Master同版整合Review并呈用户审核实现v0.2；本Art结论不替代用户批准、正式QA或目标设备验收，不将任务标记DONE。"
+}

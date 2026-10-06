@@ -1,0 +1,15 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"本次为用户竖屏全屏修订后的实现v0.2评审。按角色五文件顺序读取UI配置，检查同版FEATURE_BRIEF、IMPLEMENTATION_REPORT、DELIVERABLE、UnitSampleGallery.ts和scene1_camera_controller.ts及实际Web截图，沿用已批四层资源和现有控件。"},
+    {"severity":"INFO","message":"通过view_image检查五比例9:16、9:18、约9:19.5、9:20、9:21各center/left-min/left-max/right-min/right-max共25张截图，原小视口与说明区已移除，场景占满可见区域，返回在左上、−/重置/+在底部且始终在场景之上；四个按钮无遮挡、无屏外截断，横向裁切随比例变化。"},
+    {"severity":"INFO","message":"Gallery采用FIXED_WIDTH、view.getVisibleSize和resize事件重排全屏viewport；底部和返回位置计算引用sys.getSafeAreaRect(false)。Controller以真实viewport大小和完整最前景图幅计算coverScale/maxCameraX，每边2 UI单位余量，统一等比缩放；缩放夹在1～1.8，缩小及viewport变化立即回收cameraX，reset恢复当前覆盖倍率与中心。静态几何逻辑与geometry-report.json的4280项覆盖检查一致。"},
+    {"severity":"INFO","message":"输入捕获范围与需求一致：Gallery将uiCaptureRoot设为null，Controller只命中四个按钮的UITransform矩形，按钮间空白保持场景拖动入口；背景与控件是独立兄弟节点，背景缩放不改变按钮位置。鼠标按钮需按下/抬起均在按钮内才触发，触摸按钮结束清除镜头手势，禁用时注销事件。真实触屏双指仍需正式QA检验。"},
+    {"severity":"INFO","message":"实看portrait-9x16-ui-capture.png、portrait-9x21-return-menu.png、reenter.png及desktop-menu.png，按钮捕获后的画面保持中心、返回菜单只显示U01入口、重入恢复首屏；build-identity.json四组像素比较支持端点钳制、重置、按钮隔离和重入结果。该证据为Master/Client的实际Canvas鼠标操作记录，本评审未控制浏览器，也未把截图本身称为独立交互测试。"},
+    {"severity":"INFO","message":"最终版实看final-portrait-9x19_5-center/right-max/shrink/reset.png，悬浮控件位置与覆盖保持，缩小端与重置结果清晰。五比例矩阵来自首轮构建；后续仅菜单短桌面可达性补丁，最终版截图与源码身份见build-identity.json，不混用构建归属。"},
+    {"severity":"INFO","message":"审批边界保留：模拟手机比例的Web鼠标验证没有覆盖实体刘海/系统手势安全区、真实双指、微信/抖音SDK和性能。源码安全区定位存在，但不能据此声明实体设备PASS；当前实现Review通过后仍由用户决定，再依已批计划推进正式QA。"}
+  ],
+  "next_action": "提交Master同版整合Review并呈用户审核v0.2实现；获批后按既有门禁推进正式QA，记录真实触屏和实体安全区验证，不直接标DONE。"
+}

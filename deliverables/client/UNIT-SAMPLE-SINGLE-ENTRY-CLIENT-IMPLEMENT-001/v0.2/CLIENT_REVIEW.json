@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本Review针对用户反馈授权的v0.2修订。已读取同版FEATURE_BRIEF、IMPLEMENTATION_REPORT、DELIVERABLE、两份实际源码、tests/u01_fullscreen_bounds.cjs及证据。Gallery采用720固定设计宽度和当前visibleSize，全屏Viewport替代660×680小视口；返回及缩放/重置按钮在独立覆盖层。最终final-portrait-9x19_5-center/right-max/shrink截图与首轮portrait-9x16-left-min、portrait-9x21-right-max截图经直接查看，画面覆盖整个视口，按钮悬浮，未观察到超出完整图幅造成的露底。此项不替代Art/UI视觉结论。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Controller通过calculateScene1Bounds按当前Viewport、实际2172×724图幅及每边2 UI单位余量计算覆盖比例和横移极限，缩放限制1～1.8倍，缩小、重置及SIZE_CHANGED/视图变化后立即回收镜头。四层比例0.3/0.8/1/1，完整图幅边界相同，最前景限制同时覆盖其他层。独立复跑现有真实Controller转译测试，仅屏蔽报告写盘以保护原证据，4280条图层覆盖检查PASS；测试包含五比例、极值、缩小回收、重置和1000个视口尺寸，不是引擎或正式QA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "保持controllerNode inactive直到layers、viewport和全部按钮赋值，再激活并reset，避免onEnable提前绑定；Controller onDisable配对解除touch/mouse/viewport/view监听及按钮绑定，清空手势。Gallery onDestroy解除全局输入和view监听。uiCaptureRoot=null，findControl仅命中实际按钮，透明间隔仍能拖动。build-identity.json记录端点继续拖动、重置、按钮输入隔离及返回重入四组像素一致；未将鼠标证据扩大为真实触屏双指通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立检查build-identity.json中29项源码/设置与最终隔离快照、35项构建文件及36张截图SHA-256均一致；两源码用Creator3.8.8内置TypeScript和当前cc声明定向noEmit检查exit0。初始五比例矩阵对应initial-build-out.log的17.332秒构建与initial-build-result.json exit36；最终build-out.log完成17.200秒、build-result.json exit36，final-截图复核最终版。后续菜单短窗口位置修订未改Controller及四层，不能把初始矩阵表述为最终构建完整重跑。"
+    },
+    {
+      "severity": "INFO",
+      "message": "安全区调用sys.getSafeAreaRect(false)的坐标单位已按安装的Creator3.8.8 sys.ts核对为设计分辨率，定位计算与当前固定宽度视图一致。真实触屏双指、实体异形屏安全区、微信/抖音SDK、目标设备性能和正式QA均NOT_TESTED；现有全项目tsc并未通过，定向类型检查及实际Creator构建只证明本次改动的编译路径。"
+    }
+  ],
+  "next_action": "由Master整合同版专业Review，Producer核对日志证据纳入交付后提交v0.2 USER_REVIEW；实现Artifact获得用户明确批准后再解锁独立QA执行，不将本Review作为正式QA通过或DONE依据。"
+}

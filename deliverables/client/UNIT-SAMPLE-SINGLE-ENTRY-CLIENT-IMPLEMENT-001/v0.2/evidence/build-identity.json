@@ -1,0 +1,606 @@
+{
+  "recorded_at": "2026-10-06T16:49:23.185203+08:00",
+  "creator": "3.8.8",
+  "source_files": [
+    {
+      "path": "assets/labs/menu/scene1_camera_controller.ts",
+      "sha256": "64a3ce41176fc802e2b9af18fe656f694ff838ac561392d5bcfadafbe417d8ba",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/labs/menu/scene1_camera_controller.ts.meta",
+      "sha256": "2dc2b78f7727cead08ce42f327b2047ff0697646e0374c7fd0b67de055f9b191",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/labs/menu.meta",
+      "sha256": "895daaf477ba15d64a529b0cc70af9cd44334e2fe64e5cccc09a7df771ac6c74",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/labs.meta",
+      "sha256": "c88708a83e0dcd28e891502c6ef145aefb54809bd8dd0920c971d2adf54b7959",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/prefabs/pf_street_base_01.prefab",
+      "sha256": "2df15d9d1820f4ad9ebc408dc369f191c27157936cea3dab5e18d227a4038ed2",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/prefabs/pf_street_base_01.prefab.meta",
+      "sha256": "a8681a89c2f721cc97a1f27fa5c1783132922d3b8ae7ee8bca4fa0aba3e2bd81",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/prefabs.meta",
+      "sha256": "8d3c94b6d53dd20c4df8a2c8c767191f983e0e8399a1eda133176d44f0adbcc6",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l01_sky.png",
+      "sha256": "fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l01_sky.png.meta",
+      "sha256": "e253adcaefada077fc4dff2391a20d5fba547c8e9c970fceb3422249da824340",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l02_mountains.png",
+      "sha256": "3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l02_mountains.png.meta",
+      "sha256": "73a17d44a96b27ce4e70144f90ae769cc6b17743807c1a3a631eeda0dd463f51",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l03_ground.png",
+      "sha256": "af07fc566d7461acc314e2805b4a1419c44f5d64a7f15da8c5d489be2a29fb1d",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l03_ground.png.meta",
+      "sha256": "90e9fc886486da72973ed8c36df7dbac51e8ce28225b82c53b1ff3633bac6376",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l04_foreground.png",
+      "sha256": "8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures/tex_street_base_01_l04_foreground.png.meta",
+      "sha256": "3a4e2be8aaf6c26945943f5daae2ebd9fa619d900f0645bd1da69481ed470932",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background/textures.meta",
+      "sha256": "1f505780cf8712db192f6aba3a0df1d9e2f8399d0b224ab5477f51b64f25af6e",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units/background.meta",
+      "sha256": "ceafc9dea4f3be26b0227d17728b03f9f1047f323bb583ccb94774d964906a7e",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/units.meta",
+      "sha256": "4e0dfe94416cc5924ef76a655c6f0dc453a04ef11311989400b855a94f36f9db",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/UnitSampleGallery.ts",
+      "sha256": "e386517d47ffcdd8b12ece302152810cf46db2a6d72d4169dc0f7a844c68f79d",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/UnitSampleGallery.ts.meta",
+      "sha256": "c8cb85b221fdb6a6d412506a0cc3cf9be820435942fbe5f870e5f118b9c89123",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/UnitSamples.scene",
+      "sha256": "68e1121ad5552d97897dffc066cc6a7ca735ff51dec8905afb4ca0802881a76a",
+      "snapshot_matches": true
+    },
+    {
+      "path": "assets/UnitSamples.scene.meta",
+      "sha256": "2f8f21f7bb0a4811252e4a6db94bfd1e5f8539ccb3d9f7a2f87993072994db78",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/builder.json",
+      "sha256": "a3e1a8df580b6ebec15ad16c9bbef785806567bfbc093821852bb3606028e702",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/cocos-service.json",
+      "sha256": "b1464dae2c14f9fe2877767b253894310b1ff56738da7fbf6dae2d081fd2f728",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/device.json",
+      "sha256": "93af91e0b90038cedc84d08651f845e1c2e2ae460321c19f083c27a178e451f8",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/engine.json",
+      "sha256": "4f3ab4457fee5624da55da063d3e3025a58fb590309833155e1d28b891157121",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/information.json",
+      "sha256": "bf6afa787caa91986c3e9ffce19443ba17a539a670c0646ddff8c5c7c2e232ce",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/program.json",
+      "sha256": "d914f9f19ffe02724337936d8c7907798c8666566902b78243eb1aa8da0baedd",
+      "snapshot_matches": true
+    },
+    {
+      "path": "settings/v2/packages/project.json",
+      "sha256": "95486b12b0983135c3e0459df681a89f8a2e38ed46269bc10fe87b127f9a4fe9",
+      "snapshot_matches": true
+    }
+  ],
+  "build_files": [
+    {
+      "path": "application.js",
+      "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2"
+    },
+    {
+      "path": "assets/internal/config.json",
+      "sha256": "bef2b97968d426fd366f79d4a20fd5c2b8010b830f738b328b26d2af9169f11e"
+    },
+    {
+      "path": "assets/internal/import/04/04f923b60.json",
+      "sha256": "d860f037f5101cfbd140fd33a4defdc7a0b22bfeecf1217aca5d474bfc78de21"
+    },
+    {
+      "path": "assets/internal/index.js",
+      "sha256": "1accfe16afa2bb0b5dcc439d35a1887f2533e1b2a20eca0ddc231e31e69bcf5f"
+    },
+    {
+      "path": "assets/main/config.json",
+      "sha256": "5fc6dfa325cd6a492c277768f002c9dd9b1c7263fba52da35bcc1d855029e18d"
+    },
+    {
+      "path": "assets/main/import/04/04a8a5071.json",
+      "sha256": "012121084d5aaff1b8c1f0aa1dae492da26dd6ff53d1af3349e025789efce018"
+    },
+    {
+      "path": "assets/main/import/0b/0bf77d03e.json",
+      "sha256": "6255eb5f37add1a306fff637711e94e3c750570632e5d06b2672e9737b702045"
+    },
+    {
+      "path": "assets/main/import/68/685d480f-3b1a-4f77-b796-79b9ec5de834.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "path": "assets/main/import/71/7108d512-5f6f-42d1-9411-c6f48de13939.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "path": "assets/main/import/8f/8fae7865-9c46-46f6-8484-849ebe8a6634.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "path": "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json",
+      "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+    },
+    {
+      "path": "assets/main/import/c7/c788f23d-127c-48a9-890c-36679d56dce4.json",
+      "sha256": "60928632edcd22b5694a8c22de01de0d2cbb6f374103242a99a4394cc767f44d"
+    },
+    {
+      "path": "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json",
+      "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+    },
+    {
+      "path": "assets/main/index.js",
+      "sha256": "6e7e7a77bc0aa750e14b5d667fccd644f1b47092039124be11a7e3adc1c37c1c"
+    },
+    {
+      "path": "assets/main/native/68/685d480f-3b1a-4f77-b796-79b9ec5de834.png",
+      "sha256": "8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b"
+    },
+    {
+      "path": "assets/main/native/71/7108d512-5f6f-42d1-9411-c6f48de13939.png",
+      "sha256": "fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1"
+    },
+    {
+      "path": "assets/main/native/8f/8fae7865-9c46-46f6-8484-849ebe8a6634.png",
+      "sha256": "af07fc566d7461acc314e2805b4a1419c44f5d64a7f15da8c5d489be2a29fb1d"
+    },
+    {
+      "path": "assets/main/native/c7/c788f23d-127c-48a9-890c-36679d56dce4.png",
+      "sha256": "3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478"
+    },
+    {
+      "path": "cocos-js/_virtual_cc-C6aOtQS_.js",
+      "sha256": "5a931a0c6943d522b5f80f7354bdd662c749bf7117ce4528849f25917de620e2"
+    },
+    {
+      "path": "cocos-js/assets/spine-CC34fKUR.wasm",
+      "sha256": "b3d705bd391da35dcf0980c1d8c526f609ad64ac12652dd8c0bf3b20a626f2f2"
+    },
+    {
+      "path": "cocos-js/assets/spine.js.mem-pbmhlDdv.bin",
+      "sha256": "7a22a12630af3de76efe992d68fdcc25f072d663ccb569d7369cbe2d91e8147e"
+    },
+    {
+      "path": "cocos-js/cc.js",
+      "sha256": "5942e74b009e9398948d7940451052a61b7e8cc5dc0b098d204980d318af3016"
+    },
+    {
+      "path": "cocos-js/spine-BGFFnNyc.js",
+      "sha256": "df3e7ef18435df7ceea12c8c235d1cef37fc9c6cb9ab6a3b4bc735c7d134c7f6"
+    },
+    {
+      "path": "cocos-js/spine.asm-BCCB8IGt.js",
+      "sha256": "d2f9198f41d75218ae88e4f256987dabac2abb6b4988280ee2e57314c38ee4de"
+    },
+    {
+      "path": "cocos-js/spine.js-CPHn08RU.js",
+      "sha256": "b9c5485f282af04d7848ca17b78e421128de8d215e9698ba8bf1a18cccc8bf0d"
+    },
+    {
+      "path": "cocos-js/spine.wasm-PvZzAPaa.js",
+      "sha256": "70eaaac5605ca1d7e1b449773b1efa10e79977794a0f077f33226d8642408346"
+    },
+    {
+      "path": "index.html",
+      "sha256": "012eec93e5a90f4ccefede6c3e85f6ca56e22223af46a3c51d8b7c7b55646f4e"
+    },
+    {
+      "path": "index.js",
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd"
+    },
+    {
+      "path": "src/chunks/bundle.js",
+      "sha256": "06e8a33232ccdaa425bc807182af12ac54712bcdd68c9a2e1f2ef8bb5837a480"
+    },
+    {
+      "path": "src/effect.bin",
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+    },
+    {
+      "path": "src/import-map.json",
+      "sha256": "2be73d8f2e7e1d814627714ace691b6e1a9d445c779426a224e7f3685f0fa278"
+    },
+    {
+      "path": "src/polyfills.bundle.js",
+      "sha256": "f1e4ced3322168d6b9915e782e4c1cf1055d75f66f2b38e7fcd60f48cf89082b"
+    },
+    {
+      "path": "src/settings.json",
+      "sha256": "f586b0f603d2c1deab74d681a445b6f2a92a4cc4a0c991cd723fe3fcaa4a3f31"
+    },
+    {
+      "path": "src/system.bundle.js",
+      "sha256": "90f192f3b04f7fcb5bba9c15745cdd1a798d9b855f752c5ee7e48bb526dd543d"
+    },
+    {
+      "path": "style.css",
+      "sha256": "b9dac5de1b7792243a6432dfe553901f0a235f41edb42c719d482d1c17016a2f"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "desktop-menu.png",
+      "size": [
+        1040,
+        1292
+      ],
+      "sha256": "536471f83f9a06a9f87be078b5d89e309058eb83750ddd1b44bb9d68224ca85a"
+    },
+    {
+      "path": "final-portrait-9x19_5-center.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "53fbc44db46e23db1d80cf725f9dadf412d7e5be82f383fa6d548ba7c4bba342"
+    },
+    {
+      "path": "final-portrait-9x19_5-reset.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "53fbc44db46e23db1d80cf725f9dadf412d7e5be82f383fa6d548ba7c4bba342"
+    },
+    {
+      "path": "final-portrait-9x19_5-right-max.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "d108c5c1cb64acd942c2e0031d9ed0e32ddd71840e0f80b3d9203f85c0ed9a20"
+    },
+    {
+      "path": "final-portrait-9x19_5-shrink.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "2b5c7035e7d7b5d3599263c2ecd65598da3c367b525758e7bb612dd8684e2a8a"
+    },
+    {
+      "path": "portrait-9x16-center.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "fd456481fdc8dd0cdf156239f755bf441ab39b2152ccbdfaf8ef4c9935025d1e"
+    },
+    {
+      "path": "portrait-9x16-left-max.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "78de34bb43be42215a634720286085fcc63bd33a0e17129ce57711721cb964fa"
+    },
+    {
+      "path": "portrait-9x16-left-min.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "539e7b34884775ee511e1f22703bd28e4807a67fb35edb6a8a1b9e579ddec809"
+    },
+    {
+      "path": "portrait-9x16-reset.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "fd456481fdc8dd0cdf156239f755bf441ab39b2152ccbdfaf8ef4c9935025d1e"
+    },
+    {
+      "path": "portrait-9x16-right-clamped.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "bdddb9b34baeb9e0abffd25f09d5e823019d07a5135a8415b648e979d0e9c5ab"
+    },
+    {
+      "path": "portrait-9x16-right-max.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "eb272f17bffc1f82937b8cf21273443e19892c646ac76b148a9d4d56a8dafd81"
+    },
+    {
+      "path": "portrait-9x16-right-min.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "bdddb9b34baeb9e0abffd25f09d5e823019d07a5135a8415b648e979d0e9c5ab"
+    },
+    {
+      "path": "portrait-9x16-shrink-at-edge.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "bdddb9b34baeb9e0abffd25f09d5e823019d07a5135a8415b648e979d0e9c5ab"
+    },
+    {
+      "path": "portrait-9x16-ui-capture.png",
+      "size": [
+        360,
+        640
+      ],
+      "sha256": "fd456481fdc8dd0cdf156239f755bf441ab39b2152ccbdfaf8ef4c9935025d1e"
+    },
+    {
+      "path": "portrait-9x18-center.png",
+      "size": [
+        360,
+        720
+      ],
+      "sha256": "ceedf4a6ffe02b1f189f0b6e9ca355c81b9461d0e7618d7902ff21132b813aff"
+    },
+    {
+      "path": "portrait-9x18-left-max.png",
+      "size": [
+        360,
+        720
+      ],
+      "sha256": "6c2b11620c0fd7a831bb7efc28e7738a6f51a3f18234449616065688c37e1a26"
+    },
+    {
+      "path": "portrait-9x18-left-min.png",
+      "size": [
+        360,
+        720
+      ],
+      "sha256": "aec1e3aff149588d5ea78ba44ab56e6028ccc4fbc5516b0811afd1ea97dc5250"
+    },
+    {
+      "path": "portrait-9x18-right-max.png",
+      "size": [
+        360,
+        720
+      ],
+      "sha256": "802283cb34c4c664176df2bc08b5d5c16cbc9479d87b63a9aa5881da40907bc5"
+    },
+    {
+      "path": "portrait-9x18-right-min.png",
+      "size": [
+        360,
+        720
+      ],
+      "sha256": "66687e9a6bf89e90e6a7e45c3c1a4c30ee91e6b8d57efabd393fc7053015b9b5"
+    },
+    {
+      "path": "portrait-9x19_5-center.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "e02fb6f34331aafe27a236a543bbe2de8ea8ba460620be52e885761e884ba952"
+    },
+    {
+      "path": "portrait-9x19_5-left-max.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "c4e1291f1e4efe9c1489a803859dc86cec15ea13ddb3583996dc71afa290d8b0"
+    },
+    {
+      "path": "portrait-9x19_5-left-min.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "183bc3abad99dde8e70b822ce9294f87c1b17a693cef7803d65852360db6c2ea"
+    },
+    {
+      "path": "portrait-9x19_5-right-max.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "b2dd19af269a4f78abf2f29989517feba752f6745109cc7275513bf430167a9e"
+    },
+    {
+      "path": "portrait-9x19_5-right-min.png",
+      "size": [
+        390,
+        844
+      ],
+      "sha256": "6ccd860a41b52f64ddd8c938d7d207f77d27e5b84bc4749fa64193172c3f0cc4"
+    },
+    {
+      "path": "portrait-9x20-center.png",
+      "size": [
+        360,
+        800
+      ],
+      "sha256": "f7c224d81e3b63f3bdeaa4a85497e4f6be0f3075342f50f38d19cb219d3a55f6"
+    },
+    {
+      "path": "portrait-9x20-left-max.png",
+      "size": [
+        360,
+        800
+      ],
+      "sha256": "6fb45801fbdf25c86b2a51844dabe2b496f19cf453c9e52c902c9a7b867190b2"
+    },
+    {
+      "path": "portrait-9x20-left-min.png",
+      "size": [
+        360,
+        800
+      ],
+      "sha256": "11fb58fe82709378d28c994d07e96955b80864265b00e74ba612b383fcfedbe0"
+    },
+    {
+      "path": "portrait-9x20-right-max.png",
+      "size": [
+        360,
+        800
+      ],
+      "sha256": "fe3fc00f9c548d5d00717dacec867a6f69dfdd73cdd4f3c3331a53ba853065be"
+    },
+    {
+      "path": "portrait-9x20-right-min.png",
+      "size": [
+        360,
+        800
+      ],
+      "sha256": "7be49412627b5726e8ca5e458a0b1091dfc93bfbf43b3e73d95005fd6cba7abf"
+    },
+    {
+      "path": "portrait-9x21-center.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "77cd4f27e58925bcc42893094c15da50fafd983b6a48b4fbc9f467cc5d839a1b"
+    },
+    {
+      "path": "portrait-9x21-left-max.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "2f3a40ec27c264a150de63d4040116cee0189dbfb4ad257dafa27476e0798593"
+    },
+    {
+      "path": "portrait-9x21-left-min.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "d66127066af2be64bed6a1d4f51fd26493523a3db9b0b9cd393bd5efa7a1e997"
+    },
+    {
+      "path": "portrait-9x21-reenter.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "77cd4f27e58925bcc42893094c15da50fafd983b6a48b4fbc9f467cc5d839a1b"
+    },
+    {
+      "path": "portrait-9x21-return-menu.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "deab2789d25571fc1f4955c0eba7c51ca189235971be917f711414e69737efa6"
+    },
+    {
+      "path": "portrait-9x21-right-max.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "71c7fbf215e2e1e004e2a818a93d9c0830b75a1f5bc2dd19ed244e941d2ca87d"
+    },
+    {
+      "path": "portrait-9x21-right-min.png",
+      "size": [
+        360,
+        840
+      ],
+      "sha256": "84d58801b4fca4329ac0709e4bb3eaf736ce1d9753d383116de29728d8d6f4a8"
+    }
+  ],
+  "pixel_comparisons": [
+    {
+      "a": "portrait-9x16-right-min.png",
+      "b": "portrait-9x16-right-clamped.png",
+      "pixels_identical": true
+    },
+    {
+      "a": "portrait-9x16-center.png",
+      "b": "portrait-9x16-reset.png",
+      "pixels_identical": true
+    },
+    {
+      "a": "portrait-9x16-reset.png",
+      "b": "portrait-9x16-ui-capture.png",
+      "pixels_identical": true
+    },
+    {
+      "a": "portrait-9x21-center.png",
+      "b": "portrait-9x21-reenter.png",
+      "pixels_identical": true
+    }
+  ],
+  "matrix_build": "首轮全屏构建 16:37:30 exit36；后续仅菜单短窗口可达性修正，Controller及四层资源不变。最终构建16:45:58 exit36，final-开头截图用于最终版本复核。"
+}

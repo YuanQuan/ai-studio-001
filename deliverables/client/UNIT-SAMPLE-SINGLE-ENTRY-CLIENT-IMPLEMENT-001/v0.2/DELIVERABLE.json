@@ -1,0 +1,59 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "按用户反馈将U01调整为手机竖屏全屏，按最前景完整图幅实时约束横移和缩放，原控件悬浮；完成Creator构建、几何与五比例实现级运行检查。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts",
+    "tests/u01_fullscreen_bounds.cjs",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/build-identity.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/geometry-report.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/build-result.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/console-errors-final.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/UI_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/QA_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/MASTER_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/typescript-check-result.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "手机竖屏可见区域被四层场景覆盖，控件悬浮于画面。",
+      "result": "PASS",
+      "evidence": "五比例portrait-截图及最终final-portrait-9x19_5-center.png。"
+    },
+    {
+      "criterion": "最前景约束左右极限、缩放上下限、缩小回收与resize覆盖。",
+      "result": "PASS",
+      "evidence": "真实Controller 4280条几何覆盖条件PASS；五比例左右最小/最大缩放Canvas操作及截图。"
+    },
+    {
+      "criterion": "原按钮操作、UI输入隔离、重置和返回重入可用。",
+      "result": "PASS",
+      "evidence": "四组逐像素比较相同，build-identity.json；最终缩小/重置截图。"
+    },
+    {
+      "criterion": "Creator3.8.8导入和当前Web构建、源码快照身份核对。",
+      "result": "PASS",
+      "evidence": "最终exit36、build17.200秒、29项源文件与快照相同，35项构建文件hash；定向tsc exit0。"
+    },
+    {
+      "criterion": "正式QA与目标平台、真实触屏/性能验收。",
+      "result": "NOT_TESTED",
+      "evidence": "本轮是实现验证，等待实现Artifact批准后依现有QA门禁推进。"
+    }
+  ],
+  "assumptions": [
+    "完整前景图幅边界作为穿帮限制，原有透明区域属于分层设计。",
+    "上限沿用1.8倍覆盖倍率，下限为当前屏幕覆盖倍率。"
+  ],
+  "risks": [
+    "模拟Web鼠标操作不证明真实双指、安全区实体设备及微信/抖音SDK或性能指标。",
+    "六份同版Review已APPROVED，当前USER_REVIEW；未获用户批准，不标DONE。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

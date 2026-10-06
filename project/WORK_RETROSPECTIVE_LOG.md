@@ -196,3 +196,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 起止时间与耗时：Client实际开始14:05:17；最终Creator Web Mobile构建（debug=false）在14:18:44.2545054返回exit36，build耗时17.371秒；最终IAB证据时间14:22:31；最后一份QA Review文件（评审，不是正式QA执行）时间14:27:56。以上是可核节点顺序；任务开始到末份Review相隔22分39秒仅为观测阶段跨度，不代表连续制作耗时或Owner净工时。专业Review、IAB互动和文件落盘各自净耗时未记录。
 - 影响速度的因素与建议：Creator CLI构建/IAB与多角色同版Review各有可核节点，但无法分解角色等待和实际制作耗时，不评速度或归责。Master将v0.1呈用户决定；复核点为ARTIFACT_APPROVAL.decided_at及状态。用户批准后，Master新建/解锁独立QA执行Task；QA负责人按已批准Web模拟手机矩阵与适用性能指标/方法预算执行并提交报告。该计划与方法门禁需遵守现有批准范围，不由本实现送审替代。
 - Continuity check：U01实现唯一剩余门禁是用户对v0.1实现Artifact的明确决定；本Task保持USER_REVIEW，不能标DONE。正式QA未执行，等待实现USER_APPROVED后由Master建立/解锁独立QA工作；QA矩阵与性能指标/方法预算保持既有门禁。治理Task已DONE，无空转的可继续任务。
+
+
+
+### WR-20261006-U01-FULLSCREEN-V02｜U01竖屏与安全边界修订
+
+- 结果与证据：Client实现v0.2完成，六份同版Review APPROVED，Task/Approval USER_REVIEW；证据`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md`与evidence/。五比例运行、4280几何条件通过；正式QA未执行。
+- 时间：可核实际源码备份/开工16:34:25 +08:00，最终Creator结束16:45:58，送审记录17:07:00；观察窗口32分35秒，包括实现、构建、浏览器检查、评审、记录与工具等待，不代表净制作时间。两次构建引擎耗时17.332/17.200秒；用户等待、并行Review净耗时及工具故障耗时无法可靠分离，记未知。
+- 影响环节：首轮运行发现短桌面菜单可达性需补丁，发生一次补充构建。最后补充桌面截图被自动审批服务403阻断，未绕过，保留NOT_TESTED；已完成手机验证未失效。无同类速度基线，不归责。
+- 建议：Client下一次布局修订在首轮实现核菜单入口与场景可见尺寸，复核点为首次构建前布局检查；Master对已满足核心验收但可选截图工具故障的情况及时记录范围，复核点为送审报告的PASS/NOT_TESTED边界。Producer对共享日志只增本任务记录，复核点为暂存diff。
+- Continuity check：本任务不存在仅占位READY/IN_PROGRESS；下一门禁为用户对v0.2明确决定，正式QA按既有计划独立授权。

@@ -132,3 +132,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-06 13:37:02 +08:00（登记） | `UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001 v0.2` | 用户原话“批准”；Master转达该决定适用于当前Brief与QA Plan两项；`USER_APPROVED` | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/ARTIFACT_APPROVAL.json`；该版10/10 Required及五份同版Review。仅批准QA计划，不批准QA执行或TEST_REPORT。
 
 | 2026-10-06 14:28:48 +08:00（送用户审阅登记，非用户决定） | UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 v0.1 | client / master / producer | USER_REVIEW | tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json；deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md、DELIVERABLE.json及CLIENT/TECH/ART/QA/MASTER五份Review | 五Review均APPROVED、Required已核、DELIVERABLE READY_FOR_REVIEW；Approval review_ref指向MASTER_REVIEW.json，decided_at=null。等待用户对当前实现Artifact明确决定。本送审只涉及实现与批准范围内清理；正式QA未执行，只有该实现版本USER_APPROVED后Master才解锁独立QA Task，并沿用已批准的Web模拟手机矩阵、适用性能指标与方法预算门禁。未记USER_APPROVED/DONE。 |
+
+2026-10-06 16:34 +08:00 U01实现v0.1收到修改要求，未批准；快照ARTIFACT_APPROVAL_v0.1.json保留。当前v0.2 DRAFT，等待新构建/验证/Review，正式QA门禁关闭。
+
+2026-10-06 17:07 +08:00：UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 Client实现v0.2进入USER_REVIEW，审批对象`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md`，review_ref为同目录MASTER_REVIEW.json。Client/Tech/Art/UI/QA/Master均APPROVED；无用户批准记录，decided_at保持null。v0.1反馈修订记录保留。

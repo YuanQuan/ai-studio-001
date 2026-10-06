@@ -11,7 +11,8 @@
     "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/FEATURE_BRIEF.md、RESOURCE_CLEANUP_CHECKLIST.md、WORKSPACE_BASELINE_AND_VALIDATION.md（USER_APPROVED）",
     "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_PLAN.md、TEST_CASES.md、RESOURCE_REFERENCE_CHECKLIST.md（USER_APPROVED；仅作可测性输入，不授权QA执行）",
     "apps/client 当前工作树；执行前重取 git status 与相关 diff，保护本Task开始前已有的改动和删除",
-    "project/changes/CP-COCOS-CLI-BROWSER-20261006.md（用户明确授权的执行补充约束；旧批准Artifact保留）"
+    "project/changes/CP-COCOS-CLI-BROWSER-20261006.md（用户明确授权的执行补充约束；旧批准Artifact保留）",
+    "用户2026-10-06反馈：手机竖屏全屏、按最前景不穿帮重算横移和缩放边界、现有控件悬浮；v0.2/FEATURE_BRIEF.md"
   ],
   "deliverables": [
     "apps/client/assets/UnitSampleGallery.ts",
@@ -25,7 +26,19 @@
     "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/ART_REVIEW.json",
     "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json",
     "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/MASTER_REVIEW.json",
-    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json"
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts（用户反馈授权的v0.2边界修订）",
+    "tests/u01_fullscreen_bounds.cjs",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/UI_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/QA_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/MASTER_REVIEW.json"
   ],
   "acceptance": [
     "UnitSamples.scene 只呈现批准的 U01 标题、说明和唯一进入入口；可返回同一菜单并重复进入。不得新建Scene或接入批准范围外的七项内容。",
@@ -33,7 +46,8 @@
     "按 project/changes/CP-COCOS-CLI-BROWSER-20261006.md 与 rules/cocos_cli_browser_workflow.md，备份/hash后受控解除旧frames、节点、Prefab和TMX引用；完整核验嵌套对象索引/关系与稳定UUID，再改消费者代码，由锁定Creator导入/CLI构建和实际HTTP产物内置浏览器运行确认。静态、导入、构建、运行分别有证据；禁止用删除.meta或重建UUID掩盖断链。原Inspector限定由用户授权的补充方法替代，旧批准文档保留。",
     "只删除已证明旧样例专用且活动引用已解除的资源；保留四层PNG、共享Prefab、Controller、所有.meta/注册记录及历史任务、Review、审批和测试资料。未证实的候选保留并说明。",
     "记录受控脚本、静态引用与Creator导入/当前CLI构建、HTTP实际产物内置浏览器实现级冒烟证据；必要Editor操作说明理由。QA计划中的正式QA仍不执行，本Task不生成TEST_REPORT。未运行验收逐项NOT_TESTED，真实阻塞标BLOCKED。",
-    "Client提交后完成规定的Client、Tech、Art、QA、Master同版Review并进入USER_REVIEW；未获本实现Artifact用户批准前不得进入正式QA执行或将任务标DONE。"
+    "Client提交后完成规定的Client、Tech、Art、QA、Master同版Review并进入USER_REVIEW；未获本实现Artifact用户批准前不得进入正式QA执行或将任务标DONE。",
+    "v0.2：手机竖屏全屏；最前景图幅内约束横移/缩放并在缩小和resize时回收越界镜头；现有控件悬浮，覆盖五种手机比例的真实Web检查。"
   ],
   "dependencies": [
     "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
@@ -48,6 +62,8 @@
     "2026-10-06 13:37 +08:00：Producer登记Client Brief v0.2与QA Plan v0.2均为USER_APPROVED；依赖满足。尝试读取 Cocos Creator 3.8.8 当前 UnitSamples.scene 窗口状态时，两次 sky.get_window_state 均返回 FrameArrived timed out / window capture timed out；按 computer-use 恢复流程刷新窗口列表并重新绑定后重试仍失败。未进行任何编辑或删除。获批Brief要求场景序列化引用必须经Creator清理并保存重开，故当前不能安全继续Scene及旧资源清理，任务BLOCKED。解除条件：Creator窗口能成功提供可观察状态后重新检查场景、记录缺失引用并按批准顺序执行。",
     "2026-10-06：用户明确授权CLI/脚本与Codex内置浏览器优先迁移，Tech/Client/QA方法Review通过；补充约束见CP-COCOS-CLI-BROWSER-20261006，原Creator截图故障不再作为该路线的必然前置条件。当前状态仍待实际Creator导入/构建可用性确认，方法批准不等于功能/QA批准。",
     "2026-10-06 14:05:17 +08:00 Client收到Master授权后实际开始实施：重读Task与CP-COCOS-CLI-BROWSER-20261006及锁定方法；采集git status/diff基线，记录UnitSamples.scene SHA256 E48FF6357E2B5647460F907BFC056CC637ECAF0511F76AA56764DE6476507BAD、UnitSampleGallery.ts SHA256 A7A7A4CBEC94FE95C07862C7B0D3E266C721EDF6D0614385DC942EDFF8EE2A8D；两文件在本Task开始前已有M状态，旧DemoScene/demo删除路径已有D状态。备份在系统临时目录C:\\Users\\admin\\AppData\\Local\\Temp\\UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001-20261006-140517；不纳入版本库。本轮不接收原有70个删除为本Task删除产出。",
-    "2026-10-06 14:28:48 +08:00 Producer核验：v0.1所有路径类Required均存在，Client/Tech/Art/QA/Master同版Review全部APPROVED，DELIVERABLE为READY_FOR_REVIEW。最终Creator 3.8.8 debug build exit36；IAB实现级交互证据覆盖菜单、进入、缩放、拖动、重置、UI隔离、返回及重入。Task进入USER_REVIEW；正式QA未执行，本实现Artifact用户批准前不得进入独立QA或DONE。"
+    "2026-10-06 14:28:48 +08:00 Producer核验：v0.1所有路径类Required均存在，Client/Tech/Art/QA/Master同版Review全部APPROVED，DELIVERABLE为READY_FOR_REVIEW。最终Creator 3.8.8 debug build exit36；IAB实现级交互证据覆盖菜单、进入、缩放、拖动、重置、UI隔离、返回及重入。Task进入USER_REVIEW；正式QA未执行，本实现Artifact用户批准前不得进入独立QA或DONE。",
+    "2026-10-06 16:34 +08:00：v0.1 USER_REVIEW收到明确修订反馈，进入REVISION后实际开始v0.2；已保存两源码备份/hash并开始全屏布局与边界修订。v0.1资料保留，QA未解锁。",
+    "2026-10-06T17:07:00+08:00 Producer核验：v0.2路径完整、六份同版Review APPROVED；Creator最终构建exit36、五比例Web与4280几何条件通过。Continuity check：本任务无空转READY/IN_PROGRESS，下一门禁为用户批准本实现；正式QA未解锁。"
   ]
 }

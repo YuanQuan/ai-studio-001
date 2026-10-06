@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次为客户端实现 v0.2 的可测性与交付证据专业评审，依据用户对 v0.1 的手机竖屏全屏、前景防穿帮和悬浮按钮修订反馈。已按顺序读取 QA 角色配置、已 USER_APPROVED 的 QA Plan v0.2/TEST_CASES、FEATURE_BRIEF、IMPLEMENTATION_REPORT、DELIVERABLE 与构建/几何/截图证据，并使用项目共享 cocos-cli-browser skill。APPROVED 仅表示可向用户提交本实现版本审阅，不是正式 QA 通过，不授予 QA 执行或 DONE 权限。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立只读核对 evidence/build-identity.json：29 项当前源文件、35 项 HTTP 服务根目录中的最终构建文件及36张截图 SHA-256 均与记录一致。Controller 为64a3ce41176fc802e2b9af18fe656f694ff838ac561392d5bcfadafbe417d8ba，Gallery 为e386517d47ffcdd8b12ece302152810cf46db2a6d72d4169dc0f7a844c68f79d。最终 Creator 3.8.8 构建结束日志、2026-10-06T16:45:58.1286062+08:00 exit36、当前构建输出及实际 Web 截图共同支持构建身份。build-script SIGTERM/debug及计时警告保留，不以空浏览器 error 数组代替构建日志。定向类型检查与 Creator 构建支持改动编译；全项目 tsc 的临时目录/既有声明问题不表述为已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "tests/u01_fullscreen_bounds.cjs 转译真实 Controller，并用节点替身独立检查实际图层变换对视口左右及上下边界的覆盖；本 Review 禁止其证据写回后只读重跑，结果为4280条覆盖条件 PASS，与 geometry-report.json一致。覆盖5种手机比例、4种倍率与左右/中心、缩小回收、重置和1000种视口高度；固定宽720、2 UI单位边缘余量及速度0.3/0.8/1/1与实现报告相符。该单元验证直接改变替身尺寸并调用重算，不证明真实引擎 resize事件、安全区、像素采样或输入手势全部通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "五比例 portrait- 运行截图属于16:37:30结束的首轮构建。后续变更仅为菜单短窗口入口可达性，报告明确 Controller 与四层内容不变；final-portrait-9x19_5- 和 desktop-menu.png用于16:45:58最终构建复核，不能把全部旧矩阵图冒称最终构建重新执行。独立查看最终中心、最大缩放右端及首轮9:21最小缩放左端截图，画面覆盖完整视口，返回/底部控件悬浮且可见，未见图幅外空白或边缝；图像内原有透明区与水平裁切不等于图幅越界。四组初轮像素一致性记录及最终中心/重置相同哈希仅证明指定状态画面相同，不能代替动作录屏、节点/实例计数或释放验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "源代码显示视口变化和缩放均重新计算前景边界并收回 cameraX，控制器在引用完整后启用，按钮分别捕获，浮层空白不设整体输入捕获；原四层资源及Scene身份可追溯。当前未发现阻止实现提交审阅的已复现问题。鼠标 Canvas 冒烟未覆盖真实双指、触点取消/切换全状态、实体安全区、重复进入节点与事件释放、性能预算及平台集成，相关结论保持 NOT_TESTED，不以静态审查或主观流畅替代。"
+    },
+    {
+      "severity": "INFO",
+      "message": "正式 QA 仍须遵循已批 Plan v0.2：本实现获用户确认、Master授权独立QA执行任务、锁定源码/构建/资源身份，版本化并批准浏览器/OS/视口/DPR/渲染后端/输入矩阵，完成适用性能指标、采样方法、基线与预算审批。五比例实现级冒烟不自动满足这些门禁。本 Review 不重跑v0.1资源清理/历史保留全套用例，不修改已批准计划，不生成TEST_REPORT；正式FUNCTIONAL报告应覆盖原计划及本次修订影响，分别报告功能、视觉和性能。实体手机、小游戏容器、实际弱网及发布平台仍在当前计划排除范围内，不自行扩大范围。"
+    }
+  ],
+  "next_action": "Master整合同版专业Review并向用户呈现实现v0.2及最终截图，Producer记录具体版本用户决定。实现批准后仍按独立QA执行授权、获批环境矩阵与适用性能前置推进FUNCTIONAL QA；必要前置缺失时记录NOT_TESTED/BLOCKED。TEST_REPORT须另行交用户确认，当前不得将本Review或Client冒烟作为正式QA通过或直接标DONE。"
+}
