@@ -11,3 +11,4 @@
 - 新建小游戏项目默认使用 `templates/game/` 的 `standard-mini-game` 模板：Web 开发/调试、微信/抖音小游戏发布，默认 Cocos Creator + TypeScript / NestJS + TypeScript / ws / Protobuf / MySQL + Redis / Monorepo；具体游戏可通过自己的 Project Decision 覆盖。
 - 本地工作区允许采用“Studio 父仓库 + Game 子目录独立仓库”的布局；父目录只处理 Studio Layer，具体开发与跨角色 Project Artifact 只写入对应 Game Repository 子目录，Git history/origin 必须保持独立。
 - 所有项目默认禁止 Agent 自行产生 Git 动作。文件修改后只保持工作区状态；只有用户明确下达具体 Git 指令时，Master 才能在该次授权范围内执行对应 init/add/commit/pull/fetch/push/branch/merge/rebase/reset/tag 或等价 GitHub 远程写操作。一次授权不得被解释为长期授权，“commit”不自动包含“push”。
+- 用户于 2026-10-06 校准：在当前 Windows/Cocos Creator 3.8.8 工作环境中，执行 `CocosCreator.exe`（包括 CLI 构建）必须使用提权执行环境；普通 Codex PowerShell 曾因 Windows `CreateFile` / `platform_channel` 访问拒绝退出。后续启动 Creator 前先请求提权；提权执行后必须核对构建日志和实际产物，不能仅凭进程返回推断成功。若执行环境不能确认有效提权或未产生可核验结果，停止并如实报告，不擅自改 ACL、安装目录或系统安全设置。
