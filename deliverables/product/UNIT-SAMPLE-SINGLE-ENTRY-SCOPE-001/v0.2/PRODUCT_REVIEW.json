@@ -1,0 +1,12 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已响应v0.1 UI Review MAJOR意见：明确移除旧标题‘百鬼夜市 · 单元样例’、副标题、四方向/特效占位页脚与所有旧样例功能说明文字。"},
+    {"severity": "INFO", "message": "唯一菜单文字基线已收敛为U01四层场景镜头标题、只说明四层视差/拖动/缩放/重置的说明及单一‘进入 U01’入口；返回状态及U01运行页所有可见文字须符合该范围。"},
+    {"severity": "INFO", "message": "AC-01与AC-04新增可见文字逐项验收；其他旧资源引用核查、删除和实际运行仍是未完成的下游验收，不在本Product Review中报通过。"},
+    {"severity": "INFO", "message": "v0.1保留为历史；其UI Review意见不会被覆盖或静默继承。v0.2仍需Tech/Art/UI/Client/QA同版影响Review、Master Review与用户审批。"}
+  ],
+  "next_action": "提交根 Master 独立核验并组织v0.2同版Tech/Art/UI/Client/QA Impact Review；Master完成审核前不得进入用户审批，也不得用于正式Client清理。"
+}

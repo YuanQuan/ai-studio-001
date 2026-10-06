@@ -1,0 +1,47 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "title": "唯一 U01 清理与运行验收 QA 计划",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "依据已批准唯一U01产品范围和Tech Lead资源引用审计，修订本次菜单收敛/资源清理/Creator运行验证对应的QA计划，定义静态引用、资源身份、Creator导入、运行行为和文字验收证据；本Task只设计计划，不执行QA或批准性能阈值。",
+  "inputs": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md、RESOURCE_REFERENCE_AUDIT.md（USER_APPROVED；Approval见tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json）",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/FEATURE_BRIEF.md（DRAFT/Revision；用于交叉核验，不得视作用户批准）",
+    "既有 UNIT-MENU-SCENE1-QA-PLAN-001 v0.1（旧单元范围）仅供历史参考，需创建新版本/任务，不覆盖旧批准记录"
+  ],
+  "deliverables": [
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_PLAN.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_CASES.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/RESOURCE_REFERENCE_CHECKLIST.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/QA_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "将Product v0.2 AC-01至AC-10转成可复核用例，覆盖唯一菜单和可见文字、唯一U01进入/返回重入、四层资源身份、拖动/缩放/重置和UI手势隔离。",
+    "按Tech审计列出21个旧frames UUID、旧Prefab/TMX引用的解除核验和残留扫描；每个候选删除前检查活动引用，不把历史文档字符串命中当运行依赖。",
+    "定义Creator打开/导入/保存重开/missing UUID、Prefab与场景引用、Web构建和运行证据；未执行的检查保持NOT_TESTED，不能以静态引用审计等同QA通过。",
+    "覆盖工作区既有删除/修改基线核对及四层PNG/Prefab/Controller路径、hash、meta UUID身份链不漂移；Creator无法载入则停止为BLOCKED。",
+    "测试设计不执行QA、不新增实体设备/发布平台/性能阈值；任何矩阵或性能门禁均需另行获批。",
+    "QA、Client、Tech、Product和Master完成同版Review后进入USER_REVIEW；旧QA Plan版本与审批记录原样保留。"
+  ],
+  "dependencies": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Product范围v0.2、Tech方案v0.1及Client Brief v0.2均已USER_APPROVED；用户于2026-10-06 13:37:02 +08:00明确批准QA Plan v0.2。批准仅限测试计划，不包含QA执行或TEST_REPORT。",
+    "本Task仅批准QA测试计划，不批准任何QA执行或TEST_REPORT。",
+    "QA执行需在Client实现和本QA计划均分别获得用户批准后另行建立/解锁QA执行Task。",
+    "2026-10-06 13:13:40 +08:00：v0.1 QA计划起始；Producer于13:16:59核验四项 Required Artifact 落盘。",
+    "2026-10-06：依据 Client Brief v0.2 Revision 的 Tech Review 意见创建 QA计划 v0.2 Revision：将 Creator frames 序列化数组清理并保存/关闭重开核验前置于代码 property/消费者移除；区分当前Scene 8个旧 Prefab主UUID与未命中Scene的Keeper候选。v0.1及其Review历史保留。QA v0.2 10/10 Required与DELIVERABLE路径一致，五份同版Review APPROVED；13:33:11送USER_REVIEW。用户原话“批准”，Master转达对应QA Plan v0.2及Client Brief v0.2，Producer于2026-10-06 13:37:02 +08:00登记USER_APPROVED并将Task置DONE。本Task仅批准测试计划，不执行QA或生成TEST_REPORT。"
+  ]
+}

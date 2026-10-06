@@ -1,0 +1,49 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "title": "单元示例收敛为唯一 U01 的产品范围变更",
+  "type": "feature",
+  "owner": "product",
+  "parent": null,
+  "objective": "修订已批准的七项菜单产品范围：将当前 U10 四层场景镜头样例改为唯一 U01，明确旧 U01–U09 入口、实现及仅供其使用的运行资源退役清理范围，并定义保留新 U01 所需四层图片、Prefab、镜头控制器及审批追溯记录的边界；形成用户审批用产品变更 Artifact。",
+  "inputs": [
+    "用户 2026-10-06 指令：把 U10 改为 U01，并删除其他单元示例及其资源",
+    "deliverables/product/UNIT-MENU-PRODUCT-001/v0.2/PRD.md、ACCEPTANCE.md（USER_APPROVED，七项菜单基线）",
+    "deliverables/product/UNIT-MENU-SCENE1-SCOPE-001/v0.1/PRODUCT_DELTA.md、ACCEPTANCE.md（USER_APPROVED，四层场景语义）",
+    "tasks/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/TASK.json（当前 U10 接入状态为 BLOCKED）",
+    "apps/client/assets/UnitSampleGallery.ts、UnitSamples.scene 与当前 Git 工作区状态"
+  ],
+  "deliverables": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/ACCEPTANCE.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/DELIVERABLE.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/ART_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/UI_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/QA_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "将当前四层场景镜头示例定义为唯一入口 U01，产品名称与说明统一，不改其已批准的四层、镜头、拖动、缩放和重置语义。",
+    "明确旧 U01–U09 示例退出运行菜单，其专属代码、场景内容、Prefab、图块、角色和其他运行资源列入逐项依赖清理；旧资源只有在不被新 U01、项目其他功能或 Creator 必要元数据引用时才删除。",
+    "明确保留新 U01 所需四层获批 PNG、STREET_BASE_01 Prefab、镜头控制器及资源登记信息；历史 Task、审批记录、Review、产品变更记录不作为运行资源删除。",
+    "逐项列出受影响 Product、UI、Tech Lead、Art、Client、QA 交付物/任务、依赖和需重新审批的范围；已批准 Artifact 保留历史版本，不静默覆盖；六个受影响专业角色对同版草案提交影响 Review。",
+    "提供可复核验收条件：唯一菜单入口标 U01、旧入口和资源引用清零、新 U01 依赖完整、项目文档与资源清单一致；本任务只提交范围规格，不提前修改 Client 实现或删除文件。",
+    "Product、Tech Lead、Art、UI、Client、QA 与 Master 对同版草案完成 Review，Task 与 Approval 保持 USER_REVIEW/DRAFT 直到用户明确批准本版。"
+  ],
+  "dependencies": [
+    "UNIT-MENU-PRODUCT-001",
+    "UNIT-MENU-SCENE1-SCOPE-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 已在本轮启动正式规格变更；Product Owner 已开始本版 Artifact 产出。",
+    "执行阶段需核对并谨慎吸收当前工作区中既有的场景/资源删除改动；不得覆盖或暂存无关变更。",
+    "此任务为下游重命名与资源清理的产品输入，未获 USER_APPROVED 前不得开始 Client 清理。",
+    "2026-10-06：v0.1收到UI同版Review CHANGES_REQUESTED（MAJOR），要求明确旧菜单标题/副标题/页脚清理和返回状态文字验收；v0.1保留为历史。Product据此提交v0.2 Revision；Product、Tech Lead、Art、UI、Client、QA与Master同版Review均APPROVED。用户于2026-10-06明确批准v0.2，Producer于12:57:00 +08:00登记USER_APPROVED；本产品范围Task DONE。批准仅覆盖产品范围，下一步由Master新建Tech Lead资源引用清理规格任务；Client实施与资源删除尚未解锁。"
+  ]
+}

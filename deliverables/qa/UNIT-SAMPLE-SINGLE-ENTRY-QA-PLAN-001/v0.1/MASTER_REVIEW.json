@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN与TEST_CASES将已批准Product v0.2 AC-01至AC-10转成可复核检查，清楚区分计划与实际执行；未运行项维持NOT_TESTED，未添加新的性能阈值或环境矩阵。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_REFERENCE_CHECKLIST逐项保护21个旧SpriteFrame UUID、当前场景命中的8个旧Prefab主UUID及TMX；目录第9个Keeper.prefab作为全仓候选单独检查，不计作当前场景引用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "执行前置要求Client实现与本QA计划分别获批，并要求Creator实际导入、保存重开、构建和运行留证；静态引用审计不等同QA通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Client Brief作为待审批的交叉核对草案使用，若与Product/Tech批准事实不一致须暂停受影响用例并走澄清；本QA Plan不授权测试执行。"
+    }
+  ],
+  "next_action": "待QA、Client、Tech、Product同版Review完成并核对Required Artifact后，由Producer将QA计划与Client Brief分别提交USER_REVIEW。"
+}

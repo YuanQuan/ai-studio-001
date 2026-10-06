@@ -136,3 +136,66 @@ Continuity check：治理Task Required已落盘、评审通过、条件授权落
 
 2026-10-06 14:16:43 +08:00（Producer更正核验）COCOS-CLI-BROWSER-POLICY-001：更正Game治理提交为`af4fd2ade8f38342603092b2bdcc60c30142daec`（与SYNC_RECORD及实际revparse一致）。CLI时间归属更正：14:02:20是第一管理员启动进程；`evidence/cli-exit-result.json`的14:06:15.625启动至14:06:49.203退出（exit_code=36）是另一次补测，进程间隔33.578秒；该次构建阶段10.814秒。原4分29秒只是两次探测跨越的时间，不是同一进程耗时。官方Creator 3.8 exit code 36表示成功，结合结束日志、产物与IAB显示，治理用模板构建记为通过。
 U01连续性更新：Client实施报告已记录场景129→19对象、移除110项、映射/静态索引检查；当前debug build exit_code=36（`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/evidence/u01-cli-result.json`）。IAB已实际打开U01菜单并核验画面；四层页的“+”及重置交互无效，Client正在调整Gallery初始化顺序。Task保持IN_PROGRESS，正式QA未执行；Dashboard/Task仍BLOCKED状态字段与Owner当前制作状态有差异，需Client/Master同步正式状态Artifact后复核，不送USER_REVIEW。
+
+2026-10-06 12:57:00 +08:00（Producer登记用户决定）UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001：用户明确回复“批准”产品范围v0.2；tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL.json现为 artifact=deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md、version=v0.2、status=USER_APPROVED、decided_at=2026-10-06T12:57:00+08:00。12/12 Required及Product/Tech/Art/UI/Client/QA/Master同版Review均已核齐，Task从USER_REVIEW进入DONE。v0.1 UI MAJOR退回及Approval快照保留。审批边界仅为产品范围；下一步Master新建Tech Lead资源引用清理规格Task，需独立审批后再决定下游；Client实现、资源删除、QA运行均未解锁/未通过。复盘WR-20261006-003；连续性检查：本任务DONE，下一可执行节点为Master建立Tech规格Task。
+
+2026-10-06 12:58:46 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Task Packet已建立并完成依赖核验，状态READY、Approval DRAFT；依赖UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001 v0.2为USER_APPROVED。Task共10项Required，其中9份Tech/同版Review交付物尚未落盘，Approval文件存在且DRAFT；Tech Lead已受派，但Producer未见实际Required内容，故不登记TASK_STARTED/IN_PROGRESS。下一动作：Tech Lead实际开始资源引用审计并产出首项Required后，Producer核验路径及内容，再记TASK_STARTED并同步节点。用户已授权推进至下一USER_REVIEW；当前仍由Tech Lead产出阶段，未授权Client修改/删除资源。
+
+2026-10-06 13:00:09 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Tech Lead已开始真实资源引用审计，Task为IN_PROGRESS、Approval保持DRAFT。Owner记录起点12:58:58 +08:00；Producer核验 git status 显示DemoScene.scene/.meta及apps/client/assets/demo/**为既有删除，UnitSamples.scene、UnitSampleGallery.ts、scene1_camera_controller.ts与ASSET_HANDOFF_REGISTRY.md已有既有修改，git ls-files仍包含被标记删除的旧路径；UnitSamples.scene现有序列化UUID/Prefab引用，四层U01保留路径须逐项核对。首项RESOURCE_REFERENCE_AUDIT.md尚未落盘，当前真实证据为Owner开始的场景/Git/身份引用核查与上述源文件路径，不能当作文档交付完成。Producer登记TASK_STARTED/IN_PROGRESS；Creator重导入/构建/运行未验证；本任务不改旧文件或Client Task。
+
+2026-10-06 13:01:55 +08:00（Producer复核）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：RESOURCE_REFERENCE_AUDIT.md虽已落盘，但发现关键描述与当前场景冲突，暂不作为已完成的Required审计结论。审计稿第18行称当前修改版已移除frames/21项旧引用；Producer读取apps/client/assets/UnitSamples.scene确认第3582行仍有frames数组，并递归核得21项；其中tile_ground.png.meta等旧路径在git ls-files中仍跟踪、工作树已缺失。Tech Lead更正待办，Task保持IN_PROGRESS、Approval DRAFT；不得据此执行清理。
+
+2026-10-06 13:02:14 +08:00（Producer复核）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Tech Lead已修订RESOURCE_REFERENCE_AUDIT.md第18行；Producer重新读取确认当前UnitSamples.scene第3582行frames数组仍在且JSON递归为21项，审计稿现如实记载现状并与实文件一致。前次文字冲突已闭合，RESOURCE_REFERENCE_AUDIT.md仍为静态审计进行稿，旧节点/Prefab与其它路径核查、TECH_DESIGN及评审待完成；Creator导入/构建/运行仍NOT_TESTED。Task保持IN_PROGRESS/Approval DRAFT，Client清理未解锁。
+
+2026-10-06 13:04:44 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Tech Design、Resource Reference Audit、DELIVERABLE、Tech Review与Master Review均已落盘；Tech及Master Review为APPROVED，Task状态REVIEW、Approval DRAFT。Product、Art、Client、QA同版Review四份Required尚缺，DELIVERABLE当前状态READY_FOR_REVIEW且其artifacts字段尚未列Master Review；Producer继续核Review与Task Required完整性，未送USER_REVIEW。静态方案不含Creator导入/构建/运行证据；Client实施和删除继续关闭。
+
+2026-10-06 13:04:56 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Art同版Review已实际落盘并APPROVED，确认四层获批资源身份链及保留边界正确、当前旧引用和Creator运行验收仍待后续处理。当前Tech/Master/Art三份Review通过；Product、Client、QA三份同版Review仍缺，Task保持REVIEW、Approval DRAFT，未进入USER_REVIEW。
+
+2026-10-06 13:06:12 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：Product同版Review实际落盘并APPROVED。当前Tech、Art、Product、Master四份Review已通过；CLIENT_REVIEW.json与QA_REVIEW.json仍为两项缺失Required。Task维持REVIEW、Approval DRAFT；待Client/QA完成后再检查DELIVERABLE/Task一致性，Creator实导入、构建运行仍NOT_TESTED。
+
+2026-10-06 13:08:43 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：v0.1 10/10 Required均已落盘并与DELIVERABLE.artifacts路径一致：deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md、RESOURCE_REFERENCE_AUDIT.md、DELIVERABLE.json、TECH_REVIEW.json、PRODUCT_REVIEW.json、ART_REVIEW.json、CLIENT_REVIEW.json、QA_REVIEW.json、MASTER_REVIEW.json；tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json。六份同版Review的reviewer分别为tech_lead/product/art/client/qa/master，decision均APPROVED；六项验收为5 PASS、1 NOT_TESTED（Creator未测试）。Task及Approval进入USER_REVIEW，当前仅待用户决定。审批边界仅技术方案，不授权Client实现、资源删除或QA运行；连续性检查：本Task唯一剩余门禁为用户审批。复盘WR-20261006-004。
+
+2026-10-06 13:11:43 +08:00（Producer登记用户决定）UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001：用户在Tech v0.1的USER_REVIEW后明确回复“继续”；Master已明确提示按当前Tech版本推进/批准理解，故登记为USER_APPROVED。tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json的artifact=deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md、version=v0.1、status=USER_APPROVED、decided_at=2026-10-06T13:11:43+08:00。本Task共10/10 Required及六份Review均已通过，Task USER_REVIEW→DONE。批准仅针对Tech方案作为后续输入；Client实现、资源删除及QA执行未获批准/未执行。连续性检查：本Tech Task已结案；后续如需实施须Master另建正式任务并核对审批边界。复盘见WR-20261006-005。
+
+2026-10-06 13:16:59 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001：Product范围v0.2与Tech方案v0.1依赖均USER_APPROVED；Client Owner记录13:14:09开始。Producer核验FEATURE_BRIEF.md、RESOURCE_CLEANUP_CHECKLIST.md、WORKSPACE_BASELINE_AND_VALIDATION.md、DELIVERABLE.json四份Required已落盘，Task由READY转IN_PROGRESS/TASK_STARTED，Approval仍DRAFT。六份同版Review待办；Task仅编码前Brief，不授权代码/场景/资源改动。
+
+2026-10-06 13:16:59 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001：Product范围v0.2与Tech方案v0.1依赖均USER_APPROVED；QA Owner记录13:13:40开始。Producer核验TEST_PLAN.md、TEST_CASES.md、RESOURCE_REFERENCE_CHECKLIST.md、DELIVERABLE.json四份Required已落盘，Task由READY转IN_PROGRESS/TASK_STARTED，Approval仍DRAFT。QA/Client/Tech/Product/Master五份同版Review待办；此Task仅测试计划编制，不运行QA或生成TEST_REPORT。
+
+2026-10-06 13:18:12 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001：Product/Art/Master三份Review已实际落盘且APPROVED；CLIENT_REVIEW、TECH_REVIEW、QA_REVIEW三份Required仍待，Task继续IN_PROGRESS、Approval DRAFT，不送USER_REVIEW。
+
+2026-10-06 13:19:50 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001：Client同版Review已落盘APPROVED；Product、Art、Client、Master四份通过，Tech与QA Review待。Brief任务仍IN_PROGRESS、Approval DRAFT。
+
+2026-10-06 13:19:50 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001：Client与Master Review已落盘APPROVED；其余QA、Tech、Product三份Review待。QA计划任务仍IN_PROGRESS、Approval DRAFT；本Task未执行运行测试。
+
+2026-10-06 13:22:30 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001：Tech v0.1 Review已落盘CHANGES_REQUESTED，Task由IN_PROGRESS转REVISION；Approval对v0.1仍DRAFT，历史评审保留。MAJOR要求按Creator安全顺序先清理场景中21个旧UUID引用、保存并重开核验，再移除frames代码属性/消费逻辑；MINOR统计差异经Root复核为70正确。Client正在编制v0.2，当前尚未收到其Required路径；新路径与同版Review齐全前不送USER_REVIEW，不修改工程/资源。QA Plan维持IN_PROGRESS，待Client Brief v0.2路径到达后再同步转REVISION；仍仅测试计划编制，未执行QA。
+
+2026-10-06 13:27:00 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001：v0.2四份主体Required（FEATURE_BRIEF、RESOURCE_CLEANUP_CHECKLIST、WORKSPACE_BASELINE_AND_VALIDATION、DELIVERABLE）及同版CLIENT_REVIEW、TECH_REVIEW、PRODUCT_REVIEW、MASTER_REVIEW均已核实存在；四份Review均APPROVED。ART_REVIEW、QA_REVIEW仍待。Task保持REVISION、Approval指向v0.2/DRAFT，当前专业评审未齐，不送USER_REVIEW；不实施代码、场景或资源操作。
+
+2026-10-06 13:33:11 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001 v0.2：11/11 Required路径与DELIVERABLE.artifacts一致且存在，六份同版Review APPROVED，Task/Approval进入USER_REVIEW。只审批编码前Brief范围，Client实现、场景/资源修改及QA执行仍关闭，等待用户决定。
+2026-10-06 13:33:11 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001 v0.2：10/10 Required路径与DELIVERABLE.artifacts一致且存在，QA/Client/Tech/Product/Master五份同版Review APPROVED，Task/Approval进入USER_REVIEW。只审批计划文档，未执行QA、不生成TEST_REPORT，等待用户决定。
+Continuity check：两条本轮可推进规格任务均已到USER_REVIEW，唯一剩余门禁是用户对Client Brief v0.2和QA Plan v0.2各自决定；没有以READY/IN_PROGRESS/REVISION占位的可继续产出。Client实施、资源删除与QA执行仍未解锁。
+
+2026-10-06 13:37:02 +08:00（审批登记）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001 v0.2：用户原话“批准”；Master转达为同时批准当前Client Brief与QA Plan两个USER_REVIEW版本。Approval登记USER_APPROVED，Task DONE。范围仅编码前实施边界，不包括实现、场景修改、资源删除或QA执行；下一步由Master新建Client Implementation Task。
+2026-10-06 13:37:02 +08:00（审批登记）UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001 v0.2：同一用户原话“批准”；Approval登记USER_APPROVED，Task DONE。范围仅QA计划，不包括QA执行或TEST_REPORT。
+Continuity check：两个规格Task均已DONE；后续由Master新建Client Implementation Task并依Task明确门禁推进。QA执行与资源删除仍未获授权，不存在空转READY/IN_PROGRESS规格任务。
+
+2026-10-06 13:40:21 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001：Task与DELIVERABLE状态均BLOCKED；Client报告记录Cocos Creator 3.8.8窗口可列举但两次`sky.get_window_state`捕获超时，刷新窗口列表并重绑后复试仍失败。Producer核验Task、IMPLEMENTATION_REPORT.md、DELIVERABLE.json及ARTIFACT_APPROVAL.json存在；Approval为v0.1/DRAFT。未编辑或删除Client代码、场景或资源，未进入Review/User Review。解除条件：Creator窗口能成功提供可观察状态；随后重新检查当前Scene和旧引用，严格按两阶段顺序先在Creator清空序列化引用并保存、关闭重开核验，通过后再移除frames属性/消费者并复核。既有工作区改动仍按启动基线保护。
+Continuity check：同一U01流程中Product、Tech Plan、Client Brief、QA Plan均DONE；唯一实施Task为具体BLOCKED，不存在空转READY/IN_PROGRESS。QA执行仍未创建/解锁，须等待Client实施及其Artifact审批门禁；下一动作是恢复Creator窗口可观测性后继续，不绕过场景序列化清理。
+
+2026-10-06 13:41:44 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001恢复重试：Client报告新增应用户要求在13:41 +08:00再试两次的证据；刷新应用列表并重新选择唯一Creator窗口后首次`sky.get_window_state`仍为FrameArrived timed out，再刷新并重绑定后仍为window capture timed out。报告明确无点击、键入、编辑、删除或保存。Task/DELIVERABLE继续BLOCKED、Approval DRAFT；Creator窗口尚不可观察，不能开始场景引用清理。解除条件不变：Creator窗口可观察后从第一阶段开始，在Creator内清空场景序列化引用、保存关闭重开核验，通过后才移除frames属性/消费者并开展候选资源清理。
+Continuity check：Product、Tech Plan、Client Brief、QA Plan仍DONE；Client Implementation仍具体BLOCKED，QA执行未解锁。恢复捕获仍失败后没有安全可执行的替代实施工作，不存在空转READY/IN_PROGRESS任务。
+
+2026-10-06 13:42:43 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001恢复重试：Client报告记录13:42 +08:00重新获取应用及唯一目标Creator窗口，首次捕获FrameArrived timed out；刷新应用列表并重绑定后再次window capture timed out。无应用输入或项目改动。Task、DELIVERABLE保持BLOCKED，Approval DRAFT。解除条件不变：Creator窗口可观察后，先在Creator清除序列化引用、保存/关闭/重开核验，通过后才移除frames属性/消费者并审核资源候选。
+Continuity check：U01上游规格Task均DONE，实施Task具体BLOCKED；Creator不可观察期间不能安全继续，无空转READY/IN_PROGRESS任务；QA执行未解锁。
+
+2026-10-06 13:44:41 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001恢复结果：Client报告记录重置node_repl并重新初始化sky后文字状态读取成功，但仅有窗口标题、Raise与一个disabled窗格，没有Scene/Inspector控件。激活窗口捕获FrameArrived timed out；重新观察tree并Raise后，捕获仍window capture timed out。只激活/提升窗口，无场景编辑、删除或保存；报告未给出根因。Task、DELIVERABLE保持BLOCKED，Approval DRAFT。解除条件：Creator提供可观察的场景/Inspector状态后，按已批准两阶段顺序在Creator内先清序列化引用并保存关闭重开核验，通过后再处理代码属性/消费者与资源候选。
+Continuity check：U01规格任务均DONE，Client实施仍为具体BLOCKED。窗口文字可读但无场景控件/可用画面，不能执行已批准安全顺序；无空转READY/IN_PROGRESS任务，QA执行未解锁。
+
+2026-10-06 13:47:44 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001再试：文字状态仍仅显示标题与disabled窗格，Alt+Space未出现可观察的系统菜单，窗口列表无Creator弹窗。按Escape后捕获FrameArrived timed out；刷新列表重绑后仍window capture timed out。另只读检查project.log见12:14:35的TMXMapInfo.parseXMLString getAttribute异常及13:45:18–19 Scene引擎初始化；仅记日志事件，不代表当前场景状态正常，亦无证据建立与捕获失败的因果。无项目编辑/删除/保存。Task/DELIVERABLE BLOCKED、Approval DRAFT；恢复条件不变：Creator场景/Inspector可观察后按两阶段引用清理顺序继续。
+Continuity check：上游规格Task均DONE；唯一实施Task仍具体BLOCKED，无空转READY/IN_PROGRESS。日志中的场景初始化不足以解除Creator场景可观察/保存重开门禁；QA执行未解锁。
+
+2026-10-06 13:51:02 +08:00（Producer核验）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 CLI替代方式只读调查：实施报告记录Creator 3.8当前CLI文档主要为构建，无Scene节点/属性直接修改或Scene保存指令；Editor扩展Scene API可在Editor场景进程中操作但连通/保存能力未测；独立cocos-cli未安装且3.8.8兼容性未核；历史Web构建日志不代表当前工程通过。本轮无代码/Scene/资源改动，未新测CLI。直接改Scene文件候选须先修订Brief禁止手改条款并经角色评审，当前不批准/不解锁。Task、DELIVERABLE仍BLOCKED，Approval DRAFT。
+Continuity check：U01规格任务均DONE；实施任务仍受Creator场景可观察/保存重开验证及获批方法约束阻塞。没有READY/IN_PROGRESS空转任务；QA执行未解锁。解除或改走替代路径都需先有可核验恢复证据或经正式方法修订评审与用户门禁。
+
+2026-10-06 14:28:48 +08:00（Producer核验/送审）UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 v0.1：Task Required中的12项交付描述均已落实，全部路径类项目存在；DELIVERABLE结构可解析、状态READY_FOR_REVIEW。CLIENT_REVIEW、TECH_REVIEW、ART_REVIEW、QA_REVIEW、MASTER_REVIEW五份同版评审均APPROVED。TASK状态由IN_PROGRESS推进USER_REVIEW；ARTIFACT_APPROVAL指向IMPLEMENTATION_REPORT.md v0.1，status=USER_REVIEW、review_ref为MASTER_REVIEW.json、decided_at=null。最终Creator 3.8.8 Web Mobile构建（debug=false）exit36；源/快照22项、构建35项及9张IAB截图hash身份一致；实现级冒烟覆盖菜单、进入、缩放、拖动、重置、UI隔离、返回、重入。70条旧Demo路径为开始前预存删除，已逐项核账并纳入相关提交而非新删除；11个旧Demo专属工具备份审计后退役。正式QA未执行，客户端实现Review不等同QA结论。
+Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作明确决定；Task不标DONE。QA执行保持关闭，须实现Artifact USER_APPROVED后由Master建立/解锁独立QA Task，并使用已批准Web模拟手机矩阵及适用性能指标/方法预算门禁。其它已授权工作无空转READY/IN_PROGRESS任务；治理Task保持DONE。

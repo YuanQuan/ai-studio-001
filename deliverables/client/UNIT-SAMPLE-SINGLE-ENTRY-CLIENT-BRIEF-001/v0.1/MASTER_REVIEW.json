@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Client Brief遵守已批准Product v0.2与Tech v0.1：唯一U01文案和同场景导航明确，未新增玩法、独立Scene或外部依赖。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源清理Checklist准确列出21项旧SpriteFrame引用、当前Scene命中的8个Prefab UUID和1个TMX UUID；目录第9个Keeper.prefab单列为须全仓复核的候选。存疑资源须保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "工作区基线区分预存D/M/未跟踪状态；Creator无法载入场景时明确BLOCKED并禁止手改场景JSON或删除.meta绕过。Brief仅定义后续实施边界，不授权本Task改工程、删资源或执行QA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator导入、构建、运行和QA均未在本Brief中声称通过；正式实施需另建Task并经独立用户审批。"
+    }
+  ],
+  "next_action": "完成Client、Tech、QA同版Review及Required清单核验后，由Producer提交Client Brief v0.1与同版QA计划进入相应USER_REVIEW审批门禁。"
+}

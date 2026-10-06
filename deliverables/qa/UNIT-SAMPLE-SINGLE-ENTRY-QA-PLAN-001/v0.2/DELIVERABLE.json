@@ -1,0 +1,60 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "owner": "qa",
+  "summary": "QA 计划 v0.2 Revision 已形成，按 Client Brief v0.2 更新 Creator 两阶段序列化清理顺序与 Prefab 引用计数；包含测试策略、覆盖 AC-01–AC-10 的待执行用例和逐项资源引用/身份检查清单。本轮仅设计，不执行 QA、不生成 TEST_REPORT。",
+  "artifacts": [
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_PLAN.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TEST_CASES.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/RESOURCE_REFERENCE_CHECKLIST.md",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/QA_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "将Product v0.2 AC-01至AC-10转成可复核用例，覆盖唯一菜单和可见文字、唯一U01进入/返回重入、四层资源身份、拖动/缩放/重置和UI手势隔离。",
+      "result": "PASS",
+      "evidence": "TEST_CASES.md 的 U01-STATIC-MENU-001、U01-VISIBLE-TEXT-001、U01-NAV-REENTRY-001、U01-CAMERA-INPUT-001、U01-IDENTITY-CHAIN-001、U01-PROJECT-DOCS-001 与 U01-HISTORY-APPROVAL-001 分别对应相关 AC；均标记为待执行。"
+    },
+    {
+      "criterion": "按Tech审计列出21个旧frames UUID、旧Prefab/TMX引用的解除核验和残留扫描；每个候选删除前检查活动引用，不把历史文档字符串命中当运行依赖。",
+      "result": "PASS",
+      "evidence": "RESOURCE_REFERENCE_CHECKLIST.md 列明21个旧 SpriteFrame UUID、当前 Scene 命中的8个不同旧 Prefab 主 UUID、TMX UUID，并将未命中当前 Scene 的 Keeper.prefab 作为第9个全仓候选单独检查；TEST_CASES.md 明确区分 Scene 命中与全仓候选，并要求活动工程扫描、清理前后证据及历史命中分类。"
+    },
+    {
+      "criterion": "定义Creator打开/导入/保存重开/missing UUID、Prefab与场景引用、Web构建和运行证据；未执行的检查保持NOT_TESTED，不能以静态引用审计等同QA通过。",
+      "result": "PASS",
+      "evidence": "TEST_CASES.md 明确先保留 frames property/消费者并由 Creator 清空序列化值、保存关闭重开核验；阶段一通过后才删除 property/消费者，之后再次由 Creator 刷新、编译、保存关闭重开。静态扫描不能替代 Creator/Web 证据，所有步骤仍待执行。"
+    },
+    {
+      "criterion": "覆盖工作区既有删除/修改基线核对及四层PNG/Prefab/Controller路径、hash、meta UUID身份链不漂移；Creator无法载入则停止为BLOCKED。",
+      "result": "PASS",
+      "evidence": "U01-PLAN-BASE-001 规定记录实施前工作区；RESOURCE_REFERENCE_CHECKLIST.md 给出四 PNG、Prefab、Controller 路径/hash/主子 UUID基线；TEST_PLAN.md 与用例规定 Creator 缺失/损坏时 BLOCKED。"
+    },
+    {
+      "criterion": "测试设计不执行QA、不新增实体设备/发布平台/性能阈值；任何矩阵或性能门禁均需另行获批。",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md 将范围限定为未来获批的 Web 模拟手机竖屏矩阵，明确排除实体手机/小程序/发布平台；不设新的阈值，性能适用评估与结果需按 QA 协议另行批准，本轮所有执行项未测。"
+    },
+    {
+      "criterion": "QA、Client、Tech、Product和Master完成同版Review后进入USER_REVIEW；旧QA Plan版本与审批记录原样保留。",
+      "result": "NOT_TESTED",
+      "evidence": "本轮已完成四项 Required 产物草案并留在 QA 阶段；Client、Tech、Product、QA、Master 同版 Review、最终用户审批均待相应 Owner/Producer 后续完成。既有 UNIT-MENU-SCENE1-QA-PLAN-001 v0.1 未修改。"
+    }
+  ],
+  "assumptions": [
+    "已批准 Product scope v0.2 和 Tech plan v0.1 是本版唯一产品与清理技术基线；两者审批记录分别为 USER_APPROVED。",
+    "Client Brief v0.2 已形成，当前DRAFT/Revision待同版Review和用户审批；本计划按其两阶段 Creator顺序交叉修订，不将未批草案视为验收事实，也不沿用早期独立Lab Scene结构。",
+    "测试环境沿用项目已批准的 Web 多模拟手机竖屏方向；具体浏览器、OS、视口、DPR、渲染后端及输入方式仍需在运行前作为矩阵另行审批。"
+  ],
+  "risks": [
+    "Tech 审计中的 Creator 导入/场景检查/构建/运行均为 NOT_TESTED；实施后仍须取得真实 Creator/Web 证据。",
+    "当前工作区已有 demo 资源删除及场景/脚本变更；实施验收必须留存基线，不能把预存状态直接归因于新 Client Task。",
+    "如 Client Brief v0.2 后续 Review/用户审批与获批 Product/Tech 事实发生实质冲突，相关用例应暂停并经正式澄清/变更与计划修订审批后再执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

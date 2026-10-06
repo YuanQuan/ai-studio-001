@@ -1,0 +1,58 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "UnitSamples.scene、Gallery和README已收敛为唯一U01；锁定Creator 3.8.8构建exit36，HTTP实际产物IAB实现级交互通过；11个无活动引用的专属旧Demo工具已备份后按授权退役。正式QA未执行，提交同版专业Review。",
+  "artifacts": [
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/README.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/evidence/SMOKE_REPORT.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/evidence/u01-final-build-identity.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/evidence/resource-cleanup-audit.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/evidence/scene-reference-audit.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同一UnitSamples.scene仅保留批准的U01标题/说明/唯一入口，并实现进入、返回菜单和重入。",
+      "result": "PASS",
+      "evidence": "实现级IAB报告SMOKE_REPORT及u01-final-menu/enter/return/reenter截图证明唯一U01菜单、进入、返回及重入通过。"
+    },
+    {
+      "criterion": "清除旧21项frames、8个当前Scene Prefab与TMX引用，完整重映射保留对象索引/关系，并保留唯一U01 Prefab UUID。",
+      "result": "PASS",
+      "evidence": "scene-reference-audit.json记录当前Scene SHA-256 68E1121AD5552D97897DFFC066CC6A7CA735FF51DEC8905AFB4CA0802881A76A、19对象/26条引用、旧21个frames+8个Scene Prefab+TMX共30 UUID零命中、对象图OBJECT_GRAPH_PASS及唯一保留Prefab UUID；SMOKE_REPORT.md与u01-final-build-identity.json证明同版Scene被Creator 3.8.8导入、构建exit36并在实际IAB运行通过。"
+    },
+    {
+      "criterion": "四层PNG、共享Prefab与镜头Controller真实hash/UUID身份链保持不变。",
+      "result": "PASS",
+      "evidence": "四PNG SHA-256及meta主UUID/@6c48a/@f9941与资源登记一致；Prefab SHA-256 2df15d9d1820f4ad9ebc408dc369f191c27157936cea3dab5e18d227a4038ed2和UUID 2d697fb3-01f0-4330-a180-a9c162310bf8及四层SpriteFrame引用一致；Controller UUID 9ceb8fd6-3853-4688-aeb0-c736616a614e。相关PNG/meta/Prefab/Controller未修改。"
+    },
+    {
+      "criterion": "旧专属资源按活动引用/归属与运行门槛核查，并区分任务开始前已有删除与本Task变更。",
+      "result": "PASS",
+      "evidence": "resource-cleanup-audit.json逐路径关联TechPlan资源清单；70条DemoScene/demo路径任务开始前已删除，本次核账确认它们可纳入相关实现提交，但仍是预存删除而非新增成果。第9个Keeper Prefab UUID cf9128e5-3256-40d0-9411-1b648549868b属于旧Keeper/keeper_ghost资源链，活动项目/HEAD引用扫描无其他命中；旧场景30 UUID解除且当前Creator构建/IAB通过。另11个旧Demo工具按授权备份后删除。"
+    },
+    {
+      "criterion": "Cocos Creator导入/CLI构建及HTTP实际产物Codex内置浏览器实现级冒烟分别提供证据。",
+      "result": "PASS",
+      "evidence": "SMOKE_REPORT记录Creator 3.8.8隔离导入/构建exit36、17.371s、实际HTTP产物IAB完整实现级冒烟；本Task未执行正式QA，未生成TEST_REPORT。"
+    },
+    {
+      "criterion": "不把客户端实现冒充正式QA；QA仍按独立授权Task执行。",
+      "result": "NOT_TESTED",
+      "evidence": "Client独立Review已提交；Tech/QA/Master等同版Review与USER_REVIEW状态由Master/Producer继续登记。正式QA仍须实现Artifact获用户批准后由独立QA Task执行。"
+    }
+  ],
+  "assumptions": [
+    "当前项目锁定Cocos Creator 3.8.8；ROOT负责独立Creator CLI导入/构建及Codex内置浏览器实际产物验证。",
+    "新Cocos脚本方法补充CP-COCOS-CLI-BROWSER-20261006允许受控对象图转换，但保留已批U01语义、资源身份和实现/QA用户审批门禁。"
+  ],
+  "risks": [
+    "正式QA未执行。获批QA Plan当前覆盖用户批准的Web浏览器模拟手机矩阵及适用性能检查（指标/方法需先获批）；原生/实体设备和原生容器不在当前计划范围，保持NOT_TESTED，不表述为后续已获批。",
+    "Master/Producer仍需完成剩余同版专业Review及用户审批；本Client报告不把任务标为DONE。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

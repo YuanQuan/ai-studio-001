@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Client实现产物与批准的U01范围相符；UnitSamples.scene旧引用清理和索引检查、四层资产身份保护、Creator 3.8.8构建及HTTP实际产物IAB证据已记录。首轮缩放/重置缺陷有失败证据及修复追溯，修复版缩放、重置、拖动、UI隔离、返回与重入均通过实现级冒烟。"
+    },
+    {
+      "severity": "INFO",
+      "message": "11个旧Demo专属工具逐项确认只依赖退役的DemoScene/assets/demo工作流，当前源/配置无外部调用引用；已校验备份SHA并按Master授权删除。70条既有tracked资源删除单独列为任务前状态。"
+    },
+    {
+      "severity": "INFO",
+      "message": "任务开始时的Gallery备份中，旧U10控件使用闭包直接调用Controller，没有Controller enabled开关；当前重构的按钮Map绑定时序问题已通过延后组件节点激活修复，未改Controller源码或身份。正式QA仍未执行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Keeper.prefab（目录第9个Prefab）已按HEAD内容/meta与当前项目/HEAD活动引用扫描核账：它属于旧Keeper/keeper_ghost资源链，除自身只依赖21项旧SpriteFrame之一外无其他活动引用；已在资源清单中明确。70条DemoScene/demo工作区删除均为预存项，本次逐路径核账确认可纳入相关实现提交，但不计作本轮新增删除。当前QA边界修正为获批Web浏览器模拟手机矩阵和适用性能检查；原生/实体设备不在当前QA Plan范围，保持NOT_TESTED。"
+    }
+  ],
+  "next_action": "提交同版Tech、QA、Master Review及Producer流程登记；待实现Artifact获得用户批准后，另行启动正式QA Task。"
+}

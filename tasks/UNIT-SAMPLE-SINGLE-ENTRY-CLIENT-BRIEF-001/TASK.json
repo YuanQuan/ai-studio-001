@@ -1,0 +1,49 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "title": "唯一 U01 客户端清理与实现开工说明",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "依据已获用户批准的唯一U01产品范围和Tech Lead资源引用审计，提交Client编码前开工说明，细化唯一菜单实现、当前场景解除引用、旧专属资源清理范围、存留资产身份链、工作区基线保护及Creator验证顺序；本Task不实施代码/场景修改、不删除资源、不执行QA。",
+  "inputs": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md、ACCEPTANCE.md、CHANGE_IMPACT.md（USER_APPROVED）",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md、RESOURCE_REFERENCE_AUDIT.md（待Producer登记用户批准后可用）",
+    "project/ASSET_HANDOFF_REGISTRY.md及四层PNG、STREET_BASE_01 Prefab、镜头控制器实际路径/.meta/UUID",
+    "当前 apps/client 工作区和git status基线；既有删除/修改不得归为本Task产出",
+    "旧任务 UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001（BLOCKED）与 UNIT-MENU-SCENE1-CLIENT-BRIEF-001（已批准但范围旧）仅供历史参考，不得当成本任务已获授权事实"
+  ],
+  "deliverables": [
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/RESOURCE_CLEANUP_CHECKLIST.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/WORKSPACE_BASELINE_AND_VALIDATION.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/QA_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "实现严格遵守已批准Product v0.2，UnitSamples.scene仅保留唯一U01标题、说明、进入入口、返回/重入及已批四层镜头语义，不新建Scene或新增玩法/依赖。",
+    "按Tech v0.1审计逐项列出21个旧frames UUID、旧Prefab/TMX UUID、旧Gallery逻辑/文案以及旧资源真实路径；逐条列引用解除、Creator保存重开核验、可删除判定及失败停机条件。",
+    "不得删除无法证明为旧样例专用的资源；保留四层PNG及.meta、STREET_BASE_01 Prefab及.meta、镜头Controller及.meta、Creator身份链、资源登记与所有历史审批资料。",
+    "明确保护既有git工作区差异，记录实际工作区快照和文件归属；如果Creator不能载入带缺失引用的场景则BLOCKED，禁止手工改写场景JSON或删除.meta掩盖missing引用。",
+    "定义Creator重导入、场景解析、构建、唯一入口运行、返回/重入和拖动/缩放/重置验证证据；未实际执行均标NOT_TESTED。",
+    "本Brief仅申请编码前实施边界审批，不授权代码/场景/资源改动；Client、Product、Art、Tech、QA和Master同版Review通过后进入USER_REVIEW。"
+  ],
+  "dependencies": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Product范围v0.2与Tech方案v0.1已获USER_APPROVED，相关依赖已解锁。",
+    "用户已于2026-10-06 13:37:02 +08:00明确批准Client Brief v0.2；该决定仅批准编码前实施边界，不批准实现、资源删除或QA运行。",
+    "最终实现必须另建/解锁独立Client实施Task，不得把本Brief审批解释为实现完成或资源删除许可。",
+    "2026-10-06 13:14:09 +08:00 起始；Producer于13:16:59核验FEATURE_BRIEF.md、RESOURCE_CLEANUP_CHECKLIST.md、WORKSPACE_BASELINE_AND_VALIDATION.md及DELIVERABLE.json均已落盘。v0.1保留历史；Tech Review为CHANGES_REQUESTED（MAJOR：Creator中先解除并保存场景21个旧UUID引用、重开确认，再移除frames代码属性/消费逻辑；MINOR统计差异经Root复核确认70正确）。Task进入REVISION，Approval仍DRAFT，等待Client提交v0.2 Required路径及同版评审；不进入USER_REVIEW，不修改Client工程/资源。",
+    "Client v0.2 Revision Required已提交；11/11路径与DELIVERABLE.artifacts一致且存在，六份同版Review APPROVED。Producer于13:33:11送USER_REVIEW；用户原话“批准”，Master转达对应本Brief v0.2及QA Plan v0.2，Producer于2026-10-06 13:37:02 +08:00登记USER_APPROVED并将Task置DONE。仅批准编码前Brief边界；不授权Client实现、场景修改、资源删除或QA执行。v0.1历史保留。安全顺序为Creator保留frames脚本属性，先清空场景21项序列化值并保存关闭重开核验，再移除代码property/消费者并二次Creator核验。"
+  ]
+}

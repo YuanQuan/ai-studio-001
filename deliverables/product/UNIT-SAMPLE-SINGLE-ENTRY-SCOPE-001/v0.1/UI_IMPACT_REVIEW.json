@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "ui",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "菜单旧UI清理仍缺少可逐项验收的文字和视觉范围。PRD第2节及AC-01/AC-04要求仅留U01并移除旧入口，但当前 apps/client/assets/UnitSampleGallery.ts 的 openMenu() 除十张入口卡外，还显示标题“百鬼夜市 · 单元样例”、副标题“每个入口只验证一组独立能力”和页脚“四方向与特效目前采用机制占位，正式资产需补做”。请在产品稿中明确这些旧菜单文字/占位说明是否保留或移除，并将菜单返回状态的验证扩展为检查标题、副标题、页脚和旧卡片均符合唯一U01范围；否则AC-01无法明确判定旧菜单UI是否清理完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "唯一入口及主要状态路径已有基本覆盖：PRD第2-3节规定UnitSamples.scene只展示U01四层场景镜头及其标题/进入操作，返回后回唯一U01菜单并允许重进；AC-01至AC-03覆盖入口、标题/四层页面、拖动缩放重置；AC-02还要求返回/重进无引用丢失或重复实例。实现基线仍是 U10 标题、unit=10 和返回 openMenu()，实施时须同步改为U01，并确保重进恢复初始镜头且不累积节点。"
+    },
+    {
+      "severity": "INFO",
+      "message": "与已批准 UNIT-MENU-UI-SPEC-001 v0.2 的七项正式内容边界表述清楚：PRD第1、4节说明本变更只清退旧 UnitSamples 九项技术样例入口，不撤销七项正式产品语义/审批；它们在当前UnitSamples菜单的可达性不属于本次承诺，未来接入需独立获批范围。v0.2规定的七顶层项、第三项子项、对话、状态、组件复用和生产资源门槛均未被本稿改写。"
+    }
+  ],
+  "next_action": "Product补明唯一U01菜单中现有标题、副标题、页脚等旧UI文字的处置及对应验收后，提交新Revision供UI复审；本次评审不授权修改UI/Client实现。"
+}

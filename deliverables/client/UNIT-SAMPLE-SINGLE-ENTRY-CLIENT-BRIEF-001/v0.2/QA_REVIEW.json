@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 与 RESOURCE_CLEANUP_CHECKLIST.md 明确 Creator 两阶段顺序：先保持 Gallery frames property/消费者可识别，由 Creator 清空场景21项序列化帧和旧节点/Prefab/TMX引用，保存关闭重开核验；通过后才删除代码property/消费者，再由 Creator刷新/编译并二次保存重开检查。不能载入或可靠保存则 BLOCKED，禁止手工改写.scene JSON。步骤与证据可复核，满足后续QA计划设计需要。"
+    },
+    {
+      "severity": "INFO",
+      "message": "清理清单区分 UnitSamples.scene 中21个旧 SpriteFrame UUID、8个不同旧 Prefab主 UUID、1个TMX主UUID，以及未命中当前Scene的 Keeper.prefab 第9个全仓候选；候选资源逐项核引用与归属，未知项保留/阻塞。这个区分允许后续分别判定场景残留与全仓活动引用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "工作区基线、旧资源删除状态、四层PNG/Prefab/Controller身份链和历史文件边界有对应路径及Creator/Web证据要求。Creator导入、构建、运行交互均保持 NOT_TESTED，静态审计不作通过证明；Client Brief审批与独立实施/QA执行任务分离。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本Review只确认实施概要为后续功能与资源验收提供了可测顺序和证据边界；不表示场景引用已解除、资源已安全删除、Creator可导入、构建成功或运行行为通过。"
+    }
+  ],
+  "next_action": "QA对 Client Brief v0.2 的可测性与后续QA边界Review通过。Client Brief仍需同版全部专业Review及用户审批；获批后还须由Master解锁独立Client实施任务和已审批QA计划，再分别取得真实实施与测试证据。"
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 的唯一菜单文案与已批准 Product v0.2 完全一致：标题“U01 四层场景镜头”、说明“查看四层场景视差，并拖动、缩放或重置镜头。”、唯一入口“进入 U01”。它覆盖同场景进入/返回/重入、批准的四层镜头交互与完整可见文案检查，并明确本Brief只是规划稿、不授权实现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 明确新入口仅承载旧UnitSamples实验目录收敛，不将另一套已批准七项正式内容接入菜单；七项产品语义与审批、旧九项任务历史均保留。边界符合 Product v0.2 第1、4节与 AC-08/09。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 将21个旧SpriteFrame、8个场景命中Prefab、TMX、单独待查的Keeper Prefab、旧场景节点/逻辑和既有删除路径逐项列出；所有删除须Creator解除引用/保存重开、全仓路径与UUID复核并证明资源仅供旧样例使用。四层PNG、STREET_BASE_01 Prefab、镜头控制器、Creator身份和资源登记链列为保留。未将共享资源或审批/历史文件列入直接删除，符合 AC-05–09。"
+    },
+    {
+      "severity": "INFO",
+      "message": "WORKSPACE_BASELINE_AND_VALIDATION.md 将Task开始前已有的工作区差异与本Task产物分开，并要求实施前重抓快照；Creator不能可靠载入/保存则BLOCKED，禁止手改Scene JSON或删除.meta掩盖missing引用。Creator/构建/运行/QA未执行均保持NOT_TESTED，符合产品验收与授权边界。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 将旧DemoScene/TMX工具列作条件候选：需逐个核实Creator、构建与开发工作流调用，无现行用途后才删除，并明确保留serve-unit-build.mjs。此限定避免把候选清单当成自动删除授权；实施阶段须保留未证实专用性的工具。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DELIVERABLE.json 将该Task限定为规划文档，资源删除、代码/场景修改和QA均未执行；实现所需Creator证据与审批门禁分开列明。Product v0.2和Tech v0.1的USER_APPROVED输入状态也与审批记录相符。"
+    }
+  ],
+  "next_action": "Product Review通过。Client可汇总其他专业Review并交Master Review；本Review不批准Client Brief本身，不授权代码、场景、资源清理或QA执行，仍须同版Review及用户审批。"
+}

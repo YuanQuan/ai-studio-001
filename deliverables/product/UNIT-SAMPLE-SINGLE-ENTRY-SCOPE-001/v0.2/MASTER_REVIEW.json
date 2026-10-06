@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "PRD、ACCEPTANCE 与 CHANGE_IMPACT v0.2 已落实用户方向：将当前 UnitSamples.scene 的四层场景镜头从 U10 改为唯一 U01，清理旧九项入口、实现、专属运行资源及旧菜单文案；四层获批资源和必要 Creator 身份链明确保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "范围准确地区分已取消的 UNIT-SAMPLES-001 旧九项工程样例与另一套已批准 UNIT-MENU-PRODUCT-001 七项正式内容。七项产品语义、审批、任务及历史评审均保留；后续菜单接入须另有批准范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 UI MAJOR 意见已由 v0.2 明确闭环：新菜单标题、说明、入口及运行页可见文字基线清楚；旧副标题、占位页脚、旧卡片和旧功能说明均列为清理对象，并由 AC-01/04 验收。v0.1 和退回 Review 留作历史。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Product、Tech Lead、Art、UI、Client、QA 六份 v0.2 同版 Review 均为 APPROVED，路径与 Task Required 一致。Tech/Client 发现当前 Scene 仍留有 21 个旧 SpriteFrame 序列化引用及旧节点/Prefab UUID；工作区的旧资源删除不能代替清理和无悬空引用证据。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户批准本产品范围后，Tech/Client 应逐项核对旧 Scene、Prefab、脚本、构建入口及 Creator 身份引用，再清理旧运行资源并保留四层 PNG、STREET_BASE_01 Prefab、镜头控制器和登记链。Creator 导入、构建、运行及资源删除结果仍是后续实施验收，不属于本规格 Review 的通过项。"
+    },
+    {
+      "severity": "INFO",
+      "message": "QA 同版 Review 指出现行 QA Plan v0.1 不覆盖唯一菜单文案、同场景返回/重入及旧九项清理；CHANGE_IMPACT 已将其修订和独立用户审批列为后续执行前置条件。本轮未运行 QA，不生成 TEST_REPORT。"
+    }
+  ],
+  "next_action": "由 Producer 将 v0.2 Product Artifact 及 Task 推进 USER_REVIEW 并呈用户审批。获批前不解锁正式实现或资源删除；获批后 Master 组织 Tech/Client 清理任务及独立 QA Plan 修订审批任务，持续沿用既有 Creator/运行和 QA 门禁。"
+}

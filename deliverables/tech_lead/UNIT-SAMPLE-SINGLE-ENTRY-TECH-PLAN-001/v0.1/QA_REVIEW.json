@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TECH_DESIGN.md 和 RESOURCE_REFERENCE_AUDIT.md 将哈希、UUID、Library、场景序列化及全仓检索明确限定为静态证据；Creator 重开/重导入、missing UUID 检查、构建、运行菜单与输入行为均标为 NOT_TESTED。技术审计没有被表述为 QA 通过或运行 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "清理顺序可形成清晰的前后验收：先记录工作区基线并解除脚本/场景引用，再由 Creator 保存、重开并检查旧 SpriteFrame、Prefab、TMX UUID 和 missing 引用，之后逐项删除经证明为旧样例专用的资源，最后重扫引用并检查四层 PNG、STREET_BASE_01 Prefab、Controller 的哈希/UUID/登记链。未核清项保留并阻塞删除。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator 运行验证要求记录导入/序列化状态、TypeScript 编译、Web Mobile 构建、构建运行、菜单/返回重入/拖动/缩放/重置及日志或画面证据；超出已批准范围的真机和性能结论明确不推断。该要求适合作为实施后的验证输入，实际结果仍须由相应实施/QA任务取得。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TECH_DESIGN.md 明确既有 UNIT-MENU-SCENE1-QA-PLAN-001 需由 QA 单独修订并审批；本 Tech Task 的 Review 和用户批准不授权 Client 清理，也不授权 QA 执行。后续应以获批产品范围及获批 Tech Artifact 建立正式 Client 实施任务，并另建 QA 计划修订审批任务；计划获批、实现完成并通过必要 Review/用户确认后，QA 才执行并提交 TEST_REPORT。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本 Review 只确认方案与审计的 QA 可验证性及门禁边界，不确认当前旧引用已清理、Creator 可导入/构建/运行，亦不替代实施后的 QA 结果。"
+    }
+  ],
+  "next_action": "将本 Review 纳入 Tech v0.1 同版评审；完成其他专业 Review 和 Master Review 后提交用户审批。批准后由 Master 建立 Client 实施任务及独立 QA 计划修订审批任务，待新计划与实现分别满足门禁后再执行 QA。"
+}

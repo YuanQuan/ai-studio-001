@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 逐字采用获批 Product v0.2 唯一菜单标题“U01 四层场景镜头”、说明“查看四层场景视差，并拖动、缩放或重置镜头。”和入口“进入 U01”；保留四层镜头、拖动/缩放/重置、同场景返回/重入语义及控件输入隔离。它明确只退役旧九项实验，不接入另一套已批准七项正式内容，也不新增功能、玩法、Scene、API或依赖，符合AC-01–03和PRD范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "唯一菜单文案、旧多入口标题/副标题/页脚/功能说明清理、运行页文字范围和旧入口/实现清理计划均与 Product v0.2 AC-01、AC-04、AC-05一致；其余现存文字只允许说明U01有效操作或状态。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 保持逐项引用和专用性核查门槛：列明21个旧SpriteFrame、8个场景命中旧Prefab及TMX、单独待查的Keeper、旧资源路径和预存删除基线；不以路径位于assets/demo或工作区已删除作为删除依据。无法证明仅供退役样例、涉及共享/Creator必要性或归属不清时保留并上报。四层PNG、STREET_BASE_01 Prefab、镜头Controller、meta/UUID和资源登记身份链受保护，符合AC-05–07。"
+    },
+    {
+      "severity": "INFO",
+      "message": "七项正式产品规格/审批、旧UNIT-SAMPLES-001取消状态、历史Task/Review/QA和变更记录明确保留；README与旧运行说明仅更新或由相应Owner标记历史，不机械删除历史字符串。测试范围不执行七项功能，符合AC-08–10。"
+    },
+    {
+      "severity": "INFO",
+      "message": "针对Tech MAJOR的顺序修订只改变后续实施的Creator操作步骤：保留Gallery frames属性和消费者，先在Creator清空序列化值/旧场景引用、保存并关闭重开确认，再移除脚本属性/消费者并再次由Creator刷新、保存、关闭重开核验。该流程不改变用户可见产品行为或资源清理范围；Creator不能可靠载入/保存时BLOCKED，且禁止手改Scene JSON或删meta绕过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Feature Brief、Checklist、Baseline与Deliverable均表述为DRAFT规划产物；不改工程、不删资源、不执行Creator、构建或QA。未测结果保持NOT_TESTED，用户批准Brief后仍需Master另建/解锁实施Task并另行审批，不把本次Review当作Client实现授权。"
+    }
+  ],
+  "next_action": "Product对v0.2同版Review通过。Client汇总Art、Tech、QA与Master同版Review后由Producer推进用户审批；该审批只覆盖Client实施边界Brief，不解锁代码、场景、资源删除或QA执行。"
+}

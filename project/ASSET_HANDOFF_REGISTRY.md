@@ -30,12 +30,12 @@
 |---|---|---|---|
 | `STREET_BASE_01_MASTER` | `deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd`；可编辑四层母版 | `428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed`；Gate2 v0.3 溯源 | **不接入**；不能作为运行纹理 |
 | `STREET_BASE_01_REVIEW` | `deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png`；同尺度重组审核图 | `8d5f91396f0c0a5f0f974cd09a3c613dc68b648a4276a4f7dd46a2221a7ae6bd`；Gate2 v0.3 画面核对 | **不接入**；不能代替四层运行纹理 |
-| `STREET_BASE_01` | 四层共同组成的背景对象；无额外美术贴图 | 既有逻辑对象 ID；独立入口与未来组合入口共用一套资源 | **计划** `apps/client/assets/units/background/prefabs/pf_street_base_01.prefab`；Prefab 文件/`.meta`/UUID 尚不存在 |
+| `STREET_BASE_01` | 四层共同组成的背景对象；无额外美术贴图 | 既有逻辑对象 ID；独立入口与未来组合入口共用一套资源 | `apps/client/assets/units/background/prefabs/pf_street_base_01.prefab` Creator 源 JSON 与 .meta 均已存在；importer=prefab、imported=true，主 UUID=`2d697fb3-01f0-4330-a180-a9c162310bf8`；四层 SpriteFrame 依赖已写入 Prefab 并逐项静态核对 |
 
 原 `UNIT-MENU-TECH-DESIGN-001 v0.2` 的 `apps/client/assets/units/background/StreetBase.prefab` 只是候选路径。本轮为统一文件命名提议 `background/prefabs/pf_street_base_01.prefab`；两个路径都不代表已导入。旧 `UNIT-MENU-BASE-ASSET-001` 空景候选已取消，不能用其源文件或资源身份填本批状态。
 
 ## 后续Prefab/Scene与运行证据回填
 
-四张 PNG 的 Creator 实际工程目录、文件名、SHA-256、image 主 UUID、Texture2D 子 UUID、SpriteFrame 子 UUID及子资源键已在上表登记；四份 Library JSON 均显示完整rect/originalSize为2172×724、offset=(0,0)，`.meta trimType=none`与Library几何相符。Creator版本为3.8.8；导入commit、Prefab/Scene实际路径、`.prefab.meta`主UUID、四层实际依赖及Scene引用仍待创建后回填。Art复核源图对应和视觉，Tech复核身份链，QA在后续获批矩阵下验证运行。Prefab/Scene和运行引用字段仍待补，不填虚构UUID、截图或`PASS`。
+四张 PNG 的 Creator 实际工程目录、文件名、SHA-256、image 主 UUID、Texture2D 子 UUID、SpriteFrame 子 UUID及子资源键已在上表登记；四份 Library JSON 均显示完整rect/originalSize为2172×724、offset=(0,0)，`.meta trimType=none`与Library几何相符。Creator版本为3.8.8；导入commit、Prefab源文件路径已确定，四层 SpriteFrame UUID 已填入源 JSON；Creator `.prefab.meta`主 UUID `2d697fb3-01f0-4330-a180-a9c162310bf8` 已登记；UnitSamples.scene 的 streetBasePrefab 已序列化该 Prefab UUID。Creator 编辑器运行画面与交互证据仍待验证。Art复核源图对应和视觉，Tech复核身份链，QA在后续获批矩阵下验证运行。Prefab/Scene和运行引用字段仍待补，不填虚构UUID、截图或`PASS`。
 
 资源替换时追加记录：日期、源与新 Artifact 版本、旧/新 SHA-256、是否保持 `.meta` UUID、受影响的 Prefab/Scene、专业和用户审批及复验结果；旧记录保留追溯。其他单元资源未来按同一字段增加条目，不复用本批 ID。

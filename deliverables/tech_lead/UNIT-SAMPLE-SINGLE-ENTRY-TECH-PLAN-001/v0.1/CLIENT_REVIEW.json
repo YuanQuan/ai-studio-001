@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "技术方案给出的客户端边界可执行：保留 UnitSamples.scene 中唯一 U01、Gallery 到 STREET_BASE_01 Prefab/四 SpriteFrame 的引用以及 Controller；移除旧菜单/实现、frames 属性和旧场景节点后再处理资源。RESOURCE_REFERENCE_AUDIT 逐项记录21个旧 SpriteFrame UUID、旧 Prefab/TMX UUID、资源路径和工作区删除状态，并将历史资料与Creator Library留存。该方案没有把当前工作树删除当作引用已解除或删除已验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "工作区基线区分充分且与当前状态相符：旧 DemoScene/demo 资源仍在 Git 跟踪中但工作树标记删除；UnitSamples.scene、Gallery、Controller 和 Creator 设置是既有修改，四层 Prefab/目录及 Creator package 文件为既有未跟踪项。方案要求 Client 开始时重记 status/diff、只核账获批清理范围，不归因这些变更为 Tech 产出。"
+    },
+    {
+      "severity": "INFO",
+      "message": "存留身份保护具备可复核细节：四层 PNG 的路径/hash/主 UUID、Texture `@6c48a`、SpriteFrame `@f9941`、尺寸与offset，Prefab UUID `2d697fb3-01f0-4330-a180-a9c162310bf8` 及其四层引用，Controller UUID `9ceb8fd6-3853-4688-aeb0-c736616a614e` 均有 .meta/Library/登记交叉核对；方案要求不移动、不重建、不改写UUID。Creator重导入、场景打开、构建、菜单与进出/重入/拖动/缩放/重置及控制台证据也均已列为后续验证，并标明当前 NOT_TESTED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "待删旧资源已在工作树缺失，而UnitSamples.scene仍引用21个旧帧、9类Prefab和TMX。方案说明先处理场景引用、不得把缺文件视为清理完成，也记录Creator打开/重导入尚未验证；但若Creator无法正常载入含缺失Prefab的场景，未写明恢复/替代核对路径。实施时若出现此情况，应立即停止任何进一步资源删除，把场景解链标为BLOCKED并向Master提交可核对报错，不能用手工改写场景JSON或删除.meta掩盖问题。"
+    },
+    {
+      "severity": "INFO",
+      "message": "历史README、一次性DemoScene工具和 project/unit_tests/UNIT_SAMPLES_v0.1.md 均与运行资源区分；Tech方案要求先核实工具调用再删，并把 unit_tests 文档交职责Owner标记退役，避免Client静默扩大职责或清除历史事实。"
+    }
+  ],
+  "next_action": "Tech v0.1 客户端Review通过，连同Product、Art、QA及Master Review供Master汇总并提交用户审批。获批后方可由Master解锁Client实施；实施按方案先清除脚本/Creator场景旧引用、重开确认无missing UUID，再按逐项引用证据处理预先删除的旧资源并更新适用说明。若Creator不能载入或无法可靠保存旧引用已解除状态，暂停清理并记录BLOCKED与错误证据；四层 PNG、Prefab、Controller及其UUID/.meta身份始终保留。"
+}

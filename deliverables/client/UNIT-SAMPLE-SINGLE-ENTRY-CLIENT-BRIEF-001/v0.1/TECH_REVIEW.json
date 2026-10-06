@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 第1.3节和 WORKSPACE_BASELINE_AND_VALIDATION.md 第3步将移除 Gallery 的 `frames` 属性/实现放在 Creator 清空场景序列化数组之前。该字段移出 `@property` 后是否仍可通过 Creator Inspector访问、编辑并可靠保存尚无证据；而本Task又禁止手改.scene JSON，Creator可加载/保存是硬门禁。请明确可执行顺序：先保持该属性可被Creator识别，在Scene中清空21项并保存/关闭重开核验后，再移除代码消费者/字段；如需先改代码，请提供Creator已验证可移除未知序列化属性的具体步骤和证据要求。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "DELIVERABLE.json 的验收证据写“70个tracked删除候选路径”，但重新以 `git ls-files apps/client/assets/DemoScene.scene apps/client/assets/DemoScene.scene.meta apps/client/assets/demo` 计数得到69项（DemoScene两项，assets/demo共67项）；Checklist枚举数量与69项相符。请修正为69，或补列缺少的第70条真实路径并说明归属，避免基线统计与清单不一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "引用盘点范围正确：21个旧SpriteFrame UUID、8个Scene命中的旧Prefab主UUID、1个TMX主UUID；另将第9个目录Prefab Keeper（UUID `cf9128e5-3256-40d0-9411-1b648549868b`）列为无Scene命中但需全仓核验的候选，没有把它错算成场景引用。Creator解链/保存重开/全仓核引用完成前不删资源的门禁清楚。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四层PNG、STREET_BASE_01 Prefab与Controller的路径、SHA-256、Creator主/子UUID作为保留身份链列明；审批、登记与历史任务留存，Creator构建运行保持NOT_TESTED。"
+    }
+  ],
+  "next_action": "Client修订上述属性解链顺序及tracked路径计数后，请求Tech Lead对修订版本复核；现有21项引用、8个Prefab和TMX UUID、Keeper候选说明、保留身份链与删除前置条件可保留。"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2已按Tech Review修订安全顺序：保留Creator可识别的frames脚本属性，先由Creator清场景序列化引用、保存关闭重开核验，通过后才移除代码属性与消费者并二次核验；无法载入/保存即BLOCKED，禁止手改.scene JSON。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源清单区分8个当前场景命中Prefab UUID与目录9个Prefab资产，并单列Keeper待全仓审计。旧候选路径用指定git ls-files pathspec核为70条（2条DemoScene相关、68条demo路径，含demo.meta）；69仅作为v0.1历史Review意见。"
+    }
+  ],
+  "next_action": "Client自审通过；等待 Product、Art、Tech、QA、Master 对 v0.2 同版Review完成后提交用户审批。Approval保持DRAFT；本Task仅规划文档，不实施工程变更。"
+}

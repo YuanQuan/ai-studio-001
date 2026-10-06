@@ -1,0 +1,50 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "checked_at": "2026-10-06",
+  "authorization": "Master明确授权退役Client实施报告列出的11个专属旧Demo工具；不删除历史文档、四PNG、Prefab、Controller或任何meta。",
+  "reference_checks": {
+    "search_scope": "apps/client current source/configuration excluding tools, temp, generated output and serialized scenes/assets; separately searched every target basename throughout apps/client excluding temp",
+    "commands": [
+      "rg -n --hidden '<tool basename patterns>' apps/client -g '!tools/**' -g '!temp/**' -g '!**/Library/**' -g '!**/*.scene' -g '!**/*.prefab' -g '!**/*.meta' -g '!**/*.json'",
+      "rg -l --fixed-strings '<each target filename>' apps/client -g '!temp/**'"
+    ],
+    "result": "No runtime/source/configuration filename references found outside the tool files themselves. package.json contains only name, Creator version and project UUID, with no script entry points. Each removed file directly reads/writes old DemoScene.scene and/or assets/demo/NightMarket TMX/Prefab paths."
+  },
+  "removed_files": [
+    {"path":"apps/client/tools/attach-tiledmap.mjs","sha256":"279784641DDFFFE1E4E969729266F44A000C2509715C64F8B90F807A106DBBF9"},
+    {"path":"apps/client/tools/build-static-scene.mjs","sha256":"7CDE2EA40671706F95ADEAD3C6D7B7D5D60E9B06E4D2AD6B4C56BB12DBDC8C40"},
+    {"path":"apps/client/tools/build-tilemap.mjs","sha256":"0E6746798B2183A779EA46C5350636DAA39F65AFA1328B30AB67EE5D97B55B37"},
+    {"path":"apps/client/tools/calibrate-static-scene.mjs","sha256":"1243BA8F4249AA6D302E6AAD60E61898575B055201646D9FEE54BE041B1C7EF8"},
+    {"path":"apps/client/tools/create-unit-samples-scene.mjs","sha256":"C747B45A163B76FF6B11A24B26EB3DD7B1733A413C2198CAFEA6E5C045A3E095"},
+    {"path":"apps/client/tools/export-static-prefabs.mjs","sha256":"4058E99452A7167A0DBAB0BD026B71FA794DB5D96A28A5FB686255061B6DA636"},
+    {"path":"apps/client/tools/extend-exit-route.mjs","sha256":"988AD6C68C45114626BFCA2FA51C4D8976AD5542794EE054449AD7F24434D94F"},
+    {"path":"apps/client/tools/link-static-prefabs.mjs","sha256":"1B5F3F3FD1B048875CF9F03F3DB3FC03ADBD07D966FF947419D13639DBD6521D"},
+    {"path":"apps/client/tools/prune-disabled-ground.mjs","sha256":"5DF368613463DE759C33A8C479A316138556E5F8EA2E47132184D157CFDB1E4F"},
+    {"path":"apps/client/tools/render-static-layout.py","sha256":"1EB63D69A418E3ED848DBC1785044E6A7F8A066B80C9F15E1D3F16838ECE1935"},
+    {"path":"apps/client/tools/validate-static-scene.mjs","sha256":"1558C6CF6A3CD9DDD592B95CB97ADC6A58EBF735FEB02F30E966DA3DE158950F"}
+  ],
+  "backup_directory": "C:\\Users\\admin\\AppData\\Local\\Temp\\UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001-retired-tools-20261006-142225",
+  "backup_verification": "Each backup copy SHA-256 matched its source before deletion; backup manifest.json records file paths/hashes.",
+  "delete_method": "PowerShell Resolve-Path checked every target remained under repository root; Copy-Item and hash verification preceded Remove-Item -LiteralPath for each exact file path. Post-delete Test-Path confirmed all 11 absent.",
+  "retained": [
+    "apps/client/tools/serve-unit-build.mjs (used by final actual-build HTTP smoke)",
+    "four approved background PNGs, their .meta files, STREET_BASE_01 Prefab/.meta, Scene1CameraController/.meta, all resource registry entries and historical deliverables",
+    "the 70 pre-task DemoScene/demo tracked deletions; none were restored or counted as deletions from this implementation turn"
+  ],
+  "build_relation": "All 11 deletions are development-only scripts. Final successful Creator build and IAB smoke use asset files, not these scripts. No rebuild was needed after script-only retirement.",
+  "preexisting_asset_deletions": {
+    "count": 70,
+    "count_command": "git ls-files -- 'apps/client/assets/DemoScene.scene' 'apps/client/assets/DemoScene.scene.meta' 'apps/client/assets/demo.meta' 'apps/client/assets/demo/**'",
+    "breakdown": "2 DemoScene paths plus 68 demo paths including demo.meta; all 70 paths were already deleted from the working tree before this Client implementation began.",
+    "ownership_basis": "TechPlan v0.1 RESOURCE_REFERENCE_AUDIT.md enumerates all 70 tracked paths individually and classifies DemoScene plus assets/demo contents and Creator .meta as assets of the retired old unit-sample demo. This Client implementation核账ed those exact paths against the Tech list, removed all 21 SpriteFrame, 8 Scene Prefab, and TMX UUID references from the final scene, found no current activity references, and confirmed the current Creator import/build and U01 runtime succeed. These preexisting deletion paths can be included in the relevant implementation submission; they remain preexisting workspace deletions and are not claimed as new work from this turn.",
+    "keeper_prefab": {
+      "path": "apps/client/assets/demo/prefabs/Keeper.prefab",
+      "meta_uuid": "cf9128e5-3256-40d0-9411-1b648549868b",
+      "head_content": "Prefab root/name is Keeper; it references only old keeper_ghost SpriteFrame UUID ca7c5061-11f5-436c-b734-65ec50195181@f9941 from the 21-frame legacy set.",
+      "scene_reference": "Not among the 8 Prefab UUIDs in the old UnitSamples scene; final U01 scene contains no Keeper UUID/path or old frames property.",
+      "active_reference_scan": "rg over current project excluding .git, deliverables, tasks, Library/temp and missing demo files found no Keeper.prefab path or main UUID reference outside the deleted asset; git grep HEAD excluding the asset and its meta likewise found no other project source references. Historical docs/task records are retained and are not active references.",
+      "classification": "Old demo専属Prefab, no active project reference, safe for inclusion with the existing 70 pre-task deletions."
+    }
+  },
+  "qa_scope": "The approved QA Plan v0.2 covers a user-approved Web browser simulated-phone matrix and applicable performance checks after metrics/method approval. Native/physical devices and native app/container platforms are outside the current plan and remain NOT_TESTED; this report does not imply those platforms were later approved."
+}

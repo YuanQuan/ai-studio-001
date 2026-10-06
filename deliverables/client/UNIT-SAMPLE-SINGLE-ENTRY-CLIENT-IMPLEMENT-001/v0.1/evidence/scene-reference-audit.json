@@ -1,0 +1,37 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "scene": "apps/client/assets/UnitSamples.scene",
+  "sha256": "68E1121AD5552D97897DFFC066CC6A7CA735FF51DEC8905AFB4CA0802881A76A",
+  "static_scene_link_checker": {
+    "status": "STATIC_PASS",
+    "objects": 19,
+    "object_references": 26,
+    "structural_errors": 0,
+    "kept_prefab_uuid": "2d697fb3-01f0-4330-a180-a9c162310bf8",
+    "kept_prefab_uuid_occurrences": 1,
+    "frames_property": "absent"
+  },
+  "independent_object_graph_check": {
+    "status": "OBJECT_GRAPH_PASS",
+    "serialized_object_id_references_in_range": true,
+    "nodes": 2,
+    "node_parent_child_and_component_links_reciprocal": true,
+    "errors": 0
+  },
+  "legacy_scene_uuid_scan": {
+    "source": "TechPlan v0.1 RESOURCE_REFERENCE_AUDIT.md exact old frame/Prefab/TMX inventory (21 old SpriteFrame, 8 Scene Prefab, 1 TMX UUID)",
+    "legacy_uuids_scanned": 30,
+    "scene_hits": 0,
+    "keeper_prefab_uuid": "cf9128e5-3256-40d0-9411-1b648549868b",
+    "keeper_prefab_uuid_hits": 0
+  },
+  "engine_build_and_runtime": {
+    "evidence": "SMOKE_REPORT.md and u01-final-build-identity.json",
+    "creator_version": "3.8.8",
+    "build_exit_code": 36,
+    "build_duration_seconds": 17.371,
+    "source_vs_snapshot_asset_bytes": "MATCH_ALL",
+    "actual_web_runtime": "PASS; current scene loaded and U01 menu/entry/controls/return/reentry verified; console errors=[]"
+  },
+  "boundary": "Static UUID and graph checks do not replace formal QA. The linked Creator build/IAB evidence validates this current Web implementation snapshot, not native platforms."
+}

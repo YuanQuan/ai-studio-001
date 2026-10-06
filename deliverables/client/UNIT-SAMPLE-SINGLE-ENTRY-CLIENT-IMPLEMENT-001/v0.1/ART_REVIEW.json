@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "评审对象为Client实现v0.1的最终修复版本。已读取Art五项配置、Task、已批Product v0.2、Client Brief v0.2、四层切图Gate2 v0.3审批、资源登记与CP-COCOS-CLI-BROWSER-20261006补充约束。最终Creator 3.8.8 Web Mobile构建debug=false，u01-final-result.json记录退出码36、2026-10-06T14:18:44.2545054+08:00完成；Master提供的HTTP实际产物为http://127.0.0.1:18039/，来自apps/client/temp/u01-cli-snapshot-20261006/build/web-mobile。独立复核当前Gallery与隔离副本SHA-256均为674858DE20390C1CAB675A28F6BFFA847283E6F1E8D7D23D30A5869E88ACDD81。最终画面使用本目录evidence/u01-final-*.png，不以旧debug构建的失败截图签认修复版。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立核对四张工程PNG与批准美术源PNG及project/ASSET_HANDOFF_REGISTRY.md，逐件SHA-256相同：L01=fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1；L02=3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478；L03=af07fc566d7461acc314e2805b4a1419c44f5d64a7f15da8c5d489be2a29fb1d；L04=8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b。四张保持2172×724、trimType=none及offset=(0,0)，未发生重画、改像素或裁切。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张PNG主UUID及@6c48a Texture2D、@f9941 SpriteFrame子身份均与登记相符，Prefab保留L01_Sky/L02_Mountains/L03_Ground/L04_Foreground从后到前的完整画布及对应SpriteFrame。Prefab SHA-256为2df15d9d1820f4ad9ebc408dc369f191c27157936cea3dab5e18d227a4038ed2，UUID为2d697fb3-01f0-4330-a180-a9c162310bf8；Controller UUID为9ceb8fd6-3853-4688-aeb0-c736616a614e。本轮U10→U01导航收敛保持这组批准资源和身份链。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实际看图对照批准的deliverables/art/moonlit_psd_20261005_v2_raw/overall_from_psd.png与最终u01-final-enter/zoom-in/zoom-out/drag/reset/reenter.png：夜蓝底色、暖月与灯光、远山建筑、柳树地面、桥栏杆和河水前景延续批准画面；未见新增缺层、错层、断接、形变或明显色彩漂移。zoom-in呈现放大构图，drag呈现桥与月亮等前后景相对位移；zoom-out、reset与reenter回到进入时构图。截图支持本实现版本的视觉判断，交互执行详情由Master的实现级冒烟记录说明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "u01-final-menu.png与u01-final-return.png均只显示U01四层场景镜头、批准说明和进入U01入口；运行页标题、操作说明、−/重置/+/返回菜单控件清楚可读，未见旧九项卡片、旧功能标签或旧开发页脚。最终截图没有debug统计面板遮挡。u01-final-ui-isolation.png与初始画面构图一致；本评审核可见视觉状态，不替代UI交互专项判断。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现有背景未加Mask裁切及缩放后的画布显示沿用原四层示例行为；当前批准输入未要求新增Mask，本评审不引入裁切或重画要求。批准源图的既有透明边界继续保留。本轮未制作或输出新美术资产；历史PSD、切图、审批与资源登记保持可追溯。此APPROVED仅为Client实现v0.1的Art专业Review，不等同当前实现Artifact用户批准、正式QA或目标设备视觉验收。"
+    }
+  ],
+  "next_action": "Master整合同版本Client、Tech、QA与Master Review及最终构建/冒烟证据，向用户提交Client实现v0.1审核；本实现具体版本获USER_APPROVED后，再按独立授权QA任务执行正式检查。"
+}

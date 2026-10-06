@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN、TEST_CASES与RESOURCE_REFERENCE_CHECKLIST中的Creator顺序与已批准Tech v0.1一致，并采用已评审Client Brief v0.2两阶段细化：保留Creator可识别的frames property/旧消费者，先由Creator清空21项序列化frames及旧节点/Prefab/TMX引用、保存并关闭重开核验；阶段一通过后才移除property/消费者，再由Creator刷新/编译、保存关闭重开核查unknown property和missing UUID。Creator不能载入/可靠保存即BLOCKED，禁止手改.scene JSON。"
+    },
+    {
+      "severity": "INFO",
+      "message": "引用统计与Tech审计一致：21个旧SpriteFrame UUID，UnitSamples当前场景8个不同旧Prefab主UUID及1个TMX UUID。Keeper.prefab（UUID cf9128e5-3256-40d0-9411-1b648549868b）作为第9个Prefab、无当前Scene命中、需全仓核查的独立候选；测试清单没有将其算进场景引用数。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源检查表包含四层PNG、STREET_BASE_01 Prefab和镜头Controller的路径、SHA-256、Creator主/子UUID及Prefab依赖保留基线；Creator真实导入与运行状态由独立用例核验，不以静态hash/UUID命中替代。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本QA计划和用例都明确尚未执行；Creator导入/保存重开、Web构建、运行和QA环境矩阵缺失时标NOT_TESTED/BLOCKED。QA计划审批与执行Task、TEST_REPORT用户确认和Master最终接受分离，未越过实施或QA门禁。"
+    }
+  ],
+  "next_action": "Tech Lead同版Review通过。Master完成各Owner Review后将QA Plan v0.2提交用户审批；获批及Client实施Artifact满足前置条件后，由独立QA执行任务按获批环境矩阵运行用例并提交TEST_REPORT。"
+}

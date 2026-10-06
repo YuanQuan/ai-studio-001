@@ -1,0 +1,37 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "owner": "product",
+  "summary": "提交 UnitSamples 唯一 U01 与旧九项实验退役清理范围 v0.1；保留四层运行依赖和审批追溯，不改变已批准七项正式内容规格。",
+  "artifacts": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/PRD.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "将当前四层场景镜头示例定义为唯一入口 U01，产品名称与说明统一，不改其已批准的四层、镜头、拖动、缩放和重置语义。", "result": "PASS", "evidence": "PRD.md 第2、3节定义唯一 U01 与原批准语义；本结果只表示产品规格已覆盖，不表示实现通过。"},
+    {"criterion": "明确旧 U01–U09 示例退出运行菜单，其专属代码、场景内容、Prefab、图块、角色和其他运行资源列入逐项依赖清理；旧资源只有在不被新 U01、项目其他功能或 Creator 必要元数据引用时才删除。", "result": "PASS", "evidence": "PRD.md 第2节定义旧九项退役对象和逐项引用核查/删除限制；实际清理与引用扫描尚未执行。"},
+    {"criterion": "明确保留新 U01 所需四层获批 PNG、STREET_BASE_01 Prefab、镜头控制器及资源登记信息；历史 Task、审批记录、Review、产品变更记录不作为运行资源删除。", "result": "PASS", "evidence": "PRD.md 第2节与 CHANGE_IMPACT.md 明确保留资源及追溯记录；尚未验证后续清理结果。"},
+    {"criterion": "逐项列出受影响 Product、UI、Tech Lead、Art、Client、QA 交付物/任务、依赖和需重新审批的范围；已批准 Artifact 保留历史版本，不静默覆盖；六个受影响专业角色对同版草案提交影响 Review。", "result": "NOT_TESTED", "evidence": "CHANGE_IMPACT.md 已列出角色影响、任务/Artifact和审批动作；六方同版Review尚未齐备，Tech/Art/UI/Client/QA Review文件待各Owner提交。"},
+    {"criterion": "提供可复核验收条件：唯一菜单入口标 U01、旧入口和资源引用清零、新 U01 依赖完整、项目文档与资源清单一致；本任务只提交范围规格，不提前修改 Client 实现或删除文件。", "result": "PASS", "evidence": "ACCEPTANCE.md 已逐项定义这些下游验收点并标为待实测；本Product轮仅在任务交付目录新增范围文档。"},
+    {"criterion": "Product、Tech Lead、Art、UI、Client、QA 与 Master 对同版草案完成 Review，Task 与 Approval 保持 USER_REVIEW/DRAFT 直到用户明确批准本版。", "result": "NOT_TESTED", "evidence": "PRODUCT_REVIEW.json 已由Product完成；Tech/Art/UI/Client/QA Impact Review及Master Review尚待对应Owner。审批记录仍待Producer按门禁更新；本文件不宣称整项任务完成。"}
+  ],
+  "assumptions": [
+    "本任务覆盖 UnitSamples.scene 当前旧 U01–U09 实验菜单，不覆盖另一套已批准七项正式内容产品规格。",
+    "资源只有在确认不被新 U01、项目其他功能或 Creator 必需元数据引用后才可删除。"
+  ],
+  "risks": [
+    "Git 工作区已有 DemoScene/demo 删除和场景/脚本编辑，需 Client/Tech 按实际 diff 与引用核查复核。",
+    "四层 U01 的既有 Client 实施任务仍为 BLOCKED；本产品稿不构成实现或运行通过证据。",
+    "Tech/Art/UI/Client/QA Impact Review、Master Review、用户审批、实现验证和 QA 尚未完成。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

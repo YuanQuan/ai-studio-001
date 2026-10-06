@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版UnitSamples.scene由开始基线129个序列化对象收敛至19个，移除110个旧对象；当前场景中21个旧SpriteFrame、8个旧Prefab实例UUID及TMX引用均已解除。独立重读当前Scene确认26个__id__引用均落在19项数组内，无frames或旧单元文本，唯一外部资源UUID为保留的STREET_BASE_01 Prefab UUID 2d697fb3-01f0-4330-a180-a9c162310bf8。当前Scene SHA-256为68e1121ad5552d97897dffc066cc6a7ca735ff51dec8905afb4ca0802881a76a。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Gallery只保留批准的U01入口和四层页面，旧frames消费者/菜单分支已清除。Controller在字段赋值前保持inactive，赋齐layers、viewport及控件引用后再激活，解决首轮IAB发现的按钮绑定时序缺陷；Controller源码与UUID未改。实现级IAB复测覆盖进入、放大/缩小、拖动、重置、UI输入隔离、返回及重入，截图齐全且捕获的console errors为空。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator 3.8.8隔离快照覆盖当前全部assets/settings/package/tsconfig，源与快照资产字节逐项MATCH_ALL；锁定版本构建日志显示完成，官方CLI exit 36符合项目规则中Creator 3.8成功退出码例外。最终构建输出有身份hash并经HTTP loopback及Codex内置浏览器实际加载。缓存写入拒绝和merge_dep默认值告警已记录；在该构建产物成功加载及交互通过的证据下未发现影响目标Web运行的问题。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张批准PNG及其meta、四层Prefab及其meta、镜头Controller及其meta的身份链保持；四层PNG SHA-256、Prefab SHA-256/UUID和Controller UUID与资源登记一致。11个旧Demo专属一次性工具有逐路径无活动调用审计、删除前备份hash及删除后核对；serve-unit-build.mjs保留供实际产物服务。70条既有tracked旧资源删除单独作为任务前状态。"
+    },
+    {
+      "severity": "INFO",
+      "message": "运行画面中背景图像超出绘制的视口边框；本实现复用原四层页面与镜头行为，批准Tech/Client输入未要求新增裁切，且该表现属于既有行为，本次未据此扩大范围。该观察不影响本技术Review结论；后续如需调整应由Art/Product按既有视觉范围确认。当前IAB冒烟不代表正式QA、触屏双指、原生平台或设备性能验证通过。"
+    }
+  ],
+  "next_action": "由Master与Producer核对同版专业Review并提交实现Artifact进入USER_REVIEW；仅在实现Artifact获得用户批准后，另行解锁QA Task执行已批准测试计划。"
+}

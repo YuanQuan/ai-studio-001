@@ -1,0 +1,47 @@
+{
+  "id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "title": "唯一 U01 单元示例资源引用审计与清理技术方案",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": null,
+  "objective": "基于用户已批准的唯一 U01 产品范围 v0.2，审计旧九项样例在 Cocos Creator 工程、UnitSamples 场景、脚本、Prefab、构建和 Creator 元数据中的真实引用，区分可移除旧运行资源与四层 U01/共享/身份追溯保留资源，并提交可执行的安全清理与验证方案；本任务不实施代码改动或删除资源。",
+  "inputs": [
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md、ACCEPTANCE.md、CHANGE_IMPACT.md（USER_APPROVED；Approval见tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL.json）",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md、RESOURCE_PATH_AND_NAMING_SPEC.md（USER_APPROVED）",
+    "project/ASSET_HANDOFF_REGISTRY.md 与四层 PNG、STREET_BASE_01 Prefab、镜头控制器实际路径/.meta/UUID",
+    "apps/client/assets/UnitSamples.scene、UnitSampleGallery.ts、当前Git差异和git ls-files中旧资源路径",
+    "tasks/UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001/TASK.json（旧实现任务仍BLOCKED）与既有Art/Tech/QA/Master Review事实"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/RESOURCE_REFERENCE_AUDIT.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/QA_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "技术方案以已批准产品范围为唯一产品事实：四层镜头样例作为UnitSamples.scene唯一U01；同场景返回/重入；没有独立Lab Scene、新玩法、服务端/API、额外依赖或视觉资源改动。",
+    "资源审计列出旧U01–U09的代码/场景节点/Prefab/图块/角色/序列帧及其他候选运行资源的真实路径、Creator UUID/引用位置、当前Git工作区删除状态和全仓搜索证据，并分类为旧样例专用可删候选、U01保留、其他功能共享、身份/历史资料或未决；不以目录名或已删除状态代替引用证明。",
+    "明确清除旧scene的21项frames序列化引用及旧场景节点/Prefab UUID、旧菜单分支和旧可见文案的先后步骤；逐项解除引用后才移除已证明旧样例专用的资源；所有无法核清的路径列为阻塞，不猜测其可删除。",
+    "逐项核对并保护获批四层PNG、STREET_BASE_01 Prefab、镜头控制器的hash/路径/主子UUID/.meta/登记链；给出Creator重导入、场景解析、构建和运行检查的可复验证据要求，未运行项标NOT_TESTED。",
+    "方案明确当前已存在的DemoScene/demo删除及Scene/Script修改是本轮前工作区状态；本任务不改代码/场景/资源/登记表，不把既有diff归为本Task产出。",
+    "Product、Art、Client、QA与Tech同版Review及Master Review齐全；具体技术方案须获用户USER_APPROVED后Client才可据其执行清理。"
+  ],
+  "dependencies": [
+    "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户于2026-10-06明确批准产品范围PRD v0.2；该批准仅授权Master启动本Tech资源引用清理规格任务，不授权Client实现、资产删除或QA运行。",
+    "Tech Lead的Required Artifact需保留可追溯逐路径引用审计；所有现有未提交文件由Owner区分其原始来源与本轮产出。",
+    "下游Client实施开工包与QA计划修订须引用用户已批准的本Tech Artifact；用户批准前不得清理资源。",
+    "2026-10-06T12:58:58+08:00 开始真实资源引用审计。起始证据：产品范围 ARTIFACT_APPROVAL.json 为 USER_APPROVED；git status 显示 DemoScene.scene/.meta 与 apps/client/assets/demo/** 已有工作区删除，UnitSamples.scene、UnitSampleGallery.ts、镜头脚本和资源登记有既有修改；git ls-files 仍列出这些 tracked 路径。此后只读检查引用和 Creator 身份，未改工程资源。",
+    "2026-10-06T13:03:46+08:00（Tech Lead提交Review）：v0.1 TECH_DESIGN.md、RESOURCE_REFERENCE_AUDIT.md、DELIVERABLE.json、TECH_REVIEW.json已产出。实际审计起止12:58:58–13:03:46 +08:00，墙钟耗时4分48秒（不含后续Producer/专业Review等待）。静态发现：当前工作树UnitSamples.scene仍有21旧frames UUID、9类Prefab与TMX引用；四PNG/Prefab/Controller hash/Creator身份静态一致。Creator打开/重导入/构建/运行NOT_TESTED；无代码、场景、资源或登记表编辑。交付进入REVIEW，待Master组织其余角色同版Review。 2026-10-06T13:08:43+08:00（Producer核验）：Task 10项Required路径均存在且与DELIVERABLE.artifacts一致；Tech/Product/Art/Client/QA/Master六份Review的reviewer身份映射正确、decision均APPROVED，六项交付验收结果完整（5 PASS、1 NOT_TESTED）。Task推进USER_REVIEW，等待用户对技术方案v0.1作决定；仅审批技术方案，不授权Client实现、删除资源或QA运行。"
+  ]
+}

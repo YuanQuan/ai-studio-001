@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "静态审计证实当前UnitSamples.scene仍序列化21个旧frames UUID、九类旧Prefab依赖和一个TMX UUID；四层U01资产UUID链与登记和Creator Library静态索引一致。清理方案先要求解除引用并在Creator重开核对，然后才处理旧资产。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator编辑器导入、场景解析、构建和实际运行未在本Task测试。相关验收标为NOT_TESTED，必须由后续获批Client实施与QA任务补充证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "工作区已有旧demo资产删除及代码/场景变更。本方案将其作为既有状态记账，没有修改这些文件。"
+    }
+  ],
+  "next_action": "由Master组织Product、Art、Client、QA和Master各自完成同版Review；同版Review通过后提交技术方案v0.1供用户审批。获批前不得据此删除资源或推进Client实现。"
+}

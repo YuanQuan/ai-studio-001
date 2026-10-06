@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN、TEST_CASES 和 RESOURCE_REFERENCE_CHECKLIST 与 Client Brief v0.2 的 Creator 顺序一致：先保留可识别的 frames property/消费者，由 Creator 清空21项序列化值和旧节点引用，保存并关闭重开核验；阶段一通过后才移除代码 property/消费者，再经 Creator 刷新/编译、保存关闭重开核验 unknown property 与 missing UUID。不能证明第一阶段时为 BLOCKED，禁止手改.scene JSON。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用例准确区分当前 UnitSamples.scene 的21个旧 SpriteFrame UUID、8个不同旧 Prefab主UUID和1个TMX主UUID；Keeper.prefab作为未命中当前场景的第9个目录候选另作全仓活动引用检查。资源清单包含对应路径与身份链，未把 Keeper 计为场景残留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "计划覆盖 Product AC-01–AC-10 的菜单/文案、同场景进入返回重入、镜头行为、引用清理、资源删除依据、保留身份、文档及历史留存，并把静态扫描、Creator导入/序列化、构建运行证据分别记录。所有用例仍是 NOT_TESTED；该计划和 Tech静态审计均不构成测试通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Client Brief v0.2 在计划中明确标为 DRAFT/待批草案，只用于交叉核对。平台矩阵与性能预算未获批前不设新阈值或性能 PASS；实体手机、小程序和发布平台保持排除/NOT_TESTED。计划审批与 QA 执行授权分离。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Task 与 DELIVERABLE 指向 v0.2 的10个 Required 路径（四项计划产物、QA/Client/Tech/Product/Master 五份同版 Review、Approval）；当前仅本QA产物完成，其他角色Review与最终用户审批继续待办。v0.1文件及历史Review未复制或覆盖。"
+    }
+  ],
+  "next_action": "QA计划 v0.2 的QA Review通过。待Client、Tech、Product、Master完成各自同版Review并由Producer核验Required/审批状态后，提交用户审批；本Review不执行QA或授权TEST_REPORT。"
+}

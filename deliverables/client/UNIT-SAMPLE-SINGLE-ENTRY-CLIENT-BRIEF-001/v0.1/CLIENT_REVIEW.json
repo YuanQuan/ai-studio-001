@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立核对 Required 文档与 DELIVERABLE.json：FEATURE_BRIEF.md采用已批准Product/Tech输入，菜单文案、同场景导航、四层Prefab/Controller复用、测试边界和性能风险清楚；标明当前Brief仅是规划、实现需另有授权。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md按Tech Audit列齐21个旧 SpriteFrame UUID及各自PNG路径、当前UnitSamples.scene命中的8个不同Prefab主UUID和1个TMX UUID；另将旧demo目录第9个Prefab Keeper UUID `cf9128e5-3256-40d0-9411-1b648549868b`单列为无场景命中、仍需全仓核验的删除候选。70条预存tracked删除路径逐项留有待核账标记。"
+    },
+    {
+      "severity": "INFO",
+      "message": "WORKSPACE_BASELINE_AND_VALIDATION.md记录Client Task实际开始证据与开始时D/M/??状态；既有源文件差异与本Task规划Artifact区分清楚。Creator载入失败时BLOCKED、禁止手改Scene JSON/删meta绕过，以及静态匹配不替代Creator导入/构建/运行验证的限制均有说明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DELIVERABLE.json所列Artifact路径与本版本目录一致；验收结果没有把Creator/运行/QA未执行事项宣称通过。产品范围和Tech方案的USER_APPROVED事实与上游记录一致。"
+    }
+  ],
+  "next_action": "Client Brief自审通过。结合已提交的Product、Art、Master Review，待Tech与QA同版Review齐全后交Producer核验Required交付物和审批门禁，再进入本Brief用户审批；本Review不授权代码、场景、资源修改或QA执行。"
+}

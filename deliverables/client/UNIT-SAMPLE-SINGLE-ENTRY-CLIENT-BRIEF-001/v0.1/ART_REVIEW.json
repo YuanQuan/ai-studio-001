@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 第2、3、5节和 RESOURCE_CLEANUP_CHECKLIST.md / WORKSPACE_BASELINE_AND_VALIDATION.md 明确保留 STREET_BASE_01 四层 PNG、Prefab、镜头 Controller 与现有镜头语义，并禁止换图、改图、移动资源或重建 UUID。清单与 project/ASSET_HANDOFF_REGISTRY.md 的 Gate2 v0.3 记录相符：L01–L04 各自稳定资产 ID、SHA-256、PNG 主 UUID、Texture2D @6c48a、SpriteFrame @f9941、Prefab UUID 2d697fb3-01f0-4330-a180-a9c162310bf8 及 Controller UUID 9ceb8fd6-3853-4688-aeb0-c736616a614e 均作为保留链；没有提出新的视觉资产或美术改图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 将 demo PNG、Prefab、TMX、DemoScene 和对应 .meta 作为逐项核验的旧运行资源候选，并要求先通过 Creator 解除引用、保存重开、全仓路径/UUID扫描及专用归属确认后才可纳入后续删除；未核清、共享或 Creator 必需项保持保留。清单特别说明 Keeper.prefab 虽未命中当前场景，仍须另作全仓引用检查。WORKSPACE_BASELINE_AND_VALIDATION.md 与 FEATURE_BRIEF.md 也指出现有工作区删除不代表引用已解除。候选边界没有把 U01 四层图组或其 Prefab/Controller列入删除目标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 第1、6、8节和 DELIVERABLE.json 将本版限定为实施规划，不改代码、场景、资源或项目说明，也不执行 Creator 导入/构建/QA；已批准四层 PSD/PNG 的历史 Gate2、资源登记及历史任务/Review/Approval/变更记录继续留档。资产交付与审核归档未被当作旧示例运行资源。"
+    }
+  ],
+  "next_action": "Art 对 CLIENT-BRIEF-001 v0.1 的美术影响边界 Review 通过。后续独立 Client 实施 Task 获授权后，按 Checklist 的逐项引用门槛清理；实施前后复核四层正式 PNG、Prefab、Controller 的内容哈希与 Creator 身份链。任何涉及获批图组的视觉改动或身份/路径变更先停止并提交变更审批。"
+}

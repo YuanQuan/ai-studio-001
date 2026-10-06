@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN、TEST_CASES与RESOURCE_REFERENCE_CHECKLIST均遵循Client Brief v0.2两阶段顺序：先保留可供Creator识别的frames property/消费者，由Creator清理21项场景序列化frames及旧节点引用、保存关闭重开核验；只有阶段一通过后才移除代码property/消费者，并进行第二次Creator保存重开核验。失败为BLOCKED，禁止手改.scene JSON。"
+    },
+    {
+      "severity": "INFO",
+      "message": "同场景UnitSamples.scene承载唯一U01的进入/返回/重入被覆盖。文档准确区分当前场景命中8个旧Prefab主UUID与tracked目录的第9个Keeper候选；Keeper未计入场景命中，需单独全仓审计。"
+    },
+    {
+      "severity": "INFO",
+      "message": "执行授权门禁要求QA计划和Client Brief经同版Review及用户审批、Client实施Artifact完成并获适用Review/用户确认，资源/环境矩阵与证据可追溯；计划未授权QA执行，未执行均保持NOT_TESTED，范围没有扩大到实体设备或未批性能阈值。"
+    }
+  ],
+  "next_action": "Client交叉Review通过；继续收集其他专业同版Review。Client Brief v0.2本身仍需完成Review和用户审批，随后仍需单独实施与QA执行授权。"
+}

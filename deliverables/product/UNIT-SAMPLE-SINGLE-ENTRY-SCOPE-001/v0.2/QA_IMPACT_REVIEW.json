@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "AC-01、AC-04 的菜单及页面文案验收可按指定页面截图/画面和完整可见文字清单逐项核对标题、说明、按钮、旧文案与退役条目；证据形式足以形成可复核结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "AC-02、AC-03 可按已批准四层及镜头规格，结合 Creator 引用/导入检查与运行证据验证进入、返回同一 UnitSamples.scene 菜单、再次进入、引用与实例完整性、拖动、缩放、重置及控件输入隔离。正式执行前仍需确认适用的已批准参数和测试环境；本 Review 不构成测试结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "AC-05、AC-06、AC-07 的判据可由 Client/Tech 提交的静态引用扫描、Creator 资源检查、逐项删除清单、哈希/UUID/.meta/Prefab/Scene 引用及登记差异验证；按产品稿要求保留未能证明可删除的资源，判定边界明确。"
+    },
+    {
+      "severity": "INFO",
+      "message": "AC-08、AC-09、AC-10 可通过对照批准的七项产品 Artifact 与审批记录、取消任务及历史交付，以及项目运行说明变更前后内容进行文件/版本审计。AC-10 的适用说明文件在 PRD/CHANGE_IMPACT 中已指向 project/unit_tests/UNIT_SAMPLES_v0.1.md，后续执行可据此核对。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "已批准的 UNIT-MENU-SCENE1-QA-PLAN-001 v0.1 只覆盖四层场景行为；其用例按旧导航/场景结构设计，并明确排除其他单元。它不能覆盖本版唯一 U01 菜单与文案、同场景返回/重入、旧九项实现/序列化引用清理、删除资源安全、说明文档和历史留存验收。AC-03 的拖动/缩放/重置部分可复用其获批输入、视口和性能门禁，但需将入口与场景上下文更新为本版结构。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "应由 Master 建立独立 QA 计划修订/审批任务（或经 Master 明确纳入一个正式任务的新增 Required Artifacts），将 AC-01–AC-10 映射为新的用例和证据要求，引用并保留 QA Plan v0.1 历史版本；新计划经专业 Review、用户审批后再执行。不得仅凭本影响 Review 修改已批准计划或启动本次清理 QA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "AC-11 属于产品交付/评审与审批状态门禁，不属于 AC-01–AC-10 的实现 QA 测试范围；由 Product/Master/Producer 按职责检查即可，不要求 QA 运行测试。"
+    }
+  ],
+  "next_action": "Master/Producer 完成同版评审及用户审批流程；批准后安排 Tech/Client 实施，并由 Master 创建独立 QA 计划修订审批任务。QA 计划获批且实现版本通过必要 Review、用户确认后，再按新计划执行并提交 TEST_REPORT。"
+}

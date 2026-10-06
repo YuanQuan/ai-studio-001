@@ -1,0 +1,36 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "评审对象是当前Client实现v0.1及其最终修复版构建证据。已读取实施Task、已批QA Plan v0.2及其用例/资源检查清单、Product验收、Client实施报告/DELIVERABLE、最终场景与清理审计、Tech/Art Review、Cocos共享skill及CP-COCOS-CLI-BROWSER-20261006补充方法。旧QA计划的Inspector/禁止手改Scene方法由用户授权的补充约束替代，原功能语义、资源身份、实现用户审批与正式QA门禁继续有效。当前实现可提交USER_REVIEW，本Review不解锁正式QA执行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立核验u01-final-build-identity.json所列22个当前源资产与22个隔离快照资产逐件SHA-256一致，35个构建文件及9张最终截图SHA-256亦无差异。Gallery SHA-256为674858de20390c1cab675a28f6bffa847283e6f1e8d7d23d30a5869e88acdd81；Scene为68e1121ad5552d97897dffc066cc6a7ca735ff51dec8905afb4ca0802881a76a。来源与快照资产文件总数均22，证据覆盖现存全部资产；最终Creator 3.8.8 Web Mobile构建debug=false，结束日志17371ms/Finished、2026-10-06T14:18:44.2545054+08:00退出36及当前实际输出相互对应。debug级build-script SIGTERM行发生于脚本执行/复制成功之后，最终完成及实际运行证据支持本次目标Web构建结论；不凭该单行或父进程退出作成功/失败判断。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Master的SMOKE_REPORT记录loopback HTTP实际最终产物在Codex内置浏览器以真实鼠标/Canvas输入完成唯一菜单、进入、放大/缩小、拖动视差、重置、UI拖动隔离、返回、重入，工具捕获console errors为空。独立看图核菜单/进入/放大状态，批准标题、说明、唯一入口和镜头控件可见；最终返回截图与菜单hash一致，缩小/重置/UI隔离/重入截图与初始进入hash一致，拖动和放大截图有不同hash，与记录的状态变化吻合。截图hash只能证明这些画面身份及一致性，不能证明未执行的所有手势、实例计数、资源释放、边界或性能。"
+    },
+    {
+      "severity": "INFO",
+      "message": "首轮缩放/重置失败证据保留，未倒写PASS。已审查Gallery中Controller节点inactive→addComponent并赋全layers/viewport/UI根/按钮→active→reset的修复顺序，与onEnable绑定按钮Map的原因吻合；最终源码重新构建后由Master复验操作成功，Controller源码及身份保持。scene-reference-audit.json与Tech Review记录19对象/26索引引用、对象关系核验、21旧frames+8个场景Prefab+TMX共30 UUID零命中及唯一保留Prefab；Creator导入/实际加载与静态证据分别列明，静态PASS不替代引擎或正式QA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源清理证据已校准：70条DemoScene/demo删除早于本Task，最终清理审计逐路径关联已批Tech清单、当前引用解除及最终构建/运行，确认可纳入相关实现提交但不记本轮新增成果；第9个Keeper明确不计入场景8个Prefab，另有HEAD身份、旧keeper_ghost依赖及无活动引用核账。独立检查11个本轮退役工具均已不存在，其临时备份SHA与resource-cleanup-audit逐项一致，serve-unit-build.mjs保留。四PNG/Prefab/Controller/meta仍在上述资产身份列表，Art与Tech同版Review通过。历史任务、七项产品规格及原审批链须由Master/Producer按最终提交范围核对留存，本Review不将历史旧测试当作新实现证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "正式QA尚未执行。当前1040×1296桌面IAB冒烟不是用户批准的Web模拟手机矩阵；QA Plan v0.2要求浏览器/OS/模拟视口/DPR/渲染后端/输入方式形成版本化矩阵并获批，适用性能还须锁定且批准指标、工具、采样方法、基线和预算。project/quality/PERFORMANCE_BUDGET.md是旧DEMO-001待审批预算，不能替代U01预算或把其中手机目标直接套用本Task。完整镜头边界/取消、触屏双指、重复进入的实例与释放等计划要求尚无正式测试结论，不能由本冒烟预填PASS；必要矩阵/预算或工具能力缺失时受影响项保持NOT_TESTED/BLOCKED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本Review仅为实现提交前的QA专业审查，未运行独立QA Task、未生成TEST_REPORT、未声明完整功能/视觉/性能通过。现行QA范围遵循已批Plan与CP-UNIT-MENU-WEB-TEST-GATE-002：Web模拟手机矩阵与适用性能；实体手机、原生端、小游戏容器和发布验证不在当前计划范围，保持NOT_TESTED，不能表述为后续已批准范围。实现Artifact用户批准也不代替QA执行授权或TEST_REPORT用户确认；当前任务不得据此直接DONE。"
+    }
+  ],
+  "next_action": "Master整合同版专业Review并向用户提交Client实现v0.1，Producer记录具体版本的用户决定。正式QA执行须同时具备本实现USER_APPROVED、独立获授权QA Task、明确被测源码/构建/资源身份、获批Web模拟手机环境矩阵及适用性能指标/方法/预算；可先推进无依赖的QA准备，缺失前置不得开始相应正式运行验收或宣称整体PASS。正式TEST_REPORT另行提交用户确认。"
+}

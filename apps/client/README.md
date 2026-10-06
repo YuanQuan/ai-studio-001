@@ -1,19 +1,15 @@
-# 百鬼夜市 Demo Creator 工程
+# 百鬼夜市 Cocos Creator 工程
 
-## 当前可运行的单元样例
+## 当前运行入口
 
-用 Cocos Creator 3.8.8 打开本目录，双击 `assets/UnitSamples.scene`，预览当前场景。菜单可进入 U01–U09 九个独立样例，操作与边界见 `../../project/unit_tests/UNIT_SAMPLES_v0.1.md`。旧 `DemoScene.scene` 是已取消整体 Demo 的历史静态场景。
+本工程当前只提供 `UnitSamples.scene` 中的 U01 四层场景镜头示例。启动页面显示“U01 四层场景镜头”，说明为“查看四层场景视差，并拖动、缩放或重置镜头。”；按“进入 U01”打开四层背景，可拖动视差、缩放、重置并返回菜单后再次进入。旧九项单元样例已从活动菜单、Gallery 实现和场景中退役；历史产品说明、任务、评审与审批记录仍保留在各自交付目录。
 
-Web Mobile 构建时将 `UnitSamples.scene.meta` 的 UUID 设为 `startScene`；本地构建后可运行 `node tools/serve-unit-build.mjs`，在浏览器打开 `http://127.0.0.1:8765/`。`tools/create-unit-samples-scene.mjs` 仅用于初次创建场景，已存在场景时会拒绝覆盖。
+## 开发与运行
 
-唯一可运行工程入口：从仓库根目录在 Cocos Creator **3.8.8** 中打开 `apps/client/`。根目录的 `client/` 仅保留版本标记与组织说明，不是另一个 Creator 工程。
+使用项目锁定的 Cocos Creator 3.8.8 打开 `apps/client/`，场景入口为 `assets/UnitSamples.scene`。页面复用 `assets/units/background/prefabs/pf_street_base_01.prefab`、四张已登记的背景 PNG 和 `assets/labs/menu/scene1_camera_controller.ts`；这些正式资产的路径、哈希和 UUID 以 `project/ASSET_HANDOFF_REGISTRY.md` 及对应交付记录为准。
 
-工程基于本机 Creator 3.8.8 内置 `empty-2d` 模板创建。`assets/demo/` 中的 21 张 PNG 来自已获批准的 `deliverables/art/ART-ASSET-DEMO-001/v0.2/`；三组目录 `scenes/`、`props/`、`characters/` 保持源文件名。Creator 首次打开后生成 `.meta`，不要手工改写 UUID。
+Web Mobile 构建后，可从工程目录运行 `node tools/serve-unit-build.mjs`，由仅监听 `127.0.0.1:8765` 的本地服务提供实际 `build/web-mobile` 输出。Codex 内置浏览器运行检查应关联本次构建版本，并记录加载、菜单、进入/返回/重入、拖动/缩放/重置及 UI 输入隔离证据。浏览器 Web 结果不代表原生、小游戏容器或目标设备性能通过。
 
-`assets/DemoScene.scene` 由 Creator 保存的空白场景扩展为静态排布，包含 17×17 等距 TileMap、两桥、阎罗殿、目标摊位两态、背景摊位、角色示意和固定路径锚点。Creator 已导入 `assets/demo/tilemaps/NightMarket.tmx` 和 `assets/demo/prefabs/` 的九个静态 Prefab。场景已关联十二个 Prefab 实例：两桥、阎罗殿、目标摊位、五个背景摊位和三名顾客示意。原 225 个 Sprite 地表草稿已在 TiledMap 可见后移除。项目设计分辨率为 720×1280 竖屏、适配宽度。
+## 工程维护
 
-已取得旧 17×17 静态场景的 Creator Web 预览截图，见 `deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/screens/creator-preview-before-exit-alignment.jpg`。此图拍摄于出口桥路线微调之前；旧场景最终路线、最近／最远镜头和手机触控未完成验证。Web 预览入口为编辑器顶部预览按钮；Web 构建入口为 Creator 的「项目 → 构建发布 → Web Mobile」。旧 `DemoScene.scene` 没有交互代码；本轮相机拖拽、缩放、修复和角色移动样例位于 `UnitSamples.scene`。
-
-`tools/build-static-scene.mjs`、`attach-tiledmap.mjs`、`export-static-prefabs.mjs`、`prune-disabled-ground.mjs` 和 `link-static-prefabs.mjs` 是一次性装配脚本，不要对已在 Creator 编辑的场景重复运行。`calibrate-static-scene.mjs` 用于已迁移前的普通静态节点，Prefab 实例关联完成后不要再次运行。`validate-static-scene.mjs` 检查场景引用、TileMap 和 Prefab 实例；`render-static-layout.py` 从资源拼出评审用镜头构图图，不等同于 Cocos 运行截图。校准证据与状态见 `deliverables/client/CLIENT-CALIBRATION-DEMO-001/v0.3/`。
-
-Creator 的 `library/`、`temp/`、`local/`、`build/`、`node_modules/` 为本机生成内容，不提交到仓库。
+根目录 `client/` 仅保留版本标记与组织说明，不是另一个 Creator 工程。`assets/demo/` 与旧 `DemoScene.scene` 已从活动样例退役；工作树中既有删除必须按 Client 实施报告和 Git 基线核账，不能把预存删除误记为本轮产出。`tools/` 仅保留当前Web构建静态服务 `serve-unit-build.mjs`；依赖旧DemoScene与`assets/demo/`的一次性场景装配/校准脚本已按资源审计及授权退役，原件哈希备份位置见Client实施报告。Creator 的 `library/`、`temp/`、`local/`、`build/`、`node_modules/` 为生成内容，按项目忽略规则管理。

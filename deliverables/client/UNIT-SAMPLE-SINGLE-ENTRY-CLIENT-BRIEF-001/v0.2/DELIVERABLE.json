@@ -1,0 +1,62 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "owner": "client",
+  "summary": "v0.2 Revision：完成唯一 U01 客户端实施边界草案、旧资源逐项清理Checklist、Task开始时工作区基线与未来验证顺序。本Brief仅规划，不改代码/场景/资源、不执行Creator或QA。",
+  "artifacts": [
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/RESOURCE_CLEANUP_CHECKLIST.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/WORKSPACE_BASELINE_AND_VALIDATION.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/PRODUCT_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/QA_REVIEW.json",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.2/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "FEATURE_BRIEF遵循已批准Product v0.2与Tech v0.1，明确唯一U01文案、同场景入口/返回/重入、现有四层镜头依赖和不新增功能/Scene/依赖边界。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md第1至3节列出唯一文案、复用UnitSamples/Gallery/Prefab/Controller、依赖方向及后续建议；文档首段标明DRAFT、审批条件和不授权实现。"
+    },
+    {
+      "criterion": "资源Checklist逐项核对旧场景21项SpriteFrame UUID、8个Scene命中的Prefab UUID、1个TMX UUID，以及旧目录第9个无Scene命中Prefab候选；资源路径与UUID可复核。",
+      "result": "PASS",
+      "evidence": "RESOURCE_CLEANUP_CHECKLIST.md列21帧UUID路径、8个场景命中Prefab主UUID与TMX主UUID，并单列第9个Keeper候选；70条tracked候选依据git ls-files pathspec命令核对，Tech v0.1 Review中的69保留为历史意见。"
+    },
+    {
+      "criterion": "正确区分既有工作区差异、当前场景仍残留的引用、逐项可删前置门禁和四层保留资产身份链。",
+      "result": "PASS",
+      "evidence": "基线文档区分既有D/M/??差异；Checklist明确先在Creator中保留脚本frames属性、清空场景序列化值并保存关闭重开，核验通过后才移除代码属性/消费者；四层资源身份链保留。"
+    },
+    {
+      "criterion": "定义Creator导入、场景解析、构建、运行和交互的可复核未来证据；Creator不能载入时明确BLOCKED且禁止手改场景JSON/删meta绕过。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF与WORKSPACE_BASELINE定义Creator两阶段保存/重开核验；Creator不能载入或可靠保存时BLOCKED，禁止手改.scene JSON或删.meta。"
+    },
+    {
+      "criterion": "当前Brief Task只提交规划Artifact，不实施代码/场景/资源变更、不执行QA。",
+      "result": "PASS",
+      "evidence": "v0.2 Task实际只更新本Brief的文档/流程Artifact，不执行工程修改、Creator操作、构建或QA；v0.1及其Reviews保持历史。"
+    },
+    {
+      "criterion": "未验证的实现/运行结论保持NOT_TESTED，Brief审批与后续Client实施授权分离。",
+      "result": "NOT_TESTED",
+      "evidence": "NOT_TESTED：Creator打开/引用清除/保存重开、代码修改、构建及运行验证均属于未来单独获批实施任务。"
+    }
+  ],
+  "assumptions": [
+    "Product v0.2与Tech v0.1已USER_APPROVED，允许本Brief消费其范围和审计。",
+    "UnitSamples.scene当前命中8个不同旧Prefab主UUID和1个TMX主UUID；demo目录跟踪9个Prefab，其中Keeper不在当前场景命中表，需全仓审计。",
+    "git ls-files -- 'apps/client/assets/DemoScene.scene' 'apps/client/assets/DemoScene.scene.meta' 'apps/client/assets/demo.meta' 'apps/client/assets/demo/**' 返回70条：DemoScene相关2条、demo路径68条（含demo.meta）。"
+  ],
+  "risks": [
+    "旧资源工作区删除早于本Task，而场景仍有21帧、8个Prefab和1个TMX序列化引用。",
+    "Creator无法载入或可靠保存第一阶段清理时必须BLOCKED；禁止手工编辑场景JSON或删除.meta绕过。",
+    "Keeper.prefab未见当前场景命中，需全仓确认归属后再决定。",
+    "Creator、构建、运行及QA尚未执行；当前只是实施边界计划。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

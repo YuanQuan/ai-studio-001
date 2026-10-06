@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2明确响应v0.1 UI Review MAJOR：PRD第2节逐字指定移除旧标题/副标题/页脚，改用唯一标题“U01 四层场景镜头”、只讲四层镜头操作的说明和“进入 U01”按钮；PRD第3.1节明确可见文案基线及禁止残留内容。AC-01核验返回菜单的标题、说明、入口及旧卡片/副标题/页脚，AC-04进一步核验菜单和运行页全部标题、说明、脚注、状态和按钮文字，并要求Client提供完整可见文字清单与运行画面供QA核对。CHANGE_IMPACT也记录了旧文字事实、处理方式、验收位置和本次UI复审要求。该MAJOR已明确闭环，验收具有可核对证据形式。"
+    },
+    {
+      "severity": "INFO",
+      "message": "标题、进入、返回和重入状态一致且可验收：菜单标题和唯一入口文案固定；进入页只能展示四层背景、获批镜头操作及必要导航；返回后回同一U01菜单且所有可见文案仍符合范围；重入无镜头状态残留或重复对象。PRD第2-3节及AC-01至AC-04覆盖了这些状态。Creator缺Prefab/图层结构不完整时的提示属于当前U01依赖状态，不属于旧样例文案。"
+    },
+    {
+      "severity": "INFO",
+      "message": "七项正式内容的范围边界保持清晰。PRD第1、4节保留 UNIT-MENU-PRODUCT-001 v0.2 的七项内容语义、审批和历史Artifact，明确当前UnitSamples菜单可达性不在本次承诺内，未来接入需独立获批范围；本次没有修改已批准 UNIT-MENU-UI-SPEC-001 v0.2 的七项UI结构、状态、组件复用或资源生产门槛。"
+    }
+  ],
+  "next_action": "UI同版影响评审通过；提交 Master Review 与用户审批。用户批准前不得据此实施菜单/资源清理。"
+}

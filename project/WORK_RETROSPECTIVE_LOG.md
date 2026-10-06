@@ -133,3 +133,66 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Continuity check：治理Task无遗留Required/Review门禁，已DONE。U01 Client Implementation仍IN_PROGRESS并有Master报告的本轮实际制作；但Client Artifact当前未反映110对象映射，故该项证据待同步/核实。正式QA仍未执行，不记录QA通过或实现完成；后续继续当前Client制作并更新Artifact，再按批准的QA计划及门禁推进。
 
 更正：Game治理commit为af4fd2ade8f38342603092b2bdcc60c30142daec。14:02:20首进程与14:06:15.625–14:06:49.203补测为不同进程；33.578秒为补测进程窗口，其中build10.814秒，exit36表示CLI成功。先前4分29秒只是跨两次探测的观察窗口。
+
+### WR-20261006-002｜单元示例唯一 U01 产品范围 v0.2 送用户审阅
+
+- Owner / 结果 / 证据 / 门禁：Product提交 v0.2 PRD、ACCEPTANCE、CHANGE_IMPACT、DELIVERABLE；Product、Tech Lead、Art、UI、Client、QA、Master 同版Review均APPROVED，12/12 Required存在。Task与Approval进入USER_REVIEW，等待用户决定；Client实现及资源删除未解锁。v0.1 UI Review的MAJOR意见已由v0.2回应，v0.1审批快照留存。证据见 `deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.1/UI_IMPACT_REVIEW.json`、`tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL_v0.1.json`、v0.2目录全部Required、当前Task与Approval。
+- 起止时间与耗时：TASK_STARTED登记为2026-10-06 12:41:14，Producer于12:51:01（Asia/Shanghai）核验全部Review并送USER_REVIEW，两登记节点相隔9分47秒。该间隔含Artifact产出、专业/Master Review和门禁核验，不能视作Product制作耗时；各阶段及Review用时、用户等待时长未知。
+- 速度与原因：尚无同类产品范围修订的可靠基线，不判断快慢。可观察到v0.1 UI MAJOR触发一次Revision；其意见聚焦旧菜单可见文字与返回状态验收，v0.2增加明确基线并由同版Review确认闭环。不能从总间隔归因返工或角色效率。
+- 建议与复核：Product在后续涉及菜单退役的规格开稿时列出当前标题、副标题、页脚及返回/重入文案清单，预期减少UI验收遗漏；代价是开稿多一次文案盘点，复核点为下一个菜单类Product Review。Producer在用户批准后再核Client/资源清理依赖是否齐备，避免把范围审批误当实施许可；复核点为本Task后续下游解锁。
+- 后续复核：本版目前等待用户审批；是否减少后续返工待下游实施复核。
+
+### WR-20261006-003｜单元示例唯一 U01 v0.2 用户批准
+
+- Owner / 结果 / 证据 / 门禁：用户明确“批准”产品范围PRD v0.2；Producer将Artifact Approval记为USER_APPROVED、Task记为DONE。12/12 Required存在，Product/Tech/Art/UI/Client/QA/Master同版Review均APPROVED。批准只授权Master新建Tech Lead资源引用清理规格Task；Client实现、资源删除和QA运行未授权/未执行。v0.1 UI MAJOR退回快照保留。证据：`tasks/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/ARTIFACT_APPROVAL.json`、`ARTIFACT_APPROVAL_v0.1.json`、v0.2 Required目录、`project/APPROVAL_LOG.md`。
+- 起止与耗时：本周期从2026-10-06 12:51:01 +08:00送入USER_REVIEW，到用户明确批准后Producer于12:57:00登记，相隔5分59秒。用户回复的原始精确时间未提供，故用户等待时长未知；该间隔是两个登记节点，不代表用户审阅耗时。此前产品起草与Review周期见WR-20261006-002。
+- 速度及原因：无同类用户审批等待基线，无法判断快慢；现有证据只表明送审后约6分钟内收到明确批准，不推断因果或用户等待时长。
+- 建议与复核：Master按批准边界新建Tech Lead资源引用清理规格Task，并明确其Required包含旧Scene/Prefab/脚本引用盘点和保留资源身份核验；预期让后续清理依赖可逐项验证，代价为新增一个规格与审批周期，复核点为Tech Artifact送审。Producer在该Tech规格获用户批准前继续关闭Client实现与资源删除门禁；复核点为后续审批登记。
+- 后续复核：Master创建Tech任务及后续用户审批尚待发生；届时检查是否完整覆盖资源引用和保留资产链。
+
+### WR-20261006-004｜唯一 U01 资源清理技术方案 v0.1 送用户审阅
+
+- Owner / 结果 / 门禁：Tech Lead提交TECH_DESIGN与RESOURCE_REFERENCE_AUDIT；Tech、Product、Art、Client、QA、Master六份同版Review均APPROVED。Producer核验10/10 Required路径存在且与DELIVERABLE.artifacts一致，验收结果5 PASS、1 NOT_TESTED（Creator导入/构建/运行未测）；Task与Approval进入USER_REVIEW。审批仅覆盖技术方案，不授权Client实现、资源删除或QA运行。证据见 `tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/TASK.json`、`ARTIFACT_APPROVAL.json` 和 v0.1 Required目录。
+- 起止/耗时：Task记载TASK_STARTED为2026-10-06 12:58:58；Tech记录首轮提交13:03:46；DELIVERABLE文件mtime 13:07:25；Producer于13:08:43（Asia/Shanghai）核验并送USER_REVIEW。起止节点相隔9分45秒，包含方案制作、六方Review、交付更新与Producer核验，不能当作Tech净制作时间。各Review起止时点、返工分段及用户审批等待均未知；用户等待从本次送审后开始。
+- 速度及原因：无同类资源引用审计方案的可靠基线，不判断快慢。直接可见21个旧SpriteFrame UUID和Prefab/TMX引用要求逐项核对；审计报告曾出现对当前frames数组状态的陈述冲突，Tech修正后Producer核对一致。返修耗时无法从文件mtime分离，不归因于角色效率。
+- 建议与复核：Tech Lead在后续引用清理方案修订中保留“当前工作树vs HEAD”对照和机器可核验的引用数量，预期减少场景状态误述，代价是多一次交叉核验；复核点为获批后Client/Tech清理实施与场景解析记录。Master仅在用户批准本技术方案后创建或解锁下游Client任务，Producer届时核查审批边界，复核点为后续实施Task启动。
+- 后续复核：当前唯一剩余门禁为用户审批；尚无用户决定。
+
+### WR-20261006-005｜Tech方案 v0.1 用户批准登记
+
+- Owner / 结果 / 门禁：用户在Tech v0.1 `USER_REVIEW` 后回复“继续”；Master此前明确该提示代表推进/批准当前Tech版本。Producer按USER_APPROVED登记，Task `DONE`。批准仅覆盖Tech方案作为后续输入；Client实现、资源删除、QA执行未批准/未执行。证据见 `tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json`、`project/APPROVAL_LOG.md`、Tech v0.1 10/10 Required与六份Review。
+- 起止与耗时：本审批周期从2026-10-06 13:08:43 +08:00进入USER_REVIEW，Producer于13:11:43登记用户“继续”，节点间隔3分钟。用户原消息精确时间不可见，故真实用户等待时长未知；3分钟只表示可核对的状态登记间隔。
+- 速度与原因：无同类用户审批等待基线，不判断快慢；无证据归因审批时长。
+- 建议与复核：Master按批准Tech方案另行规划下游任务，并在任务包明确不自动涵盖用户未批准的Client实施、资产删除和QA执行；预期维持清晰审批边界，代价是后续分阶段任务与审批，复核点为Master创建下一任务及其用户审核节点。Producer在下游Artifact送审时复核其输入确为当前USER_APPROVED Tech v0.1；复核点为后续Task依赖检查。
+- 后续复核：后续实施/QA任务尚未创建或获批；完成后核对是否引用该技术方案并独立执行其自身门禁。
+
+### WR-20261006-007｜Client Brief 与 QA Plan v0.2 用户批准登记
+
+- Owner / 结果 / 证据 / 门禁：用户原话“批准”，Master转达适用于当前 `UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001 v0.2` 与 `UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001 v0.2`。Producer分别登记 `USER_APPROVED` 与 Task `DONE`。Brief批准仅覆盖编码前实施边界；QA批准仅覆盖测试计划。Client实现、场景修改、资源删除、QA执行与 TEST_REPORT 均未批准/未发生。证据见两份 `ARTIFACT_APPROVAL.json`、对应 v0.2 Deliverable 与 Review 目录、`project/APPROVAL_LOG.md`。
+- 起止时间与耗时：两个版本进入USER_REVIEW的可核对登记时间为2026-10-06 13:33:11 +08:00；Producer登记用户决定为13:37:02，相隔3分51秒。用户消息实际发出时间未单独提供，因此该间隔只是门禁登记节点间隔，不等于真实用户等待时间。版本制作和Review周期起点及耗时仍未知。
+- 速度与原因：无同类计划审批等待基线，不判断快慢；不根据登记间隔归因。未见工具故障证据。
+- 建议与复核：Master按Brief批准边界新建独立Client Implementation Task，明确场景引用清理、Creator保存/重开核验及资源候选门禁；Producer在Task启动时核Required与既有工作区基线。QA Owner仅在实现与QA执行阶段各自获批后运行计划用例，复核点为独立QA Task及其用户确认的TEST_REPORT。
+- Continuity：Client Brief与QA Plan均DONE；后续Master负责新建Client Implementation Task。资源删除与QA执行仍锁定。
+
+### WR-20261006-008｜唯一 U01 Client 实施启动检查转 BLOCKED
+
+- Owner / 结果 / 证据 / 门禁：Client 实施 Task `UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001` 当前 `BLOCKED`；Task、Approval DRAFT、`IMPLEMENTATION_REPORT.md` 与 `DELIVERABLE.json` 均存在。报告记录 Cocos Creator 3.8.8 标题为 `UnitSamples.scene - bai-gui-night-market-demo - Cocos Creator 3.8.8` 的窗口仍可列举，但两次 `sky.get_window_state` 均超时；刷新窗口列表并重绑后复试仍失败。没有编辑或删除代码、Scene或资源，交付验收仍NOT_TESTED/BLOCKED，未进入Review或USER_REVIEW。证据：`tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/TASK.json`、`ARTIFACT_APPROVAL.json`、`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md`、`DELIVERABLE.json`。
+- 起止时间与耗时：Client报告仅记录2026-10-06 13:37 +08:00，秒级开始时间未知；Producer于13:40:21核验。按分钟精度起点与核验时刻，间隔约3分21秒，非精确净制作耗时。两次窗口捕获、刷新/重绑及各自耗时未单独记录，等待与诊断耗时未知。
+- 速度与原因：未设Creator操作恢复基线，不判断快慢或归责。直接阻塞证据是两次窗口状态捕获超时；窗口存在不代表可观察/可交互。Creator无可观察状态时无法执行Brief批准的场景序列化引用清理及保存/关闭/重开核验，不能安全移除代码属性或清理旧资源。
+- 建议与复核：Client在Creator窗口成功可观察后重新读取工作区基线，先核场景旧引用，通过Creator清除并保存、关闭重开核验后，才移除frames属性/消费者；Producer复核恢复证据、Task当前状态与基线归属，复核点为下一次Client实际产出或验证。QA执行仍由Master在实现审批门禁满足后另行创建/解锁。
+- Continuity：U01上游Product、Tech、Client Brief、QA Plan均DONE；唯一实施Task具体BLOCKED。解除条件仅为Creator窗口恢复可观测并按已批准两阶段序列完成第一阶段核验；目前没有可继续的空转READY/IN_PROGRESS任务。
+
+### WR-20261006-011｜唯一 U01 Client 实施 Creator 文字状态恢复尝试
+
+- Owner / 结果 / 证据 / 门禁：应用户要求，Client重置node_repl并重新初始化sky。文字界面状态读取成功，但只返回窗口标题、Raise和`窗格 (disabled)`，没有Scene、Inspector或可操作控件。激活窗口后捕获`FrameArrived timed out`；重新观察tree并执行Raise后捕获仍`window capture timed out`。只激活/提升窗口，没有编辑、删除或保存；没有根因结论。Task与DELIVERABLE仍BLOCKED、Approval DRAFT。报告证据：`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md`。
+- 起止时间与耗时：报告记录13:44 +08:00，秒级起点未知；Producer于13:44:41核验。间隔不足一分钟但精确耗时未知；会话重置、状态读取、激活及捕获分段耗时均未记录。
+- 速度与原因：无Creator恢复基线，不判断速度或归责。文字状态可读但缺场景/Inspector控件，且画面两次捕获超时；这只能证明当前观察能力不足，不能推断Creator内部故障原因。
+- 建议与复核：保持BLOCKED，不改项目文件；待可观察画面包含Scene/Inspector后，先检查场景，再由Creator清除序列化引用、保存关闭重开核验，完成第一阶段后才移除代码属性/消费者与核查资源。Producer在下一次恢复尝试后复核可观察证据及阻塞状态。
+- Continuity：上游规格DONE，实施Task唯一且具体BLOCKED，无空转READY/IN_PROGRESS。QA执行仍未解锁。
+
+### WR-20261006-019｜U01实现v0.1送用户审阅与门禁连续性
+
+- 结果与证据：Producer核实U01实施Task的12项Required描述已落实、全部路径型交付物存在，DELIVERABLE可解析且READY_FOR_REVIEW；Client、Tech、Art、QA、Master五份v0.1 Review均APPROVED。Task与Approval已进入USER_REVIEW，decided_at为空。报告记录对象图129→19、110对象移除、受控资源核账及保护身份；70条旧Demo路径为预存删除且已逐项核实后纳入相关提交，11项旧工具经备份审计后退役；Creator 3.8.8 Web Mobile构建（debug=false）exit36，IAB实现级检查菜单、进入、缩放、拖动、重置、UI隔离、返回和重入。证据集中于`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.1/`及`tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/`。
+- 起止时间与耗时：Client实际开始14:05:17；最终Creator Web Mobile构建（debug=false）在14:18:44.2545054返回exit36，build耗时17.371秒；最终IAB证据时间14:22:31；最后一份QA Review文件（评审，不是正式QA执行）时间14:27:56。以上是可核节点顺序；任务开始到末份Review相隔22分39秒仅为观测阶段跨度，不代表连续制作耗时或Owner净工时。专业Review、IAB互动和文件落盘各自净耗时未记录。
+- 影响速度的因素与建议：Creator CLI构建/IAB与多角色同版Review各有可核节点，但无法分解角色等待和实际制作耗时，不评速度或归责。Master将v0.1呈用户决定；复核点为ARTIFACT_APPROVAL.decided_at及状态。用户批准后，Master新建/解锁独立QA执行Task；QA负责人按已批准Web模拟手机矩阵与适用性能指标/方法预算执行并提交报告。该计划与方法门禁需遵守现有批准范围，不由本实现送审替代。
+- Continuity check：U01实现唯一剩余门禁是用户对v0.1实现Artifact的明确决定；本Task保持USER_REVIEW，不能标DONE。正式QA未执行，等待实现USER_APPROVED后由Master建立/解锁独立QA工作；QA矩阵与性能指标/方法预算保持既有门禁。治理Task已DONE，无空转的可继续任务。

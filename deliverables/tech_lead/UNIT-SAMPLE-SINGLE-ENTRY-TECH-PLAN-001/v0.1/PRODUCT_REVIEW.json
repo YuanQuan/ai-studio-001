@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "技术方案将获批 Product v0.2 的唯一入口及文案逐字落实为标题“U01 四层场景镜头”、说明“查看四层场景视差，并拖动、缩放或重置镜头。”和唯一操作“进入 U01”；同时要求清除旧副标题、占位页脚、旧功能说明与旧入口。该内容与 Product PRD 第2、3.1节及 AC-01/04一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "范围保持在当前 UnitSamples.scene：退役旧 U01–U09 实验分支、旧场景/Prefab/帧引用和经核实的专属运行资源，保留唯一 U01 的四层场景、既定镜头行为与必要导航；不新增玩法、经济语义、服务端/API、外部依赖、独立 Lab Scene 或美术改图。产品已批准的另一套七项正式内容及历史审批明确留存，边界符合 Product v0.2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_REFERENCE_AUDIT.md 将21个旧 SpriteFrame 序列化引用、旧Prefab/TMX/场景引用列为需解除并复核的事实；删除旧资源均以 Creator/全仓活动引用清零且证明仅属旧样例为前置条件。四张获批PNG、STREET_BASE_01 Prefab、镜头控制器的路径、哈希/UUID链与资源登记明确保留；共享资源、Creator Library/缓存、审批和历史Artifact不做目录式清除，符合 Product PRD 第2节和 AC-05–09。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "apps/client/tools 下旧 DemoScene/TMX 辅助脚本目前仅列为有条件的删除候选，并要求先检查调用关系、构建入口和工作流；此条件控制足以避免静默扩大资源清理。Client 执行时应只删除能证明专供退役样例且无现行工作流依赖的工具，否则保留并另行提出变更。该建议不阻断本技术方案。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator导入、场景重开、构建、运行与交互验证均诚实标为NOT_TESTED；方案未把静态哈希/UUID证据当成实现或QA通过，也注明产品范围审批不解锁旧BLOCKED Client任务，符合产品审批和阶段门禁。"
+    }
+  ],
+  "next_action": "Product Review通过。Tech Lead可汇总其他专业Review并提交Master Review；本Review仅确认产品范围与语义一致，不代表用户批准技术方案或授权Client实施/删除资源。"
+}

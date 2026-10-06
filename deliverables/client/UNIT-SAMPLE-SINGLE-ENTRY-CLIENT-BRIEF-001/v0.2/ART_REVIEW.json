@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "FEATURE_BRIEF.md 第2、3、5节与 RESOURCE_CLEANUP_CHECKLIST.md 第2节保护获批 U01 图组，不换图、不改图、不移动资源、不改图集且不重建 UUID。四个稳定资产 ID STREET_BASE_01_L01–L04 的路径、SHA-256、Creator 主 UUID及 Texture2D @6c48a / SpriteFrame @f9941 子资源键与 project/ASSET_HANDOFF_REGISTRY.md 对应；清单也保护 Prefab 主 UUID 2d697fb3-01f0-4330-a180-a9c162310bf8、四层 SpriteFrame 依赖、Controller 主 UUID 9ceb8fd6-3853-4688-aeb0-c736616a614e 和各自 .meta。未提出视觉资源变更。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_CLEANUP_CHECKLIST.md 将旧 demo PNG/Prefab/TMX 与其 .meta 列作候选，同时要求先由 Creator 清理序列化引用、保存并关闭重开，再全仓核路径/UUID、归属及活动/构建/Creator依赖；未知或共享项保留。U01 四层 PNG、Prefab、Controller明确列在独立的必须保留身份链中。工作区预存删除与场景仍有旧引用的事实在 FEATURE_BRIEF.md、WORKSPACE_BASELINE_AND_VALIDATION.md 中明确区分，未宣称清理已完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Keeper.prefab 的范围在 RESOURCE_CLEANUP_CHECKLIST.md 及 WORKSPACE_BASELINE_AND_VALIDATION.md 中单独说明：它属于旧目录 tracked 候选，但当前 UnitSamples.scene UUID 命中表未命中；须单独做全仓引用与归属检查后才能决定删除，不冒充场景已引用或已确认可删。历史任务、资源登记、艺术审批、Review 与其他追溯 Artifact 保留；PSD 母版和审核图不作为运行图清理。"
+    }
+  ],
+  "next_action": "Art 对 Client Brief v0.2 资源与美术影响 Review 通过。用户批准本 Brief 且 Master 解锁独立实施 Task 后，实施方按逐项证据门槛处理候选；实施前后核验四层获批图组及 Creator 身份链。Keeper 保持待全仓审计结论，历史艺术审批与交付资料留存。"
+}

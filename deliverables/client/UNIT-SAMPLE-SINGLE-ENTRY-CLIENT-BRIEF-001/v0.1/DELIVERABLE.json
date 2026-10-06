@@ -1,0 +1,56 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "owner": "client",
+  "summary": "完成唯一 U01 客户端实施边界草案、旧资源逐项清理Checklist、Task开始时工作区基线与未来验证顺序。该Brief Task仅产出规划文档，不改代码/场景/资源、不执行Creator导入/构建/QA；具体实现需Master另建或解锁独立Client实施Task。",
+  "artifacts": [
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.1/RESOURCE_CLEANUP_CHECKLIST.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.1/WORKSPACE_BASELINE_AND_VALIDATION.md",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "FEATURE_BRIEF遵循已批准Product v0.2与Tech v0.1，明确唯一U01文案、同场景入口/返回/重入、现有四层镜头依赖和不新增功能/Scene/依赖边界。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md第1至3节列出唯一文案、复用UnitSamples/Gallery/Prefab/Controller、依赖方向及后续建议；文档首段标明DRAFT、审批条件和不授权实现。"
+    },
+    {
+      "criterion": "资源Checklist逐项核对旧场景21项SpriteFrame UUID、8个Scene命中的Prefab UUID、1个TMX UUID，以及旧目录第9个无Scene命中Prefab候选；资源路径与UUID可复核。",
+      "result": "PASS",
+      "evidence": "RESOURCE_CLEANUP_CHECKLIST.md列21帧UUID-路径映射、8个Prefab主UUID与TMX主UUID；单独说明tracked目录有9个Prefab，Keeper主UUID为cf9128e5-3256-40d0-9411-1b648549868b且当前Scene未命中，仍需全仓复核。70个tracked删除候选路径按Git HEAD pathspec列明；对应UUID来源见Tech RESOURCE_REFERENCE_AUDIT.md。"
+    },
+    {
+      "criterion": "正确区分既有工作区差异、当前场景仍残留的引用、逐项可删前置门禁和四层保留资产身份链。",
+      "result": "PASS",
+      "evidence": "WORKSPACE_BASELINE_AND_VALIDATION.md记录Task开始证据与 apps/client 基线D/M/??类别；Checklist要求先Creator场景/脚本解链、保存/重开和全仓核对，再判断候选删除；四PNG、Prefab、Controller的路径/hash/UUID及子UUID列为保留项。"
+    },
+    {
+      "criterion": "定义Creator导入、场景解析、构建、运行和交互的可复核未来证据；Creator不能载入时明确BLOCKED且禁止手改场景JSON/删meta绕过。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md第7节与WORKSPACE_BASELINE_AND_VALIDATION.md第3节列出未来验证顺序、结果证据和NOT_TESTED；Checklist第0节与两份Brief文档均要求场景不能载入/保存时BLOCKED，禁止手改.scene JSON或删.meta掩盖问题。"
+    },
+    {
+      "criterion": "当前Brief Task只提交规划Artifact，不实施代码/场景/资源变更、不执行QA。",
+      "result": "PASS",
+      "evidence": "本Task实际只新增上述四个 deliverables/client/.../v0.1 文档；工作区源文件差异仍是Task开始前既有状态。本Task未执行Creator操作、代码构建或QA。"
+    },
+    {
+      "criterion": "未验证的实现/运行结论保持NOT_TESTED，Brief审批与后续Client实施授权分离。",
+      "result": "NOT_TESTED",
+      "evidence": "NOT_TESTED指Creator打开/重导入、场景保存重开、构建、唯一U01运行及镜头交互均未执行；本Artifact只申请实施边界审批。用户批准Brief后仍需Master另建或解锁正式Client实施Task。"
+    }
+  ],
+  "assumptions": [
+    "本Brief的上游Product v0.2和Tech v0.1已分别在对应任务事实源登记为USER_APPROVED；批准仅涵盖本Brief允许消费的范围和资源技术方案。",
+    "Tech Audit所列当前Scene命中是8个不同旧Prefab主UUID和1个TMX主UUID；旧demo目录tracked Prefab总数9个，其中Keeper.prefab没有当前Scene命中表记录，实施时单独全仓复核。",
+    "Developer工作区共享，后续实际Client实施前必须重抓Git状态/差异，本文开始时基线不会替代新快照。"
+  ],
+  "risks": [
+    "assets/demo旧资源工作树删除早于本Task且UnitSamples场景仍有21旧SpriteFrame、8 Prefab及1 TMX引用；缺文件不证明安全清理完成。",
+    "若Creator不能载入或可靠保存解除旧引用后的场景，后续实施必须BLOCKED，禁止手工JSON编辑或删除.meta绕过。",
+    "Keeper.prefab属于9个tracked旧Prefab资产之一但未见当前UnitSamples场景主UUID命中；若全仓引用或归属未核清，不应删除。",
+    "Creator UI/Library实际刷新、场景解析、构建、运行交互均未在Brief Task验证；需在另行批准的实现/QA Artifact中提供证据。",
+    "全仓其他角色存在既有未提交改动；提交时必须限定本Task文件，不能夹带工程、场景、资源或跨Owner差异。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

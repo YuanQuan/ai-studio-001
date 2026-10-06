@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_CASES.md 将 Product v0.2 AC-01 至 AC-10 落为待执行用例：U01-STATIC-MENU-001 与 U01-VISIBLE-TEXT-001 覆盖唯一入口/完整可见文案；U01-NAV-REENTRY-001、U01-CAMERA-INPUT-001 覆盖进入返回重入及镜头行为；U01-OLD-SERIALIZED-REF-001、U01-RESOURCE-DELETION-001、U01-CREATOR-IMPORT-001、U01-IDENTITY-CHAIN-001覆盖旧引用清理/删除门槛与保留身份链；U01-PROJECT-DOCS-001、U01-HISTORY-APPROVAL-001覆盖说明、七项正式内容及历史状态留存。映射完整且与批准AC一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN.md 与用例明确区分本次UnitSamples旧九项技术样例和另一套七项正式产品内容：七项内容不作为本次菜单测试对象，但其规格、审批、任务与历史记录须保留并核验；旧UNIT-SAMPLES-001仍应为CANCELLED，旧验证不得充作新U01证据，符合AC-08/09与Product PRD第4节。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_REFERENCE_CHECKLIST.md仅把DemoScene、assets/demo旧PNG/Prefab/TMX及相应Creator身份文件列为逐项核验候选；对21个SpriteFrame、8个场景命中Prefab、TMX及未命中场景的Keeper单独列证据要求。删除必须先清除活动引用并证明专用于旧样例，工作树预删不算完成依据；四层PNG、STREET_BASE_01 Prefab、Controller及身份登记链受保护，历史记录不参与活动引用清零且不删，范围未扩大。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN.md 将环境矩阵、产品/技术输入、Client实现及实施后资源证据列为执行前置；实体手机、发行容器、性能阈值和无关全量回归明确排除或待另行批准。Creator导入、Web构建、运行、交互和每个用例当前均为NOT_TESTED；计划没有生成PASS或TEST_REPORT，符合本Task设计计划而不执行QA的边界。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DELIVERABLE.json 的计划验收证据指向上述四项Required草案，实际运行项保持NOT_TESTED；Review和用户审批仍由相应Owner/Producer完成。既有UNIT-MENU-SCENE1-QA-PLAN-001 v0.1被明确保留为历史，不静默覆盖其范围或审批。"
+    }
+  ],
+  "next_action": "Product Review通过。QA可汇总Client、Tech、QA与Master同版Review并经Producer推进计划Artifact至USER_REVIEW；计划审批仅授权QA计划本身，不授权测试执行或资源清理。"
+}

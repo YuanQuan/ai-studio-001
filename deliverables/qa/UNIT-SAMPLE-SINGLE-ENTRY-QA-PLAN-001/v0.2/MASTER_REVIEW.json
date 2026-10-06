@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "QA Plan v0.2与Client Brief v0.2保持版本交叉引用，并把Creator两阶段验证顺序写进执行步骤：先清空并保存重开场景frames引用，验证后才移除脚本property/消费者。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用例区分21个旧SpriteFrame UUID、当前场景命中的8个Prefab主UUID及TMX UUID、Keeper额外全仓候选；测试范围覆盖Product AC-01至AC-10和资源身份链。"
+    },
+    {
+      "severity": "INFO",
+      "message": "所有执行用例保持NOT_TESTED；计划要求Client实现和QA计划分别获批后再执行，环境矩阵与性能阈值不擅自扩展，静态审计不冒充QA结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1及其Reviews继续保留为历史；v0.2为本轮修订版本，本Task仍仅设计QA计划，不授权QA执行。"
+    }
+  ],
+  "next_action": "等待QA、Client、Tech、Product和Master同版Review完成并核对10/10 Required后，由Producer提交QA Plan v0.2用户审批。"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 的客户端目标与验收边界足以执行并核对：PRD 第2节明确唯一 U01 菜单、旧 U01–U09 实现/场景序列化引用/专属运行资源清理及禁止误删共享/Creator必要资源；AC-01/04核对菜单和运行页全部可见文字，AC-05核对旧入口、实现分支和悬空运行引用，AC-06要求逐项证明待删资源专用于旧样例，AC-07保留四层身份链，AC-10覆盖仍适用的项目运行说明。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前工作区改动不能作为本次范围已实现或可完整吸收的证据：apps/client/assets/UnitSampleGallery.ts 仍定义旧 U01–U09 菜单与实现分支，并将四层页面标题写为 U10；apps/client/assets/UnitSamples.scene 仍序列化 `frames` 的21个旧 SpriteFrame UUID（字段位于当前文件约第3582行），且保留多个旧样例静态对象/Prefab 引用；Git 状态将 DemoScene.scene/.meta 与 apps/client/assets/demo/** 标为删除。执行阶段需按实际引用扫描复核这些既有修改与删除清单，清理旧序列化引用后再报告 AC-05/06，不能仅凭目录删除或源码改动宣称通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四层保留链在静态文件层面可核对：UnitSamples.scene 的 streetBasePrefab UUID `2d697fb3-01f0-4330-a180-a9c162310bf8` 与 pf_street_base_01.prefab.meta 一致；Prefab 对应的四层 SpriteFrame 子 UUID `7108d512-5f6f-42d1-9411-c6f48de13939@f9941`、`c788f23d-127c-48a9-890c-36679d56dce4@f9941`、`8fae7865-9c46-46f6-8484-849ebe8a6634@f9941`、`685d480f-3b1a-4f77-b796-79b9ec5de834@f9941` 与 PNG .meta 及 project/ASSET_HANDOFF_REGISTRY.md 登记一致；镜头控制器 UUID `9ceb8fd6-3853-4688-aeb0-c736616a614e` 与脚本 .meta 一致。Creator 实际导入/运行状态不能由该静态核对证明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "无 Creator 交互是后续实现验证的限制，不是本次产品范围影响 Review 的阻塞：PRD/AC 已将 Creator 导入、构建、运行画面和操作行为列为后续实现/QA证据，且明确现有 UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001 仍 BLOCKED。本 Review 不解锁该任务，也不表示任何运行验收通过。"
+    }
+  ],
+  "next_action": "同版客户端影响 Review 通过。交 Master 汇总并完成 Master Review、用户对 v0.2 的明确审批；获批后由 Master 建立/解锁实施任务。Client 实施时复核既有 Git diff，移除旧分支及 UnitSamples.scene 旧序列化引用，逐项证明资源删除安全并更新适用说明；保留四层 PNG、Prefab、镜头控制器及登记身份链。之后刷新 Creator 资源、构建并提交菜单/运行页文字清单、引用扫描和进入/返回/重进及拖动/缩放/重置证据；若 Creator 当前不可用，将该项如实列为后续 BLOCKED。"
+}

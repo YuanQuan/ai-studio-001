@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2已解决TECH_REVIEW v0.1的MAJOR顺序问题：保留Gallery frames属性让Creator识别，先在Inspector清空21项序列化值和旧节点/Prefab/TMX引用，保存并关闭重开验证；验证通过后才移除property/消费者，再次Creator刷新/编译、保存重开核unknown property/missing UUID。Creator不能载入或保存则BLOCKED，禁止手改.scene JSON。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源引用计数与Tech Audit一致：21个旧SpriteFrame UUID；UnitSamples.scene命中8个不同旧Prefab主UUID和TMX UUID `3affc159-d837-4bb8-a030-4fb2df02b0e3`。demo目录共9个Prefab；Keeper UUID `cf9128e5-3256-40d0-9411-1b648549868b`没有场景命中，清单将其单列为需全仓确认的候选，没有与8个Scene命中混算。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已用 `git ls-files -- 'apps/client/assets/DemoScene.scene' 'apps/client/assets/DemoScene.scene.meta' 'apps/client/assets/demo.meta' 'apps/client/assets/demo/**'`复核70条：DemoScene相关2条、demo路径68条（含根demo.meta），并与Checklist逐路径枚举一致；v0.1的69为被后续Revision更正的历史Reviewer计数，不沿用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四层PNG的SHA-256、Creator主UUID/Texture @6c48a/SpriteFrame @f9941、STREET_BASE_01 Prefab SHA与主UUID `2d697fb3-01f0-4330-a180-a9c162310bf8`、Controller SHA与主UUID `9ceb8fd6-3853-4688-aeb0-c736616a614e`均在保留表中列明；资源登记、meta、Library和历史审批留存规则清楚。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Candidate删除仍受场景/脚本解除、Creator保存关闭重开、全仓引用与逐项归属核验前置门禁约束；未知项KEEP/BLOCKED。Creator导入、构建、运行和QA均明确NOT_TESTED，本Brief本身不授权实施。"
+    }
+  ],
+  "next_action": "Tech Lead v0.2审查通过。由Master汇总Product、Art、Client、QA和Master各自Review；同版门禁完成后送用户审批。用户批准Brief后仍须独立Client实施Task与QA计划审批。"
+}

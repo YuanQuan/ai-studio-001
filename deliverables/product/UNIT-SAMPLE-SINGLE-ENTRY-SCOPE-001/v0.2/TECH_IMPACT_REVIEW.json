@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2 已把 v0.1 的 UI 文案范围歧义补成可验收技术条件：菜单标题、说明和按钮基线明确，返回后所有可见文字仍须对应唯一 U01，运行页旧功能说明/脚注也纳入检查。单一 UnitSamples.scene 菜单路由可实施；后续 Client 应把内部唯一入口索引映射为 U01，并清除 U02–U10 的分支，不可只改卡片显示编号。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前工作区仍不是可证明完成清理的状态。UnitSamples.scene 在 UnitSampleGallery 序列化组件中保存 21 项旧 `frames` SpriteFrame UUID；场景序列化内另有旧样例 SpriteFrame/Prefab UUID。UnitSampleGallery.ts 仍保留旧 U01–U09 菜单数组、旧标题/副标题/页脚和九个实现分支。与此同时 Git 状态把 DemoScene.scene/.meta 及 apps/client/assets/demo/** 标记为删除；既有 Client Task 记录还报告 Creator 预览存在指向 assets/demo 的缺失引用。v0.2 的 AC-05/06 已要求清零旧引用并提供逐项删除证明，故这些现状应作为后续实施的清理阻断项，而不是删除安全或验收通过的证据。移除旧序列化属性/节点、完成全仓引用扫描与 Creator 刷新前，不得把残留 UUID 视作已清理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "保留资源身份链在当前文件中静态一致：UnitSamples.scene `streetBasePrefab` 引用 UUID 2d697fb3-01f0-4330-a180-a9c162310bf8，与 pf_street_base_01.prefab.meta 相同；Prefab 对应四个 PNG SpriteFrame UUID 为 L01 7108d512-5f6f-42d1-9411-c6f48de13939@f9941、L02 c788f23d-127c-48a9-890c-36679d56dce4@f9941、L03 8fae7865-9c46-46f6-8484-849ebe8a6634@f9941、L04 685d480f-3b1a-4f77-b796-79b9ec5de834@f9941；对应 PNG .meta 与 project/ASSET_HANDOFF_REGISTRY.md 登记一致。镜头控制器 `.meta` 主 UUID 为 9ceb8fd6-3853-4688-aeb0-c736616a614e，UnitSampleGallery.ts 通过模块导入使用。静态 UUID 一致不代表 Creator 数据库实际导入或运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "获批后的实现验收建议：刷新/导入 Creator 资源，确认四张图、Prefab 和脚本 .meta 身份/引用完整，Scene 不含旧组件序列化值、旧 SpriteFrame/Prefab UUID 或已删除资源路径；完成 TypeScript/Creator 构建检查；预览核对唯一 U01 菜单文字、进入/返回/重复进入、四层显示、拖动/缩放/重置及控件输入隔离，并保存构建日志与运行证据。现有 UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001 仍为 BLOCKED，本 Review 不解锁旧任务或代替以上验证。"
+    }
+  ],
+  "next_action": "将此 v0.2 Review 与其余同版 Review 交 Master 汇总，完成 Master Review 后由 Producer 提交用户审批。用户批准前不消费该稿执行清理。批准后按引用证据先处理 UnitSamples.scene 的旧序列化 UUID，再逐项审查候选资源；仅对已证明旧样例专用且无新 U01、其他功能或 Creator 必要引用的资源实施删除，保留四层 PNG、Prefab、镜头控制器及其 UUID/.meta 身份，并完成 Creator 导入、构建和运行验证。"
+}

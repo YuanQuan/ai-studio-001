@@ -1,0 +1,11 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "范围已限定为旧 UnitSamples 九项实验入口/专属运行资源退役，以及四层 Lab 改唯一 U01；与已批准七项正式产品规格区分清楚。"},
+    {"severity": "INFO", "message": "已明确四层 PNG、STREET_BASE_01 Prefab、镜头控制器和资源追溯信息为保留项；共享/Creator必要引用需核查后才能删除。"},
+    {"severity": "INFO", "message": "已列出已取消旧任务、当前 BLOCKED Client 任务、受影响角色、验收条件及逐阶段用户审批门禁；未将历史记录列为删除对象。"}
+  ],
+  "next_action": "提交 Master Review；Master 核验当前工作区现状与审批事实后，呈现 v0.1 给用户审批。用户批准前下游不得把本稿作为正式清理输入。"
+}

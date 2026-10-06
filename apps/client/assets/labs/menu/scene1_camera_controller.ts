@@ -116,6 +116,11 @@ export class Scene1CameraController extends Component {
     this.recalculate();
   }
 
+  public zoomBy(multiplier: number): void {
+    if (!Number.isFinite(multiplier) || multiplier <= 0) return;
+    this.setZoom(this.zoom * multiplier);
+  }
+
   private onViewportChanged(): void {
     this.clearGesture();
     this.recalculate();

@@ -1,0 +1,20 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TECH_DESIGN.md 的现状/保留项与 RESOURCE_REFERENCE_AUDIT.md 的四层身份表遵循已批准 UNIT-MENU-FOUR-LAYER-CUT-001 v0.3 和 project/ASSET_HANDOFF_REGISTRY.md：保留 STREET_BASE_01_L01–L04 四张正式 PNG 及 .meta、稳定资产 ID、登记 SHA-256、image 主 UUID 与 @6c48a Texture2D / @f9941 SpriteFrame 子 UUID；保留 pf_street_base_01.prefab 主 UUID 2d697fb3-01f0-4330-a180-a9c162310bf8、其四层引用，以及 scene1_camera_controller.ts 主 UUID 9ceb8fd6-3853-4688-aeb0-c736616a614e。方案要求核对哈希和身份链、不移动/重建保留资源、不手工换 UUID，未提出美术改图或新的视觉资源变更。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案将 PSD 母版、同尺度审核图、资源登记、历史 Task/Review/Approval 和其他历史交付列为追溯留存；PSD 与审核图明确不作为运行纹理。旧 assets/demo PNG、Prefab、TMX 及 Creator .meta 仅按旧运行资产候选分类，RESOURCE_REFERENCE_AUDIT.md 将21个旧 SpriteFrame UUID逐项映射到旧 PNG，并记录场景内旧 Prefab/TMX UUID引用；TECH_DESIGN.md 要求先在 Creator 解除序列化/脚本引用、重开核对、全仓查引用和确认旧样例专用后才允许删除，未核清者保持保留。分类基于旧场景/Gallery/UUID证据而非仅按目录名批删，未见越权将获批四层资源或美术历史资料列入删除目标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "审计清楚区分工作树中既有删除与当前有效引用：指出 UnitSamples.scene 仍序列化21个旧帧及旧 Prefab/TMX 引用，已有删除状态不等于引用已清除；Creator 重导入、编辑器解析、构建和运行均记为 NOT_TESTED，并留待后续获批 Client/QA 工作。此边界避免把静态审计误表述为已实现或已验证的美术结果。"
+    }
+  ],
+  "next_action": "Art 对 Tech v0.1 的美术资源保护与分类边界 Review 通过。完成同版专业评审及用户审批后，Client/Tech Lead 按方案逐项解除并复核旧运行引用，核对四层正式 PNG、Prefab、Controller 的登记身份；涉及获批图组或其他美术资产改动时暂停该项并提交变更审批。"
+}

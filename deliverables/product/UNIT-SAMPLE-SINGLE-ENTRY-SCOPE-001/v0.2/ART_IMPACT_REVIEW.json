@@ -1,0 +1,16 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版核对 PRD、ACCEPTANCE、CHANGE_IMPACT 与 project/ASSET_HANDOFF_REGISTRY.md：范围明确保留已获用户 Gate2 批准的 UNIT-MENU-FOUR-LAYER-CUT-001 v0.3 图组。STREET_BASE_01_L01–L04 的 PSD 母版、四张 2172×724 PNG、同尺度审核图、稳定资产 ID、逐件 SHA-256、Creator 主/子 UUID、.meta/Library 几何记录及相关审批与历史 Review 均须继续可追溯；PSD 与审核图在登记中标明不接入运行。不要将美术交付/评审归档误列为旧样例运行资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧 assets/demo/** 与 DemoScene 当前仅列为清理候选，目录位置和旧样例文档描述不足以证明某一图像或 Prefab 可删除。AC-06 与 PRD 清理条款要求 Client/Tech Lead 对每项拟删除运行资源核对场景、Prefab、脚本、构建入口、Creator 元数据和保留功能引用，并记录仅供旧 U01–U09 使用且无保留引用的证据；未核清则保留。当前工作区已有相关删除显示为未提交改动，不能视为 Art 已确认其专用性或已批准删除。"
+    }
+  ],
+  "next_action": "本 Art 范围影响 Review 通过。Product/Master 完成同版 Review 与用户审批后，Tech Lead/Client 按 AC-06 提交逐项引用和归属核查；保留四层正式 PNG、Prefab、控制器及其身份链。若核查涉及获批图组或共享资源，停止删除并提交变更请求；实施后 Art 复核保留图组与登记映射。"
+}

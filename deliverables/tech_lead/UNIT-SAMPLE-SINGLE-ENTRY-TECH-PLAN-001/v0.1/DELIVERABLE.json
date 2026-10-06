@@ -1,0 +1,60 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001",
+  "owner": "tech_lead",
+  "summary": "完成唯一U01资源清理技术方案及全仓静态引用审计。当前UnitSamples场景仍序列化21个旧SpriteFrame UUID、9类Prefab依赖及TMX引用；证明必须先解除场景/脚本引用，再清理既有删除候选。四层PNG、STREET_BASE_01 Prefab和镜头Controller的SHA、Creator UUID、meta与Library索引已静态核对。未编辑工程资源；Creator重导入、构建和运行均未测试。",
+  "artifacts": [
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/RESOURCE_REFERENCE_AUDIT.md",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/QA_REVIEW.json",
+    "deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "技术方案遵循用户批准产品范围v0.2，明确唯一U01语义、依赖、保留边界与实施顺序。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md引用已批准范围，并采用获批菜单标题/说明/按钮文案；未增加产品规则或技术依赖。"
+    },
+    {
+      "criterion": "资源审计逐路径枚举旧资源并区分既有工作区删除、旧资源候选、U01保留、共享/身份/历史留存和阻塞。",
+      "result": "PASS",
+      "evidence": "RESOURCE_REFERENCE_AUDIT.md附git ls-files完整apps/client/assets/demo路径及当前git status；包含21帧UUID映射、场景Prefab/TMX UUID对象引用、全仓搜索、Library和工具路径证据及分类。"
+    },
+    {
+      "criterion": "核对四层PNG、STREET_BASE_01 Prefab和镜头Controller的实际SHA、路径、UUID、.meta、子资源和登记链。",
+      "result": "PASS",
+      "evidence": "RESOURCE_REFERENCE_AUDIT.md的身份链表及Creator Library核对章节；4个PNG hash匹配登记，Prefab主UUID和四层SpriteFrame依赖在.meta/Library/scene链相符。"
+    },
+    {
+      "criterion": "Creator重导入、场景打开、构建、运行唯一U01和操作行为已验证。",
+      "result": "NOT_TESTED",
+      "evidence": "本Tech任务执行静态仓库审计，没有Creator运行/构建证据；TECH_DESIGN.md列出后续Client/QA可复核步骤。"
+    },
+    {
+      "criterion": "本Task未修改代码、场景、资源或资源登记表。",
+      "result": "PASS",
+      "evidence": "本Task仅新建deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-TECH-PLAN-001/v0.1文档；既有工作区差异记录在审计报告起始基线中。"
+    },
+    {
+      "criterion": "Tech、Product、Art、Client、QA与Master均完成同版Review并通过。",
+      "result": "PASS",
+      "evidence": "同版TECH_REVIEW.json、PRODUCT_REVIEW.json、ART_REVIEW.json、CLIENT_REVIEW.json、QA_REVIEW.json、MASTER_REVIEW.json均为APPROVED；Producer待更新审批状态。"
+    }
+  ],
+  "assumptions": [
+    "旧U01-U09的路径归属以当前UnitSamples场景序列化引用、对应Creator .meta UUID、Gallery实现和批准产品范围共同判断，不以目录名单独判定。",
+    "项目规则要求本方案用户批准后，由Master另建/解锁Client实施任务；QA测试计划由QA单独修订并审批。"
+  ],
+  "risks": [
+    "当前工作树UnitSamples.scene仍保留21个旧SpriteFrame UUID及旧Prefab/TMX UUID；因对应素材已在工作区删除，现状可能产生Creator missing asset问题。",
+    "静态hash/meta/Library核对不能证明Creator当前会话可正确重导入，也不能证明构建与运行正常。",
+    "apps/client/tools多个旧DemoScene构建/校验/渲染工具引用已退役资源；Client需在实施任务核查package或Creator操作链后再删除。",
+    "工作区已有大量与本Task无关的未提交变更；提交时须仅暂存本Task四个技术文档。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

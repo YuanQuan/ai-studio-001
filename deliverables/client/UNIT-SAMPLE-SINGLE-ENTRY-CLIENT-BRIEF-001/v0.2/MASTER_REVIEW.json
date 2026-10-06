@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-BRIEF-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2已按Tech MAJOR意见明确两阶段场景处理：保留脚本frames属性，由Creator清空21项序列化值及旧引用、保存关闭重开核验；通过后才移除脚本属性/旧消费者，并再次用Creator刷新和检查。不能载入或保存则BLOCKED，不手改JSON或删除.meta。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源计数经git ls-files pathspec独立核对为70项：DemoScene相关2项和demo路径68项（含demo.meta）。当前Scene的8个Prefab UUID及TMX与目录中第9个Keeper.prefab候选分别列示，未混淆场景引用和目录候选。"
+    },
+    {
+      "severity": "INFO",
+      "message": "产品范围、四层资产身份链、预存工作区差异、历史记录留存和后续审批边界清楚。本Artifact只申请编码前实施边界审批，不授权Client改代码/场景、删资源或执行QA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator导入、场景保存重开、构建、运行及QA均未在本Brief Task执行，保持NOT_TESTED。"
+    }
+  ],
+  "next_action": "等待Product、Art、Client、Tech、QA与Master同版Review完成后，由Producer将Client Brief v0.2提交USER_REVIEW。"
+}

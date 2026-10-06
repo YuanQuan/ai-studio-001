@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "PRD v0.1 的单入口路由与范围边界在技术上可实施：UnitSamples.scene 保留为唯一 Scene，UnitSampleGallery 收敛为单一 U01 入口，旧九项分支和对应序列化内容逐步清除；U01 返回菜单并再次进入也限定在同一 Scene。已批准的七项正式产品内容/历史记录未被误作旧运行资源删除对象。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "当前工作区不是可用的清理完成态：UnitSamples.scene 的 UnitSampleGallery 序列化组件仍含 21 项旧 SpriteFrame `frames` 引用，场景内还有旧样例的 SpriteFrame/Prefab 序列化 UUID；同时 Git 状态显示 DemoScene.scene/.meta 与 apps/client/assets/demo/** 已删除。此前 UNIT-MENU-SCENE1-CLIENT-IMPLEMENT-001 记录的预览控制台也有指向 assets/demo 的缺失资源路径。批准产品范围不证明这些删除安全或已完成；Client 后续须先消除旧脚本属性、场景节点/组件及全部悬空引用，再按引用扫描结果逐项决定专属资源删除，无法核清的保持保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "新 U01 的保留身份链当前可静态核对：UnitSamples.scene 的 streetBasePrefab UUID 为 2d697fb3-01f0-4330-a180-a9c162310bf8，与 pf_street_base_01.prefab.meta 一致；Prefab 四层 SpriteFrame UUID 分别为 L01 7108d512-5f6f-42d1-9411-c6f48de13939@f9941、L02 c788f23d-127c-48a9-890c-36679d56dce4@f9941、L03 8fae7865-9c46-46f6-8484-849ebe8a6634@f9941、L04 685d480f-3b1a-4f77-b796-79b9ec5de834@f9941，与四张 PNG .meta 子 UUID 及 ASSET_HANDOFF_REGISTRY.md 一致。镜头脚本 .meta UUID 为 9ceb8fd6-3853-4688-aeb0-c736616a614e；它由 UnitSampleGallery.ts 导入。此为文件/UUID 静态核对，不代表 Creator 资源库导入、构建或运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "下游实现建议按获批版本执行 Creator 资源刷新/导入，检查 .meta 身份未变、Prefab 四个命名图层及 SpriteFrame 引用完整、场景不再残留旧组件/UUID、TypeScript 构建无错误；在 Creator 预览中验证唯一 U01 路由、进入/返回/重复进入不重复实例、拖动/缩放/重置及控件输入隔离，然后执行目标构建并留存日志/画面。现有实施任务记录为 BLOCKED，当前 Review 不解除该状态，也不代替构建与运行证据。"
+    }
+  ],
+  "next_action": "将本 Review 与同版专业评审交 Master 汇总并提交用户审批。获批后再由 Master 建立/解锁 Tech 引用复核和 Client 实施；实施须保留四层 PNG、pf_street_base_01.prefab、scene1_camera_controller.ts 及现有 UUID/Creator .meta 身份，更新资源追溯证据，并完成 Creator 导入、构建和运行验证。"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN.md 的执行前置条件与当前 Client Brief 状态一致：先完成Brief和QA计划各自的Review/用户审批，再使用获批Client实现版本及实际 Creator/Web 环境开展QA；Brief当前仍是草案，不能当作已批准实现验收事实。测试计划不执行QA、不生成TEST_REPORT，并把运行矩阵与性能门槛留在后续独立审批范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用例与 Client Brief 的实现边界匹配：覆盖同一 UnitSamples.scene 的唯一U01菜单、所有状态可见文字、进入/返回/重入、四层镜头拖动/缩放/重置及输入隔离；验证旧Gallery逻辑/frames属性、场景旧序列化引用、资源删除依据、README/历史边界及四层资源身份。Client Brief限定不创建新Scene/玩法/依赖，QA用例未添加这类范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源核对的基数和引用位置交叉正确：21个旧SpriteFrame UUID；UnitSamples.scene当前命中的8个不同旧Prefab主UUID（EntryBridge、YamaPalace、BackgroundStall、TargetStall、ExitBridge、GuestFloating、GuestHorned、GuestPaperTalisman）及1个TMX UUID；目录第9个 `Keeper.prefab` 主UUID `cf9128e5-3256-40d0-9411-1b648549868b` 单独列为未命中当前Scene、仍需全仓扫描的候选。QA计划/用例没有把Keeper误算为当前场景残留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator无法载入、资源导入失败或场景损坏时记BLOCKED；计划要求Creator刷新/导入、打开/保存/关闭重开、Console/Inspector检查、Web Mobile构建与运行证据，且静态扫描不替代这些证据。保留的四PNG/Prefab/Controller hash/UUID身份链与预存Git差异也有对应核对用例。未执行项保留NOT_TESTED。"
+    }
+  ],
+  "next_action": "Client 对 QA Plan v0.1 同版Review通过。现有计数已清楚区分8个场景Prefab引用与Keeper目录候选。提交 Master/Producer 汇总；QA计划和Client Brief各自取得用户批准、Client实现完成并获批后，再由独立QA执行任务按获批矩阵测试。此Review不批准QA执行或TEST_REPORT。"
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
+  "reviewer": "product",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_CASES.md 的用例覆盖 Product v0.2 AC-01–AC-10：唯一菜单及完整可见文字（AC-01/04）、进入返回重入与四层资源（AC-02）、拖动/缩放/重置及输入隔离（AC-03）、旧入口/实现/序列化引用与资源删除证据（AC-05/06）、PNG/Prefab/Controller身份链（AC-07）、七项正式内容和历史留存（AC-08/09）、项目运行说明更新（AC-10）。各测试用例均是待执行设计，未预填PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator顺序修订与Client Brief v0.2的TECH MAJOR整改一致：先保留frames property和消费者，由Creator清空序列化值/旧场景引用并保存、关闭重开验证；通过后才移除代码property/消费者，再刷新、编译、保存、关闭重开复核。阶段一不能可靠完成即BLOCKED，禁止手改.scene JSON。此修订只定义测试及实施证据顺序，不改变获批产品语义、唯一U01文案或清理目标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_REFERENCE_CHECKLIST.md对21个旧SpriteFrame UUID、8个当前场景命中旧Prefab、TMX和未命中场景的Keeper候选分别列项；每个候选须核对实际活动引用、Creator必要性及仅供旧九项使用的依据，预存删除和历史字符串命中均不能作为安全删除证据。四层PNG、STREET_BASE_01 Prefab、镜头Controller及身份链明确保留；共享/环境资源、七项正式产品资料、任务/审批/Review/历史记录均受保护，范围未扩大。"
+    },
+    {
+      "severity": "INFO",
+      "message": "测试对象明确是唯一UnitSamples U01，不测试另一套七项正式内容功能或旧九项功能；旧UNIT-SAMPLES-001仍须保持CANCELLED，旧验证不代替新U01证据。现行说明可以更新/标记历史，但历史文档和批准记录不作批量删除，符合AC-08–10。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN.md将QA计划/Client Brief审批、Client实现审批、Creator工程可用性、获批运行矩阵和逐资源实施证据设为执行前置；本轮只设计计划，Creator、构建、运行、资源删除与QA均保持NOT_TESTED，失败环境按BLOCKED处理。实体设备、发布容器、未批准性能阈值和无关全量回归明确排除；不以本计划批准替代QA执行或TEST_REPORT审批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DELIVERABLE.json正确把测试设计/引用清单覆盖标为计划产物结果，并将同版Review/用户审批条件留待后续；v0.1及原UNIT-MENU-SCENE1-QA-PLAN-001批准历史明确保留，符合版本治理。"
+    }
+  ],
+  "next_action": "Product Review通过。QA汇总Client、Tech、QA与Master同版Review后交Producer推进本计划Artifact的用户审批；获批计划仍不授权QA执行，执行与TEST_REPORT须另行走对应Task和审批门禁。"
+}
