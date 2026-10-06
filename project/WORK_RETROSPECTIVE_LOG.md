@@ -2,6 +2,14 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261006-001｜CLI/Web 实验收敛、模型偏好登记与清理
+
+- Owner / 结果 / 门禁：Master 执行用户批准的工作方式校准与实验清理。仅允许 GPT-6 Luna 和 GPT-6.1 Sol；CLI→HTTP→内置浏览器实看及交互验证为首选，已同步当前游戏 Master 配置、Studio 主配置和标准模板默认项。前轮已实看菜单/U10、拖动、加减缩放与重置；本轮不重新构建，不改正式功能任务或 QA/审批结论。证据登记：`agents/master/DECISIONS.md`、`project/DECISIONS.md` 的 `DEC-CLI-WEB-VALIDATION-006`；模板 `agents/master/DECISIONS.md` 与 `templates/game/README.md`。
+- 时间：本轮最早有时钟证据为 2026-10-06 12:31:24 +08:00 环境核验，实验文件清理结束为 12:32:59 +08:00，二者相隔约 1 分 35 秒，包含核验、记录与清理，不能当成完整执行耗时。整个模型登记/清理周期起止及实际制作分段未知。前轮日志记录 build Task 完成耗时 1 分 29 秒；CLI 可能后台继续，不能用父进程返回估算构建耗时。
+- 清理证据：唯一实验构建目录 `apps/client/build/codex-cli-smoke-final-20261006`（35 文件，13,192,533 字节）及 Temp 下 `cocos-cli-smoke-final-20261006.log`、`codex-serve-build-20261006.mjs`、`codex-serve-build-fixed-20261006.mjs`、可视化目录下 `scene1-u10-runtime.jpg` 共五个目标，删除前验证绝对路径所属指定根目录及无链接，删除后逐项确认不存在。日志删除前 SHA256 为 `7695F1548F8EF66CBA240A802F353939AC0C0AE1C2AE0DC639C5674D3004AA23`。8766/8767 无监听，服务脚本对应 Node 进程未发现。实验前 `build/web-mobile`、正式源码/PNG/Scene/Prefab 与共享缓存保留。
+- 原因与限制：尚无同类流程速度基线。直接观察为切换到 6.1 Sol 后浏览器能直接读取与操作，不能确定模型为唯一原因。关闭预览标签时浏览器策略拒绝 file:// 协议操作，停止后续浏览器操作并报告由用户手动关闭该标签；磁盘清理不受影响。旧资源警告与 build-engine SIGTERM 仍属前轮日志事实，运行冒烟不代表正式 QA 通过。
+- 建议 / 复核：Master 下次使用隔离构建/日志目录，核日志完成后再开 HTTP 预览，预计减少提前判失败与入口错误，代价为一次完成信号核验；复核点为下一次维护实测。Master 在已授权委派时显式采用两种允许模型，浏览器任务首选 Sol，复核点为下一次模型调度与实际运行结果。本轮无可继续的正式任务被新增为 READY/IN_PROGRESS 占位。
+
 ## 记录模板
 
 ### <执行周期 ID>｜<关联 Task / Artifact 版本>

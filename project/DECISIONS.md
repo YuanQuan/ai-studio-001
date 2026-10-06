@@ -14,6 +14,16 @@
 
 ## 决策
 
+## DEC-CLI-WEB-VALIDATION-006 — 日常维护首选 CLI 构建与浏览器实测
+
+- 日期：2026-10-06
+- 状态：`ACCEPTED`（用户确认本次成功流程为首选）
+- 范围：当前 Windows/Cocos Creator 3.8.8 项目的日常代码维护与 Web 效果验证。
+- 决策：代码维护后，以提权环境执行 `C:\ProgramData\cocos\editors\Creator\3.8.8\CocosCreator.exe --project <项目目录> --build <构建选项>`；构建目录与日志按批次隔离。Creator 启动命令可能提前返回，须等待日志完成并核对 `web-mobile/index.html` 和实际脚本/资源。用本地 HTTP 服务提供构建产物，先核对 HTTP 响应，再由 Agent 通过内置浏览器直接读取截图、点击、拖动与缩放。主对话/浏览器验证首选 `gpt-6.1-sol`，简单明确的辅助工作可用 `gpt-6-luna`，不使用 `gpt-6-astra`；模型调度唯一规则见 `agents/master/DECISIONS.md`。
+- 结果：2026-10-06 实验日志记录构建完成，浏览器在 `http://127.0.0.1:8767/` 实际显示菜单与 U10 四层场景，横向拖动、放大、缩小、重置均有画面响应。日志亦存在旧资源缺失和 build-engine 子进程 SIGTERM 记录，不能据本次可运行的冒烟结果宣称完整构建质量或正式 QA 通过。切换到 6.1 Sol 后成功可作为首选依据，单次实验未证明模型是唯一原因。
+- 受影响 Artifact / 角色：Master 日常调度、Client 维护与后续 QA 的运行准备；现有 Artifact、专业 Review、用户批准及 Web 多分辨率/性能门禁继续按原记录执行。
+- 迁移 / 回滚说明：优先复用已成功的 CLI→HTTP→内置浏览器链路；若出现真实权限/工具阻塞，先报告具体原因。本次构建、临时服务脚本、日志及验证截图按用户指令清理；源码、正式 PNG、Prefab、Scene、共享 Creator 缓存及实验前的 `build/web-mobile` 保留。正式 QA、多分辨率与性能验收尚未执行。
+
 ## DEC-UNIT-MENU-WEB-TEST-005 — 示例1分阶段 Web 多分辨率测试
 
 - 日期：2026-10-05
