@@ -1,5 +1,7 @@
 # 百鬼夜市｜项目美术指南
 
+2026-10-05 示例1四层切图交接：用户提供的四层 PSD 与导出 PNG 原样使用，具体文件与同尺度重组图见 `deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md`。用户已取消本批切图效果的专业复审和额外预览环境前置环节，由用户直接审核具体结果；Gate2 v0.3 已于 2026-10-05 获 `USER_APPROVED`（见 `tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json`），U01 客户端实现 v0.2 亦于 2026-10-06 获 `USER_APPROVED`（见 `tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json`）。正式 QA 仍按独立门禁执行。下文涉及旧空景或既往专业审图的记录保留为历史，不覆盖此决定。
+
 更新：2026-10-03。当前视觉选择：[第一街精确选定参考 v0.4](../deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md)。用户已退回加宽版并选定未加宽**非像素**附件；不再继续A/B生产方向。当前新单元：[孟桃奶茶店 v0.5](../deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md) 三图与拆件方案已获 USER_APPROVED。下一环节是[正式分层与单页图集出图前签认 v0.1](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_BRIEF.md)，仍待本阶段专业及用户审批。全景或概念批准都不等于生产骨骼/atlas/Creator完成。
 
 ## 当前选择与八条长期原则

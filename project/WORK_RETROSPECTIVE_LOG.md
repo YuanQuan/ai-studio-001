@@ -2,6 +2,13 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-U01-GENTLE-001｜U01 温和地府元素美术方案 v0.1 送用户审阅
+
+- 结果/证据/门禁：Master 建 `U01-GENTLE-UNDERWORLD-ART-PLAN-001`，Art 在已批四层 PSD 与当前手机画面上完成五份文字方案、自审和 `DELIVERABLE.json`；Tech 对原层画布/alpha/最前景边界及后续 PSD 路径 Review，Master 同版 Review。10/10 Required 与索引一致，四项方案验收 PASS，三份 Review `APPROVED`，Producer 将 Task/Approval 送 `USER_REVIEW`。证据：`tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/TASK.json`、`ARTIFACT_APPROVAL.json`、`deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/`；方案 SHA-256 `107095375868D24BAFAA1A5778E759E8C4A711CF8ACC6ABB1BA4710F152B42E3`。用户尚未决定，未生产新 PSD/图片/切片或改程序；后续首图预签、具体资源 Gate2 和运行 QA 均独立等待。
+- 时间/耗时（Asia/Shanghai）：Task/Approval 文件创建 11:58:24；Producer 首次建档核验 11:59:47；首份 Art Required 文件创建 12:01:47；Art 自审/交付索引首版 12:04:20；Art 权利说明同版修订 12:06:10–12:06:45；Tech Review 12:07:07；Master Review 12:07:31；Art 索引末次同步 12:08:11；Producer 送审 12:08:36，本复盘核验 12:09:12。建档至送审可见墙钟 10 分 12 秒，包含 Owner 制作、同版补正、跨角色评审与状态登记，不能当 Art 净制作时长。各角色净工时、用户请求精确时刻及用户审批等待均未知。
+- 观察/建议：没有同类目标或历史可比基线，不评价速度；本轮可见一次来源权利说明补正，因 Art 初稿未引用旧四层计划中已登记的用户原图与商改权声明，补正后没有重复索权。建议 Art Owner 在下一次 U01 首图预案起稿先核历史 `RIGHTS_AND_SOURCE.md` 和现行 Gate2 Approval，再写本批新工具/来源清单；代价为一次对照，复核点是首图前 Art/Tech 同批预签。`project/ART_GUIDE.md` 顶部旧 Gate2 状态与当前已批记录不一致的问题，Art 已于本轮更正为四层 Gate2 v0.3 与 Client v0.2 均 `USER_APPROVED`，Producer 已对照两份正式 Approval 核实；下一次首图前 Art/Tech 同批预签时，再检查指南与正式 Approval 是否一致。上述核对不新增审批门禁。
+- Continuity check：本 Task 已到 `USER_REVIEW`，下游正式出图等待具体 v0.1 用户决定及 Art/Tech 首图预签，没有空转 `READY/IN_PROGRESS`。本轮无用户审批耗时、实图生产或程序验证结论。
+
 ### WR-20261006-001｜CLI/Web 实验收敛、模型偏好登记与清理
 
 - Owner / 结果 / 门禁：Master 执行用户批准的工作方式校准与实验清理。仅允许 GPT-6 Luna 和 GPT-6.1 Sol；CLI→HTTP→内置浏览器实看及交互验证为首选，已同步当前游戏 Master 配置、Studio 主配置和标准模板默认项。前轮已实看菜单/U10、拖动、加减缩放与重置；本轮不重新构建，不改正式功能任务或 QA/审批结论。证据登记：`agents/master/DECISIONS.md`、`project/DECISIONS.md` 的 `DEC-CLI-WEB-VALIDATION-006`；模板 `agents/master/DECISIONS.md` 与 `templates/game/README.md`。

@@ -4,6 +4,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 | 时间 | 任务 | Artifact | 版本 | 路径 | 决定 | 用户反馈 | 替代版本 |
 |---|---|---|---|---|---|---|---|
+| 2026-10-07 11:59:47 +08:00（Producer建档；非用户决定） | U01-GENTLE-UNDERWORLD-ART-PLAN-001 | 温和地府元素美术制作前方案 | v0.1 | `tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json`；计划路径 `deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md` | DRAFT（待制作、评审及用户决定） | 用户提出温和不恐怖的地府线索，仅授权美术方向方案；未批准该方案或拟制资源。 | 现有 U01 已批 PSD/切图/Client v0.2 保持原版本；本任务不进入客户端程序效果，后续正式图片制作另待本方案 Gate1 明确批准。 |
+| 2026-10-07 12:08:36 +08:00（Producer送审；非用户决定） | U01-GENTLE-UNDERWORLD-ART-PLAN-001 | 温和地府元素美术制作前方案 | v0.1 | `tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json`；`deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md` SHA `107095375868D24BAFAA1A5778E759E8C4A711CF8ACC6ABB1BA4710F152B42E3`、`DELIVERABLE.json`、Art/Tech/Master Review | USER_REVIEW（待用户对本方案版本作决定） | 10/10 Required 与交付索引一致，Art/Tech/Master 同版均 APPROVED；用户尚未批准 v0.1，也未审新图片。 | 只有用户明确批准制作前方案后才可进入首图前 Art/Tech 同批预签和既有 PSD 定向修订；实际切片及重组还需独立 Gate2 批准，Client 本轮不接入。 |
 | 2026-09-28 | PRODUCT-001 | 产品概要 | v0.1 | deliverables/product/PRODUCT-001/v0.1/PRODUCT_OUTLINE.md | REJECTED（要求修订） | Master转达：普通店员辅助；顾客独立模块，多类触发及店长/装扮互动，建立配置体系 | v0.2随后要求修订，未批准 |
 | 2026-09-28 | PRODUCT-001 | 产品概要 | v0.2 | deliverables/product/PRODUCT-001/v0.2/PRODUCT_OUTLINE.md | REJECTED（要求修订） | Master转达：独立十八层进货系统，后期每日世界限量资源争夺 | v0.3修订中，未批准 |
 | 2026-09-28 | PRODUCT-001 | 产品概要 | v0.3 | deliverables/product/PRODUCT-001/v0.3/PRODUCT_OUTLINE.md | REJECTED（要求修订） | Master转达：单一共享世界、顾客访问/接待排队及闹事惩罚 | v0.4修订中，未批准 |

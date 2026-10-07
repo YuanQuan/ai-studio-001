@@ -1,0 +1,50 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+  "owner": "art",
+  "summary": "U01 已批四层场景的温和地府元素制作前方案 v0.1：只规划桥侧少量彼岸花、桥心莲水浅刻、左端圆润引路石、右端现有空匾的原创‘忘川’字样，说明手机中心/左右极限、四层映射、视觉锚点、来源权利和双重用户审批。未制作图片或修改客户端。",
+  "artifacts": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "方案只针对现有四层 PSD 增加低密度、非恐怖的地府线索，保留冷夜蓝/暖灯橙、桥河月夜、非像素二维插画、清晰通路和镜头构图。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md；本项仅判方案约束，未判新实图。"
+    },
+    {
+      "criterion": "逐元素给出造型、明度、2172×724 位置、390×844 首屏及左右极限/放大可见性、PSD 层和控件避让，引用已批准母版与实际截图。",
+      "result": "PASS",
+      "evidence": "PLACEMENT_AND_LAYER_MAP.md；已实际查看旧版中心、left-min/right-min 与 left-max/right-max 截图。新稿未绘，候选坐标待首图核实。"
+    },
+    {
+      "criterion": "记录旧源版本、原创方向、IP/字体风险、锚点保持/可调整/需另批以及本阶段不绘制或导出新资源的门禁。",
+      "result": "PASS",
+      "evidence": "RIGHTS_AND_SOURCE.md、VISUAL_ANCHORS.md、ASSET_MANIFEST.md、ART_PRODUCTION_PLAN.md；已登记用户原图商用改编权声明，新增工具/来源与相似风险在首图预签中核对。"
+    },
+    {
+      "criterion": "Art、Tech Lead、Master 同版方案 Review 完成，具备提交 Gate 1 用户审批的条件；后续首图须以用户批准和 Art/Tech 同批预签为门禁。",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json 均为 APPROVED。ARTIFACT_APPROVAL.json 尚无本方案的 USER_APPROVED，Producer 负责送 USER_REVIEW；首图预签与新 PSD 制作均未开始。"
+    }
+  ],
+  "assumptions": [
+    "文字‘忘川’只是牌匾环境身份，不定义新地名规则、关卡、交互或可通行入口。",
+    "新增局部只计划合入 L03/L04，最终四层导出数量、画布、原点与已批准视差语义不变。",
+    "候选像素矩形用于方案评审，正式笔触边界与各手机实视窗以用户批准方案后的样张检验。"
+  ],
+  "risks": [
+    "用户已声明拥有原图及商用改编权；独立权属证明、完整生成工具条款和第三方相似性未核清。若首图预签发现影响实际用途的工具条款未核、新增来源许可问题或可识别近似，须停止受影响的正式出图。",
+    "右匾宽度较小，‘忘川’原创手写须在手机右端实图核可读；不调用未许可字库。",
+    "花与桥纹在不同缩放和左右极限可能被裁去；新图必须按定位表提供实图证据，不以本方案的几何预测冒充通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
