@@ -1,0 +1,48 @@
+{
+  "id": "U02-TOURIST-QA-EXEC-001",
+  "title": "U02 游客正式接线构建的功能、视觉与性能验收",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "在 U02 客户端正式接线具体版本获用户批准后，按已批 QA Plan v0.1 对同一 Creator 3.8.8 Web 构建执行功能、全帧及挂件视觉、性能、真实触控与 U01 关联回归，并将有证据的 TEST_REPORT 交用户确认。",
+  "inputs": [
+    "deliverables/qa/U02-TOURIST-QA-PLAN-001/v0.1/TEST_PLAN.md、CLIENT_TEST_CASES.md、VISUAL_AND_PERFORMANCE_MATRIX.md、TECH_THRESHOLD_PROPOSAL.md（USER_APPROVED）",
+    "U02-TOURIST-ASSET-001 U02-FULL-A/formal v0.1 Gate2 与 U02-TOURIST-CLIENT-ASSET-001 v0.1（USER_APPROVED）",
+    "U02-TOURIST-CLIENT-INTEGRATION-001 的实际代码、构建清单、资源审计和 IMPLEMENTATION_REPORT 的精确 USER_APPROVED 版本（依赖门禁）",
+    "project/ASSET_HANDOFF_REGISTRY.md、rules/qa_protocol.md、rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/TEST_REPORT.md",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/TEST_CASE_RESULTS.md",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/VISUAL_EVIDENCE_INDEX.md",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/PERFORMANCE_EVIDENCE.md",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/UI_REVIEW.json",
+    "deliverables/qa/U02-TOURIST-QA-EXEC-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U02-TOURIST-QA-EXEC-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "报告固定实际 Creator Web 构建、83 文件或最终实际文件清单及哈希、获批 Art/Client 资源身份、导入 UUID、测试设备/浏览器/DPR/视口和每条可复现证据；不借用旧空态构建或其他批次结果。",
+    "按已批 40 组基础状态与全 20 主体帧检查四动作、左右、无/单件/三件、挂点、遮挡、主体哈希不变、原地动作、快切、重置、返回重入、错误回滚，并记录每例 PASS/FAIL/BLOCKED/NOT_TESTED。",
+    "在 390×844 和 390×667 复核布局、托盘上下边界及点击间隙；核当前构建真实手指触控、touch/mouse 同手势去重、U01 四层拖缩重置返回重入和跨页输入隔离。无可复查证据的触摸或安全区项目保持 NOT_TESTED。",
+    "使用已批固定 Web 候选性能阈值与真实原始采样判 p95 帧时、长帧、FPS、DrawCall、纹理面积、首帧响应及退出清理；测量条件不满足时逐项 NOT_TESTED，不降低阈值或把静态估算写为实测。",
+    "列明 P0/P1/P2 缺陷、修复与回归轮次；QA、Client、Tech、Art、UI、Master 对同版 TEST_REPORT Review 后交用户确认。必要项缺测或 P0/P1 未关闭不得整体 PASS，用户确认与 Master 接受前不标 DONE。"
+  ],
+  "dependencies": [
+    "U02-TOURIST-QA-PLAN-001",
+    "U02-TOURIST-ASSET-001",
+    "U02-TOURIST-CLIENT-ASSET-001",
+    "U02-TOURIST-CLIENT-INTEGRATION-001"
+  ],
+  "status": "CANCELLED",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-07 Master 预建正式 QA 执行任务。当前客户端接线仍在制作/评审，精确实现 Artifact 未获 USER_APPROVED，故保持 BACKLOG，不开始 QA TEST_REPORT。",
+    "此前用户口述 390×667 触屏操作正常，但无当前正式资源接线构建的独立证据；待本任务实际复核，不能预填 PASS。",
+    "2026-10-07 15:20:04 +08:00 Master 依据用户新组织规则逐项授权取消本单元示例未完成 QA 专业任务；Producer 记录 BACKLOG→CANCELLED。既有计划/Review/审批历史保留，不再启动 QA Agent 或执行本 Task；未执行的测试不标 PASS。示例 Owner 自行记录可复核的运行与视觉检查；若升级正式功能/正式资源接入，由 Master 重新编排适用 QA 与审批。本次不改变其他已 DONE QA 计划或 Client QA-MEASUREMENT 自检任务。"
+  ]
+}

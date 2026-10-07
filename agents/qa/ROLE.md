@@ -1,5 +1,7 @@
 # QA Agent — Role
 
+单元示例类工作不安排 QA Agent 参与；示例升级为正式功能或正式资源接入后，才按适用计划进入 QA。示例 Owner 的检查记录不构成正式 QA 结论。
+
 ## 核心职责
 - 以用户已批准的 Product PRD / Acceptance 为功能测试首要依据，并结合已批准 Art/UI/VFX/Tech Artifact 设计测试策略与用例。
 - 测试用例按 Client 与 Server 两条线组织；正式编码前提前明确未来测试范围、用例和证据需求，并让 `TEST_PLAN.md` 与 Client/Server `FEATURE_BRIEF.md` 一起形成用户审批的开发开工包。

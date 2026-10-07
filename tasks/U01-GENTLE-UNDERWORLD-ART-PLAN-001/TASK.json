@@ -1,42 +1,43 @@
 {
   "id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
-  "title": "U01温和地府挂件式元素美术修订方案",
+  "title": "U01 六件挂件局部返工与酆都城字样选择方案",
   "type": "art",
   "owner": "art",
   "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
-  "objective": "依据用户退回旧 v0.2 实图后的明确新要求，在已批原四层 PSD 上规划孔明灯、引魂幡、右侧原匾“酆都城”、中央桥悬挂“奈何桥”牌，以及桥左街道带向右箭头的“黄泉路”指示牌。每件新增或改字对象在 PSD 中独立成层、计划独立透明全画布导出，便于后期调整位置；旧花、莲纹、景石、“忘川”候选不采用。只提交新版本制作前文字方案和同版评审，本阶段不绘制拟正式图、不改程序。",
+  "objective": "响应用户对 v0.3 资源 Gate2 的局部反馈：保留两盏孔明灯视觉，提供酆都城四款字体笔势候选，重设计奈何桥牌及招魂幡；提交概念对照与可执行的 v0.3 Gate1 修订制作方案。本阶段不改正式 PSD/PNG 或程序。",
   "inputs": [
-    "用户2026-10-07最新反馈：不采用 U01-GENTLE-UNDERWORLD-ASSET-001 v0.2；改为孔明灯、引魂幡、右匾“酆都城”、桥牌“奈何桥”、桥左“黄泉路→”，新增物件均应为独立挂件层以便后期移位",
-    "U01-GENTLE-UNDERWORLD-ART-PLAN-001 v0.1 Gate1 USER_APPROVED 历史与 U01-GENTLE-UNDERWORLD-ASSET-001 v0.2 Gate2 REJECTED 历史；旧版方案及图像不得当作本版获批输入",
-    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd 及原四层全画布导出（当前已批基底）",
-    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/ 竖屏截图与已批镜头边界、悬浮控件位置",
-    "project/ART_GUIDE.md、project/ASSET_HANDOFF_REGISTRY.md、rules/visual_production_contract.md、rules/artifact_contract.md"
+    "用户最新 Gate2 反馈：孔明灯可以收录；酆都城换几个字体样式；奈何桥牌与背景不协调、招魂幡重设计",
+    "U01-GENTLE-UNDERWORLD-ASSET-001 v0.3 Gate2 REJECTED 历史、CUT_MANIFEST.json 与 PSD",
+    "U01-GENTLE-UNDERWORLD-ART-PLAN-001 v0.2 USER_APPROVED 历史及原四层 PSD",
+    "rules/visual_production_contract.md、project/ART_GUIDE.md"
   ],
   "deliverables": [
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/VISUAL_ANCHORS.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/PLACEMENT_AND_LAYER_MAP.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/ASSET_MANIFEST.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/ART_SELF_REVIEW.md",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/DELIVERABLE.json",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/ART_REVIEW.json",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/TECH_REVIEW.json",
-    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_SELF_REVIEW.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/lettering_options.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/bridge_banner_direction.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/TECH_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/MASTER_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/DELIVERABLE.json",
     "tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "方案将用户退回的花、莲纹、景石与“忘川”从本版候选中移除，逐一规划孔明灯、引魂幡、“酆都城”字、“奈何桥”悬牌及桥左“黄泉路→”指示牌，保持温和非恐怖与已批月夜桥河构图。",
-    "每件新增挂件或字面有稳定候选 ID、独立 PSD 图层、计划独立透明全画布 PNG、可移动锚点与遮挡顺序；明确旧四层基底像素/最前景边缘不变，后期客户端独立节点移位须另行接入。",
-    "逐元素给出候选位置、原点、手机 9:16 至 9:21 的中心/左右极限与 zoom 1–1.8 可见性、控件与通路避让、文字在实际显示尺度下可读性，以及孔明灯与引魂幡的层级和非恐怖造型。",
-    "记录原 PSD 与参考来源、字体/手写字和 IP 许可状态、工具及预算/切图方案；新制作方案用户批准之前，不生成或导出拟进入正式资源的图片、PSD、挂件切片。",
-    "Art 自审、Tech 与 Master 对同一 v0.2 方案 Review 通过后提交用户 Gate1 审批；用户批准后才进入首图前 Art/Tech 同 SHA 预签与实际资源修订，具体图像与切图仍需独立 Gate2。"
+    "两盏孔明灯按现有 v0.3 视觉和独立层保留，整批 v0.3 Gate2 退回历史不误记为批准。",
+    "酆都城至少三款可比较的具体字体笔势概念图，文字准确，来源与字体许可说明明确。",
+    "奈何桥牌及招魂幡各有与原月夜桥街背景协调、非恐怖且独立可移动的具体视觉草案与锚点。",
+    "方案只授权未来局部修 PSD；四原层、黄泉路牌及灯身份保留，首图前新 Art/Tech 同 SHA 预签与具体切片 Gate2 均保留。",
+    "Art、Tech、Master 同一方案 Review 通过，Producer 核实际文件与版本后送用户选择字样并审批 Gate1。"
   ],
   "dependencies": [
     "UNIT-MENU-FOUR-LAYER-CUT-001",
     "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"
   ],
-  "status": "DONE",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "2026-10-07 Master依据用户新反馈创建美术制作前方案任务。U01现有四层Gate2 v0.3与客户端实现v0.2批准记录保留；本轮无程序接入。",
@@ -47,6 +48,8 @@
     "2026-10-07 用户明确退回旧资源 v0.2 Gate2 并指定孔明灯、引魂幡、酆都城/奈何桥/黄泉路→及每件独立挂件层。Master 将本制作前方案 Task 修订为 v0.2，Required 11 项；旧 v0.1 USER_APPROVED 只保留历史，不代表新元素方案已批。当前 REVISION，Art 正编制文字方案；新方案获用户批准前不生成拟正式图片/PSD/切片或改客户端。",
     "2026-10-07 13:55:14 +08:00 Producer 核 Art 已实际提交 v0.2 ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、PLACEMENT_AND_LAYER_MAP.md 三份非空 Required 草稿，故 REVISION→IN_PROGRESS；余 Required 与同版评审待，Gate1 Approval DRAFT，新图/Client 未解锁。",
     "2026-10-07 13:59:57 +08:00 Producer 核 v0.2 Gate1 11/11 Required 实存、DELIVERABLE 11 条唯一同序索引与四项方案验收 PASS，Art/Tech/Master 三 Review 均 APPROVED；计划 SHA-256 1243FFE4283B481E68604A594AD4D83EA6E13606AE863F281223382710401BB2 与 Master Review 绑定。任务经 Owner 交付 REVIEW→USER_REVIEW，待用户对具体 v0.2 方案决定。审批尚未批准，不生成新图/PSD/切片或接入客户端。",
-    "2026-10-07 14:07:31 +08:00 Producer 依据用户明确“批准”及同版 11/11 Required、四项验收 PASS、Art/Tech/Master Review APPROVED，将方案 v0.2 Gate1 记 USER_APPROVED、Task USER_REVIEW→DONE。资源 v0.3 首图前须 Art/Tech 同 SHA 预签，具体图像 Gate2 另审，Client 未解锁。用户回复精确时刻未知。"
+    "2026-10-07 14:07:31 +08:00 Producer 依据用户明确“批准”及同版 11/11 Required、四项验收 PASS、Art/Tech/Master Review APPROVED，将方案 v0.2 Gate1 记 USER_APPROVED、Task USER_REVIEW→DONE。资源 v0.3 首图前须 Art/Tech 同 SHA 预签，具体图像 Gate2 另审，Client 未解锁。用户回复精确时刻未知。",
+    "2026-10-07 Master 依据用户最新局部退回更新本 Task 至 v0.3，13 项 Required；Art 已实际产出六份方案文档和两张非生产概念图，故 IN_PROGRESS 有实物依据。当前 v0.3 整批 Gate2 REJECTED，仅两灯局部认可；新正式资源需独立 Gate1/首图预签/Gate2。",
+    "2026-10-07 15:35:40 +08:00 Producer 核 U01 挂件返工 Gate1 v0.3 13/13 Required 实存非空、DELIVERABLE 16 条唯一索引且覆盖全部 Required；三项方案验收 PASS、正式新版 PSD/切图 NOT_TESTED；Art/Tech/Master 同版 Review APPROVED 且 JSON 结构键符合 Review Schema。ART_PRODUCTION_PLAN.md SHA-256 1D1C073245F716DDDE5A3B11FC745E618D098B50F02EC14F901B0C259EA27D1C，两张概念 PNG 和源 SVG/脚本实存，RIGHTS_AND_SOURCE 已把旧资源 v0.3 Gate2 准确记为退回。Task IN_PROGRESS→REVIEW→USER_REVIEW；待用户选择酆都城 A/B/C/D 并审核桥牌/飘带及方案，本版 Approval USER_REVIEW，未获 Gate1 批准，不改正式 PSD/PNG 或接 Client。旧 v0.2 Gate1 USER_APPROVED 保留历史，不沿用作新版批准。"
   ]
 }

@@ -84,6 +84,9 @@ Product 主导公共配置的业务表结构、字段语义、业务 ID 与关�
 - `IMPLEMENTATION_REPORT.md`：变更范围、数据/缓存/协议影响、验证结果、回滚/迁移说明、已知风险。
 
 ### QA Agent
+
+单元示例类工作不要求 QA 固定交付物，也不分派 QA Agent；示例 Owner 记录检查证据。示例升级为正式功能或正式资源接入后，以下正式 QA 交付要求重新适用。
+
 正式功能按适用范围交付：
 - 正式编码前先提交 `TEST_PLAN.md`，与相关 Client/Server `FEATURE_BRIEF.md` 组成开发开工包并一起通过用户审批；其中明确未来 Client、Server、Visual QA、目标平台/环境、证据要求和显式不测试项。
 - `CLIENT_TEST_CASES.md`：客户端用例，必须可追溯到已批准 PRD/Acceptance；UI/VFX 相关用例同时引用批准视觉 Artifact。

@@ -1,0 +1,36 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版审阅绑定：deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md；SHA-256 1d1c073245f716ddde5a3b11fc745e618d098b50f02ec14f901b0c259ea27d1c。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核现有 v0.3 挂件 PSD SHA-256 为 186a86cd365f46293a7103a3b58d1259ecb5d131e3112b0ff803cab761e78cf5，画布 2172×724、24 个栅格层且各部件独立。方案沿同一 PSD 另存并局部修字、桥牌和幡，原四层像素保持不变；两盏孔明灯沿用各自原有三层与稳定 ID，须在新版导出时核像素身份。"
+    },
+    {
+      "severity": "INFO",
+      "message": "桥牌仍在 L04 前、随桥体深度；幡与路牌在 L03 前 L04 后；右字随牌楼，两个灯参考远景 0.8。计划盒、pivot 和独立全画布 RGBA 输出沿用现有 CUT_MANIFEST 的坐标约定，适合局部重做并保留后续单件隐藏/移动能力；新盒和支点尚非实测。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "原桥牌 pivot (1086,422) 靠近旧盒上缘，改弧形石牌后应以真实接触点复核；幡脚锚 (700,499) 与缩水后的布盒也需复核。若最终 alpha 盒或 pivot 改变，更新清单、同尺度重组与 30 个静态视窗及途中样本，不得仅沿用旧坐标。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "六张 2172×724 RGBA8 全展开约 36.0 MiB，连原四张全画布图约 60.0 MiB；这只是像素展开估算，不是压缩后 GPU 内存或运行性能。首张正式样张前 Art/Tech 同 SHA 预签须明确透明边界、可能 trim 与图集策略、目标预算；后续 Client/Creator 和目标环境再核真实页数、采样与内存。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "四款酆都城字样是非生产方向图。选款后需在现有可编辑字层逐字修订，核准确字形、原匾留白以及右移手机原倍率可读性。青灰石牌与双短飘带亦须以实际 PSD、alpha、遮挡及中心/左/右、zoom 1/1.8 的 30 视窗验证；概念板不构成视觉或性能 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "来源表未引入外部图或正式字库，四款方向声明原创手写；正式字形不得描摹现成字体。若换字库、参考图、作画工具或资源范围，须在首图前补许可与外观相似核查并重签同批预案。现有 v0.3 的预签和两盏灯局部可收录意见均不替代本轮 Gate1 与最终切图 Gate2。"
+    }
+  ],
+  "next_action": "交 Master 同版复核并呈用户选择酆都城字样及审批 Gate1 修订方案。用户批准后、首张正式样张前 Art/Tech 对同一批次预签；制作新版 PSD、六件独立导出和同尺度重组后交用户作 Gate2。正式接入及运行结论留待具体资源获批之后。"
+}

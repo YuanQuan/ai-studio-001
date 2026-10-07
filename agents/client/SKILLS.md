@@ -9,7 +9,7 @@
 - `client-performance-review`：逻辑/UI/VFX/资源/GC/加载与运行时性能审查。
 - `client-code-review`：客户端代码健康评审，检查重复、臃肿、职责过大和公共能力碎片化。
 - `client-log-guideline`：日志描述默认中文，同时保留稳定模块标签、错误码、协议 ID 和字段名便于检索。
-- `implementation-cost-review`：在质量和性能不下降的前提下控制上下文、输出和模型使用成本；确定性实现优先较快模型，高风险问题再升级推理能力。
+- `implementation-cost-review`：在质量和性能不下降的前提下控制上下文与输出成本；模型选择遵守 `AGENTS.md`，能力或质量阻塞交 Master 处理。
 
 具体 UI、异步、资源、热更新、架构模式等专项 Playbook 待后续能力校准后再细化。
 

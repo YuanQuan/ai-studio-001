@@ -1,0 +1,47 @@
+{
+  "id": "U03-SHOP-QA-EXEC-001",
+  "title": "U03 六店单显切换实际构建验收",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "在 U03 六店正式资源 Gate2 和 Client 实现具体版本获批后，按已批 QA Plan v0.1 对真实 Creator Web 产物执行功能、视觉、资源身份、性能及 U01/适用 U02 回归，并形成 TEST_REPORT 供用户确认。",
+  "inputs": [
+    "U03-SHOP-QA-PLAN-001 v0.1 TEST_PLAN、CLIENT_TEST_CASES、VISUAL_AND_PERFORMANCE_MATRIX、TECH_THRESHOLD_PROPOSAL（USER_APPROVED）",
+    "U03-SHOP-CLIENT-IMPLEMENT-001 实际代码与 IMPLEMENTATION_REPORT 的确切 USER_APPROVED 版本；U03-SHOP-ASSET-001 六店正式切片 Gate2 USER_APPROVED 版本",
+    "实际 Cocos Creator 3.8.8 Web 构建、构建身份/导入 UUID、390×844 和 720×1280 可复现视口与 U01/适用 U02 实际回归基线",
+    "rules/qa_protocol.md、rules/cocos_cli_browser_workflow.md、project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "deliverables": [
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TEST_REPORT.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TEST_CASE_RESULTS.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/VISUAL_EVIDENCE_INDEX.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/PERFORMANCE_EVIDENCE.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/ART_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-QA-EXEC-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "TEST_REPORT 指明实际构建、源/切片/Creator UUID 与 Gate2 具体批准身份、测试环境和可复现证据；逐项对照 U03 已批准 Product、Art、Tech、UI、Client 及 QA Plan，不用参考静图或文档评审替代运行结果。",
+    "实测六店单显、初始/重入 01、双向循环、快速乱序/故障/重试、图牌名与接地层原子一致、六牌不同和两屋顶无大 LOGO，并附两候选竖屏和黑灰白夜蓝 alpha/遮挡的同尺度视觉证据。",
+    "按已批固定 Web 口径记录逐店帧时/加载/切换/纹理占用原始数据与阈值结果，复核 U01 和实际已接入 U02；目标设备/小游戏平台未测时明确 NOT_TESTED，不把固定 Web 结果外推。",
+    "列明每例 PASS/FAIL/BLOCKED/NOT_TESTED、P0/P1/P2 缺陷与回归轮次；QA、Client、Tech、Art、Master 同版 Review 后将实际 TEST_REPORT 交用户确认，用户确认和 Master 接受前不标功能 DONE。"
+  ],
+  "dependencies": [
+    "U03-SHOP-QA-PLAN-001",
+    "U03-SHOP-ASSET-001",
+    "U03-SHOP-CLIENT-IMPLEMENT-001"
+  ],
+  "status": "CANCELLED",
+  "approval": "APPROVAL",
+  "notes": [
+    "六店 Gate2 v0.4 与 Client 实施 v0.1/R3 已 USER_APPROVED；R3 Creator 3.8.8 Web 构建 task 1791356044228 可作正式 QA 输入。2026-10-07 15:16:25 +08:00 Producer 解锁 BACKLOG→READY；QA Owner 尚未按本任务产出 TEST_REPORT 或用例结果，待实际执行证据后再转 IN_PROGRESS，不预填 PASS。",
+    "性能阈值来自用户已批 QA Plan v0.1 的固定 390×844 Web 候选；若真实资源证明阈值不可行，按受影响版本修订并重新审批，不在现场放宽。",
+    "2026-10-07 15:19:20 +08:00 Producer 核首份 Required Artifact deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TEST_REPORT.md 已于 15:18:51 +08:00 落盘，190 字节，题为执行中；正文核 Client v0.1/R3 USER_APPROVED、Gate2 v0.4 与 builder 1791356044228，明确尚无总体 PASS。Task READY→IN_PROGRESS / TASK_STARTED，Approval 保持 DRAFT；用例、性能及正式结论均待 QA Owner 实际取证。",
+    "2026-10-07 15:20:27 +08:00 Master 依据用户新组织规则逐项授权取消本单元示例未完成 QA 专业任务；Producer 记录 IN_PROGRESS→CANCELLED。既有计划/Review/审批与已落盘执行中草稿保留历史，不再启动/继续 QA Agent 测试；未执行或未出正式结论的检查不标 PASS。示例 Owner 自行记录可复核运行和视觉检查；升级正式功能/正式资源接入时由 Master 重新编排适用 QA。本次不改变已 DONE QA 计划或 Client QA-MEASUREMENT 自检。",
+    "2026-10-07 15:22:10 +08:00 Producer 发现取消登记 15:20:27 后仍有并行旧 QA 会话写入：GATE2_MATCH_AUDIT.json 15:20:35、390_reenter_cycle_01.jpg 15:20:54、cycle_10.jpg 与 console 日志 15:21:00、r3_390_canvas.json 15:21:39。已向 Master 报告协调停止；文件原样留历史，不将取消后的采集解释为 QA PASS 或重启本 Task。截至本核查 Task 仍 CANCELLED、Approval SUPERSEDED。"
+  ]
+}

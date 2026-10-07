@@ -33,12 +33,13 @@
     "UNIT-SAMPLE-SINGLE-ENTRY-QA-PLAN-001",
     "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"
   ],
-  "status": "USER_REVIEW",
+  "status": "CANCELLED",
   "approval": "APPROVAL",
   "notes": [
     "2026-10-06 17:13 +08:00 Master在实现v0.2获用户批准后创建；本Task只设计并审批正式QA环境矩阵，不执行TEST_REPORT。",
     "2026-10-06 17:16 +08:00 QA开始读取已批准输入、规则与本机候选环境，实际编写v0.1 WEB_TEST_MATRIX.md。",
     "2026-10-06 17:18 +08:00 WEB_TEST_MATRIX.md、DELIVERABLE.json和QA_REVIEW.json已形成；QA自审APPROVED，Task进入REVIEW。Client、Tech、Master同版Review与用户审批待完成；正式QA未执行。",
-    "2026-10-06 17:24 +08:00 Producer核验v0.1全部7/7 Required路径存在，Deliverable artifacts索引与Task一致；QA/Client/Tech/Master四份同版Review均APPROVED，四项方案送审验收PASS。Task进入USER_REVIEW，正式QA未执行。"
+    "2026-10-06 17:24 +08:00 Producer核验v0.1全部7/7 Required路径存在，Deliverable artifacts索引与Task一致；QA/Client/Tech/Master四份同版Review均APPROVED，四项方案送审验收PASS。Task进入USER_REVIEW，正式QA未执行。",
+    "2026-10-07 15:20:04 +08:00 Master 依据用户新组织规则逐项授权取消本单元示例未完成 QA 专业任务；Producer 记录 USER_REVIEW→CANCELLED。既有计划/Review/审批历史保留，不再启动 QA Agent 或执行本 Task；未执行的测试不标 PASS。示例 Owner 自行记录可复核的运行与视觉检查；若升级正式功能/正式资源接入，由 Master 重新编排适用 QA 与审批。本次不改变其他已 DONE QA 计划或 Client QA-MEASUREMENT 自检任务。"
   ]
 }

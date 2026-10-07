@@ -7,7 +7,7 @@
 - `persistence-review`：持久化、迁移和一致性检查。
 - `server-reliability-review`：容错、幂等和运行可靠性检查。
 - `server-code-review`：服务端代码评审，重点检查重复代码、过大职责、无必要抽象和公共能力碎片化。
-- `implementation-cost-review`：在质量不下降的前提下控制上下文、输出和模型使用成本；优先较快模型处理确定性实现，将高推理成本留给真正高风险问题。
+- `implementation-cost-review`：在质量不下降的前提下控制上下文与输出成本；模型选择遵守 `AGENTS.md`，能力或质量阻塞交 Master 处理。
 
 具体语言/框架/云平台 Skill 暂不创建，等你完成技术选型后再建立。
 

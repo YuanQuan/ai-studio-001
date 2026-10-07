@@ -2,6 +2,8 @@
 
 一个正式功能只有同时满足以下条件，Master Agent 才能标记为 `DONE`：
 
+单元示例类任务不安排 QA Agent，也不以 `TEST_PLAN`、`TEST_REPORT` 或 QA `PASS` 作为示例完成条件；Owner 须提供与任务验收标准相应的可复核检查证据。示例转为正式功能或正式资源接入时，本节正式功能完成条件重新适用，不沿用示例检查代替 QA。
+
 1. 需求范围与 Acceptance Criteria 已明确，并存在正式 Product Artifact（适用时）。
 2. `rules/artifact_contract.md` 要求的所有必要专业交付物均已存在、可追溯、通过必要专业 Review，并且当前正式版本已获得用户明确批准；聊天内容不能替代缺失产物。
 3. 实现与已锁定的 Product / Architecture / API / UI / Art / VFX / Config 规格一致。

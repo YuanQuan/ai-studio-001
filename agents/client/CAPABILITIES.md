@@ -12,7 +12,7 @@
 - 日志、调试、Lab/Showcase 和自动化测试支持。
 - 在编码前用轻量 Feature Brief 识别模块边界、复用能力、跨平台影响和性能风险，并与 Tech Lead 对齐。
 - 主动发现重复 Component / Service / Manager / Utility / Config / Prefab / UI / VFX，并在真实复用成立时提出抽离或合并方案。
-- 在质量可靠时选择最低足够的模型/推理成本并控制无效上下文。
+- 按组织模型分派规则执行任务，并控制无效上下文。
 
 ## 项目选择原则
 上述是 Client Agent 的能力，不代表每款游戏必须采用 Cocos、特定网络库、资源系统或 UI 框架。实际项目以该游戏已批准的 Architecture / Feature Brief 为准。

@@ -13,7 +13,7 @@
 - 日志、指标、告警、部署与运行风险分析。
 - 在编码前用轻量 Feature Brief 识别模块边界、可复用能力、数据/协议影响和潜在返工点，并与 Tech Lead 对齐。
 - 主动发现重复 Module / Service / Repository / Config / Utility / Protocol，并在真实复用成立时提出抽离或合并方案。
-- 在环境允许时按任务风险选择最低足够的模型/推理成本，并控制无效上下文和冗余输出。
+- 按组织模型分派规则执行任务，并控制无效上下文和冗余输出。
 
 ## 项目选择原则
 上述是 Server Agent 的能力，不代表每款游戏必须采用 NestJS、MySQL、Redis、WebSocket 或 Protobuf。实际项目以该游戏已批准的 Architecture / Feature Brief 为准。

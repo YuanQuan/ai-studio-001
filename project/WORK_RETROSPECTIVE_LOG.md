@@ -2,6 +2,23 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-U01-GENTLE-V03-USER-REVIEW-001｜U01 局部返工 v0.3 方案送用户选择
+
+- 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.3 13/13 Required 实存，`DELIVERABLE.json` 16 项唯一索引覆盖全部 Required；四款“酆都城”字样、青灰石牌与双短飘带的两张非生产概念图和 SVG/脚本在同版交付。三项方案验收 PASS，正式新版 PSD/切图 NOT_TESTED；Art/Tech/Master 同版 Review APPROVED，计划 SHA-256 `1D1C073245F716DDDE5A3B11FC745E618D098B50F02EC14F901B0C259EA27D1C`。Task/Approval `USER_REVIEW`，用户尚未选 A/B/C/D 或批准 v0.3；旧 v0.2 Gate1 USER_APPROVED、资源 v0.3 Gate2 REJECTED 保留历史，Client 未接。
+- 时间/耗时（Asia/Shanghai）：旧资源 v0.3 Gate2 用户反馈登记 15:20:04，本次方案送审登记 2026-10-07 15:35:40 +08:00，墙钟 15 分 36 秒，含 Master 建档、Art 概念图及文档、字形纠正、Tech/Master Review、Producer 结构核验，不能分摊为单一角色净制作时间。各角色准确起止、用户选择等待时长未知；无同类目标基线，不据此判断快慢。字形初稿首字偏旁纠正是本轮可见返修点，已在概念图送审前完成。
+- 建议/复核：Art 在下一张正式字样前依据用户选定 A/B/C/D 逐字细修，重点核“酆”右阝和手机右移原倍率可读性；Tech 对实际 PSD 局部层、alpha、pivot 和两灯身份做首图前同 SHA 预签，复核点为正式首图前记录。代价是选款与样张校验时间，可减少整批字形返工。Producer 在新资源 Gate2 前复核选款、六件独立层与实际图片版本，复核点为送审清单。
+- Continuity check：方案已到 USER_REVIEW，资源下一 Revision 受用户选款和 Gate1 批准限制；不提前进入正式新图或 Client 接入，U01 无空转 READY/IN_PROGRESS。
+
+
+### WR-20261007-U01-GATE2-V03-RETURN-QA-CANCEL-001｜U01 v0.3 退回与四条示例 QA 专业线取消
+
+- 结果/证据/门禁：用户未批准 `U01-GENTLE-UNDERWORLD-ASSET-001` v0.3 整批具体资源，仅认可两盏孔明灯作为局部方向；要求酆都城多字体候选，奈何桥牌和引魂幡重设计。资源 Approval `REJECTED`、Task `REVISION`，v0.3 PSD/切图/USER_REVIEW 快照保留，Client 未接。按用户新组织规则与 Master 逐项取消决定，U01 QA-MATRIX、U02 QA-EXEC、U03 QA-EXEC、UNIT-MENU QA-PREBUILD 四项未完成 QA 专业 Task `CANCELLED`，Approval `SUPERSEDED` 并存取消前快照。U03 取消前已有执行中 TEST_REPORT 草稿与 RESOURCE_AND_BUILD_AUDIT，均非 QA PASS；已 DONE QA 计划和 Client QA-MEASUREMENT 自检不变。证据为五份 Task/Approval、U01 用户本轮反馈、`rules/workflow.md`。
+- 时间/耗时（Asia/Shanghai）：U01 v0.3 送审登记 14:37:43，用户反馈精确发送时刻未知；本次 Producer 登记 15:20:27，墙钟间隔 42 分 44 秒包含用户审阅等待、组织规则调整和并行工作，不能计为 Art 或 Producer 净工时。U03 QA 15:19:20 记录 TASK_STARTED，15:20:27 取消，墙钟 1 分 7 秒；实际检查净时长未知，已知仅草稿，无总体 PASS。无同类目标时长基线；U01 的确切视觉返工原因是用户反馈的新偏好，不能归责于工具或角色。
+- 建议/复核：Art 对“酆都城”提供同尺度多字体候选，并对桥牌/引魂幡先做小样，Master 组织必要同版评审，复核点为下一资源方案和具体 Gate2；代价是多轮审图，可避免未选定字形直接扩量。示例 Owner 对未执行的视觉/运行检查留可复核证据，Master 在正式功能升级时重新编排 QA，复核点为升级 Task 的门禁定义；不得把旧 QA 草稿转写为 PASS。Producer 对并行任务状态做取消后复查，复核点为四条 Task 稳定保持 CANCELLED。
+- 并行竞态补记：U03 QA Exec 在 15:20:27 取消后，旧 QA 会话仍于 15:20:35–15:21:39 写入审计和截图/日志。Producer 已通知 Master 协调停止；这些文件只作取消前后过程历史，不形成 QA PASS 或自动恢复 Task。
+- Continuity check：四条 QA 专业线已 CANCELLED，无示例 QA 空转。U01 美术 Revision 可继续，须由 Master 编排受影响新版本；当前 v0.3 Gate2 未批准，Client 不接。
+
+
 ### WR-20261007-U01-PROPS-V03-USER-REVIEW-001｜六件独立挂件具体资源送 Gate2
 
 - 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ASSET-001` v0.3 26/26 Required 全部实存、`DELIVERABLE.json` 唯一同序索引、四项资源验收 PASS；Creator/控件/性能 NOT_TESTED。Art/Tech 首图前同 SHA 预签与桥牌样张双后验 APPROVED；执行 Agent `ART_FILE_CHECK.json` APPROVED，`CUT_MANIFEST.json` 十张 PNG 与三张审核图的 13 项路径/哈希复算吻合。四旧层逐像素保留、六件独立 PSD 部件层及透明 PNG、30/30 静态视窗无露底，切图协作有 Art/Tech/Client 记录。`USER_REVIEW_PACKET.md` SHA-256 `2502C14E7226552872C46CCF6E0A67290519E7B1BA61CAC2BE3B97B420C0EE6D`，Task/Approval `USER_REVIEW`，用户尚未决定，Client 未接入。

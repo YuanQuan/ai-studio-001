@@ -1,0 +1,56 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+  "owner": "art",
+  "summary": "U01 v0.3 Gate1 局部返工方案：两盏孔明灯视觉可沿用，酆都城四款原创字样笔触方向供选择，奈何桥牌改低矮青灰石质浅浮雕，招魂幡沿既有引魂幡资产 ID 改双短飘带。两张概念图仅供方案沟通；现有 v0.3 正式 PSD/PNG 不改，新版资源及切图仍须 Gate2。",
+  "artifacts": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_SELF_REVIEW.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/lettering_options.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/bridge_banner_direction.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/lettering_options.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/bridge_banner_direction.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/concept/render_concept_boards.js",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/TECH_REVIEW.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/MASTER_REVIEW.json",
+    "tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐项反映本轮用户反馈并提供四款可直接比较的酆都城字样方向。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、concept/lettering_options.png；对照图是现有项目笔触的非生产示意。"
+    },
+    {
+      "criterion": "桥牌与招魂幡给出协调月夜绘画背景的具体视觉方向，保留独立挂件和非恐怖气质。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、concept/bridge_banner_direction.png；具体 PSD 样张仍待 Gate1。"
+    },
+    {
+      "criterion": "保留现有 PSD、已批四层与可收录孔明灯，不提前改正式资源。",
+      "result": "PASS",
+      "evidence": "RIGHTS_AND_SOURCE.md、ASSET_MANIFEST.md；本版本只有方案文档和标注非生产的概念板。"
+    },
+    {
+      "criterion": "新版字形/桥牌/飘带在真实 PSD、切片和 Creator 视窗通过。",
+      "result": "NOT_TESTED",
+      "evidence": "用户 Gate1 尚待批准；此项属于获批后的制作与 Gate2/接入验证。"
+    }
+  ],
+  "assumptions": [
+    "用户所称招魂幡指 v0.3 的 U01_PROP_SOUL_BANNER；本轮保留稳定 ID 和非恐怖引路视觉属性。",
+    "黄泉路牌未收到修改意见，暂沿用 v0.3 候选，仍需随整批重审。",
+    "孔明灯可收录是局部视觉反馈，整批旧 v0.3 Gate2 已登记 REJECTED；新版资源不借此直接接入 Client。"
+  ],
+  "risks": [
+    "四款概念字样由同一现有项目原创骨架作不同笔势处理，正式选款需手工细修各字结构，尤其右移手机原倍率可读性。",
+    "概念石牌与双飘带仅示意形态；正式 PSD 中的贴合、alpha、挂点、遮挡和内存预算尚未验证。",
+    "若引入具体字库或新外部图片，必须先核使用、嵌入、分发、修改许可并修订方案；当前无此类正式输入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

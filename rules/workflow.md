@@ -32,6 +32,8 @@
 - 专业 Owner：可将自己的 `READY -> IN_PROGRESS -> REVIEW`；返工时按 `REVISION -> IN_PROGRESS -> REVIEW`；遇阻塞可申请 `BLOCKED`。
 - QA：提交测试结论和正式测试产物；TEST_REPORT 同样需进入用户审批门禁。
 
+单元示例类工作不分派 QA Agent 或 QA 阶段 Task。示例 Owner 留存检查证据；升级为正式功能或正式资源接入时，Master 重新编排适用的 QA 阶段和审批门禁。既有示例 QA Task 的历史 Artifact、Review、批准与状态记录必须保留；停止后续 QA 执行须由 Master 逐项决定并由 Producer 记录，不得将已批准计划改写成未批准或将未执行验证标为通过。
+
 ## 连续执行到下一 Gate
 
 当用户明确授权继续当前正式流程后，默认采用“连续执行到下一 Gate”模式：
