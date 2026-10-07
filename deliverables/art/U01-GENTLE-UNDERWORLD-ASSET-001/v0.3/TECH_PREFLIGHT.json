@@ -1,0 +1,28 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-07 14:10:52 +08:00 独立重算 PREFLIGHT_PLAN.md SHA-256 为 321F07CAA3C3096C30EC809FF88C323EDDF45D9409840C4A8D5E7EEA5EA3AD4F，与 Art v0.3/ART_PREFLIGHT.json 所签完全一致；上游 ART-PLAN v0.2 已于 14:07:31 +08:00 登记 USER_APPROVED。签前 v0.3 目录仅 PREFLIGHT_PLAN.md 与 ART_PREFLIGHT.json，尚无新图、PSD、切片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "只读核原 PSD SHA-256 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed；本机 bundled Node v24.19.0、sharp 0.35.4、libvips 8.18.6、librsvg 2.62.91，sharp package 标 Apache-2.0 且 LICENSE 存在；bundled Python 3.12.14/Pillow 12.3.0/NumPy 2.3.5，bggg image2psd.py SHA-256 AF7217E0F3DAD1EDAF7EB4017C717CC49C6CE45D35BE88A00C0D2F284B390EBD 且本地 MIT LICENSE 存在。工具只参与本地制作，方案未引外部图片或字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "预案将四个 2172×724 已批背景层锁定并逐像素核身份，六个挂件分别保持独立透明全画布 PNG、有效 alpha bbox、pivot 和独立 PSD 分部栅格层/原创 SVG；不将退回 v0.2 内容当作源，不虚称 PSD 原生文件夹组。层序按 L01/L02/远景灯/L03/幡路牌右字/L04/桥牌，原 L04 最前景边缘和镜头安全几何保持不变。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "十张 2172×724 RGBA8 源图理论展开约 59.99 MiB，PSD 额外分部不进入游戏包；这不是 Creator 导入纹理、图集、Draw Call 或运行内存结论。先产奈何桥牌代表样张，Art/Tech 对真实 alpha、桥栏和灯柱遮挡、PSD 分部、预算均复核通过后才能扩其余五件。若工具、源、层语义、尺寸或输出范围变化，须重签此预案。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "实际六件字形、箭头、悬浮控件、柳枝/月亮/桥灯遮挡和最前景露底，须在五种竖屏比例×三位置×两倍率的静态艺术投影中核对；真实 Creator 与目标平台结果仍 NOT_TESTED。此首图前预签不构成样张效果批准、Gate2 用户审批或客户端接入许可。"
+    }
+  ],
+  "next_action": "Art 可在同 SHA 双签后制作奈何桥牌代表样张并提供源/PNG/PSD、alpha/预算及同尺度局部预览供 Art 与 Tech 实图复核；样张通过后再扩其余五件，最终六件与整景提交 Gate2 用户审核，未获用户批准前 Client 不接入。"
+}

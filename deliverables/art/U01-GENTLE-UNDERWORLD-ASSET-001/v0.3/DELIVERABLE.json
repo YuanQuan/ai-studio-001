@@ -1,0 +1,70 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "owner": "art",
+  "summary": "依据获批 v0.2 制作方案完成 U01 六件温和地府独立美术挂件 v0.3；24 层 PSD、四原层、六独立透明 PNG、同尺度重组和 30 竖屏静态状态，送用户 Gate2 审核。",
+  "artifacts": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/ART_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/SOURCE_AND_EDIT_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/psd/u01_gentle_underworld_props.psd",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l01_sky.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l02_mountains.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l03_ground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l04_foreground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_LANTERN_A.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_LANTERN_B.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_SOUL_BANNER.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_BRIDGE_SIGN.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_ROAD_SIGN.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_FENGDU_LETTERS.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/overall_from_psd.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/local_detail_board.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/portrait_viewports.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/ART_FILE_CHECK.json",
+    "tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 批准及首图前 Art/Tech 同 SHA 双签；桥牌样张双复核后扩批",
+      "result": "PASS",
+      "evidence": "tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json；v0.3/ART_PREFLIGHT.json、TECH_PREFLIGHT.json、ART_SAMPLE_REVIEW.json、TECH_SAMPLE_REVIEW.json"
+    },
+    {
+      "criterion": "旧四层逐像素保留；六件独立可编辑、独立透明 PNG 和原笔触",
+      "result": "PASS",
+      "evidence": "v0.3/CUT_MANIFEST.json；source_build/build_validation.json；PSD_EDITABILITY_REPORT.md"
+    },
+    {
+      "criterion": "同尺度整体/细节及 30 张五比例静态视窗核对",
+      "result": "PASS",
+      "evidence": "v0.3/review/overall_from_psd.png、local_detail_board.png、portrait_viewports.png；source_build/viewport_validation.json"
+    },
+    {
+      "criterion": "Art/Tech/Client 切图协作、逐文件核验并供 Gate2 审核",
+      "result": "PASS",
+      "evidence": "v0.3/CUT_COLLABORATION_RECORD.md、USER_REVIEW_PACKET.md、CUT_MANIFEST.json、ART_FILE_CHECK.json"
+    },
+    {
+      "criterion": "真实 Creator 悬浮控件遮挡、图集/显存/帧时与目标机",
+      "result": "NOT_TESTED",
+      "evidence": "本轮仅美术；v0.3/VISUAL_ANCHOR_CHECK.md 和 USER_REVIEW_PACKET.md 明示后续接入再验"
+    }
+  ],
+  "assumptions": [
+    "挂件可在美术母版/独立 PNG 层级移位；现行 Client 四节点未实现运行时单件移动。",
+    "幡 pivot 依据真实杆脚从 Gate1 候选 (720,499) 收敛为 (700,499)，脚座较 Gate1 候选底线低 2px，见 SOURCE_AND_EDIT_RECORD.md。"
+  ],
+  "risks": [
+    "PSD 为 24 个独立栅格层，无原生文件夹组或文字对象；SVG 旁存供路径再编辑。",
+    "十张 2172×724 RGBA8 原图理论展开约 59.99 MiB；实际 Creator 图集、GPU 内存、Draw Call、悬浮控件遮挡和目标机效果未测试。",
+    "Gate2 用户尚未批准具体 v0.3 实图，Client 不得正式接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,354 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "version": "v0.3",
+  "status": "CANDIDATE_AWAITING_GATE2_USER_APPROVAL",
+  "gate1_plan_user_approved": true,
+  "gate2_specific_asset_user_approved": false,
+  "art_tech_same_preflight_sha256": "321f07caa3c3096c30ec809ff88c323eddf45d9409840c4a8d5e7eea5ea3ad4f",
+  "source_approved_psd": {
+    "file": "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "sha256": "428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed"
+  },
+  "master": {
+    "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/psd/u01_gentle_underworld_props.psd",
+    "sha256": "186a86cd365f46293a7103a3b58d1259ecb5d131e3112b0ff803cab761e78cf5",
+    "canvas": [
+      2172,
+      724
+    ],
+    "raster_layer_count": 24,
+    "native_psd_group_folders": false,
+    "independent_component_layers": true
+  },
+  "base_layers": [
+    {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l01_sky.png",
+      "sha256": "fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        0,
+        0,
+        2171,
+        724
+      ],
+      "pixel_equal_approved_psd": true
+    },
+    {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l02_mountains.png",
+      "sha256": "3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "pixel_equal_approved_psd": true
+    },
+    {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l03_ground.png",
+      "sha256": "af07fc566d7461acc314e2805b4a1419c44f5d64a7f15da8c5d489be2a29fb1d",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "pixel_equal_approved_psd": true
+    },
+    {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/base/l04_foreground.png",
+      "sha256": "8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        0,
+        79,
+        2172,
+        724
+      ],
+      "pixel_equal_approved_psd": true
+    }
+  ],
+  "independent_props": [
+    {
+      "id": "U01_PROP_LANTERN_A",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_LANTERN_A.png",
+      "sha256": "839eb2d0e04886c6c13a7abba9bd87b7a8684ff7f26a99192a21065b5ce2d5bb",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        772,
+        163,
+        814,
+        221
+      ],
+      "pivot_xy": [
+        792,
+        223
+      ],
+      "psd_layer_names": [
+        "U01_PROP_LANTERN_A glow",
+        "U01_PROP_LANTERN_A shade",
+        "U01_PROP_LANTERN_A tail"
+      ],
+      "source_svg_sha256": [
+        "e9e6d59114102fb18282b4a9d04338e60605221e2e77f53a7948258354953fa3",
+        "a301a75096b67730a62563d0585a73bc15b73d55de2b28a5ef01993eaeaf1f8d",
+        "9cb37fc4e9b9541b2be813cc3b5fce1d6273a3ec384f3bd50151954d730e6b17"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_A_glow.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_A_shade.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_A_tail.png"
+      ]
+    },
+    {
+      "id": "U01_PROP_LANTERN_B",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_LANTERN_B.png",
+      "sha256": "7b4bda996a51fbe6b47cf82205f5feca9d62f608f367f08d7c6dfc1e620ef30a",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        1261,
+        184,
+        1295,
+        232
+      ],
+      "pivot_xy": [
+        1278,
+        235
+      ],
+      "psd_layer_names": [
+        "U01_PROP_LANTERN_B glow",
+        "U01_PROP_LANTERN_B shade",
+        "U01_PROP_LANTERN_B tail"
+      ],
+      "source_svg_sha256": [
+        "b8e10e10123a8e2d7ff61c0b39ffd377c0630dae41f6a65decabd1365ce9adca",
+        "6d60bf446d6ccea00f3a43e054caf951120c76e4a4a6cd16833ec425ed9b8b70",
+        "fd4af668e1cc534bbc7f913bbffca9dc7198e8b7602be0170c2f64fa3c26e75d"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_B_glow.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_B_shade.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_LANTERN_B_tail.png"
+      ]
+    },
+    {
+      "id": "U01_PROP_SOUL_BANNER",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_SOUL_BANNER.png",
+      "sha256": "653dd42f4837af1b19ea972bae6638eca98358f84027bc4c9ada5117a5552e9a",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        683,
+        334,
+        744,
+        504
+      ],
+      "pivot_xy": [
+        700,
+        499
+      ],
+      "psd_layer_names": [
+        "U01_PROP_SOUL_BANNER pole",
+        "U01_PROP_SOUL_BANNER cloth",
+        "U01_PROP_SOUL_BANNER knot",
+        "U01_PROP_SOUL_BANNER foot"
+      ],
+      "source_svg_sha256": [
+        "0c2f1be84b47af9236ffba45c5b6479b53edf817d4ce7a9b6462a181220b21ea",
+        "3e396163e76bf2748ab35bfc862d9d09484cc940f6443d7d8e70c1c86e5613f0",
+        "b8caae52d34b2fa480bf2671f53c82521bdd88b6a073910eee85bc15129809c2",
+        "855a7ad646cf596a32c4bd619e4809434bc76720781ca9c4054be0f789b8ef85"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_SOUL_BANNER_pole.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_SOUL_BANNER_cloth.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_SOUL_BANNER_knot.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_SOUL_BANNER_foot.png"
+      ]
+    },
+    {
+      "id": "U01_PROP_ROAD_SIGN",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_ROAD_SIGN.png",
+      "sha256": "390fd05a0d4e1aa7f0739128731040c1c15b3ccc55348a0557cd5dfc8e98532b",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        832,
+        374,
+        913,
+        513
+      ],
+      "pivot_xy": [
+        866,
+        511
+      ],
+      "psd_layer_names": [
+        "U01_PROP_ROAD_SIGN pole",
+        "U01_PROP_ROAD_SIGN board",
+        "U01_PROP_ROAD_SIGN letters",
+        "U01_PROP_ROAD_SIGN arrow"
+      ],
+      "source_svg_sha256": [
+        "618df2d444f1be60bcce5c84d08ed21836c8a4c3a24a895ee91be5cc94a60e50",
+        "5100678df70e512a29ef08b5165be10d822f0cb2456d2b44176d94c4275ac458",
+        "91e4913e28d6492e797ceded2415beb751514f42e4b3efb0691919f8547450fe",
+        "525eaf038770c4953f4092dbcb96b89556c053de141275631b52f6f12754b053"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_ROAD_SIGN_pole.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_ROAD_SIGN_board.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_ROAD_SIGN_letters.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_ROAD_SIGN_arrow.png"
+      ]
+    },
+    {
+      "id": "U01_PROP_FENGDU_LETTERS",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_FENGDU_LETTERS.png",
+      "sha256": "50a44247103478ea7fc30a45434574baf2f17a1fdb971ff7a26faa5e19f077fc",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        2039,
+        259,
+        2092,
+        275
+      ],
+      "pivot_xy": [
+        2050,
+        268
+      ],
+      "psd_layer_names": [
+        "U01_PROP_FENGDU_LETTERS feng",
+        "U01_PROP_FENGDU_LETTERS du",
+        "U01_PROP_FENGDU_LETTERS cheng"
+      ],
+      "source_svg_sha256": [
+        "27edadadba154c4c23fef564ac9a035a4715a8289a790436e4f37ff828be3378",
+        "4695f7dacfc1004191902dd19109d08e117dc933329b4b2bae6e26640327858f",
+        "b5ddd42fb039b0f60a67857237102e489d2da81c4416efd8f254df3df93de5d3"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_FENGDU_LETTERS_feng.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_FENGDU_LETTERS_du.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_FENGDU_LETTERS_cheng.png"
+      ]
+    },
+    {
+      "id": "U01_PROP_BRIDGE_SIGN",
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/exports/props/U01_PROP_BRIDGE_SIGN.png",
+      "sha256": "b3d710fc0c09ea5a4d0a4a24a6c1ac3f1c37c04bbb79baf7fe62eb19be2bd3c3",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "alpha_bbox_xyxy_exclusive": [
+        1025,
+        417,
+        1147,
+        467
+      ],
+      "pivot_xy": [
+        1086,
+        422
+      ],
+      "psd_layer_names": [
+        "U01_PROP_BRIDGE_SIGN ties",
+        "U01_PROP_BRIDGE_SIGN board",
+        "U01_PROP_BRIDGE_SIGN letters"
+      ],
+      "source_svg_sha256": [
+        "1f8fbd24ad8bf96c26d225321e3be03cb100762427f50d292b1371a609d87d27",
+        "e39ab9666a62405e9db24873d98cd46e33102198578419403d4c1bbd25298c82",
+        "8c4c3e76956c7ffd8f188b008134f19e130042c3e5c60af3b971bfbebab3d88d"
+      ],
+      "source_part_files": [
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_BRIDGE_SIGN_ties.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_BRIDGE_SIGN_board.png",
+        "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/source_build/parts/U01_PROP_BRIDGE_SIGN_letters.png"
+      ]
+    }
+  ],
+  "overall": {
+    "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/overall_from_psd.png",
+    "sha256": "dc4ae871ac69939b1a6b4bec3c9857f40f9d3db9b69e53873b1ef3a76dfa08d2",
+    "same_scale_from_psd_layers": true,
+    "psd_stored_preview_max_channel_delta": 0
+  },
+  "review": {
+    "detail_board": {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/local_detail_board.png",
+      "sha256": "c9f10b8f35e983eb258a0ba5b8fec86e34aa6b49e8385b3dad2f67849560866e"
+    },
+    "portrait_sheet": {
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.3/review/portrait_viewports.png",
+      "sha256": "7e3504e7de6f1dd918988c629974a3a6f590334f31c4438a56c4dacfe7cf2c45"
+    },
+    "state_count": 30,
+    "intermediate_motion_samples": 3,
+    "minimum_alpha_all_30": 255
+  },
+  "layer_order_bottom_to_top": [
+    "L01 approved original",
+    "L02 approved original",
+    "U01_PROP_LANTERN_A glow",
+    "U01_PROP_LANTERN_A shade",
+    "U01_PROP_LANTERN_A tail",
+    "U01_PROP_LANTERN_B glow",
+    "U01_PROP_LANTERN_B shade",
+    "U01_PROP_LANTERN_B tail",
+    "L03 approved original",
+    "U01_PROP_SOUL_BANNER pole",
+    "U01_PROP_SOUL_BANNER cloth",
+    "U01_PROP_SOUL_BANNER knot",
+    "U01_PROP_SOUL_BANNER foot",
+    "U01_PROP_ROAD_SIGN pole",
+    "U01_PROP_ROAD_SIGN board",
+    "U01_PROP_ROAD_SIGN letters",
+    "U01_PROP_ROAD_SIGN arrow",
+    "U01_PROP_FENGDU_LETTERS feng",
+    "U01_PROP_FENGDU_LETTERS du",
+    "U01_PROP_FENGDU_LETTERS cheng",
+    "L04 approved original",
+    "U01_PROP_BRIDGE_SIGN ties",
+    "U01_PROP_BRIDGE_SIGN board",
+    "U01_PROP_BRIDGE_SIGN letters"
+  ],
+  "coordinate_convention": "左上原点；alpha bbox 左/上含、右/下不含；各件 PNG 均为全画布未 trim。",
+  "client_integration": "NOT_STARTED; USER_APPROVAL_REQUIRED"
+}

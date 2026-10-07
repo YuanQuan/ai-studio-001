@@ -1,0 +1,11 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"代表样张为原 PSD 四层上独立桥牌三分部，`psd/sample_bridge_sign.psd` 7 层、`exports/props/U01_PROP_BRIDGE_SIGN.png` 独立透明全画布。原四层逐像素同已批 PNG；桥牌 alpha bbox [1025,417,1147,467] 符合预案盒。"},
+    {"severity":"INFO","message":"Art 检查 `review/sample_bridge_sign_detail.png` 与整体：木牌浅紫棕吻合桥的暖灰石和夜景，三字“奈何桥”可辨、笔触原创、桥拱洞仍通透、左右灯柱未遮，未引恐怖形象；板、系带、文字分层可动，PASS。实际手机界面与运行保持 NOT_TESTED。"},
+    {"severity":"INFO","message":"样张是 Art/Tech 全批扩展前的内部检查，不是 Gate2 用户效果批准；待 Tech 对同一实图 alpha、PSD 和预算签认后再绘其余五件。"}
+  ],
+  "next_action": "Tech Lead 核样张 PNG/PSD/alpha 和桥栏遮挡与预算；通过后 Art 继续其余五件。"
+}

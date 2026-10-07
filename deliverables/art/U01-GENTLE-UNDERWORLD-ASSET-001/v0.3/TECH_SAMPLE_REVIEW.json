@@ -1,0 +1,28 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech 于 2026-10-07 14:23:39 +08:00 独立回读代表样张 sample_bridge_sign.psd：2172×724、七个可单独开关的栅格层，底四层名称 L01–L04 且逐像素等于原批准 PSD 的对应四层；上三层分别为 U01_PROP_BRIDGE_SIGN ties/board/letters，逐像素等于保存的三份透明分部 PNG。PSD SHA-256 bf68e6c7ae88b735babc22ef6c32ddf293b120594ac3a60c4bea0650355f3ed8。旁存三份 SVG 源；文件不虚称 PSD 原生文件夹组。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立桥牌导出 U01_PROP_BRIDGE_SIGN.png 为 2172×724 RGBA、原点 (0,0)，由三分部按层序重组与文件像素完全一致；SHA-256 b3d710fc0c09ea5a4d0a4a24a6c1ac3f1c37c04bbb79baf7fe62eb19be2bd3c3，alpha bbox 按右下不含为 [1025,417,1147,467]，落在已签方案盒内，四边 alpha 最大值均为 0。整件可在美术母版中单独选中、隐藏、移动，部件亦可分调。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Tech 查同尺度整体和局部，并以旧镜头几何生成 390×844 中心 zoom1/1.8 静态投影 tech_sample_center_z1.png、tech_sample_center_z1_8.png：三字奈何桥在两倍率可辨，桥牌处于两侧灯柱之间；桥拱洞通透，灯柱未被牌体压住。样张仅桥牌一件，所有手机端点和真实 Creator 控件遮挡不由这两图证明。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本样张新增一张 2172×724 RGBA8 全画布源图，理论展开 6,290,112 字节约 6.00 MiB；六件全做后连四旧层约 59.99 MiB。透明全画布使后期美术移位简单，但此数不是实际 Creator GPU 内存、图集页、Draw Call 或运行帧时；最终切图协作需评估 trim/图集策略且不得丢失完整母版与六件独立导出。"
+    },
+    {
+      "severity": "INFO",
+      "message": "此次签认只通过双签后首件代表样张的技术与局部视觉可读性检查，满足预案中扩展其余五件的内部条件；不替代全六件整体检查、Gate2 用户审批或客户端正式接入验证。"
+    }
+  ],
+  "next_action": "Art 可按同一 v0.3 双签预案制作其余五件，保留六件独立层/透明导出、原四层身份和实际 build 日志；完成后对十图、整体及 30 手机状态进行文件/遮挡/可读性核验，再按流程将具体 PSD 和切图交 Gate2 用户审核。"
+}

@@ -2,6 +2,30 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-U01-PROPS-V03-USER-REVIEW-001｜六件独立挂件具体资源送 Gate2
+
+- 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ASSET-001` v0.3 26/26 Required 全部实存、`DELIVERABLE.json` 唯一同序索引、四项资源验收 PASS；Creator/控件/性能 NOT_TESTED。Art/Tech 首图前同 SHA 预签与桥牌样张双后验 APPROVED；执行 Agent `ART_FILE_CHECK.json` APPROVED，`CUT_MANIFEST.json` 十张 PNG 与三张审核图的 13 项路径/哈希复算吻合。四旧层逐像素保留、六件独立 PSD 部件层及透明 PNG、30/30 静态视窗无露底，切图协作有 Art/Tech/Client 记录。`USER_REVIEW_PACKET.md` SHA-256 `2502C14E7226552872C46CCF6E0A67290519E7B1BA61CAC2BE3B97B420C0EE6D`，Task/Approval `USER_REVIEW`，用户尚未决定，Client 未接入。
+- 时间/耗时（Asia/Shanghai）：Gate1 批准登记 14:07:31、Tech 首图前预签 14:10:52、Producer 桥牌样张后验核 14:24:09、Gate2 送审登记 2026-10-07 14:37:43 +08:00；首个登记至送审墙钟 30 分 12 秒，含并行出图、分角色后验、切图咨询、封包与核验，不等于 Art 或 Producer 单人净耗时。Art 五件逐件起止、Tech 最终核查净时长未知；用户 Gate2 审阅从本次登记起，尚无结束时刻。无本类约定时长基线，未发现可证实慢因。
+- 观察/建议：本批在双签后先做桥牌样张，经双后验再扩五件，减少了层/alpha/文字方案不符时整批返工风险，但样张审核增加一个制作节点。Art 保持六件独立 PSD 分部和 SVG 来源，Tech/Client 在后续接入复核纹理 trim 偏移及父层视差，复核点为 Gate2 批准后的实际 Creator 导入与五比例运行；Producer 在下一批继续核 Required/manifest 哈希/NOT_TESTED 披露，复核点为下批送审。
+- Continuity check：具体资源已到 USER_REVIEW，用户决定前 Client 有明确上游依赖；U01 无仅以 READY/IN_PROGRESS 占位的可继续任务。本记录不构成 Gate2 批准。
+
+
+### WR-20261007-U01-PROPS-V03-PREFLIGHT-001｜六件挂件首图预签与桥牌样张开工
+
+- 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ASSET-001` v0.3 Task 26 项 Required；上游 Gate1 方案 v0.2 与原四层 v0.3 USER_APPROVED。Art/Tech 对 `PREFLIGHT_PLAN.md` 同 SHA `321F07CAA3C3096C30EC809FF88C323EDDF45D9409840C4A8D5E7EEA5EA3AD4F` 首图前预签，Tech 于 14:10:52 记录签前无图；随后 `psd/sample_bridge_sign.psd`、`exports/props/U01_PROP_BRIDGE_SIGN.png` 和局部预览实存。Task `REVISION→IN_PROGRESS`，主 Approval v0.3 DRAFT，旧 v0.2 REJECTED 快照保留；样张实际效果 Art/Tech 后验待，Gate2 未送审。
+- 时间/耗时（Asia/Shanghai）：Gate1 v0.2 批准登记 14:07:31，Tech 同 SHA 预签 14:10:52，Producer 样张实产核验 2026-10-07 14:14:05 +08:00；自批准登记至本次核验墙钟 6 分 34 秒，含 Master 修订、Art/Tech 预签、样张制作与交错检查，不能分摊为单角色净工时。Art 签认、样张首像素与执行命令精确时间在本记录中未知；用户等待当前尚未开始。无同类目标基线或已证实慢因。
+- 建议/复核：Art 和 Tech 对桥牌样张真实 alpha、桥灯遮挡、字形和分部可编辑性做同版实图后验，通过后 Art 再扩五件；复核点为后验文件与首件源/PNG SHA，代价是样张检查时间，可减少整批返工。Producer 在 Gate2 前复核 26/26 Required、十张同尺度导出及 30 静态视窗，复核点为 USER_REVIEW 包。
+- Continuity check：任务 IN_PROGRESS 有桥牌实际文件支撑；样张后验和其余制作均可继续，不能以本次记账为结束。Client 仍因 Gate2 未批保持未接入。
+
+
+### WR-20261007-U01-GENTLE-V02-APPROVAL-001｜独立挂件方案 Gate1 获批
+
+- 结果/证据/门禁：用户对 Master 提交的 `U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.2 制作前方案明确回复“批准”；计划 SHA-256 `1243FFE4283B481E68604A594AD4D83EA6E13606AE863F281223382710401BB2`、11/11 Required 与交付索引一致、四项方案验收 PASS、Art/Tech/Master 同版 Review APPROVED。`tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json=USER_APPROVED`、Task `DONE`。批准不替代首图前双签或资源 Gate2；Client 未接入。
+- 时间/耗时（Asia/Shanghai）：前次送审登记 13:59:57，本次 Producer 批准登记 2026-10-07 14:07:31 +08:00，墙钟间隔 7 分 34 秒，含用户审阅等待、其他并行工作及消息传递，不计作 Agent 净制作时间；用户回复精确发送时刻和本轮纯核验耗时未知。尚无同类目标基线，本轮无可证实慢因。
+- 建议/复核：Master 修订资源任务至 v0.3 并指定实图 Required，复核点为 Task/Approval 版本一致；Art 与 Tech 对同一首图预案的源、工具、六件独立层与导出预算先双签，复核点为首张正式图片时间与双方签认 SHA，代价是预案核验时间，可减少后续工具与层序返工。
+- Continuity check：方案 Task 已 DONE；资源 v0.3 有可继续的预案、预签和制作，Master/Art/Tech 应持续推进至具体 Gate2 或真实阻塞；Producer 本次审批记账不是停止点。
+
+
 ### WR-20261007-U01-GENTLE-V02-USER-REVIEW-001｜独立挂件方案送审
 
 - 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.2 11/11 Required 实存并与 `DELIVERABLE.json` 11 项唯一索引一致，四项方案验收 PASS；Art/Tech/Master 三 Review 均 APPROVED，Master 将计划绑定 SHA `1243FFE4283B481E68604A594AD4D83EA6E13606AE863F281223382710401BB2`。Task/Approval `USER_REVIEW`，等待用户对新版制作前方案 Gate1 决定。仅文书，无新 PSD、PNG、切片或 Client 接入；旧资源 Gate2 v0.2 REJECTED 留历史。

@@ -1,0 +1,32 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "2026-10-07 14:33:41 +08:00 Tech 独立回读最终 u01_gentle_underworld_props.psd：2172×724、24 个具名栅格层，六件各分 3/3/4/4/3/3 层；四个旧层逐像素等于已批原 PSD。最终 PSD SHA-256 为 186a86cd365f46293a7103a3b58d1259ecb5d131e3112b0ff803cab761e78cf5。PSD 无原生文件夹组，按稳定 ID 前缀多选部件移动；每件另有独立合成 PNG。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 base PNG 均为 2172×724 RGBA，SHA 与原已批四图逐项相同，且与原 PSD 对应层逐像素相等；L04 SHA-256 8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b，整张未变，边缘/alpha 因而未变。现行按最前景 L04 限制镜头横移与 zoom 1–1.8 的安全几何前提保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六张 props PNG 均为 2172×724 RGBA、同原点、不 trim；独立重算各文件 SHA 与 CUT_MANIFEST.json 一致，alpha bbox 与记录一致、四边 alpha 最大值均 0，各自按 PSD 同前缀分部层序重组后与对应 PNG 逐像素完全相同。pivot 已逐件登记，可用于后期以原画布坐标定位与单件移动；现行客户端仅四旧节点，尚无六挂件节点或导入 UUID。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "样张后的实际细节位置相对 Gate1 估算盒有小偏差：幡 pivot 从候选 (720,499) 调为实际杆脚 (700,499)，灯 A 的 alpha 右缘为 814、幡下缘为 504（bbox 右下不含），比候选盒约多 1–3 像素。实际透明盒、pivot 已在清单固定；Art 应在源/切图记录解释这些按笔触落地的非语义调整。后续若移位跨原前景遮挡或出画布，须重核整体和镜头，不可借此扩大现有横移。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已查同尺度整体、局部和 30 个静态视窗：五比例 9:16/9:18/9:19.5/9:20/9:21 × 中心/左右极限 × zoom 1/1.8 的文件均存在，viewport_validation.json 各态 nonopaque_pixels=0；另有三张横移途中样本，左移时幡/黄泉路→/灯可见。静态投影按 [0.3,0.8,0.8,0.8,1,1,1,1,1,1] 相应深度、四旧层与六件叠合；这不等于 Creator 实际帧、悬浮控件遮挡或目标机检验。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "十张 2172×724 RGBA8 源图理论展开 62,901,120 字节约 59.99 MiB（六新增约 35.99 MiB）；PSD 的分部栅格层是美术母版，不作为运行贴图。未来 Client 可讨论按每件真实 alpha bbox trim、pivot/偏移换算和图集/合批，但必须保留母版及六件独立全画布交付。Creator 导入、SpriteFrame UUID、GPU 内存、Draw Call、目标机帧时均 NOT_TESTED，不能凭源 PNG 推定。"
+    }
+  ],
+  "next_action": "Art 将实际 pivot/候选盒细小偏差写入切图协作记录并提交同版 PSD、六件透明切图、清单、同尺度重组与手机静态视窗给 Master/Producer；按已授权流程直接进入具体资源 Gate2 用户审核。用户明确批准前 Client 不接入；接入后再由 Tech/Client/QA 核真实 Creator 画面、控件、资源消耗与目标平台。"
+}
