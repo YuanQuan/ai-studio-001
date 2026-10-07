@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 Art Review 绑定 ART_PRODUCTION_PLAN.md 的 SHA-256 C2AA752D852A475C7D56B1D438E315EDA3652C39C13E84839F94B03366B0244F；本版为 Gate1 制作前方案，尚无新版图片或切图可评视觉完成度。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案依据已批 2172×724 四层 PSD 与现有手机中心帧，将主观偏软拆为原图细节密度、适高放大与采样待分辨问题。用户已选目标 A：常规手机全屏清楚、1.8 倍尽量改善；没有承诺 1.8 倍像素级锐利。保留远山雾化与暖灯柔晕，以当前 PSD 四层定向修订，不用整景替代图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "候选新画幅 3840×1080，中央旧画映射 x=300–3540、桥约居中，两侧各新增 300 新像素可见道路。左路续石路/岸栏，右牌楼整体右移并在原位续路；L01/L02 同步补齐视差露出区。四个逻辑基础层与现有独立挂件边界清楚。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "右牌楼位移、中央源细节重修和新接缝的视觉协调均需获批后在 100% 与手机实尺度样张核验。现有挂件 v0.3 Gate2 退回、局部方案另待用户决定；本方案不使字样、桥牌、幡或孔明灯整批自动获批。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "3840 宽及四层 RGBA8 约 63.3 MiB 是计划和理论展开量；请 Tech Lead 核目标纹理限制、分片可能性和视差安全边，再由用户决定 Gate1，不能把估算当运行实测。"
+    }
+  ],
+  "next_action": "请 Tech Lead 与 Master 审同一方案 SHA；通过后由 Master 呈用户批准 Gate1。获批后首图前 Art/Tech 同版预签，再在现有 PSD 上另存定向制作；具体四张切片、重组和手机效果单独交用户作 Gate2。"
+}

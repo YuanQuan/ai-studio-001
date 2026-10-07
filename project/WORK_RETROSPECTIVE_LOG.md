@@ -2,6 +2,14 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-FOUR-LAYER-CLARITY-GATE1-001｜四层清晰化与道路延长方案送审
+
+- 结果/证据：新方案 `UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` v0.1 以现有 PSD 定向修改为路径，拟定 3840×1080、左右各约 300 新像素，仍四个基础层；用户澄清常规手机全屏清楚为重点，1.8 倍尽量改善。方案 SHA `C2AA752D…66B0244F`；10/10 Required、五项 Task 验收与交付逐字同序 PASS，Art/Tech/Master 同版 APPROVED，Task/Approval USER_REVIEW。未生成新版正式 PSD/PNG，旧四层与 U01 挂件审批保持独立。
+- 时间/耗时（Asia/Shanghai）：首份 Required 文件时间 2026-10-07 18:15:29；Producer 送审核验约 18:20，墙钟约 4 分 31 秒，包含 Art 补文、Tech/Master Review、交付验收修正及 Producer 门禁复核。各角色净工时、用户等待尚未知，不按墙钟归责。
+- 速度因素与建议：首次交付把四项结果映射到 Task 五项验收，Producer 发现后由 Art 修成逐字同序，造成一次明确文书返工。建议 Art 在送三方 Review 前用 Task acceptance 自动核对 DELIVERABLE 的数量与文本；Owner 为 Art，复核点是下一版 Gate1/ Gate2 送审清单。获批后 Art/Tech 仍须同 SHA 首图前预签，再做具体四层实图和 Gate2。
+- Continuity check：当前到 USER_REVIEW 真实用户门禁，无本线 READY/IN_PROGRESS 空转；Gate1 未批准前不生成正式新版 PSD/PNG，不解锁 Client。单元示例 Owner 自检留证，QA Agent 不参与。
+
+
 ### WR-20261007-U01-GENTLE-V03-USER-REVIEW-001｜U01 局部返工 v0.3 方案送用户选择
 
 - 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.3 13/13 Required 实存，`DELIVERABLE.json` 16 项唯一索引覆盖全部 Required；四款“酆都城”字样、青灰石牌与双短飘带的两张非生产概念图和 SVG/脚本在同版交付。三项方案验收 PASS，正式新版 PSD/切图 NOT_TESTED；Art/Tech/Master 同版 Review APPROVED，计划 SHA-256 `1D1C073245F716DDDE5A3B11FC745E618D098B50F02EC14F901B0C259EA27D1C`。Task/Approval `USER_REVIEW`，用户尚未选 A/B/C/D 或批准 v0.3；旧 v0.2 Gate1 USER_APPROVED、资源 v0.3 Gate2 REJECTED 保留历史，Client 未接。

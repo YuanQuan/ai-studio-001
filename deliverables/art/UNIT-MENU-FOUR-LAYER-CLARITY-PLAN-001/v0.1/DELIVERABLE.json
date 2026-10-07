@@ -1,0 +1,56 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001",
+  "owner": "art",
+  "summary": "按用户已选清晰度目标 A，提出在现有获批四层 PSD 上定向清晰化并延长左右道路的 Gate1 制作方案；候选 3840×1080、左右各约 300 新像素，仍为四个基础视觉层。正式 PSD、PNG 与客户端资源尚未修改。",
+  "artifacts": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "方案给出真实模糊来源诊断与可观察的清晰度目标，区分源细节重修和单纯插值锐化；以常规手机全屏清楚为主要目标，并明确最大 1.8 倍尽量改善的证据与限制。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第1–2节与 VISUAL_ANCHORS.md：已批 PSD 与四层导出一致；源画幅和既有手机帧对照显示源细节与适高采样都有待分辨，故没有把全部模糊归给单一原因。记录目标 A、720×1280 在新候选画幅的约 1.19/2.13 倍采样及 1.8 倍限制，计划用定向修笔触与三联实图取证。"
+    },
+    {
+      "criterion": "方案锁定左右道路延长范围、连续透视/灯光/栏杆/水面、四层全覆盖、透明边与最前景安全边界；仍保持四个逻辑基础层。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第2节、PLACEMENT_AND_LAYER_MAP.md、VISUAL_ANCHORS.md：候选 3840×1080，中央旧画映至 x=300–3540，左右各续约 300 新像素；逐层列出 L01/L02 背景覆盖和 L03/L04 石路、岸栏、水面接续，端点与 alpha 在实图阶段核验。"
+    },
+    {
+      "criterion": "记录新画布/导出尺寸、PSD 层/原点、贴图与内存估算、镜头限位影响，以及与既有独立挂件的坐标迁移关系；客户端修改待新实图获批后另行执行。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 第2–4节、PLACEMENT_AND_LAYER_MAP.md、ASSET_MANIFEST.md：四层同原点输出、3840×1080、RGBA8 理论展开约 63.3 MiB、旧到新坐标映射、牌楼与酆都城字层联动均已列明；现有控制器 2172×724 宽高及镜头边界留待 Gate2 后 Client 修改。"
+    },
+    {
+      "criterion": "说明已批四层底本、版权/字体/工具与定向修改范围；不以新生成整景替代当前 PSD，也不在本 Gate1 用户批准前生成拟正式母版或切片。",
+      "result": "PASS",
+      "evidence": "RIGHTS_AND_SOURCE.md 与 ART_PRODUCTION_PLAN.md 第1、2、4节：已批底本 SHA-256、用户原图商用改编权声明、现有生成来源链、无新增第三方图片/字库，以及工具需首图前预签均已记录；本批只有方案文档，未制作正式 PSD、PNG 或样张。"
+    },
+    {
+      "criterion": "Art 自审与 Tech、Master 同版 Review 通过后提交用户 Gate1；获批后首张正式样张前 Art/Tech 再对同 SHA 预签，实际新 PSD/四层切片与重组效果另走 Gate2。",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json 均为 APPROVED，绑定方案 SHA-256 C2AA752D852A475C7D56B1D438E315EDA3652C39C13E84839F94B03366B0244F；ART_PRODUCTION_PLAN.md 第4节列明 Gate1→同 SHA 首图预签→新版 PSD/切片 Gate2。ARTIFACT_APPROVAL.json 当前仍为 DRAFT，用户 Gate1 决定尚未发生。"
+    }
+  ],
+  "assumptions": [
+    "左右道路更长解释为视觉道路延伸，不自行扩展角色可走路线或产品规则。",
+    "拟定 3840×1080 为待批美术目标；右牌楼随右路外移以保持道路连续，具体位置在获批后样张核验。",
+    "现有 U01 挂件 v0.3 整批 Gate2 被退回，局部方向另待用户决定，本批不把它们混入四层底图。"
+  ],
+  "risks": [
+    "单张纹理宽 3840 超过 2048，四张 RGBA8 理论展开约 63.3 MiB；目标设备、压缩与运行内存未实测，需 Tech 首图前预签与接入后验证。",
+    "远山原有雾化为视觉设计，清晰化不得过锐；增加的近景线条需要手机实尺度与 100% 像素双重检验。",
+    "右牌楼移位将影响酆都城挂件坐标，其外观方向及其他挂件整批 Gate2 仍待独立审批。",
+    "新版清晰度、四层 PSD/PNG、道路接缝与 Creator 实际运行效果尚未制作或验证，不属于本制作前方案的 PASS。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

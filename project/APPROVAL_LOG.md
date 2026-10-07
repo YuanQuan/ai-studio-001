@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-07 18:20 +08:00（Producer 送审；非用户决定）：`UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` Gate1 v0.1，方案 SHA-256 `C2AA752D852A475C7D56B1D438E315EDA3652C39C13E84839F94B03366B0244F`；10/10 Required、五项验收 PASS、Art/Tech/Master 同版 APPROVED，审批为 `USER_REVIEW`、`decided_at=null`。用户需对确切制作前方案明确批准或退回。原四层 Gate1/Gate2 批准只适旧图；U01 挂件 v0.3 仍独立待审；新 PSD/PNG 及 Client 接入未解锁。
+
+2026-10-07 18:13 +08:00（Producer 反馈边界登记）：用户要求现有四层场景更清晰并延长左右道路，四层数量不变。Master 指定 `UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` v0.1 为新 Gate1 方案任务；Task 与具体方案尚待落盘及 Review，当前没有新 Artifact 用户批准。旧四层 Gate1 v0.1、Gate2 v0.3 的批准仅覆盖原图；`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.3 仍待用户选择和批准。不得将本条反馈当作任一具体新图或 U01 挂件方案的审批。
+
 Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 | 时间 | 任务 | Artifact | 版本 | 路径 | 决定 | 用户反馈 | 替代版本 |

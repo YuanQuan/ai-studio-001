@@ -1,0 +1,28 @@
+{
+  "task_id": "UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版审阅绑定 deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md，原始 SHA-256 C2AA752D852A475C7D56B1D438E315EDA3652C39C13E84839F94B03366B0244F。Art 与 Tech 对此同版 Review 均 APPROVED；仅批准送用户 Gate1 审核，不代表方案已获用户批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户最新选择的目标 A 已入方案：常规手机全屏清楚、1.8 倍尽量改善。方案将现有 2172×724 四层定向修细节并以 3840×1080、左右各约 300 新像素的真实续路为候选；仍保留四个基础视觉层和四张同原点导出。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧桥/月/河/远山雾、四层视差身份与现有挂件的审批边界有明确保持项。U01 挂件整批 v0.3 Gate2 已退回，字样/桥牌/幡的另一 Gate1 v0.3 仍待用户决定；本版不会静默把未批准挂件合入四层。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "右牌楼拟随右路外移约 300 新像素，是影响构图的明确待批选择。Tech 指出其瓦檐与石阶可能接近新右边；用户批准后，代表样张必须核完整轮廓、道路接缝与五比例手机最右视窗。若需明显改移位量，先回修方案。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "四图 RGBA8 理论展开约 63.28 MiB，实际纹理能力/显存/帧时未测；现有模糊的源细节与 linear 采样贡献也尚无逐点三联证据。首图前 Art/Tech 同 SHA 预签、样张后验、具体 PSD/四切片 Gate2 以及获批后的 Client 运行验证均不可省略。"
+    }
+  ],
+  "next_action": "Producer 核 10/10 Required 与同版文件后送用户 Gate1 决定 3840×1080、两侧续路及右牌楼外移；获批后再开正式四层资源制作与首图前 Art/Tech 双签。"
+}

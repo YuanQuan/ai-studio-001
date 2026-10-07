@@ -1,0 +1,44 @@
+{
+  "id": "UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001",
+  "title": "单元示例四层场景清晰化与左右道路延长制作前方案",
+  "type": "art",
+  "owner": "art",
+  "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "objective": "针对用户提出的整景偏模糊和左右道路偏短，基于已批四层 PSD 制定更清晰的画面与两侧道路延长方案；最终仍为四个逻辑基础层，保留原画风与桥、月、廊、河等锚点。先提交具体制作前方案和同版评审供 Gate1 用户批准，本阶段不改正式 PSD、切图或客户端。",
+  "inputs": [
+    "用户 2026-10-07 最新指令：整个场景有点模糊，希望制作清晰版本，仍为这四层，并延长左右道路；后续明确选择常规手机全屏清楚、最大 1.8 倍尽量改善",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd（已批四层底本，2172×724）",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md 与手机视窗证据；现有倍率 1–1.8",
+    "deliverables/tech_lead/U01-CLARITY-ROAD-PLAN-001/v0.1/TECH_INPUT.md；rules/visual_production_contract.md；project/ART_GUIDE.md",
+    "U01 挂件方案 v0.3 USER_REVIEW 为独立未决版本，本任务不代替其用户决定"
+  ],
+  "deliverables": [
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "方案给出真实模糊来源诊断与可观察的清晰度目标，区分源细节重修和单纯插值锐化；以常规手机全屏清楚为主要目标，并明确最大 1.8 倍尽量改善的证据与限制。",
+    "方案锁定左右道路延长范围、连续透视/灯光/栏杆/水面、四层全覆盖、透明边与最前景安全边界；仍保持四个逻辑基础层。",
+    "记录新画布/导出尺寸、PSD 层/原点、贴图与内存估算、镜头限位影响，以及与既有独立挂件的坐标迁移关系；客户端修改待新实图获批后另行执行。",
+    "说明已批四层底本、版权/字体/工具与定向修改范围；不以新生成整景替代当前 PSD，也不在本 Gate1 用户批准前生成拟正式母版或切片。",
+    "Art 自审与 Tech、Master 同版 Review 通过后提交用户 Gate1；获批后首张正式样张前 Art/Tech 再对同 SHA 预签，实际新 PSD/四层切片与重组效果另走 Gate2。"
+  ],
+  "dependencies": [
+    "UNIT-MENU-FOUR-LAYER-CUT-001",
+    "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-07 Master 依据用户最新要求另开四层基础场景修订线；旧四层 Gate1/Gate2 批准仅适用原图，U01 独立挂件方案 v0.3 仍在另一个 USER_REVIEW。单元示例不分派 QA。",
+    "2026-10-07 用户通过澄清选择常规手机全屏清楚、最大 1.8 倍尽量改善；新方案须以该目标作尺寸与成本判断。"
+  ]
+}
