@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次仅评审 Gate1 制作前方案 v0.2，ART_PRODUCTION_PLAN.md SHA-256 为 1243FFE4283B481E68604A594AD4D83EA6E13606AE863F281223382710401BB2。用户退回的旧花、桥纹、景石与‘忘川’已排除；新方案逐项覆盖两盏孔明灯、引魂幡、右匾‘酆都城’、桥挂‘奈何桥’及桥左带向右箭头的‘黄泉路’牌，保持温和月夜气质。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六件各有独立 PSD 组、计划单件透明导出、位置和 pivot；原已批四层 PSD 与最前景边界不改。独立图层满足美术侧后期移位，现行客户端仍只有四场景节点，程序侧逐件移动须另行接入，本轮不改程序。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Tech 已对最终落位表 APPROVED，指出六张全画布挂件与原四层合计约 60 MiB RGBA8 理论展开量，实际 trim、图集、Draw Call 和目标机性能尚未测。旧 L03 植被不承担幡/路牌的前遮挡，挂件以自身脚座或落影落地；桥牌限两灯柱之间。首图前仍须 Art/Tech 对真实工具、源、层序、导出和预算同版预签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "三处字形计划原创手绘，不使用未核许可字体。方案坐标和五种竖屏比例可见性只是待验证计划；尚无本版实图、PSD、切片、Creator 运行或悬浮控件遮挡 PASS。旧 v0.1 Gate1 USER_APPROVED 与被退回资源 v0.2 均为历史，不自动放行本方向正式绘图。"
+    }
+  ],
+  "next_action": "Producer 核本版 11/11 Required、交付索引和 Art/Tech/Master 同版 Review 后，将 U01 挂件方案 v0.2 送用户 Gate1 审核。用户明确批准前不制作拟正式新图；获批后仍须首图前 Art/Tech 同批预签，具体 PSD、独立挂件图与组合效果另走 Gate2 用户审批。"
+}

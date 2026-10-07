@@ -1,0 +1,12 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "本结论只准许 v0.2 文字制作方案进入专业/用户审核，不是新图片的视觉批准。方案明确六件独立挂件、原创三处字形、旧四层逐像素保持及 2172×724 原画布。"},
+    {"severity": "INFO", "message": "上一版用户退回的花、桥纹、景石和‘忘川’已从新版范围排除；新图只以已批原四层 PSD 为底，不使用被退回 v0.2 PSD/切片作源。"},
+    {"severity": "MINOR", "message": "‘酆都城’三个字的旧木匾内尺寸、桥牌与桥拱、幡与左街道路牌的密度，均须在获批后首张代表样张及 9:16 至 9:21 手机同尺度投影中实测；方案坐标不得冒充实图通过。"},
+    {"severity": "INFO", "message": "每件有独立 PSD 组和计划透明全画布 PNG/alpha bbox/pivot，满足美术资源后期移位；现行 Client 只有四场景节点，程序单件可动尚需后续任务。"}
+  ],
+  "next_action": "请 Tech Lead 核六件独立贴图、遮挡和预算的制作前方案，Master 整合方案评审后由 Producer 提交用户新的 Gate1 审批。用户批准且 Art/Tech 完成同版首图预签前，不绘制正式样张、PSD 或切片。"
+}

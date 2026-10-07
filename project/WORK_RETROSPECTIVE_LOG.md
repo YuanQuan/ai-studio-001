@@ -2,6 +2,21 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-U01-GENTLE-V02-USER-REVIEW-001｜独立挂件方案送审
+
+- 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.2 11/11 Required 实存并与 `DELIVERABLE.json` 11 项唯一索引一致，四项方案验收 PASS；Art/Tech/Master 三 Review 均 APPROVED，Master 将计划绑定 SHA `1243FFE4283B481E68604A594AD4D83EA6E13606AE863F281223382710401BB2`。Task/Approval `USER_REVIEW`，等待用户对新版制作前方案 Gate1 决定。仅文书，无新 PSD、PNG、切片或 Client 接入；旧资源 Gate2 v0.2 REJECTED 留历史。
+- 时间/耗时（Asia/Shanghai）：本轮退回登记 13:53:37，Art 三份方案草稿被 Producer 实产核于 13:55:14，完整方案和三 Review 核验送审于 13:59:57。登记至送审墙钟 6 分 20 秒，含并行写作、评审和核验，不能当作任何单角色净耗时；用户新方案审批等待从送审起，实际反馈时间未知。无可比基线，本轮未发现可证实的慢因。
+- 影响/建议：Tech 明确六件全画布透明图预算约 36 MiB、总十图理论展开约 60 MiB，方案坐标/手机可读性待实图核查。Art 与 Tech 在用户批准后负责对同一首图预案锁工具/来源、alpha 边、局部遮挡、贴图预算并双签，复核点为首张正式图片前；Master 向用户呈现确切方案和独立挂件边界，复核点为 v0.2 Gate1 明确决定。额外成本是双签与实屏核验，减少后期切图/层序返工。
+- Continuity check：方案已到 USER_REVIEW，资源生产因新方案审批依赖保持 REVISION，Client 未解锁；本轮不存在无产出的可继续 READY/IN_PROGRESS。
+
+### WR-20261007-U01-GENTLE-REDIRECT-001｜U01 v0.2 Gate2 退回与独立挂件改向
+
+- 结果/证据/门禁：用户明确退回 `U01-GENTLE-UNDERWORLD-ASSET-001` v0.2 实图，指向孔明灯、引魂幡、“酆都城”“奈何桥”“黄泉路→”且新增均须单独可移位挂件层。`tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL_v0.2.json=REJECTED`、Task `REVISION`；旧 v0.1 Gate1 批准保留在 `tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL_v0.1.json`，新 Gate1 v0.2 为 `DRAFT`。v0.2 PSD/PNG 留历史，Client 未接入。
+- 时间/耗时（Asia/Shanghai）：原 Gate2 送审登记 2026-10-07 13:01:58 +08:00；本次 Producer 决定登记 2026-10-07 13:53:37 +08:00，可见墙钟间隔 51 分 39 秒，含用户审阅等待、其他并行任务及传递，不能当作美术制作/Producer 净耗时。用户发出反馈的精确时间及各角色净耗时未知。新方案尚未完成；无本类速度基线，不能据此判断角色快慢。
+- 影响/原因：用户反馈直接表明原四处点缀的视觉方向不采用，并对元素、字样、牌子位置及独立层提出明确替代要求；旧实际资源返工，新方向需先做 Gate1 v0.2 方案。没有证据把视觉不匹配归因于特定角色或工具。
+- 建议/复核：Art 负责在新方案逐个锁定挂件外形、字样、建议位置、透明边与可移动层映射，Tech 核四层视差/PSD 切图和画布预算，Master 核语义及提交用户；复核点为新 Gate1 同版 Review 与用户决定。批准后 Art/Tech 对同一具体首图预案预签，复核点为新资源首张样张前；代价是多一轮方案审核，避免未经确认重做正式资源。
+- Continuity check：新方案制作与评审可继续；Producer 记账不替代 Art 产物，也不授权 Client 接入。
+
 ### WR-20261007-U01-GENTLE-ASSET-002｜v0.2 重制与具体资源送 Gate2
 
 - 结果/证据/门禁：Master 将资源 Task 的 19 项 Required 改指 v0.2；Art 新 `PREFLIGHT_PLAN.md` 明列 Node/sharp SVG 栅格化、bggg PSD 组装、Python/Pillow/NumPy 回读与视窗，Art/Tech 对同 SHA `F64D3B8E8AEEF654DEF21C163F9C5692DC919A4F6EC973FE35176E4DBB7D1416` 在首张新图前签认。`runtime_before_render.json` 留当次工具版本与渲染前文件数；Art 从获批旧 PSD 和锁定 SVG 重新出九层 PSD、四张切片、同尺度整体、四处细节板及 30 张静态视窗。Owner 提交 19/19 Required；Producer 核 `DELIVERABLE.json` 28/28 索引唯一实存、六核心 JSON Schema、预案 SHA、源/成品哈希、2172×724 RGBA、四边 alpha 与批准盒，另从四张 PNG 在黑底独立叠合与整体图逐像素一致；`ART_FILE_CHECK.json` 为执行 Agent `APPROVED`。Task/主 Approval 进入 `USER_REVIEW`，审批 `decided_at=null`；这是自行切图的直接用户门禁，未增加效果专业复审。审阅包 SHA `A171E94E14DA0231E0FB8F94911F97969120B9ABC719FD64067F90A45B345560`。用户尚未决定，悬浮控件/Creator 运行与目标机性能 `NOT_TESTED`，Client 未接本版。v0.1 历史偏差仍为 DRAFT，不继承至 v0.2。
