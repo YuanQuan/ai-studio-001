@@ -1,0 +1,78 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "owner": "art",
+  "summary": "v0.2 从已批旧 PSD 与五份锁定原创 SVG 重新制作温和地府场景；九层可编辑 PSD、四张原位全画布 PNG、同尺度重组和五种手机比例静态投影已齐备，现提交具体资源版本 Gate2 用户审核；未改 Cocos 工程。",
+  "artifacts": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/SOURCE_AND_EDIT_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/psd/u01_gentle_underworld_four_layers.psd",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l04_foreground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/review/overall_from_psd.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/review/portrait_viewports.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/ART_FILE_CHECK.json",
+    "tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/review/local_detail_board.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/runtime_before_render.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/build_validation.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/viewport_validation.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/editable_strokes/gu01_left_flower.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/editable_strokes/gu01_right_flower.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/editable_strokes/gu02_bridge_carving.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/editable_strokes/gu03_waystone.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/source_build/editable_strokes/gu04_plaque_lettering.svg"
+  ],
+  "acceptance_results": [
+    {
+      "result": "PASS",
+      "criterion": "Gate1 用户已批准，首张 v0.2 拟正式图前 Art/Tech 对同一工具与来源预案双签",
+      "evidence": "Gate1 ARTIFACT_APPROVAL.json 为 USER_APPROVED；v0.2/PREFLIGHT_PLAN.md SHA-256 F64D3B8E8AEEF654DEF21C163F9C5692DC919A4F6EC973FE35176E4DBB7D1416；ART_PREFLIGHT.json 12:50:39 与 TECH_PREFLIGHT.json 12:51:24 同 SHA APPROVED；runtime_before_render.json 12:53:09。"
+    },
+    {
+      "result": "PASS",
+      "criterion": "在原 PSD 四层基础上局部新增五个可编辑对象，不重画整景",
+      "evidence": "v0.2/psd/u01_gentle_underworld_four_layers.psd；PSD_EDITABILITY_REPORT.md；五份 editable_strokes SVG；source_build/build_validation.json。旧四层从获批 PSD 回读逐像素相同。"
+    },
+    {
+      "result": "PASS",
+      "criterion": "四张 2172×724 全画布 RGBA 同源切片，旧边界及最前景防穿帮条件保持",
+      "evidence": "v0.2/exports/ 四图、CUT_MANIFEST.json 和 Tech 只读核查；L01/L02 文件 SHA 同旧，L03/L04 分别仅 2957/344 个批准盒内像素变化，L04 四边 RGBA 同旧。"
+    },
+    {
+      "result": "PASS",
+      "criterion": "同尺度重组、五种竖屏比例中心/左右极限及两端倍率静态对照、逐锚点检查",
+      "evidence": "v0.2/review/overall_from_psd.png、local_detail_board.png、portrait_viewports.png、viewports/ 30 图与 VISUAL_ANCHOR_CHECK.md；30 图 alpha 最小 255。静态图未渲染悬浮控件。"
+    },
+    {
+      "result": "NOT_TESTED",
+      "criterion": "实际悬浮控件遮挡与 Creator 运行效果",
+      "evidence": "本批仅美术资源制作。静态投影无控件，Creator 导入/运行和实际触控遮挡待用户 Gate2 批准后 Client 核验。"
+    },
+    {
+      "result": "PASS",
+      "criterion": "切图协作记录与具体版本用户审核包",
+      "evidence": "v0.2/CUT_COLLABORATION_RECORD.md、USER_REVIEW_PACKET.md、ART_FILE_CHECK.json；Client 只读协作结论沿用 v0.1 同文件名/UUID 关系，未改工程。"
+    }
+  ],
+  "assumptions": [
+    "已批候选坐标盒端点包含；像素差异 bbox 使用右/下不包含，七个端点像素仍处批准盒内。",
+    "手机视窗是依据现行 Client 镜头公式制作的四层静态艺术投影，不代表 Creator 运行截图。"
+  ],
+  "risks": [
+    "具体 v0.2 资源版本尚待用户 Gate2 明确批准，批准前不得正式接入 Client。",
+    "PSD 可编辑性有九层读取与独立 SVG 源证据；Photoshop/Photopea GUI 编辑实操未测。",
+    "四图重组与 PSD 存储预览在批准局部范围存在最多每色道 1/255 的 alpha 整数舍入差，561 个色道值不等。",
+    "悬浮控件实际遮挡、Creator 导入、目标手机纹理内存/Draw Call/帧时均 NOT_TESTED。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

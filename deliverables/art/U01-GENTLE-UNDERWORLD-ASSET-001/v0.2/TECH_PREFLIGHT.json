@@ -1,0 +1,28 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-07 12:51:24 +08:00 独立签认 v0.2/PREFLIGHT_PLAN.md SHA-256 F64D3B8E8AEEF654DEF21C163F9C5692DC919A4F6EC973FE35176E4DBB7D1416，与 ART_PREFLIGHT.json 于 12:50:39 +08:00 重新签认的 SHA 相同；签认时 v0.2 目录只有预案及 Art 签字，没有新图、PSD、切片或视窗产物。本签仅覆盖获批 Gate1 方案下的下一轮首图前生产预案，不追认 v0.1 工具偏差试制，也不是 Gate2 用户效果批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "只读重算 v0.2 锁定的 v0.1 历史试制五份原创 SVG 及 make_local_art.js、bggg image2psd.py 的 SHA-256，均与预案逐项一致；五份 SVG 均为 2172×724 viewBox，XML 中无 image、text、use、foreignObject 或外部 href 引用。v0.2 仅借这些可编辑路径源重新渲染，不复用 v0.1 PSD/PNG 冒充新生成。旧获批 PSD SHA-256 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed，四层身份与旧 alpha 边界仍是基线。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本版工具链明确列本地 bundled Node v24.19.0、sharp 0.35.4、libvips 8.18.6、librsvg 2.62.91 将 SVG 栅格化，随后用 bggg image2psd.py assemble 从旧 PSD 回读的四层与五透明层组装修订 PSD，并以 Python 3.12.14 / Pillow 12.3.0 / NumPy 2.3.5 回读、导出及静态投影。现场只读核 sharp/package.json 许可 Apache-2.0 且 LICENSE 存在，bggg 本地 LICENSE 为 MIT；工具与二进制依赖不进入游戏包。当前版本查询不冒充 v0.1 运行时证据；v0.2 开工前须记录实际版本，若不符预案先停并重签。全部间接依赖及第三方相似权利未被本签独立核清。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案限五个已批候选盒、旧四层锁定、新 PSD 九个可单独开关的栅格层及旁存 SVG 路径源；正式运行贴图只导出 L01–L04 四张 2172×724 RGBA 全画布，原点一致、无 trim 或新视差层。L01/L02 需与旧版逐像素相同，L03/L04 仅各自批准盒内变化，L04 四边 RGBA/alpha 与旧版相同。现行 Client 以最前景 2172×724、每侧 2 UI 单位余量、视差 [0.3,0.8,1,1]、zoom 1–1.8 限位；保持边界后仍须在实际新图的五种竖屏比例、中心/左右端及放大状态核静态接缝。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 RGBA8 的理论展开量 25,160,448 B（约 23.995 MiB）；同尺寸同数量不预期额外纹理页，但 Creator 导入、实际图集/压缩、GPU/CPU 内存、Draw Call、帧时和目标设备兼容未测。v0.1 试制中九层先合成与四语义层先合成存在最大 1/255 的局部色道舍入差，本版预案要求新图记录差异位置/最大值，若超过 1/255 或超出候选盒就停并修正；不能写成逐像素完全相同。"
+    }
+  ],
+  "next_action": "Art/Tech 已在 v0.2 新图生成前对同一预案 SHA 双签，Art 可先记录当次 Node/sharp/libvips/librsvg 与 SVG/脚本 SHA，再从获批旧 PSD 四层及锁定原创 SVG 路径重新渲染、组装和导出 v0.2；保留 v0.1 偏差证据并记录新文件时间与哈希。出图后独立核四层、局部差异、alpha 外缘、同尺度重组及静态视窗，并由 Master 将具体新资源交用户 Gate2 审核。若工具、源 SHA、范围、图层或尺寸变化，下一张图前重新修订预案并同 SHA 双签；用户批准新资源前不正式接入 Client。"
+}

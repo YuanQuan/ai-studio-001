@@ -2,6 +2,27 @@
 
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
+### WR-20261007-U01-GENTLE-ASSET-002｜v0.2 重制与具体资源送 Gate2
+
+- 结果/证据/门禁：Master 将资源 Task 的 19 项 Required 改指 v0.2；Art 新 `PREFLIGHT_PLAN.md` 明列 Node/sharp SVG 栅格化、bggg PSD 组装、Python/Pillow/NumPy 回读与视窗，Art/Tech 对同 SHA `F64D3B8E8AEEF654DEF21C163F9C5692DC919A4F6EC973FE35176E4DBB7D1416` 在首张新图前签认。`runtime_before_render.json` 留当次工具版本与渲染前文件数；Art 从获批旧 PSD 和锁定 SVG 重新出九层 PSD、四张切片、同尺度整体、四处细节板及 30 张静态视窗。Owner 提交 19/19 Required；Producer 核 `DELIVERABLE.json` 28/28 索引唯一实存、六核心 JSON Schema、预案 SHA、源/成品哈希、2172×724 RGBA、四边 alpha 与批准盒，另从四张 PNG 在黑底独立叠合与整体图逐像素一致；`ART_FILE_CHECK.json` 为执行 Agent `APPROVED`。Task/主 Approval 进入 `USER_REVIEW`，审批 `decided_at=null`；这是自行切图的直接用户门禁，未增加效果专业复审。审阅包 SHA `A171E94E14DA0231E0FB8F94911F97969120B9ABC719FD64067F90A45B345560`。用户尚未决定，悬浮控件/Creator 运行与目标机性能 `NOT_TESTED`，Client 未接本版。v0.1 历史偏差仍为 DRAFT，不继承至 v0.2。
+- 可核时间与耗时（Asia/Shanghai）：v0.2 预案草稿文件创建 12:47:28；Art 对最终 SHA 12:50:39 签、Tech 12:51:24 签；运行日志 12:53:10、首张新透明层 12:53:41；PSD 创建 12:54:20、四语义切片 12:54:22–23、静态总览 12:54:46；`USER_REVIEW_PACKET.md` 创建 12:59:29、`ART_FILE_CHECK.json` 13:00:55、`DELIVERABLE.json` 13:01:12；Producer 13:01:58 送审。草稿创建至送审可见墙钟 14 分 30 秒，包含预案补正、双签等待、重制、文件核验与状态登记，不是 Art/Tech/Producer 各自净工时。用户 Gate2 等待尚未开始计时；准确用户请求与反馈时刻、各角色纯执行耗时、工具运行净耗时未知。
+- 观察与建议：本版的可证返工源在上一试制周期的工具清单缺项，详见 `WR-20261007-U01-GENTLE-ASSET-001`；本周期通过先列工具/版本与源哈希再双签，首张新图时间确在双签之后。没有同类目标时长基线，不评价制作快慢，也无新工具故障证据。建议 Art Owner 下一批出图前继续在预案中列完整“源路径→渲染器→母版→导出/核验”工具及版本，Tech Lead 对照实际计划命令签同 SHA；代价是较长的首图准备，复核点为下一批预签与首张图的时间/哈希。建议 Producer 在 Gate2 送审前重复本次“Required/索引/实际哈希/四图重组/未测项”核对，代价是一次文件检查，复核点为下批 Gate2；不新增用户审批或专业效果复审。
+- Continuity check：U01 资源 Task 与主 Approval 均 `USER_REVIEW`，v0.2 成品已可供 Master 向用户审；本批无空转 READY/IN_PROGRESS。旧 v0.1 保留偏差史、未获用户决定；Client 正式导入、悬浮控件遮挡、真实手机安全边及性能/QA 均需本版 Gate2 获批后另按正式流程执行。
+
+### WR-20261007-U01-GENTLE-ASSET-001｜v0.1 实图试制与工具范围偏差返修
+
+- 结果/证据/门禁：`U01-GENTLE-UNDERWORLD-ASSET-001` 的 v0.1 首图预案 Art/Tech 对同 SHA `7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0` 双签，Art 后续产九层 PSD、四张 2172×724 PNG、同尺度重组、30 张静态竖屏投影及 19/19 Required。Producer 核 24 条交付索引唯一实存、六份核心 JSON Schema、文件哈希与四图重组逐像素一致；随后因 `SOURCE_AND_EDIT_RECORD.md` 披露使用未列入预案预签工具范围的 Node/sharp 0.35.4 栅格化原创 SVG，Tech 的 `deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/TECH_TOOL_DEVIATION.json` 判 `CHANGES_REQUESTED`，该工具变化须在下一正式出图前修订预案并重签。Master 接纳后，v0.1 仅冻结为内部试制/偏差证据，Task `REVIEW→REVISION`；`tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL_v0.1.json` 保持历史 `DRAFT`，本版未送 `USER_REVIEW`，没有用户退回或批准。源证据还包括 `PREFLIGHT_PLAN.md`、两份预签、`CUT_MANIFEST.json`、`ART_FILE_CHECK.json`。
+- 时间/耗时（Asia/Shanghai）：首份 Required 创建 12:26:29；Art 预签文件写入 12:27:33、Tech 预签 12:28:13；新 PSD 创建 12:35:00；执行文件检查 12:42:14、交付索引 12:42:38；Producer 独立核验截至 12:45:13；Master 指示返修 12:46:05。从首份 Required 至返修可见墙钟 19 分 36 秒，包含预签、制作、核验、跨角色判断与流程登记，不能视为任一角色净工时。用户等待、本轮真实绘制净时长、Tech 判断耗时分别未知；未发现可证实的外部工具故障。
+- 观察与建议：本轮具体返工原因是预案只写 SVG 路径→透明层、本地 bggg 组装，未把实际 Node/sharp 栅格化工具及版本列为首图前签名范围；并非美术画面或四层几何审美退回。尚无同类批次基线，不评价整体快慢。建议 Art Owner 在 v0.2 新首图预案列出完整 SVG→PNG→PSD 生产工具链、版本和许可，Tech Lead 同 SHA 核定后再制作新拟正式图；代价是一次工具链梳理与重制，复核点为 v0.2 首张新图文件创建时间晚于两份新预签。建议 Producer 在下一批预签时把“实际栅格化/组装工具与预案工具清单一致”纳入已有门禁核对，代价为一次来源/脚本交叉核，复核点为下一批首图前预签，不新增用户审批环节。
+- Continuity check：v0.1 处于内部返修历史，无 Gate2 用户决定；同 Task 转 `REVISION`，Art 与 Tech 正编制 v0.2 新预案与双签，非空转 `READY/IN_PROGRESS`。Client 未接入新资源；v0.2 新 PSD、切片和重组尚须真实重做并独立呈用户 Gate2。
+
+### WR-20261007-U01-GENTLE-002｜U01 温和地府元素美术方案 v0.1 Gate1 批准
+
+- 结果/证据/门禁：用户在 Master 对 v0.1 制作前方案的明确请批后回复“批准”；Producer 核 `ART_PRODUCTION_PLAN.md` SHA-256 `107095375868D24BAFAA1A5778E759E8C4A711CF8ACC6ABB1BA4710F152B42E3`、10/10 Required、四项方案验收 PASS、Art/Tech/Master 同版 Review APPROVED，将 `tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json` 记 `USER_APPROVED`、Task 记 `DONE`。这仅是 Gate1 方案批准；首图前 Art/Tech 同批预签、实际新 PSD/切片及同尺度重组 Gate2 和 Client 接入另待相应门禁。证据为上述 Task/Approval、`deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/`、本轮用户“批准”。
+- 时间/耗时（Asia/Shanghai）：上轮送审节点 12:08:36；本轮 Producer 可核验开始 12:22:58，批准登记 12:23:08，资源 Task 依赖解锁 12:25:17，Art 首份预案创建 12:26:29，Producer 开工核验 12:26:41；可见本轮至该核验点墙钟 3 分 43 秒。用户回复的精确发送时刻与送审后用户等待时长未知；12:08:36 至 12:23:08 的墙钟 14 分 32 秒不能全归为用户审阅或 Agent 执行。专业 Review 和方案制作发生于上轮，参见 `WR-20261007-U01-GENTLE-001`；本轮无返工或工具故障证据。
+- 观察/建议：暂无同类审批时长基线，不能判断慢因或归责。本轮未发现可证实的慢因。建议 Producer 在下一次 U01 Gate2 送审时继续单独列出 Gate1/首图预签/Gate2 的精确版本和审批路径，以减少将方案批准误作实图批准的返工风险；代价为一次状态核对，复核点为新实图送用户前。
+- Continuity check：本方案 Task 已 `DONE`；Producer 于 12:25:17 核实资源任务两项上游 USER_APPROVED 后，将 `U01-GENTLE-UNDERWORLD-ASSET-001` 由 `BACKLOG→READY`。Art Owner 的首份 Required `PREFLIGHT_PLAN.md` 于 12:26:29 实际落盘，Producer 12:26:41 核验后记录 `READY→IN_PROGRESS`，不是状态占位。Art/Tech 同版双签、拟正式新图与 Gate2 均未完成，Client 尚未解锁。
+
 ### WR-20261007-U01-GENTLE-001｜U01 温和地府元素美术方案 v0.1 送用户审阅
 
 - 结果/证据/门禁：Master 建 `U01-GENTLE-UNDERWORLD-ART-PLAN-001`，Art 在已批四层 PSD 与当前手机画面上完成五份文字方案、自审和 `DELIVERABLE.json`；Tech 对原层画布/alpha/最前景边界及后续 PSD 路径 Review，Master 同版 Review。10/10 Required 与索引一致，四项方案验收 PASS，三份 Review `APPROVED`，Producer 将 Task/Approval 送 `USER_REVIEW`。证据：`tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/TASK.json`、`ARTIFACT_APPROVAL.json`、`deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1/`；方案 SHA-256 `107095375868D24BAFAA1A5778E759E8C4A711CF8ACC6ABB1BA4710F152B42E3`。用户尚未决定，未生产新 PSD/图片/切片或改程序；后续首图预签、具体资源 Gate2 和运行 QA 均独立等待。

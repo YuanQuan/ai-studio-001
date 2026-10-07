@@ -1,0 +1,277 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "version": "v0.1",
+  "coordinate_convention": "方案 x920–948 等范围按两端均包含；本清单及 Pillow/NumPy 的 bbox_xyxy 用左/上包含、右/下不包含，故允许盒换算为 x920:949 等。Tech 发现的7个右端像素均在方案闭区间内。",
+  "status": "HISTORICAL_TRIAL_NOT_FOR_GATE2",
+  "process_deviation": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/PROCESS_DEVIATION.md",
+  "gate1_plan_user_approved": true,
+  "art_tech_same_preflight_sha256": "7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0",
+  "gate2_specific_asset_user_approved": false,
+  "previous_approved_psd": {
+    "file": "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd",
+    "sha256": "428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed"
+  },
+  "master": {
+    "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/psd/u01_gentle_underworld_four_layers.psd",
+    "sha256": "7694777c98d4ae3bbf1cc87aaef97f83c9cda89e2bd60837c064cca4e39cee73",
+    "canvas": [
+      2172,
+      724
+    ],
+    "raster_layer_count": 9,
+    "semantic_output_layer_count": 4,
+    "original_four_layer_rgba_equal_approved_psd": true,
+    "raster_layer_order_bottom_to_top": [
+      "L01 approved sky",
+      "L02 approved mountains",
+      "L03 approved ground",
+      "GU01a original flower",
+      "GU01b original flower",
+      "GU03 original waystone",
+      "GU04 original hand-lettering",
+      "L04 approved foreground",
+      "GU02 original bridge carving"
+    ],
+    "editable_scope": "原四层栅格可独立编辑；五个新增对象在PSD中为独立栅格层，SVG路径/笔触源另存；无原生PSD文字对象或矢量对象"
+  },
+  "local_objects": [
+    {
+      "name": "gu01_left_flower",
+      "target_semantic_layer": "L03",
+      "editable_svg": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu01_left_flower.svg",
+      "editable_svg_sha256": "d194503774e5179661e6dadb562122a652e999dd7a8565420f582017876895ce",
+      "transparent_full_canvas_png": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/local_layers/gu01_left_flower.png",
+      "transparent_png_sha256": "169e111586d8edf4ce98d4042d305f756c6628cced83f32aa8cd87f32c206e57",
+      "alpha_bbox_xyxy": [
+        920,
+        439,
+        949,
+        479
+      ]
+    },
+    {
+      "name": "gu01_right_flower",
+      "target_semantic_layer": "L03",
+      "editable_svg": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu01_right_flower.svg",
+      "editable_svg_sha256": "b975b575bd964b78af6e2826bbafe7beb90ff3c4a160a13fb066144bdbd24268",
+      "transparent_full_canvas_png": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/local_layers/gu01_right_flower.png",
+      "transparent_png_sha256": "e75f6999990402b5b4d1c8cbc9793083d347170347bae4fe2cd4c1232119dd6c",
+      "alpha_bbox_xyxy": [
+        1225,
+        439,
+        1253,
+        480
+      ]
+    },
+    {
+      "name": "gu03_waystone",
+      "target_semantic_layer": "L03",
+      "editable_svg": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu03_waystone.svg",
+      "editable_svg_sha256": "a658894fc1800a27f6cf304a4e8169ce231fc3233b65dabfb9623e06a106d76a",
+      "transparent_full_canvas_png": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/local_layers/gu03_waystone.png",
+      "transparent_png_sha256": "ecb8ce9ace235dd8c2fc587dba677887de6b3f99575cc3c46f2ec59f2897f544",
+      "alpha_bbox_xyxy": [
+        118,
+        459,
+        166,
+        490
+      ]
+    },
+    {
+      "name": "gu04_plaque_lettering",
+      "target_semantic_layer": "L03",
+      "editable_svg": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu04_plaque_lettering.svg",
+      "editable_svg_sha256": "68bc1c7c8757deb6890e5b621d54b1b91d2d27e2e30c8dbb3c5a8607ca39f81a",
+      "transparent_full_canvas_png": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/local_layers/gu04_plaque_lettering.png",
+      "transparent_png_sha256": "3ef424ce4e8658141bbe609f9e5b9a998dfc46f8fa4f6df3fa5c487e26a79db5",
+      "alpha_bbox_xyxy": [
+        2043,
+        254,
+        2087,
+        278
+      ]
+    },
+    {
+      "name": "gu02_bridge_carving",
+      "target_semantic_layer": "L04",
+      "editable_svg": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu02_bridge_carving.svg",
+      "editable_svg_sha256": "16dfe6275d9fa51311cc39681cb11bbec383e429a4e02122b0febd3319f35955",
+      "transparent_full_canvas_png": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/local_layers/gu02_bridge_carving.png",
+      "transparent_png_sha256": "31cc5c0bbe3e9e1f9718b4fb9963ede344abb43291bc4e0a6abc8751e93463b0",
+      "alpha_bbox_xyxy": [
+        1076,
+        444,
+        1108,
+        464
+      ]
+    }
+  ],
+  "layers_back_to_front": [
+    {
+      "index": 1,
+      "asset_id": "STREET_BASE_01_L01",
+      "description": "天空、月、云",
+      "parallax_ratio": 0.3,
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l01_sky.png",
+      "sha256": "fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1",
+      "old_approved_file": "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/01_01_94477409.png",
+      "old_approved_sha256": "fbc51da7c1c40ca72bc158e88c3b378d01ba98cf0e3440d4bb8af17b0862cfa1",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "origin_xy": [
+        0,
+        0
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        2171,
+        724
+      ],
+      "rgba_difference_bbox_xyxy": null,
+      "rgba_changed_pixel_count": 0,
+      "all_four_edge_alpha_equal_old": true,
+      "unapproved_region_rgba_equal_old": true
+    },
+    {
+      "index": 2,
+      "asset_id": "STREET_BASE_01_L02",
+      "description": "远山、远楼",
+      "parallax_ratio": 0.8,
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l02_mountains.png",
+      "sha256": "3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478",
+      "old_approved_file": "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/02_02_933386cf.png",
+      "old_approved_sha256": "3ff0afcb980f460a4455ef2ecb6b2c1b85a894f30b9bf1d5b086bc54292db478",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "origin_xy": [
+        0,
+        0
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "rgba_difference_bbox_xyxy": null,
+      "rgba_changed_pixel_count": 0,
+      "all_four_edge_alpha_equal_old": true,
+      "unapproved_region_rgba_equal_old": true
+    },
+    {
+      "index": 3,
+      "asset_id": "STREET_BASE_01_L03",
+      "description": "柳树、地面、右牌楼，含 GU-01a/b、GU-03、GU-04",
+      "parallax_ratio": 1,
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l03_ground.png",
+      "sha256": "5ee55a41da1386c08433a4606f285b16661ef9a6f5d2f69e933d60589c91e767",
+      "old_approved_file": "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/03_03_23db4183.png",
+      "old_approved_sha256": "af07fc566d7461acc314e2805b4a1419c44f5d64a7f15da8c5d489be2a29fb1d",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "origin_xy": [
+        0,
+        0
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "rgba_difference_bbox_xyxy": [
+        118,
+        254,
+        2087,
+        490
+      ],
+      "rgba_changed_pixel_count": 2957,
+      "all_four_edge_alpha_equal_old": true,
+      "unapproved_region_rgba_equal_old": true
+    },
+    {
+      "index": 4,
+      "asset_id": "STREET_BASE_01_L04",
+      "description": "桥栏、河与前景，含 GU-02",
+      "parallax_ratio": 1,
+      "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l04_foreground.png",
+      "sha256": "c8e90cec144167d833f00f40a30b6ac3b84d4a07465ab29aa0ad718dde36241e",
+      "old_approved_file": "deliverables/art/moonlit_psd_20261005_v2_raw/psd_full_canvas_layers/04_04_c82fb659.png",
+      "old_approved_sha256": "8a715d77b09fcf004cd6eecf20f913f6650b257220535eff55be58ddf7bdde5b",
+      "canvas": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "origin_xy": [
+        0,
+        0
+      ],
+      "alpha_bbox_xyxy": [
+        0,
+        79,
+        2172,
+        724
+      ],
+      "rgba_difference_bbox_xyxy": [
+        1076,
+        444,
+        1108,
+        464
+      ],
+      "rgba_changed_pixel_count": 344,
+      "all_four_edge_alpha_equal_old": true,
+      "unapproved_region_rgba_equal_old": true
+    }
+  ],
+  "same_scale_composite": {
+    "file": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/review/overall_from_psd.png",
+    "sha256": "7ae27198498c9de1babccde90d69b9bb389213a5a92ade8b3b6906185b9ce929",
+    "canvas": [
+      2172,
+      724
+    ],
+    "mode": "RGB",
+    "from_four_semantic_exports": true,
+    "psd_stored_flattened_max_channel_delta": 1,
+    "psd_stored_flattened_nonidentical_channel_count": 561,
+    "delta_explanation": "九个PSD层先合成与四个语义层先合成的8位alpha整数舍入次序不同；最大每色道1值，差异仅在五个获批局部范围。"
+  },
+  "static_portrait_projections": {
+    "contact_sheet": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/review/portrait_viewports.png",
+    "contact_sheet_sha256": "637c955764f8c0108fabcacb4a34fc2f6dcf0722952ee2e1de8a2e23c048aeb5",
+    "individual_directory": "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/review/viewports",
+    "count": 30,
+    "aspect_ratios": [
+      "9:16",
+      "9:18",
+      "9:19.5",
+      "9:20",
+      "9:21"
+    ],
+    "states_per_ratio": [
+      "center_min",
+      "left_min",
+      "right_min",
+      "center_max",
+      "left_max",
+      "right_max"
+    ],
+    "projection_method": "720逻辑宽，cover=max((720+4)/2172,(logicalHeight+4)/724)，zoom 1或1.8，cameraX按最前景±max，分层位移[0.3,0.8,1,1]",
+    "nonopaque_pixel_count_each": 0,
+    "is_cocos_runtime_capture": false,
+    "controls_rendered": false
+  },
+  "client_integration_status": "NOT_IMPORTED_NEW_VERSION",
+  "creator_target_device_performance_status": "NOT_TESTED"
+}

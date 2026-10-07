@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2172" height="724" viewBox="0 0 2172 724">
+<defs></defs>
+<defs>
+ <linearGradient id="stone" x1=".08" y1=".04" x2=".84" y2=".94"><stop stop-color="#748c9b"/><stop offset=".4" stop-color="#4c687a"/><stop offset="1" stop-color="#223d55"/></linearGradient>
+ <linearGradient id="moss" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7caa8d"/><stop offset=".6" stop-color="#47746c"/><stop offset="1" stop-color="#294e58"/></linearGradient>
+ <filter id="haze"><feGaussianBlur stdDeviation="1.2"/></filter>
+</defs>
+<g stroke-linecap="round" stroke-linejoin="round" transform="translate(14.2 0) scale(.9 1)">
+ <ellipse cx="142" cy="483" rx="22" ry="5" fill="#061f36" opacity=".4" filter="url(#haze)"/>
+ <path d="M120 477 Q122 470 128 466 Q134 460 145 461
+          Q157 461 163 469 Q165 475 161 480 Q150 485 135 483 Q124 482 120 477 Z"
+   fill="url(#stone)" stroke="#172e47" stroke-width="1.8"/>
+ <path d="M124 472 Q131 461 146 463 Q155 463 160 469 Q150 466 137 468 Q130 472 127 479"
+   fill="#a3afb0" opacity=".17"/>
+ <path d="M123 478 Q136 482 153 480 M152 463 Q158 465 161 470"
+   fill="none" stroke="#a8b8b0" stroke-width="1.0" opacity=".38"/>
+ <path d="M135 475 Q139 474 142 470 Q145 474 150 474
+          M142 470 Q140 468 141 466 Q143 467 143 469 Q145 467 147 467
+          M137 477 Q143 478 149 476"
+   fill="none" stroke="#213d52" stroke-width="1.55" opacity=".7"/>
+ <path d="M135 474 Q139 473 142 469 Q145 473 150 473
+          M141 468 L141 466 M144 468 L147 466 M137 476 Q143 477 149 475"
+   fill="none" stroke="#9fbdb3" stroke-width=".65" opacity=".65"/>
+ <path d="M120 475 Q127 473 130 479 Q137 478 140 483 Q130 485 121 481 Z
+          M152 482 Q157 474 164 474 Q164 481 155 484 Z"
+   fill="url(#moss)" stroke="#173f48" stroke-width=".8"/>
+ <path d="M119 479 Q124 476 129 480 M155 481 Q160 476 164 476"
+   fill="none" stroke="#9bb78e" stroke-width=".8" opacity=".7"/>
+ <path d="M116 479 Q120 476 124 478 Q125 482 130 484 Q122 485 116 482 Z
+          M159 481 Q165 476 168 478 Q168 483 160 484 Z"
+   fill="#1f5061" opacity=".72"/>
+</g></svg>

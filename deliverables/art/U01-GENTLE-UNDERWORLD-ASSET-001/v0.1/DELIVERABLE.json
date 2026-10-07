@@ -1,0 +1,70 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "owner": "art",
+  "summary": "HISTORICAL_TRIAL_NOT_FOR_GATE2。本版已形成九栅格层 PSD、四张同画布 PNG、重组与静态审阅图，但实际 Node/sharp 栅格化工具未列入首图前预签，故只能作为历史试制/偏差证据，不提交正式 Gate2；未修改程序。技术偏差见 v0.1/PROCESS_DEVIATION.md。",
+  "artifacts": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/PROCESS_DEVIATION.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/SOURCE_AND_EDIT_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/psd/u01_gentle_underworld_four_layers.psd",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/exports/tex_street_base_01_l04_foreground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/review/overall_from_psd.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/review/portrait_viewports.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/ART_FILE_CHECK.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu01_left_flower.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu01_right_flower.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu02_bridge_carving.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu03_waystone.svg",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.1/source_build/editable_strokes/gu04_plaque_lettering.svg",
+    "tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 USER_APPROVED 后，首张拟正式图前 Art/Tech 对同版预案双签",
+      "result": "PASS",
+      "evidence": "tasks/U01-GENTLE-UNDERWORLD-ART-PLAN-001/ARTIFACT_APPROVAL.json；本版 PREFLIGHT_PLAN.md SHA-256 7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0；ART_PREFLIGHT.json、TECH_PREFLIGHT.json 均 APPROVED"
+    },
+    {
+      "criterion": "现有 PSD 四层旧像素保留，五处局部独立可编辑且不重画整景",
+      "result": "PASS",
+      "evidence": "psd/u01_gentle_underworld_four_layers.psd；source_build/editable_strokes/；PSD_EDITABILITY_REPORT.md；source_build/build_validation.json"
+    },
+    {
+      "criterion": "四张 2172×724 RGBA 同源输出，L01/L02 不变，L03/L04 仅已批局部差异，最前景边缘不变",
+      "result": "PASS",
+      "evidence": "exports/ 四张；CUT_MANIFEST.json；source_build/build_validation.json；Tech 只读核对"
+    },
+    {
+      "criterion": "同尺度重组及五种竖屏比例中心/左右极限、倍率 1/1.8 的静态视觉证据和逐锚点结论",
+      "result": "PASS",
+      "evidence": "review/overall_from_psd.png；review/portrait_viewports.png；review/viewports/ 共 30 张；VISUAL_ANCHOR_CHECK.md；source_build/viewport_validation.json。控件与真实运行 NOT_TESTED，未写成通过。"
+    },
+    {
+      "criterion": "Art、Tech Lead、Client 切图协作记录及用户 Gate2 交付包",
+      "result": "PASS",
+      "evidence": "CUT_COLLABORATION_RECORD.md；USER_REVIEW_PACKET.md；CUT_MANIFEST.json。具体切图效果仍待用户批准，Client 正式接入未发生。"
+    }
+  ],
+  "assumptions": [
+    "方案坐标范围两端均包含；程序 bbox 采用右/下不包含，七个端点变化像素仍在获批盒内。",
+    "五种竖屏视窗是依 Client v0.2 控制器公式做的静态艺术投影，不是运行截图。"
+  ],
+  "risks": [
+    "用户 Gate2 尚未批准本具体 PSD/PNG 版本，不能正式交 Client 接入。",
+    "PSD 未在 Photoshop/Photopea GUI 编辑验证；可编辑性已由层通道回读及独立 SVG 笔触源验证。",
+    "四切片重组与 PSD 内嵌平面在五处局部有最多每色道 1 值的 8 位 alpha 舍入差。",
+    "实际控件遮挡、Creator 导入、目标手机纹理预算和运行性能均 NOT_TESTED。"
+  ],
+  "status": "FAILED"
+}

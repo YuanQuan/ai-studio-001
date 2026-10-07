@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "v0.1 首图前 Art/Tech 同签的 PREFLIGHT_PLAN.md SHA-256 为 7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0，预案明确 bggg image2psd.py assemble 组装 PSD，却未列实际生产中用来将 SVG 路径转成正式透明像素层的 Node/sharp 0.35.4。‘路径/笔触源→透明层’规定输入与输出，并不指定栅格化工具；预案末段要求改变工具须先修订并在下一张图生成前对新 SHA 双签。因此 v0.1 实际工具链超出已签范围，已产出的试制图不能追溯称为 sharp 已获首图前预签，也不能以本版进入正式 Gate2 效果审批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "偏差在 Art 产出 v0.1 PSD/四张切片后由其主动披露，并由 Tech 在切图协作只读核对后指出；这不是用户退回或用户对画面内容的否定。现存 v0.1 源、导出、哈希、静态视窗和已签旧预案应冻结并保留为历史试制及过程证据，不覆盖、不删改、不把新签日期回填到旧出图前。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 只读像素核查显示四张导出均为 2172×724 RGBA，L01/L02 与旧版逐像素相同，L03/L04 仅约定局部变化，L04 四边 RGBA/alpha 与旧版相同；这些文件质量证据不替代首图前工具预签。当前本机 bundled Node 检测为 v24.19.0，sharp package 0.35.4 / Apache-2.0、libvips 8.18.6，但此时检测不能冒充 v0.1 首轮运行环境日志。"
+    }
+  ],
+  "next_action": "Art 保留 v0.1 作为历史试制，记录 make_local_art.js、五个 SVG/透明 PNG、脚本及产物哈希、实际工具来源与许可和可证的运行版本；如首轮 Node 版本未留证则明确未知。另立 v0.2 首图预案，列明 Node/sharp SVG 栅格化、bggg PSD 组装及 Pillow/NumPy 核验等实际工具和产物范围，在下一次正式出图前由 Art 与 Tech Lead 对同一 v0.2 预案 SHA 分别签认。双签后从已批旧 PSD 和原创 SVG 重出新的可追溯版本，独立核四层、alpha/镜头边界、同尺度重组与视窗，再向用户提交具体资源版本 Gate2 审核；不因内部工具偏差重复索取已登记的原图权利声明。"
+}

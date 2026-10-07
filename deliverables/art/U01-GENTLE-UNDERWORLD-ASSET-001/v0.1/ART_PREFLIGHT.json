@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 于 2026-10-07 12:27:24 +08:00 对本批 PREFLIGHT_PLAN.md 文字预案单方签认；文件 SHA-256 为 7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0。该签认仅对应已批 Gate1 U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.1 的四处局部修订及同版预案，不是新图、PSD、切片或 Gate2 效果批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧 PSD SHA-256 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed，画布 2172×724、四层原位。旧天空最右 1px 透明与 L04 alpha bbox (0,79,2172,724) 是基线；五个新增局部对象拟分别位于 L03/L04 语义、独立可编辑层。Art 拒绝全图重绘、改变旧图四边或新增视差层。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧源用户原图及商用改编权声明已在获批 RIGHTS_AND_SOURCE.md 登记；旧 process_notes.md 记录原图来自 Codex generated_images、bggg assemble。已核 OpenAI 公开 Terms of Use 的 Content 节和 Service Terms 第 6 节、本地 bggg MIT License；特定账户合同与第三方相似权利没有独立核清，Art 不将此误写成已核清，也不因此重复索取用户已声明授权。新增内容仅使用本地原创笔触与手绘字形，无新 imagegen、外部图和字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 2172×724 RGBA 全画布导出、L01/L02 像素保真、L03/L04 局部差异、前景外缘 alpha 不变及 9:16 至 9:21 静态手机视窗是出图后核查项。每张 RGBA8 约 5.999 MiB、四张约 23.995 MiB 仅为尺寸草算；Creator 运行、目标设备内存与 Draw Call 均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Tech Lead 对 SHA-256 7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0 的同一 PREFLIGHT_PLAN.md 独立写 TECH_PREFLIGHT.json 并明确 APPROVED；完成双签前 Art 不绘制、生成或导出任何本批新正式图或 PSD。来源、工具、图层、尺寸或范围变动须修订预案并同版重签。"
+}

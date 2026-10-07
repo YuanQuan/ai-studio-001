@@ -1,0 +1,57 @@
+{
+  "id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "title": "U01 温和地府元素现有 PSD 定向修订与四层切图",
+  "type": "art",
+  "owner": "art",
+  "parent": "UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001",
+  "objective": "依据已批准 U01-GENTLE-UNDERWORLD-ART-PLAN-001 v0.1，在现有四层 PSD 的另存版本中只增加四处低密度、非恐怖的静态环境线索，保留原有可见像素与四层视差语义；完成首图前 Art/Tech 同批预签、可编辑 PSD、四张同画布切片、同尺度重组和手机视窗审阅证据，提交具体资源版本给用户 Gate2 审核。本任务不修改 Cocos 工程或程序效果。",
+  "inputs": [
+    "U01-GENTLE-UNDERWORLD-ART-PLAN-001 v0.1 的 USER_APPROVED 制作方案、VISUAL_ANCHORS.md、PLACEMENT_AND_LAYER_MAP.md、RIGHTS_AND_SOURCE.md",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd 及同目录四张原位全画布 PNG（Gate2 v0.3 USER_APPROVED；源 PSD SHA-256 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed）",
+    "deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/evidence/ 下 390×844 中心、左右最小和最大倍率截图",
+    "project/ASSET_HANDOFF_REGISTRY.md、rules/visual_production_contract.md、rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/SOURCE_AND_EDIT_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/psd/u01_gentle_underworld_four_layers.psd",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/exports/tex_street_base_01_l04_foreground.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/review/overall_from_psd.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/review/portrait_viewports.png",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ASSET-001/v0.2/ART_FILE_CHECK.json",
+    "tasks/U01-GENTLE-UNDERWORLD-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "首张拟正式样张前，Art 与 Tech Lead 对同一版预案、工具/来源、原 PSD 可编辑性、四层/画布/alpha 边、手机视窗和纹理预算分别签认；未双签不制作新图。",
+    "在已批四层 PSD 的另存版本保留旧可见内容，新增局部可编辑图层只覆盖已批 GU-01a/b、GU-02、GU-03、GU-04 范围；原 L01/L02 像素和图像结构保持，不重画整景。",
+    "实际四张 2172×724 全画布 RGBA PNG 与修订 PSD 同源，L01/L02 不变，L03/L04 仅批准局部有像素差异；原点、透明边及 L04 最前景防穿帮边界不变，记录逐文件路径/哈希/层映射。",
+    "提交同尺度整体重组、中心与左右极限的最小及最大倍率竖屏对照和逐项视觉锚点结论；花、莲纹、景石和匾字可读且非恐怖，原灯、纸船、桥路和控件留白保持。",
+    "Art 与 Tech Lead、Client 留切图协作记录；执行 Agent 核实际 PSD、切片、重组与登记后直接向用户提交具体版本 Gate2 审核，用户批准前不交 Client 正式接入。"
+  ],
+  "dependencies": [
+    "U01-GENTLE-UNDERWORLD-ART-PLAN-001",
+    "UNIT-MENU-FOUR-LAYER-CUT-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本 Task 已依据用户 2026-10-07 对制作前方案 v0.1 的明确‘批准’建立；Producer 登记 Gate1 USER_APPROVED 后才解除生产依赖。",
+    "本组织 Agent 自行切图，按规则核文件与同尺度重组后直接交用户 Gate2 审核，不增加切图效果专业复审或额外预览环境门禁。",
+    "无客户端代码、Scene、Prefab、导入、构建或运行 QA；手机视窗图是艺术审阅投影，须明确与真实运行画面的区别。",
+    "2026-10-07 12:25:17 +08:00 Producer 核上游 U01-GENTLE-UNDERWORLD-ART-PLAN-001 v0.1 USER_APPROVED / Task DONE 与 UNIT-MENU-FOUR-LAYER-CUT-001 v0.3 USER_APPROVED，解除本任务 BACKLOG→READY。首份 Required 尚未实存，未记 IN_PROGRESS；Approval 保持 DRAFT。Art Owner 已获 Master 指派首图前同批预签文件制作，未双签不得产生拟正式新图。",
+    "2026-10-07 12:46:05 +08:00 Producer 按 Master 对 Tech 工具范围判断的编排，将 v0.1 由 REVIEW 转 REVISION：实际本地 Node/sharp 渲染 SVG 未列入首图前同 SHA 预签工具范围，v0.1 实图冻结为历史试制/偏差证据，Gate2 未送 USER_REVIEW，用户没有退回或批准本版。Art 与 Tech 先对 v0.2 明列工具的新预案同 SHA 双签，再重新出图；Master 将更新本 Task 的 Required 为 v0.2。",
+    "2026-10-07 v0.1 候选因实际 Node/sharp SVG 栅格化工具未列入首图前预签，Tech 在 v0.1/TECH_TOOL_DEVIATION.json 判 CHANGES_REQUESTED；v0.1 冻结为历史试制且未送 Gate2，并非用户退回。当前 Required 改指 v0.2；Art/Tech 须先对列明实际工具的新预案同 SHA 双签，再从已批旧 PSD 与原创 SVG 重新出图。",
+    "2026-10-07 13:01:58 +08:00 Producer 核 v0.2 19/19 Required 非空、DELIVERABLE 28 条索引唯一实存且含全部 Required；Art/Tech 首图前同 SHA 预签、Art 执行文件核查 APPROVED，五项任务美术验收有证据，悬浮控件/Creator 运行额外项 NOT_TESTED 并披露。四张 2172×724 RGBA PNG 哈希与 manifest 一致，四图在黑底同尺度重组与整体图逐像素一致；用户审阅包 SHA-256 A171E94E14DA0231E0FB8F94911F97969120B9ABC719FD64067F90A45B345560。按本组织自行切图例外直接 REVIEW→USER_REVIEW，待用户对 v0.2 具体 PSD/PNG/效果决定，尚非 USER_APPROVED；Client 未接入。"
+  ]
+}

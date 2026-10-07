@@ -1,0 +1,32 @@
+{
+  "task_id": "U01-GENTLE-UNDERWORLD-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech Lead 于 2026-10-07 对 PREFLIGHT_PLAN.md SHA-256 7BACECFC1B18A14033B2C27213B565CF4211AA169D5BABAC468F821C95AA76F0 独立预签，与 ART_PREFLIGHT.json 记录的 SHA 完全相同。Gate1 制作方案 v0.1 已登记 USER_APPROVED；本签仅覆盖本批首张拟正式美术出图前的文字预案，不是新 PSD、切片、运行效果或 Gate2 批准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "只读重算旧 PSD SHA-256 为 428a7b1cbee4fb775d90d84401f4558f12fb93b0e3d60f57067d574ce969d6ed；旧四张 PNG 均为 2172×724 RGBA，alpha bbox 依序为 (0,0,2171,724)、(0,0,2172,724)、(0,0,2172,724)、(0,79,2172,724)。旧天空最右 1px 透明和 L04 顶部透明属于已批源；新稿须保留四层输出原点、全画布与 L04 外缘逐像素 alpha，不能补绘旧末列或改变镜头防穿帮边界。旧 validation.json 记录原 PSD 四层及回读合成一致；当前只读环境未做 Photoshop/Photopea GUI 打开测试，新 PSD 可编辑性须在出图后如实复核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "预案限定 L03 的 GU-01a/b、GU-03、GU-04 与 L04 的 GU-02 五个局部对象层，候选盒均在 2172×724 内且远离左右外缘；旧 L01/L02 像素不变，旧四层锁定并保留。直接另存现有 PSD 或从旧 PSD 回读原位四层加五透明层组装，均须保留旧栅格可编辑层及独立笔触源；若使用后者，PSD 新增层为可单独开关的栅格层，旁文件承载路径/笔触可编辑性，不能声称为 PSD 原生矢量。正式导出仍合为四张 2172×724 RGBA，无 trim、无第五视差层；新图后以逐层哈希、差异 bbox、alpha 边及同尺度重组验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前 Client v0.2 以最前景 2172×724 全图幅、每边 2 UI 单位余量计算横移覆盖，视差 [0.3,0.8,1,1]、zoom 1–1.8；保持 L04 外缘与四层同源尺寸/原点可沿用几何前提。旧 L04 在两处桥侧花候选盒有局部遮挡，桥心莲纹盒主要落在旧桥面，左端景石与右端匾字盒不受 L04 遮挡；新图可读性和边缘采样需在 9:16、9:18、9:19.5、9:20、9:21 静态手机投影的中心/左右端、倍率 1 与 1.8 逐项核验，并明确这不是 Creator 运行截图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四张 2172×724 RGBA8 纹理的理论展开量为每张 6,290,112 B（约 5.999 MiB）、合计 25,160,448 B（约 23.995 MiB）；在尺寸、张数、导入参数和材质保持时，预案无额外纹理页需求。实际 PNG 体积、打包/atlas、GPU 格式和副本、运行内存、Draw Call、帧时及目标机预算均未由预签实测；Gate2 具体图仍须留真实文件与限制，Client 接入后再核运行指标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "来源沿用已登记用户‘我拥有原图及商用改编权’声明；旧 process_notes.md 记录 Codex generated_images 和 bggg assemble。本地 bggg 脚本 LICENSE 为 MIT，计划仅用于本地制作；公开 OpenAI Terms of Use Content 节及 Service Terms §6 已被本批记录，不将公开条款等同特定账户合同或第三方权利独立核清。新笔触、匾字限本地原创，不引入外部图/字体/生成图；如实际新增来源、工具许可限制或可识别相似风险发生，暂停受影响出图并修订同版预案，不重复向用户索取已声明的原图授权。"
+    }
+  ],
+  "next_action": "本文件与同 SHA 的 ART_PREFLIGHT.json 构成 U01-GENTLE-UNDERWORLD-ASSET-001/v0.1 首图前同批双签。Art 可依已签范围另存旧 PSD、绘制五个局部对象层并导出四张全画布图、同尺度重组和静态手机视窗，逐项记录源/差异/alpha/哈希及未测项；改变来源、工具、PSD 方法、尺寸、图层语义、对象盒或导出方案前先修订预案并由 Art/Tech 对新 SHA 重签。具体新资源仍须用户 Gate2 批准后才可正式接入 Client。"
+}
