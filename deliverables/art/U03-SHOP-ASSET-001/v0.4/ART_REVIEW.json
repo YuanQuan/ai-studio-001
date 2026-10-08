@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-SIGN-POLISH-004",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "02 新立牌在同尺度总览、原尺寸局部和 390/720 静态视窗中呈简框、少量宽木纹与牌面绘制的卡通勺浆，小糖字可读；未采用 v0.3 写实厚板、金属勺或新卷草。"
+    },
+    {
+      "severity": "INFO",
+      "message": "03 现烤两字同一官方 OFL 字源、同一暖金浅立体处理；原竖牌和挂件保留。04 剪梳为 180×75、居中留白，在 390 静态视窗仍可辨双环和梳齿。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店 body 原字节继承 v0.3；01/05/06 的 PSD/body/sign 原字节继承。六 PSD、12 PNG、六店重组、390/720 视窗及 1:1 三牌前后对照均实存；39 件清单文件 SHA 全部匹配，旧/新牌透明覆盖以外的重组差异均为 0。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "02/04 高分图案为拆分后的独立栅格层，03 双字也是独立栅格层；遮挡背面和无限缩放不完整，不宣称矢量或与数百像素参考逐像素相同。"
+    }
+  ],
+  "next_action": "以 USER_REVIEW_PACKET.md 和 CUT_MANIFEST.json 的 v0.4 实片交用户 Gate2 审核；未获具体版本批准前不正式接入 Client。"
+}

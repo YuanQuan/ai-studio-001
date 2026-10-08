@@ -1,0 +1,30 @@
+{
+  "task_id": "U03-SHOP-SIGN-POLISH-004",
+  "batch_id": "U03-SHOP-SIGN-POLISH-V04",
+  "reviewer": "tech_lead",
+  "decision": "PRESIGNED_FOR_02_03_04_SIGN_ONLY",
+  "gate1_status_verified": "USER_APPROVED",
+  "input_sha256": {
+    "PRODUCTION_PLAN_AND_ANCHORS.md": "6EC78613C66311B1D85B04E7A5AE55C9CC8BE6E21DA27B46C634D2C302A67183",
+    "v0.3/CUT_MANIFEST.json": "1A023BA823B536B4208653D73E7F8015919C4005F61E3A2566DBC9A81FFF1299",
+    "official_zcool_kuaile_ttf": "812A6FC1FE54B6D73A419245C32DFEBA8AA33104D5BE90D1CF6AF082007CB71D",
+    "official_ofl_text": "538078469839B4A2E7AD22BEF4EBE41681A4E53749BB2A072144024F1D6D703D"
+  },
+  "scope": {
+    "shop_02": "仅sign：车前原位置、原小糖字与勺浆关系；改简洁卡通手绘牌板/勺浆，去写实密纹、厚侧影、强金光晕。",
+    "shop_03": "仅sign字层：现烤两字由同一官方OFL源、同一92%字号与描边/浅立体处理参数重绘；不拼旧烤字像素。",
+    "shop_04": "仅sign图形：剪梳居中缩小，约80%为首样试排，回到轻巧双环/交叉刃/梳齿造型，390宽仍可辨。",
+    "unchanged": "六店body及01/05/06全部PSD/body/sign原则上继承v0.3原字节，用户选定中间明暗不变；若拟改body或其他店，须先记录越界并交Master处理。"
+  },
+  "technical_contract": {
+    "canvas_px": [1024, 1024],
+    "foot_px": [512, 900],
+    "slices_per_shop": ["body", "sign"],
+    "same_canvas_origin": true,
+    "stable_asset_ids_and_future_client_uuids": true,
+    "raw_rgba_six_shop_upper_bound_bytes": 50331648
+  },
+  "rights_and_source": "02项目已授权图仅作简牌造型方向，保留新绘牌板/勺浆透明层及旧正式糖字来源；03官方OFL TTF仅本地渲栅格，不嵌入PSD或客户端且不入Git；04高清重建小剪梳并保留图形源、图层映射与可编辑限制。",
+  "not_tested": ["v0.4实际PSD/切片与alpha/遮挡", "02卡通感和03双字视觉统一及04图形可读性", "Creator导入/构建/真实Web画面", "驻留内存/图集/DrawCall/设备性能"],
+  "next_action": "Art按同批已签范围制作02/03/04牌片；逐件记录PSD、sign/body真实来源、SHA、同尺度/390/720静态视窗。六店自行切图清单与重组直接交用户v0.4 Gate2审核；其批准前Client不替换资源，不新增样张用户门禁。"
+}
