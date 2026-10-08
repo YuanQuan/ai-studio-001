@@ -1,0 +1,57 @@
+{
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "revision": "r3-light-middle",
+  "sample": "shop_01",
+  "body_reused_byte_identical": true,
+  "body_sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+  "raw_sign_source": "source\\imagegen\\shop_01_sign_light_r1.png",
+  "raw_sign_sha256": "FEB5A3FBAEDD6B223AD13516F4BEF6BE02749B9DAF10CD586303D4E67BEA58D0",
+  "raw_alpha8_bbox": [
+    88,
+    120,
+    909,
+    1451
+  ],
+  "sign_placed_bbox": [
+    821,
+    449,
+    943,
+    651
+  ],
+  "psd": {
+    "path": "psd\\shop_01_milk_tea_light_r3_v03.psd",
+    "sha256": "D3FCAD9FA454565C9CF868E5A056252E603676A3F35B8EA20CF36B7B82D27B09"
+  },
+  "body": {
+    "path": "exports\\shop_01_light_r3\\tex_u03_shop_01_body_light_r3_v03.png",
+    "sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED"
+  },
+  "sign": {
+    "path": "exports\\shop_01_light_r3\\tex_u03_shop_01_sign_light_r3_v03.png",
+    "sha256": "1D5E5E8465B7D2100B2B8F35B4E71BA2CE28A4A7F68D7DA38EFDC0AF867E56D6"
+  },
+  "recomposition": {
+    "path": "preview\\shop_01_light_r3\\shop_01_recomposed_light_r3_v03.png",
+    "sha256": "83B7388407D8CDC708E5889C49D817B5D8B667A36F7CF905590501BD9DC67CEF"
+  },
+  "same_canvas": {
+    "path": "preview\\shop_01_light_r3\\shop_01_target_v02_light_r3_same_canvas.png",
+    "sha256": "076D797847587A3B79B7C4BB2BF138026D8F795642DDBFEDE3C0D26DB98E1EEF"
+  },
+  "layers_bottom_to_top": [
+    "reference_source",
+    "ground_contact",
+    "body_facade",
+    "body_roof",
+    "interior",
+    "light",
+    "front",
+    "body_repair_01",
+    "sign_hardware_r3",
+    "sign_board_r3",
+    "sign_logo_r3"
+  ],
+  "sign_partition_exact": true,
+  "editability_limit": "Board/logo are exclusive visible-pixel raster regions; obscured backside is not reconstructed.",
+  "reference_alpha_limit": "Target black-background extraction is comparison-only; not a formal texture or exact alpha reference."
+}

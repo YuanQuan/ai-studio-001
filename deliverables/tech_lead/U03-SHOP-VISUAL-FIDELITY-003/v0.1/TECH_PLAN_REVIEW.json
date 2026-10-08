@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅批准 v0.3 制作预案的技术可行性供现有 Gate1 审阅，不构成首张正式图片出图许可或切片效果批准。审阅确切文件：deliverables/art/U03-SHOP-ASSET-001/v0.3/PRODUCTION_PLAN.md SHA-256 2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E；VISUAL_ANCHORS.md SHA-256 98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案保留每店 1024×1024 RGBA、脚点 (512,900)、同画布同原点 body/sign 两片和既有稳定资源身份；完整店体重建不会自动改变 Prefab/Scene 结构。六店 12 片未压缩像素容量估算仍约 48 MiB，实际透明面积、图集、驻留、DrawCall 与目标设备性能必须待实图及正式接入后核。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "目标总览实际为 1536×1024 六格图，单店可用像素约数百宽，明显小于 1024 正式画布。不可将小图裁切放大当生产切片，也不可把新生成的未见微纹理或物件细节称为原图直接证据。奶茶首样须记录准确裁框、归一化/抠黑的不确定边缘和高分辨率重建来源；在相同背景、bbox、脚点与 390/720 显示尺度下核卷角瓦、四段帘、瓶罐/锅具、双灯、右悬牌。该限制已由方案承接，生产中须执行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Gate1 现已按用户授权登记为 USER_APPROVED，确切方案 SHA 与本评审一致。正式首图前 Art/Tech 同批预签须绑定获用户批准的具体 v0.3 方案 SHA，并再次核母版/切片分层、alpha、牌与屋檐遮挡、预算估算和字体/参考权利；先前 v0.2 预签不能沿用。用户已授权必要重绘的方法，但具体实片仍需 Gate2，接入后的 Creator/Web 运行仍需新证据。"
+    }
+  ],
+  "next_action": "Producer 已将用户本轮授权映射至现有 Gate1 并锁定确切 v0.3 SHA；Art 与 Tech 同批奶茶首图预签均已完成，Art 可制作 01 可编辑代表样张。后续 Creator 构建核真实进程退出和本轮输出，不能仅凭 PowerShell 空 LASTEXITCODE 判构建结果。"
+}

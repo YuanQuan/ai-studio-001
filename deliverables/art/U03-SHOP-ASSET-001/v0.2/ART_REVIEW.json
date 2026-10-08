@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art 对 v0.2 文字方案与视觉锚点自审通过，可交同版 Tech、Master 评审并进入现有 Gate1 用户方案审核；此结论只评价方案，未评价任何新 PSD、PNG 或运行效果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六份旧 PSD 对应的图层源齐全，三层牌可定向修订。直接查看旧切片发现 01 body 在中部横匾后有矩形透明缺口，方案已要求局部补足并把改变的 body 纳入实际切片审核；02 body 无旧侧竖牌，可优先仅换 sign。05/06 符合方向时沿用原像素。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已获授权的方向图中，杯标、糖勺糖浆和剪梳图形可按对象取原像素成独立层；02 的“糖”优先取原正式字层，03 的“烤”可复用原字层。不得将生成式总览裁为整店替代原 PSD。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "03 新“现”字正式制作前须核对 Google Fonts 官方 ZCOOL KuaiLe OFL、TTF 的实际 SHA/字形，与本地 wordshub 文件是否同源，以及最终栅格字层来源。Tech 现有预查为条件预签；首图前按既有规则对同批版本完成 Art/Tech 签认。"
+    }
+  ],
+  "next_action": "Tech Lead 对 PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、SOURCE_FEASIBILITY.md 同版评审，Master/Producer 依据既有 Gate1 呈用户审批制作方案；用户批准前不出正式母版、样张或切片。实际切片成品随后按既有 Gate2 直接交用户审核。"
+}

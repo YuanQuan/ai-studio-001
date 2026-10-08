@@ -1,0 +1,15 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "reviewer": "art",
+  "decision": "PRESIGNED_FOR_SHOP_01_LIGHTING_CORRECTION",
+  "input_hashes_sha256": {
+    "PRODUCTION_PLAN.md": "2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E",
+    "VISUAL_ANCHORS.md": "98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53",
+    "LIGHTING_AND_STYLE_CORRECTION.md": "04239BFC37616ED90AA8C1E8DF767D4EDF440855CDB39865723882400ED89D1E",
+    "shop_01_v02_recomposition": "8C24719BE4D461024A5139973BD418B4093803E3D48F17A539BAD35515248466"
+  },
+  "scope": "用户已在同尺度三面板中指定中间 v0.2 的主体画法与明暗。01 先沿用 v0.2 原 PSD 主体与 body，定向高清修右檐小牌并保持已选杯、珍珠、叶 logo；只在必要遮挡处微修。v0.3 r2 整店重绘稿只作被退回历史，不按其深阴影扩批。1024×1024、脚点(512,900)、body/sign 两片与 stable ID 不变。",
+  "not_tested": ["新牌正式 PSD 与切片", "新牌与原屋檐遮挡/alpha", "390/720 新静态视窗", "Creator 运行与内存性能"],
+  "next_action": "Tech 对同一 batch_id 与三文档 SHA 复签后制作 01 校准样张；Art 同蓝底同尺度逐锚点自审，再由 Tech 后验，未通过不扩批。"
+}

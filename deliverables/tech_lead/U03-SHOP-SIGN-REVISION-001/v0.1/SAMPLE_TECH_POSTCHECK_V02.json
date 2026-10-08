@@ -1,0 +1,35 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "batch_id": "U03-SHOP-SIGN-REVISION-V02",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "scope": "01/02 代表样张的文件、层数、alpha、尺寸、差异和遮挡技术后验",
+  "shop_01": {
+    "decision": "PASS",
+    "psd_sha256": "BEB913619ED13A4D84248B37CEF27F662C5E052EFC98CFA14C226076F782A463",
+    "body_sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+    "sign_sha256": "890BCF6FA6506A65DDB3EDC2A66B4CD9107684A05388C55050005DA12E61605D",
+    "psd_size": [1024, 1024],
+    "psd_frames_reported_by_pillow": 9,
+    "body_bbox": [142, 280, 882, 900],
+    "sign_bbox": [821, 449, 943, 651],
+    "body_repair_roi": [346, 470, 678, 591],
+    "body_changed_pixels": 40172,
+    "changed_pixels_outside_allowed_regions": 0
+  },
+  "shop_02": {
+    "decision": "REVISE_GLYPH_SOURCE",
+    "psd_sha256": "6CD3CA1AE3935F3B839EBE35151CA75724A821D3DD2BBB73B580CDCC2FA94B73",
+    "body_sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+    "sign_sha256": "25A71B1D5618B0053D84EE77FD351195BC2080EFE26C6F58D2DEC3784F1B79CA",
+    "psd_size": [1024, 1024],
+    "psd_frames_reported_by_pillow": 6,
+    "body_bbox": [189, 149, 851, 900],
+    "sign_bbox": [685, 627, 820, 890],
+    "body_byte_identical_to_gate2": true,
+    "changed_pixels_outside_allowed_regions": 0,
+    "finding": "Art 样张记录称小‘糖’取自生成式预览，违背已批方案的文字来源约束；须使用原正式 sign_glyph 或具完整来源权利的新字。"
+  },
+  "not_tested": ["Photoshop/Photopea manual open-save", "Creator import", "actual Web runtime", "target device", "resident texture memory", "atlas and DrawCall", "performance"],
+  "next_action": "Art 修订 02 字层并更新同批样张证据后 Tech 仅复核局部；通过即可继续 03–06。六店正式切片由执行 Agent 核文件与重组后直接交用户 Gate2 审核。"
+}

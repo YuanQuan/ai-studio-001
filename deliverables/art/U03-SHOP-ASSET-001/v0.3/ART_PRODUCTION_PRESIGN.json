@@ -1,0 +1,23 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "reviewer": "art",
+  "decision": "PRESIGNED_FOR_SHOP_01_SAMPLE",
+  "input_hashes_sha256": {
+    "PRODUCTION_PLAN.md": "2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E",
+    "VISUAL_ANCHORS.md": "98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53",
+    "mixed_signs_v04_reference": "FF3D931CB8D61728197B950B7E5BE42707685848AA9D9F8E31074DC24D43B125"
+  },
+  "gate1_status": "USER_APPROVED",
+  "scope": "仅签 01 奶茶整店高保真代表样张的 Art 制作预案；使用已授权六店图为完整店铺视觉基线，允许必要重绘并保留原源；1024×1024 RGBA、foot (512,900)、body/sign 同画布两片，完整多层 PSD，参考黑底只用于对照且正式 PNG 真透明。01 样张通过前不扩批 02–06，不修改客户端。",
+  "source_and_rights": "本项目获用户授权的 v0.1 mixed_signs_v04；历史 v0.1/v0.2 PSD 与图层作为对照和可复用合法资产；不采用第三方图。01 小牌无中文，其他店字体字形另按同批全量复签核。",
+  "tools": ["内置 image_gen 高保真编辑/重建", "bggg-creator-image2psd assemble 多层栅格 PSD", "Pillow/脚本仅用于 alpha/位置、切片/重组及核验"],
+  "canvas_px": [1024, 1024],
+  "foot_px": [512, 900],
+  "slices_per_shop": ["body", "sign"],
+  "planned_layers": ["reference_source_hidden", "body_structure", "roof", "curtain", "interior_objects", "front", "lanterns_light", "ground_contact", "sign_board_hardware", "sign_logo"],
+  "technical_estimate": "每店两张 1024² RGBA 原始像素算术约 8 MiB，六店约 48 MiB；不代表压缩后、图集/驻留、DrawCall 或目标设备实测。实图 alpha bbox、纹理面积、遮挡与光晕宽度由 Tech 后验。",
+  "visual_gate": "01 必须同蓝底、同 1024 画幅、同主体 bbox/脚点对照目标归一化、v0.2 历史和 v0.3 PSD 重组；再核 390×844/720×1280。蓝瓦厚重体积、四段帘、瓶罐锅具、双灯、右檐小杯牌、材质暖光任一关键项 REVISE 均不得扩批。",
+  "limits": "原参考 1536×1024 六格单店只有数百像素宽，不能简单裁切拉大；重建出现的微纹理只能称新绘制，参考抠黑边缘是比较图的不确定区域；平面图拆层不等于完整背面可编辑。",
+  "next_action": "Tech 对同一 batch_id 与两份方案 SHA 预签；确认 Gate1 状态后制作 01 代表样张，并由 Art/Tech 按实图后验决定是否允许 02–06 扩批。"
+}

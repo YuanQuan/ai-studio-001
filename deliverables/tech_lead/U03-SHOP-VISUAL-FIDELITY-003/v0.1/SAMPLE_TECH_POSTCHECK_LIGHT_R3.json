@@ -1,0 +1,35 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "revision": "r3-light-middle",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED_FOR_BATCH_PREFLIGHT",
+  "scope": "01 奶茶浅明暗可编辑代表样张的实际文件、PSD、body/sign、alpha、同尺度静态证据技术后验",
+  "input": {
+    "art_build_report": "deliverables/art/U03-SHOP-ASSET-001/v0.3/SAMPLE_BUILD_REPORT_LIGHT_R3.json",
+    "art_visual_review": "deliverables/art/U03-SHOP-ASSET-001/v0.3/SAMPLE_ART_REVIEW_LIGHT_R3.md",
+    "lighting_change_sha256": "04239BFC37616ED90AA8C1E8DF767D4EDF440855CDB39865723882400ED89D1E"
+  },
+  "verified": {
+    "psd_sha256": "D3FCAD9FA454565C9CF868E5A056252E603676A3F35B8EA20CF36B7B82D27B09",
+    "psd_size_px": [1024, 1024],
+    "psd_layer_count": 11,
+    "working_layers_visible": 10,
+    "body_sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+    "body_byte_identical_to_selected_v02": true,
+    "body_alpha_bbox": [142, 280, 882, 900],
+    "sign_sha256": "1D5E5E8465B7D2100B2B8F35B4E71BA2CE28A4A7F68D7DA38EFDC0AF867E56D6",
+    "sign_alpha_bbox": [821, 449, 943, 651],
+    "recomposition_sha256": "83B7388407D8CDC708E5889C49D817B5D8B667A36F7CF905590501BD9DC67CEF",
+    "body_sign_recomposition_pixel_equal": true,
+    "same_canvas_sha256": "076D797847587A3B79B7C4BB2BF138026D8F795642DDBFEDE3C0D26DB98E1EEF",
+    "same_canvas_size_px": [3072, 1024],
+    "three_panel_390_size_px": [1170, 844],
+    "three_panel_720_size_px": [2160, 1280],
+    "raw_new_sign_size_px": [986, 1595],
+    "stable_canvas_foot_slices": "1024×1024；foot (512,900)；body/sign 同画布同原点"
+  },
+  "technical_finding": "新牌位于画布内，右缘余81px；沿用选中间版body原字节，PSD 11层可打开，隐藏参考层与10可见工作层由可见性报告记录。Art已独立给01视觉PASS；本技术PASS不代替视觉判断或用户Gate2。",
+  "not_tested": ["Creator import", "actual Web runtime", "resident memory", "atlas/DrawCall", "target device performance", "Photoshop/Photopea interactive open-save"],
+  "next_action": "Art与Tech对02–06同批全量预案复签后可扩批；六店自行切图结果及清单直接呈用户Gate2审核，无额外专业成品效果复审门禁。Client接入及真实运行只在Gate2获批后进行。"
+}

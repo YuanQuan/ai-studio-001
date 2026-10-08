@@ -1,0 +1,50 @@
+{
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "sample": "shop_01",
+  "revision": "r2",
+  "psd": {
+    "path": "psd\\shop_01_milk_tea_faithful_sample_v03.psd",
+    "sha256": "4E42F43E6D0287603CC9A15241240CB55EDD59962799A537DD8667D4C1F2799D"
+  },
+  "body": {
+    "path": "exports\\shop_01_sample\\tex_u03_shop_01_body_sample_v03.png",
+    "sha256": "531CD771B921668928D2D63F3E16F948A96AA286D8AB921BDC1C9B0D5ED14A2E",
+    "bbox": [
+      112,
+      251,
+      905,
+      900
+    ]
+  },
+  "sign": {
+    "path": "exports\\shop_01_sample\\tex_u03_shop_01_sign_sample_v03.png",
+    "sha256": "80DC2A133D404397E8664B0D379773D291A2B274D5E5A8916019D233D99FB936",
+    "bbox": [
+      760,
+      479,
+      911,
+      714
+    ]
+  },
+  "recomposition": {
+    "path": "preview\\shop_01_sample\\shop_01_psd_recomposed_r2.png",
+    "sha256": "AC36C09339FE4184B317DF6831D3F9EC3A3CE32F9C59ED050EC1DE6B95DB1089"
+  },
+  "layers_bottom_to_top": [
+    "reference_source",
+    "body_structure",
+    "roof",
+    "curtain",
+    "left_lantern_light",
+    "interior_objects",
+    "plants_ground",
+    "front_counter",
+    "sign_hardware",
+    "sign_board",
+    "sign_logo"
+  ],
+  "flattened_source_sha256": "AC36C09339FE4184B317DF6831D3F9EC3A3CE32F9C59ED050EC1DE6B95DB1089",
+  "visible_rgb_max_abs_difference": 0,
+  "editability_limit": "visible-pixel semantic cut; hidden backside of sign and other overlaps is not complete",
+  "alpha_limit": "low alpha under 8 removed; imagegen near-edge colors may retain subtle chromatic fringing"
+}

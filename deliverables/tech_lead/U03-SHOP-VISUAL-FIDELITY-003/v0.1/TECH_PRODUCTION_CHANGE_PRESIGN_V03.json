@@ -1,0 +1,27 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "reviewer": "tech_lead",
+  "decision": "PRESIGNED_FOR_SHOP_01_BRIGHTNESS_REVISION",
+  "scope": "用户选定三面板中间 v0.2 奶茶风格与明暗后的 01 代表样张生产变更；不将旧 v0.3 r2 深色样张判为视觉通过",
+  "input_sha256": {
+    "PRODUCTION_PLAN.md": "2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E",
+    "VISUAL_ANCHORS.md": "98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53",
+    "LIGHTING_AND_STYLE_CORRECTION.md": "04239BFC37616ED90AA8C1E8DF767D4EDF440855CDB39865723882400ED89D1E",
+    "user_seen_three_panel_local_correspondence": "B388976A59692BA78827D4EA9218FAE82DC460E110E8CBAAD5D47AD3F5BBA081",
+    "selected_middle_v02_recomposition": "8C24719BE4D461024A5139973BD418B4093803E3D48F17A539BAD35515248466",
+    "v02_editable_psd": "7362E9B891A0D37022A56A8EEE53EBBD16722A982BE313501C63EA644E293170"
+  },
+  "source_choice": "可优先继承用户选中的 v0.2 奶茶 PSD/body 主体及其明暗，定向高清修右小牌/必要遮挡；若牌与主体仍不融合，再仅编辑受影响对象。无需为满足先前高保真重绘方法而保留深色整店 r2。",
+  "technical_contract": {
+    "canvas_px": [1024, 1024],
+    "foot_px": [512, 900],
+    "slices": ["body", "sign"],
+    "same_canvas_origin": true,
+    "stable_client_uuid": true
+  },
+  "status_of_previous_v03_r2": "REVISE_VISUAL_BRIGHTNESS_HISTORICAL_CANDIDATE",
+  "gate1": "USER_APPROVED，用户此次同尺度三面板选择补充具体明暗基准；无新审批门禁",
+  "not_tested": ["下一张样张的明暗视觉符合度", "新PSD与切片alpha/遮挡", "Creator导入和真实Web画面", "驻留内存/DrawCall/目标设备性能"],
+  "next_action": "Art 对本补充同批复签并制作新的01样张；同蓝底、同bbox/脚点、390/720静态视窗逐锚点判明暗、牌体融合和可读性。Art视觉通过后Tech按实际PSD/两片/alpha/预算后验，未通过不得扩批；六店实片Gate2仍直接交用户审核。"
+}

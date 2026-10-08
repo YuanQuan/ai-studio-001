@@ -1,0 +1,62 @@
+{
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "shop": "shop_04",
+  "revision": "light-r3",
+  "body_reused_byte_identical": true,
+  "body_sha256": "218EE67E40DCE005ACF7FEB83A4D62EBB13B9BA9D0809A109338025E515D8570",
+  "raw_icon_source": "source\\imagegen\\shop_04_scissors_comb_light_r1.png",
+  "raw_icon_sha256": "2C025B2D15D2C8DCD4DFD24C812D90A45FAA4228889DF8CFB4BD4AEDE62E1DBE",
+  "icon_raw_alpha8_bbox": [
+    91,
+    63,
+    1589,
+    895
+  ],
+  "icon_placed_bbox": [
+    400,
+    422,
+    625,
+    516
+  ],
+  "sign_changed_bbox_vs_v02": [
+    400,
+    420,
+    625,
+    520
+  ],
+  "psd": {
+    "path": "psd\\shop_04_barber_light_r3_v03.psd",
+    "sha256": "A186E7375DC4C97530DD3297909C7930080640B9DA4E8BB5B10C58A53CE2D462"
+  },
+  "body": {
+    "path": "exports\\shop_04_light_r3\\tex_u03_shop_04_body_light_r3_v03.png",
+    "sha256": "218EE67E40DCE005ACF7FEB83A4D62EBB13B9BA9D0809A109338025E515D8570"
+  },
+  "sign": {
+    "path": "exports\\shop_04_light_r3\\tex_u03_shop_04_sign_light_r3_v03.png",
+    "sha256": "9FD386FC4E3B1584C9B56EF81716AC205666FFBBEE176B06202EA52B18A627ED",
+    "alpha_bbox": [
+      335,
+      408,
+      690,
+      530
+    ]
+  },
+  "recomposition": {
+    "path": "preview\\shop_04_light_r3\\shop_04_recomposed_light_r3_v03.png",
+    "sha256": "F41ABF896C3F2F0C117DF7ABB4AC5A32B574BEB9135C76DB2820A36112C92740"
+  },
+  "layers_bottom_to_top": [
+    "reference_source",
+    "ground_contact",
+    "body_facade",
+    "body_roof",
+    "interior",
+    "light",
+    "front",
+    "sign_hardware_reused",
+    "sign_board_reused",
+    "sign_icon_scissors_comb_light_r3"
+  ],
+  "editability_limit": "High-resolution icon is an independent transparent raster layer; the inherited board is a raster layer and is not vector or text-editable."
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003-ART-02",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "shop_id": "02",
+  "status": "CANDIDATE_SOURCE_FOR_PARENT_ART_REVIEW",
+  "source_tool": "Codex built-in imagegen",
+  "reference_rights": "Project reference images are user-confirmed for commercial adaptation; no external images or fonts were supplied to imagegen.",
+  "canvas_contract": {"width": 1024, "height": 1024, "foot": [512, 900], "v02_sign_bbox_xyxy": [685, 627, 820, 890]},
+  "recommended_placement": {"board_bbox_xyxy": [685, 627, 820, 890], "spoon_syrup_bbox_xyxy": [710, 647, 794, 725], "glyph": "Parent Art to reuse licensed/formal sugar glyph as an independent layer; test approximately 70–78 px width and verify at 390/720."},
+  "files": [
+    {"path": "board_tall_raw.png", "role": "preferred independent blank board", "width": 887, "height": 1774, "format": "RGBA PNG", "sha256": "E2E7BFA7853C4A6227FAB802DEF4CDC4FD0E139764012E2CDCEDF6A66205B105"},
+    {"path": "spoon_syrup_raw.png", "role": "preferred independent spoon and syrup motif", "width": 1286, "height": 1223, "format": "RGBA PNG", "sha256": "5DAF1145E4FCA1F43B507BB7E43E0CB3013D99CFF6D15748A7B87A9F255C1588"},
+    {"path": "board_blank_raw.png", "role": "wider alternate blank board", "width": 1199, "height": 1312, "format": "RGBA PNG", "sha256": "DA9D303EAC83F08DE73349ACA7749A77244C1DFFF53DA3F7FD7FB789C6088852"},
+    {"path": "candidate_a_sign_raw.png", "role": "merged sign visual candidate A; no text", "width": 1024, "height": 1536, "format": "RGBA PNG", "sha256": "B891834FA24B9905B13F0DE6407C1E6C12A60BBD849D6841CD5297C7508229AC"},
+    {"path": "candidate_b_sign_raw.png", "role": "merged sign visual candidate B; no text", "width": 1024, "height": 1536, "format": "RGBA PNG", "sha256": "26D468E7264FEB10B54689A221F15A4593575F995CEB17BB99A5758268B3F061"},
+    {"path": "candidate_c_sign_raw.png", "role": "merged sign visual candidate C; no text", "width": 1024, "height": 1536, "format": "RGBA PNG", "sha256": "43F88F41EEAC0D96F7450DB4218617DB1FF65640781C85E322138DA6A2355556"},
+    {"path": "placement_preview_no_glyph.png", "role": "1024 canvas position study, transparent, no glyph", "width": 1024, "height": 1024, "format": "RGBA PNG", "sha256": "70674557FC6756973931B4F6446F57EEA7C3FAFEC1D11D83C750CD14A06ADD86"},
+    {"path": "context_preview_no_glyph.png", "role": "v0.2 body plus sign position study on blue, no glyph", "width": 1024, "height": 1024, "format": "RGB PNG", "sha256": "AE4C67ABDFCB92C8072958567F878A6976AB49CE60D70A7D4F5194BCC8F9169E"}
+  ],
+  "formal_glyph_source": {"path": "../../../v0.2/source/psd_work_r2/shop_02/layer_sources/sign_glyph_reused_sugar.png", "sha256": "671874A020AFBC180B458BA1EAF26641E37BE5A5018FCA442D0C2FED575A2645", "note": "Reference only; not copied, altered or composed into these candidate sources."},
+  "limits": ["No final PSD or body/sign cuts were made in this subtask.", "Generated spoon and syrup are a single raster motif layer; they require further masking if individual sublayers are needed.", "Generated images require same-background, same-viewport, same-scale visual review before parent Art selection.", "No user Gate2 or client/runtime claim."]
+}

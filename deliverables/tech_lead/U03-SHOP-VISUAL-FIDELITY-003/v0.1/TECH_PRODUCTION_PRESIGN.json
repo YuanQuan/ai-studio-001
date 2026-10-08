@@ -1,0 +1,23 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "reviewer": "tech_lead",
+  "decision": "PRESIGNED_FOR_SHOP_01_SAMPLE",
+  "scope": "仅奶茶01整店高保真可编辑代表样张的首图前技术制作预案；02–06扩批须按同批实样结果复签",
+  "input_sha256": {
+    "PRODUCTION_PLAN.md": "2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E",
+    "VISUAL_ANCHORS.md": "98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53",
+    "reference_overview_png": "FF3D931CB8D61728197B950B7E5BE42707685848AA9D9F8E31074DC24D43B125"
+  },
+  "canvas_px": [1024, 1024],
+  "foot_px": [512, 900],
+  "output_slices": ["body", "sign"],
+  "raw_rgba_one_shop_upper_bound_bytes": 8388608,
+  "raw_rgba_six_shop_upper_bound_bytes": 50331648,
+  "reference_resolution_px": [1536, 1024],
+  "source_resolution_finding": "六店同幅参考中单店仅数百像素宽；小图裁切拉伸不能作为1024正式纹理。高分辨率重建须记录原裁框/不确定边界、生成源和同尺度对照，不把新添微纹理声称为原参考可见细节。",
+  "gate1_status_verified": "USER_APPROVED",
+  "effective_condition": "已满足：Producer Gate1 USER_APPROVED，Art 与 Tech 对同一批次及同一方案 SHA 均已预签；允许制作 01 正式代表样张，不新增审批门禁。",
+  "not_tested": ["new PSD and layer export", "new alpha/bbox/occlusion", "Creator import", "Web runtime", "texture residency and DrawCall", "target device performance"],
+  "next_action": "Gate1 与 Art/Tech 同批预签已核；Art 制作奶茶代表样张，以同蓝底同1024画布同bbox/脚点和390/720静态视窗逐锚点自审，再交Tech实图后验。"
+}
