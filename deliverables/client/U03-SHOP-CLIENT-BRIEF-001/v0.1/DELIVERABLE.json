@@ -1,0 +1,50 @@
+{
+  "task_id": "U03-SHOP-CLIENT-BRIEF-001",
+  "owner": "client",
+  "summary": "提交 U03 六店单店切换编码前 Client Brief、原子状态/资源门禁计划和 U01/U02 工作区影响审计；Client/Tech/UI/QA/Master 同版评审已通过，等待与 QA TEST_PLAN 一起获得用户审批。未修改 Cocos 工程、未导入店图。",
+  "artifacts": [
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/STATE_AND_RESOURCE_PLAN.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/U01_U02_IMPACT_AUDIT.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/UI_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-CLIENT-BRIEF-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "审计 U01 当前菜单/Scene/Prefab/镜头输入及 U02 实际实施状态与并行工作区，定义 U03 增量、菜单显示条件、事件单次触发和 U01/U02 回归边界，不把计划资源称为现存 Creator 对象。",
+      "result": "PASS",
+      "evidence": "U01_U02_IMPACT_AUDIT.md 记录四个现有工程文件 SHA-256、Scene→U01 Prefab UUID、Gallery 当前 U01 单入口和 MOUSE_DOWN/UP 与 TOUCH_END 双路输入风险；确认 U02/U03 正式资产未在 apps/client/assets 发现，并定义按实施时实际状态整合、U01 与届时 U02 回归。FEATURE_BRIEF.md 第2、7节补充菜单条件。"
+    },
+    {
+      "criterion": "明确六店唯一正式 ID 与 MT_SHOP_01 映射、ShopDefinition/Prefab 引用方式、presentedIndex/desiredIndex/failedTarget、初始 01、六项循环、连按递推、generation 末次提交、加载失败/重试、返回重入及店体/牌匾/名称/阴影原子一致的可实现状态与资源生命周期。",
+      "result": "PASS",
+      "evidence": "STATE_AND_RESOURCE_PLAN.md 列六个唯一顶层 ID、计划 Prefab、MT_SHOP_01 与 Art 登记映射，定义进入/快切/回退/定向重试/返回重入事务及强引用/异步共用 requestShop 适配边界；FEATURE_BRIEF.md 第3、5节写缓存、单实例和释放边界。"
+    },
+    {
+      "criterion": "注明正式 Gate2 具体切片版本 USER_APPROVED 前不导入；规划源/导出/Creator 主子 UUID 登记、真实视口与牌匾投影、输入命中、安全区、CLI 构建、本地 HTTP Web 与内置浏览器及适用 Editor/平台性能取证，未测项标 NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "STATE_AND_RESOURCE_PLAN.md 资源门禁表及确定性故障/乱序注入与同一单调时钟日志，FEATURE_BRIEF.md 第4–7节列 Gate2、附件 USER_DECLARATION 与仍待预签的工具合同/外来素材/字形来源、真实 UUID、双输入命中、720×1280/390×844 候选视口和 Creator 3.8.8 CLI→loopback HTTP→Codex 内置浏览器验证；运行与性能均未测试。"
+    },
+    {
+      "criterion": "Client、Tech、UI、QA、Master 对同版编码前概要评审通过，并与 QA TEST_PLAN 组成用户审批的开发开工包；本 Task USER_APPROVED 且正式 Gate2 获批前不正式编码或导入六店资源。",
+      "result": "NOT_TESTED",
+      "evidence": "本 Brief 的 CLIENT_REVIEW、TECH_REVIEW、UI_REVIEW、QA_REVIEW、MASTER_REVIEW 五份同版 Review 均为 APPROVED；同轮 QA TEST_PLAN 的 QA、Client、Tech、Art、Master Review 亦均为 APPROVED。两项 Task 的 ARTIFACT_APPROVAL.json 目前仍为 DRAFT，用户对开工包尚未决定；正式资源 Gate2 也未获批准。故整条验收继续 NOT_TESTED，未正式编码或导入六店资源。"
+    }
+  ],
+  "assumptions": [
+    "Product、Art Gate1、Tech、UI 的 U03 v0.1 已由 Producer 核验 USER_APPROVED；实际六店切片 Gate2 尚未批准。",
+    "U03 在现有 UnitSamples.scene/Gallery 加独立页面；若 U02 先于 U03 进入工程，实施前按当时差异重新审计同一菜单/Scene。",
+    "六店 Prefab 强引用为首选方案，加载/缓存策略仍须以真实贴图大小和目标环境测量后与 Tech 对齐。"
+  ],
+  "risks": [
+    "本次附件商用改编已有用户 USER_DECLARATION；具体工具合同、外来素材与正式牌匾/界面字形来源仍待首图前核查。声明本身不批准正式 PSD/店图结果或 Cocos 资源导入，Gate2 仍未通过。",
+    "U01 当前 Gallery 双路鼠标/触控与单菜单项实现，U03/U02 多入口需一次激活去重并维护 U01 镜头输入隔离。",
+    "六店真实 PSD/PNG、Prefab、Creator UUID、投影笔画、纹理预算和性能尚未生成或测量；确定性测试注入与同一时钟日志也是待获批实施后实现并验证，当前资源与运行项均 NOT_TESTED。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

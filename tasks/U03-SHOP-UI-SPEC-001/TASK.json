@@ -1,0 +1,46 @@
+{
+  "id": "U03-SHOP-UI-SPEC-001",
+  "title": "U03 单店展示与六店切换界面规格",
+  "type": "ui",
+  "owner": "ui",
+  "parent": null,
+  "objective": "基于已批准的 U03 Product v0.1 与 Art Gate1 v0.1，定义 U03 单店展示页、前后切换控制、当前店身份、六项可达、竖屏安全区、加载/缺图/快切状态及与 U01、已批产品但未实施的 U02 导航关系；提交结构示意与组件状态供 Art/Tech/Client/QA 审核，正式 UI 图片仍另按视觉门禁制作。",
+  "inputs": [
+    "tasks/U03-SHOP-SCOPE-001/ARTIFACT_APPROVAL.json（Product v0.1 USER_APPROVED）及同版 PRD/ACCEPTANCE/FLOW",
+    "tasks/U03-SHOP-ART-PLAN-001/ARTIFACT_APPROVAL.json（Art Gate1 v0.1 USER_APPROVED）及 VISUAL_ANCHORS.md、SIX_SIGNBOARD_PLAN.md",
+    "tasks/U02-TOURIST-SCOPE-001/ARTIFACT_APPROVAL.json（U02 Product v0.1 USER_APPROVED，但实际菜单实施另待批准）",
+    "deliverables/ui/UNIT-MENU-UI-SPEC-001/v0.2/UI_SPEC.md 与当前 UnitSampleGallery.ts，复用已批准的 UI 语义和现有运行入口",
+    "project/ART_GUIDE.md、rules/visual_production_contract.md、rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/NAVIGATION_AND_REUSE.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/screens/u03-shop-layout.svg",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/components/shop-switcher-states.svg",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/UI_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/ART_VISUAL_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-UI-SPEC-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "明确 U03 菜单入口及返回、默认 01、单店完整显示、六项切换、当前身份与店图/牌匾一致，以及快切、边界循环和重新进入复位，不改变 U01 已批准功能。",
+    "定义 720×1280 当前设计画布与 390×844 候选竖屏的展示容器、触控目标与安全区，六块牌匾可能不同挂位时控件不能遮挡店体、牌匾或经营识别物。",
+    "提供加载、缺图/权利未清、切换中、禁用、返回和重置的可实现状态及反馈；任何时刻不出现两店、旧牌匾残留、错误身份或可误认为正式资源已就绪的占位图。",
+    "关键页面与切换控件提交有标注的结构示意 SVG；注明它们只用于 UI 规格审阅，不是获批正式图形、字体或运行切片；复用已有组件并登记色彩/字体来源。",
+    "说明 U01 已运行、U02 Product 已批但是否出现在实际菜单取决于实现审批的关系；未来三入口信息架构不得把 Product 批准冒充客户端实施完成。",
+    "UI、Art、Tech Lead、Client、QA、Master 同版 Review 完成且 14/14 Required 与交付索引一致；送 USER_REVIEW 后等待用户对本 UI 规格版本明确决定。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "U03-SHOP-ART-PLAN-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 在用户批准 Art Gate1 v0.1 后创建；SVG 只为结构示意，不可进入 Creator 作为正式 UI 资源。",
+    "正式 UI 图片、牌匾字形和字体仍需各自来源核验及视觉资源 Gate1/Gate2；本 UI 规格批准不授权 Cocos 接入。"
+  ]
+}

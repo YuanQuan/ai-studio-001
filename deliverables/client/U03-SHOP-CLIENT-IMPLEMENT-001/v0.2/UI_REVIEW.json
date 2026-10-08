@@ -1,0 +1,11 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已查看 v0.2 反向 06/03、20 次下一店最终 03 等补充实图，并核 9 张 JPEG 的尺寸/哈希清单；反向节点、终态和身份文字对应。v0.1 的 390×844 与 720×1280 各六店实图原件仍有效。"},
+    {"severity": "INFO", "message": "Owner 把双视口一店、图中牌匾与身份匹配写为限定静帧，把双向循环与重入写为限定鼠标/初末态；这些表述与现有截图及操作记录相符，没有将静帧冒称连续录屏。"},
+    {"severity": "MINOR", "message": "自检已明确动态加载/错误/按下/禁用状态、逐帧切换、真实触摸命中与兼容鼠标去重、DPR/设备安全区、目标平台未测；当前 UI Review 仅认可单元示例的静态画面与有限鼠标流程。"}
+  ],
+  "next_action": "Master 汇总 Owner 自检与专业 Review；未来正式功能接入时，按当时适用规则重做动态交互、设备适配及 QA 验证。"
+}

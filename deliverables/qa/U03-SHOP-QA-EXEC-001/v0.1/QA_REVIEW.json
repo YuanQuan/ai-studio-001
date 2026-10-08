@@ -1,0 +1,11 @@
+{
+  "task_id": "U03-SHOP-QA-EXEC-001",
+  "reviewer": "qa",
+  "decision": "BLOCKED",
+  "findings": [
+    {"severity": "INFO", "message": "已实际核门禁、107构建与12切片SHA及两尺寸12张静帧；Master补反向六步、20连按最终03、10次入退均01限定鼠标实图。资源身份C15 PASS；其余完整用例2 BLOCKED、14 NOT_TESTED，不把部分主流程观察改成总体PASS。"},
+    {"severity": "MAJOR", "message": "QA会话IAB不可用，受控延迟/乱序/缺图/解码/超时注入能力未具备，动态状态、原子逐帧、真实触摸去重和完整回归仍未测；此为覆盖/工具阻塞，未复现P0/P1缺陷。"},
+    {"severity": "MAJOR", "message": "必要性能缺原始帧时、完整同钟输入时序、DrawCall与实例/监听/资源计数；48MiB静态RGBA8文件面积预警仅部分PASS，DPR/刷新率等未核，不代表GPU驻留、性能或总体验收通过。"}
+  ],
+  "next_action": "Master协调Client/Tech补受控测试与低开销计数能力、恢复固定IAB环境，执行未测用例与性能后更新确切报告版本；专业Review、用户TEST_REPORT确认和Master接受前不得整体PASS或DONE。"
+}

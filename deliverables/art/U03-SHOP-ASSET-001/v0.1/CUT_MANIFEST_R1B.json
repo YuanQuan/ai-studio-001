@@ -1,0 +1,616 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-SIGN-FONT-R1B",
+  "artifact_status": "GATE2_USER_REVIEW_PENDING",
+  "font": {
+    "family": "Ma Shan Zheng",
+    "style": "Regular",
+    "version": "2.003",
+    "license": "SIL OFL 1.1",
+    "file": "source/font_candidates/MaShanZheng-Regular.ttf",
+    "sha256": "6D2546BB189C732A8CA29AF9E22457B152387D158AA459E4AC2CE1E51788B7FB",
+    "font_file_in_game_bundle": false
+  },
+  "shops": [
+    {
+      "order": 1,
+      "shop_name": "奶茶",
+      "top_level_id": "MT_SHOP_01",
+      "art_master_id": "U03_SHOP_01_MASTER",
+      "art_visual_id": "U03_SHOP_01_VISUAL",
+      "psd": {
+        "path": "psd/shop_01_milk_tea_font_r1b.psd",
+        "sha256": "0647E5C10569821B5F91BC79FBE80795DEAD02FCBFB5F21FCAB2995C19C739E1"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_01_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_01_body_font_r1b.png",
+          "art_sha256": "9B822DC54F95D853CC1FC9D83C6416168CF58CEE1940C4EA503F37D53BEDD739",
+          "planned_client_path": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_01_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_01_sign_font_r1b.png",
+          "art_sha256": "05F50932A6BAD24E7F02FEAC1BD612EEE608BC174EAF0640A14100779FE7CFC7",
+          "planned_client_path": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_01_font_r1b_recomposed.png",
+        "sha256": "426C167B46166D055043002EC980305EA4DC00E26C92018019811AE73B84A33C"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_01_font_r1b_720x1280.png",
+          "sha256": "921C169B1F27EB6190B3CB1FAE4D10F3C5005537FB32D4EC27F0B3B2DF859960",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_01_font_r1b_390x844.png",
+          "sha256": "D54A527C60C3A6804D2BAEBDB1D9F226444599E09CE8A7B1FED08A314F52F0C5",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    },
+    {
+      "order": 2,
+      "shop_name": "糖画",
+      "top_level_id": "SHOP_02",
+      "art_master_id": "U03_SHOP_02_MASTER",
+      "art_visual_id": "U03_SHOP_02_VISUAL",
+      "psd": {
+        "path": "psd/shop_02_sugar_art_font_r1b.psd",
+        "sha256": "1CF5E665D41401EED85B2EB75675BA34B7F21E7DCE7BDF070186055CA2D2326E"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_02_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_02_body_font_r1b.png",
+          "art_sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+          "planned_client_path": "apps/client/assets/units/shops/sugar_art/textures/tex_u03_shop_02_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_02_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_02_sign_font_r1b.png",
+          "art_sha256": "88D2E450F86781477DBB97CEC2B820831C709B8528FBA75AA849E9620CBACB1B",
+          "planned_client_path": "apps/client/assets/units/shops/sugar_art/textures/tex_u03_shop_02_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_02_font_r1b_recomposed.png",
+        "sha256": "27B14EB10A8986D0CD56B1A59F3B687E3FA93889FE3EEF103E8441CF5CB59A13"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_02_font_r1b_720x1280.png",
+          "sha256": "D57F7C433AB89943CE42A4D68CB4C89CE9C794E4EF0AB417E3F1228167868A46",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_02_font_r1b_390x844.png",
+          "sha256": "CCE1E50C1AF6399540F593F09BD6AD2E63358053FD44D6CB73D8544A4519B731",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    },
+    {
+      "order": 3,
+      "shop_name": "炭烤",
+      "top_level_id": "SHOP_03",
+      "art_master_id": "U03_SHOP_03_MASTER",
+      "art_visual_id": "U03_SHOP_03_VISUAL",
+      "psd": {
+        "path": "psd/shop_03_charcoal_grill_font_r1b.psd",
+        "sha256": "A51A3CDEA8C9F46316A5448E214DB374D946AA88CA1F7C2458E149431C3F3AD6"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_03_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_03_body_font_r1b.png",
+          "art_sha256": "88E07EEDA0328118E2855D17D47F4BCB69443320744429F92FFA9A5927F492A1",
+          "planned_client_path": "apps/client/assets/units/shops/charcoal_grill/textures/tex_u03_shop_03_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_03_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_03_sign_font_r1b.png",
+          "art_sha256": "2A9D72E7172FBA58688772FA5B1ABA4705B16B3894F5AA454FE93A73FE9EB3A6",
+          "planned_client_path": "apps/client/assets/units/shops/charcoal_grill/textures/tex_u03_shop_03_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_03_font_r1b_recomposed.png",
+        "sha256": "CA32D26E904BEF7BF4E9C14B8AE65FD9ED11224396DF11EDEDD5665DF923E314"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_03_font_r1b_720x1280.png",
+          "sha256": "3E1A6D33479943D616FAC2F881CFE8DB6D2A6E462DF71B0DF66CCEE63594D5D5",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_03_font_r1b_390x844.png",
+          "sha256": "E835C44FA0F842C0878FDAE1AC9C736923CE3DE00036C023DD699845C7691261",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    },
+    {
+      "order": 4,
+      "shop_name": "理发",
+      "top_level_id": "SHOP_04",
+      "art_master_id": "U03_SHOP_04_MASTER",
+      "art_visual_id": "U03_SHOP_04_VISUAL",
+      "psd": {
+        "path": "psd/shop_04_barber_font_r1b.psd",
+        "sha256": "369326B1451A70B4FE89CDC81F22CFB31583EF30A4D3E1FB48243762CE2570B4"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_04_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_04_body_font_r1b.png",
+          "art_sha256": "242A779DAF690FFEDBE4D1363AD91718558D1D94ED2ABAA6F2EE5C0F7B86B5E0",
+          "planned_client_path": "apps/client/assets/units/shops/barber/textures/tex_u03_shop_04_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_04_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_04_sign_font_r1b.png",
+          "art_sha256": "E88FECFC3E80D53500E99AA8FB754A15B53D7E70363E84EDE834E94651F988FC",
+          "planned_client_path": "apps/client/assets/units/shops/barber/textures/tex_u03_shop_04_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_04_font_r1b_recomposed.png",
+        "sha256": "9F8644D825FCC6525FF51FDD8B494F85539C8EA2D1051E2C8167111DD971F885"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_04_font_r1b_720x1280.png",
+          "sha256": "42332231CBD7ECA30DE0DAA387037C71CCFAA8D93CD1BE0838A96654CE20F569",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_04_font_r1b_390x844.png",
+          "sha256": "FCDF75765EC9A10FE27166BFAC78261283DF46DBE2373E29B51E89FBC53FC27B",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    },
+    {
+      "order": 5,
+      "shop_name": "花灯",
+      "top_level_id": "SHOP_05",
+      "art_master_id": "U03_SHOP_05_MASTER",
+      "art_visual_id": "U03_SHOP_05_VISUAL",
+      "psd": {
+        "path": "psd/shop_05_lantern_font_r1b.psd",
+        "sha256": "1B3EFABC77E0A04F2008D859CAEB969CA255A66CB996E3F76C68EE5536D8FB18"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_05_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_05_body_font_r1b.png",
+          "art_sha256": "8B77749FD71F650DC98FE1564A12973D9EE1AC3F29E00B41AFFB465926833ED3",
+          "planned_client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_05_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_05_sign_font_r1b.png",
+          "art_sha256": "C1F897F878013B5D7047CA3A305496C5430FDC6F2ED12CF8CEABCC44B279A0C6",
+          "planned_client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_05_font_r1b_recomposed.png",
+        "sha256": "EB3B654D90F83819A4E9580D3E954FCDAC2165A61590D8ACAF897B12AD65C13C"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_05_font_r1b_720x1280.png",
+          "sha256": "C16FDDBD2B0A86AFAE4930432164B60E6D62FC396C8560B0221B3C0AA444E6F0",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_05_font_r1b_390x844.png",
+          "sha256": "F7F097560F4DEB23F0CC31D5C778FA1E0BDB087D3E3A51861808D7BF6B1808B4",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    },
+    {
+      "order": 6,
+      "shop_name": "投壶",
+      "top_level_id": "SHOP_06",
+      "art_master_id": "U03_SHOP_06_MASTER",
+      "art_visual_id": "U03_SHOP_06_VISUAL",
+      "psd": {
+        "path": "psd/shop_06_pitch_pot_font_r1b.psd",
+        "sha256": "7532C2B886AF9FFB7F0C42809F9E3F9B024E24C114BAE9221A6F2B31B5A44001"
+      },
+      "textures": [
+        {
+          "stable_asset_id": "U03_SHOP_06_BODY",
+          "art_path": "exports/font_r1b/tex_u03_shop_06_body_font_r1b.png",
+          "art_sha256": "3B8CB824D5DAE0F03A80C14782DA1C7AE63A25394C821A86A0984E94B1EEC867",
+          "planned_client_path": "apps/client/assets/units/shops/pitch_pot/textures/tex_u03_shop_06_body.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        },
+        {
+          "stable_asset_id": "U03_SHOP_06_SIGN",
+          "art_path": "exports/font_r1b/tex_u03_shop_06_sign_font_r1b.png",
+          "art_sha256": "B04F0D36925E924362FC750CE4B967C93FF721E612A6819EE80A44DA2D21D844",
+          "planned_client_path": "apps/client/assets/units/shops/pitch_pot/textures/tex_u03_shop_06_sign.png",
+          "import_status": "PLANNED_NOT_IMPORTED",
+          "creator_image_uuid": null,
+          "creator_texture2d_uuid": null,
+          "creator_spriteframe_uuid": null,
+          "width": 1024,
+          "height": 1024,
+          "sourceRect": [
+            0,
+            0,
+            1024,
+            1024
+          ],
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "offset": [
+            0,
+            0
+          ],
+          "foot": [
+            512,
+            900
+          ]
+        }
+      ],
+      "same_scale_recomposition": {
+        "path": "preview/font_revision/shop_06_font_r1b_recomposed.png",
+        "sha256": "436BE15115180B2F8C34A70286525EEFA44AA9D74FA5769C1B94C7047BA856F8"
+      },
+      "projections": [
+        {
+          "path": "preview/font_revision/shop_06_font_r1b_720x1280.png",
+          "sha256": "3D89D05F32CD5AB59326CF7B44EA2E5C29F788BBE50907620CBA16781CBD8803",
+          "source_display_width": 584,
+          "paste_xy": [
+            68,
+            287
+          ],
+          "foot_y": 800
+        },
+        {
+          "path": "preview/font_revision/shop_06_font_r1b_390x844.png",
+          "sha256": "70128B62DFD9783BBE3E282EF51B916F54A0349A30870A21A3133A5FD87A6DF2",
+          "source_display_width": 316,
+          "paste_xy": [
+            37,
+            252
+          ],
+          "foot_y": 530
+        }
+      ],
+      "creator_prefab_status": "PLANNED_NOT_IMPORTED"
+    }
+  ]
+}

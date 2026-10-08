@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本预签仅适用 U03-SIGN-FONT-R1 六店牌匾 sign_glyph 定向修订。独立复算 FONT_REVISION_PREFLIGHT_PLAN.md 的 SHA-256 为 4095A27D14D43C449D2F0C5A0C16411C88E51330EE5C6B4E5DABF13BAFE7CF3B，与 FONT_REVISION_ART_PRESIGN.json 所签同版一致；Art 预签文件自身 SHA-256 为 6AB64410FC17B77D69045C74D455B8D365CC7581A8152829318F82997979E230。旧 U03-SAMPLE-A / U03-FULL-BATCH-B 的逐笔字稿签认保留历史，不能套用于新字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立核对本地 MaShanZheng-Regular.ttf SHA-256 为 6D2546BB189C732A8CA29AF9E22457B152387D158AA459E4AC2CE1E51788B7FB，内部 name 表为 Ma Shan Zheng Regular / Version 2.003，版权与 SIL Open Font License 1.1 指向官方 googlefonts/mashanzheng；本地 MaShanZheng-OFL.txt SHA-256 为 D7BDB1CEE215B689E23C2F95672A6084C790542170648267A55114103D756A08。方案明确只交付栅格牌字 PNG、PSD 中栅格字层，TTF 不进入游戏包；若实际改为嵌入或分发字体文件，先复核许可与随附版权/许可证要求并重签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核六份现有 PSD 均存在。方案限定旧版先按哈希入历史，再仅替换各店 sign_glyph，其他可见层、牌底、挂件、店体和隐藏 reference_source 逐像素不变；新 PSD 须由独立解析器核工作层可见、来源层隐藏及实际图层通道重组，并做只改牌字层的局部探针。每店 body/sign 最多两张全画布 1024×1024 RGBA、共用 foot=(512,900) 与 sourceRect/originalSize，需与实际 PSD 可见层同尺度重组；本预签不把现有候选等同正式切片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立核六张最新 390×844 完整候选与 MASHAN_CANDIDATE_METRICS.json，按完整 1024 源图显示宽 316 CSS px，六店牌文依次为奶茶、糖画、炭烤、理发、花灯、投壶，12 个字 alpha bbox 投影高为 25.00–32.09 CSS px，最低是 04「理」25.00；未见因字体修订改变不同牌形/挂位或屋顶重新加入大 LOGO。此处只是静态候选，细笔有效宽≥2 CSS px、牌底实际反差、720/390 安全区、alpha 边和设备/Creator 可读性须在正式实图与后续运行中核验。"
+    },
+    {
+      "severity": "INFO",
+      "message": "字体修订不增加第三张切片或改变 1024²、脚点和店体范围；六店 body/sign 若全部同时展开，仍约 48 MiB RGBA8 裸纹理面积，仅是估算，不含 mip、图集留白、CPU/GPU 双份、压缩或加载峰值。实际 Creator 3.8.8 Web 纹理页数、最大同时加载数、UI 真实 safe area、帧时与内存仍未测试，不凭本预签作性能或 Gate2 结论。"
+    }
+  ],
+  "next_action": "Art 可仅依 SHA-256 4095A27D14D43C449D2F0C5A0C16411C88E51330EE5C6B4E5DABF13BAFE7CF3B 的 U03-SIGN-FONT-R1 方案，对当前六份 PSD 定向替换牌字并封存逐店 PSD、body/sign 两片、同尺度重组、双竖屏投影、哈希与授权证据。任一店字高/细笔/反差、来源层眼睛、非字层一致性或两片重组不达方案条件，先停该店修正并按影响范围复签。实图须另经 Art 视觉及 Tech 技术后验，六店切片仍待用户 Gate2 明确批准，Client 不得据本预签正式导入。"
+}

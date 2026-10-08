@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "message": "U03-SAMPLE-A 当前 PSD（SHA-256 95BD8022001DFA297860791E24D9046E71BCCCEBC8C0FDF27DC2027777A8B1BC）虽有 10 个 RGBA 图层，但独立解析 PSD Layer Records 得九个工作层 flags=2、reference_source flags=0。按 PSD 图层可见性实际解析规则 visible = not bool(flags & 0x02)，九个工作层全部隐藏、来源层反而可见；与预签的隐藏非导出 reference_source 和可编辑工作层可见要求相反。Pillow 读到的扁平 RGB 预览是缓存复合图，不能证明图层可见性。须在当前母版定向修正标志，再用独立解析确认九工作层 visible=true、reference_source visible=false，且重新从图层合成核对与既有样张一致。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "重新核 preview/SAMPLE_SOURCE_MANIFEST.json 的 24 项路径、字节和 SHA-256，当前 source/shop_01/finalize_psd_visibility.py 与 source/psd_work/shop_01/PSD_VISIBILITY_REPORT.json 两项与登记值不一致；其余 22 项匹配。修复 PSD 后须重生成最终 manifest 并逐件核实，保留旧 PSD 与本轮失败证据供版本追溯。"
+    },
+    {
+      "severity": "INFO",
+      "message": "其余首样静态检查已有可复核基础：1024×1024 全画布 body/sign 两 PNG 的 alpha bbox 分别为 (124,150,866,900)、(337,408,688,561)，按同坐标 alpha 合成与 preview/milk_tea_sample.png 逐像素一致；390×844 完整画布投影中「奶」「茶」字高按 88/95 源像素与 316/1024 比例为 27.16/29.32 CSS px，9px 笔宽约 2.78 CSS px。这些不能覆盖 PSD 可见性错误，也不是 Cocos、DPR 或目标设备实测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本轮只评 01 奶茶代表样张；六店全量复签、正式切片 Gate2 用户批准、Creator 导入 UUID 与运行性能均未发生。当前首样技术结论未通过，不得扩至 02–06。"
+    }
+  ],
+  "next_action": "Art 在当前首样 PSD 上修正 10 层可见性，重新生成来源/可编辑性/可见性报告、准确 SHA-256 清单和 Art 同版复审；Tech 再独立解析图层 flags 与可见性、复核 PSD 重组及所有 manifest 哈希。两项阻断消除后另写 SAMPLE_TECH_REVIEW.json；在其通过及全量批次 Art/Tech 复签前不制作其余五店。"
+}

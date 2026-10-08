@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本后验仅认 U03-SIGN-FONT-R1B 六店新版实图，继承同版预签 FONT_REVISION_PREFLIGHT_PLAN.md SHA-256 4095A27D14D43C449D2F0C5A0C16411C88E51330EE5C6B4E5DABF13BAFE7CF3B；R1 的 FONT_REVISION_TECH_REVIEW_R1.json=CHANGES_REQUESTED 保留为历史。独立复算 FONT_REVISION_R1B_BUILD_REPORT.json SHA-256 5CB5BD574D6AD9463B3853FD55212912FB305FF1FA15D0E84A2A8DFC787DEA49、FONT_REVISION_R1B_VERIFICATION.json SHA-256 C126D7ED602EDFCC3D18ED5D3980E074A5B2DBA10EB8E9005B2DB08BCB80A8B9、CUT_MANIFEST_R1B.json SHA-256 756CDE8EA8E80AD372653FF444CC53B0B5A69A9A24DDA76BFB1E4A8109A1B9D7；Art R1B 视觉后验 APPROVED，文件 SHA-256 27181B1BFA53342BE0CFA1EA9F06FCD7333CE4EDE472C4A358603DDDAF7E5944。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立核 R1B 两报告引用的 60 件文件 SHA-256 全部匹配；CUT_MANIFEST_R1B.json 对六店 36 个 PSD/两片/重组/投影引用路径与哈希全部匹配，12 个 BODY/SIGN 稳定资产 ID 唯一。01 仍为 MT_SHOP_01，02–06 为 SHOP_02–SHOP_06；Creator 路径为计划，导入状态 PLANNED_NOT_IMPORTED，Image/Texture2D/SpriteFrame UUID 全为空，未伪造实际导入。字体实际 TTF 为 Ma Shan Zheng Regular Version 2.003、SIL OFL 1.1，预案和清单限定游戏包只用栅格字形而不分发 TTF。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立解析六份旧 PSD 与 R1B PSD 的真实图层记录和未压缩 RGBA 通道：各店只有 sign_glyph 通道变化，其他 7–9 层含 reference_source 的尺寸与像素哈希完全相同；所有工作层 flags=0 可见，底层 reference_source flags=2 隐藏。R1B 实际 PSD 字层与 readable_candidate 的有效 alpha 和非透明 RGB 完全一致。以 PSD 可见工作层重组对 body+sign，六店分别只有 25/16/5/29/13/20 像素、各通道最大 1/255 舍入差；12 张 1024×1024 RGBA PNG 两片复合与交付重组图逐像素一致。PSD 缓存平图未被当作透明 Sprite。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按实际 R1B 字层 alpha≥180 二值化、Zhang-Suen 笔画中心骨架、去除端点/交叉及其两像素邻域、局部直径=2×最近透明像素距离−1 独立测第10百分位：01 奶/茶 8.41/9.83、02 糖/画 7.83/7.34、03 炭/烤 9.00/9.00、04 理/发 9.00/7.00、05 花/灯 10.49/9.00、06 投/壶 7.00/7.83 源 px；12 字均≥7 源 px，按 1024→316 为至少 2.16 CSS px。alpha≥180 字高投影最低 24.69 CSS px，达到预签的 24/2 静态候选线。05「花」局部加厚后在完整 390 图中文字仍与「灯」及牌框分离；最终审美由 Art 的 R1B 视觉后验和用户 Gate2 判断。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店 720×1280（源显示宽584）和 390×844（源显示宽316）正式投影均可由各自两片重组图、同一深蓝底与约定缩放/坐标逐像素重现，脚线分别约 y=800/530；六牌文字与挂位不同，奶茶和理发屋顶无大 LOGO。12 张切片四边 alpha 均为0且无画布边缘裁切。六店两张 1024² RGBA8 全持有约48 MiB 裸纹理面积仍只是估算；设备 safe area、Creator 3.8.8 Web 实际字形/纹理页/内存/加载峰值/帧时均未测试。"
+    }
+  ],
+  "next_action": "Master/Producer 可提交确切 R1B CUT_MANIFEST_R1B.json、六店 PSD/12 张 body+sign 切片、同尺度重组总览及双竖屏投影供用户 Gate2 审核；用户对本具体版本明确批准前 Client 不得正式导入 Creator。获批后 Client/Tech/QA 仍须按实际导入 UUID、真实设备安全区、字牌可读性与纹理/加载指标验证。"
+}

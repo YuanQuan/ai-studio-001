@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "四份正文与交付索引覆盖 U03 Product/Art/Tech/UI：六店与牌匾、奶茶/理发屋顶、原子提交、desiredIndex 连按及乱序回调、failedTarget 重试、U01/U02 导航、Gate2 具体版本和 Creator 真实主/子 UUID。用例与矩阵均是待执行步骤，没有把文档、概念 SVG 或静态导入写成运行 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "性能限定本轮固定 Web 主视口 390×844 CSS px、目标 DPR=2，另以 720×1280 做布局/视觉；记录真实视口/DPR/Canvas/safe area、前台浏览器与刷新率，无法控制或测得时相应数值项 NOT_TESTED。手机和微信/抖音等平台明确 NOT_TESTED，未从桌面 Web 外推移动端门槛。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "p95≤33.3 ms、>50 ms≤1%、可证实≥60 Hz 时平均 FPS≥50，冷/热进入≤5/2 s、已缓存切换≤1 s、快切末次≤2 s，均有同一构建/时钟、60 秒×3、冷/热各3次及20次快切的可测口径；数值是体验候选而非现有实测基线。须同版 Client/用户批准后生效，测试时留原始帧时间与输入至完整帧时间戳，无法可靠取证就 NOT_TESTED，不得临测时放宽。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "128 MiB 为六店纹理页 Σ(width×height×4) 的 RGBA8 等效面积候选，相当约8张2048²页，包含透明区；它是资源预签规划上限而非 GPU 驻留或 JS 堆上限，不能据此断言目标设备可运行。实际页数、格式、图集、同时持有数与运行 GPU/内存证据要在样张及 Gate2 后核；超过预算应受控修订并复核视觉，不应自行降质或把缓存策略伪装成降源图面积。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DrawCall 未设无依据绝对硬值，而要求实测平均/峰值与入退趋势；专属实例/监听/未完成请求退出回基线，有意缓存与泄漏分开报告。附件 USER_DECLARATION 不替代工具/字形预签、Gate2、Client 实施或本 QA 执行批准。"
+    }
+  ],
+  "next_action": "请 Client、Art、Master 完成同版评审，与 Client Brief 同批交用户审阅。性能数值只在本固定 Web 条件及具体获批版本生效；首样/Gate2 后核真实页数与测量可行性，若需调预算先形成受控新版和用户决定。QA 实施须基于真实构建另交 TEST_REPORT。"
+}

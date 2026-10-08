@@ -1,0 +1,63 @@
+{
+  "task_id": "U03-SHOP-TECH-DESIGN-001",
+  "owner": "tech_lead",
+  "summary": "基于已批 U03 Product/Art Gate1，提出六店与未来主体同源的资源身份、MT_SHOP_01 奶茶继承映射、双目录与真实 UUID 回填、单店原子切换、竖屏投影和性能验证方案。当前仅技术文本，正式图片、资源导入、构建与 QA 均未执行。",
+  "artifacts": [
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/RESOURCE_ID_AND_HANDOFF.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/LOAD_AND_PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/VALIDATION_MATRIX.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-TECH-DESIGN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店使用主体游戏与 U03 同源的正式资源身份；明确 MT_SHOP_01 与本案奶茶店候选 ID 的唯一映射、其静态/动态子对象边界和 02–06 稳定 ID，不产生 Lab 专用平行正式店图。",
+      "result": "PASS",
+      "evidence": "RESOURCE_ID_AND_HANDOFF.md 第 1、4 节给 01 继承 MT_SHOP_01、Art 候选 ID 一对一映射、02–06 顶层 ID 及动态件边界；TECH_DESIGN.md 第 1–2 节限定单物理工程与同源。此为方案，实物同源见 V-01 待测。"
+    },
+    {
+      "criterion": "明确计划美术与 Creator 双目录、命名、PSD/输出/Prefab 边界、版本及哈希登记；未导入的路径与 UUID 标计划，正式 Gate2 后再核真实 .meta/UUID 和活动引用。",
+      "result": "PASS",
+      "evidence": "RESOURCE_ID_AND_HANDOFF.md 第 2–3 节列 Art 与 Creator 计划路径、命名、PSD/审核图排除接入、SHA-256 与真实 .meta/UUID 回填字段；均标计划，未编造 UUID。"
+    },
+    {
+      "criterion": "定义初始 01、同屏唯一当前店、六项可达、切换图像/牌匾/名称/阴影原子一致、末次有效快切、失败反馈、返回重入复位及 U01/U02 导航边界，明确状态和资源生命周期。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第 1、3–4 节定义 CLOSED/LOADING/READY/ERROR、presentedIndex/desiredIndex 分离与六项循环、generation 末次有效目标、单店提交、失败重试与返回清理，说明 U01/U02 审批序。LOAD_AND_PERFORMANCE_PLAN.md 第 3 节列缓存/释放边界。"
+    },
+    {
+      "criterion": "给出 720×1280 与 390×844 候选竖屏下单店投影、牌匾可读、安全区、alpha/遮挡、加载/纹理/DrawCall 的待测矩阵和预算制定方法，不伪报实测阈值或运行 PASS。",
+      "result": "PASS",
+      "evidence": "LOAD_AND_PERFORMANCE_PLAN.md 全篇定义视口/DPR/safe area、牌匾笔画、alpha、纹理和运行性能的测法；VALIDATION_MATRIX.md V-06–V-08 均 NOT_TESTED。"
+    },
+    {
+      "criterion": "区分已批 Product/Art Gate1、来源权利停止条件、首图前同批 Art/Tech 预签、具体切片 Gate2、UI/Client 开工包、Creator CLI/HTTP/内置浏览器及 QA 的各自门禁。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 第 5 节与 VALIDATION_MATRIX.md 执行顺序逐项划分门禁；明确附件和字体权利 UNKNOWN 时不得出正式图。"
+    },
+    {
+      "criterion": "Tech、Art、UI、Client、QA、Master 同版 Review 完成且 12/12 Required 与交付索引一致；送 USER_REVIEW 后等待用户对本技术版本明确决定。",
+      "result": "PASS",
+      "evidence": "已核 tasks/U03-SHOP-TECH-DESIGN-001/TASK.json 的 12/12 Required 文件实存，DELIVERABLE.json 的 12 条 artifacts 索引与 Task 列表逐项一致；同版 TECH_REVIEW、ART_IMPACT_REVIEW、UI_IMPACT_REVIEW、CLIENT_IMPACT_REVIEW、QA_IMPACT_REVIEW、MASTER_REVIEW 六份均为 APPROVED。Producer 随后登记 USER_REVIEW；用户对 Tech v0.1 的决定仍待，不写 USER_APPROVED。"
+    }
+  ],
+  "assumptions": [
+    "MT_SHOP_01 目前是历史技术稿的逻辑 Prefab ID，未发现相应正式工程资源；本稿提议 U03 奶茶继承该唯一身份，经 Art 影响 Review 与用户批准后才成为新交接契约。",
+    "02–06 的 SHOP_02–SHOP_06 为本版拟定主体同源顶层 ID；Art Gate1 U03_SHOP_0x_* 保持计划源/导出身份并用映射关联，不静默改 Art 已批历史稿。",
+    "720×1280 为工程设计分辨率，390×844 只是 Gate1 审阅候选，实际逻辑可见区、DPR、目标平台和性能硬阈值待后续规格与实测。"
+  ],
+  "risks": [
+    "用户附件商业使用/改编权与正式字形来源仍 UNKNOWN，正式首图/PSD 受停止条件约束。",
+    "店图与牌匾在短竖屏的实际可读性、纹理/内存/DrawCall、快速切换和安全区尚无实图及运行证据。",
+    "历史奶茶动态样例范围与本次静态 U03 的同一顶层 ID 需 Art/Client 影响 Review 核对；如出现合同冲突，由 Master 组织变更。",
+    "UI、Client、QA 正式版本及 Gate2 仍待独立用户决定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次仅评审字体来源核验补充方案，不是正式资源制作预签或具体切片后验。受审文件 ZCOOL_KUAILE_RASTER_RIGHTS_ADDENDUM_V02.md 的 SHA-256 为 EEBF25B02A3DBFCBB52832BDF447FE25BF0B5DF43D5EF793D392F4B2339BDDA3。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案明确将已批版本的官方原包字节比对硬门槛，提议改为只对固定六店牌字的栅格 PNG/PSD 作受限生产；站酷原发布页免费商用声明、候选 Version 3.12、MD5/SHA 与 12 字覆盖分别留证，不声称已取得原版 TTF 或随附声明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TTF 限本地制作，Git 和游戏包不分发；已检查 source/font_candidates/.gitignore 排除 .ttf。遇官方相反条款、需要分发/嵌入或版本不一致即停；这些边界不改变用户已批 92% 视觉样张。"
+    }
+  ],
+  "next_action": "由 Master 将此确切 SHA 的 v0.2 补充呈用户审批；获批后 Art 与 Tech 对同版正式制作预案分别预签，才可制作含字体的正式 PSD/切片。"
+}

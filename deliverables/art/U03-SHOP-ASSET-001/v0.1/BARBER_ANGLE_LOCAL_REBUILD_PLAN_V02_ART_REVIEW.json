@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次仅评审 04 理发店局部重建方案，不是正式出图预签或实图验收。受审文件 BARBER_ANGLE_LOCAL_REBUILD_PLAN_V02.md SHA-256 为 1B653C2CF342A69FEC24CABA5694E1B410AE6BB5C6131E10AB166A179639279A，范围图 preview/barber_angle_v02_edit_scope.png SHA-256 为 E9500944564165C6BF66ED4923D97C2BBC9D03D7D0C0565890318E1D2BA33E2B。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.1 无损路线因原 PSD 无正向瓦面与立面隐面而停止；v0.2 仅申请在当前 PSD 上局部重建屋顶、侧墙与门额缺面，锁住镜台、座椅、理发柱、牌匾、脚点及 92% 字效。范围图是旧图的编辑标注，不冒充新角度效果图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案保留 R1B PSD/源图及局部输入、遮罩、输出记录，禁止整店重画；若现有像素不足，可仅针对缺面蒙版用 imagegen 作局部候选。正式预案须把图上红橙估测范围收成实际 mask，Tech 同版预签后才出首样。"
+    }
+  ],
+  "next_action": "由 Master 将此确切版本和范围图呈用户审批；批准后 Art 编制可执行的同版局部修订预案并与 Tech 分别预签，预签完成前不修改正式 PSD 或切片。"
+}

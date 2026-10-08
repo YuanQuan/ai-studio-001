@@ -1,0 +1,35 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-SAMPLE-A",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "input_hashes_sha256": {
+    "PREFLIGHT_PLAN.md": "F78735156BCFF2F80168167218595C31ECC1CC1C2F16D45E4A47080779FD24D1",
+    "RIGHTS_PROVENANCE_ADDENDUM.md": "B1182AD0C0BB3E9A4E40747A59DFA783DAB3FF99189291B0F61F046EE11D305A",
+    "LETTERING_SOURCE_AND_LICENSE.md": "E6E252B64BBEE5EB440022E1362B5B6CEECDEA8D4641FC48FCF36EA098918B6E"
+  },
+  "scope": "只签认 01 奶茶 MT_SHOP_01 的首样文字制作预案及原创字稿路径；不批准实际图片、PSD、六店全量、切图 Gate2 或 Creator 接入。",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Product、Art Gate1、Tech、UI v0.1 已分别 USER_APPROVED；用户对本次店铺附件商用改编权的独立原话见 project/APPROVAL_LOG.md。本轮重新核附件 SHA-256 658EF6718C0A030CC59D469128D20B877DB81984F601081151F977FC7110ECCB。旧第一街只作材质语汇比较，不作为裁图输入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "牌匾采用逐字从空白路径自绘的原创字稿；首样仅制作奶茶两字。具体 SVG、逐笔记录、PSD 独立字层与 PNG 版本须在出图后留档；不把系统字体、参考图伪字、未核许可字体或模型直接生成文字用于正式牌匾。若改路线，先重签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本批工具固定内置 image_gen 与只读调用的 MIT bggg image2psd 脚本；首样候选 1024×1024 RGBA8、foot=(512,900)、两张 1024² 以下 PNG、720×1280 与 390×844 同尺度审阅。4 MiB/张和 8 MiB/店只是未压缩估算；目标 Web/Creator 实测、实际 alpha/图集、字牌投影、PSD 编辑试验均未发生。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "用户账户的具体合同版本及原附件生成链未独立取得；公开 OpenAI 条款不消除第三方相似风险。现有独立用户声明与本批无外来字体/素材的方法可作为预签依据；若声明被撤回、出现相反合同或具体高相似证据，立即停止并报 Master。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 尚未对这三份相同哈希输入提交 TECH_PREFLIGHT.json。首张拟正式图片、PSD、字稿位图和切片制作门禁仍关闭；样张双 Review 通过后仍须全量复签，实际切图 Gate2 需用户另批。"
+    }
+  ],
+  "next_action": "请 Tech Lead 核对三个文件与上述 SHA-256，对同批 U03-SAMPLE-A 提交 TECH_PREFLIGHT.json。Tech 与 Art 双 APPROVED 且停止条件不存在后，Art 才开始首样。"
+}

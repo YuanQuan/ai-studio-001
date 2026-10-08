@@ -1,0 +1,35 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-SAMPLE-A",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "input_hashes_sha256": {
+    "PREFLIGHT_PLAN.md": "F78735156BCFF2F80168167218595C31ECC1CC1C2F16D45E4A47080779FD24D1",
+    "RIGHTS_PROVENANCE_ADDENDUM.md": "B1182AD0C0BB3E9A4E40747A59DFA783DAB3FF99189291B0F61F046EE11D305A",
+    "LETTERING_SOURCE_AND_LICENSE.md": "E6E252B64BBEE5EB440022E1362B5B6CEECDEA8D4641FC48FCF36EA098918B6E"
+  },
+  "scope": "仅预签同批 U03-SAMPLE-A 的 01 奶茶 MT_SHOP_01 首张拟正式样张生产方案：内置 image_gen 独立透明店图、原创逐笔字稿、1024×1024 8 位 sRGB RGBA 母版与 foot=(512,900)、最多 body/sign 两张候选运行 PNG 和当前计划的 PSD 分层/审阅方法。不签认其余五店、实图质量、正式切片 Gate2、Creator 导入或运行性能。三份输入任何实质变更，或更换工具、画布、脚点、输出范围时，受影响下一张图前须 Art/Tech 重新同批预签。",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立复算 PREFLIGHT_PLAN.md、RIGHTS_PROVENANCE_ADDENDUM.md、LETTERING_SOURCE_AND_LICENSE.md 三份 SHA-256，逐一与 ART_PREFLIGHT.json 所列完全一致。用户本次附件实文件为 2,836,434 字节、SHA-256 658EF6718C0A030CC59D469128D20B877DB81984F601081151F977FC7110ECCB，与本批来源表和 project/APPROVAL_LOG.md 的 USER_DECLARATION 指向同一文件；声明允许本项目商用改编及六店 PSD/游戏资源制作，但不是 Gate2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "生产工具限定内置 image_gen 与本地 bggg image2psd assemble；已核脚本存在且 SHA-256 AF7217E0F3DAD1EDAF7EB4017C717CC49C6CE45D35BE88A00C0D2F284B390EBD，LICENSE 首行 MIT License。实际生成调用、输入/输出文件哈希及服务/合同适用情况仍需生产时记录；公开工具条款与用户来源声明不消除外观相似风险。字稿采用从空白矢量画布逐笔绘制，仅首样「奶茶」，禁止未核许可字体、系统字截图、参考图伪字或模型中文字直接入正式牌匾；SVG/逐笔记录和字层映射须留档。"
+    },
+    {
+      "severity": "INFO",
+      "message": "1024² RGBA8 每张展开约 4 MiB，body/sign 两张约 8 MiB/店，若未来六店同尺寸且同时持有则约 48 MiB；这不含 mip、图集 padding、CPU/GPU 双份、压缩差异和其他场景资源，也不是当前 QA 128 MiB Web 候选预算的实测通过。足点 (512,900) 与 PSD 全画布坐标、sourceRect/originalSize/offset 的 trim 追踪、alpha 黑灰白底检查、两 PNG 同尺度重组及后续切图协作边界均已列明；同图集不能推断一 DrawCall。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "390×844 的牌匾 24 CSS px 字高是候选检查线，计划内 342/1024≈0.334 仅为粗估；若按 UI 容器内部 584/720×390≈316 CSS px 将完整 1024 画布 contain，72px 源字高只约 22 CSS px，而按 880px 非透明宽框 contain 则约 26 CSS px。实际 trim、safe area、DPR、view.getVisibleSize()、字形对比度和控件占位未实测，不能在预签时宣称 24px 已满足。首样须以真实可见区和输出矩形测量；不达标先调整布局/字稿并复核视觉锚点，不能悄悄裁顶、拉伸店体或缩小笔画。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次仅首图前文字预签。正式 image_gen 位图、原创字稿、PSD 编辑试验、真实 alpha/页数、720×1280 与 390×844 投影、Creator 3.8.8 导入、Web/平台帧时和目标设备纹理上限均未执行或未测。代表样张须先由 Art 逐锚点评审，再由 Tech 对实图/实际输出做独立后验；两者通过且全量复签后才可扩其余五店，实际切片/重组由用户另审 Gate2。"
+    }
+  ],
+  "next_action": "Art 在三份同哈希输入和既定工具/范围不变且无新的来源冲突下，可制作 U03-SAMPLE-A 的 01 奶茶代表样张并完整留源图、提示词、字稿和 PSD/PNG 证据。首样一出先停批量生产，交 Art 视觉与 Tech 实图后验；若实际字牌投影、alpha/PSD 可编辑性或两图输出不成立，停首样并修订/重签，不扩至 02–06。"
+}

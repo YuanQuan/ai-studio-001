@@ -1,0 +1,51 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "owner": "qa",
+  "summary": "U03 编码前 FUNCTIONAL 测试设计：六店切换与异常、六牌与屋顶视觉、资源/审批身份、两候选竖屏及本功能固定 Web 性能门槛候选；未执行实际运行测试。",
+  "artifacts": [
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/VISUAL_AND_PERFORMANCE_MATRIX.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TECH_THRESHOLD_PROPOSAL.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-QA-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "TEST_PLAN 明确 FUNCTIONAL 固定 Web/测试环境、Visual QA 与性能适用范围及可重现证据，目标平台真机若不在本轮须明确 NOT_TESTED；不以文档评审、静态资源或浏览器加载判运行通过。",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md 第 1、3–5 节；VISUAL_AND_PERFORMANCE_MATRIX.md 首段与 C 节。PASS 只表示测试设计覆盖，所有 U03 实际运行项仍 NOT_TESTED。"
+    },
+    {
+      "criterion": "用例追溯已批 Product/Art/Tech/UI：六店 01–06、默认 01、单店唯一、双向边界循环、desiredIndex 连按递推与乱序回调、完整三元组/阴影原子提交、缺图/重试/返回再入、菜单 U01/U02 回归，以及六牌不同形制与挂位、奶茶/理发屋顶去大 LOGO。",
+      "result": "PASS",
+      "evidence": "CLIENT_TEST_CASES.md U03-C01–C17；VISUAL_AND_PERFORMANCE_MATRIX.md V-01–V-08、R-01–R-04。仅为待执行步骤和预期。"
+    },
+    {
+      "criterion": "明确 Gate2 具体切片批准版本与 Creator 导入 UUID/构建身份对照、720×1280 和 390×844 候选视口、实际 safe area/DPR/牌匾笔画与 alpha/遮挡检查、U03 专用 Web 性能阈值及测量口径；无实测时不判 PASS。",
+      "result": "PASS",
+      "evidence": "TEST_PLAN.md 第 1、3、4 节；TECH_THRESHOLD_PROPOSAL.md 候选数值及依据；VISUAL_AND_PERFORMANCE_MATRIX.md A–C 节。Tech/Client 同版评审已通过，用户审批与实测仍待。"
+    },
+    {
+      "criterion": "QA、Client、Tech、Art、Master 同版评审通过，并与 Client FEATURE_BRIEF 一起交用户审批；未获批准及正式 Gate2 前不启动正式编码或实施测试，TEST_REPORT 后续在实际构建上另做。",
+      "result": "NOT_TESTED",
+      "evidence": "QA、Client、Tech Lead、Art、Master 五份 v0.1 Review 均为 APPROVED；本任务 11/11 Required 文件实存。Client FEATURE_BRIEF 同轮已完成专业评审，双稿待 Producer 交 USER_REVIEW、用户批准；正式六店 Gate2 仍待。实际编码、资源导入和运行 QA 尚未执行。"
+    }
+  ],
+  "assumptions": [
+    "390×844 为固定 Web 数值候选主视口，720×1280 为设计与视觉对照视口；两者均不代表实机通过。",
+    "性能阈值为 U03 本轮提案，已通过同版专业评审，仍需用户批准后才成为判定标准。",
+    "正式六店资源、Gate2 和构建当前不存在；故障注入需未来 Client 在获批实施中提供。"
+  ],
+  "risks": [
+    "本次 U03 附件的商用改编权已获用户独立声明并登记；正式字形、工具合同及外来素材许可仍待 Art 预签，Gate2 和资源导入/运行验收不能据此提前放行。",
+    "六店真实贴图尺寸、页数、加载方式和目标 Web 环境采样能力未知，128 MiB 等候选预算须以首样和专业评审核定。",
+    "U02 是否在 U03 实施时已接入尚未确定，菜单回归以实施时批准的真实状态为准。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

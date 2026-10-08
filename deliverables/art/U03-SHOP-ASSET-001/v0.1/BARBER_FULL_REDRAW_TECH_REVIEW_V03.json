@@ -1,0 +1,16 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "PLAN_REVIEW_ONLY",
+  "reviewed_artifact": "BARBER_FULL_REDRAW_PLAN_V03.md",
+  "reviewed_sha256": "50D02C9F4D3E6AEC6C79171D1DE86C81C8A96AE7582640D145322E38EFA1297A",
+  "size_diagram_sha256": "D328FA3D83F3EC6B5FD767C3061B7542A2F3F9EE2C5397684794ED4D13C288C3",
+  "findings": [
+    {"severity": "INFO", "message": "本评审仅认 v0.3 整体重绘方案及修正后的尺寸示意作为 USER_REVIEW 输入；v0.2 局部重建未获用户批准，不得沿用为正式制作授权。本 APPROVED 不是首图前预签、实图后验、Gate2 或 Creator 导入批准。"},
+    {"severity": "INFO", "message": "方案固定透明 1024×1024 母版、foot=(512,900)，主体可见宽 600–760/高 610–750 源 px 控制区，尺寸示意 50% 框 340×345 显示 px 对应 680×690 源 px，脚点一致。首样仍需量实际可见框，并与另外五店按统一缩放在 390×844 和 720×1280 全视口并排检查，不得单独放大 04。"},
+    {"severity": "INFO", "message": "新 PSD 应与旧版分离，保留蓝灰瓦屋、檐下双层横匾及『理发』、镜台/座椅/理发柱、灯光和营业辨识；近正面侧墙/正面宽≤0.12、屋脊/正檐/门额/台阶近水平。首图前的具体制作预案须锁参考与输入 SHA、绘制方法、图层及遮挡顺序、两片 1024² RGBA 上限、字层受限栅格规则和失败处理，再由 Art/Tech 同版预签。"},
+    {"severity": "MAJOR", "message": "两张 1024² RGBA8 裸展开约 8 MiB/店，仅为估算；实际纹理页、CPU/GPU 常驻、加载峰值和设备表现未测试。若须第三片、越过尺寸或脚点锚点、牌匾位置改变，需修订方案重新审批。切后实际两片及同尺度重组交用户 Gate2，具体版本未批前 Client 不接入。"}
+  ],
+  "next_action": "Master/Producer 提交本 v0.3 方案及尺寸示意给用户审定；获批后 Art 编制 04 独立制作预案，Art/Tech 对同一版本预签后才能开正式首图。"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN、CLIENT_TEST_CASES、VISUAL_AND_PERFORMANCE_MATRIX、TECH_THRESHOLD_PROPOSAL 与 DELIVERABLE/QA 自评同版；Creator 3.8.8 导入和 CLI 实际 Web-mobile 构建、loopback HTTP、Codex 内置浏览器前台操作分环节取证，构建成功与页面加载均不冒充功能、视觉或性能 PASS。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "乱序回调、02 缺图/解码失败和首入 01 失败不能可靠地从六个 Scene 强引用 Prefab 的正常构建自然触发；需 Client 在获批实施 Task 内提供限定测试构建的可重复延迟/失败注入点，记录开关、目标、generation、构建身份与恢复，正式资源字节和 UUID 不因注入被永久修改。若届时未提供，U03-C07/C08/C10/C11 的相应异常路径保持 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "390×844 CSS px、目标 DPR=2 与 720×1280 视觉对照均要求记录实得视口、DPR、Canvas、逻辑可见区和 safe area 模拟方式；浏览器模拟安全区不等同目标真机。无法可靠获得 DPR、刷新率或逐帧/DrawCall 计数时相应数值子项 NOT_TESTED，计划没有用推断或主观流畅补值。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "冷/热进入与切换阈值需要菜单输入、目标请求、完整原子提交及下一可操作帧使用同一单调时钟；计划已要求时间戳，实施报告需给可复核日志与缓存条件。128 MiB 是六店实际纹理页 width×height×4 的 RGBA8 等效面积预签候选，不能报告为 GPU 驻留；DrawCall 仅记录实测平均/峰值/p95 而不设虚构硬上限。若 Creator/IAB 计数器不可取，报告该子项 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "U01 回归覆盖四层 Prefab 身份、镜头拖缩与重置/返回；U02 只按实施时已批准且真实接入的范围回归。Gate2 具体切片/重组版本、源/工程 hash 与真实主子 UUID 是测试前置；附件 USER_DECLARATION 不替代字形/工具预签、Gate2 或 Client/QA 用户审批。当前六店资源、构建和运行结果均 NOT_TESTED。"
+    }
+  ],
+  "next_action": "QA 计划可进入 Art/Master 同版评审并与 Client Brief 组成用户审批开工包。获批实施时由 Client 固定可采集的帧时、DrawCall、计时与异常注入接口；若环境或实图使候选预算失效，按 Tech/Art/QA 受控修订并重新决定，不临测放宽。Gate2 与开工包分别获用户批准后再编码、导入与执行本计划，真实结果另交 TEST_REPORT。"
+}

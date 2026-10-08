@@ -1,0 +1,62 @@
+{
+  "task_id": "U03-SHOP-ART-PLAN-001",
+  "owner": "art",
+  "summary": "U03 六店 Gate1 正式资源制作前方案 v0.1：锁定六店视觉锚点、六块不同牌匾、奶茶和理发屋顶补画、独立多层 PSD 与切图边界、来源权利停止条件及双用户审批次序。本版未制作图片或 PSD。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/SIX_SIGNBOARD_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/CUT_COLLABORATION_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/TECH_PREFLIGHT_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-ART-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确最新附件与旧第一街 v0.4 的同异，逐店锁定非像素中式夜市轮廓、比例、材质、冷暖光与实际单店展示尺度，且不把两桥/阎罗殿或相邻店带入每张店图。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md；VISUAL_ANCHORS.md。此为方案检查，实图和目标视口仍待后续验证。"
+    },
+    {
+      "criterion": "六店各有区别于其他店的牌匾文字语义、外形、材质/颜色和计划挂位；奶茶与理发去屋顶大杯/剪刀后列出瓦面、屋脊、光影和透明边的补画范围，保留店型身份。",
+      "result": "PASS",
+      "evidence": "SIX_SIGNBOARD_PLAN.md；VISUAL_ANCHORS.md；ART_PRODUCTION_PLAN.md。具体字稿和屋顶实图未制作。"
+    },
+    {
+      "criterion": "说明六张独立可编辑多图层 PSD 母版、店体/牌匾/前后遮挡与可选公共底景的对象边界、计划稳定资产 ID、美术实际或计划路径、Client 计划路径及未导入 UUID 状态，不从合成全景直接裁六店。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md；ASSET_MANIFEST.md；CUT_COLLABORATION_PLAN.md。全部文件路径标为计划，未伪称实存资源。"
+    },
+    {
+      "criterion": "记录本次附件、旧参考、字体与工具的来源/权利及可识别相似风险；不把用户选择图片或以前四层图组权利声明误当成本附件独立权利证明，未确认项如实标记并设置正式出图停止条件。",
+      "result": "PASS",
+      "evidence": "RIGHTS_AND_SOURCE.md。附件商用改编权与字体许可当前为 UNKNOWN；本项仅评核对和风险门禁写明，不代表权利已清。"
+    },
+    {
+      "criterion": "区分本方案 Gate1、首张正式样张前 Art/Tech 同批预签、代表样张/全量资源、切片与同尺度重组 Gate2、Client 正式接入和 QA 运行；不把方案 Review 当成任何图片或运行通过。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md；CUT_COLLABORATION_PLAN.md。没有把方案评审冒充图片或运行通过。"
+    },
+    {
+      "criterion": "Art、Tech Lead、Client 与 Master 对同一 v0.1 方案完成 Review，12/12 Required 路径及 DELIVERABLE 索引一致；Producer 送 USER_REVIEW 后只等待用户对本制作方案版本的明确决定。",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json、TECH_PREFLIGHT_REVIEW.json、CLIENT_IMPACT_REVIEW.json、MASTER_REVIEW.json 四份同版 Review 均 APPROVED；Task 12/12 Required 路径实存且与 DELIVERABLE 索引同序，Producer 已具备送 USER_REVIEW 条件。此项仅确认 Gate1 方案送审就绪；用户 Gate1 决定、附件权利、正式图片与运行均未通过。"
+    }
+  ],
+  "assumptions": [
+    "本版只申请 Gate1 方案批准；不授权正式资源首图、PSD、切片、Cocos 接入。",
+    "本次附件作为用户选定的画面参考，但其商业使用和改编权目前未见明确独立确认。",
+    "画布像素、目标视口、贴图预算、支点与最终导出拆分待 Art/Tech 同批预签；计划路径不是实际文件。"
+  ],
+  "risks": [
+    "附件商用改编权与牌匾/界面字体许可未核清时，拟正式样张和 PSD 的生产停止。",
+    "项目 ART_GUIDE.md 的旧统一木框浅纸类别牌描述与本次六块不同牌匾要求不完全一致；本版按最新用户指令与已批 U03 Product 编制，待方案批准后按治理流程更新受影响条目。",
+    "已规划 MT_SHOP_01 与本案奶茶候选资产 ID 的唯一身份关系尚未核定；首图前 Art/Tech 必须确认主体与 U03 同源映射。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

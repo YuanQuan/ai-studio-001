@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 U03 四份上游 v0.1 均 USER_APPROVED；QA、Client、Tech、Art 对本 QA Plan v0.1 的同版 Review 均 APPROVED。TEST_PLAN 把固定 Web FUNCTIONAL、六店视觉和性能证据分开，17 条 Client 用例涵盖六项循环、原子身份、快切乱序、故障重试、返回重入、六牌不同、两屋顶去大 LOGO、U01/U02 回归及真实资源身份。"
+    },
+    {
+      "severity": "INFO",
+      "message": "性能阈值是待本版用户决定的固定 390×844 Web 候选：逐店 p95 帧时、FPS、冷/热进入、缓存切换、RGBA8 等效图页面积和入退清理均列取样方法。Tech/Client Review 接受其可测口径；无实际图、构建或平台采样时各项保持 NOT_TESTED，不将旧 Demo 手机预算外推。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "128 MiB 图页面积和时间阈值仍是未用实图校准的候选；Art 首样和正式导出如触及清晰度/性能冲突，需 Tech 测量、Art 评估视觉损失并由 Master 组织受影响版本修订，不能临测放宽或缩字牌。真实设备/小游戏平台、故障注入效果和 Gate2 资源当前均未测试。"
+    }
+  ],
+  "next_action": "QA Plan v0.1 可交 Producer 核 11/11 Required 与验收后送 USER_REVIEW，并与 Client Brief 同批呈用户；用户批准本计划仍不等于执行 TEST_REPORT 或 U03 最终验收。"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "六店 Gate2 v0.4 已获用户批准，12 张正式切片与 Client 资源哈希对应，六个 Prefab 的真实导入身份和 Scene 引用已登记。R3 Creator 3.8.8 Web 构建成功，双候选视口的六店实图、390 菜单/U01/U02/返回重进实图和 R3 控制台证据已落盘并核验路径与 SHA。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Client、Tech Lead、UI、QA 对同一 v0.1/R3 实施产物均给出 APPROVED；批准含义限于提交用户审核的 Implementation Gate。390×844 六店 01→06→01、返回重进 01，720×1280 六店显示与快切已作限定 Web 鼠标冒烟。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "已批任务第 3/4 项中的故障注入、触摸输入、安全区与性能采样尚未完成；U01/U02 也只有限定冒烟。此 Review 不将这些项目改记 PASS，Client Task 不标 DONE，QA Exec 不在用户批准实施版本前启动。正式 QA 须依已批准 TEST_PLAN 逐项给出 PASS/FAIL/NOT_TESTED/BLOCKED，并另交 TEST_REPORT 由用户确认。"
+    }
+  ],
+  "next_action": "Producer 核同版文件与审批状态，置 Client v0.1/R3 为 USER_REVIEW 并向用户呈送实际六店运行实图和实现报告；用户批准后解锁 U03-SHOP-QA-EXEC-001。"
+}

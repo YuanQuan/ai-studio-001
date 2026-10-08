@@ -1,0 +1,36 @@
+{
+  "task_id": "U03-SHOP-CLIENT-BRIEF-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 FEATURE_BRIEF.md、STATE_AND_RESOURCE_PLAN.md、U01_U02_IMPACT_AUDIT.md、DELIVERABLE.json 与 CLIENT_REVIEW.json。U03 页面仅一店、顶部返回及底部上一店/下一店、六项循环和返回重入 01；店图、牌匾、阴影与当前名称同一身份，符合已批 UI v0.1。"
+    },
+    {
+      "severity": "INFO",
+      "message": "状态计划明确首次 LOADING(01) 仅返回可用，失败或超时后才给重试；加载中 presentedIndex 是可见身份、desiredIndex 是提示与连按递推目标，01 可见时 02→03 和 02→01 撤销规则准确；失败将 desiredIndex 复位为 presentedIndex，failedTarget 只供定向重试。无双店、旧牌匾和错配身份的提交边界清楚。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280 与 390×844 被正确列为候选审阅视口；Brief 指定按 visibleSize 与 safeAreaRect 适配、等比 contain、店体同地线、控件在单店容器外并避开六种挂位，没有把小屏可读性伪报为已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现行 Gallery 只有 U01；U02 虽有已批设计但不是当前 Creator 入口。Client 提议按实施时真实状态决定 U01+U03 或 U01+U02+U03，保留 U01 四层镜头及输入隔离；统一一次激活以避免 MOUSE_UP/TOUCH_END 双发，契合 UI 控件单次步进。"
+    },
+    {
+      "severity": "INFO",
+      "message": "requestShop(target,generation) 的测试构建专用确定性延迟/乱序/故障注入位于资源结果边界，不改正式 PNG、Prefab 或 UUID；同一时钟日志以首个完整可操作画面为终点，有助于 QA 验证 UI 快切、错误和重试，且未冒充已实施或真实解码器测试。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "实施时需按已批 UI_SPEC.md 第 3 节复核上一店/下一店候选命中区至少 96×88 设计单位、目标净距至少 16 及真实 390 宽设备安全区；本 Brief 已把真实命中与安全区列为后续测量，未锁定未测数值。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次附件商用改编 USER_DECLARATION 与仍待核的工具合同、外来素材及正式牌匾/UI 字形已分开陈述；审阅 SVG、旧概念与用户全景附件不作运行店图，Gate2 具体切片批准前不导入。来源声明没有被当成 UI 正式字形或成品图审批。"
+    }
+  ],
+  "next_action": "提交 Master 同版综合评审，并与 QA TEST_PLAN 组成用户审批开工包；获批且 Gate2 通过后，Client 按已批 UI v0.1 实测单店、快切、首次加载/失败重试、触控命中、390 宽安全区及 U01/U02 菜单回归。"
+}

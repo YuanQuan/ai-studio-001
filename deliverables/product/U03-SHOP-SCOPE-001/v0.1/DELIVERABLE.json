@@ -1,0 +1,59 @@
+{
+  "task_id": "U03-SHOP-SCOPE-001",
+  "owner": "product",
+  "summary": "提交 U03 六类店铺单店展示与循环切换的 v0.1 产品草稿；定义奶茶/理发取消屋顶大 LOGO、六店使用不同牌匾，以及与已批 U01、在审 U02 和第一街参考图的边界。",
+  "artifacts": [
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/reference/user_shop_reference.png",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/PRD.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/FLOW.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-SCOPE-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确 U03 六个切换项的店铺身份、初始店、单店可见、前后或直接切换、切换后的名称与画面一致，以及返回再进入的默认状态；不添加经营、数值或新店铺玩法。",
+      "result": "PASS",
+      "evidence": "PRD.md 第2–4节、FLOW.md 和 ACCEPTANCE.md AC-02–04/09 给出可验证的六店状态与范围；此 PASS 仅指规格完整性，运行未测。"
+    },
+    {
+      "criterion": "明确所有店铺使用互不相同的可读牌匾，可因店型调整牌匾位置；奶茶店与理发店屋顶没有大 LOGO；以用户附件的非像素二维中式夜市材质与比例作为视觉基线。",
+      "result": "PASS",
+      "evidence": "PRD.md 第1–2节及 ACCEPTANCE.md AC-05–07 明确视觉约束；参考副本与任务记录哈希可核。正式视觉资源待 Art 方案和实际成品审批。"
+    },
+    {
+      "criterion": "界定参考全景、旧孟桃奶茶概念和 U01 四层背景的权利/资源/审批关系，不将合成全景裁切或旧概念直接当正式 U03 店铺资源。",
+      "result": "PASS",
+      "evidence": "PRD.md 第1、2、5节及 CHANGE_IMPACT.md 第1–2节明确参考、旧概念与正式资源门禁；实际来源/许可核验由 Art 后续提交。"
+    },
+    {
+      "criterion": "说明与已批准 U01 唯一菜单和进行中 U02 的导航变更、Art 制作两次门禁、Tech/UI/Client/QA 下游任务关系，保留历史版本。",
+      "result": "PASS",
+      "evidence": "PRD.md 第3、5节及 CHANGE_IMPACT.md 记录已批/在审版本、角色影响与逐阶段审批；本 Product 任务未修改菜单或历史文件。"
+    },
+    {
+      "criterion": "同版 Product、Art、Tech Lead、UI、Client、QA、Master Review 完成且 Required 路径存在；进入 USER_REVIEW 后等待用户对 v0.1 明确决定，批准前不正式生产图片或修改 Cocos 运行菜单。",
+      "result": "PASS",
+      "evidence": "Product、Art、Tech Lead、UI、Client、QA、Master 七份 v0.1 同版 Review 均为 APPROVED；Task 所列 14/14 Required 路径实存，满足产品稿送 USER_REVIEW 的条件。Approval 当前仍为 DRAFT，用户对 v0.1 的明确决定待 Producer 记录；本 PASS 不代表用户批准、正式资源完成或运行/QA 通过。"
+    }
+  ],
+  "assumptions": [
+    "初始店为 01 奶茶店；前后切换按 01–06 循环，UI 可提等效六项直接选择，但需保持单店与全项可达。",
+    "U03 只验证六店静态可辨外观、独特牌匾及状态切换；参考图中的店长、顾客、桥殿、动效与经营不自动入本版。",
+    "U03 导航以实际已批准菜单为基线；U02 在审稿不能提前视为已批准或已实现。"
+  ],
+  "risks": [
+    "用户附件为合成全景，不能直接裁成六张正式店铺资源；权利、可编辑母版、牌匾字体和正式拆件可行性待 Art 核验。",
+    "横向参考图与当前竖屏运行菜单的尺度差异需 UI/Art/Tech 在目标视口定案和 QA 实测，不能凭本稿宣布可读。",
+    "U01 唯一菜单已获批，U02 仍在审；U03 入口与正式图片接入须遵守各自独立审批门禁。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

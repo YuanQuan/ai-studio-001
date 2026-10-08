@@ -1,0 +1,17 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "ACTUAL_FIRST_IMAGE_POSTCHECK",
+  "reviewed_build_report": "BARBER_FULL_REDRAW_BUILD_REPORT_V03.json",
+  "reviewed_build_report_sha256": "762E9D2D1B0651441762E9D1B7F6ADEA41947C8B9C07BB95400EF97A305E626B",
+  "art_postcheck_sha256": "4370CEAAD0C1B60659515FD9D8BCDF339E63AFA957E69CB730E59C3324916C41",
+  "findings": [
+    {"severity": "INFO", "message": "独立核构建清单 13 个源/PSD/切片/预览引用路径与 SHA-256 全匹配。新原图与新 PSD 独立留存，旧 04 PSD 不覆盖；报告锁同版首图预案 SHA D5C7CF1AACBDB2DAC8EF0FD334200640645A4F6EFEBEA16E7037DB2367F0C0F6。"},
+    {"severity": "INFO", "message": "独立以 Pillow 检查 body/sign 均 1024×1024 RGBA、四画布边 alpha 全为 0，body+sign 按序 alpha 复合与交付重组逐像素一致；390×844 和 720×1280 文件实核尺寸正确。归一化主体 alpha≥16 bbox=(142,224,882,900)，实际宽 740、高 676 源 px，符合 v0.3 控制区 600–760/610–750，foot=(512,900)。390/720 显示宽记录 316/584，六店同尺度总览已目视核。"},
+    {"severity": "INFO", "message": "PSD 报告列出 9 个可见语义层与隐藏 reference_source，可见层与双片最大通道差 0；新层为同张整体重绘图的互斥语义像素区域，可分别显隐和改字，但没有物件完整被遮挡背面，不能声称任意物件重排完全可编辑。尚未做 Photoshop/Photopea 交互式开存。"},
+    {"severity": "INFO", "message": "同尺度视觉检查：04 近正面，屋脊/檐口大体水平，蓝灰瓦屋、镜台、座椅、理发柱、布帘与檐下双层『理发』牌可见，无屋顶大 LOGO；侧墙/正面≤0.12 属目视判断，未从图中可重复测量。两字字芯 390 投影高均 27.77 CSS px；独立复建已锁 B92% 原字芯以骨架稳定中心 10 分位量得『理』2.78、『发』2.26 CSS px，超过 2 CSS px 静态候选线。"},
+    {"severity": "MAJOR", "message": "两张 1024² RGBA8 裸展开约 8 MiB 仅为面积估算；Creator 纹理页、CPU/GPU 常驻、加载峰值、safe area、帧时均 NOT_TESTED。六店总览中的 01 奶茶视角已被用户退回并准备整体重绘，本 04 通过不表示六店合版 Gate2 可提交；04 自身仍待用户对具体首图/切片 Gate2 审批。"}
+  ],
+  "next_action": "04 当前具体 PSD、两张切片、重组及双视口可单独交用户 Gate2；01 另行修订，六店总览只作比较证据而非最终获批合版。用户批准 04 具体版本前 Client 不正式接入。"
+}

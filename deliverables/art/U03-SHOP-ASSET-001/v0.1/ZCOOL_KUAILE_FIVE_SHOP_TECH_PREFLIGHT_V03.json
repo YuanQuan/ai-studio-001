@@ -1,0 +1,16 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "FIRST_IMAGE_PREFLIGHT",
+  "batch_id": "U03-SIGN-B92-FIVE-20261007",
+  "reviewed_artifact": "ZCOOL_KUAILE_FIVE_SHOP_PRODUCTION_PREFLIGHT_V03.md",
+  "reviewed_sha256": "650165D656DA8E70ED3CF7D9A7BFC46CCA0D573C4D90C8F95C96BCF2B2CC0A36",
+  "findings": [
+    {"severity": "INFO", "message": "同版预签仅解锁 01/02/03/05/06 五店 B 92% 栅格字效首张正式图；04 理发店不在本批。五份输入 PSD 的 SHA-256 已独立复算并与预案逐项一致，原 PSD 必须封存。"},
+    {"severity": "INFO", "message": "只允许替换 sign_glyph 及最多两组牌面随字装饰；其他工作层与隐藏 reference_source 的通道及可见性保持一致。新 PSD 必须保留可编辑栅格字层，body/sign 最多两张同坐标 1024×1024 RGBA，foot=(512,900)。逐层和双片重组在实图后验中核，不以本预签代替。"},
+    {"severity": "INFO", "message": "正式实图按六店同尺度规则提交 390×844 和 720×1280 全视口，四底 alpha、逐字字高与有效细笔、牌匾安全空白、两片重组及清单 SHA；390 保守 1024→316 CSS px，候选线字芯高≥24 CSS px、细笔≥2 CSS px。两张 RGBA8 1024² 约 8 MiB/店、五店约 40 MiB 为裸展开面积估算；Creator 纹理页、加载峰值、设备 safe area、帧时仍 NOT_TESTED。"},
+    {"severity": "MAJOR", "message": "字库仅限本地把固定牌文渲染为栅格像素；不得把 TTF/OTF/WOFF、原下载包或可安装字体嵌进 PSD、仓库、游戏包或外发包。官方原 TTF/声明尚未取得和比对，清单须保留此事实、官网声明 URL、本地候选指纹。开工时锁定脚本实际 SHA（当前 render_zcool_kuaile_styled.py 为 EE55C137A453984E348E5E185CB18E9E2D141BC05F150D9A9BA470E271B514E8），提交前再检查 staged 文件；若字体来源或许可证据出现限制即停产复审。"}
+  ],
+  "next_action": "Art 可按已批 B 92% 视觉方案和受限栅格补充开始本批五店首图制作。完成后交实际 PSD、两片、重组、双视口和版本清单核验；用户对具体切片 Gate2 批准前 Client 不得正式接入。"
+}

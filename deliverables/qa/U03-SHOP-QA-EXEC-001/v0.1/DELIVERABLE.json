@@ -1,0 +1,23 @@
+{
+  "task_id": "U03-SHOP-QA-EXEC-001",
+  "owner": "qa",
+  "summary": "正式QA已核批准/R3构建/切片身份并查看两尺寸六店静帧；Master补有限反向、20快切及10入退。完整用例1PASS、2BLOCKED、14NOT_TESTED；必要性能/受控故障和动态视觉缺口使整体BLOCKED。",
+  "artifacts": [
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TEST_REPORT.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/TEST_CASE_RESULTS.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/VISUAL_EVIDENCE_INDEX.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/PERFORMANCE_EVIDENCE.md",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/RESOURCE_AND_BUILD_AUDIT.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/GATE2_MATCH_AUDIT.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/evidence/EVIDENCE_MANIFEST.json",
+    "deliverables/qa/U03-SHOP-QA-EXEC-001/v0.1/QA_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "确切批准构建/资源身份", "result": "PASS", "evidence": "R3三源与107构建SHA一致；12切片Gate2→Client→native逐件一致；同版UUID登记/Tech导入Review。"},
+    {"criterion": "完整功能/异常/动态视觉", "result": "NOT_TESTED", "evidence": "TEST_CASE_RESULTS：部分鼠标主流程/静帧支持通过，完整用例仅C15 PASS，其余缺口逐条保留。"},
+    {"criterion": "必要性能与完整回归", "result": "NOT_TESTED", "evidence": "PERFORMANCE_EVIDENCE：静态48MiB面积部分PASS；帧时/同钟耗时/DrawCall/实例监听等未取得。"},
+    {"criterion": "同版专业Review、用户确认及最终接受", "result": "NOT_TESTED", "evidence": "QA_REVIEW为BLOCKED；其他Review与用户报告确认待。"}
+  ],
+  "risks": ["受控故障/输入边界/动态状态未测", "必要性能无可靠原始数据", "固定Web有限观察不能外推真机/目标平台"],
+  "status": "BLOCKED"
+}

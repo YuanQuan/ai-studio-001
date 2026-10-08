@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次仅审 Client Owner 自检 v0.2 的双视口六店静帧。输入 OWNER_SELF_CHECK.md SHA-256 B87CAE5B6D1483FDAF160298DCC4A01589AB1FA7F91A678648360D07B4D7C75E；Gate2 v0.4 候选清单 SHA-256 C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191。已逐张查看 v0.1/evidence/r3_iab/390_shop_01..06.jpg 与 720_shop_01..06.jpg 的 12 张实际运行静帧；原件及 SHA 由 R3_IAB_EVIDENCE_MANIFEST.json（SHA-256 E8B0DBE003979B0AF22509A15C2CE00EB4FBFE97A93114A58E6A80F4921C6DC2）索引。"
+    },
+    {
+      "severity": "INFO",
+      "message": "两视口各帧仅显示一店，六店顺序、店型及牌文与已批 Gate2 v0.4 视觉对象对应：01 奶茶为近正面蓝灰瓦店与独立悬挂牌，02 糖画红伞车与竖牌，03 炭烤红棚炉台与竖牌，04 理发近正面瓦店与门额，05 花灯竹架与折角牌，06 投壶竹架与侧挂牌。两种瓦店屋顶未见大杯或大剪刀 LOGO；镜椅理发柱、奶茶瓶罐、炉台、花灯与投壶经营线索在静帧可辨。"
+    },
+    {
+      "severity": "INFO",
+      "message": "390×844 与 720×1280 实图中的六块牌文均可目视辨认，牌体形制仍有区别；店体、牌匾与页面常驻顶部标题及底部切换控件未见重叠或裁切。冷蓝环境与暖色营业光仍延续 Gate2 v0.4 的视觉方向。此结论是静帧视觉一致性判断；Owner 的 12 张 Art→Client→R3 资源 SHA 核对另见 OWNER_SELF_CHECK.md 和 v0.1/RESOURCE_IDENTITY_AND_UUID.md。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "静帧不足以证明逐帧切换无错牌、加载/错误/重试状态、真实触摸、动态遮挡、目标设备安全区或性能；也未对 Gate2 原 PNG 与运行 JPEG 作逐像素比对、逐牌投影尺寸及有效细笔量测，01/04 侧墙比例没有可复核几何测线。此 Art APPROVED 仅限 390/720 六店当前静态画面与已批视觉对象的目视一致性，不扩大为完整运行视觉或正式 QA 通过。"
+    }
+  ],
+  "next_action": "Client Owner 保留当前 12 张双视口静帧与来源索引，Master 可据此接受单元示例的限定视觉自检；后续若进入正式功能/资源接入，再补动态状态、目标设备和适用 QA 验证。"
+}

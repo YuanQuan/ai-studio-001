@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本评审仅核 U03-SIGN-FONT-R1 实图：FONT_REVISION_BUILD_REPORT.json SHA-256 B5E6A93329729C84CC461F3A213883DEEBB15646247D672637BCCC4AC7795FFE、FONT_REVISION_VERIFICATION.json SHA-256 F7167EDA6FDA26BBC3A79AFCBD1BC6D06B57588B9D1DD2CC914BAA40366843EF、CUT_MANIFEST.json SHA-256 7FF74B935C274E56420C3D16817A99764EDC61899541BF90F284972F7C92CF02。独立复算前两报告所指 60 件文件及清单引用的 36 件 PSD/切片/重组/投影哈希均一致；12 个稳定切片 ID 唯一，计划客户端路径未导入、UUID 均为空。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立解析六份新旧 PSD 的实际图层记录和原始 RGBA 通道：每店只有 sign_glyph 通道相对旧 PSD 变化，其他 7–9 个图层含 reference_source 逐像素相同；新 PSD 工作层 flags=0 可见，末层 reference_source flags=2 隐藏。六店 PSD 可见层与 body+sign 两片同尺度重组仅差 5–29 像素、单通道最大 1/255；12 张 PNG 均为 1024×1024 RGBA，body+sign 与提交的重组图逐像素相同，foot=(512,900)，sourceRect 与 originalSize 均为全 1024 画布。"
+    },
+    {
+      "severity": "INFO",
+      "message": "正式 PSD 使用的六张 sign_glyph 层与预签候选图逐像素一致；逐字实测 alpha bbox 在 1024→316 CSS px 的 390 静态投影中为 25.00–32.09 CSS px，六张完整 390×844 图可辨认正确牌文，六块牌形/挂位仍不同，奶茶与理发屋顶无大 LOGO。720/390 静态投影共享脚点；实际 Creator/设备安全区与抗锯齿仍未测试。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "预签方案要求 390 投影的有效细笔≥2 CSS px；当前交付缺少该项的可复核测量，且独立以 alpha≥180 的字层横/纵连续墨段测得各字第10百分位约 4–5 源 px，即约 1.23–1.54 CSS px。该扫描法受斜笔和尖锋影响，不能据此定量断言核心笔画全部失败，但已不足以证明方案候选线通过。Art 应在当前字层上定向加厚，并提交剔除端点/斜线伪细段的核心笔画测量及六店 390 全图，复核不粘连、字底反差与两片/PSD 哈希；未通过前不得送用户 Gate2 或让 Client 导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店两张 1024² RGBA8 纹理若全部同时展开约 48 MiB，只是裸页面积估算；Creator 3.8.8 Web 实际纹理页、加载峰值、设备帧时和字形最终可读性未测。本轮不放行用户 Gate2、客户端接入或整个 U03 的完成状态。"
+    }
+  ],
+  "next_action": "Art 保留当前 R1 的 PSD、切片、清单与哈希作为退回证据，仅在已批牌匾内部修订 sign_glyph，并以客观有效细笔口径、390/720 全图、PSD 眼睛状态/实通道、两片同尺度重组和新版逐件 SHA 重新封存；Tech 对确切新版独立复审。"
+}

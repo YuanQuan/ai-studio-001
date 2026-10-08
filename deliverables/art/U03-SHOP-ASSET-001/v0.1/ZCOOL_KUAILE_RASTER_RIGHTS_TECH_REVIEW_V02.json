@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本结论仅审 ZCOOL_KUAILE_RASTER_RIGHTS_ADDENDUM_V02.md 作为用户方案审批输入，独立复算其 SHA-256 为 EEBF25B02A3DBFCBB52832BDF447FE25BF0B5DF43D5EF793D392F4B2339BDDA3。APPROVED 仅表示该受限来源方案可提交 USER_REVIEW，不是 Art/Tech 正式制作预签，也不批准任何 PSD、切片、Gate2 或 Creator 导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "站酷官方发布页 https://www.zcool.com.cn/assets/7285916528355077132.html 对站酷快乐体 2016 修订版明确写有免费授权全社会使用（包括商用），并列出原 TTF 与使用声明文件；本地候选 ZCOOL-KuaiLe.ttf 独立核为 HappyZcool-2016 Regular Version 3.12、SHA-256 302D8DEE7D2CB7D25D6BC89399E43513D2CAFD031862BD46BCE47F573C68807E、MD5 0ACEAB97AF2CD21DC57F76ACEB1B1722，12 个指定简体字有覆盖。公开同版 MD5 仅为旁证；官方原 TTF 和声明原件尚未取得，未作官方二进制比对，方案如实记录这一缺口。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "受限可用范围须固定为本项目六店固定牌文的栅格化 PSD 字层和 PNG 图片，游戏包、PSD 文件及仓库均不得嵌入或分发可安装字体软件，不得修改/重命名字体文件或转售字库。已用 git check-ignore 核实 source/font_candidates/.gitignore 的 *.ttf 规则排除当前候选，当前该目录无已暂存字体文件；正式提交前仍须复核完整暂存列表。若后续官网原件显示实际版本不同、限制游戏牌匾图片商业输出或字效加工，或项目需要分发/嵌入字体文件，立即停止并重新评审，不把本方案外推为字体软件再分发授权。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本补充只请求用户批准以官方商业使用声明、本地候选版本指纹和仅栅格输出为有限替代证据；不改变已批 92% 六店牌匾字效视觉参数、04 视角独立门禁、六店 PSD 双片或用户 Gate2。用户若不批准此门槛调整，原先取得官方原包与声明并比对的生产锁继续生效。"
+    }
+  ],
+  "next_action": "Master/Producer 将 SHA-256 EEBF25B02A3DBFCBB52832BDF447FE25BF0B5DF43D5EF793D392F4B2339BDDA3 的方案提交用户 USER_REVIEW。仅用户明确批准该版本后，Art 再封存具体字体/字效实施预案并与 Tech 对同版同批预签；首张正式 PSD/切片前须复核本评审的来源和不分发条件。"
+}

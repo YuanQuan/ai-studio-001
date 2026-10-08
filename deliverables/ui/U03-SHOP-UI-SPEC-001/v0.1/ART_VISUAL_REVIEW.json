@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已复核本次微调后的最终 UI_SPEC.md 与 SCREEN_STATES.md：快切从 desiredIndex 递推，presentedIndex 始终绑定当前唯一可见店、牌匾和身份；连按回到当前店时撤销待切换，不叠出第二店或残留旧牌。正常首入仅显示返回与中性加载，不显示重试；明确失败后才呈重试。这两项修订不改变单店画面、安全区或美术资源边界，Art 结论保持 APPROVED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "UI_SPEC.md 将标题、身份栏、前后控件放在单店展示容器外，并逐项列出奶茶窗檐、糖画伞右杆、炭烤棚左柱、理发门额、花灯上梁偏左和投壶侧挂六处牌匾避让；SVG 只以容器与内部安全边说明结构，没有在店体上叠加同形公共牌。符合已批 U03 六块不同牌匾和单店完整轮廓基线。"
+    },
+    {
+      "severity": "INFO",
+      "message": "候选色延续冷夜蓝、暖灯橙、浅纸与木色，界面不重染六店美术资产；页面按店真实比例等比展示，不把摊车拉宽，也明确 01/04 屋顶去大 LOGO 的实图复核。实际店图、390×844 小视口投影、字牌可读性和 UI 遮挡仍须在正式 PSD/切片及运行视窗中逐店验证，本 Review 不判视觉实图 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "两张 SVG 的标题、描述与红色标注均写明仅为结构审阅示意，不是正式店图、控件切片或字体；中央框没有假店铺。SCREEN_STATES.md 禁止用 SVG、全景裁块和旧概念图代替缺失正式资源，保持示意图与生产资产的边界。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "正式 UI 字库、牌匾字形及本次附件商用改编权仍为 UNKNOWN。COLOR_SYSTEM.md 与 UI_SPEC.md 已要求核对具体文件、运行/嵌入/分发/改造许可，并将 SVG sans-serif 限于审阅；首张正式图片或字稿前仍须满足 Art Gate1 的来源停止条件，UI 规格获批不能单独解除。"
+    }
+  ],
+  "next_action": "请 Tech Lead、Client、QA 与 Master 继续同版 Review。正式六店资源与 UI 图片生产后，由 Art 对 720×1280 和 390×844 两候选视口逐店核牌匾投影、六挂位、内外安全区、屋顶补画及冷暖视觉层级；Gate2 与正式字体/图片权利未完成前不交 Client 作为正式资源。"
+}

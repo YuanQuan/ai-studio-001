@@ -1,0 +1,39 @@
+{
+  "id": "U03-SHOP-QA-PLAN-001",
+  "title": "U03 六店单店切换编码前测试计划",
+  "type": "test",
+  "owner": "qa",
+  "parent": null,
+  "objective": "为 U03 客户端开工包拟定可执行 TEST_PLAN、功能/视觉/性能用例和证据门槛，覆盖六店单显、六款牌匾、奶茶/理发去屋顶大 LOGO、循环/快切/错误/重入、两候选竖屏与 U01/U02 回归；本任务不执行尚不存在的 U03 构建或测试。",
+  "inputs": [
+    "U03-SHOP-SCOPE-001 Product v0.1、U03-SHOP-ART-PLAN-001 Art Gate1 v0.1、U03-SHOP-TECH-DESIGN-001 Tech v0.1、U03-SHOP-UI-SPEC-001 UI v0.1（均待核 USER_APPROVED）",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md（同轮拟定，双方对齐后同批送用户）",
+    "rules/qa_protocol.md、rules/artifact_contract.md、project/quality/PERFORMANCE_BUDGET.md 与现行 U01 运行证据"
+  ],
+  "deliverables": [
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TEST_PLAN.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/VISUAL_AND_PERFORMANCE_MATRIX.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TECH_THRESHOLD_PROPOSAL.md",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/QA_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/qa/U03-SHOP-QA-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-QA-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "TEST_PLAN 明确 FUNCTIONAL 固定 Web/测试环境、Visual QA 与性能适用范围及可重现证据，目标平台真机若不在本轮须明确 NOT_TESTED；不以文档评审、静态资源或浏览器加载判运行通过。",
+    "用例追溯已批 Product/Art/Tech/UI：六店 01–06、默认 01、单店唯一、双向边界循环、desiredIndex 连按递推与乱序回调、完整三元组/阴影原子提交、缺图/重试/返回再入、菜单 U01/U02 回归，以及六牌不同形制与挂位、奶茶/理发屋顶去大 LOGO。",
+    "明确 Gate2 具体切片批准版本与 Creator 导入 UUID/构建身份对照、720×1280 和 390×844 候选视口、实际 safe area/DPR/牌匾笔画与 alpha/遮挡检查、U03 专用 Web 性能阈值及测量口径；无实测时不判 PASS。",
+    "QA、Client、Tech、Art、Master 同版评审通过，并与 Client FEATURE_BRIEF 一起交用户审批；未获批准及正式 Gate2 前不启动正式编码或实施测试，TEST_REPORT 后续在实际构建上另做。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "U03-SHOP-ART-PLAN-001", "U03-SHOP-TECH-DESIGN-001", "U03-SHOP-UI-SPEC-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "与 Client Brief 同轮并行草拟，真实六店资源和运行尚不存在时只规定测试方法并标待验证。",
+    "附件商用改编权和正式字形来源 UNKNOWN 不阻止本测试计划，但不放行正式店图、Cocos 接入或测试执行。"
+  ]
+}

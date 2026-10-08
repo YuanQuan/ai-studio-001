@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-CLIENT-BRIEF-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "前次 C07/C08/C10/C11 可测性问题已在同版修订中解除：FEATURE_BRIEF.md 第 3 节与 STATE_AND_RESOURCE_PLAN.md 的 requestShop(target,generation) 共用结果边界覆盖强引用和异步路径；仅获批测试构建启用按 target/generation 固定延迟、02/03 乱序及 MISSING/DECODE/STRUCTURE/TIMEOUT 注入，正式构建关闭，不改真实 PNG/Prefab/.meta/UUID。模拟 DECODE 只证明状态机失败分支，不冒充引擎真实解码器测试。"
+    },
+    {
+      "severity": "INFO",
+      "message": "前次性能时间戳问题已在同版修订中解除：诊断使用同一单调时钟的 inputAt/requestAt/readyAt/validatedAt/commitAt/presentedFrameAt，关联 generation、目标/可见 ID、缓存冷热、错误、构建 hash 与 Gate2/源/工程资源版本；首完整可操作帧而非旧店可见帧作为终点，详细逐帧与注入仅测试构建启用。具体日志/计数仍需实施后实际验证，当前 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "U01 四层与 U02 实际实施状态的回归边界、六店单显/原子提交/失败重试及唯一资源身份明确；Client Brief 与 QA Plan 都需用户批准且具体切片 Gate2 另批后才正式编码和导入。当前运行均 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次 U03 附件可商用改编的 USER_DECLARATION 已准确引用；具体工具合同、外来素材、正式牌匾/界面字形仍待 Art/Tech 预签。该声明没有被误写成 Gate2、Cocos 接入或 QA 通过。"
+    }
+  ],
+  "next_action": "与 Tech、UI、Master 同版 Review 和 QA TEST_PLAN 对齐后交 Producer 进入 USER_REVIEW；获批实施后按测试构建实际验证注入、日志、性能及 U01/U02 回归，未生成的店图/构建不可判 PASS。"
+}

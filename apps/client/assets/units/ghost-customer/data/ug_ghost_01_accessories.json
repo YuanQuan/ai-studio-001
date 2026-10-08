@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "assetId": "UG_ACC_HAT_01",
+      "category": "hat",
+      "source": "source/accessory_generation/hat_source.png",
+      "sourceAlphaBboxAfterLowAlphaClean": [
+        401,
+        275,
+        1147,
+        757
+      ],
+      "size": {
+        "width": 192,
+        "height": 128
+      },
+      "pivot": {
+        "x": 96,
+        "y": 115
+      },
+      "mountKey": "head",
+      "mirrorPolicy": "mirror_with_body",
+      "exports": [
+        "accessories/tex_ug_acc_hat_01_front.png"
+      ],
+      "layers": [
+        "cap_dome",
+        "soft_cuff"
+      ],
+      "sourceCutout": {
+        "width": 746,
+        "height": 482
+      },
+      "scaledCutout": {
+        "width": 150,
+        "height": 97
+      },
+      "placedAt": {
+        "x": 21,
+        "y": 15
+      },
+      "artExports": [
+        "accessories/ug_acc_hat_01_front.png"
+      ]
+    },
+    {
+      "assetId": "UG_ACC_GLASSES_01",
+      "category": "glasses",
+      "source": "source/accessory_generation/glasses_source.png",
+      "sourceAlphaBboxAfterLowAlphaClean": [
+        262,
+        300,
+        1275,
+        688
+      ],
+      "size": {
+        "width": 160,
+        "height": 80
+      },
+      "pivot": {
+        "x": 80,
+        "y": 40
+      },
+      "mountKey": "face",
+      "mirrorPolicy": "mirror_with_body",
+      "exports": [
+        "accessories/tex_ug_acc_glasses_01_front.png"
+      ],
+      "layers": [
+        "left_ring",
+        "bridge",
+        "right_ring"
+      ],
+      "sourceCutout": {
+        "width": 1013,
+        "height": 388
+      },
+      "scaledCutout": {
+        "width": 100,
+        "height": 38
+      },
+      "placedAt": {
+        "x": 30,
+        "y": 21
+      },
+      "artExports": [
+        "accessories/ug_acc_glasses_01_front.png"
+      ]
+    },
+    {
+      "assetId": "UG_ACC_WRISTBAND_01",
+      "category": "wristband",
+      "source": "source/accessory_generation/wristband_source_v2.png",
+      "sourceAlphaBboxAfterLowAlphaClean": [
+        261,
+        359,
+        1054,
+        812
+      ],
+      "size": {
+        "width": 64,
+        "height": 48
+      },
+      "pivot": {
+        "x": 32,
+        "y": 24
+      },
+      "mountKey": "wristNear",
+      "mirrorPolicy": "mirror_with_body",
+      "exports": [
+        "accessories/tex_ug_acc_wristband_01_back.png",
+        "accessories/tex_ug_acc_wristband_01_front.png"
+      ],
+      "layers": [
+        "band_back",
+        "band_front"
+      ],
+      "sourceCutout": {
+        "width": 793,
+        "height": 453
+      },
+      "scaledCutout": {
+        "width": 46,
+        "height": 26
+      },
+      "placedAt": {
+        "x": 9,
+        "y": 11
+      },
+      "artExports": [
+        "accessories/ug_acc_wristband_01_back.png",
+        "accessories/ug_acc_wristband_01_front.png"
+      ]
+    }
+  ]
+}

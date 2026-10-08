@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本结论仅审 BARBER_ANGLE_LOCAL_REBUILD_PLAN_V02.md 与 preview/barber_angle_v02_edit_scope.png 作为用户方案审批输入；独立复算 SHA-256 分别为 1B653C2CF342A69FEC24CABA5694E1B410AE6BB5C6131E10AB166A179639279A、E9500944564165C6BF66ED4923D97C2BBC9D03D7D0C0565890318E1D2BA33E2B。APPROVED 仅表示 v0.2 局部重建方案可提交 USER_REVIEW，绝非正式首样制作预签、实图后验、Gate2 或 Creator 导入放行。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立查看现有 04 PSD SHA-256 369326B1451A70B4FE89CDC81F22CFB31583EF30A4D3E1FB48243762CE2570B4 的 body_roof/body_facade 实际全画布层：斜向瓦面、左叠檐与正檐在单张栅格屋顶层相连，侧墙与门额在单张局部镂空立面层共边，隐藏 reference_source 也仅含旧角度。因此原批准 v0.1 的无损压窄路线触发失败条件，不能声称仅靠现有像素变形即可把侧墙/正面约0.27–0.29降至≤0.12；v0.2 明示申请补出缺失屋顶/立面像素是必要且可审的范围变更。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "范围图红区覆盖屋顶大部，用户方案批准不等于实际局部重建必然可行。后续同版实施预案须逐层锁实际红/橙编辑 mask、受影响像素面积与来源、补片新图层和旧新图层哈希，青框中的镜台、座椅、理发柱、布帘与牌匾须保形；不得用全店重生成图、整体水平压缩或从 01 复制瓦/木像素。正式样张要在正立面上缘和下缘等固定测线标注侧墙/正面宽并均核≤0.12，复核正立面中心约 x500–530、屋脊/门额/台阶近水平、立柱近竖直和物件未非等比变形。超范围、大面积整体替换、缺面无法局部补出或需第三运行切片时停批并提交 Master 重审。"
+    },
+    {
+      "severity": "INFO",
+      "message": "后续仍锁 1024×1024 同坐标 PSD、foot=(512,900)、body/sign 最多两张 RGBA PNG、隐藏 reference_source 与可见语义层实际通道重组；保存旧版与实际输入、遮罩、局部生成候选、提示词和编辑差分。04 新旧需 720×1280/390×844 同尺度投影、黑灰白夜蓝四底 alpha 及六店总览复核。站酷快乐体字体授权与字效是独立门禁，未核清前不得在 04 角度修订中导出含该字体的正式 PSD/切片。"
+    }
+  ],
+  "next_action": "Master/Producer 将 SHA-256 1B653C2CF342A69FEC24CABA5694E1B410AE6BB5C6131E10AB166A179639279A 的 v0.2 方案及 SHA-256 E9500944564165C6BF66ED4923D97C2BBC9D03D7D0C0565890318E1D2BA33E2B 的范围图提交用户 USER_REVIEW。仅用户明确批准确切方案与图后，Art 再提交实施预案；Tech 须对同版范围、图层、遮挡和双片作首样前预签，实图仍需独立后验。"
+}
