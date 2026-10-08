@@ -1,0 +1,17 @@
+{
+  "id": "CP-VISUAL-OUTCOME-PRIORITY-20261008",
+  "agent": "art",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "以已确认效果的实际视觉符合度为首要目标；局部修图不能达标时 Art 可选择重绘，并以同背景同尺度及接入后实际运行画面对照验收。",
+  "reason": "用户明确指出 U03 实际效果与采纳效果图不一致，并授权视觉效果优先、必要时由 Art 选择重绘。旧规则一律要求沿用现有 PSD 局部修改，与最新授权冲突。",
+  "impact": [
+    "Art 可基于差距证据选择局部修订或重绘，并保留旧版、来源、权利与可编辑母版。",
+    "Tech Lead 与 Art 的首图前同批预签、制作方案用户审批及具体切片用户审批继续执行。",
+    "Client 接入获批版本后提供同背景同视窗实际运行对照；静态重组不代替运行结论。",
+    "当前游戏 Studio Layer 与主模板 Studio Layer、受影响的 standard-mini-game 默认项须由 Master 同轮同步；其他既有游戏保持 pinned。"
+  ],
+  "affected_agents": ["master", "producer", "art", "tech_lead", "client", "qa"],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}
