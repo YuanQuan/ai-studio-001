@@ -1,0 +1,60 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "summary": "Gate1 v0.3已批且Art/Tech同SHA首图预签通过；内置imagegen原生新绘S03/S04各2172×724，以bggg fit:none原位试拼成3840×1024两区域临时预览。x=834出现明显硬接缝、重复草与远山柳错位，桥前道路和原图纵深关系也存疑。按预案停其余窗口及五层，Gate2未送审。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source/GENERATION_LOG.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source/sample_lower_center_s03.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source/sample_lower_left_s04.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source_build/s04_reference/manifest.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source_build/s04_reference/input_rgba.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source_build/s03_s04_seam/manifest.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source_build/s03_s04_seam/trial.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source_build/s03_s04_seam/trial.preview.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/S03_VISUAL_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/ART_SAMPLE_REVIEW_S03.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TECH_SAMPLE_CHECK_S03.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/S04_SEAM_VISUAL_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/ART_SAMPLE_REVIEW_S04.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TECH_SAMPLE_CHECK_S04.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/MASTER_BLOCKED_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.3获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+      "result": "PASS",
+      "evidence": "上游Approval为USER_APPROVED；本版PREFLIGHT_PLAN.md SHA-256 f0294b3baff0be1ce78deda97e61e76ac0f0b1a32637579179557055f84d9d05，ART_PREFLIGHT.json与TECH_PREFLIGHT.json同SHA批准限定S03首图试产。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "NOT_TESTED",
+      "evidence": "仅S03/S04两张2172×724原生分区与两区域临时试验PSD/预览；x=834接缝视觉失败，未扩出完整全景或正式五层。trial.psd不是本项要求的正式五层母版。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "NOT_TESTED",
+      "evidence": "正式五层尚未生成；没有执行透明裁减或连续镜头遮挡证明。两张分区原始图均已保留。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "正式PSD、五张PNG、同尺度重组和目标视窗证据未产出，Gate2维持DRAFT；试验PSD只含两区域临时层，未导入或运行。"
+    }
+  ],
+  "assumptions": [
+    "S03/S04与trial.psd/trial.preview.png只作试产及失败证据，不能当正式五层资产；空白区尚未新绘。"
+  ],
+  "risks": [
+    "x=834明显拼缝说明当前两块内置生图方法未保证跨窗结构与光色连续；不再依同一指令无限重试。",
+    "S03桥前道路可能指向桥洞下方，尚未满足用户要求的通桥纵深；下一方案需先解决并实图对照。",
+    "天空高度、月和右牌楼全景关系、五层语义拆分/alpha、目标设备纹理预算及运行均未验证。",
+    "外部CLI/API备用路线尚未获用户明确选择；本版未使用API或密钥。"
+  ],
+  "status": "BLOCKED"
+}

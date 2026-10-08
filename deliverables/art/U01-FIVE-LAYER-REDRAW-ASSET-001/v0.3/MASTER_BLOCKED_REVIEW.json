@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "master",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本轮实际已完成新版构图生产预案及Art/Tech同SHA预签，并生成S03下中、S04下左原生2172×724样张，bggg fit:none原位生成3840×1024两区域试验PSD/预览。均为真实制作证据，不是正式五层母版。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Master实看S03/S04及source_build/s03_s04_seam/trial.preview.png，x=834可见接边有山柳色块/轮廓硬切、栏杆/岸线与铺路不连续，S03左端前景草重复到场景中部。原生拼接几何成立但视觉连续性不通过，不允许继续其余区域或五层扩批。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S03拓宽石路且缩减可见河水有实际效果，但中央石路视觉上指向桥洞下方，河水位于路后，桥前空间关系与原图仍需定向修订，不能以桥轮廓完整替代用户保持纵深要求。天空/月/牌楼整体关系、完整全景、语义五层、保守遮挡证明与运行均未验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "下一备用API/CLI路径按imagegen技能需用户明确选择，当前已提出async选项但未获得授权；尚未调用或读取密钥。恢复还需核工具尺寸限制与不损害构图的适配，新工具方法首图前Art/Tech重新预签。"
+    }
+  ],
+  "next_action": "Producer依据实际Required及Owner失败证据记录v0.3 BLOCKED、Gate2 DRAFT并更新看板/复盘。保存原图、提示词、试验重组及失败原因；等待用户对API备用路径选择，未获授权不调用，也不无限重复已失败内置方案。"
+}

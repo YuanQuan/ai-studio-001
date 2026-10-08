@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261008-U01-RESOURCE-RESUME-004
+
+- 周期与结果：2026-10-08 16:36:41–17:07:54 +08:00，至阻塞登记节点墙钟历时 31 分 13 秒。`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.3 已完成分区方法预案与Art/Tech同版首图前预签、S03/S04两张原生分区及原位试拼；S03局部双后验通过，S04与S03接缝及桥前空间关系未通过，Task BLOCKED、Gate2 DRAFT。证据为本Task、`v0.3/PREFLIGHT_PLAN.md`、两份预签、S03/S04实图、`source_build/s03_s04_seam/trial.preview.png`、Art/Tech/Master失败结论与`DELIVERABLE.json`。
+- 时间分类：16:36:41为已知周期起点；16:40:48首两份Required实存，16:41:15 Producer登记开工，16:43:05预签核验，16:46:44 S03局部双后验登记，17:07:54 S04停线登记。总历时含并行的样张生成、试拼、视觉/技术检查与流程登记；各工具调用时长、角色净工时及容量或工具等待时长未知，不把总历时归为制作或故障耗时。备用API/CLI需用户选择且未调用，本周期没有Gate2用户审批等待。
+- 速度判断与原因：尚无约定目标或同类可比基线，不评价角色快慢。可证实的关键阻塞是原生拼接在x=834产生柳山、栏杆、岸线、石路硬缝及重复前景草，桥前纵深也未证明；几何画幅通过不代表视觉连续。工具内部为何未保持跨块一致性未知。
+- 建议与复核：Master在用户明确选择备用API/CLI或其他可行方法后组织下一版生产路径，核尺寸、空间与成本/权限边界，下一张图前复核；Art与Tech对受影响方法同版复签并先验证单个接缝及通桥纵深，代价是一轮样张后验；Producer在Gate2送审时复核19项Required及正式五层PSD/PNG/重组，防止将试拼预览当成成品。
+
 ## WR-20261008-U01-COMPOSITION-GATE1-003
 
 - 周期与结果：2026-10-08 16:17:34–16:26:38 +08:00，至审批绑定节点墙钟历时 9 分 04 秒。`U01-FIVE-LAYER-REDRAW-PLAN-001` v0.3 已将用户新构图决定写入12项Required、五项验收PASS，Art/Tech/Master同版APPROVED，Gate1准确`USER_APPROVED`、Task DONE。证据为 `project/DECISIONS.md` 的 `DEC-U01-COMPOSITION-010`、本Task/Approval、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/DELIVERABLE.json`与三份Review。资源Task仍因实际输出尺寸BLOCKED、Gate2 DRAFT。

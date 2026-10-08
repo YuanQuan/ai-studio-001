@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "绑定PREFLIGHT_PLAN.md SHA-256=f0294b3baff0be1ce78deda97e61e76ac0f0b1a32637579179557055f84d9d05。独立回读source/sample_lower_left_s04.png（SHA-256=f1e9fe1204eb79a37c0f7eb288e4554b008905509d05a252ffafa9064be3f48d）与S03原始图均为2172×724 RGB；临时bggg manifest按S04(0,300)在下、S03(834,300)在上、fit:none及remove_background:none组装，source_build/s03_s04_seam/trial.preview.png为3840×1024 RGB且SHA-256=ba9f241adeb4a7f6cc784baca91cb6fff5944f89210ee1ef5f268ef098ca6164。原生1:1放置及预设几何成立，仅为两块试拼，预览白区是未绘窗口。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "同一trial预览在x=834处有明显垂直硬缝。柳树、远山及灌木形体在接边重复且错位；岸线/栏杆高度、链节、水纹、石板缝与光色均不连续，前景草在画面中部重复。目标尺寸文件本身不表示同一完整场景成立；bggg只按alpha覆盖，不会自动融合这些结构。依已签预案停止其余窗口和五层扩批。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S03中桥前石路似向桥洞下方延伸、河位于路后；通桥纵深及原基线空间关系仍未通过，不能把桥未被裁断当成该锚点通过。当前两块接缝与空间关系双重风险，不能以局部拉伸、裁边或自定义Python羽化掩盖；需经内置工具可验证的定向修订方案并在下一图前重新Art/Tech预签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前仅有两张不透明RGB分区及临时两层PSD/预览；上/右窗口、完整3840×1024实绘画面、语义五层、L04补底/L05 alpha、遮挡证明、正式PSD/五PNG、目标设备性能与Gate2均NOT_TESTED。75MiB仍是目标五张RGBA8基础展开估算。"
+    }
+  ],
+  "next_action": "保留S03/S04原图、提示词、manifest、临时PSD和失败接缝预览；Art不再扩上/右窗口或五层。Master组织可实际保持跨块几何/色光一致且修正桥前空间的制作方法，明确新增工具或方法影响；下一张图前Art/Tech对准确修订版重新预签。不得把临时拼图作为正式资源或向Gate2提交。"
+}

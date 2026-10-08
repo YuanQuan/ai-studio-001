@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-08 17:07:54 +08:00（流程核验，非用户对切图决定）：`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.3 S03/S04两块试拼未过接缝及通桥纵深关口，资源Task BLOCKED；`USER_REVIEW_PACKET.md`是失败实图和生产状态说明，不是Gate2切图审批包。Gate2当前 `DRAFT`、decided_at null，无正式五层PSD、PNG及同尺度重组，用户尚未批准具体切图。Gate1 v0.3文字方案批准仍有效，不能移作Gate2通过。
+
+2026-10-08 16:41:15 +08:00（流程版本登记，非用户对切图决定）：用户已授权按Gate1 v0.3继续资源生产方法核验；`U01-FIVE-LAYER-REDRAW-ASSET-001` 当前Gate2审批版本切为v0.3 `DRAFT`、decided_at null，原v0.2 DRAFT快照 `tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL_v0.2.json` 保留。尚无新构图正式五层图及同尺度重组，不将继续指令推断为具体Gate2用户批准。
+
 2026-10-08 16:26:38 +08:00（Producer绑定登记时刻，用户消息精确时刻未知）：`U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.3 `USER_APPROVED`。用户明确河水少、街道宽、通桥纵深保持、天空更高且3840×1024与五层不变；Art/Tech/Master同版APPROVED、12/12 Required、五项PASS，Master最终接受。现行 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` 指向v0.3审核包与Master Review；v0.2已批历史原样保存 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`。资源Gate2仍DRAFT、decided_at null；新构图实图尚未产生，不把本次文字方案批准替代切图效果批准。
 
 2026-10-08 16:23:59 +08:00（Producer 修订登记；用户消息精确时刻未知）：用户明确U01新构图方向，已记 `project/DECISIONS.md` 的 `DEC-U01-COMPOSITION-010`。Gate1现行v0.3 `DRAFT`，正进行文书与同版Review，尚未绑定最终Artifact版本；v0.2 `USER_APPROVED` JSON原样快照为 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`。后续核齐v0.3 12项Required及Art/Tech/Master同版通过后，绑定用户已给的定性决定，不重复索取相同Gate1审批。资源Gate2仍DRAFT且无正式新样张/五层图。
