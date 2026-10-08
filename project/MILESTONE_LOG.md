@@ -1,5 +1,11 @@
 # 关键节点记录
 
+2026-10-08 14:13:44 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | IN_PROGRESS→REVIEW→USER_REVIEW；Gate1 v0.1 待用户决定 | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`（SHA `31da7ccf…c0fab5`）、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/OCCLUSION_AND_VIEWPORT_PLAN.md`（SHA `e3e0adf9…3f24f5`）、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/USER_REVIEW_PACKET.md`、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json`、三份同版 Review、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` | 12/12 Required、12索引、5/5 PASS、三 Review APPROVED；生产方案尚未获用户批准，Gate2另审。
+
+2026-10-08 13:59:43 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | TASK_STARTED / IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`（首份 Required，3460 字节） | Art 本轮实际方案实产；12 项 Required 与同版评审仍待完成，Approval DRAFT。
+
+2026-10-08 13:55:35 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | TASK_CREATED / READY；Gate1 v0.1 DRAFT | `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/TASK.json`、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` | 用户授权方向与启动，具体方案/首份 Required 尚待 Art 实产；不得记 TASK_STARTED。三条旧局部线转 BLOCKED（用户暂停），见各 Task；原审批链保留。
+
 Producer 随节点发生记录；时间采用 Asia/Shanghai。
 
 | 时间 | 任务 | Owner | 节点 | Artifact | 版本 | 路径 | 审批 / 评审 | 说明 |

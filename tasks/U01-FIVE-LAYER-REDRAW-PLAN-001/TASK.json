@@ -1,0 +1,49 @@
+{
+  "id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "title": "U01 五层整体重绘制作前方案",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "落实用户批准的工作方向：暂停U01原局部修改，整体重绘同风格场景；对多手机分辨率及完整镜头状态下保证遮挡的原四层区域用透明替代，水前水草独立为第5层。先将具体制作规格和风险落为Gate1 v0.1并完成同版Review，提交用户审核，不在本方案任务制作正式图片或修改客户端。",
+  "inputs": [
+    "用户2026-10-08本轮：暂停U01目前修改、整体重绘、要求与之前一样、保证遮挡区域透明、水前水草拆第5层；随后明确“好的按照这个方案启动U01的修改”",
+    "project/DECISIONS.md、project/ART_GUIDE.md",
+    "deliverables/art/moonlit_psd_20261005_v2_raw/moonlit_four_layers.psd 与 overall_from_psd.png；原切图Gate2 v0.3 USER_APPROVED",
+    "deliverables/art/UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001/v0.1/（继承用户明确清晰度/道路要求，其未批具体制作参数仅历史候选）",
+    "deliverables/art/U01-GENTLE-UNDERWORLD-ART-PLAN-001/v0.3/（未批挂件候选，暂停，不自动纳入）",
+    "deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/TECH_RUNTIME_SPEC.md（获批四层旧镜头参考，新五层待具体方案）",
+    "rules/visual_production_contract.md、rules/artifact_contract.md、rules/approval_protocol.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/OCCLUSION_AND_VIEWPORT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "明确用户授权整体重绘并暂停旧局部修订，沿用已确认风格、构图、主体锚点、常规手机清晰度与左右道路延长要求；旧未批准挂件不自动纳入。",
+    "定义五层边界、原四层水草移出后补底、第5层水草的遮挡与拟定移动系数；所有路径和UUID标为计划/待生成。",
+    "给出多分辨率、缩放1.0–1.8、全程左右拖动与视差条件下的保守透明区域判定规则，未证明永不露出的区域保留，并区分文件体积和运行纹理内存。",
+    "列明画幅、清晰度、可编辑PSD、五层PNG、同尺度重组、来源授权、工具能力与首图前双签及Gate2检查，不伪造已生成、实测或导入结果。",
+    "全部Required Artifact实存并索引，Art/Tech/Master对同一版本方案完成Review，当前方案用户审批与未来切图效果审批分别追踪。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Art编制本Task全部方案文档，Tech写本目录TECH_REVIEW.json，Master写MASTER_REVIEW.json；Producer维护Task/Approval、旧U01线暂停记录与全局状态/看板。",
+    "用户认可的是本轮已呈工作方向及启动，不伪称尚不存在的具体画幅、裁透明掩膜或完整Gate1 Artifact已获批准。",
+    "单元示例不安排QA Agent；后续由Owner记录检查证据。",
+    "本阶段仅文字规格与只读参考核对；不得修改或生成正式图片、PSD、切片、客户端资源。",
+    "2026-10-08 13:59:43 +08:00 首份 Required ART_PRODUCTION_PLAN.md 实存非空（3460字节）；Producer核 Owner 本轮实际开始方案制作，READY→IN_PROGRESS。仅方案实产，非评审或用户批准。",
+    "2026-10-08 14:13:44 +08:00 Producer核12/12 Required非空、DELIVERABLE 12条唯一索引覆盖全部Required、五项acceptance逐字同序且均PASS；Art/Tech/Master同版APPROVED；计划SHA 31da7ccf12e8cc3d78f214376949cec45545b122886d35314f92b821fcf0fab5、遮挡方案SHA e3e0adf9e168fc15b6a7b68f0864260e3cf7b78f2f031a86b5eac229c13f24f5、送审包SHA 0e57abe2dd1418599bf8c7817e4945df9dbf8d462c5295927c1441d681dfac7e，与Review绑定一致。Task IN_PROGRESS→REVIEW→USER_REVIEW；仅具体Gate1方案待用户决定，尚未批准出图。"
+  ]
+}

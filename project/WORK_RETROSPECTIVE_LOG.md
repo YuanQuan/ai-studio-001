@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261008-U01-FIVE-LAYER-GATE1-001
+
+- 周期与结果：2026-10-08 13:55:35–14:13:44 +08:00，历时 18 分 09 秒；Art 的 `U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.1 已到 `USER_REVIEW`。证据为本 Task、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json`、三份 Review 和审批记录。Producer 登记旧线暂停、版本及送审门禁。
+- 时间分类：起点为 Master 授权 13:55:35，Art 首份 Required 于 13:59:43 落盘，Producer 于 14:13:44 送审。总历时含并行方案制作、Tech/Master Review 和门禁核验；各环节精确占时未知。具体 Gate1 的用户审批等待从本节点开始，未计入制作。无可证实的工具故障或返工用时。
+- 速度判断：没有约定时长或同类可比基线，不能判断角色快慢。旧线范围切换和遮挡规则复核有明确记录；本轮未发现可证实的慢因。
+- 建议与复核：Producer 在下一次 U01 审批流转时核对旧版本快照与当前看板，减少版本误判；代价是少量登记工作，在用户对 Gate1 决定时复核。Master 在具体 Gate1 获批后才组织首图前双签与出图；代价是审批等待，首张正式样张前复核。
+
 Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周期后追加简短记录。本文件记录流程观察，不代表 Artifact 用户批准或 QA 通过；重大或重复问题另见 `project/improvements/`。
 
 ### WR-20261007-FOUR-LAYER-CLARITY-GATE1-001｜四层清晰化与道路延长方案送审

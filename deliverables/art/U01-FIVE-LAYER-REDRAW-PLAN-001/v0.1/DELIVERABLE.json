@@ -1,0 +1,29 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "owner": "art",
+  "summary": "U01 五层整体重绘 Gate1 v0.1 制作前文字方案；新图片与 PSD 尚未制作。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/OCCLUSION_AND_VIEWPORT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {"criterion":"明确用户授权整体重绘并暂停旧局部修订，沿用已确认风格、构图、主体锚点、常规手机清晰度与左右道路延长要求；旧未批准挂件不自动纳入。","result":"PASS","evidence":"ART_PRODUCTION_PLAN.md、ART_BRIEF.md"},
+    {"criterion":"定义五层边界、原四层水草移出后补底、第5层水草的遮挡与拟定移动系数；所有路径和UUID标为计划/待生成。","result":"PASS","evidence":"PLACEMENT_AND_LAYER_MAP.md、ASSET_MANIFEST.md"},
+    {"criterion":"给出多分辨率、缩放1.0–1.8、全程左右拖动与视差条件下的保守透明区域判定规则，未证明永不露出的区域保留，并区分文件体积和运行纹理内存。","result":"PASS","evidence":"OCCLUSION_AND_VIEWPORT_PLAN.md"},
+    {"criterion":"列明画幅、清晰度、可编辑PSD、五层PNG、同尺度重组、来源授权、工具能力与首图前双签及Gate2检查，不伪造已生成、实测或导入结果。","result":"PASS","evidence":"ART_PRODUCTION_PLAN.md、RIGHTS_AND_SOURCE.md、ASSET_MANIFEST.md"},
+    {"criterion":"全部Required Artifact实存并索引，Art/Tech/Master对同一版本方案完成Review，当前方案用户审批与未来切图效果审批分别追踪。","result":"PASS","evidence":"本目录 12 个 Required Artifact 实存；ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json 均 APPROVED，绑定同版 ART_PRODUCTION_PLAN/OCCLUSION_AND_VIEWPORT_PLAN；USER_REVIEW_PACKET.md 区分 Gate1 与未来 Gate2。Gate1 用户审批尚未发生，由 Producer 单独记录。"}
+  ],
+  "assumptions": ["3840×1080、L05 视差 1.0、手机视口矩阵是本版候选，须同版技术评审与用户审批。"],
+  "risks": ["宽 3840 的纹理兼容性及运行内存尚未实测。", "连续状态透明掩膜尚未计算，新工具 PSD 能力尚未预签。"],
+  "status": "READY_FOR_REVIEW"
+}

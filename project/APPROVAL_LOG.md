@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-08 14:13:44 +08:00（Producer 五层 Gate1 v0.1 送审；非用户决定）：`U01-FIVE-LAYER-REDRAW-PLAN-001` 的 `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/USER_REVIEW_PACKET.md` SHA `0e57abe2dd1418599bf8c7817e4945df9dbf8d462c5295927c1441d681dfac7e`，计划 SHA `31da7ccf12e8cc3d78f214376949cec45545b122886d35314f92b821fcf0fab5`，遮挡方案 SHA `e3e0adf9e168fc15b6a7b68f0864260e3cf7b78f2f031a86b5eac229c13f24f5`；12/12 Required、五项验收 PASS、Art/Tech/Master 同版 APPROVED。当前 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` 为 USER_REVIEW、decided_at null；用户对具体方案尚未决定。旧两项未批 Gate1 原 USER_REVIEW JSON 已存 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/history/`，现行SUPERSEDED仅表范围切换，不视作用户退回。新图Gate2与Client接入仍锁。
+
+2026-10-08 13:55:35 +08:00（Producer 范围切换；非用户对具体 Artifact 决定）：用户同意五层整体重绘方案启动，`U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.1 为 DRAFT，尚无具体 Artifact 用户批准；新 Gate2 更未启动。旧 `UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` v0.1、`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.3 未批当前方案标 SUPERSEDED 并暂停，旧 USER_REVIEW 送审事实保留历史；`U01-GENTLE-UNDERWORLD-ASSET-001` v0.3 原 REJECTED 决定不变，仅 Task 暂停。旧 v0.2 Gate1 等历史批准不移用至新图；Client 新资源接入未解锁。
+
 2026-10-07 18:20 +08:00（Producer 送审；非用户决定）：`UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` Gate1 v0.1，方案 SHA-256 `C2AA752D852A475C7D56B1D438E315EDA3652C39C13E84839F94B03366B0244F`；10/10 Required、五项验收 PASS、Art/Tech/Master 同版 APPROVED，审批为 `USER_REVIEW`、`decided_at=null`。用户需对确切制作前方案明确批准或退回。原四层 Gate1/Gate2 批准只适旧图；U01 挂件 v0.3 仍独立待审；新 PSD/PNG 及 Client 接入未解锁。
 
 2026-10-07 18:13 +08:00（Producer 反馈边界登记）：用户要求现有四层场景更清晰并延长左右道路，四层数量不变。Master 指定 `UNIT-MENU-FOUR-LAYER-CLARITY-PLAN-001` v0.1 为新 Gate1 方案任务；Task 与具体方案尚待落盘及 Review，当前没有新 Artifact 用户批准。旧四层 Gate1 v0.1、Gate2 v0.3 的批准仅覆盖原图；`U01-GENTLE-UNDERWORLD-ART-PLAN-001` v0.3 仍待用户选择和批准。不得将本条反馈当作任一具体新图或 U01 挂件方案的审批。

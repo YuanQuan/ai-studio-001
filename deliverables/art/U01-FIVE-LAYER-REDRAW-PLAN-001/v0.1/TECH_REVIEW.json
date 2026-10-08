@@ -1,0 +1,28 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版 Gate1 文字方案已核对 ART_PRODUCTION_PLAN、ART_BRIEF、VISUAL_ANCHORS、PLACEMENT_AND_LAYER_MAP、OCCLUSION_AND_VIEWPORT_PLAN、RIGHTS_AND_SOURCE、ASSET_MANIFEST、USER_REVIEW_PACKET、DELIVERABLE 和 ART_REVIEW。ART_PRODUCTION_PLAN.md SHA-256=31da7ccf12e8cc3d78f214376949cec45545b122886d35314f92b821fcf0fab5；OCCLUSION_AND_VIEWPORT_PLAN.md SHA-256=e3e0adf9e168fc15b6a7b68f0864260e3cf7b78f2f031a86b5eac229c13f24f5。3840×1080、五张同画布 PNG、L05 系数 1.0 均为待用户批准的候选；本结论仅表示方案可提交用户审核，不是首图前 Art/Tech 预签，也不代表新图片、PSD、导入或运行已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "L05 与 L04 同为 1.0 的建议可保持水草与补底的现有相对位置。现有 Creator 控制器仍写死 2172×724、四层数组、视差 [0.3,0.8,1,1]、缩放 1–1.8，并用 EDGE_GUARD=2 计算覆盖与横移边界；新尺寸和第五层需要后续经批准的 Client 规格、代码及运行复核，旧四层技术批准不能自动覆盖这些变更。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "修订版已写入旧实现每侧 2 像素 EDGE_GUARD 参考、五种有效视口与 DPR 1/2/3 候选矩阵，并要求覆盖其间连续视口包络及更宽窄边界；矩阵仍须正式锁定，不能外推未知手机。透明判定采用连续视口/倍率/横移状态交集，离散截图仅作反证。上方相关采样支持范围内须完全不透明（alpha=255）且在所有可见状态覆盖，才能直接置底层为透明；修订版已明确半透明、光晕、反射、边缘羽化一律保留底图，过滤安全带向可裁区域内退让，支持范围未知时不裁。30 张或其他有限截图不能代替连续域证明。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "3840×1080×5×4 为 82,944,000 字节，约 79.10 MiB，仅是五张 RGBA8 基础展开估算；PNG 编码体积变化不能推出 GPU 驻留内存下降。3840 宽纹理对格式和目标设备的兼容性、压缩/mipmap/图集/CPU 副本与实际运行峰值均为 NOT_TESTED；首图前同批预签须记录目标格式、设备能力与预算，不满足时先提出分片或格式备选及视觉影响。"
+    },
+    {
+      "severity": "INFO",
+      "message": "方案保留未裁完整五层源，明确 L04 水草旧位补水岸、同尺度重组和真实来源/PSD 可编辑范围；新美术路径与 UUID 标作计划/待生成，未将旧版未批字样挂件纳入。首图前应验证具体绘制与多图层 PSD 输出链，若只能转换平面图，须如实记录像素层可编辑限制及补底来源。"
+    }
+  ],
+  "next_action": "Master 将本版具体画幅、五层分工、L05 视差和保守透明规则呈用户 Gate1 审批。获批准后，首张正式样张之前由 Art 与 Tech 对同一批次完成来源、工具/PSD 能力、尺寸、图层、采样、纹理预算和实际镜头状态域的文字预签；实图与掩膜验证、五层 PNG/同尺度重组、Creator 导入与运行均按后续门禁分别取证，切图效果另交用户 Gate2 审批。"
+}
