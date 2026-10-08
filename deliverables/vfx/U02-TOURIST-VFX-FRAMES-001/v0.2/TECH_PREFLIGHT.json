@@ -1,0 +1,38 @@
+{
+  "task_id": "U02-TOURIST-VFX-FRAMES-001",
+  "batch": "U02-VFX-A",
+  "artifact_version": "v0.2",
+  "reviewer": "tech_lead",
+  "stage": "首张v0.2正式PNG前同批技术预签",
+  "decision": "APPROVED",
+  "scope": "仅批准当前冻结字节的sad独立脸层合成修复与两阶段离线导出方案。先导四张v0.2代表正式PNG，实图核验通过后才扩其余36张；诊断PNG不具有正式帧身份。本结论不批准正式PNG、Client接入、运行性能或用户Gate2。",
+  "locked_inputs_sha256": {
+    "PRODUCTION_PLAN.md": "128300922752a95a686cc7d0254929ff9d55fc70c6f52a65248934163eb83236",
+    "VFX_SPEC.md": "0762f674597c8a4b993df4e040d80af5fc9a672c1f45436233f3df4674a4e9bc",
+    "SOURCE_PREFLIGHT.json": "757beb07a60e1ff214eb53305403368e0549d9357cffdbbddd182874a2bee0d0",
+    "TOOL_FREEZE.json": "d3539cfbe46891dc044e58d5f2d943177233fbbc48c878f6354f403fffe9e3f1",
+    "ART_PREFLIGHT.json": "92495a9356b37dcd19a7ca7dc6074a787fc6b94e49be65e67d56fd70c990ac49",
+    "serve-export.mjs": "50d3f62c88b24474833a12e102e242ed4473ae2369d9210871cc7bde21bec1d3",
+    "export-browser.js": "8ef755c80c18c184b7ff190667e168bf4bf53ef17cc3f717c51e212fbff92d61",
+    "finalize-export.mjs": "fbb9facef554aa6a12940213593955ef4f44cdb2a372a5d0c068de1426e0d683",
+    "diagnostic-browser.js": "d2ab48dd1a6d14e0a27fefbbd0ecdbb924806eec328c9ac9ad3fb7ca05f48d7e",
+    "review.html": "8b5bbf6bc3b3ca6275906eb9bdec06351f5db29c3694f9c5741e87401de320b5",
+    "review.js": "65658a3b6124be6a4077e49a5a335f8f4c79fd6368171d877b96cfdf8b698d28",
+    "diagnostics/DIAGNOSTIC_AUDIT.json": "52390b37dc66393b9932ca4567a2354a4df8cf2f7c487e9f7eef161aa75c36b1",
+    "diagnostics/sad-seam-before-after.png": "d544c6246a0256212a5c4c6fe128838967490d6cf9fe50a8beb3f976e04fd480",
+    "diagnostics/sad05-lighter.png": "e30ce9a7e804d9e5c7acac65bdfa74e27617f7e6bd2078dd0a9799d74e4cbcea"
+  },
+  "findings": [
+    "TOOL_FREEZE列出的9个文件逐件重算SHA一致；SOURCE_PREFLIGHT的15张分层源和773个受保护文件逐件重算无差异；四个JS文件通过node --check。v0.2正式frames中PNG数为0。",
+    "serve-export仅在读取原型emotions.js后匹配一处原始face合成语句，把sad刚体脸层最终Canvas合成临时设为lighter，drawImage后恢复source-over。原型文件、顶点Shader、4px网格、刚体矩阵、姿态采样和walk/run/happy路径不变；不以旧v0.1首图作v0.2批准。",
+    "对诊断黑/灰/白同尺度图作目视核对，原矩形暗缝在修复侧消失，未见新的亮边或五官位置改变。DIAGNOSTIC_AUDIT记录364个改变像素、原不透明内部最大RGB通道差1、接缝alpha约190至199升至253；该证据仅证明sad05诊断样张。",
+    "首按钮仍仅提交walk00/run00/happy04/sad05；服务对每张非代表帧要求同批REPRESENTATIVE_CHECK的automatedResult及visualOwnerCheck均为PASS，缺项拒绝扩批；正式写入仍限制本版frames目录、排他创建，服务仅监听127.0.0.1。"
+  ],
+  "conditions": [
+    "Producer须把本v0.2 Tech与Art预签、制作方案Gate1和上述确切SHA绑定到本版PRODUCTION_PRESIGN；任一来源、工具、方案、画布、动作或合成逻辑再变，下一张正式PNG前复签。",
+    "四张v0.2代表正式PNG保存后运行--representatives并由VFX Owner查看实际黑灰白/左右独立配件重组，重点复核sad05脸孔洞暗缝、亮边、五官刚体、alpha、挂点接触和遮挡；REPRESENTATIVE_CHECK须留实际文件SHA、预览路径及发现。失败即停批，不能把诊断PASS代替代表实图PASS。",
+    "全批sad十帧逐帧检查脸层交界和五官相对位置；全40帧再核512×512 RGBA、未trim、walk/run对应像素及字节一致、逐帧挂点和固定foot=(256,440)、时长、09到00接缝、源与旧Client目录未变，并将实图清单和同尺度重组提交用户Gate2。",
+    "旧Client的happy/sad once_hold、4帧与本版loop、10帧仍有正式合同差异；Gate2后由Master协调Client/UI/QA修订并在Creator实际运行核附件变换、纹理/图集和性能。"
+  ],
+  "not_tested": ["v0.2正式PNG的实际效果", "Creator导入、UUID、纹理复用、DrawCall与目标设备性能", "正式Client合同迁移、QA及用户Gate2"]
+}

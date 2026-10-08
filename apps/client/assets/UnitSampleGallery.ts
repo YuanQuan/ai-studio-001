@@ -71,7 +71,6 @@ export class UnitSampleGallery extends Component {
   private touristNavReset: Node | null = null;
   private touristStage: Node | null = null;
   private touristStagePanel: Node | null = null;
-  private touristStageCaption: Node | null = null;
   private touristStatus: Node | null = null;
   private touristAdornment: Node | null = null;
   private touristTrayViewport: Node | null = null;
@@ -249,7 +248,6 @@ export class UnitSampleGallery extends Component {
     this.touristNavReset = null;
     this.touristStage = null;
     this.touristStagePanel = null;
-    this.touristStageCaption = null;
     this.touristStatus = null;
     this.touristAdornment = null;
     this.touristTrayViewport = null;
@@ -458,7 +456,6 @@ export class UnitSampleGallery extends Component {
     const stage = this.makeNode('TouristStage', this.page, 590, 520);
     this.touristStage = stage;
     this.touristStagePanel = this.drawRect(stage, 0, 0, 590, 520, PANEL);
-    this.touristStageCaption = this.label(stage, '游客展示区', 0, 218, 21, MUTED, 520, 38).node;
 
     if (this.touristPrefab) {
       const tourist = instantiate(this.touristPrefab);
@@ -714,7 +711,6 @@ export class UnitSampleGallery extends Component {
       this.paintRect(this.touristStagePanel,
         this.touristStagePanel.getComponent(Graphics)!, 590, stageHeight, PANEL);
     }
-    this.touristStageCaption?.setPosition(0, stageHeight / 2 - 42);
     this.touristStatus?.setPosition(0, stageBottom - 25);
     this.touristAdornment?.setPosition(0, stageBottom - 61);
 

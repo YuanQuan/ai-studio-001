@@ -1,0 +1,43 @@
+{
+  "id": "U02-TOURIST-VFX-FRAMES-001",
+  "title": "U02 游客四动作正式序列帧替换资源",
+  "type": "vfx",
+  "owner": "vfx",
+  "parent": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "objective": "将用户确认的慢速漂浮、快速漂浮、高兴原地跳起、沮丧低头四个 VFX 样张转换为 U02 正式透明序列帧；保持静态主体来源与独立装扮合同，供用户核对实际导出版本后交 Client 替换旧帧。",
+  "inputs": [
+    "用户 2026-10-08 明确确认四个现行样张并要求正式替换 U02 资源",
+    "deliverables/vfx/U02-TOURIST-MOTION-PROTOTYPE-001/README.md、motion.js、emotions.js、motion-comparison.gif、emotions-comparison.gif",
+    "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/ 的 walk_00、happy_00、sad_00 静态分层源",
+    "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/ 的已批准资源和挂点基线",
+    "project/ASSET_HANDOFF_REGISTRY.md 与 rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/VFX_SPEC.md",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/frames/FRAME_MANIFEST.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/mounts/FRAME_MOUNT_MANIFEST.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/preview/contact_sheet.png",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/preview/recomposition.png",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/EXPORT_AND_SOURCE_AUDIT.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/DELIVERABLE.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/VFX_REVIEW.json",
+    "tasks/U02-TOURIST-VFX-FRAMES-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "四动作与用户确认样张同源同节奏：walk 原自然漂浮；run 与 walk 使用同一姿态序列但速度为 2 倍；happy 原地上弹回落；sad 低头而脸部五官保持原形。",
+    "每动作不超过 10 张、透明 512×512 原画布且人物居中；不改写已批准静态源图，输出逐帧 SHA、动作顺序、帧时长、循环和首尾接续数据。",
+    "正式资源中的帽、眼镜、手环仍为独立挂载；提供逐帧 head、face、wristNear、wristFar、foot 坐标或明确技术不可达项，禁止沿用不匹配旧帧的挂点。",
+    "实际帧清单和同尺度重组效果可供用户核对；具体导出版本获用户明确批准前，Client 不接入正式场景。",
+    "Client 接入与 Creator 导入、构建、运行、正式 QA 属后续独立阶段，不能用本 VFX 预览结论代替。"
+  ],
+  "dependencies": ["U02-TOURIST-ASSET-001", "U02-TOURIST-CLIENT-ASSET-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户已确认四动作视觉方向并授权正式替换；该决定覆盖动作方向与正式资源制作，不预先批准尚未展示的实际导出 PNG 版本。",
+    "本 Task 的动态制作 Owner 为 VFX；Art 保留已批准静态主体与视觉基线，Client 在具体序列帧版本获批后接入。",
+    "原 U02 Client Integration v0.2/R5 仍为旧帧候选 USER_REVIEW；新资源版本须另做受影响文书/Review，不沿用其旧版批准。"
+  ]
+}
+

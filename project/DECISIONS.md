@@ -125,3 +125,12 @@
 - 理由：用户明确定位为弱社交游戏，要求玩家共享世界而不拆成多个区服。
 - 受影响 Artifact / 角色：Product、Tech Lead、Server、Client、QA；`project/ARCHITECTURE.md`、M04/M06/M07概要及后续技术契约。
 - 迁移 / 回滚说明：当前尚无已部署游戏服务或玩家数据；单一玩家世界不预设只有一个物理进程。未来若改变玩家可见的世界范围，应新建项目级决策并评估存档和资源池迁移。
+
+## DEC-U02-VFX-CLIENT-20261008 — U02 四动作正式帧接入基线
+
+- 日期：2026-10-08
+- 状态：`ACCEPTED`（用户明确四动作表现并批准 VFX v0.2 具体实图；Client 和 QA 尚待独立验收）
+- 范围：U02 游客独立单元的 VFX v0.2 → Client v0.3 接入。
+- 决策：walk/run/happy/sad 各 10 帧；walk/run 同姿态，run 两倍速度；happy/sad 循环播放。帽、眼镜、手环仍为独立逐帧挂件。本版在 U02 范围内覆盖旧 Tech Design §2“走跑必须独立姿态”的要求，保留节奏可辨验收。旧 Client R5 的 20 帧和末帧保持语义只作历史。
+- 受影响 Artifact / 角色：`project/changes/CP-U02-VFX-CLIENT-CONTRACT-20261008.md`；VFX、Tech Lead、Client、UI、QA、Producer。
+- 迁移 / 回滚说明：VFX v0.2 Gate2 已批准；Client v0.3 需全新同版接入、评审、用户审批及适用 QA。不得继承旧 R5 评审或修改已批 VFX PNG 字节。

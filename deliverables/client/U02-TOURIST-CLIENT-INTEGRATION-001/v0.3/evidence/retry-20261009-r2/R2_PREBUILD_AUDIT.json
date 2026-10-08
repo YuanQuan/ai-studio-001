@@ -1,0 +1,76 @@
+{
+  "schema": "u02-client-r2-prebuild-audit/v1",
+  "taskId": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "artifactVersion": "v0.3-R2",
+  "cause": "Art/UI found happy03 hat overlapped the in-stage auxiliary caption; minimal fix removes only the stage caption.",
+  "source": {
+    "path": "apps/client/assets/UnitSampleGallery.ts",
+    "beforePath": "deliverables\\client\\U02-TOURIST-CLIENT-INTEGRATION-001\\v0.3\\evidence\\retry-20261009-r2\\UnitSampleGallery.before-caption-removal.ts",
+    "beforeSha256": "dcdf3f43e3b450d5fef1df7c794ae78453f64ea740bc07ee184505229a6ac33e",
+    "currentSha256": "1266d7c9715af95f49a71b13a7f742175e6207b71fdd8fcb76249c86332ecef5",
+    "changedLines": [
+      {
+        "type": "removed",
+        "line": 74,
+        "text": "  private touristStageCaption: Node | null = null;"
+      },
+      {
+        "type": "removed",
+        "line": 252,
+        "text": "    this.touristStageCaption = null;"
+      },
+      {
+        "type": "removed",
+        "line": 461,
+        "text": "    this.touristStageCaption = this.label(stage, '游客展示区', 0, 218, 21, MUTED, 520, 38).node;"
+      },
+      {
+        "type": "removed",
+        "line": 717,
+        "text": "    this.touristStageCaption?.setPosition(0, stageHeight / 2 - 42);"
+      }
+    ]
+  },
+  "scene": {
+    "path": "apps/client/assets/UnitSamples.scene",
+    "sha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+    "modifiedByThisFix": false
+  },
+  "approvedResources": {
+    "batch": "U02-VFX-A",
+    "version": "v0.2",
+    "gate2": "USER_APPROVED",
+    "creatorImportAudit": "PASS",
+    "assetsChecked": 44
+  },
+  "checks": {
+    "captionReferencesAbsent": true,
+    "staticSourceAndBindingAudit": "PASS",
+    "creatorTypeScript": "PASS --noEmit --strict false --target es2019",
+    "sceneLinks": "STATIC_PASS",
+    "sceneObjects": 19,
+    "sceneReferences": 26
+  },
+  "r1": {
+    "manifestPath": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/BUILD_MANIFEST.json",
+    "buildId": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3",
+    "outputFiles": 147,
+    "outputDirectory": "apps/client/build/u02-integration-v03-web-mobile",
+    "willRemainUntouched": true
+  },
+  "r2": {
+    "creatorVersion": "3.8.8",
+    "platform": "web-mobile",
+    "taskName": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3-R2",
+    "buildOutput": "apps/client/build/u02-integration-v03-r2-web-mobile",
+    "buildConfig": "deliverables\\client\\U02-TOURIST-CLIENT-INTEGRATION-001\\v0.3\\evidence\\retry-20261009-r2\\creator-build-config.json",
+    "buildPending": true
+  },
+  "adminBuildLaunch": {
+    "sandboxRequireEscalatedShellAdminToken": false,
+    "runAsPathPowerShellHresult": "0xC0000142",
+    "runAsAbsolutePowerShellHresult": "0xC0000142",
+    "creatorStarted": false
+  },
+  "capturedAt": "2026-10-08T16:19:40.962Z"
+}

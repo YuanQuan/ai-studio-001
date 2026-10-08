@@ -1,0 +1,37 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "artifact_version": "v0.3",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "scope": "当前v0.3静态接线、资源身份和Creator环境证据的技术Review；未取得Creator AssetDB导入、Web构建及运行画面，不予正式技术通过。",
+  "reviewed_evidence": [
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/RESOURCE_AND_FRAME_AUDIT.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/WEB_RUNTIME_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/creator-cli-stderr.log",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/creator-environment-diagnostic.json",
+    "apps/client/assets/labs/u02/tourist_adapter.ts",
+    "apps/client/assets/labs/u02/tourist_view.ts",
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/settings/v2/packages/engine.json"
+  ],
+  "findings": [
+    {"severity":"INFO","result":"STATIC_PASS","message":"Adapter已限定schemaVersion=2、U02-VFX-A/v0.2、40帧、四动作各10且loop；校验帧/挂点ID、durationMs与durationFractionMs、固定foot、非退化localAffine及walk/run对应SHA。静态审计报告40帧源/Client PNG同SHA、40挂点、160矩阵，最大代数重建误差4.44e-16；此误差只证明数学分解，不证明Creator UISkew实际渲染矩阵。"},
+    {"severity":"INFO","result":"STATIC_PASS","message":"tourist_view.ts使用独立前/主体/后层、MirrorRoot镜像，并为配件挂载旋转、缩放和UISkew；engine.json静态启用ui-skew与affine-transform模块。happy03帽顶越512主体画布约4.81px，静态结构未见TouristStage Mask；实际视窗完整度仍待Web画面验证。"},
+    {"severity":"INFO","result":"STATIC_PASS","message":"资源审计记录40个SpriteFrame UUID与Scene数组顺序、旧20 UUID保留/新增20身份和独立4配件；Scene相对开工前基线仅游客帧数组变化，U01身份及6个U03店铺引用静态保留。Creator AssetDB尚未回读这些UUID，不能写导入PASS。"},
+    {"severity":"MAJOR","result":"BLOCKED","message":"Creator 3.8.8 CLI在安装目录engine缓存import-map.json处EPERM，随后query-engine-info缺失；提权尝试亦未完成，结果TIMEOUT且目标build目录未生成。无AssetDB导入、Creator构建、HTTP实际Web产物或Codex内置浏览器画面，故当前U02运行、UISkew生效、附件层序/镜像、happy03帽顶、U01/U03当前构建回归及性能全部NOT_TESTED。"}
+  ],
+  "required_actions": [
+    "先在有权写入Creator安装引擎缓存的会话恢复Creator 3.8.8 AssetDB；记录导入日志并回读40帧Texture2D/SpriteFrame主子UUID、rect/offset/pivot和Scene/Prefab引用，不改安装目录ACL来掩盖失败。",
+    "构建当前v0.3 web-mobile并保存源码/构建选项、完整日志、退出状态及新产物哈希；通过loopback HTTP和Codex内置浏览器验证同一构建，而非历史R5。",
+    "逐帧核UISkew实际矩阵与批准离线重组，重点看帽镜腕接触、手环前后片、左右MirrorRoot、sad脸、happy03完整帽顶及短屏展示；核四动作10帧loop、walk/run2倍节奏、快切/重置/重入、U01及U03现行内容。",
+    "记录纹理实际复用、图集/压缩/mipmap、DrawCall、帧时间/内存可用指标及环境；无目标设备或阈值证据保持NOT_TESTED，不以40张文件或静态SHA判性能PASS。完成后更新v0.3运行证据再提交本角色同版复审。"
+  ],
+  "not_tested": ["Creator AssetDB真实导入及UUID回读", "当前v0.3 Web构建和浏览器运行", "UISkew实际渲染、左右附件与happy03帽顶", "当前构建U01/U03回归", "DrawCall、纹理驻留、目标设备性能"],
+  "source_sha256": {
+    "tourist_adapter.ts": "97f0f9caba5597bef8ece8d2c2cbbeb8c2a52ea8ceeb85bd1fde362ac10af99d",
+    "tourist_view.ts": "92ebfb29d19b28fda28f541341ab6b863ad323e9c02d4e28d454c03f88956318",
+    "UnitSamples.scene": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+    "engine.json": "b30bd1ee159a2c994826d217e7642acdb6df023a9477032c11fd214c5c7d09ae"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "U02-TOURIST-VFX-FRAMES-001",
+  "owner": "vfx",
+  "summary": "U02-VFX-A v0.2四动作40张正式透明序列帧及逐帧挂点已完成，继承用户确认动作并修正sad脸层互补覆盖接缝；文件与Owner视觉核对通过，具体PNG版本待用户Gate2。",
+  "artifacts": [
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/VFX_SPEC.md",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/frames/FRAME_MANIFEST.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/mounts/FRAME_MOUNT_MANIFEST.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/preview/contact_sheet.png",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/preview/recomposition.png",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/preview/happy03-accessory-overflow.png",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/EXPORT_AND_SOURCE_AUDIT.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/REPRESENTATIVE_CHECK.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/ACCESSORY_BOUNDS_AUDIT.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/KNOWN_LIMITATIONS.md",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/VFX_REVIEW.json",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/review.html"
+  ],
+  "acceptance_results": [
+    {"criterion": "四动作同源同确认样张节奏；run同姿态2倍速；happy上弹；sad低头且五官刚体", "result": "PASS", "evidence": "VFX_SPEC.md、frames/FRAME_MANIFEST.json、REPRESENTATIVE_CHECK.json、preview/contact_sheet.png；walk/run10组PNG字节一致，sad刚体矩阵det=1，内脸接缝alpha全10帧最低252。"},
+    {"criterion": "每动作最多10帧、512透明原画布；源不改写；逐帧SHA/时长/循环/首尾数据", "result": "PASS", "evidence": "40张RGBA8 PNG、FRAME_MANIFEST.json、EXPORT_AND_SOURCE_AUDIT.json；0裁切，773个保护文件未变，09→00为真实姿态过渡而非重复端点。"},
+    {"criterion": "帽/眼镜/手环独立；新逐帧head/face/双腕/foot", "result": "PASS", "evidence": "FRAME_MOUNT_MANIFEST.json：160挂点alpha最低252，固定foot=(256,440)，walk/run坐标/局部变换相同；preview/recomposition.png及黑灰白左右代表图。"},
+    {"criterion": "实际清单和同尺度重组可审，具体版本Gate2前Client不接入", "result": "PASS", "evidence": "contact_sheet、recomposition、happy03完整帽补充图与review.html直接读实际PNG；Client保护哈希保持，Gate2=PENDING_USER_REVIEW。"},
+    {"criterion": "正式Client接入、Creator、运行、QA由后续独立阶段核验", "result": "NOT_TESTED", "evidence": "KNOWN_LIMITATIONS.md；本阶段未修改Client、Prefab或Scene，未宣称正式QA通过。"}
+  ],
+  "assumptions": ["本VFX输出loop准确继承确认样张；正式Client情绪播放合同迁移由Master组织。", "foot是固定逻辑地面锚点，visualFoot只为动作位移解释。"],
+  "risks": ["具体PNG尚未用户Gate2批准。", "happy03独立帽上缘超主体画布4.81px，Client须允许独立配件越界可见，补充1:1完整重组已提供。", "离线localAffine、纹理复用与40/30MiB预算须后续Creator实证；当前不算运行通过。", "跨刷新sad05重采样有1个颜色通道差1，不能承诺跨GPU逐字节一致。"],
+  "status": "READY_FOR_REVIEW"
+}

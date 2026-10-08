@@ -1,0 +1,125 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "owner": "client",
+  "summary": "U02 v0.3-R2客户端接入及浏览器检查完成，Creator构建、40帧/160挂点、40组合、循环与U01/U03鼠标回归均留证；Art/Tech/UI同版实现评审已批准。正式QA最终报告、用户审批、60秒×3正式性能、实触和目标设备验证仍未完成。",
+  "artifacts": [
+    "apps/client/assets/labs/u02/tourist_adapter.ts",
+    "apps/client/assets/labs/u02/tourist_view.ts",
+    "apps/client/assets/units/ghost-customer/data/ug_ghost_01_asset_map.json",
+    "apps/client/assets/units/ghost-customer/frames/ug_ghost_01_frame_manifest.json",
+    "apps/client/assets/units/ghost-customer/data/ug_ghost_01_mounts.json",
+    "apps/client/assets/units/ghost-customer/UG_GHOST_01.prefab",
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/settings/v2/packages/engine.json",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/CHANGE_IMPACT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/RESOURCE_AND_FRAME_AUDIT.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/WEB_RUNTIME_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/U01_REGRESSION_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/creator-environment-diagnostic.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/DELIVERABLE.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/CLIENT_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/creator-import-library-audit.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/BUILD_MANIFEST.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/RUNTIME_HARNESS_MANIFEST.json",
+    "apps/client/build/u02-integration-v03-web-mobile/audit.html",
+    "apps/client/build/u02-integration-v03-web-mobile/audit-harness.js",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u02-walk-390x844.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u02-happy-equipped-390x844.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u02-sad-equipped-left-390x844.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u02-sad-short-390x667.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u01-reset-390x667.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/u03-shop06-390x667.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/R2_PREBUILD_AUDIT.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/creator-build-config.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/UnitSampleGallery.before-caption-removal.ts",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/run-admin-build.ps1",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/launch-uac.ps1",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/R2_BUILD_AND_VALIDATION.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/BUILD_MANIFEST.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/creator-import-library-audit.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/RUNTIME_HARNESS_MANIFEST.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/http-server.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/runtime-full-equipped-390x844.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/runtime-full-coverage-390x667.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/runtime-40-combinations.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/runtime-reset-390x667.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/runtime-reenter-390x667.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/browser-console-r2-window.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/happy-cycle-left-390x667.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/happy-cycle-left-390x844.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/happy-cycle-right-390x667.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/happy-cycle-right-390x844.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/user-preview-u02-r2.jpg",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/FINAL_DOCUMENT_SHA256.json",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/ART_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/TECH_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/UI_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/QA_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/MASTER_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/history/pre-r2-master-review-20261009/MASTER_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/U02_ONLY_STATUS_SNAPSHOT.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只消费 Gate2 USER_APPROVED 的 v0.2 原字节资源，四动作各10帧且逐帧清单、挂点、哈希一致",
+      "result": "PASS",
+      "evidence": "RESOURCE_AND_FRAME_AUDIT.json 与 evidence/audit-v0.3-static.mjs 复核 40 个来源/运行帧，40 个挂点记录，PNG 原字节哈希和 5,793,640 bytes 总量一致。"
+    },
+    {
+      "criterion": "walk/run 同姿态帧且 run 两倍速，happy/sad loop；逐帧 foot 与四类挂点正确",
+      "result": "PASS",
+      "evidence": "静态160个localAffine矩阵最大重建误差4.44e-16；Creator R2 Web运行40/40帧、160/160矩阵有效、loop回绕已观察，详见WEB_RUNTIME_RECORD.md与retry-20261009-r2/runtime-full-coverage-390x667.json。"
+    },
+    {
+      "criterion": "帽、眼镜、手环保持独立附件，happy03 帽顶不被裁切",
+      "result": "PASS",
+      "evidence": "R2双视口happy-cycle左右图、40组合/全帧矩阵与Art/UI同版R2复核确认舞台caption移除后页面保留标题/状态/控件/居中游客和配件效果；精确happy03帧单独截图未采集但非当前阻塞。"
+    },
+    {
+      "criterion": "U02 只居中一名游客，Scene/Prefab UUID 稳定并保留 U01 与当前 U03 六店",
+      "result": "PASS",
+      "evidence": "Scene 静态链接检查 STATIC_PASS；40 个 body SpriteFrame 引用、4 个附件引用、6 个 U03 店铺 Prefab 引用齐全；U02/U01 Prefab UUID 保留。仅 touristBodyFrames 字段改变。"
+    },
+    {
+      "criterion": "Creator 3.8.8 AssetDB 导入后回读主体帧和独立配件真实 UUID/Library 全画布属性",
+      "result": "PASS",
+      "evidence": "evidence/creator-import-library-audit.json：40主体帧+4附件，44项 UUID/Library PNG SHA/全画布检查全部通过。"
+    },
+    {
+      "criterion": "Creator 3.8.8 Web-Mobile 构建及输出身份清单",
+      "result": "PASS",
+      "evidence": "R2独立构建由Creator3.8.8管理员token=true会话完成：147 files/20,421,377 bytes；Build Task FINISHED；SHA-256逐文件清单与日志在evidence/retry-20261009-r2/BUILD_MANIFEST.json。Creator父进程ExitCode null，日志记录Build Assets success和Finished；build-script SIGTERM单独留痕。R1原147 files哈希仍0 mismatch，R2 Library 44/44回读通过。"
+    },
+    {
+      "criterion": "v0.3 Web 浏览器运行及动作/附件/happy03视觉检查",
+      "result": "PASS",
+      "evidence": "R2同版浏览器全帧40/40、160/160矩阵、40/40组合、循环回绕和人工控制操作证据见retry-20261009-r2运行JSON/JPG；R2 Console时间窗0 error/warn。该结论限Codex IAB模拟视口与鼠标。"
+    },
+    {
+      "criterion": "当前 v0.3 构建中验证 U01 回归、循环边界、挂点视觉和性能",
+      "result": "NOT_TESTED",
+      "evidence": "U01的initial/zoom-drag/reset、U03六店和动作循环/挂点浏览器回归已由Client在鼠标模拟视口记录，详见U01_REGRESSION_RECORD.md；该验收项同时含正式性能要求，60秒×3、实触与目标设备尚未测试，故整体不标PASS。"
+    },
+    {
+      "criterion": "Client、Art、Tech、UI、QA、Master 同版 Review 与用户审批",
+      "result": "NOT_TESTED",
+      "evidence": "Client自评与Art/Tech/UI同版实现评审已批准，QA仅批准实现准备/证据范围。正式QA TEST_REPORT、用户审批和Master最终接受未完成。"
+    }
+  ],
+  "assumptions": [
+    "Creator 3.8.8 AssetDB/Library UUID已回读通过，R2 Web-Mobile场景已在Codex IAB实际运行；测试结论限鼠标模拟视口。",
+    "U02 v0.3 的当前 Scene 工作基线为接入前 SHA da43667ff3760b63d4cf7a193a48be6536bcdc4f646cd05336e7e7c937077c72，属于已含 U03 六店内容的当前 HEAD。",
+    "Master回报的IAB验证为人工CUA鼠标输入；未据此推断真实触摸屏手势通过。"
+  ],
+  "risks": [
+    "正式60秒×3性能轮次未执行；当前约10秒浏览器采样不构成正式性能PASS。",
+    "真实触屏设备、目标移动设备与发布环境未验证；CUA鼠标不能代替实触。",
+    "happy03精确帧专门截图未单独采集；R2双视口循环图/组合运行图和Art/UI同版批准支持当前修订验收。",
+    "正式QA TEST_REPORT、用户对v0.3交付的审批和Master最终接受仍未完成；不可将实现准备审核或Art/UI/Tech批准写成QA/用户批准。",
+    "browser-console.json保留R2启动前MutationObserver历史错误；独立R2时间窗过滤记录为0 error/warn，来源与窗口说明见browser-console-r2-window.json。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

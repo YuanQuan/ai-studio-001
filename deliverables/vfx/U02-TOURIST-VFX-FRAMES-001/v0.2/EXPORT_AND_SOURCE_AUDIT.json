@@ -1,0 +1,860 @@
+{
+  "batch": "U02-VFX-A",
+  "version": "v0.2",
+  "createdAt": "2026-10-08T14:40:03.428Z",
+  "sourcePreflight": "SOURCE_PREFLIGHT.json",
+  "sourceLayerCount": 15,
+  "protectedFileCount": 773,
+  "changedProtectedFiles": [],
+  "immutableSources": "PASS",
+  "canvasAndAlpha": "PASS",
+  "clippedFrameCount": 0,
+  "walkRunSamePoseBytes": "PASS",
+  "samePoseCount": 10,
+  "bodyFrameCount": 40,
+  "uniquePixelPoses": 30,
+  "totalPngBytes": 5793640,
+  "rawRgbaBytes": 41943040,
+  "rawRgbaBytesWithWalkRunReuse": 31457280,
+  "renderer": {
+    "createdAt": "2026-10-08T14:38:26.764Z",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+    "webglVersion": "WebGL 1.0 (OpenGL ES 2.0 Chromium)",
+    "renderer": "WebKit WebGL",
+    "unmaskedRenderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002820) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "happyPoses": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        9,
+        -0.085,
+        0,
+        0.12
+      ],
+      [
+        -8,
+        0.065,
+        0,
+        0.55
+      ],
+      [
+        -34,
+        0.055,
+        0,
+        0.9
+      ],
+      [
+        -42,
+        0.015,
+        0,
+        1
+      ],
+      [
+        -37,
+        0,
+        0,
+        0.94
+      ],
+      [
+        -18,
+        0.035,
+        0,
+        0.58
+      ],
+      [
+        7,
+        -0.07,
+        0,
+        0.15
+      ],
+      [
+        2,
+        -0.018,
+        0,
+        0.04
+      ],
+      [
+        1,
+        0.006,
+        0,
+        0.02
+      ]
+    ],
+    "sadPoses": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0.6000000000000001,
+        0,
+        0.2,
+        0
+      ],
+      [
+        1.6500000000000001,
+        0,
+        0.55,
+        0
+      ],
+      [
+        2.55,
+        0,
+        0.85,
+        0
+      ],
+      [
+        3,
+        0,
+        1,
+        0
+      ],
+      [
+        3.06,
+        0,
+        1.02,
+        0
+      ],
+      [
+        2.94,
+        0,
+        0.98,
+        0
+      ],
+      [
+        2.58,
+        0,
+        0.86,
+        0
+      ],
+      [
+        1.59,
+        0,
+        0.53,
+        0
+      ],
+      [
+        0.44999999999999996,
+        0,
+        0.15,
+        0
+      ]
+    ],
+    "walkTimes": [
+      0,
+      0.13333333333333333,
+      0.26666666666666666,
+      0.39999999999999997,
+      0.5333333333333333,
+      0.6666666666666666,
+      0.7999999999999999,
+      0.9333333333333332,
+      1.0666666666666667,
+      1.2
+    ],
+    "source": "unchanged prototype shaders; export original 512px canvases",
+    "sadFaceComposite": "lighter: complementary premultiplied coverage addition; restore source-over after face"
+  },
+  "sourceFiles": [
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/walk_00/layer_sources/00_body_core.png",
+      "sha256": "d613255dc4ee0f7e28c3ed86359956cc9e444525b95c3f6005181dbe3f90a1dc"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/walk_00/layer_sources/01_tail_cutout.png",
+      "sha256": "ae6cf4930dee7aa40c3532bbc58474cb81234ae0e18587845f1c506d577a6b22"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/walk_00/layer_sources/02_hand_near_cutout.png",
+      "sha256": "56d886a293b1288688bdc4364216c5e8f57849de6fa46782bb6d50109f7de3d5"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/walk_00/layer_sources/03_hand_far_cutout.png",
+      "sha256": "9976221677d8989ac281f715b46af9e557844e65d0b2e4c34a7e1a4ad49bd89d"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/walk_00/layer_sources/04_face_cutout.png",
+      "sha256": "1d29eb374e81f5abf6a50e38a720c452cce670b72075e02b3a2d8872a515930c"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/happy_00/layer_sources/00_body_core.png",
+      "sha256": "0f763fa76a575a9d9c79f2973159ca864fa8ec4df5e442a2fcd7b95c66179e80"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/happy_00/layer_sources/01_tail_cutout.png",
+      "sha256": "78cc083ac3272cee00907a47c75a42b76a20f662dcc0cb11d725851539fadd27"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/happy_00/layer_sources/02_hand_far_cutout.png",
+      "sha256": "d8ae3814d147e1b30e799be63278e290b24435993b6f0a9672bcab3e7dc88dcd"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/happy_00/layer_sources/03_hand_near_cutout.png",
+      "sha256": "8516c94bdd405832b2390de039cb1b36579e7769592463a0adb03c32ff466a16"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/happy_00/layer_sources/04_face_cutout.png",
+      "sha256": "3f57bacb07806286819791731d4a8d95ba1e5ffac5cdf08fff1fae6b0503436a"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/sad_00/layer_sources/00_body_core.png",
+      "sha256": "430fc6d5e31f23af83a09c192881d926ac10311b282fdf93c6b19d49bc7fef3a"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/sad_00/layer_sources/01_tail_cutout.png",
+      "sha256": "169cd017ee5bcd89fe77e9fed2bc1018e0ebd05d25a55e0ced386f6cf7209197"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/sad_00/layer_sources/02_hand_far_cutout.png",
+      "sha256": "dd67a075b8c537c84c5c49d9c3ce45854828a14d3ddb5991b807e789ac9f7e90"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/sad_00/layer_sources/03_hand_near_cutout.png",
+      "sha256": "d3652fc84f124ed49f7efcc9456692e363017abb10bc4ab63bca783acb8dbc49"
+    },
+    {
+      "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/source/psd_work/sad_00/layer_sources/04_face_cutout.png",
+      "sha256": "d5472101e17aa9ae71d8dd8c0bc6862df2542f146cf2a4acf8d463f8e516a6f7"
+    }
+  ],
+  "prototypeFiles": [
+    {
+      "file": "deliverables/vfx/U02-TOURIST-MOTION-PROTOTYPE-001/motion.js",
+      "sha256": "d32d75c595c51f697f833c964b19fb4f7fb94af1030cdcf8b90f3aa2ea925a73"
+    },
+    {
+      "file": "deliverables/vfx/U02-TOURIST-MOTION-PROTOTYPE-001/emotions.js",
+      "sha256": "77513a9fffa2761064a99e5320b309ac77b9e523a8b20fd06fe074cba677c392"
+    },
+    {
+      "file": "deliverables/vfx/U02-TOURIST-MOTION-PROTOTYPE-001/motion-comparison.gif",
+      "sha256": "955861d7ec98da701ed9d7aa5167d1562b9180a5f3c3057410a48264292896ce"
+    },
+    {
+      "file": "deliverables/vfx/U02-TOURIST-MOTION-PROTOTYPE-001/emotions-comparison.gif",
+      "sha256": "e6c25603a4d35e721d742561266627d4ec0517cb7ddd3e321ad382f464526e8d"
+    }
+  ],
+  "mountMethod": "Shader顶点变换与三角重心插值，非沿用旧动态挂点",
+  "mountAlphaMin": 252,
+  "sadFace": {
+    "sourceLayer": "sad_00/layer_sources/04_face_cutout.png",
+    "transform": "R(.22*bow)*(p-(285,290))+(285,290)+(8,25)*bow+(0,3*bow)",
+    "determinant": 1,
+    "nonrigidDeformation": false,
+    "check": "刚体旋转矩阵正交、det=1；沿用用户确认R7原Shader。采样抗锯齿仍可改变边缘像素。",
+    "composite": "lighter: complementary premultiplied coverage addition; restore source-over after face",
+    "boundaryAlphaAllTen": [
+      {
+        "frameId": "UG_GHOST_01_SAD_00",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 281,
+            "y": 180,
+            "alpha": 253
+          },
+          {
+            "x": 281,
+            "y": 210,
+            "alpha": 253
+          },
+          {
+            "x": 281,
+            "y": 240,
+            "alpha": 253
+          },
+          {
+            "x": 300,
+            "y": 163,
+            "alpha": 253
+          },
+          {
+            "x": 340,
+            "y": 163,
+            "alpha": 253
+          },
+          {
+            "x": 370,
+            "y": 163,
+            "alpha": 253
+          },
+          {
+            "x": 300,
+            "y": 268,
+            "alpha": 253
+          },
+          {
+            "x": 320,
+            "y": 268,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_01",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 287,
+            "y": 186,
+            "alpha": 253
+          },
+          {
+            "x": 286,
+            "y": 215,
+            "alpha": 253
+          },
+          {
+            "x": 284,
+            "y": 245,
+            "alpha": 253
+          },
+          {
+            "x": 307,
+            "y": 169,
+            "alpha": 253
+          },
+          {
+            "x": 347,
+            "y": 171,
+            "alpha": 253
+          },
+          {
+            "x": 377,
+            "y": 172,
+            "alpha": 253
+          },
+          {
+            "x": 303,
+            "y": 274,
+            "alpha": 253
+          },
+          {
+            "x": 323,
+            "y": 275,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_02",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 298,
+            "y": 196,
+            "alpha": 253
+          },
+          {
+            "x": 295,
+            "y": 225,
+            "alpha": 253
+          },
+          {
+            "x": 291,
+            "y": 255,
+            "alpha": 253
+          },
+          {
+            "x": 320,
+            "y": 181,
+            "alpha": 253
+          },
+          {
+            "x": 359,
+            "y": 185,
+            "alpha": 253
+          },
+          {
+            "x": 389,
+            "y": 189,
+            "alpha": 253
+          },
+          {
+            "x": 307,
+            "y": 285,
+            "alpha": 253
+          },
+          {
+            "x": 327,
+            "y": 287,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_03",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 308,
+            "y": 205,
+            "alpha": 253
+          },
+          {
+            "x": 302,
+            "y": 234,
+            "alpha": 253
+          },
+          {
+            "x": 297,
+            "y": 264,
+            "alpha": 253
+          },
+          {
+            "x": 330,
+            "y": 191,
+            "alpha": 253
+          },
+          {
+            "x": 370,
+            "y": 199,
+            "alpha": 253
+          },
+          {
+            "x": 399,
+            "y": 204,
+            "alpha": 253
+          },
+          {
+            "x": 311,
+            "y": 294,
+            "alpha": 253
+          },
+          {
+            "x": 330,
+            "y": 298,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_04",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 313,
+            "y": 210,
+            "alpha": 253
+          },
+          {
+            "x": 306,
+            "y": 239,
+            "alpha": 253
+          },
+          {
+            "x": 300,
+            "y": 268,
+            "alpha": 253
+          },
+          {
+            "x": 335,
+            "y": 197,
+            "alpha": 253
+          },
+          {
+            "x": 374,
+            "y": 206,
+            "alpha": 253
+          },
+          {
+            "x": 404,
+            "y": 212,
+            "alpha": 253
+          },
+          {
+            "x": 313,
+            "y": 299,
+            "alpha": 253
+          },
+          {
+            "x": 332,
+            "y": 304,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_05",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 313,
+            "y": 210,
+            "alpha": 253
+          },
+          {
+            "x": 307,
+            "y": 240,
+            "alpha": 253
+          },
+          {
+            "x": 300,
+            "y": 269,
+            "alpha": 253
+          },
+          {
+            "x": 336,
+            "y": 198,
+            "alpha": 253
+          },
+          {
+            "x": 375,
+            "y": 206,
+            "alpha": 253
+          },
+          {
+            "x": 404,
+            "y": 213,
+            "alpha": 253
+          },
+          {
+            "x": 313,
+            "y": 300,
+            "alpha": 253
+          },
+          {
+            "x": 332,
+            "y": 304,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_06",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 312,
+            "y": 209,
+            "alpha": 253
+          },
+          {
+            "x": 306,
+            "y": 238,
+            "alpha": 253
+          },
+          {
+            "x": 299,
+            "y": 268,
+            "alpha": 253
+          },
+          {
+            "x": 335,
+            "y": 196,
+            "alpha": 253
+          },
+          {
+            "x": 374,
+            "y": 205,
+            "alpha": 253
+          },
+          {
+            "x": 403,
+            "y": 211,
+            "alpha": 253
+          },
+          {
+            "x": 312,
+            "y": 299,
+            "alpha": 253
+          },
+          {
+            "x": 332,
+            "y": 303,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_07",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 308,
+            "y": 205,
+            "alpha": 253
+          },
+          {
+            "x": 303,
+            "y": 235,
+            "alpha": 253
+          },
+          {
+            "x": 297,
+            "y": 264,
+            "alpha": 253
+          },
+          {
+            "x": 331,
+            "y": 192,
+            "alpha": 253
+          },
+          {
+            "x": 370,
+            "y": 199,
+            "alpha": 253
+          },
+          {
+            "x": 399,
+            "y": 205,
+            "alpha": 253
+          },
+          {
+            "x": 311,
+            "y": 295,
+            "alpha": 253
+          },
+          {
+            "x": 330,
+            "y": 299,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_08",
+        "minInteriorBoundaryAlpha": 253,
+        "samples": [
+          {
+            "x": 298,
+            "y": 195,
+            "alpha": 253
+          },
+          {
+            "x": 294,
+            "y": 225,
+            "alpha": 253
+          },
+          {
+            "x": 291,
+            "y": 255,
+            "alpha": 253
+          },
+          {
+            "x": 319,
+            "y": 180,
+            "alpha": 253
+          },
+          {
+            "x": 359,
+            "y": 185,
+            "alpha": 253
+          },
+          {
+            "x": 388,
+            "y": 188,
+            "alpha": 253
+          },
+          {
+            "x": 307,
+            "y": 284,
+            "alpha": 253
+          },
+          {
+            "x": 327,
+            "y": 287,
+            "alpha": 253
+          }
+        ]
+      },
+      {
+        "frameId": "UG_GHOST_01_SAD_09",
+        "minInteriorBoundaryAlpha": 252,
+        "samples": [
+          {
+            "x": 285,
+            "y": 184,
+            "alpha": 252
+          },
+          {
+            "x": 284,
+            "y": 214,
+            "alpha": 252
+          },
+          {
+            "x": 283,
+            "y": 244,
+            "alpha": 252
+          },
+          {
+            "x": 305,
+            "y": 167,
+            "alpha": 253
+          },
+          {
+            "x": 345,
+            "y": 169,
+            "alpha": 253
+          },
+          {
+            "x": 375,
+            "y": 170,
+            "alpha": 253
+          },
+          {
+            "x": 302,
+            "y": 272,
+            "alpha": 253
+          },
+          {
+            "x": 322,
+            "y": 273,
+            "alpha": 253
+          }
+        ]
+      }
+    ],
+    "grayContactSheet": "preview/sad-all-gray.png"
+  },
+  "cycles": {
+    "walk": {
+      "frameCount": 10,
+      "playback": "loop",
+      "totalDurationMs": 1333.3333333333335,
+      "lastFrameHold": false,
+      "loopTransition": {
+        "from": 9,
+        "to": 0,
+        "duplicatedEndpoint": false,
+        "changedPixels": 65990,
+        "meanAbsoluteChannelDifference": 2.075237274169922
+      }
+    },
+    "run": {
+      "frameCount": 10,
+      "playback": "loop",
+      "totalDurationMs": 666.6666666666667,
+      "lastFrameHold": false,
+      "loopTransition": {
+        "from": 9,
+        "to": 0,
+        "duplicatedEndpoint": false,
+        "changedPixels": 65990,
+        "meanAbsoluteChannelDifference": 2.075237274169922
+      }
+    },
+    "happy": {
+      "frameCount": 10,
+      "playback": "loop",
+      "totalDurationMs": 1400,
+      "lastFrameHold": false,
+      "loopTransition": {
+        "from": 9,
+        "to": 0,
+        "duplicatedEndpoint": false,
+        "changedPixels": 46310,
+        "meanAbsoluteChannelDifference": 1.1561279296875
+      }
+    },
+    "sad": {
+      "frameCount": 10,
+      "playback": "loop",
+      "totalDurationMs": 2800,
+      "lastFrameHold": false,
+      "loopTransition": {
+        "from": 9,
+        "to": 0,
+        "duplicatedEndpoint": false,
+        "changedPixels": 67073,
+        "meanAbsoluteChannelDifference": 3.7469587326049805
+      }
+    }
+  },
+  "presign": "PRODUCTION_PRESIGN.json",
+  "gate2": "PENDING_USER_REVIEW",
+  "clientImport": "NOT_TESTED",
+  "prefabScene": "NOT_TESTED",
+  "runtime": "NOT_TESTED",
+  "formalQa": "NOT_TESTED",
+  "toolFreezeHashRecheck": "PASS",
+  "frozenTools": [
+    {
+      "file": "PRODUCTION_PLAN.md",
+      "sha256": "128300922752a95a686cc7d0254929ff9d55fc70c6f52a65248934163eb83236"
+    },
+    {
+      "file": "VFX_SPEC.md",
+      "sha256": "0762f674597c8a4b993df4e040d80af5fc9a672c1f45436233f3df4674a4e9bc"
+    },
+    {
+      "file": "SOURCE_PREFLIGHT.json",
+      "sha256": "757beb07a60e1ff214eb53305403368e0549d9357cffdbbddd182874a2bee0d0"
+    },
+    {
+      "file": "serve-export.mjs",
+      "sha256": "50d3f62c88b24474833a12e102e242ed4473ae2369d9210871cc7bde21bec1d3"
+    },
+    {
+      "file": "export-browser.js",
+      "sha256": "8ef755c80c18c184b7ff190667e168bf4bf53ef17cc3f717c51e212fbff92d61"
+    },
+    {
+      "file": "finalize-export.mjs",
+      "sha256": "fbb9facef554aa6a12940213593955ef4f44cdb2a372a5d0c068de1426e0d683"
+    },
+    {
+      "file": "diagnostic-browser.js",
+      "sha256": "d2ab48dd1a6d14e0a27fefbbd0ecdbb924806eec328c9ac9ad3fb7ca05f48d7e"
+    },
+    {
+      "file": "review.html",
+      "sha256": "8b5bbf6bc3b3ca6275906eb9bdec06351f5db29c3694f9c5741e87401de320b5"
+    },
+    {
+      "file": "review.js",
+      "sha256": "65658a3b6124be6a4077e49a5a335f8f4c79fd6368171d877b96cfdf8b698d28"
+    }
+  ],
+  "walkRunSameMountsAndFoot": "PASS",
+  "representativeCheck": "REPRESENTATIVE_CHECK.json",
+  "reproducibility": {
+    "differences": [
+      {
+        "x": 221,
+        "y": 287,
+        "channel": 1,
+        "actual": 224,
+        "diagnostic": 225
+      }
+    ],
+    "maxChannelDifference": 1,
+    "samples": [
+      {
+        "x": 317,
+        "y": 194,
+        "actualAlpha": 253
+      },
+      {
+        "x": 320,
+        "y": 194,
+        "actualAlpha": 253
+      },
+      {
+        "x": 316,
+        "y": 197,
+        "actualAlpha": 253
+      }
+    ],
+    "note": "刷新浏览器后的独立WebGL/Canvas导出与诊断只有一个通道差1；如实记录，未声称跨会话逐字节相同。"
+  },
+  "visualOwnerCheck": "PASS",
+  "visualFindings": [
+    "亲自查看40帧接触表：主体身份、配色、四动作形态保持，walk/run同一姿态，happy原地跃起，sad五官保持。",
+    "亲自查看512px同尺度00/04/09独立配件重组和代表黑灰白左右图：帽/眼镜/手环独立，手环前后片保持，sad矩形暗缝已消失。",
+    "亲自查看sad十帧灰底：无脸矩形暗缝，无新增亮边或五官拉扯；八处内边界采样全部alpha≥252。"
+  ],
+  "accessoryBoundsAudit": "ACCESSORY_BOUNDS_AUDIT.json",
+  "knownLimitations": [
+    "happy03独立帽保守bbox上缘y=-4.81px，独立Sprite完整资源未裁切；512审核canvas会裁约5px帽顶。补充preview/happy03-accessory-overflow.png保留16px上下余量并维持1:1尺度。Client需确保独立配件不受主体画布裁切。",
+    "独立WebGL/Canvas跨刷新重采样诊断与正式sad05有1个通道差1，不能声称跨GPU/会话逐字节可复现。",
+    "40身份PNG展开40MiB，walk/run实际复用需Creator证据后才可按30MiB估算。"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "observedAt": "2026-10-08T23:18:36+08:00",
+  "creatorVersion": "3.8.8",
+  "attempts": [
+    {
+      "mode": "sandboxed CLI",
+      "result": "CreateFile access denied; no build output"
+    },
+    {
+      "mode": "require_escalated CLI",
+      "result": "TIMEOUT; engine cache EPERM; no build output"
+    }
+  ],
+  "blockingFile": {
+    "path": "C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine\\bin\\.cache\\dev\\editor\\import-map.json",
+    "exists": true,
+    "bytes": 8132,
+    "lastWrite": "2026-10-07T15:48:30.2205929+08:00",
+    "owner": "BUILTIN\\Administrators",
+    "acl": [
+      "NT AUTHORITY\\SYSTEM:FullControl:Allow:Inherited",
+      "BUILTIN\\Administrators:FullControl:Allow:Inherited",
+      "BUILTIN\\Users:ReadAndExecute,Synchronize:Allow:Inherited"
+    ]
+  },
+  "processIdentity": {
+    "account": "SK-20241216XTKI\\admin",
+    "administratorRoleActive": false
+  },
+  "evidence": {
+    "cliResult": "evidence/creator-cli-result.json",
+    "stdout": "evidence/creator-cli-stdout.log",
+    "stderr": "evidence/creator-cli-stderr.log",
+    "config": "evidence/creator-build-config.json",
+    "requestedOutput": "apps/client/build/u02-integration-v03-web-mobile",
+    "actualOutputCreated": false
+  },
+  "actionTaken": "Read-only ACL inspection only; installation directory ACL not modified.",
+  "nextStep": "IAB actual runtime/visual and U01 regression checks remain pending.",
+  "recovery": {
+    "observedAt": "2026-10-08T23:50:39+08:00",
+    "account": "SK-20241216XTKI\\\\admin",
+    "administratorRoleActive": true,
+    "creatorPid": 34196,
+    "creatorVersion": "3.8.8",
+    "assetDbImport": "PASS",
+    "buildTask": "FINISHED",
+    "buildManifest": "evidence/retry-20261008/BUILD_MANIFEST.json",
+    "libraryAudit": "evidence/creator-import-library-audit.json",
+    "notes": "The initial EPERM was resolved by the user-authorized elevated Windows administrator session. No installation ACL changes were made."
+  }
+}

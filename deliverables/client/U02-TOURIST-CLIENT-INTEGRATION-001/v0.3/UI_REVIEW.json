@@ -1,0 +1,28 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次 UI 复审仅绑定 evidence/retry-20261009-r2/BUILD_MANIFEST.json 的 U02-TOURIST-CLIENT-INTEGRATION-001-v0.3-R2 Creator 3.8.8 Web-Mobile 构建。R2_BUILD_AND_VALIDATION.json 记录仅移除 TouristStage 内辅助「游客展示区」caption，源码与包内均无该文案，Scene 未因本修正改动；只读审核 sidecar 复核原构建 147/147 文件未变。先前 R1 截图与40组合记录不作为 R2 通过证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立查看 R2 happy-cycle-right-390x844、happy-cycle-left-390x844、happy-cycle-right-390x667、happy-cycle-left-390x667 及 combo-happy-right-all/left-all 截图：帽顶与舞台顶部之间留有可见间隔，原 caption 重叠已消失；一名游客保持在独立展示区，顶栏 U02 标题、返回/重置、状态条、四动作、三装扮和左右控件均保留。短屏 390×667 画面中方向控件仍可见，未见游客与控件重叠。"
+    },
+    {
+      "severity": "INFO",
+      "message": "R2 runtime-40-combinations.json 在 390×667 记录 4动作×2朝向×5装扮组合共40行，40行 pass；runtime-full-coverage-390x667.json 记录40/40动作帧和四动作09→00回绕（walk 38、run 8、happy 12、sad 4）。R2 截图状态条按实际动作、朝向和帧显示「播放中」，选中控件以圆点提示，装扮行显示生效件 ID 或「无」，与新版 happy/sad loop 合同一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "R2 runtime-reset-390x667.json 记录重置后 action=null、phase=initial、facing=right、三装扮均 null；同版 U01 initial/zoom-drag/reset 及 U03 六店截图均存在。此处确认的是本构建 UI 路由和所见画面的限定回归，不代替各单元完整 QA。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本 UI Review 是实现准备评审，不是正式 QA 终验。R2 操作输入为 CUA 鼠标；真实手指触控、touch/mouse 同手势去重、短屏滚动上下边界和目标间距、设备安全区及高 DPR 仍未由本评审验证。逐帧挂件边界、性能和正式 U01/U03 回归由 Art/Tech/QA 按各自门禁确认。"
+    }
+  ],
+  "next_action": "UI 对 v0.3-R2 当前构建的单游客布局、移除 caption 后的 happy 戴帽空间、状态反馈及鼠标操作范围 APPROVED。Producer 汇总同版其他专业 Review；Client/QA 后续补真实触控、设备适配与正式回归证据，未测项保持 NOT_TESTED。"
+}

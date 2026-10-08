@@ -1,0 +1,69 @@
+{
+  "id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "title": "U02 游客已批 VFX v0.2 四动作 40 帧正式替换接入",
+  "type": "integration",
+  "owner": "client",
+  "parent": null,
+  "objective": "以用户 Gate2 已批准的 U02-VFX-A v0.2 四组各10帧正式替换当前 U02 20帧资源，保留独立帽/眼镜/手环挂载、U01 与当前 U03 场景内容；完成 Creator 导入、运行检查、同版评审与用户审批。",
+  "inputs": [
+    "tasks/U02-TOURIST-VFX-FRAMES-001/ARTIFACT_APPROVAL.json（v0.2 USER_APPROVED）",
+    "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/frames/FRAME_MANIFEST.json、mounts/FRAME_MOUNT_MANIFEST.json、40张透明PNG、preview/contact_sheet.png、preview/recomposition.png、KNOWN_LIMITATIONS.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/CHANGE_IMPACT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/ 历史R5实现与运行证据（不继承审批）",
+    "已批准的 U02 PRD、技术设计、UI 规格、Client Brief/Logic、QA Plan 与项目资源登记",
+    "当前 apps/client/assets/UnitSamples.scene 的 U03 六店内容为现行基线，接入时保留"
+  ],
+  "deliverables": [
+    "apps/client/assets/labs/u02/tourist_adapter.ts",
+    "apps/client/assets/labs/u02/tourist_view.ts",
+    "apps/client/assets/units/ghost-customer/UG_GHOST_01.prefab",
+    "apps/client/assets/units/ghost-customer/data/ug_ghost_01_asset_map.json",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/UnitSamples.scene",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/RESOURCE_AND_FRAME_AUDIT.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/WEB_RUNTIME_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/U01_REGRESSION_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/DELIVERABLE.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/CLIENT_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/ART_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/TECH_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/UI_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/QA_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/MASTER_REVIEW.json",
+    "tasks/U02-TOURIST-CLIENT-INTEGRATION-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "只消费 Gate2 USER_APPROVED 的 U02 VFX v0.2 原字节资源与逐帧挂点；四动作各10帧、512透明原画布、四十帧哈希/UUID/清单同链且每动作不超过10帧。",
+    "walk/run同一姿态帧且run两倍速；happy/sad按已确认VFX清单loop；动作切换、重置和显示状态与已批产品/技术/UI语义一致。",
+    "帽、眼镜、手环继续独立挂载，逐帧挂点及前后层序、左右镜像正确；happy03帽顶超出主体画布约4.81px时不裁独立配件。",
+    "U02只居中一名游客，保留 U01 与当前 U03 六店场景、Prefab/Scene既有无关引用；不改写旧v0.2/R5审批证据。",
+    "Creator 3.8.8 导入后记录40帧资源UUID、构建身份和真实Web运行；核四动作循环、装扮、左右切换、返回重入及U01回归。未取得的目标设备、真实触控与性能证据如实NOT_TESTED。",
+    "Client、Art、Tech、UI、QA、Master针对同一v0.3实现评审后送用户审批；正式QA执行及TEST_REPORT按适用门禁另行完成。"
+  ],
+  "dependencies": [
+    "U02-TOURIST-VFX-FRAMES-001",
+    "U02-TOURIST-CLIENT-ASSET-001",
+    "U02-TOURIST-CLIENT-LOGIC-001",
+    "U02-LOGIC-TEST-HANDOFF-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-07 Master 预先建立实施 Task Packet；此时 Asset v0.1 已 USER_APPROVED，Logic v0.1 仍 REVIEW/DRAFT，Tech/UI/QA 未通过，故保持 BACKLOG，不记开工、不修改场景或正式接线。",
+    "2026-10-07 Master 按用户当前测试移交指令修订输入为 CP v0.1 与 Logic v0.2，两者目前均待精确 Artifact 用户审批；保持 BACKLOG。",
+    "产物文件名为本 Task 的 Required 路径；若 Creator 3.8.8 实际 Prefab/脚本结构需调整，应先形成 Task 修订与角色评审，不以静默更名或缺文件交付。",
+    "2026-10-07 12:55:37 +08:00 Producer 核 Asset v0.1、CP v0.1、Logic v0.2 三精确上游 Artifact 均 USER_APPROVED/DONE，正式接线依赖齐，由 BACKLOG 解锁 READY。此时尚无本 Task Owner Required 实产，不记 IN_PROGRESS；Master 须立即启动 Client Owner。",
+    "2026-10-07 12:57:40 +08:00 Producer 核首份 Required apps/client/assets/labs/u02/tourist_adapter.ts 实存 6390 字节、文件创建时间 12:57:19 +08:00，正文含正式帧/挂点/挂件合同和 TouristView 接口引用；Client 正继续 view/Prefab/Scene/Gallery，Task READY→IN_PROGRESS。当前文件只是制作中代码，不判构建/运行/视觉/QA PASS。",
+    "2026-10-07 13:22:46 +08:00 Client Owner 已提交正式源码/Prefab/Scene、R4 构建和运行记录、实施/资源/U01 文书、DELIVERABLE 与 CLIENT_REVIEW=APPROVED；Producer 核当前 13/18 Required 实存，缺 Art/Tech/UI/QA/Master 五专业 Review。Deliverable/Client Review Schema PASS，索引14项唯一，R4构建83/83哈希匹配。Task IN_PROGRESS→REVIEW，Approval DRAFT；当前没有同版五方审或用户批准，完整触控/全帧/40组/性能/最终QA仍 NOT_TESTED。",
+    "2026-10-07 13:27:30 +08:00 UI 对 v0.1/R4 的 UI_REVIEW.json=CHANGES_REQUESTED：当前状态条缺 snapshot.phase 的静止/播放中/保持中反馈，已穿戴槽缺具体件名。Producer 保留 R4 实施与 UI 退回历史，Task REVIEW→REVISION、Approval DRAFT；Client 已受派最小文案修正及 R5 新构建。Tech/QA 已 APPROVED 仅是旧 v0.1/R4 证据，不能移作 R5 修订后的同版批准；正式 QA Exec 继续 BACKLOG。",
+    "2026-10-07 Master 将 11 条当前交付与 Review Required 路径从 v0.1 修为 v0.2；六条源码/资源登记及 Task Approval 路径保持原定。v0.1/R4 及 UI 退回仍为历史，v0.2/R5 须重新完成六方同版 Review 和精确版本用户审批。",
+    "2026-10-07 13:34:42 +08:00 Client 已提交 v0.2/R5、CLIENT_REVIEW=APPROVED；Art/Tech/UI 同版 Review 亦 APPROVED，Art 只认静态身份与结构。Producer 核 18/18 Required 路径唯一、16/18 实存，缺 QA/MASTER Review；R5构建83/83哈希匹配。Task REVISION→REVIEW，Approval v0.2 DRAFT；v0.1/R4退回与旧审批原样留档，QA Exec 仍 BACKLOG。",
+    "2026-10-07 13:39:54 +08:00 Producer 曾核 v0.2/R5 18/18 Required 及索引、六方 Review 均在；送审登记途中 Tech/Master 随即发现 DELIVERABLE 的 risks[1]、U01 条目和40组条目仍沿用旧 R4/R5 未重跑措辞，与当前 R5 限定记录不一致。尚未向用户呈现本候选；立即维持 Task REVIEW、Approval DRAFT，Client 只修三处文本后由 Tech/QA/Master 重新绑定真正终版 SHA 再决定 USER_REVIEW。原临时哈希 1F38ABB7…5D3BAB 不作为最终审批对象，QA Exec 继续 BACKLOG。",
+    "2026-10-07 13:42:43 +08:00 DELIVERABLE 三处过期文案已修、终版候选 SHA B30B6D22…8DB9C9，六 Review 曾复核；QA 又发现 WEB_RUNTIME_RECORD/U01_REGRESSION_RECORD 的 R5 U01 旧时点叙述与 Master 后续限定 mouse 冒烟冲突。Client 正仅修这两份文书，随后受影响 Review 须补签当前字节；Task 继续 REVIEW、Approval DRAFT，B30…不能单凭索引核验送用户。",
+    "2026-10-07 13:46:20 +08:00 最终跨文书审计：18/18 Required 实存并索引于 DELIVERABLE 25 项唯一清单，Task/Approval/Deliverable 与六份 Review Schema PASS、Client/Art/Tech/UI/QA/Master 同版 APPROVED；DELIVERABLE B30B6D22…8DB9C9、WEB 658CD984…B476AD、U01 5E251F99…89C40F 哈希一致，R5 构建 83/83 文件复算通过。旧 R4 退回保留历史；Task REVIEW→USER_REVIEW、Approval v0.2 USER_REVIEW，用户尚未决定。R5 U01 仅一次限定 mouse 冒烟，完整回归、Art 动态视觉、真实触控、全帧/40组与性能 NOT_TESTED；QA Exec 因本版未 USER_APPROVED 仍 BACKLOG。",
+    "2026-10-08 Master 按用户对 VFX v0.2 具体40帧 Gate2 批准修订当前Task为v0.3；旧v0.2/R5 Task与审批快照留档，不继承其USER_REVIEW或六方评审。Owner实际开始接入后方可转IN_PROGRESS。",
+    "2026-10-09 00:42 +08:00 Producer核v0.3-R2 19/19 Required、六份同版APPROVED Review、更新后DELIVERABLE索引与当前SHA；Task REVIEW→USER_REVIEW。仅为限定实现送审，Approval为USER_REVIEW且decided_at=null，用户尚未批准；正式QA/TEST_REPORT、60秒×3性能、实触与目标设备仍待。旧R1/R5不继承。"
+  ]
+}

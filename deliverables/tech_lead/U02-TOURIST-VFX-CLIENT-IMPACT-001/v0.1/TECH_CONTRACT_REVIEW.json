@@ -1,0 +1,22 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "scope": "对CP-U02-VFX-CLIENT-CONTRACT-20261008和DEC-U02-VFX-CLIENT-20261008的U02技术合同修订作书面兼容复核；允许Client v0.3按该基线实施，不构成实现、Creator、性能或QA通过。",
+  "reviewed": [
+    "project/changes/CP-U02-VFX-CLIENT-CONTRACT-20261008.md",
+    "project/DECISIONS.md#DEC-U02-VFX-CLIENT-20261008",
+    "deliverables/tech_lead/U02-TOURIST-VFX-CLIENT-IMPACT-001/v0.1/TECH_COMPATIBILITY_REVIEW.md",
+    "tasks/U02-TOURIST-CLIENT-INTEGRATION-001/TASK.json",
+    "tasks/U02-TOURIST-VFX-FRAMES-001/ARTIFACT_APPROVAL.json"
+  ],
+  "finding": "修订准确限定U02 VFX v0.2→Client v0.3，明确四动作各10帧、walk/run同姿态双倍速、happy/sad loop、独立配件和逐帧挂点，并明确覆盖旧Tech Design §2独立走跑姿态要求；Product PRD的节奏可辨与UI的循环预留可承接。旧20帧和once_hold保留历史，VFX Gate2不冒充Client/QA批准。当前无额外项目级语义阻塞，Client可按READY Task实施。",
+  "required_implementation_checks": [
+    "Adapter移除20帧与6/6/4/4硬编码，识别或无损映射schemaVersion=2、40帧、durationFractionMs、固定foot、逐帧挂点和批准版本；核旧20文件替换及新增20文件的SHA/UUID与Prefab/Scene引用。",
+    "happy/sad完整loop且UI保持播放中；不能沿用旧保持态断言。walk/run的400/3与200/3ms不得粗暴截断造成周期漂移。",
+    "附件按localAffine或经Art/Tech确认的等效实现逐帧跟随，左右镜像和前后层序一致；happy03帽顶y=-4.81px越主体画布，实际视窗不得裁掉。",
+    "40组状态、四动作全帧/接缝、U01及当前U03保留、Creator Web运行和适用性能分别留证；尚无实测的目标机/触控/性能保持NOT_TESTED。"
+  ],
+  "remaining_governance": "Client、UI、QA等受影响角色仍须对v0.3实际实现与更新后的用例作同版Review，Producer追踪本Task用户审批和后续QA；本技术合同复核只解实施输入，不预判这些门禁。",
+  "client_code_modified": false
+}
