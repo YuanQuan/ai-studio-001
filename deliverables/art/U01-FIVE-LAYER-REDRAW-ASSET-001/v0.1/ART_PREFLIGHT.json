@@ -1,0 +1,16 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "message": "2026-10-08 本机审计未找到指定 bggg-creator-image2psd skill 的 SKILL.md/原版 image2psd.py，也未核验可直接保存完整多图层 PSD 的绘图工具；旧 Windows 路径只在历史文档与脚本引用中存在。详见 TOOLCHAIN_AUDIT.md。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "首图前 Art/Tech 同批次工具与预算预签尚未满足；不生成样张、正式图片、PSD、切片或透明掩膜。3840×1024、五层与 75 MiB 基础展开量仅为已确认方案和估算，不是产物或实测。"
+    }
+  ],
+  "next_action": "Master 协调可核验的项目指定 skill 或真实原生多图层 PSD 路径；Art/Tech 对同一工具、来源、尺寸、层级、预算预案签认后再启动首图。"
+}

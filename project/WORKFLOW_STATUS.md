@@ -1,5 +1,22 @@
 # 工作流状态
 
+Master 最终核验补充：`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/MASTER_BLOCKED_REVIEW.json` 判 BLOCKED，已实看 S01/S02 并确认两张原始图均为 2172×724；指定 bggg skill 已安装且 PSD 组装能力测试通过，当前具体阻塞是内置 imagegen 两次实际输出未达 3840×1024。备用 API/CLI 尚未调用或计费，需用户选择和本机 API key；若选择，下一轮须重核更大画幅生成后裁至 1024 的方法并 Art/Tech 复签。资源 Task 继续 BLOCKED、Gate2 DRAFT，不新增本轮审批或开工。本补充发生在既有复盘截止节点后，准确时间与新增耗时未记录，原复盘耗时不外推。
+
+2026-10-08 15:29:28 +08:00（Producer U01 资源 v0.2 样张停线）S02 已以 3840×1024 RGBA 参考图输入，但内置 imagegen 原始输出仍为 2172×724 RGB，SHA `918fc25a…358e73f`；Art `ART_SAMPLE_REVIEW_S02.json` 与 Tech `TECH_SAMPLE_CHECK_S02.json` 均未通过目标画幅。按同版 S02 预案停止重试和五层扩批，资源 Task `IN_PROGRESS→BLOCKED`；本版 DELIVERABLE 标 BLOCKED，Required 5/19 实存、14 项缺失，后续验收 NOT_TESTED。Gate1 v0.2 DONE 不变，Gate2 v0.2 DRAFT、decided_at null，无正式 PSD/五 PNG/重组，Client 接入锁定。解除阻塞需 Master 组织可实际输出 3840×1024 新绘图的方法并在下一图前重新 Art/Tech 预签。Continuity check：本线已到具体工具输出限制的真实 BLOCKED，无可继续空转 READY/IN_PROGRESS；旧局部线原暂停及旧 Client 阻塞不变。复盘 `WR-20261008-U01-FIVE-LAYER-TOOL-002`。
+
+2026-10-08 15:24:02 +08:00（Producer U01 S02 方法复签）S01 失败后的 `v0.2/PREFLIGHT_AMENDMENT_S02.md` SHA `212a3f8d…f2f1176a` 已获 Art/Tech 同版预签 APPROVED；方法仅允许制作一张以准确 3840×1024 参考画布扩绘的 S02，再核实际输出尺寸、两侧延路、清晰度与锚点。资源 Task 仍 IN_PROGRESS，Gate2 DRAFT；若 S02 仍不达画幅则按预案停在样张关口，不扩五层。
+
+2026-10-08 15:20:25 +08:00（Producer U01 首张代表样张 S01 后验）`v0.2/source/sample_complete_s01.png` 已产生；实读 2172×724 RGB，Tech 同文件 SHA `3cc1e038…95b52` 判 REVISE，Art 同意不扩五层。目标 3840×1024 及左右新绘延路未达，当前资源 Task 仍 IN_PROGRESS 进行样张修订，Gate2 DRAFT；S01 作为失败样张证据，不能当正式 PSD/五层图。Art/Tech 下一图前需复签受影响画布/扩绘方法。Continuity check：样张问题具体且 Art 正修方法，本轮继续执行到下一真实门禁或阻塞。
+
+2026-10-08 15:16:37 +08:00（Producer U01 资源 v0.2 首图前双签核验）`PREFLIGHT_PLAN.md` SHA `bc960467…9a206e34`，Art/Tech 两份同版 `ART_PREFLIGHT.json` 与 `TECH_PREFLIGHT.json` 均 APPROVED；指定工具旧图临时 PSD 写入/回读成功，生产前工具门禁只解锁首张完整新绘代表样张。资源 Task 维持 IN_PROGRESS，Gate2 DRAFT；尚无正式新图，不推断样张后验、五层 PSD/PNG 或运行通过。Continuity check：Art 已在同轮推进样张，继续到后验和下一真实门禁。
+
+2026-10-08 15:14:51 +08:00（Producer U01 资源 v0.2 重新开工）用户提供指定 skill 来源后 Master 已安装；Art 的 `v0.2/TOOLCHAIN_AUDIT.md`、`PREFLIGHT_PLAN.md` 两份 Required 实存非空，旧四 PNG 临时工具测试能写回读 3840×1024 四层 PSD，测试仅验证工具能力。资源 Task `BLOCKED→IN_PROGRESS` 有当前实产，Gate2 Approval 仍 DRAFT；Art/Tech 首图前同版预签、正式代表样张、完整五层 PSD/PNG 和重组仍待完成。原 v0.1 BLOCKED 审计保留历史；Gate1 v0.2 DONE 不变。Continuity check：本线有正在进行的 Required 实产与后续预签/样张工作，不能以 IN_PROGRESS 停止本轮授权推进。
+
+2026-10-08 15:05:21 +08:00（Producer U01 五层 Gate1 v0.2 批准与资源阻塞收束）方案 12/12 Required 实存非空、DELIVERABLE 唯一索引全覆盖，五项验收逐字同序 PASS；Art/Tech/Master 同版 APPROVED，Master 最终接受。用户明确“高度1024、其它没问题继续”，消息精确时刻未知；15:05:21 为审批绑定登记时刻。Gate1 v0.2 USER_APPROVED、Task DONE。资源 Task 因缺指定 bggg PSD 转换 skill 及已验证的原生多层 PSD 工具，Art/Tech 首图预签均 BLOCKED，故 BACKLOG→BLOCKED；5/19 Required 实存、14 项缺失，Gate2 DRAFT，无新图，实际 PSD/PNG/重组/运行 NOT_TESTED。Client 接入锁定。Continuity check：Gate1 DONE、资源真实 BLOCKED；旧局部线按用户暂停、旧 Client 原阻塞不变，本轮 U01 无空转 READY/IN_PROGRESS。复盘 `WR-20261008-U01-FIVE-LAYER-1024-001`。
+
+2026-10-08 14:58:01 +08:00（Producer U01 Gate1 v0.2 当前实产核验）`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md` 等八份文字 Required 草稿已于14:56:06存在且非空，Task `READY→IN_PROGRESS` 有本轮修订证据；DELIVERABLE及同版Review尚待，Approval仍DRAFT。用户明确“画布高度希望保持1024，为性能考虑，其它没问题继续”，对原方案作附尺寸修改批准；用户消息精确时刻未知，待完整v0.2同版评审后绑定本次决定，不重复请求同一审批。新资源Task `BACKLOG/DRAFT`，首图前工具审计与Art/Tech同版预签待实证；Gate2未获批，Client接入锁定。
+
+
 2026-10-08 14:13:44 +08:00（Producer 五层 Gate1 v0.1 送审与 continuity）12/12 Required 实存非空，DELIVERABLE 12条唯一索引覆盖全部 Required，五项验收与 Task 逐字同序且均 PASS；Task/Deliverable/Approval/三 Review 依已用 Schema 关键词 type、enum、required、minLength、minItems、items、additionalProperties 校验通过。Art/Tech/Master 同版 APPROVED，当前文件 SHA 与三方绑定一致：计划 `31da7ccf…c0fab5`、遮挡 `e3e0adf9…3f24f5`、审核包 `0e57abe2…ac7e`。Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval `DRAFT→USER_REVIEW`、decided_at null。旧两项未批方案原 USER_REVIEW 快照已保存于 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/history/`。具体 Gate1 待用户决定；未生成新 PSD/PNG，首图前双签、Gate2 与 Client 接入均锁定。Continuity check：新线已到真实 USER_REVIEW 门禁，三条旧局部线有用户暂停原因而 BLOCKED，旧 Client 有真实原阻塞；本次无 U01 空转 READY/IN_PROGRESS。 复盘 `WR-20261008-U01-FIVE-LAYER-GATE1-001`。
 
 2026-10-08 13:59:43 +08:00（Producer 五层 Gate1 TASK_STARTED 核验）`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md` 首份 Required 实存非空，文件修改时间 13:59:43 +08:00、3460 字节；Art 同版其他方案正文正在落盘。Task `READY→IN_PROGRESS` 有当前实产依据；Approval DRAFT。继续补齐全 Required 与同版 Art/Tech/Master Review，不能把本节点当送审或用户批准。

@@ -1,5 +1,23 @@
 # 关键节点记录
 
+时间未记录（本轮 Master 最终核验补充） | `U01-FIVE-LAYER-REDRAW-ASSET-001` | Master 实看 S01/S02 / BLOCKED 结论维持 | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/MASTER_BLOCKED_REVIEW.json` | 指定 PSD skill 已可用；两次内置 imagegen 原始输出仍为 2172×724，实际阻塞在目标画幅产出。备用 API/CLI 未调用或计费，资源 Task BLOCKED、Gate2 DRAFT；本节点准确时间及较前次复盘增加耗时未知。
+
+2026-10-08 15:29:28 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | S02 实图双后验未通过 / IN_PROGRESS→BLOCKED，Gate2 DRAFT | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/sample_complete_s02.png`、`ART_SAMPLE_REVIEW_S02.json`、`TECH_SAMPLE_CHECK_S02.json`、`DELIVERABLE.json` | 3840×1024 参考输入仍得到 2172×724 原始图；5/19 Required、14 缺失，正式 PSD/五 PNG/重组及运行 NOT_TESTED，停五层扩批。
+
+2026-10-08 15:24:02 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | S02 受影响方法 Art/Tech 同版复签 APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/PREFLIGHT_AMENDMENT_S02.md`、`ART_PREFLIGHT_S02.json`、`TECH_PREFLIGHT_S02.json` | 两方绑定 SHA `212a3f8d…f2f1176a`；只解锁一张扩绘样张，失败须停样张关口，Gate2 DRAFT。
+
+2026-10-08 15:20:25 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 代表样张 S01 实产 / Tech REVISE | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/sample_complete_s01.png`、`TECH_SAMPLE_CHECK_S01.json`、`source/GENERATION_LOG.md` | 样张 2172×724 RGB，未达 3840×1024 与左右延路；暂停扩五层，保留失败证据并修订下一图方法，Gate2 DRAFT。
+
+2026-10-08 15:16:37 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.2 首图前 Art/Tech 同版预签 APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/PREFLIGHT_PLAN.md`、`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json` | 双方绑定同一计划 SHA `bc960467…9a206e34`，只授权首张新绘代表样张；正式新图、五层资源及 Gate2 用户审批均待后续证据。
+
+2026-10-08 15:14:51 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.2 TASK_STARTED / BLOCKED→IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TOOLCHAIN_AUDIT.md`、`PREFLIGHT_PLAN.md`、`evidence/TOOL_TEST_REPORT.json` | 指定工具已安装且旧图临时四层 PSD 写入/回读测试通过；仅能力证据，首图前双预签及新图待完成，Gate2 DRAFT。
+
+2026-10-08 15:05:21 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | v0.2 REVIEW / USER_APPROVED / DONE | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/DELIVERABLE.json`、`ART_REVIEW.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` | 12/12 Required、五项 PASS、三方同版 APPROVED，Master 最终接受；用户批准高度1024且其余继续，消息精确时刻未知，15:05:21 为登记时刻。
+2026-10-08 15:05:21 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 工具审计完成 / BACKLOG→BLOCKED，Gate2 DRAFT | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/TOOLCHAIN_AUDIT.md`、`PREFLIGHT_PLAN.md`、`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json`、`DELIVERABLE.json`、`tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/TASK.json` | 5/19 Required 实存、14 项缺失；Art/Tech 首图预签 BLOCKED，指定 PSD 转换 skill 缺失且原生多层 PSD 工具未核实，首图未制作；实际图像与运行 NOT_TESTED。
+
+2026-10-08 14:58:01 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | v0.2 TASK_STARTED / IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md` 等八份正文（14:56:06非空） | 用户批准高度1024、其余保留并继续，精确消息时间未知；Art同版修订实产，Review及正式版本绑定待核。
+
+
 2026-10-08 14:13:44 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | IN_PROGRESS→REVIEW→USER_REVIEW；Gate1 v0.1 待用户决定 | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`（SHA `31da7ccf…c0fab5`）、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/OCCLUSION_AND_VIEWPORT_PLAN.md`（SHA `e3e0adf9…3f24f5`）、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/USER_REVIEW_PACKET.md`、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json`、三份同版 Review、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` | 12/12 Required、12索引、5/5 PASS、三 Review APPROVED；生产方案尚未获用户批准，Gate2另审。
 
 2026-10-08 13:59:43 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | TASK_STARTED / IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`（首份 Required，3460 字节） | Art 本轮实际方案实产；12 项 Required 与同版评审仍待完成，Approval DRAFT。

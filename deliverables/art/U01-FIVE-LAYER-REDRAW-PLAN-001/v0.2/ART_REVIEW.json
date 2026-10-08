@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "用户已确认上一版 Gate1 方案，仅调整高度至 1024 并要求继续；v0.2 保持 3840 宽。2172×724 按高度精确等比映射为 3072×1024，居中 x=384–3456，左右各延 384。五张 RGBA8 的基础展开量为 75 MiB。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核五层边界、L04 水草移出后补底、L05 近景水草、原风格与主体锚点、旧未批挂件排除、连续镜头域透明判定和未裁完整源保留。ART_PRODUCTION_PLAN.md SHA-256 8531d9608a57a74d813b4fd4372cfc9354f4d90d91b06e57f34827c8a2fa745e；OCCLUSION_AND_VIEWPORT_PLAN.md SHA-256 06d982ecfc9bc8dd2c35856842c45b78ecc269a6afc72016ebfbaa2e34365b2c。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本 Review 只批准 Gate1 文字方案的美术内容，不是首图前 Art 预签或 Gate2 实图结论。当前 macOS 未找到指定 bggg-creator-image2psd skill 或经核验的原生多图层 PSD 工具；资源生产已在单独 TOOLCHAIN_AUDIT.md 标记 BLOCKED。"
+    }
+  ],
+  "next_action": "Tech Lead、Master 复核同一 v0.2，Producer 将用户已表达的高度修订确认绑定该版本；资源生产在工具链真实可用且 Art/Tech 首图前同批预签前保持 BLOCKED。"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同批首图前预案 PREFLIGHT_PLAN.md SHA-256 bc960467c2ad3d35a16ec7fb7ba3e576e7a36dba55ec590cc1f93fa19a206e34 已核。用户确认 Gate1 v0.2 的 3840×1024、原图中央3072映射/两侧各384新绘道路、五层身份、L04补底/L05独立水前草及原视觉锚点均在预案内；旧图插值不得冒充重绘。"
+    },
+    {
+      "severity": "INFO",
+      "message": "指定 bggg skill 原版脚本 SHA-256 af7217e0f3dad1edaf7eb4017c717cc49c6ce45d35be88a00c0d2f284b390ebd，MIT LICENSE 实存。旧四层 PNG 临时测试成功写入3840×1024四栅格层 PSD，Pillow回读尺寸、PSD记录层数及另存四张 RGBA 层均通过；仅证明工具能力，测试拉伸图不作为新画。见 TOOLCHAIN_AUDIT.md 与 evidence/TOOL_TEST_REPORT.json。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "内置 imagegen 实际输出尺寸、清晰度、透明边及五层原位一致性尚待首图/样张检验；本预签覆盖明确的生成、逐层编辑、失败停线与实际输出保存方法，不宣称样张或 Gate2 已通过。五张 RGBA8 基础展开量75MiB，运行内存未实测。"
+    }
+  ],
+  "next_action": "Tech Lead 对同一 PREFLIGHT_PLAN.md SHA-256 及工具审计独立预签；其通过前不得调用 imagegen 生成首张正式样张。双签后先做一张完整新画代表样张，Art 与 Tech 对实际结果分别核验，合格再扩五层。"
+}

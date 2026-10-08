@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "S01 source/sample_complete_s01.png SHA-256 3cc1e03883cb1712282aea4ada33ec4576b770e46514f9b526abb4953b295b52 已与已批旧合成图实看对照；蓝夜暖灯、月、柳林、桥、灯船、右牌楼和空白牌面基本保持。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "内置 imagegen 实际只输出2172×724 RGB，与旧输入同尺寸，未达到确认的3840×1024，亦无左右各约384像素的新绘道路画幅。旧尺寸图片通过 fit/stretch 放大不能新增原生细节，不得作为代表样张 PASS 或扩五层。"
+    },
+    {
+      "severity": "INFO",
+      "message": "L04补底、L05独立、五层透明/原位、连续镜头遮挡证明及运行预算尚未测试；没有生成 PSD、PNG 切片或 Gate2 成品。逐锚点见 SAMPLE_VISUAL_CHECK.md。"
+    }
+  ],
+  "next_action": "Tech 对同一 S01 样张核实际像素、投影与预算；Art/Tech 在下一张正式图前核并重签任何调整后的画布准备或图像生成方法。S01 保留为未通过样张，不扩五层。"
+}

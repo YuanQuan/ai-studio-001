@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "S02 已依 PREFLIGHT_AMENDMENT_S02.md 同 SHA Art/Tech 复签执行。bggg 参考输入实际3840×1024 RGBA，alpha bbox [384,0,3456,1024]，左右各384透明；输出 source/sample_complete_s02.png SHA-256 918fc25a0d9231a60bda7e6c8ff65e6a0288c62f9d0c4e392172b3556358e73f。"
+    },
+    {
+      "severity": "CRITICAL",
+      "message": "内置 imagegen 第二次仍只返回2172×724 RGB。其新画虽保留蓝夜暖灯、月、柳林、桥、河船、右牌楼并显示延景内容，但无法满足用户确认的3840×1024实际像素和左右各384新绘路段，不能用bggg fit或插值伪称通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按补充预案停止本方法的后续调用；未生成五张层PNG、正式PSD、同尺度重组、透明掩膜或Gate2可审资源。S01/S02失败样张与提示词保留，逐项见 SAMPLE_VISUAL_CHECK_S02.md。"
+    }
+  ],
+  "next_action": "Master 组织可实际产生3840×1024新绘细节的生产路径并按受影响范围修订/预签；Art 在新方法获准前不扩五层或导出正式PSD/PNG。"
+}

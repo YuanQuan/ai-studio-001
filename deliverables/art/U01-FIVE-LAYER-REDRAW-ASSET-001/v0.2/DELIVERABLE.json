@@ -1,0 +1,73 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "summary": "U01五层资源生产v0.2：指定bggg PSD工具链经3840×1024临时测试可用，首图前Art/Tech同版预签通过；内置imagegen对旧原图和3840×1024透明宽参考两次均只返回2172×724，代表样张未达已批画幅，按预案停线。无正式五层PNG/PSD/Gate2。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/evidence/TOOL_TEST_REPORT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/PREFLIGHT_AMENDMENT_S02.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/ART_PREFLIGHT_S02.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TECH_PREFLIGHT_S02.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/GENERATION_LOG.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/sample_complete_s01.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/sample_complete_s02.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/SAMPLE_VISUAL_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/ART_SAMPLE_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TECH_SAMPLE_CHECK_S01.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/SAMPLE_VISUAL_CHECK_S02.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/ART_SAMPLE_REVIEW_S02.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/TECH_SAMPLE_CHECK_S02.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source_build/s02_reference/manifest.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source_build/s02_reference/layers/01_S01_centered_reference_only.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source_build/s02_reference/reference_validation.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/MASTER_BLOCKED_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.2获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+      "result": "PASS",
+      "evidence": "Gate1 v0.2用户确认和审批记录实存；ART_PREFLIGHT.json/TECH_PREFLIGHT.json对同一PREFLIGHT_PLAN SHA批准首图，S02方法补充亦已同SHA双签。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "NOT_TESTED",
+      "evidence": "S01/S02均只输出2172×724 RGB，Art/Tech样张审查未通过；没有正式3840×1024五层PNG或多层PSD。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "NOT_TESTED",
+      "evidence": "未产生正式五层图，未计算连续镜头域透明安全掩膜；旧图与两张失败样张、S02临时参考均保留。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "五层/正式PSD/同尺度重组与视窗证据缺失；Gate2未提交用户，实际导入和运行未执行。"
+    }
+  ],
+  "assumptions": [
+    "S02参考层和其单层PSD只用于试验输入构图，不是本任务正式五层母版或可提交切图。"
+  ],
+  "risks": [
+    "当前内置imagegen两次不同输入均未输出已批3840×1024，新绘清晰度和左右各384原生像素延路无法验收；不得用fit/插值冒充。",
+    "缺失Required Artifacts（停线后不伪造）：",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/ART_FILE_CHECK.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/review/overall_from_psd.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/review/portrait_viewports.png"
+  ],
+  "status": "BLOCKED"
+}

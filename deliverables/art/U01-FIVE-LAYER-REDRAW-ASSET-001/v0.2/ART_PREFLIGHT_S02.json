@@ -1,0 +1,16 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "S02 补充预案 PREFLIGHT_AMENDMENT_S02.md SHA-256 212a3f8dd332e21fc1fbf1bc745361166b3793862ec49d44f8063640f2f1176a 已核；仅将失败 S01 作为居中构图输入，原版 bggg contain 按等比得到 3072×1024，从 x=384 放进 3840×1024 全画布，左右各384透明带供内置 imagegen 实绘。工具、最终画幅、五层与视觉锚点不变。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S01 实测仅2172×724，Art/Tech 均判 REVISE。S02 若仍非3840×1024、两侧未实绘或中央只是插值，立即停线并保留失败记录；不得用临时参考画布、拉伸图或平图作为五层/PSD成品。"
+    }
+  ],
+  "next_action": "Tech 对同一补充预案 SHA 独立复签。Tech 签认前不调用 imagegen 生成 S02；之后先制作全画布透明参考、实看输入，再仅生成一张 S02 并逐锚点审查。"
+}

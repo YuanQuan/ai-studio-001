@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "与 Art 对同一首图前预案签认：PREFLIGHT_PLAN.md SHA-256=bc960467c2ad3d35a16ec7fb7ba3e576e7a36dba55ec590cc1f93fa19a206e34；TOOLCHAIN_AUDIT.md SHA-256=dfac3266f62c897ac439602bdb0a6ec44729b43cd823fdf80571125c8332b0f6；evidence/TOOL_TEST_REPORT.json SHA-256=70b3f29347f320f4b8e59ee4361d12e5dd901da7358b22ee098b78c96e3cea9f。Gate1 v0.2 已有 USER_APPROVED 记录；本签认只解除本批首张完整代表样张的生产前工具门禁，旧 v0.1 BLOCKED 作为历史保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "指定 bggg-creator-image2psd 原版 image2psd.py SHA-256=af7217e0f3dad1edaf7eb4017c717cc49c6ce45d35be88a00c0d2f284b390ebd，Pillow/NumPy 可用。临时旧四层测试已在 3840×1024 输出栅格分层 PSD、预览与四张全画布 RGBA PNG，回读 PSD 尺寸和四层记录通过；这证明组装器可运行，不证明旧图拉伸有新画清晰度，也不证明五张正式层、原位 alpha、Photoshop GUI 打开或最终视觉一致性已通过。最终仅承诺独立栅格层的可编辑范围。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本批方案以已批原图作空间和风格参考，先用 imagegen 得到一张完整新绘代表样张；通过 Art 视觉与 Tech 实际尺寸/投影/预算/可分层性复核后，才从该新图逐层编辑为 L01–L05 同画布原位 RGBA，L04 补足水草旧位、L05 单独承载水前草，再用指定 assemble 组装 PSD。旧 2172×724 按高度映射约 3072×1024，居中左右各约 384 像素只定义构图对应关系；插值不增加源细节。imagegen 实际尺寸和五层透明/位置尚未实测，任何可见变形、裁掉锚点、低清晰度或错位须停在样张或分层关口修订。"
+    },
+    {
+      "severity": "INFO",
+      "message": "五张 3840×1024 RGBA8 基础展开量为 78,643,200 字节（75 MiB）；目标设备 3840 宽支持、纹理格式、mipmap、CPU 副本、打包与运行峰值均为 NOT_TESTED。首图后检查实际像素尺寸及竖屏中心/左右端、1.0–1.8 倍投影；资源最终输出前核五层 PSD 回读、PNG alpha、同尺度重组。透明裁减须等待获批镜头/采样连续域证明，证据不足保留完整源，不以 PNG 变小推断运行内存通过。"
+    }
+  ],
+  "next_action": "Art 现可按同版预案生成且仅生成首张完整新绘代表样张，保存原始图、实际尺寸、提示词、输入与版本。Art 先逐锚点视觉核，Tech 再对同一实际样张核尺寸、视窗投影、清晰度、预算与分层可行性；两者均通过才扩五层。变更工具、来源、画幅、层级或输出方法时，在下一图前重新双签。最终切图与重组仍须单独提交 Gate2 用户审核，正式导入和运行另行取证。"
+}

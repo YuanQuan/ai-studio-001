@@ -1,5 +1,19 @@
 # 工作流程复盘记录
 
+## WR-20261008-U01-FIVE-LAYER-TOOL-002
+
+- 周期与结果：2026-10-08 15:11:58–15:29:28 +08:00，墙钟历时 17 分 30 秒。`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.2 在用户提供指定工具来源后重新执行：临时旧图四层 PSD 写入/回读通过，Art/Tech 首图前同版预签通过；S01 与 S02 原始新图均为 2172×724，未达已批 3840×1024，Art/Tech 同图后验未通过，Task 真实 BLOCKED，Gate2 DRAFT。证据为 `v0.2/TOOLCHAIN_AUDIT.md`、`PREFLIGHT_PLAN.md`、`PREFLIGHT_AMENDMENT_S02.md`、两次预签、两张样张、Art/Tech 样张检查及 `DELIVERABLE.json`。
+- 时间分类：15:11:58 为 Producer 本轮已知启动点；15:14:51 两份 Required 实存并登记重新开工，15:16:37 首图前双签核验，15:20:25 S01 退回登记，15:24:02 S02 方法复签，15:29:28 S02 停线登记。总历时包含 Art 制作、imagegen 工具等待、Tech 复核、Producer 登记等并行环节；净制作时间、各工具调用时长及各角色独立耗时未知。用户提供工具来源之前的等待不计入本轮制作。没有本轮新的 Gate2 用户审批等待。
+- 速度判断与原因：尚无约定目标或同类可比基线，不能据此判断角色快慢。可证实的关键路径阻塞是 imagegen 在旧 2172×724 参考和 3840×1024 参考两种输入下均返回 2172×724 原始图；PSD 组装器已可用，但无法补足目标原始画幅与新绘细节。两张样张及回读文件支持此结论，工具内部尺寸选择原因未知。
+- 建议与复核：Master 负责组织可实际输出 3840×1024 新绘画面的制作方法或查清当前工具尺寸限制，代价为工具核验与可能的生产方法修订；下次首图前 Art/Tech 预签复核。Art 与 Tech 在下一张图前以真实输出样例核原始尺寸、延路、清晰度、锚点和分层可行性，代价为一轮样张检查，避免无效五层扩批。Producer 在恢复后核 Gate2 的 19 项 Required 和具体切图用户审批，确保 Gate1 决定不被移作 Gate2。
+
+## WR-20261008-U01-FIVE-LAYER-1024-001
+
+- 周期与结果：2026-10-08 14:54:28–15:06:57 +08:00，墙钟历时 12 分 29 秒。Art 的 `U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.2 已获准确 `USER_APPROVED` 并由 Master 最终接受为 DONE；`U01-FIVE-LAYER-REDRAW-ASSET-001` 完成只读工具审计后真实 BLOCKED，Gate2 DRAFT。证据为两 Task、两 Approval、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/DELIVERABLE.json` 与三份同版 Review、`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/TOOLCHAIN_AUDIT.md` 和双预签。
+- 时间分类：14:54:28 为本周期已知启动点；v0.2 正文于 14:56:06 有实存时间，14:58:01 Producer 登记当前实产与用户决定，15:05:21 绑定批准。用户消息精确时间未知，不能计算审批等待；Art 制作、Tech/Master Review、Producer 核验并行，净工时与各环节精确耗时未知。指定转换工具缺失是本周期发现的生产阻塞，故障持续时长未知；没有首图制作。
+- 速度判断与原因：尚无约定目标或同类可比基线，不判断个人快慢。可证实的关键阻塞是当前 macOS 缺 `bggg-creator-image2psd`，且未核实可保存完整多图层 PSD 的其他工具；旧 Windows 路径不可用于当前环境。高度变更引发同版文案和 Review 修订，但各角色返工净耗时未知。
+- 建议与复核：Master 负责确认指定 skill 的可用来源或组织具真实多层 PSD 能力的生产方案，代价是工具核验与可能的方案审批，下一次首图前 Art/Tech 同版预签时复核。Art 与 Tech 在解除工具阻塞后共同核版本、许可、层可编辑范围及回读样例，代价是一轮预检，复核点为首张正式样张前；Producer 在 Gate2 审核时核实际 PSD、五层 PNG、重组与 19 项 Required，避免把 Gate1 批准移用为切图批准。
+
 ## WR-20261008-U01-FIVE-LAYER-GATE1-001
 
 - 周期与结果：2026-10-08 13:55:35–14:13:44 +08:00，历时 18 分 09 秒；Art 的 `U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.1 已到 `USER_REVIEW`。证据为本 Task、`deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.1/DELIVERABLE.json`、三份 Review 和审批记录。Producer 登记旧线暂停、版本及送审门禁。

@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "purpose": "temporary old-layer tool capability test; not production artwork",
+  "directory": "/private/tmp/u01_bggg_preflight_z8z8n90q",
+  "command": [
+    "python3",
+    "/Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py",
+    "assemble",
+    "--manifest",
+    "/private/tmp/u01_bggg_preflight_z8z8n90q/manifest.json",
+    "--output",
+    "/private/tmp/u01_bggg_preflight_z8z8n90q/test.psd",
+    "--preview",
+    "/private/tmp/u01_bggg_preflight_z8z8n90q/test.preview.png",
+    "--save-layers",
+    "/private/tmp/u01_bggg_preflight_z8z8n90q/layers"
+  ],
+  "script_stdout": "{\n  \"output\": \"/private/tmp/u01_bggg_preflight_z8z8n90q/test.psd\",\n  \"width\": 3840,\n  \"height\": 1024,\n  \"layers\": [\n    {\n      \"name\": \"01 天空·月亮·云彩·星星（94477409）\",\n      \"top\": 0,\n      \"left\": 0,\n      \"width\": 3840,\n      \"height\": 1024,\n      \"blend_mode\": \"normal\"\n    },\n    {\n      \"name\": \"02 山峦·远方建筑（933386cf）\",\n      \"top\": 0,\n      \"left\": 0,\n      \"width\": 3840,\n      \"height\": 1024,\n      \"blend_mode\": \"normal\"\n    },\n    {\n      \"name\": \"03 地面·树木·右侧走廊（23db4183）\",\n      \"top\": 0,\n      \"left\": 0,\n      \"width\": 3840,\n      \"height\": 1024,\n      \"blend_mode\": \"normal\"\n    },\n    {\n      \"name\": \"04 栏杆·桥·前方景物（c82fb659）\",\n      \"top\": 112,\n      \"left\": 0,\n      \"width\": 3840,\n      \"height\": 912,\n      \"blend_mode\": \"normal\"\n    }\n  ],\n  \"layer_count\": 4,\n  \"bytes\": 72991408,\n  \"preview\": \"/private/tmp/u01_bggg_preflight_z8z8n90q/test.preview.png\",\n  \"layer_pngs\": [\n    \"/private/tmp/u01_bggg_preflight_z8z8n90q/layers/01_01_94477409.png\",\n    \"/private/tmp/u01_bggg_preflight_z8z8n90q/layers/02_02_933386cf.png\",\n    \"/private/tmp/u01_bggg_preflight_z8z8n90q/layers/03_03_23db4183.png\",\n    \"/private/tmp/u01_bggg_preflight_z8z8n90q/layers/04_04_c82fb659.png\"\n  ]\n}\n",
+  "script_stderr": "",
+  "psd_format": "PSD",
+  "psd_size": [
+    3840,
+    1024
+  ],
+  "psd_sha256": "e849954b8e9c6f9daca7ee3fdce9a7f40172a4022596d1fed6f98c7078a6ff72",
+  "preview_size": [
+    3840,
+    1024
+  ],
+  "raw_psd_layer_count": 4,
+  "saved_layer_count": 4,
+  "saved_layers": [
+    {
+      "file": "01_01_94477409.png",
+      "size": [
+        3840,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        255,
+        255
+      ]
+    },
+    {
+      "file": "02_02_933386cf.png",
+      "size": [
+        3840,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "03_03_23db4183.png",
+      "size": [
+        3840,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "04_04_c82fb659.png",
+      "size": [
+        3840,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "limitations": [
+    "Original 2172x724 PNGs were stretched for a temporary 3840x1024 capability test; not new art, not acceptable for the final redraw.",
+    "PSD layer records/count and flattened read were verified; Photoshop/Photopea GUI opening was not tested."
+  ]
+}

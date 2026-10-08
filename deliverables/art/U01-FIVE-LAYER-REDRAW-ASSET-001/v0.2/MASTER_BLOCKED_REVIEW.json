@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "master",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Master实看S01与S02，两张保留蓝色月夜/柳林/中央桥/河面灯船/右牌楼方向；S02有延路构图内容，但实际两张原始尺寸均2172×724。已批目标3840×1024没有达到，不把后处理拉伸冒充原生重绘细节。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "指定bggg技能已按用户提供仓库安装并通过3840×1024多层PSD能力测试；S02宽画布输入亦真实。当前阻塞转为两次内置图像生成未达目标，Art/Tech样张未通过，未扩五层、未制作正式PSD/切片、Gate2不得送审或接入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "备用图像API/CLI需用户明确选择及OPENAI_API_KEY；尚未调用或计费。若选该路径，需重新核同批生产预案/实际接口尺寸限制及生成更大画面后可保持锚点的裁切，不保证未知API结果。"
+    }
+  ],
+  "next_action": "保留S01/S02失败样张和完整提示词。向用户说明当前输出尺寸阻塞，询问是否选择图像API/CLI备用路径；未获授权前保持BLOCKED，不重复Gate1用户审批。"
+}

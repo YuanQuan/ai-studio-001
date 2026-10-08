@@ -1,0 +1,56 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "summary": "U01 五层 3840×1024 正式资源生产前审计；工具链与首图前双签未通过，生产 BLOCKED，未生成任何新图。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.2获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+      "result": "FAIL",
+      "evidence": "ART_PREFLIGHT.json、TECH_PREFLIGHT.json 均 BLOCKED；TOOLCHAIN_AUDIT.md 未找到指定 skill 或可核验的原生多图层 PSD 路径。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "NOT_TESTED",
+      "evidence": "首图前工具链及双签阻塞，未生成正式 PSD/PNG/掩膜/重组或运行证据。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "NOT_TESTED",
+      "evidence": "首图前工具链及双签阻塞，未生成正式 PSD/PNG/掩膜/重组或运行证据。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "首图前工具链及双签阻塞，未生成正式 PSD/PNG/掩膜/重组或运行证据。"
+    }
+  ],
+  "assumptions": [
+    "用户已明确确认 Gate1 方案仅将高度修订为 1024，其余继续；Producer 对 v0.2 的正式审批记录仍须独立绑定。"
+  ],
+  "risks": [
+    "缺少项目指定 bggg-creator-image2psd skill，且未核验本机可直接保存完整多图层 PSD 的工具。",
+    "缺失 Required Artifacts（因生产阻塞，未伪造）：",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/ART_FILE_CHECK.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/review/overall_from_psd.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.1/review/portrait_viewports.png"
+  ],
+  "status": "BLOCKED"
+}

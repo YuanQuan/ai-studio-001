@@ -1,0 +1,55 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "owner": "art",
+  "summary": "U01五层整体重绘Gate1 v0.2文字方案：依据用户确认保持宽3840、高1024，旧2172×724居中映射3072×1024、左右各延384；同版Art/Tech/Master评审通过。资源生产另因PSD工具链缺失BLOCKED。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/OCCLUSION_AND_VIEWPORT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确用户授权整体重绘并暂停旧局部修订，沿用已确认风格、构图、主体锚点、常规手机清晰度与左右道路延长要求；旧未批准挂件不自动纳入。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、ART_BRIEF.md、VISUAL_ANCHORS.md、RIGHTS_AND_SOURCE.md；用户明确只将高度修订为1024并要求其余继续。"
+    },
+    {
+      "criterion": "定义五层边界、原四层水草移出后补底、第5层水草的遮挡与拟定移动系数；所有路径和UUID标为计划/待生成。",
+      "result": "PASS",
+      "evidence": "PLACEMENT_AND_LAYER_MAP.md、ASSET_MANIFEST.md；L04补底、L05水前草及计划/待生成路径、UUID明确。"
+    },
+    {
+      "criterion": "给出多分辨率、缩放1.0–1.8、全程左右拖动与视差条件下的保守透明区域判定规则，未证明永不露出的区域保留，并区分文件体积和运行纹理内存。",
+      "result": "PASS",
+      "evidence": "OCCLUSION_AND_VIEWPORT_PLAN.md；完整连续镜头域、不透明遮挡及保守保留规则，75MiB为RGBA8基础展开估算。"
+    },
+    {
+      "criterion": "列明画幅、清晰度、可编辑PSD、五层PNG、同尺度重组、来源授权、工具能力与首图前双签及Gate2检查，不伪造已生成、实测或导入结果。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、ART_BRIEF.md、RIGHTS_AND_SOURCE.md、ASSET_MANIFEST.md；无新图/PSD/运行结果，首图前双签与Gate2分离。"
+    },
+    {
+      "criterion": "全部Required Artifact实存并索引，Art/Tech/Master对同一版本方案完成Review，当前方案用户审批与未来切图效果审批分别追踪。",
+      "result": "PASS",
+      "evidence": "本目录12/12 Required Artifact实存且被本DELIVERABLE逐项索引；ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json同版APPROVED；USER_REVIEW_PACKET.md区分既有Gate1用户确认与未来Gate2实际切图审核。"
+    }
+  ],
+  "assumptions": [
+    "用户已明确对上一版Gate1表示其它没问题继续，仅要求画布高度保持1024；本v0.2将该决定落文，Producer负责将用户确认绑定v0.2。",
+    "五层视差、设备兼容性与透明证明仍待首图前/实际生产核验；本方案Review不充当资源生产预签。"
+  ],
+  "risks": [
+    "生产环境未找到项目指定bggg-creator-image2psd skill或经核验的原生多图层PSD方案；资源任务v0.1工具预检BLOCKED，尚未出图。",
+    "五张3840×1024 RGBA8基础展开量75MiB，实际运行内存、目标设备与采样为NOT_TESTED；如需改变画幅或视觉锚点，需按治理规则处理。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

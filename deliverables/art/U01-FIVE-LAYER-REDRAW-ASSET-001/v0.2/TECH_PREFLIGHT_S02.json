@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "对 S02 下一图前方法补充同版复签：PREFLIGHT_AMENDMENT_S02.md SHA-256=212a3f8dd332e21fc1fbf1bc745361166b3793862ec49d44f8063640f2f1176a；Art 已以 ART_PREFLIGHT_S02.json 对同一 SHA 签认。原 PREFLIGHT_PLAN.md SHA-256=bc960467c2ad3d35a16ec7fb7ba3e576e7a36dba55ec590cc1f93fa19a206e34 仍管其余生产规格。本复签仅放行一张 S02 代表样张，不改变已批 3840×1024、五层边界或 Gate2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "S01 实测 2172×724。bggg assemble 用 fit=contain 保持 3:1 比例映为 3072×1024，从 x=384、y=0 放入 3840×1024 画布，得到左右各 384 透明带的全画布 RGBA 参考层；此层仅作为 imagegen 编辑输入，临时 PSD/预览不能当正式高分辨率资源。须检查实际保存的参考 PNG 是 3840×1024、透明带位置正确、中央未裁切，再调用 imagegen。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S02 的合格条件是原始生成输出实际 3840×1024，左右两侧实绘连续场景，中央近景出现新绘清晰细节，原视觉锚点和可分层性保持。仅得到旧尺寸、留空透明带、插值或可见变形即停在样张关口，记录失败并报告真实工具限制，不扩五层、不以二次画布适配充当成品。实际纹理与目标设备性能仍为 NOT_TESTED。"
+    }
+  ],
+  "next_action": "Art 可先生成并实看宽画布输入，然后只制作 S02 一张完整场景；保存原始输出、实际尺寸、prompt、输入及 SHA。Art 逐锚点核后 Tech 对同一实图核尺寸、竖屏中心/左右端投影、预算和分层可行性；两者都通过才继续五层。若 S02 仍不满足尺寸或实绘要求，停止重试并由 Master 处理生产工具限制。"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "已核本批 PREFLIGHT_PLAN.md 与 TOOLCHAIN_AUDIT.md：本机未找到项目指定 bggg-creator-image2psd skill，也未验证可直接制作并保存完整多图层 PSD 的绘图工具；旧脚本所引 Windows 路径不能在当前 macOS 当作可用工具。magick/Python 和 imagegen 平图均不足以证明本批 PSD 可编辑母版生产链有效。首图前 Art/Tech 同批次预签未通过，不能开始正式样张。"
+    },
+    {
+      "severity": "INFO",
+      "message": "3840×1024 五张 RGBA8 同画布图的基础展开量为 78,643,200 字节，即 75 MiB；原 2172×724 按高度等比映射为约 3072×1024，居中后左右各约 384 像素。该数值仅为估算，目标格式、纹理上限、mipmap/CPU 副本、实际打包与目标设备运行峰值均为 NOT_TESTED；透明像素不自动降低同尺寸展开内存。"
+    },
+    {
+      "severity": "INFO",
+      "message": "透明替代须等五层镜头、视差、视口及采样参数锁定，并在连续缩放/拖动状态证明上层完全不透明覆盖后实施；现无实图、掩膜或运行证据。本预检不构成切图效果 Review 或 Gate2 批准。"
+    }
+  ],
+  "next_action": "Art 取得并实测项目指定转换 skill，或由 Master 组织可实际产出完整多图层 PSD 的替代制作链及必要决策；记录工具版本、许可、输出样例、层可编辑范围和回读核验。随后 Art 与 Tech 对同一批次重新预签来源、画幅、五层映射、alpha/采样、格式与预算，签认通过后方可制作首张正式样张。"
+}

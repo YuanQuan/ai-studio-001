@@ -1,0 +1,23 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "sample": "source/sample_complete_s02.png",
+  "sample_sha256": "918fc25a0d9231a60bda7e6c8ff65e6a0288c62f9d0c4e392172b3556358e73f",
+  "preflight_amendment_sha256": "212a3f8dd332e21fc1fbf1bc745361166b3793862ec49d44f8063640f2f1176a",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "S02 原始图经回读仍为 2172×724 RGB、3:1，SHA-256=918fc25a0d9231a60bda7e6c8ff65e6a0288c62f9d0c4e392172b3556358e73f；与已批准的 3840×1024、3.75:1 不符。用于编辑的参考层已核为 3840×1024 RGBA，alpha bbox=(384,0,3456,1024)，左右各 384 像素透明，但内置 imagegen 再次返回旧尺寸。两次不同输入方法均未取得目标原始画幅，按 S02 同版预案停止样张重试和五层扩批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实看 S02 画面有左右延续的视觉内容和主体近似关系，但输出被缩至 2172×724；无法据此证明目标两侧各 384 原生像素延路、3840×1024 近景新细节或目标竖屏投影质量。将其 contain/stretch/cover 到目标尺寸只会留边、变形或裁切，不作为正式母版或五层源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "S02 是不透明 RGB 合成图，尚无五张同画布 RGBA 层、L04 水草旧位补底、L05 独立草或正式 PSD。75 MiB 是五张目标 RGBA8 的基础展开估算，实际贴图格式、性能、连续遮挡证明和运行画面均为 NOT_TESTED。工具脚本可以组装 PSD 的预检通过仍有效，但不解决生成目标画幅与实绘细节的当前障碍。"
+    }
+  ],
+  "next_action": "保留 S01、S02、3840×1024 参考层及提示词/尺寸证据；Art 不继续生成五层或正式 PSD。由 Master 组织可实际输出 3840×1024 新绘画面的生产方法或处理工具尺寸限制，核来源、清晰度、视觉影响和工作量；若改变已确认画幅或视觉目标，先按项目决策规则处理。取得可行链后在下一张图前重新 Art/Tech 预签。"
+}
