@@ -1,0 +1,32 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "master",
+  "summary": "用户明确退回街水前后顺序错误的S03/S04，已完成空间要求和生产提示词纠正及Art/Tech/Master同版核对。本补充只有文书，不是新图或Gate2成品。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/SPATIAL_ORDER_CORRECTION.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/CORRECTED_GENERATION_PROMPT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/MASTER_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/CORRECTION_DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "将原图河水前景、街道后岸原位加宽、桥与栏杆接路及纵深、水前L05保持要求准确写入空间说明与提示词。",
+      "result": "PASS",
+      "evidence": "两份md与DEC-U01-SPATIAL-ORDER-011，Art/Tech/Master同版APPROVED。"
+    },
+    {
+      "criterion": "区分旧样张退回、纠正文书通过与实际资源未完成，不覆写旧样张/Review，不继续使用S03/S04作为母版。",
+      "result": "PASS",
+      "evidence": "空间说明、三份Review及现资源Task BLOCKED；本轮未出图、未调用API、未接入Client。"
+    }
+  ],
+  "assumptions": [
+    "用户最新直接纠正约束当前及后续制作，不需要重复索取相同空间决定。"
+  ],
+  "risks": [
+    "实际目标尺寸、接缝和生产方法阻塞尚未解除；本轮没有可替代错误样张的新图。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

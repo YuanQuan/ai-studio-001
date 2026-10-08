@@ -1,7 +1,7 @@
 {
   "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
   "owner": "art",
-  "summary": "Gate1 v0.3已批且Art/Tech同SHA首图预签通过；内置imagegen原生新绘S03/S04各2172×724，以bggg fit:none原位试拼成3840×1024两区域临时预览。x=834出现明显硬接缝、重复草与远山柳错位，桥前道路和原图纵深关系也存疑。按预案停其余窗口及五层，Gate2未送审。",
+  "summary": "Gate1 v0.3已批且Art/Tech同SHA首图预签通过；内置imagegen原生新绘S03/S04各2172×724，以bggg fit:none原位试拼成3840×1024两区域临时预览。x=834出现明显硬接缝、重复草与远山柳错位。用户随后明确退回S03/S04的前后空间反转：原图河水在前、街道在后，街道只在原后岸位置加宽，桥与栏杆纵深保持。corrections/六份文书已同版评审接受，仅纠正下一图语义；按预案停其余窗口及五层，Gate2未送审。",
   "artifacts": [
     "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/PREFLIGHT_PLAN.md",
     "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TOOLCHAIN_AUDIT.md",
@@ -23,7 +23,13 @@
     "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/TECH_SAMPLE_CHECK_S04.json",
     "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/MASTER_BLOCKED_REVIEW.json",
     "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/USER_REVIEW_PACKET.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/DELIVERABLE.json"
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/SPATIAL_ORDER_CORRECTION.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/CORRECTED_GENERATION_PROMPT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/MASTER_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/CORRECTION_DELIVERABLE.json"
   ],
   "acceptance_results": [
     {
@@ -52,7 +58,7 @@
   ],
   "risks": [
     "x=834明显拼缝说明当前两块内置生图方法未保证跨窗结构与光色连续；不再依同一指令无限重试。",
-    "S03桥前道路可能指向桥洞下方，尚未满足用户要求的通桥纵深；下一方案需先解决并实图对照。",
+    "用户明确退回S03/S04的街前水后空间反转；原图河前街后，后岸街原位加宽、桥与栏杆纵深保持。旧S03局部APPROVED仅为历史，不可作为新母版；下一样张须先按corrections/核水前街后和桥跨水接后岸，再看其它锚点。",
     "天空高度、月和右牌楼全景关系、五层语义拆分/alpha、目标设备纹理预算及运行均未验证。",
     "外部CLI/API备用路线尚未获用户明确选择；本版未使用API或密钥。"
   ],

@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261008-U01-SPATIAL-CORRECTION-005
+
+- 周期与结果：2026-10-08 18:15:30–18:39:29 +08:00，至纠正绑定节点墙钟历时 23 分 59 秒。用户退回S03/S04的街前水后空间反转；`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.3/corrections/六份Required齐备，河前街后、后岸街原位加宽和桥栏杆纵深保持的文字说明/提示词经Art/Tech/Master同版APPROVED。资源Task仍BLOCKED，Gate2 DRAFT，未产生新图或调用API。证据为`project/DECISIONS.md`的`DEC-U01-SPATIAL-ORDER-011`、corrections/两md与三份Review/交付、资源DELIVERABLE和Task/Approval。
+- 时间分类：18:15:30为已知本轮起点，18:39:29为Producer补充绑定；用户消息精确时刻、Art/Tech/Master各自净工时和等待时长未知。总历时包含并行文书、评审与登记，不能全算制作或返工耗时。既有S03/S04图像与试拼来自前一周期，本轮未出图；API待决定期间的具体等待不能按工具故障计时。
+- 速度判断与原因：尚无约定目标或同类可比基线，不能判断角色快慢。可证实的返工原因是先前S03/S04把原图河前街后的空间顺序颠倒，用户直接指出；本轮纠正文书已消除语义歧义，但实际新图质量及接缝阻塞仍未复测。
+- 建议与复核：Art与Tech在下一张图前对实际方法同版预签，第一项以原图并排核水前街后、后岸街位置和桥跨水接路，代价为一轮样张检查；Producer在资源恢复或Gate2送审时核25项Required及纠正版本索引，避免旧S03局部评审误作当前母版或切图批准。
+
 ## WR-20261008-U01-RESOURCE-RESUME-004
 
 - 周期与结果：2026-10-08 16:36:41–17:07:54 +08:00，至阻塞登记节点墙钟历时 31 分 13 秒。`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.3 已完成分区方法预案与Art/Tech同版首图前预签、S03/S04两张原生分区及原位试拼；S03局部双后验通过，S04与S03接缝及桥前空间关系未通过，Task BLOCKED、Gate2 DRAFT。证据为本Task、`v0.3/PREFLIGHT_PLAN.md`、两份预签、S03/S04实图、`source_build/s03_s04_seam/trial.preview.png`、Art/Tech/Master失败结论与`DELIVERABLE.json`。

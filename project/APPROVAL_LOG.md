@@ -1,5 +1,7 @@
 # 用户审批记录
 
+2026-10-08 18:39:29 +08:00（Producer绑定登记时刻，用户消息精确时刻未知）：用户明确退回S03/S04样张的街前水后空间关系，指定河水保持画面前景、街在后岸原位置加宽，桥与栏杆纵深保持。`DEC-U01-SPATIAL-ORDER-011` 与 `v0.3/corrections/` 六份文书同版Art/Tech/Master APPROVED，Master接受文字纠正；这不是对Gate1 v0.3其余已批内容的撤销，也不是Gate2切图决定。资源Gate2仍DRAFT、decided_at null，未进入USER_REVIEW更未标REJECTED；S03/S04旧局部Review保留历史，不作新母版。
+
 2026-10-08 17:07:54 +08:00（流程核验，非用户对切图决定）：`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.3 S03/S04两块试拼未过接缝及通桥纵深关口，资源Task BLOCKED；`USER_REVIEW_PACKET.md`是失败实图和生产状态说明，不是Gate2切图审批包。Gate2当前 `DRAFT`、decided_at null，无正式五层PSD、PNG及同尺度重组，用户尚未批准具体切图。Gate1 v0.3文字方案批准仍有效，不能移作Gate2通过。
 
 2026-10-08 16:41:15 +08:00（流程版本登记，非用户对切图决定）：用户已授权按Gate1 v0.3继续资源生产方法核验；`U01-FIVE-LAYER-REDRAW-ASSET-001` 当前Gate2审批版本切为v0.3 `DRAFT`、decided_at null，原v0.2 DRAFT快照 `tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL_v0.2.json` 保留。尚无新构图正式五层图及同尺度重组，不将继续指令推断为具体Gate2用户批准。

@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅接受本轮空间纠正文书：按用户直接指令和原图，河水保持下方前景，街道在后岸原位置加宽。桥面、桥端与岸线接路和透视纵深保持原图，不新增前景街道；L05水草在水前。固定3840×1024、天空增加、水面减少、五层规格保留。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S03/S04把街道画在水前，用户已明确退回。旧局部评审仅历史试验记录，不作为当前用户认可或下一生成母版；原图作为后续空间参考。新样张第一项核水前街后，失败不扩批。本轮没有绘制或修改图片，实际生产BLOCKED与API授权待决定不变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核Art/Tech同版文书APPROVED及绑定SHA {\"SPATIAL_ORDER_CORRECTION.md\": \"d09d6c921ea847f3b41b119d119d69f002a5976a3bf69a55aeffd6dc7cebf47d\", \"CORRECTED_GENERATION_PROMPT.md\": \"c232582e15d83c4c741a5bef5e5158e1b2402f30ce4c5943d405e76822741c58\"}"
+    }
+  ],
+  "next_action": "Producer将用户空间退回与本补充纳入Task输入、资源交付索引、状态/看板和复盘。用户明确指令无需重复审批；下一实际绘制按纠正基线重新Art/Tech双预签。"
+}

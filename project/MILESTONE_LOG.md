@@ -1,5 +1,7 @@
 # 关键节点记录
 
+2026-10-08 18:39:29 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 用户退回S03/S04空间关系 / v0.3纠正文书同版APPROVED，资源BLOCKED维持 | `project/DECISIONS.md`、`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/corrections/SPATIAL_ORDER_CORRECTION.md`、`CORRECTED_GENERATION_PROMPT.md`、`ART_REVIEW.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`、`CORRECTION_DELIVERABLE.json`、`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/DELIVERABLE.json` | 河前街后、后岸街原位加宽、桥栏杆纵深保持；六份纠正文书齐、Art/Tech/Master同版APPROVED，正式资源仍13缺，旧S03局部通过不移作母版，Gate2 DRAFT非REJECTED。
+
 2026-10-08 17:07:54 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.3 S04试拼双后验未通过 / IN_PROGRESS→BLOCKED，Gate2 DRAFT | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source/sample_lower_left_s04.png`、`source_build/s03_s04_seam/trial.preview.png`、`ART_SAMPLE_REVIEW_S04.json`、`TECH_SAMPLE_CHECK_S04.json`、`MASTER_BLOCKED_REVIEW.json`、`DELIVERABLE.json`、`USER_REVIEW_PACKET.md` | x=834硬缝、前景草重复、桥前纵深未证明；6/19 Required、13缺失，正式五层PSD/PNG与重组未产，USER_REVIEW_PACKET仅是阻塞说明非Gate2审批包。
 
 2026-10-08 16:46:44 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.3 S03下中分区实产 / Art、Tech同图局部APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.3/source/sample_lower_center_s03.png`、`ART_SAMPLE_REVIEW_S03.json`、`TECH_SAMPLE_CHECK_S03.json` | 2172×724单分区通过局部检查；完整目标画幅、拼缝与五层未验，继续S04左接缝关口，Gate2 DRAFT。

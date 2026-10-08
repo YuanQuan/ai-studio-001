@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本评审对象仅为 corrections/SPATIAL_ORDER_CORRECTION.md 与 CORRECTED_GENERATION_PROMPT.md 的文字纠正。两文档准确锁定原图河水在画面下方前景、石街在后岸原位加宽、桥面及桥端与岸线接路关系保持原图、L05 水草在水前；不要求新增原图没有的前景道路。文字纠正通过。"
+    },
+    {
+      "severity": "CRITICAL",
+      "message": "旧 S03/S04 样张已被用户退回，实图把大面积石街移到画面下缘、河水置于街后，空间顺序反转；旧样张结论仍为 CHANGES_REQUESTED，不得作为新母版或扩绘参考。此次 APPROVED 不改变旧样张及旧评审历史。"
+    },
+    {
+      "severity": "INFO",
+      "message": "此次只是已批 Gate1 v0.3 的用户指令补充，不撤回整体重绘、3840×1024、天空加高、水面减少或五层要求；未制作新图，未授予外部 API opt-in、实际工具预签或 Gate2 实图批准。"
+    }
+  ],
+  "next_action": "Master/Tech 核对纠正文档；下一实际工具预案须引用两文档并在首图前由 Art/Tech 对同版双签。之后每张样张第一项核水前街后、原图桥面/桥端/岸线接路关系及 L05 水前，失败即停扩批。"
+}
