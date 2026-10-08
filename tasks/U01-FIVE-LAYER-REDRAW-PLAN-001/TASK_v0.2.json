@@ -4,9 +4,8 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "根据用户最新明确构图指令修订Gate1 v0.3：减少河水可见占比、扩大街道可见面积、保持通桥纵深、增加天空可见高度；固定3840×1024及五层。仅文书与专业复核，实际资源仍受尺寸工具阻塞，不能冒充已出图。",
+  "objective": "落实用户批准的工作方向：暂停U01原局部修改，整体重绘同风格场景；对多手机分辨率及完整镜头状态下保证遮挡的原四层区域用透明替代，水前水草独立为第5层。先将具体制作规格和风险落为Gate1 v0.2并完成同版Review，提交用户审核，不在本方案任务制作正式图片或修改客户端。",
   "inputs": [
-    "用户最新明确要求：河水部分不要太多，街道加宽一些，延伸到桥的纵深保持一样，天空加高；总高度1024保留。",
     "用户2026-10-08明确：画布高度保持1024，为性能考虑，其它没问题继续；授权本版高度修订并继续，无需再次索取相同Gate1决定。",
     "用户2026-10-08本轮：暂停U01目前修改、整体重绘、要求与之前一样、保证遮挡区域透明、水前水草拆第5层；随后明确“好的按照这个方案启动U01的修改”",
     "project/DECISIONS.md、project/ART_GUIDE.md",
@@ -17,21 +16,21 @@
     "rules/visual_production_contract.md、rules/artifact_contract.md、rules/approval_protocol.md"
   ],
   "deliverables": [
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/ART_BRIEF.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/VISUAL_ANCHORS.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/PLACEMENT_AND_LAYER_MAP.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/OCCLUSION_AND_VIEWPORT_PLAN.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/RIGHTS_AND_SOURCE.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/ASSET_MANIFEST.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/USER_REVIEW_PACKET.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/DELIVERABLE.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/ART_REVIEW.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/TECH_REVIEW.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/MASTER_REVIEW.json"
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/PLACEMENT_AND_LAYER_MAP.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/OCCLUSION_AND_VIEWPORT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/ART_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/TECH_REVIEW.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.2/MASTER_REVIEW.json"
   ],
   "acceptance": [
-    "落实用户最新构图指令：减少河水可见占比、扩大街道可见面积、保持通桥纵深、增加天空高度且总画布3840×1024不变；保留已确认风格及主体身份，旧未批准挂件不纳入。",
+    "明确用户授权整体重绘并暂停旧局部修订，沿用已确认风格、构图、主体锚点、常规手机清晰度与左右道路延长要求；旧未批准挂件不自动纳入。",
     "定义五层边界、原四层水草移出后补底、第5层水草的遮挡与拟定移动系数；所有路径和UUID标为计划/待生成。",
     "给出多分辨率、缩放1.0–1.8、全程左右拖动与视差条件下的保守透明区域判定规则，未证明永不露出的区域保留，并区分文件体积和运行纹理内存。",
     "列明画幅、清晰度、可编辑PSD、五层PNG、同尺度重组、来源授权、工具能力与首图前双签及Gate2检查，不伪造已生成、实测或导入结果。",
@@ -49,9 +48,6 @@
     "2026-10-08 14:13:44 +08:00 Producer核12/12 Required非空、DELIVERABLE 12条唯一索引覆盖全部Required、五项acceptance逐字同序且均PASS；Art/Tech/Master同版APPROVED；计划SHA 31da7ccf12e8cc3d78f214376949cec45545b122886d35314f92b821fcf0fab5、遮挡方案SHA e3e0adf9e168fc15b6a7b68f0864260e3cf7b78f2f031a86b5eac229c13f24f5、送审包SHA 0e57abe2dd1418599bf8c7817e4945df9dbf8d462c5295927c1441d681dfac7e，与Review绑定一致。Task IN_PROGRESS→REVIEW→USER_REVIEW；仅具体Gate1方案待用户决定，尚未批准出图。",
     "本轮高度1080→1024、宽3840保持，五层RGBA8估算75MiB；用户明确批准其余方案并继续。Art/Tech/Master复核变更与完整v0.2后Producer绑定批准；旧v0.1保留。",
     "2026-10-08 14:56:06 +08:00 v0.2首份Required草稿实存非空，Producer于14:58:01核验，READY→IN_PROGRESS；此为当前文案修订实产，不代表同版Review或审批已绑定。",
-    "2026-10-08 15:05:21 +08:00 Producer核 v0.2 Required 12/12 实存非空且DELIVERABLE唯一全覆盖、Task五项acceptance逐字同序PASS、Art/Tech/Master同版APPROVED及三份最终SHA一致；Master依据证据最终接受。用户明确高度1024其余同意继续，绑定准确v0.2 USER_APPROVED，用户消息精确时刻未知，本时间为审批登记时刻；Gate1 DONE。首图前双预签及Gate2仍独立。",
-    "2026-10-08 本轮Master授权Art文字修订v0.3，Tech同版Review，Producer追踪用户明确构图修订及资源既有BLOCKED。用户已明确指定定性变化，不另添比例或数值审批；实际样张与Gate2仍待用户看图确认。",
-    "2026-10-08 16:23:23 +08:00 Art 的v0.3 ART_PRODUCTION_PLAN.md首份Required实存非空，Producer于16:23:59核验，REVISION→IN_PROGRESS；新构图文字修订有本轮实产，v0.3 Approval DRAFT且v0.2已批快照保留。",
-    "2026-10-08 16:26:38 +08:00 Producer核Gate1 v0.3 12/12 Required实存非空、DELIVERABLE唯一索引全覆盖、五项acceptance逐字同序PASS、Art/Tech/Master同版APPROVED与三份最终SHA一致；Master最终接受用户明确构图修订，绑定准确v0.3 USER_APPROVED，用户消息精确时刻未知。本时间为登记时刻，Task DONE；资源v0.2因imagegen实际输出尺寸不达标继续BLOCKED，需按新构图与生产方法下一图前重签，Gate2未批。"
+    "2026-10-08 15:05:21 +08:00 Producer核 v0.2 Required 12/12 实存非空且DELIVERABLE唯一全覆盖、Task五项acceptance逐字同序PASS、Art/Tech/Master同版APPROVED及三份最终SHA一致；Master依据证据最终接受。用户明确高度1024其余同意继续，绑定准确v0.2 USER_APPROVED，用户消息精确时刻未知，本时间为审批登记时刻；Gate1 DONE。首图前双预签及Gate2仍独立。"
   ]
 }

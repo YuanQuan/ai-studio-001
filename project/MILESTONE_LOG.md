@@ -1,5 +1,9 @@
 # 关键节点记录
 
+2026-10-08 16:26:38 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | v0.3 REVIEW / USER_APPROVED / DONE | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/DELIVERABLE.json`、`ART_REVIEW.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` | 12/12 Required、五项PASS、三方同版APPROVED，Master最终接受；用户定性构图修订绑定准确v0.3，消息精确时刻未知、登记16:26:38；资源仍BLOCKED、Gate2未批。
+
+2026-10-08 16:23:59 +08:00 | `U01-FIVE-LAYER-REDRAW-PLAN-001` | v0.3 TASK_STARTED / REVISION→IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md`、`tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.2.json` | 首份Required于16:23:23实存；用户新构图决定见DEC-U01-COMPOSITION-010，旧v0.2批准历史保留，v0.3审批仍DRAFT、同版Review待齐。
+
 时间未记录（本轮 Master 最终核验补充） | `U01-FIVE-LAYER-REDRAW-ASSET-001` | Master 实看 S01/S02 / BLOCKED 结论维持 | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/MASTER_BLOCKED_REVIEW.json` | 指定 PSD skill 已可用；两次内置 imagegen 原始输出仍为 2172×724，实际阻塞在目标画幅产出。备用 API/CLI 未调用或计费，资源 Task BLOCKED、Gate2 DRAFT；本节点准确时间及较前次复盘增加耗时未知。
 
 2026-10-08 15:29:28 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | S02 实图双后验未通过 / IN_PROGRESS→BLOCKED，Gate2 DRAFT | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.2/source/sample_complete_s02.png`、`ART_SAMPLE_REVIEW_S02.json`、`TECH_SAMPLE_CHECK_S02.json`、`DELIVERABLE.json` | 3840×1024 参考输入仍得到 2172×724 原始图；5/19 Required、14 缺失，正式 PSD/五 PNG/重组及运行 NOT_TESTED，停五层扩批。

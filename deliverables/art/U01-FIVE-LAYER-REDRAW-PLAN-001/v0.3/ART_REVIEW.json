@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.3按用户直接构图指令修订：3840×1024和五层不变，天空更高、近景石路更宽且横向铺开、可见河水减少；桥与通桥纵深线保持。原风格、月/柳/桥/灯船/右牌楼身份及旧未批挂件排除。无虚设新比例或像素界线；旧画等比坐标仅作参考。"
+    },
+    {
+      "severity": "INFO",
+      "message": "同版方案文件 SHA-256：ART_PRODUCTION_PLAN.md=87f3460157fac91dbb67d83531f89255b41a4b6d95aefe13f6d7de3d315774dd; OCCLUSION_AND_VIEWPORT_PLAN.md=542d4738a59b54194b525f6b61684f5f57788418d134e2550ed43374698f575f; USER_REVIEW_PACKET.md=0fb4bfb4c88a6d2763cfb301ca5b458428d31f3da02e34172a0d726f00d9f257。保留未裁源、五层边界、L04补底、连续镜头遮挡证明、文件体积与纹理内存区分；未出合格新图片或运行结果。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本评审仅覆盖文字美术方案。bggg技能已安装且临时PSD回读能力已验证；实际BLOCKED为两次imagegen仍输出2172×724、未得3840×1024新绘源图。旧S01/S02仅技术失败历史样张，外部API未经用户opt-in不使用；首图前Art/Tech预签和Gate2实图审核不可替代。"
+    }
+  ],
+  "next_action": "Tech Lead与Master复核准确v0.3；Producer绑定用户本轮直接构图指令及同版评审。取得符合3840×1024的新绘源图并完成首图前Art/Tech双签后才可继续生产，实际样张与Gate2另交用户看图。"
+}

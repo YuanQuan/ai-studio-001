@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-08 16:26:38 +08:00（Producer绑定登记时刻，用户消息精确时刻未知）：`U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.3 `USER_APPROVED`。用户明确河水少、街道宽、通桥纵深保持、天空更高且3840×1024与五层不变；Art/Tech/Master同版APPROVED、12/12 Required、五项PASS，Master最终接受。现行 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` 指向v0.3审核包与Master Review；v0.2已批历史原样保存 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`。资源Gate2仍DRAFT、decided_at null；新构图实图尚未产生，不把本次文字方案批准替代切图效果批准。
+
+2026-10-08 16:23:59 +08:00（Producer 修订登记；用户消息精确时刻未知）：用户明确U01新构图方向，已记 `project/DECISIONS.md` 的 `DEC-U01-COMPOSITION-010`。Gate1现行v0.3 `DRAFT`，正进行文书与同版Review，尚未绑定最终Artifact版本；v0.2 `USER_APPROVED` JSON原样快照为 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`。后续核齐v0.3 12项Required及Art/Tech/Master同版通过后，绑定用户已给的定性决定，不重复索取相同Gate1审批。资源Gate2仍DRAFT且无正式新样张/五层图。
+
 2026-10-08 15:29:28 +08:00（流程核验，非用户决定）：`U01-FIVE-LAYER-REDRAW-ASSET-001` Gate2 当前 v0.2 `DRAFT`、`decided_at=null`。S01/S02 代表样张均未过 3840×1024 关口，未形成正式 PSD、五层 PNG 或同尺度重组，不能送具体切图效果用户审核；v0.1 BLOCKED 审批历史另存 `tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL_v0.1.json`。Gate1 v0.2 `USER_APPROVED` 决定仍有效且只适制作前方案。
 
 2026-10-08 15:05:21 +08:00（Producer 绑定登记时刻，用户消息精确时刻未知）：`U01-FIVE-LAYER-REDRAW-PLAN-001` Gate1 v0.2 `USER_APPROVED`。用户明确原方案其余内容没问题、画布高度保持1024并要求继续；Art/Tech/Master 同版 APPROVED、12/12 Required、五项 PASS，Master 最终接受。现行 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json` 指向 v0.2 审核包与 Master Review；旧 v0.1 USER_REVIEW 快照 `tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL_v0.1.json` 保留。资源任务 Gate2 仍 DRAFT、decided_at null；首图前双预签 BLOCKED，无图，用户尚未对具体切图效果作决定。
