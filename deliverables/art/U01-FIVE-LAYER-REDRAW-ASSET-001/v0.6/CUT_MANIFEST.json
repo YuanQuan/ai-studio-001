@@ -1,0 +1,17 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "version": "v0.6",
+  "canvas": [3072, 1024],
+  "psd": {"path": "source/u01_five_layer_master.psd", "sha256": "cb6dd00c99a2082d59d2ea0e4dd494185c768b15190dde29e5eec966cb49ccac"},
+  "overall": {"path": "review/overall_from_psd.png", "sha256": "b619206178157ea86bbadfa1ed33b59e5d478852dd3431a38c556ae557ee51da"},
+  "layers_bottom_to_top": [
+    {"asset_id": "STREET_BASE_01_L01", "description": "夜空/月云", "art_path": "exports/tex_street_base_01_l01_sky.png", "sha256": "7a6d0edb296e09b3135f797039c3927dc48f037f5cb7efd86d338e24b19e05e8", "source": "../v0.5/review/candidate_3072_layers/01_L01_sky.png", "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png", "client_uuid": null, "import_status": "PLANNED"},
+    {"asset_id": "STREET_BASE_01_L02", "description": "雾山/远楼", "art_path": "exports/tex_street_base_01_l02_mountains.png", "sha256": "4c6a688cf3a9eeb2f524adf29e8db3ee8496a8b7662de5ea045e9424edc2eac8", "source": "../v0.5/review/candidate_3072_layers/02_L02_mountains.png", "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png", "client_uuid": null, "import_status": "PLANNED"},
+    {"asset_id": "STREET_BASE_01_L03", "description": "柳林/后岸街/右牌楼", "art_path": "exports/tex_street_base_01_l03_ground.png", "sha256": "001ec0f30475c98b4bd7a9d424cc5a299101bff0add97fadec7667a62c69229d", "source": "../v0.5/review/candidate_3072_layers/03_L03_ground.png", "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png", "client_uuid": null, "import_status": "PLANNED"},
+    {"asset_id": "STREET_BASE_01_L04", "description": "桥栏/前景河/灯船", "art_path": "exports/tex_street_base_01_l04_water_bridge.png", "sha256": "7305e1185280f6349149e8902b01f6c5c983fc1348ef046a7b11a9a343c63de1", "source": "../v0.5/review/candidate_3072_layers/04_L04_water_bridge.png", "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l04_water_bridge.png", "client_uuid": null, "import_status": "PLANNED"},
+    {"asset_id": "STREET_BASE_01_L05", "description": "河前近景水草", "art_path": "exports/tex_street_base_01_l05_water_grass.png", "sha256": "f0597e3c9d5dea2b1e81ec86d94fdfb7c54144c235ff23665f39a4d01049b1d5", "source": "../v0.5/review/candidate_3072_layers/05_L05_water_grass.png", "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l05_water_grass.png", "client_uuid": null, "import_status": "PLANNED"}
+  ],
+  "layer_parallax_candidate": [0.3, 0.8, 1, 1, 1],
+  "trim": "none",
+  "anchor": "center"
+}

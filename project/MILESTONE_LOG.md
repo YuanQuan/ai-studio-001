@@ -1,5 +1,15 @@
 # 关键节点记录
 
+2026-10-09 11:21:46 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` / `U01-FIVE-LAYER-CLIENT-REPLACE-001` | v0.6成品文件核验通过 / 资源IN_PROGRESS→USER_REVIEW，Client BACKLOG | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/DELIVERABLE.json`、`USER_REVIEW_PACKET.md`、`ART_FILE_CHECK.json`、`CUT_MANIFEST.json`、`source/u01_five_layer_master.psd`、`exports/`、`review/overall_from_psd.png`、`review/portrait_viewports.png`；`project/ASSET_HANDOFF_REGISTRY.md`、Task/Approval | 19/19 Required、交付索引一致、四验收PASS；五PNG同源hash/3072×1024 RGBA，PSD五层与重组逐像素一致。自产切图直接送具体资源用户审核，Gate2 USER_REVIEW/decided_at null；客户端未接入，等准确版本批准。
+
+2026-10-09 11:05:44 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.6 正式PSD/五PNG/总览路径实产 / IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/source/u01_five_layer_master.psd`、`exports/`五图、`review/overall_from_psd.png` | 仅记文件存在；同源hash/五层PSD回读、视窗、清单、Gate2审核包尚待核，不提前宣称完成或批准。
+
+2026-10-09 11:03:48 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.6 Art/Tech同SHA画幅预签APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/PREFLIGHT_PLAN.md`、`TOOLCHAIN_AUDIT.md`、`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json` | 预案SHA`fbd3ff10…67c7ff`、审计SHA`f75539aa…f0511f`实核匹配；仅放行同源3072候选整理，正式PSD/切片与用户Gate2另核。
+
+2026-10-09 11:02:17 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.6 TASK_STARTED / READY→IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/PREFLIGHT_PLAN.md`、`TOOLCHAIN_AUDIT.md` | 两份Required于11:01:17实存非空；同源3072正式包实作开始，Art/Tech同SHA预签与正式导出待核，Gate2 DRAFT。
+
+2026-10-09 11:00:50 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 用户批准3072×1024画幅方案 / 资源v0.6 READY | `project/DECISIONS.md`的`DEC-U01-CANVAS-3072-013`、资源`TASK.json`、`ARTIFACT_APPROVAL.json`、历史`TASK_v0.5.json`与`ARTIFACT_APPROVAL_v0.5.json` | v0.6尚无Required实产；Gate2 DRAFT、未批具体切片；Art/Tech复签同源正式包，Client替换Task依赖保持BACKLOG。
+
 2026-10-09 10:50:25 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` / `U01-FIVE-LAYER-CLIENT-REPLACE-001` | v0.5 左翼失败 / 资源IN_PROGRESS→BLOCKED，Client BACKLOG | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TECH_LEFT_OVERLAP_CHECK.md`、`DELIVERABLE.json`、`USER_REVIEW_PACKET.md`、`source/assembly/left_overlap_trial.png`、`review/candidate_3072_overall.png`；资源与Client Task/Approval | Tech CHANGES_REQUESTED双柳/栏杆重影，3840右翼不扩；资源Required 6/19、13缺，Gate2 DRAFT非送审；3072等比候选待用户画幅选择，旧四层客户端未替换。Continuity：真实方法/决定阻塞，无U01空转任务。
 
 2026-10-09 10:43:06 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 中心五层试图展示 / 画幅偏好待用户决定 | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/five_center_trial.png`；Gate1 v0.3 Approval、Gate2 v0.5 Approval | Master向用户展示实图并问3072×1024中心或继续3840×1024两翼；截至登记未见决定，保持既批3840×1024，Art可做已签一次左翼修复，资源IN_PROGRESS/Gate2 DRAFT。

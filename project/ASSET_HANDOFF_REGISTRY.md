@@ -41,6 +41,20 @@
 资源替换时追加记录：日期、源与新 Artifact 版本、旧/新 SHA-256、是否保持 `.meta` UUID、受影响的 Prefab/Scene、专业和用户审批及复验结果；旧记录保留追溯。其他单元资源未来按同一字段增加条目，不复用本批 ID。
 
 
+## U01 五层新场景 v0.6｜美术交付与客户端计划（待具体切片用户审批）
+
+用户已选3072×1024画幅，当前美术资源以`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/CUT_MANIFEST.json`为来源；五张PNG同画布RGBA、左上原点、中心锚点、`trim=none`，自下而上L01–L05。美术PSD为`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/source/u01_five_layer_master.psd`，SHA-256 `cb6dd00c99a2082d59d2ea0e4dd494185c768b15190dde29e5eec966cb49ccac`；重组图为同版`review/overall_from_psd.png`，SHA-256 `b619206178157ea86bbadfa1ed33b59e5d478852dd3431a38c556ae557ee51da`。以下均为**候选接入计划**，Gate2具体切片尚待用户决定；客户端旧四层实际文件与上文UUID记录继续有效，不得把计划路径当成已导入。
+
+| 稳定资产ID | 美术v0.6实际路径与SHA-256 | 语义／视差 | 客户端正式计划路径 | Creator UUID与状态 |
+|---|---|---|---|---|
+| `STREET_BASE_01_L01` | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l01_sky.png`；`7a6d0edb296e09b3135f797039c3927dc48f037f5cb7efd86d338e24b19e05e8` | 夜空、月云；0.3 | `apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png` | `PLANNED`；新图未导入，实际UUID未核；旧图UUID见上表 |
+| `STREET_BASE_01_L02` | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l02_mountains.png`；`4c6a688cf3a9eeb2f524adf29e8db3ee8496a8b7662de5ea045e9424edc2eac8` | 雾山、远楼；0.8 | `apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png` | `PLANNED`；新图未导入，实际UUID未核；旧图UUID见上表 |
+| `STREET_BASE_01_L03` | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l03_ground.png`；`001ec0f30475c98b4bd7a9d424cc5a299101bff0add97fadec7667a62c69229d` | 柳林、后岸街、右牌楼；1.0 | `apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png` | `PLANNED`；新图未导入，实际UUID未核；旧图UUID见上表 |
+| `STREET_BASE_01_L04` | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l04_water_bridge.png`；`7305e1185280f6349149e8902b01f6c5c983fc1348ef046a7b11a9a343c63de1` | 桥栏、前景河、灯船；1.0 | `apps/client/assets/units/background/textures/tex_street_base_01_l04_water_bridge.png` | `PLANNED`；新图未导入，实际UUID未核；现旧图文件名不同，旧UUID见上表 |
+| `STREET_BASE_01_L05` | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l05_water_grass.png`；`f0597e3c9d5dea2b1e81ec86d94fdfb7c54144c235ff23665f39a4d01049b1d5` | 河前近景水草；1.0 | `apps/client/assets/units/background/textures/tex_street_base_01_l05_water_grass.png` | `PLANNED`；尚无实际UUID |
+
+本表由Producer按Master在资源Task中的授权追加计划索引；Art文件及SHA已经核对，未复制到客户端。Gate2批准后Client应按真实导入回填源/目标SHA、实际image/Texture2D/SpriteFrame UUID、Prefab引用与运行验证，不改写旧四层历史。
+
 ## U02 游客 FULL-A/formal v0.1｜资源入库登记
 
 责任角色：Client；Task：`U02-TOURIST-CLIENT-ASSET-001`。正式美术版本为 `deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/`，Gate2 批准记录为 `tasks/U02-TOURIST-ASSET-001/ARTIFACT_APPROVAL.json`（`USER_APPROVED`），同尺度重组 SHA-256 `E1ED44D83EED19CBC86CAB1648FB2FE35361DD8DDD96D02B5DB5D1E80E92E16E`。仅按获批导出文件复制 20 主体帧与 4 装扮透明片；PSD 留在 Art 交付，不作为运行纹理。下列客户端 PNG 的 SHA 与 Art PNG 逐项相同。

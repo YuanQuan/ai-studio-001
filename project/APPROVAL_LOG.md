@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-09 11:21:46 +08:00（Producer Gate2正式送审；非用户批准）：`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.6 五张3072×1024实际PNG、五层PSD、零位总览、静态手机视窗、来源/版本清单已在`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/USER_REVIEW_PACKET.md`展示并核19/19 Required、四验收PASS。按本组织自行切图例外直接USER_REVIEW，`tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL.json`状态USER_REVIEW、`decided_at=null`。用户此前只批准3072画幅方案，尚未批准本版具体切片；Client任务继续BACKLOG，旧四层工程未换。
+
+2026-10-09 11:00:50 +08:00（Producer画幅决定绑定；用户消息精确时刻未知）：用户明确“采用3072×1024方案吧”，`DEC-U01-CANVAS-3072-013`把U01当前正式画幅定为3072×1024，取消左右加长。此前3840目标与v0.5失败试验保留历史。此决定只覆盖画幅方案；资源Gate2现行v0.6 DRAFT、decided_at null，五层实际正式切片及重组待提交用户审核，Client接入仍锁定。
+
 2026-10-09 10:50:25 +08:00（Producer停线核验，非用户对新资源决定）：资源v0.5中心五层真PSD试组及3072等比候选仅用于画幅选择；3840左翼过渡Tech CHANGES_REQUESTED，目标正式五层PSD/五PNG、重组与视窗缺失。`U01-FIVE-LAYER-REDRAW-ASSET-001` Gate2 v0.5维持DRAFT、decided_at null，`USER_REVIEW_PACKET.md`不是具体切图审批包。用户尚未选新画幅，也未批准具体五层切片；Client正式替换任务BACKLOG。
 
 2026-10-09 10:43:06 +08:00（流程登记，非审批决定）：Master向用户展示v0.5`source/assembly/five_center_trial.png`并征询3072×1024完整中心或继续3840×1024修两翼；截至登记未见用户回复。现行Gate1仍为已批3840×1024，资源Gate2 v0.5 DRAFT、decided_at null；任何画幅改动须绑定用户准确决定，中心试图本身不是正式切片审批。

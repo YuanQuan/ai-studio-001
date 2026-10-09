@@ -1,0 +1,53 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "status": "READY_FOR_REVIEW",
+  "summary": "已将获批的3072×1024五层候选同字节整理为正式PSD和五张PNG，完成同尺度重组与静态手机视窗核验，提交具体切片用户审核；尚未接入客户端。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/ART_FILE_CHECK.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/CUT_MANIFEST.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/review/overall_from_psd.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/review/portrait_viewports.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.3和用户最新3072×1024画幅决定准确绑定；导出前Art/Tech对同源候选、新画幅、层级与60MiB估算预签通过。",
+      "result": "PASS",
+      "evidence": "v0.6/PREFLIGHT_PLAN.md、TOOLCHAIN_AUDIT.md及ART_PREFLIGHT.json、TECH_PREFLIGHT.json记录同SHA批准；DEC-U01-CANVAS-3072-013。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3072×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "PASS",
+      "evidence": "v0.6/PSD_EDITABILITY_REPORT.md、CUT_MANIFEST.json、ART_FILE_CHECK.json、VISUAL_ANCHOR_CHECK.md；PSD五层与五PNG均3072×1024，同尺度重组逐像素一致。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "PASS",
+      "evidence": "本版没有执行额外遮挡裁减，保留完整同源PSD及PNG；CUT_MANIFEST.json、ART_FILE_CHECK.json记录未裁状态，不声称全域遮挡证明。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "v0.6/USER_REVIEW_PACKET.md列出实际五PNG、PSD、总览与静态视窗；ART_FILE_CHECK.json记录源哈希、同尺度重组一致；客户端导入和运行明确NOT_TESTED。"
+    }
+  ],
+  "risks": [
+    "3072×1024由2172×724附近的原始源等比采样，不代表新增原生细节。",
+    "五张RGBA纹理未压缩展开约60MiB，客户端实际内存和运行效果须接入后验证；当前未导入。"
+  ]
+}

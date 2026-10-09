@@ -1,5 +1,15 @@
 # 工作流状态
 
+2026-10-09 11:21:46 +08:00（Producer U01 v0.6 Gate2具体切片送审与continuity）资源Task 19/19 Required实存非空，`DELIVERABLE.json`19项唯一索引与Task逐项一致，四项验收逐字同序PASS；Art/Tech同SHA预签已核。正式五PNG均3072×1024 RGBA、同v0.5已核候选逐字节一致；PSD实读五层，五图与PSD零位重组逐像素一致。`CUT_MANIFEST.json`沿用旧稳定ID L01–L04、新增L05，路径及SHA全匹配；`project/ASSET_HANDOFF_REGISTRY.md`已新增v0.6未导入计划表，旧四层实际UUID历史保留。按自产切图规则直接`IN_PROGRESS→USER_REVIEW`，Gate2 v0.6 Approval USER_REVIEW、decided_at null；画幅方案已批但具体五切片**尚待用户决定**。Client替换任务BACKLOG且未导入。Continuity check：资源已到真实USER_REVIEW门禁、Client存在明确依赖，U01无可继续却空转的READY/IN_PROGRESS；本周期可在用户具体决定处停。复盘`WR-20261009-U01-3072-RESOURCE-008`。
+
+2026-10-09 11:05:44 +08:00（Producer U01 v0.6正式文件实产进度）`source/u01_five_layer_master.psd`、五张`exports/tex_street_base_01_l0*.png`及`review/overall_from_psd.png`均已落盘；静态多视窗正在生成，文件核验/版本清单/审核包尚待。上述存在只证明正式文件路径实产，未先判内容验收或用户审批；资源IN_PROGRESS、Gate2 DRAFT、Client BACKLOG。Continuity：Art正在补完整19项Required。
+
+2026-10-09 11:03:48 +08:00（Producer U01 v0.6新画幅预签核验）Art/Tech两份`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json`均APPROVED并同指预案SHA`fbd3ff10…67c7ff`、审计SHA`f75539aa…f0511f`，与两实文件哈希相符。只解锁v0.5已核3072候选按同字节正式命名、原位重组、静态手机视窗；具体PSD/五PNG复制后还须实核，不能由预签推断完成。资源IN_PROGRESS、Gate2 DRAFT、Client BACKLOG。Continuity：Art继续齐备19项Required，不停在预签。
+
+2026-10-09 11:02:17 +08:00（Producer U01资源v0.6实际开工）`PREFLIGHT_PLAN.md`与`TOOLCHAIN_AUDIT.md`两份Required均于11:01:17实存非空；资源Task按Art实产`READY→IN_PROGRESS`。本轮复签与3072×1024五层正式文件仍待；Gate2 v0.6 DRAFT，Client替换BACKLOG。Continuity check：Art/Tech持续整理正式包，不停在IN_PROGRESS占位。
+
+2026-10-09 11:00:50 +08:00（Producer U01 3072画幅重启登记）用户明确采用3072×1024方案，Master记`DEC-U01-CANVAS-3072-013`并保存资源v0.5 Task/Approval历史；当前资源Task Required改指v0.6、状态READY，Gate2 v0.6 DRAFT、decided_at null。核验时v0.6目录未建立，故尚未记Art本轮开工；v0.5等比3072五层候选实存且只作为同源正式整理基础。Client替换Task继续BACKLOG，依赖v0.6具体切片用户批准；画幅选择本身不批准未展示切片。Art/Tech正在复签和正式包整理，继续跟踪Required实产，READY不是本轮终点。无连续域遮挡证明则保留完整层，不因可选透明优化阻塞正式包。
+
 2026-10-09 10:50:25 +08:00（Producer U01 v0.5试产停线与continuity）Art`DELIVERABLE.json`状态BLOCKED、`USER_REVIEW_PACKET.md`为制作进度/尺寸选择说明而非Gate2；Tech `TECH_LEFT_OVERLAP_CHECK.md`对3840左侧过渡试图CHANGES_REQUESTED：x≈384柳灌双影、栏杆断续。三轮左翼续绘未过，右翼未扩。中心2172×724真五层PSD/PNG试组及其等比3072×1024候选已留存，不能宣称原生新细节或已替换。核Task Required 6/19实存、13缺；四项验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED。资源Task`IN_PROGRESS→BLOCKED`，Gate2 v0.5 DRAFT、decided_at null，Client替换Task BACKLOG。画幅选择待用户明确回复；未答仍维持既批3840×1024。Continuity check：左翼方法实图失败且换画幅涉及用户决定，当前为真实BLOCKED，无可继续的U01空转READY/IN_PROGRESS；已签一张试样完成，不在本周期扩右翼或提交正式切片。复盘`WR-20261009-U01-FIVE-LAYER-REPLACE-007`。
 
 2026-10-09 10:43:06 +08:00（Producer U01画幅选择待用户回复）Master已展示真实`five_center_trial.png`并请用户在完整中心3072×1024与既批3840×1024两翼修复之间选择；截至本次核验未收到决定。当前正式目标维持已批3840×1024，不擅自改Gate1或任务验收；Art可完成已预签的一次左翼定向试样。资源IN_PROGRESS有实际试制证据，Gate2 DRAFT，Client BACKLOG；这不是五层切片用户审批。

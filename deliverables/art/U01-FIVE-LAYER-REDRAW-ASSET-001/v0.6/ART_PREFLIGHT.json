@@ -1,0 +1,10 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "同版PREFLIGHT_PLAN.md SHA-256 fbd3ff108e2bbc5be841a91f18988c38b4e373864888fe9c80eae411b167c7ff；TOOLCHAIN_AUDIT.md SHA-256 f75539aa29dd4a90826d9eacfedcaf4fe948da43e01bf8eead6a3c5bfbf0511f。用户最新3072×1024决定覆盖旧3840宽，五层及视觉语义不变。"},
+    {"severity": "INFO", "message": "只批准v0.5现有候选PSD、五PNG、总览同字节整理为正式路径和静态视窗核验；不重新生图/改像素、不对未知遮挡作透明裁减。具体切片仍须用户Gate2审批。"}
+  ],
+  "next_action": "待Tech对同两SHA独立预签后复制既有候选并核19项正式Required。"
+}

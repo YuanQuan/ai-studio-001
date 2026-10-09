@@ -6,9 +6,9 @@
   "parent": null,
   "objective": "仅在U01新五层实际切片版本获得用户明确批准后，以同源PNG正式替换U01背景，更新五层Prefab和镜头画幅，在现有单元入口验证拖动、缩放及手机多视窗效果。",
   "inputs": [
-    "用户2026-10-09：正式替换U01；DEC-U01-REPLACEMENT-012",
+    "用户2026-10-09：正式替换U01；DEC-U01-REPLACEMENT-012、DEC-U01-CANVAS-3072-013",
     "tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL.json（须准确版本USER_APPROVED后才执行）",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/CUT_MANIFEST.json、USER_REVIEW_PACKET.md、CUT_COLLABORATION_RECORD.md（尚待完成和用户批准）",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/CUT_MANIFEST.json、USER_REVIEW_PACKET.md、CUT_COLLABORATION_RECORD.md（尚待完成和用户批准）",
     "project/ASSET_HANDOFF_REGISTRY.md",
     "rules/cocos_cli_browser_workflow.md 与 agents/shared/skills/cocos-cli-browser/SKILL.md",
     "apps/client现有工程及已批准U01拖动/缩放1.0–1.8行为"
@@ -25,8 +25,8 @@
     "project/ASSET_HANDOFF_REGISTRY.md"
   ],
   "acceptance": [
-    "只消费准确USER_APPROVED五层切片，五PNG源/目标SHA一致；Creator实际导入，保留旧UUID身份或记录真实新UUID，同坐标3840×1024且禁自动trim。",
-    "Prefab和所有活动U01入口正确引用五层；镜头源尺寸3840×1024及视差[0.3,0.8,1,1,1]同步，拖动/缩放1.0–1.8/重置/返回重进保持已批准行为；不修改U02/U03等其他单元逻辑。",
+    "只消费准确USER_APPROVED五层切片，五PNG源/目标SHA一致；Creator实际导入，保留旧UUID身份或记录真实新UUID，同坐标3072×1024且禁自动trim。",
+    "Prefab和所有活动U01入口正确引用五层；镜头源尺寸3072×1024及视差[0.3,0.8,1,1,1]同步，拖动/缩放1.0–1.8/重置/返回重进保持已批准行为；不修改U02/U03等其他单元逻辑。",
     "记录修改前哈希/可恢复副本、序列化对象图与活动引用检查、版本相容Creator导入和实际Web构建、本地HTTP内置浏览器实测；五手机视窗中心/边缘及拖缩关键状态有证据。缺环节明确NOT_TESTED/BLOCKED。",
     "运行画面与获批重组同背景同视窗同尺度对照，美术/技术对本次接入结果检查；资源路径/UUID/版本登记齐全，PNG字节量和纹理内存估算/实测分开，不宣称未测目标机性能。单元示例Owner检查，不分派QA。"
   ],

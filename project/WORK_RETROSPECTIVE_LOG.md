@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261009-U01-3072-RESOURCE-008
+
+- 周期与结果：可核流程窗口为2026-10-09 11:00:50–11:21:46 +08:00，墙钟20分56秒；用户画幅回复的精确时间未知，不能把本窗口当作全部工作时间。用户明确采用3072×1024后，Master记录`DEC-U01-CANVAS-3072-013`并将资源切到v0.6；Art/Tech同SHA预签后把v0.5既有五层候选同字节整理为正式PSD、五PNG、重组与静态视窗。Producer核19/19 Required、四验收PASS、图层和SHA/重组后送具体切片USER_REVIEW；Gate2尚未用户批准，Client BACKLOG。证据为决策、资源Task/Approval、v0.6双预签、`DELIVERABLE.json`、`ART_FILE_CHECK.json`、`CUT_MANIFEST.json`、审核包与`project/ASSET_HANDOFF_REGISTRY.md`计划表。
+- 时间分类：11:01:17首份Art Required实存，11:02:17开工登记，11:03:48同SHA预签核验，11:05:44正式PSD/五PNG/总览实存，11:21:46最后文件与门禁核验。窗口内包含Art文件制作与检查、Tech预签、Producer登记及并行核验；各角色净工时和各工具耗时未知。此前v0.5失败两翼试验属于上一周期；本周期没有重新生图、左右续绘或Gate2用户审批等待。
+- 速度判断与原因：无可比目标或同类基线，不评价角色快慢。本轮未发现可证实的新的制作返工；可核的关键路径是同源静态核验与19项Required文书完成，时间成本无法从总墙钟拆成各角色份额。上轮“先锁画幅、避免双路线并行”的建议已由用户选择和v0.6单路线执行落实；减少多少时长没有证据。
+- 建议与复核：Producer在用户对v0.6具体切片决定后核Approval准确版本并解锁或退回Client依赖；Client仅在USER_APPROVED后按本表五稳定ID导入、回填真实UUID并完成Creator/浏览器运行视觉与性能检查，代价为接入与实测工作；下一复核点为Client资源登记和同视窗运行对照。静态视窗PASS不外推为运行PASS。
+
 ## WR-20261009-U01-FIVE-LAYER-REPLACE-007
 
 - 周期与结果：可核流程窗口为2026-10-09 10:12:22–10:50:25 +08:00，墙钟38分03秒；用户“正式替换U01”的消息精确时间未记录，不外推为全部工作耗时。Master建资源v0.5/Client依赖任务，Art/Tech同SHA预签后产出五个2172×724语义中心层、中心试组PSD和等比3072×1024候选。3840×1024左翼三轮试拼仍有硬缝或双柳/栏杆重影，Tech最后CHANGES_REQUESTED；正式资源Task BLOCKED、Gate2 DRAFT、Client BACKLOG，未替换。证据为两Task/Approval、v0.5预签、中心及左翼实图、Tech后验、`DELIVERABLE.json`与`USER_REVIEW_PACKET.md`。
