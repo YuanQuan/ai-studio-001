@@ -1,0 +1,71 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "实现U00夜市总览客户端源码，并根据运行反馈完成首屏焦点、性能面板生命周期和四卡菜单布局修订。静态编译、全量资源字节核验、Creator R3 Web-Mobile构建及Master两视口内置浏览器检查通过；交付待用户审核。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/BUILD_AND_RUNTIME_RECORD.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U00 菜单入口、复用三组内容及独立显隐",
+      "result": "PASS",
+      "evidence": "R3内置浏览器实际进入U00，U01/U02/U03原入口可加载；三组分别显隐通过。见BUILD_AND_RUNTIME_RECORD.md与evidence/RUNTIME_R3_MANIFEST.json。"
+    },
+    {
+      "criterion": "五层结构、组合前景1.0镜头同步、控件输入捕获",
+      "result": "PASS",
+      "evidence": "scene1_camera_controller.ts保留5层数组；R3实际拖动、缩放、重置通过，前景实体同步。"
+    },
+    {
+      "criterion": "U00 初始/重置显示左侧街区且 U01 默认中心不变",
+      "result": "PASS",
+      "evidence": "390×844 R3初始/重置显示左侧街区；U01默认0且原U01重置通过。"
+    },
+    {
+      "criterion": "U00 进入隐藏性能面板并在退出时恢复原状态",
+      "result": "PASS",
+      "evidence": "R3进入时数量控件无遮挡可用，退出恢复进入前profiler状态。"
+    },
+    {
+      "criterion": "顾客数量0–8、四动作与情绪完整周期、桥两侧移动",
+      "result": "PASS",
+      "evidence": "R3实测3→8且上限生效、隐藏后减至0再增仍隐藏、返回重进恢复3；动作姿态和桥两侧分布可见。"
+    },
+    {
+      "criterion": "店铺顺序、地面接触点和间距",
+      "result": "PASS",
+      "evidence": "720×1280拖动实测六店顺序为奶茶、糖画、炭烤、桥、理发、花灯、投壶，落脚通过。"
+    },
+    {
+      "criterion": "图片、Prefab、字体、Scene、meta字节保持原样",
+      "result": "PASS",
+      "evidence": "RESOURCE_INTEGRITY_CHECK.json覆盖198个跟踪文件；两份授权TS外196/196逐字节与任务起始HEAD一致，含JSON manifest及UUID/meta。"
+    },
+    {
+      "criterion": "Creator 3.8.8 Web-Mobile构建及HTTP实际产物",
+      "result": "PASS",
+      "evidence": "R3 Creator 3.8.8 Web-Mobile构建PASS，149文件/25,896,603 bytes；源码与产物清单SHA绑定，详见BUILD_AND_RUNTIME_RECORD.md。"
+    },
+    {
+      "criterion": "Codex内置浏览器两视口交互与运行画面",
+      "result": "PASS",
+      "evidence": "Master完成390×844及720×1280 R3浏览器检查，HTTP 200、console warn/error=[]；截图与哈希见evidence/RUNTIME_R3_MANIFEST.json。"
+    }
+  ],
+  "assumptions": [
+    "沿用已用户批准的U00 v0.1语义和已批准U01 v0.1、U02 v0.3-R2、U03 v0.1/R3资源与客户端实现。",
+    "U02 manifest四动作实际均为loop；U00按每动作totalDurationMs调度一整轮后切换，保持U02 Controller和manifest契约不变。",
+    "店铺统一按ground_contact位置对齐到道路后沿源坐标y=-225，缩放0.4；顾客额外缩放0.28，移动路径止于桥洞两侧x=±240。布局已通过R3真实构建截图与内置浏览器运行复核。"
+  ],
+  "risks": [
+    "桌面Web之外的真机触控、帧率、DrawCall和内存尚未测量。",
+    "Creator构建已完成资源导入；未逐项回读Library中的SpriteFrame UUID/像素。",
+    "情绪动作位移为0由源码逻辑保证；运行截图只用于确认姿态可见，不是逐帧位移测量。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

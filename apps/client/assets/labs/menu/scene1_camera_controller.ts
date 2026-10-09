@@ -24,16 +24,24 @@ export class Scene1CameraController extends Component {
   @property({ type: [Node], tooltip: '从后到前：天空、山峦、地面、前景。' })
   public layers: Node[] = [];
 
+  @property({ type: [Node], tooltip: '可选的1.0前景同步节点；不计入五层背景。' })
+  public synchronizedNodes: Node[] = [];
+
   @property({ type: Node, tooltip: '背景可交互视口；Lab 控件应放在独立覆盖层。' })
   public viewport: Node | null = null;
 
   @property({ type: Node, tooltip: '覆盖在视口上的 Lab 控件命中根节点；其内触点由 UI 捕获。' })
   public uiCaptureRoot: Node | null = null;
 
+  @property({ type: [Node], tooltip: '可选的受控命中列表；只捕获列出的实际控件。' })
+  public uiCaptureNodes: Node[] = [];
+
   @property({ type: Node }) public zoomInButton: Node | null = null;
   @property({ type: Node }) public zoomOutButton: Node | null = null;
   @property({ type: Node }) public resetButton: Node | null = null;
   @property({ type: Node }) public backButton: Node | null = null;
+  @property({ tooltip: '镜头复位中心；0为画布中心，运行时按视口边界约束。' })
+  public resetCameraX = 0;
 
   private cameraX = 0;
   private zoom = 1;
@@ -54,7 +62,7 @@ export class Scene1CameraController extends Component {
 
   protected onEnable(): void {
     this.destroyed = false;
-    this.cameraX = 0;
+    this.cameraX = this.resetCameraX;
     this.zoom = 1;
     this.bindTouchControls();
     input.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
@@ -121,7 +129,7 @@ export class Scene1CameraController extends Component {
 
   public reset(): void {
     this.clearGesture();
-    this.cameraX = 0;
+    this.cameraX = this.resetCameraX;
     this.zoom = 1;
     this.recalculate();
   }
@@ -248,6 +256,9 @@ export class Scene1CameraController extends Component {
   }
 
   private findControl(point: Vec2): Node | null {
+    for (const control of this.uiCaptureNodes) {
+      if (control && control.activeInHierarchy && this.isInsideNode(control, point)) return control;
+    }
     for (const control of [this.zoomInButton, this.zoomOutButton, this.resetButton, this.backButton]) {
       if (control && control.activeInHierarchy && this.isInsideNode(control, point)) return control;
     }
@@ -290,6 +301,11 @@ export class Scene1CameraController extends Component {
       if (!layer || !layer.isValid) continue;
       layer.setScale(scale, scale, 1);
       layer.setPosition(-this.cameraX * scale * RATIOS[i], 0, 0);
+    }
+    for (const node of this.synchronizedNodes) {
+      if (!node || !node.isValid) continue;
+      node.setScale(scale, scale, 1);
+      node.setPosition(-this.cameraX * scale, 0, 0);
     }
   }
 }

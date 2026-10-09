@@ -1,5 +1,21 @@
 # 关键节点记录
 
+2026-10-09 15:15:23 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | Tech/Master同版R3 APPROVED / REVIEW→USER_REVIEW | `deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md` SHA`21ef3d16…a5316cb5`、`DELIVERABLE.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`、`evidence/BUILD_R3_MANIFEST.json`、`evidence/RUNTIME_R3_MANIFEST.json`；`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json` | 10/10 Required、九项Owner验收PASS，R3两视口实际运行通过；Approval USER_REVIEW、用户尚未决定。R1/R2仅历史，未测项不标PASS。
+
+2026-10-09 15:11:50 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | R3自检与Tech同版评审 / IN_PROGRESS→REVIEW | `deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md`、`RESOURCE_INTEGRITY_CHECK.json`、`OWNER_SELF_CHECK.md`、`BUILD_AND_RUNTIME_RECORD.md`、`DELIVERABLE.json`、`TECH_REVIEW.json`、`evidence/BUILD_R3_MANIFEST.json`、`evidence/RUNTIME_R3_MANIFEST.json` | 9项Owner自审PASS；Tech R3 APPROVED，仅单元示例桌面Web范围。Master Review未落，Approval DRAFT；R1/R2为返工历史，不混入R3审批。
+
+2026-10-09 14:43:01 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | Creator隔离构建证据出现 / IN_PROGRESS | `deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/evidence/CREATOR_BUILD_LOG.txt`、`BUILD_MANIFEST.json` | manifest列149文件/25,895,468 bytes并绑定两源码SHA；需Tech复核构建身份、Owner回填运行记录及浏览器两视口验证后再判验收。
+
+2026-10-09 14:38:13 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | Client首轮报告/自检/交付索引提交 / IN_PROGRESS | `deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md`、`RESOURCE_INTEGRITY_CHECK.json`、`OWNER_SELF_CHECK.md`、`BUILD_AND_RUNTIME_RECORD.md`、`DELIVERABLE.json` | 10项Task Required中8路径实存，缺Tech/Master Review；DELIVERABLE运行两项NOT_TESTED，待Creator构建与两视口浏览器证据后更新。Approval DRAFT，不送用户。
+
+2026-10-09 14:37:00 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | 资源完整性核查首份文书 / IN_PROGRESS | `deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/RESOURCE_INTEGRITY_CHECK.json` | Client已提交Task Required资源核查文件；其余报告、运行记录、DELIVERABLE及同版评审待齐，尚不判验收。
+
+2026-10-09 14:27:29 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | 第二份Required源码实产 / IN_PROGRESS | `apps/client/assets/UnitSampleGallery.ts`、`apps/client/assets/labs/menu/scene1_camera_controller.ts` | git diff见U00入口组合、显隐/人数/动作与镜头同步实现；Client报告六店脚点和顾客尺度已调整，Creator AssetDB尚待释放后构建。源码实产不等于构建/浏览器或验收通过。
+
+2026-10-09 14:19:28 +08:00 | `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | TASK_STARTED / READY→IN_PROGRESS | `apps/client/assets/labs/menu/scene1_camera_controller.ts`（git diff新增synchronizedNodes属性及五层外1.0同步节点scale/position逻辑）；`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/TASK.json` | 首份Task Required源码实变；实现/构建/运行/评审仍进行中，Approval DRAFT。
+
+2026-10-09 14:17:24 +08:00（用户消息精确时刻未知） | `U00-OVERVIEW-BRIEF-001` / `U01-FIVE-LAYER-CLIENT-REPLACE-001` / `U02-TOURIST-CLIENT-INTEGRATION-001` / `U00-OVERVIEW-CLIENT-IMPLEMENT-001` | 三准确版本USER_APPROVED、Task USER_REVIEW→DONE；U00实施BLOCKED→READY | 三Task的`ARTIFACT_APPROVAL.json`和`TASK.json`；`deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md`、`deliverables/client/U01-FIVE-LAYER-CLIENT-REPLACE-001/v0.1/IMPLEMENTATION_REPORT.md`、`deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/IMPLEMENTATION_REPORT.md`；`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/TASK.json` | 用户两次明确决定分别绑定准确版本；U00方案批准不等于实施批准。U02示例不安排QA，未测性能/实触/目标设备保留；U00实施解锁但尚无当轮Required实产，不记TASK_STARTED/IN_PROGRESS。
+
 2026-10-09 14:09:52 +08:00 | `U00-OVERVIEW-BRIEF-001` | Tech/Master同版APPROVED / REVIEW→USER_REVIEW | `deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md` SHA`9abee98f…ed3cda71`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`；`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json` | 四项验收PASS；Approval USER_REVIEW/decided_at null。仅编码前方案送用户决定，未编码或运行验证；U01/U02待批不由本线代批。
 
 2026-10-09 14:07:05 +08:00（Producer核验时刻；首份文件实际落盘时刻待核） | `U00-OVERVIEW-BRIEF-001` | TASK_STARTED / READY→IN_PROGRESS；Client v0.1首稿提交 / IN_PROGRESS→REVIEW | `deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json` | 三份Owner文件实存，DELIVERABLE为READY_FOR_REVIEW；方案前三验收PASS、评审/用户门禁NOT_TESTED。Tech/Master同版Review待，不记用户批准或编码开工。

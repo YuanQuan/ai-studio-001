@@ -399,3 +399,18 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 本周期后续节点（17:24:44核验）：QA-MATRIX v0.1随后补齐Master Review，Producer核7/7 Required存在、索引一致、四项方案送审验收PASS，将Task/Approval推进 `USER_REVIEW`；仅等待用户对环境矩阵决定，矩阵测试项未执行。Master已将PERF-PLAN v0.1 Client MAJOR退回落实为v0.2修订，Tech在17:23:23实际开始并提交新稿，Task `IN_PROGRESS`，历史v0.1保留且不送用户。Master另建Client测量支持Task，因矩阵和性能方案待用户批准而保持 `BACKLOG`。Continuity check更新：矩阵到用户门禁，性能修订有实际产出，测量支持依赖明确；无空转READY/IN_PROGRESS。正式QA/性能采样/TEST_REPORT未执行。
 - 速度复核：Producer此前建议有Required产物即同步状态；Master已依据证据同步PERF Task并启动v0.2，证实该动作可修正状态滞后。没有目标时限或可比基线，不判断整体快慢。后续复核点为性能v0.2逐项响应MAJOR、QA测量支持依赖解锁，以及用户对矩阵决定后的推进状态。
 - 后续同版Review节点（17:26:30核验）：PERF-PLAN v0.2获Client Review APPROVED，QA Review进行中，Master Review待；Task保持REVIEW而非IN_PROGRESS，v0.1 Client MAJOR退回历史留存。QA-MATRIX v0.1继续USER_REVIEW，等待用户决定；QA-MEASUREMENT-001仍BACKLOG，需矩阵及性能方案分别获批后才满足依赖。下一复核点是性能v0.2余下Review齐备后的送审门禁，以及用户对QA矩阵的决定。
+
+### WR-20261009-U00-APPROVAL-001｜三项准确版本批准与U00实现解锁
+
+- 结果与证据：U00 Brief v0.1、U01 Client v0.1、U02 Client v0.3-R2用户明确批准，三Task DONE；U00实施依赖解除进入READY，Approval仍DRAFT。证据见三项`tasks/*/ARTIFACT_APPROVAL.json`、同版交付/评审及`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/TASK.json`。U02为单元示例，正式QA未执行；未测范围保留。
+- 时间：用户两次消息精确时间未知；Producer登记时间2026-10-09 14:17:24 +08:00。本轮开始审计时间未单独可靠记录，总耗时及用户等待、专业Review等待、净登记时间均未知。
+- 速度与改进：无可比基线，本轮未发现可证实的慢因。Master立即推动Client提交U00实施首份Required；Producer以首文件及Task状态复核真实开工，代价为一次证据核查，复核点为U00 TASK_STARTED。
+- Continuity：U00实施当前READY且无阻塞，须继续推进，不能以解锁作为停点；已通知Master。
+
+### WR-20261009-U00-IMPLEMENT-R3-001｜U00示例实现到用户门禁
+
+- 结果与证据：Client v0.1/R3两份源码、实施/资源/自检/运行记录齐全，10/10 Required存在、九项Owner验收PASS；Tech/Master同版R3 Review APPROVED，Task/Approval为USER_REVIEW。证据见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/`与`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/`。真机触控、设备性能、逐UUID Library回读未执行；单元示例不分派正式QA。
+- 时间：Owner首份Required源码开工登记为2026-10-09 14:19:28 +08:00；R3构建记录14:55:19，实际浏览器截图14:59–15:05，送审登记2026-10-09 15:15:23 +08:00。首产至送审墙钟跨度约55分，但包含实现、三轮构建/画面检查、Tech/Master评审、等待和工具恢复；各角色净制作时间、用户等待和分项耗时未知。
+- 返工与原因：R1实图发现初始构图偏桥且性能面板遮数量控件，Client改镜头初始/重置焦点和面板生命周期；R2实图发现菜单首卡遮标题，R3改两处菜单偏移。原因有实际截图/实施报告证据，不能据此归责。Master报告Client一次工具状态探查中断、Tech两次容量错误后恢复同一成功构建；故本轮存在工具故障，故障净时长未知。无约定耗时基线，不判断整体“慢”。
+- 建议：Client在下一次Creator构建前先用菜单小视口核首屏焦点、控件遮挡和标题卡片间距；预期减少返工，代价是一次布局预检，复核点为下一次首轮浏览器截图。Tech Lead下一次隔离构建保留容量错误与恢复节点，预期便于区分工具等待，代价为简短日志，复核点为下一次构建记录。
+- Continuity：U00实现已到USER_REVIEW真实门禁，无空转READY/IN_PROGRESS；等待用户准确批准或退回。

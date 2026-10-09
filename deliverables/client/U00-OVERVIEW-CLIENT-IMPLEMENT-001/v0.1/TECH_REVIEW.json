@@ -1,0 +1,32 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版R3代码与构建身份已核：UnitSampleGallery.ts SHA-256 17dbbcff503796dd2031baf8bc97da14987e320c17a7414307470cdee96c2ee4，scene1_camera_controller.ts SHA-256 1bf7a59c3accecd2ce4efa85813a6d4c27033e7af15c699225e0f06648625f81。隔离工程与工作区哈希一致；Creator 3.8.8 Web-Mobile Build Assets success、Task Finished、ExitCode 36，149文件清单和日志见evidence/BUILD_R3_MANIFEST.json与CREATOR_BUILD_R3_LOG.txt。R1/R2仅保留返工历史，不作为R3验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "五层layers严格保持L01至L05原顺序；U00店铺与顾客容器作为L03/L04之间同级夹层，通过synchronizedNodes按1.0位移和同一缩放跟随镜头。三组显隐各自持久于本页状态，顾客减到0再增加仍继承隐藏状态。uiCaptureNodes只覆盖实际按钮，场景剩余区域可拖动与缩放；U00 resetCameraX左街焦点与U01默认中心分离。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已核U02正式manifest四动作实际均为loop，原brief的happy/sad once_hold表述不符合现有资源。U00独立按manifest.totalDurationMs调度happy/sad完整一轮，情绪分支不改变位置，重选排除刚结束的情绪动作；walk/run在桥两侧路径中按2至4秒换动作、到边界转向。没有修改U02 Controller或资源manifest。逐帧位移与随机分布统计未单独测量，运行截图只证明姿态及位置可见。"
+    },
+    {
+      "severity": "INFO",
+      "message": "R3内置浏览器在390×844、720×1280完成入口、独立显隐、人数0至8、拖动/缩放/重置、六店从左至右顺序与脚点、返回重进及U01/U02/U03原入口检查；HTTP 200且console error/warn为空。23份R3证据及哈希见evidence/RUNTIME_R3_MANIFEST.json。菜单开发态统计面板仍可覆盖第四卡局部文字，但入口实际可点，进入U00后隐藏并在离页后恢复原先状态。"
+    },
+    {
+      "severity": "INFO",
+      "message": "资源边界审计覆盖apps/client/assets下198个Git跟踪文件：两份授权TS外196/196与任务基线字节相同，含图片、Prefab、Scene、字体、manifest及meta。离页逐个detach顾客状态并销毁页面。Gallery增加约300行单元组合逻辑，当前仅U00使用，尚无跨模块重复需要额外抽象；未来若复用可再评估拆分。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本评审限U00单元示例客户端实现及桌面Web自检；逐UUID Library回读、真机触控、DrawCall、帧率与设备内存未测试，不能据此声称正式性能或QA通过。"
+    }
+  ],
+  "next_action": "Master复核同版R3交付与运行证据并提交用户审核；Producer记录该具体Artifact版本的审批。用户明确批准前不得将Task标为DONE或作为正式功能接入结论。"
+}

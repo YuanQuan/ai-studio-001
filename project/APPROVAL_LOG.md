@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-09 15:15:23 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.1/R3 `IMPLEMENTATION_REPORT.md` SHA-256 `21ef3d16f50de4e1f4cc3db558ed101df251e26b8773134613dbb265a5316cb5`，两TS源码与R3构建/运行清单SHA已绑定。10/10 Required、九项Owner验收PASS、Tech/Master同版R3 APPROVED；Task/Approval均USER_REVIEW，decided_at null。两视口桌面Web运行通过；真机触控/性能和逐UUID Library回读未测。R1/R2退修记录保留，不能冒充R3；等待用户对此实际实现明确批准。
+
+2026-10-09 14:17:24 +08:00（Producer绑定登记；用户消息精确时刻未知）：用户先明确“批准”唯一送审的`U00-OVERVIEW-BRIEF-001` v0.1，后明确“同时批准 U01 v0.1、U02 v0.3-R2，继续 U00”。三项准确版本分别绑定`FEATURE_BRIEF.md` SHA `9abee98f…ed3cda71`、U01 `IMPLEMENTATION_REPORT.md` SHA `7e966779…c098251`、U02 R2 `IMPLEMENTATION_REPORT.md` SHA `5c831e79…a0673836`；各Task Approval均`USER_APPROVED`，Master据既存验收/同版Review接受单元示例Task `DONE`。U02正式QA执行已取消，既有QA Review只限实施证据审阅，不构成正式QA通过；性能、真实触控与目标设备仍NOT_TESTED。U00实施独立DRAFT，尚待实际产出与再次用户审核。
+
 2026-10-09 14:09:52 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-BRIEF-001` v0.1 `FEATURE_BRIEF.md` SHA-256 `9abee98f364f58f19db2fecb9ac220cd3780164cf8927ac235bea066ed3cda71`，`RESOURCE_REUSE_AUDIT.md`与`DELIVERABLE.json`实存，Tech/Master同版APPROVED，四项方案验收PASS。`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json`为USER_REVIEW、decided_at null，待用户明确批准/退回；仅方案审批，不包括编码、运行或U01/U02实现。
 
 2026-10-09 14:02 +08:00（开线登记；非Artifact用户决定）：`U00-OVERVIEW-BRIEF-001` v0.1编码前方案尚未产出，`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json`为DRAFT、decided_at null。用户确认需求细节仅作为Task输入，需Tech/Master同版Review通过后另呈具体方案；此确认不批准U00方案，也不批准仍处USER_REVIEW的U01实现。

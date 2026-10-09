@@ -1,5 +1,15 @@
 # 工作流状态
 
+2026-10-09 15:17:21 +08:00（Producer U04草稿与Master Review核验）v0.1任务列示的八项Required路径均已实存，另有`REFERENCE_AUDIT.md`研究副本；`MASTER_REVIEW.json`结论为`BLOCKED`。历史六摊讨论稿候选明确是孟桃、阿棠、阿炭、阿角、阿灯、小锦，但该讨论稿未获批准，Master正请用户确认本轮是否采用。当前通用双用途约束和旧图废弃历史可核，六位逐人方案/图稿尚未完成；Art `DELIVERABLE.json`自身两项`NOT_TESTED`，仍不能送`USER_REVIEW`。Task `BLOCKED`、Gate1 Approval `DRAFT`且review_ref指向该同版阻塞评审。正式图片、动画、客户端接入继续锁定。Continuity check：唯一当前决策门禁是六位名单确认，本Task无空转`READY/IN_PROGRESS`；取得名单后由Master推动Art补齐并再审。本轮复盘`WR-20261009-U04-MANAGER-PLAN-001`。
+
+2026-10-09 15:15:49 +08:00（Producer U04首份Art实产核验）`ART_PRODUCTION_PLAN.md`等六份v0.1草稿文件已实存，Art实际启动有证据；当前`RIGHTS_AND_SOURCE.md`与`MASTER_REVIEW.json`尚缺，`DELIVERABLE.json`的验收描述仍将店铺绑定和出图列为本轮条件，待Owner按Master指定范围校正。六位名单阻塞未解除，Task继续`BLOCKED`、Approval `DRAFT`，不作USER_REVIEW或正式资源授权。
+
+2026-10-09 15:15:23 +08:00（Producer U00实现v0.1/R3送审）Task 10/10 Required非空、DELIVERABLE九项自审PASS，Tech/Master同版R3 Review均APPROVED；Gallery SHA `17dbbcff…e96c2ee4`、Camera SHA `1bf7a59c…48625f81`与构建/运行清单同版。实际Creator R3 Web-Mobile和内置浏览器390×844、720×1280核验通过，R1/R2退修历史不作当前审批对象。Task`REVIEW→USER_REVIEW`，Approval USER_REVIEW/decided_at null；真机/性能/逐UUID回读NOT_TESTED，正式QA未执行。Continuity check：U00已抵达真实用户门禁，当前无U00空转READY/IN_PROGRESS；等待用户对本准确实现版本决定。复盘`WR-20261009-U00-IMPLEMENT-R3-001`。
+
+2026-10-09 14:19:28 +08:00（Producer U00首份源码核验）Task Required `apps/client/assets/labs/menu/scene1_camera_controller.ts`的git diff已见Client当轮增量：五层外可选同步节点与镜头scale/position同步；此为实际制作证据，U00实施`READY→IN_PROGRESS/TASK_STARTED`。尚未据此判构建或运行，Approval仍DRAFT。Continuity：Owner继续提交其余Required及运行证据，直至Tech/Master同版Review与下一用户门禁。
+
+2026-10-09 14:17:24 +08:00（Producer三项准确版本批准与U00实施解锁）U00 Brief v0.1、U01 Client v0.1、U02 Client v0.3-R2已按用户两次明确回复分别绑定`USER_APPROVED`，Task均`DONE`；同版专业评审与验收范围见各DELIVERABLE/Review。U02示例旧QA执行已取消，QA Review不代表正式QA测试，性能/实触/目标设备仍NOT_TESTED。`U00-OVERVIEW-CLIENT-IMPLEMENT-001`三依赖齐全，`BLOCKED→READY`、Approval DRAFT；Owner尚无本Task当轮Required实产，不能记IN_PROGRESS。Continuity check：本次并非合法停点，已通知Master继续推动Client实际开工直至下一用户门禁或真实阻塞；首产后再核TASK_STARTED。复盘`WR-20261009-U00-APPROVAL-001`。
+
 2026-10-09 14:09:52 +08:00（Producer U00 v0.1同版送审与continuity）`FEATURE_BRIEF.md` SHA-256 `9abee98f364f58f19db2fecb9ac220cd3780164cf8927ac235bea066ed3cda71`实核；五项Task Required文件与Approval均实存，`DELIVERABLE.json`四项验收PASS，Tech/Master Review均APPROVED。Task `REVIEW→USER_REVIEW`、方案Approval USER_REVIEW、decided_at null；等待用户对准确v0.1方案决定。方案尚未批准，不得编码；U01/U02实现仍各自USER_REVIEW，U00需求确认不替代其审批。Continuity check：U00到达真实用户门禁，无空转READY/IN_PROGRESS；本次只核U00，不改其他线状态。复盘`WR-20261009-U00-BRIEF-001`。
 
 2026-10-09 14:07:05 +08:00（Producer U00首稿与实际开工核验）Client v0.1 `FEATURE_BRIEF.md`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json`三份已实存；Owner交付索引为READY_FOR_REVIEW，前三项方案验收PASS、第四项评审/用户批准NOT_TESTED。据此补记真实`TASK_STARTED / READY→IN_PROGRESS`和首稿提交`IN_PROGRESS→REVIEW`；当前Task REVIEW、Approval DRAFT，待Tech/Master同版结论。U01实现独立USER_REVIEW，U00尚未获用户方案批准，不得编码。

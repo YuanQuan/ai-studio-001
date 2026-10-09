@@ -1,6 +1,6 @@
 import {
   _decorator, Color, Component, Director, EventMouse, EventTouch, Graphics, Input, director, input,
-  JsonAsset, Label, Mask, Node, Prefab, ResolutionPolicy, Sprite, SpriteFrame, UITransform, Vec3,
+  JsonAsset, Label, Mask, Node, Prefab, ResolutionPolicy, Sprite, SpriteFrame, UITransform, Vec3, profiler,
   instantiate, sys, view,
 } from 'cc';
 import { Scene1CameraController } from './labs/menu/scene1_camera_controller';
@@ -86,6 +86,21 @@ export class UnitSampleGallery extends Component {
   private sceneViewport: Node | null = null;
   private sceneControls: Node | null = null;
   private sceneBack: Node | null = null;
+  private overviewScene: Node | null = null;
+  private overviewTourists: Array<{ root: Node; state: TouristStateController; view: TouristView; adapter: ApprovedTouristAdapter; actionElapsed: number; actionDurationMs: number; action: TouristAction; walking: boolean; bounds: [number, number] }> = [];
+  private overviewShops: Node | null = null;
+  private overviewBackgroundLayers: Node[] = [];
+  private overviewController: Scene1CameraController | null = null;
+  private overviewGroupButtons: Partial<Record<'street' | 'tourists' | 'shops', Node>> = {};
+  private overviewGroupVisible = { street: true, tourists: true, shops: true };
+  private overviewTouristsVisible = true;
+  private overviewShopsVisible = true;
+  private overviewMouseTarget: Node | null = null;
+  private buttonMouseActions = new Map<Node, () => void>();
+  private overviewCountLabel: Node | null = null;
+  private overviewCount = 3;
+  private overviewRng = 94721;
+  private overviewProfilerWasShowing: boolean | null = null;
 
   protected onLoad(): void {
     // Keep the full phone viewport, including the extra height of tall phones.
@@ -100,8 +115,11 @@ export class UnitSampleGallery extends Component {
   }
 
   protected onDestroy(): void {
+    this.restoreOverviewProfiler();
     this.touristState?.detach();
     this.touristState = null;
+    for (const item of this.overviewTourists) item.state.detach();
+    this.overviewTourists = [];
     input.off(Input.EventType.MOUSE_DOWN, this.onMenuMouseDown, this);
     input.off(Input.EventType.MOUSE_UP, this.onMenuMouseUp, this);
     view.off('canvas-resize', this.layoutScene, this);
@@ -110,6 +128,7 @@ export class UnitSampleGallery extends Component {
 
   protected update(deltaTime: number): void {
     this.touristState?.tick(deltaTime * 1000);
+    if (this.overviewScene?.activeInHierarchy) this.updateOverview(deltaTime * 1000);
   }
 
   private makeNode(name: string, parent: Node, width = 1, height = 1, x = 0, y = 0): Node {
@@ -168,6 +187,7 @@ export class UnitSampleGallery extends Component {
     graphics.stroke();
     this.label(node, value, 0, 0, Math.min(25, height * 0.38), TEXT, width - 14, height - 10);
     if (onTouch) {
+      this.buttonMouseActions.set(node, onTouch);
       if (pressFeedback) {
         node.on(Node.EventType.TOUCH_START, () => this.paintButtonState(node, 'pressed'));
         node.on(Node.EventType.TOUCH_CANCEL, () => this.paintButtonState(node, 'normal'));
@@ -220,7 +240,11 @@ export class UnitSampleGallery extends Component {
   }
 
   private clearPage(): void {
+    this.restoreOverviewProfiler();
+    for (const item of this.overviewTourists) item.state.detach();
+    this.overviewTourists = [];
     this.disabledControls.clear();
+    this.buttonMouseActions.clear();
     this.shopGeneration++;
     this.shopStage = this.shopArtwork = this.shopTitle = null;
     this.shopIdentity = this.shopStatus = null;
@@ -263,6 +287,15 @@ export class UnitSampleGallery extends Component {
     this.sceneViewport = null;
     this.sceneControls = null;
     this.sceneBack = null;
+    this.overviewScene = null;
+    this.overviewShops = null;
+    this.overviewBackgroundLayers = [];
+    this.overviewController = null;
+    this.overviewGroupButtons = {};
+    this.overviewGroupVisible = { street: true, tourists: true, shops: true };
+    this.overviewTouristsVisible = true;
+    this.overviewShopsVisible = true;
+    this.overviewCountLabel = null;
   }
 
   private openMenu(): void {
@@ -279,6 +312,12 @@ export class UnitSampleGallery extends Component {
     this.menuCards.push(this.menuCard('U03', '六店店铺',
       shopsReady ? '查看六间店铺，并循环切换。' : '资源未就绪',
       () => this.openShops(), shopsReady));
+    const overviewReady = !!this.streetBasePrefab && !!this.touristPrefab && this.shopPrefabs.length === 6
+      && !!this.touristFrameManifest?.json && !!this.touristMountManifest?.json
+      && !!this.touristAccessoryManifest?.json && this.touristBodyFrames.length === 40;
+    this.menuCards.push(this.menuCard('U00', '夜市总览',
+      overviewReady ? '同屏查看街景、顾客与六间店铺。' : '组合资源未就绪',
+      () => this.openOverview(), overviewReady));
     this.layoutScene();
   }
 
@@ -624,6 +663,239 @@ export class UnitSampleGallery extends Component {
 
   }
 
+  private openOverview(): void {
+    this.clearPage();
+    this.overviewProfilerWasShowing = profiler.isShowingStats();
+    profiler.hideStats();
+    this.overviewCount = 3;
+    this.overviewRng = 94721;
+    this.overviewScene = this.makeNode('U00OverviewScene', this.page, 720, 1280);
+    const background = instantiate(this.streetBasePrefab!);
+    background.name = 'U00StreetBase';
+    this.overviewScene.addChild(background);
+    const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
+    this.overviewBackgroundLayers = layerNames.map(name => background.getChildByName(name))
+      .filter((layer): layer is Node => !!layer);
+    if (this.overviewBackgroundLayers.length !== 5) {
+      this.label(this.overviewScene, '五层背景结构异常', 0, 0, 22, TEXT);
+      return;
+    }
+
+    const foreground = this.makeNode('U00_StreetEntities', background, 3072, 1024);
+    foreground.setSiblingIndex(3);
+    this.overviewShops = this.makeNode('U00_Shops', foreground, 3072, 1024, 0, 0);
+    const bridgeX = 0;
+    // source y is center-origin: the approved road occupies roughly -228…-323.
+    // Shops sit behind its back edge; walkers stay between road and rail.
+    const shopX = [-1320, -950, -580, 580, 950, 1320];
+    const shopScale = 0.4;
+    for (let i = 0; i < 6; i++) {
+      const shop = instantiate(this.shopPrefabs[i]);
+      shop.name = SHOP_IDS[i];
+      this.overviewShops.addChild(shop);
+      const contact = shop.getChildByName('ground_contact');
+      const contactY = contact?.position.y ?? -388;
+      shop.setPosition(shopX[i], -225 - contactY * shopScale);
+      shop.setScale(shopScale, shopScale, 1);
+    }
+
+    const ui = this.makeNode('U00_Controls', this.overviewScene, 720, 1280);
+    const top = this.makeNode('U00_TopControls', ui, 680, 86);
+    this.button(top, '返回菜单', -250, 0, 150, 58, () => this.openMenu(), true);
+    this.label(top, 'U00 夜市总览', 30, 0, 28, GOLD, 220, 54);
+    const toggles = this.makeNode('U00_GroupToggles', ui, 690, 58);
+    this.overviewGroupButtons.street = this.overviewToggle(toggles, '街景：显示', -230, 'street');
+    this.overviewGroupButtons.tourists = this.overviewToggle(toggles, '顾客：显示', 0, 'tourists');
+    this.overviewGroupButtons.shops = this.overviewToggle(toggles, '店铺：显示', 230, 'shops');
+    const count = this.makeNode('U00_CountControls', ui, 360, 58);
+    this.button(count, '−', -110, 0, 70, 54, () => this.setOverviewCount(this.overviewCount - 1), true);
+    this.overviewCountLabel = this.label(count, '顾客 3 / 8', 0, 0, 21, TEXT, 110, 48).node;
+    this.button(count, '+', 110, 0, 70, 54, () => this.setOverviewCount(this.overviewCount + 1), true);
+    const bottom = this.makeNode('U00_CameraControls', ui, 500, 64);
+    const zoomOut = this.button(bottom, '−', -170, 0, 76, 58, undefined, true);
+    const reset = this.button(bottom, '重置', 0, 0, 140, 58, undefined, true);
+    const zoomIn = this.button(bottom, '+', 170, 0, 76, 58, undefined, true);
+    this.layoutOverview();
+
+    const controllerNode = this.makeNode('U00SceneCameraController', this.page);
+    controllerNode.active = false;
+    const controller = controllerNode.addComponent(Scene1CameraController);
+    controller.layers = this.overviewBackgroundLayers;
+    controller.resetCameraX = -1050;
+    controller.synchronizedNodes = [foreground];
+    controller.viewport = this.overviewScene;
+    controller.uiCaptureRoot = null;
+    controller.uiCaptureNodes = this.collectButtons(ui);
+    controller.zoomOutButton = zoomOut;
+    controller.zoomInButton = zoomIn;
+    controller.resetButton = reset;
+    controller.backButton = null;
+    controllerNode.active = true;
+    controller.reset();
+    this.overviewController = controller;
+    this.buildOverviewTourists(foreground);
+    this.layoutScene();
+  }
+
+  private overviewToggle(parent: Node, text: string, x: number, key: 'street' | 'tourists' | 'shops'): Node {
+    return this.button(parent, text, x, 0, 210, 52, () => {
+      this.overviewGroupVisible[key] = !this.overviewGroupVisible[key];
+      if (key === 'street') this.overviewBackgroundLayers.forEach(layer => layer.active = this.overviewGroupVisible.street);
+      else if (key === 'tourists') {
+        this.overviewTouristsVisible = this.overviewGroupVisible.tourists;
+        this.overviewTourists.forEach(item => item.root.active = this.overviewTouristsVisible);
+      } else if (this.overviewShops) {
+        this.overviewShopsVisible = this.overviewGroupVisible.shops;
+        this.overviewShops.active = this.overviewShopsVisible;
+      }
+      const name = key === 'street' ? '街景' : key === 'tourists' ? '顾客' : '店铺';
+      this.setTouristButtonText(this.overviewGroupButtons[key], `${name}：${this.overviewGroupVisible[key] ? '显示' : '隐藏'}`);
+    }, true);
+  }
+
+  private buildOverviewTourists(foreground: Node): void {
+    this.setOverviewCount(this.overviewCount, foreground);
+  }
+
+  private setOverviewCount(count: number, foreground?: Node): void {
+    const parent = foreground ?? this.overviewBackgroundLayers[2]?.parent?.getChildByName('U00_StreetEntities');
+    if (!parent || !this.touristPrefab || !this.touristFrameManifest || !this.touristMountManifest || !this.touristAccessoryManifest) return;
+    const target = Math.max(0, Math.min(8, Math.floor(count)));
+    while (this.overviewTourists.length > target) {
+      const item = this.overviewTourists.pop()!;
+      item.state.detach();
+      item.root.destroy();
+    }
+    while (this.overviewTourists.length < target) {
+      const index = this.overviewTourists.length;
+      const leftSide = index % 2 === 0;
+      const lane = leftSide ? [-1390, -150] : [150, 1390];
+      const root = this.makeNode(`U00_Tourist_${index + 1}`, parent, 1, 1,
+        leftSide ? lane[0] : lane[1], -278 - (index % 3) * 17);
+      root.active = this.overviewGroupVisible.tourists;
+      const instance = instantiate(this.touristPrefab);
+      instance.name = `UG_GHOST_01_${index + 1}`;
+      root.addChild(instance);
+      instance.setScale(0.28, 0.28, 1);
+      const touristView = new TouristView(instance);
+      touristView.setStageHeight(520);
+      const state = new TouristStateController();
+      const adapter = new ApprovedTouristAdapter(touristView,
+        this.touristFrameManifest.json as TouristFrameManifest,
+        this.touristMountManifest.json as TouristMountManifest,
+        this.touristAccessoryManifest.json as TouristAccessoryManifest,
+        this.touristBodyFrames, this.touristAccessoryFrames);
+      state.attach(adapter);
+      const action = this.nextOverviewAction(null);
+      const bounds: [number, number] = leftSide ? [-1450, -240] : [240, 1450];
+      const walking = action === 'walk' || action === 'run';
+      const rank = Math.floor(index / 2);
+      const start = leftSide ? bounds[0] + rank * 230 : bounds[1] - rank * 230;
+      root.setPosition(start, -242 - (index % 3) * 12);
+      root.active = this.overviewTouristsVisible;
+      if (walking) state.setFacing(leftSide ? 'right' : 'left');
+      state.selectAction(action);
+      const actionDurationMs = walking ? 2000 + (this.overviewRng % 2001) : 0;
+      this.overviewTourists.push({ root, state, view: touristView, adapter, actionElapsed: 0, actionDurationMs, action, walking, bounds });
+    }
+    this.overviewCount = target;
+    if (this.overviewCountLabel?.isValid) this.overviewCountLabel.getComponent(Label)!.string = `顾客 ${target} / 8`;
+    this.setTouristButtonText(this.overviewGroupButtons.tourists,
+      `顾客：${this.overviewTouristsVisible ? '显示' : '隐藏'}`);
+  }
+
+  private nextOverviewAction(previous: TouristAction | null): TouristAction {
+    const choices: TouristAction[] = ['walk', 'run', 'happy', 'sad'].filter(action => action !== previous) as TouristAction[];
+    this.overviewRng = (this.overviewRng * 48271) % 2147483647;
+    return choices[this.overviewRng % choices.length];
+  }
+
+  private updateOverview(deltaMs: number): void {
+    const actions = (this.touristFrameManifest?.json as TouristFrameManifest | undefined)?.actions;
+    if (!actions || deltaMs <= 0) return;
+    for (const item of this.overviewTourists) {
+      item.state.tick(deltaMs);
+      item.actionElapsed += deltaMs;
+      if (item.walking) {
+        const speed = item.action === 'run' ? 120 : 60;
+        const pos = item.root.position;
+        const nextX = pos.x + (item.state.snapshot().facing === 'right' ? 1 : -1) * speed * deltaMs / 1000;
+        if (nextX >= item.bounds[1]) { item.root.setPosition(item.bounds[1], pos.y); item.state.setFacing('left'); }
+        else if (nextX <= item.bounds[0]) { item.root.setPosition(item.bounds[0], pos.y); item.state.setFacing('right'); }
+        else item.root.setPosition(nextX, pos.y);
+      }
+      const cycleDuration = item.walking ? item.actionDurationMs : actions[item.action].totalDurationMs;
+      if (item.actionElapsed >= cycleDuration) {
+        item.actionElapsed = 0;
+        item.action = this.nextOverviewAction(item.action === 'happy' || item.action === 'sad' ? item.action : null);
+        item.walking = item.action === 'walk' || item.action === 'run';
+        if (item.walking) {
+          const facing = item.state.snapshot().facing;
+          if (facing === 'right' && item.root.position.x >= item.bounds[1]) item.state.setFacing('left');
+          if (facing === 'left' && item.root.position.x <= item.bounds[0]) item.state.setFacing('right');
+          item.actionDurationMs = 2000 + (this.overviewRng % 2001);
+        }
+        item.state.selectAction(item.action);
+      }
+    }
+  }
+
+  private layoutOverview(): void {
+    const visible = view.getVisibleSize();
+    const origin = view.getVisibleOrigin();
+    const safe = sys.getSafeAreaRect(false);
+    this.overviewScene?.getComponent(UITransform)?.setContentSize(visible);
+    const left = safe.x - origin.x - visible.width / 2;
+    const bottom = safe.y - origin.y - visible.height / 2;
+    const top = safe.y + safe.height - origin.y - visible.height / 2;
+    const controls = this.overviewScene?.getChildByName('U00_Controls');
+    const topControls = controls?.getChildByName('U00_TopControls');
+    const toggles = controls?.getChildByName('U00_GroupToggles');
+    const count = controls?.getChildByName('U00_CountControls');
+    const camera = controls?.getChildByName('U00_CameraControls');
+    topControls?.setPosition(0, top - 53);
+    toggles?.setPosition(0, top - 120);
+    count?.setPosition(0, bottom + 154);
+    camera?.setPosition(0, bottom + 70);
+    const back = topControls?.getChildByName('Button_返回菜单');
+    back?.setPosition(left + 90, 0);
+    const title = topControls?.getChildByName('Text');
+    const titleWidth = Math.max(120, Math.min(220, visible.width - 200));
+    title?.getComponent(UITransform)?.setContentSize(titleWidth, 54);
+    title?.setPosition(Math.max(70, visible.width / 2 - titleWidth / 2 - 12), 0);
+    const toggleWidth = Math.max(74, Math.min(210, (visible.width - 60) / 3));
+    const toggleGap = toggleWidth + 12;
+    for (const [key, x] of [['street', -toggleGap], ['tourists', 0], ['shops', toggleGap]] as const) {
+      const node = this.overviewGroupButtons[key];
+      node?.setPosition(x, 0);
+      node?.getComponent(UITransform)?.setContentSize(toggleWidth, 52);
+    }
+    const zoomX = Math.min(170, visible.width / 2 - 44);
+    const zoomWidth = Math.min(76, Math.max(48, (visible.width - 170) / 2));
+    camera?.getChildByName('Button_−')?.setPosition(-zoomX, 0);
+    camera?.getChildByName('Button_+')?.setPosition(zoomX, 0);
+    camera?.getChildByName('Button_−')?.getComponent(UITransform)?.setContentSize(zoomWidth, 58);
+    camera?.getChildByName('Button_+')?.getComponent(UITransform)?.setContentSize(zoomWidth, 58);
+    const resetWidth = Math.min(140, Math.max(96, visible.width - 2 * zoomWidth - 36));
+    camera?.getChildByName('Button_重置')?.getComponent(UITransform)?.setContentSize(resetWidth, 58);
+  }
+
+  private collectButtons(root: Node): Node[] {
+    const result: Node[] = [];
+    const visit = (node: Node): void => {
+      if (node.name.startsWith('Button_')) result.push(node);
+      for (const child of node.children) visit(child);
+    };
+    visit(root);
+    return result;
+  }
+
+  private restoreOverviewProfiler(): void {
+    if (this.overviewProfilerWasShowing === null) return;
+    if (this.overviewProfilerWasShowing) profiler.showStats();
+    this.overviewProfilerWasShowing = null;
+  }
+
   private layoutScene(): void {
     const visible = view.getVisibleSize();
     this.root.getComponent(UITransform)!.setContentSize(visible);
@@ -635,12 +907,16 @@ export class UnitSampleGallery extends Component {
     if (this.menuContent) {
       const titleY = Math.min(480, visible.height / 2 - 80);
       this.menuTitle?.setPosition(0, titleY);
-      const cardHeight = Math.min(205, (visible.height - 190) / 3 - 18);
+      const lowerEdge = -visible.height / 2 + 24;
+      const cardHeight = Math.max(72, Math.min(205,
+        (titleY - lowerEdge - 155 - 18 * (this.menuCards.length - 1)) / (this.menuCards.length - 0.5)));
+      const cardScaleX = Math.min(1, (visible.width - 24) / 610);
       this.menuCards.forEach((card, index) => {
-        card.setScale(1, cardHeight / 210);
-        card.setPosition(0, titleY - 105 - index * (cardHeight + 18));
+        card.setScale(cardScaleX, cardHeight / 210);
+        card.setPosition(0, titleY - 155 - index * (cardHeight + 18));
       });
     }
+    if (this.overviewScene?.isValid) this.layoutOverview();
     if (this.shopStage?.isValid) {
       const origin = view.getVisibleOrigin();
       const safe = sys.getSafeAreaRect(false);
@@ -806,12 +1082,24 @@ export class UnitSampleGallery extends Component {
 
   private onMenuMouseDown(event: EventMouse): void {
     if (event.getButton() !== EventMouse.BUTTON_LEFT) return;
+    if (this.overviewScene?.activeInHierarchy) {
+      this.overviewMouseTarget = this.collectButtons(this.overviewScene)
+        .find(node => this.isInside(node, event.getUILocation())) ?? null;
+      return;
+    }
     this.menuMouseDown = this.menuEntries.find(entry =>
       this.isInside(entry.node, event.getUILocation()))?.node ?? null;
   }
 
   private onMenuMouseUp(event: EventMouse): void {
     if (event.getButton() !== EventMouse.BUTTON_LEFT) return;
+    if (this.overviewScene?.activeInHierarchy) {
+      const target = this.overviewMouseTarget;
+      this.overviewMouseTarget = null;
+      if (target && target.isValid && this.isInside(target, event.getUILocation()))
+        this.buttonMouseActions.get(target)?.();
+      return;
+    }
     const pressed = this.menuMouseDown;
     this.menuMouseDown = null;
     if (pressed && this.isInside(pressed, event.getUILocation())) {
