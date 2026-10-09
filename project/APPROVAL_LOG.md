@@ -1,5 +1,17 @@
 # 用户审批记录
 
+2026-10-09 23:39 +08:00（Master最终接受，非第二次用户决定）：U00 Client v0.6准确实施报告SHA `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`、`USER_VALIDATION.md` SHA `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`及Gallery SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`已绑定。用户先前明确验收当前v0.6，Tech/Master同版复评APPROVED，Master接受Task DONE；Approval持续USER_APPROVED，用户消息原时间未知故decided_at null。Agent构建/HTTP/IAB未测历史和旧BLOCKED快照保留，不作正式QA/发布结论。
+
+2026-10-09 23:38 +08:00（Producer登记，用户原消息精确时刻未知）：用户对当前唯一v0.6说“我已帮你验证通过了”，按用户自行验证与本版验收批准记录；`USER_VALIDATION.md` SHA-256 `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`，最终`IMPLEMENTATION_REPORT.md` SHA-256 `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`，Gallery源码SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`。当前Approval USER_APPROVED/decided_at null，Tech/Master同版复评APPROVED。用户验证环境与逐项步骤未知，Agent Creator/HTTP/IAB仍未验证；旧BLOCKED Task/Approval/Review快照保留，不扩为正式QA或发布结论。
+
+2026-10-09 23:32 +08:00（v0.6门禁锁定，非用户决定）：U00六店/顾客参数已静态应用且同SHA类型检查PASS，`BUILD_STATUS.json`记录两种提升shell均0xc0000142、Creator未启动；没有本版构建和HTTP/IAB，Tech/Master同版Review均BLOCKED。当前Task BLOCKED，Approval DRAFT/decided_at null；用户参数输入只授权应用，不构成v0.5或v0.6整版批准。
+
+2026-10-09 23:28 +08:00（v0.6参数输入绑定，非整版批准）：用户最新JSON指定六店脚点不变、全部scale 0.34，初始仅顾客id1 scale 0.20/count1，临时预览和离页恢复基线继续。Master已委派定向实现；v0.5原BLOCKED/DRAFT快照保存在`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/history/v0.5/`，没有将新参数反馈解释为其整版验收。当前v0.6 Approval DRAFT/decided_at null，待同版构建运行和Tech/Master评审后另行送审。
+
+2026-10-09 23:01 +08:00（v0.5门禁锁定，非用户决定）：U00 v0.5静态参数已应用，但`BUILD_ATTEMPT.json`记录Creator普通启动-36863、管理员PowerShell两次0xc0000142，构建未执行，HTTP/IAB未测。同版Tech/Master完整Review与运行验收未齐，Task BLOCKED，当前`ARTIFACT_APPROVAL.json`保持DRAFT/decided_at null；用户JSON的参数应用授权不等于v0.4或v0.5整版批准。
+
+2026-10-09 22:58 +08:00（参数输入绑定，非Artifact批准）：用户发回`U00_ENTITY_LAYOUT_FEEDBACK_V0_3` JSON，六店新脚点与缩放、顾客1–3各0.28、人数3详见当前v0.5 Task输入；Master授权Client定向应用。v0.4原`USER_REVIEW`/decided_at null审批保留`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/history/v0.4/ARTIFACT_APPROVAL.json`，没有用户对v0.4整版的明确批准。当前v0.5 Approval `DRAFT`/decided_at null，须待同版实现、运行和Tech/Master Review后独立送审。
+
 2026-10-09 22:51 +08:00（Producer送Client实施v0.1审核；非用户决定）：`U03-SHOP-FULL-REDRAW-CLIENT-20261009`的`DELIVERABLE.json`、`TECH_REVIEW.json`和`MASTER_REVIEW.json`实存，同版评审均APPROVED；57/57 Required、五项验收PASS。`ARTIFACT_APPROVAL.json`转USER_REVIEW，`decided_at=null`。Art v0.2 Gate2此前USER_APPROVED且用户已授权替换；这不自动批准Client实施和运行结果。Creator日志Finished与进程exit36并列记录，目标机/触控/性能NOT_TESTED。
 
 2026-10-09 22:30:10 +08:00（Producer绑定用户明确决定；原回复精确时刻未知）：用户对当前`U03-SHOP-FULL-REDRAW-20261009` v0.2六店整体成品回复“好的替换U03把”。`ARTIFACT_APPROVAL_GATE2.json`记USER_APPROVED，绑定`CUT_MANIFEST.json` SHA-256 `F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED`；五店直接引用v0.1同字节、04为v0.2视角修订，18/18 Required、46/46路径SHA与五项Art验收PASS。此批准授权Client正式接入，不等于已接入或运行/性能通过；Client新Task Approval DRAFT，待实施及同版审核。v0.1 REJECTED历史保持。
@@ -10,11 +22,11 @@
 
 2026-10-09 22:10 +08:00（Producer送具体成品Gate2；非用户最终决定）：`U03-SHOP-FULL-REDRAW-20261009` v0.1 `CUT_MANIFEST.json` SHA-256 `0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8`，六PSD、12张透明PNG、同尺度重组、390/720视窗和六店总览已随`USER_REVIEW_PACKET.md`备审；62/62 Required存在、manifest44/44路径与SHA匹配，DELIVERABLE五项验收PASS（第五项仅指送审和接入锁定）。组织Agent自行切图按规则直接送用户，不增加成品专业效果复审。Task和`ARTIFACT_APPROVAL_GATE2.json`现USER_REVIEW、`decided_at=null`；此前Gate1授权只是制作许可。用户尚未认可具体成品，Client不得替换U03，Creator运行/性能也未验证。
 
+2026-10-09 21:51:16 +08:00（修订状态登记，非用户审批）：U00 `v0.3`待审快照保存在`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL_v0.3.json`。用户新增要求店铺与顾客缩放调整；v0.4代码已产出，但Creator构建超时、实际画面未核、Tech/Master Review未完成。当前Approval为v0.4 DRAFT/decided_at null，不能解释为用户批准；Task BLOCKED。
+
 2026-10-09 21:50:10 +08:00（Producer绑定用户既有明确制作授权；原消息精确时刻未知）：用户连续明确“按照这个样子输出店铺，然后替换U03的资源”“我希望整体重绘，不要做局部的微调”“做完先给我看看再替换”。`U03-SHOP-REFERENCE-REVISION-20261009`方案 `PRODUCTION_PLAN.md` SHA-256 `171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB`，Art/Master同版Review APPROVED；`ARTIFACT_APPROVAL_GATE1.json`记USER_APPROVED，只授权准确六店整体重绘制作。用户未逐字审阅方案文件；首图前Art/Tech预签仍须完成。新`U03-SHOP-FULL-REDRAW-20261009`具体PSD/切片Gate2为DRAFT，成品须先给用户看图决定，批准前不替换Client。旧U03版本批准不外推至本批。
 
 2026-10-09 21:44 +08:00（Producer开线；非Gate1决定）：用户确认拥有本轮U03六店附件并允许商用改编，输入SHA-256 `B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9`，证据见`tasks/U03-SHOP-REFERENCE-REVISION-20261009/SOURCE_DECLARATION.json`。新方案`ARTIFACT_APPROVAL_GATE1.json`仍DRAFT、`decided_at=null`；不得把来源授权、旧U03已批准版本或用户要求替换解释为新版Gate1或Gate2批准。
-
-2026-10-09 23:39 +08:00（Master最终接受，非第二次用户决定）：U00 Client v0.6准确实施报告SHA `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`、`USER_VALIDATION.md` SHA `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`及Gallery SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`已绑定。用户先前明确验收当前v0.6，Tech/Master同版复评APPROVED，Master接受Task DONE；Approval持续USER_APPROVED，用户消息原时间未知故decided_at null。Agent构建/HTTP/IAB未测历史和旧BLOCKED快照保留，不作正式QA/发布结论。
 
 2026-10-09 18:09:45 +08:00（Producer送审；非用户最终决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.3/R1 `USER_LAYOUT_INPUT.json` SHA-256 `db1abcb98bf3e864fce9e2c26b2fe7a848e909ed54ab19abff93703a40a0231a`，实施报告SHA-256 `9320db542f5d114978eb329ccf638d83b5f9b1ac044db235a2c4ab9d8c32804b`，Gallery源码、构建与运行清单同版绑定；11/11 Required、七项Owner拆分验收PASS，Tech/Master Review APPROVED。Task/Approval USER_REVIEW，decided_at null。用户提供的六店参数是本次坐标应用授权，不等于对旧v0.2整包或当前v0.3结果的无条件批准；Product Excel独立USER_REVIEW且未被消费。
 
@@ -256,7 +268,5 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-06 17:24:44 +08:00（Producer送用户审阅登记，非用户决定） | UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001 | QA Web环境矩阵 | v0.1 | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/ARTIFACT_APPROVAL.json`；`deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/WEB_TEST_MATRIX.md`、`DELIVERABLE.json`及QA/Client/Tech/Master四份同版Review | USER_REVIEW（待用户决定） | Producer核7/7 Required均存在，Deliverable索引与Task一致，四项验收结果PASS，四份同版Review均APPROVED；Approval.review_ref指向同版MASTER_REVIEW，decided_at=null。 | 仅送审Web测试环境矩阵方案。矩阵用例仍NOT_TESTED，不是正式QA结果。PERF-PLAN v0.1因Client MAJOR退回，v0.2修订中；QA测量支持Task `UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001` 为BACKLOG，依赖两方案获批，正式QA/性能采样与TEST_REPORT未开始。 |
 | 2026-10-06 17:33:15 +08:00（Producer送用户审阅登记，非用户决定） | UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001 | U01性能适用性与测量口径 | v0.2 | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/ARTIFACT_APPROVAL.json`；`deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md`、`DELIVERABLE.json`及Tech/Client/QA/Master四份同版Review | USER_REVIEW（待用户决定） | Master将Task Required校正为当前v0.2七项；Producer核路径7/7存在、DELIVERABLE.artifacts一致、三项方案验收PASS、四份Review均APPROVED。Approval.review_ref为v0.2 MASTER_REVIEW，decided_at=null。 | 仅送审性能适用性与测量口径方案；未执行试采或正式性能/功能QA。v0.1 Client Review CHANGES_REQUESTED作为修订历史，不要求补造v0.1 QA/Master Review，不送用户。QA-MATRIX v0.1亦待用户决定；QA-MEASUREMENT-001继续BACKLOG，须两份方案获批后再开工。 |
 
-
-2026-10-09 21:51:16 +08:00（修订状态登记，非用户审批）：U00 `v0.3`待审快照保存在`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL_v0.3.json`。用户新增要求店铺与顾客缩放调整；v0.4代码已产出，但Creator构建超时、实际画面未核、Tech/Master Review未完成。当前Approval为v0.4 DRAFT/decided_at null，不能解释为用户批准；Task BLOCKED。
 
 2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。

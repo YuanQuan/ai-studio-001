@@ -1,5 +1,28 @@
 # 工作流程复盘记录
 
+## WR-20261009-U00-COORD-V06-APPROVAL-001｜用户自行验证与单元示例最终接受
+
+- 结果与证据：用户对唯一当前v0.6明确“我已帮你验证通过了”，Master将原话及未知验证细节写入`USER_VALIDATION.md`。Producer绑定用户验证SHA `A636C76E…B2FB6`、最终实施报告SHA `7A13F69B…68241`与Gallery SHA `99364FBB…22ABD`；Tech/Master基于同SHA静态/noEmit、用户验收和明确未测范围复评APPROVED，Master接受Task DONE，Approval USER_APPROVED。旧BLOCKED Task/Approval/Review快照仍在`history/v0.6-blocked/`及`v0.6/*_REVIEW_BLOCKED.json`；Agent Creator/HTTP/IAB未验证的故障记录未改写。单元示例不安排QA，结论限本次修订。
+- 时间与原因：`USER_VALIDATION.md`文件mtime 2026-10-09 23:37:25 +08:00，Tech复评文件mtime 23:38:05，Owner终稿约23:38:14–15，Producer于23:39登记Master接受。用户原消息精确时间、验证设备与步骤未知；从验证记录实存到最终接受约2分钟的观察窗口包含并行Owner修文、Tech/Master复评及Producer核对，不代表角色净工时。此前Windows提升启动故障未解除，本次用户自行验证使单元示例可按用户验收和同版复评完成；不据此推断Agent构建成功。无可比时限，不判断人员快慢。
+- 建议与复核：Producer在下次用户自行验证可替代示例Owner运行核验的情形中，继续分别记录用户明确结论、准确Artifact hash和未提供的环境细节；代价为一次版本/证据核对，复核点为下一次类似审批记录。Client若后续把该示例升级为正式功能，先恢复可核Creator构建并补目标环境运行证据；复核点为正式功能Task与QA计划，不能沿用本次用户自行验证作发布质量结论。
+- Continuity check：准确v0.6已获用户验收、Tech/Master复评及Master接受，Task DONE，无空转READY/IN_PROGRESS；旧故障历史保留。Git仅按授权暂存本轮U00文件及共享治理里的U00增量，先排除U03既有改动。
+
+## WR-20261009-U00-COORD-V06-BLOCK-001｜统一店铺缩放与单顾客参数遇Creator启动阻塞
+
+- 周期与结果：U00 Client v0.6，Owner Client。23:28 +08:00 Producer核源码首份真实diff并登记TASK_STARTED；23:29:06用户参数输入/Owner简报实存，23:29:46同SHA assets TypeScript noEmit exit0，23:29:58 Creator首试在PowerShell参数解析处失败；23:30:15 Windows PowerShell提升助手创建报`0xc0000142`，23:30:35 pwsh提升助手同错；23:31:30 `BUILD_STATUS.json`记Creator未启动和解除条件。Owner静态交付、Tech/Master同版Review均已到位，Task BLOCKED、Approval DRAFT，未进入USER_REVIEW。证据为`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/`、当前Task/Approval与节点日志。
+- 时间与因果：从首份Owner文书23:29:06至BUILD_STATUS 23:31:30可核约2分24秒窗口；从Producer首核23:28至23:32阻塞登记约4分钟观察窗口，包含并行Client制作、两种提升shell尝试、Tech/Master静态评审和Producer核验，不能当作任何角色净工时。用户等待尚未进入审批门禁；需求返工是用户明确调整第六店缩放和顾客基线，并非可归责缺陷。构建关键路径因Windows进程创建错误停住，具体系统根因和净故障耗时未知。无约定工时或可比基线，不评价人员快慢。
+- 建议与复核：Client在提升助手恢复后，以`BUILD_INPUT_HASHES.json`/`ASSET_INPUT_HASHES.json`锁定当前源码和资源/设置身份，重做Creator/HTTP/IAB双视窗检查；代价为一次同版重建和视觉交互核验，复核点为新构建清单与运行记录。Tech Lead复评时核Creator实际启动、输出身份及默认/恢复/导出/重进证据；代价为一次同版核验，复核点为新版Tech Review。Producer只在Tech/Master复评通过后送v0.6 USER_REVIEW；复核点为Task/Approval与Dashboard一致。
+- Continuity check：本轮Owner有真实源码/文书/静态检查产出，最终停在两种提升shell均失败且无当前可行恢复路径的真实BLOCKED，无空转READY/IN_PROGRESS。旧v0.5构建/运行证据未冒充本版，v0.5阻塞历史保留；U03原治理增量保留。Git提交/推送继续待必要运行验证完成及混合治理文件提交范围复核。
+
+## WR-20261009-U00-COORD-V05-BLOCK-001｜用户参数定向修订遇Windows构建启动阻塞
+
+- 后续同轮补充（23:03:20 +08:00）：Client用同SHA的旧成功隔离副本及Creator自带TypeScript完成assets `noEmit`退出0，`TYPECHECK_RESULT.json`与空日志实存，Tech/Master已更新静态复核；并澄清两隔离工程的资源/设置来源。此结果只收窄静态检查未知项，不解除Creator启动阻塞。Master因本轮必要运行验证未完成、共享治理文件含U03既有增量，决定延后Git提交/推送，待阻塞解除后核对具体提交范围；这不改变Task/Approval门禁。
+
+- 周期与结果：U00 Client v0.5，Owner Client。22:58:16 +08:00用户输入文件实存，22:59核源码首份真实diff并记TASK_STARTED；23:00:13 `BUILD_ATTEMPT.json`记录构建启动失败，23:00:25 Owner `DELIVERABLE.json`实存，23:00:52 Tech Review和23:01:16 Master Review均BLOCKED。静态六店脚点/逐店缩放、3顾客0.28核对PASS；Creator/Web运行未产生本版证据，Task BLOCKED、Approval DRAFT，未送用户整版审批。证据见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/`的输入、源码SHA索引、构建尝试、Owner交付及两份Review，以及当前Task/Approval。
+- 时间与原因：从输入文件mtime 22:58:16至Master Review 23:01:16，可核观察窗口约3分钟，包含并行Client制作、Windows启动尝试、Tech/Master静态复核及Producer登记，不能算作Client净制作时间。普通隔离进程exit -36863，提升PowerShell两次在启动器处报`0xc0000142`，Creator脚本未运行；具体Windows故障根因和净损失时长未知。用户等待从未进入USER_REVIEW，专业Review虽已给阻塞结论但完成版复评仍待；无需求返工证据。
+- 速度判断与建议：没有约定时限或可比基线，不判断人员快慢；当前关键路径被Windows提升启动故障明确阻断。Client负责在环境恢复后先记录提升助手能启动、源码SHA及资源/设置快照，再执行Creator同版构建和HTTP/IAB两视窗；代价为一次身份核对，复核点为新的构建清单和运行记录。Tech Lead复评时核对构建输入身份与实际Web输出，再评默认、恢复、导出、重进证据；代价为同版证据核验，复核点为新版`TECH_REVIEW.json`。Producer只在两Review通过后送USER_REVIEW，复核点为Task/Approval与Dashboard一致。
+- Continuity check：本轮已到有构建启动错误、无安全现行恢复路径的真实BLOCKED；没有把首份代码、文书齐备或旧v0.4运行当送审门禁。U03 Client独立USER_REVIEW不被本轮改写。
+
 ## WR-20261009-U03-CLIENT-REPLACEMENT-001
 
 - 周期与结果：可核执行窗口2026-10-09 22:30–22:51 +08:00，约21分钟。Art v0.2获用户具体成品批准后，Client替换12张正式工程PNG并保留meta/UUID/六Prefab/稳定ID，U00共用同一资源；57/57 Required实存、五项验收PASS，Tech/Master同版Review APPROVED，Task与Approval送USER_REVIEW。证据为获批Art清单、Client映射/UUID/Prefab报告、DELIVERABLE、构建及HTTP/IAB证据、Task/Approval。用户尚未确认Client实施v0.1，故不标DONE。
@@ -31,13 +54,6 @@
 - 周期与结果：可核Producer开线登记21:44至Gate1绑定及双预签核验21:51 +08:00，约7分钟；用户原消息精确时刻未知，不能视作整体制作耗时。Art提交六店整体重绘方案、来源副本与权利登记，Art/Master同版Review APPROVED；用户“整体重绘”“做完先看再替换”的明确制作授权绑定方案SHA `171CFCE5…43587FB`，Gate1 USER_APPROVED、方案Task DONE。生产Task已实存Art/Tech同批预签并进入IN_PROGRESS，首张正式图及成品Gate2尚未交付。证据为`tasks/U03-SHOP-REFERENCE-REVISION-20261009/`、`deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/`、`tasks/U03-SHOP-FULL-REDRAW-20261009/`和双预签。
 - 时间分类：21:44为开线记录，21:45首份Art实产，21:49 Art Review/方案SHA核验，21:50 Master Review与用户授权绑定，21:51双预签核验。窗口含Art修稿、Master评审、Tech预签及Producer登记，净制作/评审时间与并行比例未知；未计成品制作和用户看图等待。曾把未批准v0.4候选误作现行对比基线，Art核旧Approval后改为已批接入清单；另因用户追加“整体重绘”而修订v0.1方案，返工净耗时未知。无可证实工具故障。
 - 速度判断与建议：无约定目标或同类基线，不评价角色快慢。可证实的返工风险是版本名`v0.1`目录内含已批`V04`清单、另有未批`v0.4`目录，容易错认当前正式接入基线。下次类似资源修订由Producer在Task开线时先核Approval准确artifact/SHA与资源登记，再写比较输入，代价为一次只读身份核对，复核点为下一批U03成品差异表与Gate2 manifest；Master在需求追加时同步冻结用户原话与准确方案SHA，复核点为生产首图预签。生产Task当前IN_PROGRESS且有双预签证据，Owner正继续01样张，不能以此复盘中断到下一门禁的工作。
-
-## WR-20261009-U00-COORD-V06-APPROVAL-001｜用户自行验证与单元示例最终接受
-
-- 结果与证据：用户对唯一当前v0.6明确“我已帮你验证通过了”，Master将原话及未知验证细节写入`USER_VALIDATION.md`。Producer绑定用户验证SHA `A636C76E…B2FB6`、最终实施报告SHA `7A13F69B…68241`与Gallery SHA `99364FBB…22ABD`；Tech/Master基于同SHA静态/noEmit、用户验收和明确未测范围复评APPROVED，Master接受Task DONE，Approval USER_APPROVED。旧BLOCKED Task/Approval/Review快照仍在`history/v0.6-blocked/`及`v0.6/*_REVIEW_BLOCKED.json`；Agent Creator/HTTP/IAB未验证的故障记录未改写。单元示例不安排QA，结论限本次修订。
-- 时间与原因：`USER_VALIDATION.md`文件mtime 2026-10-09 23:37:25 +08:00，Tech复评文件mtime 23:38:05，Owner终稿约23:38:14–15，Producer于23:39登记Master接受。用户原消息精确时间、验证设备与步骤未知；从验证记录实存到最终接受约2分钟的观察窗口包含并行Owner修文、Tech/Master复评及Producer核对，不代表角色净工时。此前Windows提升启动故障未解除，本次用户自行验证使单元示例可按用户验收和同版复评完成；不据此推断Agent构建成功。无可比时限，不判断人员快慢。
-- 建议与复核：Producer在下次用户自行验证可替代示例Owner运行核验的情形中，继续分别记录用户明确结论、准确Artifact hash和未提供的环境细节；代价为一次版本/证据核对，复核点为下一次类似审批记录。Client若后续把该示例升级为正式功能，先恢复可核Creator构建并补目标环境运行证据；复核点为正式功能Task与QA计划，不能沿用本次用户自行验证作发布质量结论。
-- Continuity check：准确v0.6已获用户验收、Tech/Master复评及Master接受，Task DONE，无空转READY/IN_PROGRESS；旧故障历史保留。Git仅按授权暂存本轮U00文件及共享治理里的U00增量，先排除U03既有改动。
 
 ## WR-20261009-U00-BRIEF-001
 
@@ -516,15 +532,6 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间：用户消息精确时间未知；Producer于18:00:55 +08:00核首份源码并登记开工，于18:08:51核Owner交付进入REVIEW，18:09:45送审。首产到送审墙钟约8分50秒，包含Creator构建、浏览器操作、评审与等待，不代表Client净制作时间；各环节净耗时和工具故障时长未知。
 - 原因与建议：本轮范围是将用户已提供的确切位置转为默认值，实际改动集中在六店基线；旧v0.2临时调节功能保留。没有同类目标时长或可证实慢因。Client下次接收坐标JSON时继续逐ID比对源码、导出与实际画面，预计减少错位返工；代价为一轮清单和同视口检查，复核点为下一次位置修订的构建与运行记录。Producer在下一轮审核中继续区分“参数应用授权”和“Artifact最终批准”，复核点为用户对v0.3准确版本的决定。
 - Continuity：当前Client任务已到USER_REVIEW真实门禁；Product Excel仍独立USER_REVIEW，无空转READY/IN_PROGRESS。v0.3未获用户明确批准前不标DONE。
-
-
-### WR-20261009-U00-SCALE-V04-BLOCK-001｜U00缩放修订遇Creator构建阻塞
-
-- 结果与证据：`UnitSampleGallery.ts`完成店铺逐家、顾客逐个缩放与JSON导出；transpile语法诊断0，`git diff --check`通过。Task `BLOCKED`，v0.4 Approval DRAFT。隔离构建以当前源码SHA重试，证据见`ISOLATED_BUILD_START.json`及stdout/stderr：Creator安装目录engine缓存文件报EPERM，无新构建、HTTP或浏览器证据。
-- 时间与耗时：用户消息精确时刻未知；本轮开始执行约21:40 +08:00，最终登记约21:57 +08:00，可观察窗口约17分钟，含源码实现、静态检查、CLI尝试与等待，不等于净编码耗时。项目级tsc约43秒后因仓库临时HarmonyOS模板语法错误退出；首次Creator会话180秒无完成标记，第二次隔离会话约58秒后因安装缓存EPERM被中止。用户等待和之前专业Review耗时未知。
-- 速度与原因：无同类时限或基线，不判断快慢。可证实阻塞是Creator stderr `[Error: EPERM: operation not permitted, open .../engine/bin/.cache/dev/editor/import-map.json]`，并伴随`Message does not exist: engine - query-engine-info`；没有输出身份更新，故停止送审。
-- 建议：Tech Lead与Client联合核查Creator安装缓存可访问性及引擎消息初始化，代价为一次工具链排查；不改安装目录权限。缓存访问恢复后Client按相同源码SHA重建并核HTTP/IAB两视口，复核点为同版构建清单和运行记录；Producer随后复核Required与Tech/Master Review，再推进用户门禁。
-- Continuity：无可继续的Ready/In Progress空转任务；Creator阻塞条件明确、相关实现产物已登记，待工具状态变化解除后继续。其他任务本轮未检查。
 
 
 ## WR-20261009-U00-SCALE-V04-RETRY-002
