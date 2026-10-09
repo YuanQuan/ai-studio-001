@@ -2,7 +2,7 @@
 
 ## 当前状态
 
-尚无获批游戏需求。历史方案与当前概要均不能作为下游正式产品语义输入。
+`PRODUCT-001` 产品总纲 v0.8 尚未整版获批。M03／M05 六位店长性格与魂成长差异已有独立获批的 v0.3 产品规格，限其明确范围作为下游正式产品语义输入；其他历史方案和未批概要仍不能作为正式输入。
 
 ## 产品总纲
 
@@ -17,8 +17,7 @@
 
 | 模块 | 功能 | Artifact 路径 | 版本 | 用户审批 | 依赖 |
 |---|---|---|---|---|---|
-
-当前为空，后续按获批版本登记。
+| M03 店长成长／M05 角色叙事 | 六位店长性格与0／1／2／3魂可见成长、对应店铺 | [PRD](../deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md)；[验收](../deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/ACCEPTANCE.md)；[影响](../deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/CHANGE_IMPACT.md) | v0.3 | [USER_APPROVED](../tasks/U04-MANAGER-PERSONALITY-001/ARTIFACT_APPROVAL_v0.3.json)；登记于2026-10-09 18:05:19 +08:00 | Art形象方案仍因用户暂停绘图而BLOCKED；恢复后引用此v0.3，另走Art制作方案与资源审批；不代表总纲整版获批或开发获批。 |
 
 ## 历史与配置索引
 

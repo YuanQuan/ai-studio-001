@@ -20,8 +20,8 @@ const MUTED = new Color(155, 178, 199);
 const BLUE = new Color(108, 193, 224);
 const GOLD = new Color(246, 189, 109);
 const OVERVIEW_SHOP_BASELINE = [
-  { x: -1320, y: -225 }, { x: -950, y: -225 }, { x: -580, y: -225 },
-  { x: 580, y: -225 }, { x: 950, y: -225 }, { x: 1320, y: -225 },
+  { x: -1080, y: -235 }, { x: -780, y: -245 }, { x: -410, y: -235 },
+  { x: 350, y: -237 }, { x: 690, y: -250 }, { x: 1030, y: -249 },
 ];
 const OVERVIEW_SHOP_SCALE = 0.4;
 
@@ -714,8 +714,8 @@ export class UnitSampleGallery extends Component {
     const foreground = this.makeNode('U00_StreetEntities', background, 3072, 1024);
     foreground.setSiblingIndex(3);
     this.overviewShops = this.makeNode('U00_Shops', foreground, 3072, 1024, 0, 0);
-    // Temporary shop-footpoint preview starts from the reviewed v0.1 baseline;
-    // leaving this page discards edits and never changes approved defaults.
+    // Temporary shop-footpoint preview starts from the user-approved v0.3 baseline;
+    // leaving this page discards edits and never persists preview adjustments.
     this.overviewShopFootpoints = OVERVIEW_SHOP_BASELINE.map(point => ({ ...point }));
     this.overviewShopNodes = [];
     this.overviewShopSelectedIndex = 0;

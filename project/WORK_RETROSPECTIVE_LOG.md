@@ -437,3 +437,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间：v0.2首份源码由Producer于16:04:56 +08:00核实，Owner文书于16:09:30左右实存，R2运行清单于16:37:48实存，送审登记2026-10-09 16:43:38 +08:00。首产至送审墙钟跨度包含实现、两轮构建、浏览器操作、评审和等待；各角色净制作时间、用户等待与工具故障净时长未知。没有可比目标，不判整体速度。
 - 返工与建议：R1画面/控件核查后继续修正并以R2同版重构建，R1作为历史；具体R1→R2差异及原因以`IMPLEMENTATION_REPORT.md`和运行记录为准，不把旧截图当终版证据。Client下次在提交Review前先核最窄视口的调节面板和复制反馈可见性，预期减少一轮重构建；代价是一次交互预检，复核点为下一次首轮浏览器记录。Producer下轮核导出参数与获批正式坐标为两个独立版本，复核点为用户发回整组参数后配置/画面审批。
 - Continuity：本v0.2实现已到USER_REVIEW真实门禁；Product Excel v0.1仍待用户决定，正式位置另待用户提供及审批，无空转READY/IN_PROGRESS。
+### WR-20261009-U04-PERSONALITY-V02-001｜阿角发型与六店标注修订送审
+
+### WR-20261009-U00-COORD-V03-001｜六店用户参数定向应用到审核门禁
+
+- 结果与证据：Client按用户发回的六店JSON更新U00默认脚点与恢复基线，11/11 Required、七项Owner拆分验收PASS；Tech/Master同版v0.3/R1评审APPROVED，Task/Approval进入USER_REVIEW。证据位于`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/`与`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/`。Product Excel v0.1未消费；旧v0.2送审快照保留。
+- 时间：用户消息精确时间未知；Producer于18:00:55 +08:00核首份源码并登记开工，于18:08:51核Owner交付进入REVIEW，18:09:45送审。首产到送审墙钟约8分50秒，包含Creator构建、浏览器操作、评审与等待，不代表Client净制作时间；各环节净耗时和工具故障时长未知。
+- 原因与建议：本轮范围是将用户已提供的确切位置转为默认值，实际改动集中在六店基线；旧v0.2临时调节功能保留。没有同类目标时长或可证实慢因。Client下次接收坐标JSON时继续逐ID比对源码、导出与实际画面，预计减少错位返工；代价为一轮清单和同视口检查，复核点为下一次位置修订的构建与运行记录。Producer在下一轮审核中继续区分“参数应用授权”和“Artifact最终批准”，复核点为用户对v0.3准确版本的决定。
+- Continuity：当前Client任务已到USER_REVIEW真实门禁；Product Excel仍独立USER_REVIEW，无空转READY/IN_PROGRESS。v0.3未获用户明确批准前不标DONE。

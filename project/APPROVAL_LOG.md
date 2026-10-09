@@ -218,3 +218,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 
 2026-10-09 16:43:38 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.2/R2实施报告SHA-256 `ef159423a6b4279c6865c0dc176b21cf33b189ecc5a7dc06f6df7748c4f5c49f`、两TS源码及R2构建/运行清单准确绑定；10/10 Required、七项Owner拆分验收PASS、Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null，待用户对临时调店工具和U00菜单置顶实现作明确决定。复制出的六店参数是反馈输入，未获批准前不是正式位置；Product Excel v0.1独立USER_REVIEW，未被Client消费。
+
+2026-10-09 18:09:45 +08:00（Producer送审；非用户最终决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.3/R1 `USER_LAYOUT_INPUT.json` SHA-256 `db1abcb98bf3e864fce9e2c26b2fe7a848e909ed54ab19abff93703a40a0231a`，实施报告SHA-256 `9320db542f5d114978eb329ccf638d83b5f9b1ac044db235a2c4ab9d8c32804b`，Gallery源码、构建与运行清单同版绑定；11/11 Required、七项Owner拆分验收PASS，Tech/Master Review APPROVED。Task/Approval USER_REVIEW，decided_at null。用户提供的六店参数是本次坐标应用授权，不等于对旧v0.2整包或当前v0.3结果的无条件批准；Product Excel独立USER_REVIEW且未被消费。
+
+2026-10-09 18:00:55 +08:00（用户输入绑定；非v0.3 Artifact批准）：用户发回六店完整JSON并授权把其坐标用于U00默认位置，确切值见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/USER_LAYOUT_INPUT.json`。此决定只授权本次v0.3定向实施；旧v0.2 Task/USER_REVIEW Approval已归档`history/v0.2/`，不将本消息解释为对v0.2整包的无条件验收。现v0.3 Approval DRAFT/decided_at null，待实施、Creator/Web运行及Tech/Master同版评审后另呈具体版本。Product Excel v0.1仍独立USER_REVIEW且未被消费。
+
+2026-10-09 16:43:38 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.2/R2实施报告SHA-256 `ef159423a6b4279c6865c0dc176b21cf33b189ecc5a7dc06f6df7748c4f5c49f`、两TS源码及R2构建/运行清单准确绑定；10/10 Required、七项Owner拆分验收PASS、Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null，待用户对临时调店工具和U00菜单置顶实现作明确决定。复制出的六店参数是反馈输入，未获批准前不是正式位置；Product Excel v0.1独立USER_REVIEW，未被Client消费。

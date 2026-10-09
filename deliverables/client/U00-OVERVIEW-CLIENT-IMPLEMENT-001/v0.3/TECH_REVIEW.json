@@ -1,0 +1,32 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.3源码差异仅限UnitSampleGallery.ts中六店OVERVIEW_SHOP_BASELINE两行数值及相邻注释；Camera、SHOP_IDS、调店/导出逻辑、缩放常量0.4和资源未改。新Gallery SHA-256 238a76c18a0b095e5646800e08f2c2adfbc7db1510bab75fb980823a5872ec82，Camera SHA-256 3b3b55cdb6cbc9cb7cb21bcfc30b521ddedc4edd830356296ec591b6bc085ef7，与本轮Creator构建清单一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按SHOP_IDS顺序，六个目标ground_contact脚点精确匹配USER_LAYOUT_INPUT.json：MT_SHOP_01(-1080,-235)、SHOP_02(-780,-245)、SHOP_03(-410,-235)、SHOP_04(350,-237)、SHOP_05(690,-250)、SHOP_06(1030,-249)。X严格递增且前三位在桥左、后三位在桥右；所有坐标位于3072×1024源画布范围。现有Prefab脚点(0,-388)与固定缩放0.4仍按root=target-localContact×scale装配，不新增坐标系或资产语义。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator 3.8.8隔离Web-Mobile构建ExitCode36，日志先后出现Build Assets success、Asset DB resume和Task Finished，产物149文件、25,935,219字节。日志中build-script worker有SIGTERM诊断，但其后构建完成；实际HTTP main脚本SHA匹配本次产物且内置浏览器无脚本/资源错误。只判本次构建与桌面Web运行通过，不推断SIGTERM属正常终止。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Master在390×844实际Web画面核奶茶新基线、整组六店导出精确等于用户输入、临时微调后恢复和离页重进回到新基线；720×1280逐店选择六店并留画面。evidence/RUNTIME_MANIFEST.json绑定当前构建main脚本与11项运行证据，console warn/error为空。旧v0.2运行结果没有被用作v0.3新坐标验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "RESOURCE_INTEGRITY_CHECK.json覆盖198个Git跟踪assets，仅授权Gallery发生本轮差异，另外197项逐字节不变，含Camera、图片、Prefab、Scene、字体及meta。未消费待审批Product Excel；本次用户输入只更新U00默认脚点，临时调节功能及菜单U00置顶保持原样。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本评审限U00单元示例及两个桌面Web模拟手机视口。真机触控、目标设备DrawCall/帧率/内存和Creator Library逐UUID/像素回读未测；专业评审通过不代替用户对v0.3实际画面及Artifact的明确批准。"
+    }
+  ],
+  "next_action": "Master同版复核v0.3源码、六店输入、构建与运行画面并呈用户审核；Producer记录v0.3具体版本审批。用户明确批准前不将任务标为DONE，也不把本次单元示例结论升级为正式功能或QA通过。"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "U04-MANAGER-PERSONALITY-001",
+  "title": "六位店长性格与魂成长差异定义",
+  "type": "design",
+  "owner": "product",
+  "parent": null,
+  "objective": "在六位店长身份已确认、绘图暂停的范围内，定义各自鲜明性格和魂成长表现差异，提交Product正式规格供用户逐环节审核；本任务不制定数值、不绘图、不接入实现。",
+  "inputs": [
+    "用户2026-10-09最新确认六位店长：孟桃、阿棠、阿炭、阿角、阿灯、小锦；暂停绘图，先确定六人性格与魂成长差异。",
+    "用户明确：0魂时只有一位店长只言片语，不将全员失语泛化；具体是哪位尚未获用户确认。六人各主一条成长维度，维度方向包括语言、记忆、体力与情感感知、精细协调、舞台自信与感染力；具体分配及其余三维差异尚为Product提案，待本Artifact审批。",
+    "保持既有四阶段、原人格及七魄属性方向；旧未批总纲和历史种子只作研究输入，不能冒充已批准产品语义。",
+    "project/DECISIONS.md、项目产品资料、tasks/U04-MANAGER-CONCEPT-PLAN-001/TASK.json",
+    "rules/artifact_contract.md、rules/approval_protocol.md",
+    "用户2026-10-09在v0.1送审后补充：阿角发型随魂成长，0魂为油腻颓废分头，3魂为精神挺立且时髦；1/2魂须有可辨过渡，并标明六位店长对应店铺。此为明确修订方向，不等于批准其余性格/维度分配。",
+    "用户2026-10-09对v0.2修订：孟桃从耳钉等叛逆外显到淑女文静；阿棠从表达障碍、害羞内向到自信外向；阿炭从瘦弱、黑眼圈、厌食到健硕精神且这些症状消失；阿灯聊天时三句中忘前一句；小锦由高度近视、厚圈纹眼镜逐渐到后期可用隐形眼镜，重点是视力与自我形象，不声明真实度数或隐形眼镜治愈。阿角v0.2个人发型方向保留。上述是明确修订方向，完整v0.3方案仍待审批。"
+  ],
+  "deliverables": [
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/ACCEPTANCE.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/CHANGE_IMPACT.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/DELIVERABLE.json",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/MASTER_REVIEW.json",
+    "tasks/U04-MANAGER-PERSONALITY-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "六位确认店长逐一标明对应店铺、性格核心及0／1／2／3魂可辨表现；区分用户已确认方向、历史参考与本版待批提案。",
+    "小锦以视力与自我形象为主线：早期高度近视、厚圈纹眼镜，后期可使用隐形眼镜；不虚构真实度数，不宣称隐形眼镜治愈视力。",
+    "阿灯在聊天三句中忘记前一句并有四阶段递进；阿棠从表达障碍、害羞内向成长为自信外向，0魂仅一人只言片语的既定人数约束保持，具体角色分配随本版送审。",
+    "孟桃从耳钉等叛逆外显到淑女文静；阿炭从瘦弱、黑眼圈、厌食到健硕精神且旧症状消失；阿角保留v0.2个人发型0／1／2／3魂递进方向，均保持人物可辨且不新增数值规则。",
+    "说明v0.2旧六维分配、旧小锦内敛台风等与最新用户方向的覆盖关系及对Art/下游的影响；不绘图、不定义数值、不实施或接入。",
+    "Required Artifact与验收逐项齐备、Master同版Review通过后，才将准确v0.3送用户审核；用户未批前不得作为Art正式形象生产或开发输入。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master指定本正式Task及Required Artifacts；Producer负责流程记录，不另建任务。",
+    "用户已确认六人名单，故旧Art任务的缺名单阻塞解除，但绘图暂停且需等待本Product性格方案获批后才可重启逐人形象方案。",
+    "本Task仅产品定义与审核，不包含图片制作或实施。Product开始产出首份Required后，Producer据真实文件登记TASK_STARTED并改为IN_PROGRESS。",
+    "2026-10-09 15:52:29 +08:00 Producer核PRD.md实存非空，文件mtime 15:52:11，READY→IN_PROGRESS/TASK_STARTED；其余Required、Master Review与用户审批仍待。",
+    "2026-10-09 15:54:09 +08:00 Producer核Product四文件及Master Review已实存，Master APPROVED；Owner提交后Task进入REVIEW。DELIVERABLE当时仅3项验收结果，Task有5项，逐项口径待Owner校齐后再判断USER_REVIEW。",
+    "2026-10-09 15:55:00 +08:00 Producer复核6/6 Required实存、DELIVERABLE五项验收与Task逐字同序且均PASS、交付索引覆盖五个Product目录Required、Master Review APPROVED。阿棠语言例外及其余维度是待用户决定的提案，PASS仅指文件按本Task约束完整。Task REVIEW→USER_REVIEW；用户明确批准前不得Art绘图或开发接入。",
+    "2026-10-09 17:05:31 +08:00 用户对v0.1提出阿角发型成长与六店标注修订，旧v0.1审批快照登记REJECTED并保留；当前Required切到v0.2。Product新PRD.md文件mtime 17:05:18，Producer已核四份v0.2草稿实存，故REVISION→IN_PROGRESS有Owner当轮实产；同版MASTER_REVIEW待，Approval DRAFT。用户消息精确时刻未知，17:05:31为Producer首核时刻。",
+    "2026-10-09 17:08:23 +08:00 Producer核v0.2六项Required实存、DELIVERABLE六项验收与Task逐字同序且均PASS、索引覆盖五个Product目录Required、Master同版Review APPROVED；Task经REVIEW进入USER_REVIEW。阿角发型方向来自用户，具体六人店铺/性格/其他维度仍是待用户确认的v0.2提案。用户未批前Art仍暂停绘图。",
+    "2026-10-09 17:54:15 +08:00 用户对v0.2提出五人具体成长设定并保留阿角个人方向；旧v0.2审批快照登记REJECTED。当前Required指v0.3，六项验收按最新方向修订。v0.3 PRD.md mtime 17:54:01，Producer首核见四份草稿，故REVISION→IN_PROGRESS有Owner当轮实产；现稿仍在写，同版MASTER_REVIEW待。用户消息精确时刻未知，17:54:15为本轮首核登记。",
+    "2026-10-09 17:56:56 +08:00 Producer核v0.3 Product四份主体文件实存，DELIVERABLE六项验收与Task逐字同序，前五项PASS、第六项因MASTER_REVIEW未落为NOT_TESTED；Owner草稿已提交，Task IN_PROGRESS→REVIEW。Approval DRAFT，不送USER_REVIEW。",
+    "2026-10-09 17:57:43 +08:00 Producer复核v0.3 6/6 Required实存、DELIVERABLE六项验收逐字同序PASS、索引覆盖Product目录五项Required、Master同版Review APPROVED；Task REVIEW→USER_REVIEW，Approval USER_REVIEW、decided_at null。阿角个人方向为用户保留范围，完整v0.3其余细节待明确审批，Art仍暂停绘图。",
+    "2026-10-09 18:05:19 +08:00 Producer据用户最新“批准”绑定准确v0.3 PRD为USER_APPROVED，另存ARTIFACT_APPROVAL_v0.3.json；复核6/6 Required、六项Task验收逐字同序PASS、Master同版Review APPROVED，Master接受本Product语义任务DONE。用户回复精确时刻未知，18:05:19为本轮审批登记时刻。批准不解锁Art绘图或开发，旧PRODUCT-001总纲仍未整版获批。"
+  ]
+}

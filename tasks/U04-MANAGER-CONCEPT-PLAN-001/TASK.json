@@ -1,0 +1,45 @@
+{
+  "id": "U04-MANAGER-CONCEPT-PLAN-001",
+  "title": "六位店长双用途形象确定与制作前方案",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "依据可核的产品人物性格，为六位经确认的店长制定易辨识的场景店前全身形象和对话框半身形象方案；旧孟桃形象退出本次候选并保留历史。本任务只确定形象与正式资源制作前方案，不出正式图片、不制作动画或接入客户端。",
+  "inputs": [
+    "用户2026-10-09指令：店长分为场景店铺前全身站姿和对话框半身形象；旧梦桃形象废弃；重新给六位店长形象图，按产品定义性格并研究可辨认的标志元素；本轮只确定店长形象，正式进入开发流程。",
+    "产品事实：孟桃性格有独立批准；其余历史角色种子仅供参考，不能视为已批准定义。现有历史资料有12位角色种子，具体六位名单待用户确认；店铺绑定可后续确定。",
+    "project/DECISIONS.md、project/ART_GUIDE.md 与既有孟桃历史概念及审批记录",
+    "rules/visual_production_contract.md、rules/artifact_contract.md、rules/approval_protocol.md",
+    "用户2026-10-09最新确认六位店长为孟桃、阿棠、阿炭、阿角、阿灯、小锦；暂停绘图，先由Product确定性格与魂成长差异。tasks/U04-MANAGER-PERSONALITY-001/TASK.json为当前上游任务。"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "六位店长身份须由用户确认；性格须区分已批准事实与未批准历史参考。名单未确认时明确标注待决，不自行筛选或声称六位方案完整；店铺绑定可后续确定。",
+    "同一位店长的场景店前全身站姿与对话框半身形象共享稳定识别锚点，并说明剪裁、姿态、表情和场景尺度辨识方法。",
+    "方案明确旧孟桃形象停止作为当前候选或正式输入，历史图稿和审批记录保留；新形象不继承旧图的用户批准状态。",
+    "标志性元素研究登记来源及版权/IP/外观相似风险，避免照搬受保护表达；图像和字体正式资产许可按规则核验。",
+    "Art方案、交付索引及Master同版Review齐备后，才可将准确版本送用户审核；用户明确批准制作方案前不得开始正式图片、PSD、切片制作，后续切片效果与接入仍需独立门禁。"
+  ],
+  "dependencies": [
+    "U04-MANAGER-PERSONALITY-001"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master已指定本正式Task及Required Artifacts；Producer仅落盘任务与流程状态，不新增其他任务。",
+    "阻塞：产品历史有12位角色种子，六位店长的准确名单尚无已确认事实。Master已向用户询问；得到明确名单前不得把候选写成六位正式方案或进入USER_REVIEW。店铺绑定不是本轮阻塞条件。",
+    "Art可先整理已知产品/视觉事实、参考来源和双用途通用方案，并按实际落盘证据登记；缺名单的验收项须保持待决。",
+    "本Task是美术正式资源制作前方案Gate1；本轮不生成六位正式形象图。Gate1与未来实际切片效果Gate2分别等待用户决定，未批准前不得正式出图、动画或客户端接入。",
+    "2026-10-09后续用户已明确确认孟桃、阿棠、阿炭、阿角、阿灯、小锦；上文缺名单为历史开线事实，不再是当前阻塞。当前BLOCKED原因改为用户暂停绘图，并等待U04-MANAGER-PERSONALITY-001性格与魂成长规格获用户批准。既有v0.1草稿及Master BLOCKED Review保留历史，待上游批准后由Art提交新版并重评。",
+    "2026-10-09 18:05:19 +08:00 上游U04-MANAGER-PERSONALITY-001 v0.3已获USER_APPROVED并DONE，缺上游批准不再是当前阻塞；用户此前明确暂停绘图/美术流程仍有效，本Art Task继续BLOCKED，唯一当前原因是用户暂停。后续恢复时以准确批准的v0.3为输入，另修订Art方案并过其独立审批门禁，不能继承旧Art v0.1批准。"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "U04-MANAGER-CONCEPT-PLAN-001",
+  "owner": "art",
+  "summary": "六店长店前全身与对话半身概念形象的 Gate1 制作前草案；旧孟桃外观废弃，仍缺其余五位正式身份与性格，未生成新图。",
+  "artifacts": [
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/REFERENCE_AUDIT.md",
+    "project/ART_GUIDE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六人姓名与产品性格有明确依据",
+      "result": "NOT_TESTED",
+      "evidence": "孟桃有历史身份；SIX_STALLS_TAP_GAMES_v0.2 为未批准讨论稿，五人不能据此定稿。"
+    },
+    {
+      "criterion": "明确每人店前全身与对话半身的同身份关系和 12 视图审阅安排",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、ART_BRIEF.md、ASSET_MANIFEST.md 记录共通规格；具体五人形象仍待补齐。"
+    },
+    {
+      "criterion": "废弃旧孟桃外观且保留历史记录",
+      "result": "PASS",
+      "evidence": "project/ART_GUIDE.md 顶部更新；旧概念路径保留在 ASSET_MANIFEST.md。"
+    },
+    {
+      "criterion": "参考元素与版权边界记录",
+      "result": "PASS",
+      "evidence": "REFERENCE_AUDIT.md 仅把权威资料用于工艺/器物研究，图片授权仍为未知。"
+    },
+    {
+      "criterion": "六张双视图概念板实际生成并经看图审阅",
+      "result": "NOT_TESTED",
+      "evidence": "缺五位身份与 Gate1 审批；本版没有新图。"
+    }
+  ],
+  "assumptions": [
+    "孟桃产品身份以历史角色种子和已批准单元样例为依据；旧外观按最新用户指令废弃。",
+    "讨论稿中的五人组合只作候选，不作为正式名单或本轮生成输入。"
+  ],
+  "risks": [
+    "缺五位姓名与性格依据，无法完成逐人造型方案或出图；店铺绑定可后定。",
+    "所有外部资料的图片授权未核清，仅能提炼通用工艺与器物元素。"
+  ],
+  "status": "BLOCKED"
+}

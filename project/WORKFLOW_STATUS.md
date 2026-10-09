@@ -1,5 +1,7 @@
 # 工作流状态
 
+2026-10-09 18:09:45 +08:00（Producer U00 v0.3/R1同版送审）11/11 Required实存、DELIVERABLE七项拆分验收PASS；用户输入JSON与六店源码默认脚点逐项一致，Gallery SHA `238a76c1…872ec82`与Creator构建清单匹配，实际HTTP/内置浏览器恢复、重进、导出六店坐标及两视口画面证据已核。Tech/Master同版APPROVED，Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null。用户此前发回参数授权本次应用，不自动批准v0.2整包或v0.3最终实现；旧v0.2快照在`history/v0.2/`。Product Excel仍独立USER_REVIEW且未消费。Continuity：U00已到真实用户门禁，无空转READY/IN_PROGRESS；复盘`WR-20261009-U00-COORD-V03-001`。
+
 2026-10-09 16:00:53 +08:00（Producer U00 Client v0.2修订开线）用户进一步明确U00内可视调节六店位置、整组复制参数发回，菜单U00排在U01前；Master已修订`U00-OVERVIEW-CLIENT-IMPLEMENT-001`为v0.2六验收及十Required，旧v0.1 Task/REJECTED Approval保存在`history/v0.1/`。当前Task READY、Approval DRAFT，核时v0.2源码尚无新增diff、交付目录未出现，不记TASK_STARTED。该临时调试UI保持现基线、重进复位，不消费Product Excel v0.1或把参数当正式值；Excel Task独立USER_REVIEW。Continuity：v0.2可继续，Master正在推动Client实际首产，不以READY停点。
 
 2026-10-09 16:43:38 +08:00（Producer U00 Client v0.2/R2送审）10/10 Required非空、DELIVERABLE七项拆分验收PASS，Tech/Master同版R2 Review APPROVED；两授权TS与Creator R2构建清单SHA一致，内置浏览器390×844/720×1280验证逐店X/Y/步长/恢复、整组六店JSON复制和原入口/镜头功能。Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null；用户尚未批准本调试工具。临时调节重进恢复旧基线，导出JSON只供用户反馈，正式坐标另待批准；Product Excel v0.1仍独立USER_REVIEW且未消费。Continuity：本Client任务已到真实用户门禁，无空转READY/IN_PROGRESS；复盘`WR-20261009-U00-ADJUSTER-V02-001`。

@@ -1,5 +1,9 @@
 # 百鬼夜市｜项目美术指南
 
+## 2026-10-09 店长形象范围更新
+
+用户决定重新确定六位店长的形象，分别审看店前站立的全身形象与对话框中的半身形象。旧孟桃外观作废，相关概念稿和已批准记录仅保留历史，不再强制沿用棕短发、绿围裙、橙束带或“孟”字腰牌的旧画面锚点；孟桃的产品身份与性格仍需依据有效产品资料核对。新形象尚未锁定，当前仅进入概念方案阶段，不据此启动 PSD、切片、动画或客户端接入。下文“当前选择与八条长期原则”中第 4 条的孟桃旧外观及后续旧单元描述仅作历史记录，关于六位店长新外观以本次获批的后续具体版本为准。
+
 2026-10-05 示例1四层切图交接：用户提供的四层 PSD 与导出 PNG 原样使用，具体文件与同尺度重组图见 `deliverables/art/UNIT-MENU-FOUR-LAYER-CUT-001/v0.3/USER_REVIEW_PACKET.md`。用户已取消本批切图效果的专业复审和额外预览环境前置环节，由用户直接审核具体结果；Gate2 v0.3 已于 2026-10-05 获 `USER_APPROVED`（见 `tasks/UNIT-MENU-FOUR-LAYER-CUT-001/ARTIFACT_APPROVAL.json`），U01 客户端实现 v0.2 亦于 2026-10-06 获 `USER_APPROVED`（见 `tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json`）。正式 QA 仍按独立门禁执行。下文涉及旧空景或既往专业审图的记录保留为历史，不覆盖此决定。
 
 更新：2026-10-03。当前视觉选择：[第一街精确选定参考 v0.4](../deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md)。用户已退回加宽版并选定未加宽**非像素**附件；不再继续A/B生产方向。当前新单元：[孟桃奶茶店 v0.5](../deliverables/art/UNIT-PILOT-ART-CONCEPT-001/v0.5/ART_BRIEF.md) 三图与拆件方案已获 USER_APPROVED。下一环节是[正式分层与单页图集出图前签认 v0.1](../deliverables/art/UNIT-PILOT-ART-SOURCE-PREFLIGHT-001/v0.1/ART_BRIEF.md)，仍待本阶段专业及用户审批。全景或概念批准都不等于生产骨骼/atlas/Creator完成。

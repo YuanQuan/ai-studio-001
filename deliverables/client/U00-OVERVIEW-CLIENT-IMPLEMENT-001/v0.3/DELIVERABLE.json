@@ -1,0 +1,74 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "按用户发回的六店参数更新U00默认脚点，保留scale 0.4及既有调节/导出功能；新构建、HTTP及Master两视口运行验证已完成。",
+  "artifacts": [
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/USER_LAYOUT_INPUT.json",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/BUILD_R1_MANIFEST.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/CREATOR_BUILD_R1_LOG.txt",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/HTTP_R1_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/RUNTIME_MANIFEST.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/baseline-export.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/console.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/baseline-390.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/restore-390.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/reenter-390.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop1-720.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop2-720.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop3-720.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop4-720.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop5-720.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/evidence/iab/shop6-720.jpg"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店默认坐标精确匹配用户输入；稳定ID顺序、scale 0.4不变",
+      "result": "PASS",
+      "evidence": "USER_LAYOUT_INPUT.json与OVERVIEW_SHOP_BASELINE同序同值；SHOP_IDS未修改，缩放常量仍为0.4。"
+    },
+    {
+      "criterion": "恢复、重进及整组六店导出反映新基线",
+      "result": "PASS",
+      "evidence": "Master实际导出六店id/footX/footY/scale逐项匹配用户输入，并验证坐标微调后恢复及离页重进恢复；证据evidence/RUNTIME_MANIFEST.json和iab/baseline-export.json。"
+    },
+    {
+      "criterion": "U00菜单置顶以及原镜头、显隐、顾客功能保持",
+      "result": "PASS",
+      "evidence": "本轮差异仅为六店baseline与说明注释；相关行为逻辑未修改。"
+    },
+    {
+      "criterion": "只修改授权代码和交付记录，其他资源不变",
+      "result": "PASS",
+      "evidence": "RESOURCE_INTEGRITY_CHECK覆盖198个tracked assets，仅UnitSampleGallery.ts变化，其余197项逐字节匹配Git HEAD。"
+    },
+    {
+      "criterion": "Creator 3.8.8新Web-Mobile构建成功并绑定当前源码",
+      "result": "PASS",
+      "evidence": "BUILD_R1_MANIFEST绑定本轮SHA与唯一CLI会话21944，exit36、Finished、149文件/25,935,219字节；raw log保留worker SIGTERM诊断及后续成功标记。"
+    },
+    {
+      "criterion": "HTTP实际构建产物可访问且响应身份匹配本轮构建",
+      "result": "PASS",
+      "evidence": "既有loopback服务经no-proxy GET/HEAD对页面及main/index.js返回200；响应SHA与BUILD_R1_MANIFEST一致，见evidence/HTTP_R1_CHECK.json。"
+    },
+    {
+      "criterion": "内置浏览器两视口检查",
+      "result": "PASS",
+      "evidence": "Master在390×844确认初值/导出/恢复/重进，在720×1280逐店选看六店并确认投壶坐标，console warn/error为空；见evidence/RUNTIME_MANIFEST.json及11项证据。"
+    }
+  ],
+  "assumptions": [
+    "用户提供的坐标单位为与现有调节面板相同的源画布脚点坐标。",
+    "用户授权应用这组六店默认位置；该授权不等同于U00 v0.3 Artifact已通过专业Review或用户审批。"
+  ],
+  "risks": [
+    "真机触控、目标设备性能和Library逐UUID回读未测试。",
+    "构建日志有build-script worker SIGTERM诊断，尽管后续Assets success、Asset DB resume和Finished均出现，Owner不推断该诊断性质。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

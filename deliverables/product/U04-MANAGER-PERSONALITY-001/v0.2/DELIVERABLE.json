@@ -1,0 +1,53 @@
+{
+  "task_id": "U04-MANAGER-PERSONALITY-001",
+  "owner": "product",
+  "summary": "v0.2六店长性格与魂成长提案：六人对应店铺，阿角本人发型四魂渐进；仅阿棠0魂只言片语是待用户批准的Product提案。",
+  "artifacts": [
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.2/PRD.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.2/ACCEPTANCE.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.2/CHANGE_IMPACT.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.2/DELIVERABLE.json",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.2/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六位确认名单逐一记录性格核心、0魂至后续四阶段表现与各自主导成长维度；区分用户已确认、现有已批事实与待批提案。",
+      "result": "PASS",
+      "evidence": "PRD.md第1至3节逐人列性格、主维度、四魂表现；历史来源与提案边界见第1节。"
+    },
+    {
+      "criterion": "仅一位店长在0魂时只言片语，具体人选须在Product提案中标为待用户批准；其他五人保持可辨性格与语言能力，不把失语设为全员规则。",
+      "result": "PASS",
+      "evidence": "PRD.md第1至4节；阿棠0魂语言例外明确写作待批提案，其余五人0魂保持正常交流。"
+    },
+    {
+      "criterion": "保留原人格、四阶段和七魄属性方向；维度分配不虚构具体数值、商业化或未批准玩法规则。",
+      "result": "PASS",
+      "evidence": "PRD.md第1、4节与CHANGE_IMPACT.md；未定义数值、商业化或新增玩法。"
+    },
+    {
+      "criterion": "阿角发型成长按用户明确方向形成0/1/2/3魂可辨链：0魂油腻颓废分头，3魂精神挺立且时髦，中间两阶段连续可辨；六位店长均标明对应店铺，区分已确认关系与待批提案。",
+      "result": "PASS",
+      "evidence": "PRD.md第2节六人店铺表及第3节阿角四阶段发型；ACCEPTANCE.md A01、A05、A06。"
+    },
+    {
+      "criterion": "说明本性格规格对既有Art形象草案的影响及下游重新审阅点；绘图、正式图片、动画及客户端接入继续暂停。",
+      "result": "PASS",
+      "evidence": "CHANGE_IMPACT.md逐项说明旧Art草案、下游重审和绘图暂停。"
+    },
+    {
+      "criterion": "Required Artifact和验收逐项齐备、Master同版Review通过后，才将准确v0.2版本送用户审核；用户未批前不得作为Art正式形象生产输入。",
+      "result": "PASS",
+      "evidence": "Product四份文件与MASTER_REVIEW实存，Master同版APPROVED；PASS仅表示文档已具备送审条件，用户未批准。"
+    }
+  ],
+  "assumptions": [
+    "阿棠的语言受限是唯一0魂只言片语案例；其0魂仍理解问题并可借糖画和手势表达。",
+    "历史六摊位讨论稿的身份与店铺关联用于本版人物语义，尚未让讨论稿整版自动获批。"
+  ],
+  "risks": [
+    "阿炭体力轮廓变化、阿角手部动作及本人四阶段发型与历史同骨骼三姿态约束是否相容，须在后续Art和Tech正式设计阶段核查。",
+    "四阶段对白仅是语气校准示例，最终剧情内容和资产量未锁定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

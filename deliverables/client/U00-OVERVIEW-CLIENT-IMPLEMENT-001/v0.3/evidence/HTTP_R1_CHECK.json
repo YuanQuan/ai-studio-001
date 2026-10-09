@@ -1,0 +1,20 @@
+{
+  "revision": "v0.3-R1",
+  "checked_at": "2026-10-09T10:05:03Z",
+  "url": "http://127.0.0.1:4174/",
+  "server_pid": 83580,
+  "server_command": "python -m http.server 4174 --bind 127.0.0.1 --directory /private/tmp/u00-isolated-whfZRn/build/web-mobile",
+  "build_output": "/private/tmp/u00-isolated-whfZRn/build/web-mobile",
+  "requests": [
+    { "path": "/", "method": "GET", "status": 200, "body_bytes": 2103, "body_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d" },
+    { "path": "/assets/main/index.js", "method": "GET", "status": 200, "body_bytes": 152297, "body_sha256": "3e563a415eabb87a2def1365285c50203cac714c2e2b67487cb42946bffdc16d" },
+    { "path": "/", "method": "HEAD", "status": 200 },
+    { "path": "/assets/main/index.js", "method": "HEAD", "status": 200 }
+  ],
+  "artifact_sha256": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "assets/main/index.js": "3e563a415eabb87a2def1365285c50203cac714c2e2b67487cb42946bffdc16d"
+  },
+  "result": "PASS",
+  "note": "Requests used explicit loopback no-proxy routing. Initial urllib requests inherited proxy settings and returned 502; direct GET/HEAD to the existing server returned 200 with hashes matching this build manifest. The existing service was not restarted or modified."
+}

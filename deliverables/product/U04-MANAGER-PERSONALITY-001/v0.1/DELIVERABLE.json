@@ -1,0 +1,48 @@
+{
+  "task_id": "U04-MANAGER-PERSONALITY-001",
+  "owner": "product",
+  "summary": "六位店长各有独立性格与魂成长主维度；仅阿棠采用0魂只言片语到3魂完整表达，其他五人保留正常交流。四阶段对白及视觉、工作表现用于审阅产品语义。",
+  "artifacts": [
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.1/PRD.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六位确认名单逐一记录性格核心、0魂至后续四阶段表现与各自主导成长维度；区分用户已确认、现有已批事实与待批提案。",
+      "result": "PASS",
+      "evidence": "PRD第1–3节六人性格与四阶段表；来源、用户方向与推荐细节分别标明。"
+    },
+    {
+      "criterion": "仅一位店长在0魂时只言片语，具体人选须在Product提案中标为待用户批准；其他五人保持可辨性格与语言能力，不把失语设为全员规则。",
+      "result": "PASS",
+      "evidence": "PRD第1、3、4节：阿棠为本提案推荐人选，待用户批准；PASS仅表示提案内部符合仅一人约束。"
+    },
+    {
+      "criterion": "保留原人格、四阶段和七魄属性方向；维度分配不虚构具体数值、商业化或未批准玩法规则。",
+      "result": "PASS",
+      "evidence": "PRD第1、4节与ACCEPTANCE A05/A07；无数值、付费或新玩法。"
+    },
+    {
+      "criterion": "说明本性格规格对既有Art形象草案的影响及下游重新审阅点；绘图、正式图片、动画及客户端接入继续暂停。",
+      "result": "PASS",
+      "evidence": "CHANGE_IMPACT逐项列Art草案及下游评估点；图片、动画、接入均暂停。"
+    },
+    {
+      "criterion": "Required Artifact和验收逐项齐备、Master同版Review通过后，才将准确v0.1版本送用户审核；用户未批前不得作为Art正式形象生产输入。",
+      "result": "PASS",
+      "evidence": "Required路径齐备且MASTER_REVIEW为APPROVED；PASS为文档送审条件，不代表用户批准或实际制作通过。"
+    }
+  ],
+  "assumptions": [
+    "阿棠的语言受限是唯一0魂只言片语案例；其0魂仍理解问题并可借糖画和手势表达。",
+    "历史六摊位讨论稿的身份与店铺关联用于本版人物语义，尚未让讨论稿整版自动获批。"
+  ],
+  "risks": [
+    "阿炭体力轮廓变化、阿角手部动作与历史同骨骼三姿态约束是否相容，须在后续Art和Tech正式设计阶段核查。",
+    "四阶段对白仅是语气校准示例，最终剧情内容和资产量未锁定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

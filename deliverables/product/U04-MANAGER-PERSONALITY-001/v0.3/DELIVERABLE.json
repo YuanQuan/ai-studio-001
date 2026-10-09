@@ -1,0 +1,55 @@
+{
+  "task_id": "U04-MANAGER-PERSONALITY-001",
+  "owner": "product",
+  "summary": "v0.3六店长性格与四魂变化提案，按用户新要求修订孟桃、阿棠、阿炭、阿灯、小锦；阿角v0.2线保留。只定义角色语义，不绘图、不设数值。",
+  "artifacts": [
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/ACCEPTANCE.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/CHANGE_IMPACT.md",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/DELIVERABLE.json",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六位确认店长逐一标明对应店铺、性格核心及0／1／2／3魂可辨表现；区分用户已确认方向、历史参考与本版待批提案。",
+      "result": "PASS",
+      "evidence": "PRD.md第1–3节六人总表和四魂表；第1节区分历史来源与本轮用户要求。"
+    },
+    {
+      "criterion": "小锦以视力与自我形象为主线：早期高度近视、厚圈纹眼镜，后期可使用隐形眼镜；不虚构真实度数，不宣称隐形眼镜治愈视力。",
+      "result": "PASS",
+      "evidence": "PRD.md第2节小锦行、第3节小锦表；眼镜到隐形仅为媒介且仍残留模糊。"
+    },
+    {
+      "criterion": "阿灯在聊天三句中忘记前一句并有四阶段递进；阿棠从表达障碍、害羞内向成长为自信外向，0魂仅一人只言片语的既定人数约束保持，具体角色分配随本版送审。",
+      "result": "PASS",
+      "evidence": "PRD.md第3节阿灯三轮0/3对话与四阶段表、阿棠四阶段表；第1、4节说明只言片语人选待批。"
+    },
+    {
+      "criterion": "孟桃从耳钉等叛逆外显到淑女文静；阿炭从瘦弱、黑眼圈、厌食到健硕精神且旧症状消失；阿角保留v0.2个人发型0／1／2／3魂递进方向，均保持人物可辨且不新增数值规则。",
+      "result": "PASS",
+      "evidence": "PRD.md第2–3节孟桃、阿炭、阿角；阿炭进食与体型都有证据。"
+    },
+    {
+      "criterion": "说明v0.2旧六维分配、旧小锦内敛台风等与最新用户方向的覆盖关系及对Art/下游的影响；不绘图、不定义数值、不实施或接入。",
+      "result": "PASS",
+      "evidence": "CHANGE_IMPACT.md逐人覆盖旧v0.2和Art下游重审；PRD.md第4节明确不生产。"
+    },
+    {
+      "criterion": "Required Artifact与验收逐项齐备、Master同版Review通过后，才将准确v0.3送用户审核；用户未批前不得作为Art正式形象生产或开发输入。",
+      "result": "PASS",
+      "evidence": "Product四份文件及MASTER_REVIEW实存，Master同版APPROVED；PASS为文档齐备与可送审，不表示用户批准或实际视觉实现通过。"
+    }
+  ],
+  "assumptions": [
+    "阿棠承载唯一只言片语是本版Product提案，用户尚未批准具体人选。",
+    "小锦近视恢复仅为魂损与恢复的虚构角色叙事；隐形眼镜是后期外形媒介，不是恢复原因。",
+    "六店身份与店铺关联结合用户已确认名单和历史讨论稿，具体角色规格以本版用户审批为准。"
+  ],
+  "risks": [
+    "阿炭厌食症、小锦高度近视的具体视觉与剧情表现须后续专业评审，避免羞辱或误导现实健康理解。",
+    "孟桃耳饰、阿角发型、阿炭体型、小锦眼镜与旧同骨骼三姿态方向的制作兼容性待Art／Tech评估。",
+    "阿灯三轮示例是固定对白，不预设实时AI记忆系统或其他新玩法。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
