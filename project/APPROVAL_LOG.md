@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-09 14:09:52 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-BRIEF-001` v0.1 `FEATURE_BRIEF.md` SHA-256 `9abee98f364f58f19db2fecb9ac220cd3780164cf8927ac235bea066ed3cda71`，`RESOURCE_REUSE_AUDIT.md`与`DELIVERABLE.json`实存，Tech/Master同版APPROVED，四项方案验收PASS。`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json`为USER_REVIEW、decided_at null，待用户明确批准/退回；仅方案审批，不包括编码、运行或U01/U02实现。
+
+2026-10-09 14:02 +08:00（开线登记；非Artifact用户决定）：`U00-OVERVIEW-BRIEF-001` v0.1编码前方案尚未产出，`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json`为DRAFT、decided_at null。用户确认需求细节仅作为Task输入，需Tech/Master同版Review通过后另呈具体方案；此确认不批准U00方案，也不批准仍处USER_REVIEW的U01实现。
+
 2026-10-09 12:20:43 +08:00（Producer Client v0.1送审；非用户实现批准）：`U01-FIVE-LAYER-CLIENT-REPLACE-001` 的实施报告SHA-256 `7e966779cbc28e76a3442401c1558cab7202416be1ca8a5dd26be8643c098251`，9/9 Required实存、四项验收PASS；Art/Tech对实际Web-Mobile接入与五视窗浏览器证据均APPROVED，Master`MASTER_ACCEPTANCE.md`接受送审。当前Client `ARTIFACT_APPROVAL.json`为USER_REVIEW、decided_at null，等待用户对本次客户端替换及运行结果确认。Art资源v0.6此前USER_APPROVED只解锁接入，不代替本实现审批；Task不标DONE。
 
 2026-10-09 12:01:26 +08:00（Producer绑定登记时刻，用户回复精确时刻未知）：用户对当前`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.6具体五层PSD/五PNG及重组审核明确回复“批准”。现行资源`ARTIFACT_APPROVAL.json`状态`USER_APPROVED`，绑定`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/USER_REVIEW_PACKET.md` SHA-256 `477f05b9d2da82536018ede89c9c91b3f42199553224f40b2f07ecba83c15cd3`，decided_at为本登记时间；Master基于19/19 Required、四PASS与已核实图接受Art资源Task DONE。此批准解锁Client正式接入，不代表已导入或运行通过；Client Task READY、其实现Approval仍DRAFT。

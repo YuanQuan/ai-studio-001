@@ -1,5 +1,11 @@
 # 关键节点记录
 
+2026-10-09 14:09:52 +08:00 | `U00-OVERVIEW-BRIEF-001` | Tech/Master同版APPROVED / REVIEW→USER_REVIEW | `deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md` SHA`9abee98f…ed3cda71`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json`、`TECH_REVIEW.json`、`MASTER_REVIEW.json`；`tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json` | 四项验收PASS；Approval USER_REVIEW/decided_at null。仅编码前方案送用户决定，未编码或运行验证；U01/U02待批不由本线代批。
+
+2026-10-09 14:07:05 +08:00（Producer核验时刻；首份文件实际落盘时刻待核） | `U00-OVERVIEW-BRIEF-001` | TASK_STARTED / READY→IN_PROGRESS；Client v0.1首稿提交 / IN_PROGRESS→REVIEW | `deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json` | 三份Owner文件实存，DELIVERABLE为READY_FOR_REVIEW；方案前三验收PASS、评审/用户门禁NOT_TESTED。Tech/Master同版Review待，不记用户批准或编码开工。
+
+2026-10-09 14:02 +08:00（开线登记；用户消息精确时刻未知） | `U00-OVERVIEW-BRIEF-001` | Task创建并校验可执行 / SPEC→READY | `tasks/U00-OVERVIEW-BRIEF-001/TASK.json`、`ARTIFACT_APPROVAL.json` | 四项验收与v0.1 Required明确，方案无依赖；Client交付目录尚无实产，不记TASK_STARTED/IN_PROGRESS。Approval DRAFT；U01实现USER_REVIEW独立待决。
+
 2026-10-09 12:20:43 +08:00 | `U01-FIVE-LAYER-CLIENT-REPLACE-001` | 四验收与Art/Tech/Master同版门禁通过 / IN_PROGRESS→REVIEW→USER_REVIEW | `deliverables/client/U01-FIVE-LAYER-CLIENT-REPLACE-001/v0.1/IMPLEMENTATION_REPORT.md` SHA`7e966779…c098251`、`DELIVERABLE.json`、`ART_REVIEW.json`、`TECH_REVIEW.json`、`MASTER_ACCEPTANCE.md`、`BROWSER_RUNTIME_CHECK.md`、20截图及`project/ASSET_HANDOFF_REGISTRY.md` | 9/9 Required、21项交付索引全部实存、四验收PASS；Creator导入/构建/HTTP/五CSS竖屏浏览器交互与专业运行Review已核，Master接受送用户确认。Client Approval USER_REVIEW/decided_at null；Art v0.6批准不替代实现批准，真机/性能仍NOT_TESTED。
 
 2026-10-09 12:17:47 +08:00 | `U01-FIVE-LAYER-CLIENT-REPLACE-001` | Art/Tech接入后运行Review同构建APPROVED；交付验收更新待 | `deliverables/client/U01-FIVE-LAYER-CLIENT-REPLACE-001/v0.1/ART_REVIEW.json`、`TECH_REVIEW.json`、`BROWSER_RUNTIME_CHECK.md`、`evidence/BROWSER_SCREENSHOTS_SHA256.txt` | Art五视窗视觉、Tech导入UUID/构建/浏览器结果接受；Tech MINOR四类Editor tooltip、真机性能NOT_TESTED。当前DELIVERABLE仍旧1PASS/3NOT_TESTED，Owner须同步后Producer再判USER_REVIEW。

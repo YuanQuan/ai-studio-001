@@ -1,0 +1,28 @@
+{
+  "task_id": "U00-OVERVIEW-BRIEF-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 v0.1 FEATURE_BRIEF、RESOURCE_REUSE_AUDIT、现有 UnitSampleGallery、Scene1CameraController、TouristStateController 与 SHOP_IDS。方案以现有五层、顾客 Prefab 和六店 Prefab 组合，不新增或改写图片、Prefab、字体及协议；六店顺序与现有 SHOP_IDS 一致，桥只作街景地标。此结论限编码前方案，不是运行或性能验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "层级方案将组合容器作为五层同级节点插入 L03_Ground 与 L04_WaterBridge 之间；镜头控制器原 layers 数组严格保留五层，以可选同步节点接口给组合容器施加与 L03/L04 相同的缩放和 1.0 位移系数。街景显隐仅作用五层，不关闭承载组合容器的根节点，因此三组可独立显隐。该最小扩展符合当前 recalculate 固定五层校验，不应另建相互漂移的镜头。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现有 TouristStateController.selectAction 对当前同动作且 ready 时直接返回。修订稿明确 happy/sad 到 holding 后随机候选排除刚结束的情绪动作，避免再次抽中同动作而停在 holding；每位顾客独立状态、视图与适配器，移动只由 U00 调度。实际速度、人数上限、随机权重只是待用户确认的试摆候选。"
+    },
+    {
+      "severity": "INFO",
+      "message": "新增显隐、数量按钮和原缩放/重置/返回按钮须由镜头输入命中判断捕获，先处理控件再开始拖拽。Owner 自检包含多视口拖缩、栏杆遮挡、四动作、增减与离页重进，并计划按 Cocos CLI、实际 Web 产物和内置浏览器留证；节点数、DrawCall、纹理及帧时长仍待实施实测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "审批核对：U01 背景 v0.6、U02 帧 v0.2、U03 Gate2 v0.4 资源已批，U01 Client v0.1 和 U02 Client v0.3-R2 仍在 USER_REVIEW，资源批准不能替代实施批准；U03 Client v0.1/R3 已批，单元示例 QA 线后续取消并转 Owner 自检。U00 自身方案仍须 Master 同版评审及用户批准，才可安排实施。"
+    }
+  ],
+  "next_action": "Master 对同一 v0.1 方案复核并送用户审批。获批后，Client 在实施前再次核 U01/U02 客户端审批、资源哈希和工程基线；按本方案实现并留 Owner 运行与视觉检查证据，位置和性能未实测项保持 NOT_TESTED。"
+}

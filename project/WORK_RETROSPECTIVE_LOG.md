@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261009-U00-BRIEF-001
+
+- 周期与结果：可核登记窗口2026-10-09 14:02–14:09:52 +08:00，约7分52秒；用户原始需求消息精确时间未知。Master创建U00 Task后，Client交付编码前v0.1方案、资源复用审计和索引，Tech/Master同版Review均APPROVED，Producer核Required、四项验收与SHA后送USER_REVIEW。证据为Task/Approval、三份Client产物及双Review。未编码、未作运行或性能结论。
+- 时间分类：14:02为Producer开线登记，14:07:05核Owner首稿和评审待办，14:09:52为最终门禁核验。窗口包含Client写作、Tech/Master Review及Producer登记，可能并行；各角色净制作/评审时间、工具等待和用户此前需求澄清耗时未知。当前才开始等待本方案用户决定，不计入已结束窗口；已发生送审前Draft修正：明确街景只切五层、镜头保留五层数组、情绪重选排除同动作及纠正U03 QA历史描述；修正净耗时未知，无可证实工具故障。
+- 速度判断与建议：缺少同类基线，不判断快慢。可核风险是U01/U02实现仍USER_REVIEW，可能影响后续U00编码输入。Master在用户批准U00方案后另核U01/U02准确实现版本与资源身份再编排实现；代价为一次依赖与哈希核对，复核点为U00实施Task进入READY前。Producer对U00方案审批单独登记，避免需求确认或U01资源批准被误用作实现批准。
+- Continuity check：U00已到准确v0.1 USER_REVIEW用户决定门禁；无空转READY/IN_PROGRESS。U01/U02各自USER_REVIEW，未借本轮U00需求确认改变状态。
+
 ## WR-20261009-U01-CLIENT-REPLACE-009
 
 - 周期与结果：可核登记窗口为2026-10-09 12:01:26–12:20:43 +08:00，墙钟19分17秒；用户资源批准回复的精确时刻未知，不能把此窗外推为其等待或全部工作耗时。Art v0.6具体切片USER_APPROVED后Client依赖解锁，五PNG同源导入、五层Prefab/镜头更新、Creator 3.8.8 Web-Mobile构建、HTTP和内置浏览器五CSS竖屏中心/左右与拖缩/重入证据完成。Art/Tech运行Review APPROVED，Master接受实现送审；Client Task USER_REVIEW、Approval USER_REVIEW、decided_at null。证据为上游批准、Client Task/Approval、实施报告、对象/资产导入审计、构建日志、浏览器记录和20张截图/哈希、双Review、Master验收及资源登记。

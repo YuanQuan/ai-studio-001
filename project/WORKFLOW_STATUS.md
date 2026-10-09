@@ -1,5 +1,11 @@
 # 工作流状态
 
+2026-10-09 14:09:52 +08:00（Producer U00 v0.1同版送审与continuity）`FEATURE_BRIEF.md` SHA-256 `9abee98f364f58f19db2fecb9ac220cd3780164cf8927ac235bea066ed3cda71`实核；五项Task Required文件与Approval均实存，`DELIVERABLE.json`四项验收PASS，Tech/Master Review均APPROVED。Task `REVIEW→USER_REVIEW`、方案Approval USER_REVIEW、decided_at null；等待用户对准确v0.1方案决定。方案尚未批准，不得编码；U01/U02实现仍各自USER_REVIEW，U00需求确认不替代其审批。Continuity check：U00到达真实用户门禁，无空转READY/IN_PROGRESS；本次只核U00，不改其他线状态。复盘`WR-20261009-U00-BRIEF-001`。
+
+2026-10-09 14:07:05 +08:00（Producer U00首稿与实际开工核验）Client v0.1 `FEATURE_BRIEF.md`、`RESOURCE_REUSE_AUDIT.md`、`DELIVERABLE.json`三份已实存；Owner交付索引为READY_FOR_REVIEW，前三项方案验收PASS、第四项评审/用户批准NOT_TESTED。据此补记真实`TASK_STARTED / READY→IN_PROGRESS`和首稿提交`IN_PROGRESS→REVIEW`；当前Task REVIEW、Approval DRAFT，待Tech/Master同版结论。U01实现独立USER_REVIEW，U00尚未获用户方案批准，不得编码。
+
+2026-10-09 14:02 +08:00（Producer U00编码前方案开线）Master已创建`U00-OVERVIEW-BRIEF-001`，四项验收、v0.1 Required路径和输入已明确，纯方案任务无前置依赖，故`SPEC→READY`。核查时`deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/`尚未出现，未记Client开工或`IN_PROGRESS`；方案Approval仍DRAFT、decided_at null。用户对U00需求/店序/原地情绪动作的确认是方案输入，不是v0.1 Artifact批准，也不解释为U01客户端实现批准；U01仍USER_REVIEW。Client仅可制作编码前方案，未获本方案批准不得实现。下一动作：Client落盘首份Required后登记TASK_STARTED，再核Tech/Master同版Review及用户审批门禁。
+
 2026-10-09 12:20:43 +08:00（Producer U01客户端v0.1实现送审与continuity）Client Task 9/9 Required非空，`DELIVERABLE.json`21项唯一交付索引全部实存并覆盖Required，四项验收与Task逐字同序PASS；实施报告SHA `7e966779…c098251`。获批Art v0.6五PNG与客户端及Web构建PNG逐字节一致，Creator Meta/Library五层全画布、旧L01–L04 UUID保持新L05真实UUID、Prefab/Scene与镜头3072×1024五视差已核。实际Web-Mobile/HTTP与内置浏览器五CSS竖屏中心左右边界、缩放/重置/返回重进证据已核；Art/Tech同构建运行Review均APPROVED，Master `MASTER_ACCEPTANCE.md`接受接入结果送审。Client Task`IN_PROGRESS→REVIEW→USER_REVIEW`、实现Approval USER_REVIEW、decided_at null，**用户此前Art切片批准不等于Client实现批准**。限桌面DPR1和鼠标模拟，真机/双指及目标设备性能NOT_TESTED；Tech MINOR Editor tooltip旧四类文字保留，不改已核构建身份。Continuity check：资源Task DONE，Client已到真实USER_REVIEW用户决定门禁，无U01空转READY/IN_PROGRESS；复盘`WR-20261009-U01-CLIENT-REPLACE-009`。
 
 2026-10-09 12:17:47 +08:00（Producer U01接入后专业运行Review进度）`ART_REVIEW.json`与`TECH_REVIEW.json`对同一当前Web-Mobile五视窗/导入结果均APPROVED，Art确认河前街后、L05水前且已截图状态未见显著露底/错序；Tech核五PNG源/目标SHA、Meta/Library全画布、旧四UUID保持新L05真实UUID、Prefab/Scene及实际构建/HTTP/浏览器交叉证据。Tech列MINOR Editor tooltip仍写四类，不影响运行；桌面DPR1及真机性能未测。Client当前`DELIVERABLE.json`仍为旧1PASS/3NOT_TESTED摘要，Owner正在吸收浏览器/双Review并重判验收，故Task继续IN_PROGRESS、Approval DRAFT，不能先送审。

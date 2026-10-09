@@ -1,0 +1,43 @@
+{
+  "task_id": "U00-OVERVIEW-BRIEF-001",
+  "owner": "client",
+  "summary": "U00总览单元编码前方案与现有资源复用核查，Tech/Master同版评审通过，待用户批准。",
+  "artifacts": [
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/RESOURCE_REUSE_AUDIT.md",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "三组显隐、镜头、顾客数量及四动作、六店与桥顺序和初摆方案",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 目标、画面与顾客动作节；仅方案通过，运行未测。"
+    },
+    {
+      "criterion": "登记真实资源路径、UUID、版本、审批及不增改资源边界",
+      "result": "PASS",
+      "evidence": "RESOURCE_REUSE_AUDIT.md Prefab 表、源纹理/帧清单锚点及审批事实源。"
+    },
+    {
+      "criterion": "顾客街道与栏杆间的层级、视差同步和 Owner 验证计划",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md 画面、层级与位置及平台、性能与验证节。"
+    },
+    {
+      "criterion": "Tech/Master同版方案评审完成，用户批准前不编码",
+      "result": "PASS",
+      "evidence": "TECH_REVIEW.json与MASTER_REVIEW.json均APPROVED；用户审批单独登记，当前未批准。"
+    }
+  ],
+  "assumptions": [
+    "初始 3 人、上限 8 人及移动速度/动作权重仅为可调候选。",
+    "六店先按获批 ID 顺序分置街市桥两侧，具体坐标待同视窗实图校准。"
+  ],
+  "risks": [
+    "U01 Client v0.1 与 U02 Client v0.3-R2 仍在 USER_REVIEW；不能用具体资源获批代替实施获批。",
+    "现有 Scene1CameraController 只驱动五层，组合对象的 1.0 镜头同步接口与 U00 控件命中须经 Tech 确认。",
+    "运行视觉、性能和目标设备尚未验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

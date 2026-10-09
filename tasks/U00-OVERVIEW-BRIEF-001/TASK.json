@@ -1,0 +1,35 @@
+{
+  "id": "U00-OVERVIEW-BRIEF-001",
+  "title": "U00 总览单元编码前方案",
+  "type": "design",
+  "owner": "client",
+  "parent": null,
+  "objective": "仅复用现有U01-U03资源形成总览单元编码前方案，经Tech/Master评审后提交用户审批。",
+  "inputs": [
+    "用户2026-10-09 U00需求与店序、情绪动作原地执行确认",
+    "apps/client/assets/UnitSampleGallery.ts及现有U01-U03资源与审批记录",
+    "rules/artifact_contract.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/RESOURCE_REUSE_AUDIT.md",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-BRIEF-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U00-OVERVIEW-BRIEF-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "明确三组显隐、场景移动缩放、顾客数量与四动作规则、六店顺序与初摆方案",
+    "登记现有资源真实路径/UUID/审批及资源不可新增修改范围",
+    "明确街道与栏杆间的顾客层级、视差同步及Owner验证计划",
+    "Tech/Master同版评审通过后进入用户审批；未批准不得编码"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "纯方案可并行；实现须方案USER_APPROVED并核对上游具体资源/实现审批。",
+    "不分派QA；不改美术资源，不新增依赖。"
+  ]
+}
