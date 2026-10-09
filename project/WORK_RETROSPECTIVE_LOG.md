@@ -414,7 +414,7 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 返工与原因：R1实图发现初始构图偏桥且性能面板遮数量控件，Client改镜头初始/重置焦点和面板生命周期；R2实图发现菜单首卡遮标题，R3改两处菜单偏移。原因有实际截图/实施报告证据，不能据此归责。Master报告Client一次工具状态探查中断、Tech两次容量错误后恢复同一成功构建；故本轮存在工具故障，故障净时长未知。无约定耗时基线，不判断整体“慢”。
 - 建议：Client在下一次Creator构建前先用菜单小视口核首屏焦点、控件遮挡和标题卡片间距；预期减少返工，代价是一次布局预检，复核点为下一次首轮浏览器截图。Tech Lead下一次隔离构建保留容量错误与恢复节点，预期便于区分工具等待，代价为简短日志，复核点为下一次构建记录。
 - Continuity：U00实现已到USER_REVIEW真实门禁，无空转READY/IN_PROGRESS；等待用户准确批准或退回。
-### WR-20261009-U00-SHOP-REVISION-001｜U00位置退修与配置表开线
+### WR-20261009-U04-MANAGER-PLAN-001｜六位店长形象方案开线与身份阻塞
 
 - 结果与证据：用户退回U00 Client v0.1/R3的六店位置并提出配置表；旧R3证据保留，Task REVISION、Approval REJECTED。Master已建Product配置任务，当前READY/DRAFT且无首份Required。证据见两Task/Approval及`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/`。
 - 时间：用户反馈精确时间未知；Producer绑定时间2026-10-09 15:34:36 +08:00。R3送审登记15:15:23 +08:00，二者间跨度含用户阅读与等待，不能当作Owner制作或返工耗时。Product尚无可核首产时间，总耗时未知。
@@ -427,3 +427,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间：Product首份Required由Producer于15:38:24 +08:00核实开工，Owner四文件于15:41:36核实，送审登记2026-10-09 15:45:27 +08:00。首产核验至送审的墙钟跨度含Owner制作、Tech/Master并行评审和Producer核查；各环节净耗时、用户反馈等待与工具容量故障影响时长未知。没有可比基线，不评角色速度。
 - 因果与建议：此前U00运行版本店铺位置被用户要求调整，可编辑X/Y配置是本轮直接产出；用户尚未给新坐标，源表保持旧基线是已说明的范围，不是新摆放结论。Product等待用户给方向或直接编辑工作簿，再按确切新值提交修订；代价为一轮数值/同视口画面校验，复核点为具体位置获批版本。Tech在Client接线前复核稳定ID与范围硬校验，复核点为下游生成器评审。
 - Continuity：Product已到USER_REVIEW；U00 Client REVISION依赖未获批具体配置，不能提前消费，当前没有空转READY/IN_PROGRESS。
+### WR-20261009-U04-PERSONALITY-001｜六店长名单确认与性格方案送审
+
+### WR-20261009-U00-SHOP-REVISION-001｜U00位置退修与配置表开线
+
+### WR-20261009-U00-ADJUSTER-V02-001｜U00临时调店工具到用户门禁
+
+- 结果与证据：Client v0.2/R2完成U00菜单置顶、六店临时X/Y微调及整组参数复制；10/10 Required、七项Owner拆分验收PASS，Tech/Master同版APPROVED，Task/Approval进入USER_REVIEW。证据见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/`与Task/Approval。旧v0.1/R3退修快照保留，Product Excel不在本实现的消费链。
+- 时间：v0.2首份源码由Producer于16:04:56 +08:00核实，Owner文书于16:09:30左右实存，R2运行清单于16:37:48实存，送审登记2026-10-09 16:43:38 +08:00。首产至送审墙钟跨度包含实现、两轮构建、浏览器操作、评审和等待；各角色净制作时间、用户等待与工具故障净时长未知。没有可比目标，不判整体速度。
+- 返工与建议：R1画面/控件核查后继续修正并以R2同版重构建，R1作为历史；具体R1→R2差异及原因以`IMPLEMENTATION_REPORT.md`和运行记录为准，不把旧截图当终版证据。Client下次在提交Review前先核最窄视口的调节面板和复制反馈可见性，预期减少一轮重构建；代价是一次交互预检，复核点为下一次首轮浏览器记录。Producer下轮核导出参数与获批正式坐标为两个独立版本，复核点为用户发回整组参数后配置/画面审批。
+- Continuity：本v0.2实现已到USER_REVIEW真实门禁；Product Excel v0.1仍待用户决定，正式位置另待用户提供及审批，无空转READY/IN_PROGRESS。

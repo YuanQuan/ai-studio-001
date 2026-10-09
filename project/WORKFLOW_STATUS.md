@@ -1,5 +1,9 @@
 # 工作流状态
 
+2026-10-09 16:00:53 +08:00（Producer U00 Client v0.2修订开线）用户进一步明确U00内可视调节六店位置、整组复制参数发回，菜单U00排在U01前；Master已修订`U00-OVERVIEW-CLIENT-IMPLEMENT-001`为v0.2六验收及十Required，旧v0.1 Task/REJECTED Approval保存在`history/v0.1/`。当前Task READY、Approval DRAFT，核时v0.2源码尚无新增diff、交付目录未出现，不记TASK_STARTED。该临时调试UI保持现基线、重进复位，不消费Product Excel v0.1或把参数当正式值；Excel Task独立USER_REVIEW。Continuity：v0.2可继续，Master正在推动Client实际首产，不以READY停点。
+
+2026-10-09 16:43:38 +08:00（Producer U00 Client v0.2/R2送审）10/10 Required非空、DELIVERABLE七项拆分验收PASS，Tech/Master同版R2 Review APPROVED；两授权TS与Creator R2构建清单SHA一致，内置浏览器390×844/720×1280验证逐店X/Y/步长/恢复、整组六店JSON复制和原入口/镜头功能。Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null；用户尚未批准本调试工具。临时调节重进恢复旧基线，导出JSON只供用户反馈，正式坐标另待批准；Product Excel v0.1仍独立USER_REVIEW且未消费。Continuity：本Client任务已到真实用户门禁，无空转READY/IN_PROGRESS；复盘`WR-20261009-U00-ADJUSTER-V02-001`。
+
 2026-10-09 15:45:27 +08:00（Producer U00六店配置v0.1送审）Product Task 7/7 Required实存非空、DELIVERABLE四项方案验收PASS，Tech/Master同版APPROVED；工作簿SHA `6f12f497…8f5c2c39`、字典SHA `133bd4ed…04b86c7b`。Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null。现表仅复现R3六店坐标作为可编辑基线，用户具体新位置/调整方向尚未决定，不得将基线当作获批新摆放，也不得让Client提前消费。U00 Client旧v0.1/R3继续REVISION。Continuity：Product已到真实用户门禁，Client修订依赖获批具体配置，当前U00无空转READY/IN_PROGRESS。复盘`WR-20261009-U00-CONFIG-REVIEW-001`。
 
 2026-10-09 15:38:24 +08:00（Producer Product首产核验）`U00-SHOP-LAYOUT-CONFIG-001`首份Required `v0.1/CONFIG_SPEC.md`非空实存，Product已实际着手字段/坐标基线，`READY→IN_PROGRESS/TASK_STARTED`。Excel与验证、Tech/Master同版Review及用户具体位置批准待，Approval DRAFT。Continuity：Owner继续产出至真实Review/USER_REVIEW，不能停在首稿。

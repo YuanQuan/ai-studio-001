@@ -139,6 +139,14 @@ export class Scene1CameraController extends Component {
     this.setZoom(this.zoom * multiplier);
   }
 
+  /** Center the source-space camera on a foreground item without changing its transform. */
+  public focusOnSourceX(sourceX: number): void {
+    if (!Number.isFinite(sourceX)) return;
+    this.clearGesture();
+    this.cameraX = sourceX;
+    this.recalculate();
+  }
+
   private onViewportChanged(): void {
     this.clearGesture();
     this.recalculate();

@@ -1,0 +1,70 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "U00 v0.2临时六店脚点调试面板、菜单置顶、JSON导出和复制后只读文本框已完成。Creator R2构建与HTTP产物核验通过；Master完成390/720两视口实际交互，导出855字符JSON经DOM与人工复制逐字一致。交Tech/Master Review和用户审核。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/labs/menu/scene1_camera_controller.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/BUILD_R1_MANIFEST.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/HTTP_R1_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/CREATOR_BUILD_R1_LOG.txt",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/BUILD_R2_MANIFEST.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/CREATOR_BUILD_R2_LOG.txt",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/HTTP_R2_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/RUNTIME_R2_MANIFEST.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/iab/r2-manual-copied-390.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/iab/r2-restored-all-390.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.2/evidence/iab/r2-console.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "菜单按U00、U01、U02、U03顺序，四入口保留",
+      "result": "PASS",
+      "evidence": "R2内置浏览器390视口实际确认U00、U01、U02、U03顺序和入口，截图evidence/iab/r2-menu-390.jpg。"
+    },
+    {
+      "criterion": "逐店调整地面接触点X/Y，有店名、当前坐标、步长及恢复基线，选择店铺能看到实际店铺",
+      "result": "PASS",
+      "evidence": "R2实测390奶茶(-1311,-265)、糖画(-900,-225)并聚焦可见；720选店到投壶并调为(1270,-175)，截图及JSON在evidence/iab/r2-*。"
+    },
+    {
+      "criterion": "复制六店稳定ID/名称/脚点X/Y/scale参数；失败有用户可读文本",
+      "result": "PASS",
+      "evidence": "R2导出文本框DOM含完整6店JSON；真实Super+C后clipboard.readText为855字符，全文与DOM一致。成功/失败均呈现可读文本框；剪贴板写拒绝专门分支未强制诱发。证据evidence/iab/r2-manual-copied-390.json。"
+    },
+    {
+      "criterion": "临时预览、离开重进恢复基线、相机重置不丢临时位置且原控件保持正常",
+      "result": "PASS",
+      "evidence": "R2恢复六店基线、离页重进恢复基线/步长10、相机重置保留调值、折叠后拖缩均通过；见evidence/iab/r2-restored-all-390.json及截图。"
+    },
+    {
+      "criterion": "仅修改授权源码，不动图/Prefab/字体/meta/Scene，不消费未批准Excel，不静默正式应用坐标",
+      "result": "PASS",
+      "evidence": "仅两份授权TS源码有改动；RESOURCE_INTEGRITY_CHECK.json覆盖198 tracked项，其余196项逐字节不变；实现不读取Excel或持久化参数。"
+    },
+    {
+      "criterion": "Creator3.8.8真实Web构建及HTTP实际构建入口",
+      "result": "PASS",
+      "evidence": "R2 Creator 3.8.8构建 exit36/Finished，149文件、25,935,211 bytes；最终source SHA绑定BUILD_R2_MANIFEST.json。既有4174 HTTP GET/HEAD 200，index SHA与R2输出一致，见HTTP_R2_CHECK.json。SIGTERM诊断未阻止完成但不称作正常终止。"
+    },
+    {
+      "criterion": "内置浏览器两视口位置调节/复制及原功能回归",
+      "result": "PASS",
+      "evidence": "Master实际检查390/720两视口：调店、导出、恢复、重进、相机、显隐/count和拖缩通过，console warn/error=[]；运行清单绑定最终源码SHA，evidence/RUNTIME_R2_MANIFEST.json，截图与JSON在evidence/iab/。"
+    }
+  ],
+  "assumptions": [
+    "临时基线沿用v0.1/R3六店脚点，source坐标X为-1320、-950、-580、580、950、1320，Y均为-225，缩放0.4。",
+    "店铺坐标只在当前U00页面预览；离开/重进还原基线。导出用于用户提供反馈，不能直接作为正式配置或消费未批准Excel。"
+  ],
+  "risks": [
+    "Clipboard API拒绝/失败专门分支未强制诱发；成功提示和可读只读文本框路径已验证。",
+    "真机触控、帧率、DrawCall和内存尚未测量。",
+    "未逐项回读Creator Library SpriteFrame UUID/像素。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

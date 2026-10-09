@@ -1,0 +1,36 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版v0.2/R2代码、构建与运行身份已核：UnitSampleGallery.ts SHA-256 42d27216233c26995a3d8eba052b3a828cf32b1433680277595b5967f2df2f20，scene1_camera_controller.ts SHA-256 3b3b55cdb6cbc9cb7cb21bcfc30b521ddedc4edd830356296ec591b6bc085ef7。隔离副本与工作区哈希一致；Creator 3.8.8 CLI ExitCode 36、Build Assets success、Asset DB resume及web-mobile Task Finished，当前输出149文件、25,935,211字节。v0.2/R1和v0.1/R3仅是历史证据，不替代R2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "R2菜单按U00、U01、U02、U03排列。U00调店面板按SHOP_IDS稳定顺序建立六个临时脚点，逐店显示名称与X/Y，步长1/10/50、选择聚焦、四向调整和恢复整组六店基线均由当前页面状态驱动。focusOnSourceX只改变并夹紧镜头位置，不写店铺坐标；镜头重置保留临时调值，离页重进重新从v0.1/R3基线生成。未读取待审批Product Excel，未修改正式资源默认值。"
+    },
+    {
+      "severity": "INFO",
+      "message": "镜头输入捕获按实际按钮和展开面板命中，面板折叠后场景拖动缩放可用；pageEpoch在异步Clipboard返回后检查当前页，防止离页后旧回调弹窗。导出JSON按稳定ID包含六店名称、footX、footY、scale及临时预览标志；Clipboard写入成功与失败都显示用户可选择的只读全文。R2内置浏览器实际读取DOM六店全文，手动全选并Super+C后剪贴板读回855字符与DOM完全一致；写入拒绝分支未强制诱发，其降级路径仅由源码审查支持。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Master在390×844与720×1280两个桌面浏览器手机模拟视口完成调节、六店选择/聚焦、两店同时改值、恢复、相机重置、离页重进、原显隐/人数/拖缩回归；25份证据及哈希见evidence/RUNTIME_R2_MANIFEST.json，HTTP入口与main脚本SHA匹配R2输出，console warn/error为空。受保护的196/196非授权assets跟踪文件字节未变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator日志的engine-script子进程曾记录SIGTERM诊断，但其后仍出现Build Assets success、Asset DB resume和Task Finished，CLI退出码36，实际main脚本HTTP加载及浏览器运行无资源或脚本错误。本次可判构建与桌面Web运行通过；无法仅凭日志断定SIGTERM属于正常缓存worker终止，保留原始日志供后续若有异常追查。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "调店UI与整组导出增加了UnitSampleGallery的职责和体积，但目前只服务一次性U00单元示例，未引入跨模块重复或不必要新依赖。若后续升级为正式可复用配置编辑能力，应由Client把调节状态/序列化与Gallery页面编排分离，并以获批配置Schema替代当前临时反馈JSON；当前不据此扩大本轮范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "评审范围限U00单元示例与两种桌面Web模拟视口。真机触控、目标平台性能、DrawCall/内存及Library逐UUID/像素回读未测试；本结论不是正式QA或用户对新位置的批准。"
+    }
+  ],
+  "next_action": "Master同版复核v0.2/R2交付并将临时位置调整工具呈用户审核；Producer记录具体版本审批。用户发回整组六店参数后，另按产品配置和视觉门禁审定新位置，再修改正式默认值，不直接把调试导出视为已批准配置。"
+}
