@@ -24,6 +24,7 @@ const OVERVIEW_SHOP_BASELINE = [
   { x: 350, y: -237 }, { x: 690, y: -250 }, { x: 1030, y: -249 },
 ];
 const OVERVIEW_SHOP_SCALE = 0.4;
+const OVERVIEW_TOURIST_SCALE = 0.28;
 
 @ccclass('UnitSampleGallery')
 export class UnitSampleGallery extends Component {
@@ -98,11 +99,16 @@ export class UnitSampleGallery extends Component {
   private overviewShopFootpoints: Array<{ x: number; y: number }> = [];
   private overviewShopSelectedIndex = 0;
   private overviewShopStep = 10;
+  private overviewShopScales: number[] = [];
+  private overviewTouristScales: number[] = [];
+  private overviewScaleStep = 0.02;
+  private overviewAdjustTarget: 'shops' | 'tourists' = 'shops';
   private overviewShopAdjustToggle: Node | null = null;
   private overviewShopAdjustPanel: Node | null = null;
   private overviewShopNameLabel: Node | null = null;
   private overviewShopXLabel: Node | null = null;
   private overviewShopYLabel: Node | null = null;
+  private overviewShopScaleLabel: Node | null = null;
   private overviewShopStepLabel: Node | null = null;
   private overviewShopFeedback: Node | null = null;
   private overviewClipboardFallback: any = null;
@@ -311,11 +317,16 @@ export class UnitSampleGallery extends Component {
     this.overviewShopFootpoints = [];
     this.overviewShopSelectedIndex = 0;
     this.overviewShopStep = 10;
+    this.overviewShopScales = Array.from({ length: 6 }, () => OVERVIEW_SHOP_SCALE);
+    this.overviewTouristScales = [];
+    this.overviewScaleStep = 0.02;
+    this.overviewAdjustTarget = 'shops';
     this.overviewShopAdjustToggle = null;
     this.overviewShopAdjustPanel = null;
     this.overviewShopNameLabel = null;
     this.overviewShopXLabel = null;
     this.overviewShopYLabel = null;
+    this.overviewShopScaleLabel = null;
     this.overviewShopStepLabel = null;
     this.overviewShopFeedback = null;
     this.closeOverviewClipboardFallback();
@@ -732,7 +743,7 @@ export class UnitSampleGallery extends Component {
     const top = this.makeNode('U00_TopControls', ui, 680, 86);
     this.button(top, '返回菜单', -250, 0, 150, 58, () => this.openMenu(), true);
     this.label(top, 'U00 夜市总览', 30, 0, 28, GOLD, 220, 54);
-    this.overviewShopAdjustToggle = this.button(top, '调整店铺', 255, 0, 144, 58,
+    this.overviewShopAdjustToggle = this.button(top, '调节面板', 255, 0, 144, 58,
       () => this.toggleOverviewShopAdjust(), true);
     const toggles = this.makeNode('U00_GroupToggles', ui, 690, 58);
     this.overviewGroupButtons.street = this.overviewToggle(toggles, '街景：显示', -230, 'street');
@@ -787,25 +798,29 @@ export class UnitSampleGallery extends Component {
   }
 
   private buildOverviewShopAdjustPanel(parent: Node): void {
-    const panel = this.drawRect(parent, 0, 0, 672, 400, PANEL);
+    const panel = this.drawRect(parent, 0, 0, 672, 570, PANEL);
     panel.name = 'U00_ShopAdjustPanel';
     panel.active = false;
     this.overviewShopAdjustPanel = panel;
-    this.label(panel, '临时调店预览 · 离开 U00 后恢复六店基线', 0, 170, 19, GOLD, 630, 36);
-    this.button(panel, '上一店', -250, 125, 104, 44,
+    this.label(panel, '临时调整预览 · 离开 U00 后恢复初始值', 0, 205, 19, GOLD, 630, 36);
+    this.button(panel, '店铺', -90, 165, 130, 40,
+      () => this.setOverviewAdjustTarget('shops'), true);
+    this.button(panel, '顾客', 90, 165, 130, 40,
+      () => this.setOverviewAdjustTarget('tourists'), true);
+    this.button(panel, '上一项', -250, 112, 104, 44,
       () => this.selectOverviewShop(-1), true);
     this.overviewShopNameLabel = this.label(panel, '', 0, 125, 19, TEXT, 260, 42).node;
-    this.button(panel, '下一店', 250, 125, 104, 44,
+    this.button(panel, '下一项', 250, 112, 104, 44,
       () => this.selectOverviewShop(1), true);
-    this.button(panel, 'X −', -250, 75, 104, 44,
+    this.button(panel, 'X −', -250, 62, 104, 44,
       () => this.adjustOverviewShop('x', -1), true);
-    this.overviewShopXLabel = this.label(panel, '', 0, 75, 20, TEXT, 260, 42).node;
-    this.button(panel, 'X +', 250, 75, 104, 44,
+    this.overviewShopXLabel = this.label(panel, '', 0, 62, 20, TEXT, 260, 42).node;
+    this.button(panel, 'X +', 250, 62, 104, 44,
       () => this.adjustOverviewShop('x', 1), true);
-    this.button(panel, 'Y −', -250, 26, 104, 44,
+    this.button(panel, 'Y −', -250, 13, 104, 44,
       () => this.adjustOverviewShop('y', -1), true);
-    this.overviewShopYLabel = this.label(panel, '', 0, 26, 20, TEXT, 260, 42).node;
-    this.button(panel, 'Y +', 250, 26, 104, 44,
+    this.overviewShopYLabel = this.label(panel, '', 0, 13, 20, TEXT, 260, 42).node;
+    this.button(panel, 'Y +', 250, 13, 104, 44,
       () => this.adjustOverviewShop('y', 1), true);
     this.button(panel, '步长 1', -180, -25, 110, 42,
       () => this.setOverviewShopStep(1), true);
@@ -813,13 +828,16 @@ export class UnitSampleGallery extends Component {
       () => this.setOverviewShopStep(10), true);
     this.button(panel, '步长 50', 180, -25, 110, 42,
       () => this.setOverviewShopStep(50), true);
-    this.button(panel, '恢复六店基线', -160, -105, 200, 42,
-      () => this.restoreOverviewShopBaseline(), true);
-    this.button(panel, '复制全部参数', 160, -105, 200, 42,
+    this.button(panel, '缩放 −', -250, -43, 104, 42, () => this.adjustOverviewScale(-1), true);
+    this.overviewShopScaleLabel = this.label(panel, '', 0, -43, 20, TEXT, 260, 42).node;
+    this.button(panel, '缩放 +', 250, -43, 104, 42, () => this.adjustOverviewScale(1), true);
+    this.button(panel, '恢复初始值', -160, -112, 200, 42,
+      () => this.restoreOverviewAdjustments(), true);
+    this.button(panel, '复制全部参数', 160, -112, 200, 42,
       () => { void this.copyOverviewShopParameters(); }, true);
-    this.overviewShopStepLabel = this.label(panel, '当前步长：10', 0, -62, 16, MUTED, 260, 30).node;
-    this.overviewShopFeedback = this.label(panel, '坐标只在本次页面预览，不会改正式默认值。',
-      0, -157, 15, MUTED, 640, 30).node;
+    this.overviewShopStepLabel = this.label(panel, '坐标步长：10 · 缩放步长：0.02', 0, -75, 16, MUTED, 420, 30).node;
+    this.overviewShopFeedback = this.label(panel, '调整只在本次页面预览；离开后恢复初始值。',
+      0, -165, 15, MUTED, 640, 30).node;
     this.updateOverviewShopAdjustPanel();
   }
 
@@ -827,18 +845,26 @@ export class UnitSampleGallery extends Component {
     if (!this.overviewShopAdjustPanel) return;
     this.overviewShopAdjustPanel.active = !this.overviewShopAdjustPanel.active;
     this.setTouristButtonText(this.overviewShopAdjustToggle,
-      this.overviewShopAdjustPanel.active ? '收起调店' : '调整店铺');
+      this.overviewShopAdjustPanel.active ? '收起面板' : '调节面板');
     if (this.overviewShopAdjustPanel.active) this.focusOverviewShop();
   }
 
   private selectOverviewShop(delta: number): void {
-    this.overviewShopSelectedIndex = (this.overviewShopSelectedIndex + delta + SHOP_IDS.length) % SHOP_IDS.length;
+    const count = this.overviewAdjustTarget === 'tourists' ? Math.max(1, this.overviewTourists.length) : SHOP_IDS.length;
+    this.overviewShopSelectedIndex = (this.overviewShopSelectedIndex + delta + count) % count;
     this.updateOverviewShopAdjustPanel();
     this.focusOverviewShop();
   }
 
+  private setOverviewAdjustTarget(target: 'shops' | 'tourists'): void {
+    this.overviewAdjustTarget = target;
+    const count = target === 'tourists' ? this.overviewTourists.length : SHOP_IDS.length;
+    this.overviewShopSelectedIndex = Math.min(this.overviewShopSelectedIndex, Math.max(0, count - 1));
+    this.updateOverviewShopAdjustPanel();
+  }
+
   private adjustOverviewShop(axis: 'x' | 'y', direction: number): void {
-    const point = this.overviewShopFootpoints[this.overviewShopSelectedIndex];
+    const point = this.overviewShopFootpoints[this.overviewShopSelectedIndex] ?? this.overviewShopFootpoints[0];
     if (!point) return;
     const limit = axis === 'x' ? 1536 : 512;
     const key = axis;
@@ -855,13 +881,29 @@ export class UnitSampleGallery extends Component {
     this.setOverviewShopFeedback(`当前调节步长：${step} 源坐标像素。`);
   }
 
-  private restoreOverviewShopBaseline(): void {
-    this.overviewShopFootpoints = OVERVIEW_SHOP_BASELINE.map(point => ({ ...point }));
-    this.overviewShopNodes.forEach((_, index) => this.applyOverviewShopFootpoint(index));
-    this.overviewShopSelectedIndex = 0;
+  private adjustOverviewScale(direction: number): void {
+    if (this.overviewAdjustTarget === 'shops') {
+      const index = this.overviewShopSelectedIndex;
+      this.overviewShopScales[index] = Math.max(0.1, Math.min(1, +(this.overviewShopScales[index] + direction * this.overviewScaleStep).toFixed(2)));
+      this.applyOverviewShopFootpoint(index);
+    } else {
+      const index = this.overviewShopSelectedIndex;
+      if (!this.overviewTourists[index]) return;
+      this.overviewTouristScales[index] = Math.max(0.1, Math.min(1,
+        +((this.overviewTouristScales[index] ?? OVERVIEW_TOURIST_SCALE) + direction * this.overviewScaleStep).toFixed(2)));
+      this.applyOverviewTouristScale(index);
+    }
     this.updateOverviewShopAdjustPanel();
-    this.focusOverviewShop();
-    this.setOverviewShopFeedback('六店已恢复本次预览的初始基线。');
+  }
+
+  private restoreOverviewAdjustments(): void {
+    this.overviewShopFootpoints = OVERVIEW_SHOP_BASELINE.map(point => ({ ...point }));
+    this.overviewShopScales = Array.from({ length: 6 }, () => OVERVIEW_SHOP_SCALE);
+    this.overviewTouristScales = this.overviewTourists.map(() => OVERVIEW_TOURIST_SCALE);
+    this.overviewShopNodes.forEach((_, index) => this.applyOverviewShopFootpoint(index));
+    this.overviewTourists.forEach((_, index) => this.applyOverviewTouristScale(index));
+    this.updateOverviewShopAdjustPanel();
+    this.setOverviewShopFeedback('店铺与顾客缩放、店铺位置已恢复初始预览值。');
   }
 
   private applyOverviewShopFootpoint(index: number): void {
@@ -869,27 +911,57 @@ export class UnitSampleGallery extends Component {
     const footpoint = this.overviewShopFootpoints[index];
     if (!shop?.isValid || !footpoint) return;
     const contactY = shop.getChildByName('ground_contact')?.position.y ?? -388;
-    shop.setPosition(footpoint.x, footpoint.y - contactY * OVERVIEW_SHOP_SCALE);
-    shop.setScale(OVERVIEW_SHOP_SCALE, OVERVIEW_SHOP_SCALE, 1);
+    const scale = this.overviewShopScales[index] ?? OVERVIEW_SHOP_SCALE;
+    shop.setPosition(footpoint.x, footpoint.y - contactY * scale);
+    shop.setScale(scale, scale, 1);
+  }
+
+  private applyOverviewTouristScale(index: number): void {
+    const instance = this.overviewTourists[index]?.view.root;
+    if (!instance?.isValid) return;
+    const scale = this.overviewTouristScales[index] ?? OVERVIEW_TOURIST_SCALE;
+    const footOffsetY = instance.getChildByName('MirrorRoot')?.position.y ?? 0;
+    instance.setScale(scale, scale, 1);
+    instance.setPosition(0, footOffsetY * (OVERVIEW_TOURIST_SCALE - scale), 0);
   }
 
   private focusOverviewShop(): void {
+    if (this.overviewAdjustTarget === 'tourists') {
+      const item = this.overviewTourists[this.overviewShopSelectedIndex];
+      if (item) this.overviewController?.focusOnSourceX(item.root.position.x);
+      return;
+    }
     const footpoint = this.overviewShopFootpoints[this.overviewShopSelectedIndex];
     if (footpoint) this.overviewController?.focusOnSourceX(footpoint.x);
   }
 
   private updateOverviewShopAdjustPanel(): void {
-    const point = this.overviewShopFootpoints[this.overviewShopSelectedIndex];
+    const point = this.overviewShopFootpoints[this.overviewShopSelectedIndex] ?? this.overviewShopFootpoints[0];
     if (!point) return;
+    const isTourist = this.overviewAdjustTarget === 'tourists';
+    const activeIndex = isTourist ? Math.min(this.overviewShopSelectedIndex, Math.max(0, this.overviewTourists.length - 1)) : this.overviewShopSelectedIndex;
     const label = this.overviewShopNameLabel?.getComponent(Label);
-    if (label) label.string = `${String(this.overviewShopSelectedIndex + 1).padStart(2, '0')}/06 ${SHOP_NAMES[this.overviewShopSelectedIndex]}`;
+    if (label) label.string = isTourist
+      ? `顾客 ${this.overviewTourists.length ? activeIndex + 1 : 0}/${this.overviewTourists.length}`
+      : `${String(this.overviewShopSelectedIndex + 1).padStart(2, '0')}/06 ${SHOP_NAMES[this.overviewShopSelectedIndex]}`;
     const xLabel = this.overviewShopXLabel?.getComponent(Label);
-    if (xLabel) xLabel.string = `脚点 X：${point.x}`;
+    if (xLabel) xLabel.string = isTourist ? '缩放只作用于选中的顾客' : `脚点 X：${point.x}`;
     const yLabel = this.overviewShopYLabel?.getComponent(Label);
-    if (yLabel) yLabel.string = `脚点 Y：${point.y}`;
+    if (yLabel) yLabel.string = isTourist ? '新增顾客使用初始缩放 0.28' : `脚点 Y：${point.y}`;
+    const scaleLabel = this.overviewShopScaleLabel?.getComponent(Label);
+    if (scaleLabel) scaleLabel.string = `缩放：${isTourist
+      ? (this.overviewTouristScales[this.overviewShopSelectedIndex] ?? OVERVIEW_TOURIST_SCALE).toFixed(2)
+      : this.overviewShopScales[this.overviewShopSelectedIndex].toFixed(2)}`;
     const stepLabel = this.overviewShopStepLabel?.getComponent(Label);
-    if (stepLabel) stepLabel.string = `当前步长：${this.overviewShopStep} 源像素`;
+    if (stepLabel) stepLabel.string = `坐标步长：${this.overviewShopStep} · 缩放步长：${this.overviewScaleStep.toFixed(2)}（0.10–1.00）`;
+    const shopButtons = ['X −', 'X +', 'Y −', 'Y +'].map(name => this.overviewShopAdjustPanel?.getChildByName(`Button_${name}`));
+    shopButtons.forEach(node => { if (node) node.active = !isTourist; });
+    for (const [name, mode] of [['店铺', 'shops'], ['顾客', 'tourists']] as const)
+      this.setTouristButtonText(this.overviewShopAdjustPanel?.getChildByName(`Button_${name}`),
+        `${this.overviewAdjustTarget === mode ? '● ' : ''}${name}`);
     for (const step of [1, 10, 50]) {
+      const button = this.overviewShopAdjustPanel?.getChildByName(`Button_步长 ${step}`);
+      if (button) button.active = !isTourist;
       this.setTouristButtonText(
         this.overviewShopAdjustPanel?.getChildByName(`Button_步长 ${step}`),
         `${this.overviewShopStep === step ? '● ' : ''}步长 ${step}`);
@@ -903,17 +975,21 @@ export class UnitSampleGallery extends Component {
 
   private overviewShopExportText(): string {
     return JSON.stringify({
-      schema: 'U00_SHOP_LAYOUT_FEEDBACK_V0_2',
+      schema: 'U00_ENTITY_LAYOUT_FEEDBACK_V0_3',
       temporaryPreview: true,
       leavePageRestoresBaseline: true,
-      scale: OVERVIEW_SHOP_SCALE,
+      tourists: this.overviewTourists.map((item, index) => ({
+        id: index + 1,
+        scale: this.overviewTouristScales[index] ?? OVERVIEW_TOURIST_SCALE,
+      })),
       shops: SHOP_IDS.map((id, index) => ({
         id,
         name: SHOP_NAMES[index],
         footX: this.overviewShopFootpoints[index].x,
         footY: this.overviewShopFootpoints[index].y,
-        scale: OVERVIEW_SHOP_SCALE,
+        scale: this.overviewShopScales[index] ?? OVERVIEW_SHOP_SCALE,
       })),
+      touristCount: this.overviewTourists.length,
     }, null, 2);
   }
 
@@ -1007,7 +1083,8 @@ export class UnitSampleGallery extends Component {
       const instance = instantiate(this.touristPrefab);
       instance.name = `UG_GHOST_01_${index + 1}`;
       root.addChild(instance);
-      instance.setScale(0.28, 0.28, 1);
+      const scale = this.overviewTouristScales[index] ?? OVERVIEW_TOURIST_SCALE;
+      instance.setScale(OVERVIEW_TOURIST_SCALE, OVERVIEW_TOURIST_SCALE, 1);
       const touristView = new TouristView(instance);
       touristView.setStageHeight(520);
       const state = new TouristStateController();
@@ -1028,11 +1105,17 @@ export class UnitSampleGallery extends Component {
       state.selectAction(action);
       const actionDurationMs = walking ? 2000 + (this.overviewRng % 2001) : 0;
       this.overviewTourists.push({ root, state, view: touristView, adapter, actionElapsed: 0, actionDurationMs, action, walking, bounds });
+      this.overviewTouristScales[index] = scale;
+      this.applyOverviewTouristScale(index);
     }
+    this.overviewTouristScales.length = target;
+    if (this.overviewAdjustTarget === 'tourists')
+      this.overviewShopSelectedIndex = Math.min(this.overviewShopSelectedIndex, Math.max(0, target - 1));
     this.overviewCount = target;
     if (this.overviewCountLabel?.isValid) this.overviewCountLabel.getComponent(Label)!.string = `顾客 ${target} / 8`;
     this.setTouristButtonText(this.overviewGroupButtons.tourists,
       `顾客：${this.overviewTouristsVisible ? '显示' : '隐藏'}`);
+    this.updateOverviewShopAdjustPanel();
   }
 
   private nextOverviewAction(previous: TouristAction | null): TouristAction {
@@ -1087,7 +1170,7 @@ export class UnitSampleGallery extends Component {
     const shopPanel = this.overviewShopAdjustPanel;
     topControls?.setPosition(0, top - 53);
     toggles?.setPosition(0, top - 120);
-    shopPanel?.setPosition(0, top - 380);
+    shopPanel?.setPosition(0, top - 450);
     count?.setPosition(0, bottom + 154);
     camera?.setPosition(0, bottom + 70);
     const back = topControls?.getChildByName('Button_返回菜单');
@@ -1112,9 +1195,9 @@ export class UnitSampleGallery extends Component {
       this.syncButtonDrawing(adjustToggle);
     }
     const shopPanelWidth = Math.min(672, visible.width - 24);
-    shopPanel?.getComponent(UITransform)?.setContentSize(shopPanelWidth, 400);
+    shopPanel?.getComponent(UITransform)?.setContentSize(shopPanelWidth, 570);
     if (shopPanel) {
-      this.paintRect(shopPanel, shopPanel.getComponent(Graphics)!, shopPanelWidth, 400, PANEL);
+      this.paintRect(shopPanel, shopPanel.getComponent(Graphics)!, shopPanelWidth, 570, PANEL);
       const half = shopPanelWidth / 2;
       const at = (name: string, x: number, y: number, width: number, height: number): void => {
         const node = shopPanel.getChildByName(name);
@@ -1129,49 +1212,75 @@ export class UnitSampleGallery extends Component {
         const sideX = Math.max(128, half - 55);
         const arrowWidth = Math.max(70, Math.min(84, (shopPanelWidth - 180) / 2));
         const valueWidth = Math.max(130, shopPanelWidth - 2 * arrowWidth - 48);
-        at('Button_上一店', -sideX, 125, arrowWidth, 42);
-        at('Button_下一店', sideX, 125, arrowWidth, 42);
-        at('Button_X −', -sideX, 75, arrowWidth, 42);
-        at('Button_X +', sideX, 75, arrowWidth, 42);
-        at('Button_Y −', -sideX, 26, arrowWidth, 42);
-        at('Button_Y +', sideX, 26, arrowWidth, 42);
+        at('Button_店铺', -76, 165, 120, 38);
+        at('Button_顾客', 76, 165, 120, 38);
+        at('Button_上一项', -sideX, 112, arrowWidth, 42);
+        at('Button_下一项', sideX, 112, arrowWidth, 42);
+        at('Button_X −', -sideX, 62, arrowWidth, 42);
+        at('Button_X +', sideX, 62, arrowWidth, 42);
+        at('Button_Y −', -sideX, 13, arrowWidth, 42);
+        at('Button_Y +', sideX, 13, arrowWidth, 42);
         textSize('Text', valueWidth);
         this.overviewShopNameLabel?.getComponent(UITransform)?.setContentSize(valueWidth, 42);
         this.overviewShopXLabel?.getComponent(UITransform)?.setContentSize(valueWidth, 42);
         this.overviewShopYLabel?.getComponent(UITransform)?.setContentSize(valueWidth, 42);
         const stepX = Math.max(68, Math.min(105, (shopPanelWidth - 42) / 3));
         const stepW = Math.max(60, Math.min(72, stepX - 8));
-        at('Button_步长 1', -stepX, -25, stepW, 42);
-        at('Button_步长 10', 0, -25, stepW, 42);
-        at('Button_步长 50', stepX, -25, stepW, 42);
+        at('Button_步长 1', -stepX, -25, stepW, 38);
+        at('Button_步长 10', 0, -25, stepW, 38);
+        at('Button_步长 50', stepX, -25, stepW, 38);
+        at('Button_缩放 −', -sideX, -43, arrowWidth, 38);
+        at('Button_缩放 +', sideX, -43, arrowWidth, 38);
         const actionX = Math.max(82, half - 95);
         const actionW = Math.max(140, Math.min(174, half - 28));
-        at('Button_恢复六店基线', -actionX, -105, actionW, 42);
-        at('Button_复制全部参数', actionX, -105, actionW, 42);
+        at('Button_恢复初始值', -actionX, -112, actionW, 38);
+        at('Button_复制全部参数', actionX, -112, actionW, 38);
+        this.overviewShopScaleLabel?.getComponent(UITransform)?.setContentSize(valueWidth, 38);
         this.overviewShopStepLabel?.getComponent(UITransform)?.setContentSize(shopPanelWidth - 24, 30);
         this.overviewShopFeedback?.getComponent(UITransform)?.setContentSize(shopPanelWidth - 24, 30);
       } else {
-        at('Button_上一店', -250, 125, 104, 44);
-        at('Button_下一店', 250, 125, 104, 44);
-        at('Button_X −', -250, 75, 104, 44);
-        at('Button_X +', 250, 75, 104, 44);
-        at('Button_Y −', -250, 26, 104, 44);
-        at('Button_Y +', 250, 26, 104, 44);
+        at('Button_店铺', -76, 165, 130, 40);
+        at('Button_顾客', 76, 165, 130, 40);
+        at('Button_上一项', -250, 112, 104, 42);
+        at('Button_下一项', 250, 112, 104, 42);
+        at('Button_X −', -250, 62, 104, 42);
+        at('Button_X +', 250, 62, 104, 42);
+        at('Button_Y −', -250, 13, 104, 42);
+        at('Button_Y +', 250, 13, 104, 42);
         textSize('Text', 260);
         this.overviewShopNameLabel?.getComponent(UITransform)?.setContentSize(260, 42);
         this.overviewShopXLabel?.getComponent(UITransform)?.setContentSize(260, 42);
         this.overviewShopYLabel?.getComponent(UITransform)?.setContentSize(260, 42);
-        at('Button_步长 1', -180, -25, 110, 42);
-        at('Button_步长 10', 0, -25, 110, 42);
-        at('Button_步长 50', 180, -25, 110, 42);
-        at('Button_恢复六店基线', -160, -105, 200, 42);
-        at('Button_复制全部参数', 160, -105, 200, 42);
+        at('Button_步长 1', -180, -25, 110, 38);
+        at('Button_步长 10', 0, -25, 110, 38);
+        at('Button_步长 50', 180, -25, 110, 38);
+        at('Button_缩放 −', -250, -43, 104, 38);
+        at('Button_缩放 +', 250, -43, 104, 38);
+        at('Button_恢复初始值', -160, -112, 200, 38);
+        at('Button_复制全部参数', 160, -112, 200, 38);
+        this.overviewShopScaleLabel?.getComponent(UITransform)?.setContentSize(260, 38);
         this.overviewShopStepLabel?.getComponent(UITransform)?.setContentSize(260, 30);
         this.overviewShopFeedback?.getComponent(UITransform)?.setContentSize(640, 30);
       }
       const step = this.overviewShopStepLabel?.getComponent(UITransform);
-      step?.node.setPosition(0, -62);
-      this.overviewShopFeedback?.setPosition(0, -157);
+      const rows: Array<[string[], number]> = [
+        [['店铺', '顾客'], 195], [['上一项', '下一项'], 145],
+        [['X −', 'X +'], 95], [['Y −', 'Y +'], 45],
+        [['缩放 −', '缩放 +'], -5], [['步长 1', '步长 10', '步长 50'], -55],
+        [['恢复初始值', '复制全部参数'], -145],
+      ];
+      for (const [names, y] of rows) for (const name of names) {
+        const button = shopPanel.getChildByName(`Button_${name}`);
+        if (button) button.setPosition(button.position.x, y);
+      }
+      shopPanel.getChildByName('Text')?.setPosition(0, 245);
+      shopPanel.getChildByName('Text')?.getComponent(UITransform)?.setContentSize(shopPanelWidth - 24, 36);
+      this.overviewShopNameLabel?.setPosition(0, 145);
+      this.overviewShopXLabel?.setPosition(0, 95);
+      this.overviewShopYLabel?.setPosition(0, 45);
+      this.overviewShopScaleLabel?.setPosition(0, -5);
+      step?.node.setPosition(0, -100);
+      this.overviewShopFeedback?.setPosition(0, -200);
     }
     const toggleWidth = Math.max(74, Math.min(210, (visible.width - 60) / 3));
     const toggleGap = toggleWidth + 12;

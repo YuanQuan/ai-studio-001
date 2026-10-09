@@ -1,0 +1,64 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "U00店铺和顾客逐个缩放已实现；Creator新构建与两竖屏视口Owner检查完成，待用户审核。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/CREATOR_BUILD_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/CREATOR_BUILD_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/CREATOR_BUILD_STDERR.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/ISOLATED_BUILD_START.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/ISOLATED_BUILD_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/ISOLATED_BUILD_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/ISOLATED_BUILD_STDERR.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/FINAL_BUILD_START.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/FINAL_BUILD_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/FINAL_BUILD_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/FINAL_BUILD_STDERR.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/RUNTIME_390_TOURIST_8.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/RUNTIME_720_SHOP_RESET.jpg",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/RUNTIME_RESTORED_EXPORT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/RUNTIME_CONSOLE.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/TECH_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店保留v0.3脚点/顺序，各店可单独调缩放",
+      "result": "PASS",
+      "evidence": "源码保留OVERVIEW_SHOP_BASELINE与SHOP_IDS顺序，使用逐店overviewShopScales及0.10–1.00范围钳制。"
+    },
+    {
+      "criterion": "顾客可逐个调缩放并作用于对应实例",
+      "result": "PASS",
+      "evidence": "逐实例视图缩放与脚点补偿；浏览器导出顾客1为0.30、其余0.28，第7/8项正常。"
+    },
+    {
+      "criterion": "恢复初始店铺位置及两类默认缩放",
+      "result": "PASS",
+      "evidence": "restoreOverviewAdjustments恢复六店基线、店铺0.40及当前顾客0.28。"
+    },
+    {
+      "criterion": "导出六店和顾客逐项参数",
+      "result": "PASS",
+      "evidence": "overviewShopExportText包含每店id/footX/footY/scale及顾客id/scale数组。"
+    },
+    {
+      "criterion": "Creator构建、HTTP和内置浏览器两视口核验",
+      "result": "PASS",
+      "evidence": "FINAL_BUILD_*，两视口截图、恢复JSON、控制台记录；重进恢复0.40。"
+    }
+  ],
+  "assumptions": [
+    "缩放属于U00可逆临时场景预览参数，不写入正式配置或玩法数据。"
+  ],
+  "risks": [
+    "未验证真机与目标平台性能；横屏及动态旋转不在本轮验收范围。"
+  ],
+  "status": "USER_REVIEW"
+}

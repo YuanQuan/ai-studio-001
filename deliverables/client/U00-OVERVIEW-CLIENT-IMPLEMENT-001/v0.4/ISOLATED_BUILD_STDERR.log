@@ -1,0 +1,103 @@
+Error: The plug-in load has encountered some problems.
+  Path: C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\engine
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\sentry\dist\main\main.ccc:41:45)
+    at console.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\core\build\cjs\utils-hoist\instrument\console.js:38:14)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@base\electron-logger\lib\browser\index.js:1:1710)
+    at Package.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:3603)
+    at async PackageManager.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1755)
+    at async Object.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\public\browser.ccc:3:538)
+    at async Object.startPackage (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\startup\protected\browser\index.ccc:1:2735)
+    at async launch (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\launch\dist\launch.js:1:985)
+    at async C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\launch\dist\index.js:1:1208
+[Error: EPERM: operation not permitted, open 'C:\ProgramData\cocos\editors\Creator\3.8.8\resources\resources\3d\engine\bin\.cache\dev\editor\import-map.json'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\ProgramData\\cocos\\editors\\Creator\\3.8.8\\resources\\resources\\3d\\engine\\bin\\.cache\\dev\\editor\\import-map.json'
+}
+[29360:1009/215604.534:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[29360:1009/215604.534:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[29360:1009/215604.535:ERROR:cache_util_win.cc(20)] Unable to move the cache: 拒绝访问。 (0x5)
+[29360:1009/215604.537:ERROR:disk_cache.cc(208)] Unable to create cache
+[29360:1009/215604.537:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[29360:1009/215604.538:ERROR:disk_cache.cc(208)] Unable to create cache
+[29360:1009/215604.538:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+[29360:1009/215604.539:ERROR:disk_cache.cc(208)] Unable to create cache
+[29360:1009/215604.539:ERROR:gpu_disk_cache.cc(711)] Gpu Cache Creation failed: -2
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+Error: Error: Message does not exist: engine - query-engine-info
+    at request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\protected\browser\index.ccc:1:944)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\public\browser.ccc:1:225)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\index.ccc:1:455)
+    at Package.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\modules\editor-extensions\extensions\inspector\static\hooks.js:1:111)
+    at Package.execHook (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:1051)
+    at PackageManager.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1171)
+    at Object.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\public\browser.ccc:1:836)
+    at Object.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\index.ccc:1:508)
+    at Object.startPackage (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\startup\protected\browser\index.ccc:1:2960)
+    at async launch (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\launch\dist\launch.js:1:985)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\sentry\dist\main\main.ccc:41:45)
+    at C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:76:15
+    at Module.consoleSandbox (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\core\build\cjs\utils-hoist\logger.js:51:12)
+    at handleRejection (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:74:10)
+    at process.sendUnhandledPromise (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:57:5)
+    at process.emit (node:events:531:35)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at warnWithErrorCodeUnhandledRejectionsMode (node:internal/process/promises:404:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+Error: Message does not exist: engine - query-engine-info
+    at request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\protected\browser\index.ccc:1:944)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\public\browser.ccc:1:225)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\index.ccc:1:455)
+    at Package.<anonymous> (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\modules\editor-extensions\extensions\inspector\static\hooks.js:1:111)
+    at Package.execHook (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:1051)
+    at PackageManager.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1171)
+    at Object.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\public\browser.ccc:1:836)
+    at Object.register (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\index.ccc:1:508)
+    at Object.startPackage (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\startup\protected\browser\index.ccc:1:2960)
+    at async launch (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\launch\dist\launch.js:1:985)
+This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). The promise rejected with the reason:
+Error: Error: Message does not exist: engine - query-engine-info
+    at request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\protected\browser\index.ccc:1:944)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\public\browser.ccc:1:225)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\index.ccc:1:455)
+    at Item.handle (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\worker\tasks.ccc:1:916)
+    at Manager.execute (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\v-dependence\classify\manager.js:72:39)
+    at init (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\worker\index.ccc:1:303)
+    at Package.load (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\index.ccc:1:701)
+    at Package.execLifeFunc (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:744)
+    at Package.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:3533)
+    at PackageManager.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1763)
+    at console.error (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\sentry\dist\main\main.ccc:41:45)
+    at C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:76:15
+    at Module.consoleSandbox (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\core\build\cjs\utils-hoist\logger.js:51:12)
+    at handleRejection (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:74:10)
+    at process.sendUnhandledPromise (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@sentry\node\build\cjs\integrations\onunhandledrejection.js:57:5)
+    at process.emit (node:events:531:35)
+    at emitUnhandledRejection (node:internal/process/promises:250:13)
+    at warnWithErrorCodeUnhandledRejectionsMode (node:internal/process/promises:404:19)
+    at processPromiseRejections (node:internal/process/promises:470:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+Error: Message does not exist: engine - query-engine-info
+    at request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\protected\browser\index.ccc:1:944)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\public\browser.ccc:1:225)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\index.ccc:1:455)
+    at Item.handle (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\worker\tasks.ccc:1:916)
+    at Manager.execute (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\v-dependence\classify\manager.js:72:39)
+    at init (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\worker\index.ccc:1:303)
+    at Package.load (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\asset-db\dist\browser\index.ccc:1:701)
+    at Package.execLifeFunc (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:744)
+    at Package.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:3533)
+    at PackageManager.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1763)
+Error: Message does not exist: engine - query-engine-info
+    at request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\protected\browser\index.ccc:1:944)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\public\browser.ccc:1:225)
+    at Object.request (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\message\index.ccc:1:455)
+    at createProgrammingFacet (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\preview\dist\programming\FacetInstance.ccc:1:513)
+    at Package.load (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\builtin\preview\dist\browser\index.ccc:1:901)
+    at async Package.execLifeFunc (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:723)
+    at async Package.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\package.ccc:1:3522)
+    at async PackageManager.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\package\dist\browser\index.js:1:1755)
+    at async Object.enable (C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\package\public\browser.ccc:3:538)
+    at async C:\ProgramData\cocos\editors\Creator\3.8.8\resources\app.asar\node_modules\@editor\creator\dist\startup\protected\browser\index.ccc:1:3344

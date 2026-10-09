@@ -477,3 +477,19 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间：用户消息精确时间未知；Producer于18:00:55 +08:00核首份源码并登记开工，于18:08:51核Owner交付进入REVIEW，18:09:45送审。首产到送审墙钟约8分50秒，包含Creator构建、浏览器操作、评审与等待，不代表Client净制作时间；各环节净耗时和工具故障时长未知。
 - 原因与建议：本轮范围是将用户已提供的确切位置转为默认值，实际改动集中在六店基线；旧v0.2临时调节功能保留。没有同类目标时长或可证实慢因。Client下次接收坐标JSON时继续逐ID比对源码、导出与实际画面，预计减少错位返工；代价为一轮清单和同视口检查，复核点为下一次位置修订的构建与运行记录。Producer在下一轮审核中继续区分“参数应用授权”和“Artifact最终批准”，复核点为用户对v0.3准确版本的决定。
 - Continuity：当前Client任务已到USER_REVIEW真实门禁；Product Excel仍独立USER_REVIEW，无空转READY/IN_PROGRESS。v0.3未获用户明确批准前不标DONE。
+
+
+### WR-20261009-U00-SCALE-V04-BLOCK-001｜U00缩放修订遇Creator构建阻塞
+
+- 结果与证据：`UnitSampleGallery.ts`完成店铺逐家、顾客逐个缩放与JSON导出；transpile语法诊断0，`git diff --check`通过。Task `BLOCKED`，v0.4 Approval DRAFT。隔离构建以当前源码SHA重试，证据见`ISOLATED_BUILD_START.json`及stdout/stderr：Creator安装目录engine缓存文件报EPERM，无新构建、HTTP或浏览器证据。
+- 时间与耗时：用户消息精确时刻未知；本轮开始执行约21:40 +08:00，最终登记约21:57 +08:00，可观察窗口约17分钟，含源码实现、静态检查、CLI尝试与等待，不等于净编码耗时。项目级tsc约43秒后因仓库临时HarmonyOS模板语法错误退出；首次Creator会话180秒无完成标记，第二次隔离会话约58秒后因安装缓存EPERM被中止。用户等待和之前专业Review耗时未知。
+- 速度与原因：无同类时限或基线，不判断快慢。可证实阻塞是Creator stderr `[Error: EPERM: operation not permitted, open .../engine/bin/.cache/dev/editor/import-map.json]`，并伴随`Message does not exist: engine - query-engine-info`；没有输出身份更新，故停止送审。
+- 建议：Tech Lead与Client联合核查Creator安装缓存可访问性及引擎消息初始化，代价为一次工具链排查；不改安装目录权限。缓存访问恢复后Client按相同源码SHA重建并核HTTP/IAB两视口，复核点为同版构建清单和运行记录；Producer随后复核Required与Tech/Master Review，再推进用户门禁。
+- Continuity：无可继续的Ready/In Progress空转任务；Creator阻塞条件明确、相关实现产物已登记，待工具状态变化解除后继续。其他任务本轮未检查。
+
+
+## WR-20261009-U00-SCALE-V04-RETRY-002
+
+2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。
+
+可核对构建起止见FINAL_BUILD_START/RESULT；最终构建日志12秒，进程准备时间单列；整个重试周期起始时间未单独记录，不估算总耗时。主要阻塞是普通进程无Windows管理员令牌，sandbox提权不等同系统管理员。Owner在构建期间修正脚点和面板索引，复核以新源码重建。建议负责人Client：后续Creator调用先记录IsAdministrator及源码SHA；复核点为日志Finished与实际HTTP产物。用户等待从USER_REVIEW开始。
