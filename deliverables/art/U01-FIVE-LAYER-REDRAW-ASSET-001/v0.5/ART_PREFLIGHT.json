@@ -1,0 +1,11 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "同版 PREFLIGHT_PLAN.md SHA-256 ccb397fdb8e0f484c64696354e56e25582aef78dfb19a34e283c83b7d5cd20b3 与 TOOLCHAIN_AUDIT.md SHA-256 952e8ff649d9544c887f8b48cb2f529263206bcbf82851199e477e9f5ef67751 精确绑定；批准仅在 Tech 对同两份 SHA 签认后开始 L04/L05 代表样张。"},
+    {"severity": "INFO", "message": "目标 3840×1024 通过 2172×724 等比中心适配及左右续绘；桥月不得横向拉伸，续绘不得镜像/平铺，五层须真实语义分离，不把插值称原生细节。中心 L04/L05 草补底和真透明先核，失败停线。"},
+    {"severity": "INFO", "message": "S05R 仅空间样张，不是具体五层用户批准；Gate2 必须展示真实 PSD、五 PNG 和重组后另取用户审批。"}
+  ],
+  "next_action": "待 Tech 独立签同 SHA，Art 出 L04/L05 首张代表样张并记录实际原始分辨率、透明与补底实图。"
+}

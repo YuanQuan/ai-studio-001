@@ -1,0 +1,68 @@
+{
+  "id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "title": "U01 五层1024高场景整体重绘资源",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "落实用户纠正并继续的明确要求，先制作一张水前街后、后岸街原位加宽且桥连接/透视纵深保持原图的完整空间代表样张。只验证新空间效果，原始输出尺寸如实记录，最终3840×1024五层要求不变；未获得完整分辨率生产方法前不扩五层，不把样张视为成品。",
+  "inputs": [
+    "用户2026-10-09明确：纠正一下继续；本批内置imagegen空间验证样张S05，不意味着API fallback opt-in。",
+    "用户2026-10-08明确纠正：不要改变街道/河水前后顺序；原图水在前、街在后，S03/S04错误街前水后已退回。见DEC-U01-SPATIAL-ORDER-011及v0.3/corrections/补充。",
+    "用户2026-10-08明确：好的按照方案继续吧；继续新版构图，未明确选择外部图像API。",
+    "tasks/U01-FIVE-LAYER-REDRAW-PLAN-001/ARTIFACT_APPROVAL.json 与 deliverables/art/U01-FIVE-LAYER-REDRAW-PLAN-001/v0.3/",
+    "用户高度1024且其余无异议并继续的明确确认",
+    "原已批 moonlit_four_layers.psd/overall_from_psd.png",
+    "rules/visual_production_contract.md、rules/artifact_contract.md",
+    "用户提供bggg skill来源https://github.com/binggandata/bggg-skills；当前Mac已由skill-installer安装，须实际能力测试和首图前新SHA双签"
+  ],
+  "deliverables": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_FILE_CHECK.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/CUT_MANIFEST.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/review/overall_from_psd.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/review/portrait_viewports.png"
+  ],
+  "acceptance": [
+    "Gate1 v0.3获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+    "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+    "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+    "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。"
+  ],
+  "dependencies": [
+    "U01-FIVE-LAYER-REDRAW-PLAN-001"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Art核实际工具链及资源生产，Tech预签本目录TECH_PREFLIGHT，Client只读提供切图意见，Producer维护Task/Approval/日志；首图前工具链或必要PSD能力不满足时不得生成资源。",
+    "美术资源制作任务gpt-6-sol high，Tech/Producer文书gpt-6-sol low；单元示例不分派QA。",
+    "现环境为macOS，旧Windows bggg-creator-image2psd路径不代表本机已安装；须实际搜索核验后再签。",
+    "2026-10-08 15:05:21 +08:00 Gate1 v0.2准确USER_APPROVED后核本批TOOLCHAIN_AUDIT.md、PREFLIGHT_PLAN.md、ART_PREFLIGHT.json、TECH_PREFLIGHT.json、DELIVERABLE.json实存；两份首图前预签均BLOCKED。本机无指定bggg-creator-image2psd skill且未验证可创建完整多图层PSD的原生工具，缺14/19 Required，无新图。生产无法继续，BACKLOG→BLOCKED；Gate2 Approval维持DRAFT、decided_at null。",
+    "Master授权在资产v0.2重新核工具后继续生产，v0.1 BLOCKED文件与审批历史保留；不把安装本身写成预签通过。",
+    "2026-10-08 15:14:51 +08:00 v0.2 TOOLCHAIN_AUDIT.md 与 PREFLIGHT_PLAN.md 两份Required实存非空，临时旧四PNG→3840×1024四层PSD工具测试已有回读报告；Producer据本轮实际工作核 BLOCKED→IN_PROGRESS/TASK_STARTED。此为能力测试与首图前方案实产，Art/Tech同版预签和正式新图尚未通过/产出，不等于Gate2批准。",
+    "2026-10-08 15:29:28 +08:00 S02使用3840×1024双侧透明参考后，imagegen原始输出仍为2172×724 RGB；Tech同SHA后验BLOCKED，Art同图后验CHANGES_REQUESTED。按同版S02补充预案停止重试及五层扩批，IN_PROGRESS→BLOCKED。资产v0.2 Required 5/19实存、14项缺失，DELIVERABLE 仅首图前签认与失败样张证据，后续验收NOT_TESTED；Gate2 DRAFT、无正式PSD/五PNG/重组。解除需Master组织可实产3840×1024新绘画面的生产方法并在下一图前Art/Tech复签，不改变Gate1已批画幅。",
+    "2026-10-08 新用户构图指令形成 project/DECISIONS.md DEC-U01-COMPOSITION-010 与 Gate1 v0.3 文字修订：河水少、街道宽、通桥纵深保持、天空更高，3840×1024及五层不变。资源v0.2既有两次imagegen原始尺寸失败、5/19 Required与Gate2 DRAFT历史不改；后续恢复生产须消费准确批准的Gate1 v0.3，并在下一图前对新构图和实际尺寸生产方法重新Art/Tech同版预签。",
+    "2026-10-08 16:36:41 +08:00 Master依据用户继续指令分派Art新批生产调查与Tech预签，Required路径升v0.3，旧TASK_v0.2.json及产物原样保留。先调查有效内置新方法，尚未实际产出Required所以READY；不将继续理解为API fallback opt-in，不凭安装或计划宣称尺寸问题解除。",
+    "2026-10-08 16:40:48 +08:00 资产v0.3 PREFLIGHT_PLAN.md与TOOLCHAIN_AUDIT.md两份Required实存非空；Producer于16:41:15核验READY→IN_PROGRESS/TASK_STARTED。当前只证明Art已实际起草分区原生拼接试产方法，Art/Tech新构图同版首图前预签、样张实图和Gate2仍未通过。",
+    "2026-10-08 17:07:54 +08:00 Art/Tech新构图方法同版预签后，S03下中局部双后验通过；S04下左与S03原位1:1试拼在x=834发生柳山/栏杆/石路/水岸硬缝、前景草重复，桥前石路通桥纵深亦未证明。Art S04 CHANGES_REQUESTED、Tech/Master BLOCKED；按预案停止其余窗口及五层扩批，IN_PROGRESS→BLOCKED。v0.3 Required 6/19实存、缺13，DELIVERABLE BLOCKED、后续验收NOT_TESTED；USER_REVIEW_PACKET仅为阻塞说明非Gate2送审，Approval仍DRAFT、decided_at null。备用API/CLI需用户明确选择，尚未调用或计费；若获授权，下一图前需对可行方法及新构图重做Art/Tech同版预签。",
+    "2026-10-08 18:15:30 +08:00 Master接收用户样张空间退回：河水保持前景、街道在后岸原位置加宽，桥/栏杆关系及纵深保持；S03/S04不得继续充当视觉母版。授权Art/Tech在v0.3/corrections/追加空间纠正与可用提示词、同版Review，Producer更新退回事实与资源BLOCKED，旧Review/审批历史保留；本轮不出图、API无授权。",
+    "2026-10-08 18:39:29 +08:00 Producer核v0.3/corrections六份Required实存非空、CORRECTION_DELIVERABLE六项索引与两项纠正验收PASS、Art/Tech/Master同版APPROVED并绑定两md SHA。用户明确退回S03/S04街前水后，纠正文书按河前街后、街原后岸位置加宽、桥栏杆纵深保持被Master接受；不重复问同一语义。资源现12/25 Required实存、正式资源13缺，原四项资源验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED；Task仍BLOCKED、Gate2 DRAFT、无新图/API。旧S03局部APPROVED仅历史，不作新母版；下一图前重做Art/Tech预签。",
+    "2026-10-09 08:52:27 +08:00 Master启动v0.4空间纠正代表样张，旧v0.3 Task/Approval历史已存。本轮实际样张需首图前双签；目标3840×1024五层未放弃，低分辨率空间样张只用于纠正实图审核，不宣称正式尺寸阻塞解除。未开始Required制作前保持READY。",
+    "2026-10-09 08:55:41 +08:00 v0.4首份Required TOOLCHAIN_AUDIT.md实存非空，08:55:54 PREFLIGHT_PLAN.md亦实存；Producer于08:56:36核验READY→IN_PROGRESS/TASK_STARTED。Art正在S05空间纠正预案与样张制作，当前仅Art预签，Tech同SHA预签及实图后验仍待，Gate2 DRAFT。",
+    "2026-10-09 09:06:05 +08:00 S05→S05R仅空间样张完成：S05R原始2172×724 RGB、SHA d90bcd922de7a043e892a30beebf0591d0e72d0ff942e98a7f97e1483c8a8511；Art/Tech/Master同图APPROVED河前街后、后岸街明显加宽、桥左右接街及侧拱朝前景水，仅视觉方向。正式3840×1024原生源图、五层PSD/PNG与运行未产，任务IN_PROGRESS→BLOCKED维持尺寸生产方法阻塞；v0.4 Required 6/19实存、缺13，DELIVERABLE BLOCKED，后续三项资源验收NOT_TESTED。USER_REVIEW_PACKET仅展示实图非Gate2切图送审，Gate2 Approval DRAFT、decided_at null。后续正式方法需实际能力与下一图前Art/Tech同版预签，API未授权未调用。"
+  ]
+}

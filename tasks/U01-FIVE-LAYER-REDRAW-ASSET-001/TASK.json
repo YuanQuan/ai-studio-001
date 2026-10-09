@@ -4,8 +4,9 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "落实用户纠正并继续的明确要求，先制作一张水前街后、后岸街原位加宽且桥连接/透视纵深保持原图的完整空间代表样张。只验证新空间效果，原始输出尺寸如实记录，最终3840×1024五层要求不变；未获得完整分辨率生产方法前不扩五层，不把样张视为成品。",
+  "objective": "依据用户正式替换U01指令，补齐3840×1024五层PSD及切片并保持S05R河前街后构图；真实记录原始分辨率与组装/缩放方法，不以原生高分辨率自设门槛。按实际切片审批及客户端导入验证门禁推进。",
   "inputs": [
+    "用户2026-10-09明确：正式替换U01；授权完成资源并推进替换，不把尚未展示的五层切片视为已批。",
     "用户2026-10-09明确：纠正一下继续；本批内置imagegen空间验证样张S05，不意味着API fallback opt-in。",
     "用户2026-10-08明确纠正：不要改变街道/河水前后顺序；原图水在前、街在后，S03/S04错误街前水后已退回。见DEC-U01-SPATIAL-ORDER-011及v0.3/corrections/补充。",
     "用户2026-10-08明确：好的按照方案继续吧；继续新版构图，未明确选择外部图像API。",
@@ -16,25 +17,25 @@
     "用户提供bggg skill来源https://github.com/binggandata/bggg-skills；当前Mac已由skill-installer安装，须实际能力测试和首图前新SHA双签"
   ],
   "deliverables": [
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PREFLIGHT_PLAN.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TOOLCHAIN_AUDIT.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_PREFLIGHT.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_PREFLIGHT.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/DELIVERABLE.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/USER_REVIEW_PACKET.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_FILE_CHECK.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PSD_EDITABILITY_REPORT.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/CUT_MANIFEST.json",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/CUT_COLLABORATION_RECORD.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/VISUAL_ANCHOR_CHECK.md",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/u01_five_layer_master.psd",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l01_sky.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l02_mountains.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l03_ground.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l04_water_bridge.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/exports/tex_street_base_01_l05_water_grass.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/review/overall_from_psd.png",
-    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/review/portrait_viewports.png"
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/DELIVERABLE.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/ART_FILE_CHECK.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PSD_EDITABILITY_REPORT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/CUT_MANIFEST.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/review/overall_from_psd.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/review/portrait_viewports.png"
   ],
   "acceptance": [
     "Gate1 v0.3获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
@@ -48,6 +49,8 @@
   "status": "BLOCKED",
   "approval": "APPROVAL",
   "notes": [
+    "2026-10-09 10:50:25 +08:00 Art v0.5 DELIVERABLE.json及USER_REVIEW_PACKET.md已实存，前者BLOCKED；3840×1024左右续绘左翼三轮接缝/重影失败，Tech最后左过渡CHANGES_REQUESTED。正式五层PSD/PNG、重组、视窗等13/19 Required缺失，四验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED。完整中心五层与等比3072候选均仅试制，画幅选择待用户明确决定；据实IN_PROGRESS→BLOCKED。Gate2 DRAFT、Client BACKLOG，未正式替换。",
+    "2026-10-09 10:16:42 +08:00 v0.5 PREFLIGHT_PLAN.md与TOOLCHAIN_AUDIT.md两份Required于10:16:16实存非空，ART_PREFLIGHT.json于10:16:32实存；Producer按Owner当前实产核READY→IN_PROGRESS/TASK_STARTED。Tech同SHA预签及正式L04/L05代表图仍待，Gate2 DRAFT，客户端继续旧四层。",
     "Master授权Art核实际工具链及资源生产，Tech预签本目录TECH_PREFLIGHT，Client只读提供切图意见，Producer维护Task/Approval/日志；首图前工具链或必要PSD能力不满足时不得生成资源。",
     "美术资源制作任务gpt-6-sol high，Tech/Producer文书gpt-6-sol low；单元示例不分派QA。",
     "现环境为macOS，旧Windows bggg-creator-image2psd路径不代表本机已安装；须实际搜索核验后再签。",
@@ -63,6 +66,7 @@
     "2026-10-08 18:39:29 +08:00 Producer核v0.3/corrections六份Required实存非空、CORRECTION_DELIVERABLE六项索引与两项纠正验收PASS、Art/Tech/Master同版APPROVED并绑定两md SHA。用户明确退回S03/S04街前水后，纠正文书按河前街后、街原后岸位置加宽、桥栏杆纵深保持被Master接受；不重复问同一语义。资源现12/25 Required实存、正式资源13缺，原四项资源验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED；Task仍BLOCKED、Gate2 DRAFT、无新图/API。旧S03局部APPROVED仅历史，不作新母版；下一图前重做Art/Tech预签。",
     "2026-10-09 08:52:27 +08:00 Master启动v0.4空间纠正代表样张，旧v0.3 Task/Approval历史已存。本轮实际样张需首图前双签；目标3840×1024五层未放弃，低分辨率空间样张只用于纠正实图审核，不宣称正式尺寸阻塞解除。未开始Required制作前保持READY。",
     "2026-10-09 08:55:41 +08:00 v0.4首份Required TOOLCHAIN_AUDIT.md实存非空，08:55:54 PREFLIGHT_PLAN.md亦实存；Producer于08:56:36核验READY→IN_PROGRESS/TASK_STARTED。Art正在S05空间纠正预案与样张制作，当前仅Art预签，Tech同SHA预签及实图后验仍待，Gate2 DRAFT。",
-    "2026-10-09 09:06:05 +08:00 S05→S05R仅空间样张完成：S05R原始2172×724 RGB、SHA d90bcd922de7a043e892a30beebf0591d0e72d0ff942e98a7f97e1483c8a8511；Art/Tech/Master同图APPROVED河前街后、后岸街明显加宽、桥左右接街及侧拱朝前景水，仅视觉方向。正式3840×1024原生源图、五层PSD/PNG与运行未产，任务IN_PROGRESS→BLOCKED维持尺寸生产方法阻塞；v0.4 Required 6/19实存、缺13，DELIVERABLE BLOCKED，后续三项资源验收NOT_TESTED。USER_REVIEW_PACKET仅展示实图非Gate2切图送审，Gate2 Approval DRAFT、decided_at null。后续正式方法需实际能力与下一图前Art/Tech同版预签，API未授权未调用。"
+    "2026-10-09 09:06:05 +08:00 S05→S05R仅空间样张完成：S05R原始2172×724 RGB、SHA d90bcd922de7a043e892a30beebf0591d0e72d0ff942e98a7f97e1483c8a8511；Art/Tech/Master同图APPROVED河前街后、后岸街明显加宽、桥左右接街及侧拱朝前景水，仅视觉方向。正式3840×1024原生源图、五层PSD/PNG与运行未产，任务IN_PROGRESS→BLOCKED维持尺寸生产方法阻塞；v0.4 Required 6/19实存、缺13，DELIVERABLE BLOCKED，后续三项资源验收NOT_TESTED。USER_REVIEW_PACKET仅展示实图非Gate2切图送审，Gate2 Approval DRAFT、decided_at null。后续正式方法需实际能力与下一图前Art/Tech同版预签，API未授权未调用。",
+    "Master本轮授权Art生产v0.5；Tech同SHA首图前签认及只读客户端切图建议；Producer维护状态/审批/连续执行与复盘。Art不得改客户端；在实际切片交用户前不擅自接入。无裁减安全证明则保留完整内容，原始尺寸如实记录。"
   ]
 }

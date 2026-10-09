@@ -1,0 +1,58 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "summary": "已完成并核五个独立语义中心层及2172×724零位试组；另用bggg生成等比3072×1024五层候选，仅供尺寸选择。3840×1024两翼续绘三轮试验均有明显硬缝或柳树/栏杆重影，Tech同图判失败，未产正式3840五层、未进入Gate2或客户端接入。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_AMENDMENT_LEFT_INPAINT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_AMENDMENT_LEFT_OVERLAP.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/GENERATION_LOG.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l01_sky_center.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l02_mountains_center.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l03_ground_center.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l04_water_bridge_center.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l05_water_grass_center.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/five_center_trial.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/five_center_trial.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/left_overlap_trial.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/review/candidate_3072_five_layers.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/review/candidate_3072_overall.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TECH_L04_L05_SAMPLE_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.3获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+      "result": "PASS",
+      "evidence": "Gate1 v0.3 USER_APPROVED；v0.5 PREFLIGHT_PLAN.md SHA ccb397fdb8e0f484c64696354e56e25582aef78dfb19a34e283c83b7d5cd20b3、TOOLCHAIN_AUDIT.md SHA 952e8ff649d9544c887f8b48cb2f529263206bcbf82851199e477e9f5ef67751，Art/Tech同版预签。左带/过渡修订亦各经同SHA双签。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "NOT_TESTED",
+      "evidence": "五个中心原图（L01 2173×724，其余2172×724）及五层中心试组PSD已实产，中心试叠PNG SHA 8aac47b6e5b4b364c8f8ab3403ed229dd57ad89b77e2d8018dee5e6b161d8af5、试组PSD SHA 7e66a5e9fdf833356cd714260492459bdc50d611400a593b60b7e521e22805bf；L04/L05试叠通过。3840左翼最终过渡图 SHA dbd463c99a58edae65caceec3e01929ce2119dc7e7b5c27aa60a0bf3f340db4c 有双树/双栏，故目标尺寸PSD及五PNG未产。3072候选是等比适配，不代替目标验收。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "NOT_TESTED",
+      "evidence": "未对原四层做任何遮挡透明裁减；无完整镜头连续域证明。中心语义层本身的真实alpha不是遮挡优化裁减。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "3840目标正式PSD、五正式PNG、完整画幅重组/竖屏视窗和资源版本清单缺失；现USER_REVIEW_PACKET仅说明进度与尺寸选择，非Gate2。Client未导入、运行未测。"
+    }
+  ],
+  "assumptions": [
+    "用户的‘正式替换U01’授权继续做资源并推进，但不把未展示的五层切片当成已获Gate2批准；3072候选不改变当前3840规格。"
+  ],
+  "risks": [
+    "3840左右续绘的实际接缝失败；最后过渡出现双树、双栏与局部发虚，不可用于正式资源。",
+    "中心源原始2172×724（L01为2173×724）；3072候选经等比插值，不能声称新增原生高清细节。",
+    "五层在客户端的实际视差、3840贴图支持、内存、竖屏拖缩及运行视觉均未测。"
+  ],
+  "status": "BLOCKED"
+}

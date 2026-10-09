@@ -1,0 +1,13 @@
+{
+  "canvas": {"width": 3072, "height": 1024},
+  "output": "candidate_3072_five_layers.psd",
+  "preview": "candidate_3072_overall.png",
+  "save_layers_dir": "candidate_3072_layers",
+  "layers": [
+    {"name": "L01 sky", "file": "../source/raw/l01_sky_center.png", "fit": "cover", "remove_background": "none"},
+    {"name": "L02 mountains", "file": "../source/raw/l02_mountains_center.png", "fit": "contain", "remove_background": "none"},
+    {"name": "L03 ground", "file": "../source/raw/l03_ground_center.png", "fit": "contain", "remove_background": "none"},
+    {"name": "L04 water bridge", "file": "../source/raw/l04_water_bridge_center.png", "fit": "contain", "remove_background": "none"},
+    {"name": "L05 water grass", "file": "../source/raw/l05_water_grass_center.png", "fit": "contain", "remove_background": "none"}
+  ]
+}

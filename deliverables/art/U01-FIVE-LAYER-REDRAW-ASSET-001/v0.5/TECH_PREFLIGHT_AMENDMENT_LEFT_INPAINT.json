@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech 独立核读与 Art 同 SHA 的 PREFLIGHT_AMENDMENT_LEFT_INPAINT.md（SHA-256 cef710c8b08bb0c7e7bf7de47872bc07ff3f6d87fa52e45d1d3d256f4d985afe）；仅放行一张左侧272原像素透明带定向续绘试样。272×724等比适配约385×1024并取384×1024，最终中心仍x=384–3455、右翼384；不改变3840×1024目标和五层语义。"
+    },
+    {
+      "severity": "INFO",
+      "message": "内置生成可能改变x≥272旧像素，必须实测；若变动只能提取新绘左带并沿用未修改中心原图。先核全景左缝天空/山柳/街栏/水纹与草，再按五层语义拆左带和补底；单张平面左带不可复制进五个图层。任何仍可见硬缝不能作为正式资源或Gate2送审。"
+    },
+    {
+      "severity": "INFO",
+      "message": "此签认不代表左缝已经修复或手机实际效果通过；需下一张真实试图、尺寸/hash、逐缝对照后再继续右翼。"
+    }
+  ],
+  "next_action": "Art生成一张左带局部续绘试样并同尺度试拼；Tech/Art实图核缝，失败则定向返工。"
+}

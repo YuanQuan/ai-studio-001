@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech 独立核读并签认与 Art 完全相同的首图前预案和工具审计 SHA-256：PREFLIGHT_PLAN.md=ccb397fdb8e0f484c64696354e56e25582aef78dfb19a34e283c83b7d5cd20b3；TOOLCHAIN_AUDIT.md=952e8ff649d9544c887f8b48cb2f529263206bcbf82851199e477e9f5ef67751。只放行 L04 连续河面补底与 L05 透明水草一组代表样张；首样失败须停线，不据此宣称正式五层或客户端资源已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "中心原始 2172×724 等比适配至约 3072×1024只增加画布采样点，不能宣称新增细节。左右两翼必须真实续绘并核源图与合成边缘，桥、月、牌楼不得横向拉伸；合成应保留河前街后、桥面横接后岸街、侧拱朝前景河以及 L04 无草洞。任何接缝、模糊或语义错误均按预案停线返工。"
+    },
+    {
+      "severity": "INFO",
+      "message": "bggg 可按 manifest 组装和输出图层/预览，但不提供语义分层或自动无缝绘制；中心与两翼先分别生成可核原始内容，三段合成为每个语义 PNG 后，再用恰好五张语义 PNG 组装 PSD。逐步核 RGBA、3840×1024、同坐标、PSD 回读和重组；保存未裁完整层源。五张 RGBA8 原始展开约75 MiB仅估算，3840宽兼容与运行性能待导入实测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前客户端仍硬编码2172×724四层、四项视差及四节点校验；Gate2 用户批准实际五张切片后，Client须改3840×1024五层、更新Prefab/UUID/资源登记并完成Creator导入、构建及手机视窗运行。技术协作细节见CUT_COLLABORATION_RECORD_TECH.md；本预签不替代成品用户审批。"
+    }
+  ],
+  "next_action": "Art 制作 L04/L05 首组代表样张，记录真实原始尺寸、透明、来源和河面补底；Art/Tech 对同一实图核准后才扩全五层及两翼。若方法、工具、来源或画幅变动，下一图前同版复签。"
+}

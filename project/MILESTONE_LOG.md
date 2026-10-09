@@ -1,5 +1,23 @@
 # 关键节点记录
 
+2026-10-09 10:50:25 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` / `U01-FIVE-LAYER-CLIENT-REPLACE-001` | v0.5 左翼失败 / 资源IN_PROGRESS→BLOCKED，Client BACKLOG | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/TECH_LEFT_OVERLAP_CHECK.md`、`DELIVERABLE.json`、`USER_REVIEW_PACKET.md`、`source/assembly/left_overlap_trial.png`、`review/candidate_3072_overall.png`；资源与Client Task/Approval | Tech CHANGES_REQUESTED双柳/栏杆重影，3840右翼不扩；资源Required 6/19、13缺，Gate2 DRAFT非送审；3072等比候选待用户画幅选择，旧四层客户端未替换。Continuity：真实方法/决定阻塞，无U01空转任务。
+
+2026-10-09 10:43:06 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 中心五层试图展示 / 画幅偏好待用户决定 | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/five_center_trial.png`；Gate1 v0.3 Approval、Gate2 v0.5 Approval | Master向用户展示实图并问3072×1024中心或继续3840×1024两翼；截至登记未见决定，保持既批3840×1024，Art可做已签一次左翼修复，资源IN_PROGRESS/Gate2 DRAFT。
+
+2026-10-09 10:34:47 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 左翼首拼硬缝 / Art与Tech同SHA定向修复预签 | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/left_join_trial.png`、`PREFLIGHT_AMENDMENT_LEFT_INPAINT.md`、`TECH_PREFLIGHT_AMENDMENT_LEFT_INPAINT.json` | 补充预案SHA`cef710c8…985afe`与Tech签认一致；仅放行一张左带续绘试样并实图核缝，正式资源与Gate2未通过。
+
+2026-10-09 10:27:57 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.5 中心五语义层试组与左翼原始图进展 / IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/assembly/five_center_trial.psd`、`five_center_trial.png`、`five_center_layers/`、`source/raw/left_wing_complete_raw.png` | 均为试产源及预览，正式3840×1024五切片、同尺度重组与Gate2均未完成；Art继续左右续绘和接缝核验。
+
+2026-10-09 10:21:42 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.5 L04/L05中心首组实产与Tech后验APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l04_water_bridge_center.png`、`l05_water_grass_center.png`、`source/assembly/l04_l05_center_trial.psd`、`l04_l05_center_trial.png`、`TECH_L04_L05_SAMPLE_CHECK.md` | 只批准中心样张继续试产，Tech要求L03桥洞下蓝色底图；Art后验、两翼接缝、五层正式成品与Gate2均待。
+
+2026-10-09 10:19:06 +08:00 | `U01-FIVE-LAYER-CLIENT-REPLACE-001` / `U01-FIVE-LAYER-REDRAW-ASSET-001` | Client依赖任务建档 BACKLOG / Art首组原始图出现 | `tasks/U01-FIVE-LAYER-CLIENT-REPLACE-001/TASK.json`、`ARTIFACT_APPROVAL.json`；`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/source/raw/l05_water_grass_center.png` | Client无实产、Approval DRAFT；只有五层实际切片用户准确批准后才可开工。Art首图尚待同图后验，不是正式切片。
+
+2026-10-09 10:18:05 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.5 首图前 Art/Tech 同SHA双签 APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_PLAN.md`、`TOOLCHAIN_AUDIT.md`、`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json` | 预案SHA`ccb397fd…5cd20b3`、审计SHA`952e8ff6…f67751`与实际文件匹配；只放行L04/L05代表样张并待同图后验，非五层成品或Gate2批准。
+
+2026-10-09 10:16:42 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.5 TASK_STARTED / READY→IN_PROGRESS | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.5/PREFLIGHT_PLAN.md`、`TOOLCHAIN_AUDIT.md`、`ART_PREFLIGHT.json` | 两份Required于10:16:16实存非空，Art预签10:16:32实存；Tech同SHA预签与代表图未核，Gate2 DRAFT、客户端旧四层。
+
+2026-10-09 10:12:22 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | 用户授权正式替换 / v0.5 READY，Gate2 DRAFT | `project/DECISIONS.md`的`DEC-U01-REPLACEMENT-012`、`tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/TASK.json`及`ARTIFACT_APPROVAL.json` | v0.5尚无Required实产，不记IN_PROGRESS；Art/Tech准备本批预签，正式切片未见、客户端旧四层仍在用。用户替换指令是推进授权，不是未展示切片的审批。
+
 2026-10-09 09:06:05 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.4 S05R空间样张Art/Tech/Master同图方向APPROVED；正式资源IN_PROGRESS→BLOCKED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/sample_complete_s05r.png`、`ART_SAMPLE_REVIEW_S05R.json`、`TECH_SAMPLE_CHECK_S05R.json`、`MASTER_SAMPLE_REVIEW_S05R.json`、`DELIVERABLE.json`、`USER_REVIEW_PACKET.md` | 水前街后与后岸街加宽方向通过；原图2172×724，正式3840×1024五层未产，Required6/19、13缺，Gate2 DRAFT且说明包非切图审批。
 
 2026-10-09 09:01:59 +08:00 | `U01-FIVE-LAYER-REDRAW-ASSET-001` | v0.4 S05空间样张Art/Tech同图APPROVED；S05R定向编辑同版预签APPROVED | `deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/sample_complete_s05.png`、`ART_SAMPLE_REVIEW_S05.json`、`TECH_SAMPLE_CHECK_S05.json`、`PREFLIGHT_AMENDMENT_S05R.md`、`ART_PREFLIGHT_S05R.json`、`TECH_PREFLIGHT_S05R.json` | S05只证明水前街后等空间方向；S05R只放行一张后岸街加宽试样，原始2172×724不满足正式3840×1024，Gate2 DRAFT。

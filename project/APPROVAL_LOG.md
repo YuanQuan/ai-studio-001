@@ -1,5 +1,11 @@
 # 用户审批记录
 
+2026-10-09 10:50:25 +08:00（Producer停线核验，非用户对新资源决定）：资源v0.5中心五层真PSD试组及3072等比候选仅用于画幅选择；3840左翼过渡Tech CHANGES_REQUESTED，目标正式五层PSD/五PNG、重组与视窗缺失。`U01-FIVE-LAYER-REDRAW-ASSET-001` Gate2 v0.5维持DRAFT、decided_at null，`USER_REVIEW_PACKET.md`不是具体切图审批包。用户尚未选新画幅，也未批准具体五层切片；Client正式替换任务BACKLOG。
+
+2026-10-09 10:43:06 +08:00（流程登记，非审批决定）：Master向用户展示v0.5`source/assembly/five_center_trial.png`并征询3072×1024完整中心或继续3840×1024修两翼；截至登记未见用户回复。现行Gate1仍为已批3840×1024，资源Gate2 v0.5 DRAFT、decided_at null；任何画幅改动须绑定用户准确决定，中心试图本身不是正式切片审批。
+
+2026-10-09 10:12:22 +08:00（Producer流程登记，非具体切片审批）：用户明确“正式替换U01”，Master按`DEC-U01-REPLACEMENT-012`解除资源生产的自设尺寸方法阻塞并推进v0.5。现行`U01-FIVE-LAYER-REDRAW-ASSET-001` Gate2 v0.5仍`DRAFT`、`decided_at=null`；五层PSD、五张切片和同尺度重组尚未提交，不将替换授权预先登记为具体资源`USER_APPROVED`，Client正式接入仍待Gate2。
+
 2026-10-09 09:06:05 +08:00（流程核验，非用户对具体样张或切图决定）：用户授权纠正后继续，S05R空间方向经Art/Tech/Master同图内部APPROVED；`v0.4/USER_REVIEW_PACKET.md`仅用于向用户展示原图、S05、S05R及尺寸限制，不作为Gate2正式切图审批。资源Gate2 v0.4仍DRAFT、decided_at null，正式五层PSD/PNG与重组未形成；不推断用户已批准S05R或正式切图。
 
 2026-10-08 18:39:29 +08:00（Producer绑定登记时刻，用户消息精确时刻未知）：用户明确退回S03/S04样张的街前水后空间关系，指定河水保持画面前景、街在后岸原位置加宽，桥与栏杆纵深保持。`DEC-U01-SPATIAL-ORDER-011` 与 `v0.3/corrections/` 六份文书同版Art/Tech/Master APPROVED，Master接受文字纠正；这不是对Gate1 v0.3其余已批内容的撤销，也不是Gate2切图决定。资源Gate2仍DRAFT、decided_at null，未进入USER_REVIEW更未标REJECTED；S03/S04旧局部Review保留历史，不作新母版。

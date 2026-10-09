@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Tech 独立核读与 Art 同版 PREFLIGHT_AMENDMENT_LEFT_OVERLAP.md，SHA-256=00c8c27745bfd0fc2aa4ce507f6a0f0f4b59709fb47312031cd279ec169134b6；仅放行一张整图左91px小范围过渡技术试图。该方案明确x≥272被imagegen改写，不能称保留原中心像素。"
+    },
+    {
+      "severity": "INFO",
+      "message": "原中心保持在正式画布x=384–3455且置于过渡底层；新增左续绘只在x=0–474，其中x=384–474按约16条窄带opacity渐退。实图须逐物核云山柳、街缝、栏柱链、水纹和草，不可有双影、软糊或断线。此操作若试图可行，正式资源仍需五语义层各自同坐标续绘与同尺度重组，不得复制平面图成五层。"
+    },
+    {
+      "severity": "INFO",
+      "message": "此签认只针对可逆接缝试验，未判定接缝已修复；失败按补充预案停止右翼扩批和Gate2送审，保留原始图及差异记录。"
+    }
+  ],
+  "next_action": "Art用当前工具制作一次左重叠试图，记录manifest、真实尺寸/hash及逐缝观察；Tech看同一实图后给试验结论。"
+}

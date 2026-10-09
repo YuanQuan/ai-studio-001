@@ -1,5 +1,23 @@
 # 工作流状态
 
+2026-10-09 10:50:25 +08:00（Producer U01 v0.5试产停线与continuity）Art`DELIVERABLE.json`状态BLOCKED、`USER_REVIEW_PACKET.md`为制作进度/尺寸选择说明而非Gate2；Tech `TECH_LEFT_OVERLAP_CHECK.md`对3840左侧过渡试图CHANGES_REQUESTED：x≈384柳灌双影、栏杆断续。三轮左翼续绘未过，右翼未扩。中心2172×724真五层PSD/PNG试组及其等比3072×1024候选已留存，不能宣称原生新细节或已替换。核Task Required 6/19实存、13缺；四项验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED。资源Task`IN_PROGRESS→BLOCKED`，Gate2 v0.5 DRAFT、decided_at null，Client替换Task BACKLOG。画幅选择待用户明确回复；未答仍维持既批3840×1024。Continuity check：左翼方法实图失败且换画幅涉及用户决定，当前为真实BLOCKED，无可继续的U01空转READY/IN_PROGRESS；已签一张试样完成，不在本周期扩右翼或提交正式切片。复盘`WR-20261009-U01-FIVE-LAYER-REPLACE-007`。
+
+2026-10-09 10:43:06 +08:00（Producer U01画幅选择待用户回复）Master已展示真实`five_center_trial.png`并请用户在完整中心3072×1024与既批3840×1024两翼修复之间选择；截至本次核验未收到决定。当前正式目标维持已批3840×1024，不擅自改Gate1或任务验收；Art可完成已预签的一次左翼定向试样。资源IN_PROGRESS有实际试制证据，Gate2 DRAFT，Client BACKLOG；这不是五层切片用户审批。
+
+2026-10-09 10:34:47 +08:00（Producer U01左翼接缝纠正预签）首张左翼`left_join_trial.png`存在云山树、岸线等硬切；Art在`PREFLIGHT_AMENDMENT_LEFT_INPAINT.md`记录定向透明带续绘及停线条件，Tech `TECH_PREFLIGHT_AMENDMENT_LEFT_INPAINT.json`对该文件同SHA `cef710c8…985afe`签APPROVED，当前文件SHA核一致。只放行一张左带试样与接缝实图后验，不能视为接缝已修复或正式五层完成。资源IN_PROGRESS、Gate2 DRAFT，Client BACKLOG。
+
+2026-10-09 10:27:57 +08:00（Producer U01 v0.5持续产出核验）中心五语义层试组`source/assembly/five_center_trial.psd`与预览、五张中心层图均已实存，左翼`source/raw/left_wing_complete_raw.png`已出现；这些是原始分辨率/分区试制，尚非3840×1024正式交付。中心五层视觉/技术后验及左右接缝仍待，资源Task IN_PROGRESS、Gate2 DRAFT；Client任务BACKLOG依赖不变。Continuity check：Art仍持续制作，不以试组文件作为停止点。
+
+2026-10-09 10:21:42 +08:00（Producer U01 v0.5首组样张进度）L04/L05中心原始透明图与2172×724中心PSD/预览实存；Tech`TECH_L04_L05_SAMPLE_CHECK.md`对两源和预览书面APPROVED，限定可继续L01–L03及两翼试产。Tech指出桥拱洞上半透明，L03须有匹配蓝色水道/远景底图；Art后验及后续拼缝、正式五层、Gate2尚待。资源IN_PROGRESS，客户端替换BACKLOG，均不写完成。
+
+2026-10-09 10:19:06 +08:00（Producer U01接入依赖登记）Master已创建`U01-FIVE-LAYER-CLIENT-REPLACE-001`，当前BACKLOG、Approval v0.1 DRAFT，无Client实产；依赖资源Task准确五层切片版本`USER_APPROVED`后才可解锁，创建不等于开工或客户端已替换。Art资源v0.5有`source/raw/l05_water_grass_center.png`首组原始图于10:18:39实存，Art/Tech同图后验、完整五层及Gate2仍待；资源维持IN_PROGRESS。
+
+2026-10-09 10:18:05 +08:00（Producer U01 v0.5首图前双签核验）Art与Tech两份`ART_PREFLIGHT.json`、`TECH_PREFLIGHT.json`均APPROVED，并同指预案SHA `ccb397fd…5cd20b3`、工具审计SHA `952e8ff6…f67751`；与当前两实文件哈希一致。仅解锁L04河面补底与L05透明水草首组代表图，须同图后验再扩五层。资源Task IN_PROGRESS、Gate2 v0.5 DRAFT；尚无正式图或客户端导入，continuity check要求继续实产，不停于预签。
+
+2026-10-09 10:16:42 +08:00（Producer U01 v0.5实际开工核验）`PREFLIGHT_PLAN.md`、`TOOLCHAIN_AUDIT.md`两份Required于10:16:16实存非空，Art同SHA预签于10:16:32实存；资源Task据实`READY→IN_PROGRESS`，本轮有Owner实际产出。Tech同批同SHA签认及正式代表图尚待，Gate2 v0.5 DRAFT、未接客户端。Continuity check：Art/Tech正推进预签与代表图，不以IN_PROGRESS作为本轮终点。
+
+2026-10-09 10:12:22 +08:00（Producer U01正式替换重新开线）用户明确“正式替换U01”，Master已记录 `DEC-U01-REPLACEMENT-012`，资源Task现指v0.5并为READY，Gate2 v0.5 Approval DRAFT、decided_at null。核查时v0.5目录尚未出现，故不记IN_PROGRESS或资源产出；Art/Tech正按新可行方法准备同批预签。方案Gate1 v0.3 USER_APPROVED仍有效；S05R仅空间样张，旧四层仍为客户端实际资源。五层PSD/切片与同尺度重组出现并核验后才能提交具体切图用户审批，用户这次替换授权不预先批准未见实图。后续由Owner产出证据推进，不以READY作为本轮结束点。
+
 2026-10-09 09:06:05 +08:00（Producer U01 S05R空间样张结果）S05R `v0.4/source/sample_complete_s05r.png` 原始2172×724 RGB、SHA `d90bcd92…c8a8511`；Art/Tech/Master同图APPROVED河前街后、后岸街较S05明显增宽、桥左右接后岸街与侧拱朝前景水，**仅空间与街宽方向**。`USER_REVIEW_PACKET.md`含原图/S05/S05R实图链接，供用户查看，不是Gate2切图审批包。正式3840×1024原生新绘源、五层PSD/PNG、透明/运行均未产；资源Task `IN_PROGRESS→BLOCKED`维持尺寸生产方法阻塞，v0.4 DELIVERABLE BLOCKED，Required 6/19实存、13缺失，四项资源验收PASS/NOT_TESTED/NOT_TESTED/NOT_TESTED。Gate2 v0.4 Approval DRAFT、decided_at null，Client接入锁定；API未授权未调用。Continuity check：空间样张已完成，正式资源仍有具体尺寸生产方法阻塞，本轮无空转READY/IN_PROGRESS，旧暂停线不变。复盘 `WR-20261009-U01-S05-SPACE-006`。
 
 2026-10-09 09:01:59 +08:00（Producer U01 S05同图双后验与S05R定向试样预签）S05原始 `source/sample_complete_s05.png` 为2172×724、SHA `acdd84a5…9d035ac`，Art/Tech同图均APPROVED其河前街后、后岸街、桥跨水接路与水前草的**空间方向**；后岸街加宽幅度有限，正式尺寸与五层仍NOT_TESTED。Master授权一次S05R定向编辑，Art/Tech对 `PREFLIGHT_AMENDMENT_S05R.md` 同SHA `584024d1…182d69f7` 均APPROVED，只放行改善后岸街可见宽度的一张空间试样，不能移动街前缘/河水/桥，也不解除正式画幅阻塞。Task IN_PROGRESS、Gate2 DRAFT；继续等S05R实图与同图后验。
