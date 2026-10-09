@@ -1,10 +1,34 @@
 # 用户审批记录
 
+2026-10-09 18:09:45 +08:00（Producer送审；非用户最终决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.3/R1 `USER_LAYOUT_INPUT.json` SHA-256 `db1abcb98bf3e864fce9e2c26b2fe7a848e909ed54ab19abff93703a40a0231a`，实施报告SHA-256 `9320db542f5d114978eb329ccf638d83b5f9b1ac044db235a2c4ab9d8c32804b`，Gallery源码、构建与运行清单同版绑定；11/11 Required、七项Owner拆分验收PASS，Tech/Master Review APPROVED。Task/Approval USER_REVIEW，decided_at null。用户提供的六店参数是本次坐标应用授权，不等于对旧v0.2整包或当前v0.3结果的无条件批准；Product Excel独立USER_REVIEW且未被消费。
+
+2026-10-09 18:05:19 +08:00（Producer绑定登记；用户回复精确时刻未知）：用户对唯一当前送审的`U04-MANAGER-PERSONALITY-001` v0.3明确“批准”。审批对象为`deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md`，同版`ACCEPTANCE.md`、`CHANGE_IMPACT.md`、`DELIVERABLE.json`、`MASTER_REVIEW.json`和Approval六项Required实存，六项Task验收逐字同序PASS，Master APPROVED。`ARTIFACT_APPROVAL.json`和独立快照`ARTIFACT_APPROVAL_v0.3.json`均USER_APPROVED，`decided_at=2026-10-09T18:05:19+08:00`，Product Task DONE。仅批准准确v0.3产品语义，不批准`PRODUCT-001`总纲整版、Art绘图、正式资产、动画或客户端接入；Art继续因用户暂停而BLOCKED。v0.1/v0.2 REJECTED历史保留。
+
+2026-10-09 18:00:55 +08:00（用户输入绑定；非v0.3 Artifact批准）：用户发回六店完整JSON并授权把其坐标用于U00默认位置，确切值见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/USER_LAYOUT_INPUT.json`。此决定只授权本次v0.3定向实施；旧v0.2 Task/USER_REVIEW Approval已归档`history/v0.2/`，不将本消息解释为对v0.2整包的无条件验收。现v0.3 Approval DRAFT/decided_at null，待实施、Creator/Web运行及Tech/Master同版评审后另呈具体版本。Product Excel v0.1仍独立USER_REVIEW且未被消费。
+
+2026-10-09 17:57:43 +08:00（v0.3送审，非用户决定）：`U04-MANAGER-PERSONALITY-001` v0.3 `PRD.md`、`ACCEPTANCE.md`、`CHANGE_IMPACT.md`、`DELIVERABLE.json`、`MASTER_REVIEW.json`及Approval六项Required实存；六项Task验收逐字同序PASS，Master Review APPROVED。`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。用户新定的五人方向与阿角个人保留已写入，但完整v0.3仍需用户明确批准；不能解锁Art绘图或客户端接入。v0.1/v0.2 REJECTED历史保留。
+
+2026-10-09 17:54:15 +08:00（Producer登记用户修订；用户消息精确时刻未知）：`U04-MANAGER-PERSONALITY-001` v0.2送审后，用户对孟桃、阿棠、阿炭、阿灯、小锦给出新设定，保留阿角个人发型成长方向；具体范围见`DEC-U04-FIVE-MANAGERS-20261009`。`ARTIFACT_APPROVAL_v0.2.json`记REJECTED并保留v0.2交付及Review；当前Approval转v0.3 DRAFT、`decided_at=null`。用户方向不代表完整v0.3获批；Art绘图与接入继续锁定。
+
+2026-10-09 17:08:23 +08:00（v0.2送审，非用户决定）：`U04-MANAGER-PERSONALITY-001` v0.2 `PRD.md`及同版`ACCEPTANCE.md`、`CHANGE_IMPACT.md`、`DELIVERABLE.json`、`MASTER_REVIEW.json`与Approval六项Required实存，六项Task验收逐字同序PASS，Master Review APPROVED。`ARTIFACT_APPROVAL.json`为`USER_REVIEW`、`decided_at=null`。阿角发型成长方向来自用户；六店关系、阿棠语言承载和其他角色分配须用户审阅v0.2，不能因文档验收PASS视为已批准。v0.1退回记录独立保留，Art绘图和接入未解锁。
+
+2026-10-09 17:05:31 +08:00（Producer登记用户修订；用户消息精确时刻未知）：`U04-MANAGER-PERSONALITY-001` v0.1 `PRD.md`送审后，用户要求阿角发型0魂油腻颓废分头、3魂精神挺立且时髦、1/2魂递进可辨，并标明六位店长对应店铺。`ARTIFACT_APPROVAL_v0.1.json`记`REJECTED`并保留v0.1文件/Review；当前`ARTIFACT_APPROVAL.json`指v0.2、`DRAFT`、`decided_at=null`。此修订方向不批准v0.2未完成内容，也不解锁Art绘图。
+
+2026-10-09 16:43:38 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.2/R2实施报告SHA-256 `ef159423a6b4279c6865c0dc176b21cf33b189ecc5a7dc06f6df7748c4f5c49f`、两TS源码及R2构建/运行清单准确绑定；10/10 Required、七项Owner拆分验收PASS、Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null，待用户对临时调店工具和U00菜单置顶实现作明确决定。复制出的六店参数是反馈输入，未获批准前不是正式位置；Product Excel v0.1独立USER_REVIEW，未被Client消费。
+
+2026-10-09 15:55:00 +08:00（送用户审阅，非用户决定）：`U04-MANAGER-PERSONALITY-001` v0.1 `PRD.md`及同版`ACCEPTANCE.md`、`CHANGE_IMPACT.md`、`DELIVERABLE.json`、`MASTER_REVIEW.json`和Approval六项Required均实存；五项Task验收逐字同序PASS，Master Review APPROVED。`ARTIFACT_APPROVAL.json`为`USER_REVIEW`、`decided_at=null`。送审仅为六人性格与魂成长产品提案，阿棠担任唯一0魂只言片语者及其他成长维度分配未获用户批准；Art绘图和客户端接入继续锁定。
+
+2026-10-09 15:50:19 +08:00（输入决定与新门禁登记，非Artifact批准）：用户确认六店长名单孟桃、阿棠、阿炭、阿角、阿灯、小锦，并暂停绘图、先确定性格与魂成长；0魂仅一人只言片语，具体人选待提案审批。`U04-MANAGER-PERSONALITY-001` Gate v0.1 `PRD.md`尚未提交，`ARTIFACT_APPROVAL.json`为`DRAFT`、`decided_at=null`。该名单确认不批准Product未来具体提案，也不批准Art v0.1制作方案；Art Approval继续DRAFT。其余成长维度分配和三维差异待用户审核准确Product版本。
+
 2026-10-09 15:45:27 +08:00（Producer送审；非用户决定）：`U00-SHOP-LAYOUT-CONFIG-001` v0.1工作簿SHA-256 `6f12f4975e4a93dc898b9b3fa4bd27f694a83acddfd450d41d5eb5f98f5c2c39`、字段字典SHA-256 `133bd4edd8ff585e1b4e30be43ecd47184e75f363a6d0aa2fcf305ec04b86c7b`，7/7 Required、四项方案验收PASS，Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null。表内六店坐标仅复制U00 v0.1/R3旧位置作为可编辑基线；用户具体调整方向/新数值尚未确认，不构成位置批准或Client读取授权。
 
 2026-10-09 15:34:36 +08:00（Producer退修绑定；用户消息精确时刻未知）：用户对`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.1/R3反馈“店铺的位置需要调整一下，可以做成配置表，之前应该有提过”。Task `USER_REVIEW→REVISION`，该版Approval `REJECTED`，仅针对六店位置与配置化；R3 `IMPLEMENTATION_REPORT.md` SHA `21ef3d16…5316cb5`、Tech/Master Review、构建和运行证据保留历史，其他已核行为不据此重判失败。新`U00-SHOP-LAYOUT-CONFIG-001` v0.1仍DRAFT，具体字段与位置经Tech/Master同版Review和用户批准前，Client不得消费为正式位置。
 
+2026-10-09 15:17:21 +08:00（专业阻塞评审，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001` Gate1 v0.1八项Required已实存，`MASTER_REVIEW.json`结论`BLOCKED`，指出六位历史候选孟桃、阿棠、阿炭、阿角、阿灯、小锦出自未批准讨论稿，须用户确认本轮名单。`ARTIFACT_APPROVAL.json`仍`DRAFT`、`decided_at=null`，不得据此解锁正式图片制作；本次名单确认也不自动成为具体制作方案批准。
+
 2026-10-09 15:15:23 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.1/R3 `IMPLEMENTATION_REPORT.md` SHA-256 `21ef3d16f50de4e1f4cc3db558ed101df251e26b8773134613dbb265a5316cb5`，两TS源码与R3构建/运行清单SHA已绑定。10/10 Required、九项Owner验收PASS、Tech/Master同版R3 APPROVED；Task/Approval均USER_REVIEW，decided_at null。两视口桌面Web运行通过；真机触控/性能和逐UUID Library回读未测。R1/R2退修记录保留，不能冒充R3；等待用户对此实际实现明确批准。
+
+2026-10-09 15:14:23 +08:00（开线登记，非用户Artifact决定）：`U04-MANAGER-CONCEPT-PLAN-001` Gate1 v0.1 `ART_PRODUCTION_PLAN.md`仅为拟审批对象，`tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json`为`DRAFT`、`decided_at=null`。用户本轮指令授权进入形象确定流程，尚未批准不存在的六位具体形象方案；六位名单未确认，暂不送`USER_REVIEW`。店铺绑定可后续确定。未来正式资源制作和具体切片效果仍需各自独立用户审批。
 
 2026-10-09 14:17:24 +08:00（Producer绑定登记；用户消息精确时刻未知）：用户先明确“批准”唯一送审的`U00-OVERVIEW-BRIEF-001` v0.1，后明确“同时批准 U01 v0.1、U02 v0.3-R2，继续 U00”。三项准确版本分别绑定`FEATURE_BRIEF.md` SHA `9abee98f…ed3cda71`、U01 `IMPLEMENTATION_REPORT.md` SHA `7e966779…c098251`、U02 R2 `IMPLEMENTATION_REPORT.md` SHA `5c831e79…a0673836`；各Task Approval均`USER_APPROVED`，Master据既存验收/同版Review接受单元示例Task `DONE`。U02正式QA执行已取消，既有QA Review只限实施证据审阅，不构成正式QA通过；性能、真实触控与目标设备仍NOT_TESTED。U00实施独立DRAFT，尚待实际产出与再次用户审核。
 
@@ -215,12 +239,3 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 | 2026-10-06 17:13:08 +08:00（Producer 登记；用户回复精确时刻未知） | UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001 | U01 客户端实现 | v0.2 | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json`；`deliverables/client/UNIT-SAMPLE-SINGLE-ENTRY-CLIENT-IMPLEMENT-001/v0.2/IMPLEMENTATION_REPORT.md`、`DELIVERABLE.json`及六份同版Review | USER_APPROVED（仅实现 v0.2） | Master 转达用户明确回复“好的批准”；Approval 指向确切 v0.2 IMPLEMENTATION_REPORT，六份同版Review已APPROVED。`decided_at`为Producer登记时刻，不代表用户回复精确时间。 | 父 Task 进入 QA 阶段。正式QA尚未执行，TEST_REPORT及其用户确认未完成。已创建的QA环境矩阵与性能口径任务分别仍为READY/Approval DRAFT，须完成实产、专业Review和独立用户审批后才可执行对应正式QA；本次实现批准不构成QA批准。 |
 | 2026-10-06 17:24:44 +08:00（Producer送用户审阅登记，非用户决定） | UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001 | QA Web环境矩阵 | v0.1 | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/ARTIFACT_APPROVAL.json`；`deliverables/qa/UNIT-SAMPLE-SINGLE-ENTRY-QA-MATRIX-001/v0.1/WEB_TEST_MATRIX.md`、`DELIVERABLE.json`及QA/Client/Tech/Master四份同版Review | USER_REVIEW（待用户决定） | Producer核7/7 Required均存在，Deliverable索引与Task一致，四项验收结果PASS，四份同版Review均APPROVED；Approval.review_ref指向同版MASTER_REVIEW，decided_at=null。 | 仅送审Web测试环境矩阵方案。矩阵用例仍NOT_TESTED，不是正式QA结果。PERF-PLAN v0.1因Client MAJOR退回，v0.2修订中；QA测量支持Task `UNIT-SAMPLE-SINGLE-ENTRY-QA-MEASUREMENT-001` 为BACKLOG，依赖两方案获批，正式QA/性能采样与TEST_REPORT未开始。 |
 | 2026-10-06 17:33:15 +08:00（Producer送用户审阅登记，非用户决定） | UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001 | U01性能适用性与测量口径 | v0.2 | `tasks/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/ARTIFACT_APPROVAL.json`；`deliverables/tech_lead/UNIT-SAMPLE-SINGLE-ENTRY-PERF-PLAN-001/v0.2/PERFORMANCE_PLAN.md`、`DELIVERABLE.json`及Tech/Client/QA/Master四份同版Review | USER_REVIEW（待用户决定） | Master将Task Required校正为当前v0.2七项；Producer核路径7/7存在、DELIVERABLE.artifacts一致、三项方案验收PASS、四份Review均APPROVED。Approval.review_ref为v0.2 MASTER_REVIEW，decided_at=null。 | 仅送审性能适用性与测量口径方案；未执行试采或正式性能/功能QA。v0.1 Client Review CHANGES_REQUESTED作为修订历史，不要求补造v0.1 QA/Master Review，不送用户。QA-MATRIX v0.1亦待用户决定；QA-MEASUREMENT-001继续BACKLOG，须两份方案获批后再开工。 |
-
-
-2026-10-09 16:43:38 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.2/R2实施报告SHA-256 `ef159423a6b4279c6865c0dc176b21cf33b189ecc5a7dc06f6df7748c4f5c49f`、两TS源码及R2构建/运行清单准确绑定；10/10 Required、七项Owner拆分验收PASS、Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null，待用户对临时调店工具和U00菜单置顶实现作明确决定。复制出的六店参数是反馈输入，未获批准前不是正式位置；Product Excel v0.1独立USER_REVIEW，未被Client消费。
-
-2026-10-09 18:09:45 +08:00（Producer送审；非用户最终决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.3/R1 `USER_LAYOUT_INPUT.json` SHA-256 `db1abcb98bf3e864fce9e2c26b2fe7a848e909ed54ab19abff93703a40a0231a`，实施报告SHA-256 `9320db542f5d114978eb329ccf638d83b5f9b1ac044db235a2c4ab9d8c32804b`，Gallery源码、构建与运行清单同版绑定；11/11 Required、七项Owner拆分验收PASS，Tech/Master Review APPROVED。Task/Approval USER_REVIEW，decided_at null。用户提供的六店参数是本次坐标应用授权，不等于对旧v0.2整包或当前v0.3结果的无条件批准；Product Excel独立USER_REVIEW且未被消费。
-
-2026-10-09 18:00:55 +08:00（用户输入绑定；非v0.3 Artifact批准）：用户发回六店完整JSON并授权把其坐标用于U00默认位置，确切值见`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.3/USER_LAYOUT_INPUT.json`。此决定只授权本次v0.3定向实施；旧v0.2 Task/USER_REVIEW Approval已归档`history/v0.2/`，不将本消息解释为对v0.2整包的无条件验收。现v0.3 Approval DRAFT/decided_at null，待实施、Creator/Web运行及Tech/Master同版评审后另呈具体版本。Product Excel v0.1仍独立USER_REVIEW且未被消费。
-
-2026-10-09 16:43:38 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.2/R2实施报告SHA-256 `ef159423a6b4279c6865c0dc176b21cf33b189ecc5a7dc06f6df7748c4f5c49f`、两TS源码及R2构建/运行清单准确绑定；10/10 Required、七项Owner拆分验收PASS、Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null，待用户对临时调店工具和U00菜单置顶实现作明确决定。复制出的六店参数是反馈输入，未获批准前不是正式位置；Product Excel v0.1独立USER_REVIEW，未被Client消费。

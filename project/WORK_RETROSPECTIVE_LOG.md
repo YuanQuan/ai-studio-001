@@ -416,6 +416,14 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Continuity：U00实现已到USER_REVIEW真实门禁，无空转READY/IN_PROGRESS；等待用户准确批准或退回。
 ### WR-20261009-U04-MANAGER-PLAN-001｜六位店长形象方案开线与身份阻塞
 
+- Owner / 结果 / 证据 / 门禁：Master指定`U04-MANAGER-CONCEPT-PLAN-001`，Producer登记Task、Gate1 v0.1 DRAFT审批、全局状态与看板；Art v0.1八项Task Required均实存，见`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DELIVERABLE.json`。Master同版`MASTER_REVIEW.json`为BLOCKED。历史六摊讨论稿候选是孟桃、阿棠、阿炭、阿角、阿灯、小锦，但讨论稿未获批准；仅孟桃性格有独立批准。当前没有六位完整逐人方案或用户Artifact批准；正式图片、动画、接入未解锁。
+- 可核时间与耗时：Producer首次本轮核查于2026-10-09 15:13:35 +08:00，Art首份计划文件mtime为15:15:19，Producer于15:15:49核见六份草稿，15:17:21核见八项Required及Master Review。已知起点至最终核见间为3分46秒的观察窗口，包含并行Art写作、Master评审及Producer登记，不能据此推算任何角色净工时。用户等待尚未结束；各角色净制作/Review、返工、工具故障耗时均未知。
+- 速度与原因：无同类目标时长或可比基线，不能判定工作快慢。可证实的关键依赖是六位准确名单未确认；店铺绑定可后续确定，不额外作为本轮审批阻塞。另发现草稿DELIVERABLE验收文字与Task范围不一致，已通知Master协调Art校正，以免形成返工或错误送审。
+- 建议与复核：Master请用户确认上述六位候选是否为本轮名单后交Art逐人核对产品性格事实，复核点为更新后的`ART_PRODUCTION_PLAN.md`与`DELIVERABLE.json`；代价为一次名单核对，预计减少误选角色的返工。Art校齐验收口径并补逐人设计理由，Master复评完整版本，Producer再核Required与Approval；复核点为U04下一次状态登记。
+- Continuity check：U04有明确名单决策阻塞，没有空转`READY/IN_PROGRESS`。Art当前草稿不是六人完整方案；用户未批前保持DRAFT，不进入USER_REVIEW/DONE。其他任务不在本轮授权核验范围。
+
+### WR-20261009-U00-SHOP-REVISION-001｜U00位置退修与配置表开线
+
 - 结果与证据：用户退回U00 Client v0.1/R3的六店位置并提出配置表；旧R3证据保留，Task REVISION、Approval REJECTED。Master已建Product配置任务，当前READY/DRAFT且无首份Required。证据见两Task/Approval及`deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/`。
 - 时间：用户反馈精确时间未知；Producer绑定时间2026-10-09 15:34:36 +08:00。R3送审登记15:15:23 +08:00，二者间跨度含用户阅读与等待，不能当作Owner制作或返工耗时。Product尚无可核首产时间，总耗时未知。
 - 原因与建议：当前可证实的返工触发是用户认为店铺位置需可调整；尚无明确新坐标，因此不推定Product或Client实现失误、也无同类耗时基线。Product负责先用R3现坐标形成可编辑基线与字段字典，待用户方向明确后调整；代价为源表与校验，复核点为Product首稿及Tech/Master同版Review。Client在配置准确版本USER_APPROVED后消费，复核点为新版U00运行同视口画面。
@@ -429,7 +437,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Continuity：Product已到USER_REVIEW；U00 Client REVISION依赖未获批具体配置，不能提前消费，当前没有空转READY/IN_PROGRESS。
 ### WR-20261009-U04-PERSONALITY-001｜六店长名单确认与性格方案送审
 
-### WR-20261009-U00-SHOP-REVISION-001｜U00位置退修与配置表开线
+- 结果与证据：用户确认孟桃、阿棠、阿炭、阿角、阿灯、小锦并暂停绘图，要求先明确六人性格与魂成长；`project/DECISIONS.md`仅记录六人身份和“0魂仅一人只言片语”的人数约束，不预先批准具体人选。Product `U04-MANAGER-PERSONALITY-001` v0.1六项Required已实存，五项Task验收在`DELIVERABLE.json`逐字同序PASS，Master同版`MASTER_REVIEW.json` APPROVED；Task/Approval进入USER_REVIEW。旧Art任务当前因暂停绘图与Product版本未批而BLOCKED，旧v0.1 Review保留历史。
+- 时间与耗时：Producer本轮首次核查2026-10-09 15:49:16 +08:00；Product首份PRD文件mtime 15:52:11，15:52:29核见并记TASK_STARTED；15:54:09核五份Product目录Required与Master评审；15:55:00核六项Required和五项验收并送审。已知首核至送审的观察窗口5分44秒，包含并行Product写作、Master Review和Producer登记，不代表净制作或评审工时。各角色净工时、用户等待、返工和工具故障耗时未知。
+- 速度与原因：无同类目标时长或可比基线，不判工作快慢。本轮可核流程返修是最初把阿棠写为用户已定人选，实际用户只定“仅一人”；Master指出后已校正Task、Decision、状态与送审表述，Product将阿棠标为待批提案。另DELIVERABLE初稿三条验收与Task五条不一致，Product补齐后才过送审门禁。两项均为文本核对发现，返修净耗时未知。
+- 建议与复核：Product后续提交角色语义时在文档中逐项标注“用户已确认”与“本版提案”，Producer送审前按Task验收原文逐项对照Deliverable；代价为一次文档核验，预期减少误把提案写成既有决定及漏验收返工，复核点为本v0.1用户决定和后续Art新版方案Review。Master仅在Product准确版本获批后决定何时重启Art绘图流程，不以名单确认代替方案批准。
+- Continuity check：Product v0.1已到真实USER_REVIEW，等待用户明确决定；Art有用户暂停绘图及上游规格未批的具体BLOCKED。无本轮空转READY/IN_PROGRESS任务。其他任务不在本轮授权核验范围。
 
 ### WR-20261009-U00-ADJUSTER-V02-001｜U00临时调店工具到用户门禁
 
@@ -438,6 +450,26 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 返工与建议：R1画面/控件核查后继续修正并以R2同版重构建，R1作为历史；具体R1→R2差异及原因以`IMPLEMENTATION_REPORT.md`和运行记录为准，不把旧截图当终版证据。Client下次在提交Review前先核最窄视口的调节面板和复制反馈可见性，预期减少一轮重构建；代价是一次交互预检，复核点为下一次首轮浏览器记录。Producer下轮核导出参数与获批正式坐标为两个独立版本，复核点为用户发回整组参数后配置/画面审批。
 - Continuity：本v0.2实现已到USER_REVIEW真实门禁；Product Excel v0.1仍待用户决定，正式位置另待用户提供及审批，无空转READY/IN_PROGRESS。
 ### WR-20261009-U04-PERSONALITY-V02-001｜阿角发型与六店标注修订送审
+
+- 结果与证据：用户在Product v0.1送审后补充阿角发型随0／1／2／3魂递进，并要求六人标明店铺；旧`ARTIFACT_APPROVAL_v0.1.json`记REJECTED并保留旧稿。Product提交v0.2六项Required，`DELIVERABLE.json`六项验收与Task逐字同序PASS，`MASTER_REVIEW.json` APPROVED；Task/Approval进入USER_REVIEW。`project/DECISIONS.md`仅记录阿角发型及店铺标注这两项用户明确方向，具体六店关系与其他角色分配仍待本版用户决定。Art绘图与接入继续锁定。
+- 时间与耗时：Producer首次核查2026-10-09 17:05:31 +08:00，v0.2 PRD文件mtime 17:05:18；17:08:23核Required、验收及Master Review并送审。从首次核查到送审的可观察跨度2分52秒，包含Product修订、Master评审和Producer登记的并行时间，不等于任何角色净工时。用户消息精确时刻、用户等待、各角色净制作/Review及工具故障耗时未知。
+- 速度与原因：没有同类时限或可比基线，不判断快慢。此轮返工直接来源于用户对v0.1新增发型与店铺审阅信息的要求，属于范围明确化；未见可证实的工具故障或其他慢因。
+- 建议与复核：Product在下一版角色表维持“用户明确方向／历史参考／本版提案”标记，Producer继续逐项对照Task与Deliverable并核Review准确版本；代价为一次文字对照，复核点为用户对v0.2决定及后续Art新版方案送审。Master继续向用户呈v0.2，不以文档PASS解锁绘图。
+- Continuity check：Product v0.2已到真实USER_REVIEW，Art因用户暂停绘图和Product未批而具体BLOCKED；本轮无空转READY/IN_PROGRESS。其他任务不在本轮授权核验范围。
+### WR-20261009-U04-PERSONALITY-V03-001｜五人设定修订与v0.3送审
+
+- 结果与证据：用户在v0.2审阅后重写孟桃、阿棠、阿炭、阿灯、小锦的成长方向，保留阿角个人发型方向；`ARTIFACT_APPROVAL_v0.2.json`记REJECTED并保存历史。Product v0.3六项Required实存，`DELIVERABLE.json`六项Task验收逐字同序PASS，`MASTER_REVIEW.json` APPROVED；Task/Approval进入USER_REVIEW。`project/DECISIONS.md`只记录用户明确的修订方向，完整四阶段产品方案待用户决定。Art绘图和接入仍关闭。
+- 时间与耗时：Producer本轮首次核查2026-10-09 17:54:15 +08:00；v0.3 PRD文件mtime 17:54:01，17:56:56核四份主体及五PASS/一NOT_TESTED，17:57:43核同版Master Review与六PASS送审。首核至送审观察跨度3分28秒，包括并行Product修订、Master评审与Producer登记，不是任何角色净制作工时。用户消息精确时间、等待、各角色净工时和工具故障耗时未知。
+- 速度与原因：无同类目标时长或可比基线，不判断快慢。返工直接由用户给五人更具体的性格与成长语义引起，属于需求明确化；本轮未发现可证实的工具故障或其他慢因。
+- 建议与复核：Product在后续角色稿继续将用户明确方向、历史参考与本版补写细节分开标注；Producer送审时对照Task逐项验收和准确版本的Review。代价为一次文档核对，预期减少旧版语义混入或版本误送；复核点为用户对v0.3的决定及Art后续新版方案Review。
+- Continuity check：Product v0.3已达真实USER_REVIEW；Art因用户暂停绘图和Product未批而有具体BLOCKED。本轮无空转READY/IN_PROGRESS，其他任务不在本轮授权核验范围。
+### WR-20261009-U04-PERSONALITY-V03-APPROVAL-001｜六店长性格v0.3批准登记
+
+- 结果与证据：用户明确“批准”后，Producer复核`U04-MANAGER-PERSONALITY-001`准确v0.3的6/6 Required、六项验收逐字同序PASS及Master同版APPROVED；`ARTIFACT_APPROVAL_v0.3.json`保存USER_APPROVED快照，Task DONE，`project/PRD.md`新增M03／M05此独立获批范围。`PRODUCT-001` v0.8总纲仍未整版批准。Art上游依赖已满足，但用户此前暂停美术流程仍有效，Art Task继续BLOCKED且仅以暂停为当前原因。
+- 时间与耗时：用户回复精确时刻未知；Producer本轮登记于2026-10-09 18:05:19 +08:00，审批、索引与状态复核节点为18:07:29 +08:00。两节点相隔2分10秒，只是可观察登记窗口，包含并行记录核对，不代表净工时。用户等待、此前专业Review耗时和工具故障耗时均无法从本轮可靠分解。
+- 速度与原因：无同类审批登记时限或可比基线，不判断快慢；本轮未发现可证实的慢因。准确版本快照与独立范围索引用于避免把Product批准误扩为Art或整款总纲批准。
+- 建议与复核：Producer在下次Art恢复时先核用户是否解除暂停，再要求Art引用Product v0.3批准快照并以新版方案独立Review；代价为一次依赖与状态核验，复核点为Art恢复后的首份新版Required及其审批记录。Master负责向用户呈现后续美术门禁，不以本次Product DONE代替。
+- Continuity check：Product任务DONE；Art任务因用户暂停美术流程有具体BLOCKED，本轮无空转READY/IN_PROGRESS。用户本轮只授权审批登记，不启动绘图。其他任务不在本轮核验范围。
 
 ### WR-20261009-U00-COORD-V03-001｜六店用户参数定向应用到审核门禁
 
