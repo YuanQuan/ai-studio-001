@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅接受S05R空间代表样张的内部核对：Master实看原图、S05与S05R，河水保持下方前景，街在后岸；S05R将路后边界退向灌木，铺路带较S05明显增宽，临水栏杆/岸线、桥左右接街及侧拱朝水关系保持，无下缘街道指向桥洞。天空更开阔、河水较原图少、月/柳/牌楼与蓝夜暖灯身份保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "绑定 source/sample_complete_s05r.png SHA-256 d90bcd922de7a043e892a30beebf0591d0e72d0ff942e98a7f97e1483c8a8511。S05为首次空间纠正试样，S05R为同批预签唯一一次街宽定向修订，旧S03/S04不作母版。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "当前原始样张2172×724，未得到正式3840×1024源画，也未生成五层PSD/PNG、透明证明或运行证据。本Review不等于用户具体效果批准，不解除正式尺寸生产阻塞，不作为Gate2资源交接。"
+    }
+  ],
+  "next_action": "Tech对同一S05R独立后验，Producer核实际Artifact及受限验收记录。Master向用户展示纠正后的具体样张与原始尺寸限制；正式五层生产仍须可行全分辨率方法及首图前复签，API备用未获明确选择不得调用。"
+}

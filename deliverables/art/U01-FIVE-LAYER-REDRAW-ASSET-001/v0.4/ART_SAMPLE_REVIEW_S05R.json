@@ -1,0 +1,16 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅批准S05R作为视觉方向样张：source/sample_complete_s05r.png原始2172×724 RGB，SHA-256 d90bcd922de7a043e892a30beebf0591d0e72d0ff942e98a7f97e1483c8a8511。与原图/S05同尺度实看，街道背边向灌木侧退让而增宽，前缘栏杆/岸线、水、草仍保持前后顺序；桥横向接街、侧拱朝水且无下缘路入桥洞。天空更高/水更少与主体身份保持，详见S05R_VISUAL_CHECK.md。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S05R仍只有2172×724原始像素，正式3840×1024五层图、PSD、L04补底、L05独立alpha、延路原生细节、目标设备运行与Gate2均NOT_TESTED。样张通过不解除正式资源阻塞，不得用fit放大或整图单层冒充成品。"
+    }
+  ],
+  "next_action": "Tech Lead对同一S05R文件独立后验；Master向用户展示原图、S05/S05R和限制。正式生产方法需另行验证并在下一张正式图前双预签。"
+}

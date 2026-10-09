@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "与Art对同一受限样张预案独立签认：PREFLIGHT_PLAN.md SHA-256=81d63b2ddd471cea84eb93a0e9fb01ccbdcde276d7bb902af13d9b1efa859837；TOOLCHAIN_AUDIT.md SHA-256=297f3ea4d85360db25a425d7418a8d75aa0fc7bad2db235be598641f97d42612。本预签仅放行内置image_gen一张S05完整空间关系样张，不是正式3840×1024资源生产放行；Gate1 v0.3与用户空间纠正仍为目标规格。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "第一验收顺序准确：下方前景为河水，横向石板街在河后岸原位加宽；桥嵌在后岸横街，桥面向左右接街，侧拱面向前景水，栏杆及两岸连接遵循原图，不得在画面下缘绘中央石路直通桥洞；水前草主要在左右下缘。S03/S04已被用户退回，不能作S05输入、母版或后续扩绘参考。任何一项空间不符，样张判CHANGES_REQUESTED并停止扩批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "唯一图像参考为已批overall_from_psd.png SHA-256=8d5f91396f0c0a5f0f974cd09a3c613dc68b648a4276a4f7dd46a2221a7ae6bd，文字依据为已评审空间纠正文档。旧内置整图S01/S02实际均2172×724，S05只核空间语义，返回后须读取原始尺寸、模式与SHA；若仍低于3840×1024，仅可供用户看空间方向，不能以fit、插值或PSD组装冒充新增细节。指定bggg脚本能力测试通过不等于S05或正式资源已完成。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本轮不重复失败的高分辨率重试或分区拼接，不调用外部CLI/API或读取密钥。即使S05空间通过，五张3840×1024 RGBA8基础展开75MiB仍只是估算；正式全尺寸新绘源、五层PNG/PSD、透明连续域证明、目标设备兼容性与运行、Gate2及Client接入全部NOT_TESTED/BLOCKED，下一生产方法须重新Art/Tech同版预签。"
+    }
+  ],
+  "next_action": "Art仅制作一张S05，保存原始图、完整提示词、输入、实测尺寸与SHA，并与原图先核水前/街后/桥侧拱及连接/水前草四项，再核天空高度、水面占比与街宽。Tech随后对同一实际文件独立后验；若空间失败，按已签预案最多一次基于原图的定向纠正并重新核，不扩五层。若空间通过，Master可呈用户看方向，正式尺寸生产门禁继续保持。"
+}

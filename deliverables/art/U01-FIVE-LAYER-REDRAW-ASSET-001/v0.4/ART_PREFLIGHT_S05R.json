@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "PREFLIGHT_AMENDMENT_S05R.md SHA-256 584024d1a2949a72ecd20bf21687977fa0478b35c03424c80459d133182d69f7 已核。本次只放行内置image_gen一次S05R局部编辑，S05为编辑目标、旧已批合成为唯一原始空间与风格参考；S03/S04不作输入。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S05河前街后和桥侧拱关系已纠正，但后岸石街可见纵向宽度增幅有限。S05R仅后移石街背侧灌木边界，保持街前栏杆/岸线、前景水、水前草、桥和灯船的位置及身份；绝不把街推到画面下缘或让路入桥洞。失败即停，不再第二次修订。"
+    },
+    {
+      "severity": "INFO",
+      "message": "S05原图2172×724，S05R实际尺寸须回读，当前仅空间效果试样。正式3840×1024五层、PSD/PNG、运行与Gate2均未解锁；不用CLI/API或密钥。"
+    }
+  ],
+  "next_action": "待Tech Lead对同一补充SHA独立复签，Art只生成S05R一张并保存完整原始输出/提示词/实测尺寸/hash，之后两方核同图。"
+}

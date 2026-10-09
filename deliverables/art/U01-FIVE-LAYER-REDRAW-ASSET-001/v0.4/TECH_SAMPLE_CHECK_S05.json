@@ -1,0 +1,20 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "只核空间方向样张source/sample_complete_s05.png，原始2172×724 RGB，SHA-256=acdd84a59069f0be45bc39fec7a657bcadfa5f28d8096ebf3fd5977a09d035ac。与已批原图同尺度实看：河在下缘前景，石街在其后岸横向延续，桥面左右接后岸街且侧拱朝前景水，栏杆接续；没有下缘石路直通桥洞，水草在水前左右下缘。用户退回S03/S04的空间反转已在S05方向上纠正。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "天空可见更高、前景水带较窄，但后岸石街可见纵向宽度较原图增加有限。S05只对空间顺序和桥姿态局部通过；街道明显拓宽仍待已授权的一次S05R定向编辑实图复核，不能把本结论当作全部构图锚点、正式资源或用户Gate2认可。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S05实际仅2172×724、RGB平图；正式3840×1024新绘清晰度、左右延路、五层同画布RGBA、PSD、L04补底/L05独立alpha、连续镜头遮挡、目标设备与运行均NOT_TESTED/BLOCKED。旧高分辨率输出与分区接缝失败仍属有效生产限制。"
+    }
+  ],
+  "next_action": "按独立同版预签后只允许一张S05R：保持河、街前缘、栏杆、桥和水草位置，仅把后岸铺路带的背侧边界向后退让。Art/Tech随后核同一原图的街宽与四项空间关系；失败即停，不扩五层。"
+}

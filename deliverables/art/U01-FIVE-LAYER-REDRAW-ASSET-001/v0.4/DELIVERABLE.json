@@ -1,0 +1,57 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "owner": "art",
+  "summary": "用户退回S03/S04街水前后反转后，本版在首图前Art/Tech同SHA预签下制作一张完整S05空间样张，并经唯一一次同SHA补充预签定向修订为S05R。S05R保持前景水、后岸横街、桥面左右接街且侧拱朝水，后岸铺路带比S05明显加宽；Art/Tech只批准空间方向。两图原始均2172×724，正式3840×1024五层资源仍BLOCKED、Gate2 DRAFT。",
+  "artifacts": [
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PREFLIGHT_PLAN.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TOOLCHAIN_AUDIT.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_PREFLIGHT.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/PREFLIGHT_AMENDMENT_S05R.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_PREFLIGHT_S05R.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_PREFLIGHT_S05R.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/GENERATION_LOG.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/sample_complete_s05.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/source/sample_complete_s05r.png",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/S05_VISUAL_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_SAMPLE_REVIEW_S05.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_SAMPLE_CHECK_S05.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/S05R_VISUAL_CHECK.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/ART_SAMPLE_REVIEW_S05R.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/TECH_SAMPLE_CHECK_S05R.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/MASTER_SAMPLE_REVIEW_S05R.json",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.4/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 v0.3获用户准确批准且首张正式图前Art/Tech对同一批次、工具、画幅、来源、层级与估算预算预签通过。",
+      "result": "PASS",
+      "evidence": "Gate1 v0.3审批仍为USER_APPROVED；v0.4首图预案SHA-256 81d63b2ddd471cea84eb93a0e9fb01ccbdcde276d7bb902af13d9b1efa859837由Art/Tech同版预签；S05R补充SHA-256 584024d1a2949a72ecd20bf21687977fa0478b35c03424c80459d133182d69f7由双方复签。批准范围仅空间样张。"
+    },
+    {
+      "criterion": "多图层PSD和五张PNG为3840×1024，源/导出/图层映射真实可追溯；水草仅L05、L04完整补底，逐锚点与原图同尺度核。",
+      "result": "NOT_TESTED",
+      "evidence": "S05/S05R原始均2172×724 RGB，只是空间方向样张；未产出正式3840×1024五层PNG或PSD。视觉上有水前草，不等于已分出L05。"
+    },
+    {
+      "criterion": "透明裁减只限获批完整镜头连续域可证明不透明遮挡区域，保留未裁完整源与差异/采样安全证据，不能有限截图宣称全域证明。",
+      "result": "NOT_TESTED",
+      "evidence": "未产生正式五层；无透明裁减或连续镜头遮挡证明。两张原始RGB样张均保留。"
+    },
+    {
+      "criterion": "实际PSD、切片、同尺度重组、视窗证据、来源及资源版本清单齐备，执行Agent文件核验后直接Gate2用户审核；实际导入/运行未执行记NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "正式PSD、五张切片、同尺度重组及运行视窗证据均缺；本版USER_REVIEW_PACKET只供看空间样张，不是Gate2切图审批。"
+    }
+  ],
+  "assumptions": [
+    "S05R只作为当前空间与街宽方向样张，用户尚未对该具体实图给出接受结论；旧S03/S04用户退回历史保留。"
+  ],
+  "risks": [
+    "内置工具原始S05/S05R均为2172×724，尚无可验证的3840×1024原生新绘方法；不能用插值或fit补足细节。",
+    "五层语义拆分、水草独立/L04补底、接缝、设备纹理支持与性能运行均未验证。",
+    "本轮未获API备用流程明确选择，未调用CLI/API或读取密钥。"
+  ],
+  "status": "BLOCKED"
+}

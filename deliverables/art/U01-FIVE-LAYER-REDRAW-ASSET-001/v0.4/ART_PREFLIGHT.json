@@ -1,0 +1,24 @@
+{
+  "task_id": "U01-FIVE-LAYER-REDRAW-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版首图预案PREFLIGHT_PLAN.md SHA-256 81d63b2ddd471cea84eb93a0e9fb01ccbdcde276d7bb902af13d9b1efa859837、TOOLCHAIN_AUDIT.md SHA-256 297f3ea4d85360db25a425d7418a8d75aa0fc7bad2db235be598641f97d42612 已核。本签认仅放行内置image_gen S05一张完整空间纠正样张；Gate1 v0.3与用户直接空间纠正有效，最终3840×1024五层规格不变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "唯一图像参考为旧已批overall_from_psd.png SHA-256 8d5f91396f0c0a5f0f974cd09a3c613dc68b648a4276a4f7dd46a2221a7ae6bd，文字依据为已评审SPATIAL_ORDER_CORRECTION.md SHA d09d6c921ea847f3b41b119d119d69f002a5976a3bf69a55aeffd6dc7cebf47d与CORRECTED_GENERATION_PROMPT.md SHA c232582e15d83c4c741a5bef5e5158e1b2402f30ce4c5943d405e76822741c58。S03/S04被用户退回，不作输入或母版。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "S05第一视觉门禁是前景河水、后岸横向街道原位加宽、桥面左右接后岸街且侧拱朝前景水、不出现下缘中央道路通桥洞、水前草四项。空间不符判CHANGES_REQUESTED；若仅提示词偏差最多一次定向纠正，仍用旧原图作参考，不无限重试。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧完整图原始输出2172×724，S05不承诺3840×1024；必须记录实测尺寸和sha。样张空间通过也不解除正式分辨率阻塞，不扩五层、不做Gate2或Client接入；理论五层RGBA8 75MiB且实际设备未测。本次不用CLI/API或密钥。"
+    }
+  ],
+  "next_action": "待Tech Lead对同一预案和审计SHA独立预签后，Art调用内置image_gen生成一张S05，保存原图/完整提示词/尺寸/hash并与原图逐锚点实看；Tech对同一实图后验。"
+}
