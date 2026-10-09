@@ -1,0 +1,28 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "art",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本评审只针对 Client v0.3 当前字节；旧 v0.2/R5 Art APPROVED 不继承。上游 VFX v0.2 Gate2 已获 USER_APPROVED；获批同尺度重组图 SHA-256 4A76EAEB64270BE2914C41E0CA648A38E2DD4542696D3EAD4D363EDCE76C027A 与现文件一致。独立复算 40/40 张 Client 主体 PNG 与该版 VFX 正式 PNG、逐帧清单 SHA 相同，四片独立配件 Client PNG 与已批 Art 源 PNG、当前 asset_map SHA 相同；替换接入没有改动本次获批原图字节，也没有把挂件烘进主体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前 40 帧和 40 条挂点记录齐全，walk/run/happy/sad 各 10 帧；Scene 有 40 个主体 SpriteFrame 引用及四片独立配件引用。当前 tourist_view.ts SHA-256 92EBFB29D19B28FDA28F541341AB6B863AD323E9C02D4E28D454C03F88956318：静态源码以同一 MirrorRoot 承载 AccessoryBack、BodySprite、AccessoryFront，帽/镜走独立前层，手环分前后片，左向镜像同一根节点；tourist_adapter.ts SHA-256 97F0F9CABA5597BEF8ECE8D2C2CBBEB8C2A52EA8CEEB85BD1FDE362AC10AF99D。该结论只覆盖结构与文件身份，不代表 Creator 实际层序、挂点或镜像画面通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "查看获批 v0.2 的 happy03 完整帽补充图及 sad 全帧灰底预览：主体圆头、暖白体积、深色五官与宽尾仍可辨，sad 脸在离线预览未见旧矩形暗缝。happy03 帽的保守上界为 y=-4.81px；配件独立 Sprite、Prefab 无 Mask，Gallery 的 Mask 只在控制托盘，游客舞台静态代码未见裁切。获批预览属于离线重组，不能当作当前 Client v0.3 的实际运行截图。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator 3.8.8 加载安装引擎缓存 import-map.json 时出现 EPERM，本版没有完成 AssetDB 回读、Web 构建和可查看的当前运行画面。无法对目标视窗中游客居中与尺度、happy03 帽顶是否完整、sad 动态脸部接缝、四动作循环、逐帧附件贴合、前后遮挡和左右镜像给出 Art 动态视觉 PASS；本次 Art 正式集成视觉评审因此 BLOCKED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "40 帧静态接线与 approved VFX 清单一致，但新增帧的 Creator 导入、构建纹理/图集状态及性能没有实证；RESOURCE_AND_FRAME_AUDIT.json 当前 SHA-256 07218658E2CE27862FDB80475AEDEF60E9186AE3D605E210FFA5D40EF4A61ECE。静态美术身份检查不代替运行验证或用户对本 Client v0.3 的审批。"
+    }
+  ],
+  "next_action": "Client 恢复 Creator 3.8.8 当前工程导入并完成绑定 v0.3 字节身份的 Web 构建后，提供 Art 可独立查看的真实运行画面或同版截图：至少覆盖 happy03 完整帽、sad 表情、右/左向帽镜环前后层序、四动作循环和目标视窗尺度。Art 再对同版运行视觉复审；Producer/Master 在此之前维持本 Task 的环境阻塞与用户审批门禁。"
+}

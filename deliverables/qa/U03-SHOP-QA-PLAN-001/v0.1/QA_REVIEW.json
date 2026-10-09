@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "自审确认本版是可执行测试设计，功能用例 U03-C01–C17 追溯 Product AC-01–AC-10，并覆盖 Tech/UI 的 desiredIndex、乱序回调、故障和 U01/U02 菜单边界；无 U03 运行结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "视觉矩阵覆盖两候选竖屏 × 六店、六种牌匾及两屋顶去大 LOGO，另列 Gate2/权利/真实 UUID 和 U03 专用 Web 候选门槛；各实图与性能项保持 NOT_TESTED。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "候选性能数值目前缺正式资源基线和固定浏览器测量能力证据；需 Tech、Client 评审并在用户批准开工包后才可作为判定值，首样超预算时走受控修订。"
+    }
+  ],
+  "next_action": "交 Client、Tech、Art、Master 同版评审，与 Client FEATURE_BRIEF 对齐后由 Producer 送 USER_REVIEW；资源 Gate2 与实际构建前不执行或宣称 QA 通过。"
+}

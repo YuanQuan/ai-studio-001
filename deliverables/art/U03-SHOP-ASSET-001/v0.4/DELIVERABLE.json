@@ -1,0 +1,62 @@
+{
+  "task_id": "U03-SHOP-SIGN-POLISH-004",
+  "owner": "art",
+  "summary": "完成 U03 六店 v0.4 实际 PSD 与 12 张 body/sign PNG。按用户退回反馈，仅将 02 糖画小牌改为卡通手绘、03 现烤双字统一重绘、04 理发剪梳缩小至约 80% 并回到轻巧造型；六店主体及 01/05/06 母版和切片逐字节继承 v0.3。已制作六店同尺度重组、三处 1:1 前后对照、390/720 静态视窗及可核 SHA 清单，供 Gate2 审核。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/PRODUCTION_PLAN_AND_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/DIFF_AND_RECOMPOSITION_REPORT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/FINAL_PACKAGE_VALIDATION.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/preview/sign_polish_v04_final/six_shop_same_scale_overview.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/preview/sign_polish_v04_final/three_signs_v03_v04_native_1x.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/preview/sign_polish_v04_final/twelve_slices_checker_sheet.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/psd/",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/exports/sign_polish_v04_final/",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "三处修订的正式方案、用户授权映射及首图前 Art/Tech 同批预签落实。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN_AND_ANCHORS.md SHA 6EC78613C66311B1D85B04E7A5AE55C9CC8BE6E21DA27B46C634D2C302A67183；Gate1 USER_APPROVED 记录；Art/Tech 均签 U03-SHOP-SIGN-POLISH-V04 同一方案。"
+    },
+    {
+      "criterion": "02 糖画保留小牌、小糖字与勺浆，去掉过写实板材、厚侧影、镜面糖浆，改为卡通手绘。",
+      "result": "PASS",
+      "evidence": "three_signs_v03_v04_native_1x.png 左右对照、shop_02_390x844.png、源 shop_02_cartoon_sign_r3.png 与 blank_board_r1.png；板、牌面勺浆、正式小糖字为三个 PSD 栅格层。"
+    },
+    {
+      "criterion": "03 现烤两字同源重绘且字体与字效协调，不拼接旧字。",
+      "result": "PASS",
+      "evidence": "source/parallel_shop_03/SOURCE_MANIFEST.json 和 sign_glyph_xiankao_candidate_v04.png；PSD 仅有新双字 glyph 层，牌板和挂件继承，1:1 对照与 390 视窗已检查。"
+    },
+    {
+      "criterion": "04 理发剪梳缩小居中并回到轻巧双环剪刀、交叉刃、梳齿造型。",
+      "result": "PASS",
+      "evidence": "新图形 180×75，相对原 225×94 约 80%；three_signs_v03_v04_native_1x.png、shop_04_390x844.png 及 PSD 独立图形层。"
+    },
+    {
+      "criterion": "全部主体及 01/05/06 母版和切片继承，1024 画布、脚点、两片、六 PSD、12 PNG 和同尺度证据完整。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json SHA F175B9C954EDEA40699EB2F8DEE05AD9BF5032CC7C131E910F94F11AE2AE2D0D；FINAL_PACKAGE_VALIDATION.json 39/39 文件 SHA、重组、尺寸和继承核验 PASS；六店旧/新牌 alpha 以外差异像素均为 0。"
+    },
+    {
+      "criterion": "v0.4 具体资源获 Gate2 用户批准后才正式接入并验证游戏运行。",
+      "result": "NOT_TESTED",
+      "evidence": "本包当前为 Gate2 用户审核候选；v0.4 尚未正式接入 Client，Creator Web/设备真实画面与性能未测。"
+    }
+  ],
+  "assumptions": [
+    "用户已选的中间版主体明暗继续适用；本轮只执行其明确退回的三处牌匾修改。",
+    "390/720 是静态视窗，不代表 Creator 实际运行截图。"
+  ],
+  "risks": [
+    "02 与 04 的生成图案及 03 字形为栅格图层，隐藏背面与无限放大编辑能力有限；视觉近似已批准方向，不宣称与小尺寸概览逐像素相同。",
+    "Creator 导入后的实际场景效果、内存和 DrawCall 待 Gate2 明确批准后由后续角色验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

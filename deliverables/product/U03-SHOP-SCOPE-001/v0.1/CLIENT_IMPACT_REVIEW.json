@@ -1,0 +1,32 @@
+{
+  "task_id": "U03-SHOP-SCOPE-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版 PRD、FLOW、ACCEPTANCE 与 CHANGE_IMPACT 给出了可执行的 U03 客户端状态边界：六个固定店铺身份，首次及返回再进入默认为 01 奶茶店，画面同一时刻只有一店，六项可达并在前后边界循环或采用经 UI 批准的等效直选。当前店 ID 应成为画面、牌匾和身份标签的同一状态来源；快速输入以最后一次有效选择为准，不能出现空白帧、双店、旧牌匾或错配。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "现有 apps/client/assets/UnitSampleGallery.ts 仅动态创建 U01 菜单入口和四层场景页，页面基准为 720×1280；apps/client/assets/UnitSamples.scene 仅有现行 Gallery 与 U01 的 STREET_BASE_01 Prefab 引用，没有 U03 页面、六店资源或切换控制。后续实现需在获批 Feature Brief 与 Tech/UI 规格下增量扩展菜单和独立 U03 展示状态，保护 U01 的四层 Prefab、镜头拖动/缩放/重置、返回与重入。现有菜单触摸与鼠标输入并存，新增多入口后须复核点击只触发当前入口以及页面退出后监听和节点无残留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001 v0.2 的产品范围已获用户批准，当前运行菜单仅有 U01；U02-TOURIST-SCOPE-001 v0.1 仍在 USER_REVIEW。U03 入口应按实施时真实获批的菜单版本加入，不能预设 U02 已批准，也不能恢复旧 U01–U09 实验入口。U03 产品 v0.1 本身仍为 DRAFT，当前评审不授权修改 Cocos 菜单或声称运行验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户 2172×724 合成全景只作店型与视觉参考，不能裁块作为六张正式店铺纹理；旧孟桃奶茶概念及 U01 四层背景也不能自动转为 U03 资产。客户端正式接入前须有 Product v0.1 用户批准、Art 资源制作方案的第一次用户批准、首图前 Art/Tech 同批预签、正式切片与同尺度重组效果的第二次用户批准，以及适用 UI/Tech/Client Artifact 门禁。按共享资源登记逐店核对稳定 ID、源图/导出版本及哈希、正式客户端路径、实际导入 UUID 和 Scene/Prefab 引用；计划路径不得伪装为已导入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "后续 Feature Brief 应与 Tech Lead 讨论单店容器与六店资源生命周期、切换期间加载或预加载、末次有效输入处理、缺资源反馈、牌匾位置差异及 720×1280 竖屏与较小视口适配。六店牌匾与店体可按获批资源结构拆分，但程序缩放、裁切、着色或遮挡若改变 Art 视觉锚点须返回 Art 评审；不得用共享一块牌匾仅移位置代替六店正式差异。当前没有六店实图、纹理尺寸或目标机数据，DrawCall、内存、加载耗时和可读性均未测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实施验证路线为保护当前工作区差异后，使用项目锁定的 Cocos Creator 3.8.8 导入与 CLI 构建，再以本地 HTTP 实际 Web 产物在 Codex 内置浏览器检查六店切换、边界循环、快切、重入默认态、牌匾可读性及 U01 回归；静态、导入、构建、运行、视觉和性能结果分别记录。Web 冒烟不替代 QA 判定或目标设备性能测试。本次仅审查产品与现有代码，没有编辑工程、构建或运行。"
+    }
+  ],
+  "next_action": "同意 Product v0.1 继续同版评审并提交用户审批。获批后由 Master 分派下游任务；Client 先提交轻量 Feature Brief 并与 Tech Lead 对齐现有 Gallery 复用、资源身份、切换/加载状态和性能检查，待 UI/Tech 规格及具体切图版本按各自门禁获批后正式接入，提交 Creator 导入、CLI 构建、内置浏览器运行和 U01 回归证据供 QA 核验。"
+}

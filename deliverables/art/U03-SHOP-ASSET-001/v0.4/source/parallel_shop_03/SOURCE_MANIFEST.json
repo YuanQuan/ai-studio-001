@@ -1,0 +1,207 @@
+{
+  "status": "ART_CANDIDATE_NOT_VISUAL_PASS_NOT_GATE2",
+  "word": "现烤",
+  "canvas": [
+    1024,
+    1024
+  ],
+  "foot": [
+    512,
+    900
+  ],
+  "approval_basis": {
+    "plan_sha256": "6EC78613C66311B1D85B04E7A5AE55C9CC8BE6E21DA27B46C634D2C302A67183",
+    "gate1": "USER_APPROVED",
+    "art_presign": "PRESIGNED_FOR_02_03_04_SIGN_ONLY_ON_GATE1",
+    "tech_presign": "PRESIGNED_FOR_02_03_04_SIGN_ONLY"
+  },
+  "font": {
+    "path": "v0.2/source/rights/ZCOOLKuaiLe-Regular.ttf",
+    "sha256": "812A6FC1FE54B6D73A419245C32DFEBA8AA33104D5BE90D1CF6AF082007CB71D",
+    "license": "SIL OFL 1.1",
+    "license_path": "v0.2/source/rights/ZCOOLKuaiLe-OFL.txt",
+    "license_sha256": "538078469839B4A2E7AD22BEF4EBE41681A4E53749BB2A072144024F1D6D703D",
+    "upstream_url": "https://raw.githubusercontent.com/googlefonts/zcool-kuaile/main/fonts/ttf/ZCOOLKuaiLe-Regular.ttf",
+    "font_distributed": false
+  },
+  "inputs": {
+    "old_psd": {
+      "path": "v0.3/psd/shop_03_visual_fidelity_v03.psd",
+      "sha256": "CE9BDEADCE3269CF22AB6FAC2D333E5FF3F3F1FA8C7E2115CEB85C1FDF67E07B"
+    },
+    "body": {
+      "path": "v0.3/exports/light_r3_final/tex_u03_shop_03_body_visual_fidelity_v03.png",
+      "sha256": "88E07EEDA0328118E2855D17D47F4BCB69443320744429F92FFA9A5927F492A1"
+    },
+    "old_sign": {
+      "path": "v0.3/exports/light_r3_final/tex_u03_shop_03_sign_visual_fidelity_v03.png",
+      "sha256": "79094A1A76EAC91C6244A8FD82FBBA6BD6FBC066BF51B0DFA2F9AC66E67D01E6"
+    },
+    "board": {
+      "path": "v0.3/source/shop_03_light_r3_psd_work/layer_sources/sign_board_reused.png",
+      "sha256": "571CB0204664F90E0BC10160E2136C457EC76C27D5680C3157B0B5ADDE7338C5"
+    },
+    "hardware": {
+      "path": "v0.3/source/shop_03_light_r3_psd_work/layer_sources/sign_hardware_reused.png",
+      "sha256": "146A72D55AF00EBA8168E42097B083951FFFE07C9879DEE84967E4109D73E4C4"
+    },
+    "approved_direction_crop": {
+      "path": "v0.4/source/reference/shop_03_approved_sign_crop.png",
+      "sha256": "85080BB8A4CBDFB1EC59F4784F843C3C7180416F600A031AF74580D856DCE51F"
+    }
+  },
+  "generator": {
+    "path": "v0.4/source/parallel_shop_03/build_xiankao_candidate.py",
+    "sha256": "DF8C818524F899F98894790CE8F0AB303D4E49D367098E4AD113BEB44C96483C"
+  },
+  "render": {
+    "characters": [
+      {
+        "char": "现",
+        "unicode": "U+73B0",
+        "font_bbox": [
+          0,
+          13,
+          114,
+          118
+        ],
+        "source_visible_bbox": [
+          11,
+          8,
+          118,
+          113
+        ],
+        "scaled_px": [
+          98,
+          97
+        ],
+        "center_xy": [
+          138,
+          562
+        ],
+        "face_bbox": [
+          88,
+          513,
+          188,
+          612
+        ],
+        "effect_bbox": [
+          86,
+          511,
+          193,
+          617
+        ]
+      },
+      {
+        "char": "烤",
+        "unicode": "U+70E4",
+        "font_bbox": [
+          0,
+          13,
+          114,
+          117
+        ],
+        "source_visible_bbox": [
+          13,
+          8,
+          118,
+          112
+        ],
+        "scaled_px": [
+          97,
+          96
+        ],
+        "center_xy": [
+          138,
+          696
+        ],
+        "face_bbox": [
+          89,
+          647,
+          188,
+          745
+        ],
+        "effect_bbox": [
+          87,
+          645,
+          193,
+          750
+        ]
+      }
+    ],
+    "font_size": 124,
+    "uniform_scale": 0.92,
+    "same_parameter_for_both": true,
+    "face_expansion_filter_px": 3,
+    "rim_expansion_filter_px": 5,
+    "depth_offset_px": [
+      3,
+      3
+    ],
+    "face_gradient_top_rgb": [
+      255,
+      215,
+      144
+    ],
+    "face_gradient_bottom_rgb": [
+      221,
+      149,
+      80
+    ],
+    "rim_rgb": [
+      192,
+      119,
+      65
+    ],
+    "depth_rgb": [
+      151,
+      95,
+      56
+    ],
+    "top_left_highlight_rgb": [
+      255,
+      230,
+      172
+    ]
+  },
+  "outputs": {
+    "sign_glyph_xiankao_candidate_v04.png": {
+      "sha256": "394E5D70EC44C852B902FC5FAE395F51569186E3409E0D4C878C9E831FCFF4A7",
+      "canvas": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        86,
+        511,
+        193,
+        750
+      ]
+    },
+    "sign_xiankao_v03_vs_candidate_v04_1x.png": {
+      "sha256": "C1E6BCC39FD5C9B85BDA0CC6D4195113952B0D858CB4A2474C97C12B82A299A7",
+      "left": "v0.3",
+      "right": "v0.4 candidate",
+      "native_crop_xyxy": [
+        65,
+        465,
+        225,
+        770
+      ],
+      "scale": 1
+    },
+    "shop_03_v03_vs_candidate_v04_390x844.png": {
+      "sha256": "5C865086FFF596CBDEDB9D1EC7D7C4E3E993BE94969AA267BDFAAFE7FEA3F080",
+      "left": "v0.3",
+      "right": "v0.4 candidate",
+      "view_each": [
+        390,
+        844
+      ],
+      "display_px": 316,
+      "foot_y_px": 530
+    }
+  },
+  "preservation": "The candidate contains only newly rendered 现烤. The original board, hardware and body are read-only inputs; old 现 and 烤 glyph pixels are not composited into the candidate."
+}

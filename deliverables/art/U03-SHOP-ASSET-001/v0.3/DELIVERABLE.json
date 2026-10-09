@@ -1,0 +1,62 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "owner": "art",
+  "summary": "按用户选定三面板中间 v0.2 主体明暗完成 U03 六店 v0.3 实际可编辑 PSD 与 12 张 body/sign PNG；01–04 定向高清修牌，05/06 原字节沿用。六店同尺度重组、390/720 静态视窗和 SHA 清单已供 Gate2 用户审核，本 v0.3 新版切片尚未正式接入。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/LIGHTING_AND_STYLE_CORRECTION.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/FULL_BATCH_LIGHT_R3_PRODUCTION_ADDENDUM.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/SAMPLE_REVIEW.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/DIFF_AND_RECOMPOSITION_REPORT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/FINAL_PACKAGE_VALIDATION.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/preview/light_r3_final/six_shop_same_scale_overview.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/preview/light_r3_final/twelve_slices_checker_sheet.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户授权视觉方法与新明暗基准已版本化，首图前 Art/Tech 同批预签。",
+      "result": "PASS",
+      "evidence": "Gate1 USER_APPROVED；LIGHTING_AND_STYLE_CORRECTION.md 及用户选择映射已获 USER_APPROVED；Art/Tech 原预签和变更复签均为同批 U03-SHOP-FAITHFUL-REDRAW-V03。"
+    },
+    {
+      "criterion": "01 先完成同背景、同尺度代表样张；Art 视觉与 Tech 实图后验通过后扩批。",
+      "result": "PASS",
+      "evidence": "SAMPLE_REVIEW.md、SAMPLE_ART_REVIEW_LIGHT_R3.md、Tech SAMPLE_TECH_POSTCHECK_LIGHT_R3.json 均记录 PASS；随后 Art/Tech 02–06 扩批复签。"
+    },
+    {
+      "criterion": "六店已选身份、牌位与图案保留，主体明暗按三面板中间基准。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 六店实际总览和静态视窗；六店 body 切片均与中间 v0.2 原字节一致，牌面仅 01–04 定向修订。"
+    },
+    {
+      "criterion": "六 PSD、12 PNG、逐店重组、390/720 视窗、1024 画布与脚点保留。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json 逐文件路径/SHA/alpha；source/build_final_package_light_r3.py 检查尺寸、重组、源哈希与牌外差异；PSD_LAYER_EXPORT_MAP.md 列出全部实际图层。"
+    },
+    {
+      "criterion": "字形与图案源可追溯且不冒称完全矢量可编辑。",
+      "result": "PASS",
+      "evidence": "02 糖取 v0.2 正式 glyph；03 现取官方 ZCOOL KuaiLe OFL 源、烤沿用原像素；01/04 imagegen 原始高分 RGBA 与构建脚本保留；PSD_LAYER_EXPORT_MAP.md 披露栅格和遮挡限制。"
+    },
+    {
+      "criterion": "具体 v0.3 切片 Gate2 用户批准后才正式接入 Client 并验证真实运行。",
+      "result": "NOT_TESTED",
+      "evidence": "USER_REVIEW_PACKET.md 为本版 Gate2 待审核包；本 v0.3 新版切片尚未正式接入，Creator 对新版的 Web/设备运行与性能不在静态美术交付中。"
+    }
+  ],
+  "assumptions": [
+    "用户指定的中间 v0.2 主体明暗覆盖冻结方案中偏深的光影描述；mixed_signs_v04 仍用于六店图案与布局方向。",
+    "390/720 为同尺度静态视窗证据，不代表 Creator 实际运行截图。"
+  ],
+  "risks": [
+    "01–04 的部分牌面为独立栅格可编辑层，隐藏背面未完整重建；生成源与目标概念参考不是逐像素一致。",
+    "Creator 导入、真实 Web/目标设备表现、驻留内存与 DrawCall 待 Gate2 用户批准后由后续角色实测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

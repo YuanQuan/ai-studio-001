@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-TECH-DESIGN-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "以已批 U03 Product AC-01–AC-10 和 Art Gate1 锚点核对：V-01–V-09 能追溯六店唯一身份、六份 PSD/牌匾、两处屋顶修补、单店循环、U01/U02 导航边界、同尺度竖屏、资源几何、性能及审批链。MT_SHOP_01 与 Art 候选 U03_SHOP_01_* 明示一对一映射；02–06 拟用 SHOP_02–SHOP_06，待本技术版本获批和实际导入后再核登记、哈希及 UUID。"
+    },
+    {
+      "severity": "INFO",
+      "message": "快切规则可构造确定性测试：已呈现 01 时连续 next 为目标 02→03，next 后 previous 回 01 要取消旧代次；仅最新 generation 可提交，店体、牌匾、名称、接地阴影与静态灯光同一身份，旧回调无权写入。后续用例须覆盖 01↔06、重复当前项、加载迟到、返回后迟到回调及再入复位 01，并以运行录屏、节点与请求日志核实。"
+    },
+    {
+      "severity": "INFO",
+      "message": "故障路径区分已有店保留与首次 01 无旧店的中性错误态；failedTarget 独立于复位后的 desiredIndex，重试只取失败目标，新的方向输入从可见店递推。此设计避免缺图时误用别店或把失败项显示为当前，可在未来获批测试计划中用受控缺资源/加载故障验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280、390×844 仅为候选模拟视口；V-06/07 要求逐店同尺度、真实 CSS 视口/DPR/safe area、逻辑可见区、牌匾笔画、alpha/trim/pivot 和遮挡证据。V-08 将纹理、加载、内存、帧时、DrawCall 与获批性能预算相连，没有虚构阈值或把文档自评当实测。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "尚无正式六店图、Gate2 批准、Creator 导入或运行环境，V-01–V-08 的实际结果均为 NOT_TESTED；附件商用改编权及正式字体/字稿来源仍 UNKNOWN。后续 TEST_PLAN 必须明确目标环境、性能阈值和证据，运行报告须核 Gate2 具体版本与接入版本一致；本评审仅确认方案可测。"
+    }
+  ],
+  "next_action": "技术稿可进入其余同版影响 Review 和用户审批。待 Art 实图、Gate2、UI/Client 开工包与 QA 计划分别获批后，按 V-01–V-09 执行资源、功能、视觉及适用性能验证；未测项不得写 PASS。"
+}

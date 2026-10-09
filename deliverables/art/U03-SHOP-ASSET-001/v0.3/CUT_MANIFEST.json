@@ -1,0 +1,454 @@
+{
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "revision": "r3-light-middle",
+  "status": "GATE2_USER_REVIEW_CANDIDATE",
+  "canvas_px": [
+    1024,
+    1024
+  ],
+  "foot_px": [
+    512,
+    900
+  ],
+  "slice_contract": "Each shop has full-canvas RGBA body and sign; same-origin alpha composition. Client replacement waits for Gate2 USER_APPROVED.",
+  "shops": {
+    "shop_01": {
+      "name_zh": "奶茶",
+      "asset_ids": {
+        "body": "U03_SHOP_01_BODY",
+        "sign": "U03_SHOP_01_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_01_visual_fidelity_v03.psd",
+        "sha256": "D3FCAD9FA454565C9CF868E5A056252E603676A3F35B8EA20CF36B7B82D27B09",
+        "inherited_exact_bytes_from_v02": false
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_01_body_visual_fidelity_v03.png",
+        "sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+        "alpha_bbox_xyxy": [
+          142,
+          280,
+          882,
+          900
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_01_sign_visual_fidelity_v03.png",
+        "sha256": "1D5E5E8465B7D2100B2B8F35B4E71BA2CE28A4A7F68D7DA38EFDC0AF867E56D6",
+        "alpha_bbox_xyxy": [
+          821,
+          449,
+          943,
+          651
+        ],
+        "inherited_exact_bytes_from_v02": false
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_01_recomposed.png",
+        "sha256": "83B7388407D8CDC708E5889C49D817B5D8B667A36F7CF905590501BD9DC67CEF"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_01_390x844.png",
+          "sha256": "F43C26D515CDF4C9E40A5D79A99D89B77FD624AD54D06FA362FA7EE357246F37",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_01_720x1280.png",
+          "sha256": "E1D3A5101AD5094C47D9474FA02ECC69F960ACF7FF29D92224D585686AAA66F0",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "ground_contact",
+        "body_facade",
+        "body_roof",
+        "interior",
+        "light",
+        "front",
+        "body_repair_01",
+        "sign_hardware_r3",
+        "sign_board_r3",
+        "sign_logo_r3"
+      ]
+    },
+    "shop_02": {
+      "name_zh": "糖画",
+      "asset_ids": {
+        "body": "U03_SHOP_02_BODY",
+        "sign": "U03_SHOP_02_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_02_visual_fidelity_v03.psd",
+        "sha256": "C840C76ECA3600CF01D44E5C78A9B05B19D9588D6786884C3B4E37CD5CBEA0C4",
+        "inherited_exact_bytes_from_v02": false
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_02_body_visual_fidelity_v03.png",
+        "sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+        "alpha_bbox_xyxy": [
+          189,
+          149,
+          851,
+          900
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_02_sign_visual_fidelity_v03.png",
+        "sha256": "9FCCA4C67E6F9102846CA66A9861BA878F394E86D9F1EC2BF37344D485245F3C",
+        "alpha_bbox_xyxy": [
+          685,
+          627,
+          820,
+          890
+        ],
+        "inherited_exact_bytes_from_v02": false
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_02_recomposed.png",
+        "sha256": "E68C0A6EF7CE2600557B0C2E8F0139DA23299A4FFCDB7EB72AB2CFD538BD8D13"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_02_390x844.png",
+          "sha256": "5E8FB5917EA8171A2A422DDF6E87056080F07B595BFDB3449672EE090D1468E1",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_02_720x1280.png",
+          "sha256": "F10E505B7934D874148F5A0C9CA719254A45AC0783903E4AACC4A8F281239192",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "umbrella",
+        "operating_objects",
+        "light",
+        "ground_contact",
+        "sign_board_light_r3",
+        "sign_spoon_syrup_light_r3",
+        "sign_glyph_reused_sugar_small_r3"
+      ]
+    },
+    "shop_03": {
+      "name_zh": "现烤",
+      "asset_ids": {
+        "body": "U03_SHOP_03_BODY",
+        "sign": "U03_SHOP_03_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_03_visual_fidelity_v03.psd",
+        "sha256": "CE9BDEADCE3269CF22AB6FAC2D333E5FF3F3F1FA8C7E2115CEB85C1FDF67E07B",
+        "inherited_exact_bytes_from_v02": false
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_03_body_visual_fidelity_v03.png",
+        "sha256": "88E07EEDA0328118E2855D17D47F4BCB69443320744429F92FFA9A5927F492A1",
+        "alpha_bbox_xyxy": [
+          143,
+          150,
+          923,
+          901
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_03_sign_visual_fidelity_v03.png",
+        "sha256": "79094A1A76EAC91C6244A8FD82FBBA6BD6FBC066BF51B0DFA2F9AC66E67D01E6",
+        "alpha_bbox_xyxy": [
+          72,
+          478,
+          219,
+          758
+        ],
+        "inherited_exact_bytes_from_v02": false
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_03_recomposed.png",
+        "sha256": "A3C84E6BFF906FE84948E83E6135E29CEB7948896D530D983141A96F7B9AC35D"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_03_390x844.png",
+          "sha256": "4745B29D08A4A0F9150AD662891EB13807766BC576C2FBE8E32FABEF359A0D78",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_03_720x1280.png",
+          "sha256": "3DA2A65B363A570C1BAD031048D1C0E97C90F0E7D580B8133E6F554FFD448DFC",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "body_structure",
+        "canopy",
+        "smoke",
+        "operating_objects",
+        "ground_contact",
+        "light",
+        "sign_hardware_reused",
+        "sign_board_reused",
+        "sign_glyph_reused_kao",
+        "sign_glyph_official_xian_r3"
+      ]
+    },
+    "shop_04": {
+      "name_zh": "理发",
+      "asset_ids": {
+        "body": "U03_SHOP_04_BODY",
+        "sign": "U03_SHOP_04_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_04_visual_fidelity_v03.psd",
+        "sha256": "A186E7375DC4C97530DD3297909C7930080640B9DA4E8BB5B10C58A53CE2D462",
+        "inherited_exact_bytes_from_v02": false
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_04_body_visual_fidelity_v03.png",
+        "sha256": "218EE67E40DCE005ACF7FEB83A4D62EBB13B9BA9D0809A109338025E515D8570",
+        "alpha_bbox_xyxy": [
+          142,
+          224,
+          882,
+          900
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_04_sign_visual_fidelity_v03.png",
+        "sha256": "9FD386FC4E3B1584C9B56EF81716AC205666FFBBEE176B06202EA52B18A627ED",
+        "alpha_bbox_xyxy": [
+          335,
+          408,
+          690,
+          530
+        ],
+        "inherited_exact_bytes_from_v02": false
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_04_recomposed.png",
+        "sha256": "F41ABF896C3F2F0C117DF7ABB4AC5A32B574BEB9135C76DB2820A36112C92740"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_04_390x844.png",
+          "sha256": "EF705FE738C3FE0548FFA71E42F4078404FF74C0A52CAB2C8C180CB872FB1816",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_04_720x1280.png",
+          "sha256": "192B290F1D0465B3C5ECE42D0621357D3C39F98E076A3CF59904EFDD2C9EA3C1",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "ground_contact",
+        "body_facade",
+        "body_roof",
+        "interior",
+        "light",
+        "front",
+        "sign_hardware_reused",
+        "sign_board_reused",
+        "sign_icon_scissors_comb_light_r3"
+      ]
+    },
+    "shop_05": {
+      "name_zh": "花灯",
+      "asset_ids": {
+        "body": "U03_SHOP_05_BODY",
+        "sign": "U03_SHOP_05_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_05_visual_fidelity_v03.psd",
+        "sha256": "0A3EDBEE3C8439972B9D18998B1FBEC8BABB15407A749022B67C571AFFB0E04C",
+        "inherited_exact_bytes_from_v02": true
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_05_body_visual_fidelity_v03.png",
+        "sha256": "8B77749FD71F650DC98FE1564A12973D9EE1AC3F29E00B41AFFB465926833ED3",
+        "alpha_bbox_xyxy": [
+          134,
+          150,
+          898,
+          900
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_05_sign_visual_fidelity_v03.png",
+        "sha256": "E30499C55C2EF3DDB6F004A6AF5183FFBC7EB1C4A8DB919CC6D11B2AAB39BA93",
+        "alpha_bbox_xyxy": [
+          259,
+          212,
+          557,
+          359
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_05_recomposed.png",
+        "sha256": "F1FF7B1121EDB99FC9355DD78137F18E1B2643BDB1BC571B146637B6C6397141"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_05_390x844.png",
+          "sha256": "259EED0A281508F3E4DAB0B68BB302CC8CFAAACF5AB1EE0C6D724AC47575544E",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_05_720x1280.png",
+          "sha256": "2489B1E02E66A6068E2265B91E50E64507D74E622F311333673F4B5D51E50571",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "body_structure",
+        "rack",
+        "lantern_objects",
+        "light",
+        "ground_contact",
+        "sign_hardware",
+        "sign_board",
+        "sign_glyph"
+      ]
+    },
+    "shop_06": {
+      "name_zh": "投壶",
+      "asset_ids": {
+        "body": "U03_SHOP_06_BODY",
+        "sign": "U03_SHOP_06_SIGN"
+      },
+      "psd": {
+        "path": "psd/shop_06_visual_fidelity_v03.psd",
+        "sha256": "A2585D801263046ECC6747253A02EAF6153A520EFCB119AFFD93B4497DCCFFB1",
+        "inherited_exact_bytes_from_v02": true
+      },
+      "body": {
+        "path": "exports/light_r3_final/tex_u03_shop_06_body_visual_fidelity_v03.png",
+        "sha256": "3B8CB824D5DAE0F03A80C14782DA1C7AE63A25394C821A86A0984E94B1EEC867",
+        "alpha_bbox_xyxy": [
+          116,
+          150,
+          938,
+          900
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "sign": {
+        "path": "exports/light_r3_final/tex_u03_shop_06_sign_visual_fidelity_v03.png",
+        "sha256": "30D948F82E477DC7027EE96463EF243485087FA46B5165B5730E80DF761CFD9F",
+        "alpha_bbox_xyxy": [
+          782,
+          353,
+          953,
+          638
+        ],
+        "inherited_exact_bytes_from_v02": true
+      },
+      "recomposition": {
+        "path": "preview/light_r3_final/shop_06_recomposed.png",
+        "sha256": "808CF324A2246256A61DCBF6A2F81BFFA097FEA47E2D1EAFCFBF417E43A12C7E"
+      },
+      "views": [
+        {
+          "path": "preview/light_r3_final/shop_06_390x844.png",
+          "sha256": "78A202B55232E9D9D716C76BBF7FB0EE615DC0E4200C7E4C37ED5C3F5E3FF67E",
+          "canvas_px": [
+            390,
+            844
+          ],
+          "display_px": 316,
+          "foot_y_px": 530
+        },
+        {
+          "path": "preview/light_r3_final/shop_06_720x1280.png",
+          "sha256": "F1EB47F375013C85EC0D4E60F510860FA670DB90FCD4804453C3721983286809",
+          "canvas_px": [
+            720,
+            1280
+          ],
+          "display_px": 584,
+          "foot_y_px": 800
+        }
+      ],
+      "psd_layers_bottom_to_top": [
+        "reference_source",
+        "body_structure",
+        "rack",
+        "operating_objects",
+        "light",
+        "ground_contact",
+        "sign_hardware",
+        "sign_board",
+        "sign_glyph"
+      ]
+    }
+  },
+  "same_scale_overview": {
+    "path": "preview/light_r3_final/six_shop_same_scale_overview.png",
+    "sha256": "A79FB76BB7B0F0FA098E4A868B799EFF334CDA56B90E795CC0FF90602E6561AE"
+  },
+  "twelve_slices_checker_sheet": {
+    "path": "preview/light_r3_final/twelve_slices_checker_sheet.png",
+    "sha256": "A2844835E3F03FCC9D89127F29D7878BE6894634F5D6F0617C77D0248268EF8A"
+  }
+}

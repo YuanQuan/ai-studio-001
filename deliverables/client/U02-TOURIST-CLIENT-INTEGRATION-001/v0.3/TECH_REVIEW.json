@@ -1,0 +1,28 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "[限定范围：U02 v0.3-R2 实现接入] Creator 3.8.8 管理员会话 AssetDB 导入审计44项PASS；web-mobile 构建日志记录 Build Assets success 和 Task Finished。构建父进程 ExitCode 为 null，故以实际产物、完整日志及逐文件哈希互证，不表述为进程零退出码。R2 BUILD_MANIFEST 所列147/147文件、20,421,377字节已独立核哈希一致；R1/R2产物比较仅 assets/main/index.js 有差异，源码差异仅删除展示区辅助 caption 四处引用，Scene SHA 05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb 未变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[资源与合同] 静态接入审计符合已批准 U02-VFX-A/v0.2、schemaVersion 2、40张512透明帧、四动作各10帧 loop、精确 durationFractionMs 与固定 foot；源资源/Client PNG 40项同 SHA，40个 SpriteFrame UUID、旧20身份延续/新增20、4个独立配件及 Scene 引用有据。R2 Web Audit 返回 adapter.valid=true、bodyBound=40、accessoryBound=4，U03 六个店铺引用在 Scene 静态审计中保留。上述 UUID/引用结论限定于本次导入审计、Scene 与 R2 Web 构建，不替代目标平台回归。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[运行与变换] R2 390×844 Web 实际全装扮采样覆盖四动作40/40帧及每动作09→00循环（22/37/44/10）。独立以挂点 localAffine、附件尺寸/枢轴计算，与浏览器读出的160个启用附件节点共960项位置、缩放、旋转、UISkew属性逐项比对，最大绝对差0.000005，超出0.00002为0；mountMatrix.invalidRows=0。左右 MirrorRoot、前主体后层及附件 SpriteFrame 身份随帧采样有据；这是实际节点变换验证，最终GPU像素级同尺度重组仍以视觉复核为准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[短屏交互与可见性] R2 390×667 Web 的40个动作×左右朝向×5种装扮组合为40/40 PASS；另一覆盖审计四动作各10帧、09→00循环38/8/12/4、挂点矩阵 invalidRows=0。重置审计回到 initial/right、槽位全空且 ready=true。R2 390×844及390×667左右 happy 循环和全装扮截图可见展示区旧 caption 已移除，帽子在舞台内；循环截图不能声称是精确 happy03 定帧截图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[待后续 QA] R2 390×667 的约10.2秒/600样本 Web smoke 记录 engineFrameTime p95=20.4ms、drawCalls=34–36；该样本不构成正式60秒×3性能阈值PASS。真实手指触控、目标设备/平台、长时性能/内存和完整回归仍 NOT_TESTED，交由正式QA执行与判定；本次 APPROVED 仅签当前 R2 Web 实现接入及所列静态/运行证据。"
+    }
+  ],
+  "next_action": "Producer 将此 Tech Review 与 Art/UI 的 R2 复审及 Client 交付核对后送用户审核；后续 QA 在目标环境执行既定60秒×3性能、真实触控和完整回归，保存独立 TEST_REPORT 并按流程提交用户确认。"
+}

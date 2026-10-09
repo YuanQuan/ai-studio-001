@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本次仅批准 Art v0.2 制作方案的技术可行性供用户首轮审批，不批准正式出图、切片效果或客户端接入。同版审阅输入：deliverables/art/U03-SHOP-ASSET-001/v0.2/PRODUCTION_PLAN.md SHA-256 8C193C9E43B8AE6F89AAC816D06DD70A72BC672E27141FC384A698F5561BFA7D；VISUAL_ANCHORS.md SHA-256 32D039DA35BDDB03F83D800CE1DB22B404ABB19D122E45163565AAB9441BAACD；SOURCE_FEASIBILITY.md SHA-256 3706A0BF82ADF6142F5EBD95C7CF49247DF46C2758E7D5F403287C2A4A687CE4。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店现有 Prefab 的 body/sign 均同坐标同缩放，ground_contact 对应源画布脚点 (512,900)；Art 方案保持 1024×1024 RGBA 全画布、两片、稳定资产 ID 和原 PSD 定向修订，可沿用现有 SpriteFrame/Prefab/Scene 身份。01 旧横牌下 body 透明缺口已在方案内明确须局部补画并将变动 body 一并送用户审核；02 旧侧牌不在 body，优先保持 body 字节不变。当前技术可行，仍须在样张中核补画与遮挡。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店两片全画布 RGBA 原始像素上限估算约 48 MiB（12×1024×1024×4），不等于 Creator 导入后驻留内存、图集、DrawCall 或目标设备实测。05/06 沿用原像素时不强制重写 PNG。01 右悬牌和 02 下移车前牌的 alpha 边界、画布边距、地面/车轮遮挡及 390×844、720×1280 实际显示效果属于获批后制作检查条件，不要求在方案 Review 阶段提供不存在的新图结果。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "02 小‘糖’可按方案优先从原 PSD 的 sign_glyph 定向继承，03 的‘烤’可检查原层；新增的‘现’及任何新绘字形仍须在首张样张前核官方字体文件、SHA、字形覆盖、与现有字库文件同源关系和许可，或采用来源可追溯的原创字形。Art v0.2 已将实质疑点列为停止条件。"
+    }
+  ],
+  "next_action": "Master 将三份带上述 SHA 的 Art v0.2 方案提交用户第一次审批，Producer 锁定批准版本。获批后、首张样张前 Art 与 Tech Lead 对同批 PSD 继承、字体权利、1024 画布与脚点、body/sign 遮挡、01 局部补洞、02 车前范围、输出清单和估算预算再作文字预签，Client 参与切图讨论。正式切片及同尺度重组产出后另交用户第二次审批；此前不得替换已导入的 12 张客户端 PNG，导入/构建/运行与性能结论保持 NOT_TESTED。"
+}

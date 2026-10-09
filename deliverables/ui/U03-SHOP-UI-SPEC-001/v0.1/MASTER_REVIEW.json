@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 UI、Art、Tech Lead、Client、QA 对本 UI v0.1 的同版 Review 均为 APPROVED；六条交付验收文本与 Task 原文一致。两张 SVG 可解析并明确标为结构审阅示意，不含真实店图或获批字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "界面只设一个完整店铺展示窗，六项前后循环、01 初始及重入复位；presentedIndex 只绑定当前可见店图、牌匾与名称，desiredIndex 处理连点，failedTarget 处理错误重试。正常首入无重试，失败或超时才显示重试，当前稿已与 Tech 状态机一致。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "720×1280 与 390×844 的容器、触控面积和六种挂位避让目前是候选布局，实际 PSD/切片、字体许可、安全区、牌匾投影及 Cocos 输入防穿透仍待后续 Art/Client/QA 实测。U01 当前运行与 U02 Product 已批但未实施的菜单关系已有准确区分；本 UI 审批不能视为正式 UI 图或 U03 页面已接入。"
+    }
+  ],
+  "next_action": "UI v0.1 可交 Producer 核 14/14 Required、验收和版本状态后送 USER_REVIEW；用户明确批准后才作为后续 UI 制作与 Client 开工包的正式输入，店图及切片仍须独立 Gate2。"
+}

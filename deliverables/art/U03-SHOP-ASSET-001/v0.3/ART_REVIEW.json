@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "01 代表样张按用户选定的三面板中间 v0.2 主体明暗制作，Art 视觉 PASS、Tech 实图后验 PASS；02–06 已同批预签并制作。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店实际同尺度总览及 390/720 静态视窗已检查。01 杯叶小牌、02 小糖字与糖勺立牌、03 现烤同字效、04 剪梳清晰；05/06 原牌保持。未观察到新牌压过主体或超出原牌范围。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六 PSD、12 张正式 PNG、同画布重组、图层映射、来源与 SHA 清单均实存。六店 body 与 v0.2 原字节一致；05/06 PSD/body/sign 全部原字节一致；旧/新牌 alpha 区域外合成差异均为 0。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "01–04 新图案与字均为独立栅格层，遮挡背后未完整重建；原参考总览单店尺寸较小，正式牌用高清源或合法字源重建，因此不宣称与概念图逐像素相同。"
+    }
+  ],
+  "next_action": "以 USER_REVIEW_PACKET.md 与 CUT_MANIFEST.json 所列实际版本交用户 Gate2 审核；获明确批准前不替换 Client 正式资源。"
+}

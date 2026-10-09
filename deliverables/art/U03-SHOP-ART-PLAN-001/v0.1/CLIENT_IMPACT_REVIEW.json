@@ -1,0 +1,36 @@
+{
+  "task_id": "U03-SHOP-ART-PLAN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对同版六份 Art 方案、DELIVERABLE.json、ART_REVIEW.json 与已批准 U03 Product v0.1。每店独立多图层 PSD，店体、牌匾、前后件、静态灯光及可选公共底景的对象边界足以规划单店容器；同一时刻仅挂载或显示当前店的完整组合，切换时店体、牌匾、专属陈设与接地阴影应随同一店 ID 原子替换，避免旧层残留、双店、错配或快切空白。具体节点层级、加载策略与导出映射待正式资源和 Client Feature Brief 确定；本评审不代表实际节点或运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前 Creator 3.8.8 工程的 UnitSampleGallery.ts 只有 U01 菜单入口与四层场景，UnitSamples.scene 仅引用现有 STREET_BASE_01 Prefab；尚无 U03 Scene/Prefab、六店贴图或切换控制。后续在获批 UI/Tech/Client 输入下增加独立 U03 页面，保留 U01 镜头与返回语义，并核触摸/鼠标输入及页面退出后的监听和节点生命周期。不能把本 Gate1 文字方案当作工程接入授权。"
+    },
+    {
+      "severity": "INFO",
+      "message": "计划的六张 PSD、六店导出和可选公共底景明确标为 PLANNED；apps/client/assets/units/shops/textures/ 及 snake_case 文件名是候选目录，暂无文件、.meta、Texture2D/SpriteFrame UUID 或 Prefab 映射。PSD 和审阅重组图不作运行纹理。Gate2 批准后才核对实际导出哈希、导入路径、image/Texture2D/SpriteFrame 及 Prefab/Scene UUID，并回填 project/ASSET_HANDOFF_REGISTRY.md。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "已批技术管线的 MT_SHOP_01 是奶茶店资产身份，本方案 U03_SHOP_01_* 为追踪候选；首图前 Art/Tech 须确定二者及既有静态/动态子对象、未来主体 Prefab 的唯一继承或映射关系，Client 据该正式关系接入同源资源。若需改变跨任务身份契约，应交 Master 组织评审，避免并存两套正式奶茶店 ID 或 U03 专用替代图。"
+    },
+    {
+      "severity": "INFO",
+      "message": "工程设计分辨率为 720×1280 且 fitWidth/fitHeight 均开启。方案列 720×1280 与 390×844 候选竖屏同尺度审阅，六店保持各自自然宽度和共同脚线；牌匾挂位可异，须在 UI 控件安全区内核其实际投影像素、字笔画、完整轮廓、alpha 边和前后遮挡。小视口可读性、真实安全区及主体场景投影尚未实测，不能因放大预览或程序拉伸、裁切、染色使画面达标；若技术适配改变视觉锚点须回 Art 评审。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "用户附件的商用改编权、六块牌匾及界面字体的实际许可和正式外来素材来源仍为 UNKNOWN。RIGHTS_AND_SOURCE.md 已写明首张拟正式样张与 PSD 的停止条件；此项不妨碍 Gate1 文字方案评审，但解除前不能开始正式出图。客户端不能采用从全景裁下的店块、旧孟桃概念或许可不明的字图替代六店。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本版仅为 Gate1 制作方案。用户明确批准方案并解除权利停止条件后，首图前 Art/Tech 对同批画布、层与脚点、导出边界、贴图/图集及设备预算预签，Client 参与视窗和切图意见；代表样张、全量与真实切片同尺度重组各保留版本。具体切片及效果 Gate2 获用户明确批准后，Client 才能正式导入和接入；随后核真实 Cocos 运行画面、牌匾、遮挡、快切、重入与性能，再交 QA。当前没有可报 PASS 的纹理内存、DrawCall、加载时间或设备结果。"
+    }
+  ],
+  "next_action": "同意本 v0.1 Gate1 方案继续 Master 同版 Review 与 Producer 用户送审。获批并解除正式出图停止条件后，Client 参与首图前同批预签和切图协作；在获批 UI/Tech 规格及 Gate2 具体切片版本齐备后，先提交 Feature Brief 与 Tech Lead 对齐单店状态、资源 ID/Prefab 映射、加载/释放及视口性能，再正式接入并留下 Creator 导入、实际 Web 运行与 U01 回归证据。"
+}

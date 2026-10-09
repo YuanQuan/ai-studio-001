@@ -1,0 +1,12 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "已逐一查看 evidence/r3_iab/ 的 390×844 和 720×1280 六店实图：各图仅一店，01–06 店体、各自牌匾、01/06 至 06/06 身份文本对应；牌匾、脚部、灯笼和挂件在候选视口未见裁断或被常驻控件覆盖。"},
+    {"severity": "INFO", "message": "390 菜单、六店、返回重入 01、U01/U02 画面均已归档。上一店/下一店在店体下方，返回位于顶部，身份栏与图中牌匾分离；六牌在保存截图中可辨。菜单禁入、首次中性加载/错误、保留旧店提示与按钮按下/禁用状态有代码实现。"},
+    {"severity": "INFO", "message": "R3_IAB_EVIDENCE_MANIFEST.json 登记 16 张截图的 390×844/720×1280 像素尺寸和哈希，真实编码为 JPEG/JFIF、文件扩展名现为 .jpg；控制台 R3 端口记录无 warn/error。改名仅修正扩展名，不影响本次视觉判读。"},
+    {"severity": "MINOR", "message": "本次批准限于已保存的 Web 两视口静帧和鼠标冒烟。真实触摸命中、兼容鼠标去重、加载/错误/按下/禁用的动态画面、故障重试及高 DPR/设备安全区尚未实测，需正式 QA 按已批 TEST_PLAN 验证；不据静帧推断性能或真机体验。"}
+  ],
+  "next_action": "提交同版实施评审供 Master 汇总并进入用户 Implementation Gate；动态交互、故障与设备适配由后续 QA 执行并逐项记录结果。"
+}

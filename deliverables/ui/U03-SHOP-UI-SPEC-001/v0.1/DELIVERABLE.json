@@ -1,0 +1,64 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "owner": "ui",
+  "summary": "U03 单店六项循环切换 UI v0.1：定义菜单关系、单店视窗、前后控件、状态一致性、快切、资源缺失、竖屏安全区与复用；两张 SVG 仅为结构审阅示意。",
+  "artifacts": [
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/UI_SPEC.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/SCREEN_STATES.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/NAVIGATION_AND_REUSE.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/screens/u03-shop-layout.svg",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/components/shop-switcher-states.svg",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/DELIVERABLE.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/UI_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/ART_VISUAL_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/ui/U03-SHOP-UI-SPEC-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-UI-SPEC-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确 U03 菜单入口及返回、默认 01、单店完整显示、六项切换、当前身份与店图/牌匾一致，以及快切、边界循环和重新进入复位，不改变 U01 已批准功能。",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第 1、2 节；SCREEN_STATES.md（含 01 可见连按两次后项 02→03、后项再前项 02→01 的快切规则）；NAVIGATION_AND_REUSE.md。PASS 只指规格覆盖，不是运行结果。"
+    },
+    {
+      "criterion": "定义 720×1280 当前设计画布与 390×844 候选竖屏的展示容器、触控目标与安全区，六块牌匾可能不同挂位时控件不能遮挡店体、牌匾或经营识别物。",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第 3 节；screens/u03-shop-layout.svg。为可验证布局提案，实际六店小视口还未测试。"
+    },
+    {
+      "criterion": "提供加载、缺图/权利未清、切换中、禁用、返回和重置的可实现状态及反馈；任何时刻不出现两店、旧牌匾残留、错误身份或可误认为正式资源已就绪的占位图。",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md 第 2 节；SCREEN_STATES.md 全表；components/shop-switcher-states.svg。运行行为待 Client/QA 验证。"
+    },
+    {
+      "criterion": "关键页面与切换控件提交有标注的结构示意 SVG；注明它们只用于 UI 规格审阅，不是获批正式图形、字体或运行切片；复用已有组件并登记色彩/字体来源。",
+      "result": "PASS",
+      "evidence": "screens/u03-shop-layout.svg；components/shop-switcher-states.svg；UI_SPEC.md 第 4 节；NAVIGATION_AND_REUSE.md；COLOR_SYSTEM.md。"
+    },
+    {
+      "criterion": "说明 U01 已运行、U02 Product 已批但是否出现在实际菜单取决于实现审批的关系；未来三入口信息架构不得把 Product 批准冒充客户端实施完成。",
+      "result": "PASS",
+      "evidence": "NAVIGATION_AND_REUSE.md 第 1 节核对 apps/client/assets/UnitSampleGallery.ts 现行仅 U01 的菜单代码。"
+    },
+    {
+      "criterion": "UI、Art、Tech Lead、Client、QA、Master 同版 Review 完成且 14/14 Required 与交付索引一致；送 USER_REVIEW 后等待用户对本 UI 规格版本明确决定。",
+      "result": "PASS",
+      "evidence": "已核 Task 所列 14/14 Required 文件实存并与本交付索引一致；UI_REVIEW、ART_VISUAL_REVIEW、TECH_IMPACT_REVIEW、CLIENT_IMPACT_REVIEW、QA_IMPACT_REVIEW、MASTER_REVIEW 均为同版 APPROVED。Producer 后续登记 USER_REVIEW；用户对 UI v0.1 的决定仍待，不属于本次 PASS 所指的已获批准。"
+    }
+  ],
+  "assumptions": [
+    "720×1280 是现工程设计画布，390×844 仅候选小竖屏，实际设备/安全区/DPR 要复测。",
+    "切换中保持已呈现旧店完整三元组，待目标完整就绪后整体替换；实现机制由 Tech/Client 审核。",
+    "U03 进入运行菜单的前提是具体资源和 Client 实现分别过审批，不由本 UI 规格批准自动解锁。"
+  ],
+  "risks": [
+    "用户附件商用改编权、牌匾及 UI 正式字形许可仍未核清，正式图片和运行资源不能据本规格制作或接入。",
+    "六店真实 PSD/导出尚未制作，390 宽牌匾投影、遮挡及触控安全区没有实际证据。",
+    "MT_SHOP_01 与 U03 奶茶候选 ID 的唯一映射待 Tech/Art 核定；UI 不创建平行正式资源。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

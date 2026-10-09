@@ -1,0 +1,17 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-SIGN-FONT-R1",
+  "role": "art",
+  "decision": "APPROVED_FOR_PREPRODUCTION",
+  "plan_path": "deliverables/art/U03-SHOP-ASSET-001/v0.1/FONT_REVISION_PREFLIGHT_PLAN.md",
+  "plan_sha256": "4095A27D14D43C449D2F0C5A0C16411C88E51330EE5C6B4E5DABF13BAFE7CF3B",
+  "font_sha256": "6D2546BB189C732A8CA29AF9E22457B152387D158AA459E4AC2CE1E51788B7FB",
+  "comparison_path": "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/font_revision/six_sign_font_comparison_mashan.png",
+  "comparison_sha256": "FA2B176A988989716368E9BA81922D5B0F46838238E6882E4C9078CE1C65B3E4",
+  "findings": [
+    "六店新字对比中，Ma Shan Zheng 的笔势明显改善字形观感，六块牌原有形制、材质和不同挂位未改变；屋顶大 LOGO 未出现。",
+    "逐字静态 390 宽投影的 alpha bbox 字高最低为 25.00 CSS px；细笔有效宽、实际牌底反差与设备渲染仍需在正式实图上继续核验。",
+    "02–06 已完成的局部 alpha 修边保留在当前 *_body_normalized.png；本批只定向改六店 sign_glyph，不覆盖源店体、牌底、硬件或隐藏 reference_source。",
+    "本签名只确认 Art 对同版制作预案与候选方向；Tech 同 SHA 预签前禁止正式 PSD/切片写入。用户 Gate2 仍未发生。"
+  ]
+}

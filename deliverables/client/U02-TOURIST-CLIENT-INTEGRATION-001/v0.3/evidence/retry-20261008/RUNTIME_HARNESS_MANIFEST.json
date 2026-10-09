@@ -1,0 +1,27 @@
+{
+  "schema": "u02-read-only-runtime-harness/v1",
+  "taskId": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "artifactVersion": "v0.3",
+  "buildId": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3",
+  "gameFileBaselineCount": 147,
+  "unchangedGameFiles": 147,
+  "mismatchCount": 0,
+  "mismatches": [],
+  "sidecars": [
+    {
+      "path": "apps/client/build/u02-integration-v03-web-mobile/audit.html",
+      "bytes": 1092,
+      "sha256": "4f48b839ccc3a09696758ef5d0189b5982e368f55c1afb760a7bb15df55f6133"
+    },
+    {
+      "path": "apps/client/build/u02-integration-v03-web-mobile/audit-harness.js",
+      "bytes": 13341,
+      "sha256": "f0bb88799c156be6857483fcd22919a1ea2b6d636dc4adae21b92a0f8ee7abc5"
+    }
+  ],
+  "readOnly": true,
+  "gameFileChanges": 0,
+  "url": "http://127.0.0.1:8774/audit.html",
+  "capturedAt": "2026-10-08T16:09:05.294Z",
+  "note": "Harness matrix reconstruction fixed from Creator UISkew standard-matrix formula after runtime-initial-390x667.json exposed erroneous checker output; refresh page before relying on matrix result."
+}

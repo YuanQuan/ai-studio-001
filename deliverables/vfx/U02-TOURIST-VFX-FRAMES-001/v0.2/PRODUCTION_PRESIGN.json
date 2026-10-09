@@ -1,0 +1,56 @@
+{
+  "task_id": "U02-TOURIST-VFX-FRAMES-001",
+  "batch": "U02-VFX-A",
+  "version": "v0.2",
+  "status": "FIRST_REPRESENTATIVE_EXPORT_AUTHORIZED",
+  "art": "APPROVED",
+  "tech_lead": "APPROVED",
+  "gate1_source": {
+    "artifact": "tasks/U02-TOURIST-ART-PLAN-001/ARTIFACT_APPROVAL.json",
+    "status": "USER_APPROVED",
+    "scope": "原静态主体制作前方案已获用户批准；用户于2026-10-08确认四动作样张并要求正式替换。两者授权本批修订资源制作，不预先批准具体导出PNG。"
+  },
+  "art_review": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/ART_PREFLIGHT.json",
+  "tech_review": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/TECH_PREFLIGHT.json",
+  "tool_freeze": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/TOOL_FREEZE.json",
+  "locked_inputs_sha256": {
+    "PRODUCTION_PLAN.md": "128300922752a95a686cc7d0254929ff9d55fc70c6f52a65248934163eb83236",
+    "VFX_SPEC.md": "0762f674597c8a4b993df4e040d80af5fc9a672c1f45436233f3df4674a4e9bc",
+    "SOURCE_PREFLIGHT.json": "757beb07a60e1ff214eb53305403368e0549d9357cffdbbddd182874a2bee0d0",
+    "serve-export.mjs": "50d3f62c88b24474833a12e102e242ed4473ae2369d9210871cc7bde21bec1d3",
+    "export-browser.js": "8ef755c80c18c184b7ff190667e168bf4bf53ef17cc3f717c51e212fbff92d61",
+    "finalize-export.mjs": "fbb9facef554aa6a12940213593955ef4f44cdb2a372a5d0c068de1426e0d683",
+    "diagnostic-browser.js": "d2ab48dd1a6d14e0a27fefbbd0ecdbb924806eec328c9ac9ad3fb7ca05f48d7e",
+    "review.html": "8b5bbf6bc3b3ca6275906eb9bdec06351f5db29c3694f9c5741e87401de320b5",
+    "review.js": "65658a3b6124be6a4077e49a5a335f8f4c79fd6368171d877b96cfdf8b698d28"
+  },
+  "additional_signed_sha256": {
+    "TOOL_FREEZE.json": "d3539cfbe46891dc044e58d5f2d943177233fbbc48c878f6354f403fffe9e3f1",
+    "ART_PREFLIGHT.json": "92495a9356b37dcd19a7ca7dc6074a787fc6b94e49be65e67d56fd70c990ac49",
+    "diagnostics/DIAGNOSTIC_AUDIT.json": "52390b37dc66393b9932ca4567a2354a4df8cf2f7c487e9f7eef161aa75c36b1",
+    "diagnostics/sad-seam-before-after.png": "d544c6246a0256212a5c4c6fe128838967490d6cf9fe50a8beb3f976e04fd480",
+    "diagnostics/sad05-lighter.png": "e30ce9a7e804d9e5c7acac65bdfa74e27617f7e6bd2078dd0a9799d74e4cbcea"
+  },
+  "source_integrity": {
+    "verified_sources": 15,
+    "protected_files": 773,
+    "missing_or_mismatched": 0,
+    "method": "Producer按SOURCE_PREFLIGHT.json对788个列示文件逐项重算SHA-256。"
+  },
+  "previous_revision": {
+    "version": "v0.1",
+    "result": "REVISE",
+    "reason": "正式代表帧sad05脸层矩形暗缝；其余36帧停止扩批，旧代表帧及其预签不继承为v0.2批准。",
+    "evidence": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/REVISION_NOTE.md"
+  },
+  "allowed_first_export": [
+    "ug_ghost_01_walk_00.png",
+    "ug_ghost_01_run_00.png",
+    "ug_ghost_01_happy_04.png",
+    "ug_ghost_01_sad_05.png"
+  ],
+  "full_batch_condition": "四张v0.2正式代表帧实际自动与VFX Owner视觉核对均PASS，REPRESENTATIVE_CHECK.json保存当前帧SHA、预览路径与发现，才可续导其余36张。诊断PNG不得替代正式帧。",
+  "gate2": "PENDING_USER_REVIEW",
+  "client_import": "LOCKED_UNTIL_GATE2_USER_APPROVED",
+  "note": "仅准v0.2首批四张正式代表PNG；若冻结输入、源图、Shader、动作、画布或工具改变，下一张导出前须重签。"
+}

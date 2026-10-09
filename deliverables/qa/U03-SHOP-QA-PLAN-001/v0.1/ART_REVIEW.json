@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-QA-PLAN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "VISUAL_AND_PERFORMANCE_MATRIX.md 的 V-01–V-08 逐店核对六种不同牌匾的形制、材质/色重心、挂位及文字；01 奶茶和 04 理发分别检查屋顶无大杯/大剪刀并补连续瓦面。六店自然宽比、冷蓝暖橙、无全景裁块和前后遮挡均与已批 Product/Art Gate1 锚点一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "两候选竖屏 720×1280 与 390×844 均要求六店同地线同缩放的完整图、牌匾与屋顶局部，并记录实际视口、DPR、安全区、牌匾投影和最细字笔画；Gate2 静态重组与 Cocos 运行截图分存。缺实图或缺某店不汇总视觉 PASS，当前矩阵实图/运行均为 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TEST_PLAN.md 与 R-01–R-03 明确 Art/Tech 首图前同批预签、具体 PSD/切片/同尺度重组 Gate2 用户批准及导入 UUID/哈希核验。project/APPROVAL_LOG.md 已记录用户对本次附件的 USER_DECLARATION，QA 正确将其限定为该附件的商用改编声明；正式牌匾/UI 字形、制作工具合同与外来素材来源仍须在预签核对，不能从该声明推定全部许可。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TECH_THRESHOLD_PROPOSAL.md 将 128 MiB、响应时间与帧时等数值标为待专业及用户批准的候选，并明确与牌匾清晰度、冷暖光或其他视觉锚点冲突时由 Tech 提出可测替代，Art 评估画面损失，Master 组织修订；不得靠缩小字牌、削弱灯光或临时放宽门槛伪造通过。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本评审只通过 QA 计划覆盖度。尚无 U03 六店正式 PSD、Gate2、实际构建与运行截图；后续 Art/UI 对真实视窗的逐店视觉结论及 QA TEST_REPORT 必须另行形成，不能用本次 APPROVED 代替。"
+    }
+  ],
+  "next_action": "请 Master 汇总 QA、Client、Tech、Art 同版 Review 并与 Client FEATURE_BRIEF 一起提交用户审核。资源制作及测试执行前，核本附件 USER_DECLARATION 的适用范围、正式字形/工具许可、Art/Tech 同批预签和 Gate2 具体资源版本；后续如性能处理改变已批外观，应回 Art 逐锚点 Review 并按影响重新审批。"
+}

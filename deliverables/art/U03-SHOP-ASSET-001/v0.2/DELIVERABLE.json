@@ -1,0 +1,57 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "owner": "art",
+  "summary": "按用户批准的 v0.2 方案完成六店原 PSD 定向修牌、六张 PSD、12 张 body/sign PNG、同尺度重组、390/720 视窗与 SHA 清单；待 Gate2 用户审核，未替换 Client 资源。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/SOURCE_FEASIBILITY.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/ART_PRODUCTION_PRESIGN_V02.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/SAMPLE_REVISION_R2.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/FINAL_LOCAL_REVISION_03_04.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/CUT_MANIFEST_V02.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/DIFF_AND_RECOMPOSITION_REPORT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/preview/sign_revision_v02_final/six_shop_same_scale_overview.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/preview/sign_revision_v02_final/twelve_slices_checker_sheet.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate1 用户批准、Art/Tech 同批预签与 01/02 首样后验后生产。",
+      "result": "PASS",
+      "evidence": "tasks/U03-SHOP-SIGN-REVISION-001/ARTIFACT_APPROVAL.json 为 USER_APPROVED；ART_PRODUCTION_PRESIGN_V02.json 和 Tech 同批预签；Tech SAMPLE_TECH_POSTCHECK_V02_R2.json 为 APPROVED_FOR_BATCH_EXPANSION。"
+    },
+    {
+      "criterion": "按六店方向仅改牌与 01 旧牌缺口局部，保留原店体。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 六店实图；DIFF_AND_RECOMPOSITION_REPORT.json 六店允许区域外差异像素为 0，02–06 body 原字节，05/06 PSD 与两片原字节。"
+    },
+    {
+      "criterion": "六 PSD、12 PNG、逐店重组、390/720 视窗和图层映射实存且可核。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST_V02.json 逐文件路径/SHA；source/verify_package_v02.py 核文件、1024 画布、重组与差异；PSD_LAYER_EXPORT_MAP.md 逐层映射。"
+    },
+    {
+      "criterion": "02 糖使用原正式字形，03 现使用官方许可字源，方向图图案可追溯。",
+      "result": "PASS",
+      "evidence": "SAMPLE_REVISION_R2.md、PSD_LAYER_EXPORT_MAP.md、source/rights/RIGHTS_SOURCE.md、source/build_samples_r2.py 与 source/build_remaining_v02.py。"
+    },
+    {
+      "criterion": "Gate2 用户批准实际切片和重组效果后方可正式替换 Client 贴图。",
+      "result": "NOT_TESTED",
+      "evidence": "USER_REVIEW_PACKET.md 已供 Gate2 审核；本批尚无 Gate2 用户批准，也未改 Client 工程。"
+    }
+  ],
+  "assumptions": [
+    "静态 390/720 视窗用于牌面可读性审核，不代表 Creator 实际 Web 或目标设备画面。",
+    "05/06 原牌已符合用户选中样式，PSD/body/sign 三份均保留原字节。"
+  ],
+  "risks": [
+    "01 杯叶 logo、02 牌勺浆、04 剪梳取已授权方向图较低分辨率栅格局部，放大后比原高分辨率经营物略柔和；保留源及逐层说明，供 Gate2 静态视窗审核。",
+    "正式 Creator 导入、实际场景、目标设备纹理内存与性能尚未核验；Gate2 批准后按后续流程执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

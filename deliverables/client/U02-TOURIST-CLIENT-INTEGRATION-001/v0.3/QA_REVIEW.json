@@ -1,0 +1,24 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "[限定范围：v0.3-R2 实现接入准备 Review] 已核同版构建与导入记录：Creator 3.8.8 AssetDB 审计44项PASS；R2 Web-Mobile构建清单147文件、20,421,377 bytes，完成日志、构建配置和产物哈希有据。父进程退出码为null，故仅以日志与新产物互证，不称零退出码。R1 caption遮挡已通过R2删除舞台辅助caption修订；R1截图不继承为R2验收。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[合同与覆盖] QA_ACCEPTANCE_MATRIX.md 已按USER_APPROVED的U02 VFX v0.2与CP-U02-VFX-CLIENT-CONTRACT-20261008改为四动作各10帧、walk/run同姿态且run两倍速度、happy/sad均loop。独立读取R2 runtime-full-equipped-390x844.json与runtime-full-coverage-390x667.json：两视口均观察40/40帧，四动作每个10帧；09→00回绕分别为22/37/44/10与38/8/12/4；160/160挂点矩阵、invalidRows=0。此为只读运行记录的接入核对，不等于QA正式逐帧测试。"
+    },
+    {
+      "severity": "INFO",
+      "message": "[组合、布局与回归准备] R2 runtime-40-combinations.json记4动作×2朝向×5装扮40/40状态pass，40张同版截图已留存。R2左右happy循环在390×844和390×667的截图中旧caption已消失、帽顶可见；覆盖数据含happy03渲染节点，循环截图本身不是精确happy03定帧证明。R2重置记录回initial/right、三槽空且ready=true；U01 initial/zoom-drag/reset与U03六店均有本版截图。这些是有限Web鼠标与视觉冒烟，不替代正式回归。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "正式QA_EXEC尚未开始：真实手指触控、短屏滚动上下边界与同手势去重、快切/受控错误回滚、完整U01/U03独立回归及QA Plan要求的稳定10秒后60秒×3性能、DrawCall/纹理/入退资源与内存原始测量仍NOT_TESTED。短时Web smoke不可判性能阈值PASS；当前Review不构成TEST_REPORT或最终QA总PASS。"
+    }
+  ],
+  "next_action": "本次仅批准v0.3-R2的QA实现接入准备Review，可提交Master/Producer处理当前Client Artifact同版用户审批。待该门禁满足后，锁定R2或届时变更的新构建，由QA按QA_ACCEPTANCE_MATRIX.md和已批QA Plan独立执行正式FUNCTIONAL、Visual QA、触控及60秒×3性能，形成TEST_REPORT并交用户确认；若源码或资源再改，重绑构建身份与受影响证据。"
+}

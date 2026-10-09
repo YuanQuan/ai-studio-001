@@ -1,0 +1,28 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本评审只针对 Client v0.3 当前字节；旧 v0.2/R5 Art APPROVED 不继承。上游 VFX v0.2 Gate2 已获 USER_APPROVED；获批同尺度重组图 SHA-256 4A76EAEB64270BE2914C41E0CA648A38E2DD4542696D3EAD4D363EDCE76C027A 与现文件一致。独立复算 40/40 张 Client 主体 PNG 与该版 VFX 正式 PNG、逐帧清单 SHA 相同，四片独立配件 Client PNG 与已批 Art 源 PNG、当前 asset_map SHA 相同；替换接入没有改动本次获批原图字节，也没有把挂件烘进主体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前 40 帧和 40 条挂点记录齐全，walk/run/happy/sad 各 10 帧；Scene 有 40 个主体 SpriteFrame 引用及四片独立配件引用。当前 tourist_view.ts SHA-256 92EBFB29D19B28FDA28F541341AB6B863AD323E9C02D4E28D454C03F88956318：静态源码以同一 MirrorRoot 承载 AccessoryBack、BodySprite、AccessoryFront，帽/镜走独立前层，手环分前后片，左向镜像同一根节点；tourist_adapter.ts SHA-256 97F0F9CABA5597BEF8ECE8D2C2CBBEB8C2A52EA8CEEB85BD1FDE362AC10AF99D。该结论只覆盖结构与文件身份，不代表 Creator 实际层序、挂点或镜像画面通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次运行视觉对象是 Creator 3.8.8 Web-Mobile 的 v0.3-R2 构建，R2 BUILD_MANIFEST.json SHA-256 7E1B37F2CD4B038FD6055196A15AF24F4CC2F4D66403244E1F9AB943FA4E6647；RUNTIME_HARNESS_MANIFEST.json 记载审核页只读、原构建147/147文件不变。独立查看 R2 的 happy-cycle 左右 390×844/390×667 四图、sad-cycle-left、walk/run 全套，以及四动作×两朝向的全套组合截图：单游客的圆头、暖白冷蓝体积、粉颊、深色五官和宽尾仍符合获批造型；帽、眼镜、手环贴近对应部位，左右表情可读，未见明显前后层序穿帮。R2 runtime-40-combinations.json 的 40/40 组合状态通过，四十帧画面逐一像素无误并非本次结论。"
+    },
+    {
+      "severity": "INFO",
+      "message": "R2 runtime-full-equipped-390x844.json 对全套装扮实际覆盖40/40帧，四动作各10，09→00回绕分别 walk22/run37/happy44/sad10，mountMatrix 40帧/160挂点且 invalidRows=0；Tech 的同构建独立核对还覆盖160个启用附件节点的960项变换属性。R2 happy-cycle 截图为循环时点，并非精确 happy03 定帧；旧R1精确 happy03 截图帽顶完整，R2 相对 R1 仅删除舞台辅助标题四处代码引用，Scene/主体/配件/挂点均保持，R2 左右全套循环图也见帽顶完整。据此判定当前角色显示没有帽顶裁切迹象，同时保留精确R2 happy03像素截图未单独取得的证据界限。R2 sad-cycle-left 及 sad 组合图未见旧脸层矩形暗缝。"
+    },
+    {
+      "severity": "INFO",
+      "message": "上一轮 CHANGES_REQUESTED 的唯一 Art 视觉缺口已关闭：R2_PREBUILD_AUDIT.json 锁定只移除‘游客展示区’辅助标题四处引用，现行 UnitSampleGallery.ts SHA-256 1266D7C9715AF95F49A71B13A7F742175E6207B71FDD8FCB76249C86332ECEF5；R2 四张 happy-cycle 双向长/短屏截图中帽顶周边不再与文字重叠，角色仍在单人展示区内，顶部导航、状态与操作控件保留。旧 CHANGES_REQUESTED 原件保存在 evidence/history/pre-r2-art-review-20261009/ART_REVIEW.json，SHA-256 36BCF4E4879AC0CC0066F9A9CA429950BA2879CDC137EE494E9246633A5900BE。此 Art APPROVED 仅为 R2 当前 Web 实际视觉及批准资源一致性；正式 QA、真实触控、目标设备、长时性能和用户对 Client v0.3 的审批另行办理。"
+    }
+  ],
+  "next_action": "Master/Producer 核对 Client、UI、Tech 的同一 v0.3-R2 交付与 Review 后处理用户审批；示例 Owner 继续保存运行证据。正式 QA、目标设备、真实触控和长时性能按适用门禁另行执行；若后续精确 R2 happy03 定帧出现裁切或装扮接触缺陷，再提交同版视觉修正。"
+}

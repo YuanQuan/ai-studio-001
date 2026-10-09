@@ -1,0 +1,47 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-FULL-BATCH-B",
+  "scope": "仅 02–06 五店的全量拟正式资源生产预案；01 奶茶继续使用已获 Art/Tech 样张后验 APPROVED 的 U03-SAMPLE-A 当前版本。",
+  "decision": "APPROVED",
+  "plan": {
+    "path": "deliverables/art/U03-SHOP-ASSET-001/v0.1/FULL_BATCH_PLAN.md",
+    "sha256": "6C1AA8737DDC2C94734C4CF7F84BC0F204F7ADE15B228C28084CC2839933D5D2"
+  },
+  "sample_art_review": {
+    "path": "deliverables/art/U03-SHOP-ASSET-001/v0.1/SAMPLE_VISUAL_REVIEW.json",
+    "sha256": "C9F8B88ABD067AEA0FC80280491F9C9E04597C87E0C777025ABDD608E51818A1",
+    "decision": "APPROVED"
+  },
+  "sample_tech_review": {
+    "path": "deliverables/art/U03-SHOP-ASSET-001/v0.1/SAMPLE_TECH_REVIEW.json",
+    "sha256": "A452ABC6CF2C5096ACA58A95B99FCCDD0738E9E9F0D22A2FBB8DEF07CB491656",
+    "decision": "APPROVED"
+  },
+  "art_signature": {
+    "reviewer": "art",
+    "decision": "APPROVED",
+    "signed_plan_sha256": "6C1AA8737DDC2C94734C4CF7F84BC0F204F7ADE15B228C28084CC2839933D5D2",
+    "findings": [
+      "五块牌匾的文字、形制、材料与挂位分别继承已批准 SIX_SIGNBOARD_PLAN.md；理发屋顶大剪刀和奶茶屋顶大杯均不得存在，02–06 不从全景裁块或旧候选拼接。",
+      "沿用已签 1024×1024 RGBA 母版与 foot=(512,900)，每店最多 body/sign 两张候选 PNG；原创逐笔字稿、高对比和 390 宽完整画布投影源字高≥80px/有效笔宽≥8px 为候选检查线，实图仍需逐店核。",
+      "基于 01 首样记录了牌面手工材质、经营线索避让、黑灰白夜蓝 alpha 边与语义层掩码改进；每店 PSD 必含隐藏非导出 reference_source，工作层 flag=0、来源层 flag=2，须以独立解析器核眼睛状态并从 PSD 实际通道重组。实际内存、Creator Web、设备安全区和其余五店可制作性未实测。",
+      "U03-SAMPLE-A 的 Art/Tech 实图后验均为 APPROVED；Art 对本 FULL_BATCH_PLAN.md 同一 SHA-256 作正式全量预签。Tech Lead 尚未对本全量批同 SHA 签名，02–06 正式出图禁止。"
+    ]
+  },
+  "tech_signature": {
+    "reviewer": "tech_lead",
+    "decision": "APPROVED",
+    "signed_plan_sha256": "6C1AA8737DDC2C94734C4CF7F84BC0F204F7ADE15B228C28084CC2839933D5D2",
+    "findings": [
+      "独立复算 FULL_BATCH_PLAN.md SHA-256 为 6C1AA8737DDC2C94734C4CF7F84BC0F204F7ADE15B228C28084CC2839933D5D2，与 Art 已签版本一致；SAMPLE_VISUAL_REVIEW.json 和 SAMPLE_TECH_REVIEW.json 分别为 APPROVED，实文件 SHA-256 与本文件登记的 C9F8B88ABD067AEA0FC80280491F9C9E04597C87E0C777025ABDD608E51818A1、A452ABC6CF2C5096ACA58A95B99FCCDD0738E9E9F0D22A2FBB8DEF07CB491656 一致。奶茶首样的旧 flags 错误已修正并保留退回历史；本签名只解锁同批 02–06 的正式制作。",
+      "02–06 的 SHOP_02–SHOP_06 与已批 U03_SHOP_0x_MASTER/VISUAL 逐店一对一追溯，不创建 Lab 专用第二套资源。糖画伞车右杆琥珀糖片竖牌、炭烤棚左柱熏木竖牌、理发檐下双层横额、花灯上梁偏左折角纸牌、投壶侧挂竹简竖牌在文字、形制、材质与挂位上均有明确区分；两字分别正读，理发屋顶大剪刀须消失，牌匾不得遮糖画、炉台、镜台、灯群或壶口箭线。",
+      "五店各自以 1024×1024 同坐标母版和 foot=(512,900) 为候选，源图仅等比安置且不裁顶、不拉宽；每店 PSD 须含可见语义 RGBA 工作层与隐藏非导出的 reference_source，独立解析 flags=0/2 和实际通道重组、牌字层局部编辑探针后才可称可编辑。首样的 PSD 是 8 位 RGB 缓存复合加 RGBA 图层，本签名把本计划的‘8 位 RGBA 母版’按该实际结构理解；正式透明交付以图层和 PNG 为准，不把不透明复合预览导作 Sprite。受遮挡隐面如实记录，不能假称完整原生分件。",
+      "每店最多 body/sign 两张候选 1024² RGBA8 PNG；只有在前后遮挡、牌匾挂位和静态暖光可按同一 sourceRect/originalSize/offset/foot 准确重组时才继续。若需第三片、公共底景、额外动态件或改变层序上限，先停受影响店并由 Art/Tech 与 Client 重新签认，不自行改已批视觉。正式 exports 和 CUT_MANIFEST 留到切图协作后产出；候选文件不等于 Gate2 可接入资源。",
+      "390×844 候选审阅按完整 1024 画布投影宽 316 CSS px，计划字高≥80px、有效细笔≥8px 对应约 24.69/2.47 CSS px，仅略高于 24/2 候选线。逐店须在 720×1280、390×844 同一脚线和统一宽度约束下实测两字 bbox、笔宽、对比、alpha 边与 UI 安全区；竖牌两字堆叠及 05/06 开敞架体尤其须验。实际 DPR、visibleRect、安全区与 Creator/设备可读性仍 NOT_TESTED；不达线或遮挡时停该店调整并按受影响范围复签。",
+      "按两张 1024² RGBA8 满页估算每店约 8 MiB，本批五店约 40 MiB，六店若全部常驻约 48 MiB；这只是静态未压缩展开面积，不含 mip、图集留白、CPU/GPU 双份、背景、压缩回退和加载峰值。U03 同时只显示一店，但切换预载可能持有更多资源，Client 后续须明确最大同时加载数并在 Creator 3.8.8 Web 实测页数、纹理设置、内存、加载与 DrawCall；不能据单店可见或同图集宣称预算 PASS。",
+      "本批继续使用用户已声明可商用改编的同一附件和已登记的内置 image_gen、MIT image2psd 与逐笔原创牌字方法；每店保存实际输入、提示词、源/输出哈希及相似性检查。用户声明撤回、出现相反合同证据、采用额外未核许可素材/字体/工具或有具体高相似风险时停该店并重审来源。换工具、画布、脚点、出图范围或已批锚点也须在受影响下一张图前重签。"
+    ]
+  },
+  "batch_release": "RELEASED",
+  "next_action": "Art 仅可依据同一 SHA-256 的 U03-FULL-BATCH-B 预案制作 02–06，逐店保存独立源图、原创字稿、隐藏来源层和可编辑 PSD、透明候选 PNG、alpha 与双竖屏同尺度证据；任一店不达字牌、遮挡、来源、纹理或可编辑性条件即停该店并按影响范围复签。Master/Producer 核对本批双签与任务状态。六店实际切片和重组仍需用户 Gate2 明确批准，之前不得正式导入 Creator；接入与性能由后续 Client/Tech/QA 实测。"
+}

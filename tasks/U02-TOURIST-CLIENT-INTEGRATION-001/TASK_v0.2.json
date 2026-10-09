@@ -1,0 +1,70 @@
+{
+  "id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "title": "U02 游客正式序列帧、独立挂件与可运行场景接入",
+  "type": "integration",
+  "owner": "client",
+  "parent": null,
+  "objective": "仅使用已批准的 U02-FULL-A/formal v0.1 和客户端资源入库 v0.1，在 Cocos Creator 3.8.8 的 UnitSamples 场景把一名居中游客、四套真实序列帧和帽/眼镜/手环独立挂载接入已审的状态与界面合同；保留 U01 现有行为，并形成可复查构建、画面、身份与专业评审证据。",
+  "inputs": [
+    "deliverables/product/U02-TOURIST-SCOPE-001/v0.1/PRD.md、ACCEPTANCE.md（USER_APPROVED）",
+    "deliverables/tech_lead/U02-TOURIST-TECH-DESIGN-001/v0.1/TECH_DESIGN.md、FRAME_MOUNT_CONTRACT.md、RESOURCE_ID_AND_CREATOR_PLAN.md（USER_APPROVED）",
+    "deliverables/ui/U02-TOURIST-UI-SPEC-001/v0.1/UI_SPEC.md（USER_APPROVED）",
+    "deliverables/art/U02-TOURIST-ASSET-001/v0.1/ 已批 U02-FULL-A/formal Gate2 具体版本、源与同尺度重组 SHA-256 E1ED44D83EED19CBC86CAB1648FB2FE35361DD8DDD96D02B5DB5D1E80E92E16E",
+    "deliverables/client/U02-TOURIST-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md、STATE_AND_RESOURCE_PLAN.md（USER_APPROVED）",
+    "deliverables/qa/U02-TOURIST-QA-PLAN-001/v0.1/TEST_PLAN.md、CLIENT_TEST_CASES.md（USER_APPROVED）",
+    "deliverables/client/U02-TOURIST-CLIENT-ASSET-001/v0.1/IMPORT_REPORT.md、DELIVERABLE.json 与 tasks/U02-TOURIST-CLIENT-ASSET-001/ARTIFACT_APPROVAL.json（USER_APPROVED）",
+    "deliverables/client/U02-TOURIST-CLIENT-LOGIC-001/v0.2/IMPLEMENTATION_REPORT.md、DELIVERABLE.json 与 tasks/U02-TOURIST-CLIENT-LOGIC-001/ARTIFACT_APPROVAL_v0.2.json（须先 USER_APPROVED）",
+    "project/changes/CP-U02-LOGIC-TEST-HANDOFF-20261007.md 与 tasks/U02-LOGIC-TEST-HANDOFF-001/ARTIFACT_APPROVAL.json（须先 USER_APPROVED；空态未测项接线后复核）",
+    "project/ASSET_HANDOFF_REGISTRY.md、rules/cocos_cli_browser_workflow.md 与 agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "apps/client/assets/labs/u02/tourist_adapter.ts",
+    "apps/client/assets/labs/u02/tourist_view.ts",
+    "apps/client/assets/units/ghost-customer/UG_GHOST_01.prefab",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/UnitSamples.scene",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/RESOURCE_AND_FRAME_AUDIT.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/WEB_RUNTIME_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/U01_REGRESSION_RECORD.md",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/UI_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/QA_REVIEW.json",
+    "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.2/MASTER_REVIEW.json",
+    "tasks/U02-TOURIST-CLIENT-INTEGRATION-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "依赖的客户端资源入库、资源解耦逻辑 v0.2 及 CP 测试移交三个精确 Artifact 均 USER_APPROVED 后方可由 BACKLOG 解锁；所有运行 SpriteFrame、元数据、挂件与 Art Gate2/Client Asset 的路径、SHA、UUID 同链，未批准版本不得替代。",
+    "UnitSamples 的 U02 页面只显示一名居中 UG_GHOST_01；四动作 walk/run/happy/sad 使用各自真实连续主体帧，现批准批次为 6/6/4/4 且每动作不超过 10 帧；走跑无世界位移，高兴/沮丧原地，状态与帧时长按正式清单执行。",
+    "帽、眼镜、手环保持独立资源与独立槽位，通过逐帧 head/face/wristNear/wristFar 挂点和前后层序装卸；换装不得改写主体 PNG/帧引用，身体、挂件、朝向在同一 commit 中更新，失效挂点不得沿用旧帧。",
+    "初态 walk_00 静置、四动作未选；动作/左右/三槽操作、快速切换、重置、返回重入与错误回滚显示已生效状态；无第五动作、旧表情、第二实例、额外街景或凳子。U01 四层场景拖缩、重置、返回和再次进入不回归。",
+    "Prefab、Scene 和必要图集引用经 Creator 3.8.8 实际导入，正式 UUID/资源身份写入同一 ASSET_HANDOFF_REGISTRY；构建获得本次完整成功日志和输出哈希；loopback HTTP 与 Codex 内置浏览器按当前构建检查双竖屏、左右及挂件实图、输入和 console，并分别记录静态、导入、构建、运行、视觉、性能的真实结果。空态资源提示文案随正式接线修正。",
+    "承接 CP 的未测项：菜单 touch/mouse 同手势去重、托盘真实触控上下边界/按钮间隙、真实安全区及高 DPR、U01 完整输入与跨页隔离必须在当前接线构建重新复核；无证据保持 NOT_TESTED，最终 QA Plan C-12/C-13 与性能阈值不降低。",
+    "Client、Art、Tech、UI、QA、Master 对同一具体实现版本 Review 后送用户审批；完整 40 组、全帧、性能与最终 QA TEST_REPORT 由后续正式 QA 执行，不以本 Task 冒烟替代。"
+  ],
+  "dependencies": [
+    "U02-TOURIST-CLIENT-ASSET-001",
+    "U02-TOURIST-CLIENT-LOGIC-001",
+    "U02-LOGIC-TEST-HANDOFF-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-07 Master 预先建立实施 Task Packet；此时 Asset v0.1 已 USER_APPROVED，Logic v0.1 仍 REVIEW/DRAFT，Tech/UI/QA 未通过，故保持 BACKLOG，不记开工、不修改场景或正式接线。",
+    "2026-10-07 Master 按用户当前测试移交指令修订输入为 CP v0.1 与 Logic v0.2，两者目前均待精确 Artifact 用户审批；保持 BACKLOG。",
+    "产物文件名为本 Task 的 Required 路径；若 Creator 3.8.8 实际 Prefab/脚本结构需调整，应先形成 Task 修订与角色评审，不以静默更名或缺文件交付。",
+    "2026-10-07 12:55:37 +08:00 Producer 核 Asset v0.1、CP v0.1、Logic v0.2 三精确上游 Artifact 均 USER_APPROVED/DONE，正式接线依赖齐，由 BACKLOG 解锁 READY。此时尚无本 Task Owner Required 实产，不记 IN_PROGRESS；Master 须立即启动 Client Owner。",
+    "2026-10-07 12:57:40 +08:00 Producer 核首份 Required apps/client/assets/labs/u02/tourist_adapter.ts 实存 6390 字节、文件创建时间 12:57:19 +08:00，正文含正式帧/挂点/挂件合同和 TouristView 接口引用；Client 正继续 view/Prefab/Scene/Gallery，Task READY→IN_PROGRESS。当前文件只是制作中代码，不判构建/运行/视觉/QA PASS。",
+    "2026-10-07 13:22:46 +08:00 Client Owner 已提交正式源码/Prefab/Scene、R4 构建和运行记录、实施/资源/U01 文书、DELIVERABLE 与 CLIENT_REVIEW=APPROVED；Producer 核当前 13/18 Required 实存，缺 Art/Tech/UI/QA/Master 五专业 Review。Deliverable/Client Review Schema PASS，索引14项唯一，R4构建83/83哈希匹配。Task IN_PROGRESS→REVIEW，Approval DRAFT；当前没有同版五方审或用户批准，完整触控/全帧/40组/性能/最终QA仍 NOT_TESTED。",
+    "2026-10-07 13:27:30 +08:00 UI 对 v0.1/R4 的 UI_REVIEW.json=CHANGES_REQUESTED：当前状态条缺 snapshot.phase 的静止/播放中/保持中反馈，已穿戴槽缺具体件名。Producer 保留 R4 实施与 UI 退回历史，Task REVIEW→REVISION、Approval DRAFT；Client 已受派最小文案修正及 R5 新构建。Tech/QA 已 APPROVED 仅是旧 v0.1/R4 证据，不能移作 R5 修订后的同版批准；正式 QA Exec 继续 BACKLOG。",
+    "2026-10-07 Master 将 11 条当前交付与 Review Required 路径从 v0.1 修为 v0.2；六条源码/资源登记及 Task Approval 路径保持原定。v0.1/R4 及 UI 退回仍为历史，v0.2/R5 须重新完成六方同版 Review 和精确版本用户审批。",
+    "2026-10-07 13:34:42 +08:00 Client 已提交 v0.2/R5、CLIENT_REVIEW=APPROVED；Art/Tech/UI 同版 Review 亦 APPROVED，Art 只认静态身份与结构。Producer 核 18/18 Required 路径唯一、16/18 实存，缺 QA/MASTER Review；R5构建83/83哈希匹配。Task REVISION→REVIEW，Approval v0.2 DRAFT；v0.1/R4退回与旧审批原样留档，QA Exec 仍 BACKLOG。",
+    "2026-10-07 13:39:54 +08:00 Producer 曾核 v0.2/R5 18/18 Required 及索引、六方 Review 均在；送审登记途中 Tech/Master 随即发现 DELIVERABLE 的 risks[1]、U01 条目和40组条目仍沿用旧 R4/R5 未重跑措辞，与当前 R5 限定记录不一致。尚未向用户呈现本候选；立即维持 Task REVIEW、Approval DRAFT，Client 只修三处文本后由 Tech/QA/Master 重新绑定真正终版 SHA 再决定 USER_REVIEW。原临时哈希 1F38ABB7…5D3BAB 不作为最终审批对象，QA Exec 继续 BACKLOG。",
+    "2026-10-07 13:42:43 +08:00 DELIVERABLE 三处过期文案已修、终版候选 SHA B30B6D22…8DB9C9，六 Review 曾复核；QA 又发现 WEB_RUNTIME_RECORD/U01_REGRESSION_RECORD 的 R5 U01 旧时点叙述与 Master 后续限定 mouse 冒烟冲突。Client 正仅修这两份文书，随后受影响 Review 须补签当前字节；Task 继续 REVIEW、Approval DRAFT，B30…不能单凭索引核验送用户。",
+    "2026-10-07 13:46:20 +08:00 最终跨文书审计：18/18 Required 实存并索引于 DELIVERABLE 25 项唯一清单，Task/Approval/Deliverable 与六份 Review Schema PASS、Client/Art/Tech/UI/QA/Master 同版 APPROVED；DELIVERABLE B30B6D22…8DB9C9、WEB 658CD984…B476AD、U01 5E251F99…89C40F 哈希一致，R5 构建 83/83 文件复算通过。旧 R4 退回保留历史；Task REVIEW→USER_REVIEW、Approval v0.2 USER_REVIEW，用户尚未决定。R5 U01 仅一次限定 mouse 冒烟，完整回归、Art 动态视觉、真实触控、全帧/40组与性能 NOT_TESTED；QA Exec 因本版未 USER_APPROVED 仍 BACKLOG。"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "U03-SHOP-ASSET-001",
+  "title": "U03 六店独立多层母版与正式切片",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "依据已批准的 U03 Product、Art Gate1、Tech/UI v0.1 及用户对本次附件商用改编权的明确声明，先完成来源与原创字形登记、Art/Tech 同批首图前预签，再制作奶茶代表样张、六店各自多图层 PSD、按协作方案导出实际切片与同尺度单店重组，提交具体版本供用户 Gate2 审核；本任务不接入 Cocos。",
+  "inputs": [
+    "U03-SHOP-SCOPE-001 Product v0.1、U03-SHOP-ART-PLAN-001 Art Gate1 v0.1、U03-SHOP-TECH-DESIGN-001 Tech v0.1、U03-SHOP-UI-SPEC-001 UI v0.1（均 USER_APPROVED）",
+    "用户对本次 2172×724 U03 店铺附件确认由本项目生成或制作，拥有并允许用于商用改编、六店 PSD 与游戏资源；原问题/回答以 project/APPROVAL_LOG.md 的独立 USER_DECLARATION 为准，不代替工具合同或字形来源核验",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/VISUAL_ANCHORS.md、SIX_SIGNBOARD_PLAN.md、ASSET_MANIFEST.md、RIGHTS_AND_SOURCE.md、CUT_COLLABORATION_PLAN.md",
+    "rules/visual_production_contract.md、rules/artifact_contract.md、project/ASSET_HANDOFF_REGISTRY.md、项目当前 Cocos Creator 3.8.8 与两候选竖屏视口"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/PREFLIGHT_PLAN.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/RIGHTS_PROVENANCE_ADDENDUM.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/LETTERING_SOURCE_AND_LICENSE.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/ART_PREFLIGHT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_01_milk_tea_full_redraw_v04.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_02_sugar_art_zcool_b92_v03.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_03_charcoal_grill_zcool_b92_v03.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_04_barber_full_redraw_v03.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_05_lantern_zcool_b92_v03.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/psd/shop_06_pitch_pot_zcool_b92_v03.psd",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/milk_tea_sample.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SAMPLE_VISUAL_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/FULL_BATCH_PREFLIGHT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/milk_tea_full_redraw_v04/six_shop_same_scale_overview.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_ART_ACCEPTANCE_V04.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_TECH_ACCEPTANCE_V04.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/QUALITY_REPORT.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/ART_FILE_CHECK.json",
+    "tasks/U03-SHOP-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "将用户对本次附件来源与商用改编权的原话、附件哈希、实际生产工具/服务条款、输入参考与六块正式字形来源逐项登记；正式字稿用具备实际使用/嵌入/分发/修改许可的字体或可追溯原创手绘字，来源未核清时不得开始首张拟正式图。",
+    "首张拟正式样张前 Art 与 Tech Lead 对同一批次、工具、画布/视口、PSD 可编辑层、脚点/alpha、牌匾可读、输出范围、图集/纹理预算及目标环境分别签认；未双签前不出正式图，样张 Art/Tech 通过后全量开工前再复签。",
+    "先完成 01 奶茶代表样张并核瓦顶大杯/吸管大 LOGO 已去、瓦面与光影补全、工作窗和新横匾身份、同尺度投影；代表样张视觉与技术结论未通过不得扩至 02–06。",
+    "六店各有独立完整多图层 PSD，保留屋顶/棚架、经营线索、牌匾文字与挂位、灯光、前后件及地影的可编辑边界；奶茶与理发屋顶无大杯/大剪刀，六块牌匾文字正确且轮廓/材质/挂位各异，六店同源供未来主体与 U03 复用。",
+    "Art 与 Tech/Client 讨论切片并留档，从当前 PSD 拆层或按签认方案合并后输出真实 PNG；CUT_MANIFEST 逐件列实际路径、版本、尺寸、alpha/脚点、图层映射、SHA-256 与拟 Creator 路径，项目共享资产登记标计划 UUID，不使用全景裁块或未批旧概念图。",
+    "提交 720×1280 与 390×844 两候选视口下六店各自单显的同尺度重组对照、实切片清单和已知限制；组织 Agent 自行切图时由执行 Agent 核文件与重组后直接交用户 Gate2 审核，不增加切图效果专业复审或额外预览环境门禁。具体 Gate2 USER_APPROVED 前不交 Client 正式接入。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "U03-SHOP-ART-PLAN-001", "U03-SHOP-TECH-DESIGN-001", "U03-SHOP-UI-SPEC-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户对本次附件的权利确认是独立声明，不是 Art Gate2，也不自动核清具体生成工具合同、第三方素材或牌匾字形许可。",
+    "六 PSD、真实 PNG 与重组图仅在同批 Art/Tech 预签通过后制作；预签前可实产来源核查和文字制作计划。2026-10-07 因用户明确批准 01／04 整体重绘和 B 92% 栅格字效，六 PSD Required 路径与合版清单/总览改为当前精确版本；12 张 PNG、12 张双视口及逐件 SHA 由锁定的 SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json 逐项约束，旧文件保留历史。",
+    "此任务作为正式六店资产生产，不另建 U03 Lab 专用平行店图；奶茶顶层身份以已批 Tech v0.1 的 MT_SHOP_01 为准。"
+  ]
+}

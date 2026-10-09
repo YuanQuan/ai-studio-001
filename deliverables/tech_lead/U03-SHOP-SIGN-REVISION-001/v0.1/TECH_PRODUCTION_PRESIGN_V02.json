@@ -1,0 +1,30 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "batch_id": "U03-SHOP-SIGN-REVISION-V02",
+  "role": "tech_lead",
+  "version": "v0.2",
+  "decision": "PRESIGNED_FOR_FIRST_SAMPLES",
+  "scope": "现有六店 PSD 局部牌匾修订；01 旧牌下 body 缺口局部补画；01/02 首张可编辑样张",
+  "approved_plan_sha256": {
+    "PRODUCTION_PLAN.md": "8C193C9E43B8AE6F89AAC816D06DD70A72BC672E27141FC384A698F5561BFA7D",
+    "VISUAL_ANCHORS.md": "32D039DA35BDDB03F83D800CE1DB22B404ABB19D122E45163565AAB9441BAACD",
+    "SOURCE_FEASIBILITY.md": "3706A0BF82ADF6142F5EBD95C7CF49247DF46C2758E7D5F403287C2A4A687CE4"
+  },
+  "source_layer_counts": [10, 8, 10, 10, 9, 9],
+  "source_missing_layer_files": 0,
+  "canvas_px": [1024, 1024],
+  "foot_px": [512, 900],
+  "slices_per_shop": ["body", "sign"],
+  "raw_rgba_batch_upper_bound_bytes": 50331648,
+  "rights": {
+    "official_ofl_sha256": "538078469839B4A2E7AD22BEF4EBE41681A4E53749BB2A072144024F1D6D703D",
+    "official_ttf_sha256": "812A6FC1FE54B6D73A419245C32DFEBA8AA33104D5BE90D1CF6AF082007CB71D",
+    "legacy_aggregator_ttf_sha256": "302D8DEE7D2CB7D25D6BC89399E43513D2CAFD031862BD46BCE47F573C68807E",
+    "same_font_bytes": false,
+    "same_sampled_glyph_pixels": false,
+    "official_ttf_local_path": "deliverables/art/U03-SHOP-ASSET-001/v0.2/source/rights/ZCOOLKuaiLe-Regular.ttf",
+    "license_record_path": "deliverables/art/U03-SHOP-ASSET-001/v0.2/source/rights/RIGHTS_SOURCE.md"
+  },
+  "not_tested": ["new PSD/edit/save/export", "new alpha and occlusion", "Creator import", "Web build/runtime", "draw calls and resident memory", "target device performance"],
+  "next_gate": "Art 01/02 样张实图与逐锚点检查；正式切片另获用户第二次审批后 Client 才能接入"
+}

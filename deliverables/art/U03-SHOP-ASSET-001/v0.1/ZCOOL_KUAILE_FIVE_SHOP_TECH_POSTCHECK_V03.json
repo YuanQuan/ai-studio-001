@@ -1,0 +1,18 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "ACTUAL_ASSET_POSTCHECK",
+  "batch_id": "U03-SIGN-B92-FIVE-20261007",
+  "reviewed_build_report": "ZCOOL_KUAILE_FIVE_SHOP_BUILD_REPORT_V03.json",
+  "reviewed_build_report_sha256": "F7DEA2CC4C5F16B11F42FF0BD476069D2166535F1F2EBF5804AAE937820D9E12",
+  "art_postcheck_sha256": "23D3DC75266904981FB4BE27D131E83C4DB184D15E73ED39CEE55E9AF5D8699E",
+  "findings": [
+    {"severity": "INFO", "message": "独立核构建报告 50 个输入/输出引用路径均存在且 SHA-256 全匹配；五店输入旧 PSD 保留。逐店比较新旧 layer_sources，只有 sign_glyph.png 改变，其余 7–9 层 PNG 字节哈希一致。04 未纳入本次五店实图。"},
+    {"severity": "INFO", "message": "独立以 Pillow 打开十张 body/sign PNG，均为 1024×1024 RGBA，四画布边 alpha 均为 0；每店 body+sign 按顺序 alpha 复合与交付重组 PNG 逐像素一致。五店各有 390×844 和 720×1280 完整视口文件，尺寸实核正确；foot 均记录 (512,900)，显示宽分别 316/584，同尺度总览已目视核。"},
+    {"severity": "INFO", "message": "构建报告记录 PSD 可见层与双片最大通道差均为 1/255，reference_source 隐藏；各店字芯高 390 投影最小值依次为 26.54、28.08、27.77、25.00、28.08 CSS px，均超过 24 候选线。Art 静态视觉结论 PASS；独立总览核五店牌文、原牌位置、主要经营线索与大体同尺度。"},
+    {"severity": "INFO", "message": "独立按已锁字体/渲染参数复建 92% 原字芯，alpha≥180 二值化、Zhang-Suen 骨架、剔除端点/分叉及 2 px 邻域，以局部欧氏直径 10 分位量十二字有效细笔；390 投影最小为 2.16 CSS px，十二字均达到 ≥2 CSS px 静态候选线。审计记录 ZCOOL_KUAILE_FIVE_SHOP_STROKE_AUDIT_V03.json SHA-256 1B61FCA348017E54C6F50D1BA42D40460B1FB125D2825E396EE41407FA4F3E80。糖字个别端部更窄，但不在有效稳定笔画统计范围；仍需 Gate2 原尺寸全视口和实际设备核字孔/边缘。PSD 尚未交互式 Photoshop/Photopea 开存。"},
+    {"severity": "INFO", "message": "十张 1024² RGBA8 全展开约 40 MiB，仅为静态纹理面积估算；图集页数、mip、CPU/GPU 双份、加载峰值、safe area、帧时均 NOT_TESTED。TTF 仅本地使用，构建报告明记官方原包/声明未比对；交付/提交时复核仓库和游戏包无字体软件。"}
+  ],
+  "next_action": "五店实际 PSD、十张切片、同尺度重组及双视口可送用户 Gate2 审核，须向用户明确细笔和 Creator/设备性能未实测；用户批准具体版本前 Client 不正式接入。04 待独立首图后验。"
+}

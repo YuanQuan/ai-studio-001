@@ -1,0 +1,72 @@
+{
+  "schema": "u02-r2-build-and-validation/v1",
+  "taskId": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "artifactVersion": "v0.3-R2",
+  "reason": "移除happy03帽顶与TouristStage辅助caption的重叠；保留用户要求的单游客居中展示及其他标题、状态、控件和角色/挂点表现。",
+  "source": {
+    "file": "apps/client/assets/UnitSampleGallery.ts",
+    "sha256BeforeCaptionRemoval": "dcdf3f43e3b450d5fef1df7c794ae78453f64ea740bc07ee184505229a6ac33e",
+    "sha256R2": "1266d7c9715af95f49a71b13a7f742175e6207b71fdd8fcb76249c86332ecef5",
+    "removedReferences": 4,
+    "captionAbsentInSourceAndBuiltBundle": true,
+    "sourceBackup": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/UnitSampleGallery.before-caption-removal.ts"
+  },
+  "scene": {
+    "file": "apps/client/assets/UnitSamples.scene",
+    "sha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+    "modifiedByCaptionFix": false,
+    "u03ContentRetained": true
+  },
+  "staticChecks": {
+    "captionReferencesAbsent": true,
+    "v03StaticSourceAndBindingAudit": "PASS",
+    "creatorTypeScript": "PASS (--noEmit --strict false --target es2019)",
+    "sceneLinks": "STATIC_PASS",
+    "sceneObjects": 19,
+    "sceneObjectReferences": 26,
+    "frameCount": 40,
+    "affineMountCount": 160,
+    "maximumAffineReconstructionError": 4.440892098500626e-16
+  },
+  "creatorImport": {
+    "audit": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/creator-import-library-audit.json",
+    "status": "PASS",
+    "creatorVersion": "3.8.8",
+    "checkedAssets": 44,
+    "bodyFrames": 40,
+    "accessorySlices": 4
+  },
+  "build": {
+    "manifest": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/BUILD_MANIFEST.json",
+    "buildId": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3-R2",
+    "creatorVersion": "3.8.8",
+    "platform": "web-mobile",
+    "windowsAdministratorToken": true,
+    "taskResult": "FINISHED",
+    "creatorParentExitCode": null,
+    "completedAt": "2026-10-09T00:20:50.7128825+08:00",
+    "files": 147,
+    "totalBytes": 20421377,
+    "rollupWarnings": [],
+    "fatalErrors": [],
+    "childProcessSignal": "build-script child emitted exitCode null/SIGTERM; parent subsequently logged Build Assets success, Asset DB resume, and Build Task Finished.",
+    "builtCaptionAbsent": true
+  },
+  "r1Preservation": {
+    "manifest": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/BUILD_MANIFEST.json",
+    "previousGameFilesChecked": 147,
+    "unchanged": 147,
+    "mismatches": 0
+  },
+  "http": {
+    "serverRecord": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/http-server.json",
+    "url": "http://127.0.0.1:8775/",
+    "rootStatus": 200,
+    "settingsStatus": 200,
+    "mainBundleStatus": 200,
+    "auditUrl": "http://127.0.0.1:8775/audit.html",
+    "auditStatus": 200,
+    "auditSidecarManifest": "deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2/RUNTIME_HARNESS_MANIFEST.json"
+  },
+  "runtimeVisualReview": "PENDING_MASTER_ART_UI_HAPPY03_EQUIPPED_AND_390X667_390X844_CONFIRMATION"
+}

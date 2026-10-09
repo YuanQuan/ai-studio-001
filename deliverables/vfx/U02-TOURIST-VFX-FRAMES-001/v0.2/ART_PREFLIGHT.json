@@ -1,0 +1,47 @@
+{
+  "task_id": "U02-TOURIST-VFX-FRAMES-001",
+  "batch": "U02-VFX-A",
+  "artifact_version": "v0.2",
+  "reviewer": "art",
+  "stage": "首张正式 PNG 前同批预签",
+  "decision": "APPROVED",
+  "scope": "仅签认 v0.2 sad 脸层合成暗缝的定向修复及冻结的两阶段文字/工具方案；诊断图不是正式帧，尚未批准任何 v0.2 正式 PNG",
+  "locked_inputs_sha256": {
+    "PRODUCTION_PLAN.md": "128300922752a95a686cc7d0254929ff9d55fc70c6f52a65248934163eb83236",
+    "VFX_SPEC.md": "0762f674597c8a4b993df4e040d80af5fc9a672c1f45436233f3df4674a4e9bc",
+    "SOURCE_PREFLIGHT.json": "757beb07a60e1ff214eb53305403368e0549d9357cffdbbddd182874a2bee0d0",
+    "TOOL_FREEZE.json": "d3539cfbe46891dc044e58d5f2d943177233fbbc48c878f6354f403fffe9e3f1",
+    "serve-export.mjs": "50d3f62c88b24474833a12e102e242ed4473ae2369d9210871cc7bde21bec1d3",
+    "export-browser.js": "8ef755c80c18c184b7ff190667e168bf4bf53ef17cc3f717c51e212fbff92d61",
+    "finalize-export.mjs": "fbb9facef554aa6a12940213593955ef4f44cdb2a372a5d0c068de1426e0d683",
+    "diagnostic-browser.js": "d2ab48dd1a6d14e0a27fefbbd0ecdbb924806eec328c9ac9ad3fb7ca05f48d7e",
+    "diagnostics/DIAGNOSTIC_AUDIT.json": "52390b37dc66393b9932ca4567a2354a4df8cf2f7c487e9f7eef161aa75c36b1",
+    "diagnostics/sad-seam-before-after.png": "d544c6246a0256212a5c4c6fe128838967490d6cf9fe50a8beb3f976e04fd480",
+    "diagnostics/sad05-lighter.png": "e30ce9a7e804d9e5c7acac65bdfa74e27617f7e6bd2078dd0a9799d74e4cbcea"
+  },
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.1 代表帧 sad05 的脸层矩形细暗缝已由 Owner 标为 REVISE 并停止扩批。v0.2 只在独立服务读取原型 emotions.js 后，将 sad 刚体脸层的最终 Canvas 合成由 source-over 改为 lighter，随后恢复 source-over；原型文件、Shader、刚体变换、颈部过渡、姿态、节奏及 walk/run/happy 画法未改。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已亲自查看 diagnostics/sad-seam-before-after.png 的黑、灰、白底同尺度前后对照：修复侧不再见原脸层矩形暗缝，圆头、暖乳白／冷蓝体积、深色眼眉嘴、粉颊、宽柔尾及轮廓无明显漂移，未见新增亮边。对 v0.1 sad05 与 v0.2 诊断 PNG 独立逐像素复核：均512×512 RGBA，变化364像素；共同不透明内部 RGB 最大单通道差1，无大于1的差异。DIAGNOSTIC_AUDIT 所列接缝 alpha 190至199 恢复253。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TOOL_FREEZE.json 所列九个文件逐项重算 SHA 无差异；SOURCE_PREFLIGHT 的15张分层静态源及773个受保护文件逐项重算共788项无缺失或哈希变化，已批准三份静态 PSD 仍在原路径。项目已记录来源/使用权声明；本修复不新增图像、字体、品牌或外部参考。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.2 正式 frames 目录仍为0张 PNG。诊断图只证实 sad05 局部修复可行，不代替四张 v0.2 代表正式 PNG 的黑灰白边缘、五官刚体、独立配件与左右镜像核对，也不代替 sad 其余九帧及全批实图核对。"
+    }
+  ],
+  "conditions": [
+    "Tech Lead 对本版确切字节另作同批预签，Producer 绑定签认和冻结文件 SHA 后才开始 v0.2 正式导出；旧 v0.1 预签、失败代表帧和诊断 PNG 不得移作 v0.2 正式批准。",
+    "第一阶段仅导出 walk00、run00、happy04、sad05 四张代表正式 PNG。VFX Owner 对实际帧与已确认 GIF、静态源及独立配件重组作同尺度核对，重点检查 sad05 脸孔洞的黑灰白暗缝、亮边、五官刚体、挂点和两向遮挡，并在 REPRESENTATIVE_CHECK 留路径与结论；PASS 后才可续导36张。",
+    "全批 sad 十帧均核脸层边缘和五官相对位置；维持512×512透明原画布、不 trim、不缩放、walk/run 同姿态两倍速、配件独立不烘焙及固定 foot=(256,440)。任何复现暗缝、出现新亮边或身份漂移、改变源图/Shader/工具/画布/动作方式或新增来源，在下一张正式帧前停批并重签受影响范围。",
+    "全批实际 PNG、清单和同尺度重组仍需交用户 Gate2 审核具体版本；Client 接入、Creator/Web 实效和设备指标均未由本预签测试。"
+  ],
+  "next_action": "完成 Tech Lead 与 Producer 同版锁定后，VFX 先导出并实核四张 v0.2 代表正式 PNG，再依门禁完成余下36张并提交用户 Gate2。"
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 v0.2 仅补用户已批准 Client v0.1/R3 的单元示例 Owner 自检，代码、Scene、六店资源与原审批均未改变。Owner 证据清单记录 9 张 JPEG、2 份 JSON 的来源/哈希；R3 构建 107 文件及原 IAB 17 文件亦已复核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Client、Tech Lead、UI、Art 对本补充自检分别给出限定 APPROVED。证据支持双视口六店静帧、限定鼠标双向循环、20 次连按最终 03、10 次重入默认 01 和 U01/U02 基本冒烟。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "逐帧原子性、故障/乱序/定向重试、真实触摸和安全区、帧时/DrawCall/驻留与目标平台仍为 NOT_TESTED。本评审不宣称这些项通过，也不复活已取消的单元示例 QA Task。若 U03 升级为正式功能或正式资源接入，须按新规则另行编排适用验证。"
+    }
+  ],
+  "next_action": "Producer 核 v0.2 Required 与同版评审后将 Owner 自检送用户审核；用户批准该补充自检后，Master 再按单元示例目标和未测边界决定 Task 最终接受。"
+}

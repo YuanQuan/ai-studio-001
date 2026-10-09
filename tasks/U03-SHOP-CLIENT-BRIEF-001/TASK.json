@@ -1,0 +1,38 @@
+{
+  "id": "U03-SHOP-CLIENT-BRIEF-001",
+  "title": "U03 六店单店切换客户端编码前概要",
+  "type": "design",
+  "owner": "client",
+  "parent": null,
+  "objective": "在正式编码与资源导入前，为当前 UnitSamples 菜单拟定 U03 可执行 Feature Brief：六店同源 Prefab 身份、单店原子切换、快切与错误重试、菜单输入隔离、竖屏安全区、资源 Gate2 接入、性能及 U01/U02 回归；只做设计，不改 Cocos 工程。",
+  "inputs": [
+    "U03-SHOP-SCOPE-001 Product v0.1、U03-SHOP-ART-PLAN-001 Art Gate1 v0.1、U03-SHOP-TECH-DESIGN-001 Tech v0.1、U03-SHOP-UI-SPEC-001 UI v0.1（均待核 USER_APPROVED）",
+    "apps/client/assets/UnitSampleGallery.ts、UnitSamples.scene、U01 四层 Prefab 与镜头控制器，以及并行工作区差异（开工前只读核查）",
+    "agents/client/FEATURE_BRIEF_TEMPLATE.md、project/ASSET_HANDOFF_REGISTRY.md、rules/visual_production_contract.md、rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/STATE_AND_RESOURCE_PLAN.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/U01_U02_IMPACT_AUDIT.md",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/UI_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-BRIEF-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-CLIENT-BRIEF-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "审计 U01 当前菜单/Scene/Prefab/镜头输入及 U02 实际实施状态与并行工作区，定义 U03 增量、菜单显示条件、事件单次触发和 U01/U02 回归边界，不把计划资源称为现存 Creator 对象。",
+    "明确六店唯一正式 ID 与 MT_SHOP_01 映射、ShopDefinition/Prefab 引用方式、presentedIndex/desiredIndex/failedTarget、初始 01、六项循环、连按递推、generation 末次提交、加载失败/重试、返回重入及店体/牌匾/名称/阴影原子一致的可实现状态与资源生命周期。",
+    "注明正式 Gate2 具体切片版本 USER_APPROVED 前不导入；规划源/导出/Creator 主子 UUID 登记、真实视口与牌匾投影、输入命中、安全区、CLI 构建、本地 HTTP Web 与内置浏览器及适用 Editor/平台性能取证，未测项标 NOT_TESTED。",
+    "Client、Tech、UI、QA、Master 对同版编码前概要评审通过，并与 QA TEST_PLAN 组成用户审批的开发开工包；本 Task USER_APPROVED 且正式 Gate2 获批前不正式编码或导入六店资源。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "U03-SHOP-ART-PLAN-001", "U03-SHOP-TECH-DESIGN-001", "U03-SHOP-UI-SPEC-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "本任务可在 Art 正式资源生产前并行写设计，但必须在四上游正式批准登记后才进入 READY/IN_PROGRESS。",
+    "附件商用改编权与字形来源 UNKNOWN 不阻止本纯文本概要；不放行图片、切片、Cocos 编码或 QA 执行。"
+  ]
+}

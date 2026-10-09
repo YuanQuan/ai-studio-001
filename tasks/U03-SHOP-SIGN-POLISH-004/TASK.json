@@ -1,0 +1,46 @@
+{
+  "id": "U03-SHOP-SIGN-POLISH-004",
+  "title": "U03 糖画卡通牌、烧烤统一字效与理发小剪梳修订 v0.4",
+  "type": "art",
+  "owner": "art",
+  "parent": "U03-SHOP-VISUAL-FIDELITY-003",
+  "objective": "按用户退回反馈修订02糖画牌为简洁卡通画法、03现烤两字统一字体字效、04剪梳缩小并还原之前较轻巧造型；保留已选主体明暗及其他三店，提交实际新版母版和切片审核。",
+  "inputs": [
+    "用户最新明确反馈：碳烤的字体不一样，重新绘制这个；理发店的剪子logo太大，弄小点，而且不如之前的版本",
+    "用户追加明确反馈：糖画的牌匾也太写实了，风格不好也要修改",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/LIGHTING_AND_STYLE_CORRECTION.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/mixed_signs_v04/six_shop_mixed_signs_overview.png",
+    "用户已选择B站酷快乐体、描边与立体字、小装饰、92%字号方案"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/PRODUCTION_PLAN_AND_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-SIGN-POLISH-004/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "tasks/U03-SHOP-SIGN-POLISH-004/ARTIFACT_APPROVAL_GATE1.json",
+    "tasks/U03-SHOP-SIGN-POLISH-004/ARTIFACT_APPROVAL_GATE2.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "糖画保留车前小立牌、小糖字与勺浆身份，重绘简洁卡通手绘木牌和图案，不采用写实密木纹、厚侧影、强反光或新雕刻装饰。",
+    "烧烤牌保持现烤内容与牌位；两字同源重绘，字体、字重、尺寸和立体描边协调，不再拼接不同来源现/烤字效。",
+    "理发剪梳居中缩小，先以v0.3图形约80%尺寸为默认值；按之前已选造型处理双环、交叉刃与梳齿，在390视窗可辨且牌框有留白。",
+    "全部body、01/05/06母版与切片继承v0.3，明暗保持用户选中间基准，不添加新经营物或改主体。",
+    "来源与字体许可、版本化制作方案、Art/Tech同批预签落实；不再次请求已经明确的三项制作方法授权。",
+    "保留1024画布、脚点512/900、body-sign同原点；提交真实PSD、12片全量清单、三店对照及六店同尺度/390和720视窗。",
+    "具体v0.4切片仍需用户Gate2批准后正式接入；不把退回v0.3或静态图当作游戏真实运行通过。"
+  ],
+  "dependencies": ["U03-SHOP-VISUAL-FIDELITY-003"],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master根据用户明确退回及追加反馈创建修订Task。对原烤字原像素不得更改的旧制作方法限制由本轮两字统一重绘授权替代。保留旧版本历史，生产范围只涵盖已指出的三店牌面。",
+    "约80%为Art内部首样低风险默认，不冒称用户给过该百分比；实际显示不足时在同范围内调整并如实记录。",
+    "2026-10-09 00:33:42 +08:00 Producer 核首份 Required PRODUCTION_PLAN_AND_ANCHORS.md 已于00:31:43创建、00:33:22更新为用户追加02后的三店范围，真实文书产出支持 READY→IN_PROGRESS。当前 SHA 6EC78613C66311B1D85B04E7A5AE55C9CC8BE6E21DA27B46C634D2C302A67183 仅工作中快照，待 Art/Master 冻结同 SHA 后按用户本轮确切三项反馈映射 Gate1；不声称用户逐字读新文或已批准具体 v0.4 切片。",
+    "2026-10-09 00:35:59 +08:00 Master 已实读确认上述方案同SHA冻结且三店内容在用户本轮明确反馈授权范围，未加主体/其他店/内容/规格。Producer 将独立 Gate1 绑定为 USER_APPROVED，明确不是用户逐字审新文件；Art同SHA首图前预签已实存，Tech同批预签尚待。Gate2为独立DRAFT，不解锁正式Client替换。",
+    "2026-10-09 00:56:07 +08:00 Art v0.4最终包实存，Master已实际查看六店同尺度总览中02简洁卡通牌、03同源暖金双字、04较小轻巧剪梳，并允许送审。Producer独立核CUT_MANIFEST.json SHA-256 F175B9C954EDEA40699EB2F8DEE05AD9BF5032CC7C131E910F94F11AE2AE2D0D 的39/39路径与SHA、六PSD/十二RGBA PNG均1024²、全部body及01/05/06 PSD/sign与v0.3逐SHA一致；Task Required9/9、Art交付索引14/14、六项验收5 PASS/1 NOT_TESTED。Task和独立Gate2进入USER_REVIEW，用户尚未批准；Client REVISION/新版运行NOT_TESTED，不解锁正式接入。"
+  ]
+}

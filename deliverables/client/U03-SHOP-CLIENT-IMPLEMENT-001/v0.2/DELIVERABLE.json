@@ -1,0 +1,60 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "对用户已批准的 U03 Client v0.1/R3 单元示例补做 Owner 自检。复核 107 个构建文件、17 个原始 IAB 文件和 11 份复用原始材料的哈希；记录六店双视口静帧、双向切换、20 次连按终态 03、10 次重入默认 01 及 U01/U02 有限回归，并列明性能、触控、故障与平台未测范围。不修改获批代码/资产或既有审批状态。",
+  "artifacts": [
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/OWNER_SELF_CHECK.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/evidence/OWNER_EVIDENCE_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/evidence/",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/evidence/R3_BUILD_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/evidence/R3_IAB_EVIDENCE_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/CLIENT_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "已批准 R3 构建与资源身份可追溯",
+      "result": "PASS",
+      "evidence": "R3 builder task 1791356044228 成功；本轮重核 107/107 输出、构建日志及 17/17 原 IAB 文件 SHA 无不匹配。Gate2 v0.4 manifest SHA C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191；12 PNG/六 Prefab 身份见 v0.1 RESOURCE_IDENTITY_AND_UUID.md。"
+    },
+    {
+      "criterion": "390×844 和 720×1280 六店单显、牌匾与身份匹配",
+      "result": "PASS",
+      "evidence": "v0.1/evidence/r3_iab 的两视口六店 12 张 JPEG 静帧逐店可见一店、店体/牌匾/身份对应；仅为候选视口静态画面，不证明逐帧原子性。"
+    },
+    {
+      "criterion": "双向循环、20 次连按最终目标及 10 次重入默认店",
+      "result": "PASS",
+      "evidence": "R3 正向 01→06→01 有既有 IAB 操作记录；v0.2/evidence 反向六步九图中的六图显示 01→06→05→04→03→02→01，20 次下一店最终 03 截图，重入第 1/10 次均 01。结论仅覆盖观察路径和终态，不覆盖每帧、旧回调及耗时。"
+    },
+    {
+      "criterion": "U01/U02 基本行为有限回归",
+      "result": "PASS",
+      "evidence": "R3 390_u01.jpg/390_u02.jpg 记录画面，Master 观察 U01 放大/重置、U02 walk/帽子穿卸响应；完整拖动边界、全动作/槽位和触控输入隔离未测。"
+    },
+    {
+      "criterion": "完整逐帧原子性、加载乱序与故障定向重试",
+      "result": "NOT_TESTED",
+      "evidence": "没有连续录屏或受控 MISSING/DECODE/STRUCTURE/TIMEOUT、延迟/乱序注入；静帧和终态不能证明中间帧或异常路径。"
+    },
+    {
+      "criterion": "运行性能、真实触摸、安全区和目标平台",
+      "result": "NOT_TESTED",
+      "evidence": "没有可靠的同钟冷/热加载、逐帧帧时、FPS/DrawCall/GPU驻留、10 次实例/监听计数、真机触摸/兼容鼠标去重及目标平台记录；静态 48MiB RGBA8 页面等效值不代表 GPU 驻留。"
+    },
+    {
+      "criterion": "Owner 自检的原始证据、边界和版本关系",
+      "result": "PASS",
+      "evidence": "OWNER_SELF_CHECK.md 逐项区分限定 PASS 与 NOT_TESTED；v0.2/evidence 中 9 张 JPEG、控制台与 canvas JSON 的 11 份副本逐字节匹配来源，哈希/尺寸见 OWNER_EVIDENCE_MANIFEST.json。v0.1/R3 的 USER_APPROVED 保持原状，不采用已取消示例 QA 任务的结论。"
+    }
+  ],
+  "assumptions": [
+    "本 v0.2 仅补示例 Owner 自检证据，不改 v0.1/R3 客户端实现或 12 张正式资源。",
+    "双向、快切与重入的 PASS 只覆盖已观察的鼠标路径及静帧终态。"
+  ],
+  "risks": [
+    "逐帧原子性、故障注入、真实触摸和性能仍无完整证据，不从限定自检推断总体质量通过。",
+    "补充静帧没有连续输入录屏；console 日志混合会话，已按 R3 服务端口区分采样窗口。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

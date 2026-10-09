@@ -1,0 +1,85 @@
+{
+  "batch": "U03-SHOP-SIGN-REVISION-V02",
+  "revision": "r2",
+  "samples": {
+    "shop_01": {
+      "psd": "psd\\shop_01_milk_tea_r2_sign_revision_v02.psd",
+      "body": "exports\\sign_revision_v02_r2\\tex_u03_shop_01_body_sign_revision_v02.png",
+      "sign": "exports\\sign_revision_v02_r2\\tex_u03_shop_01_sign_sign_revision_v02.png",
+      "recomposition": "preview\\sign_revision_v02_r2\\shop_01_recomposed.png",
+      "body_bbox": [
+        142,
+        280,
+        882,
+        900
+      ],
+      "sign_bbox": [
+        821,
+        449,
+        943,
+        651
+      ],
+      "psd_sha256": "7362E9B891A0D37022A56A8EEE53EBBD16722A982BE313501C63EA644E293170",
+      "body_sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+      "sign_sha256": "890BCF6FA6506A65DDB3EDC2A66B4CD9107684A05388C55050005DA12E61605D",
+      "recomposition_sha256": "8C24719BE4D461024A5139973BD418B4093803E3D48F17A539BAD35515248466",
+      "layers_bottom_to_top": [
+        "reference_source",
+        "ground_contact",
+        "body_facade",
+        "body_roof",
+        "interior",
+        "light",
+        "front",
+        "body_repair_01",
+        "sign_hardware_new",
+        "sign_board_new",
+        "sign_logo_new"
+      ],
+      "repair": {
+        "repair_roi_xyxy": [
+          346,
+          470,
+          678,
+          591
+        ],
+        "repaired_pixels": 40172,
+        "source": "source/shop_01_gap_imagegen_raw.png",
+        "outside_roi_changed": false
+      }
+    },
+    "shop_02": {
+      "psd": "psd\\shop_02_sugar_art_r2_sign_revision_v02.psd",
+      "body": "exports\\sign_revision_v02_r2\\tex_u03_shop_02_body_sign_revision_v02.png",
+      "sign": "exports\\sign_revision_v02_r2\\tex_u03_shop_02_sign_sign_revision_v02.png",
+      "recomposition": "preview\\sign_revision_v02_r2\\shop_02_recomposed.png",
+      "body_bbox": [
+        189,
+        149,
+        851,
+        900
+      ],
+      "sign_bbox": [
+        685,
+        627,
+        820,
+        890
+      ],
+      "psd_sha256": "3B57ADC63C2D641FB8CFDFA35C5A1E4887146F623F5EBD134DE29A6022A8AA61",
+      "body_sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+      "sign_sha256": "6DEC87F0EEC638F6F5915A7D4D5C8C51995B3FC320A9F253194352410EA246E6",
+      "recomposition_sha256": "6A182AE5382003E11B51A662EA4B37E8BE3DB464C2842BBD798F4597FD935C9C",
+      "layers_bottom_to_top": [
+        "reference_source",
+        "umbrella",
+        "operating_objects",
+        "light",
+        "ground_contact",
+        "sign_board_new",
+        "sign_spoon_syrup_new",
+        "sign_glyph_reused_sugar"
+      ]
+    }
+  },
+  "font_note": "02 糖轮廓来自旧正式 PSD sign_glyph，未从生成式方向图取文字；01 图案来自授权方向图并分层。"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-CLIENT-BRIEF-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.1 三份正文覆盖 Client Feature Brief 模板的范围、复用、结构、协议平台、性能、日志、验证和 Tech 评审点；文档只锁实施方案，未改 Cocos 工程或导入 U03 资源。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "实施时必须重核 Gallery/Scene/U02 并行差异：本次只读快照只有 U01；当前 Gallery 菜单全局 MOUSE_DOWN/UP 与按钮 TOUCH_END 并存，U03/U02 多入口需同一次物理输入仅激活一次，同时隔离 U01 全局镜头监听。此项是待实施风险，不是当前方案退回项。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六店使用 MT_SHOP_01、SHOP_02–SHOP_06 唯一顶层身份；ShopDefinition 显式绑定 Prefab，presentedIndex/desiredIndex/failedTarget 与 generation 支持连按递推、末次提交、失败定向重试、返回重入及店体/牌匾/名称/阴影原子一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按 QA 审查补齐 requestShop 共用边界：获批测试构建可在强引用或异步实现下确定性控制 02/03 完成顺序与 MISSING/DECODE/STRUCTURE/TIMEOUT 失败，不更改正式资产字节或 UUID；详细日志以同一单调时钟覆盖输入、请求、资源就绪、结构校验、原子提交和首个完整可操作帧。该测试能力当前仅是设计，未实施或验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次附件商用改编已获用户 USER_DECLARATION；工具合同、外来素材与正式牌匾字形来源仍待 Art/Tech 首图前同批预签。Gate2 对具体切片和同尺度重组获 USER_APPROVED 前不正式导入；实际主/子 UUID、两候选视口牌匾投影、Creator 导入/CLI/HTTP/内置浏览器及性能均留待真实资源与获批实现 Task，当前 NOT_TESTED。"
+    }
+  ],
+  "next_action": "请 QA 复审本版新增的确定性加载/故障适配和同一时钟证据，再由 Tech、UI、Master 对同一 v0.1 评审；与同轮 QA TEST_PLAN 组成用户审批开工包。两份文档及 Art Gate2 具体版本分别获用户批准、Master 解锁实施后才正式编码或导入六店资源。"
+}

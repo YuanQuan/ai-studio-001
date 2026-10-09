@@ -1,0 +1,16 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "message": "效果优先与有据重绘条款可执行：Art负责判断局部修订是否能达到已确认效果，并记录视觉差距、局部方法不足、重绘范围、来源及新旧版本关系；Client职责仍限于获批资源的接入、身份/UUID核验及实际运行画面验证。",
+      "severity": "INFO"
+    },
+    {
+      "message": "未发现新增审批门禁。制作方案 Gate1 用户批准、首图前 Art/Tech 同批预签、具体切片 Gate2 用户批准仍分别保留；Gate2 后的真实运行对照也继续要求。Art自切图的既有例外未扩大。静态同尺度对照用于评审，不能代替接入后运行证据。",
+      "severity": "INFO"
+    }
+  ],
+  "next_action": "本Review仅确认客户端职责和流程兼容性，不构成v0.3资源接入授权。待Art完成获批范围内的v0.3 PSD、切片与同背景同尺度证据，并取得具体切片Gate2用户批准后，Client再按任务核验资源身份、Creator构建和实际运行画面对照。"
+}

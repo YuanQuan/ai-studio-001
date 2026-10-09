@@ -1,0 +1,5540 @@
+{
+  "schemaVersion": 2,
+  "batch": "U02-VFX-A",
+  "originalFacing": "right",
+  "leftFacing": "mirror_with_body",
+  "canvas": {
+    "width": 512,
+    "height": 512
+  },
+  "foot": {
+    "x": 256,
+    "y": 440
+  },
+  "footMeaning": "固定逻辑地面锚点；visualFoot仅为动作位移说明，不能替代foot",
+  "trimPolicy": "none; full 512 square",
+  "frameCount": 40,
+  "method": "与原Shader一致的网格顶点变换、三角重心插值；localAffine为每挂点局部Jacobian，Client尚未运行核验",
+  "frames": [
+    {
+      "frameId": "UG_GHOST_01_WALK_00",
+      "action": "walk",
+      "index": 0,
+      "file": "frames/ug_ghost_01_walk_00.png",
+      "sha256": "272a3ad9ab75cccdff3a666d1702c00f2bb874065771070083a17830330ba2df",
+      "pixelSha256": "cbf4accca6cd77689964f6d70f9db704f64af7a628caefce2b7fc41911bb6a30",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 69,
+        "width": 323,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145248,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.467769,
+        "y": 439.043607
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 142.349856,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 175.349856,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 288.361136,
+          "y": 316.578747,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998848,
+            0.047976,
+            -0.047976,
+            0.998848
+          ],
+          "rotationDeg": 2.749889,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.219096,
+          "y": 309.684532,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998882,
+            0.047265,
+            -0.047265,
+            0.998882
+          ],
+          "rotationDeg": 2.709083,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_01",
+      "action": "walk",
+      "index": 1,
+      "file": "frames/ug_ghost_01_walk_01.png",
+      "sha256": "2e4d06f437a88885e7e07ad5b330a9325f4ac225a23184285cdb01d8a02031b5",
+      "pixelSha256": "64afed2170bf746d450ea1c05c32aeb53fe384b5a9c8d395b889c1011e2b6f42",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 93,
+        "y": 70,
+        "width": 321,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 144901,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.970802,
+        "y": 439.806409
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 143.709394,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 176.709394,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.278278,
+          "y": 318.365852,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996797,
+            0.079978,
+            -0.079978,
+            0.996797
+          ],
+          "rotationDeg": 4.58731,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.676772,
+          "y": 309.734813,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999969,
+            0.007912,
+            -0.007912,
+            0.999969
+          ],
+          "rotationDeg": 0.453338,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_02",
+      "action": "walk",
+      "index": 2,
+      "file": "frames/ug_ghost_01_walk_02.png",
+      "sha256": "de317025a82828f1dbd7a9e4bb7a3c50337d89b0a4f2db172eed0515473e5df6",
+      "pixelSha256": "6b2a6d87c648d499464351437254516efea197983d475be2941d54004c90de35",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 93,
+        "y": 71,
+        "width": 321,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146043,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.484988,
+        "y": 440.683017
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 144.797968,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 177.797968,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.707691,
+          "y": 318.871594,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996677,
+            0.081461,
+            -0.081461,
+            0.996677
+          ],
+          "rotationDeg": 4.672535,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.256334,
+          "y": 309.873086,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999406,
+            -0.034473,
+            0.034473,
+            0.999406
+          ],
+          "rotationDeg": -1.975567,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_03",
+      "action": "walk",
+      "index": 3,
+      "file": "frames/ug_ghost_01_walk_03.png",
+      "sha256": "3db740138cdf5d663dc90f549e23ff381d599132f937549b5a2453c334f77880",
+      "pixelSha256": "4322f1ce2e14e2071acdd6cfc73f4655649d99dda24748dfa2bf13c27c8d6928",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 92,
+        "y": 72,
+        "width": 322,
+        "height": 359
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146068,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.19589,
+        "y": 441.300183
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 145.199779,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 178.199779,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.485429,
+          "y": 317.903525,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998654,
+            0.051866,
+            -0.051866,
+            0.998654
+          ],
+          "rotationDeg": 2.97301,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.118598,
+          "y": 310.051084,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997972,
+            -0.063659,
+            0.063659,
+            0.997972
+          ],
+          "rotationDeg": -3.649872,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_04",
+      "action": "walk",
+      "index": 4,
+      "file": "frames/ug_ghost_01_walk_04.png",
+      "sha256": "82340f3fb1912be619df35df5eab22a12e0d0bf2da966de96e2bb59fccc3eb43",
+      "pixelSha256": "900c41195a82e015aad78096165d871ff7e0bc800b8c54609cb64a38897fbe51",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 71,
+        "width": 323,
+        "height": 363
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146622,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.213936,
+        "y": 441.381757
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 144.76135,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 177.76135,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 288.694951,
+          "y": 315.819464,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999997,
+            0.002407,
+            -0.002407,
+            0.999997
+          ],
+          "rotationDeg": 0.137897,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.317936,
+          "y": 310.212249,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997648,
+            -0.068539,
+            0.068539,
+            0.997648
+          ],
+          "rotationDeg": -3.930051,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_05",
+      "action": "walk",
+      "index": 5,
+      "file": "frames/ug_ghost_01_walk_05.png",
+      "sha256": "6a306260552bc8e9faafb905d2c5d5f7e45fc5f5a2b718b579c20c4a99edac4f",
+      "pixelSha256": "3403bca118f43437a14b34d0c0c0b7fbf4515b7c26ef7401cd82eeb6e7380f2d",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 88,
+        "y": 70,
+        "width": 326,
+        "height": 364
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146255,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.532231,
+        "y": 440.910017
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 143.650144,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 176.650144,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 287.636561,
+          "y": 313.407435,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998848,
+            -0.047976,
+            0.047976,
+            0.998848
+          ],
+          "rotationDeg": -2.749889,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.778669,
+          "y": 310.297587,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998882,
+            -0.047265,
+            0.047265,
+            0.998882
+          ],
+          "rotationDeg": -2.709083,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_06",
+      "action": "walk",
+      "index": 6,
+      "file": "frames/ug_ghost_01_walk_06.png",
+      "sha256": "0bfe1c3c89a1165a3c159c6c997af8c19808b4bc819b8909698278ce4c51155f",
+      "pixelSha256": "c8d874dec4e427fca1924a30de0c1030c2655fd4ac1b2d10f95e26be3af2a216",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 69,
+        "width": 328,
+        "height": 361
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145978,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.029198,
+        "y": 440.11387
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 142.290606,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 175.290606,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.715316,
+          "y": 311.595708,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996797,
+            -0.079978,
+            0.079978,
+            0.996797
+          ],
+          "rotationDeg": -4.58731,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.323166,
+          "y": 310.264686,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999969,
+            -0.007912,
+            0.007912,
+            0.999969
+          ],
+          "rotationDeg": -0.453338,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_07",
+      "action": "walk",
+      "index": 7,
+      "file": "frames/ug_ghost_01_walk_07.png",
+      "sha256": "085be6756098a4dc4ac3b4bb1797d254736f176e31c170480b569fc31e71bb55",
+      "pixelSha256": "caf05c53631aad565254955cc66f96ffe5bca5f5166c79551129248f20220b89",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 68,
+        "width": 328,
+        "height": 359
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146862,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.515012,
+        "y": 439.314089
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 141.202032,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 174.202032,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.285662,
+          "y": 311.088525,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996677,
+            -0.081461,
+            0.081461,
+            0.996677
+          ],
+          "rotationDeg": -4.672535,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.742478,
+          "y": 310.117404,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999406,
+            0.034473,
+            -0.034473,
+            0.999406
+          ],
+          "rotationDeg": 1.975567,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_08",
+      "action": "walk",
+      "index": 8,
+      "file": "frames/ug_ghost_01_walk_08.png",
+      "sha256": "23702af8add5c34dcd820c3053435cd7ae664ac5224084306bade9435be33747",
+      "pixelSha256": "e510b28957d142128697fd697653a06736bf2382d62a3b06014367cf21afc260",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 67,
+        "width": 328,
+        "height": 358
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146692,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.80411,
+        "y": 438.777749
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 140.800221,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 173.800221,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.511879,
+          "y": 312.080324,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998654,
+            -0.051866,
+            0.051866,
+            0.998654
+          ],
+          "rotationDeg": -2.97301,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.877346,
+          "y": 309.916463,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997972,
+            0.063659,
+            -0.063659,
+            0.997972
+          ],
+          "rotationDeg": 3.649872,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_WALK_09",
+      "action": "walk",
+      "index": 9,
+      "file": "frames/ug_ghost_01_walk_09.png",
+      "sha256": "624557c5d08be999c723f267d1bbb52bc11b8dba72699d61c4a25db789607945",
+      "pixelSha256": "86bda20f553e37dd93c9c9a7f261fb306d34c0c197180665568df4083edca1b0",
+      "durationMs": 133.33333333333334,
+      "durationFractionMs": [
+        400,
+        3
+      ],
+      "visibleRect": {
+        "x": 88,
+        "y": 68,
+        "width": 326,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146123,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.786064,
+        "y": 438.669302
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 141.23865,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 174.23865,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 287.305044,
+          "y": 314.180501,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999997,
+            -0.002407,
+            0.002407,
+            0.999997
+          ],
+          "rotationDeg": -0.137897,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.677361,
+          "y": 309.750127,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997648,
+            0.068539,
+            -0.068539,
+            0.997648
+          ],
+          "rotationDeg": 3.930051,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_00",
+      "action": "run",
+      "index": 0,
+      "file": "frames/ug_ghost_01_run_00.png",
+      "sha256": "272a3ad9ab75cccdff3a666d1702c00f2bb874065771070083a17830330ba2df",
+      "pixelSha256": "cbf4accca6cd77689964f6d70f9db704f64af7a628caefce2b7fc41911bb6a30",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 69,
+        "width": 323,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145248,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.467769,
+        "y": 439.043607
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 142.349856,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 175.349856,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 288.361136,
+          "y": 316.578747,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998848,
+            0.047976,
+            -0.047976,
+            0.998848
+          ],
+          "rotationDeg": 2.749889,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.219096,
+          "y": 309.684532,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998882,
+            0.047265,
+            -0.047265,
+            0.998882
+          ],
+          "rotationDeg": 2.709083,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_01",
+      "action": "run",
+      "index": 1,
+      "file": "frames/ug_ghost_01_run_01.png",
+      "sha256": "2e4d06f437a88885e7e07ad5b330a9325f4ac225a23184285cdb01d8a02031b5",
+      "pixelSha256": "64afed2170bf746d450ea1c05c32aeb53fe384b5a9c8d395b889c1011e2b6f42",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 93,
+        "y": 70,
+        "width": 321,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 144901,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.970802,
+        "y": 439.806409
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 143.709394,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 176.709394,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.278278,
+          "y": 318.365852,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996797,
+            0.079978,
+            -0.079978,
+            0.996797
+          ],
+          "rotationDeg": 4.58731,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.676772,
+          "y": 309.734813,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999969,
+            0.007912,
+            -0.007912,
+            0.999969
+          ],
+          "rotationDeg": 0.453338,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_02",
+      "action": "run",
+      "index": 2,
+      "file": "frames/ug_ghost_01_run_02.png",
+      "sha256": "de317025a82828f1dbd7a9e4bb7a3c50337d89b0a4f2db172eed0515473e5df6",
+      "pixelSha256": "6b2a6d87c648d499464351437254516efea197983d475be2941d54004c90de35",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 93,
+        "y": 71,
+        "width": 321,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146043,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.484988,
+        "y": 440.683017
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 144.797968,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 177.797968,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.707691,
+          "y": 318.871594,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996677,
+            0.081461,
+            -0.081461,
+            0.996677
+          ],
+          "rotationDeg": 4.672535,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.256334,
+          "y": 309.873086,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999406,
+            -0.034473,
+            0.034473,
+            0.999406
+          ],
+          "rotationDeg": -1.975567,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_03",
+      "action": "run",
+      "index": 3,
+      "file": "frames/ug_ghost_01_run_03.png",
+      "sha256": "3db740138cdf5d663dc90f549e23ff381d599132f937549b5a2453c334f77880",
+      "pixelSha256": "4322f1ce2e14e2071acdd6cfc73f4655649d99dda24748dfa2bf13c27c8d6928",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 92,
+        "y": 72,
+        "width": 322,
+        "height": 359
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146068,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.19589,
+        "y": 441.300183
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 145.199779,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 178.199779,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 289.485429,
+          "y": 317.903525,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998654,
+            0.051866,
+            -0.051866,
+            0.998654
+          ],
+          "rotationDeg": 2.97301,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.118598,
+          "y": 310.051084,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997972,
+            -0.063659,
+            0.063659,
+            0.997972
+          ],
+          "rotationDeg": -3.649872,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_04",
+      "action": "run",
+      "index": 4,
+      "file": "frames/ug_ghost_01_run_04.png",
+      "sha256": "82340f3fb1912be619df35df5eab22a12e0d0bf2da966de96e2bb59fccc3eb43",
+      "pixelSha256": "900c41195a82e015aad78096165d871ff7e0bc800b8c54609cb64a38897fbe51",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 71,
+        "width": 323,
+        "height": 363
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146622,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.213936,
+        "y": 441.381757
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 144.76135,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 177.76135,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 288.694951,
+          "y": 315.819464,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999997,
+            0.002407,
+            -0.002407,
+            0.999997
+          ],
+          "rotationDeg": 0.137897,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.317936,
+          "y": 310.212249,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997648,
+            -0.068539,
+            0.068539,
+            0.997648
+          ],
+          "rotationDeg": -3.930051,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_05",
+      "action": "run",
+      "index": 5,
+      "file": "frames/ug_ghost_01_run_05.png",
+      "sha256": "6a306260552bc8e9faafb905d2c5d5f7e45fc5f5a2b718b579c20c4a99edac4f",
+      "pixelSha256": "3403bca118f43437a14b34d0c0c0b7fbf4515b7c26ef7401cd82eeb6e7380f2d",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 88,
+        "y": 70,
+        "width": 326,
+        "height": 364
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146255,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 255.532231,
+        "y": 440.910017
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 143.650144,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 176.650144,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 287.636561,
+          "y": 313.407435,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998848,
+            -0.047976,
+            0.047976,
+            0.998848
+          ],
+          "rotationDeg": -2.749889,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 382.778669,
+          "y": 310.297587,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998882,
+            -0.047265,
+            0.047265,
+            0.998882
+          ],
+          "rotationDeg": -2.709083,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_06",
+      "action": "run",
+      "index": 6,
+      "file": "frames/ug_ghost_01_run_06.png",
+      "sha256": "0bfe1c3c89a1165a3c159c6c997af8c19808b4bc819b8909698278ce4c51155f",
+      "pixelSha256": "c8d874dec4e427fca1924a30de0c1030c2655fd4ac1b2d10f95e26be3af2a216",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 69,
+        "width": 328,
+        "height": 361
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145978,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.029198,
+        "y": 440.11387
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 142.290606,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 175.290606,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.715316,
+          "y": 311.595708,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996797,
+            -0.079978,
+            0.079978,
+            0.996797
+          ],
+          "rotationDeg": -4.58731,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.323166,
+          "y": 310.264686,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999969,
+            -0.007912,
+            0.007912,
+            0.999969
+          ],
+          "rotationDeg": -0.453338,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_07",
+      "action": "run",
+      "index": 7,
+      "file": "frames/ug_ghost_01_run_07.png",
+      "sha256": "085be6756098a4dc4ac3b4bb1797d254736f176e31c170480b569fc31e71bb55",
+      "pixelSha256": "caf05c53631aad565254955cc66f96ffe5bca5f5166c79551129248f20220b89",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 68,
+        "width": 328,
+        "height": 359
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146862,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.515012,
+        "y": 439.314089
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 141.202032,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 174.202032,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.285662,
+          "y": 311.088525,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996677,
+            -0.081461,
+            0.081461,
+            0.996677
+          ],
+          "rotationDeg": -4.672535,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.742478,
+          "y": 310.117404,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999406,
+            0.034473,
+            -0.034473,
+            0.999406
+          ],
+          "rotationDeg": 1.975567,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_08",
+      "action": "run",
+      "index": 8,
+      "file": "frames/ug_ghost_01_run_08.png",
+      "sha256": "23702af8add5c34dcd820c3053435cd7ae664ac5224084306bade9435be33747",
+      "pixelSha256": "e510b28957d142128697fd697653a06736bf2382d62a3b06014367cf21afc260",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 67,
+        "width": 328,
+        "height": 358
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146692,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.80411,
+        "y": 438.777749
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 140.800221,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 173.800221,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 286.511879,
+          "y": 312.080324,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.998654,
+            -0.051866,
+            0.051866,
+            0.998654
+          ],
+          "rotationDeg": -2.97301,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.877346,
+          "y": 309.916463,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997972,
+            0.063659,
+            -0.063659,
+            0.997972
+          ],
+          "rotationDeg": 3.649872,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_RUN_09",
+      "action": "run",
+      "index": 9,
+      "file": "frames/ug_ghost_01_run_09.png",
+      "sha256": "624557c5d08be999c723f267d1bbb52bc11b8dba72699d61c4a25db789607945",
+      "pixelSha256": "86bda20f553e37dd93c9c9a7f261fb306d34c0c197180665568df4083edca1b0",
+      "durationMs": 66.66666666666667,
+      "durationFractionMs": [
+        200,
+        3
+      ],
+      "visibleRect": {
+        "x": 88,
+        "y": 68,
+        "width": 326,
+        "height": 355
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "walk_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_body_master.psd",
+        "sha256": "b0c27861b0b62f8d85a927185b84c34e95005e0fd22224c9f7ed33e3c826de50",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 146123,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.786064,
+        "y": 438.669302
+      },
+      "mounts": {
+        "head": {
+          "x": 298,
+          "y": 141.23865,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 298,
+            "y": 143
+          }
+        },
+        "face": {
+          "x": 357,
+          "y": 174.23865,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 357,
+            "y": 176
+          }
+        },
+        "wristNear": {
+          "x": 287.305044,
+          "y": 314.180501,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999997,
+            -0.002407,
+            0.002407,
+            0.999997
+          ],
+          "rotationDeg": -0.137897,
+          "sourcePoint": {
+            "x": 288,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 383.677361,
+          "y": 309.750127,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.997648,
+            0.068539,
+            -0.068539,
+            0.997648
+          ],
+          "rotationDeg": 3.930051,
+          "sourcePoint": {
+            "x": 383,
+            "y": 310
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_00",
+      "action": "happy",
+      "index": 0,
+      "file": "frames/ug_ghost_01_happy_00.png",
+      "sha256": "1a2488c43988a860b70c3ae97bc00d0b04afcb9439e72697c0e4a3512787c1a6",
+      "pixelSha256": "f9cc34015304cdbbe94f375c1cbdceb8dc2641ee393af5fbbb5ea2d551ebe4d3",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 92,
+        "y": 77,
+        "width": 323,
+        "height": 363
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 151455,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 440
+      },
+      "mounts": {
+        "head": {
+          "x": 272,
+          "y": 148,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 318,
+          "y": 183,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 371,
+          "y": 269,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 256,
+          "y": 302,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_01",
+      "action": "happy",
+      "index": 1,
+      "file": "frames/ug_ghost_01_happy_01.png",
+      "sha256": "46b38f96e73c7d1cfaf8684a30d0eea807058743dc212131103fb4eb3777a3d8",
+      "pixelSha256": "00ba4f295a23e45bd81a798bba3386e7c6dbbbe8c372f7fb774d80bac440d396",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 84,
+        "y": 112,
+        "width": 339,
+        "height": 334
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145288,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.332856,
+        "y": 445.157346
+      },
+      "mounts": {
+        "head": {
+          "x": 272.748,
+          "y": 177.57,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.04675,
+            0,
+            0,
+            0.915
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 320.8985,
+          "y": 209.595,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.04675,
+            0,
+            0,
+            0.915
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 376.291093,
+          "y": 287.167758,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.04273,
+            -0.032051,
+            -0.006976,
+            0.94181
+          ],
+          "rotationDeg": -1.760586,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.95087,
+          "y": 317.03326,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            1.046526,
+            -0.004592,
+            0.012485,
+            0.936123
+          ],
+          "rotationDeg": -0.251423,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_02",
+      "action": "happy",
+      "index": 2,
+      "file": "frames/ug_ghost_01_happy_02.png",
+      "sha256": "0236af6e5aa6519b066e7171aeb9e8a07ec8068001df00d5f04eb0d3cb26b0f8",
+      "pixelSha256": "93dd3f320d1e7d6aa4f5142655b730bb097cede901812504d1f79d96845991e1",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 100,
+        "y": 48,
+        "width": 310,
+        "height": 392
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 150671,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 257.405352,
+        "y": 437.423067
+      },
+      "mounts": {
+        "head": {
+          "x": 271.428,
+          "y": 124.27,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.96425,
+            0,
+            0,
+            1.065
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 315.7835,
+          "y": 161.545,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.96425,
+            0,
+            0,
+            1.065
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 366.538702,
+          "y": 247.15893,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.947041,
+            -0.17163,
+            -0.02966,
+            1.207682
+          ],
+          "rotationDeg": -10.272097,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.748432,
+          "y": 280.480191,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.963798,
+            -0.022572,
+            0.050462,
+            1.173616
+          ],
+          "rotationDeg": -1.341604,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_03",
+      "action": "happy",
+      "index": 3,
+      "file": "frames/ug_ghost_01_happy_03.png",
+      "sha256": "fd27581faa52a120754029c2a7c78bfb428882842f38277c1a9e7425750576cf",
+      "pixelSha256": "aa27f0f7a3a8ee2b2d44d49bce0722fdb57f07b0bbb9b437390c0114c1e71276",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 100,
+        "y": 25,
+        "width": 311,
+        "height": 391
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 150478,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 258.312784,
+        "y": 412.272539
+      },
+      "mounts": {
+        "head": {
+          "x": 271.516,
+          "y": 100.69,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.96975,
+            0,
+            0,
+            1.055
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 316.1245,
+          "y": 137.615,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.96975,
+            0,
+            0,
+            1.055
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 366.958292,
+          "y": 218.63709,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.941128,
+            -0.279073,
+            -0.049076,
+            1.285833
+          ],
+          "rotationDeg": -16.516676,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.545503,
+          "y": 250.437988,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.968967,
+            -0.035097,
+            0.079064,
+            1.224243
+          ],
+          "rotationDeg": -2.07442,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_04",
+      "action": "happy",
+      "index": 4,
+      "file": "frames/ug_ghost_01_happy_04.png",
+      "sha256": "1238b0a1cd4db9a8b138cdd3d035462e8668e4676178c019ed47912ca41900cb",
+      "pixelSha256": "da6fa1ef1907220deff864f416b9e74aa813f604638a111e6f6b0ec651c459cd",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 97,
+        "y": 30,
+        "width": 318,
+        "height": 376
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 148252,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 258.628058,
+        "y": 402.515536
+      },
+      "mounts": {
+        "head": {
+          "x": 271.868,
+          "y": 102.37,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.99175,
+            0,
+            0,
+            1.015
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 317.4885,
+          "y": 137.895,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.99175,
+            0,
+            0,
+            1.015
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 369.415883,
+          "y": 214.801131,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.959132,
+            -0.298588,
+            -0.055851,
+            1.261617
+          ],
+          "rotationDeg": -17.291943,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.474303,
+          "y": 245.062185,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.990704,
+            -0.037264,
+            0.088341,
+            1.193539
+          ],
+          "rotationDeg": -2.154087,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_05",
+      "action": "happy",
+      "index": 5,
+      "file": "frames/ug_ghost_01_happy_05.png",
+      "sha256": "0a4fd71f162b09a5d3f2d60e985539ac2567dc47b59d32b60cadd16eaee7784c",
+      "pixelSha256": "b858ed055ae4e5847d313ea6db6c7dcd472a8086db29847277b166a7a2c2225b",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 95,
+        "y": 40,
+        "width": 321,
+        "height": 370
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 149346,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 258.490925,
+        "y": 406.487295
+      },
+      "mounts": {
+        "head": {
+          "x": 272,
+          "y": 111,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 318,
+          "y": 146,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 370.395319,
+          "y": 222.386894,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.969137,
+            -0.276378,
+            -0.052888,
+            1.228472
+          ],
+          "rotationDeg": -15.917077,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.506784,
+          "y": 252.398237,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.999105,
+            -0.034642,
+            0.084596,
+            1.166684
+          ],
+          "rotationDeg": -1.985797,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_06",
+      "action": "happy",
+      "index": 6,
+      "file": "frames/ug_ghost_01_happy_06.png",
+      "sha256": "31728366f28c82873c987f35ad438826b07d97836d066eaf5ec028508dc8e5fd",
+      "pixelSha256": "fdd6ce46b94f2ef9eab9da59e147846830cdf4df4903cda0441b51b86f6cb3e9",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 97,
+        "y": 48,
+        "width": 316,
+        "height": 380
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 149531,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 257.507367,
+        "y": 425.977046
+      },
+      "mounts": {
+        "head": {
+          "x": 271.692,
+          "y": 121.53,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.98075,
+            0,
+            0,
+            1.035
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 316.8065,
+          "y": 157.755,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.98075,
+            0,
+            0,
+            1.035
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 368.411516,
+          "y": 240.639356,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.962274,
+            -0.17594,
+            -0.031828,
+            1.181202
+          ],
+          "rotationDeg": -10.361371,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.727455,
+          "y": 272.921494,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.98028,
+            -0.023027,
+            0.053927,
+            1.145979
+          ],
+          "rotationDeg": -1.345658,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_07",
+      "action": "happy",
+      "index": 7,
+      "file": "frames/ug_ghost_01_happy_07.png",
+      "sha256": "7a81182bb8a0bbfc2accd51cc449b58dd1d2ea023ec33ab0a776219bd3a209de",
+      "pixelSha256": "3c39ef2cc4d19f4966ca22dc20bf03a26e5d07bafb20df41ad685a6140d1d56d",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 86,
+        "y": 105,
+        "width": 336,
+        "height": 340
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 145649,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.412791,
+        "y": 444.017529
+      },
+      "mounts": {
+        "head": {
+          "x": 272.616,
+          "y": 171.94,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.0385,
+            0,
+            0,
+            0.93
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 320.387,
+          "y": 204.49,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.0385,
+            0,
+            0,
+            0.93
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 375.322084,
+          "y": 283.050286,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.03351,
+            -0.040731,
+            -0.008656,
+            0.964056
+          ],
+          "rotationDeg": -2.256901,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.938035,
+          "y": 313.320396,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            1.038237,
+            -0.005796,
+            0.015444,
+            0.956777
+          ],
+          "rotationDeg": -0.319866,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_08",
+      "action": "happy",
+      "index": 8,
+      "file": "frames/ug_ghost_01_happy_08.png",
+      "sha256": "dc1af104c134ea3113f71533c79f99e57aec8dfbabb4311734093b74abe2eccc",
+      "pixelSha256": "0011eba4b018566a7d67a660804e2a1c95480e76dd974654309a485d070df757",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 90,
+        "y": 84,
+        "width": 327,
+        "height": 358
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 147545,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.107046,
+        "y": 441.245724
+      },
+      "mounts": {
+        "head": {
+          "x": 272.1584,
+          "y": 154.356,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.0099,
+            0,
+            0,
+            0.982
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 318.6138,
+          "y": 188.726,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.0099,
+            0,
+            0,
+            0.982
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 372.110982,
+          "y": 272.778517,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1.008611,
+            -0.011458,
+            -0.002241,
+            0.991595
+          ],
+          "rotationDeg": -0.650862,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.98494,
+          "y": 305.067626,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            1.009817,
+            -0.001673,
+            0.004041,
+            0.9896
+          ],
+          "rotationDeg": -0.094915,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_HAPPY_09",
+      "action": "happy",
+      "index": 9,
+      "file": "frames/ug_ghost_01_happy_09.png",
+      "sha256": "c2d6c1b75c8203c562906b418dc2b3ff02617deb697a5978ddbd76aac569b6e7",
+      "pixelSha256": "9748cd9d1d4ff94ba5bf97afefb23c92a8a9089d7c795cd8aa95a3409b4207f8",
+      "durationMs": 140,
+      "durationFractionMs": [
+        140,
+        1
+      ],
+      "visibleRect": {
+        "x": 92,
+        "y": 76,
+        "width": 323,
+        "height": 366
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "happy_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_happy_keypose.psd",
+        "sha256": "f39a84de985ad9374f495deee6a0bce1433edda577088b56746307a185af0b79",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 149722,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256.052824,
+        "y": 441.374643
+      },
+      "mounts": {
+        "head": {
+          "x": 271.9472,
+          "y": 147.548,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.9967,
+            0,
+            0,
+            1.006
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 272,
+            "y": 148
+          }
+        },
+        "face": {
+          "x": 317.7954,
+          "y": 182.758,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.9967,
+            0,
+            0,
+            1.006
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 318,
+            "y": 183
+          }
+        },
+        "wristNear": {
+          "x": 370.606905,
+          "y": 269.069402,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996064,
+            -0.005868,
+            -0.001105,
+            1.010915
+          ],
+          "rotationDeg": -0.337535,
+          "sourcePoint": {
+            "x": 371,
+            "y": 269
+          }
+        },
+        "wristFar": {
+          "x": 255.992662,
+          "y": 302.207658,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 252,
+          "localAffine": [
+            0.996657,
+            -0.000861,
+            0.001997,
+            1.009898
+          ],
+          "rotationDeg": -0.049488,
+          "sourcePoint": {
+            "x": 256,
+            "y": 302
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_00",
+      "action": "sad",
+      "index": 0,
+      "file": "frames/ug_ghost_01_sad_00.png",
+      "sha256": "9bf25fe9fcb297db72d9498a5dab6d1d96da49c8bbcae01a9b188621fa4a527f",
+      "pixelSha256": "54db8cc572ba995511755de238dce353e20920db548fc46e313e5493bc72e8e1",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 92,
+        "y": 94,
+        "width": 324,
+        "height": 346
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 142086,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 440
+      },
+      "mounts": {
+        "head": {
+          "x": 278,
+          "y": 163,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 359,
+          "y": 211,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 367,
+          "y": 315,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 309,
+          "y": 343,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "rotationDeg": 0,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_01",
+      "action": "sad",
+      "index": 1,
+      "file": "frames/ug_ghost_01_sad_01.png",
+      "sha256": "fb8772ec42a47184c104f2b41dac9031c87274e4b08b45709e50c2b867ec7ce1",
+      "pixelSha256": "ac21235c5c5baade940bd05f665c59830ff386d00e1347413555956511b95e72",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 100,
+        "width": 330,
+        "height": 342
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 140118,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 440.899704
+      },
+      "mounts": {
+        "head": {
+          "x": 285.192972,
+          "y": 168.415016,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999032,
+            0.043986,
+            -0.043986,
+            0.999032
+          ],
+          "rotationDeg": 2.521014,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 364.003258,
+          "y": 219.931409,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999032,
+            0.043986,
+            -0.043986,
+            0.999032
+          ],
+          "rotationDeg": 2.521014,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 367.452165,
+          "y": 323.828964,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999248,
+            0.03862,
+            -0.043968,
+            0.915639
+          ],
+          "rotationDeg": 2.213329,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 308.680095,
+          "y": 347.69123,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999548,
+            0.024965,
+            -0.017758,
+            0.9288
+          ],
+          "rotationDeg": 1.430757,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_02",
+      "action": "sad",
+      "index": 2,
+      "file": "frames/ug_ghost_01_sad_02.png",
+      "sha256": "1c4aae94b3315bb7877f9a5f275a57ba282c6096a2707c73f47f77b4733d5fd8",
+      "pixelSha256": "0e5b1ecf9190ce6329f928dde02db0924ccdcd11bc326f36fa9b7e2337d1bc82",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 112,
+        "width": 339,
+        "height": 332
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 138585,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 442.474185
+      },
+      "mounts": {
+        "head": {
+          "x": 297.78071,
+          "y": 178.483635,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.992688,
+            0.120705,
+            -0.120705,
+            0.992688
+          ],
+          "rotationDeg": 6.932789,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 372.394635,
+          "y": 235.909781,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.992688,
+            0.120705,
+            -0.120705,
+            0.992688
+          ],
+          "rotationDeg": 6.932789,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 367.95339,
+          "y": 339.175061,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.994317,
+            0.106009,
+            -0.117031,
+            0.76559
+          ],
+          "rotationDeg": 6.085597,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 308.07332,
+          "y": 355.783822,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.996587,
+            0.068538,
+            -0.047419,
+            0.804789
+          ],
+          "rotationDeg": 3.934198,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_03",
+      "action": "sad",
+      "index": 3,
+      "file": "frames/ug_ghost_01_sad_03.png",
+      "sha256": "494e9afa97394d68f26034f244aee3c60aafc8048c4a4e2dbff2d8c58214e0e8",
+      "pixelSha256": "e7ee2c82cfcabdd8e55f1345d1a1a5acab36fa023d66a6469ff06463b19bdb9a",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 123,
+        "width": 346,
+        "height": 322
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 137568,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 443.823741
+      },
+      "mounts": {
+        "head": {
+          "x": 308.532864,
+          "y": 187.712684,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.982566,
+            0.185912,
+            -0.185912,
+            0.982566
+          ],
+          "rotationDeg": 10.714311,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 379.196964,
+          "y": 249.934746,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.982566,
+            0.185912,
+            -0.185912,
+            0.982566
+          ],
+          "rotationDeg": 10.714311,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 368.096468,
+          "y": 352.204817,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.986449,
+            0.163348,
+            -0.175584,
+            0.634778
+          ],
+          "rotationDeg": 9.402407,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 307.513177,
+          "y": 362.599098,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.991861,
+            0.105635,
+            -0.071451,
+            0.699178
+          ],
+          "rotationDeg": 6.079171,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_04",
+      "action": "sad",
+      "index": 4,
+      "file": "frames/ug_ghost_01_sad_04.png",
+      "sha256": "b99daf2ba003ffcc096537bb9e111776ce668fd6835a5c1e3ac744a088dc3da7",
+      "pixelSha256": "3d85911ce828134166ab5edac631c8af3c26df7d09a79ef91ba6832a35e0d435",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 128,
+        "width": 350,
+        "height": 318
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 136734,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 444.498519
+      },
+      "mounts": {
+        "head": {
+          "x": 313.88388,
+          "y": 192.533417,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.975897,
+            0.21823,
+            -0.21823,
+            0.975897
+          ],
+          "rotationDeg": 12.605071,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 382.456551,
+          "y": 257.053094,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.975897,
+            0.21823,
+            -0.21823,
+            0.975897
+          ],
+          "rotationDeg": 12.605071,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 368.071514,
+          "y": 358.671003,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.981265,
+            0.191799,
+            -0.20341,
+            0.568694
+          ],
+          "rotationDeg": 11.059635,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 307.22173,
+          "y": 365.964042,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.988747,
+            0.124053,
+            -0.083002,
+            0.646637
+          ],
+          "rotationDeg": 7.151225,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_05",
+      "action": "sad",
+      "index": 5,
+      "file": "frames/ug_ghost_01_sad_05.png",
+      "sha256": "ec13ed1c1691aead67d4884760c7763d6c814d7b8cb1a01475e3c2708d4a8741",
+      "pixelSha256": "8818b7b72edf1b551f1b8395c1239d37717c20ef9b70a14bb485b25a0043e1d6",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 129,
+        "width": 351,
+        "height": 317
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 136564,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 444.588489
+      },
+      "mounts": {
+        "head": {
+          "x": 314.595729,
+          "y": 193.18652,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.974928,
+            0.222521,
+            -0.222521,
+            0.974928
+          ],
+          "rotationDeg": 12.857173,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 382.883851,
+          "y": 258.007291,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.974928,
+            0.222521,
+            -0.222521,
+            0.974928
+          ],
+          "rotationDeg": 12.857173,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 368.063413,
+          "y": 359.530542,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.980511,
+            0.195579,
+            -0.207046,
+            0.559852
+          ],
+          "rotationDeg": 11.280528,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 307.182372,
+          "y": 366.410533,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.988295,
+            0.126501,
+            -0.084519,
+            0.639645
+          ],
+          "rotationDeg": 7.29414,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_06",
+      "action": "sad",
+      "index": 6,
+      "file": "frames/ug_ghost_01_sad_06.png",
+      "sha256": "7ddfe1c2558d9fb2095347306a72c17179671eaaf4415cbcf43d1e6b1851feea",
+      "pixelSha256": "33b18665a0d0d4c3c071ab0b89b839f14ef7d6cde5883724d0a918983ad54d18",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 127,
+        "width": 350,
+        "height": 319
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 136845,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 444.408548
+      },
+      "mounts": {
+        "head": {
+          "x": 313.171627,
+          "y": 191.882742,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.976848,
+            0.213934,
+            -0.213934,
+            0.976848
+          ],
+          "rotationDeg": 12.35297,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 382.02752,
+          "y": 256.100076,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.976848,
+            0.213934,
+            -0.213934,
+            0.976848
+          ],
+          "rotationDeg": 12.35297,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 368.078497,
+          "y": 357.810837,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.982004,
+            0.188015,
+            -0.199757,
+            0.57753
+          ],
+          "rotationDeg": 10.838725,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 307.260975,
+          "y": 365.517041,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.989191,
+            0.121603,
+            -0.081479,
+            0.653631
+          ],
+          "rotationDeg": 7.008304,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_07",
+      "action": "sad",
+      "index": 7,
+      "file": "frames/ug_ghost_01_sad_07.png",
+      "sha256": "efaa1fe0c5b4ab4a9365e945ba7d7c30b8ab6147cfd231e1bf45ef6c53216495",
+      "pixelSha256": "7991e7f8a31aebe85b96a1bc205aecf64d61b0080ad36982561acdc92f567755",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 123,
+        "width": 346,
+        "height": 322
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 137285,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 443.868726
+      },
+      "mounts": {
+        "head": {
+          "x": 308.890215,
+          "y": 188.029801,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.982155,
+            0.188073,
+            -0.188073,
+            0.982155
+          ],
+          "rotationDeg": 10.840361,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 379.417256,
+          "y": 250.407173,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.982155,
+            0.188073,
+            -0.188073,
+            0.982155
+          ],
+          "rotationDeg": 10.840361,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 368.096782,
+          "y": 352.636951,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.986129,
+            0.16525,
+            -0.17747,
+            0.630386
+          ],
+          "rotationDeg": 9.512916,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 307.493963,
+          "y": 362.824318,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.991669,
+            0.106866,
+            -0.072231,
+            0.695669
+          ],
+          "rotationDeg": 6.150652,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_08",
+      "action": "sad",
+      "index": 8,
+      "file": "frames/ug_ghost_01_sad_08.png",
+      "sha256": "64682446ec80233baf87fef97f793e98fffaa19fd2da109a2169f5ba9f7976db",
+      "pixelSha256": "a0f285b98d6610c60752978ac877f51351128e1373f2eae4e1091d6d9dcd43d6",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 111,
+        "width": 338,
+        "height": 332
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 138512,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 442.384215
+      },
+      "mounts": {
+        "head": {
+          "x": 297.062199,
+          "y": 177.887989,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.99321,
+            0.116336,
+            -0.116336,
+            0.99321
+          ],
+          "rotationDeg": 6.680688,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 371.928076,
+          "y": 234.985278,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.99321,
+            0.116336,
+            -0.116336,
+            0.99321
+          ],
+          "rotationDeg": 6.680688,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 367.934546,
+          "y": 338.302111,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.994722,
+            0.10217,
+            -0.112992,
+            0.774242
+          ],
+          "rotationDeg": 5.864386,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 308.109445,
+          "y": 355.325461,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.99683,
+            0.066055,
+            -0.045771,
+            0.811854
+          ],
+          "rotationDeg": 3.791166,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    },
+    {
+      "frameId": "UG_GHOST_01_SAD_09",
+      "action": "sad",
+      "index": 9,
+      "file": "frames/ug_ghost_01_sad_09.png",
+      "sha256": "66c945d8f9018d2966272dea9c8f6951f6407e191d5d615566d6cdf3f7e2c70d",
+      "pixelSha256": "7989091293fce7322a728881023148ea9bbb652e35bb33a8ef4a72ab43ee44b7",
+      "durationMs": 280,
+      "durationFractionMs": [
+        280,
+        1
+      ],
+      "visibleRect": {
+        "x": 91,
+        "y": 98,
+        "width": 329,
+        "height": 343
+      },
+      "mountRef": "mounts/FRAME_MOUNT_MANIFEST.json",
+      "sourceState": "sad_00",
+      "sourcePsd": {
+        "file": "deliverables/art/U02-TOURIST-ASSET-001/v0.1/batches/U02-FULL-A/formal/source/tourist_sad_keypose.psd",
+        "sha256": "fc442357b3de6c0fdad7e99f964c863b263bf2144c047a37d664be0f18cf8a94",
+        "usage": "现存静态分层母版；本帧由对应layer_sources与VFX Shader烘焙，未声称存在逐帧PSD"
+      },
+      "bytes": 139822,
+      "playback": "loop",
+      "originalFacing": "right",
+      "canvas": {
+        "width": 512,
+        "height": 512
+      },
+      "originalSize": {
+        "width": 512,
+        "height": 512
+      },
+      "sourceRect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 512
+      },
+      "trimOffset": {
+        "x": 0,
+        "y": 0
+      },
+      "foot": {
+        "x": 256,
+        "y": 440
+      },
+      "visualFoot": {
+        "x": 256,
+        "y": 440.674778
+      },
+      "mounts": {
+        "head": {
+          "x": 283.394051,
+          "y": 167.038187,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999456,
+            0.032994,
+            -0.032994,
+            0.999456
+          ],
+          "rotationDeg": 1.890761,
+          "sourcePoint": {
+            "x": 278,
+            "y": 163
+          }
+        },
+        "face": {
+          "x": 362.766238,
+          "y": 217.684568,
+          "visible": true,
+          "valid": true,
+          "side": null,
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999456,
+            0.032994,
+            -0.032994,
+            0.999456
+          ],
+          "rotationDeg": 1.890761,
+          "sourcePoint": {
+            "x": 359,
+            "y": 211
+          }
+        },
+        "wristNear": {
+          "x": 367.350544,
+          "y": 321.625466,
+          "visible": true,
+          "valid": true,
+          "side": "near",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999577,
+            0.028969,
+            -0.033124,
+            0.936828
+          ],
+          "rotationDeg": 1.660016,
+          "sourcePoint": {
+            "x": 367,
+            "y": 315
+          }
+        },
+        "wristFar": {
+          "x": 308.762034,
+          "y": 346.52293,
+          "visible": true,
+          "valid": true,
+          "side": "far",
+          "anchorPixelAlpha": 253,
+          "localAffine": [
+            0.999746,
+            0.018726,
+            -0.013374,
+            0.946579
+          ],
+          "rotationDeg": 1.073075,
+          "sourcePoint": {
+            "x": 309,
+            "y": 343
+          }
+        }
+      },
+      "occlusion": {
+        "hat": "front",
+        "glasses": "front",
+        "wristband": "back_and_front"
+      }
+    }
+  ]
+}

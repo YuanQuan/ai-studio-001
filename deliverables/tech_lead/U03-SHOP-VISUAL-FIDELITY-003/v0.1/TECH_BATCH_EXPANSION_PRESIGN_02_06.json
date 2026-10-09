@@ -1,0 +1,25 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "reviewer": "tech_lead",
+  "decision": "PRESIGNED_FOR_SHOPS_02_TO_06",
+  "basis": {
+    "gate1": "USER_APPROVED",
+    "production_plan_sha256": "2830BC2DFEAD18A37952E46E1D87AD426097186F67D54858EBDBD2EB5615026E",
+    "visual_anchors_sha256": "98FD35F7D35ABBB886C11FC8FECBE4CC12B737478BAB3E3B7F764B2CDB67EA53",
+    "lighting_correction_sha256": "04239BFC37616ED90AA8C1E8DF767D4EDF440855CDB39865723882400ED89D1E",
+    "shop_01_art_review": "deliverables/art/U03-SHOP-ASSET-001/v0.3/SAMPLE_ART_REVIEW_LIGHT_R3.md",
+    "shop_01_tech_postcheck": "deliverables/tech_lead/U03-SHOP-VISUAL-FIDELITY-003/v0.1/SAMPLE_TECH_POSTCHECK_LIGHT_R3.json"
+  },
+  "scope": {
+    "shop_02": "原则继承中间明暗的旧 PSD/body，按既选车前小牌/糖勺糖浆与准确糖字定向高清修牌；如 body 变动记录实际局部差异。",
+    "shop_03": "原则继承中间明暗的旧 PSD/body，修左侧现烤竖牌，两字同一字效并具可追溯字源。",
+    "shop_04": "原则继承中间明暗的旧 PSD/body，修檐下剪梳牌，图形在实际尺度可辨。",
+    "shop_05": "如现有花灯牌/店体在同尺度匹配选定明暗与款式，可继承原 PSD/body/sign 字节及 SHA；有差异只修受影响项。",
+    "shop_06": "如现有投壶牌/店体在同尺度匹配选定明暗与款式，可继承原 PSD/body/sign 字节及 SHA；有差异只修受影响项。"
+  },
+  "technical_contract": "各店1024×1024 RGBA、foot (512,900)、body/sign同画布同原点，稳定资产ID和未来Client .meta/Prefab UUID保留",
+  "raw_rgba_batch_upper_bound_bytes": 50331648,
+  "not_tested": ["02–06 actual new PSD/cuts/alpha/occlusion", "Creator import/build", "Web/runtime visual fidelity", "resident memory/atlas/DrawCall", "target device performance"],
+  "next_action": "Art按同批明暗补充与01样张检查方法制作02–06，并逐店记录继承/局部修订的PSD、body/sign来源、SHA和同尺度视窗；六店自行切片包直接交用户Gate2审核，无新增用户样张审批或成品专业效果复审。"
+}

@@ -1,0 +1,13 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "qa",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "本评审仅批准 Client v0.1/R3 实施产物进入用户审核，不是正式 QA 执行或 TEST_REPORT。已核 Gate2 v0.4 USER_APPROVED 记录及清单身份；R3_BUILD_MANIFEST.json 三个源码哈希与当前文件一致。修正为 .jpg 的 R3_IAB_EVIDENCE_MANIFEST.json 共17项（16截图及console）真实路径存在、SHA-256全部一致，截图改名没有改变图像字节。"},
+    {"severity": "INFO", "message": "R3 Creator 3.8.8 构建任务1791356044228及8776 HTTP运行证据可追溯；390×844六店循环、返回重入与720×1280快切有Master限定鼠标冒烟记录，Tech/UI已对六店静帧同版评审。抽核390奶茶实图只见一店，牌匾和01/06身份相符。R1入口失效与R2空白是已修复历史失败，不能合并作为R3通过证据。当前未发现阻挡实施产物用户审核的已证实P0/P1。"},
+    {"severity": "INFO", "message": "源码使用pageEpoch及shopGeneration隔离过期微任务，desiredIndex驱动目标递推，候选结构验证后关闭旧店并同步提交店体/牌匾/身份，failedTarget供定向重试；R3两处缩放已用setScale(x,y,1)。这些静态防护及一次快切观察不等于乱序、失败或输入去重的运行通过。"},
+    {"severity": "MINOR", "message": "可留待用户批准Implementation后的正式FUNCTIONAL QA：双向循环及上一店、受控失败/结构异常/定向重试、返回旧回调、连续输入与触摸兼容鼠标去重、动态状态/安全区/六牌量测、完整受影响U01/U02回归。强引用Prefab的实际预加载路径须与故障用例对齐，不把Promise微任务视为网络加载；无故障注入能力时相应用例保持NOT_TESTED。"},
+    {"severity": "MINOR", "message": "冷/热进入、帧时、DrawCall、RGBA8等效纹理面积、十次入退节点/监听残留等已批性能范围仍NOT_TESTED，正式QA必须按获批TEST_PLAN及阈值执行；必要指标无可靠工具则报告BLOCKED/NOT_TESTED。Task第4验收仍未全面满足，不因本Review或用户实施批准改为全PASS/DONE。真机、微信等目标平台保持NOT_TESTED并按RELEASE或另批范围处理。"}
+  ],
+  "next_action": "Master汇总同版专业Review呈交用户Implementation Gate；Producer保持当前验收缺口及QA依赖锁定。用户批准确切Client实现版本后，Master再解锁正式QA执行并固定R3构建/资源/环境；QA分别报告功能、视觉、性能结果，TEST_REPORT另交用户确认后才能最终接受。"
+}

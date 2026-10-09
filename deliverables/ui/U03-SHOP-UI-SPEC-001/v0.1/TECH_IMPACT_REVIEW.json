@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核对四份 UI 文档、两张 SVG 与交付索引。720×1280 单店容器候选 x=44–676、y=170–1000，内部 24 单位留白；390×844 候选按适宽缩放的 96×88 命中区约为 52×48 屏幕像素。文档要求按实际 visibleRect、安全区和 DPR 复测，并未把候选值写成运行通过。两张 SVG 均可解析，仅作结构标注，不含正式店图或获批字体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已呈现旧店的店图、牌匾和身份栏在异步切换期间保持一致，目标完整后整体替换；首入加载、运行中缺图、快切末次请求、返回失效与重入 01 均有状态与文案。入口在 Gate2/导入未完成前标资源未就绪，未用概念图或 SVG 冒充运行资源。与 U03 Tech v0.1 的令牌式提交和同源资源边界相容。"
+    },
+    {
+      "severity": "INFO",
+      "message": "复核 UI_SPEC.md 第 2 节与 SCREEN_STATES.md：此前连续快按递推基准不明的问题已在本版修订中解决。加载中从最新 desiredIndex 继续递推，01 可见时两次下一店请求 02→03、下一店后上一店回 01 并取消待加载；身份栏仍取 presentedIndex。失败目标单独记录供重试，前后键在故障后从已呈现店重新递推。与 U03 Tech v0.1 第 3 节一致，无未解决的快切规格问题。"
+    },
+    {
+      "severity": "INFO",
+      "message": "最终稿又复核首次加载状态：UI_SPEC.md 与 SCREEN_STATES.md 仅显示中性加载和返回，前后切换禁用且不显示重试；明确加载失败或超时转错误态后才对 failedTarget 提供重试。与 Tech 第 3 节的 LOADING→READY/ERROR、首次 presentedIndex=null 和失败目标重试一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "U01 现行菜单仅一入口，U02 Product 已批但实现未就绪，UI 稿按实际完成门禁决定导航组合；无服务器、经济或新运行依赖。六店正式图、牌匾投影、控件触达、字体许可与 Creator 构建/浏览器/QA 仍未测试。"
+    }
+  ],
+  "next_action": "UI v0.1 最终稿可继续同版 Review 与用户审批。Client 开工包按已明确的 desiredIndex/presentedIndex/failedTargetIndex 及首次加载无重试、失败/超时后可重试规则实现，QA 用连续两次、三次快按与失败重试复核；Art 与 Tech 用六店实图核 390×844 安全区和牌匾像素可读性，Client/QA 在真实 Web 产物中验证。"
+}

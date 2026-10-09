@@ -1,0 +1,49 @@
+{
+  "id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "title": "U03 六店效果图忠实还原修订 v0.3",
+  "type": "art",
+  "owner": "art",
+  "parent": "U03-SHOP-SIGN-REVISION-001",
+  "objective": "以用户确认的六店效果图为视觉目标，修复旧正式资源的主体、牌匾、材质与光影差距；局部修图不足时可重绘，完成可编辑母版与同尺度对照，再提交具体切片版本审核。",
+  "inputs": [
+    "用户最新明确授权：美术角度效果第一，修图最终效果不好可以选择重绘，要达到效果图与真实效果一致",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/mixed_signs_v04/six_shop_mixed_signs_overview.png",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/CUT_MANIFEST_V02.json（被提出视觉异议的历史版本）",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "tasks/U03-SHOP-VISUAL-FIDELITY-003/ARTIFACT_APPROVAL_LIGHTING_UPDATE.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/LIGHTING_AND_STYLE_CORRECTION.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/ART_PRODUCTION_CHANGE_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-VISUAL-FIDELITY-003/v0.1/TECH_PRODUCTION_CHANGE_PRESIGN_V03.json",
+    "tasks/U03-SHOP-VISUAL-FIDELITY-003/ARTIFACT_APPROVAL_GATE1.json",
+    "tasks/U03-SHOP-VISUAL-FIDELITY-003/ARTIFACT_APPROVAL_GATE2.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-VISUAL-FIDELITY-003/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/SAMPLE_REVIEW.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "用户授权的重绘方法须具体落实为版本化制作预案，首图前 Art 与 Tech 对同一批次预签。",
+    "六店身份、牌位及已选图案延续 mixed_signs_v04；主体画法与明暗按用户最新三面板中间基准及LIGHTING_AND_STYLE_CORRECTION.md执行，暗部通透，不以旧像素不变替代视觉一致性。",
+    "先完成奶茶代表样张，在同背景、同包围盒和实际显示尺度对照逐项记录；未达标不得扩批。",
+    "保留1024×1024画布、脚点(512,900)及body/sign交接契约；若不兼容须说明差距并由Master协调。",
+    "提供真实PSD、切片、重组及390/720静态视窗；明确原图分辨率、重绘和图层可编辑限制。",
+    "具体新版切片须单独获得用户批准后正式接入；接入后另核真实Cocos画面，不把静态图或旧v0.2运行当作新版证明。"
+  ],
+  "dependencies": ["U03-SHOP-SIGN-REVISION-001"],
+  "status": "REVISION",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master在2026-10-08创建并授权Art制作预案，Producer维护执行状态。最新用户指令已授权必要重绘与效果忠实目标，不重复请求方法授权；确切新版切片Gate2仍待实际产出后审核。",
+    "不改U01/U02并行工作，不删除历史审批，不把v0.2历史批准写成v0.3批准。",
+    "用户后续视觉校准：三面板中间 v0.2 奶茶的风格与明暗为所需基准，左右两面板阴影过深；01 首样及后续六店以暗部通透、该中间面板的风格/明暗为准，保留已选牌匾设计。冻结的 v0.3 方案/锚点及 Gate1 SHA 不覆写，以后续 Art 补充版本追溯本用户指令；原文中‘柔和厚重’不得解释为深黑阴影验收目标。先完成 01 奶茶样张并按新基准复核，02–06 尚不得扩批；Master 核最小补充与同批技术预签后继续。此为用户对视觉基准的直接选择，非新版具体切片 Gate2 批准。",
+    "2026-10-09 00:19:19 +08:00 r3-light-middle 已完成 01 视觉/技术后验与 02–06 全批同版 Art/Tech 复签；六店正式 PSD/两片切图/同尺度重组/双视窗落盘。Producer 核 Required 15/15、manifest 所列 38/38 路径与 SHA、PSD/PNG 1024 头部与 PNG RGBA，CUT_MANIFEST.json SHA-256 1A023BA823B536B4208653D73E7F8015919C4005F61E3A2566DBC9A81FFF1299，Task 与独立 Gate2 进入 USER_REVIEW，用户尚未决定。02/03 候选源实产并被本批母版采用，子任务处 REVIEW；旧 v0.2 Client 任务 REVISION，五片已复制但运行 NOT_TESTED，新版尚未接入。",
+    "2026-10-09 00:30:55 +08:00 用户退回 v0.3/r3-light-middle Gate2，要求03现烤两字字体同源重绘、04剪梳缩小并回到旧版轻巧效果。当前父 Task 进入 REVISION，独立 Gate2 Approval 以 schema 合法状态 REJECTED 记录 CHANGES_REQUESTED；旧清单 SHA 1A023BA8…FFF1299 与 commit a463f32b…6c690b 留历史。新 v0.4 限03/04牌面，全部body及01/02/05/06沿v0.3、明暗仍为用户选择的中间版；Master另建 U03-SHOP-SIGN-POLISH-004，不能在旧Task中覆盖已送审实片或推断新版Gate2获批。"
+  ]
+}

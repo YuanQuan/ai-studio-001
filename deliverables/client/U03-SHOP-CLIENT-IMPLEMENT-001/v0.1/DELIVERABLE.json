@@ -1,0 +1,65 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "六店 Gate2 v0.4 的 12 张原样 PNG 和六个强引用 Prefab 已接入 UnitSamples；R3 Creator 3.8.8 Editor 构建成功，390×844 和 720×1280 的限定 Web 鼠标/视觉冒烟看到六店单显、循环、返回重入及 U01/U02 基本行为。真实触控、故障注入、完整性能和目标平台待独立 QA。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/assets/labs/u03/shop_definitions.ts",
+    "apps/client/assets/units/shops/",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/RESOURCE_IDENTITY_AND_UUID.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/WEB_RUNTIME_RECORD.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/U01_U02_REGRESSION_RECORD.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/evidence/R3_BUILD_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/evidence/R3_IAB_EVIDENCE_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/evidence/r3_iab/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Gate2 确切版本 12 张切片、六个稳定身份、真实 Creator 路径及 image/Texture2D/SpriteFrame/Prefab UUID 登记",
+      "result": "PASS",
+      "evidence": "Gate2 v0.4 manifest SHA C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191；12 张 Client PNG 与 Art SHA 逐件一致；六个 Prefab AssetDB imported=true，引用 missingCount=0，实际 UUID 与 Scene 强引用见 RESOURCE_IDENTITY_AND_UUID.md 和 project/ASSET_HANDOFF_REGISTRY.md。"
+    },
+    {
+      "criterion": "独立 U03 入口、默认 01、六店单显循环、返回重入复位，当前店图/牌匾/身份一致",
+      "result": "PASS",
+      "evidence": "R3 390×844 IAB 依次见 01→02→03→04→05→06→01，每步店体、牌匾和身份相符且只显示一店；返回重入复位 01。720×1280 见 01/04 实图，快速三次下一店 04→01。WEB_RUNTIME_RECORD.md 限定鼠标/视觉范围。"
+    },
+    {
+      "criterion": "连按末次提交、异步失效、失败定向重试和返回旧回调隔离的全部状态边界",
+      "result": "NOT_TESTED",
+      "evidence": "R3 观察一次快速三连按 04→01，且 generation 代码静态存在；加载乱序、MISSING/DECODE/STRUCTURE/TIMEOUT 注入、定向重试和旧回调返回隔离未做确定性运行验证。"
+    },
+    {
+      "criterion": "Creator 3.8.8 导入、当前 Web 构建、HTTP 和两候选竖屏限定运行",
+      "result": "PASS",
+      "evidence": "R3 builder task 1791356044228 于14:54:24 +08 success，107 个输出文件及日志 SHA 见 evidence/R3_BUILD_MANIFEST.json；HTTP 127.0.0.1:8776 返回 200；IAB 16 张两尺寸截图和 console_logs.json 已落盘，逐件尺寸/SHA 见 evidence/R3_IAB_EVIDENCE_MANIFEST.json。R3 端口日志 102 条中 warn/error 为 0。截图已改名为 .jpg，与 JPEG/JFIF 编码一致。"
+    },
+    {
+      "criterion": "U01 镜头与适用 U02 行为无回归",
+      "result": "NOT_TESTED",
+      "evidence": "R3 限定冒烟见 U01 四层画面、放大和重置响应，U02 游客、walk 与帽子穿卸响应；拖动边界、完整动作槽位、真实触摸与全部输入隔离未覆盖。U01_U02_REGRESSION_RECORD.md。"
+    },
+    {
+      "criterion": "真实触控、安全区、字体牌匾实测、冷/热加载帧时、DrawCall、纹理占用和目标平台",
+      "result": "NOT_TESTED",
+      "evidence": "本轮没有真实触摸设备、完整六牌量测、性能采样或小游戏目标平台运行；WEB_RUNTIME_RECORD.md 明列剩余范围。"
+    },
+    {
+      "criterion": "Client、Tech、UI、QA、Master 同版 Review、用户实施审批和最终 QA TEST_REPORT",
+      "result": "NOT_TESTED",
+      "evidence": "Client、Tech、UI、QA、Master 对同一 v0.1 的五份 Review 当前均为 APPROVED；本实现 ARTIFACT_APPROVAL.json 仍为 DRAFT，尚无用户对该实施版本的 USER_APPROVED，后续正式 QA TEST_REPORT 也未完成。因此整项保持 NOT_TESTED，不将专业 Review 或 R3 冒烟等同任务 DONE。"
+    }
+  ],
+  "assumptions": [
+    "Creator 将序列化 Prefab 根名同步为文件名；运行实例在结构核验和提交前改名为获批稳定店 ID。",
+    "六店每店只有 body/sign 两张获批正式图片，ground_contact 是无贴图的脚点节点。"
+  ],
+  "risks": [
+    "R3 限定鼠标/视觉冒烟未覆盖真实触屏、故障注入、完整状态组合、性能或目标平台。",
+    "16 张截图和控制台日志已落盘，但截图已改名为 .jpg，与 JPEG/JFIF 编码一致；缺少连续录屏与完整真实触控/性能证据。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

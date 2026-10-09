@@ -1,0 +1,17 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "FINAL_CANDIDATE_PACKAGE_POSTCHECK",
+  "reviewed_manifest": "SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json",
+  "reviewed_manifest_sha256": "C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191",
+  "art_acceptance_sha256": "1ADCED8DA54F1BFA5E752B14932DBEF13CE98C5FFCF046D465D8020A5AF4783C",
+  "findings": [
+    {"severity": "INFO", "message": "独立核最终候选包 43 个 PSD/PNG/预览引用均存在且 SHA-256 与清单逐一一致。包内恰为六张 PSD、十二张 body/sign PNG：01 新近正面 v04，04 新近正面 v03，02/03/05/06 B92% 字层 v03；旧 01/04 文件未混入候选版本。六店 foot 全为 (512,900)。"},
+    {"severity": "INFO", "message": "独立用每店 1024² 两片的重组图按相同算法投影，六店 390×844（显示宽316、位置37,252）与 720×1280（显示宽584、位置68,287）共十二张全视口均逐像素一致。六店总览已目视检查同尺度、01/04 近正面、独立牌形及经营物可辨。单店双片与重组、四边 alpha 及 PSD 可见层已在相应五店/04/01 生产后验记录。"},
+    {"severity": "INFO", "message": "十二字字芯 390 投影高均≥24 CSS px；已锁 B92% 原字芯的有效细笔稳定骨架 10 分位均≥2 CSS px，最新 01 奶/茶为2.24/2.16、04 理/发为2.78/2.26 CSS px。静态候选线通过；实际 Creator/设备字体边缘与 safe area 仍待导入后验。"},
+    {"severity": "MAJOR", "message": "01/04 的侧墙/正面≤0.12 目前是 Art/Tech 同尺度目视判读，未给可复核几何测线。01/04 新 PSD 的店体为互斥语义像素区，未补全物件遮挡背面，不支持任意大幅重排；未做 Photoshop/Photopea 交互开存。六店 12 张 1024² RGBA8 全展开约48 MiB，仅为静态面积估算；Creator 纹理页、内存峰值、目标设备帧时均 NOT_TESTED。"},
+    {"severity": "INFO", "message": "当前包只交固定牌文栅格像素，不含字体软件。官方原 TTF/声明原件未取得及比对事实保持披露；若官方证据后来限制此用途须停用复审。Client 正式路径仍 PLANNED_NOT_IMPORTED、UUID 不得伪填。"}
+  ],
+  "next_action": "Master/Producer 可提交本确切清单、六店 PSD/12 张切片、同尺度总览及双视口给用户 Gate2。用户明确批准该版本前 Client 不正式接入；批准后再核实际 UUID、纹理页、内存、设备安全区和帧时。"
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "batch_id": "U03-SHOP-SIGN-REVISION-V02",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "input_hashes_sha256": {
+    "PRODUCTION_PLAN.md": "8C193C9E43B8AE6F89AAC816D06DD70A72BC672E27141FC384A698F5561BFA7D",
+    "VISUAL_ANCHORS.md": "32D039DA35BDDB03F83D800CE1DB22B404ABB19D122E45163565AAB9441BAACD",
+    "SOURCE_FEASIBILITY.md": "3706A0BF82ADF6142F5EBD95C7CF49247DF46C2758E7D5F403287C2A4A687CE4"
+  },
+  "scope": "仅签认本批首图前 Art 制作预案：现有六 PSD 定向改牌、01 旧牌缺口局部补 body、02 body 优先原字节、05/06 原字原像素、1024×1024 RGBA 与 foot (512,900)、双片同坐标、源图与字体权利路径。首张代表样张先 01/02；本预签不是样张实图、整批切片效果或客户端接入批准。",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "用户 Gate1 已明确批准方案 SHA-256 8C193C9E43B8AE6F89AAC816D06DD70A72BC672E27141FC384A698F5561BFA7D；六店原 PSD 及 source/psd_work 全画布语义层实存。旧版资源与客户端 UUID 均保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "01 的 body 在旧横匾下存在矩形透明缺口，须以局部修补层补足并纳入新 body 实片审核。02 旧大竖牌在 sign，优先保持 body 完全不变；新车前牌的边界、地面、车轮及经营物遮挡须由样张实图判断。05/06 若符合方向则保持旧牌原字原像素。"
+    },
+    {
+      "severity": "INFO",
+      "message": "仅从用户授权的 mixed_signs_v04 预览局部取杯标、糖勺糖浆、剪梳图形并保留抽取源和透明层；不裁整店替代 PSD。02 糖字优先复用原正式 glyph，03 烤字可复用。新现字需核官方 Google Fonts ZCOOL KuaiLe 的 OFL、TTF 实际 SHA、字形及本地旧字体对应关系。"
+    },
+    {
+      "severity": "INFO",
+      "message": "预计维持每店 body/sign 两张 1024×1024 RGBA 全画布及稳定 ID；12 张原始像素容量上限估算约 48 MiB，仅为文件像素算术，不代表 Creator 导入后的实际驻留、图集、合批、帧时或设备通过。新图均 NOT_TESTED。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Tech Lead 对同批首图前 TECH_PRODUCTION_PRESIGN_V02.json 尚未完成；首张正式样张、PSD、切片的制作需等 Art/Tech 同批双方签认与新字来源核验结果。"
+    }
+  ],
+  "next_action": "Tech Lead 对 batch_id U03-SHOP-SIGN-REVISION-V02 和相同三份方案 SHA 提交 TECH_PRODUCTION_PRESIGN_V02.json，并完成或明确字体文件核验路径；双方同批签认后制作 01/02 代表样张，实图后验通过再完成六店 Gate2 实片包。"
+}

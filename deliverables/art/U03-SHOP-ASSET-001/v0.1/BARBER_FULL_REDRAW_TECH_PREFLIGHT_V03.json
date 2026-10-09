@@ -1,0 +1,15 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "FIRST_IMAGE_PREFLIGHT",
+  "reviewed_artifact": "BARBER_FULL_REDRAW_FIRST_IMAGE_PREFLIGHT_V03.md",
+  "reviewed_sha256": "D5C7CF1AACBDB2DAC8EF0FD334200640645A4F6EFEBEA16E7037DB2367F0C0F6",
+  "findings": [
+    {"severity": "INFO", "message": "Art/Tech 对同一 v0.3 首图制作预案预签，适用用户已批准整体重绘方案 SHA 50D02C9F4D3E6AEC6C79171D1DE86C81C8A96AE7582640D145322E38EFA1297A。三份旧 04 输入源 SHA 已独立复算匹配，均仅作参考且不覆盖。未获批 v0.2 局部重建的 mask 和方法不继承。"},
+    {"severity": "INFO", "message": "首图固定透明 1024×1024、foot=(512,900)、同尺度主体宽 600–760/高 610–750 源 px 控制区、正面侧墙比≤0.12；390×844、720×1280 全视口和六店总览必须使用同一缩放及脚线。两张 body/sign 1024² RGBA 上限，PSD 含语义可编辑层及隐藏来源层，实际层与两片复合仅容 1/255 舍入差。"},
+    {"severity": "INFO", "message": "牌匾维持檐下双层横额，理发准确简体，B 92% 字效只作栅格字层，字体软件不得进入 PSD、仓库或游戏包。首图后须核逐字高≥24 CSS px、有效细笔≥2 CSS px、四底 alpha、两片重组、四类经营线索、牌匾避让与原图差异。"},
+    {"severity": "MAJOR", "message": "每店两张 1024² RGBA8 裸展开约 8 MiB 仅为估算；Creator 纹理页、CPU/GPU 常驻、加载峰值、safe area 和帧时仍 NOT_TESTED。若首图需要第三片、偏离同尺度或经营识别、PSD 仅复制扁平图、生成图无法满足近正面，则停止并返工或重新评审。"}
+  ],
+  "next_action": "Art 可据此同版预签开始 04 首张整体重绘；完成后 Tech 独立检查实际 PSD、双片、双视口和尺寸。实际切片与重组仍须用户 Gate2 批准，批准前 Client 不正式接入。"
+}

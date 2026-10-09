@@ -1,0 +1,70 @@
+{
+  "id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "title": "U03 六店单显切换与正式资源接入",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "在六店具体切片版本获得 Gate2 用户批准后，将 U03 作为 UnitSamples 独立入口接入当前获批菜单；一次只显示一店，前后循环切换六店，并在实际 Creator Web 构建中验证状态、资源身份与 U01/适用 U02 回归。",
+  "inputs": [
+    "U03-SHOP-SCOPE-001 Product v0.1、U03-SHOP-ART-PLAN-001 Art Gate1 v0.1、U03-SHOP-TECH-DESIGN-001 Tech v0.1、U03-SHOP-UI-SPEC-001 UI v0.1（均 USER_APPROVED）",
+    "U03-SHOP-CLIENT-BRIEF-001 Client Brief v0.1 与 U03-SHOP-QA-PLAN-001 QA Plan v0.1（均 USER_APPROVED）",
+    "tasks/U03-SHOP-ASSET-001/ARTIFACT_APPROVAL.json：必须为六店具体正式切片/同尺度重组版本的 Gate2 USER_APPROVED，且核对 CUT_MANIFEST、PSD 与资源登记实际哈希",
+    "实施开始时的 apps/client/assets/UnitSampleGallery.ts、UnitSamples.scene、U01/U02 已获批并实际接入状态、工程版本与并行工作区差异",
+    "rules/cocos_cli_browser_workflow.md、agents/shared/skills/cocos-cli-browser/SKILL.md、project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "deliverables": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/UnitSamples.scene",
+    "apps/client/assets/labs/u03/",
+    "apps/client/assets/units/shops/",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/RESOURCE_IDENTITY_AND_UUID.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/U01_U02_REGRESSION_RECORD.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/OWNER_SELF_CHECK.md",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/evidence/OWNER_EVIDENCE_MANIFEST.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/CLIENT_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/TECH_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/UI_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/ART_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.2/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL_v0.2.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/DELIVERABLE.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/CLIENT_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/TECH_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/UI_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/QA_REVIEW.json",
+    "deliverables/client/U03-SHOP-CLIENT-IMPLEMENT-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-CLIENT-IMPLEMENT-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "实施前核六店 Gate2 批准的确切导出版本、统一 ASCII snake_case 目录命名与稳定顶层 ID；正式导入店体/牌匾，登记 Art 路径和哈希、Creator 路径及真实 .meta/Texture2D/SpriteFrame/Prefab UUID，不把计划路径或样张候选当成已接入。",
+    "U03 独立入口按实际获批菜单出现；每次进入仅显示 01 奶茶店，上一店/下一店在 01–06 循环并可达六店，返回再进入重置 01；U01 既有镜头操作和当时适用的 U02 入口/行为不被破坏。",
+    "presentedIndex/desiredIndex/failedTarget 与 generation 保证快速连按从最新目标递推，只有完整同一店图、牌匾、当前身份和接地层可原子提交；加载失败、定向重试、返回销毁和重入不出现双店、错牌、错名或旧回调复活。",
+    "以已批准 v0.1/R3 Creator Web 产物、本地 HTTP 和内置浏览器做单元示例 Owner 自检：留存双竖屏六店画面、双向循环、连按、退出重入、U01/适用 U02 基本回归和资源身份；性能、真实触控、故障注入与目标平台取得可靠证据时分别判定，未取得时明确 NOT_TESTED/BLOCKED，不写 PASS。",
+    "Client Owner 提交可复核自检与未测清单，必要的 Tech/UI/Art 对受影响证据 Review；Master 基于已获用户批准的 Client v0.1/R3 和新增自检证据最终接受。现行单元示例规则不要求 QA Agent 或 QA TEST_REPORT；既有 QA 计划及取消的 QA Exec 仅保留历史。"
+  ],
+  "dependencies": [
+    "U03-SHOP-SCOPE-001",
+    "U03-SHOP-ART-PLAN-001",
+    "U03-SHOP-TECH-DESIGN-001",
+    "U03-SHOP-UI-SPEC-001",
+    "U03-SHOP-CLIENT-BRIEF-001",
+    "U03-SHOP-QA-PLAN-001",
+    "U03-SHOP-ASSET-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Gate2 v0.4 确切清单 SHA-256 C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191 已获用户批准。2026-10-07 14:26 +08:00 Producer 核实际开工：apps/client/assets/units/shops/ 已有六店 12 张正式 PNG 与对应 .meta、六个 Prefab 文件，UnitSampleGallery.ts 已有 U03 入口/状态及 Prefab[] 强引用逻辑，UnitSamples.scene 已有 shopPrefabs 序列化引用；Task READY→IN_PROGRESS。Prefab/导入 UUID、运行与五方 Review 尚待完整后验，当前不能视作实现完成。",
+    "实际工程文件与 U02 并行改动在开工时重审；若六店正式导出需第三片、不同资源生命周期或改已批状态语义，先走受影响的变更评审。",
+    "已将 Required 补全为实际资源容器 apps/client/assets/units/shops/ 与 UnitSamples.scene；labs/u03/ 保留为本轮 shop_definitions.ts 的脚本容器。真实 Scene/Prefab/脚本/.meta 文件须在 RESOURCE_IDENTITY_AND_UUID.md 与交付索引逐项列明。",
+    "2026-10-07 15:13 +08:00 Producer 核 14/14 Required 实存，Client/Tech/UI/QA/Master 五份同版 Review APPROVED；R3 16 张 JPEG 截图与 1 份控制台清单 17/17 路径、字节、SHA 匹配，107 构建文件及三源文件 SHA 匹配。Task IN_PROGRESS→USER_REVIEW，实施 Approval DRAFT→USER_REVIEW。Task 状态边界、完整 U01/U02 回归、真实触控、安全区、性能和目标平台等仍 NOT_TESTED；本次仅送用户审核实施版本，QA Exec 仍 BACKLOG。",
+    "用户明确‘批准 v0.1/R3，进入正式 QA’。2026-10-07 15:16:25 +08:00 Producer 登记实施 Approval USER_APPROVED，Task USER_REVIEW→QA；故障、真实触控、完整回归、性能与目标平台仍未测，故不得标 DONE。",
+    "其后用户组织级新规则明确 QA Agent 不参加单元示例，Producer 已登记 U03 QA Exec CANCELLED/SUPERSEDED。本 Task 原 QA 验收现据新规则修订为 Client Owner 自检；v0.1/R3 用户批准保持有效，自检 v0.2 不替代已批实现，也不复活 QA；Owner 尚未开始本修订产出，状态 READY。",
+    "2026-10-07 15:31:13 +08:00 Producer 核首份新增 Required v0.2/OWNER_SELF_CHECK.md 已于 15:30:44 +08:00 落盘；v0.2/evidence/ 含 9 JPEG+2 JSON，OWNER_EVIDENCE_MANIFEST.json 11/11 路径和 SHA 匹配。Task READY→IN_PROGRESS / TASK_STARTED；原 v0.1/R3 Approval 仍 USER_APPROVED，QA Exec CANCELLED。逐帧原子性、真实触控、故障恢复、运行性能和目标平台仍 NOT_TESTED，Owner 自检及最终接受未完成。",
+    "2026-10-07 15:37 +08:00 Producer 核当前 23/23 Required 实存、Task/Deliverable/Approval 与 Client/Tech/UI/Art/Master 五 Review Schema PASS、五 Review 同版 APPROVED；Owner 11/11 证据路径/SHA 匹配。v0.2 Owner 自检 Task IN_PROGRESS→USER_REVIEW、v0.2 Approval DRAFT→USER_REVIEW；等待用户审核补充自检，原 v0.1/R3 USER_APPROVED 保留，QA Exec CANCELLED，不把 NOT_TESTED 改 PASS 或标 DONE。",
+    "用户明确‘批准 Owner 自检 v0.2’。2026-10-07 15:40:38 +08:00 Producer 登记 v0.2 Approval USER_APPROVED，原 v0.1/R3 Approval USER_APPROVED 与 QA Exec CANCELLED 不变；Task 暂保持 USER_REVIEW，待 Master 按修订验收和未测边界最终接受，未自行标 DONE。",
+    "2026-10-07 15:43:02 +08:00 Producer 核 Master 最终接受记录 deliverables/master/U03-SHOP-FINAL-ACCEPTANCE-001/v0.1/ACCEPTANCE.md SHA-256 07A00F7A8F6250A1EF9F66EAA3CC5F114181AF8831ABA6840B59FBA273CDD134：仅接受已证 U03 单元示例范围。当前 23/23 Required、Gate2 v0.4/Client v0.1/R3/Owner 自检 v0.2 均 USER_APPROVED，五份 v0.2 Review APPROVED，修订五项验收有结果与未测边界，Task USER_REVIEW→DONE。逐帧、故障/乱序、真实触控/安全区、性能和目标平台仍 NOT_TESTED；QA Exec CANCELLED，不记 QA PASS；未来升级正式功能/资源接入须重建适用验证。"
+  ]
+}

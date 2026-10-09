@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-TECH-DESIGN-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已复核更新后的 TECH_DESIGN.md 第 3 节及其余三份技术文档与交付索引。六项循环、首入/重入 01、同屏唯一店、快切从 desiredIndex 递推（01 可见时后项两次为 02→03，后项再前项回 01 即撤销待切换）、牌匾随 Prefab 原子替换，与修订后的 U03 UI v0.1 完全一致。"
+    },
+    {
+      "severity": "INFO",
+      "message": "技术稿在目标加载期间保留完整已呈现旧店，故障时保留旧店或首入中性空态，支持 UI 将当前身份与“正在切换至/目标暂不可用”分开显示，不产生错配身份。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280 与 390×844 均为候选审阅视口；技术稿要求记录实际 visibleSize、safe area、DPR、店体及字牌投影，与 UI 容器和无遮挡要求相容，未虚构已通过的小屏结论。"
+    },
+    {
+      "severity": "INFO",
+      "message": "技术稿已区分 presentedIndex、desiredIndex 与 failedTarget，说明首入 presentedIndex=null、失败后 desiredIndex 复位且重试仍针对 failedTarget；UI 当前身份、切换提示和错误文案有明确数据来源。Client 实施 Brief 应沿用此契约。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "UI v0.1 尚待独立用户审批；本 Review 只确认技术方案与当前 UI 提案无冲突，不能把 UI 审阅示意 SVG、候选色或未获批字体当成正式运行资源。"
+    }
+  ],
+  "next_action": "待 UI/Tech 各自获用户批准及正式资产 Gate2 后，Client 沿用 presentedIndex/desiredIndex/failedTarget 契约实施，并实测小屏与快切。"
+}

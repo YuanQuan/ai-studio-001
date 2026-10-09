@@ -1,0 +1,33 @@
+{
+  "id": "U03-SHOP-SIGN-POLISH-004-ART-03",
+  "title": "现烤双字同源统一暖金字效候选",
+  "type": "art",
+  "owner": "art",
+  "parent": "U03-SHOP-SIGN-POLISH-004",
+  "objective": "从同一已许可字体源同时绘制现烤两字，统一字重、尺寸、暖金字面和浅立体描边，纠正前版不同源拼字；交主Art同阶段母版组装。",
+  "inputs": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/PRODUCTION_PLAN_AND_ANCHORS.md",
+    "tasks/U03-SHOP-SIGN-POLISH-004/ARTIFACT_APPROVAL_GATE1.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-SIGN-POLISH-004/v0.1/TECH_PRODUCTION_PRESIGN.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/source/parallel_shop_03/SOURCE_NOTES.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/source/parallel_shop_03/SOURCE_MANIFEST.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.4/source/parallel_shop_03/sign_glyph_xiankao_candidate_v04.png"
+  ],
+  "acceptance": [
+    "现烤准确简体，两字同官方OFL字体同一绘字参数，92%粗圆方向、暖金面、轻描边和浅棕体积；不采用旧烤像素拼接。",
+    "全画布1024透明字层，原牌位与全部body不改，390尺度两字同字效可读。",
+    "独立目录交源说明与哈希，同阶段候选由父Art实看组装，具体切片统一父Gate2；不声称已批准或运行通过。"
+  ],
+  "dependencies": [
+    "U03-SHOP-SIGN-POLISH-004"
+  ],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master正式分派；沿父批次已授权并预签的03牌双字制作范围，不单独增用户门禁。",
+    "2026-10-09 Producer 核三项 Required SOURCE_NOTES.md、SOURCE_MANIFEST.json、sign_glyph_xiankao_candidate_v04.png 均实存；Master 已查看同蓝底原像素与390视窗，并决定由父 Art 采用同源双字候选。该源仍标 ART_CANDIDATE_NOT_VISUAL_PASS_NOT_GATE2，故本子任务 READY→REVIEW 表示候选源交父组装，不独立 DONE、USER_APPROVED 或解锁 Client；最终结果并入父 v0.4 Gate2。"
+  ]
+}

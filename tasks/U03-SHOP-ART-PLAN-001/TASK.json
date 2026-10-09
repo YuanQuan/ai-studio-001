@@ -1,0 +1,45 @@
+{
+  "id": "U03-SHOP-ART-PLAN-001",
+  "title": "单元示例 U03 六店正式资源制作方案与视觉锚点 Gate1",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "以用户已批准的 U03-SHOP-SCOPE-001 v0.1 和本次参考图为正式输入，为奶茶、糖画、炭烤、理发、花灯、投壶六店提交可审阅的正式资源制作前方案：六店独有牌匾、奶茶与理发去屋顶大 LOGO 后的补画、独立多图层 PSD/输出边界、来源权利与切图协作；经 Art/Tech/Client/Master 同版评审后进入制作前用户审批，不在本任务生成正式图片。",
+  "inputs": [
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/PRD.md、ACCEPTANCE.md、CHANGE_IMPACT.md（USER_APPROVED）",
+    "tasks/U03-SHOP-SCOPE-001/ARTIFACT_APPROVAL.json（v0.1 USER_APPROVED）",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/reference/user_shop_reference.png（SHA256 658EF6718C0A030CC59D469128D20B877DB81984F601081151F977FC7110ECCB，参考而非正式六店图源）",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md 与 scenes/night-market-selected-reference.png（已批风格/未加宽比例参考，非本次图的替代）",
+    "project/ART_GUIDE.md、project/ASSET_HANDOFF_REGISTRY.md、rules/visual_production_contract.md、rules/artifact_contract.md",
+    "用户对本次附件商业使用及改编权的补充确认如有，应记录原话与范围；无确认则标未知，不能冒充已核权利"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/SIX_SIGNBOARD_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/CUT_COLLABORATION_PLAN.md",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/DELIVERABLE.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/TECH_PREFLIGHT_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/art/U03-SHOP-ART-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-ART-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "明确最新附件与旧第一街 v0.4 的同异，逐店锁定非像素中式夜市轮廓、比例、材质、冷暖光与实际单店展示尺度，且不把两桥/阎罗殿或相邻店带入每张店图。",
+    "六店各有区别于其他店的牌匾文字语义、外形、材质/颜色和计划挂位；奶茶与理发去屋顶大杯/剪刀后列出瓦面、屋脊、光影和透明边的补画范围，保留店型身份。",
+    "说明六张独立可编辑多图层 PSD 母版、店体/牌匾/前后遮挡与可选公共底景的对象边界、计划稳定资产 ID、美术实际或计划路径、Client 计划路径及未导入 UUID 状态，不从合成全景直接裁六店。",
+    "记录本次附件、旧参考、字体与工具的来源/权利及可识别相似风险；不把用户选择图片或以前四层图组权利声明误当成本附件独立权利证明，未确认项如实标记并设置正式出图停止条件。",
+    "区分本方案 Gate1、首张正式样张前 Art/Tech 同批预签、代表样张/全量资源、切片与同尺度重组 Gate2、Client 正式接入和 QA 运行；不把方案 Review 当成任何图片或运行通过。",
+    "Art、Tech Lead、Client 与 Master 对同一 v0.1 方案完成 Review，12/12 Required 路径及 DELIVERABLE 索引一致；Producer 送 USER_REVIEW 后只等待用户对本制作方案版本的明确决定。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "ART-DIRECTION-FIRST-STREET-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 在 Product v0.1 获用户明确批准后创建；本 Task 是正式资源制作前方案 Gate1，未批准前只可进行只读核验、文字规划和非正式示意，不得制作拟进入正式资源的 PSD、样张或切片。",
+    "首图前 Art/Tech 对具体批次同版预签与切片效果 Gate2 另设后续任务；用户批准本方案也不自动批准正式图片或 Cocos 接入。"
+  ]
+}

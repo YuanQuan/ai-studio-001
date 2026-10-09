@@ -1,0 +1,46 @@
+{
+  "id": "U03-SHOP-SCOPE-001",
+  "title": "单元示例 U03 六类店铺单店切换产品范围",
+  "type": "feature",
+  "owner": "product",
+  "parent": null,
+  "objective": "根据用户 2026-10-06 指定的第一街参考图，定义 U03 只显示一间店铺并可通过控件切换六类店铺的可验收范围；奶茶店和理发店取消屋顶大 LOGO，六店各用不同牌匾且牌匾位置可不同，形成后续美术、交互、技术、客户端与测试的正式审批输入。",
+  "inputs": [
+    "用户 2026-10-06 指令及图片；只读副本：deliverables/product/U03-SHOP-SCOPE-001/v0.1/reference/user_shop_reference.png",
+    "deliverables/art/ART-DIRECTION-FIRST-STREET-001/v0.4/SELECTED_REFERENCE.md（此前选定的视觉方向）",
+    "deliverables/product/PRODUCT-001/v0.20/SCENE_PRESENTATION.md（六店身份与第一街顺序；该完整版本审批状态须另核）",
+    "deliverables/product/UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001/v0.2/PRD.md（已批准的当前唯一 U01 菜单基线）",
+    "project/changes/CP-U02-TOURIST-20261006.md（进行中的 U02 菜单提案，不能视作已批准）",
+    "apps/client/assets/UnitSampleGallery.ts 与当前工作区差异"
+  ],
+  "deliverables": [
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/reference/user_shop_reference.png",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/PRD.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/ACCEPTANCE.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/FLOW.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/PRODUCT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/TECH_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/product/U03-SHOP-SCOPE-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-SCOPE-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "明确 U03 六个切换项的店铺身份、初始店、单店可见、前后或直接切换、切换后的名称与画面一致，以及返回再进入的默认状态；不添加经营、数值或新店铺玩法。",
+    "明确所有店铺使用互不相同的可读牌匾，可因店型调整牌匾位置；奶茶店与理发店屋顶没有大 LOGO；以用户附件的非像素二维中式夜市材质与比例作为视觉基线。",
+    "界定参考全景、旧孟桃奶茶概念和 U01 四层背景的权利/资源/审批关系，不将合成全景裁切或旧概念直接当正式 U03 店铺资源。",
+    "说明与已批准 U01 唯一菜单和进行中 U02 的导航变更、Art 制作两次门禁、Tech/UI/Client/QA 下游任务关系，保留历史版本。",
+    "同版 Product、Art、Tech Lead、UI、Client、QA、Master Review 完成且 Required 路径存在；进入 USER_REVIEW 后等待用户对 v0.1 明确决定，批准前不正式生产图片或修改 Cocos 运行菜单。"
+  ],
+  "dependencies": ["UNIT-SAMPLE-SINGLE-ENTRY-SCOPE-001", "ART-DIRECTION-FIRST-STREET-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 依据用户 2026-10-06 新请求创建正式产品范围任务。附件为参考图而非直接可用的六张独立店铺资源。",
+    "用户已明确 U03 的视觉与交互方向；正式产品版本、资源制作方案、切图效果、客户端实现和 QA 结果各按独立 Artifact 门禁推进。"
+  ]
+}

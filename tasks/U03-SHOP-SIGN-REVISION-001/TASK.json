@@ -1,0 +1,51 @@
+{
+  "id": "U03-SHOP-SIGN-REVISION-001",
+  "title": "U03 已确认牌匾效果的正式资源定向修订",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "基于当前已批准六店 PSD，定向实现用户已采纳的六店牌匾样式，保留1024×1024画布、脚点(512,900)、近正面视角及body/sign两片契约；完成制作方案审批、实际切片审批后再替换客户端资源。",
+  "inputs": [
+    "用户2026-10-08指令：好的按照这个样式正式替换U03的资源",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json（已批准原正式PSD/切片）",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/mixed_signs_v04/six_shop_mixed_signs_overview.png（当前六店视觉方向）",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/preview/main_scene_mixed_signs_v01/main_scene_six_shops_overview.png（用户采纳的整体效果）",
+    "rules/visual_production_contract.md、rules/approval_protocol.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/SOURCE_FEASIBILITY.md",
+    "deliverables/tech_lead/U03-SHOP-SIGN-REVISION-001/v0.1/TECH_PREFLIGHT.md",
+    "tasks/U03-SHOP-SIGN-REVISION-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/ART_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-SIGN-REVISION-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/CUT_MANIFEST_V02.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/DIFF_AND_RECOMPOSITION_REPORT.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.2/ART_PRODUCTION_PRESIGN_V02.json",
+    "deliverables/tech_lead/U03-SHOP-SIGN-REVISION-001/v0.1/TECH_PRODUCTION_PRESIGN_V02.json",
+    "tasks/U03-SHOP-SIGN-REVISION-001/ARTIFACT_APPROVAL_GATE2.json"
+  ],
+  "acceptance": [
+    "制作方案说明六店实际修改层、来源/字体许可、尺寸/脚点、遮挡和切图策略；用户批准确切方案前不生成正式图片/PSD/切片。",
+    "仅基于现有PSD和图层定向修改，不整体重绘，不把生成式全景或总览直接裁成正式整店。",
+    "01右檐小木牌奶茶logo；02车前小糖牌；03现烤；04剪梳；05花灯；06投壶符合当前用户已选方向。",
+    "实际切片完成后直接提交用户审核，另获确切版本批准后才能正式接入Client；不得将方向选择与切片批准混同。"
+  ],
+  "dependencies": [
+    "U03-SHOP-ASSET-001"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 本轮分派 Art 制作方案与 Tech 工程预查；禁止修改大量既有U01/U02未提交改动。",
+    "现行工作流要求制作方案与实际切片两个独立门禁；用户本次确认视觉样式并授权开始正式替换流程，未出现过的新PSD和PNG尚无确切版本批准。",
+    "2026-10-08 Art方案三份和Tech预查实存后，Master同步IN_PROGRESS；只推进方案评审，不安排正式资源输出或客户端替换。",
+    "用户明确批准 v0.2 制作方案进入制作。Gate1记录保持独立，新实际六PSD/12PNG/重组与双视窗路径由CUT_MANIFEST_V02.json逐项列明并受验收约束；未来Gate2另用ARTIFACT_APPROVAL_GATE2.json；Client在Gate2用户批准前不得替换。",
+    "2026-10-08 Master接受Task四条验收到DELIVERABLE五项的主题映射：Task 1→交付1+4，Task 2→交付2，Task 3→交付2+3，Task 4→交付5（Gate2用户决定及Client接入仍NOT_TESTED）。此映射不将末项推为PASS；用户仍须审核确切切片版本。",
+    "Gate2 v0.2 USER_APPROVED 和本 Art 批次 DONE 为当时的历史决定。后续用户对照 mixed_signs_v04 提出实际效果还原异议，Master 正解释原因并暂停 Client 后续接入验证；这不静默撤销旧批准，也不授权新整店重绘或新资源版本。"
+  ]
+}

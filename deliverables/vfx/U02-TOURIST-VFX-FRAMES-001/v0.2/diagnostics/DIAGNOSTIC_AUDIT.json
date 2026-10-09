@@ -1,0 +1,108 @@
+{
+  "version": "v0.2",
+  "status": "DIAGNOSTIC_NOT_FORMAL",
+  "createdAt": "2026-10-08T14:29:42.655Z",
+  "old": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.1/frames/ug_ghost_01_sad_05.png",
+  "fixed": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/diagnostics/sad05-lighter.png",
+  "changedPixels": 364,
+  "opaqueInteriorChangedBeyond1": 0,
+  "maxInteriorRgbDifference": 1,
+  "samples": [
+    {
+      "x": 317,
+      "y": 194,
+      "old": [
+        254,
+        241,
+        221,
+        194
+      ],
+      "fixed": [
+        253,
+        240,
+        221,
+        253
+      ]
+    },
+    {
+      "x": 320,
+      "y": 194,
+      "old": [
+        254,
+        240,
+        221,
+        190
+      ],
+      "fixed": [
+        253,
+        240,
+        222,
+        253
+      ]
+    },
+    {
+      "x": 316,
+      "y": 197,
+      "old": [
+        251,
+        238,
+        222,
+        199
+      ],
+      "fixed": [
+        252,
+        239,
+        222,
+        253
+      ]
+    },
+    {
+      "x": 350,
+      "y": 255,
+      "old": [
+        22,
+        16,
+        67,
+        253
+      ],
+      "fixed": [
+        22,
+        16,
+        67,
+        253
+      ]
+    },
+    {
+      "x": 355,
+      "y": 275,
+      "old": [
+        24,
+        22,
+        78,
+        253
+      ],
+      "fixed": [
+        24,
+        22,
+        78,
+        253
+      ]
+    }
+  ],
+  "comparison": "diagnostics/sad-seam-before-after.png",
+  "columns": [
+    "v0.1 source-over",
+    "v0.2 lighter"
+  ],
+  "rows": [
+    "black",
+    "gray",
+    "white"
+  ],
+  "visualOwnerCheck": "PASS",
+  "visualFindings": [
+    "亲自查看黑/灰/白三底前后对照，修正后的脸矩形暗缝消失，无新增亮边或肉眼色偏。",
+    "保持伤心五官形状和同一刚体姿态，主体轮廓与边缘无改动。",
+    "仅364像素变化；原opaque区域RGB最大通道差1，没有>1的内区域色差。接缝alpha194/190/199均恢复253。"
+  ]
+}

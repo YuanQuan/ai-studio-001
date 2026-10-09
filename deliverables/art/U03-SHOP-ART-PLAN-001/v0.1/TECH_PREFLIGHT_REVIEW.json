@@ -1,0 +1,36 @@
+{
+  "task_id": "U03-SHOP-ART-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版 v0.1 六份制作方案与 DELIVERABLE.json、ART_REVIEW.json 已核对。六店各自独立多图层 PSD，店体、牌匾、前后遮挡、静态暖光和可选公共底景的对象边界清楚；不得从六店全景裁块，也不把桥、殿或相邻店烘进单店图。本结论只批准 Gate1 文字方案的技术可执行性，不是实图、切片或 Creator 运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现有 Creator 3.8.8 工程设计分辨率为 720×1280，fitWidth/fitHeight 均为 true。方案已列 720×1280 与 390×844 两种候选竖屏同尺度审阅视窗，逐店记录实际可见视口、DPR、安全区、店体及六块牌匾投影像素、字笔画辨识、alpha 裕量与 UI 遮挡；牌匾位置可以不同，但切换后只保留当前店。候选视窗不代表目标设备或可读性已实测通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ASSET_MANIFEST.md 将六张 PSD、六店导出、审阅重组和可选公共底景全部标为计划；Creator 路径是 snake_case 命名提案，UUID 待真实导入后生成，PSD 与审阅图不作运行纹理。首图前须核准唯一稳定 ID、具体导出文件/Prefab 路径与图层映射；接入后由 Client 回填实际 hash、image/Texture2D/SpriteFrame 及 Prefab/Scene UUID 到 project/ASSET_HANDOFF_REGISTRY.md，不可用 U01 既有 UUID 或计划路径冒充。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "依 DEC-UNIT-FINAL-ASSET-004，U03 与未来主体必须共用同一正式源、导出和运行资源。已批技术管线的 MT_SHOP_01 是奶茶店归属 ID，既有 MT_SHOP_STATIC_01 与 MT_SHOP_MOTION_01 是其静态/动态子对象候选；本案 U03_SHOP_01_* 与这些身份、Prefab 的继承或替换关系尚未锁定。方案已将其设为首图前 Art/Tech 核定项；若需变更跨任务身份或已批契约，交 Master 组织变更评审，不得产生 Lab 专用的平行正式奶茶店。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "本次附件商用改编权、六块牌匾及界面所用字体的实际嵌入/分发/修改许可、正式工具与外来素材来源尚未核清。RIGHTS_AND_SOURCE.md 已设置正式 PSD 与首张样张前的停止条件；此项不妨碍审阅文字方案，但在权利来源明确或换用权利清晰的原创方案并完成受影响评审前，不得出正式图片。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前没有 U03 实图尺寸、图集页、alpha 范围、纹理格式、加载策略或设备阈值，不能报纹理内存、DrawCall、加载时间或目标机性能 PASS。首图前同批预签须记录画布与导出页实际宽高、单店同时可见范围、六店预加载/按需加载策略及候选设备；未压缩 RGBA8 基础纹理量按各实际页宽×高×4 字节估算，并另列 mipmap、压缩回退和加载峰值假设。正式实图、Creator 导入及运行阶段分别复核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "流程已区分 Gate1 制作方案用户批准、首图前 Art/Tech 同批预签、代表样张和全量复签、实际切片与同尺度重组的 Gate2 用户批准，以及其后的 Client 正式接入和 QA 运行。组织 Agent 自行切图时依契约直接提交实际切片与重组给用户审核，不增设切图效果专业复审；Gate1 技术 Review 不替代这两次用户审批。"
+    }
+  ],
+  "next_action": "请 Client 与 Master 继续审同一 v0.1；Producer 核对 12/12 Required 后提交 Gate1 USER_REVIEW。用户明确批准方案且权利停止条件解除后，Art 与 Tech Lead 在首张正式图前对同一批次签认来源、唯一资源 ID/Prefab 映射、画布与竖屏投影、牌匾安全区、PSD 图层/支点、导出范围、纹理和加载预算；真实切片 Gate2 与 Cocos/QA 证据另行形成，不得据本预审开工或接入。"
+}

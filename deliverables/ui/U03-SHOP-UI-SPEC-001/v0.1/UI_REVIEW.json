@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "reviewer": "ui",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "六店 01–06 单店循环、当前名称/店图/牌匾一致、快切从最新 desiredIndex 递推且 presentedIndex 始终指向可见店、目标回到当前店时撤销待切换、返回重入复位 01 的规格已覆盖。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280 与 390×844 候选竖屏的安全区、控件命中和六种牌匾挂位避让已给可复核方案；两张 SVG 明确仅为审阅示意。"
+    },
+    {
+      "severity": "INFO",
+      "message": "现行 UnitSampleGallery.ts 只有 U01，U02 Product v0.1 虽已批准但尚非已实现入口；本版导航以实际获批并接入状态为准。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "实际六店图片、目标设备字形与安全区未测；参考图片和正式字形权利尚未确认，UI 规格不能当作正式资源或运行验证。"
+    }
+  ],
+  "next_action": "交 Art 视觉一致性、Tech、Client、QA 影响 Review 和 Master 综合 Review；通过后由 Producer 送用户审阅 UI v0.1。"
+}

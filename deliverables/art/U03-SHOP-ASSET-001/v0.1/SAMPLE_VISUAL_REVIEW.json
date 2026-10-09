@@ -1,0 +1,32 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "此结论仅限 U03-SAMPLE-A 的 01 奶茶代表样张，不是六店全量或 Gate2。实图 preview/milk_tea_sample.png 与 psd/shop_01_milk_tea.psd 来自已双签首图前预案；源图、准确提示词、工具默认输出和 SHA-256 在 source/GENERATION_LOG.md，样张各文件哈希见 preview/SAMPLE_SOURCE_MANIFEST.json。"
+    },
+    {
+      "severity": "INFO",
+      "message": "按已批 VISUAL_ANCHORS：01 独立单店、蓝灰瓦屋顶和正脊连续、屋顶无大杯/吸管、木结构与浅窗棚、饮品瓶罐/冲泡设备/服务开口、冷蓝暗部配暖橙营业灯逐项 PASS；画面无相邻店、桥、阎罗殿、人物或鬼。证据为 preview/milk_tea_sample.png、source/shop_01/milk_tea_imagegen_raw.png 与 preview/milk_tea_alpha_black_gray_white.png。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立木框浅杏纸芯横匾位于奶茶窗上檐和瓦屋顶下，原创逐笔「奶茶」与纸芯为深浅高反差；牌中增加手工木纹/纸纹而仍保持短横向轮廓。没有使用参考伪字、现成字体轮廓或系统字。SVG 字稿 source/lettering/sign_01_milk_tea.svg、制作脚本和 PSD sign_board/sign_glyph/sign_hardware 三层可追溯；木牌覆盖白布窗棚的中央上段，但营业窗口、瓶罐和冲泡设备无遮挡。"
+    },
+    {
+      "severity": "INFO",
+      "message": "静态 720×1280 和 390×844 单店 contain 视窗均完整见 roof/sign/window/ground，控件候选安全盒不遮牌。按最保守完整 1024 画布在 390 宽投到 316 CSS px：奶字实测源高 88→27.16 CSS px，茶字 95→29.32 CSS px；9px 原创笔宽→2.78 CSS px，超过本批候选 24/2 检查线。若按记录 sourceRect=(100,130,900,930) 无形变 trim 投影，字会更大；两种证据在 preview/*projection.png 与 preview/SAMPLE_METRICS.json。此为静态模拟，不冒称 Cocos Web、DPR 或设备安全区实测。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "黑/灰/白底检查显示右侧暖灯边缘有少量暖红半透明细点、底部接地影在白底更显灰；在本批深蓝候选背景和 390 宽展示未形成明显黑边、白边或旧店残影。后续 Tech/Client 若目标底色或纹理采样暴露边缘缺陷，应在当前 PSD/源层针对性修边并复核视觉，不以整店重生图替换。证据 preview/milk_tea_alpha_black_gray_white.png；Creator 真机和导入混合 NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "PSD 修订后含 10 个非空 RGBA 栅格层，其中九个语义工作层可见，最底 reference_source 隐藏且不导出。首次十层版误判图层 flags，使眼睛状态反向；错误文件及哈希留在 history，见 EDITABILITY_REPORT.md。正式母版 SHA-256 为 0018C986F6B08F71268BC14F0A0E0575EE4E0EAE73E73EB1351063A2B3D76AAC；独立 Node PSD 解析器实读九工作层 flags=0/visible=true、参考层 flags=2/visible=false，见 INDEPENDENT_VISIBILITY_REPORT.json。直接从正式 PSD 的九个可见 RGBA 通道重新合成透明图，与样张仅有 27 像素、最大 1/255 的 alpha 舍入差；PSD 缓存 RGB 预览重新导出与既有正确预览像素完全相同，见 PSD_RECOMPOSITION_REPORT.json。两张样张 body/sign PNG 重组与 preview/milk_tea_sample.png 全画布 RGBA 差异 0。只改 sign_glyph 的探针 PSD 重开后变化 112 像素，均在牌内，见 EDITABILITY_REPORT.json。原平面源遮挡背后没有恢复，不能冒称原生全结构可编辑；Photoshop/Photopea 手工保存测试 NOT_TESTED。"
+    }
+  ],
+  "next_action": "请 Tech Lead 对本首样实际 PSD、两张候选 PNG、alpha/页数/纹理面积、390 宽字牌投影与同尺度重组提交独立 SAMPLE_TECH_REVIEW.json；Art/Tech 双通过后仍需 U03 六店全量批次的 Art/Tech 复签，方可制作 02–06。实际六店切片 Gate2 另由用户批准。"
+}

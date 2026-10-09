@@ -1,0 +1,34 @@
+{
+  "id": "U03-SHOP-VISUAL-FIDELITY-003-ART-02",
+  "title": "U03 店铺02 同批牌面候选源制作",
+  "type": "art",
+  "owner": "art",
+  "parent": "U03-SHOP-VISUAL-FIDELITY-003",
+  "objective": "在已批准同批生产范围内制作独立牌面候选源，交同阶段Art母版Owner筛选和组装，不独立替换正式资源。",
+  "inputs": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/FULL_BATCH_LIGHT_R3_PRODUCTION_ADDENDUM.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/ART_BATCH_EXPANSION_PRESIGN_02_06.json",
+    "deliverables/tech_lead/U03-SHOP-VISUAL-FIDELITY-003/v0.1/TECH_BATCH_EXPANSION_PRESIGN_02_06.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/source/parallel_shop_02/SOURCE_NOTES.md",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.3/source/parallel_shop_02/SOURCE_MANIFEST.json"
+  ],
+  "acceptance": [
+    "符合确切全批预案，不改店体，不增加新设计。",
+    "候选源、文字许可和制作过程可追溯；交主Art实际审核，不宣称最终效果通过。",
+    "只写分配的parallel_shop目录，不覆盖共享母版/清单；最终切片由父Task统一Gate2。"
+  ],
+  "dependencies": [
+    "U03-SHOP-VISUAL-FIDELITY-003"
+  ],
+  "status": "REVISION",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master正式分派的同阶段Art生产子任务，制作方案/首图预签沿用父批次已授权的02–06范围；候选源不直接下发Client。",
+    "SOURCE_NOTES.md 与 SOURCE_MANIFEST.json 已实存；父 Art 的 r3-light-middle PSD_LAYER_EXPORT_MAP.md 记录板与勺浆两候选源进入 02 正式母版，A/B/C 与宽板未入。候选阶段交付已完成并进入父批次审核归并，父 Gate2 未获用户决定，故本子任务不登记独立 DONE 或正式资源批准。",
+    "实际候选源/SOURCE_NOTES/SOURCE_MANIFEST已交付，主Art已筛选组装至父批次r3-light-middle实际PSD与切片；候选阶段不单独新增用户门禁，父批次Gate2当前仍待具体实片用户批准。",
+    "2026-10-09 00:28:27 +08:00 随父批次确切实片统一送 Gate2 USER_REVIEW；本状态仅表示候选源已归并在父审阅包，不是02单独的用户审批请求，用户未决定前仍非 DONE。",
+    "2026-10-09 00:30:55 +08:00 父 v0.3 Gate2 用户退回，两源子任务随父批次归并状态转 REVISION；本02候选未被指出缺陷，文件留历史供v0.4按Master范围沿用，不重开独立用户审批或改写候选源。"
+  ]
+}

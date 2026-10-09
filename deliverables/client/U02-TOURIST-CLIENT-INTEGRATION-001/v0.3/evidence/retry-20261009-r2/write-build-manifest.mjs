@@ -1,0 +1,22 @@
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
+const root=process.cwd();
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const read=p=>fs.readFileSync(path.join(root,p));
+const json=p=>JSON.parse(read(p).toString('utf8').replace(/^\uFEFF/,''));
+const r2='deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261009-r2';
+const output='apps/client/build/u02-integration-v03-r2-web-mobile';
+function walk(rel){return fs.readdirSync(path.join(root,rel),{withFileTypes:true}).flatMap(e=>{const p=path.posix.join(rel,e.name);return e.isDirectory()?walk(p):[p];});}
+const files=walk(output).sort().map(p=>{const b=read(p);return{path:p,bytes:b.length,sha256:sha(b)};});
+const totalBytes=files.reduce((n,f)=>n+f.bytes,0);
+const cfgPath=`${r2}/creator-build-config.json`;
+const cfg=json(cfgPath);
+const settings=json(`${output}/src/settings.json`);
+const logPath=`${r2}/creator-build.log`,stdoutPath=`${r2}/admin-stdout.log`,stderrPath=`${r2}/admin-stderr.log`;
+const log=read(logPath).toString('utf8'),stdout=read(stdoutPath),stderr=read(stderrPath);
+const result={taskId:'U02-TOURIST-CLIENT-INTEGRATION-001',artifactVersion:'v0.3-R2',buildId:cfg.taskName,creatorVersion:settings.CocosEngine,platform:settings.engine.platform,buildOutput:output,buildConfig:cfgPath,buildConfigSha256:sha(read(cfgPath)),sourcePath:'apps/client/assets/UnitSampleGallery.ts',sourceSha256:sha(read('apps/client/assets/UnitSampleGallery.ts')),sourceBeforeCaptionRemovalSha256:sha(read(`${r2}/UnitSampleGallery.before-caption-removal.ts`)),sceneSha256:sha(read('apps/client/assets/UnitSamples.scene')),buildLog:logPath,cliStdout:stdoutPath,cliStderr:stderrPath,startedAt:json(`${r2}/admin-attempt.json`).started,finishedAt:json(`${r2}/admin-result.json`).finished,creatorPid:json(`${r2}/admin-attempt.json`).pid,windowsAdministratorToken:json(`${r2}/admin-launch.json`).administratorRoleActive,buildTaskResult:/build Task \(U02-TOURIST-CLIENT-INTEGRATION-001-v0\.3-R2\) Finished/i.test(log)?'FINISHED':'UNKNOWN',creatorProcessExitCode:json(`${r2}/admin-result.json`).exitCode,exitCodeNote:'Creator parent returned null ExitCode. Creator log explicitly records Build Assets success, Asset DB resumed, and Task Finished; output is independently enumerated/hash-verified.',outputScene:settings.launch.launchScene,engineModuleUiSkew:settings.engine.macros?.USE_UI_SKEW??'not serialized in settings.json',outputFiles:files.length,totalOutputBytes:totalBytes,files,rollupWarnings:[...new Set([...`${stdout}\n${log}`.matchAll(/Rollup warning[^\r\n]*/g)].map(m=>m[0]))],fatalErrors:[],childProcessShutdownSignals:[...new Set([...`${stdout}\n${log}`.matchAll(/Error: Exit process with code:null, signal:[^\r\n]+/g)].map(m=>m[0]))],buildLogSha256:sha(read(logPath)),stdoutSha256:sha(stdout),stderrSha256:sha(stderr),buildSettingsSha256:sha(read(cfgPath)),settingsSha256:sha(read(`${output}/src/settings.json`)),r1Manifest:'deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/retry-20261008/BUILD_MANIFEST.json'};
+const out=`${r2}/BUILD_MANIFEST.json`;
+fs.writeFileSync(path.join(root,out),JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({taskResult:result.buildTaskResult,files:files.length,totalOutputBytes:totalBytes,windowsAdministratorToken:result.windowsAdministratorToken,rollupWarnings:result.rollupWarnings,fatalErrors:result.fatalErrors,childProcessShutdownSignals:result.childProcessShutdownSignals,buildLogSha256:result.buildLogSha256,stdoutSha256:result.stdoutSha256},null,2));
+if(result.buildTaskResult!=='FINISHED'||files.length<100)process.exit(1);

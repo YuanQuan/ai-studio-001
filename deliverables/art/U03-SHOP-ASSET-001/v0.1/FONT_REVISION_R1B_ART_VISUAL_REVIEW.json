@@ -1,0 +1,15 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "batch_id": "U03-SIGN-FONT-R1B",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "reviewed_build_report_sha256": "5CB5BD574D6AD9463B3853FD55212912FB305FF1FA15D0E84A2A8DFC787DEA49",
+  "reviewed_verification_sha256": "C126D7ED602EDFCC3D18ED5D3980E074A5B2DBA10EB8E9005B2DB08BCB80A8B9",
+  "reviewed_cut_manifest_sha256": "756CDE8EA8E80AD372653FF444CC53B0B5A69A9A24DDA76BFB1E4A8109A1B9D7",
+  "findings": [
+    "R1 原字体候选的部分书法细笔未达到预案 390 视口有效宽线，故保留 R1 文件和哈希为退回历史。R1B 仅在原 sign_glyph 牌内调整 alpha 笔宽：六店常规 5×5，05「花」局部 7×7；字体、牌文、字盒、牌底、挂件与店体不变。",
+    "六店同尺度重组总览 preview/font_revision/six_shop_font_r1b_gate2_same_scale_overview.png 已逐店目视：牌文字义和阅读顺序正确，字与牌底对比足，字间和牌边留白仍在；05「花」偏厚但仍辨字、未与「灯」或牌框粘连。",
+    "奶茶与理发屋顶无大 LOGO；六牌形制/挂位各异，营业物件无遮挡；六张 390×844 全图保持同脚线与统一 316 CSS px 源显示宽。四底 alpha 图需由 Tech 独立后验。",
+    "本 Art 结论只认 R1B 清单 SHA，不追认 R1。Tech 后验、用户 Gate2 和 Creator 实际运行仍是独立门禁。"
+  ]
+}

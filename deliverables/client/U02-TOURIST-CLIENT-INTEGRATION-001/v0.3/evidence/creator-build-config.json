@@ -1,0 +1,59 @@
+{
+  "platform": "web-mobile",
+  "taskName": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3",
+  "name": "bai-gui-night-market-demo",
+  "buildPath": "D:/work/ai-studio-template/ai-studio-001/apps/client/build",
+  "outputName": "u02-integration-v03-web-mobile",
+  "logDest": "D:/work/ai-studio-template/ai-studio-001/deliverables/client/U02-TOURIST-CLIENT-INTEGRATION-001/v0.3/evidence/creator-build.log",
+  "debug": false,
+  "scenes": [
+    {
+      "url": "db://assets/UnitSamples.scene",
+      "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+    }
+  ],
+  "startScene": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+  "mainBundleCompressionType": "merge_dep",
+  "packages": {},
+  "server": "",
+  "engineModulesConfigKey": "defaultConfig",
+  "buildMode": "normal",
+  "mangleProperties": false,
+  "md5Cache": false,
+  "skipCompressTexture": false,
+  "sourceMaps": false,
+  "overwriteProjectSettings": {
+    "includeModules": {
+      "gfx-webgl2": "on",
+      "physics": "inherit-project-setting",
+      "physics-2d": "inherit-project-setting"
+    },
+    "macroConfig": {
+      "cleanupImageCache": "inherit-project-setting"
+    }
+  },
+  "nativeCodeBundleMode": "both",
+  "polyfills": {
+    "asyncFunctions": true
+  },
+  "experimentalEraseModules": false,
+  "startSceneAssetBundle": false,
+  "bundleConfigs": [],
+  "inlineEnum": true,
+  "useBuiltinServer": false,
+  "md5CacheOptions": {
+    "excludes": [],
+    "includes": [],
+    "replaceOnly": [],
+    "handleTemplateMd5Link": true
+  },
+  "mainBundleIsRemote": false,
+  "useSplashScreen": true,
+  "bundleCommonChunk": false,
+  "packAutoAtlas": true,
+  "wasmCompressionMode": false,
+  "binGroupConfig": {
+    "threshold": 16,
+    "enable": false
+  }
+}

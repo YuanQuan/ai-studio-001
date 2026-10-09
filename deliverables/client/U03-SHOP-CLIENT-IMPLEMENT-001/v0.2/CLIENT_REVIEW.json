@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-CLIENT-IMPLEMENT-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Owner v0.2 自检只补充已批准 Client v0.1/R3 的证据：重核 107/107 构建文件、17/17 原始 IAB 文件以及 11/11 份复用原始材料的哈希；两视口六店图、反向六步、20 次连按终态 03、10 次重入 01 与 U01/U02 基本冒烟均列出实际路径和限定结论。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "逐帧原子性、旧回调、加载乱序和四类故障/重试均无受控运行证据；真实触摸与同手势去重、GPU驻留、帧时/DrawCall、冷热时延和目标平台亦未测。自检已将这些项标为 NOT_TESTED，没有把截图或 48MiB 静态计算当作动态性能 PASS。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本自审适用最新单元示例 Owner 留证规则，不沿用已取消示例 QA 任务的报告结论，不变更 Client v0.1/R3 的 USER_APPROVED 版本或代码/资产。Client 自审 APPROVED 仅确认 v0.2 文档与证据边界相称，最终接受由 Master 决定。"
+    }
+  ],
+  "next_action": "请 Tech/UI/Art 按受影响证据做必要复核，Producer 登记 v0.2 自检的实际版本与路径；Master 基于已批 v0.1/R3 和本版限定自检决定示例最终接受，未测性能/触控/故障保持原结论。"
+}

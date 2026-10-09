@@ -1,0 +1,82 @@
+{
+  "batch_id": "U03-SHOP-FAITHFUL-REDRAW-V03",
+  "shop": "shop_02",
+  "revision": "light-r3",
+  "body_reused_byte_identical": true,
+  "body_sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+  "board_source": "source\\parallel_shop_02\\board_tall_raw.png",
+  "board_source_sha256": "E2E7BFA7853C4A6227FAB802DEF4CDC4FD0E139764012E2CDCEDF6A66205B105",
+  "spoon_source": "source\\parallel_shop_02\\spoon_syrup_raw.png",
+  "spoon_source_sha256": "5DAF1145E4FCA1F43B507BB7E43E0CB3013D99CFF6D15748A7B87A9F255C1588",
+  "formal_glyph_source": "v0.2\\source\\psd_work_r2\\shop_02\\layer_sources\\sign_glyph_reused_sugar.png",
+  "formal_glyph_sha256": "671874A020AFBC180B458BA1EAF26641E37BE5A5018FCA442D0C2FED575A2645",
+  "board_raw_alpha16_bbox": [
+    164,
+    129,
+    723,
+    1635
+  ],
+  "spoon_raw_alpha16_bbox": [
+    61,
+    28,
+    1265,
+    1148
+  ],
+  "board_placed_bbox": [
+    685,
+    627,
+    820,
+    890
+  ],
+  "spoon_placed_bbox": [
+    710,
+    647,
+    794,
+    737
+  ],
+  "glyph_placed_bbox": [
+    713,
+    751,
+    791,
+    830
+  ],
+  "sign_changed_bbox_vs_v02": [
+    685,
+    627,
+    820,
+    890
+  ],
+  "psd": {
+    "path": "psd\\shop_02_sugar_light_r3_v03.psd",
+    "sha256": "C840C76ECA3600CF01D44E5C78A9B05B19D9588D6786884C3B4E37CD5CBEA0C4"
+  },
+  "body": {
+    "path": "exports\\shop_02_light_r3\\tex_u03_shop_02_body_light_r3_v03.png",
+    "sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56"
+  },
+  "sign": {
+    "path": "exports\\shop_02_light_r3\\tex_u03_shop_02_sign_light_r3_v03.png",
+    "sha256": "9FCCA4C67E6F9102846CA66A9861BA878F394E86D9F1EC2BF37344D485245F3C",
+    "alpha_bbox": [
+      685,
+      627,
+      820,
+      890
+    ]
+  },
+  "recomposition": {
+    "path": "preview\\shop_02_light_r3\\shop_02_recomposed_light_r3_v03.png",
+    "sha256": "E68C0A6EF7CE2600557B0C2E8F0139DA23299A4FFCDB7EB72AB2CFD538BD8D13"
+  },
+  "layers_bottom_to_top": [
+    "reference_source",
+    "umbrella",
+    "operating_objects",
+    "light",
+    "ground_contact",
+    "sign_board_light_r3",
+    "sign_spoon_syrup_light_r3",
+    "sign_glyph_reused_sugar_small_r3"
+  ],
+  "editability_limit": "Board, spoon/syrup and resized formal 糖 glyph are three independent raster layers; source PNGs are preserved, not vector objects."
+}

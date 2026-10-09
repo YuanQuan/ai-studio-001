@@ -1,0 +1,20 @@
+{
+  "schema": "u02-r2-browser-console-window/v1",
+  "buildId": "U02-TOURIST-CLIENT-INTEGRATION-001-v0.3-R2",
+  "r2StartedAt": "2026-10-09T00:20:10+08:00",
+  "filterStartUtc": "2026-10-08T16:20:10.406Z",
+  "source": "browser-console.json",
+  "sourceEntries": 1,
+  "currentR2Entries": 0,
+  "errors": 0,
+  "warnings": 0,
+  "records": [],
+  "historicalExcluded": [
+    {
+      "level": "error",
+      "message": "Uncaught TypeError: Failed to execute 'observe' on 'MutationObserver': parameter 1 is not of type 'Node'.",
+      "timestamp": "2026-10-08T16:13:37.293Z"
+    }
+  ],
+  "note": "原始采集含R2启动前的audit harness MutationObserver错误；保留原数组。本文件只汇总R2启动后窗口，窗口内error/warning均为0。"
+}

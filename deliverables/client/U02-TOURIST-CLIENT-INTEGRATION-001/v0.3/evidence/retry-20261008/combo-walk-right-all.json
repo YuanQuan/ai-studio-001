@@ -1,0 +1,1634 @@
+{
+  "schema": "u02-read-only-runtime-audit/v1",
+  "sampledAt": "2026-10-08T16:30:17.338Z",
+  "note": "同源读取游戏当前运行态；采样页不调用游戏交互API。操作由CUA人工点击。",
+  "scene": "UnitSamples",
+  "state": {
+    "action": "walk",
+    "frameIndex": 2,
+    "phase": "playing",
+    "facing": "right",
+    "slots": {
+      "hat": "UG_ACC_HAT_01",
+      "glasses": "UG_ACC_GLASSES_01",
+      "wristband": "UG_ACC_WRISTBAND_01"
+    },
+    "generation": 5,
+    "ready": true,
+    "error": null
+  },
+  "adapter": {
+    "valid": true,
+    "failureReason": "",
+    "manifestFrames": 40,
+    "mountFrames": 40,
+    "bodyBound": 40,
+    "accessoryBound": 4,
+    "accessoryItems": 3,
+    "initialFrame": "UG_GHOST_01_WALK_00",
+    "frameCounts": {
+      "walk": 10,
+      "run": 10,
+      "happy": 10,
+      "sad": 10
+    },
+    "playback": {
+      "walk": "loop",
+      "run": "loop",
+      "happy": "loop",
+      "sad": "loop"
+    },
+    "slots": [
+      [
+        "hat",
+        true
+      ],
+      [
+        "glasses",
+        true
+      ],
+      [
+        "wristband",
+        true
+      ]
+    ]
+  },
+  "currentFrame": {
+    "frameId": "UG_GHOST_01_WALK_02",
+    "sha256": "de317025a82828f1dbd7a9e4bb7a3c50337d89b0a4f2db172eed0515473e5df6",
+    "durationMs": 133.33333333333334,
+    "playback": "loop"
+  },
+  "currentView": {
+    "root": {
+      "name": "UG_GHOST_01",
+      "active": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotationDeg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "skew": null
+    },
+    "mirrorRoot": {
+      "name": "MirrorRoot",
+      "active": true,
+      "position": {
+        "x": 0,
+        "y": -172.8,
+        "z": 0
+      },
+      "rotationDeg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1
+      },
+      "skew": null
+    },
+    "body": {
+      "name": "BodySprite",
+      "active": true,
+      "position": {
+        "x": 0,
+        "y": 184,
+        "z": 0
+      },
+      "rotationDeg": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "skew": null,
+      "frameName": "tex_ug_ghost_01_walk_02",
+      "frameUuid": "17403781-e304-48f3-aa9a-152dc7d9a205@f9941"
+    },
+    "attachments": {
+      "Back_hat": {
+        "layer": {
+          "name": "Back_hat",
+          "active": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": null,
+          "frameUuid": null
+        }
+      },
+      "Back_glasses": {
+        "layer": {
+          "name": "Back_glasses",
+          "active": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": false,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": null,
+          "frameUuid": null
+        }
+      },
+      "Back_wristband": {
+        "layer": {
+          "name": "Back_wristband",
+          "active": true,
+          "position": {
+            "x": 33.70769,
+            "y": 121.12841,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": -4.67255
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_acc_wristband_01_back",
+          "frameUuid": "6a6e67fe-5267-405c-8a41-ac11b4176b05@f9941"
+        }
+      },
+      "Front_hat": {
+        "layer": {
+          "name": "Front_hat",
+          "active": true,
+          "position": {
+            "x": 42,
+            "y": 346.20203,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_acc_hat_01_front",
+          "frameUuid": "dff7770c-9ec5-4558-9c9a-4998e52f6f57@f9941"
+        }
+      },
+      "Front_glasses": {
+        "layer": {
+          "name": "Front_glasses",
+          "active": true,
+          "position": {
+            "x": 101,
+            "y": 262.20203,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_acc_glasses_01_front",
+          "frameUuid": "e15cf814-8334-4701-aedf-4ab274c64bff@f9941"
+        }
+      },
+      "Front_wristband": {
+        "layer": {
+          "name": "Front_wristband",
+          "active": true,
+          "position": {
+            "x": 33.70769,
+            "y": 121.12841,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": -4.67255
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": {
+            "rotational": false,
+            "x": 0,
+            "y": 0
+          }
+        },
+        "sprite": {
+          "name": "Sprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_acc_wristband_01_front",
+          "frameUuid": "5934c1ac-756f-4131-bf24-47d1cad71b1e@f9941"
+        }
+      }
+    }
+  },
+  "coverage": {
+    "observedFrameCount": 3,
+    "expectedFrameCount": 40,
+    "observedActionFrameCombinationCount": 3,
+    "expectedActionFrameCombinationCount": 40,
+    "observedActionFrameCombinations": [
+      "walk:0",
+      "walk:1",
+      "walk:2"
+    ],
+    "byAction": {
+      "walk": 3,
+      "run": 0,
+      "happy": 0,
+      "sad": 0
+    },
+    "renderedFrameCount": 3,
+    "loopTransitions09to00": {
+      "walk": 0,
+      "run": 0,
+      "happy": 0,
+      "sad": 0
+    },
+    "observedStateCombinations": 6,
+    "stateCombinations": [
+      "walk|0|right|-|-|-",
+      "walk|0|right|UG_ACC_HAT_01|-|-",
+      "walk|1|right|UG_ACC_HAT_01|-|-",
+      "walk|1|right|UG_ACC_HAT_01|UG_ACC_GLASSES_01|-",
+      "walk|1|right|UG_ACC_HAT_01|UG_ACC_GLASSES_01|UG_ACC_WRISTBAND_01",
+      "walk|2|right|UG_ACC_HAT_01|UG_ACC_GLASSES_01|UG_ACC_WRISTBAND_01"
+    ],
+    "renderedFrames": [
+      {
+        "action": "walk",
+        "frameIndex": 0,
+        "facing": "right",
+        "slots": {
+          "hat": null,
+          "glasses": null,
+          "wristband": null
+        },
+        "frameId": "tex_ug_ghost_01_walk_00",
+        "frameUuid": "413f37b4-9a83-4d77-8fe7-7853fa1335ef@f9941",
+        "body": {
+          "name": "BodySprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 184,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_ghost_01_walk_00",
+          "frameUuid": "413f37b4-9a83-4d77-8fe7-7853fa1335ef@f9941"
+        },
+        "mirrorRoot": {
+          "name": "MirrorRoot",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": -172.8,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 1
+          },
+          "skew": null
+        },
+        "attachments": {
+          "Back_hat": {
+            "layer": {
+              "name": "Back_hat",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_glasses": {
+            "layer": {
+              "name": "Back_glasses",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_wristband": {
+            "layer": {
+              "name": "Back_wristband",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Front_hat": {
+            "layer": {
+              "name": "Front_hat",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Front_glasses": {
+            "layer": {
+              "name": "Front_glasses",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Front_wristband": {
+            "layer": {
+              "name": "Front_wristband",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          }
+        },
+        "firstObservedAt": "2026-10-08T16:30:17.054Z"
+      },
+      {
+        "action": "walk",
+        "frameIndex": 1,
+        "facing": "right",
+        "slots": {
+          "hat": "UG_ACC_HAT_01",
+          "glasses": null,
+          "wristband": null
+        },
+        "frameId": "tex_ug_ghost_01_walk_01",
+        "frameUuid": "235b904b-1438-48be-8d94-86920e746627@f9941",
+        "body": {
+          "name": "BodySprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 184,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_ghost_01_walk_01",
+          "frameUuid": "235b904b-1438-48be-8d94-86920e746627@f9941"
+        },
+        "mirrorRoot": {
+          "name": "MirrorRoot",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": -172.8,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 1
+          },
+          "skew": null
+        },
+        "attachments": {
+          "Back_hat": {
+            "layer": {
+              "name": "Back_hat",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_glasses": {
+            "layer": {
+              "name": "Back_glasses",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_wristband": {
+            "layer": {
+              "name": "Back_wristband",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Front_hat": {
+            "layer": {
+              "name": "Front_hat",
+              "active": true,
+              "position": {
+                "x": 42,
+                "y": 347.29061,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": "tex_ug_acc_hat_01_front",
+              "frameUuid": "dff7770c-9ec5-4558-9c9a-4998e52f6f57@f9941"
+            }
+          },
+          "Front_glasses": {
+            "layer": {
+              "name": "Front_glasses",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Front_wristband": {
+            "layer": {
+              "name": "Front_wristband",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          }
+        },
+        "firstObservedAt": "2026-10-08T16:30:17.200Z"
+      },
+      {
+        "action": "walk",
+        "frameIndex": 2,
+        "facing": "right",
+        "slots": {
+          "hat": "UG_ACC_HAT_01",
+          "glasses": "UG_ACC_GLASSES_01",
+          "wristband": "UG_ACC_WRISTBAND_01"
+        },
+        "frameId": "tex_ug_ghost_01_walk_02",
+        "frameUuid": "17403781-e304-48f3-aa9a-152dc7d9a205@f9941",
+        "body": {
+          "name": "BodySprite",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": 184,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "skew": null,
+          "frameName": "tex_ug_ghost_01_walk_02",
+          "frameUuid": "17403781-e304-48f3-aa9a-152dc7d9a205@f9941"
+        },
+        "mirrorRoot": {
+          "name": "MirrorRoot",
+          "active": true,
+          "position": {
+            "x": 0,
+            "y": -172.8,
+            "z": 0
+          },
+          "rotationDeg": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 0.9,
+            "y": 0.9,
+            "z": 1
+          },
+          "skew": null
+        },
+        "attachments": {
+          "Back_hat": {
+            "layer": {
+              "name": "Back_hat",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_glasses": {
+            "layer": {
+              "name": "Back_glasses",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": false,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": null,
+              "frameUuid": null
+            }
+          },
+          "Back_wristband": {
+            "layer": {
+              "name": "Back_wristband",
+              "active": true,
+              "position": {
+                "x": 33.70769,
+                "y": 121.12841,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": -4.67255
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": "tex_ug_acc_wristband_01_back",
+              "frameUuid": "6a6e67fe-5267-405c-8a41-ac11b4176b05@f9941"
+            }
+          },
+          "Front_hat": {
+            "layer": {
+              "name": "Front_hat",
+              "active": true,
+              "position": {
+                "x": 42,
+                "y": 346.20203,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": "tex_ug_acc_hat_01_front",
+              "frameUuid": "dff7770c-9ec5-4558-9c9a-4998e52f6f57@f9941"
+            }
+          },
+          "Front_glasses": {
+            "layer": {
+              "name": "Front_glasses",
+              "active": true,
+              "position": {
+                "x": 101,
+                "y": 262.20203,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": "tex_ug_acc_glasses_01_front",
+              "frameUuid": "e15cf814-8334-4701-aedf-4ab274c64bff@f9941"
+            }
+          },
+          "Front_wristband": {
+            "layer": {
+              "name": "Front_wristband",
+              "active": true,
+              "position": {
+                "x": 33.70769,
+                "y": 121.12841,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": -4.67255
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": {
+                "rotational": false,
+                "x": 0,
+                "y": 0
+              }
+            },
+            "sprite": {
+              "name": "Sprite",
+              "active": true,
+              "position": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "rotationDeg": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "skew": null,
+              "frameName": "tex_ug_acc_wristband_01_front",
+              "frameUuid": "5934c1ac-756f-4131-bf24-47d1cad71b1e@f9941"
+            }
+          }
+        },
+        "firstObservedAt": "2026-10-08T16:30:17.334Z"
+      }
+    ],
+    "transitions": [
+      {
+        "at": 205937.1,
+        "from": null,
+        "to": "walk:0",
+        "phase": "playing"
+      },
+      {
+        "at": 206083.5,
+        "from": "walk:0",
+        "to": "walk:1",
+        "phase": "playing"
+      },
+      {
+        "at": 206217.7,
+        "from": "walk:1",
+        "to": "walk:2",
+        "phase": "playing"
+      }
+    ]
+  },
+  "mountMatrix": {
+    "expectedRows": 40,
+    "rowCount": 40,
+    "expectedMounts": 160,
+    "mountCount": 160,
+    "invalidRows": 0,
+    "maxReconstructionError": 4.440892098500626e-16,
+    "complete": true
+  },
+  "performance": {
+    "sampleCount": 481,
+    "sampleWindowMs": 8008.8,
+    "auditPageRafMs": {
+      "p50": 16.7,
+      "p95": 16.9,
+      "max": 72.7
+    },
+    "engineFrameTimeMs": {
+      "p50": 16.7,
+      "p95": 17.1,
+      "max": 71.8
+    },
+    "drawCalls": {
+      "min": 34,
+      "max": 34
+    },
+    "triangles": {
+      "max": 1871
+    },
+    "recent": [
+      {
+        "at": 206019.8,
+        "engineFrame": 12110,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 16.6,
+        "drawCalls": 34,
+        "triangles": 1863
+      },
+      {
+        "at": 206036.7,
+        "engineFrame": 12111,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 16.9,
+        "drawCalls": 34,
+        "triangles": 1865
+      },
+      {
+        "at": 206053.1,
+        "engineFrame": 12112,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 16.6,
+        "drawCalls": 34,
+        "triangles": 1865
+      },
+      {
+        "at": 206083.6,
+        "engineFrame": 12113,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 16.6,
+        "drawCalls": 34,
+        "triangles": 1865
+      },
+      {
+        "at": 206086.8,
+        "engineFrame": 12114,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 30.2,
+        "drawCalls": 34,
+        "triangles": 1865
+      },
+      {
+        "at": 206120.1,
+        "engineFrame": 12115,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 20.6,
+        "drawCalls": 34,
+        "triangles": 1867
+      },
+      {
+        "at": 206140,
+        "engineFrame": 12116,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 16.2,
+        "drawCalls": 34,
+        "triangles": 1867
+      },
+      {
+        "at": 206154.2,
+        "engineFrame": 12117,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 20,
+        "drawCalls": 34,
+        "triangles": 1867
+      },
+      {
+        "at": 206172.7,
+        "engineFrame": 12118,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 14.1,
+        "drawCalls": 34,
+        "triangles": 1867
+      },
+      {
+        "at": 206187.5,
+        "engineFrame": 12119,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 18.5,
+        "drawCalls": 34,
+        "triangles": 1871
+      },
+      {
+        "at": 206217.8,
+        "engineFrame": 12120,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 14.9,
+        "drawCalls": 34,
+        "triangles": 1871
+      },
+      {
+        "at": 206221.1,
+        "engineFrame": 12121,
+        "engineDelta": 1,
+        "engineFrameTimeMs": 30.2,
+        "drawCalls": 34,
+        "triangles": 1871
+      }
+    ]
+  }
+}

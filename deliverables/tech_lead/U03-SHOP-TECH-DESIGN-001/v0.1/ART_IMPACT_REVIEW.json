@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-TECH-DESIGN-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版技术稿将 01 奶茶的唯一顶层正式身份提议为 MT_SHOP_01，并将 Art Gate1 的 U03_SHOP_01_MASTER/VISUAL 明确映射为同店 PSD/导出追踪名，而非第二个可运行 Prefab；02–06 的 SHOP_02–SHOP_06 也分别与 Art 候选源/导出 ID 一对一。此映射满足 U03 与未来主体同源原则，不复用旧概念图像素；本 Review 接受该拟议身份关系，最终仍以本技术版用户批准及首图前交接登记为准。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TECH_DESIGN.md 和 RESOURCE_ID_AND_HANDOFF.md 保留六店独立多层 PSD、牌匾/店体/前后件的可追溯边界，不强制每层单贴图；静态店体与历史 MT_SHOP_MOTION_01 动态范围分开。奶茶、理发屋顶连续瓦面及不同牌匾形制仍按已批 Art Gate1 实图逐锚点复核，不以运行遮盖块或共用换字牌代替。"
+    },
+    {
+      "severity": "INFO",
+      "message": "层序被标为建议且最终服从各店 PSD 重组及 Art/Tech/Client 切图记录；720×1280 与 390×844 候选视口要求记录牌匾投影像素、安全区、alpha 和遮挡，未把可读性或性能写成已测 PASS。出图后须以母版、同尺度重组和实际视窗核对，避免 ground_contact、light 与 front 的实际合成顺序改变阴影和暖光。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "本次附件商用改编权和正式字形来源仍 UNKNOWN。技术稿正确保留首张拟正式图片/PSD 前的停止条件；Art Gate1 获批、历史四层图权利或本技术 Review 均不能解除该条件，也不能替代 Gate2 用户对具体切片版本的审批。"
+    }
+  ],
+  "next_action": "请 UI、Client、QA 与 Master 完成同版影响 Review；本技术 v0.1 获用户明确批准后，Art/Tech 在首图前同批预签中核定 MT_SHOP_01 与六店候选源 ID 的唯一映射、实际层序/支点/字牌投影与权利状态，并在正式交接登记中保留计划和实际路径之别。当前不得制作或接入正式图。"
+}

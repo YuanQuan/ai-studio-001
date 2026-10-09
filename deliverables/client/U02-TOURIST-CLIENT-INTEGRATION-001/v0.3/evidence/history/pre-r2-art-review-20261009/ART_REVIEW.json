@@ -1,0 +1,28 @@
+{
+  "task_id": "U02-TOURIST-CLIENT-INTEGRATION-001",
+  "reviewer": "art",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本评审只针对 Client v0.3 当前字节；旧 v0.2/R5 Art APPROVED 不继承。上游 VFX v0.2 Gate2 已获 USER_APPROVED；获批同尺度重组图 SHA-256 4A76EAEB64270BE2914C41E0CA648A38E2DD4542696D3EAD4D363EDCE76C027A 与现文件一致。独立复算 40/40 张 Client 主体 PNG 与该版 VFX 正式 PNG、逐帧清单 SHA 相同，四片独立配件 Client PNG 与已批 Art 源 PNG、当前 asset_map SHA 相同；替换接入没有改动本次获批原图字节，也没有把挂件烘进主体。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前 40 帧和 40 条挂点记录齐全，walk/run/happy/sad 各 10 帧；Scene 有 40 个主体 SpriteFrame 引用及四片独立配件引用。当前 tourist_view.ts SHA-256 92EBFB29D19B28FDA28F541341AB6B863AD323E9C02D4E28D454C03F88956318：静态源码以同一 MirrorRoot 承载 AccessoryBack、BodySprite、AccessoryFront，帽/镜走独立前层，手环分前后片，左向镜像同一根节点；tourist_adapter.ts SHA-256 97F0F9CABA5597BEF8ECE8D2C2CBBEB8C2A52EA8CEEB85BD1FDE362AC10AF99D。该结论只覆盖结构与文件身份，不代表 Creator 实际层序、挂点或镜像画面通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已独立查看本版 Web 截图 u02-happy-equipped-390x844.jpg、u02-sad-equipped-left-390x844.jpg，及 combo-walk/run/happy/sad × 左右 × 无/帽/眼镜/手环/全套的 40 张截图；runtime-40-combinations.json 40/40 行 pass，截图与 read-only JSON 由同一 8774 构建审核流程留证，RUNTIME_HARNESS_MANIFEST.json 显示147/147原构建文件哈希不变。逐张目视主体的圆头、暖白冷蓝体积、深色五官、粉颊、宽尾与获批预览一致；装扮保持可卸、贴近头/脸/腕，手环前后层序未见明显穿帮，两朝向表情仍可读。此为已捕获运行画面的视觉复核，不等于正式设备或逐像素无误证明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "390×844 的 u02-happy-equipped-390x844.jpg 状态栏显示高兴第4帧，即 happy03；帽顶在舞台上缘完整可见，未因超出主体512画布约4.81px而裁掉。u02-sad-equipped-left-390x844.jpg 与 combo-sad-right/left 的无配件和全套样本未见旧脸层矩形暗缝。runtime-full-coverage-390x667.json 的 observedFrameCount=40、四动作各10、各自09→00回绕计数均大于0，支持循环实际发生；此 Art 判断只覆盖可见样本，性能与真实触控另核。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "运行截图的展示区标题‘游客展示区’与高兴动作的帽顶争用同一上缘空间：u02-happy-equipped-390x844.jpg 中帽顶盖过标题部分文字，combo-happy-left-all.jpg 中也见两者贴近/局部遮挡。帽本身没有被裁切，角色与挂件身份无偏移，但舞台文字可读性受损，且该标题削弱‘只居中显示游客’的清爽展示。请 Client 与 UI 在现行规格内移开或移除舞台内辅助标题，并以 390×844、390×667 的 happy03 双向全套实图复核。正式 QA、目标设备、完整性能窗口和本 Client v0.3 用户审批尚未完成，本 Art Review 不将其记为 PASS。"
+    }
+  ],
+  "next_action": "Master 协调 Client/UI 对舞台内‘游客展示区’标题作最小布局修正，保留获批主体及配件字节、挂点和动作合同；重新构建并提供 happy03 双向全套在 390×844/390×667 的同版截图。Art 复核该一处文字遮挡后再给最终视觉结论；Producer 继续控制用户审批，示例 Owner 的运行证据与将来适用的正式 QA 分开记录。"
+}

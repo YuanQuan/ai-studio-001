@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "01/02 代表样张逐锚点结论见 SAMPLE_VISUAL_MATRIX_V02.md；六店中的其余四店和实际运行尚未验收。01/02 均提供新 PSD、body/sign、同画布旧新对照、390×844 与 720×1280 静态视窗。"
+    },
+    {
+      "severity": "INFO",
+      "message": "01 旧居中横牌已移除，body 只在原透明缺口 ROI (346,470,678,591) 补 40172 像素；新右檐牌 bbox (821,449,943,651)，右侧余 81 px。右灯、窗口及奶茶经营物清楚。其余店体像素保持。"
+    },
+    {
+      "severity": "INFO",
+      "message": "02 body 文件与原 Gate2 body SHA 完全相同，新车前小牌 bbox (685,627,820,890)，底边高于 foot y=900；原右牌撤除，车轮/伞/糖画主体可辨。两店合成在旧新牌并集和01局部补洞区外差异均为 0。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "首样牌体和图案是授权方向图局部取像素后的独立栅格对象层，尚未把牌内图案拆成可单独移动的子层；已如实写入样张矩阵。PSD 已以 Pillow/二进制可见性复核，尚无 Photoshop/Photopea 人工开存证据。"
+    }
+  ],
+  "next_action": "Tech Lead 对同批 01/02 实际 PSD、body/sign、alpha bbox、差异和静态视窗作首样后验；通过后 Art 扩展 03–06 并提交六店完整 Gate2 实片包。"
+}

@@ -1,0 +1,18 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "ACTUAL_FIRST_IMAGE_POSTCHECK",
+  "reviewed_build_report": "MILK_TEA_FULL_REDRAW_BUILD_REPORT_V04.json",
+  "reviewed_build_report_sha256": "D8CC1AFB06CC50C69A70CC90469FE89B3FEF97F0517539FC3A4B1B9052BE6B24",
+  "art_postcheck_sha256": "1FF2A7EA8C9D9EA3C8839E84D01D054CCACA1456523E80B031E6F133373773FB",
+  "findings": [
+    {"severity": "INFO", "message": "独立核构建清单 13 个源/PSD/切片/预览引用路径与 SHA-256 全匹配。新 01 PSD 和 v04 双片独立于旧版；输出双片文件名已统一 v04，旧版作为历史证据不覆盖。"},
+    {"severity": "INFO", "message": "独立以 Pillow 检查 body/sign 均 1024×1024 RGBA、四画布边 alpha 全为 0，body+sign 按序复合与交付重组逐像素一致。归一化主体 alpha≥16 bbox=(142,280,882,900)，实际宽 740、高 620 源 px，符合 v0.4 主体控制区 600–760/610–750；foot=(512,900)。390×844 和 720×1280 全视口尺寸正确，显示宽 316/584 与六店同尺度图一致。"},
+    {"severity": "INFO", "message": "同尺度视觉检查：01 屋脊/檐口/服务窗近水平，侧深度显著收窄；短横浅杏悬挂牌以可见挂件悬挂于窗口上沿，和 04 固定双层门额可区分，未遮瓶罐与冲泡设备，屋顶无大杯/吸管/LOGO。侧墙/正面≤0.12 为目视判断，未取得可重复的几何测线数据。"},
+    {"severity": "INFO", "message": "字芯『奶』『茶』390 投影高均 27.46 CSS px；按已锁字体与实际新版定位框独立复建 92% 原字芯，alpha≥180、Zhang-Suen 骨架、剔除端点/分叉及 2 px 邻域、局部欧氏直径 10 分位分别为 2.24/2.16 CSS px，达到 ≥2 静态候选线。字体仅输出栅格字层，实际设备和 Creator 字形仍待后验。"},
+    {"severity": "INFO", "message": "PSD 记录多层互斥语义 RGBA 区域、独立字层及隐藏 reference_source，构建报告称 PSD 可见工作层与双片最大通道差 0；可独立显隐/局部编辑，但缺少物件完整被遮挡背面，未做 Photoshop/Photopea 交互式开存。"},
+    {"severity": "MAJOR", "message": "六店当前 12 张 1024² RGBA8 切片全展开约 48 MiB 只是静态面积估算；Creator 纹理页、CPU/GPU 常驻、加载峰值、设备 safe area 与帧时均 NOT_TESTED。此 Tech 后验不构成用户对具体六店切片 Gate2 批准，也不放行 Client 正式导入。"}
+  ],
+  "next_action": "Art/Producer 汇总最终六店 PSD、12 张具体切片的路径/SHA、双视口与同尺度总览，提交用户 Gate2；用户明确批准该确切版本前 Client 不正式接入。"
+}

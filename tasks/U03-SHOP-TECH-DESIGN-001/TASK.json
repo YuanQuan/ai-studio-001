@@ -1,0 +1,44 @@
+{
+  "id": "U03-SHOP-TECH-DESIGN-001",
+  "title": "U03 六店同源资源身份与单店切换技术规格",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": null,
+  "objective": "基于已批准的 U03 Product v0.1 与 Art Gate1 v0.1，确定六店与未来主体共用的稳定资源身份、奶茶店 MT_SHOP_01 继承关系、计划目录/导出及真实 UUID 登记规则、单店切换和加载生命周期、竖屏投影及性能验证方案；完成同版专业 Review 后交用户审批，供首图前预签与后续 Client Brief 使用。",
+  "inputs": [
+    "tasks/U03-SHOP-SCOPE-001/ARTIFACT_APPROVAL.json（Product v0.1 USER_APPROVED）及同版 PRD/ACCEPTANCE",
+    "tasks/U03-SHOP-ART-PLAN-001/ARTIFACT_APPROVAL.json（Art Gate1 v0.1 USER_APPROVED）及 ART_PRODUCTION_PLAN.md、ASSET_MANIFEST.md、VISUAL_ANCHORS.md、SIX_SIGNBOARD_PLAN.md",
+    "deliverables/tech_lead/UNIT-MENU-TECH-DESIGN-001/v0.2/TECH_DESIGN.md（已批同源原则与 MT_SHOP_01 历史身份）",
+    "project/ASSET_HANDOFF_REGISTRY.md、rules/visual_production_contract.md、rules/cocos_cli_browser_workflow.md",
+    "apps/client/assets/UnitSampleGallery.ts、UnitSamples.scene 与当前工作区差异；Cocos Creator 3.8.8"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/RESOURCE_ID_AND_HANDOFF.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/LOAD_AND_PERFORMANCE_PLAN.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/VALIDATION_MATRIX.md",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/ART_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/UI_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/CLIENT_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/QA_IMPACT_REVIEW.json",
+    "deliverables/tech_lead/U03-SHOP-TECH-DESIGN-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-TECH-DESIGN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "六店使用主体游戏与 U03 同源的正式资源身份；明确 MT_SHOP_01 与本案奶茶店候选 ID 的唯一映射、其静态/动态子对象边界和 02–06 稳定 ID，不产生 Lab 专用平行正式店图。",
+    "明确计划美术与 Creator 双目录、命名、PSD/输出/Prefab 边界、版本及哈希登记；未导入的路径与 UUID 标计划，正式 Gate2 后再核真实 .meta/UUID 和活动引用。",
+    "定义初始 01、同屏唯一当前店、六项可达、切换图像/牌匾/名称/阴影原子一致、末次有效快切、失败反馈、返回重入复位及 U01/U02 导航边界，明确状态和资源生命周期。",
+    "给出 720×1280 与 390×844 候选竖屏下单店投影、牌匾可读、安全区、alpha/遮挡、加载/纹理/DrawCall 的待测矩阵和预算制定方法，不伪报实测阈值或运行 PASS。",
+    "区分已批 Product/Art Gate1、来源权利停止条件、首图前同批 Art/Tech 预签、具体切片 Gate2、UI/Client 开工包、Creator CLI/HTTP/内置浏览器及 QA 的各自门禁。",
+    "Tech、Art、UI、Client、QA、Master 同版 Review 完成且 12/12 Required 与交付索引一致；送 USER_REVIEW 后等待用户对本技术版本明确决定。"
+  ],
+  "dependencies": ["U03-SHOP-SCOPE-001", "U03-SHOP-ART-PLAN-001"],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 在用户批准 Art Gate1 v0.1 后创建；本任务是技术规格，不授权正式图片制作、切片接入或 QA 执行。",
+    "附件商用改编权与字体来源未确认时，Tech 可完成文本设计和评审，但首张正式图/PSD 仍受 Art 方案停止条件约束。"
+  ]
+}

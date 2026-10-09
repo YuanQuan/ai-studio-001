@@ -1,0 +1,15 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "PLAN_REVIEW_ONLY",
+  "reviewed_artifact": "MILK_TEA_FULL_REDRAW_PLAN_V04.md",
+  "reviewed_sha256": "4F5418C3951B1D9EA643E459266EBC1C575F5C60FD11D3CE9751A71D7798CC25",
+  "findings": [
+    {"severity": "INFO", "message": "本结论仅将 01 奶茶店近正面整体重绘 v0.4 方案送 USER_REVIEW，不是首图前 Art/Tech 制作预签、实图后验或 Gate2。现有 01 B92% PSD/双片已成为旧角度历史证据，六店合版 Gate2 暂停，Client 不接入。"},
+    {"severity": "INFO", "message": "方案锁透明 1024×1024、foot=(512,900)、主体可见宽 600–760/高 610–750 源 px，侧墙/正面宽≤0.12；以 1024→316/584 相同投影做 390×844 与 720×1280 全视口及六店同尺度比较。屋脊、檐口、窗口与台阶近水平，营业设备和 01 悬挂牌应保留，牌匾不得变 04 双层横额或屋顶大 LOGO。"},
+    {"severity": "INFO", "message": "新 PSD 与旧版隔离，首图需语义可编辑层和隐藏来源层、body/sign 最多两张 1024² RGBA、同坐标重组和四底 alpha；若整体图分层无完整隐面，须如实限定。B92% 字效仅栅格化字层，TTF 不得进入 PSD、仓库或游戏包，官方原包未比对事实继续保留。"},
+    {"severity": "MAJOR", "message": "用户批准本方案后，Art 仍须提交具体首图生产预案，锁实际输入 SHA、参考与方法、画布/对象框、层序和牌匾避让、输出版本、两片预算及失败线，由 Art/Tech 同一 SHA 预签后开图。现阶段不得以旧 01 字效生产预签代替重绘首图预签。两张 1024² RGBA8 裸展开约 8 MiB/店只是估算，Creator/设备纹理与性能仍 NOT_TESTED。"}
+  ],
+  "next_action": "Master/Producer 可提交本确切 v0.4 方案供用户审批；获批后另行首图预案同版双签，实图后验和六店新版本 Gate2 分开进行。"
+}

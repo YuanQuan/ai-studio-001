@@ -1,0 +1,32 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "仅对 U03-SAMPLE-A 的 01 奶茶代表样张作实图后验。独立重算 preview/SAMPLE_SOURCE_MANIFEST.json 所列 30/30 实文件的字节数与 SHA-256 全部一致；最终 psd/shop_01_milk_tea.psd 为 1024×1024、8 位 RGB 复合预览、10 个四通道栅格层，SHA-256 0018C986F6B08F71268BC14F0A0E0575EE4E0EAE73E73EB1351063A2B3D76AAC。Art 同版 SAMPLE_VISUAL_REVIEW.json 为 APPROVED，SHA-256 C9F8B88ABD067AEA0FC80280491F9C9E04597C87E0C777025ABDD608E51818A1。"
+    },
+    {
+      "severity": "INFO",
+      "message": "保留 SAMPLE_TECH_REVIEW_R1.json 的退回历史：初次补层时 PSD 可见性标志反向且清单哈希不符。最终 PSD 经独立解析 Layer Records：sign_glyph、sign_board、sign_hardware、front、light、interior、body_roof、body_facade、ground_contact 九工作层 flags=0，均可见；reference_source flags=2，为隐藏非导出层。逐层解码 PSD 内原始 RGBA 通道，与 source/psd_work/shop_01/layer_sources/ 对应十张全画布 PNG 逐像素一致；隐藏来源层与归一店图哈希相同，不影响可见复合。"
+    },
+    {
+      "severity": "INFO",
+      "message": "PSD 可由 Pillow 重新打开，扁平复合与 preview/milk_tea_psd_flat_preview.png 逐像素一致；sign_glyph 编辑探针 PSD 与正式 PSD 的复合变化仅牌内 (505,478,517,490) 共 112 像素。九可见层从底向顶重组相对 preview/milk_tea_sample.png 仅 27 像素有最大 1/255 舍入差；两张候选 PNG body+sign 用同一 1024 全画布原点 alpha 合成与样张 RGBA 完全一致。原平面位图被遮住的隐藏面不可单独编辑，Photoshop/Photopea 人工重存仍 NOT_TESTED；PSD 不透明 RGB 缓存预览不得当作透明运行纹理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "body 与 sign 的实际非透明包围盒分别为 (124,150,866,900) 和 (337,408,688,561)，固定逻辑脚点 foot=(512,900) 与接地底边相邻；两张候选导出均为 1024×1024 RGBA。720×1280 与 390×844 静态等比 contain 图中屋顶、牌匾、工作窗、脚线完整且位于候选 UI 安全盒内。390 宽按完整画布 316/1024 缩放，奶/茶字源高 88/95px 投影约 27.16/29.32 CSS px，9px 最细笔画约 2.78 CSS px，超过本批候选 24/2 检查线；这是静态投影，不代替 Cocos 实际 visibleRect、DPR、设备安全区和人眼/目标机可读测试。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "黑/灰/白底预览的右灯暖红半透明边与底部地影仍需在实际背景、过滤和压缩设置下复核；当前深蓝候选底和小视口静态图未见明显黑/白边。两张 1024² RGBA8 纹理的未压缩基础展开量约 8 MiB/店，六店若全常驻按同尺寸粗估约 48 MiB，未计 mip、图集留白、CPU/GPU 双份及压缩回退；当前无 Creator 导入、真实页数、DrawCall、峰值加载或设备性能结论。最终 trim、sourceRect/originalSize/offset 与 foot 映射须在切图清单和 Client 导入时保留。"
+    },
+    {
+      "severity": "INFO",
+      "message": "MT_SHOP_01 为首店顶层身份，tex_mt_shop_01_body/sign 当前仅是首样评审候选文件，路径在 preview/sample_exports/；没有获批 Gate2 切片、Creator 正式文件、.meta/UUID 或运行画面。首样技术通过仅允许进入六店全量预案的 Art/Tech 复签，不自动批准 02–06 制作、正式切图效果、Cocos 接入或 QA。"
+    }
+  ],
+  "next_action": "Art 与 Tech Lead 对六店全量批次另行复签来源、视觉/字形、每店 PSD 与分件、真实纹理/加载预算和两竖屏同尺度规则，之后才扩制 02–06；切图前 Art、Tech Lead、Client 核 sourceRect、遮挡、牌匾与接缝。六店实际切片、同尺度重组和清单须另交用户 Gate2 批准，随后 Client 才以真实文件及 UUID 接入并由 QA 验证运行。"
+}

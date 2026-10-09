@@ -1,0 +1,34 @@
+{
+  "task_id": "U03-SHOP-SIGN-REVISION-001",
+  "batch_id": "U03-SHOP-SIGN-REVISION-V02",
+  "revision": "r2",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED_FOR_BATCH_EXPANSION",
+  "scope": "01/02 首样实际 PSD、body/sign、alpha、差异、字层来源与静态视窗技术后验",
+  "source_reports": ["deliverables/art/U03-SHOP-ASSET-001/v0.2/SAMPLE_BUILD_REPORT_V02_R2.json", "deliverables/art/U03-SHOP-ASSET-001/v0.2/SAMPLE_DIFF_REPORT_V02_R2.json", "deliverables/art/U03-SHOP-ASSET-001/v0.2/SAMPLE_REVISION_R2.md"],
+  "shop_01": {
+    "decision": "PASS",
+    "psd_sha256": "7362E9B891A0D37022A56A8EEE53EBBD16722A982BE313501C63EA644E293170",
+    "body_sha256": "A299B998D8E94C67D598B1B1414C7EDA8167E612680A0A99056BA0B010008BED",
+    "sign_sha256": "890BCF6FA6506A65DDB3EDC2A66B4CD9107684A05388C55050005DA12E61605D",
+    "psd_layers": 11,
+    "body_bbox": [142, 280, 882, 900],
+    "sign_bbox": [821, 449, 943, 651],
+    "body_repair_roi": [346, 470, 678, 591],
+    "body_changed_pixels": 40172,
+    "outside_allowed_regions_changed_pixels": 0
+  },
+  "shop_02": {
+    "decision": "PASS",
+    "psd_sha256": "3B57ADC63C2D641FB8CFDFA35C5A1E4887146F623F5EBD134DE29A6022A8AA61",
+    "body_sha256": "03036F8054C97AE8D48F31E8E8FB074EADD9270E87FDD28DAEF7A4FDC9268E56",
+    "sign_sha256": "6DEC87F0EEC638F6F5915A7D4D5C8C51995B3FC320A9F253194352410EA246E6",
+    "psd_layers": 8,
+    "body_byte_identical_to_gate2": true,
+    "sign_bbox": [685, 627, 820, 890],
+    "glyph_source": "v0.1/source/psd_work/shop_02/zcool_b92_v03/layer_sources/sign_glyph.png",
+    "outside_allowed_regions_changed_pixels": 0
+  },
+  "not_tested": ["Creator import", "actual Web runtime", "target device", "resident texture memory", "atlas and DrawCall", "performance"],
+  "next_action": "Art 按原同批预签扩展 03–06；六店自行切图实片与重组核对后直接送用户 Gate2 审核，无额外成品专业效果复审或首样用户门禁。"
+}

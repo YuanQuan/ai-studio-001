@@ -1,0 +1,20 @@
+{
+  "task_id": "U03-SHOP-VISUAL-FIDELITY-003",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已只读评审当前 AGENTS.md、rules/visual_production_contract.md、agents/art/ROLE.md、CONSTRAINTS.md、DECISIONS.md 的本轮差异：明确先比较当前 PSD 的局部修订，不能达到已确认同背景/同视窗/同尺度效果时 Art 可记录差距、范围和来源后选择重绘。技术复核不再把旧像素零差异作为优先视觉目标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "修订仍要求来源与版权/字体核查、版本化多层 PSD、具体制作方案 Gate1、首图前 Art/Tech 同批预签、具体切片 Gate2，以及 Client 接入后真实运行画面对照。自行切图路径仍直接提交用户审核切片效果，无新增成品专业效果复审或额外预览门禁；静态图不能冒充运行通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.3 单项目方案的高保真重绘方法属于已授权视觉方法选择；若改变画布/脚点/body-sign 交接或已批准产品语义，仍应按现有冲突与变更流程记录，技术适配不能静默降低视觉效果。"
+    }
+  ],
+  "next_action": "Producer 核组织主 Studio Layer、当前 Game Repository 快照与标准项目模板的同版同步及版本记录；Art 提交确切 v0.3 方案与锚点后，Tech 对该批次首图前制作预案按实际 SHA 签认。"
+}

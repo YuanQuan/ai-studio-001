@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-UI-SPEC-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "现行 UnitSampleGallery.ts 菜单只提供 U01，U02 产品已批准但客户端入口尚未实施。UI v0.1 按实际获批并实现的菜单版本加入 U03，不把 U02 产品批准等同于运行完成，且保留 U01 镜头功能和返回语义。"
+    },
+    {
+      "severity": "INFO",
+      "message": "单店展示、六项双向循环、当前栏只读 presentedIndex、切换提示独立显示 desiredIndex、连按从最新待处理目标递推、目标回到当前店时撤销加载，与 Tech v0.1 状态机一致。目标失败时保留旧店，failedTarget 独立供重试，重新进入复位 01，均可实现且不会要求用占位店图冒充已批资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "页面与组件 SVG 已标注仅作结构审阅，中央仅一店，控件在展示窗外；720×1280 和 390×844 的尺寸、安全区及命中区是候选而非实测。六牌不同挂位和店体自然宽度可在实际图完成后逐项复核。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "实现时需将菜单入口、返回和前后控件统一为单次输入路径并拦截展示区事件，避免现行全局 MOUSE_UP 与节点 TOUCH_END 组合造成双触发或传入 U01 镜头；实际 safe area、DPR、字体许可和小屏点击命中须在 Client/QA 阶段验证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已复核 UI_SPEC.md 与 SCREEN_STATES.md 同版修订：正常首次加载仅显示返回，前后切换禁用且不显示重试；只有加载明确失败或超时转错误态后，才显示只针对 failedTarget 的重试。此前关于首次加载重试可见的 MINOR 已解决。"
+    }
+  ],
+  "next_action": "UI v0.1 可继续同版 QA 与 Master Review 并交用户审批。正式 UI 字形、六店图和 Gate2 尚未批准接入；Client 开工前需取得对应已批版本并用实际资源、视口和 Cocos 构建验证。"
+}

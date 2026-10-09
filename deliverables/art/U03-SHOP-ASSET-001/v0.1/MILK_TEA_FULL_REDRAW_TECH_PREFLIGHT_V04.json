@@ -1,0 +1,15 @@
+{
+  "task_id": "U03-SHOP-ASSET-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "review_type": "FIRST_IMAGE_PREFLIGHT",
+  "reviewed_artifact": "MILK_TEA_FULL_REDRAW_FIRST_IMAGE_PREFLIGHT_V04.md",
+  "reviewed_sha256": "9F93A2316C1D6F8996384C067E9ADC0DAF4AF9587E6EEE8463AB326EEC67F2EC",
+  "findings": [
+    {"severity": "INFO", "message": "Art/Tech 同版预签仅解锁用户已批准 v0.4 方案的 01 奶茶首张整体重绘。独立复算旧 font_r1b PSD、旧 B92% PSD、旧 imagegen 原图三项 SHA 均与本预案一致；三者为参考和旧版证据，不覆盖。"},
+    {"severity": "INFO", "message": "新透明 PSD 锁 1024×1024、foot=(512,900)、主体宽 600–760/高 610–750 源 px 候选区、侧墙/正面宽≤0.12；390×844 与 720×1280 全视口及六店总览共用相同缩放/脚线。牌匾须保留 01 独有悬挂牌，与 04 双层门额明显区分；屋顶无杯/吸管/字 LOGO。"},
+    {"severity": "INFO", "message": "首图两张 body/sign 1024² RGBA 上限，多层 PSD 需真实语义区域与隐藏来源层，实际两片复合和 PSD 可见工作层最大只容 1/255 差。固定『奶茶』B92% 字效只渲染栅格字层，TTF 不入 PSD、仓库或游戏包；字高≥24、有效细笔≥2 CSS px 均须在实际 390 投影后验核。"},
+    {"severity": "MAJOR", "message": "8 MiB/店仅是两张 RGBA8 裸展开估算；Creator 纹理页、CPU/GPU 常驻、加载峰值与设备帧时 NOT_TESTED。若重绘仍侧视、主体超界、悬挂牌变门额、经营物缺失、PSD 分层不真实或需第三片，停止并修订。首图技术后验和六店具体版本 Gate2 不由预签替代。"}
+  ],
+  "next_action": "Art 可按本同版预案开始 01 正式首图。实际 PSD、两片、同尺度重组、四底、390/720 与六店新版总览完成后 Tech 独立后验；六店具体版本获用户 Gate2 批准前 Client 不正式接入。"
+}

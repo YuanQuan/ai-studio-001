@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-TECH-DESIGN-001",
+  "reviewer": "client",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核 Product 与 Art Gate1 v0.1 的 USER_APPROVED 记录、Cocos Creator 3.8.8 工程和现行 UnitSampleGallery.ts / UnitSamples.scene。菜单当前仅有 U01，六店正式 Prefab、贴图和 UUID 尚未存在；本稿将 MT_SHOP_01 定为奶茶唯一顶层身份，将 U03_SHOP_01_MASTER/VISUAL 作为同店源图/导出追踪，并将其他五店列为计划，符合客户端同源接入边界。"
+    },
+    {
+      "severity": "INFO",
+      "message": "presentedIndex 与 desiredIndex 分离、加载中从 desiredIndex 递推、目标回到当前店时作废旧请求、generation 只允许最后有效目标提交、失败后保留可见店并保留 failedTarget 重试，能够实现单店、店图/牌匾/名称/阴影一致和快速往返；首入、返回重进、01/06 循环与 UI v0.1 语义一致。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "实施 Feature Brief 需在实际 Creator 3.8.8 资源组织确定 ShopDefinition 中的 Prefab 是场景序列化强引用还是按路径/Bundle 异步解析，测清六店加载时机、缓存与释放；不能把文稿中的异步加载方案误认成当前 Scene 已具备。导入后按真实 .meta/AssetDB 回填 SpriteFrame、Prefab UUID 和活动引用。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "现有菜单同时有全局 MOUSE_UP 判定与按钮 TOUCH_END 回调路径；U03 实施应在 Feature Brief 明确入口及上一店/下一店只触发一次、阻止输入穿透 U01 镜头控件，并在短视口中按真实 visible size 与 safe area 布局。"
+    },
+    {
+      "severity": "INFO",
+      "message": "720×1280 与 390×844、牌匾笔画和控件避让、alpha/trim/pivot、纹理驻留/DrawCall 均列为待测；Gate2 批准前不正式导入，CLI/Web 不能代替 Editor、目标平台和 QA，未把文档 Review 伪报为运行 PASS。"
+    }
+  ],
+  "next_action": "技术规格可送同版余下专业与 Master Review。用户批准本 Tech v0.1 后，Client 再基于获批 UI、具体 Gate2 图像和当前工程写 Feature Brief，与 Tech Lead 对齐资源引用、输入事件及性能测法，然后实施与验证。"
+}
