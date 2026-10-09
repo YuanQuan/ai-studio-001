@@ -1,0 +1,25 @@
+{
+  "source_sha256": "99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD",
+  "creator_version": "3.8.8",
+  "isolated_project": "apps/client/temp/u00-v06-build-20261009",
+  "creator_started": false,
+  "build_status": "BLOCKED",
+  "runtime_status": "NOT_TESTED",
+  "attempts": [
+    {
+      "method": "Creator.exe elevated with outer stdout/stderr redirection",
+      "result": "PowerShell parameter-set conflict; Creator did not start."
+    },
+    {
+      "method": "RunAs Windows PowerShell helper, WindowStyle Hidden, Wait",
+      "result": "Windows process creation failed with 0xc0000142; helper did not run."
+    },
+    {
+      "method": "RunAs pwsh.exe helper, WindowStyle Hidden, Wait",
+      "result": "Windows process creation failed with 0xc0000142; helper did not run."
+    }
+  ],
+  "recovery_exhausted": true,
+  "http_iab_evidence": null,
+  "unlock_condition": "Windows must be able to launch an elevated PowerShell helper. Then rebuild this source SHA from the recorded current assets/settings/profiles input and validate the new HTTP output in Codex IAB."
+}

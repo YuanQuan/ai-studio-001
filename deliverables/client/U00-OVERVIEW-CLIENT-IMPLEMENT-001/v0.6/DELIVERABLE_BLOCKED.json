@@ -1,0 +1,62 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "U00六店baseline scale统一0.34，初始顾客数量为1且scale 0.20；恢复人数与参数回到该baseline，动态新增顾客沿用0.20。源码SHA256 99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/USER_LAYOUT_INPUT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/ASSET_INPUT_HASHES.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_INPUT_HASHES.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/STATIC_CHECK_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_STDERR.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_BUILD_START.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_BUILD_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_LAUNCH_RECOVERY.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_LAUNCH_RECOVERY_PWSH.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_STATUS.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TECH_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店脚点与用户输入逐项相同，默认店铺scale全为0.34",
+      "result": "PASS",
+      "evidence": "源码数组及稳定SHOP_IDS顺序与USER_LAYOUT_INPUT.json静态比对通过；详情见STATIC_CHECK_RESULT.json。本项为静态值核验，不代表运行画面通过。"
+    },
+    {
+      "criterion": "初始顾客为1人，id1 scale 0.20，动态新增顾客沿用0.20",
+      "result": "PASS",
+      "evidence": "UnitSampleGallery U00专用COUNT/SCALE常量和新实例默认路径静态核对通过；U02独立源未修改。本项为代码路径核验。"
+    },
+    {
+      "criterion": "恢复操作与离开U00后重进会回到用户baseline",
+      "result": "PASS",
+      "evidence": "静态核到恢复先设置数量1，再恢复店铺baseline与顾客scale；重入初始化读取同一常量。本项未作运行验证。"
+    },
+    {
+      "criterion": "assets TypeScript noEmit",
+      "result": "PASS",
+      "evidence": "TYPECHECK_RESULT.json同源码SHA且exit_code 0，原始stdout/stderr文件附列。"
+    },
+    {
+      "criterion": "Creator构建、HTTP实际产物和Codex内置浏览器两视口运行",
+      "result": "NOT_TESTED",
+      "evidence": "Creator未启动，管理员PowerShell和pwsh进程创建均返回0xc0000142；无本版构建输出。见BUILD_STATUS.json。"
+    }
+  ],
+  "assumptions": [
+    "v0.6数值只作为U00临时预览baseline，不改变U02独立默认、正式玩法或服务器数据。"
+  ],
+  "risks": [
+    "Creator未能启动，实际导入、构建、HTTP/IAB运行、恢复/导出画面尚未验证；启动故障解除后需用记录的当前源码与资源输入重新构建和运行。",
+    "工作区含并行U03纹理及cocos-service.json修改；其SHA已记录在输入清单，本轮未修改这些文件。"
+  ],
+  "status": "BLOCKED"
+}

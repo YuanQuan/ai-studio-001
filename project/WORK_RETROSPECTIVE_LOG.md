@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261009-U00-COORD-V06-APPROVAL-001｜用户自行验证与单元示例最终接受
+
+- 结果与证据：用户对唯一当前v0.6明确“我已帮你验证通过了”，Master将原话及未知验证细节写入`USER_VALIDATION.md`。Producer绑定用户验证SHA `A636C76E…B2FB6`、最终实施报告SHA `7A13F69B…68241`与Gallery SHA `99364FBB…22ABD`；Tech/Master基于同SHA静态/noEmit、用户验收和明确未测范围复评APPROVED，Master接受Task DONE，Approval USER_APPROVED。旧BLOCKED Task/Approval/Review快照仍在`history/v0.6-blocked/`及`v0.6/*_REVIEW_BLOCKED.json`；Agent Creator/HTTP/IAB未验证的故障记录未改写。单元示例不安排QA，结论限本次修订。
+- 时间与原因：`USER_VALIDATION.md`文件mtime 2026-10-09 23:37:25 +08:00，Tech复评文件mtime 23:38:05，Owner终稿约23:38:14–15，Producer于23:39登记Master接受。用户原消息精确时间、验证设备与步骤未知；从验证记录实存到最终接受约2分钟的观察窗口包含并行Owner修文、Tech/Master复评及Producer核对，不代表角色净工时。此前Windows提升启动故障未解除，本次用户自行验证使单元示例可按用户验收和同版复评完成；不据此推断Agent构建成功。无可比时限，不判断人员快慢。
+- 建议与复核：Producer在下次用户自行验证可替代示例Owner运行核验的情形中，继续分别记录用户明确结论、准确Artifact hash和未提供的环境细节；代价为一次版本/证据核对，复核点为下一次类似审批记录。Client若后续把该示例升级为正式功能，先恢复可核Creator构建并补目标环境运行证据；复核点为正式功能Task与QA计划，不能沿用本次用户自行验证作发布质量结论。
+- Continuity check：准确v0.6已获用户验收、Tech/Master复评及Master接受，Task DONE，无空转READY/IN_PROGRESS；旧故障历史保留。Git仅按授权暂存本轮U00文件及共享治理里的U00增量，先排除U03既有改动。
+
 ## WR-20261009-U00-BRIEF-001
 
 - 周期与结果：可核登记窗口2026-10-09 14:02–14:09:52 +08:00，约7分52秒；用户原始需求消息精确时间未知。Master创建U00 Task后，Client交付编码前v0.1方案、资源复用审计和索引，Tech/Master同版Review均APPROVED，Producer核Required、四项验收与SHA后送USER_REVIEW。证据为Task/Approval、三份Client产物及双Review。未编码、未作运行或性能结论。

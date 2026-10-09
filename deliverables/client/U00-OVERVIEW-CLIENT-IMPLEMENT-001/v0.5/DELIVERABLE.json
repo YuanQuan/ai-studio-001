@@ -1,0 +1,49 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "version": "v0.5",
+  "summary": "已把用户提供的U00六店脚点和逐店baseline scale设为临时预览默认值；三名顾客保持scale 0.28。",
+  "source": "apps/client/assets/UnitSampleGallery.ts",
+  "source_sha256": "299F72C84A01653C696B28015E6ACFF7130CC14CFAEB181CAD3B852A87306C0A",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/USER_LAYOUT_INPUT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/BUILD_ATTEMPT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/TYPECHECK_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/TYPECHECK_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.5/TYPECHECK_STDERR.log"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店ID顺序与脚点遵循用户JSON",
+      "result": "PASS",
+      "evidence": "静态JSON/源码比对通过；源码SHA见source_sha256。"
+    },
+    {
+      "criterion": "六店默认缩放前五家0.34、第六家0.40",
+      "result": "PASS",
+      "evidence": "baseline数组和JSON一致；恢复及重入读取同一baseline代码路径。"
+    },
+    {
+      "criterion": "三顾客默认缩放0.28",
+      "result": "PASS",
+      "evidence": "OVERVIEW_TOURIST_SCALE保持0.28；用户输入文件为3名顾客。"
+    },
+    {
+      "criterion": "Creator构建及HTTP/IAB两视口运行",
+      "result": "BLOCKED",
+      "evidence": "Creator管理员启动返回0xc0000142，构建未运行；详见BUILD_ATTEMPT.json和BUILD_AND_RUNTIME_RECORD.md。"
+    },
+    {
+      "criterion": "assets TypeScript noEmit",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8 TypeScript with generated declarations, --skipLibCheck --target ES2017; exit code 0; command recorded in IMPLEMENTATION_REPORT.md."
+    }
+  ],
+  "status": "REVIEW_PENDING"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立静态核对当前UnitSampleGallery.ts SHA-256 99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD：六店脚点按既有SHOP_IDS顺序与USER_LAYOUT_INPUT.json一致，六店baseline scale均为0.34；U00初始顾客数量1，默认scale 0.20。参数导出沿用SHOP_IDS和当前顾客列表，因此静态路径与用户JSON结构相符。"
+    },
+    {
+      "severity": "INFO",
+      "message": "restoreOverviewAdjustments现先将顾客数量恢复为1，再重置六店脚点/缩放和顾客缩放；离开重进重新初始化U00数量1。动态新增顾客以U00专用OVERVIEW_TOURIST_SCALE 0.20实例化。applyOverviewTouristScale使用MirrorRoot脚点偏移乘以(0.20-当前scale)补偿，初始scale为0.20时实例相对根节点位置为0，缩放后脚点维持同一基准；此为源码核查，尚无运行画面佐证。U02独立页面实例化路径未读取该U00常量，U02源码/资源未由本任务修改。"
+    },
+    {
+      "severity": "INFO",
+      "message": "TYPECHECK_RESULT.json记录Creator 3.8.8自带TypeScript对同SHA隔离assets执行--noEmit退出码0；stdout/stderr为空，使用--skipLibCheck。BUILD_INPUT_HASHES.json及ASSET_INPUT_HASHES.json记录本轮隔离输入，包括并行U03纹理与settings身份；无U00新增资源或依赖，但尚无Creator导入/构建结果可证明资源运行完整性。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Creator构建未启动：首次启动参数集冲突，随后Windows PowerShell及pwsh管理员助手的进程创建均报0xc0000142。BUILD_STATUS.json为BLOCKED，当前无v0.6新Web产物；HTTP/IAB在390×844、720×1280的默认值、恢复人数、重进、导出及视觉结果均为NOT_TESTED。旧版构建或截图不能作为v0.6证据。"
+    }
+  ],
+  "next_action": "修复本机管理员助手启动后，使用记录的v0.6源码与资源/设置输入重新执行Creator构建，再以该新产物完成HTTP及内置浏览器两视口核验；提交同一构建身份的运行证据后复评，当前不进入用户整版审批或DONE。"
+}

@@ -20,11 +20,12 @@ const MUTED = new Color(155, 178, 199);
 const BLUE = new Color(108, 193, 224);
 const GOLD = new Color(246, 189, 109);
 const OVERVIEW_SHOP_BASELINE = [
-  { x: -1080, y: -235 }, { x: -780, y: -245 }, { x: -410, y: -235 },
-  { x: 350, y: -237 }, { x: 690, y: -250 }, { x: 1030, y: -249 },
+  { x: -1079, y: -234 }, { x: -780, y: -260 }, { x: -410, y: -235 },
+  { x: 350, y: -237 }, { x: 689, y: -249 }, { x: 1030, y: -249 },
 ];
-const OVERVIEW_SHOP_SCALE = 0.4;
-const OVERVIEW_TOURIST_SCALE = 0.28;
+const OVERVIEW_SHOP_BASELINE_SCALES = [0.34, 0.34, 0.34, 0.34, 0.34, 0.34];
+const OVERVIEW_TOURIST_COUNT = 1;
+const OVERVIEW_TOURIST_SCALE = 0.2;
 
 @ccclass('UnitSampleGallery')
 export class UnitSampleGallery extends Component {
@@ -121,7 +122,7 @@ export class UnitSampleGallery extends Component {
   private overviewMouseTarget: Node | null = null;
   private buttonMouseActions = new Map<Node, () => void>();
   private overviewCountLabel: Node | null = null;
-  private overviewCount = 3;
+  private overviewCount = OVERVIEW_TOURIST_COUNT;
   private overviewRng = 94721;
   private overviewProfilerWasShowing: boolean | null = null;
 
@@ -317,7 +318,7 @@ export class UnitSampleGallery extends Component {
     this.overviewShopFootpoints = [];
     this.overviewShopSelectedIndex = 0;
     this.overviewShopStep = 10;
-    this.overviewShopScales = Array.from({ length: 6 }, () => OVERVIEW_SHOP_SCALE);
+    this.overviewShopScales = [...OVERVIEW_SHOP_BASELINE_SCALES];
     this.overviewTouristScales = [];
     this.overviewScaleStep = 0.02;
     this.overviewAdjustTarget = 'shops';
@@ -708,7 +709,7 @@ export class UnitSampleGallery extends Component {
     this.clearPage();
     this.overviewProfilerWasShowing = profiler.isShowingStats();
     profiler.hideStats();
-    this.overviewCount = 3;
+    this.overviewCount = OVERVIEW_TOURIST_COUNT;
     this.overviewRng = 94721;
     this.overviewScene = this.makeNode('U00OverviewScene', this.page, 720, 1280);
     const background = instantiate(this.streetBasePrefab!);
@@ -725,7 +726,7 @@ export class UnitSampleGallery extends Component {
     const foreground = this.makeNode('U00_StreetEntities', background, 3072, 1024);
     foreground.setSiblingIndex(3);
     this.overviewShops = this.makeNode('U00_Shops', foreground, 3072, 1024, 0, 0);
-    // Temporary shop-footpoint preview starts from the user-approved v0.3 baseline;
+    // Temporary shop-footpoint preview starts from the current user input baseline;
     // leaving this page discards edits and never persists preview adjustments.
     this.overviewShopFootpoints = OVERVIEW_SHOP_BASELINE.map(point => ({ ...point }));
     this.overviewShopNodes = [];
@@ -751,7 +752,7 @@ export class UnitSampleGallery extends Component {
     this.overviewGroupButtons.shops = this.overviewToggle(toggles, '店铺：显示', 230, 'shops');
     const count = this.makeNode('U00_CountControls', ui, 360, 58);
     this.button(count, '−', -110, 0, 70, 54, () => this.setOverviewCount(this.overviewCount - 1), true);
-    this.overviewCountLabel = this.label(count, '顾客 3 / 8', 0, 0, 21, TEXT, 110, 48).node;
+    this.overviewCountLabel = this.label(count, '顾客 1 / 8', 0, 0, 21, TEXT, 110, 48).node;
     this.button(count, '+', 110, 0, 70, 54, () => this.setOverviewCount(this.overviewCount + 1), true);
     this.buildOverviewShopAdjustPanel(ui);
     const bottom = this.makeNode('U00_CameraControls', ui, 500, 64);
@@ -898,7 +899,9 @@ export class UnitSampleGallery extends Component {
 
   private restoreOverviewAdjustments(): void {
     this.overviewShopFootpoints = OVERVIEW_SHOP_BASELINE.map(point => ({ ...point }));
-    this.overviewShopScales = Array.from({ length: 6 }, () => OVERVIEW_SHOP_SCALE);
+    this.overviewShopScales = [...OVERVIEW_SHOP_BASELINE_SCALES];
+    const foreground = this.overviewBackgroundLayers[2]?.parent?.getChildByName('U00_StreetEntities');
+    this.setOverviewCount(OVERVIEW_TOURIST_COUNT, foreground ?? undefined);
     this.overviewTouristScales = this.overviewTourists.map(() => OVERVIEW_TOURIST_SCALE);
     this.overviewShopNodes.forEach((_, index) => this.applyOverviewShopFootpoint(index));
     this.overviewTourists.forEach((_, index) => this.applyOverviewTouristScale(index));
@@ -911,7 +914,7 @@ export class UnitSampleGallery extends Component {
     const footpoint = this.overviewShopFootpoints[index];
     if (!shop?.isValid || !footpoint) return;
     const contactY = shop.getChildByName('ground_contact')?.position.y ?? -388;
-    const scale = this.overviewShopScales[index] ?? OVERVIEW_SHOP_SCALE;
+    const scale = this.overviewShopScales[index] ?? OVERVIEW_SHOP_BASELINE_SCALES[index];
     shop.setPosition(footpoint.x, footpoint.y - contactY * scale);
     shop.setScale(scale, scale, 1);
   }
@@ -947,7 +950,7 @@ export class UnitSampleGallery extends Component {
     const xLabel = this.overviewShopXLabel?.getComponent(Label);
     if (xLabel) xLabel.string = isTourist ? '缩放只作用于选中的顾客' : `脚点 X：${point.x}`;
     const yLabel = this.overviewShopYLabel?.getComponent(Label);
-    if (yLabel) yLabel.string = isTourist ? '新增顾客使用初始缩放 0.28' : `脚点 Y：${point.y}`;
+    if (yLabel) yLabel.string = isTourist ? `新增顾客使用初始缩放 ${OVERVIEW_TOURIST_SCALE.toFixed(2)}` : `脚点 Y：${point.y}`;
     const scaleLabel = this.overviewShopScaleLabel?.getComponent(Label);
     if (scaleLabel) scaleLabel.string = `缩放：${isTourist
       ? (this.overviewTouristScales[this.overviewShopSelectedIndex] ?? OVERVIEW_TOURIST_SCALE).toFixed(2)
@@ -987,7 +990,7 @@ export class UnitSampleGallery extends Component {
         name: SHOP_NAMES[index],
         footX: this.overviewShopFootpoints[index].x,
         footY: this.overviewShopFootpoints[index].y,
-        scale: this.overviewShopScales[index] ?? OVERVIEW_SHOP_SCALE,
+        scale: this.overviewShopScales[index] ?? OVERVIEW_SHOP_BASELINE_SCALES[index],
       })),
       touristCount: this.overviewTourists.length,
     }, null, 2);

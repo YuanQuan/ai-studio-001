@@ -1,0 +1,66 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "owner": "client",
+  "summary": "U00 v0.6参数基线已按用户JSON实施，静态核对与同SHA TypeScript noEmit通过；用户明确确认已验证通过，作为单元示例修订验收来源。源码SHA256 99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD。Agent Creator/HTTP/IAB仍未执行成功，记录为NOT_TESTED。",
+  "artifacts": [
+    "apps/client/assets/UnitSampleGallery.ts",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/USER_LAYOUT_INPUT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/FEATURE_BRIEF.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/RESOURCE_INTEGRITY_CHECK.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/ASSET_INPUT_HASHES.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_INPUT_HASHES.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/OWNER_SELF_CHECK.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/STATIC_CHECK_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_STDOUT.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TYPECHECK_STDERR.log",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_AND_RUNTIME_RECORD.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_BUILD_START.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_BUILD_RESULT.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_LAUNCH_RECOVERY.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/CREATOR_LAUNCH_RECOVERY_PWSH.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/BUILD_STATUS.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/TECH_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/MASTER_REVIEW.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/USER_VALIDATION.md",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/DELIVERABLE_BLOCKED.json",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.6/IMPLEMENTATION_REPORT_BLOCKED.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "六店脚点与用户输入逐项相同，默认店铺scale全为0.34",
+      "result": "PASS",
+      "evidence": "源码数组与稳定SHOP_IDS顺序同USER_LAYOUT_INPUT.json静态比对通过，详见STATIC_CHECK_RESULT.json。"
+    },
+    {
+      "criterion": "初始顾客为1人、id1 scale 0.20，动态新增顾客沿用0.20",
+      "result": "PASS",
+      "evidence": "UnitSampleGallery U00专用COUNT/SCALE常量与新实例默认路径静态核对通过；U02独立源未修改。"
+    },
+    {
+      "criterion": "恢复操作及离开U00后重进回到用户baseline",
+      "result": "PASS",
+      "evidence": "用户明确回复“我已帮你验证通过了”，记录见USER_VALIDATION.md；具体验证设备、视口、构建身份、逐项操作与截图未知。代码路径静态检查见STATIC_CHECK_RESULT.json。"
+    },
+    {
+      "criterion": "assets TypeScript noEmit",
+      "result": "PASS",
+      "evidence": "TYPECHECK_RESULT.json与源码SHA一致，exit_code 0；原始stdout/stderr附列。"
+    },
+    {
+      "criterion": "Agent执行Creator构建、HTTP实际产物和Codex内置浏览器两视口运行",
+      "result": "NOT_TESTED",
+      "evidence": "Creator未启动，管理员PowerShell和pwsh进程创建均返回0xc0000142，无本版构建输出。BUILD_STATUS.json及BUILD_AND_RUNTIME_RECORD.md记录事实。用户验收作为本单元示例验收来源单独记录，不改写Agent执行状态。"
+    }
+  ],
+  "assumptions": [
+    "v0.6数值只作为U00临时预览baseline，不改变U02独立默认、正式玩法或服务器数据。"
+  ],
+  "risks": [
+    "Agent本轮Creator/HTTP/IAB因本机提升启动器故障未能执行；后续若源码或资源变化，应在启动器恢复后按准确SHA完成构建与运行复核。当前参数修订已由用户确认验证通过。",
+    "用户未提供验证设备、视口、构建身份、具体操作或截图，以上信息保持未知；不构造逐项设备证据。",
+    "工作区并行U03纹理与cocos-service.json修改的哈希已记录；本任务未修改这些文件。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "next_action": "保留v0.6参数修改及证据。启动故障解除后，同源码和资源输入重建并完成两视口运行验证，再复评和呈用户审批。",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.6最终Gallery源码SHA256 99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD。静态diff与用户输入一致：六店脚点沿用本次JSON且缩放均0.34；顾客初始1人、缩放0.20。恢复先还原人数1再重置缩放；重进重建基线，新增顾客亦用U00的0.20，未改U02独立默认。TYPECHECK_RESULT同SHA noEmit exit0 PASS，skipLibCheck限制已记录。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "管理员启动器仍报0xc0000142，Creator未启动；没有本版新构建及HTTP/IAB实际验证，不能确认实际显示、恢复、导出或重进运行效果。不将静态通过当作运行通过。"
+    }
+  ],
+  "reviewer": "master",
+  "decision": "BLOCKED"
+}
