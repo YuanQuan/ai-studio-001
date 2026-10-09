@@ -1,5 +1,11 @@
 # 工作流状态
 
+2026-10-09 15:45:27 +08:00（Producer U00六店配置v0.1送审）Product Task 7/7 Required实存非空、DELIVERABLE四项方案验收PASS，Tech/Master同版APPROVED；工作簿SHA `6f12f497…8f5c2c39`、字典SHA `133bd4ed…04b86c7b`。Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null。现表仅复现R3六店坐标作为可编辑基线，用户具体新位置/调整方向尚未决定，不得将基线当作获批新摆放，也不得让Client提前消费。U00 Client旧v0.1/R3继续REVISION。Continuity：Product已到真实用户门禁，Client修订依赖获批具体配置，当前U00无空转READY/IN_PROGRESS。复盘`WR-20261009-U00-CONFIG-REVIEW-001`。
+
+2026-10-09 15:38:24 +08:00（Producer Product首产核验）`U00-SHOP-LAYOUT-CONFIG-001`首份Required `v0.1/CONFIG_SPEC.md`非空实存，Product已实际着手字段/坐标基线，`READY→IN_PROGRESS/TASK_STARTED`。Excel与验证、Tech/Master同版Review及用户具体位置批准待，Approval DRAFT。Continuity：Owner继续产出至真实Review/USER_REVIEW，不能停在首稿。
+
+2026-10-09 15:34:36 +08:00（Producer U00位置退修与新配置任务开线）用户反馈六店位置需调整并可做配置表，U00 Client v0.1/R3 Task`USER_REVIEW→REVISION`、Approval REJECTED；仅位置与配置化定向退修，R3源码、构建、两视口运行及Tech/Master评审保留历史。Master新建`U00-SHOP-LAYOUT-CONFIG-001`，七项Required、四验收、零依赖明确，Product Task READY/Approval DRAFT；当前尚无首份Required，不记开工。具体位置方向正向用户询问，可先做R3坐标基线与字典草稿，不把基线当获批新位置。Continuity：Product READY有可做的基线工作，已要求Master推动Owner实产；Client修订依赖Product具体版本Review及USER_APPROVED。复盘`WR-20261009-U00-SHOP-REVISION-001`。
+
 2026-10-09 15:17:21 +08:00（Producer U04草稿与Master Review核验）v0.1任务列示的八项Required路径均已实存，另有`REFERENCE_AUDIT.md`研究副本；`MASTER_REVIEW.json`结论为`BLOCKED`。历史六摊讨论稿候选明确是孟桃、阿棠、阿炭、阿角、阿灯、小锦，但该讨论稿未获批准，Master正请用户确认本轮是否采用。当前通用双用途约束和旧图废弃历史可核，六位逐人方案/图稿尚未完成；Art `DELIVERABLE.json`自身两项`NOT_TESTED`，仍不能送`USER_REVIEW`。Task `BLOCKED`、Gate1 Approval `DRAFT`且review_ref指向该同版阻塞评审。正式图片、动画、客户端接入继续锁定。Continuity check：唯一当前决策门禁是六位名单确认，本Task无空转`READY/IN_PROGRESS`；取得名单后由Master推动Art补齐并再审。本轮复盘`WR-20261009-U04-MANAGER-PLAN-001`。
 
 2026-10-09 15:15:49 +08:00（Producer U04首份Art实产核验）`ART_PRODUCTION_PLAN.md`等六份v0.1草稿文件已实存，Art实际启动有证据；当前`RIGHTS_AND_SOURCE.md`与`MASTER_REVIEW.json`尚缺，`DELIVERABLE.json`的验收描述仍将店铺绑定和出图列为本轮条件，待Owner按Master指定范围校正。六位名单阻塞未解除，Task继续`BLOCKED`、Approval `DRAFT`，不作USER_REVIEW或正式资源授权。

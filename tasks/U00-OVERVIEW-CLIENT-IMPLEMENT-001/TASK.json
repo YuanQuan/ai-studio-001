@@ -37,9 +37,10 @@
     "U01-FIVE-LAYER-CLIENT-REPLACE-001",
     "U02-TOURIST-CLIENT-INTEGRATION-001"
   ],
-  "status": "USER_REVIEW",
+  "status": "REVISION",
   "approval": "APPROVAL",
   "notes": [
+    "2026-10-09 15:34:36 +08:00 用户反馈“店铺的位置需要调整一下，可以做成配置表，之前应该有提过”。Producer记录v0.1/R3位置与配置化定向退修，USER_REVIEW→REVISION；原v0.1/R3运行/评审证据保留，不视为全部推倒。Master已创建U00-SHOP-LAYOUT-CONFIG-001 Product任务；字段/位置具体版本经Tech/Master Review和用户批准后，Client才可消费并提交新版实现。",
     "2026-10-09 15:15:23 +08:00 Producer核10/10 Required实存非空，DELIVERABLE九项自审PASS，Tech/Master同版R3 Review APPROVED；两TS与R3构建/运行清单SHA核对。REVIEW→USER_REVIEW，仅等待用户批准本实现v0.1/R3；不记DONE。",
     "2026-10-09 15:11:50 +08:00 Producer核Owner实施报告/资源完整性/自检/R3构建运行记录与DELIVERABLE均实存，9项当前自审PASS；Tech同版R3 Review APPROVED，Master Review尚待。IN_PROGRESS→REVIEW，Approval仍DRAFT。",
     "2026-10-09 14:19:28 +08:00 Producer核git diff：Task Required `apps/client/assets/labs/menu/scene1_camera_controller.ts`已有Client本轮源码增量，新增synchronizedNodes及apply时同步scale/position逻辑。READY→IN_PROGRESS，记录TASK_STARTED。此为首份制作证据，不代表构建、运行或验收通过。",

@@ -1,0 +1,28 @@
+{
+  "task_id": "U00-SHOP-LAYOUT-CONFIG-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已核U00_SHOP_LAYOUT.xlsx工作表A4:E10的六行值与现有SHOP_IDS、SHOP_NAMES逐一一致：MT_SHOP_01、SHOP_02至SHOP_06各出现一次，display_order为1至6；X基线依次为-1320、-950、-580、580、950、1320，Y均为-225。桥属于五层街景，不应生成店铺记录。表格当前值仅复现U00 v0.1/R3摆放，尚非用户批准的新位置。"
+    },
+    {
+      "severity": "INFO",
+      "message": "字段类型与坐标装配可执行：shop_id/shop_name为非空字符串，display_order为唯一整数，contact_x/contact_y为必填有限数值，允许小数。场景源坐标系为3072×1024中心原点、X向右/Y向上；表格值为ground_contact的世界目标坐标。客户端根节点应按targetContact - localGroundContact × 0.4计算X/Y；当前本地脚点(0,-388)产生rootY=-69.8。缩放0.4固定于既有实现，不由此表增开可编辑字段。"
+    },
+    {
+      "severity": "INFO",
+      "message": "建议后续生成器按稳定shop_id而非Excel物理行号关联现有六个Prefab，并以既有SHOP_IDS/SHOP_NAMES/display_order做完整集合与一对一校验。对空值、重复/未知ID、名称不匹配、序位重排、非有限数值、X不严格递增、前三X非负/后三X非正，以及X/Y超出闭区间[-1536,1536]/[-512,512]均应硬失败；不得自动填0、截断、排序纠错或静默跳过。输出可为只含稳定ID、序位与坐标的Client本地JSON，记录源表版本及SHA-256；生成和导入均不得改变Prefab、图片、meta或U03原展示逻辑。"
+    },
+    {
+      "severity": "INFO",
+      "message": "范围校验只验证落在源画布内，不能证明店铺完整可见或不与桥、栏杆及彼此相互遮挡。新位置需保留六店顺序和桥两侧归属，并在相同视口、镜头拖缩条件下做实际运行画面复核。若位置跨桥、改变顺序、缩放或脚点语义，应提交新版本和相应审批，不能仅改表格数值直接接入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前工作簿是人工源表，没有内置公式或数据验证规则；VALIDATION_RECORD.md证明当前六行值、文件完整性与表格预览通过，不代表未来改值会被Excel自动拦截。技术校验器及客户端生成消费尚未实现，须在用户批准具体配置版本后由Client任务落实并验证。此表只含客户端示例摆放数据，不涉及Server、热更新或经营语义。"
+    }
+  ],
+  "next_action": "Master对同版v0.1配置表、字段字典及本评审复核，向用户呈现当前R3基线并获取具体调位方向与配置Artifact审批；Producer记录版本。用户批准具体数值和字段版本后，Client再按上述技术校验与生成契约实现消费、构建并以同视口运行截图验证。"
+}

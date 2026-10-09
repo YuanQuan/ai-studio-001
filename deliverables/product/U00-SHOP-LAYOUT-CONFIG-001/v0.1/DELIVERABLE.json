@@ -1,0 +1,43 @@
+{
+  "task_id": "U00-SHOP-LAYOUT-CONFIG-001",
+  "owner": "product",
+  "summary": "提供U00六店地面接触点位置的待审Excel源表与字段字典，六行沿用当前R3坐标基线；具体新位置待用户确认。",
+  "artifacts": [
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/U00_SHOP_LAYOUT.xlsx",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/VALIDATION_RECORD.md",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/TECH_REVIEW.json",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Excel包含现有六店稳定ID与当前位置基线，中文名称可读，横向和纵向位置可独立编辑",
+      "result": "PASS",
+      "evidence": "工作簿U00六店位置!A4:E10共六行；D/E是可编辑脚点X/Y。"
+    },
+    {
+      "criterion": "字典明确坐标系、店铺脚点、顺序与字段类型/范围/引用及示例限定，无经营语义扩展",
+      "result": "PASS",
+      "evidence": "CONFIG_SPEC.md的坐标与使用方式、字段字典、当前基线与后续版本。"
+    },
+    {
+      "criterion": "源表导出后数据校验与视觉检查完成，不误称当前坐标为已获用户批准的新位置",
+      "result": "PASS",
+      "evidence": "VALIDATION_RECORD.md记载六行身份、坐标、导出文件和工作簿渲染检查；工作簿显著标明当前R3基线与新位置待确认。"
+    },
+    {
+      "criterion": "Tech/Master同版Review后呈用户审核；配置具体版本批准前不改客户端读取行为，不新增修改美术资源",
+      "result": "PASS",
+      "evidence": "同版TECH_REVIEW.json和MASTER_REVIEW.json均为APPROVED，配置现待用户审核；本轮仅新增Product交付文件，未修改客户端和美术。PASS仅指评审与边界落实，不代表用户已批准具体位置。"
+    }
+  ],
+  "assumptions": [
+    "使用当前U00 v0.1/R3的六店位置作为待调整基线，不推断用户期望的新坐标。",
+    "缩放固定沿用现有0.4，只允许编辑地面接触点X/Y。"
+  ],
+  "risks": [
+    "具体新位置和最终同视口画面尚待用户确认；当前表不应被当作可直接接入的获批配置。",
+    "Tech/Master已完成设计审查；配置生成、客户端消费及新摆位实际运行画面尚未实现或验证，须待用户批准具体版本后另行落实。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-09 15:45:27 +08:00（Producer送审；非用户决定）：`U00-SHOP-LAYOUT-CONFIG-001` v0.1工作簿SHA-256 `6f12f4975e4a93dc898b9b3fa4bd27f694a83acddfd450d41d5eb5f98f5c2c39`、字段字典SHA-256 `133bd4edd8ff585e1b4e30be43ecd47184e75f363a6d0aa2fcf305ec04b86c7b`，7/7 Required、四项方案验收PASS，Tech/Master同版APPROVED。Task/Approval USER_REVIEW、decided_at null。表内六店坐标仅复制U00 v0.1/R3旧位置作为可编辑基线；用户具体调整方向/新数值尚未确认，不构成位置批准或Client读取授权。
+
+2026-10-09 15:34:36 +08:00（Producer退修绑定；用户消息精确时刻未知）：用户对`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.1/R3反馈“店铺的位置需要调整一下，可以做成配置表，之前应该有提过”。Task `USER_REVIEW→REVISION`，该版Approval `REJECTED`，仅针对六店位置与配置化；R3 `IMPLEMENTATION_REPORT.md` SHA `21ef3d16…5316cb5`、Tech/Master Review、构建和运行证据保留历史，其他已核行为不据此重判失败。新`U00-SHOP-LAYOUT-CONFIG-001` v0.1仍DRAFT，具体字段与位置经Tech/Master同版Review和用户批准前，Client不得消费为正式位置。
+
 2026-10-09 15:15:23 +08:00（Producer送审；非用户决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.1/R3 `IMPLEMENTATION_REPORT.md` SHA-256 `21ef3d16f50de4e1f4cc3db558ed101df251e26b8773134613dbb265a5316cb5`，两TS源码与R3构建/运行清单SHA已绑定。10/10 Required、九项Owner验收PASS、Tech/Master同版R3 APPROVED；Task/Approval均USER_REVIEW，decided_at null。两视口桌面Web运行通过；真机触控/性能和逐UUID Library回读未测。R1/R2退修记录保留，不能冒充R3；等待用户对此实际实现明确批准。
 
 2026-10-09 14:17:24 +08:00（Producer绑定登记；用户消息精确时刻未知）：用户先明确“批准”唯一送审的`U00-OVERVIEW-BRIEF-001` v0.1，后明确“同时批准 U01 v0.1、U02 v0.3-R2，继续 U00”。三项准确版本分别绑定`FEATURE_BRIEF.md` SHA `9abee98f…ed3cda71`、U01 `IMPLEMENTATION_REPORT.md` SHA `7e966779…c098251`、U02 R2 `IMPLEMENTATION_REPORT.md` SHA `5c831e79…a0673836`；各Task Approval均`USER_APPROVED`，Master据既存验收/同版Review接受单元示例Task `DONE`。U02正式QA执行已取消，既有QA Review只限实施证据审阅，不构成正式QA通过；性能、真实触控与目标设备仍NOT_TESTED。U00实施独立DRAFT，尚待实际产出与再次用户审核。

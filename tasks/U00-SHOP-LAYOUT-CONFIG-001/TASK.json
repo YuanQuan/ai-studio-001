@@ -1,0 +1,41 @@
+{
+  "id": "U00-SHOP-LAYOUT-CONFIG-001",
+  "title": "U00六店位置配置表与字段字典",
+  "type": "design",
+  "owner": "product",
+  "parent": "U00-OVERVIEW-CLIENT-IMPLEMENT-001",
+  "objective": "将U00六店的摆放参数整理为可编辑Excel源表与最小字段字典，保持现有资源和店铺身份，先以当前坐标为待调整基线；技术评审后交用户确认，再由Client消费。",
+  "inputs": [
+    "用户2026-10-09：店铺的位置需要调整一下，可以做成配置表，之前应该有提过",
+    "project/config/README.md",
+    "project/config/CONFIG_CATALOG.md",
+    "apps/client/assets/UnitSampleGallery.ts（当前U00 v0.1/R3试摆）",
+    "deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.1/IMPLEMENTATION_REPORT.md"
+  ],
+  "deliverables": [
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/U00_SHOP_LAYOUT.xlsx",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/VALIDATION_RECORD.md",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/DELIVERABLE.json",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/TECH_REVIEW.json",
+    "deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/MASTER_REVIEW.json",
+    "tasks/U00-SHOP-LAYOUT-CONFIG-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "Excel包含现有六店稳定ID与当前位置基线，中文名称可读，横向和纵向位置可独立编辑",
+    "字典明确坐标系、店铺脚点、顺序与字段类型/范围/引用及示例限定，无经营语义扩展",
+    "源表导出后数据校验与视觉检查完成，不误称当前坐标为已获用户批准的新位置",
+    "Tech/Master同版Review后呈用户审核；配置具体版本批准前不改客户端读取行为，不新增修改美术资源"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-09 15:45:27 +08:00 Producer核7/7 Required非空、DELIVERABLE四项方案验收PASS、Tech/Master同版v0.1 Review APPROVED，REVIEW→USER_REVIEW。工作簿仅R3现位置可编辑基线；用户新位置方向未定、此表数值未获批准。",
+    "2026-10-09 15:41:36 +08:00 Product已提交Excel、字典、校验与交付索引四份Owner Required；DELIVERABLE前三项方案验收PASS、第四评审门禁NOT_TESTED，进入IN_PROGRESS→REVIEW。Tech/Master同版结论未齐，Approval仍DRAFT。",
+    "2026-10-09 15:38:24 +08:00 Producer核首份Required `deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/CONFIG_SPEC.md`实存非空；Product已实际开始字段/坐标基线编写，READY→IN_PROGRESS/TASK_STARTED。当前仅草稿，Excel/校验/评审与用户批准待。",
+    "2026-10-09 15:34:36 +08:00 Producer核Product任务七项Required、四项验收与输入明确，零依赖，状态READY；当前交付目录未见首份Required实产，不记TASK_STARTED或IN_PROGRESS。具体位置方向仍待用户回答；可先制作当前R3基线与字段草稿，但不得将基线当作新位置获批。",
+    "本次用户意见是U00实现位置修订反馈，原实现v0.1/R3保留历史；具体位置调整方向正向用户询问。",
+    "单元示例不分派QA；配置为示例展示位置，不是正式经营或装修规则。"
+  ]
+}
