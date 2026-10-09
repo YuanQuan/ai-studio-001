@@ -22,7 +22,7 @@ const GOLD = new Color(246, 189, 109);
 
 @ccclass('UnitSampleGallery')
 export class UnitSampleGallery extends Component {
-  @property({ type: Prefab, tooltip: 'STREET_BASE_01 共用四层背景 Prefab。' })
+  @property({ type: Prefab, tooltip: 'STREET_BASE_01 共用五层背景 Prefab。' })
   public streetBasePrefab: Prefab | null = null;
 
   @property({ type: Prefab, tooltip: 'UG_GHOST_01 正式单游客 Prefab。' })
@@ -270,8 +270,8 @@ export class UnitSampleGallery extends Component {
     this.menuContent = this.makeNode('MenuContent', this.page);
     this.menuTitle = this.makeNode('MenuTitle', this.menuContent, 660, 68);
     this.label(this.menuTitle, '单元示例', 0, 0, 42, GOLD);
-    this.menuCards.push(this.menuCard('U01', '四层场景镜头',
-      '查看四层场景视差，拖动、缩放并重置镜头。', () => this.openUnit()));
+    this.menuCards.push(this.menuCard('U01', '五层场景镜头',
+      '查看五层场景视差，拖动、缩放并重置镜头。', () => this.openUnit()));
     this.menuCards.push(this.menuCard('U02', '游客动作与装扮',
       '查看游客的动作、左右朝向与独立装扮。', () => this.openTourist()));
     const shopsReady = this.shopPrefabs.length === 6 &&
@@ -579,7 +579,7 @@ export class UnitSampleGallery extends Component {
     const viewport = this.makeNode('Scene1Viewport', this.page, visible.width, visible.height);
     this.sceneViewport = viewport;
     if (!this.streetBasePrefab) {
-      this.label(this.page, '四层背景暂不可用，请检查已批准资源导入。',
+      this.label(this.page, '五层背景暂不可用，请检查已批准资源导入。',
         0, 0, 20, MUTED, 640, 80);
       return;
     }
@@ -587,12 +587,12 @@ export class UnitSampleGallery extends Component {
     const background = instantiate(this.streetBasePrefab);
     background.name = 'STREET_BASE_01';
     viewport.addChild(background);
-    const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_Foreground'];
+    const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
     const layers = layerNames.map(name => background.getChildByName(name))
       .filter((layer): layer is Node => !!layer);
-    if (layers.length !== 4) {
+    if (layers.length !== 5) {
       background.destroy();
-      this.label(this.page, '四层背景结构异常，请检查 STREET_BASE_01。',
+      this.label(this.page, '五层背景结构异常，请检查 STREET_BASE_01。',
         0, 0, 20, MUTED, 640, 80);
       return;
     }

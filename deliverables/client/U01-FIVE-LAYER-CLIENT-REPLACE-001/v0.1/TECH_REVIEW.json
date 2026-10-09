@@ -1,0 +1,28 @@
+{
+  "task_id": "U01-FIVE-LAYER-CLIENT-REPLACE-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "批准范围为U01五层资源的当前Cocos 3.8.8 Web-Mobile接入。只读核五张客户端PNG与已获Gate2 USER_APPROVED的Art v0.6 exports逐字节SHA一致；五份实际Creator meta与Library SpriteFrame均为3072×1024、中心pivot、offset(0,0)、trimType none。L01–L04沿用原UUID，旧l04_foreground活动路径已退役且UUID仅在新l04_water_bridge路径出现；L05由Creator实际生成image UUID 54693964-2771-40f1-ab3e-f0baae0db797及对应Texture2D/SpriteFrame子UUID，Prefab已引用真实子UUID。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Prefab序列化对象图35项、根下五层顺序与五张同尺寸UITransform正确，Scene仍引用原Prefab UUID 2d697fb3-01f0-4330-a180-a9c162310bf8；Scene静态链接检查STATIC_PASS。Gallery仅U01入口改五节点及五层文案，镜头常量为3072×1024、视差[0.3,0.8,1,1,1]、五层长度检查；1.0–1.8限制、拖动、重置和返回重进逻辑保留，未见U02/U03逻辑改动。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator最终日志含Build Assets success及web-mobile Task Finished，新构建149文件约25MB，五PNG在build中SHA与Art源一致。日志仍有build-script子进程SIGTERM诊断，故以当前build index SHA 02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d、HTTP实际加载、Codex内置浏览器五CSS视窗中心/左右边缘截图及390×844缩放/拖动、720×1280返回重进结果交叉验证；console-warn-error记录空数组。截图未见黑边、透明洞或前后层序倒置。"
+    },
+    {
+      "severity": "INFO",
+      "message": "五PNG文件合计8,466,168字节，3072×1024×RGBA8×5基础展开为62,914,560字节(60MiB)；浏览器调试面板约148–151MiB是整工程瞬时GFX Texture Mem，均非目标手机驻留或帧率结论。五视窗均为桌面浏览器DPR1模拟，真实触控双指、目标设备性能与小游戏平台兼容仍NOT_TESTED，不写为PASS。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "scene1_camera_controller.ts中layers属性的Editor tooltip仍沿用四类文字“天空、山峦、地面、前景”，与实际五层节点不完全一致；不影响序列化、构建或镜头行为。后续修改时同步文案并重新绑定构建身份。"
+    }
+  ],
+  "next_action": "Client把Master的BROWSER_RUNTIME_CHECK.md及本技术结论并入最终实施报告、验收逐项结果和资源登记；Art对同一构建/视窗完成运行视觉检查，Master据证据接受。目标手机性能若列入后续正式接入或发布范围，应另作实测，不以本Web检查替代。"
+}

@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-09 12:20:43 +08:00（Producer Client v0.1送审；非用户实现批准）：`U01-FIVE-LAYER-CLIENT-REPLACE-001` 的实施报告SHA-256 `7e966779cbc28e76a3442401c1558cab7202416be1ca8a5dd26be8643c098251`，9/9 Required实存、四项验收PASS；Art/Tech对实际Web-Mobile接入与五视窗浏览器证据均APPROVED，Master`MASTER_ACCEPTANCE.md`接受送审。当前Client `ARTIFACT_APPROVAL.json`为USER_REVIEW、decided_at null，等待用户对本次客户端替换及运行结果确认。Art资源v0.6此前USER_APPROVED只解锁接入，不代替本实现审批；Task不标DONE。
+
+2026-10-09 12:01:26 +08:00（Producer绑定登记时刻，用户回复精确时刻未知）：用户对当前`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.6具体五层PSD/五PNG及重组审核明确回复“批准”。现行资源`ARTIFACT_APPROVAL.json`状态`USER_APPROVED`，绑定`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/USER_REVIEW_PACKET.md` SHA-256 `477f05b9d2da82536018ede89c9c91b3f42199553224f40b2f07ecba83c15cd3`，decided_at为本登记时间；Master基于19/19 Required、四PASS与已核实图接受Art资源Task DONE。此批准解锁Client正式接入，不代表已导入或运行通过；Client Task READY、其实现Approval仍DRAFT。
+
 2026-10-09 11:21:46 +08:00（Producer Gate2正式送审；非用户批准）：`U01-FIVE-LAYER-REDRAW-ASSET-001` v0.6 五张3072×1024实际PNG、五层PSD、零位总览、静态手机视窗、来源/版本清单已在`deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/USER_REVIEW_PACKET.md`展示并核19/19 Required、四验收PASS。按本组织自行切图例外直接USER_REVIEW，`tasks/U01-FIVE-LAYER-REDRAW-ASSET-001/ARTIFACT_APPROVAL.json`状态USER_REVIEW、`decided_at=null`。用户此前只批准3072画幅方案，尚未批准本版具体切片；Client任务继续BACKLOG，旧四层工程未换。
 
 2026-10-09 11:00:50 +08:00（Producer画幅决定绑定；用户消息精确时刻未知）：用户明确“采用3072×1024方案吧”，`DEC-U01-CANVAS-3072-013`把U01当前正式画幅定为3072×1024，取消左右加长。此前3840目标与v0.5失败试验保留历史。此决定只覆盖画幅方案；资源Gate2现行v0.6 DRAFT、decided_at null，五层实际正式切片及重组待提交用户审核，Client接入仍锁定。

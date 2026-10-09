@@ -47,9 +47,10 @@
   "dependencies": [
     "U01-FIVE-LAYER-REDRAW-PLAN-001"
   ],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
+    "2026-10-09 12:01:26 +08:00 用户对当前v0.6五层具体切片审核明确‘批准’，审批精确绑定USER_REVIEW_PACKET.md SHA-256 477f05b9d2da82536018ede89c9c91b3f42199553224f40b2f07ecba83c15cd3；19/19 Required、四验收PASS、Art/Tech新画幅预签及PSD/五PNG/重组文件核验已通过，Master据此最终接受Art资源，USER_REVIEW→DONE。Client实际导入/运行不在此结论内，接入Task依赖现可解锁。用户消息精确时间未知，12:01:26为Producer绑定登记时间。",
     "2026-10-09 11:21:46 +08:00 v0.6全部19/19 Required实存非空，DELIVERABLE索引19项唯一且逐项覆盖Task，四项验收与Task逐字同序PASS。Art/Tech同SHA导出前预签已核，五PNG均3072×1024 RGBA且与同源候选逐字节相同；正式PSD五层、PSD/五图同尺度重组逐像素相同，manifest稳定ID、路径及哈希全匹配。自产切图按项目例外直接USER_REVIEW，不另增成品专业Review；Gate2仅送具体切片，尚未USER_APPROVED，Client任务保持BACKLOG。",
     "2026-10-09 Master另授权Producer仅在project/ASSET_HANDOFF_REGISTRY.md追加v0.6五层未导入计划表，消费Art修正后的CUT_MANIFEST稳定ID STREET_BASE_01_L01–L05，记录美术实际路径/hash、客户端计划路径、UUID PLANNED；不得覆盖旧四层实际导入身份或预写客户端导入。",
     "2026-10-09 11:02:17 +08:00 v0.6 PREFLIGHT_PLAN.md与TOOLCHAIN_AUDIT.md两份Required于11:01:17实存非空；Producer据Art当前实产核READY→IN_PROGRESS/TASK_STARTED。Art/Tech对准确新画幅同SHA预签与正式五层导出待核，Gate2 DRAFT、Client替换BACKLOG。",

@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+## WR-20261009-U01-CLIENT-REPLACE-009
+
+- 周期与结果：可核登记窗口为2026-10-09 12:01:26–12:20:43 +08:00，墙钟19分17秒；用户资源批准回复的精确时刻未知，不能把此窗外推为其等待或全部工作耗时。Art v0.6具体切片USER_APPROVED后Client依赖解锁，五PNG同源导入、五层Prefab/镜头更新、Creator 3.8.8 Web-Mobile构建、HTTP和内置浏览器五CSS竖屏中心/左右与拖缩/重入证据完成。Art/Tech运行Review APPROVED，Master接受实现送审；Client Task USER_REVIEW、Approval USER_REVIEW、decided_at null。证据为上游批准、Client Task/Approval、实施报告、对象/资产导入审计、构建日志、浏览器记录和20张截图/哈希、双Review、Master验收及资源登记。
+- 时间分类：12:01:26为Producer资源批准登记；12:05:09核首批Client Required实产；12:07:08五工程PNG/.meta与构建记录；12:10:26核Creator最终构建/HTTP；12:15:57核浏览器记录；12:17:47 Art/Tech运行Review；12:18左右Master接受记录；12:20:43 Client完整四PASS送审。窗口含并行代码/资源接入、Creator构建、桌面浏览器操作、专业Review和流程登记；各角色净工时、Creator具体等待、用户批准前等待不可靠，标未知。引导构建曾因临时L05 UUID有missing，已以真实UUID在最终构建修正；耗时净影响未知。当前等待的是Client v0.1用户实现决定，不计入已结束窗口。
+- 速度判断与原因：尚无目标工时或同类可比基线，不能判角色快慢。本轮可证实一次临时UUID引导构建返工，后续Meta/Library和Web输出回读消除了错引用；Creator最终日志仍含build-script SIGTERM诊断，但完成记录、HTTP实际加载及浏览器操作相互佐证，不能把该诊断直接归为最终失败。截图现存调试面板遮挡局部，且桌面DPR1不能替代真机性能。
+- 建议与复核：Client下一次类似导入优先取得真实新资源UUID再绑定Prefab并跑最终构建，代价是先执行一次AssetDB导入，复核点为无临时UUID的最终构建/对象图；Tech在下一次会触及镜头脚本的已授权改动中同步五层Editor tooltip并重新绑定构建身份，作为MINOR维护而非本次门禁；Master/Producer在用户确认Client v0.1时只按准确实现版本记录USER_APPROVED与最终接受，目标设备触控/性能若进入正式发布范围再按适用流程实测。
+
 ## WR-20261009-U01-3072-RESOURCE-008
 
 - 周期与结果：可核流程窗口为2026-10-09 11:00:50–11:21:46 +08:00，墙钟20分56秒；用户画幅回复的精确时间未知，不能把本窗口当作全部工作时间。用户明确采用3072×1024后，Master记录`DEC-U01-CANVAS-3072-013`并将资源切到v0.6；Art/Tech同SHA预签后把v0.5既有五层候选同字节整理为正式PSD、五PNG、重组与静态视窗。Producer核19/19 Required、四验收PASS、图层和SHA/重组后送具体切片USER_REVIEW；Gate2尚未用户批准，Client BACKLOG。证据为决策、资源Task/Approval、v0.6双预签、`DELIVERABLE.json`、`ART_FILE_CHECK.json`、`CUT_MANIFEST.json`、审核包与`project/ASSET_HANDOFF_REGISTRY.md`计划表。

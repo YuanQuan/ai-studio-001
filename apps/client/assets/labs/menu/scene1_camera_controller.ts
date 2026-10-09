@@ -4,9 +4,9 @@ import {
 } from 'cc';
 
 const { ccclass, property } = _decorator;
-const SOURCE_WIDTH = 2172;
-const SOURCE_HEIGHT = 724;
-const RATIOS = [0.3, 0.8, 1.0, 1.0];
+const SOURCE_WIDTH = 3072;
+const SOURCE_HEIGHT = 1024;
+const RATIOS = [0.3, 0.8, 1.0, 1.0, 1.0];
 const EDGE_GUARD = 2;
 
 /** Full foreground canvas stays outside every viewport edge, including a sampling guard. */
@@ -18,7 +18,7 @@ export function calculateScene1Bounds(width: number, height: number, zoom: numbe
   return { coverScale, scale, maxCameraX };
 }
 
-/** 示例1 Lab 专用镜头与输入控制。该组件只驱动四层背景节点，不属于共享背景 Prefab。 */
+/** 示例1 Lab 专用镜头与输入控制。该组件只驱动五层背景节点，不属于共享背景 Prefab。 */
 @ccclass('Scene1CameraController')
 export class Scene1CameraController extends Component {
   @property({ type: [Node], tooltip: '从后到前：天空、山峦、地面、前景。' })
@@ -276,7 +276,7 @@ export class Scene1CameraController extends Component {
   }
 
   private recalculate(): void {
-    if (this.destroyed || !this.layers || this.layers.length !== 4) return;
+    if (this.destroyed || !this.layers || this.layers.length !== 5) return;
     const viewportTransform = this.viewport?.getComponent(UITransform);
     if (!viewportTransform) return;
     const visible = viewportTransform.contentSize;
