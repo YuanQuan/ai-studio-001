@@ -1,0 +1,23 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-CLIENT-20261009",
+  "status": "BUILD_SUCCEEDED",
+  "creator_version": "3.8.8",
+  "initial_sandbox_attempt": {
+    "exit_code": -1,
+    "duration_seconds": 0.2,
+    "logs": "stdout/stderr empty; no build log/output",
+    "classification": "STARTUP_FAILURE_NO_ADMIN_TOKEN"
+  },
+  "recovery": {
+    "method": "documented hidden RunAs helper",
+    "admin_token_verified": true,
+    "pid": 32428,
+    "exit_code": 36,
+    "started": "2026-10-09T22:35:23.0672692+08:00",
+    "finished": "2026-10-09T22:36:36.1241811+08:00",
+    "log": "creator-build.log",
+    "finished_marker": "build Task (U03-SHOP-FULL-REDRAW-CLIENT-20261009-v0.1) Finished"
+  },
+  "output": "apps/client/build/u03-shop-full-redraw-client-v01-web-mobile",
+  "output_manifest": "BUILD_OUTPUT_MANIFEST.json"
+}

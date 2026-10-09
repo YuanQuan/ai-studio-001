@@ -1,0 +1,60 @@
+{
+  "id": "U03-SHOP-FULL-REDRAW-20261009",
+  "title": "U03 六店整体重绘成品 v0.2：理发店建筑视角修订",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "仅修正v0.1中04理发店建筑视角，01/02/03/05/06沿用v0.1同字节资源，重新交六店总览和具体v0.2切片/重组供用户整体看图；批准前不替换U03客户端资源。",
+  "inputs": [
+    "用户最新指令：理发店建筑视角不对，修正一下，然后再整体发我看看",
+    "tasks/U03-SHOP-FULL-REDRAW-20261009/ARTIFACT_APPROVAL_GATE2_v0.1.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/CUT_MANIFEST.json（SHA-256 0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8）",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/PRODUCTION_PLAN.md",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/BARBER_FRONT_VIEW_REVISION_PLAN.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/ART_BARBER_REVISION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-FULL-REDRAW-20261009/v0.2/TECH_BARBER_REVISION_PRESIGN.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/DELIVERABLE.json",
+    "tasks/U03-SHOP-FULL-REDRAW-20261009/ARTIFACT_APPROVAL_GATE2.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_body_full_redraw_v02.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_sign_full_redraw_v02.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_390x844.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_720x1280.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_recomposed.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_reference_v01_v02_same_scale_black.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/six_shop_full_redraw_overview.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/psd/shop_04_full_redraw_v02.psd",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/source/shop_04/imagegen_whole_r2.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/source/shop_04/psd_work/manifest.json"
+  ],
+  "acceptance": [
+    "04理发店建筑视角按用户反馈重新绘制并与新参考同背景、同脚点、同尺度对照；01/02/03/05/06的PSD、body/sign切片相对v0.1保持同字节，旧v0.1退回范围与版本保留。",
+    "04正式修图前有版本化短方案及Art/Tech对同一批次签认，记录来源、画布、脚点、PSD可编辑范围、稳定ID、两片导出与用户视角问题的检查方式。",
+    "04新源画、1024×1024多层PSD和body/sign真透明切片可追溯，重组与目标新画一致，中文牌面、建筑透视、轮廓、遮挡和透明边按实际显示尺度检查。",
+    "v0.2提供完整六店总览、六店同尺度重组及390×844/720×1280静态视窗，清单逐件列路径/SHA并可核五店同字节继承与04新版本。",
+    "把具体v0.2六店整体效果交用户Gate2审核；用户确认前不替换U03正式客户端资源，接入后的Creator运行和性能另核。"
+  ],
+  "dependencies": [
+    "U03-SHOP-REFERENCE-REVISION-20261009"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-09分派本生产Task，用户已明确授权整体重绘并要求成品先看后替换。方案Gate1准确SHA见输入；具体实片Gate2尚未批准。",
+    "首图前同批Art/Tech预签是硬门禁；仅在两份预签均实存且签认同版方案后才可制作正式样张。",
+    "2026-10-09 21:51 +08:00 Art同批预签与Tech同方案SHA预签均实存；Owner已开始生产准备，Task READY→IN_PROGRESS/TASK_STARTED，01样张制作可开始。单元示例由Owner留存检查，不分派QA。",
+    "2026-10-09 22:09 +08:00 依据CUT_MANIFEST.json中44个路径/SHA将Required精确化，另列六店三图对照与固定评审/文档；本Task送Gate2前按这些实存路径逐项核验。",
+    "2026-10-09 22:10 +08:00 62/62 Required实存，CUT_MANIFEST.json SHA-256 0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8，44/44登记路径哈希匹配；六PSD、12 PNG、32 preview实存，DELIVERABLE五验收前四PASS、第五用户决定待。组织Agent自行切图按规则可直接送用户，Task REVIEW→USER_REVIEW；具体Gate2决定待，Client替换锁定。",
+    "2026-10-09 22:19 +08:00 用户退回v0.1，具体问题仅04理发店建筑视角；v0.1 Task/Approval快照留历史。当前v0.2先修04，五店沿用同字节，整体再给用户看；Approval DRAFT，正式接入锁定。",
+    "2026-10-09 22:20 +08:00 Art首份BARBER_FRONT_VIEW_REVISION_PLAN.md已实存（SHA-256 FEACA10BA6EACC483461C3246434173FF4553FC323F19D238485F43E74D5D4CD），Task REVISION→IN_PROGRESS有本轮真实产出。",
+    "2026-10-09 22:21 +08:00 Art与Tech对同批ID U03-SHOP-04-FRONT-VIEW-V02、相同方案SHA及参考/旧04原画SHA分别预签，04正式视角修图首图门禁满足；Gate2仍DRAFT。",
+    "2026-10-09 22:28 +08:00 v0.2 Required按8项固定文件及manifest 10项新路径精确化；五店v0.1文件按manifest路径/哈希跨版本继承，不在v0.2重复复制。",
+    "2026-10-09 22:28 +08:00 18/18 Required实存，v0.2 CUT_MANIFEST.json SHA-256 F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED，46/46路径SHA匹配（36旧路径、10新路径），Art DELIVERABLE五项PASS；自切路径直接提交六店整体v0.2 USER_REVIEW。",
+    "2026-10-09 22:30:10 +08:00 用户明确‘好的替换U03把’，对当前唯一准确v0.2六店具体成品作Gate2 USER_APPROVED并授权Client接入；Master基于18/18 Required、五验收PASS与清单46/46哈希接受美术任务DONE。旧v0.1退回历史保留，Creator运行/性能仍待接入后核。"
+  ]
+}

@@ -1,5 +1,19 @@
 # 用户审批记录
 
+2026-10-09 22:51 +08:00（Producer送Client实施v0.1审核；非用户决定）：`U03-SHOP-FULL-REDRAW-CLIENT-20261009`的`DELIVERABLE.json`、`TECH_REVIEW.json`和`MASTER_REVIEW.json`实存，同版评审均APPROVED；57/57 Required、五项验收PASS。`ARTIFACT_APPROVAL.json`转USER_REVIEW，`decided_at=null`。Art v0.2 Gate2此前USER_APPROVED且用户已授权替换；这不自动批准Client实施和运行结果。Creator日志Finished与进程exit36并列记录，目标机/触控/性能NOT_TESTED。
+
+2026-10-09 22:30:10 +08:00（Producer绑定用户明确决定；原回复精确时刻未知）：用户对当前`U03-SHOP-FULL-REDRAW-20261009` v0.2六店整体成品回复“好的替换U03把”。`ARTIFACT_APPROVAL_GATE2.json`记USER_APPROVED，绑定`CUT_MANIFEST.json` SHA-256 `F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED`；五店直接引用v0.1同字节、04为v0.2视角修订，18/18 Required、46/46路径SHA与五项Art验收PASS。此批准授权Client正式接入，不等于已接入或运行/性能通过；Client新Task Approval DRAFT，待实施及同版审核。v0.1 REJECTED历史保持。
+
+2026-10-09 22:28 +08:00（Producer重新送具体v0.2 Gate2，非用户最终决定）：用户退修04理发视角后，`U03-SHOP-FULL-REDRAW-20261009`仅重做04并重新提交六店整体总览。确切`CUT_MANIFEST.json` SHA-256 `F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED`；18/18 Required实存、46/46路径SHA一致，其中五店36条v0.1旧路径直接继承、04及总览10条v0.2新文件。`ARTIFACT_APPROVAL_GATE2.json`现USER_REVIEW、`decided_at=null`，旧`ARTIFACT_APPROVAL_GATE2_v0.1.json`保留REJECTED。组织Agent自行切图直接供用户审核，不增加成品专业Review；用户未决定前Client不可替换，Creator/性能未测。
+
+2026-10-09 22:19 +08:00（Producer登记用户退回；用户消息精确时刻未知）：用户对`U03-SHOP-FULL-REDRAW-20261009` v0.1具体成品说“理发店建筑视角不对，修正一下，然后再整体发我看看”。`ARTIFACT_APPROVAL_GATE2_v0.1.json`记REJECTED，准确绑定旧manifest SHA `0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8`并保留旧文件。该退回只针对04视角，01/02/03/05/06沿v0.1同字节；新v0.2 Approval DRAFT/decided_at null，修好后六店整体重交用户。原Gate1制作授权不等于新版具体成品批准，Client仍不可替换。
+
+2026-10-09 22:10 +08:00（Producer送具体成品Gate2；非用户最终决定）：`U03-SHOP-FULL-REDRAW-20261009` v0.1 `CUT_MANIFEST.json` SHA-256 `0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8`，六PSD、12张透明PNG、同尺度重组、390/720视窗和六店总览已随`USER_REVIEW_PACKET.md`备审；62/62 Required存在、manifest44/44路径与SHA匹配，DELIVERABLE五项验收PASS（第五项仅指送审和接入锁定）。组织Agent自行切图按规则直接送用户，不增加成品专业效果复审。Task和`ARTIFACT_APPROVAL_GATE2.json`现USER_REVIEW、`decided_at=null`；此前Gate1授权只是制作许可。用户尚未认可具体成品，Client不得替换U03，Creator运行/性能也未验证。
+
+2026-10-09 21:50:10 +08:00（Producer绑定用户既有明确制作授权；原消息精确时刻未知）：用户连续明确“按照这个样子输出店铺，然后替换U03的资源”“我希望整体重绘，不要做局部的微调”“做完先给我看看再替换”。`U03-SHOP-REFERENCE-REVISION-20261009`方案 `PRODUCTION_PLAN.md` SHA-256 `171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB`，Art/Master同版Review APPROVED；`ARTIFACT_APPROVAL_GATE1.json`记USER_APPROVED，只授权准确六店整体重绘制作。用户未逐字审阅方案文件；首图前Art/Tech预签仍须完成。新`U03-SHOP-FULL-REDRAW-20261009`具体PSD/切片Gate2为DRAFT，成品须先给用户看图决定，批准前不替换Client。旧U03版本批准不外推至本批。
+
+2026-10-09 21:44 +08:00（Producer开线；非Gate1决定）：用户确认拥有本轮U03六店附件并允许商用改编，输入SHA-256 `B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9`，证据见`tasks/U03-SHOP-REFERENCE-REVISION-20261009/SOURCE_DECLARATION.json`。新方案`ARTIFACT_APPROVAL_GATE1.json`仍DRAFT、`decided_at=null`；不得把来源授权、旧U03已批准版本或用户要求替换解释为新版Gate1或Gate2批准。
+
 2026-10-09 23:39 +08:00（Master最终接受，非第二次用户决定）：U00 Client v0.6准确实施报告SHA `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`、`USER_VALIDATION.md` SHA `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`及Gallery SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`已绑定。用户先前明确验收当前v0.6，Tech/Master同版复评APPROVED，Master接受Task DONE；Approval持续USER_APPROVED，用户消息原时间未知故decided_at null。Agent构建/HTTP/IAB未测历史和旧BLOCKED快照保留，不作正式QA/发布结论。
 
 2026-10-09 18:09:45 +08:00（Producer送审；非用户最终决定）：`U00-OVERVIEW-CLIENT-IMPLEMENT-001` v0.3/R1 `USER_LAYOUT_INPUT.json` SHA-256 `db1abcb98bf3e864fce9e2c26b2fe7a848e909ed54ab19abff93703a40a0231a`，实施报告SHA-256 `9320db542f5d114978eb329ccf638d83b5f9b1ac044db235a2c4ab9d8c32804b`，Gallery源码、构建与运行清单同版绑定；11/11 Required、七项Owner拆分验收PASS，Tech/Master Review APPROVED。Task/Approval USER_REVIEW，decided_at null。用户提供的六店参数是本次坐标应用授权，不等于对旧v0.2整包或当前v0.3结果的无条件批准；Product Excel独立USER_REVIEW且未被消费。

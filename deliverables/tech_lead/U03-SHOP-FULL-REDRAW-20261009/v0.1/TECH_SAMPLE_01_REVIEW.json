@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "01 奶茶实物后验：新原画归一版、body、sign、重组均为 1024×1024 RGBA 且 alpha 含 0–255；body+sign 重组与归一版逐像素相同（Pillow ImageChops.diff bbox=None）。透明像素范围 x=139..883、y=282..901，与脚点 (512,900) 同尺度对齐。sign alpha 位于右侧 x=785..873、y=535..730。"
+    },
+    {
+      "severity": "INFO",
+      "message": "PSD 文件签名 8BPS、画布 1024×1024、8 bit RGB、layer_count=4；图层为前柜/接地、结构/内景、屋顶上部、右侧杯标。分层属于粗区域可编辑栅格，遮挡背面未补绘，不能按独立动画层使用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已看 preview/shop_01_390x844.png；屋顶、左右灯、杯形标识与经营物在该静态尺度可辨。Art 的 SAMPLE_01_ART_REVIEW.md 逐锚点给出 PASS 并注明帘片较密、瓦面更亮、轮廓较硬，最终视觉取舍仍由六店成品 Gate2 用户看图决定。"
+    },
+    {
+      "severity": "INFO",
+      "message": "纹理页数、DrawCall、驻留内存、帧率及 Creator/目标机运行尚未实测，状态 NOT_TESTED；本次通过仅指样张资源生产合同和静态视窗，不宣称运行性能通过。"
+    }
+  ],
+  "next_action": "Art 可按同版方案扩制 02–06；保持每店 1024² RGBA、PSD、多层来源、body/sign 精确重组和双视窗证据，集齐后送用户 Gate2 看图。"
+}

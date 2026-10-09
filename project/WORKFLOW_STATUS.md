@@ -1,5 +1,63 @@
 # 工作流状态
 
+2026-10-09 23:32 +08:00（Producer U00 v0.6真实阻塞与continuity）：v0.6 Owner交付及`BUILD_STATUS.json`齐；22/22 Task Required路径实存。静态输入/源码核六店脚点沿用、scale全0.34、顾客初始1人/0.20，恢复人数1及新增顾客初值0.20；Gallery SHA `99364FBB…22ABD`，同SHA assets noEmit exit0。Creator首试参数组合错误后，Windows PowerShell和pwsh管理员助手均在进程创建报`0xc0000142`，Creator未启动，无新构建/HTTP/IAB。Owner确认无当前安全恢复路径，Tech/Master同版Review均BLOCKED；Task `IN_PROGRESS→BLOCKED`，Approval DRAFT/decided_at null，不送USER_REVIEW。解除条件：提升助手恢复后，以记录的当前assets/settings/profiles和同SHA重建、核390×844/720×1280实际Web、完成Tech/Master复评。Continuity：本轮存在真实环境阻塞，没有空转READY/IN_PROGRESS；复盘`WR-20261009-U00-COORD-V06-BLOCK-001`。U03既有治理增量保留，Git提交/推送待运行验证和提交范围核对。
+
+2026-10-09 23:28 +08:00（Producer U00 v0.6参数修订开工）：用户最新JSON保留六店脚点，六店scale统一0.34，初始仅顾客id1 scale 0.20/count1，临时预览与离页恢复基线语义沿用。Master委派Client定向应用，v0.5 BLOCKED Task/Approval原样留`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/history/v0.5/`；用户参数授权不是v0.5/v0.6整版批准。Producer核`UnitSampleGallery.ts`当轮真实diff已改六店scale数组、顾客默认scale/count和面板初始文案，Task `READY→IN_PROGRESS/TASK_STARTED`，Approval v0.6 DRAFT。当前仍缺本版输入文书、类型检查、Creator/HTTP/IAB及同版Tech/Master Review；Client正在继续制作到真实门禁。U03治理原记录独立保留。
+
+2026-10-09 23:03:20 +08:00（Producer U00 v0.5补充静态检查与提交范围）：Client在同SHA的旧成功隔离副本对`assets`脚本执行Creator 3.8.8自带TypeScript `noEmit`，`--skipLibCheck --target ES2017`退出0，见`TYPECHECK_RESULT.json`与空stdout/stderr日志；范围仅本轮脚本与Creator声明，不代表Creator导入/构建或实际Web运行。两个失败隔离输入来源已在`BUILD_AND_RUNTIME_RECORD.md`分别说明；Task仍BLOCKED、Approval DRAFT，Tech/Master完整结论仍BLOCKED。本轮必要Creator/HTTP/IAB验证未完成，且共享治理文件混有先前U03增量，Master决定本轮Git提交/推送延期至阻塞解除后完成验证与核对提交范围；U03原记录保留。
+
+2026-10-09 22:58 +08:00（Producer U00 v0.5参数修订开线）：用户发回完整`U00_ENTITY_LAYOUT_FEEDBACK_V0_3` JSON，六店脚点依ID为(-1079,-234)、(-780,-260)、(-410,-235)、(350,-237)、(689,-249)、(1030,-249)，前五店scale 0.34、投壶0.40，3位顾客各0.28。Master委派Client作v0.5定向应用；Task/Approval已指向新Required，v0.4送审快照保存在`tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/history/v0.4/`。本次输入是参数应用授权，不构成v0.4整版或v0.5实现批准。v0.5 Owner首产尚待核，Task READY、Approval DRAFT；不以READY为停点，Client正在推进实产。U03 Client仍独立USER_REVIEW，不受本次参数决定覆盖。
+
+2026-10-09 22:51 +08:00（Producer U03 Client v0.1送审与continuity）：获批Art v0.2清单SHA F7B62B6A…931D5ED对应的12张正式PNG已替换，U00沿六个共用Prefab同源显示；57/57 Task Required实存且DELIVERABLE索引，五项验收逐字对应均PASS，同版Tech/Master Review均APPROVED。Creator 3.8.8构建日志Finished、Web输出149文件和12/12 Native哈希一致；管理员进程exit36如实记录。HTTP 200及390×844/720×1280内置浏览器18张JPEG截图/空控制台证据实存。Task IN_PROGRESS→REVIEW→USER_REVIEW，Client Approval USER_REVIEW/decided_at null。目标设备、真实触控、性能为NOT_TESTED；用户此前批准Art并授权接入，不等于已确认Client实施。Continuity：本线到真实用户门禁，无仅占位READY/IN_PROGRESS；待用户确认本版后Master方可接受DONE。
+
+2026-10-09 22:47 +08:00（Producer U03运行证据格式更正与Tech Review核验）：早前22:42/22:45日志中的`runtime_*.png`为截图暂存名；Client核文件签名均JPEG/JFIF并原字节改名为18份`runtime_*.jpg`。最终事实源为`evidence/RUNTIME_EVIDENCE_MANIFEST.json`，18/18截图路径SHA匹配，`runtime_console.json=[]`。`TECH_REVIEW.json`同任务APPROVED：获批清单、12 PNG/meta/UUID/Prefab、Creator输出12 Native、双视窗六店及U00运行证据通过；目标设备/性能NOT_TESTED。Task Required已补准确18 JPG及运行manifest/console，现57项中DELIVERABLE与MASTER_REVIEW仍待，Client Approval DRAFT；不得提前送USER_REVIEW。
+
+2026-10-09 22:45 +08:00（Producer U03/U00双视窗IAB截图齐）：`evidence/`现有390宽六店+重进+U00，以及720宽六店+U00+循环截图，共16张实际Web截图；完整浏览器操作/控制台记录、Client DELIVERABLE与Tech/Master同版Review尚待。可确认截图文件实存，具体交互结论仍以Master/Client最终运行记录为准。Task IN_PROGRESS、Approval DRAFT；继续补交付，不在截图齐备处停止。
+
+2026-10-09 22:42 +08:00（Producer U03 IAB第一视窗中间核验）：`evidence/runtime_390_shop_01.png`至`shop_06.png`和`runtime_390_reenter.png`已落盘，表明390宽六店逐店运行与返回重进截图实存；720宽及U00同源画面/交互、浏览器核验记录仍待Master/Client完成。不以单组截图推断全部运行结论。Task继续IN_PROGRESS、Approval DRAFT；Owner正在完成第二视窗。
+
+2026-10-09 22:39 +08:00（Producer U03 HTTP实际产物核验）：`evidence/http-server-record.json`记录127.0.0.1:8789回HTTP 200、Web输出根目录及index SHA，`IMPLEMENTATION_REPORT.md`已实存并将资源/导入/构建/HTTP列PASS；U03/U00 390/720浏览器运行和目标设备/性能仍NOT_TESTED。构建exit36与Finished并存、输出/native十二图哈希一致已如实留记录。Task继续IN_PROGRESS、Client Approval DRAFT；Master在内置浏览器核画面/回归后再决定是否进入REVIEW。
+
+2026-10-09 22:38 +08:00（Producer U03 Creator构建中间核验）：Creator 3.8.8 管理员构建进程`creator-admin-result.json`记录exit_code=36，Creator日志有本Task `Finished in (18 s)ms` 标记；`BUILD_OUTPUT_MANIFEST.json`记录真实Web输出149文件、约27.2MB，12/12 Native与Library PNG逐字节等于获批Art源，输出目录实存。退出码与完成标记并存，不能仅据其判最终运行通过；Client正启动HTTP，Master将核内置浏览器两视窗及U00/U03画面。Task IN_PROGRESS、Approval DRAFT，Owner运行证据待。
+
+2026-10-09 22:33 +08:00（Producer U03 Client资源/Prefab静态复核）：`ASSET_REPLACEMENT_MANIFEST.json` 12/12目标PNG字节哈希等于获批Art源，12/12现有`.meta`哈希与替换前一致；`PREFAB_REFERENCE_CHECK.json`已列六Prefab路径/UUID、body/sign绑定、Prefab/.meta哈希，并注明Gallery及Cocos设置未由本Task修改。U00原本复用同组六Prefab和贴图，现可同源显示；实际Creator构建和双视窗运行仍待。Task保持有实产的IN_PROGRESS、Approval DRAFT。Continuity：继续真实构建与HTTP/IAB验证，不在静态哈希通过处停工。
+
+2026-10-09 22:32 +08:00（Producer U03 Client实际开工）：Client `FEATURE_BRIEF.md`、`ASSET_REPLACEMENT_MANIFEST.json`、`RESOURCE_IDENTITY_AND_UUID.json`与12份旧工程PNG备份实存；git status显示十二张正式工程PNG已修改。manifest绑定获批美术v0.2清单SHA `F7B62B6A…931D5ED`、逐件旧/新hash、meta前后hash及真实UUID；U00因直接使用同组六Prefab/贴图可自然同源，暂未见U00代码/布局改动。Task `READY→IN_PROGRESS/TASK_STARTED`有当轮真实文件证据，Client Approval DRAFT。Creator构建、HTTP/IAB运行和同版实施验收待；Continuity：Client继续到真实门禁，不在资源首批复制处停工。
+
+2026-10-09 22:30:10 +08:00（Producer U03 v0.2具体成品批准与Client解锁）：用户在当前v0.2六店整体成品看图后明确“好的替换U03把”；`CUT_MANIFEST.json` SHA `F7B62B6A…931D5ED`，18/18 Required、46/46路径SHA与五项Art验收PASS，Gate2 Approval `USER_APPROVED`、Art Task `DONE`。旧v0.1 REJECTED快照保留。Master新建`U03-SHOP-FULL-REDRAW-CLIENT-20261009`接入Task，当前READY、Client Approval DRAFT；目标为按混合v0.1/v0.2清单替换U03十二张运行PNG并使U00同源，保留meta/UUID/Prefab/ID，完成Creator/HTTP/IAB双视窗Owner核验。美术成品批准仅解锁接入，不代表Client实施/运行已通过。Continuity：Client依赖已满足且用户授权接入，Master/Client须继续实际产出到下一用户门禁，不能以READY停点。
+
+2026-10-09 22:28 +08:00（Producer U03 v0.2六店整体重新送审与continuity）：04新透明原画、1024²四层PSD、body/sign双片、重组、390/720视窗、用户参考/v0.1/v0.2三图对照及六店新总览实存。`CUT_MANIFEST.json` SHA `F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED`，46/46路径哈希匹配，其中36条直接引用v0.1、10条v0.2新文件；Task18/18精确Required实存，DELIVERABLE五项验收PASS，第五仅指具体版本已送用户审核与Client锁定，不表示用户批准。按组织Agent自行切图路径直接交用户，Task `IN_PROGRESS→REVIEW→USER_REVIEW`、Gate2 Approval USER_REVIEW/decided_at null。v0.1 REJECTED历史保留；用户确认具体v0.2前Client不替换，Creator/设备性能未测。Continuity：本轮已到真实用户看图门禁，无空转READY/IN_PROGRESS；复盘`WR-20261009-U03-BARBER-V02-GATE2-001`。
+
+2026-10-09 22:24 +08:00（Producer U03 v0.2 04首批实产）：04新透明整店源`source/shop_04/imagegen_whole_r2.png`、四层语义源及新`body/sign`两张v02 PNG已实存；本次核验时v0.2正式PSD、04双视窗/六店总览、清单与审核包尚待，不能判断Gate2可送。Art正继续制作。五店原v0.1路径与哈希继承，不在v0.2重复复制。Task IN_PROGRESS、Approval DRAFT，Client锁定。
+
+2026-10-09 22:21 +08:00（Producer U03 v0.2首图门禁齐）：`ART_BARBER_REVISION_PRESIGN.json`与`TECH_BARBER_REVISION_PRESIGN.json`分别实存，均绑定同批`U03-SHOP-04-FRONT-VIEW-V02`、短方案SHA `FEACA10B…74D5D4CD`及参考/旧04原画SHA；04定向建筑投影修图可开始。两预签不是新版实片审批，Task IN_PROGRESS、Gate2 DRAFT，五店同字节继承与Client锁定不变。Continuity：Art继续实际制作04及六店新版总览至用户审核门禁。
+
+2026-10-09 22:20:42 +08:00（Producer U03 v0.2 Art预签）：`ART_BARBER_REVISION_PRESIGN.json`实存，绑定04正面视角短方案SHA `FEACA10B…74D5D4CD`和新参考/旧04原画SHA，范围只改04、五店同字节继承。Art签认以Tech同版预签为正式出图前提；Tech文件此时待，不能提前生成04正式图。Task继续有实际推进的IN_PROGRESS、Gate2 DRAFT。
+
+2026-10-09 22:20 +08:00（Producer U03 v0.2真实开工）：Art `BARBER_FRONT_VIEW_REVISION_PLAN.md`已实存，SHA-256 `FEACA10B…74D5D4CD`，锁04屋脊/檐口/牌框/台阶近水平、双柱等高、正面开口、左侧墙收窄等视角锚点；五店原图同SHA继承。Task `REVISION→IN_PROGRESS/TASK_STARTED`，Gate2 DRAFT。Art/Tech需对该准确短方案同版预签后才能出04新正式图；当前仅有方案，未记新图通过。
+
+2026-10-09 22:19 +08:00（Producer U03 Gate2 v0.1退回与v0.2修订开线）：用户明确“理发店建筑视角不对，修正一下，然后再整体发我看看”。旧`CUT_MANIFEST.json` SHA `0441A410…CC9EE8`及全部v0.1实片保留；`ARTIFACT_APPROVAL_GATE2_v0.1.json`准确记REJECTED，拒因仅04建筑视角。当前生产Task快照`TASK_v0.1.json`留历史，Task转REVISION，v0.2 Approval DRAFT，范围限04重新修正、01/02/03/05/06沿用v0.1同字节，随后全组六店重新给用户看图。Art短方案/Art-Tech同批预签与04实产待；不复制五店历史文件，不接入Client。Continuity：Master已分派Art继续至新版成品用户门禁，不能停在空转REVISION。
+
+2026-10-09 22:10 +08:00（Producer U03具体成品Gate2送审与continuity）：`U03-SHOP-FULL-REDRAW-20261009` v0.1六PSD、12 PNG、六店同尺度重组/双视窗/总览和审核包已实存。Task 62/62精确Required路径存在；`CUT_MANIFEST.json` SHA-256 `0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8`，清单44/44路径SHA匹配；DELIVERABLE五项验收均PASS，其中第五项仅指已提交具体版本给用户审核及Client锁定，不表示用户批准。依自行切图直接交用户例外，不增成品Art/Tech复审门禁；Task `REVIEW→USER_REVIEW`、Gate2 Approval USER_REVIEW/decided_at null。Master将具体总览和逐店同尺度图呈用户。用户选择前Client正式替换锁定，Creator/目标设备运行未测。Continuity：本轮可继续生产已到真实USER_REVIEW，无空转READY/IN_PROGRESS；复盘`WR-20261009-U03-FULL-REDRAW-GATE2-001`。
+
+2026-10-09 22:04 +08:00（Producer U03六店实图中间核验）：生产目录现有`psd/shop_01..06_full_redraw_v01.psd`六份、`exports/`六店各body/sign共12 PNG，`preview/`六店各重组/390/720/同尺度对照及总览/切片联系图共32图；Master独立核六PSD可读、PNG均1024² RGBA真alpha，04 sign最大alpha254属实际透明边。`CUT_MANIFEST.json`、`PSD_LAYER_EXPORT_MAP.md`、`USER_REVIEW_PACKET.md`、`DELIVERABLE.json`仍待Art落盘，Task继续IN_PROGRESS、Gate2 DRAFT。仅文件实存/格式核验，不等于Art完整验收或用户批准；Client替换锁定。
+
+2026-10-09 22:02 +08:00（Producer U03 02–06首批实产）：`source/shop_02`至`source/shop_06`各有`imagegen_whole_r1.png`原画实文件，连同01六店原始整店候选已保留；当前PSD/exports仍只见01，02–06的归一、分层、中文牌字、双片/重组和实图核验尚未完成。Task继续有实际产出的IN_PROGRESS、Gate2 DRAFT。Continuity：Art正在按全批预签继续制作，不能以原画落盘替代成品送审。
+
+2026-10-09 21:59 +08:00（Producer U03 01样张与全批门禁核验）：`U03-SHOP-FULL-REDRAW-20261009/v0.1/`已实存01透明整店原画、1024²四层PSD、body/sign两片、重组与390/720静态视窗；`SAMPLE_01_ART_REVIEW.md`逐锚点PASS并披露帘片略密、瓦面更亮/线条较硬。`TECH_SAMPLE_01_REVIEW.json` APPROVED，核两片重组与归一新画逐像素一致、alpha、PSD四层及静态视窗；Creator/目标机性能NOT_TESTED。Art `ART_BATCH_EXPANSION_PRESIGN.json` 与Tech `TECH_FULL_BATCH_PRESIGN.json`均绑定Gate1方案SHA `171CFCE5…43587FB`，02–06全批预签齐全，可以继续整体重绘。Task保持有真实产出的IN_PROGRESS，Gate2 DRAFT；客户端替换锁定。Continuity：02–06可继续且已获授权，Master/Art推进至六店成品用户门禁。
+
+2026-10-09 21:51 +08:00（Producer U03生产首图门禁核验）：`U03-SHOP-FULL-REDRAW-20261009` 的`ART_PRODUCTION_PRESIGN.json`与`TECH_PRODUCTION_PRESIGN.json`均已实存，均绑定方案SHA `171CFCE5…43587FB`、六店整体重绘和1024画布/脚点/两片契约；Tech决定APPROVED，Art决定为Tech同批后准01样张。Task `READY→IN_PROGRESS/TASK_STARTED`有本轮预签实产证据，首图前门禁已满足，可开始01完整透明新画。01样张、六店PSD/切片、Gate2用户看图仍待；Client资源替换保持锁定。Continuity：Owner继续实产，不能在IN_PROGRESS空转停止。流程复盘`WR-20261009-U03-FULL-REDRAW-GATE1-001`。
+
+2026-10-09 21:50 +08:00（Producer U03 Gate1授权绑定并开生产线）：`U03-SHOP-REFERENCE-REVISION-20261009` Art/Master同版Review APPROVED，方案SHA `171CFCE5…43587FB`，用户明确“整体重绘”及“做完先给我看看再替换”，据此绑定准确六店整体重绘制作授权；Gate1 `USER_APPROVED`，方案Task DONE。此授权只及制作，不批准未见的PSD/切片。Master新建`U03-SHOP-FULL-REDRAW-20261009`生产Task，当前READY、Gate2 DRAFT；首张正式样张前须Art/Tech对同版方案分别预签，尚未见正式出图。成品用户看图批准前Client不得替换。Continuity：READY生产Task有本轮明确可继续动作，Master/Art/Tech继续至成品USER_REVIEW或真实阻塞，不以此节点停工。
+
+2026-10-09 21:49 +08:00（Producer U03 Art方案提交）：新`PRODUCTION_PLAN.md` SHA-256 `171CFCE5…43587FB`，六店整体重绘范围、已批接入旧基线、PSD/两片/ID/脚点及双Gate已写实；`ART_REVIEW.json`同SHA APPROVED，五项DELIVERABLE验收前四PASS、第五因Master Review与授权绑定待为NOT_TESTED。Task `IN_PROGRESS→REVIEW`、Gate1仍DRAFT。用户后续“做完先给我看看再替换”已授权整体重绘制作范围，待Master核准确方案版本后单独登记production authorization；具体成品Gate2未批，Client替换锁定。
+
+2026-10-09 21:48 +08:00（Producer U03方案范围更新）：用户追加“我希望整体重绘，不要做局部的微调”；Master已将本尚未送审v0.1任务目标和首项验收改为六店整体重绘方案，并通知Art同步修稿。旧已批v0.1六店清单及Approval为现版身份/差异基线，后续未批候选仅供历史对照。Task仍IN_PROGRESS、Gate1 DRAFT；改范围不等于批准完整制作方案，更不解锁正式出图。
+
+2026-10-09 21:46 +08:00（Producer U03 新方案真实开工）：`deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/`中`PRODUCTION_PLAN.md`、`REFERENCE_AND_RIGHTS.md`、`reference/user_six_shops_20261009.png`、`DELIVERABLE.json`已落盘；参考副本SHA与用户附件一致。Task据此`READY→IN_PROGRESS/TASK_STARTED`。Owner正修正现版基线口径与Task/DELIVERABLE验收对齐，Master同版Review待；Gate1 DRAFT，不送USER_REVIEW。Continuity：Art当前有真实产出与待修工作，继续到Review和用户门禁。
+
+2026-10-09 21:44 +08:00（Producer U03 新参考制作方案开线）：Master已分派`U03-SHOP-REFERENCE-REVISION-20261009`给Art，仅制作Gate1方案。`tasks/U03-SHOP-REFERENCE-REVISION-20261009/TASK.json`为READY，`ARTIFACT_APPROVAL_GATE1.json`为DRAFT；Art Required在此核验时尚未落盘，故不虚记TASK_STARTED/IN_PROGRESS。用户新附件SHA-256 `B1295170…C85F8C9`，已声明拥有且允许商用改编，独立记`SOURCE_DECLARATION.json`；该声明不批准制作方案或成品。旧U03审批、PSD/切片和客户端现状保持各自原范围。待Art实产后核对Required和Review，再到新Gate1用户门禁；首图前同批Art/Tech预签、Gate2具体切片批准及Client接入均未解锁。
+
 2026-10-09 23:39 +08:00（Producer U00 v0.6最终接受与continuity）：23/23 Task Required路径实存；`DELIVERABLE.json`为READY_FOR_REVIEW且符合Schema，最终实施报告SHA `7A13F69B…68241`、用户验证SHA `A636C76E…B2FB6`绑定当前Gallery SHA `99364FBB…22ABD`。Tech/Master同版复评APPROVED，Approval USER_APPROVED，Master依据用户明确“我已帮你验证通过了”接受单元示例v0.6，Task `BLOCKED→DONE`。旧BLOCKED Task/Approval/Tech/Master Review快照均保留。Agent Creator/HTTP/IAB未完成的0xc0000142历史不改，用户验证设备/步骤未知；本结论不扩为正式QA或发布质量。Continuity：本线已DONE，无空转READY/IN_PROGRESS；U03独立治理记录不因本轮改写。
 
 2026-10-09 18:09:45 +08:00（Producer U00 v0.3/R1同版送审）11/11 Required实存、DELIVERABLE七项拆分验收PASS；用户输入JSON与六店源码默认脚点逐项一致，Gallery SHA `238a76c1…872ec82`与Creator构建清单匹配，实际HTTP/内置浏览器恢复、重进、导出六店坐标及两视口画面证据已核。Tech/Master同版APPROVED，Task`REVIEW→USER_REVIEW`、Approval USER_REVIEW/decided_at null。用户此前发回参数授权本次应用，不自动批准v0.2整包或v0.3最终实现；旧v0.2快照在`history/v0.2/`。Product Excel仍独立USER_REVIEW且未消费。Continuity：U00已到真实用户门禁，无空转READY/IN_PROGRESS；复盘`WR-20261009-U00-COORD-V03-001`。

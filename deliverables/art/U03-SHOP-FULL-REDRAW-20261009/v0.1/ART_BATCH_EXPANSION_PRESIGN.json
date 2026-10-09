@@ -1,0 +1,12 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "batch_id": "U03-SIX-SHOP-FULL-REDRAW-20261009-02-06",
+  "reviewer": "art",
+  "decision": "PRESIGNED_FOR_02_06_AFTER_TECH_SAME_BATCH_PRESIGN",
+  "plan_sha256": "171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB",
+  "sample_art_evidence": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/SAMPLE_01_ART_REVIEW.md：01完整重绘同黑底/390/720视觉锚点PASS；帘片略密、蓝瓦高光和线条较硬已如实登记，成品总览需复核风格一致性。",
+  "scope": "02糖画、03现烤、04理发、05花灯、06投壶各自使用内置imagegen一次独立透明整店生成，参考用户本轮授权六店图的相应格；不以旧PSD/未批候选图层拼修。保留单店原画、提示词、选择与修订记录；以bggg脚本组多层PSD和body/sign同原点真透明片。",
+  "identity_and_lettering": "02仅准确‘糖’；03准确‘现烤’；04仅剪刀梳子图形无文字；05准确‘花灯’；06准确‘投壶’。生成字逐字核对；误字须在同源新画和有许可字形流程中校正，不能把错字当正式片。图形和物件保持各自参考构图/层次。",
+  "format_and_budget": "沿用每店1024×1024 RGBA、foot=(512,900)、六PSD/十二片的现有契约；用户授权参考与字源权利逐件保留。性能仅有理论RGBA8 48MiB上限估算，实际图集/DrawCall/目标机未测，需Tech样张后验与成品复核。",
+  "gate": "Tech对同批02–06预案签认后再正式生成第二店；本预签及样张检查不是成品Gate2用户批准，Client替换继续锁定。"
+}

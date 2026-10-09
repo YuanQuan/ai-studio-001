@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-CLIENT-20261009",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "正式来源准确：Art v0.2 CUT_MANIFEST.json 实测 SHA-256 F7B62B6A77B16FA5B10934ED112BE39A07DF7A4AFE6D99B952C735D97931D5ED，Gate2 记录为 USER_APPROVED。Client 的 ASSET_REPLACEMENT_MANIFEST.json 逐件核查 12/12：获批 Art 源与正式工程目标字节哈希相同，备份与替换前哈希相同；01/02/03/05/06 沿 v0.1 源，04 沿 v0.2 修订源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "身份和边界核验通过：12/12 .meta 前后 SHA 相同，实际 image、Texture2D、SpriteFrame UUID 与登记一致；六个 Prefab 文件哈希及 body/sign SpriteFrame 引用通过，UnitSamples.scene 含六个既有 Prefab UUID。UnitSampleGallery.ts 实测 SHA 3CE9BF4185EE176053E2A7508B7B286FC62D848236BEEF43407D7651C4889E4C 未由本任务改动，U00 继续消费同组 Prefab。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Creator 3.8.8 当前任务 Web Mobile 日志含 Finished 标记，新输出共 149 文件；12/12 构建 assets/main/native PNG 实测 SHA 与获批源相同。首次普通启动 exit -1 未产构建；一次管理员恢复后 exit 36，日志完成并产出本任务真实文件。exit 36 与 cache 拒绝访问 stderr 留档，构建通过依据为当前任务 Finished、实际输出和十二图哈希的组合，不把退出码单独写成成功。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Master 对同一 HTTP 新构建完成内置浏览器操作：390×844 与 720×1280 各六店逐店显示，理发店正面视角、牌面和图片可见；390 返回重入及反向切换、720 06→01 循环、两视窗 U00 同源展示和 720 隐藏/恢复均已记录。18 张 JPEG/JFIF 截图实存，扩展名为 .jpg，尺寸与视窗相符；逐件路径和 SHA-256 见 evidence/RUNTIME_EVIDENCE_MANIFEST.json（18/18 文件哈希复核通过）。evidence/runtime_console.json 为 []。此项只覆盖 Web 运行与视觉冒烟。"
+    },
+    {
+      "severity": "INFO",
+      "message": "真机触控、微信/抖音小游戏容器、DrawCall、驻留内存、帧率及平台性能未执行，状态 NOT_TESTED；不能由静态哈希、Web 截图或构建结果推定通过。"
+    }
+  ],
+  "next_action": "Client 将本 Review 与实施/运行证据纳入同版交付；Master/Producer 按既有 Client Artifact 用户确认与最终接受流程办理。"
+}

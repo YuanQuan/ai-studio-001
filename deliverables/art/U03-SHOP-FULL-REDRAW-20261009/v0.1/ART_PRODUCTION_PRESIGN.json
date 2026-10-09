@@ -1,0 +1,17 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "batch_id": "U03-SIX-SHOP-FULL-REDRAW-20261009",
+  "reviewer": "art",
+  "decision": "PRESIGNED_FOR_01_SAMPLE_AFTER_GATE1_AND_TECH_SAME_BATCH_PRESIGN",
+  "input_sha256": {
+    "PRODUCTION_PLAN.md": "171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB",
+    "user_six_shops_20261009.png": "B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9",
+    "approved_old_manifest": "C67C47E89860A4EAFAFFA340617D7176E7F68A10AE54DBEF188F2BAF19505191"
+  },
+  "scope": "首张仅01奶茶店：按用户新图完整重绘整店透明源画，蓝瓦、布帘、器具、右檐杯牌、冷暖光与底脚一起新绘；不借旧PSD/PNG局部贴修。01样张Art视觉与Tech后验通过且全批预签复核后，按相同方法逐店重绘02–06。",
+  "source_and_rights": "只使用用户本轮上传且已明确确认拥有并允许商用改编的1536×1024六店参考、已批准U03项目事实及官方许可已核的字源；不直接裁取参考或旧版生产图。01右挂杯无中文字。02糖、03现烤、05花灯、06投壶的正式字层在后续批次按已核OFL字源与用户参考逐字重建并记录来源；新引入字体/图片须先核许可。内置imagegen输出的原始图与提示词逐店留存，权利和相似风险于成品前复查。",
+  "tool_and_editability": "01使用内置imagegen单店一次调用生成真正透明的完整新画，保留原始输出；先查RGBA与边缘，再按语义生成全画布透明层，以bggg-creator-image2psd脚本组装PSD。PSD是可独立选择/移动的栅格语义层；若某遮挡背面来自补洞或不可恢复，将明确标记，不宣称矢量或原生可随意改画。工具脚本仅读skill目录，所有项目输出写工作区deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1。",
+  "format_and_anchors": "每店1024×1024 RGBA，foot=(512,900)，顶层身份MT_SHOP_01/SHOP_02..06，切片ID U03_SHOP_01_BODY/SIGN..U03_SHOP_06_BODY/SIGN；每店新PSD一份、同画布body/sign两张真透明PNG与重组图。同背景、同画幅、390×844和720×1280静态视窗对照新参考与已接入旧版。若实际画布、脚点、片数需改变，先跨角色评审。",
+  "estimate_not_measurement": "RGBA8 1024²一张未压缩约4 MiB，12张理论合计48 MiB；此值不是压缩包大小、GPU实际占用、图集页数或DrawCall实测。实际alpha范围、图集/合批和目标机预算由Tech在样张后验及全批复签核实。",
+  "gate": "仅在Producer将用户整体重绘与先看后替换的明确授权绑定确切Gate1方案，且Tech对同一方案SHA及本批签认后才绘首张正式样张；六店具体PSD/切片Gate2用户确认前不替换Client。"
+}

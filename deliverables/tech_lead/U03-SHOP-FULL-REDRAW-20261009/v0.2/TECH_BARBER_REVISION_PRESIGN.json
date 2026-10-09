@@ -1,0 +1,14 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "batch_id": "U03-SHOP-04-FRONT-VIEW-V02",
+  "reviewer": "tech_lead",
+  "decision": "PRESIGNED_FOR_04_EDIT",
+  "plan_sha256": "FEACA10BA6EACC483461C3246434173FF4553FC323F19D238485F43E74D5D4CD",
+  "input_sha256": {
+    "user_reference": "B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9",
+    "v0.1_shop_04_new_painting": "3661F251A2A96B5A4EEFCB2A8EF00A9CCC6401FBCE04682BA85758676CDB9A87"
+  },
+  "scope": "仅04理发店建筑投影定向编辑：水平屋脊/檐口/台阶、左右卷角和柱等高、前脸近正面及左侧墙不显著；剪梳牌、灯、旋转标柱、帘、镜、椅和蓝瓦暖木身份延续。01/02/03/05/06逐字节继承v0.1，不改其原画、PSD、切片和单店预览。",
+  "tool_and_format": "使用内置imagegen对v0.1 04完整透明新画编辑，用户参考中的04作为视角依据；以bggg-creator-image2psd组新多层栅格PSD，画布1024×1024 RGBA，foot=(512,900)，同原点body/sign两透明片。核层映射、alpha、重组、390×844/720×1280及六店总览。新PSD区域层的遮挡背面局限须如实登记。",
+  "budget_and_gate": "仅一店双片时RGBA8理论展开8 MiB，六店12片合计48 MiB；均是未压缩像素量估算，不是驻留内存、DrawCall或目标机实测。具体v0.2实片与整体总览先给用户Gate2审核，批准前Client不得替换U03。来源、工具、尺寸、切片数或范围变动时先复签。"
+}

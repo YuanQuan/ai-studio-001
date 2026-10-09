@@ -1,5 +1,37 @@
 # 工作流程复盘记录
 
+## WR-20261009-U03-CLIENT-REPLACEMENT-001
+
+- 周期与结果：可核执行窗口2026-10-09 22:30–22:51 +08:00，约21分钟。Art v0.2获用户具体成品批准后，Client替换12张正式工程PNG并保留meta/UUID/六Prefab/稳定ID，U00共用同一资源；57/57 Required实存、五项验收PASS，Tech/Master同版Review APPROVED，Task与Approval送USER_REVIEW。证据为获批Art清单、Client映射/UUID/Prefab报告、DELIVERABLE、构建及HTTP/IAB证据、Task/Approval。用户尚未确认Client实施v0.1，故不标DONE。
+- 时间分类：22:30接入解锁，22:32首批12图和旧版备份实存，22:36左右Creator管理员构建完成，22:38–22:39 Web输出/HTTP核验，22:42–22:47双视窗截图与JPEG证据格式锁定，22:49–22:51交付和评审核送。窗口包含并行的Client实施、Creator构建与运行、Master视觉浏览、Tech评审和Producer核验；各角色净耗时未知，用户等待从送审后起算。Creator首次非管理员尝试失败，恢复构建的管理员进程exit36但日志Finished且真实输出/运行通过；故障各自耗时和因果净影响未知，不归责个人。
+- 速度判断与建议：没有目标工时或可比基线，不判断快慢。Client下次同类替换先锁获批源哈希、目标UUID和原图备份，再以Creator输出hash与HTTP/IAB截图复核；复核点为下一次实施manifest和运行记录。Producer对截图先核文件签名再入Required，以免暂存扩展名需更正；复核点为下一次Runtime Evidence Manifest。Continuity：本线达到真实USER_REVIEW，无空转READY/IN_PROGRESS；用户批准本实施版后由Master复核并接受DONE。目标设备、真实触控和性能未测，不能扩称通过。
+
+## WR-20261009-U03-BARBER-V02-GATE2-001
+
+- 周期与结果：可核流程窗口2026-10-09 22:19–22:28 +08:00，约9分钟；用户退修消息精确时刻未知。v0.1六店Gate2因04建筑视角被退回并保留历史；Art定向修04，短方案与Art/Tech同SHA预签后出04新源画、四层PSD、body/sign双片、对照与双视窗，重新形成六店总览。Producer核v0.2清单SHA `F7B62B6A…931D5ED`、46/46路径SHA匹配（36条v0.1直接继承、10条v0.2新文件），18/18 Required实存，送整体Gate2 USER_REVIEW；Client替换仍锁定。证据为Task两版快照、两版Approval、Art v0.2方案/清单/审核包/DELIVERABLE、Art/Tech预签及节点日志。
+- 时间分类：22:19退回登记与v0.2开线；22:20短方案及Art预签；22:21 Tech同版预签；22:24新04源与切片；22:25 PSD/视窗/六店总览；22:27–22:28清单、审核包、DELIVERABLE与Producer送审。约9分钟包括并行的Art图像编辑、分层、静态导出、Tech预签、Art文档和Producer核验，无法分离各角色净耗时。用户看图等待从送审后开始，不计本窗口。未见可证实工具故障；本次返工直接原因是用户指出v0.1 04屋顶/侧墙造成建筑视角错误，证据为用户原话和三图对照。
+- 速度判断与建议：缺目标工时与可比基线，不评价人员快慢。可核省去的重复工作是五店沿v0.1原路径、哈希继承，不复制全批62文件；代价是v0.2清单需精确跨版本路径并逐SHA复验。Art在下一次同类局部退修前继续锁用户可检视觉锚点并做同背景三图对照，复核点为下次样张Review；Producer在用户对当前v0.2作决定时绑定确切清单SHA再解锁或退回Client，复核点为Gate2 Approval及资源交接。Continuity：本轮已到真实USER_REVIEW，没有空转READY/IN_PROGRESS；Creator运行/性能和Client接入须待用户批准。
+
+## WR-20261009-U03-FULL-REDRAW-GATE2-001
+
+- 周期与结果：可核流程窗口为2026-10-09 21:51–22:10 +08:00，约19分钟；不含此前用户附件/需求沟通和Gate1方案制作。双预签后，Art先完成01整店样张、四层PSD、两片重组与双视窗；Art/Tech样张检查通过、02–06同版扩批预签，继而六店原画、六PSD、12 PNG、32预览及文档完成。Producer核62/62精确Required实存、`CUT_MANIFEST.json` SHA `0441A410…CC9EE8` 的44/44路径哈希匹配，Task/Gate2进入USER_REVIEW；用户成品决定未有，Client正式替换锁定。证据为生产Task/Approval、Art v0.1文件、Tech双预签/样张Review及项目节点日志。
+- 时间分类：21:51双预签核验；21:59 01样张及扩批Review/预签；22:02 五店原画；22:03六PSD/12 PNG；22:04预览已齐；22:08–22:09清单、图层图谱、提示词、审核包和DELIVERABLE落盘；22:10 Producer送审。墙钟包含图像生成、脚本分层与导出、Art/Tech检查、文档整理及流程核验，部分并行；各角色净制作时长、图像生成等待和文档撰写净时长未知。送审后的用户看图等待不计入本窗口。未见可证实工具故障；01帘片略密、亮边/04透视/05灯具比例差异已在审核包披露，需用户看图决定，现不归因为流程返工。
+- 速度判断与建议：无约定工时或可比批次基线，不评价角色快慢。可见关键路径是首样实图验收后再扩到五店，以及清单与审核包锁定。Art下次同类六店批次可在生成每店时同步记录源图路径/SHA、牌字核对和层编辑限制，减少最后文档汇总漏项；代价为每店一次即时记录，复核点为下一批成品manifest与审核包。Producer在用户对本版Gate2给出决定时核确切清单SHA与审批版本，再解锁或退回Client；复核点为Gate2 Approval和资源交接表。Continuity：生产任务已到真实USER_REVIEW，当前不存在空转READY/IN_PROGRESS；Client替换和运行验证须等用户决定及后续正式接入。
+
+### WR-20261009-U00-SCALE-V04-BLOCK-001｜U00缩放修订遇Creator构建阻塞
+
+- 结果与证据：`UnitSampleGallery.ts`完成店铺逐家、顾客逐个缩放与JSON导出；transpile语法诊断0，`git diff --check`通过。Task `BLOCKED`，v0.4 Approval DRAFT。隔离构建以当前源码SHA重试，证据见`ISOLATED_BUILD_START.json`及stdout/stderr：Creator安装目录engine缓存文件报EPERM，无新构建、HTTP或浏览器证据。
+- 时间与耗时：用户消息精确时刻未知；本轮开始执行约21:40 +08:00，最终登记约21:57 +08:00，可观察窗口约17分钟，含源码实现、静态检查、CLI尝试与等待，不等于净编码耗时。项目级tsc约43秒后因仓库临时HarmonyOS模板语法错误退出；首次Creator会话180秒无完成标记，第二次隔离会话约58秒后因安装缓存EPERM被中止。用户等待和之前专业Review耗时未知。
+- 速度与原因：无同类时限或基线，不判断快慢。可证实阻塞是Creator stderr `[Error: EPERM: operation not permitted, open .../engine/bin/.cache/dev/editor/import-map.json]`，并伴随`Message does not exist: engine - query-engine-info`；没有输出身份更新，故停止送审。
+- 建议：Tech Lead与Client联合核查Creator安装缓存可访问性及引擎消息初始化，代价为一次工具链排查；不改安装目录权限。缓存访问恢复后Client按相同源码SHA重建并核HTTP/IAB两视口，复核点为同版构建清单和运行记录；Producer随后复核Required与Tech/Master Review，再推进用户门禁。
+- Continuity：无可继续的Ready/In Progress空转任务；Creator阻塞条件明确、相关实现产物已登记，待工具状态变化解除后继续。其他任务本轮未检查。
+
+## WR-20261009-U03-FULL-REDRAW-GATE1-001
+
+- 周期与结果：可核Producer开线登记21:44至Gate1绑定及双预签核验21:51 +08:00，约7分钟；用户原消息精确时刻未知，不能视作整体制作耗时。Art提交六店整体重绘方案、来源副本与权利登记，Art/Master同版Review APPROVED；用户“整体重绘”“做完先看再替换”的明确制作授权绑定方案SHA `171CFCE5…43587FB`，Gate1 USER_APPROVED、方案Task DONE。生产Task已实存Art/Tech同批预签并进入IN_PROGRESS，首张正式图及成品Gate2尚未交付。证据为`tasks/U03-SHOP-REFERENCE-REVISION-20261009/`、`deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/`、`tasks/U03-SHOP-FULL-REDRAW-20261009/`和双预签。
+- 时间分类：21:44为开线记录，21:45首份Art实产，21:49 Art Review/方案SHA核验，21:50 Master Review与用户授权绑定，21:51双预签核验。窗口含Art修稿、Master评审、Tech预签及Producer登记，净制作/评审时间与并行比例未知；未计成品制作和用户看图等待。曾把未批准v0.4候选误作现行对比基线，Art核旧Approval后改为已批接入清单；另因用户追加“整体重绘”而修订v0.1方案，返工净耗时未知。无可证实工具故障。
+- 速度判断与建议：无约定目标或同类基线，不评价角色快慢。可证实的返工风险是版本名`v0.1`目录内含已批`V04`清单、另有未批`v0.4`目录，容易错认当前正式接入基线。下次类似资源修订由Producer在Task开线时先核Approval准确artifact/SHA与资源登记，再写比较输入，代价为一次只读身份核对，复核点为下一批U03成品差异表与Gate2 manifest；Master在需求追加时同步冻结用户原话与准确方案SHA，复核点为生产首图预签。生产Task当前IN_PROGRESS且有双预签证据，Owner正继续01样张，不能以此复盘中断到下一门禁的工作。
+
 ## WR-20261009-U00-COORD-V06-APPROVAL-001｜用户自行验证与单元示例最终接受
 
 - 结果与证据：用户对唯一当前v0.6明确“我已帮你验证通过了”，Master将原话及未知验证细节写入`USER_VALIDATION.md`。Producer绑定用户验证SHA `A636C76E…B2FB6`、最终实施报告SHA `7A13F69B…68241`与Gallery SHA `99364FBB…22ABD`；Tech/Master基于同SHA静态/noEmit、用户验收和明确未测范围复评APPROVED，Master接受Task DONE，Approval USER_APPROVED。旧BLOCKED Task/Approval/Review快照仍在`history/v0.6-blocked/`及`v0.6/*_REVIEW_BLOCKED.json`；Agent Creator/HTTP/IAB未验证的故障记录未改写。单元示例不安排QA，结论限本次修订。

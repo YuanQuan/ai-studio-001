@@ -1,0 +1,43 @@
+{
+  "task_id": "U03-SHOP-REFERENCE-REVISION-20261009",
+  "owner": "art",
+  "summary": "按用户2026-10-09新参考与六店整体重绘指令，提交U03整批制作方案和独立来源权利登记；本Gate1任务尚无正式新图或客户端替换。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/reference/user_six_shops_20261009.png",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-REFERENCE-REVISION-20261009/ARTIFACT_APPROVAL_GATE1.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐一锁定参考图六店的店型、标识、牌匾、材料、暖光、轮廓和经营道具视觉锚点，并列出已批准接入的旧U03六店基线对应差异；六店均按整体重绘规划，后续未批候选只作历史对照。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md的正式基线、逐店锚点与整体重绘表；原图副本可复核。"
+    },
+    {
+      "criterion": "方案说明同源PSD、多图层可编辑范围、body/sign或必要切片、稳定资产ID、既有1024×1024画布与脚点(512,900)交接契约；如需改变契约仅提请跨角色评审，不在本任务静默修改。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md的真实绘制与母版流程、既有交接契约；project/ASSET_HANDOFF_REGISTRY.md记录顶层ID和工程UUID。"
+    },
+    {
+      "criterion": "记录新附件的用户权利声明、文件哈希、参考用途和字体/图片来源状态，不将未知授权资产作为生产输入。",
+      "result": "PASS",
+      "evidence": "REFERENCE_AND_RIGHTS.md、tasks/U03-SHOP-REFERENCE-REVISION-20261009/SOURCE_DECLARATION.json与原图SHA-256。"
+    },
+    {
+      "criterion": "分别写明制作方案Gate1用户审批、首图前Art/Tech同批预签、具体切片与同尺度重组Gate2用户审批及其后Client接入/运行核验，不以旧U03批准替代新版门禁。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md的检查与交接段；旧版批准记录仅作为历史正式基线。"
+    },
+    {
+      "criterion": "同版Art与Master Review及DELIVERABLE逐项验收完成后，向用户提交确切v0.1方案供Gate1决定；本轮无正式图片、母版、切片或客户端替换。",
+      "result": "PASS",
+      "evidence": "同版ART_REVIEW.json与MASTER_REVIEW.json均APPROVED；tasks/U03-SHOP-REFERENCE-REVISION-20261009/ARTIFACT_APPROVAL_GATE1.json将用户完整重绘及先看后替换授权绑定PRODUCTION_PLAN.md确切SHA。当前未提交新正式图片或工程替换。"
+    }
+  ],
+  "assumptions": ["用户最新整体重绘指令覆盖项目默认先局部修改的做法；已批准并接入的旧六店只作身份、尺寸、路径与视觉差异基线。"],
+  "risks": ["参考图单店只有约460像素宽，微纹理需以新样张在真实显示尺度确认；透明边缘、PSD图层可编辑范围与中文牌字需逐件实测。", "首图前Art/Tech预签、六店新图Gate2及接入后Creator/设备运行验证尚未完成。"],
+  "status": "READY_FOR_REVIEW"
+}

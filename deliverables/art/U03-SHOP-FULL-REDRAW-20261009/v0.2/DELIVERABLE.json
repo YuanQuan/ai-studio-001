@@ -1,0 +1,53 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "owner": "art",
+  "summary": "只修正04理发店建筑视角并提交六店v0.2整体看图，其他五店按原文件SHA继承；具体资源待用户Gate2审核。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/BARBER_FRONT_VIEW_REVISION_PLAN.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/ART_BARBER_REVISION_PRESIGN.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/six_shop_full_redraw_overview.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_reference_v01_v02_same_scale_black.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/psd/shop_04_full_redraw_v02.psd",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_body_full_redraw_v02.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_sign_full_redraw_v02.png",
+    "deliverables/tech_lead/U03-SHOP-FULL-REDRAW-20261009/v0.2/TECH_BARBER_REVISION_PRESIGN.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "04理发店建筑视角按用户反馈重新绘制并与新参考同背景、同脚点、同尺度对照；01/02/03/05/06的PSD、body/sign切片相对v0.1保持同字节，旧v0.1退回范围与版本保留。",
+      "result": "PASS",
+      "evidence": "shop_04_reference_v01_v02_same_scale_black.png显示水平屋脊/檐口/台阶及双柱对称；CUT_MANIFEST.json逐SHA证实其余五店原PSD、两片和视窗同字节引用v0.1。"
+    },
+    {
+      "criterion": "04正式修图前有版本化短方案及Art/Tech对同一批次签认，记录来源、画布、脚点、PSD可编辑范围、稳定ID、两片导出与用户视角问题的检查方式。",
+      "result": "PASS",
+      "evidence": "BARBER_FRONT_VIEW_REVISION_PLAN.md SHA与Art/Tech受影响预签一致，均早于04正式出图；说明来源、画布/脚点、分层、ID与检查方式。"
+    },
+    {
+      "criterion": "04新源画、1024×1024多层PSD和body/sign真透明切片可追溯，重组与目标新画一致，中文牌面、建筑透视、轮廓、遮挡和透明边按实际显示尺度检查。",
+      "result": "PASS",
+      "evidence": "04新源imagegen_whole_r2.png、4层PSD、两片RGBA真透明PNG实存；build_report与清单记录尺寸/alpha，body+sign与重组逐像素一致；已在390和720静态视窗实看视角/牌面/透明边。"
+    },
+    {
+      "criterion": "v0.2提供完整六店总览、六店同尺度重组及390×844/720×1280静态视窗，清单逐件列路径/SHA并可核五店同字节继承与04新版本。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json列六店每份资源的项目路径与SHA；六店总览、六份同尺度重组及双静态视窗均可经清单访问，五店直接指向v0.1原文件。"
+    },
+    {
+      "criterion": "把具体v0.2六店整体效果交用户Gate2审核；用户确认前不替换U03正式客户端资源，接入后的Creator运行和性能另核。",
+      "result": "PASS",
+      "evidence": "2026-10-09 22:28 +08:00 Task与Gate2 Approval均进入USER_REVIEW；46/46清单路径/SHA吻合，v0.2六店总览与04三图对照已提交。此PASS仅指已送具体v0.2给用户审核且Client锁定；用户未批准，工程资源未替换。"
+    }
+  ],
+  "assumptions": [
+    "用户最新退修范围仅04建筑视角；01/02/03/05/06按v0.1同字节继承。"
+  ],
+  "risks": [
+    "04 PSD为四层可见栅格分区，隐藏背面未补绘。",
+    "Creator实际运行与性能尚未在新版接入后验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

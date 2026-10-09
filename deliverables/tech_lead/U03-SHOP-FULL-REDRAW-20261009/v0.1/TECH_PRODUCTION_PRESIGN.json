@@ -1,0 +1,28 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "首图前技术预签仅覆盖 PRODUCTION_PLAN.md v0.1，SHA-256 171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB；Gate1 记录 tasks/U03-SHOP-REFERENCE-REVISION-20261009/ARTIFACT_APPROVAL_GATE1.json 为 USER_APPROVED。本批 01–06 均整体新绘，先制作 01 样张并核对后再扩至 02–06。"
+    },
+    {
+      "severity": "INFO",
+      "message": "制作范围为每店 1024×1024 RGBA 多层 PSD，脚点 (512,900)，同画布原点导出独立真透明 body/sign 两片；总计六 PSD、12 PNG。顶层店铺身份 MT_SHOP_01、SHOP_02 至 SHOP_06 及 U03_SHOP_01_BODY/SIGN 至 U03_SHOP_06_BODY/SIGN 保持稳定。任何切片数、尺寸、脚点或客户端契约变更须复签并评审。"
+    },
+    {
+      "severity": "INFO",
+      "message": "准备用内置 imagegen 逐店生成完整透明新画，再以 bggg-creator-image2psd 建多层 PSD；保留生成源、提示词、语义层映射、补洞与实际可编辑范围。中文牌字及字源许可逐项登记。源参考用户本轮授权及 SHA-256 B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9；新增外部素材不得在许可未明时进入正式产物。"
+    },
+    {
+      "severity": "INFO",
+      "message": "纹理预算仅作可复验理论估算：12 张 1024×1024 RGBA8 完整展开合计 50,331,648 字节（48 MiB），单店两张约 8 MiB，不含 mipmap、压缩、对齐、图集和重复驻留。显示时是否只加载当前店、实际页数/DrawCall、设备驻留内存、帧率与目标平台兼容性均为 NOT_TESTED，不能据此判性能通过。首图与成品核实际 alpha 范围、遮挡、重组、页数及投影像素；Gate2 获批接入后再核 Creator 运行指标。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户要求做完先看再替换。六店 PSD、12 实片、同尺度重组与 390×844 / 720×1280 视窗效果须先提交 Gate2 看图；具体版本未获用户确认前，Client 不得替换既有 U03 正式资源。"
+    }
+  ],
+  "next_action": "Art 完成同批 ART_PRODUCTION_PRESIGN 后制作 01 完整新绘样张，提交源图、PSD、body/sign、重组和双视窗供 Art/Tech 实图核验；通过后复签全量范围并扩至 02–06。"
+}

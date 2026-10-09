@@ -1,0 +1,785 @@
+{
+  "status": "CANDIDATE_PENDING_USER_GATE2",
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "version": "v0.2",
+  "revision_plan_sha256": "FEACA10BA6EACC483461C3246434173FF4553FC323F19D238485F43E74D5D4CD",
+  "reference_sha256": "B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9",
+  "rejected_v01_manifest": {
+    "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/CUT_MANIFEST.json",
+    "sha256": "0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8",
+    "bytes": 19594
+  },
+  "overview": {
+    "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/six_shop_full_redraw_overview.png",
+    "sha256": "737768B91553499B4A40BD0406293E2C50DE54F755F36AAAE63B1EB91E1EC013",
+    "bytes": 929977,
+    "mode": "RGB",
+    "size": [
+      1536,
+      1024
+    ]
+  },
+  "shop_04_reference_v01_v02": {
+    "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_reference_v01_v02_same_scale_black.png",
+    "sha256": "9EA93982A7379BAED099BE50F4F72B8455F0D392CA0EC54BB3BBA4A4EA045986",
+    "bytes": 1938760,
+    "mode": "RGB",
+    "size": [
+      3072,
+      1024
+    ]
+  },
+  "shops": {
+    "shop_01": {
+      "identity": "奶茶",
+      "top_level_id": "MT_SHOP_01",
+      "asset_ids": {
+        "body": "U03_SHOP_01_BODY",
+        "sign": "U03_SHOP_01_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "BYTE_IDENTICAL_V01_INHERITANCE",
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_01/imagegen_whole_r1.png",
+        "sha256": "FE31C8353F7C1160EEEF0CBC2AA33D6D5D447FDA4B8FD5607D1E0427F9D18A93",
+        "bytes": 1563235,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          62,
+          141,
+          1217,
+          1102
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_01_full_redraw_v01.psd",
+        "sha256": "C4EAC643B8B420A2937B893FB82254A500DFD5FB4F3EE83DBF09773D5A2CEF57",
+        "bytes": 4965506
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_01_body_full_redraw_v01.png",
+        "sha256": "1A5E980D2DF64078197883F5FFDCD27FBD282FC9A71055C9AADA87DE0185FB06",
+        "bytes": 735940,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          141,
+          285,
+          881,
+          899
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_01_sign_full_redraw_v01.png",
+        "sha256": "316B7BC4461AB43B8CD55BEF7E35E6C4D5DDD5677D49AEE06061C9C8DB385EA5",
+        "bytes": 720841,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          785,
+          535,
+          872,
+          731
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_01_recomposed.png",
+        "sha256": "3E806C550087173CC1328E263B68E24B8EE682347C9798974815CF2A7796F272",
+        "bytes": 737415,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          141,
+          285,
+          881,
+          899
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_01_390x844.png",
+          "sha256": "9D8A757396A1E3B13E8DA5A727E40DCD240117B7D70A70A5448BB6EC3A51817C",
+          "bytes": 81385,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_01_720x1280.png",
+          "sha256": "FB17567D97FD02E4D977C671C6D1CBDF5A3C07B308E28FBF241A94A84DEA63C3",
+          "bytes": 240360,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    "shop_02": {
+      "identity": "糖画",
+      "top_level_id": "SHOP_02",
+      "asset_ids": {
+        "body": "U03_SHOP_02_BODY",
+        "sign": "U03_SHOP_02_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "BYTE_IDENTICAL_V01_INHERITANCE",
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_02/imagegen_whole_r1.png",
+        "sha256": "CE7F1661D2A219997A09C3181E612DA995303B8966648939E75A6CFB865F50C8",
+        "bytes": 1438109,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          159,
+          17,
+          1141,
+          1218
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_02_full_redraw_v01.psd",
+        "sha256": "BC9DCBCA0EFC37C3E1F90A7A378B05B6F590C732CE47617A51D949DB03F4F4BD",
+        "bytes": 5026750
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_02_body_full_redraw_v01.png",
+        "sha256": "46486C1373E087E215D5F1FB714A8ED449DE713778910A99BBAFFB14963E8F84",
+        "bytes": 642278,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          254,
+          149,
+          868,
+          866
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_02_sign_full_redraw_v01.png",
+        "sha256": "BA07AABE6332D660E0211115D7B2EE1612AA601DF05AF829F56FBD1C4775DDBA",
+        "bytes": 617510,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          585,
+          650,
+          751,
+          900
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_02_recomposed.png",
+        "sha256": "AD624BB5061101F88964A08DC618F549A19EBD1237F9C498BC79119999F26FC6",
+        "bytes": 643577,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          254,
+          149,
+          868,
+          900
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_02_390x844.png",
+          "sha256": "5CD1D1AFED3B1B3FB98DD9F7CA4BC2C46809123D4462B004DFE827650774FD53",
+          "bytes": 67398,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_02_720x1280.png",
+          "sha256": "31272653D38949363F1E0545A189AC28EDDEAD8559C22DAEF36FFCA4CDBFD39D",
+          "bytes": 200677,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    "shop_03": {
+      "identity": "现烤",
+      "top_level_id": "SHOP_03",
+      "asset_ids": {
+        "body": "U03_SHOP_03_BODY",
+        "sign": "U03_SHOP_03_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "BYTE_IDENTICAL_V01_INHERITANCE",
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_03/imagegen_whole_r1.png",
+        "sha256": "0D03AA71DF3F8ABDA7019835EFB191E871212182C9872C345BD4C7DBA99E6DAB",
+        "bytes": 1486129,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          44,
+          104,
+          1204,
+          1161
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_03_full_redraw_v01.psd",
+        "sha256": "1FA44F7B50261F9C323E0F57D2B2A41D7AE9139AA9DD78A31C357F07C1514F0E",
+        "bytes": 5480302
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_03_body_full_redraw_v01.png",
+        "sha256": "87AFF2AF080C214495B508CFD492F0EE07505B8C4EB1351F1619699A2883333B",
+        "bytes": 844198,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          149,
+          148,
+          912,
+          900
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_03_sign_full_redraw_v01.png",
+        "sha256": "A958021B05815A69EAF5C94BB5AD0D549161535890EB16CFF82AA5BD2E3287D5",
+        "bytes": 808863,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          87,
+          470,
+          231,
+          756
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_03_recomposed.png",
+        "sha256": "14D3C59B4E18C4508CDD4045711F69C0D1A3B0EC56051CD5CA10B15C7511022F",
+        "bytes": 845748,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          87,
+          148,
+          912,
+          900
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_03_390x844.png",
+          "sha256": "FFF1908959ED7710880547285F7F30336BDDF576DF9678C5BE7158FA3CD14CBC",
+          "bytes": 91394,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_03_720x1280.png",
+          "sha256": "6B62A152B6D65A57900E00A9C25CA5B0162038020720C261224D893B8EE5B061",
+          "bytes": 268890,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    "shop_04": {
+      "identity": "理发",
+      "top_level_id": "SHOP_04",
+      "asset_ids": {
+        "body": "U03_SHOP_04_BODY",
+        "sign": "U03_SHOP_04_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "FRONTAL_ARCHITECTURE_CORRECTION",
+      "psd_layer_count": 4,
+      "layer_mapping": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/source/shop_04/psd_work/manifest.json",
+        "sha256": "806972819334FF55E5D397636411E3C21AD261D389188A8879D0B30E15115040",
+        "bytes": 1172
+      },
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/source/shop_04/imagegen_whole_r2.png",
+        "sha256": "C180B9061355266EC8247C6AD760A7BF197148B5A10D3579772E7002120F72D9",
+        "bytes": 1841318,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          39,
+          83,
+          1215,
+          1187
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/psd/shop_04_full_redraw_v02.psd",
+        "sha256": "19643EC283CF3148F18FA028DB666B1B2E3237EFBEF07A74029E557827B7FE8B",
+        "bytes": 5207126
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_body_full_redraw_v02.png",
+        "sha256": "2D13E57BAE6D77D8B51A515F7C5E96A1E3AB1280CF312B6A296DEA4D3B6BB11F",
+        "bytes": 787152,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          157,
+          232,
+          868,
+          900
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/exports/tex_u03_shop_04_sign_full_redraw_v02.png",
+        "sha256": "1E77E9ADB5B83C4576A7D2AB495C77324F0E7503776E4B9144945098558196B5",
+        "bytes": 773064,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          254
+        ],
+        "alpha_bbox_32": [
+          335,
+          405,
+          701,
+          571
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_recomposed.png",
+        "sha256": "A2941054F771812F222546E1750A03338E99A1462157A5FAA43C59B88496DE8F",
+        "bytes": 787372,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          157,
+          232,
+          868,
+          900
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_390x844.png",
+          "sha256": "2DE0609A81317BD9B0A46A22CCCE3CCA443A6C0B6CE962F56A59D881A909D4D4",
+          "bytes": 86743,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/shop_04_720x1280.png",
+          "sha256": "5AAB1AEE690FC24F31DF0CD3F6D48CF6EFF61AD0B51AB7CFF53659F94AA84796",
+          "bytes": 258250,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    "shop_05": {
+      "identity": "花灯",
+      "top_level_id": "SHOP_05",
+      "asset_ids": {
+        "body": "U03_SHOP_05_BODY",
+        "sign": "U03_SHOP_05_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "BYTE_IDENTICAL_V01_INHERITANCE",
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_05/imagegen_whole_r1.png",
+        "sha256": "F72CC31F0686DBDA95D065210CFC180464FD299E8F301EDB8205A0825F842EA3",
+        "bytes": 1695687,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          66,
+          82,
+          1200,
+          1168
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_05_full_redraw_v01.psd",
+        "sha256": "9EE1FAD1949AD7BE6DF909E6E71798586E88569627BE0799D3AEE474D0E8ACC7",
+        "bytes": 5537418
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_05_body_full_redraw_v01.png",
+        "sha256": "68EB92873EDB01E4F76D472FE109016FA2F9C1747F3239ED6BAE5C2332C2CD5F",
+        "bytes": 869424,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          134,
+          168,
+          898,
+          900
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_05_sign_full_redraw_v01.png",
+        "sha256": "E905A19688013636F55FF5904AA7940E3DB685EAE4077DAA746BE423F6E29949",
+        "bytes": 832422,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          290,
+          245,
+          661,
+          381
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_05_recomposed.png",
+        "sha256": "1D2CABB418BC286B18960448E6CD9BB071712376F6F173A283F687F6ACD8A12E",
+        "bytes": 871897,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          134,
+          168,
+          898,
+          900
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_05_390x844.png",
+          "sha256": "B4BF4E9A996555D8849A874EF3DAC16A7299F03C0D81C5C1A6268A80BD17F35A",
+          "bytes": 92863,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_05_720x1280.png",
+          "sha256": "7306691AFC7BCBFFC60E51E09722741E7A372CFE647E72D4E49C25BD0999C562",
+          "bytes": 271707,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    },
+    "shop_06": {
+      "identity": "投壶",
+      "top_level_id": "SHOP_06",
+      "asset_ids": {
+        "body": "U03_SHOP_06_BODY",
+        "sign": "U03_SHOP_06_SIGN"
+      },
+      "canvas": [
+        1024,
+        1024
+      ],
+      "foot": [
+        512,
+        900
+      ],
+      "revision": "BYTE_IDENTICAL_V01_INHERITANCE",
+      "new_full_redraw_source": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_06/imagegen_whole_r1.png",
+        "sha256": "7C958AADD24B1D922F7249648266AB987411E7034AAE1382B3DB6D438F353594",
+        "bytes": 1509931,
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          98,
+          69,
+          1216,
+          1178
+        ]
+      },
+      "psd": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_06_full_redraw_v01.psd",
+        "sha256": "BFE5EEE5CB849175E2118979270182BC77230A3144A7521898A1AB14B7275D44",
+        "bytes": 5383542
+      },
+      "body": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_06_body_full_redraw_v01.png",
+        "sha256": "83351A5734FBC43057DC4A596A731F9EB3BFB20342A960945A14BFA3C5656DF1",
+        "bytes": 779472,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          155,
+          149,
+          908,
+          900
+        ]
+      },
+      "sign": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_06_sign_full_redraw_v01.png",
+        "sha256": "BC8E7711BA38BDDF9C20204FB6B035B54C21AC42EC97BB59E8346ECC1DAA374F",
+        "bytes": 749515,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          765,
+          340,
+          912,
+          615
+        ]
+      },
+      "recomposition": {
+        "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_06_recomposed.png",
+        "sha256": "1BC5B70553058265850B97AD2CF7BC9DB39BBB6F5362D44FD69D8EDD2EB11816",
+        "bytes": 781456,
+        "mode": "RGBA",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_range": [
+          0,
+          255
+        ],
+        "alpha_bbox_32": [
+          155,
+          149,
+          912,
+          900
+        ]
+      },
+      "views": [
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_06_390x844.png",
+          "sha256": "E3A2DEF27C8E32E10F92C38DBFD5DDA46439D889CE7A9C248FD60DFBD60F6619",
+          "bytes": 82506,
+          "mode": "RGB",
+          "size": [
+            390,
+            844
+          ]
+        },
+        {
+          "path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/shop_06_720x1280.png",
+          "sha256": "2DD0084C1C54C6AACBFEFF46C285294F8DCB51C12ADFE54B6057D409E314E3D1",
+          "bytes": 246403,
+          "mode": "RGB",
+          "size": [
+            720,
+            1280
+          ]
+        }
+      ]
+    }
+  },
+  "client_replacement": "LOCKED_PENDING_USER_APPROVAL"
+}

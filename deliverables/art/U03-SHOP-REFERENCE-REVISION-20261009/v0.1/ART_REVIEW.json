@@ -1,0 +1,24 @@
+{
+  "task_id": "U03-SHOP-REFERENCE-REVISION-20261009",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "PRODUCTION_PLAN.md SHA-256 171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB：六店均按用户最新指令整体重绘，旧PSD和切片仅作已接入基线、尺寸与身份追溯，不作局部拼修源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "正式比较基线是已获Gate2批准且已导入的U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json；01横字牌到右杯、02右高糖画牌到前低糖牌、03炭烤到现烤、04理发字牌到剪梳图牌、05/06比例和光材重绘均已逐店列明。"
+    },
+    {
+      "severity": "INFO",
+      "message": "参考PNG已留副本并校验SHA，用户拥有且允许商用改编的声明已单独登记；正式PSD多层可编辑边界、1024画布与脚点、稳定顶层ID、body/sign两片、首图前Art/Tech同批预签、Gate2后替换均写入方案。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "参考单店约460像素宽；高分辨率纹理、中文牌字与透明边缘须在代表样张和六店成品同尺度实图中核验。方案Review不表示新图已绘制、Gate2已批准或Creator运行通过。"
+    }
+  ],
+  "next_action": "Master对同版方案和DELIVERABLE做独立Review；Producer将用户整体重绘与先看后替换的明确授权准确绑定方案版本。Art/Tech首图前同批预签后，先制作01完整透明重绘样张。"
+}

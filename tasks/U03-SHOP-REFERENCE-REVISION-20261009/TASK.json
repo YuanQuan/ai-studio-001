@@ -1,0 +1,45 @@
+{
+  "id": "U03-SHOP-REFERENCE-REVISION-20261009",
+  "title": "U03 六店新参考图资源替换制作方案 Gate1",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "依据用户2026-10-09提供的六店参考图，为六店整体重绘形成可审查的U03替换资源制作方案；本任务仅到Gate1，不制作正式图、PSD或切片，不接入客户端。",
+  "inputs": [
+    "用户本轮指令：按照这个样子输出店铺，然后替换U03的资源",
+    "用户后续明确指令：我希望整体重绘，不要做局部的微调",
+    "用户附件 C:/Users/admin/AppData/Local/Temp/codex-clipboard-33a651d4-f654-495a-ae11-2a1643a448e9.png；SHA-256 B1295170D7245FA8BF4471FF29AFBA8A5C32BA4E5F59637814E87A793C85F8C9",
+    "tasks/U03-SHOP-REFERENCE-REVISION-20261009/SOURCE_DECLARATION.json",
+    "deliverables/art/U03-SHOP-ASSET-001/v0.1/SIX_SHOP_GATE2_CANDIDATE_MANIFEST_V04.json（已批准并接入的旧六店基线）",
+    "tasks/U03-SHOP-ASSET-001/ARTIFACT_APPROVAL.json",
+    "rules/visual_production_contract.md",
+    "project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/reference/user_six_shops_20261009.png",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/DELIVERABLE.json",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/ART_REVIEW.json",
+    "deliverables/art/U03-SHOP-REFERENCE-REVISION-20261009/v0.1/MASTER_REVIEW.json",
+    "tasks/U03-SHOP-REFERENCE-REVISION-20261009/ARTIFACT_APPROVAL_GATE1.json"
+  ],
+  "acceptance": [
+    "逐一锁定参考图六店的店型、标识、牌匾、材料、暖光、轮廓和经营道具视觉锚点，并列出已批准接入的旧U03六店基线对应差异；六店均按整体重绘规划，后续未批候选只作历史对照。",
+    "方案说明同源PSD、多图层可编辑范围、body/sign或必要切片、稳定资产ID、既有1024×1024画布与脚点(512,900)交接契约；如需改变契约仅提请跨角色评审，不在本任务静默修改。",
+    "记录新附件的用户权利声明、文件哈希、参考用途和字体/图片来源状态，不将未知授权资产作为生产输入。",
+    "分别写明制作方案Gate1用户审批、首图前Art/Tech同批预签、具体切片与同尺度重组Gate2用户审批及其后Client接入/运行核验，不以旧U03批准替代新版门禁。",
+    "同版Art与Master Review及DELIVERABLE逐项验收完成后，向用户提交确切v0.1方案供Gate1决定；本轮无正式图片、母版、切片或客户端替换。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于2026-10-09明确创建和分派本独立Gate1 Task。旧U03审批保持历史有效范围，不继承为本参考版本批准。",
+    "2026-10-09 21:45 +08:00 Art已实产PRODUCTION_PLAN.md、REFERENCE_AND_RIGHTS.md、参考副本及DELIVERABLE.json，Producer核真实文件后登记TASK_STARTED/IN_PROGRESS。现正修正旧版基线和验收对齐；未送用户。",
+    "用户已明确确认拥有附件且允许商用改编；仅确认来源权利，不等于方案或成品批准。"
+    ,"2026-10-09 用户进一步明确六店整体重绘、不做局部微调；此指令在v0.1尚未送审时纳入同版方案范围，Gate1仍待用户审完整方案。",
+    "2026-10-09 21:49 +08:00 Art方案SHA-256 171CFCE512C13A8A68652BCB9E2506C6851B4B68CE790857951C1BB1643587FB，Art同版Review APPROVED，Task进入REVIEW。",
+    "2026-10-09 21:50:10 +08:00 Master同版Review APPROVED；用户明确授权六店整体重绘且成品先看后替换，Producer将该授权绑定准确方案SHA，Gate1 USER_APPROVED。方案任务DONE；正式制作依赖同批Art/Tech首图预签，成品Gate2仍待用户单独审核。"
+  ]
+}

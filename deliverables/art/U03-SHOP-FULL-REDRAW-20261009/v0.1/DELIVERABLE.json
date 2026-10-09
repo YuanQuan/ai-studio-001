@@ -1,0 +1,49 @@
+{
+  "task_id": "U03-SHOP-FULL-REDRAW-20261009",
+  "owner": "art",
+  "summary": "按用户新参考将U03六店分别整体重绘，交六份PSD、十二张真透明切片、同尺度重组和双视窗看图包；候选尚待用户Gate2确认。",
+  "artifacts": [
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-FULL-REDRAW-20261009/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/SAMPLE_01_ART_REVIEW.md",
+    "deliverables/tech_lead/U03-SHOP-FULL-REDRAW-20261009/v0.1/TECH_SAMPLE_01_REVIEW.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/ART_BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/tech_lead/U03-SHOP-FULL-REDRAW-20261009/v0.1/TECH_FULL_BATCH_PRESIGN.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/SOURCE_AND_PROMPTS.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/six_shop_full_redraw_overview.png",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/preview/twelve_slices_contact_sheet.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "首张正式样张前，Art与Tech Lead对同一v0.1方案SHA、来源/字体、六店整体重绘、1024×1024画布、脚点(512,900)、body/sign两片、图层/尺寸/性能预算分别预签；未齐不得出正式图。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PRESIGN.json及TECH_PRODUCTION_PRESIGN.json同SHA签认；01样张后ART_BATCH_EXPANSION_PRESIGN.json与TECH_FULL_BATCH_PRESIGN.json复签。"
+    },
+    {
+      "criterion": "01–06均完整重绘并达到新参考逐店视觉锚点；已批准接入旧版只作身份、尺寸和差异基线，不把未批候选或旧PSD图层当新图。",
+      "result": "PASS",
+      "evidence": "六张source/shop_XX/imagegen_whole_r1.png、six_shop_full_redraw_overview.png及六份reference_old_new_same_scale_black对照；SOURCE_AND_PROMPTS.md记录逐店调用。亮边/04透视/05比例差异在USER_REVIEW_PACKET.md公开供用户判断。"
+    },
+    {
+      "criterion": "交付六份真实多图层PSD、可追溯原画/制作源与12张1024×1024透明PNG，稳定资产ID、画布原点、脚点、切片路径/SHA、图层导出关系逐件可核。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json逐件路径/SHA/尺寸/alpha，PSD_LAYER_EXPORT_MAP.md说明四栅格层与可编辑限制；build_redraw.py验证每店body+sign与完整新画逐像素重组一致。"
+    },
+    {
+      "criterion": "提供六店同尺度PSD重组、总览及390×844/720×1280实际显示尺度静态视窗，对比新参考、已接入旧版与新图的轮廓、牌面、经营物、材质/明暗、遮挡和透明边。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md链接六份同黑底三图对照、六店总览、十二张390/720静态视窗及联系表；Creator实际运行另待接入。"
+    },
+    {
+      "criterion": "将具体v0.1切片与重组效果交用户独立Gate2审核；批准前不得修改U03正式客户端资源，批准后仍由Client另按工程路径/真实UUID接入并核Creator运行画面与性能。",
+      "result": "PASS",
+      "evidence": "Task与Gate2 Approval已进入USER_REVIEW，CUT_MANIFEST.json SHA-256 0441A4100592A709186D0BADB62D66CB6211E66EA189E27338F56B1B70CC9EE8绑定USER_REVIEW_PACKET.md；此PASS仅表示已提交确切v0.1给用户审核且Client锁定，用户尚未批准、工程资源未替换。"
+    }
+  ],
+  "assumptions": ["用户本轮六店图为目标且已确认拥有并允许商用改编；已接入旧版仅用作身份、尺寸与同尺度比较。"],
+  "risks": ["四层PSD仅为粗语义栅格分区，sign片可含相邻店体像素，隐藏背面未补绘；整体可见合成保真，不具独立器件动画可编辑性。", "新图较参考高光和线条更硬，04屋顶透视略斜，05灯具更亮更大；用户仍需看具体成品决定。", "Creator目标设备运行、加载性能与新版正式接入尚未验证。"],
+  "status": "READY_FOR_REVIEW"
+}
