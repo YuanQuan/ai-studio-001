@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-DIALOGUE-CORNER-REVISION-001",
+  "owner": "art",
+  "summary": "已绘制一张全新原创的 U04 对话框左下与右上成套角饰候选概念图，供用户判断造型。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/concept/corner_original_concept.png",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/README.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际原创候选概念图存在，包含可辨认的左下与右上成套角饰，区别于旧版云纹。",
+      "result": "PASS",
+      "evidence": "concept/corner_original_concept.png 为 1536×1024 实图；左下为较重的莲瓣叶片组合，右上为较轻的同族形态，已目视核对。"
+    },
+    {
+      "criterion": "记录生成来源、提示词和透明背景核验；与项目蓝金色系协调，无文字、人物或旧参考图复制。",
+      "result": "PASS",
+      "evidence": "README.md 登记内置 image_gen、无输入图片、完整提示词及 RGBA/Alpha 检查；目视核对为深夜蓝与暖金、无文字人物面板。"
+    },
+    {
+      "criterion": "明确本轮为设计候选，未作为正式切片、PSD或客户端替换资源，不误称已获具体资源批准。",
+      "result": "PASS",
+      "evidence": "README.md 标为原创候选概念；本目录仅概念 PNG、说明与交付记录，未写入 Client 资源或声明正式批准。"
+    }
+  ],
+  "assumptions": [
+    "本轮以视觉造型判断为目标，未按工程节点的真实显示尺寸制作。"
+  ],
+  "risks": [
+    "左下造型细节在未来小尺寸显示时可能需要简化与重新核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

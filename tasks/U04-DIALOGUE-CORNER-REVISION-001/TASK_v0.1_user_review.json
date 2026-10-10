@@ -1,0 +1,36 @@
+{
+  "id": "U04-DIALOGUE-CORNER-REVISION-001",
+  "title": "U04两角花定向重绘制作方案",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "仅重绘对话框左下角与右上角固定花纹，对齐已确认U04效果图；先交可审批制作方案，保留现行资源。",
+  "inputs": [
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "明确两角花与已确认效果图的实际差异、引用精确参考路径并记录来源及权利。",
+    "制作方案限定两角花透明PNG与PSD定向修订，尺寸、显示尺度、锚点、固定不伸缩和旧版保留清晰。",
+    "本版只为制作方案，未批准前不输出拟进入工程的正式图片；具体切图另交用户批准后再接入。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户要求重绘并替换为明确方向；按现行视觉制作契约先提交具体制作方案。",
+    "无QA。Art只写本交付目录，Producer维护状态。",
+    "Producer于2026-10-10 21:41:09 +08:00核首三份Required ART_BRIEF.md、PRODUCTION_PLAN.md、VISUAL_ANCHORS.md实存；SPEC→IN_PROGRESS。仍待USER_REVIEW_PACKET与DELIVERABLE及专业/Master评审；无正式图。",
+    "Producer于2026-10-10 21:42:48 +08:00核五份文件Required及现行Approval实存、DELIVERABLE三项验收PASS、Art REVIEW.json APPROVED；IN_PROGRESS→REVIEW，待Master同版接受，不提前USER_REVIEW。",
+    "Producer于2026-10-10 21:43:39 +08:00核Master REVIEW APPROVED、PLAN_ACCEPTANCE.json 7/7文件SHA当前一致，REVIEW→USER_REVIEW；仅Gate1 v0.1方案待用户批准，正式两角图0，Task不DONE。"
+  ]
+}

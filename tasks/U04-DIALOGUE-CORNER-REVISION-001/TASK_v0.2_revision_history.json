@@ -4,25 +4,25 @@
   "type": "art",
   "owner": "art",
   "parent": "U04-DIALOGUE-CLIENT-001",
-  "objective": "按用户最新反馈绘制更简单的原创成套角花候选，减少装饰和细节，以深蓝少量圆润色块和暖金弧线构成；先交实图，不替换正式工程资源。",
+  "objective": "按用户最新反馈直接绘制全新原创角饰概念候选，可不沿用旧效果图；本轮先交实际图供判断，不制作或替换正式工程资源。",
   "inputs": [
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/VISUAL_ANCHORS.md",
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
     "rules/visual_production_contract.md"
   ],
   "deliverables": [
-    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png",
-    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/README.md",
-    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/concept/corner_original_concept.png",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/README.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/DELIVERABLE.json",
     "tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "实际原创候选概念图存在，包含简洁、可辨认的左下与右上成套角饰，复杂度低于退回莲花版。",
+    "实际原创候选概念图存在，包含可辨认的左下与右上成套角饰，区别于旧版云纹。",
     "记录生成来源、提示词和透明背景核验；与项目蓝金色系协调，无文字、人物或旧参考图复制。",
     "明确本轮为设计候选，未作为正式切片、PSD或客户端替换资源，不误称已获具体资源批准。"
   ],
   "dependencies": [],
-  "status": "USER_REVIEW",
+  "status": "IN_PROGRESS",
   "approval": "APPROVAL",
   "notes": [
     "用户要求重绘并替换为明确方向；按现行视觉制作契约先提交具体制作方案。",
@@ -31,8 +31,6 @@
     "Producer于2026-10-10 21:42:48 +08:00核五份文件Required及现行Approval实存、DELIVERABLE三项验收PASS、Art REVIEW.json APPROVED；IN_PROGRESS→REVIEW，待Master同版接受，不提前USER_REVIEW。",
     "Producer于2026-10-10 21:43:39 +08:00核Master REVIEW APPROVED、PLAN_ACCEPTANCE.json 7/7文件SHA当前一致，REVIEW→USER_REVIEW；仅Gate1 v0.1方案待用户批准，正式两角图0，Task不DONE。",
     "用户本轮明确要求重绘新的角花、可以不参考之前；旧v0.1方案退回，改为先交实际原创候选图，不再单独要求旧文字方案批准。",
-    "Producer于2026-10-10 22:14:25 +08:00核v0.2首份Required概念PNG及README、DELIVERABLE实存；REVISION→IN_PROGRESS。Art自审与Master接受尚待，不提前USER_REVIEW。",
-    "用户看v0.2复杂莲花候选后要求“再换一个，别太复杂”，v0.2保留退回历史；直接产v0.3简洁新候选，不增加旧方案审批。",
-    "Producer于2026-10-10 22:22:26 +08:00核v0.3三份Required、三项同序PASS、Master仅限候选送审APPROVED及3/3文件SHA一致；REVISION→USER_REVIEW。正式资源、切图与Client替换未解锁。"
+    "Producer于2026-10-10 22:14:25 +08:00核v0.2首份Required概念PNG及README、DELIVERABLE实存；REVISION→IN_PROGRESS。Art自审与Master接受尚待，不提前USER_REVIEW。"
   ]
 }

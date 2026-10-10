@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-DIALOGUE-CORNER-REVISION-001",
+  "owner": "art",
+  "summary": "已绘制比退回莲花版更简洁的左下与右上成套角饰原创概念图，供用户判断。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/README.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际原创候选概念图存在，包含简洁、可辨认的左下与右上成套角饰，复杂度低于退回莲花版。",
+      "result": "PASS",
+      "evidence": "concept/corner_simple_concept.png 为 1672×940 实图；两角各为一条金色转角弧线与少量深蓝色块，目视比 v0.2 减少多层花瓣、叶片与内部纹样。"
+    },
+    {
+      "criterion": "记录生成来源、提示词和透明背景核验；与项目蓝金色系协调，无文字、人物或旧参考图复制。",
+      "result": "PASS",
+      "evidence": "README.md 记录内置 image_gen、无输入图、完整提示词及 RGBA/Alpha 检查；目视核对蓝金配色且无文字、人物或面板。"
+    },
+    {
+      "criterion": "明确本轮为设计候选，未作为正式切片、PSD或客户端替换资源，不误称已获具体资源批准。",
+      "result": "PASS",
+      "evidence": "README.md 明确标为待用户判断的概念候选；本目录仅概念 PNG、说明与交付记录，没有客户端资源修改。"
+    }
+  ],
+  "assumptions": [
+    "本轮只判断极简角饰造型，未进入真实 UI 尺寸和位置核验。"
+  ],
+  "risks": [
+    "当前金色弧线偏宽，若用户采纳方向，正式制作时须按实际显示尺度复核线宽。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
