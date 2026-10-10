@@ -1,0 +1,27 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-REVIEW-001",
+  "artifact": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/FEATURE_BRIEF.md",
+  "version": "v0.2",
+  "conclusion": "PASS",
+  "scope": "用户退回后的第1/3项布局与文字修订的编码前沟通；第2项角花新资源尚待Art制作方案及具体版本审批",
+  "observations": [
+    "复用既有U04场景、Mask、三层Sprite、九宫格面板、resize及layoutDialogue；不新增依赖、节点或资源加载路径。",
+    "FEATURE_BRIEF明确Mask挂到面板子节点，base/face/front保持同一源画布坐标；肖像以下边和左边为面板定位基准。",
+    "名称与对白按同一内容列左边线左对齐，窄面板按肖像占位缩减文本宽度。",
+    "原90组合与异步选择代次保留；旧版运行只作为基线，当前版本须重新核构建及实际Web画面。"
+  ],
+  "actions": [
+    {
+      "id": "BR-v0.2-01",
+      "owner": "client",
+      "action": "提交当前源码、构建身份及实际Web画面证据，覆盖默认宽屏、窄面板或窄视窗、返回重入；90组合若本版未重跑须标明仅静态保留。",
+      "status": "IMPLEMENTATION_CHECK_PENDING"
+    },
+    {
+      "id": "BR-v0.2-02",
+      "owner": "client",
+      "action": "角花继续使用已批准旧资源作版式验证；新资源取得制作方案及具体切片用户批准前不得作为本版完成项或正式接入。",
+      "status": "ACKNOWLEDGED"
+    }
+  ]
+}

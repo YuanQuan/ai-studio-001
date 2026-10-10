@@ -1,0 +1,82 @@
+{
+  "recorded_at": "2026-10-10T21:49:34.062154+08:00",
+  "source_sha256": "7b1c92c291f33a83a6851898154eb6ef69da32b006141bcd125df8285d8d29bb",
+  "url": "http://127.0.0.1:8765/",
+  "method": "Codex IAB native canvas clicks and actual screenshots; no engine mutation/evaluate",
+  "scope": "用户调整1与3布局；调整2角花仍旧批准图片，新角花仅制作方案USER_REVIEW",
+  "checks": [
+    {
+      "case": "panel foreground portrait ownership and lower-left alignment",
+      "result": "PASS",
+      "evidence": "runtime_revision_default.jpg and source panelNode parent"
+    },
+    {
+      "case": "name and dialogue common left edge",
+      "result": "PASS",
+      "evidence": "default and three panel screenshots"
+    },
+    {
+      "case": "panel resize 384x192 / 768x256 / 1024x384",
+      "result": "PASS",
+      "evidence": "three corresponding screenshots"
+    },
+    {
+      "case": "responsive current 651x898 and 1280x720",
+      "result": "PASS",
+      "evidence": "runtime_revision_tall.jpg and default"
+    },
+    {
+      "case": "90 combinations native sweep",
+      "result": "PASS",
+      "checked": 90,
+      "failed": 0,
+      "elapsed_ms": 6757,
+      "evidence": "runtime_revision_sweep90.jpg"
+    },
+    {
+      "case": "return and re-enter current tall viewport",
+      "result": "PASS",
+      "evidence": "runtime_revision_reentry.jpg"
+    },
+    {
+      "case": "current captured console warnings/errors",
+      "result": "PASS",
+      "entries": []
+    }
+  ],
+  "limitations": [
+    "新角花尚未制作/替换，本文不判全部三项需求完成。",
+    "目标设备/SDK/GPU与压力性能NOT_TESTED，6757ms是巡检耗时。",
+    "横屏返回菜单仍沿用项目竖屏菜单布局，本轮通过恢复当前原生视窗重入，非横屏菜单适配验收。"
+  ],
+  "screenshots": [
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_default.jpg",
+      "sha256": "a4ccc07957c9958e72e5c745441d329785b173d1a7f415c07d78e6e983df6266"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_panel_1024x384.jpg",
+      "sha256": "7ff65d356f63a4c46150a7404a495b771a1a5349491277fda6a42db8ffddacf4"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_panel_384x192.jpg",
+      "sha256": "38d73f721a8a2205520889ebdefa0c106ab73dcaafb1dfc2891e96d7d018a083"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_panel_768x256.jpg",
+      "sha256": "3ba44f1b610ffb298053ff4f35e7e6a7ab5e2edc85799dc521c52e931140706e"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_reentry.jpg",
+      "sha256": "59e56d27b7709ffaf03b5ec627e8eb8f757d4fbdc3f9ea94ef4051efe544dd86"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_sweep90.jpg",
+      "sha256": "b85292c1e133340c5cffe97e058914ebd0a9a13475f5d275b4817b83936bc402"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/runtime_revision_tall.jpg",
+      "sha256": "59e56d27b7709ffaf03b5ec627e8eb8f757d4fbdc3f9ea94ef4051efe544dd86"
+    }
+  ]
+}

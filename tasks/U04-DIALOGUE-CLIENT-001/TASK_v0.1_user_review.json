@@ -4,7 +4,7 @@
   "type": "integration",
   "owner": "client",
   "parent": null,
-  "objective": "按用户最新三项反馈修订U04：半身像三层位于对话框前景并锚定左下角、姓名与对白左对齐；两角花新资源待具体版本批准后接入。",
+  "objective": "消费用户本轮明确批准的具体切片v0.1，复用U00实际场景接入U04六店长三阶段五表情独立切换，复用单一九宫格自由伸缩；Owner自行验证，不安排QA。",
   "inputs": [
     "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
@@ -17,16 +17,16 @@
     "agents/shared/skills/cocos-cli-browser/SKILL.md"
   ],
   "deliverables": [
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/FEATURE_BRIEF.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/IMPLEMENTATION_REPORT.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RESOURCE_IMPORT_MAP.json",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RUNTIME_CHECK.json",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/USER_REVIEW_PACKET.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/DELIVERABLE.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/DELIVERABLE.json",
     "tasks/U04-DIALOGUE-CLIENT-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "U04半身像base/face/front整体位于对话框前景，并随对话框左下角定位；姓名与演示对白使用相同左边线。",
+    "U04从既有单元入口可打开，以现有U00实际场景为背景，左侧半身像与姓名对白、三轴控制符合获批布局。",
     "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
     "使用批准的base＋局部表情＋前遮挡组合，PNG字节不改；统一九宫格Sprite.Type.SLICED四边48，尺寸可调整且文字和固定角饰独立，实际伸缩无角失真。",
     "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
@@ -35,7 +35,7 @@
   "dependencies": [
     "U04-DIALOGUE-LAYERED-ASSET-001"
   ],
-  "status": "REVISION",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "用户本轮“批准”明确批准分层资源v0.1具体切片Gate2。Producer登记后解锁。",
@@ -44,9 +44,6 @@
     "Client只修改apps/client及本交付目录；授权仅U04资源导入登记更新project/ASSET_HANDOFF_REGISTRY.md。Tech只修改本交付目录，Producer维护状态。",
     "Gate2准确v0.1已获USER_APPROVED；依赖解除，2026-10-10 19:52:35 +08:00 READY。尚无本轮Required实产证据，不记IN_PROGRESS。",
     "本轮首份Required实存，Producer于2026-10-10 19:57:05 +08:00核验 deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md；READY→IN_PROGRESS，后续实现/运行及最终Tech Review仍在执行。",
-    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。",
-    "用户本轮三项调整退回运行v0.1；保留历史。本轮先实现1、3项，角花2按制作方案与具体资源两次审批推进，不把旧资源布局验证写成整包完成。",
-    "Producer于2026-10-10 21:38:34 +08:00核v0.2首份Required FEATURE_BRIEF.md实存，且Owner正在修改apps/client/assets/UnitSampleGallery.ts；REVISION→IN_PROGRESS仅限1/3布局与文字修订。角花沿用旧资源检查，新资源仍锁Gate1/Gate2；未完成整包v0.2。",
-    "Producer于2026-10-10 21:52:33 +08:00核v0.2当前构建、HTTP/IAB七张截图及90/90巡检；用户反馈第1/3项当前运行已验证，Tech/Master阶段Review APPROVED。Task整体退回修订链保持REVISION，角花第2项尚无新版正式资源/Gate2批准，v0.2不送整包用户审核。Task验收2整条NOT_TESTED（三轴保留/异步快速切换本版未单独复测）；目标设备/SDK/GPU压力NOT_TESTED。"
+    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。"
   ]
 }

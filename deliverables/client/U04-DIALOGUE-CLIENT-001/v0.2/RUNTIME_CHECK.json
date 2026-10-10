@@ -1,0 +1,88 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "version": "v0.2",
+  "source_sha256": "7b1c92c291f33a83a6851898154eb6ef69da32b006141bcd125df8285d8d29bb",
+  "creator_version": "3.8.8",
+  "build_status": "PASS",
+  "checks": [
+    {
+      "name": "base/face/front整体位于面板前景并按面板左下角定位",
+      "result": "PASS",
+      "evidence": "Master于2026-10-10 21:49:34 +08:00在当前IAB构建查看；portrait Mask为panelNode子节点，见evidence/MASTER_RUNTIME_OBSERVATIONS.json及runtime_revision_default.jpg。"
+    },
+    {
+      "name": "默认宽屏肖像裁切框下边缘距面板底边10设计单位",
+      "result": "PASS",
+      "evidence": "默认1280x720当前IAB画面检查通过；见runtime_revision_default.jpg。"
+    },
+    {
+      "name": "姓名与演示对白同左边线且左对齐",
+      "result": "PASS",
+      "evidence": "Master在默认及三档panel截图检查通过；见runtime_revision_default.jpg与runtime_revision_panel_*.jpg。"
+    },
+    {
+      "name": "384x192、768x256、1024x384面板尺寸下布局",
+      "result": "PASS",
+      "evidence": "当前IAB实际调整三档并检查；分别见runtime_revision_panel_384x192.jpg、runtime_revision_panel_768x256.jpg、runtime_revision_panel_1024x384.jpg。"
+    },
+    {
+      "name": "视窗响应（651x898与1280x720）",
+      "result": "PASS",
+      "evidence": "Master当前IAB检查651x898及1280x720；见runtime_revision_tall.jpg及runtime_revision_default.jpg。横屏菜单适配不在此PASS内。"
+    },
+    {
+      "name": "6店长x3阶段x5表情共90组合巡检",
+      "result": "PASS",
+      "evidence": "IAB原生Canvas交互巡检90/90、0失败、6757ms；见runtime_revision_sweep90.jpg。耗时仅为巡检，不代表目标设备性能。"
+    },
+    {
+      "name": "返回、恢复当前视窗并重新进入",
+      "result": "PASS",
+      "evidence": "Master以当前竖屏视窗返回菜单并重入，页面恢复正常；见runtime_revision_reentry.jpg。横屏返回菜单布局未验收。"
+    },
+    {
+      "name": "当前捕获的控制台警告/错误",
+      "result": "PASS",
+      "evidence": "Master记录当前捕获entries为空；见evidence/MASTER_RUNTIME_OBSERVATIONS.json。"
+    },
+    {
+      "name": "新角花制作、审批和接入",
+      "result": "NOT_TESTED",
+      "evidence": "新资源尚未制作/替换；本版沿用Art v0.1已批准旧角花做布局核对，具体新图用户审批门禁未过。"
+    },
+    {
+      "name": "目标设备、SDK、GPU/FPS与压力性能",
+      "result": "NOT_TESTED",
+      "evidence": "本轮未执行；90组6757ms仅为组合巡检耗时。"
+    }
+  ],
+  "legacy_v0_1_evidence_reused_as_current": false,
+  "http_iab": "PASS",
+  "device_platform_performance": "NOT_TESTED",
+  "build": {
+    "creator_version": "3.8.8",
+    "platform": "web-mobile",
+    "cli_exit_code": 36,
+    "finished_marker": "build Task (web-mobile) Finished in (5 s)",
+    "built_at_local": "2026-10-10 21:42:48 +08:00",
+    "http_url": "http://127.0.0.1:8765/",
+    "source_sha256": "7b1c92c291f33a83a6851898154eb6ef69da32b006141bcd125df8285d8d29bb",
+    "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "dialogue_config_sha256": "294ef69a30270c091cd3e404f4a5274c52dbce61662580bd78c0c47d46e6da8c",
+    "build_stdout": "evidence/CREATOR_BUILD_ELEVATED_STDOUT.log",
+    "build_stderr": "evidence/CREATOR_BUILD_ELEVATED_STDERR.log",
+    "runtime_http_iab": "PASS",
+    "http_index_status": 200,
+    "http_dialogue_config_status": 200
+  },
+  "note": "IAB证据为Master在当前web-mobile构建上的原生Canvas操作与截图；本交付仅确认用户调整1/3及旧资源下布局。新角花未完成且未送整包v0.2用户审批。横屏菜单布局、目标设备/SDK/GPU/FPS及压力性能未测试。",
+  "screenshots": [
+    "evidence/runtime_revision_default.jpg",
+    "evidence/runtime_revision_panel_384x192.jpg",
+    "evidence/runtime_revision_panel_768x256.jpg",
+    "evidence/runtime_revision_panel_1024x384.jpg",
+    "evidence/runtime_revision_tall.jpg",
+    "evidence/runtime_revision_sweep90.jpg",
+    "evidence/runtime_revision_reentry.jpg"
+  ]
+}

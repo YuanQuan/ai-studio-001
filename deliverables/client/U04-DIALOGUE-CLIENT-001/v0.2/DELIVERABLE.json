@@ -1,0 +1,50 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "owner": "client",
+  "summary": "完成U04客户端版式退回项1/3及当前构建IAB实测，交付可供Tech Review；用户提出的角花新版制作/审批/接入仍待独立Art门禁，不表示整个v0.2功能包完成。",
+  "artifacts": [
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/evidence/MASTER_RUNTIME_OBSERVATIONS.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U04半身像base/face/front整体位于对话框前景，并随对话框左下角定位；姓名与演示对白使用相同左边线。",
+      "result": "PASS",
+      "evidence": "Master同版IAB实测通过，见RUNTIME_CHECK.json及default截图。"
+    },
+    {
+      "criterion": "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
+      "result": "NOT_TESTED",
+      "evidence": "90组合巡检本轮实际通过90/90、0失败，证明组合资源加载覆盖；但验收条款要求的单轴操作后另外两轴保留和异步快速切换无旧回调覆盖未在本轮独立复测，整条验收不判PASS。详见RUNTIME_CHECK.json。"
+    },
+    {
+      "criterion": "使用批准的base＋局部表情＋前遮挡组合，PNG字节不改；统一九宫格Sprite.Type.SLICED四边48，尺寸可调整且文字和固定角饰独立，实际伸缩无角失真。",
+      "result": "PASS",
+      "evidence": "原已批准129张图片字节和资源引用未修改；旧角花下三档九宫格布局IAB通过。Art新角花仍待批准，未以此结论代替新图制作/审批。"
+    },
+    {
+      "criterion": "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MAP.json从v0.1继承129条资源登记（原始条目规范化SHA在layout_revision记录），路径、source SHA、meta UUID及映射未更改；返回重入IAB通过，资源加载释放实现未在本轮改动。"
+    },
+    {
+      "criterion": "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "保留现有dirty；Creator 3.8.8 CLI退出码36并有Finished标记，HTTP入口/config均200；当前IAB完成默认/三档/两视窗/90组合截图。未测平台/设备性能详见RUNTIME_CHECK。"
+    }
+  ],
+  "assumptions": [
+    "本轮只验证用户调整1/3；九宫格/固定角花验证继续使用Art v0.1已批准素材。",
+    "90组合巡检不是独立轴状态保持或压力竞态的完整替代验证。"
+  ],
+  "risks": [
+    "新角花仍未制作、具体版本用户批准或正式接入；客户端v0.2阶段性成果不得视为完整用户审批包。",
+    "目标设备、原生/SDK、GPU/FPS与压力测试均未执行。",
+    "本轮90组合覆盖资源可达与姓名同步；没有独立重复测试每轴操作后其余两轴状态保持及快速异步回调压力。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

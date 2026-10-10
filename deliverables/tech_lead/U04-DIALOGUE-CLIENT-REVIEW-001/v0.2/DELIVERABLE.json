@@ -1,0 +1,21 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-REVIEW-001",
+  "owner": "tech_lead",
+  "summary": "U04 v0.2第1、3项对话布局修订技术评审通过；新角花未制作和批准，三项整包未完成。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/BRIEF_REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/REVIEW.md",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "编码前核FEATURE_BRIEF复用点、目录命名、坐标映射、加载及适配约束并给Client明确可执行反馈。", "result": "PASS", "evidence": "BRIEF_REVIEW.json；Client v0.2 FEATURE_BRIEF.md；同版源码布局与请求代次核对。"},
+    {"criterion": "核129待导入PNG的真实源/工程hash、meta身份、SpriteFrame和SLICED Insets、三轴独立状态及异步生命周期；发现问题有明确Review Action。", "result": "PASS", "evidence": "v0.1资源审计仍适用于未改资源；当前dialogue config SHA与v0.1一致；当前源码未改索引和加载；同版Web 90/90零失败。第2项新角花不在本轮资源核验内。"},
+    {"criterion": "独立核当前构建与真实运行证据，区分静态/导入/构建/Web与目标设备，单元示例无QA；结论不以旧截图或占位证据代替。", "result": "PASS", "evidence": "Client v0.2 BUILD_ATTEMPTS.json、当前构建索引和MASTER_RUNTIME_OBSERVATIONS.json；七张当前截图SHA核对；目标设备等NOT_TESTED。"}
+  ],
+  "risks": [
+    "新角花仅进入Art制作方案USER_REVIEW，尚无可接入具体版本；用户三项反馈整包未完成。",
+    "目标设备、原生/小游戏SDK和性能压力未测；单元示例升级正式功能须重新执行适用QA和审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

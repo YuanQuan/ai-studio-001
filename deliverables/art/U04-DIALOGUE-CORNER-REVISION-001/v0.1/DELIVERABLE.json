@@ -1,0 +1,39 @@
+{
+  "task_id": "U04-DIALOGUE-CORNER-REVISION-001",
+  "owner": "art",
+  "summary": "U04 对话框左下与右上两枚固定角花的定向重绘制作前方案；现有资源保留，尚无新版正式图片。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/REVIEW.md",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "明确两角花与已确认效果图的实际差异、引用精确参考路径并记录来源及权利。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 对照 U04-DIALOGUE-PREVIEW-001/v0.2 精确图路径、现行两 PNG 与静态总览；记录 imagegen 预览和用户游戏截图仅通用布局的权利边界。"
+    },
+    {
+      "criterion": "制作方案限定两角花透明PNG与PSD定向修订，尺寸、显示尺度、锚点、固定不伸缩和旧版保留清晰。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md 与 VISUAL_ANCHORS.md 限两枚 128×96 RGBA 固定角饰、完整构图 PSD、原九宫格不变、可选 256×192 源/128×96 显示的复签条件及稳定资产 ID/旧版留存。"
+    },
+    {
+      "criterion": "本版只为制作方案，未批准前不输出拟进入工程的正式图片；具体切图另交用户批准后再接入。",
+      "result": "PASS",
+      "evidence": "本 v0.1 目录仅文字方案、审阅包与自审记录；PRODUCTION_PLAN.md 和 USER_REVIEW_PACKET.md 明确 Gate1/Art-Tech 预签/Gate2/Client 替换顺序。"
+    }
+  ],
+  "assumptions": [
+    "默认沿用现有 128×96 资源与同尺寸显示节点，具体位置、采样和贴图预算待首图前 Tech 同批预签。",
+    "概念预览只作为角花视觉和相对占比参考，U00 实景静态重组及后续 Creator 运行需分别核验。"
+  ],
+  "risks": [
+    "概念预览为 imagegen 生成，不能按像素裁用；低分辨率下深蓝云团与金边的清晰度需样张证实。",
+    "现行 U04 Client 代码/资源正处接入过程，替换时须以实际工程版本复核路径、.meta、UUID 和显示尺度。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

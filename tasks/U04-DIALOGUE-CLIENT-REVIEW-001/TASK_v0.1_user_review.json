@@ -4,7 +4,7 @@
   "type": "tech",
   "owner": "tech_lead",
   "parent": "U04-DIALOGUE-CLIENT-001",
-  "objective": "核验U04 v0.2用户反馈修订的节点层级、面板左下角锚定和名称对白左对齐，旧角花仅作布局验证；新角花尚未批准不得正式接入。",
+  "objective": "评审Client编码前轻量简报，再独立检查U04实现、资源UUID/源哈希/九宫格/异步与生命周期及运行证据，提交同版Review，不代写Client代码。",
   "inputs": [
     "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
@@ -18,10 +18,10 @@
     "tasks/U04-DIALOGUE-CLIENT-001/TASK.json"
   ],
   "deliverables": [
-    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/BRIEF_REVIEW.json",
-    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/REVIEW.md",
-    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/REVIEW.json",
-    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/BRIEF_REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/DELIVERABLE.json",
     "tasks/U04-DIALOGUE-CLIENT-REVIEW-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
@@ -32,7 +32,7 @@
   "dependencies": [
     "U04-DIALOGUE-LAYERED-ASSET-001"
   ],
-  "status": "REVIEW",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "用户本轮“批准”明确批准分层资源v0.1具体切片Gate2。Producer登记后解锁。",
@@ -41,9 +41,6 @@
     "Client只修改apps/client及本交付目录；授权仅U04资源导入登记更新project/ASSET_HANDOFF_REGISTRY.md。Tech只修改本交付目录，Producer维护状态。",
     "Gate2准确v0.1已获USER_APPROVED；依赖解除，2026-10-10 19:52:35 +08:00 READY。尚无本轮Required实产证据，不记IN_PROGRESS。",
     "本轮首份Required实存，Producer于2026-10-10 19:57:05 +08:00核验 deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/BRIEF_REVIEW.json；READY→IN_PROGRESS，后续实现/运行及最终Tech Review仍在执行。",
-    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。",
-    "用户退回运行v0.1，历史结论保留；当前v0.2待真实实现Review，不将旧Review当作当前批准。",
-    "Producer于2026-10-10 21:47:03 +08:00核v0.2首份Required `deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.2/BRIEF_REVIEW.json`实存且编码前结论PASS，REVISION→IN_PROGRESS；当前构建/运行与最终Review待同版核验，新角花仍锁Gate1/Gate2。",
-    "Producer于2026-10-10 21:52:33 +08:00核v0.2四份Required、三项Tech交付验收PASS及REVIEW.json APPROVED，Master同版阶段性Review APPROVED；仅用户反馈第1/3项技术结论，IN_PROGRESS→REVIEW，角花第2项未制作/接入，Tech整包不进入USER_REVIEW/DONE。"
+    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。"
   ]
 }

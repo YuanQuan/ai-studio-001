@@ -1,0 +1,32 @@
+{
+  "creator_version_locked": "3.8.8",
+  "attempts": [
+    {
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <project>/apps/client --build 'platform=web-mobile;debug=true'",
+      "exit_code": 134,
+      "stdout": "evidence/CREATOR_BUILD_STDOUT.log",
+      "stderr": "evidence/CREATOR_BUILD_STDERR.log",
+      "result": "BLOCKED_NO_BUILD_OUTPUT_CONFIRMED"
+    },
+    {
+      "command": "open -a /Applications/Cocos/Creator/3.8.8/CocosCreator.app --args --project <project>/apps/client --build 'platform=web-mobile;debug=true'",
+      "exit_code": 1,
+      "error": "kLSNoExecutableErr (-10827): application executable is missing",
+      "result": "BLOCKED"
+    },
+    {
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <project>/apps/client --build 'platform=web-mobile;debug=true' (sandbox_permissions=require_escalated)",
+      "exit_code": 36,
+      "stdout": "evidence/CREATOR_BUILD_ELEVATED_STDOUT.log",
+      "stderr": "evidence/CREATOR_BUILD_ELEVATED_STDERR.log",
+      "finished_marker": "build Task (web-mobile) Finished in (5 s)",
+      "built_at_local": "2026-10-10 21:42:48 +08:00",
+      "source_sha256": "7b1c92c291f33a83a6851898154eb6ef69da32b006141bcd125df8285d8d29bb",
+      "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "dialogue_config_sha256": "294ef69a30270c091cd3e404f4a5274c52dbce61662580bd78c0c47d46e6da8c",
+      "result": "BUILD_SUCCEEDED; HTTP/IAB_RUNTIME_PENDING"
+    }
+  ],
+  "runtime_http_iab": "PASS",
+  "reason": "提权Creator 3.8.8构建成功（36、Finished、输出更新时间确认）；loopback入口/config HTTP 200；Master在Codex IAB对同源码SHA实际操作并保存RUNTIME_CHECK.json所列证据。"
+}
