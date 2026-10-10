@@ -1,5 +1,13 @@
 # 工作流程复盘记录
 
+### WR-20261010-U04-NONHUMAN-V03-001｜非人Q版方向修订送审
+
+- 结果与证据：用户要求六位店长不用人的外形，改为Q版鬼怪并允许明显高矮差异；原消息精确时刻未知。旧Gate1 v0.2批准快照仍保存历史，旧人形生产与Tech支持两Task转BLOCKED，已产图/板/PSD保留但未获具体资产用户批准。Art v0.3 11/11 Required实存、四项验收逐字同序PASS、Art/Master同版APPROVED，方案Task/Approval已送USER_REVIEW。证据为v0.3交付目录、现行Task/Approval与两旧生产Task；本版未出新图。
+- 时间与耗时：Producer于2026-10-10 09:44:46 +08:00登记方向变更，09:49:56首次核实v0.3方案主文件，10:04:35 +08:00核门禁并送审。登记至送审墙钟跨度19分49秒，首份文件至送审14分39秒；包含Art制作、Master评审、Producer核对及等待，不能当作任何角色净工时。用户等待时间、各环节净耗时和工具故障耗时未知。
+- 速度因素：返工直接由用户新方向纠正引起；旧人形候选未获实际图版用户批准。无可靠目标时长，不评价快慢；未发现可证实工具故障。
+- 建议与复核：Art下一轮首图前先把非人轮廓、高矮关系和同人物三阶段尺度写入同批预签，Tech按实际画幅与PSD方法复核；负责人Art/Tech，复核点为新方案用户决定后的首图预签与代表样张。该预检增加一次对照，目标是避免再次批量生成错误外形。
+- Continuity check：新方案已到USER_REVIEW真实门禁；旧人形生产/Tech两Task因新具体方案未批准而BLOCKED，无空转READY/IN_PROGRESS。下一步仅待用户对v0.3方案决定，不能从方向纠正推断批准。
+
 ### WR-20261010-U04-GATE1-APPROVAL-001｜方案批准与正式制作开线
 
 - 结果与证据：准确v0.2 Gate1制作方案获用户“批准”，独立审批快照与Task DONE；Master新建Art真实图像生产和Tech支持两Task，Art三份预案、Tech预签文件实存，两Owner均IN_PROGRESS。具体证据见`tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`、两新Task与各自v0.1预案。
