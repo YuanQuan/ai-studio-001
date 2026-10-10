@@ -1,0 +1,42 @@
+{
+  "task_id": "U04-SIMPLE-CORNER-ASSET-001",
+  "owner": "art",
+  "summary": "按用户已确认的U04极简角饰v0.3原图，交付两张128×96透明切片及保留完整原图参考层的1672×940三层PSD。",
+  "artifacts": [
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/corner_simple_layers.psd",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/original_reference.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/process_notes.md",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/EXPORT_MAP.json",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/PSD_VALIDATION.json",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/preview/corner_simple_layers.preview.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/preview/display_scale_pair.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅消费已确认v0.3原图，记录确定性alpha分区裁切、等比缩放和左右角映射，外观不重绘。",
+      "result": "PASS",
+      "evidence": "源图和导出SHA、裁区及缩放记录见 EXPORT_MAP.json；PSD_VALIDATION.json 证明仅排除21个alpha=1离散噪点。"
+    },
+    {
+      "criterion": "两张128×96透明RGBA PNG及原位分层PSD实存可读，源、切图SHA与可编辑范围登记。",
+      "result": "PASS",
+      "evidence": "两张 exports/*.png 均由Pillow读取为128×96 RGBA；source/corner_simple_layers.psd 可读为1672×940，3层且原图参考层隐藏，见 PSD_VALIDATION.json。"
+    },
+    {
+      "criterion": "同批Art/Tech首图前预签实存，具体当前用户替换授权记录，不改未授权资源。",
+      "result": "PASS",
+      "evidence": "ART_PRESIGN.json 与 deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/TECH_PRESIGN.json 在导出前完成；用户授权见 tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json。"
+    }
+  ],
+  "assumptions": [
+    "沿用现有U04角饰128×96画布和70像素可见高度，左右切片共用缩放系数70/293；客户端保持原路径及meta UUID。"
+  ],
+  "risks": [
+    "PSD仅经脚本与Pillow读入核验，Photoshop/Photopea实际打开未测；客户端导入、构建、运行和显示尺度由Client/Tech后续验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

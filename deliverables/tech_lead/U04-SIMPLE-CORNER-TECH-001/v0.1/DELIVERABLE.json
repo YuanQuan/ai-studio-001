@@ -1,0 +1,32 @@
+{
+  "task_id": "U04-SIMPLE-CORNER-TECH-001",
+  "owner": "tech_lead",
+  "summary": "完成U04极简角饰同批首图前预签、实图与客户端导入SHA/UUID复核，以及当前Creator构建和内置浏览器实际画面审核。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "首图前同批预签锁原图SHA、两角尺寸/透明/显示尺度/PSD层与稳定路径预算。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json锁Art同批文字预案及预签SHA、已批源SHA、128×96、统一70/293缩放、原位PSD和两张RGBA8理论96KiB。"
+    },
+    {
+      "criterion": "客户端新切片与美术SHA一致，meta UUID保持，九宫格与人物布局保留。",
+      "result": "PASS",
+      "evidence": "正式两PNG SHA d23f33279807d0e34d951d9e7504d35574aee07a9bf4530378bfd2863415da4b、6b0998e92425499ee78c791d5a8f3ba8cab3eacfeb3df6d05425c69bf269216f与Art导出一致；两.meta UUID分别为fbcb6ab4-7018-4428-90d5-72ad32897175、75064b51-dd6c-4960-83c4-2fd6b959fd9f；UnitSampleGallery.ts diff仅两corner Sprite CUSTOM及固定边角定位，九宫格与人物布局代码未改。"
+    },
+    {
+      "criterion": "实际Creator当前构建与IAB画面/伸缩核验有真实证据，未测指标如实记录。",
+      "result": "PASS",
+      "evidence": "Client v0.3 RUNTIME_CHECK.json与Creator日志记录3.8.8 web-mobile构建Finished/退出36，源SHA 1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09，index SHA 02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d；MASTER_RUNTIME_OBSERVATIONS.json记录同版HTTP/IAB默认、竖屏、三档面板角饰与九宫格伸缩PASS、90/90、三轴、8次连切及重入，11张截图可核。目标设备/SDK/GPU驻留/DrawCall/压力性能NOT_TESTED。"
+    }
+  ],
+  "risks": [
+    "目标设备/SDK/GPU驻留/DrawCall及压力性能尚未验证；当前结论限本版Web单元示例。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

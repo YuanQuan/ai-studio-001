@@ -1,0 +1,17 @@
+{
+  "task_id": "U04-SIMPLE-CORNER-TECH-001",
+  "batch": "U04-SIMPLE-CORNER-v0.1",
+  "decision": "APPROVED_FOR_FIRST_EXPORT",
+  "art_presign": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+  "art_presign_sha256": "54e190d9d9c7647a01ed3e18f1c1a582e8594f6944aca70a75b8acdf0b1f0aad",
+  "production_note": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+  "production_note_sha256": "1eca7a6889207689a5131f62a8b25a0aedb296b7073984485a267537c4a89aa3",
+  "source_sha256": "821f0420d989d1914560a78569fe4cb570f319f1d37be90cc75f5f200e71e043",
+  "conditions": [
+    "仅从已批1672×940 RGBA原图两个非重叠alpha区域确定性裁切；左下[48,590,404,883)，右上[1362,58,1637,281)，统一缩放70/293，输出各128×96透明PNG，分别锚定左下和右上。",
+    "PSD保留完整源图参考层及两个1672×940原位RGBA层；不得重绘或改变已批轮廓与配色。",
+    "Client替换现有两张正式贴图时保持路径及.meta UUID：左下fbcb6ab4-7018-4428-90d5-72ad32897175，右上75064b51-dd6c-4960-83c4-2fd6b959fd9f；保持固定128×96 corner节点与原面板层级。",
+    "128×96 RGBA8理论展开量每张49152字节、两张98304字节；这不是图集页数、实际驻留或DrawCall实测。实图体积、alpha边界、导入、构建和运行在产出后另核。"
+  ],
+  "limits": "本预签只放行同批首张及随后两角按预案导出；不声明实图、Creator导入或运行通过。"
+}

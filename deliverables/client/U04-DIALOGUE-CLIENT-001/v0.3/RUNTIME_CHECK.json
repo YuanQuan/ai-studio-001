@@ -1,0 +1,66 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "version": "v0.3",
+  "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+  "creator_version": "3.8.8",
+  "build_status": "PASS",
+  "checks": [
+    {
+      "name": "本版源码与资源导入、Creator 3.8.8 CLI 构建",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8 web-mobile构建，exit36，任务日志有Finished标记；129项bundle已生成且两张新角饰UUID图片SHA匹配获批源。"
+    },
+    {
+      "name": "v0.3角饰在默认面板两角定位、固定128×96尺寸",
+      "result": "PASS",
+      "evidence": "Master于2026-10-10 22:54在同版IAB检查默认及Tall；角饰两角可见且固定尺寸。见evidence/MASTER_RUNTIME_OBSERVATIONS.json与runtime_corner_default.jpg/runtime_corner_tall.jpg。"
+    },
+    {
+      "name": "九宫格四边48实际伸缩效果",
+      "result": "PASS",
+      "evidence": "Master同版IAB检查384x192、768x256、1024x384面板；角饰无拉伸，见三张runtime_corner_panel截图。"
+    },
+    {
+      "name": "六店长、0/2/3魂与五种表情90种组合及独立轴/快速异步切换",
+      "result": "NOT_TESTED",
+      "evidence": "本轮未执行；v0.2证据不移作本版结果。"
+    },
+    {
+      "name": "目标设备、SDK、GPU/FPS与压力性能",
+      "result": "NOT_TESTED",
+      "evidence": "目标设备、SDK、GPU驻留与压力性能未执行；6624ms只代表90组合巡检耗时。"
+    }
+  ],
+  "http_iab": "PASS",
+  "device_platform_performance": "NOT_TESTED",
+  "screenshots": [
+    "runtime_corner_axis_expression.jpg",
+    "runtime_corner_axis_manager.jpg",
+    "runtime_corner_axis_stage.jpg",
+    "runtime_corner_continuous_switch.jpg",
+    "runtime_corner_default.jpg",
+    "runtime_corner_panel_1024x384.jpg",
+    "runtime_corner_panel_384x192.jpg",
+    "runtime_corner_panel_768x256.jpg",
+    "runtime_corner_reentry.jpg",
+    "runtime_corner_sweep90.jpg",
+    "runtime_corner_tall.jpg"
+  ],
+  "build": {
+    "creator_version": "3.8.8",
+    "platform": "web-mobile",
+    "cli_exit_code": 36,
+    "finished_marker": "build Task (web-mobile) Finished in (7 s)",
+    "built_at_local": "2026-10-10 22:48:30 +08:00",
+    "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+    "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "dialogue_config_sha256": "294ef69a30270c091cd3e404f4a5274c52dbce61662580bd78c0c47d46e6da8c",
+    "build_log": "evidence/CREATOR_BUILD_STDOUT.log",
+    "http_index_status": 200,
+    "http_dialogue_config_status": 200,
+    "note": "普通sandbox中的curl连接受限，Master通过已运行的既有服务确认HTTP 200、Last-Modified 22:48:30；等待Master当前IAB观察。未自行重启服务。",
+    "cli_capture_log": "evidence/CREATOR_BUILD_CLI_CAPTURE.log",
+    "runtime_http_iab": "PASS",
+    "iab_observations": "evidence/MASTER_RUNTIME_OBSERVATIONS.json"
+  }
+}

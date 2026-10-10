@@ -1,0 +1,34 @@
+{
+  "id": "U04-SIMPLE-CORNER-TECH-001",
+  "title": "U04极简角饰生产预签及接入审核",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "核同批确定拆分方案、稳定UUID、真实导入构建与运行。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-SIMPLE-CORNER-TECH-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "首图前同批预签锁原图SHA、两角尺寸/透明/显示尺度/PSD层与稳定路径预算。",
+    "客户端新切片与美术SHA一致，meta UUID保持，九宫格与人物布局保留。",
+    "实际Creator当前构建与IAB画面/伸缩核验有真实证据，未测指标如实记录。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户最新明确批准实际v0.3角饰并要求直接替换，授权原图无创拆分接入；不再询问旧方案；若需重绘外观另报。",
+    "Owner产首Required后才IN_PROGRESS；无QA，保留旧图及不相关差异。",
+    "Producer于2026-10-10 22:32 +08:00核TECH_PRESIGN.json实存并与Art同批预签相合；READY→IN_PROGRESS。REVIEW现为首图前条件结论，实际切图/导入/构建/IAB仍待复核，不据此结案。",
+    "Producer于2026-10-10 22:57 +08:00核5/5 Required实存、DELIVERABLE三项同序PASS、Tech REVIEW APPROVED且含当前Creator/IAB结论；IN_PROGRESS→REVIEW，待Master同版最终接受及用户运行包审核，不提前DONE。",
+    "Producer于2026-10-10 23:00 +08:00核Master同版接受25/25 SHA，REVIEW→USER_REVIEW；Tech v0.1同版终审三项PASS/REVIEW APPROVED，Master在Client v0.3运行包同版接受，随实现送当前运行验收；未获用户最终确认，不记DONE。"
+  ]
+}

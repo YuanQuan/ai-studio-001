@@ -946,9 +946,9 @@ export class UnitSampleGallery extends Component {
     this.acquireU04('ui/tex_u04_dialogue_panel_9s', (f) => {
       if (this.u04Panel?.isValid) { this.u04Panel.spriteFrame = f; if (f) { f.insetTop=48; f.insetBottom=48; f.insetLeft=48; f.insetRight=48; this.u04Panel!.type=Sprite.Type.SLICED; } }
     });
-    const decoA = this.makeNode('U04CornerBottomLeft', stage, 128, 96); const sa=decoA.addComponent(Sprite); this.u04Sprites.push(sa);
+    const decoA = this.makeNode('U04CornerBottomLeft', stage, 128, 96); const sa=decoA.addComponent(Sprite); sa.sizeMode=Sprite.SizeMode.CUSTOM; this.u04Sprites.push(sa);
     this.acquireU04('ui/tex_u04_dialogue_corner_cloud_bottom_left', f=>{if(sa.isValid)sa.spriteFrame=f;});
-    const decoB = this.makeNode('U04CornerTopRight', stage, 128, 96); const sb=decoB.addComponent(Sprite); this.u04Sprites.push(sb);
+    const decoB = this.makeNode('U04CornerTopRight', stage, 128, 96); const sb=decoB.addComponent(Sprite); sb.sizeMode=Sprite.SizeMode.CUSTOM; this.u04Sprites.push(sb);
     this.acquireU04('ui/tex_u04_dialogue_corner_cloud_top_right', f=>{if(sb.isValid)sb.spriteFrame=f;});
     this.u04Name = this.label(stage, '', 0, 0, 28, GOLD, 470, 46);
     this.u04Dialogue = this.label(stage, '这里是演示对白文本。', 0, 0, 22, TEXT, 470, 100);
@@ -1146,8 +1146,8 @@ export class UnitSampleGallery extends Component {
     if(this.u04Status)this.u04Status.fontSize=panelWidth<=400?13:panelWidth<768?14:16;
     const b1=this.page.getChildByName('U04DialogueScene')?.getChildByName('U04CornerBottomLeft');
     const b2=this.page.getChildByName('U04DialogueScene')?.getChildByName('U04CornerTopRight');
-    b1?.setPosition(-panelWidth/2+64,bottom+panelHeight*0.25);
-    b2?.setPosition(panelWidth/2-64,bottom+panelHeight*0.75);
+    b1?.setPosition(-panelWidth/2+64,bottom+48);
+    b2?.setPosition(panelWidth/2-64,bottom+panelHeight-48);
     stage?.getChildByName('U04ManagerControls')?.setPosition(visible.width*0.20,bottom+panelHeight+145,0);
     stage?.getChildByName('U04StageExpressionControls')?.setPosition(visible.width*0.20,bottom+panelHeight+75,0);
   }

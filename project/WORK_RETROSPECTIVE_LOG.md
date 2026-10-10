@@ -689,3 +689,10 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 速度与原因：没有本轮约定目标时限或同类可比基线，不评判整体快慢。可证实的返修来源是用户指出旧运行画面三项偏差；Client本轮先完成可独立验证的布局1/3，角花2受制作前方案和具体图片两次用户门禁限制。`DELIVERABLE.json`曾将未独立重测的三轴验收整条写PASS，Owner按证据校准为NOT_TESTED，减少后续误认完成的风险；修订净耗时未知。
 - 建议与复核：Art在Gate1获批后与Tech对同一批次预签128×96画幅、显示锚点、PSD层和来源，代价一次同版核验，复核点为首图前预签记录；Client在新角花Gate2获批并接入后按同背景同视窗复核两角真实效果及三轴保留/异步切换，代价一次本版运行巡检，复核点为下一版`RUNTIME_CHECK.json`；Producer在Gate1用户决定后只解锁获批方案对应的制作，不以本轮布局PASS充作切图或整包批准，复核点为准确版本Approval与Gate2送审包。
 - Continuity check：布局1/3可执行部分已有当前版实际运行证据和阶段评审；新角花正式制作停在真实Gate1用户审核门禁，Client整体REVISION、Tech REVIEW如实保留未完成范围，无空转READY/IN_PROGRESS。复盘不新增审批门禁。
+
+### WR-20261010-U04-SIMPLE-CORNER-V03-RUNTIME-001｜极简角饰获批原图替换至当前运行送审
+
+- 结果与证据：用户“好的替换到U04中”批准v0.3实际图并授权同源确定性拆分/替换；Art按同批Art/Tech首图前预签产两张128×96透明PNG、1672×940原位分层PSD，Master静态接受锁12项SHA；概念与Art任务DONE。Client正式两PNG SHA与Art导出逐字节相等，原meta UUID保留；Creator3.8.8当前Web构建、HTTP/IAB原生操作、三档九宫格、两视窗/重入、90/90零失败6624ms、三轴保留和连续8次切换PASS，11张图SHA一致；Tech/Master同版APPROVED，运行包锁25项SHA，Client与Tech任务USER_REVIEW。证据见`deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/DELIVERABLE.json`、`deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/MASTER_RUNTIME_OBSERVATIONS.json`及`deliverables/master/U04-DIALOGUE-CLIENT-001/v0.3/MASTER_PACKET_ACCEPTANCE.json`。最终运行用户验收仍待，单元示例无QA，目标设备/SDK/GPU/压力NOT_TESTED。
+- 时间：Producer首次核当前批准22:29:53 +08:00，Art首份Required约22:31、同批Tech预签约22:32、Art交付核约22:36、Master静态接受核约22:42；当前Creator构建有可靠记录22:48:05开始、22:48:30结束，25秒，IAB观察JSON记录22:54:34，双线送审约23:00。本轮可核的首审批登记至送审墙钟约30分钟；含并行制作、文件核验、构建、浏览器巡检与角色评审，不代表任何单角色净工时。用户回复精确时刻、各制作及评审净耗时未知；最终运行用户等待从本次USER_REVIEW开始。工具故障时长无证据，不猜测。
+- 影响与建议：Art交付首版三条验收文字与Task原文不完全一致，Master自动核验指出后Art只更正描述而不动资源，造成可证实的文档返修，净耗时未知。下次Art Owner在交付前自动逐字比对Task验收文字与DELIVERABLE，代价一轮快速检查，复核点为下一次Art首版送Review；Producer核真实文件/SHA与Owner状态，避免早期`READY_FOR_REVIEW`字段在实际运行仍PENDING时提前送审，代价一次状态对照，复核点为下一次Client运行包。
+- Continuity check：本轮U04概念与静态Art任务DONE；Client/Tech当前运行包均已达真实USER_REVIEW门禁，未留下仅以READY/IN_PROGRESS占位的本轮可执行任务。用户此前替换授权已实施，后续只待其对当前实际运行版本最终验收；复盘不新增门禁。

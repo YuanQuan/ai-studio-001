@@ -669,3 +669,31 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 
 2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。
 2026-10-10 22:12:21 +08:00 | `U04-DIALOGUE-CORNER-REVISION-001` | v0.1方案USER_REVIEW→退回留档；v0.2 REVISION | `tasks/U04-DIALOGUE-CORNER-REVISION-001/TASK_v0.1_user_review.json`、`ARTIFACT_APPROVAL_v0.1_user_review.json`；现行`TASK.json`、`ARTIFACT_APPROVAL.json` | 用户要求原创实际候选；v0.2尚无Required实图，本轮仅设计判断，正式资源与Client替换不解锁。
+
+2026-10-10 22:29:53 +08:00 | `U04-DIALOGUE-CORNER-REVISION-001` / `U04-SIMPLE-CORNER-ASSET-001` / `U04-SIMPLE-CORNER-TECH-001` | v0.3候选USER_APPROVED；新Art/Tech双线READY | 概念`deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png`、现行Approval；新双Task/Approval | 用户“好的替换到U04中”批准同源图确定拆分与替换；Art/Tech当前尚无Required实产，不记IN_PROGRESS；新切片、PSD、Creator构建及IAB待实证。原Client修订任务继续依实际切片推进，单元示例无QA。
+
+2026-10-10 22:31 +08:00 | `U04-SIMPLE-CORNER-ASSET-001` | READY→IN_PROGRESS / TASK_STARTED | `deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md`、`ART_PRESIGN.json` | 首批Required实存，已锁v0.3源图SHA `821f0420…e043`、裁区及128×96等比fit原则；Tech同批预签、实际切片/PSD仍待，不宣称已出图。
+
+2026-10-10 22:32 +08:00 | `U04-SIMPLE-CORNER-TECH-001` | READY→IN_PROGRESS / 首图前同批预签 | `deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/TECH_PRESIGN.json`、`REVIEW.json`及Art同批预签 | Tech预签核源SHA、确定性裁区、128×96、PSD原位层、稳定路径/UUID；REVIEW结论仅首图前，实际切片/导入/构建/IAB均待复核。
+
+2026-10-10 22:33 +08:00 | `U04-SIMPLE-CORNER-ASSET-001` | 同批预签后两角与PSD实出 / IN_PROGRESS | `deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png`、`corner_top_right.png`、`source/corner_simple_layers.psd`、`EXPORT_MAP.json`及预览 | 两张128×96 PNG、1672×940分层PSD与来源/导出SHA已登记；Art DELIVERABLE尚未落盘，静态/视觉结论待Owner交付，不提前REVIEW或解锁Client。
+
+2026-10-10 22:36 +08:00 | `U04-SIMPLE-CORNER-ASSET-001` | IN_PROGRESS→REVIEW | `deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/DELIVERABLE.json`、`PSD_VALIDATION.json`、两切片/PSD、Task | 8/8 Task Required实存，交付索引11/11存在、三项Owner验收自报PASS；Master静态接受待，Client运行未发生，Approval仍DRAFT。
+
+2026-10-10 22:42 +08:00 | `U04-SIMPLE-CORNER-ASSET-001` / `U04-DIALOGUE-CLIENT-001` | Art REVIEW→DONE；同源切片USER_APPROVED；Client BACKLOG→READY | Art `DELIVERABLE.json`、Master `MASTER_REVIEW.json`及`RESOURCE_ACCEPTANCE.json`、Art现行Approval/Task、Client Task | 8/8 Required、11/11交付索引、三项同序PASS、Master APPROVED且锁12项SHA；用户已有明确同源替换授权覆盖这次无创切片。Client可继续接入，尚无本轮v0.3实产，不记IN_PROGRESS；Tech运行审仍IN_PROGRESS。
+
+2026-10-10 22:43 +08:00 | `U04-DIALOGUE-CORNER-REVISION-001` | v0.3概念USER_REVIEW→DONE | 同版概念三份Required、`MASTER_REVIEW.json`、`CONCEPT_ACCEPTANCE.json`及现行Approval/Task | 三项同序PASS，Master候选评审APPROVED、3/3文件SHA锁定，用户明确批准v0.3造型并授权替换；此Task仅概念结案，具体切片由独立Art任务承担。
+
+2026-10-10 22:46 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.3 READY→IN_PROGRESS / 实际稳定路径替换 | `apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_bottom_left.png`、`tex_u04_dialogue_corner_cloud_top_right.png`与Art v0.1两切片 | 两张正式PNG工作树已改，SHA分别`d23f3327…a4b`与`6b0998e9…16f`，逐字节等于获批Art导出；Owner文档、meta UUID复核、Creator构建及IAB待实证。
+
+2026-10-10 22:47 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.3主体文档已落盘 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/FEATURE_BRIEF.md`、`IMPLEMENTATION_REPORT.md`、`RESOURCE_IMPORT_MAP.json`、`RUNTIME_CHECK.json`、`USER_REVIEW_PACKET.md`、`DELIVERABLE.json` | 六份主体Required实存；当前RUNTIME_CHECK构建PENDING、五项NOT_TESTED，DELIVERABLE五项验收也均NOT_TESTED，不能因其status字段READY_FOR_REVIEW提前送审。当前构建/IAB、90组合/三轴、九宫格结果待补。
+
+2026-10-10 22:49:07 +08:00 | `U04-DIALOGUE-CLIENT-001` | 当前Creator CLI构建结果已记录 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/CREATOR_BUILD_RESULT.txt` | 构建记录22:48:05开始、22:48:30结束、Creator 3.8.8 exit_code=36，并登记当前源码SHA；Owner的`RUNTIME_CHECK.json`暂仍PENDING，HTTP/IAB和九宫格/90组合待同版实测与回填，不提前REVIEW。
+
+2026-10-10 22:54:03 +08:00 | `U04-DIALOGUE-CLIENT-001` | HTTP/IAB画面证据陆续落盘 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_default.jpg`、`runtime_corner_tall.jpg`、三档panel、三轴、sweep90、continuous_switch、reentry截图 | 当前11张同版截图实存；`RUNTIME_CHECK.http_iab`仍PENDING_MASTER，正式观察结论与截图SHA清单待，不能将截图存在等同全部PASS。
+
+2026-10-10 22:54:53 +08:00 | `U04-DIALOGUE-CLIENT-001` | 当前IAB完整观察包落盘 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/MASTER_RUNTIME_OBSERVATIONS.json`及11张截图 | 记录同版源SHA、Creator当前产物HTTP/IAB原生点击；两角/三档面板/竖横视窗/返回重入、90/90零失败6624ms、三轴保留与连续8次切换、当前console空报错均记PASS，11/11截图SHA与实文件一致。Owner RUNTIME_CHECK/DELIVERABLE与Tech终审待同步，不提前USER_REVIEW。
+
+2026-10-10 22:56 +08:00 | `U04-DIALOGUE-CLIENT-001` | IN_PROGRESS→REVIEW | v0.3 `RUNTIME_CHECK.json`、`DELIVERABLE.json`及11张截图/观察JSON | 7/7 Required实存，交付索引全部存在，五项Task验收逐字同序PASS，构建与HTTP/IAB均PASS，截图SHA 11/11一致；Tech最终同版运行审与Master接受仍待，Approval DRAFT，不送USER_REVIEW。
+
+2026-10-10 22:57 +08:00 | `U04-SIMPLE-CORNER-TECH-001` | IN_PROGRESS→REVIEW / 最终当前运行审 | `deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.json`、`REVIEW.md`、`DELIVERABLE.json` | 5/5 Required实存，三项验收逐字同序PASS、Tech REVIEW APPROVED，核获批切片SHA/meta UUID、当前Creator构建身份及11张IAB画面/伸缩；目标设备/GPU/压力NOT_TESTED。待Master同版接受与准确运行包USER_REVIEW，不提前DONE。

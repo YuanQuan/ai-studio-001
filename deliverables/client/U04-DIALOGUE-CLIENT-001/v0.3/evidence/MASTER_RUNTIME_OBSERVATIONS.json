@@ -1,0 +1,120 @@
+{
+  "recorded_at": "2026-10-10T22:54:34.117550+08:00",
+  "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+  "url": "http://127.0.0.1:8765/",
+  "build_finished_at": "2026-10-10 22:48:30 +08:00",
+  "method": "Codex IAB actual canvas native clicks, screenshots and console; no engine evaluate/mutation",
+  "checks": [
+    {
+      "case": "new approved simple corners visible at corresponding edges, fixed sizes",
+      "result": "PASS",
+      "evidence": "runtime_corner_default.jpg and tall"
+    },
+    {
+      "case": "portrait panel child lower-left alignment and name/dialogue common left edge",
+      "result": "PASS",
+      "evidence": "default and three panel sizes"
+    },
+    {
+      "case": "panel 384x192 / 768x256 / 1024x384 preserves corners without stretching",
+      "result": "PASS",
+      "evidence": "runtime_corner_panel_*.jpg"
+    },
+    {
+      "case": "90 combinations",
+      "result": "PASS",
+      "checked": 90,
+      "failed": 0,
+      "elapsed_ms": 6624,
+      "evidence": "runtime_corner_sweep90.jpg"
+    },
+    {
+      "case": "manager preserves stage/expression then stage preserves manager/expression then expression preserves other axes",
+      "result": "PASS",
+      "sequence": [
+        "XJ_s3_angry",
+        "MT_s3_angry",
+        "MT_s2_angry",
+        "MT_s2_surprised"
+      ],
+      "evidence": "runtime_corner_axis_*.jpg"
+    },
+    {
+      "case": "8 successive manager clicks preserves s2/surprised and resolves latest selection",
+      "result": "PASS",
+      "sequence": [
+        "AT",
+        "AC",
+        "AJ",
+        "AD",
+        "XJ",
+        "MT",
+        "AD",
+        "XJ"
+      ],
+      "final": "XJ_s2_surprised",
+      "evidence": "runtime_corner_continuous_switch.jpg"
+    },
+    {
+      "case": "portrait viewport 651x898 and landscape 1280x720, return and reenter portrait viewport",
+      "result": "PASS",
+      "evidence": "runtime_corner_tall.jpg and reentry"
+    },
+    {
+      "case": "current captured warnings/errors",
+      "result": "PASS",
+      "entries": []
+    }
+  ],
+  "limitations": [
+    "单元示例无QA；目标设备/SDK/GPU驻留与压力性能NOT_TESTED。",
+    "6624ms仅90组合巡检耗时，非目标性能基准。",
+    "横屏菜单适配不属本轮；返回重入在651×898竖屏菜单视窗中验证。"
+  ],
+  "screenshots": [
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_axis_expression.jpg",
+      "sha256": "d6622b00975730110de9c6abb13ff8863fbbe79f533b140522366ca4b696f6c7"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_axis_manager.jpg",
+      "sha256": "c5bd3f60243f6d9f0889a2af73b5709fb28cb0a830585d4655c199bad62d9fd2"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_axis_stage.jpg",
+      "sha256": "43b4f36eed17988e47f0ae5312da0e8296be0670e03f30838482c2c267c154f8"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_continuous_switch.jpg",
+      "sha256": "e6f7aeceff05a29c43ccb37b748a8e085b2faf7ca1fec6dedf409306c85f0dae"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_default.jpg",
+      "sha256": "03928babc64528b5940e18bbb6e7c2a721b6022828fabbe140f9956e39c7dd2a"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_panel_1024x384.jpg",
+      "sha256": "5dbb94422a7e98291af447f5703d394c928b286a3d707bbe5ae43a6537ddc118"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_panel_384x192.jpg",
+      "sha256": "0e1385cbef810ffe8a7667b9a0d9aee827c94e365dd5f6654f9b05f9009cc8ab"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_panel_768x256.jpg",
+      "sha256": "23ffd3694053528fa76b1a53a04afa8df85a47fb3a0f0126c3dbf4641dffb7a0"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_reentry.jpg",
+      "sha256": "674fe1b2e7adeda2c7c7b22258dcdb34bbed83a073a25f6a72d545b8dff9f672"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_sweep90.jpg",
+      "sha256": "303e5a37acd243c3e958194a533bc719134978cfb7ac0ada2d2ca3549c0bde1a"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_tall.jpg",
+      "sha256": "674fe1b2e7adeda2c7c7b22258dcdb34bbed83a073a25f6a72d545b8dff9f672"
+    }
+  ]
+}

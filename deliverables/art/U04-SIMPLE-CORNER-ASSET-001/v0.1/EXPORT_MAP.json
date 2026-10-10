@@ -1,0 +1,108 @@
+{
+  "batch": "U04-SIMPLE-CORNER-v0.1",
+  "source": "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png",
+  "source_sha256": "821f0420d989d1914560a78569fe4cb570f319f1d37be90cc75f5f200e71e043",
+  "source_copy": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/original_reference.png",
+  "psd": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/corner_simple_layers.psd",
+  "psd_sha256": "1c1f71f2d94bbfb0dc90674efa59151cc603a011d0eb35ad438c45b00e403ac8",
+  "psd_canvas": [
+    1672,
+    940
+  ],
+  "psd_layers_bottom_to_top": [
+    "Original reference - hidden",
+    "Bottom left - original pixels",
+    "Top right - original pixels"
+  ],
+  "psd_editability": "完整原图为隐藏参考层；左右两角为原位独立栅格层。内部形状非矢量，未补洞、重建或重绘。",
+  "preview": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/preview/corner_simple_layers.preview.png",
+  "exports": [
+    {
+      "name": "corner_bottom_left",
+      "path": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+      "client_target_path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_bottom_left.png",
+      "client_import_status": "PLANNED_BY_ART",
+      "sha256": "d23f33279807d0e34d951d9e7504d35574aee07a9bf4530378bfd2863415da4b",
+      "source_region": "left_full_canvas.png",
+      "source_crop_xyxy_exclusive": [
+        48,
+        590,
+        404,
+        883
+      ],
+      "source_crop_size": [
+        356,
+        293
+      ],
+      "uniform_scale": "70/293",
+      "resample": "Pillow LANCZOS RGBA",
+      "scaled_size": [
+        85,
+        70
+      ],
+      "canvas_size": [
+        128,
+        96
+      ],
+      "paste_xy": [
+        0,
+        26
+      ],
+      "anchor": "left-bottom",
+      "alpha_bbox_xyxy_exclusive": [
+        0,
+        26,
+        85,
+        96
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "corner_top_right",
+      "path": "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+      "client_target_path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_top_right.png",
+      "client_import_status": "PLANNED_BY_ART",
+      "sha256": "6b0998e92425499ee78c791d5a8f3ba8cab3eacfeb3df6d05425c69bf269216f",
+      "source_region": "right_full_canvas.png",
+      "source_crop_xyxy_exclusive": [
+        1362,
+        58,
+        1637,
+        281
+      ],
+      "source_crop_size": [
+        275,
+        223
+      ],
+      "uniform_scale": "70/293",
+      "resample": "Pillow LANCZOS RGBA",
+      "scaled_size": [
+        66,
+        53
+      ],
+      "canvas_size": [
+        128,
+        96
+      ],
+      "paste_xy": [
+        62,
+        0
+      ],
+      "anchor": "right-top",
+      "alpha_bbox_xyxy_exclusive": [
+        62,
+        0,
+        128,
+        53
+      ],
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    }
+  ],
+  "note": "隐藏源图层逐像素完整保留原图；可见左右区域层仅排除两框外21个alpha=1离散噪点，无alpha>=2像素被排除。"
+}

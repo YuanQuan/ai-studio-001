@@ -324,3 +324,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。
 2026-10-10 22:12:21 +08:00（用户退回记录，用户消息精确时刻未知）：`U04-DIALOGUE-CORNER-REVISION-001` v0.1仅制作前文字方案的送审方向被“角花还是不行，你来重绘一个新的吧，可以不参考之前的”替代；v0.1 Task/Approval送审快照保留在`tasks/U04-DIALOGUE-CORNER-REVISION-001/`，该版未获Gate1批准。现行v0.2 Task REVISION、Approval DRAFT，审批对象转为实际原创候选概念图；候选判断不等于正式资源制作方案或具体切图批准。
+
+2026-10-10 22:29:53 +08:00（Producer核验登记；用户回复精确时刻未知）：`U04-DIALOGUE-CORNER-REVISION-001` v0.3简洁角饰实图获用户明确“好的替换到U04中”批准，现行`ARTIFACT_APPROVAL.json`为USER_APPROVED、`decided_at=null`。审批对象是`deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png`及同版说明，授权原图无创确定拆分、保留PSD并直接替换U04；不授权改变外观的重绘。v0.1文字方案与v0.2复杂图退回历史保留。当前实际切片、构建及运行尚待实证；不把授权记作运行通过。
+
+2026-10-10 22:42 +08:00（Producer核验登记；用户回复精确时刻未知）：`U04-SIMPLE-CORNER-ASSET-001` v0.1两张确定性切片与原位PSD的`ARTIFACT_APPROVAL.json`记USER_APPROVED。依据用户对v0.3实际图“好的替换到U04中”的具体授权，以及`deliverables/master/U04-SIMPLE-CORNER-ASSET-001/v0.1/MASTER_REVIEW.json` APPROVED、`RESOURCE_ACCEPTANCE.json`锁12项SHA；其外观同源且无重绘，直接放行Client v0.3替换。此审批是当前明确授权的具体文件落实，不是新增用户决定；Creator导入、构建、IAB与最终运行仍待独立实证。

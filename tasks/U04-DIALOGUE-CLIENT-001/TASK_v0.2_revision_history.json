@@ -4,7 +4,7 @@
   "type": "integration",
   "owner": "client",
   "parent": null,
-  "objective": "将用户确认v0.3极简角花同源切片替换U04稳定路径，保持人物左下定位和文字左对齐，并验证实际运行。",
+  "objective": "按用户最新三项反馈修订U04：半身像三层位于对话框前景并锚定左下角、姓名与对白左对齐；两角花新资源待具体版本批准后接入。",
   "inputs": [
     "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
@@ -14,30 +14,28 @@
     "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/u00_dialogue_overview_sources.json",
     "project/DECISIONS.md",
     "rules/cocos_cli_browser_workflow.md",
-    "agents/shared/skills/cocos-cli-browser/SKILL.md",
-    "tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json",
-    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/EXPORT_MAP.json"
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
   ],
   "deliverables": [
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/FEATURE_BRIEF.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/IMPLEMENTATION_REPORT.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/RESOURCE_IMPORT_MAP.json",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/RUNTIME_CHECK.json",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/USER_REVIEW_PACKET.md",
-    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/DELIVERABLE.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.2/DELIVERABLE.json",
     "tasks/U04-DIALOGUE-CLIENT-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
     "U04半身像base/face/front整体位于对话框前景，并随对话框左下角定位；姓名与演示对白使用相同左边线。",
     "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
-    "使用获批人物base及表情前遮挡，人物PNG不改；两角替换为用户确认v0.3原图同源切片，九宫格四边48保留，角饰固定不伸缩且随对应边角定位。",
+    "使用批准的base＋局部表情＋前遮挡组合，PNG字节不改；统一九宫格Sprite.Type.SLICED四边48，尺寸可调整且文字和固定角饰独立，实际伸缩无角失真。",
     "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
     "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。"
   ],
   "dependencies": [
-    "U04-SIMPLE-CORNER-ASSET-001"
+    "U04-DIALOGUE-LAYERED-ASSET-001"
   ],
-  "status": "USER_REVIEW",
+  "status": "REVISION",
   "approval": "APPROVAL",
   "notes": [
     "用户本轮“批准”明确批准分层资源v0.1具体切片Gate2。Producer登记后解锁。",
@@ -49,12 +47,6 @@
     "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。",
     "用户本轮三项调整退回运行v0.1；保留历史。本轮先实现1、3项，角花2按制作方案与具体资源两次审批推进，不把旧资源布局验证写成整包完成。",
     "Producer于2026-10-10 21:38:34 +08:00核v0.2首份Required FEATURE_BRIEF.md实存，且Owner正在修改apps/client/assets/UnitSampleGallery.ts；REVISION→IN_PROGRESS仅限1/3布局与文字修订。角花沿用旧资源检查，新资源仍锁Gate1/Gate2；未完成整包v0.2。",
-    "Producer于2026-10-10 21:52:33 +08:00核v0.2当前构建、HTTP/IAB七张截图及90/90巡检；用户反馈第1/3项当前运行已验证，Tech/Master阶段Review APPROVED。Task整体退回修订链保持REVISION，角花第2项尚无新版正式资源/Gate2批准，v0.2不送整包用户审核。Task验收2整条NOT_TESTED（三轴保留/异步快速切换本版未单独复测）；目标设备/SDK/GPU压力NOT_TESTED。",
-    "用户最新明确好的替换到U04中，已授权具体v0.3实图同源确定拆分与接入，不再索取相同替换许可。",
-    "授权Client修改apps/client、本交付目录及U04资源登记，保留无关差异。",
-    "Producer于2026-10-10 22:42 +08:00核Art同源切片v0.1 Master接受及用户当前具体替换授权，依赖满足，BACKLOG→READY；首份v0.3 Required或实际工程操作实证后才IN_PROGRESS。",
-    "Producer于2026-10-10 22:46 +08:00核两张正式稳定路径PNG已实际替换，SHA逐字节等于获批Art v0.1导出；READY→IN_PROGRESS。Owner文档、Creator构建与IAB待，不称运行通过。",
-    "Producer于2026-10-10 22:56 +08:00核v0.3 7/7 Required实存、DELIVERABLE五项验收与Task同序全PASS、RUNTIME_CHECK build/HTTP IAB PASS、11/11截图SHA；IN_PROGRESS→REVIEW，待Tech最终同版运行审与Master接受，不送USER_REVIEW。",
-    "Producer于2026-10-10 23:00 +08:00核Master同版接受25/25 SHA，REVIEW→USER_REVIEW；Client v0.3当前Creator构建与HTTP/IAB运行已由Tech、Master同版评审APPROVED，Master锁25项SHA。仅送当前实际运行版本用户验收，未获最终批准，不记DONE。"
+    "Producer于2026-10-10 21:52:33 +08:00核v0.2当前构建、HTTP/IAB七张截图及90/90巡检；用户反馈第1/3项当前运行已验证，Tech/Master阶段Review APPROVED。Task整体退回修订链保持REVISION，角花第2项尚无新版正式资源/Gate2批准，v0.2不送整包用户审核。Task验收2整条NOT_TESTED（三轴保留/异步快速切换本版未单独复测）；目标设备/SDK/GPU压力NOT_TESTED。"
   ]
 }

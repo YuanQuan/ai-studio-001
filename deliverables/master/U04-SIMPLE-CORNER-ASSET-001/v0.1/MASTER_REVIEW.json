@@ -1,0 +1,16 @@
+{
+  "task_id": "U04-SIMPLE-CORNER-ASSET-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "实看左右128×96切片，与获批v0.3源图同形同色；同批Art/Tech预签、PSD原位层及源/导出映射已实存，Tech独立SHA和alpha区域核验通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户明确批准v0.3实际图并要求替换，确定性拆分沿用该授权，无新增重绘。接受准确静态交付供Client接入，不称运行通过。"
+    }
+  ],
+  "next_action": "Producer记录接受，按既有明确替换授权解锁Client v0.3并构建/实际运行。"
+}

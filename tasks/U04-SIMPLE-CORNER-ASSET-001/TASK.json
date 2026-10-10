@@ -1,0 +1,37 @@
+{
+  "id": "U04-SIMPLE-CORNER-ASSET-001",
+  "title": "U04极简角饰获批原图拆分",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "按用户已确认v0.3原图拆分两角PNG，保留原外观及分层PSD，不新增重绘。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-CORNER-REVISION-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/source/corner_simple_layers.psd",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/EXPORT_MAP.json",
+    "deliverables/art/U04-SIMPLE-CORNER-ASSET-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-SIMPLE-CORNER-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "仅消费已确认v0.3原图，记录确定性alpha分区裁切、等比缩放和左右角映射，外观不重绘。",
+    "两张128×96透明RGBA PNG及原位分层PSD实存可读，源、切图SHA与可编辑范围登记。",
+    "同批Art/Tech首图前预签实存，具体当前用户替换授权记录，不改未授权资源。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户最新明确批准实际v0.3角饰并要求直接替换，授权原图无创拆分接入；不再询问旧方案；若需重绘外观另报。",
+    "Owner产首Required后才IN_PROGRESS；无QA，保留旧图及不相关差异。",
+    "Producer于2026-10-10 22:31 +08:00核首份Required PRODUCTION_NOTE.md及ART_PRESIGN.json实存；READY→IN_PROGRESS。Tech同批预签与实际PNG/PSD仍待，不称已导出或接入。",
+    "Producer于2026-10-10 22:36 +08:00核全部8项Required实存、DELIVERABLE索引11/11存在、三项自报PASS；IN_PROGRESS→REVIEW。仍待Master静态接受，Client运行未完成。",
+    "Producer于2026-10-10 22:42 +08:00核Master静态REVIEW APPROVED及RESOURCE_ACCEPTANCE 12项SHA；用户对v0.3同源图直接替换的明确授权覆盖此确定性无创切片，Task由REVIEW→DONE。此结论不代表Creator运行通过。"
+  ]
+}

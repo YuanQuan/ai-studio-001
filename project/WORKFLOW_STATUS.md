@@ -632,3 +632,33 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 
 
 2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。
+
+2026-10-10 22:12:21 +08:00（U04角花原创候选修订）：用户明确否定旧角花并要求可脱离旧参考重绘；`U04-DIALOGUE-CORNER-REVISION-001` v0.1 Gate1文字方案退回留档，现行 `tasks/U04-DIALOGUE-CORNER-REVISION-001/TASK.json` v0.2 为REVISION、`ARTIFACT_APPROVAL.json` DRAFT。新范围是先出实际原创概念候选供用户判断；当前v0.2 Required 图、说明与交付记录尚未实存，不能记IN_PROGRESS或USER_REVIEW。候选仅供设计判断，不构成正式PNG/PSD/切图批准；正式资源制作、具体切图及Client替换仍待后续对应门禁。Client v0.2整体REVISION、Tech v0.2 REVIEW继续等待角花语义确定。本轮有Art执行中消息，但状态以文件证据为准。
+
+2026-10-10 22:29:53 +08:00（U04简洁角饰授权及连续性核验）：用户明确“好的替换到U04中”，`U04-DIALOGUE-CORNER-REVISION-001` v0.3实际图Approval现为USER_APPROVED。Master新建`U04-SIMPLE-CORNER-ASSET-001`和`U04-SIMPLE-CORNER-TECH-001`双线READY，Art/Tech当前尚无Required实产，不能记IN_PROGRESS；Owner须先按同源图锁SHA、尺寸和预签，再确定性拆分、保留PSD与实际替换。Client `U04-DIALOGUE-CLIENT-001`现行v0.3 BACKLOG等待新切片；旧v0.2布局证据仅作历史。授权已覆盖此次原图无创替换，不再等待旧方案同一许可；最终当前构建、IAB与同版Tech/Master验收未发生，不能记PASS/USER_REVIEW/DONE。Continuity check：新双READY仍可执行，不能在此作为本轮停点；Producer继续随实产核验，单元示例无QA。
+
+2026-10-10 22:31 +08:00（U04角饰Art实际开工）：`U04-SIMPLE-CORNER-ASSET-001`的`PRODUCTION_NOTE.md`与`ART_PRESIGN.json`两份Required已实存，Art Task READY→IN_PROGRESS，v0.1 Approval仍DRAFT；源图SHA、alpha裁区、128×96同等比缩小、PSD原位层与稳定Client路径已形成预签方案。Tech同批预签、实际PNG/PSD、接入与构建尚未发生；Tech Task仍READY，Client v0.3仍BACKLOG。Continuity check：Art有真实产出且继续制作，不在此停点。
+
+2026-10-10 22:32 +08:00（U04角饰同批首图前预签完成）：`U04-SIMPLE-CORNER-TECH-001`的`TECH_PRESIGN.json`实存，源图SHA与Art预签一致，Tech Task READY→IN_PROGRESS。Art/Tech首图前预签已成对，Art可按确定方案导出；Tech现有`REVIEW.json`仅放行首图前制作，不能替代实图/导入/构建/IAB后审。双线Approval仍DRAFT，Client依实际切片尚未开工。Continuity check：Art与Tech当前均有真实Required实产，后续导出及运行审核可继续，不在此停点。
+
+2026-10-10 22:33 +08:00（U04同源切图实出）：Art按双预签导出两张128×96透明PNG、原位分层PSD、预览及`EXPORT_MAP.json`，路径均实存，来源/切片SHA可追溯。Art `DELIVERABLE.json`当前尚未实存，Task维持IN_PROGRESS/Approval DRAFT；静态核验、必要自审与Client同源替换仍待。Tech预签不等于最终运行Review。Continuity check：本轮有实际图像产出，继续交付与接入，不在此停点。
+
+2026-10-10 22:36 +08:00（U04角饰Art静态交付进入复核）：`U04-SIMPLE-CORNER-ASSET-001` v0.1全部8项Required实存，`DELIVERABLE.json`索引11/11文件可读、三项Owner验收自报PASS，另有`PSD_VALIDATION.json`与同尺度预览。Art Task IN_PROGRESS→REVIEW、Approval DRAFT；待Master静态接受，不把Art自报或Tech预签当作运行审核。Client替换尚待本批静态接受后推进；无QA单元示例。
+
+2026-10-10 22:42 +08:00（U04静态资源接受并解锁替换）：Art v0.1 8/8 Required、11/11索引齐，三项同序PASS；Master `MASTER_REVIEW.json` APPROVED并在`RESOURCE_ACCEPTANCE.json`锁12/12 SHA。用户对v0.3原图“好的替换到U04中”的明确授权覆盖此同源无创确定性拆分，Art Task REVIEW→DONE、Approval USER_APPROVED。`U04-DIALOGUE-CLIENT-001` v0.3依赖满足，BACKLOG→READY；尚无v0.3首份Required/工程替换，不提前记IN_PROGRESS。Tech预签后的真实资源/导入/构建/IAB审核继续IN_PROGRESS。Continuity check：Client READY可继续，本轮不得停在此；最终Creator运行结果尚未实证。
+
+2026-10-10 22:43 +08:00（U04极简角饰概念结案）：`U04-DIALOGUE-CORNER-REVISION-001` v0.3三项同序PASS、Master候选Review APPROVED及3/3 SHA，用户明确USER_APPROVED；概念Task USER_REVIEW→DONE。实际切片/PSD是独立`U04-SIMPLE-CORNER-ASSET-001`同源交付，不以旧概念目录冒充正式资源。Client已READY待接入，Tech运行审继续。
+
+2026-10-10 22:46 +08:00（U04 Client同源替换真实开工）：`U04-DIALOGUE-CLIENT-001` v0.3两张稳定路径正式PNG已在工作树替换，SHA各与获批Art v0.1导出逐字节一致，Task READY→IN_PROGRESS；尚无v0.3 Owner Required文档、Creator构建/IAB结果。旧`.meta` UUID和角位置/伸缩须随当前运行审核复核，不因静态同源SHA宣称运行通过。Tech Task继续IN_PROGRESS。Continuity check：Client有实际工程修改，后续文档/构建/浏览器仍可继续，不在此停点。
+
+2026-10-10 22:47 +08:00（U04 Client v0.3文档中间状态）：六份主体Required已落盘，`RESOURCE_IMPORT_MAP.json`记录新源映射；`RUNTIME_CHECK.json`显示build_status=PENDING、五类检查NOT_TESTED，`DELIVERABLE.json`五项Task验收也均NOT_TESTED。虽然其status写READY_FOR_REVIEW，当前不能据此送REVIEW或USER_REVIEW；Client Task继续IN_PROGRESS，待本版构建、HTTP/IAB与90组合、三轴、九宫格实际检查并校准验收。单元示例无QA。
+
+2026-10-10 22:49:07 +08:00（U04当前构建节点）：Client v0.3已落`evidence/CREATOR_BUILD_RESULT.txt`，记录Creator 3.8.8构建从22:48:05至22:48:30、exit_code=36、当前源码SHA；`RUNTIME_CHECK.json`尚写PENDING，Owner需核构建产物与该SHA并回填结果。HTTP实际Web、IAB画面、角饰伸缩/九宫格及90组合仍待，Task继续IN_PROGRESS。
+
+2026-10-10 22:54:03 +08:00（U04 v0.3浏览器取证中）：当前HTTP/IAB截图已覆盖默认/窄视窗、三档面板、三轴、90组合、连续切换与重入，共11张实存；正式`RUNTIME_CHECK.http_iab`仍PENDING_MASTER，最终观察JSON、截图SHA及Owner验收待。Client Task保持IN_PROGRESS，Tech运行Review待同版最终证据。
+
+2026-10-10 22:54:53 +08:00（U04 v0.3当前IAB观察包）：`evidence/MASTER_RUNTIME_OBSERVATIONS.json`已落盘，源SHA与当前构建记录一致；两角固定/对应角、三档面板不伸缩、人物与文字、90/90零失败6624ms、三轴独立保留与连续8次切换、651×898/1280×720及返回重入、当前console空报错均记录PASS；11张截图SHA 11/11一致。`RUNTIME_CHECK`/Client DELIVERABLE仍需Owner回填，与Tech独立最终审核、Master同版接受尚待。目标设备/SDK/GPU压力性能NOT_TESTED，单元示例无QA；Task维持IN_PROGRESS。
+
+2026-10-10 22:56 +08:00（U04 Client v0.3进入专业审核）：7/7 Required实存，`DELIVERABLE.json`五项验收与Task逐字同序全PASS，`RUNTIME_CHECK.json`构建及HTTP/IAB已回填PASS，11/11截图SHA与当前实文件一致；Client Task IN_PROGRESS→REVIEW、Approval DRAFT。Tech的`REVIEW.json`目前仍写静态接入结论并注明运行待复核，故须同版最终Tech运行审及Master接受后才可送USER_REVIEW；不以当前Owner PASS冒充专业通过。
+
+2026-10-10 22:57 +08:00（U04 Tech当前运行终审提交）：`U04-SIMPLE-CORNER-TECH-001` v0.1 5/5 Required实存、三项验收逐字同序PASS，`REVIEW.json` APPROVED已覆盖两角Art/Client SHA、旧meta UUID、Creator当前构建身份及IAB三档伸缩、90组/三轴/快切/重入；Task IN_PROGRESS→REVIEW、Approval DRAFT。Client v0.3亦在REVIEW，两线仍待Master同版接受并送用户对实际运行版本审核；目标设备/GPU/压力未测，不记DONE。

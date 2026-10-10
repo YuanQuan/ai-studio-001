@@ -1,0 +1,47 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "owner": "client",
+  "summary": "依据用户明确授权，将获批v0.3原图同源角饰替换进U04现有路径，并将角饰固定尺寸锚定至面板对应角；当前构建与同版运行状态以RUNTIME_CHECK记录。",
+  "artifacts": [
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U04半身像base/face/front整体位于对话框前景，并随对话框左下角定位；姓名与演示对白使用相同左边线。",
+      "result": "PASS",
+      "evidence": "Master在v0.3当前构建IAB检查肖像panel子层/左下锚、姓名对白左对齐；见runtime_corner_default.jpg及三档面板图。"
+    },
+    {
+      "criterion": "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
+      "result": "PASS",
+      "evidence": "90/90资源组合、三轴依次独立保留与8次快速切换均在同版IAB实测通过；0失败，详见MASTER_RUNTIME_OBSERVATIONS.json和对应截图。"
+    },
+    {
+      "criterion": "使用获批人物base及表情前遮挡，人物PNG不改；两角替换为用户确认v0.3原图同源切片，九宫格四边48保留，角饰固定不伸缩且随对应边角定位。",
+      "result": "PASS",
+      "evidence": "获批base/face/front和人物PNG未改；两角为用户批准v0.3原图同源切片，Creator导入SHA匹配；四边48保留、固定128×96并在三档面板实际检查无拉伸。"
+    },
+    {
+      "criterion": "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MAP.json记录129条路径/source SHA/meta UUID和映射；同版返回重入通过，无新增大型依赖。"
+    },
+    {
+      "criterion": "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "Creator3.8.8 CLI Finished、HTTP/IAB与截图均绑定当前源码SHA；Owner完成90组合及九宫格实际检查。目标设备/SDK/GPU驻留与压力性能明确NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "用户明确批准原图同源确定性切片直接替换，沿用现有资源路径和稳定.meta UUID。"
+  ],
+  "risks": [
+    "目标设备、SDK、GPU驻留及压力性能未测试；本版Web-MOBILE和90组合巡检不能替代这些专项检查。",
+    "横屏菜单适配未测试；返回重入在651×898竖屏视窗验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
