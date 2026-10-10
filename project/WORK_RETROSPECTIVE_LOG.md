@@ -634,3 +634,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 2026-10-09 U00 v0.4 重试完成：Windows管理员令牌解除旧EPERM；最终源码与新Creator构建SHA一致；390×844 / 720×1280 Owner检查通过，恢复/导出/重进及第7/8顾客可复核。技术/Master同会话复核通过，Task与Approval USER_REVIEW，未DONE。证据：deliverables/client/U00-OVERVIEW-CLIENT-IMPLEMENT-001/v0.4/BUILD_AND_RUNTIME_RECORD.md。Continuity check：本授权任务已到用户审核，无占位READY/IN_PROGRESS。
 
 可核对构建起止见FINAL_BUILD_START/RESULT；最终构建日志12秒，进程准备时间单列；整个重试周期起始时间未单独记录，不估算总耗时。主要阻塞是普通进程无Windows管理员令牌，sandbox提权不等同系统管理员。Owner在构建期间修正脚点和面板索引，复核以新源码重建。建议负责人Client：后续Creator调用先记录IsAdministrator及源码SHA；复核点为日志Finished与实际HTTP产物。用户等待从USER_REVIEW开始。
+
+### WR-20261010-U04-DIALOGUE-GATE1-V01-001｜U04对话分层制作方案到用户门禁
+
+- 结果与证据：Art v0.1文字方案11/11 Required实存，六项验收与Task逐字同序全PASS，Art/Tech/Master同版Review APPROVED；Task及Approval均USER_REVIEW，Gate1待用户决定。证据见`deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/DELIVERABLE.json`、三份Review及`tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json`。Gate2实际资源未开始；不安排单元示例QA。
+- 时间：Master Task记录起始2026-10-10 16:38:37.212338 +08:00；Producer首次登记16:42:11；三份首稿mtime均16:43:10、16:43:30核见并记TASK_STARTED；Owner交付及Review核见16:48:16；最终送审16:49:53。首稿文件mtime至送审墙钟跨度6分43秒，包含Art继续制作、Tech/Master评审、Producer核查及等待，不能当作Art净制作时间。各角色净工时、工具等待、用户等待时长未知；用户消息精确时间未知。
+- 速度与原因：无约定目标时限或可比基线，不判断整体快慢。Owner初稿第六项验收尚未闭合，且Tech已评审而文案仍称待评审；Producer核出后Art修订，Master评审完成后六项闭合。此为可核的文书同步返修，净耗时未知；本轮未发现可证实的其他慢因。
+- 建议与复核：Art在下次方案送Review前逐项对照Task Required、实际Review状态与DELIVERABLE证据文字，预期减少索引返修；代价为一次清单核查，复核点为下一次方案或资源交付的首版DELIVERABLE。Producer在Gate1用户决定后核准确v0.1审批，再让Master安排首图前Art/Tech同批预签，复核点为样张前预签记录；该检查沿用既有门禁，不新增审批。
+- Continuity check：本任务已到真实USER_REVIEW，用户未批准前正式图/PSD/切片与Gate2均不启动；没有本轮空转READY/IN_PROGRESS。

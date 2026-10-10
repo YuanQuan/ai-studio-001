@@ -1,4 +1,13 @@
 # 工作流状态
+2026-10-10 16:49:53 +08:00（U04对话分层制作方案 Gate1 送用户审核与 continuity）：`U04-DIALOGUE-LAYERED-PLAN-001` v0.1 11/11 Required实存，`DELIVERABLE.json`六项验收与Task逐字同序全PASS，Art/Tech/Master同版Review均APPROVED；Task `REVIEW→USER_REVIEW`，Approval准确指向`ART_PRODUCTION_PLAN.md` v0.1，`USER_REVIEW`、`decided_at=null`。本版为文字制作方案，尚无正式图片、PSD、切片或Creator运行；用户仅采纳v0.2布局，并未批准本版Gate1。Gate1待用户对准确方案明确决定；后续首图前同批预签、样张/扩批和实际切图Gate2独立门禁均未启动。单元示例不安排QA。Continuity check：本任务已达真实USER_REVIEW门禁，无空转READY/IN_PROGRESS；其他任务线不在本次授权推进范围。复盘`WR-20261010-U04-DIALOGUE-GATE1-V01-001`。
+
+2026-10-10 16:48:16 +08:00（U04对话方案Owner提交与Review）：Art六份主体方案、`ART_REVIEW.json`与`DELIVERABLE.json`实存，Art Review APPROVED；Tech同版`TECH_REVIEW.json` APPROVED，均仅评文字方案。Task `IN_PROGRESS→REVIEW`，Gate1 Approval仍DRAFT。当前DELIVERABLE前五项验收PASS、第六项NOT_TESTED；其Tech待审措辞滞后于已实存Review，须Owner修订，同版Master Review、Required最终核齐后才可送USER_REVIEW。未出正式图/PSD/切片；Gate2未开始。
+
+2026-10-10 16:43:30 +08:00（U04对话方案真实首稿）：Art首份Required `ART_PRODUCTION_PLAN.md`、`ART_BRIEF.md`、`VISUAL_ANCHORS.md` 于16:43:10文件mtime且16:43:30核见非空实存；据此登记TASK_STARTED，Task由Owner推进IN_PROGRESS，Gate1 Approval仍DRAFT。资产清单、权利、用户包、同版Review及交付索引待完成，未出正式图、PSD或切片；不以开工停下流程。
+
+2026-10-10 16:42:11 +08:00（Producer登记 U04 对话分层方案新线）：Master 建立 `U04-DIALOGUE-LAYERED-PLAN-001`，Task 当前 `SPEC`；`ARTIFACT_APPROVAL.json` 为 Gate1 v0.1 `DRAFT`/`decided_at=null`。用户采用 `U04-DIALOGUE-PREVIEW-001` v0.2 对话布局，要求六店长0/2/3魂共18组半身像、每组五种独立面部分层、店长/阶段/表情三轴90组合，并追加可自由伸缩九宫格对话框。原用户消息精确时间未知，本行仅为Producer登记时刻。新方案首份Required尚未实存，故不虚记 `TASK_STARTED/IN_PROGRESS`。Gate1新分层制作方案仍待Art/Tech/Master同版Review及用户明确批准；U00局部重绘预览不视为新场景批准，Gate2实际切片与同尺度效果须另行审批；正式出图、Client接入与QA均未解锁。
+
+
 
 2026-10-10 15:34:16+08:00（主场景Client v0.1用户验收批准与continuity）：用户对唯一当前送审的`SCENE-CLARITY-CLIENT-20261010` v0.1限定范围明确“验收完毕”，Master最终接受本次U00/U01五PNG接入。Task `USER_REVIEW→DONE`，Approval `USER_APPROVED`、decided_at null；原USER_REVIEW记录保`ARTIFACT_APPROVAL_v0.1_user_review.json`。审核对象`IMPLEMENTATION_REPORT.md` SHA `ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a`与`DELIVERABLE.json` SHA `66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be`。四项验收仍PASS/PASS/NOT_TESTED/PASS；U00/U01场景帧未捕获/本地保存、真实设备与小游戏平台未测，不因用户验收改成实测PASS。用户消息精确时间未知，本行为Producer登记时刻。Continuity check：本线DONE，无占位READY/IN_PROGRESS；U04并行线独立。复盘`WR-20261010-SCENE-CLARITY-CLIENT-V01-APPROVAL-001`。
 

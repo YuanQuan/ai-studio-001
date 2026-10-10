@@ -1,4 +1,8 @@
 # 用户审批记录
+2026-10-10 16:49:53 +08:00（Gate1方案送审，非用户决定）：`U04-DIALOGUE-LAYERED-PLAN-001` v0.1审批对象为`deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`及同版`USER_REVIEW_PACKET.md`；11/11 Required实存、六项Task验收逐字同序PASS，Art/Tech/Master Review均APPROVED。`ARTIFACT_APPROVAL.json`为`USER_REVIEW`、`review_ref=MASTER_REVIEW.json`、`decided_at=null`。用户先前采纳v0.2布局不等于批准新分层制作方案；正式图像、PSD、切片待本Gate1明确批准及首图前同批预签，具体切图/重组效果须另经Gate2用户审批方可Client接入。
+
+2026-10-10 16:42:11 +08:00（新方案审批开线，非用户Artifact决定）：用户“按这个样子做”仅采纳`U04-DIALOGUE-PREVIEW-001` v0.2对话布局并要求六店长0/2/3魂半身像、五表情独立面部分层、90组合与九宫格可伸缩对话框；原消息精确时刻未知。`U04-DIALOGUE-LAYERED-PLAN-001` Gate1 v0.1审批对象拟为`deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`，当前尚未实存，`ARTIFACT_APPROVAL.json`为DRAFT、`decided_at=null`。不得把布局采纳或重绘预览当作新分层制作方案批准；具体切图/重组效果另设Gate2用户决定，未批前不得正式出图或接入。
+
 2026-10-10 15:34:16+08:00（用户明确验收Client v0.1）：用户对唯一当前送审的`SCENE-CLARITY-CLIENT-20261010`限定范围回复“验收完毕”；Master最终接受本次接入。现行`ARTIFACT_APPROVAL.json` USER_APPROVED、Task DONE，旧USER_REVIEW留`ARTIFACT_APPROVAL_v0.1_user_review.json`。审核对象实施报告SHA `ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a`、DELIVERABLE SHA `66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be`；四验收PASS/PASS/NOT_TESTED/PASS，截图归档/真实设备/小游戏平台未测不变。原消息精确时刻未知，登记时刻如本行。
 2026-10-10 14:43:16+08:00（Client v0.1接入版限定范围送审，非用户批准）：`SCENE-CLARITY-CLIENT-20261010` 六Required、13索引实存，Art/Tech Review APPROVED、Master接受提交；`ARTIFACT_APPROVAL.json`为`USER_REVIEW`/decided_at null，审核对象`IMPLEMENTATION_REPORT.md`与`DELIVERABLE.json`。Creator当前Web/IAB现场检查可追溯，但U00/U01场景帧未捕获或本地保存，第三项验收NOT_TESTED；设备/小游戏平台未测。本版须用户单独决定，Art v0.3批准不替代接入批准。
 

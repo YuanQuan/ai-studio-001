@@ -1,0 +1,28 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-PLAN-001",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已逐项审阅六份方案文档与Art/Tech同版Review：六位店长准确批准组合、0/2/3魂18组、五表情90组合和三条独立切换行覆盖用户要求；不新增阶段、剧情、动画或服务端。"
+    },
+    {
+      "severity": "INFO",
+      "message": "面部方案明确干净脸底、眉眼嘴源图层、局部表情覆盖、前发与镜框遮挡、支点/offset与状态保留；高兴和微笑分别可辨，未用完整图轮播冒充分层。"
+    },
+    {
+      "severity": "INFO",
+      "message": "九宫格对话框已单独列源PSD/透明PNG、512×256候选、48px四边Insets、切线、几何与文本布局最小尺寸、三尺寸样张；名字/文字/固定角饰独立。参数待用户方案批准后的同批预签与实图修正，不是已生产资源。"
+    },
+    {
+      "severity": "INFO",
+      "message": "采纳v0.2阅读布局，正式背景复用当前U00五层与六店；1280×720横屏对照候选与720×1280 FIXED_WIDTH设计设置区分。imagegen重绘背景不作为正式场景资源或运行证据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本结论限制作前方案。实际18组资源、90组合、九宫格导入/伸缩及性能尚未验证；首图前预签、样张与扩批、最终切片Gate2及Client实施均未完成。"
+    }
+  ],
+  "next_action": "Art更新DELIVERABLE纳入同版Tech/Master Review并重核第六项；Producer核全部Required与验收后将Gate1 v0.1送USER_REVIEW。用户批准准确方案前不生成正式图/PSD/切片。"
+}

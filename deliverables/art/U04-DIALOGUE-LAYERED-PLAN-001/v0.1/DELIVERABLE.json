@@ -1,0 +1,59 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-PLAN-001",
+  "owner": "art",
+  "summary": "U04六店长三阶段五表情真分层半身像与九宫格对话框制作前方案v0.1；仅文字方案，等待同版跨专业Review及Gate1用户审批。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_REVIEW.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/MASTER_REVIEW.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/TECH_REVIEW.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确列六位店长与0/2/3魂三阶段18组半身像及五表情90组合，保留当前批准人物版本与产品成长语义。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md六人三阶段表和90组合键；ART_PRODUCTION_PLAN.md及VISUAL_ANCHORS.md逐人语义。"
+    },
+    {
+      "criterion": "列出面部分层、遮挡、支点、去除底层旧五官与同阶段对齐规则，高兴和微笑可辨；不是整图切换冒充分层。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md分层结构、支点/offset、旧五官清除和五表情定义；VISUAL_ANCHORS.md遮挡锚点。"
+    },
+    {
+      "criterion": "使用U00当前真实场景素材并锁定v0.2对话布局，说明预览重绘背景不是运行基线；店长/阶段/表情三轴独立切换、状态保留及90组合可复核。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md三行独立控制与状态保留、横屏基线；RIGHTS_AND_SOURCE.md和ASSET_MANIFEST.md锁定U00源。"
+    },
+    {
+      "criterion": "明确多层PSD、源图/PNG导出、稳定ID与计划客户端目录、同尺度重组、样张及扩批顺序、预算估算和权利边界；用户方案批准前不制作正式资源。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md批次/预算/门禁；ASSET_MANIFEST.md稳定ID、PSD/PNG计划路径和Client计划目录；RIGHTS_AND_SOURCE.md权利。"
+    },
+    {
+      "criterion": "对话框输出可九宫格伸缩资源，明确切分线/Insets与最小尺寸；四角不失真，文字/名字与固定装饰独立，宽高变化有检查方案。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md九宫格切线、Insets、最小尺寸及三尺寸重组；ASSET_MANIFEST.md面板单独登记；USER_REVIEW_PACKET.md。"
+    },
+    {
+      "criterion": "Required实存、验收逐项对齐、Art/Tech/Master方案Review完整，Producer追踪独立制作方案Gate1和切图效果Gate2。",
+      "result": "PASS",
+      "evidence": "本DELIVERABLE索引及Task所列11项Required均已实存；ART_REVIEW.json、TECH_REVIEW.json、MASTER_REVIEW.json均APPROVED；tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json为Gate1独立DRAFT、decided_at=null，project/APPROVAL_LOG.md记录Gate1与未来具体切片Gate2分离，Producer继续送审追踪。此PASS仅表示方案审查/追踪齐备，不表示用户批准。"
+    }
+  ],
+  "assumptions": [
+    "1280×720横屏物理画幅仅为主视觉对照候选；现工程720×1280 FIXED_WIDTH是设计设置，实际横屏UI坐标和安全区待后续构建量测。",
+    "本轮仅0/2/3魂，不新增1魂图；名单和图版以已批准组合清单为准。"
+  ],
+  "risks": [
+    "本任务尚无正式PSD、PNG或切片，18组和九宫格的实际可编辑性、视觉、尺寸和运行性能均未测试。",
+    "原批准角色图存在低alpha软晕且脸部非干净分层，需逐张补洞、修边并在样张与同尺度对照中核。",
+    "Gate1用户批准前不得生产正式资源；Gate2具体切片批准前不得Client正式接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

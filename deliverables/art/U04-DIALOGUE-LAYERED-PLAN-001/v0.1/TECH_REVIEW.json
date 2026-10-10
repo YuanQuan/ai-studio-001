@@ -1,0 +1,24 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-PLAN-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "现工程 UnitSampleGallery 的 720×1280 是 designResolution，采用 FIXED_WIDTH；U00 直接实例化现有五层背景及六店 Prefab，批准的 18 张角色源尚未导入 Client。v0.2 对话图为约 16:9 横屏布局参考，其重绘背景和字形没有正式资源或运行截图身份。方案以 1280×720 横屏物理画幅作主视觉对照候选，明确不是既有 Cocos UI 坐标或当前运行通过证据；宽屏可见范围待 Client 构建实核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "18 套基底与 90 张局部面部片按店长、0/2/3 魂、五表情建立稳定组合键；方案要求干净脸底、同阶段画布/pivot 或明确 rect/offset 映射、前发遮挡及换轴时状态保留，技术上可实施。原批准 1024×1536 图片的低 alpha 软晕与五官补洞须在实际样张逐张核验。"
+    },
+    {
+      "severity": "INFO",
+      "message": "九宫格候选 512×256，四边 Insets 各 48 px，对应切线 x=48/464、y=48/208；Sprite.Type.SLICED 可按该候选配置，几何下界 96×96，仅是角区不重叠的边界，文字布局候选下界 384×192。文字、姓名和固定角饰独立；后续需在横屏目标及现工程设计分辨率下分别检查实际 SpriteFrame 边框参数、不同宽高、长文本、安全区和遮挡。"
+    },
+    {
+      "severity": "INFO",
+      "message": "54 MiB 基底加 22.5 MiB 表情为所列候选尺寸下的 RGBA8 理论全展开量，未含遮挡、面板、图集空隙和 mipmap，也未确定同时驻留策略；导入、构建、运行、DrawCall 和目标设备性能均为 NOT_TESTED。"
+    }
+  ],
+  "next_action": "可将本版制作方案送 Gate1 用户审核。本结论仅为方案可实施性 Review，不是首图前 Art/Tech 同批预签。Gate1 获批后先预签孟桃 0 魂及九宫格样张，核真实 alpha、对齐、Creator SLICED 导入值与视窗效果；全量扩批前复签预算和资源策略，Gate2 获批后再由 Client 正式接入。"
+}
