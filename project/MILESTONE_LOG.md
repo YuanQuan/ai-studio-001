@@ -1,5 +1,6 @@
 # 关键节点记录
 
+2026-10-10 15:28:30 +08:00 | `U04-MANAGER-PORTRAITS-001` / `U04-MANAGER-PORTRAIT-TECH-001` | v0.3准确六人组合USER_APPROVED / Master最终接受双线DONE | Art `USER_REVIEW_PACKET.md` SHA `3f77a472267ea518781af73d161289ddbc79fc2336f1f24135b4aba84a93cf82`；Tech `TECH_REVIEW.json` SHA `605fd4209ae7f42758302019d7cd0ad95bbf20ce81cb0fe5dca5df4f99395caf`；两现行及独立v0.3 Approval | 用户原话“通过”，消息精确时刻未知；阿角/阿炭v0.3与四位v0.1精确引用同包获批。仅静态立绘，不代表clean Sprite/Client/运行/QA。
 2026-10-10 11:34:04 +08:00 | `U04-MANAGER-PORTRAITS-001` / `U04-MANAGER-PORTRAIT-TECH-001` | v0.3六PNG／两板／两PSD及技术终核齐备 / 双线REVIEW→USER_REVIEW | Art v0.3 `USER_REVIEW_PACKET.md`、`DELIVERABLE.json`、`ART_REVIEW.json`、`MASTER_REVIEW.json`；Tech v0.3 `DELIVERABLE.json`、`TECH_REVIEW.json`、`TECH_MEASUREMENTS.json`；两现行Approval | Art 14/14、Tech 6/6 Required实存；各自验收逐字同序PASS，专业Review APPROVED。Approval v0.3 USER_REVIEW、decided_at null；未获具体实图批准，Client/QA未开始。
 2026-10-10 11:24:17 +08:00 | `U04-MANAGER-PORTRAITS-001` | v0.3六PNG／两板／两PSD路径齐备 | Art v0.3 `characters/`、`psd/`、`psd_manifests/` | 仅路径数量实存；质量、PSD复合、同版Review及用户审批仍待。
 2026-10-10 11:14:16 +08:00 | `U04-MANAGER-PORTRAITS-001` / `U04-MANAGER-PORTRAIT-TECH-001` | v0.3余五图与两板两PSD扩批复签 | Art `BATCH_ART_PRESIGN.md`；Tech `BATCH_PRESIGN.json` | 同批SHA匹配，`APPROVED_FOR_REMAINING_BATCH`；实图及运行未据此通过。

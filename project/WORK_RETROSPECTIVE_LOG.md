@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+### WR-20261010-U04-HUMAN-V03-APPROVAL-001｜人形六人组合明确批准
+
+- 可核对起止：Producer于2026-10-10 15:27:24 +08:00读取当前状态，15:29:58 +08:00完成本轮登记与核验，墙钟跨度2分34秒。用户原消息精确时间未知，用户等待净时长不据此推算。
+- 结果与证据：用户对Art v0.3唯一送审六人组合明确“通过”，审核包SHA `3f77a472267ea518781af73d161289ddbc79fc2336f1f24135b4aba84a93cf82`，并列Tech静态终核SHA `605fd4209ae7f42758302019d7cd0ad95bbf20ce81cb0fe5dca5df4f99395caf`。现行及独立v0.3 Approval USER_APPROVED；既有Art/Tech Required与验收、Art/Master/Tech同版Review支持Master最终接受两Task DONE。Master接受见`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/MASTER_ACCEPTANCE.md`，30项完整组合SHA清单`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json`（SHA `eda867c8c27e17589f4a8621715e09bc20fe3abb8db0edbdad3c90ee1f2baab7`）。四位v0.1由本次包的精确路径引用获得组合内批准，不回写旧版历史审批；非人v0.2未获批准。
+- 影响与建议：本轮主要为版本绑定、状态核对和历史隔离；没有可靠证据拆分用户等待、工具或制作净耗时。Producer负责在未来接入任务开始前核对获批路径与SHA，Client复核点为实际导入登记及运行画面；当前不创建新任务。
+- Continuity check：U04 Art/Tech两线DONE，无空转READY/IN_PROGRESS；clean Sprite、正式接入、运行和QA仍需各自适用验证。
+
 ### WR-20261010-U04-HUMAN-REVISION-001｜人形版两人定向修订开线
 
 - 起止时间：2026-10-10 11:09:08 +08:00（Producer本轮登记）至2026-10-10 11:34:04 +08:00（实际资源送审）；登记至送审历时约24分钟。用户原消息精确时间未知，实际制作、返修与等待净耗时未单独计量。
