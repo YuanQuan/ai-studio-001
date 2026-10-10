@@ -261,3 +261,20 @@
 | `U04_MGR_XJ_BOARD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/characters/mgr_xj_board_023.png` / v0.2 | `c37c294b553da29958fd9ef63483b9ec8806e5268ed66137168ac6c09ae01d98` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
 | `U04_MGR_XJ_PSD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/psd/mgr_xj_board_023.psd` / v0.2 | `8cb98515d08710ddf852ec7611326e2c026cf158e1cbc719fb0fb956269767a6` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
 | `U04_MGR_ALL_S0_HEIGHT` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/characters/mgr_all_s0_height_compare.png` / v0.2 | `385b3675c5ce3d76b12c73d0db6d2c6e4da58887bd9f3a138d25b346cb5a092c` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+
+## 2026-10-10 阿角／阿炭人形修订 v0.3（当前待审候选）
+
+以下十项稳定 ID 复用既有角色与阶段语义；准确文件版本为 v0.3。上方 v0.2 非人条目是历史候选，不得混用。本批无 Client 导入，计划路径尚未确定、UUID 未生成。四位未修人物仅引用 v0.1 原候选，具体图版均未获用户批准。
+
+| 资产 ID | Art 实际路径 / 版本 | SHA-256 | Client 正式路径 | 导入 UUID | 状态 |
+|---|---|---|---|---|---|
+| `U04_MGR_AJ_S0` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s0.png` / v0.3 | `86e5adbca5197ec7c976dab738fa627bda736349d9935ada4b7a621f921aa089` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AJ_S2` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png` / v0.3 | `eaff9d5165a9b293fdda8cf13f12cea72a0bc8d04aa8fe81179f6f9732e018d1` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AJ_S3` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s3.png` / v0.3 | `254ff2dbb0ef763376a2c5bb4ec69e487573bdd0234ed69baa57d52f231d7363` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AC_S0` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png` / v0.3 | `8a15c6febf0889b3dc014230974d700c8beadd2ba28fb9862640ba092a896a62` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AC_S2` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s2.png` / v0.3 | `5ed6504c1f247fc582862a574bd9e245c0a9a800e8d5ea59bd32be87074b243c` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AC_S3` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s3.png` / v0.3 | `af95761311e86b025239cffde5e9780b319d629f281761bad393e13470a3b61e` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AJ_BOARD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_board_023.png` / v0.3 | `f2aa9290fd7c2dff11fae0acf2c4e9aa26750be3a6ea4ce2ea40a0ccc7473de9` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AC_BOARD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_board_023.png` / v0.3 | `de94b261da665e5f59ca7971fff7457bec2bafaae697aac3c198e35aee5eb82e` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AJ_PSD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd/mgr_aj_board_023.psd` / v0.3 | `9a3eb8051622b43d1bbddd53e95cdb50be33fe4eebe81f78493830eadc2a24f4` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |
+| `U04_MGR_AC_PSD_023` | `deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd/mgr_ac_board_023.psd` / v0.3 | `0f6f550ae1e59c2d30adf4014336a207496019d9c28154e4b1d8f927126ff8c3` | 计划未定 | 未生成 | USER_REVIEW_CANDIDATE / NOT_IMPORTED |

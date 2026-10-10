@@ -1,33 +1,33 @@
 {
   "id": "U04-MANAGER-PORTRAIT-TECH-001",
-  "title": "六店长立绘技术预签、样张与批次评审",
+  "title": "人形立绘定向修订技术预签、样张与批次评审",
   "type": "tech",
   "owner": "tech_lead",
   "parent": "U04-MANAGER-PORTRAITS-001",
-  "objective": "关联支持获批Art Gate1 v0.3的非人Q版鬼怪立绘新批v0.2：首图前同批技术预签、代表样张技术Review、扩批预签和最终技术Review，核真实PNG/PSD、同人物尺度、六人高矮关系与资产交接。旧v0.1人形技术结论仅留历史，不实施Client接入或QA。",
+  "objective": "支持用户最新人形版v0.3定向修订批次：首图前核Art/Tech同批预签、代表样张、扩批签认及最终技术Review；范围仅阿角与阿炭六张独立PNG、两张对照板、两份PSD，四位其他店长沿用旧人形候选。旧v0.2非人和旧v0.1人形技术结论仅为历史，不能复用为新批签认。",
   "inputs": [
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md与tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL_v0.3.json（USER_APPROVED）",
+    "project/DECISIONS.md：DEC-U04-HUMAN-REVISION-20261010（用户最新人形版与阿角男性、阿炭外形定向修改授权；非最终实图批准）",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/characters/与psd/：六位旧人形候选来源，四位只沿用候选；旧版未获具体资源用户批准",
     "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md与其USER_APPROVED记录",
     "rules/visual_production_contract.md、rules/artifact_contract.md",
-    "v0.1旧人形生产批次仅作历史，不得作为v0.2新非人鬼怪身份参考",
-    "关联Art新批U04-MANAGER-PORTRAITS-001/v0.2制作预案与代表样张"
+    "关联Art新批U04-MANAGER-PORTRAITS-001/v0.3制作预案与代表样张",
+    "tasks/U04-MANAGER-PORTRAITS-001/ARTIFACT_APPROVAL_v0.2.json与tasks/U04-MANAGER-PORTRAIT-TECH-001/ARTIFACT_APPROVAL_v0.2.json：旧非人USER_REVIEW历史快照，未获用户批准"
   ],
   "deliverables": [
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.md",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/SAMPLE_TECH_REVIEW.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/BATCH_PRESIGN.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_REVIEW.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/DELIVERABLE.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/TECH_PRODUCTION_PRESIGN.md",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/DELIVERABLE.json",
     "tasks/U04-MANAGER-PORTRAIT-TECH-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "新批v0.2首图前TECH_PRODUCTION_PRESIGN与Art v0.2同批预案对应，明确非人轮廓、画幅、同人物阶段尺度、PSD层与命名/显示检查口径。",
-    "代表非人鬼怪样张有可追溯实际版本及Tech检查结论，通过后才签新批余图扩批预案；旧v0.1样张/扩批签认不可沿用。",
-    "最终Tech Review核v0.2 18 PNG、6板、6 PSD真实路径版本、同基尺重组及资产登记；未导入路径或UUID不得写成实装。",
-    "同版固定交付与Review齐备，技术结论支持Art新批实际资产USER_REVIEW，不代替Art/用户具体图版审批、Client或QA。"
+    "v0.3首图前Tech与Art同批预签，明确阿角男性三阶段、阿炭形体三阶段、同人基线、PSD图层、命名和显示检查口径。",
+    "代表样张记录真实版本及Tech结论，通过后才签余图扩批；旧v0.1/v0.2样张或扩批签认不沿用。",
+    "最终Tech Review核六PNG、两板、两PSD真实路径版本、同基尺重组及资产登记，四位旧人形候选的组合展示准确标候选；未导入路径或UUID不得写成实装。",
+    "同版固定交付与Review齐备，技术结论支持Art v0.3实际资产USER_REVIEW，不代替具体图版用户审批、Client或QA。"
   ],
   "dependencies": [
-    "U04-MANAGER-CONCEPT-PLAN-001",
     "U04-MANAGER-PERSONALITY-001"
   ],
   "status": "USER_REVIEW",
@@ -42,6 +42,9 @@
     "2026-10-10T09:44:46+08:00 用户最新方向纠正：非人外形的Q版鬼怪、可明显高矮不同；旧人形实图/板/PSD退出当前候选，历史文件与审查结论保留但未获具体资产用户批准。待U04-MANAGER-CONCEPT-PLAN-001 v0.3新方案USER_APPROVED后，Master再决定本Task修订/恢复；当前禁止继续旧方向出图/扩批。",
     "2026-10-10T10:11:54+08:00 Master授权原关联Task修订恢复为v0.2新批，输入准确USER_APPROVED Gate1 v0.3；v0.1旧人形Tech预签/样张/扩批/历史Review不改。当前尚未核到v0.2 Owner预案实产，故READY。",
     "2026-10-10 10:14:19 +08:00 v0.2 TECH_PRODUCTION_PRESIGN.md/.json实存，READY→IN_PROGRESS有新批Owner预案产出。首图仍须核Art/Tech同批签认结论。",
-    "2026-10-10 10:43:44 +08:00 Producer核v0.2全部Required实存、四项Task验收与DELIVERABLE逐字同序PASS、专业Review同版APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。此为准确实际资产/技术支持送审，尚无用户批准，旧v0.1人形历史不改。"
+    "2026-10-10 10:43:44 +08:00 Producer核v0.2全部Required实存、四项Task验收与DELIVERABLE逐字同序PASS、专业Review同版APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。此为准确实际资产/技术支持送审，尚无用户批准，旧v0.1人形历史不改。",
+    "2026-10-10 11:07:58 +08:00 用户最新指令恢复人形版，精确修改阿角/阿炭；Master修订本Task为v0.3。旧v0.2 USER_REVIEW Approval独立快照保留，原消息时间未知且未有批准。当前新版处于REVISION；只有Owner新批Required实产方可记IN_PROGRESS。",
+    "2026-10-10 11:09:40 +08:00 Producer核v0.3新批Required实产：Art三份预案、Tech两份预签文件均实存；Tech预签JSON与Art预案SHA一致且APPROVED_FOR_FIRST_SAMPLE，仅解锁阿角0魂样张。REVISION→IN_PROGRESS有真实Owner执行证据，Approval仍DRAFT。",
+    "2026-10-10 11:34:04 +08:00 Producer核v0.3全部Required实存、现行Task验收与DELIVERABLE逐字同序全PASS、Art/Master/Tech同版Review均APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。用户尚未批准实际图版，Approval decided_at=null，四位沿用旧人形也仍仅候选。"
   ]
 }

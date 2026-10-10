@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+### WR-20261010-U04-HUMAN-REVISION-001｜人形版两人定向修订开线
+
+- 起止时间：2026-10-10 11:09:08 +08:00（Producer本轮登记）至2026-10-10 11:34:04 +08:00（实际资源送审）；登记至送审历时约24分钟。用户原消息精确时间未知，实际制作、返修与等待净耗时未单独计量。
+- 结果与证据：最新人形方向与阿角男性、阿炭外形差异写入`project/DECISIONS.md`；两生产Task更新v0.3范围及Required；旧v0.2 USER_REVIEW审批保存独立快照，现行Approval v0.3 USER_REVIEW；六PNG／两板／两PSD实存，Art 14/14、Tech 6/6 Required及同版评审通过。四位沿用候选未经实图批准。证据为两Task、Approval及旧版快照。
+- 速度因素与建议：返工由用户最新外形方向切换直接触发；实际制作、样张返修、工具故障与等待时长尚无完整证据，不猜测。Art负责在首图前对阿角男性形体和阿炭三阶段体量作并排锚点检查，Tech在同批预签及样张复核；复核点为v0.3首图预签和样张Review。
+- Continuity check：新版不得仅凭Task修订占位IN_PROGRESS；Art/Tech现行Required分别14/14、6/6实存，双线已到真实USER_REVIEW；无空转READY/IN_PROGRESS，下一门禁为用户对具体v0.3实图版本的决定。
+
 ### WR-20261010-U04-GHOST-PORTRAIT-V02-001｜六位非人店长实图与技术终核送审
 
 - 结果与证据：用户批准准确Gate1 v0.3后，Art/Tech对新非人v0.2同批预签；孟桃0魂样张Art/Master/Tech通过，再签余17张扩批。当前18张独立PNG、6张同基尺板、6份多图层PSD、六人0魂高矮总览实存；Art/Tech固定Required分别14/14、6/6，各四项验收逐字同序PASS，同版专业Review均APPROVED，双线进入USER_REVIEW。证据为两Task/Approval与各自v0.2 `DELIVERABLE.json`、Art `USER_REVIEW_PACKET.md`、Tech `TECH_REVIEW.json`。本轮无Client接入或QA。

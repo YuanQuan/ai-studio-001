@@ -1,5 +1,7 @@
 # 工作流状态
 
+
+
 2026-10-10 10:44:21 +08:00（U04 v0.2实际图版与技术支持同批送审）：Art `U04-MANAGER-PORTRAITS-001` 14/14 Required实存，18张独立非人PNG、六张3900×1850三阶段同基尺板、六份PSD及6000×1850六人0魂高矮总览逐路径核实；Tech `U04-MANAGER-PORTRAIT-TECH-001` 6/6 Required实存。两Task各四项验收与各自DELIVERABLE逐字同序全PASS，Art/Master/Tech同版Review均APPROVED；两Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval准确v0.2 USER_REVIEW、decided_at null，Art审批对象为`USER_REVIEW_PACKET.md`，Tech为`TECH_REVIEW.json`。Tech确认六板共基线、同人单一缩放与六PSD复合图对板像素AE=0；低alpha软晕、Photoshop实开/Creator导入/目标机运行仍未通过验证，不能称正式干净Sprite。31项共享资产登记保留Client未导入状态。Gate1 v0.3方案DONE不代替本次实际图版批准，旧v0.1人形仅历史。Continuity check：Art与Tech均到真实USER_REVIEW用户门禁，没有本轮空转READY/IN_PROGRESS；Client/QA未安排。复盘`WR-20261010-U04-GHOST-PORTRAIT-V02-001`。
 
 2026-10-10 10:20:27 +08:00（U04 v0.2非人代表样张与扩批）：孟桃0魂真实`characters/mgr_mt_s0.png`及`psd/mgr_mt_s0_sample.psd`、同版预览/图层清单已落盘；Art `SAMPLE_ART_REVIEW.md` PASS（仅样张视觉），Master `SAMPLE_MASTER_REVIEW.json` APPROVED，Tech `SAMPLE_TECH_REVIEW.json` APPROVED_FOR_BATCH_CANDIDATES，`BATCH_PRESIGN.json`准余17张候选扩批。Tech核样张1024×1536 RGBA、PSD两层且复合图与预览像素误差0；低alpha软晕披露，不能认作干净Sprite，Cocos/目标机NOT_TESTED。两个Art执行单元并行制作前/后三人物，仍属同一`U04-MANAGER-PORTRAITS-001`正式Task，不新增Task或用户样张门禁；Art/Tech任务继续IN_PROGRESS、Approval DRAFT，待全批真实图/板/PSD与专业Review后再送USER_REVIEW。

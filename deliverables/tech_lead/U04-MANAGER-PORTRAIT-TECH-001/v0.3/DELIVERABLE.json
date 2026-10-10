@@ -1,0 +1,40 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "owner": "tech_lead",
+  "summary": "阿角、阿炭六幅人形定向修图的同批首样预签、样张实测、扩批复签和最终静态资源技术核验。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/TECH_PRODUCTION_PRESIGN.md",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/TECH_MEASUREMENTS.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.3/TECH_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "v0.3首图前Tech与Art同批预签，明确阿角男性三阶段、阿炭形体三阶段、同人基线、PSD图层、命名和显示检查口径。",
+      "result": "PASS",
+      "evidence": "同批Art ART_PRODUCTION_PRESIGN.md SHA b351f935…；TECH_PRODUCTION_PRESIGN.md/.json；VISUAL_ANCHORS.md列六阶段、PSD四整图层、板3900×1850同尺度检查口径。"
+    },
+    {
+      "criterion": "代表样张记录真实版本及Tech结论，通过后才签余图扩批；旧v0.1/v0.2样张或扩批签认不沿用。",
+      "result": "PASS",
+      "evidence": "阿角0实际PNG SHA 86e5adbc…；SAMPLE_ART_REVIEW.md、SAMPLE_MASTER_REVIEW.json和SAMPLE_TECH_REVIEW.json；随后Art BATCH_ART_PRESIGN.md SHA e12bddbd…与Tech BATCH_PRESIGN.json。旧v0.1/v0.2未充当本批签认。"
+    },
+    {
+      "criterion": "最终Tech Review核六PNG、两板、两PSD真实路径版本、同基尺重组及资产登记，四位旧人形候选的组合展示准确标候选；未导入路径或UUID不得写成实装。",
+      "result": "PASS",
+      "evidence": "TECH_MEASUREMENTS.json记录最终六PNG和两板两PSD路径/SHA、PSD四层及板逐像素相同；Art ASSET_MANIFEST.md登记稳定ID并将客户端路径标计划未定、UUID未生成；USER_REVIEW_PACKET.md六人组合中四位v0.1均明标未批准候选。"
+    },
+    {
+      "criterion": "同版固定交付与Review齐备，技术结论支持Art v0.3实际资产USER_REVIEW，不代替具体图版用户审批、Client或QA。",
+      "result": "PASS",
+      "evidence": "TECH_REVIEW.json与本DELIVERABLE.json同版齐备；结论仅支持v0.3实际资产送USER_REVIEW。Client导入、目标机运行均NOT_TESTED，具体图版用户审批仍待。"
+    }
+  ],
+  "risks": [
+    "各图低alpha软晕触边，正式Sprite边界与图集预算尚待复核",
+    "静态PSD/板检查不证明Creator运行性能或用户最终视觉批准",
+    "Creator导入、目标机运行与正式Sprite处理均NOT_TESTED，实际接入须待具体图版用户批准。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

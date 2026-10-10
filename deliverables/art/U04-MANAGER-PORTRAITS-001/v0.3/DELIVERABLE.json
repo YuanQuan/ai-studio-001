@@ -1,0 +1,56 @@
+{
+  "task_id": "U04-MANAGER-PORTRAITS-001",
+  "owner": "art",
+  "summary": "Revised Ajiao and Atan human portraits in six stage PNGs, two comparison boards and two layered PSDs; four other v0.1 candidates are referenced unchanged for exact-version user review.",
+  "artifacts": [
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_BRIEF.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/VISUAL_ANCHORS.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_PRODUCTION_PRESIGN.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/BATCH_ART_PRESIGN.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/PROMPT_LOG.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ASSET_MANIFEST.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_REVIEW.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_REVIEW.json",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/USER_REVIEW_PACKET.md",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd_manifests",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/source_build/board_build_report.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "阿角与阿炭各0/2/3魂独立人形全身PNG共6张、两张同基尺三阶段板和两份多图层PSD及预览实存；孟桃、阿棠、阿灯、小锦只引用既有候选，不冒充已获最终用户批准。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md lists six PNG, two boards, two PSD and hashes; USER_REVIEW_PACKET.md references only old v0.1 candidates for four unchanged characters."
+    },
+    {
+      "criterion": "阿角男性身份在文案与视觉一致：0魂突出油腻邋遢、2魂干净、3魂时髦；阿炭0魂更瘦弱凹脸驼背、2魂恢复、3魂挺拔肌肉发达。外观表达不声称已验证任何进食症状或运行行为。",
+      "result": "PASS",
+      "evidence": "VISUAL_ANCHORS.md and ART_REVIEW.md record six individual visual checks; no symptom or running behavior is claimed."
+    },
+    {
+      "criterion": "新批首图前Art与Tech对同一v0.3预案签认；代表样张有Art/Tech结论后才扩批，v0.1/v0.2旧签认不可沿用。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PRESIGN.md, BATCH_ART_PRESIGN.md, SAMPLE_ART_REVIEW.md and Tech v0.3 first-sample and batch approvals record gate sequence."
+    },
+    {
+      "criterion": "记录提示词、参考与权利、外观相似风险、六PNG/两板/两PSD真实版本与可编辑范围；客户端计划路径与未导入UUID标计划。",
+      "result": "PASS",
+      "evidence": "PROMPT_LOG.md, RIGHTS_AND_SOURCE.md, ASSET_MANIFEST.md, psd_manifests and source_build/board_build_report.json record sources, actual versions and edit limits; registry records planned import."
+    },
+    {
+      "criterion": "Art/Tech/Master同版Review与固定交付齐备，六张修订图、两板、两PSD及四位沿用候选的组合效果送用户具体实图USER_REVIEW；用户批准前不正式接入。",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json, MASTER_REVIEW.json, Tech v0.3 final review and USER_REVIEW_PACKET.md assemble exact six-person candidate for user review."
+    }
+  ],
+  "assumptions": [
+    "Latest user instruction sets Ajiao male, overriding earlier sister wording for this visual batch."
+  ],
+  "risks": [
+    "Low-alpha dark halos remain in candidate PNGs; clean sprite cuts, Creator import, device performance and running visuals are untested.",
+    "All six-person visual candidates require exact-version user approval before formal import."
+  ],
+  "status": "READY_FOR_REVIEW"
+}

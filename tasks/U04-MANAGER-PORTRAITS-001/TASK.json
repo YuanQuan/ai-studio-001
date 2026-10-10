@@ -1,41 +1,42 @@
 {
   "id": "U04-MANAGER-PORTRAITS-001",
-  "title": "六位店长三阶段全身立绘正式制作",
+  "title": "人形店长阿角与阿炭三阶段立绘定向修订",
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "依据已批准Art Gate1 v0.3及Product v0.3制作六位非人Q版鬼怪店长各0/2/3魂独立全身PNG共18张、同基尺三阶段对照板6张、整阶段多图层PSD 6份。六人允许明显高矮不同，同人物三阶段比例与完整怪体最低点基线一致；首图Art/Tech同批预签，代表样张通过后扩批。旧v0.1人形资产仅留历史，不接入Client或安排QA。",
+  "objective": "依据用户最新人形版方向，在旧v0.1人形候选上定向修订阿角、阿炭0/2/3魂，形成v0.3六张独立全身PNG、两张同基尺三阶段对照板、两份多图层PSD；孟桃、阿棠、阿灯、小锦仅沿用旧候选，不重画。阿角为男性，0魂油腻邋遢、2魂干净、3魂时髦；阿炭0魂更瘦弱凹脸驼背、2魂恢复、3魂挺拔肌肉发达。旧非人v0.2与旧人形v0.1均无最终实图用户批准。",
   "inputs": [
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md与tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL_v0.3.json（USER_APPROVED）",
+    "project/DECISIONS.md：DEC-U04-HUMAN-REVISION-20261010（用户最新人形版与阿角男性、阿炭外形定向修改授权；非最终实图批准）",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/characters/与psd/：六位旧人形候选来源，四位只沿用候选；旧版未获具体资源用户批准",
     "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md与其USER_APPROVED记录",
     "rules/visual_production_contract.md、rules/artifact_contract.md",
-    "v0.1旧人形生产批次仅作历史，不得作为v0.2新非人鬼怪身份参考",
-    "关联Tech支持Task U04-MANAGER-PORTRAIT-TECH-001：首图消费v0.2已签TECH_PRODUCTION_PRESIGN，扩批消费v0.2 SAMPLE_TECH_REVIEW/BATCH_PRESIGN；不等待整个Tech Task DONE"
+    "关联Tech支持Task U04-MANAGER-PORTRAIT-TECH-001：首图消费v0.3已签TECH_PRODUCTION_PRESIGN，扩批消费v0.3 SAMPLE_TECH_REVIEW/BATCH_PRESIGN；不等待整个Tech Task DONE",
+    "tasks/U04-MANAGER-PORTRAITS-001/ARTIFACT_APPROVAL_v0.2.json与tasks/U04-MANAGER-PORTRAIT-TECH-001/ARTIFACT_APPROVAL_v0.2.json：旧非人USER_REVIEW历史快照，未获用户批准"
   ],
   "deliverables": [
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/VISUAL_ANCHORS.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/ART_BRIEF.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/ART_PRODUCTION_PRESIGN.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/PROMPT_LOG.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/ASSET_MANIFEST.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/RIGHTS_AND_SOURCE.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/ART_REVIEW.json",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/DELIVERABLE.json",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/USER_REVIEW_PACKET.md",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/MASTER_REVIEW.json",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/characters/",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/psd/",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_PRODUCTION_PRESIGN.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/PROMPT_LOG.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/MASTER_REVIEW.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd/",
     "tasks/U04-MANAGER-PORTRAITS-001/ARTIFACT_APPROVAL.json",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/psd_manifests/"
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/psd_manifests/"
   ],
   "acceptance": [
-    "18张六人0/2/3魂非人Q版鬼怪独立全身PNG、6张同基尺三阶段对照板及6份多图层PSD和预览真实存在；六人可明显高矮不同，同一人物三阶段尺度与身份锚点一致，并遵守获批Product v0.3性格语义。",
-    "新批首图前Art与Tech对同一批次制作预案签认；代表样张经Art/Tech确认后才扩批，前批v0.1人形样张签认不可沿用。",
-    "记录新批提示词、参考与权利、外观相似风险、PNG/PSD真实路径版本、可编辑范围及资产登记；Client计划路径与未导入UUID明确标计划。",
-    "Art/Tech/Master同版Review与固定交付齐备，真实非人PNG、PSD和同尺度重组效果送用户独立实际资产USER_REVIEW；用户批准前不接入。"
+    "阿角与阿炭各0/2/3魂独立人形全身PNG共6张、两张同基尺三阶段板和两份多图层PSD及预览实存；孟桃、阿棠、阿灯、小锦只引用既有候选，不冒充已获最终用户批准。",
+    "阿角男性身份在文案与视觉一致：0魂突出油腻邋遢、2魂干净、3魂时髦；阿炭0魂更瘦弱凹脸驼背、2魂恢复、3魂挺拔肌肉发达。外观表达不声称已验证任何进食症状或运行行为。",
+    "新批首图前Art与Tech对同一v0.3预案签认；代表样张有Art/Tech结论后才扩批，v0.1/v0.2旧签认不可沿用。",
+    "记录提示词、参考与权利、外观相似风险、六PNG/两板/两PSD真实版本与可编辑范围；客户端计划路径与未导入UUID标计划。",
+    "Art/Tech/Master同版Review与固定交付齐备，六张修订图、两板、两PSD及四位沿用候选的组合效果送用户具体实图USER_REVIEW；用户批准前不正式接入。"
   ],
   "dependencies": [
-    "U04-MANAGER-CONCEPT-PLAN-001",
     "U04-MANAGER-PERSONALITY-001"
   ],
   "status": "USER_REVIEW",
@@ -52,6 +53,9 @@
     "2026-10-10T09:44:46+08:00 用户最新方向纠正：非人外形的Q版鬼怪、可明显高矮不同；旧人形实图/板/PSD退出当前候选，历史文件与审查结论保留但未获具体资产用户批准。待U04-MANAGER-CONCEPT-PLAN-001 v0.3新方案USER_APPROVED后，Master再决定本Task修订/恢复；当前禁止继续旧方向出图/扩批。",
     "2026-10-10T10:11:54+08:00 Master授权原Task修订恢复为v0.2新批，输入准确USER_APPROVED Gate1 v0.3；v0.1旧人形实图及历史Review不改。当前尚未核到v0.2 Owner预案实产，故READY，不登记IN_PROGRESS。新批首图前Art/Tech重做同批预签，旧批签认不沿用。",
     "2026-10-10 10:13:15 +08:00 v0.2 VISUAL_ANCHORS.md、ART_BRIEF.md、ART_PRODUCTION_PRESIGN.md实际非空落盘，READY→IN_PROGRESS有新批Required产出证据。Tech预签尚待，不得首图。",
-    "2026-10-10 10:43:44 +08:00 Producer核v0.2全部Required实存、四项Task验收与DELIVERABLE逐字同序PASS、专业Review同版APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。此为准确实际资产/技术支持送审，尚无用户批准，旧v0.1人形历史不改。"
+    "2026-10-10 10:43:44 +08:00 Producer核v0.2全部Required实存、四项Task验收与DELIVERABLE逐字同序PASS、专业Review同版APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。此为准确实际资产/技术支持送审，尚无用户批准，旧v0.1人形历史不改。",
+    "2026-10-10 11:07:58 +08:00 用户最新指令恢复人形版，精确修改阿角/阿炭；Master修订本Task为v0.3。旧v0.2 USER_REVIEW Approval独立快照保留，原消息时间未知且未有批准。当前新版处于REVISION；只有Owner新批Required实产方可记IN_PROGRESS。",
+    "2026-10-10 11:09:40 +08:00 Producer核v0.3新批Required实产：Art三份预案、Tech两份预签文件均实存；Tech预签JSON与Art预案SHA一致且APPROVED_FOR_FIRST_SAMPLE，仅解锁阿角0魂样张。REVISION→IN_PROGRESS有真实Owner执行证据，Approval仍DRAFT。",
+    "2026-10-10 11:34:04 +08:00 Producer核v0.3全部Required实存、现行Task验收与DELIVERABLE逐字同序全PASS、Art/Master/Tech同版Review均APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。用户尚未批准实际图版，Approval decided_at=null，四位沿用旧人形也仍仅候选。"
   ]
 }
