@@ -1,4 +1,8 @@
 # 用户审批记录
+2026-10-10 18:38:35 +08:00（U04具体分层切片Gate2送审，非用户决定）：主Art `U04-DIALOGUE-LAYERED-ASSET-001` v0.1 `USER_REVIEW_PACKET.md`与Tech同版`RESOURCE_AUDIT.json`为本次准确审核范围；主Art37/37 Required、五PASS，Tech7/7、四PASS。Master `MASTER_PACKET_ACCEPTANCE.json`锁用户包、两DELIVERABLE及Tech审计四项SHA并接受送审，且有静态画面目视记录。两现行`ARTIFACT_APPROVAL.json`均`USER_REVIEW`、`decided_at=null`。Gate1已批只授权制作，不代替本次实际切片用户批准；18PSD/90局部表情/九宫格及U00静态重组未获Gate2用户批准前，不解锁Client正式接入，不称Creator或目标机运行通过。
+
+2026-10-10 16:54:42 +08:00（Gate1 v0.1用户批准登记；原消息时刻未知）：用户对唯一待审`U04-DIALOGUE-LAYERED-PLAN-001` v0.1方案明确回复“批准”；11/11 Required、六PASS、Art/Tech/Master同版APPROVED已复核。现行及独立`ARTIFACT_APPROVAL_v0.1.json`为`USER_APPROVED`、`decided_at=null`，旧USER_REVIEW快照留存，方案Task DONE。此决定只授权按准确制作前方案开展同批预签及资源生产，不批准尚不存在的PSD/PNG/九宫格实图；`U04-DIALOGUE-LAYERED-ASSET-001` Gate2 Approval为DRAFT，具体切片及同尺度效果另待用户决定，Client接入未解锁。
+
 2026-10-10 16:49:53 +08:00（Gate1方案送审，非用户决定）：`U04-DIALOGUE-LAYERED-PLAN-001` v0.1审批对象为`deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`及同版`USER_REVIEW_PACKET.md`；11/11 Required实存、六项Task验收逐字同序PASS，Art/Tech/Master Review均APPROVED。`ARTIFACT_APPROVAL.json`为`USER_REVIEW`、`review_ref=MASTER_REVIEW.json`、`decided_at=null`。用户先前采纳v0.2布局不等于批准新分层制作方案；正式图像、PSD、切片待本Gate1明确批准及首图前同批预签，具体切图/重组效果须另经Gate2用户审批方可Client接入。
 
 2026-10-10 16:42:11 +08:00（新方案审批开线，非用户Artifact决定）：用户“按这个样子做”仅采纳`U04-DIALOGUE-PREVIEW-001` v0.2对话布局并要求六店长0/2/3魂半身像、五表情独立面部分层、90组合与九宫格可伸缩对话框；原消息精确时刻未知。`U04-DIALOGUE-LAYERED-PLAN-001` Gate1 v0.1审批对象拟为`deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md`，当前尚未实存，`ARTIFACT_APPROVAL.json`为DRAFT、`decided_at=null`。不得把布局采纳或重绘预览当作新分层制作方案批准；具体切图/重组效果另设Gate2用户决定，未批前不得正式出图或接入。

@@ -1,0 +1,31 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-TECH-001",
+  "batch": "MT_S0_FIVE_FACES_AND_DIALOGUE_9SLICE_SAMPLE",
+  "decision": "APPROVED_FOR_FIRST_SAMPLE_ONLY",
+  "gate1_approval": "tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json",
+  "gate1_status": "USER_APPROVED",
+  "art_presign": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ART_PRODUCTION_PRESIGN.md",
+  "art_presign_sha256": "c74a93c5a5e7a3f2030a99b5d44deef7c6a557bf42910907f6e4790649fa4499",
+  "approved_source": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/characters/mgr_mt_s0.png",
+  "approved_source_sha256": "6bd4cccdac4351ccda863d7df4a5f079727fc38a2614e559b827b74f7d330ecb",
+  "scope": [
+    "仅孟桃0魂的干净半身基底、五组眉眼嘴分层与五张局部脸片、必要的前发遮挡、多层PSD及静态同尺度重组",
+    "仅一套512×256透明九宫格面板PSD/PNG及384×192、768×256、1024×384三尺寸重组"
+  ],
+  "technical_conditions": [
+    "以1024×1536批准图原坐标建立工作画布；脸部x=370–610/y=118–340仅为首图估计，按实际五官遮罩修整，未改区域逐像素保留，不得用矩形清除旧五官。",
+    "同阶段五表情共用脸部锚点与pivot；若导出不同局部裁剪矩形，逐张记录rect、offset及相对完整画布坐标。前发或眼镜在表达片之上，干净基底不得残留旧眉眼嘴。",
+    "原图存在低alpha暗红软晕；样张需检查半透明边、发丝、衣装与脸缘，不可将源图或自动抠除结果直接认定为干净Sprite。",
+    "九宫格切线x=48/464、y=48/208，Insets四边48px；四角保持原尺寸，边与中心按轴伸缩。姓名、对白、标签及跨切线固定装饰独立；Creator Sprite.Type.SLICED和SpriteFrame边框值待正式导入核。",
+    "样张以U00实际五层和六店素材作静态1280×720横屏主对照；现工程720×1280为FIXED_WIDTH设计分辨率，真实宽屏UI坐标和安全区待Client构建核。"
+  ],
+  "budget_estimate": {
+    "base_candidate_max_px": [768, 1024],
+    "face_candidate_max_px": [256, 256],
+    "full_batch_rgba8_base_mib_approx": 54,
+    "full_batch_rgba8_faces_mib_approx": 22.5,
+    "limits": "理论全展开估算；未计遮挡、面板、图集页/空隙、mipmap、压缩与同时驻留策略，绝非运行内存或性能PASS。样张后按真实alpha包围盒、尺寸和加载范围修订。"
+  },
+  "untested": ["Creator导入", "Web运行", "目标机", "DrawCall", "实际贴图驻留内存"],
+  "next_gate": "Art先制作本批代表样张；Art逐锚点实图自审后Tech核真实尺寸、alpha、PSD层、对齐和九宫格切线。样张通过且Art/Tech全量复签前不得扩至其余17阶段。此预签不是样张通过、Gate2用户批准或Client接入授权。"
+}

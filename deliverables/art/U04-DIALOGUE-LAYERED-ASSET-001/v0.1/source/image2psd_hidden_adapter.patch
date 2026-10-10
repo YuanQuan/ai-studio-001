@@ -1,0 +1,57 @@
+--- /Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py	2026-10-08 15:10:25
++++ /tmp/u04_image2psd_hidden.py	2026-10-10 17:38:18
+@@ -42,6 +42,7 @@
+     image: Image.Image
+     blend_mode: str = "normal"
+     opacity: float = 1.0
++    visible: bool = True
+ 
+ 
+ def fail(message: str) -> None:
+@@ -396,8 +397,7 @@
+ 
+ 
+ def load_layer_from_spec(spec: dict[str, Any], canvas: tuple[int, int], base_dir: Path) -> Layer | None:
+-    if spec.get("visible", True) is False:
+-        return None
++    visible = bool(spec.get("visible", True))
+     layer_type = str(spec.get("type", "image")).lower()
+     name = str(spec.get("name") or spec.get("file") or spec.get("path") or layer_type)
+     opacity = float(spec.get("opacity", 1.0))
+@@ -405,7 +405,7 @@
+ 
+     if layer_type == "text":
+         image = render_text_layer(spec, canvas, base_dir)
+-        return Layer(name=name, image=apply_opacity(image, opacity), blend_mode=blend_mode, opacity=opacity)
++        return Layer(name=name, image=apply_opacity(image, opacity), blend_mode=blend_mode, opacity=opacity, visible=visible)
+ 
+     source = spec.get("file") or spec.get("path") or spec.get("src")
+     path = resolve_path(base_dir, source)
+@@ -420,7 +420,7 @@
+     y = int(spec.get("y", 0))
+     image = place_on_canvas(image, canvas, x, y)
+     image = apply_opacity(image, opacity)
+-    return Layer(name=name, image=image, blend_mode=blend_mode, opacity=opacity)
++    return Layer(name=name, image=image, blend_mode=blend_mode, opacity=opacity, visible=visible)
+ 
+ 
+ def alpha_bbox(image: Image.Image) -> tuple[int, int, int, int] | None:
+@@ -434,7 +434,8 @@
+     canvas = layers_bottom_to_top[0].image.size
+     comp = Image.new("RGBA", canvas, (*background, 255))
+     for layer in layers_bottom_to_top:
+-        comp.alpha_composite(layer.image.convert("RGBA"))
++        if layer.visible:
++            comp.alpha_composite(layer.image.convert("RGBA"))
+     return comp.convert("RGB")
+ 
+ 
+@@ -526,7 +527,7 @@
+         record += struct.pack(">H", len(channels))
+         record += channel_info
+         record += b"8BIM" + blend_key
+-        record += bytes([255, 0, 0, 0])  # opacity, clipping, flags, filler
++        record += bytes([255, 0, 2 if not layer.visible else 0, 0])  # PSD hidden flag retains editable pixels
+         record += struct.pack(">I", len(extra)) + extra
+         records.append(record)
+         channel_data_blocks.append(data_block)

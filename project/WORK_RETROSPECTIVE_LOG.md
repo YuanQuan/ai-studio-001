@@ -642,3 +642,19 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 速度与原因：无约定目标时限或可比基线，不判断整体快慢。Owner初稿第六项验收尚未闭合，且Tech已评审而文案仍称待评审；Producer核出后Art修订，Master评审完成后六项闭合。此为可核的文书同步返修，净耗时未知；本轮未发现可证实的其他慢因。
 - 建议与复核：Art在下次方案送Review前逐项对照Task Required、实际Review状态与DELIVERABLE证据文字，预期减少索引返修；代价为一次清单核查，复核点为下一次方案或资源交付的首版DELIVERABLE。Producer在Gate1用户决定后核准确v0.1审批，再让Master安排首图前Art/Tech同批预签，复核点为样张前预签记录；该检查沿用既有门禁，不新增审批。
 - Continuity check：本任务已到真实USER_REVIEW，用户未批准前正式图/PSD/切片与Gate2均不启动；没有本轮空转READY/IN_PROGRESS。
+
+### WR-20261010-U04-DIALOGUE-GATE1-APPROVAL-AND-SAMPLE-001｜Gate1批准与代表样张制作进行中
+
+- 结果与证据：用户批准`U04-DIALOGUE-LAYERED-PLAN-001` v0.1方案，11/11 Required、六PASS及Art/Tech/Master APPROVED已核，方案Task DONE，现行与独立审批USER_APPROVED、decided_at null，旧USER_REVIEW快照保留。Art与Tech资源双线有首图前同批预签，均IN_PROGRESS；九宫格PSD/PNG和三尺寸重组、孟桃0魂五表情候选已落盘，样张Art/Tech结论、扩批和Gate2尚待。脸底局部支持子线有候选图与遮罩，IN_PROGRESS，内部Review待。证据见三Task及各自交付目录、`project/MILESTONE_LOG.md`。
+- 时间：Producer批准登记2026-10-10 16:54:42 +08:00，Art首三份Required mtime16:57:02、16:57:12核见，Tech预签16:58:03核见；九宫格候选17:07:05核见，路径更正17:07:30；脸底支持任务17:21:10登记、17:25:53核首候选。当前截止观察17:29:16；用户批准原消息时刻、Art与Tech净制作时间、各图实际完成时刻与工具故障净耗时未知。此观察跨度包括并行工作和等待，不作角色工时。
+- 速度与原因：无目标时限或可比基线，不判断整体快慢。九宫格PSD初次落入重复路径后由Art更正；整图去旧五官候选未采用，Art继续原像素局部补洞和人工遮罩，显示有真实方法返工，但净耗时与因果细节待Owner记录，不能归责。面部样张仍在制作中，未形成完成周期。
+- 建议与复核：Art在下一次样张交Tech前用Task路径清单核PSD/PNG/对照的实际落点，代价一次路径核查，复核点为`SAMPLE_ART_REVIEW.md`；主Art记录局部补洞与被弃候选的具体画面差距，预期减少扩批时重复试错，代价简短制作笔记，复核点为样张Review与批量复签。Producer在下一关键节点复核两份样张结论及支持子线内部Review，未双通过不登记扩批。
+- Continuity check：方案Task DONE；主Art、Tech与脸底支持均有本轮真实文件产出并继续IN_PROGRESS，无空转占位。当前仍未到Gate2，不能结束已授权资源生产流程；本记录不构成新门禁。
+
+### WR-20261010-U04-DIALOGUE-GATE2-V01-001｜18组分层资源与九宫格送用户审核
+
+- 结果与证据：ACAJ、ADXJ支持批次各50/50 Required、四项同序PASS并处内部REVIEW；主Art 37/37、五PASS，Tech 7/7、四PASS，Master锁四项SHA接受准确v0.1统一Gate2送审。双主线Task/Approval USER_REVIEW、decided_at null，用户尚未批准。证据见两批`DELIVERABLE.json`、主Art`USER_REVIEW_PACKET.md`和`MASTER_PACKET_ACCEPTANCE.json`、Tech`RESOURCE_AUDIT.json`及两现行Approval。静态129 PNG、18 PSD、90组合与九宫格已登记，Creator/目标机运行NOT_TESTED。
+- 时间：ADXJ制作记录写2026-10-10 17:55:30 +08:00开始来源核对、18:14:05最终静态检查；ACAJ首份Required准确起始时刻未知，`PRODUCTION_NOTES.md`文件mtime 18:12:59。Producer于18:19:31核两批各50/50；18:31:18核主Art37/37；18:35:49核Tech7/7；Master接受文件记录18:38:15.684478；18:38:35核并送审。已知节点跨度包含多角色并行制作、整合、技术核查和等待，不折算单个角色净工时。用户等待从USER_REVIEW开始，尚无结束时刻；工具故障净耗时未知。
+- 速度与原因：无约定目标或同类可比基线，不判断整体快慢。可核实的制作返修见主Art及Master检查记录：早期脸部残影、错位、截嘴候选已修，Tech另要求AT0/AT3 PSD默认微笑状态一致并实读复核。静态整合中的哈希、显隐与同尺度对照检查帮助避免错版送审；各返修净耗时未知，不能归责。
+- 建议与复核：主Art在后续资产批次仍先以逐组源SHA、PSD默认显隐及全画布重组核验，再冻结用户审核包，代价为一次全量静态校验，复核点为下次Gate2送审；Tech持续将Art冻结DELIVERABLE的SHA写入审计并核复制记录，代价为一次哈希扫描，复核点为下一次资源整合。Producer在用户决定后只按准确v0.1审批对象更新Gate2，不把静态审计扩写成Creator运行PASS。
+- Continuity check：本轮双主线已到真实USER_REVIEW门禁；未获用户批准前不解锁Client。内部批次为统一Gate2的支持交付，现REVIEW待主Art整合接受，不另增用户审批；无本轮空转READY/IN_PROGRESS。

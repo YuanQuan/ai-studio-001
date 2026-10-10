@@ -1,0 +1,35 @@
+{
+  "id": "U04-DIALOGUE-FACE-SUPPORT-001",
+  "title": "孟桃0魂脸底与前发局部修整候选支持",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-DIALOGUE-LAYERED-ASSET-001",
+  "objective": "在已批准制作范围和已双签首批同方法内，并行提供孟桃0魂旧眉眼嘴去除的干净脸底与前发遮挡候选，仅用于当前样张内部比较；区域外原像素保持，不改变人物外形，不扩批。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ART_PRODUCTION_PRESIGN.md",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/characters/mgr_mt_s0.png",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s0_feature_inpaint_mask.png"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/candidate_clean_face.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/candidate_front_overlay.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/comparison.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/PROCESS_NOTES.md",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "只处理孟桃0魂局部旧眉眼嘴，原源不改，候选无旧五官残影、皮肤补洞接缝和前发越界。",
+    "候选明确完整1024×1536原坐标、修改遮罩和可编辑范围，提供对照，不冒充样张/全量/用户视觉批准。"
+  ],
+  "dependencies": [
+    "U04-DIALOGUE-LAYERED-PLAN-001"
+  ],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "该任务是原已批首批范围内的制作支持，保持原预签工具、画布与像素限制；若需改变工具/范围必须先请求Master，不自行生新图片。",
+    "主Art整合候选，Master内部视觉Review后再用于代表样张；不新增用户门禁。"
+  ]
+}

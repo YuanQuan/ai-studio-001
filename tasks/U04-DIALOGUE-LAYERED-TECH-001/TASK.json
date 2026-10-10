@@ -1,0 +1,42 @@
+{
+  "id": "U04-DIALOGUE-LAYERED-TECH-001",
+  "title": "U04分层对话资源同批预签与样张技术核验",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": null,
+  "objective": "为已批准分层资源方案进行首图前同批预签，核代表样张与全量复签和真实资源预算/映射；不设置自产切片Gate2额外专业效果复审，不代替用户批准，不接入客户端。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-PLAN-001/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json",
+    "rules/visual_production_contract.md",
+    "用户本轮原话：批准。唯一送审对象为分层制作方案v0.1。",
+    "tasks/U04-DIALOGUE-LAYERED-ASSET-001/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/RESOURCE_AUDIT.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/TECH_NOTES.md",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-DIALOGUE-LAYERED-TECH-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "预签引用Gate1 USER_APPROVED与同版本Art文字预案SHA，范围先限孟桃0魂及九宫格样张。",
+    "实图样张的尺寸/alpha/支点/分层对齐/九宫格参数已核，失败不扩批；扩批另同版签认。",
+    "全量真实资源18基底90表情及PSD/映射/九宫格结构核验，贴图展开和页数区分估算/实测，导入与运行NOT_TESTED。",
+    "Fixed Required/Review/交付索引齐备，支持Art自产切片直接Gate2送用户，不伪称专业效果批准或Client运行通过。"
+  ],
+  "dependencies": [
+    "U04-DIALOGUE-LAYERED-PLAN-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户本轮明确批准U04-DIALOGUE-LAYERED-PLAN-001 v0.1 Gate1。消息准确时刻未知，登记起始时间 2026-10-10T16:54:20.144434+08:00",
+    "用户批准方案不等于Gate2具体切片批准；本轮持续到Gate2 USER_REVIEW，不正式接入Client，不安排QA。"
+  ]
+}

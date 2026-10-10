@@ -1,0 +1,80 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-ASSET-001",
+  "owner": "art",
+  "summary": "六店长18阶段分层PSD与18基底、90局部表情、18前遮挡、透明九宫格及真实U00背景静态重组已完成，提交v0.1具体切片Gate2用户审核；Client尚未导入。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ART_PRODUCTION_PRESIGN.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/SAMPLE_ART_REVIEW.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/BATCH_ART_PRESIGN.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/PSD_VALIDATION.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/COMBINATION_CHECK.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/NINE_SLICE_CHECK.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/PRODUCTION_NOTES.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s2_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s3_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_dialogue_panel_9s.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_dialogue_panel_9s.png",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/u00_dialogue_overview.png",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/nine_slice_sizes.png",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/all_90_combinations.png",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/u00_dialogue_overview_sources.json",
+    "project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确交付六店长0/2/3魂18组半身像，身份/阶段继承批准图版，旧源保留，18份多层PSD可读取且编辑限制如实记录。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.json、LAYER_EXPORT_MAP.json、PSD_VALIDATION.json；18个批准原图SHA一致，18 PSD真实解析18层且默认SMILE可见；旧源未改。"
+    },
+    {
+      "criterion": "每阶段有干净脸底与五种透明局部表情，眉眼嘴源层可编辑；90组合键完整，位置/支点/遮挡映射明确，高兴和微笑可辨，不以整图轮播冒充。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.json列90脸片和270眉/眼/嘴源层；LAYER_EXPORT_MAP.json列每阶段脸rect/pivot、front偏移；COMBINATION_CHECK.json独立枚举90组逐通道0差；review/all_90_combinations.png同尺度审图。"
+    },
+    {
+      "criterion": "独立九宫格PSD/透明PNG具备切分线/Insets，384×192、768×256、1024×384重组无角部失真/边框断裂；名字、对白与固定装饰不烘入拉伸中心。",
+      "result": "PASS",
+      "evidence": "source/u04_dialogue_panel_9s.psd、exports/u04_dialogue_panel_9s.png；NINE_SLICE_CHECK.json四角逐像素静态对照；review/nine_slice_sizes.png三尺寸重组及独立云纹。"
+    },
+    {
+      "criterion": "用户批准Gate1后首图Art/Tech同批预签、代表样张实图检查通过后全量复签，生产方法与权限符合既定范围。",
+      "result": "PASS",
+      "evidence": "Gate1批准见tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json；首图ART_PRODUCTION_PRESIGN.md及Tech预签、SAMPLE_ART_REVIEW.md及Tech样张Review、BATCH_ART_PRESIGN.md及Tech全量复签实存。"
+    },
+    {
+      "criterion": "输出清单/图层映射/哈希/PSD检查/90组合及U00真实素材同尺度重组实存；自产切片直接Gate2用户审核，不以静态图宣称Client导入或运行验证。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.json、LAYER_EXPORT_MAP.json、PSD_VALIDATION.json、COMBINATION_CHECK.json、review/u00_dialogue_overview.png与review/u00_dialogue_overview_sources.json实存；静态图明确非Creator运行，Gate2用户批准尚待。"
+    }
+  ],
+  "assumptions": [
+    "1280×720为横屏静态审图物理画幅；现工程720×1280 FIXED_WIDTH设计坐标和实际横屏安全区待Client后续实测。",
+    "展示用腰线裁切只作用于静态总览，正式base保留原像素范围。"
+  ],
+  "risks": [
+    "Gate2用户对具体切片与效果尚未批准，不能正式接入Client。",
+    "Creator Sprite.Type.SLICED、长文本/字体许可、图集与运行内存、真实UUID和目标平台效果未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

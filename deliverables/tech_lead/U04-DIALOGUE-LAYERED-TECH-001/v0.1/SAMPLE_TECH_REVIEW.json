@@ -1,0 +1,24 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-TECH-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "首批孟桃0魂样张与同批预签相符。LAYER_EXPORT_MAP.json 的批准源、人物PSD、673×1024基底、256×256五张局部脸片、128×192前发片、15个眉眼嘴源层和五张1280×720 U00静态审图共29项实存；独立重算SHA-256、PNG尺寸和模式均与清单一致。脸片共用源画布rect=(360,100,616,356)、pivot=(488,228)，基底及前发offset均已登记。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立解析人物PSD为1024×1536的18个栅格层：默认仅BASE、SMILE眉眼嘴及FRONT HAIR五层可见，其他四态12层及批准原图参考层均以PSD隐藏标志保留；没有因隐藏而丢层。PSD_VALIDATION.json记录五态导出与全画布重组逐通道差异0。五表情同尺度板及U00静态样张已实存，Art的SAMPLE_ART_REVIEW.md仅判首样张通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "九宫格面板实图为512×256 RGBA，Insets四边48px、切线x=48/464与y=48/208。独立逐像素比较384×192、768×256、1024×384三张重组图，每张四个48×48角区均与源图完全相同；角云纹另有独立资源，姓名及对白未烘入面板。NINE_SLICE_CHECK.json所列静态结构成立。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本结论只覆盖实际静态样张的尺寸、alpha/分层结构、坐标映射、PSD可读性及九宫格切分。Creator Sprite.Type.SLICED导入、横屏实际UI坐标、长文本溢出、贴图驻留、DrawCall、Web和目标机运行均NOT_TESTED；1280×720为静态物理画幅候选，720×1280是现工程设计分辨率。"
+    }
+  ],
+  "next_action": "可按同一已批准方案由Art/Tech对其余17组全量预案另作同批复签，逐组使用批准源并重新确定脸部局部坐标及前发遮挡；复签后方可扩批。此Review不是自产切片Gate2效果专业复审或用户批准，也不授权Client接入。"
+}

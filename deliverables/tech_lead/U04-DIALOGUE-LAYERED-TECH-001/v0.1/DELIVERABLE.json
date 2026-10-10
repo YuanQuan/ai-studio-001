@@ -1,0 +1,44 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-TECH-001",
+  "owner": "tech_lead",
+  "summary": "完成Gate1后同批首图预签、孟桃0魂与九宫格首样张技术核验、其余17组全量预签及18阶段/90表情正式文件的静态资源审计；具体自产切片效果交用户Gate2审核。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/RESOURCE_AUDIT.json",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/TECH_NOTES.md",
+    "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "预签引用Gate1 USER_APPROVED与同版本Art文字预案SHA，范围先限孟桃0魂及九宫格样张。",
+      "result": "PASS",
+      "evidence": "TECH_PRODUCTION_PRESIGN.json引用Gate1 USER_APPROVED及Art首批预案SHA c74a93c5a5e7a3f2030a99b5d44deef7c6a557bf42910907f6e4790649fa4499，仅放行MT_S0五表情和九宫格首样张。"
+    },
+    {
+      "criterion": "实图样张的尺寸/alpha/支点/分层对齐/九宫格参数已核，失败不扩批；扩批另同版签认。",
+      "result": "PASS",
+      "evidence": "SAMPLE_TECH_REVIEW.json独立核29项首样张路径/哈希/尺寸、人物PSD隐藏层和九宫格三尺寸四角；BATCH_PRESIGN.json另锁Art全量预案SHA 2efcc936c53a2edeef84cb1f9c80b6645ec569b98821b88e5210a1312bc9e3c2后放行其余17组。"
+    },
+    {
+      "criterion": "全量真实资源18基底90表情及PSD/映射/九宫格结构核验，贴图展开和页数区分估算/实测，导入与运行NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "RESOURCE_AUDIT.json核129资源ID、18真实PSD、90唯一组合、270非空五官源层、561有SHA引用及344支持复制记录；实际PNG画布推算全套RGBA8约62.852MiB。图集页数、Creator导入、驻留/DrawCall及运行明确NOT_TESTED。"
+    },
+    {
+      "criterion": "Fixed Required/Review/交付索引齐备，支持Art自产切片直接Gate2送用户，不伪称专业效果批准或Client运行通过。",
+      "result": "PASS",
+      "evidence": "本目录六份Tech Required均实存并在artifacts索引；TECH_NOTES.md注明自产切片直接Gate2用户审核、无额外专业效果复审，Client导入/运行未测。审批记录由Producer在用户Gate2审阅流程维护，本Tech交付不作USER_APPROVED声明。"
+    }
+  ],
+  "assumptions": [
+    "以主Art已冻结v0.1清单及DELIVERABLE.json为审计对象，支持批次原目录保留追溯。",
+    "RGBA8展开量按PNG画布计算，不等于目标机同时驻留内存。"
+  ],
+  "risks": [
+    "Creator Sprite.Type.SLICED、图集页数、横屏实际视口、长文本、DrawCall和目标机性能待Gate2后正式接入时核。",
+    "具体资源效果尚待用户Gate2明确批准，客户端不得提前正式导入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

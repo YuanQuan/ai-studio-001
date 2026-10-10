@@ -1,0 +1,26 @@
+{
+  "task_id": "U04-DIALOGUE-LAYERED-TECH-001",
+  "decision": "APPROVED_FOR_FULL_BATCH_PRODUCTION",
+  "gate1_approval": "tasks/U04-DIALOGUE-LAYERED-PLAN-001/ARTIFACT_APPROVAL.json",
+  "gate1_status": "USER_APPROVED",
+  "sample_art_review": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/SAMPLE_ART_REVIEW.md",
+  "sample_tech_review": "deliverables/tech_lead/U04-DIALOGUE-LAYERED-TECH-001/v0.1/SAMPLE_TECH_REVIEW.json",
+  "art_batch_presign": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/BATCH_ART_PRESIGN.md",
+  "art_batch_presign_sha256": "2efcc936c53a2edeef84cb1f9c80b6645ec569b98821b88e5210a1312bc9e3c2",
+  "approved_source_manifest": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json",
+  "scope": {
+    "main_art": "孟桃2/3、阿棠0/2/3；加已通过的孟桃0，主任务最终共6组",
+    "support_b": "U04-DIALOGUE-ACAJ-BATCH-001：阿炭0/2/3、阿角0/2/3，共6组，独立目录制作",
+    "support_c": "U04-DIALOGUE-ADXJ-BATCH-001：阿灯0/2/3、小锦0/2/3，共6组，独立目录制作",
+    "total": "六店长×0/2/3魂共18组，每组五局部表情，最终90组合；九宫格面板只复用首样张同一套"
+  },
+  "conditions": [
+    "逐张重算批准源SHA，保持1024×1536源坐标、身份/阶段锚点及源文件字节；各阶段独立核alpha软晕、五官ROI、脸底补洞、前发与pivot，不能套孟桃S0的坐标或跨阶段五官。",
+    "每阶段交多层PSD及真实隐藏四态和批准原图参考层、五组眉眼嘴可编辑源层、基底、五张局部脸片和必要前发；导出rect/offset/pivot与PSD目标可见组合逐态映射，不能用五张全人图代替。",
+    "两支持批次在各自目录完成逐组PSD、PNG、哈希、映射与同尺度自检；主Art按清单SHA逐字节整合，冲突或哈希不符停止，原支持目录保留追溯。",
+    "单组输出候选不超过768×1024基底及256×256脸片；若实图超过或技术处理会改变已批准外观，停止该组并报Master/Tech取舍，不以预算理由静默减损。",
+    "九宫格保持唯一512×256四48 Insets版本，文字、姓名、三轴控制和固定装饰独立；U00静态场景像素来自现行五层与六店，不借v0.2重绘背景。"
+  ],
+  "budget": "18基底约54MiB加90脸片约22.5MiB仅候选最大尺寸下RGBA8全展开理论量；前发、面板、图集空隙/mipmap和实际加载策略另计。目标同屏一组基底+一张脸片+前发+共享面板，实际驻留、DrawCall与目标机性能NOT_TESTED。",
+  "not_authorized": "本复签不表示其余17组实图合格、Gate2用户批准、Creator导入或Client运行通过；全量自产切片完成后按既定规则直接送Gate2用户审核。"
+}

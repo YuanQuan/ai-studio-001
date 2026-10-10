@@ -1,0 +1,35 @@
+{
+  "task_id": "U04-DIALOGUE-FACE-SUPPORT-001",
+  "owner": "art",
+  "summary": "提交孟桃0魂原尺寸局部干净脸底、透明前发、修改蒙版和五表情内部叠图候选，供主Art整合与Master视觉复核。",
+  "artifacts": [
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/candidate_clean_face.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/candidate_front_overlay.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/modification_mask.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/comparison.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/five_expression_candidate.png",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/pixel_diff_summary.json",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/build_face_candidate.py",
+    "deliverables/art/U04-DIALOGUE-FACE-SUPPORT-001/v0.1/PROCESS_NOTES.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只处理孟桃0魂局部旧眉眼嘴，原源不改，候选无旧五官残影、皮肤补洞接缝和前发越界。",
+      "result": "NOT_TESTED",
+      "evidence": "comparison.png 与 five_expression_candidate.png 已供视觉复核；主Art/Master 尚未给出独立结论。原源文件未写入。"
+    },
+    {
+      "criterion": "候选明确完整1024×1536原坐标、修改遮罩和可编辑范围，提供对照，不冒充样张/全量/用户视觉批准。",
+      "result": "PASS",
+      "evidence": "candidate_clean_face.png、candidate_front_overlay.png 与 modification_mask.png 均为1024×1536；pixel_diff_summary.json 证明蒙版外 RGB 改动0、alpha改动0；PROCESS_NOTES.md 说明可编辑范围与限制。"
+    }
+  ],
+  "assumptions": [
+    "候选仅供主Art在当前已批首批范围内整合；五表情层沿用主Art当前WIP版本。"
+  ],
+  "risks": [
+    "右眉与前发交界、右眼外角及右脸轮廓仍需在主Art最终母版与实际显示尺度下复核。",
+    "肤色渐变是局部重建像素；未来角色和魂阶须重新校准蒙版与采样点。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
