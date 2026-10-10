@@ -697,3 +697,11 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 2026-10-10 22:56 +08:00 | `U04-DIALOGUE-CLIENT-001` | IN_PROGRESS→REVIEW | v0.3 `RUNTIME_CHECK.json`、`DELIVERABLE.json`及11张截图/观察JSON | 7/7 Required实存，交付索引全部存在，五项Task验收逐字同序PASS，构建与HTTP/IAB均PASS，截图SHA 11/11一致；Tech最终同版运行审与Master接受仍待，Approval DRAFT，不送USER_REVIEW。
 
 2026-10-10 22:57 +08:00 | `U04-SIMPLE-CORNER-TECH-001` | IN_PROGRESS→REVIEW / 最终当前运行审 | `deliverables/tech_lead/U04-SIMPLE-CORNER-TECH-001/v0.1/REVIEW.json`、`REVIEW.md`、`DELIVERABLE.json` | 5/5 Required实存，三项验收逐字同序PASS、Tech REVIEW APPROVED，核获批切片SHA/meta UUID、当前Creator构建身份及11张IAB画面/伸缩；目标设备/GPU/压力NOT_TESTED。待Master同版接受与准确运行包USER_REVIEW，不提前DONE。
+
+2026-10-10 23:27:13 +08:00 | `U04-CLOUD-CORNER-FIT-001` | TASK_CREATED / READY，未开工 | `tasks/U04-CLOUD-CORNER-FIT-001/TASK.json`、`ARTIFACT_APPROVAL.json` | Art v0.1 Required三份尚无实存；仅静态祥云角花贴合效果候选，待首份实际产物后才可IN_PROGRESS。原v0.3运行审核历史和并行SCENE线不变。
+
+2026-10-10 23:28:55 +08:00 | `U04-CLOUD-CORNER-FIT-001` | READY→IN_PROGRESS / TASK_STARTED | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/ART_BRIEF.md` | 首份Required于23:28:33 +08:00实存非空；实际效果图与DELIVERABLE待，Approval DRAFT。
+
+2026-10-10 23:30:09 +08:00 | `U04-CLOUD-CORNER-FIT-001` | IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`、现行Task/Approval | 4/4 Required实存、三项Owner验收自报PASS；图1672×941且非角花区域有生成重绘偏差，仅静态方向候选。待Master实图Review，Approval DRAFT。
+
+2026-10-10 23:31:33 +08:00 | `U04-CLOUD-CORNER-FIT-001` | REVIEW→USER_REVIEW / 静态候选送审 | Art v0.1 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.1 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、三项同序PASS、Master限定APPROVED、3/3 SHA一致；待用户决定，非角花重绘偏差已披露，不作正式资源或运行验收。

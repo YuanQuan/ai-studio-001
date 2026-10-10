@@ -1,0 +1,30 @@
+{
+  "id": "U04-CLOUD-CORNER-FIT-001",
+  "title": "U04祥云角花贴合九宫格候选",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "参考用户提供祥云角花，在现有U04截图展示角花金线与九宫格边框连续贴合的候选。",
+  "inputs": [
+    "/var/folders/cf/03jww3lx7b3ggg3l_9sh64x00000gn/T/codex-clipboard-de8fff54-9a62-41c6-ada7-e52c874a6f7d.png",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.3/evidence/runtime_corner_default.jpg"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/cloud_corner_fit_preview.png",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-CLOUD-CORNER-FIT-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "实际效果图基于当前U04背景、人物和对话框，左下与右上祥云角饰与边框自然衔接。",
+    "沿用金色细线、深蓝填色与简洁祥云卷曲形态，记录参考来源与图像工具提示词。",
+    "明确为静态候选，无正式切片或客户端接入，不冒充实际运行。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户明确要求参考所附祥云图案，更贴合当前九宫格；本轮先产具体候选，不新增文字方案等待。",
+    "仅Art交付目录授权；无QA。"
+  ]
+}

@@ -662,3 +662,9 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 2026-10-10 22:56 +08:00（U04 Client v0.3进入专业审核）：7/7 Required实存，`DELIVERABLE.json`五项验收与Task逐字同序全PASS，`RUNTIME_CHECK.json`构建及HTTP/IAB已回填PASS，11/11截图SHA与当前实文件一致；Client Task IN_PROGRESS→REVIEW、Approval DRAFT。Tech的`REVIEW.json`目前仍写静态接入结论并注明运行待复核，故须同版最终Tech运行审及Master接受后才可送USER_REVIEW；不以当前Owner PASS冒充专业通过。
 
 2026-10-10 22:57 +08:00（U04 Tech当前运行终审提交）：`U04-SIMPLE-CORNER-TECH-001` v0.1 5/5 Required实存、三项验收逐字同序PASS，`REVIEW.json` APPROVED已覆盖两角Art/Client SHA、旧meta UUID、Creator当前构建身份及IAB三档伸缩、90组/三轴/快切/重入；Task IN_PROGRESS→REVIEW、Approval DRAFT。Client v0.3亦在REVIEW，两线仍待Master同版接受并送用户对实际运行版本审核；目标设备/GPU/压力未测，不记DONE。
+
+2026-10-10 23:27:13 +08:00（U04祥云角花贴合候选开线）：Master新建 `U04-CLOUD-CORNER-FIT-001`，现行Task READY、v0.1 Approval DRAFT。用户希望所附祥云与现有九宫格自然衔接；本轮仅Art基于当前U04截图出静态效果图，参考来源与提示词须随图记录，不做工程接入或QA。此时v0.1三份Art Required尚无实存，故不记TASK_STARTED/IN_PROGRESS。原U04 v0.3运行Client/Tech双USER_REVIEW历史及并行SCENE风格候选USER_REVIEW保持原状，不将旧运行批准或旧角饰替代新图审批。Continuity check：本线READY且无阻塞，Master/Art须同轮继续实产，不能停在创建任务节点；达到实图与Master Review后才可送USER_REVIEW。最近复盘待本轮结果形成后记录。
+
+2026-10-10 23:28:55 +08:00（U04祥云角花候选实际开工）：Art v0.1首份Required `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/ART_BRIEF.md` 已于23:28:33 +08:00实存非空，记录当前截图、用户参考来源、静态范围和图像工具提示词；Task READY→IN_PROGRESS / TASK_STARTED，Approval仍DRAFT。预览实图和DELIVERABLE尚待，不凭说明稿宣称视觉贴合或送审。Continuity check：Art已真实开工，须持续至实图、交付与Master复核门禁。
+
+2026-10-10 23:31:33 +08:00（U04祥云贴合静态候选送用户审看）：Art v0.1四项Required 4/4实存，`DELIVERABLE.json`三项验收与Task逐字同序PASS；Master已实看1672×941原图，`MASTER_REVIEW.json` APPROVED仅限静态方向，`PACKET_ACCEPTANCE.json`三项Art文件SHA 3/3与当前实文件一致。Task REVIEW→USER_REVIEW、Approval USER_REVIEW / decided_at null，待用户对实际祥云角花方向决定，不记DONE。生成图的背景、人物、控件及文字有非角花重绘偏差，不能作为正式切片、像素保持或实际运行验收；无工程接入/QA。原U04 v0.3运行审核双USER_REVIEW独立保留，并行SCENE状态不变。Continuity check：本线已到真实用户审图门禁，无空转READY/IN_PROGRESS；最近复盘 `WR-20261010-U04-CLOUD-CORNER-FIT-001`。

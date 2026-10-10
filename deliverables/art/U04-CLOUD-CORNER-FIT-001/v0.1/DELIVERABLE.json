@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-CLOUD-CORNER-FIT-001",
+  "owner": "art",
+  "summary": "基于当前 U04 运行截图和用户祥云参考，提交左下、右上角花与边框连续相接的静态生成候选；整图生成导致非角花区域存在偏差，仅供方向审批。",
+  "artifacts": [
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/cloud_corner_fit_preview.png",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/ART_BRIEF.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际效果图基于当前U04背景、人物和对话框，左下与右上祥云角饰与边框自然衔接。",
+      "result": "PASS",
+      "evidence": "cloud_corner_fit_preview.png 基于当前运行截图生成，左下卷云沿底边延伸，右上小云接上边和右边的细金边；此项通过仅代表静态方向。生成图为 1672×941，背景、人物、文字和控件相对原 1280×720 运行图有重绘偏差，不能用于像素保持或运行验收。"
+    },
+    {
+      "criterion": "沿用金色细线、深蓝填色与简洁祥云卷曲形态，记录参考来源与图像工具提示词。",
+      "result": "PASS",
+      "evidence": "cloud_corner_fit_preview.png 显示稀疏卷云、单条细金线及深蓝面板填色；ART_BRIEF.md 记录两张图的来源与角色、授权状态和内置 image_gen 的完整提示词。"
+    },
+    {
+      "criterion": "明确为静态候选，无正式切片或客户端接入，不冒充实际运行。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 将产物标为静态候选，列明整图重绘、尺寸差异、无切片/PSD/客户端接入及未验证真实运行的限制。"
+    }
+  ],
+  "assumptions": [
+    "用户提供的祥云图片仅用于本轮视觉方向参考；授权范围未核明，不作为正式生产资源。"
+  ],
+  "risks": [
+    "生成式编辑重绘了非角花区域；若后续落地，需回到原 1280×720 运行图及正式九宫格资源制作，并复核布局与真实运行效果。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
