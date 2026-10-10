@@ -1,0 +1,20 @@
+{
+  "task_id": "U04-MANAGER-PORTRAITS-001",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已逐张看18幅非人鬼怪PNG、六张0/2/3魂同基尺板和六人0魂高矮总览；六人主形、身份物、阶段锚点完整，没有人体结构回潮，原图与板均无明显截断。逐人证据见ART_REVIEW.md。"
+    },
+    {
+      "severity": "INFO",
+      "message": "阿炭0材质、阿角2发束、阿棠2/3整体比例和小锦0镜片退修后均已选新候选；旧候选留source_images历史。六板共享3900×1850与y1600基线，每人物三阶段单一缩放系数；六PSD含背景与三个完整阶段图层。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "原PNG局部有低alpha软晕，PSD只编辑整阶段图层；当前是具体图版待审候选，不宣称干净Sprite、身体拆件、动画或Client运行。"
+    }
+  ],
+  "next_action": "结合Tech同版终核与Master独立看图结果，由Producer将准确v0.2的18PNG、6板、6PSD提交USER_REVIEW；用户具体版本批准前不正式接入Client。"
+}

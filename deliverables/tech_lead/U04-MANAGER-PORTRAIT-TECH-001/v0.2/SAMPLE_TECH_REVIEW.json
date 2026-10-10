@@ -1,0 +1,30 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "sample": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/characters/mgr_mt_s0.png",
+  "sample_sha256": "4bc145a8fabeb71e0959f94a8ff7e751dbee39896251b560f294c550b985486d",
+  "art_review": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/SAMPLE_ART_REVIEW.md: PASS",
+  "master_review": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/SAMPLE_MASTER_REVIEW.json: APPROVED",
+  "decision": "APPROVED_FOR_BATCH_CANDIDATES",
+  "measurements": {
+    "pixel_size": [1024, 1536],
+    "color_mode": "RGBA",
+    "alpha_range": [0, 254],
+    "alpha_positive_bbox": [55, 47, 980, 1448],
+    "alpha_ge_32_bbox": [136, 49, 914, 1429],
+    "file_bytes": 1391471,
+    "sample_psd": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/psd/mgr_mt_s0_sample.psd",
+    "sample_psd_sha256": "39aeb264866e73194ff2d445c2e05c29616e59a32600cee0ee0f75d3cec435bc",
+    "psd_canvas": [1024, 1536],
+    "psd_actual_layer_count": 2,
+    "psd_composite_preview_absolute_pixel_error": 0
+  },
+  "findings": [
+    "尾端、发焰、杯和短肢均在画布内；与旧人形批不同，新样张是一体非人鬼魂主形。",
+    "PSD可由ImageMagick解码为复合图+背景及完整鬼魂两层，复合图与同版预览逐像素一致；未在Photoshop实开。",
+    "低alpha红黑软晕仍存在，RGBA不等于干净透明Sprite；本结论仅支持审阅候选扩批。",
+    "单张1024×1536 RGBA8完全展开约6MiB，为源像素估算，不代表文件、图集或运行驻留。"
+  ],
+  "not_tested": ["其余17张及六板", "正式Sprite透明边", "Cocos导入", "目标机投影像素与性能"],
+  "next_action": "按新批BATCH_PRESIGN.json扩17图，完成18图/6板/6PSD后实核同源层和清单"
+}

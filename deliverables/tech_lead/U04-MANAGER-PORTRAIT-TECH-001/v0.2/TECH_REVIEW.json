@@ -1,0 +1,32 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同批新非人v0.2实包为18张独立0/2/3魂PNG、6张三栏板、6份PSD；六人三阶段真实路径及SHA逐项核对通过。源图实际尺寸1024×1536、1210×1300、1207×1303，均按各自工具输出登记，未要求原源硬缩成统一尺寸。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六板均3900×1850、每格1300宽、共同基线y=1600；每人三阶段使用单一缩放系数，alpha≥32的图层落点为y=1599–1601且均在本格内。0魂可见高度约阿棠620＜阿炭790＜小锦1051＜孟桃1136＜阿角1280＜阿灯1510像素，符合获批高矮顺序。"
+    },
+    {
+      "severity": "INFO",
+      "message": "6份PSD均可解析为复合图加4个实际图层（背景/基线与0/2/3魂完整层）；每份复合图同对应板PNG逐像素AE=0。此核验不等于Photoshop实开，也不承诺发束、鳍、短肢等身体部件可独立编辑。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art资产清单及共享交接登记各31行稳定ID/实际路径/版本/SHA，逐文件重算均一致；Client路径明确计划未定、UUID未生成、状态NOT_IMPORTED。附加六人0魂高矮总览仅用于审阅，不作运行纹理。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "若干源PNG含低alpha软晕；RGBA不能视作已可直接用作干净透明Sprite。源静态像素、PSD及板核验不能推断图集页数、DrawCall、运行驻留、帧率、目标机表现或实际对话半身裁切可用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "逐文件尺寸、SHA、alpha边界、板位置、PSD图层及AE实测和NOT_TESTED列表详见同版 TECH_MEASUREMENTS.json；本Review只表静态技术结论。"
+    }
+  ],
+  "next_action": "Art与本Tech同版实包送用户审核准确v0.2具体图版；用户批准前Client不得作为正式资源接入。后续切片/导入/运行另按对应门禁办理。"
+}

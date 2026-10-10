@@ -1,0 +1,45 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "owner": "tech_lead",
+  "summary": "非人鬼怪立绘v0.2完成同批预签、代表样张实测、余17图扩批签与18PNG/6板/6PSD静态技术终核；支持具体图版USER_REVIEW。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.md",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_MEASUREMENTS.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "新批v0.2首图前TECH_PRODUCTION_PRESIGN与Art v0.2同批预案对应，明确非人轮廓、画幅、同人物阶段尺度、PSD层与命名/显示检查口径。",
+      "result": "PASS",
+      "evidence": "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.md；绑定Art v0.2预案SHA与Gate1 v0.3 USER_APPROVED，尺寸/alpha/运行明确未测。"
+    },
+    {
+      "criterion": "代表非人鬼怪样张有可追溯实际版本及Tech检查结论，通过后才签新批余图扩批预案；旧v0.1样张/扩批签认不可沿用。",
+      "result": "PASS",
+      "evidence": "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/SAMPLE_TECH_REVIEW.json；孟桃0魂PNG/两层样张PSD实测及AE=0，Art/Master样张同版通过；deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/BATCH_PRESIGN.json后才扩17图。"
+    },
+    {
+      "criterion": "最终Tech Review核v0.2 18 PNG、6板、6 PSD真实路径版本、同基尺重组及资产登记；未导入路径或UUID不得写成实装。",
+      "result": "PASS",
+      "evidence": "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_REVIEW.json；18 PNG、6板、6PSD及31条双份资产登记均逐文件实核，同基尺与PSD合成通过；Client计划未定/UUID未生成。"
+    },
+    {
+      "criterion": "同版固定交付与Review齐备，技术结论支持Art新批实际资产USER_REVIEW，不代替Art/用户具体图版审批、Client或QA。",
+      "result": "PASS",
+      "evidence": "本目录五份固定交付均实存；deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_REVIEW.json结论APPROVED仅限静态生产技术核验，具体图版仍待用户审核，Client/QA未执行。"
+    }
+  ],
+  "assumptions": [
+    "alpha≥32用作可复核主体边界测量阈值；边缘软晕仍以原图披露。",
+    "各板以统一3900×1850审阅画布/1600基线比较相对高矮，目标游戏显示像素未锁。"
+  ],
+  "risks": [
+    "低alpha软晕使当前独立PNG不能被本Review声明为干净正式Sprite。",
+    "PSD仅阶段整图层；Photoshop原生开档、Creator导入和目标机性能未测试。",
+    "本批具体图版尚待用户明确审批，不能正式交Client接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

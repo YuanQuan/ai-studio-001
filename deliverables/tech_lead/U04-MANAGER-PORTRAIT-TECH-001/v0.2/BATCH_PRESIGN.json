@@ -1,0 +1,23 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "batch": "U04-MANAGER-PORTRAITS-001/v0.2",
+  "decision": "APPROVED_FOR_REMAINING_17_CANDIDATES",
+  "basis": [
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/SAMPLE_TECH_REVIEW.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/SAMPLE_ART_REVIEW.md",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/SAMPLE_MASTER_REVIEW.json"
+  ],
+  "scope": "余17张每幅独立imagegen非人鬼怪全形图；6张共享像素基尺且保留人物高矮的板；6份每阶段完整图层PSD",
+  "conditions": [
+    "每人0魂独立原创起稿、2/3魂只引用本人物已核的新非人0魂本地源；旧v0.1人形源完全禁用。",
+    "完整最低点可为魂尾、流苏、鱼尾或短蹄，不强加人体双脚；三阶段同人物主形和比例，六人不同高度不等高拉伸。",
+    "每张记录实际尺寸和alpha，低alpha软晕披露为非干净Sprite；板增加安全边且不裁职业物。",
+    "PSD仅背景/基线及0/2/3魂完整图层，assemble不重画、不承诺部件拆件。",
+    "并行制作不同人物不改变同批工具/方法；更换工具、来源、画布方法或资源范围须在下一张前复签。"
+  ],
+  "estimated_raw_rgba8": "若余图均与样张同1024×1536，18张完全展开约108MiB；板、PSD、运行占用待真实尺寸与使用场景核实。",
+  "not_tested": ["最终18PNG/6板/6PSD", "正式Sprite导入", "游戏视窗", "目标机性能"],
+  "next_action": "Art完成同批17图及板/PSD，Tech核实际文件、层和合成；具体图版仍由用户审核"
+}

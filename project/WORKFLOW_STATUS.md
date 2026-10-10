@@ -1,5 +1,15 @@
 # 工作流状态
 
+2026-10-10 10:44:21 +08:00（U04 v0.2实际图版与技术支持同批送审）：Art `U04-MANAGER-PORTRAITS-001` 14/14 Required实存，18张独立非人PNG、六张3900×1850三阶段同基尺板、六份PSD及6000×1850六人0魂高矮总览逐路径核实；Tech `U04-MANAGER-PORTRAIT-TECH-001` 6/6 Required实存。两Task各四项验收与各自DELIVERABLE逐字同序全PASS，Art/Master/Tech同版Review均APPROVED；两Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval准确v0.2 USER_REVIEW、decided_at null，Art审批对象为`USER_REVIEW_PACKET.md`，Tech为`TECH_REVIEW.json`。Tech确认六板共基线、同人单一缩放与六PSD复合图对板像素AE=0；低alpha软晕、Photoshop实开/Creator导入/目标机运行仍未通过验证，不能称正式干净Sprite。31项共享资产登记保留Client未导入状态。Gate1 v0.3方案DONE不代替本次实际图版批准，旧v0.1人形仅历史。Continuity check：Art与Tech均到真实USER_REVIEW用户门禁，没有本轮空转READY/IN_PROGRESS；Client/QA未安排。复盘`WR-20261010-U04-GHOST-PORTRAIT-V02-001`。
+
+2026-10-10 10:20:27 +08:00（U04 v0.2非人代表样张与扩批）：孟桃0魂真实`characters/mgr_mt_s0.png`及`psd/mgr_mt_s0_sample.psd`、同版预览/图层清单已落盘；Art `SAMPLE_ART_REVIEW.md` PASS（仅样张视觉），Master `SAMPLE_MASTER_REVIEW.json` APPROVED，Tech `SAMPLE_TECH_REVIEW.json` APPROVED_FOR_BATCH_CANDIDATES，`BATCH_PRESIGN.json`准余17张候选扩批。Tech核样张1024×1536 RGBA、PSD两层且复合图与预览像素误差0；低alpha软晕披露，不能认作干净Sprite，Cocos/目标机NOT_TESTED。两个Art执行单元并行制作前/后三人物，仍属同一`U04-MANAGER-PORTRAITS-001`正式Task，不新增Task或用户样张门禁；Art/Tech任务继续IN_PROGRESS、Approval DRAFT，待全批真实图/板/PSD与专业Review后再送USER_REVIEW。
+
+2026-10-10 10:14:19 +08:00（U04新批Tech开工）：Tech v0.2 `TECH_PRODUCTION_PRESIGN.md`与`.json`实际实存，`U04-MANAGER-PORTRAIT-TECH-001` READY→IN_PROGRESS、Approval DRAFT。Art/Tech两Owner均有本轮预案实产；首图前仍须核同批签认的实际结论，随后样张与批次门禁按序推进。Continuity check：两任务IN_PROGRESS均有本轮Required证据，不以预案落盘作为停止点。
+
+2026-10-10 10:13:15 +08:00（U04新批Art开工）：Art v0.2 `VISUAL_ANCHORS.md`、`ART_BRIEF.md`、`ART_PRODUCTION_PRESIGN.md`均实存非空，`U04-MANAGER-PORTRAITS-001` READY→IN_PROGRESS、Approval DRAFT。Tech v0.2预签文件此时尚未核到，Tech Task继续READY；首图须同批双签，不得以旧v0.1人形签认代替。Continuity check：Art有实产正在推进，Tech READY有已批准输入、Master继续推动Owner预签，不以本节点停止。
+
+2026-10-10 10:12:44 +08:00（U04 v0.3批准与非人新批解锁）：用户对唯一送审非人Q版鬼怪具体方案v0.3明确“批准”，原消息精确时刻未知；11/11 Required、四项验收PASS、Art/Master同版APPROVED，Master接受`U04-MANAGER-CONCEPT-PLAN-001` DONE，`ARTIFACT_APPROVAL_v0.3.json`独立USER_APPROVED快照保留且decided_at null。Master授权原`U04-MANAGER-PORTRAITS-001`与`U04-MANAGER-PORTRAIT-TECH-001`修订为v0.2新批，输入准确获批v0.3；当前两Task READY/Approval DRAFT，v0.2 Owner预案尚未核到实产，不虚记IN_PROGRESS。旧v0.1人形实图/板/PSD及签认仅留历史，不作为新批候选。首图前Art/Tech同批重签，代表样张通过后扩批；不安排Client/QA。Continuity check：两READY任务依赖满足且无真实阻塞，Master正分派Owner本轮继续产出，不能停在READY。
+
 2026-10-10 10:04:58 +08:00（U04 v0.3送审与continuity）：`U04-MANAGER-CONCEPT-PLAN-001` v0.3 11/11 Required实存，`DELIVERABLE.json`四项现行Task验收逐字同序全PASS，Art/Master同版Review均APPROVED；Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval指向准确v0.3新非人Q版方案、USER_REVIEW、decided_at null。六人鬼怪主形与明显高矮差异是具体待批提案，用户方向纠正不自动批准此版本；本版未出新图。旧v0.2 USER_APPROVED快照保留历史，旧人形生产及Tech支持两Task继续BLOCKED，待v0.3用户决定后再由Master修订/恢复。Continuity check：方案任务已到真实USER_REVIEW，旧两Task有准确新方案审批依赖阻塞，无空转READY/IN_PROGRESS；当前唯一可继续门禁为用户对新具体方案决定。复盘`WR-20261010-U04-NONHUMAN-V03-001`。
 
 2026-10-10 09:51:57 +08:00（U04 v0.3实际开工）：`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md`非空实存，Art正在修订六人非人Q版具体方案；方案Task REVISION→IN_PROGRESS、Approval v0.3 DRAFT。其余固定文档及Art/Master同版Review待核，不停在此节点；旧人形生产/Tech两Task继续具体BLOCKED。

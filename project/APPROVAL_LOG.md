@@ -1,5 +1,9 @@
 # 用户审批记录
 
+2026-10-10 10:44:21 +08:00（U04真实图版与技术支持同批送审，非用户决定）：Art `U04-MANAGER-PORTRAITS-001` v0.2审批对象为`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/USER_REVIEW_PACKET.md`，含18张非人全身PNG、六张同基尺三阶段板、六份PSD及六人0魂高矮总览；Tech `U04-MANAGER-PORTRAIT-TECH-001` v0.2审批对象为同版`TECH_REVIEW.json`。Art 14/14、Tech 6/6 Required实存；两份DELIVERABLE各四项验收与Task逐字同序全PASS；Art/Master/Tech Review均APPROVED。两Task/Approval同批USER_REVIEW、`decided_at=null`，尚无用户对实际资源或技术支持的批准；Gate1方案v0.3 USER_APPROVED不代替本次具体版本。低alpha软晕、PSD整阶段层及运行未测向用户披露，Client正式接入与QA均未解锁。
+
+2026-10-10 10:12:44 +08:00（Producer登记；用户原消息精确时刻未知）：用户对唯一送审`U04-MANAGER-CONCEPT-PLAN-001` v0.3非人Q版鬼怪具体方案明确回复“批准”。该版11/11 Required实存、四项Task验收逐字同序PASS、Art/Master同版Review均APPROVED；现行`ARTIFACT_APPROVAL.json`和独立`ARTIFACT_APPROVAL_v0.3.json`均USER_APPROVED、`decided_at=null`，本行是登记时刻，Master最终接受Task DONE。批准仅为v0.3制作方案，不是新批实际PNG/板/PSD用户批准；两生产Task已修订为v0.2 DRAFT，首图前重做Art/Tech同批预签，旧v0.1人形签认不可沿用。
+
 2026-10-10 10:04:58 +08:00（v0.3送用户审核，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001`准确v0.3 `ART_PRODUCTION_PLAN.md`及同版10项专业交付与现行Approval共11/11 Required实存，四项验收逐字同序全PASS，Art/Master Review均APPROVED。Task/Approval为USER_REVIEW、`decided_at=null`，等待用户对六位非人Q版具体外形方案明确决定。旧v0.2 USER_APPROVED仅保留历史，不自动批准v0.3；旧人形18PNG/6板/6PSD未获具体资产用户批准，旧生产/Tech Task BLOCKED。本版没有生成新图。
 
 2026-10-10 09:45:07 +08:00（用户方向修订，非新方案批准）：用户明确要求六店长“不用人的外形”，改Q版鬼怪，身高可很矮/很高。`U04-MANAGER-CONCEPT-PLAN-001` v0.2 USER_APPROVED快照保留历史；当前Approval切换v0.3 `DRAFT`、`decided_at=null`，原用户消息精确时刻未知。旧人形生产及Tech支持Task均BLOCKED，18PNG/6板/6PSD旧实图仍是未获具体资产用户批准的历史，不得继续出图/接入。用户方向纠正不等于尚未见的v0.3逐人造型具体方案批准。

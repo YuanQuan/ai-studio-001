@@ -1,5 +1,12 @@
 # 工作流程复盘记录
 
+### WR-20261010-U04-GHOST-PORTRAIT-V02-001｜六位非人店长实图与技术终核送审
+
+- 结果与证据：用户批准准确Gate1 v0.3后，Art/Tech对新非人v0.2同批预签；孟桃0魂样张Art/Master/Tech通过，再签余17张扩批。当前18张独立PNG、6张同基尺板、6份多图层PSD、六人0魂高矮总览实存；Art/Tech固定Required分别14/14、6/6，各四项验收逐字同序PASS，同版专业Review均APPROVED，双线进入USER_REVIEW。证据为两Task/Approval与各自v0.2 `DELIVERABLE.json`、Art `USER_REVIEW_PACKET.md`、Tech `TECH_REVIEW.json`。本轮无Client接入或QA。
+- 时间与耗时：Producer于2026-10-10 10:11:21 +08:00登记v0.3方案批准，10:14:54 +08:00登记首图同批预签，10:20:27 +08:00登记孟桃0魂样张与扩批通过，2026-10-10 10:44:21 +08:00核完整实包并送审。首个登记至送审可观察墙钟跨度为33分钟，包含图像制作、定向返修、PSD合成、专业Review及等待；无法可靠分离各Owner净制作时间或用户等待。工具故障净时长未知。
+- 影响与建议：实际返修集中在阿炭0材质、阿角2发束、阿棠2/3比例、小锦0镜片，旧候选保留并替换成当前选图；这是画面质量修订，具体次数和净耗时以Art候选日志为准，不猜测。下一批由Art在第一轮六板成图前，先按同基尺把非人主形、同人比例和身份物并排检查；Tech核每阶段完整最低点基线及PSD复合一致性。负责人Art/Tech，复核点为下一批首轮板Review与技术测量；代价是一轮预检，预期减少板后返修。
+- Continuity check：Art与Tech均已到真实USER_REVIEW，唯一剩余门禁是用户对准确v0.2具体图版及并列技术支持作决定；无空转READY/IN_PROGRESS。低alpha软晕与未实机运行仍需在后续正式Sprite/Client/QA阶段单独处理，不能以本轮静态Review替代。
+
 ### WR-20261010-U04-NONHUMAN-V03-001｜非人Q版方向修订送审
 
 - 结果与证据：用户要求六位店长不用人的外形，改为Q版鬼怪并允许明显高矮差异；原消息精确时刻未知。旧Gate1 v0.2批准快照仍保存历史，旧人形生产与Tech支持两Task转BLOCKED，已产图/板/PSD保留但未获具体资产用户批准。Art v0.3 11/11 Required实存、四项验收逐字同序PASS、Art/Master同版APPROVED，方案Task/Approval已送USER_REVIEW。证据为v0.3交付目录、现行Task/Approval与两旧生产Task；本版未出新图。

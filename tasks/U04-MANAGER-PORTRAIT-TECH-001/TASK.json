@@ -4,33 +4,33 @@
   "type": "tech",
   "owner": "tech_lead",
   "parent": "U04-MANAGER-PORTRAITS-001",
-  "objective": "关联支持正式立绘生产：首图前同批技术预签、孟桃0魂代表样张技术评审、扩批预签和最终技术Review；核PSD/PNG、尺度、命名及资产交接，不实施Client接入、动画或QA。",
+  "objective": "关联支持获批Art Gate1 v0.3的非人Q版鬼怪立绘新批v0.2：首图前同批技术预签、代表样张技术Review、扩批预签和最终技术Review，核真实PNG/PSD、同人物尺度、六人高矮关系与资产交接。旧v0.1人形技术结论仅留历史，不实施Client接入或QA。",
   "inputs": [
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md及准确USER_APPROVED快照",
-    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md及准确USER_APPROVED快照",
-    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/ART_PRODUCTION_PRESIGN.md",
-    "tasks/U04-MANAGER-PORTRAITS-001/TASK.json",
-    "rules/visual_production_contract.md、rules/artifact_contract.md"
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md与tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL_v0.3.json（USER_APPROVED）",
+    "deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md与其USER_APPROVED记录",
+    "rules/visual_production_contract.md、rules/artifact_contract.md",
+    "v0.1旧人形生产批次仅作历史，不得作为v0.2新非人鬼怪身份参考",
+    "关联Art新批U04-MANAGER-PORTRAITS-001/v0.2制作预案与代表样张"
   ],
   "deliverables": [
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/TECH_PRODUCTION_PRESIGN.md",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/SAMPLE_TECH_REVIEW.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/BATCH_PRESIGN.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/TECH_REVIEW.json",
-    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_PRODUCTION_PRESIGN.md",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/BATCH_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.2/DELIVERABLE.json",
     "tasks/U04-MANAGER-PORTRAIT-TECH-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "首图前TECH_PRODUCTION_PRESIGN与Art同批预案对应，明确尺寸、格式、PSD可编辑范围、命名及同尺度验证口径。",
-    "孟桃0魂代表样张有可追溯实际版本及Tech检查结论；通过后签认扩批预案。",
-    "最终Tech Review核18 PNG、6板、6 PSD真实路径版本及资产登记；未导入路径或UUID不得写成已实装。",
-    "同版固定交付与Review齐备，技术结论支撑Art用户审核，不代替Gate2、Client或QA。"
+    "新批v0.2首图前TECH_PRODUCTION_PRESIGN与Art v0.2同批预案对应，明确非人轮廓、画幅、同人物阶段尺度、PSD层与命名/显示检查口径。",
+    "代表非人鬼怪样张有可追溯实际版本及Tech检查结论，通过后才签新批余图扩批预案；旧v0.1样张/扩批签认不可沿用。",
+    "最终Tech Review核v0.2 18 PNG、6板、6 PSD真实路径版本、同基尺重组及资产登记；未导入路径或UUID不得写成实装。",
+    "同版固定交付与Review齐备，技术结论支持Art新批实际资产USER_REVIEW，不代替Art/用户具体图版审批、Client或QA。"
   ],
   "dependencies": [
     "U04-MANAGER-CONCEPT-PLAN-001",
     "U04-MANAGER-PERSONALITY-001"
   ],
-  "status": "BLOCKED",
+  "status": "USER_REVIEW",
   "approval": "REVIEW",
   "notes": [
     "Master正式创建关联Tech Task。",
@@ -39,6 +39,9 @@
     "首图/扩批按已签预案与样张/批次文件分阶段支持Art，不以本Tech Task整体DONE为前置；最终Art真实图像与本技术支持同批送USER_REVIEW，可由用户一次具体版本审核并列记录，不新增技术独立用户等待门禁。",
     "实际Owner样张Review采用SAMPLE_TECH_REVIEW.json；Producer据真实路径校正Required格式。candidate_01结论REVISE，保留其版本和测量证据，不作为扩批许可。",
     "SAMPLE_TECH_REVIEW.json准确指孟桃0魂candidate02，结论APPROVED_FOR_BATCH_CANDIDATES；candidate01 REVISE保存独立历史。BATCH_PRESIGN实际为.json，结论APPROVED_FOR_REMAINING_17_CANDIDATES。",
-    "2026-10-10T09:44:46+08:00 用户最新方向纠正：非人外形的Q版鬼怪、可明显高矮不同；旧人形实图/板/PSD退出当前候选，历史文件与审查结论保留但未获具体资产用户批准。待U04-MANAGER-CONCEPT-PLAN-001 v0.3新方案USER_APPROVED后，Master再决定本Task修订/恢复；当前禁止继续旧方向出图/扩批。"
+    "2026-10-10T09:44:46+08:00 用户最新方向纠正：非人外形的Q版鬼怪、可明显高矮不同；旧人形实图/板/PSD退出当前候选，历史文件与审查结论保留但未获具体资产用户批准。待U04-MANAGER-CONCEPT-PLAN-001 v0.3新方案USER_APPROVED后，Master再决定本Task修订/恢复；当前禁止继续旧方向出图/扩批。",
+    "2026-10-10T10:11:54+08:00 Master授权原关联Task修订恢复为v0.2新批，输入准确USER_APPROVED Gate1 v0.3；v0.1旧人形Tech预签/样张/扩批/历史Review不改。当前尚未核到v0.2 Owner预案实产，故READY。",
+    "2026-10-10 10:14:19 +08:00 v0.2 TECH_PRODUCTION_PRESIGN.md/.json实存，READY→IN_PROGRESS有新批Owner预案产出。首图仍须核Art/Tech同批签认结论。",
+    "2026-10-10 10:43:44 +08:00 Producer核v0.2全部Required实存、四项Task验收与DELIVERABLE逐字同序PASS、专业Review同版APPROVED；IN_PROGRESS→REVIEW→USER_REVIEW。此为准确实际资产/技术支持送审，尚无用户批准，旧v0.1人形历史不改。"
   ]
 }
