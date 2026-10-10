@@ -1,0 +1,40 @@
+{
+  "id": "SCENE-CLARITY-REDRAW-PLAN-20261010",
+  "title": "U00/U01 共用主场景高清重绘制作前方案",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "以当前3072×1024五层主场景为基线，提出清晰度提升及后续U00/U01共享资源替换的可审核Gate1文字方案，本阶段不生产图片或修改工程。",
+  "inputs": [
+    "用户2026-10-10要求：按当前主场景尺寸与五层重绘场景图，提高清晰度，同时替换U00/U01资源。",
+    "project/DECISIONS.md 的 DEC-U01-CANVAS-3072-013",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/ 现有PSD、五张PNG及同尺度重组图",
+    "project/ASSET_HANDOFF_REGISTRY.md 当前客户端共享资源记录",
+    "rules/visual_production_contract.md、rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_REVIEW.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/TECH_REVIEW.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance": [
+    "准确锁定3072×1024五层、层级身份、视差和U00/U01共享资源范围，保持获批构图。",
+    "说明现有资源清晰度差距、重绘方法、真实源尺寸与PSD/导出/补底及对照验收，不把插值视作新增细节。",
+    "说明参考权利检查、Gate1和首图前Art/Tech同批预签、Gate2具体切片用户审批、客户端替换及运行核验的独立门禁。",
+    "五份文字交付实存并符合schema；不生成图、不改工程、不宣称本轮方案已获用户批准。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master于本轮明确授权Art建立此Task Packet并编制Gate1文书；Producer维护审批与状态事实源。",
+    "Art、Tech与Master对同版Gate1文字方案评审APPROVED；8/8 Required实存，四项方案验收PASS，Producer已送USER_REVIEW。用户于2026-10-10明确回复“批准”本批v0.1 Gate1制作方案；Producer核同版评审与SHA后登记USER_APPROVED，Master按四项文字方案验收最终接受。",
+    "本轮是单元示例类工作，示例Owner留可复核检查证据；正式资源接入仍按相应门禁执行。",
+    "初版Task第四项验收文字误同步为“五份文字交付”；同版DELIVERABLE实际列8/8 Required与逐字对应的第四项验收。仅更正Task验收文字使其与已批交付和评审事实一致，未改已批v0.1方案正文；旧USER_REVIEW Task/Approval保存在history/v0.1-user-review。"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-PLAN-20261010",
+  "owner": "art",
+  "summary": "提交基于现行3072×1024五层PSD及工程共用底景的高清重绘Gate1文字方案；当前仅供同版Review，未取得本轮用户批准。",
+  "artifacts": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_REVIEW.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/TECH_REVIEW.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确锁定3072×1024五层、层级身份、视差和U00/U01共享资源范围，保持获批构图。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 与 VISUAL_ANCHORS.md；v0.6 CUT_MANIFEST.json 和 project/ASSET_HANDOFF_REGISTRY.md。"
+    },
+    {
+      "criterion": "说明现有资源清晰度差距、重绘方法、真实源尺寸与PSD/导出/补底及对照验收，不把插值视作新增细节。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 的基线、制作步骤与质量对照；VISUAL_ANCHORS.md 逐项检查表。"
+    },
+    {
+      "criterion": "说明参考权利检查、Gate1和首图前Art/Tech同批预签、Gate2具体切片用户审批、客户端替换及运行核验的独立门禁。",
+      "result": "PASS",
+      "evidence": "RIGHTS_AND_SOURCE.md、ART_PRODUCTION_PLAN.md 第1/6步及 USER_REVIEW_PACKET.md。"
+    },
+    {
+      "criterion": "五份文字交付实存并符合schema；不生成图、不改工程、不宣称本轮方案已获用户批准。",
+      "result": "PASS",
+      "evidence": "Task所列8/8 Required文件实存且非空，DELIVERABLE索引与Task逐项一致，四项验收criterion与Task逐字同序；ART_REVIEW、TECH_REVIEW、MASTER_REVIEW均为同版文字方案APPROVED。此PASS仅指方案文书、Review与结构核验；新图、PSD、PNG、客户端替换和运行均未制作或测试。"
+    }
+  ],
+  "assumptions": [
+    "U00/U01继续使用同一套现行五层场景资源，六店与顾客布局保持现状。"
+  ],
+  "risks": [
+    "工具原生输出尺寸及新绘细节尚未验证；以首图前同批预签和代表段对照控制。",
+    "新PSD与五张PNG、1.8倍及实运行效果均未制作或测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,18 +1,35 @@
 # 用户审批记录
+2026-10-10 15:34:16+08:00（用户明确验收Client v0.1）：用户对唯一当前送审的`SCENE-CLARITY-CLIENT-20261010`限定范围回复“验收完毕”；Master最终接受本次接入。现行`ARTIFACT_APPROVAL.json` USER_APPROVED、Task DONE，旧USER_REVIEW留`ARTIFACT_APPROVAL_v0.1_user_review.json`。审核对象实施报告SHA `ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a`、DELIVERABLE SHA `66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be`；四验收PASS/PASS/NOT_TESTED/PASS，截图归档/真实设备/小游戏平台未测不变。原消息精确时刻未知，登记时刻如本行。
+2026-10-10 14:43:16+08:00（Client v0.1接入版限定范围送审，非用户批准）：`SCENE-CLARITY-CLIENT-20261010` 六Required、13索引实存，Art/Tech Review APPROVED、Master接受提交；`ARTIFACT_APPROVAL.json`为`USER_REVIEW`/decided_at null，审核对象`IMPLEMENTATION_REPORT.md`与`DELIVERABLE.json`。Creator当前Web/IAB现场检查可追溯，但U00/U01场景帧未捕获或本地保存，第三项验收NOT_TESTED；设备/小游戏平台未测。本版须用户单独决定，Art v0.3批准不替代接入批准。
 
 2026-10-10 15:28:30 +08:00（U04 v0.3六人组合用户明确通过）：用户对唯一当前送审`U04-MANAGER-PORTRAITS-001` v0.3 `USER_REVIEW_PACKET.md`完整组合明确回复“通过”，原消息精确时刻未知；Art审核包SHA-256 `3f77a472267ea518781af73d161289ddbc79fc2336f1f24135b4aba84a93cf82`，并列Tech v0.3静态Review SHA-256 `605fd4209ae7f42758302019d7cd0ad95bbf20ce81cb0fe5dca5df4f99395caf`。批准涵盖阿角/阿炭v0.3新六PNG、两板、两PSD及包内精确引用孟桃/阿棠/阿灯/小锦v0.1候选；两Task既有Required/验收/专业Review通过，Master最终接受，两Task DONE，现行及独立v0.3 Approval USER_APPROVED、decided_at null。Master接受见`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/MASTER_ACCEPTANCE.md`，30项完整组合SHA清单`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json`（SHA `eda867c8c27e17589f4a8621715e09bc20fe3abb8db0edbdad3c90ee1f2baab7`）。旧非人v0.2继续未批准；批准只限静态立绘组合，不称clean Sprite、Client导入、运行或QA通过。
 
+2026-10-10 13:57:32 +08:00（Producer绑定登记；用户原消息精确时刻未知）：用户对唯一当前送审 `SCENE-CLARITY-REDRAW-ASSET-20261010` v0.3 具体 PSD、五PNG、重组及店铺同尺度对照明确回复“好的继续吧”。审核包 SHA-256 `f38bfa15b8738a31e98f953b88b2e56456f5dc69c71b4eca3c297a127097f2cf`，清单 SHA-256 `6415e4ef1dce4785a304ab1db71e4dbd52543e3ae372c8b716c09612c29400a0`；现行和独立 `ARTIFACT_APPROVAL_v0.3.json` 均 USER_APPROVED、decided_at null，Master接受 Task DONE。仅批准准确美术版本和解锁相同源 Client 接入，不代替实际运行、性能及 QA 验证。
+
+2026-10-10 11:37:54 +08:00（Gate2 v0.3 具体切片送审，非用户批准）：`SCENE-CLARITY-REDRAW-ASSET-20261010` 审批对象 `deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/USER_REVIEW_PACKET.md` SHA-256 `f38bfa15b8738a31e98f953b88b2e56456f5dc69c71b4eca3c297a127097f2cf`，清单 SHA-256 `6415e4ef1dce4785a304ab1db71e4dbd52543e3ae372c8b716c09612c29400a0`。20/20 Required、31/31 索引、四验收 PASS，核心文件哈希及 L01/L02 旧字节一致。自产切图直接交用户，Approval USER_REVIEW、decided_at null；Client 不得替换。旧 v0.2 REJECTED 历史保留。
+
 2026-10-10 11:34:04 +08:00（U04 v0.3具体资源同批送审，非用户决定）：Art审批对象`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/USER_REVIEW_PACKET.md`，Tech审批对象同版`TECH_REVIEW.json`；两Task固定Required 14/14与6/6、验收逐字同序全PASS、Art/Master/Tech Review APPROVED。两Approval准确v0.3 USER_REVIEW、`decided_at=null`，等待用户对实际版本作决定；四位沿用旧人形仅候选，旧v0.2非人及v0.1人形均无具体资源用户批准。
 
+2026-10-10 11:09:08 +08:00（用户方向与定向修改授权，非实图批准）：最新要求采用人形版；四位旧人形沿用候选，仅阿角／阿炭0、2、3魂修图。旧非人v0.2两份Approval保存USER_REVIEW历史快照，`decided_at=null`；当前Art/Tech Approval指v0.3 DRAFT、`decided_at=null`。原消息精确时刻未知；无需重复Gate1请示，但六PNG、两板、两PSD必须按实际版本Review并送用户具体实图审批。
+
+2026-10-10 10:48:41 +08:00（用户退回与新方法范围登记；非v0.3 Gate2批准）：`SCENE-CLARITY-REDRAW-ASSET-20261010` v0.2候选虽已送USER_REVIEW，用户明确指出需匹配当前店铺画风并减轻重阴影，现转REJECTED历史；Master维护独立v0.2退回记录和当前v0.3 DRAFT。v0.3只继承L01/L02字节，L03/L04/L05整层重绘，Gate1目标/方法已由用户本轮明确授权，无需重复索取；新实际切片与同尺度效果仍须独立Gate2用户批准。
+
+
 2026-10-10 10:44:21 +08:00（U04真实图版与技术支持同批送审，非用户决定）：Art `U04-MANAGER-PORTRAITS-001` v0.2审批对象为`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.2/USER_REVIEW_PACKET.md`，含18张非人全身PNG、六张同基尺三阶段板、六份PSD及六人0魂高矮总览；Tech `U04-MANAGER-PORTRAIT-TECH-001` v0.2审批对象为同版`TECH_REVIEW.json`。Art 14/14、Tech 6/6 Required实存；两份DELIVERABLE各四项验收与Task逐字同序全PASS；Art/Master/Tech Review均APPROVED。两Task/Approval同批USER_REVIEW、`decided_at=null`，尚无用户对实际资源或技术支持的批准；Gate1方案v0.3 USER_APPROVED不代替本次具体版本。低alpha软晕、PSD整阶段层及运行未测向用户披露，Client正式接入与QA均未解锁。
+
+2026-10-10 10:30:54 +08:00（Gate2具体切片送审，非用户批准）：`SCENE-CLARITY-REDRAW-ASSET-20261010` v0.2审核对象`deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/USER_REVIEW_PACKET.md` SHA-256 `659767e25f0cd5461e324cacb34a2e6fca1f78a0de8211cee4ec3f186e1b6b91`，切片清单SHA-256 `38148a64d4fb7f5516fc922a67b6bdbc61f9b1446132bd58ff14ef7d721753d8`；Task 19/19 Required、DELIVERABLE索引23/23实存，四验收PASS，清单哈希吻合。自产切图按例外直接交用户审核，无额外成品专业复审。原生2172×724、3072×1024规范化与灯水偏亮均披露；Approval `USER_REVIEW`、`decided_at=null`，用户对具体切片尚未决定，U00/U01 Client正式接入不得启动。
 
 2026-10-10 10:12:44 +08:00（Producer登记；用户原消息精确时刻未知）：用户对唯一送审`U04-MANAGER-CONCEPT-PLAN-001` v0.3非人Q版鬼怪具体方案明确回复“批准”。该版11/11 Required实存、四项Task验收逐字同序PASS、Art/Master同版Review均APPROVED；现行`ARTIFACT_APPROVAL.json`和独立`ARTIFACT_APPROVAL_v0.3.json`均USER_APPROVED、`decided_at=null`，本行是登记时刻，Master最终接受Task DONE。批准仅为v0.3制作方案，不是新批实际PNG/板/PSD用户批准；两生产Task已修订为v0.2 DRAFT，首图前重做Art/Tech同批预签，旧v0.1人形签认不可沿用。
 
 2026-10-10 10:04:58 +08:00（v0.3送用户审核，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001`准确v0.3 `ART_PRODUCTION_PLAN.md`及同版10项专业交付与现行Approval共11/11 Required实存，四项验收逐字同序全PASS，Art/Master Review均APPROVED。Task/Approval为USER_REVIEW、`decided_at=null`，等待用户对六位非人Q版具体外形方案明确决定。旧v0.2 USER_APPROVED仅保留历史，不自动批准v0.3；旧人形18PNG/6板/6PSD未获具体资产用户批准，旧生产/Tech Task BLOCKED。本版没有生成新图。
 
+2026-10-10 09:56:47 +08:00（用户最新方法指令，非Gate2决定）：用户明确要求`SCENE-CLARITY-REDRAW-ASSET-20261010`改为原五层各自整张重新绘制，不修图、不分区。Gate1 v0.1曾批准的目标画布/语义仍有效；旧v0.1区域试产与候选拼图不再作为正式生产版本。新v0.2须Art/Tech同批首图前复签，真实五层PSD/PNG及重组再送具体Gate2；用户此指令不等于成品批准。
+
 2026-10-10 09:45:07 +08:00（用户方向修订，非新方案批准）：用户明确要求六店长“不用人的外形”，改Q版鬼怪，身高可很矮/很高。`U04-MANAGER-CONCEPT-PLAN-001` v0.2 USER_APPROVED快照保留历史；当前Approval切换v0.3 `DRAFT`、`decided_at=null`，原用户消息精确时刻未知。旧人形生产及Tech支持Task均BLOCKED，18PNG/6板/6PSD旧实图仍是未获具体资产用户批准的历史，不得继续出图/接入。用户方向纠正不等于尚未见的v0.3逐人造型具体方案批准。
 
 2026-10-10 09:06:12 +08:00（Producer批准登记；用户原消息精确时间未知）：用户对唯一送审的`U04-MANAGER-CONCEPT-PLAN-001` v0.2具体Gate1制作方案回复“批准”。原10/10 Required实存、5/5验收PASS，Art/Master同版APPROVED；`tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json`与独立`ARTIFACT_APPROVAL_v0.2.json`均USER_APPROVED、`decided_at=null`，登记时刻为本行时间。Master最终接受方案Task为DONE。批准范围仅v0.2方案，后续真实具体切图Gate2、Client接入与QA另走门禁。新Art/Tech任务审批均DRAFT。
+
+2026-10-10 09:04:15 +08:00（Producer登记；用户原消息精确时刻未知）：`SCENE-CLARITY-REDRAW-PLAN-20261010` v0.1 Gate1 `USER_APPROVED`；审批对象`deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md` SHA-256 `b9987826b133f3bdb8c1912a809612230b63e20806d08587c35eff4673a3e67e`，方案SHA `3adf0c1505b14e2c5ab726509e7be5aac7c63230c05c6d330d962890acc66070`，视觉锚点SHA `20e25eb174788285187e9d2b2f8ca9ae7648b01d62fb8ddb24dd70567a33e262`，权利说明SHA `8350ac2d124ac9d44d1124af68cc55bb1bf54805e8b63af458ad0172d8a1d759`。8/8 Required和三同版Review APPROVED、四项方案验收PASS，Master条件接受方案DONE。旧USER_REVIEW Task/Approval留历史；Task第四项“五份文字”误同步已对齐DELIVERABLE原验收，无已批方案改动。此决定不代表Art/Tech首图前预签、成品Gate2批准或U00/U01正式接入。
 
 2026-10-10 08:58 +08:00（Gate1 v0.2送审，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001` v0.2十项Required实存，`DELIVERABLE.json`五项现行Task验收逐字同序且全PASS，Art/Master同版Review均APPROVED；`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。审批对象是`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md`与同版审核包；用户须决定这份具体制作前方案。用户先前泛出图请求和Product v0.3批准均不代替Gate1具体方案批准；未批前不能正式出图，后续切片效果及客户端接入还需独立Gate2。v0.1 DRAFT及BLOCKED Review保留历史。
 

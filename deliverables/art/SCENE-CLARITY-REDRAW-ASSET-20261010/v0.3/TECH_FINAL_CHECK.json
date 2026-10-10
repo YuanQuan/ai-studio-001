@@ -1,0 +1,16 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "reviewer": "tech_lead",
+  "version": "v0.3",
+  "status": "INTERIM_SNAPSHOT_SUPERSEDED",
+  "basis": "review/reassembled_from_exports.png",
+  "findings": [
+    {"severity": "INFO", "message": "五张当前exports均实测3072×1024 RGBA。L01 SHA-256 9ee1857cbd0eae8a0367cf4b10d4ed054de8f4e9c8661eb933559e927b081de7、L02 7318c68726700af9051bffcda7af5c130d0bdb2e1f53619ece92f45a52886fbc，与v0.2逐字节一致。"},
+    {"severity": "INFO", "message": "L03/L04/L05原生均2172×724 RGBA，当前SHA依次为875b30644a357805ab929819d3079556e233d05171e7093652c5bf9ac527e902、8a102dbbf0fd3bfe8c54765317c29da4e0b8a71bade02508e2f2d6338c009c36、06f695826664ec86bb421f73927d6d661aadd909f9eb2ec71889def9515036e6。3072×1024为格式规范化，不代表原生新增像素。"},
+    {"severity": "INFO", "message": "独立查看最终五层原位重组：中央单桥，前轮L03斜石叠拱已由整层重绘消除；桥洞见后岸连续石墙与下方水面，未见独立第二桥拱。L04桥上alpha透明且河水连续，L05左右近草未遮中心；左右牌楼/柳林与桥、河前街后的构图可读。未发现明显透明洞、双影或新增大型对象。"},
+    {"severity": "INFO", "message": "桥灯栏杆比例较拒绝的首张回近v0.2，石桥阴影较柔。五层RGBA8全展开60MiB仅基础估算；同尺度静态视图不能证明目标机内存、DrawCall、运行实际效果。"},
+    {"severity": "MINOR", "message": "PSD源、最终manifest及用户Gate2包尚待Art冻结；本核验不替代用户对具体切片版本和效果的批准，Client正式接入仍受Gate2约束。"}
+  ],
+  "cut_guidance": "维持五张3072×1024全画布RGBA原位、L01–L05底到顶、视差[0.3,0.8,1,1,1]、trim none、中心锚点与零偏移；L04在L05下连续补水，L05保持中央透明。不要以自动裁切破坏视差和桥位；若平台纹理尺寸或内存需改变，应保同尺度重组并重新评审视觉与预算。",
+  "next_action": "Art继续最终L03/L05整层重绘并冻结PSD、manifest、重组及Gate2审核包；此中间快照不代表最终视觉通过，Tech须对实际最终文件另行复核。"
+}

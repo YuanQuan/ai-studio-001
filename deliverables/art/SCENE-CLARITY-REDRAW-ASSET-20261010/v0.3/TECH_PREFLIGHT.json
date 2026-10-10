@@ -1,0 +1,15 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "reviewer": "tech_lead",
+  "version": "v0.3",
+  "plan": "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/SHOP_STYLE_REDRAW_PLAN.md",
+  "plan_sha256": "5db4a7fa99a25616ffc24112f783902fe5c7fae7463092ce8a299e5e51478059",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "与Art同版同SHA预签首张完整L04。L01/L02沿用v0.2正式PNG且交付时逐字节核SHA-256 9ee1857cbd0eae8a0367cf4b10d4ed054de8f4e9c8661eb933559e927b081de7 / 7318c68726700af9051bffcda7af5c130d0bdb2e1f53619ece92f45a52886fbc。L03/L04/L05只接受各自整幅重绘，不用分区拼接、滤镜或旧alpha硬裁。"},
+    {"severity": "INFO", "message": "保持五层3072×1024全画布RGBA、层序L01–L05、视差[0.3,0.8,1,1,1]、trim none、中心锚点与零偏移；中央单桥、右月/牌楼、街后河前、L04连续水面及真实透明、L05不遮中央。蓝夜暖灯与店铺风格共处，轻阴影不能以抹除结构或新增物件实现。"},
+    {"severity": "INFO", "message": "首张L04必须保存工具原生文件/尺寸/SHA/提示及时间；原生约2172×724与最终3072×1024规范化分开登记。清晰度须以同背景、同视窗、1x和1.8x实际新绘石缝/栏杆/水纹/透明边缘判定，插值不算新增细节。若双桥、alpha洞、桥街错位或画风/清晰度退步，应先复核整层方法，不能自动扩批。"},
+    {"severity": "INFO", "message": "五张RGBA8全展开60MiB仅基础估算；静态图不证明Creator运行、DrawCall或设备驻留。Gate2实图用户批准前Client不得接入。"}
+  ],
+  "next_action": "Art可开始首张完整L04整层重绘；Tech待实图独立核原生、透明、单桥、同尺度结构与v0.2其余层重组后决定是否扩批L03/L05。"
+}

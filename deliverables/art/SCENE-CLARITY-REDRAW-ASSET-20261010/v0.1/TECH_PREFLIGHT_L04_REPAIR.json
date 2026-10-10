@@ -1,0 +1,24 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版复签 L04_REPAIR_PLAN.md SHA-256 f8398587503cc6176fe48feaaa7e8a5fd37481988792acda263e44ee155b166a 与 ART_PREFLIGHT_L04_REPAIR.json。已独立看首张 L04 原位并排：原生1254×1254且有alpha，但桥栏局部漂移、灯周红橙半透明晕圈外扩，当前片不得用于五层或扩批。"
+    },
+    {
+      "severity": "INFO",
+      "message": "仅批准一次内置 imagegen 双参考定向修订：旧 v0.6 L04 方片是物体坐标、透明语义和灯光范围主参考，首张新片只作石纹和水纹细节参考。保存修订原生尺寸、SHA、提示、原生100%及降到1024后的原位alpha/边缘和与L03重组对照；原生不足1024或污染仍明显即停。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "旧alpha硬裁错位新桥会截断栏杆或留下接缝，不能作为修复捷径。仅当整片呈纯平移、所有桥拱/栏柱/灯船锚点偏移一致且无形变时，才可量测并记录统一平移及裁边；局部变形、晕圈外扩或桥下水露洞须回绘或停产，不以模糊/锐化掩盖。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本复签仅授权L04中央一张修订试验，不判定五层四区可扩批。通过后仍需核先前 FULL_LAYER_EXPANSION_PLAN 的透明与接缝方法是否适用；Gate1的3072×1024五层、trim none、60MiB估算和Gate2用户审批不变。"
+    }
+  ],
+  "next_action": "Art可执行一张L04中央双参考修订并提交同尺度、alpha与原生裁切实证；失败即停止本批全量并向Master提交具体差距。"
+}

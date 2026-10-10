@@ -1,0 +1,108 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "version": "v0.2",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "native_generated_canvas": [
+    2172,
+    724
+  ],
+  "normalization": "2172×724整层新绘经等比Lanczos规范到3072×1024；不将插值称为清晰度提升",
+  "psd": {
+    "path": "source/scene_clarity_master.psd",
+    "sha256": "753a7afbf47c055c21d3b1390feb51ee55b4ae476243df25b85175eb67e1beb0"
+  },
+  "overall": {
+    "path": "review/reassembled_from_exports.png",
+    "sha256": "103ab58e7976bf833636fb6c739dc6277b51b5e44611929c766d5be3ec2a5dcb"
+  },
+  "layers_bottom_to_top": [
+    {
+      "asset_id": "STREET_BASE_01_L01",
+      "description": "夜空/月云",
+      "art_path": "exports/tex_street_base_01_l01_sky.png",
+      "sha256": "9ee1857cbd0eae8a0367cf4b10d4ed054de8f4e9c8661eb933559e927b081de7",
+      "native_source": "source/new_l01_whole_native.png",
+      "native_sha256": "1e36ddca5cc0008d190a9e9f9f3265c3765c3c501eb1f400ac1f759b1e863bbf",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png",
+      "client_uuid": null,
+      "import_status": "PLANNED"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L02",
+      "description": "雾山/远楼",
+      "art_path": "exports/tex_street_base_01_l02_mountains.png",
+      "sha256": "7318c68726700af9051bffcda7af5c130d0bdb2e1f53619ece92f45a52886fbc",
+      "native_source": "source/new_l02_whole_native.png",
+      "native_sha256": "d057ee8053394212f56e194f8fd5b1c47aaaf3570eb01f61fc4243a17d058361",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png",
+      "client_uuid": null,
+      "import_status": "PLANNED"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L03",
+      "description": "柳林/后岸宽街/右牌楼",
+      "art_path": "exports/tex_street_base_01_l03_ground.png",
+      "sha256": "df096cceae12155f8db96301335bf1cf8d41e0f81e25d58c7073139ed6565d76",
+      "native_source": "source/new_l03_whole_native.png",
+      "native_sha256": "196dceca8d09a294dd0797866d45db45d86b1784b33b50c7f06654f354fb3df8",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png",
+      "client_uuid": null,
+      "import_status": "PLANNED"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L04",
+      "description": "桥栏/前景河/灯船",
+      "art_path": "exports/tex_street_base_01_l04_water_bridge.png",
+      "sha256": "8fec33b4352acba3cbbbb7a382f62ef611a512300ffaf1361900e0a40686e759",
+      "native_source": "source/new_l04_whole_native.png",
+      "native_sha256": "35c090a66700da82ccabfafab16ded54c93807ede05fd4b055ceffbbde8305ee",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l04_water_bridge.png",
+      "client_uuid": null,
+      "import_status": "PLANNED"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L05",
+      "description": "河边左右水草",
+      "art_path": "exports/tex_street_base_01_l05_water_grass.png",
+      "sha256": "1cb45d788b79af6e1f1d79388a28e94273371d899d9915203223871912260c2f",
+      "native_source": "source/new_l05_whole_native.png",
+      "native_sha256": "53bbbcca65f3ffdbce18642bbeea5c0f5a89b625e70b5ca0785338184a2430f9",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l05_water_grass.png",
+      "client_uuid": null,
+      "import_status": "PLANNED"
+    }
+  ],
+  "layer_parallax_candidate": [
+    0.3,
+    0.8,
+    1,
+    1,
+    1
+  ],
+  "trim": "none",
+  "anchor": "center",
+  "user_approval": "PENDING_GATE2"
+}

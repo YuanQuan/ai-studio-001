@@ -1,11 +1,43 @@
 # 工作流程复盘记录
 
+### WR-20261010-SCENE-CLARITY-CLIENT-V01-APPROVAL-001｜客户端接入版用户验收
+
+- 结果与证据：用户对当前送审的Client v0.1限定范围回复“验收完毕”，Master最终接受本次U00/U01五PNG替换。当前Task DONE、Approval USER_APPROVED；审核报告SHA `ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a`、交付清单SHA `66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be`，旧USER_REVIEW审批留快照。四项验收仍PASS/PASS/NOT_TESTED/PASS；U00/U01场景帧未捕获或保存，真实设备和小游戏平台未测。
+- 时间与耗时（Asia/Shanghai）：送审登记2026-10-10 14:43:16 +08:00，本次批准登记2026-10-10 15:34:16+08:00，墙钟间隔51分钟。用户消息精确时刻未知，这段含用户审阅等待和其他并行工作，不能计为Client或Producer制作净工时；本次登记耗时与故障时长未知。
+- 影响与建议：本轮未见可证实的新制作返工或工具故障，保留已有截图归档限制。若后续需要可复核场景图或设备结论，由Client在下一轮实际运行时保存U00/U01场景帧并记录构建hash，Master决定是否另启设备与QA验证；复核点为新运行交付，不追认本版未测结果。
+- Continuity check：本线已DONE，无仅占位READY/IN_PROGRESS；U04并行线独立。
+
+
 ### WR-20261010-U04-HUMAN-V03-APPROVAL-001｜人形六人组合明确批准
 
 - 可核对起止：Producer于2026-10-10 15:27:24 +08:00读取当前状态，15:29:58 +08:00完成本轮登记与核验，墙钟跨度2分34秒。用户原消息精确时间未知，用户等待净时长不据此推算。
 - 结果与证据：用户对Art v0.3唯一送审六人组合明确“通过”，审核包SHA `3f77a472267ea518781af73d161289ddbc79fc2336f1f24135b4aba84a93cf82`，并列Tech静态终核SHA `605fd4209ae7f42758302019d7cd0ad95bbf20ce81cb0fe5dca5df4f99395caf`。现行及独立v0.3 Approval USER_APPROVED；既有Art/Tech Required与验收、Art/Master/Tech同版Review支持Master最终接受两Task DONE。Master接受见`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/MASTER_ACCEPTANCE.md`，30项完整组合SHA清单`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json`（SHA `eda867c8c27e17589f4a8621715e09bc20fe3abb8db0edbdad3c90ee1f2baab7`）。四位v0.1由本次包的精确路径引用获得组合内批准，不回写旧版历史审批；非人v0.2未获批准。
 - 影响与建议：本轮主要为版本绑定、状态核对和历史隔离；没有可靠证据拆分用户等待、工具或制作净耗时。Producer负责在未来接入任务开始前核对获批路径与SHA，Client复核点为实际导入登记及运行画面；当前不创建新任务。
 - Continuity check：U04 Art/Tech两线DONE，无空转READY/IN_PROGRESS；clean Sprite、正式接入、运行和QA仍需各自适用验证。
+
+### WR-20261010-SCENE-CLARITY-CLIENT-V01-001｜主场景接入版限定送审
+
+- 结果与证据：已批准Art v0.3五PNG同字节进入客户端，原meta/UUID及U00/U01场景逻辑保持；Creator当前Web构建五图经Tech独立哈希核对，Client在IAB实际操作U00/U01，Art亲自观察画面。6/6 Required、13/13索引实存，Art/Tech同版Review APPROVED，Master接受限定范围提交。`DELIVERABLE.json`第三项NOT_TESTED专指U00/U01场景帧截图未捕获/本地保存；真实设备、平台和性能未测。Task/Approval现为USER_REVIEW，尚无用户对Client v0.1决定。
+- 时间与耗时（Asia/Shanghai）：Producer于2026-10-10 14:28:34 +08:00登记实际开工，2026-10-10 14:43:16+08:00登记送审，墙钟跨度14分42秒。前次美术v0.3批准登记为13:57:32 +08:00，至Client开工登记约31分钟，包含Master编排与Owner执行准备，不能直接计为用户等待或制作净工时。实际制作、评审交叠与各Owner净时长未知；Creator早期沙箱SIGABRT后通过获准宿主执行恢复，故障净耗时未知。截图接口探索未取得场景帧本地文件，不臆测其耗时。
+- 影响与建议：可见限制是桌面IAB场景画面未落本地截图，虽有Art现场目视及运行文本，用户复核视觉仍受限。Client负责下次运行核验时在进入U00/U01后立即保存场景帧并记录构建hash；复核点为下一轮Client/Art运行Review。真实设备和小游戏平台若纳入正式范围，由Master另定任务及QA门禁，不将本单元示例结果扩张。
+- Continuity check：本线已达真实USER_REVIEW，后续仅待用户对准确Client v0.1和披露的验证范围决定；不存在无产出READY/IN_PROGRESS。本轮未触碰U04并行线。
+
+
+### WR-20261010-SCENE-CLARITY-GATE2-V03-APPROVAL-001｜主场景v0.3用户批准登记
+
+- 结果与证据：用户对唯一当前送审 v0.3 明确“好的继续吧”。Producer绑定准确审核包哈希与 `tasks/SCENE-CLARITY-REDRAW-ASSET-20261010/ARTIFACT_APPROVAL_v0.3.json`，Master接受美术 Task DONE。该决定解锁同源客户端接入；运行与 QA 尚待下游任务。
+- 时间与耗时（Asia/Shanghai）：前次送审登记为2026-10-10 11:37:54 +08:00，本次批准登记为13:57:32 +08:00，墙钟间隔2小时19分38秒。用户消息精确时刻未知，此间包含用户审阅等待与并行任务，不能计为Art或Producer净工时；登记耗时、工具故障时长未知。
+- 观察与建议：本轮审批对象和哈希明确，未发现可证实的额外流程慢因，也没有同类目标时长基线。Client在同源版本接入时核清单ID/路径/哈希与运行画面；负责人Client，复核点为接入交付与Tech/QA验证，代价为一次来源比对，可减少错版返工。
+- Continuity check：美术 Task DONE；Master正在编排已解锁的 Client/Tech 后续，不以本次批准代替实施或QA完成。
+
+
+### WR-20261010-SCENE-CLARITY-GATE2-V03-001｜店铺画风与轻阴影重绘送审
+
+- 结果与证据：用户退回 v0.2，要求匹配当前店铺画风并减轻阴影，保留 L01/L02、整层重绘 L03/L04/L05。Art/Tech 同版预签、L04 样张后验通过后完成三新层、五层 PSD/五 PNG 与当前六店同尺度对照。Producer 核 20/20 Required、31/31 索引、四项验收同序 PASS、清单 12 项哈希及 L01/L02 逐字节不变，送准确 v0.3 Gate2 USER_REVIEW。证据见 `tasks/SCENE-CLARITY-REDRAW-ASSET-20261010/` 与 `deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/`。
+- 时间与耗时（Asia/Shanghai）：首份 v0.3 预案 mtime 为 2026-10-10 10:45:23 +08:00，Producer 11:37:54 +08:00 登记送审，墙钟 52 分 31 秒。期间有候选返修、图像生成、PSD 合成、Art/Tech 检查、六店对照从误用 0.4 改为获批 0.34 及 Producer 核验；各环节交叠，净工时未知，不能把总历时算作 Art 制作时间。v0.2 用户审阅起止与消息精确时刻、各工具等待及故障耗时未知。
+- 影响与建议：可见返工为 L04 额外沿岸灯、L03 双拱/水道、L05 厚前景候选，均保留退稿且未进入正式切片。暂无同类目标工时基线，不判断人员快慢。Art 在下一批首图后先用获批 Client 脚点/缩放做同屏对照并核单桥、水道；Tech 同时核参数来源。代价是一轮静态预检，复核点为下一批样张后验；Producer 在下一次 Gate2 核现行获批参数与审核包一致性。
+- Continuity check：本线已达真实 USER_REVIEW；用户未批准 v0.3 具体图版前 Client 正式接入锁定。U04 并行线独立。
+
 
 ### WR-20261010-U04-HUMAN-REVISION-001｜人形版两人定向修订开线
 
@@ -20,6 +52,13 @@
 - 时间与耗时：Producer于2026-10-10 10:11:21 +08:00登记v0.3方案批准，10:14:54 +08:00登记首图同批预签，10:20:27 +08:00登记孟桃0魂样张与扩批通过，2026-10-10 10:44:21 +08:00核完整实包并送审。首个登记至送审可观察墙钟跨度为33分钟，包含图像制作、定向返修、PSD合成、专业Review及等待；无法可靠分离各Owner净制作时间或用户等待。工具故障净时长未知。
 - 影响与建议：实际返修集中在阿炭0材质、阿角2发束、阿棠2/3比例、小锦0镜片，旧候选保留并替换成当前选图；这是画面质量修订，具体次数和净耗时以Art候选日志为准，不猜测。下一批由Art在第一轮六板成图前，先按同基尺把非人主形、同人比例和身份物并排检查；Tech核每阶段完整最低点基线及PSD复合一致性。负责人Art/Tech，复核点为下一批首轮板Review与技术测量；代价是一轮预检，预期减少板后返修。
 - Continuity check：Art与Tech均已到真实USER_REVIEW，唯一剩余门禁是用户对准确v0.2具体图版及并列技术支持作决定；无空转READY/IN_PROGRESS。低alpha软晕与未实机运行仍需在后续正式Sprite/Client/QA阶段单独处理，不能以本轮静态Review替代。
+
+## WR-20261010-SCENE-CLARITY-GATE2-V02-001｜分区试产退场与五层整张新绘送审
+
+- 结果与证据：用户明确把方法改为原五层各自整张重绘、不修图、不分区。v0.1分区新图、拼接候选和缺陷诊断保留历史，不进入v0.2正式像素。Master修订v0.2 Task并保旧Task快照；Art/Tech对当前整层预案同SHA预签、L04首图限定PASS后完成五张原生整层图、PSD和五张3072×1024 PNG。Producer核19/19 Required、23/23交付索引、四项验收PASS及清单核心SHA后送准确v0.2 Gate2 USER_REVIEW；用户未决定。证据见`tasks/SCENE-CLARITY-REDRAW-ASSET-20261010/`和`deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/`。
+- 时间与原因：可核本周期从09:03:25 +08:00 v0.1首批预案文件落盘，到2026-10-10 10:30:54 +08:00 Gate2送审，墙钟跨度约1小时27分钟；其间包含先前已签区域方法试产、L04透明样张两次修订、用户方法纠正、v0.2整层生图、文书/技术核验与并行等待，不能视为Art净绘制时长。用户原指令准确时刻未知，各工具生成等待/角色净工时亦未知。明确返工原因是区域拼接/alpha候选无法保持预期效果且用户要求改为整层方法；没有可比工时基线，不作人员快慢归责。
+- 建议与复核：Master在下次类似整幅资源任务开始时把用户的“整张重绘/允许分区”方法写进首图前预案并锁定，减少工艺方向返工；代价是首图前核对一次已确认的方法记录，复核点为下一批预签。Art持续在清单同时列原生像素、规范化尺寸与同尺度可辨细节，避免仅以3072文件头宣称高清；复核点为Gate2用户反馈和后续Client运行对照。Producer维持v0.1历史与v0.2准确审批链，Gate2未批前锁Client。
+- Continuity check：本线已达具体切片USER_REVIEW，无空转READY/IN_PROGRESS；Client正式接入须等用户明确批准本v0.2。U04独立，不混本轮结果。
 
 ### WR-20261010-U04-NONHUMAN-V03-001｜非人Q版方向修订送审
 
@@ -36,6 +75,12 @@
 - 速度因素：本轮尚无可靠时限或可比基线，不判断快慢；当前未见可证实的工具故障。
 - 建议与复核：Art、Tech在孟桃0魂首图前共同核同批预签编号与参数，再把样张结果写入对应Review；负责人Art/Tech，复核点为首张PNG/PSD与SAMPLE_TECH_REVIEW。此检查增加一次签认，目标是避免全量扩批后尺寸或风格返工。
 - Continuity：两个IN_PROGRESS任务均有实产且继续推进；Gate2具体资产用户审批仍待真实切图与同尺度重组效果，不把本方案批准扩为接入或QA。
+
+## WR-20261010-SCENE-CLARITY-GATE1-APPROVAL-001｜方案批准与资源开工
+
+- 结果与证据：用户明确“批准”准确Gate1 v0.1，Producer核8/8 Required、四核心SHA及Art/Tech/Master同版APPROVED；方案Task DONE、Approval USER_APPROVED，旧USER_REVIEW快照保留。第四项Task验收文字误同步已与原DELIVERABLE对齐，方案正文不变。资源Task已出现`PREFLIGHT_PLAN.md`、`ART_PREFLIGHT.json`、`ART_BRIEF.md`本轮实产，状态IN_PROGRESS；Tech同批预签和具体资源尚待，Gate2及Client锁定。
+- 时间与原因：用户消息精确时刻未知；Gate1上一送审节点08:57:05，Producer本次09:03:16登记审批，跨窗口时长含用户等待及并行工作，不计为任何角色制作耗时。资源首批三文书文件mtime 09:03:25；后续制作结束时刻和净耗时未知。没有可比工时基线，本次尚无可证实慢因；本轮发现Task验收文字与DELIVERABLE不一致，已按已审交付事实纠正并保留旧快照。
+- 建议与复核：Master建立后续Task时逐字核验DELIVERABLE验收、Required计数，代价一次对照，复核点为资源Gate2送审前；Producer在下次资源节点按真实文件、双签SHA和图像核验更新状态，复核点为首图及Gate2准确版本。当前continuity：资源有实产正在执行，无空转IN_PROGRESS；切图获用户批准前不交Client。
 
 ## WR-20261010-U04-MANAGER-PLAN-V02-001｜六店长三阶段立绘制作前方案送审
 

@@ -1,0 +1,61 @@
+{
+  "id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "title": "U00/U01主场景店铺画风匹配与阴影减轻整层重绘",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "按用户明确新要求，保留v0.2星光天空L01与远山背景L02，仅将L03/L04/L05各完整重新绘制，匹配已接入店铺画风并减轻厚重阴影；提交同画布五层PSD、PNG和同尺度Gate2对照。",
+  "inputs": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/review/overall_from_psd.png",
+    "Master 转述用户已明确批准上述 Gate1 v0.1；Gate2 仍待具体资源版本审核。",
+    "用户2026-10-10最新明确：要按原来的5层图分别重新绘制，不要修图。要整体绘制；v0.1分区方案停止。",
+    "用户2026-10-10本轮：结合目前店铺画风，当前场景阴影太重；与店铺画风一致，不改图而重绘，远山及背景星光可不调整。",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/preview/six_shop_full_redraw_overview.png 与当前已接入店铺源版本",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/CUT_MANIFEST.json（L01/L02逐字节继承，其余三层仅作构图参考）"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/SHOP_STYLE_REDRAW_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/PREFLIGHT_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/ART_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/TECH_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/ART_BRIEF.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/SOURCE_AUDIT.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/source/scene_clarity_master.psd",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/mobile_comparison.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/VISUAL_ANCHORS.md"
+  ],
+  "acceptance": [
+    "用户本轮店铺画风与减轻阴影的整层方法准确绑定，首图前Art/Tech同版预签，真实店铺参考与来源登记。",
+    "L01天空星光与L02远山背景逐字节继承v0.2，仅L03/L04/L05各整幅重新绘制；不修图、分区拼接或滤镜调色，保持原构图及五层语义。",
+    "完整五层PSD、五张3072×1024原位RGBA PNG及重组可追溯，透明补底、桥街连接和层序/视差保持；近景厚重阴影减轻并与店铺实际画风对照，原生尺寸和细节提升分别记录。",
+    "同尺度v0.2/v0.3与当前店铺对照、手机1.0及1.8静态视窗、原生裁切和切图版本清单齐备后直接交Gate2用户审核；获批前不改工程。"
+  ],
+  "dependencies": [
+    "SCENE-CLARITY-REDRAW-PLAN-20261010"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 本轮明确创建并分派本任务；Art 已开始实际首图前预案制作。",
+    "2026-10-10 用户最新整层逐层重绘方法覆盖v0.1分区补绘；v0.1任务原字节备份history/v0.1/TASK.json，历史样张保留但不再作为正式源。",
+    "Producer核现行v0.2 Task 19/19 Required、DELIVERABLE索引23/23实存，四项验收与Task同序PASS；本组织Agent自行切图按规则直接提交具体切片Gate2用户审核，不加成品专业复审。原生2172×724、3072规范化和色光差异在审阅包披露；用户未批准前Client不接入。",
+    "Master本轮保留v0.2 Task/Approval原字节快照并定义v0.3任务范围；用户明确要求修订风格，不视为v0.2成品批准。Producer负责本轮状态/审批更新。",
+    "2026-10-10 11:37:54 +08:00 Producer核v0.3 20/20 Required、DELIVERABLE 31/31索引及四项验收同序PASS，Manifest核心SHA吻合，L01/L02与v0.2逐字节一致；自产切图直接送Gate2 USER_REVIEW，用户未批前Client不接入。",
+    "2026-10-10 13:57:32 +08:00 Producer按用户对唯一当前送审v0.3明确“好的继续吧”登记Gate2 USER_APPROVED；Master最终接受美术Task DONE。批准仅准准确v0.3静态PSD/五PNG/重组，客户端接入与运行验证另行执行。"
+  ]
+}

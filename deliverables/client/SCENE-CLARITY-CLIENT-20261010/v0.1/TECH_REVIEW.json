@@ -1,0 +1,14 @@
+{
+  "task_id": "SCENE-CLARITY-CLIENT-20261010",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "静态资源核对PASS：客户端五PNG与已获用户Gate2批准的Art v0.3 exports SHA-256逐项一致，均3072×1024 RGBA。五份.meta的原image/texture/spriteFrame UUID保持，SpriteFrame尺寸与raw尺寸3072×1024、trimX/Y与offset均0、pivot(0.5,0.5)；Prefab五个SpriteFrame引用逐项匹配实际meta子UUID。"},
+    {"severity": "INFO", "message": "Prefab仍为原UUID 2d697fb3-01f0-4330-a180-a9c162310bf8，UnitSamples.scene引用未变；Prefab根下五层节点原位，UnitSampleGallery.ts、scene1_camera_controller.ts和Scene/Prefab未列入本轮改动，店铺baseline 0.34与镜头视差[0.3,0.8,1,1,1]代码保持。上述仅为静态引用与差异检查，不代表Creator导入解析通过。"},
+    {"severity": "INFO", "message": "早期Creator 3.8.8 CLI在沙箱运行时SIGABRT、退出134，保留evidence/CREATOR_CLI_CRASH_REPORT.ips。随后Client使用获准主机权限恢复并得到当前web-mobile构建，CLI以该版本的成功完成码36退出，evidence/CREATOR_BUILD_LOG.log记录Build Task Finished；当前输出/private/tmp/scene-clarity-client-v01/web-mobile/index.html SHA-256 02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d。Tech独立核五张UUID路径构建PNG与客户端/Art v0.3正式PNG逐字节一致，evidence/BUILD_MANIFEST.json与ASSET_IMPORT_AUDIT_POSTBUILD.json相符。构建子日志另有build-script子进程SIGTERM诊断，以完成日志、当前产物及实际加载交叉判断。"},
+    {"severity": "INFO", "message": "Client在同一当前构建通过127.0.0.1:8767 HTTP与Codex内置浏览器实测U00/U01首次进入、U00放大/拖动/重置/返回及U01放大/拖动/重置，画面随真实输入响应；Art对同构建现场U00/U01视觉已APPROVED。Tech复核构建身份和静态资源链，浏览器操作依据deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/BROWSER_RUNTIME_CHECK.md、同目录HTTP_ACCESS.log与同版本ART_REVIEW.json，不声称Tech独立重复操作。"},
+    {"severity": "MINOR", "message": "evidence/HTTP_ACCESS.log本次289条请求均为304缓存校验，不能单凭HTTP状态判新字节下载；已结合构建PNG哈希、当前index身份及Client/Art现场IAB观察。Client只捕获入口菜单的工具截图，未捕获或落盘U00/U01场景帧；场景视觉依据Art亲自在IAB的现场观察和ART_REVIEW.json，故场景画面缺少本地截图复核文件。未实测真实手机触控、目标机驻留/帧率、微信与抖音小游戏平台。"},
+    {"severity": "INFO", "message": "静态五张RGBA8基础展开约60MiB，不是实际GPU驻留、DrawCall或目标设备性能结论；设备与小游戏平台未测。"}
+  ],
+  "next_action": "当前构建、HTTP/IAB运行记录与Art现场结论已落盘，Master可据此提交本次具体接入版本用户审核，并如实呈现场景截图未保存的限制。设备与小游戏平台性能如纳入后续范围另作实测；本Review不代替用户接入版本批准。"
+}

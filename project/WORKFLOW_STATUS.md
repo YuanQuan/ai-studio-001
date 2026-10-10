@@ -1,10 +1,49 @@
 # 工作流状态
 
+2026-10-10 15:34:16+08:00（主场景Client v0.1用户验收批准与continuity）：用户对唯一当前送审的`SCENE-CLARITY-CLIENT-20261010` v0.1限定范围明确“验收完毕”，Master最终接受本次U00/U01五PNG接入。Task `USER_REVIEW→DONE`，Approval `USER_APPROVED`、decided_at null；原USER_REVIEW记录保`ARTIFACT_APPROVAL_v0.1_user_review.json`。审核对象`IMPLEMENTATION_REPORT.md` SHA `ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a`与`DELIVERABLE.json` SHA `66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be`。四项验收仍PASS/PASS/NOT_TESTED/PASS；U00/U01场景帧未捕获/本地保存、真实设备与小游戏平台未测，不因用户验收改成实测PASS。用户消息精确时间未知，本行为Producer登记时刻。Continuity check：本线DONE，无占位READY/IN_PROGRESS；U04并行线独立。复盘`WR-20261010-SCENE-CLARITY-CLIENT-V01-APPROVAL-001`。
+
 2026-10-10 15:28:30 +08:00（U04 v0.3六人组合用户明确通过）：用户对唯一当前送审`U04-MANAGER-PORTRAITS-001` v0.3 `USER_REVIEW_PACKET.md`完整组合明确回复“通过”，原消息精确时刻未知；Art审核包SHA-256 `3f77a472267ea518781af73d161289ddbc79fc2336f1f24135b4aba84a93cf82`，并列Tech v0.3静态Review SHA-256 `605fd4209ae7f42758302019d7cd0ad95bbf20ce81cb0fe5dca5df4f99395caf`。批准涵盖阿角/阿炭v0.3新六PNG、两板、两PSD及包内精确引用孟桃/阿棠/阿灯/小锦v0.1候选；两Task既有Required/验收/专业Review通过，Master最终接受，两Task DONE，现行及独立v0.3 Approval USER_APPROVED、decided_at null。Master接受见`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/MASTER_ACCEPTANCE.md`，30项完整组合SHA清单`deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json`（SHA `eda867c8c27e17589f4a8621715e09bc20fe3abb8db0edbdad3c90ee1f2baab7`）。旧非人v0.2继续未批准；批准只限静态立绘组合，不称clean Sprite、Client导入、运行或QA通过。Continuity check：U04两专业线DONE，无空转READY/IN_PROGRESS；不新建Client任务。本轮复盘`WR-20261010-U04-HUMAN-V03-APPROVAL-001`。
+
+2026-10-10 14:43:16+08:00（主场景Client v0.1限定送审与continuity）：`SCENE-CLARITY-CLIENT-20261010` 六项Required与`DELIVERABLE.json` 13项索引均实存，四项验收同序PASS/PASS/NOT_TESTED/PASS。Creator 3.8.8当前Web构建以成功完成码36结束，五张构建PNG与Art v0.3、客户端PNG哈希一致；Client同构建IAB实操U00/U01，Art亲自现场观察并APPROVED，Tech独立核资源/构建并APPROVED，Master限定范围接受送审。U00/U01场景帧未捕获或本地保存，故截图归档子项未完成；入口菜单工具截图不能代替场景证据；真实设备、性能及小游戏平台未测。Task `IN_PROGRESS→REVIEW→USER_REVIEW`、Approval v0.1 `USER_REVIEW`/decided_at null，等待用户对具体接入版本与证据范围决定，不标DONE。Continuity check：本线达到真实USER_REVIEW，无空转IN_PROGRESS；U04并行线独立。复盘`WR-20261010-SCENE-CLARITY-CLIENT-V01-001`。
+
+2026-10-10 14:28:34 +08:00（主场景 Client v0.1 真实开工）：`SCENE-CLARITY-CLIENT-20261010` 五张客户端 PNG 已实际替换，`evidence/ASSET_IMPORT_AUDIT_PREBUILD.json`、同版 Art/Tech 运行 Review 实存；Task `READY→IN_PROGRESS`，Approval v0.1 DRAFT。Tech报告记录 Creator 3.8.8 当前 web-mobile 构建 Finished、CLI exit 36，构建五PNG与获批 Art v0.3 哈希一致；Client/Art已现场观察 IAB U00/U01 画面及镜头交互，截图持久化与构建/HTTP/浏览器主报告仍由Client整理，Producer不据Review文本伪记其已落盘。Required尚缺实施报告、交付索引与Master接受，不能提前USER_REVIEW。单元示例由Owner留证，无QA阶段；设备/小游戏平台性能未测。Continuity：本线有本轮真实资源改动与Review，Owner继续执行至具体门禁，不以IN_PROGRESS占位停止。
+
+2026-10-10 13:57:32 +08:00（主场景 v0.3 Gate2 用户批准）：用户对唯一当前送审的 `SCENE-CLARITY-REDRAW-ASSET-20261010` v0.3 具体图版明确“好的继续吧”；Master接受美术交付，Task `DONE`，现行及独立 v0.3 Approval 均 `USER_APPROVED`。审批绑定 `USER_REVIEW_PACKET.md` SHA `f38bfa15…097f2cf` 与 `CUT_MANIFEST.json` SHA `6415e4ef…29400a0`；用户消息精确时刻未知，本行为Producer登记时刻。准确 v0.3 PSD/五PNG已可交相同源版本 Client 正式接入；Creator运行、性能和 QA 仍待新任务验证。Continuity check：美术Task已 DONE，本轮无空转；Master正编排下游Client/Tech任务，不以美术DONE当成实施完成。复盘 `WR-20261010-SCENE-CLARITY-GATE2-V03-APPROVAL-001`。
+
+2026-10-10 11:37:54 +08:00（主场景 v0.3 Gate2 送审与 continuity）：`SCENE-CLARITY-REDRAW-ASSET-20261010` 20/20 Required、`DELIVERABLE.json` 31/31 索引实存，四项验收与 Task 同序 PASS。PSD、五张 3072×1024 RGBA PNG、原生五层和重组的清单哈希吻合；L01/L02 与 v0.2 逐字节相同。六店静态对照已按 U00 v0.6 脚点和 0.34 缩放重组。自产切图直接 `IN_PROGRESS→REVIEW→USER_REVIEW`；审批 v0.3 USER_REVIEW、decided_at null，等待用户对具体切片及效果决定。原生 2172×724 规范化和 Creator/设备未测已披露；Client 正式接入仍锁。Continuity check：本线已到真实 USER_REVIEW，无空转 READY/IN_PROGRESS；U04 并行线独立。复盘 `WR-20261010-SCENE-CLARITY-GATE2-V03-001`。
+
+
+
+
+2026-10-10 11:14:25 +08:00（v0.3店铺实际同尺度对照）：`review/current_shops_on_v02_scene.png`、`current_shops_on_v03_scene.png`及含店铺的全景、中央与两端1x并排图已实存；Master已查看主对照并认为可送审方向。Art仍在产PSD/清单与完整审核文书，最终版本未冻结，不提前判20项全齐或Gate2通过。Task IN_PROGRESS、Approval DRAFT，Client仍锁。
+
+
+
+
+
+2026-10-10 10:52:27 +08:00（v0.3三张整层原生图实产）：L03/L04/L05 `source/new_l0*_whole_native.png` 3/3已存在；L01/L02沿v0.2复制。当前只核实原生图路径，不把数量判作店铺画风、轻阴影或高清通过；PSD、五张正式PNG、同尺度全景/店铺对照、文件检查与Gate2审核包仍待。Task IN_PROGRESS、Approval DRAFT。
+
+
+2026-10-10 10:50:40 +08:00（v0.3 L04代表层后验）：Art `WHOLE_L04_SAMPLE_RESULT.md` PASS，Tech `TECH_L04_SAMPLE_RESULT.json`独立APPROVED_FOR_EXPANSION，均仅放行L03/L05按同法整层重绘。首候选沿岸增加成排灯被拒留历史，现用第二次全幅新绘L04原生2172×724 RGBA SHA `336791c6…857835a3`；桥高/灯亮及新旧层接合需整组复核。Task IN_PROGRESS、Approval v0.3 DRAFT，Gate2及Client仍锁。
+
+
+2026-10-10 10:48:41 +08:00（主场景v0.3真实开工）：用户退回v0.2送审图，要求与当前店铺画风一致、阴影减轻，L01/L02保持v0.2原字节，L03/L04/L05分别整层重绘，不修图分区；星光/远山可不调整。Master已定义v0.3范围；Art `SHOP_STYLE_REDRAW_PLAN.md`、`VISUAL_ANCHORS.md`和Art/Tech同批首图前签认实存，完整L04首图及同尺度局部对照已产出，Task `READY→IN_PROGRESS`有本轮Required证据。此刻仅方法样张，三层正式图、PSD、五PNG、重组及店铺同尺度对照未齐；Gate2未送审，U00/U01 Client仍锁。v0.2候选退回历史由Master维护准确Approval版本链。
+
 
 2026-10-10 10:44:21 +08:00（U04 v0.2实际图版与技术支持同批送审）：Art `U04-MANAGER-PORTRAITS-001` 14/14 Required实存，18张独立非人PNG、六张3900×1850三阶段同基尺板、六份PSD及6000×1850六人0魂高矮总览逐路径核实；Tech `U04-MANAGER-PORTRAIT-TECH-001` 6/6 Required实存。两Task各四项验收与各自DELIVERABLE逐字同序全PASS，Art/Master/Tech同版Review均APPROVED；两Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval准确v0.2 USER_REVIEW、decided_at null，Art审批对象为`USER_REVIEW_PACKET.md`，Tech为`TECH_REVIEW.json`。Tech确认六板共基线、同人单一缩放与六PSD复合图对板像素AE=0；低alpha软晕、Photoshop实开/Creator导入/目标机运行仍未通过验证，不能称正式干净Sprite。31项共享资产登记保留Client未导入状态。Gate1 v0.3方案DONE不代替本次实际图版批准，旧v0.1人形仅历史。Continuity check：Art与Tech均到真实USER_REVIEW用户门禁，没有本轮空转READY/IN_PROGRESS；Client/QA未安排。复盘`WR-20261010-U04-GHOST-PORTRAIT-V02-001`。
 
+2026-10-10 10:30:54 +08:00（Producer Gate2送审与continuity）：`SCENE-CLARITY-REDRAW-ASSET-20261010` v0.2五张各自整层新绘完成，原生五张均2172×724；PSD及五张正式3072×1024原位RGBA PNG、重组和同尺度/1.8对照实存。Task 19/19 Required、DELIVERABLE索引23/23实存且四验收同序PASS；清单中PSD/五PNG/原生五图/重组SHA均核吻合，用户审核包SHA `659767e2…e1b6b91`。自产切图按规则直接`USER_REVIEW`，不加成品专业复审；Approval v0.2 `USER_REVIEW`、`decided_at=null`。原生像素限制、格式规范化及灯水偏亮/桥拱略高已披露，未作Creator运行或性能结论。Gate2用户未批前Client U00/U01不得接入。Continuity：本线达到真实USER_REVIEW，没有空转READY/IN_PROGRESS；U04独立线不在本次核验。复盘`WR-20261010-SCENE-CLARITY-GATE2-V02-001`。
+
+2026-10-10 10:23:26 +08:00（Producer正式文件路径核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010`五张3072×1024 RGBA正式命名PNG和8BPS PSD已实存；PSD实际`source/scene_clarity_whole_layer_master.psd`，当前Task Required却列`source/scene_clarity_master.psd`，须统一路径与交付索引后才能Gate2。重组像素/视觉和文件检查文书待，不提前USER_REVIEW；Client锁定。
+
 2026-10-10 10:20:27 +08:00（U04 v0.2非人代表样张与扩批）：孟桃0魂真实`characters/mgr_mt_s0.png`及`psd/mgr_mt_s0_sample.psd`、同版预览/图层清单已落盘；Art `SAMPLE_ART_REVIEW.md` PASS（仅样张视觉），Master `SAMPLE_MASTER_REVIEW.json` APPROVED，Tech `SAMPLE_TECH_REVIEW.json` APPROVED_FOR_BATCH_CANDIDATES，`BATCH_PRESIGN.json`准余17张候选扩批。Tech核样张1024×1536 RGBA、PSD两层且复合图与预览像素误差0；低alpha软晕披露，不能认作干净Sprite，Cocos/目标机NOT_TESTED。两个Art执行单元并行制作前/后三人物，仍属同一`U04-MANAGER-PORTRAITS-001`正式Task，不新增Task或用户样张门禁；Art/Tech任务继续IN_PROGRESS、Approval DRAFT，待全批真实图/板/PSD与专业Review后再送USER_REVIEW。
+
+2026-10-10 10:19:37 +08:00（Producer五张整层新绘实产）：`SCENE-CLARITY-REDRAW-ASSET-20261010` v0.2五张分层整幅原生图5/5实存，均2172×724，L01 RGB、L02–L05 RGBA有alpha；只核文件/像素事实，不凭数量和插值格式判高清通过。五层同尺度重组、PSD/五PNG、逐项视觉/技术文件检查和具体Gate2待，Task IN_PROGRESS。
+
+2026-10-10 10:16:43 +08:00（Producer整层方法续制门禁）：Tech `TECH_WHOLE_L04_SAMPLE_RESULT.json` 对同SHA L04实图独立APPROVED，Art/Tech均仅判整层方法样张可继续其余L01/L02/L03/L05。原生2172×724限制、桥拱/色光待复核；正式PSD/五PNG/Gate2及运行均未通过。Task IN_PROGRESS，Client不接入。
+
+2026-10-10 10:15:01 +08:00（Producer L04 Art限定结论）：Art `WHOLE_L04_SAMPLE_RESULT.md`记整层L04首图仅作为五层整绘方法扩批条件PASS：新增桥栏石纹和水纹、真透明；桥拱略高、暖灯蓝水偏亮需控制。原生2172×724限制须披露，正式五层/PSD/Gate2仍NOT_TESTED；Tech独立结果待。
+
 
 2026-10-10 10:14:19 +08:00（U04新批Tech开工）：Tech v0.2 `TECH_PRODUCTION_PRESIGN.md`与`.json`实际实存，`U04-MANAGER-PORTRAIT-TECH-001` READY→IN_PROGRESS、Approval DRAFT。Art/Tech两Owner均有本轮预案实产；首图前仍须核同批签认的实际结论，随后样张与批次门禁按序推进。Continuity check：两任务IN_PROGRESS均有本轮Required证据，不以预案落盘作为停止点。
 
@@ -12,13 +51,57 @@
 
 2026-10-10 10:12:44 +08:00（U04 v0.3批准与非人新批解锁）：用户对唯一送审非人Q版鬼怪具体方案v0.3明确“批准”，原消息精确时刻未知；11/11 Required、四项验收PASS、Art/Master同版APPROVED，Master接受`U04-MANAGER-CONCEPT-PLAN-001` DONE，`ARTIFACT_APPROVAL_v0.3.json`独立USER_APPROVED快照保留且decided_at null。Master授权原`U04-MANAGER-PORTRAITS-001`与`U04-MANAGER-PORTRAIT-TECH-001`修订为v0.2新批，输入准确获批v0.3；当前两Task READY/Approval DRAFT，v0.2 Owner预案尚未核到实产，不虚记IN_PROGRESS。旧v0.1人形实图/板/PSD及签认仅留历史，不作为新批候选。首图前Art/Tech同批重签，代表样张通过后扩批；不安排Client/QA。Continuity check：两READY任务依赖满足且无真实阻塞，Master正分派Owner本轮继续产出，不能停在READY。
 
+2026-10-10 10:08:27 +08:00（Producer v0.2首图核验）：完整L04新绘原生`source/new_l04_whole_native.png`实存，2172×724 RGBA、alpha 0–255、SHA `35c090a6…8305ee`；旧新整层和旧其他层重组对照图已出。格式探针不能算高清细节；专业实图结论待，暂不扩四层或送Gate2。
+
+2026-10-10 10:06:37 +08:00（Producer v0.2同版预签）：新整层方案当前SHA `3e107346…7495bcd` 与Art/Tech预签均匹配且APPROVED，只放行完整L04首图。原生像素和可见新绘细节分别判，3072规范化不算新增细节；用户改定方法和旧v0.1失败历史均保留。首图、五层成品、Gate2和Client仍待，Task IN_PROGRESS有新预案实产。
+
+2026-10-10 10:05:05 +08:00（Producer v0.2版本核验）：Master已把`SCENE-CLARITY-REDRAW-ASSET-20261010` Task的Required和验收改为五层整张新绘v0.2，旧v0.1 Task保`history/v0.1/TASK.json`；新`WHOLE_LAYER_REDRAW_PLAN.md`当前SHA `3e107346…7495bcd` 与Art预签同版，首稿`911e…`已被替换。Producer建准确v0.2 Gate2 Approval DRAFT/decided_at null。Tech首图前同版预签待，新L04整层未出；IN_PROGRESS有预案实产，不能据旧区图判本版完成。
+
 2026-10-10 10:04:58 +08:00（U04 v0.3送审与continuity）：`U04-MANAGER-CONCEPT-PLAN-001` v0.3 11/11 Required实存，`DELIVERABLE.json`四项现行Task验收逐字同序全PASS，Art/Master同版Review均APPROVED；Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval指向准确v0.3新非人Q版方案、USER_REVIEW、decided_at null。六人鬼怪主形与明显高矮差异是具体待批提案，用户方向纠正不自动批准此版本；本版未出新图。旧v0.2 USER_APPROVED快照保留历史，旧人形生产及Tech支持两Task继续BLOCKED，待v0.3用户决定后再由Master修订/恢复。Continuity check：方案任务已到真实USER_REVIEW，旧两Task有准确新方案审批依赖阻塞，无空转READY/IN_PROGRESS；当前唯一可继续门禁为用户对新具体方案决定。复盘`WR-20261010-U04-NONHUMAN-V03-001`。
+
+2026-10-10 10:02:07 +08:00（Producer新方法实产与状态差异）：v0.2 `WHOLE_LAYER_REDRAW_PLAN.md`首稿实存，SHA `911e4f2a…ddc5e5b2`；Art已开始新方法文书制作。当前`SCENE-CLARITY-REDRAW-ASSET-20261010` Task仍列v0.1 Required，Master需保旧快照并修订v0.2准确交付/状态；新批Art/Tech预签未齐，不放行整层首图。旧区域候选不正式复用。
+
+2026-10-10 09:56:47 +08:00（Producer记录用户最新方法）：`SCENE-CLARITY-REDRAW-ASSET-20261010` v0.1区域拼图方法停止；原20区片、五张candidate和诊断留历史且不正式复用。用户明确改为五层分别整张重绘、不修图、不分区；无需重问Gate1方向，仍须Art/Tech对v0.2整层新批首图前同版复签，真实原生尺寸与细节逐图核。Master/Art正在改版Task与新预案，Producer待准确v0.2 Required及实产核状态；Gate2、U00/U01 Client仍锁。
 
 2026-10-10 09:51:57 +08:00（U04 v0.3实际开工）：`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md`非空实存，Art正在修订六人非人Q版具体方案；方案Task REVISION→IN_PROGRESS、Approval v0.3 DRAFT。其余固定文档及Art/Master同版Review待核，不停在此节点；旧人形生产/Tech两Task继续具体BLOCKED。
 
+2026-10-10 09:47:45 +08:00（Producer候选组装核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010`五张3072×1024 RGBA候选层和同尺寸整体候选重组已实存；仍需Art/Tech核视觉接缝、锚点/alpha/补底，再产正式PSD与五PNG。当前候选不作Gate2批准或Client正式接入依据，Task IN_PROGRESS。
+
 2026-10-10 09:45:07 +08:00（U04用户方向纠正）：用户最新明确“不要用人的外形，Q版鬼怪，可很矮/很高”；原消息精确时刻未知。旧`U04-MANAGER-CONCEPT-PLAN-001` v0.2 USER_APPROVED快照仍是历史事实，但其人形方向退出当前候选；方案Task DONE→REVISION，当前Approval指v0.3 `ART_PRODUCTION_PLAN.md`、DRAFT、decided_at null。Master指定Art修订逐人非人Q版轮廓、明显高矮差异、同人物0/2/3魂尺度一致，保留Product v0.3性格/身份与18幅范围。旧`U04-MANAGER-PORTRAITS-001`与Tech支持Task均BLOCKED，已产18PNG/6板/6PSD及退修历史保留但未获具体资产用户批准；新v0.3具体方案USER_APPROVED前不再出图或恢复旧批次。Continuity check：旧两生产Task有明确新方案审批依赖阻塞；方案Art Owner正在修订v0.3，须有实产才记IN_PROGRESS，随后持续至同版Review/USER_REVIEW。
 
+2026-10-10 09:42:44 +08:00（Producer批量分区实产）：`SCENE-CLARITY-REDRAW-ASSET-20261010`五层四区20/20原生新绘片和20/20目标1024片实存，原生尺寸均1254方；尚需对逐层alpha、四区接缝、色光及PSD/五PNG/同尺度重组作真实核验，不能凭片数进入Gate2。Task IN_PROGRESS有大量实图证据，Client继续锁定。
+
+
+
 2026-10-10 09:06:12 +08:00（U04 Gate1批准及正式生产开线）：用户对唯一送审Art v0.2具体方案原话“批准”，原消息精确时刻未知；Producer核10/10 Required、5/5 PASS及Art/Master同版APPROVED，保存独立USER_APPROVED快照，Master接受方案Task DONE。Master创建`U04-MANAGER-PORTRAITS-001`（Art，18 PNG/6板/6 PSD）与`U04-MANAGER-PORTRAIT-TECH-001`（Tech同批预签、代表样张、扩批与终审）。Producer已核Art三份预案与Tech预签文件实际落盘，两任务IN_PROGRESS/Approval DRAFT。首图须同批Art/Tech预签；孟桃0魂样张通过后才扩批。Continuity check：两Owner均有本轮Required产出，仍须持续推进至专业Review与用户对真实资产版本的USER_REVIEW；没有仅占位的READY/IN_PROGRESS。具体切图Gate2、Client与QA未解锁。
+
+2026-10-10 09:28:26 +08:00（Producer新绘分区实产）：`SCENE-CLARITY-REDRAW-ASSET-20261010` L01四区原生新绘各1254×1254 RGB，四张1024目标片与硬拼接诊断图已落盘；是否能无缝接合待专业实图核，不视作正式L01导出。Task IN_PROGRESS，五层PSD/切片和Gate2未达。
+
+2026-10-10 09:21:38 +08:00（Producer L04方法核验）：Tech `TECH_L04_SAMPLE_RESULT.json` 同SHA独立APPROVED，Art/Tech均将修订片限定为分区透明方法样张PASS；可按已签`FULL_LAYER_EXPANSION_PLAN.md`试五层四区，变化须复签。亮度/红边、全图接缝、PSD和最终Gate2仍待实核；Task IN_PROGRESS。
+
+2026-10-10 09:20:27 +08:00（Producer L04结果）：Art `L04_SAMPLE_RESULT.md` 对修订片作仅限分区透明方法的PASS，记录桥拱略高、灯水偏亮及局部红边，五层与接缝NOT_TESTED；Tech正式结果文件待。资源Task继续IN_PROGRESS，Gate2/Client锁定。
+
+2026-10-10 09:17:30 +08:00（Producer L04修订样张核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010`一次修订输出已实存，原生1254×1254 RGBA、alpha范围0–255，SHA `412388d2…c733fb`，同尺度并排图已在；真实桥栏坐标、灯晕和透明边缘复判待。资源IN_PROGRESS有实图，不提前Gate2或四区五层扩批。
+
+2026-10-10 09:16:33 +08:00（Producer L04修订预签）：`SCENE-CLARITY-REDRAW-ASSET-20261010`一次双参考定向修订`L04_REPAIR_PLAN.md` SHA `f8398587…5b166a`已获Art/Tech同版APPROVED；只授权一张修订L04中央试样，失败须停批交Master。旧漂移片REVISE保留，四区五层、Gate2和Client均未放行。
+
+2026-10-10 09:15:33 +08:00（Producer L04试样问题）：Art核`review/l04_x1280_side_by_side.png`判当前透明试样REVISE：红橙光晕扩大、桥/栏杆局部右移，不能进入四区/五层。一次定向修订`L04_REPAIR_PLAN.md` SHA `f8398587…5b166a`已有Art预签，Tech同版复签待；仍IN_PROGRESS有真实返工预案，Gate2/Client锁定。
+
+2026-10-10 09:13:53 +08:00（Producer L04试样文件核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010` 的`source/representative_l04_x1280_native.png`原生1254×1254 RGBA，alpha范围0–255，SHA `5aed9775…7b3c`；1024试片与旧图并排证据实存。视觉/技术实图判断待，仍不据通道存在宣称透明边缘/构图合格；Gate2及Client锁定。
+
+2026-10-10 09:12:54 +08:00（Producer扩批预签）：`SCENE-CLARITY-REDRAW-ASSET-20261010`五层扩批预案SHA `6ea200ce…f119118`已由Art/Tech同版APPROVED；首步仅L04中央透明层实图试验，alpha/坐标/细节通过且方法不变后按签认方案继续四区五层。预签不等于结果通过，资源IN_PROGRESS，Gate2/Client继续锁定。
+
+2026-10-10 09:11:54 +08:00（Producer样张评审进度）：Art `SAMPLE_VISUAL_CHECK.md` 对中央试样记录局部新绘细节和河街关系PASS、色光偏艳列扩批控制，整图拼缝/右牌楼/五层仍NOT_TESTED；`FULL_LAYER_EXPANSION_PLAN.md`已提交，SHA `6ea200ce…f119118`，待Art/Tech同版复签后才能四区及五层扩批。资源Task继续IN_PROGRESS，Gate2未送。
+
+2026-10-10 09:10:20 +08:00（Producer中央试样文件核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010`的`source/representative_center_native.png`已实存，原生1254×1254、SHA `1943f40e…f5c138`；审阅缩至1024×1024及并排对照图已实存。当前只满足分区单样像素事实，构图与可辨新绘细节待专业实图结论；未准四区/五层扩批或Gate2，Task IN_PROGRESS。
+
+2026-10-10 09:08:07 +08:00（Producer分区预签）：`SCENE-CLARITY-REDRAW-ASSET-20261010`中央分区追加预案SHA `792d0670…7f701a26a` 与Art/Tech两Review均同版APPROVED；旧总览中央裁片`source/reference_center_x1280.png`原生1024×1024。仅可产单张中央试样，四区整图/五层全量需后续复签。Task IN_PROGRESS有实产，Gate2及Client仍锁定。
+
+2026-10-10 09:07:09 +08:00（Producer样张核验）：`SCENE-CLARITY-REDRAW-ASSET-20261010`首张整图样张`deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.1/source/representative_full_native.png`实存，PNG原生2172×724、SHA `1330bafb…dfcfb71ba3101`；低于3072×1024目标，不能以放大/插值判高清通过或用于正式切图。`REGIONAL_SAMPLE_ADDENDUM.md`已出现，分区补绘变化项须Art/Tech复签后执行；当前仍IN_PROGRESS有样张实产。PSD/五PNG/重组/Gate2及Client替换均未发生。
+
+2026-10-10 09:04:39 +08:00（Producer首图前门禁复核）：`SCENE-CLARITY-REDRAW-ASSET-20261010`的`deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.1/PREFLIGHT_PLAN.md`实核SHA-256 `52f0dda9c66ab34c4832771625af517afe6248d8c34dd73bc7526dec0b3c68d7`，Art/Tech两份同版预签均APPROVED；仅可制作首张整图代表样张。工具原生像素、实际清晰度和全量五层尚未核，扩批或分区工艺变化须先复签。资源Task IN_PROGRESS有Required实产，Gate2与Client接入仍锁定。
+
+2026-10-10 09:04:15 +08:00（Producer 场景高清重绘 Gate1 批准与资源开工）：用户明确回复“批准”准确 `deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md` v0.1；方案/锚点/权利来源/审核包SHA与Art、Tech、Master同版Review核合，8/8 Required、四项方案验收PASS，`SCENE-CLARITY-REDRAW-PLAN-20261010` Approval USER_APPROVED、Master条件接受落实为Task DONE。Task第四验收原把8份Required误写“五份文字”，已仅对齐同版DELIVERABLE实际criterion；旧USER_REVIEW Task/Approval留`history/v0.1-user-review/`，已批方案正文未改。新资源Task `SCENE-CLARITY-REDRAW-ASSET-20261010` 已有本轮 `PREFLIGHT_PLAN.md`、`ART_PREFLIGHT.json`、`ART_BRIEF.md` 实产，故IN_PROGRESS成立；Tech同批预签、首张代表样张、PSD/五PNG、重组与具体Gate2审批待。Client U00/U01正式替换仍锁定。最近复盘见`WR-20261010-SCENE-CLARITY-GATE1-APPROVAL-001`。
 
 2026-10-10 08:58 +08:00（Producer U04 Art v0.2 Gate1送审与continuity）：现行Task 10/10 Required实存，`DELIVERABLE.json`五项验收与Task逐字同序且全部PASS，`ART_REVIEW.json`及`MASTER_REVIEW.json`同版均APPROVED；Task `IN_PROGRESS→REVIEW→USER_REVIEW`，Approval v0.2 `USER_REVIEW`、`decided_at=null`。`ART_PRODUCTION_PLAN.md`连同`USER_REVIEW_PACKET.md`呈现六店长各0/2/3魂三阶段方案：计划18幅全身图、6张对照板，2魂展示1–2魂过渡并说明1魂；现无实图。旧v0.1 DRAFT/BLOCKED评审保留。用户本轮恢复美术与提出出图范围不等于具体Gate1方案批准；在用户明确批准v0.2前，首图Art/Tech预签、正式图片/PSD/切片和客户端接入均未解锁。Continuity check：本U04任务已达真实USER_REVIEW；Product前序DONE，无本线空转READY/IN_PROGRESS。本轮未编排QA/Client。复盘`WR-20261010-U04-MANAGER-PLAN-V02-001`。
 

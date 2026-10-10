@@ -1,0 +1,28 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "独立核读并预签同批 PREFLIGHT_PLAN.md SHA-256 52f0dda9c66ab34c4832771625af517afe6248d8c34dd73bc7526dec0b3c68d7，Art 同版 ART_PREFLIGHT.json 为 APPROVED。本次仅批准先用 image_gen 编辑旧总览制作整画面代表样张；工具真实输出尺寸、比例与画面坐标尚不保证，须逐张记录原生像素、路径、模式、提示词、时间和 SHA。预签不是样张实测或清晰度通过结论。"
+    },
+    {
+      "severity": "INFO",
+      "message": "目标保持 3072×1024 五层完整原位 RGBA、L01–L05 语义、层序与视差 [0.3,0.8,1,1,1]；PSD 保留完整未裁画布，正式 PNG 均从同批母版原位导出。SpriteFrame 按 trim none、偏移 0、中心锚点交接；无全镜头遮挡证据不裁减，L04 移出 L05 后须有连续河面补底并核半透明边缘。"
+    },
+    {
+      "severity": "INFO",
+      "message": "五张 3072×1024 RGBA8 展开量为 62,914,560 字节，即 60 MiB，仅为未压缩像素预算；压缩、mipmap、CPU 副本、驻留显存、DrawCall 和目标机性能均 NOT_TESTED。不得以透明面积推定此预算减少。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "若 image_gen 原生输出低于目标画布，禁止以插值、锐化或单纯放大冒充高清；按预案先停下，登记实际尺寸与偏差，再对分区真实补绘、重叠、接缝及五层扩批变化项由 Art/Tech 对同批预案复签。若工具无法稳定保持构图或达到新绘细节，暂停并交 Master 处理。"
+    },
+    {
+      "severity": "INFO",
+      "message": "代表样张须与 v0.6 在同背景、同画布、同手机显示尺度及 1.8 倍比较桥栏石纹、街石、柳叶/牌楼，并附原生 100% 裁切；PASS 后再复签全量五层生产。PSD 转换只定位图层/alpha，不把拆层称为原生笔触可编辑。自行切图的具体五 PNG、PSD、同尺度重组及版本清单直接交用户 Gate2 审核，Gate2 前 Client 不正式接入。"
+    }
+  ],
+  "next_action": "Art 可开始本 SHA 所述首张整画面代表样张，先核原生输出与真实新绘细节；若涉及分区补绘或全量五层扩批，Art/Tech 在执行前对变化项和同批版本复签。"
+}

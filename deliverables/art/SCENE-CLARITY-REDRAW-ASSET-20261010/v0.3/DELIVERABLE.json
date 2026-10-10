@@ -1,0 +1,66 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "owner": "art",
+  "summary": "按当前已接入店铺画风减轻场景厚阴影；L01/L02逐字节保留，L03/L04/L05整层新绘，交付五层PSD、五张原位RGBA PNG及Gate2静态同尺度审阅包。",
+  "artifacts": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/SHOP_STYLE_REDRAW_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/PREFLIGHT_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/ART_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/TECH_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/ART_BRIEF.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/SOURCE_AUDIT.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/source/scene_clarity_master.psd",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/mobile_comparison.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/current_shops_on_v03_scene.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/current_shops_v02_top_v03_bottom_full_1x.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/v02_left_v03_right_center_1x.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/v02_left_v03_right_center_18x.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/native_bridge_v02_left_v03_right_1x.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/review/psd_readback_composite.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/WHOLE_L04_SAMPLE_RESULT.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/TECH_FROZEN_FILE_CHECK.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/source/new_l03_whole_native.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/source/new_l04_whole_native.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/source/new_l05_whole_native.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户本轮店铺画风与减轻阴影的整层方法准确绑定，首图前Art/Tech同版预签，真实店铺参考与来源登记。",
+      "result": "PASS",
+      "evidence": "SHOP_STYLE_REDRAW_PLAN.md SHA 5db4a7fa...；ART_PREFLIGHT.json 与 TECH_PREFLIGHT.json 同SHA；SOURCE_AUDIT.md记录当前已接入六店来源。"
+    },
+    {
+      "criterion": "L01天空星光与L02远山背景逐字节继承v0.2，仅L03/L04/L05各整幅重新绘制；不修图、分区拼接或滤镜调色，保持原构图及五层语义。",
+      "result": "PASS",
+      "evidence": "L01/L02导出SHA对v0.2一致；L03/L04/L05各有独立2172×724 RGBA整幅imagegen源图，退回候选保留历史，未用分区或滤镜。"
+    },
+    {
+      "criterion": "完整五层PSD、五张3072×1024原位RGBA PNG及重组可追溯，透明补底、桥街连接和层序/视差保持；近景厚重阴影减轻并与店铺实际画风对照，原生尺寸和细节提升分别记录。",
+      "result": "PASS",
+      "evidence": "五层PSD读取3072×1024、5层；五正式PNG均3072×1024 RGBA；PSD读回与PNG重组逐像素一致；VISUAL_ANCHOR_CHECK.md及当前六店0.34同屏静态图。"
+    },
+    {
+      "criterion": "同尺度v0.2/v0.3与当前店铺对照、手机1.0及1.8静态视窗、原生裁切和切图版本清单齐备后直接交Gate2用户审核；获批前不改工程。",
+      "result": "PASS",
+      "evidence": "同尺度1x/1.8、原生桥裁切、六店v0.2/v0.3同背景对照、CUT_MANIFEST.json及USER_REVIEW_PACKET.md齐备；Client未替换。"
+    }
+  ],
+  "risks": [
+    "三张新层原生2172×724，3072×1024等比规范只满足画布格式；可见新增结构需以原生及同尺度图判断。",
+    "当前为静态资产与按U00 v0.6脚点/0.34缩放的店铺参考；Creator运行、设备性能与真实遮挡尚未验证。",
+    "Gate2用户尚未批准具体PSD/五PNG版本，客户端不得正式接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

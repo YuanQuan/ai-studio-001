@@ -1,0 +1,59 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "owner": "art",
+  "summary": "按用户最新方法分别整张重绘五层，交付3072×1024 PSD、五张原位RGBA PNG、原生源图和Gate2同尺度对照；客户端尚未接入。",
+  "artifacts": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/WHOLE_LAYER_REDRAW_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/PREFLIGHT_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/ART_BRIEF.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/SOURCE_AUDIT.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/source/scene_clarity_master.psd",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/mobile_comparison.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/old_left_new_right_full_same_scale.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/old_left_new_right_center_phone_18x.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/old_left_new_right_native_scale_bridge.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/psd_readback_composite.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/old_left_new_right_left_phone_1x.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户最新整层方法准确绑定，首图前Art/Tech对同版工具、原生尺寸记录、五层透明/层序与同尺度质量门槛预签。",
+      "result": "PASS",
+      "evidence": "WHOLE_LAYER_REDRAW_PLAN.md 与 ART_PREFLIGHT.json、TECH_PREFLIGHT.json 同 SHA 预签；TECH_WHOLE_L04_SAMPLE_RESULT.json 同意扩批。"
+    },
+    {
+      "criterion": "五张旧图分别作身份/构图参考而非局部修图；每层整幅一次新绘，旧分区候选不得成为本版正式像素，真实原生尺寸与视觉新增细节分开判。",
+      "result": "PASS",
+      "evidence": "source/new_l01..l05_whole_native.png 各2172×724，五个独立整层imagegen输出；SOURCE_AUDIT.md 记录SHA。"
+    },
+    {
+      "criterion": "完整多图层PSD、五张3072×1024原位RGBA PNG和按层序重组可追溯；桥/右月/右牌楼、河前街后、宽街与视差不变，无新增物件或透明露洞。",
+      "result": "PASS",
+      "evidence": "source/scene_clarity_master.psd 的PSD读取为3072×1024五层；五个exports PNG均3072×1024 RGBA；PSD读回总览与脚本预览逐像素一致，VISUAL_ANCHOR_CHECK.md记录实图。"
+    },
+    {
+      "criterion": "同背景同视窗同尺度及1.8对照、原生裁切、来源/权利、切图清单备齐后直接交Gate2用户审核；获批前不改工程。",
+      "result": "PASS",
+      "evidence": "review/mobile_comparison.png、old_left_new_right_center_phone_18x.png、old_left_new_right_native_scale_bridge.png、USER_REVIEW_PACKET.md、CUT_MANIFEST.json 已形成；Gate2待用户决定，工程未替换。"
+    }
+  ],
+  "risks": [
+    "内置imagegen原生输出2172×724，3072×1024仅格式等比适配；更清晰的判断来自同尺度实图新增笔触，不来自插值。",
+    "新图比旧稿更亮、更偏绿色，暖灯与水蓝更显著，桥拱略高，需用户在Gate2审看。",
+    "客户端尚未接入，实际运行画面与遮挡尚未验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

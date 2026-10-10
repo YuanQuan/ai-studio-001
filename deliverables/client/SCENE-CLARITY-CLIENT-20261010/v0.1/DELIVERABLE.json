@@ -1,0 +1,48 @@
+{
+  "task_id": "SCENE-CLARITY-CLIENT-20261010",
+  "owner": "client",
+  "summary": "接入用户已批准的主场景Art v0.3五张PNG，保留原meta/UUID及U00/U01镜头逻辑；Creator当前Web构建和桌面IAB现场检查已有可追溯文本/日志，U00/U01场景帧截图未本地保存。",
+  "artifacts": [
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/DELIVERABLE.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/TECH_REVIEW.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/ART_REVIEW.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/MASTER_ACCEPTANCE.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/ASSET_IMPORT_AUDIT_PREBUILD.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/ASSET_IMPORT_AUDIT_POSTBUILD.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/CREATOR_BUILD_LOG.log",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/BROWSER_RUNTIME_CHECK.md",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/HTTP_ACCESS.log",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/CREATOR_CLI_CRASH_REPORT.ips"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "五PNG源目标SHA一致，保留meta与真实UUID、3072×1024五层原位语义，登记美术版本及客户端路径。",
+      "result": "PASS",
+      "evidence": "evidence/ASSET_IMPORT_AUDIT_PREBUILD.json、ASSET_IMPORT_AUDIT_POSTBUILD.json、BUILD_MANIFEST.json和project/ASSET_HANDOFF_REGISTRY.md：Art v0.3正式PNG、Client正式PNG及当前构建五PNG逐项SHA一致，原meta/UUID与五层原位语义保留。"
+    },
+    {
+      "criterion": "U00/U01实际引用新版，保持当前店铺0.34布局、视差、拖动缩放重置返回行为，不改变其他单元。",
+      "result": "PASS",
+      "evidence": "IMPLEMENTATION_REPORT.md、evidence/BROWSER_RUNTIME_CHECK.md、TECH_REVIEW.json与ART_REVIEW.json：U00/U01实际进入、放大、拖动、Reset、Return，U00六店0.34和视差源码/Prefab引用未变；本结论限桌面Web示例。"
+    },
+    {
+      "criterion": "Creator导入与当前Web构建、内置浏览器实际U00/U01及镜头关键状态验证有证据，未测设备指标单列。",
+      "result": "NOT_TESTED",
+      "evidence": "Creator 3.8.8当前web-mobile构建完成且BUILD_MANIFEST.json五张打包PNG逐字节通过；BROWSER_RUNTIME_CHECK.md和ART_REVIEW.json记录IAB现场操作/观察，HTTP_ACCESS.log记录缓存校验请求。但U00/U01场景帧未捕获或保存为本地截图，图像归档子项未完成；真实手机和小游戏平台均未测。"
+    },
+    {
+      "criterion": "Art/Tech核实际运行结果，Required齐全、验收可复核，提交具体接入版本用户审核。",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.json、TECH_REVIEW.json均APPROVED；IMPLEMENTATION_REPORT.md与MASTER_ACCEPTANCE.md明示Web现场检查范围和截图持久化缺口，全部Task Required实存。本版仅准备提交用户审核，尚无用户对Client v0.1的批准。"
+    }
+  ],
+  "risks": [
+    "Creator沙箱早期SIGABRT已留诊断；获准宿主构建以成功完成码36结束，子进程SIGTERM记录作为诊断信息。",
+    "本地没有U00/U01场景帧截图，图像归档子项未完成；用户需按实际Web观察、Art现场Review与日志限定审核。",
+    "真实手机触控、目标设备驻留/帧率、微信与抖音小游戏平台未测；本单元示例不构成正式QA通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

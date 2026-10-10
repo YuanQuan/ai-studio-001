@@ -1,0 +1,54 @@
+{
+  "id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "title": "U00/U01 共用主场景五层逐层整张高清重绘资源",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "按用户最新明确方法，以旧v0.6五层各自为身份、构图和透明参考，分别整层重新绘制，提交3072×1024多图层PSD、五张原位RGBA PNG、同尺度静态对照与Gate2用户审核包。",
+  "inputs": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/source/u01_five_layer_master.psd",
+    "deliverables/art/U01-FIVE-LAYER-REDRAW-ASSET-001/v0.6/review/overall_from_psd.png",
+    "Master 转述用户已明确批准上述 Gate1 v0.1；Gate2 仍待具体资源版本审核。",
+    "用户2026-10-10最新明确：要按原来的5层图分别重新绘制，不要修图。要整体绘制；v0.1分区方案停止。"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/WHOLE_LAYER_REDRAW_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/PREFLIGHT_PLAN.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/ART_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/TECH_PREFLIGHT.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/ART_BRIEF.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/VISUAL_ANCHOR_CHECK.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/SOURCE_AUDIT.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/CUT_COLLABORATION_RECORD.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/DELIVERABLE.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/source/scene_clarity_master.psd",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l01_sky.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l02_mountains.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l03_ground.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l04_water_bridge.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/exports/tex_street_base_01_l05_water_grass.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.2/review/mobile_comparison.png"
+  ],
+  "acceptance": [
+    "用户最新整层方法准确绑定，首图前Art/Tech对同版工具、原生尺寸记录、五层透明/层序与同尺度质量门槛预签。",
+    "五张旧图分别作身份/构图参考而非局部修图；每层整幅一次新绘，旧分区候选不得成为本版正式像素，真实原生尺寸与视觉新增细节分开判。",
+    "完整多图层PSD、五张3072×1024原位RGBA PNG和按层序重组可追溯；桥/右月/右牌楼、河前街后、宽街与视差不变，无新增物件或透明露洞。",
+    "同背景同视窗同尺度及1.8对照、原生裁切、来源/权利、切图清单备齐后直接交Gate2用户审核；获批前不改工程。"
+  ],
+  "dependencies": [
+    "SCENE-CLARITY-REDRAW-PLAN-20261010"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master 本轮明确创建并分派本任务；Art 已开始实际首图前预案制作。",
+    "2026-10-10 用户最新整层逐层重绘方法覆盖v0.1分区补绘；v0.1任务原字节备份history/v0.1/TASK.json，历史样张保留但不再作为正式源。",
+    "Producer核现行v0.2 Task 19/19 Required、DELIVERABLE索引23/23实存，四项验收与Task同序PASS；本组织Agent自行切图按规则直接提交具体切片Gate2用户审核，不加成品专业复审。原生2172×724、3072规范化和色光差异在审阅包披露；用户未批准前Client不接入。"
+  ]
+}

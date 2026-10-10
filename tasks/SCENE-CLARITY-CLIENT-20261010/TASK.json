@@ -1,0 +1,41 @@
+{
+  "id": "SCENE-CLARITY-CLIENT-20261010",
+  "title": "U00/U01场景v0.3资源接入与运行核验",
+  "type": "integration",
+  "owner": "client",
+  "parent": null,
+  "objective": "接入已批准v0.3五层资源，保持当前U00/U01布局与镜头行为并核实际运行。",
+  "inputs": [
+    "tasks/SCENE-CLARITY-REDRAW-ASSET-20261010/ARTIFACT_APPROVAL.json",
+    "deliverables/art/SCENE-CLARITY-REDRAW-ASSET-20261010/v0.3/CUT_MANIFEST.json",
+    "用户最新明确：好的继续吧，批准呈现的v0.3并继续接入",
+    "tasks/U01-FIVE-LAYER-CLIENT-REPLACE-001/TASK.json",
+    "tasks/U00-OVERVIEW-CLIENT-IMPLEMENT-001/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/DELIVERABLE.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/TECH_REVIEW.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/ART_REVIEW.json",
+    "deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/MASTER_ACCEPTANCE.md",
+    "project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "acceptance": [
+    "五PNG源目标SHA一致，保留meta与真实UUID、3072×1024五层原位语义，登记美术版本及客户端路径。",
+    "U00/U01实际引用新版，保持当前店铺0.34布局、视差、拖动缩放重置返回行为，不改变其他单元。",
+    "Creator导入与当前Web构建、内置浏览器实际U00/U01及镜头关键状态验证有证据，未测设备指标单列。",
+    "Art/Tech核实际运行结果，Required齐全、验收可复核，提交具体接入版本用户审核。"
+  ],
+  "dependencies": [
+    "SCENE-CLARITY-REDRAW-ASSET-20261010"
+  ],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Client替换apps/client现行五PNG并更新ASSET_HANDOFF_REGISTRY；Tech/Art检查运行。沿用U00/U01单元示例Owner验证，无QA参与，不宣称正式功能QA通过。",
+    "保护并行U04修改。仅提交明确本任务文件，普通推送，不变更Git历史。",
+    "2026-10-10 14:28:34 +08:00 Producer核五PNG在客户端已有实际改动，evidence/ASSET_IMPORT_AUDIT_PREBUILD.json与Art/Tech运行Review实存，READY→IN_PROGRESS/TASK_STARTED；完整构建/浏览器证据与报告仍待Owner落盘，不提前送审。",
+    "2026-10-10 14:43:16+08:00 Producer核6/6 Required、DELIVERABLE 13/13实存及四验收同序PASS/PASS/NOT_TESTED/PASS；Art/Tech Review均APPROVED，Master限定范围接受送审。IN_PROGRESS→REVIEW→USER_REVIEW；场景帧截图未捕获或归档，真实设备/小游戏平台未测；用户尚未批准Client v0.1。",
+    "2026-10-10 15:34:16+08:00 Producer依据用户“验收完毕”登记准确Client v0.1 USER_APPROVED；Master最终接受本次限定范围接入，Task USER_REVIEW→DONE。实施报告SHA-256 ced960ed8b2d4af2610d15da3ac49d959933d30acc439f89f8e9d9a85123828a、DELIVERABLE SHA-256 66861e2f5750da48217bb1041fb50f0b107add048fb46b461f9c90ab03df39be；四验收PASS/PASS/NOT_TESTED/PASS保留，场景截图归档及设备/小游戏平台未测不变。用户原消息精确时间未知，本条为登记时刻；旧USER_REVIEW Approval保独立快照。"
+  ]
+}

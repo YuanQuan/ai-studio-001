@@ -1,0 +1,120 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "version": "v0.3",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "native_generated_canvas": [
+    2172,
+    724
+  ],
+  "normalization": "L01/L02逐字节继承v0.2；L03/L04/L05原生2172×724整层新绘后一次Lanczos等比规范至3072×1024，不把插值称为清晰度提升",
+  "psd": {
+    "path": "source/scene_clarity_master.psd",
+    "sha256": "28e0cb268b520d82e77365b7cfb66d9b599c71f6d3b5960bff2d080e46ab1832"
+  },
+  "overall": {
+    "path": "review/reassembled_from_exports.png",
+    "sha256": "6145de69f8708ffc2957862bf3a831bf9d628051ef755afc2fac0e6be6916102"
+  },
+  "layers_bottom_to_top": [
+    {
+      "asset_id": "STREET_BASE_01_L01",
+      "description": "夜空/月云",
+      "art_path": "exports/tex_street_base_01_l01_sky.png",
+      "sha256": "9ee1857cbd0eae8a0367cf4b10d4ed054de8f4e9c8661eb933559e927b081de7",
+      "native_source": "source/new_l01_whole_native.png",
+      "native_sha256": "1e36ddca5cc0008d190a9e9f9f3265c3765c3c501eb1f400ac1f759b1e863bbf",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l01_sky.png",
+      "client_uuid": null,
+      "import_status": "PLANNED_GATE2_PENDING",
+      "source_policy": "BYTE_IDENTICAL_V02_INHERITED",
+      "format": "3072x1024 RGBA full-canvas untrimmed"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L02",
+      "description": "雾山/远楼",
+      "art_path": "exports/tex_street_base_01_l02_mountains.png",
+      "sha256": "7318c68726700af9051bffcda7af5c130d0bdb2e1f53619ece92f45a52886fbc",
+      "native_source": "source/new_l02_whole_native.png",
+      "native_sha256": "d057ee8053394212f56e194f8fd5b1c47aaaf3570eb01f61fc4243a17d058361",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l02_mountains.png",
+      "client_uuid": null,
+      "import_status": "PLANNED_GATE2_PENDING",
+      "source_policy": "BYTE_IDENTICAL_V02_INHERITED",
+      "format": "3072x1024 RGBA full-canvas untrimmed"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L03",
+      "description": "柳林/后岸宽街/右牌楼",
+      "art_path": "exports/tex_street_base_01_l03_ground.png",
+      "sha256": "64ea6795115a8b363e0f44545307ca40d9aa4c0b059681d77221a10aea4e2702",
+      "native_source": "source/new_l03_whole_native.png",
+      "native_sha256": "e0660b5d2bff03f4617ebbfc02a836c8c09b7ad93ea870cdce7b9342fad9cb16",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l03_ground.png",
+      "client_uuid": null,
+      "import_status": "PLANNED_GATE2_PENDING",
+      "source_policy": "WHOLE_LAYER_NEW_IMAGEGEN",
+      "format": "3072x1024 RGBA full-canvas untrimmed"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L04",
+      "description": "桥栏/前景河/灯船",
+      "art_path": "exports/tex_street_base_01_l04_water_bridge.png",
+      "sha256": "716593d549b96695a28a3a2f15ff4a90d1acda8b16016f95466448ecfb6074f5",
+      "native_source": "source/new_l04_whole_native.png",
+      "native_sha256": "8a102dbbf0fd3bfe8c54765317c29da4e0b8a71bade02508e2f2d6338c009c36",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l04_water_bridge.png",
+      "client_uuid": null,
+      "import_status": "PLANNED_GATE2_PENDING",
+      "source_policy": "WHOLE_LAYER_NEW_IMAGEGEN",
+      "format": "3072x1024 RGBA full-canvas untrimmed"
+    },
+    {
+      "asset_id": "STREET_BASE_01_L05",
+      "description": "河边左右水草",
+      "art_path": "exports/tex_street_base_01_l05_water_grass.png",
+      "sha256": "927a7844344e177d2087a17e6352b32dcefe8f3fb493f945446c09ef7f31ef6c",
+      "native_source": "source/new_l05_whole_native.png",
+      "native_sha256": "bb5d15d0238a1bbb682841bcf528daba25bd06af93086251a07c460a6f51fc65",
+      "native_canvas": [
+        2172,
+        724
+      ],
+      "client_path_planned": "apps/client/assets/units/background/textures/tex_street_base_01_l05_water_grass.png",
+      "client_uuid": null,
+      "import_status": "PLANNED_GATE2_PENDING",
+      "source_policy": "WHOLE_LAYER_NEW_IMAGEGEN",
+      "format": "3072x1024 RGBA full-canvas untrimmed"
+    }
+  ],
+  "layer_parallax_candidate": [
+    0.3,
+    0.8,
+    1,
+    1,
+    1
+  ],
+  "trim": "none",
+  "anchor": "center",
+  "user_approval": "PENDING_GATE2",
+  "shop_style_evidence": "review/current_shops_on_v03_scene.png",
+  "mobile_evidence": "review/mobile_comparison.png"
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "SCENE-CLARITY-REDRAW-ASSET-20261010",
+  "reviewer": "tech_lead",
+  "version": "v0.3",
+  "decision": "TECH_FILE_PASS_GATE2_PENDING",
+  "manifest": "CUT_MANIFEST.json",
+  "psd_sha256": "28e0cb268b520d82e77365b7cfb66d9b599c71f6d3b5960bff2d080e46ab1832",
+  "overall_sha256": "6145de69f8708ffc2957862bf3a831bf9d628051ef755afc2fac0e6be6916102",
+  "checks": [
+    {"result": "PASS", "message": "CUT_MANIFEST中的PSD、重组图、五张正式PNG和五张原生源均实际存在且SHA-256逐项匹配。L01/L02正式PNG与v0.2逐字节一致。"},
+    {"result": "PASS", "message": "五张正式PNG均3072×1024 RGBA；L03/L04/L05原生均2172×724 RGBA。PSD文件为3072×1024 8-bit、合成加五个图层；独立读回PSD合成图与psd_preview.png逐像素一致，该预览与五PNG原位重组图也逐像素一致。"},
+    {"result": "PASS", "message": "实看最终重组和店铺同屏图：中央单桥、后岸街与水面关系可读；已退回的L03叠拱在最终层中消失。L04桥上方真实透明、桥洞下方水面连续，L05未遮挡中央；未见明显透明洞、重复桥影或新增大型对象。"},
+    {"result": "LIMIT", "message": "3072×1024规范化只满足文件规格，不将2172×724原生图插值称为新增细节。五张RGBA8全展开60MiB只是估算；Creator运行、DrawCall和目标机驻留未在本次静态资产核验中测试。"}
+  ],
+  "cut_guidance": "维持五张3072×1024全画布RGBA原位、L01–L05底到顶、视差[0.3,0.8,1,1,1]、trim none、中心锚点与零偏移；不自动裁切破坏桥位与视差。该清单为当前具体切片技术核验，可直接随Art实际切片和同尺度重组提交用户Gate2，不新增专业复审或预览环境门禁。",
+  "next_action": "交用户审核具体v0.3 PSD、五PNG及重组效果；用户Gate2批准前Client不正式接入。"
+}
