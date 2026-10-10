@@ -1,5 +1,11 @@
 # 用户审批记录
 
+2026-10-10 10:04:58 +08:00（v0.3送用户审核，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001`准确v0.3 `ART_PRODUCTION_PLAN.md`及同版10项专业交付与现行Approval共11/11 Required实存，四项验收逐字同序全PASS，Art/Master Review均APPROVED。Task/Approval为USER_REVIEW、`decided_at=null`，等待用户对六位非人Q版具体外形方案明确决定。旧v0.2 USER_APPROVED仅保留历史，不自动批准v0.3；旧人形18PNG/6板/6PSD未获具体资产用户批准，旧生产/Tech Task BLOCKED。本版没有生成新图。
+
+2026-10-10 09:45:07 +08:00（用户方向修订，非新方案批准）：用户明确要求六店长“不用人的外形”，改Q版鬼怪，身高可很矮/很高。`U04-MANAGER-CONCEPT-PLAN-001` v0.2 USER_APPROVED快照保留历史；当前Approval切换v0.3 `DRAFT`、`decided_at=null`，原用户消息精确时刻未知。旧人形生产及Tech支持Task均BLOCKED，18PNG/6板/6PSD旧实图仍是未获具体资产用户批准的历史，不得继续出图/接入。用户方向纠正不等于尚未见的v0.3逐人造型具体方案批准。
+
+2026-10-10 09:06:12 +08:00（Producer批准登记；用户原消息精确时间未知）：用户对唯一送审的`U04-MANAGER-CONCEPT-PLAN-001` v0.2具体Gate1制作方案回复“批准”。原10/10 Required实存、5/5验收PASS，Art/Master同版APPROVED；`tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json`与独立`ARTIFACT_APPROVAL_v0.2.json`均USER_APPROVED、`decided_at=null`，登记时刻为本行时间。Master最终接受方案Task为DONE。批准范围仅v0.2方案，后续真实具体切图Gate2、Client接入与QA另走门禁。新Art/Tech任务审批均DRAFT。
+
 2026-10-10 08:58 +08:00（Gate1 v0.2送审，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001` v0.2十项Required实存，`DELIVERABLE.json`五项现行Task验收逐字同序且全PASS，Art/Master同版Review均APPROVED；`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。审批对象是`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md`与同版审核包；用户须决定这份具体制作前方案。用户先前泛出图请求和Product v0.3批准均不代替Gate1具体方案批准；未批前不能正式出图，后续切片效果及客户端接入还需独立Gate2。v0.1 DRAFT及BLOCKED Review保留历史。
 
 2026-10-10 08:57:05 +08:00（Producer Gate1正式送审，非用户批准）：`SCENE-CLARITY-REDRAW-PLAN-20261010` v0.1以`deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md` SHA-256 `b9987826b133f3bdb8c1912a809612230b63e20806d08587c35eff4673a3e67e`绑定审阅包，方案SHA-256 `3adf0c1505b14e2c5ab726509e7be5aac7c63230c05c6d330d962890acc66070`。8/8 Required实存、四项文字方案验收PASS，Art/Tech/Master同版Review均APPROVED；Task和`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。用户尚未批准本批高清重绘制作方法，首图、正式PSD/五PNG、Gate2具体切片及U00/U01客户端替换均锁定。

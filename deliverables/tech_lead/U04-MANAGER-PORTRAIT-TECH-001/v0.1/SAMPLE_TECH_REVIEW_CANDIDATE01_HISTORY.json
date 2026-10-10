@@ -1,0 +1,23 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "sample": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/source_images/mgr_mt_s0_candidate_01.png",
+  "sample_sha256": "09596cf321785700593b580beaba805d650f6ab75adcc1b0ee41a49a5680e08c",
+  "decision": "REVISE",
+  "measurements": {
+    "pixel_size": [1024, 1536],
+    "color_mode": "RGBA",
+    "alpha_range": [0, 254],
+    "alpha_positive_bbox": [0, 0, 1010, 1536],
+    "alpha_ge_8_bbox": [263, 9, 783, 1531],
+    "alpha_ge_128_bbox": [264, 10, 782, 1530],
+    "file_bytes": 1655203
+  },
+  "findings": [
+    "工具实际输出为1024×1536，低于1536×2048审阅目标；可作候选，不能据此锁正式显示分辨率。",
+    "显著alpha主体距上缘约9像素、下缘约5像素，安全边不足；alpha正值噪声触及画布边。后续候选须核全身与持物完整、避免紧贴边界。",
+    "Master视觉审查判此候选偏离已批画风，当前不具备扩批前置Art/Master通过条件。"
+  ],
+  "not_tested": ["店前实际投影像素", "PSD可读性与图层", "板重组", "Cocos导入", "目标机性能"],
+  "next_action": "等待Art修订代表样张；重新按实图测量并核Art Review后再决定全量复签"
+}

@@ -1,5 +1,13 @@
 # 工作流程复盘记录
 
+### WR-20261010-U04-GATE1-APPROVAL-001｜方案批准与正式制作开线
+
+- 结果与证据：准确v0.2 Gate1制作方案获用户“批准”，独立审批快照与Task DONE；Master新建Art真实图像生产和Tech支持两Task，Art三份预案、Tech预签文件实存，两Owner均IN_PROGRESS。具体证据见`tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL_v0.2.json`、两新Task与各自v0.1预案。
+- 时间：用户原消息精确时刻未知；Producer于2026-10-10 09:05:05 +08:00登记Gate1批准与DONE，09:05:48 +08:00核新Task和预案开线，两节点相隔43秒，仅代表可观察登记窗口，不是Owner净工时。用户等待、预案制作与专业签认净耗时未知。
+- 速度因素：本轮尚无可靠时限或可比基线，不判断快慢；当前未见可证实的工具故障。
+- 建议与复核：Art、Tech在孟桃0魂首图前共同核同批预签编号与参数，再把样张结果写入对应Review；负责人Art/Tech，复核点为首张PNG/PSD与SAMPLE_TECH_REVIEW。此检查增加一次签认，目标是避免全量扩批后尺寸或风格返工。
+- Continuity：两个IN_PROGRESS任务均有实产且继续推进；Gate2具体资产用户审批仍待真实切图与同尺度重组效果，不把本方案批准扩为接入或QA。
+
 ## WR-20261010-U04-MANAGER-PLAN-V02-001｜六店长三阶段立绘制作前方案送审
 
 - 结果与证据：Master修订原`U04-MANAGER-CONCEPT-PLAN-001` Task，用户恢复美术线且上游Product v0.3已USER_APPROVED。Art完成v0.2制作前方案和审核包，计划六人各0/2/3魂三幅全身立绘及一张对照板，共18图/6板，1魂变化以文字说明；尚未出图。Producer核10/10 Required路径实存、`DELIVERABLE.json`五项验收与Task逐字同序且全PASS、Art/Master同版Review均APPROVED，Task与Approval进入USER_REVIEW。旧v0.1 DRAFT及当时缺名单的BLOCKED Review留历史。证据见现行Task/Approval、`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/`及三个状态日志。

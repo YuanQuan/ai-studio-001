@@ -1,0 +1,22 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED_FOR_REMAINING_17_CANDIDATES",
+  "current_effect": "SUPERSEDED_BY_USER_DIRECTION_CHANGE; no further generation or delivery under this presign",
+  "batch": "U04-MANAGER-PORTRAITS-001/v0.1",
+  "basis": [
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/TECH_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/ART_REVIEW.md"
+  ],
+  "scope": "余下17张各独立imagegen全身候选，随后6张同尺度三栏板及6份阶段整图层PSD；不得改工具、来源、动画/骨骼/切片范围",
+  "estimated_raw_rgba8": "若余17张均1024×1536，每张6MiB；18单体共108MiB。若6板均3072×1536，每板18MiB、六板108MiB。仅未压缩源像素情景估算，实际大小和PSD额外层开销待测。",
+  "conditions": [
+    "每张单独调用imagegen并登记真实输出，保持同人物脸、主衣装、身份物、视角和脚点；不同人物0魂可并行生成。",
+    "每张必须核头顶、持物和双脚完整；在对照板增加边距，不把低alpha光晕文件标成干净Sprite。",
+    "PSD只作0/2/3魂整图可编辑，assemble不得重画或承诺身体拆件。",
+    "若工具、尺寸、来源或输出范围变化，生成下一张前复签。"
+  ],
+  "not_tested": ["最终18PNG/6板/6PSD", "Creator导入", "目标机显示与性能"],
+  "next_action": "已停止旧人形批次；新非人鬼怪方案先由用户审批，获批后另行对新批预签"
+}

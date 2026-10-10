@@ -4,33 +4,34 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "依据已批准Product v0.3，为孟桃、阿棠、阿炭、阿角、阿灯、小锦各制定0魂、2魂（1–2魂过渡代表）、3魂三阶段全身立绘方案，共18幅与6张对照板；本阶段交用户批准制作方案，随后方可首图预签和实际出图。",
+  "objective": "按用户最新方向修订六位店长0/2/3魂共18幅全身立绘的制作前方案：采用Q版鬼怪而非人的外形；六人可明显高矮不同，同一人物三阶段身份与尺度一致，并保持已批准Product v0.3性格及身份语义。本阶段仅提交新方案供用户决定，不出新图。",
   "inputs": [
     "用户2026-10-09指令：店长分为场景店铺前全身站姿和对话框半身形象；旧梦桃形象废弃；重新给六位店长形象图，按产品定义性格并研究可辨认的标志元素；本轮只确定店长形象，正式进入开发流程。",
     "产品事实：孟桃性格有独立批准；其余历史角色种子仅供参考，不能视为已批准定义。现有历史资料有12位角色种子，具体六位名单待用户确认；店铺绑定可后续确定。",
     "project/DECISIONS.md、project/ART_GUIDE.md 与既有孟桃历史概念及审批记录",
     "rules/visual_production_contract.md、rules/artifact_contract.md、rules/approval_protocol.md",
     "用户2026-10-09最新确认六位店长为孟桃、阿棠、阿炭、阿角、阿灯、小锦；暂停绘图，先由Product确定性格与魂成长差异。tasks/U04-MANAGER-PERSONALITY-001/TASK.json为当前上游任务。",
-    "2026-10-10用户要求：按照目前店长性格外貌特征，分别每位店长1套3阶段立绘；恢复此前美术暂停。准确输入：deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md及其USER_APPROVED记录。"
+    "2026-10-10用户要求：按照目前店长性格外貌特征，分别每位店长1套3阶段立绘；恢复此前美术暂停。准确输入：deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md及其USER_APPROVED记录。",
+    "用户最新明确方向：“不要用人的外形，Q版鬼怪，可很矮/很高”；原消息精确时间未知。旧人形v0.2曾USER_APPROVED，但当前生产方向已被用户更新，本任务修订v0.3需独立具体方案审核。"
   ],
   "deliverables": [
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_BRIEF.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ASSET_MANIFEST.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/DESIGN_RATIONALE.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/DELIVERABLE.json",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/MASTER_REVIEW.json",
-    "tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/USER_REVIEW_PACKET.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_REVIEW.json"
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/DELIVERABLE.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/MASTER_REVIEW.json",
+    "tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "准确引用已批准Product v0.3，六位身份与成长语义一致。",
-    "三阶段采用0/2/3魂；2魂代表过渡展示，说明1魂差异，不改四阶段产品规则。",
-    "每位锁定跨阶段身份锚点及差异；新外貌标为提案，旧孟桃造型不复用为批准基线。",
-    "共18幅全身立绘与6对照板，半身仅同源裁切；尺寸、格式、PSD可编辑范围、来源与风险可审查。",
-    "固定交付和同版Review齐备，方案送用户审批；未批不出图、不接入。"
+    "以非人Q版鬼怪轮廓替代旧人形方向，六位外形允许明显高矮差异，不统一等高；逐人身份锚点及同人物三阶段尺度关系可检查。",
+    "保留已批准Product v0.3六人性格、身份与四魂成长语义；本轮0/2/3魂共18幅的范围不变，1魂文字过渡说明清楚。",
+    "新方案列逐人非人轮廓、0/2/3阶段差异、全身与同尺度对照板/PSD生产方法、参考与版权/IP风险，旧人形实图仅作为未获用户批准历史，不作当前候选。",
+    "v0.3固定交付、Art与Master同版Review和验收结果齐备后送用户审核；用户对新具体方案USER_APPROVED前不再出新图、不恢复旧批次或Client接入。"
   ],
   "dependencies": [
     "U04-MANAGER-PERSONALITY-001"
@@ -45,6 +46,10 @@
     "2026-10-09后续用户已明确确认孟桃、阿棠、阿炭、阿角、阿灯、小锦；上文缺名单为历史开线事实，不再是当前阻塞。当前BLOCKED原因改为用户暂停绘图，并等待U04-MANAGER-PERSONALITY-001性格与魂成长规格获用户批准。既有v0.1草稿及Master BLOCKED Review保留历史，待上游批准后由Art提交新版并重评。",
     "2026-10-09 18:05:19 +08:00 上游U04-MANAGER-PERSONALITY-001 v0.3已获USER_APPROVED并DONE，缺上游批准不再是当前阻塞；用户此前明确暂停绘图/美术流程仍有效，本Art Task继续BLOCKED，唯一当前原因是用户暂停。后续恢复时以准确批准的v0.3为输入，另修订Art方案并过其独立审批门禁，不能继承旧Art v0.1批准。",
     "2026-10-10最新指令恢复美术线；旧暂停已解除。Art本轮已实际核输入并制作v0.2。方案审批未完成，当前执行限制作前方案，不能继承v0.1 DRAFT或Product批准为出图许可。",
-    "2026-10-10 08:58 +08:00 Producer核v0.2十项Required实存、DELIVERABLE五项验收与Task逐字同序且全PASS，Art/Master同版Review均APPROVED；转USER_REVIEW等待用户对准确Gate1制作前方案明确批准。18幅立绘、6对照板仍仅为计划，未出图。"
+    "2026-10-10 08:58 +08:00 Producer核v0.2十项Required实存、DELIVERABLE五项验收与Task逐字同序且全PASS，Art/Master同版Review均APPROVED；转USER_REVIEW等待用户对准确Gate1制作前方案明确批准。18幅立绘、6对照板仍仅为计划，未出图。",
+    "2026-10-10T09:05:05+08:00 Master基于原10/10 Required、5/5 PASS及Art/Master同版APPROVED最终接受；用户已批准准确v0.2，独立审批快照保存。",
+    "2026-10-10T09:44:46+08:00 用户最新明确改为非人外形、Q版鬼怪、可明显高矮不同。旧v0.2 USER_APPROVED快照保留历史，不改原方案正文；当前方案Task从DONE恢复REVISION，v0.3独立DRAFT。旧人形批次已停，新方案未获用户具体批准前不出新图。",
+    "2026-10-10 09:51:57 +08:00 v0.3 ART_PRODUCTION_PLAN.md已实际落盘非空，Owner正在修订PSD交付流程文字；REVISION→IN_PROGRESS有本轮Required实产证据。",
+    "2026-10-10 10:04:35 +08:00 Producer核v0.3 11/11 Required真实存在，DELIVERABLE四项验收与当前Task逐字同序且全PASS；Art/Master同版Review均APPROVED。Task IN_PROGRESS→REVIEW→USER_REVIEW，只等待用户对新具体非人Q版方案明确决定，未出新图。"
   ]
 }

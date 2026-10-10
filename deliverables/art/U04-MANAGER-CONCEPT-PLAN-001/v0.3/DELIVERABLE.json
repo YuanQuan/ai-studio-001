@@ -1,0 +1,46 @@
+{
+  "task_id": "U04-MANAGER-CONCEPT-PLAN-001",
+  "owner": "art",
+  "summary": "六位店长非人Q版鬼怪立绘制作前方案v0.3，等待用户审核；本版未生成新图。",
+  "artifacts": [
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/ART_REVIEW.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/MASTER_REVIEW.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.3/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "以非人Q版鬼怪轮廓替代旧人形方向，六位外形允许明显高矮差异，不统一等高；逐人身份锚点及同人物三阶段尺度关系可检查。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md六人主形与相对高矮表；VISUAL_ANCHORS.md逐人身份锚点及三阶段尺度约束。"
+    },
+    {
+      "criterion": "保留已批准Product v0.3六人性格、身份与四魂成长语义；本轮0/2/3魂共18幅的范围不变，1魂文字过渡说明清楚。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md逐人0/1/2/3魂成长说明及18幅计划；ART_BRIEF.md对已批准Product v0.3的边界说明。"
+    },
+    {
+      "criterion": "新方案列逐人非人轮廓、0/2/3阶段差异、全身与同尺度对照板/PSD生产方法、参考与版权/IP风险，旧人形实图仅作为未获用户批准历史，不作当前候选。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、VISUAL_ANCHORS.md、DESIGN_RATIONALE.md、RIGHTS_AND_SOURCE.md及ASSET_MANIFEST.md；旧批标为历史。"
+    },
+    {
+      "criterion": "v0.3固定交付、Art与Master同版Review和验收结果齐备后送用户审核；用户对新具体方案USER_APPROVED前不再出新图、不恢复旧批次或Client接入。",
+      "result": "PASS",
+      "evidence": "v0.3固定文档、ART_REVIEW.json、MASTER_REVIEW.json和本DELIVERABLE.json齐备；USER_REVIEW_PACKET.md列明待用户审批及制作门禁。"
+    }
+  ],
+  "assumptions": [
+    "相对高矮只用于本轮视觉方案审查，不锁定游戏数值或客户端显示尺寸。"
+  ],
+  "risks": [
+    "新版非人鬼怪实图、对照板和PSD尚未制作，实际视觉与生产质量未测试；须待用户批准方案后再经新批Art/Tech预签制作并审核。",
+    "旧人形18张PNG、6板和6份PSD仅为历史候选，未获当前方向具体资源批准，不得恢复为正式资源或接入Client。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

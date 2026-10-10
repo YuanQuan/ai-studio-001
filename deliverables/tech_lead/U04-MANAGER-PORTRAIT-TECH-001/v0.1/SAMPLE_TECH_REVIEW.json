@@ -1,0 +1,28 @@
+{
+  "task_id": "U04-MANAGER-PORTRAIT-TECH-001",
+  "reviewer": "tech_lead",
+  "sample": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/characters/mgr_mt_s0.png",
+  "sample_source": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/source_images/mgr_mt_s0_candidate_02.png",
+  "sample_sha256": "6bd4cccdac4351ccda863d7df4a5f079727fc38a2614e559b827b74f7d330ecb",
+  "art_review": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.1/ART_REVIEW.md: candidate02 PASS",
+  "decision": "APPROVED_FOR_BATCH_CANDIDATES",
+  "current_effect": "SUPERSEDED_BY_USER_DIRECTION_CHANGE; historical sample check only",
+  "measurements": {
+    "pixel_size": [1024, 1536],
+    "color_mode": "RGBA",
+    "alpha_range": [0, 254],
+    "alpha_positive_bbox": [71, 16, 1010, 1524],
+    "alpha_ge_8_bbox": [194, 18, 864, 1522],
+    "alpha_ge_32_bbox": [195, 18, 863, 1522],
+    "file_bytes": 1433719,
+    "candidate_copy_identical": true
+  },
+  "findings": [
+    "工具实际输出1024×1536；主体、杯和双鞋均在画布内，显著alpha主体上边约18px、下边约14px，后续板须增加外侧安全边。",
+    "低alpha暖晕覆盖较宽，文件虽为RGBA但不是干净透明Sprite；本结论仅批准审阅候选扩批，不批准正式Sprite导入。",
+    "单图RGBA8完全展开约6MiB；静态源像素估算不等于实际驻留、图集、设备性能。"
+  ],
+  "not_tested": ["店前实际投影像素", "PSD可读性与图层", "板重组", "Cocos导入", "目标机性能"],
+  "previous_candidate_history": "deliverables/tech_lead/U04-MANAGER-PORTRAIT-TECH-001/v0.1/SAMPLE_TECH_REVIEW_CANDIDATE01_HISTORY.json",
+  "next_action": "按BATCH_PRESIGN.json限定方法扩展17图，逐图登记实际尺寸和alpha；成批后核PNG/板/PSD实包"
+}
