@@ -1,0 +1,46 @@
+{
+  "id": "U04-DIALOGUE-CLIENT-REVIEW-001",
+  "title": "U04客户端简报沟通及实现技术评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "评审Client编码前轻量简报，再独立检查U04实现、资源UUID/源哈希/九宫格/异步与生命周期及运行证据，提交同版Review，不代写Client代码。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/u00_dialogue_overview_sources.json",
+    "project/DECISIONS.md",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "tasks/U04-DIALOGUE-CLIENT-001/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/BRIEF_REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-DIALOGUE-CLIENT-REVIEW-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "编码前核FEATURE_BRIEF复用点、目录命名、坐标映射、加载及适配约束并给Client明确可执行反馈。",
+    "核129待导入PNG的真实源/工程hash、meta身份、SpriteFrame和SLICED Insets、三轴独立状态及异步生命周期；发现问题有明确Review Action。",
+    "独立核当前构建与真实运行证据，区分静态/导入/构建/Web与目标设备，单元示例无QA；结论不以旧截图或占位证据代替。"
+  ],
+  "dependencies": [
+    "U04-DIALOGUE-LAYERED-ASSET-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户本轮“批准”明确批准分层资源v0.1具体切片Gate2。Producer登记后解锁。",
+    "单元示例继续至Client运行结果与Tech同版Review提交USER_REVIEW，无QA。",
+    "不更改已批准图片像素；有布局/资源视觉变化交Master，不自行扩需求。",
+    "Client只修改apps/client及本交付目录；授权仅U04资源导入登记更新project/ASSET_HANDOFF_REGISTRY.md。Tech只修改本交付目录，Producer维护状态。",
+    "Gate2准确v0.1已获USER_APPROVED；依赖解除，2026-10-10 19:52:35 +08:00 READY。尚无本轮Required实产证据，不记IN_PROGRESS。",
+    "本轮首份Required实存，Producer于2026-10-10 19:57:05 +08:00核验 deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/BRIEF_REVIEW.json；READY→IN_PROGRESS，后续实现/运行及最终Tech Review仍在执行。",
+    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "kind": "MASTER_ACTUAL_IAB_RUNTIME_OBSERVATIONS",
+  "owner": "master",
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "version": "v0.1",
+  "recorded_at": "2026-10-10T13:09:09.686735+00:00",
+  "build": "Final10 Creator 3.8.8 web-mobile 2026-10-10 21:02:04 +08",
+  "source_sha256": "3186b8ff463be0d0121b37a59789cb422662447b34f53304ca821efaab096ee4",
+  "url": "http://127.0.0.1:8765/",
+  "interaction": "Codex IAB screenshot-grounded native coordinate input; no engine object evaluation or mutation",
+  "results": {
+    "u00_actual_layers_shops_footpoints": "PASS",
+    "default_left_half_portrait_full_width_dialogue": "PASS",
+    "sweep_actual_current_generation_frames": {
+      "result": "PASS",
+      "checked": 90,
+      "failed": 0,
+      "elapsed_ms": 6432,
+      "evidence": "runtime_final10_sweep90.jpg"
+    },
+    "independent_axes": {
+      "result": "PASS",
+      "observed_sequence": [
+        "XJ/S3/angry",
+        "MT/S3/angry",
+        "MT/S2/angry",
+        "MT/S2/surprised"
+      ]
+    },
+    "panel_sizes": {
+      "result": "PASS",
+      "sizes_px": [
+        [
+          384,
+          192
+        ],
+        [
+          768,
+          256
+        ],
+        [
+          1024,
+          384
+        ],
+        [
+          1280,
+          195
+        ]
+      ],
+      "retained_choice": "MT/S2/surprised",
+      "observations": [
+        "corner geometry stays intact",
+        "text remains in content area",
+        "decorations and text remain independent"
+      ]
+    },
+    "continuous_eight_manager_changes": {
+      "result": "PASS",
+      "sequence": [
+        "AT",
+        "AC",
+        "AJ",
+        "AD",
+        "XJ",
+        "MT",
+        "AD",
+        "XJ"
+      ],
+      "final_choice": "XJ/S2/surprised"
+    },
+    "viewport_960x540": "PASS",
+    "return_and_reenter": "PASS",
+    "target_phone_minigame_gpu_performance": "NOT_TESTED",
+    "deliberately_throttled_cold_network_race_stress": "NOT_TESTED"
+  },
+  "screenshots": [
+    {
+      "path": "runtime_final10_960x540.jpg",
+      "sha256": "d8a76db3ac03e3f154c77c37f5d1fbc907f629f0c820868ed669a4fc4113a174"
+    },
+    {
+      "path": "runtime_final10_axis_expression.jpg",
+      "sha256": "96bf4b921d1ad6d920c7c4fb76b0021bdb8fae7d06c30d572124a46c2457e8e2"
+    },
+    {
+      "path": "runtime_final10_axis_manager.jpg",
+      "sha256": "bda1f94beaf420eeccad55c4da8d787b5a7dc354a52f400999075c8b26c01909"
+    },
+    {
+      "path": "runtime_final10_axis_stage.jpg",
+      "sha256": "89b1066ed5295d0500389b50cab91b615b023472238d82d79651292d8257abbf"
+    },
+    {
+      "path": "runtime_final10_continuous_switch.jpg",
+      "sha256": "56f8db96ade58e91ddb5e05218be25855f126051e2114bd70cb1833a3a7167df"
+    },
+    {
+      "path": "runtime_final10_default.jpg",
+      "sha256": "a1352a7f53672316a7009765127e4b21f0b7e0729545c86e346074ba0f9d04be"
+    },
+    {
+      "path": "runtime_final10_panel_1024x384.jpg",
+      "sha256": "496551a0ee800e8c8330b1566f901f35630e29e74edbc47896c6e809bb4e0d9e"
+    },
+    {
+      "path": "runtime_final10_panel_384x192.jpg",
+      "sha256": "beafb37c3fe191dc4d5e6b15fb467047633d5d8dff06237fc8a3825c337f69ed"
+    },
+    {
+      "path": "runtime_final10_panel_768x256.jpg",
+      "sha256": "dd00fafbb98e8c65c741f5fe68d7f45d95a48826cf877e02a855ceffb673ab18"
+    },
+    {
+      "path": "runtime_final10_reentry.jpg",
+      "sha256": "a1352a7f53672316a7009765127e4b21f0b7e0729545c86e346074ba0f9d04be"
+    },
+    {
+      "path": "runtime_final10_sweep90.jpg",
+      "sha256": "8fc20f9b22b5cca7bba7e57d937a297d38b36a031fc7e057c30dce778a667b15"
+    },
+    {
+      "path": "runtime_final10_user_preview.jpg",
+      "sha256": "a1352a7f53672316a7009765127e4b21f0b7e0729545c86e346074ba0f9d04be"
+    }
+  ],
+  "console_observation": "No new errors/warnings observed in Final10; one older Mask warning dated 12:28:25 UTC persisted in tab history, belongs first diagnostic."
+}

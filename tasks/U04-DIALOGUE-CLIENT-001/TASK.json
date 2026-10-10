@@ -1,0 +1,49 @@
+{
+  "id": "U04-DIALOGUE-CLIENT-001",
+  "title": "U04分层对话单元示例接入与运行验证",
+  "type": "integration",
+  "owner": "client",
+  "parent": null,
+  "objective": "消费用户本轮明确批准的具体切片v0.1，复用U00实际场景接入U04六店长三阶段五表情独立切换，复用单一九宫格自由伸缩；Owner自行验证，不安排QA。",
+  "inputs": [
+    "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/u00_dialogue_overview_sources.json",
+    "project/DECISIONS.md",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-DIALOGUE-CLIENT-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "U04从既有单元入口可打开，以现有U00实际场景为背景，左侧半身像与姓名对白、三轴控制符合获批布局。",
+    "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
+    "使用批准的base＋局部表情＋前遮挡组合，PNG字节不改；统一九宫格Sprite.Type.SLICED四边48，尺寸可调整且文字和固定角饰独立，实际伸缩无角失真。",
+    "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
+    "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。"
+  ],
+  "dependencies": [
+    "U04-DIALOGUE-LAYERED-ASSET-001"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户本轮“批准”明确批准分层资源v0.1具体切片Gate2。Producer登记后解锁。",
+    "单元示例继续至Client运行结果与Tech同版Review提交USER_REVIEW，无QA。",
+    "不更改已批准图片像素；有布局/资源视觉变化交Master，不自行扩需求。",
+    "Client只修改apps/client及本交付目录；授权仅U04资源导入登记更新project/ASSET_HANDOFF_REGISTRY.md。Tech只修改本交付目录，Producer维护状态。",
+    "Gate2准确v0.1已获USER_APPROVED；依赖解除，2026-10-10 19:52:35 +08:00 READY。尚无本轮Required实产证据，不记IN_PROGRESS。",
+    "本轮首份Required实存，Producer于2026-10-10 19:57:05 +08:00核验 deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md；READY→IN_PROGRESS，后续实现/运行及最终Tech Review仍在执行。",
+    "Final10同版Required及验收齐，Tech独立Review APPROVED、Master锁25项Artifact SHA接受送用户审核；REVIEW→USER_REVIEW，非用户批准，Task不DONE。Producer登记2026-10-10 21:13:29 +08:00。"
+  ]
+}

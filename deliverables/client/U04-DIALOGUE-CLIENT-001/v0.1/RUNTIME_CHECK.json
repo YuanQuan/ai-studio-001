@@ -1,0 +1,88 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "version": "v0.1",
+  "build": {
+    "creator_version": "3.8.8",
+    "platform": "web-mobile",
+    "source_sha256": "3186b8ff463be0d0121b37a59789cb422662447b34f53304ca821efaab096ee4",
+    "built_at_local": "2026-10-10 21:02:04 +08:00",
+    "http_url": "http://127.0.0.1:8765/",
+    "http_index_status": 200,
+    "http_dialogue_config_status": 200,
+    "bundle_spriteframe_count": 129,
+    "cli_exit_code": 36,
+    "cli_finished_marker": "build Task (web-mobile) Finished in (5 s)"
+  },
+  "checks": [
+    {
+      "name": "720x1280 Gallery菜单进入U04并呈现1280x720布局",
+      "result": "PASS",
+      "evidence": "Master实际从720×1280 Gallery菜单进入U04，并在Final10 HTTP产物确认1280×720布局；evidence/runtime_final10_default.jpg"
+    },
+    {
+      "name": "U00实际五层背景、六店铺与获批横屏全景锚点",
+      "result": "PASS",
+      "evidence": "Master在Final10确认U00实际五层全景及六店ground_contact脚点；evidence/runtime_final10_default.jpg"
+    },
+    {
+      "name": "人物层、姓名/对白、顶部返回和面板默认可见",
+      "result": "PASS",
+      "evidence": "Master在Final10确认人物、姓名/对白、顶部返回与面板可见；evidence/runtime_final10_default.jpg"
+    },
+    {
+      "name": "6×3×5共90组合逐项加载、姓名同步和原子三层显示",
+      "result": "PASS",
+      "evidence": "Master在Final10同一HTTP构建实际执行6×3×5巡检，90/90、0失败、6432ms；evidence/runtime_final10_sweep90.jpg"
+    },
+    {
+      "name": "快速轴切换不被面板尺寸操作误触，且未改轴保持不变",
+      "result": "PASS",
+      "evidence": "Master在Final10实际切换店长MT3→MT2、阶段保持2魂、表情生气→惊讶，另外两轴状态保留；三图：evidence/runtime_final10_axis_manager.jpg, evidence/runtime_final10_axis_stage.jpg, evidence/runtime_final10_axis_expression.jpg。Final10 90组快速切换巡检见evidence/runtime_final10_sweep90.jpg"
+    },
+    {
+      "name": "384×192、768×256、1024×384九宫格实际尺寸与角饰文字布局",
+      "result": "PASS",
+      "evidence": "Master在Final10逐档切384×192、768×256、1024×384，均保持MT2惊讶状态，文字未溢出且九宫格角饰正常；evidence/runtime_final10_panel_384x192.jpg, evidence/runtime_final10_panel_768x256.jpg, evidence/runtime_final10_panel_1024x384.jpg"
+    },
+    {
+      "name": "U04离开返回、资源引用释放与再次进入",
+      "result": "PASS",
+      "evidence": "Master在Final10 HTTP构建返回菜单后再次进入，人物三层及脸部映射/比例正常；evidence/runtime_final10_reentry.jpg。静态生命周期由Tech对最终源码SHA复核；冷网络/并发压力测试未执行。"
+    },
+    {
+      "name": "Mask裁切与较窄横屏响应",
+      "result": "PASS",
+      "evidence": "Final10实际在960×540横屏查看，裁切与画面完整；此前Profiler隐藏恢复与人物自然边缘裁切已在Final7检查，Final10同一画面与结构未见回归。evidence/runtime_final10_960x540.jpg；默认 evidence/runtime_final10_default.jpg。"
+    },
+    {
+      "name": "三轴保留、角色边缘裁切与Final10控制台无新增错误/警告",
+      "result": "PASS",
+      "evidence": "Final10三轴切换保持未操作轴，角色在默认与960×540视口轮廓完整；Master记录本轮控制台无新增错误/警告（旧Mask警告只在历史诊断时间戳）。见evidence/runtime_final10_axis_manager.jpg、runtime_final10_axis_stage.jpg、runtime_final10_axis_expression.jpg、runtime_final10_960x540.jpg及evidence/MASTER_RUNTIME_OBSERVATIONS.json。Profiler隐藏恢复曾在早期诊断构建核对，不作为Final10本轮证据。"
+    },
+    {
+      "name": "目标设备、原生与微信/抖音SDK",
+      "result": "NOT_TESTED",
+      "evidence": "本次未执行目标设备或平台SDK验证。"
+    }
+  ],
+  "observed_performance": {
+    "value": 6432,
+    "unit": "ms",
+    "status": "MEASURED_90_SELECTION_SWEEP_ONLY",
+    "note": "Master在Final10 IAB执行90组合实际巡检，状态显示90/90、0失败、6432ms。此为该运行路径的完成耗时，不是帧率/GPU/目标设备性能结论；未执行设备性能测试。"
+  },
+  "screenshots": [
+    "evidence/runtime_final10_user_preview.jpg",
+    "evidence/runtime_final10_default.jpg",
+    "evidence/runtime_final10_sweep90.jpg",
+    "evidence/runtime_final10_reentry.jpg",
+    "evidence/runtime_final10_axis_manager.jpg",
+    "evidence/runtime_final10_axis_stage.jpg",
+    "evidence/runtime_final10_axis_expression.jpg",
+    "evidence/runtime_final10_panel_384x192.jpg",
+    "evidence/runtime_final10_panel_768x256.jpg",
+    "evidence/runtime_final10_panel_1024x384.jpg",
+    "evidence/runtime_final10_continuous_switch.jpg",
+    "evidence/runtime_final10_960x540.jpg"
+  ]
+}

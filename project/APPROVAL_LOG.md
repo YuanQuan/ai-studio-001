@@ -1,3 +1,7 @@
+2026-10-10 21:13:29 +08:00（Producer送用户审核登记，非用户决定）：`U04-DIALOGUE-CLIENT-001` v0.1实现包及`U04-DIALOGUE-CLIENT-REVIEW-001` v0.1同版Tech评审进入USER_REVIEW。Client 7/7、Tech 5/5 Required与五/三项同序PASS；Tech/Master REVIEW APPROVED，Master `MASTER_PACKET_ACCEPTANCE.json`锁25/25真实Artifact SHA一致。现行两`ARTIFACT_APPROVAL.json`均USER_REVIEW/decided_at null，当前实现用户尚未批准，不记DONE。Final10实际Web运行90/90 0失败6432ms；目标设备GPU与冷网络压力NOT_TESTED，单元示例无QA。
+
+2026-10-10 19:52:35 +08:00（Producer登记，用户消息精确时刻未知）：用户本轮明确“批准”唯一送审 `U04-DIALOGUE-LAYERED-ASSET-001` v0.1 `USER_REVIEW_PACKET.md` 及同版 Tech `RESOURCE_AUDIT.json`；此为具体切片与同尺度重组 Gate2 `USER_APPROVED`。Art 37/37 Required、五PASS，Tech 7/7 Required、四PASS；Master `MASTER_PACKET_ACCEPTANCE.json` 锁四文件SHA均复核一致。两主线旧 `ARTIFACT_APPROVAL_v0.1_user_review.json` 保留，现行 Approval 为 `USER_APPROVED`、`decided_at=null`。ACAJ/ADXJ两批作为该统一bundle来源内部接受，批准覆盖同版bundle，不登记独立用户消息。Client可正式接入；Creator导入及运行仍待Client实际验证。
+
 # 用户审批记录
 2026-10-10 18:38:35 +08:00（U04具体分层切片Gate2送审，非用户决定）：主Art `U04-DIALOGUE-LAYERED-ASSET-001` v0.1 `USER_REVIEW_PACKET.md`与Tech同版`RESOURCE_AUDIT.json`为本次准确审核范围；主Art37/37 Required、五PASS，Tech7/7、四PASS。Master `MASTER_PACKET_ACCEPTANCE.json`锁用户包、两DELIVERABLE及Tech审计四项SHA并接受送审，且有静态画面目视记录。两现行`ARTIFACT_APPROVAL.json`均`USER_REVIEW`、`decided_at=null`。Gate1已批只授权制作，不代替本次实际切片用户批准；18PSD/90局部表情/九宫格及U00静态重组未获Gate2用户批准前，不解锁Client正式接入，不称Creator或目标机运行通过。
 

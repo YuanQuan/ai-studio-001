@@ -1,7 +1,7 @@
 import {
   _decorator, Color, Component, Director, EventMouse, EventTouch, Graphics, Input, director, input,
   JsonAsset, Label, Mask, Node, Prefab, ResolutionPolicy, Sprite, SpriteFrame, UITransform, Vec3, profiler,
-  instantiate, sys, view,
+  instantiate, sys, view, assetManager,
 } from 'cc';
 import { Scene1CameraController } from './labs/menu/scene1_camera_controller';
 import { TouristAction, TouristSlot, TouristStateController } from './labs/u02/tourist_state';
@@ -26,6 +26,36 @@ const OVERVIEW_SHOP_BASELINE = [
 const OVERVIEW_SHOP_BASELINE_SCALES = [0.34, 0.34, 0.34, 0.34, 0.34, 0.34];
 const OVERVIEW_TOURIST_COUNT = 1;
 const OVERVIEW_TOURIST_SCALE = 0.2;
+const U04_MANAGERS = [
+  { key: 'mt', name: '孟桃' }, { key: 'at', name: '阿棠' },
+  { key: 'ac', name: '阿炭' }, { key: 'aj', name: '阿角' },
+  { key: 'ad', name: '阿灯' }, { key: 'xj', name: '小锦' },
+];
+const U04_STAGES = [0, 2, 3];
+const U04_EXPRESSIONS = [
+  { key: 'happy', name: '高兴' }, { key: 'surprised', name: '惊讶' },
+  { key: 'sad', name: '悲伤' }, { key: 'smile', name: '微笑' }, { key: 'angry', name: '生气' },
+];
+const U04_PANEL_SIZES = [
+  { width: 384, height: 192 }, { width: 768, height: 256 },
+  { width: 1024, height: 384 }, { width: 1280, height: 195 },
+];
+const U04_CROP_EXPORT_WIDTH: Record<string, number> = {
+  MT_S0: 576, MT_S2: 551, MT_S3: 574, AT_S0: 503, AT_S2: 516, AT_S3: 768,
+  AC_S0: 446, AC_S2: 497, AC_S3: 601, AJ_S0: 586, AJ_S2: 586, AJ_S3: 566,
+  AD_S0: 549, AD_S2: 584, AD_S3: 664, XJ_S0: 613, XJ_S2: 617, XJ_S3: 633,
+};
+const U04_LAYOUT: Record<string, { scale: number; waist: number; x: number; y: number }> = {
+  MT_S0: { scale: 0.73, waist: 0.68, x: -25, y: 210 }, MT_S2: { scale: 0.71, waist: 0.70, x: 3, y: 210 },
+  MT_S3: { scale: 0.73, waist: 0.69, x: -3, y: 210 }, AT_S0: { scale: 0.73, waist: 0.68, x: 15, y: 210 },
+  AT_S2: { scale: 0.71, waist: 0.70, x: 4, y: 210 }, AT_S3: { scale: 0.73, waist: 0.69, x: 2, y: 210 },
+  AC_S0: { scale: 0.73, waist: 0.67, x: 22, y: 210 }, AC_S2: { scale: 0.71, waist: 0.70, x: 14, y: 210 },
+  AC_S3: { scale: 0.73, waist: 0.68, x: 10, y: 210 }, AJ_S0: { scale: 0.73, waist: 0.68, x: -10, y: 210 },
+  AJ_S2: { scale: 0.71, waist: 0.70, x: -7, y: 210 }, AJ_S3: { scale: 0.73, waist: 0.69, x: -4, y: 210 },
+  AD_S0: { scale: 0.6893, waist: 0.735, x: -68, y: 210 }, AD_S2: { scale: 0.6893, waist: 0.735, x: -68, y: 210 },
+  AD_S3: { scale: 0.6893, waist: 0.735, x: -68, y: 210 }, XJ_S0: { scale: 0.7129, waist: 0.705, x: -106, y: 210 },
+  XJ_S2: { scale: 0.7129, waist: 0.705, x: -106, y: 210 }, XJ_S3: { scale: 0.7129, waist: 0.705, x: -106, y: 210 },
+};
 
 @ccclass('UnitSampleGallery')
 export class UnitSampleGallery extends Component {
@@ -125,6 +155,41 @@ export class UnitSampleGallery extends Component {
   private overviewCount = OVERVIEW_TOURIST_COUNT;
   private overviewRng = 94721;
   private overviewProfilerWasShowing: boolean | null = null;
+  private u04Generation = 0;
+  private u04Manifest: JsonAsset | null = null;
+  private u04ManifestLoaded = false;
+  private u04ManifestLoading = false;
+  private u04ManifestWaiters: number[] = [];
+  private u04LandscapeMode = false;
+  private u04Manager = 0;
+  private u04Stage = 0;
+  private u04Expression = 3;
+  private u04PageGeneration = 0;
+  private u04Loaded = new Map<string, SpriteFrame>();
+  private u04Bundle: any = null;
+  private u04BundleLoading = false;
+  private u04BundleWaiters: Array<(bundle: any | null) => void> = [];
+  private u04Sweep = { active: false, checked: 0, total: 90, failed: [] as string[], elapsedMs: 0, startedAt: 0 };
+  private u04Pending: Array<{ path: string; apply: (frame: SpriteFrame | null) => void; generation: number; pageGeneration: number; selection: boolean }> = [];
+  private u04RefCounts = new Map<string, number>();
+  private u04SelectionPaths = new Set<string>();
+  private u04PagePaths = new Set<string>();
+  private u04Inflight = new Map<string, { refs: number; done: boolean; frame: SpriteFrame | null; waiters: Array<(frame: SpriteFrame | null) => void> }>();
+  private u04Sprites: Sprite[] = [];
+  private u04Portrait: Node | null = null;
+  private u04CropWidth = 430;
+  private u04BaseNode: Node | null = null;
+  private u04Face: Node | null = null;
+  private u04Front: Node | null = null;
+  private u04Name: Label | null = null;
+  private u04Status: Label | null = null;
+  private u04Title: Label | null = null;
+  private u04Panel: Sprite | null = null;
+  private u04PanelSizeIndex = 3;
+  private u04Back: Node | null = null;
+  private u04Controls: Node[] = [];
+  private u04ResizeButtons: Node[] = [];
+  private u04SweepButton: Node | null = null;
 
   protected onLoad(): void {
     // Keep the full phone viewport, including the extra height of tall phones.
@@ -140,6 +205,11 @@ export class UnitSampleGallery extends Component {
 
   protected onDestroy(): void {
     this.restoreOverviewProfiler();
+    this.releaseU04Page();
+    if (this.u04ManifestLoaded) this.u04Bundle?.release('u04_layer_export_map', JsonAsset);
+    this.u04ManifestLoaded = false;
+    this.u04Manifest = null;
+    if (this.u04LandscapeMode) { view.setDesignResolutionSize(720,1280,ResolutionPolicy.FIXED_WIDTH); this.u04LandscapeMode=false; }
     this.touristState?.detach();
     this.touristState = null;
     for (const item of this.overviewTourists) item.state.detach();
@@ -220,6 +290,7 @@ export class UnitSampleGallery extends Component {
       node.on(Node.EventType.TOUCH_END, (event) => {
         event.propagationStopped = true;
         if (pressFeedback) this.paintButtonState(node, 'normal');
+        if (this.u04Sweep.active && this.u04Controls.includes(node) && node !== this.u04Back) return;
         onTouch();
       });
     }
@@ -271,6 +342,7 @@ export class UnitSampleGallery extends Component {
     this.disabledControls.clear();
     this.buttonMouseActions.clear();
     this.shopGeneration++;
+    this.releaseU04Page();
     this.shopStage = this.shopArtwork = this.shopTitle = null;
     this.shopIdentity = this.shopStatus = null;
     this.shopPrevious = this.shopNext = this.shopBack = this.shopRetry = this.shopErrorPanel = null;
@@ -341,6 +413,7 @@ export class UnitSampleGallery extends Component {
   }
 
   private openMenu(): void {
+    if (this.u04LandscapeMode) { view.setDesignResolutionSize(720,1280,ResolutionPolicy.FIXED_WIDTH); this.u04LandscapeMode=false; }
     this.clearPage();
     this.menuContent = this.makeNode('MenuContent', this.page);
     this.menuTitle = this.makeNode('MenuTitle', this.menuContent, 660, 68);
@@ -360,6 +433,8 @@ export class UnitSampleGallery extends Component {
     this.menuCards.push(this.menuCard('U03', '六店店铺',
       shopsReady ? '查看六间店铺，并循环切换。' : '资源未就绪',
       () => this.openShops(), shopsReady));
+    this.menuCards.push(this.menuCard('U04', '店长对话',
+      '切换店长、魂阶段与表情，查看分层对话。', () => this.openDialogue()));
     this.layoutScene();
   }
 
@@ -652,6 +727,416 @@ export class UnitSampleGallery extends Component {
   private setTouristButtonText(node: Node | undefined, value: string): void {
     const label = node?.getChildByName('Text')?.getComponent(Label);
     if (label) label.string = value;
+  }
+
+  private u04Key(): string {
+    return `${U04_MANAGERS[this.u04Manager].key}_s${U04_STAGES[this.u04Stage]}`.toUpperCase();
+  }
+
+  private u04Path(layer: 'base' | 'front' | 'face', expression = this.u04Expression): string {
+    const key = this.u04Key().toLowerCase();
+    const expr = U04_EXPRESSIONS[expression].key;
+    return layer === 'face'
+      ? `faces/tex_u04_${key}_face_${expr}`
+      : `portraits/tex_u04_${key}_${layer === 'base' ? 'base' : 'front'}`;
+  }
+
+  private ensureU04Bundle(onReady?: (bundle: any | null) => void): void {
+    if (this.u04Bundle) { onReady?.(this.u04Bundle); return; }
+    if (onReady) this.u04BundleWaiters.push(onReady);
+    if (this.u04BundleLoading) return;
+    this.u04BundleLoading = true;
+    assetManager.loadBundle('dialogue', (error, bundle) => {
+      this.u04BundleLoading = false;
+      this.u04Bundle = !error && bundle ? bundle : null;
+      const pending = this.u04Pending.splice(0);
+      pending.forEach(item => {
+        const current = item.pageGeneration === this.u04PageGeneration && (!item.selection || item.generation === this.u04Generation);
+        if (current && this.u04Bundle) this.acquireU04(item.path, item.apply);
+      });
+      const waiters = this.u04BundleWaiters.splice(0);
+      waiters.forEach(waiter => waiter(this.u04Bundle));
+      if (!this.u04Bundle && this.u04Status?.isValid) this.u04Status.string = '对话资源包加载失败';
+    });
+  }
+
+  private ensureU04Manifest(pageGeneration: number): void {
+    if (this.u04Manifest) {
+      if (pageGeneration === this.u04PageGeneration && this.u04Portrait?.isValid) this.refreshDialogue();
+      return;
+    }
+    this.u04ManifestWaiters.push(pageGeneration);
+    if (this.u04ManifestLoading) return;
+    this.u04ManifestLoading = true;
+    this.ensureU04Bundle(bundle => {
+      if (!bundle) {
+        this.u04ManifestLoading = false;
+        const waiters = this.u04ManifestWaiters.splice(0);
+        if (waiters.includes(this.u04PageGeneration) && this.u04Status?.isValid) this.u04Status.string = '映射资源包加载失败';
+        return;
+      }
+      bundle.load('u04_layer_export_map', JsonAsset, (err: Error | null, asset: JsonAsset) => {
+        this.u04ManifestLoading = false;
+        const waiters = this.u04ManifestWaiters.splice(0);
+        if (err || !asset) {
+          if (waiters.includes(this.u04PageGeneration) && this.u04Status?.isValid) this.u04Status.string = '映射资源加载失败';
+          return;
+        }
+        if (!this.isValid) {
+          bundle.release('u04_layer_export_map', JsonAsset);
+          return;
+        }
+        if (this.u04Manifest) {
+          // Single-flight normally prevents this path; balance an unexpected
+          // duplicate load while retaining the one component-lifetime ref.
+          bundle.release('u04_layer_export_map', JsonAsset);
+        } else {
+          this.u04Manifest = asset;
+          this.u04ManifestLoaded = true;
+        }
+        if (waiters.includes(this.u04PageGeneration) && this.u04Portrait?.isValid) this.refreshDialogue();
+      });
+    });
+  }
+
+  private acquireU04(path: string, apply: (frame: SpriteFrame | null) => void): void {
+    const cached = this.u04Loaded.get(path);
+    const inPortrait = path.startsWith('portraits/') || path.startsWith('faces/');
+    (inPortrait ? this.u04SelectionPaths : this.u04PagePaths).add(path);
+    if (!this.u04Bundle) {
+      this.u04Pending.push({ path, apply, generation: this.u04Generation, pageGeneration: this.u04PageGeneration, selection: inPortrait });
+      this.ensureU04Bundle();
+      return;
+    }
+    this.u04RefCounts.set(path, (this.u04RefCounts.get(path) || 0) + 1);
+    if (cached?.isValid) { apply(cached); return; }
+    let entry = this.u04Inflight.get(path);
+    if (!entry) {
+      entry = { refs: 0, done: false, frame: null, waiters: [] };
+      this.u04Inflight.set(path, entry);
+      const request = entry;
+      this.u04Bundle.load(`${path}/spriteFrame`, SpriteFrame, (error: Error | null, frame: SpriteFrame) => {
+        request.done = true;
+        request.frame = !error && frame?.isValid ? frame : null;
+        if (request.frame) this.u04Loaded.set(path, request.frame);
+        for (const waiter of request.waiters.splice(0)) waiter(request.frame);
+        if (request.refs <= 0 && request.frame) this.releaseU04Asset(path);
+        else if (!request.frame && request.refs <= 0) this.u04Inflight.delete(path);
+      });
+    }
+    const request = entry;
+    request.refs++;
+    const generation = this.u04Generation;
+    const pageGeneration = this.u04PageGeneration;
+    const finish = (frame: SpriteFrame | null) => {
+      if (pageGeneration !== this.u04PageGeneration || (inPortrait && generation !== this.u04Generation)) return;
+      if (inPortrait && !this.u04Portrait?.isValid) return;
+      if (!frame) { if (this.u04Status) this.u04Status.string = '资源加载失败，请切换后重试'; return; }
+      apply(frame);
+    };
+    if (request.done) finish(request.frame);
+    else request.waiters.push(finish);
+  }
+
+  private releaseU04Asset(path: string): void {
+    const entry = this.u04Inflight.get(path);
+    if (entry && !entry.done) return;
+    const frame = this.u04Loaded.get(path) || entry?.frame;
+    if (frame?.isValid) this.u04Bundle?.release(`${path}/spriteFrame`, SpriteFrame);
+    this.u04Loaded.delete(path);
+    this.u04Inflight.delete(path);
+  }
+
+  private releaseU04Ref(path: string): void {
+    const count=Math.max(0,(this.u04RefCounts.get(path)||0)-1);
+    if(count>0){this.u04RefCounts.set(path,count);return;}
+    this.u04RefCounts.delete(path);
+    const req=this.u04Inflight.get(path);
+    if(req) req.refs=Math.max(0,req.refs-1);
+    if(!this.u04RefCounts.has(path)) this.releaseU04Asset(path);
+  }
+
+  private releaseU04Selection(): void {
+    for (const sprite of this.u04Sprites) {
+      if (sprite.isValid && (sprite.node.name === 'U04BaseLayer' || sprite.node.name === 'U04Portrait' || sprite.node.name === 'U04FaceLayer' || sprite.node.name === 'U04FrontLayer')) sprite.spriteFrame = null;
+    }
+    const paths = Array.from(this.u04SelectionPaths);
+    this.u04SelectionPaths.clear();
+    for (const path of paths) this.releaseU04Ref(path);
+  }
+
+  private releaseU04Page(): void {
+    this.u04Generation++;
+    this.u04PageGeneration++;
+    this.u04Sweep.active = false;
+    this.u04Pending=this.u04Pending.filter(item=>item.pageGeneration>=this.u04PageGeneration);
+    if ((globalThis as any).__U04_RUNTIME__) (globalThis as any).__U04_RUNTIME__ = { page: 'menu', generation: this.u04Generation, loaded: this.u04Loaded.size, requested: Array.from(this.u04SelectionPaths) };
+    for (const sprite of this.u04Sprites) { if (sprite.isValid) sprite.spriteFrame = null; }
+    this.u04Sprites = [];
+    const paths = Array.from(this.u04PagePaths);
+    this.u04PagePaths.clear();
+    for (const path of paths) this.releaseU04Ref(path);
+    this.releaseU04Selection();
+    this.u04Portrait = this.u04BaseNode = this.u04Face = this.u04Front = null;
+    this.u04Name = this.u04Status = null;
+    this.u04Title = null;
+    this.u04Panel = null;
+    this.u04Back = null;
+    this.u04Controls = [];
+    this.u04ResizeButtons = [];
+    this.u04SweepButton = null;
+  }
+
+  private openDialogue(): void {
+    this.clearPage();
+    view.setDesignResolutionSize(1280,720,ResolutionPolicy.FIXED_WIDTH); this.u04LandscapeMode=true;
+    this.u04Manager = 0; this.u04Stage = 0; this.u04Expression = 3;
+    this.u04PanelSizeIndex = 3;
+    this.u04PanelWidth = 1;
+    const visible = view.getVisibleSize();
+    const stage = this.makeNode('U04DialogueScene', this.page, visible.width, visible.height);
+    if (!this.streetBasePrefab) {
+      this.label(stage, 'U00背景资源不可用', 0, 0, 22, TEXT);
+      return;
+    }
+    const background = instantiate(this.streetBasePrefab);
+    background.name = 'U00StreetBase';
+    stage.addChild(background);
+    const entities=this.makeNode('U04_U00ShopLayout',background,3072,1024); entities.setSiblingIndex(3);
+    const shopPositions=[[-1079,-234],[-780,-260],[-410,-235],[350,-237],[689,-249],[1030,-249]];
+    this.shopPrefabs.forEach((prefab,i)=>{if(!prefab)return;const shop=instantiate(prefab);shop.name=`U00Shop_${i+1}`;entities.addChild(shop);const scale=0.34;shop.setScale(scale,scale,1);const contactY=shop.getChildByName('ground_contact')?.position.y??-388;shop.setPosition(shopPositions[i][0],shopPositions[i][1]-contactY*scale,0);});
+    const backgroundLayers=['L01_Sky','L02_Mountains','L03_Ground','L04_WaterBridge','L05_WaterGrass'].map(name=>background.getChildByName(name)).filter((node):node is Node=>!!node);
+    const cover = this.makeNode('U04BackgroundDim', stage, visible.width, visible.height);
+    const dim = cover.addComponent(Graphics); dim.fillColor = new Color(5, 10, 18, 125); dim.rect(-visible.width/2,-visible.height/2,visible.width,visible.height); dim.fill();
+    this.overviewProfilerWasShowing = profiler.isShowingStats();
+    profiler.hideStats();
+    const controls = this.makeNode('U04Controls', stage, visible.width, 120);
+    this.u04Controls = [];
+    this.u04Back = this.button(controls, '返回菜单', 0, 0, 160, 56,
+      () => this.openMenu(), true);
+    this.u04Controls.push(this.u04Back);
+    this.u04Title = this.label(controls, 'U04 店长对话', 0, 0, 28, GOLD, 300, 52);
+    const sweepButton = this.button(controls, '巡检90组', 0, 0, 150, 50, () => this.startU04Sweep(), true);
+    this.u04SweepButton = sweepButton;
+    this.u04Controls.push(sweepButton);
+    const shrinkPanel = this.button(stage, '缩小面板', 520, 168, 64, 40, () => { this.u04PanelSizeIndex=(this.u04PanelSizeIndex+U04_PANEL_SIZES.length-1)%U04_PANEL_SIZES.length; this.layoutDialogue(view.getVisibleSize()); }, true);
+    const growPanel = this.button(stage, '放大面板', 590, 168, 64, 40, () => { this.u04PanelSizeIndex=(this.u04PanelSizeIndex+1)%U04_PANEL_SIZES.length; this.layoutDialogue(view.getVisibleSize()); }, true);
+    this.u04Controls.push(shrinkPanel,growPanel);
+    this.u04ResizeButtons = [shrinkPanel,growPanel];
+    this.u04Portrait = this.makeNode('U04Portrait', stage, 1024, 1536);
+    this.u04BaseNode = this.makeNode('U04BaseLayer', this.u04Portrait, 1024, 1536);
+    const portraitMask = this.makeNode('U04WaistCrop', stage, 430, 500);
+    const mask = portraitMask.addComponent(Mask); mask.type = Mask.Type.GRAPHICS_STENCIL;
+    const graphics = portraitMask.getComponent(Graphics)!;
+    graphics.fillColor = Color.WHITE; graphics.rect(-215, -250, 430, 500); graphics.fill();
+    portraitMask.addChild(this.u04Portrait);
+    this.u04Face = this.makeNode('U04FaceLayer', this.u04Portrait, 256, 256);
+    this.u04Front = this.makeNode('U04FrontLayer', this.u04Portrait, 256, 256);
+    const portraitSprite = this.u04BaseNode.addComponent(Sprite); portraitSprite.sizeMode = Sprite.SizeMode.CUSTOM; this.u04Sprites.push(portraitSprite);
+    const faceSprite = this.u04Face.addComponent(Sprite); faceSprite.sizeMode = Sprite.SizeMode.CUSTOM; this.u04Sprites.push(faceSprite);
+    const frontSprite = this.u04Front.addComponent(Sprite); frontSprite.sizeMode = Sprite.SizeMode.CUSTOM; this.u04Sprites.push(frontSprite);
+    const panelNode = this.makeNode('U04DialoguePanel', stage, 512, 256);
+    portraitMask.setSiblingIndex(panelNode.getSiblingIndex()+1);
+    shrinkPanel.setSiblingIndex(panelNode.getSiblingIndex()+1);
+    growPanel.setSiblingIndex(shrinkPanel.getSiblingIndex()+1);
+    this.u04Panel = panelNode.addComponent(Sprite); this.u04Panel.sizeMode = Sprite.SizeMode.CUSTOM; this.u04Panel.type = Sprite.Type.SLICED;
+    this.u04Sprites.push(this.u04Panel);
+    this.acquireU04('ui/tex_u04_dialogue_panel_9s', (f) => {
+      if (this.u04Panel?.isValid) { this.u04Panel.spriteFrame = f; if (f) { f.insetTop=48; f.insetBottom=48; f.insetLeft=48; f.insetRight=48; this.u04Panel!.type=Sprite.Type.SLICED; } }
+    });
+    const decoA = this.makeNode('U04CornerBottomLeft', stage, 128, 96); const sa=decoA.addComponent(Sprite); this.u04Sprites.push(sa);
+    this.acquireU04('ui/tex_u04_dialogue_corner_cloud_bottom_left', f=>{if(sa.isValid)sa.spriteFrame=f;});
+    const decoB = this.makeNode('U04CornerTopRight', stage, 128, 96); const sb=decoB.addComponent(Sprite); this.u04Sprites.push(sb);
+    this.acquireU04('ui/tex_u04_dialogue_corner_cloud_top_right', f=>{if(sb.isValid)sb.spriteFrame=f;});
+    this.u04Name = this.label(stage, '', 0, 0, 28, GOLD, 470, 46);
+    this.label(stage, '这里是演示对白文本。', 0, 0, 22, TEXT, 470, 100);
+    this.u04Status = this.label(stage, '正在加载店长资源…', 0, 0, 16, MUTED, 620, 34);
+    const managerButtons = this.makeNode('U04ManagerControls', stage, 630, 78);
+    U04_MANAGERS.forEach((m,i)=>this.u04Controls.push(this.button(managerButtons,m.name,-250+i*100,0,96,64,()=>{this.u04Manager=i;this.refreshDialogue();},true)));
+    const stageButtons = this.makeNode('U04StageExpressionControls', stage, 760, 72);
+    U04_STAGES.forEach((st,i)=>this.u04Controls.push(this.button(stageButtons,`${st}魂`,-340+i*96,0,88,46,()=>{this.u04Stage=i;this.refreshDialogue();},true)));
+    U04_EXPRESSIONS.forEach((e,i)=>this.u04Controls.push(this.button(stageButtons,e.name,-52+i*96,0,88,46,()=>{this.u04Expression=i;this.refreshDialogue();},true)));
+    const cameraNode=this.makeNode('U04_U00Camera',this.page); cameraNode.active=false;
+    const camera=cameraNode.addComponent(Scene1CameraController); camera.layers=backgroundLayers;
+    camera.resetCameraX=-266; camera.synchronizedNodes=[entities]; camera.viewport=stage;
+    camera.uiCaptureRoot=null; camera.uiCaptureNodes=this.u04Controls; cameraNode.active=true; camera.reset();
+    this.layoutDialogue(visible);
+    this.refreshDialogue();
+    if (this.u04Manifest) return;
+    const pageGeneration = this.u04PageGeneration;
+    this.ensureU04Manifest(pageGeneration);
+  }
+
+  private refreshDialogue(): void {
+    if (!this.u04Portrait?.isValid) return;
+    const key = this.u04Key();
+    const mapping = ((this.u04Manifest?.json as any)?.stages)?.[key.toUpperCase()];
+    if (!mapping) {
+      this.u04Sprites.slice(0, 3).forEach(sprite => { if (sprite.isValid) sprite.spriteFrame = null; });
+      if (this.u04Status) this.u04Status.string = '正在加载有效的图层映射…';
+      this.publishU04Runtime();
+      return;
+    }
+    this.releaseU04Selection();
+    const generation = ++this.u04Generation;
+    this.u04Name!.string = U04_MANAGERS[this.u04Manager].name + ` · ${U04_STAGES[this.u04Stage]}魂`;
+    this.u04Status!.string = `${this.u04Key()} / ${U04_EXPRESSIONS[this.u04Expression].name}`;
+    this.publishU04Runtime();
+    const layout=U04_LAYOUT[key];
+    const exportedScale = mapping?.handoff_normalized?.base_source_to_export_scale || 1;
+    this.u04Portrait.setScale(layout.scale,layout.scale,1);
+    const baseRect: number[] = mapping?.handoff_normalized?.base_source_rect_xyxy || mapping?.base?.source_rect_xyxy || [0,0,1024,1024];
+    const baseTransform = this.u04BaseNode!.getComponent(UITransform)!;
+    baseTransform.setContentSize(baseRect[2]-baseRect[0],baseRect[3]-baseRect[1]);
+    this.u04BaseNode!.setPosition((baseRect[0]+baseRect[2])/2-512,768-(baseRect[1]+baseRect[3])/2,0);
+    this.u04Portrait!.setPosition(0,0,0);
+    const faceSourceRect: number[] = mapping?.handoff_normalized?.face_source_rect_xyxy || mapping?.face?.source_rect_xyxy || [384,640,640,896];
+    const facePivot: number[] = mapping?.handoff_normalized?.face_source_pivot_xy || mapping?.face?.pivot_source_xy || [(faceSourceRect[0]+faceSourceRect[2])/2,(faceSourceRect[1]+faceSourceRect[3])/2];
+    const faceSize=this.u04Face!.getComponent(UITransform)!; faceSize.setContentSize(faceSourceRect[2]-faceSourceRect[0],faceSourceRect[3]-faceSourceRect[1]);
+    this.u04Face!.setPosition(facePivot[0]-512,768-facePivot[1],0);
+    const frontRect: number[] = mapping?.front_hair?.source_rect_xyxy || mapping?.front_occlusion?.source_rect_xyxy || mapping?.handoff_normalized?.front_source_rect_xyxy || [384,640,640,896];
+    const frontSize=this.u04Front!.getComponent(UITransform)!; frontSize.setContentSize(frontRect[2]-frontRect[0],frontRect[3]-frontRect[1]);
+    this.u04Front!.setPosition((frontRect[0]+frontRect[2])/2-512,768-(frontRect[1]+frontRect[3])/2,0);
+    const cropNode = this.u04Portrait.parent!;
+    const cropHeight=500;
+    this.u04CropWidth=(U04_CROP_EXPORT_WIDTH[key]||430)/exportedScale*layout.scale;
+    cropNode.getComponent(UITransform)!.setContentSize(this.u04CropWidth,cropHeight);
+    const cropGraphics=cropNode.getComponent(Graphics); if(cropGraphics){cropGraphics.clear();cropGraphics.fillColor=Color.WHITE;cropGraphics.rect(-this.u04CropWidth/2,-cropHeight/2,this.u04CropWidth,cropHeight);cropGraphics.fill();}
+    const waistBottom = baseRect[1] + (baseRect[3] - baseRect[1]) * layout.waist;
+    this.u04Portrait.setPosition(0, -cropHeight/2 - (768-waistBottom)*layout.scale,0);
+    this.layoutDialogue(view.getVisibleSize());
+    const trio: Array<SpriteFrame | null> = [null, null, null]; let ready = 0; let failed = false;
+    const finish = (index: number) => (frame: SpriteFrame | null) => {
+      if (generation !== this.u04Generation) return;
+      if (!frame) { failed = true; this.u04Sprites.slice(0, 3).forEach(sprite => sprite.spriteFrame = null); return; }
+      trio[index] = frame; ready++;
+      if (ready === 3 && !failed) {
+        this.u04Sprites.slice(0, 3).forEach((sprite, i) => sprite.spriteFrame = trio[i]);
+        this.u04Status!.string = `${key.toUpperCase()} / ${U04_EXPRESSIONS[this.u04Expression].name} · 三层就绪`;
+        this.publishU04Runtime();
+      }
+    };
+    this.acquireU04(this.u04Path('base'), finish(0));
+    this.acquireU04(this.u04Path('face'), finish(1));
+    this.acquireU04(this.u04Path('front'), finish(2));
+  }
+
+  private startU04Sweep(): void {
+    if (this.u04Sweep.active || !this.u04Portrait?.isValid) return;
+    this.u04Sweep = { active: true, checked: 0, total: 90, failed: [], elapsedMs: 0, startedAt: Date.now() };
+    this.runU04SweepStep(0);
+  }
+
+  private runU04SweepStep(index: number, waitCount = 0, expectedGeneration = -1): void {
+    if (!this.u04Sweep.active || !this.u04Portrait?.isValid) return;
+    if (waitCount === 0) {
+      if (index >= this.u04Sweep.total) {
+        this.u04Sweep.active = false;
+        this.u04Sweep.elapsedMs = Date.now() - this.u04Sweep.startedAt;
+        if (this.u04Status) this.u04Status.string = `巡检完成 ${this.u04Sweep.checked}/90 · ${this.u04Sweep.failed.length}失败 · ${this.u04Sweep.elapsedMs}ms`;
+        this.publishU04Runtime();
+        return;
+      }
+      this.u04Manager = Math.floor(index / 15);
+      this.u04Stage = Math.floor(index / 5) % 3;
+      this.u04Expression = index % 5;
+      this.refreshDialogue();
+      expectedGeneration = this.u04Generation;
+    } else if (expectedGeneration !== this.u04Generation) {
+      this.u04Sweep.failed.push(`${this.u04Key()}/${U04_EXPRESSIONS[this.u04Expression].key}:切换代次失效`);
+      this.publishU04Runtime();
+      this.scheduleOnce(() => this.runU04SweepStep(index + 1), 0);
+      return;
+    }
+    const ready = this.u04Sprites.slice(0, 3).length === 3 && this.u04Sprites.slice(0, 3).every(sprite => sprite.isValid && !!sprite.spriteFrame);
+    const expectedKey = this.u04Key().toUpperCase();
+    if (ready && this.u04Status?.string.startsWith(`${expectedKey} /`) && this.u04Status.string.includes('三层就绪')) {
+      const expectedName = U04_MANAGERS[this.u04Manager].name;
+      const currentName = this.u04Name?.string || '';
+      if (currentName.startsWith(expectedName)) this.u04Sweep.checked++;
+      else this.u04Sweep.failed.push(`${this.u04Key()}/${U04_EXPRESSIONS[this.u04Expression].key}:姓名不一致`);
+      this.publishU04Runtime();
+      this.scheduleOnce(() => this.runU04SweepStep(index + 1), 0);
+      return;
+    }
+    if (waitCount >= 120) {
+      this.u04Sweep.failed.push(`${this.u04Key()}/${U04_EXPRESSIONS[this.u04Expression].key}:三层加载超时`);
+      this.publishU04Runtime();
+      this.scheduleOnce(() => this.runU04SweepStep(index + 1), 0);
+      return;
+    }
+    this.scheduleOnce(() => this.runU04SweepStep(index, waitCount + 1, expectedGeneration), 0.05);
+  }
+
+  private publishU04Runtime(): void {
+    (globalThis as any).__U04_RUNTIME__ = {
+      page: this.u04Portrait?.isValid ? 'dialogue' : 'menu', manager: U04_MANAGERS[this.u04Manager].key,
+      name: U04_MANAGERS[this.u04Manager].name, stage: U04_STAGES[this.u04Stage], expression: U04_EXPRESSIONS[this.u04Expression].key,
+      generation: this.u04Generation, pageGeneration: this.u04PageGeneration, loaded: this.u04Loaded.size,
+      selectedRefs: Array.from(this.u04SelectionPaths), pageRefs: Array.from(this.u04PagePaths), bundleLoaded: !!this.u04Bundle,
+      ready: this.u04Sprites.slice(0, 3).length === 3 && this.u04Sprites.slice(0, 3).every(sprite => sprite.isValid && !!sprite.spriteFrame),
+      sweep: { active: this.u04Sweep.active, checked: this.u04Sweep.checked, total: this.u04Sweep.total, failed: this.u04Sweep.failed.slice(), elapsedMs: this.u04Sweep.elapsedMs }
+    };
+  }
+
+  private layoutDialogue(visible: { width: number; height: number }): void {
+    if (!this.u04Portrait?.isValid) return;
+    const stage = this.page.getChildByName('U04DialogueScene');
+    stage?.getComponent(UITransform)?.setContentSize(visible.width, visible.height);
+    const cover = stage?.getChildByName('U04BackgroundDim');
+    const coverTransform = cover?.getComponent(UITransform);
+    coverTransform?.setContentSize(visible.width, visible.height);
+    const coverGraphics = cover?.getComponent(Graphics);
+    if (coverGraphics) {
+      coverGraphics.clear();
+      coverGraphics.fillColor = new Color(5, 10, 18, 125);
+      coverGraphics.rect(-visible.width / 2, -visible.height / 2, visible.width, visible.height);
+      coverGraphics.fill();
+    }
+    const top=visible.height/2; const bottom=-visible.height/2;
+    const controls=stage?.getChildByName('U04Controls');
+    controls?.getComponent(UITransform)?.setContentSize(visible.width, 120);
+    controls?.setPosition(0,0,0);
+    this.u04Back?.setPosition(-visible.width/2+120,top-48,0);
+    this.u04Title?.node.setPosition(0,top-48,0);
+    this.u04SweepButton?.setPosition(visible.width/2-115,top-48,0);
+    const portraitFactor=Math.min(visible.width/1280,visible.height/720);
+    this.u04Portrait.parent?.setPosition(-visible.width*0.305 + (U04_LAYOUT[this.u04Key()].x+25)*portraitFactor, -100*portraitFactor,0);
+    this.u04Portrait.parent?.setScale(portraitFactor,portraitFactor,1);
+    this.u04Portrait.parent!.getComponent(UITransform)!.setContentSize(this.u04CropWidth,500);
+    const panel=this.u04Panel?.node;
+    const requestedSize=U04_PANEL_SIZES[this.u04PanelSizeIndex];
+    const panelWidth=Math.min(visible.width,requestedSize.width), panelHeight=requestedSize.height;
+    panel?.setPosition(0,bottom+panelHeight/2,0);
+    panel?.getComponent(UITransform)?.setContentSize(panelWidth,panelHeight);
+    const resizeY=bottom+panelHeight-26;
+    this.u04ResizeButtons[0]?.setPosition(panelWidth/2-145,resizeY,0);
+    this.u04ResizeButtons[1]?.setPosition(panelWidth/2-72,resizeY,0);
+    const contentLeft=-panelWidth/2+32;
+    const contentRight=panelWidth/2-32;
+    const titleRight=Math.min(contentRight,panelWidth/2-145-32-12);
+    const titleWidth=Math.max(96,Math.min(470,titleRight-contentLeft));
+    const titleX=Math.max(contentLeft+titleWidth/2,Math.min(visible.width*0.10,titleRight-titleWidth/2));
+    const name=this.u04Name?.node;
+    name?.getComponent(UITransform)?.setContentSize(titleWidth,panelWidth<=400?36:46);
+    name?.setPosition(titleX,bottom+panelHeight-45,0);
+    if(this.u04Name)this.u04Name.fontSize=panelWidth<=400?18:panelWidth<768?22:28;
+    const body=stage?.children.find(n=>n.name==='Text'&&n!==name&&n!==this.u04Status?.node);
+    const dialogueWidth=Math.max(96,Math.min(620,panelWidth-64));
+    const dialogueX=Math.max(contentLeft+dialogueWidth/2,Math.min(visible.width*0.10,contentRight-dialogueWidth/2));
+    body?.getComponent(UITransform)?.setContentSize(dialogueWidth,panelWidth<=400?60:100);
+    body?.setPosition(dialogueX,bottom+panelHeight*0.48,0);
+    const statusWidth=Math.max(96,Math.min(620,panelWidth-64));
+    const statusX=Math.max(contentLeft+statusWidth/2,Math.min(visible.width*0.10,contentRight-statusWidth/2));
+    this.u04Status?.node.getComponent(UITransform)?.setContentSize(statusWidth,panelWidth<=400?28:34);
+    this.u04Status?.node.setPosition(statusX,bottom+panelHeight*0.17,0);
+    if(this.u04Status)this.u04Status.fontSize=panelWidth<=400?13:panelWidth<768?14:16;
+    const b1=this.page.getChildByName('U04DialogueScene')?.getChildByName('U04CornerBottomLeft');
+    const b2=this.page.getChildByName('U04DialogueScene')?.getChildByName('U04CornerTopRight');
+    b1?.setPosition(-panelWidth/2+64,bottom+panelHeight*0.25);
+    b2?.setPosition(panelWidth/2-64,bottom+panelHeight*0.75);
+    stage?.getChildByName('U04ManagerControls')?.setPosition(visible.width*0.20,bottom+panelHeight+145,0);
+    stage?.getChildByName('U04StageExpressionControls')?.setPosition(visible.width*0.20,bottom+panelHeight+75,0);
   }
 
   private openUnit(): void {
@@ -1369,6 +1854,7 @@ export class UnitSampleGallery extends Component {
       this.shopRetry?.setPosition(0, bottom + 125);
     }
     if (this.touristStage?.isValid) this.layoutTourist(visible);
+    if (this.u04Portrait?.isValid) this.layoutDialogue(visible);
     if (!this.sceneViewport?.isValid) return;
     const origin = view.getVisibleOrigin();
     const safe = sys.getSafeAreaRect(false);

@@ -1,0 +1,40 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-REVIEW-001",
+  "artifact": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md",
+  "version": "v0.1",
+  "conclusion": "PASS",
+  "scope": "编码前内部沟通；不新增Tech Design或用户审批门禁",
+  "actions": [
+    {
+      "id": "BR-01",
+      "owner": "client",
+      "action": "明确统一源坐标映射：每阶段从source_rect_xyxy、source_to_export_scale、face source_rect及front source_rect求节点位置，统一映到1024×1536源画布后再应用人物显示倍率；MT/AT/AC/AJ导出倍率1，AD/XJ为0.75。禁止直接混用export像素offset。批准静态U00示意的腰裁切是按每人display_source_rect_in_base_xyxy取可见区、约500px显示高度；它是布局语义参考，不是运行截图或唯一固定倍率。",
+      "evidence": "LAYER_EXPORT_MAP.json 18阶段；u00_dialogue_overview_sources.json六例的裁切下边界分别为701/720/688/700/556/542，人物显示倍率各异。",
+      "status": "ACCEPTED_IN_BRIEF_IMPLEMENTATION_CHECK_PENDING"
+    },
+    {
+      "id": "BR-02",
+      "owner": "client",
+      "action": "明确Creator 3.8.8九宫格SpriteFrame inset的读取或设置方式，并核Sprite.Type.SLICED；源图512×256四边48px。角饰为独立Sprite，不能随中心拉伸。",
+      "status": "ACCEPTED_IN_BRIEF_IMPLEMENTATION_CHECK_PENDING"
+    },
+    {
+      "id": "BR-03",
+      "owner": "client",
+      "action": "明确资源索引与按需加载策略：以导出清单实际129 PNG为准；页面只持有当前组合底图、前遮挡、所选脸片和面板/角饰的必要引用。每次切店长/阶段/表情、离页及组件销毁递增请求代次；异步完成前后检查页epoch、node有效性和选择键，过期资源不提交画面并对加载/缓存引用做对称释放。记录加载失败后的可恢复状态。",
+      "status": "ACCEPTED_IN_BRIEF_IMPLEMENTATION_CHECK_PENDING"
+    },
+    {
+      "id": "BR-04",
+      "owner": "client",
+      "action": "明确横屏U04进入与退出的design resolution/resize处理，不破坏U00/U01/U02/U03既有规则；说明90组合遍历的实际运行证据与快速切换/重入检查方法。",
+      "status": "ACCEPTED_IN_BRIEF_IMPLEMENTATION_CHECK_PENDING"
+    }
+  ],
+  "observations": [
+    "现有UnitSampleGallery在onLoad设置720×1280 FIXED_WIDTH，监听canvas-resize与design-resolution-changed；U00通过streetBasePrefab实例化真实五层背景。",
+    "Art清单当前状态仍标候选或未导入；Gate2批准以Producer批准记录为准，正式资源导入后复核源与工程hash及meta UUID。"
+  ],
+  "reviewed_revision": "Client同版修订，已补足四项编码前约束",
+  "actions_status": "BR-01至BR-04已在FEATURE_BRIEF.md说明；实现和运行时逐项复核"
+}

@@ -658,3 +658,19 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 速度与原因：无约定目标或同类可比基线，不判断整体快慢。可核实的制作返修见主Art及Master检查记录：早期脸部残影、错位、截嘴候选已修，Tech另要求AT0/AT3 PSD默认微笑状态一致并实读复核。静态整合中的哈希、显隐与同尺度对照检查帮助避免错版送审；各返修净耗时未知，不能归责。
 - 建议与复核：主Art在后续资产批次仍先以逐组源SHA、PSD默认显隐及全画布重组核验，再冻结用户审核包，代价为一次全量静态校验，复核点为下次Gate2送审；Tech持续将Art冻结DELIVERABLE的SHA写入审计并核复制记录，代价为一次哈希扫描，复核点为下一次资源整合。Producer在用户决定后只按准确v0.1审批对象更新Gate2，不把静态审计扩写成Creator运行PASS。
 - Continuity check：本轮双主线已到真实USER_REVIEW门禁；未获用户批准前不解锁Client。内部批次为统一Gate2的支持交付，现REVIEW待主Art整合接受，不另增用户审批；无本轮空转READY/IN_PROGRESS。
+
+### WR-20261010-U04-GATE2-APPROVAL-001
+- 结果/Owner/证据：Producer于2026-10-10 19:52:35 +08:00核Art 37/37、Tech 7/7 Required、五/四项PASS及Master四文件SHA一致，保存USER_REVIEW快照并登记准确v0.1 Gate2 USER_APPROVED；Master最终接受Art/Tech静态交付DONE，Client与Tech Review双Task解锁READY。见双主线Task/Approval、`MASTER_PACKET_ACCEPTANCE.json`、`RESOURCE_AUDIT.json`及Client双Task。ACAJ/ADXJ仅同版bundle内部接受。
+- 时间：前次Gate2送审登记18:38:35，本次批准登记2026-10-10 19:52:35 +08:00；用户回复的精确时刻未知，故审批等待精确耗时未知。Producer核验及文件更新起始精确时刻未知，不能计算净工时；返工与工具故障本节点无可证实耗时。
+- 影响与建议：前一轮静态资源已完整锁版，本轮核对哈希和审批快照使接入依赖可追溯。Master负责立即推动Client和Tech按当前READY Task实际产出，Producer在首份Required实存后复核IN_PROGRESS，并在Client运行/Tech Review提交时复核USER_REVIEW；复核点为下一次Client产物出现。Continuity check：当前双READY可继续，不能作为本执行周期停点；单元示例无QA。
+
+
+### WR-20261010-U04-IAB-DIAGNOSTIC-001
+- 结果/证据：Client首轮IAB实跑证据见`deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/BROWSER_DIAGNOSTIC_FIRST.json`与两张诊断截图；部分人物显示与三轴保留初步通过，五项具体画面/Mask问题需修，状态仍IN_PROGRESS。
+- 时间：证据记录观察于2026-10-10 12:30:06 UTC；本次Producer登记2026-10-10 20:32:27 +08:00。实际操作起点、修复净工时及工具等待无可靠记录，均未知；不将其归责于某角色。
+- 影响与建议：镜头、布局、Mask问题阻止当前画面作为最终运行证据。Client按诊断逐项修订并在下一次IAB实跑复核；Tech待最终实现独立Review，Producer以最终证据为复核点，不增加用户审批门禁。
+
+### WR-20261010-U04-CLIENT-FINAL10-001
+- 结果与证据：Client 7/7 Required及五项PASS、Tech 5/5 Required及三项PASS；Tech与Master同版APPROVED，Master锁25项Artifact SHA。Final10 Creator构建和实际HTTP/IAB证据见Client `RUNTIME_CHECK.json`、`evidence/MASTER_RUNTIME_OBSERVATIONS.json`及12张SHA一致截图；90/90组合0失败、6432ms。Producer于2026-10-10 21:13:29 +08:00登记双线USER_REVIEW，尚待用户批准，未DONE。
+- 时间拆分：首份Client/Tech Required核验为19:57:05 +08:00，首轮IAB诊断观察为20:30:06 +08:00（原证据12:30:06 UTC），Final10构建记录21:02:04 +08:00，Master运行观察记录约21:09:09 +08:00，本次送审登记2026-10-10 21:13:29 +08:00。这些节点间包含实际制作、数轮画面返工、Creator/浏览器诊断、Tech并行复核和文档校准，不能把整段墙钟时间当任何单角色净制作时长；各类净时长和工具等待缺乏完整计时，标为未知。用户对当前实现的审批等待从本次USER_REVIEW开始，结束时刻未知。
+- 影响与建议：首轮IAB发现镜头、顶部按钮、Profiler和Mask裁切问题，Client据实际画面修订并在Final10复核；运行可视检查帮助在送审前发现并关闭问题。下一轮由Producer在用户明确回复时核准确v0.1版本并更新审批，Master负责最终接受；复核点为用户决定。Continuity check：U04两条当前任务均已到用户门禁，无空占READY/IN_PROGRESS；单元示例无需QA，目标设备GPU及冷网络压力仍NOT_TESTED。

@@ -1,0 +1,61 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "owner": "client",
+  "summary": "已在既有UnitSampleGallery入口接入U04分层对话，复用U00五层与六店；129项Creator dialogue Bundle构建并由Master完成Final10 HTTP运行检查。",
+  "artifacts": [
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/U04_CREATOR_BUILD_FINAL10_STDOUT.log",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_user_preview.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_default.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_sweep90.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_reentry.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_axis_manager.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_axis_stage.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_axis_expression.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_panel_384x192.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_panel_768x256.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_panel_1024x384.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_continuous_switch.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.1/evidence/runtime_final10_960x540.jpg"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U04从既有单元入口可打开，以现有U00实际场景为背景，左侧半身像与姓名对白、三轴控制符合获批布局。",
+      "result": "PASS",
+      "evidence": "Final10同SHA实际HTTP画面确认U00五层全景/六店脚点、人物、姓名对白与返回；evidence/runtime_final10_default.jpg。"
+    },
+    {
+      "criterion": "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
+      "result": "PASS",
+      "evidence": "Final10同SHA完成90/90、0失败、6432ms；逐轴切换保留其余轴并同步姓名；Master抽核实际点选与Final10 90组合巡检。截图见runtime_final10_sweep90.jpg及runtime_final10_axis_*.jpg。"
+    },
+    {
+      "criterion": "使用批准的base＋局部表情＋前遮挡组合，PNG字节不改；统一九宫格Sprite.Type.SLICED四边48，尺寸可调整且文字和固定角饰独立，实际伸缩无角失真。",
+      "result": "PASS",
+      "evidence": "最终构建运行中逐档检查384×192、768×256、1024×384；三档均保留MT2惊讶状态，边角正常，文字在面板内。见runtime_final10_panel_*.jpg。"
+    },
+    {
+      "criterion": "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MAP含129条资源源/客户端路径、源SHA、UUID与Meta身份，并登记映射来源：Art LAYER_EXPORT_MAP（18阶段，SHA-256 71f9f7a6ce536d633e7d21701ffced23b50d71371511c706f0709e5b25ef7799）及客户端运行JSON（SHA-256 d941ee459d51d73928cf4a635d103dad208e7b5796ec494e147790860f769852，meta UUID c858383c-0b05-4d05-a4a6-35850e52210f）。Bundle config含129 SpriteFrame；Final10 HTTP加载与返回重入通过。Tech对当前源码SHA的Review为APPROVED（deliverables/tech_lead/U04-DIALOGUE-CLIENT-REVIEW-001/v0.1/REVIEW.json）；冷网络竞态压力未执行。"
+    },
+    {
+      "criterion": "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "Final10 Creator 3.8.8 CLI Finished标记、输出构建身份、HTTP 200及Master内置浏览器运行证据（默认/90组合/三轴/三档/重入/窄横屏/连续切换）均已记录；原生/SDK/目标设备及设备性能明确NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "本交付只消费已批准Art v0.1资源和对应映射，不改变角色或UI视觉语义。",
+    "WEB最终运行审核由Master使用Codex内置浏览器完成；Client提供真实构建与可读只读状态。"
+  ],
+  "risks": [
+    "未执行目标设备、原生、微信/抖音SDK验证或GPU/FPS性能测量。",
+    "Final10验证了普通返回重入和90组巡检；冷网络及高并发离入压力测试未执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
