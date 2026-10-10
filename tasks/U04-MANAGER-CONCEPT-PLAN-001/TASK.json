@@ -1,38 +1,41 @@
 {
   "id": "U04-MANAGER-CONCEPT-PLAN-001",
-  "title": "六位店长双用途形象确定与制作前方案",
+  "title": "六位店长三阶段立绘制作前方案",
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "依据可核的产品人物性格，为六位经确认的店长制定易辨识的场景店前全身形象和对话框半身形象方案；旧孟桃形象退出本次候选并保留历史。本任务只确定形象与正式资源制作前方案，不出正式图片、不制作动画或接入客户端。",
+  "objective": "依据已批准Product v0.3，为孟桃、阿棠、阿炭、阿角、阿灯、小锦各制定0魂、2魂（1–2魂过渡代表）、3魂三阶段全身立绘方案，共18幅与6张对照板；本阶段交用户批准制作方案，随后方可首图预签和实际出图。",
   "inputs": [
     "用户2026-10-09指令：店长分为场景店铺前全身站姿和对话框半身形象；旧梦桃形象废弃；重新给六位店长形象图，按产品定义性格并研究可辨认的标志元素；本轮只确定店长形象，正式进入开发流程。",
     "产品事实：孟桃性格有独立批准；其余历史角色种子仅供参考，不能视为已批准定义。现有历史资料有12位角色种子，具体六位名单待用户确认；店铺绑定可后续确定。",
     "project/DECISIONS.md、project/ART_GUIDE.md 与既有孟桃历史概念及审批记录",
     "rules/visual_production_contract.md、rules/artifact_contract.md、rules/approval_protocol.md",
-    "用户2026-10-09最新确认六位店长为孟桃、阿棠、阿炭、阿角、阿灯、小锦；暂停绘图，先由Product确定性格与魂成长差异。tasks/U04-MANAGER-PERSONALITY-001/TASK.json为当前上游任务。"
+    "用户2026-10-09最新确认六位店长为孟桃、阿棠、阿炭、阿角、阿灯、小锦；暂停绘图，先由Product确定性格与魂成长差异。tasks/U04-MANAGER-PERSONALITY-001/TASK.json为当前上游任务。",
+    "2026-10-10用户要求：按照目前店长性格外貌特征，分别每位店长1套3阶段立绘；恢复此前美术暂停。准确输入：deliverables/product/U04-MANAGER-PERSONALITY-001/v0.3/PRD.md及其USER_APPROVED记录。"
   ],
   "deliverables": [
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_PRODUCTION_PLAN.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ART_BRIEF.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/ASSET_MANIFEST.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DESIGN_RATIONALE.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/RIGHTS_AND_SOURCE.md",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/DELIVERABLE.json",
-    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.1/MASTER_REVIEW.json",
-    "tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json"
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/DELIVERABLE.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/MASTER_REVIEW.json",
+    "tasks/U04-MANAGER-CONCEPT-PLAN-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_REVIEW.json"
   ],
   "acceptance": [
-    "六位店长身份须由用户确认；性格须区分已批准事实与未批准历史参考。名单未确认时明确标注待决，不自行筛选或声称六位方案完整；店铺绑定可后续确定。",
-    "同一位店长的场景店前全身站姿与对话框半身形象共享稳定识别锚点，并说明剪裁、姿态、表情和场景尺度辨识方法。",
-    "方案明确旧孟桃形象停止作为当前候选或正式输入，历史图稿和审批记录保留；新形象不继承旧图的用户批准状态。",
-    "标志性元素研究登记来源及版权/IP/外观相似风险，避免照搬受保护表达；图像和字体正式资产许可按规则核验。",
-    "Art方案、交付索引及Master同版Review齐备后，才可将准确版本送用户审核；用户明确批准制作方案前不得开始正式图片、PSD、切片制作，后续切片效果与接入仍需独立门禁。"
+    "准确引用已批准Product v0.3，六位身份与成长语义一致。",
+    "三阶段采用0/2/3魂；2魂代表过渡展示，说明1魂差异，不改四阶段产品规则。",
+    "每位锁定跨阶段身份锚点及差异；新外貌标为提案，旧孟桃造型不复用为批准基线。",
+    "共18幅全身立绘与6对照板，半身仅同源裁切；尺寸、格式、PSD可编辑范围、来源与风险可审查。",
+    "固定交付和同版Review齐备，方案送用户审批；未批不出图、不接入。"
   ],
   "dependencies": [
     "U04-MANAGER-PERSONALITY-001"
   ],
-  "status": "BLOCKED",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "Master已指定本正式Task及Required Artifacts；Producer仅落盘任务与流程状态，不新增其他任务。",
@@ -40,6 +43,8 @@
     "Art可先整理已知产品/视觉事实、参考来源和双用途通用方案，并按实际落盘证据登记；缺名单的验收项须保持待决。",
     "本Task是美术正式资源制作前方案Gate1；本轮不生成六位正式形象图。Gate1与未来实际切片效果Gate2分别等待用户决定，未批准前不得正式出图、动画或客户端接入。",
     "2026-10-09后续用户已明确确认孟桃、阿棠、阿炭、阿角、阿灯、小锦；上文缺名单为历史开线事实，不再是当前阻塞。当前BLOCKED原因改为用户暂停绘图，并等待U04-MANAGER-PERSONALITY-001性格与魂成长规格获用户批准。既有v0.1草稿及Master BLOCKED Review保留历史，待上游批准后由Art提交新版并重评。",
-    "2026-10-09 18:05:19 +08:00 上游U04-MANAGER-PERSONALITY-001 v0.3已获USER_APPROVED并DONE，缺上游批准不再是当前阻塞；用户此前明确暂停绘图/美术流程仍有效，本Art Task继续BLOCKED，唯一当前原因是用户暂停。后续恢复时以准确批准的v0.3为输入，另修订Art方案并过其独立审批门禁，不能继承旧Art v0.1批准。"
+    "2026-10-09 18:05:19 +08:00 上游U04-MANAGER-PERSONALITY-001 v0.3已获USER_APPROVED并DONE，缺上游批准不再是当前阻塞；用户此前明确暂停绘图/美术流程仍有效，本Art Task继续BLOCKED，唯一当前原因是用户暂停。后续恢复时以准确批准的v0.3为输入，另修订Art方案并过其独立审批门禁，不能继承旧Art v0.1批准。",
+    "2026-10-10最新指令恢复美术线；旧暂停已解除。Art本轮已实际核输入并制作v0.2。方案审批未完成，当前执行限制作前方案，不能继承v0.1 DRAFT或Product批准为出图许可。",
+    "2026-10-10 08:58 +08:00 Producer核v0.2十项Required实存、DELIVERABLE五项验收与Task逐字同序且全PASS，Art/Master同版Review均APPROVED；转USER_REVIEW等待用户对准确Gate1制作前方案明确批准。18幅立绘、6对照板仍仅为计划，未出图。"
   ]
 }

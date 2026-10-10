@@ -1,5 +1,18 @@
 # 工作流程复盘记录
 
+## WR-20261010-U04-MANAGER-PLAN-V02-001｜六店长三阶段立绘制作前方案送审
+
+- 结果与证据：Master修订原`U04-MANAGER-CONCEPT-PLAN-001` Task，用户恢复美术线且上游Product v0.3已USER_APPROVED。Art完成v0.2制作前方案和审核包，计划六人各0/2/3魂三幅全身立绘及一张对照板，共18图/6板，1魂变化以文字说明；尚未出图。Producer核10/10 Required路径实存、`DELIVERABLE.json`五项验收与Task逐字同序且全PASS、Art/Master同版Review均APPROVED，Task与Approval进入USER_REVIEW。旧v0.1 DRAFT及当时缺名单的BLOCKED Review留历史。证据见现行Task/Approval、`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/`及三个状态日志。
+- 时间与原因：Producer约08:53 +08:00登记Art开工，Art主方案文件mtime 08:54:59，Master Review文件mtime 08:56:18，Art修正`DELIVERABLE.json`时间08:57:28，约08:58完成门禁核验；可观察窗口约5分钟，包含并行Art制案、Master评审、Producer审计及一次交付索引对齐修正，不等于任何角色净工时。用户原消息精确时刻未知；用户等待从本次送审后起算。旧暂停为前轮等待，不计本轮制作耗时。未见可证实工具故障；没有可比工时基线，不判断个人快慢。
+- 建议与复核：Art下次改版时在写`DELIVERABLE.json`前复制现行Task验收原文并逐项填结果，避免旧版索引与当前Task错位；代价为一次逐项核对，复核点为下次同类Gate1交付。Producer继续在用户对v0.2作决定时绑定准确方案版本并独立管理未来Gate2；复核点为本Task Approval与后续制作Task门禁。
+- Continuity check：本轮U04 Product已DONE，Art已达真实USER_REVIEW且等待用户对具体方案决定；无本线空转READY/IN_PROGRESS。尚无立绘、PSD、切片或客户端接入，QA/Client未启动。
+
+## WR-20261010-SCENE-CLARITY-GATE1-001｜U00/U01共用场景高清重绘方案送审
+
+- 周期与结果：Producer可核窗口为2026-10-10 08:54:09–08:58:22 +08:00，墙钟4分13秒。关联`SCENE-CLARITY-REDRAW-PLAN-20261010` Art v0.1：五份文字方案、Art/Tech/Master三份同版Review及Task共8/8 Required实存、DELIVERABLE索引一致、四项文字验收PASS，Gate1进入USER_REVIEW，审批`decided_at=null`。证据见`tasks/SCENE-CLARITY-REDRAW-PLAN-20261010/`及`deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/`；图片清晰度、PSD/切片和实际运行仍NOT_TESTED。
+- 时间与原因：08:54:27五份首稿及Task按mtime实存，08:55–08:56为Art审阅包/文书修订与Tech重绑定、Master评审，08:57:05完成最终Required及同版SHA核对并送审。观察窗口包含并行Art写作、三方评审和Producer登记，各角色净工时与改稿耗时未知；用户审批等待自本门禁开始，未计入已结束窗口。尚无本类方案约定时限或可比基线，不能判断角色快慢；本轮未发现可证实的工具故障或明确慢因。
+- 建议与复核：下批首图前由Art和Tech核同一批次原生输出尺寸、真实新绘细节与alpha/补底预案，代价为一次代表段检查，复核点为同批预签及样张实图；Producer在具体切图Gate2前核PSD、五PNG、同尺度重组和准确用户决定，复核点为Gate2审批记录，防止把本次文字方案PASS用于图片或客户端接入。Continuity check：本线已到USER_REVIEW，未留空转READY/IN_PROGRESS；用户批准前不生图、不替换U00/U01。
+
 ## WR-20261009-U00-COORD-V06-APPROVAL-001｜用户自行验证与单元示例最终接受
 
 - 结果与证据：用户对唯一当前v0.6明确“我已帮你验证通过了”，Master将原话及未知验证细节写入`USER_VALIDATION.md`。Producer绑定用户验证SHA `A636C76E…B2FB6`、最终实施报告SHA `7A13F69B…68241`与Gallery SHA `99364FBB…22ABD`；Tech/Master基于同SHA静态/noEmit、用户验收和明确未测范围复评APPROVED，Master接受Task DONE，Approval USER_APPROVED。旧BLOCKED Task/Approval/Review快照仍在`history/v0.6-blocked/`及`v0.6/*_REVIEW_BLOCKED.json`；Agent Creator/HTTP/IAB未验证的故障记录未改写。单元示例不安排QA，结论限本次修订。

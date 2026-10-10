@@ -1,5 +1,11 @@
 # 用户审批记录
 
+2026-10-10 08:58 +08:00（Gate1 v0.2送审，非用户决定）：`U04-MANAGER-CONCEPT-PLAN-001` v0.2十项Required实存，`DELIVERABLE.json`五项现行Task验收逐字同序且全PASS，Art/Master同版Review均APPROVED；`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。审批对象是`deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md`与同版审核包；用户须决定这份具体制作前方案。用户先前泛出图请求和Product v0.3批准均不代替Gate1具体方案批准；未批前不能正式出图，后续切片效果及客户端接入还需独立Gate2。v0.1 DRAFT及BLOCKED Review保留历史。
+
+2026-10-10 08:57:05 +08:00（Producer Gate1正式送审，非用户批准）：`SCENE-CLARITY-REDRAW-PLAN-20261010` v0.1以`deliverables/art/SCENE-CLARITY-REDRAW-PLAN-20261010/v0.1/USER_REVIEW_PACKET.md` SHA-256 `b9987826b133f3bdb8c1912a809612230b63e20806d08587c35eff4673a3e67e`绑定审阅包，方案SHA-256 `3adf0c1505b14e2c5ab726509e7be5aac7c63230c05c6d330d962890acc66070`。8/8 Required实存、四项文字方案验收PASS，Art/Tech/Master同版Review均APPROVED；Task和`ARTIFACT_APPROVAL.json`为USER_REVIEW、`decided_at=null`。用户尚未批准本批高清重绘制作方法，首图、正式PSD/五PNG、Gate2具体切片及U00/U01客户端替换均锁定。
+
+2026-10-10 08:53 +08:00（新范围登记，非用户对具体方案批准）：用户恢复六店长美术并要求每人一套三阶段立绘；Master将原Art Task修订为v0.2制作前方案，计划六人各0/2/3魂三幅全身图与一张对照板，共18幅/6板，2魂展示过渡并说明1魂。`ARTIFACT_APPROVAL.json`现指v0.2 `ART_PRODUCTION_PLAN.md`、DRAFT、`decided_at=null`；`ARTIFACT_APPROVAL_v0.1.json`保留旧DRAFT历史和旧BLOCKED Review。Product v0.3用户批准只解锁Art制案，不批准新Art方案；用户本次泛出图指令不是尚未看到的具体Gate1方案批准，正式图片/PSD/切片及接入均未解锁。
+
 2026-10-09 23:39 +08:00（Master最终接受，非第二次用户决定）：U00 Client v0.6准确实施报告SHA `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`、`USER_VALIDATION.md` SHA `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`及Gallery SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`已绑定。用户先前明确验收当前v0.6，Tech/Master同版复评APPROVED，Master接受Task DONE；Approval持续USER_APPROVED，用户消息原时间未知故decided_at null。Agent构建/HTTP/IAB未测历史和旧BLOCKED快照保留，不作正式QA/发布结论。
 
 2026-10-09 23:38 +08:00（Producer登记，用户原消息精确时刻未知）：用户对当前唯一v0.6说“我已帮你验证通过了”，按用户自行验证与本版验收批准记录；`USER_VALIDATION.md` SHA-256 `A636C76ED0128F095B52FA8ACE40C021CA3627FC2884B96076D16495E37B2FB6`，最终`IMPLEMENTATION_REPORT.md` SHA-256 `7A13F69BAACF3B2EA557A2DC2A7270B89FDC171E2F3B653240A7969CE4568241`，Gallery源码SHA `99364FBBFB1212EAB3791A4193606EE2B7EC63A40C8AB9C316DFF8B67FF22ABD`。当前Approval USER_APPROVED/decided_at null，Tech/Master同版复评APPROVED。用户验证环境与逐项步骤未知，Agent Creator/HTTP/IAB仍未验证；旧BLOCKED Task/Approval/Review快照保留，不扩为正式QA或发布结论。

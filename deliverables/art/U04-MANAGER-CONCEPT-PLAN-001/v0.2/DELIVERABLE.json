@@ -1,0 +1,55 @@
+{
+  "task_id": "U04-MANAGER-CONCEPT-PLAN-001",
+  "owner": "art",
+  "summary": "依据已获批 Product v0.3 提交六店长各 0、2、3 魂三张全身立绘的制作前方案；共计划 18 张独立视图与 6 张对照板，1 魂保留文字递进，未出图。",
+  "artifacts": [
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_PRODUCTION_PLAN.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_BRIEF.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/REFERENCE_AUDIT.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_REVIEW.md",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/ART_REVIEW.json",
+    "deliverables/art/U04-MANAGER-CONCEPT-PLAN-001/v0.2/MASTER_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确引用已批准Product v0.3，六位身份与成长语义一致。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 首段引用 Product v0.3，其六人表逐人对照姓名、店铺、性格主线；RIGHTS_AND_SOURCE.md 记录准确审批版本。"
+    },
+    {
+      "criterion": "三阶段采用0/2/3魂；2魂代表过渡展示，说明1魂差异，不改四阶段产品规则。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 审批范围明确 0、2、3 魂及 2 魂为 1–2 魂过渡代表；六人表逐人列 1 魂文字差异，ART_BRIEF.md 重申产品四阶段不变。"
+    },
+    {
+      "criterion": "每位锁定跨阶段身份锚点及差异；新外貌标为提案，旧孟桃造型不复用为批准基线。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md 六人表逐人列恒定脸型、发型、身份物与 0/1/2/3 魂差异，首段将具体外貌标为待批提案；ASSET_MANIFEST.md、RIGHTS_AND_SOURCE.md 将旧孟桃图限为历史。"
+    },
+    {
+      "criterion": "共18幅全身立绘与6对照板，半身仅同源裁切；尺寸、格式、PSD可编辑范围、来源与风险可审查。",
+      "result": "PASS",
+      "evidence": "ART_PRODUCTION_PLAN.md、ART_BRIEF.md、ASSET_MANIFEST.md 列 18 图/6 板、同源半身裁切、建议画幅与 PNG/PSD 计划及编辑限制；REFERENCE_AUDIT.md、RIGHTS_AND_SOURCE.md 记来源和相似风险。实图尚未制作，数量为本阶段计划范围。"
+    },
+    {
+      "criterion": "固定交付和同版Review齐备，方案送用户审批；未批不出图、不接入。",
+      "result": "PASS",
+      "evidence": "Task 指定的制作方案、Brief、资产清单、设计理由、来源权利说明、DELIVERABLE.json、USER_REVIEW_PACKET.md、ART_REVIEW.json 与同版 MASTER_REVIEW.json 均已落盘；MASTER_REVIEW.json 结论 APPROVED 限于送审，方案正文写明未获用户批准前不出图或接入。审批记录待 Producer 在用户决定后填写。"
+    }
+  ],
+  "assumptions": [
+    "按用户最新要求将 0、2、3 魂作为本轮三张立绘；2 魂代表 1–2 魂过渡，1 魂的产品语义依旧存在且只用文字描述。",
+    "半身对话形象可先从同源全身立绘裁切审阅；若实图证明不能满足用途，再提交变更。",
+    "具体脸型、发型、服装和器物均为本版待审批造型提案，不是既有批准的外貌事实。"
+  ],
+  "risks": [
+    "静态立绘无法单独验证阿灯的短时遗忘、阿炭的进食恢复及小锦视力叙事，后续须按 Product v0.3 另查对白/行为。",
+    "18 张独立全身图、6 张板、PSD、切片及运行画面均尚未制作或验证；生成图的人物同一性、外观相似风险、半身裁切和店前小尺度可读性待后续实图核查。",
+    "从平面图转换的 PSD 不提供原生身体部件可编辑性；正式骨骼/切片须另立制作范围和审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
