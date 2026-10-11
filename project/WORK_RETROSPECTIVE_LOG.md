@@ -717,3 +717,10 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 10:16:44 +08:00核v0.3返修Task；首份Required mtime 10:16:57，新图mtime 10:18:00，交付索引mtime 10:19:02，送审登记10:20:07。可核墙钟跨度3分23秒，包含Art制作、Master审图与Producer核验，不能直接计为任一角色净工时。用户原反馈精确时刻与先前等待未知；本版用户审批等待从送审后开始。工具故障未见证据，本周期返工一次。
 - 原因与建议：本次返工直接来自用户认为v0.2祥云形体仍不足；无同类耗时基线，未发现可证实的慢因。若用户仍需调整，Art负责将云头、云瓣、云尾和接框位置在下一版同尺度局部对照中分别标清，代价是一次对照制作，复核点为下一版实图用户判断。Producer继续隔离本静态候选、旧退稿和原Client运行审核，复核点为用户对准确v0.3决定。
 - Continuity check：本线已到真实USER_REVIEW，无无产出的READY/IN_PROGRESS；SCENE并行线按原门禁继续。
+
+### WR-20261011-U04-CLOUD-CORNER-V04-001｜锁外围、只改内部祥云候选送审
+
+- 结果与证据：用户退回v0.3外轮廓改动；v0.4以v0.2外围为基准，Art图、说明、交付索引及审批4/4 Required实存，四项Task验收同序PASS。Master独立目视对照两版，外围大形/占位/接框保持，新增内纹不越界，右下空白；首轮右下新增云纹的失败图被剔除。`deliverables/master/U04-CLOUD-CORNER-FIT-001/v0.4/PACKET_ACCEPTANCE.json`锁三份Art文件SHA且3/3匹配。Task/Approval现USER_REVIEW，待用户判断；仅静态方向，目视保持不等于像素一致，无工程或QA。
+- 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 10:30:24 +08:00核返修Task；首份Required mtime 10:30:47，当前候选图mtime 10:33:30，交付索引mtime 10:35:34，Art说明末次mtime 10:35:54，送审登记10:37:23。可核墙钟跨度6分59秒，包含首次失败、重试、交付、Master对照和Producer核验，不计为单一角色净制作时长。用户原反馈精确时刻及审批等待未知；具体失败重试净耗时未知，未见独立工具故障证据。
+- 原因与建议：本次返工直接因为v0.3改变外围，与用户限定只改内部冲突；首轮仍在右下越界，Art已剔除。无同类耗时基线。Art下次若继续调内纹，先以v0.2外围蒙版限制可编辑区域，并保留同尺度叠图，预期减少越界重试；代价为额外遮罩和比对步骤，复核点为下一版Art交付及Master对照。Producer复核点为用户对准确v0.4决定，继续隔离旧Client运行审核。
+- Continuity check：本线已达真实USER_REVIEW，无空转READY/IN_PROGRESS；旧版与SCENE并行门禁独立。

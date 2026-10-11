@@ -684,3 +684,11 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 2026-10-11 10:19:35 +08:00（U04祥云v0.3强化形体候选进入Master复核）：实际静态图1672×941、`ART_BRIEF.md`与`DELIVERABLE.json`实存，Task四项Required 4/4，四项验收逐字同序由Owner自报PASS；v0.3重点是如意云头、层叠云瓣、舒展云尾，保留已认可的接框方式。仍是生成图，非角花像素及原1280×720运行一致性未确认。Task IN_PROGRESS→REVIEW、Approval DRAFT；待Master亲自实看同版图并给限定Review，不能提前送USER_REVIEW。
 
 2026-10-11 10:20:07 +08:00（U04祥云v0.3强化形体静态候选送用户审看）：Art v0.3四项Required 4/4实存、四项Task验收逐字同序PASS；Master实看1672×941新图，Review限定APPROVED仅供用户判断祥云形体，`PACKET_ACCEPTANCE.json`三份Art文件SHA与当前实文件3/3匹配。Master同时提示金线比v0.2更粗亮、右上圆瓣略有花形观感，须如实交用户判断。Task REVIEW→USER_REVIEW、Approval USER_REVIEW/decided_at null，旧v0.1/v0.2送审及REJECTED快照保留；已认可边缘贴合不等于v0.3具体图获批。生成编辑非角花区域可能偏差；无正式切片/PSD、工程接入、实际运行、伸缩或QA。原Client/Tech v0.3运行审核及SCENE并行线不改。Continuity check：本线已达真实USER_REVIEW，无空转READY/IN_PROGRESS；最近复盘 `WR-20261011-U04-CLOUD-CORNER-V03-001`。
+
+2026-10-11 10:30:24 +08:00（U04祥云v0.4只改内部返修开线）：用户明确纠正v0.3改了外围轮廓，要求外围保持不动、仅修改内部祥云；v0.3 USER_REVIEW与REJECTED历史快照保留。现行Task REVISION、Approval准确v0.4 DRAFT，以v0.2为两角外轮廓、占位、位置、接框基准；不得把“祥云更大”作为通过。此时v0.4 Required尚无实存，不记IN_PROGRESS。仅静态候选，无工程接入或QA；原Client运行任务与SCENE并行差异不改。Continuity check：Art可继续生产，不能以返修开线停下；Master须独立对照外轮廓后才可送审。
+
+2026-10-11 10:31:53 +08:00（U04祥云v0.4内纹返修实际开工）：首份Required `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/ART_BRIEF.md` 于10:30:47 +08:00实存非空，Art已记录以v0.2外围为基准、只画深蓝云体内部卷纹的范围；Task REVISION→IN_PROGRESS / TASK_STARTED，Approval DRAFT。新图、DELIVERABLE及外轮廓独立对照待；不因文字承诺判外围保持。Continuity check：Owner已有真实产出，须继续到可核实的实图与Master Review。
+
+2026-10-11 10:36:00 +08:00（U04祥云v0.4内纹候选进入Master复核）：v0.4图1672×941、`ART_BRIEF.md`和`DELIVERABLE.json`均实存，Task四项Required 4/4，四项验收与Task逐字同序由Owner自报PASS；说明披露一次右下越界生成已剔除，本候选为限定位置重试。Owner称外缘目视保持，但生成编辑不能保证逐像素一致。Task IN_PROGRESS→REVIEW、Approval DRAFT；仍须Master独立对照v0.2两角外围、占位和接框并落同版Review，不能用Owner文字代替门禁。
+
+2026-10-11 10:37:23 +08:00（U04祥云v0.4锁外围内纹候选送用户审看）：Art v0.4四项Required 4/4实存、四项Task验收逐字同序PASS。Master分别实看v0.2基准和v0.4第二次输出，两角外围大形、占位与接框关系目视保持，新回卷限于原云体内部、右下保持空白；首轮右下越界失败已剔除。Master `MASTER_REVIEW.json`限定APPROVED仅供用户判断内部纹样，`PACKET_ACCEPTANCE.json`锁三份Art文件SHA与当前实文件3/3一致。Task REVIEW→USER_REVIEW、Approval USER_REVIEW/decided_at null，不记DONE。目视保持不等于像素完全一致，生成式编辑可能有细微外缘及非角花差异；无正式切片/PSD、工程接入、运行、伸缩或QA。v0.1–v0.3送审/退回历史及旧Client运行审核独立保留，SCENE并行差异不改。Continuity check：本线到真实USER_REVIEW，无空转READY/IN_PROGRESS；最近复盘 `WR-20261011-U04-CLOUD-CORNER-V04-001`。
