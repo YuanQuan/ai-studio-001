@@ -1,0 +1,177 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "artifact_version": "v0.4",
+  "observer": "Master Agent",
+  "observed_at": "2026-10-11T13:27:59.742190+08:00",
+  "url": "http://127.0.0.1:8765/",
+  "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+  "creator_build_finished_at": "2026-10-11T13:19:56+08:00",
+  "viewport": {
+    "landscape": [
+      1280,
+      720
+    ],
+    "portrait": [
+      651,
+      898
+    ],
+    "landscape_canvas_rect": [
+      0,
+      0,
+      1280,
+      720
+    ],
+    "override_reset": true
+  },
+  "observations": {
+    "current_approved_corners": "PASS: new v0.4 corners visible on current build; fixed corner size and nine-slice edges remain fitted",
+    "portrait_and_text": "PASS: portrait foreground aligned panel lower-left; name and dialogue share left edge",
+    "sweep": {
+      "result": "PASS",
+      "completed": 90,
+      "failed": 0,
+      "elapsed_ms": 6587,
+      "scope": "existing built-in resource switching sweep; not a frame-time or GPU benchmark"
+    },
+    "independent_axes": "PASS: XJ3 angry to MT3 angry to MT2 angry to MT2 surprised",
+    "rapid_switch": "PASS: AT AC AJ AD XJ MT AD XJ ended XJ2 surprised with three layers ready",
+    "panel_sizes": {
+      "result": "PASS",
+      "sizes": [
+        [
+          1024,
+          384
+        ],
+        [
+          768,
+          256
+        ],
+        [
+          384,
+          192
+        ]
+      ],
+      "visual": "corner motifs remain fixed without stretching, border connected; portrait and text follow panel"
+    },
+    "return_and_reentry": "PASS: menu return, U04 reentry reset MT0 smile with new corners",
+    "console_warn_error": []
+  },
+  "not_tested": [
+    "target device",
+    "native platform",
+    "GPU performance",
+    "resident memory",
+    "long duration stress",
+    "Photoshop opening"
+  ],
+  "screenshots": [
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_default.jpg",
+      "sha256": "213cc8476162b6ed27e95db554bdf330542932b4bce956079e5e8d81d78ee70f",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_expression_axis.jpg",
+      "sha256": "3ec72745518f99df9b1014ca443cf9717edf1f89e5b1069f687cc7ea2f052705",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_manager_axis.jpg",
+      "sha256": "201549f14cb06a564cd3ea5f4b47ac00b4e8e414c19fab0a40cd0b0af4f20843",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel1024x384.jpg",
+      "sha256": "e5cf5195101020b533bac261864f7f2dadfaee63c7d099e33036bed983cb3afd",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel384x192.jpg",
+      "sha256": "9b1499bff11ac84dbe7b325e61ccb5579ba1f3780d598c78995a08fd70d4c387",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel768x256.jpg",
+      "sha256": "d81e132069cd90ec76c44203d2d243b0e54374ee9aa6bae357ffaa85d1b00bf4",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_portrait.jpg",
+      "sha256": "f4c231cf8479f78df1cf5a116c65414c6f8c1f791d5ea9e085227321a888e281",
+      "size": [
+        651,
+        898
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_rapid_switch.jpg",
+      "sha256": "bf9ac9ff96a41a00a9a00dc389007847a371f095821a2a2d5832a770d76c62ac",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_reentry.jpg",
+      "sha256": "f4c231cf8479f78df1cf5a116c65414c6f8c1f791d5ea9e085227321a888e281",
+      "size": [
+        651,
+        898
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_stage_axis.jpg",
+      "sha256": "250826d89817618e6c0d3d22967839c6a52d758730097ee5dce323d570e2171f",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_sweep90.jpg",
+      "sha256": "fe7f565a9cd840d7a0590ba03868c8691eeaed3799c48a1db953f82f0b0986ba",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_xj3_angry.jpg",
+      "sha256": "bd4f79ed5319ec59b7f5551ced3932349a2a42a5e7368dadc67deaca58a1da8a",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    }
+  ]
+}

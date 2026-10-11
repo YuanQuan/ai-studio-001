@@ -1,0 +1,32 @@
+{
+  "task_id": "U04-CLOUD-CORNER-TECH-001",
+  "owner": "tech_lead",
+  "summary": "同批首图前预签与最终技术评审完成：获批v0.4同源两角切片、PSD、稳定UUID、Creator当前构建及同版HTTP/IAB画面均可追溯。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "首图前同批预签锁v0.4源SHA、透明提取/PSD和128×96显示映射。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json锁Art PRODUCTION_NOTE与ART_PRESIGN确切SHA、源图SHA 9fc3c8e4…、源窗口167×125及1672→1280/128×96映射；Art实际导出后源位可见RGB逐像素核对相同。"
+    },
+    {
+      "criterion": "Client两角与Art导出SHA相同，meta UUID及九宫格保持，其他人物资源未改。",
+      "result": "PASS",
+      "evidence": "两角Art/Client/构建native三处SHA分别一致为4ef91cb8…和e3e79754…；原meta无git变更且UUID、128×96 SpriteFrame不变；面板九宫格及人物目录无本任务差异。"
+    },
+    {
+      "criterion": "Creator当前构建和HTTP/IAB角花实际效果与伸缩检查可复核，未测平台如实记录。",
+      "result": "PASS",
+      "evidence": "Client v0.4 RUNTIME_CHECK.json记Creator 3.8.8当前build Finished与输出身份；HTTP_RESOURCE_IDENTITY.json记index/config/两native PNG HTTP 200且SHA吻合；MASTER_RUNTIME_OBSERVATIONS.json及12张runtime_cloud截图记当前HTTP/IAB默认画面、三尺寸伸缩、90组合及重入。设备/GPU/FPS/内存/长时压力明确NOT_TESTED。"
+    }
+  ],
+  "risks": [
+    "平面不透明源图的抗锯齿边缘含原背景混色，无法达到原生透明母版精度；被人物遮挡的线条不可恢复。",
+    "目标设备、原生平台、GPU驻留、FPS、内存与长时压力未测试；正式Artifact仍待用户流程审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

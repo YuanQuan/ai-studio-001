@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-CLOUD-CORNER-TECH-001",
+  "batch": "U04-CLOUD-CORNER-v0.1",
+  "role": "tech_lead",
+  "status": "PRESIGNED_FOR_FIRST_EXPORT",
+  "art_production_note": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+  "art_production_note_sha256": "d8b1645afc837edce37cb07f16cd94eaa5032475747052be0a1f3d7dbbe192fe",
+  "art_presign": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+  "art_presign_sha256": "5df391e6c74add2d46e3773689389e0ec48f21ab8213ff404ed6a958f1fad38c",
+  "source": "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/cloud_corner_fit_preview.png",
+  "source_sha256": "9fc3c8e4312975516d8ca84431cd937b1407fc32215c3ef8b0954dfe57b0d593",
+  "source_canvas": [1672, 941],
+  "source_windows_xyxy_exclusive": {
+    "bottom_left": [0, 789, 167, 914],
+    "top_right": [1500, 675, 1667, 800]
+  },
+  "export_canvas": [128, 96],
+  "display_mapping": "1672px批准图按1280px游戏宽度显示；1280/1672=0.7655502392；167×125源窗口对应约127.83×95.69px，分别取整到128×96；左右角按各自画布外角锚定，不额外放大。",
+  "extraction_boundary": "只保留两角可见原像素金线、源图金线围合的深蓝云体与必要短接框段；仅编辑alpha，源位保留RGB；左下人物遮挡处透明且不补画；右上排除放大面板按钮；排除长直框边、人物、背景和其它UI。",
+  "master_format": "1672×941原位分层栅格PSD：完整批准图为参考层，两个角花为独立透明层；导出两张128×96 RGBA PNG。PSD和导出后的实际质量待实图检查。",
+  "client_identity": {
+    "bottom_left": {
+      "path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_bottom_left.png",
+      "uuid": "fbcb6ab4-7018-4428-90d5-72ad32897175"
+    },
+    "top_right": {
+      "path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_top_right.png",
+      "uuid": "75064b51-dd6c-4960-83c4-2fd6b959fd9f"
+    }
+  },
+  "constraints": "保留现有路径、meta UUID、sprite-frame设置、节点128×96与面板九宫格；源窗口、工具、alpha语义、尺寸或范围变化前重新签认。",
+  "assessment": "仅批准该文字预案进入首图导出。尚无PNG、PSD、Creator导入、Web运行或目标平台性能实测，不对实际外观和性能给出PASS。"
+}

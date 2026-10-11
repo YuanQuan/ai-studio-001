@@ -1,0 +1,203 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "version": "v0.4",
+  "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+  "creator_version": "3.8.8",
+  "build_status": "PASS",
+  "checks": [
+    {
+      "name": "本版两角资源替换、稳定UUID与Creator 3.8.8导入构建",
+      "result": "PASS",
+      "evidence": "Master已静态接受Art v0.1，旧PNG先复制留存；新客户端PNG SHA分别为4ef91cb8a1cdd4b81a8a3862d4fd6ad95430a7d91fcc1e0327deb1f1e4dd2174与e3e79754e8f7f970c2262310e01487e51db6d99258b16df849f8189f8d23a62d。meta UUID保持，Creator 3.8.8 web-mobile CLI Finished且退出码36；bundle native SHA与源图一致。"
+    },
+    {
+      "name": "U04肖像层级锚点、姓名与对白对齐",
+      "result": "PASS",
+      "evidence": "Master于2026-10-11 13:27:59在本版HTTP构建检查竖屏肖像前景、面板左下锚点及姓名/对白共同左边线；证据见MASTER_RUNTIME_OBSERVATIONS.json的portrait_and_text及runtime_cloud_portrait.jpg。"
+    },
+    {
+      "name": "90种组合、三轴独立保留与异步快速切换",
+      "result": "PASS",
+      "evidence": "Master在本版Canvas实际操作90/90组合，0失败（6587ms）；依次切换XJ3 angry→MT3 angry→MT2 angry→MT2 surprised验证独立轴；连续8次店长切换后显示XJ2 surprised且三层ready。截图runtime_cloud_sweep90.jpg、runtime_cloud_*_axis.jpg、runtime_cloud_rapid_switch.jpg。"
+    },
+    {
+      "name": "新两角显示位置、固定尺寸、面板九宫格伸缩与人物图保持",
+      "result": "PASS",
+      "evidence": "Master同版确认新角饰显示、尺寸固定，面板1024×384、768×256、384×192三档均保持角饰形状且边框衔接；人物和文字随面板。见runtime_cloud_default.jpg、runtime_cloud_panel*.jpg及观察记录。人物PNG保持原字节，客户端本轮仅替换两角PNG。"
+    },
+    {
+      "name": "资源登记、加载释放/返回重入及运行证据",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MAP记录129项真实来源/客户端路径及导入身份；两角源SHA、native SHA一致，meta UUID保持。Master观察菜单返回、U04重入后恢复MT0 smile且新角饰显示；加载释放代码未改。详见runtime_cloud_reentry.jpg和观察记录。"
+    }
+  ],
+  "http_iab": "PASS",
+  "http": {
+    "url": "http://127.0.0.1:8765/",
+    "status": "PASS",
+    "server": "复用Master已确认指向当前apps/client/build/web-mobile的HTTP服务；Client未重启或更换服务",
+    "observed_at": "2026-10-11T13:27:59.742190+08:00",
+    "observed_by": "Master Agent",
+    "status_evidence": "Master在本地HTTP 8765加载并操作本版Canvas，页面/构建source SHA匹配。",
+    "checked_at": "2026-10-11T13:29:47.206746+08:00",
+    "identity_evidence": "evidence/HTTP_RESOURCE_IDENTITY.json",
+    "note": "Direct localhost HTTP requests returned 200 for index, dialogue config and both new native PNGs; SHA matched current CLI output. Initial proxy urllib 502 was superseded by direct verification."
+  },
+  "device_platform_performance": "NOT_TESTED",
+  "screenshots": [
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_default.jpg",
+      "sha256": "213cc8476162b6ed27e95db554bdf330542932b4bce956079e5e8d81d78ee70f",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_expression_axis.jpg",
+      "sha256": "3ec72745518f99df9b1014ca443cf9717edf1f89e5b1069f687cc7ea2f052705",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_manager_axis.jpg",
+      "sha256": "201549f14cb06a564cd3ea5f4b47ac00b4e8e414c19fab0a40cd0b0af4f20843",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel1024x384.jpg",
+      "sha256": "e5cf5195101020b533bac261864f7f2dadfaee63c7d099e33036bed983cb3afd",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel384x192.jpg",
+      "sha256": "9b1499bff11ac84dbe7b325e61ccb5579ba1f3780d598c78995a08fd70d4c387",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel768x256.jpg",
+      "sha256": "d81e132069cd90ec76c44203d2d243b0e54374ee9aa6bae357ffaa85d1b00bf4",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_portrait.jpg",
+      "sha256": "f4c231cf8479f78df1cf5a116c65414c6f8c1f791d5ea9e085227321a888e281",
+      "size": [
+        651,
+        898
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_rapid_switch.jpg",
+      "sha256": "bf9ac9ff96a41a00a9a00dc389007847a371f095821a2a2d5832a770d76c62ac",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_reentry.jpg",
+      "sha256": "f4c231cf8479f78df1cf5a116c65414c6f8c1f791d5ea9e085227321a888e281",
+      "size": [
+        651,
+        898
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_stage_axis.jpg",
+      "sha256": "250826d89817618e6c0d3d22967839c6a52d758730097ee5dce323d570e2171f",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_sweep90.jpg",
+      "sha256": "fe7f565a9cd840d7a0590ba03868c8691eeaed3799c48a1db953f82f0b0986ba",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    },
+    {
+      "path": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_xj3_angry.jpg",
+      "sha256": "bd4f79ed5319ec59b7f5551ced3932349a2a42a5e7368dadc67deaca58a1da8a",
+      "size": [
+        1280,
+        720
+      ],
+      "format": "JPEG"
+    }
+  ],
+  "build": {
+    "creator_version": "3.8.8",
+    "platform": "web-mobile",
+    "cli_exit_code": 36,
+    "finished_marker": "build Task (web-mobile) Finished in (5 s)ms",
+    "build_started_at_local": "2026-10-11 13:19:51 +08:00",
+    "built_at_local": "2026-10-11 13:19:56 +08:00",
+    "source_sha256": "1cebecc0e108c7e76e8253855eecd26df885b56dfe31c2e0415a68ddba47ad09",
+    "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "dialogue_config_sha256": "294ef69a30270c091cd3e404f4a5274c52dbce61662580bd78c0c47d46e6da8c",
+    "build_output": "apps/client/build/web-mobile",
+    "build_log": "evidence/CREATOR_BUILD_STDOUT.log",
+    "cli_capture_log": "evidence/CREATOR_BUILD_CLI_CAPTURE.log",
+    "initial_default_sandbox_launch": "ABORTED_BEFORE_BUILD_EXIT_134; authorized same-CLI run completed successfully; see evidence/BUILD_ATTEMPTS.json",
+    "http_status": "PASS; index/config/new corner native all HTTP 200 with matching SHA; see evidence/HTTP_RESOURCE_IDENTITY.json"
+  },
+  "assets": [
+    {
+      "asset_id": "U04_DIALOGUE_CORNER_CLOUD_BOTTOM_LEFT",
+      "art_sha256": "4ef91cb8a1cdd4b81a8a3862d4fd6ad95430a7d91fcc1e0327deb1f1e4dd2174",
+      "client_sha256": "4ef91cb8a1cdd4b81a8a3862d4fd6ad95430a7d91fcc1e0327deb1f1e4dd2174",
+      "native_sha256": "4ef91cb8a1cdd4b81a8a3862d4fd6ad95430a7d91fcc1e0327deb1f1e4dd2174",
+      "uuid": "fbcb6ab4-7018-4428-90d5-72ad32897175",
+      "sprite_frame_uuid": "fbcb6ab4-7018-4428-90d5-72ad32897175@f9941",
+      "texture_uuid": "fbcb6ab4-7018-4428-90d5-72ad32897175@6c48a",
+      "meta_sha256": "d570804d02c16876becbc7314c66170695d8a9fe87b6e5e3652dac47a2106ad8"
+    },
+    {
+      "asset_id": "U04_DIALOGUE_CORNER_CLOUD_TOP_RIGHT",
+      "art_sha256": "e3e79754e8f7f970c2262310e01487e51db6d99258b16df849f8189f8d23a62d",
+      "client_sha256": "e3e79754e8f7f970c2262310e01487e51db6d99258b16df849f8189f8d23a62d",
+      "native_sha256": "e3e79754e8f7f970c2262310e01487e51db6d99258b16df849f8189f8d23a62d",
+      "uuid": "75064b51-dd6c-4960-83c4-2fd6b959fd9f",
+      "sprite_frame_uuid": "75064b51-dd6c-4960-83c4-2fd6b959fd9f@f9941",
+      "texture_uuid": "75064b51-dd6c-4960-83c4-2fd6b959fd9f@6c48a",
+      "meta_sha256": "d0f55f78eb39d876c224690ddde0e97bff4837c9214daed7b92a11a05c2ec817"
+    }
+  ],
+  "limitations": [
+    "目标设备与原生平台未测试，NOT_TESTED。",
+    "GPU性能、GPU驻留内存与长时压力未测试，NOT_TESTED；90组合巡检6587ms不是帧时间或性能基准。",
+    "本单元示例不执行QA；Master的IAB观察是Owner实现级证据，不是正式QA结论。",
+    "Art PSD未在Photoshop中人工打开；此项属于Art资源编辑性限制，不影响本次已接受静态资源或Client构建。"
+  ],
+  "master_runtime_observations": "evidence/MASTER_RUNTIME_OBSERVATIONS.json",
+  "http_identity_evidence": "evidence/HTTP_RESOURCE_IDENTITY.json"
+}

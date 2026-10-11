@@ -1,0 +1,114 @@
+{
+  "batch": "U04-CLOUD-CORNER-v0.1",
+  "source": "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/cloud_corner_fit_preview.png",
+  "source_sha256": "9fc3c8e4312975516d8ca84431cd937b1407fc32215c3ef8b0954dfe57b0d593",
+  "source_canvas": [
+    1672,
+    941
+  ],
+  "source_copy": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/original_reference.png",
+  "source_copy_sha256": "9fc3c8e4312975516d8ca84431cd937b1407fc32215c3ef8b0954dfe57b0d593",
+  "art_presign": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+  "tech_presign": "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/TECH_PRESIGN.json",
+  "psd": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/corner_cloud_layers.psd",
+  "psd_sha256": "18b94b4de0758000decc35b93172c13003fb09c6d2cd78a88f7cf6670db15d4a",
+  "psd_canvas": [
+    1672,
+    941
+  ],
+  "psd_layers_bottom_to_top": [
+    {
+      "name": "Approved v0.4 full reference",
+      "visible": false
+    },
+    {
+      "name": "bottom_left - approved RGB, semantic alpha",
+      "visible": true
+    },
+    {
+      "name": "top_right - approved RGB, semantic alpha",
+      "visible": true
+    }
+  ],
+  "psd_editability": "完整原图为隐藏参考栅格层；两个角花原位透明栅格层可独立编辑alpha。非矢量，人物遮挡下线条不可恢复，未补画。",
+  "psd_preview": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/corner_cloud_layers_preview.png",
+  "panel_only_recomposition": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/panel_only_recomposition.png",
+  "approved_position_reference": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/approved_position_reference.png",
+  "exports": [
+    {
+      "asset_id": "U04_DIALOGUE_CORNER_CLOUD_BOTTOM_LEFT",
+      "name": "corner_bottom_left",
+      "path": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+      "sha256": "4ef91cb8a1cdd4b81a8a3862d4fd6ad95430a7d91fcc1e0327deb1f1e4dd2174",
+      "canvas": [
+        128,
+        96
+      ],
+      "mode": "RGBA",
+      "source_crop_xyxy_exclusive": [
+        0,
+        789,
+        167,
+        914
+      ],
+      "source_alpha_bbox_in_crop": [
+        4,
+        40,
+        130,
+        125
+      ],
+      "source_alpha_count": 3962,
+      "export_alpha_bbox_xyxy_exclusive": [
+        1,
+        28,
+        102,
+        96
+      ],
+      "export_alpha_count": 2859,
+      "scale": "1672->1280 display (1280/1672); 167x125 source window -> 128x96",
+      "resample": "Pillow LANCZOS RGBA",
+      "anchor": "left-bottom",
+      "client_target_path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_bottom_left.png",
+      "client_uuid_to_preserve": "fbcb6ab4-7018-4428-90d5-72ad32897175",
+      "client_import_status": "PLANNED_BY_ART"
+    },
+    {
+      "asset_id": "U04_DIALOGUE_CORNER_CLOUD_TOP_RIGHT",
+      "name": "corner_top_right",
+      "path": "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+      "sha256": "e3e79754e8f7f970c2262310e01487e51db6d99258b16df849f8189f8d23a62d",
+      "canvas": [
+        128,
+        96
+      ],
+      "mode": "RGBA",
+      "source_crop_xyxy_exclusive": [
+        1500,
+        675,
+        1667,
+        800
+      ],
+      "source_alpha_bbox_in_crop": [
+        85,
+        0,
+        167,
+        67
+      ],
+      "source_alpha_count": 2721,
+      "export_alpha_bbox_xyxy_exclusive": [
+        63,
+        0,
+        128,
+        54
+      ],
+      "export_alpha_count": 1936,
+      "scale": "1672->1280 display (1280/1672); 167x125 source window -> 128x96",
+      "resample": "Pillow LANCZOS RGBA",
+      "anchor": "right-top",
+      "client_target_path": "apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_top_right.png",
+      "client_uuid_to_preserve": "75064b51-dd6c-4960-83c4-2fd6b959fd9f",
+      "client_import_status": "PLANNED_BY_ART"
+    }
+  ],
+  "visual_note": "panel_only_recomposition 仅核既有九宫格面板与两角在1280x195组件画幅中的静态叠序；人物/背景真实运行待Client/Tech。"
+}

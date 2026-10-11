@@ -1,0 +1,34 @@
+{
+  "id": "U04-CLOUD-CORNER-ASSET-001",
+  "title": "U04获批内部祥云资源拆分",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "按用户确认v0.4实图确定性拆分角花，保留线条原像素及分层PSD，避免人物/按钮/非角花背景进入资源，不新增重绘。",
+  "inputs": [
+    "tasks/U04-CLOUD-CORNER-FIT-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/cloud_corner_fit_preview.png"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/corner_cloud_layers.psd",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/EXPORT_MAP.json",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-CLOUD-CORNER-ASSET-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "用户批准v0.4同源拆分，Art/Tech同批预签锁定来源、提取、显示尺度与接框映射。",
+    "两张128×96透明角花PNG与可读分层PSD实存，角花线条/内纹保留，未混入人物、按钮，记录所有alpha与尺度处理。",
+    "稳定资产路径/UUID及源SHA登记，实际同尺度重组和切片可核，未冒充运行通过。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户已明确批准本版并要求直接替换，授权同源确定性拆分和接入，不重复索取相同许可；需改变外观则报Master。",
+    "无QA，保留旧资源与无关差异。"
+  ]
+}

@@ -724,3 +724,17 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 10:30:24 +08:00核返修Task；首份Required mtime 10:30:47，当前候选图mtime 10:33:30，交付索引mtime 10:35:34，Art说明末次mtime 10:35:54，送审登记10:37:23。可核墙钟跨度6分59秒，包含首次失败、重试、交付、Master对照和Producer核验，不计为单一角色净制作时长。用户原反馈精确时刻及审批等待未知；具体失败重试净耗时未知，未见独立工具故障证据。
 - 原因与建议：本次返工直接因为v0.3改变外围，与用户限定只改内部冲突；首轮仍在右下越界，Art已剔除。无同类耗时基线。Art下次若继续调内纹，先以v0.2外围蒙版限制可编辑区域，并保留同尺度叠图，预期减少越界重试；代价为额外遮罩和比对步骤，复核点为下一版Art交付及Master对照。Producer复核点为用户对准确v0.4决定，继续隔离旧Client运行审核。
 - Continuity check：本线已达真实USER_REVIEW，无空转READY/IN_PROGRESS；旧版与SCENE并行门禁独立。
+
+### WR-20261011-U04-CLOUD-CORNER-APPROVAL-START-001｜v0.4批准与资源预签启动
+
+- 结果与证据：用户对准确v0.4候选明确要求替换，Concept Task DONE/Approval USER_APPROVED；新Art/Tech双Task READY后，Art `PRODUCTION_NOTE.md`与`ART_PRESIGN.json`于12:59:18 +08:00实存，进入IN_PROGRESS。Tech同批Required尚无、仍READY；Client v0.4 BACKLOG等静态资源。概念批准仅授权同源确定性拆分/接入，实际切片与运行尚无通过结论。
+- 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 12:56:27 +08:00核HEAD及任务，Art首Required mtime12:59:18，13:00:31复核Tech尚无实存；本登记周期至少4分04秒，包含编排/Art预案/Producer核验，非单一角色制作净时长。用户消息精确时间、各Owner实际工时、等待与工具故障耗时未知。
+- 原因与建议：目前无可证实的慢因或同类基线。Tech Lead负责尽快对相同源SHA与裁窗签同批预案，减少Art首图等待；代价是一次双签核对，复核点为首张PNG前Tech Required实存。Producer在下一轮继续核准确切片、Master静态接受与Client运行，不用概念批准代替具体运行验收。
+- Continuity check：Art有本轮实产，Tech READY无首Required但Master已派工，流程继续由Owner推进，Producer本节点结束不表示任务暂停或阻塞；下一门禁仍须抵达静态资源接受及最终运行USER_REVIEW。
+
+### WR-20261011-U04-CLOUD-CORNER-RUNTIME-001｜同源资源接入与当前运行送审
+
+- 结果与证据：用户批准准确祥云v0.4并要求替换；Art同批预签、两128×96透明PNG、分层PSD和重组获Master静态接受，17/17 SHA，Art Task DONE。Client正式两PNG与Art逐字节同SHA，Tech同版独立Review APPROVED；Creator3.8.8当前Web构建及Master HTTP/IAB观察通过，90/90零失败6587ms、三轴/快切/三档/重入PASS，12/12截图SHA及Master最终包30/30 SHA一致。Client/Tech Task与Approval现USER_REVIEW，待用户对当前运行结果决定，不因先前概念/静态资源批准而DONE。设备/GPU/压力NOT_TESTED，单元示例无QA。
+- 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 12:56:27 +08:00核HEAD及新任务，Art预案mtime12:59:18，Tech预签mtime13:00:32，Art `DELIVERABLE.json`于13:13:46前实存，静态接受登记13:14:21，Client两正式PNG同SHA核于13:17:26，Creator构建13:19:51–13:19:56，Master IAB观察记13:27:59，运行送审登记13:32:53。可核墙钟跨度36分26秒，含Art制作/去重复框线、同批预签、Client构建、浏览器交互、评审及Producer登记，不计为任一角色净工时。用户原批准消息精确时刻未知，当前用户审核等待从送审后开始；默认隔离CLI启动失败的净损耗未知。
+- 影响与建议：本轮可证的返工是Art去除重复长框线，另有默认隔离CLI启动失败后同CLI获准通道成功，二者净耗时未知；无同类时长基线，不能据总跨度判角色缓慢。Art下次同源拆分时先在预览中标出“仅短接框段”的最大长度，减少重组后返修，复核点为下一批首切图；Client保留当前构建身份和HTTP截图清单，便于Tech快速复核，复核点为下一次运行送审。两项都不改变审批门禁。
+- Continuity check：Concept与Art静态资源DONE，Client/Tech已到真实USER_REVIEW，本线无空转READY/IN_PROGRESS；SCENE-SAKURA并行工作独立。

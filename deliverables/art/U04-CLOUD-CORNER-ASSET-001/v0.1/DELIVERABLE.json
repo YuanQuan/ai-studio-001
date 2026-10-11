@@ -1,0 +1,49 @@
+{
+  "task_id": "U04-CLOUD-CORNER-ASSET-001",
+  "owner": "art",
+  "summary": "从用户批准的v0.4实图确定性拆出两角可见金线、内部卷纹与深蓝云体，交付128×96 RGBA切片、隐藏完整参考层的三层PSD及现有九宫格面板静态重组。",
+  "artifacts": [
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/PROCESS_NOTES.md",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/original_reference.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/corner_cloud_layers.psd",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/manifest.json",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/mask_metrics.json",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/layer_sources/bottom_left_full_canvas.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/source/layer_sources/top_right_full_canvas.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_bottom_left.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/exports/corner_top_right.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/corner_cloud_layers_preview.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/corner_exports_4x.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/approved_position_reference.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/preview/panel_only_recomposition.png",
+    "deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/EXPORT_MAP.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户批准v0.4同源拆分，Art/Tech同批预签锁定来源、提取、显示尺度与接框映射。",
+      "result": "PASS",
+      "evidence": "用户v0.4批准见 tasks/U04-CLOUD-CORNER-FIT-001/ARTIFACT_APPROVAL.json；同批首图前 Art预案/签认与 deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/TECH_PRESIGN.json 锁定源SHA、遮罩范围、128×96显示比例、接框和UUID。"
+    },
+    {
+      "criterion": "两张128×96透明角花PNG与可读分层PSD实存，角花线条/内纹保留，未混入人物、按钮，记录所有alpha与尺度处理。",
+      "result": "PASS",
+      "evidence": "exports 两张PNG均实存且Pillow读为128×96 RGBA；source/corner_cloud_layers.psd 实存、Pillow读为1672×941，ImageMagick读出3层，参考层flags=2隐藏、两个角花层可见；源位alpha非零RGB与v0.4逐像素一致。PROCESS_NOTES.md及source/mask_metrics.json记录人物/按钮排除、alpha边界、抗锯齿和非矢量限制。"
+    },
+    {
+      "criterion": "稳定资产路径/UUID及源SHA登记，实际同尺度重组和切片可核，未冒充运行通过。",
+      "result": "PASS",
+      "evidence": "EXPORT_MAP.json 登记两稳定Client路径、原UUID、源及导出SHA、crop/scale/anchor；preview/panel_only_recomposition.png 用现有512×256四边48px九宫格拼成1280×195，再仅叠本批两角做同画幅组件静态对照。preview/approved_position_reference.png仅供获批图定位。未声称Creator运行通过。"
+    }
+  ],
+  "assumptions": [
+    "1280×195为本批面板组件同画幅静态对照尺寸；Client实际节点/层序仍以当前工程及运行截图为准。"
+  ],
+  "risks": [
+    "平面RGB源中的边缘像素已经与底色抗锯齿混合，透明层不能达到原生矢量/透明母版精度；左下人物遮挡下线条不可恢复。",
+    "静态面板重组不含人物、场景与实际Creator渲染；同背景人物遮挡、伸缩和目标平台状态须在接入后核验。",
+    "仅用Pillow与ImageMagick解析PSD层，未在Photoshop人工打开。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

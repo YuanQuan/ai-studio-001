@@ -1,0 +1,66 @@
+{
+  "task_id": "U04-DIALOGUE-CLIENT-001",
+  "owner": "client",
+  "summary": "按用户授权及Master静态接受，仅替换U04两张内部祥云角饰PNG；v0.3旧图留存、稳定UUID保留。Creator 3.8.8 web-mobile CLI构建通过，Master完成同版HTTP/IAB实际交互和12张截图；设备/平台/性能专项保持NOT_TESTED。",
+  "artifacts": [
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/FEATURE_BRIEF.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/RUNTIME_CHECK.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/CREATOR_BUILD_CLI_CAPTURE.log",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/CREATOR_BUILD_STDOUT.log",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/BUILD_ATTEMPTS.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/v0.3_previous/tex_u04_dialogue_corner_cloud_bottom_left.png",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/v0.3_previous/tex_u04_dialogue_corner_cloud_top_right.png",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/MASTER_RUNTIME_OBSERVATIONS.json",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_default.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_expression_axis.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_manager_axis.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel1024x384.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel384x192.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_panel768x256.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_portrait.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_rapid_switch.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_reentry.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_stage_axis.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_sweep90.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/runtime_cloud_xj3_angry.jpg",
+    "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/HTTP_RESOURCE_IDENTITY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U04半身像base/face/front整体位于对话框前景，并随对话框左下角定位；姓名与演示对白使用相同左边线。",
+      "result": "PASS",
+      "evidence": "Master同版IAB于2026-10-11 13:27:59检查竖屏肖像前景、左下锚点、姓名及对白共同左边线；见MASTER_RUNTIME_OBSERVATIONS.json与runtime_cloud_portrait.jpg。"
+    },
+    {
+      "criterion": "六店长、0/2/3魂与高兴/惊讶/悲伤/微笑/生气三轴独立切换，90组合资源完整；切一轴保留另两轴，异步快速切换无旧人物或旧表情覆盖。",
+      "result": "PASS",
+      "evidence": "Master本版实际检查90/90组合（0失败）、三轴独立切换和8次快速切换最终状态正确；见观察记录及对应截图。"
+    },
+    {
+      "criterion": "使用获批人物base及表情前遮挡，人物PNG不改；两角替换为用户确认内部祥云v0.4原图同源切片，九宫格四边48保留，角饰固定不伸缩且随对应边角定位。",
+      "result": "PASS",
+      "evidence": "Art批准人物PNG保持原字节；两角替换SHA与获批v0.1源及Creator native一致，meta UUID保留；Master在本版三个面板尺寸确认角饰不伸缩、边框衔接且人物/文字随面板。"
+    },
+    {
+      "criterion": "逐资源真实客户端路径、源SHA、meta UUID、裁切/缩放/支点映射登记齐，加载释放与返回入口生命周期有检查，不引入大型依赖。",
+      "result": "PASS",
+      "evidence": "完整129资源导入映射包含路径、source SHA、meta UUID、裁切/缩放/锚点；本版两角Creator native SHA已核。Master检查菜单返回与U04重入，资源加载释放代码未修改。"
+    },
+    {
+      "criterion": "保留已有差异，受控实现、Creator3.8.8导入和CLI构建、HTTP实际产物运行与截图/交互证据按结果如实记录；Owner覆盖90组合及九宫格实际检查，未测平台明确NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8 CLI Finished、真实退出36、当前源码/输出SHA与两角native SHA均记录；Master完成HTTP/IAB同版实际操作及12张截图。目标设备、原生平台、GPU/驻留内存与压力保持NOT_TESTED；本单元示例无QA。 HTTP资源身份核对见evidence/HTTP_RESOURCE_IDENTITY.json：4个入口/资源均200且SHA吻合。"
+    }
+  ],
+  "assumptions": [
+    "用户已明确授权以确认的内部祥云实图同源切片替换U04两角；Master已静态接受Art U04-CLOUD-CORNER-ASSET-001 v0.1。",
+    "单元示例无QA；此交付不生成TEST_REPORT，也不代表Task DONE或用户批准Client v0.4。"
+  ],
+  "risks": [
+    "目标设备、原生平台、SDK、GPU驻留、FPS及长时压力未测试；需要这些结论时须在对应目标环境另行验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

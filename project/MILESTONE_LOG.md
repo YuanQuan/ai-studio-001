@@ -729,3 +729,25 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 2026-10-11 10:36:00 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.4 IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；现行Task/Approval | 4/4 Required实存、四项同序Owner自报PASS，右下越界失败尝试已剔除；Master对v0.2外轮廓的独立同版复核待，Approval DRAFT。
 
 2026-10-11 10:37:23 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.4 REVIEW→USER_REVIEW / 锁外围内纹候选送审 | Art v0.4 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.4 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、四项同序PASS、Master独立目视对照v0.2外围限定APPROVED、3/3 SHA匹配；右下越界首轮剔除，目视保持不等于像素一致，待用户决定。
+
+2026-10-11 12:56:27 +08:00 | `U04-CLOUD-CORNER-FIT-001` / `U04-CLOUD-CORNER-ASSET-001` / `U04-CLOUD-CORNER-TECH-001` / `U04-DIALOGUE-CLIENT-001` | 用户批准v0.4候选；概念DONE；Art/Tech新双READY；Client v0.4 BACKLOG | Concept现行Task/Approval及`ARTIFACT_APPROVAL_v0.4_user_review.json`；新Art/Tech Task/Approval；Client v0.4 Task及v0.3历史 | 同源确定拆分与替换获授权，不扩外观；Art/Tech首Required尚无、首图前双预签待，Client依赖Art静态资源；旧运行审核不被新候选批准覆盖。
+
+2026-10-11 12:59:28 +08:00 | `U04-CLOUD-CORNER-ASSET-001` | READY→IN_PROGRESS / TASK_STARTED / Art预案 | `deliverables/art/U04-CLOUD-CORNER-ASSET-001/v0.1/PRODUCTION_NOTE.md`、`ART_PRESIGN.json` | 两份Required于12:59:18实存，源SHA、两裁窗、128×96映射及稳定Client路径/UUID已列；待Tech同批预签，首图尚未放行，Approval DRAFT。
+
+2026-10-11 13:07:51 +08:00 | `U04-CLOUD-CORNER-TECH-001` / `U04-CLOUD-CORNER-ASSET-001` / `U04-DIALOGUE-CLIENT-001` | Tech READY→IN_PROGRESS/TASK_STARTED；Art实出中间PNG/PSD；Client仅预备 | Tech `deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/TECH_PRESIGN.json`；Art `exports/corner_bottom_left.png`、`corner_top_right.png`、`source/corner_cloud_layers.psd`；Client v0.4 `FEATURE_BRIEF.md`、`RESOURCE_IMPORT_MAP.json` | Tech预签锁Art预案两SHA同批与源图/显示映射；Art正去长重复框线，最终清单/静态接受未到；Client源SHA null且旧正式文件不变，依赖未满足仍BACKLOG，构建/IAB NOT_TESTED。
+
+2026-10-11 13:13:46 +08:00 | `U04-CLOUD-CORNER-ASSET-001` | IN_PROGRESS→REVIEW / Art静态包提交 | v0.1 `exports/`两PNG、`source/corner_cloud_layers.psd`、`EXPORT_MAP.json`、`DELIVERABLE.json`、`preview/panel_only_recomposition.png`及现行Task/Approval | 8/8 Required、三项同序Owner自报PASS；16项Art索引可定位，待Master静态实看接受；Client正式替换未发生，运行NOT_TESTED。
+
+2026-10-11 13:14:21 +08:00 | `U04-CLOUD-CORNER-ASSET-001` / `U04-DIALOGUE-CLIENT-001` | Art REVIEW→DONE/USER_APPROVED；Client v0.4 BACKLOG→READY | Art v0.1两PNG、PSD、`EXPORT_MAP.json`、`DELIVERABLE.json`；Master `MASTER_REVIEW.json`、`RESOURCE_ACCEPTANCE.json`；两Task/Approval | 8/8 Required、三项同序PASS、17/17索引及Master SHA一致；用户准确v0.4替换授权覆盖同源拆分，Client仅解锁未正式替换，运行NOT_TESTED；Tech终审待。
+
+2026-10-11 13:17:26 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.4 READY→IN_PROGRESS / TASK_STARTED | `apps/client/assets/units/dialogue/ui/tex_u04_dialogue_corner_cloud_bottom_left.png`、`tex_u04_dialogue_corner_cloud_top_right.png`；Art v0.1两导出；Client Task/Approval | 两稳定路径SHA逐字节等于获批Art导出，旧v0.3文件已替换；Creator/Web/IAB及Tech终审待，Approval DRAFT。
+
+2026-10-11 13:22:59 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.4 Creator当前Web构建实证 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/IMPLEMENTATION_REPORT.md`、`RUNTIME_CHECK.json`、`evidence/CREATOR_BUILD_CLI_CAPTURE.log`、`CREATOR_BUILD_STDOUT.log` | Creator3.8.8 13:19:51–13:19:56 Finished、exit36，两native PNG SHA同源；HTTP/IAB与交互仍NOT_TESTED，Tech运行Review待。
+
+2026-10-11 13:23:59 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.4主体Required齐、运行验收待 / IN_PROGRESS | `FEATURE_BRIEF.md`、`IMPLEMENTATION_REPORT.md`、`RESOURCE_IMPORT_MAP.json`、`RUNTIME_CHECK.json`、`USER_REVIEW_PACKET.md`、`DELIVERABLE.json`、Task Approval | 7/7 Required实存，五项同序但全NOT_TESTED；Owner标签不改变Task状态，HTTP/IAB与Tech最终Review待。
+
+2026-10-11 13:28:49 +08:00 | `U04-DIALOGUE-CLIENT-001` | v0.4当前HTTP/IAB Master观察实证 / IN_PROGRESS | `deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/evidence/MASTER_RUNTIME_OBSERVATIONS.json`及12张当前截图 | 12/12 SHA一致，新角固定/三档九宫格、肖像文本、90/90零失败6587ms、三轴/快切/双视窗/返回重入及console空warn/error PASS；设备/GPU/压力NOT_TESTED，同版Client/Tech最终交付待。
+
+2026-10-11 13:29:53 +08:00 | `U04-DIALOGUE-CLIENT-001` / `U04-CLOUD-CORNER-TECH-001` | Client/Tech IN_PROGRESS→REVIEW | Client v0.4 `DELIVERABLE.json`、`RUNTIME_CHECK.json`、`evidence/MASTER_RUNTIME_OBSERVATIONS.json`；Tech v0.1 `REVIEW.json`、`DELIVERABLE.json`；两Task/Approval | Client 7/7 Required、五项同序PASS、23/23索引；Tech 5/5、三项PASS、3/3索引，Tech APPROVED；待Master同版运行接受，不提前USER_REVIEW/DONE。
+
+2026-10-11 13:32:53 +08:00 | `U04-DIALOGUE-CLIENT-001` / `U04-CLOUD-CORNER-TECH-001` | 当前运行同版Master接受 / REVIEW→USER_REVIEW | Client v0.4 `USER_REVIEW_PACKET.md`、`DELIVERABLE.json`、`RUNTIME_CHECK.json`、`evidence/MASTER_RUNTIME_OBSERVATIONS.json`及12图；Tech v0.1 `REVIEW.json`、`DELIVERABLE.json`；Master v0.4 `MASTER_REVIEW.json`、`MASTER_PACKET_ACCEPTANCE.json`；两Task/Approval | 7/7+5/5 Required、五/三同序PASS、Tech/Master APPROVED、30/30 SHA匹配；Creator/Web 90/90零失败6587ms、三轴/三档/重入PASS，当前运行待用户决定，双Task不DONE。

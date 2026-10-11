@@ -342,3 +342,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 2026-10-11 10:30:24 +08:00（v0.3用户退回，原消息精确时刻未知）：用户指出v0.3修改了外围轮廓，要求“不修改外围轮廓，只在内部修改祥云”；v0.3送审和REJECTED快照留存，未批准v0.3具体图。现行v0.4 Approval DRAFT，以v0.2外围为基准；Master须独立对照外缘保持情况后才可送审。边缘贴合方向认可不等于内部图获批，无正式资源/接入授权。
 
 2026-10-11 10:37:23 +08:00（v0.4内部祥云静态候选送审，非用户决定）：现行`U04-CLOUD-CORNER-FIT-001`审批对象为`deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/DELIVERABLE.json`及索引实图/说明；4/4 Required、四项同序PASS，Master分别实看v0.2与v0.4，外围大形/占位/接框目视保持、右下无新增，限定APPROVED仅供用户判断；三份Art文件SHA 3/3一致。`ARTIFACT_APPROVAL.json` USER_REVIEW、review_ref指Master v0.4 Review、decided_at null。首轮右下越界失败剔除；目视保持不等于像素一致，旧v0.3退回历史保留，无正式资源/工程接入/运行批准。
+
+2026-10-11 12:56:27 +08:00（v0.4候选用户批准，原消息精确时刻未知）：用户对唯一送审祥云v0.4实际图明确“按这个替换U04吧”，Master接受概念Task DONE；现行`tasks/U04-CLOUD-CORNER-FIT-001/ARTIFACT_APPROVAL.json` USER_APPROVED、decided_at null，旧USER_REVIEW快照保留。授权同源确定性透明两角/PSD制作与Client替换准确外观，不自动批准尚未实存的切片或当前运行效果。新Art/Tech双Approval DRAFT，Client v0.4 DRAFT待资源；不重复索取同一替换许可，具体资源与运行证据仍分别核验。
+
+2026-10-11 13:14:21 +08:00（U04同源静态资源接受，沿用本次明确替换授权）：`U04-CLOUD-CORNER-ASSET-001` v0.1 `DELIVERABLE.json`及17项索引实存，8/8 Required、三项同序PASS；Master同版静态Review APPROVED、`RESOURCE_ACCEPTANCE.json`锁17/17 SHA一致。用户已对准确v0.4候选明确“按这个替换U04吧”，覆盖本批无重绘确定性拆分；现行Art Approval USER_APPROVED/decided_at null、Task DONE，Client v0.4依赖解除为READY。此记录仅接受具体静态资源供接入，不推断Creator当前构建/IAB已通过或运行版已获最终用户验收；Tech/Client Approval仍DRAFT。
+
+2026-10-11 13:32:53 +08:00（U04当前运行版本送审，非用户批准）：`U04-DIALOGUE-CLIENT-001` v0.4及`U04-CLOUD-CORNER-TECH-001` v0.1 当前审批对象分别为Client `USER_REVIEW_PACKET.md`和Tech `DELIVERABLE.json`；7/7+5/5 Required、五/三同序PASS，Tech与Master同版Review APPROVED，Master包30/30 SHA一致。两现行Approval均USER_REVIEW、review_ref指当前Master v0.4 Review、decided_at null。用户此前批准准确祥云概念v0.4及同源静态资源，仍须对本次Creator/Web实际运行结果单独验收；目标设备/GPU/压力NOT_TESTED，不记双Task DONE。

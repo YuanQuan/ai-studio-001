@@ -1,0 +1,31 @@
+{
+  "id": "U04-CLOUD-CORNER-TECH-001",
+  "title": "U04内部祥云生产与接入审核",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-DIALOGUE-CLIENT-001",
+  "objective": "同批预签获批原图拆分方法，核稳定路径/UUID、真实构建及同版运行。",
+  "inputs": [
+    "tasks/U04-CLOUD-CORNER-FIT-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.4/cloud_corner_fit_preview.png"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-CLOUD-CORNER-TECH-001/v0.1/DELIVERABLE.json",
+    "tasks/U04-CLOUD-CORNER-TECH-001/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "首图前同批预签锁v0.4源SHA、透明提取/PSD和128×96显示映射。",
+    "Client两角与Art导出SHA相同，meta UUID及九宫格保持，其他人物资源未改。",
+    "Creator当前构建和HTTP/IAB角花实际效果与伸缩检查可复核，未测平台如实记录。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户已明确批准本版并要求直接替换，授权同源确定性拆分和接入，不重复索取相同许可；需改变外观则报Master。",
+    "无QA，保留旧资源与无关差异。"
+  ]
+}
