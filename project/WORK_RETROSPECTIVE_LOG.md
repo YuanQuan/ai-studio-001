@@ -704,3 +704,9 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 影响与建议：本轮尚无同类耗时基线，未发现可证实的慢因。可见质量限制为生成式编辑重绘非角花区域；若用户选定方向，Art负责在下一版制作方案中把角花限定回原1280×720画面和现有九宫格资源，代价是一次定向制作与对照，复核点为正式资源制作方案及同尺度预览门禁。Producer负责持续隔离本静态候选与旧v0.3运行审核，复核点为下一次用户决定登记。
 - Continuity check：本线已到真实USER_REVIEW，无无产出的READY/IN_PROGRESS占位；原运行审核与并行SCENE线按各自门禁继续。
 
+### WR-20261011-U04-CLOUD-CORNER-V02-001｜祥云线条返修候选送审
+
+- 结果与证据：v0.1边缘贴合获得用户方向认可，线条舒适度被退回；Art v0.2图、说明、交付索引及审批4/4 Required实存，四项Task验收同序PASS。Master实图Review限定APPROVED，`deliverables/master/U04-CLOUD-CORNER-FIT-001/v0.2/PACKET_ACCEPTANCE.json`锁三份Art文件SHA且3/3匹配。Task/Approval现USER_REVIEW，待用户对线条实际效果决定；旧v0.1送审与REJECTED快照保留，无工程/QA。
+- 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 09:55:57 +08:00核新任务与历史；首份v0.2 Art Required mtime 09:56:25，新图mtime 09:57:24，交付索引mtime 09:57:53，Art说明末次mtime 09:58:07，送审登记09:59:40。可核墙钟跨度3分43秒，含Art修订、Master实图Review与Producer核验，不能算作单一角色净制作时间。用户原反馈精确时刻及等待时长未知，用户对v0.2审批等待刚开始；未见工具故障证据，返工次数本周期一次。
+- 原因与建议：返工直接原因是用户指出v0.1线条不舒服，边缘贴合无需重新探索；本轮无同类耗时基线，未发现可证实的慢因。Art若下一轮仍需调线，可把左下与右上弧线分别做同尺度局部对照，并保持已认可接框位置，代价是额外两处局部核验，复核点为下一版用户看图。Producer继续把静态候选与原U04 Client运行审核分开，复核点为用户对准确v0.2的决定。
+- Continuity check：本线已到真实USER_REVIEW，无仅占位的READY/IN_PROGRESS；原运行审核与SCENE并行线独立。

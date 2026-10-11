@@ -705,3 +705,11 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 2026-10-10 23:30:09 +08:00 | `U04-CLOUD-CORNER-FIT-001` | IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`、现行Task/Approval | 4/4 Required实存、三项Owner验收自报PASS；图1672×941且非角花区域有生成重绘偏差，仅静态方向候选。待Master实图Review，Approval DRAFT。
 
 2026-10-10 23:31:33 +08:00 | `U04-CLOUD-CORNER-FIT-001` | REVIEW→USER_REVIEW / 静态候选送审 | Art v0.1 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.1 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、三项同序PASS、Master限定APPROVED、3/3 SHA一致；待用户决定，非角花重绘偏差已披露，不作正式资源或运行验收。
+
+2026-10-11 09:55:57 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.1 USER_REVIEW→REJECTED历史；现行v0.2 REVISION | `tasks/U04-CLOUD-CORNER-FIT-001/TASK_v0.1_user_review.json`、`ARTIFACT_APPROVAL_v0.1_user_review.json`、`ARTIFACT_APPROVAL_v0.1_rejected.json`；现行Task/Approval | 用户认可边缘贴合、要求线条更舒适；v0.2 Required尚无实存，不能记开工或送审。仅静态候选，无工程/QA。
+
+2026-10-11 09:57:00 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 REVISION→IN_PROGRESS / TASK_STARTED | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/ART_BRIEF.md` | 首份Required于09:56:25 +08:00实存非空；预览新图、DELIVERABLE及Master Review待，Approval DRAFT。
+
+2026-10-11 09:58:16 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`、现行Task/Approval | 4/4 Required实存、四项同序Owner自报PASS；1672×941静态候选，待Master实图评审，Approval DRAFT。
+
+2026-10-11 09:59:40 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 REVIEW→USER_REVIEW / 静态线条候选送审 | Art v0.2 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.2 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、四项同序PASS、Master限定APPROVED、3/3 SHA匹配；待用户判断线条，v0.1边缘方向认可不等于新版整体批准。

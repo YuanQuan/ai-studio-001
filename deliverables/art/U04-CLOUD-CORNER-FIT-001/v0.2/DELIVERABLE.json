@@ -1,0 +1,39 @@
+{
+  "task_id": "U04-CLOUD-CORNER-FIT-001",
+  "owner": "art",
+  "summary": "在 v0.1 已认可的角花贴边方式上，提交 v0.2 静态候选：左下减少封闭内卷，右上减少拥挤小尖钩，改用圆润开放弧线。",
+  "artifacts": [
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/cloud_corner_fit_preview.png",
+    "deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/ART_BRIEF.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际效果图基于当前U04背景、人物和对话框，左下与右上祥云角饰与边框自然衔接。",
+      "result": "PASS",
+      "evidence": "cloud_corner_fit_preview.png 以 v0.1 U04 静态候选为唯一编辑目标；左下角花接底框，右上角花沿上框转接右框。此项只判定静态候选的画面关系，不代表当前客户端运行画面。"
+    },
+    {
+      "criterion": "祥云弧线舒展流畅，减少细碎卷曲和局促小钩，线条粗细统一，保留已确认的边缘贴合方式。",
+      "result": "PASS",
+      "evidence": "对照 v0.1，v0.2 左下由多处内旋简化成较开放的圆弧，右上密集的小尖钩减少；两角仍与原有框线连续相接，暗金线宽目视相近。用户最终视觉判断仍待审批。"
+    },
+    {
+      "criterion": "沿用金色细线、深蓝填色与简洁祥云卷曲形态，记录参考来源与图像工具提示词。",
+      "result": "PASS",
+      "evidence": "cloud_corner_fit_preview.png 沿用深蓝面板填色与暗暖金细线；ART_BRIEF.md 记录 v0.1 输入来源、用户参考出处及授权限制，并完整记录本轮内置 image_gen 提示词。"
+    },
+    {
+      "criterion": "明确为静态候选，无正式切片或客户端接入，不冒充实际运行。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md 明确本轮只有静态预览；无 PSD、切片或客户端接入，未作九宫格缩放和真实运行验证。"
+    }
+  ],
+  "assumptions": [
+    "v0.1 已认可的角花占位与接框方式在本轮保持为视觉基线；本轮仅修订线条形态。"
+  ],
+  "risks": [
+    "图像生成编辑可能改动非角花区域的像素；本交付不声称其他画面逐像素不变。",
+    "v0.2 仍为 1672×941 静态候选，与原客户端 1280×720 运行截图尺寸不同，正式资源需另行制作和审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

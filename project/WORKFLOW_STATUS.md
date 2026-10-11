@@ -668,3 +668,11 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 2026-10-10 23:28:55 +08:00（U04祥云角花候选实际开工）：Art v0.1首份Required `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/ART_BRIEF.md` 已于23:28:33 +08:00实存非空，记录当前截图、用户参考来源、静态范围和图像工具提示词；Task READY→IN_PROGRESS / TASK_STARTED，Approval仍DRAFT。预览实图和DELIVERABLE尚待，不凭说明稿宣称视觉贴合或送审。Continuity check：Art已真实开工，须持续至实图、交付与Master复核门禁。
 
 2026-10-10 23:31:33 +08:00（U04祥云贴合静态候选送用户审看）：Art v0.1四项Required 4/4实存，`DELIVERABLE.json`三项验收与Task逐字同序PASS；Master已实看1672×941原图，`MASTER_REVIEW.json` APPROVED仅限静态方向，`PACKET_ACCEPTANCE.json`三项Art文件SHA 3/3与当前实文件一致。Task REVIEW→USER_REVIEW、Approval USER_REVIEW / decided_at null，待用户对实际祥云角花方向决定，不记DONE。生成图的背景、人物、控件及文字有非角花重绘偏差，不能作为正式切片、像素保持或实际运行验收；无工程接入/QA。原U04 v0.3运行审核双USER_REVIEW独立保留，并行SCENE状态不变。Continuity check：本线已到真实用户审图门禁，无空转READY/IN_PROGRESS；最近复盘 `WR-20261010-U04-CLOUD-CORNER-FIT-001`。
+
+2026-10-11 09:55:57 +08:00（U04祥云线条v0.2返修开线）：用户认可v0.1边缘贴合但认为祥云线条不舒适，要求继续修改；Master保留v0.1 USER_REVIEW与REJECTED独立审批历史，现行Task为REVISION、Approval准确v0.2 DRAFT。Art仅调整当前静态候选祥云弧线、细碎卷曲与线粗，v0.2 Required尚无实存，不能记IN_PROGRESS。原U04 v0.3 Client/Tech实际运行审核不受此次返修改写；无工程接入或QA。Continuity check：本线无依赖阻塞，Art须继续实产，不以返修开线为停止点；SCENE并行线维持各自门禁。
+
+2026-10-11 09:57:00 +08:00（U04祥云v0.2返修实际开工）：首份v0.2 Required `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/ART_BRIEF.md` 于09:56:25 +08:00实存非空，Art记录线条舒展、统一粗细及保留边缘贴合的修订范围；Task REVISION→IN_PROGRESS / TASK_STARTED，Approval仍DRAFT。实际新图、DELIVERABLE和Master审图待，不能把文字说明当视觉效果通过。Continuity check：Owner已有真实实产，须继续至新图和评审门禁。
+
+2026-10-11 09:58:16 +08:00（U04祥云v0.2新图进入Master复核）：新静态图1672×941、`ART_BRIEF.md`和`DELIVERABLE.json`均实存，Task四项Required 4/4，四项验收逐字同序由Owner自报PASS；相对v0.1保留两角接框，声称左下开放圆弧、右上减少密集小钩。Owner披露生成编辑可能改动非角花像素，未作原1280×720运行或九宫格伸缩验证。Task IN_PROGRESS→REVIEW、Approval DRAFT；待Master亲自看准确v0.2图并落同版Review，不能提前USER_REVIEW。
+
+2026-10-11 09:59:40 +08:00（U04祥云v0.2线条修订候选送用户审看）：Art v0.2四项Required 4/4实存，四项Task验收逐字同序PASS；Master实看1672×941新图，`MASTER_REVIEW.json`限定APPROVED仅供用户判断线条，`PACKET_ACCEPTANCE.json`锁三份Art文件SHA与当前实文件3/3一致。Task REVIEW→USER_REVIEW、Approval USER_REVIEW/decided_at null；v0.1被认可的只有边缘贴合方式，旧v0.1送审及退回历史保留，不推断v0.2整体或线条获用户批准。生成编辑非角花像素可能偏差；无正式切片/PSD、工程接入、九宫格实际伸缩、运行或QA。原U04 Client/Tech v0.3运行审核独立保留，SCENE并行状态不改。Continuity check：本线已到真实USER_REVIEW，无空转READY/IN_PROGRESS；最近复盘 `WR-20261011-U04-CLOUD-CORNER-V02-001`。
