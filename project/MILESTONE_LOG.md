@@ -713,3 +713,11 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 2026-10-11 09:58:16 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`、现行Task/Approval | 4/4 Required实存、四项同序Owner自报PASS；1672×941静态候选，待Master实图评审，Approval DRAFT。
 
 2026-10-11 09:59:40 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 REVIEW→USER_REVIEW / 静态线条候选送审 | Art v0.2 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.2 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、四项同序PASS、Master限定APPROVED、3/3 SHA匹配；待用户判断线条，v0.1边缘方向认可不等于新版整体批准。
+
+2026-10-11 10:16:44 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.2 USER_REVIEW→REJECTED历史；现行v0.3 REVISION | `tasks/U04-CLOUD-CORNER-FIT-001/TASK_v0.2_user_review.json`、`ARTIFACT_APPROVAL_v0.2_user_review.json`、`ARTIFACT_APPROVAL_v0.2_rejected.json`；现行Task/Approval | 用户要求祥云形体更到位，沿用贴框位置；v0.3 Required尚无实存，无工程接入/QA。
+
+2026-10-11 10:17:49 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.3 REVISION→IN_PROGRESS / TASK_STARTED | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.3/ART_BRIEF.md` | 首份Required于10:16:57 +08:00实存非空；实际图与DELIVERABLE待，Approval DRAFT。
+
+2026-10-11 10:19:35 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.3 IN_PROGRESS→REVIEW | `deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.3/cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；现行Task/Approval | 4/4 Required实存、四项同序Owner自报PASS；1672×941静态新图，待Master实图Review，Approval DRAFT。
+
+2026-10-11 10:20:07 +08:00 | `U04-CLOUD-CORNER-FIT-001` | v0.3 REVIEW→USER_REVIEW / 祥云形体候选送审 | Art v0.3 `cloud_corner_fit_preview.png`、`ART_BRIEF.md`、`DELIVERABLE.json`；Master v0.3 `MASTER_REVIEW.json`、`PACKET_ACCEPTANCE.json`；现行Task/Approval | 4/4 Required、四项同序PASS、Master限定APPROVED、3/3 SHA匹配；更粗亮金线及右上轻微花形观感随图披露，待用户决定。

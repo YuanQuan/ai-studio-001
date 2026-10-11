@@ -334,3 +334,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 2026-10-10 23:31:33 +08:00（静态候选送审，非用户决定）：`U04-CLOUD-CORNER-FIT-001` v0.1 审批对象为`deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.1/DELIVERABLE.json`及其索引实际图/说明；4/4 Required、三项同序PASS，Master同版Review限定APPROVED，三份Art文件SHA 3/3匹配。现行`ARTIFACT_APPROVAL.json` USER_REVIEW、review_ref指向Master Review、decided_at null；待用户判断祥云与九宫格贴合方向。非角花区域生成重绘偏差不作正式资源/运行通过，旧U04 v0.3运行审核独立保留。
 
 2026-10-11 09:59:40 +08:00（v0.2静态线条候选送审，非用户决定）：`U04-CLOUD-CORNER-FIT-001`现行审批对象为`deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.2/DELIVERABLE.json`及索引实图/说明；4/4 Required、四项同序PASS、Master同版限定APPROVED、三份Art文件SHA 3/3匹配。`ARTIFACT_APPROVAL.json` USER_REVIEW、review_ref指Master v0.2 Review、decided_at null；v0.1边缘贴合认可不等于v0.2线条批准。仅静态方向，无正式切片、工程接入或运行验收；旧v0.1退回历史保留。
+
+2026-10-11 10:16:44 +08:00（v0.2用户退回，原消息精确时刻未知）：用户认为v0.2“还是不好”，要求祥云部分体现到位；`ARTIFACT_APPROVAL_v0.2_user_review.json`与`ARTIFACT_APPROVAL_v0.2_rejected.json`保留，后者REJECTED/decided_at null，未批准v0.2具体图。现行v0.3 Approval DRAFT，待强化祥云形体的实图；旧边缘贴合方向认可不等于新图获批，无正式切片/接入授权。
+
+2026-10-11 10:20:07 +08:00（v0.3祥云形体静态候选送审，非用户决定）：现行`U04-CLOUD-CORNER-FIT-001`审批对象为`deliverables/art/U04-CLOUD-CORNER-FIT-001/v0.3/DELIVERABLE.json`及其索引实图/说明；4/4 Required、四项同序PASS、Master v0.3限定APPROVED、三份Art文件SHA 3/3一致。`ARTIFACT_APPROVAL.json` USER_REVIEW、review_ref指Master v0.3 Review、decided_at null；金线更粗亮与右上略有花形观感需用户判断。旧v0.1/v0.2退回历史独立保留；无正式切片、工程接入或运行验收。
