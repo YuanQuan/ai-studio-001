@@ -786,4 +786,10 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间与耗时（Asia/Shanghai）：调查整体起点未知。最终测量脚本记录 2026-10-12 12:09:18–12:09:20 +08:00、运行 1.634 秒，仅代表最终测量，不能当作整个调查或 Master 制作净耗时。Producer 于 2026-10-12 12:13:35 +08:00 核索引与五份记录；调查、等待、审阅各自净耗时未知，不能由这两个节点推算整个调查耗时。用户对规范 v0.1 的审批等待仍在继续。
 - 影响与建议：本轮可证实裁切、背景、缩放条件及当前可访问源链限制，不能据此认定旧资源失败或源永久丢失，也无可比较的节省基线。Art 在下一批获授权方案中先锁裁切、背景、采样和 PSD 源可访问性，代价为逐批记录与核图，复核点为该批 Gate1/样片；Producer 仅在用户对准确 v0.1 作决定后更新规范门禁，复核点为审批记录。
 - Continuity check：已产出新增审计证据，规范 Task 与审批仍 `USER_REVIEW`；本线无空转 `READY/IN_PROGRESS`，Studio 候选仍未发布。Game 最新 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已由 Master 报告推送。
+
+### WR-20261012-VISUAL-FIDELITY-COMPUTE-BLOCKED-003｜第三轮门禁复核
+
+- 结果与证据：Producer 于 2026-10-12 12:20:09 +08:00 核 Task/Approval 仍 `USER_REVIEW`、`decided_at=null`，提案 `PROPOSED/PENDING`、模板 `active:false`。Game HEAD/远端 main 同为 `310eb48eac0d97a91e0e72730a886a34b4acbb38`；Studio 本地/远端仍 `e4cc747f`/`9ee34fa8`，候选未发布。相关本地历史与路径扫描未见所引用的 3 份 PSD，仅说明当前源引用不能核验，不推断永久丢失。无图像生成、修改或新运行。
+- 时间与原因：本轮整体开始时间及净耗时无可靠记录，记为未知；12:20:09 是状态核验节点，不是制作完成时间。连续第三轮缺准确 v0.1 用户批准和本次 Studio Git 同步授权；这是明确门禁与发布限制，不能计为 Agent 制作慢因。
+- 建议与 continuity：Master 在用户给出准确版本决定及模板同步授权后复核门禁与仓库分歧，再继续；代价为一次版本/远端核对，复核点为用户决定后的下一轮。当前已无本线获授权且无阻塞的工作，Master 将自动目标标 blocked；正式 Task/Approval 保持 `USER_REVIEW`，目标未完成。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
