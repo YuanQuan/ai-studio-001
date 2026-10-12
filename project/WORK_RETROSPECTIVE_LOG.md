@@ -858,3 +858,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master 下一轮确认累计/消耗、初始档与解锁持久性；Product 再细化经验结算及门槛规格，代价为一轮问答，复核点为下一份用户决定。Producer 保持本有限批准与旧 Product 整包审批分离，复核点为下次状态核验。
 - Continuity check：当前已授权决定已登记；父 `SPEC`、Product v0.1 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`，无正式开发输入。
 <!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->
+
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 START -->
+### WR-20261012-MINIGAMES-UNLOCK-SUMMARY-001｜解锁决定与奶茶 v0.2 讨论汇总送审
+
+- 结果与证据：用户确认六店五档开发但初始仅简单开放、经验累计不消耗且永久解锁、上一档通关必需及其余条件可配置启用、MG01 逐单点击制作。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.8/UNLOCK_AND_OPERATION_DECISION.md` 和 Review 实存，有限批准 `USER_APPROVED`。Product v0.2 六 Required、四项同序 PASS、Master Review APPROVED，Task 与准确七文件 SHA 绑定审批 `USER_REVIEW`，待用户决定；父 `SPEC`，下游未解锁。
+- 时间与耗时（Asia/Shanghai）：可核本轮首次探索 2026-10-12 14:00:46 +08:00，全部用户选择于 14:02:27 前可核；Product 首份 Required mtime 14:04:34、交付索引 mtime 14:06:01、Master Review mtime 14:07:04。送审登记在其后完成；起点至 Master Review 可观察墙钟 6 分 18 秒，送审终了时刻与各角色净制作/等待时长未知。用户各条消息精确时刻未知，不把墙钟全计为单角色工时。
+- 影响与原因：多次明确选择消除了“只开发简单”和“初始只开放简单”的范围歧义；Product 汇总将各分项决定合并到同版脑图/短说明。MindMap AI 本版沿用 v0.1 额度不足证据且注明未重测，同版 Mermaid 源和快照已存。无同类时限或可证实慢因，本轮工具故障净时长未知。
+- 建议与复核：Product 在用户确认讨论汇总后，再按当前条件边界细化正式规格与配置源表；代价是独立规格与 Review，复核点为下一阶段 Product Task。Tech Lead 届时核字段类型、引用及生成规范，复核点为配置评审。Producer 继续区分 Master 分项有限批准和 Product 整包用户决定，复核点为准确 v0.2 用户回复。
+- Continuity check：Product v0.2 已到真实 `USER_REVIEW`，父线 `SPEC`，没有本线空转 `READY/IN_PROGRESS`；Tech、Client、资源与 QA 尚无正式开发输入。
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->

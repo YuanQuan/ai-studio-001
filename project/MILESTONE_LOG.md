@@ -832,3 +832,13 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `USER_DECISION_XP_SETTLEMENT`：用户确认六店成功通关及重复成功通关均给对应店长经验，失败/退出不给。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md` 与 `EXPERIENCE_SETTLEMENT_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json` 有限 `USER_APPROVED`，决定文档 SHA-256 `1453edccf0773bb963819c5975011981c790ac159155bb97abeabf35ad4397ee`。用户消息精确时刻未知。
 - `CONTINUITY_CHECK`：累计/消耗、初始开放档及解锁持久性待决，父 `SPEC`、旧 Product v0.1 `USER_REVIEW` 不变，无本线空转 `READY/IN_PROGRESS`，不解锁开发。
 <!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->
+
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 START -->
+## 2026-10-12｜六店解锁决定与 Product v0.2 汇总进展
+
+- `USER_DECISION_UNLOCK_OPERATION`：用户确认五档开发、初始仅简单开放、经验累计不消耗与永久解锁，上一档通关必需且其余条件按配置启用；MG01 逐单点击选料、确认交杯。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.8/UNLOCK_AND_OPERATION_DECISION.md`、同版 Review 实存；Producer 有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_UNLOCK_AND_OPERATION_v0.8.json` 为 `USER_APPROVED`，决定文档 SHA-256 `4f7750b04e3cfe0e1fdce7059d5d8c00c2f1475afa4ea65a8377bb5bce3fd639`。用户消息精确时刻未知，全部选择于 14:02:27 +08:00 前可核。
+- `TASK_STARTED`：Product v0.2 首份 Required `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md` 实存，Owner 已将 Task `REVISION→IN_PROGRESS`；其余 Required 与同版 Review 尚待，不提前登记 `USER_REVIEW`。
+- `DRAFT_SUBMITTED`：Product v0.2 六份 Required 实存，`deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/DELIVERABLE.json` 四项验收同序 PASS、状态 `READY_FOR_REVIEW`，Owner Task `IN_PROGRESS→REVIEW`。Master 同版 Review 尚待，不提前登记用户送审。
+- `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MASTER_REVIEW.json` mtime 2026-10-12 14:07:04 +08:00，decision APPROVED；六 Required、四项同序 PASS 和规则范围核对，仅准讨论汇总送审。
+- `USER_REVIEW`：Producer 将 Product Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json`，绑定六 Required 与 Master Review 七文件 SHA，`decided_at=null`。旧 v0.1 历史保留；父 `SPEC`，无下游开发解锁。Continuity check：本轮已到真实用户门禁，无空转 `READY/IN_PROGRESS`。
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->

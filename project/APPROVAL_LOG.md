@@ -415,3 +415,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 - `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md`，SHA-256 `1453edccf0773bb963819c5975011981c790ac159155bb97abeabf35ad4397ee`，Master Review APPROVED。只批准六店成功通关及重复成功给对应店长经验，失败/退出不给；累计/消耗、初始开放档、解锁持久性和数值未批。旧 Product v0.1 整包仍 `USER_REVIEW`，不批准开发。
 <!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->
+
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 START -->
+## 2026-10-12｜解锁及奶茶操作有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_UNLOCK_AND_OPERATION_v0.8.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.8/UNLOCK_AND_OPERATION_DECISION.md`，SHA-256 `4f7750b04e3cfe0e1fdce7059d5d8c00c2f1475afa4ea65a8377bb5bce3fd639`，Master Review APPROVED。仅批准六店五档开发/初始简单开放、经验累计不消耗/永久解锁、上一档通关必需与其余条件可配置启用、MG01 逐单点击制作。条件组合、魂魄指标、具体数值及运行配置字段未批。
+- Product v0.2 六 Required 与四项同序 PASS 经 Master `MASTER_REVIEW.json` APPROVED，仅限讨论汇总送审。`tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json` 当前 `USER_REVIEW`、`decided_at=null`，对象 `PRODUCT_OUTLINE.md` SHA-256 `1933168669d37e44fd4f7da6f46a9610d578afcf7bf94acff1e367fb655b5fb7`，完整七文件 SHA 见该审批。旧 v0.1 审批保留历史 `USER_REVIEW`；v0.8 有限批准不等于 v0.2 整包用户批准，下游开发不解锁。
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->

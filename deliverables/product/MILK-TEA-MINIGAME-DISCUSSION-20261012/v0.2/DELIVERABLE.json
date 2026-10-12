@@ -1,0 +1,23 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-DISCUSSION-20261012",
+  "owner": "product",
+  "summary": "汇总六店顺序、五档共同规则和 MG01 已确认的单杯订单操作、配方维度、提示纠错、熟练度与可配置解锁；具体数值及完整流程留待正式规格。",
+  "artifacts": [
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/BRAINSTORM_MAP.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MINDMAP_AI_SNAPSHOT.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MILK_TEA_RULES.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/DELIVERABLE.json",
+    "project/PRD.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "六店主题与讨论顺序保持，五档和计时规则准确呈现", "result": "PASS", "evidence": "PRODUCT_OUTLINE.md 六店表；MILK_TEA_RULES.md 五档表"},
+    {"criterion": "奶茶逐单点击选料、配方维度、提示纠错、通关目标完整匹配明确决定", "result": "PASS", "evidence": "MILK_TEA_RULES.md 首段、五档表及纠错段"},
+    {"criterion": "熟练度结算、档内递增、永久解锁与可配置条件正确区分，不推定数值或条件组合", "result": "PASS", "evidence": "MILK_TEA_RULES.md 熟练度与解锁段；PRODUCT_OUTLINE.md 待正式规格"},
+    {"criterion": "脑图可编辑源、静态快照、同版短说明及工具状态可追溯，明确正式规格和开发门禁", "result": "PASS", "evidence": "BRAINSTORM_MAP.md、MINDMAP_AI_SNAPSHOT.md、PRODUCT_OUTLINE.md、MILK_TEA_RULES.md"}
+  ],
+  "assumptions": ["MG02–MG06 的具体玩法仍为候选；只沿用用户确认的六店共同规则。"],
+  "risks": ["具体数值、条件组合、魂魄指标、失败／重试／保存／返回和经营反馈未定义，不可据本稿直接开发。", "MindMap AI 仅有 v0.1 的额度不足记录，本版未重试，因此没有外部图链接。"],
+  "status": "READY_FOR_REVIEW"
+}

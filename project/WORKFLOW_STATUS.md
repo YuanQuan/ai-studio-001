@@ -787,3 +787,11 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 用户已确认：六店只有成功通关获得对应店长熟练度经验，重复挑战成功仍给；失败或中途退出不给。准确决定 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md` 经 Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json` 为 `USER_APPROVED`。本记录补足前版“失败/退出/重复挑战”待决项。
 - 经验累计或解锁消耗、初始开放档、解锁持久性与具体数值仍待用户决定；不附加次数限制。父 Task `SPEC`，旧 Product v0.1 Task/Approval `USER_REVIEW`，不解锁正式配置、资源、编码或 QA。Continuity check：本轮已确认规则已登记，下一步继续解锁机制问答，无本线空转 `READY/IN_PROGRESS`。复盘 `WR-20261012-MINIGAMES-XP-SETTLEMENT-001`。
 <!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->
+
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 START -->
+## 2026-10-12｜六店解锁与奶茶操作决定、Product v0.2 汇总
+
+- 用户确认六店均开发五档，但玩家初始只开放简单；熟练度经验累计不消耗，已解锁难度永久可选。解锁下一档必须先通关上一档，其余熟练度、店长等级、魂魄等级条件按配置选择启用；条件组合、魂魄指标及具体数值未定。MG01 逐单制作、每次一杯，点击选原料并确认交杯。准确决定 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.8/UNLOCK_AND_OPERATION_DECISION.md`、Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_UNLOCK_AND_OPERATION_v0.8.json` 为 `USER_APPROVED`。
+- Master 已将 Product 子 Task 修订为 v0.2 汇总任务，旧 v0.1 Task 存 `history/v0.1` 且旧审批保留。首份新 Required `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md` 实存并触发 `REVISION→IN_PROGRESS`；六份 Required、`DELIVERABLE.json` 四项同序 PASS 实存，Owner 提交 `REVIEW`。`MASTER_REVIEW.json` 于 14:07:04 +08:00 APPROVED 仅限讨论汇总送审；Producer 将当前 Task 与准确 `ARTIFACT_APPROVAL_v0.2.json` 置 `USER_REVIEW`，七文件 SHA 绑定。用户尚未批准 v0.2 整包。
+- 父 Task 保持 `SPEC`；旧 Product v0.1 审批仍为历史 `USER_REVIEW`，v0.8 有限批准与本版整包送审彼此独立。下一步 Master 向用户呈现准确 v0.2 讨论汇总；条件组合、魂魄指标、数值和完整流程仍需正式规格，Tech、Client、资源、QA 均未解锁。Continuity check：Product v0.2 已真实抵达 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；复盘 `WR-20261012-MINIGAMES-UNLOCK-SUMMARY-001`。
+<!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->

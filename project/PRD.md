@@ -15,7 +15,8 @@
 
 ## 六店小游戏讨论索引
 
-- `MILK-TEA-MINIGAME-DISCUSSION-20261012` v0.1 为**Discussion／未批准**，不属于下方已批准功能 PRD。覆盖 MG01 奶茶店首轮核心操作三候选与 MG02–MG06 顺序索引；[六店总纲](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md)、[脑图可编辑源](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/BRAINSTORM_MAP.md)、[快照与工具状态](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MINDMAP_AI_SNAPSHOT.md)、[奶茶三候选](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MILK_TEA_OPTIONS.md)。当前只待用户选择首个核心操作，不以本索引批准具体玩法或开发。
+- `MILK-TEA-MINIGAME-DISCUSSION-20261012` v0.1 为**历史 Discussion／未批准**，不属于下方已批准功能 PRD。记录当时 MG01 奶茶店首轮核心操作三候选与 MG02–MG06 顺序索引；[六店总纲](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md)、[脑图可编辑源](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/BRAINSTORM_MAP.md)、[快照与工具状态](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MINDMAP_AI_SNAPSHOT.md)、[奶茶三候选](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MILK_TEA_OPTIONS.md)。后续用户已选择订单配方方向，准确规则见 v0.2 与项目决策记录。
+- `MILK-TEA-MINIGAME-DISCUSSION-20261012` v0.2 为**Discussion／送审未批准**，汇总已确认的 MG01 单杯操作、五档、提示纠错、熟练度和解锁方向；[六店与模块总纲](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md)、[规则速览](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MILK_TEA_RULES.md)、[可编辑脑图](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/BRAINSTORM_MAP.md)、[静态快照](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MINDMAP_AI_SNAPSHOT.md)。v0.1 为历史讨论稿；本版仍不是可供开发的正式 PRD。
 
 ## 已批准功能 PRD 索引
 
