@@ -758,3 +758,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master/ Product 在下一轮先围绕“制作要素与难度递增依据”形成候选并让用户逐项选择，避免把示例配方或推荐值当既定规则；代价为一轮产品问答，复核点为下一份准确用户决定。Producer 继续用独立有限审批覆盖新决定并保留旧整包历史，复核点为下一次状态/审批核验；不增加门禁。
 - Continuity check：本轮已授权的三组明确决定均登记；父线 `SPEC`，旧 MG01 Product 资料在真实 `USER_REVIEW`，MG02–06 仍为队列，无本线空转 `READY/IN_PROGRESS`。后续制作要素、进度依据与数值等待用户继续讨论，不宣称正式 PRD 或实现完成。
 <!-- MG01-CORE-20261012 END -->
+
+<!-- MG01-RECIPE-ITEMS-20261012 START -->
+### WR-20261012-MG01-RECIPE-001｜奶茶配方项数有限决定
+
+- 结果与证据：用户确认 MG01 简单茶底/奶类/小料三项、逐档加一项至五项封顶，五档项数 `3/4/5/5/5`。`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md` 与 Master Review 实存，Producer 准确范围审批 `ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json` 为 `USER_APPROVED`。旧 Product v0.1 仍 `USER_REVIEW`，父任务 `SPEC`，无开发或 QA。
+- 时间与耗时（Asia/Shanghai）：可核探索起点 2026-10-12 11:48:19 +08:00，本轮审批与五份流程记录于 11:50:21 后完成；可观察跨度至少约 2 分 02 秒，准确收尾时刻和各角色净制作/等待耗时未知。用户回复精确时刻未知；不能将墙钟跨度归给单一角色。
+- 影响与原因：这次决定缩小配方项数范围，甜度/冰量加入顺序和五项封顶后的增难方式继续待决。无可靠同类时限或可证实慢因、工具故障证据。
+- 建议与复核：Master 下一轮先确认新增两项顺序，再讨论封顶后的可调参数；代价为继续产品问答，复核点为下一份明确用户决定。Producer 保留本次有限审批与旧整包送审的独立状态，复核点为下一次状态核验；不增加审批门禁。
+- Continuity check：本轮明确决定已登记，父 Task `SPEC`、Product v0.1 `USER_REVIEW`，无空转 `READY/IN_PROGRESS`；下一步继续讨论，未有完整正式开发输入。
+<!-- MG01-RECIPE-ITEMS-20261012 END -->

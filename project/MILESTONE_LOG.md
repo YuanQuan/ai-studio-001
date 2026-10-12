@@ -771,3 +771,10 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `USER_DECISION_MG01_RULES`：用户确认简单完整配方、中等及以上只显示饮品要求可随时查配方；交杯前可撤销，交错不计完成可重做且限时档计时继续。`MILK_TEA_RULES_DECISION.md`/`MILK_TEA_RULES_REVIEW.json` 与 `ARTIFACT_APPROVAL_MILK_TEA_RULES_v0.2.json` 实存，决定文档 SHA-256 `cc6299f60af437041fbda71748a8bb4aa28d9e952b5631aa47beae7b3280e8bd`。
 - `CONTINUITY_CHECK`：父 Task 仍 `SPEC`、MG01 Product v0.1 Task 仍 `USER_REVIEW`，上述分项批准不代替整包批准或下游门禁；下一项继续讨论制作要素与难度递增依据，MG02–06 未开工。用户各回复精确时刻未知。
 <!-- MG01-CORE-20261012 END -->
+
+<!-- MG01-RECIPE-ITEMS-20261012 START -->
+## 2026-10-12｜MG01 配方要素数量分项确认
+
+- `USER_DECISION_RECIPE_ITEMS`：用户明确简单茶底/奶类/小料三项，随后每升一档多一项、最多五项，形成简单/中等/困难/地狱/噩梦 `3/4/5/5/5`。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md` 与 `RECIPE_ITEMS_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json` 为有限 `USER_APPROVED`，决定文档 SHA-256 `9fa76ef6aa0c6c3e5599bcbe596926efc1778819d98f5a74ae345fbf78b46f61`。用户消息精确时刻未知。
+- `CONTINUITY_CHECK`：甜度/冰量加入顺序、五项封顶后的增难参数及具体数值仍待决；父 Task `SPEC`、Product v0.1 `USER_REVIEW` 不变，MG02–06 未开工，不解锁资源或开发。
+<!-- MG01-RECIPE-ITEMS-20261012 END -->

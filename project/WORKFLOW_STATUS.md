@@ -725,3 +725,11 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 旧 MG01 Product v0.1 Task 与审批仍 `USER_REVIEW`；用户的分项回答仅批准上述三份 Master 决定，不等于旧讨论整包 `USER_APPROVED` 或 Product Task `DONE`。下一待决为制作要素与难度递增依据；具体原料/配方、订单数、秒数、结算、奖励及正式开发输入仍待讨论。MG02–06 只在路线队列，未解锁开发。
 - Continuity check：当前已确认部分有准确记录，下一步 Master 继续产品问答；不存在本线空转 `READY/IN_PROGRESS`。复盘见 `project/WORK_RETROSPECTIVE_LOG.md` 的 `WR-20261012-MG01-CORE-001`。
 <!-- MG01-CORE-20261012 END -->
+
+<!-- MG01-RECIPE-ITEMS-20261012 START -->
+## 2026-10-12｜MG01 配方项数当前决定
+
+- 用户确认奶茶配方要素按五档为 `3/4/5/5/5`：简单从茶底、奶类、小料三项开始；中等增至四项，困难增至五项，地狱与噩梦维持五项封顶。准确来源 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md`，Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json` 为 `USER_APPROVED`。
+- 甜度与冰量为新增两项，其加入顺序及五项封顶后的增难参数尚待用户决定；具体配方、原料选项、订单数和秒数未定。既有五档、六店计时及奶茶订单过关/提示纠错决定继续有效。
+- 父 Task 仍 `SPEC`，旧 Product v0.1 Task/Approval 仍 `USER_REVIEW`；本项有限批准不解锁资源、编码或 QA。Continuity check：已确认决定已落盘，下一步继续讨论加入顺序与递增依据；无本线空转 `READY/IN_PROGRESS`。复盘见 `WR-20261012-MG01-RECIPE-001`。
+<!-- MG01-RECIPE-ITEMS-20261012 END -->

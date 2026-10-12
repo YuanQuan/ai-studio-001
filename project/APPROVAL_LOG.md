@@ -364,3 +364,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 奶茶提示纠错：`ARTIFACT_APPROVAL_MILK_TEA_RULES_v0.2.json` 为 `USER_APPROVED`，绑定同目录 `MILK_TEA_RULES_DECISION.md` SHA-256 `cc6299f60af437041fbda71748a8bb4aa28d9e952b5631aa47beae7b3280e8bd`；简单完整配方，中等以上饮品要求且可查配方，交杯前撤销，交错不计完成可重做、限时档计时继续。三项 Master Review 均 APPROVED，用户精确回复时刻未知，`decided_at=null`。
 - 这三份是准确范围的有限批准；旧 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json` 仍 `USER_REVIEW`，Product Task 不 `DONE`，路线 v0.1 的历史批准保留。未确认制作要素、难度递增依据、订单数和秒数，不解锁资源、编码、QA。
 <!-- MG01-CORE-20261012 END -->
+
+<!-- MG01-RECIPE-ITEMS-20261012 START -->
+## 2026-10-12｜MG01 配方项数有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md`，SHA-256 `9fa76ef6aa0c6c3e5599bcbe596926efc1778819d98f5a74ae345fbf78b46f61`，Master `RECIPE_ITEMS_REVIEW.json` APPROVED。批准仅限 MG01 五档配方项数 `3/4/5/5/5`，简单三项为茶底、奶类、小料；甜度/冰量加入顺序与后续增难参数未获确认。旧 Product v0.1 审批仍 `USER_REVIEW`；无完整规格或开发批准。
+<!-- MG01-RECIPE-ITEMS-20261012 END -->
