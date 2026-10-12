@@ -792,6 +792,19 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 结果与证据：Producer 于 2026-10-12 12:20:09 +08:00 核 Task/Approval 仍 `USER_REVIEW`、`decided_at=null`，提案 `PROPOSED/PENDING`、模板 `active:false`。Game HEAD/远端 main 同为 `310eb48eac0d97a91e0e72730a886a34b4acbb38`；Studio 本地/远端仍 `e4cc747f`/`9ee34fa8`，候选未发布。相关本地历史与路径扫描未见所引用的 3 份 PSD，仅说明当前源引用不能核验，不推断永久丢失。无图像生成、修改或新运行。
 - 时间与原因：本轮整体开始时间及净耗时无可靠记录，记为未知；12:20:09 是状态核验节点，不是制作完成时间。连续第三轮缺准确 v0.1 用户批准和本次 Studio Git 同步授权；这是明确门禁与发布限制，不能计为 Agent 制作慢因。
 - 建议与 continuity：Master 在用户给出准确版本决定及模板同步授权后复核门禁与仓库分歧，再继续；代价为一次版本/远端核对，复核点为用户决定后的下一轮。当前已无本线获授权且无阻塞的工作，Master 将自动目标标 blocked；正式 Task/Approval 保持 `USER_REVIEW`，目标未完成。
+
+### WR-20261012-VISUAL-FIDELITY-COMPUTE-APPROVAL-004｜准确规范获批并解锁同步
+
+- 结果与证据：用户回复“批准与授权”，Producer 于 2026-10-12 12:28:17 +08:00 将 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 记录为准确 v0.1 `USER_APPROVED`，并登记既定 Studio 快进同步授权。规则和 Art 模板 SHA 分别为 `ce99d03f…13d32b9d`、`7ca4f438…7c9c578a9c`；这不批准具体图片/动作，Gate1/Gate2 与适用 QA 仍有效。Task 暂 `USER_REVIEW`，实际发布和最终接受待 Master 核证。
+- 时间与原因：可核本轮登记时刻 12:28:17 +08:00；用户原消息精确时刻、本轮整体起点及净耗时未知。此前审批与 Studio 同步授权的阻塞已由用户明确决定解除，不将用户等待计为 Agent 制作耗时。本轮图像生成/修改 0。
+- 建议与 continuity：Master 按已授权方案先核 9 文件备份，再复核快进后的真实提交、同步和最终验收；代价为一次备份与版本核证，复核点为发布证据回报。审批门禁已过、Master 正继续执行，本 Task 不提前记 `DONE`；无空转 `READY/IN_PROGRESS`。
+- 12:30:30 +08:00 补记执行证据：Studio 获授权快进至 `9ee34fa80c9c96a1999849175242ef077b78741d`、九文件精确重放且备份完整；Game/Studio Producer 方法索引同版新增，Task 转有产出的 `IN_PROGRESS`。本节点为实施进行中，发布提交及最终验收尚待；此前本轮整体起点与净耗时仍未知，不从两次核验时刻推算制作时长。下一复核点为 Master 真实模板发布及校验结果。
+
+### WR-20261012-VISUAL-FIDELITY-COMPUTE-ACTIVATION-005｜规范启用与Studio发布
+
+- 结果与证据：准确 v0.1 `USER_APPROVED`，批准源两文件留档；`ACTIVATION_VALIDATION.json` 12 项 PASS、Required 10/10、交付索引 24/24，CAP `APPLIED/APPROVED`、模板 `active:true`，Game/Studio 七份同字节。Studio commit `73d9fc6816973f01baa4d021649cadc85f7bdbbc` 普通推送且远端核同，13 文件 197 行新增、旧重绘条款保留。Master `ACTIVATION_ACCEPTANCE.json` `APPROVED`；Producer 于 2026-10-12 12:40:31 +08:00 据此将规范协调 Task 置 `DONE`。Game 本轮后续增量待提交；本结论不证明具体资源、动画、运行或算力收益，规则治理不适用资源 QA。
+- 时间与影响：可核启用验证文件时间 12:36:19 +08:00、Producer 收尾核验 12:40:31 +08:00；本轮起点、各环节净工时、Studio 推送精确完成时刻未知，不把此跨度当制作耗时。快进后预备补丁曾遗漏远端重绘段，Master 于发布前恢复并核最终 diff 无删除；这是可证实的同步校正，返工净耗时未知。
+- 建议与 continuity：Master 下次模板快进后、提交前按文件逐项核旧约束与新增差异；代价一次 diff 审查，复核点为下一次 Studio 发布。此规范协调 Task 已 `DONE`，无本线空转 `READY/IN_PROGRESS`。具体产物要在后续最小批次先形成方案并进 Gate1，不借本次文档验收越过资源门禁。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
 
 <!-- MG01-RECIPE-ORDER-20261012 START -->
@@ -803,3 +816,14 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master 下一轮围绕五项封顶后的加难参数及档内递增依据提问，不从本次加入顺序推定操作顺序；代价为一轮问答，复核点为下一份用户决定。Producer 保持有限审批与旧整包审批分离，复核点为下次状态核验。
 - Continuity check：本轮明确决定已登记，父 Task `SPEC`、Product v0.1 `USER_REVIEW`，无空转 `READY/IN_PROGRESS` 或正式开发输入。
 <!-- MG01-RECIPE-ORDER-20261012 END -->
+
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 START -->
+### WR-20261012-VISUAL-FIDELITY-PILOT-PLAN-START-001｜最小批次方案真实开工
+
+- 结果与证据：Master Task 已分派；Art 本轮核已批准 U04 AT_S0 PSD、原图、18 层、裁切及历史 Gate2，Producer 核两源 SHA 并登记 `IN_PROGRESS`。Art 正式 v0.1 方案未提交，Tech/ Master Review 与 Gate1 用户审批尚未发生；新图片、导出、动画、运行均为 0。
+- 时间与影响（Asia/Shanghai）：Producer 登记核验于 2026-10-12 12:45:38 +08:00，Owner 精确开工时刻及本轮整体起点、净耗时未知，不据此判断速度。当前无可证实的返工或工具故障；通用规范批准与本批 Gate1 分离是既有门禁，不算额外等待成本。
+- 建议与 continuity：Art 在正式方案中锁唯一源/裁切/预算/短动作，再由 Tech 独立核可执行性，代价为批次级文档与审阅；复核点为 v0.1 方案首次提交。当前 `IN_PROGRESS` 有真实只读核验，不是占位；门禁未到 `USER_REVIEW`，继续制作已授权文档，资源制作保持关闭。
+- 阶段修订观察：Art v0.1 Draft 已将 AT=阿棠、AC=阿炭和棕发花饰锚点纠正；先前灰发/橙发梢与冻结图不符，导致旧 Tech `APPROVED` 失去当前送审效力。Art/Tech 正按准确文件重新核，返工净耗时未知；可证实原因是角色 ID 与视觉锚点初稿不一致，不扩为资源失败结论。下一复核点为 Art 最终五份文件及 Tech 重评 SHA，Gate1 继续关闭。
+- 送审结果与证据：修订后四核心已由 Tech/Master 独立 `APPROVED` 并锁同版 SHA，Task 9/9 Required、交付索引 9/9 实存，五项验收同序 PASS；Producer 于 2026-10-12 13:01:17 +08:00 建准确 v0.1 Gate1 `USER_REVIEW` 审批。原角色/锚点误识别在送审前已修正；各阶段净返工时长、Owner 开始时刻和本轮总体耗时未知，没有可比基线，不判快慢。本轮新图、改图、生成、动画和运行均为 0。
+- 建议与 continuity：Art 下次在方案初稿前先用文件哈希与实图同屏核角色 ID、当前适用方向和视觉锚点，代价一次核图，复核点为下一批首份 `ART_BRIEF`；Tech 对任何修订后的核心文件重新锁 SHA，复核点为下一次正式 Review。当前已真实到 `USER_REVIEW`，等待用户对本批 Gate1 明确决定；无本线空转 `READY/IN_PROGRESS`，资源制作仍锁定，示例不参加 QA。
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->

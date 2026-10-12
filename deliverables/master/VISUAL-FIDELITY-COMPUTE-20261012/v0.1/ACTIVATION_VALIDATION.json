@@ -1,0 +1,80 @@
+{
+  "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "validated_at": "2026-10-12T12:36:19+08:00",
+  "method": "当前Schema所用关键词递归检查；批准原件/启用元数据/文件引用与字节核对。未安装外部验证依赖。",
+  "checks": [
+    {
+      "check": "task结构",
+      "result": "PASS",
+      "evidence": "tasks/VISUAL-FIDELITY-COMPUTE-20261012/TASK.json"
+    },
+    {
+      "check": "artifact_approval结构",
+      "result": "PASS",
+      "evidence": "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json"
+    },
+    {
+      "check": "capability_change结构",
+      "result": "PASS",
+      "evidence": "governance/capability_changes/CAP-20261012-VISUAL-FIDELITY-COMPUTE.json"
+    },
+    {
+      "check": "准确v0.1用户批准及同步授权",
+      "result": "PASS",
+      "evidence": "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json"
+    },
+    {
+      "check": "批准原件与独立Review锁定SHA一致",
+      "result": "PASS",
+      "evidence": "approved_sources/; ART_REVIEW.md; TECH_REVIEW.md"
+    },
+    {
+      "check": "生产要求未变，规范仅批准/启用元数据变化",
+      "result": "PASS",
+      "evidence": "approved_sources/ 对照当前规则/模板"
+    },
+    {
+      "check": "双仓库七份规则/提案/方法索引同字节",
+      "result": "PASS",
+      "evidence": "rules/; governance/; agents/{art,tech_lead,producer}/SKILLS.md"
+    },
+    {
+      "check": "提案APPLIED及职责/正式门禁引用保留",
+      "result": "PASS",
+      "evidence": "AGENTS.md; rules/artifact_contract.md; rules/visual_production_contract.md; CAP"
+    },
+    {
+      "check": "新游戏模板启用默认规则且无具体游戏资产",
+      "result": "PASS",
+      "evidence": "Studio templates/game/"
+    },
+    {
+      "check": "方法索引无重复，不冒充工具实装",
+      "result": "PASS",
+      "evidence": "agents/{art,tech_lead,producer}/SKILLS.md"
+    },
+    {
+      "check": "旧独立Review原批准对象不倒写",
+      "result": "PASS",
+      "evidence": "ART_REVIEW.md; TECH_REVIEW.md"
+    },
+    {
+      "check": "模板远端既有规则不覆盖且真实提交已发布",
+      "result": "PASS",
+      "evidence": "Studio 73d9fc6816973f01baa4d021649cadc85f7bdbbc：13文件197行，仅新增；快进9ee34fa后保留原重绘条款"
+    }
+  ],
+  "scope": "规范批准与启用的文档验证，不是图片制作、动画或引擎运行验证。",
+  "approved_source_sha256": {
+    "visual_fidelity_compute_contract.md": "ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d",
+    "VISUAL_FIDELITY_PACKET_TEMPLATE.md": "7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c"
+  },
+  "active_sha256": {
+    "rules/visual_fidelity_compute_contract.md": "f7aa805836527b6abd45689aac72b9ed51faafb084ebd2989856be684c5d0b0f",
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md": "40fb7a5ad9fa7b02b68de778f46d617da904880854578284c1f455edd7299487"
+  },
+  "image_generation_calls": 0,
+  "images_modified": 0,
+  "runtime_validation": "NOT_TESTED",
+  "studio_commit": "73d9fc6816973f01baa4d021649cadc85f7bdbbc"
+}

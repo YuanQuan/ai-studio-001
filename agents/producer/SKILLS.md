@@ -8,6 +8,7 @@
 - `static-dashboard-publish`：把 WORKFLOW_STATUS、APPROVAL_LOG、角色产物与阻塞信息同步为 `project/dashboard/index.html` 静态可视化快照，便于用户直观查看全局进度。
 - `approval-audit`：检查是否存在漏审批、错用旧版本、未批准版本被下游引用等流程异常。
 - `work-retrospective`：每轮有结果的工作结束后，核对耗时与瓶颈证据，写简短复盘并跟踪合理化建议的复核结果。
+- `visual-fidelity-compute-tracking`：按 `rules/visual_fidelity_compute_contract.md` 与 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md`，在既有任务/版本/审批记录中追踪源版本、预算与执行账本及失败停止。当前为人工执行约束，不表示像素比较器、预算拦截器或动画工具已实装；具体资源 Gate1/Gate2 与适用 QA 继续独立执行。
 
 ## Cocos CLI 与内置浏览器优先
 

@@ -14,6 +14,7 @@
 - `nestjs-module-review`：检查 NestJS 模块职责、依赖方向、Provider 边界，防止模块和 Service 持续膨胀。
 - `data-layer-review`：评审 MySQL 与 Redis 的职责边界、缓存一致性、事务、Session、限流和持久化安全。
 - `shared-config-review`：评审 Product 设计的 `.xlsx` 源表与数据字典，检查字段类型、ID／引用、兼容性、跨端可见性，并设计技术校验与生成规范。
+- `visual-fidelity-compute-review`：依 `rules/visual_fidelity_compute_contract.md` 与 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md`，评审制作与运行预算、像素比较配置、序列帧/骨骼源及运行兼容证据；未实装的自动比较或预算拦截按人工执行约束记录，不宣称工具已可用。
 
 这些是项目内工作 Playbook 索引；具体流程会随着后续技术选型继续细化。
 

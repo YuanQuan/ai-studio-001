@@ -56,3 +56,13 @@ shared_skills:
     applicable_roles: [master, producer, product, tech_lead, art, ui, vfx, client, server, qa]
     applicability: when_operating_or_verifying_cocos
     change_ref: governance/capability_changes/CAP-20261006-COCOS-CLI-BROWSER.json
+
+shared_contracts:
+  visual-fidelity-compute:
+    version: v0.1
+    status: user_approved
+    rule: rules/visual_fidelity_compute_contract.md
+    packet_template: agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md
+    applicable_roles: [master, producer, art, vfx, tech_lead, client, qa]
+    execution: manual_constraints_until_tools_verified
+    change_ref: governance/capability_changes/CAP-20261012-VISUAL-FIDELITY-COMPUTE.json

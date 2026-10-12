@@ -1,3 +1,7 @@
+# VISUAL-FIDELITY-COMPUTE-20261012｜规则已批准并启用
+
+当前状态：用户明确“批准与授权”；准确v0.1批准、规则启用及双仓库同步见 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION.md` 和同目录JSON。Studio已普通推送 `73d9fc6816973f01baa4d021649cadc85f7bdbbc`，当前游戏为同版增量；原完整锁定基线不改，其他游戏保持pinned。以下原送审与等待记录留作历史，不能作为当前待审批状态。
+
 # VISUAL-FIDELITY-COMPUTE-20261012｜候选规则同步与审批边界
 
 状态：`USER_REVIEW`；版本 `v0.1`；当前游戏与 Studio 主层、标准模板均只登记候选，批准前不生效。

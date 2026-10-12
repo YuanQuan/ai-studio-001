@@ -1,6 +1,6 @@
 # 已批准效果的还原与算力控制契约
 
-版本：v0.1。状态：`PROPOSED / USER_REVIEW`；用户批准本版本前，不作为正式生产的新规则。与 `rules/visual_production_contract.md`、`rules/artifact_contract.md` 共同使用；不替代既有制作方案 Gate1、具体资源效果 Gate2、自产切图直送用户和适用 QA。
+版本：v0.1。状态：`USER_APPROVED / ACTIVE`；用户于 2026-10-12 明确批准本版本。与 `rules/visual_production_contract.md`、`rules/artifact_contract.md` 共同使用；不替代既有制作方案 Gate1、具体资源效果 Gate2、自产切图直送用户和适用 QA。
 
 ## 1. 验收目标与边界
 
@@ -85,4 +85,4 @@ Art 在现有制作方案内使用 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.m
 
 Art 负责源及视觉继承；Tech 负责可执行方法、预算和兼容性；Client 负责同版接入与运行；正式功能 QA 按适用范围独立判断，示例由 Owner 记录证据。Producer 在现有任务/版本/审批记录中追踪预算消耗、源版本和失败停止；Master 呈交具体成果及真实取舍。
 
-本候选规则获得用户批准后，才更新状态与角色方法索引，使新制作方案引用它；执行中的任务在安全交接点列出差异并迁移。只重核受影响锚点与资源，不追溯改写旧批准或要求全库重做。当前游戏和 Studio 主层及标准项目模板同步，其他游戏保持 pinned。规则批准不等于任何新图、动画、资源接入或 QA 获批。
+本规则 v0.1 已获用户批准，状态与角色方法索引随本次启用同步，新制作方案引用它；执行中的任务在安全交接点列出差异并迁移。只重核受影响锚点与资源，不追溯改写旧批准或要求全库重做。当前游戏和 Studio 主层及标准项目模板同步，其他游戏保持 pinned。规则批准不等于任何新图、动画、资源接入或 QA 获批。

@@ -378,6 +378,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 发布状态补充：Game 本任务提交 `1114b537b94daf90755a273ca9596a411318e156` 已普通推送且远端 main 同 SHA；当前 `VALIDATION.json` 为 12 项文档检查 PASS；Git 发布不改变本准确 v0.1 `USER_REVIEW`，Studio 候选仍只在本地。
 - 续轮只读审计 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.md` 仅增加可查证据，交付索引现 18/18；未产生新的资源审批、旧资源失败决定或规范 v0.1 用户决定。Game 最新 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已推送；准确规范审批仍 `USER_REVIEW`、`decided_at=null`，Studio 候选未启用。
 - 2026-10-12 12:20:09 +08:00 再核：准确 v0.1 未获用户批准，审批仍 `USER_REVIEW`/`decided_at=null`；提案 `PROPOSED/PENDING`，模板 `active:false`。本轮无新决定或新审批，不把第三轮自动目标阻塞状态写成正式 Task `BLOCKED`。
+- 用户最新明确回复原话“批准与授权”；Producer 于 2026-10-12 12:28:17 +08:00 记准确通用规范 v0.1 `USER_APPROVED`，原消息精确时刻未知，`decided_at` 为登记时刻。审批对象 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md`；规则 SHA-256 `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`，Art 模板 SHA-256 `7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`。同一句授权已准备的 Studio 模板快进同步，但实际执行与提交待 Master 核证。本批准不覆盖具体图片、动作或资源 Gate1/Gate2；正式 Task 暂留 `USER_REVIEW`，待发布与最终接受。
+- 实施状态更新：获授权快进与九文件重放已实际执行，Producer 方法索引已在 Game/Studio 同版落盘；Task 因当前执行证据转 `IN_PROGRESS`。准确规范审批继续 `USER_APPROVED`，模板实际发布 commit 与最终接受待核，不能将本批准移作具体资源 Gate1/Gate2 或 QA 结论。
+- 收尾核验：批准原件在 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/approved_sources/` 留档；Studio `73d9fc6816973f01baa4d021649cadc85f7bdbbc` 已推送且实时远端 main 同 SHA，CAP `APPLIED/APPROVED`、模板 `active:true`。Master `ACTIVATION_ACCEPTANCE.json` `APPROVED` 后规范协调 Task `DONE`。用户 `USER_APPROVED` 仅对通用规范，具体资源 Gate1/Gate2、实际运行及适用 QA 仍须独立证据；Game 本轮后续增量未提交。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
 
 <!-- MG01-RECIPE-ORDER-20261012 START -->
@@ -385,3 +388,11 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 - `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md`，SHA-256 `3fd3488763748d36771b5249473bdfe1fc030f2c82d9756c23d5bbcb448cca4c`，Master Review APPROVED。只批准 MG01 中等加入甜度、困难加入冰量，五档配方项数仍为 `3/4/5/5/5`；每杯操作顺序、封顶后增难参数及档内进度未批。旧 Product v0.1 审批保持 `USER_REVIEW`，无开发批准。
 <!-- MG01-RECIPE-ORDER-20261012 END -->
+
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 START -->
+## 2026-10-12｜效果还原最小批次 Gate1 方案门禁
+
+- `VISUAL-FIDELITY-PILOT-PLAN-20261012`：Art 制作方案 v0.1 正在产出，准确版本审批尚未创建，Gate1 未送审、未获用户批准。已批准的通用规范 v0.1 只授权方法，不批准本批 AT_S0 样本、局部修改或短动作，也不解锁新图片/母版/切片制作。待 Art 正式方案及 Tech/Master Review 齐全后，再建立准确 Artifact `USER_REVIEW` 记录。
+- 锚点修订门禁：现行 Draft 已改为阿棠 AT_S0 棕发花饰方向；旧 Tech `APPROVED` 文件早于准确修订，不能作为送审结论。须 Tech 对最终文件和哈希重新评审、Master 接受后再建立 Gate1 准确版审批；现在仍无用户对本批方案的决定。
+- Gate1 准确 v0.1 已送 `USER_REVIEW`：审批对象 `deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/PRODUCTION_PLAN.md`，记录 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json`，`decided_at=null`。Tech/Master 对修订四核心均 `APPROVED`，锁定 SHA：方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。本批用户未批准，制作仍关闭；通用规范批准及旧 U04 Gate2 不替代本 Gate1。
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->

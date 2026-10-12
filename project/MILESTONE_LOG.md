@@ -790,6 +790,9 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `GAME_TASK_PUBLISHED`：Master 报告本轮仅本任务 23 文件、556 行提交 `1114b537b94daf90755a273ca9596a411318e156`，共享文档仅暂存本任务标记块，普通 push 成功，实时 remote main 已核同 SHA；其他会话的 `6e08d70` 未混入暂存。`VALIDATION.json` 后续追加 Producer packet 审计，当前累计 12 项文档 PASS；此前 11 项保留为该时点事实。Studio 仍仅本地候选，未提交/推送。Producer 于 2026-10-12 11:56:52 +0800 登记此发布证据，不将 push 视为用户审批。
 - `READ_ONLY_RESOURCE_AUDIT`：续轮新增 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json`、同名 `.md`；交付索引当前 18/18 实存。最终测量脚本记录 2026-10-12 12:09:18–12:09:20 +08:00、1.634 秒，仅代表该次运行；调查整体起点与净耗时未知。18 PSD/90 身份、12 组同尺度裁切框内差异、6 缩放项、40 帧/10 组复用/9 工具身份见报告。Game 最新 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已由 Master 报告推送；`1114b537` 保留为规范首提交。Task/审批仍 `USER_REVIEW`，无新增用户决定、旧资源失败结论或新制作许可。
 - `THIRD_BLOCKED_AUDIT`：Producer 于 2026-10-12 12:20:09 +08:00 核 Task/Approval `USER_REVIEW`、`decided_at=null`，跨角色提案 `PROPOSED/PENDING`，模板 `active:false`；Game 当前 HEAD/远端 main `310eb48eac0d97a91e0e72730a886a34b4acbb38`，Studio 本地 `e4cc747f30ec08ec0187eaf419a2d01c9af23d3c`、远端 `9ee34fa80c9c96a1999849175242ef077b78741d`。本轮无生图、改图、新运行；第三次遇到同一准确版本审批与模板同步授权缺口。Master 自动目标将标 blocked，正式 Task 不改 `BLOCKED`，仍在 `USER_REVIEW`。
+- `USER_APPROVED_AND_SYNC_AUTHORIZED`：用户最新回复“批准与授权”；Producer 于 2026-10-12 12:28:17 +08:00 记录准确 v0.1 通用规范 `USER_APPROVED`，用户消息精确时刻未知。批准锁规则 SHA `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`、Art 模板 SHA `7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`，并授权已准备的 Studio 模板快进同步。Master 正核备份、发布与最终验收；具体资源 Gate1/Gate2 和适用 QA 不受替代，Task 暂留 `USER_REVIEW`、未 `DONE`。
+- `APPROVED_IMPLEMENTATION_STARTED`：Master 已按授权快进 Studio 至 `9ee34fa80c9c96a1999849175242ef077b78741d`、精确重放九文件并核备份完整；Producer 于 2026-10-12 12:30:30 +08:00 核 Game/Studio 同版 `agents/producer/SKILLS.md` 方法索引实存，Task 转 `IN_PROGRESS`。该索引只要求在现有记录中追踪源版本、预算账本和失败停止，非自动工具实装。模板发布真实 commit、CAP/active 状态及最终接受待 Master 核；Task 未 `DONE`，具体资源审批不变。
+- `ACTIVATED_AND_MASTER_ACCEPTED`：Producer 于 2026-10-12 12:40:31 +08:00 核 `ACTIVATION_VALIDATION.json` 12 项 PASS、Required 10/10、交付索引 24/24、准确 v0.1 `USER_APPROVED`、CAP `APPLIED/APPROVED`、模板 `active:true`，批准原件留 `approved_sources/` 且生产要求未改。Master `ACTIVATION_ACCEPTANCE.json` `APPROVED`，仅接受规范协调/同步；Studio `73d9fc6816973f01baa4d021649cadc85f7bdbbc` 已普通推送且实时远端 main 同 SHA（13 文件 197 行新增，旧重绘条款保留）。本 Task `DONE`，Game 本轮后续增量仍待提交；具体图、动画、算力收益与资源 QA 未由本结论验证。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
 
 <!-- MG01-RECIPE-ORDER-20261012 START -->
@@ -798,3 +801,12 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `USER_DECISION_RECIPE_ORDER`：用户选择“中等加甜度，困难再加冰量”。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md` 与 `RECIPE_ORDER_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json` 为有限 `USER_APPROVED`，决定文档 SHA-256 `3fd3488763748d36771b5249473bdfe1fc030f2c82d9756c23d5bbcb448cca4c`。用户回复精确时刻未知。
 - `CONTINUITY_CHECK`：3/4/5/5/5 项数不变；父 Task `SPEC`、旧 Product v0.1 `USER_REVIEW`，封顶后增难与档内进度待讨论，无本线空转 `READY/IN_PROGRESS`。
 <!-- MG01-RECIPE-ORDER-20261012 END -->
+
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 START -->
+## 2026-10-12｜效果还原最小批次 Gate1 方案
+
+- `TASK_CREATED_AND_STARTED`：Master 创建并分派 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/TASK.json`；Art 本轮实际核 U04 AT_S0 PSD/原图 SHA、18 层、裁切和既有 Gate2。Producer 于 2026-10-12 12:45:38 +08:00 核两文件 SHA 并登记 Task `IN_PROGRESS`；Owner 精确开工时间未知。无新图片、导出、回放或实际运行。
+- `GATE1_PENDING`：Art 文档方案与固定交付尚在制作，Tech 仅只读核可行性，待 Art 同版正式方案后独立 Review；Master 验收、Producer 准确版本审批记录均未发生。通用规范已批不等于本批 Gate1 获批；不得正式生产资源。
+- `DRAFT_ANCHOR_CORRECTION`：Art v0.1 五份 Draft 已形成并纠正角色/视觉锚点：AT 为阿棠、AC 为阿炭，AT_S0 冻结图为棕发、浅色花饰；早先灰发/橙发梢与源图不符。先前 Tech `APPROVED` 在此修订前形成，不能作为当前准确版送审依据。Art 锁稿后待 Tech 重核文件与哈希、Master 复核；Gate1 尚未送审，Task 仍 `IN_PROGRESS`。
+- `REVIEW_APPROVED_AND_GATE1_USER_REVIEW`：修订后的 Art 四核心经 Tech 独立实图/方法重评与 Master 独立来源复核均 `APPROVED`，同锁方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。Producer 2026-10-12 13:01:17 +08:00 核 Task 9/9 Required、索引 9/9、五项同序 PASS，建 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json`，Task/Approval 进入准确 v0.1 `USER_REVIEW`。用户对 Gate1 尚未决定，未制作新图片/母版/动画或运行。
+<!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->

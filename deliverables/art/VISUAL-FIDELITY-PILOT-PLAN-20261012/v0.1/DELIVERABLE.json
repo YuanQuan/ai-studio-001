@@ -1,0 +1,55 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "owner": "art",
+  "summary": "完成当前人形方向 阿棠 AT_S0 已批准资源的独立工艺 pilot Gate1 文字方案；新嘴形/动作待批，不作正式 Client 接入。",
+  "artifacts": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/MASTER_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/DELIVERABLE.json",
+    "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "冻结一个当前可访问且已批准资源的准确版本、权利来源及hash；区分原概念、当前批准表情、完整母版和实际裁切视窗，不以历史审计代替新还原通过。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md；VISUAL_ANCHORS.md；ASSET_MANIFEST.json；现有批准记录及重算源文件哈希"
+    },
+    {
+      "criterion": "同一批次计划覆盖真实多层重组、一个局部细节、一个最短序列片段及适用骨骼路线；明确可编辑源、各路线实际工具/限制及输出，不伪装整图平移为骨骼验证。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md 四路线表；骨骼仅限定刚性附件与可编辑时间线"
+    },
+    {
+      "criterion": "同尺寸、背景、色彩、alpha和采样的比较配置及分区判据明确；静态、修改、动态与实际引擎各自证据/停止条件完整。",
+      "result": "PASS",
+      "evidence": "VISUAL_ANCHORS.md；PRODUCTION_PLAN.md"
+    },
+    {
+      "criterion": "零生图复用优先，候选/调用/修正/制作时间数字上限明确；仅代表样片通过后扩批，不重导无变化资源。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md：1/4 候选、0 调用、2 轮、4/12 小时、0 元新增费用"
+    },
+    {
+      "criterion": "Art制作方案与固定交付、Tech独立Review、Master复核及Producer准确版本Gate1送审完成；本轮只做方案，不制作母版/图片/动画、正式接入或声称运行/QA已通过。",
+      "result": "PASS",
+      "evidence": "四核心方案及交付索引实存；TECH_REVIEW.json、MASTER_REVIEW.json均APPROVED且锁同版SHA；Producer准确v0.1 Gate1审批为USER_REVIEW。本轮仅文档，无新母版/图片/动画、接入、运行或QA通过结论。"
+    }
+  ],
+  "assumptions": [
+    "当前人形方向依据 project/DECISIONS.md 的 DEC-U04-HUMAN-REVISION-20261010，旧资源包 Gate2 已批准；本批新嘴形、短动作与 pilot 范围仍须 Gate1 批准。",
+    "短说话片段为待用户批准的动作提案，并非旧版已批准动画。",
+    "目标引擎版本按 project/ARCHITECTURE.md 的 Cocos Creator 3.8.8；骨骼候选由 Tech 核可执行性。"
+  ],
+  "risks": [
+    "本例仅为独立 pilot，不交 Client 正式接入，也不回写旧 U04 任务/审批；四路线不证明其他角色或身体网格骨骼通过。",
+    "上游生成式来源的具体分发平台条款尚待正式使用前确认。",
+    "现有 PSD 合成无 alpha；历史只读审计只证裁切内 RGB，不能当本轮 alpha、原概念或运行 PASS。",
+    "现有五官层可做刚性附件，身体/头发变形网格无现成独立源。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

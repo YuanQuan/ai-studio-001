@@ -1,0 +1,53 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "version": "v0.1",
+  "status": "GATE1_PLAN_ONLY",
+  "scope": "AT_S0_ISOLATED_PROCESS_PILOT; current human direction per project/DECISIONS.md DEC-U04-HUMAN-REVISION-20261010; existing bundle Gate2 approved; new mouth/action require this Gate1",
+  "asset_id": "U04_AT_S0_DIALOGUE_FIDELITY_PILOT",
+  "source": {
+    "approved_original": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+    "approved_original_sha256": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+    "current_psd": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+    "current_psd_sha256": "e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc",
+    "layer_manifest": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_layer_manifest.json",
+    "layer_manifest_sha256": "fa52d12ec076560714662dd841c6ee91efdad38e3ac3841a1812ce56419557f9",
+    "export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "gate2_approval": "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json"
+  },
+  "planned_outputs": [
+    {
+      "id": "AT_S0_PILOT_PSD",
+      "kind": "PSD working master",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.1/source/at_s0_pilot.psd",
+      "status": "PLANNED"
+    },
+    {
+      "id": "AT_S0_PILOT_LAYERS",
+      "kind": "real layer exports and recomposition",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.1/exports/",
+      "status": "PLANNED"
+    },
+    {
+      "id": "AT_S0_PILOT_MOUTH",
+      "kind": "local mouth layer and mask",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.1/source/mouth/",
+      "status": "PLANNED"
+    },
+    {
+      "id": "AT_S0_PILOT_SEQUENCE",
+      "kind": "four frame source, PNG and playback",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.1/sequence/",
+      "status": "PLANNED"
+    },
+    {
+      "id": "AT_S0_PILOT_RIG",
+      "kind": "editable rigid rig, attachments, timeline and runtime data",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.1/rig/",
+      "status": "PLANNED"
+    }
+  ],
+  "client_path": null,
+  "client_uuid": null,
+  "note": "计划输出只在独立 pilot 目录；即使本批 Gate2 获批也不交正式游戏 Client、不回写旧 U04 任务/审批。用户须于本批 Gate1 批准新嘴形、短动作及 pilot 范围。本文件不表示新资源已存在或通过验证。",
+  "asset_name": "阿棠 0 魂对话立绘工艺 pilot（AT_S0）"
+}

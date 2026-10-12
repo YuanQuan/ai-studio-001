@@ -1,0 +1,53 @@
+{
+  "id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "title": "效果还原与算力控制的最小实物验证制作方案",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "将已启用规范用于一个获批、可访问的代表性资源，形成可执行的Gate1制作方案供用户审核；本轮不输出新图片或接入客户端，不改变产品语义。",
+  "inputs": [
+    "用户原goal：已批准效果后的分层、细节修改、序列帧或骨骼动画应还原效果并控制算力",
+    "用户2026-10-12明确“批准与授权”通用规范v0.1及模板同步",
+    "rules/visual_fidelity_compute_contract.md",
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json",
+    "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_layer_manifest.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json",
+    "project/DECISIONS.md"
+  ],
+  "deliverables": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/MASTER_REVIEW.json",
+    "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "冻结一个当前可访问且已批准资源的准确版本、权利来源及hash；区分原概念、当前批准表情、完整母版和实际裁切视窗，不以历史审计代替新还原通过。",
+    "同一批次计划覆盖真实多层重组、一个局部细节、一个最短序列片段及适用骨骼路线；明确可编辑源、各路线实际工具/限制及输出，不伪装整图平移为骨骼验证。",
+    "同尺寸、背景、色彩、alpha和采样的比较配置及分区判据明确；静态、修改、动态与实际引擎各自证据/停止条件完整。",
+    "零生图复用优先，候选/调用/修正/制作时间数字上限明确；仅代表样片通过后扩批，不重导无变化资源。",
+    "Art制作方案与固定交付、Tech独立Review、Master复核及Producer准确版本Gate1送审完成；本轮只做方案，不制作母版/图片/动画、正式接入或声称运行/QA已通过。"
+  ],
+  "dependencies": [
+    "VISUAL-FIDELITY-COMPUTE-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master正式分派Art仅制作文字方案及固定文档；Tech仅写独立Review；Producer维护此Task/Approval及专属五处流程块；此示例不安排QA Agent，未来正式功能另依QA门禁。",
+    "推荐AT_S0作最小样本，Art先核来源/版本/编辑可行性；若不适合如实提出最小替代，不扩为六人或整批重做。",
+    "不购买许可、不引入大型依赖、不改变项目技术栈；骨骼路线必须技术可执行且准确描述验证范围，不能以未实装工具或单图平移替代骨骼源、独立附件、时间线和动态检查。",
+    "Production Plan v0.1待用户Gate1批准，包含允许的局部细节和短动作范围；用户对通用规范的批准不批准本批具体源或动作。",
+    "Art本轮已实际核当前已批准 AT_S0 PSD SHA-256 e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc 与 approved_original_at_s0.png SHA-256 84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811，并检查18层、裁切范围和历史Gate2。Owner精确开工时刻未知；Producer于2026-10-12T12:45:38+08:00核源文件身份并登记IN_PROGRESS。当前仅只读方案工作，无新图片、导出、回放或引擎运行，Gate1尚未送审。",
+    "Art v0.1 Draft 已校正 AT=阿棠、AC=阿炭及 AT_S0 棕发花饰锚点；旧灰发/橙发梢表述与冻结图不符。修订前 Tech APPROVED 不作为当前送审结论。",
+    "Art四核心文件已由Tech重评及Master独立实图复核APPROVED且锁同一组SHA；Producer于2026-10-12T13:01:17+08:00核9/9 Required与五项同序PASS、建立准确v0.1 Gate1 USER_REVIEW。新图片/母版/动画、接入或运行均未做，用户对本批方案尚未批准；本Task不记DONE。"
+  ]
+}

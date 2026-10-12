@@ -1,7 +1,7 @@
 {
   "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
   "owner": "master",
-  "summary": "通用效果继承与算力控制v0.1候选规范及制作方案模板已形成，Art/Tech独立文档Review通过；候选同版双同步并保留既有门禁，提交用户确认，未生产图片/动画。",
+  "summary": "用户已批准v0.1通用规范；两仓库及标准模板启用完成，保留批准原件与旧Review；具体美术制作和运行证据仍需逐批验证。",
   "artifacts": [
     "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md",
     "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ART_REVIEW.json",
@@ -20,7 +20,13 @@
     "project/changes/VISUAL-FIDELITY-COMPUTE-20261012-TEMPLATE-SYNC.patch",
     "project/changes/VISUAL-FIDELITY-COMPUTE-20261012-TEMPLATE-SYNC-PLAN.md",
     "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json",
-    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.md"
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION_VALIDATION.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/approved_sources/visual_fidelity_compute_contract.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/approved_sources/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION_ACCEPTANCE.json"
   ],
   "acceptance_results": [
     {
@@ -46,7 +52,7 @@
     {
       "criterion": "Art/Tech独立Review、Schema/同步/引用验证完成；当前游戏与Studio主层及标准模板同版，Producer记录真实状态、continuity与复盘。",
       "result": "PASS",
-      "evidence": "VALIDATION.json；本Task Producer状态/同步/复盘记录"
+      "evidence": "Art/Tech独立Review与原批准SHA留档；USER_APPROVED记录、ACTIVATION_VALIDATION.json 12项PASS；Studio提交 73d9fc6816973f01baa4d021649cadc85f7bdbbc 已推送，当前游戏同版规则/索引及Producer状态记录。"
     }
   ],
   "assumptions": [

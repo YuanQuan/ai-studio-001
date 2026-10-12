@@ -1,0 +1,31 @@
+{
+  "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "version": "v0.1",
+  "recorded_at": "2026-10-12T12:38:43+08:00",
+  "user_decision": "批准与授权",
+  "approval_ref": "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json",
+  "approved_sources": {
+    "visual_fidelity_compute_contract.md": "ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d",
+    "VISUAL_FIDELITY_PACKET_TEMPLATE.md": "7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c"
+  },
+  "active_sha256": {
+    "rules/visual_fidelity_compute_contract.md": "f7aa805836527b6abd45689aac72b9ed51faafb084ebd2989856be684c5d0b0f",
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md": "40fb7a5ad9fa7b02b68de778f46d617da904880854578284c1f455edd7299487"
+  },
+  "activation_delta": "仅批准/启用状态、方法索引与模板默认项；已审生产要求未变",
+  "studio_sync": {
+    "before": "e4cc747f30ec08ec0187eaf419a2d01c9af23d3c",
+    "fast_forward_target": "9ee34fa80c9c96a1999849175242ef077b78741d",
+    "published_commit": "73d9fc6816973f01baa4d021649cadc85f7bdbbc",
+    "remote_verified": true,
+    "mode": "approved_scoped_overlay",
+    "existing_remote_rules_preserved": true,
+    "prepared_patch_correction": "发布前发现ART_GUIDE重放遗漏远端新增重绘条款，已恢复原条款；最终diff无删除"
+  },
+  "scope": "组织规则及当前游戏对应快照，其他既有游戏保持pinned；具体图、动作与资源仍按Gate1/Gate2",
+  "tools_implemented": false,
+  "image_generation_calls": 0,
+  "images_modified": 0,
+  "runtime_validation": "NOT_TESTED",
+  "validation_ref": "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ACTIVATION_VALIDATION.json"
+}

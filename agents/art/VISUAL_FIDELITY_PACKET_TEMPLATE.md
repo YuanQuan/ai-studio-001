@@ -1,6 +1,6 @@
 # 效果继承与制作预算（制作方案内的复用模板）
 
-模板 v0.1，候选状态，启用条件见 `rules/visual_fidelity_compute_contract.md`。只填实际需要的项，不重复现有基线、资源登记或调用日志；未知写“未知”，未做写 `NOT_TESTED`，不适用说明原因。
+模板 v0.1，已随获批规则启用，适用范围见 `rules/visual_fidelity_compute_contract.md`。只填实际需要的项，不重复现有基线、资源登记或调用日志；未知写“未知”，未做写 `NOT_TESTED`，不适用说明原因。
 
 ## 基准与范围
 
