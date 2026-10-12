@@ -757,14 +757,15 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 <!-- MG01-RECIPE-ORDER-20261012 END -->
 
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 START -->
-## 效果还原最小批次 Gate1 方案（2026-10-12）
+## 奶茶店左檐红灯笼亮度闪烁 Gate1 方案 v0.2（USER_REVIEW）
 
-- `VISUAL-FIDELITY-PILOT-PLAN-20261012`：Art，当前 `USER_REVIEW`，非 `DONE`；准确 v0.1 Gate1 审批 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`。Master 正式 Task `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/TASK.json` 已分派；Art 曾核可访问的 U04 AT_S0 PSD（SHA-256 `e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc`）、原图 PNG（SHA-256 `84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811`）、18 层、裁切范围及历史 Gate2。Producer 于 2026-10-12 12:45:38 +08:00 核源身份登记开工；Owner 精确开工时刻未知。
-- 本线只做制作前文档方案，不输出新图、PSD、切片、动画、回放或运行证据。Art v0.1 9/9 Required 与交付索引 9/9 实存，五项验收与 Task 原文同序 PASS；Tech 对修订四核心独立 Review `APPROVED`、Master 独立实图/来源复核 `APPROVED`，四核心 SHA 已锁于准确审批。通用规范批准不批准此批样本、局部变化或动作；本批 Gate1 仍待用户决定。示例 QA 不参与，正式功能接入仍按适用 QA 门禁。
-- 下一步：Master 呈用户准确 `PRODUCTION_PLAN.md` v0.1 及四核心锁定 SHA，请用户对本批 Gate1 批准或退回；批准前下游资源制作关闭。Continuity check：Art 文档、Tech 重审、Master 复核均有真实产出，本 Task 已到 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`。
-- Draft 阶段角色锚点校正（历史）：Art 修订 v0.1 五份方案/交付，当前对象为 **阿棠 AT_S0**；阿炭为 AC，冻结图是棕发与浅色花饰。早先灰发/橙发梢表述与源图不符，旧 Tech Review 的 `APPROVED` 未用于送审。此阶段 Task 曾保持 `IN_PROGRESS`、Gate1 未送；后续正式重评与当前状态见下条。
+- `VISUAL-FIDELITY-PILOT-PLAN-20261012`：Art，当前 v0.2 `USER_REVIEW`、审批 `USER_REVIEW`/`decided_at=null`，非 `DONE`。用户将待审样本改为当前获批奶茶店01左檐红灯笼的局部亮度闪烁；Task `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/TASK.json` 已修订。原 v0.1 阿棠方案 Task/Approval 的 `USER_REVIEW` 原件保存在 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/history/v0.1-user-review/`；独立旧审批 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `SUPERSEDED`，是待审对象被替换，不是获批或成品退回。
+- v0.2 实际开工：Art 已核当前获批 U03 奶茶01组合沿用 v0.1 的 PSD `shop_01_full_redraw_v01.psd`（SHA `c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57`）及 Client body（SHA `1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06`），确认左檐红灯笼、排除室内黄灯与右杯牌；PSD 仅四个区域层，无独立 light 层。Producer 于 2026-10-12 14:16:47 +08:00 核源身份并登记 `IN_PROGRESS`，Owner 精确开始时刻未知。本轮只写 Art/VFX 方案，不制作图片、动画、Shader 或运行。示例无 QA。
+- 当前收口（2026-10-12 14:43:42 +08:00 核）：v0.2 Required 12/12 与 Art 索引实存，五项文档验收 PASS，Art/Tech/Master 同版评审 APPROVED；Task/Approval 已准确送 Gate1 `USER_REVIEW`，未获用户批准。源清单 LF/CRLF 差异已只读精确解证，不构成阻塞。候选限独立 pilot 单实例局部 Effect，新增 Draw Call≤1 为首样硬上限，CPU/GPU 各≤0.1ms 仅参考目标；实际视觉/运行/性能未测。Continuity：本周期停在真实 USER_REVIEW，无空转 READY/IN_PROGRESS；无新图、动画、代码，v0.2 Git 发布待真实回执。
+- v0.1 历史——Draft 阶段角色锚点校正：Art 曾修订阿棠 AT_S0 方案，阿炭为 AC，冻结图是棕发与浅色花饰。早先灰发/橙发梢表述与源图不符，旧 Tech Review 的 `APPROVED` 未用于该版送审。此段及后两条 v0.1 节点仅供追溯，现行版本已换为奶茶灯笼 v0.2。
 - 准确送审节点（2026-10-12 13:01:17 +08:00 核）：Art 已纠正阿棠 AT_S0 棕发花饰锚点，Tech 重评和 Master 复核均 `APPROVED`。四核心 SHA：方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。本 Task/Approval `USER_REVIEW`，不是 `USER_APPROVED`；无新图片、修改、生成、动画、运行或资源 QA 结论。
 - 发布与 continuity 回执（Producer 2026-10-12 13:08:13 +08:00 核）：本批与已启用规范的正式 Game 交付点为 `984770639c8df095b5b212d122f1279dd778d7e7`，普通 push 成功且实时远端 main 同 SHA；最终送审文档验证 13 项 PASS。规范 Task `DONE`，本 Pilot Task/Approval 真实停在 `USER_REVIEW`，下游资源制作待用户决定，无空转 `READY/IN_PROGRESS`。本周期文档工作结束，无图片制作。
+- 最终绑定复核：ASSET_MANIFEST 中源原图 SHA 文档漏写已在送审前纠正为实物与获批清单一致的 64 位值，原图未修改；最终清单 SHA `8b1ea61b163e8cc60efcdd487af8ae7c7d8733f0f0f49286c919f429805e64f5`，Art/Tech/Master 均复核并保持文档评审 `APPROVED`。审批绑定已更新；Task/Approval 仍 `USER_REVIEW`/`decided_at=null`，等待用户 Gate1 决定。五核心其余四份不变。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

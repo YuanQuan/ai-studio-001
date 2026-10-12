@@ -827,6 +827,18 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 送审结果与证据：修订后四核心已由 Tech/Master 独立 `APPROVED` 并锁同版 SHA，Task 9/9 Required、交付索引 9/9 实存，五项验收同序 PASS；Producer 于 2026-10-12 13:01:17 +08:00 建准确 v0.1 Gate1 `USER_REVIEW` 审批。原角色/锚点误识别在送审前已修正；各阶段净返工时长、Owner 开始时刻和本轮总体耗时未知，没有可比基线，不判快慢。本轮新图、改图、生成、动画和运行均为 0。
 - 建议与 continuity：Art 下次在方案初稿前先用文件哈希与实图同屏核角色 ID、当前适用方向和视觉锚点，代价一次核图，复核点为下一批首份 `ART_BRIEF`；Tech 对任何修订后的核心文件重新锁 SHA，复核点为下一次正式 Review。当前已真实到 `USER_REVIEW`，等待用户对本批 Gate1 明确决定；无本线空转 `READY/IN_PROGRESS`，资源制作仍锁定，示例不参加 QA。
 - 发布核对（Asia/Shanghai）：Producer 于 2026-10-12 13:08:13 +08:00 记录 Master 报告的 Game 正式提交 `984770639c8df095b5b212d122f1279dd778d7e7`、普通推送与远端 main 同 SHA；最终 `VALIDATION.json` 13 项文档检查 PASS。提交/推送的精确完成时刻、各阶段净制作和等待耗时未知，不由本记录核验时刻推算。Continuity 终点仍为规范 Task `DONE`、本 Pilot `USER_REVIEW` 待用户 Gate1 决定；未制作资源或进行运行检查。
+
+### WR-20261012-VISUAL-FIDELITY-PILOT-V02-START-002｜换题与真实源核验
+
+- 结果与证据：用户改为奶茶店左檐红灯笼光照闪烁。v0.1 Task/Approval 的 HEAD 原件已保留，旧审批 `SUPERSEDED` 只表示待审对象被替换；现行 v0.2 审批 `DRAFT`。Art 实查 U03 获批组合奶茶01沿用 PSD 与 Client body 的身份、目视左檐红灯笼，四区域层无独立光层；室内小灯、右杯牌不纳入。本轮仅方案，图像生成/改图、动画、Shader、运行均为 0。
+- 时间与原因（Asia/Shanghai）：Producer 于 2026-10-12 14:16:47 +08:00 核源 SHA 并登记 `IN_PROGRESS`；用户消息精确时刻、Art 实际开工秒数、整体起点和净耗时未知，不据此判断快慢。v0.1 替换由用户新范围触发，不作 Art 返工归责，也不是已制作成品失败。
+- 建议与 continuity：Art 在 v0.2 正式方案中先锁真实左檐灯笼像素/区域层与不可独立光层的处理边界，VFX 明确亮度周期和结束行为；代价为一次源对照和轻量时序规格，复核点为两份正式交付。Art 已有真实核源，`IN_PROGRESS` 非占位；Gate1 尚未发生，资源制作仍关闭。示例无 QA。
+### WR-20261012-VISUAL-FIDELITY-PILOT-V02-GATE1-003｜修订方案送审
+
+- 结果与证据：Art、Tech、Master 对五核心同版评审 `APPROVED`；Producer 核 12/12 Required、五项同序文档验收 PASS，当前 v0.2 Task/Approval 到 `USER_REVIEW`/`decided_at=null`。源清单当前 LF 与获批记录 CRLF 差异只读换行转换可精确还原，未改源、非阻塞。本轮无生图、改图、动画、代码或运行，性能及效果实际验证 `NOT_TESTED`。
+- 时间与影响（Asia/Shanghai）：Producer 2026-10-12 14:43:42 +08:00 核送审；v0.2 用户消息起点、各角色制作与等待净耗时未知，不从核验时间推算。定向修订将尚未实装的局部 Effect、UV/atlas/trim 与预算表达清楚；无可靠证据量化返工成本。
+- 建议与 continuity：Art/Tech 在下一首样前同批核单实例材质、原像素/alpha、UV 与实际性能，复核点为 Gate1 用户批准后的预签；不满足硬上限即停。本周期停在真实 `USER_REVIEW`，没有空转 `READY/IN_PROGRESS`；用户未批准具体方案前不制作资源。Git 发布状态待 Master 真实回执。
+- 送审前最终校验补记：发现源原图 SHA 在资产清单中漏写两字符，Art/Tech/Master 对实物、获批清单与修正后的文档重新复核，同版维持 `APPROVED`；清单新 SHA 已写入审批。此为记录笔误纠正，源图、视觉方案和实际资源未改。Producer 2026-10-12 14:51:02 +08:00 核最终五核心、12/12 路径、五项同序验收与三份评审；本周期整体起点及复核净耗时未知。建议 Art 在下批资产表送评前自动检查 SHA 长度并比对实物，复核点为下批首份 ASSET_MANIFEST。当前 continuity 仍停 Gate1 `USER_REVIEW`，未获用户批准，资源制作门禁关闭。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

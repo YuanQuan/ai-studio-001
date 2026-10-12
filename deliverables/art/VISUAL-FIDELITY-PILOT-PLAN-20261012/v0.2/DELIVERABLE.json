@@ -1,0 +1,56 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "owner": "art",
+  "summary": "当前获批奶茶店01左檐下红灯笼光照闪烁的v0.2 Gate1文字方案；未生产新资源。",
+  "artifacts": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_SPEC.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ART_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/TECH_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/TECH_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/MASTER_REVIEW.json",
+    "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "冻结当前获批奶茶店01准确源、PSD、body/sign及Client路径的版本和SHA，识别檐下左侧红灯笼与真实图层编辑限制；不得错用花灯店05或旧奶茶图。",
+      "result": "PASS",
+      "evidence": "同版 ART_BRIEF、ASSET_MANIFEST；批准 v0.2 CUT_MANIFEST 与当前 Client 双纹理哈希"
+    },
+    {
+      "criterion": "只验证该灯笼灯面及必要局部暖光的亮度闪烁，明确允许遮罩、视觉锚点、基准强度、连续曲线/周期、触发结束打断与叠加；不扩大为人物、全店呼吸、灯笼位移或四路线能力通过。",
+      "result": "PASS",
+      "evidence": "同版 VISUAL_ANCHORS 与 VFX_SPEC 已列局部范围、0.90–1.00约2秒连续曲线及触发/打断/复位候选；实际动态回放仍 NOT_TESTED"
+    },
+    {
+      "criterion": "说明保留原像素及alpha的可执行候选、无独立光效层的处理边界、比较环境和零差区域、循环/极值完整回放与未来实际引擎检查；未知工具和运行指标如实NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "同版 PRODUCTION_PLAN、VISUAL_ANCHORS；实际运行 NOT_TESTED"
+    },
+    {
+      "criterion": "复用静态源加参数动画优先，明确生成/候选/修正/时间/费用硬上限及运行预算候选；不逐帧整图生成，不重导未变资源，超限或需补绘先停。",
+      "result": "PASS",
+      "evidence": "同版 PRODUCTION_PLAN 硬上限"
+    },
+    {
+      "criterion": "Art固定制作文档、VFX轻量规格、Art视觉Review、Tech独立Review、Master复核及Producer准确v0.2 Gate1送审完成；保留v0.1历史，本轮无新图片/PSD/动画/实现或QA通过结论。",
+      "result": "PASS",
+      "evidence": "同版四核心、VFX_SPEC/VFX_DELIVERABLE、Art/Tech APPROVED Review、Master APPROVED Review 均实存；Producer 将准确 v0.2 方案送 USER_REVIEW，decided_at=null。此项仅为文档送审完成，不代表具体动画或运行通过"
+    }
+  ],
+  "assumptions": [
+    "同版 VFX_SPEC 已给出时序候选并经 Art 视觉 Review；当前没有获批新动画。",
+    "局部参数实现仅为候选，Tech首样前确认Creator 3.8.8兼容性。"
+  ],
+  "risks": [
+    "PSD仅四个区域层且暖光烘焙，无独立light层；局部亮度若无法复原强度1.0则停止。",
+    "旧Windows manifest路径须映射本仓同名文件；不可直接当本机执行路径。",
+    "引擎真实画面、采样和性能尚未验证；现有工程无局部亮度Effect，需首样前核真实API、UV/atlas/trim、独立材质与≤1新增Draw Call硬限。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

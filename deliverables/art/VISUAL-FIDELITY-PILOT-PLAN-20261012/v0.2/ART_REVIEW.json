@@ -1,0 +1,13 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"同版 VFX_SPEC 仅作用奶茶店01左檐下红灯笼灯面和必要既有暖光，明确排除室内小灯、右侧杯招牌及整店透明度变化；与 Art 当前实图锚点一致。"},
+    {"severity":"INFO","message":"0.90–1.00、约2秒连续曲线从并回到原图强度1.0；单实例、打断/隐藏复位及静态降级保护已批准基准。灯罩轮廓、原暖色关系、alpha 和掩码外零差仍需代表样片及实际回放验证，本次仅文档视觉 Review。"},
+    {"severity":"INFO","message":"v0.2 CUT_MANIFEST 当前 LF 物理SHA与Gate2所记CRLF原字节SHA不同；只读LF→CRLF计算精确还原批准哈希，shop_01原图、PSD、body、sign和Client两图各自SHA均匹配。此为换行表示差异，未改动源文件。"},
+    {"severity":"INFO","message":"更新后的 VFX_SPEC 将新小型 Effect/独立材质限于本店体试验实例，保留强度1.0原图、alpha不动与mask外零差；Draw Call≤1为首样硬限、0为目标，CPU/GPU参考目标未测不判通过。视觉范围未扩至室内灯、杯招牌或全店。现有工程没有该Effect，首样前须核UV/图集/trim及实例隔离。"},
+    {"severity":"INFO","message":"ASSET_MANIFEST 原图 SHA 漏字已修正，当前清单 SHA-256 为 8b1ea61b163e8cc60efcdd487af8ae7c7d8733f0f0f49286c919f429805e64f5。只读复核原图、PSD、body、sign 的实际路径与 SHA 均同获批 CUT_MANIFEST shop_01 一致，Client body/sign 也与对应切片一致；源文件未变，此记录修正不改变 Art 文档视觉评审范围。"}
+  ],
+  "next_action": "Tech 独立核局部参数执行、运行预算和Creator兼容；Master整合准确v0.2 Gate1文字方案交用户审核。Gate1前不制作新资源，文档Review不代表动态视觉或运行通过。"
+}

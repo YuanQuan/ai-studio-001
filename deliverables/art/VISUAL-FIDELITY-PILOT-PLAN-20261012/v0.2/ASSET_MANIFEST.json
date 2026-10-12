@@ -1,0 +1,28 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "version": "v0.2",
+  "status": "GATE1_PLAN_ONLY",
+  "scope": "MT_SHOP_01 left eave red lantern lighting only; not interior lamp or right cup sign",
+  "approval": "tasks/U03-SHOP-FULL-REDRAW-20261009/ARTIFACT_APPROVAL_GATE2.json",
+  "frozen_manifest": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/CUT_MANIFEST.json",
+  "current_manifest_sha256": "0a9eff648a875bade3b7046650691f7aa4f118713561a03df15021867cd02375",
+  "approval_record_manifest_sha256": "f7b62b6a77b16fa5b10934ed112be39a07df7a4afe6d99b952c735d97931d5ed",
+  "manifest_identity_status": "LF_PHYSICAL_FILE_CRLF_APPROVED_BYTES_EQUIVALENCE_READONLY_VERIFIED",
+  "manifest_line_ending_evidence": "current 21013 bytes / 784 LF / 0 CRLF; in-memory LF->CRLF 21797 bytes hashes exactly to approval_record_manifest_sha256; no source file rewritten",
+  "inheritance": "shop_01 BYTE_IDENTICAL_V01_INHERITANCE",
+  "pilot_effect_status": "PLANNED_ONLY_NOT_IMPLEMENTED",
+  "pilot_material_scope": "independent milk tea shop 01 body Sprite instance only; no shared material and no formal PNG/meta edit",
+  "sprite_frame_current": "1024x1024; trimType none; atlasUuid empty; packable true; pilot must freeze actual UV/atlas/trim/ROI mapping",
+  "assets": [
+    {"id":"MT_SHOP_01_SOURCE", "path":"deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_01/imagegen_whole_r1.png", "sha256":"fe31c8353f7c1160eeef0cbc2aa33d6d5d447fda4b8fd5607d1e0427f9d18a93", "status":"EXISTING_APPROVED_SOURCE"},
+    {"id":"MT_SHOP_01_PSD", "path":"deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_01_full_redraw_v01.psd", "sha256":"c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57", "status":"EXISTING_FOUR_REGION_LAYERS_NO_LIGHT_LAYER"},
+    {"id":"U03_SHOP_01_BODY", "path":"deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_01_body_full_redraw_v01.png", "sha256":"1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06", "client_path":"apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png", "client_sha256":"1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06", "status":"EXISTING_APPROVED_1024_RGBA"},
+    {"id":"U03_SHOP_01_SIGN", "path":"deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_01_sign_full_redraw_v01.png", "sha256":"316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5", "client_path":"apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png", "client_sha256":"316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5", "status":"EXISTING_APPROVED_EXCLUDED_FROM_EFFECT"}
+  ],
+  "layer_manifest": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_01/psd_work/manifest.json",
+  "layer_path_note": "其四个 Windows D:\\work\\ai-studio-template\\ai-studio-001\\...\\layers\\*.png 指向历史机器；同名文件存在于本仓 deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_01/psd_work/layers/，不能按旧盘符直接运行。",
+  "planned_outputs": [{"id":"MT_SHOP_01_LANTERN_MASK_AND_CURVE", "path":"deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/", "status":"PLANNED_ONLY"}],
+  "new_client_path": null,
+  "new_client_uuid": null,
+  "note": "本方案没有新图片、PSD、动画或代码输出；计划路径非已存在资源。"
+}

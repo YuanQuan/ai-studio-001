@@ -1,40 +1,44 @@
 {
   "id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
-  "title": "效果还原与算力控制的最小实物验证制作方案",
+  "title": "奶茶店左侧灯笼光照闪烁最小验证制作方案",
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "将已启用规范用于一个获批、可访问的代表性资源，形成可执行的Gate1制作方案供用户审核；本轮不输出新图片或接入客户端，不改变产品语义。",
+  "objective": "按用户最新指令将最小验证改为当前获批奶茶店檐下左侧红灯笼的局部光照闪烁，提交v0.2制作方案；本轮仅修订文档，不制作图片、动画、Shader或正式接入。",
   "inputs": [
-    "用户原goal：已批准效果后的分层、细节修改、序列帧或骨骼动画应还原效果并控制算力",
-    "用户2026-10-12明确“批准与授权”通用规范v0.1及模板同步",
+    "用户最新指令：最小验证方案换成奶茶店灯笼部分的光照闪烁动画",
+    "用户原goal：获批效果的后期输出可验证地还原并控制算力",
     "rules/visual_fidelity_compute_contract.md",
     "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
     "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json",
-    "tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json",
-    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
-    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
-    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_layer_manifest.json",
-    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json",
+    "tasks/U03-SHOP-FULL-REDRAW-20261009/ARTIFACT_APPROVAL_GATE2.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_01_full_redraw_v01.psd",
+    "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/source/shop_01/psd_work/manifest.json",
+    "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+    "project/ASSET_HANDOFF_REGISTRY.md",
     "project/DECISIONS.md"
   ],
   "deliverables": [
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/PRODUCTION_PLAN.md",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ART_BRIEF.md",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/VISUAL_ANCHORS.md",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/ASSET_MANIFEST.json",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/DELIVERABLE.json",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.json",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/TECH_REVIEW.md",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/MASTER_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_SPEC.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ART_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/TECH_REVIEW.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/TECH_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/MASTER_REVIEW.json",
     "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json"
   ],
   "acceptance": [
-    "冻结一个当前可访问且已批准资源的准确版本、权利来源及hash；区分原概念、当前批准表情、完整母版和实际裁切视窗，不以历史审计代替新还原通过。",
-    "同一批次计划覆盖真实多层重组、一个局部细节、一个最短序列片段及适用骨骼路线；明确可编辑源、各路线实际工具/限制及输出，不伪装整图平移为骨骼验证。",
-    "同尺寸、背景、色彩、alpha和采样的比较配置及分区判据明确；静态、修改、动态与实际引擎各自证据/停止条件完整。",
-    "零生图复用优先，候选/调用/修正/制作时间数字上限明确；仅代表样片通过后扩批，不重导无变化资源。",
-    "Art制作方案与固定交付、Tech独立Review、Master复核及Producer准确版本Gate1送审完成；本轮只做方案，不制作母版/图片/动画、正式接入或声称运行/QA已通过。"
+    "冻结当前获批奶茶店01准确源、PSD、body/sign及Client路径的版本和SHA，识别檐下左侧红灯笼与真实图层编辑限制；不得错用花灯店05或旧奶茶图。",
+    "只验证该灯笼灯面及必要局部暖光的亮度闪烁，明确允许遮罩、视觉锚点、基准强度、连续曲线/周期、触发结束打断与叠加；不扩大为人物、全店呼吸、灯笼位移或四路线能力通过。",
+    "说明保留原像素及alpha的可执行候选、无独立光效层的处理边界、比较环境和零差区域、循环/极值完整回放与未来实际引擎检查；未知工具和运行指标如实NOT_TESTED。",
+    "复用静态源加参数动画优先，明确生成/候选/修正/时间/费用硬上限及运行预算候选；不逐帧整图生成，不重导未变资源，超限或需补绘先停。",
+    "Art固定制作文档、VFX轻量规格、Art视觉Review、Tech独立Review、Master复核及Producer准确v0.2 Gate1送审完成；保留v0.1历史，本轮无新图片/PSD/动画/实现或QA通过结论。"
   ],
   "dependencies": [
     "VISUAL-FIDELITY-COMPUTE-20261012"
@@ -42,12 +46,13 @@
   "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
-    "Master正式分派Art仅制作文字方案及固定文档；Tech仅写独立Review；Producer维护此Task/Approval及专属五处流程块；此示例不安排QA Agent，未来正式功能另依QA门禁。",
-    "推荐AT_S0作最小样本，Art先核来源/版本/编辑可行性；若不适合如实提出最小替代，不扩为六人或整批重做。",
-    "不购买许可、不引入大型依赖、不改变项目技术栈；骨骼路线必须技术可执行且准确描述验证范围，不能以未实装工具或单图平移替代骨骼源、独立附件、时间线和动态检查。",
-    "Production Plan v0.1待用户Gate1批准，包含允许的局部细节和短动作范围；用户对通用规范的批准不批准本批具体源或动作。",
-    "Art本轮已实际核当前已批准 AT_S0 PSD SHA-256 e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc 与 approved_original_at_s0.png SHA-256 84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811，并检查18层、裁切范围和历史Gate2。Owner精确开工时刻未知；Producer于2026-10-12T12:45:38+08:00核源文件身份并登记IN_PROGRESS。当前仅只读方案工作，无新图片、导出、回放或引擎运行，Gate1尚未送审。",
-    "Art v0.1 Draft 已校正 AT=阿棠、AC=阿炭及 AT_S0 棕发花饰锚点；旧灰发/橙发梢表述与冻结图不符。修订前 Tech APPROVED 不作为当前送审结论。",
-    "Art四核心文件已由Tech重评及Master独立实图复核APPROVED且锁同一组SHA；Producer于2026-10-12T13:01:17+08:00核9/9 Required与五项同序PASS、建立准确v0.1 Gate1 USER_REVIEW。新图片/母版/动画、接入或运行均未做，用户对本批方案尚未批准；本Task不记DONE。"
+    "用户明确更换待审最小样本，v0.1阿棠方案不再作现行制作输入；Producer保留原Task/Approval快照并登记SUPERSEDED，v0.2重新送具体方案；本次换题不批准尚不存在的动画成品。",
+    "Master授权同批协作：Art只写v0.2四核心/DELIVERABLE并核VFX视觉；VFX只写同目录VFX_SPEC/VFX_DELIVERABLE；Tech只写独立Review；Producer维护Task/Approval历史和五共享文档本线专属块。角色长期职责和Studio规则不变。",
+    "Master已查看当前Client body图，默认最小对象为檐下左侧红灯笼；室内小灯、右侧奶茶杯招牌、人物和其他店均不纳入。Art须对照源层及完整重组核准确边界。",
+    "当前获批源是U03-SHOP-FULL-REDRAW-20261009 v0.2 bundle，奶茶01同字节继承v0.1；旧U03-SHOP-ASSET v0.4非当前源。真实PSD只有四个整体区域层，不能假报已有独立灯光层或无烘焙光照。",
+    "优先原纹理不变的局部遮罩亮度曲线，不用整个店体透明度伪装局部光照；不新增骨骼/粒子/全屏后处理/付费工具/大型依赖。Tech首样前核可执行性，无法回到获批基准即停。",
+    "本轮仅Gate1文字方案；自产切图仍直接交用户Gate2。示例无QA Agent，Owner留验证证据；正式接入及适用QA另走既有门禁。",
+    "旧v0.1 USER_REVIEW Task与Approval已按Git HEAD保存在history/v0.1-user-review/；独立v0.1 Approval记SUPERSEDED，当前Approval指v0.2 DRAFT。Art本轮已实查获批U03奶茶01源PSD SHA c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57及Client body SHA 1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06，确认左檐红灯笼、排除室内小灯/右杯牌，四区域层无独立light；Producer 2026-10-12T14:16:47+08:00核文件身份并登记v0.2真实IN_PROGRESS，Owner具体开工时刻未知。仅写文档，无图片、动画、Shader或运行。",
+    "2026-10-12 14:43:42 +08:00 Producer 核准确 v0.2 Required 12/12 路径与交付索引、五项同序文档验收 PASS、Art/Tech/Master 同版 APPROVED，并登记 Gate1 USER_REVIEW；用户尚未批准具体方案，Approval decided_at=null。CUT_MANIFEST 当前 LF 与获批 CRLF 字节差异经只读转换精确解证，不构成源阻塞。候选仅独立 pilot 单实例小型 Effect，新增 Draw Call≤1 为硬上限、CPU/GPU 各≤0.1ms 为参考目标；图片、动画、Shader、运行及性能均未制作/测试，后续资源门禁保留。"
   ]
 }

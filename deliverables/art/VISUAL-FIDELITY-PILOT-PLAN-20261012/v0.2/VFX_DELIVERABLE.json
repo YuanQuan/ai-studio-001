@@ -1,0 +1,40 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "owner": "vfx",
+  "summary": "提交奶茶店01左檐红灯笼局部光照闪烁的v0.2 Gate1文字规格；候选从获批静态源出发，运行与视觉效果尚未验证。",
+  "artifacts": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_SPEC.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "锁定当前获批奶茶店01源与唯一左檐红灯笼对象，排除室内小灯和杯招牌。",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md的对象与冻结基准节记录CUT_MANIFEST shop_01、PSD/Client body路径及SHA和Gate2批准；已查看当前Client body图。"
+    },
+    {
+      "criterion": "给出局部亮度、连续曲线、触发、结束、打断、叠加和降级候选。",
+      "result": "PASS",
+      "evidence": "VFX_SPEC.md的视觉、时间与状态节；强度1.0为原图基准，0.90–1.00约2秒循环。"
+    },
+    {
+      "criterion": "原图/alpha与遮罩外零差及实际循环回放成立。",
+      "result": "NOT_TESTED",
+      "evidence": "本轮仅文字方案，尚无遮罩、样片、比较图或引擎回放。"
+    },
+    {
+      "criterion": "制作与运行预算已列候选上限并完成性能验证。",
+      "result": "NOT_TESTED",
+      "evidence": "VFX_SPEC.md列0生图、1候选、2修正、4小时、0新增费用；新增Draw Call≤1硬上限，CPU/GPU各≤0.1ms仅参考目标，须真实设备可核精度测量。实际耗时、工具和运行指标未知。"
+    }
+  ],
+  "assumptions": [
+    "现有已烘焙暖光足以用局部减亮表达轻微闪烁；若需补绘，停止并走变更。",
+    "当前项目没有现成局部亮度Effect参数；首样候选为本奶茶店体实例的小型Cocos局部亮度Effect及独立材质，复用现有body纹理。Tech/Client须先核Effect/API、UV、图集、色彩及alpha兼容性。"
+  ],
+  "risks": [
+    "PSD没有独立光照层，遮罩边缘和已烘焙明暗可能使局部闪烁露出接缝。",
+    "独立材质可能增加Draw Call；运行开销、实际色彩/alpha还原和具体事件映射尚无实测，不能据文字方案作性能或实际运行通过结论。",
+    "仍需Art视觉Review、Tech独立Review及用户对v0.2 Gate1的明确批准。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
