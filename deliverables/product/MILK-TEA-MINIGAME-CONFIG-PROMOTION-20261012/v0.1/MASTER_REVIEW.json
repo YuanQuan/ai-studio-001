@@ -1,0 +1,20 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "九项 Required 和四张可读表格预览实存，Product 五项验收同序 PASS，Tech 同版 TECH_REVIEW.json APPROVED。原源表与归档 SHA 不变，新无版本候选逐格仅 50 行 status 和 export_enabled 共 100 处受控变化，其他业务值 0 变化。"
+    },
+    {
+      "severity": "INFO",
+      "message": "奶茶独立中文字段说明覆盖四表 41 字段；旧奶茶说明快照与上一提交精确一致，新快照与当前 FIELD_GUIDE 奶茶段一致，其他配置段未改。"
+    },
+    {
+      "severity": "INFO",
+      "message": "候选 READY/true 不等于正式发布；资源索引 active_path 仍为空且正式资源列表为空。生成器、运行资源、服务端与客户端联调及 QA 尚未完成，本评审仅准 Product 候选送用户确认。"
+    }
+  ],
+  "next_action": "Producer 绑定本候选工作簿、中文字段说明及同版交付/预览/Review 的精确文件 SHA，登记 USER_REVIEW；待用户对该版本明确决定后，再解锁正式配置生成与后续实现。"
+}

@@ -924,3 +924,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master 待用户决定准确 Tech v0.1 后再编排正式配置/实现任务；Tech 后续核稳定无版本入口、归档和发布校验，复核点为下一阶段配置技术门禁。Producer 继续核 active_path 与审批版本一致，复核点为首次正式配置发布；不新增门禁。
 - Continuity check：从 Product 批准连续推进到 Tech `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；父 `SPEC`，正式配置、Client、联调和 QA 仍锁定。
 <!-- MINIGAMES-TECH-20261012 END -->
+
+<!-- MINIGAMES-CONFIG-20261012 START -->
+### WR-20261012-MINIGAMES-CONFIG-001｜奶茶人工源候选送审
+
+- 结果与证据：用户批准准确 Tech v0.1 后，Tech Task DONE；Product 稳定人工源候选、中文字段说明和旧新快照等九 Required、四张预览实存，五项验收同序 PASS。Tech 只读 Review 与 Master Review 均 APPROVED，仅准送审；十五文件 SHA 见 Product `ARTIFACT_APPROVAL_v0.1.json`，Task 与审批均 `USER_REVIEW`。50 行仅 100 处状态/导出开关受控变化，其他业务值不变；原获批源表及归档字节保持，正式索引入口为空，未生成运行配置。
+- 时间与耗时（Asia/Shanghai）：首件旧说明快照 mtime 为 2026-10-12 16:56:33 +08:00，本轮送审登记于 17:08:30 +08:00 后；用户批准消息精确时刻、Master 首次派工、各角色净制作和评审时长均未知。首件至登记的可观察墙钟跨度至少 11 分 57 秒，含制作、评审及登记，不归作某一角色工时或等待。
+- 影响与原因：稳定候选逐格审计与中文字段快照提供可追溯版本，Tech 只读核验使候选可送审；未见可量化工具故障或同类时限基线，不判断流程快慢。READY/export_enabled=true 只是候选行状态，不能据此跳过整包用户审批和正式发布。
+- 建议与复核：Master 呈本版十五文件审批给用户，复核点为用户对准确候选的决定；Producer 在后续正式配置任务核对源 SHA、active_path 与发布门禁，代价为一次只读核验，不增加用户审批门禁。
+- Continuity check：本轮已推进到真实 `USER_REVIEW`；父任务仍 `SPEC`，本线无仅以 `READY/IN_PROGRESS` 占位的可继续任务。生成器、正式索引、运行和 QA 仍待后续独立阶段。
+<!-- MINIGAMES-CONFIG-20261012 END -->

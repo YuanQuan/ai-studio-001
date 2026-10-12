@@ -887,3 +887,15 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Master 同版 `deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/MASTER_REVIEW.json` APPROVED，仅准技术包送审；源工作簿 SHA 与归档一致，正式配置/代码/运行仍未做。
 - `USER_REVIEW`：Producer 将 Tech Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json`，绑定七 Required、SOURCE_CHECK、MASTER_REVIEW 九文件 SHA，`decided_at=null`。Continuity check：到达真实用户门禁，父 SPEC、无空转 READY/IN_PROGRESS。
 <!-- MINIGAMES-TECH-20261012 END -->
+
+<!-- MINIGAMES-CONFIG-20261012 START -->
+## 2026-10-12｜Tech 批准与配置候选解锁
+
+- `TECH_USER_APPROVED`：用户批准准确 Tech v0.1；原九文件 SHA 全匹配，Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.11/TECH_SPEC_ACCEPTANCE.md` 接受，`tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json` `USER_APPROVED`，Tech Task `USER_REVIEW→DONE`。仅技术设计完成。
+- `CONFIG_CANDIDATE_READY`：新 Product Task `tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/TASK.json` 依赖 Product/Tech DONE，`SPEC→READY`；Master 已通知立即开工。待首 Required 实产再记 `TASK_STARTED`，不以 READY 停止。
+- `TASK_STARTED`：Product 首份 Required `project/config/archive/2026-10-12-milk-tea-config-promotion/FIELD_GUIDE_MG01_previous.md` mtime 2026-10-12 16:56:33 +08:00、文件非空，Owner Task `READY→IN_PROGRESS`。旧/新字段说明与候选源表继续制作，不提前登记 REVIEW。
+- `CONFIG_CANDIDATE_DRAFT`：稳定路径 `project/config/source/MILK_TEA_MINIGAME.xlsx` 实存；Master 只读核四表业务值与获批历史源一致，差异仅逐行 status DRAFT→READY、export_enabled false→true。用户/技术审查未完成，索引 active_path=null、formal_resources空，不作运行配置。
+- `DRAFT_SUBMITTED`：Product v0.1 九 Required 与四张预览共十三 Artifact 实存，`DELIVERABLE.json` 五项 Task 验收同序 PASS、状态 `READY_FOR_REVIEW`，Owner `IN_PROGRESS→REVIEW`；Tech 同版只读 Review 与 Master Review 尚待，不提前登记 USER_REVIEW。
+- `PROFESSIONAL_REVIEW_APPROVED`：Tech 同版只读 `TECH_REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED；两项评审只认可候选送审，不认可运行发布。
+- `USER_REVIEW`：Producer 绑定 Product 十三 Artifact、Tech/Master 两份 Review 共十五文件 SHA，审批 `ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、Task `REVIEW→USER_REVIEW`。索引正式入口仍 null、正式资源为空；continuity check 到达真实用户门禁，无空转执行态。
+<!-- MINIGAMES-CONFIG-20261012 END -->

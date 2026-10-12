@@ -1,0 +1,50 @@
+{
+  "id": "MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012",
+  "title": "奶茶小游戏正式人工配置候选与中文字段说明",
+  "type": "design",
+  "owner": "product",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "基于已批准的奶茶产品规则、数值和技术方案，准备稳定无版本人工源表候选，补齐独立中文字段说明并证明业务数据仅发生受控状态提升，提交技术核验与用户审核。",
+  "inputs": [
+    "tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.11/TECH_SPEC_ACCEPTANCE.md",
+    "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx",
+    "project/config/archive/2026-10-12-config-audit/MILK_TEA_MINIGAME_v0.1.xlsx",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/RESOURCE_INDEX.json",
+    "rules/config_resource_contract.md"
+  ],
+  "deliverables": [
+    "project/config/source/MILK_TEA_MINIGAME.xlsx",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/archive/2026-10-12-milk-tea-config-promotion/FIELD_GUIDE_MG01_previous.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/FIELD_GUIDE_MG01.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/PROMOTION_SPEC.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/SOURCE_DIFF.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "稳定无版本人工源候选完整含四表，全部获批业务字段与数值逐格不变，仅明确记录状态和业务导出开关的候选提升",
+    "独立中文字段说明逐字段解释含义、类型、单位、完整取值、空值、默认、引用和适用范围，且与候选源表一致",
+    "原已审批源表及归档原路径和字节不变，旧新两版奶茶中文字段说明有同版快照，候选路径、来源哈希与差异可追溯",
+    "候选在用户与技术审查完成前不进入正式索引或运行生成，四表整体发布条件和后续步骤明确",
+    "交付物有可复核的表头、类型、范围、引用、配方选项池和禁用草案隔离检查，明确未完成的发布与运行验证"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-SPEC-20261012",
+    "MILK-TEA-MINIGAME-TECH-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master仅授权Product修改上述人工源候选、FIELD_GUIDE奶茶段及本任务自己的Product交付物；其余配置和已批准v0.1文件不可改。",
+    "新源候选状态取值必须在PROMOTION_SPEC明确业务语义，export_enabled与四个解锁门槛开关完全独立；即使候选可导出，资源索引active_path仍为null且正式数组仍空，不能被运行消费。",
+    "Product业务数据沿用获批值，若需更动数值或配方，先提交Change Impact而非在此任务静默更改。",
+    "旧中文字段说明仅存奶茶段历史快照到本任务归档路径；新奶茶段保存同版快照，以防全局FIELD_GUIDE后续变化影响本次审阅，其他配置段不改。",
+    "Tech Lead对候选做只读类型/ID/引用/字段说明技术Review，Master做最终专业Review；Producer绑定用户审批版本、维护全局状态与看板。",
+    "本任务是人工源候选审阅，不实现生成器、API、客户端或服务端，不冒充运行QA。"
+  ]
+}

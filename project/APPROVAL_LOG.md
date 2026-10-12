@@ -451,3 +451,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户回复“确认”准确 Product 正式规格 v0.1；原审批 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 绑定十三文件 SHA 重核全部一致，现为 `USER_APPROVED`、`decided_at=null`，Master 最终接受本产品阶段。PRD SHA-256 `e75fa05ac06a4029488eea894ee6e619501349fb384e9917a135c7a411dc3513`，原人工源表 SHA-256 `cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa`。用户消息精确时刻未知。批准仅产品规则与数值；Tech 审查和配置发布尚待，源表原有 DRAFT/export_enabled=false 不改。
 - Tech v0.1 七 Required、SOURCE_CHECK 与 Master 同版 Review 实存；准确 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json` 当前 `USER_REVIEW`、`decided_at=null`，主技术文档 SHA-256 `ed4b888df02e8025993fab38070c8d09f5b864470885dea19f2861919b300b58`，其余八文件 SHA 见审批记录。尚无用户对技术方案的决定；正式配置、实现和 QA 未获批准。
 <!-- MINIGAMES-TECH-20261012 END -->
+
+<!-- MINIGAMES-CONFIG-20261012 START -->
+## 2026-10-12｜奶茶技术方案用户批准
+
+- 用户对准确 Tech v0.1 回复“批准”，原 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json` 所绑九文件 SHA 全匹配，现 `USER_APPROVED`、`decided_at=null`；Master 接受本技术设计阶段，Tech Task DONE。主技术文档 SHA-256 `ed4b888df02e8025993fab38070c8d09f5b864470885dea19f2861919b300b58`，其余八文件见审批。用户消息精确时刻未知。
+- 人工源候选 Product v0.1 九 Required、四张预览及 Tech/Master 同版 Review 共十五文件 SHA 已绑定 `tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json`；两份 Review APPROVED，审批与 Task 均 `USER_REVIEW`，`decided_at=null`。主候选 XLSX SHA-256 `a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76`，其余十四文件见审批。尚无用户批准；旧已批源表历史字节不变，候选不得被运行消费。
+<!-- MINIGAMES-CONFIG-20261012 END -->

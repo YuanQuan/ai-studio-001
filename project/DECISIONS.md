@@ -2,6 +2,14 @@
 
 本文件只记录当前 Game Repository 的项目级决策，不得复制其他游戏的决策历史。
 
+## DEC-MG01-TECH-SPEC-APPROVAL-20261012 — 奶茶技术方案获批
+
+- 日期：2026-10-12；状态：`ACCEPTED`，Tech v0.1 整包。
+- 用户依据：对准确送审的奶茶技术方案 v0.1 回复“批准”；原审批九文件 SHA-256 重核全匹配，精确消息时刻未知。
+- 决定：MG01 对应 `MT_SHOP_01`；权威计时、订单判定、熟练度、通关与永久解锁结算放服务端。开局固定配置版本，限时交杯须在服务端截止时间前被接收，重复请求不得重复推进或发奖；旧配置保留到引用它的局终结。具体约束以获批 Tech v0.1 为准。
+- 证据：`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.11/TECH_SPEC_ACCEPTANCE.md`、`tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json`。
+- 范围：解锁 Product 正式人工源候选与中文字段说明阶段；未批准正式运行配置、生成器或实现代码，不能把草案 `DRAFT/export_enabled=false` 静默提升。
+
 ## DEC-MG01-PRODUCT-SPEC-APPROVAL-20261012 — 奶茶正式规则与首版数值获批
 
 - 日期：2026-10-12；状态：`ACCEPTED`，Product正式规格v0.1整包。

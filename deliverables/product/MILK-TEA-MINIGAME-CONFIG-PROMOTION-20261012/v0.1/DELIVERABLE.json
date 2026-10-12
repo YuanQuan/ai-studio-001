@@ -1,0 +1,30 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012",
+  "owner": "product",
+  "summary": "提交奶茶小游戏稳定无版本人工配置候选，四表只提升行状态及业务导出开关，补齐 41 字段中文说明与旧新快照、逐格差异审计和四表预览；尚未发布。",
+  "artifacts": [
+    "project/config/source/MILK_TEA_MINIGAME.xlsx",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/archive/2026-10-12-milk-tea-config-promotion/FIELD_GUIDE_MG01_previous.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/FIELD_GUIDE_MG01.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/PROMOTION_SPEC.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/SOURCE_DIFF.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/DELIVERABLE.json",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/evidence/DIFFICULTY_STAGES.png",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/evidence/UNLOCK_CONDITIONS.png",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/evidence/INGREDIENTS.png",
+    "deliverables/product/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/v0.1/evidence/RECIPES.png"
+  ],
+  "acceptance_results": [
+    {"criterion": "稳定无版本人工源候选完整含四表，全部获批业务字段与数值逐格不变，仅明确记录状态和业务导出开关的候选提升", "result": "PASS", "evidence": "SOURCE_DIFF.md 四表 50 行、100 个受控单元格变化、其他业务字段 0 变化"},
+    {"criterion": "独立中文字段说明逐字段解释含义、类型、单位、完整取值、空值、默认、引用和适用范围，且与候选源表一致", "result": "PASS", "evidence": "FIELD_GUIDE_MG01.md 覆盖 41 个表头，且与 FIELD_GUIDE.md 奶茶段一致"},
+    {"criterion": "原已审批源表及归档原路径和字节不变，旧新两版奶茶中文字段说明有同版快照，候选路径、来源哈希与差异可追溯", "result": "PASS", "evidence": "SOURCE_DIFF.md 三本工作簿与两版说明 SHA；旧源与归档哈希同批准记录"},
+    {"criterion": "候选在用户与技术审查完成前不进入正式索引或运行生成，四表整体发布条件和后续步骤明确", "result": "PASS", "evidence": "PROMOTION_SPEC.md 说明 READY/true 候选语义，RESOURCE_INDEX.json 的 active_path 仍 null、正式列表为空"},
+    {"criterion": "交付物有可复核的表头、类型、范围、引用、配方选项池和禁用草案隔离检查，明确未完成的发布与运行验证", "result": "PASS", "evidence": "SOURCE_DIFF.md、PROMOTION_SPEC.md、四张 evidence PNG；未生成运行配置"}
+  ],
+  "assumptions": ["READY 是 Product 提交候选供审核的行级状态；它不替代准确版本用户批准、技术审查或索引发布。"],
+  "risks": ["正式生成器、索引切换、服务端与客户端运行验证均未执行。", "候选行 export_enabled=true 仍须整本审批和正式索引门禁；不得直接被运行端按路径扫描消费。"],
+  "status": "READY_FOR_REVIEW"
+}
