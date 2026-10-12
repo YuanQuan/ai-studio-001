@@ -826,4 +826,5 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 阶段修订观察：Art v0.1 Draft 已将 AT=阿棠、AC=阿炭和棕发花饰锚点纠正；先前灰发/橙发梢与冻结图不符，导致旧 Tech `APPROVED` 失去当前送审效力。Art/Tech 正按准确文件重新核，返工净耗时未知；可证实原因是角色 ID 与视觉锚点初稿不一致，不扩为资源失败结论。下一复核点为 Art 最终五份文件及 Tech 重评 SHA，Gate1 继续关闭。
 - 送审结果与证据：修订后四核心已由 Tech/Master 独立 `APPROVED` 并锁同版 SHA，Task 9/9 Required、交付索引 9/9 实存，五项验收同序 PASS；Producer 于 2026-10-12 13:01:17 +08:00 建准确 v0.1 Gate1 `USER_REVIEW` 审批。原角色/锚点误识别在送审前已修正；各阶段净返工时长、Owner 开始时刻和本轮总体耗时未知，没有可比基线，不判快慢。本轮新图、改图、生成、动画和运行均为 0。
 - 建议与 continuity：Art 下次在方案初稿前先用文件哈希与实图同屏核角色 ID、当前适用方向和视觉锚点，代价一次核图，复核点为下一批首份 `ART_BRIEF`；Tech 对任何修订后的核心文件重新锁 SHA，复核点为下一次正式 Review。当前已真实到 `USER_REVIEW`，等待用户对本批 Gate1 明确决定；无本线空转 `READY/IN_PROGRESS`，资源制作仍锁定，示例不参加 QA。
+- 发布核对（Asia/Shanghai）：Producer 于 2026-10-12 13:08:13 +08:00 记录 Master 报告的 Game 正式提交 `984770639c8df095b5b212d122f1279dd778d7e7`、普通推送与远端 main 同 SHA；最终 `VALIDATION.json` 13 项文档检查 PASS。提交/推送的精确完成时刻、各阶段净制作和等待耗时未知，不由本记录核验时刻推算。Continuity 终点仍为规范 Task `DONE`、本 Pilot `USER_REVIEW` 待用户 Gate1 决定；未制作资源或进行运行检查。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
