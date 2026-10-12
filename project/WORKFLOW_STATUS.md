@@ -795,3 +795,9 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Master 已将 Product 子 Task 修订为 v0.2 汇总任务，旧 v0.1 Task 存 `history/v0.1` 且旧审批保留。首份新 Required `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md` 实存并触发 `REVISION→IN_PROGRESS`；六份 Required、`DELIVERABLE.json` 四项同序 PASS 实存，Owner 提交 `REVIEW`。`MASTER_REVIEW.json` 于 14:07:04 +08:00 APPROVED 仅限讨论汇总送审；Producer 将当前 Task 与准确 `ARTIFACT_APPROVAL_v0.2.json` 置 `USER_REVIEW`，七文件 SHA 绑定。用户尚未批准 v0.2 整包。
 - 父 Task 保持 `SPEC`；旧 Product v0.1 审批仍为历史 `USER_REVIEW`，v0.8 有限批准与本版整包送审彼此独立。下一步 Master 向用户呈现准确 v0.2 讨论汇总；条件组合、魂魄指标、数值和完整流程仍需正式规格，Tech、Client、资源、QA 均未解锁。Continuity check：Product v0.2 已真实抵达 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；复盘 `WR-20261012-MINIGAMES-UNLOCK-SUMMARY-001`。
 <!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->
+
+<!-- MINDMAP-PLUGIN-20261012 START -->
+## 脑图工具偏好维护｜2026-10-12
+
+用户明确要求优先使用 MindMap 插件；当前游戏与主模板规则及标准小游戏默认项已同步，记录见 `governance/capability_changes/CAP-20261012-MINDMAP-PLUGIN.md`。八份 Studio 文件双仓一致、JSON Schema 核验与差异检查通过。本项为低风险文档维护，无新功能任务或具体脑图审批；下一次脑图任务验证插件实际生成。复盘：`project/WORK_RETROSPECTIVE_LOG.md` 中 `WR-20261012-MINDMAP-PLUGIN-001`。
+<!-- MINDMAP-PLUGIN-20261012 END -->

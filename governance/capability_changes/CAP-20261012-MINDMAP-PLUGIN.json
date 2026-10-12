@@ -1,0 +1,21 @@
+{
+  "id": "CAP-20261012-MINDMAP-PLUGIN",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "各项目制作脑图优先使用已连接的 MindMap 插件；同版归档 Markdown 源、静态快照与实际返回的链接或工具生成结果。",
+  "reason": "用户于 2026-10-12 明确指令：脑图优先使用MindMap插件。更新既有 MindMap AI 工具偏好，保留原有版本追溯、专业评审与用户审批门禁。",
+  "impact": [
+    "所有角色的脑图工具优先顺序",
+    "Product 脑图方法与产品总纲模板",
+    "Producer 对链接或插件生成结果的同版登记",
+    "当前游戏 Studio 快照、主 Studio Layer 与新游戏默认模板"
+  ],
+  "affected_agents": [
+    "master",
+    "producer",
+    "product"
+  ],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

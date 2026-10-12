@@ -2,7 +2,7 @@
 
 当前项目内 Playbook 索引：
 - `product-outline-design`：先建立游戏/大型版本总纲和模块树，再维护模块 -> 子模块 -> PRD 索引。
-- `mindmap-ai-brainstorm`：需要脑图时优先使用 MindMap AI 展示系统层次与闭环；项目内保留可编辑文字源、提交快照、链接和版本，工具不可用时改用 Mermaid 等可编辑方式。
+- `mindmap-brainstorm`：需要脑图时优先使用 MindMap 插件展示系统层次与闭环；项目内保留可编辑 Markdown 文字源、提交快照与版本，登记实际返回的链接或工具生成结果；本轮插件不可用时记录原因并改用 Mermaid 等可编辑方式，不沿用其他工具或旧版失败结论。
 - `feature-specification`：把单个功能写成详细、可实现、可验收的 PRD，并明确所属模块、依赖和异常情况。
 - `option-tradeoff-analysis`：只有存在真实方向/成本/体验/风险取舍时给多个方案；明显存在最优解时直接推荐最优方案。
 - `gameplay-system-design`：玩法/系统规则设计。

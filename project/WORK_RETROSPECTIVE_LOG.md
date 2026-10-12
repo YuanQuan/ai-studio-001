@@ -868,3 +868,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Product 在用户确认讨论汇总后，再按当前条件边界细化正式规格与配置源表；代价是独立规格与 Review，复核点为下一阶段 Product Task。Tech Lead 届时核字段类型、引用及生成规范，复核点为配置评审。Producer 继续区分 Master 分项有限批准和 Product 整包用户决定，复核点为准确 v0.2 用户回复。
 - Continuity check：Product v0.2 已到真实 `USER_REVIEW`，父线 `SPEC`，没有本线空转 `READY/IN_PROGRESS`；Tech、Client、资源与 QA 尚无正式开发输入。
 <!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->
+
+<!-- MINDMAP-PLUGIN-20261012 START -->
+### WR-20261012-MINDMAP-PLUGIN-001｜脑图工具偏好同步
+
+- 结果与证据：按用户“脑图优先使用MindMap插件”更新当前游戏和主模板的 Studio 规则、Product 方法/决定与注册索引，并更新标准小游戏 PRD 默认项。`governance/capability_changes/CAP-20261012-MINDMAP-PLUGIN.json` 和同名 Markdown v0.1 实存；八份 Studio 文件双仓一致、提案通过 Schema 字段/类型/枚举核验、差异检查通过。本轮为 Master 低风险规则维护与流程登记，自检不冒充独立角色 Review；未创建游戏功能任务或批准具体脑图。
+- 时间（Asia/Shanghai）：本轮首次核对 2026-10-12 14:22:00 +08:00，规则修改与验证完成 14:25:45 +08:00，此区间墙钟 3 分 45 秒；Git 收尾不在该区间，整个执行周期总时长及净制作/等待/Review 时间未知。未发生用户审批等待或上游依赖等待。
+- 原因与限制：当前工具清单已提供 MindMap 插件，旧规则名称为 MindMap AI；本轮未请求生成具体脑图，未核验实际渲染。文档读取出现输出截断，已按文件补读；无可靠独立耗时。无同类时限基线，本轮未发现可证实的慢因。普通网络检查因环境限制失败，Git 收尾须走正常权限流程。
+- 建议与复核：Product 下一次脑图任务先调用 MindMap 插件，用同版 Markdown 源登记实际生成结果，避免误用其他工具的历史额度记录；代价为一次实际工具调用，复核点为下一份脑图交付。Producer 在该交付中核对源、快照、版本及真实链接或生成结果，复核点为原有 Artifact Review，不增加审批门禁。
+- Continuity check：本项偏好维护与验证完成，无本项 READY/IN_PROGRESS 占位；其他正式任务、Artifact 版本及审批状态未因本项改变，历史脑图不重画。
+<!-- MINDMAP-PLUGIN-20261012 END -->
