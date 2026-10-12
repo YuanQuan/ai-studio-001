@@ -1,0 +1,56 @@
+{
+  "id": "MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012",
+  "title": "奶茶正式配置登记与开发契约细化",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "将用户已批准的生成器v0.2同源配置以等字节副本登记到稳定入口，并在已批准产品和技术规则内细化消息、状态、持久化及模块交接契约，形成可供后续Client/Server/QA编写开工包的正式技术输入。",
+  "inputs": [
+    "tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json",
+    "tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/SAVE_AND_SETTLEMENT_CONTRACT.md",
+    "project/config/RESOURCE_INDEX.json",
+    "rules/config_resource_contract.md",
+    "project/ARCHITECTURE.md",
+    "project/API_SPEC.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/PROTOCOL_CONTRACT.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/DATA_CONTRACT.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/CONFIG_RELEASE_EVIDENCE.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012/v0.1/DELIVERABLE.json",
+    "project/config/generated/milk_tea_minigame.server.json",
+    "project/config/generated/milk_tea_minigame.client.json",
+    "project/config/generated/milk_tea_minigame.manifest.json",
+    "project/config/generated/FIELD_GUIDE.md"
+  ],
+  "acceptance": [
+    "稳定无版本JSON与用户批准v0.2样本逐字节一致，源/双输出SHA及审批可追溯；历史获批文件不改写，登记仅配置文件发布不冒充运行部署",
+    "消息契约具体到请求/响应字段、类型、编号、错误码、时间单位、顺序/重试/重复请求语义及服务端权威边界，满足逐单制作和五档规则",
+    "明确熟练度、前档通关、永久解锁、店长等级/魂/魄只读来源和结算唯一性，事务/并发/崩溃恢复契约不增加玩法或奖励",
+    "明确NestJS/ws/Protobuf/MySQL/Redis边界、模块与计划实现路径、配置加载/校验/版本保留，区分计划与真实实现",
+    "覆盖正确/错误交杯、严格截止、失败/退出无经验、重复结算、断线新局及配置更新的可测试场景；不实现运行代码，不假称正式QA通过"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012",
+    "MILK-TEA-MINIGAME-TECH-20261012",
+    "MILK-TEA-MINIGAME-SPEC-20261012"
+  ],
+  "status": "CANCELLED",
+  "approval": "APPROVAL",
+  "notes": [
+    "先确认本轮生成器v0.2审批已登记USER_APPROVED；不修改已批准生成器代码、源表、样本或业务语义。",
+    "Master明确授权Tech进行获批JSON等字节稳定副本与发布manifest/归档证据；Producer负责正式索引及五处流程文件。批准后的配置字节可登记，但新增实施契约仍须用户批准才能被运行编码消费。",
+    "生成器先在其受控v0.2样本目录只读复验，再把生成结果等字节推广；不手工编辑JSON内容，不另造第二套业务数据。",
+    "消息和数据结构只在中文技术文档提出，不生成.proto、迁移或运行代码；不改项目全局API_SPEC/ARCHITECTURE直到本契约获批。",
+    "界面、美术尚无MG01专属获批规格；客户端视觉正式实现继续等待对应阶段，不以本契约替代UI/Art审批。",
+    "Tech额外维护独立中文生成资源字段说明，逐一覆盖server/client/manifest的所有派生及元数据字段、类型/单位/null/引用/用途，与Product原表字段说明互相链接；发布证据登记该说明同版快照，交Product语义Review。不修改人工源字段含义。",
+    "用户本轮改向：暂不考虑后端实现，只在 U05 单元示例完成前端开始游戏。该实施契约任务由 READY 取消；稳定双 JSON 与 manifest 曾作为初产实存，但仅未发布候选，不激活 RESOURCE_INDEX，不作为 DONE 或运行部署。"
+  ]
+}

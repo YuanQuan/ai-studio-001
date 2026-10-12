@@ -1,0 +1,49 @@
+{
+  "id": "U05-MILK-TEA-FRONTEND-SAMPLE-20261012",
+  "title": "U05奶茶小游戏纯前端可玩示例",
+  "type": "feature",
+  "owner": "client",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "按用户最新范围在现有Cocos单元示例菜单U05完成奶茶纯前端游戏闭环，使用获批配置和隔离本地进度，无后端实现。",
+  "inputs": [
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.14/U05_FRONTEND_SCOPE.md",
+    "tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144/milk_tea_minigame.server.json",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "apps/client/assets/UnitSampleGallery.ts"
+  ],
+  "deliverables": [
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/FEATURE_BRIEF.md",
+    "apps/client/assets/labs/u05/的独立实现与配置资源",
+    "UnitSampleGallery.ts仅U05必要集成改动",
+    "必要玩法验证与当前Cocos构建、HTTP运行、内置浏览器实际截图/交互证据",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "菜单有U05店铺小游戏，奶茶入口与开始制作可操作，返回/重入不影响U00-U04；其余五店只标待讨论",
+    "获批四表配置来源/哈希可追溯，五档3/4/5/5/5维与两阶段、简单不限时中等起限时；新局锁定阶段/目标/池，查配方/切后台期间计时继续",
+    "点击选择和撤销、缺项禁止交杯、错杯清空重做同单不计杯且时间继续、正确逐杯推进三杯通关、截止等于或之后失败、重试新局与退出无经验完整",
+    "示例本地存档隔离，通关只加一次经验且可重复新局获取，失败/退出不给；前档通关及启用成长条件共同解锁，永久解锁/重载保留，坏存档有可恢复处理",
+    "现有手机竖屏及较小视口可读可点，无遮挡/溢出，实际Cocos Web产物在内置浏览器交互检查，有当前构建身份与明确未验证范围",
+    "不实现后端、不改生产权威/经济规则、不新增美术图片/字体依赖；模块与本地示例状态可在离开时释放，无无关文件覆盖"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-SPEC-20261012",
+    "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户已明确本次完成纯前端单元示例；Owner先保存FEATURE_BRIEF（含示例布局/状态/本地接口与验证），再按已批玩法编码，最终完整成果交用户审阅。此示例不分派QA Agent。",
+    "只允许新labs/u05模块、必要.meta/JSON资源、UnitSampleGallery最小集成以及本任务交付物。主文件有其他chat未提交U01修改，先保存当前字节/哈希，按最小hunk编辑，不恢复/覆盖其他差异，不git。",
+    "复用现有程序绘制控件、系统字体和配色，不制作/接入未批准图片；主题以订单、原料与杯预览呈现。新增正式视觉资源另走Art/UI门禁。",
+    "可加独立标明的示例验证设置用于查看五档/两阶段、重置隔离存档；正常进度初始仅简单，验证设置不冒充正常奖励或真实成长。",
+    "所有可信结算在此仅为本地Lab模拟，隔离命名空间；正式发布仍恢复获批服务端权威契约，不将本示例当作后端或正式QA通过。",
+    "Creator同项目可能有另一chat执行Shader构建；先检查占用，不与其他Editor/CLI争用。必要时按共享skill使用可追溯隔离副本构建，产物/源身份真实。",
+    "若Cocos资源加载需要resources路径，明确授权新增独立assets/resources/u05_milk_tea/config.json及其目录/.meta，仅等字节复制获批server完整配置；不触碰其他resources并行内容。本地模拟奖励/门槛不得从display_only投影补数或硬编码。"
+  ]
+}

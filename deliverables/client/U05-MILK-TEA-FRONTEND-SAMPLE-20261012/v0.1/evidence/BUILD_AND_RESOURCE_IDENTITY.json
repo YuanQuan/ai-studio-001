@@ -1,0 +1,37 @@
+{
+  "task_id": "U05-MILK-TEA-FRONTEND-SAMPLE-20261012",
+  "creator_version": "3.8.8",
+  "project_copy": "/private/tmp/u05-milk-tea-build-src/client",
+  "build_profile": "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/ISOLATED_WEB_BUILD_PROFILE.json",
+  "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u05-milk-tea-build-src/client --build \"platform=web-mobile;debug=true;configPath=/private/tmp/u05-milk-tea-build-src/client/profiles/v2/packages/web-mobile.json\"",
+  "result": "PASS",
+  "exit_code": 36,
+  "finished_marker": "2026-10-12 23:27:20 build Task (web-mobile) Finished in (4 s)ms",
+  "source_sha256": {
+    "UnitSampleGallery.ts": "51d076303e6defef081db456e614a0fe881011ab88777beb8f558e4c01de8d33",
+    "labs/u05/milk_tea_lab.ts": "17229db359ee41eaa60133ff7ba4673527532c231a984f287acc0047de8def6c",
+    "labs/u05/milk_tea_state.ts": "e1d0ab2a75dd2e8a26d9e8627071bcb7a0d146b68266e6e81d6d6989e175e292",
+    "resources/u05_milk_tea/config.json": "bcb757797059e1e022b67609ec4ba8bdbfa40829febe49055fee4a35322a4cb8"
+  },
+  "config_source": "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144/milk_tea_minigame.server.json",
+  "config_meta_uuid": "f6ef8a72-5d14-44fe-ae4d-76dcbcb8c1dd",
+  "config_bundle": "resources",
+  "config_bundle_sha256": "ae2d09a8931a8b729d3639e2e11d0d32709437ecc07f406b4e53fcd8d89f99b9",
+  "main_bundle_index_sha256": "03223ce4badce291f08c61aba93fd90781fbf0e6f2883b6e280dc7bd9df64c47",
+  "main_bundle_config_sha256": "7641982ba396a9fe0c80d48c916faef9c15d50b2c2e0b5c2cc583e07e6065e1e",
+  "web_index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+  "http": {
+    "url": "http://127.0.0.1:8791/",
+    "bind": "127.0.0.1",
+    "port": 8791,
+    "server_pid": 38730,
+    "root": "/private/tmp/u05-milk-tea-build-src/client/build/web-mobile",
+    "note": "PID confirmed LISTEN by lsof. Sandbox curl is denied connecting to loopback; Master to perform in-app browser check."
+  },
+  "scene": {
+    "path": "apps/client/assets/UnitSamples.scene",
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+  },
+  "resources_lifecycle": "resources.load holds one Lab config while the component is active; resources.release is called on component destruction, and an in-flight successful callback after page destruction immediately releases it.",
+  "previous_build": "The 22:19 Set iteration build and 22:25/23:01 earlier snapshots are retained in evidence/history. A 22:50 sandbox launch aborted before build (history/CREATOR_BUILD_20261012_2250_ABORT.md); authorized CLI recovery succeeded at 23:01. The 23:27 rebuild removes redundant Lab root destruction after Gallery page teardown to prevent a duplicate-destroy warning."
+}

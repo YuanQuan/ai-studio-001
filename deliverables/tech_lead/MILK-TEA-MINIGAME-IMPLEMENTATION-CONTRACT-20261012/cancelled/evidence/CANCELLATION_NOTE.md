@@ -1,0 +1,3 @@
+# 未发布初产保留
+
+用户最新要求本次仅U05前端示例，实施契约任务取消。初始manifest曾先行写CONFIG_REGISTERED_NOT_RUNTIME_DEPLOYED，但索引始终未激活；Master已纠正现行manifest为UNPUBLISHED_CANDIDATE_TASK_CANCELLED并保留原始初产。字段说明尚未制作，现行引用为空。双JSON与获批样本等字节，无后端代码产出。

@@ -864,3 +864,23 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Tech Owner 另交修复版 v0.2：`DELIVERABLE.json` 索引九项真实文件、五项验收同序 PASS；Task `REVISION→REVIEW`。Master 自测 5/5 通过并正独立复评；旧 v0.1 退回证据保持历史，新版未获用户批准。
 - v0.2 独立 Tech `INDEPENDENT_TECH_REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，仅认可候选送审。Producer 绑定九项索引实物、`DELIVERABLE.json`、`README.md` 及两份 Review 共十三文件 SHA，审批 `ARTIFACT_APPROVAL_v0.2.json` 为 `USER_REVIEW`、Task `REVIEW→USER_REVIEW`，`decided_at=null`。用户尚未批准生成器；父任务 `SPEC`、正式索引 active_path=null/资源数组空，不声称发布、运行或 QA。Continuity check：到达真实用户门禁，本线无空转 `READY/IN_PROGRESS`。复盘 `WR-20261012-MINIGAMES-GENERATOR-001`。
 <!-- MINIGAMES-GENERATOR-20261012 END -->
+
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 START -->
+## 2026-10-12｜奶茶生成器批准与实施契约解锁
+
+- 用户明确批准准确 Tech 生成器 v0.2；原十三文件 SHA 逐一重核匹配，`tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json` 为 `USER_APPROVED`，Task `DONE`。批准范围仅生成工具与隔离样本，非游戏实现或运行部署。
+- 新 `MILK-TEA-MINIGAME-IMPLEMENTATION-CONTRACT-20261012` Task 依赖已满足，当前 `READY`；待首份真实产出后登记 `IN_PROGRESS`。已批准样本可等字节推广至稳定生成路径，但须核双输出 SHA 与发布证据后登记；实施契约仍需独立专业 Review 和用户批准。当前资源索引仍 `active_path=null`、正式数组为空。
+- 用户随即明确本次只做 U05 前端单元示例、不考虑后端实现。实施契约 Task `READY→CANCELLED`，不标 DONE/BLOCKED。取消前 `project/config/generated/` 双 JSON 与 manifest 已实存，双 JSON 与获批 v0.2 隔离样本逐字节相同（server SHA `bcb757797059e1e022b67609ec4ba8bdbfa40829febe49055fee4a35322a4cb8`、client SHA `526812f601f883f48d8cc28f3e23ad229c12133082ad6a7efec0f61673d800fe`），只保留未发布候选证据；资源索引 `active_path=null`、正式数组空，未登记运行入口。U05 新任务由 Master 另建，本轮不把后端契约当下游输入。
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 END -->
+
+<!-- U05-MILK-TEA-FRONTEND-20261012 START -->
+## 2026-10-12｜U05 奶茶纯前端单元示例
+
+- 用户最新范围以 Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.14/U05_FRONTEND_SCOPE.md` 固定：本轮只在现有 Cocos 单元示例 U05 做奶茶前端可玩闭环，隔离本地进度；后端实施契约已取消，生成器 v0.2 的有限批准保留。其它五店玩法仍待讨论，不制作未定玩法；示例无 QA Agent，正式接入仍需相应门禁。
+- `tasks/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/TASK.json` 由 Master 建立为 `READY`；Client 首份 `FEATURE_BRIEF.md` 或其它本 Task Required 实产后再记 `TASK_STARTED/IN_PROGRESS`。正式资源索引仍 `active_path=null`、正式数组空，稳定双 JSON 仅未发布候选，不作为本地示例的正式运行配置发布。
+- Client 为本 Task 实际保存 `deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/UnitSampleGallery.baseline.ts`，mtime 21:54:55 +08:00、106644 字节、SHA-256 `655303582a108e115e1081801de7fc24714778fc5f687ad17661a645ec7b986c`，用于保护共享菜单当前字节；Client 同步编写 FEATURE_BRIEF。Producer 据真实执行证据将 Task `READY→IN_PROGRESS`，仍待玩法代码、构建与浏览器验证。
+- Master 在 22:25 构建的真实浏览器中核核心闭环，发现小屏字体和杯预览遮挡提示；Owner 已做布局修正。22:50 隔离 Creator CLI 在启动前因 macOS `NSApplication init` SIGABRT 退出 134，非工程编译错误；同一命令按正规权限单次恢复后于 23:01:17 产生构建完成标记。最终修正布局仍待实际浏览器回归和同版评审，Task 保持 `IN_PROGRESS`，不提前 USER_REVIEW。
+- Master 实际浏览器返回动作于 23:09:50 发现重复销毁 warning，`BROWSER_RUNTIME_REPORT` 已记运行观察；Owner 正做小范围修正并重构建，需最终控制台回归及新哈希。虽然交付索引一度自报 6/6 PASS，尚非冻结结论；继续 `IN_PROGRESS`，不登记 REVIEW/USER_REVIEW。
+- 最新 23:27:20 构建真实执行进入 U05→返回菜单→重入，报告按该构建时间筛选控制台 error/warn 为空，`browser-final-release-reentry.jpg` 实存；旧异常保留修复历史。Owner 正式提交同版 `DELIVERABLE.json` 二十项索引实物、六项验收同序 PASS，Producer 将 Task `IN_PROGRESS→REVIEW`。最终 Tech/Master Review 与准确 SHA 尚待，不提前 USER_REVIEW。
+- 同版 Tech `REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，仅准 U05 纯前端示例送审。Master `MASTER_PACKET_ACCEPTANCE.json` 绑定 35 份实存文件 SHA，Producer 逐项复算 35/35 匹配；清单本身 SHA-256 `64c5ab83987c99cf266a8ae41eb2ac42582bdee6f90f6fb3813dbf6f2189aa97`。`tasks/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，Task `REVIEW→USER_REVIEW`；用户尚未批准，非 DONE。Continuity check（2026-10-13 00:01 后）：本线已到真实用户门禁，无空转 READY/IN_PROGRESS；后端实施契约仍 CANCELLED、正式索引未激活、单元示例无 QA Agent。复盘 `WR-20261013-U05-MILK-TEA-FRONTEND-001`。
+<!-- U05-MILK-TEA-FRONTEND-20261012 END -->

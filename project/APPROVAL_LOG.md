@@ -478,3 +478,17 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Tech 修复 v0.2 已重新 `REVIEW`，专业复评尚待；v0.1 为退回历史，不自动继承此前自报 PASS 或任何用户批准。
 - 生成器 v0.2 独立 Tech/Master Review 均 APPROVED；`tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json` 精确绑定十三文件 SHA，`USER_REVIEW`、`decided_at=null`。v0.1 的 CHANGES_REQUESTED 仍是历史未获批版本，当前用户尚未决定 v0.2；不解锁正式发布与运行接入。
 <!-- MINIGAMES-GENERATOR-20261012 END -->
+
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 START -->
+## 2026-10-12｜奶茶生成器 v0.2 用户批准
+
+- 用户明确批准准确生成器 v0.2；`tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json` 绑定十三文件 SHA 全匹配，状态 `USER_APPROVED`，登记时刻 2026-10-12 21:44:51 +08:00。批准仅工具与同版隔离样本；新实施契约 Task `READY`、本版尚无用户审批，正式运行代码与部署未授权。
+- 用户改向 U05 前端示例，实施契约 Task 取消且无本版 Artifact 用户审批；双 JSON/manifest 初产仅未发布候选。生成器 v0.2 的有限批准保留，不自动批准稳定路径运行接入或 U05 新实现。
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 END -->
+
+<!-- U05-MILK-TEA-FRONTEND-20261012 START -->
+## 2026-10-12｜U05 前端示例审批门禁
+
+- U05 Client Task 已 `READY`，尚无本版正式 Artifact 用户审批；上游产品、人工源候选及生成器批准可作为明确输入，不自动批准新的 U05 实现。后端实施契约已取消，本轮无 QA Agent；实际 Web 可玩成果经适用专业 Review 后才送用户决定。
+- U05 Client v0.1 二十项索引实物、六项验收同序 PASS；最终 Tech/Master Review 均 APPROVED，Master `MASTER_PACKET_ACCEPTANCE.json` 所绑 35 文件 SHA 经 Producer 复核全匹配，清单自身 SHA-256 `64c5ab83987c99cf266a8ae41eb2ac42582bdee6f90f6fb3813dbf6f2189aa97`。`tasks/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`；仅当前纯前端单元示例等待用户决定，不自动批准正式接入或后端，Task 未 DONE。
+<!-- U05-MILK-TEA-FRONTEND-20261012 END -->

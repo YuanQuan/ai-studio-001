@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.0",
+  "resource_id": "MILK_TEA_MINIGAME",
+  "source_sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
+  "approval_version": "v0.1",
+  "config_version": "v0.1",
+  "display_only": true,
+  "tiers": [
+    {
+      "tier_id": "EASY",
+      "display_name": "简单",
+      "stage_count": 2,
+      "recipe_dims": 3,
+      "stages": [
+        {
+          "stage_id": "MG01_EASY_1",
+          "stage_no": 1,
+          "orders_target": 3,
+          "time_sec": null,
+          "options_per_dim": 2,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              }
+            ]
+          }
+        },
+        {
+          "stage_id": "MG01_EASY_2",
+          "stage_no": 2,
+          "orders_target": 3,
+          "time_sec": null,
+          "options_per_dim": 3,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              }
+            ]
+          }
+        }
+      ],
+      "recipe_hints": [
+        {
+          "recipe_id": "R_E_01",
+          "min_stage_no": 1,
+          "drink_name": "珍珠红茶奶",
+          "ingredients": {
+            "TEA": "红茶",
+            "MILK": "鲜奶",
+            "TOPPING": "珍珠"
+          }
+        },
+        {
+          "recipe_id": "R_E_02",
+          "min_stage_no": 1,
+          "drink_name": "布丁绿茶奶",
+          "ingredients": {
+            "TEA": "绿茶",
+            "MILK": "燕麦奶",
+            "TOPPING": "布丁"
+          }
+        },
+        {
+          "recipe_id": "R_E_03",
+          "min_stage_no": 2,
+          "drink_name": "仙草乌龙奶",
+          "ingredients": {
+            "TEA": "乌龙茶",
+            "MILK": "椰奶",
+            "TOPPING": "仙草"
+          }
+        }
+      ]
+    },
+    {
+      "tier_id": "MEDIUM",
+      "display_name": "中等",
+      "stage_count": 2,
+      "recipe_dims": 4,
+      "stages": [
+        {
+          "stage_id": "MG01_MEDIUM_1",
+          "stage_no": 1,
+          "orders_target": 3,
+          "time_sec": 150,
+          "options_per_dim": 2,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              }
+            ]
+          }
+        },
+        {
+          "stage_id": "MG01_MEDIUM_2",
+          "stage_no": 2,
+          "orders_target": 3,
+          "time_sec": 135,
+          "options_per_dim": 3,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              }
+            ]
+          }
+        }
+      ],
+      "recipe_hints": [
+        {
+          "recipe_id": "R_M_01",
+          "min_stage_no": 1,
+          "drink_name": "标准甜珍珠红茶奶",
+          "ingredients": {
+            "TEA": "红茶",
+            "MILK": "鲜奶",
+            "TOPPING": "珍珠",
+            "SWEET": "标准甜"
+          }
+        },
+        {
+          "recipe_id": "R_M_02",
+          "min_stage_no": 1,
+          "drink_name": "少甜布丁绿茶奶",
+          "ingredients": {
+            "TEA": "绿茶",
+            "MILK": "燕麦奶",
+            "TOPPING": "布丁",
+            "SWEET": "少甜"
+          }
+        },
+        {
+          "recipe_id": "R_M_03",
+          "min_stage_no": 2,
+          "drink_name": "半糖仙草乌龙奶",
+          "ingredients": {
+            "TEA": "乌龙茶",
+            "MILK": "椰奶",
+            "TOPPING": "仙草",
+            "SWEET": "半糖"
+          }
+        }
+      ]
+    },
+    {
+      "tier_id": "HARD",
+      "display_name": "困难",
+      "stage_count": 2,
+      "recipe_dims": 5,
+      "stages": [
+        {
+          "stage_id": "MG01_HARD_1",
+          "stage_no": 1,
+          "orders_target": 3,
+          "time_sec": 135,
+          "options_per_dim": 2,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              }
+            ]
+          }
+        },
+        {
+          "stage_id": "MG01_HARD_2",
+          "stage_no": 2,
+          "orders_target": 3,
+          "time_sec": 120,
+          "options_per_dim": 3,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              },
+              {
+                "ingredient_id": "ICE_NONE",
+                "name": "去冰"
+              }
+            ]
+          }
+        }
+      ],
+      "recipe_hints": [
+        {
+          "recipe_id": "R_H_01",
+          "min_stage_no": 1,
+          "drink_name": "标准甜标准冰珍珠红茶奶",
+          "ingredients": {
+            "TEA": "红茶",
+            "MILK": "鲜奶",
+            "TOPPING": "珍珠",
+            "SWEET": "标准甜",
+            "ICE": "标准冰"
+          }
+        },
+        {
+          "recipe_id": "R_H_02",
+          "min_stage_no": 1,
+          "drink_name": "少甜少冰布丁绿茶奶",
+          "ingredients": {
+            "TEA": "绿茶",
+            "MILK": "燕麦奶",
+            "TOPPING": "布丁",
+            "SWEET": "少甜",
+            "ICE": "少冰"
+          }
+        },
+        {
+          "recipe_id": "R_H_03",
+          "min_stage_no": 2,
+          "drink_name": "半糖去冰仙草乌龙奶",
+          "ingredients": {
+            "TEA": "乌龙茶",
+            "MILK": "椰奶",
+            "TOPPING": "仙草",
+            "SWEET": "半糖",
+            "ICE": "去冰"
+          }
+        }
+      ]
+    },
+    {
+      "tier_id": "HELL",
+      "display_name": "地狱",
+      "stage_count": 2,
+      "recipe_dims": 5,
+      "stages": [
+        {
+          "stage_id": "MG01_HELL_1",
+          "stage_no": 1,
+          "orders_target": 3,
+          "time_sec": 120,
+          "options_per_dim": 3,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              },
+              {
+                "ingredient_id": "ICE_NONE",
+                "name": "去冰"
+              }
+            ]
+          }
+        },
+        {
+          "stage_id": "MG01_HELL_2",
+          "stage_no": 2,
+          "orders_target": 3,
+          "time_sec": 105,
+          "options_per_dim": 4,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              },
+              {
+                "ingredient_id": "TEA_JASMINE",
+                "name": "茉莉茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              },
+              {
+                "ingredient_id": "MILK_SOY",
+                "name": "豆奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              },
+              {
+                "ingredient_id": "TOP_TARO",
+                "name": "芋圆"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              },
+              {
+                "ingredient_id": "SWEET_NONE",
+                "name": "无糖"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              },
+              {
+                "ingredient_id": "ICE_NONE",
+                "name": "去冰"
+              },
+              {
+                "ingredient_id": "ICE_WARM",
+                "name": "温饮"
+              }
+            ]
+          }
+        }
+      ],
+      "recipe_hints": [
+        {
+          "recipe_id": "R_L_01",
+          "min_stage_no": 1,
+          "drink_name": "半糖去冰仙草乌龙奶",
+          "ingredients": {
+            "TEA": "乌龙茶",
+            "MILK": "椰奶",
+            "TOPPING": "仙草",
+            "SWEET": "半糖",
+            "ICE": "去冰"
+          }
+        },
+        {
+          "recipe_id": "R_L_02",
+          "min_stage_no": 1,
+          "drink_name": "少甜少冰布丁绿茶奶",
+          "ingredients": {
+            "TEA": "绿茶",
+            "MILK": "燕麦奶",
+            "TOPPING": "布丁",
+            "SWEET": "少甜",
+            "ICE": "少冰"
+          }
+        },
+        {
+          "recipe_id": "R_L_03",
+          "min_stage_no": 2,
+          "drink_name": "无糖温饮芋圆茉莉豆奶",
+          "ingredients": {
+            "TEA": "茉莉茶",
+            "MILK": "豆奶",
+            "TOPPING": "芋圆",
+            "SWEET": "无糖",
+            "ICE": "温饮"
+          }
+        }
+      ]
+    },
+    {
+      "tier_id": "NIGHTMARE",
+      "display_name": "噩梦",
+      "stage_count": 2,
+      "recipe_dims": 5,
+      "stages": [
+        {
+          "stage_id": "MG01_NIGHTMARE_1",
+          "stage_no": 1,
+          "orders_target": 3,
+          "time_sec": 105,
+          "options_per_dim": 3,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              },
+              {
+                "ingredient_id": "ICE_NONE",
+                "name": "去冰"
+              }
+            ]
+          }
+        },
+        {
+          "stage_id": "MG01_NIGHTMARE_2",
+          "stage_no": 2,
+          "orders_target": 3,
+          "time_sec": 90,
+          "options_per_dim": 4,
+          "ingredient_choices": {
+            "TEA": [
+              {
+                "ingredient_id": "TEA_BLACK",
+                "name": "红茶"
+              },
+              {
+                "ingredient_id": "TEA_GREEN",
+                "name": "绿茶"
+              },
+              {
+                "ingredient_id": "TEA_OOLONG",
+                "name": "乌龙茶"
+              },
+              {
+                "ingredient_id": "TEA_JASMINE",
+                "name": "茉莉茶"
+              }
+            ],
+            "MILK": [
+              {
+                "ingredient_id": "MILK_FRESH",
+                "name": "鲜奶"
+              },
+              {
+                "ingredient_id": "MILK_OAT",
+                "name": "燕麦奶"
+              },
+              {
+                "ingredient_id": "MILK_COCONUT",
+                "name": "椰奶"
+              },
+              {
+                "ingredient_id": "MILK_SOY",
+                "name": "豆奶"
+              }
+            ],
+            "TOPPING": [
+              {
+                "ingredient_id": "TOP_PEARL",
+                "name": "珍珠"
+              },
+              {
+                "ingredient_id": "TOP_PUDDING",
+                "name": "布丁"
+              },
+              {
+                "ingredient_id": "TOP_GRASS",
+                "name": "仙草"
+              },
+              {
+                "ingredient_id": "TOP_TARO",
+                "name": "芋圆"
+              }
+            ],
+            "SWEET": [
+              {
+                "ingredient_id": "SWEET_NORMAL",
+                "name": "标准甜"
+              },
+              {
+                "ingredient_id": "SWEET_LESS",
+                "name": "少甜"
+              },
+              {
+                "ingredient_id": "SWEET_HALF",
+                "name": "半糖"
+              },
+              {
+                "ingredient_id": "SWEET_NONE",
+                "name": "无糖"
+              }
+            ],
+            "ICE": [
+              {
+                "ingredient_id": "ICE_NORMAL",
+                "name": "标准冰"
+              },
+              {
+                "ingredient_id": "ICE_LESS",
+                "name": "少冰"
+              },
+              {
+                "ingredient_id": "ICE_NONE",
+                "name": "去冰"
+              },
+              {
+                "ingredient_id": "ICE_WARM",
+                "name": "温饮"
+              }
+            ]
+          }
+        }
+      ],
+      "recipe_hints": [
+        {
+          "recipe_id": "R_N_01",
+          "min_stage_no": 1,
+          "drink_name": "半糖去冰仙草乌龙奶",
+          "ingredients": {
+            "TEA": "乌龙茶",
+            "MILK": "椰奶",
+            "TOPPING": "仙草",
+            "SWEET": "半糖",
+            "ICE": "去冰"
+          }
+        },
+        {
+          "recipe_id": "R_N_02",
+          "min_stage_no": 1,
+          "drink_name": "少甜少冰布丁绿茶奶",
+          "ingredients": {
+            "TEA": "绿茶",
+            "MILK": "燕麦奶",
+            "TOPPING": "布丁",
+            "SWEET": "少甜",
+            "ICE": "少冰"
+          }
+        },
+        {
+          "recipe_id": "R_N_03",
+          "min_stage_no": 2,
+          "drink_name": "无糖温饮芋圆茉莉豆奶",
+          "ingredients": {
+            "TEA": "茉莉茶",
+            "MILK": "豆奶",
+            "TOPPING": "芋圆",
+            "SWEET": "无糖",
+            "ICE": "温饮"
+          }
+        }
+      ]
+    }
+  ]
+}

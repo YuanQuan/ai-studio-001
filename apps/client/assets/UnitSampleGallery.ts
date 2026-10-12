@@ -11,6 +11,7 @@ import {
 } from './labs/u02/tourist_adapter';
 import { TouristView } from './labs/u02/tourist_view';
 import { SHOP_IDS, SHOP_NAMES, SHOP_PREFAB_NAMES } from './labs/u03/shop_definitions';
+import { U05MilkTeaLab } from './labs/u05/milk_tea_lab';
 
 const { ccclass, property } = _decorator;
 const MENU_BG = new Color(10, 20, 34);
@@ -145,6 +146,8 @@ export class UnitSampleGallery extends Component {
   private overviewClipboardFallback: any = null;
   private overviewBackgroundLayers: Node[] = [];
   private overviewController: Scene1CameraController | null = null;
+  private u05Lab: U05MilkTeaLab | null = null;
+  private u05ProfilerWasShowing: boolean | null = null;
   private overviewGroupButtons: Partial<Record<'street' | 'tourists' | 'shops', Node>> = {};
   private overviewGroupVisible = { street: true, tourists: true, shops: true };
   private overviewTouristsVisible = true;
@@ -206,6 +209,7 @@ export class UnitSampleGallery extends Component {
 
   protected onDestroy(): void {
     this.restoreOverviewProfiler();
+    if (this.u05ProfilerWasShowing !== null) { if(this.u05ProfilerWasShowing) profiler.showStats(); this.u05ProfilerWasShowing=null; }
     this.releaseU04Page();
     if (this.u04ManifestLoaded) this.u04Bundle?.release('u04_layer_export_map', JsonAsset);
     this.u04ManifestLoaded = false;
@@ -337,6 +341,7 @@ export class UnitSampleGallery extends Component {
   }
 
   private clearPage(): void {
+    this.u05Lab = null;
     this.restoreOverviewProfiler();
     for (const item of this.overviewTourists) item.state.detach();
     this.overviewTourists = [];
@@ -436,6 +441,8 @@ export class UnitSampleGallery extends Component {
       () => this.openShops(), shopsReady));
     this.menuCards.push(this.menuCard('U04', '店长对话',
       '切换店长、魂阶段与表情，查看分层对话。', () => this.openDialogue()));
+    this.menuCards.push(this.menuCard('U05', '奶茶小游戏',
+      '按订单选料、制作饮品，完成三杯挑战。糖画／炭烤／理发／花灯／投壶：待讨论。', () => this.openU05()));
     this.layoutScene();
   }
 
@@ -464,6 +471,16 @@ export class UnitSampleGallery extends Component {
     this.menuEntries = [];
     this.menuMouseDown = null;
     entry.open();
+  }
+
+  private openU05(): void {
+    this.clearPage();
+    this.u05ProfilerWasShowing=profiler.isShowingStats();
+    profiler.hideStats();
+    const host = this.makeNode('U05LabHost', this.page, 720, 1280);
+    this.u05Lab = host.addComponent(U05MilkTeaLab);
+    const epoch = this.pageEpoch;
+    this.u05Lab.setExitHandler(() => { if (epoch === this.pageEpoch) { if(this.u05ProfilerWasShowing)profiler.showStats();this.u05ProfilerWasShowing=null;this.openMenu(); } });
   }
 
   private shopLabel(index: number): string {

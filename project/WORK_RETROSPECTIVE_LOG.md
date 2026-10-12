@@ -953,3 +953,23 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Tech 后续候选工具在交付前覆盖“已有非本工具目录、备份残留、中断恢复”测试，代价为更多测试用例，复核点为下一次技术 Review；Producer 继续按准确版本分离退回和送审记录，复核点为用户对 v0.2 的决定。
 - Continuity check：本轮已持续到真实 `USER_REVIEW`；父任务仍 `SPEC`，无本线空转 `READY/IN_PROGRESS`。`active_path=null` 且正式资源列表为空；正式发布、服务端/客户端运行和 QA 仍需独立阶段。
 <!-- MINIGAMES-GENERATOR-20261012 END -->
+
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 START -->
+### WR-20261012-MINIGAMES-IMPL-CONTRACT-001｜生成器批准后转 U05 前端示例
+
+- 结果与证据：用户批准生成器 v0.2，十三文件 SHA 重核一致，Task DONE；新实施契约 Task 曾 READY，稳定双 JSON/manifest 初产实存，双 JSON 与获批 v0.2 隔离样本等字节。用户随即明确本轮只在 U05 单元示例完成前端开始游戏、不考虑后端实现，Master 取消实施契约；Producer 记 Task CANCELLED，不将初产当正式配置发布或游戏完成。资源索引 `active_path=null`、正式数组空。
+- 时间与耗时（Asia/Shanghai）：Producer 登记生成器用户批准 2026-10-12 21:44:51 +08:00；可核改向与取消登记在 21:48:46 +08:00 之后。用户原消息精确时刻、Tech 初产净制作时间及各阶段等待未知；可观察墙钟不能归作单一角色工时。
+- 影响与原因：取消由用户明确改变本轮范围触发，不作为 Tech 返工或失败；已有等字节副本只保留未发布候选证据，避免抢先激活索引。未见可量化工具故障或同类时限基线，不判断流程快慢。
+- 建议与复核：Master 建 U05 前端示例任务时明确可引用的已批产品/配置范围和示例验收，复核点为新 Task Packet；Producer 在任何后续正式配置发布前重新核审批、字段说明、双输出 SHA 与索引入口，代价为一次只读校验，不新增用户门禁。
+- Continuity check：已授权实施契约因用户改向 CANCELLED，非空转 READY/IN_PROGRESS；U05 新任务由 Master 另行建立，本轮不自行创建。生成器批准保留，稳定副本未作为运行入口；无后端、Client 正式接入或 QA 通过结论。
+<!-- MINIGAMES-IMPL-CONTRACT-20261012 END -->
+
+<!-- U05-MILK-TEA-FRONTEND-20261012 START -->
+### WR-20261013-U05-MILK-TEA-FRONTEND-001｜U05 奶茶前端示例送审
+
+- 结果与证据：Master v0.14 将范围改为 U05 纯前端单元示例；Client 保护共享菜单基线，完成独立玩法、隔离存档、配置副本与真实 Cocos Web 交互。Client 六项验收同序 PASS；Tech 与 Master 同版 Review APPROVED，Master 接受准确 v0.1 成品送审而非最终 DONE。Producer 复核 35/35 文件 SHA，绑定清单自身 SHA 后将 Task/审批置 `USER_REVIEW`。后端实施契约取消、正式配置索引未激活；本示例不分 QA Agent。
+- 时间与耗时（Asia/Shanghai）：U05 起点为 2026-10-12 21:52:04 +08:00 的可核 Task 阅读；Client 菜单基线首产 mtime 21:54:55；22:19 首次构建出现 Set 转换兼容异常、22:25:31 构建实际核核心闭环；22:50 Creator CLI 启动前 SIGABRT，正规权限单次重试于 23:01:17 构建结束；23:09:50 返回 warning 促成再修，23:27:20 最终构建回归。Producer 送审登记在 2026-10-13 00:01:46 +08:00 后。起点至登记至少 2 小时 9 分 42 秒的可观察墙钟包含制作、浏览器检查、返工、工具恢复及 Review，不等于任一角色净工时；各段净耗时和用户原消息精确时刻未知。
+- 影响与原因：22:19 兼容异常与随后小屏遮挡、返回重复销毁 warning 均由实际 Web 检查发现并修正；22:50 故障发生于 macOS 应用初始化，非工程编译错误，净故障时长未知。浏览器检查等待与制作、评审并行，不能据总跨度归责角色快慢；尚无可比目标时限。
+- 建议与复核：Client 下一次 U05 修订前保留每版构建身份并回归小屏、返回/重入及控制台，代价为一轮真实 Web 操作，复核点为下次同版 Review；Producer 继续按 Master 清单 SHA 绑定可玩成品，复核点为用户对准确 v0.1 的决定。此建议不新增 QA 或用户门禁。
+- Continuity check：当前 U05 已到真实 `USER_REVIEW`，不是仅以 READY/IN_PROGRESS 占位；父任务仍 `SPEC`、后端实施契约 CANCELLED、正式索引无入口。等待用户审核此 U05 成品；真机触摸、平台 SDK、后台休眠和长时压力未独立测试，不能外推正式运行或 QA 通过。
+<!-- U05-MILK-TEA-FRONTEND-20261012 END -->

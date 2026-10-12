@@ -1,0 +1,68 @@
+{
+  "task_id": "U05-MILK-TEA-FRONTEND-SAMPLE-20261012",
+  "owner": "client",
+  "summary": "在现有单元 Gallery 增加独立 U05 奶茶 Lab，使用获批完整配置等字节副本实现本地玩法与隔离进度；Creator 3.8.8 最终 Web 构建于23:27通过，Master已完成最终小屏布局复核，Tech Lead最终Review待完成。",
+  "artifacts": [
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/DELIVERABLE.json",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/UnitSampleGallery.baseline.ts",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/milk_tea_state.check.js",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/ISOLATED_WEB_BUILD_PROFILE.json",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/BUILD_AND_RESOURCE_IDENTITY.json",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/CREATOR_BUILD_FINAL.log",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/labs/u05/milk_tea_lab.ts",
+    "apps/client/assets/labs/u05/milk_tea_state.ts",
+    "apps/client/assets/resources/u05_milk_tea/config.json",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-small-selection.jpg",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-small-game.jpg",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-small-recipe.jpg",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-timed-correct.jpg",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/BROWSER_RUNTIME_REPORT.md",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-release-reentry.jpg",
+    "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-normal-progress.jpg"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "菜单有U05店铺小游戏，奶茶入口与开始制作可操作，返回/重入不影响U00-U04；其余五店只标待讨论",
+      "result": "PASS",
+      "evidence": "UnitSampleGallery bundle 含 U05 入口和其余五店‘待讨论’；Master在内置浏览器进入、开始、返回并重入；23:27版控制台无error/warn。完整操作记录见 evidence/BROWSER_RUNTIME_REPORT.md 和 browser-final-release-reentry.jpg。"
+    },
+    {
+      "criterion": "获批四表配置来源/哈希可追溯，五档3/4/5/5/5维与两阶段、简单不限时中等起限时；新局锁定阶段/目标/池，查配方/切后台期间计时继续",
+      "result": "PASS",
+      "evidence": "获批完整配置等字节副本SHA见 evidence/BUILD_AND_RESOURCE_IDENTITY.json；独立检查覆盖五档、两阶段与选项池；Master在最终构建中实测噩梦二阶段、5项配方，弹层期间倒计时继续，后台输入被拦截。"
+    },
+    {
+      "criterion": "点击选择和撤销、缺项禁止交杯、错杯清空重做同单不计杯且时间继续、正确逐杯推进三杯通关、截止等于或之后失败、重试新局与退出无经验完整",
+      "result": "PASS",
+      "evidence": "纯逻辑检查覆盖截止等于/晚于deadline失败及奖励边界；Master最终浏览器实测缺项禁交、错杯同单清空、撤销、正确交杯推进、超时失败及重试；截图 browser-wrong-cup.jpg、browser-final-timed-correct.jpg，操作清单见 BROWSER_RUNTIME_REPORT.md。"
+    },
+    {
+      "criterion": "示例本地存档隔离，通关只加一次经验且可重复新局获取，失败/退出不给；前档通关及启用成长条件共同解锁，永久解锁/重载保留，坏存档有可恢复处理",
+      "result": "PASS",
+      "evidence": "纯逻辑检查覆盖一次性经验、退出/失败不给奖励、启用解锁条件、永久解锁和坏存档恢复；隔离键 u05.milk-tea.lab.v1。旧22:25构建的通过/持久化截图由 evidence/history/BUILD_IDENTITY_20261012_2225.json追溯；最终浏览器小屏图见 browser-final-small-*.jpg。"
+    },
+    {
+      "criterion": "现有手机竖屏及较小视口可读可点，无遮挡/溢出，实际Cocos Web产物在内置浏览器交互检查，有当前构建身份与明确未验证范围",
+      "result": "PASS",
+      "evidence": "Master在最终23:01布局构建的360×640视口实测：选择页解锁说明清晰且未被杯图挡住；五维四选项可读可点；配方弹层五项完整并可继续制作。23:27构建只修复返回/重入销毁生命周期，Master在该版默认尺寸强制刷新后实测进入→返回→重入成功且console新时间窗error/warn为空。截图/身份/未验证范围见 evidence/BROWSER_RUNTIME_REPORT.md（最终构建身份在 BUILD_AND_RESOURCE_IDENTITY.json）。"
+    },
+    {
+      "criterion": "不实现后端、不改生产权威/经济规则、不新增美术图片/字体依赖；模块与本地示例状态可在离开时释放，无无关文件覆盖",
+      "result": "PASS",
+      "evidence": "本轮只有 U05 Lab、隔离配置资源与最小 Gallery 接线；Component 生命周期释放配置引用、解绑输入和清理节点；无网络/后端代码或图像/字体新增。"
+    }
+  ],
+  "assumptions": [
+    "完整server JSON在U05本地Lab中的使用仅用于用户授权的示例规则模拟，不表示生产客户端或服务端接入。",
+    "Creator实际运行构建使用隔离副本 /private/tmp/u05-milk-tea-build-src/client；主工程Editor由其它任务占用。"
+  ],
+  "risks": [
+    "真机、原生平台、平台SDK、设备帧率/内存与长时压力不在本轮验证。",
+    "LOCAL Lab XP、通关和解锁均非可信生产结算。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
