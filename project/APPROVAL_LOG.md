@@ -379,3 +379,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 续轮只读审计 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.md` 仅增加可查证据，交付索引现 18/18；未产生新的资源审批、旧资源失败决定或规范 v0.1 用户决定。Game 最新 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已推送；准确规范审批仍 `USER_REVIEW`、`decided_at=null`，Studio 候选未启用。
 - 2026-10-12 12:20:09 +08:00 再核：准确 v0.1 未获用户批准，审批仍 `USER_REVIEW`/`decided_at=null`；提案 `PROPOSED/PENDING`，模板 `active:false`。本轮无新决定或新审批，不把第三轮自动目标阻塞状态写成正式 Task `BLOCKED`。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
+
+<!-- MG01-RECIPE-ORDER-20261012 START -->
+## 2026-10-12｜MG01 配方加入顺序有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md`，SHA-256 `3fd3488763748d36771b5249473bdfe1fc030f2c82d9756c23d5bbcb448cca4c`，Master Review APPROVED。只批准 MG01 中等加入甜度、困难加入冰量，五档配方项数仍为 `3/4/5/5/5`；每杯操作顺序、封顶后增难参数及档内进度未批。旧 Product v0.1 审批保持 `USER_REVIEW`，无开发批准。
+<!-- MG01-RECIPE-ORDER-20261012 END -->

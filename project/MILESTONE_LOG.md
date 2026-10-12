@@ -791,3 +791,10 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `READ_ONLY_RESOURCE_AUDIT`：续轮新增 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json`、同名 `.md`；交付索引当前 18/18 实存。最终测量脚本记录 2026-10-12 12:09:18–12:09:20 +08:00、1.634 秒，仅代表该次运行；调查整体起点与净耗时未知。18 PSD/90 身份、12 组同尺度裁切框内差异、6 缩放项、40 帧/10 组复用/9 工具身份见报告。Game 最新 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已由 Master 报告推送；`1114b537` 保留为规范首提交。Task/审批仍 `USER_REVIEW`，无新增用户决定、旧资源失败结论或新制作许可。
 - `THIRD_BLOCKED_AUDIT`：Producer 于 2026-10-12 12:20:09 +08:00 核 Task/Approval `USER_REVIEW`、`decided_at=null`，跨角色提案 `PROPOSED/PENDING`，模板 `active:false`；Game 当前 HEAD/远端 main `310eb48eac0d97a91e0e72730a886a34b4acbb38`，Studio 本地 `e4cc747f30ec08ec0187eaf419a2d01c9af23d3c`、远端 `9ee34fa80c9c96a1999849175242ef077b78741d`。本轮无生图、改图、新运行；第三次遇到同一准确版本审批与模板同步授权缺口。Master 自动目标将标 blocked，正式 Task 不改 `BLOCKED`，仍在 `USER_REVIEW`。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
+
+<!-- MG01-RECIPE-ORDER-20261012 START -->
+## 2026-10-12｜MG01 配方要素顺序分项确认
+
+- `USER_DECISION_RECIPE_ORDER`：用户选择“中等加甜度，困难再加冰量”。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md` 与 `RECIPE_ORDER_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json` 为有限 `USER_APPROVED`，决定文档 SHA-256 `3fd3488763748d36771b5249473bdfe1fc030f2c82d9756c23d5bbcb448cca4c`。用户回复精确时刻未知。
+- `CONTINUITY_CHECK`：3/4/5/5/5 项数不变；父 Task `SPEC`、旧 Product v0.1 `USER_REVIEW`，封顶后增难与档内进度待讨论，无本线空转 `READY/IN_PROGRESS`。
+<!-- MG01-RECIPE-ORDER-20261012 END -->

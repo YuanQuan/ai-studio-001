@@ -745,3 +745,10 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 续轮只读审计：`deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json` 与同名 `.md` 已入交付索引，当前 18/18 实存。18 PSD 均 18 层（5 显/13 藏），90/90 文件身份匹配；12 组同尺度重组在实际登记背景的裁切框内 2 组零差、10 组最大通道差 1，框外因裁切范围有差异；另 6 组 0.75 缩放未作零差断言。40/40 帧文件及像素 SHA、walk/run 10/10 对逐像素复用、9/9 冻结工具 SHA 均匹配。引用的 3 份 PSD 当前工作区不可访问，40 条帧源引用未核 SHA，未推断永久丢失；分层 alpha、骨骼、新运行与节省比例仍 `NOT_TESTED`。图像生成和改图 0。Game 最新提交 `f7bd0ab686ea2fb8ddfeb1277b5857d08280933e` 已推送，前述 `1114b537` 是规范首提交。规范及审批仍 `USER_REVIEW`/`PENDING`，Studio 候选未发布；本轮有新增审计证据，无空转 `READY/IN_PROGRESS`，不形成旧资源失败结论或下游解锁。
 - 第三轮阻塞复核（2026-10-12 12:20:09 +08:00）：Task/准确 Artifact 审批仍 `USER_REVIEW`、`decided_at=null`，跨角色提案 `PROPOSED/PENDING`，标准模板 `active:false`。Game 当前 HEAD 与远端 main 同为 `310eb48eac0d97a91e0e72730a886a34b4acbb38`，上轮只读审计已推送；Studio 本地 `e4cc747f30ec08ec0187eaf419a2d01c9af23d3c`、远端 `9ee34fa80c9c96a1999849175242ef077b78741d`，候选仍未发布。本轮只复核，无生图、改图或新运行。连续第三轮缺准确 v0.1 用户批准及本次模板 Git 同步授权，已无本线获授权且无阻塞的工作；Master 将自动目标标为 blocked，正式 Task 仍 `USER_REVIEW`、目标未完成。当前本地历史及相关路径扫描未见被引用的 3 份 PSD，仅能说明当前不可核源链，不推断永久丢失。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
+
+<!-- MG01-RECIPE-ORDER-20261012 START -->
+## 2026-10-12｜MG01 配方要素加入顺序当前决定
+
+- 用户已确认：简单茶底/奶类/小料三项，中等加入甜度四项，困难再加入冰量五项，地狱和噩梦保持五项；五档项数 `3/4/5/5/5`。准确决定 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md` 经 Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json` 为 `USER_APPROVED`。本项解决上轮“新增两项顺序待定”，不定义每杯制作操作顺序。
+- 简单不限时、中等及以上限时等已确认规则继续有效。五项封顶后的加难方式、档内进度依据、具体配方/订单数/秒数仍待讨论。父 Task `SPEC`，旧 Product v0.1 `USER_REVIEW`；不解锁资源或编码。Continuity check：本轮决定已登记，无本线空转 `READY/IN_PROGRESS`；复盘 `WR-20261012-MG01-ORDER-001`。
+<!-- MG01-RECIPE-ORDER-20261012 END -->

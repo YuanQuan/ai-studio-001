@@ -793,3 +793,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间与原因：本轮整体开始时间及净耗时无可靠记录，记为未知；12:20:09 是状态核验节点，不是制作完成时间。连续第三轮缺准确 v0.1 用户批准和本次 Studio Git 同步授权；这是明确门禁与发布限制，不能计为 Agent 制作慢因。
 - 建议与 continuity：Master 在用户给出准确版本决定及模板同步授权后复核门禁与仓库分歧，再继续；代价为一次版本/远端核对，复核点为用户决定后的下一轮。当前已无本线获授权且无阻塞的工作，Master 将自动目标标 blocked；正式 Task/Approval 保持 `USER_REVIEW`，目标未完成。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
+
+<!-- MG01-RECIPE-ORDER-20261012 START -->
+### WR-20261012-MG01-ORDER-001｜奶茶新增配方项顺序确认
+
+- 结果与证据：用户确认 MG01 中等加甜度、困难再加冰量；`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md` 与 Master Review 实存，Producer 的 `ARTIFACT_APPROVAL_RECIPE_ORDER_v0.4.json` 仅对此顺序记 `USER_APPROVED`。旧 Product v0.1 仍 `USER_REVIEW`，父任务 `SPEC`，无代码资源。
+- 时间与耗时（Asia/Shanghai）：可核本轮探索起点 2026-10-12 12:27:05 +08:00，决定、审批及流程登记于 12:29:10 后实存；可观察跨度至少约 2 分 05 秒。用户消息精确时刻、各角色净工时和等待时长未知，不把总墙钟归为单角色耗时。
+- 影响与原因：旧“甜度/冰量顺序待定”已解除，五项封顶后的增难方式、档内进度及数值仍待讨论。无可比时限或可证实慢因；未见本轮工具故障证据。
+- 建议与复核：Master 下一轮围绕五项封顶后的加难参数及档内递增依据提问，不从本次加入顺序推定操作顺序；代价为一轮问答，复核点为下一份用户决定。Producer 保持有限审批与旧整包审批分离，复核点为下次状态核验。
+- Continuity check：本轮明确决定已登记，父 Task `SPEC`、Product v0.1 `USER_REVIEW`，无空转 `READY/IN_PROGRESS` 或正式开发输入。
+<!-- MG01-RECIPE-ORDER-20261012 END -->
