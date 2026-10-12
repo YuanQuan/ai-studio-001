@@ -715,3 +715,13 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - MG02 糖画、MG03 炭烤、MG04 理发、MG05 花灯、MG06 投壶：仅为后续讨论队列，候选玩法未获批准，尚无正式开发任务或运行、QA结论。
 - 下一步：Master 向用户呈现准确 MG01 v0.1 讨论包，请用户选择奶茶核心操作方向；随后逐项讨论完整单局和难度规则。Continuity check：MG01 已真实抵达 `USER_REVIEW`，无空转 `READY/IN_PROGRESS`；父任务保持 `SPEC`，MG02–06 不是已解锁的 `READY` 任务。复盘见 `project/WORK_RETROSPECTIVE_LOG.md` 的 `WR-20261012-SIX-SHOP-MG01-001`。
 <!-- SIX-SHOP-MINIGAMES-20261012 END -->
+
+<!-- MG01-CORE-20261012 START -->
+## 2026-10-12｜六店小游戏最新决定（覆盖上方 10 点首轮送审历史快照）
+
+- 父线 `SIX-SHOP-MINIGAMES-20261012` 仍为 `SPEC`。用户现已选 MG01 核心操作 A：按订单选原料、搭配小料、完成饮品；见 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md` 与对应有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CORE_v0.2.json`。此最新记录覆盖旧块“核心待选”的历史状态。
+- 六店统一五档：简单、中等、困难、地狱、噩梦；六店简单不限时，中等及以上限时，档内随进度递增且六游戏独立调参。`DIFFICULTY_DECISION.md` 与 `ARTIFACT_APPROVAL_DIFFICULTY_v0.2.json` 的有限批准覆盖路线 v0.1 旧“三档”范围；历史文件不改写。MG01 正确完成规定数量订单过关，其余五店的过关目标未定。
+- MG01 提示与纠错：简单显示完整配方，中等及以上只显示饮品要求且可随时查配方；交杯前可撤销选料，交错不计完成、可重做，限时档计时继续。见 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/MILK_TEA_RULES_DECISION.md` 与 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_MILK_TEA_RULES_v0.2.json`。三个决定均经 Master 同版 Review，用户消息精确时刻未知。
+- 旧 MG01 Product v0.1 Task 与审批仍 `USER_REVIEW`；用户的分项回答仅批准上述三份 Master 决定，不等于旧讨论整包 `USER_APPROVED` 或 Product Task `DONE`。下一待决为制作要素与难度递增依据；具体原料/配方、订单数、秒数、结算、奖励及正式开发输入仍待讨论。MG02–06 只在路线队列，未解锁开发。
+- Continuity check：当前已确认部分有准确记录，下一步 Master 继续产品问答；不存在本线空转 `READY/IN_PROGRESS`。复盘见 `project/WORK_RETROSPECTIVE_LOG.md` 的 `WR-20261012-MG01-CORE-001`。
+<!-- MG01-CORE-20261012 END -->

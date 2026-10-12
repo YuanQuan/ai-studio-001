@@ -355,3 +355,12 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户明确要求执行此前呈现的同名计划，原消息精确时刻未知。准确审批对象为 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md`，SHA-256 `a01324c5aaa0c010ef1ae07625011008575d82a875ed4847aadcc6b4211c9fef`；Master Review `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP_REVIEW.json` APPROVED；记录 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_ROADMAP_v0.1.json` 为 `USER_APPROVED`、`decided_at=null`。此批准仅涵盖路线、主题、顺序、三档选档及档内递增方向。
 - MG01 Product v0.1 六 Required 与四项同序 PASS 实存，Master Review APPROVED 仅限讨论送审。准确 `PRODUCT_OUTLINE.md` SHA-256 `c47766b227976b12d46a3e6f4cd48f88227ca1c4268cd37d54f7f2fdfadfe1cb`；完整七文件 SHA 见 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json`。当前该审批为 `USER_REVIEW`、`decided_at=null`，等待用户选择奶茶核心操作；无 Product `USER_APPROVED`。六店具体玩法及奖励、成长、时间、失败与存档规则仍待决；路线批准不得移作 Product 或开发审批。MG02–06 尚为后续候选队列。
 <!-- SIX-SHOP-MINIGAMES-20261012 END -->
+
+<!-- MG01-CORE-20261012 START -->
+## 2026-10-12｜六店小游戏分项用户决定（当前记录）
+
+- 核心操作：`tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CORE_v0.2.json` 为 `USER_APPROVED`，绑定 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md` SHA-256 `e1d8f4b55a2cd2b67b6d36f45b6ce8796dcfdf658360407d6eb47a30784417f7`；仅批准 MG01 订单配方制作 A。
+- 难度与计时：`ARTIFACT_APPROVAL_DIFFICULTY_v0.2.json` 为 `USER_APPROVED`，绑定同目录 `DIFFICULTY_DECISION.md` SHA-256 `2b6dda0f71c8c2d8ec5204c572df19ef163a90c1551e1b9fa0889e441945b688`；六店五档，简单不限时、中等及以上限时；MG01 完成规定数量正确订单过关。此项覆盖旧三档表述，不批准具体数值或其余五店目标。
+- 奶茶提示纠错：`ARTIFACT_APPROVAL_MILK_TEA_RULES_v0.2.json` 为 `USER_APPROVED`，绑定同目录 `MILK_TEA_RULES_DECISION.md` SHA-256 `cc6299f60af437041fbda71748a8bb4aa28d9e952b5631aa47beae7b3280e8bd`；简单完整配方，中等以上饮品要求且可查配方，交杯前撤销，交错不计完成可重做、限时档计时继续。三项 Master Review 均 APPROVED，用户精确回复时刻未知，`decided_at=null`。
+- 这三份是准确范围的有限批准；旧 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json` 仍 `USER_REVIEW`，Product Task 不 `DONE`，路线 v0.1 的历史批准保留。未确认制作要素、难度递增依据、订单数和秒数，不解锁资源、编码、QA。
+<!-- MG01-CORE-20261012 END -->

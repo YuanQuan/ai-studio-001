@@ -748,3 +748,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Product 在下一轮脑图任务开始时先核 MindMap AI 额度，可用则生成外链，不足则即时采用同版可编辑源与快照；代价为一次额度查询，复核点为下一版脑图交付。Producer 对长中文流程记录优先用补丁工具写入并核基线差异，减少编码重试；代价为一次差异核验，复核点为下一次状态登记。Master 待用户选择 MG01 核心操作后才编排后续正式规则工作；复核点为下一次准确版本用户决定。
 - Continuity check：本轮已真实到 MG01 `USER_REVIEW`；父线 `SPEC` 表示六玩法仍待逐店讨论，MG02–06 未开工，无本线空转 `READY/IN_PROGRESS`。下一步等待用户对当前讨论包作决定，不能视为 Product `DONE` 或开发许可。
 <!-- SIX-SHOP-MINIGAMES-20261012 END -->
+
+<!-- MG01-CORE-20261012 START -->
+### WR-20261012-MG01-CORE-001｜奶茶分项决定与六店难度更新
+
+- 结果与证据：用户明确 MG01 订单配方制作核心、六店五档与统一计时、MG01 完成规定数量正确订单过关，以及奶茶配方提示和交杯纠错。Master 将三组决定分别写入 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md`、`DIFFICULTY_DECISION.md`、`MILK_TEA_RULES_DECISION.md` 并作三份同版 APPROVED Review；Producer 在父 Task 目录登记三份有限 `USER_APPROVED` 审批及 SHA。父 Task 仍 `SPEC`，旧 Product v0.1 Task/Approval 仍 `USER_REVIEW`，未解锁资源、编码或 QA。
+- 时间与耗时（Asia/Shanghai）：本轮可核探索起点 2026-10-12 11:32:36 +08:00，三决定与审批、看板登记于 11:44:15 前实存，可观察墙钟跨度最多 11 分 39 秒。用户各次回复精确时刻、各角色净制作时间、等待时间均未知；不能将墙钟总跨度归为单一角色制作耗时。旧路线三档被最新五档决定覆盖，属于用户明确更新，不作为返工归责。
+- 影响与原因：连续问答很快明确计时适用六店、奶茶过关目标和提示纠错，减少了待决范围；具体原料/配方、订单数、秒数与档内递增依据仍待产品讨论。当前无可比目标时限或同类耗时基线，未发现可证实的慢因；无本轮工具故障时长证据。
+- 建议与复核：Master/ Product 在下一轮先围绕“制作要素与难度递增依据”形成候选并让用户逐项选择，避免把示例配方或推荐值当既定规则；代价为一轮产品问答，复核点为下一份准确用户决定。Producer 继续用独立有限审批覆盖新决定并保留旧整包历史，复核点为下一次状态/审批核验；不增加门禁。
+- Continuity check：本轮已授权的三组明确决定均登记；父线 `SPEC`，旧 MG01 Product 资料在真实 `USER_REVIEW`，MG02–06 仍为队列，无本线空转 `READY/IN_PROGRESS`。后续制作要素、进度依据与数值等待用户继续讨论，不宣称正式 PRD 或实现完成。
+<!-- MG01-CORE-20261012 END -->

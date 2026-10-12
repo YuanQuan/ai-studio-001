@@ -762,3 +762,12 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MASTER_REVIEW.json` mtime 2026-10-12 10:20:43 +08:00、decision APPROVED，核六 Required、四项同序 PASS、契约与路径；结论只准首轮讨论送审。
 - `USER_REVIEW`：Producer 于 2026-10-12 10:21 后核实并将 MG01 Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json`，绑定讨论提纲、脑图源/快照、操作选项、验收、交付索引及 Master Review 七文件 SHA。用户决定尚无，父 Task `SPEC`，五店后续队列未启动；continuity check 无本线空转 `READY/IN_PROGRESS`。
 <!-- SIX-SHOP-MINIGAMES-20261012 END -->
+
+<!-- MG01-CORE-20261012 START -->
+## 2026-10-12｜MG01 核心操作、六店难度及奶茶规则分项确认
+
+- `USER_DECISION_CORE`：用户选择“按订单配方制作：选原料、搭配小料、完成饮品”；Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md`、`CORE_OPERATION_REVIEW.json` 实存，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CORE_v0.2.json` 为 `USER_APPROVED`，准确文件 SHA-256 `e1d8f4b55a2cd2b67b6d36f45b6ce8796dcfdf658360407d6eb47a30784417f7`。
+- `USER_DECISION_DIFFICULTY`：用户将六店统一改为简单、中等、困难、地狱、噩梦五档，六店简单不限时、中等及以上限时；奶茶正确完成规定数量订单过关。`DIFFICULTY_DECISION.md`/`DIFFICULTY_REVIEW.json` 与 `ARTIFACT_APPROVAL_DIFFICULTY_v0.2.json` 实存，决定文档 SHA-256 `2b6dda0f71c8c2d8ec5204c572df19ef163a90c1551e1b9fa0889e441945b688`。仅档数名称覆盖旧路线三档，不追改历史。
+- `USER_DECISION_MG01_RULES`：用户确认简单完整配方、中等及以上只显示饮品要求可随时查配方；交杯前可撤销，交错不计完成可重做且限时档计时继续。`MILK_TEA_RULES_DECISION.md`/`MILK_TEA_RULES_REVIEW.json` 与 `ARTIFACT_APPROVAL_MILK_TEA_RULES_v0.2.json` 实存，决定文档 SHA-256 `cc6299f60af437041fbda71748a8bb4aa28d9e952b5631aa47beae7b3280e8bd`。
+- `CONTINUITY_CHECK`：父 Task 仍 `SPEC`、MG01 Product v0.1 Task 仍 `USER_REVIEW`，上述分项批准不代替整包批准或下游门禁；下一项继续讨论制作要素与难度递增依据，MG02–06 未开工。用户各回复精确时刻未知。
+<!-- MG01-CORE-20261012 END -->
