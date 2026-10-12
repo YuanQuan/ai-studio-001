@@ -1,0 +1,47 @@
+{
+  "task_id": "CONFIG-DICTIONARY-20261012",
+  "owner": "product",
+  "summary": "核对三本业务配置工作簿共99个实际表头，建立独立中文字段说明、资源索引和等字节归档；三本均未获正式配置批准，现行正式资源列表为空。",
+  "artifacts": [
+    "project/config/FIELD_GUIDE.md",
+    "project/config/RESOURCE_INDEX.json",
+    "project/config/CONFIG_RESOURCES.md",
+    "project/config/archive/2026-10-12-config-audit/CUSTOMER_CONFIG_v0.1.xlsx",
+    "project/config/archive/2026-10-12-config-audit/MILK_TEA_MINIGAME_v0.1.xlsx",
+    "project/config/archive/2026-10-12-config-audit/U00_SHOP_LAYOUT_v0.1.xlsx",
+    "project/config/archive/2026-10-12-config-audit/FIELD_GUIDE.md",
+    "project/config/archive/2026-10-12-config-audit/RESOURCE_INDEX.json",
+    "project/config/archive/2026-10-12-config-audit/MANIFEST.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "所有已存在的业务配置字段均有独立中文解释，来源可追溯",
+      "result": "PASS",
+      "evidence": "FIELD_GUIDE.md逐一对应Customer 5表、奶茶4表及U00位置1表，共99个表头；索引指向原始工作簿和原产品说明。"
+    },
+    {
+      "criterion": "正式资源使用稳定无版本文件名；草案与正式、不可变历史明确区分",
+      "result": "PASS",
+      "evidence": "当前无用户批准的正式配置，RESOURCE_INDEX.json current_formal_resources为空且各active_path为null；三本旧版原件保留、archive副本SHA-256与原件逐字节一致。 同批FIELD_GUIDE与RESOURCE_INDEX已在archive留快照，MANIFEST记录SHA和迁移说明。"
+    },
+    {
+      "criterion": "看板中文简洁、正式配置可点击、原任务状态及审查历史可追溯",
+      "result": "NOT_TESTED",
+      "evidence": "看板由Client与Producer维护；本交付提供机器索引与中文目录供其消费。"
+    },
+    {
+      "criterion": "当前项目与Studio规则及标准模板同步，链接和字段覆盖检查通过",
+      "result": "NOT_TESTED",
+      "evidence": "本Product交付仅核对本项目三本工作簿字段与索引真实路径；Studio/模板同步由Master负责。"
+    }
+  ],
+  "assumptions": [
+    "现有三本业务工作簿均未见该工作簿准确版本的USER_APPROVED；不将其他方向或客户端验收推断为配置批准。",
+    "顾客配置历史源为禁用样例，无准确审批文件，索引用原产品字典标明来源。"
+  ],
+  "risks": [
+    "U00位置表仅旧R3基线并处USER_REVIEW；奶茶数值全DRAFT，均不得作为运行输入。",
+    "字段的最终存储类型、导出格式与跨端可见性仍需Tech Lead评审。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

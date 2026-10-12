@@ -859,3 +859,15 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/MASTER_REVIEW.json` mtime 2026-10-12 14:35:40 +08:00，decision APPROVED；八 Required、五同序 PASS、xlsx只读内容/四张显示图核验通过，仅准送审，未测运行平衡。
 - `USER_REVIEW`：Producer 将规格 Task `REVIEW→USER_REVIEW`，新建 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 绑定 PRD/流程/字典/验收/校验/交付/Review、xlsx 与四图十三文件 SHA；`decided_at=null`，用户尚未批准新增数值。Continuity check：本线到真实用户门禁，无空转 `READY/IN_PROGRESS`，下游不解锁。
 <!-- MINIGAMES-SPEC-20261012 END -->
+
+<!-- CONFIG-DASHBOARD-20261012 START -->
+## 2026-10-12｜配置说明与中文进度页整理
+
+- `USER_DIRECTION`：用户明确要求配置独立中文全字段说明、正式无版本名、历史归档、中文精简看板全部正式资源链接；本轮非功能维护 `AUTO`，不批准具体草案。
+- `TASK_STARTED`：Master 父 Task `tasks/CONFIG-DASHBOARD-20261012/TASK.json` 于可核 2026-10-12 14:57:11 +08:00 开始当前与主模板规则/默认项修改；Client `tasks/DASHBOARD-SIMPLIFY-20261012/TASK.json` 实际修改 `project/dashboard/index.html`；Producer `tasks/CONFIG-DASHBOARD-PRODUCER-20261012/TASK.json` 于 15:02:14 +08:00 核规则并登记节点。Product 初时 `READY`，首次模型容量错误后重试，随后实核三工作簿表头并 `READY→IN_PROGRESS`；Tech `tasks/CONFIG-TECH-REVIEW-20261012/TASK.json` 随后实际核字段、索引、归档并 `READY→IN_PROGRESS`。Product/Tech 精确开工秒数未知。
+- `DRAFT_SUBMITTED`：Product `deliverables/product/CONFIG-DICTIONARY-20261012/v0.1/DELIVERABLE.json`、Client `deliverables/client/DASHBOARD-SIMPLIFY-20261012/v0.1/DELIVERABLE.json` 已提交；各自 Task 到 `REVIEW`。Product 三本十表 99 字段、三份等字节归档、0 正式/3 草案；Client 中文当前/模板页及旧版快照齐。
+- `TECH_REVIEW_SUBMITTED`：Tech `deliverables/tech_lead/CONFIG-TECH-REVIEW-20261012/v0.1/REVIEW.json` 结论 `APPROVED`，三 Required 实存；Task `REVIEW`。范围仅字段、路径、归档 SHA、审批分类，不审数值或运行。
+- `MASTER_VALIDATED`：Master 本地 HTTP 浏览器实看当前页 117 任务、0 正式/3 草案及字段说明/日志；项目 451、模板 10 链接均实存，Task/审批阶段冲突 0，`deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/VALIDATION.json` PASS/0 errors。
+- `PRODUCER_REVIEW_SUBMITTED`：Producer 四日志、continuity、`deliverables/producer/CONFIG-DASHBOARD-PRODUCER-20261012/v0.1/DELIVERABLE.json` 提交，Task `REVIEW`；复盘 `WR-20261012-CONFIG-DASHBOARD-001`。
+- `MASTER_ACCEPTED`：Master 独立核 Product、Tech、Client、Producer 交付并接受本轮非功能维护；父与四子 Task 全部 `REVIEW/IN_PROGRESS→DONE`。本节点记录于 2026-10-12 15:22:11 +08:00；Master 接受消息精确秒数未知，不冒写为此时。具体业务工作簿仍无 `USER_APPROVED`。Continuity：本轮五 Task 均 `DONE`，无空转 `READY/IN_PROGRESS`。
+<!-- CONFIG-DASHBOARD-20261012 END -->

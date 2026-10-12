@@ -136,6 +136,7 @@ Artifact 审批记录必须符合 `schemas/artifact_approval.schema.json`。
 - Product / Art / UI 等允许多轮 Draft/Revision；只有用户批准的最终版本可以正式交付 Tech Lead / Client / Server / QA。
 - Producer 持续维护全部任务线当前状态、关键节点历史、审批记录和 Dashboard；任何角色进入执行后，关键节点及对应 Artifact 版本/真实路径必须持续可视化，用户可随时查询当前所有任务线和历史流转。
 - 公共游戏配置表由 Product 主导业务结构、字段语义、业务关联和数值内容；Tech Lead 评审字段类型、ID／引用完整性、跨端可见性，并负责技术校验与生成规范，统一遵守 `project/config/README.md`。
+- 所有业务配置表必须有独立中文文件解释全部字段；正式使用的表及生成资源采用稳定无版本号文件名，历史快照存于 `project/config/archive/`。项目进度 HTML 以精简中文呈现，并用超链接展示全部现行正式配置及字段说明。具体追溯、归档和草案隔离遵守 `rules/config_resource_contract.md`；无版本文件名不取消审批或历史版本记录。
 - 凡需用户审批的文档型 Artifact 默认以中文为主要表达语言；仅代码、路径、接口/字段名、固定状态枚举与必要专有名词保留英文。模板、正式交付文档和 Review 文档均遵守该规则，除非用户明确要求其他语言。
 影响跨角色或项目级的能力变更提案必须符合 `schemas/capability_change.schema.json`，并遵循 `governance/capability_change_protocol.md`。
 

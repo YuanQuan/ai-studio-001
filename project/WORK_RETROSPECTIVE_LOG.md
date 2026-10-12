@@ -901,3 +901,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Product 在用户决定当前草案后，对获批数值和配置源表锁定准确版本；Tech Lead 再核字段类型、引用、导出和存档兼容，复核点为后续正式技术评审。Producer 继续防止 DRAFT 工作簿进入运行配置，复核点为准确 v0.1 用户决定；不增加额外门禁。
 - Continuity check：授权范围从讨论确认连续推进到正式规格 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；父 `SPEC`，后续 Tech/Client/资源仍锁定。
 <!-- MINIGAMES-SPEC-20261012 END -->
+
+<!-- CONFIG-DASHBOARD-20261012 START -->
+### WR-20261012-CONFIG-DASHBOARD-001｜配置说明与中文进度页整理
+
+- 结果与证据：Product 三本十表 99 字段说明与三份等字节归档完成；Tech `REVIEW.json` 独立 `APPROVED`；Client 当前/模板页完成。Master 浏览器实看 117 任务、0 正式/3 草案，静态核项目 451、模板 10 链接，阶段冲突 0；`deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/VALIDATION.json` PASS/0 errors。Master 已接受父与四子 Task 为 `DONE`，业务草案用户审批不变。
+- 时间与耗时（Asia/Shanghai）：可核执行起点 2026-10-12 14:57:11 +08:00，Master 最终接受精确秒数未知，Producer 最终登记于 15:22:11 +08:00；可观察墙钟至登记为 25 分 00 秒，非 Master 接受或任一角色净制作耗时。该区间含多角色并行制作、技术/浏览器核验、工具等待与登记；用户审批等待、各角色净制作、Git 发布耗时未知。
+- 影响与原因：Product 首次模型容量错误后按原模型重试，Producer 收尾亦遇容量错误后重试；工具中断可证，净故障时间未知。旧看板一处局部批准被显示成整包批准，本轮按准确审批文件纠正；无草案误入正式索引。尚无同类时限基线，不判断角色慢，也不归责人员。
+- 建议与复核：Client 下次看板更新继续从准确审批文件生成阶段标签，代价一次映射检查，复核点为下一次浏览器验收；Product/Tech 下次配置入库复用表头覆盖和 SHA 检查，代价一次只读核验，复核点为下一次正式配置 Review；Producer 下次遇模型容量错误记录起止时刻，复核点为下一条复盘，以区分工具等待与净制作。
+- Continuity check：五 Task 均有实物与 Master 接受证据并已 `DONE`，无本轮空转 `READY/IN_PROGRESS`；复盘不新增审批门禁。
+<!-- CONFIG-DASHBOARD-20261012 END -->

@@ -1,0 +1,34 @@
+{
+  "id": "CONFIG-DASHBOARD-PRODUCER-20261012",
+  "title": "配置规则与看板维护流程记录",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "CONFIG-DASHBOARD-20261012",
+  "objective": "落实用户2026-10-12明确要求：所有配置独立中文字段解释、正式使用无版本文件名、历史归档、全部正式配置资源链接及精简中文看板。不变更玩法、数值、既有审批。",
+  "inputs": [
+    "AGENTS.md",
+    "project/config/README.md",
+    "project/WORKFLOW_STATUS.md",
+    "project/dashboard/index.html"
+  ],
+  "deliverables": [
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "deliverables/producer/CONFIG-DASHBOARD-PRODUCER-20261012/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "所有已存在的业务配置字段均有独立中文解释，来源可追溯",
+    "正式资源使用稳定无版本文件名；草案与正式、不可变历史明确区分",
+    "看板中文简洁、正式配置可点击、原任务状态及审查历史可追溯",
+    "当前项目与Studio规则及标准模板同步，链接和字段覆盖检查通过"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "非功能型低风险规则落实/文件整理/进度页维护，用户已明确授权修改；不新增产品或资源批准。",
+    "Master跨职责授权：Product维护project/config说明、索引与等字节副本，不修改已锁定工作簿内容/历史审批引用；Client仅修改当前project/dashboard及父仓库templates/game对应HTML；Producer仅维护流程日志及本轮任务状态，不覆盖其他任务。",
+    "既有工作区有未提交工作，本轮不得混入无关源码或交付。"
+  ]
+}

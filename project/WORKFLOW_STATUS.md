@@ -812,3 +812,14 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Master 新建 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/TASK.json`，依赖满足后 `SPEC→READY`；Product 首份 Required `deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md` mtime 14:24:00 +08:00 实存，Owner `READY→IN_PROGRESS→REVIEW`。Task 八份 Required（含 `project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx`）及四份表格显示图实存，`DELIVERABLE.json` 五项验收同序 PASS；Master `MASTER_REVIEW.json` 于 14:35:40 +08:00 APPROVED 仅具送审条件。Producer 将 Task 与绑定十三文件 SHA 的 `ARTIFACT_APPROVAL_v0.1.json` 置 `USER_REVIEW`，待用户对新增数值与边界草案决定。三杯/两阶段和数值均 `PROPOSED`，工作簿仍 DRAFT 且 export_enabled=false；父任务 `SPEC`，Tech、Client、资源与 QA 未解锁。
 - Continuity check：本轮从讨论批准持续到正式规格准确 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；下一动作是用户审阅当前规格/源表，不能据静态校验宣布运行、平衡或目标设备通过。复盘 `WR-20261012-MINIGAMES-SPEC-001`。
 <!-- MINIGAMES-SPEC-20261012 END -->
+
+<!-- CONFIG-DASHBOARD-20261012 START -->
+## 配置说明与中文进度页整理（2026-10-12，已完成）
+
+- 用户本轮明确授权：所有业务配置单独中文全字段说明、正式使用稳定无版本文件名、历史归档、中文精简进度页链接全部正式配置。本次为 `AUTO` 非功能维护，不批准业务草案、数值、视觉资源或运行配置。
+- 父 `CONFIG-DASHBOARD-20261012` 及 Product `CONFIG-DICTIONARY-20261012`、Tech `CONFIG-TECH-REVIEW-20261012`、Client `DASHBOARD-SIMPLIFY-20261012`、Producer `CONFIG-DASHBOARD-PRODUCER-20261012` 均已由 Master 基于实物与验证接受，Task `DONE`。Product 首次模型容量错误后重试；Producer 收尾亦遇容量错误，净故障耗时未知。
+- Product `project/config/FIELD_GUIDE.md` 覆盖三本十表 99 个实际表头；`project/config/RESOURCE_INDEX.json` 登记 0 正式、3 草案，三份源工作簿在 `project/config/archive/2026-10-12-config-audit/` 有等字节历史副本。Tech `deliverables/tech_lead/CONFIG-TECH-REVIEW-20261012/v0.1/REVIEW.json` 独立 `APPROVED`，仅确认字段、索引、路径、SHA 与历史一致，不审定数值或运行。
+- Client `project/dashboard/index.html` 与模板页已更新；Master 本地 HTTP 浏览器实看中文首屏 117 条任务、0 正式/3 草案、字段说明与日志链接，静态核项目 451、模板 10 个链接实存，Task/审批阶段冲突 0。当前页本轮五项均已回填完成，未结束 32、待确认／修订／受阻 23。历史 HTML 保存在 `deliverables/client/DASHBOARD-SIMPLIFY-20261012/v0.1/history/index-before.html`。
+- Master `deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/VALIDATION.json` PASS/0 errors；当前游戏与主模板相关规则/提案四文件同字节，仅本次合同局部同步，`.studio-lock.json` 既有来源 commit 保留，不声称全 Studio 升级。奶茶正式规格原 `USER_REVIEW` 与其他资源审批不变。
+- Continuity check（2026-10-12 15:22:11 +08:00）：五个本轮 Task 均有交付与 Master 接受证据并已 `DONE`，无仅以 `READY/IN_PROGRESS` 占位的可继续任务。复盘 `WR-20261012-CONFIG-DASHBOARD-001`。提交推送由 Master 按日常授权独立记录。
+<!-- CONFIG-DASHBOARD-20261012 END -->

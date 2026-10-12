@@ -434,3 +434,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CONFIG_CONDITIONS_v0.9.json` 有限 `USER_APPROVED`、`decided_at=null`；准确对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md` SHA-256 `2cbcae949d46091b56cc8149e9ef6bdab5c0bfc10e8fcc489c0af03eee1fc0e2`，Master Review APPROVED。仅批准启用条件按“且”组合及魂数/魄数独立门槛开关；不批准具体数值或运行配置字段。
 - 正式规格 v0.1 八 Required、五项同序 PASS 与 Master Review APPROVED；`tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，PRD SHA-256 `e75fa05ac06a4029488eea894ee6e619501349fb384e9917a135c7a411dc3513`、人工源表 SHA-256 `cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa`，其余十一文件 SHA 在准确审批中。新增数值/三杯/两阶段为 PROPOSED，xlsx DRAFT 且 export_enabled=false；Tech、Client、资源与 QA 仍锁定。
 <!-- MINIGAMES-SPEC-20261012 END -->
+
+<!-- CONFIG-DASHBOARD-20261012 START -->
+## 2026-10-12｜配置整理授权与审查边界
+
+- 用户明确授权本轮非功能配置说明、归档、稳定正式入口规范及中文进度页整理；父与四个子 Task `approval=AUTO`。Master 已独立验收本轮结果并将五 Task 接受为 `DONE`。此为任务执行授权与接受，未建立三本业务配置任何准确版本的 `USER_APPROVED`。
+- Tech `deliverables/tech_lead/CONFIG-TECH-REVIEW-20261012/v0.1/REVIEW.json` 的 `APPROVED` 只指三本十表 99 字段覆盖、索引/归档 SHA、路径与审批分类技术事实。`project/config/RESOURCE_INDEX.json` 正式数组为空，三项仍为草案；顾客样例无具体用户批准，奶茶规格 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 与 U00 布局 `tasks/U00-SHOP-LAYOUT-CONFIG-001/ARTIFACT_APPROVAL.json` 均继续以准确 `USER_REVIEW` 记录为准。既有视觉资源审批未改变。
+<!-- CONFIG-DASHBOARD-20261012 END -->

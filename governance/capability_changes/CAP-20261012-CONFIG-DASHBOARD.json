@@ -1,0 +1,23 @@
+{
+  "id": "CAP-20261012-CONFIG-DASHBOARD",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "所有业务配置有独立中文全字段说明；正式表与生成资源无版本文件名，历史归档；项目进度HTML精简中文并链接全部正式配置。",
+  "reason": "用户2026-10-12明确声明配置说明、文件命名、历史归档及进度页要求。",
+  "impact": [
+    "配置字段说明及正式/历史入口",
+    "Product字段文档、Tech技术核验、Producer配置资源链接",
+    "当前游戏Studio快照、主Studio规则与标准项目默认模板"
+  ],
+  "affected_agents": [
+    "master",
+    "producer",
+    "product",
+    "tech_lead",
+    "client",
+    "server"
+  ],
+  "user_approval": "APPROVED",
+  "master_sync_required": true,
+  "status": "APPLIED"
+}

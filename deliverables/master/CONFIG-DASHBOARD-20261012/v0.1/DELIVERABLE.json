@@ -1,0 +1,46 @@
+{
+  "task_id": "CONFIG-DASHBOARD-20261012",
+  "owner": "master",
+  "summary": "落实配置独立中文字段说明、正式资源稳定无版本入口与历史归档规则，重构当前项目和新游戏模板的中文精简进度页。现有三本工作簿均未批准正式使用，保持草案。",
+  "artifacts": [
+    "rules/config_resource_contract.md",
+    "project/config/README.md",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/CONFIG_RESOURCES.md",
+    "project/config/RESOURCE_INDEX.json",
+    "project/config/archive/2026-10-12-config-audit/MANIFEST.json",
+    "project/dashboard/index.html",
+    "deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/CHANGE_SUMMARY.md",
+    "deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/VALIDATION.json",
+    "deliverables/tech_lead/CONFIG-TECH-REVIEW-20261012/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "所有已存在的业务配置字段均有独立中文解释，来源可追溯",
+      "result": "PASS",
+      "evidence": "Tech Lead REVIEW.json APPROVED：三本10表99字段逐一覆盖，无多余字段；FIELD_GUIDE与RESOURCE_INDEX均指向现有原规格。"
+    },
+    {
+      "criterion": "正式资源使用稳定无版本文件名；草案与正式、不可变历史明确区分",
+      "result": "PASS",
+      "evidence": "RESOURCE_INDEX current_formal_resources=[]、三项active_path=null；三本均未获准确用户批准，故不存在待改名的正式工作簿；archive三本及同批说明/索引与MANIFEST哈希吻合。"
+    },
+    {
+      "criterion": "看板中文简洁、正式配置可点击、原任务状态及审查历史可追溯",
+      "result": "PASS",
+      "evidence": "Codex内置浏览器经本地HTTP实看项目页首屏：117任务、正式0/草案3、中文字段与日志超链接；原HTML历史快照保留。"
+    },
+    {
+      "criterion": "当前项目与Studio规则及标准模板同步，链接和字段覆盖检查通过",
+      "result": "PASS",
+      "evidence": "VALIDATION.json PASS/0 errors：当前游戏与Studio四份共享规则/提案同字节，项目451和模板10个链接存在，Task/交付/Review结构核验。"
+    }
+  ],
+  "assumptions": [
+    "本轮为用户明确授权的组织规则与非功能维护 AUTO；不代表既有业务配置数值或运行资源获得具体批准。"
+  ],
+  "risks": [
+    "目前没有正式配置工作簿，因此无版本正式入口尚未发生一次真实发布切换；待首本表获得准确审批及技术校验后按规则执行并复核。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

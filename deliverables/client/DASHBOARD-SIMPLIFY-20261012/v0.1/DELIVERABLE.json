@@ -1,0 +1,43 @@
+{
+  "task_id": "DASHBOARD-SIMPLIFY-20261012",
+  "owner": "client",
+  "summary": "完成当前项目与标准模板的静态中文精简看板。117条任务线可追溯，配置区遵循资源索引：当前无正式可运行配置，三份草案均直链并标注。",
+  "artifacts": [
+    "project/dashboard/index.html",
+    "templates/game/project/dashboard/index.html",
+    "deliverables/client/DASHBOARD-SIMPLIFY-20261012/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/DASHBOARD-SIMPLIFY-20261012/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/DASHBOARD-SIMPLIFY-20261012/v0.1/history/index-before.html"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "所有已存在的业务配置字段均有独立中文解释，来源可追溯",
+      "result": "PASS",
+      "evidence": "Client看板链接独立字段说明；Product交付 CONFIG-DICTIONARY-20261012/v0.1 报告核对三本工作簿99个表头逐项解释并链接原始来源。"
+    },
+    {
+      "criterion": "正式资源使用稳定无版本文件名；草案与正式、不可变历史明确区分",
+      "result": "PASS",
+      "evidence": "资源索引 current_formal_resources 为空，首页明确正式可运行配置为0项；三份源表均标草案并分别链接来源、字段说明、审批（存在时）与等字节历史副本。Product报告记录SHA一致。"
+    },
+    {
+      "criterion": "看板中文简洁、正式配置可点击、原任务状态及审查历史可追溯",
+      "result": "PASS",
+      "evidence": "117条任务均可展开查看，状态、负责人、任务/实际最新交付版本/匹配当前Task阶段的审批链接和下一步均列出；无现存交付文件的行明确显示空态。原看板快照及流程日志可访问。当前正式配置0项，三份草案分别直链。审批冲突检查无结果。"
+    },
+    {
+      "criterion": "当前项目与Studio规则及标准模板同步，链接和字段覆盖检查通过",
+      "result": "PASS",
+      "evidence": "当前看板与父模板看板同步；项目页447个相对链接与模板10个链接全部存在；Product交付字段覆盖检查PASS。"
+    }
+  ],
+  "assumptions": [
+    "任务状态以根级TASK.json当前值为准；审批证据保留在审批文件与流程日志中。",
+    "Product正在生成的资源索引为正式资源直链唯一依据。"
+  ],
+  "risks": [
+    "页面以生成时任务状态为静态快照；任务状态或交付版本更新后须刷新。",
+    "实际浏览器视觉结果需Master完成最终检查。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

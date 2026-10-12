@@ -67,3 +67,9 @@ shared_contracts:
     applicable_roles: [master, producer, art, vfx, tech_lead, client, qa]
     execution: manual_constraints_until_tools_verified
     change_ref: governance/capability_changes/CAP-20261012-VISUAL-FIDELITY-COMPUTE.json
+
+  config-resource-documentation:
+    status: user_approved
+    rule: rules/config_resource_contract.md
+    applicable_roles: [master, producer, product, tech_lead, client, server]
+    change_ref: governance/capability_changes/CAP-20261012-CONFIG-DASHBOARD.json

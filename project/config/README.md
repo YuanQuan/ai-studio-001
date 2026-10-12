@@ -1,27 +1,22 @@
 # 游戏公共配置
 
-人工维护的源表使用 `.xlsx`，存于 `source/`；字段字典与校验契约存于 `schema/`。配置目录见 `CONFIG_CATALOG.md`。
+人工源表使用 `.xlsx`，位于 `source/`；生成资源位于技术评审确定的目录。所有配置以 [配置资源目录](CONFIG_RESOURCES.md) 为阅读入口，以 [资源索引](RESOURCE_INDEX.json) 登记当前路径和状态。
+
+## 中文说明与文件命名
+
+- [独立中文字段说明](FIELD_GUIDE.md) 必须覆盖每一张实际配置表的全部字段，并解释含义、类型、单位、取值、默认/空值与关联；未确定的约束明确标记待定。表内注释不代替本文件。
+- 正式使用的表和生成资源采用无版本文件名，例如 `source/SHOP.xlsx`、`generated/shop.json`。不要求在正式表正文中加入版本号。
+- 历史数据及当时的字段说明存于 `archive/<日期或修订标识>/`，附来源、审批记录、原路径、SHA-256与迁移说明。旧审批绑定路径保留为不可变历史兼容，当前编辑和正式使用入口由索引唯一指定。
+- 无版本命名和归档整理不代表草案获批。当前顾客与奶茶配置的正式可用性以各自具体审批及技术校验为准；不得把禁用草案用于运行。
+- 项目[进度页](../dashboard/index.html)链接全部现行正式配置与中文字段说明，草案单独标识。完整规则见 `rules/config_resource_contract.md`。
 
 ## 职责
-- Product 主导配置目录、业务表结构、字段语义、可调参数、业务 ID 与关联规则、平衡目标和数值内容，并维护人工源表及字段字典。
-- Tech Lead 评审字段类型、稳定 ID 与引用完整性、约束可执行性、客户端／服务端可见范围及兼容性，负责生成与技术校验规则；发现问题应提交评审意见，不自行改写产品语义。
-- Client/Server 消费经批准并校验的配置，不自行增加字段语义。
-- 本轮顾客配置是草案，详见 `schema/CUSTOMER_CONFIG.md`；发布须在用户批准具体产品规则后完成技术评审和校验。
 
-## Per-Table Data Dictionary
-For each table document:
-- unique ID
-- field/stable abbreviation where useful
-- type
-- business meaning
-- default/null policy
-- enum/range/unique rules
-- references/FKs
-- Client-only / Server-only / Shared
-- hot-update eligibility if later supported
-- compatibility/deprecation policy
+- Product 主导配置目录、业务结构、字段语义、可调参数、业务 ID 与关联规则、平衡目标和数值内容，维护人工源表与中文字段说明。
+- Tech Lead 评审字段类型、稳定 ID/引用完整性、约束可执行性、跨端可见范围及兼容性，负责生成与技术校验规则，不自行改写产品语义。
+- Client/Server 仅消费获批并通过校验的正式生成资源；不自行增加字段语义，不读取归档目录。
+- Producer 维护正式/草案状态、审批证据与进度页超链接。
 
-## Validation
-At minimum validate unique IDs, references, types/ranges, required values, deprecated ID/field reuse, and accidental exposure of sensitive server-only fields to Client.
+## 校验与扩展
 
-Do not create speculative tables just because the template exists. Add actual `.xlsx` files only when the project has a real requirement.
+至少检查全部表头是否有中文解释、ID 唯一性、必填、引用、类型/范围、废弃 ID/字段复用、敏感服务端字段暴露、正式入口文件名和归档字节/哈希。字段变更同步更新说明与迁移记录，运行时资源由工具生成，不手工维护多份事实源。不要仅因模板存在而创建空表或猜测产品规则。
