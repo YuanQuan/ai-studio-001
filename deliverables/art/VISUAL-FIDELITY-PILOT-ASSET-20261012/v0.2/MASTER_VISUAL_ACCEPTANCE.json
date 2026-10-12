@@ -1,0 +1,56 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "version": "v0.2",
+  "acceptance_type": "USER_VISUAL_GATE2_HANDOFF_ONLY",
+  "master_conclusion": "ACCEPTED_VISUAL_GATE_ONLY",
+  "user_message": "通过",
+  "user_message_exact_time": "UNKNOWN",
+  "approval_ref": "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json",
+  "approval_registered_at": "2026-10-12T20:47:49+08:00",
+  "master_recorded_at": "2026-10-12T20:49:55+08:00",
+  "accepted_artifacts": [
+    {
+      "role": "mask",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png",
+      "sha256": "f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f"
+    },
+    {
+      "role": "same_scale_full",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_full_083s.png",
+      "sha256": "1bbdf9eb26f8012d3ac7574a3d3e45ea9416c7867fa892e25d8d0ca857f54c21"
+    },
+    {
+      "role": "detail",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_static_contact.png",
+      "sha256": "6043b12414fb9958848ba72f5a0e87da57d218e0c58bb01e4ed4326e86333ddb"
+    },
+    {
+      "role": "cpu_reference",
+      "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preview/index.html",
+      "sha256": "b1b86c5f08cbae9ae4b2cc190e69665d4dc644020d2c122ff0d547b49c05463d"
+    }
+  ],
+  "accepted_scope": "用户批准唯一灯笼遮罩与同尺度重组及CPU参数预览的视觉方向；该决定可作为后续同源独立pilot运行对照的视觉基线。",
+  "submission_state_note": "Art DELIVERABLE/ASSET_MANIFEST/EXECUTION_LEDGER保留提交时内容；其中尚待用户决定的历史观察由本次独立Approval与本记录更新，不改写已呈效果文件。",
+  "runtime_status": "BLOCKED",
+  "runtime_evidence": "evidence/TECH_RUNTIME_REVIEW.md",
+  "post_approval_check": "evidence/POST_APPROVAL_RUNTIME_CHECK.md",
+  "unverified": [
+    "Creator导入与Effect编译",
+    "真实UV/采样映射",
+    "运行1.0零差及mask外RGB/alpha保持",
+    "实际循环/暂停/隐藏/重复触发",
+    "Draw Call增量",
+    "实际GPU纹理占用",
+    "CPU/GPU性能"
+  ],
+  "overall_task_status": "BLOCKED",
+  "formal_integration_status": "NOT_SCHEDULED_CURRENT_TASK_IS_ISOLATED_PILOT",
+  "not_accepted": "本记录不接受整体任务为DONE，不把视觉批准当成实际Cocos运行或性能通过，也不表示分层/细节修订/序列帧/骨骼四路线全部能力已验证。",
+  "budget_this_approval_turn": {
+    "new_generation_calls": 0,
+    "new_candidates": 0,
+    "new_visual_correction_rounds": 0,
+    "new_service_cost_yuan": 0
+  }
+}

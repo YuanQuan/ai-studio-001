@@ -843,6 +843,7 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 本轮批准交接（Producer 2026-10-12 15:06:27 +08:00 登记）：用户明确“批准”v0.2 Gate1 文字方案，同版 Master 接受，计划 Task 已 `DONE`；新首样 Task 已建、暂 `READY`，Art/Tech 尚待实际 preflight 与双签。用户消息精确时刻、各角色净耗时未知，不据登记时间推算。建议 Art/Tech 在同版 MASK_SPEC 上留下可核签认，复核点为首张 mask/预览导出前；当前无新资源或 QA 结论。Continuity：方案线结束，首样线等待真实开工证据，不能以 READY 占位提前宣告执行；一旦开工应及时登记。
 - 预签执行节点（Producer 2026-10-12 15:21:40 +08:00 核）：Art 的 MASK_SPEC/预签及 Tech 同批预签实际存在且哈希一致，新 Task 因真实 preflight 进入 `IN_PROGRESS`；此前 Owner 精确开工时刻及净核验耗时未知。本节点无新 PNG/Effect/Scene，制作 4 小时预算尚未从实际产出开始记。建议 Art/Client 在首个实际输出时由执行账本记录起点、候选数和工具调用，复核点为首个 PNG/实现文件；Producer 下一节点核预算与具体效果证据。Continuity：首样生产已解锁，需立即继续，不以状态登记代替生产；本条不判运行或效果通过。
 - 本轮首样结果与复盘（Producer 2026-10-12 15:51:16 +08:00 核）：Art 输出单候选 mask/同尺度与可编辑 CPU 预览，浏览器参考可见最暗点与暂停复位；Client 隔离源码已写，但 Creator 两次受限启动失败且无新构建，Tech 独立核后运行全 `NOT_TESTED`。账本制作 15:24:21–15:49:23 为 1502 秒，0 生图、1 候选、整批修正 2/2、0 新增费用。Art 修正预览效率/暂停语义 1 轮，Client 整理实现 1 轮；Creator 故障阻断运行，不能把环境故障归责为图像效果失败。建议 Tech/Client 在可用 Creator 环境对当前哈希重新构建并记录失败/成功证据，复核点为首个真实 build；预算修正轮次已满，后续需先停并向 Master 说明。Continuity：Art Gate2 视觉候选等用户决定，整体运行 Task 有具体 BLOCKED 原因，无空转 IN_PROGRESS；无正式接入或 QA 通过结论。
+- 本轮 Gate2 决定与 continuity（Producer 2026-10-12 20:47:49 +08:00 登记）：用户原话“通过”批准已送审的 mask/同尺度 CPU 视觉候选；四份文件 SHA 复核一致。用户消息精确时刻和本轮审批等待耗时未知，不从登记时刻估算。原制作账本 1502 秒与 Creator 故障证据保持独立；本轮未新增制作、运行或工具恢复。建议 Tech/Client 仅在 Creator 可用且 Master 安排后按已有哈希复核真实构建，复核点为首个新 build；整体 Task 继续具体 `BLOCKED`，无空转可继续项，正式接入未安排。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->
