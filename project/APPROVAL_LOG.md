@@ -444,3 +444,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户明确授权本轮非功能配置说明、归档、稳定正式入口规范及中文进度页整理；父与四个子 Task `approval=AUTO`。Master 已独立验收本轮结果并将五 Task 接受为 `DONE`。此为任务执行授权与接受，未建立三本业务配置任何准确版本的 `USER_APPROVED`。
 - Tech `deliverables/tech_lead/CONFIG-TECH-REVIEW-20261012/v0.1/REVIEW.json` 的 `APPROVED` 只指三本十表 99 字段覆盖、索引/归档 SHA、路径与审批分类技术事实。`project/config/RESOURCE_INDEX.json` 正式数组为空，三项仍为草案；顾客样例无具体用户批准，奶茶规格 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 与 U00 布局 `tasks/U00-SHOP-LAYOUT-CONFIG-001/ARTIFACT_APPROVAL.json` 均继续以准确 `USER_REVIEW` 记录为准。既有视觉资源审批未改变。
 <!-- CONFIG-DASHBOARD-20261012 END -->
+
+<!-- MINIGAMES-TECH-20261012 START -->
+## 2026-10-12｜奶茶正式产品规则与数值获批
+
+- 用户回复“确认”准确 Product 正式规格 v0.1；原审批 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 绑定十三文件 SHA 重核全部一致，现为 `USER_APPROVED`、`decided_at=null`，Master 最终接受本产品阶段。PRD SHA-256 `e75fa05ac06a4029488eea894ee6e619501349fb384e9917a135c7a411dc3513`，原人工源表 SHA-256 `cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa`。用户消息精确时刻未知。批准仅产品规则与数值；Tech 审查和配置发布尚待，源表原有 DRAFT/export_enabled=false 不改。
+- Tech v0.1 七 Required、SOURCE_CHECK 与 Master 同版 Review 实存；准确 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json` 当前 `USER_REVIEW`、`decided_at=null`，主技术文档 SHA-256 `ed4b888df02e8025993fab38070c8d09f5b864470885dea19f2861919b300b58`，其余八文件 SHA 见审批记录。尚无用户对技术方案的决定；正式配置、实现和 QA 未获批准。
+<!-- MINIGAMES-TECH-20261012 END -->

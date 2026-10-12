@@ -1,0 +1,52 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-TECH-20261012",
+  "owner": "tech_lead",
+  "summary": "完成奶茶小游戏技术方案、四表只读审查与可恢复结算契约；仅文档和静态证据，待专业与用户审批。",
+  "artifacts": [
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/CONFIG_TECH_SPEC.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/SAVE_AND_SETTLEMENT_CONTRACT.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/SOURCE_CHECK.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "技术设计沿用项目栈与服务端权威，明确客户端玩法和通用选档计时结算边界，避免超前抽象",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md、SAVE_AND_SETTLEMENT_CONTRACT.md"
+    },
+    {
+      "criterion": "逐字段覆盖四表类型单位空值枚举引用与中文说明，独立核验源xlsx和店铺绑定且不改获批业务数值",
+      "result": "PASS",
+      "evidence": "CONFIG_TECH_SPEC.md、SOURCE_CHECK.json"
+    },
+    {
+      "criterion": "明确配置生成和发布校验、稳定入口及归档策略，禁用草案不进入运行，当前缺项真实可追溯",
+      "result": "PASS",
+      "evidence": "CONFIG_TECH_SPEC.md、REVIEW.md"
+    },
+    {
+      "criterion": "对计时订单校验及经验通关解锁持久化给出可恢复幂等方案，不信任客户端终局结果",
+      "result": "PASS",
+      "evidence": "SAVE_AND_SETTLEMENT_CONTRACT.md"
+    },
+    {
+      "criterion": "技术包明确已验证与未实现范围、后续角色输入和验收证据，不将静态评审当运行或QA通过",
+      "result": "PASS",
+      "evidence": "ACCEPTANCE.md、REVIEW_PACKET.md"
+    }
+  ],
+  "assumptions": [
+    "MG01 对应工程 MT_SHOP_01；外部等级、魂魄权威输入待后续正式契约。",
+    "运行配置及协议/持久化具体路径和格式须在后续实施评审确认。"
+  ],
+  "risks": [
+    "当前源表 DRAFT/export_enabled=false，不能进入运行。",
+    "Server 业务与 packages/protocol 未实现；幂等、时钟和断线恢复尚未运行验证。",
+    "FIELD_GUIDE 虽覆盖字段名，正式发布前需补足细化说明。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

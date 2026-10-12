@@ -826,3 +826,11 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Master `deliverables/master/CONFIG-DASHBOARD-20261012/v0.1/VALIDATION.json` PASS/0 errors；当前游戏与主模板相关规则/提案四文件同字节，仅本次合同局部同步，`.studio-lock.json` 既有来源 commit 保留，不声称全 Studio 升级。奶茶正式规格原 `USER_REVIEW` 与其他资源审批不变。
 - Continuity check（2026-10-12 15:22:11 +08:00）：五个本轮 Task 均有交付与 Master 接受证据并已 `DONE`，无仅以 `READY/IN_PROGRESS` 占位的可继续任务。复盘 `WR-20261012-CONFIG-DASHBOARD-001`。提交推送由 Master 按日常授权独立记录。
 <!-- CONFIG-DASHBOARD-20261012 END -->
+
+<!-- MINIGAMES-TECH-20261012 START -->
+## 2026-10-12｜奶茶产品批准与技术审查启动
+
+- 用户确认准确 Product 正式规格 v0.1 与数值；原十三文件 SHA 重算全匹配，Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.10/PRODUCT_SPEC_ACCEPTANCE.md` 接受本产品阶段，`tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 置 `USER_APPROVED`，Product Task `DONE`。原 PRD、xlsx 字节未改。`project/config/RESOURCE_INDEX.json` 与 `CONFIG_RESOURCES.md` 已标“产品规则数值已批准，技术审查/发布待完成”；正式入口仍 null、正式资源 0，原工作簿行内 DRAFT/export_enabled=false 不变。
+- Tech `MILK-TEA-MINIGAME-TECH-20261012` 已由真实 `TECH_DESIGN.md` 开工，七 Required 加 `SOURCE_CHECK.json` 实存，五项验收同序 PASS；Owner `IN_PROGRESS→REVIEW`，Master `MASTER_REVIEW.json` APPROVED 仅具技术方案送审条件。Producer 将 Task 与九文件 SHA 绑定审批 `ARTIFACT_APPROVAL_v0.1.json` 置 `USER_REVIEW`，待用户决定。Product 同步 `project/config/FIELD_GUIDE.md` 奶茶段过时审批描述，字段解释及原 XLSX 未改；正式运行配置、协议实现、Client、联调及 QA 均未完成。
+- Continuity check：本轮从 Product 批准连续推进到 Tech 准确 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；父任务仍 `SPEC`，下游正式配置和实现保持锁定。复盘 `WR-20261012-MINIGAMES-TECH-001`。
+<!-- MINIGAMES-TECH-20261012 END -->

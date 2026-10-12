@@ -914,3 +914,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Client 下次看板更新继续从准确审批文件生成阶段标签，代价一次映射检查，复核点为下一次浏览器验收；Product/Tech 下次配置入库复用表头覆盖和 SHA 检查，代价一次只读核验，复核点为下一次正式配置 Review；Producer 下次遇模型容量错误记录起止时刻，复核点为下一条复盘，以区分工具等待与净制作。
 - Continuity check：五 Task 均有实物与 Master 接受证据并已 `DONE`，无本轮空转 `READY/IN_PROGRESS`；复盘不新增审批门禁。
 <!-- CONFIG-DASHBOARD-20261012 END -->
+
+<!-- MINIGAMES-TECH-20261012 START -->
+### WR-20261012-MINIGAMES-TECH-001｜奶茶产品批准与技术方案送审
+
+- 结果与证据：用户确认 Product v0.1 规则及数值，原十三 SHA 重核一致、Task DONE；人工源表字节与 DRAFT/export_enabled=false 保留，资源索引仍无正式入口。Tech v0.1 七 Required、SOURCE_CHECK、Master Review 实存且评审 APPROVED 仅准送审，Task/九文件 SHA 审批 `USER_REVIEW`。FIELD_GUIDE 奶茶段状态描述已同步，字段定义未变。父任务 `SPEC`，实现和运行 QA 未开始。
+- 时间与耗时（Asia/Shanghai）：可核本轮首次核对 2026-10-12 15:31:37 +08:00，Tech 首份 Required mtime 15:37:49，送审登记发生在其后；用户回复精确时刻、最终登记终点及各角色净工时未知，故本轮总耗时记未知，不将等待与并行审查归给单一角色。
+- 影响与原因：已批准产品源表保持不可导出，Tech 用只读核查给出类型、引用、服务端权威结算和运行中旧配置快照保留方案。无可比时限或可证实慢因，未记录可量化工具故障。文档审查不等于正式配置生成或运行通过。
+- 建议与复核：Master 待用户决定准确 Tech v0.1 后再编排正式配置/实现任务；Tech 后续核稳定无版本入口、归档和发布校验，复核点为下一阶段配置技术门禁。Producer 继续核 active_path 与审批版本一致，复核点为首次正式配置发布；不新增门禁。
+- Continuity check：从 Product 批准连续推进到 Tech `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；父 `SPEC`，正式配置、Client、联调和 QA 仍锁定。
+<!-- MINIGAMES-TECH-20261012 END -->

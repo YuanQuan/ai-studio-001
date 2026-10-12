@@ -1,0 +1,52 @@
+{
+  "id": "MILK-TEA-MINIGAME-TECH-20261012",
+  "title": "奶茶小游戏技术设计与配置审查",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "依据已批准奶茶正式产品与数值，完成最小必要技术设计、配置类型与引用审查、权威结算和持久化契约及发布校验规范，形成可审阅技术包到用户审批门禁。",
+  "inputs": [
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/FLOW.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_SPEC.md",
+    "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx",
+    "tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.10/PRODUCT_SPEC_ACCEPTANCE.md",
+    "project/ARCHITECTURE.md",
+    "project/API_SPEC.md",
+    "project/config/README.md",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/RESOURCE_INDEX.json",
+    "rules/config_resource_contract.md",
+    "project/DECISIONS.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/CONFIG_TECH_SPEC.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/SAVE_AND_SETTLEMENT_CONTRACT.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "技术设计沿用项目栈与服务端权威，明确客户端玩法和通用选档计时结算边界，避免超前抽象",
+    "逐字段覆盖四表类型单位空值枚举引用与中文说明，独立核验源xlsx和店铺绑定且不改获批业务数值",
+    "明确配置生成和发布校验、稳定入口及归档策略，禁用草案不进入运行，当前缺项真实可追溯",
+    "对计时订单校验及经验通关解锁持久化给出可恢复幂等方案，不信任客户端终局结果",
+    "技术包明确已验证与未实现范围、后续角色输入和验收证据，不将静态评审当运行或QA通过"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-SPEC-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "仅技术文档与只读审查；不修改Product获批源表/PRD/其他角色能力，不产出游戏代码、proto实现、数据库迁移或正式资源。",
+    "Master授权Tech在本版deliverables中写固定产物与可复核审查证据；project/ARCHITECTURE.md、API_SPEC.md只作输入，本版技术建议待用户批准后再锁入项目规范。",
+    "当前核心奖励与可信结果服务端权威已由STUDIO/ARCHITECTURE锁定，不擅自改成本地存储正式成长，不新增微服务/付费/日限/经济。",
+    "读取最新rules/config_resource_contract.md和FIELD_GUIDE/RESOURCE_INDEX，保持历史审批源路径字节，规划无版本正式入口及发布门禁，不将文件重命名或export开关视为技术或运行通过。",
+    "MG01产品模块对应现有工程MT_SHOP_01。其他五店只复用已有共同规则，不设计其候选玩法。外部店长等级/魂魄数据与未有服务端基础设施真实标PLANNED，不假装已接通。",
+    "若需使用Cocos源码核验遵循共享cocos-cli-browser技能；无需本轮构建或新增平台验证门禁。"
+  ]
+}

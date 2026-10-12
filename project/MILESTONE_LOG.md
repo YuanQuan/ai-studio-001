@@ -874,3 +874,16 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PRODUCER_REVIEW_SUBMITTED`：Producer 四日志、continuity、`deliverables/producer/CONFIG-DASHBOARD-PRODUCER-20261012/v0.1/DELIVERABLE.json` 提交，Task `REVIEW`；复盘 `WR-20261012-CONFIG-DASHBOARD-001`。
 - `MASTER_ACCEPTED`：Master 独立核 Product、Tech、Client、Producer 交付并接受本轮非功能维护；父与四子 Task 全部 `REVIEW/IN_PROGRESS→DONE`。本节点记录于 2026-10-12 15:22:11 +08:00；Master 接受消息精确秒数未知，不冒写为此时。具体业务工作簿仍无 `USER_APPROVED`。Continuity：本轮五 Task 均 `DONE`，无空转 `READY/IN_PROGRESS`。
 <!-- CONFIG-DASHBOARD-20261012 END -->
+
+<!-- MINIGAMES-TECH-20261012 START -->
+## 2026-10-12｜奶茶 Product v0.1 批准与 Tech 解锁
+
+- `PRODUCT_SPEC_USER_APPROVED`：用户确认正式 Product v0.1；原十三绑定文件 SHA 全匹配，Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.10/PRODUCT_SPEC_ACCEPTANCE.md` 接受。准确 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` `USER_APPROVED`，Product Task `USER_REVIEW→DONE`；无运行 QA，xlsx 原字节保留。
+- `CONFIG_STATUS_SYNC`：仅奶茶条目同步“产品规则数值已批准，技术审查/发布待完成”；`active_path=null`、`current_formal_resources=[]`、原源表 SHA 与归档不变。仍不作运行入口。
+- `TECH_READY`：`tasks/MILK-TEA-MINIGAME-TECH-20261012/TASK.json` 依赖 Product DONE，`SPEC→READY`；Master 即时派 Tech Lead 开工。待首 Required 实产再登记 `TASK_STARTED`，不以 READY 停止本轮。
+- `TASK_STARTED`：Tech 首份 Required `deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/TECH_DESIGN.md` mtime 2026-10-12 15:37:49 +08:00 实存，`SOURCE_CHECK.json` 亦记录只读审查；Owner Task `READY→IN_PROGRESS`。完整技术包、同版 Review 尚待。
+- `FIELD_GUIDE_STATUS_SYNC`：Product 仅将 `project/config/FIELD_GUIDE.md` 奶茶段过时审批状态改为产品规则数值已批、技术发布待完成；字段语义与原 XLSX 字节未改，不新增正式运行配置入口。
+- `DRAFT_SUBMITTED`：Tech 七 Required 与 `SOURCE_CHECK.json` 实存，`DELIVERABLE.json` 五项验收同序 PASS，Owner Task `IN_PROGRESS→REVIEW`；均为文档与只读核查。
+- `PROFESSIONAL_REVIEW_APPROVED`：Master 同版 `deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/MASTER_REVIEW.json` APPROVED，仅准技术包送审；源工作簿 SHA 与归档一致，正式配置/代码/运行仍未做。
+- `USER_REVIEW`：Producer 将 Tech Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json`，绑定七 Required、SOURCE_CHECK、MASTER_REVIEW 九文件 SHA，`decided_at=null`。Continuity check：到达真实用户门禁，父 SPEC、无空转 READY/IN_PROGRESS。
+<!-- MINIGAMES-TECH-20261012 END -->
