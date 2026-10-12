@@ -706,3 +706,12 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 2026-10-11 13:17:26 +08:00（U04 Client v0.4同源替换真实开工）：客户端两稳定路径正式PNG已从旧v0.3 SHA变为新Art v0.1导出SHA，左下`4ef91cb8…d2174`、右上`e3e79754…3a62d`逐字节一致；`U04-DIALOGUE-CLIENT-001` READY→IN_PROGRESS / TASK_STARTED。此前v0.4准备文档不算接入，当前实际工程修改才构成开工。meta UUID、资源登记、Creator导入/构建、HTTP/IAB三档与角饰固定/九宫格仍待Owner回填及Tech同版终审，Approval DRAFT；不把静态SHA当运行PASS。旧v0.3用户运行审核历史保留。
 
 2026-10-11 13:32:53 +08:00（U04内部祥云正式替换当前运行送用户验收）：Client v0.4 7/7 Required、五项Task验收逐字同序PASS、23/23交付索引；Tech v0.1 5/5 Required、三项同序PASS、3/3索引，Tech最终`REVIEW.json` APPROVED。Master `MASTER_REVIEW.json`同版APPROVED，`MASTER_PACKET_ACCEPTANCE.json`锁30/30当前Client/Tech及运行实图SHA一致；Creator3.8.8当前Web构建、HTTP/IAB：两新角同源固定128×96、三档九宫格连续接框、人物及文字位置、90/90零失败6587ms、三轴独立/快切、横竖视窗与返回重入PASS，12张图SHA 12/12、console无warn/error。双Task REVIEW→USER_REVIEW、双Approval USER_REVIEW/decided_at null，等用户对当前实际运行版本最终验收，不记DONE；先前Concept v0.4与Art资源USER_APPROVED仅覆盖外观及静态同源拆分，不自动批准运行。目标设备/原生平台/GPU/驻留内存/长时压力NOT_TESTED，单元示例无QA。Continuity check：本轮概念与Art静态资源DONE，Client/Tech均到真实USER_REVIEW，没有U04本轮无产出READY/IN_PROGRESS占位；最近复盘 `WR-20261011-U04-CLOUD-CORNER-RUNTIME-001`。SCENE-SAKURA并行线不改。
+
+<!-- SIX-SHOP-MINIGAMES-20261012 START -->
+## 六店铺小游戏逐店规划（2026-10-12）
+
+- 父线 `SIX-SHOP-MINIGAMES-20261012`：Master，`SPEC`。路线 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md` 已由用户明确授权执行，Master Review APPROVED，准确审批记录 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_ROADMAP_v0.1.json` 为 `USER_APPROVED`。批准仅覆盖路线、六店主题与顺序、三档选档及档内进度递增方向；具体玩法仍为候选，父任务不 `DONE`。
+- MG01 `MILK-TEA-MINIGAME-DISCUSSION-20261012`：Product，`USER_REVIEW`。首份 Required `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md` 于 2026-10-12 10:16:41 +08:00 实存；v0.1 六份 Required 已齐，`DELIVERABLE.json` 四项验收同序 PASS，`MASTER_REVIEW.json` 于 10:20:43 +08:00 APPROVED 仅限首轮讨论送审。准确版本审批 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`，绑定七文件 SHA；用户尚未选择核心操作。脑图使用同版 Mermaid 源与静态快照，MindMap AI 因额度不足未创建外链。具体规则未获批准，本稿不可作正式开发输入。
+- MG02 糖画、MG03 炭烤、MG04 理发、MG05 花灯、MG06 投壶：仅为后续讨论队列，候选玩法未获批准，尚无正式开发任务或运行、QA结论。
+- 下一步：Master 向用户呈现准确 MG01 v0.1 讨论包，请用户选择奶茶核心操作方向；随后逐项讨论完整单局和难度规则。Continuity check：MG01 已真实抵达 `USER_REVIEW`，无空转 `READY/IN_PROGRESS`；父任务保持 `SPEC`，MG02–06 不是已解锁的 `READY` 任务。复盘见 `project/WORK_RETROSPECTIVE_LOG.md` 的 `WR-20261012-SIX-SHOP-MG01-001`。
+<!-- SIX-SHOP-MINIGAMES-20261012 END -->

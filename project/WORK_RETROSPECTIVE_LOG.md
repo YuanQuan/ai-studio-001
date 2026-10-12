@@ -738,3 +738,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间与耗时（Asia/Shanghai）：Producer于2026-10-11 12:56:27 +08:00核HEAD及新任务，Art预案mtime12:59:18，Tech预签mtime13:00:32，Art `DELIVERABLE.json`于13:13:46前实存，静态接受登记13:14:21，Client两正式PNG同SHA核于13:17:26，Creator构建13:19:51–13:19:56，Master IAB观察记13:27:59，运行送审登记13:32:53。可核墙钟跨度36分26秒，含Art制作/去重复框线、同批预签、Client构建、浏览器交互、评审及Producer登记，不计为任一角色净工时。用户原批准消息精确时刻未知，当前用户审核等待从送审后开始；默认隔离CLI启动失败的净损耗未知。
 - 影响与建议：本轮可证的返工是Art去除重复长框线，另有默认隔离CLI启动失败后同CLI获准通道成功，二者净耗时未知；无同类时长基线，不能据总跨度判角色缓慢。Art下次同源拆分时先在预览中标出“仅短接框段”的最大长度，减少重组后返修，复核点为下一批首切图；Client保留当前构建身份和HTTP截图清单，便于Tech快速复核，复核点为下一次运行送审。两项都不改变审批门禁。
 - Continuity check：Concept与Art静态资源DONE，Client/Tech已到真实USER_REVIEW，本线无空转READY/IN_PROGRESS；SCENE-SAKURA并行工作独立。
+
+<!-- SIX-SHOP-MINIGAMES-20261012 START -->
+### WR-20261012-SIX-SHOP-MG01-001｜路线登记与奶茶首轮讨论送审
+
+- 结果与证据：父 Task `SIX-SHOP-MINIGAMES-20261012` 为 `SPEC`，路线 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md` 获准确范围 `USER_APPROVED`；MG01 Product v0.1 六 Required 齐、四项验收同序 PASS、Master `MASTER_REVIEW.json` APPROVED，Task 与 `ARTIFACT_APPROVAL_v0.1.json` 均 `USER_REVIEW`，完整七文件 SHA 见审批记录。用户尚未选择奶茶核心操作，MG02–06 仅后续队列，任何开发或 QA 未解锁。
+- 时间与耗时（Asia/Shanghai）：可核 Master 探索起点 2026-10-12 10:11:54 +08:00；Product 首份 Required mtime 10:16:41，交付索引 mtime 10:18:57，Master Review mtime 10:20:43；Producer 于 10:22:21 完成本轮送审登记核查。起点至该核查的可观察墙钟跨度 10 分 27 秒，含 Master 编排、Product 制作、评审及 Producer 登记，不等于任何单一角色净工时。用户原消息精确时刻、各角色净制作时长、用户等待均未知；当前用户审批等待自送审后开始，终点未知。
+- 影响与原因：MindMap AI 因额度不足未创建外部交互图，Product 按既有规则以同版 Mermaid 源及静态快照完成回退；两次中文 Python stdin 编码失败（Master、Producer 各一次）均未写入文件，随后用补丁工具恢复，故障净时长未知。无同类目标时限或可靠基线，暂不判断整体快慢，也不把用户待决或工具额度归责于角色。
+- 建议与复核：Product 在下一轮脑图任务开始时先核 MindMap AI 额度，可用则生成外链，不足则即时采用同版可编辑源与快照；代价为一次额度查询，复核点为下一版脑图交付。Producer 对长中文流程记录优先用补丁工具写入并核基线差异，减少编码重试；代价为一次差异核验，复核点为下一次状态登记。Master 待用户选择 MG01 核心操作后才编排后续正式规则工作；复核点为下一次准确版本用户决定。
+- Continuity check：本轮已真实到 MG01 `USER_REVIEW`；父线 `SPEC` 表示六玩法仍待逐店讨论，MG02–06 未开工，无本线空转 `READY/IN_PROGRESS`。下一步等待用户对当前讨论包作决定，不能视为 Product `DONE` 或开发许可。
+<!-- SIX-SHOP-MINIGAMES-20261012 END -->

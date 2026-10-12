@@ -1,0 +1,23 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-DISCUSSION-20261012",
+  "owner": "product",
+  "summary": "六店小游戏讨论总纲、同版脑图回退快照与奶茶首轮三种核心操作候选已提交，等待专业Review及用户选择；未批准开发规则。",
+  "artifacts": [
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/BRAINSTORM_MAP.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MINDMAP_AI_SNAPSHOT.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MILK_TEA_OPTIONS.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/DELIVERABLE.json",
+    "project/PRD.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "六店主题、讨论顺序及玩家选档加进度递增与用户计划一致", "result": "PASS", "evidence": "PRODUCT_OUTLINE.md 六店模块表与已确认方向"},
+    {"criterion": "明确区分用户已确认内容、玩法候选和待决问题，不预设奖励、成长关联或时间限制", "result": "PASS", "evidence": "PRODUCT_OUTLINE.md 状态标记；MILK_TEA_OPTIONS.md 范围与待决问题"},
+    {"criterion": "给出奶茶店核心操作的真实取舍、推荐与可讨论的单局流程", "result": "PASS", "evidence": "MILK_TEA_OPTIONS.md 三候选比较及 A 的单杯候选流程"},
+    {"criterion": "脑图、短说明、外部链接或工具不可用记录同版可追溯，明确正式开发门禁", "result": "PASS", "evidence": "BRAINSTORM_MAP.md Mermaid 源；MINDMAP_AI_SNAPSHOT.md 静态快照及额度不足记录；PRODUCT_OUTLINE.md 开发门禁"}
+  ],
+  "assumptions": ["奶茶示例中的原料词仅用于解释选料操作，不代表已定配方或素材需求。"],
+  "risks": ["用户尚未选择 MG01 核心操作；后续完整规则与正式 PRD 不得从推荐自动推定。", "MindMap AI 额度不足，当前无外部交互脑图链接；已按规则采用同版 Mermaid 回退。"],
+  "status": "READY_FOR_REVIEW"
+}

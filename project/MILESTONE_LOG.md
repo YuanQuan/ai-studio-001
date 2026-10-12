@@ -751,3 +751,14 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 2026-10-11 13:29:53 +08:00 | `U04-DIALOGUE-CLIENT-001` / `U04-CLOUD-CORNER-TECH-001` | Client/Tech IN_PROGRESS→REVIEW | Client v0.4 `DELIVERABLE.json`、`RUNTIME_CHECK.json`、`evidence/MASTER_RUNTIME_OBSERVATIONS.json`；Tech v0.1 `REVIEW.json`、`DELIVERABLE.json`；两Task/Approval | Client 7/7 Required、五项同序PASS、23/23索引；Tech 5/5、三项PASS、3/3索引，Tech APPROVED；待Master同版运行接受，不提前USER_REVIEW/DONE。
 
 2026-10-11 13:32:53 +08:00 | `U04-DIALOGUE-CLIENT-001` / `U04-CLOUD-CORNER-TECH-001` | 当前运行同版Master接受 / REVIEW→USER_REVIEW | Client v0.4 `USER_REVIEW_PACKET.md`、`DELIVERABLE.json`、`RUNTIME_CHECK.json`、`evidence/MASTER_RUNTIME_OBSERVATIONS.json`及12图；Tech v0.1 `REVIEW.json`、`DELIVERABLE.json`；Master v0.4 `MASTER_REVIEW.json`、`MASTER_PACKET_ACCEPTANCE.json`；两Task/Approval | 7/7+5/5 Required、五/三同序PASS、Tech/Master APPROVED、30/30 SHA匹配；Creator/Web 90/90零失败6587ms、三轴/三档/重入PASS，当前运行待用户决定，双Task不DONE。
+
+<!-- SIX-SHOP-MINIGAMES-20261012 START -->
+## 2026-10-12｜六店铺小游戏路线与 MG01 首轮讨论
+
+- `ROUTE_REGISTERED`：Master 创建父 Task `tasks/SIX-SHOP-MINIGAMES-20261012/TASK.json`，状态 `SPEC`；路线 v0.1 位于 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md`，SHA-256 `a01324c5aaa0c010ef1ae07625011008575d82a875ed4847aadcc6b4211c9fef`。同版 Master Review APPROVED；用户批准仅对路线，消息精确时刻未知。
+- `DISCUSSION_READY`：Master 创建 MG01 Product Task `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/TASK.json`；MG02–06 仅为后续讨论队列，不记开工。
+- `TASK_STARTED`：MG01 首份 Required `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md` mtime 2026-10-12 10:16:41 +08:00、文件非空；Task 已由 Owner 切 `IN_PROGRESS`。其余同版 Required 尚待，不记 Review 或 `USER_REVIEW`。
+- `DRAFT_SUBMITTED`：Product v0.1 六份 Task Required 均已实存，`deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/DELIVERABLE.json` 逐项自报四项 PASS、状态 `READY_FOR_REVIEW`，Owner Task 已切 `REVIEW`。此时仅为专业待审，不代表 Master 通过或用户批准；外部 MindMap AI 额度不足，改用同版 Mermaid 源与静态快照。
+- `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MASTER_REVIEW.json` mtime 2026-10-12 10:20:43 +08:00、decision APPROVED，核六 Required、四项同序 PASS、契约与路径；结论只准首轮讨论送审。
+- `USER_REVIEW`：Producer 于 2026-10-12 10:21 后核实并将 MG01 Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json`，绑定讨论提纲、脑图源/快照、操作选项、验收、交付索引及 Master Review 七文件 SHA。用户决定尚无，父 Task `SPEC`，五店后续队列未启动；continuity check 无本线空转 `READY/IN_PROGRESS`。
+<!-- SIX-SHOP-MINIGAMES-20261012 END -->

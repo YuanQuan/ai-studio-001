@@ -13,6 +13,10 @@
 - 范围：M01 夜市经营、M02 店铺建设与绑定店长、M03 店长找回三魂七魄、M04 地府探索与进货、M05 世界主线与角色叙事、M06 资源与经济、M07 好友／坊会／公共经营、M08 日常目标与长期活动、M09 广告增益、M10 体验验证与数据观察、M11 顾客系统。
 - v0.8 是脑图与短说明形式的修订；v0.7 的其他模块长文仅供未变动背景参考，旧店长招募／升星／跨店配置规则已失效。详细功能拆分仍待后续获批 PRD。
 
+## 六店小游戏讨论索引
+
+- `MILK-TEA-MINIGAME-DISCUSSION-20261012` v0.1 为**Discussion／未批准**，不属于下方已批准功能 PRD。覆盖 MG01 奶茶店首轮核心操作三候选与 MG02–MG06 顺序索引；[六店总纲](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/PRODUCT_OUTLINE.md)、[脑图可编辑源](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/BRAINSTORM_MAP.md)、[快照与工具状态](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MINDMAP_AI_SNAPSHOT.md)、[奶茶三候选](../deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.1/MILK_TEA_OPTIONS.md)。当前只待用户选择首个核心操作，不以本索引批准具体玩法或开发。
+
 ## 已批准功能 PRD 索引
 
 | 模块 | 功能 | Artifact 路径 | 版本 | 用户审批 | 依赖 |

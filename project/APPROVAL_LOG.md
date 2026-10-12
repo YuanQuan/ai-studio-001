@@ -348,3 +348,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 2026-10-11 13:14:21 +08:00（U04同源静态资源接受，沿用本次明确替换授权）：`U04-CLOUD-CORNER-ASSET-001` v0.1 `DELIVERABLE.json`及17项索引实存，8/8 Required、三项同序PASS；Master同版静态Review APPROVED、`RESOURCE_ACCEPTANCE.json`锁17/17 SHA一致。用户已对准确v0.4候选明确“按这个替换U04吧”，覆盖本批无重绘确定性拆分；现行Art Approval USER_APPROVED/decided_at null、Task DONE，Client v0.4依赖解除为READY。此记录仅接受具体静态资源供接入，不推断Creator当前构建/IAB已通过或运行版已获最终用户验收；Tech/Client Approval仍DRAFT。
 
 2026-10-11 13:32:53 +08:00（U04当前运行版本送审，非用户批准）：`U04-DIALOGUE-CLIENT-001` v0.4及`U04-CLOUD-CORNER-TECH-001` v0.1 当前审批对象分别为Client `USER_REVIEW_PACKET.md`和Tech `DELIVERABLE.json`；7/7+5/5 Required、五/三同序PASS，Tech与Master同版Review APPROVED，Master包30/30 SHA一致。两现行Approval均USER_REVIEW、review_ref指当前Master v0.4 Review、decided_at null。用户此前批准准确祥云概念v0.4及同源静态资源，仍须对本次Creator/Web实际运行结果单独验收；目标设备/GPU/压力NOT_TESTED，不记双Task DONE。
+
+<!-- SIX-SHOP-MINIGAMES-20261012 START -->
+## 六店铺小游戏路线审批边界（2026-10-12）
+
+- 用户明确要求执行此前呈现的同名计划，原消息精确时刻未知。准确审批对象为 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md`，SHA-256 `a01324c5aaa0c010ef1ae07625011008575d82a875ed4847aadcc6b4211c9fef`；Master Review `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP_REVIEW.json` APPROVED；记录 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_ROADMAP_v0.1.json` 为 `USER_APPROVED`、`decided_at=null`。此批准仅涵盖路线、主题、顺序、三档选档及档内递增方向。
+- MG01 Product v0.1 六 Required 与四项同序 PASS 实存，Master Review APPROVED 仅限讨论送审。准确 `PRODUCT_OUTLINE.md` SHA-256 `c47766b227976b12d46a3e6f4cd48f88227ca1c4268cd37d54f7f2fdfadfe1cb`；完整七文件 SHA 见 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.1.json`。当前该审批为 `USER_REVIEW`、`decided_at=null`，等待用户选择奶茶核心操作；无 Product `USER_APPROVED`。六店具体玩法及奖励、成长、时间、失败与存档规则仍待决；路线批准不得移作 Product 或开发审批。MG02–06 尚为后续候选队列。
+<!-- SIX-SHOP-MINIGAMES-20261012 END -->
