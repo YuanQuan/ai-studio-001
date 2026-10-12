@@ -1,0 +1,94 @@
+{
+  "status": "READONLY_EVIDENCE_ZERO_DIFFERENCE_NOT_MET",
+  "started_at": "2026-10-12T21:18:20.921721+08:00",
+  "finished_at": "2026-10-12T21:18:21.473050+08:00",
+  "elapsed_seconds": 0.552,
+  "results": [
+    {
+      "stage": "AD_S0",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 2194,
+        "pixels_with_channel_delta_gt_1": 0,
+        "max_channel_delta": 1
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 10152,
+        "pixels_with_channel_delta_gt_1": 5981,
+        "max_channel_delta": 131
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    },
+    {
+      "stage": "AD_S2",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 2364,
+        "pixels_with_channel_delta_gt_1": 0,
+        "max_channel_delta": 1
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 8891,
+        "pixels_with_channel_delta_gt_1": 1895,
+        "max_channel_delta": 30
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    },
+    {
+      "stage": "AD_S3",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 2182,
+        "pixels_with_channel_delta_gt_1": 0,
+        "max_channel_delta": 1
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 10714,
+        "pixels_with_channel_delta_gt_1": 6360,
+        "max_channel_delta": 104
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    },
+    {
+      "stage": "XJ_S0",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 4126,
+        "pixels_with_channel_delta_gt_1": 7,
+        "max_channel_delta": 2
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 15660,
+        "pixels_with_channel_delta_gt_1": 11356,
+        "max_channel_delta": 145
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    },
+    {
+      "stage": "XJ_S2",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 3438,
+        "pixels_with_channel_delta_gt_1": 7,
+        "max_channel_delta": 2
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 15841,
+        "pixels_with_channel_delta_gt_1": 11392,
+        "max_channel_delta": 177
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    },
+    {
+      "stage": "XJ_S3",
+      "source_composite_vs_psd_merged_rgb_before_resize": {
+        "changed_pixels": 2705,
+        "pixels_with_channel_delta_gt_1": 0,
+        "max_channel_delta": 1
+      },
+      "parts_resize_then_compose_vs_same_source_compose_then_rgba_resize": {
+        "changed_pixels": 8160,
+        "pixels_with_channel_delta_gt_1": 6140,
+        "max_channel_delta": 139
+      },
+      "reference_method": "same source parts, Pillow source-over, top-left 1024² crop, RGBA LANCZOS→768², then same matte; recorded integer positions for delivered parts"
+    }
+  ],
+  "source_identity_reference": "SCALED_LAYER_READONLY_CHECK.json#input_sha256",
+  "scope": "Separates PSD RGB cache compositing from RGBA layer-resampling/rounded placement. No images saved, original source/artifact approvals unchanged; no runtime or semantic editability claim."
+}

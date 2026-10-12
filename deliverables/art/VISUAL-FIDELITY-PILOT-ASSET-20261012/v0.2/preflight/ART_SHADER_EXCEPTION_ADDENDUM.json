@@ -1,0 +1,55 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "role": "art",
+  "version": "v0.2",
+  "status": "ART_PRESIGNED_FOR_SINGLE_BOUND_SHADER_SYNTAX_CORRECTION",
+  "signed_at": "2026-10-12T21:24:20+08:00",
+  "user_authorization": {
+    "record": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/SHADER_BUDGET_EXCEPTION.json",
+    "record_sha256": "f2c43d5d965b673b84e794bd05b9b1179da12ce6f142bfe8005934100d055229",
+    "user_quote": "批准仅此额外 1 次修正",
+    "user_message_exact_timestamp": "UNKNOWN; record registered_at is not the message time"
+  },
+  "original_art_presign": {
+    "path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/ART_PRESIGN.json",
+    "sha256": "7ef6dab67f0b5c289e401d7c67f437fa5b1d01edb6405cbd088a04090ec763be",
+    "status": "PRESERVED_UNCHANGED"
+  },
+  "unchanged_visual_inputs": {
+    "mask_spec_sha256": "4f12245b7a68cd95c54563bdf84b1c93f8f0a582037692064441bcad57d701a6",
+    "mask_png_sha256": "f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f",
+    "body_png_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+    "sign_png_sha256": "316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5",
+    "visual_anchor": "Only the existing left-eave lantern inner face dims within original mask at 0.90–1.00; original outline, hook, tassel, neighboring wood, interior lamp, cup sign, geometry and alpha unchanged",
+    "curve": "original 2-second smooth one-instance parameter curve and reset-to-1.0 semantics unchanged",
+    "image_or_mask_reexport": "NOT_AUTHORIZED"
+  },
+  "bound_shader_proposal": {
+    "description_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.md",
+    "description_sha256": "458fcdad7fdf016a5b6c259ff1205d3805f16fa854cf3c10f7108e230c87b83c",
+    "patch_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.patch",
+    "patch_sha256": "9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2",
+    "target_effect": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect",
+    "effect_before_sha256": "ba0dbf42329a025d38831440ef667c337b27543862c92fbb2d1d1cf64a105069",
+    "effect_after_expected_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+    "permitted_text_changes": ["Remove only the instance name cc_lantern from uniform Constant block, retaining the block semicolon", "Replace the sole cc_lantern.strength read with strength"],
+    "visual_scope_assessment": "These two syntax edits do not request any change to mask, source pixels, curve or visual anchors; actual compiled/rendered parity remains NOT_TESTED"
+  },
+  "budget_exception": {
+    "cumulative_correction_rounds_used_before": 2,
+    "old_cumulative_limit": 2,
+    "new_cumulative_limit": 3,
+    "this_patch_max_additional_rounds": 1,
+    "generation_calls_max": 0,
+    "candidate_count_max": 1,
+    "production_wall_clock_hours_max": 4,
+    "incremental_cost_yuan_max": 0,
+    "draw_call_increment_max": 1,
+    "mask_texture_increment_mib_max": 0.25,
+    "other_limits": "UNCHANGED",
+    "no_automatic_second_patch_or_other_error_fix": true
+  },
+  "after_patch": "Client must verify the actual effect source hash and attempt the authorized import/build/runtime checks; new errors outside the exact patch stop this branch and require a concrete diagnosis. Creator compilation, alpha/UV, full loop, real visuals, draw calls and performance are NOT_TESTED at this Art addendum.",
+  "history": "Original ART_PRESIGN.json, TECH_PRESIGN.json, mask/source images and prior EXECUTION_LEDGER.json remain read-only; the exception execution ledger is separate. This addendum is one-batch Art boundary concurrence, not final animation approval or formal integration approval."
+}

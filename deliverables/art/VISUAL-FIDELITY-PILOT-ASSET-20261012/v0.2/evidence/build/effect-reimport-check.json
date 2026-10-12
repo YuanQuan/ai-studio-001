@@ -1,0 +1,30 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "checked_at": "2026-10-12T21:45:06+08:00",
+  "scope": "Read-only check of the sole normal Editor reimport after first current build lacked the Effect import dependency; no Editor operation or source modification by Tech.",
+  "first_editor_build": {
+    "result_record": "evidence/build/editor-build-result.json",
+    "reported_finished_at": "2026-10-12T21:34:58+08:00",
+    "http_console_record": "evidence/build/runtime-effect-missing-console.json",
+    "runtime_result": "BLOCKED",
+    "missing_dependency": "assets/main/import/e3/e334c0c0-4d86-4bc0-9edf-a44cc80dd8da.json returned HTTP 404; first output is not a complete runtime PASS"
+  },
+  "sole_import_recovery": {
+    "reported_by": "Master observed a single normal Editor reimport of this Effect at 2026-10-12T21:42:54+08:00",
+    "effect_source_path": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect",
+    "effect_source_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+    "effect_meta_path": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect.meta",
+    "effect_meta_sha256": "37b411ba0e401e00a355939d2b29c4c84ac622f503495063f797c4df5e4e707a",
+    "effect_meta_imported": true,
+    "effect_meta_files": [".json"],
+    "effect_uuid_unchanged": "e334c0c0-4d86-4bc0-9edf-a44cc80dd8da",
+    "library_payload_path": "apps/client/library/e3/e334c0c0-4d86-4bc0-9edf-a44cc80dd8da.json",
+    "library_payload_sha256": "3ab7e5d6b7cef0632d43c14df9bda330861475f4969dc93f8d33e0fc19c0b4c0",
+    "library_payload_bytes": 20821,
+    "library_payload_mtime_local": "2026-10-12T21:42:54+08:00",
+    "compiled_fragment_variants_checked": 3,
+    "compiled_fragment_result": "All three fragment variants contain an unnamed Constant/strength uniform and direct `1.0 - strength`; no `cc_lantern` occurrence anywhere in library payload.",
+    "new_source_correction_rounds": 0
+  },
+  "limit": "This verifies Creator library import for the authorized syntax-patched Effect, not inclusion in a new build or successful runtime. The first build and its 404 remain failed runtime evidence. A fresh build using the same isolated config and current source identity, followed by actual HTTP/browser checks, is required. Any new source correction is outside the single authorized exception and must stop. No parallel Creator CLI, UV edit, or global setting change is authorized by this check."
+}

@@ -1,0 +1,102 @@
+{
+  "__version__": "1.3.9",
+  "log": {
+    "level": 4
+  },
+  "common": {
+    "binGroupConfig": {
+      "threshold": 16,
+      "enable": false
+    },
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "buildPath": "/private/tmp/lantern-pilot-v02-build",
+    "outputName": "lantern-pilot-v02-web-mobile",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "web-mobile",
+    "startScene": "e614d011-f14f-4b38-bde0-6877efc19c50",
+    "scenes": [
+      {
+        "url": "db://assets/labs/lantern-pilot-v02/LanternPilot.scene",
+        "uuid": "e614d011-f14f-4b38-bde0-6877efc19c50"
+      }
+    ],
+    "debug": true
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1791812092559": {
+        "type": "build",
+        "id": "1791812092559",
+        "progress": 1,
+        "state": "success",
+        "stage": "build",
+        "message": "2026-10-12 21:45:07 build success in 5 s!",
+        "detailMessage": "// ---- build task cocos-service：onAfterCompressSettings ----\r",
+        "options": {
+          "name": "bai-gui-night-market-demo",
+          "server": "",
+          "engineModulesConfigKey": "defaultConfig",
+          "platform": "web-mobile",
+          "buildPath": "/private/tmp/lantern-pilot-v02-build",
+          "debug": true,
+          "buildMode": "normal",
+          "mangleProperties": false,
+          "md5Cache": false,
+          "skipCompressTexture": false,
+          "sourceMaps": false,
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "gfx-webgl2": "on",
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting"
+            },
+            "macroConfig": {
+              "cleanupImageCache": "inherit-project-setting"
+            }
+          },
+          "nativeCodeBundleMode": "both",
+          "polyfills": {
+            "asyncFunctions": true
+          },
+          "experimentalEraseModules": false,
+          "startSceneAssetBundle": false,
+          "bundleConfigs": [],
+          "inlineEnum": true,
+          "useBuiltinServer": false,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "mainBundleIsRemote": false,
+          "mainBundleCompressionType": "merge_dep",
+          "useSplashScreen": true,
+          "bundleCommonChunk": false,
+          "packAutoAtlas": true,
+          "startScene": "e614d011-f14f-4b38-bde0-6877efc19c50",
+          "outputName": "lantern-pilot-v02-web-mobile",
+          "taskName": "web-mobile-001",
+          "scenes": [
+            {
+              "url": "db://assets/labs/lantern-pilot-v02/LanternPilot.scene",
+              "uuid": "e614d011-f14f-4b38-bde0-6877efc19c50"
+            }
+          ],
+          "wasmCompressionMode": false,
+          "binGroupConfig": {
+            "threshold": 16,
+            "enable": false
+          },
+          "packages": {},
+          "__version__": "1.3.9",
+          "logDest": "project://temp/builder/log/web-mobile10-12-2026 21-34.log"
+        },
+        "time": "10-12-2026 21:45:02",
+        "dirty": false
+      }
+    }
+  }
+}

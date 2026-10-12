@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-12T21:49:03.557538+08:00",
+  "actual_browser_url": "http://127.0.0.1:8788/",
+  "viewport_screenshot_px": [
+    1280,
+    720
+  ],
+  "comparison_region_screen_xyxy": [
+    490,
+    210,
+    770,
+    430
+  ],
+  "excluded_ui": "profiler and bottom controls/status; shop crop is fixed and identical in all captures",
+  "screenshot_sha256": {
+    "runtime-baseline.png": "cfed3da40028184a0f8fc064975af0a3437caf9b44cbb8123732e53cb544a365",
+    "runtime-playing.png": "12bd0782747358385ecdf6b08fd8fa8dff23542cc31066f4f0319148c919b0ae",
+    "runtime-paused.png": "a6666af41f211b93142d0b2957c3490b035184eb8936567d405c84685d860e1b",
+    "runtime-reset.png": "00e1b02e3f4812d9c8c98fda7b4ae5cbeb0b0c3126ae6b1a55647e3000d176a6"
+  },
+  "comparisons": [
+    {
+      "screenshot": "runtime-playing.png",
+      "shop_rgb_changed_pixels": 929,
+      "shop_rgb_max_delta": 30,
+      "screen_changed_bbox_xyxy": [
+        527,
+        255,
+        561,
+        289
+      ]
+    },
+    {
+      "screenshot": "runtime-paused.png",
+      "shop_rgb_changed_pixels": 0,
+      "shop_rgb_max_delta": 0,
+      "screen_changed_bbox_xyxy": null
+    },
+    {
+      "screenshot": "runtime-reset.png",
+      "shop_rgb_changed_pixels": 0,
+      "shop_rgb_max_delta": 0,
+      "screen_changed_bbox_xyxy": null
+    }
+  ],
+  "source_mapping_estimate": "Source scale .56 and viewport design fit scale720/1280=.5625 imply .315 physical px/source px. Left source lantern center224.5,565.5 projects near549,306; inverted-y center224.5,458.5 projects near549,272. This estimate must be judged with actual changed bbox and same-version engine UV definition, not engine object injection.",
+  "alpha_scope": "Screenshot visible RGB only; no alpha authority or exact decoded source comparison",
+  "conclusion": "Pause/reset can be checked against same-runtime static baseline. Animated difference must be compared with approved lantern ROI; wrong region is REVISE, no runtime PASS from successful loading alone."
+}

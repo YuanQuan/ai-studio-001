@@ -1,0 +1,41 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "role": "tech_lead",
+  "version": "v0.2",
+  "status": "PRESIGNED_FOR_ONE_AUTHORIZED_SHADER_SYNTAX_CORRECTION_ONLY",
+  "signed_at": "2026-10-12T21:25:12+08:00",
+  "original_presign": "preflight/TECH_PRESIGN.json",
+  "original_presign_sha256": "df86508fb2d2d7c5bb487089c7dcd11a9894ef00507a4a999b7d25b8637c192d",
+  "user_exception": "preflight/SHADER_BUDGET_EXCEPTION.json",
+  "user_exception_sha256": "f2c43d5d965b673b84e794bd05b9b1179da12ce6f142bfe8005934100d055229",
+  "user_quote": "批准仅此额外 1 次修正",
+  "bound_patch": "evidence/SHADER_FIX_PROPOSAL.patch",
+  "bound_patch_sha256": "9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2",
+  "effect_path": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect",
+  "effect_before_sha256": "ba0dbf42329a025d38831440ef667c337b27543862c92fbb2d1d1cf64a105069",
+  "effect_after_expected_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+  "permitted_change": "Only remove `cc_lantern` instance name from `uniform Constant` block and replace the sole `cc_lantern.strength` reference with `strength`, exactly as bound patch. No source PNG/PSD/meta, mask, animation curve, other Effect logic, Scene or product entry changes.",
+  "budget_before": {
+    "cumulative_correction_rounds_max": 2,
+    "cumulative_correction_rounds_used": 2
+  },
+  "budget_after_exception": {
+    "cumulative_correction_rounds_max": 3,
+    "additional_rounds_authorized": 1,
+    "cumulative_correction_rounds_used_before_application": 2
+  },
+  "unchanged_limits": {
+    "generation_calls_max": 0,
+    "candidate_count_max": 1,
+    "production_wall_clock_hours_max": 4,
+    "incremental_cost_yuan_max": 0,
+    "draw_call_increment_max": 1,
+    "incremental_resident_mask_texture_mib_max": 0.25,
+    "cpu_ms_per_frame_reference": 0.1,
+    "gpu_ms_per_frame_reference": 0.1
+  },
+  "runtime_boundary": "This addendum only renews the same-batch syntax correction method and budget. Actual Creator import, Effect compilation after patch, build, UV/atlas/trim, baseline RGB/alpha, animation, Draw Call, mask GPU occupancy, CPU/GPU and browser evidence remain NOT_TESTED until verified. Engine source suggests the current y UV inversion may mis-map the mask; this is not part of the authorized patch and must be checked in actual rendering. If it or any other new defect requires source modification, stop and report; do not extend this exception.",
+  "execution_boundary": "Existing Creator Editor for the same apps/client project must not be contended by a parallel CLI. Prefer controlled build through the existing Editor only after its exact pilot configuration and global-setting isolation are verified; no build/API result is presigned here. A failed build or new compile error ends this correction branch without automatic source retry.",
+  "ledger_rule": "Preserve historical EXECUTION_LEDGER.json at 2/2. Record actual authorized syntax correction separately in evidence/SHADER_EXCEPTION_EXECUTION_LEDGER.json, cumulative 3/3 if applied; do not reset by defect or task."
+}

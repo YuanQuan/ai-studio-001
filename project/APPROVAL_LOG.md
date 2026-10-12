@@ -406,6 +406,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Gate2 准确用户决定：用户原话“通过”，Producer 2026-10-12 20:47:49 +08:00 登记 `tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json` 为 `USER_APPROVED`；原消息精确时刻未知。批准范围仅唯一 mask、同尺度静态/CPU 重组的视觉方向，四份文件 SHA 维持送审绑定；不批准尚未验证的 Cocos 动画、UV、性能或正式接入。整体 Task `BLOCKED`、Client 运行 `NOT_TESTED`，旧 Gate1 批准独立保留。
 - 预算例外门禁（当前未决定）：Gate2 对原 mask/同尺度视觉方向的 `USER_APPROVED` 保持原对象与 SHA，不扩展到 Shader。运行现发现 EFX2209；整批修正次数已达 2/2，若实施仅该 Constant 块实例名的额外 1 轮补丁，需用户明确决定并按同批预签/账本续签。当前无例外批准，Client 补丁提案未应用，整体运行 `BLOCKED`。
 - 例外决策对象已具备可审提案：同版 `SHADER_FIX_PROPOSAL.md` 与 `.patch` 仅提出 EFX2209 最小修正，未应用；不创建新的已批准 Approval 对象。整批 2/2 硬修正预算不因格式整理变化；若批准额外仅此 Shader 1 轮，须用户明确授权并由 Master 记录同批续签。视觉 Gate2 原批准对象保持不变。
+- 预算例外已获独立用户决定：`tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/SHADER_BUDGET_APPROVAL.json` 为 `USER_APPROVED`，用户原话“批准仅此额外 1 次修正”、消息精确时刻未知，Producer `decided_at=2026-10-12T21:21:27+08:00`。仅提案所列两处 Shader 语法修正额外一轮，旧 2/2 账本不变，上限增至 3；同批续签及实际实施尚待。非新动画/运行或正式接入批准，不覆盖原 Gate2 视觉审批。
+- 已批准的 Shader 一轮例外已实际消费：Art/Tech 同版续签后 Client 唯一 patch 于 21:29:14 +08:00 应用，累计修正 3/3。预算 Approval 与原 Gate2 视觉 USER_APPROVED 均维持既定范围；本批构建正在执行，尚无真实运行/性能结论，也无正式接入批准。
+- 本次语法预算批准已消费至整批 3/3，新增 UV 候选 `SHADER_UV_FIX_PROPOSAL.md/.patch` 仅提案、未应用，也不在既有仅语法一轮授权内；不能自动增加额度。Gate2 对原 mask/同尺度 CPU 视觉的 `USER_APPROVED` 对象与哈希保持不变，当前 Cocos 动态 ROI `REVISE`、整体 Task `BLOCKED`；任何新源码修正须用户对具体差异与预算明确决定，不把旧批准当运行或正式接入通过。
+- 最终 UV 提案已整理为可检查的未应用单行补丁（MD/PATCH SHA 见节点），未发生新用户决定；格式修正不消耗实现轮次。原 Gate2 视觉 `USER_APPROVED` 与一次 Shader 语法预算批准均按旧对象有效；UV 变更与额外预算仍待用户明确授权，不新增已批准审批对象。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

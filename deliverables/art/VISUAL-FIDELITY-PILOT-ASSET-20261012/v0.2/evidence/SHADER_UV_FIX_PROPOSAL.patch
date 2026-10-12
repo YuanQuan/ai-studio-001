@@ -1,0 +1,12 @@
+diff --git a/apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect b/apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect
+--- a/apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect
++++ b/apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect
+@@ -63,7 +63,7 @@
+     vec4 source = CCSampleWithAlphaSeparated(cc_spriteTexture, uv0);
+     // The source image is a full, untrimmed 1024x1024 frame. V is inverted
+     // for PNG top-down coordinates; runtime evidence must confirm this mapping.
+-    vec2 bodyPx = vec2(uv0.x * 1024.0, (1.0 - uv0.y) * 1024.0);
++    vec2 bodyPx = vec2(uv0.x * 1024.0, uv0.y * 1024.0);
+     vec2 maskUv = vec2((bodyPx.x - 178.0) / 128.0, (bodyPx.y - 505.0) / 256.0);
+     float maskValue = texture(lanternMask, maskUv).r;
+     source.rgb *= 1.0 - (1.0 - strength) * maskValue;

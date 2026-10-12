@@ -1,0 +1,158 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "status": "CREATOR_IMPORT_BUILD_PASS_DYNAMIC_ROI_REVISE_UV_PROPOSAL_UNAPPLIED",
+  "updated_at": "2026-10-12T22:06:52+08:00",
+  "timing": {
+    "correction_operation_started_at": "2026-10-12T21:28:51+08:00",
+    "original_effect_archived_at": "2026-10-12T21:28:58+08:00",
+    "authorized_patch_applied_at": "2026-10-12T21:29:14+08:00",
+    "authorized_patch_operation_wall_clock_seconds": 23,
+    "previous_production_wall_clock_seconds": 1502,
+    "known_production_wall_clock_subtotal_seconds": 1525,
+    "full_execution_validation_review_net_duration": "UNKNOWN; user approval waiting duration is unknown and is excluded from production time",
+    "recorded_at": "2026-10-12T22:08:57+08:00"
+  },
+  "syntax_exception": {
+    "user_approval": "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/SHADER_BUDGET_APPROVAL.json#USER_APPROVED",
+    "approved_patch": "evidence/SHADER_FIX_PROPOSAL.patch",
+    "approved_patch_sha256": "9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2",
+    "art_addendum_sha256": "1a0280b2c7993a40b3ab086879398c7a56e264574e4d5097a1895195a67de6a7",
+    "tech_addendum_sha256": "456c3846b732c7dc36816bb4da1217c9cffd3ac51039ba9a547322437fa7b6f4",
+    "applied_once_at": "2026-10-12T21:29:14+08:00",
+    "cumulative_correction_rounds": {
+      "previous_used": 2,
+      "exception_authorized": 1,
+      "exception_used": 1,
+      "total_limit": 3,
+      "total_used": 3
+    },
+    "other_limits_unchanged": {
+      "generation_calls": 0,
+      "candidate_count": 1,
+      "incremental_cost_yuan": 0,
+      "production_wall_clock_limit_hours": 4,
+      "draw_call_increment_max": 1,
+      "mask_texture_increment_mib_max": 0.25
+    },
+    "source": {
+      "path": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect",
+      "before_sha256": "ba0dbf42329a025d38831440ef667c337b27543862c92fbb2d1d1cf64a105069",
+      "after_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+      "archived_original": "evidence/lantern_lighting.effect.original_before_shader_exception_20261012",
+      "archived_original_sha256": "ba0dbf42329a025d38831440ef667c337b27543862c92fbb2d1d1cf64a105069"
+    }
+  },
+  "creator_import_compile": {
+    "status": "PASS",
+    "creator_version": "3.8.8",
+    "source_effect_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+    "effect_meta": {
+      "path": "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect.meta",
+      "pre_import_sha256": "3a91e3e0648fb5cae8a55c755fae9826e1ed00a518782b576979da6867c84dbd",
+      "latest_imported_sha256": "37b411ba0e401e00a355939d2b29c4c84ac622f503495063f797c4df5e4e707a",
+      "imported_before": false,
+      "imported_after": true,
+      "files_after": [
+        ".json"
+      ],
+      "uuid_unchanged": "e334c0c0-4d86-4bc0-9edf-a44cc80dd8da"
+    },
+    "library_payload_sha256": "3ab7e5d6b7cef0632d43c14df9bda330861475f4969dc93f8d33e0fc19c0b4c0",
+    "compiled_fragment_variants": 3,
+    "variant_check": "All three use unnamed Constant/strength and direct strength; cc_lantern absent.",
+    "evidence": "evidence/build/effect-reimport-check.json"
+  },
+  "build_and_runtime": {
+    "first_build": {
+      "status": "RUNTIME_BLOCKED",
+      "reported_finished_at": "2026-10-12T21:34:58+08:00",
+      "reason": "Browser request for Effect import JSON returned HTTP 404."
+    },
+    "second_build": {
+      "status": "PASS",
+      "finished_at": "2026-10-12T21:45:07+08:00",
+      "creator_task_id": "1791812092559",
+      "source_effect_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+      "effect_import_payload_sha256": "73f200ecc305aed972c19e2a2c70be92f6fdbce4eded589457b9a9961b3517fe",
+      "build_result_evidence": "evidence/build/editor-reimport-build-result.json",
+      "build_result_sha256": "7bccad1fc793886c0a7c5a7cd895bc0a54c55163a863cce0c2b4edf84e22c80f",
+      "build_log_sha256": "9523a038da7e22d2d5c956f3d09b8a91ffc9e64e1a17410fd1d25e2c6fd368bc"
+    },
+    "http_browser": {
+      "status": "SCENE_LOADED",
+      "url": "http://127.0.0.1:8788/",
+      "scene_loaded_at": "2026-10-12T13:46:41.314Z",
+      "current_navigation_console_errors": 0,
+      "session_cleanup_evidence": "evidence/build/runtime-session-cleanup.json",
+      "session_cleanup_sha256": "d6ba53fbc5e193cb0064710bec84f896751d97e796dea904352a8d0dd5b6d996",
+      "temporary_build_cache_and_runtime_tab": "CLEANED_BY_MASTER"
+    },
+    "visual_comparison": {
+      "status": "DYNAMIC_ROI_REVISE",
+      "evidence": "evidence/build/runtime-screen-difference.json",
+      "evidence_sha256": "a053662c517a53170ded38b95c66658405a5b0958b38ad16b3d06fc2ef3b66e8",
+      "viewport_px": [
+        1280,
+        720
+      ],
+      "shop_crop_xyxy": [
+        490,
+        210,
+        770,
+        430
+      ],
+      "playing_strength_approx": 0.93,
+      "playing_changed_shop_rgb_pixels": 929,
+      "playing_max_channel_delta": 30,
+      "playing_changed_bbox_xyxy": [
+        527,
+        255,
+        561,
+        289
+      ],
+      "observed_region": "Eave/roof above the target lantern; outside approved dynamic ROI.",
+      "paused_vs_baseline_visible_rgb_changed_pixels": 0,
+      "reset_vs_baseline_visible_rgb_changed_pixels": 0,
+      "alpha_and_exact_source_pixel_identity": "NOT_TESTED"
+    },
+    "performance": {
+      "draw_call_increment": "NOT_TESTED",
+      "mask_gpu_format_and_resident_memory": "NOT_TESTED",
+      "cpu_ms_per_frame": "NOT_TESTED",
+      "gpu_ms_per_frame": "NOT_TESTED"
+    },
+    "tech_review": {
+      "path": "evidence/SHADER_EXCEPTION_TECH_REVIEW.md",
+      "sha256": "ea574b5faaa3cde76e5f82352adf644f004bd824bc7572ee07def5655622bef3",
+      "checked_at": "2026-10-12T21:54:25+08:00"
+    }
+  },
+  "unapplied_uv_proposal": {
+    "description": "evidence/SHADER_UV_FIX_PROPOSAL.md",
+    "patch": "evidence/SHADER_UV_FIX_PROPOSAL.patch",
+    "patch_sha256": "d78a5c2af2a78e213c45494d149785d24fed11d93af0843550af049964213a8e",
+    "description_sha256": "43046992b5e5d529ba053fa973da0acc55021960aa15af1e2628f3e500e4d6a6",
+    "base_effect_sha256": "e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b",
+    "single_line_candidate": "Change only bodyPx.y mapping from (1.0 - uv0.y) * 1024.0 to uv0.y * 1024.0.",
+    "git_apply_check": "PASS_READ_ONLY",
+    "applied": false,
+    "compile_build_runtime": "NOT_RUN",
+    "authorization": "NOT_AUTHORIZED; prior user exception is exhausted at 3/3. Requires a new explicit user authorization and affected Art/Tech review before any application."
+  },
+  "unchanged_or_import_side_effect_inputs": {
+    "body_png_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+    "sign_png_sha256": "316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5",
+    "source_psd_sha256": "c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57",
+    "mask_png_sha256": "f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f",
+    "mask_meta_sha256": "6211db0eb894d0f4a2272198bd2af58ab35b3b82990fdef43637a7b5d982ebdd",
+    "pilot_scene_sha256": "cc157a9fe9344bed9229672fe1cf34a2e4be430fcd86a5fccf169c5a14af3297",
+    "pilot_typescript_sha256": "25f2dd19202ba5269aee961df5db464deded183d93ce094b085c9cb8ca1c8c4e",
+    "note": "These bytes were not changed in the current follow-up. Effect .meta changed as recorded above due to normal Creator import; UUID stayed stable."
+  },
+  "preserved_history": {
+    "historical_execution_ledger": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/EXECUTION_LEDGER.json remains unchanged at 2/2.",
+    "original_art_tech_presigns": "Unchanged.",
+    "qa": "No QA Agent used; this remains a unit example."
+  }
+}

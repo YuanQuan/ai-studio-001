@@ -1,0 +1,27 @@
+{
+  "__version__": "1.3.9",
+  "log": {
+    "level": 4
+  },
+  "common": {
+    "binGroupConfig": {
+      "threshold": 16,
+      "enable": false
+    },
+    "polyfills": {
+      "asyncFunctions": true
+    },
+    "buildPath": "/private/tmp/lantern-pilot-v02-build",
+    "outputName": "lantern-pilot-v02-web-mobile",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "web-mobile",
+    "startScene": "e614d011-f14f-4b38-bde0-6877efc19c50",
+    "scenes": [
+      {
+        "url": "db://assets/labs/lantern-pilot-v02/LanternPilot.scene",
+        "uuid": "e614d011-f14f-4b38-bde0-6877efc19c50"
+      }
+    ],
+    "debug": true
+  }
+}

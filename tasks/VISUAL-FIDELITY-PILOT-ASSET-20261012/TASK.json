@@ -40,7 +40,20 @@
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/CREATOR_EDITOR_OBSERVATION.json",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_COMPILE_DIAGNOSIS.md",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.md",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.patch"
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.patch",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/SHADER_BUDGET_EXCEPTION.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/ART_SHADER_EXCEPTION_ADDENDUM.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/TECH_SHADER_EXCEPTION_ADDENDUM.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_EXCEPTION_EXECUTION_LEDGER.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_EXCEPTION_RUNTIME_REPORT.md",
+    "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/SHADER_BUDGET_APPROVAL.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_EXCEPTION_TECH_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_UV_FIX_PROPOSAL.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_UV_FIX_PROPOSAL.patch",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/editor-reimport-build-result.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/editor-profile-reimport-restoration.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/runtime-screen-difference.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/runtime-session-cleanup.json"
   ],
   "acceptance": [
     "准确继承已批准奶茶店01源与本批Gate1，源PNG/PSD/meta字节不变；Art/Tech同批预签包含最终mask/羽化、UV/atlas/trim/实例隔离、工具及执行预算，首样前完成。",
@@ -56,6 +69,8 @@
   "status": "BLOCKED",
   "approval": "APPROVAL",
   "notes": [
+    "Producer 2026-10-12T22:07:49+08:00 最终核：例外账本 SHA 9cfe9ff21492ed2051ffbb439cc506bdb8836fb5a41cbbeca53521e966c773d0、运行报告 SHA bf2af25328dc9a1e07d5b53e2bae31ad0d1c2eee337eb9c4a141704420dea54b、未应用 UV 提案 SHA 43046992b5e5d529ba053fa973da0acc55021960aa15af1e2628f3e500e4d6a6 与 patch SHA d78a5c2af2a78e213c45494d149785d24fed11d93af0843550af049964213a8e、Tech 最终复核 SHA ea574b5faaa3cde76e5f82352adf644f004bd824bc7572ee07def5655622bef3 均实存。Root 报普通 git apply --check PASS；提案格式纠正未应用源码、不计第4轮。现 Effect SHA e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b 不变。整体 Task BLOCKED、3/3修正已满，动态ROI REVISE；用户未授权UV实施，Gate2视觉已批。提案可审性修复已完成，本执行周期无可继续的已授权源码修正；账本保留21:28:51开始、21:28:58归档、21:29:14应用、补丁操作23秒与此前制作1502秒，已知制作小计1525秒。全周期验证/评审净耗时及用户审批等待均未知，等待不计制作。",
+    "Producer 2026-10-12T22:01:25+08:00 核本轮真实构建与运行差异后收口 BLOCKED：批准的语法例外已实施，累计修正3/3；Editor 初次 Build 缺 Effect 导入，正常 reimport 后第二 Build 于 21:45:07 成功，真实 HTTP/IAB 加载店铺及控件。播放截图店铺 RGB 变化 929px、max30、bbox[527,255,561,289] 位于屋檐，动态 ROI 判 REVISE；暂停/复位固定裁剪 0 差。Alpha、Draw 增量、mask 实际 GPU 格式/内存及 CPU/GPU 仍 NOT_TESTED。Tech 复核与未应用一行 UV 提案实存，任何 UV 改动超出此前仅语法 1 轮授权且 3/3 已满，须用户新授权；旧 Gate2 mask/CPU 视觉批准不变，整体 Task 非 DONE、不正式接入。Master 已核本批 builder profile 原 SHA 恢复、formal settings 未改；own HTTP/Tab 清理留证，未动原 8787/tab1。新增 Required 仅关键 7 件构建/Tech/UV/差异/恢复/清理证据；本轮总耗时未知。",
     "Master跨职责明确授权：Art制作preflight/ART_PRESIGN及MASK_SPEC、原图参照的局部mask、Art固定产物/执行账本/视觉证据，使用Sol high；Tech只核真实Creator API与工具并写同批TECH_PRESIGN及技术/运行诊断，使用Sol low；Client只在apps/client/assets/labs/lantern-pilot-v02/和本交付目录client/、evidence/写独立pilot Effect/脚本/Scene/资源引用/实现及构建/运行证据，使用Luna low。不得改UnitSampleGallery、正式奶茶店资源或其他任务代码。",
     "同批预签必须先于新mask/预览导出；Art先仅写mask几何/参数和预签，等Tech对同版MASK_SPEC签认再出图。没有运行工具或不能还原时先诊断，不以新框架或整图生图绕过。",
     "Producer记录本轮Gate1批准及旧计划Task最终接受证据，新任务保持READY直到Owner实际preflight/核工具产出；仅维护本线五流程专属块和审批。Master保留用户原字‘批准’，用户精确消息时刻未知，登记时刻非消息时刻。",
@@ -70,6 +85,10 @@
     "Gate2 后续核验路径：deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/MASTER_VISUAL_ACCEPTANCE.json（Master ACCEPTED_VISUAL_GATE_ONLY，非整体 DONE）；deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/POST_APPROVAL_RUNTIME_CHECK.md（Tech 2026-10-12 20:49:10 +08:00 只读核，无本批新 build/log 或可核恢复依据，SHA ca1b2a73bc54d36bb5d7b84a56a6c576af9733d00cbfb5ccfdbbfc617ea9685e）。视觉 Gate2 已批准；整体运行继续 BLOCKED、相关项 NOT_TESTED，未新增正式接入任务。",
     "Master 2026-10-12T21:05:21+08:00 授权只读恢复诊断和具体最小补丁提案：既有同项目 Creator PID68057 正常，原生AX实见灯笼 Effect EFX2209（Constant块不得含实例名）；不启动并行CLI、不修改已批准mask/源图/曲线或当前实现。Tech写编译诊断，Client仅写未应用补丁及提案；累计2/2预签硬预算不重置，提出仅该缺陷额外1轮的具体范围供用户决定。生产运行仍BLOCKED/NOT_TESTED；旧启动失败及审批记录保留历史。",
     "Producer 2026-10-12T21:06:34+08:00 核本轮只读诊断：evidence/CREATOR_EDITOR_OBSERVATION.json 记同项目现存Creator PID68057及原生Editor灯笼Effect EFX2209（Constant块实例名错误）；evidence/RUNTIME_PERMISSION_DIAGNOSIS.md 解释此前默认沙箱失败并记录同版U04正式提权官方CLI曾完成构建任务，不将旧启动失败继续当唯一当前原因；evidence/SHADER_COMPILE_DIAGNOSIS.md 锁最小候选修正。Client SHADER_FIX_PROPOSAL.md/.patch 尚待落盘核哈希，未应用任何补丁。整批累计修正预算2/2已满；新1轮仅此shader的预算例外尚待用户决定，原Gate2视觉USER_APPROVED保持；实际本批编译、构建、运行及性能仍NOT_TESTED，整体BLOCKED，不启动并行CLI或正式接入。",
-    "Producer 2026-10-12T21:10:26+08:00 核未应用最小补丁提案两件实存：evidence/SHADER_FIX_PROPOSAL.md SHA 458fcdad7fdf016a5b6c259ff1205d3805f16fa854cf3c10f7108e230c87b83c，evidence/SHADER_FIX_PROPOSAL.patch SHA 9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2；Client完成时间21:09:39+08:00，Root报告补丁check PASS且原Effect源码SHA不变。提案格式整理不算实施修正，历史EXECUTION_LEDGER不改；2/2硬限仍满，额外仅该shader一轮须用户明确授权、Master记录同批续签后才可实施。Gate2视觉已批准，运行继续BLOCKED/NOT_TESTED。此只读诊断周期整体起点与净耗时未知，本轮Producer最终核验时刻如上。"
+    "Producer 2026-10-12T21:10:26+08:00 核未应用最小补丁提案两件实存：evidence/SHADER_FIX_PROPOSAL.md SHA 458fcdad7fdf016a5b6c259ff1205d3805f16fa854cf3c10f7108e230c87b83c，evidence/SHADER_FIX_PROPOSAL.patch SHA 9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2；Client完成时间21:09:39+08:00，Root报告补丁check PASS且原Effect源码SHA不变。提案格式整理不算实施修正，历史EXECUTION_LEDGER不改；2/2硬限仍满，额外仅该shader一轮须用户明确授权、Master记录同批续签后才可实施。Gate2视觉已批准，运行继续BLOCKED/NOT_TESTED。此只读诊断周期整体起点与净耗时未知，本轮Producer最终核验时刻如上。",
+    "Master 2026-10-12T21:19:10+08:00 登记用户原话“批准仅此额外 1 次修正”，仅解锁已准备SHA9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2补丁所列两处源码修正。旧Art/Tech预签及2/2账本只读，追加同批Art/Tech预算续签及执行账本；累计上限由2至3，不扩候选、图像、曲线、实现范围或其他指标。Client续签后应用一次并验证实际导入/构建/HTTP/内置浏览器；同项目现存Editor优先，不争用并行CLI，禁止改其他Task入口/全局设置。Owner实际开始后Producer登记IN_PROGRESS；有新错误且不能在上述补丁内解决时停该支线并具体诊断，不再顺带修源码。",
+    "Master为用户已授权的实际验证补充Editor操作范围：现存Creator构建面板无已有构建任务，profiles与settings builder.json已只读快照。允许仅新建本pilot专属web-mobile构建Task缓存/配置和独立临时输出，记录导出配置及前后差异；不得改变已有common/settings、入口Scene或其他Task配置。Root协调原生UI，Client不得并发操作；若不能隔离配置则停并诊断。此为既有实际构建路线实施细节，不增加源码修正或美术候选。",
+    "Master明确Editor实际行为与安全调整：配置面板只会在local profiles builder.common添加本批临时cache键，原common已有binGroupConfig/polyfills及log/version与正式settings逐项未变。允许该已备份、可核对的临时cache用于一次本批构建；结束关闭面板后核无其他来源改动，再清除本Task新增cache，使原字节恢复。不得永久改变默认设置或覆盖其他来源改动。保存draft导出/差异/最终恢复证据；不增加代码修正，已有硬预算不变。",
+    "Producer 2026-10-12T21:37:32+08:00 核真实恢复执行并从 BLOCKED 进入 IN_PROGRESS：同批 Art Shader续签 SHA 1a0280b2c7993a40b3ab086879398c7a56e264574e4d5097a1895195a67de6a7、Tech续签 SHA 456c3846b732c7dc36816bb4da1217c9cffd3ac51039ba9a547322437fa7b6f4；Client 21:29:14 按已批patch仅应用一次，现 Effect SHA e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b，原件归档，例外账本累计修正3/3、0生图/1候选/0元。Master 21:34 后核唯一Scene/config并在现存Editor实际启动本批Build，当前仅能确认构建中，无结果，编译、运行、UV、Draw/性能均不得预判PASS。Builder临时cache仅已授权本批7键，需构建后按前后差异清除本批增量并恢复原SHA，其他配置不动。Gate2视觉USER_APPROVED保留；Owner执行有真实补丁/构建证据，IN_PROGRESS非占位。"
   ]
 }
