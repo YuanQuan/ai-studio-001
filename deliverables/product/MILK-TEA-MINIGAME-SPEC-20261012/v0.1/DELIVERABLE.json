@@ -1,0 +1,29 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-SPEC-20261012",
+  "owner": "product",
+  "summary": "完成 MG01 奶茶小游戏正式产品与数值配置提案，包含单局流程、五档两阶段、熟练度和可配置解锁、人工源表与核验；所有新增数值和边界待用户审批。",
+  "artifacts": [
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/FLOW.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_VALIDATION.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/DELIVERABLE.json",
+    "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/evidence/DIFFICULTY_STAGES.png",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/evidence/UNLOCK_CONDITIONS.png",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/evidence/INGREDIENTS.png",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/evidence/RECIPES.png"
+  ],
+  "acceptance_results": [
+    {"criterion": "奶茶流程、状态、提示纠错、计时和边界均可复核，明确已确认规则与新增提案", "result": "PASS", "evidence": "PRD.md 单局与边界；FLOW.md 状态及计时竞争边界"},
+    {"criterion": "五档与档内递增有明确独立参数、上限和数值理由，通关经验及解锁按已确认机制", "result": "PASS", "evidence": "PRD.md 五档表；CONFIG_SPEC.md 两阶段阈值及数值；源表难度阶段与解锁条件"},
+    {"criterion": "人工配置源表及字段字典包含稳定ID、引用、开关与门槛，已启用条件按且组合，魂数魄数独立", "result": "PASS", "evidence": "CONFIG_SPEC.md 字典；源表四表及独立魂数、魄数开关和门槛"},
+    {"criterion": "配置工作簿内容、引用、范围与显示经过核验，无其他五店未讨论玩法或虚构正式引用", "result": "PASS", "evidence": "CONFIG_VALIDATION.md；源表仅 MG01；CONFIG_SPEC.md 记录 MT_SHOP_01 绑定待审"},
+    {"criterion": "PRD、流程、源表及验收同版可追溯，未经用户及后续技术审批不可直接作为运行配置", "result": "PASS", "evidence": "同版 PRD、FLOW、CONFIG_SPEC、REVIEW_PACKET、ACCEPTANCE；工作簿全部 DRAFT 且 export_enabled=false"}
+  ],
+  "assumptions": ["三杯、两阶段、具体经验、秒数和配方内容均为本版 PROPOSED 草案，用户此前未批准。"],
+  "risks": ["Tech Lead 尚未评审字段技术类型、工程店铺绑定、权威端、运行导出和存档兼容。", "本版尚未完成 UI、资源、开发或 QA 审批。"],
+  "status": "READY_FOR_REVIEW"
+}

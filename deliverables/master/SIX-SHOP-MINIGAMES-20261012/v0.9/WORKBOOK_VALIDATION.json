@@ -1,0 +1,22 @@
+{
+  "source": "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx",
+  "sheets": {
+    "难度阶段": 10,
+    "解锁条件": 5,
+    "原料": 20,
+    "配方": 15
+  },
+  "checks": [
+    "headers and unique IDs",
+    "DRAFT and runtime disabled",
+    "five-tier dimensions and timer",
+    "increasing tier rewards",
+    "stage caps and option pools",
+    "all eligible recipe targets available",
+    "permanent unlock input chain and threshold boundary examples"
+  ],
+  "errors": [],
+  "result": "PASS",
+  "source_sha256": "cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa",
+  "scope": "Independent read-only source-table checks; not runtime or native Excel validation"
+}

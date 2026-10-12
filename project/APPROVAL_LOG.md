@@ -422,3 +422,11 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_UNLOCK_AND_OPERATION_v0.8.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.8/UNLOCK_AND_OPERATION_DECISION.md`，SHA-256 `4f7750b04e3cfe0e1fdce7059d5d8c00c2f1475afa4ea65a8377bb5bce3fd639`，Master Review APPROVED。仅批准六店五档开发/初始简单开放、经验累计不消耗/永久解锁、上一档通关必需与其余条件可配置启用、MG01 逐单点击制作。条件组合、魂魄指标、具体数值及运行配置字段未批。
 - Product v0.2 六 Required 与四项同序 PASS 经 Master `MASTER_REVIEW.json` APPROVED，仅限讨论汇总送审。`tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json` 当前 `USER_REVIEW`、`decided_at=null`，对象 `PRODUCT_OUTLINE.md` SHA-256 `1933168669d37e44fd4f7da6f46a9610d578afcf7bf94acff1e367fb655b5fb7`，完整七文件 SHA 见该审批。旧 v0.1 审批保留历史 `USER_REVIEW`；v0.8 有限批准不等于 v0.2 整包用户批准，下游开发不解锁。
 <!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->
+
+<!-- MINIGAMES-SPEC-20261012 START -->
+## 2026-10-12｜讨论整包批准与解锁条件有限批准
+
+- Product v0.2 用户回复“确认”，原七文件 SHA 全匹配；`tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json` 已 `USER_APPROVED`、`decided_at=null`，Master 最终接受本讨论 Task `DONE`。旧 v0.1 审批保留历史；批准不涵盖正式规格和数值。
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CONFIG_CONDITIONS_v0.9.json` 有限 `USER_APPROVED`、`decided_at=null`；准确对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md` SHA-256 `2cbcae949d46091b56cc8149e9ef6bdab5c0bfc10e8fcc489c0af03eee1fc0e2`，Master Review APPROVED。仅批准启用条件按“且”组合及魂数/魄数独立门槛开关；不批准具体数值或运行配置字段。
+- 正式规格 v0.1 八 Required、五项同序 PASS 与 Master Review APPROVED；`tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，PRD SHA-256 `e75fa05ac06a4029488eea894ee6e619501349fb384e9917a135c7a411dc3513`、人工源表 SHA-256 `cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa`，其余十一文件 SHA 在准确审批中。新增数值/三杯/两阶段为 PROPOSED，xlsx DRAFT 且 export_enabled=false；Tech、Client、资源与 QA 仍锁定。
+<!-- MINIGAMES-SPEC-20261012 END -->

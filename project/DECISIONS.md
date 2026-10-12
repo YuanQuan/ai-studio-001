@@ -2,6 +2,14 @@
 
 本文件只记录当前 Game Repository 的项目级决策，不得复制其他游戏的决策历史。
 
+## DEC-MINIGAMES-CONFIG-CONDITIONS-20261012 — 启用条件同时满足魂魄独立门槛
+
+- 日期：2026-10-12；状态：`ACCEPTED`，六店难度解锁条件。
+- 决策：上一档通关始终必需；熟练度、店长等级、魂数、魄数条件可各自配置启用，所有已启用条件都要满足。关闭条件不参与；全部关闭时只要求上一档通关。
+- 魂与魄分别用已找回数量设门槛，沿用三魂七魄范围，不增加综合魂魄等级。具体数值尚未批准。
+- 用户同时确认奶茶Product讨论v0.2，仅解锁正式规格细化，不等于资源或编码批准。
+- 证据：`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md`及同版`DISCUSSION_ACCEPTANCE.md`。
+
 ## DEC-MINIGAMES-UNLOCK-OPERATION-20261012 — 可配置解锁门槛与奶茶逐单点击制作
 
 - 日期：2026-10-12；状态：`ACCEPTED`，六店解锁方向与MG01操作。

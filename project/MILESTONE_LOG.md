@@ -842,3 +842,16 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MASTER_REVIEW.json` mtime 2026-10-12 14:07:04 +08:00，decision APPROVED；六 Required、四项同序 PASS 和规则范围核对，仅准讨论汇总送审。
 - `USER_REVIEW`：Producer 将 Product Task `REVIEW→USER_REVIEW`，创建 `tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json`，绑定六 Required 与 Master Review 七文件 SHA，`decided_at=null`。旧 v0.1 历史保留；父 `SPEC`，无下游开发解锁。Continuity check：本轮已到真实用户门禁，无空转 `READY/IN_PROGRESS`。
 <!-- MINIGAMES-UNLOCK-SUMMARY-20261012 END -->
+
+<!-- MINIGAMES-SPEC-20261012 START -->
+## 2026-10-12｜奶茶讨论 v0.2 批准与正式规格解锁
+
+- `DISCUSSION_USER_APPROVED`：用户确认 Product v0.2；七文件 SHA 重算匹配，`tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json` `USER_APPROVED`。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/DISCUSSION_ACCEPTANCE.md` 接受，讨论 Task `USER_REVIEW→DONE`；仅本阶段结束。
+- `USER_DECISION_CONFIG_CONDITIONS`：用户确认启用条件全部按“且”满足、魂数魄数门槛独立启用。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md` 及同版 Review 实存；有限审批 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CONFIG_CONDITIONS_v0.9.json` `USER_APPROVED`，源 SHA-256 `2cbcae949d46091b56cc8149e9ef6bdab5c0bfc10e8fcc489c0af03eee1fc0e2`。用户消息时刻未知，新增选择于14:20:16 +08:00前可核。
+- `SPEC_READY`：新 Product 正式规格 Task `tasks/MILK-TEA-MINIGAME-SPEC-20261012/TASK.json` 依赖讨论 DONE，`SPEC→READY`，待首份 Required 实产后登记开工；不得以 READY 作为本轮停止点。
+- `TASK_STARTED`：Product 正式规格首份 Required `deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md` mtime 2026-10-12 14:24:00 +08:00，文件非空，Owner Task `READY→IN_PROGRESS`。其余同版产物与人工配置源表继续制作，不提前记 REVIEW。
+- `CONFIG_SOURCE_DRAFT`：`deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/FLOW.md`、`CONFIG_SPEC.md` 与 `project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx` 已实存；当前仍为 Product 草案，不把工作簿出现写成运行配置批准。
+- `DRAFT_SUBMITTED`：Product 正式 SPEC 八份 Required 及四张工作簿显示图实存，`DELIVERABLE.json` 五项验收同序 PASS、状态 `READY_FOR_REVIEW`，Owner Task `IN_PROGRESS→REVIEW`。Master 同版 Review 和用户审批尚待。
+- `PROFESSIONAL_REVIEW_APPROVED`：Master `deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/MASTER_REVIEW.json` mtime 2026-10-12 14:35:40 +08:00，decision APPROVED；八 Required、五同序 PASS、xlsx只读内容/四张显示图核验通过，仅准送审，未测运行平衡。
+- `USER_REVIEW`：Producer 将规格 Task `REVIEW→USER_REVIEW`，新建 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/ARTIFACT_APPROVAL_v0.1.json` 绑定 PRD/流程/字典/验收/校验/交付/Review、xlsx 与四图十三文件 SHA；`decided_at=null`，用户尚未批准新增数值。Continuity check：本线到真实用户门禁，无空转 `READY/IN_PROGRESS`，下游不解锁。
+<!-- MINIGAMES-SPEC-20261012 END -->

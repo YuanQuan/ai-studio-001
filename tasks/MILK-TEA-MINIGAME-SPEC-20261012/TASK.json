@@ -1,0 +1,45 @@
+{
+  "id": "MILK-TEA-MINIGAME-SPEC-20261012",
+  "title": "奶茶小游戏正式规则与可调配置草案",
+  "type": "design",
+  "owner": "product",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "在已获批的奶茶玩法讨论基础上，细化可实现可验收的单局流程、五档和档内递增、成长解锁及人工配置源表，送用户确认本版正式产品与数值提案。",
+  "inputs": [
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/PRODUCT_OUTLINE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-DISCUSSION-20261012/v0.2/MILK_TEA_RULES.md",
+    "tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md",
+    "project/DECISIONS.md",
+    "project/config/README.md"
+  ],
+  "deliverables": [
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/FLOW.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/ACCEPTANCE.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_VALIDATION.md",
+    "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/DELIVERABLE.json",
+    "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx"
+  ],
+  "acceptance": [
+    "奶茶流程、状态、提示纠错、计时和边界均可复核，明确已确认规则与新增提案",
+    "五档与档内递增有明确独立参数、上限和数值理由，通关经验及解锁按已确认机制",
+    "人工配置源表及字段字典包含稳定ID、引用、开关与门槛，已启用条件按且组合，魂数魄数独立",
+    "配置工作簿内容、引用、范围与显示经过核验，无其他五店未讨论玩法或虚构正式引用",
+    "PRD、流程、源表及验收同版可追溯，未经用户及后续技术审批不可直接作为运行配置"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-DISCUSSION-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "仅Product阶段草案；本轮数字与此前未定边界可提出低风险方案，但必须明确PROPOSED，不把用户讨论批准当数值批准。",
+    "不新增付费、每日次数、其他物质奖励、多单并行、拖动玩法或大型资产。",
+    "Master授权Product创建同版deliverables及project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx；仅更新project/PRD.md的小游戏索引，不改其他模块。配置目录和正式schema索引在具体草案批准及技术审查后再接入。",
+    "xlsx使用Spreadsheets技能与bundled artifact-tool，检查每表显示；字段技术类型/跨端/导出契约标为待Tech评审，不自行改变架构/API。",
+    "正式配置结构和数值仍待本版用户审批，其他五店仅继承已确认共同规则、玩法未锁定。"
+  ]
+}

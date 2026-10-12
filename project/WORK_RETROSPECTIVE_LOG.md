@@ -878,3 +878,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Product 下一次脑图任务先调用 MindMap 插件，用同版 Markdown 源登记实际生成结果，避免误用其他工具的历史额度记录；代价为一次实际工具调用，复核点为下一份脑图交付。Producer 在该交付中核对源、快照、版本及真实链接或生成结果，复核点为原有 Artifact Review，不增加审批门禁。
 - Continuity check：本项偏好维护与验证完成，无本项 READY/IN_PROGRESS 占位；其他正式任务、Artifact 版本及审批状态未因本项改变，历史脑图不重画。
 <!-- MINDMAP-PLUGIN-20261012 END -->
+
+<!-- MINIGAMES-SPEC-20261012 START -->
+### WR-20261012-MINIGAMES-SPEC-001｜奶茶讨论批准与正式规格送审
+
+- 结果与证据：用户确认 Product 讨论 v0.2，七文件 SHA 重算一致、Master `DISCUSSION_ACCEPTANCE.md` 接受，讨论 Task DONE。v0.9 配置条件有限批准明确启用条件按“且”、魂数魄数独立。正式 Product 规格 v0.1 八 Required（含人工 xlsx）与四张显示图实存，五项验收同序 PASS；Master `MASTER_REVIEW.json` APPROVED 仅准送审，Task/十三文件 SHA 审批 `USER_REVIEW`。父任务 `SPEC`，Tech/Client/资源/QA 未解锁。
+- 时间与耗时（Asia/Shanghai）：可核首次探索 2026-10-12 14:19:39 +08:00，补充选择于14:20:16前可核；正式 Product 首份 PRD mtime14:24:00，DELIVERABLE mtime14:32:34，Master Review mtime14:35:40。起点至 Review 的可观察墙钟为16分01秒；送审终了时刻、各角色净工时、用户等待均未知，不能把墙钟全算成 Product 制作时间。用户各消息精确时刻未知。
+- 影响与原因：解锁条件“且”组合及魂数魄数独立门槛在开稿前确认，避免规格猜测。人工源表只读内容与四张显示图核验通过；新增三杯、两阶段及具体数值均为 PROPOSED，未做运行平衡、Excel 原生应用或目标设备验证。无可靠同类时限和可证实慢因；各工具净耗时未知。
+- 建议与复核：Product 在用户决定当前草案后，对获批数值和配置源表锁定准确版本；Tech Lead 再核字段类型、引用、导出和存档兼容，复核点为后续正式技术评审。Producer 继续防止 DRAFT 工作簿进入运行配置，复核点为准确 v0.1 用户决定；不增加额外门禁。
+- Continuity check：授权范围从讨论确认连续推进到正式规格 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；父 `SPEC`，后续 Tech/Client/资源仍锁定。
+<!-- MINIGAMES-SPEC-20261012 END -->

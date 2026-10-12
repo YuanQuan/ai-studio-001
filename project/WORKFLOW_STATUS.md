@@ -801,3 +801,12 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 
 用户明确要求优先使用 MindMap 插件；当前游戏与主模板规则及标准小游戏默认项已同步，记录见 `governance/capability_changes/CAP-20261012-MINDMAP-PLUGIN.md`。八份 Studio 文件双仓一致、JSON Schema 核验与差异检查通过。本项为低风险文档维护，无新功能任务或具体脑图审批；下一次脑图任务验证插件实际生成。复盘：`project/WORK_RETROSPECTIVE_LOG.md` 中 `WR-20261012-MINDMAP-PLUGIN-001`。
 <!-- MINDMAP-PLUGIN-20261012 END -->
+
+<!-- MINIGAMES-SPEC-20261012 START -->
+## 2026-10-12｜奶茶讨论批准与正式规格启动
+
+- 用户对准确 Product 讨论 v0.2 回复“确认”；原审批绑定七文件 SHA 重算全匹配，`tasks/MILK-TEA-MINIGAME-DISCUSSION-20261012/ARTIFACT_APPROVAL_v0.2.json` 为 `USER_APPROVED`，Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/DISCUSSION_ACCEPTANCE.md` 最终接受本阶段，讨论 Task `DONE`。旧 v0.1 记录保留历史；这不批准正式规格、数值或开发。
+- 用户另确认启用的可选解锁条件全部同时满足，魂数与魄数独立开关及门槛，上一档通关仍必需。`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.9/CONFIG_CONDITIONS_DECISION.md` 经 Master Review APPROVED，`tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_CONFIG_CONDITIONS_v0.9.json` 为有限 `USER_APPROVED`；条件组合以“且”解释，具体指标/数值和技术字段待正式评审。
+- Master 新建 `tasks/MILK-TEA-MINIGAME-SPEC-20261012/TASK.json`，依赖满足后 `SPEC→READY`；Product 首份 Required `deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md` mtime 14:24:00 +08:00 实存，Owner `READY→IN_PROGRESS→REVIEW`。Task 八份 Required（含 `project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx`）及四份表格显示图实存，`DELIVERABLE.json` 五项验收同序 PASS；Master `MASTER_REVIEW.json` 于 14:35:40 +08:00 APPROVED 仅具送审条件。Producer 将 Task 与绑定十三文件 SHA 的 `ARTIFACT_APPROVAL_v0.1.json` 置 `USER_REVIEW`，待用户对新增数值与边界草案决定。三杯/两阶段和数值均 `PROPOSED`，工作簿仍 DRAFT 且 export_enabled=false；父任务 `SPEC`，Tech、Client、资源与 QA 未解锁。
+- Continuity check：本轮从讨论批准持续到正式规格准确 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`；下一动作是用户审阅当前规格/源表，不能据静态校验宣布运行、平衡或目标设备通过。复盘 `WR-20261012-MINIGAMES-SPEC-001`。
+<!-- MINIGAMES-SPEC-20261012 END -->
