@@ -370,3 +370,9 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 
 - `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md`，SHA-256 `9fa76ef6aa0c6c3e5599bcbe596926efc1778819d98f5a74ae345fbf78b46f61`，Master `RECIPE_ITEMS_REVIEW.json` APPROVED。批准仅限 MG01 五档配方项数 `3/4/5/5/5`，简单三项为茶底、奶类、小料；甜度/冰量加入顺序与后续增难参数未获确认。旧 Product v0.1 审批仍 `USER_REVIEW`；无完整规格或开发批准。
 <!-- MG01-RECIPE-ITEMS-20261012 END -->
+
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 START -->
+## 2026-10-12｜效果还原与算力控制候选 v0.1 送审
+
+- `VISUAL-FIDELITY-COMPUTE-20261012`：当前 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`，对象 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md`。规则 `rules/visual_fidelity_compute_contract.md` SHA-256 `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`、Art 模板 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md` SHA-256 `7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`；Art/Tech/Master 独立 Review `APPROVED` 仅准本版文档送用户审核。用户尚未对准确 v0.1 作批准或退回，本候选不生效，不授权任何具体美术资源制作、切图接入或 QA 结论。现行 Gate1/Gate2 等历史审批保持原样。
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->

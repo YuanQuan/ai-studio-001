@@ -733,3 +733,13 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 甜度与冰量为新增两项，其加入顺序及五项封顶后的增难参数尚待用户决定；具体配方、原料选项、订单数和秒数未定。既有五档、六店计时及奶茶订单过关/提示纠错决定继续有效。
 - 父 Task 仍 `SPEC`，旧 Product v0.1 Task/Approval 仍 `USER_REVIEW`；本项有限批准不解锁资源、编码或 QA。Continuity check：已确认决定已落盘，下一步继续讨论加入顺序与递增依据；无本线空转 `READY/IN_PROGRESS`。复盘见 `WR-20261012-MG01-RECIPE-001`。
 <!-- MG01-RECIPE-ITEMS-20261012 END -->
+
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 START -->
+## 效果还原与算力控制候选规范（2026-10-12）
+
+- `VISUAL-FIDELITY-COMPUTE-20261012`：Master，`USER_REVIEW`，非 `DONE`。真实执行起点 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXECUTION_START.json` 为 2026-10-12 11:40:35 +08:00；本轮美术生成调用 0。Task `tasks/VISUAL-FIDELITY-COMPUTE-20261012/TASK.json`，准确审批 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 仍 `USER_REVIEW`、`decided_at=null`。
+- 候选 v0.1：`rules/visual_fidelity_compute_contract.md` SHA-256 `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`，`agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md` SHA-256 `7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`；跨角色提案 `governance/capability_changes/CAP-20261012-VISUAL-FIDELITY-COMPUTE.json` 为 `PROPOSED`。用户审阅包 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md`；Art、Tech、Master 独立 Review 均 `APPROVED`。`VALIDATION.json` 11 项文档检查 PASS；Required 10/10、交付索引 14/14 实存，五项验收与 Task 原文同序 PASS。实际 PSD/图像/动画/引擎运行与节省比例未验证。
+- 当前游戏、Studio 主层及标准模板已同版记录候选与待批准索引；保留 Game/Studio 原有规则差异，仅加法同步，`.studio-lock.json` 不更新。Studio 模板候选 commit 待实际形成后记；见 `project/changes/VISUAL-FIDELITY-COMPUTE-20261012.md`。
+- 下一步：Master 呈现准确 v0.1，请用户批准或退回。用户目标不等于本版批准；候选规则未生效，现行 Gate1/Gate2、自切直送用户及正式 QA 门禁继续适用。Continuity check：本 Task 已真实到 `USER_REVIEW`；无本线空转 `READY/IN_PROGRESS` 或待执行的无阻塞下游任务。复盘 `WR-20261012-VISUAL-FIDELITY-COMPUTE-001`。
+- Git 同步现状：Studio 本地 HEAD `e4cc747f30ec08ec0187eaf419a2d01c9af23d3c`，远端 main `9ee34fa80c9c96a1999849175242ef077b78741d` 领先 1 个提交；按 `AGENTS.md` §12 停止模板自动提交/推送，不自行快进、合并或变基。候选文件仅本地双同步，模板未发布；Game HEAD/远端 main 均 `c44548e10aa0061f9696c9087163f96a1f230e05`，本任务由 Master 隔离处理。`.studio-lock.json` 保持旧基线。此子动作受限不改变本 Task `USER_REVIEW`。
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->

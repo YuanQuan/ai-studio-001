@@ -1,0 +1,44 @@
+{
+  "id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "title": "批准效果的分层、修订与动画还原及算力控制规范",
+  "type": "coordination",
+  "owner": "master",
+  "parent": null,
+  "objective": "将用户的效果还原与避免算力浪费目标整理成可检查的跨角色生产方案；当前游戏与Studio模板同步候选规范，完成Art/Tech Review后送用户确认，不生产图片或改变已批准历史。",
+  "inputs": [
+    "用户2026-10-12本轮/goal：效果图通过后，多层输出、细节修改、序列帧或骨骼动画应还原效果且控制算力",
+    "AGENTS.md",
+    "rules/visual_production_contract.md",
+    "rules/artifact_contract.md",
+    "governance/REPOSITORY_SYNC_POLICY.md"
+  ],
+  "deliverables": [
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/ART_REVIEW.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/TECH_REVIEW.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/VALIDATION.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/DELIVERABLE.json",
+    "rules/visual_fidelity_compute_contract.md",
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "project/changes/VISUAL-FIDELITY-COMPUTE-20261012.md",
+    "tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "冻结图与像素保真、视觉锚点、隐藏区域和动画新增视角分别定义，不能无证承诺完美还原。",
+    "分层、局部修订、序列帧与骨骼动画各有源版本、最小证据、失败处理和实际运行对照要求。",
+    "算力控制覆盖先诊断后制作、低成本确定性处理优先、代表样张、预算/调用记录、缓存复用和失败停止；不编造节省比例。",
+    "保留既有Gate1/Gate2、自产切图直送用户和正式QA边界，无新工具选型或历史批准改写。",
+    "Art/Tech独立Review、Schema/同步/引用验证完成；当前游戏与Studio主层及标准模板同版，Producer记录真实状态、continuity与复盘。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Art/Tech审阅本轮候选规范并只写各自Review；Producer授权仅维护本Task与四项状态日志、Dashboard及同步记录，不改变其他任务事实。",
+    "本规范v0.1是待用户确认的候选规则；已有生产仍依现行批准版本，用户目标不冒充对本轮具体Artifact的批准。",
+    "实际执行已开始：核现有生产契约、角色配置、模板及两仓库状态；没有生成美术资源。",
+    "其他会话既有未提交改动保留，提交时隔离本轮增量。",
+    "Producer 于 2026-10-12T11:51:10+08:00 核 Required 10/10、交付索引 14/14、五项验收同序 PASS、Art/Tech/Master Review APPROVED，登记准确 v0.1 USER_REVIEW；用户决定未发生。"
+  ]
+}

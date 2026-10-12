@@ -1,0 +1,32 @@
+{
+  "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "候选规范明确区分冻结原图、PSD整体导出、真实切片重组与引擎实际画面；同尺寸同姿态同管线的静态保真区以零差异为目标，运行缩放、压缩、采样和色彩转换另按获批环境与误差验收。透明区不可见RGB不计视觉漂移，alpha与可见RGB分别检查；复杂混合、遮罩及隐藏内容不被宣称可从平面图直接恢复。"
+    },
+    {
+      "severity": "INFO",
+      "message": "序列帧要求同源图层、代表片段、完整回放；骨骼要求可编辑绑定/时间线源、导出数据与运行时兼容版本，并在接入后核真实运行。增量缓存记录源层、遮罩、色彩、混合及动画参数；两轮自动修正按同一问题累计，任一预算上限触发停止，未知调用先查询原结果并保守占用预算。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本版本保留制作方案Gate1、具体资源效果Gate2、自行切图直接交用户审核和正式功能适用QA。自动比较器、预算拦截器与骨骼工具均未被宣称已实装，也未将算力节省比例当作已验证结果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "前次像素比较配置建议已落实：规则§3.3与模板固定解码工具/版本、位深、ICC/色彩空间及转换、直通/预乘alpha归一、背景、混合/采样、区域遮罩和比较配置版本；零差异只在归一后同配置下断言。"
+    },
+    {
+      "severity": "INFO",
+      "message": "前次未知调用防重试建议已落实：规则§7与模板要求记录工具返回的请求ID和可用幂等键；结果未知先按ID查询，工具不能查询时停止重复提交，并将未确认消耗保守计入潜在预算。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次评审核对版本SHA-256：rules/visual_fidelity_compute_contract.md = ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d；agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md = 7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c。"
+    }
+  ],
+  "next_action": "Master 汇总 Art/Tech 独立评审并将已核对哈希的 v0.1 候选规范交用户确认；本评审不使候选规则自动生效。"
+}

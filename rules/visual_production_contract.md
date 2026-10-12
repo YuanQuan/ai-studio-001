@@ -1,5 +1,7 @@
 # 视觉设计到正式资源的交接契约
 
+补充候选：`rules/visual_fidelity_compute_contract.md`（v0.1，待用户确认）细化已批准效果的分层、局部修改、动画还原与算力控制。用户批准该具体版本前只供评审，不改变本契约的正式门禁及当前任务输入。
+
 本规则适用于场景、角色、建筑、道具、UI 和 VFX 中需要制作图片或运行画面的任务。它规定各角色如何继承已确认的视觉设计，并与 `rules/artifact_contract.md`、`rules/approval_protocol.md` 共同使用。具体游戏的画风、配色、角色形象和资产数值仍由该游戏已批准的 Art Artifact 与 `project/ART_GUIDE.md` 决定。
 
 ## 1. 设计基线与原创重绘

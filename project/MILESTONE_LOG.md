@@ -778,3 +778,13 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `USER_DECISION_RECIPE_ITEMS`：用户明确简单茶底/奶类/小料三项，随后每升一档多一项、最多五项，形成简单/中等/困难/地狱/噩梦 `3/4/5/5/5`。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md` 与 `RECIPE_ITEMS_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_RECIPE_ITEMS_v0.3.json` 为有限 `USER_APPROVED`，决定文档 SHA-256 `9fa76ef6aa0c6c3e5599bcbe596926efc1778819d98f5a74ae345fbf78b46f61`。用户消息精确时刻未知。
 - `CONTINUITY_CHECK`：甜度/冰量加入顺序、五项封顶后的增难参数及具体数值仍待决；父 Task `SPEC`、Product v0.1 `USER_REVIEW` 不变，MG02–06 未开工，不解锁资源或开发。
 <!-- MG01-RECIPE-ITEMS-20261012 END -->
+
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 START -->
+## 2026-10-12｜效果还原与算力控制候选规范
+
+- `TASK_STARTED`：Master Task `tasks/VISUAL-FIDELITY-COMPUTE-20261012/TASK.json` 实际执行起点 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXECUTION_START.json`，2026-10-12 11:40:35 +08:00；本轮美术生成 0。
+- `PRODUCER_TRACKING_STARTED`：Producer 2026-10-12 11:43:09 +08:00 核起点并登记状态/节点/Dashboard，仅本任务独立块。
+- `DRAFT_AND_REVIEW`：Art Review 文件 11:48:14、Tech 11:48:19、Master 11:48:26 +08:00（文件 mtime）均 `APPROVED`；规则及模板最终 SHA 分别 `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`、`7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`。`deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/VALIDATION.json` 记 11 项文档 PASS、生成调用 0，交付索引 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/DELIVERABLE.json` 11:49:33 +08:00 实存。
+- `USER_REVIEW`：Producer 于 2026-10-12 11:51:10 +0800 核 Required 10/10、索引 14/14、五项同序 PASS、三份 Review 与当前 Game/Studio 同版哈希，创建 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json`，Task 转 `USER_REVIEW`。用户未决定，候选未生效；同步及历史差异见 `project/changes/VISUAL-FIDELITY-COMPUTE-20261012.md`。
+- `STUDIO_GIT_SYNC_PAUSED`：Master 只读核得 Studio 本地 HEAD `e4cc747f30ec08ec0187eaf419a2d01c9af23d3c`、远端 main `9ee34fa80c9c96a1999849175242ef077b78741d`，远端领先 1 个提交。本轮候选文件在两仓库本地同版，Studio 模板未提交/未推送；依据 `AGENTS.md` §12 停自动推送，不自行快进/合并/变基。Game HEAD/远端 main 均 `c44548e10aa0061f9696c9087163f96a1f230e05`；Master负责本任务隔离提交处理。本线仍在 `USER_REVIEW`。
+<!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->

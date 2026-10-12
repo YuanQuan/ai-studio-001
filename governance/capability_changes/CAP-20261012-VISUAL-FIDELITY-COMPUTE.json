@@ -1,0 +1,12 @@
+{
+  "id": "CAP-20261012-VISUAL-FIDELITY-COMPUTE",
+  "agent": "master",
+  "change_type": "CROSS_AGENT_CONTRACT",
+  "summary": "效果通过后的分层、局部修订、序列帧及骨骼动画还原与制作算力控制候选规范v0.1",
+  "reason": "用户要求后续多层、细节与动画输出可验证地还原通过效果，并避免算力浪费。具体规范版本尚待用户确认。",
+  "impact": ["冻结基准与母版/层/导出/运行身份链", "原样重组与批准变化、隐藏内容和动态验证的边界", "代表样片、增量复用、预算账本及累计失败停止", "既有Gate1/Gate2、自产切图直送用户与适用QA不变", "当前游戏与Studio主层及标准模板同步候选文件；其他游戏保持pinned"],
+  "affected_agents": ["master", "producer", "art", "vfx", "tech_lead", "client", "qa"],
+  "user_approval": "PENDING",
+  "master_sync_required": true,
+  "status": "PROPOSED"
+}

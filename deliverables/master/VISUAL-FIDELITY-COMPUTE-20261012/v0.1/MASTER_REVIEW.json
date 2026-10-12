@@ -1,0 +1,24 @@
+{
+  "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "候选规范覆盖冻结基准、真实分层、局部修改、序列帧/骨骼动画和实际运行；原样保真与获批变化分别验收，隐藏信息不冒充无损还原。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art/Tech独立文档Review通过；Tech提出的比较归一配置与请求身份/未知调用停止建议已落实，最终版复核和hash由对应Review留证。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本轮只交付待用户确认的流程规则，不生产美术资源，不宣称自动比较/预算工具已实装、真实效果通过或节省比例；既有Gate1/Gate2、自产切图直接用户审核与适用QA不变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前游戏与Studio仅本次候选文件及加法索引同步，保留两库原有差异与无关工作区修改；模板默认active=false，其他游戏保持pinned。"
+    }
+  ],
+  "next_action": "Producer核最终Review、Schema/引用/同步和交付索引后登记准确v0.1 USER_REVIEW；Master提交候选规则及制作模板供用户确认。批准前不启用或解锁任何资源制作/接入。"
+}

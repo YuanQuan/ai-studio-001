@@ -198,3 +198,7 @@ Master 负责向用户呈现待审批产物与反馈；Producer 负责记录批�
 ## Cocos CLI 与内置浏览器优先
 
 凡涉及 Cocos 开发、资源接入、场景修改和验证，默认优先版本相容的脚本/API与Creator CLI，再通过本地HTTP实际Web产物和Codex内置浏览器验证。遵守 `rules/cocos_cli_browser_workflow.md` 并读取共享 `agents/shared/skills/cocos-cli-browser/SKILL.md`；必要Editor、目标平台及既有质量和审批门禁保留。
+
+## 效果继承与算力控制候选规范
+
+`rules/visual_fidelity_compute_contract.md` 与 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md` 为 v0.1 待用户确认方案，覆盖冻结效果、多层重组、局部修订、序列帧/骨骼动画及制作预算。当前仅供评审，不因进入仓库自动成为正式生产输入；用户批准具体规范版本后再启用，现行视觉交付及审批门禁继续生效。
