@@ -375,4 +375,5 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 ## 2026-10-12｜效果还原与算力控制候选 v0.1 送审
 
 - `VISUAL-FIDELITY-COMPUTE-20261012`：当前 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`，对象 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/USER_REVIEW_PACKET.md`。规则 `rules/visual_fidelity_compute_contract.md` SHA-256 `ce99d03f4f0a79812d9b711e655d2412658c3f46bdef2f88aad6e86513d32b9d`、Art 模板 `agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md` SHA-256 `7ca4f438cf95e81c254557eae7e92e90315091c1e5ecbccabe02907c9c578a9c`；Art/Tech/Master 独立 Review `APPROVED` 仅准本版文档送用户审核。用户尚未对准确 v0.1 作批准或退回，本候选不生效，不授权任何具体美术资源制作、切图接入或 QA 结论。现行 Gate1/Gate2 等历史审批保持原样。
+- 发布状态补充：Game 本任务提交 `1114b537b94daf90755a273ca9596a411318e156` 已普通推送且远端 main 同 SHA；当前 `VALIDATION.json` 为 12 项文档检查 PASS；Git 发布不改变本准确 v0.1 `USER_REVIEW`，Studio 候选仍只在本地。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->

@@ -772,10 +772,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 START -->
 ### WR-20261012-VISUAL-FIDELITY-COMPUTE-001｜候选规范 v0.1 送审
 
-- 结果与证据：`VISUAL-FIDELITY-COMPUTE-20261012` 候选 v0.1 已到 `USER_REVIEW`，Task Required 10/10、交付索引 14/14 实存，五项验收原文同序 PASS；Art/Tech/Master Review 均 APPROVED，`VALIDATION.json` 11 项文档检查 PASS。审批 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 待用户决定。Game/Studio 三份候选同字节，标准模板待批准索引已落盘；真实图像、动画、运行与节省比例未测，本轮美术生成调用 0。
+- 结果与证据：`VISUAL-FIDELITY-COMPUTE-20261012` 候选 v0.1 已到 `USER_REVIEW`，Task Required 10/10、交付索引 16/16 实存，五项验收原文同序 PASS；Art/Tech/Master Review 均 APPROVED，`VALIDATION.json` 当前 12 项文档检查 PASS（送审时为 11 项，后补 Producer packet 审计）。审批 `tasks/VISUAL-FIDELITY-COMPUTE-20261012/ARTIFACT_APPROVAL.json` 待用户决定。Game/Studio 三份候选同字节，标准模板待批准索引已落盘；真实图像、动画、运行与节省比例未测，本轮美术生成调用 0。
 - 时间与耗时（Asia/Shanghai）：起点 `deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXECUTION_START.json` 为 2026-10-12 11:40:35 +08:00；Art/Tech/Master Review 文件 mtime 分别 11:48:14、11:48:19、11:48:26，验证文件 11:49:00，交付索引 11:49:33；Producer 于 2026-10-12 11:51:34 +0800 完成复盘记录。Task 送审状态登记见里程碑 11:51:10 +08:00；起点至本次记录可观察墙钟为 10 分 59 秒，含 Master 编写、Art/Tech 并行 Review、修订、文档验证与 Producer 审计，不是单角色净工时。用户审批等待从送审后开始，终点未知；各环节净制作、工具等待和返工耗时未知。
 - 影响与原因：Tech 提出的像素比较配置与未知生成调用防重复提交建议已在同版规则/模板落实，属于可证实文档修订。无制作时限或同类基线，尚不能判断整体快慢。系统和 bundled Python 均无 `jsonschema`，本轮未安装依赖，改以当前 Schema 所用关键词做递归结构检查；网络 sandbox 首次 SSH 访问受限，依既有授权提权完成只读远端核查。两项诊断有事实证据，但净耗时未知，不对角色归责，也没有可核算力节省量。首个 UTF-8 stdin 解析失败早于本 Task 执行起点，不计入本周期。Game 与 Studio 原有规则差异未在本任务全量合并，模板 commit 待实际形成后核。
 - 建议与复核：Art 在下一批真实资源制作方案中使用本模板记录冻结基准、真实分层和代表样片，代价为批次记录与图像比对，复核点为首次 Gate1 方案与样片；Tech 在首次实际动画/分层生产后核比较配置、请求 ID、调用账本与运行差异，代价为人工核证，复核点为该批 Gate2/接入检查；Producer 在用户决定后仅对获批准确版本变更生效状态并记录模板真实 commit，复核点为准确审批及两仓库提交证据。
 - Continuity check：本 Task 已达 `USER_REVIEW`，下游准确版本审批未发生；本线没有仅以 `READY/IN_PROGRESS` 占位的可继续任务，候选不作正式生产输入。
-- Git 同步观察：Studio 远端领先本地 1 个提交，按既有日常推送边界暂停模板自动提交/推送；这是发布子动作的真实限制，非候选文档制作失败，也不改变本 Task `USER_REVIEW`。模板发布等待用户对该次 Git 同步操作的授权，等待时长尚未知；Game 仓库起点与远端一致，Master另行处理本任务隔离提交。
+- Git 同步观察：Studio 远端领先本地 1 个提交，按既有日常推送边界暂停模板自动提交/推送；这是发布子动作的真实限制，非候选文档制作失败，也不改变本 Task `USER_REVIEW`。模板发布等待用户对该次 Git 同步操作的授权，等待时长尚未知；Game 仓库只读初查起点与远端一致；其他会话先提交 `6e08d70`，Master 隔离本轮 23 文件、556 行提交 `1114b537b94daf90755a273ca9596a411318e156` 并普通推送，实时远端 main 已核同 SHA。Studio 模板仍未提交或推送。
+- 发布核验终点（Asia/Shanghai）：Producer 于 2026-10-12 11:56:52 +0800 收到并登记 Game 本轮提交/推送与当前 12 项文档检查证据；执行起点 11:40:35 至本次记录可观察墙钟为 16 分 17 秒。此前送审阶段的 10 分 59 秒为阶段节点，不改写；追加的 Git/审计观察含其他会话先行提交与本轮隔离发布，净耗时、等待占比和远端操作精确完成时刻未知。用户审批等待仍在继续。
 <!-- VISUAL-FIDELITY-COMPUTE-20261012 END -->
