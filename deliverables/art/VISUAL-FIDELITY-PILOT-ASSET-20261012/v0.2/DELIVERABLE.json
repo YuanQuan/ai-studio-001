@@ -1,0 +1,39 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "owner": "art",
+  "summary": "已按用户批准的v0.2方案和同批Art/Tech预签制作唯一左檐红灯笼内灯面mask候选，提交1024同背景基准/最暗全景及2倍细节、完整2秒可编辑CPU预览和逐像素证据；Creator CLI环境故障阻断实际Cocos构建与运行，相关项准确保持NOT_TESTED。具体候选效果待用户审核，未正式接入。",
+  "artifacts": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/MASK_SPEC.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/ART_PRESIGN.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/TECH_PRESIGN.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/RESOURCE_PRODUCE_SPEC.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preview/index.html",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_full_083s.png",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_static_contact.png",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/VISUAL_VALIDATION.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/RUNTIME_REPORT.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/EXECUTION_LEDGER.json"
+  ],
+  "acceptance_results": [
+    {"criterion":"Gate1 USER_APPROVED后同批Art/Tech按相同MASK_SPEC哈希预签；冻结body/sign/PSD及meta保持不变", "result":"PASS", "evidence":"preflight/MASK_SPEC.json、ART_PRESIGN.json、TECH_PRESIGN.json；ASSET_MANIFEST.json中的源文件实测SHA-256"},
+    {"criterion":"唯一局部mask严格位于获批最大ROI且排除挂钩、流苏、室内灯与右杯牌", "result":"PASS", "evidence":"exports/tex_mt_shop_01_lantern_mask_v02.png；evidence/VISUAL_VALIDATION.json非零bbox[200,533,249,598]/2431px；evidence/lantern_static_contact.png"},
+    {"criterion":"固定RGBA静态参考强度1.0全图零差，动态mask外RGB零差，全图alpha不变", "result":"PASS", "evidence":"evidence/VISUAL_VALIDATION.json逐强度全1024x1024像素结果；preview/index.html仅算法参考"},
+    {"criterion":"2秒完整曲线与暂停/隐藏/打断/重复触发在真实Cocos运行中正确", "result":"NOT_TESTED", "evidence":"网页可编辑预览已在本地HTTP与Codex内置浏览器目视检查曲线/暂停复位，但evidence/RUNTIME_REPORT.md记录Creator CLI启动失败且无实际Web构建"},
+    {"criterion":"独立小型Effect/材质、实际UV映射、Draw Call增量≤1、mask GPU增量≤0.25MiB及CPU/GPU参考指标", "result":"NOT_TESTED", "evidence":"Client实验源码与evidence/RUNTIME_REPORT.md；无Creator导入/构建/运行或目标设备测量，原始mask R8估算0.03125MiB不作为实际GPU占用通过"},
+    {"criterion":"0生图、1候选、累计修正≤2、制作墙钟≤4h、新增费用0元", "result":"PASS", "evidence":"EXECUTION_LEDGER.json；Art同候选预览修正1轮、Client实现整理1轮，整批保守累计2/2"},
+    {"criterion":"具体候选用户效果审批及正式资源接入", "result":"NOT_TESTED", "evidence":"本交付提交具体候选供USER_REVIEW；Gate1只批准文字方案，尚无本次成品批准，正式接入禁止"}
+  ],
+  "assumptions": [
+    "PSD没有独立灯光层，轻微暗化无需让木面一起脉动；因此本候选仅纳入已有灯笼灯面内层。",
+    "视觉对照采用原图同背景同1024画幅与等比视窗；网页预览只解释参数算法，不代表引擎像素或性能。"
+  ],
+  "risks": [
+    "Creator 3.8.8 CLI在macOS图形应用初始化阶段崩溃，唯一恢复启动亦失败；真实Cocos画面、资源导入与设备性能均无证据。",
+    "具体遮罩/动画尚待用户成品审批；仅静态算法候选可直接看图，正式动画接入仍受Gate2与后续运行验证约束。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

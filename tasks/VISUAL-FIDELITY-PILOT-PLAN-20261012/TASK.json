@@ -43,7 +43,7 @@
   "dependencies": [
     "VISUAL-FIDELITY-COMPUTE-20261012"
   ],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
     "用户明确更换待审最小样本，v0.1阿棠方案不再作现行制作输入；Producer保留原Task/Approval快照并登记SUPERSEDED，v0.2重新送具体方案；本次换题不批准尚不存在的动画成品。",
@@ -53,6 +53,7 @@
     "优先原纹理不变的局部遮罩亮度曲线，不用整个店体透明度伪装局部光照；不新增骨骼/粒子/全屏后处理/付费工具/大型依赖。Tech首样前核可执行性，无法回到获批基准即停。",
     "本轮仅Gate1文字方案；自产切图仍直接交用户Gate2。示例无QA Agent，Owner留验证证据；正式接入及适用QA另走既有门禁。",
     "旧v0.1 USER_REVIEW Task与Approval已按Git HEAD保存在history/v0.1-user-review/；独立v0.1 Approval记SUPERSEDED，当前Approval指v0.2 DRAFT。Art本轮已实查获批U03奶茶01源PSD SHA c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57及Client body SHA 1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06，确认左檐红灯笼、排除室内小灯/右杯牌，四区域层无独立light；Producer 2026-10-12T14:16:47+08:00核文件身份并登记v0.2真实IN_PROGRESS，Owner具体开工时刻未知。仅写文档，无图片、动画、Shader或运行。",
-    "2026-10-12 14:43:42 +08:00 Producer 核准确 v0.2 Required 12/12 路径与交付索引、五项同序文档验收 PASS、Art/Tech/Master 同版 APPROVED，并登记 Gate1 USER_REVIEW；用户尚未批准具体方案，Approval decided_at=null。CUT_MANIFEST 当前 LF 与获批 CRLF 字节差异经只读转换精确解证，不构成源阻塞。候选仅独立 pilot 单实例小型 Effect，新增 Draw Call≤1 为硬上限、CPU/GPU 各≤0.1ms 为参考目标；图片、动画、Shader、运行及性能均未制作/测试，后续资源门禁保留。"
+    "2026-10-12 14:43:42 +08:00 Producer 核准确 v0.2 Required 12/12 路径与交付索引、五项同序文档验收 PASS、Art/Tech/Master 同版 APPROVED，并登记 Gate1 USER_REVIEW；用户尚未批准具体方案，Approval decided_at=null。CUT_MANIFEST 当前 LF 与获批 CRLF 字节差异经只读转换精确解证，不构成源阻塞。候选仅独立 pilot 单实例小型 Effect，新增 Draw Call≤1 为硬上限、CPU/GPU 各≤0.1ms 为参考目标；图片、动画、Shader、运行及性能均未制作/测试，后续资源门禁保留。",
+    "Producer 2026-10-12T15:06:27+08:00 登记用户原话“批准”对准确 v0.2 Gate1 文字方案 USER_APPROVED，用户消息精确时刻未知；五核心 SHA 保留在 Approval。Master 同版 MASTER_ACCEPTANCE.json 已 ACCEPTED，12/12 Required、五项文档验收 PASS、三方 Review APPROVED，故本方案任务 DONE。此结论不批准具体动画/图片或首样成品，后续首样任务 READY 待实际 preflight；无本轮 QA 结论。"
   ]
 }

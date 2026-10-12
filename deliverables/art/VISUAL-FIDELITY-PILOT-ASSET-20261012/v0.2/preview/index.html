@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>奶茶店左檐红灯笼｜局部亮度首样 v0.2</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui,-apple-system,"PingFang SC",sans-serif; background:#17202b; color:#eaf0f5; }
+    * { box-sizing:border-box; }
+    body { margin:0 auto; padding:18px 20px 28px; max-width:1450px; }
+    h1 { font-size:22px; margin:0 0 8px; }
+    p { line-height:1.5; color:#b7c4d0; margin:6px 0 12px; }
+    .controls { display:flex; gap:12px; align-items:center; flex-wrap:wrap; padding:12px 16px; background:#243140; border-radius:10px; }
+    button { border:1px solid #8fadc0; background:#314b5e; color:white; border-radius:6px; padding:7px 12px; cursor:pointer; }
+    button:hover { background:#3d6179; }
+    input[type=range] { width:min(42vw,500px); }
+    output { min-width:150px; font-variant-numeric:tabular-nums; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:16px; }
+    .panel { background:#202b37; border:1px solid #4a5c6d; border-radius:9px; padding:12px; }
+    .panel h2 { margin:0 0 10px; font-size:17px; }
+    canvas { display:block; image-rendering:auto; }
+    .full { width:min(100%,540px); aspect-ratio:1; background:#121a23; margin:auto; }
+    .crop { width:204px; height:330px; background:#121a23; margin:auto; image-rendering:pixelated; }
+    .crops { display:flex; justify-content:center; gap:24px; flex-wrap:wrap; }
+    .crops figure { margin:0; }
+    figcaption { text-align:center; color:#b7c4d0; font-size:13px; margin-top:6px; }
+    .foot { font-size:13px; }
+    @media(max-width:850px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <h1>奶茶店左檐红灯笼｜局部亮度首样 v0.2</h1>
+  <p>同一获批 body/sign、同一 1024×1024 画布、同一背景与显示尺度。右侧仅用 128×256 遮罩压暗灯面内层；强度 1.00 是原图。此页为可编辑的 CPU 参考预览，实际 Cocos Effect 与运行视觉需另行核验。</p>
+  <div class="controls">
+    <button id="play">播放完整 2 秒循环</button>
+    <button id="pause">暂停</button>
+    <button id="reset">打断并复位 1.00</button>
+    <label for="phase">时间</label><input id="phase" type="range" min="0" max="2" step="0.001" value="0">
+    <output id="readout">0.000 s · 1.000</output>
+  </div>
+  <div class="grid">
+    <section class="panel"><h2>冻结基准（原图）</h2><canvas class="full" id="baseline" width="1024" height="1024"></canvas></section>
+    <section class="panel"><h2>同画布候选（仅灯面内部）</h2><canvas class="full" id="candidate" width="1024" height="1024"></canvas></section>
+  </div>
+  <section class="panel" style="margin-top:18px"><h2>同坐标 2 倍灯笼细节（源裁窗 x=178–279, y=505–669）</h2>
+    <div class="crops"><figure><canvas class="crop" id="basecrop" width="102" height="165"></canvas><figcaption>基准</figcaption></figure><figure><canvas class="crop" id="candcrop" width="102" height="165"></canvas><figcaption>候选</figcaption></figure></div>
+  </section>
+  <p class="foot" id="status">加载源图与遮罩中…</p>
+  <script>
+    const bodyUrl = '../../../../../apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png';
+    const signUrl = '../../../../../apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png';
+    const maskUrl = '../exports/tex_mt_shop_01_lantern_mask_v02.png';
+    const keys = [[0,1],[0.45,0.96],[0.85,0.90],[1.20,0.95],[1.65,0.92],[2,1]];
+    const $ = id => document.getElementById(id);
+    const ctx = id => $(id).getContext('2d', {willReadFrequently:true});
+    const baseCtx = ctx('baseline'), candidateCtx = ctx('candidate');
+    const baseCropCtx = ctx('basecrop'), candCropCtx = ctx('candcrop');
+    const phaseInput = $('phase'), readout = $('readout'), status = $('status');
+    let bodyPixels, baseRoiPixels, workRoiPixels, maskPixels, running=false, origin=0, raf=0;
+    function load(url) { return new Promise((resolve,reject) => { const image=new Image(); image.onload=()=>resolve(image); image.onerror=()=>reject(new Error('加载失败: '+url)); image.src=url; }); }
+    function strengthAt(t) {
+      if (t <= 0) return 1;
+      if (t >= 2) return 1;
+      for (let i=0;i<keys.length-1;i++) {
+        const [a,va]=keys[i], [b,vb]=keys[i+1];
+        if (t<=b) { const q=(t-a)/(b-a), smooth=q*q*(3-2*q); return va+(vb-va)*smooth; }
+      }
+      return 1;
+    }
+    function drawCrop(target, full) { target.clearRect(0,0,102,165); target.drawImage(full,178,505,102,165,0,0,102,165); }
+    function render(t) {
+      if (!workRoiPixels) return;
+      phaseInput.value=t.toFixed(3);
+      const strength=strengthAt(t);
+      readout.value=`${t.toFixed(3)} s · ${strength.toFixed(3)}`;
+      // Reuse one 102×165 buffer. Full body/sign are painted once on load;
+      // the lamp ROI is the only area touched by each animation frame.
+      workRoiPixels.data.set(baseRoiPixels.data);
+      if (strength!==1) {
+        for (let my=0;my<165;my++) for (let mx=0;mx<102;mx++) {
+          const m=maskPixels[(my*128)+mx];
+          if (!m) continue;
+          const index=(my*102+mx)*4;
+          const factor=1-(1-strength)*(m/255);
+          workRoiPixels.data[index]=Math.round(workRoiPixels.data[index]*factor);
+          workRoiPixels.data[index+1]=Math.round(workRoiPixels.data[index+1]*factor);
+          workRoiPixels.data[index+2]=Math.round(workRoiPixels.data[index+2]*factor);
+        }
+      }
+      candidateCtx.putImageData(workRoiPixels,178,505);
+      drawCrop(candCropCtx,$('candidate'));
+    }
+    function frame(now) { if(!running) return; const t=((now-origin)/1000)%2; render(t); raf=requestAnimationFrame(frame); }
+    function stop() { running=false; cancelAnimationFrame(raf); }
+    $('play').onclick=()=>{ stop(); origin=performance.now()-Number(phaseInput.value)*1000; running=true; raf=requestAnimationFrame(frame); };
+    $('pause').onclick=()=>{stop();render(0);};
+    $('reset').onclick=()=>{stop(); render(0);};
+    phaseInput.oninput=()=>{stop();render(Number(phaseInput.value));};
+    Promise.all([load(bodyUrl),load(signUrl),load(maskUrl)]).then(([body,sign,mask])=>{
+      const scratch=document.createElement('canvas'); scratch.width=1024; scratch.height=1024;
+      const sc=scratch.getContext('2d',{willReadFrequently:true}); sc.drawImage(body,0,0);
+      bodyPixels=sc.getImageData(0,0,1024,1024);
+      const mc=document.createElement('canvas'); mc.width=128; mc.height=256;
+      const mctx=mc.getContext('2d',{willReadFrequently:true}); mctx.drawImage(mask,0,0);
+      const mdata=mctx.getImageData(0,0,128,256).data;
+      maskPixels=new Uint8Array(128*256); for(let i=0;i<maskPixels.length;i++) maskPixels[i]=mdata[i*4];
+      baseCtx.putImageData(bodyPixels,0,0); baseCtx.drawImage(sign,0,0);
+      candidateCtx.putImageData(bodyPixels,0,0); candidateCtx.drawImage(sign,0,0);
+      baseRoiPixels=baseCtx.getImageData(178,505,102,165);
+      workRoiPixels=new ImageData(102,165);
+      drawCrop(baseCropCtx,$('baseline'));
+      render(0);
+      status.textContent='已加载。逐像素零差证据见 evidence/VISUAL_VALIDATION.json；本页不代表 Cocos 运行通过。';
+    }).catch(error=>{ status.textContent=String(error)+'。请从项目根目录通过本地 HTTP 打开此页。'; });
+  </script>
+</body>
+</html>

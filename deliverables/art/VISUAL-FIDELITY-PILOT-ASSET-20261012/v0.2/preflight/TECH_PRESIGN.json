@@ -1,0 +1,56 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "role": "tech_lead",
+  "version": "v0.2",
+  "status": "PRESIGNED_FOR_ONE_ISOLATED_PILOT_SAMPLE",
+  "signed_at": "2026-10-12T15:14:26+08:00",
+  "gate1_approval": "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json#USER_APPROVED",
+  "bound_inputs_sha256": {
+    "plan/PRODUCTION_PLAN.md": "aa5caec7d6bca618f93401e589899169032bde103711bbe46b33e5444b4ff893",
+    "plan/ART_BRIEF.md": "54a4f6bcea28c8c980af252702a1efbe8f4363f0f202bd27cb0c299a1eb14374",
+    "plan/VISUAL_ANCHORS.md": "2563cd084124028b8812745fc22bed0c66aeae526cc124f102cf69d26ac926be",
+    "plan/ASSET_MANIFEST.json": "8b1ea61b163e8cc60efcdd487af8ae7c7d8733f0f0f49286c919f429805e64f5",
+    "plan/VFX_SPEC.md": "e491937a6d2869dfaa4b9614a63519abf64f1794e914fbe1e4afe77b5c80b0e5",
+    "preflight/MASK_SPEC.json": "4f12245b7a68cd95c54563bdf84b1c93f8f0a582037692064441bcad57d701a6",
+    "preflight/ART_PRESIGN.json": "7ef6dab67f0b5c289e401d7c67f437fa5b1d01edb6405cbd088a04090ec763be",
+    "client/FEATURE_BRIEF.md": "d12cdf9055fd6213cc02db4979f3ee75c823a357bf36c35b0bccb870ec366de5"
+  },
+  "source_identity": {
+    "body_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+    "sign_sha256": "316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5",
+    "psd_sha256": "c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57"
+  },
+  "local_tool_evidence": {
+    "creator_app": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app",
+    "creator_executable": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+    "app_bundle_version": "3.8.8",
+    "project_version": "3.8.8 in apps/client/package.json",
+    "engine_api_sources": [
+      "Contents/Resources/resources/3d/engine/cocos/2d/framework/ui-renderer.ts: customMaterial/updateMaterial",
+      "Contents/Resources/resources/3d/engine/cocos/asset/assets/material.ts: setProperty",
+      "Contents/Resources/resources/3d/engine/editor/assets/effects/for2d/builtin-sprite.effect: Sprite UV/cc_spriteTexture/source-over blend",
+      "Contents/Resources/resources/3d/engine/cocos/2d/assets/sprite-frame.ts: uv/rect/originalSize/packable"
+    ],
+    "creator_import_build_runtime": "NOT_TESTED; installed executable and source are available but pilot Effect/Scene have not been created or imported"
+  },
+  "mask_preflight": {
+    "format": "128x256 8-bit grayscale L, sampled red channel; no mipmaps; linear; clamp-to-edge",
+    "raw_bytes": 32768,
+    "raw_mib": 0.03125,
+    "approved_max_roi_xyxy_exclusive": [178, 505, 280, 670],
+    "computed_nonzero_bbox_xyxy_exclusive": [200, 533, 249, 598],
+    "computed_nonzero_pixel_count": 2431,
+    "calculation": "Read-only in-memory recomputation from bound body PNG and MASK_SPEC formula; no mask file produced"
+  },
+  "implementation_route": "Only in isolated pilot: at runtime create a new SpriteFrame instance using the approved body SpriteFrame's same Texture2D, set packable=false and explicit full 1024x1024 rect/originalSize/offset; give this one pilot Sprite an isolated small local-brightness Effect/material. The new instance has no new .meta/UUID and must not be saved into formal resources. Verify actual UV/rect/trim/atlas/texture size before first render and in build/runtime, map source-body ROI to mask sampling including V direction. No formal PNG/meta/Prefab/Gallery/entry change, no whole-body texture copy or shared-material parameter writes. If isolation or mapping fails, stop and return a concrete diagnosis.",
+  "visual_and_runtime_conditions": "Strength 1.0 must reproduce approved baseline visible RGB and alpha under fixed decode/color/background/sampling; animated pixels differ only where actual mask is nonzero, all alpha remains unchanged, sign and other objects stay unchanged. Verify Effect compilation, texture/color/alpha blend, complete 2s loop, extrema, interrupt/reset, and actual built Web output before any runtime PASS. Draw Call increment <=1 is hard cap and 0 only optimization target; mask planned R8 raw increment 32768 bytes, but actual imported GPU format/allocation must be measured and total incremental resident mask memory <=0.25 MiB, with no 4 MiB body duplicate. CPU/GPU each 0.1ms/frame is reference target, requiring real device and measurement resolution/error; unmeasured stays NOT_TESTED.",
+  "production_budget": {
+    "generation_calls_max": 0,
+    "candidate_count_max": 1,
+    "cumulative_correction_rounds_max": 2,
+    "production_wall_clock_hours_max": 4,
+    "incremental_cost_yuan_max": 0
+  },
+  "scope_and_stop": "This is same-batch method/budget presign before first output, not a result for mask PNG, Effect, Creator import, build, visual runtime, Draw Call or device performance. Changes to bound source, mask formula/geometry/format, implementation scope or hard budget require affected Art/Tech presign renewal. On baseline/alpha/ROI, instance isolation, actual UV mapping or hard cap failure, stop the branch and report to Master. Self-produced slices still go directly to user Gate2; this sample has no QA Agent."
+}

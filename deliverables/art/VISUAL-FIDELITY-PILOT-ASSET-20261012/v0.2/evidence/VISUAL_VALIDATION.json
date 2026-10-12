@@ -1,0 +1,80 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "version": "v0.2",
+  "kind": "DETERMINISTIC_CPU_PIXEL_REFERENCE_NOT_COCOS_RUNTIME",
+  "status": "PASS_STATIC_PIXEL_REFERENCE",
+  "decoder": "Pillow 11.3.0",
+  "color_interpretation": "source 8-bit sRGB RGBA; no ICC transform; straight alpha; 1:1 pixel grid",
+  "background_viewport_scale": "same 1024x1024 transparent canvas; preview HTML configured for one fixed dark backdrop and matched CSS scale, browser render not yet verified",
+  "source_body_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+  "mask_spec_sha256": "4f12245b7a68cd95c54563bdf84b1c93f8f0a582037692064441bcad57d701a6",
+  "mask_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png",
+  "mask_sha256": "f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f",
+  "mask_mode_size": "L 128x256",
+  "mask_raw_bytes": 32768,
+  "mask_nonzero_pixels": 2431,
+  "mask_nonzero_bbox_xyxy_exclusive": [
+    200,
+    533,
+    249,
+    598
+  ],
+  "mask_min_max": [
+    0,
+    243
+  ],
+  "strength_tests": [
+    {
+      "strength": 1.0,
+      "changed_pixel_count": 0,
+      "max_rgb_channel_delta_8bit": 0,
+      "outside_nonzero_mask_rgb_difference_count": 0,
+      "full_image_alpha_difference_count": 0,
+      "status": "PASS_STATIC_PIXEL_REFERENCE"
+    },
+    {
+      "strength": 0.96,
+      "changed_pixel_count": 2344,
+      "max_rgb_channel_delta_8bit": 10,
+      "outside_nonzero_mask_rgb_difference_count": 0,
+      "full_image_alpha_difference_count": 0,
+      "status": "PASS_STATIC_PIXEL_REFERENCE"
+    },
+    {
+      "strength": 0.9,
+      "changed_pixel_count": 2379,
+      "max_rgb_channel_delta_8bit": 24,
+      "outside_nonzero_mask_rgb_difference_count": 0,
+      "full_image_alpha_difference_count": 0,
+      "status": "PASS_STATIC_PIXEL_REFERENCE"
+    },
+    {
+      "strength": 0.95,
+      "changed_pixel_count": 2353,
+      "max_rgb_channel_delta_8bit": 12,
+      "outside_nonzero_mask_rgb_difference_count": 0,
+      "full_image_alpha_difference_count": 0,
+      "status": "PASS_STATIC_PIXEL_REFERENCE"
+    },
+    {
+      "strength": 0.92,
+      "changed_pixel_count": 2372,
+      "max_rgb_channel_delta_8bit": 19,
+      "outside_nonzero_mask_rgb_difference_count": 0,
+      "full_image_alpha_difference_count": 0,
+      "status": "PASS_STATIC_PIXEL_REFERENCE"
+    }
+  ],
+  "source_alpha_unchanged": true,
+  "excluded_regions": "outside exact mask, including lantern outer contour/hook/tassel, interior lamp, right cup sign, roof and other shop pixels",
+  "runtime_visual": "NOT_TESTED",
+  "runtime_alpha_and_color_pipeline": "NOT_TESTED",
+  "runtime_draw_calls": "NOT_TESTED",
+  "runtime_cpu_gpu": "NOT_TESTED",
+  "preview_control_note": "预览的暂停、打断复位均停止计时并恢复强度 1.0；完整循环为算法参考，不是 Cocos Effect 运行结果。2026-10-12 15:34–15:36 +08:00 在Codex内置浏览器经127.0.0.1 HTTP目视加载；滑杆0.85s显示0.900，播放时相位推进，打断与暂停均显示0.000s/1.000。未把浏览器Canvas像素或网页播放判为引擎通过。",
+  "static_contact_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_static_contact.png",
+  "static_contact_sha256": "6043b12414fb9958848ba72f5a0e87da57d218e0c58bb01e4ed4326e86333ddb",
+  "full_same_scale_083s_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_full_083s.png",
+  "full_same_scale_083s_sha256": "1bbdf9eb26f8012d3ac7574a3d3e45ea9416c7867fa892e25d8d0ca857f54c21",
+  "full_same_scale_083s_strength": 0.900435
+}

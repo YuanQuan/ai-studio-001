@@ -1,0 +1,59 @@
+{
+  "platform": "web-mobile",
+  "taskName": "VISUAL-FIDELITY-PILOT-ASSET-20261012-v0.2",
+  "name": "bai-gui-night-market-demo",
+  "buildPath": "/private/tmp/lantern-pilot-v02-build",
+  "outputName": "lantern-pilot-v02-web-mobile",
+  "logDest": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/creator-build.log",
+  "debug": true,
+  "scenes": [
+    {
+      "url": "db://assets/labs/lantern-pilot-v02/LanternPilot.scene",
+      "uuid": "e614d011-f14f-4b38-bde0-6877efc19c50"
+    }
+  ],
+  "startScene": "e614d011-f14f-4b38-bde0-6877efc19c50",
+  "mainBundleCompressionType": "merge_dep",
+  "packages": {},
+  "server": "",
+  "engineModulesConfigKey": "defaultConfig",
+  "buildMode": "normal",
+  "mangleProperties": false,
+  "md5Cache": false,
+  "skipCompressTexture": false,
+  "sourceMaps": false,
+  "overwriteProjectSettings": {
+    "includeModules": {
+      "gfx-webgl2": "on",
+      "physics": "inherit-project-setting",
+      "physics-2d": "inherit-project-setting"
+    },
+    "macroConfig": {
+      "cleanupImageCache": "inherit-project-setting"
+    }
+  },
+  "nativeCodeBundleMode": "both",
+  "polyfills": {
+    "asyncFunctions": true
+  },
+  "experimentalEraseModules": false,
+  "startSceneAssetBundle": false,
+  "bundleConfigs": [],
+  "inlineEnum": true,
+  "useBuiltinServer": false,
+  "md5CacheOptions": {
+    "excludes": [],
+    "includes": [],
+    "replaceOnly": [],
+    "handleTemplateMd5Link": true
+  },
+  "mainBundleIsRemote": false,
+  "useSplashScreen": true,
+  "bundleCommonChunk": false,
+  "packAutoAtlas": true,
+  "wasmCompressionMode": false,
+  "binGroupConfig": {
+    "threshold": 16,
+    "enable": false
+  }
+}

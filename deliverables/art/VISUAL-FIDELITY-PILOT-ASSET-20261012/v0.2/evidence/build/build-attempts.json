@@ -1,0 +1,40 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "creator_version": "3.8.8",
+  "project": "apps/client",
+  "config": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/creator-build-config.json",
+  "output_path": "/private/tmp/lantern-pilot-v02-build",
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-10-12T15:32:04+08:00",
+      "ended_at": "2026-10-12T15:32:08+08:00",
+      "command": "CocosCreator --project <project>/apps/client --build configPath=<task>/evidence/build/creator-build-config.json",
+      "exit_code": 134,
+      "result": "FAIL_BEFORE_BUILD",
+      "stdout": "empty",
+      "stderr": "empty",
+      "diagnostic": "/Users/yuanquan/Library/Logs/DiagnosticReports/CocosCreator-2026-10-12-153208.ips: EXC_CRASH SIGABRT / Abort trap 6; stack enters NSApplication initialization (sharedApplication / NSGetAggregateUIMode). No Creator build log or output directory was created.",
+      "recovery_reason": "Direct CLI invocation aborted while registering the macOS GUI application, before build startup."
+    },
+    {
+      "attempt": 2,
+      "started_at": "UNKNOWN (after 2026-10-12T15:33:42+08:00 and before 15:34:14+08:00)",
+      "ended_at": "same launch window; exact second unavailable",
+      "command": "open -a <CocosCreator.app> --args --project <project>/apps/client --build configPath=<task>/evidence/build/creator-build-config.json",
+      "exit_code": 1,
+      "result": "FAIL_TO_LAUNCH",
+      "stdout": "empty",
+      "stderr": "LaunchServices: kLSNoExecutableErr, The executable is missing",
+      "diagnostic": "Info.plist names CocosCreator and Contents/MacOS/CocosCreator exists with executable bit, but LaunchServices refused to open the bundle. No build task, output, or creator-build.log was produced.",
+      "recovery_reason": "Single evidence-based recovery using the system app launcher after GUI registration abort."
+    }
+  ],
+  "final_status": "BLOCKED",
+  "build_output_exists": false,
+  "http_server_started": false,
+  "browser_validation": "NOT_TESTED",
+  "note": "No further Creator launch attempts were made after the single recovery failed. Existing apps/client/build/web-mobile was not used as current output.",
+  "post_attempt_source_changes": "After both launch failures, a minor source cleanup/status initialization ordering fix was made; no build was rerun because the single recovery limit was exhausted. Current source identity is in pilot-implementation-hashes.sha256; no output is associated with that identity.",
+  "static_scene_check": "STATIC_PASS; structural reference checks only, Creator schema/asset resolution not covered; evidence in scene-static-check.json"
+}

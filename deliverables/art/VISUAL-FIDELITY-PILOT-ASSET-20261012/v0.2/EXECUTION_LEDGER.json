@@ -1,0 +1,26 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "version": "v0.2",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "status": "ONE_CANDIDATE_COMPLETE_RUNTIME_NOT_TESTED_CREATOR_BLOCKED",
+  "gate1": "USER_APPROVED at tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json",
+  "preflight": {
+    "mask_spec_sha256": "4f12245b7a68cd95c54563bdf84b1c93f8f0a582037692064441bcad57d701a6",
+    "art_presign_sha256": "7ef6dab67f0b5c289e401d7c67f437fa5b1d01edb6405cbd088a04090ec763be",
+    "tech_presign": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/TECH_PRESIGN.json",
+    "source_body_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+    "source_sign_sha256": "316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5",
+    "source_psd_sha256": "c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57",
+    "tools": {"python": "3.9.6", "pillow": "11.3.0", "generator": "none"}
+  },
+  "budget": {"generation_calls_limit": 0, "candidates_limit": 1, "cumulative_correction_rounds_limit": 2, "production_wall_clock_seconds_limit": 14400, "incremental_cost_yuan_limit": 0},
+  "actual": {"generation_calls": 0, "candidates": 1, "cumulative_correction_rounds": 2, "art_preview_correction_rounds": 1, "client_implementation_correction_rounds": 1, "production_started_at": "2026-10-12T15:24:21+08:00", "production_finished_at": "2026-10-12T15:49:23+08:00", "production_wall_clock_seconds": 1502, "incremental_cost_yuan": 0},
+  "outputs": [
+    {"path":"deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png","sha256":"f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f","kind":"only_mask_candidate"},
+    {"path":"deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preview/index.html","sha256":"b1b86c5f08cbae9ae4b2cc190e69665d4dc644020d2c122ff0d547b49c05463d","kind":"editable_cpu_reference_preview"},
+    {"path":"deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_full_083s.png","sha256":"1bbdf9eb26f8012d3ac7574a3d3e45ea9416c7867fa892e25d8d0ca857f54c21","kind":"same_scale_cpu_reference"},
+    {"path":"deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/lantern_static_contact.png","sha256":"6043b12414fb9958848ba72f5a0e87da57d218e0c58bb01e4ed4326e86333ddb","kind":"same_coordinate_detail_cpu_reference"}
+  ],
+  "failures": ["同一候选的可编辑 HTML 预览初版每帧复制并重绘 1024² 画布；经 Master 指出后改为初始化时绘制全图一次、每帧只复用并写回 102×165 局部 ROI（67,320 字节 RGBA）。同一修正轮次还将暂停按钮改为停止并恢复 1.0。此为 Art 第 1 轮修正，仅预览效率/控制语义，不改 mask/源图/曲线。", "Client 隔离实现内曾整理状态提示初始化顺序与无效 import，为另 1 轮修正；整批保守累计 2/2，见 Client RUNTIME_REPORT.md。Creator 3.8.8 CLI 首次 NSApplication SIGABRT，唯一恢复 LaunchServices kLSNoExecutableErr，未进入构建，所有实际引擎运行与性能项 NOT_TESTED。"],
+  "note": "预检不计入资源实际制作墙钟；本时间为首次 mask 输出前实际读取的时刻。"
+}

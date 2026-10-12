@@ -1,0 +1,52 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "owner": "client",
+  "summary": "已实现隔离的灯笼局部亮度 Cocos Pilot Scene、Effect、组件及 Art mask 引用；Creator 3.8.8 在 macOS GUI 初始化与 LaunchServices 启动均失败，尚无构建或真实回放，Client 交付状态为 BLOCKED。",
+  "artifacts": [
+    "apps/client/assets/labs/lantern-pilot-v02/LanternPilot.scene",
+    "apps/client/assets/labs/lantern-pilot-v02/lantern_pilot.ts",
+    "apps/client/assets/labs/lantern-pilot-v02/lantern_lighting.effect",
+    "apps/client/assets/labs/lantern-pilot-v02/lantern_mask_v02.png",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/FEATURE_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/IMPLEMENTATION_REPORT.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/RUNTIME_REPORT.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/build-attempts.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只在隔离 pilot 使用批准 body/sign 与 Art mask；正式源纹理和 meta 字节不变。",
+      "result": "PASS",
+      "evidence": "evidence/build/source-hashes.sha256：body/sign 图片及 meta SHA 与任务批准源一致；本任务修改仅在 lantern-pilot-v02 和本任务 client/evidence 目录。"
+    },
+    {
+      "criterion": "按双签实现单实例 Effect/独立材质、2秒曲线与暂停复位。",
+      "result": "NOT_TESTED",
+      "evidence": "对应 Scene/TS/effect 源码已写；Creator 构建未启动，运行行为和真实材质隔离未验证。"
+    },
+    {
+      "criterion": "强度1.0零差、mask外RGB零差、全图alpha不变，并完成循环/复位运行回放。",
+      "result": "NOT_TESTED",
+      "evidence": "没有实际 Cocos 构建或回放画面；不得以 Art 的静态像素 reference 替代。"
+    },
+    {
+      "criterion": "新增 Draw Call ≤1、mask GPU增量≤0.25MiB；CPU/GPU参考目标如实测量。",
+      "result": "NOT_TESTED",
+      "evidence": "Creator 未进入构建，Draw Call、GPU纹理格式及CPU/GPU测量均未执行。"
+    },
+    {
+      "criterion": "完成隔离构建/loopback/内置浏览器验证，或在一次证据恢复后记录可核的具体运行阻塞。",
+      "result": "PASS",
+      "evidence": "具体启动诊断及单次恢复结果已完整记录；该项阻塞为Creator/LaunchServices无法启动，故构建与运行子项仍NOT_TESTED，见 evidence/build/build-attempts.json。"
+    }
+  ],
+  "assumptions": [
+    "只将代码候选交付给 Master 作状态判断；没有真实 Cocos 画面，不能视为成品 USER_REVIEW 或视觉通过。"
+  ],
+  "risks": [
+    "Effect 导入/编译与 sampler 绑定未验证。",
+    "运行时 SpriteFrame 的最终 UV/V方向/纹理格式、动态合批隔离未验证。",
+    "完整动画、mask 外像素、alpha、Draw Call、性能及目标显示管线结果均未验证。",
+    "Creator CLI 在当前 macOS 环境下两次启动失败，且一次证据恢复用尽。"
+  ],
+  "status": "BLOCKED"
+}

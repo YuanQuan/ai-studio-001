@@ -1,0 +1,65 @@
+{
+  "id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "title": "奶茶店左檐红灯笼光照闪烁单候选首样",
+  "type": "art",
+  "owner": "art",
+  "parent": "VISUAL-FIDELITY-PILOT-PLAN-20261012",
+  "objective": "继承用户批准的v0.2方案，经同批Art/Tech首样预签后，制作一个左檐红灯笼局部亮度参数动画候选，并提交实际基准/极值/完整循环/复位与真实Cocos运行证据或具体NOT_TESTED诊断，供用户审核；不正式接入奶茶店。",
+  "inputs": [
+    "用户本轮明确：批准（对应v0.2灯笼制作方案）",
+    "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/VFX_SPEC.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/ASSET_MANIFEST.json",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/visual_production_contract.md",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "deliverables": [
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ART_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/RESOURCE_PRODUCE_SPEC.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/MASK_SPEC.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/ART_PRESIGN.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/TECH_PRESIGN.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preview/index.html",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/VISUAL_VALIDATION.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/RUNTIME_REPORT.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/TECH_RUNTIME_REVIEW.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/EXECUTION_LEDGER.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/DELIVERABLE.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/FEATURE_BRIEF.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/IMPLEMENTATION_REPORT.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/DELIVERABLE.json",
+    "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json"
+  ],
+  "acceptance": [
+    "准确继承已批准奶茶店01源与本批Gate1，源PNG/PSD/meta字节不变；Art/Tech同批预签包含最终mask/羽化、UV/atlas/trim/实例隔离、工具及执行预算，首样前完成。",
+    "只输出一个左檐红灯笼灯面及必要既有暖光候选；mask落在获批最大定位边界内且排除挂件/流苏/室内小灯/右杯牌/其他店，2秒0.90–1.00平滑单曲线，重复不叠加、打断恢复1.0。",
+    "在固定RGBA/色彩/背景/视窗/尺度下验证强度1.0基准、动态mask外RGB零差及全图alpha不变，提交基准/极值/完整循环回放与差异证据；未验证项如实NOT_TESTED，不拿静态模拟替代引擎运行。",
+    "独立pilot采用原body纹理及小型单实例Cocos Effect/材质；构建/HTTP/内置浏览器实测或具体诊断留证，新增Draw Call≤1、mask增量纹理≤0.25MiB；CPU/GPU0.1ms参考指标未测或精度不足不判PASS，不修改正式入口/PNG/meta。",
+    "执行账本记录0生图、1候选、同缺陷至多2轮累计修正、4小时制作墙钟和0元新增费用，保存源/参数/工具/产出hash与失败原因，达到任何硬上限先停。",
+    "Art与Client固定交付及真实文件核对齐全，提交准确候选效果USER_REVIEW，示例不安排QA；实际资源与动画未获本次成品批准前不正式接入，不宣告序列帧/骨骼等全部能力已通过。"
+  ],
+  "dependencies": [
+    "VISUAL-FIDELITY-PILOT-PLAN-20261012"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master跨职责明确授权：Art制作preflight/ART_PRESIGN及MASK_SPEC、原图参照的局部mask、Art固定产物/执行账本/视觉证据，使用Sol high；Tech只核真实Creator API与工具并写同批TECH_PRESIGN及技术/运行诊断，使用Sol low；Client只在apps/client/assets/labs/lantern-pilot-v02/和本交付目录client/、evidence/写独立pilot Effect/脚本/Scene/资源引用/实现及构建/运行证据，使用Luna low。不得改UnitSampleGallery、正式奶茶店资源或其他任务代码。",
+    "同批预签必须先于新mask/预览导出；Art先仅写mask几何/参数和预签，等Tech对同版MASK_SPEC签认再出图。没有运行工具或不能还原时先诊断，不以新框架或整图生图绕过。",
+    "Producer记录本轮Gate1批准及旧计划Task最终接受证据，新任务保持READY直到Owner实际preflight/核工具产出；仅维护本线五流程专属块和审批。Master保留用户原字‘批准’，用户精确消息时刻未知，登记时刻非消息时刻。",
+    "已批准源与原PSD仅引用不重新导出；允许确定性创建局部mask和参数动画，用户批准的0生图方案禁止调用imagegen。本次不是重新绘制图，也不扩正式资源范围。实际首样期限从双方预签完成并开始制作时记真实起点。",
+    "单元示例实际独立运行和成品审核按本包执行；正式接入与适用QA另建经批准任务。隔离pilot里引用用于验证的资源明确标实验输入，不声明为已批准正式动画资产。",
+    "不创建额外专业阶段用户门禁；在现有获批制作方案下完成首样与可复核证据，走下一具体效果USER_REVIEW。重大技术/效果/预算偏离才升级Master。",
+    "Master核固定Artifact后将Client实现报告命名为IMPLEMENTATION_REPORT.md，并要求Art ASSET_MANIFEST.md作为JSON清单的中文阅读索引；不改变制作范围或审批。",
+    "Producer 2026-10-12T15:21:40+08:00 核同批真实预签并登记 IN_PROGRESS：MASK_SPEC SHA 4f12245b7a68cd95c54563bdf84b1c93f8f0a582037692064441bcad57d701a6；ART_PRESIGN SHA 7ef6dab67f0b5c289e401d7c67f437fa5b1d01edb6405cbd088a04090ec763be；TECH_PRESIGN SHA df86508fb2d2d7c5bb487089c7dcd11a9894ef00507a4a999b7d25b8637c192d；Client FEATURE_BRIEF SHA d12cdf9055fd6213cc02db4979f3ee75c823a357bf36c35b0bccb870ec366de5。Art Brief/ResourceSpec也实存；Tech对Creator API/工具与上游批准方案进行了真实核验，预签仅解锁一个隔离首样，不代表动态效果或运行通过。Owner此前精确开工时刻未知；4小时制作预算从实际PNG/实现开始由账本记，当前无新PNG、Effect、Scene。",
+    "Master在同批首样开始后补列Tech实际运行独立核对TECH_RUNTIME_REVIEW.md为Required；这是已有Tech职责与预算复核的固定可追溯记录，不新增用户门禁或第二候选。真实Cocos缺口必须NOT_TESTED/具体诊断。",
+    "Producer 2026-10-12T15:51:16+08:00 核 Art 单候选 mask/同尺度静态与CPU交互参考已交，Art DELIVERABLE/EXECUTION_LEDGER 及 Tech 独立 TECH_RUNTIME_REVIEW 实存；自切图效果按 rules/visual_production_contract.md 可直接送准确 Art Gate2 USER_REVIEW，审批对象仅 mask 与同尺度预览视觉方向。整体 Cocos 运行任务 BLOCKED：Creator 3.8.8 首次 exit134/SIGABRT，唯一证据恢复 open -a exit1/kLSNoExecutableErr，未产生本批构建；实际动画、UV、Draw Call、GPU/CPU 与运行画面全部 NOT_TESTED，不能作为成品动态效果审核或正式接入。整批 0生图、1候选、累计修正2/2、0新增费用；制作账本15:24:21–15:49:23为1502秒。Art Gate2 用户决定与运行阻塞独立，旧Gate1 Plan DONE/USER_APPROVED不变。"
+  ]
+}

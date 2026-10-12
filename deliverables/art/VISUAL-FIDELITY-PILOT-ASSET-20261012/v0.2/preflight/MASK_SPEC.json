@@ -1,0 +1,59 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "version": "v0.2",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "status": "FINAL_PARAMETERS_AWAITING_TECH_PRESIGN",
+  "coordinate_system": "body RGBA 1024x1024, top-left origin, integer pixel x/y, pixel center x+0.5/y+0.5",
+  "approved_max_roi_xyxy_exclusive": [178, 505, 280, 670],
+  "source": {
+    "body_path": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+    "body_sha256": "1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06",
+    "body_mode_size": "RGBA 1024x1024",
+    "sign_path": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png",
+    "sign_sha256": "316b7bc4461ab43b8cd55bef7e35e6c4d5ddd5677d49aee06061c9c8db385ea5",
+    "psd_path": "deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/psd/shop_01_full_redraw_v01.psd",
+    "psd_sha256": "c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57",
+    "source_policy": "read-only; do not export or edit body, sign, PSD, or their meta"
+  },
+  "mask": {
+    "asset_id": "MT_SHOP_01_LANTERN_MASK_V02",
+    "output_path": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/exports/tex_mt_shop_01_lantern_mask_v02.png",
+    "format": "8-bit grayscale PNG L; sampled red channel; no premultiplication",
+    "texture_size_px": [128, 256],
+    "raw_texture_bytes": 32768,
+    "raw_texture_mib": 0.03125,
+    "mipmaps": false,
+    "filter": "linear",
+    "wrap": "clamp-to-edge",
+    "layout": "mask texel (u,v) represents source body pixel (178+u,505+v) for u=0..101,v=0..164; all remaining texels exactly zero",
+    "source_mapping": "source pixel center (x+0.5,y+0.5) -> mask normalized UV ((x-178+0.5)/128,(y-505+0.5)/256), top-down; Effect must resolve SpriteFrame actual UV/rect/trim/atlas/dynamic batching before sampling, without assuming raw source UV is final GPU UV",
+    "shape": {
+      "type": "inner-lantern-ellipse-times-source-green-and-alpha",
+      "center_source_px": [224.5, 565.5],
+      "radii_source_px": [25.0, 33.0],
+      "edge_feather_inward_px": 4.0,
+      "formula": "d=sqrt(((x+0.5-224.5)/25)^2+((y+0.5-565.5)/33)^2); edge=smoothstep(0,4,(1-d)*25); warm=smoothstep(50,110,source_G); opaque=smoothstep(240,255,source_A); M=round(255*edge*warm*opaque), clamped 0..255; smoothstep(a,b,z)=t*t*(3-2*t), t=clamp((z-a)/(b-a),0,1)",
+      "expected_nonzero_bbox_xyxy_exclusive": [200, 533, 249, 598],
+      "expected_nonzero_pixel_count": 2431,
+      "scope_note": "Only already-lit interior lamp face. The existing neighboring wood light remains baked into the unchanged body; no separate wood lobe is visually necessary for this subtle dimming. Red external rim, top hook, bottom tassel, roof, interior small lamp and right cup sign remain zero. The approved ROI is a hard outer limit, not a filled rectangle."
+    }
+  },
+  "animation": {
+    "period_seconds": 2.0,
+    "strength_range": [0.9, 1.0],
+    "keyframes_time_strength": [[0, 1.0], [0.45, 0.96], [0.85, 0.9], [1.2, 0.95], [1.65, 0.92], [2.0, 1.0]],
+    "interpolation": "smooth per segment with matched zero endpoint slope; continuous loop; one instance only",
+    "on_hide_pause_interrupt_or_disable": "stop and restore strength 1.0; restart from phase 0",
+    "pixel_formula": "source RGB * (1-(1-strength)*M/255), 8-bit round-to-nearest, original source alpha copied bit-for-bit; intensity 1.0 must bypass unchanged RGB",
+    "color_policy": "sRGB 8-bit RGBA reference preview only; actual Cocos texture/filter/color pipeline must be separately checked",
+    "prohibitions": "no extra glow, hue shift, geometry motion, per-frame image generation, or full-shop opacity change"
+  },
+  "gates": {
+    "gate1_record": "tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json",
+    "gate1_required_status": "USER_APPROVED",
+    "art_presign": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/ART_PRESIGN.json",
+    "tech_presign": "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/preflight/TECH_PRESIGN.json",
+    "before_png_or_preview": "Gate1 USER_APPROVED and same-batch Art/Tech presigns both present; any formula, source, size or tool change requires presign renewal"
+  },
+  "stop_conditions": ["intensity 1.0 differs from source RGBA", "any dynamic RGB difference outside nonzero mask", "any alpha difference", "actual mask nonzero outside approved max ROI or touches excluded details", "material instance or UV mapping cannot be isolated and verified", "draw-call or memory hard cap exceeded"]
+}
