@@ -811,3 +811,24 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `REVIEW_APPROVED_AND_GATE1_USER_REVIEW`：修订后的 Art 四核心经 Tech 独立实图/方法重评与 Master 独立来源复核均 `APPROVED`，同锁方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。Producer 2026-10-12 13:01:17 +08:00 核 Task 9/9 Required、索引 9/9、五项同序 PASS，建 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json`，Task/Approval 进入准确 v0.1 `USER_REVIEW`。用户对 Gate1 尚未决定，未制作新图片/母版/动画或运行。
 - `GAME_RELEASE_RECEIPT`：Master 报告规范启用与本 Pilot 方案共 37 文件以 `984770639c8df095b5b212d122f1279dd778d7e7` 普通提交推送，实时 `ls-remote main` 同 SHA、索引空。Producer 于 2026-10-12 13:08:13 +08:00 登记；`VALIDATION.json` 最终 13 项文档检查 PASS。规范 Task `DONE`，本 Pilot Task/Approval `USER_REVIEW`；推送不构成 Gate1 用户批准，本轮无资源制作。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
+
+<!-- MINIGAMES-GROWTH-20261012 START -->
+## 2026-10-12｜六店熟练度与奶茶后期加难分项确认
+
+- `USER_DECISION_GROWTH_DIRECTION`：用户选择 MG01 五项封顶后增加原料备选种类、逐步收紧时间；六店完成增加对应店长熟练度，经验达门槛解锁后续难度。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.5/GROWTH_DECISION.md` 与 `GROWTH_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_GROWTH_v0.5.json` 有限 `USER_APPROVED`，决定文档 SHA-256 `b14b4a5bef63b0320a60f09d60cb4b4ff0f19ad8c591ef4ff76d6e36184e67a8`。用户消息精确时刻未知。
+- `CONTINUITY_CHECK`：经验递增所指和同档内加难待澄清；父 `SPEC`、旧 Product v0.1 `USER_REVIEW` 保持，无本线空转 `READY/IN_PROGRESS`，不解锁开发。
+<!-- MINIGAMES-GROWTH-20261012 END -->
+
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 START -->
+## 2026-10-12｜熟练度奖励与档内递增分项确认
+
+- `USER_DECISION_PROFICIENCY_RULES`：用户明确六店通关熟练度经验奖励随难度逐档提高，同档挑战随熟练度增加逐渐加难，达到门槛解锁下一档。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.6/PROFICIENCY_RULES_DECISION.md` 与 `PROFICIENCY_RULES_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_PROFICIENCY_RULES_v0.6.json` 有限 `USER_APPROVED`，决定文档 SHA-256 `7f87ba22e976afe8da45e822bd84ed8104740a949ea044ac3dea58e8921d1ae9`。用户消息精确时刻未知。
+- `CONTINUITY_CHECK`：不推定门槛随难度递增，结算数值与失败/退出/重复挑战经验未定；父 `SPEC`、旧 Product v0.1 `USER_REVIEW` 不变，无本线空转 `READY/IN_PROGRESS`。
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 END -->
+
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 START -->
+## 2026-10-12｜六店熟练度经验结算分项确认
+
+- `USER_DECISION_XP_SETTLEMENT`：用户确认六店成功通关及重复成功通关均给对应店长经验，失败/退出不给。Master `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md` 与 `EXPERIENCE_SETTLEMENT_REVIEW.json` 实存，Review APPROVED；Producer 登记 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json` 有限 `USER_APPROVED`，决定文档 SHA-256 `1453edccf0773bb963819c5975011981c790ac159155bb97abeabf35ad4397ee`。用户消息精确时刻未知。
+- `CONTINUITY_CHECK`：累计/消耗、初始开放档及解锁持久性待决，父 `SPEC`、旧 Product v0.1 `USER_REVIEW` 不变，无本线空转 `READY/IN_PROGRESS`，不解锁开发。
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->

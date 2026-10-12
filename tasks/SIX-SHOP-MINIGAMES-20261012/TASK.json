@@ -5,11 +5,38 @@
   "owner": "master",
   "parent": null,
   "objective": "逐店讨论和确认六个主题小游戏，按阶段审批先完成奶茶试点再扩展其余五店。",
-  "inputs": ["deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md", "用户2026-10-12明确要求执行已呈现计划", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/DIFFICULTY_DECISION.md", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/MILK_TEA_RULES_DECISION.md", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md"],
-  "deliverables": ["deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md", "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/MASTER_SUMMARY.md"],
-  "acceptance": ["六个小游戏分别有获批产品规则、适用专业产物及正式实现验收证据", "玩家选档与进度递增以及每游戏独立调参经过验证", "全部适用用户审批、专业Review和QA完成后Master最终接受"],
+  "inputs": [
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md",
+    "用户2026-10-12明确要求执行已呈现计划",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/CORE_OPERATION_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/DIFFICULTY_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.2/MILK_TEA_RULES_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.3/RECIPE_ITEMS_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.4/RECIPE_ORDER_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.5/GROWTH_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.6/PROFICIENCY_RULES_DECISION.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md"
+  ],
+  "deliverables": [
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/ROADMAP.md",
+    "deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.1/MASTER_SUMMARY.md"
+  ],
+  "acceptance": [
+    "六个小游戏分别有获批产品规则、适用专业产物及正式实现验收证据",
+    "玩家选档与进度递增以及每游戏独立调参经过验证",
+    "全部适用用户审批、专业Review和QA完成后Master最终接受"
+  ],
   "dependencies": [],
   "status": "SPEC",
   "approval": "APPROVAL",
-  "notes": ["当前仅启动MG01讨论；路线批准不代表候选玩法或功能实现批准。", "用户已选奶茶核心A；六游戏最新统一五档，简单不限时中等起限时，覆盖路线v0.1三档。", "奶茶完成规定正确订单数过关，简单显示完整配方，中等起显示饮品要求并可随时查配方；可撤销选料、交错不计完成且可重做，限时计时继续。", "具体配方、制作细节、递增依据、数量时长与经营奖励等仍待讨论；父任务SPEC，不代表六游戏已实现。", "奶茶配方项数简单3、中等4、困难5、地狱5、噩梦5；中等加甜度、困难加冰量；封顶后的加难方式待决。"]
+  "notes": [
+    "当前仅启动MG01讨论；路线批准不代表候选玩法或功能实现批准。",
+    "用户已选奶茶核心A；六游戏最新统一五档，简单不限时中等起限时，覆盖路线v0.1三档。",
+    "奶茶完成规定正确订单数过关，简单显示完整配方，中等起显示饮品要求并可随时查配方；可撤销选料、交错不计完成且可重做，限时计时继续。",
+    "具体配方、制作细节、递增依据、数量时长与经营奖励等仍待讨论；父任务SPEC，不代表六游戏已实现。",
+    "奶茶配方项数简单3、中等4、困难5、地狱5、噩梦5；中等加甜度、困难加冰量；封顶后的加难方式待决。",
+    "六摊位游戏完成增加店长熟练度，达到经验门槛解锁后续难度；奶茶五项封顶后增加原料备选并收紧时间；经验递增所指与同档内变化仍待澄清。",
+    "v0.6明确通关熟练度经验随难度提高，同档内随熟练度逐渐加难；达到门槛解锁下一档。失败／退出与重复通关经验等待确认。",
+    "v0.7六店通关给熟练度经验，重复通关也给；失败和退出不给。累计／消耗、初始档位和解锁持久性待确认。"
+  ]
 }

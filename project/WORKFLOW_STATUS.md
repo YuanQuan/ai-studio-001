@@ -766,3 +766,24 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 准确送审节点（2026-10-12 13:01:17 +08:00 核）：Art 已纠正阿棠 AT_S0 棕发花饰锚点，Tech 重评和 Master 复核均 `APPROVED`。四核心 SHA：方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。本 Task/Approval `USER_REVIEW`，不是 `USER_APPROVED`；无新图片、修改、生成、动画、运行或资源 QA 结论。
 - 发布与 continuity 回执（Producer 2026-10-12 13:08:13 +08:00 核）：本批与已启用规范的正式 Game 交付点为 `984770639c8df095b5b212d122f1279dd778d7e7`，普通 push 成功且实时远端 main 同 SHA；最终送审文档验证 13 项 PASS。规范 Task `DONE`，本 Pilot Task/Approval 真实停在 `USER_REVIEW`，下游资源制作待用户决定，无空转 `READY/IN_PROGRESS`。本周期文档工作结束，无图片制作。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
+
+<!-- MINIGAMES-GROWTH-20261012 START -->
+## 2026-10-12｜六店熟练度与奶茶后期加难当前方向
+
+- 用户确认 MG01 在五项配方要素封顶后，以增加原料备选种类、逐步收紧时间加难；六个摊位游戏完成后分别增加对应店长熟练度，达到经验门槛解锁后续难度。来源 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.5/GROWTH_DECISION.md`，Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_GROWTH_v0.5.json` 为 `USER_APPROVED`。
+- “越难提升经验越高”究竟指通关奖励、解锁门槛或两者，以及同档内是否持续加难仍待澄清；具体经验值、初始档位、失败经验、经营效率及独立关卡均未确定。父 Task `SPEC`，旧 Product v0.1 Task/Approval `USER_REVIEW`，不解锁资源、编码或 QA。Continuity check：本轮明确方向已记录，待 Master 澄清，当前无本线空转 `READY/IN_PROGRESS`；复盘 `WR-20261012-MINIGAMES-GROWTH-001`。
+<!-- MINIGAMES-GROWTH-20261012 END -->
+
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 START -->
+## 2026-10-12｜六店熟练度经验与档内递增当前规则
+
+- 用户已确认六店成功通关的对应店长熟练度奖励随难度逐档提高；同一已解锁难度档内随熟练度增加逐渐加难，达到经验门槛解锁下一档。准确来源 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.6/PROFICIENCY_RULES_DECISION.md`，Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_PROFICIENCY_RULES_v0.6.json` 为 `USER_APPROVED`。本记录解决 v0.5 所列两项歧义，旧版保留历史。
+- 本决定不表示解锁门槛也逐档提高；奖励/门槛数值、失败或退出经验、重复挑战结算、初始开放档、低档随熟练度变化细节仍待讨论。父 Task `SPEC`，旧 Product v0.1 Task/Approval `USER_REVIEW`；不解锁正式配置、资源、编码或 QA。Continuity check：已确认部分已落盘，下一步继续经验结算问答，无本线空转 `READY/IN_PROGRESS`。复盘 `WR-20261012-MINIGAMES-PROFICIENCY-001`。
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 END -->
+
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 START -->
+## 2026-10-12｜六店熟练度经验结算当前规则
+
+- 用户已确认：六店只有成功通关获得对应店长熟练度经验，重复挑战成功仍给；失败或中途退出不给。准确决定 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md` 经 Master Review APPROVED，有限批准 `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json` 为 `USER_APPROVED`。本记录补足前版“失败/退出/重复挑战”待决项。
+- 经验累计或解锁消耗、初始开放档、解锁持久性与具体数值仍待用户决定；不附加次数限制。父 Task `SPEC`，旧 Product v0.1 Task/Approval `USER_REVIEW`，不解锁正式配置、资源、编码或 QA。Continuity check：本轮已确认规则已登记，下一步继续解锁机制问答，无本线空转 `READY/IN_PROGRESS`。复盘 `WR-20261012-MINIGAMES-XP-SETTLEMENT-001`。
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->

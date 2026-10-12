@@ -397,3 +397,21 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Gate1 准确 v0.1 已送 `USER_REVIEW`：审批对象 `deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.1/PRODUCTION_PLAN.md`，记录 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json`，`decided_at=null`。Tech/Master 对修订四核心均 `APPROVED`，锁定 SHA：方案 `cddc83ddd3598c2a6d9978dcd9056afd2a54f27f9b441cca4e7fa47ffaf8e2ce`、Brief `2bad152977efab90728c3f272b05428e5301b6d32895ba283bd1eb9d62f19e49`、锚点 `64f4ec41b46d534e6be019e7b12b41e9bb169283c181789f0eb1f1c4b5454d1c`、资产表 `ee88cf37f19e2643451e6513ada69b8cc9cef3ab68c17d27a4af6971ebbd7339`。本批用户未批准，制作仍关闭；通用规范批准及旧 U04 Gate2 不替代本 Gate1。
 - 发布回执：Game 规范/Pilot 文档提交 `984770639c8df095b5b212d122f1279dd778d7e7` 已普通推送且远端 main 同 SHA；此 Git 发布不改变本批 v0.1 `USER_REVIEW`、`decided_at=null`，无新资源制作许可。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
+
+<!-- MINIGAMES-GROWTH-20261012 START -->
+## 2026-10-12｜小游戏熟练度方向有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_GROWTH_v0.5.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.5/GROWTH_DECISION.md`，SHA-256 `b14b4a5bef63b0320a60f09d60cb4b4ff0f19ad8c591ef4ff76d6e36184e67a8`，Master Review APPROVED。仅批准奶茶五项封顶后的原料选项增加及时间逐步收紧，以及六店完成增加对应店长熟练度、经验门槛解锁后续难度。奖励与门槛是否均随难度递增、同档内变化、数值和运行字段未批；旧 Product v0.1 整包仍 `USER_REVIEW`，不批准开发。
+<!-- MINIGAMES-GROWTH-20261012 END -->
+
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 START -->
+## 2026-10-12｜熟练度奖励与档内递增有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_PROFICIENCY_RULES_v0.6.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.6/PROFICIENCY_RULES_DECISION.md`，SHA-256 `7f87ba22e976afe8da45e822bd84ed8104740a949ea044ac3dea58e8921d1ae9`，Master Review APPROVED。仅批准六店通关熟练度奖励随难度提高、熟练度驱动已解锁档内逐渐加难并达门槛解锁下一档。门槛递增、具体经验/门槛数值、失败/退出与重复挑战经验均未批；旧 Product v0.1 整包仍 `USER_REVIEW`，不批准开发。
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 END -->
+
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 START -->
+## 2026-10-12｜六店经验结算有限批准
+
+- `tasks/SIX-SHOP-MINIGAMES-20261012/ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json`：`USER_APPROVED`、`decided_at=null`；对象 `deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md`，SHA-256 `1453edccf0773bb963819c5975011981c790ac159155bb97abeabf35ad4397ee`，Master Review APPROVED。只批准六店成功通关及重复成功给对应店长经验，失败/退出不给；累计/消耗、初始开放档、解锁持久性和数值未批。旧 Product v0.1 整包仍 `USER_REVIEW`，不批准开发。
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->

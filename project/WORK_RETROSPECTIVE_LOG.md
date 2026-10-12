@@ -828,3 +828,33 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与 continuity：Art 下次在方案初稿前先用文件哈希与实图同屏核角色 ID、当前适用方向和视觉锚点，代价一次核图，复核点为下一批首份 `ART_BRIEF`；Tech 对任何修订后的核心文件重新锁 SHA，复核点为下一次正式 Review。当前已真实到 `USER_REVIEW`，等待用户对本批 Gate1 明确决定；无本线空转 `READY/IN_PROGRESS`，资源制作仍锁定，示例不参加 QA。
 - 发布核对（Asia/Shanghai）：Producer 于 2026-10-12 13:08:13 +08:00 记录 Master 报告的 Game 正式提交 `984770639c8df095b5b212d122f1279dd778d7e7`、普通推送与远端 main 同 SHA；最终 `VALIDATION.json` 13 项文档检查 PASS。提交/推送的精确完成时刻、各阶段净制作和等待耗时未知，不由本记录核验时刻推算。Continuity 终点仍为规范 Task `DONE`、本 Pilot `USER_REVIEW` 待用户 Gate1 决定；未制作资源或进行运行检查。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
+
+<!-- MINIGAMES-GROWTH-20261012 START -->
+### WR-20261012-MINIGAMES-GROWTH-001｜六店熟练度方向确认
+
+- 结果与证据：用户确认 MG01 五项封顶后增加原料选项并逐步收紧时间，六店完成游戏增加对应店长熟练度、经验达门槛解锁后续难度。`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.5/GROWTH_DECISION.md` 与 Master Review 实存，Producer `ARTIFACT_APPROVAL_GROWTH_v0.5.json` 仅对此方向记 `USER_APPROVED`。父任务 `SPEC`、旧 Product v0.1 `USER_REVIEW`。
+- 时间与耗时（Asia/Shanghai）：可核首次探索时间 2026-10-12 13:44:33 +08:00，本轮记录于 13:48:19 后实存；可观察墙钟至少 3 分 46 秒，具体收尾时刻、用户回复时刻、各角色净工时及等待时间未知，不把总跨度计为单角色制作时间。
+- 影响与原因：经验递增所指奖励或门槛、同档内是否变化尚未确认；本轮仅收束方向，无可比时限或可证实慢因，未见可量化工具故障。
+- 建议与复核：Master 下一轮澄清经验奖励与门槛及同档内变化，Product 之后再写具体成长规则；代价是一轮问答，复核点为下一份明确用户决定。Producer 保持有限批准与旧整包送审分离，复核点为下一次状态登记。
+- Continuity check：已确认方向已登记；父 `SPEC`、Product v0.1 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`，未生成正式开发输入。
+<!-- MINIGAMES-GROWTH-20261012 END -->
+
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 START -->
+### WR-20261012-MINIGAMES-PROFICIENCY-001｜熟练度奖励与档内递增确认
+
+- 结果与证据：用户确认六店通关熟练度经验奖励随难度逐档提高，以及熟练度增长使已解锁档内挑战逐渐加难、达门槛解锁下一档。`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.6/PROFICIENCY_RULES_DECISION.md`、同版 Master Review 和 `ARTIFACT_APPROVAL_PROFICIENCY_RULES_v0.6.json` 实存，后者仅对此规则记 `USER_APPROVED`。父任务 `SPEC`、旧 Product v0.1 `USER_REVIEW`。
+- 时间与耗时（Asia/Shanghai）：可核首次探索时间 2026-10-12 13:52:00 +08:00，决定及流程记录于 13:53:56 后实存，可观察墙钟至少 1 分 56 秒。用户消息精确时刻、各角色净制作及等待时间未知，不能把总跨度当任一角色工时。
+- 影响与原因：v0.5 所列“奖励还是门槛”和“档内是否变难”两项歧义已解除；门槛是否递增、数值与失败/退出/重复挑战经验仍待问答。无同类时限或可证实慢因，未见本轮工具故障证据。
+- 建议与复核：Master 下一轮先确认经验结算与解锁细节，再由 Product 写正式数值和进度规格；代价为一轮问答，复核点为下一份用户决定。Producer 保留 v0.5/v0.6 分项审批链，复核点为下一次流程核验。
+- Continuity check：已授权的规则确认已登记；父 `SPEC`、Product v0.1 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`，不视为正式开发输入。
+<!-- MINIGAMES-PROFICIENCY-RULES-20261012 END -->
+
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 START -->
+### WR-20261012-MINIGAMES-XP-SETTLEMENT-001｜六店通关经验结算确认
+
+- 结果与证据：用户确认六店成功通关、重复成功挑战均给对应店长熟练度经验，失败与中途退出不给。`deliverables/master/SIX-SHOP-MINIGAMES-20261012/v0.7/EXPERIENCE_SETTLEMENT_DECISION.md`、同版 Master Review 与 `ARTIFACT_APPROVAL_EXPERIENCE_SETTLEMENT_v0.7.json` 实存，后者仅对此结算记 `USER_APPROVED`；父 `SPEC`、旧 Product v0.1 `USER_REVIEW`。
+- 时间与耗时（Asia/Shanghai）：可核本轮首次核对 2026-10-12 13:55:58 +08:00，决定及流程记录于 13:56:59 后实存，可观察墙钟至少 1 分 01 秒；用户回复精确时刻、各角色净工时及等待时长未知，不能归为单角色制作时间。
+- 影响与原因：前版失败/退出/重玩经验待决已解决；累计或解锁消耗、初始开放档、解锁持久性与数值继续待决。无可靠同类时限或可证实慢因，未见本轮工具故障证据。
+- 建议与复核：Master 下一轮确认累计/消耗、初始档与解锁持久性；Product 再细化经验结算及门槛规格，代价为一轮问答，复核点为下一份用户决定。Producer 保持本有限批准与旧 Product 整包审批分离，复核点为下次状态核验。
+- Continuity check：当前已授权决定已登记；父 `SPEC`、Product v0.1 `USER_REVIEW`，无本线空转 `READY/IN_PROGRESS`，无正式开发输入。
+<!-- MINIGAMES-EXPERIENCE-SETTLEMENT-20261012 END -->
