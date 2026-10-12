@@ -813,6 +813,7 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `V01_SUPERSEDED_V02_REVISION_STARTED`：用户将待审最小方案改为奶茶店左檐红灯笼局部亮度闪烁。Producer 从 Git HEAD 保留 v0.1 `USER_REVIEW` Task/Approval 原件于 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/history/v0.1-user-review/`，独立 v0.1 审批记 `SUPERSEDED`（仅审批对象替换），现行审批指 v0.2 `DRAFT`、`decided_at=null`。Art 本轮已核 U03 获批奶茶01沿用的 PSD SHA `c4eac643b8b420a2937b893fb82254a500dfd5fb4f3ee83dbf09773d5a2cef57` 与 Client body SHA `1a5e980d2df64078197883f5ffdcd27fbd282fc9a71055c9aada87de0185fb06`，目视左檐红灯笼且 PSD 仅四区域层、无独立 light。Producer 2026-10-12 14:16:47 +08:00 核身份并登记 v0.2 `IN_PROGRESS`；Owner 精确开工秒数未知。只写文字方案，未出图、动画、Shader或运行。
 - `V02_REVIEW_APPROVED_AND_GATE1_USER_REVIEW`（Producer 2026-10-12 14:43:42 +08:00 核）：五核心与 Art/Tech/Master 同版锁定 SHA 一致，Required/索引 12/12 实存，五项同序文档验收 PASS；现行 Task/Approval 为 v0.2 `USER_REVIEW`、`decided_at=null`。源 LF/CRLF 差异只读精确解证；v0.1 历史保留且 `SUPERSEDED`。无新图、动画、代码或运行；v0.2 Git 发布待真实回执。
 - `V02_FINAL_METADATA_CORRECTION`：送审前校验发现 ASSET_MANIFEST 源原图 SHA 文档漏写，已纠正为 64 位实物与获批清单一致值；原图字节未变。Art/Tech/Master 分别复核并维持 `APPROVED`；最终清单 SHA `8b1ea61b163e8cc60efcdd487af8ae7c7d8733f0f0f49286c919f429805e64f5`，其余四核心不变。Producer 更新准确 v0.2 Approval 绑定，仍 `USER_REVIEW`/`decided_at=null`。
+- `V02_GAME_RELEASE_RECEIPT`：限定 22 文件 v0.2 方案提交 `615c2a3417623fc469f64c7d868f427e0f7c0935`，普通 push 成功，随后 `ls-remote` 确认 `origin/main` 同 SHA；Master 2026-10-12 14:54:05 +08:00 核。独立文档验证 14 项 PASS，真实动画/引擎/性能 NOT_TESTED。前述“待回执”为该节点前历史状态；当前 Task/Approval `USER_REVIEW`/`decided_at=null`，用户未批准，无新资源制作。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

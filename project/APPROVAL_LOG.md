@@ -399,6 +399,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户换题后的准确版本链：Git HEAD 的 v0.1 `USER_REVIEW` Task/Approval 原件保存在 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/history/v0.1-user-review/`；独立 `tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `SUPERSEDED`，原因是用户以奶茶店左檐红灯笼替换待审对象，非 v0.1 已批准或成品退回。现行 `ARTIFACT_APPROVAL.json` 对象为 `deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/PRODUCTION_PLAN.md`，状态 `DRAFT`、`decided_at=null`；v0.2 尚无 Gate1 用户决定，不能制作新图/动画或接入。通用规范批准与 U03 旧资源 Gate2 不代替本批 v0.2 Gate1。
 - 当前 v0.2 Gate1 准确送审：审批对象 `deliverables/art/VISUAL-FIDELITY-PILOT-PLAN-20261012/v0.2/PRODUCTION_PLAN.md`，`tasks/VISUAL-FIDELITY-PILOT-PLAN-20261012/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`，`review_ref` 指同版 `MASTER_REVIEW.json`；Art/Tech/Master 均 `APPROVED`，五核心 SHA 绑定见审批及 Master Review。Producer 核 Required 12/12、五项文档验收 PASS，仅证明送审齐备。用户尚未批准 v0.2 方案；新图、动画、Effect 实现及正式接入均未放行，后续 Gate1/Gate2 保留。
 - 最终送审绑定：ASSET_MANIFEST 修正文档源图 SHA 漏写后，清单自身最终 SHA 为 `8b1ea61b163e8cc60efcdd487af8ae7c7d8733f0f0f49286c919f429805e64f5`；Art/Tech/Master 已对该同版修正复核 `APPROVED`，其余四核心不变。现行 Approval 已精确绑定该值，状态继续 `USER_REVIEW`、`decided_at=null`；用户决定尚未发生。
+- v0.2 发布与审批边界：正式方案提交 `615c2a3417623fc469f64c7d868f427e0f7c0935` 已普通推送、远端 main 同 SHA（Master 2026-10-12 14:54:05 +08:00 核），独立文档验证 14 项 PASS。Git 发布不构成用户批准；本批 Approval 仍 `USER_REVIEW`/`decided_at=null`，资源制作门禁关闭。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

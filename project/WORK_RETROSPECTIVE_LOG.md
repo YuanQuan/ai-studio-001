@@ -837,8 +837,9 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 
 - 结果与证据：Art、Tech、Master 对五核心同版评审 `APPROVED`；Producer 核 12/12 Required、五项同序文档验收 PASS，当前 v0.2 Task/Approval 到 `USER_REVIEW`/`decided_at=null`。源清单当前 LF 与获批记录 CRLF 差异只读换行转换可精确还原，未改源、非阻塞。本轮无生图、改图、动画、代码或运行，性能及效果实际验证 `NOT_TESTED`。
 - 时间与影响（Asia/Shanghai）：Producer 2026-10-12 14:43:42 +08:00 核送审；v0.2 用户消息起点、各角色制作与等待净耗时未知，不从核验时间推算。定向修订将尚未实装的局部 Effect、UV/atlas/trim 与预算表达清楚；无可靠证据量化返工成本。
-- 建议与 continuity：Art/Tech 在下一首样前同批核单实例材质、原像素/alpha、UV 与实际性能，复核点为 Gate1 用户批准后的预签；不满足硬上限即停。本周期停在真实 `USER_REVIEW`，没有空转 `READY/IN_PROGRESS`；用户未批准具体方案前不制作资源。Git 发布状态待 Master 真实回执。
+- 建议与 continuity：Art/Tech 在下一首样前同批核单实例材质、原像素/alpha、UV 与实际性能，复核点为 Gate1 用户批准后的预签；不满足硬上限即停。本周期停在真实 `USER_REVIEW`，没有空转 `READY/IN_PROGRESS`；用户未批准具体方案前不制作资源。Git 发布已核，正式 commit 见发布收尾。
 - 送审前最终校验补记：发现源原图 SHA 在资产清单中漏写两字符，Art/Tech/Master 对实物、获批清单与修正后的文档重新复核，同版维持 `APPROVED`；清单新 SHA 已写入审批。此为记录笔误纠正，源图、视觉方案和实际资源未改。Producer 2026-10-12 14:51:02 +08:00 核最终五核心、12/12 路径、五项同序验收与三份评审；本周期整体起点及复核净耗时未知。建议 Art 在下批资产表送评前自动检查 SHA 长度并比对实物，复核点为下批首份 ASSET_MANIFEST。当前 continuity 仍停 Gate1 `USER_REVIEW`，未获用户批准，资源制作门禁关闭。
+- 发布收尾（Master 2026-10-12 14:54:05 +08:00 核）：限定 22 文件以 `615c2a3417623fc469f64c7d868f427e0f7c0935` 普通推送且远端 main 同 SHA，独立文档验证 14 项 PASS；前述 Git 待回执状态现已结束。push 精确完成秒数及本周期净耗时未知，不从 Master 核验时刻推算。Continuity 最终停 Gate1 `USER_REVIEW`/`decided_at=null`，无空转执行任务；用户未批准，未制作资源，实际运行/动画/性能仍 NOT_TESTED。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->
