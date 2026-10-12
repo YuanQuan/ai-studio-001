@@ -1,0 +1,20 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "输出目录保护不足：generate() 接受任意仓库外 --output-dir；目录已存在时无所有权检查便将目标移到 .previous，并递归删除此前的 .previous 与替换后的备份。误传已有目录会删除无关数据。旧目录移走与新目录落位之间还有进程中断空窗，因此目前不能将目录交换称为对所有失败均安全。请把可写目标限制为本任务候选样本目录（或经明确标识的专用空目录），禁止覆盖非本工具产物，并补充现存目标、已有备份及中断恢复测试。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实际执行 4 项单元测试全部通过；样本输入和两份输出 SHA-256 与清单一致。审批记录、资源索引的候选路径/哈希门禁及四表 READY/true、类型、引用、阶段选项池校验在当前源上通过；客户端投影没有奖励/解锁门槛，阶段2配方提示带 min_stage_no，须由界面按阶段过滤。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本次仅检查候选生成器和样本，RESOURCE_INDEX 未启用运行入口；没有服务端/客户端运行、发布或 QA 结论。"
+    }
+  ],
+  "next_action": "Owner 修复输出目录保护和恢复语义并更新测试及技术说明后重新送独立技术 Review；修复前不把本版送用户审批或用于正式发布。"
+}

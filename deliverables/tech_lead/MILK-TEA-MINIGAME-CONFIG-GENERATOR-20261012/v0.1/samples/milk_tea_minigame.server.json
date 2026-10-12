@@ -1,0 +1,476 @@
+{
+  "schema_version": "1.0",
+  "resource_id": "MILK_TEA_MINIGAME",
+  "source_sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
+  "approval_version": "v0.1",
+  "config_version": "v0.1",
+  "shop_id": "MT_SHOP_01",
+  "difficulty_stages": [
+    {
+      "stage_id": "MG01_EASY_1",
+      "tier_id": "EASY",
+      "stage_no": 1,
+      "xp_from": 0,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": null,
+      "options_per_dim": 2,
+      "xp_reward": 10
+    },
+    {
+      "stage_id": "MG01_EASY_2",
+      "tier_id": "EASY",
+      "stage_no": 2,
+      "xp_from": 20,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": null,
+      "options_per_dim": 3,
+      "xp_reward": 10
+    },
+    {
+      "stage_id": "MG01_MEDIUM_1",
+      "tier_id": "MEDIUM",
+      "stage_no": 1,
+      "xp_from": 50,
+      "recipe_dims": 4,
+      "orders_target": 3,
+      "time_sec": 150,
+      "options_per_dim": 2,
+      "xp_reward": 15
+    },
+    {
+      "stage_id": "MG01_MEDIUM_2",
+      "tier_id": "MEDIUM",
+      "stage_no": 2,
+      "xp_from": 75,
+      "recipe_dims": 4,
+      "orders_target": 3,
+      "time_sec": 135,
+      "options_per_dim": 3,
+      "xp_reward": 15
+    },
+    {
+      "stage_id": "MG01_HARD_1",
+      "tier_id": "HARD",
+      "stage_no": 1,
+      "xp_from": 120,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 135,
+      "options_per_dim": 2,
+      "xp_reward": 22
+    },
+    {
+      "stage_id": "MG01_HARD_2",
+      "tier_id": "HARD",
+      "stage_no": 2,
+      "xp_from": 150,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 120,
+      "options_per_dim": 3,
+      "xp_reward": 22
+    },
+    {
+      "stage_id": "MG01_HELL_1",
+      "tier_id": "HELL",
+      "stage_no": 1,
+      "xp_from": 220,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 120,
+      "options_per_dim": 3,
+      "xp_reward": 30
+    },
+    {
+      "stage_id": "MG01_HELL_2",
+      "tier_id": "HELL",
+      "stage_no": 2,
+      "xp_from": 260,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 105,
+      "options_per_dim": 4,
+      "xp_reward": 30
+    },
+    {
+      "stage_id": "MG01_NIGHTMARE_1",
+      "tier_id": "NIGHTMARE",
+      "stage_no": 1,
+      "xp_from": 360,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 105,
+      "options_per_dim": 3,
+      "xp_reward": 40
+    },
+    {
+      "stage_id": "MG01_NIGHTMARE_2",
+      "tier_id": "NIGHTMARE",
+      "stage_no": 2,
+      "xp_from": 410,
+      "recipe_dims": 5,
+      "orders_target": 3,
+      "time_sec": 90,
+      "options_per_dim": 4,
+      "xp_reward": 40
+    }
+  ],
+  "unlock_conditions": [
+    {
+      "tier_id": "EASY",
+      "prev_tier_id": null,
+      "initial_open": true,
+      "xp_enabled": false,
+      "xp_min": 0,
+      "level_enabled": false,
+      "level_min": 1,
+      "soul_enabled": false,
+      "soul_min": 0,
+      "spirit_enabled": false,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "MEDIUM",
+      "prev_tier_id": "EASY",
+      "initial_open": false,
+      "xp_enabled": true,
+      "xp_min": 50,
+      "level_enabled": false,
+      "level_min": 1,
+      "soul_enabled": false,
+      "soul_min": 0,
+      "spirit_enabled": false,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "HARD",
+      "prev_tier_id": "MEDIUM",
+      "initial_open": false,
+      "xp_enabled": true,
+      "xp_min": 120,
+      "level_enabled": false,
+      "level_min": 1,
+      "soul_enabled": false,
+      "soul_min": 0,
+      "spirit_enabled": false,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "HELL",
+      "prev_tier_id": "HARD",
+      "initial_open": false,
+      "xp_enabled": true,
+      "xp_min": 220,
+      "level_enabled": false,
+      "level_min": 1,
+      "soul_enabled": false,
+      "soul_min": 0,
+      "spirit_enabled": false,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "NIGHTMARE",
+      "prev_tier_id": "HELL",
+      "initial_open": false,
+      "xp_enabled": true,
+      "xp_min": 360,
+      "level_enabled": false,
+      "level_min": 1,
+      "soul_enabled": false,
+      "soul_min": 0,
+      "spirit_enabled": false,
+      "spirit_min": 0
+    }
+  ],
+  "ingredients": [
+    {
+      "ingredient_id": "TEA_BLACK",
+      "dimension": "TEA",
+      "name": "红茶",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "TEA_GREEN",
+      "dimension": "TEA",
+      "name": "绿茶",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "TEA_OOLONG",
+      "dimension": "TEA",
+      "name": "乌龙茶",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "TEA_JASMINE",
+      "dimension": "TEA",
+      "name": "茉莉茶",
+      "sort_order": 4
+    },
+    {
+      "ingredient_id": "MILK_FRESH",
+      "dimension": "MILK",
+      "name": "鲜奶",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "MILK_OAT",
+      "dimension": "MILK",
+      "name": "燕麦奶",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "MILK_COCONUT",
+      "dimension": "MILK",
+      "name": "椰奶",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "MILK_SOY",
+      "dimension": "MILK",
+      "name": "豆奶",
+      "sort_order": 4
+    },
+    {
+      "ingredient_id": "TOP_PEARL",
+      "dimension": "TOPPING",
+      "name": "珍珠",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "TOP_PUDDING",
+      "dimension": "TOPPING",
+      "name": "布丁",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "TOP_GRASS",
+      "dimension": "TOPPING",
+      "name": "仙草",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "TOP_TARO",
+      "dimension": "TOPPING",
+      "name": "芋圆",
+      "sort_order": 4
+    },
+    {
+      "ingredient_id": "SWEET_NORMAL",
+      "dimension": "SWEET",
+      "name": "标准甜",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "SWEET_LESS",
+      "dimension": "SWEET",
+      "name": "少甜",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "SWEET_HALF",
+      "dimension": "SWEET",
+      "name": "半糖",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "SWEET_NONE",
+      "dimension": "SWEET",
+      "name": "无糖",
+      "sort_order": 4
+    },
+    {
+      "ingredient_id": "ICE_NORMAL",
+      "dimension": "ICE",
+      "name": "标准冰",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "ICE_LESS",
+      "dimension": "ICE",
+      "name": "少冰",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "ICE_NONE",
+      "dimension": "ICE",
+      "name": "去冰",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "ICE_WARM",
+      "dimension": "ICE",
+      "name": "温饮",
+      "sort_order": 4
+    }
+  ],
+  "recipes": [
+    {
+      "recipe_id": "R_E_01",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "珍珠红茶奶",
+      "tea_id": "TEA_BLACK",
+      "milk_id": "MILK_FRESH",
+      "topping_id": "TOP_PEARL",
+      "sweet_id": null,
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_E_02",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "布丁绿茶奶",
+      "tea_id": "TEA_GREEN",
+      "milk_id": "MILK_OAT",
+      "topping_id": "TOP_PUDDING",
+      "sweet_id": null,
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_E_03",
+      "tier_id": "EASY",
+      "min_stage_no": 2,
+      "drink_name": "仙草乌龙奶",
+      "tea_id": "TEA_OOLONG",
+      "milk_id": "MILK_COCONUT",
+      "topping_id": "TOP_GRASS",
+      "sweet_id": null,
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_M_01",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "标准甜珍珠红茶奶",
+      "tea_id": "TEA_BLACK",
+      "milk_id": "MILK_FRESH",
+      "topping_id": "TOP_PEARL",
+      "sweet_id": "SWEET_NORMAL",
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_M_02",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "少甜布丁绿茶奶",
+      "tea_id": "TEA_GREEN",
+      "milk_id": "MILK_OAT",
+      "topping_id": "TOP_PUDDING",
+      "sweet_id": "SWEET_LESS",
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_M_03",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "半糖仙草乌龙奶",
+      "tea_id": "TEA_OOLONG",
+      "milk_id": "MILK_COCONUT",
+      "topping_id": "TOP_GRASS",
+      "sweet_id": "SWEET_HALF",
+      "ice_id": null
+    },
+    {
+      "recipe_id": "R_H_01",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "标准甜标准冰珍珠红茶奶",
+      "tea_id": "TEA_BLACK",
+      "milk_id": "MILK_FRESH",
+      "topping_id": "TOP_PEARL",
+      "sweet_id": "SWEET_NORMAL",
+      "ice_id": "ICE_NORMAL"
+    },
+    {
+      "recipe_id": "R_H_02",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "少甜少冰布丁绿茶奶",
+      "tea_id": "TEA_GREEN",
+      "milk_id": "MILK_OAT",
+      "topping_id": "TOP_PUDDING",
+      "sweet_id": "SWEET_LESS",
+      "ice_id": "ICE_LESS"
+    },
+    {
+      "recipe_id": "R_H_03",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "半糖去冰仙草乌龙奶",
+      "tea_id": "TEA_OOLONG",
+      "milk_id": "MILK_COCONUT",
+      "topping_id": "TOP_GRASS",
+      "sweet_id": "SWEET_HALF",
+      "ice_id": "ICE_NONE"
+    },
+    {
+      "recipe_id": "R_L_01",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "半糖去冰仙草乌龙奶",
+      "tea_id": "TEA_OOLONG",
+      "milk_id": "MILK_COCONUT",
+      "topping_id": "TOP_GRASS",
+      "sweet_id": "SWEET_HALF",
+      "ice_id": "ICE_NONE"
+    },
+    {
+      "recipe_id": "R_L_02",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "少甜少冰布丁绿茶奶",
+      "tea_id": "TEA_GREEN",
+      "milk_id": "MILK_OAT",
+      "topping_id": "TOP_PUDDING",
+      "sweet_id": "SWEET_LESS",
+      "ice_id": "ICE_LESS"
+    },
+    {
+      "recipe_id": "R_L_03",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "无糖温饮芋圆茉莉豆奶",
+      "tea_id": "TEA_JASMINE",
+      "milk_id": "MILK_SOY",
+      "topping_id": "TOP_TARO",
+      "sweet_id": "SWEET_NONE",
+      "ice_id": "ICE_WARM"
+    },
+    {
+      "recipe_id": "R_N_01",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "半糖去冰仙草乌龙奶",
+      "tea_id": "TEA_OOLONG",
+      "milk_id": "MILK_COCONUT",
+      "topping_id": "TOP_GRASS",
+      "sweet_id": "SWEET_HALF",
+      "ice_id": "ICE_NONE"
+    },
+    {
+      "recipe_id": "R_N_02",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "少甜少冰布丁绿茶奶",
+      "tea_id": "TEA_GREEN",
+      "milk_id": "MILK_OAT",
+      "topping_id": "TOP_PUDDING",
+      "sweet_id": "SWEET_LESS",
+      "ice_id": "ICE_LESS"
+    },
+    {
+      "recipe_id": "R_N_03",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "无糖温饮芋圆茉莉豆奶",
+      "tea_id": "TEA_JASMINE",
+      "milk_id": "MILK_SOY",
+      "topping_id": "TOP_TARO",
+      "sweet_id": "SWEET_NONE",
+      "ice_id": "ICE_WARM"
+    }
+  ]
+}

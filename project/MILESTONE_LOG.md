@@ -903,3 +903,17 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Tech 同版只读 `TECH_REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED；两项评审只认可候选送审，不认可运行发布。
 - `USER_REVIEW`：Producer 绑定 Product 十三 Artifact、Tech/Master 两份 Review 共十五文件 SHA，审批 `ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、Task `REVIEW→USER_REVIEW`。索引正式入口仍 null、正式资源为空；continuity check 到达真实用户门禁，无空转执行态。
 <!-- MINIGAMES-CONFIG-20261012 END -->
+
+<!-- MINIGAMES-GENERATOR-20261012 START -->
+## 2026-10-12｜配置候选批准与生成器阶段
+
+- `CONFIG_CANDIDATE_USER_APPROVED`：用户批准 Product v0.1；十五文件 SHA 复核全匹配，审批 `USER_APPROVED`、Product Task `USER_REVIEW→DONE`；Producer 登记时刻 20:51:33 +08:00，用户原消息精确时刻未知。
+- `GENERATOR_READY`：新 Tech Lead 生成器 Task `READY`，获批候选可作为输入；尚无本 Task 首件产出，不提前记 `IN_PROGRESS`。正式索引 active_path 仍 null、正式资源为空。
+- `TASK_STARTED`：`tooling/config/milk_tea_config_generator.py` mtime 2026-10-12 20:54:28 +08:00、非空，Tech Task `READY→IN_PROGRESS`。仍待生成样本、测试、专业 Review，未触及正式索引。
+- `GENERATOR_SAMPLES_DRAFT`：同版候选服务端全量、客户端展示 JSON 及 `SHA256SUMS.json` 已实存；仍是待测试与 Review 的生成样本，未发布正式运行路径。
+- `DRAFT_SUBMITTED`：Tech 修订客户端提示字段 `min_stage_no` 并重跑四项测试及样本哈希，v0.1 `DELIVERABLE.json` 九项 Artifact 实存、五项验收同序 PASS、`READY_FOR_REVIEW`；Owner 提交后 Task `IN_PROGRESS→REVIEW`。Master Review 尚待。
+- `PROFESSIONAL_REVIEW_CHANGES_REQUESTED`：独立 `INDEPENDENT_TECH_REVIEW.json` 指出已有输出目录可能误删无关数据、交换中断空窗；Task `REVIEW→REVISION`。Owner 须限制目标、补恢复与测试后重送，不提前 USER_REVIEW。
+- `REVISION_SUBMITTED`：Tech 新 v0.2 九项 Artifact 与五项同序 PASS 实存，Owner 提交后 Task `REVISION→REVIEW`；Master 自测 5/5，独立复评尚待。v0.1 退回记录不复用。
+- `PROFESSIONAL_REVIEW_APPROVED`：v0.2 独立 Tech 与 Master Review 均 APPROVED，仅准候选生成器送审；v0.1 失败评审保留历史。
+- `USER_REVIEW`：Producer 绑定九项交付索引实物、交付索引本身、README 及两份 Review 共十三文件 SHA，审批 `ARTIFACT_APPROVAL_v0.2.json` 为 `USER_REVIEW`、Task `REVIEW→USER_REVIEW`。索引正式入口仍 null、正式资源为空；continuity check 到达真实用户门禁。
+<!-- MINIGAMES-GENERATOR-20261012 END -->

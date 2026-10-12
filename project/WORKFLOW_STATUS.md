@@ -847,3 +847,14 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Tech 同版 `TECH_REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，仅准候选送审；Producer 绑定 Product v0.1 十三 Artifact 加两份 Review 共十五文件 SHA，`tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，Task `REVIEW→USER_REVIEW`。用户尚未批准本候选，正式生成、索引发布、运行与 QA 未执行。
 - Continuity check：本轮持续至准确候选 `USER_REVIEW`；父任务 `SPEC`，无本线空转 `READY/IN_PROGRESS`。下一门禁是用户对绑定版本作决定；复盘 `WR-20261012-MINIGAMES-CONFIG-001`。
 <!-- MINIGAMES-CONFIG-20261012 END -->
+
+<!-- MINIGAMES-GENERATOR-20261012 START -->
+## 2026-10-12｜奶茶人工源获批与生成器解锁
+
+- 用户明确批准配置候选 Product v0.1；原十五文件 SHA 逐一重算匹配，`tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json` 已为 `USER_APPROVED`，Product Task `DONE`。稳定候选 SHA-256 `a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76`；原有版本源表/归档字节与路径不变。
+- `MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012` Task 依赖已满足，首份实际生成器源码 `tooling/config/milk_tea_config_generator.py` 于 20:54:28 +08:00 实存、非空，Task `READY→IN_PROGRESS`。资源索引仅登记已批准候选路径和 SHA；`active_path=null`、正式资源列表空。完整样本、Review、运行接入与 QA 尚未完成。
+- Tech Owner 修复客户端配方提示的 `min_stage_no` 后重跑样本与四项测试，v0.1 九项交付索引实存、五项验收同序 PASS，正式提交 `REVIEW`；Producer 将 Task `IN_PROGRESS→REVIEW`。Master 独立评审尚待，未进入用户审阅。
+- 独立 Tech `INDEPENDENT_TECH_REVIEW.json` 判 `CHANGES_REQUESTED`：旧目录交换对已有输出目录存在误删无关文件与中断空窗风险；生成器 Task `REVIEW→REVISION`，Owner 修复输出边界、恢复语义并重测后再送评。失败 Review 记录保留，不进入 `USER_REVIEW`。
+- Tech Owner 另交修复版 v0.2：`DELIVERABLE.json` 索引九项真实文件、五项验收同序 PASS；Task `REVISION→REVIEW`。Master 自测 5/5 通过并正独立复评；旧 v0.1 退回证据保持历史，新版未获用户批准。
+- v0.2 独立 Tech `INDEPENDENT_TECH_REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，仅认可候选送审。Producer 绑定九项索引实物、`DELIVERABLE.json`、`README.md` 及两份 Review 共十三文件 SHA，审批 `ARTIFACT_APPROVAL_v0.2.json` 为 `USER_REVIEW`、Task `REVIEW→USER_REVIEW`，`decided_at=null`。用户尚未批准生成器；父任务 `SPEC`、正式索引 active_path=null/资源数组空，不声称发布、运行或 QA。Continuity check：到达真实用户门禁，本线无空转 `READY/IN_PROGRESS`。复盘 `WR-20261012-MINIGAMES-GENERATOR-001`。
+<!-- MINIGAMES-GENERATOR-20261012 END -->

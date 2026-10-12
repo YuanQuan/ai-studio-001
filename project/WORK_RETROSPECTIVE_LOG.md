@@ -937,3 +937,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master 呈本版十五文件审批给用户，复核点为用户对准确候选的决定；Producer 在后续正式配置任务核对源 SHA、active_path 与发布门禁，代价为一次只读核验，不增加用户审批门禁。
 - Continuity check：本轮已推进到真实 `USER_REVIEW`；父任务仍 `SPEC`，本线无仅以 `READY/IN_PROGRESS` 占位的可继续任务。生成器、正式索引、运行和 QA 仍待后续独立阶段。
 <!-- MINIGAMES-CONFIG-20261012 END -->
+
+<!-- MINIGAMES-GENERATOR-20261012 START -->
+### WR-20261012-MINIGAMES-GENERATOR-001｜奶茶人工源批准与生成器修复版送审
+
+- 结果与证据：用户批准 Product 配置候选 v0.1，原十五文件 SHA 全匹配，Product Task DONE。Tech 生成器首件源码实存后进入执行，v0.1 交付因目录交换可能误删已有输出而被独立 Tech Review 退回；Owner 以 v0.2 修订输出边界与恢复语义，九项索引实物、五项验收 PASS，独立 Tech 与 Master Review APPROVED。Producer 绑定十三文件 SHA 将准确 v0.2 Task/审批送 `USER_REVIEW`；v0.1 CHANGES_REQUESTED 留档。稳定候选获批不等于生成器获批，更不等于正式发布。
+- 时间与耗时（Asia/Shanghai）：用户原批准消息精确时刻未知；Producer 准确批准登记 2026-10-12 20:51:33 +08:00，生成器首份源码 mtime 20:54:28，v0.2 Review 与送审发生在其后。Master/Tech 净制作、复评、用户等待的可靠拆分时间未知；不把可观察墙钟跨度归给单一角色。
+- 影响与原因：v0.1 的目录交换在已有目录和中断时有实际可复核风险，独立技术评审触发 v0.2 修订；这属于同版专业质量门禁发现的问题，不能将原自报 PASS 继续沿用。没有可靠同类时限或工具故障净时长，不判断整体快慢。
+- 建议与复核：Tech 后续候选工具在交付前覆盖“已有非本工具目录、备份残留、中断恢复”测试，代价为更多测试用例，复核点为下一次技术 Review；Producer 继续按准确版本分离退回和送审记录，复核点为用户对 v0.2 的决定。
+- Continuity check：本轮已持续到真实 `USER_REVIEW`；父任务仍 `SPEC`，无本线空转 `READY/IN_PROGRESS`。`active_path=null` 且正式资源列表为空；正式发布、服务端/客户端运行和 QA 仍需独立阶段。
+<!-- MINIGAMES-GENERATOR-20261012 END -->

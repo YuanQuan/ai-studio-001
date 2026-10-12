@@ -1,0 +1,26 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012",
+  "owner": "tech_lead",
+  "summary": "v0.2 修复候选输出目录的覆盖/删除风险，以不可变候选目录生成同源服务端全量与客户端展示投影。",
+  "artifacts": [
+    "tooling/config/milk_tea_config_generator.py",
+    "tests/config/test_milk_tea_config_generator.py",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/REVIEW.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/VALIDATION.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/REVIEW_PACKET.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144/milk_tea_minigame.server.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144/milk_tea_minigame.client.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144/SHA256SUMS.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "精确绑定获批源哈希、完整四表和 READY/true 全包门禁。", "result": "PASS", "evidence": "固定审批路径及 RESOURCE_INDEX.approval_ref 校验；VALIDATION.md 的状态与引用负向测试；样本 SHA 清单。"},
+    {"criterion": "服务端全量与客户端展示投影同源同版本。", "result": "PASS", "evidence": "v0.2 samples 的双端 JSON 与 SHA256SUMS.json。"},
+    {"criterion": "校验限时、五档维度、阶段结构、独立门槛、前档条件和配方池，不改业务数值。", "result": "PASS", "evidence": "生成器业务校验与 VALIDATION.md。"},
+    {"criterion": "生成确定、失败不删除/覆盖既有候选，并记录源与双输出 SHA。", "result": "PASS", "evidence": "5 项测试通过；重复输出不改动、额外文件拒绝且保留原件；SHA256SUMS.json。"},
+    {"criterion": "仅交付候选工具与样本，不发布正式运行入口或修改 Client/Server 运行代码。", "result": "PASS", "evidence": "候选文件位于版本化 v0.2 样本目录；无正式索引或运行代码改动。"}
+  ],
+  "assumptions": ["仅依赖 Python 标准库；建议 Python 3.9 或更新版本。", "输出目录是本任务 v0.2 下的新候选目录。"],
+  "risks": ["v0.2 尚待 Master Review 与用户审批。", "正式发布、运行接入及 QA 尚未执行。"],
+  "status": "READY_FOR_REVIEW"
+}

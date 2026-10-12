@@ -1,0 +1,43 @@
+{
+  "id": "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012",
+  "title": "奶茶小游戏配置生成与技术校验",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "将已批准的奶茶人工配置候选经完整技术校验转换成同源的服务端权威配置与客户端展示投影，提交生成工具、可复核运行结果和发布边界供用户审批。",
+  "inputs": [
+    "tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json",
+    "project/config/source/MILK_TEA_MINIGAME.xlsx",
+    "project/config/FIELD_GUIDE.md",
+    "project/config/RESOURCE_INDEX.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-TECH-20261012/v0.1/CONFIG_TECH_SPEC.md",
+    "project/config/README.md",
+    "rules/config_resource_contract.md"
+  ],
+  "deliverables": [
+    "版本化技术设计与Review文档",
+    "受版本控制的生成器源码和必要的运行说明",
+    "有意义的校验测试与执行证据",
+    "版本化服务端全量配置与客户端展示投影样本",
+    "版本化验收、用户审阅包和DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "只接受与Product v0.1批准哈希一致的四表完整人工源；对缺表、缺行、错误类型、ID/引用、配方池或非READY/true行整包失败",
+    "服务端配置包含完整权威规则与奖励数值，客户端投影仅含展示所需字段，二者标记相同来源哈希、批准版本与配置版本",
+    "明确简单不限时、中等及以上限时、五档维度3/4/5/5/5、档内两阶段、解锁条件开关独立且前档通关必需，不由生成器改动业务数值",
+    "生成过程可重复、确定性；失败不留下半包；记录输入和两个输出SHA-256及可复核测试结果",
+    "本次仅交付候选生成器及样本，不启用运行入口、不改active_path/current_formal_resources，不实现服务端或客户端运行接入"
+  ],
+  "dependencies": [
+    "MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012",
+    "MILK-TEA-MINIGAME-TECH-20261012"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Product候选经用户本轮明确批准后才能作为正式生成输入；Producer先核对15项哈希并落审批记录。",
+    "Tech Lead负责生成和校验规范及工具，不修改Product业务字段/数值，不替代Client/Server长期实现。",
+    "优先项目现有工具与标准库，若需新增第三方依赖先说明维护成本；生成样本放在本任务交付目录，不提前发布稳定运行路径。",
+    "完成专业Review和Master Review后进入USER_REVIEW；用户批准生成成果后另行解锁运行发布与Client/Server任务。"
+  ]
+}

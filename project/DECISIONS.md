@@ -316,3 +316,10 @@
 - 落实 `rules/config_resource_contract.md`，以 `project/config/FIELD_GUIDE.md`、`CONFIG_RESOURCES.md` 和 `RESOURCE_INDEX.json` 为说明与入口；保留原审批锁定工作簿字节及旧路径，不改变字段、玩法或数值。
 - 项目进度 HTML 精简为中文当前进度与配置链接，全部正式源表/已生成资源可点击，草案单列标识。详细流转仍通过原始日志和 Artifact 追溯。
 - 本轮为已授权非功能维护 AUTO；规则已获用户明确指令，但不构成顾客、奶茶或其他既有业务配置的具体批准。Studio 规则及标准项目模板同步，其他既有游戏保持 pinned。
+
+## DEC-MG01-CONFIG-CANDIDATE-20261012 — 奶茶人工源候选获批
+
+- 日期：2026-10-12；状态：`ACCEPTED`，仅限 Product `MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012` v0.1 的人工源候选与中文字段说明。
+- 用户批准稳定路径 `project/config/source/MILK_TEA_MINIGAME.xlsx` 的五档四表候选。相对原获批历史源，仅 50 行记录的 `status` 变为 `READY`、`export_enabled` 变为 `true`；玩法数值、配方及门槛没有另作修改。
+- 生成器可据此做完整校验与同源服务端/客户端样本，但候选获批不等于稳定运行资源发布。`RESOURCE_INDEX.json` 的 `active_path` 和 `current_formal_resources` 在生成器通过技术、用户审批及后续发布前保持空值。Client/Server 正式消费仍受各自 Artifact 与 QA 门禁约束。
+- 审批和哈希见 `tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json`；原带版本工作簿及归档路径保持历史追溯，不覆盖旧审批。

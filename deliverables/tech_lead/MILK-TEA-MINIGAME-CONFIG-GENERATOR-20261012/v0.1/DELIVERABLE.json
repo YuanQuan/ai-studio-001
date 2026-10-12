@@ -1,0 +1,26 @@
+{
+  "task_id": "MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012",
+  "owner": "tech_lead",
+  "summary": "实现了绑定 Product v0.1 审批哈希的奶茶配置生成器，完成完整四表校验并生成同源的服务端全量候选与客户端展示投影样本。",
+  "artifacts": [
+    "tooling/config/milk_tea_config_generator.py",
+    "tests/config/test_milk_tea_config_generator.py",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/VALIDATION.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/samples/milk_tea_minigame.server.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/samples/milk_tea_minigame.client.json",
+    "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.1/samples/SHA256SUMS.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "只接受 Product v0.1 用户批准哈希对应的完整四表源；缺表、缺行、类型/引用错误或非 READY/true 整包失败。", "result": "PASS", "evidence": "TECH_DESIGN.md、VALIDATION.md；四项测试包含非 READY 整包失败与错误跨表引用失败；样本输入 SHA 与审批及资源索引一致。"},
+    {"criterion": "生成服务端完整权威配置和客户端展示投影，并绑定相同源哈希、审批版本和配置版本。", "result": "PASS", "evidence": "samples 两份 JSON 与 SHA256SUMS.json；客户端配方提示保留 min_stage_no 以便按阶段过滤。"},
+    {"criterion": "校验限时、五档维度、两阶段、独立门槛开关、前档通关条件及配方池，不改业务数值。", "result": "PASS", "evidence": "生成器 _validate_business；VALIDATION.md；源工作簿数值原样生成。"},
+    {"criterion": "生成确定、失败不留下半包，并记录输入及两个输出 SHA-256。", "result": "PASS", "evidence": "4 项测试通过；samples/SHA256SUMS.json。"},
+    {"criterion": "仅交付候选工具与样本，不启用运行入口、不改正式索引或 Client/Server 运行代码。", "result": "PASS", "evidence": "样本仅写入本任务版本目录；RESOURCE_INDEX active_path 仍为空；无运行接入变更。"}
+  ],
+  "assumptions": ["仅使用 Python 标准库运行；建议 Python 3.9 或更新版本。", "样本输出位置是版本化候选目录，不作为正式运行入口。"],
+  "risks": ["当前技术 Review 仅为 Tech Lead 本角色结论；Master Review 和本 Artifact 的用户审批尚待完成。", "正式发布路径与服务端/客户端运行接入尚未实现。"],
+  "status": "READY_FOR_REVIEW"
+}

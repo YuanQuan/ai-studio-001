@@ -461,3 +461,14 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户对准确 Tech v0.1 回复“批准”，原 `tasks/MILK-TEA-MINIGAME-TECH-20261012/ARTIFACT_APPROVAL_v0.1.json` 所绑九文件 SHA 全匹配，现 `USER_APPROVED`、`decided_at=null`；Master 接受本技术设计阶段，Tech Task DONE。主技术文档 SHA-256 `ed4b888df02e8025993fab38070c8d09f5b864470885dea19f2861919b300b58`，其余八文件见审批。用户消息精确时刻未知。
 - 人工源候选 Product v0.1 九 Required、四张预览及 Tech/Master 同版 Review 共十五文件 SHA 已绑定 `tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json`；两份 Review APPROVED，审批与 Task 均 `USER_REVIEW`，`decided_at=null`。主候选 XLSX SHA-256 `a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76`，其余十四文件见审批。尚无用户批准；旧已批源表历史字节不变，候选不得被运行消费。
 <!-- MINIGAMES-CONFIG-20261012 END -->
+
+<!-- MINIGAMES-GENERATOR-20261012 START -->
+## 2026-10-12｜奶茶配置候选用户批准
+
+- 用户明确“批准”准确 Product 配置候选 v0.1；`tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json` 十五文件 SHA 逐一复核一致，状态 `USER_APPROVED`，登记时刻 2026-10-12 20:51:33 +08:00。该批准仅使稳定人工源候选可供 Tech 生成器任务读取；正式生成、索引发布与运行接入尚无批准。生成器 Task 当前 `READY`，本版审批尚待产出。
+- 生成器 Task 已由真实源码开工，当前 `IN_PROGRESS`；本任务 Artifact 尚无专业 Review 或用户审批，不因上游批准而继承。
+- 生成器 v0.1 九项交付已由 Tech 提交 `REVIEW`，Master Review 尚待；本任务审批仍未进入 `USER_REVIEW`，不继承上游人工源批准。
+- 独立 Tech Review `CHANGES_REQUESTED` 后 Task 为 `REVISION`；生成器尚无可送审版本或用户批准，历史失败证据保留。
+- Tech 修复 v0.2 已重新 `REVIEW`，专业复评尚待；v0.1 为退回历史，不自动继承此前自报 PASS 或任何用户批准。
+- 生成器 v0.2 独立 Tech/Master Review 均 APPROVED；`tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json` 精确绑定十三文件 SHA，`USER_REVIEW`、`decided_at=null`。v0.1 的 CHANGES_REQUESTED 仍是历史未获批版本，当前用户尚未决定 v0.2；不解锁正式发布与运行接入。
+<!-- MINIGAMES-GENERATOR-20261012 END -->
