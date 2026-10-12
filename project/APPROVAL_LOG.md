@@ -410,6 +410,7 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 已批准的 Shader 一轮例外已实际消费：Art/Tech 同版续签后 Client 唯一 patch 于 21:29:14 +08:00 应用，累计修正 3/3。预算 Approval 与原 Gate2 视觉 USER_APPROVED 均维持既定范围；本批构建正在执行，尚无真实运行/性能结论，也无正式接入批准。
 - 本次语法预算批准已消费至整批 3/3，新增 UV 候选 `SHADER_UV_FIX_PROPOSAL.md/.patch` 仅提案、未应用，也不在既有仅语法一轮授权内；不能自动增加额度。Gate2 对原 mask/同尺度 CPU 视觉的 `USER_APPROVED` 对象与哈希保持不变，当前 Cocos 动态 ROI `REVISE`、整体 Task `BLOCKED`；任何新源码修正须用户对具体差异与预算明确决定，不把旧批准当运行或正式接入通过。
 - 最终 UV 提案已整理为可检查的未应用单行补丁（MD/PATCH SHA 见节点），未发生新用户决定；格式修正不消耗实现轮次。原 Gate2 视觉 `USER_APPROVED` 与一次 Shader 语法预算批准均按旧对象有效；UV 变更与额外预算仍待用户明确授权，不新增已批准审批对象。
+- 本轮只读坐标诊断不改变审批：原 mask/同尺度 CPU 视觉 Gate2 `USER_APPROVED` 与已用语法例外保持原范围；UV 单行提案及追加修正预算仍无用户决定，不能据纵向翻转线索实施。动态 ROI `REVISE`、整体运行 `BLOCKED`。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

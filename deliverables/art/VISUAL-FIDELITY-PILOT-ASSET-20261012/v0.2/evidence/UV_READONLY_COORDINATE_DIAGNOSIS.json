@@ -1,0 +1,59 @@
+{
+  "task_id": "VISUAL-FIDELITY-PILOT-ASSET-20261012",
+  "batch_id": "MT_SHOP_01_LANTERN_PILOT_V02",
+  "started_at": "2026-10-12T22:15:29+08:00",
+  "checked_at": "2026-10-12T22:19:28+08:00",
+  "mode": "READ_ONLY_NO_BUILD_NO_UI_NO_SOURCE_CHANGE",
+  "source_and_import": {
+    "body_png": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+    "body_dimensions": [1024, 1024],
+    "body_sprite_frame": "apps/client/library/42/42d58716-abd2-44dc-9d5f-21fdbf0e8b54@f9941.json",
+    "body_rect_xywh": [0, 0, 1024, 1024],
+    "body_trim": "none",
+    "body_rotated": false,
+    "body_atlas_uuid": "",
+    "pilot_frame": "lantern_pilot.ts constructs a new full 1024x1024 frame sharing body Texture2D and sets packable=false; actual per-frame runtime UV values were not expanded in the saved console Object",
+    "mask_png_sha256": "f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f",
+    "mask_import_png_byte_identical": true,
+    "mask_dimensions": [128, 256],
+    "mask_nonzero_bbox_source_xyxy_exclusive": [200, 533, 249, 598],
+    "mask_nonzero_pixels": 2431,
+    "mask_max_level": 243,
+    "mask_border_nonzero_pixels": 0
+  },
+  "coordinate_checks": [
+    {
+      "source_point_xy": [224, 565],
+      "meaning": "mask/approved left lantern center rounded",
+      "approx_screen_if_unflipped_xy": [549, 306],
+      "approx_screen_with_current_y_flip_xy": [549, 272]
+    },
+    {
+      "source_point_xy": [224, 459],
+      "meaning": "vertical mirror of lantern center across source y=512, in roof region",
+      "approx_screen_unflipped_xy": [549, 272],
+      "approx_screen_with_current_y_flip_xy": [549, 306]
+    }
+  ],
+  "screen_projection_note": "Approximation uses 1280x720 screenshot, project 720x1280 design, visible scale 720/1280=0.5625 and pilot Sprite scale 0.56, thus 0.315 screen px/source px; not a measured per-pixel renderer transform.",
+  "actual_screenshot_comparison": {
+    "crop_screen_xyxy": [490, 210, 770, 430],
+    "playing_changed_pixels": 929,
+    "playing_bbox_screen_xyxy_exclusive": [527, 255, 561, 289],
+    "playing_difference_centroid_screen_xy": [544.83, 271.46],
+    "max_channel_delta": 30,
+    "changed_pixels_positive_only": 263,
+    "changed_pixels_negative_only": 334,
+    "changed_pixels_mixed_positive_negative_channels": 332,
+    "paused_changed_pixels": 0,
+    "reset_changed_pixels": 0
+  },
+  "rough_mask_projection": {
+    "expected_width_screen_px": 15.435,
+    "expected_height_screen_px": 20.475,
+    "current_flip_rough_bbox_screen_xyxy": [542, 262, 557, 283],
+    "observed_width_height_screen_px": [34, 34],
+    "limitation": "A one-texel linear filter edge cannot by itself account for the whole observed 34x34 bbox, and positive RGB differences cannot follow a fixed-compositor dim-only RGB factor with unchanged alpha. The exact cause is not established from saved frame Object and screenshots."
+  },
+  "conclusion": "Current vertical inversion remains strongly implicated by engine UV convention and observed y center, but a one-line UV change is not proven sufficient. Cause of observed bbox size, 929 changed pixels, positive RGB deltas and max channel delta 30 beyond the rough model: UNKNOWN. Dynamic ROI remains REVISE; no new source correction is authorized, cumulative correction budget remains 3/3."
+}
