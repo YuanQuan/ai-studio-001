@@ -55,7 +55,8 @@
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/runtime-screen-difference.json",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/build/runtime-session-cleanup.json",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/UV_READONLY_COORDINATE_DIAGNOSIS.json",
-    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/UV_READONLY_COORDINATE_DIAGNOSIS.md"
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/UV_READONLY_COORDINATE_DIAGNOSIS.md",
+    "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/UV_BUDGET_APPROVAL.json"
   ],
   "acceptance": [
     "准确继承已批准奶茶店01源与本批Gate1，源PNG/PSD/meta字节不变；Art/Tech同批预签包含最终mask/羽化、UV/atlas/trim/实例隔离、工具及执行预算，首样前完成。",
@@ -71,6 +72,7 @@
   "status": "BLOCKED",
   "approval": "APPROVAL",
   "notes": [
+    "Producer 2026-10-12T22:37:20+08:00 登记用户原话“暂不追加修正”：仅本次 UV 单行额外预算不批准，UV_BUDGET_APPROVAL.json 为 REJECTED；用户消息精确时刻 UNKNOWN。原 mask/CPU 同尺度视觉 Gate2 USER_APPROVED 与此前已完成语法例外 USER_APPROVED 均不变。整批修正 3/3、Effect SHA e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b 不变，动态 ROI REVISE，Task 继续 BLOCKED；不得应用未批准 UV patch 或以旧审批替代新决定。不取消整个Task或通用goal，不新增Source/Art/QA/构建/轮询或正式接入任务。Continuity：本轮答复已落证，当前无已授权可继续的源码修正或运行步骤。",
     "Producer 2026-10-12T22:23:00+08:00 核只读坐标诊断两份 Required：UV_READONLY_COORDINATE_DIAGNOSIS.json SHA b4b1fa439e26b90436d7913850004d1536bf175d4c0b48931854f2e257616965、.md SHA 63ec926185b406b4b8d3c8b3ac30254285612b810a883da19ecd5036a5325496。Tech记录22:15:29开始、22:19:28核验，239秒仅诊断非制作；本周期总净耗时未知。body全幅无trim/rotated/atlas、mask四边零；两个源定位点投影与播放差质心(544.83,271.46)靠近镜像屋檐(549,272)，加强纵向翻转判断。但播放34×34/929px含263纯增亮与332混合增减，固定纯变暗公式不能解释，确因UNKNOWN；单行UV候选不保证充分。无生图、重建、源码修改，Effect SHA e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b、累计3/3不变；Gate2视觉批准保留，动态ROI REVISE、整体BLOCKED。用户尚未授权额外UV修正，无live build/server或已授权可继续的源码制作。",
     "Producer 2026-10-12T22:07:49+08:00 最终核：例外账本 SHA 9cfe9ff21492ed2051ffbb439cc506bdb8836fb5a41cbbeca53521e966c773d0、运行报告 SHA bf2af25328dc9a1e07d5b53e2bae31ad0d1c2eee337eb9c4a141704420dea54b、未应用 UV 提案 SHA 43046992b5e5d529ba053fa973da0acc55021960aa15af1e2628f3e500e4d6a6 与 patch SHA d78a5c2af2a78e213c45494d149785d24fed11d93af0843550af049964213a8e、Tech 最终复核 SHA ea574b5faaa3cde76e5f82352adf644f004bd824bc7572ee07def5655622bef3 均实存。Root 报普通 git apply --check PASS；提案格式纠正未应用源码、不计第4轮。现 Effect SHA e86347bec50486ebbd40366870c25eb4619db984d4b7a146a75385b1e9a82f0b 不变。整体 Task BLOCKED、3/3修正已满，动态ROI REVISE；用户未授权UV实施，Gate2视觉已批。提案可审性修复已完成，本执行周期无可继续的已授权源码修正；账本保留21:28:51开始、21:28:58归档、21:29:14应用、补丁操作23秒与此前制作1502秒，已知制作小计1525秒。全周期验证/评审净耗时及用户审批等待均未知，等待不计制作。",
     "Producer 2026-10-12T22:01:25+08:00 核本轮真实构建与运行差异后收口 BLOCKED：批准的语法例外已实施，累计修正3/3；Editor 初次 Build 缺 Effect 导入，正常 reimport 后第二 Build 于 21:45:07 成功，真实 HTTP/IAB 加载店铺及控件。播放截图店铺 RGB 变化 929px、max30、bbox[527,255,561,289] 位于屋檐，动态 ROI 判 REVISE；暂停/复位固定裁剪 0 差。Alpha、Draw 增量、mask 实际 GPU 格式/内存及 CPU/GPU 仍 NOT_TESTED。Tech 复核与未应用一行 UV 提案实存，任何 UV 改动超出此前仅语法 1 轮授权且 3/3 已满，须用户新授权；旧 Gate2 mask/CPU 视觉批准不变，整体 Task 非 DONE、不正式接入。Master 已核本批 builder profile 原 SHA 恢复、formal settings 未改；own HTTP/Tab 清理留证，未动原 8787/tab1。新增 Required 仅关键 7 件构建/Tech/UV/差异/恢复/清理证据；本轮总耗时未知。",

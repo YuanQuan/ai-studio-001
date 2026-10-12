@@ -826,6 +826,7 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PILOT_SECOND_BUILD_RUNTIME_ROI_REVISE`（Producer 2026-10-12 22:01:25 +08:00 核）：语法例外已用、累计 3/3；初 Build 缺 Effect 启动停滞，正常重导入后第二 Build 21:45:07 成功并实际 HTTP/IAB 到店铺。播放动态差 929px/max30/bbox `[527,255,561,289]` 落屋檐、ROI `REVISE`，暂停/复位固定 crop 0 差；其他运行/性能项仍待测。Tech 复核及未应用 UV 一行提案已存，须新授权才可改；本批 builder profile/正式 settings 已核恢复，服务和 ownTab 清理。整体 `BLOCKED`，Gate2 视觉批准保留。
 - `UV_PROPOSAL_REVIEWABLE_UNAPPLIED`（Producer 2026-10-12 22:07:49 +08:00 核）：Client 最终未应用提案 MD SHA `43046992b5e5d529ba053fa973da0acc55021960aa15af1e2628f3e500e4d6a6`、patch SHA `d78a5c2af2a78e213c45494d149785d24fed11d93af0843550af049964213a8e`，Root 报补丁匹配检查 PASS；Tech 最终复核 SHA `ea574b5faaa3cde76e5f82352adf644f004bd824bc7572ee07def5655622bef3`。格式整理不计源码修正，Effect SHA 不变，Task 仍 `BLOCKED`、3/3 已满。
 - `UV_READONLY_COORDINATE_DIAGNOSIS`：Tech 2026-10-12 22:15:29–22:19:28 +08:00 只读核 239 秒，两份诊断 Required SHA 分别 `b4b1fa439e26b90436d7913850004d1536bf175d4c0b48931854f2e257616965`、`63ec926185b406b4b8d3c8b3ac30254285612b810a883da19ecd5036a5325496`。源点投影加强 V 翻转证据，但 929px 差中的增亮/混合通道与约 34×34 范围尚不能由一行 UV 候选完整解释；无源码改动、构建或新授权。Task 仍 `BLOCKED`，视觉 Gate2 批准保留。
+- `UV_EXTRA_BUDGET_REJECTED`（Producer 2026-10-12 22:37:20 +08:00 登记）：用户原话“暂不追加修正”，准确版 `UV_BUDGET_APPROVAL.json` 对未应用 UV 提案 SHA `43046992b5e5d529ba053fa973da0acc55021960aa15af1e2628f3e500e4d6a6` 与 patch SHA `d78a5c2af2a78e213c45494d149785d24fed11d93af0843550af049964213a8e` 记 `REJECTED`；原消息精确时刻未知。Gate2 视觉批准/旧语法例外不变，3/3 用尽、动态 ROI REVISE、整体 `BLOCKED`。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->
