@@ -18,7 +18,9 @@
     "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXECUTION_START.json",
     "governance/capability_changes/CAP-20261012-VISUAL-FIDELITY-COMPUTE.json",
     "project/changes/VISUAL-FIDELITY-COMPUTE-20261012-TEMPLATE-SYNC.patch",
-    "project/changes/VISUAL-FIDELITY-COMPUTE-20261012-TEMPLATE-SYNC-PLAN.md"
+    "project/changes/VISUAL-FIDELITY-COMPUTE-20261012-TEMPLATE-SYNC-PLAN.md",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.json",
+    "deliverables/master/VISUAL-FIDELITY-COMPUTE-20261012/v0.1/EXISTING_RESOURCE_READONLY_AUDIT.md"
   ],
   "acceptance_results": [
     {
@@ -56,7 +58,8 @@
     "真实PSD分层、局部修改、动画回放和引擎画面均NOT_TESTED，无法宣称未来所有资产已完美还原。",
     "只有平面图时隐藏信息和原生编辑能力不能无损恢复；压缩/缩放/混合差异须按批次公开决定。",
     "没有GPU/费用遥测或实际制作基线，算力/时间节约比例未知。",
-    "Game与Studio原有已确认规则存在差异，本轮只同步候选增量，不借此全量升级锁定Studio版本。"
+    "Game与Studio原有已确认规则存在差异，本轮只同步候选增量，不借此全量升级锁定Studio版本。",
+    "只读现状审计：人物资源有已登记裁切/缩放及合成流程通道差；游客帧引用的3份母版不在当前工作区。该证据不追溯修改旧批准，不能据此声称全流程完美还原已完成。"
   ],
   "status": "READY_FOR_REVIEW"
 }

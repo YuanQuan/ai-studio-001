@@ -1,0 +1,1597 @@
+{
+  "task_id": "VISUAL-FIDELITY-COMPUTE-20261012",
+  "audit_type": "READ_ONLY_EXISTING_APPROVED_RESOURCES",
+  "started_at": "2026-10-12T12:09:18+08:00",
+  "finished_at": "2026-10-12T12:09:20+08:00",
+  "elapsed_seconds": 1.634,
+  "generated_or_modified_images": 0,
+  "image_generation_calls": 0,
+  "audit_scope": "All 18 U04 default-smile portraits: source/export identity, actual PSD structure, in-memory export recomposition against PSD merged RGB on each actual manifest background for 12 same-scale exports; 6 rescaled exports explicitly NOT_TESTED for zero difference. All 40 U02 frames: file and pixel hashes, source PSD identity, walk/run reuse, frozen export tool identity. No existing image or approval modified.",
+  "portraits": [
+    {
+      "stage": "MT_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 330,
+        "changed_pixels_outside_recorded_crop": 174552,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          193,
+          0,
+          866,
+          1024
+        ],
+        "changed_pixels": 174882,
+        "max_channel_delta": 231,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s0_layer_manifest.json",
+        "manifest_sha256": "c168a45f4a7b4fe2b9c4242f0423a58b81e4cc75e22eff3301aba4bb10f7ffb2"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "MT_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 107,
+        "changed_pixels_outside_recorded_crop": 177351,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "changed_pixels": 177458,
+        "max_channel_delta": 232,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s2_layer_manifest.json",
+        "manifest_sha256": "ce42c20a81234bf2ddad631014f1e2fc2df7b3ecbdfbe339fc38d1f514dc470d"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "MT_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 51,
+        "changed_pixels_outside_recorded_crop": 168693,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          198,
+          0,
+          866,
+          1024
+        ],
+        "changed_pixels": 168744,
+        "max_channel_delta": 232,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s3_layer_manifest.json",
+        "manifest_sha256": "23ef6902c4db8fda8d33dbe7cf62223bbdf5e3c4f880d6169a73c5860c72b54b"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AT_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 0,
+        "changed_pixels_outside_recorded_crop": 91757,
+        "max_channel_delta_inside_recorded_crop": 0,
+        "recorded_crop_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "changed_pixels": 91757,
+        "max_channel_delta": 230,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_layer_manifest.json",
+        "manifest_sha256": "fa52d12ec076560714662dd841c6ee91efdad38e3ac3841a1812ce56419557f9"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AT_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 0,
+        "changed_pixels_outside_recorded_crop": 89773,
+        "max_channel_delta_inside_recorded_crop": 0,
+        "recorded_crop_xyxy": [
+          229,
+          0,
+          745,
+          1024
+        ],
+        "changed_pixels": 89773,
+        "max_channel_delta": 232,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s2_layer_manifest.json",
+        "manifest_sha256": "0c9b94c17bcddee182f88307000158a632845859f75fbcd68accc334d6570bbc"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AT_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 11,
+        "changed_pixels_outside_recorded_crop": 83321,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          155,
+          0,
+          923,
+          1024
+        ],
+        "changed_pixels": 83332,
+        "max_channel_delta": 232,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#16202f",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s3_layer_manifest.json",
+        "manifest_sha256": "06cddf7a27c3adb8e75caf279756ce68160340a78f113213322bb7c3a106feab"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AC_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 94,
+        "changed_pixels_outside_recorded_crop": 122831,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "changed_pixels": 122925,
+        "max_channel_delta": 229,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_layer_manifest.json",
+        "manifest_sha256": "4f6debaed1ff6df0abf08251aaaf9ff90187dc9a468d4b444d1105762c36bd3c"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AC_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 126,
+        "changed_pixels_outside_recorded_crop": 134379,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          266,
+          0,
+          779,
+          1024
+        ],
+        "changed_pixels": 134505,
+        "max_channel_delta": 230,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s2_layer_manifest.json",
+        "manifest_sha256": "f320e0c904e7bd8c6b8b929bfdac5d02fc40f97bcb1b5348ca918cee4a2a3209"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AC_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 66,
+        "changed_pixels_outside_recorded_crop": 144015,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          211,
+          0,
+          820,
+          1024
+        ],
+        "changed_pixels": 144081,
+        "max_channel_delta": 230,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s3_layer_manifest.json",
+        "manifest_sha256": "7311284e9a6d8d627a2ffc36cd1dc618333c56499022830f08e1de6e3145b840"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AJ_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 108,
+        "changed_pixels_outside_recorded_crop": 137516,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          238,
+          0,
+          831,
+          1024
+        ],
+        "changed_pixels": 137624,
+        "max_channel_delta": 228,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s0_layer_manifest.json",
+        "manifest_sha256": "30acd6dd9d74f49b0e38ca78d59dfad39b604cff89e76f45bce7f0e38494fbd7"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AJ_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 119,
+        "changed_pixels_outside_recorded_crop": 141158,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "changed_pixels": 141277,
+        "max_channel_delta": 230,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s2_layer_manifest.json",
+        "manifest_sha256": "8417c9906dd12edf1dc7b6518540a2909029eb09b718a3123cff6af8306fc2b5"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AJ_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_front_hair.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "changed_pixels_inside_recorded_crop": 143,
+        "changed_pixels_outside_recorded_crop": 130113,
+        "max_channel_delta_inside_recorded_crop": 1,
+        "recorded_crop_xyxy": [
+          255,
+          0,
+          829,
+          1024
+        ],
+        "changed_pixels": 130256,
+        "max_channel_delta": 230,
+        "scope": "same-size RGB over actual manifest background, not alpha or original concept",
+        "background": "#17202d",
+        "manifest_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s3_layer_manifest.json",
+        "manifest_sha256": "1b15a9f2c83680f6a3203b10399579d55cf6023a46d3a050e355e326a63c31fd"
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AD_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AD_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "AD_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "XJ_S0",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "XJ_S2",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s2_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s2.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    },
+    {
+      "stage": "XJ_S3",
+      "hashes": [
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s3_dialogue.psd",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s3.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_base.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_front_occlusion.png",
+          "exists": true,
+          "hash_match": true
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_smile.png",
+          "exists": true,
+          "hash_match": true
+        }
+      ],
+      "structure": {
+        "channels": 3,
+        "width": 1024,
+        "height": 1536,
+        "depth": 8,
+        "mode": 3,
+        "layer_count": 18,
+        "visible_layers": 5,
+        "hidden_layers": 13,
+        "composite_has_alpha": false
+      },
+      "source_and_exports_same_decode_pipeline": "Pillow 12.3.0",
+      "recomposition_vs_psd_merged_visible_rgb": {
+        "status": "NOT_TESTED",
+        "reason": "Exports have explicitly recorded 0.75 source scale; no zero-difference claim without locked resampling pipeline",
+        "source_to_export_scale": 0.75
+      },
+      "alpha_vs_psd_merged": "NOT_TESTED: PSD merged composite has only RGB; cannot use it as alpha authority",
+      "original_effect_comparison": "NOT_TESTED: current Gate2 permits new expression/edge revisions; no new pixel-zero assertion against old concept"
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": "UG_GHOST_01_WALK_00",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_01",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_02",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_03",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_04",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_05",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_06",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_07",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_08",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_WALK_09",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_00",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_01",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_02",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_03",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_04",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_05",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_06",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_07",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_08",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_RUN_09",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_00",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_01",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_02",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_03",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_04",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_05",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_06",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_07",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_08",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_HAPPY_09",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_00",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_01",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_02",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_03",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_04",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_05",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_06",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_07",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_08",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    },
+    {
+      "frame_id": "UG_GHOST_01_SAD_09",
+      "hash_match": true,
+      "pixel_hash_match": true,
+      "size": [
+        512,
+        512
+      ],
+      "source_psd_exists": false,
+      "source_psd_hash_match": false
+    }
+  ],
+  "walk_run_pixel_reuse": [
+    {
+      "index": 0,
+      "pixel_equal": true
+    },
+    {
+      "index": 1,
+      "pixel_equal": true
+    },
+    {
+      "index": 2,
+      "pixel_equal": true
+    },
+    {
+      "index": 3,
+      "pixel_equal": true
+    },
+    {
+      "index": 4,
+      "pixel_equal": true
+    },
+    {
+      "index": 5,
+      "pixel_equal": true
+    },
+    {
+      "index": 6,
+      "pixel_equal": true
+    },
+    {
+      "index": 7,
+      "pixel_equal": true
+    },
+    {
+      "index": 8,
+      "pixel_equal": true
+    },
+    {
+      "index": 9,
+      "pixel_equal": true
+    }
+  ],
+  "frozen_tool_hashes": [
+    {
+      "file": "PRODUCTION_PLAN.md",
+      "hash_match": true
+    },
+    {
+      "file": "VFX_SPEC.md",
+      "hash_match": true
+    },
+    {
+      "file": "SOURCE_PREFLIGHT.json",
+      "hash_match": true
+    },
+    {
+      "file": "serve-export.mjs",
+      "hash_match": true
+    },
+    {
+      "file": "export-browser.js",
+      "hash_match": true
+    },
+    {
+      "file": "finalize-export.mjs",
+      "hash_match": true
+    },
+    {
+      "file": "diagnostic-browser.js",
+      "hash_match": true
+    },
+    {
+      "file": "review.html",
+      "hash_match": true
+    },
+    {
+      "file": "review.js",
+      "hash_match": true
+    }
+  ],
+  "historical_reproducibility_evidence": {
+    "source_path": "deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/EXPORT_AND_SOURCE_AUDIT.json",
+    "source_sha256": "4eccbd92c8df4f797c3d03f4d22aa12e1e9ca4ff4378ec3f75eb0bc335e4f35d",
+    "recorded_reproducibility": {
+      "differences": [
+        {
+          "x": 221,
+          "y": 287,
+          "channel": 1,
+          "actual": 224,
+          "diagnostic": 225
+        }
+      ],
+      "maxChannelDifference": 1,
+      "samples": [
+        {
+          "x": 317,
+          "y": 194,
+          "actualAlpha": 253
+        },
+        {
+          "x": 320,
+          "y": 194,
+          "actualAlpha": 253
+        },
+        {
+          "x": 316,
+          "y": 197,
+          "actualAlpha": 253
+        }
+      ],
+      "note": "刷新浏览器后的独立WebGL/Canvas导出与诊断只有一个通道差1；如实记录，未声称跨会话逐字节相同。"
+    },
+    "identity": "historical record only, not rerendered now"
+  },
+  "bone_animation": "NOT_TESTED: these approved batches do not provide a validated bone animation production path",
+  "runtime_visual_and_compute_savings": "NOT_TESTED: no new engine playback, GPU metrics, paid generation or savings benchmark"
+}
