@@ -404,6 +404,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 首样门禁：v0.2 制作方案的 `USER_APPROVED` 已由 Art/Tech 同批预签消费；新首样 Task `IN_PROGRESS`，仅解锁一个隔离候选。预签仅核制作前参数/工具/来源，不批准尚未制作的 PNG、动画或运行效果；具体首样成品仍须用户另作 `USER_REVIEW`，正式接入门禁保留。
 - 首样 Gate2 独立审批：`tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json` 绑定 v0.2 唯一 mask PNG（SHA `f9a67671a0e1d4f03974f62b3fdf8de1131e4e99adc7aad4fecd13095fba7b9f`）及同尺度 CPU 参考，状态 `USER_REVIEW`、`decided_at=null`。自切图按规则直接交用户审核视觉候选；旧 Gate1 方案 `USER_APPROVED` 不代替此次决定。整体 Client/Cocos 运行 `BLOCKED`，真实动画、UV、Draw、GPU/CPU 均未测试，不因 Gate2 送审而放行正式接入。
 - Gate2 准确用户决定：用户原话“通过”，Producer 2026-10-12 20:47:49 +08:00 登记 `tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json` 为 `USER_APPROVED`；原消息精确时刻未知。批准范围仅唯一 mask、同尺度静态/CPU 重组的视觉方向，四份文件 SHA 维持送审绑定；不批准尚未验证的 Cocos 动画、UV、性能或正式接入。整体 Task `BLOCKED`、Client 运行 `NOT_TESTED`，旧 Gate1 批准独立保留。
+- 预算例外门禁（当前未决定）：Gate2 对原 mask/同尺度视觉方向的 `USER_APPROVED` 保持原对象与 SHA，不扩展到 Shader。运行现发现 EFX2209；整批修正次数已达 2/2，若实施仅该 Constant 块实例名的额外 1 轮补丁，需用户明确决定并按同批预签/账本续签。当前无例外批准，Client 补丁提案未应用，整体运行 `BLOCKED`。
+- 例外决策对象已具备可审提案：同版 `SHADER_FIX_PROPOSAL.md` 与 `.patch` 仅提出 EFX2209 最小修正，未应用；不创建新的已批准 Approval 对象。整批 2/2 硬修正预算不因格式整理变化；若批准额外仅此 Shader 1 轮，须用户明确授权并由 Master 记录同批续签。视觉 Gate2 原批准对象保持不变。
 <!-- VISUAL-FIDELITY-PILOT-PLAN-20261012 END -->
 
 <!-- MINIGAMES-GROWTH-20261012 START -->

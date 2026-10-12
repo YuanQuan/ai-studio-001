@@ -35,7 +35,12 @@
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/FEATURE_BRIEF.md",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/IMPLEMENTATION_REPORT.md",
     "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/client/DELIVERABLE.json",
-    "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json"
+    "tasks/VISUAL-FIDELITY-PILOT-ASSET-20261012/ARTIFACT_APPROVAL.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/RUNTIME_PERMISSION_DIAGNOSIS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/CREATOR_EDITOR_OBSERVATION.json",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_COMPILE_DIAGNOSIS.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.md",
+    "deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/SHADER_FIX_PROPOSAL.patch"
   ],
   "acceptance": [
     "准确继承已批准奶茶店01源与本批Gate1，源PNG/PSD/meta字节不变；Art/Tech同批预签包含最终mask/羽化、UV/atlas/trim/实例隔离、工具及执行预算，首样前完成。",
@@ -62,6 +67,9 @@
     "Master在同批首样开始后补列Tech实际运行独立核对TECH_RUNTIME_REVIEW.md为Required；这是已有Tech职责与预算复核的固定可追溯记录，不新增用户门禁或第二候选。真实Cocos缺口必须NOT_TESTED/具体诊断。",
     "Producer 2026-10-12T15:51:16+08:00 核 Art 单候选 mask/同尺度静态与CPU交互参考已交，Art DELIVERABLE/EXECUTION_LEDGER 及 Tech 独立 TECH_RUNTIME_REVIEW 实存；自切图效果按 rules/visual_production_contract.md 可直接送准确 Art Gate2 USER_REVIEW，审批对象仅 mask 与同尺度预览视觉方向。整体 Cocos 运行任务 BLOCKED：Creator 3.8.8 首次 exit134/SIGABRT，唯一证据恢复 open -a exit1/kLSNoExecutableErr，未产生本批构建；实际动画、UV、Draw Call、GPU/CPU 与运行画面全部 NOT_TESTED，不能作为成品动态效果审核或正式接入。整批 0生图、1候选、累计修正2/2、0新增费用；制作账本15:24:21–15:49:23为1502秒。Art Gate2 用户决定与运行阻塞独立，旧Gate1 Plan DONE/USER_APPROVED不变。",
     "Producer 2026-10-12T20:47:49+08:00 核四份Gate2展示文件SHA与原送审对象完全一致，并登记用户原话“通过”：Art mask/同尺度CPU视觉方向 Approval USER_APPROVED，用户消息精确时刻未知、decided_at为本次登记时刻。整体Task继续BLOCKED，因Creator两次受限启动失败、无本批构建；Client真实动画、UV、Draw Call、GPU/CPU全NOT_TESTED，不自动DONE、不据此解锁正式接入；正式接入另由Master编排，当前未安排。旧Gate1方案批准独立保留。",
-    "Gate2 后续核验路径：deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/MASTER_VISUAL_ACCEPTANCE.json（Master ACCEPTED_VISUAL_GATE_ONLY，非整体 DONE）；deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/POST_APPROVAL_RUNTIME_CHECK.md（Tech 2026-10-12 20:49:10 +08:00 只读核，无本批新 build/log 或可核恢复依据，SHA ca1b2a73bc54d36bb5d7b84a56a6c576af9733d00cbfb5ccfdbbfc617ea9685e）。视觉 Gate2 已批准；整体运行继续 BLOCKED、相关项 NOT_TESTED，未新增正式接入任务。"
+    "Gate2 后续核验路径：deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/MASTER_VISUAL_ACCEPTANCE.json（Master ACCEPTED_VISUAL_GATE_ONLY，非整体 DONE）；deliverables/art/VISUAL-FIDELITY-PILOT-ASSET-20261012/v0.2/evidence/POST_APPROVAL_RUNTIME_CHECK.md（Tech 2026-10-12 20:49:10 +08:00 只读核，无本批新 build/log 或可核恢复依据，SHA ca1b2a73bc54d36bb5d7b84a56a6c576af9733d00cbfb5ccfdbbfc617ea9685e）。视觉 Gate2 已批准；整体运行继续 BLOCKED、相关项 NOT_TESTED，未新增正式接入任务。",
+    "Master 2026-10-12T21:05:21+08:00 授权只读恢复诊断和具体最小补丁提案：既有同项目 Creator PID68057 正常，原生AX实见灯笼 Effect EFX2209（Constant块不得含实例名）；不启动并行CLI、不修改已批准mask/源图/曲线或当前实现。Tech写编译诊断，Client仅写未应用补丁及提案；累计2/2预签硬预算不重置，提出仅该缺陷额外1轮的具体范围供用户决定。生产运行仍BLOCKED/NOT_TESTED；旧启动失败及审批记录保留历史。",
+    "Producer 2026-10-12T21:06:34+08:00 核本轮只读诊断：evidence/CREATOR_EDITOR_OBSERVATION.json 记同项目现存Creator PID68057及原生Editor灯笼Effect EFX2209（Constant块实例名错误）；evidence/RUNTIME_PERMISSION_DIAGNOSIS.md 解释此前默认沙箱失败并记录同版U04正式提权官方CLI曾完成构建任务，不将旧启动失败继续当唯一当前原因；evidence/SHADER_COMPILE_DIAGNOSIS.md 锁最小候选修正。Client SHADER_FIX_PROPOSAL.md/.patch 尚待落盘核哈希，未应用任何补丁。整批累计修正预算2/2已满；新1轮仅此shader的预算例外尚待用户决定，原Gate2视觉USER_APPROVED保持；实际本批编译、构建、运行及性能仍NOT_TESTED，整体BLOCKED，不启动并行CLI或正式接入。",
+    "Producer 2026-10-12T21:10:26+08:00 核未应用最小补丁提案两件实存：evidence/SHADER_FIX_PROPOSAL.md SHA 458fcdad7fdf016a5b6c259ff1205d3805f16fa854cf3c10f7108e230c87b83c，evidence/SHADER_FIX_PROPOSAL.patch SHA 9047ed4545072f299182490ef27ab8eac8c23604751178afb698260ee863b7a2；Client完成时间21:09:39+08:00，Root报告补丁check PASS且原Effect源码SHA不变。提案格式整理不算实施修正，历史EXECUTION_LEDGER不改；2/2硬限仍满，额外仅该shader一轮须用户明确授权、Master记录同批续签后才可实施。Gate2视觉已批准，运行继续BLOCKED/NOT_TESTED。此只读诊断周期整体起点与净耗时未知，本轮Producer最终核验时刻如上。"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-12T21:05:21+08:00",
+  "observation_source": "Master cua.getApp + fresh getAXState; read-only UI observation",
+  "window": "UnitSamples.scene - bai-gui-night-market-demo - Cocos Creator 3.8.8",
+  "creator_process_pid": 68057,
+  "process_source": "authorized read-only pgrep, same apps/client project; not newly launched by this task",
+  "console_error": "[Assets] ../labs/lantern-pilot-v02/lantern_lighting.effect - lantern-fs:frag - 20: Error EFX2209: Block declarations must be semicolon-terminated，non-array-typed and instance-name-free. Please check your 'Constant' block declaration.",
+  "additional_console_messages": [
+    "[Scene] download failed: import://e3/e334c0c0-4d86-4bc0-9edf-a44cc80dd8da.json?_t=1791790331595, status: 0(error)",
+    "[Window] Can not change the asset db://assets/labs/lantern-pilot-v02/lantern_pilot.ts, because the original asset is not exist. Maybe it is a new asset."
+  ],
+  "conclusion": "Editor available; actual pilot Effect import/compiler defect newly identified. Further import/UV/build/runtime not validated. Historical CLI startup failures remain historical, no longer sufficient sole diagnosis.",
+  "actions": "No code/source/mask/Editor scene/settings changes, no concurrent CLI launch; proposal only."
+}
