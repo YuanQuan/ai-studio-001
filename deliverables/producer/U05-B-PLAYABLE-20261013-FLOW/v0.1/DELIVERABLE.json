@@ -1,0 +1,30 @@
+{
+  "task_id": "U05-B-PLAYABLE-20261013-FLOW",
+  "owner": "producer",
+  "summary": "准确登记B v0.3视觉选择及Art/Tech/Product三方案送审门禁；父完整资源与试玩未完成。",
+  "artifacts": [
+    "deliverables/producer/U05-B-PLAYABLE-20261013-FLOW/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-PLAYABLE-20261013-FLOW/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只依据当前实存资源与U05检查，明确事实/估算/未验证",
+      "result": "PASS",
+      "evidence": "FLOW_STATUS.md区分B图SHA、方案审批事实及未验证资源/试玩；三方案实际文件与同版Review均可查。"
+    },
+    {
+      "criterion": "正式图片不在Gate1批准前输出；每品种单独拆分且说明遮挡与透明范围",
+      "result": "PASS",
+      "evidence": "Art制作方案送USER_REVIEW，FLOW明确Gate1未批不生产；独立拆分细节见Art方案。"
+    },
+    {
+      "criterion": "真实版本路径、依赖门禁、还原证据计划可审",
+      "result": "PASS",
+      "evidence": "FLOW_STATUS.md、三方案v0.1及各Master Review/审批均为真实路径。"
+    }
+  ],
+  "risks": [
+    "三方案仍待用户批准；正式资源与新版U05试玩尚不存在。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

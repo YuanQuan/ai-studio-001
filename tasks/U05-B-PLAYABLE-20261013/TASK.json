@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-PLAYABLE-20261013",
+  "title": "B方案独立资源制作与U05前端试玩",
+  "type": "integration",
+  "owner": "master",
+  "parent": "SIX-SHOP-MINIGAMES-20261012",
+  "objective": "将用户选定B v0.3制作成有可编辑PSD和独立部件的资源，保持效果还原，所有3茶3奶6小料分别输出；接入U05并通过真实Web试玩与基准画面对照。",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/v0.1/USER_DIRECTION.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/v0.1/INTEGRATION_REPORT.md"
+  ],
+  "acceptance": [
+    "具体制作方案Gate1和具体资源Gate2有用户批准证据，源到导出到引擎身份链可核",
+    "每个茶奶小料品种有独立PNG和PSD语义层；其它动态部件按获批拆分计划输出，禁止整图掩盖分层",
+    "关闭参考覆盖层的静态重组按冻结基准比较，限制及补绘区域真实记录",
+    "U05可从原入口实际试玩，三类点击合成、成品订单、撤销/交错重做/完成/失败/重试/返回与五难度可用",
+    "仅前端；难度开放等规格批准后执行，Cocos实际Web构建、内置浏览器操作与同尺度视觉证据齐全"
+  ],
+  "dependencies": [],
+  "status": "SPEC",
+  "approval": "APPROVAL",
+  "notes": [
+    "先执行资源制作方案与技术检查，遇下一USER_REVIEW停点但完整目标保留。",
+    "单元示例不安排QA，Client记录运行/视觉检查；正式功能仍须适用门禁。",
+    "本轮分派三个已创建方案/流程Task，资源生产与Client任务在获准门禁后由Master创建。"
+  ]
+}

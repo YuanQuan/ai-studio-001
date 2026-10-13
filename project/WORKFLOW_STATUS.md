@@ -917,3 +917,18 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Product v0.2 四 Required 与同版 Master Review APPROVED，五文件 SHA 绑定新审批，Task `REVIEW→USER_REVIEW`；仅修订草案送审，候选品种与初始开放数量未获批准。
 - Art Owner 已冻结九 Required/三图并正式提交，Master v0.3 三实图 Review APPROVED；九件加 Review 共十文件 SHA 绑定新审批，Task `IN_PROGRESS→REVIEW→USER_REVIEW`。Product v0.2 亦 `USER_REVIEW`。Continuity check（2026-10-13T22:20:58+08:00）：两线均达真实用户门禁，无空转 READY/IN_PROGRESS；旧 U05 示例、配置与代码本轮不改。
 <!-- U05-SLOTS-REVISION-20261013 END -->
+
+<!-- U05-B-PLAYABLE-20261013 START -->
+## 2026-10-13｜U05 B方案资源与试玩路线
+
+- 用户明确采纳 Art v0.3 `concept_B.png`，独立审批仅B图 `USER_APPROVED`；A/C仍历史候选，三图评估Task由Master最终接受 `DONE`，整包九文件不作为整体获批。Product v0.2幻想品种草案仍 `USER_REVIEW`。
+- 新父Task `U05-B-PLAYABLE-20261013` 为 `SPEC`，最终独立品种资源与U05试玩未完成。Producer FLOW首份 `FLOW_STATUS.md` 实存，Task `READY→IN_PROGRESS`；Art Gate1方案和Tech只读方案Task目前 `READY`，待各自真实首产。Gate1方案未批、正式资源/PSD/切片及Gate2尚未授权，本轮无生产图片或代码。
+- Tech `TECH_DESIGN.md` 首份实存，方案Task `READY→IN_PROGRESS`；仍是只读方案，未解锁图片或代码。
+- Art `PRODUCTION_PLAN.md` 首份实存，制作方案Task `READY→IN_PROGRESS`。Master另建 `U05-B-PLAYABLE-20261013-PRODUCT-SPEC` 为 `BACKLOG` 后续依赖，现无执行；旧5维配置与新3类容量不兼容，候选目录不自动批准。
+- Tech Owner三件只读方案正式提交，Task `IN_PROGRESS→REVIEW`，待Master同版评审。Product具体开放数与配置迁移方案Task因Owner获分派 `BACKLOG→READY`，首件未实存前不记开工。
+- Tech v0.1 三件方案与Master Review APPROVED，四文件SHA绑定审批，Task `REVIEW→USER_REVIEW`；只读技术方案待用户审核，不解锁Gate1/代码。
+- Product新规格 `PRD.md` 首件实存，Owner Task已 `IN_PROGRESS`；具体12候选/五档开放与迁移仍在起草，未获用户批准。
+- Art Gate1 v0.1 四件方案与Master Review APPROVED，五文件SHA绑定审批，Task `REVIEW→USER_REVIEW`；方案待用户批准，正式图片/PSD/切片禁止生产。
+- Product规格四 Required 实存且Owner正式提交，Task `IN_PROGRESS→REVIEW`；待Master同版评审，不提前批准12品种或五档开放数。
+- Product v0.1 四Required+Master Review APPROVED共五SHA绑定审批，Task `REVIEW→USER_REVIEW`；12品种与五档开放数待用户批准。Producer FLOW两Required已实存并提交 `REVIEW`，三专业方案均在真实用户审批门禁。Continuity check（2026-10-13T22:42:10+08:00）：无本线空转READY/IN_PROGRESS；父完整资源与试玩Task仍 `SPEC`，生产资源、配置/代码和新版U05试玩未完成。
+<!-- U05-B-PLAYABLE-20261013 END -->

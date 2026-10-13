@@ -1,0 +1,27 @@
+{
+  "task_id": "U05-B-PLAYABLE-20261013-ART-PLAN",
+  "owner": "art",
+  "summary": "提交用户所选B图的Gate1正式资源制作方案：冻结1024×1536视觉基准，计划12个独立透明原料与杯内共用内容层，列明PSD分层、补洞限制、预算、字体和两次审批门禁。本轮只读检查和文档，未出正式图片。",
+  "artifacts": [
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "只依据当前实存资源与U05检查，明确事实/估算/未验证", "result": "PASS", "evidence": "核B图SHA-256、1024×1536/8位RGB/无alpha/无ICC；在本任务和客户端奶茶资源中未找到B内景PSD；文档区分计划预算与NOT_TESTED，现有外立面PSD未冒充内景母版。"},
+    {"criterion": "正式图片不在Gate1批准前输出；每品种单独拆分且说明遮挡与透明范围", "result": "PASS", "evidence": "本轮仅四文档，未生成PNG/PSD；ASSET_MANIFEST列12个各自透明对象及杯内内容层，PRODUCTION_PLAN列壶壁半透、隐藏架背补洞、柜前遮挡和独立状态。"},
+    {"criterion": "真实版本路径、依赖门禁、还原证据计划可审", "result": "PASS", "evidence": "VISUAL_ANCHORS固定B v0.3路径和hash；PRODUCTION_PLAN规定Gate1批准、Art/Tech同批预签、代表样张、同尺度重组、Gate2具体资源用户批准和后续U05运行核验。"}
+  ],
+  "assumptions": [
+    "用户只选定B概念效果，具体制作方案与资源效果均尚待分别批准。",
+    "Product三类原料v0.2仍为待审稿；12品种名称与开放数值以未来正式规格为准，Art ID仅内部计划。",
+    "对原料点击只按已确认静态选中与杯内合成设计；若后续要求移动原料或露出背面，需补充受影响制作范围。"
+  ],
+  "risks": [
+    "B平面图无法无损恢复透明壶壁背后的真实颜色或被遮挡背面；实际补洞/半透明结果须同尺度实图评审，失败不允许整图顶层遮盖。",
+    "图片生成字形不可靠，云魄乳等字须按Product最终批准文字用有许可证据的字体动态重排。",
+    "图集/内存/运行帧率和U05真实画面未测，待Tech预签、客户端接入与适用后续验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

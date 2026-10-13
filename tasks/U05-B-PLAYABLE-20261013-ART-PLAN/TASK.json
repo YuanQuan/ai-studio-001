@@ -1,0 +1,33 @@
+{
+  "id": "U05-B-PLAYABLE-20261013-ART-PLAN",
+  "title": "U05 B方案落地 ART-PLAN",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "提交B图资源制作方案；12个幻想原料各独立语义层/输出，评估其他独立层，固定还原目标、PSD路线、补洞范围、版权字体和预算。",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/v0.1/USER_DIRECTION.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/PRD.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "只依据当前实存资源与U05检查，明确事实/估算/未验证",
+    "正式图片不在Gate1批准前输出；每品种单独拆分且说明遮挡与透明范围",
+    "真实版本路径、依赖门禁、还原证据计划可审"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本轮仅具体方案与只读检查，禁止输出生产PNG/PSD或修改客户端；不Git、不创建子任务。",
+    "各角色读取最新角色五文件；Producer可维护本轮唯一U05-B-PLAYABLE-20261013标记块及任务/审批，保护其他任务。"
+  ]
+}

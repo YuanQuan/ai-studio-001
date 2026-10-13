@@ -985,3 +985,20 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `ART_V0.3_DRAFT_SUBMITTED`：Owner 冻结九 Required 和 A/B/C 三张最终图，Task `IN_PROGRESS→REVIEW`。
 - `ART_V0.3_USER_REVIEW`：Master 逐图 Review APPROVED；九 Required + Review 十 SHA 绑定审批，Task `REVIEW→USER_REVIEW`。Product v0.2 同在 `USER_REVIEW`。
 <!-- U05-SLOTS-REVISION-20261013 END -->
+
+<!-- U05-B-PLAYABLE-20261013 START -->
+## 2026-10-13｜U05 B方向选定与方案门禁
+
+- `B_CONCEPT_SELECTED`：用户选 Art v0.3 B图；B专属审批绑定图、同版Review与Master方向文件SHA，状态 `USER_APPROVED`。Master接受三图评估Task `DONE`，A/C未被采纳。
+- `FLOW_TASK_STARTED`：Producer `FLOW_STATUS.md` 实存，FLOW `READY→IN_PROGRESS`。Art/Tech Gate1方案Task各 `READY`，待首产后登记开工；父Task `SPEC`。
+- `TECH_PLAN_STARTED`：`TECH_DESIGN.md` 首件实存，Tech Task `READY→IN_PROGRESS`。
+- `ART_PLAN_STARTED`：`PRODUCTION_PLAN.md` 首件实存，Art Task `READY→IN_PROGRESS`。Product规格后续Task `BACKLOG`，未执行。
+- `TECH_PLAN_SUBMITTED`：Tech 三件方案正式提交，Task `IN_PROGRESS→REVIEW`，待Master评审。
+- `PRODUCT_SPEC_READY`：Product规格Task `BACKLOG→READY`，待首件 Required 实存再记开始。
+- `TECH_PLAN_USER_REVIEW`：Master同版Review APPROVED，三Required+Review四SHA绑定审批；Tech Task `REVIEW→USER_REVIEW`。
+- `PRODUCT_SPEC_STARTED`：`PRD.md` 首份Required实存，Owner Task已 `IN_PROGRESS`。
+- `ART_GATE1_USER_REVIEW`：Owner正式提交、Master同版Review APPROVED；四Required+Review五SHA绑定审批，Task `REVIEW→USER_REVIEW`。
+- `PRODUCT_SPEC_SUBMITTED`：四Required实存，Owner Task `IN_PROGRESS→REVIEW`，待Master同版评审。
+- `PRODUCT_SPEC_USER_REVIEW`：四Required+Master Review五SHA绑定审批，Task `REVIEW→USER_REVIEW`。
+- `FLOW_DRAFT_SUBMITTED`：Producer `FLOW_STATUS.md`、`DELIVERABLE.json` 两件实存，FLOW `IN_PROGRESS→REVIEW`；三专业方案均待用户决定，父Task仍SPEC。
+<!-- U05-B-PLAYABLE-20261013 END -->

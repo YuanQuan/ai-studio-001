@@ -1,0 +1,33 @@
+{
+  "id": "U05-B-PLAYABLE-20261013-PRODUCT-SPEC",
+  "title": "U05 B方案三类试玩内容规格",
+  "type": "design",
+  "owner": "product",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "将已确认三类和3/3/6容量转成可审的U05前端试玩品种ID/各档档内开放/订单组合和配置迁移方案；不擅自改计时经验解锁规则，不改正式表或代码。",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/v0.1/USER_DIRECTION.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/PRD.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/CANDIDATE_CATALOG.md",
+    "apps/client/assets/resources/u05_milk_tea/config.json"
+  ],
+  "deliverables": [
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/PRD.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONTENT_PLAN.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONFIG_MIGRATION.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "三类仅每类选1，12种幻想候选稳定ID，54组合可由同套图层合成且原料始终在开放池",
+    "五档及档内开放数表可审且容量不超过3/3/6，明确这是待批新数值",
+    "保持现有计时/经验/解锁/三单/撤销交错规则；查配方与纯成品气泡不冲突",
+    "正式公共配置迁移路径/中文字段说明/生成器与前端存档兼容影响明确，本轮不改正式源或代码"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "待Master安排空闲Product执行。只产出草案供具体版本审批，不从候选名字或总目标授权推定批准。",
+    "不派子任务不Git。"
+  ]
+}

@@ -516,3 +516,12 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Product v0.2 五文件 SHA 绑定 `tasks/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/ARTIFACT_APPROVAL_v0.2.json`，`USER_REVIEW`、`decided_at=null`；不视为品种/数值已批准。
 - Art v0.3 十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.3.json`，`USER_REVIEW`、`decided_at=null`；旧 v0.2 `REJECTED` 历史保留。Product v0.2 独立待审，两包不互代，概念送审不授权正式美术/代码。
 <!-- U05-SLOTS-REVISION-20261013 END -->
+
+<!-- U05-B-PLAYABLE-20261013 START -->
+## 2026-10-13｜U05 B视觉有限批准
+
+- `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_SELECTED_B_v0.3.json` 为 `USER_APPROVED`，仅绑定B v0.3 PNG及评审/用户方向真实SHA；A/C、Product候选品种、Gate1制作方案、Gate2切片、正式资源和代码均不在本次批准内。原三图包审批保持原状态供历史追溯。
+- Tech方案 v0.1 四文件SHA见 `tasks/U05-B-PLAYABLE-20261013-TECH-PLAN/ARTIFACT_APPROVAL_v0.1.json`，`USER_REVIEW`、`decided_at=null`；不是资源制作或代码批准。
+- Art Gate1方案 v0.1 五文件SHA见 `tasks/U05-B-PLAYABLE-20261013-ART-PLAN/ARTIFACT_APPROVAL_v0.1.json`，`USER_REVIEW`、`decided_at=null`；不是资源制作批准，Gate2仍未发生。
+- Product具体规格 v0.1 五文件SHA见 `tasks/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/ARTIFACT_APPROVAL_v0.1.json`，`USER_REVIEW`、`decided_at=null`。Art Gate1、Tech只读、Product规格三项批准均尚未取得，B视觉单图批准不代替它们。
+<!-- U05-B-PLAYABLE-20261013 END -->

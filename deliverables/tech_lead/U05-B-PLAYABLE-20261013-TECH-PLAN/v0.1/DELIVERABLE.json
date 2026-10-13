@@ -1,0 +1,36 @@
+{
+  "task_id": "U05-B-PLAYABLE-20261013-TECH-PLAN",
+  "owner": "tech_lead",
+  "summary": "只读检查当前Cocos U05和B概念图，提交Gate1技术预案；明确12种原料独立分层、订单/工作杯共用三维内容层、透明杯、坐标映射、字体与性能估算边界。",
+  "artifacts": [
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只依据当前实存资源与U05检查，明确事实/估算/未验证",
+      "result": "PASS",
+      "evidence": "已读 apps/client/assets/labs/u05/milk_tea_lab.ts、milk_tea_state.ts、resources/u05_milk_tea/config.json 与 v0.3/concept_B.png；预算明确标为理论估算，运行性能为NOT_TESTED。"
+    },
+    {
+      "criterion": "正式图片不在Gate1批准前输出；每品种单独拆分且说明遮挡与透明范围",
+      "result": "PASS",
+      "evidence": "本轮仅TECH_DESIGN文字预案，无生产PNG/PSD；方案要求茶3奶3小料6独立透明对象，并列空槽、柜口遮挡、杯后壁/内容物/前壁及受控补洞。"
+    },
+    {
+      "criterion": "真实版本路径、依赖门禁、还原证据计划可审",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN列冻结图v0.3路径、计划导入路径、Gate1/首图预签/Gate2/Client接入和同尺度重组、差异图及Web/目标机证据。"
+    }
+  ],
+  "assumptions": [
+    "粗框坐标仅为基于1024×1536概念图的规划参考，具体切线由Art母版和Gate1方案确定。",
+    "一个2048²动态图集只是排版试算，不是已批准的运行硬门槛。"
+  ],
+  "risks": [
+    "Product v0.2三类原料草案尚待审批；各档开放、稳定ID及五维旧配置/存档兼容迁移未锁定。",
+    "透明杯与移除对象后遮挡背面可能需要受控补洞。",
+    "B图文字字体授权及目标机性能尚未验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
