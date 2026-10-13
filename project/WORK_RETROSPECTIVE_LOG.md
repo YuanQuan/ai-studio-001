@@ -973,3 +973,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Client 下一次 U05 修订前保留每版构建身份并回归小屏、返回/重入及控制台，代价为一轮真实 Web 操作，复核点为下次同版 Review；Producer 继续按 Master 清单 SHA 绑定可玩成品，复核点为用户对准确 v0.1 的决定。此建议不新增 QA 或用户门禁。
 - Continuity check：当前 U05 已到真实 `USER_REVIEW`，不是仅以 READY/IN_PROGRESS 占位；父任务仍 `SPEC`、后端实施契约 CANCELLED、正式索引无入口。等待用户审核此 U05 成品；真机触摸、平台 SDK、后台休眠和长时压力未独立测试，不能外推正式运行或 QA 通过。
 <!-- U05-MILK-TEA-FRONTEND-20261012 END -->
+
+<!-- U05-WORKSPACE-CONCEPT-20261013 START -->
+### WR-20261013-U05-WORKSPACE-CONCEPT-001｜奶茶制作者工作区三版概念送审
+
+- 结果与证据：用户明确要三版制作者视角效果图，Master 建 Art Task；Brief、来源与权利记录、A/B/C 三张独立 1024×1536 PNG、设计说明、提示词、资源清单与交付索引共九 Required 实存，五项验收同序 PASS。Master 独立实图 Review APPROVED，Producer 绑定九交付加 Review 共十文件 SHA，Task/审批为 `USER_REVIEW`。C 图去冰视觉歧义留待后续 UI 细化，不代替用户选方向；旧 U05 成品仍 `USER_REVIEW`。
+- 时间与耗时（Asia/Shanghai）：可核本轮首次 Task 阅读 2026-10-13 13:35:46 +08:00；Brief/权利首产 mtime 13:36:24，A 初产 13:38:26、B 13:43:15、C 14:18:13，完整九项在 14:35:52 前可核。Master Review 与 Producer 送审发生在其后，精确最终秒数及用户原消息时刻未知，故完整墙钟与各角色净工时记未知；三图间隔包含生成等待、制作、检查等，不能据文件时间拆分或归责。
+- 影响与原因：三版独立生成提供不同工作区组织，A 初稿留历史、修订版进入准确送审包；未见可量化工具故障或同类时限基线，不判断角色快慢。图像等待净时长未知。
+- 建议与复核：Master 将三张实际图及对应布局差异一同呈用户选方向，复核点为用户对准确 v0.1 的决定；Art 在后续 UI 细化时核 C 图去冰表达，代价一次局部语义对照，复核点为选定方向后的 UI 规格。此建议不新增 PSD 或资源制作门禁。
+- Continuity check：Art 已到真实 `USER_REVIEW`，无本线空转 READY/IN_PROGRESS。概念未获用户选择，PSD、切片、代码与正式资源仍未授权；旧 U05 可玩成品另在 `USER_REVIEW`，二者不相互批准。
+<!-- U05-WORKSPACE-CONCEPT-20261013 END -->

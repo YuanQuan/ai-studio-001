@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-MILK-TEA-WORKSPACE-CONCEPT-20261013",
+  "owner": "art",
+  "summary": "完成A木质内侧台、B俯视工作桌、C柜内两层工位三张独立竖屏概念效果图；A局部纠错后冻结，提交Master独立看图与用户选方向。",
+  "artifacts": [
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/ART_BRIEF.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/DESIGN_RATIONALE.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/PROMPTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_A.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_B.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_C.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "三张独立真实生成的竖屏界面图，各有不同工作区组织，不是同图换色", "result": "PASS", "evidence": "A/B/C三张不同构图实图，各1024×1536；ASSET_MANIFEST.md记录各自SHA-256。"},
+    {"criterion": "玩家位于摊位内部制作一侧，工作台、制杯区、原料和订单清晰可见", "result": "PASS", "evidence": "逐张实图目视检查：三张皆为制作侧，中央杯、原料组与顶部订单可见。"},
+    {"criterion": "保持已确认玩法，五维原料、订单、时间、杯数、查配方、撤销和交杯有明确位置，不新增必做步骤", "result": "PASS", "evidence": "三张均显示五维、困难档、2/3、01:48、订单与三按钮；器具只是陈设。A错误备选已局部修正；B/C无标签陈设不定义规则。"},
+    {"criterion": "原创非像素中式可爱插画，木材、浅纸和暖灯与项目关联，手机阅读层级清楚", "result": "PASS", "evidence": "逐张实图目视检查：非像素插画、木材浅纸暖灯、竖屏完整界面；C去冰示意外观待后续UI澄清。"},
+    {"criterion": "保存实图、最终提示词、来源和资源清单，明确概念与正式资源边界，Master独立看图后供用户选方向", "result": "PASS", "evidence": "ART_BRIEF、PROMPTS、REFERENCE_AND_RIGHTS、ASSET_MANIFEST与三张PNG均已落盘；提交Master Review。"}
+  ],
+  "assumptions": [
+    "同一困难档第2/3杯、剩余01:48作为三图统一演示局面。",
+    "生成图文字与按钮样式是概念提示，最终UI需按获批配置和交互规格实现。"
+  ],
+  "risks": [
+    "生成中文与视觉状态不能直接当正式UI资源或产品事实；C的去冰图示及B/C背景小料在后续UI阶段需澄清。",
+    "三图均未制作PSD、切片，也未在客户端运行；用户选方向后仍需正式制作方案及适用审批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

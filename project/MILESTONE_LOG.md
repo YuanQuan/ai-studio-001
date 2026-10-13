@@ -947,3 +947,16 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：U05 v0.1 Tech `REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，Master `MASTER_PACKET_ACCEPTANCE.json` 接受准确成品送审但未判最终 DONE；35 文件 SHA 逐项匹配。
 - `USER_REVIEW`：Producer 绑定 35 文件 Master 清单及清单自身 SHA `64c5ab83987c99cf266a8ae41eb2ac42582bdee6f90f6fb3813dbf6f2189aa97`，创建 `ARTIFACT_APPROVAL_v0.1.json`、Task `REVIEW→USER_REVIEW`，用户尚未批准。Continuity check 到达真实门禁，非 QA/运行发布结论。
 <!-- U05-MILK-TEA-FRONTEND-20261012 END -->
+
+<!-- U05-WORKSPACE-CONCEPT-20261013 START -->
+## 2026-10-13｜奶茶制作者视角三版效果图
+
+- `CONCEPT_TASK_READY`：用户已授权三版界面概念生成，Master Art Task 为 `READY`；实际 Brief 首产后再记开工。旧 U05 可玩成品仍 `USER_REVIEW`，未因此批准。
+- `TASK_STARTED`：Art `ART_BRIEF.md` 与 `REFERENCE_AND_RIGHTS.md` mtime 均为 2026-10-13 13:36:24 +08:00、非空；Task `READY→IN_PROGRESS`，三版独立实图制作中。不把 Brief 当效果图或已选方向。
+- `CONCEPT_A_DRAFT`：首张真实 `concept_A.png` mtime 13:38:26 +08:00、2,187,856 字节；仍待 B/C 独立图、完整说明、专业 Review 和用户选方向，不据 A 图提前送审。
+- `CONCEPT_B_DRAFT`：第二张真实 `concept_B.png` mtime 13:43:15 +08:00、2,668,094 字节；仍待 C 图与全包 Review，不推断用户偏好。
+- `THREE_CONCEPT_IMAGES_DRAFT`：第三张真实 `concept_C.png` mtime 14:18:13 +08:00、2,301,915 字节，A/B/C 文件 SHA 各异；仍需核三种组织、提示词/资源清单与 Master 实图 Review，未到 USER_REVIEW。
+- `DRAFT_SUBMITTED`：Art v0.1 九 Required 和三张 1024×1536 实图齐备，`DELIVERABLE.json` 五项验收同序 PASS；Owner 正式提交后 Task `IN_PROGRESS→REVIEW`。Master 看图 Review 尚待。
+- `PROFESSIONAL_REVIEW_APPROVED`：Master 同版 `MASTER_REVIEW.json` 在独立看 A 修订、B、C 三实图后 APPROVED，仅准本版概念送审；C 图去冰歧义列后续 UI 细化，不作本轮阻塞。
+- `USER_REVIEW`：Producer 绑定九 Required 与 Master Review 共十文件 SHA，创建 `ARTIFACT_APPROVAL_v0.1.json`、Task `REVIEW→USER_REVIEW`；用户未选方向。Continuity check 到达真实用户门禁，旧 U05 成品审批不变。
+<!-- U05-WORKSPACE-CONCEPT-20261013 END -->

@@ -492,3 +492,10 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - U05 Client Task 已 `READY`，尚无本版正式 Artifact 用户审批；上游产品、人工源候选及生成器批准可作为明确输入，不自动批准新的 U05 实现。后端实施契约已取消，本轮无 QA Agent；实际 Web 可玩成果经适用专业 Review 后才送用户决定。
 - U05 Client v0.1 二十项索引实物、六项验收同序 PASS；最终 Tech/Master Review 均 APPROVED，Master `MASTER_PACKET_ACCEPTANCE.json` 所绑 35 文件 SHA 经 Producer 复核全匹配，清单自身 SHA-256 `64c5ab83987c99cf266a8ae41eb2ac42582bdee6f90f6fb3813dbf6f2189aa97`。`tasks/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`；仅当前纯前端单元示例等待用户决定，不自动批准正式接入或后端，Task 未 DONE。
 <!-- U05-MILK-TEA-FRONTEND-20261012 END -->
+
+<!-- U05-WORKSPACE-CONCEPT-20261013 START -->
+## 2026-10-13｜三版概念效果图审批
+
+- 用户已授权 Art 制作三版候选概念，不等于批准任何具体效果图。新 Task `READY`，尚无本版图像 Artifact 专业 Review 或用户选择；旧 U05 Client v0.1 审批继续 `USER_REVIEW`。PSD、切片和代码接入未授权。
+- Art v0.1 三张真实 PNG 与其余六项 Required 共九文件、Master 同版 Review 共十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.1.json`；Master `APPROVED` 仅具送审条件，审批与 Task 为 `USER_REVIEW`、`decided_at=null`。A/B/C 各自 SHA 见审批，用户尚未选方向；旧 U05 可玩成品仍待审，正式资源门禁不变。
+<!-- U05-WORKSPACE-CONCEPT-20261013 END -->

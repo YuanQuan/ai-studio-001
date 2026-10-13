@@ -884,3 +884,14 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 最新 23:27:20 构建真实执行进入 U05→返回菜单→重入，报告按该构建时间筛选控制台 error/warn 为空，`browser-final-release-reentry.jpg` 实存；旧异常保留修复历史。Owner 正式提交同版 `DELIVERABLE.json` 二十项索引实物、六项验收同序 PASS，Producer 将 Task `IN_PROGRESS→REVIEW`。最终 Tech/Master Review 与准确 SHA 尚待，不提前 USER_REVIEW。
 - 同版 Tech `REVIEW.json` 与 Master `MASTER_REVIEW.json` 均 APPROVED，仅准 U05 纯前端示例送审。Master `MASTER_PACKET_ACCEPTANCE.json` 绑定 35 份实存文件 SHA，Producer 逐项复算 35/35 匹配；清单本身 SHA-256 `64c5ab83987c99cf266a8ae41eb2ac42582bdee6f90f6fb3813dbf6f2189aa97`。`tasks/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，Task `REVIEW→USER_REVIEW`；用户尚未批准，非 DONE。Continuity check（2026-10-13 00:01 后）：本线已到真实用户门禁，无空转 READY/IN_PROGRESS；后端实施契约仍 CANCELLED、正式索引未激活、单元示例无 QA Agent。复盘 `WR-20261013-U05-MILK-TEA-FRONTEND-001`。
 <!-- U05-MILK-TEA-FRONTEND-20261012 END -->
+
+<!-- U05-WORKSPACE-CONCEPT-20261013 START -->
+## 2026-10-13｜U05奶茶制作者工作区三版概念
+
+- 用户明确要求先看三版制作者视角的奶茶工作区效果图；Master 已建 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/TASK.json`，当前 `READY`。Art 首份 `ART_BRIEF.md` 等本 Task 真实产出实存后再登记 `TASK_STARTED/IN_PROGRESS`。本轮只概念图，不做 PSD 生产、切片、代码或正式资源接入。
+- 旧 `U05-MILK-TEA-FRONTEND-SAMPLE-20261012` 成品仍 `USER_REVIEW`，新概念请求不等于旧版批准；三图经同版专业 Review 和 Master 实图审阅后独立送用户选择。
+- Art 首份 Required `ART_BRIEF.md`（3424 字节）及 `REFERENCE_AND_RIGHTS.md`（1348 字节）均于 13:36:24 +08:00 实存，已开始三个独立概念方案生成；Task `READY→IN_PROGRESS`。三张实图与完整同版交付、Review 尚待。
+- v0.1 三张 PNG 与九项 Required 全实存，`DELIVERABLE.json` 五项验收自报同序 PASS、`READY_FOR_REVIEW`；尚待 Art Owner 正式提交、Master 独立看图 Review，Task 暂保持 `IN_PROGRESS`，不把交付索引自报当用户批准。
+- Art Owner 已正式提交 v0.1 `READY_FOR_REVIEW`，三图和九项 Required 实存、五项验收同序 PASS；Producer 将 Task `IN_PROGRESS→REVIEW`。Master 独立实图 Review 尚待；A 初稿留历史，当前 A/B/C 为送审候选，不推断用户选择。
+- Master 已独立看三张实图，同版 `deliverables/master/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/MASTER_REVIEW.json` APPROVED，仅准概念方向送审。Producer 核九 Required 与 Review 共十文件 SHA，`tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，Task `REVIEW→USER_REVIEW`。C 图去冰视觉歧义记后续 UI 细化，不替用户选方向；旧 U05 成品仍 `USER_REVIEW`。Continuity check：到达真实用户门禁，无本线空转 READY/IN_PROGRESS；PSD、切片、代码未解锁。复盘 `WR-20261013-U05-WORKSPACE-CONCEPT-001`。
+<!-- U05-WORKSPACE-CONCEPT-20261013 END -->
