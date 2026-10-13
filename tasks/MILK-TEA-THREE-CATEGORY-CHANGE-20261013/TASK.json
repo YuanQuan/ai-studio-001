@@ -4,24 +4,25 @@
   "type": "design",
   "owner": "product",
   "parent": "SIX-SHOP-MINIGAMES-20261012",
-  "objective": "记录用户确认的取消甜冰/固定三类/幻想品种变更，说明旧五维配置与U05的影响，提出少量视觉候选并修订产品草案；不改运行表或代码。",
+  "objective": "补充茶3/奶3/小料6界面容量和成品图订单提示，更新三类变更草案与六种幻想小料候选，不改表/代码。",
   "inputs": [
     "deliverables/master/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/USER_DIRECTION.md",
     "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
     "project/config/FIELD_GUIDE.md",
-    "apps/client/assets/resources/u05_milk_tea/config.json"
+    "apps/client/assets/resources/u05_milk_tea/config.json",
+    "deliverables/master/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/USER_DIRECTION.md"
   ],
   "deliverables": [
-    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/CHANGE_IMPACT.md",
-    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/PRD.md",
-    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/CANDIDATE_CATALOG.md",
-    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/DELIVERABLE.json"
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/CHANGE_IMPACT.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/PRD.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/CANDIDATE_CATALOG.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "明确所有难度固定茶/奶/小料三类，取消甜冰，按各类品种扩展加难，不把一单一杯改成整局一杯",
-    "列明旧PRD、配置/生成器、U05实现/测试和UI视觉的受影响内容及不改动范围",
-    "提出每类少量原创百鬼夜市幻想品种与可辨颜色形态，明确名称/扩展阶段为候选，不用现实原料或商业IP",
-    "规格草案承接未变的计时、经验、解锁等已批规则，不改奖励数值、数据或代码"
+    "固定三类，茶/奶各3格、小料6格的界面容量明确，初始开放与分档数量不擅自锁定",
+    "订单气泡只显示目标成品，无组合配方；查看配方入口保留，提示规则位置/状态标出待UI明确",
+    "候选目录保留幻想茶/奶并补足6个可辨幻想小料，名称/开放节点非正式配置",
+    "变更影响与草案保持未改的计时/经验/解锁/整局订单规则，现行表与代码不变"
   ],
   "dependencies": [],
   "status": "USER_REVIEW",

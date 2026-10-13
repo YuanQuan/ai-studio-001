@@ -1,0 +1,20 @@
+{
+  "task_id": "MILK-TEA-THREE-CATEGORY-CHANGE-20261013",
+  "owner": "product",
+  "summary": "按最新用户方向补工作区茶3/奶3/小料6格容量、仅成品图订单气泡及六种幻想小料候选；保留未变的单局、计时和成长规则，未改配置或代码。",
+  "artifacts": [
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/CHANGE_IMPACT.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/PRD.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/CANDIDATE_CATALOG.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "固定三类，茶/奶各3格、小料6格的界面容量明确，初始开放与分档数量不擅自锁定", "result": "PASS", "evidence": "PRD.md 第一段；CANDIDATE_CATALOG.md 开头与扩展边界"},
+    {"criterion": "订单气泡只显示目标成品，无组合配方；查看配方入口保留，提示规则位置/状态标出待UI明确", "result": "PASS", "evidence": "PRD.md 第二段；CHANGE_IMPACT.md UI与Art影响"},
+    {"criterion": "候选目录保留幻想茶/奶并补足6个可辨幻想小料，名称/开放节点非正式配置", "result": "PASS", "evidence": "CANDIDATE_CATALOG.md 十二项候选及末段限制"},
+    {"criterion": "变更影响与草案保持未改的计时/经验/解锁/整局订单规则，现行表与代码不变", "result": "PASS", "evidence": "CHANGE_IMPACT.md 保留规则；PRD.md 第三段；本版仅 Product 目录四文件"}
+  ],
+  "assumptions": ["六个小料名称和视觉线索均为候选；3/3/6 是界面容量上限，不等于每档开放数量。"],
+  "risks": ["旧五维正式规格、现行配置及 U05 实现需要后续获批新版规格与跨角色评审后修订；本版概念草案不能直接作开发输入。"],
+  "status": "READY_FOR_REVIEW"
+}

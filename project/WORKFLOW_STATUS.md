@@ -906,3 +906,14 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Product v0.1 四份 Required 与同版 Master Review APPROVED，审批准确五文件 SHA，Task `REVIEW→USER_REVIEW`；仅送审草案，具体幻想品种与数值未获批准。
 - Art Owner 正式提交 v0.2，九 Required 加同版 Master 实图 Review APPROVED 共十文件 SHA 已绑定 `ARTIFACT_APPROVAL_v0.2.json`；Task `IN_PROGRESS→REVIEW→USER_REVIEW`。Product v0.1 亦在 `USER_REVIEW`。Continuity check（2026-10-13T21:41:21+08:00）：两线均达真实用户审批门禁，无本线空转 READY/IN_PROGRESS；PSD、切片、正式资源与旧 U05 代码迁移未授权。
 <!-- U05-FANTASY-REVISION-20261013 END -->
+
+<!-- U05-SLOTS-REVISION-20261013 START -->
+## 2026-10-13｜U05容量与订单提示返修
+
+- 用户确认茶3格、奶3格、小料6格，顾客气泡仅显示最终目标成品杯；三类幻想方向与店外顾客/店内制作延续。显示容量不等于初始解锁数量，具体品种及开放节点仍是候选。
+- Art v0.2 与 Product v0.1 原 SHA 审批历史留存，均因本次补充需求从 `USER_REVIEW→REJECTED`；Art v0.3、Product v0.2 任务均 `REVISION`，新审批 `DRAFT`。待真实新版 Brief/首件后再记 `IN_PROGRESS`。旧 U05 可玩示例仍 `USER_REVIEW`，未适配本次规则。
+- Art v0.3 `ART_BRIEF.md`、`REFERENCE_AND_RIGHTS.md` 实存，Product v0.2 四份 Required 实存；两 Task `REVISION→IN_PROGRESS`，分别继续三图制作与草案 Review。
+- Product Owner v0.2 四 Required 已正式提交，Task `IN_PROGRESS→REVIEW`；Master 同版 Review 待核，不提前送审。
+- Product v0.2 四 Required 与同版 Master Review APPROVED，五文件 SHA 绑定新审批，Task `REVIEW→USER_REVIEW`；仅修订草案送审，候选品种与初始开放数量未获批准。
+- Art Owner 已冻结九 Required/三图并正式提交，Master v0.3 三实图 Review APPROVED；九件加 Review 共十文件 SHA 绑定新审批，Task `IN_PROGRESS→REVIEW→USER_REVIEW`。Product v0.2 亦 `USER_REVIEW`。Continuity check（2026-10-13T22:20:58+08:00）：两线均达真实用户门禁，无空转 READY/IN_PROGRESS；旧 U05 示例、配置与代码本轮不改。
+<!-- U05-SLOTS-REVISION-20261013 END -->

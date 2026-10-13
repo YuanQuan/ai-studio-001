@@ -972,3 +972,16 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `ART_V0.2_SUBMITTED`：Owner 九 Required 和三张新实图正式提交，Task `IN_PROGRESS→REVIEW`。
 - `ART_V0.2_USER_REVIEW`：Master 同版实图 Review APPROVED；Producer 绑定九 Required 与 Review 十文件 SHA，Task `REVIEW→USER_REVIEW`。两线均待用户审批。
 <!-- U05-FANTASY-REVISION-20261013 END -->
+
+<!-- U05-SLOTS-REVISION-20261013 START -->
+## 2026-10-13｜U05 3/3/6格返修
+
+- `USER_DIRECTION_V0.3`：Master 记录茶/奶/小料 3/3/6 显示容量、顾客气泡仅成品杯；不推断初始开放或分档数量。
+- `PRIOR_PACKAGES_REJECTED`：Art v0.2、Product v0.1 未获用户批准，原 SHA 审批保留并因新要求转 `REJECTED`；新 Art v0.3 与 Product v0.2 均 `DRAFT/REVISION`。
+- `ART_REVISION_STARTED`：v0.3 Brief/权利说明实存，Task `REVISION→IN_PROGRESS`。
+- `PRODUCT_REVISION_STARTED`：v0.2 四 Required 实存，Task `REVISION→IN_PROGRESS`；仍待正式提交和同版 Review。
+- `PRODUCT_V0.2_DRAFT_SUBMITTED`：Owner 四 Required 正式提交，Task `IN_PROGRESS→REVIEW`，待 Master 同版评审。
+- `PRODUCT_V0.2_USER_REVIEW`：Master 同版 Review APPROVED，四 Required + Review 五 SHA 绑定审批；Task `REVIEW→USER_REVIEW`。
+- `ART_V0.3_DRAFT_SUBMITTED`：Owner 冻结九 Required 和 A/B/C 三张最终图，Task `IN_PROGRESS→REVIEW`。
+- `ART_V0.3_USER_REVIEW`：Master 逐图 Review APPROVED；九 Required + Review 十 SHA 绑定审批，Task `REVIEW→USER_REVIEW`。Product v0.2 同在 `USER_REVIEW`。
+<!-- U05-SLOTS-REVISION-20261013 END -->

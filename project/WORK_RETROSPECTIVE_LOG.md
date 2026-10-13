@@ -994,3 +994,12 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Product 送审节点：四件交付和 Master Review 实存、五 SHA 绑定；Art 继续制作。Product 净工时与用户等待时长未知。
 - 最终结果：Product 四件草案与 Art 九件/三实图均经 Master 同版 Review APPROVED，分别进入 `USER_REVIEW`；旧 Art v0.1 因用户改向留 `REJECTED` 历史。可核最早本轮 Producer 读取约 21:28:40 +08:00，Product DELIVERABLE mtime 21:31:21、Art DELIVERABLE mtime 21:37:27，本轮 Producer 收尾 2026-10-13T21:41:21+08:00；用户原消息、各角色净工时及完整等待拆分未知，不能据文件 mtime 归责。返工原因是用户重定布局与原料维度，未见可量化工具故障。建议 Master 并列呈两版准确草案/实图供用户决定，复核点为两个 v0.1/v0.2 审批结果；后续再由 Product/Art 按获批结果细化，避免候选品种流入正式资源。Continuity check：两线均在真实 `USER_REVIEW`，无空转 READY/IN_PROGRESS。
 <!-- U05-FANTASY-REVISION-20261013 END -->
+
+<!-- U05-SLOTS-REVISION-20261013 START -->
+## WR-20261013-U05-SLOTS-REVISION-001｜进行中
+
+- 结果：用户容量与订单提示新方向入册，旧两包因范围补充退回，新两包待首产。首次可核 Producer 本轮 2026-10-13 22:06:45 +08:00；用户消息精确时刻、制作净工时及等待耗时未知。
+- 影响与建议：原图/草案未含明确6小料与成品杯气泡，需定向返工。Art 复核三张图的格位和提示气泡，Product 复核候选与已确认规则分界；Master 在同版 Review 时检查。Continuity：两任务 `REVISION` 已分派，待首件实存，不以无产出 `IN_PROGRESS` 占位。
+- 续记：Art 新 Brief/权利说明与 Product 四件修订稿已实存，两线有真实执行证据；Art 三图与 Review 仍待。
+- 最终结果：Product v0.2 四件草案与 Art v0.3 九件/三实图各经 Master 同版 Review APPROVED，均进入 `USER_REVIEW`；旧 Product v0.1/Art v0.2 因用户新增容量与气泡要求退回。可核本轮首读约 22:06:45 +08:00，Producer 收尾 2026-10-13T22:20:58+08:00；三图在 22:16:07 前已实存，后补说明与 Review。用户消息精确时刻、生成净时长、等待/返工分段耗时未知，不能归责。返工主因是用户补充显示容量与订单提示，未见可量化工具故障。建议 Art 后续以获选方向复核格位与订单可辨性、Product 复核候选小料与已定容量分界，复核点为用户分别对准确 v0.3/v0.2 审批。Continuity check：两线真实 `USER_REVIEW`，无本轮空转任务；正式资源及旧 U05 代码迁移未解锁。
+<!-- U05-SLOTS-REVISION-20261013 END -->

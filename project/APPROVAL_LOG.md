@@ -508,3 +508,11 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Product 三类变更 v0.1 四份 Required + Master Review 的五文件 SHA 记录见 `tasks/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/ARTIFACT_APPROVAL_v0.1.json`，状态 `USER_REVIEW`，`decided_at=null`；仅草案送审。
 - Art v0.2 九 Required + Master Review 十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.2.json`，状态 `USER_REVIEW`、`decided_at=null`；v0.1 `REJECTED` 保留。Product 草案独立 `USER_REVIEW`，两审批不互代；正式美术/代码尚未解锁。
 <!-- U05-FANTASY-REVISION-20261013 END -->
+
+<!-- U05-SLOTS-REVISION-20261013 START -->
+## 2026-10-13｜U05容量返修审批
+
+- Art v0.2 与 Product v0.1 的准确送审版本因用户追加 3/3/6 格和成品杯提示而 `REJECTED`，原 SHA 绑定留档，不视为已批准。Art v0.3 与 Product v0.2 审批新建 `DRAFT`，待完整实物与同版评审后送审；候选小料品种和开放节点未批准。
+- Product v0.2 五文件 SHA 绑定 `tasks/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/ARTIFACT_APPROVAL_v0.2.json`，`USER_REVIEW`、`decided_at=null`；不视为品种/数值已批准。
+- Art v0.3 十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.3.json`，`USER_REVIEW`、`decided_at=null`；旧 v0.2 `REJECTED` 历史保留。Product v0.2 独立待审，两包不互代，概念送审不授权正式美术/代码。
+<!-- U05-SLOTS-REVISION-20261013 END -->

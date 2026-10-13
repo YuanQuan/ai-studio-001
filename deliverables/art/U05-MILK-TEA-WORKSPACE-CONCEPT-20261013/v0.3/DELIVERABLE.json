@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-MILK-TEA-WORKSPACE-CONCEPT-20261013",
+  "owner": "art",
+  "summary": "三版工作区概念修为茶3、奶3、小料6格，订单气泡只留一个成品杯；A格盘、B两侧备料、C分层抽屉均保留原制作侧视角，提交Master Review。",
+  "artifacts": [
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/ART_BRIEF.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/DESIGN_RATIONALE.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/PROMPTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_A.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_C.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "三张独立完整竖屏概念保持店内制作视角、店外幽灵顾客与现有店铺蓝瓦木框布帘灯笼画风", "result": "PASS", "evidence": "逐张实图复核：三张1024×1536，固定从制作侧看向外侧友好幽灵，蓝瓦木框布帘暖灯保留。"},
+    {"criterion": "每张茶3格、奶3格、小料6格，只有三类幻想原料，格位可点可辨、不混入甜冰或现实品种", "result": "PASS", "evidence": "逐图人工数格：茶三、奶三、小料两行各三，总12格；显示幻想品种图形与选择高亮，无甜冰组。"},
+    {"criterion": "订单气泡仅一个目标成品杯，不含配方组合/等式/原料图标或名称，查看配方入口独立保留", "result": "PASS", "evidence": "第二轮局部编辑后逐图检查：气泡仅单杯成品，杯外无游离图标；下方独立查看配方按钮保留。"},
+    {"criterion": "保留各版原料组织差异，杯子/点选状态/撤销/交杯清楚，新增小料为视觉候选非正式配置", "result": "PASS", "evidence": "A并列格盘、B两侧备料、C分层抽屉；空杯、选中高亮、撤销与确认交杯均清楚；Brief写明候选边界。"},
+    {"criterion": "固定九产物与真实提示词/图像哈希齐全，旧图保留，Master独立看图后提交用户选择", "result": "PASS", "evidence": "九产物均保存；PROMPTS记六次实际调用，ASSET_MANIFEST记最终SHA-256，首轮与v0.2旧图留存。"}
+  ],
+  "assumptions": [
+    "十二格仅表示显示容量，不能推断初始开放数或各档解锁门槛。",
+    "三茶、三奶、六小料名称均为Product/Art概念候选，未成为正式业务配置。"
+  ],
+  "risks": [
+    "生成中文字、具体热区与锁定状态尚须后续UI/Product正式规格确认；本图不能直接接入客户端。",
+    "当前仅静态概念，PSD、切片和真实运行画面均未制作或验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
