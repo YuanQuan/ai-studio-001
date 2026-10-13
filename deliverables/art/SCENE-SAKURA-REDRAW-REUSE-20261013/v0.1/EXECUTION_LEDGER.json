@@ -1,0 +1,488 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "version": "v0.1",
+  "state": "ART_DELIVERABLE_READY_FOR_GATE2_USER_REVIEW",
+  "timezone": "Asia/Shanghai",
+  "generation_tool": "image_gen.imagegen (built-in; actual tool version not reported yet)",
+  "limits": {
+    "initial_calls": 11,
+    "correction_calls": 4,
+    "total_calls": 15,
+    "correction_rounds_per_same_issue": 2,
+    "production_and_verification_wall_minutes": 240,
+    "known_cost": "未知",
+    "runtime_texture_target_mib": 40,
+    "runtime_draw_batch_target": 12
+  },
+  "usage": {
+    "initial_calls_submitted": 11,
+    "correction_calls_submitted": 3,
+    "unknown_outcome_calls_reserved": 0,
+    "candidates_received": 14,
+    "production_and_verification_wall_minutes": 95.42,
+    "remaining_potential_calls": 1,
+    "wall_time_basis": "Conservative elapsed from first generation to final verification; includes any short review/communication waits, because exact pause split is not reliably measured.",
+    "unused_correction_calls": 1,
+    "budget_within_4h_conservative": true
+  },
+  "calls": [
+    {
+      "call_index": 1,
+      "stage": "initial_sample",
+      "source_group": "complete_street_bridge",
+      "tool": "image_gen.imagegen",
+      "input_reference": "visual description from reference/user_reference_3072x1024.png; no reference pixel provided to generator",
+      "prompt_file": "source/prompts/bridge_initial.txt",
+      "prompt_sha256": "a02008d216ee7d7dff601ef5b5e460b1288b654268c842740620a4626674a4e1",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_REVISE",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:03:12+08:00",
+      "finished_at": "2026-10-13T22:03:50+08:00 (derived from tool duration 37.7 s)",
+      "output_native_path": "source/native/bridge_initial_native.png",
+      "output_sha256": "ee35f57fcf98ab77768467815bad26a6ce9259e8e4aac1ae23c9d7589a94dd60",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "sample_full_work_path": "source/bridge_full_work.png",
+      "sample_full_work_sha256": "4d403ce89b756261b430e26c8bbc3aaf2381af26341d8de22fd75ba40420680f",
+      "sample_half_path": "exports/tex_sakura_rr_bridge_half.png",
+      "sample_half_sha256": "970452aaa5f6ec25c3b51ff606d6bf3431f6bfd4f831272f882e79a5d075999d",
+      "known_cost": "未知",
+      "reason": "first representative full single-arch bridge; geometric one-arch success, art review flags oversized/wide arch and regular stone/short lanterns at 1:1",
+      "repeat_policy": "Do not submit the same request again if outcome remains unknown.",
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-5eb8a5cb-0590-485d-b7b3-c0e8f9ad4b7c.png"
+    },
+    {
+      "call_index": 2,
+      "stage": "sample_correction_round_1",
+      "source_group": "complete_street_bridge",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "source/native/bridge_initial_native.png",
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/bridge_correction_01.txt",
+      "prompt_sha256": "0f4527f7d42486672c9f30606a1f869c30babe0133c4dcbf6e51799612636e00",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_REVISE",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:10:39+08:00",
+      "finished_at": "2026-10-13T22:11:28+08:00 (derived from tool duration 49.1 s)",
+      "output_native_path": "source/native/bridge_correction_01_native.png",
+      "output_sha256": "ae69201fc7cab504ddc0418c3dbfe620265272863d6047f5121530a61faccf51",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "sample_full_work_path": "source/bridge_correction_01_full_work.png",
+      "sample_full_work_sha256": "b491c0bbfd2ddfecbce601820f61b6c1a5f454de8393bc587d792a0c30af4f49",
+      "sample_half_path": "exports/tex_sakura_rr_bridge_correction_01_half.png",
+      "sample_half_sha256": "f150621c94cd1b5057df2a666f797a0e524ccda6a896bd6459d43b3857b2b138",
+      "art_review": "Spiral, lamp height and stone softness improved at 1:1. Straight street still too shallow. Deterministic vertical reflection was visually rejected for repeated bands; second same-issue correction required before Tech sample review.",
+      "known_cost": "未知",
+      "reason": "correct bridge spiral medallion, walking-surface depth, lamp height and soft stone style while preserving the single arch",
+      "repeat_policy": "If unknown, reserve this call and do not blindly resubmit.",
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-e0a8ee6c-327b-4840-a69f-38cd25baf432.png"
+    },
+    {
+      "call_index": 3,
+      "stage": "sample_correction_round_2",
+      "source_group": "complete_street_bridge / local straight-street patch",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "source/native/bridge_correction_01_native.png",
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/street_patch_correction_02.txt",
+      "prompt_sha256": "aefc6e9a0ab6accf2c52a0a69f066b46bac087ea7cbf58d967907209afc03bd2",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_SAMPLE_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:25:01+08:00",
+      "finished_at": "2026-10-13T22:25:30+08:00 (derived from tool duration 29.4 s)",
+      "output_native_path": "source/native/street_patch_correction_02_native.png",
+      "output_sha256": "cb67764abbeb7f042743677476d20bebfb7045b63061e3f9f50a0e13fb5e3594",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "sample_full_work_path": "source/bridge_correction_02_full_work.png",
+      "sample_full_work_sha256": "12005774ff7f16815f7564d831f544587ff27739028527610b383690bbb49404",
+      "sample_half_path": "exports/tex_sakura_rr_bridge_correction_02_half.png",
+      "sample_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+      "art_review": "A new independent straight-street patch supplies irregular paving y690-810 and low wall y810-850; r1 bridge center x1280-1792 bit-exact unchanged; representative sample Art PASS. Symmetric broad warm pools remain a known half-mirror difference for Gate2.",
+      "known_cost": "未知",
+      "reason": "second and final correction of same bridge fidelity issue: newly painted broad irregular straight paving/short wall patch; keep r1 central bridge exact in deterministic compositing",
+      "repeat_policy": "If unknown, reserve this call and do not blindly resubmit; no third bridge correction without renewed decision.",
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-df908ce7-40e3-4fec-8002-91b2e650239f.png"
+    },
+    {
+      "call_index": 4,
+      "stage": "full_batch_initial",
+      "source_group": "sky",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/sky_initial.txt",
+      "prompt_sha256": "3b0e53d271b97e6c37f1079db5e119d141d15f1762503419e8ea0cfe70698046",
+      "transparent_background": false,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_REVISE_MOON_SCALE_POSITION",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:38:50+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:39:54+08:00",
+      "output_native_path": "source/native/sky_initial_native.png",
+      "output_sha256": "8d760b7173099108a012da2e251c29c5f316fd617d8d0a76b0272ad4ee161256",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-8c5ff190-216d-486a-b56f-48949dc9672b.png"
+    },
+    {
+      "call_index": 5,
+      "stage": "full_batch_initial",
+      "source_group": "far_mountains",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/far_initial.txt",
+      "prompt_sha256": "15ec606bf77057052afc2570e7ab5cccdc47b7bb717dc1d914d551e75c2982fd",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:40:17+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:41:24+08:00",
+      "output_native_path": "source/native/far_initial_native.png",
+      "output_sha256": "aa714450a2161188df9c8329661bc85bd3844adbeb2c5f2d214ad3fe3d6e5bf7",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-81f24f83-e702-40c8-b8cc-adfa9ee17854.png"
+    },
+    {
+      "call_index": 6,
+      "stage": "full_batch_initial",
+      "source_group": "water_rail",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/water_rail_initial.txt",
+      "prompt_sha256": "5a1e6e47e6d650e0ff6bd9cc1641e3839c8becfd2c2804ac98649a5f154da685",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:42:48+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:43:42+08:00",
+      "output_native_path": "source/native/water_rail_initial_native.png",
+      "output_sha256": "6f519bd1562ca460599d485306f601e8ce10cdaa02f17eceadb8d69387f4a4c3",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-080fbb49-2845-4531-b9e5-39e68887627a.png"
+    },
+    {
+      "call_index": 7,
+      "stage": "full_batch_initial",
+      "source_group": "foreground_left",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/foreground_left_initial.txt",
+      "prompt_sha256": "3508627572bda71eda4bfaaa1fd74cd820d290e0e52b709daa9db0585ad52dcd",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:44:03+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:45:31+08:00",
+      "output_native_path": "source/native/foreground_left_initial_native.png",
+      "output_sha256": "df60b472b725dea73193003837e062514dbbc833393ec1e3dd5b560212d541e0",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-4632ea4e-ae7e-426e-bab6-9ef1462fcf8f.png"
+    },
+    {
+      "call_index": 8,
+      "stage": "full_batch_initial",
+      "source_group": "foreground_right",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/foreground_right_initial.txt",
+      "prompt_sha256": "7d387669f41d7df510332b160ae11497f88bea3762933fad769dff688323d209",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:45:44+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:46:37+08:00",
+      "output_native_path": "source/native/foreground_right_initial_native.png",
+      "output_sha256": "7c4dc0f53e2359e2370cbf7350d85683e0bc1c4bca1ebbc7f7847e6de9ddaa80",
+      "native_dimensions": [
+        1536,
+        1024
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-9a8e6ddb-bd23-44da-9ef6-08ed4b3d321e.png"
+    },
+    {
+      "call_index": 9,
+      "stage": "full_batch_initial",
+      "source_group": "tree_a",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/tree_a_initial.txt",
+      "prompt_sha256": "56ce70b1ca2a982add1d4a9bf39cad77d539fe99ed32deed934949fa79826b0b",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:47:01+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:48:24+08:00",
+      "output_native_path": "source/native/tree_a_initial_native.png",
+      "output_sha256": "f116b543dd7fe699581d7a7298a957bdc843c7d8939d12439f4c95c34a9248e5",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-e55adfd5-4fc5-45ba-8958-42145f773aa8.png"
+    },
+    {
+      "call_index": 10,
+      "stage": "full_batch_initial",
+      "source_group": "tree_b",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/tree_b_initial.txt",
+      "prompt_sha256": "e3fbf21374701a3a9d083eeb3dcd0b28aab3120fefe77d2e952f6edfeb82ab0e",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:48:34+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:49:51+08:00",
+      "output_native_path": "source/native/tree_b_initial_native.png",
+      "output_sha256": "4a803bf83b99aa3c3e6fae1c2bb9daaf8e6d9843ab49a7944e7dc0f026a1c848",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-d57c06f1-261b-4499-82dc-147a052b162b.png"
+    },
+    {
+      "call_index": 11,
+      "stage": "full_batch_initial",
+      "source_group": "spirit_a",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/spirit_a_initial.txt",
+      "prompt_sha256": "2a30e8c168e9d97226c91549ac9388231a54e68050e6584ec55c3e69034ac80d",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:50:03+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:51:14+08:00",
+      "output_native_path": "source/native/spirit_a_initial_native.png",
+      "output_sha256": "f85a8bbe5be80aff6cd13f456208f201973e8a42764643df1a935ee174520954",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-5ef2587a-afbe-49fa-846d-85aa7dee1525.png"
+    },
+    {
+      "call_index": 12,
+      "stage": "full_batch_initial",
+      "source_group": "spirit_b",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/spirit_b_initial.txt",
+      "prompt_sha256": "9e824494e82c39f6b1103e1974e4ac476e6b6d414191434c37cf5c99bb9b3e8a",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:51:35+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:53:06+08:00",
+      "output_native_path": "source/native/spirit_b_initial_native.png",
+      "output_sha256": "69c3305266f7ad94a43dd17993998d3e1653555b03d339768b1c6b39b7d8f3fe",
+      "native_dimensions": [
+        1254,
+        1254
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-c620881d-4374-4ec1-9a4b-2e50f44d0248.png"
+    },
+    {
+      "call_index": 13,
+      "stage": "full_batch_initial",
+      "source_group": "gate",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/gate_initial.txt",
+      "prompt_sha256": "789b7ce3762e13f047056dd9b463f976f23b20186198ad79af1431063be3e892",
+      "transparent_background": true,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T22:53:29+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T22:54:47+08:00",
+      "output_native_path": "source/native/gate_initial_native.png",
+      "output_sha256": "e4cbbb6aa5a63d348773156c2761e5226fbac2f9467a26035e9e54c53038d4e2",
+      "native_dimensions": [
+        1122,
+        1402
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-0ef86eed-4da1-4040-9251-c0d421f16eda.png"
+    },
+    {
+      "call_index": 14,
+      "stage": "full_batch_correction",
+      "source_group": "sky_moon_correction_01",
+      "issue": "moon_scale_position",
+      "tool": "image_gen.imagegen",
+      "input_reference": [
+        "source/native/sky_initial_native.png",
+        "reference/user_reference_3072x1024.png"
+      ],
+      "prompt_file": "source/prompts/sky_moon_correction_01.txt",
+      "prompt_sha256": "bac64658e5f6e7f90d62a29b7a210a1de802c64d1832d261d2b1a6718b17f706",
+      "transparent_background": false,
+      "request_id": null,
+      "idempotency_key": null,
+      "status": "SUCCESS_ART_REVIEW_PASS",
+      "candidates": 1,
+      "started_at": "2026-10-13T23:05:46+08:00",
+      "known_cost": "unknown",
+      "repeat_policy": "Reserve an unknown result; inspect tool outcome before considering another call.",
+      "finished_at": "2026-10-13T23:07:00+08:00",
+      "output_native_path": "source/native/sky_moon_correction_01_native.png",
+      "output_sha256": "ed41d1e1b5f026d4f412454c7aa5e7e1caa22bf639b12d1fac1a7a683c356330",
+      "native_dimensions": [
+        2172,
+        724
+      ],
+      "tool_original_output_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-b2255003-5c83-411f-9e43-b397ad78cc73.png"
+    }
+  ],
+  "deterministic_operations": [
+    {
+      "operation": "sample_bridge.py initial placement and mirrored half",
+      "input_sha256": "ee35f57fcf98ab77768467815bad26a6ce9259e8e4aac1ae23c9d7589a94dd60",
+      "settings": "uniform scale 0.5, core x=993 y=535; alternate mirrored strips of newly drawn street only; left half source rect [0,512,1536,1024]; x=1536 right mirror; Pillow sRGB RGBA8 alpha over",
+      "output_manifest": "SAMPLE_SOURCE_MANIFEST.json",
+      "output_half_sha256": "970452aaa5f6ec25c3b51ff606d6bf3431f6bfd4f831272f882e79a5d075999d",
+      "status": "SUCCESS"
+    },
+    {
+      "operation": "sample_bridge_correction_01.py placement and mirrored half",
+      "input_sha256": "ae69201fc7cab504ddc0418c3dbfe620265272863d6047f5121530a61faccf51",
+      "settings": "uniform scale 0.45, core x=1047 y=535; alternate mirrored strips of newly drawn street only; left half source rect [0,512,1536,1024]; x=1536 right mirror; Pillow sRGB RGBA8 alpha over",
+      "output_manifest": "SAMPLE_CORRECTION_01_SOURCE_MANIFEST.json",
+      "output_half_sha256": "f150621c94cd1b5057df2a666f797a0e524ccda6a896bd6459d43b3857b2b138",
+      "status": "SUCCESS"
+    },
+    {
+      "operation": "stretch_street.py projected trial",
+      "input_sha256": "b491c0bbfd2ddfecbce601820f61b6c1a5f454de8393bc587d792a0c30af4f49",
+      "settings": "outer street x mask; y690-755 stretched to y690-810; wall compressed to y810-850; central x1300-1772 unchanged",
+      "output_manifest": "SAMPLE_STREET_PROJECTION_MANIFEST.json",
+      "status": "REJECTED_ART: paving stones elongated and blurred"
+    },
+    {
+      "operation": "reflect_street.py selected candidate",
+      "input_sha256": "b491c0bbfd2ddfecbce601820f61b6c1a5f454de8393bc587d792a0c30af4f49",
+      "settings": "outer street new paving rows y715-755 vertically reflected into y755-795 and y715-730 repeated at y795-810; new wall top y755-795 moved to y810-850; central bridge x1300-1772 bit-exact unchanged; x mask fades to center; left half mirrored",
+      "output_manifest": "SAMPLE_STREET_REFLECTION_MANIFEST.json",
+      "output_half_sha256": "02fd840a4e9dfcbfe57783c39093bed6232938ca12f451226b375b8bd7d110b4",
+      "status": "REJECTED_ART_AND_MASTER: visible vertical reflection and repeated gold diamond patterns"
+    },
+    {
+      "operation": "combine_street_patch.py final representative sample",
+      "input_sha256": [
+        "ae69201fc7cab504ddc0418c3dbfe620265272863d6047f5121530a61faccf51",
+        "cb67764abbeb7f042743677476d20bebfb7045b63061e3f9f50a0e13fb5e3594"
+      ],
+      "settings": "new paving native crop [0,245,2172,430] to full source [0,690,3072,810]; new wall native crop [0,430,2172,510] to [0,810,3072,850]; x mask keeps r1 bridge full weight x1280-1792, fades x1050-1280/1792-2022; left half [0,512,1536,1024] mirrored at x1536",
+      "output_manifest": "SAMPLE_CORRECTION_02_SOURCE_MANIFEST.json",
+      "output_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+      "status": "SUCCESS_ART_SAMPLE_AND_TECH_PASS"
+    }
+  ],
+  "issue_rounds": {
+    "bridge_fidelity_to_reference": 2,
+    "moon_scale_position": 1
+  },
+  "runtime_observation": "Environment active 17 PNG theoretical RGBA8 expansion 30.79 MiB; Cocos target not tested. Six existing 1024x1024 shops, if later used by client, are separately ~48 MiB theoretical and make 40 MiB total target unproven/at risk. No shops exported in this Art package. Browser micro-motion uses five canvas drawImage calls per frame, not Cocos batch draw measurement.",
+  "final_selected": {
+    "sky_native": "source/native/sky_moon_correction_01_native.png",
+    "bridge_native_chain": [
+      "source/native/bridge_correction_01_native.png",
+      "source/native/street_patch_correction_02_native.png"
+    ],
+    "bridge_combined": "source/bridge_correction_02_full_work.png",
+    "bridge_half_canonical": "exports/tex_sakura_rr_bridge_half.png",
+    "psd": "source/scene_sakura_reuse_master.psd",
+    "scene": "review/scene_environment.png",
+    "verification": "FILE_VERIFICATION.json"
+  }
+}

@@ -1015,3 +1015,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Product新规格PRD首产，执行证据明确；具体工作时长仍未知。
 - 本轮结果：B单图获准、三方案各经Master同版Review并到 `USER_REVIEW`；FLOW两件已提交Review，父试玩目标仍 `SPEC`。可核 Producer 起点约2026-10-13 22:28:01 +08:00，收尾 2026-10-13T22:42:10+08:00；用户消息精确时刻、各角色净工时与等待拆分未知。主要耗时环节为Art/Tech/Product方案实际产出与同版核阅，暂无可靠工具故障净耗证据。建议Master并列呈三项准确v0.1方案给用户审批，复核点为用户对每个具体包的决定；随后Art按获批Gate1制作，Tech/Product处理配置迁移，Client在获批资源后验新版U05。Continuity：三专业线均在真实USER_REVIEW，FLOW已交Review，未出现空转READY/IN_PROGRESS。
 <!-- U05-B-PLAYABLE-20261013 END -->
+
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 START -->
+## WR-20261013-SCENE-SAKURA-REDRAW-FLOW-001｜樱夜环境重绘至 Gate2 送审
+
+- 结果与证据：Master 建 Art、Tech、Producer 三线；Gate1 准确方案获本轮既有用户指令授权，Art/Tech 同版首图预签、街桥样张与余十组续签齐。Art v0.1 的14/14 Required、13/13交付索引、六验收原文同序PASS；无店环境41层PSD、17正式PNG、实际切片重组和ZIP经静态核验后，Art Task与Gate2准确版本进入 `USER_REVIEW`，用户尚未批准成品，Client接入锁定。Tech内部支持经Master接受 `DONE`。证据为 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/DELIVERABLE.json`、`USER_REVIEW_PACKET.md`、`FILE_VERIFICATION.json`、`MASTER_DELIVERY_FILE_CHECK.json`、`tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL.json` 与 `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/CONTINUITY_CHECK.md`。Cocos/目标机、总纹理40MiB和12绘制批次均 `NOT_TESTED`。
+- 时间与耗时（Asia/Shanghai）：可核本轮Master首次工具读取 2026-10-13 21:45:56 +08:00；Producer记录具体资源送审 23:46:38 +08:00，跨节点墙钟2小时00分42秒。用户“好的开始吧”消息精确时刻未知，不用该墙钟冒充Art净制作时间。Art账本记首次生成22:03:12、末次工具候选14/15，制作核验保守经过84.54分钟，包含无法可靠剔除的短沟通/核阅等待；专业Review、用户等待、各调用净时长、工具故障净时长均不能可靠拆分。用户Gate2等待从送审后开始，本条不计时。
+- 影响与原因：尚无同类目标/基线，不认定角色“慢”。可证实的返工为街桥初稿及反射试片视觉偏差（单桥问题两轮修正已用尽）、月亮位置/尺度一次修正；旧反射试片的几何PASS曾被误判成视觉PASS，Master实尺目视后撤回，未扩批。最终ZIP因耗时说明补入而重包，旧Master核对hash与新ZIP不符，Producer发现后停送审，Master按最终版本重核；这是一轮可证实的版本同步返工，净额外耗时未知。未见可证实的生成工具故障。
+- 建议与复核：Art下次样张同时附完整画幅和局部实尺对照，先查重复纹样再签视觉PASS；代价为一次目视，复核点为下一批街景样张。Master与Art在用户包所有说明定稿后再冻结ZIP并执行一次最终hash核对，减少重包后错版本风险；代价为一次末次完整性检查，复核点为下一次Gate2准确包。Producer继续以预算账本的调用状态和同问题轮数核余量，复核点为下一批生成任务第一次修正。三项均为现有职责内检查，不新增审批门禁。
+- Continuity check：Art已到真实 `USER_REVIEW`；Tech内部支持已 `DONE`；Producer本轮状态、审批、看板、资源登记和核对产物实存。无本批仅以 `READY/IN_PROGRESS` 占位且可无阻塞继续的任务。当前下一步是用户对具体v0.1资源作Gate2决定，未批前不解锁Client。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 END -->

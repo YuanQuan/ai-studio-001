@@ -1,0 +1,62 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "owner": "art",
+  "summary": "按获批方案完成无店樱夜环境分层重绘：真实41层PSD、17张环境PNG、同尺度零差重组、视觉对照与CPU微动预览，提交Gate2具体资源审阅。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/exports/",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/scene_environment.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/reference_vs_environment_1to1.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/micro_motion_preview.html",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_VISUAL_SELF_REVIEW.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/MASTER_DELIVERY_FILE_CHECK.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "环境为新绘而非原图裁片；六店不重绘、不输出，正式PSD及环境预览无六店。",
+      "result": "PASS",
+      "evidence": "11个新绘源组及3次修正记录见EXECUTION_LEDGER；PSD实际41层、活动切片17张均无店铺，Art实图自审见ART_VISUAL_SELF_REVIEW。"
+    },
+    {
+      "criterion": "单圆拱镜像连续，街宽/栏水与六店关系正确。",
+      "result": "PASS",
+      "evidence": "bridge r2样张Art/Tech续签后作为canonical切片；完整scene_environment及CUT_MANIFEST中桥/水岸左右镜像，桥洞以新绘河水补足。"
+    },
+    {
+      "criterion": "两树两精灵独立复用，天空远山非对称。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST记录树A/B四实例、精灵A/B七水上实例及五静态火焰；天空远山左右为不同切片。"
+    },
+    {
+      "criterion": "PSD与实际切片重组一致，有同尺度参照与编辑范围。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION：PSD 41层、PSD平铺/预览/切片重组与正式环境图的RGB最大通道差全为0；参考并排图及EDITABILITY_NOTES已存。"
+    },
+    {
+      "criterion": "预算、路径/hash可追溯，运行未测明确。",
+      "result": "PASS",
+      "evidence": "EXECUTION_LEDGER 14/15调用且无未知结果；FILE_VERIFICATION记录源/切片/PSD hash；Cocos运行显存、draw batch和帧率未测并明确标注。"
+    },
+    {
+      "criterion": "成品送Gate2，未接入客户端。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET列具体资源与已知差异；环境专用包 package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip，SHA256 8cc5dfe2f30a9a62cafa92784287124c556128ca897d2f797997769a8271c031，49,368,186字节，ZIP CRC PASS且不含店铺/参考/历史退稿；本Art版本目录无客户端修改，等待用户具体版本审批。"
+    }
+  ],
+  "assumptions": [
+    "按用户最新范围，六店仅用历史内部样张检查，不列入环境正式交付。",
+    "参考图为用户本轮提供，生产图层均重绘；源图像素不作切片。"
+  ],
+  "risks": [
+    "月亮较参考仍偏左约43px、偏下约28px且可见粉色范围略小；山形/树花/砖石/水纹存在新绘差异，由用户Gate2判断。",
+    "17张活动PNG理论RGBA8展开30.79MiB仅为未压缩像素估算，Cocos运行资源与12 draw batch未测；未来如使用现有六店，其理论RGBA8合计约48MiB。",
+    "浏览器CPU预览不等于目标设备或Cocos运行验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

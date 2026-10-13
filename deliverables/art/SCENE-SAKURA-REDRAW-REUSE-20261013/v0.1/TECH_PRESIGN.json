@@ -1,0 +1,36 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "batch": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1",
+  "signed_at": "2026-10-13T22:01:13+08:00",
+  "decision": "APPROVED_FOR_BRIDGE_SAMPLE_ONLY",
+  "production_plan": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/PRODUCTION_PLAN.md",
+  "production_plan_sha256": "4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562",
+  "frozen_inputs": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/GATE1_FROZEN_INPUTS.json",
+  "frozen_inputs_sha256": "b725026b73802ddfeae088e3c3f42df7206ad14a997d0fc53a1bb483f940aebb",
+  "reference": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/reference/user_reference_3072x1024.png",
+  "reference_sha256": "6f79a1e5b14c0b73e0952ad0810456ac94cd3bb8192db0f91d1ee73830fcfcbf",
+  "gate1_record": "tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1.json",
+  "gate1_record_sha256": "b586a5c69a954ef8734dc86d583d72bb63af9343ce4725606aa25d0358de73fb",
+  "gate1_status": "USER_APPROVED",
+  "scope_amendment": {
+    "file": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_SCOPE_NO_SHOP_OUTPUT.md",
+    "sha256": "954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b",
+    "decision": "用户最新确认最终只交环境：正式PSD无六店层，exports无新增六店PNG，最终环境预览/切片重组无店；现行六店仅只读内部脚点和街宽校准，带店首样保留为历史技术证据。五份Gate1冻结hash保持不变。"
+  },
+  "conditions": [
+    "仅放行初始11次中的首次完整街桥代表样张：先新绘完整单圆拱、宽街和连续桥面，无六店、水栏；不得以半拱生成后复制冒充完整单拱。",
+    "统一3072×1024源坐标、x=1536中心轴；完整源按实际原生尺寸留档，街桥目标投影/切片不超过1536×512左半，右半确定性水平镜像。若原生分辨率较小，记录插值比例，不宣称原生细节增加。",
+    "代表样张在同画幅、同显示尺度与六店现行body/sign覆盖层核单孔、桥冠及街宽/脚点；复核实际alpha包围盒、透明边、中心两列与左右镜像像素、输出尺寸和源/样张hash。不得以hash或静态算术代替实图目视。",
+    "天空及远景保持非对称；后续运行切片均可分左右宽1536的非镜像片，月亮、骷髅山和右牌楼不得镜像。街桥和水栏半幅复用，树A/B与水灵A/B分别作不规则实例；这十组须样张通过后再同批续签。",
+    "制作预算11次初始（含首样）+4次修正，总15次；同问题最多两轮，制作与核验4小时。未知结果调用先占潜在预算。达到任一上限停止相关支线并记录诊断。",
+    "首样街桥单份1536×512 RGBA8理论展开3 MiB；全环境尺寸表上限单份合计约34.40 MiB，六店现行12张1024²理论48 MiB另列。40 MiB总场景纹理和12绘制批次仅待实测目标，不改变六店。",
+    "本批仅静态资源与CPU微动预览，无序列帧、骨骼或客户端接入。具体PSD/切片须保留实际图层、映射和重组证据，自产切片直接提交用户Gate2；Gate2前不得正式接入。"
+  ],
+  "not_tested": [
+    "街桥样张像素、视觉、alpha和同尺度六店关系",
+    "其余十组实图与全批续签",
+    "PSD与实际切片重组像素一致性",
+    "Creator导入、总纹理驻留、绘制批次及目标机运行"
+  ],
+  "next_action": "Art独立同批预签后制作首张完整街桥样张；Art先自审，Tech按真实样张独立检查并决定是否续签剩余十组。"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "title": "樱花重绘批次技术预签与样张复核",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "核对尺寸、切半、复用、工具、预算；首图前同批预签，样张实际检查后续签全批，不新增成品效果复审。",
+  "inputs": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/REVIEW.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "首图前技术预签锁同方案与来源hash。",
+    "样张核单拱、中线、alpha、尺寸与六店关系，续签可追溯。",
+    "制作与运行预算区分，真实运行NOT_TESTED。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户明确授权按讨论范围制作至下一USER_REVIEW，不是成品批准。",
+    "只Game Project Layer，不改Studio或apps/client。",
+    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。"
+  ]
+}

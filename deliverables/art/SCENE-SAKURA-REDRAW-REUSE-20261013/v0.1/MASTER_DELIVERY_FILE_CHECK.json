@@ -1,0 +1,93 @@
+{
+  "summary": "独立解析实际PSD图层及核对正式环境ZIP；本核对不是成品视觉批准或Cocos运行验收。",
+  "psd": {
+    "psd": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd",
+    "bytes": 42450562,
+    "dimensions": [
+      3072,
+      1024
+    ],
+    "actual_layers": 41,
+    "layer_names": [
+      "spirit_a_flame_instance_7",
+      "spirit_a_lotus_instance_7",
+      "spirit_a_reflection_instance_7",
+      "spirit_b_flame_instance_6",
+      "spirit_b_lotus_instance_6",
+      "spirit_b_reflection_instance_6",
+      "spirit_a_flame_instance_5",
+      "spirit_a_lotus_instance_5",
+      "spirit_a_reflection_instance_5",
+      "spirit_b_flame_instance_4",
+      "spirit_b_lotus_instance_4",
+      "spirit_b_reflection_instance_4",
+      "spirit_a_flame_instance_3",
+      "spirit_a_lotus_instance_3",
+      "spirit_a_reflection_instance_3",
+      "spirit_b_flame_instance_2",
+      "spirit_b_lotus_instance_2",
+      "spirit_b_reflection_instance_2",
+      "spirit_a_flame_instance_1",
+      "spirit_a_lotus_instance_1",
+      "spirit_a_reflection_instance_1",
+      "foreground_right",
+      "foreground_left",
+      "gate_right",
+      "bridge_r",
+      "bridge_l",
+      "water_rail_r",
+      "water_rail_l",
+      "airborne_spirit_a_static_5",
+      "airborne_spirit_b_static_4",
+      "airborne_spirit_a_static_3",
+      "airborne_spirit_b_static_2",
+      "airborne_spirit_a_static_1",
+      "tree_a_instance_4",
+      "tree_b_instance_3",
+      "tree_b_instance_2",
+      "tree_a_instance_1",
+      "far_r",
+      "far_l",
+      "sky_r",
+      "sky_l"
+    ],
+    "hidden_layers": 0,
+    "shop_named_layers": [],
+    "comparison": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/reassembled_from_exports.png",
+    "changed_pixels": 0,
+    "max_channel_difference": 0,
+    "difference_bbox": null,
+    "method": "independent PSD raw-channel parsing and alpha-over of actual stored layers; reference overlay absent",
+    "sha256": "2aaf8f4b9fe0820dded68cec2ee163ebab3d377c036ce6b6083dcf39e858263d"
+  },
+  "frozen_gate1_inputs_unchanged": true,
+  "active_png_hashes_match": true,
+  "active_png_count": 17,
+  "zip": {
+    "path": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip",
+    "bytes": 49368186,
+    "sha256": "8cc5dfe2f30a9a62cafa92784287124c556128ca897d2f797997769a8271c031",
+    "members": 32,
+    "active_png_count": 17,
+    "crc_error": null,
+    "shop_reference_or_history_members": []
+  },
+  "browser_cpu_check": {
+    "url": "http://127.0.0.1:8769/review/micro_motion_preview.html",
+    "loaded": true,
+    "play_frame_png_fnv32": [
+      2642032240,
+      600854336
+    ],
+    "play_frames_differ": true,
+    "paused_frame_png_fnv32": [
+      2278959544,
+      2278959544
+    ],
+    "paused_frames_stable": true,
+    "console_warn_errors": [],
+    "direct_canvas_pixel_read": "NOT_TESTED: 浏览器只读API不支持getContext，不绕过；不声称动态像素零差。",
+    "not_cocos_runtime": true
+  },
+  "game_runtime": "NOT_TESTED"
+}

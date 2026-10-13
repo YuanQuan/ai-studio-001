@@ -1,3 +1,85 @@
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE START -->
+2026-10-13 23:52:20 +08:00（Producer内部流程完成）：Master `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/MASTER_ACCEPTANCE.json` APPROVED，SHA-256 `2ca9a9d14d02e929308356fb61fa920ff8f3d03d99946d71961cb4e1feac2106`；三项验收与Required已核，`SCENE-SAKURA-REDRAW-FLOW-20261013` REVIEW→DONE，审批`PROFESSIONAL_REVIEW`，只完成本轮流程监督。Art具体资源继续`USER_REVIEW`且用户决定待，Client锁，Cocos/目标机运行`NOT_TESTED`。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE END -->
+
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_REVIEW START -->
+2026-10-13 23:50:23 +08:00（Producer本轮内部Review）：`SCENE-SAKURA-REDRAW-FLOW-20261013` 的 `CONTINUITY_CHECK.md` 与 `DELIVERABLE.json` 实存，三条Task验收原文逐项PASS；状态 `IN_PROGRESS→REVIEW`，待Master正式接受，不提前DONE。Art准确v0.1具体资源仍`USER_REVIEW`/用户决定待，Tech内部支持`DONE`，Client接入锁定，Cocos运行`NOT_TESTED`。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_REVIEW END -->
+
+2026-10-13 23:46:38 +08:00（樱花无店环境Gate2准确成品送用户审核）：Master `MASTER_DELIVERY_FILE_CHECK.json` SHA 44b9da60…a832e 核实际PSD独立raw通道41层/0店/重组差异0、17PNG SHA齐、ZIP `package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip` SHA 8cc5dfe2…1c031/49,368,186字节/32成员/17切片/CRC无错且无shop/reference/history；Producer复核当前ZIP与该记录hash/字节吻合、Art DELIVERABLE索引13/13实存。Master仅接受准确文件包交用户，无新增自产切图成品专业效果复审。Art Task REVIEW→USER_REVIEW，`ARTIFACT_APPROVAL.json` v0.1准确对象为`USER_REVIEW_PACKET.md`、status USER_REVIEW/decided_at null；Gate1 USER_APPROVED独立保留，不代替本次具体PSD/PNG用户决定。IAB CPU微动有播放帧变化、暂停帧稳定且console无warn/error；动态图像素直读NOT_TESTED，Creator/目标机/40MiB总/12批次NOT_TESTED。Client正式接入仍锁，Art不DONE。资源登记17项均标计划/未导入/无UUID。
+
+2026-10-13 23:34:00 +08:00（Art全量交付进入Master复核）：`SCENE-SAKURA-REDRAW-REUSE-20261013` 14/14 Required文件实存，`DELIVERABLE.json` 11/11索引路径实存、六项Task验收criterion现逐字同序且result均PASS，状态`READY_FOR_REVIEW`；账本14/15调用（11初始+3修正）、14候选、未知占额0、保守墙钟84.54分钟含不能准确剔除的短沟通等待、余1次其它修正。Art全景自审与USER_REVIEW_PACKET实存，FILE_VERIFICATION 30/30哈希及PSD41层/17 PNG/静态零差已核。Task IN_PROGRESS→REVIEW，仍待Master对准确版本正式接受，Gate2 Approval DRAFT，不能提前USER_REVIEW或DONE；Cocos运行NOT_TESTED。
+
+2026-10-13 23:29:06 +08:00（Art全景自审及Gate2用户包实存，待正式交付索引与Master接受）：`ART_VISUAL_SELF_REVIEW.md`按夜空月亮、远山骷髅山、街桥水岸、樱树牌楼、精灵、无店范围与实尺复现逐锚点自审通过并列保留差异；月亮粉色区域中心较参考约左43px/下28px、略小，山纹/石纹/水纹更规整，用户须看具体效果。`USER_REVIEW_PACKET.md`列1:1并排、无店全景、17切片重组、41层PSD、CPU微动与预算14/15、运行NOT_TESTED。两文档存在不等于Gate2已送审或用户批准；Art `DELIVERABLE.json` 与Master准确版本接受仍待，Task保持IN_PROGRESS、Gate2 DRAFT。
+
+2026-10-13 23:21:15 +08:00（Art正式资源文件完整性验证实存）：`FILE_VERIFICATION.json` checked_at=23:20:20、result=`PASS_ARTIFACT_INTEGRITY_NOT_GAME_RUNTIME`；PSD实际41层、42,450,562字节，17正式PNG理论RGBA8合计30.79MiB/磁盘8,405,917字节，17切片与13关键文件路径/SHA经Producer逐项复算30/30一致。Art记录PSD无shop命名层/无参考覆盖层，实际切片重组、PSD预览与PSD flatten对当前环境图像最大通道差0；Producer前述同RGBA复核亦差异空。源图有插值、不可宣称3072原生细节。此是静态完整性，不等于全景视觉最终通过、40MiB总场景/12批次或Creator运行；Art用户包/交付索引仍待，Gate2 DRAFT。
+
+2026-10-13 23:18:19 +08:00（月亮修正后无店全景/PSD/切片重组已重导，静态零差复核）：当前 `review/scene_environment.png` SHA ce0c96dc…9c50c5、`source/scene_sakura_reuse_master.psd` SHA 2aaf8f4b…8263d、`review/scene_psd_preview.png` 与环境图同SHA；旧PSD与旧预览已保存在`history/candidates/`。Producer重新以同一Pillow RGBA读取当前`scene_environment.png`、`reassembled_from_exports.png`、`scene_psd_preview.png`，三者均3072×1024，环境对重组及对PSD预览全画布ImageChops差异为空。重组文件字节SHA与环境不同，但解码RGBA像素相同；静态零差仅限当前管线。Art最终视觉、PSD真实层/无店排除、文件清单与Gate2包尚待，账本仍FULL_BATCH_GENERATING，不提前送审。
+
+2026-10-13 23:08:45 +08:00（月亮修正候选返回、Art审待）：第14调用 `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，原生 `source/native/sky_moon_correction_01_native.png` 实存；账本累计初始11+修正3、候选14、未知占额0、潜在余1/15。尚无Art同尺度月亮锚点通过结论，也未核新版天空左右切片/全景/PSD/重组更新；修正前静态一致结论不得自动转移至此候选。Gate2 DRAFT。
+
+2026-10-13 23:05:46 +08:00（全景天空月亮尺度/位置修正第1轮提交）：Art账本第14调用 `sky_moon_correction_01`，输入现有新绘天空与冻结参考，问题ID `moon_scale_position`、提示SHA bac64658…7f706，当前 `SUBMITTED_OUTCOME_UNKNOWN`。累计初始11/11、修正3/4（桥同问题2轮已尽，天空月亮本问题1轮）、已收候选13、未知占额1、潜在剩余1/15；未知结果不重复发起。先前全景/切片/PSD为修正前版本，相关依赖需按新图重新导出并验证hash/重组，旧静态零差结论仅限旧版，不可直接沿用到最终Gate2。
+
+2026-10-13 23:03:33 +08:00（无店PSD母版与预览初落）：`source/scene_sakura_reuse_master.psd` 实存约40MB，文件头识别Adobe Photoshop 3072×1024 RGB/8bit，SHA 0414fbe2…89fa71d；`review/scene_psd_preview.png` SHA 57fbd8ae…fe4ca。Producer用同一Pillow RGBA解码核PSD预览与`scene_environment.png`全画布逐像素一致。当前仅核文件/预览，PSD真实图层数、隐藏参考/店层排除、原始像素独立编辑能力仍待Art文件验证；不能以预览一致冒充语义分层已通过。Gate2 DRAFT。
+
+2026-10-13 23:01:24 +08:00（无店切片重组初核像素一致）：`review/reassembled_from_exports.png` 与 `review/scene_environment.png` 均实存3072×1024，Producer以同一Pillow RGBA解码做ImageChops全画布差异，getbbox=None（可见画布逐像素相同）；`CUT_MANIFEST.json` 已列17正式切片和36全画布语义层文件，`source/psd_full_canvas_layers/`当前36 PNG实存。此仅对当前文件/管线静态重组成立，不替代Art全景视觉与PSD实际层核；目前未核到PSD母版、文件验证包或Gate2用户包，不送审。六店不在正式17切片。
+
+2026-10-13 22:58:50 +08:00（无店全景初稿及17正式切片出现）：`review/scene_environment.png` 实存3072×1024 RGB，SHA ccc02b83…b71df2；`CUT_MANIFEST.json` 列17 active_exports、11源组、36计划PSD层、17切片路径均未含shop，天空/远景左右非镜像片、街桥/水栏半幅、树A/B、精灵A/B火焰/莲/倒影及右牌楼均有正式命名PNG。此为首次组装/清单实产，PSD母版、实际切片重组差异核、视觉锚点审与文件全量验证尚待；manifest字段为计划不等于PSD真实层。Gate2 DRAFT，正式客户端未接入。
+
+2026-10-13 22:55:42 +08:00（11源组初始生成全部返回）：右牌楼第13调用已 `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，原生 `source/native/gate_initial_native.png` 实存。账本累计初始11/11、修正2/4、候选13、未知占额0、潜在余2/15；本批全部计划原生候选已收，但Art仍须逐源视觉/透明边检查、确定性切半与左右非镜像、PSD真实层、无店全景及切片重组零差验证。当前无 `review/scene_environment.png`/PSD/CUT正式交付证据，不把生成齐套当Gate2可送审。
+
+2026-10-13 22:53:29 +08:00（双精灵原生返回、右牌楼最后初始调用提交）：第12 spirit_b `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，原生 `source/native/spirit_b_initial_native.png` 实存；两精灵原生均收，分层/动画仍待。第13 gate 作为第11/11个计划初始源组调用，现 `SUBMITTED_OUTCOME_UNKNOWN`，未知占额1，不重复提交。累计初始11/11、修正2/4、候选12、潜在余2/15；若后续任何源组要改需在剩余2修正与对应同问题轮次内处理，不能再增加新初始调用。正式无店全景/PSD/Gate2仍待。
+
+2026-10-13 22:51:35 +08:00（精灵A原生返回、精灵B提交待回）：第11 spirit_a `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，原生 `source/native/spirit_a_initial_native.png` 实存；第12 spirit_b 初始调用 `SUBMITTED_OUTCOME_UNKNOWN`，不可重复发起未知请求。累计初始10/11、修正2/4、候选11、未知占额1、潜在余3/15。两精灵独立原型、静态莲座/倒影与火焰分层、缩放错位实例均待Art实核；不能仅凭原生候选认微动或正式切片通过。
+
+2026-10-13 22:50:03 +08:00（双树原生返回、精灵A提交待回）：第10 tree_b 已 `SUCCESS_RECEIVED_ART_REVIEW_PENDING`、原生 `source/native/tree_b_initial_native.png` 实存；树A/B均已收到但透明边、实例缩放错位与风格未实核。第11 spirit_a 初始调用 `SUBMITTED_OUTCOME_UNKNOWN`。累计初始9/11、修正2/4、候选10、未知占额1、潜在余4/15；结果未知不重发。精灵A/B尚未完成，Gate2 DRAFT。
+
+2026-10-13 22:48:34 +08:00（树A原生返回、树B生成待回）：账本第9 tree_a `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，原生 `source/native/tree_a_initial_native.png` 实存；第10 tree_b 当前 `SUBMITTED_OUTCOME_UNKNOWN`，不可盲目重发。累计初始8/11、修正2/4、候选9、未知占额1、潜在余5/15。两树独立原型的透明边、缩放错位实例及全景视觉尚待，未因A返回而认双树通过。
+
+2026-10-13 22:46:49 +08:00（全批水栏与前景左右原生候选返回）：`EXECUTION_LEDGER.json` 第6 water_rail、第7 foreground_left、第8 foreground_right均 `SUCCESS_RECEIVED_ART_REVIEW_PENDING`，对应原生 `source/native/water_rail_initial_native.png`、`foreground_left_initial_native.png`、`foreground_right_initial_native.png` 实存。累计初始6/11、修正2/4、候选8、未知占额0、潜在余7/15；这些仅为原生候选，水栏1536半幅镜像、前景层与全景视觉/PSD尚待Art实核，不把返回等同正式资源通过。天空远山亦仍待非镜像左右切片核。
+
+2026-10-13 22:42:48 +08:00（全批水栏源组生成提交）：第6调用water_rail初始、transparent_background=true、提示SHA 5a1e6e47…da685，当前 `SUBMITTED_OUTCOME_UNKNOWN`；账本顶部已回填天空/远山两成功候选，累计初始4/11、修正2/4、候选5、未知占额1、潜在余9/15。尚无水栏原生图、1536半幅与实尺镜像结论，不重复提交未知结果。Gate2 DRAFT、Creator NOT_TESTED。
+
+2026-10-13 22:41:41 +08:00（全批天空与远山原生候选已返回，待Art审）：账本第4 sky 原生 `source/native/sky_initial_native.png` SHA 8d760b71…161256、第5 far_mountains 原生 `source/native/far_initial_native.png` SHA aa714450…e5bf7，两个调用均 `SUCCESS_RECEIVED_ART_REVIEW_PENDING`。累计初始3/11、修正2/4、候选5应按逐调用结果核；账本顶部usage此刻仍记候选4/未知占额1，为并行回填滞后，待Art统一校正后登记正式预算数，不把原生返回等同非镜像左右切片或视觉PASS。余源组继续制作，Gate2 DRAFT。
+
+2026-10-13 22:40:53 +08:00（Tech内部支持Task完成）：`SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` 五项Required实存，`DELIVERABLE.json`三项原文验收逐项PASS，Tech `REVIEW.json`与Master `MASTER_ACCEPTANCE.json`均APPROVED；依据Master正式接受，Task IN_PROGRESS→DONE，审批 `PROFESSIONAL_REVIEW`，作为本批内部预签支持完成，不新增独立用户Gate。r2实际半幅1536×512、镜像/中线与alpha已核，973个完全透明像素非零RGB列后续采样风险；40MiB/12批次、Creator运行NOT_TESTED。Art全批仍在制作，Gate2 DRAFT，Client接入不解锁。
+
+2026-10-13 22:38:50 +08:00（全批首个天空源组生成提交）：`EXECUTION_LEDGER.json` 第4调用为sky初始，参考冻结图、提示SHA 3b0e53d2…698046、transparent_background=false，当前 `SUBMITTED_OUTCOME_UNKNOWN`，未知占额1。累计初始2/11（桥1+天空1）、修正2/4、已收候选3，总潜在剩余11/15；无请求ID/幂等键，结果未知不重复发起。天空实图、非镜像左右输出及全景仍未核完成，余源组继续按同批放行范围制作，Gate2 DRAFT。
+
+2026-10-13 22:34:10 +08:00（r2样桥Art/Tech同版续签齐、Master放行余十组）：Tech `SAMPLE_TECH_CHECK.json` checked_at=22:33:38、decision=`PASS_FOR_FULL_BATCH_TECH_CONTINUATION`；`TECH_FULL_BATCH_CONTINUATION.json` signed_at=22:33:38、SHA 1792445d…200a0，锁Art续签SHA a72246a4…874a、r2半幅SHA 4168180e…2c66f0a、原Gate1及无店补充。Master明确放行冻结方案剩余十环境源组制作；不是全景或具体PSD/PNG Gate2批准。预算余10次初始+最多2次其它问题修正；桥同问题2/2轮已满。Art Task现正式全景Required为 `review/scene_environment.png`、最终无六店；现该实图及其余十源组尚待，不提前记完成。技术纹理算术34.40MiB非运行实测，40MiB/12批次及Creator均NOT_TESTED。
+
+2026-10-13 22:33:23 +08:00（Art同批余十组续签已实存、Tech待）：`ART_FULL_BATCH_CONTINUATION.json` signed_at=22:32:41 +08:00，SHA a72246a4…874a，锁Gate1方案/用户无店范围/r2实样Art Review与选定半幅SHA，签认仅已获准11组中的余十环境原型；天空远景非镜像，街桥水栏半幅，两树两精灵复用，火焰与静态莲/倒影分开。剩余预算10次初始+最多2次其它问题修正，桥同问题2/2轮已用尽；实际全批制作仍待Tech对r2实图Review、同版续签与Master放行，不以Art单签扩批。
+
+2026-10-13 22:33:04 +08:00（街桥r2终样Art PASS、Master样张观察APPROVED）：第3生成调用已回SUCCESS，候选3，账本累计初始1+修正2（同问题2/2轮）、制作核验27.88分、潜在余12/15；新绘独立直街源 `source/native/street_patch_correction_02_native.png`，经确定性合成保留r1中央桥像素，选定半幅`exports/tex_sakura_rr_bridge_correction_02_half.png` SHA 4168180e…2c66f0a，实尺无店透明镜像图SHA 68b8a1a2…d9777bc；源链见`SAMPLE_CORRECTION_02_SOURCE_MANIFEST.json`。Art `SAMPLE_REVIEW.md` SHA 60ee9b01…963a16判仅代表样张PASS；Master `MASTER_SAMPLE_OBSERVATION.json`独立目视APPROVED：纵向镜面条带消除，街深、矮墙、单拱改善；左右暖斑系已授权水平半幅镜像的取舍，石纹差异留作全景/Gate2实图判断。该结论仅支持进入Tech r2实际核验与Art/Tech余十组续签，不是全景/成品通过。余十组仍锁、Gate2 DRAFT、Creator NOT_TESTED。
+
+2026-10-13 22:32:00 +08:00（Tech记录退回候选静态核验与全批HOLD）：`deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json` 决定 `HOLD_PENDING_R2; NO_FULL_BATCH_CONTINUATION`，仅对旧反射试片测得1536×512、透明边RGB污染0、左右镜像/中线逐像素成立，几何与六店内部脚点PASS；同时记录纵向反射街纹视觉REVISE，旧Art PASS撤回，不放行余十组。半幅理论RGBA8约3MiB，40MiB总目标/12批次、Creator运行均NOT_TESTED。修正第2轮第3调用已提交但尚无Art回账本成功结论，本Tech文件不能代替新候选核验。
+
+2026-10-13 22:25:01 +08:00（街桥同问题第2轮、最后自动修正已提交）：Art账本第3调用 `sample_correction_round_2`，输入r1原生桥与冻结参考、提示SHA aefc6e9a…fc03bd2，目标为新绘不规则宽街/矮墙局部，确定性合成保留中央r1桥；status `SUBMITTED_OUTCOME_UNKNOWN`，无请求ID/幂等键。累计初始1/11、修正2/4、同问题2/2轮、候选仍2，潜在余12/15；结果未知不重发。此问题自动修正轮次已达上限，若仍不达锚点须停止桥支线交诊断，不得将总修正额度误当可继续第三轮。同批余十组仍锁，Gate2 DRAFT。
+
+2026-10-13 22:24:39 +08:00（无店最终输出同批Art/Tech补签齐）：`ART_PRESIGN.json` 与 `TECH_PRESIGN.json` 均增加 `scope_amendment`，准确引用 `USER_SCOPE_NO_SHOP_OUTPUT.md` SHA-256 954b3a3f…313ba67b；最终环境PSD、正式PNG与环境预览/重组无六店，既有带店图仅内部历史，原Gate1五冻结hash不变。Art账本state已从误留PASS更正为`SAMPLE_REVISION_02_REQUIRED`，已核调用仍初始1+修正1、候选2。第2轮修正尚待实际提交/结果；余十组锁，Gate2 DRAFT。
+
+2026-10-13 22:23:39 +08:00（撤回街桥反射试片Art PASS）：Master同尺度实看指出新绘街面纵向行反射形成明显镜面对称条带与重复金色菱形光斑，偏离参考不规则铺砖；Art复看接受并在 `SAMPLE_REVIEW.md` 将反射试片结论改为REVISE。22:22:54节点的Art样张PASS已失效，仅保留历史误判/诊断；反射半幅与对照图只作退稿证据，不可作为正式街桥源或提交Tech通过。`EXECUTION_LEDGER.json` 此刻state尚滞留 `SAMPLE_ART_PASS_WAITING_TECH_ACTUAL_REVIEW`，待Art回填撤回/第2轮状态，不据此放行。Master准同问题第2轮预算内定向生成深街矮墙，中央r1单拱/旋纹/四灯不变，禁纵向镜像；若第2轮仍失败停桥支线诊断。当前已实际提交调用初始1+修正1、候选2；第3调用未核到，不虚报。余十组继续锁，Gate2 DRAFT。
+
+2026-10-13 22:22:54 +08:00（街桥候选2经新绘街面确定性复用后Art样张PASS）：`SAMPLE_REVIEW.md`现SHA fabe2ce7…b7c0，Art明确仅代表样张视觉PASS，待Tech实际实图复核和同批全量续签；不代表全景或Gate2。选定半幅 `exports/tex_sakura_rr_bridge_correction_01_street_reflected_half.png` SHA 02fd840a…110b4，独立透明镜像图SHA 988c43cf…69a2c；`SAMPLE_STREET_REFLECTION_MANIFEST.json` SHA bbe5792a…4a2fba3列新绘街砖行反射与高墙裁短的确定性变换，中央桥像素保持，不取参考图像素、无新增生成调用。账本当前初始1、修正1、候选2、制作核验17.9分、潜在余13/15；同问题仅1轮生成修正。六店仅内部脚点校准，Art预签已附最新无店输出范围；Tech同批补签/样张实图结论待，余十组仍锁。
+
+2026-10-13 22:18:16 +08:00（用户缩减樱花最终交付：六店不输出）：用户最新明确“6个店铺最终不需要输出，你是否已经确定”，原消息精确时刻未知。Master确认 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_SCOPE_NO_SHOP_OUTPUT.md`（SHA-256 `954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b`）：最终环境PSD无六店层、正式PNG/切片清单无六店、正式环境预览与重组无六店；现行六店body/sign只读用于内部街宽脚点遮挡校准，已成带店样张仅历史检查证据。原Gate1五冻结文书及USER_APPROVED记录不倒改，最新缩减范围以本补充优先；Art/Tech对同批补签待，补签前不得将旧带店图作Gate2正式输出。11源组、15调用及4小时上限不增，Gate2 DRAFT、Client锁。
+
+2026-10-13 22:16:39 +08:00（街桥修正第1轮实图仍REVISE）：`EXECUTION_LEDGER.json` 第2调用已回SUCCESS/1候选，原生2172×724 RGBA `source/native/bridge_correction_01_native.png` SHA ae69201f…ccf51；半幅 `exports/tex_sakura_rr_bridge_correction_01_half.png` SHA f150621c…2b138，同尺度对照及源登记在 `SAMPLE_CORRECTION_01_SOURCE_MANIFEST.json` / `review/bridge_correction_01/`。Art账本自审旋纹、灯高、石材柔和有所改进，但店前铺砖深度仍不足、正立墙过高，候选2仍REVISE；动态/完整环境未测。累计初始1、修正1、候选2、同问题1/2轮、潜在余13，总制作核验11.15分钟；第2调用结束时刻系49.1秒工具耗时推算，非独立精确时间。余十组继续锁，Tech实图独立结论与下一步同源局部修正决定待。
+
+2026-10-13 22:10:39 +08:00（街桥同源组修正第1轮已提交）：依据Art候选1 `SAMPLE_REVIEW.md` 的明确REVISE及Master本预算内定向修正授权，`EXECUTION_LEDGER.json` 第2调用为 sample_correction_round_1，输入旧桥原生图与冻结参考，提示SHA 0f4527f7…36e00，status `SUBMITTED_OUTCOME_UNKNOWN`。累计初始1、修正1/4、候选仍1，潜在剩余13/15，同问题修正1/2轮；工具请求ID/幂等键未回，未知结果不重发。当前没有修正后实图/Art-Tech复核或全批续签，余十组仍锁。
+
+2026-10-13 22:10:12 +08:00（樱花街桥候选1实图自审REVISE）：Art首样原生图 `source/native/bridge_initial_native.png` 2172×724 RGBA、SHA ee35f57f…94dd60，半幅`exports/tex_sakura_rr_bridge_half.png` SHA 970452aa…5999d，当前六店实际body/sign重组与3072×1024同尺度对照均在Art `v0.1/review/`；来源及六店12图SHA见`SAMPLE_SOURCE_MANIFEST.json`。`SAMPLE_REVIEW.md`判单拱镜像/街店脚点PASS，但桥体/拱洞过宽、灯偏低小、砖石过硬，结论REVISE；其它环境未绘NOT_TESTED。账本将第1调用记SUCCESS/1候选，已用初始1/11、修正0/4、潜在余14，制作核验5.43分钟；工具结果时刻为依37.7秒耗时推算，非独立精确观测。Art拟对同源组局部生成修正第1轮，须待Tech实图独立核验和Master范围判断，不放行余十组。Gate2 DRAFT、Creator运行NOT_TESTED。
+
+2026-10-13 22:03:12 +08:00（樱花首样生成请求已提交，结果待回）：Art `EXECUTION_LEDGER.json` 第1笔完整街桥 initial_sample 记录工具 image_gen.imagegen、提示文件/哈希、transparent_background=true，started_at=22:03:12；当前 status `SUBMITTED_OUTCOME_UNKNOWN`，初始已提交1/11、修正0/4、候选0，潜在剩余14/15。工具未返回请求ID/幂等键，未知结果不可重复发起同一请求；不得把已提交误写为实图或视觉通过。首样实图、Art/Tech双结论与全批续签仍待。
+
+2026-10-13 22:02:55 +08:00（樱花街桥首样同批预签齐）：Art `ART_PRESIGN.json` signed_at=22:01:14 +08:00、Tech `TECH_PRESIGN.json` signed_at=22:01:13 +08:00，五冻结输入SHA相符；Tech文件当前SHA-256=`cb69e7e17e3ad96eeb5c8efe9d2bc2444cc480a9eb2d1e3d378bee719c7076d8`，且锁Gate1审批记录。Master已明示仅放行第一张完整单圆拱街桥代表样张，剩余十组待实图Art/Tech双结论及全批续签。核 `EXECUTION_LEDGER.json` 当前初始/修正调用0/0、候选0、未知占额0，尚无生成完成证据；不以预签冒充样张。Gate2 DRAFT、Creator运行NOT_TESTED。
+
+2026-10-13 22:00:22 +08:00（樱花重绘Gate1准确版本登记）：Master `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/MASTER_GATE1_REVIEW.json` 已APPROVED本轮用户授权与Art制作方案等价；`GATE1_FROZEN_INPUTS.json`列五份冻结输入SHA，Producer逐一复算吻合，其中`PRODUCTION_PLAN.md` SHA-256=`4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562`。用户原话“好的开始吧”，消息精确时刻未知；`tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1.json`现USER_APPROVED/decided_at null，仅准该方案制作。Art/Tech仍须对同版首样预签后才能出图，街桥样张双实图结论及全批续签待。五份冻结文书不得在后续实产填充中暗改；源文件和执行清单应另路径/版本记录。具体资源Gate2仍DRAFT，Client锁，Cocos运行NOT_TESTED。
+
+2026-10-13 21:54:26 +08:00（樱花Art/Tech真实开工）：Art首份Required `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_BRIEF.md` 与 `VISUAL_ANCHORS.md` 非空实存；Tech首份Required `deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/TECH_DESIGN.md` 非空实存。两Task READY→IN_PROGRESS，当前仅文字实作；PRODUCTION_PLAN及Master等价核准尚待，Gate1未登记，首图/预签/样张均未放行。Tech指出六店12张1024² RGBA8理论48MiB，40MiB总纹理目标未实测且可能超额；新增原型与现店分账，实际运行NOT_TESTED，该预算风险本身不阻断本轮环境生产。
+
+2026-10-13 21:53:09 +08:00（樱花重绘授权与三线开工核查）：Master已建 Art `SCENE-SAKURA-REDRAW-REUSE-20261013`、Tech `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013`、Producer `SCENE-SAKURA-REDRAW-FLOW-20261013` 三Task；用户“好的开始吧”精确消息时刻未知，授权范围见 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md`。Art/Tech首份Required尚未核到，均保持READY；Producer首份Required `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/CONTINUITY_CHECK.md`实存，Producer READY→IN_PROGRESS。Gate1待Art等价方案及Master准确版本核准后登记；首图前Art/Tech同批预签、样张、全批与成品Gate2各按实证推进。Gate2 DRAFT，Client接入锁定，Creator运行NOT_TESTED。预算上限11初始+4修正=15、同问题2轮、制作核验4小时，实际消耗待账本。下一核查Art/Tech真实Required和Gate1。
+
 2026-10-10 22:22:26 +08:00（U04极简角饰候选送用户审看）：用户退回v0.2复杂莲花，旧版本Task/Approval留历史快照。现行v0.3实图、README、DELIVERABLE三份Required实存，三项验收同序PASS；Master REVIEW APPROVED仅限概念候选，CONCEPT_ACCEPTANCE锁三文件SHA且本轮核对一致。Art Task REVISION→USER_REVIEW，Approval USER_REVIEW/decided_at null，待用户判断实际简洁图。尚未正式制作PSD/切片、未做128×96显示核验，Client未替换；正式资源Gate仍锁。Client整体REVISION、Tech REVIEW继续等待角花语义。Continuity check：可授权的原创候选已实作并到真实用户审看门禁，无空转READY/IN_PROGRESS。
 2026-10-10 22:14:25 +08:00（U04原创角花候选实际开工）：v0.2首份Required `deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/concept/corner_original_concept.png`实存，为1536×1024 RGBA概念图；README与DELIVERABLE均实存、三项验收自报PASS。Task REVISION→IN_PROGRESS；Art同版自审与Master接受仍待，Approval DRAFT。此图仅设计候选，无正式PSD/切片或Client替换批准。
 2026-10-10 22:12:21 +08:00（U04角花原创候选修订）：用户否定旧角花并要求可脱离旧参考重绘；旧v0.1方案退回留档。现行`tasks/U04-DIALOGUE-CORNER-REVISION-001/TASK.json` v0.2处于REVISION、Approval DRAFT；先出实际原创候选供用户判断，目前v0.2 Required尚无实图，不能记IN_PROGRESS或USER_REVIEW。候选不构成正式资源、PSD、切图或Client替换批准。Client整体REVISION、Tech REVIEW继续等待角花语义。

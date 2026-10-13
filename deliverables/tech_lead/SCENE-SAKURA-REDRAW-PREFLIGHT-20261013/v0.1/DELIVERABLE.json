@@ -1,0 +1,20 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "owner": "tech_lead",
+  "summary": "已完成樱花场景重绘同批技术预案、首图前Gate1方案hash预签；初样及纵向反射试片退回后，独立核最终r2单拱街桥真实半幅、镜像、alpha、尺寸和内部六店脚点，签认余十组继续制作。最终交付只含环境。",
+  "artifacts": [
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/TECH_DESIGN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/TECH_FULL_BATCH_CONTINUATION.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "首图前技术预签锁同方案与来源hash", "result": "PASS", "evidence": "TECH_PRESIGN.json绑定Gate1准确方案4554a3b1、参考6f79a1e5、Gate1记录及用户无店输出补充954b3a3f；仅放行首样。"},
+    {"criterion": "样张核单拱、中线、alpha、尺寸与六店关系，续签可追溯", "result": "PASS", "evidence": "SAMPLE_TECH_CHECK.json对r2半幅4168180e实核1536×512、镜像及中线逐像素吻合、alpha包围盒(0,34)-(1536,338)；内部六店脚点核对；TECH_FULL_BATCH_CONTINUATION.json绑定Art和Tech同批结论。"},
+    {"criterion": "制作与运行预算区分，真实运行NOT_TESTED", "result": "PASS", "evidence": "TECH_DESIGN.md和续签记录11初始+4修正/总15、同问题两轮、4小时及余10初始+2修正；本批无Creator接入，40MiB总纹理与12绘制批次均NOT_TESTED。"}
+  ],
+  "assumptions": ["现行六店body/sign只读用于内部校准；用户最新确认正式PSD、环境PNG和预览均不输出六店。"],
+  "risks": ["完整环境尚未制作，山水树、PSD切片重组与微动效果需Art后续核。", "r2半幅有973个alpha=0而RGB非零像素，后续采样需关注边缘。", "总场景40MiB/12批次目标没有运行测量证据，六店理论展开基线已为48MiB。"],
+  "status": "READY_FOR_REVIEW"
+}

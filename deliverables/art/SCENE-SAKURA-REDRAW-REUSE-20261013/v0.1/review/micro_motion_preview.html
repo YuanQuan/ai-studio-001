@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>樱夜环境 · 微动预览</title>
+  <style>
+    html,body{margin:0;min-height:100%;background:#111733;color:#e8e8fb;font:15px system-ui,sans-serif}
+    main{max-width:1536px;margin:auto;padding:16px}
+    h1{font-size:18px;font-weight:600;margin:0 0 12px}
+    canvas{display:block;width:100%;height:auto;background:#111733;border:1px solid #39416f}
+    p{line-height:1.5;opacity:.76}
+    button{margin-top:12px;margin-right:8px;padding:8px 12px;background:#343e78;color:white;border:1px solid #626cab;border-radius:6px;cursor:pointer}
+  </style>
+</head>
+<body><main>
+  <h1>樱夜环境 · CPU 微动预览</h1>
+  <canvas id="scene" width="3072" height="1024" aria-label="无店铺的樱夜环境与四处轻微漂浮的水上火焰"></canvas>
+  <button id="pause">暂停并回基准</button><button id="play">播放</button>
+  <p>天空水平 ±12px、远景同向水平 ±6px、仅四处近水火焰垂直 ±2px，周期 3 秒；莲座、倒影、山间火灵和其余水上火灵保持静止。本页为美术审阅用浏览器预览，尚非 Cocos 实测。</p>
+</main>
+<script>
+(() => {
+  const canvas = document.getElementById('scene');
+  const ctx = canvas.getContext('2d', {alpha:false});
+  const load = src => new Promise((resolve,reject) => {
+    const image = new Image(); image.onload=()=>resolve(image); image.onerror=reject; image.src=src;
+  });
+  const specs = [
+    {src:'../exports/tex_sakura_rr_spirit_a_flame.png',x:450,y:840,size:130,sign:1},
+    {src:'../exports/tex_sakura_rr_spirit_a_flame.png',x:1000,y:853,size:123,sign:-1},
+    {src:'../exports/tex_sakura_rr_spirit_b_flame.png',x:1740,y:853,size:126,sign:1},
+    {src:'../exports/tex_sakura_rr_spirit_b_flame.png',x:2310,y:851,size:104,sign:-1},
+  ];
+  Promise.all([load('scene_environment.png'),load('scene_sky_overscan.png'),load('scene_far_overscan.png'),load('scene_motion_midground.png'), ...specs.map(s => load(s.src))]).then(images => {
+    const exactBase=images[0],sky=images[1],far=images[2],midground=images[3];
+    specs.forEach((s,i) => s.image=images[i+4]);
+    let running=true, start=performance.now();
+    function draw(t) {
+      const wave=Math.sin(t*2*Math.PI/3);
+      ctx.clearRect(0,0,3072,1024);
+      if(Math.abs(wave)<1e-9){ctx.drawImage(exactBase,0,0);return;}
+      ctx.drawImage(sky,12+12*wave,0,3072,1024,0,0,3072,1024);
+      ctx.drawImage(far,6+6*wave,0,3072,1024,0,0,3072,1024);
+      ctx.drawImage(midground,0,0);
+      for (const s of specs) {
+        const dy = 2*wave*s.sign;
+        ctx.drawImage(s.image,s.x,s.y+dy,s.size,s.size);
+      }
+    }
+    function frame(now) {
+      if(!running) return;
+      draw((now-start)/1000);
+      setTimeout(() => requestAnimationFrame(frame),33);
+    }
+    document.getElementById('pause').onclick=()=>{running=false;draw(0);};
+    document.getElementById('play').onclick=()=>{if(running)return;running=true;start=performance.now();requestAnimationFrame(frame);};
+    draw(0);
+    requestAnimationFrame(frame);
+  }).catch(error => {
+    document.querySelector('p').textContent='预览资源加载失败：'+error.message;
+  });
+})();
+</script>
+</body></html>

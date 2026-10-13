@@ -1,3 +1,17 @@
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE START -->
+2026-10-13 23:52:20 +08:00（Producer内部支持接受，非Art成品用户批准）：`SCENE-SAKURA-REDRAW-FLOW-20261013` v0.1，Master `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/MASTER_ACCEPTANCE.json` APPROVED，`tasks/SCENE-SAKURA-REDRAW-FLOW-20261013/ARTIFACT_APPROVAL.json` 记`PROFESSIONAL_REVIEW`；Task DONE仅指本轮流程监督。Art v0.1具体资源Gate2仍`USER_REVIEW`/decided_at null，Client锁、运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE END -->
+
+2026-10-13 23:46:38 +08:00（Gate2具体资源送用户审核，非用户决定）：`SCENE-SAKURA-REDRAW-REUSE-20261013` v0.1准确审批对象 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_REVIEW_PACKET.md`，现行 `tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL.json` status `USER_REVIEW`/decided_at null，review_ref为Master独立文件核对 `MASTER_DELIVERY_FILE_CHECK.json` SHA 44b9da60…a832e；ZIP SHA 8cc5dfe2…1c031、49,368,186字节。原Gate1准确方案已USER_APPROVED仅授权制作，不替代当前41层PSD/17环境PNG/同尺度重组的用户决定。自产切片直送用户，无额外成品专业效果复审；成品未获批准，Client接入锁，运行NOT_TESTED。
+
+2026-10-13 22:40:53 +08:00（Tech内部支持专业接受，非独立用户Gate）：`SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` v0.1 五Required与三验收PASS，Tech `REVIEW.json`、Master `MASTER_ACCEPTANCE.json` APPROVED；现行 `tasks/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/ARTIFACT_APPROVAL.json` 记 `PROFESSIONAL_REVIEW`，Task DONE只针对首图预签、样张技术实核与全批续签支持。本记录不批准Art具体环境PSD/切片Gate2，不解锁Client或声称运行。
+
+2026-10-13 22:18:16 +08:00（用户最新范围缩减补充，非新Gate1）：用户明确最终“6个店铺不需要输出”；`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_SCOPE_NO_SHOP_OUTPUT.md` SHA-256 `954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b` 为Master确认的本轮准确补充。原 `ARTIFACT_APPROVAL_GATE1.json` USER_APPROVED及五冻结hash保留；最终环境PSD不含六店层，正式切片和环境重组不含店，现行六店仅内部只读参照。Art/Tech同批补签待，Gate2具体环境资源仍DRAFT，用户尚未批准成品。
+
+2026-10-13 22:00:22 +08:00（Producer登记准确Gate1；用户原消息精确时刻未知）：`SCENE-SAKURA-REDRAW-REUSE-20261013` v0.1制作方案 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/PRODUCTION_PLAN.md` 由Master `MASTER_GATE1_REVIEW.json` 核对与本轮“好的开始吧”授权范围等价；五份输入SHA保存在 `GATE1_FROZEN_INPUTS.json` 且当前复算全吻合，方案SHA-256 `4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562`。`tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1.json` 为USER_APPROVED/decided_at null。首图前同批Art/Tech预签、样张双结论、全批续签尚需分别核；此Gate1不等于具体资源Gate2，后者仍DRAFT，Client不解锁。
+
+2026-10-13 21:53:09 +08:00（本轮樱花重绘授权范围登记；用户消息精确时刻未知）：用户在确认自有来源、环境分层重绘、六店不绘、街桥水栏半幅对称、两树两精灵复用与预算后明确“好的开始吧”，依据 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md`。这是制作授权；Gate1准确文字方案尚待实存和Master等价核准，暂不登记方案 `USER_APPROVED` 或伪造哈希。现行 `tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL.json` 为具体资源Gate2 `DRAFT`，不构成成品批准或Client接入许可。
+
 2026-10-10 22:22:26 +08:00（送审登记，非用户决定）：`U04-DIALOGUE-CORNER-REVISION-001` v0.2复杂莲花候选被用户以“再换一个，别太复杂”退回，旧Task/Approval留v0.2历史快照。现行v0.3极简实际候选图`deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png`经Master仅限概念送审接受、三文件SHA一致；`ARTIFACT_APPROVAL.json` USER_REVIEW、decided_at null。此处待用户判断造型，不代表正式资源制作或切图已批准。
 2026-10-10 22:12:21 +08:00（用户退回记录，用户消息精确时刻未知）：`U04-DIALOGUE-CORNER-REVISION-001` v0.1文字制作方案的送审方向被“角花还是不行，你来重绘一个新的吧，可以不参考之前的”替代；v0.1 Task/Approval送审快照留档，未获Gate1批准。现行v0.2 Task REVISION、Approval DRAFT，审批对象转为实际原创候选概念图；候选判断不等于正式资源制作方案或具体切图批准。
 2026-10-10 21:43:39 +08:00（送审登记，非用户决定）：`U04-DIALOGUE-CORNER-REVISION-001` 准确v0.1两角花制作前方案进入USER_REVIEW，审批对象为 `deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.1/USER_REVIEW_PACKET.md`；Art/Master APPROVED，`PLAN_ACCEPTANCE.json`锁7/7文件当前SHA一致。现行`ARTIFACT_APPROVAL.json` USER_REVIEW、`decided_at=null`，用户尚未批准Gate1。正式新版PSD/PNG为0；首图前同批预签、实际切图Gate2用户决定及Client替换均未解锁。

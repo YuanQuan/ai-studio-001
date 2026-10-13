@@ -1,0 +1,27 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1",
+  "owner": "art",
+  "status": "ART_SAMPLE_PASS_FULL_BATCH_ART_PRESIGNED_TECH_CONTINUATION_PENDING",
+  "signed_at": "2026-10-13T22:32:41+08:00",
+  "bound_gate1_plan_sha256": "4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562",
+  "bound_reference_sha256": "6f79a1e5b14c0b73e0952ad0810456ac94cd3bb8192db0f91d1ee73830fcfcbf",
+  "scope_amendment_sha256": "954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b",
+  "sample": {
+    "art_review": "SAMPLE_REVIEW.md",
+    "art_review_sha256": "60ee9b01f3123c8b2ade9b806d134fe17d9856b3955ee7f06c5f97a064963a16",
+    "native_new_bridge_sha256": "ae69201fc7cab504ddc0418c3dbfe620265272863d6047f5121530a61faccf51",
+    "native_new_street_patch_sha256": "cb67764abbeb7f042743677476d20bebfb7045b63061e3f9f50a0e13fb5e3594",
+    "complete_combined_bridge_sha256": "12005774ff7f16815f7564d831f544587ff27739028527610b383690bbb49404",
+    "selected_half_path": "exports/tex_sakura_rr_bridge_correction_02_half.png",
+    "selected_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+    "mirror_review_path": "review/bridge_correction_02/bridge_sample_mirrored_transparent_3072x1024.png",
+    "mirror_review_sha256": "68b8a1a2f356cc40fd7960036f35a85c54583b4e4b8124199f09b52f0d9777bc",
+    "art_result": "PASS representative bridge only; no conclusion for unreleased environment groups or Gate2"
+  },
+  "remaining_scope": "Only the ten other initial environment groups from the frozen 11-group plan. All outputs environment-only with no six-shop PSD layer, PNG, final preview or reassembly. Keep sky/far left and right non-mirrored, bridge/water-rail halves mirrored, two tree and two spirit prototypes; flame moves separately from stationary lily/reflection.",
+  "remaining_budget": "10 planned initial calls plus at most 2 correction calls, 12 total possible calls; same bridge-fidelity issue has exhausted its 2 automatic correction rounds; production/verification <=4h excluding user wait, actual elapsed updated in EXECUTION_LEDGER.json",
+  "tool_and_rights": "Built-in image_gen with frozen project-owned reference as guide for new independent layers; transparent PNG, original native image preserved, deterministic slicing/compositing, bggg-creator-image2psd layered PSD. Reference pixels never used as production slices.",
+  "known_visual_differences": "New drawing does not promise reference pixel identity; broad warm street pools are mirrored across the approved centerline. Full environment must still be reviewed at 3072x1024 with the reference before Gate2.",
+  "release_condition": "Tech Lead actual sample review and same-hash full-batch continuation plus Master release are required before creating the remaining ten groups."
+}

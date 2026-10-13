@@ -1,0 +1,45 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "batch": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1",
+  "checked_at": "2026-10-13T22:33:38+08:00",
+  "decision": "PASS_FOR_FULL_BATCH_TECH_CONTINUATION",
+  "scope": "实际代表样张r2的街桥生产技术检查；Art同版样张自审另见SAMPLE_REVIEW。仅允许对其余十组在同批方案内续作，不批准完整场景效果、用户Gate2或真实运行。",
+  "frozen_production_plan_sha256": "4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562",
+  "user_scope_amendment_sha256": "954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b",
+  "art_sample_review": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md",
+  "art_sample_review_sha256": "60ee9b01f3123c8b2ade9b806d134fe17d9856b3955ee7f06c5f97a064963a16",
+  "selected_full_source": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/bridge_correction_02_full_work.png",
+  "selected_full_source_sha256": "12005774ff7f16815f7564d831f544587ff27739028527610b383690bbb49404",
+  "selected_half": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/exports/tex_sakura_rr_bridge_correction_02_half.png",
+  "selected_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+  "street_patch_manifest": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_CORRECTION_02_SOURCE_MANIFEST.json",
+  "street_patch_manifest_sha256": "f6858338ec86f07e98b632ba44d17b84dc5d7a0fe08ca78facb453d95c4022c5",
+  "visible_comparison": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/bridge_correction_02/bridge_roi_reference_vs_sample_1to1.png",
+  "visible_comparison_sha256": "e7192d44590aa5b5ac8bf0aa6f57b51e8d65bb2d2baeb98a4035640bad87266b",
+  "measurements": {
+    "half_dimensions_px": [1536, 512],
+    "half_file_bytes": 480371,
+    "half_rgba8_theoretical_mib": 3,
+    "half_alpha_bbox_xyxy": [0, 34, 1536, 338],
+    "half_pixels_alpha_nonzero": 250520,
+    "half_transparent_pixels_with_nonzero_rgb": 973,
+    "reassembly_dimensions_px": [3072, 1024],
+    "reassembly_sha256": "68b8a1a2f356cc40fd7960036f35a85c54583b4e4b8124199f09b52f0d9777bc",
+    "reassembly_left_equals_half": true,
+    "reassembly_right_equals_horizontal_flip_half": true,
+    "center_adjacent_columns_equal": true
+  },
+  "checks": [
+    {"item": "完整新绘单圆拱源再切x=1536左半，右半镜像为单孔，中央桥冠与洞口连续", "result": "PASS", "evidence": "独立view_image同尺度ROI及透明全景；左右像素和中线逐像素比对"},
+    {"item": "1536×512、alpha边缘与透明像素RGB", "result": "PASS", "evidence": "Pillow读取真实半幅：alpha包围盒(0,34)-(1536,338)，973个完全透明像素带非零RGB但在straight alpha下不可见；须保持alpha解释并在后续图集/缩放时核边缘。外侧街边触画布边为横向延伸预期"},
+    {"item": "与现行六店尺度和脚点关系", "result": "PASS", "evidence": "内部带店样张独立目视；现行12源SHA与同批SAMPLE_STREET_REFLECTION_MANIFEST一致，六店各348×348仅供内部校准，不输出到最终PSD或正式预览"},
+    {"item": "修正2独立新绘街面与r1中央桥组合", "result": "PASS", "evidence": "SAMPLE_CORRECTION_02_SOURCE_MANIFEST固定铺砖y690–810、矮墙y810–850，桥中心x1280–1792与r1完整源逐像素相同；无纵向行反射，左右半幅水平镜像属获准复用。独立view_image同尺度ROI及全景确认无r1的纵向镜面条带。"},
+    {"item": "本批总场景40MiB、12绘制批次与真实运行", "result": "NOT_TESTED", "evidence": "本轮未接入Creator；半幅3MiB为RGBA8单份理论，PNG字节和理论展开均不能证明GPU驻留或合批"}
+  ],
+  "history": [
+    {"candidate": "initial", "half_sha256": "970452aaa5f6ec25c3b51ff606d6bf3431f6bfd4f831272f882e79a5d075999d", "tech_geometry": "PASS", "art_visual": "REVISE", "reason": "初版单孔与中线成立，但Art核桥宽、街深、饰面和灯位未达参考；未据此扩批。"},
+    {"candidate": "correction_01_street_reflected", "half_sha256": "02fd840a4e9dfcbfe57783c39093bed6232938ca12f451226b375b8bd7d110b4", "tech_geometry": "PASS", "art_visual": "REVISE_WITHDRAWN", "reason": "修正1新绘桥的镜像几何与alpha可追溯，但纵向反射街纹被Master与Art退回；任何先前暂记PASS均撤销。"},
+    {"candidate": "correction_02_new_street", "half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a", "tech_geometry": "PASS", "art_visual": "PASS_SAMPLE_ONLY", "reason": "第2轮修正独立新绘直街；Art同尺度自审通过，Tech核真实半幅、alpha、镜像中心、桥源保留、脚点与预算。"}
+  ],
+  "limits": "本样张在已批准左右半幅复用下两侧暖光斑对应，石纹仍较规整；完整环境效果留全景与用户Gate2判断，不把相似度当本技术样张的运行结论。完整天空、远景、水栏、前景、树与水灵仍须同批来源/尺寸/alpha/PSD与切片核验。最终环境PSD和正式预览无店。微动和目标机运行仍NOT_TESTED。"
+}

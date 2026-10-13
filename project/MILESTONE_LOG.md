@@ -1,3 +1,85 @@
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE START -->
+2026-10-13 23:52:20 +08:00 | `SCENE-SAKURA-REDRAW-FLOW-20261013` | Master接受Producer内部流程支持；REVIEW→DONE / PROFESSIONAL_REVIEW | `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/MASTER_ACCEPTANCE.json`、`CONTINUITY_CHECK.md`、`DELIVERABLE.json`；`tasks/SCENE-SAKURA-REDRAW-FLOW-20261013/ARTIFACT_APPROVAL.json` | 三验收PASS；Art具体资源仍USER_REVIEW、Client锁、Cocos运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE END -->
+
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_REVIEW START -->
+2026-10-13 23:50:23 +08:00 | `SCENE-SAKURA-REDRAW-FLOW-20261013` | Producer Required与三验收完成，任务IN_PROGRESS→REVIEW，待Master接受 | `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/CONTINUITY_CHECK.md`、`DELIVERABLE.json`；`project/WORK_RETROSPECTIVE_LOG.md`、`project/ASSET_HANDOFF_REGISTRY.md` | Gate2准确包USER_REVIEW，Art未DONE、Client锁、Creator运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_REVIEW END -->
+
+2026-10-13 23:46:38 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 无店具体资源Gate2 v0.1 REVIEW→USER_REVIEW，待用户决定 | Art `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_REVIEW_PACKET.md`、`DELIVERABLE.json`、`MASTER_DELIVERY_FILE_CHECK.json`、`package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip`；`tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL.json` | ZIP SHA 8cc5dfe2…1c031、Master核对SHA 44b9da60…a832e，13/13 Art索引实存。Gate2尚未USER_APPROVED，Client锁，Cocos运行NOT_TESTED。
+
+2026-10-13 23:34:00 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | Art 14/14 Required、11/11交付索引、六验收原文同序PASS；IN_PROGRESS→REVIEW | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/DELIVERABLE.json`、`USER_REVIEW_PACKET.md`、`FILE_VERIFICATION.json`、`ART_VISUAL_SELF_REVIEW.md` | Master准确版本接受待，Gate2 DRAFT；14/15调用、保守84.54分，运行NOT_TESTED。
+
+2026-10-13 23:29:06 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 全景Art自审与Gate2用户包实存，正式索引/Master接受待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_VISUAL_SELF_REVIEW.md`、`USER_REVIEW_PACKET.md` | 逐锚点PASS但月亮偏左/下等差异明列；14/15调用、PSD41层/17切片静态零差。未送USER_REVIEW，Gate2 DRAFT。
+
+2026-10-13 23:21:15 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | Art正式文件静态完整性验证PASS、30/30索引SHA复核 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/FILE_VERIFICATION.json`、当前PSD/17正式PNG/无店全景 | PSD实际41层、17PNG理论30.79MiB；PSD预览/flatten/切片重组对全景最大通道差0。视觉审/用户包/Gate2待，运行NOT_TESTED。
+
+2026-10-13 23:18:19 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 月亮修正后全景/PSD/重组重导，当前RGBA三图零差 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/scene_environment.png`、`reassembled_from_exports.png`、`scene_psd_preview.png`、`source/scene_sakura_reuse_master.psd` | 当前环境SHA ce0c96dc…9c50c5、PSD SHA 2aaf8f4b…8263d；旧候选归档。真实PSD层/全景视觉/文件验证与Gate2包待。
+
+2026-10-13 23:08:45 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 月亮修正原生候选返回、Art审与重导待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/sky_moon_correction_01_native.png` | 初始11+修正3、候选14、未知0、潜在余1；新版全景/PSD/重组未核。
+
+2026-10-13 23:05:46 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | sky月亮尺度/位置修正第14调用提交、结果待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/prompts/sky_moon_correction_01.txt` | 初始11+修正3、候选13、未知占额1、潜在余1；现PSD/全景/重组系修正前版本，新图若采用须重导受影响层并复核。
+
+2026-10-13 23:03:33 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 3072×1024 PSD母版及预览初落、预览与环境图像素一致 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd`、`review/scene_psd_preview.png`、`review/scene_environment.png` | PSD SHA 0414fbe2…89fa71d；真实层数/无店层/可编辑范围待Art验证，非Gate2完成。
+
+2026-10-13 23:01:24 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 无店切片重组与全景RGBA逐像素一致（初核） | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/reassembled_from_exports.png`、`scene_environment.png`、`CUT_MANIFEST.json`、`source/psd_full_canvas_layers/` | 同Pillow解码3072×1024 ImageChops差异空；PSD真实层/全景视觉/正式文件验证与Gate2包待。
+
+2026-10-13 22:58:50 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 无店3072×1024全景初稿/17正式命名切片初落 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/scene_environment.png`、`CUT_MANIFEST.json`、`exports/` | 清单11源组/17active_exports/36计划PSD层且无shop；PSD真实层、切片重组零差、视觉全景审及Gate2包待。
+
+2026-10-13 22:55:42 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 11计划源组全部原生候选返回、正式组装待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/gate_initial_native.png` | 初始11/11+修正2/4、候选13、未知0、潜在余2；PSD/无店全景/切片重组及视觉核验待，Gate2 DRAFT。
+
+2026-10-13 22:53:29 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | spirit_b原生返回、gate最后初始调用待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/spirit_b_initial_native.png` | 初始11/11、修正2/4、候选12、未知占额1、潜在余2；原生齐备尚非PSD/切片或Gate2通过。
+
+2026-10-13 22:51:35 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | spirit_a 原生返回、spirit_b 第12调用待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/spirit_a_initial_native.png` | 累计初始10+修正2、候选11、未知占额1、潜在余3；双精灵分层/实例/微动未核。
+
+2026-10-13 22:50:03 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | tree_b原生返回、spirit_a第11调用待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/tree_b_initial_native.png` | 累计初始9+修正2、候选10、未知占额1、潜在余4；双树/精灵视觉与实例待核。
+
+2026-10-13 22:48:34 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | tree_a 原生返回、tree_b 第10调用结果未知 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/tree_a_initial_native.png` | 累计初始8+修正2、候选9、未知占额1、潜在余5；双树实例/全景未核。
+
+2026-10-13 22:46:49 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | water_rail与前景左/右三原生候选返回、Art审待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/water_rail_initial_native.png`、`foreground_left_initial_native.png`、`foreground_right_initial_native.png` | 累计初始6+修正2、候选8、未知占额0、潜在余7；半幅/分层/全景尚未核，不认正式资源通过。
+
+2026-10-13 22:42:48 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | water_rail 第6调用提交、结果未知 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/prompts/water_rail_initial.txt` | 累计初始4+修正2，候选5、未知占额1、潜在余9；水栏原生与半幅未核，不认完成。
+
+2026-10-13 22:41:41 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | sky/far 两原生候选返回、Art审与切片待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/native/sky_initial_native.png`、`source/native/far_initial_native.png` | 第4/5调用逐项SUCCESS_RECEIVED_ART_REVIEW_PENDING；账本顶部usage并行回填暂滞后，待Art统一核。非镜像左右片与全景未判。
+
+2026-10-13 22:40:53 +08:00 | `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | 内部技术支持 Task IN_PROGRESS→DONE / PROFESSIONAL_REVIEW | `deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/DELIVERABLE.json`、`REVIEW.json`、`MASTER_ACCEPTANCE.json`；现行Task/Approval | 五Required实存、三验收PASS、Tech/Master APPROVED。仅内部支持完成；Art成品Gate2 DRAFT、Client锁、运行NOT_TESTED。
+
+2026-10-13 22:38:50 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 全批天空源组第4调用已提交、结果未知 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/prompts/sky_initial.txt` | 累计初始2+修正2，候选仍3、未知占额1、潜在余11；不误报天空实图/非镜像切片完成。
+
+2026-10-13 22:34:10 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | r2样张Tech实图通过、Art/Tech全批续签齐、Master放行余十环境源组 | `deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json`、Art `v0.1/ART_FULL_BATCH_CONTINUATION.json`与`TECH_FULL_BATCH_CONTINUATION.json` | Tech续签SHA 1792445d…200a0锁r2半幅/Art续签；余预算10初始+2其它修正。无店正式全景与PSD/切片尚待，Gate2仍DRAFT，运行NOT_TESTED。
+
+2026-10-13 22:33:23 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | Art余十组同批续签；Tech实样Review/续签及Master放行待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_FULL_BATCH_CONTINUATION.json` | 锁准确r2半幅SHA 4168180e…2c66f0a与无店补充；剩10初始+最多2其它修正，桥问题2/2轮已尽。Art单签不放行。
+
+2026-10-13 22:33:04 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥r2终样Art PASS / Master仅样张观察APPROVED；Tech实际r2核验待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md`、`MASTER_SAMPLE_OBSERVATION.json`、`SAMPLE_CORRECTION_02_SOURCE_MANIFEST.json`、`exports/tex_sakura_rr_bridge_correction_02_half.png`、`review/bridge_correction_02/bridge_sample_mirrored_transparent_3072x1024.png` | 第3调用成功/3候选，初始1+修正2，同问题2/2轮、余12；Art/Master仅终样结论，全批续签和Gate2尚未到。
+
+2026-10-13 22:32:00 +08:00 | `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | Tech旧反射试片静态核验HOLD，余十组未续签 | `deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json` | 几何/alpha/六店内部脚点PASS但视觉条纹REVISE，决定HOLD_PENDING_R2；不把技术像素PASS冒充视觉通过。新候选待核，Creator NOT_TESTED。
+
+2026-10-13 22:25:01 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥同问题第2轮（最后自动修正）提交，结果待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/prompts/street_patch_correction_02.txt` | 第3调用已提交；累计初始1+修正2、候选仍2、同问题2/2轮、潜在余12。未知结果不得重发或提前宣称样张PASS，全批仍锁。
+
+2026-10-13 22:24:39 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | 用户最新无店交付范围 Art/Tech 同批补签齐 | Art `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_PRESIGN.json`、Tech同版`TECH_PRESIGN.json`、`USER_SCOPE_NO_SHOP_OUTPUT.md` | 两补签均锁同 SHA 954b3a3f…313ba67b，五冻结输入不变；账本撤回误PASS为SAMPLE_REVISION_02_REQUIRED，第2轮尚未核提交。
+
+2026-10-13 22:23:39 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 反射试片Art PASS撤回→REVISE；同问题第2轮获准、未核提交 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md`、`SAMPLE_STREET_REFLECTION_MANIFEST.json`及反射版半幅/对照图 | Master实看见机械镜面条带和重复金色菱形；原22:22:54 PASS失效。账本state待Art同步，已核调用仍2/15、候选2；余十组不解锁。
+
+2026-10-13 22:22:54 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥候选2确定性街面复用后Art样张PASS；Tech实图结论待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md`、`SAMPLE_STREET_REFLECTION_MANIFEST.json`、`exports/tex_sakura_rr_bridge_correction_01_street_reflected_half.png`、`review/bridge_correction_01_street_reflected/bridge_sample_mirrored_transparent_3072x1024.png` | 两调用/两候选，Art仅首样视觉PASS；Tech实际图核验与Art/Tech全批续签未到，余十组锁，Gate2 DRAFT。
+
+2026-10-13 22:18:16 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | 用户最新缩减最终输出：六店不交付；同批Art/Tech补签待 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_SCOPE_NO_SHOP_OUTPUT.md`（SHA 954b3a3f…313ba67b）、原Gate1冻结及审批文件 | 环境PSD/正式PNG/正式预览重组无店；现有带店样张仅内部历史证据。原五冻结文书不倒改，11+4预算不增，Gate2仍DRAFT。
+
+2026-10-13 22:16:39 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥修正第1轮候选2实图，Art仍REVISE | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`SAMPLE_CORRECTION_01_SOURCE_MANIFEST.json`、`source/native/bridge_correction_01_native.png`、`exports/tex_sakura_rr_bridge_correction_01_half.png`及review同尺度图 | 第2调用成功，累计初始1+修正1、候选2、同问题1/2轮；旋纹/灯高/柔和改进，但街深不足、墙高过大。余十组仍锁。
+
+2026-10-13 22:10:39 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥同源组修正第1轮提交，结果待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`SAMPLE_REVIEW.md`、`source/prompts/bridge_correction_01.txt` | 依候选1REVISE定向修正，累计初始1+修正1，候选仍1，同问题1/2轮、潜在剩余13；当前SUBMITTED_OUTCOME_UNKNOWN，无新实图或全批续签。
+
+2026-10-13 22:10:12 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 街桥候选1实图与Art自审REVISE；余十组未扩批 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md`、`SAMPLE_SOURCE_MANIFEST.json`、`EXECUTION_LEDGER.json`、`source/native/bridge_initial_native.png`、`exports/tex_sakura_rr_bridge_half.png`及review同尺度图 | 第1调用成功/1候选，初始1/11、修正0/4；单拱/脚点PASS，桥宽、灯和材质REVISE。Tech实图独立结论待，全批续签锁定。
+
+2026-10-13 22:03:12 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | 完整街桥首样生成请求提交，结果待回 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json`、`source/prompts/bridge_initial.txt` | 第1初始调用已提交，status SUBMITTED_OUTCOME_UNKNOWN，候选0、修正0、潜在剩余14；无请求ID，禁止盲目重发。样张实图/双结论/全批续签待。
+
+2026-10-13 22:02:55 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | Art/Tech 同版首图前双预签齐；仅放行街桥代表样张 | Art `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_PRESIGN.json`、Tech同版`TECH_PRESIGN.json`、`EXECUTION_LEDGER.json` | 五冻结输入SHA一致；Tech预签SHA cb69e7e17e3ad96eeb5c8efe9d2bc2444cc480a9eb2d1e3d378bee719c7076d8。账本当前0调用/0候选，无实图；余十组待样张与全批续签，Gate2 DRAFT。
+
+2026-10-13 22:00:22 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` | Gate1 v0.1 USER_APPROVED / 五输入冻结 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/PRODUCTION_PLAN.md`、`GATE1_FROZEN_INPUTS.json`、`MASTER_GATE1_REVIEW.json`；`tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1.json` | Master确认用户“好的开始吧”与准确方案等价，五SHA复算一致；原消息时刻未知。首图Art/Tech同批预签与Gate2均待。
+
+2026-10-13 21:54:26 +08:00 | `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | Art/Tech READY→IN_PROGRESS / TASK_STARTED | Art `v0.1/ART_BRIEF.md`、`VISUAL_ANCHORS.md`；Tech `v0.1/TECH_DESIGN.md`（均位于对应deliverables任务目录） | 三份首批Required非空实存，仅文档开工；Gate1准确方案核准/同批预签均待。六店既有纹理理论48MiB，40MiB总目标尚未实测。
+
+2026-10-13 21:53:09 +08:00 | `SCENE-SAKURA-REDRAW-FLOW-20261013` / `SCENE-SAKURA-REDRAW-REUSE-20261013` / `SCENE-SAKURA-REDRAW-PREFLIGHT-20261013` | Master三Task已建、用户授权范围登记；Producer READY→IN_PROGRESS | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md`、三Task、`deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/CONTINUITY_CHECK.md` | Producer首份Required实存；Art/Tech尚无各自首份Required，保持READY。Gate1等价方案/哈希待Master核准，首图预签与Gate2未到，Creator运行NOT_TESTED。
+
 2026-10-10 22:22:26 +08:00 | U04-DIALOGUE-CORNER-REVISION-001 | v0.2复杂候选退回；v0.3 REVISION→USER_REVIEW | `deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.3/concept/corner_simple_concept.png`、`README.md`、`DELIVERABLE.json`；`deliverables/master/U04-DIALOGUE-CORNER-REVISION-001/v0.3/MASTER_REVIEW.json`、`CONCEPT_ACCEPTANCE.json`；现行Task/Approval | 三项验收PASS、Master仅接受概念送审、3/3 SHA一致；待用户判断新图，不解锁正式生产或Client替换。
 2026-10-10 22:14:25 +08:00 | `U04-DIALOGUE-CORNER-REVISION-001` | v0.2 REVISION→IN_PROGRESS / TASK_STARTED | `deliverables/art/U04-DIALOGUE-CORNER-REVISION-001/v0.2/concept/corner_original_concept.png`、`README.md`、`DELIVERABLE.json` | 首份Required实图及说明/交付记录实存；Art自审与Master接受待，Approval DRAFT，仅设计候选。
 2026-10-10 22:12:21 +08:00 | `U04-DIALOGUE-CORNER-REVISION-001` | v0.1方案USER_REVIEW→退回留档；v0.2 REVISION | `tasks/U04-DIALOGUE-CORNER-REVISION-001/TASK_v0.1_user_review.json`、`ARTIFACT_APPROVAL_v0.1_user_review.json`；现行`TASK.json`、`ARTIFACT_APPROVAL.json` | 用户要求原创实际候选；v0.2尚无Required实图，本轮仅设计判断，正式资源与Client替换不解锁。

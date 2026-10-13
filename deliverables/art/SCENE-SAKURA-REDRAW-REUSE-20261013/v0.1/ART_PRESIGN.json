@@ -1,0 +1,33 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1",
+  "owner": "art",
+  "status": "SAMPLE_ONLY_PRESIGNED",
+  "signed_at": "2026-10-13T22:01:14+08:00",
+  "bound_inputs_sha256": {
+    "ART_BRIEF.md": "eb978be55b9a174a0a045f125980fcc0c1e8a713febbc2cc50f936bedd8bbdca",
+    "PRODUCTION_PLAN.md": "4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562",
+    "VISUAL_ANCHORS.md": "fbd3e024478a9449e8e1d753db4ace661bbad7ff6842571d813699046a2fc2b0",
+    "ASSET_MANIFEST.md": "6abbc61a23cc2b44333cf6cc2c27ee48746633ca81f4c5cb83d35f16f34e98d8",
+    "reference/user_reference_3072x1024.png": "6f79a1e5b14c0b73e0952ad0810456ac94cd3bb8192db0f91d1ee73830fcfcbf"
+  },
+  "gate1": "Master reviewed equivalent user authorization; Producer version-specific USER_APPROVED record required before first image",
+  "scope_amendment": {
+    "file": "USER_SCOPE_NO_SHOP_OUTPUT.md",
+    "sha256": "954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b",
+    "effect": "User's latest instruction makes final deliverables environment only: no six-shop PSD layers, no shop PNG export, no shops in final environment preview or reassembled cut image. Existing shop body/sign are read-only checks; already made with-shop sample images remain historical evidence only. Frozen Gate1 files are not modified.",
+    "signed_by_art": true
+  },
+  "first_image_scope": "One newly drawn complete single round arch bridge and wide street, no shops, no reference crop. Preserve native output. Align within 3072x1024 source canvas, split at x=1536, retain left half and mirror for the right, verify one continuous arch and existing six shop footpoints. Target half bounds <=1536x512; source native resolution reported as returned, no invented detail.",
+  "visual_checks": [
+    "same-background and 3072x1024 1:1 comparison with frozen user reference and rejected old version",
+    "one round arch with continuous crown, open water channel, paired warm lamps",
+    "wide walkable street and unchanged positions/scale of existing six shops",
+    "soft hand-painted stone and lighting, without mechanically repeated brick grid"
+  ],
+  "source_and_rights": "User states reference is project generated or owned and permits game resource production. The original is visual reference only; shops use existing body/sign sources and are excluded from generation. No external unlicensed image or new font.",
+  "tools_and_limits": "Built-in image_gen, then deterministic PNG handling and bggg-creator-image2psd assemble. Initial sample counts as 1 of 11 initial calls; correction <=4, total <=15, <=2 rounds per same issue, production/verification <=4h excluding user wait; unknown result reserves budget and must be queried before repeat.",
+  "implementation_note": "Sky and far mountain runtime slices will be distinct non-mirrored left/right pieces <=1536 pixels wide; this does not move or duplicate the moon. Spirit flame later separates from stationary lily/reflection within each of two prototype source groups.",
+  "release_condition": "Do not create the first image until Producer Gate1 record and Tech Lead same-hash sample presign are present and Master explicitly releases. Full batch requires Art sample visual review, Tech actual sample review, and both full-batch continuations.",
+  "actual_image_or_performance_measurement": "NOT_TESTED"
+}

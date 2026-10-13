@@ -1,0 +1,23 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "batch": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1",
+  "signed_at": "2026-10-13T22:33:38+08:00",
+  "decision": "APPROVED_FOR_REMAINING_TEN_SOURCE_GROUPS",
+  "gate1_plan_sha256": "4554a3b106b66a1cb159c45408b7a66857b9297ecf15e3c54a266b4af3803562",
+  "reference_sha256": "6f79a1e5b14c0b73e0952ad0810456ac94cd3bb8192db0f91d1ee73830fcfcbf",
+  "scope_amendment_sha256": "954b3a3f1fe260fc7fb2d2f90423b1290e623cb4f1df9935293dc1c9313ba67b",
+  "art_continuation": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_FULL_BATCH_CONTINUATION.json",
+  "art_continuation_sha256": "a72246a4136c0fddd2af074def67b632d91942f5c1316a69c28ce30ede1c874a",
+  "tech_sample_check": "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json",
+  "tech_sample_check_sha256": "4e3bd7fa1527c8b8c46af89f20affd7bb68bae7e17c412fab402220a5326fa25",
+  "selected_bridge_half": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/exports/tex_sakura_rr_bridge_correction_02_half.png",
+  "selected_bridge_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+  "conditions": [
+    "仅继续冻结方案余十个环境源组；街桥采用此r2半幅，先完整新绘单拱再切半的源链和参考不得静默更换。若更换桥源、工具、尺寸或资源范围，下一张图前重核受影响预签。",
+    "天空与远景非镜像，运行片各最大宽1536；街桥/水栏半幅镜像；两树两水灵原型按授权缩放错位，水灵火焰与固定莲座/倒影可分层。最终PSD、PNG和正式环境预览均不输出六店。",
+    "11个初始调用中剩余10个，4个修正调用中剩余2个，总剩余最多12次；同一桥保真问题自动修正2轮已满，不能为同一缺陷再自动调用。4小时制作/核验总上限继续累计，未知结果保守记预算。",
+    "代表样张的RGBA8单份展开3MiB；整环境导出上限表算术值34.40MiB，不代表实际驻留。总场景40MiB/12批次待正式接入后核；本轮无Creator或目标机运行。",
+    "完整环境仍须Art在同背景、同3072×1024画幅和实际尺度核视觉锚点；PSD真实层、alpha、镜像接缝、源→切片→重组可见像素差异及静态CPU微动预览须形成真实证据。自产切片直接交用户Gate2，不额外设置成品效果专业复审。"
+  ],
+  "not_tested": ["余十组实图", "完整环境风格与遮挡", "PSD与切片重组", "Creator导入、真实纹理驻留、绘制批次与目标机运行"]
+}
