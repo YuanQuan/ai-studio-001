@@ -1,0 +1,20 @@
+{
+  "task_id": "MILK-TEA-THREE-CATEGORY-CHANGE-20261013",
+  "owner": "product",
+  "summary": "记录奶茶小游戏取消甜度/冰量、固定茶奶小料三类及幻想品种方向的变更影响，提供三类视觉候选和修订草案；未改现行配置或实现。",
+  "artifacts": [
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/PRD.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/CANDIDATE_CATALOG.md",
+    "deliverables/product/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "明确所有难度固定茶/奶/小料三类，取消甜冰，按各类品种扩展加难，不把一单一杯改成整局一杯", "result": "PASS", "evidence": "PRD.md 已确认变更与单局循环；CANDIDATE_CATALOG.md 扩展节点仍标候选"},
+    {"criterion": "列明旧PRD、配置/生成器、U05实现/测试和UI视觉的受影响内容及不改动范围", "result": "PASS", "evidence": "CHANGE_IMPACT.md 影响矩阵与保持不变段"},
+    {"criterion": "提出每类少量原创百鬼夜市幻想品种与可辨颜色形态，明确名称/扩展阶段为候选，不用现实原料或商业IP", "result": "PASS", "evidence": "CANDIDATE_CATALOG.md 每类三个候选及颜色形态；PRD.md 待决和知识产权边界"},
+    {"criterion": "规格草案承接未变的计时、经验、解锁等已批规则，不改奖励数值、数据或代码", "result": "PASS", "evidence": "PRD.md 单局循环与未变规则；本任务只新增四份 Product 文件"}
+  ],
+  "assumptions": ["各类品种名称、数量和加入档位均是讨论候选，不构成已批准运行配置。"],
+  "risks": ["旧五维正式 PRD、现行配置和 U05 实现与新方向冲突，须在后续获批规格与跨角色评审后迁移，不能直接复用旧运行验收。"],
+  "status": "READY_FOR_REVIEW"
+}

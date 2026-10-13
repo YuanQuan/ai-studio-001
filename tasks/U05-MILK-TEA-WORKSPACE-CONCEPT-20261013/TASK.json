@@ -4,32 +4,35 @@
   "type": "art",
   "owner": "art",
   "parent": "SIX-SHOP-MINIGAMES-20261012",
-  "objective": "提供三个独立竖屏效果图，以奶茶制作者视角呈现工作区，供用户选择；本轮不制作正式资源或接入代码。",
+  "objective": "参考用户截图的店内制作视角，以现有奶茶店外观与游戏画风绘制三版v0.2：店外顾客点单、茶奶小料三类百鬼幻想原料、点击选料合成。",
   "inputs": [
     "用户2026-10-13明确要求先出3版奶茶制作者工作区界面效果图",
     "project/ART_GUIDE.md",
     "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/PRD.md",
     "deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/browser-final-small-game.jpg",
     "rules/visual_production_contract.md",
-    "rules/visual_fidelity_compute_contract.md"
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/master/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/USER_DIRECTION.md",
+    "/var/folders/cf/03jww3lx7b3ggg3l_9sh64x00000gn/T/codex-clipboard-40ae5d94-8930-4966-9e71-5e1c58523fe2.png",
+    "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png"
   ],
   "deliverables": [
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/ART_BRIEF.md",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/DESIGN_RATIONALE.md",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/ASSET_MANIFEST.md",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/PROMPTS.md",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/REFERENCE_AND_RIGHTS.md",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_A.png",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_B.png",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/concept_C.png",
-    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/DELIVERABLE.json"
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/ART_BRIEF.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/PROMPTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_A.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_B.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_C.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "三张独立真实生成的竖屏界面图，各有不同工作区组织，不是同图换色",
-    "玩家位于摊位内部制作一侧，工作台、制杯区、原料和订单清晰可见",
-    "保持已确认玩法，五维原料、订单、时间、杯数、查配方、撤销和交杯有明确位置，不新增必做步骤",
-    "原创非像素中式可爱插画，木材、浅纸和暖灯与项目关联，手机阅读层级清楚",
-    "保存实图、最终提示词、来源和资源清单，明确概念与正式资源边界，Master独立看图后供用户选方向"
+    "三张独立竖屏概念均采用参考的店内制作视角，顾客明确在柜台外点一杯，柜内工作区在前景",
+    "明确只显示茶、奶、小料三类，以幻想品种替代现实原料；不出现甜度或冰量控件",
+    "沿用当前奶茶店蓝瓦/木框/布帘/灯笼及游戏非像素插画，不另造写实室内或复制参考角色/IP",
+    "三版在参考固定视角下提供不同原料摆放组织，杯子、点选状态、顾客订单和合成/交杯入口清楚",
+    "简短固定产物齐全，真实参考/提示词/图片哈希可追溯，明确品种候选与概念资源边界"
   ],
   "dependencies": [
     "MILK-TEA-MINIGAME-SPEC-20261012"
@@ -37,11 +40,10 @@
   "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
-    "用户授权本轮概念生成，不再询问开工许可；只做三版效果图，未选方向前不做生产PSD、切片或接入。",
-    "三图用同一困难档五维制作局示意；摇杯和封口机是主题陈设，不能变成新增必做步骤。",
-    "工作区内景不改变主体夜市长街镜头；店长造型未锁定，不引入新店长人物。",
-    "内置image_gen每个方案分别生成，先保存Brief与来源；明确缺陷才针对性修订，控制制作预算。",
-    "当前U05成品仍待审核，本请求不解读为旧成品批准。",
-    "不改client、正式资源或ART_GUIDE；保护并行差异，不Git。"
+    "用户已确认3类与幻想主题，直接修订概念，无需重复开工审批；五维及现实品种说明仅保留历史。",
+    "本轮不改正式资源、配置表或代码；只生图和设计影响记录。每单1杯不等于改变整局目标。",
+    "顾客采用现有游戏友好幽灵语言，外部截图仅参考通用视角与布局，禁止照搬猪顾客或品牌。",
+    "原料名称先是视觉候选，不锁业务数值；可由Art在概念中提出，并与Product候选说明核对。",
+    "Art只维护本任务v0.2与必要历史，不Git；Master负责范围核验与日常提交。"
   ]
 }

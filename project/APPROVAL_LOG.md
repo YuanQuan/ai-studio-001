@@ -499,3 +499,12 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - 用户已授权 Art 制作三版候选概念，不等于批准任何具体效果图。新 Task `READY`，尚无本版图像 Artifact 专业 Review 或用户选择；旧 U05 Client v0.1 审批继续 `USER_REVIEW`。PSD、切片和代码接入未授权。
 - Art v0.1 三张真实 PNG 与其余六项 Required 共九文件、Master 同版 Review 共十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.1.json`；Master `APPROVED` 仅具送审条件，审批与 Task 为 `USER_REVIEW`、`decided_at=null`。A/B/C 各自 SHA 见审批，用户尚未选方向；旧 U05 可玩成品仍待审，正式资源门禁不变。
 <!-- U05-WORKSPACE-CONCEPT-20261013 END -->
+
+<!-- U05-FANTASY-REVISION-20261013 START -->
+## 2026-10-13｜U05 概念返工审批
+
+- `U05-MILK-TEA-WORKSPACE-CONCEPT-20261013` v0.1 准确十文件审批转 `REJECTED`：用户要求新布局及三类幻想原料，并未选择原三张图。v0.2 审批 `DRAFT`，待新包与 Review。
+- Product 三类规则候选尚未评审/获用户批准；旧 U05 可玩 v0.1 仍 `USER_REVIEW`，不能据旧版本声称新规则已实现。
+- Product 三类变更 v0.1 四份 Required + Master Review 的五文件 SHA 记录见 `tasks/MILK-TEA-THREE-CATEGORY-CHANGE-20261013/ARTIFACT_APPROVAL_v0.1.json`，状态 `USER_REVIEW`，`decided_at=null`；仅草案送审。
+- Art v0.2 九 Required + Master Review 十文件 SHA 绑定 `tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.2.json`，状态 `USER_REVIEW`、`decided_at=null`；v0.1 `REJECTED` 保留。Product 草案独立 `USER_REVIEW`，两审批不互代；正式美术/代码尚未解锁。
+<!-- U05-FANTASY-REVISION-20261013 END -->

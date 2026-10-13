@@ -895,3 +895,14 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Art Owner 已正式提交 v0.1 `READY_FOR_REVIEW`，三图和九项 Required 实存、五项验收同序 PASS；Producer 将 Task `IN_PROGRESS→REVIEW`。Master 独立实图 Review 尚待；A 初稿留历史，当前 A/B/C 为送审候选，不推断用户选择。
 - Master 已独立看三张实图，同版 `deliverables/master/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.1/MASTER_REVIEW.json` APPROVED，仅准概念方向送审。Producer 核九 Required 与 Review 共十文件 SHA，`tasks/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/ARTIFACT_APPROVAL_v0.1.json` 为 `USER_REVIEW`、`decided_at=null`，Task `REVIEW→USER_REVIEW`。C 图去冰视觉歧义记后续 UI 细化，不替用户选方向；旧 U05 成品仍 `USER_REVIEW`。Continuity check：到达真实用户门禁，无本线空转 READY/IN_PROGRESS；PSD、切片、代码未解锁。复盘 `WR-20261013-U05-WORKSPACE-CONCEPT-001`。
 <!-- U05-WORKSPACE-CONCEPT-20261013 END -->
+
+<!-- U05-FANTASY-REVISION-20261013 START -->
+## 2026-10-13｜U05奶茶三类幻想原料与工作区返工
+
+- 用户改向：顾客在店外上方、玩家在店内制作，沿现有店外观与画风；所有难度固定茶底、奶类、小料三类，取消甜度/冰量，逐档增加幻想品种。具体品种名单尚属 Product 候选，不视为正式规则/资源批准。
+- Art 概念 v0.1 审批因改向记 `REJECTED`，十文件 SHA 历史保留；Task `REVISION`，新 v0.2 审批 `DRAFT`，待实际 Brief 开工与三图。Product `MILK-TEA-THREE-CATEGORY-CHANGE-20261013` 首份 `CHANGE_IMPACT.md` 实存，Task `READY→IN_PROGRESS`，待完整同版包与评审。
+- 旧 U05 五维可玩示例仍 `USER_REVIEW`，尚不适配新三类规则，本轮无代码修改。Continuity：Product 有当前产出；Art 返工已分派，待首份 v0.2 Brief；两线需继续至实际专业 Review 后送 `USER_REVIEW`。
+- Art v0.2 `ART_BRIEF.md` 与 `REFERENCE_AND_RIGHTS.md` 已实存，Task `REVISION→IN_PROGRESS`；三张返工实图与同版 Review 待续。
+- Product v0.1 四份 Required 与同版 Master Review APPROVED，审批准确五文件 SHA，Task `REVIEW→USER_REVIEW`；仅送审草案，具体幻想品种与数值未获批准。
+- Art Owner 正式提交 v0.2，九 Required 加同版 Master 实图 Review APPROVED 共十文件 SHA 已绑定 `ARTIFACT_APPROVAL_v0.2.json`；Task `IN_PROGRESS→REVIEW→USER_REVIEW`。Product v0.1 亦在 `USER_REVIEW`。Continuity check（2026-10-13T21:41:21+08:00）：两线均达真实用户审批门禁，无本线空转 READY/IN_PROGRESS；PSD、切片、正式资源与旧 U05 代码迁移未授权。
+<!-- U05-FANTASY-REVISION-20261013 END -->

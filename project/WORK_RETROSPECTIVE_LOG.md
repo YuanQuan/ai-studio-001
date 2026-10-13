@@ -983,3 +983,14 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Master 将三张实际图及对应布局差异一同呈用户选方向，复核点为用户对准确 v0.1 的决定；Art 在后续 UI 细化时核 C 图去冰表达，代价一次局部语义对照，复核点为选定方向后的 UI 规格。此建议不新增 PSD 或资源制作门禁。
 - Continuity check：Art 已到真实 `USER_REVIEW`，无本线空转 READY/IN_PROGRESS。概念未获用户选择，PSD、切片、代码与正式资源仍未授权；旧 U05 可玩成品另在 `USER_REVIEW`，二者不相互批准。
 <!-- U05-WORKSPACE-CONCEPT-20261013 END -->
+
+<!-- U05-FANTASY-REVISION-20261013 START -->
+## WR-20261013-U05-FANTASY-REVISION-001｜进行中快照
+
+- 结果：新方向已记录；Art v0.1 因范围改向退回，Product 首份影响文档实存。用户原消息精确时间、角色净工时与返工耗时未知，待两线送审后补齐可核时段。
+- 影响：旧概念布局与五维原料不适配新方向，需重新出三图及产品变更包；未发现可量化工具故障。
+- 建议：Art 以现有店面/画风及截图逐图核布局，Product 逐项区分已确认三类与候选品种；由 Master 在同版 Review 时复核。Continuity：Product 正产出，Art 待 v0.2 Brief 实产，均不可空置至结束。
+- 续记：Art v0.2 Brief 与权利说明首产已核，执行证据明确；实图制作时间及完成时间待核。
+- Product 送审节点：四件交付和 Master Review 实存、五 SHA 绑定；Art 继续制作。Product 净工时与用户等待时长未知。
+- 最终结果：Product 四件草案与 Art 九件/三实图均经 Master 同版 Review APPROVED，分别进入 `USER_REVIEW`；旧 Art v0.1 因用户改向留 `REJECTED` 历史。可核最早本轮 Producer 读取约 21:28:40 +08:00，Product DELIVERABLE mtime 21:31:21、Art DELIVERABLE mtime 21:37:27，本轮 Producer 收尾 2026-10-13T21:41:21+08:00；用户原消息、各角色净工时及完整等待拆分未知，不能据文件 mtime 归责。返工原因是用户重定布局与原料维度，未见可量化工具故障。建议 Master 并列呈两版准确草案/实图供用户决定，复核点为两个 v0.1/v0.2 审批结果；后续再由 Product/Art 按获批结果细化，避免候选品种流入正式资源。Continuity check：两线均在真实 `USER_REVIEW`，无空转 READY/IN_PROGRESS。
+<!-- U05-FANTASY-REVISION-20261013 END -->

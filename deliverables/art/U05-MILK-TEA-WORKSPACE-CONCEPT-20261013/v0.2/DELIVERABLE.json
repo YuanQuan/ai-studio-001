@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-MILK-TEA-WORKSPACE-CONCEPT-20261013",
+  "owner": "art",
+  "summary": "按最新三类幻想原料与店内制作者视角完成v0.2三版独立竖屏概念：A格盘、B两侧备料架、C分层抽屉，提交Master Review与用户选方向。",
+  "artifacts": [
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/ART_BRIEF.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/DESIGN_RATIONALE.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/PROMPTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_A.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_B.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/concept_C.png",
+    "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "三张独立竖屏概念均采用参考的店内制作视角，顾客明确在柜台外点一杯，柜内工作区在前景", "result": "PASS", "evidence": "A/B/C三张1024×1536实图逐张目视检查；上方外侧白幽灵与一杯三图标订单、中段备料、近侧空杯。"},
+    {"criterion": "明确只显示茶、奶、小料三类，以幻想品种替代现实原料；不出现甜度或冰量控件", "result": "PASS", "evidence": "三图中只有茶／奶／小料标签及幽灯茶、月雾茶、云魄乳、霜铃乳、鬼火珠、梦纹冻候选；无甜度或冰量分组。"},
+    {"criterion": "沿用当前奶茶店蓝瓦/木框/布帘/灯笼及游戏非像素插画，不另造写实室内或复制参考角色/IP", "result": "PASS", "evidence": "三图实图均见蓝瓦檐、木框、米布帘、暖灯与悬杯；顾客为项目友好白幽灵，没有猪顾客与参考图的外部HUD。"},
+    {"criterion": "三版在参考固定视角下提供不同原料摆放组织，杯子、点选状态、顾客订单和合成/交杯入口清楚", "result": "PASS", "evidence": "A格盘、B两侧备料架、C分层抽屉，三张均见选中发光、空杯、订单气泡、查看配方／撤销／确认交杯。"},
+    {"criterion": "简短固定产物齐全，真实参考/提示词/图片哈希可追溯，明确品种候选与概念资源边界", "result": "PASS", "evidence": "ART_BRIEF、DESIGN_RATIONALE、ASSET_MANIFEST、PROMPTS、REFERENCE_AND_RIGHTS与三PNG均保存，哈希见清单；当前只交概念。"}
+  ],
+  "assumptions": [
+    "每类先显示两种与一处空扩展位只是概念可读性示意，不批准真实开放数量或解锁节点。",
+    "订单2/3与01:48是保留既有单局三杯与限时方向的示意局面，不表示新版产品数值批准。"
+  ],
+  "risks": [
+    "幻想品种名称、配方、稳定ID、解锁数值仍由Product后续正式规格决定；不能从图反向更新业务配置。",
+    "生成图片不是正式字体、PSD、切片或运行资源；尚无客户端同尺度验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

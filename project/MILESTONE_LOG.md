@@ -960,3 +960,15 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PROFESSIONAL_REVIEW_APPROVED`：Master 同版 `MASTER_REVIEW.json` 在独立看 A 修订、B、C 三实图后 APPROVED，仅准本版概念送审；C 图去冰歧义列后续 UI 细化，不作本轮阻塞。
 - `USER_REVIEW`：Producer 绑定九 Required 与 Master Review 共十文件 SHA，创建 `ARTIFACT_APPROVAL_v0.1.json`、Task `REVIEW→USER_REVIEW`；用户未选方向。Continuity check 到达真实用户门禁，旧 U05 成品审批不变。
 <!-- U05-WORKSPACE-CONCEPT-20261013 END -->
+
+<!-- U05-FANTASY-REVISION-20261013 START -->
+## 2026-10-13｜U05 幻想原料改向
+
+- `USER_DIRECTION_RECORDED`：Master `v0.2/USER_DIRECTION.md` 与项目决策已记录店外顾客、店内制作、固定三类幻想原料；具体品种待 Product 提案。
+- `CONCEPT_V0.1_REJECTED`：原 Art v0.1 审批仅由 `USER_REVIEW→REJECTED`，原 SHA 留存；Task 进入 `REVISION`，v0.2 仍 `DRAFT`。
+- `PRODUCT_TASK_STARTED`：Product v0.1 `CHANGE_IMPACT.md` 实存，三类变更 Task `READY→IN_PROGRESS`；Art v0.2 实产、两线提交及同版 Review 待续。
+- `ART_REVISION_STARTED`：v0.2 Brief/参考权利说明实存，Task `REVISION→IN_PROGRESS`。
+- `PRODUCT_USER_REVIEW`：四份 Required 加 Master Review 共五文件 SHA 已绑定 `ARTIFACT_APPROVAL_v0.1.json`；Task `REVIEW→USER_REVIEW`，候选品种不视为已定。
+- `ART_V0.2_SUBMITTED`：Owner 九 Required 和三张新实图正式提交，Task `IN_PROGRESS→REVIEW`。
+- `ART_V0.2_USER_REVIEW`：Master 同版实图 Review APPROVED；Producer 绑定九 Required 与 Review 十文件 SHA，Task `REVIEW→USER_REVIEW`。两线均待用户审批。
+<!-- U05-FANTASY-REVISION-20261013 END -->
