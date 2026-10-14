@@ -1373,4 +1373,12 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PATCH03_ONLY_CANDIDATE_REVISE_STOP`：唯一PNG SHA256 `3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6`；像素框外0/框内donor差异0，Art仍见框外旧杯残线。08:57:54–09:00:03 UTC约129秒，超Tech120秒硬停止线约9秒。Art/AssetTech/Client BLOCKED，无FULL/PSD/Gate2/新运行；后续完整旧杯替换待新决定。
 - `PATCH03_FLOW_AUTO_DONE`：Master `MASTER_PATCH03_FLOW_REVIEW.json`接受失败跟踪，Producer v0.2 FLOW DONE；Art预算/视觉FAIL与三Owner BLOCKED保持。
 - `FULL_CUP_PLAN_USER_REVIEW`：Master方案 `REVIEW_PACKET.md`、`SOURCE_SCOPE.json`、Tech `NEXT_CUP_SCOPE_FEASIBILITY.md` 三SHA锁定，DELIVERABLE与审批实存；仅申请完整旧杯框一次候选及累计预算80分钟，当前USER_REVIEW，未制作。
+- `FULL_CUP_PLAN_USER_APPROVED`（Producer 18:01:27 +08:00登记）：用户明确“批准完整旧杯方案，继续制作”，三SHA复核，旧待审快照保留；仅一次[405,1080,210,260]候选、代表70/FULL10/总80分钟累计。Art/AssetTech READY待首产与预算/同批预签，Client BLOCKED等Gate2。
+- `FULL_CUP_BUDGET_BOUND_REFRESH`：Art自身完整turn至09:06:57 UTC累计保守活动上界4036.021秒，10:01:03.289 UTC起新turn动态续计；净活动UNKNOWN，候选开始前核可完成时限，等待不扣。
+- `PATCH04_FLOW_V03_STARTED`：新Master Task三Required实存IN_PROGRESS；旧v0.1/v0.2保留。八turn总保守上界4036.021秒中，Art 09:04:49–09:06:57 UTC 127.941秒经工具核仅失败文档交接可排除，制作/诊断上界3908.080秒；新turn动态续计，预算放行待即时复核。
+- `PATCH04_REP_LOCAL_PASS`：唯一PNG SHA b5872329cb7cbf083c6e2f167c294ab8c7064f650f065f1a8706ed482c3772b9；ROI18606改、框外0、donor差异0；Art自查/Tech元数据PASS，37秒<90硬线。代表turn79.153秒已含37秒，保守累计4154.944秒。Art/AssetTech IN_PROGRESS，FULL签待、Client BLOCKED等Gate2。
+- `PATCH04_FULL_SAME_BATCH_PRESIGNED`：Art FULL_PLAN/ART_PRESIGN_FULL、Tech TECH_PRESIGN_FULL及Master FULL_BUDGET_AUDIT实存；FULL准备139.044秒、暂停时保守余460.956秒，留60秒收尾。Art已开始脚本/图/PSD制作；成品/Gate2尚待核，Client BLOCKED。
+- `PATCH04_FULL_PARTIAL_STOP`：部分PNG/GIF与70层PSD实存，但72层manifest未对齐、CUT/ASSET/账本不完整；FULL保守上界645.940秒、总4800.884秒，净实际UNKNOWN，制作停止线与60秒收尾要求失守。Art/AssetTech/Client BLOCKED，v0.3 FLOW REVIEW；新收尾方案待Tech只读意见/用户审，未获批准。
+- `ASSET_FINALIZATION_PLAN_USER_REVIEW`：Master `REVIEW_PACKET.md`、`FROZEN_INPUTS.json`、Tech `FINALIZATION_FEASIBILITY.md` 三SHA锁定，DELIVERABLE/审批实存；只申请冻结图像后对齐72层PSD/清单及FULL+5分钟累计预算，未批不生产。
+- `PATCH04_FLOW_AUTO_DONE`：Master `MASTER_PATCH04_FLOW_REVIEW.json`接受Producer v0.3真实跟踪，Task DONE；Art/AssetTech/Client BLOCKED、收尾方案USER_REVIEW不变，预算与Gate2未通过。
 <!-- U05-B-LANDING-20261014 END -->

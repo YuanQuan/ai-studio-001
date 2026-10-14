@@ -1,0 +1,49 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "FULL_PRODUCTION_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/FULL",
+  "decision": "TECH_PRESIGNED_FULL_WITH_ACTIVITY_STOP_LINE",
+  "scope": "已通过PATCH-04代表静底输入后的FULL同批生产预签；非成品元数据PASS、非Gate2批准。",
+  "signed_inputs": {
+    "art_full_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/FULL_PLAN.md",
+    "art_full_plan_sha256": "4e1106c00b726633c0a282397d4ba8bd05fc4f040bd3bd61390a7e6d3e4dafc3",
+    "art_full_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_FULL.json",
+    "art_full_presign_sha256": "26faea3ce4c40568979fad5d9502798707659edd2cb0de8a194e630462c87674",
+    "root_full_budget_audit": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/FULL_BUDGET_AUDIT.json",
+    "root_full_budget_audit_sha256": "aaee2f16daa7dde12a95f1bc56cd62dd932bf810057828ef2c6d57cd89a47393",
+    "patch04_representative_result": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/PATCH04_REP_METADATA_RESULT.json"
+  },
+  "source_sha256_verified": {
+    "static_bare_patch04_rgb_1024x1536": "b5872329cb7cbf083c6e2f167c294ab8c7064f650f065f1a8706ed482c3772b9",
+    "readonly_v02_multilayer_psd": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "customer_body_rgba_332x301": "8e6df8b02697d51fda76fde3c1c083ffc485dd1f9ba2602b25d2845dd2d9d81a",
+    "face_neutral_rgba_332x301": "126d2748eafc49dd737afdf99eba4e9d3514d7370bf1755b1fe24181cf36b2f7",
+    "face_blink_rgba_332x301": "843be71ba3405f4ff22390da293948cb66d8a30b8fa835a1913bc0d68ad08ff1",
+    "face_happy_rgba_332x301": "971157afd6bcd9d97709736b2eb399c9112775d303c26fc04455ca34035268aa",
+    "face_squash_aux_rgba_332x301": "874890e53f1a07b58f10bda8dd906fd08923a23be3b5148849f1592465d91e50",
+    "face_expand_mid_aux_rgba_332x301": "daa4e43c97535af98ca8d850a1c5f158e8bffd3e200b46147c8a9bd2c07c923f"
+  },
+  "locked_technical_conditions": [
+    "保持1024x1536净底及新PSD可编辑层；四脸/必要补间均332x301 RGBA同画布、源左上(309,484)、脚点(475,785)、anchor(0.5,0)，不trim。只在批准脸ROI局部增加FACE_DISAPPOINTED，补间不是新增情绪。",
+    "窗口Mask[260,278,490,505]、停靠x309到离窗x-72真实381px，入/出各450ms；气泡入场完成显、出场开始收；0–80/80–150/150–300ms局部脸节奏与旧业务判定时点不变。",
+    "完整重组须含旧12原料和标签、艺术字、三槽台面实际选料、确认后650ms合成、目标杯围绕(653,416)整组0.78；PSD/切片/同尺度reconstructed、component_sheet及覆盖入场/正确/错误/超时/主动退出分支GIF须记录真实SHA、层事实、Client计划路径和未导入UUID。",
+    "旧PSD只读，PATCH-04已签净底作新层；旧独立层和源像素不因制作PSD被整图覆盖。自产切片完成后直接交用户Gate2，不新增效果专业复审门禁；Gate2前Client不正式导入。"
+  ],
+  "budget_release": {
+    "representative_cumulative_upper_seconds": 4154.944,
+    "total_remaining_lower_seconds_at_full_start": 645.056,
+    "full_start_utc": "2026-10-14T10:09:07.956Z",
+    "art_presign_pause_utc": "2026-10-14T10:11:27Z",
+    "full_elapsed_conservative_before_pause_seconds": 139.044,
+    "full_remaining_conservative_seconds_at_pause": 460.956,
+    "full_limit_seconds": 600,
+    "total_limit_seconds": 4800,
+    "closing_check_buffer_seconds_min": 60,
+    "production_before_closing_buffer_seconds_max_at_pause": 400.956,
+    "actual_net_activity": "UNKNOWN",
+    "stop_rule": "从恢复FULL活动时继续累计；纯等待须有起止证据单列。最晚到FULL累计540秒转入检查收尾，累计600秒或总80分钟边界即停，未完成项标NOT_TESTED，不先做完再追认。"
+  },
+  "image_gen_calls_used": 0,
+  "not_tested": ["FULL新脸/PSD/最终切片/重组/GIF尚未制作或核验", "Gate2、Creator导入及Web运行尚未验证"]
+}

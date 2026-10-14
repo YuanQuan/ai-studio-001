@@ -1,0 +1,29 @@
+{
+  "id": "U05-B-ASSET-FINALIZATION-PLAN-20261014",
+  "title": "U05现有资源母版与清单对齐收尾",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "在冻结现有PNG/GIF的前提下提交母版/清单对齐与额外5分钟预算的具体方案。",
+  "inputs": [
+    "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/FULL_PARTIAL_RESULT.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/psd_manifest_full.json"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "已有产物、母版缺口和冻结范围可核",
+    "不新画图、预算不清零、对齐与停止线明确"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Producer新方法计划版本记录、实际FULL停工收尾事实、原Art/Tech/Client阶段及五U05共享marker。Art已停，不制作下一图/母版。",
+    "三待审文件SHA锁APPROVAL_HASHES.json且DELIVERABLE实存，审批USER_REVIEW；冻结现有PNG/GIF，用户决定前不制作。"
+  ]
+}

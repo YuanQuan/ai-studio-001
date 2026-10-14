@@ -675,3 +675,17 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 
 完整母版：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/scene_sakura_reuse_master.psd`，3072×1024/45层，SHA-256 `1a0c525d679b5dbcbda7812ce97bba8401698c1d3fe0ace45f39b82a449d3d49`。ZIP：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/package/SCENE_SAKURA_BRIDGE_SHAPE_GATE2_v0.5.zip`，SHA-256 `7940384a1e450a1385ef0285004f1742902cdefe492743d959a66c4eb6db45fd`。Client导入后需回填实际正式路径与真实UUID，未导入不得填计划值冒充。
 <!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 ASSET_REGISTRY END -->
+
+<!-- U05-INTERACTION-ASSETS-20261014 START -->
+## U05交互资源 v0.1｜部分实存，Gate2未就绪
+
+来源：`deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/FULL_PARTIAL_RESULT.json` 已核部分文件 SHA/大小；Art 当前 `deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/CUT_MANIFEST.json` 标为 `PARTIAL_BLOCKED_NOT_GATE2_READY`，该旧清单尚未同步本轮FULL新增件，不能当最终清单。现有PNG/GIF冻结待收尾方案决定；70层PSD与72层 `source/psd_manifest_full.json` 未对齐，均不能作为正式资源Gate2。下表的客户端路径仅为沿用本项目 `u05_b` 目录的**计划**，尚未导入；全部无实际UUID。
+
+| 稳定资产ID/用途 | 美术实际路径与版本 | SHA-256 | 客户端计划路径／真实UUID | 当前状态 |
+|---|---|---|---|---|
+| `STATIC_BARE_LOCAL_CLEAR`／已净底 | `deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/STATIC_BARE_PATCH04.png`／v0.1 | `b5872329cb7cbf083c6e2f167c294ab8c7064f650f065f1a8706ed482c3772b9` | 计划 `apps/client/assets/resources/u05_milk_tea/u05_b/STATIC_BARE_LOCAL_CLEAR.png`；UUID未导入 | 代表局部PASS；FULL/Gate2未通过 |
+| `FACE_DISAPPOINTED`／失落脸 | `deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/FACE_DISAPPOINTED.png`／v0.1 | `7a99a4e92c485a9373a222f3f6819cd8bf4237e7e129cc299befef6b5001fc48` | 计划 `apps/client/assets/resources/u05_milk_tea/u05_b/FACE_DISAPPOINTED.png`；UUID未导入 | 部分实存；完整身份/效果未审核 |
+
+部分审阅文件：`review/reconstructed.png` SHA `eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a`、`review/component_sheet.png` SHA `81b936daaa11ddd359838cbe99a0d7f9f610d576f21971c0d89121f42e838575`、44帧 `review/animation_preview.gif` SHA `d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57`，均为美术审阅件，无客户端导入计划或UUID。当前 `source/workspace_b_full.psd` SHA `dcfafd506f84157c68307fc959d03f59ffbeba7633db8cf21f52c02b49e6993f`、70层；`source/psd_manifest_full.json` SHA `18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3`、72层。正式PSD及新CUT清单待新方案批准后对齐；旧顾客身体及三脸在现有CUT清单中是 `REPRESENTATIVE_ONLY`，不可凭此登记为最终正式导入。
+当前冻结输入与本批最终资源待审方案见 `deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json` / `APPROVAL_HASHES.json`；当前仅USER_REVIEW，不能把部分实存资源转作已批准接入。
+<!-- U05-INTERACTION-ASSETS-20261014 END -->

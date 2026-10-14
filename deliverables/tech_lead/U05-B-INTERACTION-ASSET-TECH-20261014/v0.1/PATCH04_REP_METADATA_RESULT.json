@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-04",
+  "decision": "REPRESENTATIVE_METADATA_PASS_PENDING_FULL_PRESIGN",
+  "scope": "仅核代表静底源身份、像素边界与制作时间；采用Art Owner的视觉自查PASS，不新增效果复审门禁。",
+  "art_review": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH04_REVIEW.md",
+  "metrics": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH04_METRICS.json",
+  "candidate": {
+    "path": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/STATIC_BARE_PATCH04.png",
+    "sha256_verified": "b5872329cb7cbf083c6e2f167c294ab8c7064f650f065f1a8706ed482c3772b9",
+    "canvas": [1024, 1536],
+    "mode": "RGB8",
+    "base_sha256_verified": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+    "donor_sha256_verified": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "pixel_contract_independently_checked": {
+    "roi_xywh_source_px": [405, 1080, 210, 260],
+    "inside_changed_pixels": 18606,
+    "outside_changed_pixels": 0,
+    "inside_donor_diff_pixels": 0
+  },
+  "activity": {
+    "owner_recorded_start_utc": "2026-10-14T10:06:53Z",
+    "owner_recorded_end_utc": "2026-10-14T10:07:30Z",
+    "owner_recorded_elapsed_seconds": 37,
+    "tech_release_hard_cap_seconds": 90,
+    "within_hard_cap": true,
+    "image_gen_calls": 0
+  },
+  "limits": "代表局部静底通过不等于FULL或具体资源Gate2通过；完整四脸/进出/合成、PSD、切片、重组与完整GIF未在此结果核验。须Art/Tech同PATCH-04 FULL文字复签并另核FULL10分钟与总80分钟活动预算后才能扩批。"
+}

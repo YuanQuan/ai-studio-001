@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-PATCH04-PRODUCTION-FLOW-20261014",
+  "owner": "producer",
+  "summary": "完整旧杯v0.1准确方案已获用户批准，v0.3独立追踪唯一候选、累计预算与新资源Gate2接入门禁。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确方案批准及实际生产阶段可核",
+      "result": "PASS",
+      "evidence": "准确方案批准及PATCH04代表局部PASS、同批FULL预签实存；FULL_PARTIAL_RESULT核现有PNG/GIF/70层PSD与72层manifest缺口，实际FULL停工且Art/AssetTech/Client BLOCKED，非Gate2交付。"
+    },
+    {
+      "criterion": "预算和门禁连续推进、具体资源未批不接入",
+      "result": "FAIL",
+      "evidence": "代表上界4154.944秒；FULL准备139.044秒+闭合制作turn上界506.896秒=645.940秒，比600上限高45.940秒，总上界4800.884秒比4800高0.884秒；净实际UNKNOWN，不把含等待的Owner135秒说法当精确净超时。实际制作阶段越过400.956秒停止线且未留60秒收尾，不能追认。无Gate2、Client仍BLOCKED。"
+    },
+    {
+      "criterion": "五共享文件仅U05块维护，真实节点和简短复盘",
+      "result": "PASS",
+      "evidence": "五共享U05标记同步FULL真实停工、预算保守上界、70/72层缺口及后续新方案待审；v0.1/v0.2历史保留，资源登记仅partial/未导入。"
+    }
+  ],
+  "risks": [
+    "FULL停止线执行失败、70层PSD与72层manifest不一致；不得以部分PNG/GIF作Gate2。",
+    "新具体资源Gate2未批，Client正式导入仍锁；后续整理须等新方案用户决定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

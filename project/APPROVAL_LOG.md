@@ -656,4 +656,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 PATCH-03同批Art/Tech方法预签实存但预算暂缓，仅属生产签认；当前无新具体资源Gate2用户批准。五完整Art turn 3525.352秒保守活动上界可核，当前turn续计，净活动UNKNOWN。
 PATCH-03唯一实图已被Art判REVISE/STOP；原方法USER_APPROVED仍仅对已批准方案有效，不转为这张PNG的Gate2批准。候选SHA256 `3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6`；后续完整旧杯范围未获用户批准。
 完整旧杯框后续方案 `U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1` 的三待审文件SHA锁 `APPROVAL_HASHES.json`，审批USER_REVIEW、用户决定PENDING；只读技术意见不是新批预签。原PATCH-03方法批准与失败实图事实均保留；新范围/80分钟尚未获批。
+2026-10-14 18:01:27 +08:00（Producer登记，用户消息精确秒未知）：用户明确“批准完整旧杯方案，继续制作”（call_1c4d9073ba264a9197c33e23775d504f）；`U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1`三冻结SHA一致，审批USER_APPROVED、旧USER_REVIEW快照保留。批准范围仅完整旧杯框[405,1080,210,260]同源一次候选及累计代表70/FULL10/总80分钟，旧用量不重置；新图Gate2仍未批准。
+PATCH-04代表PASS与FULL部分实存均不是具体资源Gate2批准；70层PSD与72层manifest不一致，成品未送审。现有PNG/GIF冻结，后续母版/清单整理及80→85预算仅Master新方案申请，用户尚未批准；旧准确方案批准保留历史，不外推到缺件资源。
+现有资源对齐收尾方案 `U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1` 三待审文件SHA已锁，审批USER_REVIEW、用户决定PENDING；冻结现有PNG/GIF与72层manifest，申请PSD/清单对齐及总80→85分钟。Tech只读意见不等于生产预签，具体资源Gate2仍未获批。
+内部流程接受：Master `MASTER_PATCH04_FLOW_REVIEW.json`已批准Producer v0.3准确状态记录，FLOW AUTO DONE；非用户对部分资源或收尾方案的批准。Art/AssetTech/Client仍BLOCKED，收尾方案USER_REVIEW，具体资源Gate2仍未批。
 <!-- U05-B-LANDING-20261014 END -->

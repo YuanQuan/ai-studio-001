@@ -1,0 +1,56 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "role": "art",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/FULL",
+  "phase": "FULL_FIRST_IMAGE_AND_PSD_PRESIGN",
+  "decision": "ART_PRESIGNED_WITH_TECH_AND_BUDGET_HOLD",
+  "status": "NO_FULL_IMAGE_OR_PSD_OUTPUT_UNTIL_MATCHING_TECH_PRESIGN",
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/FULL_PLAN.md",
+  "art_plan_sha256": "4e1106c00b726633c0a282397d4ba8bd05fc4f040bd3bd61390a7e6d3e4dafc3",
+  "approved_plan_inputs": {
+    "art_production_plan_sha256": "3efa9129aa747aa9f0d1f008c3c13b6e9e8e6a911ba755f5fb21136dc690ef91",
+    "ui_spec_sha256": "f28750c84f11e3f9c804ecb9f077551d78a2d8bee6efde65a038926f97bde5ef",
+    "patch04_user_approval": "tasks/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "patch04_representative_review": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH04_REVIEW.md"
+  },
+  "source_sha256_verified": {
+    "static_bare_patch04_rgb_1024x1536": "b5872329cb7cbf083c6e2f167c294ab8c7064f650f065f1a8706ed482c3772b9",
+    "readonly_v02_multilayer_psd": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "customer_body_rgba_332x301": "8e6df8b02697d51fda76fde3c1c083ffc485dd1f9ba2602b25d2845dd2d9d81a",
+    "face_neutral_rgba_332x301": "126d2748eafc49dd737afdf99eba4e9d3514d7370bf1755b1fe24181cf36b2f7",
+    "face_blink_rgba_332x301": "843be71ba3405f4ff22390da293948cb66d8a30b8fa835a1913bc0d68ad08ff1",
+    "face_happy_rgba_332x301": "971157afd6bcd9d97709736b2eb399c9112775d303c26fc04455ca34035268aa",
+    "face_squash_aux_rgba_332x301": "874890e53f1a07b58f10bda8dd906fd08923a23be3b5148849f1592465d91e50",
+    "face_expand_mid_aux_rgba_332x301": "daa4e43c97535af98ca8d850a1c5f158e8bffd3e200b46147c8a9bd2c07c923f"
+  },
+  "locked_geometry": {
+    "source_canvas_px": [1024, 1536],
+    "customer_canvas_px": [332, 301],
+    "customer_origin_xy": [309, 484],
+    "customer_pivot_xy": [475, 785],
+    "window_mask_xywh": [260, 278, 490, 505],
+    "offscreen_left_x": -72,
+    "travel_px": 381,
+    "table_slots_xywh": [[345, 1150, 90, 84], [467, 1150, 90, 84], [589, 1150, 90, 84]],
+    "target_cup_scale": 0.78
+  },
+  "scope": "Reuse existing character body, three completed emotion faces and original v0.2 12 ingredients, labels, button and cup layers. Add only local FACE_DISAPPOINTED and necessary local interpolation, final editable PSD, complete reconstructed/component sheet/GIF and manifests. No full-body or whole-scene redraw, no trim, no new font/image source.",
+  "checks": [
+    "Neutral body+face exactly reproduces the original character at anchor; expression changes remain inside approved face ROI.",
+    "A true 381px horizontal in/out movement, 450ms each, with window crop, counter overlap and bubble reveal/hide timing.",
+    "A 0-80ms squash, 80-150ms blink and 150-300ms expansion for happy and disappointed; reverse disappointment recovery.",
+    "The full reconstructed view preserves all 12 stocked ingredients and labels, selected table trio, confirmation button and 0.78 order cup.",
+    "PSD retains full 1024x1536 editable source layers and describes actual modified pixel scope; exports map stable IDs to real files and SHA.",
+    "GIF covers entry, correct, wrong, timeout and voluntary exit branches; no Client-runtime claim."
+  ],
+  "budget": {
+    "full_activity_seconds_max": 600,
+    "representative_activity_minutes_max": 70,
+    "total_activity_minutes_max": 80,
+    "previous_activity": "DO_NOT_RESET; use Root/Tech actual balance and time FULL segment",
+    "end_buffer_seconds_min": 60,
+    "imagegen_used": 0,
+    "imagegen_total_max": 3
+  },
+  "stop_rule": "No FULL production before matching Tech presign; stop at activity cap or failed fidelity, preserve partial artifacts and mark untested truthfully. User Gate2 is required before Client formal import."
+}

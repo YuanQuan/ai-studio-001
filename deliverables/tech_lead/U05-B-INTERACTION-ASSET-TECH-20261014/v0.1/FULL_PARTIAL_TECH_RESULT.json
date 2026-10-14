@@ -1,0 +1,31 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/FULL",
+  "decision": "BLOCKED_PARTIAL_NOT_GATE2_READY",
+  "scope": "只读身份、层数与活动上界核验；不制作或复审美术效果。",
+  "root_evidence": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/FULL_PARTIAL_RESULT.json",
+  "frozen_inputs": "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json",
+  "verified_files": "FROZEN_INPUTS列明的8个已产文件均实存且SHA256匹配，包括FACE_DISAPPOINTED、PATCH04静底、完整UI重组/360x640/组件表、44帧GIF、72层manifest及当前PSD。",
+  "psd_state": {
+    "manifest_path": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/psd_manifest_full.json",
+    "manifest_layer_entries": 72,
+    "existing_psd_path": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/workspace_b_full.psd",
+    "existing_psd_reported_layers": 70,
+    "conclusion": "当前PSD与72层清单不一致；正式PSD层对齐和可读/合成核验未完成。"
+  },
+  "activity": {
+    "representative_conservative_upper_seconds": 4154.944,
+    "full_preparation_conservative_upper_seconds": 139.044,
+    "full_production_turn_upper_seconds": 506.896,
+    "full_cumulative_conservative_upper_seconds": 645.94,
+    "full_limit_seconds": 600,
+    "full_upper_bound_excess_seconds": 45.94,
+    "total_cumulative_conservative_upper_seconds": 4800.884,
+    "total_limit_seconds": 4800,
+    "net_actual_activity": "UNKNOWN",
+    "finding": "已明确Tech纯等待不计；完整制作turn仍按保守上界记录，不能称精确净超时135秒或45.94秒。制作越过先前400.956秒收尾停止线且未留足60秒，按实记录，不追认FULL完成。"
+  },
+  "missing": ["正式72层可编辑PSD", "完整切片与资产登记清单", "更新后的制作账本及Art交付记录", "用户具体资源Gate2批准", "Client正式导入及Creator/Web运行"],
+  "next_action": "保持BLOCKED；收尾新方案在用户审批与同批预签前只读评估，不生产新图或修改源。"
+}

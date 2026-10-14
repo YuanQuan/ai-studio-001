@@ -1,0 +1,43 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "role": "art",
+  "phase": "PATCH04_REPRESENTATIVE_FIRST_IMAGE_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-04",
+  "decision": "ART_PRESIGNED_METHOD_WITH_TECH_AND_BUDGET_HOLD",
+  "status": "NO_IMAGE_UNTIL_MATCHING_TECH_PRESIGN_AND_VERIFIED_ACTIVITY_BALANCE",
+  "user_approval": {
+    "approval_path": "tasks/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "approval_sha256": "1a562e53ba3c4733d9425b2dd9aa38325a1a26e62f7c4671d488e205401ab249",
+    "user_decision": "USER_APPROVED",
+    "decision_call": "call_1c4d9073ba264a9197c33e23775d504f",
+    "frozen_review_packet_sha256": "2b1c4cfb75cb148f85b0b8c7f620544ffcd04bfa9b0ab97f4452677ee50328d9",
+    "frozen_source_scope_sha256": "2ed6d4c7bf0ba7dbc6c0868a04ad3480e9a4379c3fa063092d76367ea8fbdf15",
+    "frozen_feasibility_sha256": "26916f4e7381707b507b353f60ee8d9c6420fb98065bb74579d6853271e48c56"
+  },
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH04_PLAN.md",
+  "art_plan_sha256": "1b2d26dceb74e6a7c785f9ea15583588f9ec2aabe7232d215072d4236a2525df",
+  "source_sha256_verified": {
+    "patch03_base_rgb_1024x1536": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+    "same_project_donor_rgb_1024x1536": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "approved_roi_xywh_source_px": [405, 1080, 210, 260],
+  "method": "Exactly one deterministic, same-coordinate RGB donor copy into the full old cup rectangle of PATCH03 STATIC_BARE; no changes outside rectangle, no feather, threshold, expansion, generation, or independent-layer edits.",
+  "expected_output": "exports/STATIC_BARE_PATCH04.png; one candidate only after same-batch Tech presign and budget release",
+  "checks": [
+    "Outside rectangle, PATCH04 vs PATCH03 changed RGB pixels must be 0; within rectangle, PATCH04 vs donor RGB error must be 0.",
+    "Inspect full 1024x1536, cup edge at 4x and 360x640 contain view; old cup residual, seam, or damaged natural material triggers REVISE_STOP.",
+    "Window and all independent components remain untouched.",
+    "Representative result cannot authorize FULL or Gate2."
+  ],
+  "budget": {
+    "user_approved_representative_activity_minutes_max": 70,
+    "user_approved_full_activity_minutes_max": 10,
+    "user_approved_total_activity_minutes_max": 80,
+    "previous_activity": "DO_NOT_RESET; Root/Tech to release current conservative bound",
+    "candidate_and_visual_review_hard_cap_seconds": 180,
+    "image_gen_used": 0,
+    "image_gen_total_max": 3,
+    "release_condition": "Matching PATCH-04 Tech presign and measured remaining representative/total activity balance, with start/stop timestamps; otherwise no image output."
+  },
+  "stop_rule": "One candidate only; failure or time exceed means stop, preserve evidence, no second iteration or FULL."
+}

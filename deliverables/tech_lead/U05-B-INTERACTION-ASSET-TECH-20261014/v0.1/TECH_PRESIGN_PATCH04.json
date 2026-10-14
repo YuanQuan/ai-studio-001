@@ -1,0 +1,44 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "PATCH04_REPRESENTATIVE_FIRST_IMAGE_PRESIGN_AND_BUDGET_RELEASE",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-04",
+  "decision": "TECH_PRESIGNED_AND_ONE_CANDIDATE_RELEASED_WITH_90_SECOND_HARD_STOP",
+  "signed_inputs": {
+    "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH04_PLAN.md",
+    "art_plan_sha256": "1b2d26dceb74e6a7c785f9ea15583588f9ec2aabe7232d215072d4236a2525df",
+    "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_PATCH04.json",
+    "art_presign_sha256": "cad48d86437701d2e89bd819cf32531d4f36ac91d61846c5c5784c926e0ed4d0",
+    "user_approval": "tasks/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "user_approval_sha256": "1a562e53ba3c4733d9425b2dd9aa38325a1a26e62f7c4671d488e205401ab249",
+    "frozen_review_packet_sha256": "2b1c4cfb75cb148f85b0b8c7f620544ffcd04bfa9b0ab97f4452677ee50328d9",
+    "frozen_source_scope_sha256": "2ed6d4c7bf0ba7dbc6c0868a04ad3480e9a4379c3fa063092d76367ea8fbdf15",
+    "frozen_tech_feasibility_sha256": "26916f4e7381707b507b353f60ee8d9c6420fb98065bb74579d6853271e48c56",
+    "root_budget_audit": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/PATCH04_RELEASE_AUDIT.json",
+    "root_budget_audit_sha256": "fae0e724781516ee450040f602a9a3b08659adc3607c83a2c28344537cb4c857"
+  },
+  "source_sha256_verified": {
+    "patch03_base_rgb_1024x1536": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+    "same_project_donor_rgb_1024x1536": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "approved_roi_xywh_source_px": [405, 1080, 210, 260],
+  "geometry": "半开x405–615/y1080–1340，完整包含旧杯alpha bbox[415,1090,604,1328)，四边余量左10/上10/右11/下12源像素。",
+  "technical_conditions": [
+    "只把PATCH-03静底的唯一完整旧杯框按同源坐标直接复制donor RGB8/sRGB原值；框外对PATCH-03逐像素零差，框内对donor逐像素零差。窗口和全部独立层保持原字节；无羽化、阈值、缩放、扩框、图像生成或第二候选。",
+    "制作后Art聚焦完整旧杯框和四边源尺度/4倍、全图及360x640视窗的旧影与木纹接缝；窗口和既有中性脸采用已有核验身份，不为本批重复渲染。若残影、接缝、材质突变或时限问题，立刻REVISE_STOP。",
+    "本签只放行代表唯一候选，不批准FULL、PSD、最终切片、Gate2或Client接入。代表通过后另核FULL 10分钟并Art/Tech同批文字复签。"
+  ],
+  "budget_release": {
+    "conservative_activity_upper_bound_seconds": 4075.791,
+    "representative_limit_seconds": 4200,
+    "remaining_lower_bound_seconds": 124.209,
+    "candidate_and_visual_check_hard_cap_seconds": 90,
+    "guard_seconds": 34.209,
+    "full_limit_seconds": 600,
+    "total_limit_seconds": 4800,
+    "actual_net_activity": "UNKNOWN",
+    "stop_condition": "唯一候选从新turn实际开始计制作+核验活动，90秒内未完成即停，记录真实起止；不得事后追认延长或把已发生活动重置。"
+  },
+  "image_gen_calls_used": 0,
+  "not_tested": ["PATCH-04候选尚未输出", "FULL/PSD/最终切片、Gate2及Creator/Web运行尚未验证"]
+}

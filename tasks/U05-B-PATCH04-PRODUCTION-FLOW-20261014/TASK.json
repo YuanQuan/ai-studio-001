@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-PATCH04-PRODUCTION-FLOW-20261014",
+  "title": "U05完整旧杯续产与资源审核流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记准确完整旧杯方案批准，追踪PATCH04唯一样、同批扩批或真实失败与资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/U05-B-INTERACTION-ASSETS-20261014/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.3/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "准确方案批准及实际生产阶段可核",
+    "预算和门禁连续推进、具体资源未批不接入",
+    "五共享文件仅U05块维护，真实节点和简短复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Producer本任务、原Art/AssetTech阶段及五共享U05 marker。旧流程v0.1/v0.2不覆盖。",
+    "仅PATCH04完整杯框一次候选，代表70/full10总80累计，不重置；资源具体Gate2前Client仍BLOCKED。",
+    "Producer v0.3三Required已记PATCH04代表PASS、FULL停工与70/72层缺口；流程进入REVIEW待Master核证，旧v0.1/v0.2保留。",
+    "Master接受真实失败/部分产出跟踪AUTO DONE，MASTER_PATCH04_FLOW_REVIEW.json；不代表资源G2或预算通过。"
+  ]
+}

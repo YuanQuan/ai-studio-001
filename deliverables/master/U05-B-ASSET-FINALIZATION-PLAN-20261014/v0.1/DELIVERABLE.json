@@ -1,0 +1,29 @@
+{
+  "task_id": "U05-B-ASSET-FINALIZATION-PLAN-20261014",
+  "owner": "master",
+  "summary": "冻结已产图像与动画，仅申请将72层清单对齐为正式PSD并补完整资源身份清单及累计5分钟预算。",
+  "artifacts": [
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FINALIZATION_FEASIBILITY.md",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "已有产物、母版缺口和冻结范围可核",
+      "result": "PASS",
+      "evidence": "FROZEN_INPUTS逐件列8个实存文件SHA/大小；72层manifest与现有70层PSD不一致。Tech只读意见核冻结输入身份，禁止新画图/新动画。"
+    },
+    {
+      "criterion": "不新画图、预算不清零、对齐与停止线明确",
+      "result": "PASS",
+      "evidence": "仅申请现有PSD/清单对齐，代表70不变、FULL10→15、总80→85分钟且旧耗保留；组装与检查≤180秒并预留至少60秒整理，开始前复核可证余额，失败即停。三待审文件SHA锁APPROVAL_HASHES，当前仅USER_REVIEW。"
+    }
+  ],
+  "risks": [
+    "现有70层PSD不能冒充72层正式母版；对齐后仍须逐项身份与同尺度合成核验。",
+    "净实际制作耗时未知；历史645.94秒FULL值是保守上界而非精确净超时，新预算尚未获批。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
