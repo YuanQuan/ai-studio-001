@@ -1,0 +1,43 @@
+{
+  "task_id": "SAKURA-BRIDGE-FRONT-TECH-20261014",
+  "owner": "tech_lead",
+  "summary": "已对Art v0.4同批局部无损拆层完成首图前文字技术预签，并给出桥body/front层序、紧裁镜像偏移和面积预算。具体切片尚待Art产出及用户Gate2审核，Client未正式接入。",
+  "artifacts": [
+    "deliverables/tech_lead/SAKURA-BRIDGE-FRONT-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/SAKURA-BRIDGE-FRONT-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_PRESIGN.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同批Art/Tech首图前预签绑定v0.4范围、源PSD、源切片与制作计划实际哈希。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json绑定SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4、Art预签SHA 8ae5d2bd4b351986bfaf109d4a826c131f5e5a36b17adfc505534eba9e8bfc85、方案SHA e5925c7975e4732971182290030d3fd2d9bcd1d827f71dc2db6e0733f69aa7ab、源PSD SHA f4d01b7c7048c1ad3f5aeeb58af6801e99992728dcb60bfd3c7ca5f236e3252e、源桥半幅SHA 4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a；Art预签绑定v0.4 USER_REVISION_SCOPE SHA aea43533eec9268c35e74045aa336447e88b09a18c7ebc520181432c1780cfe6。两份预签同批且在正式导出前。"
+    },
+    {
+      "criterion": "明确紧裁坐标、右半镜像偏移、19原型/45实例及body/实体/front层序技术输入。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md及TECH_PRESIGN.json记录前景实际bbox以CUT_MANIFEST为准，左(x0,512+y0)、右(1536+(1536-x1),512+y0)镜像；body保留1536×512，预计19原型/45实例，L03 body与实体、L04 front并沿用街栏链层。"
+    },
+    {
+      "criterion": "预算零生图；贴图面积仅估算、运行及设备性能未测；不提前修改Client，不增加自产切图专业复审门禁。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json记录生成调用0、预计前景301×253 RGBA8面积上界304612字节，以及GPU/DrawCall/加载/FPS/设备和Client导入构建QA均NOT_TESTED；TECH_DESIGN.md明确Gate2前不接入，自产切图直接交用户。Tech本次未改Client文件。"
+    },
+    {
+      "criterion": "三份技术Required实存，状态与范围符合仅预签支持，不冒充成品或运行验收。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md、TECH_PRESIGN.json、DELIVERABLE.json均实存；本DELIVERABLE状态READY_FOR_REVIEW，摘要和风险均限定为预签支持；切片、零差、PSD、实际运行仍须由相应后续证据证明。"
+    }
+  ],
+  "assumptions": [
+    "预计前景源半幅包络[1235,34,1536,287)仅用于预签面积上限估算；实际bbox在切片清单确定。",
+    "body输出保留1536×512；当前五层接口和街栏链原层继续复用。"
+  ],
+  "risks": [
+    "源图中被栏杆遮住的桥面不存在独立信息；实体运动暴露缺口时不能凭拆层补回。",
+    "L04前景与原街栏链交叠、右半紧裁镜像、SpriteFrame自动trim均需实物及正式接入核对。",
+    "新增RGBA8面积≤304612字节仅为预计包络估算；GPU驻留、DrawCall、加载、FPS和目标机未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

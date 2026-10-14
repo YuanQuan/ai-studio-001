@@ -1,0 +1,48 @@
+{
+  "id": "SAKURA-BRIDGE-FRONT-ART-20261014",
+  "title": "桥栏杆前景无损拆层 ART",
+  "type": "art",
+  "owner": "art",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "仅分离用户圈出的桥栏杆前景；现有PSD无损拆层，实际切片送用户审核，暂不接入。",
+  "inputs": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVISION_SCOPE.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/CUT_MANIFEST.json",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PSD_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/DELIVERABLE.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_body_half.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_front_half.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/bridge_front_detail.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/occlusion_placeholder_demo.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/package/SCENE_SAKURA_BRIDGE_FRONT_GATE2_v0.4.zip"
+  ],
+  "acceptance": [
+    "桥栏杆及所属灯柱前景拆分，桥面/街道/拱/脚保持后景，无损重组与v0.3可见像素零差。",
+    "未受影响17资源同字节；半幅镜像复用、尺寸偏移、PSD映射齐备；无6店资源新增、零生图。",
+    "实际前景切片、完整PSD、清单、同尺度重组及有实体遮挡对比实存；未知隐藏桥面明确记录。",
+    "当前切片v0.4送USER_REVIEW；Client不提前正式接入，保护并发修改。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master授权Art当前v0.4目录及source输出；Tech只写本目录与同批Art预签文件；Producer维护本Task和独立marker日志及dashboard。",
+    "用户具体指令授权本次制作范围；首图前Art/Tech同批预签，零生图，保持像素及旧版。",
+    "自产切图直接交用户Gate2，无额外切图效果专业复审，不正式接入Client。",
+    "不自行创建任务、委派、Git操作；Master统一提交。",
+    "Master负责在本轮project/ASSET_HANDOFF_REGISTRY.md独立marker登记两个Art新增切片及未导入计划状态，不修改现行v0.3客户端身份。"
+  ]
+}

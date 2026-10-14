@@ -1,6 +1,16 @@
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
 
 
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 START -->
+2026-10-14 12:55:02 +08:00登记（Producer内部支持）：`tasks/SAKURA-BRIDGE-FRONT-FLOW-20261014/ARTIFACT_APPROVAL.json`=PROFESSIONAL_REVIEW，review_ref为Master `FLOW_MASTER_ACCEPTANCE.md`。仅本轮流程交付完成，不是用户对Art v0.4切片Gate2批准；Client仍REVISION锁。
+2026-10-14 12:52:27 +08:00登记（Art v0.4具体资源Gate2待）：`tasks/SAKURA-BRIDGE-FRONT-ART-20261014/ARTIFACT_APPROVAL.json`=USER_REVIEW/decided_at null，artifact准确为`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVIEW_PACKET.md`，review_ref为Master `FINAL_IDENTITY.json`；11项文件SHA实复算吻合。Gate1仅局部制作授权，不能代替此v0.4具体切片与遮挡效果批准；Art未DONE、Client REVISION不接入。
+2026-10-14（Gate1范围记录，用户发言精确时刻未知）：`tasks/SAKURA-BRIDGE-FRONT-ART-20261014/ARTIFACT_APPROVAL_GATE1_v0.4.json`=USER_APPROVED，准确对象为`v0.4/USER_REVISION_SCOPE.json`，依据用户“桥的栏杆部分要放在前面”仅授权现有PSD确定性局部拆层、零生图。`decided_at`保留null；12:26:24+08:00只作为可信执行起点。未声称用户已阅读批准之后写出的制作计划或v0.4具体切片Gate2。
+2026-10-14 12:34:47 +08:00登记（Tech内部预签支持）：`tasks/SAKURA-BRIDGE-FRONT-TECH-20261014/ARTIFACT_APPROVAL.json`=PROFESSIONAL_REVIEW，review_ref=`deliverables/master/SAKURA-BRIDGE-FRONT-20261014/v0.1/TECH_MASTER_ACCEPTANCE.md`。Master仅接受三Required/四项预签技术支持验收；不表示v0.4实际切片Gate2已获用户批准，亦不表示Client导入或运行通过。
+2026-10-14（桥栏杆前景局部反馈，用户消息精确时刻未知）：用户“桥的栏杆部分要放在前面”是U00/U01 Client v0.1实际效果USER_REVIEW的局部退回；原 `ARTIFACT_APPROVAL.json` 精确快照为 `ARTIFACT_APPROVAL_v0.1_PRE_BRIDGE_REVISION.json`，现行Client审批REJECTED/Task REVISION，未将原送审记为用户批准。`v0.4/USER_REVISION_SCOPE.json`记录本轮准确制作范围Gate1=USER_APPROVED_SCOPED_REVISION，不新增重复Gate1问答；Art v0.4具体切片Gate2未决，批准前Client锁。v0.3图片Gate2既有USER_APPROVED不撤销。
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 END -->
+
+
+
 <!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE START -->
 2026-10-14 12:11:30 +08:00（Producer内部流程接受）：`tasks/U00-U01-SAKURA-V03-FLOW-20261014/ARTIFACT_APPROVAL.json`=PROFESSIONAL_REVIEW，review_ref为Master `FLOW_MASTER_ACCEPTANCE.md`，仅证明Producer三Required/六验收/13索引完成。Client v0.1现行审批仍USER_REVIEW、decided_at null，用户尚未批准实际接入画面与编辑效果；不新增专业/QA用户Gate。
 <!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE END -->

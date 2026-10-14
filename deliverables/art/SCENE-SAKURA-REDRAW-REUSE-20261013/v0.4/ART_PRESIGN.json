@@ -1,0 +1,28 @@
+{
+  "task_id": "SAKURA-BRIDGE-FRONT-ART-20261014",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4",
+  "owner": "art",
+  "status": "ART_PRESIGNED_TECH_PENDING",
+  "signed_at": "2026-10-14T12:30:28+08:00",
+  "bound_inputs_sha256": {
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVISION_SCOPE.json": "aea43533eec9268c35e74045aa336447e88b09a18c7ebc520181432c1780cfe6",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/reference/user_bridge_front.png": "0cc1db00ef5fa1c41b83e621dc7490f06c0d26491d81b936af9876457dccdf2d",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_BRIEF.md": "c9e374f8d4bee35544da89b3e9f4dafa2c244a24c4227b38e9601a882204ffba",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ASSET_MANIFEST.md": "194a56547de1ad66fa12e4248752f8d3a315cb7b4a764378a3f990fdd0f1a4a1",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PRODUCTION_PLAN.md": "e5925c7975e4732971182290030d3fd2d9bcd1d827f71dc2db6e0733f69aa7ab",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/scene_sakura_reuse_master.psd": "f4d01b7c7048c1ad3f5aeeb58af6801e99992728dcb60bfd3c7ca5f236e3252e",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_bridge_half.png": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a"
+  },
+  "art_decision": "同意仅将v0.3桥上栏杆及附属灯柱、原有光晕以人工轮廓mask无损分配到前景。桥面、拱、脚保留body；其它17 PNG同字节。无遮挡空场景RGBA零差；不绘新图。",
+  "source_half_front_expected_envelope_xyxy": [
+    1235,
+    34,
+    1536,
+    287
+  ],
+  "front_crop_rule": "人工语义mask非零alpha紧裁；最终精确bbox与左右镜像偏移记录CUT_MANIFEST。",
+  "body_geometry": "1536x512，原左(0,512)、右(1536,512)水平镜像。",
+  "budget": "imagegen 15/15已耗，当前0次；仅确定性像素分配。",
+  "release_condition": "Tech Lead绑定同批计划与Art预签，完成TECH_PRESIGN后才输出首张正式切片或PSD。",
+  "actual_export_or_runtime_measurement": "NOT_TESTED"
+}

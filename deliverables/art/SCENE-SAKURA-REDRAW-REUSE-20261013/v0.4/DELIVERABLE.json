@@ -1,0 +1,56 @@
+{
+  "task_id": "SAKURA-BRIDGE-FRONT-ART-20261014",
+  "owner": "art",
+  "summary": "按用户要求将 v0.3 桥栏杆与附属灯柱无损拆到前景；桥面、拱和桥脚留后景。v0.4 实际切片、45 层 PSD 与同尺度审核图送用户 Gate2。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PSD_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/EDITABILITY_NOTES.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_VISUAL_SELF_REVIEW.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_body_half.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_front_half.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/bridge_front_detail.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/bridge_layer_breakdown.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/review/occlusion_placeholder_demo.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/package/SCENE_SAKURA_BRIDGE_FRONT_GATE2_v0.4.zip"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "桥栏杆及所属灯柱前景拆分，桥面/街道/拱/脚保持后景，无损重组与v0.3可见像素零差。",
+      "result": "PASS",
+      "evidence": "bridge_layer_breakdown.png 展示原桥/body/front；最终 front 紧裁 301×199，body 仍为 1536×512；Art 自检记录花石及券石留后景。"
+    },
+    {
+      "criterion": "未受影响17资源同字节；半幅镜像复用、尺寸偏移、PSD映射齐备；无6店资源新增、零生图。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION.json：桥源逐 RGBA 分配 0 差、alpha 交集 0、全景 RGBA 0 差、45 层 PSD 展平与切片重组 RGB 0 差。"
+    },
+    {
+      "criterion": "实际前景切片、完整PSD、清单、同尺度重组及有实体遮挡对比实存；未知隐藏桥面明确记录。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json 登记裁框与实例；17 个旧 PNG SHA 不变；ZIP 37 成员、CRC PASS；本批 imagegen 0 次。"
+    },
+    {
+      "criterion": "当前切片v0.4送USER_REVIEW；Client不提前正式接入，保护并发修改。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 列明实图、切片、PSD、ZIP 和限制；Art 未修改 Client 工程，运行 NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "几何矩形仅为遮挡层序示意，不是游客或六店正式资产。",
+    "v0.3 未画出的栏杆后隐藏桥面不在本次局部无损拆层范围。"
+  ],
+  "risks": [
+    "前景或实体移动可能显露原源不存在的桥面，本批没有补画。",
+    "原生 Photoshop、Cocos 客户端和目标机尚未验证；静态结论不能替代运行与性能结果。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

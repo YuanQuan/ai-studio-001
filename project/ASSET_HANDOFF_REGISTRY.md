@@ -643,3 +643,19 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 来源与用户 Gate2：`tasks/U05-B-COMPONENT-ASSETS-20261014/ARTIFACT_APPROVAL_v0.2.json`；逐文件清单：`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/ART_GATE2_V02_APPROVED_HASHES.json`。45 张未修改 PNG 依据 `RETAINED_ASSETS.json` 保持原 SHA；新名牌底板 `LABEL_PLATE_9SLICE`（Art v0.2）SHA-256 `75d72dc94a6da071ca6a2a387ef66c823ce2572bc55d01f8bb3848eb6d287d82`，Creator 实际路径 `apps/client/assets/resources/u05_milk_tea/u05_b/LABEL_PLATE_9SLICE.png`，image UUID `c87483e2-f07b-42fa-b5b8-6b468e8f0f83`，Texture UUID `c87483e2-f07b-42fa-b5b8-6b468e8f0f83@6c48a`，SpriteFrame UUID `c87483e2-f07b-42fa-b5b8-6b468e8f0f83@f9941`。组件按获批 inset `18/18/12/12` 以原图尺寸切片，再按 720/1024 统一缩放。
 
 已批准字体子集 `ARTIFACT_APPROVAL_FONT_SUBSET_v0.1.json`：Creator 运行目录同为 `resources/u05_milk_tea/u05_b/`。`U05_ART_FONT.png` SHA-256 `b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41`，image UUID `feffffab-7e69-451d-a595-9274950e80ab`，Texture `@6c48a`，SpriteFrame `@f9941`；719 字 `U05_ART_FONT.fnt` SHA-256 `14f9073139b14aa4b46a389d934dc93f7581804721c881b882995c1ca6101af1`，BitmapFont UUID `20fe1f2b-6ef8-4921-8a13-a4653c31f2ef`。随资源保留 OFL 许可文本，SHA-256 `538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d`。Creator 3.8.8 AssetDB 导入 UUID 与 Web 构建资源 UUID 已核对；浏览器运行和视觉验证另行记录，不由导入/构建替代。
+
+
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 ASSET_REGISTRY START -->
+
+## 桥栏杆前景拆层 v0.4｜具体切片待用户审核
+
+本批19张环境PNG、45个环境实例；17未改资产继承v0.3来源和身份，当前正式Client仍使用v0.3。以下两个切片仅Art实存，不能将计划路径/UUID视为已经接入。母版为 `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/source/scene_sakura_reuse_master.psd`，45层、3072×1024；具体版本绑定见 `deliverables/master/SAKURA-BRIDGE-FRONT-20261014/v0.1/FINAL_IDENTITY.json`。
+
+| 稳定资产ID | Art实际路径及版本 | SHA256 | Client正式路径 | 真实UUID | 状态 |
+|---|---|---|---|---|---|
+| `tex_sakura_rr_bridge_body_half` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_body_half.png` / v0.4 | `f577038ef7fe2885b511f742cf9c26a2ece7e7246d14febc68b257787b21a912` | 计划，Gate2后确定正式导入路径 | 未导入，无真实UUID | USER_REVIEW |
+| `tex_sakura_rr_bridge_front_half` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/exports/tex_sakura_rr_bridge_front_half.png` / v0.4 | `207c667f918abeada9cb1dc20f48c751b0758392e6ef62d687a3514ccdd1b875` | 计划，Gate2后确定正式导入路径 | 未导入，无真实UUID | USER_REVIEW |
+
+新增前景301×199，源裁框[1235,34,1536,233)，左右镜像共用；桥体保留后景、实体在中间、栏杆在前景。Client旧接入效果已REVISION，待本v0.4 Gate2批准后导入并验证。
+
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 ASSET_REGISTRY END -->

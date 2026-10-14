@@ -30,7 +30,7 @@
   "dependencies": [
     "SCENE-SAKURA-REDRAW-REUSE-20261013"
   ],
-  "status": "USER_REVIEW",
+  "status": "REVISION",
   "approval": "USER_REVIEW",
   "notes": [
     "用户已批准并授权接入，不新增重复用户许可。",
@@ -39,6 +39,7 @@
     "不自行创建任务或Git动作；Master统一提交。",
     "先FEATURE_BRIEF与Tech沟通；旧环境物理退役须引用审计及实际验证通过。",
     "Master2026-10-14本轮必要修复授权：UnitSamples真实入口被U05既有milk_tea_lab.ts同脚本3个Component注册错误阻断。允许Client仅把U05NineSlicePlate/U05BitmapText拆成独立脚本并保持类名/方法/逻辑，更新import与真实meta，保留全部U05功能资产和并发改动；记录恢复副本/精确diff及回归。允许在隔离构建profile显式指定UnitSamples真实UUID，不改变用户已开Editor场景。",
-    "Master最终提交范围核账：并发U05接口在HEAD与工作树不同，授权仅Gallery退出接线加入可选setExitHandler/onExit窄接口适配，保持同回调闭包，不把U05业务WIP混入本Task提交；保留上版Review/构建记录，补相容新构建与U05返回验证。"
+    "Master最终提交范围核账：并发U05接口在HEAD与工作树不同，授权仅Gallery退出接线加入可选setExitHandler/onExit窄接口适配，保持同回调闭包，不把U05业务WIP混入本Task提交；保留上版Review/构建记录，补相容新构建与U05返回验证。",
+    "2026-10-14用户退回v0.1运行效果局部桥栏杆遮挡；原USER_REVIEW送审版本与审批历史保留。等待Art v0.4具体切片Gate2用户批准后由Master另行解锁接入，当前Client不改工程。"
   ]
 }

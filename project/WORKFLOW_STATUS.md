@@ -1,6 +1,19 @@
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
 
 
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 START -->
+2026-10-14 12:55:02 +08:00登记（Producer内部流程完成）：Master `FLOW_MASTER_ACCEPTANCE.md`已实存，确认本FLOW三Required、四Task原文验收同序PASS、索引与continuity/复盘齐；FLOW REVIEW→DONE，审批PROFESSIONAL_REVIEW。该DONE仅本轮流程监督；Art v0.4准确切片继续USER_REVIEW/用户Gate2待，Client REVISION且未接入，Tech预签支持内部DONE。
+2026-10-14 12:52:27 +08:00（Art准确v0.4送用户审核）：Art最终16 Required、18索引实存，四项Task原文同序PASS；Master仅文件身份/零差/PSD结构核对，`FINAL_IDENTITY.json`11项SHA由Producer逐一复算吻合。最终19 PNG、45实例与45层PSD，17旧PNG同字节、无实体重组0差、ZIP37成员CRC通过、v0.4零生图。Art IN_PROGRESS→USER_REVIEW，现行审批绑定准确`USER_REVIEW_PACKET.md`/Master身份、decided_at null；用户具体Gate2未批，Art非DONE，Client REVISION且六冻结字节未改。Tech预签支持内部DONE。Producer三Required/continuity/复盘收口进入REVIEW，待Master内部接受。
+2026-10-14 12:44左右（第2轮局部mask修正）：Master通报Art正在将灯笼低alpha外晕归并进正确的前景范围；PSD及相关SHA仍会变，当前临时文件不冻结、不绑定Gate2身份。Art持续IN_PROGRESS；等Owner明确最终冻结后只核身份、零差与结构，Client仍未修改。
+2026-10-14 12:37左右（Art首版自检返工）：Art已导出临时front/body、19 PNG候选与静态重组/遮挡图；Master检查当前front实际范围发现含桥拱券石及桥脚花草，超出用户圈定栏杆与所属灯柱，已要求第1次局部mask修正。Art保持IN_PROGRESS，现有临时文件/SHA不作为最终Gate2身份；零生图、Client锁。
+2026-10-14 12:34:47 +08:00登记（Tech内部支持接受）：Master `TECH_MASTER_ACCEPTANCE.md`已实存并明确三Required/四原文PASS、同batch技术预签支持正式接受；Tech REVIEW→DONE，现行审批PROFESSIONAL_REVIEW。该DONE仅预签技术输入；Art实际切片Gate2未决，Client锁，运行NOT_TESTED。
+2026-10-14 12:34左右（Tech预签支持进入内部Review）：Tech三份Required实存且非空、交付四项与修订后Task原文同序PASS；Tech预签绑定Art预签和方案SHA独立复算吻合，Task IN_PROGRESS→REVIEW。范围仅制作前技术输入，不把后续Art实图/Creator运行判PASS；待Master内部接受方可DONE。
+2026-10-14 12:31左右（真实开工与同批预签）：Art v0.4 `ART_BRIEF.md`、`ASSET_MANIFEST.md`、`PRODUCTION_PLAN.md` 首份Required实存，Art READY→IN_PROGRESS；Art 12:30:28、Tech 12:30:45同一v0.4 batch分别签署 `ART_PRESIGN.json` / `TECH_PRESIGN.json`，预签记录早于首张导出。Tech `TECH_DESIGN.md`实存，Tech READY→IN_PROGRESS。此仅放行限定的确定性拆层导出，不是实际切片完成或Gate2批准。
+2026-10-14 12:26:24 +08:00起（桥栏杆前景局部修订）：用户退回U00/U01 Client v0.1局部遮挡“桥的栏杆部分要放在前面”；旧USER_REVIEW准确审批快照保留，现行Client审批REJECTED、Task REVISION，v0.3既有美术Gate2批准不撤销。v0.4 `USER_REVISION_SCOPE.json`即精确Gate1范围授权；Art/Tech须同批首图预签、零生图（15/15旧预算不重置）、无损PSD拆层。Producer首份Required `CONTINUITY_CHECK.md`实存、IN_PROGRESS；Tech `TECH_DESIGN.md`首份Required实存、IN_PROGRESS；Art首份Required待核仍READY。具体切片Gate2待，Client正式接入锁定、无QA。
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 END -->
+
+
+
 <!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE START -->
 2026-10-14 12:11:30 +08:00（Producer内部最终接受）：Master `FLOW_MASTER_ACCEPTANCE.md`核三Required、六项Task原文验收PASS和13索引并接受；FLOW Task REVIEW→DONE，Approval PROFESSIONAL_REVIEW，仅内部流程支持完成。最终旧环境退役精确为原34候选文件+1目录meta=35文件，另1空目录，非只有34总数。Tech内部DONE；Client准确v0.1 USER_REVIEW/用户未批准非DONE，无本线READY/IN_PROGRESS空转；目标机/正式QA未测。
 <!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE END -->

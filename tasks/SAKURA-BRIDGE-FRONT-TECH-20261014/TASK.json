@@ -1,0 +1,35 @@
+{
+  "id": "SAKURA-BRIDGE-FRONT-TECH-20261014",
+  "title": "桥栏杆前景无损拆层 TECH",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "仅分离用户圈出的桥栏杆前景；现有PSD无损拆层，实际切片送用户审核，暂不接入。",
+  "inputs": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVISION_SCOPE.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/CUT_MANIFEST.json",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/SAKURA-BRIDGE-FRONT-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/SAKURA-BRIDGE-FRONT-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SAKURA-BRIDGE-FRONT-TECH-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批Art/Tech首图前预签绑定v0.4范围、源PSD、源切片与制作计划实际哈希。",
+    "明确紧裁坐标、右半镜像偏移、19原型/45实例及body/实体/front层序技术输入。",
+    "预算零生图；贴图面积仅估算、运行及设备性能未测；不提前修改Client，不增加自产切图专业复审门禁。",
+    "三份技术Required实存，状态与范围符合仅预签支持，不冒充成品或运行验收。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master授权Art当前v0.4目录及source输出；Tech只写本目录与同批Art预签文件；Producer维护本Task和独立marker日志及dashboard。",
+    "用户具体指令授权本次制作范围；首图前Art/Tech同批预签，零生图，保持像素及旧版。",
+    "自产切图直接交用户Gate2，无额外切图效果专业复审，不正式接入Client。",
+    "不自行创建任务、委派、Git操作；Master统一提交。",
+    "验收按本角色支持范围细化；不把Art成品核对职责重复当作Tech/Producer专业效果门禁。"
+  ]
+}

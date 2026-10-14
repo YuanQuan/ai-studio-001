@@ -1,0 +1,45 @@
+{
+  "task_id": "SAKURA-BRIDGE-FRONT-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4",
+  "status": "TECH_PRESIGNED_FOR_SCOPED_DETERMINISTIC_SPLIT",
+  "signed_at": "2026-10-14T12:30:45+08:00",
+  "art_presign": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/ART_PRESIGN.json",
+  "art_presign_sha256": "8ae5d2bd4b351986bfaf109d4a826c131f5e5a36b17adfc505534eba9e8bfc85",
+  "production_plan": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/PRODUCTION_PLAN.md",
+  "production_plan_sha256": "e5925c7975e4732971182290030d3fd2d9bcd1d827f71dc2db6e0733f69aa7ab",
+  "approved_scope": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVISION_SCOPE.json",
+  "frozen_psd_sha256": "f4d01b7c7048c1ad3f5aeeb58af6801e99992728dcb60bfd3c7ca5f236e3252e",
+  "frozen_bridge_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+  "source_and_split": {
+    "canvas_xy": [3072, 1024],
+    "bridge_half_xy": [1536, 512],
+    "body_half_xy": [1536, 512],
+    "front_expected_envelope_half_open_xyxy": [1235, 34, 1536, 287],
+    "front_final_crop": "由实际非零 alpha 自动紧裁，在 CUT_MANIFEST 登记精确半开 bbox；预计包络不是裁切线或获准改像素区。",
+    "pixel_allocation": "人工语义二值 mask 将原桥半幅现有 RGBA 像素唯一分配至 body/front；不得插值、重算发光、补洞或生成。",
+    "psd_mapping": "v0.3 bridge_l/r 两个全画布层在 v0.4 仅替换为 bridge_body_l/r、bridge_front_l/r，原位保留；关闭参考覆盖层核 PSD 与实际 PNG 重组。",
+    "unchanged_exports": 17,
+    "generation_calls": 0
+  },
+  "placement_contract": {
+    "body_left_top_xy": [0, 512],
+    "body_right_top_xy": [1536, 512],
+    "body_right_mirror_x": true,
+    "front_left_top_formula": "(crop_x0, 512+crop_y0)",
+    "front_right_top_formula": "(1536+(1536-crop_x1), 512+crop_y0), mirror X; crop_x1 为半开 bbox 右端",
+    "front_display_size_formula": "(crop_x1-crop_x0, crop_y1-crop_y0)；SpriteFrame 自动 trim 后仍保持完整裁切显示矩形、原始支点与 UV 关系",
+    "layer_order": "L03 桥 body 和既有实体；L04 桥 front 及原有街栏链层，按实际重组顺序避免双描。现有 stone_chain_rail_l/r 只复用、不再次纳入 front。",
+    "count_if_art_matches_plan": "旧桥原型替换为 body 并新增 front，一共19原型、45实例；一个 front PNG 镜像复用两次。"
+  },
+  "verification_and_budget": {
+    "static_pixel_target": "同管线 decoded RGBA：旧桥半幅与 body+front 0 差，空场景 v0.3 与 v0.4 可见像素 0 差；body/front 非零 alpha 交集 0；17 原 PNG SHA 逐一相同。",
+    "front_rgba8_upper_bound_from_expected_envelope_bytes": 304612,
+    "front_rgba8_upper_bound_note": "按预计包络 301×253×4 的面积估算，约0.29 MiB；实际紧裁面积、PNG 编码大小及 alpha 范围待导出记录，若超包络先复签。",
+    "body_rgba8_source_area_bytes": 3145728,
+    "runtime_gpu_drawcall_load_fps": "NOT_TESTED：面积估算不等于 GPU 驻留、图集页、DrawCall、加载速度或目标设备通过。",
+    "client_import_build_qa": "NOT_TESTED：Gate2 未批准前不正式接入、不构建、不下 QA 或发布结论。"
+  },
+  "known_limit": "v0.3 源没有被栏杆遮住的完整桥面；本次不补画，若实体移动暴露缺口须另报。",
+  "release_condition": "只批准上述同批确定性拆层首图导出。源、工具、画布、遮罩范围、alpha/混合方式或资产范围变化时在相关导出前复签；实际切片由本组织自行制作后直接交用户 Gate2。"
+}

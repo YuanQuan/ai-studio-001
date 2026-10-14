@@ -1,0 +1,62 @@
+{
+  "task_id": "SAKURA-BRIDGE-FRONT-ART-20261014",
+  "version": "v0.4",
+  "checked_at": "2026-10-14T12:47:40+08:00",
+  "result": "PASS_STATIC_ARTIFACT_INTEGRITY_USER_GATE2_PENDING",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "psd_format": "PSD",
+  "psd_layers_actual": 45,
+  "psd_bytes": 43321614,
+  "active_png_count": 19,
+  "unmodified_v0_3_png_sha_count": 17,
+  "bridge_source_half_size": [
+    1536,
+    512
+  ],
+  "bridge_body_half_size": [
+    1536,
+    512
+  ],
+  "bridge_front_half_size": [
+    301,
+    199
+  ],
+  "bridge_front_half_bbox_xyxy": [
+    1235,
+    34,
+    1536,
+    233
+  ],
+  "bridge_front_rgba8_bytes": 239596,
+  "bridge_alpha_overlap_pixels": 0,
+  "bridge_source_exact_partition_rgba_diff_pixels": 0,
+  "scene_vs_v0_3_rgba_diff_pixels": 0,
+  "scene_vs_psd_preview_rgb_diff_pixels": 0,
+  "scene_vs_psd_flatten_rgb_diff_pixels": 0,
+  "scene_vs_export_reassembly_rgba_diff_pixels": 0,
+  "imagegen_v0_4_calls": 0,
+  "cumulative_imagegen_calls": 15,
+  "native_photoshop_open_tested": false,
+  "client_import_or_game_runtime_tested": false,
+  "file_sha256": {
+    "source/scene_sakura_reuse_master.psd": "d324e543566daa427b3963468e0ae7b6302f98cffffadac805701f50d9ca8473",
+    "source/bridge_front_hand_mask.png": "055076c1feff87a516a7fbdddcd09d291de28d92b9000cae9458bf3b35f6a093",
+    "exports/tex_sakura_rr_bridge_body_half.png": "f577038ef7fe2885b511f742cf9c26a2ece7e7246d14febc68b257787b21a912",
+    "exports/tex_sakura_rr_bridge_front_half.png": "207c667f918abeada9cb1dc20f48c751b0758392e6ef62d687a3514ccdd1b875",
+    "CUT_MANIFEST.json": "d654b343e2a00cc5c912a29c46785d740365b0630fd647504b3e9870b33445de",
+    "PSD_MANIFEST.json": "536e03db2cf1b1148cbf9e76bf887200e37283f3a85ec0fc1b9514cc6ac1322d",
+    "review/reassembled_from_exports.png": "50ac6cd6ab53320b7806b6660a84b57c4b57bfccfd84a0a717140f40019a13c8",
+    "review/bridge_layer_breakdown.png": "7ac065a7187b5b95362406e5bf3f84a120be5e14fce6837c077f96b34678ec4f",
+    "review/occlusion_placeholder_demo.png": "47aaea0ba4817b9fb23586d17256731a6bc6b99a3faa2b69e19d72fe27439409"
+  },
+  "package": {
+    "path": "package/SCENE_SAKURA_BRIDGE_FRONT_GATE2_v0.4.zip",
+    "sha256": "67e0f214f74bef0d37d4c6d8f7779d7340d9730a28925529b5cd43a40d21d4ff",
+    "bytes": 43477328,
+    "members": 37,
+    "crc": "PASS"
+  }
+}

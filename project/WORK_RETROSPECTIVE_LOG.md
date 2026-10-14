@@ -1,6 +1,18 @@
 ### WR-20261010-U04-CORNER-SIMPLE-003｜原创角饰简化候选
 
 
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 START -->
+### WR-20261014-SAKURA-BRIDGE-FRONT-001｜桥栏杆前景局部无损拆层
+
+- 结果与证据：用户局部退回U00/U01 Client v0.1的桥栏杆遮挡，旧审批保留快照、现行Client转REVISION；v0.3美术图片既有批准保留。本轮准确范围Gate1记USER_APPROVED_SCOPED_REVISION，Art/Tech同批首图前预签。Art v0.4最终19 PNG、45实例、45PSD层，17旧图同字节、原桥像素分配和空场景重组对v0.3均零差，37成员ZIP CRC通过、Master最终身份11项SHA复算吻合，零新生图。具体切片与遮挡示意已进入USER_REVIEW，用户Gate2未决定；Tech预签支持已获Master内部接受DONE，Client未接入/未构建。本轮自产切图无额外效果专业复审，Owner验证而非QA。
+- 起止与耗时（Asia/Shanghai）：可信执行起点2026-10-14 12:26:24，Producer本轮内部Review证据齐于12:52:27，墙钟26分03秒；Master内部接受登记12:55:02，起点至此墙钟28分38秒，额外区间为内部审阅与状态登记而非Art净制作。用户原话的准确时刻未知；本墙钟包含Art/Tech并行预签、两轮局部mask制作修正、文件打包与Master静态核验、Producer台账文书，不是任何单一Agent净制作时长。用户Gate2等待从准确USER_REVIEW开始，结束未知；此前跨轮旧版用户等待不计本轮制作。
+- 影响速度的可见环节：首版mask带入桥拱券石和桥脚花草，Master要求第1次定向收窄；第2次处理灯笼低alpha外晕。两轮均为本地确定性修正，没增加生图调用。未分别计时，无法可靠拆分实际制作、检查、等待与返工净耗时，也不推断个人责任。旧桥面被栏杆遮住的像素本就未知，未补画；Creator运行/目标机性能和Photoshop原生打开未测。
+- 建议与复核：Art下次同类拆层先把用户圈线转为语义mask负例（桥拱/脚花草）及半透明外晕正例，由Art Owner在首版导出前用源尺寸叠图检查；Producer在下一次同类任务首份CUT_MANIFEST节点复核是否减少越界返工，代价为一次局部mask预检。Tech对裁切bbox与镜像偏移继续在同批预签写公式，Client待Gate2批准后在实际Creator/浏览器验证自动trim与实体层序；该检查不新增用户审批门禁。
+- Continuity：Art准确v0.4 USER_REVIEW且未DONE；Tech内部DONE；Client旧v0.1 REVISION等待上游具体切片批准；Producer内部DONE（Master接受见FLOW_MASTER_ACCEPTANCE.md）。不存在本线可继续却只占位的READY/IN_PROGRESS。下一Gate2由用户对准确v0.4切片及遮挡效果决定。
+<!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 END -->
+
+
+
 <!-- U00-U01-SAKURA-V03-FLOW-20261014 RETROSPECTIVE START -->
 ### WR-20261014-U00-U01-SAKURA-V03-001｜获批环境接入与旧资源退役
 
