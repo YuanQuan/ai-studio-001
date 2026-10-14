@@ -459,3 +459,32 @@
 
 母版：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd`，v0.1，SHA-256 `2aaf8f4b9fe0820dded68cec2ee163ebab3d377c036ce6b6083dcf39e858263d`，实际41层；仅供美术编辑，不是Creator导入UUID。当前正式用户包位于同版 `package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.1.zip`，待Gate2明确批准后再进入客户端接入。
 <!-- SCENE-SAKURA-REDRAW-REUSE-20261013 END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ASSET_REGISTRY START -->
+## 樱夜环境局部修订 v0.2｜Gate2 待用户审核
+
+v0.1具体资源已获用户退修，保留上方历史记录；本版沿用17张字节不变切片，并新增一张街岸栏杆半幅，共18张正式候选。来源为同版 `CUT_MANIFEST.json` 与 `FILE_VERIFICATION.json`。客户端正式路径待获批接入后由Tech/Client确定，UUID尚未生成；六店不在输出中。
+
+| 稳定资产 ID | 资源描述 | 美术实际路径/版本 | SHA-256 | 客户端正式路径 | 导入UUID/状态 |
+|---|---|---|---|---|---|
+| `SAK-RR-BRIDGE-HALF` | 单圆拱街桥左半；右侧镜像复用 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_bridge_half.png`；v0.2 | `4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-FAR-L` | 非镜像远景左片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_far_l.png`；v0.2 | `84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-FAR-R` | 非镜像远景右片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_far_r.png`；v0.2 | `b70c1a0f6b9eb658978783e2d4c6ac793ce774e7635575863e05a339a76d59de` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-FOREGROUND-LEFT` | 左前景 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_foreground_left.png`；v0.2 | `824e64f7dcb7c7c5ce9ce31aba74d4a77fe2a2ba62b4aa5fe65c976874797c7e` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-FOREGROUND-RIGHT` | 右前景 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_foreground_right.png`；v0.2 | `365469e769b32d25d4fb3c13efd04bafa0e77272cc1f74a9fe63ce835c530fea` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-GATE` | 右牌楼 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_gate.png`；v0.2 | `83615b9e79cea11ece87b66744ce2e3bae1e4b88f7a718de1bb0aeef9fa74232` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SKY-L` | 非镜像天空左片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_sky_l.png`；v0.2 | `b1eeb3b8290a5b6feb509f2737e6cedfcb7e6d445d3b9593858040da8810d0e7` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SKY-R` | 非镜像天空右片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_sky_r.png`；v0.2 | `47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-A-FLAME` | 精灵A可微动火焰 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_a_flame.png`；v0.2 | `ff7b7a1c48b4524bc652fe20b26df7f6fc86930636cb4f9a331e65348dd43abf` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-A-LOTUS` | 精灵A固定莲座 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_a_lotus.png`；v0.2 | `420d66639b394fc3ed70da82ad5072939197e7d877e72a5d665df7f676063c56` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-A-REFLECTION` | 精灵A固定倒影 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_a_reflection.png`；v0.2 | `e912caa236f3988811f6f1463e1de4c80d6a122505a796d503b4110324a29c2c` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-B-FLAME` | 精灵B可微动火焰 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_b_flame.png`；v0.2 | `431123b105a153c04af75bee9172523cbea3b3059347b0ffd42e0e6adfe849fa` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-B-LOTUS` | 精灵B固定莲座 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_b_lotus.png`；v0.2 | `5454d0cdee9ef05d1eabd0ffc8a39590d8e10eeeef1c47f55ffc150a45f531d0` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-SPIRIT-B-REFLECTION` | 精灵B固定倒影 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_spirit_b_reflection.png`；v0.2 | `5580fda4ed52e232a3e8f73a0fe9945e31d1f8794c62e08650bc4420a71207a5` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-TREE-A` | 樱树A原型 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_tree_a.png`；v0.2 | `a16c13db0f11d2ed6a7188caf5941c1829cc531a9336c4a89b8a0115813f2c03` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-TREE-B` | 樱树B原型 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_tree_b.png`；v0.2 | `89ef5acf72872d8185e2402065de836f51210f44ce52e91faaa8d49d1b10bc58` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-WATER-RAIL-HALF` | 水面栏杆左半；右侧镜像复用 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_water_rail_half.png`；v0.2 | `9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+| `SAK-RR-STREET-RAIL-HALF` | 街岸矮柱绳栏左半；右侧镜像复用，v0.2新增 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/tex_sakura_rr_street_rail_half.png`；v0.2 | `63519bb6ce8044ad5c1ed114e328a8fdb996e7cd971829e6ef6e1fd9d6d1f3ea` | 待Tech/Client定目录（计划） | 未导入；UUID无；Gate2待审 |
+
+母版：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/source/scene_sakura_reuse_master.psd`，v0.2，SHA-256 `e5af6193df4985ac7a07522530089a633e3533e581e18e9479ebe2d3943fb823`，真实43层；仅供美术编辑，不是Creator导入UUID。用户审核包和ZIP以同版正式DELIVERABLE索引为准，具体资源批准前不接入Client。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ASSET_REGISTRY END -->

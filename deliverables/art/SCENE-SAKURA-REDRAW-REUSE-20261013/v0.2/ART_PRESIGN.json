@@ -1,0 +1,21 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2",
+  "owner": "art",
+  "status": "ART_PRESIGNED_TECH_PENDING",
+  "signed_at": "2026-10-14T08:47:26+08:00",
+  "bound_inputs_sha256": {
+    "USER_REVISION_SCOPE.md": "501c0ccfea66d82636eb684722534d0d4d3b6efc1eabae6aa8ae097c89c6ca6b",
+    "ART_BRIEF.md": "e799592688ea44cfe3a1739c50cc1a26db3d11a6166a19b7372d34c14af28c80",
+    "PRODUCTION_PLAN.md": "c8f89ef6fc29712e48ca22911ff0dee7f211bf247735cd5c614a528edff27b4e",
+    "ASSET_MANIFEST.md": "9195d0ac06d18cdcde3757df901454ddb10c6ca4e47200c52740f3432a0e9ec9",
+    "v0.1/source/scene_sakura_reuse_master.psd": "2aaf8f4b9fe0820dded68cec2ee163ebab3d377c036ce6b6083dcf39e858263d",
+    "v0.1/review/scene_environment.png": "ce0c96dc64e7592cc38580b324c0dc84c5341416956f07727a0d3e49d19c50c5",
+    "v0.1/exports/tex_sakura_rr_water_rail_half.png": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3",
+    "v0.1/exports/tex_sakura_rr_bridge_half.png": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a"
+  },
+  "art_decision": "同意只在已列全景 ROI 内拆出既有新绘栏杆并修桥脚；其它像素保护零差。优先0次生成，确需补绘时剩余至多1次，不修改树或六店。",
+  "first_image_scope": "1536宽透明新绘水栏半幅语义提取，两实例左右镜像；必要局部桥脚补片。全景3072x1024，仅按计划允许 ROI 合成。",
+  "release_condition": "需 Producer 登记本版 Gate1 和 Tech Lead 对完全相同输入 hash 的首图前预签，Master 明确放行后才能制作图片；如需内置生图，调用前另登记剩余预算。",
+  "actual_image_or_performance_measurement": "NOT_TESTED"
+}

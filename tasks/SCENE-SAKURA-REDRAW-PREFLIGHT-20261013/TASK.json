@@ -4,24 +4,25 @@
   "type": "tech",
   "owner": "tech_lead",
   "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
-  "objective": "核对尺寸、切半、复用、工具、预算；首图前同批预签，样张实际检查后续签全批，不新增成品效果复审。",
+  "objective": "对v0.2局部修订的来源/ROI/保护区零差/现成栏杆复用/1剩余生成预算及实际导出方法首图前同批预签；仅内部支持，不增加切图效果专业复审。",
   "inputs": [
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
-    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md"
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/PRODUCTION_PLAN.md"
   ],
   "deliverables": [
-    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/TECH_DESIGN.md",
-    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/REVIEW.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/TECH_PRESIGN.json",
-    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/SAMPLE_TECH_CHECK.json",
-    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.1/DELIVERABLE.json"
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/TECH_DESIGN.md",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/REVIEW.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "首图前技术预签锁同方案与来源hash。",
-    "样张核单拱、中线、alpha、尺寸与六店关系，续签可追溯。",
-    "制作与运行预算区分，真实运行NOT_TESTED。"
+    "v0.2首图前同批技术签明确冻结来源、ROI和未改区零差方法。",
+    "栏杆分层复用、桥脚局部处理和累计15调用上限有可执行记录，不清零旧问题。",
+    "仅内部制作支持，客户端接入锁定，运行NOT_TESTED。"
   ],
   "dependencies": [],
   "status": "DONE",
@@ -29,6 +30,8 @@
   "notes": [
     "用户明确授权按讨论范围制作至下一USER_REVIEW，不是成品批准。",
     "只Game Project Layer，不改Studio或apps/client。",
-    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。"
+    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。",
+    "用户2026-10-14局部修订明确授权；v0.1 Task/Approval快照保留，未批准部分不变。",
+    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。"
   ]
 }

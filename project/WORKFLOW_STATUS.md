@@ -1,3 +1,59 @@
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PRODUCER_DONE START -->
+2026-10-14 09:04:17 +08:00（Producer v0.2内部流程完成）：Master `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/MASTER_ACCEPTANCE.json` APPROVED，三验收、10项索引与Required核实；FLOW REVIEW→DONE，审批PROFESSIONAL_REVIEW，仅本轮流程支持完成。Art准确v0.2资源继续USER_REVIEW且用户决定待，Tech内部DONE，Client锁，Cocos/目标机运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PRODUCER_DONE END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PRODUCER_REVIEW START -->
+2026-10-14 09:03:01 +08:00（Producer v0.2内部Review）：`CONTINUITY_CHECK.md`及`DELIVERABLE.json`实存，三项Task原文验收逐项PASS、10项索引路径实存；FLOW Task IN_PROGRESS→REVIEW，待Master正式接受，不提前DONE。Art准确v0.2资源仍USER_REVIEW/用户决定待，Tech内部支持DONE，Client接入锁、Cocos运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PRODUCER_REVIEW END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 GATE2_USER_REVIEW START -->
+2026-10-14 09:00:42 +08:00（Art v0.2准确成品Gate2送用户审核）：Master `MASTER_DELIVERY_FILE_CHECK.json` SHA e6900eeb…1ca4da 独立核实际43层PSD/18 active PNG、旧v0.1冻结20文件全同与旧17切片字节不变、ROI外0变、PSD/切片重组0差；ZIP SHA 0d28715a…2a2c7、47,809,342字节/29成员/18PNG/CRC PASS，无shop/reference/history。Art Task REVIEW→USER_REVIEW，现行`ARTIFACT_APPROVAL.json`准确对象`USER_REVIEW_PACKET.md` v0.2，review_ref上述核对、decided_at null；旧v0.1 REJECTED快照与两个Gate1分别留存。只送用户决定，Art不DONE，Client锁，Cocos/目标机/40MiB/12批次NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 GATE2_USER_REVIEW END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ART_REVIEW START -->
+2026-10-14 08:59:55 +08:00（Art v0.2正式交付进入Master核）：Art 14/14 Required、DELIVERABLE索引20/20路径（19文件+1目录）实存，六项Task验收原文同序PASS，Task IN_PROGRESS→REVIEW。Producer复核ZIP SHA 0d28715a…2a2c7、47,809,342字节/29成员/CRC PASS；43层PSD/18PNG，旧17 hash不变，ROI外零变，重组零差；0新生成、累计14/15。此时Master最终准确文件核对/接受待，Gate2 DRAFT，Client锁、Cocos NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ART_REVIEW END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PIXEL_CHECK START -->
+2026-10-14 08:56:53 +08:00（v0.2静态像素核查）：Art `FILE_VERIFICATION.json`与Master `MASTER_PIXEL_CHECK.json`实存，现行候选PSD43层、活动PNG18张（旧17张字节hash不变+新增街栏1）；同管线PSD展平/切片重组对新版静图RGB最大差0，允许ROI外RGBA变化像素0，ROI内变化151292，六店不输出。文件核验载0新增生成，累计仍14/15；账本状态文字待Art回填。正式用户包/最终文件身份未齐，Gate2 DRAFT、Client锁、Creator NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 PIXEL_CHECK END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 FIRST_IMAGE START -->
+2026-10-14 08:55:55 +08:00（v0.2 Art首图候选制作中）：Art `review/scene_environment.png`、`reassembled_from_exports.png`、`scene_psd_preview.png` 实存；Master观察可继续PSD/包，通报ROI外零差、旧17切片hash保留且本轮0新增生成。此为候选制作进展，不等于最终文件核对、Gate2送审或用户批准；当时`EXECUTION_LEDGER.json`状态文字仍PLAN_PRESIGN_PENDING，待Art正式回填。Art IN_PROGRESS，Gate2 DRAFT，Client锁/运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 FIRST_IMAGE END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TECH_DONE START -->
+2026-10-14 08:55:02 +08:00（v0.2 Tech内部支持完成）：Tech `TECH_DESIGN.md`、`TECH_PRESIGN.json`、`REVIEW.json`、`DELIVERABLE.json`四Required实存且三验收PASS，Master `MASTER_ACCEPTANCE.json` APPROVED；Tech Task IN_PROGRESS→DONE，审批PROFESSIONAL_REVIEW，仅本版同批制作方法支持，不批准Art成品。Art实图制作中，Gate2 DRAFT、Client锁、运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TECH_DONE END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 RELEASE START -->
+2026-10-14 08:52:19 +08:00（Master放行v0.2局部制作）：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/MASTER_PRODUCTION_RELEASE.json` 决定 `RELEASE_LOCAL_PRODUCTION`，计划/Art签/Tech签/Gate1四SHA实测吻合。只准街岸栏杆与桥脚ROI、树不动，优先0生成并继承累计14/15；具体资源及保护区差异仍待实产核验，Gate2 DRAFT、Client锁、Cocos NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 RELEASE END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 DUAL_PRESIGN START -->
+2026-10-14 08:52:59 +08:00（v0.2首图前双签实际齐）：Art更正ASSET措辞后 `ART_PRESIGN.json` 与Tech `TECH_PRESIGN.json`实存；Tech绑定Gate1记录、Art签、ASSET、计划/范围的SHA逐一复算吻合，同批方法预签通过。四ROI与未改区零差方法、旧17切片hash、14/15预算已签；当前只签方法，尚无新实图/保护区核验，Master已于08:52:19另证据放行局部制作。Gate2 DRAFT，Client锁/运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 DUAL_PRESIGN END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TREE_SCOPE START -->
+2026-10-14 08:50:49 +08:00（用户补充确定树不动）：用户对左树红点明确“不是，只修街道与桥脚”，v0.2保护树，不再待答。Tech指出Art `ASSET_MANIFEST.md` 末段把旧v0.1误称已批准；Art需仅改措辞并同步Art预签绑定hash，计划ROI不变。修订后Tech同版预签前不制作新图；Gate1准确方案登记不变，Gate2 DRAFT，Client锁。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TREE_SCOPE END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 GATE1 START -->
+2026-10-14 08:50:28 +08:00（v0.2准确Gate1制作授权）：Master `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/MASTER_GATE1_REVIEW.json` APPROVED，SHA 4fe4c0cf…e04419d；用户局部范围SHA 501c0ccf…c6ca6b与方案SHA c8f89ef6…27b4e复算一致。Producer另存 `tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1_v0.2.json` USER_APPROVED/decided_at null，仅授权制作，不改旧v0.1 Gate1。首图前Tech同hash预签尚待，v0.2具体资源Gate2 DRAFT；Client锁、运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 GATE1 END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ART_START START -->
+2026-10-14 08:48:17 +08:00（v0.2 Art实际开工）：Art `ART_BRIEF.md`、`PRODUCTION_PLAN.md`、`ASSET_MANIFEST.md`及首图前Art签等文件实存，首份Required非空，Art Task READY→IN_PROGRESS；尚不把单侧Art签当Art/Tech双签，也不宣称新资源完成。累计预算14/15继承，Gate2 DRAFT，Client锁、Cocos NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 ART_START END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TECH_START START -->
+2026-10-14 08:46:52 +08:00（v0.2 Tech实际开工）：`deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/TECH_DESIGN.md`非空实存，Tech Task READY→IN_PROGRESS；Art首份自身Required尚未核实，保持READY。当前仅内部技术预案，首图同批双签未齐，Art成品Gate2 DRAFT，Client锁、运行NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 TECH_START END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 INITIAL START -->
+2026-10-14 08:45:02 +08:00（樱花局部修订v0.2开工核查）：Master已建Art/Tech/Producer三条v0.2 Revision，旧v0.1 Task/Approval快照保留；用户明确只补街岸栏杆和桥左右脚圈中衔接，其它暂不动，左树红点未答不动树。Art v0.1具体资源退回，v0.2 Gate2 DRAFT。Producer首份Required `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/CONTINUITY_CHECK.md` 实存，Producer READY→IN_PROGRESS；Art/Tech新Required尚未实存，均保持READY。继承14/15调用、剩1次，不清零旧同问题2/2。Client锁，Cocos NOT_TESTED。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 INITIAL END -->
+
 <!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE START -->
 2026-10-13 23:52:20 +08:00（Producer内部流程完成）：Master `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/MASTER_ACCEPTANCE.json` APPROVED，SHA-256 `2ca9a9d14d02e929308356fb61fa920ff8f3d03d99946d71961cb4e1feac2106`；三项验收与Required已核，`SCENE-SAKURA-REDRAW-FLOW-20261013` REVIEW→DONE，审批`PROFESSIONAL_REVIEW`，只完成本轮流程监督。Art具体资源继续`USER_REVIEW`且用户决定待，Client锁，Cocos/目标机运行`NOT_TESTED`。
 <!-- SCENE-SAKURA-REDRAW-FLOW-20261013 PRODUCER_DONE END -->

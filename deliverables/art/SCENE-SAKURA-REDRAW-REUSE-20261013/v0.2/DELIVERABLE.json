@@ -1,0 +1,68 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "owner": "art",
+  "summary": "完成v0.2局部退修：恢复街岸矮柱绳栏并顺接左右桥脚；无店环境43层PSD、18张正式切片、实尺前后对照及保护区零差验证，具体资源送用户审核。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/exports/",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/scene_environment.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/before_after.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/micro_motion_preview.html",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_VISUAL_SELF_REVIEW.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/EDITABILITY_NOTES.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.2.zip",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/MASTER_PIXEL_CHECK.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/MASTER_PSD_CHECK.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只修街道栏杆及桥两侧圈中衔接，未授权区域解码像素零差。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION与MASTER_PIXEL_CHECK独立核对：151292个变化像素均在四矩形ROI内，ROI外RGB/RGBA变化像素0；树等其余区域保留。"
+    },
+    {
+      "criterion": "街岸矮柱绳栏可见且连续，桥脚过渡自然；单圆拱与桥灯保持。",
+      "result": "PASS",
+      "evidence": "scene_environment全景和before_after原尺度街桥对照，ART_VISUAL_SELF_REVIEW实图核栏杆、岸石与桥脚关系；桥圆拱、旋纹和四桥灯处于未改像素区。"
+    },
+    {
+      "criterion": "六店不输出；未受影响切片保持v0.1文件hash，图层及导出映射明确。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST登记18张active PNG和43层PSD；旧17张PNG及41个层源文件SHA逐个相同；PSD/ZIP无shop或reference层、文件。"
+    },
+    {
+      "criterion": "实际PSD图层与正式切片重组一致，前后对照及保护区差异有证据。",
+      "result": "PASS",
+      "evidence": "PSD真实存储43层（MASTER_PSD_CHECK独立解析）；PSD存储层与正式切片重组RGBA差0，FILE_VERIFICATION记录PSD平铺/预览/切片静图RGB零差及保护区RGBA零差；before_after.png已存。"
+    },
+    {
+      "criterion": "累计生成调用不超15，旧街深问题2/2不重试；本轮有同计划Art/Tech首图前预签。",
+      "result": "PASS",
+      "evidence": "EXECUTION_LEDGER本轮生成0次、累计14/15；同计划ART_PRESIGN及TECH_PRESIGN在Master放行前生效，PRODUCTION_PLAN SHA c8f89ef6fc29712e48ca22911ff0dee7f211bf247735cd5c614a528edff27b4e。"
+    },
+    {
+      "criterion": "v0.2具体资源直送用户审核，未接入客户端，运行NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET列具体图和包；ZIP SHA256 0d28715a7cffc4824dc280fd8a6aa87f74551c7509ce29f89dd790127a72a2c7，47809342字节/29成员/CRC PASS；未改apps/client，Cocos运行NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "用户最新答复树红点不修，本轮仅街岸与桥脚。",
+    "具体v0.2资源尚待用户Gate2审批；先前方案批准不等于成品批准。"
+  ],
+  "risks": [
+    "左右栏杆为同一半幅水平镜像，灯距和花草对称，留待用户判断最终效果。",
+    "Cocos正式导入、实际纹理驻留、draw batch及目标机运行均未测；CPU浏览器预览不替代运行验收。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

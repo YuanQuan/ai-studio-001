@@ -1,0 +1,18 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "owner": "tech_lead",
+  "summary": "v0.2局部栏杆/桥脚修订已完成制作前技术方法、现成资源遮挡诊断及同版预签。范围外冻结像素、树与六店保持，预算沿原批次累计。",
+  "artifacts": [
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/TECH_DESIGN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.2/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "v0.2首图前同批技术签明确冻结来源、ROI和未改区零差方法", "result": "PASS", "evidence": "TECH_PRESIGN.json绑定Art同版方案c8f89ef6、Gate1记录81038d60、20源冻结清单d284f26e、四个闭开ROI；TECH_DESIGN.md给出同管线保护区零差方法。"},
+    {"criterion": "栏杆分层复用、桥脚局部处理和累计15调用上限有可执行记录，不清零旧问题", "result": "PASS", "evidence": "TECH_DESIGN.md核水栏y680被桥街y512后画遮挡，方案从现成栏杆透明提取、桥脚限局部；账本继承14/15及旧街深2/2，本轮至多1调用与1小时上限。"},
+    {"criterion": "仅内部制作支持，客户端接入锁定，运行NOT_TESTED", "result": "PASS", "evidence": "TECH_PRESIGN.json列新图、保护区差异、PSD/切片重组及Creator均NOT_TESTED；Art自产切片直接送用户Gate2，未批前不接入。"}
+  ],
+  "assumptions": ["v0.1是冻结制作基线，具体资源尚未获用户Gate2批准；v0.2只修街岸栏杆和桥脚，用户明确树不动。"],
+  "risks": ["实图透明边与桥脚遮挡尚待Art制作后同尺度核验。", "原批次仅剩1次可选局部生成调用，本轮1小时和原累计4小时先到即停。", "Creator导入、运行纹理/绘制批次和目标机实际画面均NOT_TESTED。"],
+  "status": "READY_FOR_REVIEW"
+}

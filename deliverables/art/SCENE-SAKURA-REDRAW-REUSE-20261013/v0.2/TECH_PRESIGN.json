@@ -1,0 +1,41 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "batch": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2",
+  "signed_at": "2026-10-14T08:51:41+08:00",
+  "decision": "APPROVED_FOR_LOCAL_REVISION_METHOD",
+  "production_plan": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/PRODUCTION_PLAN.md",
+  "production_plan_sha256": "c8f89ef6fc29712e48ca22911ff0dee7f211bf247735cd5c614a528edff27b4e",
+  "user_revision_scope_sha256": "501c0ccfea66d82636eb684722534d0d4d3b6efc1eabae6aa8ae097c89c6ca6b",
+  "user_tree_scope_confirmation_sha256": "bea742dc62b1946291e7c264be0168e2fc322aa393f96b4fe0074815a53731a9",
+  "art_brief_sha256": "e799592688ea44cfe3a1739c50cc1a26db3d11a6166a19b7372d34c14af28c80",
+  "asset_manifest_sha256": "9195d0ac06d18cdcde3757df901454ddb10c6ca4e47200c52740f3432a0e9ec9",
+  "art_presign_sha256": "59605b96e13ea56573f5971b4cab9b8a302f545b1144137db3dac434227e7d79",
+  "baseline_freeze": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/MASTER_BASELINE_FREEZE.json",
+  "baseline_freeze_sha256": "d284f26e2a1bb109a7e9e04a22932e9c3c02be4079f6e792f7f326838813755e",
+  "gate1_record": "tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1_v0.2.json",
+  "gate1_record_sha256": "81038d6050083ffdcd72f4dd106fb894fbf3a306b7e943be67d6f65fd8f43e50",
+  "gate1_status": "USER_APPROVED_LOCAL_METHOD_ONLY",
+  "frozen_sources": {
+    "v0_1_psd_sha256": "2aaf8f4b9fe0820dded68cec2ee163ebab3d377c036ce6b6083dcf39e858263d",
+    "v0_1_scene_png_sha256": "ce0c96dc64e7592cc38580b324c0dc84c5341416956f07727a0d3e49d19c50c5",
+    "v0_1_cut_manifest_sha256": "0fbdc19693e2ba7c8543693ad439ec46f2701cf6ff5167703ccfc31ab3de81fc",
+    "v0_1_bridge_half_sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+    "v0_1_water_rail_half_sha256": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3",
+    "v0_1_active_export_count": 17
+  },
+  "allowed_full_canvas_rects_xyxy_half_open": [
+    [0, 708, 1285, 858],
+    [1787, 708, 3072, 858],
+    [1070, 686, 1285, 858],
+    [1740, 667, 2009, 858]
+  ],
+  "conditions": [
+    "只在四矩形并集内恢复临水街岸栏杆和左右桥脚衔接；并集外解码RGBA逐像素零差，软羽化影响也须落在并集内。树冠红点、月山、桥拱/旋纹/四桥灯、精灵、水主区、牌楼均保护不动。",
+    "先从v0.1同批新绘water_rail_half顶部约[0,0,1300,125)透明提取矮灯、绳与必要足部，计划源顶放全景y约730、允许方案ROI内最多±12px微调；在桥街之后、牌楼/前景/精灵之前独立合成，中央桥处截断。水面本体不搬动。",
+    "左右桥脚仅用现成桥/岸像素局部过渡或必要新绘补片；不得整图重绘或用全景截图冒充PSD新层。未受影响原41语义层及17正式环境PNG按原hash复制；如真实制作需改变旧切片，先列出失效项与范围再复核。",
+    "v0.1账本已14/15生成调用（11初始+3修正）、95.42分钟；本轮确定性提取优先0调用。确需新rail/junction问题局部补绘最多1次，旧streetdepth问题2/2不可重计；本轮自08:41:46+08:00起不超过1小时，同时原累计4小时上限继续生效。结果未知调用占潜在额度。",
+    "同管线核v0.2 PSD真实层重组、实际切片重组和静图；保护区alpha与可见RGB零差，修改区和边缘同尺度目视，未受影响文件hash保持。无店输出。自产切片直接交用户Gate2，无新增成品效果专业复审。"
+  ],
+  "not_tested": ["新栏杆与桥脚实图效果", "保护区零差及切片/PSD重组", "Creator导入、纹理驻留、绘制批次与目标机运行"],
+  "next_action": "Master按已登记Gate1与Art/Tech同版预签放行Art局部制作；具体v0.2资源仍待用户Gate2。"
+}

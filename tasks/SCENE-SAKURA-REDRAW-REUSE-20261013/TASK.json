@@ -4,36 +4,39 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "环境分层重绘，六店复用；街桥水栏半幅镜像、两树两精灵不规则复用，产出PSD/PNG与重组，持续至Gate2。",
+  "objective": "仅修订v0.1街岸：恢复被街面遮住的矮柱绳栏，修顺用户圈中的桥脚与街岸衔接；其余像素保持，六店不输出，产出v0.2 PSD/切片并直送具体资源审核。",
   "inputs": [
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
-    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md"
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md"
   ],
   "deliverables": [
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_BRIEF.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/PRODUCTION_PLAN.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/VISUAL_ANCHORS.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ASSET_MANIFEST.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/ART_PRESIGN.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/SAMPLE_REVIEW.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/CUT_MANIFEST.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/scene_environment.png",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/review/reassembled_from_exports.png",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_REVIEW_PACKET.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/EXECUTION_LEDGER.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/FILE_VERIFICATION.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/DELIVERABLE.json"
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/scene_environment.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/before_after.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "环境为新绘而非原图裁片；六店不重绘、不输出，正式PSD及环境预览无六店。",
-    "单圆拱镜像连续，街宽/栏水与六店关系正确。",
-    "两树两精灵独立复用，天空远山非对称。",
-    "PSD与实际切片重组一致，有同尺度参照与编辑范围。",
-    "预算、路径/hash可追溯，运行未测明确。",
-    "成品送Gate2，未接入客户端。"
+    "只修街道栏杆及桥两侧圈中衔接，未授权区域解码像素零差。",
+    "街岸矮柱绳栏可见且连续，桥脚过渡自然；单圆拱与桥灯保持。",
+    "六店不输出；未受影响切片保持v0.1文件hash，图层及导出映射明确。",
+    "实际PSD图层与正式切片重组一致，前后对照及保护区差异有证据。",
+    "累计生成调用不超15，旧街深问题2/2不重试；本轮有同计划Art/Tech首图前预签。",
+    "v0.2具体资源直送用户审核，未接入客户端，运行NOT_TESTED。"
   ],
   "dependencies": [],
   "status": "USER_REVIEW",
@@ -41,6 +44,8 @@
   "notes": [
     "用户明确授权按讨论范围制作至下一USER_REVIEW，不是成品批准。",
     "只Game Project Layer，不改Studio或apps/client。",
-    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。"
+    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。",
+    "用户2026-10-14局部修订明确授权；v0.1 Task/Approval快照保留，未批准部分不变。",
+    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。"
   ]
 }

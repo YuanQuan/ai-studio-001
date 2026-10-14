@@ -1,0 +1,12 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "v0.2方案与用户仅修街道栏杆、左右桥脚的授权及树不动补充一致，四矩形ROI和范围外零差判据明确；Art/Tech预签绑定同版真实hash与Gate1记录。"},
+    {"severity": "INFO", "message": "现有water_rail_half在全景y680，桥街半幅在y512且后画，覆盖其顶部已画的矮灯绳栏；透明独立提取、置于桥街之上、中央桥处截断为可执行修法。计划原17环境PNG保持hash，必要桥脚局部层另记。"},
+    {"severity": "MINOR", "message": "栏杆遮罩边、桥脚重叠与PSD/切片重组尚无v0.2实图，必须按同背景、同尺寸及保护区逐像素核，不能以本预签宣称视觉通过。"},
+    {"severity": "MAJOR", "message": "原批次已14/15生成调用、旧街深问题2/2；仅剩1次新局部问题补绘可选，结果未知调用须占潜在余额。本轮1小时与原批累计4小时上限均生效。"}
+  ],
+  "next_action": "Art依已获Gate1及同批双预签制作局部栏杆/桥脚并保留实图核验；自产v0.2切片直接交用户Gate2，用户批准前不接入客户端。"
+}

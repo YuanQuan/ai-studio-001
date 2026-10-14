@@ -1025,3 +1025,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Art下次样张同时附完整画幅和局部实尺对照，先查重复纹样再签视觉PASS；代价为一次目视，复核点为下一批街景样张。Master与Art在用户包所有说明定稿后再冻结ZIP并执行一次最终hash核对，减少重包后错版本风险；代价为一次末次完整性检查，复核点为下一次Gate2准确包。Producer继续以预算账本的调用状态和同问题轮数核余量，复核点为下一批生成任务第一次修正。三项均为现有职责内检查，不新增审批门禁。
 - Continuity check：Art已到真实 `USER_REVIEW`；Tech内部支持已 `DONE`；Producer本轮状态、审批、看板、资源登记和核对产物实存。无本批仅以 `READY/IN_PROGRESS` 占位且可无阻塞继续的任务。当前下一步是用户对具体v0.1资源作Gate2决定，未批前不解锁Client。
 <!-- SCENE-SAKURA-REDRAW-FLOW-20261013 END -->
+
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 RETROSPECTIVE START -->
+## WR-20261014-SCENE-SAKURA-REDRAW-FLOW-002｜街栏与桥脚局部修订至具体资源送审
+
+- 结果与证据：用户退回v0.1具体效果，只授权修街道栏杆和圈中桥脚；随后明确树不动。Master创建三条v0.2 Revision并核准确局部Gate1，Art/Tech同版预签与Master放行齐。Art实际产出43层PSD、18活动PNG（旧17字节hash不变＋新增街栏半幅）、无店前后对照与用户包；Master独立核ROI外RGBA变化0、PSD与切片同尺度重组0差及ZIP身份。Art现为准确v0.2 `USER_REVIEW`，用户尚未批准；Tech内部支持获Master接受`DONE`；Client接入锁定，Cocos/目标机运行`NOT_TESTED`。证据为Art v0.2 `DELIVERABLE.json`、`FILE_VERIFICATION.json`、`MASTER_DELIVERY_FILE_CHECK.json`、`EXECUTION_LEDGER.json`，三Task及本版 `CONTINUITY_CHECK.md`。
+- 时间与耗时（Asia/Shanghai）：本轮可核起点为Master首次可靠时钟工具返回2026-10-14 08:41:46 +08:00，具体资源送审节点09:00:42 +08:00，跨节点墙钟18分56秒；用户原消息和首个文件读取精确时刻未知。Art账本记08:41:46至08:57:28共15.7分钟，包含方案、同版预签与等待，不冒充净制作时间；具体用户等待从Gate2送审后开始，不并入本轮制作。专业产出、Master核阅与短等待无法可靠拆分净时长；费用/算力遥测未知。局部制作在1小时上限内；本版0新生图、原批累计14/15，旧街深2/2不重计。
+- 影响与原因：本轮复用现成新绘水栏透明上缘，未触发新生成和同问题修正。Tech发现ASSET文书末段误称v0.1已获批准，Art精确修订措辞并同步重签hash，避免旧退修状态混淆；其净返工耗时未知。最后ZIP与Master文件身份按同一冻结版本核，未见重包错版或工具故障的证据。不以18分56秒推断任一角色效率。
+- 建议与复核：Art在下次局部修订首签前检查源版本审批状态措辞，Tech核同版hash，复核点为下个局部方案的双签；Producer在登记新版资源时保持旧版退修快照与新Gate2独立，复核点为用户本版决定后交接。两项均属已有职责，不加新审批门禁。
+- Continuity：Art真实`USER_REVIEW`、Tech内部支持`DONE`；Producer本轮状态/审批/里程碑、18项资源登记、看板及continuity有实产，内部交付待Master接受。无本批可继续但仅以READY/IN_PROGRESS占位的空转任务；下一外部依赖为用户对准确v0.2具体资源决定，批准前Client锁。
+<!-- SCENE-SAKURA-REDRAW-V02-20261014 RETROSPECTIVE END -->

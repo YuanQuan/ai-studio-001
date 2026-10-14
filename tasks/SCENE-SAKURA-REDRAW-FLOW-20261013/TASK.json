@@ -4,21 +4,22 @@
   "type": "coordination",
   "owner": "producer",
   "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
-  "objective": "追踪Gate1用户授权、实际开工、样张与全批节点；结束核成品版本、Gate2、continuity与复盘，更新项目看板。",
+  "objective": "追踪用户v0.1退修与v0.2局部授权、冻结旧资源/预算、同批预签、准确新版Gate2、连续性及复盘；维护资源登记和看板。",
   "inputs": [
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
-    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md"
+    "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md"
   ],
   "deliverables": [
-    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/CONTINUITY_CHECK.md",
-    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.1/DELIVERABLE.json"
+    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/CONTINUITY_CHECK.md",
+    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "Gate1/Gate2版本分开；实际开工有实产。",
-    "状态/审批/里程碑/看板同步真实路径与节点。",
-    "结束有continuity及真实起止时间的短复盘。"
+    "v0.1退修记录保留，v0.2制作授权与具体资源审核分开，实际开工有证据。",
+    "状态、审批、里程碑、资源登记与看板引用准确v0.2路径，Client保持锁定。",
+    "结束有continuity及可核真实起止的短复盘，预算累计不清零。"
   ],
   "dependencies": [],
   "status": "DONE",
@@ -26,6 +27,8 @@
   "notes": [
     "用户明确授权按讨论范围制作至下一USER_REVIEW，不是成品批准。",
     "只Game Project Layer，不改Studio或apps/client。",
-    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。"
+    "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。",
+    "用户2026-10-14局部修订明确授权；v0.1 Task/Approval快照保留，未批准部分不变。",
+    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。"
   ]
 }
