@@ -1,0 +1,40 @@
+{
+  "id": "U00-U01-SAKURA-V03-FLOW-20261014",
+  "title": "U00/U01共享樱花v0.3环境FLOW",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "已批准18PNG/43实例共享环境替换U00/U01旧环境，保留店铺游客及编辑能力，完成Creator构建和内置浏览器真实验证至用户审阅。",
+  "inputs": [
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/CUT_MANIFEST.json",
+    "tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE2_v0.3.json",
+    "rules/cocos_cli_browser_workflow.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/FLOW_CHECK.md",
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/CONTINUITY_CHECK.md",
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "18资源同字节、43初始环境实例、镜像坐标叠层匹配v0.3；六店游客保留。",
+    "U00/U01共享资源及数据；U01编辑增删变换导出重置回退可用；其它示例功能保留。",
+    "旧环境全部活动引用审计并验证后退役；历史母版保留。",
+    "Creator3.8.8实际UUID导入构建、本地HTTP内置浏览器真实画面和操作证据。",
+    "性能区分估算和实测，目标机未测如实记录；零生图。",
+    "固定交付物评审流程齐备；单元示例Owner验证，不扩张发布QA。"
+  ],
+  "dependencies": [
+    "SCENE-SAKURA-REDRAW-REUSE-20261013"
+  ],
+  "status": "DONE",
+  "approval": "PROFESSIONAL_REVIEW",
+  "notes": [
+    "用户已批准并授权接入，不新增重复用户许可。",
+    "仅Game Project Layer；保留并发U05及既有未提交修改；修改前备份/hash。",
+    "Client可修改UnitSamples.scene、共用背景prefab、README及资源登记本Task段落；Producer维护日志dashboard独立marker；Tech只写本交付目录。",
+    "不自行创建任务或Git动作；Master统一提交。",
+    "先FEATURE_BRIEF与Tech沟通；旧环境物理退役须引用审计及实际验证通过。"
+  ]
+}

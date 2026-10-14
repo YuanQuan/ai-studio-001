@@ -1,0 +1,61 @@
+{
+  "task_id": "U00-U01-SAKURA-V03-CLIENT-20261014",
+  "owner": "client",
+  "summary": "樱花v0.3共享环境已接入U00/U01并保留U04；旧活动资源已退役。Gallery窄退出API兼容适配经Creator重建、Master新构建IAB及Tech复核通过。客户端交付已准备用户审阅。",
+  "artifacts": [
+    "FEATURE_BRIEF.md",
+    "IMPLEMENTATION_REPORT.md",
+    "RESOURCE_IMPORT_MANIFEST.json",
+    "RUN_VERIFICATION.md",
+    "evidence/BUILD_MANIFEST.json",
+    "evidence/STATIC_VALIDATION.json",
+    "evidence/SPRITEFRAME_TRIM_AUDIT.json",
+    "evidence/LEGACY_RETIREMENT_AUDIT.md",
+    "evidence/RETIREMENT_CANDIDATES.json",
+    "evidence/NON_TARGET_PRESERVATION_CHECK.md",
+    "evidence/final-build/creator-web-mobile.log",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "apps/client/README.md",
+    "evidence/final-build/creator-gallery-adapter-stdout.log"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "18资源同字节、43初始环境实例、镜像坐标叠层匹配v0.3；六店游客保留。",
+      "result": "PASS",
+      "evidence": "evidence/STATIC_VALIDATION.json; RESOURCE_IMPORT_MANIFEST.json; Master integration evidence/u01_trim_fixed_export.json"
+    },
+    {
+      "criterion": "U00/U01共享资源及数据；U01编辑增删变换导出重置回退可用；其它示例功能保留。",
+      "result": "PASS",
+      "evidence": "RUN_VERIFICATION.md；最新b55009 adapter build的Master IAB：U05进入/返回、U01完整场景与交互导出、U00新build入口图均通过；其他示例smoke证据留存。"
+    },
+    {
+      "criterion": "旧环境全部活动引用审计并验证后退役；历史母版保留。",
+      "result": "PASS",
+      "evidence": "evidence/LEGACY_RETIREMENT_AUDIT.md; evidence/RETIREMENT_CANDIDATES.json；退役前按原始SHA复验并核对UUID外部引用为0"
+    },
+    {
+      "criterion": "Creator3.8.8实际UUID导入构建、本地HTTP内置浏览器真实画面和操作证据。",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MANIFEST.json；最终BUILD_MANIFEST.json和creator-gallery-adapter-stdout.log；Master IAB截图 u00_exit_compat_final.jpg、u01_exit_compat_panorama.jpg、u01_exit_compat_final.jpg，导出u01_exit_compat_export.json；exit_compat_browser_log.json为空。"
+    },
+    {
+      "criterion": "性能区分估算和实测，目标机未测如实记录；零生图。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF.md; IMPLEMENTATION_REPORT.md; RUN_VERIFICATION.md"
+    },
+    {
+      "criterion": "固定交付物评审流程齐备；单元示例Owner验证，不扩张发布QA。",
+      "result": "PASS",
+      "evidence": "客户端五项固定交付齐备；Tech最终adapter版Review已更新为APPROVED；Owner/Master单元示例运行证据齐备，未扩张正式发布QA。"
+    }
+  ],
+  "assumptions": [
+    "单元示例由Client Owner和Master记录实际运行及画面证据，不扩展为正式QA或发布验证。",
+    "U01现有横屏布局对画布遮挡为既有布局限制，本轮按竖屏设计视口完成主要操作验证。"
+  ],
+  "risks": [
+    "DrawCall、GPU驻留、目标设备性能以及原生/小游戏平台未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

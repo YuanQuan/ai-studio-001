@@ -1,0 +1,63 @@
+{
+  "task_id": "U00-U01-SAKURA-V03-TECH-20261014",
+  "owner": "tech_lead",
+  "summary": "完成樱花v0.3共享环境的技术设计、Client方案审查、退旧后构建与运行复核；Gallery退出回调窄兼容适配后的最终Creator构建和定向IAB也已通过，技术评审APPROVED。目标设备性能另待实测。",
+  "artifacts": [
+    "deliverables/tech_lead/U00-U01-SAKURA-V03-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U00-U01-SAKURA-V03-TECH-20261014/v0.1/REVIEW.json",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/STATIC_VALIDATION.json",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/RETIREMENT_CANDIDATES.json",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u01_final_post_retirement_export.json",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u01_final_panorama.jpg",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u01_final_edit_smoke.jpg",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u04_final_post_retirement.jpg",
+    "deliverables/tech_lead/U00-U01-SAKURA-V03-TECH-20261014/v0.1/REVIEW_before_exit_compat.json",
+    "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/final-build/creator-gallery-adapter-stdout.log",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u05_exit_compat_return_menu.jpg",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u01_exit_compat_export.json",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u01_exit_compat_panorama.jpg",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/u00_exit_compat_final.jpg",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/evidence/exit_compat_browser_log.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "18资源同字节、43初始环境实例、镜像坐标叠层匹配v0.3；六店游客保留。",
+      "result": "PASS",
+      "evidence": "Client RESOURCE_IMPORT_MANIFEST.json与STATIC_VALIDATION.json；Master退旧后U01导出18原型/43环境/6店，独立比对UUID、序号、坐标0差；u01_final_panorama.jpg及U00实图显示六店游客。"
+    },
+    {
+      "criterion": "U00/U01共享资源及数据；U01编辑增删变换导出重置回退可用；其它示例功能保留。",
+      "result": "PASS",
+      "evidence": "Client FEATURE_BRIEF.md、IMPLEMENTATION_REPORT.md；Master U01新增/变换/删除/重置/重入/导出及退旧后编辑截图，U04店长与表情、U02/U03/U05入口smoke截图。 最终Gallery adapter构建下，Master再核U05返回菜单、U01全景/导出及U00入口图，均PASS；未把并发U05业务源码纳入本任务。"
+    },
+    {
+      "criterion": "旧环境全部活动引用审计并验证后退役；历史母版保留。",
+      "result": "PASS",
+      "evidence": "Client RETIREMENT_CANDIDATES.json列34项，物理检查34/34已不存在；旧47 UUID扫描活动assets源码零引用；LEGACY_RETIREMENT_AUDIT.md保留历史Art母版。"
+    },
+    {
+      "criterion": "Creator3.8.8实际UUID导入构建、本地HTTP内置浏览器真实画面和操作证据。",
+      "result": "PASS",
+      "evidence": "Client RESOURCE_IMPORT_MANIFEST.json登记Creator真实image/Texture2D/SpriteFrame UUID；BUILD_MANIFEST.json及final-build/creator-web-mobile.log标明UnitSamples入口和Finished，输出733文件/6关键SHA通过；Master IAB退旧后U01/U04截图与JSON，U00边缘/交互截图。 最终适配构建见creator-gallery-adapter-stdout.log/BUILD_MANIFEST.json；Master u05_exit_compat_return_menu.jpg、u01_exit_compat_export.json、u01_exit_compat_panorama.jpg、u00_exit_compat_final.jpg及exit_compat_browser_log.json=[]。"
+    },
+    {
+      "criterion": "性能区分估算和实测，目标机未测如实记录；零生图。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md与本Review明确31.45MiB为RGBA8源面积估算；IAB菜单90.14MiB至多流程后201.6MiB/截图时60fps仅为全App观察，DrawCall/GPU/目标机指标NOT_TESTED；本任务资源复用已获批PNG，imagegen调用0。"
+    },
+    {
+      "criterion": "固定交付物评审流程齐备；单元示例Owner验证，不扩张发布QA。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md、REVIEW.json、DELIVERABLE.json齐备；Client RUN_VERIFICATION.md和Master IAB证据构成单元示例Owner验证，未声称发布QA。 REVIEW_before_exit_compat.json保留首次评审快照；本版增量评审绑定Gallery适配后真实构建。"
+    }
+  ],
+  "risks": [
+    "目标设备性能、DrawCall与GPU驻留未实测；31.45MiB为源图理论RGBA8，不等于运行峰值。",
+    "U01既有横屏编辑布局遮挡部分画布；已记录，竖屏实际操作通过。",
+    "Creator CLI外层返回36发生于日志Finished之后的macOS退出清理；以构建日志、物理输出哈希和浏览器实际运行共同判定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

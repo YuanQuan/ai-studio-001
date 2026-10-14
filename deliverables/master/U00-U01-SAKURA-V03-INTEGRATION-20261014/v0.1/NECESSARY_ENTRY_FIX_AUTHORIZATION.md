@@ -1,0 +1,9 @@
+# 真实单元入口的必要兼容修复
+
+首次CLI依默认profile构建了旧LanternPilot奶茶场景，实际内置浏览器只显示单店和播放/暂停/复位，无法进入U00/U01。该首次Finished不能算本任务构建验收。
+
+Client改用隔离profile的UnitSamples场景后，日志揭示Gallery导入的U05 milk_tea_lab.ts含三个装饰Component，违反Creator单脚本单Component限制，导致Gallery注册缺失。Master已读实际脚本核实三个@ccclass。
+
+用户已授权让U00/U01可使用新资源；修复阻断它们的共用入口是该授权内必要低风险工作。Master允许Client仅拆分U05NineSlicePlate/U05BitmapText到独立模块、原逻辑/类名/方法保留并重新导入，完整保留U05其它并发代码/资产。禁止借此改U05玩法或交付范围，不增加用户审批门禁。精确diff、真实meta/注册和UnitSamples/U05入口回归作为证据。
+
+默认场景选择仅在隔离构建输入明确设置UnitSamples UUID，不关闭或操控用户当前编辑器。旧环境退役仍等待真实入口构建和运行通过。

@@ -1,0 +1,28 @@
+{
+  "taskId": "U00-U01-SAKURA-V03-CLIENT-20261014",
+  "checks": {
+    "artToClientPngBytesAndSha": true,
+    "approvedPngCount": true,
+    "allCreatorIdentityTriplesPresent": true,
+    "manifestOrderGeometryMirror": true,
+    "stableInstanceIds": true,
+    "layerBuckets": true,
+    "prefabFiveLayerDirectNodes": true,
+    "U00AndU04SharePopulationFunction": true,
+    "U01HasDynamicSelectionAndFiveInitialPages": true,
+    "all18CreatorMetaTriplesMatchRegistry": true,
+    "exportUsesMetaTextureUuidAfterIABFix": true,
+    "exportAvoidsDynamicRuntimeTextureUuid": true,
+    "creatorSpriteFrameRawDimensionsMatchSource": true,
+    "trimSafeSpriteInitializationInSharedAndU01": true
+  },
+  "status": "PASS_STATIC",
+  "artInstanceCount": 43,
+  "sourcePrototypeCount": 18,
+  "clientPngCount": 18,
+  "clientTotalPngBytes": 8606267,
+  "notes": [
+    "Old resources are only pending retirement; physical deletion waits for Master IAB initial-pass evidence.",
+    "Performance tests for DrawCall/GPU/FPS/target devices are not performed here."
+  ]
+}

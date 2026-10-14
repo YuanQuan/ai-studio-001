@@ -11,6 +11,8 @@ import {
 } from './labs/u02/tourist_adapter';
 import { TouristView } from './labs/u02/tourist_view';
 import { SHOP_IDS, SHOP_NAMES, SHOP_PREFAB_NAMES } from './labs/u03/shop_definitions';
+import { U01SakuraLayoutEditor } from './labs/u01/sakura_layout_editor';
+import { populateSakuraV03 } from './labs/u01/sakura_v03_environment';
 import { U05MilkTeaLab } from './labs/u05/milk_tea_lab';
 
 const { ccclass, property } = _decorator;
@@ -146,6 +148,7 @@ export class UnitSampleGallery extends Component {
   private overviewClipboardFallback: any = null;
   private overviewBackgroundLayers: Node[] = [];
   private overviewController: Scene1CameraController | null = null;
+  private u01Editor: U01SakuraLayoutEditor | null = null;
   private u05Lab: U05MilkTeaLab | null = null;
   private u05ProfilerWasShowing: boolean | null = null;
   private overviewGroupButtons: Partial<Record<'street' | 'tourists' | 'shops', Node>> = {};
@@ -341,6 +344,8 @@ export class UnitSampleGallery extends Component {
   }
 
   private clearPage(): void {
+    this.u01Editor?.dispose();
+    this.u01Editor = null;
     this.u05Lab = null;
     this.restoreOverviewProfiler();
     for (const item of this.overviewTourists) item.state.detach();
@@ -430,8 +435,8 @@ export class UnitSampleGallery extends Component {
     this.menuCards.push(this.menuCard('U00', '夜市总览',
       overviewReady ? '同屏查看街景、顾客与六间店铺。' : '组合资源未就绪',
       () => this.openOverview(), overviewReady));
-    this.menuCards.push(this.menuCard('U01', '五层场景镜头',
-      '查看五层场景视差，拖动、缩放并重置镜头。', () => this.openUnit()));
+    this.menuCards.push(this.menuCard('U01', '樱花场景布局',
+      '樱花场景布局编辑：选层、移动缩放、调整樱树与灵焰、莲花和倒影。', () => this.openUnit()));
     this.menuCards.push(this.menuCard('U02', '游客动作与装扮',
       '查看游客的动作、左右朝向与独立装扮。', () => this.openTourist()));
     const shopsReady = this.shopPrefabs.length === 6 &&
@@ -480,7 +485,10 @@ export class UnitSampleGallery extends Component {
     const host = this.makeNode('U05LabHost', this.page, 720, 1280);
     this.u05Lab = host.addComponent(U05MilkTeaLab);
     const epoch = this.pageEpoch;
-    this.u05Lab.setExitHandler(() => { if (epoch === this.pageEpoch) { if(this.u05ProfilerWasShowing)profiler.showStats();this.u05ProfilerWasShowing=null;this.openMenu(); } });
+    const exitAdapter = this.u05Lab as unknown as { setExitHandler?: (handler: () => void) => void; onExit?: (() => void) | null };
+    const returnToMenu = () => { if (epoch === this.pageEpoch) { if(this.u05ProfilerWasShowing)profiler.showStats();this.u05ProfilerWasShowing=null;this.openMenu(); } };
+    if (exitAdapter.setExitHandler) exitAdapter.setExitHandler(returnToMenu);
+    else exitAdapter.onExit = returnToMenu;
   }
 
   private shopLabel(index: number): string {
@@ -911,7 +919,6 @@ export class UnitSampleGallery extends Component {
     view.setDesignResolutionSize(1280,720,ResolutionPolicy.FIXED_WIDTH); this.u04LandscapeMode=true;
     this.u04Manager = 0; this.u04Stage = 0; this.u04Expression = 3;
     this.u04PanelSizeIndex = 3;
-    this.u04PanelWidth = 1;
     const visible = view.getVisibleSize();
     const stage = this.makeNode('U04DialogueScene', this.page, visible.width, visible.height);
     if (!this.streetBasePrefab) {
@@ -921,6 +928,7 @@ export class UnitSampleGallery extends Component {
     const background = instantiate(this.streetBasePrefab);
     background.name = 'U00StreetBase';
     stage.addChild(background);
+    populateSakuraV03(background, stage);
     const entities=this.makeNode('U04_U00ShopLayout',background,3072,1024); entities.setSiblingIndex(3);
     const shopPositions=[[-1079,-234],[-780,-260],[-410,-235],[350,-237],[689,-249],[1030,-249]];
     this.shopPrefabs.forEach((prefab,i)=>{if(!prefab)return;const shop=instantiate(prefab);shop.name=`U00Shop_${i+1}`;entities.addChild(shop);const scale=0.34;shop.setScale(scale,scale,1);const contactY=shop.getChildByName('ground_contact')?.position.y??-388;shop.setPosition(shopPositions[i][0],shopPositions[i][1]-contactY*scale,0);});
@@ -1171,53 +1179,18 @@ export class UnitSampleGallery extends Component {
 
   private openUnit(): void {
     this.clearPage();
-    const visible = view.getVisibleSize();
-    const viewport = this.makeNode('Scene1Viewport', this.page, visible.width, visible.height);
-    this.sceneViewport = viewport;
-    if (!this.streetBasePrefab) {
-      this.label(this.page, '五层背景暂不可用，请检查已批准资源导入。',
-        0, 0, 20, MUTED, 640, 80);
-      return;
-    }
-
-    const background = instantiate(this.streetBasePrefab);
-    background.name = 'STREET_BASE_01';
-    viewport.addChild(background);
-    const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
-    const layers = layerNames.map(name => background.getChildByName(name))
-      .filter((layer): layer is Node => !!layer);
-    if (layers.length !== 5) {
-      background.destroy();
-      this.label(this.page, '五层背景结构异常，请检查 STREET_BASE_01。',
-        0, 0, 20, MUTED, 640, 80);
-      return;
-    }
-
-    const controls = this.makeNode('Scene1Controls', this.page, 470, 72);
-    this.sceneControls = controls;
-    this.button(controls, '−', -170, 0, 96, 64);
-    this.button(controls, '重置', 0, 0, 150, 64);
-    this.button(controls, '+', 170, 0, 96, 64);
-    this.sceneBack = this.button(this.page, '返回菜单', 0, 0, 180, 64);
+    this.overviewProfilerWasShowing = profiler.isShowingStats();
+    profiler.hideStats();
+    this.u01Editor = new U01SakuraLayoutEditor(this.page, this);
+    this.u01Editor.open();
     this.layoutScene();
+  }
 
-    const controllerNode = this.makeNode('Scene1CameraController', this.page);
-    // Cocos may call onEnable as soon as the component is added. Keep the node
-    // inactive until every serialized-style reference has been assigned, so
-    // the controller binds its controls with the complete set of nodes.
-    controllerNode.active = false;
-    const controller = controllerNode.addComponent(Scene1CameraController);
-    controller.layers = layers;
-    controller.viewport = viewport;
-    // Only buttons capture input; the transparent spaces between them remain draggable.
-    controller.uiCaptureRoot = null;
-    controller.zoomOutButton = controls.getChildByName('Button_−');
-    controller.resetButton = controls.getChildByName('Button_重置');
-    controller.zoomInButton = controls.getChildByName('Button_+');
-    controller.backButton = this.sceneBack;
-    controllerNode.active = true;
-    controller.reset();
-
+  /** U01-only exit hook; clearing the page also removes its pointer and resize bindings. */
+  public openMenuFromU01(): void {
+    this.u01Editor?.dispose();
+    this.u01Editor = null;
+    this.openMenu();
   }
 
   private openOverview(): void {
@@ -1230,6 +1203,7 @@ export class UnitSampleGallery extends Component {
     const background = instantiate(this.streetBasePrefab!);
     background.name = 'U00StreetBase';
     this.overviewScene.addChild(background);
+    populateSakuraV03(background, this.overviewScene);
     const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
     this.overviewBackgroundLayers = layerNames.map(name => background.getChildByName(name))
       .filter((layer): layer is Node => !!layer);

@@ -1,5 +1,17 @@
 ### WR-20261010-U04-CORNER-SIMPLE-003｜原创角饰简化候选
 
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETROSPECTIVE START -->
+### WR-20261014-U00-U01-SAKURA-V03-001｜获批环境接入与旧资源退役
+
+- 结果与证据：Art v0.3先获用户Gate2批准；本轮18切片同字节导入、43实例、54真实UUID、原34候选文件加1份目录meta（合计35文件）及1空目录退役、Creator 3.8.8最终UnitSamples Web构建及U00/U01/U04实际浏览器操作均有证据。Master `MASTER_ACCEPTANCE.md` 12:05:51+08:00 接受Tech内部支持DONE与Client v0.1送用户审阅；`FINAL_IDENTITY.json`九项SHA复算一致，Client审批USER_REVIEW/decided_at null、非DONE。Producer `FLOW_CHECK.md`、`CONTINUITY_CHECK.md`和本交付清单为流程证据。
+- 起止与耗时（Asia/Shanghai）：可信执行起点为Master首次可核时钟2026-10-14 10:16:11，原用户消息精确时间未知；Master接受12:05:51，墙钟1小时49分40秒。此区间包含Art身份核、Tech/Client并行、Creator多轮构建、Master浏览器检查与修正等待，不能计为任何单一Agent净制作时间。Producer内部接受登记12:11:30，起点至此墙钟1小时55分19秒，末段含Master接受与Producer文书核对，亦非净制作工时；用户审阅等待从本版USER_REVIEW开始，尚无结束时刻。
+- 影响速度的可见环节：首个35秒构建实际启动旧LanternPilot入口；正确UnitSamples又暴露并发U05三组件注册问题。随后IAB发现动态图集导致导出Texture2D UUID为空、Creator自动trim使左右前景硬边，均有Master `RUNTIME_FINDINGS.json`与前后实图；Owner按授权修复并重建/重测。这些是可核返工，不可据墙钟拆出各环节净耗时或推断个人责任。正式性能与目标机未测，横屏既有编辑布局局限如实保留。没有本轮约定的可比工期基线，不主观判定谁“慢”。
+- 建议与复核：Client下次单元样例构建前在隔离profile显式记录入口场景UUID，并在首个HTTP画面核对菜单，增加一次入口快检成本；Producer在下次Creator构建节点复核是否避免错入口。Tech/Client对透明切片接入先抽验SpriteFrame trim/raw尺寸及导出UUID与meta身份，增加一次静态审计成本；Master在下次同类资源的首轮IAB边缘与JSON导出点复核是否减少返工。U05并发组件遵守单脚本一Component的现有Creator约束，Owner在下一次共享入口构建前复核注册，代价一次类型/构建检查；不新增审批门禁。
+- Continuity：Tech内部DONE、Client准确v0.1 USER_REVIEW，Producer FLOW内部DONE（Master接受见FLOW_MASTER_ACCEPTANCE.md）；不存在仅靠READY/IN_PROGRESS占位的可继续本线任务。下一决定是用户对具体接入运行效果审阅；用户等待不可混入本次制作耗时。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETROSPECTIVE END -->
+
+
 - 结果与证据：用户认为v0.2复杂，要求再换且简化；Art已提交v0.3透明实图、README和DELIVERABLE，三项验收PASS。Master仅接受候选送审，`CONCEPT_ACCEPTANCE.json`锁三文件SHA，Producer核对一致；现为USER_REVIEW，正式资源和Client替换仍未批准。
 - 时间与原因：本轮旧复杂候选首次核见22:14:25 +08:00；用户最新反馈精确时刻未知；v0.3送审登记22:22:26 +08:00。中间含用户审看、重绘和文件核验，无法可靠拆分净制作耗时。返工原因有用户明确反馈“别太复杂”，无证据归责工具或人员。
 - 建议与复核：Art收到用户对v0.3造型的判断后，再据此决定是否继续简化；代价一次定向迭代，复核点为下一版实图。Producer仅在用户明确接受设计并完成正式资源对应门禁后解锁制作/接入，复核点为准确版本Approval。

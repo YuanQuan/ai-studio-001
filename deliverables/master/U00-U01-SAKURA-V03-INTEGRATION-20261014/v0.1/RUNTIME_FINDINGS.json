@@ -1,0 +1,59 @@
+{
+  "scope": "已有单元示例的真实Web验收，不是发布QA",
+  "findings": [
+    {
+      "id": "ENTRY-01",
+      "severity": "MAJOR",
+      "observed": "首构建默认LanternPilot，实际只有单奶茶店，无U00/U01入口。",
+      "status": "RESOLVED",
+      "resolution": "隔离profile显式UnitSamples UUID并通过新HTTP菜单实见。"
+    },
+    {
+      "id": "ENTRY-02",
+      "severity": "MAJOR",
+      "observed": "共享入口导入并发U05脚本三个Component，注册失败。",
+      "status": "RESOLVED",
+      "resolution": "并发U05已拆独立helper，Client仅适配onExit公开API并删除U04无效赋值；真实入口能运行。"
+    },
+    {
+      "id": "EXPORT-01",
+      "severity": "MAJOR",
+      "observed": "动态图集令8个运行texture.uuid为空，基线导出资产身份缺项。",
+      "status": "RESOLVED_RUNTIME_PASS",
+      "evidence": "evidence/u01_baseline_export.json",
+      "resolution": "从实际Creator .meta登记的静态proto.textureUuid导出，保留真实SpriteFrame UUID；等待最终重导。",
+      "final_evidence": "evidence/u01_final_post_retirement_export.json"
+    },
+    {
+      "id": "VISUAL-01",
+      "severity": "MAJOR",
+      "observed": "SpriteFrame赋值默认trim尺寸覆写full UITransform，使左前景硬边在screen x54、右前景x590，源图片本应覆盖边界；16/18透明图受影响。",
+      "status": "RESOLVED_RUNTIME_PASS",
+      "evidence": [
+        "evidence/u00_left_edge_candidate.jpg",
+        "evidence/u00_right_edge_before_trim_fix.jpg"
+      ],
+      "resolution": "先CUSTOM/trim=false再赋帧，最后明确full source显示尺寸；不改PNG/镜头边界。",
+      "final_evidence": [
+        "evidence/u00_left_edge_trim_fixed.jpg",
+        "evidence/u00_right_edge_trim_fixed.jpg",
+        "evidence/u00_final_post_retirement.jpg"
+      ]
+    },
+    {
+      "id": "UI-01",
+      "severity": "MINOR",
+      "observed": "U01既有竖屏编辑器在1280×720横屏下控件局部覆盖画布。",
+      "status": "EXISTING_LIMITATION",
+      "evidence": "evidence/u01_landscape_existing_layout_limit.jpg",
+      "resolution": "本次主验设计720×1280及390×844；不扩张横屏UI重做，明确不能称全响应式通过。"
+    },
+    {
+      "id": "CAPTURE-01",
+      "severity": "INFO",
+      "observed": "退役后U01早拍截图在初始加载/首帧阶段为空，未作为PASS证据。",
+      "status": "RESOLVED",
+      "resolution": "保留initial_loading.jpg，返回重入后实际可见图另存u01_final_post_retirement.jpg与u01_final_panorama.jpg，导出54UUID完整。"
+    }
+  ]
+}

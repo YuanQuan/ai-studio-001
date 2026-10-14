@@ -1,0 +1,148 @@
+{
+  "taskId": "U00-U01-SAKURA-V03-CLIENT-20261014",
+  "creator": "Cocos Creator 3.8.8",
+  "platform": "web-mobile",
+  "buildPurpose": "最终Gallery退出接口窄兼容适配构建：HEAD公开setExitHandler时调用，当前并发工作树公开onExit时回退。仅修改UnitSampleGallery.ts，不修改U05组件；显式UnitSamples入口。",
+  "buildLog": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/final-build/creator-gallery-adapter-stdout.log",
+  "buildCommand": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-sakura-v03-adapter-project --build platform=web-mobile;buildPath=/private/tmp/u00-u01-sakura-v03-adapter-build/web-mobile",
+  "creatorCliExitCode": 36,
+  "exitCodeContext": "Creator日志明确 UnitSamples web-mobile build Task Finished in 4 s；外层CLI随后以36退出，日志中的SIGTERM是macOS build-script清理事件，与此前已证实模式相同。",
+  "profilePath": "/private/tmp/u00-u01-sakura-v03-adapter-project/profiles/v2/packages/web-mobile.json",
+  "profileStartScene": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+  "profileScenes": [
+    {
+      "url": "db://assets/UnitSamples.scene",
+      "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+    }
+  ],
+  "launchScene": {
+    "url": "db://assets/UnitSamples.scene",
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+  },
+  "buildOutput": "/private/tmp/u00-u01-sakura-v03-adapter-build/web-mobile/web-mobile",
+  "httpUrl": "http://127.0.0.1:8787/",
+  "httpStatus": 200,
+  "fileCount": 733,
+  "hashes": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+    "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+    "src/settings.json": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+    "assets/main/index.js": "b55009bedc500471d5b75d1c7939129a487a5d4216d782b921499ccef0c66227",
+    "assets/main/config.json": "525dc0a50cf92f652791c6758b410f5ca389f1339739f2996b2d5f4f5a026e80"
+  },
+  "sourceSnapshotPath": "/private/tmp/u00-u01-sakura-v03-adapter-project",
+  "sourceIdentityFiles": [
+    {
+      "path": "assets/UnitSampleGallery.ts",
+      "buildSnapshotSha256": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35",
+      "currentSourceSha256": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_v03_layout.ts",
+      "buildSnapshotSha256": "6fa08a03df7e47bed28ac1ca807172f9250c260845a3f4fb6c97d8b3584215fc",
+      "currentSourceSha256": "6fa08a03df7e47bed28ac1ca807172f9250c260845a3f4fb6c97d8b3584215fc",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_v03_environment.ts",
+      "buildSnapshotSha256": "e580b1172259d8bbf30d17382b8c14677c32082c49fe7fb69f1d044a1fc080f5",
+      "currentSourceSha256": "e580b1172259d8bbf30d17382b8c14677c32082c49fe7fb69f1d044a1fc080f5",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_layout_editor.ts",
+      "buildSnapshotSha256": "ca6ae47a77d88f7b11d233787635b8643e5587561dfc8b7307707ef195a45002",
+      "currentSourceSha256": "ca6ae47a77d88f7b11d233787635b8643e5587561dfc8b7307707ef195a45002",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u05/milk_tea_lab.ts",
+      "buildSnapshotSha256": "b212bf43a1d27fa42c78961b2a09ee386b289055dd851bd01bf1b7cc074cff24",
+      "currentSourceSha256": "b212bf43a1d27fa42c78961b2a09ee386b289055dd851bd01bf1b7cc074cff24",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u05/u05_bitmap_text.ts",
+      "buildSnapshotSha256": "e18409948c9c7bf6f64aed02c8c69cdc21231c6466e885760686f69e53021461",
+      "currentSourceSha256": "e18409948c9c7bf6f64aed02c8c69cdc21231c6466e885760686f69e53021461",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u05/u05_nine_slice_plate.ts",
+      "buildSnapshotSha256": "58705fa52328292751a74c718777925d969e755054a9c1a88f7f29f5af2e102b",
+      "currentSourceSha256": "58705fa52328292751a74c718777925d969e755054a9c1a88f7f29f5af2e102b",
+      "matches": true
+    },
+    {
+      "path": "assets/units/background/prefabs/pf_street_base_01.prefab",
+      "buildSnapshotSha256": "c8c94c32f7550f8376b3d8a40c791dddcd82348ae19456092f7a7c524e95e589",
+      "currentSourceSha256": "c8c94c32f7550f8376b3d8a40c791dddcd82348ae19456092f7a7c524e95e589",
+      "matches": true
+    },
+    {
+      "path": "assets/UnitSamples.scene",
+      "buildSnapshotSha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+      "currentSourceSha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+      "matches": true
+    },
+    {
+      "path": "assets/UnitSamples.scene.meta",
+      "buildSnapshotSha256": "2f8f21f7bb0a4811252e4a6db94bfd1e5f8539ccb3d9f7a2f87993072994db78",
+      "currentSourceSha256": "2f8f21f7bb0a4811252e4a6db94bfd1e5f8539ccb3d9f7a2f87993072994db78",
+      "matches": true
+    },
+    {
+      "path": "package.json",
+      "buildSnapshotSha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "currentSourceSha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "matches": true
+    },
+    {
+      "path": "assets/UnitSampleGallery.ts.meta",
+      "buildSnapshotSha256": "c8cb85b221fdb6a6d412506a0cc3cf9be820435942fbe5f870e5f118b9c89123",
+      "currentSourceSha256": "c8cb85b221fdb6a6d412506a0cc3cf9be820435942fbe5f870e5f118b9c89123",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_layout_editor.ts.meta",
+      "buildSnapshotSha256": "bda435d879c07980beded0c25d670db85053d2e06bb26ce9a95403148ef2ca63",
+      "currentSourceSha256": "bda435d879c07980beded0c25d670db85053d2e06bb26ce9a95403148ef2ca63",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_v03_layout.ts.meta",
+      "buildSnapshotSha256": "5ff2672cecb8fc37ce680d8d4af69bbe9e04d218e91b35eb71afe6fd079cd07b",
+      "currentSourceSha256": "5ff2672cecb8fc37ce680d8d4af69bbe9e04d218e91b35eb71afe6fd079cd07b",
+      "matches": true
+    },
+    {
+      "path": "assets/labs/u01/sakura_v03_environment.ts.meta",
+      "buildSnapshotSha256": "82e9671594d045ad38d8e8ae2d9e54453fb4e56daa7a35ecf7c17d18a1afb277",
+      "currentSourceSha256": "82e9671594d045ad38d8e8ae2d9e54453fb4e56daa7a35ecf7c17d18a1afb277",
+      "matches": true
+    },
+    {
+      "path": "assets/units/background/prefabs/pf_street_base_01.prefab.meta",
+      "buildSnapshotSha256": "a8681a89c2f721cc97a1f27fa5c1783132922d3b8ae7ee8bca4fa0aba3e2bd81",
+      "currentSourceSha256": "a8681a89c2f721cc97a1f27fa5c1783132922d3b8ae7ee8bca4fa0aba3e2bd81",
+      "matches": true
+    }
+  ],
+  "sourceSnapshotDifferences": [],
+  "retirementAudit": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/RETIREMENT_CANDIDATES.json",
+  "resourceManifest": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+  "trimAudit": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/SPRITEFRAME_TRIM_AUDIT.json",
+  "buildDurationSeconds": 4,
+  "postBuildSourceChanges": [],
+  "buildStderr": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/final-build/creator-gallery-adapter-stderr.log",
+  "typeCheckLog": "deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/evidence/tsc-unit-entry.log",
+  "compatibilityAdapter": {
+    "path": "apps/client/assets/UnitSampleGallery.ts",
+    "target": "U05 exit callback API",
+    "HEADBehavior": "call public setExitHandler(handler) when present",
+    "workingTreeBehavior": "otherwise assign public onExit",
+    "U05FilesModified": false
+  }
+}

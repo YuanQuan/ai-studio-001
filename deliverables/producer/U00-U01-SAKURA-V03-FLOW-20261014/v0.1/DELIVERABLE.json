@@ -1,0 +1,57 @@
+{
+  "task_id": "U00-U01-SAKURA-V03-FLOW-20261014",
+  "owner": "producer",
+  "summary": "已监督获批樱花v0.3资源接入U00/U01、旧活动环境退役和真实Creator/Web验证；Tech内部支持DONE，Client准确v0.1送USER_REVIEW待用户决定。",
+  "artifacts": [
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/FLOW_CHECK.md",
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/CONTINUITY_CHECK.md",
+    "deliverables/producer/U00-U01-SAKURA-V03-FLOW-20261014/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/dashboard/index.html",
+    "tasks/U00-U01-SAKURA-V03-TECH-20261014/ARTIFACT_APPROVAL.json",
+    "tasks/U00-U01-SAKURA-V03-CLIENT-20261014/ARTIFACT_APPROVAL.json",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/MASTER_ACCEPTANCE.md",
+    "deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "18资源同字节、43初始环境实例、镜像坐标叠层匹配v0.3；六店游客保留。",
+      "result": "PASS",
+      "evidence": "Art 18同字节、Client43实例与六店游客及镜像层序：Client STATIC_VALIDATION/RESOURCE_IMPORT_MANIFEST、Tech REVIEW和Master IAB终版。"
+    },
+    {
+      "criterion": "U00/U01共享资源及数据；U01编辑增删变换导出重置回退可用；其它示例功能保留。",
+      "result": "PASS",
+      "evidence": "共享U00/U01资源与编辑增删变换导出重置回退：Client RUN_VERIFICATION、Master RUNTIME_VERIFICATION/退役后导出。"
+    },
+    {
+      "criterion": "旧环境全部活动引用审计并验证后退役；历史母版保留。",
+      "result": "PASS",
+      "evidence": "旧环境原候选34文件逐SHA/零外部引用审计后退役，另清理1份无引用目录meta及1空目录，合计35文件+1空目录；Client LEGACY_RETIREMENT_AUDIT与RETIREMENT_CANDIDATES，历史母版保留。"
+    },
+    {
+      "criterion": "Creator3.8.8实际UUID导入构建、本地HTTP内置浏览器真实画面和操作证据。",
+      "result": "PASS",
+      "evidence": "Creator3.8.8真实导入、UnitSamples终版构建和HTTP/IAB：Client BUILD_MANIFEST、Master FINAL_IDENTITY/RUNTIME_VERIFICATION。"
+    },
+    {
+      "criterion": "性能区分估算和实测，目标机未测如实记录；零生图。",
+      "result": "PASS",
+      "evidence": "估算31.45MiB与实测限制分开，目标机未测、零新生图：Client IMPLEMENTATION_REPORT/RUN_VERIFICATION。"
+    },
+    {
+      "criterion": "固定交付物评审流程齐备；单元示例Owner验证，不扩张发布QA。",
+      "result": "PASS",
+      "evidence": "Tech内部Master接受DONE；Client准确v0.1 USER_REVIEW、现行Approval与用户决定待；Owner单元示例验证、无QA；Producer continuity与复盘实存。"
+    }
+  ],
+  "risks": [
+    "用户尚未批准此v0.1接入后的实际运行画面和编辑效果，Client不得DONE。",
+    "目标机FPS、GPU/DrawCall和正式发布QA未测；横屏既有U01布局局限保留。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

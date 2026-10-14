@@ -2,15 +2,15 @@
 
 ## 当前运行入口
 
-本工程当前只提供 `UnitSamples.scene` 中的 U01 四层场景镜头示例。启动页面显示“U01 四层场景镜头”，说明为“查看四层场景视差，并拖动、缩放或重置镜头。”；按“进入 U01”打开四层背景，可拖动视差、缩放、重置并返回菜单后再次进入。旧九项单元样例已从活动菜单、Gallery 实现和场景中退役；历史产品说明、任务、评审与审批记录仍保留在各自交付目录。
+正式示例入口为 `assets/UnitSamples.scene`。Gallery包含U00夜市总览、U01樱花环境布局编辑器、U04店长对话及其他仍在用的单元示例。U00/U01共用获批的樱花v0.3场景资源，U04继续通过同一个街景Prefab使用新版背景；既有六家店铺与游客资源保持独立。旧U01 v0.2资源与旧五层背景已在本轮验证后退役，母版、审批与历史交付仍保留。
 
 ## 开发与运行
 
 执行 Creator 构建前先读 [本项目构建操作记录](CREATOR_BUILD_RUNBOOK.md)。其中记录了本机 Windows 管理员令牌与沙箱提权的区别、2026-10-09 成功证据，以及输入 SHA、日志、输出和实际 Web 检查步骤。
 
-使用项目锁定的 Cocos Creator 3.8.8 打开 `apps/client/`，场景入口为 `assets/UnitSamples.scene`。页面复用 `assets/units/background/prefabs/pf_street_base_01.prefab`、四张已登记的背景 PNG 和 `assets/labs/menu/scene1_camera_controller.ts`；这些正式资产的路径、哈希和 UUID 以 `project/ASSET_HANDOFF_REGISTRY.md` 及对应交付记录为准。
+使用项目锁定的 Cocos Creator 3.8.8 打开 `apps/client/`，场景入口为 `assets/UnitSamples.scene`。U00、U01和U04复用 `assets/units/background/prefabs/pf_street_base_01.prefab` 与同一套 `assets/resources/sakura_v03/` 18张批准PNG；真实Art/Client路径、SHA与Creator image/Texture2D/SpriteFrame UUID登记于 [资源交接登记](../../project/ASSET_HANDOFF_REGISTRY.md) 和 [本任务导入清单](../../deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json)。U01布局与原型身份数据在 `assets/labs/u01/sakura_v03_layout.ts`。
 
-Web Mobile 构建后，可从工程目录运行 `node tools/serve-unit-build.mjs`，由仅监听 `127.0.0.1:8765` 的本地服务提供实际 `build/web-mobile` 输出。Codex 内置浏览器运行检查应关联本次构建版本，并记录加载、菜单、进入/返回/重入、拖动/缩放/重置及 UI 输入隔离证据。浏览器 Web 结果不代表原生、小游戏容器或目标设备性能通过。
+Web Mobile 构建后，使用项目本地服务提供实际输出，并记录本次入口Scene/profile、main bundle hash、settings与资源源身份。单元示例运行检查应覆盖菜单、进入/返回/重入及对应交互；浏览器Web结果不代表原生、小游戏容器或目标设备性能通过。当前任务最终构建细节见其Client交付记录。
 
 ## 工程维护
 

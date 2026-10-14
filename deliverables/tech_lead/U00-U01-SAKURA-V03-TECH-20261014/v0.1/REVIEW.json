@@ -1,0 +1,32 @@
+{
+  "task_id": "U00-U01-SAKURA-V03-TECH-20261014",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "18张v0.3 PNG与Art源SHA逐项相同；43个环境实例按冻结顺序、镜像、尺度、五层槽位与坐标接入。退役后U01导出18原型的SHA/三类UUID及43实例的UUID、顺序、坐标与导入登记独立核对为零差；六店作为L03/L04之间的独立实体保留。证据：Client RESOURCE_IMPORT_MANIFEST.json、STATIC_VALIDATION.json；Master u01_final_post_retirement_export.json、u01_final_panorama.jpg。"
+    },
+    {
+      "severity": "INFO",
+      "message": "旧环境34个物理候选全部退役，旧47个资源UUID在活动assets脚本、JSON、场景、Prefab中零引用；共享Prefab五层接口与UUID保留给U00/U04。Creator 3.8.8最终UnitSamples Web构建日志Finished，733文件，清单6个关键哈希与物理文件一致，16份源快照身份全匹配。证据：Client RETIREMENT_CANDIDATES.json、BUILD_MANIFEST.json、final-build/creator-web-mobile.log。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Master内置浏览器退役后实图显示U01完整画幅、局部编辑和U04店长界面；U00左右边缘SpriteFrame自动trim问题已修并有实图，U01退役后导出为18原型、43环境、6店。早期u01_final_post_retirement.jpg是加载中的空帧，不能作为画面通过证据；以随后的u01_final_panorama.jpg及u01_final_edit_smoke.jpg为准。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "U01既有横屏编辑器布局会遮挡部分画布，本轮竖屏单元示例已实际操作；横屏全面适配未在授权范围内验证。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "源图RGBA8展开面积约31.45MiB仅为估算。IAB菜单Profiler曾观察90.14MiB，跨U00/游客/编辑后201.6MiB且截图时60fps，包含整个App动态图集与缓存累计，不能归为本套环境占用；DrawCall、GPU驻留及目标设备FPS/内存均未实测。"
+    },
+    {
+      "severity": "INFO",
+      "message": "最终Gallery退出回调窄接口适配仅改UnitSampleGallery.ts：HEAD U05的public setExitHandler/private onExit和当前并发U05的public setter/public onExit均优先走setter，保留原pageEpoch、Profiler恢复及返回菜单处理；无setter时才回退公开onExit。适配后Creator构建输出733文件、6关键物理SHA匹配、16/16源码身份相同；Master定向IAB验证U05进出、U01全景与18原型/43环境/6店导出、U00新图，浏览器警告/错误日志为空。旧评审保留REVIEW_before_exit_compat.json。"
+    }
+  ],
+  "next_action": "Master接受本版技术评审并由Producer登记内部DONE；目标设备性能若需结论应另做设备实测。"
+}

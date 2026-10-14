@@ -1,4 +1,104 @@
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
+
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE START -->
+2026-10-14 12:11:30 +08:00（Producer内部最终接受）：Master `FLOW_MASTER_ACCEPTANCE.md`核三Required、六项Task原文验收PASS和13索引并接受；FLOW Task REVIEW→DONE，Approval PROFESSIONAL_REVIEW，仅内部流程支持完成。最终旧环境退役精确为原34候选文件+1目录meta=35文件，另1空目录，非只有34总数。Tech内部DONE；Client准确v0.1 USER_REVIEW/用户未批准非DONE，无本线READY/IN_PROGRESS空转；目标机/正式QA未测。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_DONE END -->
+
+
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_REVIEW START -->
+2026-10-14 12:09左右（Producer内部流程交付Review）：`FLOW_CHECK.md`、`CONTINUITY_CHECK.md`、`DELIVERABLE.json`三Required实存，13项交付索引路径全实存，六项验收与Task原文同序PASS；复盘`WR-20261014-U00-U01-SAKURA-V03-001`已记可信10:16:11→Master接受12:05:51墙钟1小时49分40秒并区分净制作未知。FLOW Task IN_PROGRESS→REVIEW，待Master内部最终接受后才DONE。Tech已DONE，Client准确v0.1 USER_REVIEW/用户尚未批准，故本线无空转READY/IN_PROGRESS。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 PRODUCER_REVIEW END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 MASTER_ACCEPTED START -->
+2026-10-14 12:05:51 +08:00（Master正式接受与准确用户门禁）：Master `MASTER_ACCEPTANCE.md`接受Tech最终APPROVED和Client六项验收PASS，`FINAL_IDENTITY.json`九项文件SHA由Producer逐项复算0差、最终build main SHA b55009be…c66227；具体`USER_REVIEW_PACKET.md` SHA ff52b2c3…e9af。Tech Task REVIEW→DONE/PROFESSIONAL_REVIEW（内部支持）；Client Task REVIEW→USER_REVIEW、现行`ARTIFACT_APPROVAL.json`绑定准确packet及Master接受、decided_at null，待用户批准本v0.1接入后画面/编辑效果，非DONE。无QA单元示例、目标机性能未测。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 MASTER_ACCEPTED END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLIENT_REVIEW START -->
+2026-10-14 11:49左右（Client正式交付送Master核）：Client五Required全部实存，`DELIVERABLE.json`十三索引按版本目录/项目根解析全存在、六项验收与Task原文同序PASS；`RUN_VERIFICATION.md`列退役后8787 U00/U01/U04及U02/U03/U05入口smoke、终版U01导出和空warning/error，目标机与GPU/DrawCall未测。Tech `REVIEW.json` APPROVED，Producer将Client Task IN_PROGRESS→REVIEW；Master最终接受与准确具体版审批绑定待，尚非USER_REVIEW/DONE。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLIENT_REVIEW END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TECH_REVIEW START -->
+2026-10-14 11:44左右（Tech最终专业Review实存）：Tech `TECH_DESIGN.md`、`REVIEW.json`与`DELIVERABLE.json`三Required齐；REVIEW决定APPROVED，DELIVERABLE 11项索引实存、六项Task验收原文同序PASS。Producer核Tech Task IN_PROGRESS→REVIEW，待Master内部接受后才DONE/PROFESSIONAL_REVIEW。此专业支持结论不等于Client成品用户批准；Client仍IN_PROGRESS，最终送审包待。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TECH_REVIEW END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 POST_RETIRE_EXPORT START -->
+2026-10-14 11:35左右（退役后终版U01重入导出身份核）：Master `evidence/u01_final_post_retirement.jpg`与`u01_final_post_retirement_export.json`实存；Producer只读逐项核schema v0.3、18 prototypes/49实例=43环境+6店，18 SHA及54个image/Texture2D/SpriteFrame UUID全与Client登记同值、无缺失。此为终版U01导出身份与实图证据；完整Master运行结论、Tech Review和Client正式交付规范收口仍待，不提前USER_REVIEW。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 POST_RETIRE_EXPORT END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 FINAL_BUILD START -->
+2026-10-14 11:31左右（退役后最终Creator构建实证）：Client更新`LEGACY_RETIREMENT_AUDIT.md`确认34项按原SHA/无外部引用精确删除，稳定Prefab/五层节点、六店游客、历史母版保留。最终`BUILD_MANIFEST.json`指UnitSamples显式入口、Creator3.8.8 Web Mobile 5秒任务完成、733输出文件、HTTP8787状态200、16项源快照身份吻合且差异空；`final-build/creator-web-mobile.log`仍有构建子进程清理SIGTERM，Owner按既有CLI退出模式说明。退役后Master重入及18UUID再导出待，不凭HTTP200提前送审。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 FINAL_BUILD END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETIRED_ACTUAL START -->
+2026-10-14 11:28左右（34旧活动文件实际退役核）：Client `RETIREMENT_CANDIDATES.json` 34项均标RETIRED_AFTER_MASTER_IAB_PASS；Producer逐条检查34/34路径在活动工程不存在。历史Art母版/审批与修改前备份非本次删除范围。Client旧`LEGACY_RETIREMENT_AUDIT.md`尚沿用退役前“暂留”措辞，需Owner更新最终版本；最终Creator build与退役后IAB回归仍待，不能送USER_REVIEW。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETIRED_ACTUAL END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETIRE_RELEASE START -->
+2026-10-14 11:27:42 +08:00（Master正确入口初验放行旧资源退役）：Master明确8787 IAB初验PASS：U00左/右边缘trim修复、缩放上限、街景显隐/纯环境、游客2、店铺调整导出及390×844均有实证；U04阿炭+微笑对话按钮PASS；U01新版基线43环境+6店，18×3导出UUID非空与登记同值。故放行Client对先审计的34项旧活动环境文件执行物理退役与最终构建。此是退役执行许可，文件尚待删除、最终build身份与重入导出仍待，不提前Client USER_REVIEW。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 RETIRE_RELEASE END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 IAB_EXPORT_IDENTITY START -->
+2026-10-14 11:28左右（新构建U01导出身份独立核）：Master IAB `evidence/u01_trim_fixed_export.json`实存，Producer只读解析18 prototypes/49 instances（43环境+6店），18项image/Texture2D/SpriteFrame UUID均非空且与Client `RESOURCE_IMPORT_MANIFEST.json`逐项同值，18 SHA亦同；schema `U01_SAKURA_LAYOUT_V0_3`。这补足初版动态图集空UUID缺陷，但完整边缘/旧资源物理退役与最终回归仍待，不提前USER_REVIEW。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 IAB_EXPORT_IDENTITY END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TRIM_DIAG START -->
+2026-10-14 11:12左右（边缘诊断与源码静态修正）：Client `SPRITEFRAME_TRIM_AUDIT.json`记录18张Creator SpriteFrame中16张自动trim，raw源尺寸仍吻合；更新`STATIC_VALIDATION.json`列共享U00/U04与U01的trim安全初始化、导出meta textureUuid避开动态图集空UUID均PASS_STATIC。Master已留U00左边缘候选实图；修正后的最终Creator构建/IAB边缘核仍待，不凭静态检查判画面通过或旧资源退役。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TRIM_DIAG END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 U01_OPERATIONS START -->
+2026-10-14 11:05左右（正确入口U00/U01竖屏操作初验）：Client `RUN_VERIFICATION.md`引用Master IAB图和JSON，记录U00 720×1280六店游客/链栏；U01 43环境+6店、树/灵焰/莲花/倒影添加、拖缩镜像删除、分页至43/43、相机及重置返回重入操作链。横屏既有布局会遮部分画布，未声称全面适配。旧资源34精确候选`RETIREMENT_CANDIDATES.json`仍WAITING_MASTER_RUNTIME_GATE；U04/边缘、最终textureUuid导出重建待，不送USER_REVIEW。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 U01_OPERATIONS END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 IAB_INITIAL START -->
+2026-10-14 11:00左右（IAB初验与导出身份修正）：Client `RUN_VERIFICATION.md`/`IMPLEMENTATION_REPORT.md`已实产并引用Master截图：正确UnitSamples中的U00新版街景和U01的43环境+6店初始导出可见；初导出发现Creator动态图集使运行Texture2D UUID为空。Client已将JSON导出改读真实导入meta的textureUuid，但此修正晚于8776当前构建，须最终重建与18项导出UUID逐项复核。操作回归、U04及旧资源物理退役仍待；Client持续IN_PROGRESS。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 IAB_INITIAL END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 STATIC_SCENE_AUDIT START -->
+2026-10-14 10:56 +08:00（Client静态场景/退役审计首产）：`STATIC_VALIDATION.json`记18同源PNG、43初始实例、稳定ID/镜像几何、五层Prefab直接节点及U00/U04共享填充为PASS_STATIC；`LEGACY_RETIREMENT_AUDIT.md`列旧五层/U01资源及数据脚本无活动引用，但明示物理文件暂留待正确入口IAB U01/U04实际验证。并发U05保护见`NON_TARGET_PRESERVATION_CHECK.md`。这不是运行PASS或退役完成。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 STATIC_SCENE_AUDIT END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 UNIT_REBUILD START -->
+2026-10-14 10:53:28 +08:00（正确入口再构建进展）：Client `evidence/creator-final-unit-entry-stdout.log`实记U05BitmapText/U05MilkTeaLab/U05NineSlicePlate三个组件注册、Web Mobile build task在6秒内结束；build-script阶段仍见SIGTERM日志。此处仅记UnitSamples指定入口重建产物，运行场景与操作及异常性质待Owner/Master实核，不提前判构建和U00/U01运行PASS，旧活动环境仍保留。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 UNIT_REBUILD END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CORRECT_ENTRY START -->
+2026-10-14 10:50:05 +08:00（首次构建入口更正）：Master在IAB打开首次Web产物，实为旧LanternPilot单奶茶场景；Finished in35s/exit36仅属错误默认profile构建，不能作为U00/U01运行PASS。正确UnitSamples隔离重建揭示并发U05脚本三组件注册失败；Master已记录必要入口修复授权，U05 Owner自行拆独立TS，Client同步后做onExit兼容及U04无效字段最小类型修复。仍为可继续IN_PROGRESS，HTTP/IAB正确入口待，旧活动环境不退役。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CORRECT_ENTRY END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 UUID_IMPORT START -->
+2026-10-14 10:48:43 +08:00（U00/U01新资源导入身份静态核）：Client `RESOURCE_IMPORT_MANIFEST.json`18项逐一对批准Art SHA同字节，Creator 3.8.8 `.png.meta`实存且imported:true，image/Texture2D/SpriteFrame三类共54实际UUID与清单逐一吻合且互异。此确认资源导入身份，43实例、Creator后置异常、HTTP/IAB操作仍待；旧活动环境不物退役，Client仍IN_PROGRESS。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 UUID_IMPORT END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 BUILD_DIAG START -->
+2026-10-14 10:46:58 +08:00（Creator日志复核发现后置异常）：Client `evidence/creator-final-stdout.log`虽写`build task(web-mobile) in 9224`，之后metric `collectCompsFromScene`出现null constructor TypeError，另有Missing class `9e547Ys0ktFGYIectTcx+4S`告警。exit36/产物目录存在不足以判完整构建PASS；已报Master，待Client查类/组件及HTTP加载，旧环境不退役。当前仍在诊断而非宣称BLOCKED。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 BUILD_DIAG END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLI_PROGRESS START -->
+2026-10-14 10:44:33 +08:00（Creator CLI构建进展，完整证据待）：Master通报Client经正规提权隔离运行Creator CLI，终端显示Finished in35s+exit36；早前sandbox SIGABRT/LaunchServices失败不是当前BLOCKED。Client当前真实日志、产物身份和加载/HTTP/IAB证据尚待文件核，故此时不记完整构建PASS或运行PASS。Master通报Tech独立静态18同字节/43布局/54UUID一致，正式评审文件待核；旧环境未物删，Client仍IN_PROGRESS。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLI_PROGRESS END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 STATIC_COPY START -->
+2026-10-14 10:35:34 +08:00（U00/U01新资源工作树复制静态核）：`apps/client/assets/resources/sakura_v03/`中18PNG对Art v0.3 `CUT_MANIFEST.json`逐SHA同字节，18对应`.png.meta`实存。仅说明候选文件与元数据落盘，Client正式导入清单、Creator实际导入UUID、43场景实例、构建/浏览器操作及旧环境引用审计尚待，不能标运行PASS或旧环境已退役。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 STATIC_COPY END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLIENT_START START -->
+2026-10-14 10:27:02 +08:00（U00/U01接入Client真实开工）：Client `deliverables/client/U00-U01-SAKURA-V03-CLIENT-20261014/v0.1/FEATURE_BRIEF.md`首份Required非空，Task READY→IN_PROGRESS。当前仅规格/实施开端，18PNG实际导入UUID、43实例、旧环境引用审计/退役、Creator构建与浏览器操作均待证据；不能提前标通过。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 CLIENT_START END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 ART_DONE START -->
+2026-10-14 10:25:52 +08:00（樱花Art v0.3制作任务完成）：Master `deliverables/master/U00-U01-SAKURA-V03-INTEGRATION-20261014/v0.1/ART_MASTER_ACCEPTANCE.md`实存，确认Art Required与v0.3 Gate2 USER_APPROVED、PSD/ZIP身份复算及最终接受；Art Task USER_REVIEW→DONE。此只完成美术制作交付，U00/U01 Client接入/Creator运行未核，旧活动环境未退役；Tech接入Task进行中、Client首产待。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 ART_DONE END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TECH_START START -->
+2026-10-14 10:25:26 +08:00（U00/U01接入Tech真实开工）：Tech `deliverables/tech_lead/U00-U01-SAKURA-V03-TECH-20261014/v0.1/TECH_DESIGN.md`首份Required非空实存，Task READY→IN_PROGRESS；Client首份Required仍待，保持READY。技术文字预案不能冒充18资源已导入、Creator构建或浏览器运行，旧环境未退役。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 TECH_START END -->
+
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 INITIAL START -->
+2026-10-14 10:23:50 +08:00（U00/U01接入v0.3开工核查）：用户明确批准樱花v0.3具体18切片/重组并授权U00/U01接入、旧活动环境退役；Master `USER_AUTHORIZATION.json`五准确文件SHA由Producer复算全吻合，Art独立Gate2 `USER_APPROVED`。Art最终Master接受文件尚待，旧Task暂USER_REVIEW不抢记DONE；Producer首份`FLOW_CHECK.md`非空实存，FLOW READY→IN_PROGRESS；Tech/Client首份Required尚未实存，均READY。保留六店游客/其它示例，单元示例Owner验证无QA；旧环境退役须审计与实际导入构建运行后，Client最终USER_REVIEW非假DONE。可信起点10:16:11，Cocos运行尚NOT_TESTED。
+<!-- U00-U01-SAKURA-V03-FLOW-20261014 INITIAL END -->
+
 2026-10-14 09:55:50 +08:00（Producer v0.3内部流程完成）：Master `deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.3/MASTER_ACCEPTANCE.json` APPROVED，三原文验收、10项索引与Required核实；FLOW REVIEW→DONE，审批PROFESSIONAL_REVIEW，仅本轮流程支持完成。Art准确v0.3资源继续USER_REVIEW且用户决定待，Tech内部DONE，Client锁，Cocos/目标机运行NOT_TESTED。
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE END -->
 
