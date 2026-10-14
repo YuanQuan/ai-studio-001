@@ -1086,4 +1086,5 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - v0.2批准节点：Producer可核登记时间10:57:59 +08:00，用户消息精确秒未知；v0.1退回至此含澄清、Art局部修订和用户再次审阅，无法可靠拆净制作/等待时长。用户明确批准实际新版底板，Art阶段DONE。Client隔离构建路径误写另一临时通用目录，Master核灯光独立登记3文件未变，通用目录原身份未知；Owner改自有输出重构，Producer于新构建身份点复核。无证据把此事故计为整体验收失败或把客户端运行记通过。
 - 本轮最终结果：10:19开始的工作证据至12:02:38 Producer最终包登记，墙钟至少1小时43分38秒；该跨度包含用户等待、Art定向返工、Client实际实现/多次构建、Tech审查和并行其它任务，缺少可靠分段时刻，不推算各角色净耗时或单一慢因。Art v0.1退回后用户限定底板，v0.2批准；Client早期错误杯形和构建路径问题均有保留记录，最终v4自有构建与Web截图通过。建议Owner在下一次构建前核隔离profile输出路径与输入SHA（代价一次配置核对，复核点BUILD_IDENTITY）；Producer在用户最终实现决定点核准确15文件SHA和审批状态。Continuity：Art/Tech内部工作已完成，Client及父均真实USER_REVIEW，FLOW待Master内部接受；不以READY/IN_PROGRESS占位，剩用户最终实现接受。
 - 本轮流程收尾：Master于12:04:09 +08:00接受AUTO FLOW，按10:19开始至此墙钟至少1小时45分09秒；各角色制作、用户审阅与等待、并行及返工分段仍未知。Continuity最终复核：本轮已授权U05工作均有交付/验证，Client与父处准确USER_REVIEW，暂无可继续而空挂READY/IN_PROGRESS的当前任务；旧Art v0.1 REVISION是被v0.2承接的历史。
+- 用户最终实现退回：12:21:28 +08:00 Producer记录，精确消息秒未知。用户只给修改范围“选料、合成或操作反馈”，未给具体问题或目标；无法核对返工制作量、耗时或原因，不能归责已测流程/资源。Master负责取得具体反馈后分派修订，Client复核点为新Revision的实际交互和同版Web证据；Producer复核点为新包SHA与用户决定。当前资源已批维持，流程支持DONE不冒充实现接受。
 <!-- U05-B-LANDING-20261014 END -->

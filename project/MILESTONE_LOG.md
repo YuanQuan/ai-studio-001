@@ -1333,4 +1333,5 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `CLIENT_FINAL_USER_REVIEW`（2026-10-14 12:02:38 +08:00登记）：Client五Required+Tech三Required、Master实际Web报告与最终截图等15文件SHA审计`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/FRONTEND_FINAL_HASHES.json`，SHA `29a28690…727b21`；Tech Review APPROVED，Client Task REVIEW→USER_REVIEW，用户最终实现尚未批准。
 - `TECH_AUTO_DONE_PARENT_USER_REVIEW`：Tech三Required与Master AUTO接受四SHA核齐，支持Task DONE；父`INTEGRATION_REPORT.md`实存，父Task INTEGRATION→USER_REVIEW，待用户最终实现接受。FLOW两Required及连续性复盘实存、Task REVIEW待Master接受。
 - `LANDING_FLOW_AUTO_DONE`（2026-10-14 12:04:09 +08:00）：Master FLOW接受APPROVED；Producer固定交付与最终哈希清单实存，FLOW Task DONE。Client与父的用户审核门禁未改变。
+- `FRONTEND_V01_AND_PARENT_REJECTED`（2026-10-14 12:21:28 +08:00登记）：用户“需要修改这版试玩效果”，范围“选料、合成或操作反馈”，具体问题待答。Client/父v0.1准确审批USER_REVIEW→REJECTED，两Task REVISION；原送审快照与`FRONTEND_FINAL_HASHES.json`15SHA仍匹配并留历史。Art v0.2等资源审批继续有效。
 <!-- U05-B-LANDING-20261014 END -->
