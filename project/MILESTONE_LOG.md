@@ -1367,4 +1367,10 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `REP01_REP02_MANUAL01_VISUAL_REVISE_BLOCKED`（15:35:44 +08:00 Producer登记）：三候选净底实图均REVISE，MANUAL01框外RGB零差仍有淡影；Art/AssetTech/Client BLOCKED，静态CodeTech AUTO DONE。无FULL/正式PSD/Gate2/新Web；imagegen 0次，活动累计未知。
 - `PATCH03_METHOD_USER_REVIEW`：Master方法任务三待审文件`REVIEW_PACKET.md`、Art `REGION_REUSE_PROPOSAL.md`、Tech `PATCH03_FEASIBILITY.md`逐SHA锁`APPROVAL_HASHES.json` SHA49ef1956…d53f3，Task USER_REVIEW。额外唯一轮次、三背景片区donor与65/10重分配待用户决定，第四候选未执行。
 - `INTERACTION_PRODUCTION_FLOW_AUTO_DONE`：Master FLOW Review APPROVED、Producer生产FLOW Task DONE；Art/AssetTech/Client BLOCKED及方法USER_REVIEW不变，Gate2/新运行未发生。
+- `PATCH03_METHOD_USER_APPROVED`（2026-10-14 16:47:44 +08:00 Producer登记）：用户“批准局部复用方案，继续制作”，三待审SHA复核一致，方法审批USER_APPROVED/Task DONE、旧USER_REVIEW快照保留。授权仅PATCH-03唯一候选、三片区同源复用、65/10总75累计分配；GEN-03/扩框未批。
+- `PATCH03_FLOW_V02_STARTED`：新Master Task `U05-B-PATCH03-PRODUCTION-FLOW-20261014`三Required首产，READY→IN_PROGRESS；旧生产FLOW v0.1 DONE历史保留。Art/AssetTech解阻至READY待真实余额核验和同批预签，Client仍BLOCKED等新图Gate2。
+- `PATCH03_PRESIGN_BUDGET_HOLD`：Art/Tech同批方法预签实存，首图预算暂缓；Master以五完整Art turn元数据给出3525.352秒保守活动上界，当前turn 08:48:56.216 UTC起续计。Art/AssetTech真实文字产出IN_PROGRESS；候选实图/FULL/Gate2尚未发生，Client BLOCKED。
+- `PATCH03_ONLY_CANDIDATE_REVISE_STOP`：唯一PNG SHA256 `3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6`；像素框外0/框内donor差异0，Art仍见框外旧杯残线。08:57:54–09:00:03 UTC约129秒，超Tech120秒硬停止线约9秒。Art/AssetTech/Client BLOCKED，无FULL/PSD/Gate2/新运行；后续完整旧杯替换待新决定。
+- `PATCH03_FLOW_AUTO_DONE`：Master `MASTER_PATCH03_FLOW_REVIEW.json`接受失败跟踪，Producer v0.2 FLOW DONE；Art预算/视觉FAIL与三Owner BLOCKED保持。
+- `FULL_CUP_PLAN_USER_REVIEW`：Master方案 `REVIEW_PACKET.md`、`SOURCE_SCOPE.json`、Tech `NEXT_CUP_SCOPE_FEASIBILITY.md` 三SHA锁定，DELIVERABLE与审批实存；仅申请完整旧杯框一次候选及累计预算80分钟，当前USER_REVIEW，未制作。
 <!-- U05-B-LANDING-20261014 END -->

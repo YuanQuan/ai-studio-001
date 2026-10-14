@@ -1,0 +1,43 @@
+{
+  "source_log": "/Users/yuanquan/.codex/sessions/2026/10/14/rollout-2026-10-14T13-41-28-01a138ee-11e5-74d3-84b9-f8b24997b877.jsonl",
+  "basis": "Art自身wait_agent阻塞调用起止时间，执行等待期间无法同时进行制作。历史在完整turn上界内，可从其扣除；不包含本轮后续等待。",
+  "historical_blocked_waits": [
+    {
+      "call_id": "call_e539058fc0c2423ab4df112a07900f0e",
+      "start_utc": "2026-10-14T05:48:06.432Z",
+      "end_utc": "2026-10-14T05:48:36.443Z",
+      "blocked_wait_seconds": 30.011
+    },
+    {
+      "call_id": "call_764951cf35db4ded9a7a49f8a266b5c8",
+      "start_utc": "2026-10-14T05:48:57.268Z",
+      "end_utc": "2026-10-14T05:49:27.283Z",
+      "blocked_wait_seconds": 30.015
+    },
+    {
+      "call_id": "call_1c4fe134f85a495b917189b3fc97ccf7",
+      "start_utc": "2026-10-14T05:49:45.015Z",
+      "end_utc": "2026-10-14T05:50:15.029Z",
+      "blocked_wait_seconds": 30.014
+    },
+    {
+      "call_id": "call_37f3c1d7fd9644c0a0002bb76cb5a8eb",
+      "start_utc": "2026-10-14T05:58:42.066Z",
+      "end_utc": "2026-10-14T05:58:56.001Z",
+      "blocked_wait_seconds": 13.935
+    },
+    {
+      "call_id": "call_4419a999dba94422a93640e2b67d20d2",
+      "start_utc": "2026-10-14T06:11:24.169Z",
+      "end_utc": "2026-10-14T06:11:54.188Z",
+      "blocked_wait_seconds": 30.019
+    },
+    {
+      "call_id": "call_5808c0ab519e422a85572c254b64216f",
+      "start_utc": "2026-10-14T06:13:32.613Z",
+      "end_utc": "2026-10-14T06:14:02.026Z",
+      "blocked_wait_seconds": 29.413
+    }
+  ],
+  "historical_deductible_wait_seconds": 163.407
+}

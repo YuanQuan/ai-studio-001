@@ -1,0 +1,29 @@
+{
+  "id": "U05-B-FULL-CUP-CLEANUP-PLAN-20261014",
+  "title": "U05完整旧杯区域清理范围与预算调整",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "提交覆盖完整旧杯轮廓的区域复用，批准前不制作。",
+  "inputs": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/STATIC_BARE_PATCH03.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH03_REVIEW.md"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/SOURCE_SCOPE.json",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "失败实物与完整旧杯范围可核",
+    "单候选、累计预算及停止线明确，送审文件锁定"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Producer维护本任务待审两文件SHA、审批记录/状态及五共享U05 marker，不授权制作下一候选。",
+    "三待审文件SHA锁APPROVAL_HASHES.json、DELIVERABLE实存；当前USER_REVIEW，未授权新候选。"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "role": "art",
+  "phase": "PATCH03_REPRESENTATIVE_FIRST_IMAGE_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-03",
+  "decision": "ART_PRESIGNED_METHOD_WITH_BUDGET_HOLD",
+  "status": "NO_IMAGE_UNTIL_MATCHING_TECH_PRESIGN_AND_VERIFIED_ACTIVITY_BALANCE",
+  "user_approval": {
+    "approval_path": "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "approval_sha256": "16889cfb10f33d7ade3959168dffa1b1f6c32435c38120fec75290671da0e2a2",
+    "producer_audit": "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/APPROVED_PLAN_HASHES.json",
+    "producer_audit_sha256": "a6233916bc61958e2d8806889cb366d29316476019d29bcf2aa70e333cc907f4",
+    "approved_art_proposal_sha256": "545b6736d889ed3532fef740e900aa6e497e53e1909336bd7ea37dd113635684",
+    "approved_master_packet_sha256": "ec99966da76c6376e591439ea0cff42c080a5c80baff48ae787a7d14ba010b78",
+    "approved_tech_feasibility_sha256": "0f868e8e1c11b947788452fe49a4a79dd77b941721b66474105fc967eb136984"
+  },
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH03_PLAN.md",
+  "art_plan_sha256": "798e0ad13b4e4da18af8cb27f750e75cadca63fbd75f054552b86ab1e2492d39",
+  "source_sha256_verified": {
+    "manual01_base_rgb_1024x1536": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+    "same_project_donor_rgb_1024x1536": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+    "readonly_v02_psd": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "v02_static_bare_rgb_1024x1536": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34"
+  },
+  "approved_rois_xywh_source_px": {
+    "window": [305, 489, 406, 294],
+    "cup_rim": [418, 1090, 185, 40],
+    "cup_glass": [440, 1220, 136, 108]
+  },
+  "method": "One deterministic RGB8/sRGB same-coordinate donor copy into the three full rectangles of only the STATIC_BARE working layer, starting from MANUAL-01; no feather, threshold, rescale, generation, independent-layer edits or ROI expansion.",
+  "expected_output": "exports/STATIC_BARE_PATCH03.png; exactly one candidate after same-batch Tech presign and budget release",
+  "checks": [
+    "Outside the three-region union, PATCH03 vs MANUAL01 RGB changed pixels must be 0; MANUAL01 outside union already equals v0.2 STATIC_BARE at every RGB pixel.",
+    "Inspect full 1024x1536, each region at 4x, and 360x640 contain view; residual ghost/cup or edge seams cause REVISE_STOP.",
+    "Old WORK_CUP_FRONT alpha bbox exceeds rim rectangle; any old outline beyond approved rectangle is a stop condition, not permission to widen it.",
+    "Imagegen calls remain 0/3; representative result cannot authorize FULL or Gate2."
+  ],
+  "budget": {
+    "user_approved_representative_activity_minutes_max": 65,
+    "user_approved_full_activity_minutes_max": 10,
+    "user_approved_total_activity_minutes_max": 75,
+    "previous_actual_activity_minutes": "UNKNOWN_UNSEGMENTED",
+    "previous_closed_wall_envelope": "2026-10-14 05:51:00–06:46:11 UTC = 55m11s including wait; not measured active time",
+    "patch03_representative_new_activity_cap_minutes": 5,
+    "release_condition": "Tech and Art must first establish a defensible remaining representative/total balance of at least the bounded candidate+visual-check activity; start/stop timestamps must be recorded. Otherwise no image output.",
+    "image_gen_used": 0,
+    "image_gen_total_max": 3,
+    "cost": "UNKNOWN",
+    "gpu": "UNKNOWN"
+  },
+  "stop_rule": "No actual candidate before matching PATCH-03 Tech presign and budget release; one candidate only, fail means stop without another ROI/mask/tool iteration."
+}

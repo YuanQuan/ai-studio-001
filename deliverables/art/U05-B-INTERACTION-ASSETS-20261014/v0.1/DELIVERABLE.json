@@ -1,7 +1,7 @@
 {
   "task_id": "U05-B-INTERACTION-ASSETS-20261014",
   "owner": "art",
-  "summary": "Gate1和REP-01/REP-02/MANUAL-01同批预签真实存在。局部身体、三脸与代表离场预览已有，但三个净底候选均残留旧幽灵/杯影；唯一手工候选已失败停止。正式PSD、完整四脸/全进出动画、全组件同尺度重组尚未产出，本任务BLOCKED，未交具体资源Gate2。",
+  "summary": "Gate1及REP-01/REP-02/MANUAL-01/PATCH-03同批签认与PATCH-03用户方法批准真实存在。局部身体、三脸和代表离场预览已有，但四个净底候选均未清除旧影；唯一PATCH-03片区复用候选在框外仍见旧杯残线，且制作与检查约129秒超过Tech120秒硬上限约9秒，已停止。正式PSD、完整四脸/全进出动画、全组件同尺度重组尚未产出，本任务BLOCKED，未交具体资源Gate2。",
   "artifacts": [
     "ART_BRIEF.md",
     "ART_PRESIGN.json",
@@ -13,6 +13,9 @@
     "source/MASK_REVIEW.json",
     "review/REP02_REVIEW.md",
     "review/MANUAL_REVIEW.md",
+    "review/PATCH03_REVIEW.md",
+    "review/PATCH03_METRICS.json",
+    "exports/STATIC_BARE_PATCH03.png",
     "review/animation_representative.gif",
     "ASSET_MANIFEST.md",
     "CUT_MANIFEST.json",
@@ -22,11 +25,11 @@
     "REGION_REUSE_PROPOSAL.md"
   ],
   "acceptance_results": [
-    {"criterion": "Gate1与同批Art/Tech预签实存，预算和生成调用不超获批上限", "result": "NOT_TESTED", "evidence": "Producer 16/16审批SHA核对；REP-01、REP-02、MANUAL-01均有同批预签；PRODUCTION_LEDGER.json记0次image_gen和一次手工候选。实际制作活动总时长UNKNOWN，不能证明整项预算未超，故复合标准不判PASS。"},
-    {"criterion": "净底清残影、脸部真实动画和完整进出，保护区零差异证据", "result": "FAIL", "evidence": "review/MANUAL_REVIEW.md：遮罩外RGB零差异，但4倍检查旧幽灵尾、杯沿椭圆、玻璃轮廓仍可见；开心离场仅代表片段，完整进出和失落未产。"},
+    {"criterion": "Gate1与同批Art/Tech预签实存，预算和生成调用不超获批上限", "result": "FAIL", "evidence": "Gate1与PATCH-03用户方法批准、各批Art/Tech同批预签可核，image_gen累计0/3；但PATCH-03单独制作+实图检查约129秒，超过Tech释放的120秒硬上限约9秒。实际全批活动仍按保守界审计，不能因0生成宣称预算通过。"},
+    {"criterion": "净底清残影、脸部真实动画和完整进出，保护区零差异证据", "result": "FAIL", "evidence": "review/PATCH03_REVIEW.md：三框外RGB零差异、内部与donor零差异，但批准框外仍见旧杯残线；开心离场仅既有代表片段，新完整进出和失落未产。"},
     {"criterion": "PSD、真实PNG、动画源回放及同尺度重组身份链齐全，未接入如实未测", "result": "NOT_TESTED", "evidence": "CUT_MANIFEST.json和ASSET_MANIFEST.md列部分真实PNG；source/workspace_b_master.psd、review/reconstructed.png、review/component_sheet.png、review/animation_preview.gif均未产。Creator导入与运行NOT_TESTED。"}
   ],
-  "assumptions": ["已批准四脸、窗Mask、位移、三槽和目标杯参数不变；后续只有在用户明确批准额外轮次、选定具体新方法并由Art/Tech对该方法同批预签后才能执行。当前首选提案为PATCH-03，GEN-03仅为备选。"],
-  "risks": ["三个同源确定性净底候选均留可见半透明旧影；直接接入会在角色离场与台面清空时暴露残影。", "下一工具方法涉及超出原同问题2轮自动修正上限，必须先由Master呈请用户明确决定。"],
+  "assumptions": ["已批准四脸、窗Mask、位移、三槽和目标杯参数不变；用户批准的唯一PATCH-03额外候选已经执行并失败。当前没有下一图片制作授权，后续方法、范围或预算必须由Master提交用户决定，并重新办理受影响Art/Tech同批预签。"],
+  "risks": ["四个净底候选均未通过视觉；PATCH-03框外旧杯残线会在台面清空时暴露。", "PATCH-03唯一额外轮次已用且孤立120秒硬上限实际超约9秒；下一方法/范围或预算必须先由Master呈请用户明确决定，不能自动重试。"],
   "status": "BLOCKED"
 }

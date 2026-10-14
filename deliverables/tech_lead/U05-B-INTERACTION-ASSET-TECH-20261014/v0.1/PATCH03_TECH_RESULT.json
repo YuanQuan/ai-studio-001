@@ -1,0 +1,41 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-03",
+  "role": "tech_lead",
+  "decision": "BLOCKED_REVISE_STOP",
+  "scope": "只核文件身份、源像素边界、Art Owner失败结论与活动记录；不新增资源效果专业复审。",
+  "candidate": {
+    "path": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/STATIC_BARE_PATCH03.png",
+    "sha256_verified": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+    "canvas": [1024, 1536],
+    "mode": "RGB",
+    "source_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+    "donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "metrics": {
+    "source": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH03_METRICS.json",
+    "outside_three_regions_changed_pixels": 0,
+    "inside_three_regions_diff_from_donor_pixels": 0,
+    "changed_pixels_window_rim_glass": [36349, 558, 674],
+    "image_gen_calls": 0,
+    "interpretation": "复制边界与同源像素技术条件成立，但不代表旧物残影或接缝视觉合格。"
+  },
+  "owner_visual_result": {
+    "decision": "REVISE_STOP",
+    "reported_issue": "Art Owner实图判杯沿与杯身底缘在批准矩形之外仍有旧物残线；唯一候选不能扩框或制作第二张。",
+    "evidence_status": "OWNER_REPORT_ARCHIVED",
+    "owner_report": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/PATCH03_REVIEW.md",
+    "owner_report_sha256": "68ad9ce25e9c59c4c814c04623a334ce960a401fddb1ae3cbacf6b6673d205ee"
+  },
+  "budget_result": {
+    "release_hard_cap_seconds": 120,
+    "reported_start_utc": "2026-10-14T08:57:54Z",
+    "reported_end_utc": "2026-10-14T09:00:03Z",
+    "reported_elapsed_seconds_approx": 129,
+    "overrun_seconds_approx": 9,
+    "finding": "Art已归档制作与检查约129秒，超过Tech已签120秒硬上限约9秒；PRODUCTION_LEDGER.json同步记实。按实记录为超限，不追认放宽，也不能宣称该候选按预算通过。",
+    "owner_ledger": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PRODUCTION_LEDGER.json",
+    "owner_ledger_sha256": "cc429d6e812e1dc6d42c851c426cb07f7a9c89648bd3837d2e5276305a8c123a"
+  },
+  "remaining_state": "无代表PASS、无FULL同批复签、无正式PSD/完整切片/Gate2/Client正式导入；保持BLOCKED。"
+}

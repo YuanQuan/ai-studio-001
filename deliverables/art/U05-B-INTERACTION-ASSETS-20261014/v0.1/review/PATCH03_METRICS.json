@@ -1,0 +1,41 @@
+{
+  "batch": "PATCH-03",
+  "source_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+  "donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+  "output_sha256": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "mode": "RGB",
+  "regions_xywh": {
+    "window": [
+      305,
+      489,
+      406,
+      294
+    ],
+    "cup_rim": [
+      418,
+      1090,
+      185,
+      40
+    ],
+    "cup_glass": [
+      440,
+      1220,
+      136,
+      108
+    ]
+  },
+  "changed_pixels_by_region": {
+    "window": 36349,
+    "cup_rim": 558,
+    "cup_glass": 674
+  },
+  "outside_union_changed_pixels": 0,
+  "inside_union_diff_from_donor_pixels": 0,
+  "mask_pixels": 141452,
+  "image_gen_calls": 0,
+  "checks": "pixel only; Art visual pending"
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-03",
+  "decision": "RELEASE_ONE_CANDIDATE_WITH_120_SECOND_HARD_STOP",
+  "method_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_PATCH03.json",
+  "evidence": {
+    "completed_turn_bound": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/BUDGET_ACTIVITY_BOUND.json",
+    "completed_turn_bound_sha256": "7da47a04091b9bed3d6397fb6085d29b96faca0da5f70da1799edb805be9f414",
+    "six_blocked_waits": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/BUDGET_WAIT_EVIDENCE.json",
+    "six_blocked_waits_sha256": "038dffe8e7fecb21eb28bb825d2e13860f1d0b94b4df538c1c4d6f9596a8ef3a",
+    "art_latest_closed_turn_and_declared_wait": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/PATCH03_BUDGET_RELEASE_AUDIT.json",
+    "art_latest_closed_turn_and_declared_wait_sha256": "a30536e859b1d229e6edb1ad7e8601c86534934d209ba91f705924711026a5f5"
+  },
+  "conservative_calculation_seconds": {
+    "historical_completed_turns_upper": 3525.352,
+    "historical_blocked_waits_deducted": 163.407,
+    "latest_closed_turn_upper": 424.54,
+    "latest_declared_pure_wait_deducted": 58,
+    "cumulative_activity_upper": 3728.485,
+    "representative_limit": 3900,
+    "representative_remaining_lower_bound": 171.515,
+    "single_candidate_and_visual_check_hard_cap": 120,
+    "minimum_guard_after_full_cap": 51.515
+  },
+  "release_conditions": [
+    "仅一张PATCH-03静底候选，按已同批预签的三片区与同源SHA制作；制作和4倍、全画幅及360x640 contain实图检查合计最多120秒活动，真实开始/结束记录入Art账本。",
+    "达到120秒而源尺度与视窗检查未完成时立即停止，候选不得宣称代表通过；不制作第二候选、不扩框、不羽化。",
+    "本放行不预支FULL10分钟，代表PASS后另核余额并由Art/Tech同批FULL文字复签；最终切片仍须用户Gate2。"
+  ],
+  "net_actual_activity": "UNKNOWN_CONSERVATIVE_UPPER_BOUND_USED",
+  "image_gen_calls_used": 0
+}

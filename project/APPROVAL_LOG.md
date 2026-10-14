@@ -652,4 +652,8 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 2026-10-14 13:52:58 +08:00（生产内部节点，非用户成品批准）：Art/Tech同批`REP-01`首图预签实存，Tech签认仅代表首图；Art Gate1计划已批，实际新切片Gate2仍未批准，Client正式导入继续锁。
 2026-10-14 15:35:44 +08:00（送审登记，非用户决定）：`tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json` USER_REVIEW/decided_at null，三文件SHA锁定审计SHA49ef1956…d53f3。REP-01/REP-02/MANUAL-01失败，新方法及额外轮次未批，Art Gate2未达；CodeTech静态审查`ARTIFACT_APPROVAL.json`仅PROFESSIONAL_REVIEW/AUTO DONE，不替代资源/运行批准。
 当前周期内部流程接受：Master `MASTER_FLOW_REVIEW.json` APPROVED，Producer生产FLOW AUTO DONE；此非用户对PATCH-03的批准，也非新具体资源Gate2。
+2026-10-14 16:47:44 +08:00（Producer登记，用户消息精确秒未知）：用户明确“批准局部复用方案，继续制作”，`tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json`准确PATCH-03方法USER_APPROVED，原三待审文件SHA全匹配且旧USER_REVIEW快照保留。仅批准唯一额外轮次、三片区同源donor与65/10总75累计预算；新图Gate2未批、Client接入锁，GEN-03/扩框未授权。
+PATCH-03同批Art/Tech方法预签实存但预算暂缓，仅属生产签认；当前无新具体资源Gate2用户批准。五完整Art turn 3525.352秒保守活动上界可核，当前turn续计，净活动UNKNOWN。
+PATCH-03唯一实图已被Art判REVISE/STOP；原方法USER_APPROVED仍仅对已批准方案有效，不转为这张PNG的Gate2批准。候选SHA256 `3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6`；后续完整旧杯范围未获用户批准。
+完整旧杯框后续方案 `U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1` 的三待审文件SHA锁 `APPROVAL_HASHES.json`，审批USER_REVIEW、用户决定PENDING；只读技术意见不是新批预签。原PATCH-03方法批准与失败实图事实均保留；新范围/80分钟尚未获批。
 <!-- U05-B-LANDING-20261014 END -->

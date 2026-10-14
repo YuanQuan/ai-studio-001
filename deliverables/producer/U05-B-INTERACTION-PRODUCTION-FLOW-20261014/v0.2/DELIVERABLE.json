@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-PATCH03-PRODUCTION-FLOW-20261014",
+  "owner": "producer",
+  "summary": "PATCH-03准确方法已获用户批准，v0.2生产流程独立记录唯一尝试、累计预算与Gate2接入门禁。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确PATCH-03决定与版本追溯",
+      "result": "PASS",
+      "evidence": "原三SHA复核，旧USER_REVIEW审批快照保留，当前USER_APPROVED仅唯一PATCH-03；v0.1历史保留。"
+    },
+    {
+      "criterion": "预算累计与真实阶段",
+      "result": "FAIL",
+      "evidence": "Tech BUDGET_RELEASE_PATCH03仅放行唯一候选及检查120秒硬线；Art报告08:57:54–09:00:03 UTC约129秒，超约9秒。Tech PATCH03_TECH_RESULT记BLOCKED_REVISE_STOP；净累计仍UNKNOWN，不追认硬线上调。"
+    },
+    {
+      "criterion": "具体资源与客户端门禁",
+      "result": "PASS",
+      "evidence": "唯一PATCH-03 PNG已实产但Art REVISE/STOP，三框像素边界成立仍见框外旧杯残线；无Gate2，Client BLOCKED，旧8876未覆盖。"
+    }
+  ],
+  "risks": [
+    "唯一候选活动区间超过Tech已签硬线约9秒，生产预算验收FAIL；实际总净活动仍UNKNOWN。",
+    "旧杯残线位于批准框外，PATCH-03实图视觉REVISE/STOP；后续方法须新决定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

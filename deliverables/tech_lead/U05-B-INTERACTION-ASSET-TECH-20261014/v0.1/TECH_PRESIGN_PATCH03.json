@@ -1,0 +1,43 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "PATCH03_REPRESENTATIVE_METHOD_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH-03",
+  "decision": "TECH_PRESIGNED_METHOD_WITH_BUDGET_HOLD",
+  "status": "MATCHING_METHOD_SIGNED_IMAGE_NOT_RELEASED_UNTIL_ACTIVITY_BALANCE_PROVEN",
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PATCH03_PLAN.md",
+  "art_plan_sha256": "798e0ad13b4e4da18af8cb27f750e75cadca63fbd75f054552b86ab1e2492d39",
+  "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_PATCH03.json",
+  "art_presign_sha256": "295a793ec0c8d6b9d98036a7325ae89ebf9a83829331be4bd877fc669a844b79",
+  "user_approval": "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+  "user_approval_sha256": "16889cfb10f33d7ade3959168dffa1b1f6c32435c38120fec75290671da0e2a2",
+  "producer_approved_hash_audit_sha256": "a6233916bc61958e2d8806889cb366d29316476019d29bcf2aa70e333cc907f4",
+  "source_sha256_verified": {
+    "manual01_working_base_rgb_1024x1536": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+    "same_project_donor_rgb_1024x1536": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+    "v02_static_bare_rgb_1024x1536": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34"
+  },
+  "approved_regions_xywh_source_px": {
+    "window": [305, 489, 406, 294],
+    "cup_rim": [418, 1090, 185, 40],
+    "cup_glass": [440, 1220, 136, 108]
+  },
+  "method_conditions": [
+    "只在最后MANUAL-01工作底的STATIC_BARE层三个不重叠片区按同源坐标复制donor RGB8/sRGB原值；框外RGB零差异。不得缩放、混合、羽化、阈值修补、扩框或改其他语义层。",
+    "仅一张PATCH-03候选；实图核三处旧影、四边矩形接缝、自然夜景木纹和透明层背色。旧杯/幽灵若在框外留下残影即停，不自动制作第二候选。",
+    "身体/四脸画布与支点、脸ROI、窗口Mask与-381运动、UI和业务不变；REP-01/REP-02/MANUAL-01失败证据保留。代表通过后仍需Art/Tech FULL同批文字复签，最终自产切片直接用户Gate2。"
+  ],
+  "budget_evidence": {
+    "bound_source": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/BUDGET_ACTIVITY_BOUND.json",
+    "historical_completed_art_turns_upper_bound_seconds": 3525.352,
+    "current_turn_start_utc": "2026-10-14T08:48:56.216Z",
+    "representative_limit_seconds": 3900,
+    "full_limit_seconds": 600,
+    "total_limit_seconds": 4500,
+    "art_planned_candidate_and_visual_check_cap_seconds": 300,
+    "assessment": "同批方法可签；历史已结束turn加当前turn的保守活动上界随当前turn运行增长。签认时剩余保守上界不足Art预案5分钟上限，不能据此释放首图。若有可核的当前turn非活动区间或缩短且可保证完成的候选+视觉核时限，须先记录并重新核预算；不得用未经证明的余量开工。"
+  },
+  "image_gen_calls_used": 0,
+  "image_gen_calls_total_max": 3,
+  "not_tested": ["PATCH-03候选尚未输出", "FULL/PSD/最终切片/Gate2及Creator/Web未测试"]
+}

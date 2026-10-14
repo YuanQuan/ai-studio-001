@@ -1,0 +1,29 @@
+{
+  "task_id": "U05-B-FULL-CUP-CLEANUP-PLAN-20261014",
+  "owner": "master",
+  "summary": "PATCH-03失败后的完整旧杯框单候选方案，锁定三份待审文件供用户决定；当前不制作。",
+  "artifacts": [
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/SOURCE_SCOPE.json",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/NEXT_CUP_SCOPE_FEASIBILITY.md",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-FULL-CUP-CLEANUP-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "失败实物与完整旧杯范围可核",
+      "result": "PASS",
+      "evidence": "PATCH-03 PNG SHA 3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6；旧杯alpha bbox [415,1090,604,1328)被新框[405,1080,210,260]覆盖，四边余量10/10/11/12。Tech只读意见说明框外弱影与接缝风险。"
+    },
+    {
+      "criterion": "单候选、累计预算及停止线明确，送审文件锁定",
+      "result": "PASS",
+      "evidence": "三待审文件SHA在APPROVAL_HASHES.json锁定；申请一候选、代表70/FULL10/总80分钟累计，候选及视觉核验≤180秒需先核余额并同批预签。仅USER_REVIEW，未制作。"
+    }
+  ],
+  "risks": [
+    "新框几何覆盖旧杯alpha不保证静底残影完全止于该范围；材质与接缝仍需实图检验。",
+    "实际累计净活动未知；新预算尚未获批，开始前须核保守余量。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

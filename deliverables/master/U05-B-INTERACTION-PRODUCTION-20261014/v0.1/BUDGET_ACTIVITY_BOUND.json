@@ -1,0 +1,38 @@
+{
+  "agent": "/root/art_u05_interaction_production",
+  "source_log": "/Users/yuanquan/.codex/sessions/2026/10/14/rollout-2026-10-14T13-41-28-01a138ee-11e5-74d3-84b9-f8b24997b877.jsonl",
+  "basis": "已结束Art turn的task_started/task_complete时间戳，完整区间全部保守计活动（含内部等待/文档/工具）；turn结束到下次开始为未运行，不计。无模型推理内容或其他会话内容。当前未结束turn另计，不把历史墙钟包络误作活动。",
+  "completed_art_turns": [
+    {
+      "start_utc": "2026-10-14T05:41:29.079Z",
+      "end_utc": "2026-10-14T06:22:19.769Z",
+      "elapsed_upper_bound_seconds": 2450.69
+    },
+    {
+      "start_utc": "2026-10-14T06:25:23.531Z",
+      "end_utc": "2026-10-14T06:31:48.008Z",
+      "elapsed_upper_bound_seconds": 384.477
+    },
+    {
+      "start_utc": "2026-10-14T06:40:42.218Z",
+      "end_utc": "2026-10-14T06:47:25.381Z",
+      "elapsed_upper_bound_seconds": 403.163
+    },
+    {
+      "start_utc": "2026-10-14T07:29:08.211Z",
+      "end_utc": "2026-10-14T07:33:02.263Z",
+      "elapsed_upper_bound_seconds": 234.052
+    },
+    {
+      "start_utc": "2026-10-14T07:33:39.167Z",
+      "end_utc": "2026-10-14T07:34:32.137Z",
+      "elapsed_upper_bound_seconds": 52.97
+    }
+  ],
+  "historical_activity_upper_bound_seconds": 3525.352,
+  "historical_activity_exact": "UNKNOWN",
+  "current_turn_start_utc": "2026-10-14T08:48:56.216Z",
+  "representative_limit_seconds": 3900,
+  "full_limit_seconds": 600,
+  "total_limit_seconds": 4500
+}

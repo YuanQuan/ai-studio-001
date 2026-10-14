@@ -1,0 +1,33 @@
+{
+  "id": "U05-B-PATCH03-PRODUCTION-FLOW-20261014",
+  "title": "U05已批准PATCH-03续产流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记准确PATCH-03方法批准，核累计预算与同批签认，跟踪唯一候选、扩批或实际失败，提交下一具体资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/APPROVAL_HASHES.json",
+    "tasks/U05-B-INTERACTION-ASSETS-20261014/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.2/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "准确方案批准及实际生产阶段可核",
+    "预算和门禁连续推进、具体资源未批不接入",
+    "五共享文件仅U05块维护，真实节点和简短复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Producer维护本任务、旧Art/资产Tech执行状态、方法具体批准与五共享U05 marker。旧FLOW v0.1保持历史，v0.2本轮增量。",
+    "用户批准只限PATCH-03三框同源复用、唯一额外候选与65/10总75；不授权GEN03或扩框。",
+    "Client在资源Gate2前仍BLOCKED；无QA Agent、Owner记录示例证据。",
+    "Producer v0.2三Required实存并记录PATCH-03唯一实图失败、超120秒硬线约9秒；进入REVIEW待Master核证接受。旧生产FLOW v0.1保持DONE历史。",
+    "Master接受准确失败跟踪交付AUTO DONE，MASTER_PATCH03_FLOW_REVIEW.json；不代表Art预算、视觉或资源Gate2通过。"
+  ]
+}

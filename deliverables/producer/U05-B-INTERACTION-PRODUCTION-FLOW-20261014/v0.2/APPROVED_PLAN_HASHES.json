@@ -1,0 +1,28 @@
+{
+  "task_id": "U05-B-PATCH03-PRODUCTION-FLOW-20261014",
+  "version": "v0.2",
+  "recorded_at": "2026-10-14T16:47:44+08:00",
+  "source_three_file_audit": "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/APPROVAL_HASHES.json",
+  "source_audit_sha256": "49ef19564a1453e17dea73a1a98c83881691efc0429b7e06bebbb4f22e1d53f3",
+  "source_files": {
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/REVIEW_PACKET.md": "ec99966da76c6376e591439ea0cff42c080a5c80baff48ae787a7d14ba010b78",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REGION_REUSE_PROPOSAL.md": "545b6736d889ed3532fef740e900aa6e497e53e1909336bd7ea37dd113635684",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/PATCH03_FEASIBILITY.md": "0f868e8e1c11b947788452fe49a4a79dd77b941721b66474105fc967eb136984"
+  },
+  "approval": "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+  "approval_sha256": "16889cfb10f33d7ade3959168dffa1b1f6c32435c38120fec75290671da0e2a2",
+  "decision": "USER_APPROVED_PATCH03_ONCE",
+  "authorized_scope": [
+    "同一净底问题自动修正轮次2→3，唯一PATCH-03候选",
+    "仅三个已审背景片区STATIC_BARE同源donor整体像素复用",
+    "代表/FULL活动上限重新分配65/10分钟，总上限75分钟不变"
+  ],
+  "excluded": [
+    "GEN-03 imagegen备选",
+    "扩大三片区",
+    "自动制作第二PATCH候选",
+    "未经同批预签或余额核验先出图",
+    "未批新切片正式导入Client"
+  ],
+  "budget_evidence": "历史05:51:00–06:46:11 UTC闭合墙钟55m11s含等待，只可作为该历史段松上界；后续只读活动未分段，累计净活动和可用余额UNKNOWN。用户等待不扣。Art/Tech在候选前须核可证明余额与新停止时钟。"
+}

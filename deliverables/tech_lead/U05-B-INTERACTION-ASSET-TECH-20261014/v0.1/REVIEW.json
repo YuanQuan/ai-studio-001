@@ -5,7 +5,7 @@
   "findings": [
     {"severity": "MAJOR", "message": "REP-01/REP-02及唯一MANUAL-01净底候选均由Art实图自查REVISE；MANUAL-01虽有1600像素Mask且框外RGB零差异，仍留幽灵淡尾、旧杯沿和玻璃残线，不能扩FULL或交Gate2。"},
     {"severity": "INFO", "message": "已核同批预签、源/候选/Mask SHA、1024x1536 RGB/L格式、332x301角色支点与代表预览元数据。失落脸、新PSD、最终切片、全组件重组和完整GIF未产；Creator/Web/设备NOT_TESTED。"},
-    {"severity": "INFO", "message": "PATCH-03整体片区复用仅只读提案，涉及框内自然纹理、接缝、框外残影和活动预算重分配，须用户明确决定后另作同批预签，当前未放行制作。"}
+    {"severity": "MAJOR", "message": "用户已批准且Art/Tech同批预签的PATCH-03唯一候选已产，源像素技术边界框外差异0、框内对donor差异0，但Art Owner判杯沿和玻璃底缘框外仍有旧影，REVISE STOP；报告活动约129秒超120秒硬上限约9秒，按实记录不追认。"}
   ],
-  "next_action": "Producer保持该资产技术任务BLOCKED并保存失败证据；Master向用户呈现PATCH-03具体取舍与预算/轮次决定。仅在获批新方法且Art/Tech同批首图预签后恢复制作，完整资源仍待FULL及用户Gate2。"
+  "next_action": "Producer保持资产技术任务BLOCKED并记录PATCH-03实际失败及约9秒硬上限超时；停止该唯一候选后续制作。若需新方法或轮次，由Master另行处理用户决定；完整资源仍无FULL和Gate2。"
 }
