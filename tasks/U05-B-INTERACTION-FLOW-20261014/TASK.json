@@ -1,0 +1,34 @@
+{
+  "id": "U05-B-INTERACTION-FLOW-20261014",
+  "title": "U05交互与顾客动画修订方案流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记详细修订方向和同版UI/Art制作方案与Tech审查，冻结准确方案送审，不把计划当运行通过。",
+  "inputs": [
+    "deliverables/master/U05-B-INTERACTION-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "tasks/U05-B-INTERACTION-SPEC-20261014/TASK.json",
+    "tasks/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/TASK.json",
+    "tasks/U05-B-INTERACTION-TECH-20261014/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/APPROVAL_HASHES.json"
+  ],
+  "acceptance": [
+    "用户方向及实际首产审查状态可核",
+    "准确方案哈希与审批登记，已批资源不倒退",
+    "五共享文件仅U05块维护，复盘和continuity据实"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "授权只修改新任务及其交付、五共享文件U05-B-LANDING-20261014块和父Task备注，不改旧冻结15文件，不Git。",
+    "本轮无正式图片或代码；UI与Art计划待用户审批，内部Tech为AUTO方案核对。",
+    "Producer FLOW_STATUS.md/DELIVERABLE.json已首产，真实IN_PROGRESS；待同版Review后锁SHA及送审。",
+    "三Required完成，16文件SHA与两USER_REVIEW已登记；FLOW提交REVIEW待Master AUTO接受，不能代替用户方案批准。",
+    "2026-10-14 12:44:18 +08:00 Master FLOW Review APPROVED，Producer AUTO支持DONE；UI/Art新方案仍USER_REVIEW。"
+  ]
+}

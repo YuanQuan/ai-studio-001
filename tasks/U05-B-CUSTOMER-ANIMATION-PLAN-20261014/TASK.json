@@ -1,0 +1,34 @@
+{
+  "id": "U05-B-CUSTOMER-ANIMATION-PLAN-20261014",
+  "title": "U05幽灵表情与台面资源定向制作方案",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "评估现有PSD/导出可复用边界，为台面已选原料与顾客表情/移动提出最小资源制作方案；本轮仅方案，不生成正式图片。",
+  "inputs": [
+    "deliverables/master/U05-B-INTERACTION-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "deliverables/master/U05-B-FRONTEND-LANDING-20261014/v0.1/BROWSER_RUNTIME_REPORT.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/CUT_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/ASSET_REQUIREMENTS.json",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/UI_VISUAL_REVIEW.json",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "冻结基准、现有源/脸部可编辑性、允许变化区与保留锚点可核",
+    "开心/失落表情是真的脸部动画，移动/遮挡范围与PSD局部制作路线明确",
+    "复用零重复原料/场景，预算可核，UI视觉Review同版一致，制作Gate1与资源Gate2不混"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "先独立只读评估源资源并写方案；UI交付后完成同版UI_VISUAL_REVIEW，未经Root允许不得消息其他Agent。",
+    "方案文本任务使用sol low；未批前不正式图片/切片生产，不新依赖，不Git。",
+    "Owner五Required实存且方案层评审通过；Producer同版SHA绑定后REVIEW→USER_REVIEW，待用户明确批准。未产新正式图/代码/运行。"
+  ]
+}

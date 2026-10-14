@@ -1,0 +1,37 @@
+{
+  "task_id": "U05-B-INTERACTION-SPEC-20261014",
+  "owner": "ui",
+  "summary": "已形成台面三槽、确认后合成、缩小目标杯、顾客进出与表情的同版增量规格，待 Art/Tech Review 与用户审批。",
+  "artifacts": [
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/screens/SCREEN_STATES.md",
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/components/COMPONENT_STATES.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "台面三类待选料坐标、替换/撤销/确认合成时序和操作锁明确",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md、components/COMPONENT_STATES.md"
+    },
+    {
+      "criterion": "目标杯缩小且保留识别性，顾客移动/成功失误超时/退出反馈覆盖",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md、screens/SCREEN_STATES.md"
+    },
+    {
+      "criterion": "复用已批资源且新表情资源边界明确，旧规则不变，文字方案/状态图可审核",
+      "result": "PASS",
+      "evidence": "UI_SPEC.md、COLOR_SYSTEM.md、screens/SCREEN_STATES.md"
+    }
+  ],
+  "assumptions": [
+    "错杯留原顾客重做；正确离场后下一客入场；超时失落后离场；主动退出中性离场。",
+    "STATIC_BARE 已确认有杯、幽灵及气泡尖残影，Art 制作方案将局部净底纳入 Gate1；新资源未审批前不正式接入。"
+  ],
+  "risks": [
+    "三槽在 360×640 的实际可读性、目标杯 41×49 CSS px 识别性、四脸动画与原冻结外观须由 Art 实产/运行验证；窗口裁剪采用 Art 同版保守内窗 [260,278,490,505]，角色完整离场终点 x-72、位移 -381，代表片须核窗框及底部 2 源像素柜台遮挡。",
+    "新表情资源尚未获制作方案与具体资源两次用户审批，不可正式制作/接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

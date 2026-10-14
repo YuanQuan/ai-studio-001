@@ -1,0 +1,20 @@
+{
+  "task_id": "U05-B-CUSTOMER-ANIMATION-PLAN-20261014",
+  "version": "v0.1",
+  "status": "GATE1_PLAN_ONLY",
+  "source_psd": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+  "requirements": [
+    {"id":"CUSTOMER_BODY_BASE","source":"CUSTOMER_GHOST","action":"保留既有轮廓/身体光感，局部脸拆分后的透明躯干层；新增版本计划","status":"PLANNED"},
+    {"id":"FACE_NEUTRAL","action":"与冻结脸同画布同位置的基准脸层","status":"PLANNED"},
+    {"id":"FACE_BLINK","action":"闭眼且保持原口形的局部过渡脸层；用于约80–150ms表情过渡","status":"PLANNED"},
+    {"id":"FACE_HAPPY","action":"仅局部开心眼眉嘴及必要眼周光影；用于正确反馈动画","status":"PLANNED"},
+    {"id":"FACE_DISAPPOINTED","action":"仅局部失落眼眉嘴及必要眼周光影；用于错误反馈动画","status":"PLANNED"},
+    {"id":"STATIC_BARE_LOCAL_CLEAR","source":"STATIC_BARE 窗口与台面残影区域","action":"在当前 PSD 同一静态底层局部恢复空窗夜街、气泡白尖、台面旧杯沿和玻璃轮廓；保留旧层与各区域差异遮罩，遮罩外零差异","status":"PLANNED"},
+    {"id":"CUSTOMER_MOTION_PREVIEW","action":"基准/极值/遮挡/进出完整预览与帧参数，脸随同一支点运动","status":"PLANNED"},
+    {"id":"COUNTER_SELECTED_SET","source":"既有 U05_B_T01–T03/M01–M03/P01–P06 与台面/前沿","action":"三类已选物件台面状态；先核现有切片同尺度适用性","status":"REUSE_PLANNED"},
+    {"id":"ORDER_CUP_SMALL","source":"既有订单杯与气泡","action":"同源缩小显示并核可读性","status":"REUSE_PLANNED"}
+  ],
+  "production_limits":{"generated_calls_preferred":0,"generated_calls_max":3,"generated_calls_actual":0,"new_character_count":0,"full_scene_generation":false,"formal_images_this_version":0},
+  "gate1":"本方案待用户明确批准；首图前 Art/Tech 同批预签",
+  "gate2":"实际 PSD/切片/同尺度重组/动画回放完成后就具体版本交用户审核，批准前不正式接入"
+}

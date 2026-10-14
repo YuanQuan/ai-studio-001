@@ -1,0 +1,21 @@
+{
+  "task_id":"U05-B-CUSTOMER-ANIMATION-PLAN-20261014",
+  "owner":"art",
+  "summary":"现有幽灵只有整体栅格层，提出保留身份与身体光感的最多四脸局部 PSD、角色完整窗内位移与台面复用方案；本轮未制作图片。",
+  "artifacts":[
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/ASSET_REQUIREMENTS.json",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/UI_VISUAL_REVIEW.json",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results":[
+    {"criterion":"冻结源与脸部可编辑性可核","result":"PASS","evidence":"VISUAL_ANCHORS.md 记录 SHA；v0.2 psd_manifest 61 层中 CUSTOMER_GHOST 为唯一整体角色层，未发现独立脸层。"},
+    {"criterion":"真实表情与进出/遮挡最小路线明确","result":"PASS","evidence":"PLAN_ONLY：PRODUCTION_PLAN.md 限定中性/闭眼过渡/开心/失落局部脸层、0–300ms插值与 [260,278,490,505] 保守内窗；实产效果 NOT_TESTED。"},
+    {"criterion":"复用台面/缩杯、预算与两次审批门禁明确","result":"PASS","evidence":"PLAN_ONLY：ASSET_REQUIREMENTS.json 与 PRODUCTION_PLAN.md；本轮新正式图 0、实际生成调用 0、Gate1 申请最多 3 次局部调用。"},
+    {"criterion":"UI 同版视觉 Review","result":"PASS","evidence":"UI_VISUAL_REVIEW.json 对 deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/UI_SPEC.md 做方案视觉 APPROVED，窗口精确裁切与实图仍 NOT_TESTED。"}
+  ],
+  "assumptions":["台面槽位和动画秒数按同版 UI v0.1；窗口保守内窗矩形锁为 [260,278,490,505]，待产片回放核遮挡。","0 生成调用是优先确定性路线而非无损结论，Gate1 申请最多 3 次局部调用。"],
+  "risks":["旧脸与半透明身体可能融合，局部去脸需小范围补底；需实图验证。","STATIC_BARE 窗口留有幽灵轮廓与气泡尖、台面留工作杯残影，均须局部净底；75 分钟上限内若无法修好则停诊断。","进出位移可能暴露柜台遮住的身体，路径须限制在窗口裁切区域。"],
+  "status":"READY_FOR_REVIEW"
+}
