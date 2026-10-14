@@ -1,0 +1,70 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "owner": "art",
+  "summary": "仅将v0.2街栏改为灰蓝圆帽石柱与下垂深色链条：新绘透明原型、43层无店环境PSD、18张正式PNG、同尺度对照与保护区零差验证，v0.3具体资源交用户审核。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/native/stone_chain_native.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/scene_environment.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/scene_environment_stone_chain_final.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/before_after.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/micro_motion_preview.html",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ART_VISUAL_SELF_REVIEW.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/EDITABILITY_NOTES.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/package/SCENE_SAKURA_ENVIRONMENT_GATE2_v0.3.zip",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/MASTER_PIXEL_CHECK.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/MASTER_PSD_CHECK.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "街栏为灰蓝圆顶石柱和下垂深色链条，不再用柱上灯笼；风格参考不裁作正式像素。",
+      "result": "PASS",
+      "evidence": "原尺度全景/前后对照及ART_VISUAL_SELF_REVIEW核灰蓝圆帽、深色链节、无柱上灯；唯一新原型为imagegen原生2172×724透明PNG，用户参考仅样式输入且不在正式ZIP。"
+    },
+    {
+      "criterion": "只改栏杆样式和必要透明边；桥脚过渡及其它受保护区域解码像素零差。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION与MASTER_PIXEL_CHECK记录v0.2-v0.3允许区变化71329像素、ROI外RGB/RGBA变化0；旧岸石植物源下缘行68–112逐像素相同，桥脚保持。"
+    },
+    {
+      "criterion": "原17环境切片hash不变，六店不输出，PSD语义层与导出映射明确。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST登记18张active PNG、43个PSD真实环境层及左右栏杆实例；原17张PNG SHA逐个一致；正式ZIP/PSD无shop或参考覆盖。"
+    },
+    {
+      "criterion": "实际PSD图层与切片重组一致，有v0.2-v0.3同尺度对照及保护区差异证据。",
+      "result": "PASS",
+      "evidence": "MASTER_PSD_CHECK独立解析实际43个PSD存储层，与切片重组差0；FILE_VERIFICATION的PSD展平/预览/静图RGB差0，before_after.png为同尺度上下对照，保护区RGBA差0。"
+    },
+    {
+      "criterion": "原批14/15预算继承，新原型最多1次内置生图；首图前Art/Tech同版预签。",
+      "result": "PASS",
+      "evidence": "EXECUTION_LEDGER记录本版恰1次新绘、累计15/15、无未知或重发；ART_PRESIGN与TECH_PRESIGN绑定同一计划SHA d939996bb3755620736b50b103927f24a94879de65f436ff84d50099fe29d658，Gate1与Master release在首图前。"
+    },
+    {
+      "criterion": "v0.3具体资源直送用户审核，未接入客户端，运行NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET列具体预览及ZIP；ZIP SHA256 8db40f38011c30d20f040d3d862f26113cc123b25214c24af72c3ee3c886dd3c，48920475字节/35成员/CRC PASS；apps/client未改，Cocos目标机运行NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "用户参考仅通用造型与色调依据，不获得或要求复制其像素。",
+    "用户明确树不动，其它旧画面受保护；v0.3具体资源尚待用户Gate2批准。"
+  ],
+  "risks": [
+    "水面旧暖色反光在本轮保护的水层内，街柱取消灯笼后仍可见；若需消除应由用户后续明确授权局部修订。",
+    "左右栏杆沿原确认方式水平镜像；Cocos资源接入、目标机显存及draw batch未测，浏览器CPU预览不代替运行验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

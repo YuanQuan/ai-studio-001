@@ -1,0 +1,39 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "version": "v0.3",
+  "status": "LOCAL_REVISION_COMPLETE_READY_FOR_USER_REVIEW",
+  "master_release": "MASTER_PRODUCTION_RELEASE.json",
+  "work_started_at": "2026-10-14T09:18:11+08:00",
+  "work_completed_at": "2026-10-14T09:49:43+08:00",
+  "elapsed_wall_minutes_including_presign_wait": 31.5,
+  "inherited_imagegen_calls": 14,
+  "total_imagegen_limit": 15,
+  "remaining_calls": 0,
+  "v0_3_calls": [
+    {
+      "call_number": 15,
+      "submitted_at": "2026-10-14T09:30:36+08:00",
+      "purpose": "透明新绘灰蓝圆帽石柱与深色下垂链节两个独立原型，供v0.2街栏层局部替换。",
+      "prompt_file": "source/STONE_CHAIN_IMAGEGEN_ACTUAL_PROMPT.txt",
+      "prompt_sha256": "ecfe8d9fc7988d2d22b2f42141059d04d5d228e002b5adf2c6ef9b3c26991275",
+      "preplanned_prompt_file": "source/STONE_CHAIN_IMAGEGEN_PROMPT.md",
+      "references": [
+        {"role": "style_only", "path": "reference/user_stone_chain_style_687x77.png", "sha256": "1f219753b557003465c8e0092a779d874ca5c5f271ddd3a6dd97d1b70370ad93"},
+        {"role": "placement_and_palette_only", "path": "../v0.2/review/scene_environment.png", "sha256": "90c0883a59a57a58f08025706dc5f26352bb8d06ef6764f3328e8f7ba712f665"}
+      ],
+      "transparent_background": true,
+      "candidate_count_reserved": 1,
+      "status": "SUCCESS_CANONICAL_USED",
+      "returned_at": "2026-10-14T09:32:47+08:00",
+      "tool_original_path": "/Users/yuanquan/.codex/generated_images/01a13586-91aa-7fe0-ac16-345c2e7fd241/exec-de33f3cd-4b5d-42ad-a43a-b0118b6d6426.png",
+      "project_copy": "source/native/stone_chain_native.png",
+      "native_size": [2172, 724],
+      "native_mode": "RGBA",
+      "native_sha256": "5e482c2993c712bbb13da435a142736c6028cf53dce6d7ef64f61ce5f6ddb80f",
+      "candidate_count_actual": 1
+    }
+  ],
+  "total_imagegen_calls_used": 15,
+  "final_output": "43层PSD、18张active环境PNG，其中原17字节SHA未改；ROI外RGBA变化0、PSD/切片重组静图零差。",
+  "note": "第15次即总上限；未重发。旧街深问题2/2未重试。具体v0.3资源待用户Gate2，运行NOT_TESTED。"
+}

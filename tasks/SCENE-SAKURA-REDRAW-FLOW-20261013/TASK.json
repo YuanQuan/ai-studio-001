@@ -4,22 +4,23 @@
   "type": "coordination",
   "owner": "producer",
   "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
-  "objective": "追踪用户v0.1退修与v0.2局部授权、冻结旧资源/预算、同批预签、准确新版Gate2、连续性及复盘；维护资源登记和看板。",
+  "objective": "追踪用户v0.2栏杆样式退修至v0.3石柱链条、准确局部授权/首签、具体资源Gate2、累计预算、连续性与复盘，维护18项资源登记及看板。",
   "inputs": [
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
     "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md"
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/USER_REVISION_SCOPE.md"
   ],
   "deliverables": [
-    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/CONTINUITY_CHECK.md",
-    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.2/DELIVERABLE.json"
+    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.3/CONTINUITY_CHECK.md",
+    "deliverables/producer/SCENE-SAKURA-REDRAW-FLOW-20261013/v0.3/DELIVERABLE.json"
   ],
   "acceptance": [
-    "v0.1退修记录保留，v0.2制作授权与具体资源审核分开，实际开工有证据。",
-    "状态、审批、里程碑、资源登记与看板引用准确v0.2路径，Client保持锁定。",
-    "结束有continuity及可核真实起止的短复盘，预算累计不清零。"
+    "v0.2样式退修留档，v0.3制作授权和具体资源审核分开，实际开工有证据。",
+    "状态、审批、里程碑、登记与看板指准确v0.3，未导入UUID/Client锁明确。",
+    "结束有continuity和可核起止复盘，累计14/15预算不清零。"
   ],
   "dependencies": [],
   "status": "DONE",
@@ -29,6 +30,8 @@
     "只Game Project Layer，不改Studio或apps/client。",
     "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。",
     "用户2026-10-14局部修订明确授权；v0.1 Task/Approval快照保留，未批准部分不变。",
-    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。"
+    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。",
+    "2026-10-14用户指定石柱链条风格，原其它部分暂不动约束继续有效。",
+    "只修改v0.3 Required目录及本轮独立共享日志marker，保留U05等其它会话改动。"
   ]
 }

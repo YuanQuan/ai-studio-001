@@ -1,0 +1,33 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "owner": "tech_lead",
+  "summary": "完成v0.3石柱链条栏杆制作方法的同批首图前技术预签；仅内部制作支持。",
+  "artifacts": [
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.3/TECH_DESIGN.md",
+    "deliverables/tech_lead/SCENE-SAKURA-REDRAW-PREFLIGHT-20261013/v0.3/REVIEW.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/TECH_PRESIGN.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "v0.3首图前同批技术签明确冻结来源、栏杆修改区和保护区零差方法。",
+      "result": "PASS",
+      "evidence": "Art/v0.3/TECH_PRESIGN.json绑定准确方案、v0.2冻结源、参考和Gate1真实SHA；TECH_DESIGN.md记录双侧ROI和解码RGBA零差比较。"
+    },
+    {
+      "criterion": "石柱链条原型复用及只重导栏杆可执行，预算继承14/15且至多1次调用。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md与TECH_PRESIGN.json规定一次透明原型、四柱三跨、只换1536宽街栏半幅；旧17片SHA不变、active18，累计14/15最多一次。此为方法可行性，不代表新图已产生。"
+    },
+    {
+      "criterion": "仅内部制作支持，客户端接入锁定，运行NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json将实图/运行标为NOT_TESTED；TECH_DESIGN.md规定具体资源Gate2前不得客户端正式接入。"
+    }
+  ],
+  "risks": [
+    "新绘石柱/链条实际视觉、保护区像素零差、成品PSD重组尚未验证，Art制作后须附实际证据；本Tech Task不增加成品效果专业复审门禁。",
+    "图像生成仅余一次，失败或结果不达标不能自动重试。",
+    "Creator导入、显存、draw batch和目标机运行NOT_TESTED；理论RGBA8面积估算不等于实测运行指标。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

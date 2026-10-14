@@ -1,0 +1,749 @@
+{
+  "task": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "version": "v0.3",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "baseline_scene_sha256": "90c0883a59a57a58f08025706dc5f26352bb8d06ef6764f3328e8f7ba712f665",
+  "new_native_source_sha256": "5e482c2993c712bbb13da435a142736c6028cf53dce6d7ef64f61ce5f6ddb80f",
+  "active_exports": [
+    {
+      "path": "exports/tex_sakura_rr_bridge_half.png",
+      "sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
+      "size": [
+        1536,
+        512
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_far_l.png",
+      "sha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16",
+      "size": [
+        1536,
+        720
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_far_r.png",
+      "sha256": "b70c1a0f6b9eb658978783e2d4c6ac793ce774e7635575863e05a339a76d59de",
+      "size": [
+        1536,
+        720
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_left.png",
+      "sha256": "824e64f7dcb7c7c5ce9ce31aba74d4a77fe2a2ba62b4aa5fe65c976874797c7e",
+      "size": [
+        768,
+        384
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_right.png",
+      "sha256": "365469e769b32d25d4fb3c13efd04bafa0e77272cc1f74a9fe63ce835c530fea",
+      "size": [
+        768,
+        384
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_gate.png",
+      "sha256": "83615b9e79cea11ece87b66744ce2e3bae1e4b88f7a718de1bb0aeef9fa74232",
+      "size": [
+        380,
+        475
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_l.png",
+      "sha256": "b1eeb3b8290a5b6feb509f2737e6cedfcb7e6d445d3b9593858040da8810d0e7",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_r.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_flame.png",
+      "sha256": "ff7b7a1c48b4524bc652fe20b26df7f6fc86930636cb4f9a331e65348dd43abf",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_lotus.png",
+      "sha256": "420d66639b394fc3ed70da82ad5072939197e7d877e72a5d665df7f676063c56",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_reflection.png",
+      "sha256": "e912caa236f3988811f6f1463e1de4c80d6a122505a796d503b4110324a29c2c",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_flame.png",
+      "sha256": "431123b105a153c04af75bee9172523cbea3b3059347b0ffd42e0e6adfe849fa",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_lotus.png",
+      "sha256": "5454d0cdee9ef05d1eabd0ffc8a39590d8e10eeeef1c47f55ffc150a45f531d0",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_reflection.png",
+      "sha256": "5580fda4ed52e232a3e8f73a0fe9945e31d1f8794c62e08650bc4420a71207a5",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_a.png",
+      "sha256": "a16c13db0f11d2ed6a7188caf5941c1829cc531a9336c4a89b8a0115813f2c03",
+      "size": [
+        600,
+        600
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_b.png",
+      "sha256": "89ef5acf72872d8185e2402065de836f51210f44ce52e91faaa8d49d1b10bc58",
+      "size": [
+        340,
+        340
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_water_rail_half.png",
+      "sha256": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3",
+      "size": [
+        1536,
+        344
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_street_rail_half.png",
+      "sha256": "e83c1584cc7167437e5e8af5ca7d6180063a069d1f662846cdf98dab77bd80f5",
+      "size": [
+        1536,
+        113
+      ]
+    }
+  ],
+  "instances_bottom_to_top": [
+    {
+      "asset": "tex_sakura_rr_sky_l.png",
+      "x": 0,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_sky_r.png",
+      "x": 1536,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_far_l.png",
+      "x": 0,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_far_r.png",
+      "x": 1536,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_a.png",
+      "x": -60,
+      "y": 140,
+      "width": 600,
+      "height": 600,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_b.png",
+      "x": 700,
+      "y": 395,
+      "width": 340,
+      "height": 340,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_b.png",
+      "x": 2160,
+      "y": 405,
+      "width": 340,
+      "height": 340,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_tree_a.png",
+      "x": 2760,
+      "y": 190,
+      "width": 380,
+      "height": 380,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 93,
+      "y": 366,
+      "width": 58,
+      "height": 58,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 487,
+      "y": 450,
+      "width": 47,
+      "height": 47,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1090,
+      "y": 90,
+      "width": 42,
+      "height": 42,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 1550,
+      "y": 469,
+      "width": 55,
+      "height": 55,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 2470,
+      "y": 385,
+      "width": 49,
+      "height": 49,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_water_rail_half.png",
+      "x": 0,
+      "y": 680,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_water_rail_half.png",
+      "x": 1536,
+      "y": 680,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_half.png",
+      "x": 0,
+      "y": 512,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_half.png",
+      "x": 1536,
+      "y": 512,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_street_rail_half.png",
+      "x": 0,
+      "y": 730,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_street_rail_half.png",
+      "x": 1536,
+      "y": 730,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_gate.png",
+      "x": 2650,
+      "y": 245,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_foreground_left.png",
+      "x": 0,
+      "y": 640,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_foreground_right.png",
+      "x": 2304,
+      "y": 640,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    }
+  ],
+  "psd_layers_bottom_to_top": [
+    {
+      "name": "sky_l",
+      "file": "source/psd_full_canvas_layers/01_sky_l.png",
+      "sha256": "6881d9ceb029c6a7f734c641f201d2efcee584b70d1753bdd3027828b5418a64"
+    },
+    {
+      "name": "sky_r",
+      "file": "source/psd_full_canvas_layers/02_sky_r.png",
+      "sha256": "673c1d4730528de5ecf52b65b6effb2f1d60140e698c0470d8a4ffd409c60d7a"
+    },
+    {
+      "name": "far_l",
+      "file": "source/psd_full_canvas_layers/03_far_l.png",
+      "sha256": "6ed4f93994792e68a04840bd5e19bbf942fe6dc53ffc7e806538a2aea87fd447"
+    },
+    {
+      "name": "far_r",
+      "file": "source/psd_full_canvas_layers/04_far_r.png",
+      "sha256": "e70d9b9584e17a59b79ee721269a0ab37aa9ddb686600de395f241104ec7dc77"
+    },
+    {
+      "name": "tree_a_instance_1",
+      "file": "source/psd_full_canvas_layers/05_tree_a_instance_1.png",
+      "sha256": "155c39d4c3bf049a4bb65068786819ad7bee10f7f6bde61314112aae21421d2b"
+    },
+    {
+      "name": "tree_b_instance_2",
+      "file": "source/psd_full_canvas_layers/06_tree_b_instance_2.png",
+      "sha256": "90b6e79f637806ccd809d8a93927e76bef9eba0b52d72692acb3c23e489639b9"
+    },
+    {
+      "name": "tree_b_instance_3",
+      "file": "source/psd_full_canvas_layers/07_tree_b_instance_3.png",
+      "sha256": "f7c7b7d30ea672b6ecac2ffab444797f17de1c33608fe934252e3a1fc0703b60"
+    },
+    {
+      "name": "tree_a_instance_4",
+      "file": "source/psd_full_canvas_layers/08_tree_a_instance_4.png",
+      "sha256": "8f63634b635afad8bf0ad980e49c273c624ebf122488845b675a4f331b11702c"
+    },
+    {
+      "name": "airborne_spirit_a_static_1",
+      "file": "source/psd_full_canvas_layers/09_airborne_spirit_a_static_1.png",
+      "sha256": "79490b5c2616ba7ad931707e9c143052bc1a5a40fb9837ad4500b47806936b4d"
+    },
+    {
+      "name": "airborne_spirit_b_static_2",
+      "file": "source/psd_full_canvas_layers/10_airborne_spirit_b_static_2.png",
+      "sha256": "1853eb1ff0a81cac749396de43f8179ec8bc9f15e0bc5489c1aeed09f8d59107"
+    },
+    {
+      "name": "airborne_spirit_a_static_3",
+      "file": "source/psd_full_canvas_layers/11_airborne_spirit_a_static_3.png",
+      "sha256": "e03e16031169bf5982d46dd05549b4470cd8ba1d865b9512390d4a3b0dceb433"
+    },
+    {
+      "name": "airborne_spirit_b_static_4",
+      "file": "source/psd_full_canvas_layers/12_airborne_spirit_b_static_4.png",
+      "sha256": "27408c46460a13407a4cdfaeaa75089af761c339082a24dd3e85f341afa4d51e"
+    },
+    {
+      "name": "airborne_spirit_a_static_5",
+      "file": "source/psd_full_canvas_layers/13_airborne_spirit_a_static_5.png",
+      "sha256": "7a5fd40d944412509baaf7619faa3b09cf2f0dde76b1eceec4086d36b5269b13"
+    },
+    {
+      "name": "water_rail_l",
+      "file": "source/psd_full_canvas_layers/14_water_rail_l.png",
+      "sha256": "082ebddae5372db24dcb68320273b1189bf46f6e03a4793cd011ad79785641a6"
+    },
+    {
+      "name": "water_rail_r",
+      "file": "source/psd_full_canvas_layers/15_water_rail_r.png",
+      "sha256": "fbad59dcda9de061398df745d86bdfd2f2ac5ebc2755a22a031cfea2a94125bd"
+    },
+    {
+      "name": "bridge_l",
+      "file": "source/psd_full_canvas_layers/16_bridge_l.png",
+      "sha256": "ef9d5e0af58a989389a09d0ef8a070c0a23a8efd53ee9b4ead7d064a936f1f17"
+    },
+    {
+      "name": "bridge_r",
+      "file": "source/psd_full_canvas_layers/17_bridge_r.png",
+      "sha256": "36d9e1bbcec72004126a2b2e6557439a7b33f524fdfcfcfdd5beaf6dfd987cfe"
+    },
+    {
+      "name": "stone_chain_rail_l",
+      "file": "source/psd_full_canvas_layers/stone_chain_rail_l.png",
+      "sha256": "f4e65a091aba0819d2a9f26be96ab146e7b52e4b52e1783a17387d3747e1d2fb"
+    },
+    {
+      "name": "stone_chain_rail_r",
+      "file": "source/psd_full_canvas_layers/stone_chain_rail_r.png",
+      "sha256": "5b539fdd357300703e59cb9241a15650f2d6d4e96045a41eab493ee8fba33548"
+    },
+    {
+      "name": "gate_right",
+      "file": "source/psd_full_canvas_layers/18_gate_right.png",
+      "sha256": "7c57753cddcab0e9ef9484cd37ed0c8c2f72021c3b6d3b5b2af6558569891e26"
+    },
+    {
+      "name": "foreground_left",
+      "file": "source/psd_full_canvas_layers/19_foreground_left.png",
+      "sha256": "19a1b7c0c4b2b3f1bcff04e695323ade94e33f9e3d61a258d0d3a2a0654b4df0"
+    },
+    {
+      "name": "foreground_right",
+      "file": "source/psd_full_canvas_layers/20_foreground_right.png",
+      "sha256": "017f84e8a854fa4553aa2a35fd6a5c01cb11d89199a3037e015d9a3a19bd30ba"
+    },
+    {
+      "name": "spirit_a_reflection_instance_1",
+      "file": "source/psd_full_canvas_layers/21_spirit_a_reflection_instance_1.png",
+      "sha256": "0355dd118bb5b4a7527a16af5bfa186a7d3a549d644e282d4baf55efb7dbe863"
+    },
+    {
+      "name": "spirit_a_lotus_instance_1",
+      "file": "source/psd_full_canvas_layers/22_spirit_a_lotus_instance_1.png",
+      "sha256": "69b873b880614827a8bf82593b736cf7edc1dfa1e146d5bf9956fb8fdc400617"
+    },
+    {
+      "name": "spirit_a_flame_instance_1",
+      "file": "source/psd_full_canvas_layers/23_spirit_a_flame_instance_1.png",
+      "sha256": "b833fd7122432117e6f751b7ca10209294e6cf3edcd150d433649676613fcf5a"
+    },
+    {
+      "name": "spirit_b_reflection_instance_2",
+      "file": "source/psd_full_canvas_layers/24_spirit_b_reflection_instance_2.png",
+      "sha256": "d80026770f92456f259ac68dbc88a8b69a074e76d7928d0f51a4cc05e2ec3c2a"
+    },
+    {
+      "name": "spirit_b_lotus_instance_2",
+      "file": "source/psd_full_canvas_layers/25_spirit_b_lotus_instance_2.png",
+      "sha256": "f957777122d02cc7ec899696b4aabddb80cdbf9cfe79f4cdd8e9fd417972c014"
+    },
+    {
+      "name": "spirit_b_flame_instance_2",
+      "file": "source/psd_full_canvas_layers/26_spirit_b_flame_instance_2.png",
+      "sha256": "501400dbe3821d8228399822ff13105495e59feafabbc6cee78193f330f5a708"
+    },
+    {
+      "name": "spirit_a_reflection_instance_3",
+      "file": "source/psd_full_canvas_layers/27_spirit_a_reflection_instance_3.png",
+      "sha256": "910600b0d6d787268a7c32cf9cdf2599827a95af28dc60b04646dfec0ac705a9"
+    },
+    {
+      "name": "spirit_a_lotus_instance_3",
+      "file": "source/psd_full_canvas_layers/28_spirit_a_lotus_instance_3.png",
+      "sha256": "11275b688947d2e7776a1a982425513ded20886abca1862a001b23f07a05bd27"
+    },
+    {
+      "name": "spirit_a_flame_instance_3",
+      "file": "source/psd_full_canvas_layers/29_spirit_a_flame_instance_3.png",
+      "sha256": "8bb003c3059b1db9f8af3222b87534cb0e5143711028907926a0150e2afb677d"
+    },
+    {
+      "name": "spirit_b_reflection_instance_4",
+      "file": "source/psd_full_canvas_layers/30_spirit_b_reflection_instance_4.png",
+      "sha256": "97c9fe7ba83e8f6256e98321b7af7ea9107b39d8a4e42df441192fc9a12d3a5e"
+    },
+    {
+      "name": "spirit_b_lotus_instance_4",
+      "file": "source/psd_full_canvas_layers/31_spirit_b_lotus_instance_4.png",
+      "sha256": "05103da9b9f7656c663b64bc9f2a3ca4d652aecbbf17ff3307d90b2fe1fd22f9"
+    },
+    {
+      "name": "spirit_b_flame_instance_4",
+      "file": "source/psd_full_canvas_layers/32_spirit_b_flame_instance_4.png",
+      "sha256": "81d6b0f5a23fb65b4298556821832d4370350e11bb2aa0b8ac031365c787bc96"
+    },
+    {
+      "name": "spirit_a_reflection_instance_5",
+      "file": "source/psd_full_canvas_layers/33_spirit_a_reflection_instance_5.png",
+      "sha256": "42faaea412e465a7fffedf802f73c8b375e19f5e30fe5638c91eb8e8a4af27ef"
+    },
+    {
+      "name": "spirit_a_lotus_instance_5",
+      "file": "source/psd_full_canvas_layers/34_spirit_a_lotus_instance_5.png",
+      "sha256": "a7ce1d90c28de7acd22129920118a6f3cc5ca8b63057ab59b1c0b47f41c86976"
+    },
+    {
+      "name": "spirit_a_flame_instance_5",
+      "file": "source/psd_full_canvas_layers/35_spirit_a_flame_instance_5.png",
+      "sha256": "a06c4fdd46d1597133ce8b1070ed4c5cdad933f821f34727ea7f34946c9507e5"
+    },
+    {
+      "name": "spirit_b_reflection_instance_6",
+      "file": "source/psd_full_canvas_layers/36_spirit_b_reflection_instance_6.png",
+      "sha256": "9a0dbc3e9f9d3097edaf43331cd4edae5debaaf2dce054c6e275a201e1062400"
+    },
+    {
+      "name": "spirit_b_lotus_instance_6",
+      "file": "source/psd_full_canvas_layers/37_spirit_b_lotus_instance_6.png",
+      "sha256": "683cccd6300896ae6da044acafb12c15e09c013e47e2bd5e2981c6a36a506c78"
+    },
+    {
+      "name": "spirit_b_flame_instance_6",
+      "file": "source/psd_full_canvas_layers/38_spirit_b_flame_instance_6.png",
+      "sha256": "71b651eb044376729811963b4db7519e22fe308dfe0abe486017fad9f2563b23"
+    },
+    {
+      "name": "spirit_a_reflection_instance_7",
+      "file": "source/psd_full_canvas_layers/39_spirit_a_reflection_instance_7.png",
+      "sha256": "13340492ecc697a79a8af664ee1cfaed63e9934e99daa324b142278d800f095d"
+    },
+    {
+      "name": "spirit_a_lotus_instance_7",
+      "file": "source/psd_full_canvas_layers/40_spirit_a_lotus_instance_7.png",
+      "sha256": "cdbd058cab0ddfc0c14f1ae3c45256e982f663a749e46145880e559ba7d723d8"
+    },
+    {
+      "name": "spirit_a_flame_instance_7",
+      "file": "source/psd_full_canvas_layers/41_spirit_a_flame_instance_7.png",
+      "sha256": "7523e5a12b1746c73d5d9c9afa68d9b1a988a48833404ad9b4abcde705bf7d5a"
+    }
+  ],
+  "no_shop_layers_or_exports": true,
+  "allowed_full_canvas_rects_xyxy_half_open": [
+    [
+      0,
+      730,
+      1285,
+      843
+    ],
+    [
+      1787,
+      730,
+      3072,
+      843
+    ]
+  ],
+  "changed_rgba_pixels": 71329,
+  "outside_roi_changed_rgba_pixels": 0,
+  "unmodified_v0_2_export_count": 17,
+  "replaced_export": "exports/tex_sakura_rr_street_rail_half.png",
+  "scene_sha256": "0eb44d06349d23441fe179e56a0b5c82e3e04e8cf25f9ab1b33f5d65ea70bbcc",
+  "reassembly_sha256": "83833cddbed5080c8d91d1750afedd138623228f02a4a6481ab87cd75ffc88d6",
+  "prototypes_from_generated_source": {
+    "post": "source/native/post_extracted.png",
+    "chain": "source/native/chain_extracted.png"
+  },
+  "editable_component_sources": [
+    "source/native/rail_bank_half.png",
+    "source/native/chain_instances_half.png",
+    "source/native/stone_posts_half.png"
+  ]
+}

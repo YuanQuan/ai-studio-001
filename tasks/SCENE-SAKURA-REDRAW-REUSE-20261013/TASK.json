@@ -4,7 +4,7 @@
   "type": "art",
   "owner": "art",
   "parent": null,
-  "objective": "仅修订v0.1街岸：恢复被街面遮住的矮柱绳栏，修顺用户圈中的桥脚与街岸衔接；其余像素保持，六店不输出，产出v0.2 PSD/切片并直送具体资源审核。",
+  "objective": "仅把v0.2街栏改成用户参考的灰蓝圆顶石柱+下垂深色链条，保留既有桥脚/岸石植物和其余画面，输出v0.3PSD/切片至具体用户审核。",
   "inputs": [
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/USER_AUTHORIZATION.md",
     "rules/visual_production_contract.md",
@@ -12,31 +12,35 @@
     "agents/art/VISUAL_FIDELITY_PACKET_TEMPLATE.md",
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/CUT_MANIFEST.json",
     "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.1/source/scene_sakura_reuse_master.psd",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md"
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVISION_SCOPE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/USER_REVISION_SCOPE.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/reference/user_stone_chain_style.png"
   ],
   "deliverables": [
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_BRIEF.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/PRODUCTION_PLAN.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ASSET_MANIFEST.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/ART_PRESIGN.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/TECH_PRESIGN.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/source/scene_sakura_reuse_master.psd",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/CUT_MANIFEST.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/scene_environment.png",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/reassembled_from_exports.png",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/review/before_after.png",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/USER_REVIEW_PACKET.md",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/EXECUTION_LEDGER.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/FILE_VERIFICATION.json",
-    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.2/DELIVERABLE.json"
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/scene_environment.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/review/before_after.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/DELIVERABLE.json"
   ],
   "acceptance": [
-    "只修街道栏杆及桥两侧圈中衔接，未授权区域解码像素零差。",
-    "街岸矮柱绳栏可见且连续，桥脚过渡自然；单圆拱与桥灯保持。",
-    "六店不输出；未受影响切片保持v0.1文件hash，图层及导出映射明确。",
-    "实际PSD图层与正式切片重组一致，前后对照及保护区差异有证据。",
-    "累计生成调用不超15，旧街深问题2/2不重试；本轮有同计划Art/Tech首图前预签。",
-    "v0.2具体资源直送用户审核，未接入客户端，运行NOT_TESTED。"
+    "街栏为灰蓝圆顶石柱和下垂深色链条，不再用柱上灯笼；风格参考不裁作正式像素。",
+    "只改栏杆样式和必要透明边；桥脚过渡及其它受保护区域解码像素零差。",
+    "原17环境切片hash不变，六店不输出，PSD语义层与导出映射明确。",
+    "实际PSD图层与切片重组一致，有v0.2-v0.3同尺度对照及保护区差异证据。",
+    "原批14/15预算继承，新原型最多1次内置生图；首图前Art/Tech同版预签。",
+    "v0.3具体资源直送用户审核，未接入客户端，运行NOT_TESTED。"
   ],
   "dependencies": [],
   "status": "USER_REVIEW",
@@ -46,6 +50,8 @@
     "只Game Project Layer，不改Studio或apps/client。",
     "子Agent不得自行创建或分派任务；跨职责写权限仅本Task列出范围。",
     "用户2026-10-14局部修订明确授权；v0.1 Task/Approval快照保留，未批准部分不变。",
-    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。"
+    "保留其它会话改动；只写本Task明确路径与本轮专属共享段落。",
+    "2026-10-14用户指定石柱链条风格，原其它部分暂不动约束继续有效。",
+    "只修改v0.3 Required目录及本轮独立共享日志marker，保留U05等其它会话改动。"
   ]
 }

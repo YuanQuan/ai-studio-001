@@ -1,0 +1,28 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-PREFLIGHT-20261013",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3",
+  "owner": "tech_lead",
+  "status": "TECH_METHOD_PRESIGNED_MASTER_RELEASE_PENDING",
+  "signed_at": "2026-10-14T09:25:57+08:00",
+  "bound_inputs_sha256": {
+    "USER_REVISION_SCOPE.md": "52605cdda71c3b525320feb16670c6cecbf2e5ed44f8f1465e2ad369409bfe66",
+    "ART_BRIEF.md": "37599a72d3fa02b2ac395dcdeef15cdebc44f0b5fc0cb266ab201a46862996f3",
+    "PRODUCTION_PLAN.md": "d939996bb3755620736b50b103927f24a94879de65f436ff84d50099fe29d658",
+    "ASSET_MANIFEST.md": "75ef00bcaa937214f085d1a3ed114f3891b6305dfc6e271645d45de7164a95a6",
+    "ART_PRESIGN.json": "4c9394725a6c61d95c33bdcfde5f33197b00843d46a0843c3c539b36d6bfb438",
+    "MASTER_GATE1_REVIEW.json": "43ac2283724934af20285966806cbe836b88ab341d94f3b7ef12a0e9b97ecc70",
+    "MASTER_BASELINE_FREEZE.json": "c8dabaef8e7f019cad1b74a12228a6e827e784f3f2d9ceb74751f0e34d09199d",
+    "tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL_GATE1_v0.3.json": "7f03a78d5e8af4d05815ec59477ce80a6635c9af0f50b158500e0ac33b337608",
+    "reference/user_stone_chain_style_687x77.png": "1f219753b557003465c8e0092a779d874ca5c5f271ddd3a6dd97d1b70370ad93",
+    "v0.2/source/scene_sakura_reuse_master.psd": "e5af6193df4985ac7a07522530089a633e3533e581e18e9479ebe2d3943fb823",
+    "v0.2/review/scene_environment.png": "90c0883a59a57a58f08025706dc5f26352bb8d06ef6764f3328e8f7ba712f665",
+    "v0.2/exports/tex_sakura_rr_street_rail_half.png": "63519bb6ce8044ad5c1ed114e328a8fdb996e7cd971829e6ef6e1fd9d6d1f3ea",
+    "v0.2/CUT_MANIFEST.json": "e1bbbe479d74fa634a79c2970baf25027a7dc986f97bae5395293ba72f116c89"
+  },
+  "decision": "APPROVED_METHOD_ONLY",
+  "scope": "只将v0.2独立街栏中的灯柱、绳和必要暖晕换成新绘灰蓝圆顶石柱、深色下垂链；保留岸石植物桥脚和其余画面。用户附件仅作造型参考，不能裁作正式像素。",
+  "production_geometry": "3072x1024；允许区左[0,730,1285,843)、右[1787,730,3072,843)；其余解码RGBA零差。唯一替换运行切片street_rail_half保持1536宽、y=730锚点及镜像轴，可裁全透明底部但像素不得超出y<843；17张原切片SHA不变，active仍18。",
+  "prototype_and_budget": "至多1次透明imagegen，生成单柱和链段，四柱三跨确定性复用；累计继承14/15，第15次结果未知亦计额度，不盲重试。",
+  "release_condition": "Master同版等价Review与Producer Gate1_v0.3 USER_APPROVED已存在；仍须Master明确制作放行后才可首图。本签认不是Gate2，也不是实图效果通过。",
+  "actual_image_or_runtime_measurement": "NOT_TESTED"
+}

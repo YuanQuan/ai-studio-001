@@ -1,0 +1,23 @@
+{
+  "task_id": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3",
+  "owner": "art",
+  "status": "ART_PRESIGNED_TECH_PENDING",
+  "signed_at": "2026-10-14T09:21:14+08:00",
+  "bound_inputs_sha256": {
+    "USER_REVISION_SCOPE.md": "52605cdda71c3b525320feb16670c6cecbf2e5ed44f8f1465e2ad369409bfe66",
+    "ART_BRIEF.md": "37599a72d3fa02b2ac395dcdeef15cdebc44f0b5fc0cb266ab201a46862996f3",
+    "PRODUCTION_PLAN.md": "d939996bb3755620736b50b103927f24a94879de65f436ff84d50099fe29d658",
+    "ASSET_MANIFEST.md": "75ef00bcaa937214f085d1a3ed114f3891b6305dfc6e271645d45de7164a95a6",
+    "reference/user_stone_chain_style_687x77.png": "1f219753b557003465c8e0092a779d874ca5c5f271ddd3a6dd97d1b70370ad93",
+    "v0.2/source/scene_sakura_reuse_master.psd": "e5af6193df4985ac7a07522530089a633e3533e581e18e9479ebe2d3943fb823",
+    "v0.2/review/scene_environment.png": "90c0883a59a57a58f08025706dc5f26352bb8d06ef6764f3328e8f7ba712f665",
+    "v0.2/exports/tex_sakura_rr_street_rail_half.png": "63519bb6ce8044ad5c1ed114e328a8fdb996e7cd971829e6ef6e1fd9d6d1f3ea",
+    "v0.2/CUT_MANIFEST.json": "e1bbbe479d74fa634a79c2970baf25027a7dc986f97bae5395293ba72f116c89"
+  },
+  "art_decision": "同意仅新画石柱/深色链条透明原型，按旧柱位替换v0.2新增街栏中的灯柱/绳索，保留岸石、植物、桥脚与其余全景。参考附件仅风格参照，非生产像素。",
+  "first_image_scope": "一次 imagegen 透明石柱与链条语义原型，供1536宽半幅街栏复用；不生成整景、店铺或原有石岸。",
+  "budget": "继承原批14/15，本版至多第15次；旧街深问题2/2不可重试，未知结果不可盲重发。",
+  "release_condition": "在Producer登记本版等价Gate1、Tech Lead绑定完全相同计划和参考hash预签、Master明确放行之前，不调用imagegen或输出新图片。",
+  "actual_image_or_performance_measurement": "NOT_TESTED"
+}
