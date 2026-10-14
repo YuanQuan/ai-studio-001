@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-INTERACTION-METHOD-CHANGE-20261014",
+  "owner": "master",
+  "summary": "三轮净底候选未过实图自查，提交PATCH-03片区复用及预算/轮次调整给用户决定；未经批准停止第四候选。",
+  "artifacts": [
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REGION_REUSE_PROPOSAL.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/PATCH03_FEASIBILITY.md",
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "现有失败、替换范围、视觉取舍、累计预算与停止线明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET、REGION_REUSE_PROPOSAL、PATCH03_FEASIBILITY同版；三轮失败与片区内材质/接缝风险、2→3轮及45/30→65/10提案明示。实际活动净用时/剩余未知，不声明已满足原75分钟。"
+    },
+    {
+      "criterion": "待审版本可追溯，未经批准不制作第四候选",
+      "result": "PASS",
+      "evidence": "APPROVAL_HASHES绑定三份待审文件，第四候选/PATCH-03预签与新图均未执行，方法Approval USER_REVIEW。"
+    }
+  ],
+  "assumptions": [
+    "用户尚未批准PATCH-03的额外轮次、片区取舍或预算重分配。"
+  ],
+  "risks": [
+    "MANUAL-01工作底仍留残影；PATCH-03可能产生矩形接缝或片区内材质变化。",
+    "原制作活动实际净用时与余量未知；用户批准后仍需核余额再决定能否开工。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

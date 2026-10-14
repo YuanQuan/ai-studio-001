@@ -1,0 +1,21 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "version": "v0.1",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/MANUAL-01",
+  "role": "art",
+  "decision": "ART_SIGNED_MANUAL_METHOD_PENDING_MATCHING_TECH_PRESIGN",
+  "master_authorization": "Master authorized one human-traced deterministic same-object clean-background correction after two automatic rounds; no new visual scope, no imagegen call and no automatic repeat",
+  "plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/MANUAL_PLAN.md",
+  "plan_sha256": "be9f04ba536244f2511d3e31c7f327ce0854a6768b7e6934a73dffd14de9aa02",
+  "paths": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/MANUAL_PATHS.svg",
+  "paths_sha256": "cd4906160946d865cb3c4deff92b7077e958b4d4d7304cbd47265e1dea87788c",
+  "source_sha256": {"v02_static": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34", "rep02_static": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9", "same_project_clean_donor": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"},
+  "source_canvas": [1024, 1536],
+  "diagnostic_bboxes_source": {"ghost_and_bubble": [305, 489, 406, 294], "cup_rim": [418, 1090, 185, 40], "cup_glass": [440, 1220, 136, 108]},
+  "manual_mask": "Trace only old ghost and cup contours in SVG; intersect with signed bboxes and remaining low donor difference; visually exclude natural street/wood differences; preserve exact full-canvas final mask and review record; do not paste every low-difference candidate pixel.",
+  "output": "one new STATIC_BARE_LOCAL_CLEAR candidate, affected representative reconstruction and GIF only; old neutral/blink/happy body image SHA unchanged",
+  "invariants": "RGB8/sRGB same-coordinate donor pixels only inside signed and human-confirmed mask; outside mask RGB exact zero differences to REP02; visual no ghost/cup residue at source, contain and magnified scales",
+  "budget": {"manual_candidate_max": 1, "manual_activity_minutes_max": 15, "representative_activity_minutes_max_cumulative": 45, "total_activity_minutes_max_cumulative": 75, "image_gen_calls_used": 0, "image_gen_calls_max_total": 3, "cost": "UNKNOWN", "gpu": "UNKNOWN"},
+  "stop_rule": "Matching MANUAL-01 Tech presign must exist before next formal image output. One manual mask/candidate only; if still residue, protected pixels change or budget expires, stop with real evidence; no further automatic iteration or tool change.",
+  "gate2": "Even if manual result passes, Art/Tech representative checks and FULL text presigns precede remaining face/entry production; final actual slices/PSD/GIF still require separate user Gate2."
+}

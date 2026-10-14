@@ -1,0 +1,31 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "REPRESENTATIVE_FIRST_IMAGE",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/REP-01",
+  "status": "PRESIGNED_FOR_REPRESENTATIVE_FIRST_IMAGE_NOT_FULL_OR_GATE2",
+  "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+  "art_brief": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF.md",
+  "art_brief_sha256": "8a324b06a53e8b5091da950a9502500264dcb1c8b269e3af1b83e4c5a46766f7",
+  "gate1_approval_audit": "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/APPROVAL_HASHES.json",
+  "gate1_approval_audit_sha256": "b33e7236bdbeeaaebc08aad8d752c535946268fc97a9d15e863b95d01f0d498f",
+  "verified_approved_files": "16/16 SHA-256 matching at Tech presign",
+  "source_sha256_verified": {
+    "concept_B_1024x1536": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+    "readonly_v02_psd": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "static_bare_png": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "customer_ghost_png": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "same_project_repair_scene_candidate_png": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "technical_conditions": [
+    "新静态背景固定1024x1536 RGB8/sRGB；仅在幽灵轮廓[305,491,340,292]、气泡尖[582,491,124,32]、杯沿[419,1093,184,32]与玻璃[440,1220,135,106]内的精细遮罩补底，合称批准三处；遮罩外可见RGB逐像素零差异。既有同源repair_scene_candidate仅可在该精细遮罩内经实图检查后借像素，不能整图覆盖；矩形是诊断外接界，不能整块替换。",
+    "角色身体与neutral/blink/happy/disappointed最多四脸输出各332x301 RGBA同画布、straight alpha/sRGB，同左上源(309,484)，同底中源支点(475,785)，Cocos统一anchor(0.5,0)，不得分别trim而移动脸。",
+    "脸部候选编辑上限局部[154,89,170,91]，相对角色画布；实际各眼/颊/口精细遮罩应缩小，头部轮廓与身体及编辑遮罩外alpha/可见RGB目标零差异；neutral须还原旧脸可见像素。",
+    "窗口父Mask源[260,278,490,505]，角色停靠左上(309,484)，离窗左上(-72,484)、水平-381；遮罩底y783与角色底y785的2源像素须由柜台前沿实际遮挡，代表回放核停靠脸、木框和最大位移，不能靠淡出代替完整出窗。",
+    "反馈脸部0–80ms压眼、80–150ms闭眼、150–300ms展开；入/出各450ms，订单杯整组0.78围绕(653,416)，三槽[345,1150,90,84]/[467,1150,90,84]/[589,1150,90,84]复用旧素材，确认后650ms合成；所有动画仅视觉，不改submitCup时点和奖励。",
+    "代表顺序为先空窗/空台面净底与中性脸，再neutral→happy→完整离场GIF；Art逐锚点自查后Tech仅核实际格式、支点、遮罩、预算与身份，双方FULL文字复签后才扩失落与完整入场。"
+  ],
+  "budget": {"representative_activity_minutes_max": 45, "expansion_activity_minutes_max": 30, "total_activity_minutes_max": 75, "local_imagegen_calls_total_max": 3, "used_at_presign": 0, "same_problem_revision_rounds_max": 2, "cost": "UNKNOWN", "gpu": "UNKNOWN"},
+  "stop_rules": ["源、画布、支点、批准遮罩/窗口参数、生成方法或预算上限变化，先停并组织受影响项复签。", "代表实图不满足冻结角色与未改区时不得进入FULL扩批；不能以hash替代像素/alpha与回放检查。", "自产切图与同尺度重组/完整GIF完成后直接交用户Gate2具体版本审核，不新增效果专业复审门禁；Gate2前Client不得正式接入。"],
+  "not_tested": ["代表新图及PSD/GIF尚未制作", "Creator导入、Web真实画面和目标平台性能尚未测试"]
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "owner": "art",
+  "summary": "Gate1和REP-01/REP-02/MANUAL-01同批预签真实存在。局部身体、三脸与代表离场预览已有，但三个净底候选均残留旧幽灵/杯影；唯一手工候选已失败停止。正式PSD、完整四脸/全进出动画、全组件同尺度重组尚未产出，本任务BLOCKED，未交具体资源Gate2。",
+  "artifacts": [
+    "ART_BRIEF.md",
+    "ART_PRESIGN.json",
+    "ART_BRIEF_REP02.md",
+    "ART_PRESIGN_REP02.json",
+    "MANUAL_PLAN.md",
+    "ART_PRESIGN_MANUAL01.json",
+    "source/MANUAL_PATHS.svg",
+    "source/MASK_REVIEW.json",
+    "review/REP02_REVIEW.md",
+    "review/MANUAL_REVIEW.md",
+    "review/animation_representative.gif",
+    "ASSET_MANIFEST.md",
+    "CUT_MANIFEST.json",
+    "PRODUCTION_LEDGER.json",
+    "NEXT_METHOD_PROPOSAL.md",
+    "ALPHA_MASK_FEASIBILITY.md",
+    "REGION_REUSE_PROPOSAL.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "Gate1与同批Art/Tech预签实存，预算和生成调用不超获批上限", "result": "NOT_TESTED", "evidence": "Producer 16/16审批SHA核对；REP-01、REP-02、MANUAL-01均有同批预签；PRODUCTION_LEDGER.json记0次image_gen和一次手工候选。实际制作活动总时长UNKNOWN，不能证明整项预算未超，故复合标准不判PASS。"},
+    {"criterion": "净底清残影、脸部真实动画和完整进出，保护区零差异证据", "result": "FAIL", "evidence": "review/MANUAL_REVIEW.md：遮罩外RGB零差异，但4倍检查旧幽灵尾、杯沿椭圆、玻璃轮廓仍可见；开心离场仅代表片段，完整进出和失落未产。"},
+    {"criterion": "PSD、真实PNG、动画源回放及同尺度重组身份链齐全，未接入如实未测", "result": "NOT_TESTED", "evidence": "CUT_MANIFEST.json和ASSET_MANIFEST.md列部分真实PNG；source/workspace_b_master.psd、review/reconstructed.png、review/component_sheet.png、review/animation_preview.gif均未产。Creator导入与运行NOT_TESTED。"}
+  ],
+  "assumptions": ["已批准四脸、窗Mask、位移、三槽和目标杯参数不变；后续只有在用户明确批准额外轮次、选定具体新方法并由Art/Tech对该方法同批预签后才能执行。当前首选提案为PATCH-03，GEN-03仅为备选。"],
+  "risks": ["三个同源确定性净底候选均留可见半透明旧影；直接接入会在角色离场与台面清空时暴露残影。", "下一工具方法涉及超出原同问题2轮自动修正上限，必须先由Master呈请用户明确决定。"],
+  "status": "BLOCKED"
+}

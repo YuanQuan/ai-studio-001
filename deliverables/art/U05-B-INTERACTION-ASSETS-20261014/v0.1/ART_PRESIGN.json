@@ -1,0 +1,41 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "version": "v0.1",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/REP-01",
+  "role": "art",
+  "decision": "SIGNED_FOR_FIRST_IMAGE_AFTER_MATCHING_TECH_PRESIGN",
+  "brief": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF.md",
+  "gate1_approval": {
+    "art": "tasks/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "ui": "tasks/U05-B-INTERACTION-SPEC-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "approved_file_list": "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/APPROVAL_HASHES.json",
+    "approved_file_list_sha256": "b33e7236bdbeeaaebc08aad8d752c535946268fc97a9d15e863b95d01f0d498f",
+    "verified_files": "16/16 matching SHA-256 at presign"
+  },
+  "source": {
+    "frozen_concept_sha256": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+    "readonly_v02_psd_sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "static_bare_sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "ghost_export_sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "rights": "仅项目内已登记B视觉源、v0.2 PSD与同源切片；不新增外部参考、字体或第三方素材。旧来源见U05-B-WORKSPACE-ASSETS-20261014/v0.1/REFERENCE_AND_RIGHTS.md。"
+  },
+  "canvas": [1024, 1536],
+  "character_canvas": [332, 301],
+  "character_source_top_left": [309, 484],
+  "common_pivot_source": [475, 785],
+  "common_anchor_normalized": [0.5, 0],
+  "face_patch_local_limit": [154, 89, 170, 91],
+  "face_states_max": ["neutral", "blink", "happy", "disappointed"],
+  "mask_source": [260, 278, 490, 505],
+  "movement": {"docked_left": 309, "offscreen_left": -72, "full_delta_x": -381, "enter_ms": 450, "exit_ms": 450, "counter_occlusion_bottom_px": 2},
+  "face_timing_ms": {"squash": [0, 80], "blink_hold": [80, 150], "expand": [150, 300]},
+  "static_repair_rois_source": {"ghost_outline": [305, 491, 340, 292], "bubble_tip": [582, 491, 124, 32], "cup_rim": [419, 1093, 184, 32], "cup_glass": [440, 1220, 135, 106]},
+  "counter_slots_source": [[345, 1150, 90, 84], [467, 1150, 90, 84], [589, 1150, 90, 84]],
+  "cup": {"compose_ms": 650, "order_scale": 0.78, "order_center_source": [653, 416]},
+  "method": "v0.2 PSD语义层继承与局部确定性像素修补优先；必要时仅按已批范围使用内置image_gen局部编辑，并用image2psd脚本生成新1024×1536多层母版。参考整图不作为顶层覆盖。",
+  "budget": {"image_gen_calls_max_total": 3, "image_gen_calls_used_at_presign": 0, "same_problem_auto_revision_rounds_max": 2, "representative_activity_minutes_max": 45, "expansion_activity_minutes_max": 30, "total_activity_minutes_max": 75, "cost": "UNKNOWN", "gpu": "UNKNOWN"},
+  "representative": "先三处净底及中性脸，后中性到开心和完整离场GIF；逐锚点Art自查与Tech实图/格式核验，双方FULL批文字复签后才扩失落与完整入场。",
+  "pixel_invariants": "STATIC_BARE批准遮罩外RGB零差异；角色脸部批准遮罩外straight-alpha与可见RGB零差异；中性脸基准可见像素还原。",
+  "stop_rule": "尚无同batch Tech预签前不出首图；代表不通过不扩批；换源、尺寸、支点、遮罩超批准范围、生成工具或预算超限先停并交Master评审/复签。",
+  "gate2": "新实际PSD、PNG、同尺度重组与完整GIF直接交用户具体资源审核；批准前不得正式接入客户端。"
+}

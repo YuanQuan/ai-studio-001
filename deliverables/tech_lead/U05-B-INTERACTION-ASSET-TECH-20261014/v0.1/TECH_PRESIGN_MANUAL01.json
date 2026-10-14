@@ -1,0 +1,52 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "MANUAL_REPRESENTATIVE_REPAIR_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/MANUAL-01",
+  "decision": "TECH_PRESIGNED_FOR_ONE_MANUAL_REPRESENTATIVE_CANDIDATE",
+  "status": "PRESIGNED_METHOD_ONLY_NOT_OUTPUT_OR_FULL_OR_GATE2",
+  "signed_inputs": {
+    "master_authorization": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/MANUAL_REPAIR_AUTHORIZATION.md",
+    "master_authorization_sha256": "43b39118421c5c07e893d7861811936034c440f307a9ae63b0156227a8b83233",
+    "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/MANUAL_PLAN.md",
+    "art_plan_sha256": "be9f04ba536244f2511d3e31c7f327ce0854a6768b7e6934a73dffd14de9aa02",
+    "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_MANUAL01.json",
+    "art_presign_sha256": "754eb96817480d9b759835f5e04de2637ce6189144ba767663228980f76235ec",
+    "manual_paths": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/MANUAL_PATHS.svg",
+    "manual_paths_sha256": "cd4906160946d865cb3c4deff92b7077e958b4d4d7304cbd47265e1dea87788c"
+  },
+  "source_sha256_verified": {
+    "v02_static_bare": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "rep02_static_bare_clean": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9",
+    "same_project_clean_donor": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "path_review": {
+    "svg_xml_valid": true,
+    "source_canvas": [1024, 1536],
+    "path_count": 8,
+    "path_scope": "四条旧幽灵轮廓、一道旧杯沿椭圆及三道玻璃侧/底缘；无填充矩形。描边仅为候选支持，实际输出必须再与已签外接界、REP-02残余4–11通道差和Art逐条人工确认区域求交。",
+    "diagnostic_bboxes_source_px": {
+      "ghost_and_bubble": [305, 489, 406, 294],
+      "cup_rim": [418, 1090, 185, 40],
+      "cup_glass": [440, 1220, 136, 108]
+    },
+    "exclusions": "自然夜街、树叶、灯光、砖面、木纹、台面导线及其低差异像素一律不能因4–11通道差而批量复制；约4591个候选不得全量视为残影。"
+  },
+  "output_conditions": [
+    "仅制作一套1024x1536人工确认Mask和一次新静底候选，保存source/mask_residual_confirmed.png及source/MASK_REVIEW.json，逐条记录保留/排除依据。",
+    "仅在确认Mask内按同坐标复制已签同项目donor的RGB8/sRGB原像素到REP-02静底；Mask外RGB逐像素零差异，源尺寸与颜色值不缩放。",
+    "只重算失效静底及代表重组/GIF。四脸语义、身体332x301共同画布与支点、脸ROI[154,89,170,91]、窗口Mask[260,278,490,505]、水平位移-381、UI与业务规则不变。",
+    "实际图需由Art核4倍局部、1024x1536全图与360x640 contain；Tech随后核源尺寸/格式、同源哈希、Mask外零差异、预算和支点。代表通过后双方另作FULL文字复签，具体资源仍须用户Gate2。"
+  ],
+  "budget": {
+    "manual_candidate_max": 1,
+    "manual_activity_minutes_max": 15,
+    "counts_within_representative_minutes_max": 45,
+    "counts_within_total_minutes_max": 75,
+    "image_gen_calls_used": 0,
+    "image_gen_calls_max_total": 3,
+    "same_problem_auto_revisions_already_exhausted": 2
+  },
+  "stop_rule": "仅一次手工Mask和一次候选。若残影仍在、自然景/木纹受损、Mask外像素变化或实时剩余预算不足，保留诊断并停，不能再扩大保护区、降阈值自动重试、重置轮次或自行换方法。",
+  "not_tested": ["MANUAL-01输出图、最终Mask与MASK_REVIEW尚未生成", "Creator导入、Web及目标平台运行尚未测试"]
+}

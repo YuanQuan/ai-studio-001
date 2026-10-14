@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-INTERACTION-METHOD-CHANGE-20261014",
+  "title": "U05局部净底方法调整审阅",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "将当前方法失败及受控背景片区复用作为可审阅调整提交用户，未经批准不继续制作。",
+  "inputs": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REGION_REUSE_PROPOSAL.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/STOP_DIAGNOSIS.md"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/REVIEW_PACKET.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REGION_REUSE_PROPOSAL.md",
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-INTERACTION-METHOD-CHANGE-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "现有失败、替换范围、视觉取舍、累计预算与停止线明确",
+    "待审版本可追溯，未经批准不制作第四候选"
+  ],
+  "dependencies": [
+    "U05-B-INTERACTION-ASSETS-20261014"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master跨职责授权Producer维护本任务版本、待批哈希、日志和状态；Art只读提案与Tech可行性评审均不授权制作。",
+    "2026-10-14 三待审文件SHA冻结，四Required实存，方法变更USER_REVIEW；未批第四候选不制作。"
+  ]
+}

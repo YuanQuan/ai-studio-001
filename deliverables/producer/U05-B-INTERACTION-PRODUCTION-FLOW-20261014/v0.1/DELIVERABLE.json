@@ -1,0 +1,35 @@
+{
+  "task_id": "U05-B-INTERACTION-PRODUCTION-FLOW-20261014",
+  "owner": "producer",
+  "summary": "三次净底候选均未过实图，资源及新版运行受阻；PATCH-03唯一方法变更已锁三文件进入用户审核。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确方案批准及实际生产阶段可核",
+      "result": "PASS",
+      "evidence": "原16SHA与UI/Art计划USER_APPROVED；REP-01/REP-02/MANUAL-01失败及Art/Tech预签、Owner账本实存。"
+    },
+    {
+      "criterion": "预算和门禁连续推进、具体资源未批不接入",
+      "result": "PASS",
+      "evidence": "imagegen 0/3、自动修正2/2及唯一MANUAL-01失败；活动已用/剩余UNKNOWN，用户等待不扣。Art/Tech/Client BLOCKED，PATCH-03 USER_REVIEW，Gate2未到。"
+    },
+    {
+      "criterion": "五共享文件仅U05块维护，真实节点和简短复盘",
+      "result": "PASS",
+      "evidence": "五共享文件本轮U05 marker记录失败、阻塞、待审方法及时间证据；无新动画/Creator运行通过误报。"
+    }
+  ],
+  "assumptions": [
+    "用户尚未批准PATCH-03、额外唯一轮次或65/10预算重分配。"
+  ],
+  "risks": [
+    "同源donor片区复用可能产生矩形接缝、框内材质改变或框外旧影；新候选必须等用户决定及同批预签。",
+    "历史墙钟混等待，实际活动累计/余额未知。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

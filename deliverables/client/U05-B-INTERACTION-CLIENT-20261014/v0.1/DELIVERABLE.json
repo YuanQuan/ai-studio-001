@@ -1,0 +1,41 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "owner": "client",
+  "summary": "获批交互规格的独立前端事务代码与状态检查已完成；新美术资源仍待 Gate2，因此本任务当前 BLOCKED，未构建或实际试玩。",
+  "artifacts": [
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/BRIEF_TECH_REVIEW.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/STATE_CHECK.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/STATE_CHECK_TEST.cjs",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/BUILD_IDENTITY.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "三槽选择与撤销、确认快照合成事务、目标缩放和完整顾客移动按获批UI实现",
+      "result": "PASS",
+      "evidence": "milk_tea_lab.ts 已实现三槽显示/旧Run选择与撤销、点击前不可变快照、分阶段合成、0.78目标杯整组缩放、固定矩形Mask及完整-381源像素顾客离窗。状态时序用例通过；Mask/遮挡/动效实际画面仍因Gate2未测，详见 evidence/STATE_CHECK.md。"
+    },
+    {
+      "criterion": "判定时点/计时/奖励不变，重复确认/超时/退出重试销毁安全",
+      "result": "PASS",
+      "evidence": "milk_tea_state.ts SHA256与前版一致；确认仅一处调用 submitCup 并使用同一次 nowMs，所有表现事务另用epoch管理。纯状态检查覆盖重复输入锁、超时中断、最后杯胜利采样及退出连续位置。Creator异步资源/引擎销毁完整行为待构建验证。"
+    },
+    {
+      "criterion": "只正式接入用户Gate2批准资源，Creator和实际浏览器新运行证据真实，未测不伪报",
+      "result": "NOT_TESTED",
+      "evidence": "没有新美术资源通过Gate2，本轮没有复制/导入计划PNG、没有Creator构建、没有新HTTP/浏览器运行。BUILD_IDENTITY.json 将构建和运行真实标为NOT_BUILT/NOT_TESTED；需 Gate2 后 Master 继续授权才能完成。"
+    }
+  ],
+  "assumptions": [
+    "业务 Run 与 submitCup/expireRun/settleWin 继续作为唯一判定和奖励来源，表现状态只持有不可变展示快照。",
+    "首次顾客入场在 makeRun 的原始 startedAtMs 同时启动，不增加截止时间或改动业务时间语义。"
+  ],
+  "risks": [
+    "顾客脸图及辅助补间资源、STATIC_BARE 窗口与台面局部净底未通过 Gate2；不能宣称最终视觉完成。",
+    "Cocos导入/序列化、Mask遮挡、真实浏览器流程、性能与QA尚未验证。",
+    "按Master指示，Gate2前不得导入候选资产、构建新试玩或覆盖既有8876服务；此为当前明确阻塞。"
+  ],
+  "status": "BLOCKED"
+}

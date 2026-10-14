@@ -1113,4 +1113,8 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 用户最终实现退回：12:21:28 +08:00 Producer记录，精确消息秒未知。用户只给修改范围“选料、合成或操作反馈”，未给具体问题或目标；无法核对返工制作量、耗时或原因，不能归责已测流程/资源。Master负责取得具体反馈后分派修订，Client复核点为新Revision的实际交互和同版Web证据；Producer复核点为新包SHA与用户决定。当前资源已批维持，流程支持DONE不冒充实现接受。
 - 新修订方向结果：UI/Art/Tech同版方案与Master中文审阅包已完成，16文件SHA核对后送两方案USER_REVIEW；实际新图片0、动画/客户端修订运行NOT_TESTED。此轮可核终点为12:41:44 +08:00，可靠起点及各Agent制作/用户等待时长未知，不推算慢因。建议Master在用户准确方案决定后再分派Art局部首图预签与后续Client（负责人Master，复核点为Gate1审批及首图同批预签）；Producer在Gate2/运行节点复核版本和视觉范围。Continuity：本轮无可继续而空挂READY/IN_PROGRESS的方案任务，当前真实用户审阅门禁。
 - 收尾：12:44:18 +08:00 Master接受Producer AUTO流程支持；方案用户等待独立计时，实际消息时间及等待净时长未知。Continuity不变：两方案真实USER_REVIEW；获批前无授权正式新图/新版接入。
+- 本轮方案批准节点：Producer 13:41:05 +08:00核原16SHA、两用户决定并登记；用户实际消息秒与方案等待净时长未知。新生产计划上限75分钟/3次局部生成并非已消耗工时，当前生成调用0；Art/Tech尚无首份Required，不能据READY推算制作慢因。建议Art与Tech在首图前核同批预签及mask/窗口路径（负责人Art/Tech，复核点ART_PRESIGN/TECH_PRESIGN）；Producer在代表与FULL扩批节点记实际预算/版本。Continuity：当前可继续制作已授权，Producer FLOW首产，Art/Tech需随首件真实开工继续推进，不能因计划批准而结束本轮。
+- REP-01开工节点：Art/Tech预签与Client Brief真实首产可核，三个Task IN_PROGRESS各有当前执行证据；13:41:05批准登记至13:52:58节点墙钟11分53秒，含Owner只读测源/预签与并行工作，不能当作单人净制作工时。Art预算实际调用以Owner账本为准，当前未见新图验证。复核点为代表实图与Tech格式/预算核验后FULL复签。
+- 本生产周期结果：三次净底候选均REVISE，Art/AssetTech/Client有真实依赖阻塞；唯一可继续的静态代码审查和只读PATCH-03提案已完成送审。Art账本可核历史05:51:00–06:46:11 UTC墙钟55分11秒含等待/诊断，不能当净活动；MANUAL-01命令0.814秒、执行+视觉检查≤1分54秒，实际75分钟活动累计和剩余UNKNOWN。用户方法审阅等待从本次送审后不扣活动预算，失败原因是低对比旧影/片区风险，不能归责单一角色速度。建议Art/Tech仅在用户批准PATCH-03后先核实际可用活动余额并同批预签（复核点为新批次预签与停止时钟）；Master向用户呈现三片区可见取舍，Producer核决定版本。Continuity：无可授权第四候选，停在真实方法用户门禁而非空挂IN_PROGRESS。
+- 当前周期收尾复核：生产FLOW经Master AUTO接受DONE；Art/资源Tech/Client维持真实BLOCKED、方法USER_REVIEW，未有可继续却空挂IN_PROGRESS的任务。用户待审期间不继续计入Art活动预算。
 <!-- U05-B-LANDING-20261014 END -->

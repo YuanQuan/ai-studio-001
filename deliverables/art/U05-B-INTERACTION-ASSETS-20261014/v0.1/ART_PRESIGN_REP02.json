@@ -1,0 +1,24 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "version": "v0.1",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/REP-02",
+  "role": "art",
+  "decision": "ART_SIGNED_REP02_PENDING_MATCHING_TECH_PRESIGN",
+  "base_art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+  "base_art_brief": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF.md",
+  "rep02_brief": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF_REP02.md",
+  "diagnosis": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REP_ROI_REVISION.md",
+  "rep01_review": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/REPRESENTATIVE_REVIEW.md",
+  "revised_static_diagnostic_bbox_source": {
+    "ghost_outline_and_bubble_tip": [305, 489, 406, 294],
+    "cup_rim": [418, 1090, 185, 40],
+    "cup_glass": [440, 1220, 136, 108]
+  },
+  "pixel_scope": "只修批准的幽灵/气泡尖/杯rim和玻璃残影细遮罩；诊断外接矩形不得整替换；其余RGB零差异。",
+  "face_timeline_samples_ms": {"neutral": 0, "squash_mid": 40, "blink_closed": 80, "expand_start": 150, "expand_mid": 225, "happy_extreme": 300},
+  "face_states_max": ["neutral", "blink", "happy", "disappointed"],
+  "auxiliary_interpolation": "FACE_SQUASH是过渡补间，不计第五情绪状态。",
+  "method": "沿原预签确定性局部修补，保留原源hash、窗口/位移/支点和预算；只重算失效项。",
+  "budget_cumulative": {"image_gen_calls_used": 0, "image_gen_calls_total_max": 3, "same_problem_auto_revision_round": 2, "same_problem_auto_revision_rounds_max": 2, "representative_activity_minutes_max": 45, "expansion_activity_minutes_max": 30, "total_activity_minutes_max": 75},
+  "stop_rule": "未取得同REP-02 Tech文字预签不得按新边界出图；REP-02再次失败即停止该问题自动修正并提交诊断，不能继续扩界或扩批。"
+}

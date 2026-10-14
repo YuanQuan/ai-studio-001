@@ -1,0 +1,49 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "REPRESENTATIVE_REVISION_02",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.1/REP-02",
+  "status": "TECH_PRESIGNED_REP02_REPRESENTATIVE_ONLY_NOT_FULL_OR_GATE2",
+  "decision": "APPROVED_FOR_REP02_REPRESENTATIVE_CORRECTION",
+  "scope_basis": {
+    "master_revision": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/REPRESENTATIVE_REVISION.md",
+    "master_revision_sha256": "99fceb37d4b8c40c0cc96acb392415552200712382c393e96d1110cbc8518f89",
+    "art_brief_rep02": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF_REP02.md",
+    "art_brief_rep02_sha256": "3f8d6a9aeb602d6f8d242142af9d56c3d550cf63672da970c6fcbd522759c201",
+    "art_presign_rep02": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_REP02.json",
+    "art_presign_rep02_sha256": "62728b0be24711ba4c26df4231aa53136a27fc41e3096c76c69b1cd4c80c2961",
+    "art_roi_diagnosis": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/REP_ROI_REVISION.md",
+    "art_roi_diagnosis_sha256": "d4f38bdfd39f267bbceeed36c5a872bc0d50ecb116ac416b7e2c0ed3b1d8caae",
+    "base_tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "base_tech_presign_sha256": "083d347a11d4b122b8b4f5b78e04250fe2991b1bddacc391dfef6ee95c4140c6"
+  },
+  "source_identity_sha256_unchanged_from_rep01": {
+    "concept_B_1024x1536": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+    "readonly_v02_psd": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "static_bare_png": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "customer_ghost_png": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "same_project_repair_scene_candidate_png": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "revised_static_diagnostic_bbox_source_px": {
+    "ghost_outline_and_bubble_tip": [305, 489, 406, 294],
+    "cup_rim": [418, 1090, 185, 40],
+    "cup_glass": [440, 1220, 136, 108]
+  },
+  "technical_conditions": [
+    "三处修订框均位于1024x1536源画布内，仅包围原批准的旧幽灵、气泡尖和工作杯残影；按实际残影精细遮罩修改，不得整块贴入候选或改动框外像素。框外可见RGB逐像素零差异；候选图只可在精细遮罩内取同项目源像素。最大通道差≥30和四邻域连通仅为诊断，不能代替实图遮罩确认。",
+    "顾客身体和四脸保持各332x301同画布与同支点，脸局部ROI[154,89,170,91]、窗口Mask[260,278,490,505]、停靠左上(309,484)、离窗左上(-72,484)、位移-381、anchor(0.5,0)及业务规则均不变；不得自动trim导致脸漂移。",
+    "代表GIF采样为0ms中性、40ms压眼中间、80ms闭眼、150ms展开起、225ms展开中、300ms开心极值，对应0–80/80–150/150–300ms原批准时序；FACE_SQUASH仅作必要补间，不是第五情绪状态。",
+    "本次仅重算失效的静底与代表GIF/拼图，保留原PSD、未受影响图片和脸资源；REP-01预签及其失败样张保留审计。"
+  ],
+  "budget_cumulative": {
+    "local_imagegen_calls_used_at_presign": 0,
+    "local_imagegen_calls_total_max": 3,
+    "same_problem_auto_revision_round": 2,
+    "same_problem_auto_revision_rounds_max": 2,
+    "representative_activity_minutes_max": 45,
+    "expansion_activity_minutes_max": 30,
+    "total_activity_minutes_max": 75
+  },
+  "stop_rule": "REP-02若再留同问题残影或采样错误，停止自动修正并提交诊断，不再扩ROI、改批次重置预算或进入FULL。代表自核通过后仍须Art/Tech同批FULL文字复签；自产切图最终直接交用户Gate2具体版本审核，不新增效果专业复审门禁。",
+  "not_tested": ["REP-02新图、PSD、GIF尚未制作", "Creator导入、Web实际画面和目标平台运行尚未测试"]
+}

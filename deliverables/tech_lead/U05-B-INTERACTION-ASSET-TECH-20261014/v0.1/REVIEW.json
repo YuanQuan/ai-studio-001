@@ -1,0 +1,11 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {"severity": "MAJOR", "message": "REP-01/REP-02及唯一MANUAL-01净底候选均由Art实图自查REVISE；MANUAL-01虽有1600像素Mask且框外RGB零差异，仍留幽灵淡尾、旧杯沿和玻璃残线，不能扩FULL或交Gate2。"},
+    {"severity": "INFO", "message": "已核同批预签、源/候选/Mask SHA、1024x1536 RGB/L格式、332x301角色支点与代表预览元数据。失落脸、新PSD、最终切片、全组件重组和完整GIF未产；Creator/Web/设备NOT_TESTED。"},
+    {"severity": "INFO", "message": "PATCH-03整体片区复用仅只读提案，涉及框内自然纹理、接缝、框外残影和活动预算重分配，须用户明确决定后另作同批预签，当前未放行制作。"}
+  ],
+  "next_action": "Producer保持该资产技术任务BLOCKED并保存失败证据；Master向用户呈现PATCH-03具体取舍与预算/轮次决定。仅在获批新方法且Art/Tech同批首图预签后恢复制作，完整资源仍待FULL及用户Gate2。"
+}

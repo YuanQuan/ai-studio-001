@@ -1,0 +1,38 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "version": "v0.1",
+  "status": "PARTIAL_BLOCKED_NOT_GATE2_READY",
+  "source_psd_readonly_sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+  "new_psd": null,
+  "canvas_source_px": [1024, 1536],
+  "common_customer_canvas_px": [332, 301],
+  "customer_source_top_left_px": [309, 484],
+  "customer_pivot_source_px": [475, 785],
+  "customer_anchor_normalized": [0.5, 0],
+  "no_trim_face": true,
+  "planned_window_mask_xywh": [260, 278, 490, 505],
+  "planned_dock_xywh": [309, 484, 332, 301],
+  "planned_exit_left_px": -72,
+  "actual_working_cuts": [
+    {"asset_id": "CUSTOMER_BODY_BASE", "path": "exports/CUSTOMER_BODY.png", "sha256": "8e6df8b02697d51fda76fde3c1c083ffc485dd1f9ba2602b25d2845dd2d9d81a", "state": "REPRESENTATIVE_ONLY"},
+    {"asset_id": "FACE_NEUTRAL", "path": "exports/FACE_NEUTRAL.png", "sha256": "126d2748eafc49dd737afdf99eba4e9d3514d7370bf1755b1fe24181cf36b2f7", "state": "REPRESENTATIVE_ONLY"},
+    {"asset_id": "FACE_BLINK", "path": "exports/FACE_BLINK.png", "sha256": "843be71ba3405f4ff22390da293948cb66d8a30b8fa835a1913bc0d68ad08ff1", "state": "REPRESENTATIVE_ONLY"},
+    {"asset_id": "FACE_HAPPY", "path": "exports/FACE_HAPPY.png", "sha256": "971157afd6bcd9d97709736b2eb399c9112775d303c26fc04455ca34035268aa", "state": "REPRESENTATIVE_ONLY"}
+  ],
+  "auxiliary_interpolation_not_emotions": [
+    {"id": "FACE_SQUASH", "path": "exports/FACE_SQUASH.png", "sha256": "874890e53f1a07b58f10bda8dd906fd08923a23be3b5148849f1592465d91e50"},
+    {"id": "FACE_EXPAND_MID", "path": "exports/FACE_EXPAND_MID.png", "sha256": "daa4e43c97535af98ca8d850a1c5f158e8bffd3e200b46147c8a9bd2c07c923f"}
+  ],
+  "missing_or_failed": [
+    {"asset_id": "STATIC_BARE_LOCAL_CLEAR", "state": "FAILED_VISUAL_REVISE", "last_candidate_path": "exports/STATIC_BARE_MANUAL01.png", "last_candidate_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a"},
+    {"asset_id": "FACE_DISAPPOINTED", "state": "NOT_PRODUCED"},
+    {"asset_id": "workspace_b_master.psd", "state": "NOT_PRODUCED"},
+    {"asset_id": "reconstructed.png", "state": "NOT_PRODUCED"},
+    {"asset_id": "component_sheet.png", "state": "NOT_PRODUCED"},
+    {"asset_id": "animation_preview.gif", "state": "NOT_PRODUCED"}
+  ],
+  "existing_preview_only": {"path": "review/animation_representative.gif", "sha256": "c59abd0edd2996d2d1e940b5063f8e5813d715a20187087f6167e7936662c903", "limitation": "Uses failed REP-02 static, happy exit only; no final full action preview"},
+  "client_formal_path": "PLANNED_NOT_IMPORTED",
+  "client_uuid": null,
+  "gate2_ready": false
+}

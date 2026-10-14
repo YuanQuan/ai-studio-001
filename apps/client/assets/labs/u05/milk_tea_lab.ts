@@ -1,6 +1,6 @@
 import {
   _decorator, Component, Node, UITransform, Graphics, Label, Color, view, sys, resources, JsonAsset,
-  input, Input, EventMouse, Vec3, Sprite, SpriteFrame, BitmapFont,
+  input, Input, EventMouse, Vec3, Sprite, SpriteFrame, BitmapFont, Mask, UIOpacity,
 } from 'cc';
 import {
   LabConfig, Progress, Run, Stage, Ingredient, Dimension, DIMENSIONS, DIMENSION_NAMES, TIER_IDS, TIER_NAMES,
@@ -9,6 +9,11 @@ import {
 } from './milk_tea_state';
 import { U05BitmapText } from './u05_bitmap_text';
 import { U05NineSlicePlate } from './u05_nine_slice_plate';
+import {
+  CupSnapshot, PresentationPhase, PresentationResult, PresentationSample, PresentationTransaction,
+  createPresentationTransaction, freezeCupSnapshot, interruptPresentationForTimeout, samplePresentation,
+  shouldLockInput,
+} from './u05_interaction_presentation';
 
 const { ccclass } = _decorator;
 const PANEL = new Color(103, 53, 31, 235); // COLOR_SYSTEM wood.deep #67351F
@@ -41,6 +46,8 @@ const LABEL_POSITIONS: Record<Dimension, Array<[number, number, number, number]>
   TOPPING: [[342.5, 943.5, 123, 45], [516.5, 943.5, 123, 45], [690.5, 943.5, 123, 45],
     [342.5, 1062, 123, 44], [516.5, 1062, 123, 44], [690.5, 1062, 123, 44]],
 };
+const SLOT_CENTERS: Record<Dimension, [number, number]> = { TEA: [390, 1192], MILK: [512, 1192], TOPPING: [634, 1192] };
+const MOVE_WINDOWS: Record<Dimension, [number, number]> = { TEA: [80, 420], MILK: [220, 540], TOPPING: [360, 650] };
 
 function ingredientAsset(item: Ingredient): string {
   const index = item.sort_order < 10 ? `0${item.sort_order}` : String(item.sort_order);
@@ -57,6 +64,7 @@ function cupContentAsset(item: Ingredient): string {
 function idFor(recipe: Run['orders'][number], dimension: Dimension): string {
   return dimension === 'TEA' ? recipe.tea_id : dimension === 'MILK' ? recipe.milk_id : recipe.topping_id;
 }
+function clampRange(value: number): number { return Math.max(0, Math.min(1, value)); }
 
 @ccclass('U05MilkTeaLab')
 export class U05MilkTeaLab extends Component {
@@ -92,6 +100,23 @@ export class U05MilkTeaLab extends Component {
   private toggleValidation = false;
   private sessionProgress: Progress | null = null;
   private lastXp = 0;
+  private presentation: PresentationTransaction | null = null;
+  private presentationEpoch = 0;
+  private presentationSample: PresentationSample = {
+    phase: 'complete', face: 'neutral', faceProgress: 1, phaseStartedAtMs: 0, phaseDurationMs: 0,
+    progress: 1, complete: true, customerX: 309, bubbleVisible: false,
+  };
+  private presentationVisual: {
+    customer: Node | null;
+    bubble: Node | null;
+    movingIngredients: Partial<Record<Dimension, Node>>;
+    cupContents: Partial<Record<Dimension, Node>>;
+    facePose: string;
+    faceProgress: number;
+    phase: PresentationPhase | null;
+  } | null = null;
+  private interactionMovingIngredients: Partial<Record<Dimension, Node>> = {};
+  private interactionCupContents: Partial<Record<Dimension, Node>> = {};
 
   protected onLoad(): void {
     this.destroyed = false;
@@ -135,16 +160,39 @@ export class U05MilkTeaLab extends Component {
     });
   }
   protected update(): void {
+    const nowMs = this.now();
     if (this.run?.status === 'playing') {
-      const next = expireRun(this.run, this.now());
-      if (next !== this.run) { this.run = next; this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD; this.dirty = true; }
-      const second = remainingSeconds(this.run, this.now());
+      const previous = this.run;
+      const next = expireRun(previous, nowMs);
+      if (next !== previous) {
+        this.run = next; this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD;
+        if (this.presentation && this.presentation.result !== 'won' && this.presentation.result !== 'exited') {
+          const interruptedCustomerX = samplePresentation(this.presentation, nowMs, this.presentationSample).customerX;
+          this.presentationEpoch += 1;
+          this.presentation = interruptPresentationForTimeout(this.presentation, this.presentationEpoch, nowMs, interruptedCustomerX);
+        } else if (!this.presentation) {
+          const order = previous.orders[Math.min(previous.orderIndex, previous.orders.length - 1)];
+          const snapshot = freezeCupSnapshot(previous.orderIndex, order?.recipe_id ?? '', previous.selected);
+          this.startPresentation('expired', snapshot, nowMs);
+        }
+        this.dirty = true;
+      }
+      const second = remainingSeconds(this.run, nowMs);
       if (second !== this.lastClockSecond) { this.lastClockSecond = second ?? -1; if (this.timerLabel) this.timerLabel.string = this.clockText(second); }
+    }
+    if (this.presentation) {
+      if (this.presentation.epoch !== this.presentationEpoch || this.destroyed) this.cancelPresentation();
+      else {
+        const sample = samplePresentation(this.presentation, nowMs, this.presentationSample);
+        this.applyPresentationSample(sample, nowMs);
+        if (sample.complete) this.finishPresentation();
+      }
     }
     if (this.dirty) this.render();
   }
   protected onDestroy(): void {
     this.destroyed = true;
+    this.presentationEpoch += 1; this.presentation = null; this.presentationVisual = null;
     view.off('canvas-resize', this.resize, this);
     input.off(Input.EventType.MOUSE_DOWN, this.mouseDown, this);
     input.off(Input.EventType.MOUSE_UP, this.mouseUp, this);
@@ -292,8 +340,11 @@ export class U05MilkTeaLab extends Component {
   private mouseUp(event: EventMouse): void { if (event.getButton() !== EventMouse.BUTTON_LEFT || Date.now() - this.lastTouchAt < 500) return; const target = this.hit(event.getUILocation()); if (target && target === this.down) this.actions.get(target)?.(); this.down = null; }
   private touchStart(event: any): void { this.lastTouchAt = Date.now(); this.down = this.hit(event.getUILocation()); }
   private touchEnd(event: any): void { this.lastTouchAt = Date.now(); const target = this.hit(event.getUILocation()); if (target && target === this.down) this.actions.get(target)?.(); this.down = null; }
-  private modalActive(): boolean { return this.toggleValidation || this.exitConfirm || !!this.run && ['won', 'failed', 'exited'].includes(this.run.status); }
+  private modalActive(): boolean {
+    return this.toggleValidation || this.exitConfirm || (!this.presentation && !!this.run && ['won', 'failed', 'exited'].includes(this.run.status));
+  }
   private hit(point: { x: number; y: number }): Node | null {
+    if (this.presentation && (this.presentation.result === 'expired' || this.presentation.result === 'exited')) return null;
     const candidates = this.modalActive() ? this.modalActions : this.actions.keys();
     let nearestIngredient: Node | null = null; let nearestDistance = Number.POSITIVE_INFINITY;
     for (const node of candidates) {
@@ -312,6 +363,7 @@ export class U05MilkTeaLab extends Component {
   private render(): void {
     if (!this.root?.isValid) return;
     this.dirty = false; this.actions.clear(); this.modalActions.clear(); this.root.destroyAllChildren(); this.timerLabel = null;
+    this.presentationVisual = null;
     const size = view.getVisibleSize();
     const fit = Math.min((size.width - 16) / 720, (size.height - 16) / 1080, 1);
     this.root.setScale(fit, fit, 1);
@@ -328,6 +380,9 @@ export class U05MilkTeaLab extends Component {
     const tier = { tier_id: tierId, display_name: TIER_NAMES[tierId], stages, recipe_dims: 3 };
     if (!this.run) this.renderSelection(tier);
     else this.renderGame(tier);
+    if (this.presentation) {
+      const sampleNow = this.now(); this.applyPresentationSample(samplePresentation(this.presentation, sampleNow, this.presentationSample), sampleNow);
+    }
   }
   private renderSelection(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
     // Approved empty bubble covers the background's discarded ghost-bubble tail on the selection page.
@@ -359,7 +414,7 @@ export class U05MilkTeaLab extends Component {
     if (this.toggleValidation) this.renderValidation();
     if (this.status) this.text(this.root!, this.status, 0, 248, 14, this.statusColor, 660, 24);
   }
-  private renderIngredientGallery(stage: Stage, drawToppingCategory = true): void {
+  private renderIngredientGallery(stage: Stage, drawToppingCategory = true, allowInput = true): void {
     if (!this.config) return;
     this.renderCategoryLabels(drawToppingCategory);
     const positions: Record<Dimension, Array<[number, number]>> = {
@@ -392,38 +447,181 @@ export class U05MilkTeaLab extends Component {
         const hitScale = 720 / 1024;
         hit.addComponent(UITransform).setContentSize(Math.max((right - left) * hitScale, this.minTouchSize()),
           Math.max((bottom - top) * hitScale, this.minTouchSize()));
-        if (available && this.run) this.actions.set(hit, () => this.choose(dimension, item.ingredient_id));
+        if (available && this.run && allowInput) this.actions.set(hit, () => this.choose(dimension, item.ingredient_id));
       });
     });
   }
   private renderGame(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
-    const run = this.run!; const seconds = remainingSeconds(run, this.now());
-    this.renderSourceHeader(run, seconds);
-    this.renderIngredientGallery(run.stage, false);
-    this.showAsset(this.root!, 'CUSTOMER_GHOST', this.sourcePos(475, 634.5));
+    const run = this.run!; const nowMs = this.now(); const locked = shouldLockInput(this.presentation);
+    const sample = this.presentation ? samplePresentation(this.presentation, nowMs) : null;
+    const visualOrderIndex = this.presentation?.snapshot.orderIndex ?? Math.min(run.orderIndex, run.orders.length - 1);
+    const order = run.orders[visualOrderIndex] ?? run.orders[run.orders.length - 1];
+    this.renderSourceHeader(run, remainingSeconds(run, nowMs), visualOrderIndex);
+    this.renderIngredientGallery(run.stage, false, !locked);
+    const customerX = sample?.customerX ?? (run.status === 'won' || run.status === 'failed' ? -72 : 309);
+    const customer = this.renderCustomerWindow(customerX);
+    this.interactionMovingIngredients = {}; this.interactionCupContents = {};
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderToppingCategoryLabel();
-    this.showCupComposition(this.root!, this.sourcePos(652.5, 416), 1, run.orders[Math.min(run.orderIndex, run.orders.length - 1)], true);
-    this.showCupComposition(this.root!, this.sourcePos(509.5, 1209.5), 1, run.orders[Math.min(run.orderIndex, run.orders.length - 1)], false, run.selected);
-    const order = run.orders[Math.min(run.orderIndex, run.orders.length - 1)];
+    const bubble = this.renderTargetCup(order, sample?.bubbleVisible ?? (run.status === 'playing'));
+    if (!locked) this.renderPreparationSlots();
+    if (this.presentation && this.presentation.result !== 'expired' && this.presentation.result !== 'exited') {
+      this.renderInteractionWorkCup(this.presentation.snapshot);
+    }
+    this.presentationVisual = {
+      customer, bubble, movingIngredients: this.interactionMovingIngredients,
+      cupContents: this.interactionCupContents, facePose: sample?.face ?? 'neutral',
+      faceProgress: sample?.faceProgress ?? 1, phase: sample?.phase ?? null,
+    };
     this.imageButton(this.root!, 'BTN_UNDO_BASE', '撤销一项', [518, 1490], 'BTN_UNDO_ICON', [464.5, 1480],
-      () => this.undo(), DIMENSIONS.some(dim => !!run.selected[dim]));
+      () => this.undo(), !locked && DIMENSIONS.some(dim => !!run.selected[dim]));
     this.imageButton(this.root!, 'BTN_RECIPE_BASE', this.recipeOpen ? '收起配方' : '查看配方', [191, 1490], 'BTN_RECIPE_ICON', [112, 1483],
       () => { this.recipeOpen = !this.recipeOpen; this.dirty = true; });
     const complete = DIMENSIONS.every(dim => !!run.selected[dim]);
     this.imageButton(this.root!, 'BTN_SERVE_BASE', '确认', [813, 1490], 'BTN_SERVE_ICON', [718, 1482],
-      () => this.submit(), complete && run.status === 'playing');
+      () => this.submit(), !locked && complete && run.status === 'playing');
     this.renderRecipePanel(order);
     this.renderHelpAndExit(order);
     if (this.exitConfirm) this.renderExitConfirm();
-    if (run.status === 'won' || run.status === 'failed' || run.status === 'exited') this.renderResult();
+    if (!locked && (run.status === 'won' || run.status === 'failed' || run.status === 'exited')) this.renderResult();
     if (this.status) this.sourceText(this.status, 512, 1380, 28, DEEP_BROWN, 720, 46);
   }
-  private renderSourceHeader(run: Run, seconds: number | null): void {
-    this.sourceText(`当前订单 ${Math.min(run.orderIndex + 1, run.orders.length)}/${run.orders.length}`,
+  private renderSourceHeader(run: Run, seconds: number | null, shownOrderIndex = run.orderIndex): void {
+    this.sourceText(`当前订单 ${Math.min(shownOrderIndex + 1, run.orders.length)}/${run.orders.length}`,
       233, 96, 34, ROOF_TEXT, 214, 50);
     this.timerLabel = this.sourceText(this.clockText(seconds), 881, 96, 34,
       seconds !== null && seconds < 20 ? GOLD : ROOF_TEXT, 124, 50);
+  }
+  private renderCustomerWindow(left: number): Node {
+    const sourceScale = 720 / 1024;
+    const centerX = 505; const centerY = 530.5;
+    const window = new Node('CustomerWindow'); this.root!.addChild(window);
+    window.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
+    window.addComponent(UITransform).setContentSize(490 * sourceScale, 505 * sourceScale);
+    const mask = window.addComponent(Mask); mask.type = Mask.Type.GRAPHICS_RECT;
+    const customer = this.showAsset(window, 'CUSTOMER_GHOST', { x: 0, y: 0 }, [332, 301]);
+    customer.setPosition(((left + 166) - centerX) * sourceScale, (centerY - 634.5) * sourceScale);
+    return customer;
+  }
+  private renderTargetCup(recipe: Run['orders'][number], bubbleVisible: boolean): Node {
+    const group = new Node('OrderPresentation'); this.root!.addChild(group); group.active = bubbleVisible;
+    this.showAsset(group, 'ORDER_BUBBLE_EMPTY', this.sourcePos(654.5, 405.5), [375, 235]);
+    const centerX = 653; const centerY = 416; const unit = 720 / 1024;
+    const cup = new Node('OrderCupGroup'); group.addChild(cup); cup.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
+    cup.setScale(.78, .78, 1);
+    const relative = (id: string, x: number, y: number, size: [number, number]): Node => {
+      const node = this.showAsset(cup, id, { x: (x - centerX) * unit, y: (centerY - y) * unit }, size);
+      return node;
+    };
+    relative('ORDER_CUP_BACK', 653, 421, [150, 170]);
+    DIMENSIONS.forEach(dimension => {
+      const item = this.config!.ingredients.find(row => row.ingredient_id === idFor(recipe, dimension));
+      if (item) relative(cupContentAsset(item), centerX, centerY, [183, 233]);
+    });
+    relative('ORDER_CUP_FRONT', 652.5, 416, [151, 180]);
+    relative('ORDER_STRAW', 698.5, 344, [31, 86]);
+    return group;
+  }
+  private renderPreparationSlots(): void {
+    if (!this.run || !this.config) return;
+    DIMENSIONS.forEach(dimension => {
+      const id = this.run!.selected[dimension]; if (!id) return;
+      const item = this.config!.ingredients.find(row => row.ingredient_id === id); if (!item) return;
+      const asset = ingredientAsset(item); const [w, h] = ASSET_SIZES[asset];
+      const contain = Math.min(90 / w, 84 / h, 1);
+      const slot = this.showAsset(this.root!, asset, this.sourcePos(...SLOT_CENTERS[dimension]), [w * contain, h * contain]);
+      slot.name = `Slot_${dimension}_${id}`;
+    });
+  }
+  private relativeAsset(parent: Node, id: string, x: number, y: number, size: [number, number]): Node {
+    const [w, h] = size; const node = new Node(`Interaction_${id}`); parent.addChild(node);
+    node.setPosition(x * 720 / 1024, -y * 720 / 1024);
+    node.addComponent(UITransform).setContentSize(w * 720 / 1024, h * 720 / 1024);
+    const sprite = node.addComponent(Sprite); sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    if (id.startsWith('CUP_')) sprite.trim = false;
+    this.loadFrame(id, frame => { if (node.isValid) sprite.spriteFrame = frame; });
+    node.addComponent(UIOpacity).opacity = 0;
+    return node;
+  }
+  private renderInteractionWorkCup(snapshot: CupSnapshot): void {
+    const centerX = 509.5; const centerY = 1209.5;
+    const cup = new Node('InteractionWorkCup'); this.root!.addChild(cup);
+    cup.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
+    const relative = (id: string, x: number, y: number, size: [number, number]): Node =>
+      this.relativeAsset(cup, id, x - centerX, y - centerY, size);
+    const back = relative('WORK_CUP_BACK', 510, 1217, [180, 218]); this.setOpacity(back, 255);
+    DIMENSIONS.forEach(dimension => {
+      const id = snapshot.ingredients[dimension]; if (!id) return;
+      const item = this.config!.ingredients.find(row => row.ingredient_id === id); if (!item) return;
+      const asset = ingredientAsset(item); const [w, h] = ASSET_SIZES[asset];
+      const contain = Math.min(90 / w, 84 / h, 1);
+      this.interactionMovingIngredients[dimension] = relative(asset, SLOT_CENTERS[dimension][0], SLOT_CENTERS[dimension][1], [w * contain, h * contain]);
+      this.interactionCupContents[dimension] = relative(cupContentAsset(item), centerX, centerY, [183, 233]);
+    });
+    const front = relative('WORK_CUP_FRONT', 509.5, 1209, [189, 238]); this.setOpacity(front, 255);
+  }
+  private applyPresentationSample(sample: PresentationSample, nowMs: number): void {
+    const visual = this.presentationVisual;
+    if (!visual || !this.presentation) return;
+    visual.facePose = sample.face; visual.faceProgress = sample.faceProgress; visual.phase = sample.phase;
+    // Actual face resources are intentionally bound only after their Gate2 approval.
+    if (visual.bubble?.isValid) visual.bubble.active = sample.bubbleVisible;
+    const customer = visual.customer;
+    if (customer?.isValid && customer.parent?.isValid) {
+      const sourceScale = 720 / 1024; const windowCenterX = 505; const windowCenterY = 530.5;
+      customer.setPosition(((sample.customerX + 166) - windowCenterX) * sourceScale,
+        (windowCenterY - 634.5) * sourceScale);
+    }
+    const elapsed = Math.max(0, nowMs - this.presentation.submittedAtMs);
+    if (sample.phase === 'synthesis') {
+      for (const dimension of DIMENSIONS) {
+        const moving = visual.movingIngredients[dimension]; const content = visual.cupContents[dimension];
+        const [start, end] = MOVE_WINDOWS[dimension]; const p = clampRange((elapsed - start) / (end - start));
+        if (moving?.isValid) {
+          moving.active = elapsed < end;
+          const slot = SLOT_CENTERS[dimension];
+          const x0 = (slot[0] - 509.5) * 720 / 1024; const y0 = (1209.5 - slot[1]) * 720 / 1024;
+          moving.setPosition(x0 * (1 - p), y0 * (1 - p));
+          this.setOpacity(moving, Math.round(255 * (1 - p)));
+        }
+        if (content?.isValid) {
+          content.active = elapsed >= start;
+          this.setOpacity(content, Math.round(255 * p));
+        }
+      }
+      return;
+    }
+    const keepCup = this.presentation.result === 'correct' || this.presentation.result === 'won' || this.presentation.result === 'wrong';
+    for (const dimension of DIMENSIONS) {
+      const moving = visual.movingIngredients[dimension]; const content = visual.cupContents[dimension];
+      if (moving?.isValid) moving.active = false;
+      if (content?.isValid) { content.active = keepCup; this.setOpacity(content, 255); }
+    }
+  }
+  private setOpacity(node: Node, opacity: number): void {
+    const component = node.getComponent(UIOpacity) ?? node.addComponent(UIOpacity);
+    component.opacity = Math.max(0, Math.min(255, opacity));
+  }
+  private snapshotRun(run: Run): CupSnapshot {
+    const order = run.orders[Math.min(run.orderIndex, run.orders.length - 1)];
+    return freezeCupSnapshot(run.orderIndex, order?.recipe_id ?? '', run.selected);
+  }
+  private startPresentation(result: PresentationResult, snapshot: CupSnapshot, nowMs: number, customerStartX = 309): void {
+    this.presentationEpoch += 1;
+    this.presentation = createPresentationTransaction(this.presentationEpoch, result, nowMs, snapshot, customerStartX);
+    this.actions.clear(); this.modalActions.clear(); this.down = null;
+  }
+  private cancelPresentation(): void {
+    this.presentationEpoch += 1; this.presentation = null; this.presentationVisual = null;
+    this.interactionMovingIngredients = {}; this.interactionCupContents = {};
+  }
+  private finishPresentation(): void {
+    const transaction = this.presentation; if (!transaction) return;
+    this.cancelPresentation();
+    if (transaction.result === 'exited') {
+      this.run = null; this.exitConfirm = false; this.recipeOpen = false; this.status = ''; this.dirty = true; return;
+    }
+    this.dirty = true;
   }
   private renderCategoryLabels(drawTopping: boolean): void {
     this.sourceText('茶', 137, 366, 36, DEEP_BROWN, 56, 54);
@@ -568,29 +766,35 @@ export class U05MilkTeaLab extends Component {
     this.progress = reconcileUnlocks(this.config, this.progress, this.growthInputs(), false); this.writeProgress();
   }
   private beginRun(tier: { tier_id: string; stages: Stage[] }): void {
+    if (this.run) return;
+    this.cancelPresentation();
     const progress = this.readSessionProgress();
     if (!this.validation.enabled && !isUnlocked(this.config!, progress, tier.tier_id, this.growthInputs(), false)) {
       this.status = '此难度尚未解锁'; this.statusColor = GOLD; this.dirty = true; return;
     }
     const stage = chooseStage(this.config!, tier.tier_id, progress.xp, this.validation.enabled ? this.validation.stage : null);
-    this.run = makeRun(this.config!, stage, this.now()); this.status = ''; this.statusColor = TEXT;
+    const startedAtMs = this.now();
+    this.run = makeRun(this.config!, stage, startedAtMs); this.startPresentation('arrival', this.snapshotRun(this.run), startedAtMs);
+    this.status = ''; this.statusColor = TEXT;
     this.recipeOpen = tier.tier_id === 'EASY'; this.exitConfirm = false; this.lastClockSecond = -1; this.dirty = true;
   }
   private choose(dimension: Dimension, id: string): void {
-    if (!this.run) return;
+    if (!this.run || shouldLockInput(this.presentation)) return;
     this.run = selectIngredient(this.run, dimension, id, this.now());
     if (this.run.status === 'failed') { this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD; }
     this.dirty = true;
   }
   private undo(): void {
-    if (!this.run) return;
+    if (!this.run || shouldLockInput(this.presentation)) return;
     const dimension = [...this.run.selectionOrder].reverse().find(key => !!this.run?.selected[key]);
     if (dimension) this.run = undoIngredient(this.run, dimension, this.now());
     this.dirty = true;
   }
   private submit(): void {
-    if (!this.run) return;
-    const result = submitCup(this.run, this.now()); this.run = result.run;
+    if (!this.run || shouldLockInput(this.presentation) || this.run.status !== 'playing') return;
+    const nowMs = this.now();
+    const snapshot = this.snapshotRun(this.run);
+    const result = submitCup(this.run, nowMs); this.run = result.run;
     this.statusColor = result.result === 'wrong' || result.result === 'expired' ? GOLD : TEXT;
     this.status = result.result === 'incomplete' ? '请先选齐三类原料' : result.result === 'wrong' ? '配方不对，请重做当前这杯' :
       result.result === 'expired' ? '时间到，本局失败' : result.result === 'won' ? '正确!本局完成' : '正确，下一杯!';
@@ -601,16 +805,26 @@ export class U05MilkTeaLab extends Component {
       if (this.validation.enabled) this.sessionProgress = progress; else { this.progress = progress; this.writeProgress(); }
       this.recipeOpen = false; this.exitConfirm = false;
     }
+    if (result.result === 'correct' || result.result === 'wrong' || result.result === 'won' || result.result === 'expired') {
+      const presentationResult: PresentationResult = result.result === 'correct' ? 'correct' : result.result === 'won' ? 'won' :
+        result.result === 'wrong' ? 'wrong' : 'expired';
+      this.startPresentation(presentationResult, snapshot, nowMs);
+    }
     this.dirty = true;
   }
   private confirmExit(): void {
-    if (!this.run) return;
+    if (!this.run || this.presentation?.result === 'exited' || this.run.status === 'exited') return;
+    const snapshot = this.presentation?.snapshot ?? this.snapshotRun(this.run);
+    const nowMs = this.now();
+    const customerStartX = this.presentation ? samplePresentation(this.presentation, nowMs, this.presentationSample).customerX : 309;
     this.recipeOpen = false; this.exitConfirm = false; this.run = { ...this.run, status: 'exited' };
-    this.status = '离开后本局不计熟练度'; this.statusColor = GOLD; this.dirty = true;
+    this.status = '离开后本局不计熟练度'; this.statusColor = GOLD;
+    this.startPresentation('exited', snapshot, nowMs, customerStartX); this.dirty = true;
   }
   private retry(): void {
-    const tierId = TIER_IDS[this.tierIndex]; this.run = null;
+    if (this.presentation || this.run?.status === 'playing') return;
+    const tierId = TIER_IDS[this.tierIndex]; this.cancelPresentation(); this.run = null;
     this.beginRun({ tier_id: tierId, stages: stagesFor(this.config!, tierId) });
   }
-  private leave(): void { this.run = null; this.recipeOpen = false; this.exitConfirm = false; this.toggleValidation = false; this.status = ''; this.actions.clear(); this.modalActions.clear(); this.onExit?.(); }
+  private leave(): void { this.cancelPresentation(); this.run = null; this.recipeOpen = false; this.exitConfirm = false; this.toggleValidation = false; this.status = ''; this.actions.clear(); this.modalActions.clear(); this.onExit?.(); }
 }

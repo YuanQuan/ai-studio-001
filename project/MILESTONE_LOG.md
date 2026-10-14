@@ -1355,4 +1355,10 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `FRONTEND_V01_AND_PARENT_REJECTED`（2026-10-14 12:21:28 +08:00登记）：用户“需要修改这版试玩效果”，范围“选料、合成或操作反馈”，具体问题待答。Client/父v0.1准确审批USER_REVIEW→REJECTED，两Task REVISION；原送审快照与`FRONTEND_FINAL_HASHES.json`15SHA仍匹配并留历史。Art v0.2等资源审批继续有效。
 - `INTERACTION_PLANS_USER_REVIEW`（2026-10-14 12:41:44 +08:00）：新UI五Required、Art五Required、Tech三Required和Master方向/中文审阅包/Tech Review三文件共16SHA核齐；`APPROVAL_HASHES.json` SHA b33e7236…d498f。UI与Art计划REVIEW→USER_REVIEW；Tech AUTO支持DONE；Producer FLOW三Required REVIEW。原Client与父v0.1 REVISION继续，待方案用户决定。无新正式图/代码/运行通过。
 - `INTERACTION_FLOW_AUTO_DONE`（12:44:18 +08:00）：Master FLOW Review APPROVED，Producer三Required AUTO支持Task DONE；不改变UI/Art方案USER_REVIEW或旧实现REVISION。
+- `INTERACTION_PLANS_USER_APPROVED`（2026-10-14 13:41:05 +08:00 Producer登记）：用户“批准方案，开始制作”；原16文件SHA全匹配，UI/Art两方案v0.1 USER_APPROVED/Task DONE，旧USER_REVIEW快照留档；`deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/APPROVED_PLAN_HASHES.json`锁当前审批与预算。
+- `INTERACTION_PRODUCTION_FLOW_STARTED`：Producer三Required首产、Task READY→IN_PROGRESS；Art/Tech新生产线目前READY且无首份Required，不虚记开工。首图同批预签、具体Gate2与新版Client运行尚待。
+- `REP_01_ART_TECH_PRESIGNED_AND_STARTED`（13:52:58 +08:00）：Art Brief/预签与Tech预签实际文件同batch `REP-01`、Art Brief SHA一致；两任务READY→IN_PROGRESS，仅首图代表范围，非FULL/Gate2。Client Feature Brief首产，Task READY→IN_PROGRESS，独立代码可继续，新资源接入锁。
+- `REP01_REP02_MANUAL01_VISUAL_REVISE_BLOCKED`（15:35:44 +08:00 Producer登记）：三候选净底实图均REVISE，MANUAL01框外RGB零差仍有淡影；Art/AssetTech/Client BLOCKED，静态CodeTech AUTO DONE。无FULL/正式PSD/Gate2/新Web；imagegen 0次，活动累计未知。
+- `PATCH03_METHOD_USER_REVIEW`：Master方法任务三待审文件`REVIEW_PACKET.md`、Art `REGION_REUSE_PROPOSAL.md`、Tech `PATCH03_FEASIBILITY.md`逐SHA锁`APPROVAL_HASHES.json` SHA49ef1956…d53f3，Task USER_REVIEW。额外唯一轮次、三背景片区donor与65/10重分配待用户决定，第四候选未执行。
+- `INTERACTION_PRODUCTION_FLOW_AUTO_DONE`：Master FLOW Review APPROVED、Producer生产FLOW Task DONE；Art/AssetTech/Client BLOCKED及方法USER_REVIEW不变，Gate2/新运行未发生。
 <!-- U05-B-LANDING-20261014 END -->

@@ -1,0 +1,47 @@
+{
+  "id": "U05-B-INTERACTION-ASSETS-20261014",
+  "title": "U05台面净底与顾客表情动态资源制作",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "依据用户批准的UI与Art计划，制作局部净底、顾客躯干和四脸资源与真实动画回放，保持B主体效果，交具体资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "tasks/U05-B-INTERACTION-SPEC-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-TECH-20261014/v0.1/TECH_REVIEW.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_BRIEF.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/reconstructed.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/component_sheet.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/animation_preview.gif",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "Gate1与同批Art/Tech预签实存，预算和生成调用不超获批上限",
+    "净底清残影、脸部真实动画和完整进出，保护区零差异证据",
+    "PSD、真实PNG、动画源回放及同尺度重组身份链齐全，未接入如实未测"
+  ],
+  "dependencies": [
+    "U05-B-CUSTOMER-ANIMATION-PLAN-20261014",
+    "U05-B-INTERACTION-SPEC-20261014"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "美术图片制作使用gpt-6-sol/high；不子派、不修改客户端或旧冻结版本，不Git。",
+    "先只读测源与首图文字预签；Root确认Gate1及同批Tech预签后才出首样，代表通过后FULL复签再扩。",
+    "活动上限75分钟，代表45分钟、扩批30分钟；局部imagegen累计最多3次含失败重试，同问题2轮；优先获批确定性局部编辑。",
+    "自产切图直接交用户Gate2，不新增效果复审或预览门禁。",
+    "2026-10-14 13:52:58 +08:00 Producer核真实首产：ART_BRIEF/ART_PRESIGN首份Required实存，同批REP-01 Art签可首图；正式代表新图尚未核。",
+    "REP-01/REP-02/MANUAL-01净底均REVISE，未形成Gate2；PATCH-03方法USER_REVIEW待用户决定。当前任务因资源/方法真实依赖BLOCKED，不空挂IN_PROGRESS；旧8876未更新。"
+  ]
+}

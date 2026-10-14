@@ -1,0 +1,12 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "概要将PresentationTransaction与业务Run分离，确认前冻结订单/三类选择、同一now只submitCup一次并用返回结果补齐不可变快照；epoch阻止重复确认、退出/重试/销毁后的迟到回调。原deadline、奖励、存档和三维配置不变，适合进入U05独立代码实现。"},
+    {"severity": "INFO", "message": "固定表现节点与现有render重建边界分开，活动帧只写既有节点变换/透明度、阶段边界刷新文字；Mask固定父节点只裁身体与四脸，气泡/目标杯在外，源[260,278,490,505]与完整-381位移、订单杯整组0.78符合已批UI。Creator实际锚点、遮挡与性能仍须Gate2后构建运行核。"},
+    {"severity": "INFO", "message": "非末杯动画中到时取消下一客队列，末杯截止前已判won不因表现延迟反判；浏览器后台节流按单调elapsed跳至当前相位而不补放旧队列。退出确认期间计时继续，超时优先，退出不发经验。"},
+    {"severity": "INFO", "message": "Gate2前仅实现本地表现接口与静态/状态检查，不导入新脸或净底、不构建宣称新版资源试玩、不覆盖旧8876。具体资源批准及Root后续授权后再做Creator隔离构建和真实Web验证。"}
+  ],
+  "next_action": "Client可按本概要在apps/client/assets/labs/u05内实现独立代码与状态证据；固定节点树保留当前业务模块为唯一结果源，资源Gate2和后续构建/运行另按任务门禁推进。"
+}

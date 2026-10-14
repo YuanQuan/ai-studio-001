@@ -1,0 +1,181 @@
+{
+  "static": {
+    "source_sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+    "output_sha256": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9",
+    "canvas": [
+      1024,
+      1536
+    ],
+    "mask_pixels": 20662,
+    "outside_mask_changed_pixels": 0,
+    "regions": {
+      "ghost_outline_and_bubble_tip": {
+        "bbox_xyxy": [
+          305,
+          489,
+          711,
+          783
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 15644
+      },
+      "cup_rim": {
+        "bbox_xyxy": [
+          418,
+          1090,
+          603,
+          1130
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 3649
+      },
+      "cup_glass": {
+        "bbox_xyxy": [
+          440,
+          1220,
+          576,
+          1328
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 1369
+      }
+    },
+    "method": "RGB8 raw sRGB pixel comparison; donor copied only where difference exceeds threshold inside approved ROI, dilated two Manhattan pixels"
+  },
+  "face": {
+    "original_sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "body_sha256": "8e6df8b02697d51fda76fde3c1c083ffc485dd1f9ba2602b25d2845dd2d9d81a",
+    "neutral_sha256": "126d2748eafc49dd737afdf99eba4e9d3514d7370bf1755b1fe24181cf36b2f7",
+    "face_mask_pixels": 4648,
+    "neutral_reconstruction_different_rgba_pixels": 0,
+    "outside_mask_different_rgba_pixels": 0,
+    "canvas": [
+      332,
+      301
+    ],
+    "top_left_source": [
+      309,
+      484
+    ],
+    "pivot_source": [
+      475,
+      785
+    ],
+    "anchor_normalized": [
+      0.5,
+      0
+    ],
+    "planned_edit_limit_local": [
+      154,
+      89,
+      170,
+      91
+    ]
+  },
+  "animation": {
+    "gif_sha256": "c59abd0edd2996d2d1e940b5063f8e5813d715a20187087f6167e7936662c903",
+    "gif_size": [
+      360,
+      640
+    ],
+    "frame_count": 13,
+    "duration_ms": 1150,
+    "timeline": [
+      {
+        "time_ms": 0,
+        "face": "neutral",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 40
+      },
+      {
+        "time_ms": 40,
+        "face": "squash",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 40
+      },
+      {
+        "time_ms": 80,
+        "face": "blink",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 70
+      },
+      {
+        "time_ms": 150,
+        "face": "blink",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 225,
+        "face": "expand_mid",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 300,
+        "face": "happy",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 100
+      },
+      {
+        "time_ms": 400,
+        "face": "happy",
+        "customer_left": 309,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 475,
+        "face": "happy",
+        "customer_left": 298,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 550,
+        "face": "happy",
+        "customer_left": 267,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 625,
+        "face": "happy",
+        "customer_left": 214,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 700,
+        "face": "happy",
+        "customer_left": 140,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 775,
+        "face": "happy",
+        "customer_left": 44,
+        "bubble_visible": false,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 850,
+        "face": "happy",
+        "customer_left": -72,
+        "bubble_visible": false,
+        "duration_ms": 300
+      }
+    ]
+  }
+}

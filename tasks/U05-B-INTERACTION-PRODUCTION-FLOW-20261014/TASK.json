@@ -1,0 +1,33 @@
+{
+  "id": "U05-B-INTERACTION-PRODUCTION-FLOW-20261014",
+  "title": "U05交互资源生产与审核流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记用户批准准确UI/Art方案，追踪同批预签和实际资源生产，控制具体资源Gate2及后续接入，不空挂任务。",
+  "inputs": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.1/APPROVAL_HASHES.json",
+    "tasks/U05-B-INTERACTION-ASSETS-20261014/TASK.json",
+    "tasks/U05-B-INTERACTION-ASSET-TECH-20261014/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.1/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "准确方案批准及实际生产阶段可核",
+    "预算和门禁连续推进、具体资源未批不接入",
+    "五共享文件仅U05块维护，真实节点和简短复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "授权新Task及其交付、批准UI/Art计划Tasks与新生产Tasks、五共享文件U05-B-LANDING-20261014块；必要U05资源登记独立块，不改他线程。",
+    "无QA Agent；Owner留示例验证证据；不Git，不子派，不虚报新运行。",
+    "Producer FLOW/APPROVED_PLAN_HASHES/DELIVERABLE三Required首产，真实IN_PROGRESS；Art/Tech待首件才认开工。",
+    "三Required与失败/阻塞/方法USER_REVIEW事实更新，Producer提交REVIEW待Master AUTO接受；资源Gate2/新运行未通过。",
+    "Master基于真实交付及MASTER_FLOW_REVIEW.json接受AUTO当前周期流程任务DONE；不代表资源/新试玩完成。"
+  ]
+}

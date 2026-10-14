@@ -1,0 +1,58 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "implementation_version": "v0.1 independent interaction code",
+  "build_status": "NOT_BUILT_BLOCKED_GATE2_AND_FOLLOWUP_AUTHORIZATION",
+  "engine": "Cocos Creator 3.8.8",
+  "new_creator_build": false,
+  "new_http_service": false,
+  "runtime_url": null,
+  "runtime_validation": "NOT_TESTED",
+  "blocker": "Art interaction assets (face states/auxiliary squash and STATIC_BARE local clean base) have not passed Gate2; Master explicitly instructed not to import candidate PNGs or overwrite the existing 8876 service before further authorization.",
+  "checked_at_utc": "2026-10-14T06:11:17Z",
+  "typescript_check": {
+    "status": "PASS",
+    "version": "5.8.2",
+    "command": "tsc --project apps/client/tsconfig.json --noEmit --skipLibCheck --target ES2017",
+    "diagnostics": 0
+  },
+  "state_check": {
+    "status": "PASS",
+    "test_source": "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/STATE_CHECK_TEST.cjs",
+    "covered": [
+      "immutable pre-submit snapshot",
+      "450ms initial customer arrival",
+      "single-cup synthesis and correct/wrong phases",
+      "80/150/300ms face state sampling",
+      "complete 381 source-pixel window travel",
+      "timeout interruption without position snap",
+      "timeout while offscreen does not recall guest",
+      "terminal win keeps order bubble hidden",
+      "neutral exit without position snap",
+      "presentation input lock"
+    ],
+    "execution": "Creator-bundled TypeScript 5.8.2 compiled the pure presentation state helper to /private/tmp; Node assertions passed. This is not a Cocos build or browser run."
+  },
+  "source_sha256": {
+    "apps/client/assets/labs/u05/milk_tea_lab.ts": "9ba2027ef946cbef8a3c19589f29c3d50758e3a0ddc7a6931697f432503f8646",
+    "apps/client/assets/labs/u05/milk_tea_state.ts": "bb981d662b8d334556b2418e7e837e787773742ae60aa2a2e31a539f2f43aea6",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts": "f5b8d0d10335dbf089e06e3486fbf65ff4e5307b91a2892a038d8308819900f5",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts.meta": "UUID 0ef1a0a5-c289-4225-8298-21a72d55ad45"
+  },
+  "business_and_scope_checks": {
+    "milk_tea_state_sha_unchanged_from_prior_verified_u05": true,
+    "submitCup_call_sites_in_lab": 1,
+    "setExitHandler_and_onExit_compatibility": true,
+    "unapproved_face_or_clean_base_resources_imported": false,
+    "new_art_resource_uuids": null,
+    "legacy_8876_service_modified": false
+  },
+  "pending_asset_binding_constraint": "Gate2 FACE_* PNG full 332x301 canvas must bind with Sprite.trim=false; new face assets are not currently imported or referenced.",
+  "required_after_gate2": [
+    "verify exact approved asset paths and SHA against the final Gate2 manifest before import",
+    "Creator 3.8.8 import/serialization and isolated web-mobile build with a dedicated output path",
+    "new local HTTP service bound to loopback, tied to that output identity",
+    "in-app browser checks for mask/occlusion, four face states, initial entry, table-to-cup synthesis, wrong/correct/timeout/exit and small-screen layout",
+    "record warnings/errors and performance evidence; keep unrun targets NOT_TESTED"
+  ],
+  "prior_u05_build_identity": "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/BUILD_IDENTITY.json (historical v4; not the build for this task)"
+}

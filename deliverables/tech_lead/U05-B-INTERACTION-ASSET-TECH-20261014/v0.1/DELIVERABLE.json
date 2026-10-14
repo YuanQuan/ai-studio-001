@@ -1,0 +1,24 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "owner": "tech_lead",
+  "summary": "三轮代表净底均未过实图自查；阶段元数据可核，完整资产技术支持因无FULL成品而BLOCKED。PATCH-03只读可行性意见已给出，未预签。",
+  "artifacts": [
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_REP02.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_MANUAL01.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/PATCH03_FEASIBILITY.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "首图及FULL预签同批与Art可核", "result": "NOT_TESTED", "evidence": "REP-01/REP-02/MANUAL-01首图方法预签均实存；代表净底三次REVISE/STOP，未产生FULL预签或完整成品。"},
+    {"criterion": "画布支点遮罩alpha和时序预算准确，不伪称运行实测", "result": "PASS", "evidence": "TECH_METADATA_CHECK记录实文件SHA/尺寸、1600 Mask内外像素核验、角色支点与GIF预览身份；活动时间未精确测得，Creator/Web均NOT_TESTED。"},
+    {"criterion": "自产切图直送用户，无新效果复审门禁，接入等Gate2", "result": "NOT_TESTED", "evidence": "正式切片/PSD/重组未产、具体版本未达Gate2；PATCH-03只读评估未预签，Client不可正式导入候选。"}
+  ],
+  "risks": [
+    "旧幽灵与杯轮廓仍可见，不能以保护区零差异代替净底验收。",
+    "PATCH-03整体片区 donor 复用可能形成矩形接缝或框外旧影，并改变片区内自然材质；预算重分配和额外轮次待用户决定。"
+  ],
+  "status": "BLOCKED"
+}

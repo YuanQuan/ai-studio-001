@@ -1,0 +1,185 @@
+{
+  "static": {
+    "source_sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+    "output_sha256": "3031b0d70188e38f461b46d1eb38246a94214b832bad5ede4cd7603882cb9bc5",
+    "canvas": [
+      1024,
+      1536
+    ],
+    "mask_pixels": 18372,
+    "outside_mask_changed_pixels": 0,
+    "regions": {
+      "ghost_outline": {
+        "bbox_xyxy": [
+          305,
+          491,
+          645,
+          783
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 12182
+      },
+      "bubble_tip": {
+        "bbox_xyxy": [
+          582,
+          491,
+          706,
+          523
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 3534
+      },
+      "cup_rim": {
+        "bbox_xyxy": [
+          419,
+          1093,
+          603,
+          1125
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 3226
+      },
+      "cup_glass": {
+        "bbox_xyxy": [
+          440,
+          1220,
+          575,
+          1326
+        ],
+        "candidate_difference_threshold": 12,
+        "dilation_px": 2,
+        "changed_pixels": 1207
+      }
+    },
+    "method": "RGB8 raw sRGB pixel comparison; donor copied only where difference exceeds threshold inside approved ROI, dilated two Manhattan pixels"
+  },
+  "face": {
+    "original_sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "body_sha256": "8e6df8b02697d51fda76fde3c1c083ffc485dd1f9ba2602b25d2845dd2d9d81a",
+    "neutral_sha256": "126d2748eafc49dd737afdf99eba4e9d3514d7370bf1755b1fe24181cf36b2f7",
+    "face_mask_pixels": 4648,
+    "neutral_reconstruction_different_rgba_pixels": 0,
+    "outside_mask_different_rgba_pixels": 0,
+    "canvas": [
+      332,
+      301
+    ],
+    "top_left_source": [
+      309,
+      484
+    ],
+    "pivot_source": [
+      475,
+      785
+    ],
+    "anchor_normalized": [
+      0.5,
+      0
+    ],
+    "planned_edit_limit_local": [
+      154,
+      89,
+      170,
+      91
+    ]
+  },
+  "animation": {
+    "gif_sha256": "5938fdc798672218323971e4c45954043592564d0831405701ad5c131a297cd8",
+    "gif_size": [
+      360,
+      640
+    ],
+    "frame_count": 12,
+    "duration_ms": 1050,
+    "timeline": [
+      {
+        "time_ms": 0,
+        "face": "neutral",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 80
+      },
+      {
+        "time_ms": 80,
+        "face": "squash",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 70
+      },
+      {
+        "time_ms": 150,
+        "face": "blink",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 225,
+        "face": "happy",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 75
+      },
+      {
+        "time_ms": 300,
+        "face": "happy",
+        "customer_left": 309,
+        "bubble_visible": true,
+        "duration_ms": 90
+      },
+      {
+        "time_ms": 390,
+        "face": "happy",
+        "customer_left": 294,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 450,
+        "face": "happy",
+        "customer_left": 273,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 510,
+        "face": "happy",
+        "customer_left": 237,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 570,
+        "face": "happy",
+        "customer_left": 187,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 630,
+        "face": "happy",
+        "customer_left": 120,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 690,
+        "face": "happy",
+        "customer_left": 34,
+        "bubble_visible": false,
+        "duration_ms": 60
+      },
+      {
+        "time_ms": 750,
+        "face": "happy",
+        "customer_left": -72,
+        "bubble_visible": false,
+        "duration_ms": 300
+      }
+    ]
+  }
+}

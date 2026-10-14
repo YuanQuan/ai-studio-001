@@ -1,0 +1,39 @@
+{
+  "id": "U05-B-INTERACTION-CLIENT-20261014",
+  "title": "U05台面选择与确认合成表现实现",
+  "type": "feature",
+  "owner": "client",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "实现获批UI交互与动画事务代码，复用业务状态；具体新资源Gate2前仅独立代码准备，不正式导入新资源或宣称完整新试玩通过。",
+  "inputs": [
+    "tasks/U05-B-INTERACTION-SPEC-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/ui/U05-B-INTERACTION-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/art/U05-B-CUSTOMER-ANIMATION-PLAN-20261014/v0.1/ASSET_REQUIREMENTS.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-TECH-20261014/v0.1/TECH_REVIEW.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/STATE_CHECK.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/evidence/BUILD_IDENTITY.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "三槽选择与撤销、确认快照合成事务、目标缩放和完整顾客移动按获批UI实现",
+    "判定时点/计时/奖励不变，重复确认/超时/退出重试销毁安全",
+    "只正式接入用户Gate2批准资源，Creator和实际浏览器新运行证据真实，未测不伪报"
+  ],
+  "dependencies": [
+    "U05-B-INTERACTION-SPEC-20261014"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "代码任务gpt-6-luna/low；只修改apps/client/assets/labs/u05及本Task deliverables，不改Gallery、package、配置业务或旧冻结文档，不Git不子派。",
+    "先Feature Brief与Tech沟通获可行意见再编码；可写资源接口与独立表现状态，不正式拷贝未批新PNG/PSD至客户端。",
+    "新资源Gate2待审时，完成独立代码和状态检查后记录真实依赖；不得部署覆盖现8876旧试玩或声称新版资源运行通过。",
+    "资源获批后由Root继续授权正式接入和Creator隔离构建，保持旧实例setExitHandler/onExit兼容。",
+    "2026-10-14 13:52:58 +08:00 Producer核真实首产：FEATURE_BRIEF首份Required实存，客户端先做独立交互代码；新资源Gate2未批，禁止正式导入/覆盖旧8876。",
+    "REP-01/REP-02/MANUAL-01净底均REVISE，未形成Gate2；PATCH-03方法USER_REVIEW待用户决定。当前任务因资源/方法真实依赖BLOCKED，不空挂IN_PROGRESS；旧8876未更新。"
+  ]
+}

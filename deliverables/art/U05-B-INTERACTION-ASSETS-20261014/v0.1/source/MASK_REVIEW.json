@@ -1,0 +1,127 @@
+{
+  "batch_id": "MANUAL-01",
+  "svg_sha256": "cd4906160946d865cb3c4deff92b7077e958b4d4d7304cbd47265e1dea87788c",
+  "rep02_sha256": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9",
+  "donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af",
+  "output_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+  "mask_sha256": "bd5148f8369939fde38260461d844ec1f91ff5fad40c68ecfab8edf4f2d5e1b4",
+  "mask_pixels": 1600,
+  "outside_mask_rgb_difference_pixels": 0,
+  "objects": [
+    {
+      "path_id": "ghost_left_head",
+      "object": "old_ghost_outline",
+      "stroke_source_px": 12.0,
+      "confirmed_candidate_pixels": 456,
+      "diagnostic_bbox_xyxy": [
+        305,
+        489,
+        711,
+        783
+      ]
+    },
+    {
+      "path_id": "ghost_left_tail",
+      "object": "old_ghost_outline",
+      "stroke_source_px": 12.0,
+      "confirmed_candidate_pixels": 330,
+      "diagnostic_bbox_xyxy": [
+        305,
+        489,
+        711,
+        783
+      ]
+    },
+    {
+      "path_id": "ghost_right_head",
+      "object": "old_ghost_outline",
+      "stroke_source_px": 12.0,
+      "confirmed_candidate_pixels": 104,
+      "diagnostic_bbox_xyxy": [
+        305,
+        489,
+        711,
+        783
+      ]
+    },
+    {
+      "path_id": "ghost_right_tail",
+      "object": "old_ghost_outline",
+      "stroke_source_px": 12.0,
+      "confirmed_candidate_pixels": 612,
+      "diagnostic_bbox_xyxy": [
+        305,
+        489,
+        711,
+        783
+      ]
+    },
+    {
+      "path_id": "cup_rim_ellipse",
+      "object": "old_work_cup_rim",
+      "stroke_source_px": 10.0,
+      "confirmed_candidate_pixels": 34,
+      "diagnostic_bbox_xyxy": [
+        418,
+        1090,
+        603,
+        1130
+      ]
+    },
+    {
+      "path_id": "cup_glass_left",
+      "object": "old_work_cup_glass",
+      "stroke_source_px": 9.0,
+      "confirmed_candidate_pixels": 52,
+      "diagnostic_bbox_xyxy": [
+        440,
+        1220,
+        576,
+        1328
+      ]
+    },
+    {
+      "path_id": "cup_glass_right",
+      "object": "old_work_cup_glass",
+      "stroke_source_px": 9.0,
+      "confirmed_candidate_pixels": 12,
+      "diagnostic_bbox_xyxy": [
+        440,
+        1220,
+        576,
+        1328
+      ]
+    },
+    {
+      "path_id": "cup_glass_bottom",
+      "object": "old_work_cup_glass",
+      "stroke_source_px": 7.0,
+      "confirmed_candidate_pixels": 6,
+      "diagnostic_bbox_xyxy": [
+        440,
+        1220,
+        576,
+        1328
+      ]
+    }
+  ],
+  "method": "manual SVG path ∩ signed bbox ∩ residual donor max RGB channel difference 4–11; one candidate only; natural street and wood excluded by path",
+  "selection_basis": "8条手描路径仅沿旧物轮廓设置支持区；4–11差异图只定位低对比线索。4591个候选差异像素未被全量复制，实际交集1600像素。路径控制点与笔宽见MANUAL_PATHS.svg，三处区域彩色叠图见review/manual_mask_*_review.png。",
+  "exclusions": {
+    "window": "排除窗口中央的街道透视、远处房灯、树叶、砖面、路面及其自然纹理；四条路径只走旧幽灵左右头身/下尾线，不填窗口矩形。",
+    "rim": "排除杯沿椭圆内外的木纹、台面板材与导线；只沿旧杯沿弧线设置一条路径。",
+    "glass": "排除台面木纹与环状原有木纹；三条路径仅跟随旧玻璃左右侧与底缘。",
+    "metric_limit": "被排除的低差异像素中可能仍混有旧物残留；1600像素是路径与差异的技术交集，不等于视觉确认已经净底。"
+  },
+  "visual_result": "REVISE_STOP",
+  "visual_review": "唯一候选4倍实图仍见窗口右下幽灵淡尾、杯沿浅色椭圆及玻璃轮廓；尤其rim只命中34像素、glass只命中70像素，说明手绘支持区与低差异求交未覆盖完整半透明边。Mask外零差异只能证明保护区未改，不能证明清影成功。",
+  "review_evidence": [
+    "review/manual_result_window_4x.png",
+    "review/manual_result_rim_4x.png",
+    "review/manual_result_glass_4x.png",
+    "review/manual_mask_window_review.png",
+    "review/manual_mask_rim_review.png",
+    "review/manual_mask_glass_review.png"
+  ],
+  "stop_rule_applied": "一套手工Mask与一次候选已用完；不修改此Mask或自动再试，不扩大路径、降低阈值或生成新图。"
+}
