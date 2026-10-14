@@ -1216,3 +1216,21 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PRODUCTION_FLOW_SUBMITTED`：FLOW_STATUS/DELIVERABLE两件完成，四项验收自报PASS，Producer Task IN_PROGRESS→REVIEW；待Master接受AUTO支持。
 - `PRODUCTION_FLOW_AUTO_DONE`：Master接受两Required/四验收PASS，FLOW Task REVIEW→DONE；最终生成4/6、余2，早期2/6保留历史。
 <!-- U05-B-PRODUCTION-20261014 END -->
+
+<!-- U05-B-LANDING-20261014 START -->
+## U05-B-LANDING-20261014
+
+- `SPEC_PACKAGES_USER_APPROVED`（2026-10-14 10:25:15 +08:00 Producer登记，用户原消息精确时刻未知）：Product/Tech/UI送审准确v0.1原SHA逐件8/8、5/5、7/7匹配；用户继续落地经Master裁定构成实施批准。旧USER_REVIEW快照保留，现行Approval USER_APPROVED，三个规格Task DONE；“确认”文案为用户单独覆盖。
+- `ART_RETAINED_SUBSET_SCOPED`：用户定向修订，旧Art整包Gate2未整体批准。45项旧PNG逐SHA范围限定采纳，12项受文字影响进入REVISION；`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/RETAINED_ASSETS.json`可复核。新切片需独立Gate2。
+- `LANDING_FLOW_STARTED`：FLOW_STATUS.md、DELIVERABLE.json首产，Producer Task READY→IN_PROGRESS；下游Client实际运行待证。
+- `COMPONENT_TECH_AUTO_DONE`：Tech四Required及Master Review五文件SHA核齐，同批`U05-B-COMPONENT-ASSETS-20261014/v0.1/COMPONENT-01`预签通过；Master接受内部AUTO支持，Tech Task DONE/Artifact Approval PROFESSIONAL_REVIEW。新Art图片Gate2仍待；Client实施Task已建，无首份Required，不虚记开工。
+- `ART_COMPONENT_GATE2_USER_REVIEW`（2026-10-14 10:35:50 +08:00）：Art v0.1七Required、49导出、三Review图及PSD身份由`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/ART_GATE2_FROZEN_HASHES.json`逐SHA锁定；45旧片不变、12牌改1底、719字动态图集和确认文案。Task REVIEW→USER_REVIEW，`tasks/U05-B-COMPONENT-ASSETS-20261014/ARTIFACT_APPROVAL_v0.1.json`待用户决定；Master已实际展示，未登记Gate2通过。
+- `CLIENT_LANDING_STARTED`：`deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/FEATURE_BRIEF.md`首份Required非空，`BRIEF_TECH_REVIEW.json` APPROVED，Task BACKLOG→IN_PROGRESS；新图仍锁，构建/运行待证。
+- `ART_COMPONENT_GATE2_REJECTED`：用户明确“需要修改这批组件资源”，具体修改点待答。准确v0.1审批由USER_REVIEW→REJECTED，Art Task REVISION，原送审快照与逐SHA冻结文件留档；新版图及FNT禁正式导入。Client已批逻辑/旧45片/通用代码继续，不将整个U05标BLOCKED或DONE。
+- `FONT_SUBSET_SCOPED_USER_APPROVED`（2026-10-14 10:41:29 +08:00登记）：用户将退回范围限定为“标签底板”；`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/APPROVED_FONT_SUBSET.json`逐SHA锁719字PNG/FNT、metrics、字体源/OFL；`tasks/U05-B-COMPONENT-ASSETS-20261014/ARTIFACT_APPROVAL_FONT_SUBSET_v0.1.json`仅此子集USER_APPROVED。底板具体修法待答，旧整包REJECTED/Art REVISION不变。
+- `ART_V02_GATE2_USER_APPROVED_AND_DONE`（2026-10-14 10:57:59 +08:00 Producer登记；用户消息精确秒未知）：用户“批准这版底板，继续接入试玩”；Art v0.2七Required、49导出、PSD/三Review逐SHA审计`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/ART_GATE2_V02_APPROVED_HASHES.json`，审计SHA d7d8af1a…0f426b。v0.2 Approval USER_APPROVED、Art Task MASTER_ACCEPTED/DONE；旧v0.1 REJECTED保留。Client可接新版资源，Creator运行待证。
+- `CLIENT_BUILD_PATH_INCIDENT`：Master `deliverables/master/U05-B-FRONTEND-LANDING-20261014/v0.1/BUILD_PATH_INCIDENT.md`记隔离构建误写另一临时通用目录；灯光独立登记目录三关键文件SHA核对一致，通用目录原身份未知。Client修自有输出重构待核，不宣称当前构建有效。
+- `CLIENT_FINAL_USER_REVIEW`（2026-10-14 12:02:38 +08:00登记）：Client五Required+Tech三Required、Master实际Web报告与最终截图等15文件SHA审计`deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/FRONTEND_FINAL_HASHES.json`，SHA `29a28690…727b21`；Tech Review APPROVED，Client Task REVIEW→USER_REVIEW，用户最终实现尚未批准。
+- `TECH_AUTO_DONE_PARENT_USER_REVIEW`：Tech三Required与Master AUTO接受四SHA核齐，支持Task DONE；父`INTEGRATION_REPORT.md`实存，父Task INTEGRATION→USER_REVIEW，待用户最终实现接受。FLOW两Required及连续性复盘实存、Task REVIEW待Master接受。
+- `LANDING_FLOW_AUTO_DONE`（2026-10-14 12:04:09 +08:00）：Master FLOW接受APPROVED；Producer固定交付与最终哈希清单实存，FLOW Task DONE。Client与父的用户审核门禁未改变。
+<!-- U05-B-LANDING-20261014 END -->

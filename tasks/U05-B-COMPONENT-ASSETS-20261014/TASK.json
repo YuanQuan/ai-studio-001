@@ -1,0 +1,41 @@
+{
+  "id": "U05-B-COMPONENT-ASSETS-20261014",
+  "title": "九宫格标签与艺术字图集局部修订",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "用户2026-10-14要求：标签背景改为可复用九宫格，艺术字输出程序可用图集，“确认交杯”改“确认”，继续U05落地。采用已呈现B资源作为基线，仅改标签背景/文字和确认文案，保留场景、顾客和12原料。此为具体局部制作方案的用户授权；Art/Tech同批预签后用已有像素及获许可字体生产，不使用新的imagegen。新实际切片仍交用户具体版本审核。继续推进包含已呈现配置、技术字段及UI交互下游实施，准确版本由Producer登记。",
+  "inputs": [
+    "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.2/REVISION_DIRECTION.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ART_BRIEF.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/review/reconstructed.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/review/component_sheet.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "Required实存且版本追溯",
+    "用户三项修改落实且B其它视觉保持",
+    "审批与运行验证据实，不混制作授权与新切片批准"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "只改Owner路径和本轮授权范围，不子派、不Git；先读角色五文件。",
+    "Art在同批Art/Tech预签前不输出正式修订图片，使用既有像素及许可字体，不新增imagegen。",
+    "Producer共享文件只改独立U05-B-LANDING-20261014标记块；配置/Tech/UI已呈现v0.1继续授权可登记批准，Art受修改项新图仍审核。",
+    "2026-10-14 七Required与49导出/三Review/PSD身份已核，Owner REVIEW提交，按自产切图例外直达Gate2 USER_REVIEW；用户尚未决定，不DONE。",
+    "用户明确退回v0.1 Gate2，具体修改点待回复；旧冻结文件保持不变，待明确范围后新Revision产出。",
+    "用户限定修改标签底板外形/边框，v0.2小圆角横签、细边/弱阴影；文字图集已获子集批准，保持哈希。",
+    "v0.2 Owner提交REVIEW；自产切图直接USER_REVIEW，用户“批准这版底板，继续接入试玩”准确Gate2 USER_APPROVED；Master依据七Required、49导出、PSD、三图及逐SHA结果最终接受Art任务DONE。Client接入另行验证。"
+  ]
+}

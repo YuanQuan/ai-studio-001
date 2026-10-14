@@ -1,0 +1,33 @@
+{
+  "id": "U05-B-LANDING-FLOW-20261014",
+  "title": "U05组件修订落地流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "用户2026-10-14要求：标签背景改为可复用九宫格，艺术字输出程序可用图集，“确认交杯”改“确认”，继续U05落地。采用已呈现B资源作为基线，仅改标签背景/文字和确认文案，保留场景、顾客和12原料。此为具体局部制作方案的用户授权；Art/Tech同批预签后用已有像素及获许可字体生产，不使用新的imagegen。新实际切片仍交用户具体版本审核。继续推进包含已呈现配置、技术字段及UI交互下游实施，准确版本由Producer登记。",
+  "inputs": [
+    "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "Required实存且版本追溯",
+    "用户三项修改落实且B其它视觉保持",
+    "审批与运行验证据实，不混制作授权与新切片批准"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "只改Owner路径和本轮授权范围，不子派、不Git；先读角色五文件。",
+    "Art在同批Art/Tech预签前不输出正式修订图片，使用既有像素及许可字体，不新增imagegen。",
+    "Producer共享文件只改独立U05-B-LANDING-20261014标记块；配置/Tech/UI已呈现v0.1继续授权可登记批准，Art受修改项新图仍审核。",
+    "2026-10-14 12:02 Producer FLOW固定交付与连续性检查完成，提交REVIEW，等待Master AUTO接受；最终Client/父任务USER_REVIEW不随FLOW完成而DONE。",
+    "2026-10-14 12:04:09 +08:00 Master AUTO接受FLOW固定产物，Producer核真实交付与continuity后DONE；Client/父USER_REVIEW待用户，不替代实现接受。"
+  ]
+}

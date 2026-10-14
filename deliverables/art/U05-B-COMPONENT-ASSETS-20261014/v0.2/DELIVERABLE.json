@@ -1,0 +1,41 @@
+{
+  "task_id": "U05-B-COMPONENT-ASSETS-20261014",
+  "owner": "art",
+  "summary": "仅将共用标签底板改为小圆角奶油纸签、细深棕边和弱阴影；719字图集、确认文案及其它已采纳资源原字节保留。新版61层PSD、切片与同尺度重组提交用户Gate2。",
+  "artifacts": [
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ART_BRIEF.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ART_PRESIGN.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/review/reconstructed.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/review/component_sheet.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/review/comparison.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Required实存且版本追溯",
+      "result": "PASS",
+      "evidence": "七个Task Required均实存；CUT_MANIFEST.json记录v0.1→v0.2、49件导出/哈希、十二实例坐标、切线和inset；61层PSD与预览、重组实存。"
+    },
+    {
+      "criterion": "用户三项修改落实且B其它视觉保持",
+      "result": "PASS",
+      "evidence": "v0.2共用标签为小圆角细边纸签，review/component_sheet.png展示三种宽度；719字图集、确认文案等48件导出与v0.1逐字节相同；review/reconstructed.png变化仅在十二标签矩形，区外0像素变化。"
+    },
+    {
+      "criterion": "审批与运行验证据实，不混制作授权与新切片批准",
+      "result": "PASS",
+      "evidence": "v0.2 ART_PRESIGN与同批Tech TECH_PRESIGN先于出图；v0.1名牌Gate2已退回、v0.2新底板待用户具体审核；Client导入仍PLANNED/UUID null，Creator与目标机视觉及性能未测。"
+    }
+  ],
+  "assumptions": [
+    "用户要求的外形/边框修改限定为小圆角横纸签，既有123×45/inset/十二坐标可继续满足。"
+  ],
+  "risks": [
+    "静态九宫格样图不能替代Creator实际Sprite SLICED和目标机检查。",
+    "v0.2底板仍待用户Gate2批准后才可正式接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "U05-B-COMPONENT-ASSETS-20261014",
+  "version": "v0.2",
+  "batch_id": "U05-B-COMPONENT-ASSETS-20261014/v0.2/LABEL-02",
+  "role": "art",
+  "decision": "SIGNED_FOR_FIRST_IMAGE_AFTER_MATCHING_TECH_PRESIGN",
+  "direction": "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.2/REVISION_DIRECTION.md",
+  "brief": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ART_BRIEF.md",
+  "scope": "仅修改一张共用123×45奶油纸签：约8px小圆角、约2px细深棕边框、弱且不突出的右下阴影。仍18/18/12/12九宫格，十二位置不变。",
+  "preserve_byte_identical": ["v0.1 U05_ART_FONT.png/.fnt", "v0.1 font_metrics.json", "v0.1 45张其它继承PNG", "v0.1 BTN_CONFIRM_TEXT.png", "v0.1 TEXT_SAMPLE_DYNAMIC_full.png"],
+  "canvas": [1024, 1536],
+  "method": "仅用已许可项目内空纸签像素色材，局部重构边框/轮廓；现有61层PSD只换12名牌实例层；不新增imagegen。",
+  "stop_rule": "若改源尺寸/inset、字图、文字/场景/原料或超出单底板范围，先重新同批预签。",
+  "gate2": "新实际底板与同尺度重组直接交用户审核，批准前不可正式接入。"
+}

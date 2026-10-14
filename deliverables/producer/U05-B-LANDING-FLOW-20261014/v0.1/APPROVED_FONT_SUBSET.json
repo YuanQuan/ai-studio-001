@@ -1,0 +1,50 @@
+{
+  "task_id": "U05-B-COMPONENT-ASSETS-20261014",
+  "version": "v0.1-font-retained",
+  "status": "USER_APPROVED_SCOPED",
+  "user_feedback_verbatim": [
+    "需要修改这批组件资源",
+    "标签底板"
+  ],
+  "master_scope_interpretation": "用户仅指出标签底板为需要修改项；Art v0.1中新九宫格LABEL_PLATE_9SLICE仍REVISION。未要求修改的719字单页BMFont PNG/FNT及其度量、已许可字体来源属于已呈现保留部分，可供Client正式接入图集；按钮文案使用此前用户明确指定的“确认”。此定向批准不覆盖底板、完整PSD/重组、整个49导出包，也不恢复原整包REJECTED。",
+  "user_message_exact_second": "UNKNOWN",
+  "recorded_at": "2026-10-14T10:41:29+08:00",
+  "scope_files": [
+    {
+      "id": "FONT_ATLAS_PNG",
+      "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/exports/U05_ART_FONT.png",
+      "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41"
+    },
+    {
+      "id": "FONT_FNT",
+      "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/exports/U05_ART_FONT.fnt",
+      "sha256": "14f9073139b14aa4b46a389d934dc93f7581804721c881b882995c1ca6101af1"
+    },
+    {
+      "id": "FONT_METRICS",
+      "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/source/font_metrics.json",
+      "sha256": "f38f6c14909c6f9781d35173e90fd0a2b60824d980e33f53529c77debee322bc"
+    },
+    {
+      "id": "SOURCE_FONT",
+      "path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/font/ZCOOLKuaiLe-Regular.ttf",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d"
+    },
+    {
+      "id": "FONT_LICENSE",
+      "path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/font/OFL.txt",
+      "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d"
+    }
+  ],
+  "glyph_count": 719,
+  "button_text": "确认",
+  "excluded": [
+    "LABEL_PLATE_9SLICE.png",
+    "workspace_b_master.psd",
+    "review/reconstructed.png",
+    "review/component_sheet.png",
+    "完整v0.1切片包",
+    "BTN_CONFIRM_TEXT.png（视觉样张，不作运行资源批准）"
+  ],
+  "runtime_note": "Creator FNT解析、显示、内存和目标机表现待Client实际验证；单独批准图集不构成运行通过。"
+}

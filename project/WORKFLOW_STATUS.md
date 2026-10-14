@@ -1145,3 +1145,18 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Producer FLOW两Required已按Gate2真实节点更新，四项验收自报PASS并由Owner提交 `IN_PROGRESS→REVIEW`；本FLOW为AUTO流程支持，不代替四个用户审批或父任务最终完成。
 - 终态预算更正：Art账本与PROMPTS共四次局部生成，代表2/2、全批最终4/6、余2；09:15所记2/6保持阶段历史。Master同版AUTO FLOW Review APPROVED，Producer FLOW Task `REVIEW→DONE`，仅流程支持结案，四项用户审批和父试玩仍未完成。
 <!-- U05-B-PRODUCTION-20261014 END -->
+
+<!-- U05-B-LANDING-20261014 START -->
+## 2026-10-14｜U05 B定向修订落地
+
+- 用户明确九宫格标签背景、程序可用艺术字图集、“确认交杯→确认”，继续U05落地。Master判已呈现Product配置源、Tech配置审查、UI交互准确v0.1可作为继续实施批准；Producer重核8/8、5/5、7/7原SHA一致，三Task规格阶段DONE。UI按钮文字为用户单独覆盖。
+- 旧Art完整17 Required/57 PNG包仍非整体Gate2批准；45项旧PNG按`RETAINED_ASSETS.json`逐ID/SHA范围限定采纳，12项文字相关PNG待修订，旧审批历史保留，Art原Task REVISION。新九宫格与艺术字具体切片须实际Gate2用户批准后才可接入。
+- Producer本FLOW两Required已实存，Task READY→IN_PROGRESS；Client可用已批规格和旧保留子集继续，Creator真实运行、性能、新图Gate2待证。Continuity：Art/Tech新组件与Master后建Client任务按实产记录，不把READY空挂IN_PROGRESS；本轮仍有授权实施工作。
+- 组件Tech内部支持：四Required与Master Review APPROVED、同批`COMPONENT-01`预签已核；Task由READY依实产直记DONE，approval策略AUTO，Artifact Approval为PROFESSIONAL_REVIEW。此只完成生产预签/交接，Art新版切片Gate2仍待用户决定。Client新实施Task已建但尚无首份Required实产，保持BACKLOG，不记IN_PROGRESS。
+- 新版Art v0.1 已冻结提交：七Required实存，48 PNG+1 FNT导出逐SHA匹配、61层PSD及三Review图哈希一致；45旧片保持，12旧标签改1九宫格，719字BMFont与“确认”实际重组/组件页已展示。自产切图依例外`REVIEW→USER_REVIEW`，Gate2审批`USER_REVIEW/decided_at=null`，不增效果专业复审。Tech元数据静态PASS不代替用户批准或Creator运行。Client `FEATURE_BRIEF.md`首份Required实存，Tech概要评审APPROVED，Task BACKLOG→IN_PROGRESS；代码/构建仍在制作。
+- 最新用户决定：对新版组件资源v0.1明确选择“需要修改这批组件资源”，具体修改点尚未给出，Master已询问。现行Gate2 `REJECTED`、Art Task `REVISION`，旧USER_REVIEW快照和冻结文件保留；不猜修订范围、不把45旧保留子集误退回。Client继续已批配置/状态与通用组件代码，新版PNG/FNT仍锁定正式导入。Continuity：Art具体修订待用户说明，Client独立实施IN_PROGRESS且有首产，Producer本FLOW继续跟踪。
+- 用户进一步明确需修改项仅“标签底板”，底板具体问题（外形/色质感/拉伸）待回复。Master按定向反馈隔离影响：新版`LABEL_PLATE_9SLICE`仍REVISION；v0.1 719字BMFont PNG/FNT、度量及许可字体源/OFL逐SHA范围限定`USER_APPROVED`，按钮文案“确认”沿用用户明确指令。可供Client接入字体图集；旧整包REJECTED保持，PSD/重组/完整49项未获批准。
+- 最新Gate2决定：用户原话“批准这版底板，继续接入试玩”。Art v0.2小圆角细边弱影底板及同包49导出、61层PSD、三展示图身份逐SHA锁定；自产切图`REVIEW→USER_REVIEW→USER_APPROVED`，Master最终接受Art Task DONE。新底板SHA `75d72d…287d82`，旧v0.1整包REJECTED及719字图集子集批准留历史。Client可正式复制v0.2资源并继续试玩接入；Creator实际运行仍待。构建路径事件：隔离profile曾误写另一临时通用目录，Master核灯光另独立目录已登记3文件SHA一致，通用目录原身份未知；Client自有输出重新构建待核，不冒写运行通过。Continuity：Client仍IN_PROGRESS有实产，Producer FLOW维持跟踪。
+- 最终v4实现送审：Client五Required、最终Tech三Required及Master浏览器/父整合报告等15文件逐SHA锁`FRONTEND_FINAL_HASHES.json`（SHA `29a28690…727b21`）。Tech Review APPROVED且Master AUTO接受其支持Task DONE；Client Task、父U05 B试玩Task均`USER_REVIEW`，等用户对实际实现最终接受，不DONE。Web8876可试玩，最终截图`browser-v4-final-workstation.jpg`；v2/v3历史流程截图与v4显示/退出证据已区分。FLOW固定交付已交REVIEW，待Master AUTO接受。Continuity：本轮获授权的U05制作/验证均有真实产出，无仅以READY/IN_PROGRESS占位的可继续任务；剩实际实现用户审核，旧v0.1 Art REVISION为已被新v0.2批准版承接的历史版本，不作当前门禁。
+- 12:04:09 +08:00 Master `MASTER_FLOW_ACCEPTANCE.json` APPROVED，Producer本轮FLOW支持Task AUTO DONE；Client/父最终实现仍USER_REVIEW，等待用户决定。
+<!-- U05-B-LANDING-20261014 END -->

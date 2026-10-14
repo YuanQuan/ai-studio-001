@@ -1,0 +1,34 @@
+{
+  "id": "U05-B-COMPONENT-TECH-20261014",
+  "title": "九宫格及图集预签和交接规范",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "用户2026-10-14要求：标签背景改为可复用九宫格，艺术字输出程序可用图集，“确认交杯”改“确认”，继续U05落地。采用已呈现B资源作为基线，仅改标签背景/文字和确认文案，保留场景、顾客和12原料。此为具体局部制作方案的用户授权；Art/Tech同批预签后用已有像素及获许可字体生产，不使用新的imagegen。新实际切片仍交用户具体版本审核。继续推进包含已呈现配置、技术字段及UI交互下游实施，准确版本由Producer登记。",
+  "inputs": [
+    "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U05-B-COMPONENT-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U05-B-COMPONENT-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-COMPONENT-TECH-20261014/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-COMPONENT-TECH-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "Required实存且版本追溯",
+    "用户三项修改落实且B其它视觉保持",
+    "审批与运行验证据实，不混制作授权与新切片批准"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "只改Owner路径和本轮授权范围，不子派、不Git；先读角色五文件。",
+    "Art在同批Art/Tech预签前不输出正式修订图片，使用既有像素及许可字体，不新增imagegen。",
+    "Producer共享文件只改独立U05-B-LANDING-20261014标记块；配置/Tech/UI已呈现v0.1继续授权可登记批准，Art受修改项新图仍审核。",
+    "2026-10-14 Master依据同批四Required与APPROVED评审，最终接受内部制作预签/交接支持任务；Producer复核五文件SHA。此非Art新切片Gate2批准。"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "task_id": "U05-B-COMPONENT-ASSETS-20261014",
+  "owner": "art",
+  "summary": "完成 B 工作台标签九宫格复用、719 字 BMFont 单页图集与主按钮“确认”文案局部修订；新版 61 层 PSD、切片、同尺度重组已实存，提交用户 Gate2 审核。",
+  "artifacts": [
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/ART_BRIEF.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/source/LAYER_MANIFEST.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/source/font_metrics.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/exports/LABEL_PLATE_9SLICE.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/exports/U05_ART_FONT.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/exports/U05_ART_FONT.fnt",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/review/reconstructed.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/review/component_sheet.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/review/comparison.png",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "Required实存且版本追溯",
+      "result": "PASS",
+      "evidence": "ART_BRIEF、ASSET_MANIFEST、CUT_MANIFEST、61 层 PSD、reconstructed、component_sheet、DELIVERABLE 全实存；CUT_MANIFEST 记录新旧版本/路径/尺寸/坐标/哈希/inset，font_metrics 记录 719 字形度量；PSD 预览与重组逐像素一致。"
+    },
+    {
+      "criterion": "用户三项修改落实且B其它视觉保持",
+      "result": "PASS",
+      "evidence": "共用 LABEL_PLATE_9SLICE.png，U05_ART_FONT.png/.fnt 支持动态拼字；review/reconstructed.png 主按钮仅显示“确认”；45 张继承 PNG 与 B 基线逐字节 SHA-256 相同，34,256 变化像素全部在标签及按钮文字规划区。"
+    },
+    {
+      "criterion": "审批与运行验证据实，不混制作授权与新切片批准",
+      "result": "PASS",
+      "evidence": "ART_PRESIGN.json 和 Tech 同批 TECH_PRESIGN.json 先于出图；字体与 OFL 同哈希；本批自产切片仍待 Gate2，客户端路径仅计划、UUID 为 null，Creator/目标机运行 NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "单份白色 glyph atlas 由程序按场景着深棕或米白色，运行标签字号可由 BMFont 节点缩放；若实际 Creator 渲染不满足可读性，需在 Gate2/接入评估。"
+  ],
+  "risks": [
+    "BMFont 在 Creator 中的实际解析、字号、颜色和目标设备观感尚未运行核验。",
+    "本批自产实际切片仍待用户 Gate2 具体版本批准，不能正式接入客户端。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

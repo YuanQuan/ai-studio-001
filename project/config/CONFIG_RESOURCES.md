@@ -1,13 +1,11 @@
 # 配置资源目录
 
-当前没有经用户批准可供正式运行消费的配置工作簿。以下三本均保留原始路径与等字节历史快照，归档只供追溯；正式入口待准确版本获批并通过技术校验后建立。
-
 统一字段说明：[业务配置字段中文说明](FIELD_GUIDE.md)。机器索引：[RESOURCE_INDEX.json](RESOURCE_INDEX.json)。
 
-| 资源 | 状态 | 原始文件 | 审批或来源 | 历史副本 |
+| 资源 | 状态 | 稳定源表 | 当前客户端生成资源 | 审批与历史 |
 |---|---|---|---|---|
-| 顾客配置样例 | 草案；不可正式使用 | [project/config/source/CUSTOMER_CONFIG_v0.1.xlsx](../../project/config/source/CUSTOMER_CONFIG_v0.1.xlsx) | [project/config/schema/CUSTOMER_CONFIG.md](../../project/config/schema/CUSTOMER_CONFIG.md) | [project/config/archive/2026-10-12-config-audit/CUSTOMER_CONFIG_v0.1.xlsx](../../project/config/archive/2026-10-12-config-audit/CUSTOMER_CONFIG_v0.1.xlsx) |
-| 奶茶小游戏配置（历史源与已批准人工候选） | 产品规则数值已批准；[稳定人工源候选](../../project/config/source/MILK_TEA_MINIGAME.xlsx) v0.1 已获用户批准，可供生成器任务读取；仍不可正式运行，active_path 为空 | [历史获批源表](../../project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx) | [候选批准记录](../../tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json) | [历史归档](../../project/config/archive/2026-10-12-config-audit/MILK_TEA_MINIGAME_v0.1.xlsx) |
-| U00六店位置待审基线 | 草案；不可正式使用 | [deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/U00_SHOP_LAYOUT.xlsx](../../deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/U00_SHOP_LAYOUT.xlsx) | [tasks/U00-SHOP-LAYOUT-CONFIG-001/ARTIFACT_APPROVAL.json](../../tasks/U00-SHOP-LAYOUT-CONFIG-001/ARTIFACT_APPROVAL.json) | [project/config/archive/2026-10-12-config-audit/U00_SHOP_LAYOUT_v0.1.xlsx](../../project/config/archive/2026-10-12-config-audit/U00_SHOP_LAYOUT_v0.1.xlsx) |
+| 顾客配置样例 | 草案；不可正式使用 | [CUSTOMER_CONFIG_v0.1.xlsx](source/CUSTOMER_CONFIG_v0.1.xlsx) | 无 | [字段说明](FIELD_GUIDE.md)；[历史快照](archive/2026-10-12-config-audit/CUSTOMER_CONFIG_v0.1.xlsx) |
+| 奶茶小游戏三类配置（MG01 v0.1） | 已批准；用于 U05 前端单元示例 | [MILK_TEA_MINIGAME.xlsx](source/MILK_TEA_MINIGAME.xlsx) | [客户端 JSON](generated/milk_tea_minigame.client.json)；[SHA/来源清单](generated/milk_tea_minigame.manifest.json) | [Product 审批](../../tasks/U05-B-CONFIG-SOURCE-20261014/ARTIFACT_APPROVAL_v0.1.json)；[Tech 审批](../../tasks/U05-B-CONFIG-TECH-REVIEW-20261014/ARTIFACT_APPROVAL_v0.1.json)；[中文字段说明](FIELD_GUIDE.md)；[旧源及生成归档](archive/2026-10-14-u05-b-three-class-transition/MANIFEST.json) |
+| U00六店位置待审基线 | 草案；不可正式使用 | [U00_SHOP_LAYOUT.xlsx](../../deliverables/product/U00-SHOP-LAYOUT-CONFIG-001/v0.1/U00_SHOP_LAYOUT.xlsx) | 无 | [字段说明](FIELD_GUIDE.md)；[历史快照](archive/2026-10-12-config-audit/U00_SHOP_LAYOUT_v0.1.xlsx) |
 
-U00 工作簿是 v0.1 旧 R3 位置基线，仍处 `USER_REVIEW`；后续客户端 v0.6 画面验收不等于该位置工作簿获批。奶茶 v0.1 产品规则和数值已获用户批准；原获批源表仍 `DRAFT`/`export_enabled=false`，稳定候选 `READY`/`export_enabled=true` 已通过静态技术审查及用户批准，正式生成与发布待完成。顾客工作簿为禁用样例。
+奶茶配置只由当前单元示例读取客户端 JSON；归档中的五维源和 JSON 仅供追溯，不能作为当前入口。

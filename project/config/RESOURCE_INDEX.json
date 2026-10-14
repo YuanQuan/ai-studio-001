@@ -2,7 +2,9 @@
   "schema_version": "1.0",
   "scope": "业务配置人工源表；工程构建配置不在本清单",
   "field_guide": "project/config/FIELD_GUIDE.md",
-  "current_formal_resources": [],
+  "current_formal_resources": [
+    "MILK_TEA_MINIGAME"
+  ],
   "resources": [
     {
       "id": "CUSTOMER_CONFIG",
@@ -20,19 +22,30 @@
     },
     {
       "id": "MILK_TEA_MINIGAME",
-      "name": "奶茶小游戏配置（历史源与已批准人工候选）",
-      "status": "人工源候选已批准，正式生成与发布待完成",
-      "source_path": "project/config/source/MILK_TEA_MINIGAME_v0.1.xlsx",
-      "active_path": null,
+      "name": "奶茶小游戏三类客户端示例配置",
+      "status": "已批准并正式用于 U05 前端示例",
+      "source_path": "project/config/source/MILK_TEA_MINIGAME.xlsx",
+      "active_path": "project/config/generated/milk_tea_minigame.client.json",
       "field_guide": "project/config/FIELD_GUIDE.md",
-      "approval_ref": "tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json",
-      "archive_path": "project/config/archive/2026-10-12-config-audit/MILK_TEA_MINIGAME_v0.1.xlsx",
-      "source_sha256": "cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa",
-      "archive_sha256": "cdad804b8ba7974ce4ac6835ee02f7863be6f577a3919fd4baa8c90a73fa1cfa",
-      "source_spec": "deliverables/product/MILK-TEA-MINIGAME-SPEC-20261012/v0.1/CONFIG_SPEC.md",
-      "candidate_path": "project/config/source/MILK_TEA_MINIGAME.xlsx",
-      "candidate_sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
-      "note": "原获批v0.1源工作簿保持DRAFT/export_enabled=false及历史字节；稳定候选行内READY/export_enabled=true且整包准确v0.1已获用户批准，可供生成器任务读取。active_path为空、正式资源列表为空；正式生成、发布和运行验证均未完成，不得作为运行入口。"
+      "approval_ref": "tasks/U05-B-CONFIG-SOURCE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+      "archive_path": "project/config/archive/2026-10-14-u05-b-three-class-transition/previous/project/config/source/MILK_TEA_MINIGAME.xlsx",
+      "source_sha256": "b71d51ee52ba9bc6912dbf886f8174a2a2a71ef8beaa910b30c0b87972176fbf",
+      "archive_sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
+      "source_spec": "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CONFIG_SPEC.md",
+      "candidate_path": null,
+      "candidate_sha256": null,
+      "note": "MG01 v0.1 用户批准；仅供 U05 前端单元示例。当前运行输出仅为客户端 JSON；旧五维服务端 JSON 原字节保留为历史非当前资源，不生成新的服务端输出。",
+      "generated_path": "project/config/generated/milk_tea_minigame.client.json",
+      "generated_sha256": "9d46e76e6cf942cd513a8c5f35e5dfaafc6188146e767a5eeb1b31dbcce479dc",
+      "manifest_path": "project/config/generated/milk_tea_minigame.manifest.json",
+      "historical_outputs": [
+        {
+          "path": "project/config/generated/milk_tea_minigame.server.json",
+          "status": "历史非当前运行资源",
+          "sha256": "bcb757797059e1e022b67609ec4ba8bdbfa40829febe49055fee4a35322a4cb8",
+          "archive_path": "project/config/archive/2026-10-14-u05-b-three-class-transition/previous/project/config/generated/milk_tea_minigame.server.json"
+        }
+      ]
     },
     {
       "id": "U00_SHOP_LAYOUT",

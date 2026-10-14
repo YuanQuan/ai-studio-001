@@ -1,0 +1,18 @@
+{
+  "task_id": "U05-B-COMPONENT-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-COMPONENT-ASSETS-20261014/v0.2/LABEL-02",
+  "status": "PRESIGNED_FOR_LABEL_REVISION_NOT_GATE2",
+  "direction": "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.2/REVISION_DIRECTION.md",
+  "art_plan": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/ART_BRIEF.md",
+  "predecessor": "deliverables/tech_lead/U05-B-COMPONENT-TECH-20261014/v0.1/TECH_PRESIGN.json",
+  "technical_conditions": [
+    "唯一变动资产为 LABEL_PLATE_9SLICE 底板外形/边框：约8源像素小圆角横向奶油纸签、约2源像素细深棕边与不突出外形的弱右下阴影；不改变标签文字或其它B画面元素。",
+    "继续用一张123×45 RGBA九宫格，四边inset优先left/right各18、top/bottom各12；十二实例坐标与宽123/130/131的运行布局不变，不烘字。若实际制作发现边框跨越切线或inset需改变，停首图并先与Tech重签该项。",
+    "v0.1 已采纳 U05_ART_FONT.png/.fnt 719字图集和确认文案按原字节/语义保留；不以标签返工扩大字体、场景、原料、杯层或玩法修改。",
+    "新底板与对应PSD层、同尺度重组及版本/hash分别登记；其余保留PNG字节核对不变。实际Client运行目录按RUNTIME_PATH_NOTE.md收敛，Art路径仍保留独立版本。",
+    "本预签仅允许Art制作标签v0.2首图，不是新具体切片Gate2用户批准；Gate2之前Client不得正式接入v0.2底板。"
+  ],
+  "production_budget": "复用已有像素与既有许可源，新增imagegen=0；材质体积、Creator导入、Web及目标机性能均须成品/运行另核，不由预签推断。",
+  "stop_rules": ["源尺寸、四边inset、十二实例坐标、字体图集或批准范围变化时先同批重签。", "Art自产切片交实际资源与同尺度重组给用户Gate2；成品只做技术元数据静态核对，不新增效果专业复审门禁。"]
+}

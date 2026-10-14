@@ -1,0 +1,155 @@
+{
+  "task_id": "U05-B-FRONTEND-LANDING-20261014",
+  "version": "v0.1 implementation, v0.2 approved assets, v4 verified client build",
+  "engine": "Cocos Creator 3.8.8",
+  "build_command": "CocosCreator --project <isolated-copy> --build platform=web-mobile",
+  "project_copy": "/private/tmp/u05-b-client-build-20261014/client",
+  "profile_build_path": "/private/tmp/u05-b-client-build-20261014/output-final-review",
+  "logged_output_name": "web-mobile",
+  "actual_output": "/private/tmp/u05-b-client-build-20261014/output-final-review/web-mobile",
+  "actual_output_files": {
+    "main_index_js": {
+      "sha256": "ce640e70c3c40b9c5cc26e95595a55cd9d7ef8288046638f638b4e9ba2588c9b"
+    },
+    "index.html": {
+      "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "size": 2103,
+      "mtime_local": "2026-10-14T11:46:14.350236+08:00"
+    },
+    "resources_config.json": {
+      "sha256": "d7e68d1998c21fd93dcd77f3143906ce9ae4739ddaa0d3aa741906fcd5f20fef",
+      "size": 53864,
+      "mtime_local": "2026-10-14T11:46:14.286325+08:00"
+    }
+  },
+  "start_scene": {
+    "url": "db://assets/UnitSamples.scene",
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+  },
+  "logged_build_scenes": [
+    {
+      "url": "db://assets/UnitSamples.scene",
+      "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+    },
+    {
+      "url": "db://assets/labs/lantern-pilot-v02/LanternPilot.scene",
+      "uuid": "e614d011-f14f-4b38-bde0-6877efc19c50"
+    }
+  ],
+  "creator_log": "/private/tmp/u05-b-client-build-20261014/final-review-build-v4.stdout.log",
+  "creator_stderr": "/private/tmp/u05-b-client-build-20261014/final-review-build-v4.stderr.log",
+  "exit_code": 36,
+  "success_evidence": "Creator 3.8.8 log ends with build Task (web-mobile) Finished at 2026-10-14 11:46:14 +08:00; exit code 36 matches installed Creator CLI behavior previously observed for successful builds.",
+  "log_checks": {
+    "U05BitmapText_registered": true,
+    "U05NineSlicePlate_registered": true,
+    "duplicate_component_error": false,
+    "sealed_component_error": false
+  },
+  "input_sha256": {
+    "assets/labs/u05/milk_tea_lab.ts": "b212bf43a1d27fa42c78961b2a09ee386b289055dd851bd01bf1b7cc074cff24",
+    "assets/labs/u05/milk_tea_state.ts": "bb981d662b8d334556b2418e7e837e787773742ae60aa2a2e31a539f2f43aea6",
+    "assets/labs/u05/u05_bitmap_text.ts": "e18409948c9c7bf6f64aed02c8c69cdc21231c6466e885760686f69e53021461",
+    "assets/labs/u05/u05_nine_slice_plate.ts": "58705fa52328292751a74c718777925d969e755054a9c1a88f7f29f5af2e102b",
+    "assets/UnitSampleGallery.ts": "d8ac917233fc1a901a78e3ea8be47f865bd257cdf07158d4514cb2962a8e0111",
+    "assets/resources/u05_milk_tea/config.json": "9d46e76e6cf942cd513a8c5f35e5dfaafc6188146e767a5eeb1b31dbcce479dc",
+    "assets/resources/u05_milk_tea/u05_b/LABEL_PLATE_9SLICE.png": "75d72dc94a6da071ca6a2a387ef66c823ce2572bc55d01f8bb3848eb6d287d82",
+    "assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+    "assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.fnt": "14f9073139b14aa4b46a389d934dc93f7581804721c881b882995c1ca6101af1",
+    "assets/resources/u05_milk_tea/u05_b/U05_ART_FONT_OFL.txt": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d",
+    "assets/resources/u05_milk_tea/u05_b/CUP_FRAME_META_SET": "sha256:9bedc24d47f169cffc5b8a234949291c74fcf6c26f7a3d01d50db8fdd0b1fd8b"
+  },
+  "asset_sha256": {
+    "LABEL_PLATE_9SLICE_v0.2": "75d72dc94a6da071ca6a2a387ef66c823ce2572bc55d01f8bb3848eb6d287d82",
+    "U05_ART_FONT_atlas": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+    "U05_ART_FONT_fnt": "14f9073139b14aa4b46a389d934dc93f7581804721c881b882995c1ca6101af1"
+  },
+  "runtime_url": "http://127.0.0.1:8876/",
+  "http_service_session_id": 53330,
+  "browser_runtime_visual_interaction": "ROOT_CONFIRMED_V4_FINAL_REVIEW_PASS",
+  "root_runtime_report": "deliverables/master/U05-B-FRONTEND-LANDING-20261014/v0.1/BROWSER_RUNTIME_REPORT.md",
+  "final_browser_state": {
+    "viewport_reset": true,
+    "verification_mode": false,
+    "stage": 1,
+    "selected_ingredients": ["月雾茶", "云魄乳", "梦纹冻"],
+    "cup_submitted": false,
+    "saved_progress": {"experience": 10, "completed_stages": "1/5"},
+    "browser_warnings": [],
+    "browser_errors": []
+  },
+  "post_build_checkout_divergence": {
+    "path": "apps/client/assets/UnitSampleGallery.ts",
+    "v4_build_input_sha256": "d8ac917233fc1a901a78e3ea8be47f865bd257cdf07158d4514cb2962a8e0111",
+    "current_workspace_sha256": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35",
+    "note": "Root 报告该文件在构建后有其他线程变更；本任务未修改该文件，故仅 U05 输入与构建一致，不宣称整个工作区与隔离构建完全一致。"
+  },
+  "limitations": [
+    "Creator options log includes UnitSamples as the start scene and the existing LanternPilot scene in the scene list; this task did not modify UnitSampleGallery.ts, package.json, or the shared project build profile.",
+    "Creator stderr reports the platform compression option validation notice and says it uses merge_dep default; the build finished successfully.",
+    "A previous attempt using an inherited output profile wrote to another task temp path. Incident details and the prior generic web-mobile output identity are recorded in deliverables/master/U05-B-FRONTEND-LANDING-20261014/v0.1/BUILD_PATH_INCIDENT.md; this final build uses a separate verified path.",
+    "Master final browser report confirms v4 at 360x640 and ordinary mode: readable help, timer expiry/failure, retry, correct single-cup delivery, exit confirmation with no reward, preserved XP 10 and 1/5 progress, aligned current workstation, and empty warning/error arrays. See root_runtime_report; earlier versions and superseded issues remain distinguished in build_history and preserved screenshots."
+  ],
+  "prior_output_incident": "deliverables/master/U05-B-FRONTEND-LANDING-20261014/v0.1/BUILD_PATH_INCIDENT.md",
+  "cup_content_sprite_trim": false,
+  "cup_content_canvas_source_px": [
+    183,
+    233
+  ],
+  "runtime_evidence": [
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-first-easy-win.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-wrong-cup.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-last-choice-undo.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-persisted-progress.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-nightmare.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-recipe-running.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-timed-correct.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-timeout.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-readable-help.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-final-small-exit-confirm.jpg",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-v4-normal-persisted.jpg"
+    ,"deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-v4-exit-no-reward.jpg"
+    ,"deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/browser-v4-final-workstation.jpg"
+  ],
+  "resource_bundle_verification": {
+    "bundle_config": "/private/tmp/u05-b-client-build-20261014/output-final-review/web-mobile/assets/resources/config.json",
+    "bundle_config_sha256": "d7e68d1998c21fd93dcd77f3143906ce9ae4739ddaa0d3aa741906fcd5f20fef",
+    "resource_path_entries": 228,
+    "retained_png_count": 45,
+    "retained_png_creator_uuids_in_bundle": 45,
+    "additional_approved_assets": [
+      "LABEL_PLATE_9SLICE",
+      "U05_ART_FONT_ATLAS",
+      "U05_ART_FONT_BMFONT",
+      "U05_ART_FONT_OFL"
+    ],
+    "all_4_additional_uuids_present": true,
+    "asset_identity_manifest": "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/ASSET_IMPORT_MANIFEST.json"
+  },
+  "build_history": [
+    {
+      "build": "isolated stable pass 1",
+      "time_local": "2026-10-14 11:15:26 +08:00",
+      "output": "/private/tmp/u05-b-client-build-20261014/output-stable/web-mobile",
+      "result": "Superseded after browser found cup-content Sprite trim distortion, too-small CTA text, and clipped selection controls; historical defect screenshot is retained as browser-first-cup-trim-defect.jpg."
+    },
+    {
+      "build": "same-origin visual pass 2",
+      "time_local": "2026-10-14 11:28:11 +08:00",
+      "output": "/private/tmp/u05-b-client-build-20261014/output-final-review/web-mobile",
+      "result": "Superseded by follow-up fixes to feedback placement, warm wood palette and empty selection bubble."
+    },
+    {
+      "build": "same-origin visual pass 3",
+      "time_local": "2026-10-14 11:33:47 +08:00",
+      "output": "/private/tmp/u05-b-client-build-20261014/output-final-review/web-mobile",
+      "result": "Gameplay and Small/timed checks proceeded on this origin; later superseded by CSS-based host-help font sizing and explicit timed-failure title."
+    },
+    {
+      "build": "v4 current",
+      "time_local": "2026-10-14 11:46:14 +08:00",
+      "output": "/private/tmp/u05-b-client-build-20261014/output-final-review/web-mobile",
+      "result": "Latest isolated Creator 3.8.8 build. Master final browser report confirms 360x640 help/timed flow and ordinary mode, including exit without reward, preserved 10 XP and 1/5 progress, aligned workstation, and no browser warnings/errors."
+    }
+  ]
+}

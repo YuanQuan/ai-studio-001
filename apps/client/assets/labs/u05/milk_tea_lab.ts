@@ -1,84 +1,172 @@
-import { _decorator, Color, Component, Graphics, Label, Node, UITransform, Vec3, EventMouse, view, sys, Input, input, JsonAsset, resources } from 'cc';
 import {
-  DEFAULT_PROGRESS, DIMENSIONS, DIMENSION_NAMES, LabConfig, Progress, Run, STORAGE_KEY,
-  VALIDATION_KEY, chooseStage, expireRun, isUnlocked, makeRun, normalizeProgress, remainingSeconds,
-  selectIngredient, settleWin, submitCup, undoIngredient, stagesFor, reconcileUnlocks,
+  _decorator, Component, Node, UITransform, Graphics, Label, Color, view, sys, resources, JsonAsset,
+  input, Input, EventMouse, Vec3, Sprite, SpriteFrame, BitmapFont,
+} from 'cc';
+import {
+  LabConfig, Progress, Run, Stage, Ingredient, Dimension, DIMENSIONS, DIMENSION_NAMES, TIER_IDS, TIER_NAMES,
+  DEFAULT_PROGRESS, STORAGE_KEY, VALIDATION_KEY, normalizeProgress, stagesFor, chooseStage, makeRun,
+  remainingSeconds, expireRun, selectIngredient, undoIngredient, submitCup, settleWin, reconcileUnlocks, isUnlocked,
 } from './milk_tea_state';
+import { U05BitmapText } from './u05_bitmap_text';
+import { U05NineSlicePlate } from './u05_nine_slice_plate';
 
 const { ccclass } = _decorator;
-const PANEL = new Color(19, 34, 51), TEXT = new Color(230, 239, 247);
-const MUTED = new Color(155, 178, 199), BLUE = new Color(108, 193, 224), GOLD = new Color(246, 189, 109);
+const PANEL = new Color(103, 53, 31, 235); // COLOR_SYSTEM wood.deep #67351F
+const TEXT = new Color(250, 242, 218);
+const MUTED = new Color(179, 188, 184);
+const WARM_EDGE = new Color(164, 117, 82);
+const GOLD = new Color(255, 194, 93);
+const DEEP_BROWN = new Color(94, 55, 33);
+const ROOF_TEXT = new Color(255, 234, 198);
+const ASSET_ROOT = 'u05_milk_tea/u05_b/';
+const ASSET_SIZES: Record<string, [number, number]> = {
+  STATIC_BARE: [1024, 1536],
+  ORDER_BUBBLE_EMPTY: [375, 235], ORDER_CUP_BACK: [150, 170], ORDER_CUP_FRONT: [151, 180], ORDER_STRAW: [31, 86],
+  WORK_CUP_BACK: [180, 218], WORK_CUP_FRONT: [189, 238], BTN_RECIPE_BASE: [323, 105], BTN_RECIPE_ICON: [58, 58],
+  BTN_UNDO_BASE: [222, 105], BTN_SERVE_BASE: [362, 105], BTN_SERVE_ICON: [50, 64],
+  BTN_UNDO_ICON: [47, 52], COUNTER_FRONT: [556, 42],
+  CUSTOMER_GHOST: [332, 301], SELECT_TEA: [163, 183], SELECT_MILK: [142, 183], SELECT_TOP: [168, 121],
+  U05_B_T01: [154, 141], U05_B_T02: [154, 141], U05_B_T03: [154, 141],
+  U05_B_M01: [111, 134], U05_B_M02: [130, 131], U05_B_M03: [132, 139],
+  U05_B_P01: [139, 72], U05_B_P02: [139, 69], U05_B_P03: [139, 64],
+  U05_B_P04: [139, 67], U05_B_P05: [139, 62], U05_B_P06: [139, 66],
+  CUP_TEA_T01: [183, 233], CUP_TEA_T02: [183, 233], CUP_TEA_T03: [183, 233],
+  CUP_MILK_M01: [183, 233], CUP_MILK_M02: [183, 233], CUP_MILK_M03: [183, 233],
+  CUP_TOP_P01: [183, 233], CUP_TOP_P02: [183, 233], CUP_TOP_P03: [183, 233],
+  CUP_TOP_P04: [183, 233], CUP_TOP_P05: [183, 233], CUP_TOP_P06: [183, 233],
+};
+const LABEL_POSITIONS: Record<Dimension, Array<[number, number, number, number]>> = {
+  TEA: [[129.5, 586, 131, 44], [129.5, 787.5, 131, 45], [129.5, 992.5, 131, 45]],
+  MILK: [[909, 586.5, 130, 45], [909, 787.5, 130, 45], [909, 992.5, 130, 45]],
+  TOPPING: [[342.5, 943.5, 123, 45], [516.5, 943.5, 123, 45], [690.5, 943.5, 123, 45],
+    [342.5, 1062, 123, 44], [516.5, 1062, 123, 44], [690.5, 1062, 123, 44]],
+};
+
+function ingredientAsset(item: Ingredient): string {
+  const index = item.sort_order < 10 ? `0${item.sort_order}` : String(item.sort_order);
+  if (item.dimension === 'TEA') return `U05_B_T${index}`;
+  if (item.dimension === 'MILK') return `U05_B_M${index}`;
+  return `U05_B_P${index}`;
+}
+function cupContentAsset(item: Ingredient): string {
+  const index = item.sort_order < 10 ? `0${item.sort_order}` : String(item.sort_order);
+  if (item.dimension === 'TEA') return `CUP_TEA_T${index}`;
+  if (item.dimension === 'MILK') return `CUP_MILK_M${index}`;
+  return `CUP_TOP_P${index}`;
+}
+function idFor(recipe: Run['orders'][number], dimension: Dimension): string {
+  return dimension === 'TEA' ? recipe.tea_id : dimension === 'MILK' ? recipe.milk_id : recipe.topping_id;
+}
 
 @ccclass('U05MilkTeaLab')
 export class U05MilkTeaLab extends Component {
+  public onExit: (() => void) | null = null;
+  public setExitHandler(handler: (() => void) | null): void { this.onExit = handler; }
   private root: Node | null = null;
   private config: LabConfig | null = null;
   private configLoaded = false;
+  private bitmapFont: BitmapFont | null = null;
+  private fontLoadAttempted = false;
+  private frameCache = new Map<string, SpriteFrame>();
+  private loadingFrames = new Set<string>();
+  private destroyed = false;
+  private frameWaiters = new Map<string, Array<(frame: SpriteFrame) => void>>();
+  private activeFramePaths = new Set<string>();
+  private pendingFramePaths = new Set<string>();
   private progress: Progress = { ...DEFAULT_PROGRESS };
-  private tierIndex = 0;
+  private validation = { enabled: false, stage: 1 as 1 | 2, unlockGrowth: false, level: 1, soul: 0, spirit: 0 };
   private run: Run | null = null;
-  private validation = { enabled: false, stage: 1, unlockGrowth: false, level: 1, soul: 0, spirit: 0 };
+  private tierIndex = 0;
+  private dirty = true;
+  private warnedStorage = false;
   private status = '';
   private statusColor = TEXT;
-  private recipeOpen = false;
-  private dirty = true;
-  private lastClockSecond = -1;
-  private warnedStorage = false;
-  private readonly actions = new Map<Node, () => void>();
-  private readonly modalActions = new Set<Node>();
+  private actions = new Map<Node, () => void>();
+  private modalActions = new Set<Node>();
   private down: Node | null = null;
-  private resize: (() => void) | null = null;
-  private onExit: (() => void) | null = null;
-  private timerLabel: Label | null = null;
-  private overlayActive = false;
   private lastTouchAt = 0;
-  public setExitHandler(handler: () => void): void { this.onExit = handler; }
+  private lastClockSecond = -1;
+  private timerLabel: Label | null = null;
+  private recipeOpen = false;
+  private exitConfirm = false;
+  private toggleValidation = false;
+  private sessionProgress: Progress | null = null;
+  private lastXp = 0;
 
   protected onLoad(): void {
-    this.readProgress(); this.readValidation();
-    this.root = new Node('U05MilkTeaLab'); this.node.addChild(this.root);
-    this.root.addComponent(UITransform).setContentSize(view.getVisibleSize());
-    this.resize = () => { if (this.root?.isValid) this.root.getComponent(UITransform)?.setContentSize(view.getVisibleSize()); this.dirty = true; };
+    this.destroyed = false;
+    this.readProgress();
+    this.readValidation();
+    this.root = new Node('U05MilkTeaLab');
+    this.node.addChild(this.root);
     view.on('canvas-resize', this.resize, this);
     input.on(Input.EventType.MOUSE_DOWN, this.mouseDown, this);
     input.on(Input.EventType.MOUSE_UP, this.mouseUp, this);
     input.on(Input.EventType.TOUCH_START, this.touchStart, this);
     input.on(Input.EventType.TOUCH_END, this.touchEnd, this);
-    this.render();
     this.loadConfig();
+    this.render();
   }
-
-  private loadConfig():void {if(!this.status.startsWith('损坏'))this.status='';resources.load('u05_milk_tea/config', JsonAsset, (error, asset) => {if (!this.isValid) { if(asset)resources.release('u05_milk_tea/config',JsonAsset); return; }if (error || !asset?.json) { this.status='配置加载失败，请检查资源后重试'; this.statusColor=GOLD; this.dirty=true; return; }this.config = asset.json as LabConfig; this.configLoaded = true; this.reconcileProgress(); this.dirty = true;});}
-
+  private resize = (): void => { this.dirty = true; };
+  private loadConfig(): void {
+    if (this.status.startsWith('损坏')) this.status = '';
+    resources.load('u05_milk_tea/config', JsonAsset, (error, asset) => {
+      if (!this.isValid) { if (asset) resources.release('u05_milk_tea/config', JsonAsset); return; }
+      if (error || !asset?.json) { this.status = '配置加载失败，请检查资源后重试'; this.statusColor = GOLD; this.dirty = true; return; }
+      const config = asset.json as LabConfig;
+      if (config.schema_version !== '2.0' || config.config_version !== 'v0.1' || config.recipes?.length !== 174 ||
+          config.ingredients?.length !== 12 || config.difficulty_stages?.length !== 10 ||
+          config.dimensions?.join(',') !== 'TEA,MILK,TOPPING') {
+        resources.release('u05_milk_tea/config', JsonAsset);
+        this.status = '配置版本或三类数据不一致，已停止加载'; this.statusColor = GOLD; this.dirty = true; return;
+      }
+      this.config = config; this.configLoaded = true;
+      this.loadApprovedFont();
+      this.reconcileProgress(); this.dirty = true;
+    });
+  }
+  private loadApprovedFont(): void {
+    if (this.fontLoadAttempted) return;
+    this.fontLoadAttempted = true;
+    resources.load('u05_milk_tea/u05_b/U05_ART_FONT', BitmapFont, (error, font) => {
+      if (!this.isValid) { if (font) resources.release('u05_milk_tea/u05_b/U05_ART_FONT', BitmapFont); return; }
+      if (error || !font) { this.status = '字体资源加载失败，保留系统字体'; this.statusColor = GOLD; this.dirty = true; return; }
+      this.bitmapFont = font; this.dirty = true;
+    });
+  }
   protected update(): void {
     if (this.run?.status === 'playing') {
       const next = expireRun(this.run, this.now());
-      if (next !== this.run) { this.run = next; this.recipeOpen=false; this.status = '时间到，本局失败'; this.statusColor = GOLD; this.dirty = true; }
+      if (next !== this.run) { this.run = next; this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD; this.dirty = true; }
       const second = remainingSeconds(this.run, this.now());
-      if (this.run.status==='failed') this.recipeOpen=false;
-      if (second !== this.lastClockSecond) { this.lastClockSecond = second ?? -1; if(this.timerLabel)this.timerLabel.string=second===null?'不限时':`剩余 ${second} 秒`; }
+      if (second !== this.lastClockSecond) { this.lastClockSecond = second ?? -1; if (this.timerLabel) this.timerLabel.string = this.clockText(second); }
     }
     if (this.dirty) this.render();
   }
-
   protected onDestroy(): void {
-    view.off('canvas-resize', this.resize!, this);
+    this.destroyed = true;
+    view.off('canvas-resize', this.resize, this);
     input.off(Input.EventType.MOUSE_DOWN, this.mouseDown, this);
     input.off(Input.EventType.MOUSE_UP, this.mouseUp, this);
     input.off(Input.EventType.TOUCH_START, this.touchStart, this);
     input.off(Input.EventType.TOUCH_END, this.touchEnd, this);
-    this.actions.clear(); this.modalActions.clear(); this.down = null; if(this.configLoaded)resources.release('u05_milk_tea/config',JsonAsset); this.configLoaded=false; this.root = null; this.run = null;
+    this.actions.clear(); this.modalActions.clear(); this.down = null;
+    if (this.configLoaded) resources.release('u05_milk_tea/config', JsonAsset);
+    if (this.bitmapFont) resources.release('u05_milk_tea/u05_b/U05_ART_FONT', BitmapFont);
+    this.activeFramePaths.forEach(path => { if (!this.pendingFramePaths.has(path)) resources.release(path, SpriteFrame); });
+    this.activeFramePaths.clear(); this.pendingFramePaths.clear(); this.frameCache.clear(); this.loadingFrames.clear(); this.frameWaiters.clear();
+    this.configLoaded = false; this.bitmapFont = null; this.root = null; this.run = null;
   }
-
   private now(): number { return typeof performance !== 'undefined' ? performance.now() : Date.now(); }
   private readProgress(): void {
-    try { const value = sys.localStorage?.getItem(STORAGE_KEY); if (value) this.progress = normalizeProgress(JSON.parse(value)); else this.progress={...DEFAULT_PROGRESS}; }
+    try { const value = sys.localStorage?.getItem(STORAGE_KEY); this.progress = value ? normalizeProgress(JSON.parse(value)) : { ...DEFAULT_PROGRESS }; }
     catch { this.progress = { ...DEFAULT_PROGRESS }; this.status = '损坏：隔离示例存档已恢复默认进度'; this.statusColor = GOLD; }
   }
   private readValidation(): void {
     try {
       const raw = sys.localStorage?.getItem(VALIDATION_KEY);
-      if (raw) { const value = JSON.parse(raw); this.validation = { enabled: !!value.enabled, stage: value.stage === 2 ? 2 : 1, unlockGrowth: !!value.unlockGrowth, level: Number(value.level)||1, soul: Number(value.soul)||0, spirit: Number(value.spirit)||0 }; }
+      if (raw) { const value = JSON.parse(raw); this.validation = { enabled: !!value.enabled, stage: value.stage === 2 ? 2 : 1,
+        unlockGrowth: !!value.unlockGrowth, level: Number(value.level) || 1, soul: Number(value.soul) || 0, spirit: Number(value.spirit) || 0 }; }
     } catch { this.validation = { enabled: false, stage: 1, unlockGrowth: false, level: 1, soul: 0, spirit: 0 }; }
   }
   private writeProgress(): void {
@@ -86,157 +174,443 @@ export class U05MilkTeaLab extends Component {
     catch { this.warnedStorage = true; }
   }
   private writeValidation(): void {
-    try { sys.localStorage?.setItem(VALIDATION_KEY, JSON.stringify(this.validation)); } catch { /* current session remains usable */ }
+    try { sys.localStorage?.setItem(VALIDATION_KEY, JSON.stringify(this.validation)); } catch { /* 当前验证设置只影响会话 */ }
   }
-
-  private draw(parent: Node, name: string, x: number, y: number, w: number, h: number, color = PANEL): Node {
-    const node = new Node(name); parent.addChild(node); node.setPosition(x, y); node.addComponent(UITransform).setContentSize(w, h);
-    const g = node.addComponent(Graphics); g.fillColor = color; g.roundRect(-w/2, -h/2, w, h, 12); g.fill(); g.strokeColor = BLUE; g.lineWidth = 2; g.roundRect(-w/2, -h/2, w, h, 12); g.stroke();
+  private sourcePos(x: number, y: number): { x: number; y: number } {
+    const scale = 720 / 1024;
+    return { x: (x - 512) * scale, y: (768 - y) * scale };
+  }
+  private showAsset(parent: Node, id: string, source: { x: number; y: number }, size?: [number, number], scale = 720 / 1024): Node {
+    const node = new Node(`Art_${id}`); parent.addChild(node);
+    node.setPosition(source.x, source.y);
+    const [width, height] = size ?? ASSET_SIZES[id] ?? [120, 100];
+    const transform = node.addComponent(UITransform); transform.setContentSize(width * scale, height * scale);
+    const sprite = node.addComponent(Sprite); sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    if (id.startsWith('CUP_')) sprite.trim = false;
+    this.loadFrame(id, frame => { if (node.isValid) sprite.spriteFrame = frame; });
     return node;
   }
-  private text(parent: Node, value: string, x: number, y: number, size: number, color = TEXT, w = 650, h = 48): Label {
-    const node = new Node('Text'); parent.addChild(node); node.setPosition(x, y); node.addComponent(UITransform).setContentSize(w, h);
-    const l = node.addComponent(Label); l.string = value; l.fontSize = size; l.lineHeight = size + 6; l.color = color; l.overflow = Label.Overflow.SHRINK; l.horizontalAlign = Label.HorizontalAlign.CENTER; l.verticalAlign = Label.VerticalAlign.CENTER; return l;
+  private slicePlate(parent: Node, name: string, x: number, y: number, width: number, height: number): Node {
+    const node = new Node(name); parent.addChild(node); node.setPosition(x, y);
+    const transform = node.addComponent(UITransform); transform.setContentSize(width, height);
+    node.setScale(720 / 1024, 720 / 1024, 1);
+    const plate = node.addComponent(U05NineSlicePlate);
+    this.loadFrame('LABEL_PLATE_9SLICE', frame => { if (node.isValid) plate.bind(frame, width, height); });
+    return node;
+  }
+  private loadFrame(id: string, done: (frame: SpriteFrame) => void): void {
+    const path = `${ASSET_ROOT}${id}/spriteFrame`;
+    if (this.destroyed || !this.isValid) return;
+    const cached = this.frameCache.get(id);
+    if (cached) { done(cached); return; }
+    if (this.loadingFrames.has(id)) {
+      const waiters = this.frameWaiters.get(id) ?? [];
+      waiters.push(done); this.frameWaiters.set(id, waiters); return;
+    }
+    this.loadingFrames.add(id); this.activeFramePaths.add(path); this.pendingFramePaths.add(path);
+    resources.load(path, SpriteFrame, (error, frame) => {
+      this.loadingFrames.delete(id); this.pendingFramePaths.delete(path);
+      if (this.destroyed || !this.isValid) { if (frame) resources.release(path, SpriteFrame); return; }
+      const waiters = this.frameWaiters.get(id) ?? []; this.frameWaiters.delete(id);
+      if (error || !frame) { this.activeFramePaths.delete(path); this.status = '图片资源加载失败'; this.statusColor = GOLD; this.dirty = true; return; }
+      this.frameCache.set(id, frame); done(frame); waiters.forEach(waiter => waiter(frame));
+    });
+  }
+  private draw(parent: Node, name: string, x: number, y: number, w: number, h: number, color = PANEL): Node {
+    const node = new Node(name); parent.addChild(node); node.setPosition(x, y);
+    node.addComponent(UITransform).setContentSize(w, h);
+    const g = node.addComponent(Graphics); g.fillColor = color; g.roundRect(-w/2, -h/2, w, h, 12); g.fill();
+    g.strokeColor = WARM_EDGE; g.lineWidth = 2; g.roundRect(-w/2, -h/2, w, h, 12); g.stroke();
+    return node;
+  }
+  private text(parent: Node, value: string, x: number, y: number, size: number, color = TEXT, w = 650, h = 44): Label {
+    const node = new Node('Text'); parent.addChild(node); node.setPosition(x, y);
+    node.addComponent(UITransform).setContentSize(w, h);
+    const label = node.addComponent(Label); label.string = value; label.fontSize = size; label.lineHeight = size + 5;
+    label.color = color; label.overflow = Label.Overflow.CLAMP; label.horizontalAlign = Label.HorizontalAlign.CENTER;
+    label.verticalAlign = Label.VerticalAlign.CENTER;
+    if (this.bitmapFont) {
+      const fontResult = U05BitmapText.bindLabel(label, this.bitmapFont, value);
+      if (fontResult.missing.length) console.warn(`[U05 BMFont] 未覆盖字形：${fontResult.missing.join('')}`);
+    }
+    return label;
+  }
+  private sourceText(value: string, sourceX: number, sourceY: number, sourceSize: number, color: Color,
+    sourceWidth: number, sourceHeight: number): Label {
+    const scale = 720 / 1024; const pos = this.sourcePos(sourceX, sourceY);
+    return this.text(this.root!, value, pos.x, pos.y, sourceSize * scale, color, sourceWidth * scale, sourceHeight * scale);
+  }
+  private clockText(seconds: number | null): string {
+    if (seconds === null) return '不限时';
+    const minutes = Math.floor(seconds / 60); const remainder = seconds % 60;
+    return `${minutes < 10 ? `0${minutes}` : minutes}:${remainder < 10 ? `0${remainder}` : remainder}`;
+  }
+  private minTouchSize(): number {
+    const visible = view.getVisibleSize();
+    const fit = Math.min((visible.width - 16) / 720, (visible.height - 16) / 1080, 1);
+    const cssWidth = document.querySelector('canvas')?.getBoundingClientRect().width || window.innerWidth;
+    const cssPerLocalUnit = cssWidth * fit / visible.width;
+    return cssPerLocalUnit > 0 ? 48 / cssPerLocalUnit : 48;
   }
   private button(parent: Node, value: string, x: number, y: number, w: number, h: number, action: () => void, enabled = true): Node {
-    const node = this.draw(parent, `Button_${value}`, x, y, w, h, enabled ? PANEL : new Color(17, 27, 39));
-    this.text(node, value, 0, 0, Math.min(28, h * .65), enabled ? TEXT : MUTED, w - 12, h - 8);
-    if (enabled) { this.actions.set(node, action); if(this.overlayActive)this.modalActions.add(node); }
+    const node = this.draw(parent, `Button_${value}`, x, y, w, h, enabled ? PANEL : new Color(75, 59, 52, 220));
+    this.text(node, value, 0, 0, Math.min(24, h * 0.48), enabled ? TEXT : MUTED, w - 12, h - 8);
+    if (enabled) { this.actions.set(node, action); if (this.modalActive()) this.modalActions.add(node); }
     return node;
   }
-  private paint(node: Node, pressed: boolean): void {
-    const size = node.getComponent(UITransform)?.contentSize, g = node.getComponent(Graphics); if (!size || !g) return;
-    g.clear(); g.fillColor = pressed ? BLUE : PANEL; g.roundRect(-size.width/2,-size.height/2,size.width,size.height,12); g.fill(); g.strokeColor=BLUE; g.lineWidth=2; g.roundRect(-size.width/2,-size.height/2,size.width,size.height,12); g.stroke();
+  private imageButton(parent: Node, asset: string, label: string, sourceCenter: [number, number], icon: string,
+    iconCenter: [number, number], action: () => void, enabled = true): Node {
+    const pos = this.sourcePos(sourceCenter[0], sourceCenter[1]);
+    const size = ASSET_SIZES[asset];
+    const node = this.showAsset(parent, asset, pos, size);
+    const [w, h] = size;
+    const transform = node.getComponent(UITransform)!; transform.setContentSize(w * 720 / 1024, h * 720 / 1024);
+    const iconPos = this.sourcePos(iconCenter[0], iconCenter[1]);
+    const iconNode = this.showAsset(node, icon, { x: iconPos.x - pos.x, y: iconPos.y - pos.y });
+    iconNode.setScale(1, 1, 1);
+    const labelColor = enabled ? DEEP_BROWN : new Color(136, 112, 90);
+    const text = this.text(node, label, 26, 0, 26, labelColor, w * .9, h * .74);
+    text.node.setPosition((sourceCenter[0] - iconCenter[0]) * 720 / 1024 / 2, 0);
+    if (enabled) {
+      const hit = new Node(`ButtonHit_${label}`); parent.addChild(hit);
+      hit.setPosition(pos.x, pos.y + Math.max(0, this.minTouchSize() - h * 720 / 1024) / 2);
+      hit.addComponent(UITransform).setContentSize(w * 720 / 1024, Math.max(h * 720 / 1024, this.minTouchSize()));
+      this.actions.set(hit, action); if (this.modalActive()) this.modalActions.add(hit);
+    }
+    else { const base = node.getComponent(Sprite); if (base) base.color = new Color(188, 188, 188); }
+    return node;
   }
-  private mouseDown(event: EventMouse): void { if(event.getButton()!==EventMouse.BUTTON_LEFT||Date.now()-this.lastTouchAt<500)return; this.down=this.hit(event.getUILocation()); }
-  private mouseUp(event: EventMouse): void { if(event.getButton()!==EventMouse.BUTTON_LEFT||Date.now()-this.lastTouchAt<500)return; const target=this.hit(event.getUILocation()); if(target&&target===this.down)this.actions.get(target)?.(); this.down=null; }
-  private touchStart(event:any):void{this.lastTouchAt=Date.now();this.down=this.hit(event.getUILocation());}
-  private touchEnd(event:any):void{this.lastTouchAt=Date.now();const target=this.hit(event.getUILocation());if(target&&target===this.down)this.actions.get(target)?.();this.down=null;}
-  private hit(point: {x:number;y:number}): Node | null {
-    const candidates=this.overlayActive?this.modalActions:this.actions.keys();
-    for(const node of candidates){if(!node.isValid)continue;const transform=node.getComponent(UITransform);if(!transform||!node.activeInHierarchy)continue;const local=transform.convertToNodeSpaceAR(new Vec3(point.x,point.y,0));const size=transform.contentSize;if(Math.abs(local.x)<=size.width/2&&Math.abs(local.y)<=size.height/2)return node;}
-    return null;
+  private paintSelected(node: Node, dimension: Dimension): void {
+    const asset = dimension === 'TEA' ? 'SELECT_TEA' : dimension === 'MILK' ? 'SELECT_MILK' : 'SELECT_TOP';
+    const frameNode = new Node(`Selected_${dimension}`); node.addChild(frameNode);
+    const [width, height] = ASSET_SIZES[asset];
+    frameNode.addComponent(UITransform).setContentSize(width * 720 / 1024, height * 720 / 1024);
+    const sprite = frameNode.addComponent(Sprite); sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+    this.loadFrame(asset, frame => { if (frameNode.isValid) sprite.spriteFrame = frame; });
   }
-
+  private mouseDown(event: EventMouse): void { if (event.getButton() !== EventMouse.BUTTON_LEFT || Date.now() - this.lastTouchAt < 500) return; this.down = this.hit(event.getUILocation()); }
+  private mouseUp(event: EventMouse): void { if (event.getButton() !== EventMouse.BUTTON_LEFT || Date.now() - this.lastTouchAt < 500) return; const target = this.hit(event.getUILocation()); if (target && target === this.down) this.actions.get(target)?.(); this.down = null; }
+  private touchStart(event: any): void { this.lastTouchAt = Date.now(); this.down = this.hit(event.getUILocation()); }
+  private touchEnd(event: any): void { this.lastTouchAt = Date.now(); const target = this.hit(event.getUILocation()); if (target && target === this.down) this.actions.get(target)?.(); this.down = null; }
+  private modalActive(): boolean { return this.toggleValidation || this.exitConfirm || !!this.run && ['won', 'failed', 'exited'].includes(this.run.status); }
+  private hit(point: { x: number; y: number }): Node | null {
+    const candidates = this.modalActive() ? this.modalActions : this.actions.keys();
+    let nearestIngredient: Node | null = null; let nearestDistance = Number.POSITIVE_INFINITY;
+    for (const node of candidates) {
+      if (!node.isValid || !node.activeInHierarchy) continue;
+      const transform = node.getComponent(UITransform); if (!transform) continue;
+      const local = transform.convertToNodeSpaceAR(new Vec3(point.x, point.y, 0)); const size = transform.contentSize;
+      if (Math.abs(local.x) <= size.width / 2 && Math.abs(local.y) <= size.height / 2) {
+        if (node.name.startsWith('Hit_')) {
+          const distance = local.x * local.x + local.y * local.y;
+          if (distance < nearestDistance) { nearestIngredient = node; nearestDistance = distance; }
+        } else return node;
+      }
+    }
+    return nearestIngredient;
+  }
   private render(): void {
-    if (!this.root?.isValid) return; this.dirty = false; this.actions.clear(); this.modalActions.clear(); this.root.destroyAllChildren(); this.timerLabel=null;this.overlayActive=false;
-    if (!this.config && this.status.startsWith('配置加载失败')) { this.text(this.root,this.status,0,0,19,GOLD,620,90);this.button(this.root,'重试加载',0,-75,170,48,()=>this.loadConfig());this.button(this.root,'返回菜单',0,-136,170,48,()=>this.leave());return; }
-    if (!this.config) { this.text(this.root,'正在载入奶茶配置…',0,0,22,TEXT);this.button(this.root,'返回菜单',0,-90,170,48,()=>this.leave());return; }
-    const size = view.getVisibleSize(), safe = sys.getSafeAreaRect(false); const top = Math.min(size.height/2, safe.y+safe.height-size.height/2), bottom=Math.max(-size.height/2,safe.y-size.height/2);
-    const xscale = Math.min(1,(size.width-24)/660); this.root.setScale(xscale,xscale,1);
-    const titleY=top-38; this.text(this.root,'U05 奶茶店',0,titleY,30,GOLD,650,48);
-    if (this.warnedStorage) this.status='浏览器不支持写入：本次进度只保留在当前页面';
-    const tierId=Array.from(new Set(this.config.difficulty_stages.map(stage=>stage.tier_id)))[this.tierIndex];
-    const tierStages=stagesFor(this.config,tierId);
-    const tier={tier_id:tierId,display_name:['简单','中等','困难','地狱','噩梦'][this.tierIndex],stages:tierStages,recipe_dims:tierStages[0]?.recipe_dims??3};
-    if (!this.run) this.renderSelection(tier, top, bottom);
-    else this.renderGame(tier, top, bottom);
+    if (!this.root?.isValid) return;
+    this.dirty = false; this.actions.clear(); this.modalActions.clear(); this.root.destroyAllChildren(); this.timerLabel = null;
+    const size = view.getVisibleSize();
+    const fit = Math.min((size.width - 16) / 720, (size.height - 16) / 1080, 1);
+    this.root.setScale(fit, fit, 1);
+    this.showAsset(this.root, 'STATIC_BARE', { x: 0, y: 0 }, [1024, 1536], 720 / 1024);
+    if (!this.config) {
+      this.text(this.root, this.status || '正在载入奶茶配置…', 0, 0, 21, this.statusColor, 620, 90);
+      if (this.status.startsWith('配置加载失败')) this.button(this.root, '重试加载', 0, -80, 170, 48, () => this.loadConfig());
+      this.button(this.root, '返回菜单', 0, -142, 170, 48, () => this.leave());
+      return;
+    }
+    if (this.warnedStorage) this.status = '浏览器不支持写入：进度只保留在当前页面';
+    const tierId = TIER_IDS[this.tierIndex];
+    const stages = stagesFor(this.config, tierId);
+    const tier = { tier_id: tierId, display_name: TIER_NAMES[tierId], stages, recipe_dims: 3 };
+    if (!this.run) this.renderSelection(tier);
+    else this.renderGame(tier);
   }
-  private renderSelection(tier: any, top: number, bottom: number): void {
-    const y=top-105;
-    const normalProgress=this.readSessionProgress();
-    this.text(this.root,`熟练度 ${normalProgress.xp}　已通关 ${normalProgress.cleared.length}/5 档`,0,y,19,MUTED,650,40);
-    this.text(this.root,`选择难度　${tier.display_name}`,0,y-58,26,GOLD,650,42);
-    const tierW=122, gap=7, start=-((tierW+gap)*4)/2;
-    Array.from(new Set(this.config!.difficulty_stages.map(stage=>stage.tier_id))).forEach((id,index)=>{
-      const label=['简单','中等','困难','地狱','噩梦'][index];
-      const unlocked=this.validation.enabled || isUnlocked(this.config!,normalProgress,id,this.growthInputs(),false);
-      this.button(this.root,unlocked?label:'锁 '+label,start+index*(tierW+gap),y-120,tierW,58,()=>{this.tierIndex=index;this.status='';this.dirty=true;},unlocked);
+  private renderSelection(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
+    // Approved empty bubble covers the background's discarded ghost-bubble tail on the selection page.
+    this.showAsset(this.root!, 'ORDER_BUBBLE_EMPTY', this.sourcePos(654.5, 405.5), [375, 235]);
+    const normal = this.readSessionProgress();
+    this.text(this.root!, `熟练度 ${normal.xp} 已通关 ${normal.cleared.length}/5 档`, 0, 474, 16, TEXT, 660, 32);
+    this.text(this.root!, `选择难度　${tier.display_name}`, 0, 427, 22, GOLD, 620, 38);
+    const width = 118, gap = 7, left = -((width + gap) * 4) / 2;
+    TIER_IDS.forEach((id, index) => {
+      const unlocked = this.validation.enabled || isUnlocked(this.config!, normal, id,
+        { level: this.validation.level, soul: this.validation.soul, spirit: this.validation.spirit, growthEnabled: this.validation.unlockGrowth }, false);
+      this.button(this.root!, unlocked ? TIER_NAMES[id] : `锁 ${TIER_NAMES[id]}`, left + index * (width + gap), 374, width, 46,
+        () => { this.tierIndex = index; this.status = ''; this.dirty = true; }, unlocked);
     });
-    const activeProgress=this.readSessionProgress();
-    const currentStage=chooseStage(this.config!,tier.tier_id,activeProgress.xp,this.validation.enabled?this.validation.stage:null);
-    const stage=`本局阶段：${currentStage.stage_no}${this.validation.enabled?'（验证设置）':''}`;
-    this.text(this.root,stage,0,y-180,18,MUTED,650,34);
-    const nextUnlock=this.config!.unlock_conditions.find(item=>item.tier_id===(['EASY','MEDIUM','HARD','HELL','NIGHTMARE'][Math.min(4,this.tierIndex+1)]));
-    const prevName=['简单','中等','困难','地狱','噩梦'][Math.max(0,this.tierIndex)];
-    if(nextUnlock&&!this.progress.unlocked.includes(nextUnlock.tier_id))this.text(this.root,this.unlockSummary(nextUnlock,prevName),0,y-220,24,MUTED,650,58);
-    this.draw(this.root,'CupPreview',0,y-360,250,180,new Color(37,60,72));
-    this.draw(this.root,'CupBody',0,y-365,82,112,new Color(241,225,194));
-    this.draw(this.root,'TeaLayer',0,y-385,70,48,new Color(185,129,76));
-    this.draw(this.root,'CupTop',0,y-306,92,10,new Color(227,216,197));
-    this.draw(this.root,'Straw',25,y-287,8,46,new Color(239,143,117));
-    this.text(this.root,'● ● ●',0,y-414,18,new Color(66,49,41),100,26);
-    this.text(this.root,'本档饮品备选',0,y-472,24,MUTED,300,36);
-    this.button(this.root,'开始制作',0,bottom+210,300,70,()=>this.beginRun(tier),!!this.config && !!tier.stages.length);
-    this.button(this.root,'返回菜单',0,bottom+126,210,56,()=>this.leave());
-    this.button(this.root,this.toggleValidation?'关闭验证设置':'示例验证设置',0,bottom+58,230,46,()=>{this.toggleValidation=!this.toggleValidation;this.overlayActive=this.toggleValidation;this.dirty=true;});
+    const progress = this.readSessionProgress();
+    const stage = chooseStage(this.config!, tier.tier_id, progress.xp, this.validation.enabled ? this.validation.stage : null);
+    this.sourceText(`阶段 ${stage.stage_no}/2  每局 3 杯  ${stage.time_sec === null ? '不限时' : `${stage.time_sec} 秒`}`,
+      654.5, 376, 27, DEEP_BROWN, 340, 42);
+    this.sourceText(`茶 ${stage.tea_options}/3  奶 ${stage.milk_options}/3  小料 ${stage.topping_options}/6`,
+      654.5, 435, 27, DEEP_BROWN, 340, 42);
+    this.showAsset(this.root!, 'CUSTOMER_GHOST', this.sourcePos(475, 634.5));
+    this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
+    this.renderIngredientGallery(stage);
+    this.showCupComposition(this.root!, this.sourcePos(509.5, 1209), 1, null, false);
+    this.button(this.root!, '开始制作', 0, -410, 260, 54, () => this.beginRun(tier), !!tier.stages.length);
+    this.button(this.root!, '返回菜单', 0, -466, 220, 38, () => this.leave());
+    this.button(this.root!, this.toggleValidation ? '关闭验证设置' : '示例验证设置', 0, -514, 210, 34,
+      () => { this.toggleValidation = !this.toggleValidation; this.dirty = true; });
     if (this.toggleValidation) this.renderValidation();
-    this.text(this.root,this.status,0,bottom+20,16,this.statusColor,660,34);
+    if (this.status) this.text(this.root!, this.status, 0, 248, 14, this.statusColor, 660, 24);
   }
-  private unlockSummary(condition:any,previousName:string):string{const parts=[`${previousName}通关`];if(condition.xp_enabled)parts.push(`熟练度 ${condition.xp_min}`);if(condition.level_enabled)parts.push(`店长等级 ${condition.level_min}`);if(condition.soul_enabled)parts.push(`魂 ${condition.soul_min}`);if(condition.spirit_enabled)parts.push(`魄 ${condition.spirit_min}`);return `下一档解锁：${previousName}通关\n${parts.slice(1).join('＋')}`;}
-  private toggleValidation=false;
-  private renderValidation(): void {
-    this.overlayActive=true;
-    const y=0;
-    this.draw(this.root,'ValidationPanel',0,y,620,480,new Color(13,26,40));
-    this.text(this.root,'示例验证设置',0,y+190,24,GOLD,590,38);
-    this.text(this.root,'仅影响当前示例会话，不会写入正常进度',0,y+150,15,MUTED,590,30);
-    this.button(this.root,this.validation.enabled?'验证模式：开':'验证模式：关',-150,y+92,220,46,()=>{this.validation.enabled=!this.validation.enabled;this.writeValidation();this.sessionProgress=null;this.dirty=true;});
-    this.button(this.root,`阶段 ${this.validation.stage}`,145,y+92,180,46,()=>{this.validation.stage=this.validation.stage===1?2:1;this.writeValidation();this.dirty=true;});
-    this.button(this.root,'重置隔离存档',0,y+34,200,46,()=>{this.progress={...DEFAULT_PROGRESS};this.sessionProgress=null;this.writeProgress();this.status='U05 隔离进度已重置';this.dirty=true;});
-    this.button(this.root,`等级 ${this.validation.level}`, -205,y-32,130,40,()=>{this.validation.level=this.validation.level>=3?1:this.validation.level+1;this.writeValidation();this.reconcileProgress();this.dirty=true;});
-    this.button(this.root,`魂 ${this.validation.soul}`, -65,y-32,110,40,()=>{this.validation.soul=(this.validation.soul+1)%4;this.writeValidation();this.reconcileProgress();this.dirty=true;});
-    this.button(this.root,`魄 ${this.validation.spirit}`, 75,y-32,110,40,()=>{this.validation.spirit=(this.validation.spirit+1)%8;this.writeValidation();this.reconcileProgress();this.dirty=true;});
-    this.button(this.root,'完成设置',0,y-100,180,48,()=>{this.toggleValidation=false;this.overlayActive=false;this.dirty=true;});
-  }
-
-  private renderGame(tier:any,top:number,bottom:number):void {
-    const run=this.run!; const y=top-106; const seconds=remainingSeconds(run,this.now());
-    this.text(this.root,`${tier.display_name}　${run.stage.stage_no}/2 阶段　${Math.min(run.orderIndex+1,run.orders.length)}/${run.orders.length} 杯`,0,y,20,GOLD,650,38);
-    this.timerLabel=this.text(this.root,seconds===null?'不限时':`剩余 ${seconds} 秒`,0,y-46,23,seconds!==null&&seconds<20?GOLD:TEXT,600,38);
-    const recipe=run.orders[Math.min(run.orderIndex,run.orders.length-1)];
-    this.draw(this.root,'OrderPanel',0,y-142,620,120,new Color(27,44,58));
-    this.text(this.root,recipe.drink_name,0,y-111,22,GOLD,580,34);
-    const ingredientMap=new Map((this.config?.ingredients??[]).map(item=>[item.ingredient_id,item.name]));
-    const ids:any={TEA:recipe.tea_id,MILK:recipe.milk_id,TOPPING:recipe.topping_id,SWEET:recipe.sweet_id,ICE:recipe.ice_id};
-    const hint=Object.keys(run.optionPool).map(dim=>`${DIMENSION_NAMES[dim]}：${ingredientMap.get(ids[dim])??'—'}`).join('　');
-    if(run.stage.recipe_dims===3) this.text(this.root,hint,0,y-157,16,TEXT,590,38);
-    const dims=Object.keys(run.optionPool); const sectionTop=y-232; const sectionBottom=bottom+260;
-    const rowGap=Math.max(63,Math.min(92,(sectionTop-sectionBottom)/dims.length));
-    dims.forEach((dim,index)=>{
-      const rowY=sectionTop-index*rowGap;
-      this.text(this.root,`${DIMENSION_NAMES[dim]}　${run.selected[dim]?`已选 ${run.optionPool[dim].find((o:any)=>o.ingredient_id===run.selected[dim])?.name}`:'请选择'}`,0,rowY,24,MUTED,620,36);
-      const options=run.optionPool[dim], gap=8, w=Math.min(136,(620-gap*(options.length-1))/options.length);
-      const left=-(w*options.length+gap*(options.length-1))/2;
-      options.forEach((item:any,itemIndex:number)=>this.button(this.root,item.name,left+w/2+itemIndex*(w+gap),rowY-39,w,46,()=>this.choose(dim,item.ingredient_id)));
+  private renderIngredientGallery(stage: Stage, drawToppingCategory = true): void {
+    if (!this.config) return;
+    this.renderCategoryLabels(drawToppingCategory);
+    const positions: Record<Dimension, Array<[number, number]>> = {
+      TEA: [[127, 496], [132, 700], [132, 904]],
+      MILK: [[913, 502], [915, 702], [916, 906]],
+      TOPPING: [[342, 892], [516, 894], [690, 896], [342, 1008], [516, 1012], [690, 1010]],
+    };
+    const counts: Record<Dimension, number> = { TEA: stage.tea_options, MILK: stage.milk_options, TOPPING: stage.topping_options };
+    DIMENSIONS.forEach(dimension => {
+      this.config!.ingredients.filter(item => item.dimension === dimension).sort((a, b) => a.sort_order - b.sort_order).forEach(item => {
+        const source = positions[dimension][item.sort_order - 1]; if (!source) return;
+        const pos = this.sourcePos(source[0], source[1]);
+        const asset = ingredientAsset(item); const [assetW, assetH] = ASSET_SIZES[asset] ?? [128, 128];
+        const available = item.sort_order <= counts[dimension];
+        const node = this.showAsset(this.root!, asset, pos, [assetW, assetH]);
+        const selected = this.run?.selected[dimension] === item.ingredient_id;
+        if (selected) this.paintSelected(node, dimension);
+        if (!available) node.setScale(.55, .55, 1);
+        const [labelX, labelY, labelW, labelH] = LABEL_POSITIONS[dimension][item.sort_order - 1];
+        const labelPos = this.sourcePos(labelX, labelY); const displayW = labelW * 720 / 1024; const displayH = labelH * 720 / 1024;
+        this.slicePlate(this.root!, `LabelPlate_${item.ingredient_id}`, labelPos.x, labelPos.y, labelW, labelH);
+        this.text(this.root!, available ? item.name : '未开放', labelPos.x, labelPos.y, 30 * 720 / 1024,
+          available ? DEEP_BROWN : new Color(136, 112, 90), displayW - 8, displayH - 4);
+        const left = Math.min(source[0] - assetW / 2, labelX - labelW / 2);
+        const right = Math.max(source[0] + assetW / 2, labelX + labelW / 2);
+        const top = Math.min(source[1] - assetH / 2, labelY - labelH / 2);
+        const bottom = Math.max(source[1] + assetH / 2, labelY + labelH / 2);
+        const hitPos = this.sourcePos((left + right) / 2, (top + bottom) / 2);
+        const hit = new Node(`Hit_${item.ingredient_id}`); this.root!.addChild(hit); hit.setPosition(hitPos.x, hitPos.y);
+        const hitScale = 720 / 1024;
+        hit.addComponent(UITransform).setContentSize(Math.max((right - left) * hitScale, this.minTouchSize()),
+          Math.max((bottom - top) * hitScale, this.minTouchSize()));
+        if (available && this.run) this.actions.set(hit, () => this.choose(dimension, item.ingredient_id));
+      });
     });
-    this.button(this.root,'撤销一项',-205,bottom+143,150,50,()=>this.undo(),Object.keys(run.selected).length>0);
-    this.button(this.root,this.recipeOpen?'收起配方':'查看配方',0,bottom+143,170,50,()=>{this.recipeOpen=!this.recipeOpen;this.dirty=true;});
-    this.button(this.root,'确认交杯',205,bottom+143,150,50,()=>this.submit(),run.status==='playing'&&Object.keys(run.optionPool).every(dim=>!!run.selected[dim]));
-    this.button(this.root,'退出本局',0,bottom+79,180,46,()=>this.confirmExit(),!this.recipeOpen);
-    if(this.recipeOpen){this.overlayActive=true;this.draw(this.root,'RecipeOverlay',0,0,Math.min(610,view.getVisibleSize().width-32),260,new Color(24,41,58));this.text(this.root,recipe.drink_name,0,84,22,GOLD,570,38);const ingredientMap=new Map((this.config?.ingredients??[]).map(item=>[item.ingredient_id,item.name]));const ids:any={TEA:recipe.tea_id,MILK:recipe.milk_id,TOPPING:recipe.topping_id,SWEET:recipe.sweet_id,ICE:recipe.ice_id};this.text(this.root,DIMENSIONS.filter(dim=>ids[dim]).map(dim=>`${DIMENSION_NAMES[dim]}：${ingredientMap.get(ids[dim])}`).join('\n'),0,0,24,TEXT,560,150);this.button(this.root,'继续制作',0,-98,190,48,()=>{this.recipeOpen=false;this.dirty=true;});}
-    if(run.status==='won'||run.status==='failed'||run.status==='exited'){this.overlayActive=true;this.renderResult(bottom);}
-    this.text(this.root,this.status,0,bottom+26,24,this.statusColor,660,42);
   }
-  private renderResult(bottom:number):void{
-    const won=this.run!.status==='won';this.draw(this.root,'ResultOverlay',0,0,560,310,new Color(13,26,40));
-    this.text(this.root,won?'三杯完成！':'本局结束',0,92,30,GOLD,520,48);
-    if(won){this.text(this.root,`本地示例熟练度 +${this.lastXp}`,0,42,18,TEXT,500,34);this.button(this.root,'再玩一局',0,-42,190,54,()=>this.retry());this.button(this.root,'返回菜单',0,-112,190,54,()=>this.leave());}
-    else {this.button(this.root,'重试本档',-110,-78,190,54,()=>this.retry());this.button(this.root,'返回菜单',110,-78,190,54,()=>this.leave());}
+  private renderGame(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
+    const run = this.run!; const seconds = remainingSeconds(run, this.now());
+    this.renderSourceHeader(run, seconds);
+    this.renderIngredientGallery(run.stage, false);
+    this.showAsset(this.root!, 'CUSTOMER_GHOST', this.sourcePos(475, 634.5));
+    this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
+    this.renderToppingCategoryLabel();
+    this.showCupComposition(this.root!, this.sourcePos(652.5, 416), 1, run.orders[Math.min(run.orderIndex, run.orders.length - 1)], true);
+    this.showCupComposition(this.root!, this.sourcePos(509.5, 1209.5), 1, run.orders[Math.min(run.orderIndex, run.orders.length - 1)], false, run.selected);
+    const order = run.orders[Math.min(run.orderIndex, run.orders.length - 1)];
+    this.imageButton(this.root!, 'BTN_UNDO_BASE', '撤销一项', [518, 1490], 'BTN_UNDO_ICON', [464.5, 1480],
+      () => this.undo(), DIMENSIONS.some(dim => !!run.selected[dim]));
+    this.imageButton(this.root!, 'BTN_RECIPE_BASE', this.recipeOpen ? '收起配方' : '查看配方', [191, 1490], 'BTN_RECIPE_ICON', [112, 1483],
+      () => { this.recipeOpen = !this.recipeOpen; this.dirty = true; });
+    const complete = DIMENSIONS.every(dim => !!run.selected[dim]);
+    this.imageButton(this.root!, 'BTN_SERVE_BASE', '确认', [813, 1490], 'BTN_SERVE_ICON', [718, 1482],
+      () => this.submit(), complete && run.status === 'playing');
+    this.renderRecipePanel(order);
+    this.renderHelpAndExit(order);
+    if (this.exitConfirm) this.renderExitConfirm();
+    if (run.status === 'won' || run.status === 'failed' || run.status === 'exited') this.renderResult();
+    if (this.status) this.sourceText(this.status, 512, 1380, 28, DEEP_BROWN, 720, 46);
   }
-  private lastXp=0;
-
-  private sessionProgress:Progress|null=null;
-  private readSessionProgress():Progress{return this.validation.enabled?(this.sessionProgress??reconcileUnlocks(this.config!,this.progress,this.growthInputs(),true)):this.progress;}
-  private growthInputs(){return {level:this.validation.level,soul:this.validation.soul,spirit:this.validation.spirit,growthEnabled:this.validation.unlockGrowth};}
-  private reconcileProgress():void{if(!this.config)return;if(this.validation.enabled){this.sessionProgress=reconcileUnlocks(this.config,this.readSessionProgress(),this.growthInputs(),true);return;}this.progress=reconcileUnlocks(this.config,this.progress,this.growthInputs(),false);this.writeProgress();}
-  private beginRun(tier:any):void{
-    const progress=this.readSessionProgress();
-    if(!this.validation.enabled&&!isUnlocked(this.config!,progress,tier.tier_id,this.growthInputs(),false)){this.status='此难度尚未解锁';this.statusColor=GOLD;this.dirty=true;return;}
-    const stage=chooseStage(this.config!,tier.tier_id,progress.xp,this.validation.enabled?this.validation.stage:null);
-    this.run=makeRun(this.config!,stage,this.now()); this.status='';this.statusColor=TEXT;this.recipeOpen=false;this.lastClockSecond=-1;this.dirty=true;
+  private renderSourceHeader(run: Run, seconds: number | null): void {
+    this.sourceText(`当前订单 ${Math.min(run.orderIndex + 1, run.orders.length)}/${run.orders.length}`,
+      233, 96, 34, ROOF_TEXT, 214, 50);
+    this.timerLabel = this.sourceText(this.clockText(seconds), 881, 96, 34,
+      seconds !== null && seconds < 20 ? GOLD : ROOF_TEXT, 124, 50);
   }
-  private choose(dim:string,id:string):void{if(!this.run)return;this.run=selectIngredient(this.run,dim,id,this.now());if(this.run.status==='failed'){this.recipeOpen=false;this.status='时间到，本局失败';this.statusColor=GOLD;}this.dirty=true;}
-  private undo():void{if(!this.run)return;const dimension=[...DIMENSIONS].reverse().find(dim=>!!this.run?.selected[dim]);if(dimension)this.run=undoIngredient(this.run,dimension,this.now());this.dirty=true;}
-  private submit():void{
-    if(!this.run)return;const result=submitCup(this.run,this.now());this.run=result.run;
-    if(result.result==='expired')this.recipeOpen=false;
-    this.statusColor=result.result==='wrong'?GOLD:TEXT;
-    this.status=result.result==='incomplete'?'请先选齐所有原料':result.result==='wrong'?'配方不对，请重做当前这杯':result.result==='expired'?'时间到，本局失败':result.result==='won'?'正确！本局完成':'正确，下一杯！';
-    if(result.result==='won'){this.recipeOpen=false;const base=this.readSessionProgress();const settled=settleWin(this.config!,base,this.run,this.growthInputs(),this.validation.enabled);const next=reconcileUnlocks(this.config!,settled.progress,this.growthInputs(),false);this.run=settled.run;this.lastXp=settled.xpAdded;if(this.validation.enabled){this.sessionProgress=next;}else{this.progress=next;this.writeProgress();}}
-    this.dirty=true;
+  private renderCategoryLabels(drawTopping: boolean): void {
+    this.sourceText('茶', 137, 366, 36, DEEP_BROWN, 56, 54);
+    this.sourceText('奶', 935, 367, 36, DEEP_BROWN, 54, 54);
+    if (drawTopping) this.renderToppingCategoryLabel();
   }
-  private confirmExit():void{if(!this.run)return;this.recipeOpen=false;this.run={...this.run,status:'exited'};this.status='离开后本局不计熟练度';this.statusColor=GOLD;this.dirty=true;}
-  private retry():void{const tierId=Array.from(new Set(this.config!.difficulty_stages.map(stage=>stage.tier_id)))[this.tierIndex];const stages=stagesFor(this.config!,tierId);const tier={tier_id:tierId,stages};this.run=null;this.beginRun(tier);}
-  private leave():void{this.run=null;this.recipeOpen=false;this.status='';this.actions.clear();this.modalActions.clear();this.onExit?.();}
+  private renderToppingCategoryLabel(): void {
+    this.sourceText('小料', 536, 823, 34, DEEP_BROWN, 82, 48);
+  }
+  private showCupComposition(parent: Node, center: { x: number; y: number }, scale: number, recipe: Run['orders'][number] | null,
+    target: boolean, selected?: Partial<Record<Dimension, string>>): void {
+    const contentSize: [number, number] = [183, 233];
+    const layers: Array<[string, [number, number], [number, number]]> = target
+      ? [['ORDER_BUBBLE_EMPTY', [654.5, 405.5], [375, 235]], ['ORDER_CUP_BACK', [653, 421], [150, 170]]]
+      : [['WORK_CUP_BACK', [510, 1217], [180, 218]]];
+    layers.forEach(([asset, pos, size]) => this.showAsset(parent, asset, this.sourcePos(pos[0], pos[1]), size, 720 / 1024 * scale));
+    DIMENSIONS.forEach(dimension => {
+      const ingredientId = target && recipe ? idFor(recipe, dimension) : selected?.[dimension];
+      if (!ingredientId) return;
+      const item = this.config?.ingredients.find(row => row.ingredient_id === ingredientId);
+      if (!item) return;
+      this.showAsset(parent, cupContentAsset(item), center, contentSize, 720 / 1024 * scale);
+    });
+    if (target) {
+      this.showAsset(parent, 'ORDER_CUP_FRONT', this.sourcePos(652.5, 416), [151, 180], 720 / 1024 * scale);
+      this.showAsset(parent, 'ORDER_STRAW', this.sourcePos(698.5, 344), [31, 86], 720 / 1024 * scale);
+    } else {
+      this.showAsset(parent, 'WORK_CUP_FRONT', this.sourcePos(509.5, 1209), [189, 238], 720 / 1024 * scale);
+    }
+  }
+  private renderRecipePanel(recipe: Run['orders'][number]): void {
+    if (!this.recipeOpen) return;
+    const margin = this.topMarginLocal();
+    const ids = { TEA: recipe.tea_id, MILK: recipe.milk_id, TOPPING: recipe.topping_id };
+    const lines = DIMENSIONS.map(dimension => {
+      const item = this.config!.ingredients.find(row => row.ingredient_id === ids[dimension]);
+      return `${DIMENSION_NAMES[dimension]} ${item?.name ?? '—'}`;
+    });
+    if (margin >= 96) {
+      const visible = view.getVisibleSize(); const fit = Math.min((visible.width - 16) / 720, (visible.height - 16) / 1080, 1);
+      const width = (visible.width - 136) / fit;
+      const cssPerLocalUnit = this.cssPerLocalUnit(visible, fit);
+      const availableTopCss = this.topMarginLocal() * cssPerLocalUnit;
+      const panelHeight = Math.min(52, availableTopCss - 4) / cssPerLocalUnit;
+      const centerX = -56 / fit;
+      const centerY = (visible.height / 2 / fit) - (4 / cssPerLocalUnit) - panelHeight / 2;
+      this.draw(this.root!, 'RecipeHelpHostPanel', centerX, centerY, width, panelHeight, new Color(25, 39, 49, 238));
+      const leftX = centerX - width / 2; const colWidth = (width - 24) / 3;
+      const headerSize = 12 / cssPerLocalUnit; const bodySize = 14 / cssPerLocalUnit;
+      this.text(this.root!, '当前配方', leftX + width / 2, centerY + panelHeight * .27, headerSize, GOLD, width - 20, headerSize * 1.4);
+      DIMENSIONS.forEach((dimension, index) => this.text(this.root!, lines[index], leftX + 12 + colWidth * (index + .5),
+        centerY - panelHeight * .17, bodySize, TEXT, colWidth, bodySize * 1.4));
+    } else {
+      const panel = this.sourcePos(347, 390);
+      this.draw(this.root!, 'RecipeHelpFallbackPanel', panel.x, panel.y, 214 * 720 / 1024, 166 * 720 / 1024,
+        new Color(25, 39, 49, 242));
+      [383, 419, 455].forEach((sourceY, index) => {
+        const position = this.sourcePos(347, sourceY);
+        this.text(this.root!, lines[index], position.x, position.y, 34 * 720 / 1024, TEXT,
+          198 * 720 / 1024, 34 * 720 / 1024);
+      });
+    }
+  }
+  private cssPerLocalUnit(visible: { width: number; height: number }, fit: number): number {
+    const canvasWidth = document.querySelector('canvas')?.getBoundingClientRect().width || window.innerWidth;
+    return canvasWidth * fit / visible.width;
+  }
+  private topMarginLocal(): number {
+    const visible = view.getVisibleSize(); const fit = Math.min((visible.width - 16) / 720, (visible.height - 16) / 1080, 1);
+    return (visible.height - 1080 * fit) / 2 / fit;
+  }
+  private renderHelpAndExit(_recipe: Run['orders'][number]): void {
+    const visible = view.getVisibleSize(); const fit = Math.min((visible.width - 16) / 720, (visible.height - 16) / 1080, 1);
+    if (this.topMarginLocal() >= 96) {
+      const exitX = (visible.width / 2 - 62) / fit; const exitY = (visible.height / 2 - 50) / fit;
+      this.button(this.root!, '退出', exitX, exitY, 100 / fit, 52 / fit,
+        () => { this.exitConfirm = true; this.dirty = true; });
+      return;
+    }
+    const shown = this.sourcePos(418, 337);
+    const displayScale = 720 / 1024 * fit;
+    const hitW = Math.max(68, 48 / displayScale); const hitH = Math.max(56, 48 / displayScale);
+    const hitCenter = this.sourcePos(452 - hitW / 2, 365 - hitH / 2);
+    const hit = this.draw(this.root!, 'ExitHelpHitArea', hitCenter.x, hitCenter.y, hitW * 720 / 1024, hitH * 720 / 1024,
+      new Color(0, 0, 0, 0));
+    const label = this.text(hit, '退出', shown.x - hitCenter.x, shown.y - hitCenter.y,
+      34 * 720 / 1024, TEXT, 68 * 720 / 1024, 56 * 720 / 1024);
+    label.horizontalAlign = Label.HorizontalAlign.CENTER;
+    this.actions.set(hit, () => { this.exitConfirm = true; this.dirty = true; });
+  }
+  private renderExitConfirm(): void {
+    this.modalActions.clear(); this.draw(this.root!, 'ExitPanel', 0, 70, 420, 180, new Color(25, 39, 49, 248));
+    this.text(this.root!, '离开后本局不计熟练度', 0, 117, 18, TEXT, 380, 32);
+    this.button(this.root!, '继续制作', -95, 38, 150, 44, () => { this.exitConfirm = false; this.dirty = true; });
+    this.button(this.root!, '退出本局', 95, 38, 150, 44, () => { this.exitConfirm = false; this.confirmExit(); });
+  }
+  private renderValidation(): void {
+    this.modalActions.clear(); this.draw(this.root!, 'ValidationPanel', 0, 0, 560, 390, new Color(13, 26, 40, 250));
+    this.text(this.root!, '示例验证设置', 0, 148, 21, GOLD, 510, 36);
+    this.text(this.root!, '仅影响当前示例会话，不会写入正常进度', 0, 112, 14, MUTED, 520, 30);
+    this.button(this.root!, this.validation.enabled ? '验证模式：开' : '验证模式：关', -125, 53, 190, 42, () => {
+      this.validation.enabled = !this.validation.enabled; this.writeValidation(); this.sessionProgress = null; this.dirty = true;
+    });
+    this.button(this.root!, `阶段 ${this.validation.stage}`, 125, 53, 160, 42, () => {
+      this.validation.stage = this.validation.stage === 1 ? 2 : 1; this.writeValidation(); this.dirty = true;
+    });
+    this.button(this.root!, '重置隔离存档', 0, 0, 190, 42, () => {
+      this.progress = { ...DEFAULT_PROGRESS }; this.sessionProgress = null; this.writeProgress(); this.status = '示例进度已重置'; this.dirty = true;
+    });
+    this.button(this.root!, `等级 ${this.validation.level}`, -170, -54, 120, 38, () => {
+      this.validation.level = this.validation.level >= 3 ? 1 : this.validation.level + 1; this.writeValidation(); this.reconcileProgress(); this.dirty = true;
+    });
+    this.button(this.root!, `魂 ${this.validation.soul}`, 0, -54, 100, 38, () => {
+      this.validation.soul = (this.validation.soul + 1) % 4; this.writeValidation(); this.reconcileProgress(); this.dirty = true;
+    });
+    this.button(this.root!, `魄 ${this.validation.spirit}`, 170, -54, 100, 38, () => {
+      this.validation.spirit = (this.validation.spirit + 1) % 8; this.writeValidation(); this.reconcileProgress(); this.dirty = true;
+    });
+    this.button(this.root!, '完成设置', 0, -126, 160, 42, () => { this.toggleValidation = false; this.dirty = true; });
+  }
+  private renderResult(): void {
+    this.modalActions.clear(); const won = this.run?.status === 'won';
+    this.draw(this.root!, 'ResultPanel', 0, 30, 440, 260, new Color(13, 26, 40, 250));
+    const title = won ? '三杯完成!' : this.run?.status === 'failed' ? '时间到，本局失败' : '本局结束';
+    this.text(this.root!, title, 0, 117, 25, GOLD, 400, 40);
+    if (won) {
+      this.text(this.root!, `本地示例熟练度 +${this.lastXp}`, 0, 72, 16, TEXT, 390, 30);
+      this.button(this.root!, '再玩一局', 0, 0, 170, 46, () => this.retry());
+      this.button(this.root!, '返回菜单', 0, -61, 170, 42, () => this.leave());
+    } else {
+      this.button(this.root!, '重试本档', -98, -17, 156, 44, () => this.retry());
+      this.button(this.root!, '返回菜单', 98, -17, 156, 44, () => this.leave());
+    }
+  }
+  private readSessionProgress(): Progress {
+    return this.validation.enabled ? (this.sessionProgress ?? reconcileUnlocks(this.config!, this.progress, this.growthInputs(), true)) : this.progress;
+  }
+  private growthInputs() { return { level: this.validation.level, soul: this.validation.soul, spirit: this.validation.spirit, growthEnabled: this.validation.unlockGrowth }; }
+  private reconcileProgress(): void {
+    if (!this.config) return;
+    if (this.validation.enabled) { this.sessionProgress = reconcileUnlocks(this.config, this.readSessionProgress(), this.growthInputs(), true); return; }
+    this.progress = reconcileUnlocks(this.config, this.progress, this.growthInputs(), false); this.writeProgress();
+  }
+  private beginRun(tier: { tier_id: string; stages: Stage[] }): void {
+    const progress = this.readSessionProgress();
+    if (!this.validation.enabled && !isUnlocked(this.config!, progress, tier.tier_id, this.growthInputs(), false)) {
+      this.status = '此难度尚未解锁'; this.statusColor = GOLD; this.dirty = true; return;
+    }
+    const stage = chooseStage(this.config!, tier.tier_id, progress.xp, this.validation.enabled ? this.validation.stage : null);
+    this.run = makeRun(this.config!, stage, this.now()); this.status = ''; this.statusColor = TEXT;
+    this.recipeOpen = tier.tier_id === 'EASY'; this.exitConfirm = false; this.lastClockSecond = -1; this.dirty = true;
+  }
+  private choose(dimension: Dimension, id: string): void {
+    if (!this.run) return;
+    this.run = selectIngredient(this.run, dimension, id, this.now());
+    if (this.run.status === 'failed') { this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD; }
+    this.dirty = true;
+  }
+  private undo(): void {
+    if (!this.run) return;
+    const dimension = [...this.run.selectionOrder].reverse().find(key => !!this.run?.selected[key]);
+    if (dimension) this.run = undoIngredient(this.run, dimension, this.now());
+    this.dirty = true;
+  }
+  private submit(): void {
+    if (!this.run) return;
+    const result = submitCup(this.run, this.now()); this.run = result.run;
+    this.statusColor = result.result === 'wrong' || result.result === 'expired' ? GOLD : TEXT;
+    this.status = result.result === 'incomplete' ? '请先选齐三类原料' : result.result === 'wrong' ? '配方不对，请重做当前这杯' :
+      result.result === 'expired' ? '时间到，本局失败' : result.result === 'won' ? '正确!本局完成' : '正确，下一杯!';
+    if (result.result === 'won') {
+      const settled = settleWin(this.config!, this.readSessionProgress(), this.run, this.growthInputs(), this.validation.enabled);
+      this.run = settled.run; this.lastXp = settled.xpAdded;
+      const progress = reconcileUnlocks(this.config!, settled.progress, this.growthInputs(), false);
+      if (this.validation.enabled) this.sessionProgress = progress; else { this.progress = progress; this.writeProgress(); }
+      this.recipeOpen = false; this.exitConfirm = false;
+    }
+    this.dirty = true;
+  }
+  private confirmExit(): void {
+    if (!this.run) return;
+    this.recipeOpen = false; this.exitConfirm = false; this.run = { ...this.run, status: 'exited' };
+    this.status = '离开后本局不计熟练度'; this.statusColor = GOLD; this.dirty = true;
+  }
+  private retry(): void {
+    const tierId = TIER_IDS[this.tierIndex]; this.run = null;
+    this.beginRun({ tier_id: tierId, stages: stagesFor(this.config!, tierId) });
+  }
+  private leave(): void { this.run = null; this.recipeOpen = false; this.exitConfirm = false; this.toggleValidation = false; this.status = ''; this.actions.clear(); this.modalActions.clear(); this.onExit?.(); }
 }

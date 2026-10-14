@@ -1,0 +1,47 @@
+{
+  "id": "U05-B-FRONTEND-LANDING-20261014",
+  "title": "U05 B前端配置、三类合成和可复用资源组件落地",
+  "type": "feature",
+  "owner": "client",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "实现B制作者工作区的前端示例：三茶三奶六小料、杯层合成、五难度十阶段、存档与结算；标签背景九宫格、艺术字图集组件及确认文案。先实现已获继续授权的配置/逻辑/组件代码；具体受修订新切片批准前不正式导入。",
+  "inputs": [
+    "deliverables/master/U05-B-COMPONENT-REVISION-20261014/v0.1/USER_DIRECTION.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/PRD.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx",
+    "deliverables/tech_lead/U05-B-CONFIG-TECH-REVIEW-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/STATE_AND_CONFIG_CHECK.md",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/evidence/BUILD_IDENTITY.json",
+    "deliverables/client/U05-B-FRONTEND-LANDING-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "仅前端示例，无后端；现有进度保留、三类规则与174配方覆盖",
+    "原料、工作杯和目标杯同源组合，非整图伪装交互",
+    "可复用九宫格/BMFont组件实现，正式资源严格使用已批子集/版本",
+    "Creator3.8.8实际构建证据、Owner状态验证；UI浏览器后续真实操作，不虚报Gate2资源运行"
+  ],
+  "dependencies": [
+    "U05-B-CONFIG-SOURCE-20261014",
+    "U05-B-CONFIG-TECH-REVIEW-20261014"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "模型gpt-6-luna low；先读Client角色5文件。",
+    "Master授权跨职责修改tooling/config生成器和项目配置机械发布：审批后源表201行status READY/export_enabled true，无业务数字变更；历史归档+正式稳定源/生成/字段说明/index更新遵守config contract。",
+    "允许apps/client/assets/labs/u05、该模块资源以及必要现有验证工具。不可覆盖UnitSampleGallery或package.json其它线程改动；仅必要上下文修改。",
+    "Art新九宫格/字体图集具体版本未批前不正式接入；不自行重画或假造字体图集。",
+    "新代码使用Creator现有API；构建检查同工程Editor/CLI冲突，不与其它线程争用，必要记录隔离副本。",
+    "只写本Task和授权路径，不Git不子派。",
+    "2026-10-14 FEATURE_BRIEF.md首份Required实存，Tech同版BRIEF_TECH_REVIEW APPROVED；实施与运行尚在进行。新Art切片Gate2未批前只做通用代码和已批资源接入。",
+    "v4实现五Required及最终Tech APPROVED、Master实际Web复核齐，Producer逐SHA绑定准确包，IN_PROGRESS→REVIEW→USER_REVIEW；待用户最终实现验收，不DONE。",
+    "v4实现五Required及最终Tech APPROVED、Master实际Web复核齐，Producer逐SHA绑定准确包，IN_PROGRESS→REVIEW→USER_REVIEW；待用户最终实现验收，不DONE。"
+  ]
+}

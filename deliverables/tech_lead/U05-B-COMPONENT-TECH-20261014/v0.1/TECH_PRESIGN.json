@@ -1,0 +1,15 @@
+{
+  "task_id": "U05-B-COMPONENT-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-COMPONENT-ASSETS-20261014/v0.1/COMPONENT-01",
+  "status": "PRESIGNED_FOR_COMPONENT_PRODUCTION_NOT_GATE2",
+  "art_plan": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.1/ART_BRIEF.md",
+  "technical_conditions": [
+    "LABEL_PLATE_9SLICE由旧空名牌P01取样，源123x45 RGBA，left/right inset各18、top/bottom各12；十二牌同底板，目标宽123/130/131、高45，不烘字。",
+    "U05_ART_FONT使用已登记许可ZCOOLKuaiLe-Regular.ttf，单页PNG和BMFont文本FNT成对交接，覆盖当前可见中文、数字及实际标点；提供字符清单和度量。",
+    "Creator 3.8.8以Sprite SLICED与BitmapFont/Label.font接入；FNT解析、实际渲染与动态字形覆盖由Client验证，缺字不可静默回退系统字体。",
+    "只改标签底板/文字与按钮显示文案确认；保留B其余已呈现像素和玩法语义；新实图Gate2用户审批前不得正式接入。"
+  ],
+  "budget_and_evidence": "仅复用现有像素与获许可字体，无新增imagegen；实际图集页尺寸、压缩、DrawCall、驻留内存、目标机帧率待成品及运行实测。",
+  "stop_rules": ["若源名牌或inset变动、增加新字体/角色/图集页、影响冻结B其它视觉，先更新同批预签。", "新切片提交实际资源与同尺度重组供用户Gate2审核；本批自产切片不增设效果专业复审门禁。"]
+}

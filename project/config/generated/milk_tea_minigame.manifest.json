@@ -2,28 +2,60 @@
   "schema_version": "1.0",
   "resource_id": "MILK_TEA_MINIGAME",
   "config_version": "v0.1",
-  "generator_version": "v0.2",
-  "publication_status": "UNPUBLISHED_CANDIDATE_TASK_CANCELLED",
+  "generator_version": "u05-b-three-class-v0.1",
+  "publication_status": "USER_APPROVED_CLIENT_EXAMPLE",
   "source": {
     "path": "project/config/source/MILK_TEA_MINIGAME.xlsx",
-    "sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
-    "approval_ref": "tasks/MILK-TEA-MINIGAME-CONFIG-PROMOTION-20261012/ARTIFACT_APPROVAL_v0.1.json"
+    "sha256": "b71d51ee52ba9bc6912dbf886f8174a2a2a71ef8beaa910b30c0b87972176fbf",
+    "approved_artifact": "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx",
+    "approval_ref": "tasks/U05-B-CONFIG-SOURCE-20261014/ARTIFACT_APPROVAL_v0.1.json"
   },
-  "generator_approval_ref": "tasks/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/ARTIFACT_APPROVAL_v0.2.json",
-  "sample": {
-    "directory": "deliverables/tech_lead/MILK-TEA-MINIGAME-CONFIG-GENERATOR-20261012/v0.2/samples/candidate-a0372ae44144",
-    "sha256_manifest": "76fe0e77711171435194594e4bc921cf123384e025051ee43fd4e79e77e55881"
-  },
+  "tech_approval_ref": "tasks/U05-B-CONFIG-TECH-REVIEW-20261014/ARTIFACT_APPROVAL_v0.1.json",
   "outputs": {
-    "server": {
-      "path": "project/config/generated/milk_tea_minigame.server.json",
-      "sha256": "bcb757797059e1e022b67609ec4ba8bdbfa40829febe49055fee4a35322a4cb8"
-    },
     "client": {
       "path": "project/config/generated/milk_tea_minigame.client.json",
-      "sha256": "526812f601f883f48d8cc28f3e23ad229c12133082ad6a7efec0f61673d800fe"
+      "sha256": "9d46e76e6cf942cd513a8c5f35e5dfaafc6188146e767a5eeb1b31dbcce479dc",
+      "runtime_path": "apps/client/assets/resources/u05_milk_tea/config.json",
+      "runtime_sha256": "9d46e76e6cf942cd513a8c5f35e5dfaafc6188146e767a5eeb1b31dbcce479dc"
     }
   },
-  "field_guide_path": null,
-  "archive_note": "用户改为本次仅U05前端示例，本实施契约任务已取消；现存双JSON为获批样本等字节初产，未登记正式入口、未运行部署。"
+  "validation": {
+    "status": "PASS",
+    "source_sha256": "b71d51ee52ba9bc6912dbf886f8174a2a2a71ef8beaa910b30c0b87972176fbf",
+    "rows": {
+      "难度阶段": 10,
+      "解锁条件": 5,
+      "原料": 12,
+      "配方": 174
+    },
+    "ingredient_counts": {
+      "TEA": 3,
+      "MILK": 3,
+      "TOPPING": 6
+    },
+    "recipe_counts_by_tier": {
+      "EASY": 12,
+      "MEDIUM": 27,
+      "HARD": 36,
+      "HELL": 45,
+      "NIGHTMARE": 54
+    },
+    "stages": 10,
+    "recipe_total": 174,
+    "mode": "PRODUCTION_FILTER",
+    "approval_ref": "tasks/U05-B-CONFIG-SOURCE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "tech_approval_ref": "tasks/U05-B-CONFIG-TECH-REVIEW-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "approved_source_artifact": "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx"
+  },
+  "archive_path": "project/config/archive/2026-10-14-u05-b-three-class-transition/MANIFEST.json",
+  "note": "前端单元示例配置，不生成服务端运行资源。历史五维JSON已归档，不是当前入口。",
+  "historical_outputs": {
+    "server": {
+      "path": "project/config/generated/milk_tea_minigame.server.json",
+      "sha256": "bcb757797059e1e022b67609ec4ba8bdbfa40829febe49055fee4a35322a4cb8",
+      "status": "HISTORICAL_NON_CURRENT",
+      "archive_path": "project/config/archive/2026-10-14-u05-b-three-class-transition/previous/project/config/generated/milk_tea_minigame.server.json",
+      "note": "保留迁移前旧服务端 JSON 原字节，仅供追溯；本次前端任务没有生成或发布服务端资源。"
+    }
+  }
 }

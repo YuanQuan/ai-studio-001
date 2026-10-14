@@ -1059,3 +1059,19 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Tech下次首图签后直接复算所有绑定SHA的完整64位，Producer登记双签时复核，复核点为下一批预签；Art在候选入最终PSD前保留全景与局部同尺度图核透明边，复核点为下一批局部修订首次实图。均属现有职责，不加新审批门禁。
 - Continuity：Art真实`USER_REVIEW`，Tech内部支持`DONE`；Producer本轮状态/审批/里程碑、18项登记、看板与continuity有实产，内部交付待Master接受。无本批可继续但仅以READY/IN_PROGRESS占位的空转任务；下一外部依赖为用户对准确v0.3具体资源决定，批准前Client锁。
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 RETROSPECTIVE END -->
+
+<!-- U05-B-LANDING-20261014 START -->
+### WR-20261014-U05-B-LANDING-001｜定向修订与规格解锁
+
+- 结果证据：三份准确规格原绑定SHA 8/8、5/5、7/7一致；旧资源按ID/SHA区分45保留与12张旧标签待修订，FLOW首产实存。尚无新切片Gate2或Creator运行结论。
+- 起止与耗时：本轮Producer可核登记时刻10:25:15 +08:00；开始核验的可靠时刻未保存，净工作耗时未知。用户审阅等待、Art返工和工具故障耗时均无可靠数据，不归责。
+- 建议与复核：Art/Tech负责人在同批预签后对12项受影响旧PNG及新图集逐项核新版差异，代价一次准确资源核对；Producer在新Gate2送审点复核子集边界，Client在运行报告点复核确认按钮与已批准资源版本。
+- Continuity：三个规格门禁已解锁，Art/Tech与待建Client实施仍需持续推进；只有首份实产才记IN_PROGRESS，不把本次FLOW首产当成落地完成。
+- 后续核点：Tech `COMPONENT-01`四Required与Master Review五文件同版核齐，内部预签支持DONE；Art切片Gate2和Client运行继续待证。此阶段追加核验耗时与用户等待时间未知，不据文件时间推算制作耗时。
+- Gate2送审节点：10:35:50 +08:00 完成Art新版文件身份核验登记；相对10:25:15首产登记的墙钟间隔10分35秒，期间Art/Tech/Client并行，不能计为任何角色净制作耗时。新图Gate2用户等待从送审开始，用户决定未到；Client概要已首产并继续实施。复核点为用户对本版实际图的决定及其后Creator运行报告。
+- 用户退回节点：v0.1新组件Gate2退回，具体原因尚未说明，不能归责美术质量、工时或工具；用户等待与返工耗时未知。Art待Master取得明确修改点后出新Revision，Producer在新送审点复核版本链，Client继续独立可执行工作。
+- 范围澄清节点：用户将需改项限定为“标签底板”，具体底板问题仍未知；Producer以子集审批解锁未受影响的719字图集，Client可直接核其运行表现。Art返工范围仅能确认底板，准确修法与耗时待后续反馈，不能推断。复核点为新底板版Gate2与Client图集导入验证。
+- v0.2批准节点：Producer可核登记时间10:57:59 +08:00，用户消息精确秒未知；v0.1退回至此含澄清、Art局部修订和用户再次审阅，无法可靠拆净制作/等待时长。用户明确批准实际新版底板，Art阶段DONE。Client隔离构建路径误写另一临时通用目录，Master核灯光独立登记3文件未变，通用目录原身份未知；Owner改自有输出重构，Producer于新构建身份点复核。无证据把此事故计为整体验收失败或把客户端运行记通过。
+- 本轮最终结果：10:19开始的工作证据至12:02:38 Producer最终包登记，墙钟至少1小时43分38秒；该跨度包含用户等待、Art定向返工、Client实际实现/多次构建、Tech审查和并行其它任务，缺少可靠分段时刻，不推算各角色净耗时或单一慢因。Art v0.1退回后用户限定底板，v0.2批准；Client早期错误杯形和构建路径问题均有保留记录，最终v4自有构建与Web截图通过。建议Owner在下一次构建前核隔离profile输出路径与输入SHA（代价一次配置核对，复核点BUILD_IDENTITY）；Producer在用户最终实现决定点核准确15文件SHA和审批状态。Continuity：Art/Tech内部工作已完成，Client及父均真实USER_REVIEW，FLOW待Master内部接受；不以READY/IN_PROGRESS占位，剩用户最终实现接受。
+- 本轮流程收尾：Master于12:04:09 +08:00接受AUTO FLOW，按10:19开始至此墙钟至少1小时45分09秒；各角色制作、用户审阅与等待、并行及返工分段仍未知。Continuity最终复核：本轮已授权U05工作均有交付/验证，Client与父处准确USER_REVIEW，暂无可继续而空挂READY/IN_PROGRESS的当前任务；旧Art v0.1 REVISION是被v0.2承接的历史。
+<!-- U05-B-LANDING-20261014 END -->

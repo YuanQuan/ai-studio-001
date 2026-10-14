@@ -1,9 +1,1858 @@
 {
-  "schema_version": "1.0",
-  "resource_id": "MILK_TEA_MINIGAME",
-  "source_sha256": "a0372ae4414471d57c2e9a621b538e80cee4d1482455088afe7bcb72630a1c76",
-  "approval_version": "v0.1",
+  "schema_version": "2.0",
   "config_version": "v0.1",
+  "generator_version": "u05-b-three-class-v0.1",
+  "resource_id": "MILK_TEA_MINIGAME",
+  "shop_id": "MT_SHOP_01",
+  "dimensions": [
+    "TEA",
+    "MILK",
+    "TOPPING"
+  ],
+  "difficulty_stages": [
+    {
+      "stage_id": "MG01_EASY_1",
+      "tier_id": "EASY",
+      "stage_no": 1,
+      "xp_from": 0,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": null,
+      "tea_options": 2,
+      "milk_options": 2,
+      "topping_options": 2,
+      "xp_reward": 10
+    },
+    {
+      "stage_id": "MG01_EASY_2",
+      "tier_id": "EASY",
+      "stage_no": 2,
+      "xp_from": 20,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": null,
+      "tea_options": 2,
+      "milk_options": 2,
+      "topping_options": 3,
+      "xp_reward": 10
+    },
+    {
+      "stage_id": "MG01_MEDIUM_1",
+      "tier_id": "MEDIUM",
+      "stage_no": 1,
+      "xp_from": 50,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 150,
+      "tea_options": 2,
+      "milk_options": 3,
+      "topping_options": 3,
+      "xp_reward": 15
+    },
+    {
+      "stage_id": "MG01_MEDIUM_2",
+      "tier_id": "MEDIUM",
+      "stage_no": 2,
+      "xp_from": 75,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 135,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 3,
+      "xp_reward": 15
+    },
+    {
+      "stage_id": "MG01_HARD_1",
+      "tier_id": "HARD",
+      "stage_no": 1,
+      "xp_from": 120,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 135,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 3,
+      "xp_reward": 22
+    },
+    {
+      "stage_id": "MG01_HARD_2",
+      "tier_id": "HARD",
+      "stage_no": 2,
+      "xp_from": 150,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 120,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 4,
+      "xp_reward": 22
+    },
+    {
+      "stage_id": "MG01_HELL_1",
+      "tier_id": "HELL",
+      "stage_no": 1,
+      "xp_from": 220,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 120,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 4,
+      "xp_reward": 30
+    },
+    {
+      "stage_id": "MG01_HELL_2",
+      "tier_id": "HELL",
+      "stage_no": 2,
+      "xp_from": 260,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 105,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 5,
+      "xp_reward": 30
+    },
+    {
+      "stage_id": "MG01_NIGHTMARE_1",
+      "tier_id": "NIGHTMARE",
+      "stage_no": 1,
+      "xp_from": 360,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 105,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 5,
+      "xp_reward": 40
+    },
+    {
+      "stage_id": "MG01_NIGHTMARE_2",
+      "tier_id": "NIGHTMARE",
+      "stage_no": 2,
+      "xp_from": 410,
+      "recipe_dims": 3,
+      "orders_target": 3,
+      "time_sec": 90,
+      "tea_options": 3,
+      "milk_options": 3,
+      "topping_options": 6,
+      "xp_reward": 40
+    }
+  ],
+  "unlock_conditions": [
+    {
+      "tier_id": "EASY",
+      "prev_tier_id": null,
+      "initial_open": true,
+      "xp_enabled": false,
+      "level_enabled": false,
+      "soul_enabled": false,
+      "spirit_enabled": false,
+      "xp_min": 0,
+      "level_min": 1,
+      "soul_min": 0,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "MEDIUM",
+      "prev_tier_id": "EASY",
+      "initial_open": false,
+      "xp_enabled": true,
+      "level_enabled": false,
+      "soul_enabled": false,
+      "spirit_enabled": false,
+      "xp_min": 50,
+      "level_min": 1,
+      "soul_min": 0,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "HARD",
+      "prev_tier_id": "MEDIUM",
+      "initial_open": false,
+      "xp_enabled": true,
+      "level_enabled": false,
+      "soul_enabled": false,
+      "spirit_enabled": false,
+      "xp_min": 120,
+      "level_min": 1,
+      "soul_min": 0,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "HELL",
+      "prev_tier_id": "HARD",
+      "initial_open": false,
+      "xp_enabled": true,
+      "level_enabled": false,
+      "soul_enabled": false,
+      "spirit_enabled": false,
+      "xp_min": 220,
+      "level_min": 1,
+      "soul_min": 0,
+      "spirit_min": 0
+    },
+    {
+      "tier_id": "NIGHTMARE",
+      "prev_tier_id": "HELL",
+      "initial_open": false,
+      "xp_enabled": true,
+      "level_enabled": false,
+      "soul_enabled": false,
+      "spirit_enabled": false,
+      "xp_min": 360,
+      "level_min": 1,
+      "soul_min": 0,
+      "spirit_min": 0
+    }
+  ],
+  "ingredients": [
+    {
+      "ingredient_id": "TEA_GHOST_LANTERN",
+      "dimension": "TEA",
+      "name": "幽灯茶",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "TEA_MOON_MIST",
+      "dimension": "TEA",
+      "name": "月雾茶",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "TEA_NETHER_GLOW",
+      "dimension": "TEA",
+      "name": "冥霞茶",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "MILK_CLOUD_SOUL",
+      "dimension": "MILK",
+      "name": "云魄乳",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "MILK_FROST_BELL",
+      "dimension": "MILK",
+      "name": "霜铃乳",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "MILK_FIREFLY_SILK",
+      "dimension": "MILK",
+      "name": "萤绢乳",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "TOP_GHOST_FLAME",
+      "dimension": "TOPPING",
+      "name": "鬼火珠",
+      "sort_order": 1
+    },
+    {
+      "ingredient_id": "TOP_DREAM_GLYPH",
+      "dimension": "TOPPING",
+      "name": "梦纹冻",
+      "sort_order": 2
+    },
+    {
+      "ingredient_id": "TOP_LANTERN_WICK",
+      "dimension": "TOPPING",
+      "name": "灯芯脆",
+      "sort_order": 3
+    },
+    {
+      "ingredient_id": "TOP_SHADOW_SCALE",
+      "dimension": "TOPPING",
+      "name": "影鳞片",
+      "sort_order": 4
+    },
+    {
+      "ingredient_id": "TOP_SOUL_BELL",
+      "dimension": "TOPPING",
+      "name": "魂铃籽",
+      "sort_order": 5
+    },
+    {
+      "ingredient_id": "TOP_NIGHT_FEATHER",
+      "dimension": "TOPPING",
+      "name": "夜羽酥",
+      "sort_order": 6
+    }
+  ],
+  "recipes": [
+    {
+      "recipe_id": "MG01_EASY_R001",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_EASY_R002",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_EASY_R003",
+      "tier_id": "EASY",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_EASY_R004",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_EASY_R005",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_EASY_R006",
+      "tier_id": "EASY",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_EASY_R007",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_EASY_R008",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_EASY_R009",
+      "tier_id": "EASY",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_EASY_R010",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_EASY_R011",
+      "tier_id": "EASY",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_EASY_R012",
+      "tier_id": "EASY",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R001",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R002",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R003",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R004",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R005",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R006",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R007",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R008",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R009",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R010",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R011",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R012",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R013",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R014",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R015",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R016",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R017",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R018",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R019",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R020",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R021",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R022",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R023",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R024",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R025",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R026",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_MEDIUM_R027",
+      "tier_id": "MEDIUM",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R001",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R002",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R003",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R004",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·云魄乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R005",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R006",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R007",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R008",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R009",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R010",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R011",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R012",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R013",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R014",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R015",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R016",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·云魄乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R017",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R018",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R019",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R020",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R021",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R022",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R023",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R024",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R025",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R026",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R027",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R028",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R029",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R030",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R031",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R032",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HARD_R033",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HARD_R034",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HARD_R035",
+      "tier_id": "HARD",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HARD_R036",
+      "tier_id": "HARD",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R001",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R002",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R003",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R004",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R005",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R006",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R007",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R008",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R009",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R010",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R011",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R012",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R013",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R014",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R015",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R016",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R017",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R018",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R019",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R020",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R021",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R022",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R023",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R024",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R025",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R026",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R027",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R028",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R029",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R030",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R031",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R032",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R033",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R034",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R035",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R036",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R037",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R038",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R039",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R040",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_HELL_R041",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_HELL_R042",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_HELL_R043",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_HELL_R044",
+      "tier_id": "HELL",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_HELL_R045",
+      "tier_id": "HELL",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R001",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R002",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R003",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R004",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R005",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R006",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·云魄乳·夜羽酥",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R007",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R008",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R009",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R010",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R011",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R012",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·霜铃乳·夜羽酥",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R013",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R014",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R015",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R016",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R017",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "幽灯茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R018",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "幽灯茶·萤绢乳·夜羽酥",
+      "tea_id": "TEA_GHOST_LANTERN",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R019",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R020",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R021",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R022",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R023",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R024",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·云魄乳·夜羽酥",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R025",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R026",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R027",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R028",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R029",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R030",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·霜铃乳·夜羽酥",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R031",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R032",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R033",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R034",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R035",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "月雾茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R036",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "月雾茶·萤绢乳·夜羽酥",
+      "tea_id": "TEA_MOON_MIST",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R037",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R038",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R039",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R040",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R041",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·云魄乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R042",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·云魄乳·夜羽酥",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_CLOUD_SOUL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R043",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R044",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R045",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R046",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R047",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·霜铃乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R048",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·霜铃乳·夜羽酥",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FROST_BELL",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R049",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_GHOST_FLAME"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R050",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_DREAM_GLYPH"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R051",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_LANTERN_WICK"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R052",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·影鳞片",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SHADOW_SCALE"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R053",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 1,
+      "drink_name": "冥霞茶·萤绢乳·魂铃籽",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_SOUL_BELL"
+    },
+    {
+      "recipe_id": "MG01_NIGHTMARE_R054",
+      "tier_id": "NIGHTMARE",
+      "min_stage_no": 2,
+      "drink_name": "冥霞茶·萤绢乳·夜羽酥",
+      "tea_id": "TEA_NETHER_GLOW",
+      "milk_id": "MILK_FIREFLY_SILK",
+      "topping_id": "TOP_NIGHT_FEATHER"
+    }
+  ],
+  "source_sha256": "b71d51ee52ba9bc6912dbf886f8174a2a2a71ef8beaa910b30c0b87972176fbf",
+  "approval_version": "v0.1",
+  "tech_approval_version": "v0.1",
   "display_only": true,
   "tiers": [
     {
@@ -14,90 +1863,94 @@
       "stages": [
         {
           "stage_id": "MG01_EASY_1",
+          "tier_id": "EASY",
           "stage_no": 1,
+          "xp_from": 0,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": null,
-          "options_per_dim": 2,
+          "tea_options": 2,
+          "milk_options": 2,
+          "topping_options": 2,
+          "xp_reward": 10,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               }
             ]
           }
         },
         {
           "stage_id": "MG01_EASY_2",
+          "tier_id": "EASY",
           "stage_no": 2,
+          "xp_from": 20,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": null,
-          "options_per_dim": 3,
+          "tea_options": 2,
+          "milk_options": 2,
+          "topping_options": 3,
+          "xp_reward": 10,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
-              },
-              {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
-              },
-              {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               }
             ]
           }
@@ -105,33 +1958,123 @@
       ],
       "recipe_hints": [
         {
-          "recipe_id": "R_E_01",
+          "recipe_id": "MG01_EASY_R001",
           "min_stage_no": 1,
-          "drink_name": "珍珠红茶奶",
+          "drink_name": "幽灯茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "红茶",
-            "MILK": "鲜奶",
-            "TOPPING": "珍珠"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
           }
         },
         {
-          "recipe_id": "R_E_02",
+          "recipe_id": "MG01_EASY_R002",
           "min_stage_no": 1,
-          "drink_name": "布丁绿茶奶",
+          "drink_name": "幽灯茶·云魄乳·梦纹冻",
           "ingredients": {
-            "TEA": "绿茶",
-            "MILK": "燕麦奶",
-            "TOPPING": "布丁"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
           }
         },
         {
-          "recipe_id": "R_E_03",
+          "recipe_id": "MG01_EASY_R003",
           "min_stage_no": 2,
-          "drink_name": "仙草乌龙奶",
+          "drink_name": "幽灯茶·云魄乳·灯芯脆",
           "ingredients": {
-            "TEA": "乌龙茶",
-            "MILK": "椰奶",
-            "TOPPING": "仙草"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R004",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R005",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R006",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R007",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R008",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R009",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R010",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R011",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_EASY_R012",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
           }
         }
       ]
@@ -140,118 +2083,114 @@
       "tier_id": "MEDIUM",
       "display_name": "中等",
       "stage_count": 2,
-      "recipe_dims": 4,
+      "recipe_dims": 3,
       "stages": [
         {
           "stage_id": "MG01_MEDIUM_1",
+          "tier_id": "MEDIUM",
           "stage_no": 1,
+          "xp_from": 50,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 150,
-          "options_per_dim": 2,
+          "tea_options": 2,
+          "milk_options": 3,
+          "topping_options": 3,
+          "xp_reward": 15,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
+              },
+              {
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               }
             ]
           }
         },
         {
           "stage_id": "MG01_MEDIUM_2",
+          "tier_id": "MEDIUM",
           "stage_no": 2,
+          "xp_from": 75,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 135,
-          "options_per_dim": 3,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 3,
+          "xp_reward": 15,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
-              },
-              {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
-              },
-              {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               }
             ]
           }
@@ -259,36 +2198,273 @@
       ],
       "recipe_hints": [
         {
-          "recipe_id": "R_M_01",
+          "recipe_id": "MG01_MEDIUM_R001",
           "min_stage_no": 1,
-          "drink_name": "标准甜珍珠红茶奶",
+          "drink_name": "幽灯茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "红茶",
-            "MILK": "鲜奶",
-            "TOPPING": "珍珠",
-            "SWEET": "标准甜"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
           }
         },
         {
-          "recipe_id": "R_M_02",
+          "recipe_id": "MG01_MEDIUM_R002",
           "min_stage_no": 1,
-          "drink_name": "少甜布丁绿茶奶",
+          "drink_name": "幽灯茶·云魄乳·梦纹冻",
           "ingredients": {
-            "TEA": "绿茶",
-            "MILK": "燕麦奶",
-            "TOPPING": "布丁",
-            "SWEET": "少甜"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
           }
         },
         {
-          "recipe_id": "R_M_03",
+          "recipe_id": "MG01_MEDIUM_R003",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R004",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R005",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R006",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R007",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R008",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R009",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R010",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R011",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R012",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R013",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R014",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R015",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R016",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R017",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R018",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R019",
           "min_stage_no": 2,
-          "drink_name": "半糖仙草乌龙奶",
+          "drink_name": "冥霞茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "乌龙茶",
-            "MILK": "椰奶",
-            "TOPPING": "仙草",
-            "SWEET": "半糖"
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R020",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R021",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R022",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R023",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R024",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R025",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R026",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_MEDIUM_R027",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
           }
         }
       ]
@@ -297,142 +2473,122 @@
       "tier_id": "HARD",
       "display_name": "困难",
       "stage_count": 2,
-      "recipe_dims": 5,
+      "recipe_dims": 3,
       "stages": [
         {
           "stage_id": "MG01_HARD_1",
+          "tier_id": "HARD",
           "stage_no": 1,
+          "xp_from": 120,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 135,
-          "options_per_dim": 2,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 3,
+          "xp_reward": 22,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
+              },
+              {
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
+              },
+              {
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               }
             ]
           }
         },
         {
           "stage_id": "MG01_HARD_2",
+          "tier_id": "HARD",
           "stage_no": 2,
+          "xp_from": 150,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 120,
-          "options_per_dim": 3,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 4,
+          "xp_reward": 22,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
-              },
-              {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
-              },
-              {
-                "ingredient_id": "ICE_NONE",
-                "name": "去冰"
+                "ingredient_id": "TOP_SHADOW_SCALE",
+                "name": "影鳞片"
               }
             ]
           }
@@ -440,39 +2596,363 @@
       ],
       "recipe_hints": [
         {
-          "recipe_id": "R_H_01",
+          "recipe_id": "MG01_HARD_R001",
           "min_stage_no": 1,
-          "drink_name": "标准甜标准冰珍珠红茶奶",
+          "drink_name": "幽灯茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "红茶",
-            "MILK": "鲜奶",
-            "TOPPING": "珍珠",
-            "SWEET": "标准甜",
-            "ICE": "标准冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
           }
         },
         {
-          "recipe_id": "R_H_02",
+          "recipe_id": "MG01_HARD_R002",
           "min_stage_no": 1,
-          "drink_name": "少甜少冰布丁绿茶奶",
+          "drink_name": "幽灯茶·云魄乳·梦纹冻",
           "ingredients": {
-            "TEA": "绿茶",
-            "MILK": "燕麦奶",
-            "TOPPING": "布丁",
-            "SWEET": "少甜",
-            "ICE": "少冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
           }
         },
         {
-          "recipe_id": "R_H_03",
+          "recipe_id": "MG01_HARD_R003",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R004",
           "min_stage_no": 2,
-          "drink_name": "半糖去冰仙草乌龙奶",
+          "drink_name": "幽灯茶·云魄乳·影鳞片",
           "ingredients": {
-            "TEA": "乌龙茶",
-            "MILK": "椰奶",
-            "TOPPING": "仙草",
-            "SWEET": "半糖",
-            "ICE": "去冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R005",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R006",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R007",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R008",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R009",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R010",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R011",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R012",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R013",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R014",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R015",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R016",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R017",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R018",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R019",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R020",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R021",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R022",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R023",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R024",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R025",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R026",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R027",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R028",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R029",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R030",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R031",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R032",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R033",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R034",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R035",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HARD_R036",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
           }
         }
       ]
@@ -481,182 +2961,130 @@
       "tier_id": "HELL",
       "display_name": "地狱",
       "stage_count": 2,
-      "recipe_dims": 5,
+      "recipe_dims": 3,
       "stages": [
         {
           "stage_id": "MG01_HELL_1",
+          "tier_id": "HELL",
           "stage_no": 1,
+          "xp_from": 220,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 120,
-          "options_per_dim": 3,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 4,
+          "xp_reward": 30,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
-              },
-              {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
-              },
-              {
-                "ingredient_id": "ICE_NONE",
-                "name": "去冰"
+                "ingredient_id": "TOP_SHADOW_SCALE",
+                "name": "影鳞片"
               }
             ]
           }
         },
         {
           "stage_id": "MG01_HELL_2",
+          "tier_id": "HELL",
           "stage_no": 2,
+          "xp_from": 260,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 105,
-          "options_per_dim": 4,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 5,
+          "xp_reward": 30,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
-              },
-              {
-                "ingredient_id": "TEA_JASMINE",
-                "name": "茉莉茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
-              },
-              {
-                "ingredient_id": "MILK_SOY",
-                "name": "豆奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               },
               {
-                "ingredient_id": "TOP_TARO",
-                "name": "芋圆"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_SHADOW_SCALE",
+                "name": "影鳞片"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
-              },
-              {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
-              },
-              {
-                "ingredient_id": "SWEET_NONE",
-                "name": "无糖"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
-              },
-              {
-                "ingredient_id": "ICE_NONE",
-                "name": "去冰"
-              },
-              {
-                "ingredient_id": "ICE_WARM",
-                "name": "温饮"
+                "ingredient_id": "TOP_SOUL_BELL",
+                "name": "魂铃籽"
               }
             ]
           }
@@ -664,39 +3092,453 @@
       ],
       "recipe_hints": [
         {
-          "recipe_id": "R_L_01",
+          "recipe_id": "MG01_HELL_R001",
           "min_stage_no": 1,
-          "drink_name": "半糖去冰仙草乌龙奶",
+          "drink_name": "幽灯茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "乌龙茶",
-            "MILK": "椰奶",
-            "TOPPING": "仙草",
-            "SWEET": "半糖",
-            "ICE": "去冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
           }
         },
         {
-          "recipe_id": "R_L_02",
+          "recipe_id": "MG01_HELL_R002",
           "min_stage_no": 1,
-          "drink_name": "少甜少冰布丁绿茶奶",
+          "drink_name": "幽灯茶·云魄乳·梦纹冻",
           "ingredients": {
-            "TEA": "绿茶",
-            "MILK": "燕麦奶",
-            "TOPPING": "布丁",
-            "SWEET": "少甜",
-            "ICE": "少冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
           }
         },
         {
-          "recipe_id": "R_L_03",
+          "recipe_id": "MG01_HELL_R003",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R004",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R005",
           "min_stage_no": 2,
-          "drink_name": "无糖温饮芋圆茉莉豆奶",
+          "drink_name": "幽灯茶·云魄乳·魂铃籽",
           "ingredients": {
-            "TEA": "茉莉茶",
-            "MILK": "豆奶",
-            "TOPPING": "芋圆",
-            "SWEET": "无糖",
-            "ICE": "温饮"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R006",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R007",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R008",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R009",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R010",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R011",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R012",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R013",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R014",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R015",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R016",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R017",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R018",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R019",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R020",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·云魄乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R021",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R022",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R023",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R024",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R025",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R026",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R027",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R028",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R029",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R030",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R031",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R032",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R033",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R034",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R035",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·云魄乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R036",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R037",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R038",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R039",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R040",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R041",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R042",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R043",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R044",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_HELL_R045",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
           }
         }
       ]
@@ -705,182 +3547,138 @@
       "tier_id": "NIGHTMARE",
       "display_name": "噩梦",
       "stage_count": 2,
-      "recipe_dims": 5,
+      "recipe_dims": 3,
       "stages": [
         {
           "stage_id": "MG01_NIGHTMARE_1",
+          "tier_id": "NIGHTMARE",
           "stage_no": 1,
+          "xp_from": 360,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 105,
-          "options_per_dim": 3,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 5,
+          "xp_reward": 40,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
+                "ingredient_id": "TOP_SHADOW_SCALE",
+                "name": "影鳞片"
               },
               {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
-              },
-              {
-                "ingredient_id": "ICE_NONE",
-                "name": "去冰"
+                "ingredient_id": "TOP_SOUL_BELL",
+                "name": "魂铃籽"
               }
             ]
           }
         },
         {
           "stage_id": "MG01_NIGHTMARE_2",
+          "tier_id": "NIGHTMARE",
           "stage_no": 2,
+          "xp_from": 410,
+          "recipe_dims": 3,
           "orders_target": 3,
           "time_sec": 90,
-          "options_per_dim": 4,
+          "tea_options": 3,
+          "milk_options": 3,
+          "topping_options": 6,
+          "xp_reward": 40,
           "ingredient_choices": {
             "TEA": [
               {
-                "ingredient_id": "TEA_BLACK",
-                "name": "红茶"
+                "ingredient_id": "TEA_GHOST_LANTERN",
+                "name": "幽灯茶"
               },
               {
-                "ingredient_id": "TEA_GREEN",
-                "name": "绿茶"
+                "ingredient_id": "TEA_MOON_MIST",
+                "name": "月雾茶"
               },
               {
-                "ingredient_id": "TEA_OOLONG",
-                "name": "乌龙茶"
-              },
-              {
-                "ingredient_id": "TEA_JASMINE",
-                "name": "茉莉茶"
+                "ingredient_id": "TEA_NETHER_GLOW",
+                "name": "冥霞茶"
               }
             ],
             "MILK": [
               {
-                "ingredient_id": "MILK_FRESH",
-                "name": "鲜奶"
+                "ingredient_id": "MILK_CLOUD_SOUL",
+                "name": "云魄乳"
               },
               {
-                "ingredient_id": "MILK_OAT",
-                "name": "燕麦奶"
+                "ingredient_id": "MILK_FROST_BELL",
+                "name": "霜铃乳"
               },
               {
-                "ingredient_id": "MILK_COCONUT",
-                "name": "椰奶"
-              },
-              {
-                "ingredient_id": "MILK_SOY",
-                "name": "豆奶"
+                "ingredient_id": "MILK_FIREFLY_SILK",
+                "name": "萤绢乳"
               }
             ],
             "TOPPING": [
               {
-                "ingredient_id": "TOP_PEARL",
-                "name": "珍珠"
+                "ingredient_id": "TOP_GHOST_FLAME",
+                "name": "鬼火珠"
               },
               {
-                "ingredient_id": "TOP_PUDDING",
-                "name": "布丁"
+                "ingredient_id": "TOP_DREAM_GLYPH",
+                "name": "梦纹冻"
               },
               {
-                "ingredient_id": "TOP_GRASS",
-                "name": "仙草"
+                "ingredient_id": "TOP_LANTERN_WICK",
+                "name": "灯芯脆"
               },
               {
-                "ingredient_id": "TOP_TARO",
-                "name": "芋圆"
-              }
-            ],
-            "SWEET": [
-              {
-                "ingredient_id": "SWEET_NORMAL",
-                "name": "标准甜"
+                "ingredient_id": "TOP_SHADOW_SCALE",
+                "name": "影鳞片"
               },
               {
-                "ingredient_id": "SWEET_LESS",
-                "name": "少甜"
+                "ingredient_id": "TOP_SOUL_BELL",
+                "name": "魂铃籽"
               },
               {
-                "ingredient_id": "SWEET_HALF",
-                "name": "半糖"
-              },
-              {
-                "ingredient_id": "SWEET_NONE",
-                "name": "无糖"
-              }
-            ],
-            "ICE": [
-              {
-                "ingredient_id": "ICE_NORMAL",
-                "name": "标准冰"
-              },
-              {
-                "ingredient_id": "ICE_LESS",
-                "name": "少冰"
-              },
-              {
-                "ingredient_id": "ICE_NONE",
-                "name": "去冰"
-              },
-              {
-                "ingredient_id": "ICE_WARM",
-                "name": "温饮"
+                "ingredient_id": "TOP_NIGHT_FEATHER",
+                "name": "夜羽酥"
               }
             ]
           }
@@ -888,39 +3686,543 @@
       ],
       "recipe_hints": [
         {
-          "recipe_id": "R_N_01",
+          "recipe_id": "MG01_NIGHTMARE_R001",
           "min_stage_no": 1,
-          "drink_name": "半糖去冰仙草乌龙奶",
+          "drink_name": "幽灯茶·云魄乳·鬼火珠",
           "ingredients": {
-            "TEA": "乌龙茶",
-            "MILK": "椰奶",
-            "TOPPING": "仙草",
-            "SWEET": "半糖",
-            "ICE": "去冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
           }
         },
         {
-          "recipe_id": "R_N_02",
+          "recipe_id": "MG01_NIGHTMARE_R002",
           "min_stage_no": 1,
-          "drink_name": "少甜少冰布丁绿茶奶",
+          "drink_name": "幽灯茶·云魄乳·梦纹冻",
           "ingredients": {
-            "TEA": "绿茶",
-            "MILK": "燕麦奶",
-            "TOPPING": "布丁",
-            "SWEET": "少甜",
-            "ICE": "少冰"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
           }
         },
         {
-          "recipe_id": "R_N_03",
+          "recipe_id": "MG01_NIGHTMARE_R003",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R004",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R005",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·云魄乳·魂铃籽",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R006",
           "min_stage_no": 2,
-          "drink_name": "无糖温饮芋圆茉莉豆奶",
+          "drink_name": "幽灯茶·云魄乳·夜羽酥",
           "ingredients": {
-            "TEA": "茉莉茶",
-            "MILK": "豆奶",
-            "TOPPING": "芋圆",
-            "SWEET": "无糖",
-            "ICE": "温饮"
+            "TEA": "幽灯茶",
+            "MILK": "云魄乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R007",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R008",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R009",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R010",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R011",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R012",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·霜铃乳·夜羽酥",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R013",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R014",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R015",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R016",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R017",
+          "min_stage_no": 1,
+          "drink_name": "幽灯茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R018",
+          "min_stage_no": 2,
+          "drink_name": "幽灯茶·萤绢乳·夜羽酥",
+          "ingredients": {
+            "TEA": "幽灯茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R019",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R020",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R021",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R022",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R023",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·云魄乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R024",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·云魄乳·夜羽酥",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "云魄乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R025",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R026",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R027",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R028",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R029",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R030",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·霜铃乳·夜羽酥",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R031",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R032",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R033",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R034",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R035",
+          "min_stage_no": 1,
+          "drink_name": "月雾茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R036",
+          "min_stage_no": 2,
+          "drink_name": "月雾茶·萤绢乳·夜羽酥",
+          "ingredients": {
+            "TEA": "月雾茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R037",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R038",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R039",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R040",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R041",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·云魄乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R042",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·云魄乳·夜羽酥",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "云魄乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R043",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R044",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R045",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R046",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R047",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·霜铃乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R048",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·霜铃乳·夜羽酥",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "霜铃乳",
+            "TOPPING": "夜羽酥"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R049",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·鬼火珠",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "鬼火珠"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R050",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·梦纹冻",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "梦纹冻"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R051",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·灯芯脆",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "灯芯脆"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R052",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·影鳞片",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "影鳞片"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R053",
+          "min_stage_no": 1,
+          "drink_name": "冥霞茶·萤绢乳·魂铃籽",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "魂铃籽"
+          }
+        },
+        {
+          "recipe_id": "MG01_NIGHTMARE_R054",
+          "min_stage_no": 2,
+          "drink_name": "冥霞茶·萤绢乳·夜羽酥",
+          "ingredients": {
+            "TEA": "冥霞茶",
+            "MILK": "萤绢乳",
+            "TOPPING": "夜羽酥"
           }
         }
       ]
