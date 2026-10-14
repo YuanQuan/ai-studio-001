@@ -1,3 +1,9 @@
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 START -->
+2026-10-14 18:00:19 +08:00登记（用户原回复精确时刻未知）：用户“确认”批准准确v0.5桥四切片/PSD具体Gate2并授权U00/U01接入。Master `deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json`冻结13项批准文件SHA，Producer逐一复算吻合；`tasks/SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014/ARTIFACT_APPROVAL.json`=USER_APPROVED，Art Task DONE。此批准只解锁获批资源正式接入；新Client Creator实际画面、层序、编辑和运行仍须本版USER_REVIEW，未批准前不可将Client标DONE。
+2026-10-14 18:47:27 +08:00登记：Master `TECH_MASTER_ACCEPTANCE.json`接受Tech本批技术交付，现行`tasks/U00-U01-BRIDGE-V05-TECH-20261014/ARTIFACT_APPROVAL.json`=PROFESSIONAL_REVIEW、Tech DONE，仅内部支持。Master `MASTER_REVIEW.json`与`RUNTIME_IDENTITY.json`核准确Client v0.1，17项文件SHA Producer重算0差，`USER_REVIEW_PACKET.md` SHA=`1d40d27a2f617c8a18468102c5bb7fd9fe449e38996f8e9550fb411f7e7959ab`；现行Client Approval=USER_REVIEW、decided_at null、Task USER_REVIEW。用户尚未批准接入后实际运行效果，不可记Client DONE。
+2026-10-14 18:49:59 +08:00登记：Master `FLOW_MASTER_ACCEPTANCE.json`接受Producer三Required/三条Task原文同序PASS/15项索引及复盘、continuity；现行`tasks/U00-U01-BRIDGE-V05-FLOW-20261014/ARTIFACT_APPROVAL.json`=PROFESSIONAL_REVIEW，FLOW DONE，仅内部流程支持。Client准确v0.1运行效果USER_REVIEW/decided_at null保持，未发生用户批准。
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 END -->
+
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
 
 

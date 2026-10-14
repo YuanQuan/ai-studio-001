@@ -1,6 +1,6 @@
-// Generated from user-approved Art v0.3 CUT_MANIFEST.json; do not edit independently.
+// Generated from user-approved Art v0.5 CUT_MANIFEST.json; update only with a new approved layout.
 export const SAKURA_V03_LAYOUT = {
-  "sourceVersion": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3",
+  "sourceVersion": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5",
   "canvas": {
     "width": 3072,
     "height": 1024,
@@ -8,17 +8,6 @@ export const SAKURA_V03_LAYOUT = {
     "mirrorAxisX": 1536
   },
   "prototypes": [
-    {
-      "id": "tex_sakura_rr_bridge_half",
-      "imageUuid": "cca348da-7200-404f-8b3a-c0e4667075f4",
-      "textureUuid": "cca348da-7200-404f-8b3a-c0e4667075f4@6c48a",
-      "spriteFrameUuid": "cca348da-7200-404f-8b3a-c0e4667075f4@f9941",
-      "path": "tex_sakura_rr_bridge_half.png",
-      "width": 1536,
-      "height": 512,
-      "sha256": "4168180e2d02b7ad897e4cc5fa74c20c00c32f353d65dfe2088bfb88f2c66f0a",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_bridge_half.png"
-    },
     {
       "id": "tex_sakura_rr_far_l",
       "imageUuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
@@ -205,6 +194,50 @@ export const SAKURA_V03_LAYOUT = {
       "height": 344,
       "sha256": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3",
       "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_water_rail_half.png"
+    },
+    {
+      "id": "tex_sakura_rr_bridge_body_l",
+      "imageUuid": "232fc449-73e5-4622-bd81-d97eeda73f21",
+      "textureUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@6c48a",
+      "spriteFrameUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@f9941",
+      "path": "tex_sakura_rr_bridge_body_l.png",
+      "width": 1536,
+      "height": 270,
+      "sha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png"
+    },
+    {
+      "id": "tex_sakura_rr_bridge_body_r",
+      "imageUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8",
+      "textureUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@6c48a",
+      "spriteFrameUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@f9941",
+      "path": "tex_sakura_rr_bridge_body_r.png",
+      "width": 1536,
+      "height": 271,
+      "sha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png"
+    },
+    {
+      "id": "tex_sakura_rr_bridge_front_l",
+      "imageUuid": "25653ee5-158b-49d0-adf3-b0a58eee27d1",
+      "textureUuid": "25653ee5-158b-49d0-adf3-b0a58eee27d1@6c48a",
+      "spriteFrameUuid": "25653ee5-158b-49d0-adf3-b0a58eee27d1@f9941",
+      "path": "tex_sakura_rr_bridge_front_l.png",
+      "width": 225,
+      "height": 177,
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png"
+    },
+    {
+      "id": "tex_sakura_rr_bridge_front_r",
+      "imageUuid": "f0c444d5-465b-4a90-8388-2084475df214",
+      "textureUuid": "f0c444d5-465b-4a90-8388-2084475df214@6c48a",
+      "spriteFrameUuid": "f0c444d5-465b-4a90-8388-2084475df214@f9941",
+      "path": "tex_sakura_rr_bridge_front_r.png",
+      "width": 225,
+      "height": 177,
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png"
     }
   ],
   "instances": [
@@ -404,30 +437,56 @@ export const SAKURA_V03_LAYOUT = {
       "layer": "L03_Ground"
     },
     {
-      "instanceId": "SAK-V03-016",
-      "assetId": "tex_sakura_rr_bridge_half",
-      "name": "tex_sakura_rr_bridge_half-16",
+      "instanceId": "SAK-V05-BRIDGE-BODY-L",
+      "assetId": "tex_sakura_rr_bridge_body_l",
+      "name": "SAK-V05-BRIDGE-BODY-L",
       "x": 0,
-      "y": 512,
+      "y": 598,
       "width": 1536,
-      "height": 512,
+      "height": 270,
       "mirror": false,
       "motion": "static",
       "order": 15,
       "layer": "L03_Ground"
     },
     {
-      "instanceId": "SAK-V03-017",
-      "assetId": "tex_sakura_rr_bridge_half",
-      "name": "tex_sakura_rr_bridge_half-17",
-      "x": 1536,
-      "y": 512,
-      "width": 1536,
-      "height": 512,
-      "mirror": true,
+      "instanceId": "SAK-V05-BRIDGE-FRONT-L",
+      "assetId": "tex_sakura_rr_bridge_front_l",
+      "name": "SAK-V05-BRIDGE-FRONT-L",
+      "x": 1311,
+      "y": 573,
+      "width": 225,
+      "height": 177,
+      "mirror": false,
       "motion": "static",
       "order": 16,
+      "layer": "L04_WaterBridge"
+    },
+    {
+      "instanceId": "SAK-V05-BRIDGE-BODY-R",
+      "assetId": "tex_sakura_rr_bridge_body_r",
+      "name": "SAK-V05-BRIDGE-BODY-R",
+      "x": 1536,
+      "y": 597,
+      "width": 1536,
+      "height": 271,
+      "mirror": false,
+      "motion": "static",
+      "order": 17,
       "layer": "L03_Ground"
+    },
+    {
+      "instanceId": "SAK-V05-BRIDGE-FRONT-R",
+      "assetId": "tex_sakura_rr_bridge_front_r",
+      "name": "SAK-V05-BRIDGE-FRONT-R",
+      "x": 1536,
+      "y": 573,
+      "width": 225,
+      "height": 177,
+      "mirror": false,
+      "motion": "static",
+      "order": 18,
+      "layer": "L04_WaterBridge"
     },
     {
       "instanceId": "SAK-V03-018",
@@ -439,7 +498,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 113,
       "mirror": false,
       "motion": "static",
-      "order": 17,
+      "order": 19,
       "layer": "L04_WaterBridge"
     },
     {
@@ -452,7 +511,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 113,
       "mirror": true,
       "motion": "static",
-      "order": 18,
+      "order": 20,
       "layer": "L04_WaterBridge"
     },
     {
@@ -465,7 +524,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 475,
       "mirror": false,
       "motion": "static",
-      "order": 19,
+      "order": 21,
       "layer": "L04_WaterBridge"
     },
     {
@@ -478,7 +537,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 384,
       "mirror": false,
       "motion": "static",
-      "order": 20,
+      "order": 22,
       "layer": "L05_WaterGrass"
     },
     {
@@ -491,7 +550,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 384,
       "mirror": false,
       "motion": "static",
-      "order": 21,
+      "order": 23,
       "layer": "L05_WaterGrass"
     },
     {
@@ -504,7 +563,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 130,
       "mirror": false,
       "motion": "static",
-      "order": 22,
+      "order": 24,
       "layer": "L05_WaterGrass"
     },
     {
@@ -517,7 +576,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 130,
       "mirror": false,
       "motion": "static",
-      "order": 23,
+      "order": 25,
       "layer": "L05_WaterGrass"
     },
     {
@@ -530,7 +589,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 130,
       "mirror": false,
       "motion": "flame_float",
-      "order": 24,
+      "order": 26,
       "layer": "L05_WaterGrass"
     },
     {
@@ -543,7 +602,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 92,
       "mirror": false,
       "motion": "static",
-      "order": 25,
+      "order": 27,
       "layer": "L05_WaterGrass"
     },
     {
@@ -556,7 +615,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 92,
       "mirror": false,
       "motion": "static",
-      "order": 26,
+      "order": 28,
       "layer": "L05_WaterGrass"
     },
     {
@@ -569,7 +628,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 92,
       "mirror": false,
       "motion": "static",
-      "order": 27,
+      "order": 29,
       "layer": "L05_WaterGrass"
     },
     {
@@ -582,7 +641,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 123,
       "mirror": false,
       "motion": "static",
-      "order": 28,
+      "order": 30,
       "layer": "L05_WaterGrass"
     },
     {
@@ -595,7 +654,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 123,
       "mirror": false,
       "motion": "static",
-      "order": 29,
+      "order": 31,
       "layer": "L05_WaterGrass"
     },
     {
@@ -608,7 +667,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 123,
       "mirror": false,
       "motion": "flame_float",
-      "order": 30,
+      "order": 32,
       "layer": "L05_WaterGrass"
     },
     {
@@ -621,7 +680,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 126,
       "mirror": false,
       "motion": "static",
-      "order": 31,
+      "order": 33,
       "layer": "L05_WaterGrass"
     },
     {
@@ -634,7 +693,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 126,
       "mirror": false,
       "motion": "static",
-      "order": 32,
+      "order": 34,
       "layer": "L05_WaterGrass"
     },
     {
@@ -647,7 +706,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 126,
       "mirror": false,
       "motion": "flame_float",
-      "order": 33,
+      "order": 35,
       "layer": "L05_WaterGrass"
     },
     {
@@ -660,7 +719,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 112,
       "mirror": false,
       "motion": "static",
-      "order": 34,
+      "order": 36,
       "layer": "L05_WaterGrass"
     },
     {
@@ -673,7 +732,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 112,
       "mirror": false,
       "motion": "static",
-      "order": 35,
+      "order": 37,
       "layer": "L05_WaterGrass"
     },
     {
@@ -686,7 +745,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 112,
       "mirror": false,
       "motion": "static",
-      "order": 36,
+      "order": 38,
       "layer": "L05_WaterGrass"
     },
     {
@@ -699,7 +758,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 104,
       "mirror": false,
       "motion": "static",
-      "order": 37,
+      "order": 39,
       "layer": "L05_WaterGrass"
     },
     {
@@ -712,7 +771,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 104,
       "mirror": false,
       "motion": "static",
-      "order": 38,
+      "order": 40,
       "layer": "L05_WaterGrass"
     },
     {
@@ -725,7 +784,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 104,
       "mirror": false,
       "motion": "flame_float",
-      "order": 39,
+      "order": 41,
       "layer": "L05_WaterGrass"
     },
     {
@@ -738,7 +797,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 94,
       "mirror": false,
       "motion": "static",
-      "order": 40,
+      "order": 42,
       "layer": "L05_WaterGrass"
     },
     {
@@ -751,7 +810,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 94,
       "mirror": false,
       "motion": "static",
-      "order": 41,
+      "order": 43,
       "layer": "L05_WaterGrass"
     },
     {
@@ -764,7 +823,7 @@ export const SAKURA_V03_LAYOUT = {
       "height": 94,
       "mirror": false,
       "motion": "static",
-      "order": 42,
+      "order": 44,
       "layer": "L05_WaterGrass"
     }
   ]

@@ -1,0 +1,37 @@
+{
+  "id": "U00-U01-BRIDGE-V05-FLOW-20261014",
+  "title": "U00/U01新版桥资源FLOW",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "将用户批准v0.5桥接入共享环境并完成真实运行验证，至具体运行效果用户审阅。",
+  "inputs": [
+    "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/CUT_MANIFEST.json",
+    "tasks/SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014/ARTIFACT_APPROVAL.json",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U00-U01-BRIDGE-V05-FLOW-20261014/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U00-U01-BRIDGE-V05-FLOW-20261014/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U00-U01-BRIDGE-V05-FLOW-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录v0.5用户批准及新接入任务真实阶段、版本、路径和依赖。",
+    "持续更新日志、看板及资源登记本任务段落，保留并发U05和历史记录。",
+    "结束前连续执行检查及有可靠时间证据的流程复盘，当前运行版本待用户审阅。"
+  ],
+  "dependencies": [
+    "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014"
+  ],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "禁止新增生图，累计16/16。",
+    "只改Game Project Layer本任务范围；不提交Git，Master统一核账。",
+    "Client可修改共享环境数据、编辑器层级、资源README及四桥PNG/meta；旧桥实测后删除。保留六店游客和U04/U05。",
+    "Producer授权维护日志看板资源登记和本任务状态；使用独立唯一marker，保留并发修改。",
+    "单元示例Owner自验，不派QA；不得把未测项写成PASS。",
+    "Required交付与验收必须严格对应Task原文，不改写验收标准。"
+  ]
+}

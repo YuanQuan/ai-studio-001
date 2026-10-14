@@ -1,8 +1,24 @@
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 START -->
+2026-10-14 18:00:19 +08:00起（U00/U01 v0.5获批桥接入）：用户“确认”批准准确v0.5桥四切片/PSD具体Gate2并授权接入，Master `USER_AUTHORIZATION.json`冻结13项身份，Producer逐SHA复算一致。Art现行审批USER_APPROVED、生产Task USER_REVIEW→DONE；此批准不代表新Client实际运行效果通过。生成累计16/16不增加，保留17非桥资源/六店游客/U04/U05。Producer首Required `FLOW_REPORT.md`实存，FLOW READY→IN_PROGRESS；Client/Tech新Task已建，但当前首Required尚待，均保持READY。正式Creator导入、UUID、构建与内置浏览器运行待Owner实证，新Client最终应USER_REVIEW而非DONE。本单元示例无QA。
+2026-10-14 18:09:56 +08:00（新桥Tech实际开工）：`deliverables/tech_lead/U00-U01-BRIDGE-V05-TECH-20261014/v0.1/TECH_REVIEW.md`首Required实存，Tech READY→IN_PROGRESS。已核上游批准21 PNG SHA/45实例和四桥bbox、3.47MiB仅RGBA8面积估算；Client实际路径/UUID、构建、HTTP与内置浏览器待，未写通过。Client首Required仍待，保持READY。
+2026-10-14 18:11:44 +08:00（新桥Client实际开工）：`FEATURE_BRIEF.md`、`IMPLEMENTATION_REPORT.md`及变更前源码hash证据实存，Client READY→IN_PROGRESS；报告明确源码资源映射已开始，Creator导入/构建与内置浏览器真实操作仍待。Tech持续IN_PROGRESS。不得以计划的四桥路径或17旧UUID保持宣称已导入核完。
+2026-10-14 18:13:22 +08:00（新桥Tech静态检查初步实存）：`STATIC_CHECK.json`记Art21原型/45实例坐标镜像、当前源码UUID/文件、U01源码派生层序为PASS；body序15–16、六店17–22、front23–24、岸链25–26。此是Tech静态核，不是Creator导入/构建或IAB实际导出通过；`actual_iab_export`=NOT_TESTED，Client正式RESOURCE_IMPORT_MANIFEST仍待。
+2026-10-14 18:20:54 +08:00（新桥21资源导入身份可核）：Client `RESOURCE_IMPORT_MANIFEST.json`实存列21路径/UUID、45计划实例；Producer逐件读取美术PNG与工程PNG SHA、实际`.meta`主/Texture2D/SpriteFrame UUID，21/21吻合且主UUID唯一；17未改项与旧v0.3交付清单SHA及三UUID逐项一致，四新桥各获新UUID。Creator构建退出码文件为36，但结束日志/当前产物及HTTP/IAB验证尚需完整核，暂不仅凭退出码判构建或运行PASS。旧桥退役前须活动引用与运行核。
+2026-10-14 18:23:47 +08:00（当前构建和U01基线导出核验）：Client隔离Creator3.8.8 UnitSamples web-mobile构建退出36、最终Finished日志与742文件当前输出；Tech复算六输出SHA与五源快照SHA一致、TypeScript检查0。Root内置浏览器已进入8788当前产物U01并保存基线截图/导出；Tech `ACTUAL_IAB_EXPORT_CHECK.json`对实导21原型SHA/尺寸/三UUID、45环境+6店顺序/坐标/镜像/尺寸PASS零issue。此证明当前基线数据/入口，不代替实际拖动遮挡、重置、U00/U04画面及控制台核；旧桥尚未退役，Client仍IN_PROGRESS、Tech仍IN_PROGRESS。
+2026-10-14 18:36:47 +08:00（旧桥退役前IAB实际操作通过）：Master `INITIAL_IAB_VERIFICATION.json`记录当前8788产物在Codex内置浏览器U01 21原型/45环境+6店导出、桥前栏杆遮挡拖到桥上的店、树/精灵编辑、末层选择/镜头、重置离开重入文本全同，U00新桥/显隐/镜头、U04共享环境/表情与返回均PASS；warn/error日志`[]`。Root已据此放行Client按零活动引用审计备份并退役旧bridge_half PNG/meta，须退役后最终Creator构建和Root复载再核；此节点非Client最终USER_REVIEW或DONE。目标机GPU/帧率未测。
+2026-10-14 18:39:15 +08:00左右（旧桥退役后最终构建实存，复载待）：Client按Root退役前IAB PASS先备份旧`bridge_half` PNG/meta（SHA `4168180e…c66f0a`/`f964cce1…bfff8`），工程旧文件现已不存在；`RETIREMENT_CANDIDATES.json`记活动源码/场景/Prefab/meta和最终build内旧路径/UUID均0引用。Creator3.8.8隔离UnitSamples退役后final build exit36、最终Finished、739文件，Producer核6输出SHA与备份双SHA吻合。`BUILD_MANIFEST.json`明确post-retirement browser reload仍待Root，故Client持续IN_PROGRESS、不能凭复建判新运行USER_REVIEW。
+2026-10-14 18:42:56 +08:00（旧桥退役后最终HTTP/IAB复载PASS）：Master `FINAL_HTTP_IDENTITY.json`对8788当前最终构建六核心文件HTTP200且SHA与build清单相等；`FINAL_IAB_VERIFICATION.json`核67项现行源码/隔离构建源0差、U01最终导出与基线文本完全一致、U00新桥/U04共享背景可见，warn/error为`[]`。此前`INITIAL_IAB_VERIFICATION.json`有U01遮挡/编辑/重置重入与U00/U04操作，两个阶段证据互补。Client五Required已提交、四项Task原文PASS并在REVIEW；Tech最终TECH_REVIEW/两Required已提交，三项原文PASS，待状态Review与Master接受。目标机性能未测，最终运行用户审批仍待。
+2026-10-14 18:47:27 +08:00（Master接受与准确运行版用户门禁）：Master `MASTER_REVIEW.json`接受Client四项Task原文同序PASS、`TECH_MASTER_ACCEPTANCE.json`接受Tech三项原文同序PASS；`RUNTIME_IDENTITY.json`17项现行文件SHA由Producer逐一复算0差，准确`USER_REVIEW_PACKET.md` SHA=`1d40d27a…e7959ab`。Tech REVIEW→DONE、审批PROFESSIONAL_REVIEW；Client REVIEW→USER_REVIEW、审批绑定v0.1 packet/身份、decided_at null，用户接入后实际效果待确认，非DONE。本单元示例不派QA，目标机性能NOT_TESTED。
+2026-10-14 18:48:43 +08:00（Producer流程交付REVIEW）：`FLOW_REPORT.md`、`WORK_RETROSPECTIVE.md`、`DELIVERABLE.json`三Required实存，15项索引全部路径存在、三条Task验收原文同序PASS；复盘`WR-20261014-U00-U01-BRIDGE-V05-001`记录18:00:19→Client门禁18:47:27墙钟47分08秒、至Producer Review48分24秒，净制作和用户等待未倒推。Continuity：Art/Tech DONE，Client准确运行v0.1 USER_REVIEW，FLOW自身REVIEW待Master内部接受，本线无空转READY/IN_PROGRESS；目标机性能未测。
+2026-10-14 18:49:59 +08:00（Producer内部最终接受）：Master `FLOW_MASTER_ACCEPTANCE.json`核三Required、三条Task原文同序PASS、15索引及continuity/可靠时间复盘，FLOW REVIEW→DONE、现行审批PROFESSIONAL_REVIEW。本FLOW DONE仅流程支持；Client准确v0.1运行效果USER_REVIEW待用户，Tech/Art DONE，无本线可继续任务占位；目标机性能未测。
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 END -->
+
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
 
 
 <!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 START -->
 2026-10-14 16:16:23 +08:00（桥形生产FLOW内部完成）：Master `FLOW_MASTER_ACCEPTANCE.md`核Producer三Required、三项Task原文PASS、15索引及continuity/复盘，FLOW REVIEW→DONE、审批PROFESSIONAL_REVIEW。Art准确v0.5 USER_REVIEW等待用户具体桥造型/切片/遮挡Gate2，Tech预签支持内部DONE，Client旧v0.1 REVISION且未导入；预算16/16无第17次。内部接受不替代Gate2或运行通过，U05不受本线影响。
+2026-10-14 18:52:13 +08:00当前事实补记（保留16:16:23历史阶段）：用户后来已“确认”准确v0.5具体切片Gate2，`deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json`为证；Art现行USER_APPROVED/DONE。U00/U01已完成真实接入、退役后构建/HTTP/IAB核验，准确Client v0.1运行版现USER_REVIEW，证据为同目录`USER_REVIEW_PACKET.md`与`RUNTIME_IDENTITY.json`；运行效果尚待用户决定。第16次为唯一新增候选，累计16/16无第17次。此为后续新任务结果，不改16:16:23当时阶段结论。
 <!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 END -->
 
 

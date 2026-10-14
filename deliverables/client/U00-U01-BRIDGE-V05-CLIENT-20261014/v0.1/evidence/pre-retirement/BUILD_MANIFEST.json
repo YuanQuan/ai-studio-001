@@ -1,0 +1,92 @@
+{
+  "taskId": "U00-U01-BRIDGE-V05-CLIENT-20261014",
+  "creator": "Cocos Creator 3.8.8",
+  "platform": "web-mobile",
+  "buildPurpose": "UnitSamples only; explicit start scene UUID per Task",
+  "buildCommand": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-bridge-v05-client-project --build 'configPath=/private/tmp/u00-u01-bridge-v05-client-project/build-unit-samples.json;platform=web-mobile'",
+  "buildExitCode": 36,
+  "buildExitCodeContext": "Creator 3.8 official CLI exit 36 means success; stdout contains build Task Finished after 5 seconds.",
+  "profilePath": "/private/tmp/u00-u01-bridge-v05-client-project/build-unit-samples.json",
+  "profileStartScene": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+  "profileScenes": [
+    {
+      "url": "db://assets/UnitSamples.scene",
+      "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+    }
+  ],
+  "launchScene": {
+    "url": "db://assets/UnitSamples.scene",
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+  },
+  "buildOutput": "/private/tmp/u00-u01-bridge-v05-client-build/u00-u01-bridge-v05-web-mobile",
+  "httpUrl": "http://127.0.0.1:8788/",
+  "httpPort": 8788,
+  "httpServerSessionId": 43996,
+  "httpStatus": "Codex内置浏览器已成功加载；状态码未单独读取",
+  "fileCount": 742,
+  "hashes": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+    "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+    "src/settings.json": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+    "assets/main/index.js": "b02bdefadaa8c545fcbd91f6970227d4519c6060c5266d86aa1eaeac495e0e0e",
+    "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+  },
+  "sourceSnapshotPath": "/private/tmp/u00-u01-bridge-v05-client-project",
+  "sourceIdentityFiles": [
+    {
+      "path": "labs/u01/sakura_v03_layout.ts",
+      "sha256": "df31c8af03fdf8b6702d74e3df58a94f5bd6d2c4f00cd3cf105912794f88974a"
+    },
+    {
+      "path": "labs/u01/sakura_v03_environment.ts",
+      "sha256": "0f782aff96146f481f2f009f20cf8e4f34f8068839c7694ebaf0772a608f4c1d"
+    },
+    {
+      "path": "labs/u01/sakura_layout_editor.ts",
+      "sha256": "d5b0dfaa2d3fe220c2e4bb42ad825f396ad5cd1cb8b83492de171353b796946f"
+    },
+    {
+      "path": "UnitSamples.scene",
+      "sha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb"
+    },
+    {
+      "path": "UnitSamples.scene.meta",
+      "sha256": "2f8f21f7bb0a4811252e4a6db94bfd1e5f8539ccb3d9f7a2f87993072994db78"
+    }
+  ],
+  "sourceSnapshotDifferences": [],
+  "buildLog": "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/creator-stdout.log",
+  "buildStderr": "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/creator-stderr.log",
+  "typeCheckLog": "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/typescript-check.log",
+  "typesCheck": "PASS",
+  "buildDurationSeconds": 5,
+  "browserResult": "PASS_U01_REAL_OPERATIONS; U00_BRIDGE_VISUAL_REVIEW_AND_U04_REENTRY_PENDING",
+  "browserScreenshotPaths": [],
+  "sourceImagesNotRegenerated": true,
+  "browserEvidence": {
+    "menuInitial": "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/menu_initial.jpg",
+    "u01Baseline": "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_baseline.jpg",
+    "u01BaselineExport": "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_baseline_export.json",
+    "u01ShopBridgeOcclusion": "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_shop_bridge_occlusion.jpg",
+    "u01OtherOperations": [
+      "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_camera_pan_zoom.jpg",
+      "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_tree_edit.jpg",
+      "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_spirit_edit.jpg",
+      "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u01_last_instance.jpg"
+    ],
+    "u00Initial": "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/evidence/u00_bridge_initial.jpg",
+    "rootObserved": {
+      "consoleWarnings": 0,
+      "consoleErrors": 0,
+      "exportCounts": {
+        "environment": 45,
+        "shops": 6
+      },
+      "u01Operations": "reset/edit/delete/add spirits and lotus/reflection, final items 41-45, camera drag/zoom/reset, export and return PASS",
+      "u00": "initial view, pan/count available; thin dark outline at top of bridge under Tech visual/source review",
+      "u04": "PENDING"
+    }
+  },
+  "stage": "PRE_RETIREMENT"
+}

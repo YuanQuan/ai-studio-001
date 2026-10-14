@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-10-14T10:36:47.471517+00:00",
+  "url": "http://127.0.0.1:8788/",
+  "browser": "Codex In-app Browser",
+  "viewport": [
+    720,
+    1280
+  ],
+  "stage": "PRE_RETIREMENT",
+  "checks": [
+    {
+      "criterion": "U01 21原型45环境6店实际导出和三类UUID",
+      "result": "PASS",
+      "evidence": "u01_baseline_export.json"
+    },
+    {
+      "criterion": "U01桥前栏杆遮挡临时拖到桥上的店1",
+      "result": "PASS",
+      "evidence": "u01_shop_bridge_occlusion.jpg"
+    },
+    {
+      "criterion": "U01树添加拖动缩放镜像删除、精灵莲花倒影添加",
+      "result": "PASS",
+      "evidence": "u01_tree_edit.jpg;u01_spirit_edit.jpg"
+    },
+    {
+      "criterion": "U01实例41-45末层选择、镜头拖缩复位",
+      "result": "PASS",
+      "evidence": "u01_last_instance.jpg;u01_camera_pan_zoom.jpg"
+    },
+    {
+      "criterion": "U01重置及离开重入还原，导出与初始文本完全相同",
+      "result": "PASS",
+      "evidence": "u01_reentry_export.json"
+    },
+    {
+      "criterion": "U00新桥显示、镜头拖动缩放重置、游客数量及三组显隐",
+      "result": "PASS",
+      "evidence": "u00_bridge_initial.jpg;u00_bridge_zoom.jpg;u00_tourists_hidden.jpg;u00_shops_hidden.jpg;u00_street_hidden.jpg"
+    },
+    {
+      "criterion": "U04共享环境进入、表情按钮与返回",
+      "result": "PASS",
+      "evidence": "u04_shared_background.jpg;u04_expression_smoke.jpg"
+    },
+    {
+      "criterion": "当前IAB warn/error日志为空",
+      "result": "PASS",
+      "evidence": "browser_initial_warnings_errors.json"
+    }
+  ],
+  "notes": [
+    "桥顶细线在批准桥细节中已有同区轮廓；L03/L04镜头比例都1.0，未见前后切片分离。源21PNG同字节，17资源不得改图。此为目视核对，非跨视差像素零差证明。",
+    "须在旧桥退役后再次核当前构建运行身份。",
+    "目标设备帧率、GPU、DrawCall未测试。"
+  ]
+}

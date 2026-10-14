@@ -1,0 +1,40 @@
+{
+  "id": "U00-U01-BRIDGE-V05-CLIENT-20261014",
+  "title": "U00/U01新版桥资源CLIENT",
+  "type": "integration",
+  "owner": "client",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "将用户批准v0.5桥接入共享环境并完成真实运行验证，至具体运行效果用户审阅。",
+  "inputs": [
+    "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/CUT_MANIFEST.json",
+    "tasks/SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014/ARTIFACT_APPROVAL.json",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "21张PNG与批准版本同字节，45环境实例和六店游客保留，17张原资源UUID保持。",
+    "U00/U01桥身在人物店铺后，桥前栏杆在人物店铺前，U01编辑及导出重置返回可用。",
+    "Creator3.8.8实际导入构建通过，旧桥引用审计及实际验证后退役，历史母版保留。",
+    "内置浏览器实际运行与操作证据，零生图，未测项如实记录。"
+  ],
+  "dependencies": [
+    "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "禁止新增生图，累计16/16。",
+    "只改Game Project Layer本任务范围；不提交Git，Master统一核账。",
+    "Client可修改共享环境数据、编辑器层级、资源README及四桥PNG/meta；旧桥实测后删除。保留六店游客和U04/U05。",
+    "Producer授权维护日志看板资源登记和本任务状态；使用独立唯一marker，保留并发修改。",
+    "单元示例Owner自验，不派QA；不得把未测项写成PASS。",
+    "Required交付与验收必须严格对应Task原文，不改写验收标准。"
+  ]
+}

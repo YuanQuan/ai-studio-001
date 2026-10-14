@@ -1,3 +1,18 @@
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 START -->
+2026-10-14 18:00:19 +08:00起 | `U00-U01-BRIDGE-V05-FLOW-20261014` | 用户批准v0.5具体桥资源Gate2并授权接入；Art Task DONE，Producer首Required实存/IN_PROGRESS | Master `USER_AUTHORIZATION.json`、13项批准身份SHA；Producer `FLOW_REPORT.md` | Client/Tech Task已建、首Required未实存仍READY；16/16零新调用，Creator/运行未测，Client实际效果仍需USER_REVIEW。
+2026-10-14 18:09:56 +08:00 | `U00-U01-BRIDGE-V05-TECH-20261014` | Tech首Required实存，READY→IN_PROGRESS | `TECH_REVIEW.md` | 仅上游Art批准输入静态核；21真实UUID/45源码实例、构建、HTTP/IAB待Client实产，不提前判运行。
+2026-10-14 18:11:44 +08:00 | `U00-U01-BRIDGE-V05-CLIENT-20261014` | Client首Required实存、READY→IN_PROGRESS | FEATURE_BRIEF/IMPLEMENTATION_REPORT、pre_change SOURCE_HASHES | 四桥资源映射实际开始；Creator导入/构建/IAB与真实UUID尚待。
+2026-10-14 18:13:22 +08:00 | `U00-U01-BRIDGE-V05-TECH-20261014` | 静态资源/坐标/源码层序初核PASS，实际运行待 | `STATIC_CHECK.json` | U01 body15–16→六店17–22→front23–24→岸链25–26；IAB导出NOT_TESTED，Client正式导入清单待。
+2026-10-14 18:20:54 +08:00 | `U00-U01-BRIDGE-V05-CLIENT-20261014` | 21资源Art→工程PNG/meta实际身份核对可复查，四新桥真实UUID已出现 | Client `RESOURCE_IMPORT_MANIFEST.json`、21实际PNG/.meta；旧v0.3 manifest | Producer独立SHA/主及子UUID 21/21一致、17旧项身份不变；构建exit36文件单独不足判最终成功，HTTP/IAB与旧桥退役待。
+2026-10-14 18:23:47 +08:00 | `U00-U01-BRIDGE-V05-CLIENT/TECH-20261014` | Creator3.8.8构建与当前IAB U01基线导出核齐，操作/遮挡仍待 | Client BUILD_MANIFEST，Tech TECH_REVIEW/ACTUAL_IAB_EXPORT_CHECK，Master u01_baseline截图+export | Exit36+最终Finished+742输出/6SHA，导出21原型及45环境+6店零issue；U00/U04/拖动重置和旧桥退役未完成。
+2026-10-14 18:36:47 +08:00 | `U00-U01-BRIDGE-V05-CLIENT-20261014` | 旧桥退役前Root Codex IAB操作验证8项PASS，准按零引用审计退役旧桥后重建 | Master `INITIAL_IAB_VERIFICATION.json`及U00/U01/U04截图、双导出、warn/error[] | 退役后final build/复载仍待；Client/Tech IN_PROGRESS，运行版用户门禁未到。
+2026-10-14 18:39:15 +08:00左右 | `U00-U01-BRIDGE-V05-CLIENT-20261014` | 旧bridge_half PNG/meta备份退役、零活动引用，退役后final Creator构建输出实存 | RETIREMENT_CANDIDATES、BUILD_MANIFEST、备份双文件、739输出 | Producer复核6输出SHA/备份双SHA一致；Root post-retirement IAB复载仍待，Client不送最终USER_REVIEW。
+2026-10-14 18:42:56 +08:00 | `U00-U01-BRIDGE-V05-CLIENT/TECH-20261014` | 退役后最终HTTP身份与内置浏览器复载PASS，Client五Required/四验收原文PASS进REVIEW，Tech两Required/三验收原文PASS待Review | Master `FINAL_HTTP_IDENTITY.json`/`FINAL_IAB_VERIFICATION.json`，Client/Tech `DELIVERABLE.json` | 67源码副本0diff、6核心HTTP200/SHA、U01导出同基线、U00/U04可见、warn/error[]；Master接受及具体Client运行版USER_REVIEW仍待，目标机未测。
+2026-10-14 18:47:27 +08:00 | `U00-U01-BRIDGE-V05-CLIENT/TECH-20261014` | Master接受Tech内部支持DONE、Client准确v0.1运行版进入USER_REVIEW | Master `MASTER_REVIEW.json`/`TECH_MASTER_ACCEPTANCE.json`/`RUNTIME_IDENTITY.json`/`USER_REVIEW_PACKET.md`，两Task现行Approval | 17文件SHA复算0差；Client具体运行效果待用户决定、非DONE；无QA单元示例，目标机性能未测。
+2026-10-14 18:48:43 +08:00 | `U00-U01-BRIDGE-V05-FLOW-20261014` | Producer三Required/三原文PASS/15索引齐并进入REVIEW，复盘与continuity已核 | `FLOW_REPORT.md`、`WORK_RETROSPECTIVE.md`、`DELIVERABLE.json`、共享复盘marker | Master内部接受待；Client准确v0.1 USER_REVIEW、Tech DONE，无本线空转READY/IN_PROGRESS。
+2026-10-14 18:49:59 +08:00 | `U00-U01-BRIDGE-V05-FLOW-20261014` | Master接受Producer流程支持，REVIEW→DONE/PROFESSIONAL_REVIEW | `FLOW_MASTER_ACCEPTANCE.json`、Producer三Required/15索引、现行Approval | 内部流程完成；Client准确v0.1 USER_REVIEW待用户实际效果决定，不冒称Client DONE。
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 END -->
+
 <!-- SCENE-SAKURA-REDRAW-V03-20261014 PRODUCER_DONE START -->
 
 

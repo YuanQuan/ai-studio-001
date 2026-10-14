@@ -689,3 +689,18 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 部分审阅文件：`review/reconstructed.png` SHA `eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a`、`review/component_sheet.png` SHA `81b936daaa11ddd359838cbe99a0d7f9f610d576f21971c0d89121f42e838575`、44帧 `review/animation_preview.gif` SHA `d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57`，均为美术审阅件，无客户端导入计划或UUID。当前 `source/workspace_b_full.psd` SHA `dcfafd506f84157c68307fc959d03f59ffbeba7633db8cf21f52c02b49e6993f`、70层；`source/psd_manifest_full.json` SHA `18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3`、72层。正式PSD及新CUT清单待新方案批准后对齐；旧顾客身体及三脸在现有CUT清单中是 `REPRESENTATIVE_ONLY`，不可凭此登记为最终正式导入。
 当前冻结输入与本批最终资源待审方案见 `deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json` / `APPROVAL_HASHES.json`；当前仅USER_REVIEW，不能把部分实存资源转作已批准接入。
 <!-- U05-INTERACTION-ASSETS-20261014 END -->
+
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 ASSET_REGISTRY START -->
+## U00/U01桥 v0.5｜Gate2已批，Creator资源身份已导入
+
+`deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/USER_AUTHORIZATION.json`记录用户对准确v0.5四桥片批准。Client `deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json`列21资源与45实例；Producer逐件核美术/工程PNG SHA和实际`.meta`主UUID、Texture2D/SpriteFrame子UUID，21项均一致、主UUID无重复；17非桥资源与旧v0.3交付清单的SHA及三UUID逐项不变。以下四项是**真实导入身份**。最终Creator构建、HTTP身份与内置浏览器复载已PASS；接入后的实际效果仍待本版用户审批。
+
+| 稳定资产 ID | 美术实际路径/版本 | Creator实际工程路径 | 美术/工程SHA-256 | Creator真实主/Texture2D/SpriteFrame UUID | 当前状态 |
+|---|---|---|---|---|---|
+| `tex_sakura_rr_bridge_body_l` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png` / v0.5 | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l.png` | `c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9` | `232fc449-73e5-4622-bd81-d97eeda73f21` / `232fc449-73e5-4622-bd81-d97eeda73f21@6c48a` / `232fc449-73e5-4622-bd81-d97eeda73f21@f9941` | 导入/最终运行身份已核；用户审核待 |
+| `tex_sakura_rr_bridge_body_r` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png` / v0.5 | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r.png` | `712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316` | `91356d07-e497-4935-a689-6a2e2fe19cd8` / `91356d07-e497-4935-a689-6a2e2fe19cd8@6c48a` / `91356d07-e497-4935-a689-6a2e2fe19cd8@f9941` | 导入/最终运行身份已核；用户审核待 |
+| `tex_sakura_rr_bridge_front_l` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png` / v0.5 | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png` | `36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277` | `25653ee5-158b-49d0-adf3-b0a58eee27d1` / `25653ee5-158b-49d0-adf3-b0a58eee27d1@6c48a` / `25653ee5-158b-49d0-adf3-b0a58eee27d1@f9941` | 导入/最终运行身份已核；用户审核待 |
+| `tex_sakura_rr_bridge_front_r` | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png` / v0.5 | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png` | `cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204` | `f0c444d5-465b-4a90-8388-2084475df214` / `f0c444d5-465b-4a90-8388-2084475df214@6c48a` / `f0c444d5-465b-4a90-8388-2084475df214@f9941` | 导入/最终运行身份已核；用户审核待 |
+
+四桥必须依批准`CUT_MANIFEST.json`位置及body→六店游客→front→岸链层序；退役后Creator 3.8.8构建、六核心HTTP200/SHA及最终内置浏览器复载已分别核过，证据为Client `BUILD_MANIFEST.json`、Master `FINAL_HTTP_IDENTITY.json` / `FINAL_IAB_VERIFICATION.json`；旧桥PNG/meta在退役前运行PASS及零活动引用核后备份移除。Client准确v0.1运行效果已由Master `RUNTIME_IDENTITY.json`绑定17项现行文件SHA，现行USER_REVIEW待用户决定；Tech内部支持DONE。U05并发资产不属本表改动范围。
+<!-- U00-U01-BRIDGE-V05-FLOW-20261014 ASSET_REGISTRY END -->

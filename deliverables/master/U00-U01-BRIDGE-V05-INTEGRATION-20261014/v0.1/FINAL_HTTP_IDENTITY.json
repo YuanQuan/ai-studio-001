@@ -1,0 +1,50 @@
+{
+  "time": "2026-10-14T10:39:55.228230+00:00",
+  "url": "http://127.0.0.1:8788/",
+  "checks": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "manifest_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "pass_identity": true
+    },
+    {
+      "path": "index.js",
+      "http_status": 200,
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "manifest_sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "pass_identity": true
+    },
+    {
+      "path": "application.js",
+      "http_status": 200,
+      "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "manifest_sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "pass_identity": true
+    },
+    {
+      "path": "src/settings.json",
+      "http_status": 200,
+      "sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "manifest_sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "pass_identity": true
+    },
+    {
+      "path": "assets/main/index.js",
+      "http_status": 200,
+      "sha256": "b02bdefadaa8c545fcbd91f6970227d4519c6060c5266d86aa1eaeac495e0e0e",
+      "manifest_sha256": "b02bdefadaa8c545fcbd91f6970227d4519c6060c5266d86aa1eaeac495e0e0e",
+      "pass_identity": true
+    },
+    {
+      "path": "assets/main/config.json",
+      "http_status": 200,
+      "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "manifest_sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "pass_identity": true
+    }
+  ],
+  "result": "PASS",
+  "network_note": "loopback直接核验；默认代理502的请求未作PASS"
+}

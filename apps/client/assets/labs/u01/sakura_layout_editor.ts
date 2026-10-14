@@ -71,7 +71,7 @@ export class U01SakuraLayoutEditor {
   private text(parent: Node, value: string, x: number, y: number, w: number, h: number, size = 16): Label { const n = this.node('Text', parent, w, h, x, y); const l=n.addComponent(Label); l.string=value; l.fontSize=size; l.lineHeight=size+4; l.color=TEXT; l.horizontalAlign=Label.HorizontalAlign.CENTER; l.verticalAlign=Label.VerticalAlign.CENTER; l.overflow=Label.Overflow.SHRINK; return l; }
   private button(parent: Node, value: string, x: number, y: number, w: number, h: number, cb: () => void): Node { const n=this.node(`Button_${value}`,parent,w,h,x,y); const g=n.addComponent(Graphics); g.fillColor=PANEL;g.roundRect(-w/2,-h/2,w,h,8);g.fill();g.strokeColor=BLUE;g.lineWidth=1;g.roundRect(-w/2,-h/2,w,h,8);g.stroke();this.text(n,value,0,0,w-8,h-6,15);n.on(Node.EventType.TOUCH_END,(e)=>{e.propagationStopped=true;cb();});return n; }
   private createTopControls(): void {
-    const top=this.node('U01TopControls',this.root,700,142,0,0); this.text(top,'U01 樱花场景布局 v0.3 · 临时调整，离开后恢复初始值',0,37,680,30,20);
+    const top=this.node('U01TopControls',this.root,700,142,0,0); this.text(top,'U01 樱花场景布局 v0.5 · 临时调整，离开后恢复初始值',0,37,680,30,20);
     this.modeButton=this.button(top,'编辑层',-263,0,86,38,()=>{this.mode=this.mode==='edit'?'camera':'edit';this.updateStatus();});
     this.button(top,'−',-166,0,48,38,()=>this.scaleSelected(.9)); this.button(top,'+',-111,0,48,38,()=>this.scaleSelected(1.1));
     this.button(top,'镜像',-49,0,64,38,()=>this.mirrorSelected()); this.button(top,'删除',24,0,64,38,()=>this.removeSelected());
@@ -94,17 +94,24 @@ export class U01SakuraLayoutEditor {
     this.button(this.panel,'镜头复位',-53,-51,104,28,()=>{this.fitCanvas();}); this.button(this.panel,'缩放−',68,-51,76,28,()=>this.zoomCanvas(.9)); this.button(this.panel,'缩放+',155,-51,76,28,()=>this.zoomCanvas(1.1));
   }
   private createInitialItems(): void {
-    for(const entry of SAKURA_V03_LAYOUT.instances) {
-      const item: Item={instanceId:entry.instanceId,prototypeId:entry.assetId,name:entry.name,left:entry.x,top:entry.y,width:entry.width,height:entry.height,scale:1,mirror:entry.mirror,motion:entry.motion,order:entry.order,node:new Node(entry.name)};
-      this.makeItemNode(item); this.items.push(item);
-    }
+    const bandOrder: Record<string, number> = { L01_Sky: 0, L02_Mountains: 1, L03_Ground: 2, L04_WaterBridge: 4, L05_WaterGrass: 5 };
+    const entries = [...SAKURA_V03_LAYOUT.instances].sort((a, b) =>
+      (bandOrder[a.layer] ?? 3) - (bandOrder[b.layer] ?? 3) || a.order - b.order);
+    const addEntries = (layers: string[]): void => {
+      for(const entry of entries.filter(item => layers.includes(item.layer))) {
+        const item: Item={instanceId:entry.instanceId,prototypeId:entry.assetId,name:entry.name,left:entry.x,top:entry.y,width:entry.width,height:entry.height,scale:1,mirror:entry.mirror,motion:entry.motion,order:this.items.length,node:new Node(entry.name)};
+        this.makeItemNode(item); this.items.push(item);
+      }
+    };
+    addEntries(['L01_Sky','L02_Mountains','L03_Ground']);
     const shops=(this.gallery as any).shopPrefabs as any[];
     for(let i=0;i<6;i++) {
       const [left,top]=SHOP_POSITIONS[i];
-      const item:Item={instanceId:`ORIGINAL-SHOP-${i+1}`,prototypeId:'ORIGINAL-SHOP',name:`原店参考${String(i+1).padStart(2,'0')} ${SHOP_NAMES[i]}`,left,top,width:1024,height:1024,scale:0.34,mirror:false,motion:'static',order:16.5+i*0.001,node:new Node(`原店参考${i+1}`),shopIndex:i};
+      const item:Item={instanceId:`ORIGINAL-SHOP-${i+1}`,prototypeId:'ORIGINAL-SHOP',name:`原店参考${String(i+1).padStart(2,'0')} ${SHOP_NAMES[i]}`,left,top,width:1024,height:1024,scale:0.34,mirror:false,motion:'static',order:this.items.length+i*0.001,node:new Node(`原店参考${i+1}`),shopIndex:i};
       const prefab=shops?.[i]; if(prefab){const instance=instantiate(prefab); item.node=instance; this.canvas.addChild(instance);}
       this.items.push(item);
     }
+    addEntries(['L04_WaterBridge','L05_WaterGrass']);
     this.items.sort((a,b)=>a.order-b.order); this.reorder();
   }
   private makeItemNode(item: Item): void { const n=new Node(item.name); const tr=n.addComponent(UITransform);const frame=this.frames.get(item.prototypeId); if(frame){const sprite=n.addComponent(Sprite);sprite.sizeMode=Sprite.SizeMode.CUSTOM;sprite.trim=false;sprite.spriteFrame=frame;}tr.setContentSize(item.width,item.height); this.canvas.addChild(n); item.node=n; this.applyItem(item); }
@@ -129,7 +136,7 @@ export class U01SakuraLayoutEditor {
   private scaleSelected(f:number):void {const i=this.selected;if(!i)return;i.scale=Math.max(.1,Math.min(4,+(i.scale*f).toFixed(3)));this.applyItem(i);this.setSelected(i);}
   private mirrorSelected():void {if(!this.selected)return;this.selected.mirror=!this.selected.mirror;this.applyItem(this.selected);this.setSelected(this.selected);}
   private removeSelected():void {const i=this.selected;if(!i)return;i.node.destroy();this.items=this.items.filter(x=>x!==i);this.reorder();this.setSelected(null);}
-  private reset():void {this.dispose();this.root.destroy();this.items=[];this.frames.clear();this.disposed=false;this.open();this.status.string='已恢复 v0.3 基线；离开重入也会重新加载该基线。';}
+  private reset():void {this.dispose();this.root.destroy();this.items=[];this.frames.clear();this.disposed=false;this.open();this.status.string='已恢复 v0.5 基线；离开重入也会重新加载该基线。';}
   private sourcePoint(p:Vec2):Vec2|null {const local=this.canvas.getComponent(UITransform)?.convertToNodeSpaceAR(new Vec3(p.x,p.y,0));if(!local)return null;return new Vec2(local.x+W/2,H/2-local.y);}
   private onTouchStart(e:any):void {const screen=e.getUILocation();if(this.onUi(screen))return;this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=[this.selected.left,this.selected.top];}}e.propagationStopped=true;}
   private onTouchMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}

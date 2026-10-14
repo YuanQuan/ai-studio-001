@@ -1,0 +1,58 @@
+{
+  "task_id": "U00-U01-BRIDGE-V05-CLIENT-20261014",
+  "owner": "client",
+  "summary": "完成获批Art v0.5桥资源接入、旧桥退役及Creator 3.8.8隔离UnitSamples构建；Root退役后最终内置浏览器/HTTP身份复核通过，交付待用户审阅。",
+  "artifacts": [
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/DELIVERABLE.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/pre_change/SOURCE_HASHES.txt",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/BUILD_MANIFEST.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/STATIC_VALIDATION.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/RETIREMENT_CANDIDATES.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/creator-stdout.log",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/creator-stderr.log",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/creator-exit-code.txt",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/typescript-check.log",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/pre-retirement/BUILD_MANIFEST.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/pre-retirement/INITIAL_IAB_VERIFICATION.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/retirement-backup/tex_sakura_rr_bridge_half.png",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/retirement-backup/tex_sakura_rr_bridge_half.png.meta",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/OUTPUT_FILES_SHA256.json",
+    "deliverables/client/U00-U01-BRIDGE-V05-CLIENT-20261014/v0.1/evidence/final-build/typescript-exit-code.txt",
+    "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/FINAL_IAB_VERIFICATION.json",
+    "deliverables/master/U00-U01-BRIDGE-V05-INTEGRATION-20261014/v0.1/FINAL_HTTP_IDENTITY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "21张PNG与批准版本同字节，45环境实例和六店游客保留，17张原资源UUID保持。",
+      "result": "PASS",
+      "evidence": "v0.5 CUT_MANIFEST 字节核对、45实例布局统计、17个现有PNG及image/texture/SpriteFrame UUID核对；详见 RESOURCE_IMPORT_MANIFEST.json 与 BUILD_MANIFEST.json。"
+    },
+    {
+      "criterion": "U00/U01桥身在人物店铺后，桥前栏杆在人物店铺前，U01编辑及导出重置返回可用。",
+      "result": "PASS",
+      "evidence": "Root内置浏览器实际验证U00/U01桥层级和店铺遮挡、U01编辑/导出/重置/返回及重入导出文本完全一致；U04共享环境进入/表情/返回PASS。退役后最终复载U00新桥与U04可见。证据见INITIAL_IAB_VERIFICATION.json、FINAL_IAB_VERIFICATION.json及RUN_VERIFICATION.md。"
+    },
+    {
+      "criterion": "Creator3.8.8实际导入构建通过，旧桥引用审计及实际验证后退役，历史母版保留。",
+      "result": "PASS",
+      "evidence": "旧桥源/UUID审计无引用；旧PNG/.meta已备份并从正式资源移除，历史Art母版保留；Creator 3.8.8退役后单一UnitSamples导入构建通过；Root最终复载及六个HTTP文件200/hash匹配通过。证据见RETIREMENT_CANDIDATES.json、BUILD_MANIFEST.json、FINAL_IAB_VERIFICATION.json与FINAL_HTTP_IDENTITY.json。"
+    },
+    {
+      "criterion": "内置浏览器实际运行与操作证据，零生图，未测项如实记录。",
+      "result": "PASS",
+      "evidence": "Root内置浏览器真实运行并操作U00/U01/U04及U01编辑、导出和重入；最终退役后复载PASS，warnings/errors为空；本任务无生图。性能未测项见RUN_VERIFICATION.md。证据见FINAL_IAB_VERIFICATION.json。"
+    }
+  ],
+  "assumptions": [
+    "Creator 3.8.8单元示例Web构建用于Root内置浏览器运行审阅，不作为目标设备性能结论。"
+  ],
+  "risks": [
+    "目标设备/GPU/小游戏平台性能未测试。",
+    "U00桥暗色轮廓与批准图源细节一致，未进行逐像素相等声明；PNG保持获批字节。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -62,7 +62,7 @@ export class SakuraV03Motion extends Component {
   }
 }
 
-/** Fill the stable five-layer Prefab interface with the shared Art v0.3 environment. */
+/** Fill the stable five-layer Prefab interface with the shared Art v0.5 environment. */
 export function populateSakuraV03(root: Node, viewport: Node): void {
   void loadFrames().then(frames => {
     if (!root.isValid || root.getChildByName('SAKURA_V03_READY')) return;

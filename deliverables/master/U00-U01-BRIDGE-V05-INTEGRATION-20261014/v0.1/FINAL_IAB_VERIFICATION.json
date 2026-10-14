@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-14T10:42:56.132902+00:00",
+  "stage": "POST_RETIREMENT_FINAL",
+  "result": "PASS",
+  "url": "http://127.0.0.1:8788/",
+  "browser": "Codex In-app Browser",
+  "viewport": [
+    720,
+    1280
+  ],
+  "source_snapshot_check": {
+    "files": 67,
+    "differences": []
+  },
+  "http_identity": "FINAL_HTTP_IDENTITY.json",
+  "initial_interaction_check": "INITIAL_IAB_VERIFICATION.json",
+  "checks": {
+    "reload_menu": "PASS",
+    "u01_final_export_baseline_exact_equal": true,
+    "u00_new_bridge_visible": "PASS",
+    "u04_shared_background": "PASS",
+    "warnings_errors": []
+  },
+  "evidence": [
+    "final_menu.jpg",
+    "final_u01_panorama.jpg",
+    "final_u01_export.json",
+    "final_u00_bridge.jpg",
+    "final_u04_shared.jpg",
+    "final_browser_warnings_errors.json"
+  ],
+  "limits": [
+    "Device/GPU/mini-game platform performance not tested.",
+    "Dark bridge outline remains in approved source, no PNG change and no additional imagegen.",
+    "Existing landscape editor limits retained; operations tested at 720x1280."
+  ]
+}
