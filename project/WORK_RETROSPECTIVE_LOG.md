@@ -1,6 +1,18 @@
 ### WR-20261010-U04-CORNER-SIMPLE-003｜原创角饰简化候选
 
 
+<!-- SAKURA-BRIDGE-SHAPE-FLOW-20261014 START -->
+### WR-20261014-SAKURA-BRIDGE-SHAPE-001｜桥形新参考诊断与流程追踪
+
+- 结果与证据：用户新参考本地副本及同尺度752×348双裁图实存；Art v0.5三Required、三项Task验收原文同序PASS，诊断原栅格PSD零新增像素形变无法满足桥形，方案只桥ROI并提总预算15→16追加1次候选，实际新增调用0。v0.4原USER_REVIEW审批完整快照保留、现行REJECTED/旧Art REVISION；Client REVISION锁，U05不受本轮写入影响。Producer三Required、两项原文验收及连续执行检查齐，已获Master内部接受DONE。新桥图、PSD、切片、运行本轮未制作。
+- 起止与耗时（Asia/Shanghai）：可信起点2026-10-14 13:41:47，Producer内部Review材料齐于13:50:46，墙钟8分59秒；Master正式接受13:52:23，起点至此墙钟10分36秒。13:50:46→13:52:23的1分37秒含内部审核与台账收尾，并非Art净制作。此为Art诊断、文件撰写/复核、Producer并行台账和内部核对的重叠墙钟，不是各Agent净制作。用户原话准确时间、Art检查净时、工具运行净时均未知；用户新增预算等待从准确审批门禁开始，尚无结束时刻。Master接受证据为`deliverables/master/SAKURA-BRIDGE-SHAPE-20261014/v0.1/FLOW_MASTER_ACCEPTANCE.md`。
+- 影响速度的可见环节：需先比对原图与现有PSD可编辑性；旧桥缩窄会露出未绘街水，旧规则石缝、四灯和圆章无法通过整层形变独立变更，故零调用路线止于诊断。没有新增生成工具调用或因工具故障返工记录，不能推测耗时或归责。
+- 建议与复核：Art Owner若获新Gate1/预算批准，先在同一桥ROI候选上核轮廓、拱、灯、圆章和露底补洞，再语义拆body/front；Producer在候选出现时复核调用账本是否仅1次且无自动重试、ROI外RGBA零差及17非桥资源SHA，复核点为首候选与Gate2送审包。代价为一次同框/哈希检查，能避免错把旧桥mask视作新造型；不新增用户门禁。
+- Continuity：Producer FLOW经Master内部接受已DONE；Art诊断/方案已实产，受影响新图生产须等用户Gate1与新增预算；Client因上游准确Gate2未决而REVISION。没有以READY/IN_PROGRESS占位却可继续无阻制作的本线任务，用户等待单列于生产墙钟之外。
+<!-- SAKURA-BRIDGE-SHAPE-FLOW-20261014 END -->
+
+
+
 <!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 START -->
 ### WR-20261014-SAKURA-BRIDGE-FRONT-001｜桥栏杆前景局部无损拆层
 

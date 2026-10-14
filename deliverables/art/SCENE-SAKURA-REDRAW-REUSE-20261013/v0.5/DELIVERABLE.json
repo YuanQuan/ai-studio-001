@@ -1,0 +1,39 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-ART-20261014",
+  "owner": "art",
+  "summary": "完成用户参考桥与v0.4实桥的同尺度造型诊断；现有栅格PSD无损变换不足以还原，提交仅桥ROI的1次局部生成追加预算制作方案。本批未制作新桥。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/BRIDGE_DIAGNOSIS.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/user_bridge_shape.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/reference_bridge_inspection.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/current_bridge_inspection.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/INSPECTION_CONFIG.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "对照用户新参考与v0.4实际桥，说明可复核造型/尺寸/栏杆/灯柱/桥脚及标章差距，不将旧拆层冒作新造型。",
+      "result": "PASS",
+      "evidence": "BRIDGE_DIAGNOSIS.md；两张752×348无缩放实图裁片与INSPECTION_CONFIG.json。"
+    },
+    {
+      "criterion": "先评估当前PSD局部变换/复用可否满足；只桥ROI变化、其它资源和六店保持，真实参考副本存在。",
+      "result": "PASS",
+      "evidence": "BRIDGE_DIAGNOSIS.md记录栅格层与露底缺口；PRODUCTION_PLAN.md限定ROI[1160,520,1912,868)及17资源SHA不变；参考SHA与v0.1原件一致。"
+    },
+    {
+      "criterion": "累计15/15生成预算不清零；明确零调用路线或最小追加预算/源格式/预签与具体切片审核边界。",
+      "result": "PASS",
+      "evidence": "PRODUCTION_PLAN.md：本轮新增0、总上限拟15→16仅1次局部候选；v0.4 PSD续版、Art/Tech同批预签、Gate1与Gate2分离。"
+    }
+  ],
+  "assumptions": [
+    "同尺度裁片用于诊断，目测点位误差约±5像素；生产前仍需以原图与实际层遮罩复核。",
+    "用户参考只作桥视觉基准，不将参考中店铺、天空、树或河面像素复制进生产层。"
+  ],
+  "risks": [
+    "当前15/15调用预算已耗尽，新桥候选须获得具体Gate1/预算决定；一次局部候选可能无法同时满足轮廓、补洞与可拆层，失败即停止并报告。",
+    "v0.4 Gate2 未批准；v0.5 目前没有正式新桥图、PSD、切片或实际运行验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

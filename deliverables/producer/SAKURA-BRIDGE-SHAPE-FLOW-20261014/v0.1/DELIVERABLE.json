@@ -1,0 +1,38 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-FLOW-20261014",
+  "owner": "producer",
+  "summary": "新原图桥形要求已与v0.4旧切片审批区分，保留退回快照并跟踪Art三Required诊断：原PSD零新增像素变换不足，累计15/15预算不清零；仅桥ROI追加1次候选方案待用户Gate1与预算决定。Client继续REVISION锁，Producer流程支持已获Master内部接受DONE。",
+  "artifacts": [
+    "deliverables/producer/SAKURA-BRIDGE-SHAPE-FLOW-20261014/v0.1/FLOW_CHECK.md",
+    "deliverables/producer/SAKURA-BRIDGE-SHAPE-FLOW-20261014/v0.1/CONTINUITY_CHECK.md",
+    "deliverables/producer/SAKURA-BRIDGE-SHAPE-FLOW-20261014/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/dashboard/index.html",
+    "tasks/SAKURA-BRIDGE-FRONT-ART-20261014/ARTIFACT_APPROVAL_v0.4_PRE_SHAPE_REVISION.json",
+    "tasks/SAKURA-BRIDGE-FRONT-ART-20261014/ARTIFACT_APPROVAL.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/BRIDGE_DIAGNOSIS.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录v0.4用户退回造型对照请求，保留旧审批和版本，不将新参考误作具体切片批准。",
+      "result": "PASS",
+      "evidence": "v0.4审批原USER_REVIEW完整快照实存、现行REJECTED与Art旧Task REVISION；FLOW_CHECK及审批日志明确新参考只授权桥形修订意图，v0.4 Gate2未批、新预算未批。"
+    },
+    {
+      "criterion": "跟踪Art诊断/方案实际产出与累计预算、连续执行检查及可靠时间复盘，保护Client与并发U05。",
+      "result": "PASS",
+      "evidence": "Art v0.5三Required与六索引实存；同尺度诊断和局部方案已记录0新增调用/15上限耗尽/拟追加1次仅桥ROI。CONTINUITY_CHECK、四共享日志及Dashboard独立marker、WR-20261014-SAKURA-BRIDGE-SHAPE-001已记录；Client REVISION未接入，U05未触。"
+    }
+  ],
+  "risks": [
+    "用户尚未决定新增1次生成预算和v0.5 Gate1；新桥正式图、PSD、切片和Gate2均未完成。",
+    "Art一次局部候选可能无法同时满足桥形与露底补洞；失败需停止回Master，不可自动重试。",
+    "Client Creator实际运行、目标机效果本轮未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

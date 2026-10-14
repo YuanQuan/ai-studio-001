@@ -1,0 +1,33 @@
+{
+  "id": "SAKURA-BRIDGE-SHAPE-ART-20261014",
+  "title": "桥造型对照修订 ART",
+  "type": "art",
+  "owner": "art",
+  "parent": "SCENE-SAKURA-REDRAW-REUSE-20261013",
+  "objective": "根据最新参考仅修桥造型，先对照现有PSD确定最小局部修订，不越生成累计预算。",
+  "inputs": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/user_bridge_shape.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.4/USER_REVIEW_PACKET.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/visual_production_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/BRIDGE_DIAGNOSIS.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "对照用户新参考与v0.4实际桥，说明可复核造型/尺寸/栏杆/灯柱/桥脚及标章差距，不将旧拆层冒作新造型。",
+    "先评估当前PSD局部变换/复用可否满足；只桥ROI变化、其它资源和六店保持，真实参考副本存在。",
+    "累计15/15生成预算不清零；明确零调用路线或最小追加预算/源格式/预签与具体切片审核边界。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "用户最新指令授权桥部分造型修订，未批准v0.4切片效果；不得先接入Client。",
+    "先诊断及预案，不自动增加生图调用：现累计15/15。确定性Native PSD局部变换优先，若不足需说明最小新增预算。",
+    "Art只本v0.5目录、Producer只本Task/本Deliverable及独立marker共享日志Dashboard；不Git、不自行建任务或委派。",
+    "三份诊断/方案Required及原文三PASS实存；正式出图需用户确认追加1次预算/本v0.5局部制作方案，已向用户具体提问，不以默认预选作批准。"
+  ]
+}
