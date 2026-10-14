@@ -1,0 +1,49 @@
+{
+  "id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014",
+  "title": "桥局部重绘生产 ART",
+  "type": "art",
+  "owner": "art",
+  "parent": "SAKURA-BRIDGE-SHAPE-ART-20261014",
+  "objective": "按获批v0.5方案和唯一新增生图额度仅修桥部，在现有PSD保留桥体和前景栏杆，提交具体资源审核。",
+  "inputs": [
+    "deliverables/master/SAKURA-BRIDGE-SHAPE-PRODUCTION-20261014/v0.1/USER_PRODUCTION_APPROVAL.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+    "tasks/SAKURA-BRIDGE-SHAPE-ART-20261014/ARTIFACT_APPROVAL.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PSD_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/DELIVERABLE_PRODUCTION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/reference_before_after_bridge.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/occlusion_demo.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/package/SCENE_SAKURA_BRIDGE_SHAPE_GATE2_v0.5.zip",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png"
+  ],
+  "acceptance": [
+    "仅执行已批准1次局部生图候选、累计最多16次、0自动重试；同批Art/Tech首图前预签及输入原件/prompt/调用账本可追溯。",
+    "新桥单圆拱、四暖灯、旋涡圆章、石栏杆、苔石桥脚与参考同尺度逐锚点核对，不以旧桥变换冒充修订。",
+    "17非桥PNG同字节、授权ROI外可见RGBA零差；body/front层独立、贴片紧裁与镜像映射实存，无6店新增。",
+    "实际PSD、PNG、重组/对照/遮挡图、ZIP及格式/像素核对实存，具体资源送用户Gate2；Client/目标机运行未测。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Art v0.5 plan/diagnostic旧文书不改不覆盖；产出DELIVERABLE_PRODUCTION.json，新图片/源/预签/账本仅v0.5；若关键目标失败停该生成支线并报告，不追加第17次。",
+    "Art同batch签后才调用imagegen；Tech只本交付目录和Art TECH_PRESIGN.json；Producer可修改本轮三Task阶段/审批以及独立marker日志dashboard和ASSET_HANDOFF_REGISTRY本轮条目，保护并发U05。",
+    "Master统一Git；专业Owner不建Task/委派/Git；单元示例无QA，不制作六店，不提前Client接入。"
+  ]
+}

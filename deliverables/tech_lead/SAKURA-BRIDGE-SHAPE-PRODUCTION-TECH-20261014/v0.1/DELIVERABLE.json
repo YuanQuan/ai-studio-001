@@ -1,0 +1,34 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014",
+  "owner": "tech_lead",
+  "summary": "v0.5桥局部重绘同批首图前技术预签和生产技术输入已完成；仅放行用户批准的一次局部候选，不声称候选或运行已通过。",
+  "artifacts": [
+    "deliverables/tech_lead/SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/TECH_PRESIGN.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同批文字预签绑定准确获批v0.5方案、参考、输入目标及Art预案/prompt哈希，首图前签署。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json 同批绑定获批方案、Master批准、Art brief/presign、prompt、参考及目标裁片的真实SHA；signed_at 在 Art 首图调用前，Art首图未调用时已通知。"
+    },
+    {
+      "criterion": "给出ROI映射、body/front/补洞、原生尺寸校准、全画布/左右复用、纹理预算技术输入，区分估算与实测。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md 给出 [1160,520,1912,868)→752×348 坐标、等比锚点回映、紧贴轮廓 mask、body/front/补洞、3072×1024 PSD、半幅镜像和单圆章例外，以及 RGBA8 面积估算和待实测项。"
+    },
+    {
+      "criterion": "执行用户最多1次新增及0自动重试预算，不额外加入自产切图效果Review门禁，不改Client。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN.json 锁定第16次/1候选/0自动重试；TECH_DESIGN.md 明确失败即停、自制切片直交用户 Gate2、无 Client/Build/QA 工作。"
+    }
+  ],
+  "assumptions": [
+    "候选能否保持原生宽比例、拆层和单圆章需实际出图后判定；预签仅允许执行，不代替结果检查。"
+  ],
+  "risks": [
+    "候选可能有画幅或锚点偏差；若需要非等比拉伸或生成第二圆章，则停止该支线并报告。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

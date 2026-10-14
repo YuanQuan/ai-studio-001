@@ -1,6 +1,18 @@
 ### WR-20261010-U04-CORNER-SIMPLE-003｜原创角饰简化候选
 
 
+<!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 START -->
+### WR-20261014-SAKURA-BRIDGE-SHAPE-PRODUCTION-001｜桥局部重绘、分层与具体版送审
+
+- 结果与证据：用户批准准确v0.5方案及只桥ROI一次追加，Art/Tech同batch首图前预签。Art唯一第16次生成SUCCESS、累计16/16、1候选0自动重试，原生1844×853；完成四张左右独立桥体/前景切片、21环境PNG、45层PSD、同尺度比较/遮挡图与92成员无reference ZIP。Producer独立核21切片、17非桥资源、Master13项身份SHA及ZIP CRC均一致；Art静态核ROI外RGBA0差、21图重组0差、PSD预览RGB0差。Art准确v0.5 USER_REVIEW/用户Gate2未决，Tech预签支持内部DONE，Client旧v0.1 REVISION且未导入/未运行。Producer三Required已获Master内部接受DONE。
+- 起止与耗时（Asia/Shanghai）：可信起点2026-10-14 15:28:54为批准证据登记，Art准确Gate2登记16:12:37，墙钟43分43秒；Producer内部Review材料齐16:13:47，起点至此44分53秒；Master正式接受16:16:23，起点至接受墙钟47分29秒，末段2分36秒含内部核对及台账收尾，亦非Art净制作。本墙钟包括Art/Tech并行预签、本地遮罩/PSD/切片、文件核验、ZIP从96删reference至92成员及Master身份核；不是单个Owner净制作。用户原话精确发言时刻未知。工具报告等待29.6秒，但未返回精确提交/返回时间或请求ID；项目副本mtime15:38:00只证明落地。各自实际绘制/校验净时没有独立记录，不按墙钟倒推。上一轮用户审批等待不计本轮；本轮Gate2用户等待从USER_REVIEW起，结束未知。
+- 速度因素与原因：桥形不能由旧PSD零新增像素形变满足，因此按获批额度生成一次候选；候选外侧链柱/非桥背景经本地语义遮罩排除，曾出现断圆帽/蓝楔再作局部修正，未新增生图。初版PSD写入重复嵌套相对路径，Art发现后移动到Task要求的正式路径；初版ZIP含四份reference，按已定审核范围重包为92成员。两项是路径/包范围返工，不据此估算Art净时或归责。没有本轮工具故障证据；原生Photoshop打开、Creator运行和目标机性能未测。
+- 建议与复核：Art Owner在下一批PSD组装前先把输出路径解析成项目绝对路径，并在打包前用文件清单排除reference等仅诊断附件；Producer在首个PSD/ZIP出现时核实际路径及包成员，复核点为同批首个身份登记。Tech/Art对非镜像中央标章继续以左右独立切片和同尺度重组验证，增加一次静态核对成本，可减少镜像重复或接缝返工；不加新用户审批门禁。Client待Gate2批准后按实际Creator画面核实体层序、缩放、UUID及性能。
+- Continuity：Art已到具体USER_REVIEW，Tech内部DONE，Producer三Required已获Master内部接受DONE；Client因上游Gate2未决保持REVISION。无只靠READY/IN_PROGRESS占位的可继续任务。具体资源用户等待单列，不混入本轮制作墙钟。
+<!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 END -->
+
+
+
 <!-- SAKURA-BRIDGE-SHAPE-FLOW-20261014 START -->
 ### WR-20261014-SAKURA-BRIDGE-SHAPE-001｜桥形新参考诊断与流程追踪
 

@@ -1,0 +1,704 @@
+{
+  "task": "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014",
+  "version": "v0.5",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "roi_xyxy": [
+    1160,
+    520,
+    1912,
+    868
+  ],
+  "bridge_union_mask": "source/bridge_union_mask.png",
+  "bridge_front_mask": "source/bridge_front_mask.png",
+  "bridge_union_mask_sha256": "dc652daea0dcbafd742b2a9932e2cfaa23605062a69a62a73e476cf2a1e24b78",
+  "bridge_front_mask_sha256": "4bae25b266c86023cabf7241d84bde8aa2364aff14f101710cac5bb9e6b0ab1e",
+  "bridge_union_pixels": 95466,
+  "bridge_front_pixels": 38680,
+  "body_front_alpha_overlap_pixels": 0,
+  "active_exports": [
+    {
+      "path": "exports/tex_sakura_rr_far_l.png",
+      "sha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16",
+      "size": [
+        1536,
+        720
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_far_r.png",
+      "sha256": "b70c1a0f6b9eb658978783e2d4c6ac793ce774e7635575863e05a339a76d59de",
+      "size": [
+        1536,
+        720
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_left.png",
+      "sha256": "824e64f7dcb7c7c5ce9ce31aba74d4a77fe2a2ba62b4aa5fe65c976874797c7e",
+      "size": [
+        768,
+        384
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_right.png",
+      "sha256": "365469e769b32d25d4fb3c13efd04bafa0e77272cc1f74a9fe63ce835c530fea",
+      "size": [
+        768,
+        384
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_gate.png",
+      "sha256": "83615b9e79cea11ece87b66744ce2e3bae1e4b88f7a718de1bb0aeef9fa74232",
+      "size": [
+        380,
+        475
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_l.png",
+      "sha256": "b1eeb3b8290a5b6feb509f2737e6cedfcb7e6d445d3b9593858040da8810d0e7",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_r.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_flame.png",
+      "sha256": "ff7b7a1c48b4524bc652fe20b26df7f6fc86930636cb4f9a331e65348dd43abf",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_lotus.png",
+      "sha256": "420d66639b394fc3ed70da82ad5072939197e7d877e72a5d665df7f676063c56",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_reflection.png",
+      "sha256": "e912caa236f3988811f6f1463e1de4c80d6a122505a796d503b4110324a29c2c",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_flame.png",
+      "sha256": "431123b105a153c04af75bee9172523cbea3b3059347b0ffd42e0e6adfe849fa",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_lotus.png",
+      "sha256": "5454d0cdee9ef05d1eabd0ffc8a39590d8e10eeeef1c47f55ffc150a45f531d0",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_reflection.png",
+      "sha256": "5580fda4ed52e232a3e8f73a0fe9945e31d1f8794c62e08650bc4420a71207a5",
+      "size": [
+        160,
+        160
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_a.png",
+      "sha256": "a16c13db0f11d2ed6a7188caf5941c1829cc531a9336c4a89b8a0115813f2c03",
+      "size": [
+        600,
+        600
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_b.png",
+      "sha256": "89ef5acf72872d8185e2402065de836f51210f44ce52e91faaa8d49d1b10bc58",
+      "size": [
+        340,
+        340
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_water_rail_half.png",
+      "sha256": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3",
+      "size": [
+        1536,
+        344
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_street_rail_half.png",
+      "sha256": "e83c1584cc7167437e5e8af5ca7d6180063a069d1f662846cdf98dab77bd80f5",
+      "size": [
+        1536,
+        113
+      ]
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_l.png",
+      "sha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+      "size": [
+        1536,
+        270
+      ],
+      "side": "l",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        86,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        0,
+        598
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_r.png",
+      "sha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+      "size": [
+        1536,
+        271
+      ],
+      "side": "r",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        85,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        1536,
+        597
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_l.png",
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "size": [
+        225,
+        177
+      ],
+      "side": "l",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        1311,
+        61,
+        1536,
+        238
+      ],
+      "instance_xy": [
+        1311,
+        573
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_r.png",
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "size": [
+        225,
+        177
+      ],
+      "side": "r",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        0,
+        61,
+        225,
+        238
+      ],
+      "instance_xy": [
+        1536,
+        573
+      ],
+      "mirror": false
+    }
+  ],
+  "instances_bottom_to_top": [
+    {
+      "asset": "tex_sakura_rr_sky_l.png",
+      "x": 0,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_sky_r.png",
+      "x": 1536,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_far_l.png",
+      "x": 0,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_far_r.png",
+      "x": 1536,
+      "y": 0,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_a.png",
+      "x": -60,
+      "y": 140,
+      "width": 600,
+      "height": 600,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_b.png",
+      "x": 700,
+      "y": 395,
+      "width": 340,
+      "height": 340,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_tree_b.png",
+      "x": 2160,
+      "y": 405,
+      "width": 340,
+      "height": 340,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_tree_a.png",
+      "x": 2760,
+      "y": 190,
+      "width": 380,
+      "height": 380,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 93,
+      "y": 366,
+      "width": 58,
+      "height": 58,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 487,
+      "y": 450,
+      "width": 47,
+      "height": 47,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1090,
+      "y": 90,
+      "width": 42,
+      "height": 42,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 1550,
+      "y": 469,
+      "width": 55,
+      "height": 55,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 2470,
+      "y": 385,
+      "width": 49,
+      "height": 49,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_water_rail_half.png",
+      "x": 0,
+      "y": 680,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_water_rail_half.png",
+      "x": 1536,
+      "y": 680,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_body_l.png",
+      "instance_id": "bridge_body_l",
+      "x": 0,
+      "y": 598,
+      "mirror": false,
+      "render_band": "L03_BRIDGE"
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_front_l.png",
+      "instance_id": "bridge_front_l",
+      "x": 1311,
+      "y": 573,
+      "mirror": false,
+      "render_band": "L04_FRONT_AFTER_OCCUPANTS_BEFORE_STONE_CHAIN"
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_body_r.png",
+      "instance_id": "bridge_body_r",
+      "x": 1536,
+      "y": 597,
+      "mirror": false,
+      "render_band": "L03_BRIDGE"
+    },
+    {
+      "asset": "tex_sakura_rr_bridge_front_r.png",
+      "instance_id": "bridge_front_r",
+      "x": 1536,
+      "y": 573,
+      "mirror": false,
+      "render_band": "L04_FRONT_AFTER_OCCUPANTS_BEFORE_STONE_CHAIN"
+    },
+    {
+      "asset": "tex_sakura_rr_street_rail_half.png",
+      "x": 0,
+      "y": 730,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_street_rail_half.png",
+      "x": 1536,
+      "y": 730,
+      "mirror": true
+    },
+    {
+      "asset": "tex_sakura_rr_gate.png",
+      "x": 2650,
+      "y": 245,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_foreground_left.png",
+      "x": 0,
+      "y": 640,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_foreground_right.png",
+      "x": 2304,
+      "y": 640,
+      "mirror": false
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 450,
+      "y": 840,
+      "width": 130,
+      "height": 130,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 720,
+      "y": 850,
+      "width": 92,
+      "height": 92,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1000,
+      "y": 853,
+      "width": 123,
+      "height": 123,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 1740,
+      "y": 853,
+      "width": 126,
+      "height": 126,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 1920,
+      "y": 846,
+      "width": 112,
+      "height": 112,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_reflection.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_lotus.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_b_flame.png",
+      "x": 2310,
+      "y": 851,
+      "width": 104,
+      "height": 104,
+      "mirror": false,
+      "motion": "flame_float"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_reflection.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_lotus.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    },
+    {
+      "asset": "tex_sakura_rr_spirit_a_flame.png",
+      "x": 2600,
+      "y": 850,
+      "width": 94,
+      "height": 94,
+      "mirror": false,
+      "motion": "static"
+    }
+  ],
+  "unchanged_nonbridge_count": 17,
+  "bridge_instance_mapping": [
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_l.png",
+      "sha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+      "size": [
+        1536,
+        270
+      ],
+      "side": "l",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        86,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        0,
+        598
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_r.png",
+      "sha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+      "size": [
+        1536,
+        271
+      ],
+      "side": "r",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        85,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        1536,
+        597
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_l.png",
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "size": [
+        225,
+        177
+      ],
+      "side": "l",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        1311,
+        61,
+        1536,
+        238
+      ],
+      "instance_xy": [
+        1311,
+        573
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_r.png",
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "size": [
+        225,
+        177
+      ],
+      "side": "r",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        0,
+        61,
+        225,
+        238
+      ],
+      "instance_xy": [
+        1536,
+        573
+      ],
+      "mirror": false
+    }
+  ],
+  "bridge_export_rect_area_pixels": 910626,
+  "bridge_export_rgba8_uncompressed_bytes": 3642504,
+  "center_badge_note": "The single native central spiral is split at x=1536 between two non-mirrored adjacent halves; pixels are not duplicated.",
+  "scene_sha256": "0bb6888f899f92370f70a3529d9cd27101057d95dac7dd837f8684d97db23eea",
+  "roi_outside_decoded_rgba_diff_pixels": 0,
+  "candidate_native": "source/native/bridge_candidate_16.png",
+  "imagegen_calls_this_batch": 1,
+  "cumulative_imagegen_calls": 16
+}

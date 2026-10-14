@@ -1,0 +1,59 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014",
+  "owner": "art",
+  "summary": "按获批v0.5桥局部方案执行唯一第16次生图候选，产出45层PSD、左右独立body/front四张桥PNG、完整21图重组、参考对照与遮挡审阅图和Gate2 ZIP；未接入Client。",
+  "artifacts": [
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_BRIEF.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ASSET_MANIFEST.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/TECH_PRESIGN.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/EXECUTION_LEDGER.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/CUT_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PSD_MANIFEST.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/FILE_VERIFICATION.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_VISUAL_SELF_REVIEW.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/USER_REVIEW_PACKET.md",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/native/bridge_candidate_16.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/scene_sakura_reuse_master.psd",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/reassembled_from_exports.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/reference_before_after_bridge.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/review/occlusion_demo.png",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/package/SCENE_SAKURA_BRIDGE_SHAPE_GATE2_v0.5.zip"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅执行已批准1次局部生图候选、累计最多16次、0自动重试；同批Art/Tech首图前预签及输入原件/prompt/调用账本可追溯。",
+      "result": "PASS",
+      "evidence": "USER_PRODUCTION_APPROVAL.json批准15→16；v0.5 ART_PRESIGN.json、TECH_PRESIGN.json均在首图前；EXECUTION_LEDGER.json登记唯一native候选SHA/尺寸、输入和prompt SHA、累计16/16、0重试。账本注明调用后补记和工具未返ID。"
+    },
+    {
+      "criterion": "新桥单圆拱、四暖灯、旋涡圆章、石栏杆、苔石桥脚与参考同尺度逐锚点核对，不以旧桥变换冒充修订。",
+      "result": "PASS",
+      "evidence": "ART_VISUAL_SELF_REVIEW.md逐锚点、review/reference_before_after_bridge.png同坐标三图；实际新像素来自source/native/bridge_candidate_16.png，第16次局部候选。"
+    },
+    {
+      "criterion": "17非桥PNG同字节、授权ROI外可见RGBA零差；body/front层独立、贴片紧裁与镜像映射实存，无6店新增。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION.json：17个SHA逐一一致，ROI外decoded RGBA差0；CUT_MANIFEST.json登记四张左右独立非镜像body/front切片bbox/位置/面积，中央仅一章；六店资源0新增。"
+    },
+    {
+      "criterion": "实际PSD、PNG、重组/对照/遮挡图、ZIP及格式/像素核对实存，具体资源送用户Gate2；Client/目标机运行未测。",
+      "result": "PASS",
+      "evidence": "FILE_VERIFICATION.json：PSD 3072×1024/45层、21 PNG重组与PSD/预览RGB差0、ZIP 92成员CRC PASS且不含reference/；USER_REVIEW_PACKET.md列实际资源与Gate2待审；Client和目标机运行NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "参考原件为用户授权项目视觉参考，未把参考的商店、精灵或外围场景像素直接当作生产切片。",
+    "几何彩块只演示前后遮挡顺序，不是正式游客或店铺资源。"
+  ],
+  "risks": [
+    "本批通过静态PSD/PNG核对，但原生Photoshop打开、Client实际接入、视窗缩放/动态遮挡和目标机性能未测试。",
+    "原桥被栏杆长期遮住的完整桥面没有独立源信息；移动前景超出本次示意范围时仍需运行检查。",
+    "v0.5具体切片与效果尚待用户Gate2明确批准，批准前Client不可正式接入。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

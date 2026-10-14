@@ -1,0 +1,50 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014",
+  "batch": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/bridge-local",
+  "recorded_at": "2026-10-14T15:40:56+08:00",
+  "record_timing_note": "本文件在实际生图返回后补记，不声称调用前已有账本。Art/Tech首图预签文件及prompt在调用前存在。",
+  "approved_total_call_limit": 16,
+  "cumulative_calls_before": 15,
+  "calls_this_batch": 1,
+  "cumulative_calls_after": 16,
+  "remaining_calls": 0,
+  "automatic_retries": 0,
+  "candidate_count": 1,
+  "tool": "built-in image_gen.imagegen",
+  "tool_request_id": null,
+  "tool_request_id_note": "本工具返回image_url和output_hint，没有提供可核请求ID或幂等键；不虚构。",
+  "prompt": "source/BRIDGE_IMAGEGEN_PROMPT.txt",
+  "prompt_sha256": "39801b4f7d9470ea1b4b02f3db4781382f82c75589c36a82516a9f2dcdf35c42",
+  "input_images": [
+    {
+      "role": "current_edit_base",
+      "path": "reference/current_bridge_inspection.png",
+      "size": [752, 348],
+      "sha256": "c7123549a94defd55ff34f53bd188be568119d8c2d7166241502a2ea45d4f3f7"
+    },
+    {
+      "role": "user_visual_reference_only",
+      "path": "reference/reference_bridge_inspection.png",
+      "size": [752, 348],
+      "sha256": "6ef845add39486384adaf74d4b5b9b521e1ca211031d8cb88a13a3f6c18cb1c3"
+    }
+  ],
+  "tool_wait_wall_seconds": 29.6,
+  "submitted_at_exact": null,
+  "returned_at_exact": null,
+  "timing_note": "工具调用报告历时29.6秒；工具未提供原生提交/返回UTC时刻。项目副本文件系统修改时间为2026-10-14T15:38:00+08:00，可核为返回之后的副本落地时刻，不冒作工具返回时刻。",
+  "tool_original_path": "/Users/yuanquan/.codex/generated_images/01a138f0-5920-7fe3-a173-6325d951d226/exec-e87f5a67-f736-401c-842c-2a63f073aede.png",
+  "project_native_copy": "source/native/bridge_candidate_16.png",
+  "native_size": [1844, 853],
+  "native_mode": "RGB",
+  "native_sha256": "f77602fa7fa7c9bc1f2b382adc94928659e9f6264913bca28bb0c805c9ac3e97",
+  "aligned_local_preview": "source/bridge_candidate_aligned.png",
+  "aligned_size": [752, 348],
+  "alignment": "LANCZOS同比例采样；原生x系数2.45213、y系数2.45115，比例偏差<0.05%，未作1.5:1拉伸。",
+  "call_status": "SUCCESS_ONE_CANDIDATE",
+  "candidate_decision": "ACCEPTED_AS_V0_5_STATIC_BRIDGE_SOURCE_FOR_USER_GATE2",
+  "candidate_decision_recorded_at": "2026-10-14T15:59:31+08:00",
+  "candidate_notes": "实图有单圆拱、四短座暖灯、中央单旋涡章和苔石脚；语义掩膜排除了候选最外链柱及非桥山水背景。21张实际PNG与45层PSD静态重组已核对，ROI外RGBA零差；具体资源仍待用户Gate2审核，运行未测。",
+  "known_cost": "未知；工具没有返回货币或GPU消耗。",
+  "next_step": "提交实际切片、PSD、同尺度对照、遮挡示意和ZIP至用户Gate2；Client在批准前不正式接入，不再生图。"
+}

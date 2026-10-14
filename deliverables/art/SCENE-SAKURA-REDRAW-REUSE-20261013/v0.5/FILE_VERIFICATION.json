@@ -1,0 +1,233 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-ART-20261014",
+  "version": "v0.5",
+  "checked_at": "2026-10-14T16:08:09+08:00",
+  "result": "PASS_STATIC_ARTIFACT_INTEGRITY_USER_GATE2_PENDING",
+  "source_candidate": {
+    "path": "source/native/bridge_candidate_16.png",
+    "size": [
+      1844,
+      853
+    ],
+    "sha256": "f77602fa7fa7c9bc1f2b382adc94928659e9f6264913bca28bb0c805c9ac3e97"
+  },
+  "canvas": [
+    3072,
+    1024
+  ],
+  "roi_xyxy": [
+    1160,
+    520,
+    1912,
+    868
+  ],
+  "roi_outside_decoded_rgba_diff_pixels": 0,
+  "roi_inside_changed_decoded_rgba_pixels": 113958,
+  "scene_vs_actual_21_exports_rgba_diff_pixels": 0,
+  "scene_vs_psd_flatten_rgb_diff_pixels": 0,
+  "scene_vs_psd_preview_rgb_diff_pixels": 0,
+  "psd_format": "PSD",
+  "psd_layers_actual": 45,
+  "psd_bytes": 43437502,
+  "active_png_count": 21,
+  "nonbridge_png_sha_identical_count": 17,
+  "nonbridge_pngs": [
+    {
+      "path": "exports/tex_sakura_rr_far_l.png",
+      "sha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16"
+    },
+    {
+      "path": "exports/tex_sakura_rr_far_r.png",
+      "sha256": "b70c1a0f6b9eb658978783e2d4c6ac793ce774e7635575863e05a339a76d59de"
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_left.png",
+      "sha256": "824e64f7dcb7c7c5ce9ce31aba74d4a77fe2a2ba62b4aa5fe65c976874797c7e"
+    },
+    {
+      "path": "exports/tex_sakura_rr_foreground_right.png",
+      "sha256": "365469e769b32d25d4fb3c13efd04bafa0e77272cc1f74a9fe63ce835c530fea"
+    },
+    {
+      "path": "exports/tex_sakura_rr_gate.png",
+      "sha256": "83615b9e79cea11ece87b66744ce2e3bae1e4b88f7a718de1bb0aeef9fa74232"
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_l.png",
+      "sha256": "b1eeb3b8290a5b6feb509f2737e6cedfcb7e6d445d3b9593858040da8810d0e7"
+    },
+    {
+      "path": "exports/tex_sakura_rr_sky_r.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_flame.png",
+      "sha256": "ff7b7a1c48b4524bc652fe20b26df7f6fc86930636cb4f9a331e65348dd43abf"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_lotus.png",
+      "sha256": "420d66639b394fc3ed70da82ad5072939197e7d877e72a5d665df7f676063c56"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_a_reflection.png",
+      "sha256": "e912caa236f3988811f6f1463e1de4c80d6a122505a796d503b4110324a29c2c"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_flame.png",
+      "sha256": "431123b105a153c04af75bee9172523cbea3b3059347b0ffd42e0e6adfe849fa"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_lotus.png",
+      "sha256": "5454d0cdee9ef05d1eabd0ffc8a39590d8e10eeeef1c47f55ffc150a45f531d0"
+    },
+    {
+      "path": "exports/tex_sakura_rr_spirit_b_reflection.png",
+      "sha256": "5580fda4ed52e232a3e8f73a0fe9945e31d1f8794c62e08650bc4420a71207a5"
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_a.png",
+      "sha256": "a16c13db0f11d2ed6a7188caf5941c1829cc531a9336c4a89b8a0115813f2c03"
+    },
+    {
+      "path": "exports/tex_sakura_rr_tree_b.png",
+      "sha256": "89ef5acf72872d8185e2402065de836f51210f44ce52e91faaa8d49d1b10bc58"
+    },
+    {
+      "path": "exports/tex_sakura_rr_water_rail_half.png",
+      "sha256": "9c69e6690de008afbc225455035a75edbf54dc3a737bbc463d20dabc554666c3"
+    },
+    {
+      "path": "exports/tex_sakura_rr_street_rail_half.png",
+      "sha256": "e83c1584cc7167437e5e8af5ca7d6180063a069d1f662846cdf98dab77bd80f5"
+    }
+  ],
+  "bridge_png_count": 4,
+  "bridge_rect_area_pixels": 910626,
+  "bridge_rgba8_uncompressed_bytes": 3642504,
+  "bridge_instance_mapping": [
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_l.png",
+      "sha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+      "size": [
+        1536,
+        270
+      ],
+      "side": "l",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        86,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        0,
+        598
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_body_r.png",
+      "sha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+      "size": [
+        1536,
+        271
+      ],
+      "side": "r",
+      "kind": "body",
+      "half_bbox_xyxy": [
+        0,
+        85,
+        1536,
+        356
+      ],
+      "instance_xy": [
+        1536,
+        597
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_l.png",
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "size": [
+        225,
+        177
+      ],
+      "side": "l",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        1311,
+        61,
+        1536,
+        238
+      ],
+      "instance_xy": [
+        1311,
+        573
+      ],
+      "mirror": false
+    },
+    {
+      "path": "exports/tex_sakura_rr_bridge_front_r.png",
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "size": [
+        225,
+        177
+      ],
+      "side": "r",
+      "kind": "front",
+      "half_bbox_xyxy": [
+        0,
+        61,
+        225,
+        238
+      ],
+      "instance_xy": [
+        1536,
+        573
+      ],
+      "mirror": false
+    }
+  ],
+  "bridge_body_front_alpha_overlap_pixels": 0,
+  "native_photoshop_open_tested": false,
+  "client_import_or_game_runtime_tested": false,
+  "cumulative_imagegen_calls": 16,
+  "automatic_retries": 0,
+  "files_sha256": {
+    "ART_BRIEF.md": "0392098827873ac7fc744152b60bb4b691d4dee6c99852cbbc5e20177dd5d25f",
+    "ASSET_MANIFEST.md": "b61000f0ea7f9a603b96513003c5f4645efbe3fd4e2956a4295b116d3336bda9",
+    "ART_PRESIGN.json": "787da5070be28cff56fb81b87550d1af0aa9219d4e69213cfaaf102ab32c6143",
+    "TECH_PRESIGN.json": "627cc78552059611ee51c7a03206f0849a81af7adf97ab88a8f94b13d475abfc",
+    "BRIDGE_DIAGNOSIS.md": "5e8f6327bd6ddb5dccb497d746fe9c22c01541d0e22d0ebf2fd84013b0e94861",
+    "PRODUCTION_PLAN.md": "bcf13186f08f1e99fd53934d122cb18da4dcb64a9d3f1aa214e257d7962117cb",
+    "EXECUTION_LEDGER.json": "feb0ec471021fec22b5ea209b67906b64ec9c952e25ea517e507c2767a1c2659",
+    "CUT_MANIFEST.json": "bb5bcc3259bf6de885694d73bc527032569359d15be806ccdff281aee3b2e5f9",
+    "PSD_MANIFEST.json": "536e03db2cf1b1148cbf9e76bf887200e37283f3a85ec0fc1b9514cc6ac1322d",
+    "ART_VISUAL_SELF_REVIEW.md": "aaa55c2ce5e29c3b1aaf0a7753aa0d4a60e84af7f8d0c1aef6d0c5e44f00d978",
+    "USER_REVIEW_PACKET.md": "2877d06c36e3832ed8153d6fb0753292374fd2aa3e9defa844de25b7836b5893",
+    "source/process_notes.md": "ad850893111785f0541327064cc97bd0ee54998caeea9b791a39ee2bac74eead",
+    "source/BRIDGE_IMAGEGEN_PROMPT.txt": "39801b4f7d9470ea1b4b02f3db4781382f82c75589c36a82516a9f2dcdf35c42",
+    "source/build_v05.py": "9b0910c1807f84f1b5c7ce09517af918aef3973bc056f529cbf4969df5fc6514",
+    "source/native/bridge_candidate_16.png": "f77602fa7fa7c9bc1f2b382adc94928659e9f6264913bca28bb0c805c9ac3e97",
+    "source/bridge_candidate_aligned.png": "b09685c3d41b9e300b0bdbc89df5c0e0beca4ad1a969d2acbbffd7de53b82af0",
+    "source/bridge_union_mask.png": "dc652daea0dcbafd742b2a9932e2cfaa23605062a69a62a73e476cf2a1e24b78",
+    "source/bridge_front_mask.png": "4bae25b266c86023cabf7241d84bde8aa2364aff14f101710cac5bb9e6b0ab1e",
+    "source/scene_sakura_reuse_master.psd": "1a0c525d679b5dbcbda7812ce97bba8401698c1d3fe0ace45f39b82a449d3d49",
+    "review/scene_environment.png": "0bb6888f899f92370f70a3529d9cd27101057d95dac7dd837f8684d97db23eea",
+    "review/reassembled_from_exports.png": "0bb6888f899f92370f70a3529d9cd27101057d95dac7dd837f8684d97db23eea",
+    "review/scene_psd_preview.png": "626de49ff1b0e4e22fb80819781d892ca7d7de239f10c324ecb5623fae635e26",
+    "review/bridge_detail_v05.png": "40e3ae07c06426cd0206a072e2882c837d4a7d0186be58640be16e19d577ee3d",
+    "review/reference_before_after_bridge.png": "830304816a058d71a00f46e13e0805bc3723fb0ba7ed0fbf7d000ed28d6c6cfa",
+    "review/occlusion_demo.png": "b259a5254156cee58c71dfea666b39af3406ce04fbe59baf9b1420e1ae948671"
+  },
+  "package": {
+    "path": "package/SCENE_SAKURA_BRIDGE_SHAPE_GATE2_v0.5.zip",
+    "sha256": "7940384a1e450a1385ef0285004f1742902cdefe492743d959a66c4eb6db45fd",
+    "bytes": 57867931,
+    "members": 92,
+    "crc": "PASS",
+    "reference_members": 0
+  }
+}

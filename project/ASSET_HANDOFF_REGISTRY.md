@@ -659,3 +659,19 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 新增前景301×199，源裁框[1235,34,1536,233)，左右镜像共用；桥体保留后景、实体在中间、栏杆在前景。Client旧接入效果已REVISION，待本v0.4 Gate2批准后导入并验证。
 
 <!-- SAKURA-BRIDGE-FRONT-FLOW-20261014 ASSET_REGISTRY END -->
+
+
+<!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 ASSET_REGISTRY START -->
+## 樱花桥造型 v0.5｜实际美术已交付、用户Gate2待
+
+来源：`deliverables/master/SAKURA-BRIDGE-SHAPE-PRODUCTION-20261014/v0.1/USER_PRODUCTION_APPROVAL.json`批准准确v0.5方案与第16次唯一局部候选；`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/CUT_MANIFEST.json`与`FILE_VERIFICATION.json`登记实际四桥切片、SHA、裁框与21环境切片静态核验。17非桥PNG与v0.4同字节，ROI外可见RGBA零差。四桥片左右独立以保持中央单圆章；当前客户端仍用既有v0.3资源，新v0.5未通过Gate2，不能正式导入。
+
+| 稳定资产 ID | 描述与层序 | 美术实际路径/版本 | 美术SHA-256/尺寸 | 客户端正式路径 | 导入真实UUID | 审核状态 |
+|---|---|---|---|---|---|---|
+| `tex_sakura_rr_bridge_body_l` | 桥主体、拱/脚及必要露底；实体后景；左片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png` / v0.5 | `c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9`；1536×270 | 计划，Gate2后确定 | 未导入，无真实UUID | Gate2待 |
+| `tex_sakura_rr_bridge_body_r` | 桥主体、拱/脚及必要露底；实体后景；右片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png` / v0.5 | `712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316`；1536×271 | 计划，Gate2后确定 | 未导入，无真实UUID | Gate2待 |
+| `tex_sakura_rr_bridge_front_l` | 栏杆与所属灯具；实体前景；左片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png` / v0.5 | `36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277`；225×177 | 计划，Gate2后确定 | 未导入，无真实UUID | Gate2待 |
+| `tex_sakura_rr_bridge_front_r` | 栏杆与所属灯具；实体前景；右片 | `deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png` / v0.5 | `cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204`；225×177 | 计划，Gate2后确定 | 未导入，无真实UUID | Gate2待 |
+
+完整母版：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/scene_sakura_reuse_master.psd`，3072×1024/45层，SHA-256 `1a0c525d679b5dbcbda7812ce97bba8401698c1d3fe0ace45f39b82a449d3d49`。ZIP：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/package/SCENE_SAKURA_BRIDGE_SHAPE_GATE2_v0.5.zip`，SHA-256 `7940384a1e450a1385ef0285004f1742902cdefe492743d959a66c4eb6db45fd`。Client导入后需回填实际正式路径与真实UUID，未导入不得填计划值冒充。
+<!-- SAKURA-BRIDGE-SHAPE-PRODUCTION-FLOW-20261014 ASSET_REGISTRY END -->

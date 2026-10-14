@@ -1,0 +1,44 @@
+{
+  "task_id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/bridge-local",
+  "status": "TECH_PRESIGNED_BEFORE_FIRST_IMAGE",
+  "signed_at": "2026-10-14T15:36:42+08:00",
+  "gate1_approval": "deliverables/master/SAKURA-BRIDGE-SHAPE-PRODUCTION-20261014/v0.1/USER_PRODUCTION_APPROVAL.json",
+  "approved_plan": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+  "approved_plan_sha256": "bcf13186f08f1e99fd53934d122cb18da4dcb64a9d3f1aa214e257d7962117cb",
+  "art_brief": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_BRIEF.md",
+  "art_brief_sha256": "0392098827873ac7fc744152b60bb4b691d4dee6c99852cbbc5e20177dd5d25f",
+  "art_presign": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/ART_PRESIGN.json",
+  "art_presign_sha256": "787da5070be28cff56fb81b87550d1af0aa9219d4e69213cfaaf102ab32c6143",
+  "prompt": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/source/BRIDGE_IMAGEGEN_PROMPT.txt",
+  "prompt_sha256": "39801b4f7d9470ea1b4b02f3db4781382f82c75589c36a82516a9f2dcdf35c42",
+  "reference_crop": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/reference_bridge_inspection.png",
+  "reference_crop_sha256": "6ef845add39486384adaf74d4b5b9b521e1ca211031d8cb88a13a3f6c18cb1c3",
+  "current_crop": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/reference/current_bridge_inspection.png",
+  "current_crop_sha256": "c7123549a94defd55ff34f53bd188be568119d8c2d7166241502a2ea45d4f3f7",
+  "reference_full_sha256": "6f79a1e5b14c0b73e0952ad0810456ac94cd3bb8192db0f91d1ee73830fcfcbf",
+  "current_full_sha256": "50ac6cd6ab53320b7806b6660a84b57c4b57bfccfd84a0a717140f40019a13c8",
+  "roi_xyxy": [
+    1160,
+    520,
+    1912,
+    868
+  ],
+  "roi_size": [
+    752,
+    348
+  ],
+  "canvas_size": [
+    3072,
+    1024
+  ],
+  "tool": "built-in image_gen precise-object-edit",
+  "generation_call_number": 16,
+  "new_calls_max": 1,
+  "candidate_limit": 1,
+  "automatic_retries": 0,
+  "technical_decision": "同次候选原生尺寸和锚点校准；只在桥及旧桥露底mask内修改；body在实体后、front在实体前；保持单中心圆章，若半幅镜像复制圆章则同源最小非镜像cut或左右独立层；17张非桥PNG不变，ROI外decoded RGBA零差。",
+  "texture_budget": "1536x512 RGBA8 body半幅3MiB为面积估算；实际bbox、PNG文件/GPU/DrawCall待导出或运行实测。",
+  "release_condition": "仅同批唯一首图可调用。候选失败即停；切片/PSD与同尺度重组直交用户Gate2，Client/Build/QA均未开始。"
+}

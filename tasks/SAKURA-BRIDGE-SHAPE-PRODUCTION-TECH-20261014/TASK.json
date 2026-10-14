@@ -1,0 +1,33 @@
+{
+  "id": "SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014",
+  "title": "桥局部重绘生产 TECH",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "SAKURA-BRIDGE-SHAPE-ART-20261014",
+  "objective": "按获批v0.5方案和唯一新增生图额度仅修桥部，在现有PSD保留桥体和前景栏杆，提交具体资源审核。",
+  "inputs": [
+    "deliverables/master/SAKURA-BRIDGE-SHAPE-PRODUCTION-20261014/v0.1/USER_PRODUCTION_APPROVAL.json",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PRODUCTION_PLAN.md",
+    "tasks/SAKURA-BRIDGE-SHAPE-ART-20261014/ARTIFACT_APPROVAL.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/SAKURA-BRIDGE-SHAPE-PRODUCTION-TECH-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批文字预签绑定准确获批v0.5方案、参考、输入目标及Art预案/prompt哈希，首图前签署。",
+    "给出ROI映射、body/front/补洞、原生尺寸校准、全画布/左右复用、纹理预算技术输入，区分估算与实测。",
+    "执行用户最多1次新增及0自动重试预算，不额外加入自产切图效果Review门禁，不改Client。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Art v0.5 plan/diagnostic旧文书不改不覆盖；产出DELIVERABLE_PRODUCTION.json，新图片/源/预签/账本仅v0.5；若关键目标失败停该生成支线并报告，不追加第17次。",
+    "Art同batch签后才调用imagegen；Tech只本交付目录和Art TECH_PRESIGN.json；Producer可修改本轮三Task阶段/审批以及独立marker日志dashboard和ASSET_HANDOFF_REGISTRY本轮条目，保护并发U05。",
+    "Master统一Git；专业Owner不建Task/委派/Git；单元示例无QA，不制作六店，不提前Client接入。"
+  ]
+}
