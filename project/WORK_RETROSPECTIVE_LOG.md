@@ -1049,3 +1049,13 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Art已正式提交17 Required与57PNG/61PSD层；此前双字/褐补丁定向修正由Master实图检查，精确返工净工时未知。等待文件/坐标核验后送Gate2，不以图像自报代替。
 - 本轮结果：三方案获批后，REP-01两对象自审/Tech核过、FULL-01续签，Art最终17Required/57PNG/61层经Master文件与实图核对后直送Gate2 `USER_REVIEW`；Product人工源、Tech只读、UI文字也分别待用户审核。Producer起点可核08:56:50 +08:00，收尾 2026-10-14T09:57:51+08:00，约一小时墙钟包含并行制作/等待/审阅，不能归为单角色净工时；用户消息精确时刻未知。代表生成2/2、全批最终累计4/6、剩余2次；费用UNKNOWN。中间重组出现双字/名牌褐补丁，Art定向修正、最终实图无叠印；返工净耗未知。建议Master一次呈四个准确版本及Gate2资源对照，复核点为用户逐包决定；批准后再由Client按资源映射与配置/UI获批版本实现并验真实Web。Continuity：四包在真实USER_REVIEW，支持预签DONE，父试玩目标仍active，未空转以READY/IN_PROGRESS冒充完成。
 <!-- U05-B-PRODUCTION-20261014 END -->
+
+<!-- SCENE-SAKURA-REDRAW-V03-20261014 RETROSPECTIVE START -->
+## WR-20261014-SCENE-SAKURA-REDRAW-FLOW-003｜石柱链条局部修订至具体资源送审
+
+- 结果与证据：用户退回v0.2栏杆样式，指定灰蓝圆顶石柱和下垂深色链条；参考只用于样式，不裁作正式像素。Master建三条v0.3 Revision并核准确局部Gate1，Art/Tech同版预签与Master放行齐。第15/15次唯一透明原型生图成功，Art落到现有街栏层；最终43层PSD、18活动PNG（旧17字节hash不变）、无店前后对照与用户包经Master独立核ROI外RGBA变化0、PSD/切片重组0差和ZIP身份。Art现准确v0.3 `USER_REVIEW`，用户尚未批准；Tech内部支持获Master接受`DONE`；Client接入锁定，Cocos/目标机运行`NOT_TESTED`。证据为Art v0.3 `DELIVERABLE.json`、`FILE_VERIFICATION.json`、`MASTER_DELIVERY_FILE_CHECK.json`、`EXECUTION_LEDGER.json`、三Task及本版 `CONTINUITY_CHECK.md`。
+- 时间与耗时（Asia/Shanghai）：本轮可信起点Master首次clock 2026-10-14 09:18:11 +08:00，Producer准确资源送审09:51:51 +08:00，跨节点墙钟33分40秒；用户原消息/首个文件读取精确时刻未知。Art账本记09:18:11至09:49:43约31.5分钟，包含计划、双签与等待，不冒充净制图时间。旧v0.2用户审核等待不并入；新Gate2用户等待从送审后开始。本轮1小时与原累计4小时制作上限均未触及；费用/算力遥测未知。
+- 影响与原因：Art首签SHA在Tech首版签录入时曾少一段，Producer逐项复算发现后由Tech更正，双签才计通过；其净额外耗时未知。透明原型一次成功并确定性复用，未重发或加预算。候选阶段有透明边/盒感诊断与修正，Art在同一已授权局部范围内落地，未发现需新用户/专业Gate的范围扩张；净耗时不可从现有证据拆分。不能用33分40秒推断任一角色效率。
+- 建议与复核：Tech下次首图签后直接复算所有绑定SHA的完整64位，Producer登记双签时复核，复核点为下一批预签；Art在候选入最终PSD前保留全景与局部同尺度图核透明边，复核点为下一批局部修订首次实图。均属现有职责，不加新审批门禁。
+- Continuity：Art真实`USER_REVIEW`，Tech内部支持`DONE`；Producer本轮状态/审批/里程碑、18项登记、看板与continuity有实产，内部交付待Master接受。无本批可继续但仅以READY/IN_PROGRESS占位的空转任务；下一外部依赖为用户对准确v0.3具体资源决定，批准前Client锁。
+<!-- SCENE-SAKURA-REDRAW-V03-20261014 RETROSPECTIVE END -->
