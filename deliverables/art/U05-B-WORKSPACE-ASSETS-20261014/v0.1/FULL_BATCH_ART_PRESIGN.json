@@ -1,0 +1,48 @@
+{
+  "task_id": "U05-B-WORKSPACE-ASSETS-20261014",
+  "batch_id": "U05-B-WORKSPACE-ASSETS-20261014/v0.1/FULL-01",
+  "owner": "art",
+  "status": "FULL_BATCH_ART_PRESIGNED_TECH_PENDING",
+  "signed_at": "2026-10-14T09:11:48+08:00",
+  "bound_inputs_sha256": {
+    "concept_B.png": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+    "ART_PRESIGN.json": "d9fa1ac93ac1287bf047f614864cf4781b42102719265fca4f5a1f70f7780cf5",
+    "REPRESENTATIVE_REVIEW.md": "b8de058ab006aa1fa2348ca1f95a232449ae00a709124c9cb1e0b5b1a7ba3a17",
+    "REPRESENTATIVE_TECH_CHECK.md": "fa804d4e0a21b1bb2b3d65ab0ca05f81e43df52ea6a037951432b695637d978e",
+    "T01_youdeng_tea_full.png": "250e1f8b24702b651385f167aadc620925de7ebfc144b4a4f6f74889f40e3d43",
+    "P01_guihuozhu_bowl_full.png": "3d5e1604dc76234ea9679e11e9f15329a402a8c3c6dc32b7869f150d7a31f34e",
+    "empty_shelf_full.png": "5c269c9824e8dd1cfe3ccfc4e48ccfde1795acd8fd598078004d1f0e4fefafda",
+    "ZCOOLKuaiLe-Regular.ttf": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+    "OFL.txt": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d"
+  },
+  "decision": "REP-01 方法限域通过后，申请扩至完整 B 工作区资源制作；只允许获批 Gate1 的三茶三奶六小料和同源杯组合，不新增玩法/UI视角。Tech 同 batch FULL-01 续签实存前不扩图。",
+  "scope": {
+    "individual_transparent_objects": ["U05_B_T01", "U05_B_T02", "U05_B_T03", "U05_B_M01", "U05_B_M02", "U05_B_M03", "U05_B_P01", "U05_B_P02", "U05_B_P03", "U05_B_P04", "U05_B_P05", "U05_B_P06"],
+    "shared_cup_content": "3茶色/3奶纹/6小料形，共12可组合内容层；订单杯和工作杯只共用这一套内容，用各自前后容器与同源缩放在两尺寸合成。至少两组目标配方在气泡实际尺寸可辨；不预烘54杯。",
+    "other_semantic_layers": "店框/街景静底、12空槽柜背、前柜遮挡、独立幽灵、独立气泡、订单杯前后壁、工作杯前后壁、三按钮底板/图标、可变高亮、锁定层、动态文字，冻结图参考层默认关闭。",
+    "state_rule": "B原示范常亮框从静底剥离，可按品种切换；未开放与选中不可烘在对象/空槽；字改由官方许可字体按Product批准名动态排版。",
+    "source_and_output_root": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/",
+    "output_classes": ["source/workspace_b_master.psd", "source/LAYER_MANIFEST.json", "source/layers/*.png", "exports/*.png", "review/reconstructed.png", "review/comparison.png", "review/difference.png", "review/resource_sheet.png", "review/composition_variants.png", "CUT_MANIFEST.json", "ASSET_MANIFEST.md"],
+    "client_resource_paths": "PLANNED_ONLY until Gate2 approval; no Client import/UUID claim"
+  },
+  "method": {
+    "canvas": [1024, 1536],
+    "working_color": "frozen unprofiled RGB8 interpreted as sRGB; output straight-alpha RGBA8 PNG; fixed full-canvas layer coordinates and SrcOver",
+    "semantic_cutting": "deterministic object-boundary masks retain visible frozen pixels; separate front occluders and empty backing; use local repair only where RGB source has no hidden information; no rectangle-slot substitute or full-image top cover",
+    "psd_tool": "/Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py assemble (read-only script), from actual transparent full-canvas semantic layers and mapping; never split-colors as semantics",
+    "font_source": "/private/tmp/u05-b-font-source/ZCOOLKuaiLe-Regular.ttf plus OFL.txt; copy exact originals into this source batch if actual font export used and retain full license",
+    "change_masks": "all planned change regions and repair patches must be enumerated; RGB outside approved masks equals frozen B byte-for-byte in reconstructed preview",
+    "transparent_limit": "glass/jar original RGB cannot recover occluded rear optical information; only visible pixels plus documented local reconstruction; no claim of general physical transparency"
+  },
+  "budget": {
+    "imagegen_used_representative": 2,
+    "imagegen_additional_max": 4,
+    "imagegen_total_max": 6,
+    "same_defect_max_rounds": 2,
+    "representative_same_defect_rounds_used": 2,
+    "active_hours_total_max": 16,
+    "fee": "UNKNOWN"
+  },
+  "checks": "Every exported object gets measured nonzero-alpha bbox, crop offset and pivot; 12 empty slots with no residue; two shared-content cup combinations in order-bubble and work-cup sizes; all semantic layers reconstructed at 1024×1536 with reference layer off; outside-change-mask RGB difference 0; PSD layer existence and mapping verified. Actual Cocos/device memory/DrawCall/FPS remain NOT_TESTED before import.",
+  "limits": "本签不是 Gate2 用户资源批准；REP-01 的同一残影/褐底问题已用两轮，若全批同类再失败须停对应支线诊断，不靠追加生成绕开限制。"
+}

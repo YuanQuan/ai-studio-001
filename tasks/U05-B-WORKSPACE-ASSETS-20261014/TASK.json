@@ -1,0 +1,57 @@
+{
+  "id": "U05-B-WORKSPACE-ASSETS-20261014",
+  "title": "按获批B方案制作独立资源、PSD与可核同尺度重组并直接呈Gate2",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "按获批B方案制作独立资源、PSD与可核同尺度重组并直接呈Gate2",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/approval-20261014/USER_APPROVAL.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONTENT_PLAN.md",
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/TECH_DESIGN.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ART_BRIEF.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/FULL_BATCH_ART_PRESIGN.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/LAYER_MANIFEST.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/reconstructed.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/comparison.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/difference.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/resource_sheet.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/composition_variants.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/REPRESENTATIVE_REVIEW.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/BUDGET_LEDGER.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "3茶3奶6小料独立透明PNG和PSD语义层，不带整格木框/字/邻格；每类杯内容独立可组合",
+    "空柜体清底、顾客、气泡、杯壁、按钮/标签底板/高亮独立，基准图关闭不盖实际层",
+    "母版/切片/映射同源，保真区零差异核验和透明杯/两组合可辨实图证据，计划变化区域如实记录",
+    "遵守2代表先行/同批预签/总6局部生成上限和同问题最多2轮；版权字体有来源与许可证据",
+    "Required全实存并文件/重组核验后直接提交用户Gate2，生产资源与U05运行不混淆"
+  ],
+  "dependencies": [
+    "U05-B-PLAYABLE-20261013-ART-PLAN",
+    "U05-B-PLAYABLE-20261013-TECH-PLAN",
+    "U05-B-PLAYABLE-20261013-PRODUCT-SPEC"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "不改无关文件，不Git、不创建子任务；模型按角色产出规则。",
+    "首图前同批Art/Tech预签必须实存并与实际批次一致，代表样片通过后复签全批；不能把Gate1批准当Gate2。",
+    "只有前端单元示例，QA不参加；实际资源Gate2批准前不正式接入。",
+    "自产切图按适用例外：实际17Required/57PNG/61源层与Master文件核对PASS后直接用户Gate2审核；无新增资源效果专业复审。"
+  ]
+}

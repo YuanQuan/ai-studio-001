@@ -1,0 +1,37 @@
+{
+  "task_id": "U05-B-ASSET-PRESIGN-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-WORKSPACE-ASSETS-20261014/v0.1/FULL-01",
+  "status": "PRESIGNED_FOR_FULL_ASSET_PRODUCTION_NOT_GATE2",
+  "signed_at": "2026-10-14T09:13:11+08:00",
+  "art_full_presign": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/FULL_BATCH_ART_PRESIGN.json",
+  "art_full_presign_sha256": "8cfe189d4941c4d57620e39d1c0ee48683743d6a08c56d8fa6e0f081135275a4",
+  "representative_tech_check": "deliverables/tech_lead/U05-B-ASSET-PRESIGN-20261014/v0.1/REPRESENTATIVE_TECH_CHECK.md",
+  "representative_tech_check_sha256": "fa804d4e0a21b1bb2b3d65ab0ca05f81e43df52ea6a037951432b695637d978e",
+  "frozen_source_sha256": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+  "approved_scope": "Gate1已批Art/Product/Tech v0.1；本续签仅覆盖同批FULL-01的三茶三奶六小料、共用12杯内容、双杯容器、静态/遮挡/状态/动态字分层，不增加玩法或视角。",
+  "technical_conditions": [
+    "所有12对象各自透明语义轮廓，不带格框、文字、邻格、常亮；各12空槽真实清底；B示范暖色亮框从静底剥离为可切换选中层，锁定层独立。",
+    "三茶色、三奶纹、六小料形共12杯内内容层在订单杯和工作杯复用，不为54组合生成54整杯；至少两个差异明显目标在气泡实际尺寸可辨茶色、奶纹、小料，工作杯逐项组合复核。",
+    "固定1024×1536全画布，RGB8无ICC按sRGB解释；实际PNG RGBA8 straight alpha，SrcOver同坐标重组，参考整图层关闭。每片实测alpha bbox/裁切偏移/支点/版本/hash，未授权变更区可见RGB零差；修补遮罩和变化区单列差异。",
+    "仅从冻结图保留可见像素，半透瓶/杯与被遮挡背面所缺信息作最小获批局部修补并如实标注；无法从RGB图凭hash恢复真实alpha或透视。",
+    "PSD由真实可关闭语义层组装，脚本只读路径 /Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py；源/PSD/切片/映射落同一Art v0.1目录，客户端路径计划状态且无UUID声明。",
+    "字体使用 /private/tmp/u05-b-font-source/ZCOOLKuaiLe-Regular.ttf SHA-256 812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d 与OFL.txt SHA-256 538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d；Art登记实际渲法、字符覆盖、嵌入/分发许可及复制的同源文件。"
+  ],
+  "production_budget": {
+    "imagegen_calls_used_rep": 2,
+    "imagegen_calls_additional_max": 4,
+    "imagegen_calls_cumulative_max": 6,
+    "same_defect_rounds_max": 2,
+    "same_rep_defect_rounds_used": 2,
+    "active_hours_total_max": 16,
+    "known_fee": "UNKNOWN",
+    "texture_estimate": "单张1024×1536 RGBA8全画布理论约6 MiB；实际裁切图与图集面积需按CUT_MANIFEST实测重算。2048² RGBA8每页理论16 MiB仅排版估算，非目标机预算通过。",
+    "target_device": "具体机型未定；Creator导入、GPU纹理驻留、DrawCall、FPS、真实Web/手机效果均NOT_TESTED。"
+  },
+  "stop_rules": [
+    "若残影/褐底同类问题再次出现，REP-01该缺陷已用2轮，应停相关支线诊断，不增生图调用绕过。",
+    "换冻结源、工具、画布、alpha解释、对象/杯内容范围、制作预算或超出已批变化遮罩，下一张前重签受影响项。",
+    "自产切图提交具体资源/重组给用户Gate2，不增成品效果专业复审门禁；用户未批Gate2不正式接入。"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "task_id": "U05-B-WORKSPACE-ASSETS-20261014",
+  "owner": "art",
+  "summary": "按用户已批准 B 视觉和 Gate1 方案完成 3 茶、3 奶、6 小料透明独立对象、共用 12 杯内容、61 层 PSD、57 张切片与同尺度重组，具体资源提交 Gate2 用户审核。",
+  "artifacts": [
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ART_BRIEF.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/FULL_BATCH_ART_PRESIGN.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/LAYER_MANIFEST.json",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/reconstructed.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/comparison.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/difference.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/resource_sheet.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/composition_variants.png",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/REPRESENTATIVE_REVIEW.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/BUDGET_LEDGER.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/REFERENCE_AND_RIGHTS.md",
+    "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "3茶3奶6小料独立透明PNG和PSD语义层，不带整格木框/字/邻格；每类杯内容独立可组合",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json 的 12 个 U05_B_* 透明对象与 12 个 CUP_* 透明内容；review/resource_sheet.png；source/LAYER_MANIFEST.json。"
+    },
+    {
+      "criterion": "空柜体清底、顾客、气泡、杯壁、按钮/标签底板/高亮独立，基准图关闭不盖实际层",
+      "result": "PASS",
+      "evidence": "exports/STATIC_BARE.png、顾客/气泡/杯壁/按钮/名牌/选中/锁态各自 PNG；61 层 PSD 原概念图未作盖顶。"
+    },
+    {
+      "criterion": "母版/切片/映射同源，保真区零差异核验和透明杯/两组合可辨实图证据，计划变化区域如实记录",
+      "result": "PASS",
+      "evidence": "review/comparison.png、difference.png、composition_variants.png、psd_skill_preview.png；change_metrics.json 计划变化区外 0 像素；CUT_MANIFEST.json 坐标/哈希。"
+    },
+    {
+      "criterion": "遵守2代表先行/同批预签/总6局部生成上限和同问题最多2轮；版权字体有来源与许可证据",
+      "result": "PASS",
+      "evidence": "ART_PRESIGN.json、FULL_BATCH_ART_PRESIGN.json、Tech 同批预签和代表实图核；BUDGET_LEDGER.md 4/6 调用；REFERENCE_AND_RIGHTS.md、source/font/OFL.txt。"
+    },
+    {
+      "criterion": "Required全实存并文件/重组核验后直接提交用户Gate2，生产资源与U05运行不混淆",
+      "result": "PASS",
+      "evidence": "17 个 Required Artifact 全实存；CUT_MANIFEST.json 中 Client 路径均 PLANNED/UUID null；本次只交 Art REVIEW，待 Gate2。"
+    }
+  ],
+  "assumptions": [
+    "动态文本和锁定业务状态由获批 Product/UI 规格驱动；本批图层仅提供可切换视觉样例。"
+  ],
+  "risks": [
+    "冻结 B 为扁平 RGB，透明壶原遮挡下的光学细节无法数学反演；仅签认局部补绘。",
+    "最终 57 切片仍待用户 Gate2 具体版本批准，不能作为客户端正式接入许可。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

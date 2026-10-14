@@ -1,0 +1,22 @@
+{
+  "task_id": "U05-B-CONFIG-SOURCE-20261014",
+  "owner": "product",
+  "summary": "将已批 U05 B 三类十二种原料与十阶段开放数落实为隔离的人工配置草案，并提供全部 41 字段中文说明、旧数值核对和迁移影响。",
+  "artifacts": [
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/PRD.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/FIELD_GUIDE.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "12业务ID与10阶段开放数按已批CONTENT_PLAN，原计时经验解锁参数逐项不变", "result": "PASS", "evidence": "XLSX 难度阶段/解锁条件/原料；独立只读逐行对比旧正式源通过；CONFIG_SPEC.md"},
+    {"criterion": "四逻辑表关系、配方正确项均在当阶段池、54成品组合映射可审，业务数值无新猜测", "result": "PASS", "evidence": "XLSX 10/5/12/174 行；五档阶段1配方数 8/18/27/36/45、各档最大组合 12/27/36/45/54，逐行三元组及 min_stage_no 校验通过；CONFIG_SPEC.md"},
+    {"criterion": "新字段中文说明覆盖全部，源/草案状态/历史SHA可核，正式源和索引未批准前不替换", "result": "PASS", "evidence": "FIELD_GUIDE.md 覆盖 13+13+6+9 字段；工作簿全部行 DRAFT/false；CHANGE_IMPACT.md 记旧 SHA；本轮正式源只读 SHA 未变"},
+    {"criterion": "不改代码/后端；Tech评审类型引用与生成后再具体版本用户审核", "result": "PASS", "evidence": "PRD.md、CONFIG_SPEC.md、CHANGE_IMPACT.md 明列门禁；本版文件限 Product 任务目录"}
+  ],
+  "assumptions": ["`sort_order` 前 N 项为已批准开放表的最小等价表达；配方表列出各档阶段2最大池全部三元组，`min_stage_no` 控制阶段1出题。"],
+  "risks": ["新字段类型与旧运行资源兼容仍需 Tech 评审；54 种成品图层在实际尺寸的辨识尚待 Art 与 U05 Owner 实测。"],
+  "status": "READY_FOR_REVIEW"
+}

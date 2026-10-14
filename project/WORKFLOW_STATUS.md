@@ -1070,3 +1070,26 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Product规格四 Required 实存且Owner正式提交，Task `IN_PROGRESS→REVIEW`；待Master同版评审，不提前批准12品种或五档开放数。
 - Product v0.1 四Required+Master Review APPROVED共五SHA绑定审批，Task `REVIEW→USER_REVIEW`；12品种与五档开放数待用户批准。Producer FLOW两Required已实存并提交 `REVIEW`，三专业方案均在真实用户审批门禁。Continuity check（2026-10-13T22:42:10+08:00）：无本线空转READY/IN_PROGRESS；父完整资源与试玩Task仍 `SPEC`，生产资源、配置/代码和新版U05试玩未完成。
 <!-- U05-B-PLAYABLE-20261013 END -->
+
+<!-- U05-B-PRODUCTION-20261014 START -->
+## 2026-10-14｜U05 B资源制作与Gate2
+
+- 用户明确批准上一轮Art Gate1、Tech只读、Product具体规格三份准确v0.1方案。Producer重核原5/4/5共14文件SHA一致，三审批转 `USER_APPROVED`、方案Task由Master最终接受 `DONE`，原 `USER_REVIEW` 审批快照各留档。此批准不含实际资源Gate2。
+- 新Art资源Task与Tech同批预签Task均 `READY`，待首件实存才开工；Producer FLOW首份 `FLOW_STATUS.md` 实存，Task `READY→IN_PROGRESS`。首图前需Art/Tech同批预签，代表样本与全批预算按实证记录；正式切片待实际文件与用户Gate2。父完整资源/U05试玩目标仍未完成，Client与配置/代码本轮未解锁。
+- Art `ART_BRIEF.md` 首份实存，资源Task `READY→IN_PROGRESS`；当前仅文案，首图前Tech同批预签尚待。
+- Art `ART_PRESIGN.json` 与Tech `TECH_PRESIGN.json` 同批预签文件已实存；Tech Task `READY→IN_PROGRESS`，需核文件决定/批次一致后才可认首图门禁，尚不据仅有文件名推断已签通过。
+- Art/Tech `REP-01` 同批预签ID一致：Art 08:59先记Tech pending，Tech 09:00:11仅签T01/P01两代表对象。09:00:56有T01/P01局部zoom诊断PNG，不能当Required最终透明品种片或全批扩签；正式代表输出/核验待续。
+- Master后续建 `U05-B-CONFIG-SOURCE-20261014`、`U05-B-UI-SPEC-20261014` 两Task为 `BACKLOG`，待空闲slot/上游门禁；未执行，不虚记开工。
+- Producer阶段FLOW两Required实存，代表样本/全批/PSD切片继续由Art/Tech执行；阶段continuity check（2026-10-14T09:02:31+08:00）：Art/Tech都有实际IN_PROGRESS证据，后续Product/UI为BACKLOG，父完整目标仍active。Gate2未发生，Producer待实际新节点再续记。
+- Master阶段补记（2026-10-14 09:15:00 +08:00）：REP第二轮两对象/空槽实图与Tech实际核对通过，ROI外差异0；首批局部生成2/2、全批累计2/6，剩余4。FULL-01 Art/Tech同批续签实存并开始扩批，常亮必须独立。Product新工作簿10/5/12/174及41字段六件已Review，Tech只读逐行校验0问题；UI五件文字规格已首产，正细化帮助坐标；两包待具体用户审批，非正式运行资源。Gate2切片/PSD尚未完成，Client仍锁定。
+- Producer续核：REP第二轮Art自审/Tech代表实图核验与FULL-01同批续签已实存；首批局部生成2/2、累计2/6、余4（Art预算账本待终版复核）。Tech预签四Required正式提交，Task `IN_PROGRESS→REVIEW`；Tech配置只读四件实存、自评APPROVED，Task由READY按真实开工/提交补至REVIEW；Product新人工源六件REVIEW且Master Review APPROVED，仍待Tech/根同版审查后送用户。UI五件文字实存且18px源文字实际6.3px返修中，Task由BACKLOG按真实首产记IN_PROGRESS；不提前批准。
+- Tech同批预签支持Task四Required+Master Review APPROVED，由Master按AUTO最终接受 `DONE`；只关闭签认支持任务，不批准图片。Product新人工源v0.1六Required+Tech专业Review+Master Review八文件SHA绑定 `USER_REVIEW`；Tech配置只读v0.1四Required+Master Review五SHA绑定 `USER_REVIEW`。源表仍DRAFT/false，正式导出与代码迁移未授权。
+- UI最终文字已修为源34px（360宽约11.95 CSS），帮助区源矩形[240,307,214,166]等已更新；Master旧18px/6.3px问题属于返工历史，当前待Art文字Review，仍 `IN_PROGRESS`。
+- UI最终五件文字规格经Art视觉Review及Master Review APPROVED，七文件SHA绑定 `USER_REVIEW`；源34px与帮助/退出坐标为当前待批文字方案，实际手机运行/热区仍待Client实测，Art实际图片Gate2另行审批。
+- 09:34后 `reconstructed.png`/组合预览虽实存，Master制作中检查发现“奶奶”、小料叠字及多名牌褐色补丁；Art正清真正旧字承载层并保留名牌材质。12对象板P04/P05/P06原牌残字、M01选中色污染已先修。此为中间预览缺陷，Task仍 `IN_PROGRESS`，不冻结Gate2包；Owner先自修，后续自产切图按规则直接用户审核，不凭此新增专业复审门禁。
+- Art Owner正式冻结提交17/17 Required、57独立PNG、PSD 61层；Master已亲看最终字层修正与干净原料图版，Task `IN_PROGRESS→REVIEW`。按自产切图例外，实际切片经文件/重组核验后直接用户Gate2，不新增资源专业复审；当前待Master哈希/坐标核验结果，不能先标USER_REVIEW。`PROMPTS.md` 仅补真实提示词，不修改冻结Required/PNG/PSD。
+- Art v0.1 17Required加真实PROMPTS及Master `FILE_CHECK.md` 共19文件SHA绑定 `ARTIFACT_APPROVAL_v0.1.json`，Task `REVIEW→USER_REVIEW`。57唯一切片/61源层、PSD签名/预览与最终重组像素、透明边界/尺寸/模式核对PASS，最终字层无叠印；自产切图依规则直接具体用户Gate2，不新增效果专业复审。`decided_at=null`，Gate2尚未获用户批准，Client仍锁。
+- Continuity check（2026-10-14T09:57:51+08:00）：Art资源、Product人工源、Tech配置审查、UI文字四包均到真实 `USER_REVIEW`；Tech预签AUTO支持DONE，Producer FLOW实际产物待本轮提交；父完整资源与U05试玩目标仍active且新版运行未做。
+- Producer FLOW两Required已按Gate2真实节点更新，四项验收自报PASS并由Owner提交 `IN_PROGRESS→REVIEW`；本FLOW为AUTO流程支持，不代替四个用户审批或父任务最终完成。
+- 终态预算更正：Art账本与PROMPTS共四次局部生成，代表2/2、全批最终4/6、余2；09:15所记2/6保持阶段历史。Master同版AUTO FLOW Review APPROVED，Producer FLOW Task `REVIEW→DONE`，仅流程支持结案，四项用户审批和父试玩仍未完成。
+<!-- U05-B-PRODUCTION-20261014 END -->

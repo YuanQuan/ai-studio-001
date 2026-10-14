@@ -1,0 +1,36 @@
+{
+  "id": "U05-B-CONFIG-TECH-REVIEW-20261014",
+  "title": "B三类配置源类型与兼容只读评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "对具体DRAFT四表工作簿、41字段说明和已批准业务规格进行只读类型/唯一性/正确项/状态过滤与前端兼容评审，提出生成器正式技术输入。",
+  "inputs": [
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/FIELD_GUIDE.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CONFIG_SPEC.md",
+    "deliverables/master/U05-B-CONFIG-SOURCE-20261014/v0.1/MASTER_REVIEW.json",
+    "tooling/config/milk_tea_config_generator.py",
+    "apps/client/assets/labs/u05/milk_tea_state.ts"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U05-B-CONFIG-TECH-REVIEW-20261014/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U05-B-CONFIG-TECH-REVIEW-20261014/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-CONFIG-TECH-REVIEW-20261014/v0.1/VALIDATION_REPORT.md",
+    "deliverables/tech_lead/U05-B-CONFIG-TECH-REVIEW-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "四表41字段类型/唯一性/外键/逐类数量和174配方首次阶段实际逐行验证，草案不能正式导出",
+    "与旧人工源计时XP/解锁逐项一致，54组合不等于54图片，状态过滤不可使正式运行配置缺配方",
+    "明确新schema/version/草案验证和正式导出门禁及生成器输入，无客户端/后端实现",
+    "旧前端XP/cleared/unlocked兼容和半局丢弃验证边界有依据，未测项目明确NOT_TESTED"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "允许Tech在等待Art修图期间只读复核本草案作为内部专业Review，不作为下游正式开发输入。",
+    "不改正式表/生成器/客户端，不出图，不Git不子任务。",
+    "Producer按本轮实存产物与Owner/Master消息登记实际阶段；未据专业自评提前记录用户批准。"
+  ]
+}

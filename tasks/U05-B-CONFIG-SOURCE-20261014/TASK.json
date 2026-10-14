@@ -1,0 +1,42 @@
+{
+  "id": "U05-B-CONFIG-SOURCE-20261014",
+  "title": "落实已批准三类规格的人工配置源与全字段中文说明",
+  "type": "design",
+  "owner": "product",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "落实已批准三类规格的人工配置源与全字段中文说明",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/approval-20261014/USER_APPROVAL.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/PRD.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONTENT_PLAN.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONFIG_MIGRATION.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/TECH_DESIGN.md"
+  ],
+  "deliverables": [
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/PRD.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CONFIG_SPEC.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/MILK_TEA_MINIGAME.xlsx",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/FIELD_GUIDE.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/CHANGE_IMPACT.md",
+    "deliverables/product/U05-B-CONFIG-SOURCE-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "12业务ID与10阶段开放数按已批CONTENT_PLAN，原计时经验解锁参数逐项不变",
+    "四逻辑表关系、配方正确项均在当阶段池、54成品组合映射可审，业务数值无新猜测",
+    "新字段中文说明覆盖全部，源/草案状态/历史SHA可核，正式源和索引未批准前不替换",
+    "不改代码/后端；Tech评审类型引用与生成后再具体版本用户审核"
+  ],
+  "dependencies": [
+    "U05-B-PLAYABLE-20261013-PRODUCT-SPEC",
+    "U05-B-PLAYABLE-20261013-ART-PLAN",
+    "U05-B-PLAYABLE-20261013-TECH-PLAN"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "待Master分派空闲角色后执行；当前未产出不得IN_PROGRESS。",
+    "仅任务限定目录产草案；保护现行表、客户端与并行工作，不Git、不派子任务。",
+    "UI固定图示优先引用B/实际Art资源，不新增美术图片；内容文本规格由UI，美术实际输出由Art同批负责。"
+  ]
+}

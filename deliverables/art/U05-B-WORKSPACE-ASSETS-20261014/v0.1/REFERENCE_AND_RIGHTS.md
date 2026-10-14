@@ -1,0 +1,5 @@
+# U05 B 资源来源与权利记录
+
+冻结视觉源仅为项目内已选 B 效果图 `deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png`（SHA-256 `3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06`）。玩家制作侧视角、蓝瓦木框与友好幽灵沿用本项目画面；用户外部截图只参考一般区域关系，未复制猪顾客、品牌、原图字/图。生成候选只用于签认的柜格与幽灵／气泡／杯／按钮局部隐底补绘；4 次候选原件分别留在 `source/representative/` 与 `source/`，未整图替换冻结画面。
+
+动态中文候选为 Google Fonts 官方 `ZCOOLKuaiLe-Regular.ttf`，本机原件 `/private/tmp/u05-b-font-source/ZCOOLKuaiLe-Regular.ttf`，SHA-256 `812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d`；许可为 [SIL OFL 1.1 官方文本](https://github.com/google/fonts/blob/main/ofl/zcoolkuaile/OFL.txt)，本机许可副本 SHA-256 `538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d`。具体核验见 `deliverables/master/U05-B-PLAYABLE-20261013/approval-20261014/FONT_SOURCE_CHECK.md` 和 `FONT_GLYPH_PROBE.md`。如实际随游戏分发字体软件，须一并保留版权及完整 OFL 文本；最终全批实际字体副本为 `source/font/ZCOOLKuaiLe-Regular.ttf`，许可副本为 `source/font/OFL.txt`，用于 `source/layers/TEXT_SAMPLE_DYNAMIC_full.png` 中的 12 品种名、类别、顶栏示例及三按钮示例；运行时文字由客户端动态渲染，不烘焙在静态底图。冻结效果图误字不能作为品种名依据。

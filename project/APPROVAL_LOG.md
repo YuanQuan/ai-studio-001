@@ -563,3 +563,13 @@ Producer 记录具体版本的决定；专业评审不替代用户批准。
 - Art Gate1方案 v0.1 五文件SHA见 `tasks/U05-B-PLAYABLE-20261013-ART-PLAN/ARTIFACT_APPROVAL_v0.1.json`，`USER_REVIEW`、`decided_at=null`；不是资源制作批准，Gate2仍未发生。
 - Product具体规格 v0.1 五文件SHA见 `tasks/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/ARTIFACT_APPROVAL_v0.1.json`，`USER_REVIEW`、`decided_at=null`。Art Gate1、Tech只读、Product规格三项批准均尚未取得，B视觉单图批准不代替它们。
 <!-- U05-B-PLAYABLE-20261013 END -->
+
+<!-- U05-B-PRODUCTION-20261014 START -->
+## 2026-10-14｜U05 B三方案批准
+
+- 用户“批准”同时呈现的Art Gate1、Tech只读、Product规格准确v0.1：三份 `ARTIFACT_APPROVAL_v0.1.json` 均 `USER_APPROVED`、原5/4/5 SHA匹配；各目录 `ARTIFACT_APPROVAL_v0.1_USER_REVIEW_HISTORY.json` 保留原待审快照。仅方案获批；首图前预签、具体切片Gate2和U05运行批准仍各自待办。
+- Product人工源 `tasks/U05-B-CONFIG-SOURCE-20261014/ARTIFACT_APPROVAL_v0.1.json` 八文件SHA、Tech只读 `tasks/U05-B-CONFIG-TECH-REVIEW-20261014/ARTIFACT_APPROVAL_v0.1.json` 五文件SHA，均为 `USER_REVIEW`、`decided_at=null`；201行/41字段/174配方技术自检0问题不构成用户批准或正式导出。
+- UI文字规格 `tasks/U05-B-UI-SPEC-20261014/ARTIFACT_APPROVAL_v0.1.json` 七文件SHA，`USER_REVIEW`、`decided_at=null`；不代替实际资源Gate2或运行验收。
+- Art具体资源Gate2 `tasks/U05-B-WORKSPACE-ASSETS-20261014/ARTIFACT_APPROVAL_v0.1.json` 绑定19文件SHA并引用Master文件核对，状态 `USER_REVIEW`、`decided_at=null`；57 PNG/61层由清单与核对记录逐项验证。此前Gate1方案批准不代替本具体资源批准；Client不得正式接入。
+- FLOW为AUTO内部支持，Master `deliverables/master/U05-B-PRODUCTION-FLOW-20261014/v0.1/MASTER_REVIEW.json` 接受后Task DONE；此事实不替代Art Gate2、配置、Tech或UI四项USER_REVIEW的用户决定。
+<!-- U05-B-PRODUCTION-20261014 END -->

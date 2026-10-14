@@ -1,0 +1,40 @@
+{
+  "task_id": "U05-B-ASSET-PRESIGN-20261014",
+  "owner": "tech_lead",
+  "summary": "与Art同批完成REP-01首图前预签，实核两代表对象/空槽/alpha/同尺度重组后完成FULL-01全批续签；不把本签当Gate2或运行结论。",
+  "artifacts": [
+    "deliverables/tech_lead/U05-B-ASSET-PRESIGN-20261014/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-ASSET-PRESIGN-20261014/v0.1/REPRESENTATIVE_TECH_CHECK.md",
+    "deliverables/tech_lead/U05-B-ASSET-PRESIGN-20261014/v0.1/FULL_BATCH_PRESIGN.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "批准记录/hash与Art同一批真实对齐，首图前签尺寸/色彩/层/透明/路径/设备预算",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN绑定Gate1批准、冻结源SHA、Art REP-01预签SHA、ROI/支点/1024×1536 straight-alpha、工具与预算；文件在首图前实存。"
+    },
+    {
+      "criterion": "代表两对象/空槽/重组实图与alpha/尺寸/裁切像素核验，估算与实测分开",
+      "result": "PASS",
+      "evidence": "REPRESENTATIVE_TECH_CHECK记录两对象真实RGBA尺寸/alpha边界、空槽与棋盘图、ROI外0像素/ROI内17822像素差异、理论纹理值及运行NOT_TESTED。"
+    },
+    {
+      "criterion": "全批续签覆盖12对象及共用杯内容/静态层/状态素材，保持B还原不降级",
+      "result": "PASS",
+      "evidence": "FULL_BATCH_PRESIGN绑定Art FULL-01并覆盖12对象、双杯复用内容12层、12空槽、独立高亮、动态文字与两目标组合可辨。"
+    },
+    {
+      "criterion": "不编码不出图不加Gate2效果专业复审，不虚构运行指标",
+      "result": "PASS",
+      "evidence": "Tech只写四文档；实际图由Art制作，FULL_BATCH_PRESIGN规定自产切图直接用户Gate2，Cocos/目标机指标NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "具体目标设备型号尚未锁定；纹理值仅RGBA8理论估算。"
+  ],
+  "risks": [
+    "所有全批资源与两杯实际组合仍待Art制作、文件检查和用户Gate2具体批准。",
+    "半透明容器在新背景下的真实光学信息不能从冻结RGB图直接恢复。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

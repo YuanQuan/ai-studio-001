@@ -1,0 +1,74 @@
+{
+  "task_id": "U05-B-ASSET-PRESIGN-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-WORKSPACE-ASSETS-20261014/v0.1/REP-01",
+  "status": "PRESIGNED_FOR_TWO_REPRESENTATIVE_OBJECTS_ONLY",
+  "signed_at": "2026-10-14T09:00:11+08:00",
+  "approval_record": "tasks/U05-B-PLAYABLE-20261013-ART-PLAN/ARTIFACT_APPROVAL_v0.1.json#USER_APPROVED",
+  "art_presign": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/ART_PRESIGN.json",
+  "art_presign_sha256": "d9fa1ac93ac1287bf047f614864cf4781b42102719265fca4f5a1f70f7780cf5",
+  "frozen_source": "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png",
+  "frozen_source_sha256": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+  "scope": {
+    "objects": [
+      "U05_B_T01 幽灯茶壶",
+      "U05_B_P01 鬼火珠碗"
+    ],
+    "background": "仅清理对应两空槽并分离常亮；其余槽不动",
+    "canvas": [
+      1024,
+      1536
+    ],
+    "roi_xyxy_exclusive": {
+      "T01": [
+        50,
+        415,
+        212,
+        567
+      ],
+      "P01": [
+        272,
+        845,
+        413,
+        929
+      ]
+    },
+    "pivot_full_canvas_xy": {
+      "T01": [
+        132,
+        561
+      ],
+      "P01": [
+        343,
+        923
+      ]
+    },
+    "paths": [
+      "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/representative/T01_youdeng_tea_full.png",
+      "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/representative/P01_guihuozhu_bowl_full.png",
+      "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/representative/empty_shelf_full.png",
+      "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/review/representative_reconstructed.png"
+    ]
+  },
+  "tool_and_pixel_contract": [
+    "冻结源RGB8无ICC按sRGB解释且保留源字节；输出1024×1536 RGBA8 straight alpha，全语义轮廓外A=0，禁止预乘alpha文件。",
+    "确定性遮罩/局部修复优先；image2psd只用只读脚本 /Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py 组装真实全画布透明语义层。禁止split-colors代替对象或开启整图参考层遮盖。",
+    "宽松ROI不等于矩形切片。实际非零alpha边界、裁切矩形、保留像素偏移和支点从样片测量后记入CUT_MANIFEST。对象不能带木框、名称、常亮或邻格。",
+    "在同源画布坐标以SrcOver按sRGB工作解释重组；关闭参考层，核T01/P01各自alpha、空槽清底、柜口遮挡、边缘与原图同尺度。原图静态未变区目标可见像素零差；半透重建/补洞区列精确遮罩与差异，不能凭hash判透明可恢复。"
+  ],
+  "budget": {
+    "production_generation_calls_representative_max": 2,
+    "production_generation_calls_full_batch_cumulative_max": 6,
+    "same_defect_auto_correction_rounds_max": 2,
+    "representative_active_hours_max": 6,
+    "full_batch_active_hours_max": 16,
+    "known_fee": "UNKNOWN",
+    "texture_estimate": "1024×1536 RGBA8每张完整画布理论解码约6 MiB；两对象加空柜若都作为全画布纹理约18 MiB，实际裁切/图集及GPU驻留待实图/导入测量。2048² RGBA8理论16 MiB/页，不等于DrawCall或运行通过。",
+    "target_device": "未指定具体型号；Web与目标机纹理内存、加载、DrawCall、帧率全部NOT_TESTED；代表实图后按实际非透明边界/裁切面积重算。"
+  },
+  "stop_and_next": [
+    "任一对象空槽残影、木框/文字污染、透明边伪色、支点或同尺度重组不符则先定位遮罩/色彩/坐标，代表不通过不扩批。",
+    "代表Art视觉自审与Tech实图核通过后，Art/Tech另签全批12对象、共用杯3茶/3奶/6料内容和两杯容器、静态/状态层；具体图片仍交用户Gate2，自产切图不新增最终效果专业复审。",
+    "首图前本签只批准所列方法和批次；换源、工具、画布、alpha解释、ROI外扩大修改或资源范围需受影响项复签。"
+  ]
+}

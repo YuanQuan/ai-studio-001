@@ -1035,3 +1035,17 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 建议与复核：Art在下次局部修订首签前检查源版本审批状态措辞，Tech核同版hash，复核点为下个局部方案的双签；Producer在登记新版资源时保持旧版退修快照与新Gate2独立，复核点为用户本版决定后交接。两项均属已有职责，不加新审批门禁。
 - Continuity：Art真实`USER_REVIEW`、Tech内部支持`DONE`；Producer本轮状态/审批/里程碑、18项资源登记、看板及continuity有实产，内部交付待Master接受。无本批可继续但仅以READY/IN_PROGRESS占位的空转任务；下一外部依赖为用户对准确v0.2具体资源决定，批准前Client锁。
 <!-- SCENE-SAKURA-REDRAW-V02-20261014 RETROSPECTIVE END -->
+
+<!-- U05-B-PRODUCTION-20261014 START -->
+## WR-20261014-U05-B-PRODUCTION-001｜进行中
+
+- 结果：三方案准确版本获批并结案，Producer FLOW已开始，Art/Tech资源预签待真实首产。可核首次本轮Producer阅读2026-10-14 08:56:50 +08:00；用户原消息精确时刻未知，实际制作/等待/故障净时长尚无证据。
+- 关键门禁：首图前同批Art/Tech预签；代表两对象、全批预算、PSD/切片证据随后按实记录。建议Art提供批次与资源清单、Tech核同批尺寸透明与设备预算，Master复核具体Gate2包。Continuity：FLOW已首产，Art/Tech READY待首件，不虚记IN_PROGRESS。
+- Art Brief首产，资源Task有真实执行证据；尚无出图净工时/预算。
+- Art与Tech预签文件均出现，具体签认时刻和是否通过以文件内容核验，不由mtime直接推定。
+- 阶段收束（2026-10-14T09:02:31+08:00）：已核三方案获批、Art/Tech同批REP-01预签，代表zoom诊断图不是最终对象片；实际正式图、PSD/切片、Gate2待上游。本轮可核Producer首次08:56:50至当前时段，用户消息时刻、角色净工时、生成调用次数/费用仍未知。预签先后不构成工具故障；未来核 Art BUDGET_LEDGER 实际数及Tech代表实图检查。Continuity：Art/Tech有真实IN_PROGRESS产出，后续两Task BACKLOG未启动，当前等待实际代表样本而非虚停。
+- 续记：代表第二轮/全批续签实存，预算目前代表2/2、累计2/6，余4；UI文字尺寸需从18px源定义返修（手机6.3px），返工净时长未知。支持线按实物纠正任务阶段，Product/Tech/UI尚无用户批准。
+- 返工节点：全批预览暴露旧字承载层/名牌材质问题，Art需定向去旧字并保材质；发现与修正净耗未知，不能把预览mtime当最终完成。
+- Art已正式提交17 Required与57PNG/61PSD层；此前双字/褐补丁定向修正由Master实图检查，精确返工净工时未知。等待文件/坐标核验后送Gate2，不以图像自报代替。
+- 本轮结果：三方案获批后，REP-01两对象自审/Tech核过、FULL-01续签，Art最终17Required/57PNG/61层经Master文件与实图核对后直送Gate2 `USER_REVIEW`；Product人工源、Tech只读、UI文字也分别待用户审核。Producer起点可核08:56:50 +08:00，收尾 2026-10-14T09:57:51+08:00，约一小时墙钟包含并行制作/等待/审阅，不能归为单角色净工时；用户消息精确时刻未知。代表生成2/2、全批最终累计4/6、剩余2次；费用UNKNOWN。中间重组出现双字/名牌褐补丁，Art定向修正、最终实图无叠印；返工净耗未知。建议Master一次呈四个准确版本及Gate2资源对照，复核点为用户逐包决定；批准后再由Client按资源映射与配置/UI获批版本实现并验真实Web。Continuity：四包在真实USER_REVIEW，支持预签DONE，父试玩目标仍active，未空转以READY/IN_PROGRESS冒充完成。
+<!-- U05-B-PRODUCTION-20261014 END -->

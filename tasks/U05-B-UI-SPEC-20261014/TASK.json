@@ -1,0 +1,43 @@
+{
+  "id": "U05-B-UI-SPEC-20261014",
+  "title": "B布局三类玩法的页面状态与完整画幅适配规格",
+  "type": "ui",
+  "owner": "ui",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "B布局三类玩法的页面状态与完整画幅适配规格",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/approval-20261014/USER_APPROVAL.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/PRD.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONTENT_PLAN.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONFIG_MIGRATION.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/TECH_DESIGN.md"
+  ],
+  "deliverables": [
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/screens/SCREEN_STATES.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/components/COMPONENT_STATES.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "继承B画面与Art层，不换主题/造型/材质；12固定格与状态的真实资源引用",
+    "订单气泡只有成品杯；简单完整提示在气泡外、中等起独立查阅，不妨碍12格操作",
+    "选档/制作/缺项/交错/通关/失败/重试/返回/永久解锁与前端验证工具状态完整",
+    "完整contain和同变换热区720x1280/窄屏、不裁切/拉伸、不隐藏主要部件，不改业务数值"
+  ],
+  "dependencies": [
+    "U05-B-PLAYABLE-20261013-PRODUCT-SPEC",
+    "U05-B-PLAYABLE-20261013-ART-PLAN",
+    "U05-B-PLAYABLE-20261013-TECH-PLAN"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "待Master分派空闲角色后执行；当前未产出不得IN_PROGRESS。",
+    "仅任务限定目录产草案；保护现行表、客户端与并行工作，不Git、不派子任务。",
+    "UI固定图示优先引用B/实际Art资源，不新增美术图片；内容文本规格由UI，美术实际输出由Art同批负责。",
+    "Producer按本轮实存产物与Owner/Master消息登记实际阶段；未据专业自评提前记录用户批准。",
+    "Producer据五Required READY_FOR_REVIEW、Art同版APPROVED与Master同版APPROVED记录 IN_PROGRESS→REVIEW→USER_REVIEW；仅文字方案送审，运行待测。"
+  ]
+}

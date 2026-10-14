@@ -1,0 +1,42 @@
+{
+  "id": "U05-B-PRODUCTION-FLOW-20261014",
+  "title": "登记方案批准并跟踪B资源制作、门禁及后续试玩",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记方案批准并跟踪B资源制作、门禁及后续试玩",
+  "inputs": [
+    "deliverables/master/U05-B-PLAYABLE-20261013/approval-20261014/USER_APPROVAL.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U05-B-PLAYABLE-20261013-ART-PLAN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/product/U05-B-PLAYABLE-20261013-PRODUCT-SPEC/v0.1/CONTENT_PLAN.md",
+    "deliverables/tech_lead/U05-B-PLAYABLE-20261013-TECH-PLAN/v0.1/TECH_DESIGN.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-PRODUCTION-FLOW-20261014/v0.1/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-PRODUCTION-FLOW-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "三份准确v0.1 USER_APPROVED、Master接受、原待审快照保留",
+    "真实出图与代表/全批/PSD切片节点及预算登记，未有执行证据不IN_PROGRESS",
+    "自产切图实际文件直接Gate2，Client仍锁定；父完整目标未完成",
+    "五共享文件仅本轮唯一标记块、复盘及continuity真实"
+  ],
+  "dependencies": [
+    "U05-B-PLAYABLE-20261013-ART-PLAN",
+    "U05-B-PLAYABLE-20261013-TECH-PLAN",
+    "U05-B-PLAYABLE-20261013-PRODUCT-SPEC"
+  ],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "不改无关文件，不Git、不创建子任务；模型按角色产出规则。",
+    "首图前同批Art/Tech预签必须实存并与实际批次一致，代表样片通过后复签全批；不能把Gate1批准当Gate2。",
+    "只有前端单元示例，QA不参加；实际资源Gate2批准前不正式接入。",
+    "Master在Producer阶段暂时结束时可仅向本轮独立共享标记块补记当前实存专业交付节点；不代替审批或改变其他任务，Producer返回后复核。",
+    "Master明确最终接受AUTO FLOW：两Required、四验收PASS、同版MASTER_REVIEW.json APPROVED；FLOW DONE仅流程支持，不代替四项用户审批或父试玩。"
+  ]
+}

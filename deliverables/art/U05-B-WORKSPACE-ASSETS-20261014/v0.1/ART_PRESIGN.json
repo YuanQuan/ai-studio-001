@@ -1,0 +1,56 @@
+{
+  "task_id": "U05-B-WORKSPACE-ASSETS-20261014",
+  "batch_id": "U05-B-WORKSPACE-ASSETS-20261014/v0.1/REP-01",
+  "owner": "art",
+  "status": "REPRESENTATIVE_ONLY_ART_PRESIGNED_TECH_PENDING",
+  "signed_at": "2026-10-14T08:59:05+08:00",
+  "bound_inputs_sha256": {
+    "concept_B.png": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+    "approved_ART_PLAN/PRODUCTION_PLAN.md": "a62b66063f5c05864d74d98592a196ea3136203288529f122c12571863d90b19",
+    "approved_ART_PLAN/VISUAL_ANCHORS.md": "6742aa6fef9d12fcc0a913af4b2562ccdbbe768724170fb99fbcbf6b1c13d130",
+    "approved_ART_PLAN/ASSET_MANIFEST.md": "a7e76101062f22cedca14352866854ed593beca1eb6306ccb168ce60c485e917",
+    "approved_PRODUCT/CONTENT_PLAN.md": "4aee256ccb3fa722365b1ad3e05156bdb4bf72d58bab25a8cd156e935404ca1f",
+    "approved_TECH/TECH_DESIGN.md": "90b511d53801821b4fe39738b126dbef45e9ee4f6ade216f26f3f4165afcb155",
+    "USER_APPROVAL.md": "e02b775d0449459c3a5784a566ae7f1d7673f84692838c07270501cac20e5c83",
+    "ART_BRIEF.md": "647047328c38414ed1bb70a0c334f4cfc30bcf9d002f5bb87b63a293131354b7"
+  },
+  "decision": "仅放行幽灯茶壶 T01、鬼火珠碗 P01 与对应两处空柜清底的代表样片。Art 与 Tech 同批预签实存且批准记录成立后才产首张 PNG／PSD；代表实图与 alpha 核通过后另签全批，未签不得扩批。",
+  "representative_objects": [
+    {
+      "id": "T01",
+      "name": "幽灯茶",
+      "object": "透明茶壶本体（含壶内可见幻想茶液），不含木格、常亮框、文字和相邻像素",
+      "provisional_roi_xyxy": [50, 415, 212, 567],
+      "provisional_pivot_xy": [132, 561],
+      "output": "source/representative/T01_youdeng_tea_full.png"
+    },
+    {
+      "id": "P01",
+      "name": "鬼火珠",
+      "object": "鬼火珠与承装碗本体，碗和食材可另设子层；不含木格、常亮框、文字和相邻像素",
+      "provisional_roi_xyxy": [272, 845, 413, 929],
+      "provisional_pivot_xy": [343, 923],
+      "output": "source/representative/P01_guihuozhu_bowl_full.png"
+    }
+  ],
+  "clean_background_output": "source/representative/empty_shelf_full.png",
+  "preview_output": "review/representative_reconstructed.png",
+  "tooling": {
+    "method": "冻结 RGB 源图的确定性语义遮罩与局部缺失信息修复；image2psd 仅用于经过核验的全画布透明语义层组装，不能以 split-colors 或整图盖顶冒充分层",
+    "image2psd_script_read_only": "/Users/yuanquan/.codex/skills/bggg-creator-image2psd/scripts/image2psd.py",
+    "source_root": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source",
+    "imagegen_limit_rep": 2,
+    "imagegen_limit_total": 6,
+    "same_defect_round_limit": 2,
+    "whole_screen_regeneration": false
+  },
+  "pixel_contract": {
+    "canvas": [1024, 1536],
+    "source": "RGB8, unprofiled; interpret as sRGB without altering source pixels",
+    "export": "PNG RGBA8, straight alpha, transparent outside actual semantic silhouette; SrcOver in sRGB working space; no premultiplied export",
+    "roi_rule": "ROI is a loose safety window, not a rectangular cutout; final nonzero-alpha bounds and pivot measured from real mask and recorded in CUT_MANIFEST.json",
+    "alpha_checks": "background corners A=0; object interior A>0; soft edges retained; no shelf/frame/text/neighbor contamination; alpha and RGB must reconstruct at the source coordinates",
+    "shelf_rule": "Only T01/P01 vacated slots may be locally cleaned in representative stage; record change mask, preserve every pixel outside it"
+  },
+  "limits": "本签不是具体资源用户 Gate2 批准；暂不放行其他 10 种、杯内内容、顾客或整屏母版。"
+}

@@ -1140,3 +1140,27 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PRODUCT_SPEC_USER_REVIEW`：四Required+Master Review五SHA绑定审批，Task `REVIEW→USER_REVIEW`。
 - `FLOW_DRAFT_SUBMITTED`：Producer `FLOW_STATUS.md`、`DELIVERABLE.json` 两件实存，FLOW `IN_PROGRESS→REVIEW`；三专业方案均待用户决定，父Task仍SPEC。
 <!-- U05-B-PLAYABLE-20261013 END -->
+
+<!-- U05-B-PRODUCTION-20261014 START -->
+## 2026-10-14｜U05 B资源生产门禁
+
+- `THREE_PLANS_USER_APPROVED`：三份v0.1方案原14 SHA复核一致，审批 `USER_APPROVED`、方案Task `DONE`，原待审审批快照保留。
+- `PRODUCTION_FLOW_STARTED`：Producer FLOW首份实存，Task `READY→IN_PROGRESS`；Art实际制作与Tech预签Task保持READY直至首件。
+- `ART_RESOURCE_STARTED`：`ART_BRIEF.md` 首件实存，Art资源Task `READY→IN_PROGRESS`；未出现正式图片。
+- `PRESIGN_FILES_DRAFT`：Art/Tech各自预签文件实存，Tech Task `READY→IN_PROGRESS`；待核同批决定与首图前门禁。
+- `REP_01_PRESIGNED`：Art与Tech同batch_id预签先后实存，仅T01/P01代表与空柜清底范围；两张zoom诊断图不代替最终透明PNG/PSD。
+- `FOLLOWUP_BACKLOG`：Product人工源/中文说明与UI纯规格两任务已建BACKLOG，未执行。
+- Master阶段补记（2026-10-14 09:15:00 +08:00）：REP第二轮两对象/空槽实图与Tech实际核对通过，ROI外差异0；首批局部生成2/2、全批累计2/6，剩余4。FULL-01 Art/Tech同批续签实存并开始扩批，常亮必须独立。Product新工作簿10/5/12/174及41字段六件已Review，Tech只读逐行校验0问题；UI五件文字规格已首产，正细化帮助坐标；两包待具体用户审批，非正式运行资源。Gate2切片/PSD尚未完成，Client仍锁定。
+- `REP_02_AND_FULL_01`：第二轮代表两对象/空槽核验通过，ROI外0差；生成代表2/2、全批累计2/6；FULL-01 Art/Tech同批续签、Art扩批，Gate2尚未发生。
+- `SUPPORT_REVIEWS`：Tech预签四Required提交REVIEW；Tech配置四件实存、自评APPROVED，Task REVIEW；Product人工源六件REVIEW且Master Review APPROVED；UI五件草案实存，18px源文字手机仅6.3px，Task IN_PROGRESS返修。
+- `PRESIGN_SUPPORT_DONE`：Tech预签四Required+Master Review APPROVED，AUTO支持Task DONE；Gate2不随之批准。
+- `CONFIG_SOURCE_USER_REVIEW`：Product六Required+Tech专业Review+Master Review八SHA绑定审批，Task REVIEW→USER_REVIEW，人工源仍DRAFT/false。
+- `CONFIG_TECH_USER_REVIEW`：Tech四Required+Master Review五SHA绑定审批，Task REVIEW→USER_REVIEW；不授权生成器/客户端。
+- `UI_FONT_REVISION`：源34px修订及帮助矩形已实存，旧18px/手机6.3px为历史问题；待Art文字Review。
+- `UI_SPEC_USER_REVIEW`：UI五Required+Art文字视觉Review+Master Review共七SHA绑定审批，Task IN_PROGRESS→REVIEW→USER_REVIEW；运行待测。
+- `FULL_BATCH_TEXT_DIAGNOSIS`：全批静态预览已现，但Master指出双字、叠字与名牌褐补丁；Art进行制作中定向修正，不视为Gate2可审。
+- `ART_GATE2_PACKET_SUBMITTED`：Owner正式提交17/17 Required、57 PNG、PSD 61层，Art Task `IN_PROGRESS→REVIEW`；Master正在核坐标/文件哈希，后续自产切图直接用户Gate2。
+- `ART_GATE2_USER_REVIEW`：Art 17Required、PROMPTS、Master FILE_CHECK共19SHA绑定审批；57 PNG与61源层、PSD和同尺度重组核对PASS，自产切图直接用户审核，Task REVIEW→USER_REVIEW，Gate2尚未批准。
+- `PRODUCTION_FLOW_SUBMITTED`：FLOW_STATUS/DELIVERABLE两件完成，四项验收自报PASS，Producer Task IN_PROGRESS→REVIEW；待Master接受AUTO支持。
+- `PRODUCTION_FLOW_AUTO_DONE`：Master接受两Required/四验收PASS，FLOW Task REVIEW→DONE；最终生成4/6、余2，早期2/6保留历史。
+<!-- U05-B-PRODUCTION-20261014 END -->

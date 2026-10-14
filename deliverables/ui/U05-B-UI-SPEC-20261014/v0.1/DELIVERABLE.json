@@ -1,0 +1,21 @@
+{
+  "task_id": "U05-B-UI-SPEC-20261014",
+  "owner": "ui",
+  "summary": "B布局五档选择、三类十二固定格、双杯组合、帮助、结算与完整contain的文字UI规格。视觉引用已选B图和Art实际代表层。",
+  "artifacts": [
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/UI_SPEC.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/screens/SCREEN_STATES.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/components/COMPONENT_STATES.md",
+    "deliverables/ui/U05-B-UI-SPEC-20261014/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion":"继承B画面与Art层，不换主题/造型/材质；12固定格与状态的真实资源引用","result":"PASS","evidence":"UI_SPEC与COMPONENT_STATES引用冻结B图及本批已存在T01/P01代表层；其余明确待Art正式清单。"},
+    {"criterion":"订单气泡只有成品杯；简单完整提示在气泡外、中等起独立查阅，不妨碍12格操作","result":"PASS","evidence":"UI_SPEC帮助与订单段及SCREEN_STATES帮助状态。"},
+    {"criterion":"选档/制作/缺项/交错/通关/失败/重试/返回/永久解锁与前端验证工具状态完整","result":"PASS","evidence":"SCREEN_STATES矩阵及UI_SPEC操作反馈。"},
+    {"criterion":"完整contain和同变换热区720x1280/窄屏、不裁切/拉伸、不隐藏主要部件，不改业务数值","result":"PASS","evidence":"UI_SPEC画幅公式与720x1280算例；运行画面仍待Client验证。"}
+  ],
+  "assumptions": ["当前仅有B冻结图和Art代表层可见；正式资源路径以Art本批最终登记为准。", "退出入口最终像素位须与Art实层和Client热区核对，不得挡住十二格和底部操作。"],
+  "risks": ["简单档帮助展开在窄屏的实际文字可读性尚未运行测量。", "双杯内容层、十二独立对象与客户端导入均未完成用户资源Gate2审批。"],
+  "status": "READY_FOR_REVIEW"
+}

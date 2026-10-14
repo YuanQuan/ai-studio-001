@@ -1,0 +1,2137 @@
+{
+  "task_id": "U05-B-WORKSPACE-ASSETS-20261014",
+  "version": "v0.1",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "frozen_source": "deliverables/art/U05-MILK-TEA-WORKSPACE-CONCEPT-20261013/v0.3/concept_B.png",
+  "frozen_source_sha256": "3ee5ee1cd054658befe4f39bde660ef5625049ad83d004f4efb3bc7ac0a2da06",
+  "psd": {
+    "path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/source/workspace_b_master.psd",
+    "sha256": "fe92e6254e50cd9f29a1c314bd856461a0565f867981c7f6c1af87180112548b",
+    "layer_manifest": "source/LAYER_MANIFEST.json",
+    "layer_count": 61
+  },
+  "canonical_cup_composition": {
+    "canonical_canvas": [
+      183,
+      233
+    ],
+    "work_origin": [
+      418,
+      1093
+    ],
+    "order_target_rect": [
+      577,
+      326,
+      728,
+      506
+    ],
+    "scale_filter": "Pillow LANCZOS",
+    "draw_order": [
+      "cup_back",
+      "CUP_TEA_Txx",
+      "CUP_MILK_Mxx",
+      "CUP_TOP_Pxx",
+      "cup_front",
+      "order_straw_if_order"
+    ],
+    "clip": "Each canonical PNG already has the shared cup-interior alpha clip. Place whole 183x233 transparent canvas at work origin. For order resize whole canvas to exact 151x180 then place at order target rect; never use nonzero alpha bbox as origin.",
+    "sample_A": [
+      "CUP_TEA_T01",
+      "CUP_MILK_M01",
+      "CUP_TOP_P01"
+    ],
+    "sample_B": [
+      "CUP_TEA_T03",
+      "CUP_MILK_M03",
+      "CUP_TOP_P06"
+    ]
+  },
+  "font": {
+    "path": "source/font/ZCOOLKuaiLe-Regular.ttf",
+    "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+    "license_path": "source/font/OFL.txt",
+    "license_sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d",
+    "usage": "source/font_usage.json"
+  },
+  "exports": [
+    {
+      "asset_id": "BTN_RECIPE_BASE",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_RECIPE_BASE.png",
+      "art_version": "v0.1",
+      "sha256": "8d27eb98a2bd5c312e0fb76f487b1f9eed5ee469570e176279b155c93b3957d8",
+      "dimensions": [
+        323,
+        105
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        323,
+        105
+      ],
+      "source_layer": "source/layers/BTN_RECIPE_BASE_full.png",
+      "source_bbox_full": [
+        31,
+        1431,
+        354,
+        1536
+      ],
+      "pivot_full": [
+        191,
+        1490
+      ],
+      "pivot_export": [
+        160,
+        59
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_RECIPE_BASE.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "BTN_RECIPE_ICON",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_RECIPE_ICON.png",
+      "art_version": "v0.1",
+      "sha256": "a753ef90717e6413a37fba414ec2eb2430ee76f2c6813c95560d2c6d8f8f53af",
+      "dimensions": [
+        58,
+        58
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        58,
+        58
+      ],
+      "source_layer": "source/layers/BTN_RECIPE_ICON_full.png",
+      "source_bbox_full": [
+        83,
+        1454,
+        141,
+        1512
+      ],
+      "pivot_full": [
+        84,
+        1453
+      ],
+      "pivot_export": [
+        1,
+        -1
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_RECIPE_ICON.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "BTN_SERVE_BASE",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_SERVE_BASE.png",
+      "art_version": "v0.1",
+      "sha256": "85fdde39984b6692aabda828597a246f9c4dee5c67f71af56fe6850a69ad16a9",
+      "dimensions": [
+        362,
+        105
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        362,
+        105
+      ],
+      "source_layer": "source/layers/BTN_SERVE_BASE_full.png",
+      "source_bbox_full": [
+        632,
+        1431,
+        994,
+        1536
+      ],
+      "pivot_full": [
+        813,
+        1490
+      ],
+      "pivot_export": [
+        181,
+        59
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_SERVE_BASE.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "BTN_SERVE_ICON",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_SERVE_ICON.png",
+      "art_version": "v0.1",
+      "sha256": "562e79810807598bede991651a5c04a1ce718975030c8523b2b3745d3e69f612",
+      "dimensions": [
+        50,
+        64
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        50,
+        64
+      ],
+      "source_layer": "source/layers/BTN_SERVE_ICON_full.png",
+      "source_bbox_full": [
+        693,
+        1450,
+        743,
+        1514
+      ],
+      "pivot_full": [
+        690,
+        1451
+      ],
+      "pivot_export": [
+        -3,
+        1
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_SERVE_ICON.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "BTN_UNDO_BASE",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_UNDO_BASE.png",
+      "art_version": "v0.1",
+      "sha256": "42a47a0221ea9220989207162130158538717a316bcd288e6c3616440e740a57",
+      "dimensions": [
+        222,
+        105
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        222,
+        105
+      ],
+      "source_layer": "source/layers/BTN_UNDO_BASE_full.png",
+      "source_bbox_full": [
+        406,
+        1431,
+        628,
+        1536
+      ],
+      "pivot_full": [
+        518,
+        1490
+      ],
+      "pivot_export": [
+        112,
+        59
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_UNDO_BASE.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "BTN_UNDO_ICON",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/BTN_UNDO_ICON.png",
+      "art_version": "v0.1",
+      "sha256": "b8bd65962151929cbb874584f3d12433c1f18c2e31933c249eb2098e5c2e7821",
+      "dimensions": [
+        47,
+        52
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        47,
+        52
+      ],
+      "source_layer": "source/layers/BTN_UNDO_ICON_full.png",
+      "source_bbox_full": [
+        441,
+        1454,
+        488,
+        1506
+      ],
+      "pivot_full": [
+        442,
+        1453
+      ],
+      "pivot_export": [
+        1,
+        -1
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/BTN_UNDO_ICON.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "COUNTER_FRONT",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/COUNTER_FRONT.png",
+      "art_version": "v0.1",
+      "sha256": "a1ba2c242e0e99f0dae2d452647b515029525da9148a4da2f9f16c090f2c571e",
+      "dimensions": [
+        556,
+        42
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        556,
+        42
+      ],
+      "source_layer": "source/layers/COUNTER_FRONT_full.png",
+      "source_bbox_full": [
+        234,
+        777,
+        790,
+        819
+      ],
+      "pivot_full": [
+        511,
+        809
+      ],
+      "pivot_export": [
+        277,
+        32
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/COUNTER_FRONT.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "CUP_MILK_M01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_MILK_M01.png",
+      "art_version": "v0.1",
+      "sha256": "d4edb1780125a863f829242918689bef6c9ffa1f7f592805be3ca11813a6883c",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        45,
+        77,
+        144,
+        197
+      ],
+      "source_layer": "source/layers/CUP_MILK_M01_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_MILK_M01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        45,
+        77,
+        144,
+        197
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_MILK_M02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_MILK_M02.png",
+      "art_version": "v0.1",
+      "sha256": "ed176309f330fd804fd64ab6fcd900d949955de44a56b30eb8fcf665218b77d5",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        51,
+        91,
+        132,
+        196
+      ],
+      "source_layer": "source/layers/CUP_MILK_M02_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_MILK_M02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        51,
+        91,
+        132,
+        196
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_MILK_M03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_MILK_M03.png",
+      "art_version": "v0.1",
+      "sha256": "d94fd1635d76ac4b74c213602a750fc168a7698b26df0728c4a9750a4e5f328d",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        44,
+        87,
+        145,
+        207
+      ],
+      "source_layer": "source/layers/CUP_MILK_M03_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_MILK_M03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        44,
+        87,
+        145,
+        207
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TEA_T01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TEA_T01.png",
+      "art_version": "v0.1",
+      "sha256": "044bad18b6ac3f77e4ec6cb2a99b1652ce74c0f053bc0c45d673a0682542a00d",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "source_layer": "source/layers/CUP_TEA_T01_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TEA_T01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TEA_T02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TEA_T02.png",
+      "art_version": "v0.1",
+      "sha256": "20c9a444db0d26f5b89f98d3018228669aeaf3d320ca5ed5a629b994b8d78df0",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "source_layer": "source/layers/CUP_TEA_T02_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TEA_T02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TEA_T03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TEA_T03.png",
+      "art_version": "v0.1",
+      "sha256": "574cadd2f094fdaeccf2a245e858777c386e5aad5d69ecd0dec0cfb2881678e6",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "source_layer": "source/layers/CUP_TEA_T03_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TEA_T03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        35,
+        61,
+        148,
+        220
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P01.png",
+      "art_version": "v0.1",
+      "sha256": "eb01efff96c72af8f7bfeff34d378f59f2ed2791d21b13245fdaaca4b253baba",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        46,
+        173,
+        137,
+        208
+      ],
+      "source_layer": "source/layers/CUP_TOP_P01_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        46,
+        173,
+        137,
+        208
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P02.png",
+      "art_version": "v0.1",
+      "sha256": "7b7a9dfbc48d7410f04fee523a13098bdd02dc79463849417d6c111f43f3fa5d",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        46,
+        173,
+        137,
+        203
+      ],
+      "source_layer": "source/layers/CUP_TOP_P02_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        46,
+        173,
+        137,
+        203
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P03.png",
+      "art_version": "v0.1",
+      "sha256": "1331c6b8dccdce01e85eb75033ba90143a8bdf40db9666de547b62b59d4c10b3",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        46,
+        176,
+        137,
+        202
+      ],
+      "source_layer": "source/layers/CUP_TOP_P03_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        46,
+        176,
+        137,
+        202
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P04",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P04.png",
+      "art_version": "v0.1",
+      "sha256": "0db588fd67a0f24874bd05123f934a6af6221b3863456d453924da91048605d6",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        45,
+        171,
+        137,
+        211
+      ],
+      "source_layer": "source/layers/CUP_TOP_P04_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P04.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        45,
+        171,
+        137,
+        211
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P05",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P05.png",
+      "art_version": "v0.1",
+      "sha256": "c8e73da8ca1aee39ebe06998e549abc1ffba008e0fe93701234ce91bd6f32a1f",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        45,
+        173,
+        137,
+        207
+      ],
+      "source_layer": "source/layers/CUP_TOP_P05_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P05.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        45,
+        173,
+        137,
+        207
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUP_TOP_P06",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUP_TOP_P06.png",
+      "art_version": "v0.1",
+      "sha256": "2138fbecff440d7d78151ae9e3b8c9ea8d54d5b823f773fa635d87dbb457f0c5",
+      "dimensions": [
+        183,
+        233
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        45,
+        171,
+        137,
+        207
+      ],
+      "source_layer": "source/layers/CUP_TOP_P06_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUP_TOP_P06.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "canonical_canvas": [
+        183,
+        233
+      ],
+      "canonical_nonzero_bbox": [
+        45,
+        171,
+        137,
+        207
+      ],
+      "work_origin": [
+        418,
+        1093
+      ],
+      "order_rect": [
+        577,
+        326,
+        728,
+        506
+      ]
+    },
+    {
+      "asset_id": "CUSTOMER_GHOST",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/CUSTOMER_GHOST.png",
+      "art_version": "v0.1",
+      "sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+      "dimensions": [
+        332,
+        301
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        332,
+        301
+      ],
+      "source_layer": "source/layers/CUSTOMER_GHOST_full.png",
+      "source_bbox_full": [
+        309,
+        484,
+        641,
+        785
+      ],
+      "pivot_full": [
+        510,
+        780
+      ],
+      "pivot_export": [
+        201,
+        296
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/CUSTOMER_GHOST.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_M01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_M01.png",
+      "art_version": "v0.1",
+      "sha256": "012be89381332cd3c3cb7e4a82327130548be03b746630f4dd160274e00e9ebf",
+      "dimensions": [
+        130,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        130,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_M01_full.png",
+      "source_bbox_full": [
+        844,
+        564,
+        974,
+        609
+      ],
+      "pivot_full": [
+        908,
+        586
+      ],
+      "pivot_export": [
+        64,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_M01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_M02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_M02.png",
+      "art_version": "v0.1",
+      "sha256": "1aa82275267e5f8ab6ce53112cca976834fc60ae805737f6c687bf48e1fddd8b",
+      "dimensions": [
+        130,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        130,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_M02_full.png",
+      "source_bbox_full": [
+        844,
+        765,
+        974,
+        810
+      ],
+      "pivot_full": [
+        908,
+        787
+      ],
+      "pivot_export": [
+        64,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_M02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_M03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_M03.png",
+      "art_version": "v0.1",
+      "sha256": "ceae60872901340bf38fcc8bd9e4ccd698593f35c8cd706e37d7ac3d1c8f2f39",
+      "dimensions": [
+        130,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        130,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_M03_full.png",
+      "source_bbox_full": [
+        844,
+        970,
+        974,
+        1015
+      ],
+      "pivot_full": [
+        908,
+        992
+      ],
+      "pivot_export": [
+        64,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_M03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P01.png",
+      "art_version": "v0.1",
+      "sha256": "33cbcab25f95b73ce42f60a0399f17dd51dbf79383aa0ccbc135acabdeaa13df",
+      "dimensions": [
+        123,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P01_full.png",
+      "source_bbox_full": [
+        281,
+        921,
+        404,
+        966
+      ],
+      "pivot_full": [
+        342,
+        943
+      ],
+      "pivot_export": [
+        61,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P02.png",
+      "art_version": "v0.1",
+      "sha256": "92cbdae429e957f19a248d13299f41cafb3973be0fd5cc7e756e3766c5d14ff7",
+      "dimensions": [
+        123,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P02_full.png",
+      "source_bbox_full": [
+        455,
+        921,
+        578,
+        966
+      ],
+      "pivot_full": [
+        516,
+        943
+      ],
+      "pivot_export": [
+        61,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P03.png",
+      "art_version": "v0.1",
+      "sha256": "1b65e53e73171e4fe89074c317fc564e7523ed4951c55a73b8bafb2dbc0e516e",
+      "dimensions": [
+        123,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P03_full.png",
+      "source_bbox_full": [
+        629,
+        921,
+        752,
+        966
+      ],
+      "pivot_full": [
+        690,
+        943
+      ],
+      "pivot_export": [
+        61,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P04",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P04.png",
+      "art_version": "v0.1",
+      "sha256": "dcc8aac5be199de71a5becd8a6b94d8874a32122ff254cd37ca15389fb5bb719",
+      "dimensions": [
+        123,
+        44
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        44
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P04_full.png",
+      "source_bbox_full": [
+        281,
+        1040,
+        404,
+        1084
+      ],
+      "pivot_full": [
+        342,
+        1061
+      ],
+      "pivot_export": [
+        61,
+        21
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P04.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P05",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P05.png",
+      "art_version": "v0.1",
+      "sha256": "820f7ff1dbd861da16493cb080e751a5435cc343327db950d1f48159569e0d9a",
+      "dimensions": [
+        123,
+        44
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        44
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P05_full.png",
+      "source_bbox_full": [
+        455,
+        1040,
+        578,
+        1084
+      ],
+      "pivot_full": [
+        516,
+        1061
+      ],
+      "pivot_export": [
+        61,
+        21
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P05.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_P06",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_P06.png",
+      "art_version": "v0.1",
+      "sha256": "6299a4effa94f917153faa8e7e1565307e094ff99407ac387bdf65f24e7f0bed",
+      "dimensions": [
+        123,
+        44
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        123,
+        44
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_P06_full.png",
+      "source_bbox_full": [
+        629,
+        1040,
+        752,
+        1084
+      ],
+      "pivot_full": [
+        690,
+        1061
+      ],
+      "pivot_export": [
+        61,
+        21
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_P06.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_T01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_T01.png",
+      "art_version": "v0.1",
+      "sha256": "02656179b46a3d563a33370ce5a5c4a75a825c9508b334fa208269a1066d3613",
+      "dimensions": [
+        131,
+        44
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        131,
+        44
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_T01_full.png",
+      "source_bbox_full": [
+        64,
+        564,
+        195,
+        608
+      ],
+      "pivot_full": [
+        129,
+        585
+      ],
+      "pivot_export": [
+        65,
+        21
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_T01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_T02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_T02.png",
+      "art_version": "v0.1",
+      "sha256": "5e4cfdd498fd2ba2fb54c36565eae6a9b3bdea08389f4848ee9c5bb258974902",
+      "dimensions": [
+        131,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        131,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_T02_full.png",
+      "source_bbox_full": [
+        64,
+        765,
+        195,
+        810
+      ],
+      "pivot_full": [
+        129,
+        787
+      ],
+      "pivot_export": [
+        65,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_T02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LABEL_PLATE_T03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LABEL_PLATE_T03.png",
+      "art_version": "v0.1",
+      "sha256": "982ac720800793ad55f7f0b62a9c8528483f7049307daeeacd454ad7cc6bb2a3",
+      "dimensions": [
+        131,
+        45
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        131,
+        45
+      ],
+      "source_layer": "source/layers/LABEL_PLATE_T03_full.png",
+      "source_bbox_full": [
+        64,
+        970,
+        195,
+        1015
+      ],
+      "pivot_full": [
+        129,
+        992
+      ],
+      "pivot_export": [
+        65,
+        22
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LABEL_PLATE_T03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "LOCK_MILK",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LOCK_MILK.png",
+      "art_version": "v0.1",
+      "sha256": "6daad5cbfd25dbcf54718409fb8288a32862f9199c306fc1908dc14368bb88fd",
+      "dimensions": [
+        142,
+        183
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        5,
+        5,
+        137,
+        178
+      ],
+      "source_layer": "source/layers/LOCK_MILK_BANK_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LOCK_MILK.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        837,
+        427
+      ]
+    },
+    {
+      "asset_id": "LOCK_TEA",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LOCK_TEA.png",
+      "art_version": "v0.1",
+      "sha256": "a32b62ba0cc1fb5b75748d97269a05b901edc04c835ab5031df76ff27b0b1f50",
+      "dimensions": [
+        163,
+        183
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        5,
+        5,
+        158,
+        178
+      ],
+      "source_layer": "source/layers/LOCK_TEA_BANK_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LOCK_TEA.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        50,
+        427
+      ]
+    },
+    {
+      "asset_id": "LOCK_TOP",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/LOCK_TOP.png",
+      "art_version": "v0.1",
+      "sha256": "660cd105e31631e5525fad8466345a10001acdd9c19c90c811c68a93eb3d903d",
+      "dimensions": [
+        168,
+        121
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        5,
+        5,
+        163,
+        116
+      ],
+      "source_layer": "source/layers/LOCK_TOP_BANK_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/LOCK_TOP.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        256,
+        844
+      ]
+    },
+    {
+      "asset_id": "ORDER_BUBBLE_EMPTY",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/ORDER_BUBBLE_EMPTY.png",
+      "art_version": "v0.1",
+      "sha256": "7f4054f0d226c001698a02bf214c5223b2206b7db073e7f86ac500f57b02ca1c",
+      "dimensions": [
+        375,
+        235
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        375,
+        235
+      ],
+      "source_layer": "source/layers/ORDER_BUBBLE_EMPTY_full.png",
+      "source_bbox_full": [
+        467,
+        288,
+        842,
+        523
+      ],
+      "pivot_full": [
+        655,
+        489
+      ],
+      "pivot_export": [
+        188,
+        201
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/ORDER_BUBBLE_EMPTY.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "ORDER_CUP_BACK",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/ORDER_CUP_BACK.png",
+      "art_version": "v0.1",
+      "sha256": "600dc111f369501cd71f400b2701366fbfc72fbf62d6fceafb9ff5859015098e",
+      "dimensions": [
+        150,
+        170
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        150,
+        170
+      ],
+      "source_layer": "source/layers/ORDER_CUP_BACK_full.png",
+      "source_bbox_full": [
+        578,
+        336,
+        728,
+        506
+      ],
+      "pivot_full": [
+        653,
+        505
+      ],
+      "pivot_export": [
+        75,
+        169
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/ORDER_CUP_BACK.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "ORDER_CUP_FRONT",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/ORDER_CUP_FRONT.png",
+      "art_version": "v0.1",
+      "sha256": "a854d25cc65affd947fcbd89390584de8ea33e4163867b433ef4a1e9e25fb7ac",
+      "dimensions": [
+        151,
+        180
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        151,
+        180
+      ],
+      "source_layer": "source/layers/ORDER_CUP_FRONT_full.png",
+      "source_bbox_full": [
+        577,
+        326,
+        728,
+        506
+      ],
+      "pivot_full": [
+        653,
+        505
+      ],
+      "pivot_export": [
+        76,
+        179
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/ORDER_CUP_FRONT.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "ORDER_STRAW",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/ORDER_STRAW.png",
+      "art_version": "v0.1",
+      "sha256": "dc2ea9ee8d1e3081e15e079b45cbc0ee710da318c193170b482a2fe23e22274e",
+      "dimensions": [
+        31,
+        86
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        31,
+        86
+      ],
+      "source_layer": "source/layers/ORDER_STRAW_full.png",
+      "source_bbox_full": [
+        683,
+        301,
+        714,
+        387
+      ],
+      "pivot_full": [
+        700,
+        375
+      ],
+      "pivot_export": [
+        17,
+        74
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/ORDER_STRAW.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "SELECT_MILK",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/SELECT_MILK.png",
+      "art_version": "v0.1",
+      "sha256": "e449c60a8d08d8a1db2220a040441d74e5dbf09d98bddaf66b0d2c065d51e5fc",
+      "dimensions": [
+        142,
+        183
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        142,
+        183
+      ],
+      "source_layer": "source/layers/SELECT_MILK_SAMPLE_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/SELECT_MILK.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        837,
+        427
+      ]
+    },
+    {
+      "asset_id": "SELECT_TEA",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/SELECT_TEA.png",
+      "art_version": "v0.1",
+      "sha256": "5f6f1364dfb3b1cfd2378f8821843d6244e3d9cbc91bdb4cbddd6ee87a4a95d7",
+      "dimensions": [
+        163,
+        183
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        163,
+        183
+      ],
+      "source_layer": "source/layers/SELECT_TEA_SAMPLE_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/SELECT_TEA.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        50,
+        427
+      ]
+    },
+    {
+      "asset_id": "SELECT_TOP",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/SELECT_TOP.png",
+      "art_version": "v0.1",
+      "sha256": "659e054b2fdc8024daa13e545c22ac2dc89682b1fe51d3a87fa27fd542e96303",
+      "dimensions": [
+        168,
+        121
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        168,
+        121
+      ],
+      "source_layer": "source/layers/SELECT_TOP_SAMPLE_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/SELECT_TOP.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null,
+      "class_reusable_origin": [
+        256,
+        844
+      ]
+    },
+    {
+      "asset_id": "STATIC_BARE",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/STATIC_BARE.png",
+      "art_version": "v0.1",
+      "sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "alpha_bbox": null,
+      "source_layer": "source/layers/STATIC_BARE_full.png",
+      "source_bbox_full": null,
+      "pivot_full": null,
+      "pivot_export": null,
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/STATIC_BARE.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_M01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_M01.png",
+      "art_version": "v0.1",
+      "sha256": "aa65b8ceed2ffae038e7a427ab3954ffc79d0beca3d6aacaa213bc974ca7d67f",
+      "dimensions": [
+        111,
+        134
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        111,
+        134
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_M01_full.png",
+      "source_bbox_full": [
+        858,
+        435,
+        969,
+        569
+      ],
+      "pivot_full": [
+        908,
+        565
+      ],
+      "pivot_export": [
+        50,
+        130
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_M01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_M02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_M02.png",
+      "art_version": "v0.1",
+      "sha256": "b980ca1f690863073f38f1b2f9a949a942d189a84900116addf8cfe826ec75e1",
+      "dimensions": [
+        130,
+        131
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        130,
+        131
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_M02_full.png",
+      "source_bbox_full": [
+        850,
+        637,
+        980,
+        768
+      ],
+      "pivot_full": [
+        907,
+        763
+      ],
+      "pivot_export": [
+        57,
+        126
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_M02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_M03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_M03.png",
+      "art_version": "v0.1",
+      "sha256": "2d10977cd7956fec3588da09fee124bf2e6f92fc13b84fab4458d0873178980a",
+      "dimensions": [
+        132,
+        139
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        132,
+        139
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_M03_full.png",
+      "source_bbox_full": [
+        850,
+        837,
+        982,
+        976
+      ],
+      "pivot_full": [
+        907,
+        971
+      ],
+      "pivot_export": [
+        57,
+        134
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_M03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P01.png",
+      "art_version": "v0.1",
+      "sha256": "06139c76c41d259dc700715bd016be14caabfd068139232ba4f02fe187708520",
+      "dimensions": [
+        139,
+        72
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        72
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P01_full.png",
+      "source_bbox_full": [
+        273,
+        856,
+        412,
+        928
+      ],
+      "pivot_full": [
+        343,
+        923
+      ],
+      "pivot_export": [
+        70,
+        67
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P02.png",
+      "art_version": "v0.1",
+      "sha256": "4d44f1b0db62e462fe3482a33d7e82c963b4c795477fcf905abc2706d460f706",
+      "dimensions": [
+        139,
+        69
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        69
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P02_full.png",
+      "source_bbox_full": [
+        447,
+        859,
+        586,
+        928
+      ],
+      "pivot_full": [
+        517,
+        923
+      ],
+      "pivot_export": [
+        70,
+        64
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P03.png",
+      "art_version": "v0.1",
+      "sha256": "67d240583371631d7e7c965b540226a194bf1492e00236dbdf0609e4e7585f6f",
+      "dimensions": [
+        139,
+        64
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        64
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P03_full.png",
+      "source_bbox_full": [
+        621,
+        864,
+        760,
+        928
+      ],
+      "pivot_full": [
+        691,
+        923
+      ],
+      "pivot_export": [
+        70,
+        59
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P04",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P04.png",
+      "art_version": "v0.1",
+      "sha256": "1658e6e14483f72a08e07a88bd63b3b4eb814bf93b7282c5e5a10bcad8bc0b25",
+      "dimensions": [
+        139,
+        67
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        67
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P04_full.png",
+      "source_bbox_full": [
+        273,
+        976,
+        412,
+        1043
+      ],
+      "pivot_full": [
+        343,
+        1040
+      ],
+      "pivot_export": [
+        70,
+        64
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P04.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P05",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P05.png",
+      "art_version": "v0.1",
+      "sha256": "91e4edca966455cf08f8454f319df2adedc73a0be9254a5f26703d88bb6504c9",
+      "dimensions": [
+        139,
+        62
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        62
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P05_full.png",
+      "source_bbox_full": [
+        447,
+        981,
+        586,
+        1043
+      ],
+      "pivot_full": [
+        517,
+        1040
+      ],
+      "pivot_export": [
+        70,
+        59
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P05.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_P06",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_P06.png",
+      "art_version": "v0.1",
+      "sha256": "808b61bf289e8ff395916563e55018d061544598f7a34b531e33d87c17a193f4",
+      "dimensions": [
+        139,
+        66
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        139,
+        66
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_P06_full.png",
+      "source_bbox_full": [
+        621,
+        977,
+        760,
+        1043
+      ],
+      "pivot_full": [
+        691,
+        1040
+      ],
+      "pivot_export": [
+        70,
+        63
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_P06.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_T01",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_T01.png",
+      "art_version": "v0.1",
+      "sha256": "aa9ed04fb4e9fe9d2a2c230db2441375e47c0b01f28d1dd7add1a05594880115",
+      "dimensions": [
+        154,
+        141
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        154,
+        141
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_T01_full.png",
+      "source_bbox_full": [
+        50,
+        426,
+        204,
+        567
+      ],
+      "pivot_full": [
+        132,
+        561
+      ],
+      "pivot_export": [
+        82,
+        135
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_T01.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_T02",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_T02.png",
+      "art_version": "v0.1",
+      "sha256": "f4a55440c42b126bb99b803b285f9c96299f740fdb5b1da9b57f9a2cd6bbeb75",
+      "dimensions": [
+        154,
+        141
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        154,
+        141
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_T02_full.png",
+      "source_bbox_full": [
+        55,
+        630,
+        209,
+        771
+      ],
+      "pivot_full": [
+        132,
+        765
+      ],
+      "pivot_export": [
+        77,
+        135
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_T02.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "U05_B_T03",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/U05_B_T03.png",
+      "art_version": "v0.1",
+      "sha256": "586486369ec8caa97be94cf502ee2b61c34a1b17b0da208fde58e5c80b81f838",
+      "dimensions": [
+        154,
+        141
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        154,
+        141
+      ],
+      "source_layer": "source/layers/OBJ_U05_B_T03_full.png",
+      "source_bbox_full": [
+        55,
+        834,
+        209,
+        975
+      ],
+      "pivot_full": [
+        132,
+        969
+      ],
+      "pivot_export": [
+        77,
+        135
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/U05_B_T03.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "WORK_CUP_BACK",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/WORK_CUP_BACK.png",
+      "art_version": "v0.1",
+      "sha256": "2321abf6915e4623f0b7f7a62cebd28694305b69d2db7f1dade09a6c84914e7b",
+      "dimensions": [
+        180,
+        218
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        180,
+        218
+      ],
+      "source_layer": "source/layers/WORK_CUP_BACK_full.png",
+      "source_bbox_full": [
+        420,
+        1108,
+        600,
+        1326
+      ],
+      "pivot_full": [
+        510,
+        1321
+      ],
+      "pivot_export": [
+        90,
+        213
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/WORK_CUP_BACK.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    },
+    {
+      "asset_id": "WORK_CUP_FRONT",
+      "art_path": "deliverables/art/U05-B-WORKSPACE-ASSETS-20261014/v0.1/exports/WORK_CUP_FRONT.png",
+      "art_version": "v0.1",
+      "sha256": "e20f9937693c98a6c81cfb4e120197f91f6f8f4d44c70bb6200b85b41a7ee66c",
+      "dimensions": [
+        189,
+        238
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        189,
+        238
+      ],
+      "source_layer": "source/layers/WORK_CUP_FRONT_full.png",
+      "source_bbox_full": [
+        415,
+        1090,
+        604,
+        1328
+      ],
+      "pivot_full": [
+        510,
+        1321
+      ],
+      "pivot_export": [
+        95,
+        231
+      ],
+      "client_path_plan": "apps/client/assets/units/shops/milk_tea/textures/u05_b/WORK_CUP_FRONT.png",
+      "client_import_status": "PLANNED",
+      "client_uuid": null
+    }
+  ],
+  "review": {
+    "reconstructed.png": {
+      "path": "review/reconstructed.png",
+      "sha256": "b338fa944677680e235fc0e48d2a62dfe33a0a4dd048e9defc378c1b9e2d41f6"
+    },
+    "comparison.png": {
+      "path": "review/comparison.png",
+      "sha256": "4beb1a5354bfeac9a9bbab8c4c2d0ccdb187a75d359d736c265fa09b59923465"
+    },
+    "difference.png": {
+      "path": "review/difference.png",
+      "sha256": "2f027093695274be0c1cc8792cea86c25e8ff1ee5f33eccc3634a8da953d3caa"
+    },
+    "resource_sheet.png": {
+      "path": "review/resource_sheet.png",
+      "sha256": "4f70ddfad922f6ff293862a76f036071c945b6b7e718c5c811986cc5b0ff0a13"
+    },
+    "composition_variants.png": {
+      "path": "review/composition_variants.png",
+      "sha256": "96a8630c7ccc85bcba776999a898366405e1a118975d432fc1759135db0ac1ee"
+    },
+    "psd_skill_preview.png": {
+      "path": "review/psd_skill_preview.png",
+      "sha256": "b338fa944677680e235fc0e48d2a62dfe33a0a4dd048e9defc378c1b9e2d41f6"
+    }
+  },
+  "known_limitations": [
+    "Single flat RGB concept has no hidden pixels behind opaque objects. Signed local inpainting fills only exposed holes.",
+    "Milk vessel interior was semi-transparent over shelf; exported boundary uses deterministic object mask and local tint/edge repair, so concealed optical background cannot be mathematically recovered.",
+    "Glyphs in concept source are not typography authority; licensed text is a separate sample layer and runtime must render text dynamically."
+  ]
+}
