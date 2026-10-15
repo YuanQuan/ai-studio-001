@@ -2,7 +2,7 @@ import { Dimension } from './milk_tea_state';
 
 export type PresentationResult = 'arrival' | 'correct' | 'won' | 'wrong' | 'expired' | 'exited';
 export type PresentationPhase = 'synthesis' | 'happy' | 'disappointed' | 'depart' | 'arrive' | 'complete';
-export type FacePose = 'neutral' | 'blink' | 'happy' | 'disappointed';
+export type FacePose = 'neutral' | 'squash' | 'blink' | 'expand_mid' | 'happy' | 'disappointed';
 export type IngredientSnapshot = Partial<Record<Dimension, string>>;
 
 /** Immutable display facts captured before the business Run is mutated. */
@@ -102,7 +102,7 @@ export function samplePresentation(
   const phaseElapsed = Math.max(0, elapsed - start);
   sample.phase = phase;
   sample.face = phase === 'happy' || phase === 'disappointed'
-    ? (phaseElapsed < 80 ? 'neutral' : phaseElapsed < 150 ? 'blink' : face) : face;
+    ? (phaseElapsed < 80 ? 'squash' : phaseElapsed < 150 ? 'blink' : phaseElapsed < 225 ? 'expand_mid' : face) : face;
   sample.faceProgress = phase === 'happy' || phase === 'disappointed' ? clamp01((phaseElapsed - 150) / 150) : 1;
   sample.phaseStartedAtMs = transaction.submittedAtMs + start;
   sample.phaseDurationMs = duration;

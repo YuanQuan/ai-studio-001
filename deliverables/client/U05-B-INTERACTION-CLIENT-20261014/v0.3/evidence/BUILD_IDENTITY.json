@@ -1,0 +1,63 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "version": "v0.3",
+  "change_summary": "只在正确/错误 presentation transaction 结束时清除短状态文案并恢复默认颜色；没有改业务、时序、资源或其它交互。",
+  "source_hashes": {
+    "before_apps/client/assets/labs/u05/milk_tea_lab.ts": "c462558edb5034de3ad56868091a0d4af7093e65102a88890df0bed4ba842068",
+    "after_apps/client/assets/labs/u05/milk_tea_lab.ts": "1e9228cd3b7925ba2c43cad12c23cf9c2da9ef07cef1f915ef31dbe4dc00b41c",
+    "apps/client/assets/labs/u05/milk_tea_state.ts": "bb981d662b8d334556b2418e7e837e787773742ae60aa2a2e31a539f2f43aea6",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts": "529a711ca011f0cc3232dd48d7148c1dfd5d23d8901e16396acbfb0706454cae",
+    "compiled_web_assets/main/index.js": "520c9cc7b62f5d8fb248d238e7334a3b577d1e09b297a0de1a63487f6187ab7f"
+  },
+  "engine": "Cocos Creator 3.8.8",
+  "isolated_project": "/private/tmp/u05-interaction-client-v03-build-src/client",
+  "build_command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u05-interaction-client-v03-build-src/client --build 'platform=web-mobile;debug=true;configPath=/private/tmp/u05-interaction-client-v03-build-src/client/profiles/v2/packages/web-mobile.json'",
+  "output_path": "/private/tmp/u05-interaction-client-v03-output/web-mobile",
+  "output_name": "u05-interaction-client-v03",
+  "output_file_count": 769,
+  "start_scene_uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+  "build_started_utc": "2026-10-15T09:01:09.892320+00:00",
+  "build_ended_utc": "2026-10-15T09:01:44.194452+00:00",
+  "build_process_exit_code": 36,
+  "build_result": "Creator log ended with build Task (web-mobile) Finished. This Creator version returned exit code 36; preserve exit code and full log.",
+  "http": {
+    "pid": 95875,
+    "host": "127.0.0.1",
+    "port": 8879,
+    "url": "http://127.0.0.1:8879/",
+    "root": "/private/tmp/u05-interaction-client-v03-output/web-mobile",
+    "http_status": 200,
+    "started_utc": "2026-10-15T09:02:18Z"
+  },
+  "resource_gate": {
+    "approval": "tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json",
+    "status": "USER_APPROVED",
+    "asset_record": "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.2/evidence/RESOURCE_IMPORT_RECORD.json",
+    "new_asset_count": 9,
+    "assets_reused_from_approved_v0.2_build_copy": true
+  },
+  "typescript_check": "PASS",
+  "static_compiled_cleanup_check": "PASS",
+  "browser_runtime_validation": {
+    "status": "PASS_FOR_CORRECT_WRONG_STATUS_LIFECYCLE",
+    "browser": "Codex in-app browser",
+    "url": "http://127.0.0.1:8879/",
+    "tests": [
+      {
+        "viewport": "390x844 portrait",
+        "flow": "Start U05, choose ingredients and submit a correct cup; stage advances 1/3 to 2/3 and the temporary status message clears.",
+        "screenshot": "deliverables/master/U05-B-INTERACTION-RUNTIME-20261015/v0.1/evidence/next_order_cleared_8879.png"
+      },
+      {
+        "viewport": "790x950",
+        "flow": "Use 幽灯茶 instead of 月雾茶 and submit wrong cup; remains 1/3, cup clears, customer and target remain, error message clears, retry is available.",
+        "screenshot": "deliverables/master/U05-B-INTERACTION-RUNTIME-20261015/v0.1/evidence/wrong_cleared_8879.png"
+      }
+    ],
+    "console_errors": [],
+    "console_warnings": [],
+    "not_tested": ["frame-by-frame happy/disappointed animation and full departure", "timeout", "exit", "full completion at every difficulty tier"]
+  },
+  "previous_build_identity": "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.2/evidence/BUILD_IDENTITY.json (8878; preserved unchanged)",
+  "historical_landing_build_8876": "Separate U05 frontend task build; not modified."
+}

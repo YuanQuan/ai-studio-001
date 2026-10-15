@@ -1,0 +1,38 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "owner": "client",
+  "summary": "修复正确/错误反馈文案残留，完成隔离Creator构建，并由Root在内置浏览器验证390×844正确推进与790×950错单重做路径；控制台错误/警告为空。",
+  "artifacts": [
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/evidence/BUILD_IDENTITY.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/evidence/creator-build.log",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/evidence/creator-build-start.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/evidence/creator-build-result.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "正确和错误短反馈在各自表现阶段结束后清除，业务语义和动效时序保持不变",
+      "result": "PASS",
+      "evidence": "实现仅在finishPresentation的correct/wrong分支清除status。Root在390×844正确单由1/3推进2/3后确认提示已消失；790×950错误单保持1/3、杯清空、同客同目标且错误提示消失可重做。业务milk_tea_state.ts SHA及presentation时序未变。截图见master/U05-B-INTERACTION-RUNTIME-20261015/v0.1/evidence/next_order_cleared_8879.png和wrong_cleared_8879.png。"
+    },
+    {
+      "criterion": "使用独立Creator输出和独立HTTP身份验证，不覆盖已测版本",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8新输出位于/private/tmp/u05-interaction-client-v03-output/web-mobile，服务127.0.0.1:8879 HTTP 200。旧v0.2/8878构建未改。构建日志Finished且保留退出码36。"
+    },
+    {
+      "criterion": "以内置浏览器复测正确/错误反馈生命周期及控制台状态",
+      "result": "PASS",
+      "evidence": "Root使用Codex内置浏览器实际操作8879；正确推进与错单可重做均符合预期，报告浏览器errors/warnings为空。视觉逐帧表情/离场及其它未测场景仍单独记录为未验证。"
+    }
+  ],
+  "assumptions": [
+    "该短提示仅作为对应正确/错误事务的临时反馈，随该事务结束清除；不在后续订单期间重复呈现。"
+  ],
+  "risks": [
+    "Creator版本返回退出码36，尽管日志明确记录构建任务Finished；保留完整日志。",
+    "超时/退出流程、逐帧表情/完整离场和全部难度档通关仍未完成；该单元示例不构成正式QA。",
+    "Gate2历史预算FAIL保留为FAIL_HISTORICAL_VIOLATION_NOT_WAIVED。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

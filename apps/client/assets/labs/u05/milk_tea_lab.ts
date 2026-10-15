@@ -10,7 +10,7 @@ import {
 import { U05BitmapText } from './u05_bitmap_text';
 import { U05NineSlicePlate } from './u05_nine_slice_plate';
 import {
-  CupSnapshot, PresentationPhase, PresentationResult, PresentationSample, PresentationTransaction,
+  CupSnapshot, FacePose, PresentationPhase, PresentationResult, PresentationSample, PresentationTransaction,
   createPresentationTransaction, freezeCupSnapshot, interruptPresentationForTimeout, samplePresentation,
   shouldLockInput,
 } from './u05_interaction_presentation';
@@ -25,12 +25,15 @@ const DEEP_BROWN = new Color(94, 55, 33);
 const ROOF_TEXT = new Color(255, 234, 198);
 const ASSET_ROOT = 'u05_milk_tea/u05_b/';
 const ASSET_SIZES: Record<string, [number, number]> = {
-  STATIC_BARE: [1024, 1536],
+  STATIC_BARE: [1024, 1536], STATIC_BARE_PATCH04: [1024, 1536],
   ORDER_BUBBLE_EMPTY: [375, 235], ORDER_CUP_BACK: [150, 170], ORDER_CUP_FRONT: [151, 180], ORDER_STRAW: [31, 86],
   WORK_CUP_BACK: [180, 218], WORK_CUP_FRONT: [189, 238], BTN_RECIPE_BASE: [323, 105], BTN_RECIPE_ICON: [58, 58],
   BTN_UNDO_BASE: [222, 105], BTN_SERVE_BASE: [362, 105], BTN_SERVE_ICON: [50, 64],
   BTN_UNDO_ICON: [47, 52], COUNTER_FRONT: [556, 42],
-  CUSTOMER_GHOST: [332, 301], SELECT_TEA: [163, 183], SELECT_MILK: [142, 183], SELECT_TOP: [168, 121],
+  CUSTOMER_BODY: [332, 301],
+  FACE_NEUTRAL: [332, 301], FACE_BLINK: [332, 301], FACE_HAPPY: [332, 301], FACE_DISAPPOINTED: [332, 301],
+  FACE_SQUASH: [332, 301], FACE_EXPAND_MID: [332, 301], BTN_CONFIRM_TEXT: [236, 80],
+  SELECT_TEA: [163, 183], SELECT_MILK: [142, 183], SELECT_TOP: [168, 121],
   U05_B_T01: [154, 141], U05_B_T02: [154, 141], U05_B_T03: [154, 141],
   U05_B_M01: [111, 134], U05_B_M02: [130, 131], U05_B_M03: [132, 139],
   U05_B_P01: [139, 72], U05_B_P02: [139, 69], U05_B_P03: [139, 64],
@@ -111,9 +114,10 @@ export class U05MilkTeaLab extends Component {
     bubble: Node | null;
     movingIngredients: Partial<Record<Dimension, Node>>;
     cupContents: Partial<Record<Dimension, Node>>;
-    facePose: string;
+    facePose: FacePose;
     faceProgress: number;
     phase: PresentationPhase | null;
+    faces: Partial<Record<FacePose, Node>>;
   } | null = null;
   private interactionMovingIngredients: Partial<Record<Dimension, Node>> = {};
   private interactionCupContents: Partial<Record<Dimension, Node>> = {};
@@ -234,7 +238,7 @@ export class U05MilkTeaLab extends Component {
     const [width, height] = size ?? ASSET_SIZES[id] ?? [120, 100];
     const transform = node.addComponent(UITransform); transform.setContentSize(width * scale, height * scale);
     const sprite = node.addComponent(Sprite); sprite.sizeMode = Sprite.SizeMode.CUSTOM;
-    if (id.startsWith('CUP_')) sprite.trim = false;
+    if (id.startsWith('CUP_') || id.startsWith('FACE_') || id === 'CUSTOMER_BODY') sprite.trim = false;
     this.loadFrame(id, frame => { if (node.isValid) sprite.spriteFrame = frame; });
     return node;
   }
@@ -316,9 +320,18 @@ export class U05MilkTeaLab extends Component {
     const iconPos = this.sourcePos(iconCenter[0], iconCenter[1]);
     const iconNode = this.showAsset(node, icon, { x: iconPos.x - pos.x, y: iconPos.y - pos.y });
     iconNode.setScale(1, 1, 1);
-    const labelColor = enabled ? DEEP_BROWN : new Color(136, 112, 90);
-    const text = this.text(node, label, 26, 0, 26, labelColor, w * .9, h * .74);
-    text.node.setPosition((sourceCenter[0] - iconCenter[0]) * 720 / 1024 / 2, 0);
+    if (asset === 'BTN_SERVE_BASE') {
+      const confirmText = this.showAsset(node, 'BTN_CONFIRM_TEXT', {
+        x: (sourceCenter[0] - iconCenter[0]) * 720 / 1024 / 2, y: 0,
+      }, ASSET_SIZES.BTN_CONFIRM_TEXT);
+      if (!enabled) {
+        const textSprite = confirmText.getComponent(Sprite); if (textSprite) textSprite.color = new Color(188, 188, 188);
+      }
+    } else {
+      const labelColor = enabled ? DEEP_BROWN : new Color(136, 112, 90);
+      const text = this.text(node, label, 26, 0, 26, labelColor, w * .9, h * .74);
+      text.node.setPosition((sourceCenter[0] - iconCenter[0]) * 720 / 1024 / 2, 0);
+    }
     if (enabled) {
       const hit = new Node(`ButtonHit_${label}`); parent.addChild(hit);
       hit.setPosition(pos.x, pos.y + Math.max(0, this.minTouchSize() - h * 720 / 1024) / 2);
@@ -367,7 +380,7 @@ export class U05MilkTeaLab extends Component {
     const size = view.getVisibleSize();
     const fit = Math.min((size.width - 16) / 720, (size.height - 16) / 1080, 1);
     this.root.setScale(fit, fit, 1);
-    this.showAsset(this.root, 'STATIC_BARE', { x: 0, y: 0 }, [1024, 1536], 720 / 1024);
+    this.showAsset(this.root, 'STATIC_BARE_PATCH04', { x: 0, y: 0 }, [1024, 1536], 720 / 1024);
     if (!this.config) {
       this.text(this.root, this.status || '正在载入奶茶配置…', 0, 0, 21, this.statusColor, 620, 90);
       if (this.status.startsWith('配置加载失败')) this.button(this.root, '重试加载', 0, -80, 170, 48, () => this.loadConfig());
@@ -403,7 +416,7 @@ export class U05MilkTeaLab extends Component {
       654.5, 376, 27, DEEP_BROWN, 340, 42);
     this.sourceText(`茶 ${stage.tea_options}/3  奶 ${stage.milk_options}/3  小料 ${stage.topping_options}/6`,
       654.5, 435, 27, DEEP_BROWN, 340, 42);
-    this.showAsset(this.root!, 'CUSTOMER_GHOST', this.sourcePos(475, 634.5));
+    this.renderCustomerWindow(309, 'neutral');
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderIngredientGallery(stage);
     this.showCupComposition(this.root!, this.sourcePos(509.5, 1209), 1, null, false);
@@ -459,7 +472,7 @@ export class U05MilkTeaLab extends Component {
     this.renderSourceHeader(run, remainingSeconds(run, nowMs), visualOrderIndex);
     this.renderIngredientGallery(run.stage, false, !locked);
     const customerX = sample?.customerX ?? (run.status === 'won' || run.status === 'failed' ? -72 : 309);
-    const customer = this.renderCustomerWindow(customerX);
+    const customerRig = this.renderCustomerWindow(customerX, sample?.face ?? 'neutral');
     this.interactionMovingIngredients = {}; this.interactionCupContents = {};
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderToppingCategoryLabel();
@@ -469,7 +482,7 @@ export class U05MilkTeaLab extends Component {
       this.renderInteractionWorkCup(this.presentation.snapshot);
     }
     this.presentationVisual = {
-      customer, bubble, movingIngredients: this.interactionMovingIngredients,
+      customer: customerRig.customer, faces: customerRig.faces, bubble, movingIngredients: this.interactionMovingIngredients,
       cupContents: this.interactionCupContents, facePose: sample?.face ?? 'neutral',
       faceProgress: sample?.faceProgress ?? 1, phase: sample?.phase ?? null,
     };
@@ -492,16 +505,26 @@ export class U05MilkTeaLab extends Component {
     this.timerLabel = this.sourceText(this.clockText(seconds), 881, 96, 34,
       seconds !== null && seconds < 20 ? GOLD : ROOF_TEXT, 124, 50);
   }
-  private renderCustomerWindow(left: number): Node {
+  private renderCustomerWindow(left: number, initialFace: FacePose = 'neutral'): { customer: Node; faces: Partial<Record<FacePose, Node>> } {
     const sourceScale = 720 / 1024;
     const centerX = 505; const centerY = 530.5;
     const window = new Node('CustomerWindow'); this.root!.addChild(window);
     window.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
     window.addComponent(UITransform).setContentSize(490 * sourceScale, 505 * sourceScale);
     const mask = window.addComponent(Mask); mask.type = Mask.Type.GRAPHICS_RECT;
-    const customer = this.showAsset(window, 'CUSTOMER_GHOST', { x: 0, y: 0 }, [332, 301]);
+    const customer = new Node('CustomerRig'); window.addChild(customer);
     customer.setPosition(((left + 166) - centerX) * sourceScale, (centerY - 634.5) * sourceScale);
-    return customer;
+    this.showAsset(customer, 'CUSTOMER_BODY', { x: 0, y: 0 }, [332, 301]);
+    const faces: Partial<Record<FacePose, Node>> = {};
+    const faceAssets: Record<FacePose, string> = {
+      neutral: 'FACE_NEUTRAL', squash: 'FACE_SQUASH', blink: 'FACE_BLINK', expand_mid: 'FACE_EXPAND_MID',
+      happy: 'FACE_HAPPY', disappointed: 'FACE_DISAPPOINTED',
+    };
+    (Object.keys(faceAssets) as FacePose[]).forEach(pose => {
+      const face = this.showAsset(customer, faceAssets[pose], { x: 0, y: 0 }, [332, 301]);
+      face.active = pose === initialFace; faces[pose] = face;
+    });
+    return { customer, faces };
   }
   private renderTargetCup(recipe: Run['orders'][number], bubbleVisible: boolean): Node {
     const group = new Node('OrderPresentation'); this.root!.addChild(group); group.active = bubbleVisible;
@@ -563,8 +586,13 @@ export class U05MilkTeaLab extends Component {
   private applyPresentationSample(sample: PresentationSample, nowMs: number): void {
     const visual = this.presentationVisual;
     if (!visual || !this.presentation) return;
-    visual.facePose = sample.face; visual.faceProgress = sample.faceProgress; visual.phase = sample.phase;
-    // Actual face resources are intentionally bound only after their Gate2 approval.
+    if (visual.facePose !== sample.face) {
+      (Object.keys(visual.faces) as FacePose[]).forEach(pose => {
+        const face = visual.faces[pose]; if (face?.isValid) face.active = pose === sample.face;
+      });
+      visual.facePose = sample.face;
+    }
+    visual.faceProgress = sample.faceProgress; visual.phase = sample.phase;
     if (visual.bubble?.isValid) visual.bubble.active = sample.bubbleVisible;
     const customer = visual.customer;
     if (customer?.isValid && customer.parent?.isValid) {
@@ -618,6 +646,9 @@ export class U05MilkTeaLab extends Component {
   private finishPresentation(): void {
     const transaction = this.presentation; if (!transaction) return;
     this.cancelPresentation();
+    if (transaction.result === 'correct' || transaction.result === 'wrong') {
+      this.status = ''; this.statusColor = TEXT;
+    }
     if (transaction.result === 'exited') {
       this.run = null; this.exitConfirm = false; this.recipeOpen = false; this.status = ''; this.dirty = true; return;
     }

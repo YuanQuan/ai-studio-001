@@ -691,4 +691,9 @@ Tech独立`REVIEW.json`终审BLOCKED：静态资源身份核过，但计划客�
 Tech独立终审已APPROVED for U05 Art v0.3具体资源Gate2；Producer逐SHA锁实际72文件于`deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/GATE2_FROZEN_HASHES.json`（SHA ff1d60b0…04090d5），`tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json`为USER_REVIEW/decided_at null。历史约16秒超硬线与152秒失败、预算FAIL必须随实际切片/PSD/重组/GIF提交用户，不追认合规；用户尚未批准具体资源，Client接入继续锁。
 Master已内部核收v1.0 Producer流程监督三Required与72/72实物SHA，FLOW Task AUTO DONE；此不是用户具体资源Gate2批准。Art v0.3仍USER_REVIEW、历史预算FAIL继续披露，Client接入锁保持。
 2026-10-15T08:39:54Z（Producer登记，用户回复精确时间未知）：用户原话“批准 U05-B v0.3 资源接入”，对象为Master`deliverables/master/U05-B-RESOURCE-GATE2-20261015/v0.1/REVIEW_PACKET.md`（SHA ef02b0b3…43457a483）呈现的实际切片/PSD/重组/GIF与历史预算事实。Producer重核`GATE2_FROZEN_HASHES.json`72/72路径SHA/字节及自SHA ff1d60b0…04090d5；`tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json`现USER_APPROVED，原USER_REVIEW快照保留，Art Task DONE。仅放行Client准确v0.3资源接入；首轮约16秒超硬线、次轮152秒失败和预算FAIL不追认，Cocos运行未验收。
+Art v0.3具体资源USER_APPROVED后，Client已实际拷入9张新运行PNG并分配meta UUID；Producer核9/9 SHA/字节/UUID及当前目录54运行PNG+FNT全55/55身份一致，资产登记表已回填真实UUID。此仅资源导入首产，不是用户对新版试玩实现的批准，也不消除美术历史预算FAIL。
+Master新建U05真实运行Tech只读评审Task，尚为BACKLOG且无专业结论；已批美术Gate2仅放行Client接入，不代替新版试玩用户审批或运行技术通过。
+Client v0.3实际实现已进入REVIEW待Tech独立运行评审；8878/8879浏览器报告为部分实测证据，尚未提交用户新版试玩验收。Tech Task READY而未有评审结论；Art资源Gate2 USER_APPROVED不替代Client最终用户审批，历史预算FAIL不变。
+Client准确v0.3实际试玩已送USER_REVIEW，尚无用户决定：`tasks/U05-B-INTERACTION-CLIENT-20261014/ARTIFACT_APPROVAL_v0.3.json` decided_at null；Producer锁38文件SHA/字节审计`FRONTEND_V03_USER_REVIEW_HASHES.json`自SHA 4b27602e…d8ed1de0，中文审核包`USER_PLAY_REVIEW_PACKET.md` SHA 3dd83b3f…761850b。Tech APPROVED仅支持提交用户，正确交杯完整离场/逐帧、计时到零、五档未测，不是完整运行PASS。Art预算FAIL、Creator退出36/旧profile TypeError继续披露；单元示例无QA。
+Master已内部AUTO接受U05 v0.3运行Tech只读评审Task DONE，依据三Required实存、REVIEW.json APPROVED及五条逐项结论；Producer重核Client准确送审38/38 SHA/字节。Tech结论仅准提交用户试玩，不是用户实现批准；Client仍USER_REVIEW，未测与预算FAIL保持。
 <!-- U05-B-LANDING-20261014 END -->

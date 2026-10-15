@@ -1,0 +1,45 @@
+{
+  "task_id": "U05-B-INTERACTION-CLIENT-20261014",
+  "version": "v0.2",
+  "approval_gate": {
+    "approval": "tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json",
+    "status": "USER_APPROVED",
+    "frozen_sha_manifest": "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/GATE2_FROZEN_HASHES.json",
+    "historical_budget_result": "FAIL_HISTORICAL_VIOLATION_NOT_WAIVED"
+  },
+  "engine": "Cocos Creator 3.8.8",
+  "source_project": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/apps/client",
+  "isolated_build_project": "/private/tmp/u05-interaction-client-v02-build-src/client",
+  "isolated_profile": "/private/tmp/u05-interaction-client-v02-build-src/client/profiles/v2/packages/web-mobile.json",
+  "build_command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u05-interaction-client-v02-build-src/client --build 'platform=web-mobile;debug=true;configPath=/private/tmp/u05-interaction-client-v02-build-src/client/profiles/v2/packages/web-mobile.json'",
+  "build_started_utc": "2026-10-15T08:50:09Z",
+  "build_ended_utc": "2026-10-15T08:50:34Z",
+  "build_process_exit_code": 36,
+  "build_result": "Creator log ends with build Task (web-mobile) Finished; isolated output directory exists with 769 files and generated resource paths include all nine new asset UUIDs. Process returned 36 after a legacy profile migration TypeError; retain this as a build-process warning, not a clean zero exit.",
+  "source_sha256": {
+    "apps/client/assets/labs/u05/milk_tea_lab.ts": "c462558edb5034de3ad56868091a0d4af7093e65102a88890df0bed4ba842068",
+    "apps/client/assets/labs/u05/milk_tea_state.ts": "bb981d662b8d334556b2418e7e837e787773742ae60aa2a2e31a539f2f43aea6",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts": "529a711ca011f0cc3232dd48d7148c1dfd5d23d8901e16396acbfb0706454cae"
+  },
+  "output": {
+    "path": "/private/tmp/u05-interaction-client-v02-output/web-mobile",
+    "output_name": "u05-interaction-client-v02",
+    "files": 769,
+    "start_scene_uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+    "resource_config": "/private/tmp/u05-interaction-client-v02-output/web-mobile/assets/resources/config.json",
+    "new_approved_asset_uuids_resolved": 9,
+    "resource_paths_verified": true
+  },
+  "http_service": {
+    "host": "127.0.0.1",
+    "port": 8878,
+    "url": "http://127.0.0.1:8878/",
+    "pid": 94767,
+    "root": "/private/tmp/u05-interaction-client-v02-output/web-mobile",
+    "health_check": "Escalated curl returned HTTP 200. Unprivileged local curl is sandbox-blocked; the service was started and verified in the approved isolated environment."
+  },
+  "browser_runtime_validation": "PENDING_ROOT_BROWSER_CHECK",
+  "browser_surface_limitation": "This task subagent CUA had no browser surface; parent Root has confirmed its IAB surface and is validating the stable 8878 output.",
+  "older_build_identity": "U05 B frontend v4 at 8876 is a separate historical landing task build; this v0.2 output is isolated and does not replace it.",
+  "no_rebuild_during_root_validation": true
+}

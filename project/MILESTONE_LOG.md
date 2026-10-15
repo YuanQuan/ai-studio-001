@@ -1437,4 +1437,9 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `ART_V03_ACTUAL_RESOURCE_GATE2_USER_REVIEW`：Tech独立终审APPROVED for Gate2，Producer72路径/SHA审计ff1d60b0…04090d5锁实际资源，原Art v0.3 Task及审批USER_REVIEW。预算FAIL、历史16秒超限和152秒失败随包披露；Client仍BLOCKED未导入，用户实际资源批准尚无。
 - `FINAL_DOC_FIX_FLOW_AUTO_DONE`：Master复核Producer三Required三项PASS与Gate2清单72/72 SHA/字节及自SHA后接受FLOW Task DONE。Art v0.3仍USER_REVIEW，历史预算FAIL保留，Client未导入。
 - `ART_V03_ACTUAL_RESOURCE_GATE2_USER_APPROVED`（Producer 2026-10-15T08:39:54Z登记，用户消息秒未知）：用户“批准 U05-B v0.3 资源接入”；Master审阅包SHA ef02b0b3…43457a483、72/72实物SHA/字节及审计自SHA ff1d60b0…04090d5复核一致。原Art v0.3审批USER_APPROVED/Task DONE，旧USER_REVIEW快照留存；Client正式资源导入解锁，但未导入/未运行，预算FAIL历史保留。
+- `CLIENT_GATE2_ASSETS_IMPORT_STARTED`：Client v0.2 RESOURCE_IMPORT_RECORD实存；新增9运行PNG/meta UUID，Producer逐件核9/9 SHA/字节/UUID；当前U05资源目录54运行PNG+FNT全55/55文件SHA/meta UUID一致，45既有资源据Client报告未变。Client Task BLOCKED→IN_PROGRESS，场景绑定/Creator构建/浏览器待实际证据，用户试玩未验收，预算FAIL历史保留。
+- `RUNTIME_TECH_REVIEW_TASK_CREATED_BACKLOG`：Master创建新U05运行技术只读评审Task，待Client v0.2交付及构建/浏览器证据实存后执行；当前BACKLOG非IN_PROGRESS。Client仍接入中，试玩用户审核未送。
+- `CLIENT_V03_REVIEW_RUNTIME_TECH_READY`：Client v0.3交付/隔离Creator构建及Root 8878/8879浏览器报告实存，Client Task IN_PROGRESS→REVIEW；Tech真实运行评审Task BACKLOG→READY待首产，不提前USER_REVIEW。未测短表情/离场、超时/退出和全难度通关单列，预算FAIL保留。
+- `CLIENT_V03_USER_REVIEW_TECH_APPROVED_FOR_SUBMISSION`：Tech三Required实存，REVIEW.json APPROVED仅可交用户试玩，非完整运行PASS；Client Task REVIEW→USER_REVIEW，审批decided_at null。Producer38文件逐SHA/字节锁`FRONTEND_V03_USER_REVIEW_HASHES.json`自SHA 4b27602e…d8ed1de0，中文审核包SHA 3dd83b3f…761850b。已测脸/退出离散片段，正确交杯完整离场、逐帧、计时到零、五档未测；历史预算FAIL及构建退出36保留。
+- `RUNTIME_TECH_AUTO_DONE_CLIENT_USER_REVIEW`：Master核Tech三Required与五条验收，内部AUTO接受Task DONE；Producer重核Client v0.3送审38/38 SHA/字节及自SHA一致。此不改变Client USER_REVIEW、未测运行项或历史预算FAIL。
 <!-- U05-B-LANDING-20261014 END -->

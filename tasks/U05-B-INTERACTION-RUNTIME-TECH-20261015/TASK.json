@@ -1,0 +1,39 @@
+{
+  "id": "U05-B-INTERACTION-RUNTIME-TECH-20261015",
+  "title": "U05新资源接入与真实运行技术评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "在已批准的U05-B v0.3资源接入后，独立核对客户端导入身份、交互实现、Creator构建及Web运行证据，给出可否提交用户试玩审核的技术判断。",
+  "inputs": [
+    "tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/GATE2_FROZEN_HASHES.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/DELIVERABLE.json",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-B-INTERACTION-CLIENT-20261014/v0.3/evidence/BUILD_IDENTITY.json",
+    "deliverables/master/U05-B-INTERACTION-RUNTIME-20261015/v0.1/BROWSER_RUNTIME_REPORT.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U05-B-INTERACTION-RUNTIME-TECH-20261015/v0.1/TECH_REVIEW.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-RUNTIME-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-INTERACTION-RUNTIME-TECH-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "正式导入的PNG、FNT与Gate2资源SHA一致，UUID可解析且不把计划路径当成实际导入",
+    "选料暂存、确认后单次合成、目标杯缩放、顾客进出与表情反馈符合已批规格，保留错单、计时与退出语义",
+    "Creator 3.8.8构建身份、HTTP实际产物及内置浏览器证据与本次源码相符，静态/构建/运行分别判断",
+    "明确历史美术预算FAIL与当前运行质量是不同判断，不将未测内容标为通过"
+  ],
+  "dependencies": [
+    "U05-B-BUTTON-TEXT-ASSETS-20261015"
+  ],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Client v0.3交付物和8879构建/浏览器证据实存后才进入执行；Tech只读评审，不修改Client源码或资源。",
+    "单元示例Owner自记运行/视觉检查，不分派QA；Tech评审不替代用户对实际试玩的最终确认。",
+    "Client v0.3三Required与隔离Creator 3.8.8/8879身份及Root浏览器报告已实存，依赖齐备，Task从BACKLOG进入READY待Tech真实开始只读评审；未有Tech首产前不记IN_PROGRESS。",
+    "Tech三Required已实际完成，REVIEW.json APPROVED仅支持提交用户实际试玩审核；静态、构建与已观察运行分别判断，未测项仍NOT_TESTED。Task交Master内部AUTO核收，尚不冒称用户对试玩批准。",
+    "Master已阅读Tech三Required、REVIEW.json APPROVED及五条逐项验收，接受仅可提交USER_REVIEW的只读评审；Producer再核Client v0.3送审清单38/38 SHA/字节与自SHA一致后，Tech Task AUTO DONE。Client仍USER_REVIEW，正确交杯完整离场/逐帧、计时到零与五档未测。"
+  ]
+}
