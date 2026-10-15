@@ -681,4 +681,7 @@ PATCH-04代表PASS与FULL部分实存均不是具体资源Gate2批准；70层PSD
 v0.3核心PSD/GIF虽通过零差核验，实际CUT/ASSET/LEDGER/DELIVERABLE缺件，未形成可提交具体资源Gate2的完整版本；用户此前批准的是拆层制作方案，不等于资源批准。本次停工不是用户Gate2退回，Client导入仍锁。
 2026-10-15T03:13:30Z（Producer登记，用户消息精确秒未知）：用户明确批准`U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1`，三冻结SHA核一致且旧USER_REVIEW快照留存。批准范围仅冻结10实际文件、补CUT/ASSET/LEDGER/DELIVERABLE四清单及累计代表70/FULL27/总97分钟；这不是具体资源Gate2或Client接入批准。
 获批四清单方案本轮执行停在120秒硬线，仅脚本语法通过、四正式文件均未写出；这不是用户具体资源Gate2审核。旧方案USER_APPROVED历史保留，但不能凭它延长本次执行或解锁Client。
+2026-10-15T04:18:46Z（Producer登记，用户消息精确秒未知）：用户明确批准`U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1`；三份待审文件SHA逐件匹配，`tasks/U05-B-REGISTER-EXECUTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json` USER_APPROVED，原USER_REVIEW快照保留。授权仅修脚本、预检并一次执行四清单，冻结10件视觉资源，累计代表70/FULL32/总102分钟且旧活动不清零，240秒硬停+60秒交接；不等于具体资源Gate2或Client接入。
+本次获批登记方案已执行一次：四份原始清单实际出现，但Art报告04:20:13–04:24:29 UTC约256秒，超过签认240秒硬线约16秒；原账本只记预提交点且“待Gate2”不代表最终审批。Tech独立核验及Master处置前具体资源Gate2未送、Client导入仍锁；用户方案批准记录保留，不追认超时。
+Tech独立`REVIEW.json`终审BLOCKED：静态资源身份核过，但计划客户端路径错误、Art活动超硬线约16秒且账本/交付漏报。Master纠正方案v0.1仅待审、未获用户批准；Producer v0.8内部流程监督AUTO DONE不构成资源Gate2或客户端接入批准。
 <!-- U05-B-LANDING-20261014 END -->

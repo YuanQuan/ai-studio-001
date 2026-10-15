@@ -1,0 +1,46 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSETS-20261015",
+  "owner": "art",
+  "summary": "73 层母版与重组图零像素差，动画与现成切片身份已登记；待用户具体资源 Gate2。",
+  "artifacts": [
+    "PRODUCTION_PLAN.md",
+    "ART_PRESIGN.json",
+    "SOURCE_AUDIT.json",
+    "source/workspace_b_master.psd",
+    "review/reconstructed.png",
+    "review/component_sheet.png",
+    "review/animation_preview.gif",
+    "CUT_MANIFEST.json",
+    "ASSET_MANIFEST.md",
+    "PRODUCTION_LEDGER.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同批签认及预算",
+      "result": "PASS",
+      "evidence": "用户审批、Art/Tech 签认和补充预算放行实存。"
+    },
+    {
+      "criterion": "73 层母版与中性图零差",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json：1024x1536、预览与重组图 SHA 相同。"
+    },
+    {
+      "criterion": "动画与资源身份",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST.json：44 逻辑项、GIF 39 帧/3900ms、58 PNG 与 FNT 单列。"
+    },
+    {
+      "criterion": "Gate2 与客户端运行",
+      "result": "NOT_TESTED",
+      "evidence": "具体资源未获用户 Gate2 批准，Client 未导入，UUID null。"
+    }
+  ],
+  "assumptions": [
+    "冻结 10 件源文件保持原字节。"
+  ],
+  "risks": [
+    "具体资源 Gate2 和实际运行尚待后续流程。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

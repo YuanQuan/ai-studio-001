@@ -1,0 +1,9 @@
+# U05资源登记一次执行流程 v0.8
+
+- 用户已明确批准 `U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1`。Producer于2026-10-15T04:18:46Z登记（用户消息精确秒未知）；`REVIEW_PACKET.md`、`TECH_FEASIBILITY_REVIEW.md`、`DELIVERABLE.json`三份冻结SHA逐件匹配，旧USER_REVIEW快照保留，准确方案Task经Master接受DONE。
+- 唯一授权为冻结10件视觉资源后修正脚本、临时预检、一次执行写出CUT_MANIFEST/ASSET_MANIFEST/PRODUCTION_LEDGER/DELIVERABLE四件；累计代表70分钟不变、FULL27→32分钟、总97→102分钟，既有活动不清零。Art开工前需同批Art/Tech补充签认并核预算；活动240秒硬停、另留60秒交接，不足时收紧。方案批准不等于资源Gate2。
+- Producer三Required首产，流程Task IN_PROGRESS。Master新建 `U05-B-REGISTER-EXECUTION-ART-20261015` 仅负责四Required，当前READY待Tech同批补签及实际首产；旧Art Task保留历史BLOCKED，AssetTech/Client亦BLOCKED。既有PSD无重制授权。具体资源Gate2未送，Client不得正式导入，旧Web8876未更新。
+- Continuity：已完成审批解锁记录；后续同批签认、一次脚本执行、Tech独立核验需依实际产物继续，不以当前方案批准或本流程首产冒称资源完成。此处为阶段记录，实际结果待更新。
+- 实际执行：Tech `REGISTER_EXECUTION_BUDGET_RELEASE.json` 同批补签、冻结10/10核验及240秒硬线+60秒交接已实存。新Art Task随后04:20:13–04:24:29 UTC约256秒内一次写出四份Required：`CUT_MANIFEST.json`、`ASSET_MANIFEST.md`、`PRODUCTION_LEDGER.json`、`DELIVERABLE.json`；Art报告冻结10件零改并已停工。约256秒**超过240秒硬线16秒**，不能以四文件出现追认预算合格。四份原始清单的身份、字段、冻结哈希及完整技术结论尚待Tech独立复核；账本当前仅记到04:23:13.280953 UTC预提交点，写`READY_FOR_USER_GATE2`，与最终活动/硬线事实未一致，不以其状态直接送Gate2。新Art Task阶段性首产后置BLOCKED待复核/处置，旧Art历史BLOCKED，AssetTech/Client BLOCKED；具体Gate2未送，Client未导入，旧8876不变。
+- Continuity：本轮一次执行已用，Art不得自行重跑或改冻版；Tech可做只读独立核验，Master据客观结论处置预算违规及原始清单状态。Producer v0.8继续跟踪，不将方案批准或原始文件当成具体资源批准。
+- Tech独立终审 `deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json` 已实存且为BLOCKED：58 PNG/FNT路径、SHA、尺寸、alpha与冻结10件、73层PSD零差、GIF39帧3900ms、44时间线项及DELIVERABLE结构静态PASS；但可运行项计划客户端路径误写`client/assets/resources/u05b/`，已核工程路径为`apps/client/assets/resources/u05_milk_tea/u05_b/`，Art约256秒超240秒硬线约16秒且账本/交付漏报。Master已起草`U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1`待审，尚无用户批准，不自行更正或续作。Master核收本轮Producer监督Task AUTO DONE，仅流程结果完成；Art/AssetTech/Client仍BLOCKED，Gate2未送、Client未导入。Continuity：当前须等具体纠正方案用户决定，旧一次执行授权已耗尽，无可继续的制作。

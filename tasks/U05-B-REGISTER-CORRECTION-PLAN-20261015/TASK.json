@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-REGISTER-CORRECTION-PLAN-20261015",
+  "title": "U05资源登记路径与超时记录定点纠正方案",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "针对静态资源已通过但计划路径错误、硬线超时未入账的问题，提出不改视觉资源的定点纠正方案。",
+  "inputs": [
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_LEDGER.json"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "实际已通过的资源与两处阻塞均有文件证据",
+    "修正仅触四文档且原超时事实不被追认合规",
+    "累计额度、停止条件、具体资源Gate2和Client门禁明确"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-EXECUTION-PLAN-20261015"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户批准前 Art 不得继续改登记或视觉资源；Tech只读评审与Producer事实登记可以进行。"
+  ]
+}

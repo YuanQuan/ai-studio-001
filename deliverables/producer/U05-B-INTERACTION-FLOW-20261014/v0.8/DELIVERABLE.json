@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-REGISTER-EXECUTION-FLOW-20261015",
+  "owner": "producer",
+  "summary": "登记用户批准的资源登记一次执行方案，持续监督同批预签、冻结资源、四份清单与具体资源Gate2门禁。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录准确版本、冻结SHA和累计制作额度",
+      "result": "PASS",
+      "evidence": "方案三份冻结文件SHA逐件匹配，USER_APPROVED与原待审快照已落盘；10件冻结，代表70/FULL32/总102分钟累计且旧活动不清零。"
+    },
+    {
+      "criterion": "实际四清单和Tech独立核验前不标资源Gate2就绪",
+      "result": "PASS",
+      "evidence": "Art本轮一次写出四正式文件，但04:20:13–04:24:29 UTC约256秒超过240秒硬线约16秒；Tech终审REVIEW.json已判BLOCKED，另有计划客户端路径错误及账本/交付漏报。Gate2未送，Client未导入。"
+    },
+    {
+      "criterion": "记录可核起止时间、实际结果、五处U05状态和复盘",
+      "result": "PASS",
+      "evidence": "五处U05 marker追踪04:20:13–04:24:29 UTC约256秒与240秒硬线的16秒超限、四文件实存及Tech终审BLOCKED；复盘区分静态PASS与路径/预算失败，Gate2和Client继续锁。"
+    }
+  ],
+  "risks": [
+    "方案获批只放行同批签认后的一次四清单执行，不是具体资源Gate2批准。",
+    "Tech终审BLOCKED：计划客户端路径错误，预算硬线超16秒且原账本/交付漏报；已产四清单不能直接送Gate2。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-REGISTER-EXECUTION-FLOW-20261015",
+  "title": "U05资源登记一次执行流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记用户批准的一次脚本修正与资源清单执行方案，监督限时、冻结资源、技术复核和具体资源Gate2门禁。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-EXECUTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1/REVIEW_PACKET.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.8/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录准确版本、冻结SHA和累计制作额度",
+    "实际四清单和Tech独立核验前不标资源Gate2就绪",
+    "记录可核起止时间、实际结果、五处U05状态和复盘"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-EXECUTION-PLAN-20261015"
+  ],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "用户已批准方案；Producer开始登记时改IN_PROGRESS，实际结果须按证据更新。",
+    "Master核收v0.8真实流程监督AUTO DONE：Tech终审BLOCKED，静态身份核PASS但计划客户端路径错误、Art约16秒超硬线且账本/交付漏报；资源、Gate2和Client未解锁。"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "U05-B-REGISTER-CORRECTION-PLAN-20261015",
+  "owner": "master",
+  "summary": "U05 v0.3 资源静态身份已通过技术核对，但登记的计划客户端路径与真实目录不符，且约16秒制作超时未进入账本；提出只改四份文档的定点纠正方案。",
+  "artifacts": [
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "两处阻塞有独立技术证据",
+      "result": "PASS",
+      "evidence": "Tech 的 TECH_METADATA_CHECK.md 与 REVIEW.json；四份 Art 登记文件实存。"
+    },
+    {
+      "criterion": "纠正范围限于四份登记文档且如实保留超时事实",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET.md 限定路径、账本、交付结论；冻结十件视觉资源不动。"
+    },
+    {
+      "criterion": "新预算与后续具体资源审批门禁明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET.md：FULL32→36分钟/总102→106分钟；纠正后Tech复核，实际资源连同超时披露送用户Gate2。"
+    }
+  ],
+  "risks": [
+    "用户批准前Art仍停工；本方案不追认原16秒超时为合规。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

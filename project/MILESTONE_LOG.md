@@ -1427,4 +1427,7 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `RESOURCE_REGISTER_CLOSURE_PLAN_USER_APPROVED`（Producer 2026-10-15T03:13:30Z登记）：三SHA复核，旧待审快照留存；仅冻结10文件后补四清单、FULL27/总97分钟累计。Art READY待Tech补签，资源Gate2未发生。
 - `RESOURCE_REGISTER_FLOW_V07_STARTED`：新正式Producer Task三Required首产；Tech补充预算签实存、冻结10/10匹配，120秒文档硬线+30秒缓冲。Art READY待四清单实际首产；Gate2/Client接入未发生。
 - `RESOURCE_REGISTER_SCRIPT_ONLY_STOP`：03:15:36–03:17:37 UTC约121秒到120秒硬停，仅UTF-8脚本与语法PASS，无四清单文件；Art/Tech/Client BLOCKED，v0.7 FLOW REVIEW，无Gate2。
+- `REGISTER_EXECUTION_PLAN_USER_APPROVED_AND_V08_STARTED`（Producer 2026-10-15T04:18:46Z登记）：三SHA匹配、旧待审快照留存；仅冻结10件后修脚本/预检/一次写四清单，代表70/FULL32/总102分钟累计，240秒硬停+60秒交接。方案Task DONE；Producer v0.8三Required首产IN_PROGRESS，新Art四清单Task READY待Tech同批补签。四清单/Gate2/Client接入尚无。
+- `REGISTER_EXECUTION_FOUR_DOCS_WRITTEN_OVERTIME`：Tech同批补签实存；新Art04:20:13–04:24:29 UTC约256秒一次写出四Required、冻版10件报告零改，但超240秒硬线约16秒并停工。账本只记预提交点且待Gate2状态未同步最终事实；新Art/AssetTech/Client BLOCKED，Tech独立核验待证，无Gate2。
+- `REGISTER_EXECUTION_TECH_BLOCKED_FLOW_AUTO_DONE`：Tech独立终审静态资源核PASS但整体BLOCKED：计划客户端路径错误、超240秒硬线约16秒及账本/交付漏报。Master纠正方案仅待审；Producer v0.8监督Task AUTO DONE，Art/AssetTech/Client仍BLOCKED，无资源Gate2与Client导入。
 <!-- U05-B-LANDING-20261014 END -->

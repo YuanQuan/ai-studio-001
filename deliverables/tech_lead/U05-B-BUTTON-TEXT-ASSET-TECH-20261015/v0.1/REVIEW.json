@@ -3,9 +3,18 @@
   "reviewer": "tech_lead",
   "decision": "BLOCKED",
   "findings": [
-    {"severity": "INFO", "message": "v0.3候选PSD可解码1024x1536/73层，预览对冻结v0.2中性图RGB差0；GIF可解码39存储帧、360x640、3900ms。旧v0.1/v0.2冻结文件SHA保持匹配。"},
-    {"severity": "MAJOR", "message": "Art v0.3 CUT_MANIFEST、ASSET_MANIFEST、PRODUCTION_LEDGER、DELIVERABLE均未实存；Owner报清单批量写入SyntaxError并已停。实际切片ID/路径/alpha/SHA、计划Client路径及UUID尚不可审，不能声明正式资源包通过。"},
-    {"severity": "INFO", "message": "约199秒活动触及本次140秒制作核验加60秒整理放行边界，净活动精确值未知；后续仅在新的授权与可核余额下修清单。具体资源Gate2、Client导入和运行均未批准/未测。"}
+    {
+      "severity": "INFO",
+      "message": "四清单实存，58 PNG和FNT路径/SHA/尺寸/alpha匹配，冻结10件不变；PSD73层RGB零差、GIF39帧3900ms、时间线44项静态通过；DELIVERABLE结构符合schema。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "可运行项计划路径client/assets/resources/u05b/与项目已核实际apps/client/assets/resources/u05_milk_tea/u05_b/不一致。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "Art本轮约256秒超240秒硬线约16秒；账本仅记录precommit180.281秒并标Gate2就绪，交付验收预算PASS且未列超时。"
+    }
   ],
-  "next_action": "Producer保持BLOCKED并记录核心证据与清单缺件；Art获后续授权和预算后仅补实际清单/账本，不重渲染现有资源，Tech再核元数据。完成后具体资源仍直接交用户Gate2，批准前Client不正式导入。"
+  "next_action": "Producer记录超时，Master/Producer决定处置；Art停工，获明确授权后仅更正路径与账本/风险，不改冻结10件。Tech复核后方能交用户具体资源Gate2；批准前Client不得正式导入。"
 }

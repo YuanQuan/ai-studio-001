@@ -1,0 +1,36 @@
+{
+  "id": "U05-B-REGISTER-EXECUTION-ART-20261015",
+  "title": "U05冻结资源四清单一次登记",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "依获批方案修正已编译脚本、先预检再执行一次，只补v0.3四份正式资源登记文件。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-EXECUTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_SCRIPT_READONLY_REVIEW.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批Tech补充预算签与冻结十件前哈希通过才实际开工",
+    "临时预检、一次正式写入、四件校验通过；失败只清本轮新文件并停工",
+    "58 PNG条目与字体单列、运行/历史/PSD专用身份、计划客户端路径及UUID空值准确",
+    "实际活动与保守累计可核，240秒硬停且预留60秒交接；未取得具体资源Gate2前不供Client导入"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-EXECUTION-PLAN-20261015",
+    "U05-B-BUTTON-TEXT-ASSET-TECH-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Art使用gpt-6-sol/high；本Task只生成四份登记文档，不改已冻结10件画面/动画/PSD。",
+    "Tech新补充预算签完成前不得将READY记为IN_PROGRESS；脚本唯一执行失败即停。",
+    "Tech补签后Art确于04:20:13–04:24:29 UTC执行并一次写出四Required；约256秒超过已签240秒活动硬线约16秒，Art停工。四文件身份与预算结论待Tech独立复核；Gate2和Client继续锁。"
+  ]
+}

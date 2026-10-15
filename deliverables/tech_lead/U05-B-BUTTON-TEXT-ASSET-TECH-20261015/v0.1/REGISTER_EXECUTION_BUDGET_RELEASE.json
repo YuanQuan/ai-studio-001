@@ -1,0 +1,36 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "phase": "APPROVED_REGISTER_EXECUTION_SUPPLEMENT",
+  "decision": "CONDITIONAL_RELEASE_ONE_DOCUMENT_EXECUTION",
+  "user_approval_path": "tasks/U05-B-REGISTER-EXECUTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+  "user_approval_sha256": "e6bac4b72e1e34a6bce4b8346fff345c5fcdd239a952eb599e07d500e1d95b15",
+  "user_approval_status": "USER_APPROVED",
+  "approved_plan_hashes_verified": "3/3",
+  "frozen_input_manifest": "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+  "frozen_files_sha_and_bytes_verified": "10/10 before release",
+  "four_art_documents_before_release": "ABSENT_4_OF_4",
+  "conservative_budget_seconds": {
+    "prior_full_upper": 1548.148,
+    "prior_total_upper": 5703.092,
+    "new_full_limit": 1920,
+    "new_total_limit": 6120,
+    "full_remaining_lower_bound": 371.852,
+    "total_remaining_lower_bound": 416.908,
+    "binding_limit": "FULL",
+    "one_execution_fix_preflight_write_self_check_hard_cap": 240,
+    "failure_stop_handoff_buffer_minimum": 60,
+    "full_guard_after_cap_and_buffer": 71.852,
+    "old_activity_reset": false,
+    "prior_script_turn_counted_conservatively": 121
+  },
+  "conditions": [
+    "Art开工前据自身事件记录确认本补签后无新增活动；若有活动先计入余额，收紧240秒硬线并保留至少60秒，余额不足时不得开工。",
+    "仅修脚本、临时目录预检及一次正式提交四份登记；冻结10件不改，图像、PSD、GIF、切片、字形均不生产。",
+    "先核58个PNG记录ID唯一、FNT另列、运行/历史/PSD专用身份及稳定计划路径；DELIVERABLE按schema，其余按契约断言；正式写入前检查目标不存在。",
+    "240秒活动到线或唯一执行失败即停；只清理本轮新写的未完成文档，维持BLOCKED并如实交接，不重跑、不追认。",
+    "四份清单完成后仍需Tech独立核对、Producer登记及用户具体资源Gate2；本签认不放行Client正式接入。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_UPPER_USED"
+}
