@@ -1,0 +1,36 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "phase": "BUTTON_TEXT_SPLIT_FIRST_IMAGE_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "decision": "TECH_PRESIGNED_SAME_BATCH",
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_PLAN.md",
+  "art_plan_sha256": "75987008ae3a51f761af96f695a962f7a4bec56d4febce6d32dfbe6a6ee5215e",
+  "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ART_PRESIGN.json",
+  "art_presign_sha256": "b5c03912b33dbd8a0747981bacdc5f809747397d6be6a458d13f6d335ed28e49",
+  "source_audit": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/SOURCE_AUDIT.json",
+  "source_audit_sha256": "35f69faabdf92beab7e285657f492ecb8ca2b4dbbfde2fe8108105c40c26d9af",
+  "approved_frozen_sha256": {
+    "review_packet": "66d2182bc4382b538a19394a00453b51fde04ffd0a3def6393a7c8da0fc09739",
+    "source_identities": "e291773935bd141e7f6325dc049c28a3e2b7254ca610dbfbdc92679e55682339",
+    "tech_feasibility": "46a960f68cd0bc608164cafefb4d2c45bb33cd106f378593697623c8122a86cb"
+  },
+  "source_lock": {
+    "v02_text_rgba_sha256": "5c4697268c6d5daa543ad8a96f7407f4dfcae8b3e2cf75cc919818fd47d3f7a3",
+    "v02_neutral_target_sha256": "ef101b99caa8511d0cb6a19f91bd183ea83570bcb0303baa784cbb9f946ee947",
+    "v02_manifest_sha256": "04b64c7e183106bf9794590e72cdad897cb762d06d1c3eb547ff362f93a0880b",
+    "canvas_px": [1024, 1536],
+    "split_y": 1400,
+    "upper_visible_alpha_pixels": 25840,
+    "lower_visible_alpha_pixels": 5660,
+    "rows_1399_and_1400_alpha_empty": true
+  },
+  "conditions": [
+    "仅按y=1400拆原RGBA源，非透明像素通道字节保持；上半TEXT_LABELS_HEADER置COUNTER_FRONT前，下半TEXT_BOTTOM_ACTIONS置全部按钮底板/图标后、BTN_CONFIRM_TEXT前；新PSD73层。",
+    "先核73层PSD可读且1024x1536 RGB预览对已冻结v0.2中性图0差；否则立即REVISE_STOP，不扩GIF或第二候选。",
+    "代表通过后才扩原44逻辑采样项/GIF及组件表；实际GIF解码帧数/时长如实登记，旧v0.1/v0.2产物不改字节。最终切片路径/SHA/稳定ID与Client计划路径/UUID未导入须入清单。",
+    "自产具体资源直接用户Gate2，不新增效果专业复审门禁；Gate2前Client不得正式导入。"
+  ],
+  "budget_release_ref": "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/BUDGET_RELEASE.json",
+  "not_tested": ["新v0.3候选PSD/PNG/GIF尚未制作", "Gate2/Client导入和运行未测"]
+}

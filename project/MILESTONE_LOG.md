@@ -1420,4 +1420,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `LABEL_ALIGNMENT_FLOW_V05_STARTED`：新Master任务三Required首产，v0.5 IN_PROGRESS；新Art v0.2/Tech同批签与候选未获实际交付，Client BLOCKED。
 - `LABEL_ALIGNMENT_ART_PRESIGNED_WAIT_TECH`：新Art v0.2预案/预签/源审实存，Art IN_PROGRESS；01:06:55 UTC暂停纯等待。Tech正式Task READY但无首产，预算放行与新图未发生，Client BLOCKED。
 - `LABEL_ALIGNMENT_FIRST_NEUTRAL_REVISE_STOP`：同批Art/Tech签与预算放行后，Art88秒出中性图+72层PSD，差5,660像素仅底部按钮文字，复合文字层整体前移造成遮挡；Art按零差停止。无GIF/正式清单/Gate2；Art/AssetTech/Client BLOCKED，v0.5 FLOW REVIEW。
+- `BUTTON_TEXT_LAYER_PLAN_USER_APPROVED`（2026-10-15T01:52:04Z）：y=1400无损拆层、73层唯一第二候选及累计FULL24/总94分钟方案三SHA核一致；具体资源Gate2另待。
+- `BUTTON_TEXT_FLOW_V06_STARTED`：Producer三Required首产，Art/Tech新任务READY待真实预签，Client BLOCKED。
+- `BUTTON_TEXT_CORE_ZERO_DIFF`：同批Art/Tech预签+预算放行后，Art134秒产73层PSD/中性图零RGB差及GIF44逻辑/39实帧/3900ms；Art/Tech IN_PROGRESS待正式清单和独立成品核，Gate2/Client导入未发生。
+- `BUTTON_TEXT_HANDOFF_SCRIPT_STOP`：核心PSD/GIF通过，但01:59:49 UTC批量清单脚本非UTF SyntaxError未执行，CUT/ASSET/LEDGER/DELIVERABLE四Required缺件；Art按140+60停工，Tech整包终审BLOCKED，Client BLOCKED，无Gate2。
 <!-- U05-B-LANDING-20261014 END -->

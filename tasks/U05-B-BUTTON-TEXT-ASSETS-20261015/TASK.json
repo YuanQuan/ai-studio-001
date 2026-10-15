@@ -1,0 +1,39 @@
+{
+  "id": "U05-B-BUTTON-TEXT-ASSETS-20261015",
+  "title": "U05按钮文字无损拆层与完整互动资源",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "从已批v0.2文字图无损拆出底部按钮字，组73层母版零差，再完成GIF和真实切片。",
+  "inputs": [
+    "tasks/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/review/FIRST_NEUTRAL_REVIEW.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ART_PRESIGN.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/review/reconstructed.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/review/component_sheet.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/review/animation_preview.gif",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批Art/Tech签及累计预算放行后才首图",
+    "旧像素按透明空白带无损拆层、73层PSD对当前v0.2中性图零差",
+    "完整动作与实际切片、身份、同尺度重组齐全后交用户Gate2"
+  ],
+  "dependencies": [
+    "U05-B-BUTTON-TEXT-LAYER-PLAN-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "美术使用gpt-6-sol/high；仅当前批准第二候选、0 imagegen。",
+    "累计代表70/FULL24/总94分钟，旧耗保留；旧v0.1/v0.2失败候选只读留档。",
+    "同批预签/Tech预算放行后134秒完成73层PSD与中性图RGB零差、GIF实物；至01:59:49 UTC累计制作整理约199秒，末尾Python heredoc非UTF SyntaxError完全未执行，CUT/ASSET/账本/交付四Required缺件。Art依140+60停止，当前BLOCKED，Gate2未送。"
+  ]
+}

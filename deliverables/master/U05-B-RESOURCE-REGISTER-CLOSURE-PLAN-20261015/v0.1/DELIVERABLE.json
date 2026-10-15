@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015",
+  "owner": "master",
+  "summary": "73层PSD/动画核心已通过，申请冻结并补四份缺失资源交付清单。",
+  "artifacts": [
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/APPROVAL_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "已产资源与四清单缺口有文件/SHA证据",
+      "result": "PASS",
+      "evidence": "FROZEN_INPUTS逐件列10实文件SHA；Tech PARTIAL_TECH_RESULT确认核心通过、四清单缺。"
+    },
+    {
+      "criterion": "补件范围、同批预算、停止条件明确且不改图片字节",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET限文档生成120秒、30秒停止/交接；累计FULL27/总97，不清零。Tech只读审核冻结10/10与实际UTF-8语法检查、复用切片逐项真实登记可行。"
+    },
+    {
+      "criterion": "资源Gate2与Client门禁分明",
+      "result": "PASS",
+      "evidence": "本批准仅补登记，正式资源仍须用户Gate2，Client保持阻塞。"
+    }
+  ],
+  "risks": [
+    "登记脚本再次失败或实际余额不足时立即停止，不把未齐清单当正式资源。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

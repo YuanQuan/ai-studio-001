@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-BUTTON-TEXT-PRODUCTION-FLOW-20261015",
+  "title": "U05按钮文字拆层制作与资源审核流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "记录新方案批准、73层单候选、实际资源Gate2及下游门禁。",
+  "inputs": [
+    "tasks/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "方案批准与双签/预算/产物身份可追溯",
+    "真实候选结果、Gate2和Client阻塞准确",
+    "五共享仅U05 marker及简短复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Producer本任务、Art/Tech状态及五共享U05 marker；v0.1–v0.5历史不覆盖。",
+    "方案批准不等于具体资源Gate2。",
+    "Producer v0.6三Required已记核心实图通过但交付脚本非UTF SyntaxError使四Required缺件，Art按140+60停工；FLOW REVIEW待Master接受，Gate2未送。",
+    "Master接受Producer v0.6真实部分成功/清单缺件记录 AUTO DONE；MASTER_BUTTON_TEXT_FLOW_REVIEW.json，资源本身仍BLOCKED。"
+  ]
+}

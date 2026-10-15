@@ -1,0 +1,20 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "owner": "tech_lead",
+  "summary": "v0.3 PSD/GIF核心技术身份通过，正式切片、资源和活动清单缺失，任务BLOCKED且Gate2未就绪。",
+  "artifacts": [
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/PARTIAL_TECH_RESULT.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {"criterion": "同批签与余额放行先于首图", "result": "PASS", "evidence": "Art/Tech v0.3同批预签与BUDGET_RELEASE实存，唯一候选后产。"},
+    {"criterion": "73层/零差及GIF/切片身份独立可核", "result": "NOT_TESTED", "evidence": "PSD可解码73层且中性RGB零差，GIF39存储帧/360x640/3900ms；但CUT/ASSET清单未实存，切片身份尚不能核。"},
+    {"criterion": "资源Gate2前Client不正式导入", "result": "PASS", "evidence": "当前具体资源Gate2未批，Client导入与运行未执行。"}
+  ],
+  "risks": ["清单批量写入SyntaxError导致正式资源登记、制作账本和交付文件缺失。", "约199秒活动触及已放行制作/整理边界，后续工作须另核预算，不追认自动继续。"],
+  "status": "BLOCKED"
+}

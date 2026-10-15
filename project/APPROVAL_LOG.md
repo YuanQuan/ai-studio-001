@@ -677,4 +677,6 @@ PATCH-04代表PASS与FULL部分实存均不是具体资源Gate2批准；70层PSD
 收尾方案获批后的72层PSD实际合成差异已触停止规则：这不是用户对具体资源的Gate2审核或退回；当前不存在具体资源USER_APPROVED。Art/AssetTech/Client BLOCKED，原方案批准历史保留但不授权自动修正差异。
 2026-10-15T01:04:44Z用户批准`U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1`准确标签统一/小料标题遮挡方案，三冻结文件SHA逐项一致；只授权新Art v0.2唯一确定性制作及累计代表70/FULL21/总91分钟。旧v0.4失败候选不被追认，新资源具体Gate2仍未批准，Client接入锁。
 新Art v0.2唯一首图已因PSD/中性图差5,660像素而按停止规则停工；这是获批制作方案的实施失败，并非用户对具体资源的Gate2审核或退回。当前仍无新资源USER_APPROVED，Client正式接入锁保持。
+2026-10-15T01:52:04Z用户批准`U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1`准确底部按钮文字无损拆层方案，三冻结SHA核一致；仅授权y=1400拆层、73层唯一候选及累计代表70/FULL24/总94分钟，旧耗不清零。具体切片资源Gate2仍未批准，Client导入锁不变。
+v0.3核心PSD/GIF虽通过零差核验，实际CUT/ASSET/LEDGER/DELIVERABLE缺件，未形成可提交具体资源Gate2的完整版本；用户此前批准的是拆层制作方案，不等于资源批准。本次停工不是用户Gate2退回，Client导入仍锁。
 <!-- U05-B-LANDING-20261014 END -->

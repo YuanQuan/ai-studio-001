@@ -1,0 +1,27 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "decision": "RELEASE_ONE_CANDIDATE_WITH_140_SECOND_HARD_STOP",
+  "activity_basis": "Root核Art own-session run 2026-10-15T01:52:16.170Z至01:54:04Z明确纯等待，整段107.830秒保守全计；净制作UNKNOWN。",
+  "conservative_budget_seconds": {
+    "old_full_upper": 1120.318,
+    "old_total_upper": 5275.262,
+    "new_art_presign_upper": 107.83,
+    "full_cumulative_upper_before_release": 1228.148,
+    "full_limit": 1440,
+    "full_remaining_lower_bound": 211.852,
+    "total_cumulative_upper_before_release": 5383.092,
+    "total_limit": 5640,
+    "total_remaining_lower_bound": 256.908,
+    "single_candidate_production_and_check_hard_cap": 140,
+    "handoff_buffer_minimum": 60,
+    "binding_full_guard_after_both": 11.852
+  },
+  "release_conditions": [
+    "仅v0.3同批唯一候选：先73层PSD和冻结v0.2中性RGB零差，再沿原采样项完成GIF/切片登记；制作+核验合计140秒活动硬停并记实起止。",
+    "另留至少60秒清单/账本/交付整理；140秒内未完成即停，不追认延长、不自动第二候选。开工前如有新增Art活动须先扣余额并相应收紧硬停。",
+    "此预算放行不批准具体资源Gate2或Client导入。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_ART_TURN_UPPER_USED"
+}

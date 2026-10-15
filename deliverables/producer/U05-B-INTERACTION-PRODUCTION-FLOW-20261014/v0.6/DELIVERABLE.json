@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-PRODUCTION-FLOW-20261015",
+  "owner": "producer",
+  "summary": "按钮文字无损拆层方案已批准，v0.6独立追踪73层唯一候选、同批预签、预算和具体资源Gate2。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.6/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "方案批准与双签/预算/产物身份可追溯",
+      "result": "PASS",
+      "evidence": "三待审SHA/USER_APPROVED核一致；Art/Tech同批预签与Tech 140秒+60秒预算放行实存。Art 01:56:30–01:58:44 UTC用134秒产核心候选，PSD SHA782e29c5f408ee6020c5ae664da1b52756b5c14c18b841dced792eeed6fafc61，预览与中性重组像素零差；正式清单与Tech终审待产。"
+    },
+    {
+      "criterion": "真实候选结果、Gate2和Client阻塞准确",
+      "result": "FAIL",
+      "evidence": "核心73层PSD/中性图RGB零差、GIF44逻辑采样项/实际39解码帧保留；最后批量写CUT_MANIFEST/ASSET_MANIFEST/PRODUCTION_LEDGER/DELIVERABLE的Python heredoc因非UTF字节SyntaxError完全未执行，四Required缺件。Art按140+60停止，整包Tech终审和Gate2未发生，Client BLOCKED。"
+    },
+    {
+      "criterion": "五共享仅U05 marker及简短复盘",
+      "result": "PASS",
+      "evidence": "五U05标记同步核心实物PASS但01:59:49 UTC脚本错误致四Required缺件、Art/Tech/Client BLOCKED与Gate2锁，历史保留。"
+    }
+  ],
+  "risks": [
+    "核心实图零差已核，但批量交付脚本SyntaxError未执行，CUT/ASSET/账本/交付四Required缺件；不能送Gate2。",
+    "Client资源导入须待具体版本Gate2用户批准。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

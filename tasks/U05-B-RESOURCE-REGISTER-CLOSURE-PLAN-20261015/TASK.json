@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015",
+  "title": "U05已产资源身份登记收尾方案",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "冻结已通过PSD/GIF/图片，仅补四份缺失正式清单和两分钟活动额度。",
+  "inputs": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/source/workspace_b_master.psd",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/PARTIAL_TECH_RESULT.md"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "已产资源与四清单缺口有文件/SHA证据",
+    "补件范围、同批预算、停止条件明确且不改图片字节",
+    "资源Gate2与Client门禁分明"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户未批准本登记收尾和额外额度前，Art不可再写四份正式清单。"
+  ]
+}

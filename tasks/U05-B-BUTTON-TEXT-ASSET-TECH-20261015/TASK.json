@@ -1,0 +1,34 @@
+{
+  "id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "title": "U05底部文字拆层资源技术签认与核验",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "对73层无损拆分批次同批签认、预算放行和实际PSD/PNG/GIF/切片元数据复核。",
+  "inputs": [
+    "tasks/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ART_PRESIGN.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批签与余额放行先于首图",
+    "73层/零差及GIF/切片身份独立可核",
+    "资源Gate2前Client不正式导入"
+  ],
+  "dependencies": [
+    "U05-B-BUTTON-TEXT-LAYER-PLAN-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "AUTO",
+  "notes": [
+    "只作技术签认和元数据复核，不代替具体美术资源Gate2。",
+    "TECH_PRESIGN/BUDGET_RELEASE同批实存，已放行唯一候选140秒硬线+60秒交接；核心PSD/GIF身份已核，但Art四Required清单/账本交付因脚本错误缺件，整包技术终审依赖BLOCKED，不冒称成品通过。"
+  ]
+}
