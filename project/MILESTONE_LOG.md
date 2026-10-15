@@ -1436,4 +1436,5 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `FINAL_DOC_FIX_ONCE_COMMIT_COMPLETE`：Art签名脚本一次--commit退出码0，退出检查点07:06:00.078646 UTC、完整活动07:05:22–07:06:06 UTC保守44秒<240；四正式SHA与退出审计一致，冻结10件报告零改。原16秒超时/152秒失败保留，预算FAIL；新Art Task REVIEW、Tech终审待产，Gate2/Client仍锁。
 - `ART_V03_ACTUAL_RESOURCE_GATE2_USER_REVIEW`：Tech独立终审APPROVED for Gate2，Producer72路径/SHA审计ff1d60b0…04090d5锁实际资源，原Art v0.3 Task及审批USER_REVIEW。预算FAIL、历史16秒超限和152秒失败随包披露；Client仍BLOCKED未导入，用户实际资源批准尚无。
 - `FINAL_DOC_FIX_FLOW_AUTO_DONE`：Master复核Producer三Required三项PASS与Gate2清单72/72 SHA/字节及自SHA后接受FLOW Task DONE。Art v0.3仍USER_REVIEW，历史预算FAIL保留，Client未导入。
+- `ART_V03_ACTUAL_RESOURCE_GATE2_USER_APPROVED`（Producer 2026-10-15T08:39:54Z登记，用户消息秒未知）：用户“批准 U05-B v0.3 资源接入”；Master审阅包SHA ef02b0b3…43457a483、72/72实物SHA/字节及审计自SHA ff1d60b0…04090d5复核一致。原Art v0.3审批USER_APPROVED/Task DONE，旧USER_REVIEW快照留存；Client正式资源导入解锁，但未导入/未运行，预算FAIL历史保留。
 <!-- U05-B-LANDING-20261014 END -->

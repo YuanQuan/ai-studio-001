@@ -690,4 +690,5 @@ Tech独立`REVIEW.json`终审BLOCKED：静态资源身份核过，但计划客�
 受控四文档修正已一次执行并实存，Art完整活动07:05:22–07:06:06 UTC保守44秒且四正式SHA与退出审计一致；这是已批方案的执行结果，旧约16秒超硬线/152秒预检失败仍留痕，预算FAIL不追认。Tech独立终审与用户具体资源Gate2均尚未完成，Client导入锁保持。
 Tech独立终审已APPROVED for U05 Art v0.3具体资源Gate2；Producer逐SHA锁实际72文件于`deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/GATE2_FROZEN_HASHES.json`（SHA ff1d60b0…04090d5），`tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json`为USER_REVIEW/decided_at null。历史约16秒超硬线与152秒失败、预算FAIL必须随实际切片/PSD/重组/GIF提交用户，不追认合规；用户尚未批准具体资源，Client接入继续锁。
 Master已内部核收v1.0 Producer流程监督三Required与72/72实物SHA，FLOW Task AUTO DONE；此不是用户具体资源Gate2批准。Art v0.3仍USER_REVIEW、历史预算FAIL继续披露，Client接入锁保持。
+2026-10-15T08:39:54Z（Producer登记，用户回复精确时间未知）：用户原话“批准 U05-B v0.3 资源接入”，对象为Master`deliverables/master/U05-B-RESOURCE-GATE2-20261015/v0.1/REVIEW_PACKET.md`（SHA ef02b0b3…43457a483）呈现的实际切片/PSD/重组/GIF与历史预算事实。Producer重核`GATE2_FROZEN_HASHES.json`72/72路径SHA/字节及自SHA ff1d60b0…04090d5；`tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json`现USER_APPROVED，原USER_REVIEW快照保留，Art Task DONE。仅放行Client准确v0.3资源接入；首轮约16秒超硬线、次轮152秒失败和预算FAIL不追认，Cocos运行未验收。
 <!-- U05-B-LANDING-20261014 END -->
