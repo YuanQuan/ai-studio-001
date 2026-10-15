@@ -1,0 +1,47 @@
+{
+  "task_id": "U05-B-LABEL-ALIGNMENT-ASSETS-20261015",
+  "batch": "v0.2/LABEL_ALIGN",
+  "status": "REVISE_STOP_FIRST_NEUTRAL_PSD_MISMATCH",
+  "observed_start_utc": "2026-10-15 01:10:21 UTC",
+  "observed_stop_utc": "2026-10-15 01:11:49 UTC",
+  "activity_upper_seconds": 88,
+  "tech_cap_seconds": 240,
+  "neutral_reconstructed": {
+    "path": "review/reconstructed.png",
+    "sha256": "ef101b99caa8511d0cb6a19f91bd183ea83570bcb0303baa784cbb9f946ee947"
+  },
+  "psd": {
+    "path": "source/workspace_b_master.psd",
+    "sha256": "382ecfffc8036bf15164eee4dccdfbd11c158fd9db8e5abcdc6b4fd80d9304ca",
+    "layers": 72,
+    "size_px": [
+      1024,
+      1536
+    ],
+    "readable": true
+  },
+  "psd_preview": {
+    "path": "review/workspace_b_master_preview.png",
+    "sha256": "e40dfee31d4f0939a42a68a15925cd4e403c0332f60ce9efb7e3c44205e968ca"
+  },
+  "psd_vs_neutral_diff_rgb_pixels": 5660,
+  "psd_vs_neutral_max_abs_channel_diff": 211,
+  "difference_bbox_xyxy": [
+    169,
+    1464,
+    580,
+    1504
+  ],
+  "difference_by_region": {
+    "upper": 0,
+    "counter": 0,
+    "table": 0,
+    "buttons": 5660
+  },
+  "inference": "Moving entire TEXT_LABELS_HEADER before COUNTER_FRONT also puts existing bottom recipe/undo button labels behind their button bases; requires a distinct method/decision, not a silent second candidate.",
+  "new_gif": "NOT_PRODUCED",
+  "new_component_sheet": "NOT_PRODUCED",
+  "client_import": "NOT_DONE",
+  "gate2": "NOT_READY",
+  "imagegen_calls": 0
+}

@@ -1,0 +1,40 @@
+{
+  "id": "U05-B-LABEL-ALIGNMENT-ASSETS-20261015",
+  "title": "U05标签源统一与母版修正版资源",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "用已批v0.2小圆角标签统一展示图/动画/PSD，修正标题遮挡顺序，交具体资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/FINALIZATION_DIFF_DIAGNOSIS.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/ART_PRESIGN.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/review/reconstructed.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/review/component_sheet.png",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/review/animation_preview.gif",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批Art/Tech预签及预算release后才首图",
+    "已批v0.2标签源与标题顺序统一，保护区零差",
+    "新版PSD对新版同尺度重组图零差，动画语义和资源身份可核，具体切片交用户Gate2"
+  ],
+  "dependencies": [
+    "U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master授权Art仅新v0.2资源；旧v0.1留档，方案已获用户批准，具体资源尚待Gate2。",
+    "艺术制作使用gpt-6-sol/high；一候选确定性处理，0 imagegen，FULL累计21/总91分钟且旧耗不清零。",
+    "PRODUCTION_PLAN/ART_PRESIGN/SOURCE_AUDIT已实际首产；Tech同批预签与预算release后，唯一中性图+72层PSD实产，PSD预览差5,660像素集中底部按钮文字，FIRST_NEUTRAL_REVIEW判REVISE_STOP，未扩GIF/正式清单/Gate2，当前BLOCKED。"
+  ]
+}

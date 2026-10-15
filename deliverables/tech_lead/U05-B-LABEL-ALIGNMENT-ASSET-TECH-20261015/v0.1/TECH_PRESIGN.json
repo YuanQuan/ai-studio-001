@@ -1,0 +1,49 @@
+{
+  "task_id": "U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "phase": "LABEL_ALIGN_FIRST_IMAGE_METHOD_PRESIGN",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.2/LABEL_ALIGN",
+  "decision": "TECH_PRESIGNED_METHOD_WITH_BUDGET_HOLD",
+  "status": "NO_IMAGE_PSD_OR_GIF_OUTPUT_UNTIL_SEPARATE_BUDGET_RELEASE",
+  "approved_inputs": {
+    "approval": "tasks/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "approval_status": "USER_APPROVED",
+    "frozen_review_packet_sha256": "aa5a12d6bcdfe2c6580ca77f117ec613878632154145b0ea4be8239782d023b1",
+    "frozen_source_identities_sha256": "1468041bab848ee7b2653dd117a71dccdfb7e187dc10880d55e4c24959ab8c74",
+    "frozen_tech_feasibility_sha256": "fec3cf7828de2caf3260ed6ae4f99e8a1efdfa6998b0870cc370ce03fda7c23e",
+    "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/PRODUCTION_PLAN.md",
+    "art_plan_sha256": "fa00f3d6b22324dd1c5b7044200d34f7074da9a5b31b3a3525bb614a42611923",
+    "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/ART_PRESIGN.json",
+    "art_presign_sha256": "a779673f1699f3bde5027ee3605d2c9bf49df3c41300af504484e1d99d3972d1",
+    "source_audit": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/SOURCE_AUDIT.json",
+    "source_audit_sha256": "ffbb4b342d14fb44d85e1d090b98fbf819b1a0a5ef5042fd36c7c3c19ed6c2db"
+  },
+  "verified_sources": {
+    "approved_component_v02_label_layers": "12/12 real files SHA256 matching Art source audit, each 1024x1536 full canvas; all 12 differ from legacy Workspace v0.1 counterparts",
+    "legacy_manifest_layers": 72,
+    "legacy_counter_front_index": 61,
+    "legacy_text_labels_header_index": 70,
+    "required_new_order": "TEXT_LABELS_HEADER before COUNTER_FRONT",
+    "legacy_reconstructed_sha256": "eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a",
+    "legacy_animation_gif_sha256": "d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57",
+    "legacy_72_layer_manifest_sha256": "18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3"
+  },
+  "technical_conditions": [
+    "新Art v0.2唯一候选的重组图、后续GIF和72层PSD均统一用已批Component v0.2的12张标签源；标题图层移到COUNTER_FRONT之前，旧TEXT_SAMPLE_DYNAMIC保留bank在不透明净底下。旧v0.1失败PNG/GIF/PSD原字节留档。",
+    "先做单张中性代表图与72层PSD合成预览，1024x1536 RGB逐像素零差后才扩44个逻辑时间线采样项及GIF；任意非零即停，不制作第二候选。",
+    "与旧图相比允许变化区仅旧/新12标签alpha并集及原批准标题前沿330像素范围；其它RGB逐像素零差。GIF旧文件实际可解码39存储帧、时间线44采样项，新版须记录实际解码帧数、尺寸、总时长与五分支，不把44误写为必有44存储帧。",
+    "切片/清单记录稳定ID、实际路径/尺寸/SHA、Art版本及Client计划路径，未导入UUID为null。自产具体资源直接用户Gate2，不新增效果专业复审门禁；Gate2前Client不正式导入。"
+  ],
+  "budget": {
+    "representative_limit_seconds": 4200,
+    "full_limit_seconds": 1260,
+    "total_limit_seconds": 5460,
+    "old_full_conservative_upper_seconds": 844.107,
+    "old_total_conservative_upper_seconds": 4999.051,
+    "new_art_presign_activity": "Root核Art run 2026-10-15T01:05:07.580Z至明确纯等待01:06:55Z，全计107.420秒保守上界；独立预算放行见BUDGET_RELEASE.json。",
+    "approved_single_candidate_production_check_cap_seconds_max": 300,
+    "handoff_buffer_seconds_min": 60,
+    "release_condition": "Art本轮预签活动闭合后Root/Tech重算FULL和总保守余量，以较小余量收紧单候选实际硬停，必须另留至少60秒；余额不足则停止。方法预签本身不得当作开图许可。"
+  },
+  "not_tested": ["新v0.2代表图、PSD、GIF与资源登记尚未制作", "具体资源Gate2和Client导入/运行尚未批准"]
+}

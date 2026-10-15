@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-LAYER-PLAN-20261015",
+  "owner": "master",
+  "summary": "精确定位底部按钮字遮挡，提出沿透明空白带无损拆层的第二候选。",
+  "artifacts": [
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/SOURCE_IDENTITIES.json",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/APPROVAL_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "5,660像素差异及空白拆分线可核",
+      "result": "PASS",
+      "evidence": "Art FIRST_NEUTRAL_REVIEW和Tech FIRST_IMAGE_DIFF_DIAGNOSIS独立确认5,660差异及y=1400透明空白带。"
+    },
+    {
+      "criterion": "73层第二候选/零差条件/累计预算/失败停线明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET限定73层、仅一个第二候选、零差及180秒制作核验+60秒收尾；Tech只读复核6/6源SHA及上下alpha不交叠、底部后续图层无alpha重叠。"
+    },
+    {
+      "criterion": "旧候选留档且资源Gate2/Client门禁不混淆",
+      "result": "PASS",
+      "evidence": "旧v0.1/v0.2保留；本批准只授权方案，具体新切片后续直送用户Gate2。"
+    }
+  ],
+  "risks": [
+    "第二候选仍可能因合成管线或底部字顺序出现差异，发生即停。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

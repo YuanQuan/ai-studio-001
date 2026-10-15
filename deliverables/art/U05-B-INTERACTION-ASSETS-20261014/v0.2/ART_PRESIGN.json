@@ -1,0 +1,48 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "role": "art",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.2/LABEL_ALIGN",
+  "decision": "ART_PRESIGNED_SOURCE_ALIGNMENT_WITH_TECH_AND_BUDGET_HOLD",
+  "status": "NO_NEW_IMAGE_PSD_OR_GIF_BEFORE_MATCHING_TECH_PRESIGN_AND_BUDGET_RELEASE",
+  "user_approved_plan": {
+    "approval_path": "tasks/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "approval_status": "USER_APPROVED",
+    "review_packet_sha256": "aa5a12d6bcdfe2c6580ca77f117ec613878632154145b0ea4be8239782d023b1",
+    "source_identities_sha256": "1468041bab848ee7b2653dd117a71dccdfb7e187dc10880d55e4c24959ab8c74",
+    "tech_feasibility_sha256": "fec3cf7828de2caf3260ed6ae4f99e8a1efdfa6998b0870cc370ce03fda7c23e"
+  },
+  "art_plan": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/PRODUCTION_PLAN.md",
+  "art_plan_sha256": "fa00f3d6b22324dd1c5b7044200d34f7074da9a5b31b3a3525bb614a42611923",
+  "source_audit": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/SOURCE_AUDIT.json",
+  "source_audit_sha256": "ffbb4b342d14fb44d85e1d090b98fbf819b1a0a5ef5042fd36c7c3c19ed6c2db",
+  "locked_inputs": {
+    "v01_reconstructed_sha256": "eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a",
+    "v01_animation_gif_sha256": "d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57",
+    "v01_72_layer_manifest_sha256": "18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3",
+    "v02_labels": "12 approved Component v0.2 full-canvas layer paths/hashes in SOURCE_AUDIT.json",
+    "old_counter_front_index": 61,
+    "old_text_labels_header_index": 70
+  },
+  "method": "New v0.2 directory only; use approved Component v0.2 sources for all 12 rack labels in both preview/GIF and PSD manifest, move TEXT_LABELS_HEADER before COUNTER_FRONT while retaining original TEXT_SAMPLE_DYNAMIC bank below opaque static. No other art source, character, timing, cup, button, font, or background changes.",
+  "first_output_gate": "Neutral full-scene representative image plus a 72-layer PSD composite must agree exactly in 1024x1536 RGB before the remaining 44 timeline samples, GIF and manifests are produced.",
+  "acceptance": [
+    "v0.2 neutral preview versus new 72-layer PSD preview: 0 different RGB pixels",
+    "v0.2 versus v0.1 changes confined to union of old/new 12 label alpha regions plus approved 330-pixel title/counter overlap region; outside 0",
+    "44 timeline sample events unchanged; decoded GIF frame count, size and duration reported from actual output (old decoded 39 frames)",
+    "Independent v0.1 frozen PNG/GIF/PSD files remain byte-identical",
+    "Actual cuts and IDs recorded; Client import/UUID and runtime remain NOT_TESTED until Gate2"
+  ],
+  "budget": {
+    "representative_activity_minutes_max": 70,
+    "full_activity_minutes_max": 21,
+    "total_activity_minutes_max": 91,
+    "baseline_full_conservative_seconds": 844.107,
+    "baseline_total_conservative_seconds": 4999.051,
+    "old_activity_not_reset": true,
+    "single_candidate_production_and_check_cap_seconds_max": 300,
+    "handoff_buffer_seconds_min": 60,
+    "imagegen_calls": 0,
+    "release_condition": "Matching Tech v0.2 presign and updated activity balance. Set actual cap no greater than remaining minus 60 seconds; otherwise stop."
+  },
+  "stop_rule": "No output before matching Tech presign/budget release. Any nonzero neutral PSD mismatch, out-of-scope change, missing input, or cap exceed stops; no automatic new variant or semantic change."
+}

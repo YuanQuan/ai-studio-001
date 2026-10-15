@@ -1416,4 +1416,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `FINALIZATION_FLOW_V04_STARTED`：新Master Task三Required首产；Art新批预签与只读源审计8/8冻结文件、72/72层源实存，Art IN_PROGRESS；Tech READY待同批首产，Client BLOCKED等Gate2。
 - `FINALIZATION_METHOD_PRESIGNED_BUDGET_HOLD`：Art/Tech同批方法签认及Art只读源审实存；Tech预算HOLD未放行PSD组装。Art/AssetTech IN_PROGRESS，Client BLOCKED，资源Gate2未发生。
 - `FINALIZATION_PSD_REVISE_STOP`：Tech同批预算放行70秒+60秒；Art47秒组装可读72层PSD SHA 50bfb0e41f8361b58a4e7cfc465961de2b16df7ddefcdd00f4741a2c3905fb3a，但对冻结图差57,225像素/3.638%，36秒整理后按停止规则停工。Art/AssetTech/Client BLOCKED，v0.4流程REVIEW，无具体资源Gate2。
+- `LABEL_SOURCE_PLAN_USER_APPROVED`（2026-10-15T01:04:44Z）：12标签v0.2源统一和小料标题遮挡修正方案三SHA核一致，预算代表70/FULL21/总91分钟累计；具体资源Gate2仍待。
+- `LABEL_ALIGNMENT_FLOW_V05_STARTED`：新Master任务三Required首产，v0.5 IN_PROGRESS；新Art v0.2/Tech同批签与候选未获实际交付，Client BLOCKED。
+- `LABEL_ALIGNMENT_ART_PRESIGNED_WAIT_TECH`：新Art v0.2预案/预签/源审实存，Art IN_PROGRESS；01:06:55 UTC暂停纯等待。Tech正式Task READY但无首产，预算放行与新图未发生，Client BLOCKED。
+- `LABEL_ALIGNMENT_FIRST_NEUTRAL_REVISE_STOP`：同批Art/Tech签与预算放行后，Art88秒出中性图+72层PSD，差5,660像素仅底部按钮文字，复合文字层整体前移造成遮挡；Art按零差停止。无GIF/正式清单/Gate2；Art/AssetTech/Client BLOCKED，v0.5 FLOW REVIEW。
 <!-- U05-B-LANDING-20261014 END -->

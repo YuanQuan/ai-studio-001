@@ -1,0 +1,34 @@
+{
+  "id": "U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015",
+  "title": "U05标签修正版资源同批预签与元数据核验",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "锁同批源身份、预算和72层/动画/清单技术核验，不替代具体资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/ART_PRESIGN.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "首图前同批Art/Tech签与实际活动余额放行可核",
+    "新版72层PSD与重组图零差、切片/动画/资源身份符合方案",
+    "Gate2前Client维持阻塞，技术通过不替代用户审批"
+  ],
+  "dependencies": [
+    "U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Tech本批技术签、预算和实际产物核验；TECH_PRESIGN/BUDGET_RELEASE实际首产并放行唯一候选。",
+    "技术签仅方法/格式审查，具体美术切片仍直接交用户Gate2。Art唯一首图PSD对中性图差5,660像素触停止线，当前资源生产依赖BLOCKED，不冒称成品技术通过。"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "U05-B-LABEL-ALIGNMENT-ASSETS-20261015",
+  "owner": "art",
+  "summary": "获批v0.2标签源统一首张中性代表与72层PSD已生成，但两者相差5,660 RGB像素，按首图零差门禁停止；未扩44时间线/GIF、正式清单/切片未就绪，未交Gate2。",
+  "artifacts": [
+    "PRODUCTION_PLAN.md",
+    "ART_PRESIGN.json",
+    "SOURCE_AUDIT.json",
+    "source/build_v02.py",
+    "source/psd_manifest_full.json",
+    "source/workspace_b_master.psd",
+    "review/reconstructed.png",
+    "review/workspace_b_master_preview.png",
+    "review/FIRST_NEUTRAL_REVIEW.json",
+    "CUT_MANIFEST.json",
+    "ASSET_MANIFEST.md",
+    "PRODUCTION_LEDGER.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户方案批准、Art/Tech同批预签与预算放行",
+      "result": "PASS",
+      "evidence": "预签/放行实存；首候选制作核验88秒低于240秒硬停。"
+    },
+    {
+      "criterion": "v0.2中性代表与72层PSD合成零差",
+      "result": "FAIL",
+      "evidence": "review/FIRST_NEUTRAL_REVIEW.json: 5,660个RGB像素差，全部在两个底部按钮文字区域。"
+    },
+    {
+      "criterion": "扩批GIF、组件表、正式切片与Gate2",
+      "result": "NOT_TESTED",
+      "evidence": "首图门禁失败后停止，未扩批；Client未导入、运行未测。"
+    }
+  ],
+  "assumptions": [
+    "旧v0.1全部留档，未倒写；本次只做一个中性+PSD候选。"
+  ],
+  "risks": [
+    "标题整层前移时会遮蔽查看配方/撤销的既有文字，需要另行审定处理方法。"
+  ],
+  "status": "BLOCKED"
+}

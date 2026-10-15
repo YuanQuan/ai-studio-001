@@ -1,0 +1,31 @@
+{
+  "task_id": "U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.2/LABEL_ALIGN",
+  "decision": "RELEASE_ONE_CANDIDATE_WITH_240_SECOND_HARD_STOP",
+  "method_presign": "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/TECH_PRESIGN.json",
+  "activity_basis": "Root核Art Agent run开始至明确纯等待暂停，整段保守计活动；未扣未知等待，净实际活动UNKNOWN。",
+  "conservative_budget_seconds": {
+    "prior_full_upper": 844.107,
+    "prior_total_upper": 4999.051,
+    "art_presign_start_utc": "2026-10-15T01:05:07.580Z",
+    "art_pure_wait_pause_utc": "2026-10-15T01:06:55Z",
+    "art_presign_upper": 107.42,
+    "full_cumulative_upper_before_release": 951.527,
+    "full_limit": 1260,
+    "full_remaining_lower_bound": 308.473,
+    "total_cumulative_upper_before_release": 5106.471,
+    "total_limit": 5460,
+    "total_remaining_lower_bound": 353.529,
+    "single_candidate_production_and_check_hard_cap": 240,
+    "handoff_buffer_minimum": 60,
+    "binding_full_guard_after_both": 8.473
+  },
+  "release_conditions": [
+    "仅新Art v0.2同批唯一候选：先中性代表图与72层PSD RGB零差，再沿同源扩原44逻辑采样、GIF和清单；制作+核验全部合计240秒活动硬停。Art实际开始/结束时钟入账。",
+    "另外保留至少60秒给切片/身份清单与交付整理；若240秒内未完成零差与范围/时序核验，即停并记录部分事实，不自动第二候选或追认延长。",
+    "如开工前又发生Art活动审计/预案更新，其活动须先扣本余额并收紧240秒硬停；不足以保留60秒则不启动。",
+    "此放行不是Gate2，也不准Client正式导入新资源。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_ART_TURN_UPPER_USED"
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-LABEL-ALIGNMENT-PRODUCTION-FLOW-20261015",
+  "owner": "producer",
+  "summary": "准确记录已批准的标签源统一和小料标题遮挡修正，v0.5追踪同批预签、单候选与具体资源Gate2。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户批准方案版本、预算与同批预签可追溯",
+      "result": "PASS",
+      "evidence": "三冻结SHA与USER_APPROVED一致；Art v0.2预签/源审、Tech TECH_PRESIGN/BUDGET_RELEASE实存，首图前FULL保守上界951.527秒、总5106.471秒，唯一候选240秒硬线+60秒交接缓冲。"
+    },
+    {
+      "criterion": "单候选视觉/技术结果和具体资源Gate2门禁准确",
+      "result": "FAIL",
+      "evidence": "唯一中性重组SHA ef101b99caa8511d0cb6a19f91bd183ea83570bcb0303baa784cbb9f946ee947、72层PSD SHA 382ecfffc8036bf15164eee4dccdfbd11c158fd9db8e5abcdc6b4fd80d9304ca 实存；PSD预览差5,660 RGB像素、bbox[169,1464,580,1504]，不满足首图零差；Art REVISE_STOP，未扩GIF/正式清单/Gate2，Client BLOCKED。"
+    },
+    {
+      "criterion": "五共享文件仅U05块及简短流程复盘",
+      "result": "PASS",
+      "evidence": "五U05标记同步01:10:21–01:11:49 UTC唯一代表88秒、文字复合层遮挡失败及Art/AssetTech/Client BLOCKED；旧历史保留。"
+    }
+  ],
+  "risks": [
+    "复合TEXT_LABELS_HEADER整体前移使底部按钮文字被底板遮挡；新处理方式须具体决定，不能自动做第二候选。",
+    "唯一代表未零差，无完整GIF/正式资源清单或Gate2；Client接入继续锁定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

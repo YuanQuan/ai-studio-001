@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-LABEL-ALIGNMENT-PRODUCTION-FLOW-20261015",
+  "title": "U05标签源统一制作与资源审核流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "追踪已批准v0.2标签源修正、Art/Tech同批预签、单候选产出及具体资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/APPROVAL_HASHES.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.5/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "用户批准方案版本、预算与同批预签可追溯",
+    "单候选视觉/技术结果和具体资源Gate2门禁准确",
+    "五共享文件仅U05块及简短流程复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Producer本任务、原Art/AssetTech状态和五共享U05 marker；旧v0.1–v0.4历史不覆盖。",
+    "用户批准修正方案不等于批准具体资源，也不放行Client导入。",
+    "Producer v0.5三Required记录新Art/Tech预签、预算放行及唯一中性候选首图零差失败，进入REVIEW待Master核证；未形成Gate2资源。",
+    "Master接受Producer v0.5真实失败跟踪 AUTO DONE；MASTER_LABEL_ALIGN_FLOW_REVIEW.json，仅流程通过，资源仍BLOCKED。"
+  ]
+}

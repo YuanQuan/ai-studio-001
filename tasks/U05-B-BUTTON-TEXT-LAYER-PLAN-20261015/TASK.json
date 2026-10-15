@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-BUTTON-TEXT-LAYER-PLAN-20261015",
+  "title": "U05底部按钮文字无损拆层方案",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "提出5,660像素按钮文字遮挡的最小无损修正与第二候选/预算决定。",
+  "inputs": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.2/review/FIRST_NEUTRAL_REVIEW.json",
+    "deliverables/tech_lead/U05-B-LABEL-ALIGNMENT-ASSET-TECH-20261015/v0.1/FIRST_IMAGE_DIFF_DIAGNOSIS.md"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/SOURCE_IDENTITIES.json",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "5,660像素差异及空白拆分线可核",
+    "73层第二候选/零差条件/累计预算/失败停线明确",
+    "旧候选留档且资源Gate2/Client门禁不混淆"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户未批准本拆层和第二候选前，Art不得新产图/PSD/GIF。"
+  ]
+}
