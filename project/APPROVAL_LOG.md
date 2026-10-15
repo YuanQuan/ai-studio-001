@@ -686,4 +686,8 @@ v0.3核心PSD/GIF虽通过零差核验，实际CUT/ASSET/LEDGER/DELIVERABLE缺�
 Tech独立`REVIEW.json`终审BLOCKED：静态资源身份核过，但计划客户端路径错误、Art活动超硬线约16秒且账本/交付漏报。Master纠正方案v0.1仅待审、未获用户批准；Producer v0.8内部流程监督AUTO DONE不构成资源Gate2或客户端接入批准。
 2026-10-15T05:59:52Z（Producer登记，用户消息精确秒未知）：用户明确批准`U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1`，三冻结文件SHA逐件匹配，`tasks/U05-B-REGISTER-CORRECTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json` USER_APPROVED，旧USER_REVIEW快照保留。仅授权四文档定点纠正路径与最终超时披露，冻结视觉10件；累计代表70/FULL36/总106分钟、旧活动不清零，新活动240秒硬停+60秒交接。原超时不追认合规，不等于具体资源Gate2或Client接入。
 本次已批定点纠正方案执行在正式写入前预检失败：Art06:01:38–06:04:10 UTC约152秒误读冻结清单`files`映射类型，原四文档/冻结10件未改，方案唯一修订机会已用并停工。方案USER_APPROVED历史保留，但未产生可送Gate2的更正版，Client接入继续锁。
+2026-10-15T07:01:27Z（Producer登记，用户消息精确秒未知）：用户明确批准`U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1`，三冻结文件SHA逐件匹配，`tasks/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json` USER_APPROVED，旧USER_REVIEW快照保留。仅授权已归档签名脚本核后一次修四文档、冻版10件，累计代表70/FULL39/总109分钟且旧活动不清零；原超硬线16秒与152秒失败留痕。本批准非具体资源Gate2或Client接入。
+受控四文档修正已一次执行并实存，Art完整活动07:05:22–07:06:06 UTC保守44秒且四正式SHA与退出审计一致；这是已批方案的执行结果，旧约16秒超硬线/152秒预检失败仍留痕，预算FAIL不追认。Tech独立终审与用户具体资源Gate2均尚未完成，Client导入锁保持。
+Tech独立终审已APPROVED for U05 Art v0.3具体资源Gate2；Producer逐SHA锁实际72文件于`deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/GATE2_FROZEN_HASHES.json`（SHA ff1d60b0…04090d5），`tasks/U05-B-BUTTON-TEXT-ASSETS-20261015/ARTIFACT_APPROVAL_v0.3.json`为USER_REVIEW/decided_at null。历史约16秒超硬线与152秒失败、预算FAIL必须随实际切片/PSD/重组/GIF提交用户，不追认合规；用户尚未批准具体资源，Client接入继续锁。
+Master已内部核收v1.0 Producer流程监督三Required与72/72实物SHA，FLOW Task AUTO DONE；此不是用户具体资源Gate2批准。Art v0.3仍USER_REVIEW、历史预算FAIL继续披露，Client接入锁保持。
 <!-- U05-B-LANDING-20261014 END -->

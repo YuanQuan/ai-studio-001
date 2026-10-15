@@ -1,20 +1,20 @@
 {
   "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
   "reviewer": "tech_lead",
-  "decision": "BLOCKED",
+  "decision": "APPROVED",
   "findings": [
     {
       "severity": "INFO",
-      "message": "四清单实存，58 PNG和FNT路径/SHA/尺寸/alpha匹配，冻结10件不变；PSD73层RGB零差、GIF39帧3900ms、时间线44项静态通过；DELIVERABLE结构符合schema。"
+      "message": "四正式文件路径/SHA/格式通过：58 PNG ID唯一、54运行路径正确、4不接入null、FNT单列、ASSET55路径；冻10/10，PSD73层RGB零差，GIF39帧3900ms，DELIVERABLE schema合格。"
+    },
+    {
+      "severity": "INFO",
+      "message": "最终方案USER_APPROVED/三SHA、归档脚本SHA/同批预算签一致；新轮07:05:22–07:06:06约44秒低于240秒硬线，账本按240秒保守上界；退出检查点由临时审计记录，Producer须登记可靠事件。"
     },
     {
       "severity": "MAJOR",
-      "message": "可运行项计划路径client/assets/resources/u05b/与项目已核实际apps/client/assets/resources/u05_milk_tea/u05_b/不一致。"
-    },
-    {
-      "severity": "MAJOR",
-      "message": "Art本轮约256秒超240秒硬线约16秒；账本仅记录precommit180.281秒并标Gate2就绪，交付验收预算PASS且未列超时。"
+      "message": "首轮约256秒超240秒硬线约16秒且未追认，次轮152秒预检失败已保留；Art交付预算FAIL正确。此历史违规须随实际资源一并向用户呈报，不得改写为预算合规。"
     }
   ],
-  "next_action": "Producer记录超时，Master/Producer决定处置；Art停工，获明确授权后仅更正路径与账本/风险，不改冻结10件。Tech复核后方能交用户具体资源Gate2；批准前Client不得正式导入。"
+  "next_action": "Producer据Tech终审核实流转并登记07:05:22–07:06:06事件；Master将实际切片/PSD/重组/GIF及历史超时事实提交用户具体资源Gate2。用户批准前Client不得正式导入，接入后另核真实Cocos运行。"
 }

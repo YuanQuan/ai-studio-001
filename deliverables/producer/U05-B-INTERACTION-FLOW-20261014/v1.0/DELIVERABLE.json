@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-REGISTER-FINAL-DOC-FIX-FLOW-20261015",
+  "owner": "producer",
+  "summary": "登记用户批准的签名脚本单次四文档修正方案，监督真实退出时长、历史披露、Tech核验及具体资源Gate2门禁。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录方案批准版本、SHA及累计额度，原违规/失败不追认",
+      "result": "PASS",
+      "evidence": "三冻结SHA逐件核对一致，USER_APPROVED和旧USER_REVIEW快照落盘；代表70/FULL39/总109分钟累计，原16秒超时与152秒失败均保留，新活动240秒硬停+60秒交接。"
+    },
+    {
+      "criterion": "实核脚本退出事件和Art完整活动时长，四文档与Tech核验前不放Gate2",
+      "result": "PASS",
+      "evidence": "唯一签名脚本一次--commit成功，run_exit_audit.json退出检查点07:06:00.078646 UTC；Art完整活动07:05:22–07:06:06 UTC保守44秒。Tech独立终审APPROVED for Gate2，72实际文件SHA锁GATE2_FROZEN_HASHES.json；准确Art v0.3 USER_REVIEW，Client未导入。"
+    },
+    {
+      "criterion": "五处U05状态和可核时间复盘同步",
+      "result": "PASS",
+      "evidence": "五处U05 marker及复盘记录完整活动44秒与脚本退出检查点、保守预算240秒上界、原历史超时/失败保留；Tech终审APPROVED后准确Art v0.3送USER_REVIEW。"
+    }
+  ],
+  "risks": [
+    "Tech独立终审已批准具体资源送Gate2；用户尚未批准准确v0.3实物，Client未导入。",
+    "原约16秒超硬线历史未追认合规，账本预算验收仍FAIL；本轮活动实际44秒与保守240秒上界须分别解读。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

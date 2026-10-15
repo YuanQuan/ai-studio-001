@@ -1,0 +1,35 @@
+{
+  "id": "U05-B-REGISTER-FINAL-DOC-FIX-ART-20261015",
+  "title": "U05登记四文档受控单次修正",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "仅运行已批准且Tech签名的受控工具一次，修正U05 v0.3四份资源登记文件。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/APPROVAL_HASHES.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/u05_final_doc_fix_once.py"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确审批、三方案SHA、同批Tech签和脚本SHA均先于执行核验",
+    "只运行归档脚本一次，四文档路径/历史超时/失败记录准确，冻10件不改",
+    "新轮活动小于240秒硬线并保留60秒交接，实际退出事件交Producer记录",
+    "正式文件完成后仍待Tech独立核查及用户具体资源Gate2"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015"
+  ],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "Art使用gpt-6-sol/high；冻结视觉10件不改。Tech同批预算签实存前不得执行。",
+    "脚本原字节SHA为544495d1a022c71441404eff6ca94e72512141716862568801b164c122792828。",
+    "Tech同批预算签后Art已一次--commit修正四文档；脚本退出检查点07:06:00.078646 UTC、完整活动07:05:22–07:06:06 UTC保守44秒，小于240秒硬线。四正式SHA与退出审计一致、冻结10件据Art报告零改；待Tech独立终审，具体Gate2/Client未解锁。"
+  ]
+}

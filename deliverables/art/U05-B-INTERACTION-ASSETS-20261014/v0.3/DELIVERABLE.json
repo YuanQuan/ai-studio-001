@@ -17,8 +17,8 @@
   "acceptance_results": [
     {
       "criterion": "同批签认及预算",
-      "result": "PASS",
-      "evidence": "用户审批、Art/Tech 签认和补充预算放行实存。"
+      "result": "FAIL",
+      "evidence": "历史首轮约 256 秒，超过 240 秒单轮上限约 16 秒且未追认；第二次失败 dry-run 用时 152 秒。本次开始前累计 FULL 1956.148 秒、总计 6111.092 秒。"
     },
     {
       "criterion": "73 层母版与中性图零差",
@@ -34,13 +34,21 @@
       "criterion": "Gate2 与客户端运行",
       "result": "NOT_TESTED",
       "evidence": "具体资源未获用户 Gate2 批准，Client 未导入，UUID null。"
+    },
+    {
+      "criterion": "独立 Tech 终审",
+      "result": "NOT_TESTED",
+      "evidence": "临时预检内容通过；正式替换和独立 Tech 终审尚未执行。"
     }
   ],
   "assumptions": [
     "冻结 10 件源文件保持原字节。"
   ],
   "risks": [
-    "具体资源 Gate2 和实际运行尚待后续流程。"
+    "具体资源 Gate2 和实际运行尚待后续流程。",
+    "预算判定 FAIL：历史首轮约超 240 秒硬上限 16 秒且未追认；先前累计 FULL/总计为 1956.148/6111.092 秒。",
+    "Gate2 具体资源审批仍为 PENDING；本登记修正不构成用户批准，客户端未导入，UUID 仍为空。",
+    "独立 Tech 终审尚未完成；登记保持 BLOCKED_PENDING_INDEPENDENT_TECH_REVIEW。"
   ],
   "status": "READY_FOR_REVIEW"
 }

@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-REGISTER-FINAL-DOC-FIX-FLOW-20261015",
+  "title": "U05登记四文档受控修正流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "监督已批准的签名工具单次执行、真实退出时长、历史超时披露、Tech复核与Gate2门禁。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/REVIEW_PACKET.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v1.0/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录方案批准版本、SHA及累计额度，原违规/失败不追认",
+    "实核脚本退出事件和Art完整活动时长，四文档与Tech核验前不放Gate2",
+    "五处U05状态和可核时间复盘同步"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015"
+  ],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "用户批准的是文档修正，不是具体资源Gate2或Client正式接入。",
+    "v1.0三Required及GATE2_FROZEN_HASHES实存；Tech独立终审APPROVED for具体资源Gate2，Art v0.3 USER_REVIEW、Client仍锁；Producer流程监督经Master复核三项PASS、72/72 SHA/字节匹配及清单自SHA后AUTO DONE，预算历史FAIL不追认。"
+  ]
+}

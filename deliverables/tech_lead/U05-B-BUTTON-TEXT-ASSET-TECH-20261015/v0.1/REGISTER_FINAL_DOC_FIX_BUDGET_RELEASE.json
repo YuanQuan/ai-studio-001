@@ -1,0 +1,41 @@
+{
+  "task_id": "U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "decision": "CONDITIONAL_RELEASE_ONE_FINAL_DOC_FIX",
+  "approval_record": "tasks/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+  "approval_record_sha256": "ae1d646bcc55e9f2234f7931501ccad7940ff96862661dc731c5c27d1700ef03",
+  "approval_status": "USER_APPROVED",
+  "approval_hashes": "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/APPROVAL_HASHES.json",
+  "approval_hashes_sha256": "93482ebcec3b7eb8303ab6248697635bd898e4cff208367361696c55931e49ad",
+  "approved_plan_files_sha_verified": "3/3",
+  "script_path": "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/u05_final_doc_fix_once.py",
+  "script_sha256": "544495d1a022c71441404eff6ca94e72512141716862568801b164c122792828",
+  "frozen_inputs": "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+  "frozen_inputs_sha256": "835e81a4c3b90b3e494fd3b7faf591fcefe13c7e01095adcfccdb125d7a794c1",
+  "frozen_visual_files_sha_and_bytes_verified": "10/10",
+  "four_original_documents_sha_verified": "4/4",
+  "conservative_budget_seconds": {
+    "representative_limit": 4200,
+    "prior_full_upper": 1956.148,
+    "new_full_limit": 2340,
+    "full_remaining_lower_bound": 383.852,
+    "prior_total_upper": 6111.092,
+    "new_total_limit": 6540,
+    "total_remaining_lower_bound": 428.908,
+    "binding_limit": "FULL",
+    "activity_hard_cap_seconds": 240,
+    "failure_stop_and_handoff_buffer_minimum_seconds": 60,
+    "full_guard_after_cap_and_buffer": 83.852,
+    "old_activity_reset": false,
+    "prior_256_second_turn_breach": "APPROXIMATELY_16_SECONDS_NOT_WAIVED",
+    "prior_failed_preflight_seconds": 152
+  },
+  "conditions": [
+    "Art开工前据可靠事件核当轮真实UTC起点、新增活动与余额；若有新增活动先扣并收紧240秒硬停，至少保留60秒交接。",
+    "仅运行此SHA绑定的归档脚本一次，先完成只读预检与临时预览，再对四份登记作一次受控替换；冻结10件与图像、PSD、GIF、字体、切片及客户端资源不改。",
+    "原首轮超时与次轮152秒失败均保留；预算验收FAIL，不追认历史违规。CUT/LEDGER保持BLOCKED，待Tech独立终审。",
+    "脚本完成后仍以Art/Producer实际退出事件核完整活动；若越240秒硬线或替换/回滚失败，保持BLOCKED并核逐件SHA，不因脚本输出COMMIT_COMPLETE追认。",
+    "本签不是具体资源Gate2；Tech终审、Producer登记、Master向用户呈报实际资源及历史违规后，用户明确批准前Client不得正式导入。"
+  ]
+}

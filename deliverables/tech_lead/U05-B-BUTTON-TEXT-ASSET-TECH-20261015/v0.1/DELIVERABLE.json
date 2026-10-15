@@ -1,41 +1,48 @@
 {
   "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
   "owner": "tech_lead",
-  "summary": "v0.3静态资源身份通过；计划客户端路径错误且活动硬线超时未入账，整包BLOCKED。",
+  "summary": "v0.3资源及登记技术终审通过，可连同未追认历史超时事实提交用户具体资源Gate2；尚未获Gate2，Client不得导入。",
   "artifacts": [
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_PRESIGN.json",
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/BUDGET_RELEASE.json",
-    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_CLOSURE_BUDGET_RELEASE.json",
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_EXECUTION_BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_CORRECTION_BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_FINAL_DOC_FIX_BUDGET_RELEASE.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/u05_final_doc_fix_once.py",
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json",
     "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/DELIVERABLE.json"
   ],
   "acceptance_results": [
     {
-      "criterion": "58 PNG、FNT、PSD/GIF、冻结10件静态身份",
+      "criterion": "同批审批/脚本/预算签身份",
       "result": "PASS",
-      "evidence": "TECH_METADATA_CHECK.md逐项核验。"
+      "evidence": "最终方案USER_APPROVED、三方案SHA、脚本SHA与同批Tech签一致。"
     },
     {
-      "criterion": "客户端稳定计划路径",
-      "result": "FAIL",
-      "evidence": "清单client/assets/resources/u05b与已核apps/client/assets/resources/u05_milk_tea/u05_b不一致。"
+      "criterion": "58 PNG+FNT、计划路径、四文档/schema、冻结资源",
+      "result": "PASS",
+      "evidence": "TECH_METADATA_CHECK.md逐项核路径/SHA/元数据、54运行+4null、ASSET55、冻10/10、PSD/GIF。"
     },
     {
-      "criterion": "活动硬线与实际账本一致",
-      "result": "FAIL",
-      "evidence": "Art报约256秒超240秒硬线约16秒；账本只计precommit180.281秒。"
+      "criterion": "本轮240秒活动硬线",
+      "result": "PASS",
+      "evidence": "Art/Root实际07:05:22–07:06:06约44秒，工具退出检查点07:06:00.078646；账本先按240秒保守上界。"
     },
     {
-      "criterion": "具体资源Gate2及运行",
+      "criterion": "历史预算违规披露",
+      "result": "PASS",
+      "evidence": "账本与Art交付保留首轮约超16秒未追认及次轮152秒失败，预算准则FAIL。此PASS仅指披露完整，不指历史预算合规。"
+    },
+    {
+      "criterion": "用户具体资源Gate2及客户端运行",
       "result": "NOT_TESTED",
-      "evidence": "用户尚未批准具体资源，Client未导入，运行未测。"
+      "evidence": "用户尚未审批具体资源，Client未正式接入/运行。"
     }
   ],
   "risks": [
-    "超时须Producer记录并由Master/Producer处置。",
-    "计划路径及活动账本/交付风险须更正后复核。"
+    "首轮预算超时未获追认，须随资源提交用户。",
+    "实际全轮时间仍须Producer可靠事件登记；静态技术通过不代替Gate2或Cocos运行。"
   ],
-  "status": "BLOCKED"
+  "status": "READY_FOR_REVIEW"
 }

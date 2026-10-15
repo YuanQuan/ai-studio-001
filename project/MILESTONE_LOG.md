@@ -1432,4 +1432,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `REGISTER_EXECUTION_TECH_BLOCKED_FLOW_AUTO_DONE`：Tech独立终审静态资源核PASS但整体BLOCKED：计划客户端路径错误、超240秒硬线约16秒及账本/交付漏报。Master纠正方案仅待审；Producer v0.8监督Task AUTO DONE，Art/AssetTech/Client仍BLOCKED，无资源Gate2与Client导入。
 - `REGISTER_CORRECTION_PLAN_USER_APPROVED_V09_STARTED`（Producer 2026-10-15T05:59:52Z登记）：三SHA匹配、旧待审快照留存；仅四文档定点改路径/超时披露，冻版10件，代表70/FULL36/总106分钟累计，240秒硬停+60秒交接且原超时不追认。方案Task DONE、Producer v0.9三Required首产IN_PROGRESS，新Art Task READY待同批补签，无Gate2/Client导入。
 - `REGISTER_CORRECTION_PREFLIGHT_STOP`：Tech同批补签后Art06:01:38–06:04:10 UTC约152秒预检误读FROZEN_INPUTS.files映射类型，正式写入前依唯一失败停工；原四文档与冻结10件未改。新Art/AssetTech/Client BLOCKED，目录与超时记录仍错，具体Gate2未送。
+- `FINAL_DOC_FIX_PLAN_USER_APPROVED_V10_STARTED`（Producer 2026-10-15T07:01:27Z登记）：三SHA一致、旧待审快照留存；仅签名脚本一次修四文档，冻版10件、代表70/FULL39/总109分钟累计，旧16秒违规与152秒失败保留，新活动240秒硬停+60秒交接。方案Task DONE，Producer v1.0三Required首产IN_PROGRESS，新Art Task READY待同批补签，无Gate2/Client导入。
+- `FINAL_DOC_FIX_ONCE_COMMIT_COMPLETE`：Art签名脚本一次--commit退出码0，退出检查点07:06:00.078646 UTC、完整活动07:05:22–07:06:06 UTC保守44秒<240；四正式SHA与退出审计一致，冻结10件报告零改。原16秒超时/152秒失败保留，预算FAIL；新Art Task REVIEW、Tech终审待产，Gate2/Client仍锁。
+- `ART_V03_ACTUAL_RESOURCE_GATE2_USER_REVIEW`：Tech独立终审APPROVED for Gate2，Producer72路径/SHA审计ff1d60b0…04090d5锁实际资源，原Art v0.3 Task及审批USER_REVIEW。预算FAIL、历史16秒超限和152秒失败随包披露；Client仍BLOCKED未导入，用户实际资源批准尚无。
+- `FINAL_DOC_FIX_FLOW_AUTO_DONE`：Master复核Producer三Required三项PASS与Gate2清单72/72 SHA/字节及自SHA后接受FLOW Task DONE。Art v0.3仍USER_REVIEW，历史预算FAIL保留，Client未导入。
 <!-- U05-B-LANDING-20261014 END -->

@@ -1,0 +1,9 @@
+# U05登记四文档受控修正流程 v1.0
+
+- 用户已明确批准`U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1`。Producer于2026-10-15T07:01:27Z登记（用户消息精确秒未知）；`REVIEW_PACKET.md`、`TECH_FEASIBILITY_REVIEW.md`、`DELIVERABLE.json`三份冻结SHA逐件匹配，原USER_REVIEW快照保留，Master接受方案Task DONE。
+- 唯一授权为使用已归档签名脚本先核冻结输入与新轮真实UTC起点、临时预览后一次受控替换原四文档；视觉10件不变。旧约16秒超硬线及上轮152秒预检失败如实保留，不追认或清零。累计代表70分钟不变、FULL36→39分钟、总106→109分钟；新活动240秒硬停并留至少60秒故障交接。Art/Tech开工前须重新核余额与同批补签。
+- Producer v1.0三Required首产，流程Task IN_PROGRESS。新Art四文档修正Task READY待同批补签及真实首产，旧Art任务保留历史BLOCKED，AssetTech/Client仍BLOCKED。原四文档仍为Tech BLOCKED版本；脚本正式执行、Tech终审、实际资源Gate2均未发生，Client未导入，旧Web8876不变。
+- Continuity：方案批准已解锁受控执行；须随真实补签、脚本退出事件、Art完整活动与Tech结论更新。方案批准不等于具体资源通过，不能凭预提交时间宣称完整活动合规。
+- Tech `REGISTER_FINAL_DOC_FIX_BUDGET_RELEASE.json` 同批预算签实存，Art使用唯一已归档签名脚本一次`--commit`成功：`/private/tmp/u05_final_doc_fix_once/run_exit_audit.json` 记录`COMMIT_COMPLETE`及脚本退出检查点2026-10-15T07:06:00.078646Z；Art完整活动07:05:22–07:06:06 UTC保守44秒，小于本轮240秒硬线，不能用07:06:00预提交/退出检查点替代完整结束。四正式文件SHA逐件与退出审计一致：CUT `a1250ac7…a0442e4`、ASSET `9ce9f560…641a8`、LEDGER `e5035300…431df`、DELIVERABLE `04945efb…d4cb0`；冻结视觉10/10据Art和脚本审计前后SHA/字节一致。文档如实保留原约16秒超限和152秒失败，预算验收FAIL，现轮账本保守上界仍按240秒而实际闭合44秒单列，不追认历史违规。
+- 新Art四文档Task已实产到REVIEW，Tech独立终审待产；具体资源Gate2仍未送，Client未正式导入、旧8876未更新。Continuity：下一可继续节点为Tech核四文档路径/时间/资源身份；Producer据其结果更新门禁，不把脚本成功视为用户资源批准。
+- Tech独立终审 `deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REVIEW.json` 已为APPROVED：四正式文件路径/SHA/格式、58 PNG身份、54运行路径、4不接入空路径、FNT单列、ASSET55路径、冻版10/10、PSD73层零差和GIF39帧3900ms通过。原首轮约16秒超时与次轮152秒失败及预算FAIL明确保留，Tech的APPROVED仅表示可送**具体资源Gate2**。Producer `GATE2_FROZEN_HASHES.json` 锁72个实际文件路径/SHA（审计SHA `ff1d60b0…04090d5`），原Art v0.3 Task由BLOCKED进USER_REVIEW，`ARTIFACT_APPROVAL_v0.3.json`为USER_REVIEW/decided_at null。Master须把真实切片/PSD/重组/GIF连同历史违规呈用户审核；用户未批，Client仍BLOCKED且未导入、旧8876不变。Continuity：已授权制作与专业核验均有实产，下一门禁为用户对准确具体资源v0.3的决定。
