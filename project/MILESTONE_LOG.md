@@ -1424,4 +1424,7 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `BUTTON_TEXT_FLOW_V06_STARTED`：Producer三Required首产，Art/Tech新任务READY待真实预签，Client BLOCKED。
 - `BUTTON_TEXT_CORE_ZERO_DIFF`：同批Art/Tech预签+预算放行后，Art134秒产73层PSD/中性图零RGB差及GIF44逻辑/39实帧/3900ms；Art/Tech IN_PROGRESS待正式清单和独立成品核，Gate2/Client导入未发生。
 - `BUTTON_TEXT_HANDOFF_SCRIPT_STOP`：核心PSD/GIF通过，但01:59:49 UTC批量清单脚本非UTF SyntaxError未执行，CUT/ASSET/LEDGER/DELIVERABLE四Required缺件；Art按140+60停工，Tech整包终审BLOCKED，Client BLOCKED，无Gate2。
+- `RESOURCE_REGISTER_CLOSURE_PLAN_USER_APPROVED`（Producer 2026-10-15T03:13:30Z登记）：三SHA复核，旧待审快照留存；仅冻结10文件后补四清单、FULL27/总97分钟累计。Art READY待Tech补签，资源Gate2未发生。
+- `RESOURCE_REGISTER_FLOW_V07_STARTED`：新正式Producer Task三Required首产；Tech补充预算签实存、冻结10/10匹配，120秒文档硬线+30秒缓冲。Art READY待四清单实际首产；Gate2/Client接入未发生。
+- `RESOURCE_REGISTER_SCRIPT_ONLY_STOP`：03:15:36–03:17:37 UTC约121秒到120秒硬停，仅UTF-8脚本与语法PASS，无四清单文件；Art/Tech/Client BLOCKED，v0.7 FLOW REVIEW，无Gate2。
 <!-- U05-B-LANDING-20261014 END -->

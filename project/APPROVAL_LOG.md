@@ -679,4 +679,6 @@ PATCH-04代表PASS与FULL部分实存均不是具体资源Gate2批准；70层PSD
 新Art v0.2唯一首图已因PSD/中性图差5,660像素而按停止规则停工；这是获批制作方案的实施失败，并非用户对具体资源的Gate2审核或退回。当前仍无新资源USER_APPROVED，Client正式接入锁保持。
 2026-10-15T01:52:04Z用户批准`U05-B-BUTTON-TEXT-LAYER-PLAN-20261015/v0.1`准确底部按钮文字无损拆层方案，三冻结SHA核一致；仅授权y=1400拆层、73层唯一候选及累计代表70/FULL24/总94分钟，旧耗不清零。具体切片资源Gate2仍未批准，Client导入锁不变。
 v0.3核心PSD/GIF虽通过零差核验，实际CUT/ASSET/LEDGER/DELIVERABLE缺件，未形成可提交具体资源Gate2的完整版本；用户此前批准的是拆层制作方案，不等于资源批准。本次停工不是用户Gate2退回，Client导入仍锁。
+2026-10-15T03:13:30Z（Producer登记，用户消息精确秒未知）：用户明确批准`U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1`，三冻结SHA核一致且旧USER_REVIEW快照留存。批准范围仅冻结10实际文件、补CUT/ASSET/LEDGER/DELIVERABLE四清单及累计代表70/FULL27/总97分钟；这不是具体资源Gate2或Client接入批准。
+获批四清单方案本轮执行停在120秒硬线，仅脚本语法通过、四正式文件均未写出；这不是用户具体资源Gate2审核。旧方案USER_APPROVED历史保留，但不能凭它延长本次执行或解锁Client。
 <!-- U05-B-LANDING-20261014 END -->

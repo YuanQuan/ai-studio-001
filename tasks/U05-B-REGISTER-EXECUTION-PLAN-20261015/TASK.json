@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-REGISTER-EXECUTION-PLAN-20261015",
+  "title": "U05资源登记脚本修正及一次执行方案",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "针对已验证的脚本缺陷和硬停，提出仅修正并执行四份资源登记文件的具体方案和额度。",
+  "inputs": [
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/REGISTER_SCRIPT_READONLY_REVIEW.md",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "明确脚本当前缺陷、未运行和四份清单缺件事实",
+    "将新制作限制在一次脚本修正/预检/写入与冻结十件不变",
+    "累计额度、硬停和具体资源Gate2与Client门禁明确"
+  ],
+  "dependencies": [
+    "U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "截至用户批准本具体修订方案前，Art 不得继续运行或修改正式资源登记文件。"
+  ]
+}

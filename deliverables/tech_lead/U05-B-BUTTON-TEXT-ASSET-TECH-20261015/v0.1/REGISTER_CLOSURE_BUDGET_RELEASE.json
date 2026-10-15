@@ -1,0 +1,38 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "phase": "APPROVED_RESOURCE_REGISTER_CLOSURE_SUPPLEMENT",
+  "decision": "RELEASE_FOUR_DOCUMENT_CLOSURE_WITH_120_SECOND_HARD_STOP",
+  "approval": {
+    "path": "tasks/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "sha256": "b906979d4b9e550767a9d7e27420cb762aab94de04e10ca9564946ac4768c56c",
+    "status": "USER_APPROVED",
+    "decided_at": "2026-10-15T03:13:30Z",
+    "frozen_inputs": "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+    "frozen_inputs_sha256": "835e81a4c3b90b3e494fd3b7faf591fcefe13c7e01095adcfccdb125d7a794c1",
+    "frozen_files_matching_sha256": "10/10"
+  },
+  "scope": "沿用本v0.3 Art/Tech同批资源预签，仅补CUT_MANIFEST.json、ASSET_MANIFEST.md、PRODUCTION_LEDGER.json、DELIVERABLE.json；冻结10件PSD/PNG/GIF/源层字节不变，不新裁切、不重渲染、不生成字形。",
+  "conservative_budget_seconds": {
+    "representative_limit": 4200,
+    "full_prior_upper": 1427.148,
+    "full_new_limit": 1620,
+    "full_remaining_lower_bound": 192.852,
+    "total_prior_upper": 5582.092,
+    "total_new_limit": 5820,
+    "total_remaining_lower_bound": 237.908,
+    "document_generation_and_check_hard_cap": 120,
+    "failure_stop_and_handoff_buffer_minimum": 30,
+    "binding_full_guard_after_both": 42.852,
+    "old_activity_reset": false,
+    "art_new_activity_before_release": 0
+  },
+  "execution_conditions": [
+    "Art本轮尚未开工；实际开始/停止时钟入账。先确保本地脚本文件实际UTF-8且语法检查通过，再在120秒活动硬停内只读既有资源写四份登记并自核。",
+    "清单逐项记已批v0.1/v0.2复用切片的实路径/SHA/尺寸/alpha；v0.3全画布文字层标PSD重组层而非运行切片。Client路径仅计划，未导入UUID为null。",
+    "至少保留30秒故障停止与交接；若120秒内未完整产出并核四份，即停并保持BLOCKED，不临时改方法、不删字段凑交付或追认超时。",
+    "若开始前另有Art活动，先扣可核余额并收紧120秒硬停；不足以完整四件与30秒交接则停止。此补签不批准具体资源Gate2或Client正式接入。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_PRIOR_UPPER_USED"
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "U05-B-REGISTER-EXECUTION-PLAN-20261015",
+  "owner": "master",
+  "summary": "针对已触及的登记硬线及脚本只读审查问题，提出冻结视觉资源、仅修脚本并一次生成四份登记文件的补充方案，待用户批准。",
+  "artifacts": [
+    "deliverables/master/U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-REGISTER-EXECUTION-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "现有四份清单缺件及脚本不宜直接执行的事实可核",
+      "result": "PASS",
+      "evidence": "Art 停工记录、Producer v0.7 与 Tech REGISTER_SCRIPT_READONLY_REVIEW.md。"
+    },
+    {
+      "criterion": "一次执行范围与冻结十件输入明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET.md 限定仅四份登记文件、临时预检和失败清理。"
+    },
+    {
+      "criterion": "补充额度及Gate2/Client门禁明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET.md：FULL 27→32 分、总 97→102 分、活动 240 秒硬停＋60 秒交接，实际资源仍须用户 Gate2。"
+    }
+  ],
+  "risks": [
+    "方案未经用户批准前 Art 不得续作；脚本执行和实际文件验证尚未发生。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

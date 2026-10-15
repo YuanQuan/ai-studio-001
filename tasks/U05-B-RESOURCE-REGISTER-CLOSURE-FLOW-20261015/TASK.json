@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-RESOURCE-REGISTER-CLOSURE-FLOW-20261015",
+  "title": "U05现有资源登记收尾流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记用户批准的资源收尾范围与额度，监督Art四清单、Tech独立核查及具体资源Gate2门禁。",
+  "inputs": [
+    "tasks/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.7/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.7/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.7/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确记录用户批准的冻结范围、累计额度与旧活动保留",
+    "四份正式清单和Tech核验前不得把资源标为Gate2就绪",
+    "维护五处U05共享标记与本轮可核时间复盘"
+  ],
+  "dependencies": [
+    "U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015"
+  ],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "用户已批准收尾方案，Producer本轮已实际写入审批记录，后续仍以资源Gate2用户审批为门禁。",
+    "v0.7三Required记录Tech补签后Art约121秒只产语法通过脚本、四正式文件未写且按120秒硬停；Master已核Producer v0.7流程监督并接受AUTO DONE，资源生产和Art/Tech/Client仍BLOCKED，具体Gate2未送。"
+  ]
+}
