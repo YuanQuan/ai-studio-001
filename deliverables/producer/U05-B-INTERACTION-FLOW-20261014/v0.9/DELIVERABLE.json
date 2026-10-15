@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-REGISTER-CORRECTION-FLOW-20261015",
+  "owner": "producer",
+  "summary": "登记用户批准的四文档定点纠正方案，监督实际更正、同批签认、Tech复核及具体资源Gate2门禁。",
+  "artifacts": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确登记获批版本、SHA、累计额度和原超时不追认的事实",
+      "result": "PASS",
+      "evidence": "三冻结文件SHA逐件核对一致，USER_APPROVED及原待审快照落盘；代表70/FULL36/总106分钟累计、原约16秒超时保留，新活动240秒硬停+60秒交接。"
+    },
+    {
+      "criterion": "Art四文档及Tech复核前持续锁定Gate2与Client导入",
+      "result": "PASS",
+      "evidence": "Tech同批补签实存；Art06:01:38–06:04:10 UTC约152秒预检失败并在正式写入前停，四文档与冻结10件未改，Tech原BLOCKED结论有效。Gate2未送，Client未导入。"
+    },
+    {
+      "criterion": "五处U05状态与本轮可核时间复盘齐备",
+      "result": "PASS",
+      "evidence": "五处U05 marker及复盘登记Tech补签、Art06:01:38–06:04:10 UTC约152秒预检类型错误停工、四文档未改及三Owner阻塞；未把获批方案写作资源Gate2。"
+    }
+  ],
+  "risks": [
+    "Art唯一纠正预检在正式写入前失败；原四清单仍有计划路径与超时漏报问题，不能交具体资源Gate2。",
+    "原约16秒超硬线事实不能随新额度追认合规；新Art Task已依停止条件BLOCKED。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

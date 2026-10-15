@@ -1,0 +1,30 @@
+{
+  "id": "U05-B-REGISTER-CORRECTION-FLOW-20261015",
+  "title": "U05资源登记定点纠正流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "记录用户批准的定点纠正与额度，监督Art实际更正、Tech复核、超时披露及具体资源Gate2门禁。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-CORRECTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-REGISTER-CORRECTION-PLAN-20261015/v0.1/REVIEW_PACKET.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/WORKFLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/MILESTONE_LOG.md",
+    "deliverables/producer/U05-B-INTERACTION-FLOW-20261014/v0.9/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确登记获批版本、SHA、累计额度和原超时不追认的事实",
+    "Art四文档及Tech复核前持续锁定Gate2与Client导入",
+    "五处U05状态与本轮可核时间复盘齐备"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-CORRECTION-PLAN-20261015"
+  ],
+  "status": "IN_PROGRESS",
+  "approval": "AUTO",
+  "notes": [
+    "方案批准只解锁文档定点纠正，不等于具体资源Gate2。"
+  ]
+}

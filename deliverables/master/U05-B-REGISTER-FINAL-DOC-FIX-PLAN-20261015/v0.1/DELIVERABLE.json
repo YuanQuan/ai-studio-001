@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015",
+  "owner": "master",
+  "summary": "针对上轮预检失败，锁定四份现文件与十件视觉资源，准备经Tech静态复核的受控工具，仅申请一次四文档定点修正。",
+  "artifacts": [
+    "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-REGISTER-FINAL-DOC-FIX-PLAN-20261015/v0.1/TECH_EXECUTION_TOOL_REVIEW_v0.3.md",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/u05_final_doc_fix_once.py"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "失败根因、四源文件指纹和冻结十件可核",
+      "result": "PASS",
+      "evidence": "Tech只读失败诊断、REVIEW_PACKET.md的四SHA、临时预览与冻结十件核验。"
+    },
+    {
+      "criterion": "正式工具已事前静态复核且未修改正式资源",
+      "result": "PASS",
+      "evidence": "TECH_EXECUTION_TOOL_REVIEW_v0.3.md与归档脚本SHA；仅temp预览通过。"
+    },
+    {
+      "criterion": "预算、历史违规披露与后续门禁明确",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET.md：FULL36→39/总106→109分钟、240秒硬停+60秒交接；原超时与152秒失败保留，Gate2/Client独立审批。"
+    }
+  ],
+  "risks": [
+    "用户未批准本方案前不得正式执行；正式写入、Tech成品终审和用户具体资源Gate2尚未发生。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

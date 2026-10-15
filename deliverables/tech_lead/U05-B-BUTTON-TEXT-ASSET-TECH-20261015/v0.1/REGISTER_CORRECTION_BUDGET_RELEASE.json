@@ -1,0 +1,36 @@
+{
+  "task_id": "U05-B-BUTTON-TEXT-ASSET-TECH-20261015",
+  "role": "tech_lead",
+  "batch_id": "U05-B-INTERACTION-ASSETS-20261014/v0.3/BUTTON_TEXT_SPLIT",
+  "phase": "APPROVED_REGISTER_CORRECTION_SUPPLEMENT",
+  "decision": "CONDITIONAL_RELEASE_ONE_FOUR_DOCUMENT_CORRECTION",
+  "approval_path": "tasks/U05-B-REGISTER-CORRECTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+  "approval_sha256": "23d472e3627cf43db5e5e4bb6583e329fb3053a8dbad51323c2648c4cff4e6f3",
+  "approval_status": "USER_APPROVED",
+  "approved_plan_hashes_verified": "3/3",
+  "frozen_input_manifest": "deliverables/master/U05-B-RESOURCE-REGISTER-CLOSURE-PLAN-20261015/v0.1/FROZEN_INPUTS.json",
+  "frozen_visual_files_sha_and_bytes_verified": "10/10",
+  "conservative_budget_seconds": {
+    "prior_full_upper": 1804.148,
+    "prior_total_upper": 5959.092,
+    "new_full_limit": 2160,
+    "new_total_limit": 6360,
+    "full_remaining_lower_bound": 355.852,
+    "total_remaining_lower_bound": 400.908,
+    "binding_limit": "FULL",
+    "one_correction_and_self_check_hard_cap": 240,
+    "failure_stop_handoff_buffer_minimum": 60,
+    "full_guard_after_cap_and_buffer": 55.852,
+    "prior_turn_conservatively_counted": 256,
+    "prior_turn_240_second_hard_cap_violation": "APPROXIMATELY_16_SECONDS_NOT_WAIVED",
+    "old_activity_reset": false
+  },
+  "conditions": [
+    "Art开工前按自身事件核新增活动并先扣可用余额；不足300秒时收紧240秒硬停并保留60秒，不能完成则停。",
+    "只定点修CUT_MANIFEST.json、ASSET_MANIFEST.md、PRODUCTION_LEDGER.json、DELIVERABLE.json的客户端计划路径及既有超时披露；视觉冻结10件不改，不重跑旧脚本。",
+    "拟运行PNG按实际文件名置于apps/client/assets/resources/u05_milk_tea/u05_b/；字体实际文件名U05_ART_FONT.fnt；历史与PSD专用项不接入，UUID仍null。",
+    "账本保留precommit检查点，追加04:24:29 UTC约256秒及超240秒约16秒；交付预算验收FAIL并列风险。新累计额度不追认旧单轮违规。",
+    "本次240秒硬线或一次纠正失败即停，只回滚本轮文档修正；完成后Tech独立复核，Producer记录，实际资源连同超时事实交用户具体Gate2。Gate2前Client不得正式导入。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_UPPER_USED"
+}

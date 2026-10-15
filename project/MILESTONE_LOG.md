@@ -1430,4 +1430,6 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `REGISTER_EXECUTION_PLAN_USER_APPROVED_AND_V08_STARTED`（Producer 2026-10-15T04:18:46Z登记）：三SHA匹配、旧待审快照留存；仅冻结10件后修脚本/预检/一次写四清单，代表70/FULL32/总102分钟累计，240秒硬停+60秒交接。方案Task DONE；Producer v0.8三Required首产IN_PROGRESS，新Art四清单Task READY待Tech同批补签。四清单/Gate2/Client接入尚无。
 - `REGISTER_EXECUTION_FOUR_DOCS_WRITTEN_OVERTIME`：Tech同批补签实存；新Art04:20:13–04:24:29 UTC约256秒一次写出四Required、冻版10件报告零改，但超240秒硬线约16秒并停工。账本只记预提交点且待Gate2状态未同步最终事实；新Art/AssetTech/Client BLOCKED，Tech独立核验待证，无Gate2。
 - `REGISTER_EXECUTION_TECH_BLOCKED_FLOW_AUTO_DONE`：Tech独立终审静态资源核PASS但整体BLOCKED：计划客户端路径错误、超240秒硬线约16秒及账本/交付漏报。Master纠正方案仅待审；Producer v0.8监督Task AUTO DONE，Art/AssetTech/Client仍BLOCKED，无资源Gate2与Client导入。
+- `REGISTER_CORRECTION_PLAN_USER_APPROVED_V09_STARTED`（Producer 2026-10-15T05:59:52Z登记）：三SHA匹配、旧待审快照留存；仅四文档定点改路径/超时披露，冻版10件，代表70/FULL36/总106分钟累计，240秒硬停+60秒交接且原超时不追认。方案Task DONE、Producer v0.9三Required首产IN_PROGRESS，新Art Task READY待同批补签，无Gate2/Client导入。
+- `REGISTER_CORRECTION_PREFLIGHT_STOP`：Tech同批补签后Art06:01:38–06:04:10 UTC约152秒预检误读FROZEN_INPUTS.files映射类型，正式写入前依唯一失败停工；原四文档与冻结10件未改。新Art/AssetTech/Client BLOCKED，目录与超时记录仍错，具体Gate2未送。
 <!-- U05-B-LANDING-20261014 END -->

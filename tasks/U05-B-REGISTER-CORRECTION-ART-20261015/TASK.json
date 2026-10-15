@@ -1,0 +1,36 @@
+{
+  "id": "U05-B-REGISTER-CORRECTION-ART-20261015",
+  "title": "U05资源登记四文档定点纠正",
+  "type": "art",
+  "owner": "art",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "保持冻结视觉资源不变，纠正现有四份登记文档的计划客户端路径与超时事实。",
+  "inputs": [
+    "tasks/U05-B-REGISTER-CORRECTION-PLAN-20261015/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/tech_lead/U05-B-BUTTON-TEXT-ASSET-TECH-20261015/v0.1/TECH_METADATA_CHECK.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/CUT_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/CUT_MANIFEST.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/ASSET_MANIFEST.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/PRODUCTION_LEDGER.json",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "拟运行PNG与FNT计划路径准确，历史/PSD专用项不接入且UUID为空",
+    "账本完整记录上轮约256秒及约16秒超时，交付预算结果如实为FAIL",
+    "冻结10件视觉文件前后SHA/字节不变，四文档格式与交叉引用可核",
+    "本轮新活动不越240秒硬停并保留60秒交接；失败停工"
+  ],
+  "dependencies": [
+    "U05-B-REGISTER-CORRECTION-PLAN-20261015",
+    "U05-B-BUTTON-TEXT-ASSET-TECH-20261015"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Art使用gpt-6-sol/high；Tech同批补签前不开始制作。",
+    "原四文档已由Git 1b89507存档，不能把原超时改写为合规。",
+    "Tech同批补签后Art于06:01:38–06:04:10 UTC活动约152秒；临时预检误把FROZEN_INPUTS.json的files映射作list[object]而失败，正式四文档写入前即停。四文档及冻结10件未改，单次修订机会已用，不重试；具体资源Gate2仍锁。"
+  ]
+}
