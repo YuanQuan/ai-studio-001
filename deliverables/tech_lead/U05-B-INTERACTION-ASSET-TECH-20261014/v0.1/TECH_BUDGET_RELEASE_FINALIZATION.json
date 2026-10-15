@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "batch_id": "U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1",
+  "decision": "RELEASE_ONE_FROZEN_72_LAYER_ASSEMBLY_WITH_70_SECOND_HARD_STOP",
+  "method_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_FINALIZATION.json",
+  "activity_basis": "Root可核Art Agent run起止及Art自身同批交接消息；两整轮均保守全计活动，不推断净制作或扣未知等待。",
+  "conservative_budget_seconds": {
+    "prior_full_upper": 645.94,
+    "art_source_audit_and_presign_start_utc": "2026-10-15T00:44:05.148Z",
+    "art_source_audit_and_presign_end_utc": "2026-10-15T00:45:18Z",
+    "art_source_audit_and_presign_upper": 72.852,
+    "art_budget_audit_start_utc": "2026-10-15T00:46:43.685Z",
+    "art_budget_audit_end_utc": "2026-10-15T00:47:26Z",
+    "art_budget_audit_upper": 42.315,
+    "full_cumulative_upper_before_release": 761.107,
+    "full_limit": 900,
+    "full_remaining_lower_bound": 138.893,
+    "total_cumulative_upper_before_release": 4916.051,
+    "total_limit": 5100,
+    "total_remaining_lower_bound": 183.949,
+    "assembly_and_read_composite_check_hard_cap": 70,
+    "handoff_record_buffer": 60,
+    "full_guard_after_both": 8.893
+  },
+  "release_conditions": [
+    "仅按已同批预签的冻结72层manifest组装唯一正式PSD，并在70秒活动硬停内完成可读、层数与冻结reconstructed合成检查；开始/结束时钟记录到Art账本。",
+    "另保留60秒整理实际切片/路径/SHA/稳定ID/计划Client路径/UUID未导入及交付记录；如70秒内组装检查未完成即停，不动冻结PNG/GIF、不补图、不自动重试或追认超时。",
+    "此预算放行只解除PSD组装HOLD，不代表PSD元数据已通过，不批准具体资源Gate2，也不授权Client导入。"
+  ],
+  "actual_net_activity": "UNKNOWN_CONSERVATIVE_AGENT_TURN_UPPER_USED"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015",
+  "title": "U05已批标签源与母版合成对齐方案",
+  "type": "integration",
+  "owner": "master",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "解决新旧标签源与标题遮挡顺序偏差，提交新候选与预算审批。",
+  "inputs": [
+    "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/FINALIZATION_DIFF_DIAGNOSIS.md",
+    "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/review/FINALIZATION_REVIEW.json",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/CUT_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/SOURCE_IDENTITIES.json",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/APPROVAL_HASHES.json",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "偏差根因与已批v0.2标签源明确",
+    "修正范围/零差条件/预算/停止线可检查",
+    "旧失败候选保留，资源Gate2与Client门禁分明"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户未批准本修正方案和新增预算，Art不得开始新资源生产；旧v0.1保持BLOCKED。"
+  ]
+}

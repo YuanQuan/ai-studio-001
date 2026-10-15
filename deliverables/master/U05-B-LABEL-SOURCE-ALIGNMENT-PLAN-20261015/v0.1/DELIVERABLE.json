@@ -1,0 +1,32 @@
+{
+  "task_id": "U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015",
+  "owner": "master",
+  "summary": "定位57,225像素差异至标签双源与标题遮挡；提交新候选的最小对齐方案和累计预算。",
+  "artifacts": [
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/REVIEW_PACKET.md",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/SOURCE_IDENTITIES.json",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/TECH_FEASIBILITY_REVIEW.md",
+    "deliverables/master/U05-B-LABEL-SOURCE-ALIGNMENT-PLAN-20261015/v0.1/APPROVAL_HASHES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "偏差根因与已批v0.2标签源明确",
+      "result": "PASS",
+      "evidence": "Tech只读诊断和SOURCE_IDENTITIES逐件哈希"
+    },
+    {
+      "criterion": "修正范围/零差条件/预算/停止线可检查",
+      "result": "PASS",
+      "evidence": "REVIEW_PACKET约束一候选、零差、300秒硬停与60秒收尾；技术只读复核确认逻辑采样项44、现有GIF实际解码39帧。"
+    },
+    {
+      "criterion": "旧失败候选保留，资源Gate2与Client门禁分明",
+      "result": "PASS",
+      "evidence": "旧v0.1证据保留且新产物待Gate2"
+    }
+  ],
+  "risks": [
+    "批准前不得重渲冻结PNG/GIF；新候选仍可能因合成差异失败。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

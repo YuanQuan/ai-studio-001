@@ -687,7 +687,7 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 | `FACE_DISAPPOINTED`／失落脸 | `deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/exports/FACE_DISAPPOINTED.png`／v0.1 | `7a99a4e92c485a9373a222f3f6819cd8bf4237e7e129cc299befef6b5001fc48` | 计划 `apps/client/assets/resources/u05_milk_tea/u05_b/FACE_DISAPPOINTED.png`；UUID未导入 | 部分实存；完整身份/效果未审核 |
 
 部分审阅文件：`review/reconstructed.png` SHA `eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a`、`review/component_sheet.png` SHA `81b936daaa11ddd359838cbe99a0d7f9f610d576f21971c0d89121f42e838575`、44帧 `review/animation_preview.gif` SHA `d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57`，均为美术审阅件，无客户端导入计划或UUID。当前 `source/workspace_b_full.psd` SHA `dcfafd506f84157c68307fc959d03f59ffbeba7633db8cf21f52c02b49e6993f`、70层；`source/psd_manifest_full.json` SHA `18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3`、72层。正式PSD及新CUT清单待新方案批准后对齐；旧顾客身体及三脸在现有CUT清单中是 `REPRESENTATIVE_ONLY`，不可凭此登记为最终正式导入。
-当前冻结输入与本批最终资源待审方案见 `deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/FROZEN_INPUTS.json` / `APPROVAL_HASHES.json`；当前仅USER_REVIEW，不能把部分实存资源转作已批准接入。
+现有资源收尾方案v0.1已获用户批准，但实际组装 `deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/workspace_b_master.psd` 为72层、1024×1536可读，SHA-256 `50bfb0e41f8361b58a4e7cfc465961de2b16df7ddefcdd00f4741a2c3905fb3a`；合成对冻结 `review/reconstructed.png` 差57,225 RGB像素（3.638%），Owner `review/FINALIZATION_REVIEW.json` 判REVISE_STOP。该PSD仅为**失败候选**，无客户端路径或UUID；原70层PSD、冻结PNG/GIF与72层manifest保留。正式CUT/ASSET清单及具体资源Gate2仍未完成，本表计划客户端路径不得视为已导入。
 <!-- U05-INTERACTION-ASSETS-20261014 END -->
 
 <!-- U00-U01-BRIDGE-V05-FLOW-20261014 ASSET_REGISTRY START -->

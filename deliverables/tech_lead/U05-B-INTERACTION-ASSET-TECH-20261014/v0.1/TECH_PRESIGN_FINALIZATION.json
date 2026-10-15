@@ -1,0 +1,46 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSET-TECH-20261014",
+  "role": "tech_lead",
+  "phase": "FINALIZATION_FROZEN_RESOURCE_METHOD_PRESIGN",
+  "batch_id": "U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1",
+  "decision": "TECH_PRESIGNED_METHOD_WITH_ACTIVITY_BALANCE_HOLD",
+  "status": "NO_PSD_ASSEMBLY_UNTIL_SEPARATE_BUDGET_RELEASE",
+  "approved_inputs": {
+    "user_approval": "tasks/U05-B-ASSET-FINALIZATION-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "user_approval_sha256": "8ed59351bd31e9ada833f62a545ebcfab905396c271c1eefa9c2715f49945ef1",
+    "frozen_review_packet_sha256": "61cff595ebc46e8f518f764c5c449fd74df3eba70294676385f3753a21a97068",
+    "frozen_inputs_sha256": "c04e0c625ae46c042648468b2b266cc1c990d819f819dc30a4aa65e7996a3e6b",
+    "frozen_tech_feasibility_sha256": "1087830b032704492b6b65122f5bb0da14dc52ae3cf10373af27684582954fee",
+    "art_presign": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/ART_PRESIGN_FINALIZATION.json",
+    "art_presign_sha256": "35b3da79f6e972d1e92f1403c87c6e9ec0f1c69691b19b4b793e40f5f57e2780",
+    "art_source_audit": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/FINALIZATION_SOURCE_AUDIT.json",
+    "art_source_audit_sha256": "14770dd5fc0b17b3e1c647b954d8a5d2484576696608e915288a1522eeac4f3c"
+  },
+  "verified_freeze": {
+    "frozen_files_matching_sha_and_bytes": "8/8",
+    "manifest_sha256": "18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3",
+    "manifest_layer_count": 72,
+    "art_audited_layer_sources": "72/72 paths present, 1024x1536 full canvas",
+    "reconstructed_png_sha256": "eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a",
+    "animation_gif_sha256": "d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57",
+    "old_psd_sha256": "dcfafd506f84157c68307fc959d03f59ffbeba7633db8cf21f52c02b49e6993f"
+  },
+  "technical_conditions": [
+    "只用冻结的72层manifest与已核同项目图层源组装正式source/workspace_b_master.psd，保留旧70层workspace_b_full.psd；不修改冻结PNG/GIF，不画新图、不加帧、不调用生成。",
+    "输出后独立核PSD可解码、1024x1536、72层名称与顺序、合成像素对冻结reconstructed.png；不一致即停并记证据，不自动修图。",
+    "切片/清单须写稳定资源ID、实际路径/尺寸/alpha/SHA及PSD图层映射；Client路径仅计划、未导入UUID为null。制作账本和失败历史保持。",
+    "自产最终切片直接交用户具体资源Gate2，不新增效果专业复审门禁；Gate2前Client不正式导入。"
+  ],
+  "budget": {
+    "representative_limit_seconds": 4200,
+    "full_limit_seconds": 900,
+    "total_limit_seconds": 5100,
+    "previous_full_conservative_upper_seconds": 645.94,
+    "previous_full_nominal_remaining_seconds": 254.06,
+    "new_art_presign_activity": "NOT_YET_BOUNDED",
+    "assembly_and_check_hard_cap_seconds": 180,
+    "handoff_buffer_seconds_min": 60,
+    "release_condition": "开始组装前复核本轮Art源审/预签活动、明确等待及累计余额，证明至少180+60秒余量，或同批书面收窄可保证完成的硬上限且仍保留60秒；否则保持HOLD。"
+  },
+  "not_tested": ["正式72层PSD尚未组装", "正式切片/登记/交付尚未核验", "用户具体资源Gate2和Client实际导入尚未批准"]
+}

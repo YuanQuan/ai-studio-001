@@ -1396,4 +1396,8 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `PATCH04_FULL_PARTIAL_STOP`：部分PNG/GIF与70层PSD实存，但72层manifest未对齐、CUT/ASSET/账本不完整；FULL保守上界645.940秒、总4800.884秒，净实际UNKNOWN，制作停止线与60秒收尾要求失守。Art/AssetTech/Client BLOCKED，v0.3 FLOW REVIEW；新收尾方案待Tech只读意见/用户审，未获批准。
 - `ASSET_FINALIZATION_PLAN_USER_REVIEW`：Master `REVIEW_PACKET.md`、`FROZEN_INPUTS.json`、Tech `FINALIZATION_FEASIBILITY.md` 三SHA锁定，DELIVERABLE/审批实存；只申请冻结图像后对齐72层PSD/清单及FULL+5分钟累计预算，未批不生产。
 - `PATCH04_FLOW_AUTO_DONE`：Master `MASTER_PATCH04_FLOW_REVIEW.json`接受Producer v0.3真实跟踪，Task DONE；Art/AssetTech/Client BLOCKED、收尾方案USER_REVIEW不变，预算与Gate2未通过。
+- `FINALIZATION_PLAN_USER_APPROVED`（用户决定2026-10-15T00:45:04Z）：现有资源冻结、72层PSD/清单整理及总85分钟累计方案获批；三待审SHA核一致，具体资源Gate2另待。
+- `FINALIZATION_FLOW_V04_STARTED`：新Master Task三Required首产；Art新批预签与只读源审计8/8冻结文件、72/72层源实存，Art IN_PROGRESS；Tech READY待同批首产，Client BLOCKED等Gate2。
+- `FINALIZATION_METHOD_PRESIGNED_BUDGET_HOLD`：Art/Tech同批方法签认及Art只读源审实存；Tech预算HOLD未放行PSD组装。Art/AssetTech IN_PROGRESS，Client BLOCKED，资源Gate2未发生。
+- `FINALIZATION_PSD_REVISE_STOP`：Tech同批预算放行70秒+60秒；Art47秒组装可读72层PSD SHA 50bfb0e41f8361b58a4e7cfc465961de2b16df7ddefcdd00f4741a2c3905fb3a，但对冻结图差57,225像素/3.638%，36秒整理后按停止规则停工。Art/AssetTech/Client BLOCKED，v0.4流程REVIEW，无具体资源Gate2。
 <!-- U05-B-LANDING-20261014 END -->

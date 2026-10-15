@@ -666,4 +666,6 @@ PATCH-03唯一实图已被Art判REVISE/STOP；原方法USER_APPROVED仍仅对已
 PATCH-04代表PASS与FULL部分实存均不是具体资源Gate2批准；70层PSD与72层manifest不一致，成品未送审。现有PNG/GIF冻结，后续母版/清单整理及80→85预算仅Master新方案申请，用户尚未批准；旧准确方案批准保留历史，不外推到缺件资源。
 现有资源对齐收尾方案 `U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1` 三待审文件SHA已锁，审批USER_REVIEW、用户决定PENDING；冻结现有PNG/GIF与72层manifest，申请PSD/清单对齐及总80→85分钟。Tech只读意见不等于生产预签，具体资源Gate2仍未获批。
 内部流程接受：Master `MASTER_PATCH04_FLOW_REVIEW.json`已批准Producer v0.3准确状态记录，FLOW AUTO DONE；非用户对部分资源或收尾方案的批准。Art/AssetTech/Client仍BLOCKED，收尾方案USER_REVIEW，具体资源Gate2仍未批。
+2026-10-15T00:45:04Z用户批准`U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1`准确冻结资源收尾方案；三冻结SHA逐项一致，审批USER_APPROVED。只授权现有PNG/GIF不变、72层PSD/清单对齐及累计代表70/FULL15/总85分钟，不等于具体切片Gate2或Client接入批准。
+收尾方案获批后的72层PSD实际合成差异已触停止规则：这不是用户对具体资源的Gate2审核或退回；当前不存在具体资源USER_APPROVED。Art/AssetTech/Client BLOCKED，原方案批准历史保留但不授权自动修正差异。
 <!-- U05-B-LANDING-20261014 END -->

@@ -1,0 +1,36 @@
+{
+  "task_id": "U05-B-INTERACTION-ASSETS-20261014",
+  "role": "art",
+  "batch_id": "U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1",
+  "phase": "FROZEN_RESOURCE_FINALIZATION_PRESIGN",
+  "decision": "ART_PRESIGNED_FROZEN_INPUTS_WITH_TECH_APPROVAL_AND_BUDGET_HOLD",
+  "status": "NO_ASSEMBLY_UNTIL_USER_APPROVAL_RECORD_AND_MATCHING_TECH_PRESIGN_AND_BUDGET_RELEASE",
+  "approved_scope_refs": {
+    "review_packet_sha256": "61cff595ebc46e8f518f764c5c449fd74df3eba70294676385f3753a21a97068",
+    "frozen_inputs_sha256": "c04e0c625ae46c042648468b2b266cc1c990d819f819dc30a4aa65e7996a3e6b",
+    "feasibility_sha256": "1087830b032704492b6b65122f5bb0da14dc52ae3cf10373af27684582954fee",
+    "approval_record": "tasks/U05-B-ASSET-FINALIZATION-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "approval_record_at_presign": "USER_REVIEW; Producer must record the user's explicit approval before assembly"
+  },
+  "art_source_audit": "deliverables/art/U05-B-INTERACTION-ASSETS-20261014/v0.1/source/FINALIZATION_SOURCE_AUDIT.json",
+  "art_source_audit_sha256": "14770dd5fc0b17b3e1c647b954d8a5d2484576696608e915288a1522eeac4f3c",
+  "verified_inputs": {
+    "frozen_file_hash_and_byte_matches": "8/8",
+    "manifest_layer_sources_present_in_repository": "72/72",
+    "all_layer_source_canvas_px": [1024, 1536],
+    "frozen_animation_preview_sha256": "d328fbcf6d8f258c179617be54503e305796ff4b4a8d8e0e416721600be94d57",
+    "frozen_reconstructed_sha256": "eda0f254f322d63a736cff5457209be51992edc93e7bea2d1e2b57a1e9b1bb0a",
+    "frozen_72_layer_manifest_sha256": "18518270769b8b59ad421c64f1c0df9355c384da11977d315e1f80948b0ddaa3"
+  },
+  "method": "Assemble only the frozen 72-layer manifest with the existing bggg-creator-image2psd script into canonical source/workspace_b_master.psd; preserve old 70-layer source/workspace_b_full.psd; compare readable PSD layer count and composite preview against the frozen reconstructed.png. Then register real cuts, hashes, planned client paths and missing UUIDs. No drawing, animation change, generation or Client import.",
+  "budget": {
+    "representative_activity_minutes_max": 70,
+    "full_activity_minutes_max": 15,
+    "total_activity_minutes_max": 85,
+    "old_activity_not_reset": true,
+    "assembly_and_check_hard_cap_seconds": 180,
+    "handoff_buffer_seconds_min": 60,
+    "release_condition": "Tech same-batch presign and a verified cumulative activity balance sufficient for the bounded assembly/check plus handoff buffer"
+  },
+  "stop_rule": "Any frozen SHA mismatch, missing layer, incorrect 72-layer PSD, composite discrepancy, or insufficient activity balance stops the batch; do not silently adjust art, rerender the frozen PNG/GIF, or claim Gate2 readiness."
+}

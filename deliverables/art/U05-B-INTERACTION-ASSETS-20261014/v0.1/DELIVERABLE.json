@@ -1,7 +1,7 @@
 {
   "task_id": "U05-B-INTERACTION-ASSETS-20261014",
   "owner": "art",
-  "summary": "Gate1及REP-01/REP-02/MANUAL-01/PATCH-03同批签认与PATCH-03用户方法批准真实存在。局部身体、三脸和代表离场预览已有，但四个净底候选均未清除旧影；唯一PATCH-03片区复用候选在框外仍见旧杯残线，且制作与检查约129秒超过Tech120秒硬上限约9秒，已停止。正式PSD、完整四脸/全进出动画、全组件同尺度重组尚未产出，本任务BLOCKED，未交具体资源Gate2。",
+  "summary": "PATCH-04净底、四脸及完整界面/GIF部分资源存在；获批收尾批次冻结源8/8和72层逐文件核对通过，唯一72层PSD组装可读，但其预览与冻结reconstructed.png有57,225个RGB像素差。按同批停止线REVISE_STOP；实际切片/资源清单尚未完成，未交Gate2或导入Client。",
   "artifacts": [
     "ART_BRIEF.md",
     "ART_PRESIGN.json",
@@ -22,14 +22,38 @@
     "PRODUCTION_LEDGER.json",
     "NEXT_METHOD_PROPOSAL.md",
     "ALPHA_MASK_FEASIBILITY.md",
-    "REGION_REUSE_PROPOSAL.md"
+    "REGION_REUSE_PROPOSAL.md",
+    "ART_PRESIGN_FINALIZATION.json",
+    "source/FINALIZATION_SOURCE_AUDIT.json",
+    "source/workspace_b_master.psd",
+    "review/workspace_b_master_preview.png",
+    "review/FINALIZATION_REVIEW.json",
+    "review/reconstructed.png",
+    "review/component_sheet.png",
+    "review/animation_preview.gif"
   ],
   "acceptance_results": [
-    {"criterion": "Gate1与同批Art/Tech预签实存，预算和生成调用不超获批上限", "result": "FAIL", "evidence": "Gate1与PATCH-03用户方法批准、各批Art/Tech同批预签可核，image_gen累计0/3；但PATCH-03单独制作+实图检查约129秒，超过Tech释放的120秒硬上限约9秒。实际全批活动仍按保守界审计，不能因0生成宣称预算通过。"},
-    {"criterion": "净底清残影、脸部真实动画和完整进出，保护区零差异证据", "result": "FAIL", "evidence": "review/PATCH03_REVIEW.md：三框外RGB零差异、内部与donor零差异，但批准框外仍见旧杯残线；开心离场仅既有代表片段，新完整进出和失落未产。"},
-    {"criterion": "PSD、真实PNG、动画源回放及同尺度重组身份链齐全，未接入如实未测", "result": "NOT_TESTED", "evidence": "CUT_MANIFEST.json和ASSET_MANIFEST.md列部分真实PNG；source/workspace_b_master.psd、review/reconstructed.png、review/component_sheet.png、review/animation_preview.gif均未产。Creator导入与运行NOT_TESTED。"}
+    {
+      "criterion": "冻结源/预算/同批预签",
+      "result": "PASS",
+      "evidence": "source/FINALIZATION_SOURCE_AUDIT.json:8/8 frozen hashes and 72/72 full-canvas layers; Art/Tech同批预签及Tech放行实存；组装检查47秒≤70秒。"
+    },
+    {
+      "criterion": "72层PSD可读且与冻结同尺度重组合成一致",
+      "result": "FAIL",
+      "evidence": "review/FINALIZATION_REVIEW.json：PSD72层、1024×1536、Pillow可读，但预览与冻结reconstructed.png差57,225 RGB像素，bbox[65,564,973,1084]。"
+    },
+    {
+      "criterion": "正式切片、CUT/ASSET登记与Gate2",
+      "result": "NOT_TESTED",
+      "evidence": "合成身份不一致后已停，未完成正式切片/最终登记；Client未导入、运行未测，Gate2未提交。"
+    }
   ],
-  "assumptions": ["已批准四脸、窗Mask、位移、三槽和目标杯参数不变；用户批准的唯一PATCH-03额外候选已经执行并失败。当前没有下一图片制作授权，后续方法、范围或预算必须由Master提交用户决定，并重新办理受影响Art/Tech同批预签。"],
-  "risks": ["四个净底候选均未通过视觉；PATCH-03框外旧杯残线会在台面清空时暴露。", "PATCH-03唯一额外轮次已用且孤立120秒硬上限实际超约9秒；下一方法/范围或预算必须先由Master呈请用户明确决定，不能自动重试。"],
+  "assumptions": [
+    "冻结PNG/GIF/72层manifest未改；本轮仅一次PSD组装。后续任何视觉修订或第二次组装须重新决定与同批签认。"
+  ],
+  "risks": [
+    "当前PSD预览与冻结重组不一致，不能作为同一最终资源发布。"
+  ],
   "status": "BLOCKED"
 }

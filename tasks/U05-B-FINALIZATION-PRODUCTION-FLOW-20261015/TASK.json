@@ -1,0 +1,32 @@
+{
+  "id": "U05-B-FINALIZATION-PRODUCTION-FLOW-20261015",
+  "title": "U05现有资源收尾与具体资源审核流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U05-B-PLAYABLE-20261013",
+  "objective": "登记2026-10-15收尾方案批准，监督Art/Tech同批预签、72层母版/清单对齐与资源Gate2。",
+  "inputs": [
+    "tasks/U05-B-ASSET-FINALIZATION-PLAN-20261014/ARTIFACT_APPROVAL_v0.1.json",
+    "deliverables/master/U05-B-ASSET-FINALIZATION-PLAN-20261014/v0.1/APPROVAL_HASHES.json",
+    "tasks/U05-B-INTERACTION-ASSETS-20261014/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.4/FLOW_STATUS.md",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.4/DELIVERABLE.json",
+    "deliverables/producer/U05-B-INTERACTION-PRODUCTION-FLOW-20261014/v0.4/APPROVED_PLAN_HASHES.json"
+  ],
+  "acceptance": [
+    "准确记录方案批准、预签及实际资源身份和预算",
+    "区分资源准备完成与具体切片用户Gate2，Gate2前Client不接入",
+    "仅修改五共享文件U05 marker并完成简短流程复盘"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master授权Producer此流程任务、原Art/AssetTech状态及五共享U05 marker；旧v0.1/v0.2/v0.3不覆盖。",
+    "用户已批准现有图像/动画冻结及80→85分钟累计活动额度；最终切片尚未获具体用户Gate2审批。",
+    "Producer v0.4三Required已记收尾方案批准、同批预签/预算放行和72层PSD合成差异REVISE_STOP；进入REVIEW待Master核证，具体资源Gate2未发生。",
+    "Master接受Producer v0.4真实失败跟踪AUTO DONE，证据MASTER_FINALIZATION_FLOW_REVIEW.json；Art/Tech资源仍BLOCKED、Client未导入、Gate2未批。"
+  ]
+}

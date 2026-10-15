@@ -1149,4 +1149,7 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - FULL停工复盘：准备139.044秒，闭合制作turn10:13:17.855–10:21:44.751 UTC保守506.896秒，FULL合645.940秒、总4800.884秒为可核上界，净活动UNKNOWN；Owner另述135秒含Tech纯等待，不能当净超时数字。真正明确的流程失误是制作阶段越过400.956秒停止线且未留60秒检查收尾，结果70层PSD落后72层manifest、清单未完成，不能Gate2。建议Master只把冻结现有PNG/GIF后对齐PSD/清单与额外5分钟形成具体待审方案（复核点为Tech只读意见和用户决定），Art停止生产，Producer保留失败及部分资源身份；用户等待与新方案讨论不计本轮FULL制作。Continuity：Art/AssetTech/Client真实BLOCKED，无可继续的既有生产授权。
 - 新方案送审节点：Master与Tech三份文字/冻结清单已定稿，Producer 18:30:32 +08:00登记准确SHA；实际用户审批等待时长未知且不计活动。建议Master以70/72层差事实和部分PNG/GIF身份呈现受限收尾方案（复核点为用户对v0.1的明确决定），Producer只在批准后解锁同批预签；当前仍是生产BLOCKED，v0.3失败流程待Master接受。
 - 流程复核点：Master已接受Producer v0.3准确失败跟踪，FLOW AUTO DONE；制作阻塞与用户待审方案均未改变。下一复核点仍为用户对收尾方案的明确决定，Producer按决定恢复或保留阻塞，不以流程DONE替代Gate2。
+- 2026-10-15续产首节点：用户批准时间00:45:04 UTC可核；Producer核准确三SHA并首产v0.4流程文件，Art新批只读审源/预签实存（冻结8/8、72/72层源），Tech同批签与预算释放尚待。旧制作上界和已发生失败仍保留，审批等待不扣活动；本轮Art具体新制作耗时及结束未知，不猜。建议Tech按已批85分钟累计范围完成同批预签与余额核证（复核点为本批Tech签/停止时钟），Art仅据放行对齐冻结资源，Producer在成品身份核后送具体Gate2。Continuity：Art/Producer有真实首产，Tech需继续已授权签认，不以READY占位结束。
+- 同批方法签已完成，Tech因当前Art活动余额未闭合而保持预算HOLD；签认只是可核节点，尚未实际母版组装。建议Art/Tech以本轮Art源审/预签实际活动段核余额并写独立放行（复核点为预算释放或停止记录），Producer据实区分预签与成品；Client仍待Gate2。
+- 收尾实施复盘：Tech放行后，Art组装/检查可核00:49:02–00:49:49 UTC共47秒，低于70秒硬线；00:49:49–00:50:25 UTC再用36秒记录失败，未改冻结PNG/GIF/manifest。72层PSD可读但合成差57,225像素/3.638%，失败点是合成一致性而非层数或超组装硬线；不推断差异成因。建议Master组织只读差异定位并形成具体处置方案（复核点为冻结图与PSD层顺序/混合/alpha对照及用户对新方案决定），Art停止自动修图，Producer保留候选身份与Gate2锁。Continuity：本次已授权组装触停止线，Art/AssetTech/Client真实BLOCKED，需新决定才能继续。
 <!-- U05-B-LANDING-20261014 END -->

@@ -1,21 +1,174 @@
 {
   "task_id": "U05-B-INTERACTION-ASSETS-20261014",
   "version": "v0.1",
-  "status": "PATCH03_VISUAL_REVISE_AND_120_SECOND_CAP_EXCEEDED_STOP",
+  "status": "FINALIZATION_REVISE_STOP_COMPOSITE_MISMATCH",
   "time_basis": "UTC clock tool readings; exact per-command start and end not instrumented, do not infer precise activity minutes from file mtimes",
-  "observed_clock_points_utc": {"before_rep01_execution": "2026-10-14 05:51:00 UTC", "after_rep01_diagnosis_and_before_rep02_presign": "2026-10-14 05:54:38 UTC", "after_rep02_review": "2026-10-14 06:01:23 UTC", "after_stop_diagnostics": "2026-10-14 06:04:39 UTC", "before_manual01_execution": "2026-10-14 06:14:13 UTC", "after_manual01_visual_review_upper_bound": "2026-10-14 06:16:07 UTC", "after_documentation_clock": "2026-10-14 06:17:33 UTC", "after_read_only_alpha_analysis": "2026-10-14 06:30:27 UTC", "after_read_only_region_proposal": "2026-10-14 06:46:11 UTC"},
+  "observed_clock_points_utc": {
+    "before_rep01_execution": "2026-10-14 05:51:00 UTC",
+    "after_rep01_diagnosis_and_before_rep02_presign": "2026-10-14 05:54:38 UTC",
+    "after_rep02_review": "2026-10-14 06:01:23 UTC",
+    "after_stop_diagnostics": "2026-10-14 06:04:39 UTC",
+    "before_manual01_execution": "2026-10-14 06:14:13 UTC",
+    "after_manual01_visual_review_upper_bound": "2026-10-14 06:16:07 UTC",
+    "after_documentation_clock": "2026-10-14 06:17:33 UTC",
+    "after_read_only_alpha_analysis": "2026-10-14 06:30:27 UTC",
+    "after_read_only_region_proposal": "2026-10-14 06:46:11 UTC"
+  },
   "elapsed_observed_envelope": "05:51:00–06:46:11 UTC = 55m11s is a CLOSED historical wall-clock observation ending the prior documentation pass; it includes Tech/Master waits and is not measured active production. Later read-only revision timing was not segmented. Actual active total and remaining under either the current 45/30 or proposed UNAPPROVED 65/10 allocation are UNKNOWN. Once this revision is handed off, waiting for user review is excluded and no live wall clock is deducted. Before any new image, use verified active segments and a fresh explicit stop budget; if sufficient remainder cannot be established, do not start.",
-  "gate1": {"art_status": "USER_APPROVED", "ui_status": "USER_APPROVED", "approved_file_list_sha256": "b33e7236bdbeeaaebc08aad8d752c535946268fc97a9d15e863b95d01f0d498f", "files_verified": "16/16"},
-  "source": {"readonly_v02_psd_sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb", "static_sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34", "ghost_sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2", "historical_donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"},
-  "generation": {"tool": "none", "calls_success": 0, "calls_failed": 0, "calls_unknown": 0, "calls_potentially_consumed": 0, "max_total": 3, "cost": "UNKNOWN", "gpu": "UNKNOWN"},
+  "gate1": {
+    "art_status": "USER_APPROVED",
+    "ui_status": "USER_APPROVED",
+    "approved_file_list_sha256": "b33e7236bdbeeaaebc08aad8d752c535946268fc97a9d15e863b95d01f0d498f",
+    "files_verified": "16/16"
+  },
+  "source": {
+    "readonly_v02_psd_sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+    "static_sha256": "f0aada4dc35c80930a034a14f228a6012e59b783f93f342899ccf00251af4c34",
+    "ghost_sha256": "9689d44f31aa6e6b20c938543a785a9ec0a07c450d0fa42342092b23dfc3b1a2",
+    "historical_donor_sha256": "4062dfb0dc46cf17dea20b93478e9712ded98c057d8246c0f6c5221318b5c6af"
+  },
+  "generation": {
+    "tool": "none",
+    "calls_success": 0,
+    "calls_failed": 0,
+    "calls_unknown": 0,
+    "calls_potentially_consumed": 0,
+    "max_total": 3,
+    "cost": "UNKNOWN",
+    "gpu": "UNKNOWN"
+  },
   "rounds": [
-    {"batch": "REP-01", "art_presign": "ART_PRESIGN.json", "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN.json", "method": "Pillow/Numpy RGB8 deterministic local donor-pixel replacement threshold12 plus 2px dilation inside original diagnostic bounds; harmonic local eye/mouth base reconstruction; custom face local strokes; Pillow GIF", "source_script": "source/build_representative.py (later REP02 script revision; historical inputs and outputs preserved under review/history/REP01)", "outputs_archive": "review/history/REP01/", "result": "REVISE: original diagnostic ROIs missed silhouette/rim pixels; initial GIF face sampling one phase late", "candidate_count": 1, "image_gen_calls": 0},
-    {"batch": "REP-02", "art_presign": "ART_PRESIGN_REP02.json", "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_REP02.json", "method": "same deterministic method in revised same-object diagnostic bounds and corrected 0/40/80/150/225/300ms face samples", "source_script": "source/build_representative.py", "output_static": "exports/STATIC_BARE_CLEAN.png", "output_static_sha256": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9", "output_gif": "review/animation_representative.gif", "output_gif_sha256": "c59abd0edd2996d2d1e940b5063f8e5813d715a20187087f6167e7936662c903", "metrics": "review/REPRESENTATIVE_METRICS.json", "result": "REVISE: low contrast ghost tail and cup ellipse remain visible in magnified real image; automatic same-problem correction limit reached", "candidate_count": 1, "image_gen_calls": 0},
-    {"batch": "MANUAL-01", "art_presign": "ART_PRESIGN_MANUAL01.json", "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_MANUAL01.json", "method": "one hand-traced SVG path mask intersected with signed ROIs and remaining donor max RGB difference 4–11; donor RGB copied only inside resulting mask", "source_script": "source/build_manual.py", "source_paths": "source/MANUAL_PATHS.svg", "mask": "source/mask_residual_confirmed.png", "mask_sha256": "bd5148f8369939fde38260461d844ec1f91ff5fad40c68ecfab8edf4f2d5e1b4", "mask_pixels": 1600, "output_static": "exports/STATIC_BARE_MANUAL01.png", "output_static_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a", "output_gif": null, "command_wall_seconds": 0.814, "observed_execution_review_envelope_utc": "06:14:13–06:16:07 UTC, <=1m54s including visual review", "result": "REVISE_STOP: mask-outside RGB changed pixels 0, but 4x image retains ghost tail, cup rim oval and glass border. One manual candidate exhausted; no regeneration or FULL expansion.", "candidate_count": 1, "image_gen_calls": 0},
-    {"batch": "PATCH-03", "user_approval": "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json", "art_presign": "ART_PRESIGN_PATCH03.json", "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_PATCH03.json", "tech_budget_release": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_BUDGET_RELEASE_PATCH03.json", "method": "one same-coordinate RGB8 donor copy into the three approved full background rectangles of only STATIC_BARE, starting from MANUAL-01", "output_static": "exports/STATIC_BARE_PATCH03.png", "output_static_sha256": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6", "metrics": "review/PATCH03_METRICS.json", "review": "review/PATCH03_REVIEW.md", "regions_xywh": {"window": [305,489,406,294], "cup_rim": [418,1090,185,40], "cup_glass": [440,1220,136,108]}, "changed_pixels_by_region": {"window": 36349, "cup_rim": 558, "cup_glass": 674}, "outside_region_changed_rgb_pixels": 0, "inside_region_donor_difference_rgb_pixels": 0, "activity_observed_utc": "2026-10-14 08:57:54–09:00:03 UTC", "activity_observed_seconds_approx": 129, "tech_candidate_hard_cap_seconds": 120, "hard_cap_exceeded_seconds_approx": 9, "result": "REVISE_STOP: old cup contour remains outside approved rim/glass rectangles; hard candidate+visual cap exceeded; no FULL or Gate2", "candidate_count": 1, "image_gen_calls": 0}
+    {
+      "batch": "REP-01",
+      "art_presign": "ART_PRESIGN.json",
+      "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN.json",
+      "method": "Pillow/Numpy RGB8 deterministic local donor-pixel replacement threshold12 plus 2px dilation inside original diagnostic bounds; harmonic local eye/mouth base reconstruction; custom face local strokes; Pillow GIF",
+      "source_script": "source/build_representative.py (later REP02 script revision; historical inputs and outputs preserved under review/history/REP01)",
+      "outputs_archive": "review/history/REP01/",
+      "result": "REVISE: original diagnostic ROIs missed silhouette/rim pixels; initial GIF face sampling one phase late",
+      "candidate_count": 1,
+      "image_gen_calls": 0
+    },
+    {
+      "batch": "REP-02",
+      "art_presign": "ART_PRESIGN_REP02.json",
+      "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_REP02.json",
+      "method": "same deterministic method in revised same-object diagnostic bounds and corrected 0/40/80/150/225/300ms face samples",
+      "source_script": "source/build_representative.py",
+      "output_static": "exports/STATIC_BARE_CLEAN.png",
+      "output_static_sha256": "2160dd5789174154304e49d3a6fd4230a095bcf1e3777caf4db1f939d3e179c9",
+      "output_gif": "review/animation_representative.gif",
+      "output_gif_sha256": "c59abd0edd2996d2d1e940b5063f8e5813d715a20187087f6167e7936662c903",
+      "metrics": "review/REPRESENTATIVE_METRICS.json",
+      "result": "REVISE: low contrast ghost tail and cup ellipse remain visible in magnified real image; automatic same-problem correction limit reached",
+      "candidate_count": 1,
+      "image_gen_calls": 0
+    },
+    {
+      "batch": "MANUAL-01",
+      "art_presign": "ART_PRESIGN_MANUAL01.json",
+      "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_MANUAL01.json",
+      "method": "one hand-traced SVG path mask intersected with signed ROIs and remaining donor max RGB difference 4–11; donor RGB copied only inside resulting mask",
+      "source_script": "source/build_manual.py",
+      "source_paths": "source/MANUAL_PATHS.svg",
+      "mask": "source/mask_residual_confirmed.png",
+      "mask_sha256": "bd5148f8369939fde38260461d844ec1f91ff5fad40c68ecfab8edf4f2d5e1b4",
+      "mask_pixels": 1600,
+      "output_static": "exports/STATIC_BARE_MANUAL01.png",
+      "output_static_sha256": "54d0d41b06de0ecb509475b246a3f81236ba30a169bed551ef6e062fe789556a",
+      "output_gif": null,
+      "command_wall_seconds": 0.814,
+      "observed_execution_review_envelope_utc": "06:14:13–06:16:07 UTC, <=1m54s including visual review",
+      "result": "REVISE_STOP: mask-outside RGB changed pixels 0, but 4x image retains ghost tail, cup rim oval and glass border. One manual candidate exhausted; no regeneration or FULL expansion.",
+      "candidate_count": 1,
+      "image_gen_calls": 0
+    },
+    {
+      "batch": "PATCH-03",
+      "user_approval": "tasks/U05-B-INTERACTION-METHOD-CHANGE-20261014/ARTIFACT_APPROVAL_v0.1.json",
+      "art_presign": "ART_PRESIGN_PATCH03.json",
+      "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_PATCH03.json",
+      "tech_budget_release": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_BUDGET_RELEASE_PATCH03.json",
+      "method": "one same-coordinate RGB8 donor copy into the three approved full background rectangles of only STATIC_BARE, starting from MANUAL-01",
+      "output_static": "exports/STATIC_BARE_PATCH03.png",
+      "output_static_sha256": "3c70ed0096fcac5d649117eb57328a2ee116f44a0a554a5063450299624845b6",
+      "metrics": "review/PATCH03_METRICS.json",
+      "review": "review/PATCH03_REVIEW.md",
+      "regions_xywh": {
+        "window": [
+          305,
+          489,
+          406,
+          294
+        ],
+        "cup_rim": [
+          418,
+          1090,
+          185,
+          40
+        ],
+        "cup_glass": [
+          440,
+          1220,
+          136,
+          108
+        ]
+      },
+      "changed_pixels_by_region": {
+        "window": 36349,
+        "cup_rim": 558,
+        "cup_glass": 674
+      },
+      "outside_region_changed_rgb_pixels": 0,
+      "inside_region_donor_difference_rgb_pixels": 0,
+      "activity_observed_utc": "2026-10-14 08:57:54–09:00:03 UTC",
+      "activity_observed_seconds_approx": 129,
+      "tech_candidate_hard_cap_seconds": 120,
+      "hard_cap_exceeded_seconds_approx": 9,
+      "result": "REVISE_STOP: old cup contour remains outside approved rim/glass rectangles; hard candidate+visual cap exceeded; no FULL or Gate2",
+      "candidate_count": 1,
+      "image_gen_calls": 0
+    },
+    {
+      "batch": "FINALIZATION-v0.1",
+      "art_presign": "ART_PRESIGN_FINALIZATION.json",
+      "tech_presign": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_PRESIGN_FINALIZATION.json",
+      "tech_budget_release": "deliverables/tech_lead/U05-B-INTERACTION-ASSET-TECH-20261014/v0.1/TECH_BUDGET_RELEASE_FINALIZATION.json",
+      "frozen_source_audit": "source/FINALIZATION_SOURCE_AUDIT.json",
+      "output_psd": "source/workspace_b_master.psd",
+      "output_psd_sha256": "50bfb0e41f8361b58a4e7cfc465961de2b16df7ddefcdd00f4741a2c3905fb3a",
+      "result": "REVISE_STOP: 72 layers readable, but 57225 RGB pixels differ from frozen reconstructed PNG; no automatic retry",
+      "activity_utc": "2026-10-15 00:49:02–00:49:49 UTC",
+      "activity_upper_seconds": 47,
+      "hard_cap_seconds": 70,
+      "image_gen_calls": 0
+    }
   ],
-  "stop_rule_applied": "REP-01/REP-02 automatic, MANUAL-01 hand-mask, and user-approved unique PATCH-03 full-region candidate all visually REVISE. PATCH-03 also exceeded its 120-second hard candidate+visual cap by about 9 seconds. No further image production, FULL, PSD or Gate2 on this batch; escalate actual failure to Master/Producer for user decision.",
-  "remaining_work_state": {"formal_psd": "NOT_PRODUCED", "full_component_reconstruction": "NOT_PRODUCED", "full_entry_exit_and_disappointed_gif": "NOT_PRODUCED", "face_disappointed": "NOT_PRODUCED", "gate2": "NOT_READY", "client_import_and_runtime": "NOT_TESTED"},
-  "read_only_followup": {"method": "original semantic-layer alpha/dilation and whole-region donor reuse feasibility versus presigned ROIs/source layer overlaps; later donor-to-MANUAL01 incremental boundary analysis", "evidence": ["ALPHA_MASK_FEASIBILITY.md", "REGION_REUSE_PROPOSAL.md"], "new_candidate_outputs": 0, "image_gen_calls": 0, "result": "ORIGINAL_ALPHA_PLUS_SMALL_HALO_NOT_FEASIBLE_AS_IS; PATCH-03 REGION REUSE IS A USER-DECISION PROPOSAL ONLY; source crop coordinates verified exact"},
-  "waiting_for_user_review": {"state": "PAUSED_BLOCKED_AFTER_PATCH03_FAILURE", "prior_wait_started_after": "2026-10-14 07:32:17 UTC final proposal revision validation observation", "count_future_wait_as_active_production": false, "historical_activity_bound_evidence": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/PATCH03_BUDGET_RELEASE_AUDIT.json", "patch03_activity": "08:57:54–09:00:03 UTC approximately 129s, exceeded isolated 120s cap approximately 9s", "actual_total_activity_minutes_used": "UNKNOWN_CONSERVATIVE_BOUND_AND_CAP_BREACH_RECORDED"}
+  "stop_rule_applied": "Finalization-v0.1 unique PSD assembled once; strict frozen reconstructed comparison failed. Stop without altering frozen PNG/GIF, manifest or automatic reassembly; no Gate2.",
+  "remaining_work_state": {
+    "formal_psd": "NOT_PRODUCED",
+    "full_component_reconstruction": "NOT_PRODUCED",
+    "full_entry_exit_and_disappointed_gif": "NOT_PRODUCED",
+    "face_disappointed": "NOT_PRODUCED",
+    "gate2": "NOT_READY",
+    "client_import_and_runtime": "NOT_TESTED"
+  },
+  "read_only_followup": {
+    "method": "original semantic-layer alpha/dilation and whole-region donor reuse feasibility versus presigned ROIs/source layer overlaps; later donor-to-MANUAL01 incremental boundary analysis",
+    "evidence": [
+      "ALPHA_MASK_FEASIBILITY.md",
+      "REGION_REUSE_PROPOSAL.md"
+    ],
+    "new_candidate_outputs": 0,
+    "image_gen_calls": 0,
+    "result": "ORIGINAL_ALPHA_PLUS_SMALL_HALO_NOT_FEASIBLE_AS_IS; PATCH-03 REGION REUSE IS A USER-DECISION PROPOSAL ONLY; source crop coordinates verified exact"
+  },
+  "waiting_for_user_review": {
+    "state": "PAUSED_BLOCKED_AFTER_PATCH03_FAILURE",
+    "prior_wait_started_after": "2026-10-14 07:32:17 UTC final proposal revision validation observation",
+    "count_future_wait_as_active_production": false,
+    "historical_activity_bound_evidence": "deliverables/master/U05-B-INTERACTION-PRODUCTION-20261014/v0.1/PATCH03_BUDGET_RELEASE_AUDIT.json",
+    "patch03_activity": "08:57:54–09:00:03 UTC approximately 129s, exceeded isolated 120s cap approximately 9s",
+    "actual_total_activity_minutes_used": "UNKNOWN_CONSERVATIVE_BOUND_AND_CAP_BREACH_RECORDED"
+  }
 }
