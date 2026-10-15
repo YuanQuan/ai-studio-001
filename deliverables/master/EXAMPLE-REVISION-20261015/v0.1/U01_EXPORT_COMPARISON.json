@@ -1,0 +1,29 @@
+{
+  "reference": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+  "reference_sha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d",
+  "note": "与冻结的用户完整JSON比较；代码派生profile另含layer字段，不能当作完整导出格式。",
+  "exports": {
+    "u01_r2_initial_export.json": {
+      "instances": 53,
+      "prototypes": 21,
+      "exact_expected": true,
+      "sha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d"
+    },
+    "u01_r2_reset_export.json": {
+      "instances": 53,
+      "prototypes": 21,
+      "exact_expected": true,
+      "sha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d"
+    },
+    "u01_r2_reentry_export.json": {
+      "instances": 53,
+      "prototypes": 21,
+      "exact_expected": true,
+      "sha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d"
+    }
+  },
+  "edited_changed_instance_ids": [
+    "SAK-V03-037"
+  ],
+  "result": "PASS"
+}

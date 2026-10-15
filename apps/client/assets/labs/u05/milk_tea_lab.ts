@@ -1,6 +1,6 @@
 import {
   _decorator, Component, Node, UITransform, Graphics, Label, Color, view, sys, resources, JsonAsset,
-  input, Input, EventMouse, Vec3, Sprite, SpriteFrame, BitmapFont, Mask, UIOpacity,
+  input, Input, EventMouse, Vec3, Sprite, SpriteFrame, BitmapFont, Mask, UIOpacity, Prefab, instantiate,
 } from 'cc';
 import {
   LabConfig, Progress, Run, Stage, Ingredient, Dimension, DIMENSIONS, DIMENSION_NAMES, TIER_IDS, TIER_NAMES,
@@ -9,9 +9,12 @@ import {
 } from './milk_tea_state';
 import { U05BitmapText } from './u05_bitmap_text';
 import { U05NineSlicePlate } from './u05_nine_slice_plate';
+import { TouristAction, TouristFacing } from '../u02/tourist_state';
+import { ApprovedTouristAdapter, TouristAccessoryManifest, TouristFrameManifest, TouristMountManifest } from '../u02/tourist_adapter';
+import { TouristView } from '../u02/tourist_view';
 import {
   CupSnapshot, FacePose, PresentationPhase, PresentationResult, PresentationSample, PresentationTransaction,
-  createPresentationTransaction, freezeCupSnapshot, interruptPresentationForTimeout, samplePresentation,
+  createPresentationTransaction, DEFAULT_PRESENTATION_DURATIONS, freezeCupSnapshot, interruptPresentationForTimeout, PresentationDurations, samplePresentation,
   shouldLockInput,
 } from './u05_interaction_presentation';
 
@@ -69,10 +72,29 @@ function idFor(recipe: Run['orders'][number], dimension: Dimension): string {
 }
 function clampRange(value: number): number { return Math.max(0, Math.min(1, value)); }
 
+type ApprovedCustomerAssets = {
+  prefab: Prefab;
+  frameManifest: TouristFrameManifest;
+  mountManifest: TouristMountManifest;
+  accessoryManifest: TouristAccessoryManifest;
+  bodyFrames: SpriteFrame[];
+  accessoryFrames: SpriteFrame[];
+};
+
 @ccclass('U05MilkTeaLab')
 export class U05MilkTeaLab extends Component {
   public onExit: (() => void) | null = null;
   public setExitHandler(handler: (() => void) | null): void { this.onExit = handler; }
+  public configureApprovedCustomer(assets: ApprovedCustomerAssets): void {
+    this.customerAssets = assets;
+    this.customerActionFrames.clear();
+    for (const action of ['walk', 'happy', 'sad'] as TouristAction[]) {
+      this.customerActionFrames.set(action, assets.frameManifest.frames
+        .filter(item => item.action === action).map(item => ({ index: item.index, durationMs: item.durationMs }))
+        .sort((a, b) => a.index - b.index));
+    }
+    this.presentationDurationCache = null;
+  }
   private root: Node | null = null;
   private config: LabConfig | null = null;
   private configLoaded = false;
@@ -105,18 +127,29 @@ export class U05MilkTeaLab extends Component {
   private lastXp = 0;
   private presentation: PresentationTransaction | null = null;
   private presentationEpoch = 0;
+  private customerAssets: ApprovedCustomerAssets | null = null;
+  private customerAction: TouristAction | null = null;
+  private customerActionElapsedMs = 0;
+  private customerFrameIndex = -1;
+  private customerFacing: TouristFacing = 'right';
+  private customerCommittedFacing: TouristFacing | null = null;
+  private customerActionFrames = new Map<TouristAction, Array<{ index: number; durationMs: number }>>();
+  private presentationDurationCache: PresentationDurations | null = null;
   private presentationSample: PresentationSample = {
     phase: 'complete', face: 'neutral', faceProgress: 1, phaseStartedAtMs: 0, phaseDurationMs: 0,
     progress: 1, complete: true, customerX: 309, bubbleVisible: false,
   };
   private presentationVisual: {
     customer: Node | null;
+    touristView: TouristView;
+    touristAdapter: ApprovedTouristAdapter;
     bubble: Node | null;
     movingIngredients: Partial<Record<Dimension, Node>>;
     cupContents: Partial<Record<Dimension, Node>>;
     facePose: FacePose;
     faceProgress: number;
     phase: PresentationPhase | null;
+    action: TouristAction | null;
     faces: Partial<Record<FacePose, Node>>;
   } | null = null;
   private interactionMovingIngredients: Partial<Record<Dimension, Node>> = {};
@@ -163,7 +196,7 @@ export class U05MilkTeaLab extends Component {
       this.bitmapFont = font; this.dirty = true;
     });
   }
-  protected update(): void {
+  protected update(dt: number): void {
     const nowMs = this.now();
     if (this.run?.status === 'playing') {
       const previous = this.run;
@@ -171,7 +204,7 @@ export class U05MilkTeaLab extends Component {
       if (next !== previous) {
         this.run = next; this.recipeOpen = false; this.exitConfirm = false; this.status = '时间到，本局失败'; this.statusColor = GOLD;
         if (this.presentation && this.presentation.result !== 'won' && this.presentation.result !== 'exited') {
-          const interruptedCustomerX = samplePresentation(this.presentation, nowMs, this.presentationSample).customerX;
+          const interruptedCustomerX = samplePresentation(this.presentation, nowMs, this.presentationSample, this.presentationDurations()).customerX;
           this.presentationEpoch += 1;
           this.presentation = interruptPresentationForTimeout(this.presentation, this.presentationEpoch, nowMs, interruptedCustomerX);
         } else if (!this.presentation) {
@@ -187,7 +220,7 @@ export class U05MilkTeaLab extends Component {
     if (this.presentation) {
       if (this.presentation.epoch !== this.presentationEpoch || this.destroyed) this.cancelPresentation();
       else {
-        const sample = samplePresentation(this.presentation, nowMs, this.presentationSample);
+        const sample = samplePresentation(this.presentation, nowMs, this.presentationSample, this.presentationDurations());
         this.applyPresentationSample(sample, nowMs);
         if (sample.complete) this.finishPresentation();
       }
@@ -197,6 +230,7 @@ export class U05MilkTeaLab extends Component {
   protected onDestroy(): void {
     this.destroyed = true;
     this.presentationEpoch += 1; this.presentation = null; this.presentationVisual = null;
+    this.customerAction = null; this.customerActionElapsedMs = 0; this.customerFrameIndex = -1; this.customerFacing = 'right'; this.customerCommittedFacing = null;
     view.off('canvas-resize', this.resize, this);
     input.off(Input.EventType.MOUSE_DOWN, this.mouseDown, this);
     input.off(Input.EventType.MOUSE_UP, this.mouseUp, this);
@@ -388,13 +422,18 @@ export class U05MilkTeaLab extends Component {
       return;
     }
     if (this.warnedStorage) this.status = '浏览器不支持写入：进度只保留在当前页面';
+    if (!this.customerAssets) {
+      this.text(this.root, '顾客资源尚未注入，已停止加载本页', 0, 0, 21, GOLD, 620, 90);
+      this.button(this.root, '返回菜单', 0, -80, 170, 48, () => this.leave());
+      return;
+    }
     const tierId = TIER_IDS[this.tierIndex];
     const stages = stagesFor(this.config, tierId);
     const tier = { tier_id: tierId, display_name: TIER_NAMES[tierId], stages, recipe_dims: 3 };
     if (!this.run) this.renderSelection(tier);
     else this.renderGame(tier);
     if (this.presentation) {
-      const sampleNow = this.now(); this.applyPresentationSample(samplePresentation(this.presentation, sampleNow, this.presentationSample), sampleNow);
+      const sampleNow = this.now(); this.applyPresentationSample(samplePresentation(this.presentation, sampleNow, this.presentationSample, this.presentationDurations()), sampleNow);
     }
   }
   private renderSelection(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
@@ -416,7 +455,7 @@ export class U05MilkTeaLab extends Component {
       654.5, 376, 27, DEEP_BROWN, 340, 42);
     this.sourceText(`茶 ${stage.tea_options}/3  奶 ${stage.milk_options}/3  小料 ${stage.topping_options}/6`,
       654.5, 435, 27, DEEP_BROWN, 340, 42);
-    this.renderCustomerWindow(309, 'neutral');
+    this.renderCustomerWindow(309);
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderIngredientGallery(stage);
     this.showCupComposition(this.root!, this.sourcePos(509.5, 1209), 1, null, false);
@@ -466,13 +505,13 @@ export class U05MilkTeaLab extends Component {
   }
   private renderGame(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
     const run = this.run!; const nowMs = this.now(); const locked = shouldLockInput(this.presentation);
-    const sample = this.presentation ? samplePresentation(this.presentation, nowMs) : null;
+    const sample = this.presentation ? samplePresentation(this.presentation, nowMs, undefined, this.presentationDurations()) : null;
     const visualOrderIndex = this.presentation?.snapshot.orderIndex ?? Math.min(run.orderIndex, run.orders.length - 1);
     const order = run.orders[visualOrderIndex] ?? run.orders[run.orders.length - 1];
     this.renderSourceHeader(run, remainingSeconds(run, nowMs), visualOrderIndex);
     this.renderIngredientGallery(run.stage, false, !locked);
     const customerX = sample?.customerX ?? (run.status === 'won' || run.status === 'failed' ? -72 : 309);
-    const customerRig = this.renderCustomerWindow(customerX, sample?.face ?? 'neutral');
+    const customerRig = this.renderCustomerWindow(customerX);
     this.interactionMovingIngredients = {}; this.interactionCupContents = {};
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderToppingCategoryLabel();
@@ -482,9 +521,9 @@ export class U05MilkTeaLab extends Component {
       this.renderInteractionWorkCup(this.presentation.snapshot);
     }
     this.presentationVisual = {
-      customer: customerRig.customer, faces: customerRig.faces, bubble, movingIngredients: this.interactionMovingIngredients,
+      customer: customerRig.customer, touristView: customerRig.view, touristAdapter: customerRig.adapter, faces: {}, bubble, movingIngredients: this.interactionMovingIngredients,
       cupContents: this.interactionCupContents, facePose: sample?.face ?? 'neutral',
-      faceProgress: sample?.faceProgress ?? 1, phase: sample?.phase ?? null,
+      faceProgress: sample?.faceProgress ?? 1, phase: sample?.phase ?? null, action: this.customerAction,
     };
     this.imageButton(this.root!, 'BTN_UNDO_BASE', '撤销一项', [518, 1490], 'BTN_UNDO_ICON', [464.5, 1480],
       () => this.undo(), !locked && DIMENSIONS.some(dim => !!run.selected[dim]));
@@ -505,26 +544,25 @@ export class U05MilkTeaLab extends Component {
     this.timerLabel = this.sourceText(this.clockText(seconds), 881, 96, 34,
       seconds !== null && seconds < 20 ? GOLD : ROOF_TEXT, 124, 50);
   }
-  private renderCustomerWindow(left: number, initialFace: FacePose = 'neutral'): { customer: Node; faces: Partial<Record<FacePose, Node>> } {
+  private renderCustomerWindow(left: number): { customer: Node; view: TouristView; adapter: ApprovedTouristAdapter } {
+    const assets = this.customerAssets;
+    if (!assets) throw new Error('U05 缺少 Gallery 注入的已批准游客资源');
     const sourceScale = 720 / 1024;
     const centerX = 505; const centerY = 530.5;
     const window = new Node('CustomerWindow'); this.root!.addChild(window);
     window.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
     window.addComponent(UITransform).setContentSize(490 * sourceScale, 505 * sourceScale);
-    const mask = window.addComponent(Mask); mask.type = Mask.Type.GRAPHICS_RECT;
-    const customer = new Node('CustomerRig'); window.addChild(customer);
-    customer.setPosition(((left + 166) - centerX) * sourceScale, (centerY - 634.5) * sourceScale);
-    this.showAsset(customer, 'CUSTOMER_BODY', { x: 0, y: 0 }, [332, 301]);
-    const faces: Partial<Record<FacePose, Node>> = {};
-    const faceAssets: Record<FacePose, string> = {
-      neutral: 'FACE_NEUTRAL', squash: 'FACE_SQUASH', blink: 'FACE_BLINK', expand_mid: 'FACE_EXPAND_MID',
-      happy: 'FACE_HAPPY', disappointed: 'FACE_DISAPPOINTED',
-    };
-    (Object.keys(faceAssets) as FacePose[]).forEach(pose => {
-      const face = this.showAsset(customer, faceAssets[pose], { x: 0, y: 0 }, [332, 301]);
-      face.active = pose === initialFace; faces[pose] = face;
-    });
-    return { customer, faces };
+    window.addComponent(Mask).type = Mask.Type.GRAPHICS_RECT;
+    const customer = instantiate(assets.prefab); customer.name = 'UG_GHOST_01_Customer'; window.addChild(customer);
+    customer.setPosition(((left + 166) - centerX) * sourceScale,
+      (centerY - 634.5) * sourceScale + 25, 0);
+    const view = new TouristView(customer);
+    view.setStageHeight(270);
+    const adapter = new ApprovedTouristAdapter(view, assets.frameManifest, assets.mountManifest,
+      assets.accessoryManifest, assets.bodyFrames, assets.accessoryFrames);
+    if (!adapter.valid) throw new Error(`UG_GHOST_01 资源或挂点清单无效：${adapter.diagnostic()}`);
+    this.commitCustomerFrame(adapter, this.customerAction, this.customerActionElapsedMs, true);
+    return { customer, view, adapter };
   }
   private renderTargetCup(recipe: Run['orders'][number], bubbleVisible: boolean): Node {
     const group = new Node('OrderPresentation'); this.root!.addChild(group); group.active = bubbleVisible;
@@ -583,22 +621,74 @@ export class U05MilkTeaLab extends Component {
     });
     const front = relative('WORK_CUP_FRONT', 509.5, 1209, [189, 238]); this.setOpacity(front, 255);
   }
+  private presentationDurations(): PresentationDurations {
+    if (this.presentationDurationCache) return this.presentationDurationCache;
+    const sum = (action: TouristAction): number => (this.customerActionFrames.get(action) ?? [])
+      .reduce((total, frame) => total + frame.durationMs, 0);
+    const happyMs = sum('happy'); const sadMs = sum('sad');
+    this.presentationDurationCache = happyMs > 0 && sadMs > 0 ? { happyMs, sadMs } : DEFAULT_PRESENTATION_DURATIONS;
+    return this.presentationDurationCache;
+  }
+
+  private commitCustomerFrame(adapter?: ApprovedTouristAdapter, action = this.customerAction,
+    elapsedMs = this.customerActionElapsedMs, force = false): void {
+    const target = adapter ?? this.presentationVisual?.touristAdapter;
+    const manifest = this.customerAssets?.frameManifest;
+    if (!target || !manifest || !target.valid) return;
+    let frameAction: TouristAction = action ?? 'walk';
+    const actionItems = this.customerActionFrames.get(frameAction) ?? [];
+    if (!actionItems.length) return;
+    let frameIndex = 0;
+    if (action === null) {
+      const initialId = manifest.initial;
+      const initial = manifest.frames.find(item => item.frameId === initialId);
+      frameAction = initial?.action ?? 'walk'; frameIndex = initial?.index ?? 0;
+    } else {
+      const total = actionItems.reduce((sum, item) => sum + item.durationMs, 0);
+      let elapsed = Math.max(0, elapsedMs);
+      if (action === 'walk') elapsed = total > 0 ? elapsed % total : 0;
+      else elapsed = Math.min(elapsed, Math.max(0, total - 0.001));
+      for (const item of actionItems) {
+        if (elapsed < item.durationMs) { frameIndex = item.index; break; }
+        elapsed -= item.durationMs;
+        frameIndex = item.index;
+      }
+    }
+    if (!force && action === this.customerAction && frameIndex === this.customerFrameIndex
+      && this.customerCommittedFacing === this.customerFacing) return;
+    const frame = target.frame(frameAction, frameIndex);
+    if (!frame) return;
+    const packet = {
+      frame, action: frameAction, frameIndex,
+      phase: action === null ? 'initial' as const : 'playing' as const,
+      facing: this.customerFacing,
+      slots: { hat: null, glasses: null, wristband: null }, generation: 0,
+    };
+    if (target.commit(packet)) { this.customerFrameIndex = frameIndex; this.customerCommittedFacing = this.customerFacing; }
+  }
+
   private applyPresentationSample(sample: PresentationSample, nowMs: number): void {
     const visual = this.presentationVisual;
     if (!visual || !this.presentation) return;
-    if (visual.facePose !== sample.face) {
-      (Object.keys(visual.faces) as FacePose[]).forEach(pose => {
-        const face = visual.faces[pose]; if (face?.isValid) face.active = pose === sample.face;
-      });
-      visual.facePose = sample.face;
-    }
+    visual.facePose = sample.face;
     visual.faceProgress = sample.faceProgress; visual.phase = sample.phase;
+    this.customerFacing = sample.phase === 'depart' ? 'left' : 'right';
+    const action: TouristAction | null = sample.phase === 'happy' ? 'happy'
+      : sample.phase === 'disappointed' ? 'sad'
+        : sample.phase === 'depart' || sample.phase === 'arrive' ? 'walk' : null;
+    if (action !== this.customerAction) {
+      this.customerAction = action;
+      this.customerFrameIndex = -1;
+    }
+    this.customerActionElapsedMs = action === null ? 0 : Math.max(0, nowMs - sample.phaseStartedAtMs);
+    visual.action = this.customerAction;
+    this.commitCustomerFrame(visual.touristAdapter);
     if (visual.bubble?.isValid) visual.bubble.active = sample.bubbleVisible;
     const customer = visual.customer;
     if (customer?.isValid && customer.parent?.isValid) {
       const sourceScale = 720 / 1024; const windowCenterX = 505; const windowCenterY = 530.5;
       customer.setPosition(((sample.customerX + 166) - windowCenterX) * sourceScale,
-        (windowCenterY - 634.5) * sourceScale);
+        (windowCenterY - 634.5) * sourceScale + 25, 0);
     }
     const elapsed = Math.max(0, nowMs - this.presentation.submittedAtMs);
     if (sample.phase === 'synthesis') {
@@ -641,6 +731,7 @@ export class U05MilkTeaLab extends Component {
   }
   private cancelPresentation(): void {
     this.presentationEpoch += 1; this.presentation = null; this.presentationVisual = null;
+    this.customerAction = null; this.customerActionElapsedMs = 0; this.customerFrameIndex = -1;
     this.interactionMovingIngredients = {}; this.interactionCupContents = {};
   }
   private finishPresentation(): void {
@@ -847,7 +938,7 @@ export class U05MilkTeaLab extends Component {
     if (!this.run || this.presentation?.result === 'exited' || this.run.status === 'exited') return;
     const snapshot = this.presentation?.snapshot ?? this.snapshotRun(this.run);
     const nowMs = this.now();
-    const customerStartX = this.presentation ? samplePresentation(this.presentation, nowMs, this.presentationSample).customerX : 309;
+    const customerStartX = this.presentation ? samplePresentation(this.presentation, nowMs, this.presentationSample, this.presentationDurations()).customerX : 309;
     this.recipeOpen = false; this.exitConfirm = false; this.run = { ...this.run, status: 'exited' };
     this.status = '离开后本局不计熟练度'; this.statusColor = GOLD;
     this.startPresentation('exited', snapshot, nowMs, customerStartX); this.dirty = true;
@@ -857,5 +948,5 @@ export class U05MilkTeaLab extends Component {
     const tierId = TIER_IDS[this.tierIndex]; this.cancelPresentation(); this.run = null;
     this.beginRun({ tier_id: tierId, stages: stagesFor(this.config!, tierId) });
   }
-  private leave(): void { this.cancelPresentation(); this.run = null; this.recipeOpen = false; this.exitConfirm = false; this.toggleValidation = false; this.status = ''; this.actions.clear(); this.modalActions.clear(); this.onExit?.(); }
+  private leave(): void { this.cancelPresentation(); this.customerAction = null; this.customerActionElapsedMs = 0; this.customerFrameIndex = -1; this.customerFacing = 'right'; this.customerCommittedFacing = null; this.run = null; this.recipeOpen = false; this.exitConfirm = false; this.toggleValidation = false; this.status = ''; this.actions.clear(); this.modalActions.clear(); this.onExit?.(); }
 }

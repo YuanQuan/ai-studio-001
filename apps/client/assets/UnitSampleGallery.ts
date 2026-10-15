@@ -492,7 +492,19 @@ export class UnitSampleGallery extends Component {
     this.u05ProfilerWasShowing=profiler.isShowingStats();
     profiler.hideStats();
     const host = this.makeNode('U05LabHost', this.page, 720, 1280);
+    host.active = false;
     this.u05Lab = host.addComponent(U05MilkTeaLab);
+    if (this.touristPrefab && this.touristFrameManifest?.json && this.touristMountManifest?.json && this.touristAccessoryManifest?.json) {
+      this.u05Lab.configureApprovedCustomer({
+        prefab: this.touristPrefab,
+        frameManifest: this.touristFrameManifest.json as TouristFrameManifest,
+        mountManifest: this.touristMountManifest.json as TouristMountManifest,
+        accessoryManifest: this.touristAccessoryManifest.json as TouristAccessoryManifest,
+        bodyFrames: this.touristBodyFrames,
+        accessoryFrames: this.touristAccessoryFrames,
+      });
+    }
+    host.active = true;
     const epoch = this.pageEpoch;
     const exitAdapter = this.u05Lab as unknown as { setExitHandler?: (handler: () => void) => void; onExit?: (() => void) | null };
     const returnToMenu = () => { if (epoch === this.pageEpoch) { if(this.u05ProfilerWasShowing)profiler.showStats();this.u05ProfilerWasShowing=null;this.openMenu(); } };

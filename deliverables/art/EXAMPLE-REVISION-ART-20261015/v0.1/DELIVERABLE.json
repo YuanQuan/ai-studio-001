@@ -1,0 +1,57 @@
+{
+  "task_id": "EXAMPLE-REVISION-ART-20261015",
+  "owner": "art",
+  "summary": "已按用户批准的零生图局部路线，从v0.5母版制作48层新版PSD、5张唯一新PNG、桥及街面同尺度对照、far_l双眼4秒微光循环预览与完整身份/像素核对；新切片等待用户Gate2，未接入工程。",
+  "artifacts": [
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/ART_BRIEF.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/ART_PRESIGN.json",
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/ART_TECH_PRESIGN.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/SOURCE_EXPORT_MAP.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PSD_MANIFEST.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/FILE_VERIFICATION.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/EXECUTION_LEDGER.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/source/scene_sakura_revision_master.psd",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_street_master.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_l_clean.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_r_clean.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_dark_base.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_glow.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/review/reassembled_from_actual_exports.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/review/bridge_before_after_same_scale.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/review/street_before_after_same_scale.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/review/far_l_eyes_4s_loop.png",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/package/EXAMPLE_REVISION_ART_GATE2_v0.1.zip",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PACKAGE_MANIFEST.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同批Art/Tech签认先于首图，遵循已批准局部制作、零生图及现有来源范围。",
+      "result": "PASS",
+      "evidence": "同批ART_PRESIGN.json与Tech的ART_TECH_PRESIGN.md在首图前落盘；PRODUCTION_PLAN.md引用Gate1和v0.5 PSD SHA；EXECUTION_LEDGER.json记录本批生成调用0、无外部新像素。"
+    },
+    {
+      "criterion": "桥边缘清理、左街面镜像复用、眼睛拆层有实际PNG、完整分层PSD与同尺度重组，未改范围有核对证据。",
+      "result": "PASS",
+      "evidence": "5张唯一新PNG、48层scene_sakura_revision_master.psd、实际导出重组、桥/街面同尺度对照和4秒动态PNG均实存；FILE_VERIFICATION.json证明PSD/实际切片重组0差、已界定变化区外RGBA 0差、全亮眼区对v0.5 0差。"
+    },
+    {
+      "criterion": "新切片身份清单及限制明确，Gate2待用户决定，未接入工程。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md、CUT_MANIFEST.json、SOURCE_EXPORT_MAP.md列新图SHA、尺寸、offset、镜像、18张沿用图hash与现有UUID；USER_REVIEW_PACKET.md列未测范围并请用户决定Gate2。新增工程路径均标计划且UUID为空，apps/client无本批新切片。"
+    }
+  ],
+  "assumptions": [
+    "far_r实图没有骷髅，本批仅拆far_l的一对眼睛；Tech同批预签已按实图澄清。",
+    "保留现有53实例基础布局，街面右镜像作为母图复用的计划实例；具体工程节点接入需Gate2批准。"
+  ],
+  "risks": [
+    "Gate2尚未批准本版具体切片与效果；不得正式接入。",
+    "Photoshop/Photopea原生打开、Creator导入、目标视窗运行与性能未测；静态预览不能代表运行结论。",
+    "旧版来源的对外分发权未在本批重新审定，仅作为当前项目内样件。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

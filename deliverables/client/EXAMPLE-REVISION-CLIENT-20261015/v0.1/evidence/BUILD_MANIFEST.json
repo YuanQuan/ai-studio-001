@@ -1,0 +1,137 @@
+{
+  "taskId": "EXAMPLE-REVISION-CLIENT-20261015",
+  "creatorVersion": "3.8.8",
+  "typescriptVersion": "Creator bundled TypeScript 5.8.2",
+  "target": "web-mobile",
+  "cliRecovery": {
+    "result": "SUCCESS",
+    "exitCode": 36,
+    "successMarker": "build Task (EXAMPLE-REVISION-CLIENT-20261015-v0.1-r2) Finished in (5 s)ms",
+    "durationSecondsFromLog": 5,
+    "configPath": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json",
+    "configSha256": "8f6228b1130d751839071850698bd533e42174429bd3940c39d97379772147bd",
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-user-layout-client-20261015-isolated-project --build 'configPath=/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json;platform=web-mobile'",
+    "permission": "Root obtained elevated Creator startup approval for r1; r2 used the same Creator launch permission path. No system security settings changed.",
+    "stdout": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/creator-build-r2-stdout.log",
+    "stderr": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/creator-build-r2-stderr.log",
+    "buildLog": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/creator-build-r2.log",
+    "stdoutSha256": "2c4f9436149072b6bc6298bcd8232dc6a72d5c01b3a9e00bf2fac15146c0a618",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "buildLogSha256": "09b656ac762c6d4466bb53cf95df072c037823b1375182773799b5aa68a4532d"
+  },
+  "sourceSync": {
+    "project": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project",
+    "assetFileCount": 656,
+    "formalSourceAssetTreeSha256": "d49889ddc43ffa4cde7131d1a03f2ceb9367944cacb5e63085c1e3d06e951740",
+    "isolatedAssetTreeSha256": "d49889ddc43ffa4cde7131d1a03f2ceb9367944cacb5e63085c1e3d06e951740",
+    "fileComparison": "All 656 files match byte-for-byte; deterministic formal/isolated tree hashes match after the U01 shop initialization fix."
+  },
+  "outputDirectory": "/private/tmp/example-revision-client-20261015-build-r2/example-revision-client-20261015-web-mobile-r2",
+  "outputFileCount": 766,
+  "outputHashes": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+    "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+    "src/settings.json": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+    "assets/main/index.js": "f96bc0a81d5aaf56beb6e7a72fb64f83e702effdc56491e2c6daba559831b461",
+    "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+  },
+  "sourceHashes": {
+    "apps/client/assets/UnitSampleGallery.ts": "114b77c64bd46e545a20c9642e0afe429445233a0af77ce7c0bf11f70df4a4de",
+    "apps/client/assets/labs/u01/sakura_v03_environment.ts": "518da6bd7f3dc02f5132519563027a6ec7eed4387af10b16fbad74ba25b3029b",
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts": "50f524200c9cef2c69f64eb56c6a5cde142a86ba082b09818afec5ee3f0be083",
+    "apps/client/assets/labs/u01/sakura_water_motion_math.ts": "7b1883af64b44c5e32f4d38536e2237d7651cd7da09a55b4c6a8c4e96f038efc",
+    "apps/client/assets/labs/u01/sakura_water_motion_math.ts.meta": "8ab89c9e5f0b0d996c27642b2f13fbdbb664d35aac1f10005ed8a9922823232f",
+    "apps/client/assets/labs/u05/milk_tea_lab.ts": "54b6e9fbc7e288dd92c60e9483aed437b3c67f8c827969d68685d18ba00c1b6e",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts": "21e17f9f578f7d354d0785d650cf5ec3658ea0126c423e5d4eb644d2123ca453"
+  },
+  "typescript": {
+    "result": "PASS",
+    "command": "Creator bundled TypeScript tsc -p apps/client/tsconfig.json --noEmit --skipLibCheck --target ES2021 --lib ES2021,DOM",
+    "exitCode": 0,
+    "rawOutput": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/typescript-check-r2.log",
+    "rawOutputBytes": 0,
+    "structuredRecord": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/TYPESCRIPT_CHECK.json"
+  },
+  "logicAssertions": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/CLIENT_ASSERTIONS.json (9 PASS; includes long elapsed/wrap same-offset/y invariance and settlement source isolation)",
+  "inputLayout": {
+    "path": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+    "instances": 53
+  },
+  "httpPreview": {
+    "url": "http://127.0.0.1:8882/",
+    "bind": "127.0.0.1",
+    "port": 8882,
+    "server": "Python http.server",
+    "pid": 28744,
+    "directory": "/private/tmp/example-revision-client-20261015-build-r2/example-revision-client-20261015-web-mobile-r2",
+    "listenerObserved": true,
+    "ordinarySandboxCurl": "Blocked by local sandbox network policy; Root IAB is using in-app browser.",
+    "state": "r1 port 8881 stopped after Root tests; final r2 port 8882 retained for user review."
+  },
+  "iab": "PASS_EXISTING_ASSET_CLIENT_SCOPE",
+  "screenshot": [
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u01_r2_initial.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u01_r2_motion_b.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u01_r2_ghost_edited.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u01_r2_dragged.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u01_r2_reset.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u00_r2_static_a.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u00_r2_static_b.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u05_wrong_recovered.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u05_won.jpg",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/u05_timed_after.jpg"
+  ],
+  "browserWarningsErrors": {
+    "r1": 0,
+    "r2": 0,
+    "evidence": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/browser_warnings_errors.json"
+  },
+  "targetDevicePerformance": "NOT_TESTED",
+  "gate2EyeAndBridge": "NOT_IMPORTED_NOT_BOUND; user approval pending",
+  "buildHistory": [
+    {
+      "revision": "r1",
+      "taskName": "EXAMPLE-REVISION-CLIENT-20261015-v0.1",
+      "exitCode": 36,
+      "finishedMarker": "build Task (EXAMPLE-REVISION-CLIENT-20261015-v0.1) Finished in (4 s)ms",
+      "outputDirectory": "/private/tmp/example-revision-client-20261015-build/example-revision-client-20261015-web-mobile",
+      "port": 8881,
+      "sourceHashEditor": "91791238296240f066080e27360351a76efb788005b785fc5b2443b940db5ce5",
+      "mainScriptSha256": "9ccfdc81589cbc8b94f8138c2a4b8580aaf2c2100ae8ffb167c2ca489ee5bd7e",
+      "iabFinding": "six shop prefabs overlapped at center due shop node initialization not called after reorder was changed to sibling-only; failure screenshots listed above. r1 remains live for Root U05 testing."
+    },
+    {
+      "revision": "r2",
+      "taskName": "EXAMPLE-REVISION-CLIENT-20261015-v0.1-r2",
+      "exitCode": 36,
+      "finishedMarker": "build Task (EXAMPLE-REVISION-CLIENT-20261015-v0.1-r2) Finished in (5 s)ms",
+      "configSha256": "8f6228b1130d751839071850698bd533e42174429bd3940c39d97379772147bd",
+      "outputDirectory": "/private/tmp/example-revision-client-20261015-build-r2/example-revision-client-20261015-web-mobile-r2",
+      "port": 8882,
+      "sourceHashEditor": "50f524200c9cef2c69f64eb56c6a5cde142a86ba082b09818afec5ee3f0be083",
+      "mainScriptSha256": "f96bc0a81d5aaf56beb6e7a72fb64f83e702effdc56491e2c6daba559831b461",
+      "change": "Re-applies each shop prefab Item layout immediately after instantiate; reorder remains sibling-only. Root retest pending."
+    }
+  ],
+  "creatorAssetImport": {
+    "result": "PASS",
+    "assetUrl": "db://assets/labs/u01/sakura_water_motion_math.ts",
+    "uuid": "c64f9c9e-14c7-4152-b491-a875fb8f099e",
+    "assetDb": "apps/client/library/.assets-data.json",
+    "assetInfo": "apps/client/library/.assets-info.json",
+    "editorCompiledChunk": "apps/client/temp/programming/packer-driver/targets/editor/chunks/76/769f97d6beeead4b4ec461a49ac7ff0ac8d7f8b3.js",
+    "editorCompiledChunkSha256": "dac12adff3353aad0e56139fd46955f9b0d99403acbdde972d8aad597334fbcc"
+  },
+  "iabEvidence": {
+    "verification": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/IAB_VERIFICATION.json",
+    "runtimeReport": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/BROWSER_RUNTIME_REPORT.md",
+    "httpIdentity": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/HTTP_IDENTITY.json",
+    "u01ExportComparison": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/U01_EXPORT_COMPARISON.json"
+  },
+  "remainingNotTested": [
+    "新桥、街面和眼睛切片的Creator导入及实际动画：Gate2未批，未接入。",
+    "所有方向越界全程逐帧录像、目标设备性能和小游戏平台专项。",
+    "临近0秒正确或错误提交的浏览器竞争分支；纯逻辑断言覆盖超时接管。"
+  ]
+}

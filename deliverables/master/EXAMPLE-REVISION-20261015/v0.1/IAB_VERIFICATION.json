@@ -1,0 +1,79 @@
+{
+  "environment": "Codex内置浏览器，Creator3.8.8 Web-Mobile实际HTTP产物，720×1280视口",
+  "final_url": "http://127.0.0.1:8882/",
+  "first_url": "http://127.0.0.1:8881/",
+  "build_identity": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+  "http_identity": "HTTP_IDENTITY.json",
+  "u01": {
+    "result": "PASS",
+    "r1_regression": "首轮六店未应用初始位置和缩放，重叠截图保留。Client补shop初始applyItem后构建r2。",
+    "r2_six_shops": "实图确认六店位置恢复。",
+    "exports": "初始、重置、重入均53实例和21原型，三份SHA均094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d，与冻结用户完整JSON相同。",
+    "edit": "列表选037灵焰并X+10，导出只有其left由1920改为1930。实际锁定拖动、重置及重入可用。",
+    "motion": "不同时点实图中河面横移，天空、远景和空中装饰固定；同组同步及越界数学由逻辑断言补证。",
+    "evidence": [
+      "evidence/u01_r2_initial.jpg",
+      "evidence/u01_r2_motion_b.jpg",
+      "evidence/u01_r2_ghost_edited.jpg",
+      "evidence/u01_r2_dragged.jpg",
+      "evidence/u01_r2_reset.jpg",
+      "U01_EXPORT_COMPARISON.json"
+    ]
+  },
+  "u00": {
+    "result": "PASS",
+    "checks": [
+      "同镜头两时点背景固定、河面横移；白色游客动作保留。",
+      "实际手动拖动镜头到糖画和现烤一侧。"
+    ],
+    "evidence": [
+      "evidence/u00_r2_static_a.jpg",
+      "evidence/u00_r2_static_b.jpg",
+      "evidence/u00_r2_manual_camera.jpg"
+    ]
+  },
+  "u04": {
+    "result": "PASS_SMOKE",
+    "checks": [
+      "共用背景、店长显示、阿炭与微笑切换、返回菜单。"
+    ],
+    "evidence": [
+      "evidence/u04_r2_shared_background.jpg"
+    ]
+  },
+  "u05": {
+    "result": "PASS",
+    "build_scope": "8881完成整局和限时实测；r2仅修U01初始化，U05源码未变。8882另测顾客、入场、退出和重入。",
+    "checks": [
+      "等待显示UG_GHOST_01，顾客实际从窗左入场。",
+      "幽灯茶、霜铃乳、鬼火珠错单出现sad；订单仍1/3，杯清空，可重做。",
+      "月雾茶、霜铃乳、鬼火珠正确后出现happy、离场及下一位入场至2/3。",
+      "第二杯月雾茶、霜铃乳、梦纹冻通过至3/3；第三杯幽灯茶、云魄乳、梦纹冻，快速重复确认后显示一次三杯完成及+10提示。",
+      "已有隔离验证模式下噩梦第二阶段从01:30到00:00，显示时间到失败、顾客离场，无奖励提示。",
+      "r2退出确认后向左离场至选档，再次开始回1/3，无旧结果残留。"
+    ],
+    "evidence": [
+      "evidence/u05_wrong_frames.json",
+      "evidence/u05_happy_frames.json",
+      "evidence/u05_wrong_recovered.jpg",
+      "evidence/u05_won.jpg",
+      "evidence/u05_timed_start.jpg",
+      "evidence/u05_timed_after.jpg",
+      "evidence/u05_r2_customer.jpg",
+      "evidence/u05_r2_reentry.jpg"
+    ],
+    "timing_scope": "连续截图捕获悲伤、高兴关键帧和接续；1.4秒及2.8秒完整相位由manifest和逻辑断言核实，不将离散截图称为逐帧测时。"
+  },
+  "browser_warnings_errors": {
+    "r1": 0,
+    "r2": 0,
+    "evidence": "evidence/browser_warnings_errors.json"
+  },
+  "not_tested": [
+    "新桥、街面和眼睛切片的Creator导入及实际动画：Gate2未批，未接入。",
+    "所有方向越界全程逐帧录像、目标设备性能和小游戏平台专项。",
+    "临近0秒正确或错误提交的浏览器竞争时序；逻辑断言覆盖超时接管。"
+  ],
+  "result": "PASS_EXISTING_ASSET_CODE_SCOPE_NEW_ASSETS_WAIT_GATE2",
+  "verified_at": "2026-10-15T23:02:25.979626+08:00"
+}

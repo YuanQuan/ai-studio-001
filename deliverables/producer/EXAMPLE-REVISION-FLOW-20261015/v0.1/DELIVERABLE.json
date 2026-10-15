@@ -1,0 +1,36 @@
+{
+  "task_id": "EXAMPLE-REVISION-FLOW-20261015",
+  "owner": "producer",
+  "summary": "本轮四线状态、Gate1/Gate2独立审批、Art切片与Client运行送审、Tech内部完成均有路径与身份记录；完成连续执行检查与可信时间复盘，FLOW待Master接受。",
+  "artifacts": [
+    "deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/dashboard/index.html",
+    "project/ASSET_HANDOFF_REGISTRY.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "持续登记本轮真实节点、路径版本及Gate1批准/Gate2待审，保留既有任务审批和工作区差异。",
+      "result": "PASS",
+      "evidence": "FLOW_REPORT.md、四线Task、两项Gate2审批及project独立marker；Art 48/48切片身份与82件ZIP、Client 26/26运行身份实算。"
+    },
+    {
+      "criterion": "结束前完成continuity check及可信起止时间复盘；无空转任务，用户未批资源不标DONE。",
+      "result": "PASS",
+      "evidence": "WORK_RETROSPECTIVE.md记录22:21:21.418422+08:00批准登记到23:08:00+08:00、46分38.6秒跨节点与未知净工时；Continuity为Art/Client USER_REVIEW、Tech DONE、FLOW REVIEW待Master接受。"
+    }
+  ],
+  "assumptions": [
+    "用户实际消息精确发送时间未知；22:21:21.418422+08:00是Master授权登记与启动时间。"
+  ],
+  "risks": [
+    "Art实际切片Gate2及Client运行版均待用户分别决定；未批新资源不可正式导入。",
+    "目标设备性能与临近0秒浏览器竞争分支未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

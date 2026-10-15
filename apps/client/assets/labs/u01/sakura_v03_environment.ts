@@ -1,6 +1,7 @@
-import { _decorator, Component, Node, resources, Sprite, SpriteFrame, UITransform, Vec3 } from 'cc';
+import { _decorator, Component, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
 import { SAKURA_V03_LAYOUT } from './sakura_v03_layout';
 import type { UserLayoutEntry } from './sakura_user_layout';
+import { deriveWaterGroups, recaptureWaterGroupPositions, sampleWaterGroupCenter, WaterEntry } from './sakura_water_motion_math';
 
 const LAYERS = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
 const { ccclass } = _decorator;
@@ -25,46 +26,91 @@ function loadFrames(): Promise<Map<string, SpriteFrame>> {
   return loadPromise;
 }
 
-/** Small, shared motion driver. Baseline node transforms remain untouched for exports. */
+interface MovingGroup {
+  nodes: Node[];
+  width: number;
+  baseLeft: number;
+  relativeX: number[];
+  baseY: number[];
+  direction: 1 | -1;
+  appliedCenterX: number;
+  baseCenterX: number;
+  startElapsed: number;
+}
+
+/** Shared horizontal river driver. It never changes static backgrounds or vertical coordinates. */
 @ccclass('SakuraV03Motion')
 export class SakuraV03Motion extends Component {
   private elapsed = 0;
-  private viewport: Node | null = null;
-  private sky: Node | null = null;
-  private far: Node | null = null;
-  private floaters: Array<{ node: Node; y: number; phase: number }> = [];
-  public configure(viewport: Node, sky: Node, far: Node, floaters: Node[]): void {
-    this.viewport = viewport;
-    this.sky = sky;
-    this.far = far;
-    this.floaters = floaters.map((node, index) => ({ node, y: node.position.y, phase: index * 1.17 }));
+  private groups: MovingGroup[] = [];
+
+  public configureWater(groups: Array<{ nodes: Node[]; direction: 1 | -1 }>): void {
+    this.elapsed = 0;
+    this.groups = groups.map(group => this.makeGroup(group.nodes, group.direction)).filter((group): group is MovingGroup => !!group);
   }
+
+  /** Re-capture user-edited baseline coordinates while removing the last preview offset. */
+  public captureBaseline(changedNode: Node): void {
+    const group = this.groups.find(candidate => candidate.nodes.includes(changedNode));
+    if (!group) return;
+    const delta = group.appliedCenterX - group.baseCenterX;
+    const changedIndex = group.nodes.indexOf(changedNode);
+    const baselineX = recaptureWaterGroupPositions(group.nodes.map(node => node.position.x), changedIndex, delta);
+    group.nodes.forEach((node, index) => {
+      group.relativeX[index] = baselineX[index];
+      group.baseY[index] = node.position.y;
+    });
+    const bounds = group.nodes.map((node, index) => {
+      const width = (node.getComponent(UITransform)?.contentSize.width ?? 0) * Math.abs(node.scale.x);
+      return { left: group.relativeX[index] - width / 2, right: group.relativeX[index] + width / 2 };
+    });
+    const left = Math.min(...bounds.map(bound => bound.left));
+    const right = Math.max(...bounds.map(bound => bound.right));
+    group.baseLeft = left;
+    group.width = right - left;
+    group.baseCenterX = left + group.width / 2;
+    group.appliedCenterX = group.baseCenterX;
+    group.relativeX = group.relativeX.map(x => x - group.baseCenterX);
+    group.startElapsed = this.elapsed;
+  }
+
   protected update(dt: number): void {
+    if (!Number.isFinite(dt) || dt <= 0 || !this.groups.length) return;
     this.elapsed += dt;
-    const wave = Math.sin(this.elapsed * Math.PI / 4);
-    if (this.sky?.isValid) this.sky.setPosition(this.safeOffset(this.sky, 12 * wave), 0, 0);
-    if (this.far?.isValid) this.far.setPosition(this.safeOffset(this.far, 6 * wave), 0, 0);
-    for (const item of this.floaters) if (item.node.isValid)
-      item.node.setPosition(item.node.position.x, item.y + 2 * Math.sin(this.elapsed * Math.PI * 2 / 3 + item.phase), item.node.position.z);
+    for (const group of this.groups) {
+      const groupElapsed = Math.max(0, this.elapsed - group.startElapsed);
+      const centerX = sampleWaterGroupCenter(group.baseLeft, group.width, group.direction, groupElapsed);
+      const delta = centerX - group.baseCenterX;
+      group.nodes.forEach((node, index) => {
+        if (node.isValid) node.setPosition(group.baseCenterX + group.relativeX[index] + delta, group.baseY[index], node.position.z);
+      });
+      group.appliedCenterX = centerX;
+    }
   }
-  private safeOffset(content: Node, requested: number): number {
-    const viewportTransform = this.viewport?.getComponent(UITransform);
-    const layerTransform = content.parent?.getComponent(UITransform);
-    if (!viewportTransform || !layerTransform) return 0;
-    const halfWidth = viewportTransform.contentSize.width / 2;
-    const leftWorld = viewportTransform.convertToWorldSpaceAR(new Vec3(-halfWidth, 0, 0));
-    const rightWorld = viewportTransform.convertToWorldSpaceAR(new Vec3(halfWidth, 0, 0));
-    const visibleLeft = layerTransform.convertToNodeSpaceAR(leftWorld).x;
-    const visibleRight = layerTransform.convertToNodeSpaceAR(rightWorld).x;
-    const minOffset = visibleRight - sourceWidth / 2;
-    const maxOffset = visibleLeft + sourceWidth / 2;
-    if (minOffset > maxOffset) return 0;
-    return Math.max(minOffset, Math.min(maxOffset, requested));
+
+  private makeGroup(nodes: Node[], direction: 1 | -1): MovingGroup | null {
+    const activeNodes = nodes.filter(node => node?.isValid);
+    if (activeNodes.length !== 3) return null;
+    const relativeX = activeNodes.map(node => node.position.x);
+    const baseY = activeNodes.map(node => node.position.y);
+    const bounds = activeNodes.map(node => {
+      const width = (node.getComponent(UITransform)?.contentSize.width ?? 0) * Math.abs(node.scale.x);
+      return { left: node.position.x - width / 2, right: node.position.x + width / 2 };
+    });
+    const baseLeft = Math.min(...bounds.map(bound => bound.left));
+    const right = Math.max(...bounds.map(bound => bound.right));
+    const width = right - baseLeft;
+    const baseCenterX = baseLeft + width / 2;
+    return {
+      nodes: activeNodes, width, baseLeft,
+      relativeX: relativeX.map(x => x - baseCenterX), baseY,
+      direction, appliedCenterX: baseCenterX, baseCenterX, startElapsed: this.elapsed,
+    };
   }
 }
 
-/** Fill the stable five-layer Prefab interface; a missing profile preserves the shared U04 defaults. */
-export function populateSakuraV03(root: Node, viewport: Node, profile?: readonly UserLayoutEntry[]): void {
+/** Populate approved v0.5 source instances; river motion is a transient runtime transform. */
+export function populateSakuraV03(root: Node, _viewport: Node, profile?: readonly UserLayoutEntry[]): void {
   void loadFrames().then(frames => {
     if (!root.isValid || root.getChildByName('SAKURA_V03_READY')) return;
     const layers = LAYERS.map(name => root.getChildByName(name));
@@ -78,7 +124,6 @@ export function populateSakuraV03(root: Node, viewport: Node, profile?: readonly
       layer!.addChild(group);
       return group;
     });
-    const floaters: Node[] = [];
     const instances = profile
       ? profile.filter(instance => !instance.instanceId.startsWith('ORIGINAL-SHOP-')).map(instance => ({
         instanceId: instance.instanceId, assetId: instance.assetId, layer: instance.layer,
@@ -93,12 +138,12 @@ export function populateSakuraV03(root: Node, viewport: Node, profile?: readonly
         mirror: instance.mirror, motion: instance.motion, order,
       }));
     const layerOrder = new Map<string, number>();
+    const nodesById = new Map<string, Node>();
     for (const instance of instances) {
-      const proto = SAKURA_V03_LAYOUT.prototypes.find(item => item.id === instance.assetId);
       const frame = frames.get(instance.assetId);
       const layerIndex = LAYERS.indexOf(instance.layer);
       const parent = groups[layerIndex];
-      if (!proto || !frame || !parent) continue;
+      if (!frame || !parent) continue;
       const node = new Node(instance.instanceId);
       const transform = node.addComponent(UITransform);
       const sprite = node.addComponent(Sprite);
@@ -114,11 +159,16 @@ export function populateSakuraV03(root: Node, viewport: Node, profile?: readonly
       const sibling = layerOrder.get(instance.layer) ?? 0;
       node.setSiblingIndex(sibling);
       layerOrder.set(instance.layer, sibling + 1);
-      if (instance.motion === 'flame_float') floaters.push(node);
+      nodesById.set(instance.instanceId, node);
     }
+    const definitions = deriveWaterGroups(instances as WaterEntry[]);
+    const waterGroups = definitions.map(definition => ({
+      nodes: definition.memberIds.map(id => nodesById.get(id)).filter((node): node is Node => !!node),
+      direction: definition.direction,
+    }));
     const marker = new Node('SAKURA_V03_READY');
     root.addChild(marker);
     const motion = root.addComponent(SakuraV03Motion);
-    motion.configure(viewport, groups[0], groups[1], floaters);
+    motion.configureWater(waterGroups);
   }).catch(error => console.error('[SAKURA_V03] 环境资源加载失败：', error));
 }

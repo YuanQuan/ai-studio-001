@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-15T22:41:22.173646+08:00",
+  "prior_attempts": "Client普通受限执行返回134，无当前构建；旧输出未作通过依据。",
+  "diagnosis": "22:38:29本轮macOS崩溃报告主线程在RegisterApplication/GetCurrentProcess后SIGABRT；权限相关为推断。",
+  "recovery": "正规require_escalated通过；同一Creator3.8.8及隔离副本构建，无系统安全配置修改。",
+  "creator_exit_code": 36,
+  "finished_marker": "2026-10-15 22:40:08 build Task (EXAMPLE-REVISION-CLIENT-20261015-v0.1) Finished in (4 s)ms",
+  "stdout": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/creator-recovery-stdout.log",
+  "stderr": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/creator-recovery-stderr.log",
+  "output_directory": "/private/tmp/example-revision-client-20261015-build/example-revision-client-20261015-web-mobile",
+  "output_file_count": 766,
+  "source_file_count": 656,
+  "source_difference_paths": [],
+  "browser_status": "PENDING"
+}

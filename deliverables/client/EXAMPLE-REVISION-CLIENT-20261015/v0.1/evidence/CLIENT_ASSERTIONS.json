@@ -1,0 +1,106 @@
+{
+  "assertions": [
+    {
+      "name": "批准53实例中识别7组完整河面三件组，空中5个flame_float未入组",
+      "result": "PASS"
+    },
+    {
+      "name": "整组成员位置差不变，组速度为24源像素/秒且纵坐标固定",
+      "result": "PASS"
+    },
+    {
+      "name": "长运行跨越多次离场循环后同组三件仍共享唯一偏移且保持固定y",
+      "result": "PASS"
+    },
+    {
+      "name": "U01编辑成员后重抓基线，下一帧不会沿用旧累计偏移",
+      "result": "PASS"
+    },
+    {
+      "name": "happy完整播放1.4秒，再按原时序离场",
+      "result": "PASS"
+    },
+    {
+      "name": "sad完整播放2.8秒，错误后恢复、超时后离场",
+      "result": "PASS"
+    },
+    {
+      "name": "超时可使中途表现事务失效并从超时观察时刻开始sad",
+      "result": "PASS"
+    },
+    {
+      "name": "退出表现仅离场，动画采样不拥有结算或奖励副作用",
+      "result": "PASS"
+    },
+    {
+      "name": "won在提交时唯一结算，表现完成回调无结算调用",
+      "result": "PASS"
+    }
+  ],
+  "manifestDurationsMs": {
+    "happy": 1400,
+    "sad": 2800
+  },
+  "waterGroups": [
+    {
+      "memberIds": [
+        "SAK-V03-023",
+        "SAK-V03-024",
+        "SAK-V03-025"
+      ],
+      "direction": 1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-026",
+        "SAK-V03-027",
+        "SAK-V03-028"
+      ],
+      "direction": -1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-029",
+        "SAK-V03-030",
+        "SAK-V03-031"
+      ],
+      "direction": 1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-032",
+        "SAK-V03-033",
+        "SAK-V03-034"
+      ],
+      "direction": -1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-035",
+        "SAK-V03-036",
+        "SAK-V03-037"
+      ],
+      "direction": 1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-038",
+        "SAK-V03-039",
+        "SAK-V03-040"
+      ],
+      "direction": -1
+    },
+    {
+      "memberIds": [
+        "SAK-V03-041",
+        "SAK-V03-042",
+        "SAK-V03-043"
+      ],
+      "direction": 1
+    }
+  ],
+  "outcomes": {
+    "result": "PASS",
+    "note": "纯逻辑及结算路径源码断言通过；Creator与IAB运行另行记录。"
+  }
+}

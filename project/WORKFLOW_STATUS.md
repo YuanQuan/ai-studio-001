@@ -1,3 +1,14 @@
+<!-- EXAMPLE-REVISION-20261015 START -->
+## 2026-10-15｜示例场景与奶茶顾客调整
+
+- 用户已批准制作方案 Gate1，见 `tasks/EXAMPLE-REVISION-ART-20261015/ARTIFACT_APPROVAL_GATE1.json`。Gate2 为未来新切片、PSD及同尺度重组的独立用户决定，目前 `DRAFT`；未批准资源不得入工程。
+- Art、Tech、Client、Producer 四 Task 均有本轮实际首产，状态 `IN_PROGRESS`；具体路径、时间及预签范围见 `deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/FLOW_REPORT.md`。Art/Tech预签只属内部支持。far_r无骷髅，仅far_l眼睛对象；Master 同批范围澄清 `deliverables/master/EXAMPLE-REVISION-20261015/v0.1/PRESIGN_SCOPE_CLARIFICATION.md` 已实存，后续清单与Review按实际对象。
+- Art 已产48层PSD、七张导出切片（其中五张新唯一输出）及静态重组证据；验证文件自报获准区外RGBA差0、零生图。正式送审包尚未齐，Gate2仍 `DRAFT`。Client逻辑断言文件现有八项PASS；首次隔离Creator启动返回134且无新输出，Root按正规权限恢复同源构建，实际exit36与 `Finished in (4 s)ms`、新产物实存，HTTP/IAB仍待。134原因仅据崩溃栈推断与沙箱启动权限有关，不归因系统损坏。Tech仅静态检查，最终Review待运行证据；单元示例无QA。最近复盘待本轮实际结果后写入。
+- Art 五份 Required 与23件交付索引实存，三项验收原文同序 PASS；Producer独立核48条切片源 SHA、48层PSD、82件ZIP及CRC，均匹配。自产切图直接送用户 Gate2，`ARTIFACT_APPROVAL_GATE2.json` 为 `USER_REVIEW`、`decided_at=null`，Art Task `IN_PROGRESS→USER_REVIEW`；用户尚未批准，Client仍不可接入新图。Root r1 IAB已发现并修复U01六店初始化问题，r2同源构建exit36，已核U01三态导出与冻结53实例JSON相同；U05 r1关键路径实测，最终r2 IAB报告与Tech Review待续，Client不提前结案。
+- 最终同版：Master `IAB_VERIFICATION.json` 记录 U01 三态 53 实例完整导出、U00 手动镜头、U04 冒烟、U05 错单/正确单/一次结算/超时/退出重入；HTTP 六核心文件 200 且哈希一致，浏览器 warning/error 0。Client 四 Required／三验收原文同序 PASS，Master Review APPROVED；`RUNTIME_IDENTITY.json` 26/26 SHA 由 Producer 独立复算匹配，清单 SHA `24a27a7c8088878327214ad51e03e99ee6f514da8bf5d25b224b8ab3aabb11da`。Client 准确 r2 版 `USER_REVIEW`，未获用户批准。Tech 四 Required／三验收 PASS、专业 Review APPROVED，并获 Master 内部接受，Task `DONE`；不替代用户决定。FLOW 三 Required／两验收 PASS，状态 `REVIEW` 待 Master 接受；最近复盘 `WR-20261015-EXAMPLE-REVISION-001`。Continuity：Art 与 Client 均到真实用户门禁，Tech DONE，本线无空挂 READY/IN_PROGRESS。8882 预览保持，8881 过渡服务已关闭。
+- Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`、内部Artifact `PROFESSIONAL_REVIEW`。终态：Art具体切片与Client运行版分别 `USER_REVIEW` 且决定时间空；Tech与FLOW内部支持 `DONE`。两项用户门禁继续锁定，continuity无空挂任务。
+<!-- EXAMPLE-REVISION-20261015 END -->
+
 <!-- U01-USER-LAYOUT-FLOW-20261015 START -->
 2026-10-15 08:48:15 +08:00起（U01用户51实例布局参数修订）：Master 08:49:18登记用户“调涨U01参数”及冻结`USER_LAYOUT.json`/`PARAMETER_DIFF.json`，Producer复核输入SHA吻合，diff涉及9实例。仅U01专属默认参数与读取，U00/U04、共享sakura数据、21图/PSD/UUID保持；旧桥v0.5运行USER_REVIEW审批历史保留，不自动批准本版。Producer首Required`FLOW_REPORT.md`实存并IN_PROGRESS；Client首Required`FEATURE_BRIEF.md`实存并IN_PROGRESS；Tech尚READY。Creator/IAB未测，不生图，无新资源审批。本单元示例无QA；U05并发保持。
 2026-10-15 08:51后（Tech实际开工，精确落盘时刻未知）：`deliverables/tech_lead/U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.md`首Required实存，Tech READY→IN_PROGRESS；当前是专属覆盖方案/后续核验进行中，不代表最终Creator/IAB PASS。

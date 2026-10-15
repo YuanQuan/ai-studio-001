@@ -1,0 +1,50 @@
+{
+  "taskId": "EXAMPLE-REVISION-CLIENT-20261015",
+  "creatorVersion": "3.8.8",
+  "target": "web-mobile",
+  "configPath": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json",
+  "configSha256": "8a7577ae1fc47e1d62f6577c58e40204ffbc37d1a91697d2234ce2fb609f7250",
+  "isolatedProject": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project",
+  "sourceSync": "apps/client/assets copied to isolated project (655 files)",
+  "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-user-layout-client-20261015-isolated-project --build 'configPath=/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json;platform=web-mobile'",
+  "attempts": [
+    {
+      "project": "/private/tmp/example-revision-client-20261015-isolated-project",
+      "result": "FAIL_TO_START",
+      "exitCode": 134,
+      "stdoutBytes": 0,
+      "stderrBytes": 0,
+      "buildOutputExists": false
+    },
+    {
+      "project": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project",
+      "result": "FAIL_TO_START",
+      "exitCode": 134,
+      "stdoutBytes": 0,
+      "stderrBytes": 0,
+      "buildOutputExists": false
+    },
+    {
+      "project": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project",
+      "result": "FAIL_TO_START",
+      "exitCode": 134,
+      "stdoutBytes": 0,
+      "stderrBytes": 0,
+      "buildOutputExists": false,
+      "note": "复用此前成功的 buildPath 仍未启动；CLI 行为相同后按协调要求停止重试。"
+    }
+  ],
+  "cliVersionProbe": {
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --version",
+    "exitCode": 134
+  },
+  "escalationUsed": false,
+  "stdout": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/creator-build-stdout.log (0 bytes)",
+  "stderr": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/creator-build-stderr.log (0 bytes)",
+  "oldProjectLog": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/temp/logs/project.log; timestamp remained 2026-10-15 21:03:52, prior task only",
+  "crashReportSearch": "No CocosCreator diagnostic report newer than 20 minutes; only old report /Users/yuanquan/Library/Logs/DiagnosticReports/CocosCreator-2026-10-12-153208.ips was present.",
+  "configuredBuildOutput": "/private/tmp/example-revision-client-20261015-build/example-revision-client-20261015-web-mobile (does not exist)",
+  "httpPreview": "NOT_STARTED",
+  "iab": "NOT_TESTED",
+  "targetDevicePerformance": "NOT_TESTED"
+}

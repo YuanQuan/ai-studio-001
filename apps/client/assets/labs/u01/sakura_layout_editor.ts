@@ -5,6 +5,8 @@ import { instantiate } from 'cc';
 const W = 3072, H = 1024;
 const PANEL = new Color(19, 34, 51), TEXT = new Color(230, 239, 247), GOLD = new Color(246, 189, 109), BLUE = new Color(108, 193, 224);
 import { SAKURA_V03_LAYOUT } from './sakura_v03_layout';
+import { SakuraV03Motion } from './sakura_v03_environment';
+import { deriveWaterGroups } from './sakura_water_motion_math';
 import { USER_LAYOUT_PROFILE } from './sakura_user_layout';
 const PROTOTYPE_PATHS = new Map(SAKURA_V03_LAYOUT.prototypes.map(p => [p.id, `sakura_v03/${p.path.replace(/\.png$/i, '')}`]));
 type Item = { instanceId: string; prototypeId: string; name: string; left: number; top: number; width: number; height: number; scale: number; mirror: boolean; motion: string; order: number; node: Node; shopIndex?: number };
@@ -29,6 +31,7 @@ export class U01SakuraLayoutEditor {
   private cameraStart = new Vec2();
   private canvasStart = new Vec2();
   private disposed = false;
+  private motion: SakuraV03Motion | null = null;
   private generation = 0;
   private outline!: Node;
   private fallback: HTMLElement | null = null;
@@ -37,6 +40,15 @@ export class U01SakuraLayoutEditor {
   private variantButtons = new Map<string, Node>();
   constructor(private page: Node, private gallery: UnitSampleGallery) {}
 
+  protected update(): void {
+    // Keep the selection frame attached to the rendered node while the river driver moves it.
+    if (this.selected?.node?.isValid && this.outline?.isValid && this.outline.active) {
+      const node = this.selected.node;
+      this.outline.setPosition(node.position.x, node.position.y, 1);
+      this.outline.setScale(Math.abs(node.scale.x), node.scale.y, 1);
+    }
+  }
+
   public open(): void {
     const generation=++this.generation;
     this.root = new Node('U01SakuraLayoutEditor'); this.page.addChild(this.root); this.root.addComponent(UITransform).setContentSize(720, 1280);
@@ -44,7 +56,13 @@ export class U01SakuraLayoutEditor {
     this.canvas = this.node('U01SourceCanvas', this.viewport, W, H);
     this.outline=this.node('U01SelectionOutline',this.canvas,1,1); const og=this.outline.addComponent(Graphics);og.strokeColor=GOLD;og.lineWidth=4;
     this.createTopControls(); this.createPanel(); this.fitCanvas();
-    this.loadFrames(generation,(missing) => { if (this.disposed||generation!==this.generation) return; if(missing.length){this.status.string=`资源加载失败：${missing.join('、')}；请检查 Creator 导入清单。`;return;} this.createInitialItems(); this.setSelected(this.items[0]); });
+    this.loadFrames(generation,(missing) => { if (this.disposed||generation!==this.generation) return; if(missing.length){this.status.string=`资源加载失败：${missing.join('、')}；请检查 Creator 导入清单。`;return;} this.createInitialItems();
+      this.motion = this.canvas.addComponent(SakuraV03Motion);
+      this.motion.configureWater(deriveWaterGroups(USER_LAYOUT_PROFILE.instances).map(group => ({
+        nodes: group.memberIds.map(id => this.items.find(item => item.instanceId === id)?.node).filter((node): node is Node => !!node),
+        direction: group.direction,
+      })));
+      this.setSelected(this.items[0]); });
     input.on(Input.EventType.TOUCH_START, this.onTouchStart, this); input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this); input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this); input.on(Input.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
     input.on(Input.EventType.MOUSE_DOWN, this.onMouseDown, this); input.on(Input.EventType.MOUSE_MOVE, this.onMouseMove, this); input.on(Input.EventType.MOUSE_UP, this.onMouseUp, this); input.on(Input.EventType.MOUSE_WHEEL, this.onWheel, this);
     view.on('canvas-resize', this.fitCanvas, this); view.on('design-resolution-changed', this.fitCanvas, this);
@@ -113,7 +131,7 @@ export class U01SakuraLayoutEditor {
       };
       if (shopIndex !== undefined) {
         const prefab=shops?.[shopIndex];
-        if (prefab) { const instance=instantiate(prefab); instance.name=entry.name; this.canvas.addChild(instance); item.node=instance; }
+        if (prefab) { const instance=instantiate(prefab); instance.name=entry.name; this.canvas.addChild(instance); item.node=instance; this.applyItem(item); }
       } else {
         this.makeItemNode(item);
       }
@@ -123,11 +141,12 @@ export class U01SakuraLayoutEditor {
     this.reorder();
   }
   private makeItemNode(item: Item): void { const n=new Node(item.name); const tr=n.addComponent(UITransform);const frame=this.frames.get(item.prototypeId); if(frame){const sprite=n.addComponent(Sprite);sprite.sizeMode=Sprite.SizeMode.CUSTOM;sprite.trim=false;sprite.spriteFrame=frame;}tr.setContentSize(item.width,item.height); this.canvas.addChild(n); item.node=n; this.applyItem(item); }
-  private applyItem(item: Item): void {
+  private applyItem(item: Item, recaptureMotion = false): void {
     const dw=item.width*item.scale, dh=item.height*item.scale;
     item.node.setScale(item.mirror?-item.scale:item.scale,item.scale,1); item.node.setPosition(item.left+dw/2-W/2,H/2-(item.top+dh/2),0);
+    if (recaptureMotion) this.motion?.captureBaseline(item.node);
   }
-  private reorder(): void { this.items.sort((a,b)=>a.order-b.order); this.items.forEach((item,index)=>{this.applyItem(item);if(item.node.isValid)item.node.setSiblingIndex(index);});
+  private reorder(): void { this.items.sort((a,b)=>a.order-b.order); this.items.forEach((item,index)=>{if(item.node.isValid)item.node.setSiblingIndex(index);});
   }
   private fitCanvas(): void { if(!this.canvas||!this.viewport)return; const v=view.getVisibleSize(); const scale=Math.max(.06,Math.min((v.width-16)/W,(v.height-280)/H)); this.canvas.setScale(scale,scale,1); this.canvas.setPosition(0,0,0); this.root.getChildByName('U01TopControls')?.setPosition(0,v.height/2-76,0); this.panel?.setPosition(0,-v.height/2+130,0); }
   private zoomCanvas(f:number): void { const s=Math.max(.06,Math.min(.8,this.canvas.scale.x*f));this.canvas.setScale(s,s,1); }
@@ -138,21 +157,22 @@ export class U01SakuraLayoutEditor {
   private selectPage(page:number,pageSize:number): void { const candidates=this.environmentItems();const index=page*pageSize;if(index>=candidates.length)return;this.listIndex=index;this.setSelected(candidates[index]); }
   private selectByList(dir:number): void { const candidates=this.environmentItems();if(!candidates.length)return;this.listIndex=(this.listIndex+dir+candidates.length)%candidates.length;this.setSelected(candidates[this.listIndex]); }
   private selectShop(index:number):void {const it=this.items.find(i=>i.shopIndex===index);if(it)this.setSelected(it);}
-  private setSelected(item:Item|undefined|null):void {this.selected=item??null;if(this.selected){const index=this.environmentItems().indexOf(this.selected);if(index>=0)this.listIndex=index;}if(this.outline?.isValid){if(this.selected){const i=this.selected;this.outline.active=true;this.outline.setPosition(i.left+i.width*i.scale/2-W/2,H/2-(i.top+i.height*i.scale/2),1);this.outline.setScale(i.scale,i.scale,1);const tr=this.outline.getComponent(UITransform)!;tr.setContentSize(i.width,i.height);const g=this.outline.getComponent(Graphics)!;g.clear();g.strokeColor=GOLD;g.lineWidth=4;g.rect(-i.width/2,-i.height/2,i.width,i.height);g.stroke();}else this.outline.active=false;}this.updateStatus();}
+  private setSelected(item:Item|undefined|null):void {this.selected=item??null;if(this.selected){const index=this.environmentItems().indexOf(this.selected);if(index>=0)this.listIndex=index;}if(this.outline?.isValid){if(this.selected){const i=this.selected;this.outline.active=true;this.outline.setPosition(i.node.position.x,i.node.position.y,1);this.outline.setScale(Math.abs(i.node.scale.x),i.node.scale.y,1);const tr=this.outline.getComponent(UITransform)!;tr.setContentSize(i.width,i.height);const g=this.outline.getComponent(Graphics)!;g.clear();g.strokeColor=GOLD;g.lineWidth=4;g.rect(-i.width/2,-i.height/2,i.width,i.height);g.stroke();}else this.outline.active=false;}this.updateStatus();}
   private updateStatus():void {if(!this.status)return;const i=this.selected;const env=this.items.filter(x=>x.shopIndex===undefined);const current=i&&i.shopIndex===undefined?env.findIndex(x=>x.instanceId===i.instanceId)+1:0;this.status.string=`${this.mode==='edit'?'编辑层':'镜头'}${this.selectionLocked?' · 已锁定':''} · ${i?i.name:'未选中'} · ${i?.prototypeId??''} · 环境 ${current||'—'}/${env.length} · X ${i?Math.round(i.left):'—'} Y ${i?Math.round(i.top):'—'} 缩放 ${i?.scale.toFixed(2)??'—'}`;const label=this.modeButton?.getChildByName('Text')?.getComponent(Label);if(label)label.string=this.mode==='edit'?'切镜头':'切编辑';}
-  private moveSelected(dx:number,dy:number):void {const i=this.selected;if(!i)return;i.left+=dx;i.top+=dy;this.applyItem(i);this.setSelected(i);}
-  private scaleSelected(f:number):void {const i=this.selected;if(!i)return;i.scale=Math.max(.1,Math.min(4,+(i.scale*f).toFixed(3)));this.applyItem(i);this.setSelected(i);}
-  private mirrorSelected():void {if(!this.selected)return;this.selected.mirror=!this.selected.mirror;this.applyItem(this.selected);this.setSelected(this.selected);}
+  private moveSelected(dx:number,dy:number):void {const i=this.selected;if(!i)return;i.left+=dx;i.top+=dy;this.applyItem(i,true);this.setSelected(i);}
+  private scaleSelected(f:number):void {const i=this.selected;if(!i)return;i.scale=Math.max(.1,Math.min(4,+(i.scale*f).toFixed(3)));this.applyItem(i,true);this.setSelected(i);}
+  private mirrorSelected():void {if(!this.selected)return;this.selected.mirror=!this.selected.mirror;this.applyItem(this.selected,true);this.setSelected(this.selected);}
   private removeSelected():void {const i=this.selected;if(!i)return;i.node.destroy();this.items=this.items.filter(x=>x!==i);this.reorder();this.setSelected(null);}
   private reset():void {this.dispose();this.root.destroy();this.items=[];this.frames.clear();this.disposed=false;this.open();this.status.string='已恢复用户冻结布局；离开重入也会重新加载该参数。';}
   private sourcePoint(p:Vec2):Vec2|null {const local=this.canvas.getComponent(UITransform)?.convertToNodeSpaceAR(new Vec3(p.x,p.y,0));if(!local)return null;return new Vec2(local.x+W/2,H/2-local.y);}
-  private onTouchStart(e:any):void {const screen=e.getUILocation();if(this.onUi(screen))return;this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=[this.selected.left,this.selected.top];}}e.propagationStopped=true;}
-  private onTouchMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}
+  private onTouchStart(e:any):void {const screen=e.getUILocation();if(this.onUi(screen))return;this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=this.displayTopLeft(this.selected);}}e.propagationStopped=true;}
+  private onTouchMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected,true);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}
   private onTouchEnd():void {this.dragging=false;this.pointerActive=false;}
-  private onMouseDown(e:any):void {if(e.getButton()!==0)return;const screen=e.getUILocation();if(this.onUi(screen)){this.pointerActive=false;return;}this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=[this.selected.left,this.selected.top];}}}
-  private onMouseMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}
+  private onMouseDown(e:any):void {if(e.getButton()!==0)return;const screen=e.getUILocation();if(this.onUi(screen)){this.pointerActive=false;return;}this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=this.displayTopLeft(this.selected);}}}
+  private onMouseMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected,true);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}
   private onMouseUp():void {this.dragging=false;this.pointerActive=false;}
-  private hitTest(p:Vec2):Item|null {for(let n=this.items.length-1;n>=0;n--){const i=this.items[n],w=i.width*i.scale,h=i.height*i.scale;if(p.x>=i.left&&p.x<=i.left+w&&p.y>=i.top&&p.y<=i.top+h)return i;}return null;}
+  private displayTopLeft(item:Item):[number,number] {const scale=Math.abs(item.node.scale.x);return [item.node.position.x+W/2-item.width*scale/2,H/2-item.node.position.y-item.height*scale/2];}
+  private hitTest(p:Vec2):Item|null {for(let n=this.items.length-1;n>=0;n--){const i=this.items[n],[left,top]=this.displayTopLeft(i),w=i.width*Math.abs(i.node.scale.x),h=i.height*Math.abs(i.node.scale.y);if(p.x>=left&&p.x<=left+w&&p.y>=top&&p.y<=top+h)return i;}return null;}
   private onWheel(e:any):void {if(this.mode==='camera'&&!this.onUi(e.getUILocation()))this.zoomCanvas(e.getScrollY()<0?1.1:.9);}
   private onUi(point:Vec2):boolean {for(const n of [this.root.getChildByName('U01TopControls'),this.root.getChildByName('U01LayerPanel')]){const t=n?.getComponent(UITransform);if(!n||!t||!n.activeInHierarchy)continue;const p=t.convertToNodeSpaceAR(new Vec3(point.x,point.y,0));if(Math.abs(p.x)<t.contentSize.width/2&&Math.abs(p.y)<t.contentSize.height/2)return true;}return false;}
   private async exportLayout():Promise<void> {const data=this.exportData();const json=JSON.stringify(data,null,2);const nav=(globalThis as any).navigator;try{if(!nav?.clipboard?.writeText)throw new Error('no clipboard');await nav.clipboard.writeText(json);this.status.string='参数已复制；同时打开只读文本供复核。';}catch{this.status.string='剪贴板不可用，请从回退文本框手动复制。';}this.openFallback(json);}

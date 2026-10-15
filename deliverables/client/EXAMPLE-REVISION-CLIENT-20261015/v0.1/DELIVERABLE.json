@@ -1,0 +1,42 @@
+{
+  "task_id": "EXAMPLE-REVISION-CLIENT-20261015",
+  "owner": "client",
+  "summary": "按用户批准方案实现 U00/U01 河面整组运动、U01 布局编辑隔离和 U05 已批准游客表现；Creator 3.8.8 构建与真实内置浏览器操作验证通过，提交 Client Review。",
+  "artifacts": [
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/DELIVERABLE.json",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/BUILD_ATTEMPTS.json",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/CLIENT_ASSERTIONS.json",
+    "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/evidence/TYPESCRIPT_CHECK.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "静态背景、河面幽灵24像素每秒整组单向循环与U01基础参数隔离实现，保留手动镜头。",
+      "result": "PASS",
+      "evidence": "Master IAB U00/U01 实测天空远景不动、河面横移与手动镜头；9项逻辑断言覆盖7组、24源像素/秒、共同偏移、固定y及长时间回绕。U01初始/重置/重入均53实例，与冻结JSON SHA 094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d 完全相同；单实例编辑只改变SAK-V03-037。详见 IAB_VERIFICATION.json / U01_EXPORT_COMPARISON.json。"
+    },
+    {
+      "criterion": "奶茶复用已有UG_GHOST_01，原速完整高兴1.4秒/悲伤2.8秒，超时及退出不重复结算。",
+      "result": "PASS",
+      "evidence": "Root IAB 实测UG_GHOST_01、错单sad与重做、正确happy/顾客进出、三杯仅结算一次与+10提示、90秒到期失败无奖励，以及退出重入清理。连续截图核关键帧；完整1.4s/2.8s以资源manifest和逻辑相位边界断言为证，并未称离散截图为逐帧计时。"
+    },
+    {
+      "criterion": "已有资源范围Creator3.8.8构建及真实HTTP/IAB验证；新眼睛与桥切片只准备接口，Gate2前不正式导入。",
+      "result": "PASS",
+      "evidence": "最终修复r2 Creator 3.8.8 Web Mobile 构建exit36、5秒结束、766文件；HTTP六核心文件200/hash一致；Root内置浏览器r1/r2真实操作，warning/error均0。新眼睛、街面和桥切片没有导入或绑定，仍待Gate2。设备性能、小游戏平台与临近0秒浏览器竞争分支仍NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "U01使用批准的最新53实例冻结用户布局作为导出基础。",
+    "完整快乐/悲伤时长以对应manifest帧时长总和及逻辑边界断言确认；内置浏览器截图只作为关键帧观察。"
+  ],
+  "risks": [
+    "目标设备性能与小游戏平台专项未测。",
+    "Gate2新切片尚未获批接入，其实际动画效果未验证。",
+    "临近零秒提交竞争分支没有做完整浏览器矩阵测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

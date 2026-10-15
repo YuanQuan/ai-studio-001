@@ -1,0 +1,42 @@
+{
+  "file_count_before_this_record": 241,
+  "large_file_limit_check": true,
+  "project_marker_staging": [
+    {
+      "path": "project/WORKFLOW_STATUS.md",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    },
+    {
+      "path": "project/MILESTONE_LOG.md",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    },
+    {
+      "path": "project/APPROVAL_LOG.md",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    },
+    {
+      "path": "project/WORK_RETROSPECTIVE_LOG.md",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    },
+    {
+      "path": "project/ASSET_HANDOFF_REGISTRY.md",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    },
+    {
+      "path": "project/dashboard/index.html",
+      "scope": "only_new_task_marker",
+      "preserved_preexisting_worktree_differences": true
+    }
+  ],
+  "excluded": [
+    "apps/client/package.json",
+    "apps/client/.creator/asset-template",
+    "all unrelated prior deliverables/tasks"
+  ],
+  "backup_scope": "Master baseline snapshots are task-created evidence; previous user edits remain in worktree and are not staged into live project documents."
+}

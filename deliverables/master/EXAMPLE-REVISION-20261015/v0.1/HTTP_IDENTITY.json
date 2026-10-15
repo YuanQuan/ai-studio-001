@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-10-15T22:56:07.861641+08:00",
+  "url": "http://127.0.0.1:8882/",
+  "output_directory": "/private/tmp/example-revision-client-20261015-build-r2/example-revision-client-20261015-web-mobile-r2",
+  "checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "http_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "local_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "equal": true
+    },
+    {
+      "path": "index.js",
+      "status": 200,
+      "http_sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "local_sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "equal": true
+    },
+    {
+      "path": "application.js",
+      "status": 200,
+      "http_sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "local_sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "equal": true
+    },
+    {
+      "path": "src/settings.json",
+      "status": 200,
+      "http_sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "local_sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "equal": true
+    },
+    {
+      "path": "assets/main/index.js",
+      "status": 200,
+      "http_sha256": "f96bc0a81d5aaf56beb6e7a72fb64f83e702effdc56491e2c6daba559831b461",
+      "local_sha256": "f96bc0a81d5aaf56beb6e7a72fb64f83e702effdc56491e2c6daba559831b461",
+      "equal": true
+    },
+    {
+      "path": "assets/main/config.json",
+      "status": 200,
+      "http_sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "local_sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "equal": true
+    }
+  ],
+  "prior_attempt": "urllib默认代理返回502，改为本机loopback直连；浏览器始终可打开本服务。",
+  "result": "PASS"
+}

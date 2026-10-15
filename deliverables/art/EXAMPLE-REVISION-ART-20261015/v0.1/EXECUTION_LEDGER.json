@@ -1,0 +1,26 @@
+{
+  "batch_id": "EXAMPLE-REVISION-ART-20261015/v0.1",
+  "input_psd_sha256": "1a0c525d679b5dbcbda7812ce97bba8401698c1d3fe0ace45f39b82a449d3d49",
+  "input_manifest": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/PSD_MANIFEST.json",
+  "method": "Pillow 11.3.0 / NumPy 1.26.4 deterministic mask, crop, mirror and alpha-over; local bggg-creator-image2psd assemble",
+  "generation_calls": 0,
+  "generated_candidates": 0,
+  "representative_visual_candidates": 3,
+  "local_visual_corrections": [
+    "首张图的水块色彩阈值遮罩留下暗点；改为沿现有石脚下缘的连续透明遮罩。",
+    "首张图的眼睛暗态过灰且有亮点残留；只在眼内部遮罩调暖色微光并完整覆盖亮点。"
+  ],
+  "technical_export_corrections": [
+    "原 far alpha 251–253 导致亮层二次合成误差，改用旧版已批准合成像素作不透明亮层；全亮眼区归零差。",
+    "暗态预览改由禁用亮层的实际 PSD 语义层重组；动态 PNG 以32帧×125ms得到准确4000ms，避免 GIF 调色板色跳。"
+  ],
+  "psd_assemble_runs": 8,
+  "source_or_tool_change": false,
+  "budget_note": "同一视觉问题的自动修正均不超过2次；后续为像素合成与时间格式的核对修正。代表样片和整批均为本地确定性处理，零生成调用。",
+  "known_incremental_tool_fee": 0,
+  "local_energy_cost": "UNKNOWN",
+  "first_plan_file_observed_at": "2026-10-15T22:26:41+08:00",
+  "per_run_start_end": "UNKNOWN_NO_RELIABLE_TIMESTAMP_LOG",
+  "output_audit": "FILE_VERIFICATION.json",
+  "output_identity": "CUT_MANIFEST.json and BUILD_AUDIT.json"
+}

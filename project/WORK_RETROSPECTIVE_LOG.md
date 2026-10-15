@@ -1193,3 +1193,12 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 时间（UTC）：可核起点2026-10-15T12:50:58.639069Z，收尾2026-10-15T13:15:33.574981Z，跨节点24分34.9秒；含并行工作与观察，不是任一角色净制作。首Creator试运行约0.367秒失败；恢复构建单调时钟40.297秒成功。其余角色净工时、等待和排障不可可靠拆分；用户消息精确时间未知，审批等待尚未计入本周期。
 - 无同类基线，不认定“慢”。Brief初稿SHA笔误已修正；首次构建失败，错误派生耗时值未采信。建议Client下轮首产复算输入SHA与记录单调构建耗时，Tech核身份；Master冻结最终包后Producer逐SHA复核。复核点为下一参数包／CLI构建／准确送审。Continuity：Client真实USER_REVIEW、Tech DONE、FLOW DONE，无空挂READY/IN_PROGRESS。
 <!-- U00-U01-USER-LAYOUT-20261015 END -->
+
+<!-- EXAMPLE-REVISION-20261015 START -->
+## WR-20261015-EXAMPLE-REVISION-001｜示例调整两包送审
+
+- 结果：Art v0.1 具体切片 Gate2 `USER_REVIEW`、Client r2 已有资源运行版 `USER_REVIEW`，均未获用户决定；Tech 内部支持 `DONE`，FLOW 待 Master 接受。完整证据与改进见 `deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md`。
+- 时间：Master 批准登记/启动 2026-10-15T22:21:21.418422+08:00 至本轮 Producer 收尾记录 23:08:00+08:00，跨节点 46分38.6秒；用户消息精确发送时间未知，三角色净制作、专业等待及返工时长不可可靠拆分。用户审批等待仍在继续，不计本轮制作。
+- 无可比基线，不认定角色慢。可证实的影响为首次 CLI 启动134后正规权限恢复，以及 r1 浏览器发现 U01 六店初始化重叠后定点修复、重构建并复测。建议 Client 下次首构建后先冒烟六店与重置/重入；Tech/Producer 下批预签核实图对象与清单，均在下一同类任务复核。Continuity：无本线空挂 READY/IN_PROGRESS。
+- Master `FLOW_MASTER_ACCEPTANCE.json` 已接受本轮流程复盘与连续执行检查，FLOW 内部支持 DONE；两份用户待审对象保持不变。
+<!-- EXAMPLE-REVISION-20261015 END -->

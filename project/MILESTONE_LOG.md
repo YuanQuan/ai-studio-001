@@ -1,3 +1,27 @@
+<!-- EXAMPLE-REVISION-20261015 START -->
+## 2026-10-15｜示例场景与奶茶顾客调整
+
+- `KICKOFF_GATE1_USER_APPROVED` 22:21:21.418422 +08:00（Master批准登记／启动时间，用户消息精确发送时间未知）：`deliverables/master/EXAMPLE-REVISION-20261015/v0.1/APPROVED_PLAN.md` 与 `USER_AUTHORIZATION.json` 实存，Gate1审批独立登记。
+- `CLIENT_TASK_STARTED`：`deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/FEATURE_BRIEF.md` 实存，mtime 22:24:58 +08:00；Task `READY→IN_PROGRESS`，代码/运行待续。
+- `TECH_TASK_STARTED`：`deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/TECH_DESIGN.md` 实存，mtime 22:25:09 +08:00；Task `READY→IN_PROGRESS`。
+- `ART_TECH_PRESIGN_RECORDED`：Tech同批预签 mtime 22:25:31、Art方案/Brief/预签 mtime 22:26:41 +08:00；Art Task `READY→IN_PROGRESS`，预签范围待根据far_r实物收窄，首图与Gate2不得提前宣称。
+- `ART_DIAGNOSTICS_STARTED`：Art `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/diagnostics/` 已实产桥左右与 far_l 眼睛三张检查图，仅为候选诊断，非Gate2切片。
+- `CLIENT_CODE_IN_PROGRESS`：Client `apps/client/assets/labs/u01/sakura_v03_environment.ts` 已有本轮源码差异，构建、HTTP与IAB结论仍待实证。
+- `PRODUCER_TASK_STARTED`：`deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/FLOW_REPORT.md` 实存，Task `READY→IN_PROGRESS`；后续持续追踪实际节点。
+- `PRESIGN_SCOPE_CLARIFIED`：Master `deliverables/master/EXAMPLE-REVISION-20261015/v0.1/PRESIGN_SCOPE_CLARIFICATION.md` 实存，确认仅far_l实际眼睛对象、far_r保持原样，不新增门禁；Tech后续Review需按此范围。
+- `ART_STATIC_ASSETS_READY_NOT_SUBMITTED`：Art `CUT_MANIFEST.json`、`FILE_VERIFICATION.json`、`BUILD_AUDIT.json`、48层PSD、七张导出PNG（五张新唯一输出）及同尺度桥/眼睛预览实存；自检获准区外RGBA差0、生成0次。送审包未齐，不转Gate2 USER_REVIEW。
+- `CLIENT_LOGIC_ASSERTIONS_PASS`：Client `evidence/CLIENT_ASSERTIONS.json` 现列八项PASS；尚需HTTP/IAB。
+- `CREATOR_FIRST_FAILURE_AND_RECOVERY`：首次隔离CLI返回134、无新输出；Root核22:38:29 macOS崩溃栈后经正规权限恢复，同源构建exit36，`deliverables/master/EXAMPLE-REVISION-20261015/v0.1/evidence/creator-recovery-stdout.log` 于22:40:08记 `Finished in (4 s)ms`，新输出实存。沙箱启动权限相关仅是推断。Root逐655 assets与正式源零差，Client核七核心文件/meta一致；HTTP/IAB待。
+- `TECH_STATIC_REVIEW_NOTES`：Tech `REVIEW_NOTES.md` 已实存，最终同版Review待IAB。
+- `ART_GATE2_USER_REVIEW`：Art五份 Required、23件交付索引、三项验收同序PASS；Producer逐48条切片源SHA、PSD SHA、82件ZIP及CRC核验匹配。`tasks/EXAMPLE-REVISION-ART-20261015/ARTIFACT_APPROVAL_GATE2.json` 为 `USER_REVIEW`、决定时间空，Task `IN_PROGRESS→USER_REVIEW`。自产切图直接交用户，不增专业效果复审；未批切片未入工程。
+- `IAB_R1_FEEDBACK_AND_R2_BUILD`：Root r1实测发现U01六店未初始化重叠，Client在商店节点创建后追加applyItem；r2新构建exit36、766文件，http8882。Root已确认六店恢复，U01初始/重置/重入导出均与冻结53实例JSON同SHA `094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d`；改幽灵037 X+10仅该实例变。U05 r1错单/正确单、三杯+10、快速重复确认及90秒归零路径已实测；r2最终IAB和Tech Review待续。
+- `IAB_FINAL_VERIFIED`：Master `IAB_VERIFICATION.json`、`HTTP_IDENTITY.json`、`U01_EXPORT_COMPARISON.json` 实存，r2 U01/U00/U05 PASS、U04 PASS_SMOKE，浏览器warning/error零；目标设备与临近0秒竞争浏览器分支未测。
+- `TECH_INTERNAL_DONE`：Tech四Required及三验收同序PASS，`REVIEW.json` APPROVED，Master `TECH_MASTER_ACCEPTANCE.json` 接受内部支持；Task `IN_PROGRESS→REVIEW→DONE`，专业Artifact `PROFESSIONAL_REVIEW`，不代替用户批准。
+- `CLIENT_USER_REVIEW`：Client四Required及三验收同序PASS、Master `MASTER_REVIEW.json` APPROVED；Producer复算 `RUNTIME_IDENTITY.json` 26/26 SHA匹配，清单SHA `24a27a7c8088878327214ad51e03e99ee6f514da8bf5d25b224b8ab3aabb11da`，Task `IN_PROGRESS→REVIEW→USER_REVIEW`；准确r2包待用户决定。
+- `FLOW_SUBMITTED`：三Required、两验收同序PASS，`WORK_RETROSPECTIVE.md` 记真实时间及不可拆分工时，Task `IN_PROGRESS→REVIEW`，待Master接受。Continuity：Art/Client真实USER_REVIEW、Tech DONE，无本线空挂READY/IN_PROGRESS。
+- `FLOW_INTERNAL_DONE`：Master `deliverables/master/EXAMPLE-REVISION-20261015/v0.1/FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`、内部Artifact `PROFESSIONAL_REVIEW`；Art与Client两份用户审批仍 `USER_REVIEW`。
+<!-- EXAMPLE-REVISION-20261015 END -->
+
 <!-- U01-USER-LAYOUT-FLOW-20261015 START -->
 2026-10-15 08:48:15 +08:00起 | `U01-USER-LAYOUT-FLOW-20261015` | 用户U01布局参数修订授权与输入冻结，Producer/Client首Required实存IN_PROGRESS，Tech待开工READY | Master `USER_AUTHORIZATION.json`/`USER_LAYOUT.json`/`PARAMETER_DIFF.json`；Producer `FLOW_REPORT.md`；Client `FEATURE_BRIEF.md` | 51实例输入SHA复算一致、9实例差异；旧运行审批不自动批准新参数版；U00/U04/21图不改，Creator/IAB待。
 2026-10-15 08:51后（Tech实际开工，精确落盘时刻未知）：`deliverables/tech_lead/U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.md`首Required实存，Tech READY→IN_PROGRESS；当前是专属覆盖方案/后续核验进行中，不代表最终Creator/IAB PASS。

@@ -1,0 +1,37 @@
+{
+  "task_id": "EXAMPLE-REVISION-TECH-20261015",
+  "owner": "tech_lead",
+  "summary": "完成同批Art首图技术预签及Client实现技术设计；复核r2源、Creator构建、HTTP与内置浏览器已有资源代码证据，提交Tech Review。",
+  "artifacts": [
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/ART_TECH_PRESIGN.md",
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/REVIEW_NOTES.md",
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "首图前对同批局部PSD/切片、零生成预算及动画接口完成Tech预签。",
+      "result": "PASS",
+      "evidence": "同批ART_TECH_PRESIGN.md与Art v0.1 PRODUCTION_PLAN/ART_BRIEF/ART_PRESIGN相互对应，锁定v0.5 PSD、局部遮罩、far_l眼睛、零生图、层映射及4秒动画接口；源hash已由Art核实。"
+    },
+    {
+      "criterion": "复核代码、布局导出不污染、顾客完整帧时序、业务超时及资源生命周期。",
+      "result": "PASS",
+      "evidence": "REVIEW_NOTES.md和REVIEW.json记录静态代码核验；9条逻辑/源码断言PASS，manifest happy=1400ms/sad=2800ms。r2 IAB与U01_EXPORT_COMPARISON.json核53实例三次完整导出、单实例修改、顾客进出、错单/胜利/超时/重入；零秒边界浏览器竞争仍NOT_TESTED。"
+    },
+    {
+      "criterion": "明确分开静态/构建/浏览器/目标机证据，新切片Gate2前禁止接入。",
+      "result": "PASS",
+      "evidence": "BUILD_MANIFEST.json所列r2 7项源hash与现存文件一致，Creator导入/tsc/CLI exit36 Finished、766输出；HTTP_IDENTITY.json六项200且hash一致；IAB_VERIFICATION.json记录真实浏览器。目标机性能及新切片运行NOT_TESTED；新切片Gate2前未正式接入。"
+    }
+  ],
+  "assumptions": [
+    "本轮仅单元示例，不作正式QA结论；r2为最终已有资源代码验证版本。"
+  ],
+  "risks": [
+    "新切片的具体视觉与运行效果尚待Gate2及其后正式导入验证。",
+    "临近0秒浏览器竞争路径、逐帧越界录像和目标设备性能未测，不由静态证据推断通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

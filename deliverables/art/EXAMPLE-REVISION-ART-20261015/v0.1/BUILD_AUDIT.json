@@ -1,0 +1,182 @@
+{
+  "source_psd_sha256": "1a0c525d679b5dbcbda7812ce97bba8401698c1d3fe0ace45f39b82a449d3d49",
+  "batch": "EXAMPLE-REVISION-ART-20261015/v0.1",
+  "canvas": [
+    3072,
+    1024
+  ],
+  "street_master": {
+    "source": "v0.5 bridge_body_l",
+    "crop_xyxy_in_half": [
+      0,
+      0,
+      1172,
+      270
+    ],
+    "export_size": [
+      1172,
+      270
+    ],
+    "left_instance_xy": [
+      0,
+      598
+    ],
+    "right_instance_xy": [
+      1900,
+      598
+    ],
+    "right_flip_x": true
+  },
+  "eye": {
+    "eyes": [
+      {
+        "box_xyxy": [
+          1284,
+          250,
+          1326,
+          298
+        ],
+        "mask_bbox_xyxy": [
+          1287,
+          253,
+          1323,
+          295
+        ],
+        "pixels": 1188
+      },
+      {
+        "box_xyxy": [
+          1352,
+          261,
+          1383,
+          304
+        ],
+        "mask_bbox_xyxy": [
+          1354,
+          262,
+          1381,
+          302
+        ],
+        "pixels": 840
+      }
+    ],
+    "glow_alpha": "0.5+0.5*cos(2*pi*t/4), t seconds; bright at 0/4, microglow dark at 2",
+    "source_layer": "far_l",
+    "dark_base_size": [
+      1536,
+      720
+    ],
+    "glow_crop_xyxy": [
+      1284,
+      250,
+      1383,
+      304
+    ],
+    "glow_export_size": [
+      99,
+      54
+    ],
+    "glow_instance_xy": [
+      1284,
+      250
+    ],
+    "far_r_changed": false
+  },
+  "water_pixels_removed": {
+    "left": 4046,
+    "right": 4046
+  },
+  "layers": 48,
+  "generation_calls": 0,
+  "files": {
+    "ART_BRIEF.md": "c4e4e5a012a9c21061db851189e8f40e4c1c6046199a265d0e86dfdfabbff2db",
+    "ART_PRESIGN.json": "ca6f78ebaab13ed0b1ae26e81f7cee9212f9e6e8c405d33d275f50d1f9f474e4",
+    "ASSET_MANIFEST.md": "621ac230195210730bcad6626e5a413b8d2e79541e0debefb99eb63b133d0a8c",
+    "CUT_MANIFEST.json": "c4dd3e4f3724438fdd320658ec6432f6e873341b40a9942b9bcbd2a4d25329a7",
+    "DELIVERABLE.json": "5c81d033ad9691dcaa9605a2ea1425336d0381d8080e8ddf161bbb845981fc80",
+    "EXECUTION_LEDGER.json": "beb5e50452e200426b31f9b48e738d45b5b43b462ab59b8cbdf5d9a97172b4c5",
+    "FILE_VERIFICATION.json": "0b3d4ecc5a31994e804971ae17f8033a15094c2a83948518d58a630ff49ff422",
+    "PACKAGE_MANIFEST.json": "28055a0e59c88ddc96e0132d1bbd9e08ecc7ebdd7b214b5b388755922eab7e10",
+    "PRODUCTION_PLAN.md": "ce2f88142717c1bc7647f9ec6d969a61f9d81f7a886ad88ca5e57ddf14a58f16",
+    "PSD_MANIFEST.json": "61b7e71cddb94d273029ef6e7065aded90aed28f1919d24e74c8303cc000b81f",
+    "SOURCE_EXPORT_MAP.md": "99f339f743fb1d90c550510ff1e7dc465fc85f1476d0210461be4e959abb1a26",
+    "USER_REVIEW_PACKET.md": "83b343dc71e37fdb7e0d86b6aa9b2b21708b9b646b01295de06240d2729381b0",
+    "build_art_v01.py": "b79e6367d2d670b46b9b0a54d101322ba665613a9293d2b0ca8a7e065d46517f",
+    "diagnostics/bridge_l_bottom_grid.png": "9f9542e9f912cdd09c5970cd1767bcda4e110b188b113aac4cebc68cce0c142f",
+    "diagnostics/bridge_l_inspection_3x.png": "8656db339693058bc97e3b657c6ad4d1adaca6aba786a3cf2cbdff812a500d92",
+    "diagnostics/bridge_r_bottom_grid.png": "d5cb2de9e0c12c5f77493204d8f3085498f852ebaf7bdb2b70cd766d3de5d8ab",
+    "diagnostics/bridge_r_inspection_3x.png": "5b11cb0516f66defd853e1bea80ff1ce985b8f8c205da88662ba3926c4d7f20b",
+    "diagnostics/far_l_eye_inspection_4x.png": "c45dfce7929ef6b6848e3b0fe0b0eb8dd7ed18f54558518e514a42a8210b8ebf",
+    "exports/tex_sakura_rr_bridge_body_l_clean.png": "1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b",
+    "exports/tex_sakura_rr_bridge_body_r_clean.png": "cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82",
+    "exports/tex_sakura_rr_bridge_front_l.png": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+    "exports/tex_sakura_rr_bridge_front_r.png": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+    "exports/tex_sakura_rr_bridge_street_master.png": "2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8",
+    "exports/tex_sakura_rr_far_l_eye_dark_base.png": "ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940",
+    "exports/tex_sakura_rr_far_l_eye_glow.png": "76faa9de3e47de8188eefdb28d8cd97bf4f57dbea02d85cf55c3a7e451fdb02b",
+    "package/EXAMPLE_REVISION_ART_GATE2_v0.1.zip": "8a13b1c24cf26beab0bd5ad12321f7221024c30fdbe07f7185fe82272d4c9bec",
+    "review/bridge_before_after_same_scale.png": "b84ae471628e4e602002c01072a07faa426118d7ccb38836a03574d34a499260",
+    "review/far_l_eyes_4s_loop.png": "c87b129a4a3767c16a59b0795e96dfddaf4c211189f6c72ff100b6fe6862ec63",
+    "review/far_l_eyes_bright.png": "d0d0c48404cfb58c3c98ef7771fd3f67c3ea3bc0289da702e8807716ed47cd84",
+    "review/far_l_eyes_dark.png": "2df31a79c947e0245f19f1401c0867cb0b26be7c9eace4d4409caa6d0569eefa",
+    "review/new_scene_halfscale.png": "b0f61bb1b3d703d4ae7593eea1f9cc553f0f5a7b2febfc106cfc58a54e00486a",
+    "review/old_scene_halfscale.png": "08dc6baa7e6ddfaac48bf98b61495cd7dee2da3239302b380cb9adc38c5d53d6",
+    "review/old_vs_new_difference.png": "cf32cc468da0b8aaa5c6756055c22ce6490330335edec977315a4f4553297857",
+    "review/reassembled_from_actual_exports.png": "988f61cf7129affc5f41120130e03007172459e1844d6473d30edbca886821f1",
+    "review/scene_psd_preview.png": "fd7d0cb0039028563119d74a7e1015cbed49c54fcf65e9625ba0a242ef3d380f",
+    "review/scene_reassembled_bright.png": "fd7d0cb0039028563119d74a7e1015cbed49c54fcf65e9625ba0a242ef3d380f",
+    "review/scene_reassembled_eye_dark.png": "8a8c97436c1f7f5640b5ded560d1fefe5e1a959bfab2af12349dc630050a2246",
+    "review/street_before_after_same_scale.png": "c9981cbf18be6c173cb77f9944f3191a4ed7ae40b139a2568dd55ac1e888eabd",
+    "source/process_notes.md": "0377ec85c1cb6cc5a570e9162c27dfbe47abd58fa51895706fb261249172f1e5",
+    "source/psd_full_canvas_layers/airborne_spirit_a_static_1.png": "79490b5c2616ba7ad931707e9c143052bc1a5a40fb9837ad4500b47806936b4d",
+    "source/psd_full_canvas_layers/airborne_spirit_a_static_3.png": "e03e16031169bf5982d46dd05549b4470cd8ba1d865b9512390d4a3b0dceb433",
+    "source/psd_full_canvas_layers/airborne_spirit_a_static_5.png": "7a5fd40d944412509baaf7619faa3b09cf2f0dde76b1eceec4086d36b5269b13",
+    "source/psd_full_canvas_layers/airborne_spirit_b_static_2.png": "1853eb1ff0a81cac749396de43f8179ec8bc9f15e0bc5489c1aeed09f8d59107",
+    "source/psd_full_canvas_layers/airborne_spirit_b_static_4.png": "27408c46460a13407a4cdfaeaa75089af761c339082a24dd3e85f341afa4d51e",
+    "source/psd_full_canvas_layers/bridge_body_l.png": "345955c2dd8db4e9fbeb784f124517405b50a5e4cecdc31b22395b9637c36400",
+    "source/psd_full_canvas_layers/bridge_body_r.png": "a7d0551032cd0aaee3dcb514c39de454ad908b049774149903253c77c441eb6b",
+    "source/psd_full_canvas_layers/bridge_front_l.png": "06f1b3aea4b13a496fcb0aa5c29c24bde1aca6cf1b326ad58dc357b56eb55197",
+    "source/psd_full_canvas_layers/bridge_front_r.png": "72803be30706d8a6c425ec4808bd40245a62f1f257c506f856820844ada7c289",
+    "source/psd_full_canvas_layers/bridge_street_l_master.png": "77c691e692dab53740182182a614bd4e94794652afc871238d93a55334623665",
+    "source/psd_full_canvas_layers/bridge_street_r_mirror_instance.png": "0fbf961ee4f2218e841f4348652897fd4d275613b4d3bc0a915c47ac0797edcf",
+    "source/psd_full_canvas_layers/far_l.png": "6c1880c6f4a9af71593f5fa182064af226d651943817fdbd6e6297e572b5851f",
+    "source/psd_full_canvas_layers/far_l_eye_glow.png": "e4ca61162fa0a10c67299f626213df8475461a64f3049d1f0e2ca78593808f72",
+    "source/psd_full_canvas_layers/far_r.png": "e70d9b9584e17a59b79ee721269a0ab37aa9ddb686600de395f241104ec7dc77",
+    "source/psd_full_canvas_layers/foreground_left.png": "19a1b7c0c4b2b3f1bcff04e695323ade94e33f9e3d61a258d0d3a2a0654b4df0",
+    "source/psd_full_canvas_layers/foreground_right.png": "017f84e8a854fa4553aa2a35fd6a5c01cb11d89199a3037e015d9a3a19bd30ba",
+    "source/psd_full_canvas_layers/gate_right.png": "7c57753cddcab0e9ef9484cd37ed0c8c2f72021c3b6d3b5b2af6558569891e26",
+    "source/psd_full_canvas_layers/sky_l.png": "6881d9ceb029c6a7f734c641f201d2efcee584b70d1753bdd3027828b5418a64",
+    "source/psd_full_canvas_layers/sky_r.png": "673c1d4730528de5ecf52b65b6effb2f1d60140e698c0470d8a4ffd409c60d7a",
+    "source/psd_full_canvas_layers/spirit_a_flame_instance_1.png": "b833fd7122432117e6f751b7ca10209294e6cf3edcd150d433649676613fcf5a",
+    "source/psd_full_canvas_layers/spirit_a_flame_instance_3.png": "8bb003c3059b1db9f8af3222b87534cb0e5143711028907926a0150e2afb677d",
+    "source/psd_full_canvas_layers/spirit_a_flame_instance_5.png": "a06c4fdd46d1597133ce8b1070ed4c5cdad933f821f34727ea7f34946c9507e5",
+    "source/psd_full_canvas_layers/spirit_a_flame_instance_7.png": "7523e5a12b1746c73d5d9c9afa68d9b1a988a48833404ad9b4abcde705bf7d5a",
+    "source/psd_full_canvas_layers/spirit_a_lotus_instance_1.png": "69b873b880614827a8bf82593b736cf7edc1dfa1e146d5bf9956fb8fdc400617",
+    "source/psd_full_canvas_layers/spirit_a_lotus_instance_3.png": "11275b688947d2e7776a1a982425513ded20886abca1862a001b23f07a05bd27",
+    "source/psd_full_canvas_layers/spirit_a_lotus_instance_5.png": "a7ce1d90c28de7acd22129920118a6f3cc5ca8b63057ab59b1c0b47f41c86976",
+    "source/psd_full_canvas_layers/spirit_a_lotus_instance_7.png": "cdbd058cab0ddfc0c14f1ae3c45256e982f663a749e46145880e559ba7d723d8",
+    "source/psd_full_canvas_layers/spirit_a_reflection_instance_1.png": "0355dd118bb5b4a7527a16af5bfa186a7d3a549d644e282d4baf55efb7dbe863",
+    "source/psd_full_canvas_layers/spirit_a_reflection_instance_3.png": "910600b0d6d787268a7c32cf9cdf2599827a95af28dc60b04646dfec0ac705a9",
+    "source/psd_full_canvas_layers/spirit_a_reflection_instance_5.png": "42faaea412e465a7fffedf802f73c8b375e19f5e30fe5638c91eb8e8a4af27ef",
+    "source/psd_full_canvas_layers/spirit_a_reflection_instance_7.png": "13340492ecc697a79a8af664ee1cfaed63e9934e99daa324b142278d800f095d",
+    "source/psd_full_canvas_layers/spirit_b_flame_instance_2.png": "501400dbe3821d8228399822ff13105495e59feafabbc6cee78193f330f5a708",
+    "source/psd_full_canvas_layers/spirit_b_flame_instance_4.png": "81d6b0f5a23fb65b4298556821832d4370350e11bb2aa0b8ac031365c787bc96",
+    "source/psd_full_canvas_layers/spirit_b_flame_instance_6.png": "71b651eb044376729811963b4db7519e22fe308dfe0abe486017fad9f2563b23",
+    "source/psd_full_canvas_layers/spirit_b_lotus_instance_2.png": "f957777122d02cc7ec899696b4aabddb80cdbf9cfe79f4cdd8e9fd417972c014",
+    "source/psd_full_canvas_layers/spirit_b_lotus_instance_4.png": "05103da9b9f7656c663b64bc9f2a3ca4d652aecbbf17ff3307d90b2fe1fd22f9",
+    "source/psd_full_canvas_layers/spirit_b_lotus_instance_6.png": "683cccd6300896ae6da044acafb12c15e09c013e47e2bd5e2981c6a36a506c78",
+    "source/psd_full_canvas_layers/spirit_b_reflection_instance_2.png": "d80026770f92456f259ac68dbc88a8b69a074e76d7928d0f51a4cc05e2ec3c2a",
+    "source/psd_full_canvas_layers/spirit_b_reflection_instance_4.png": "97c9fe7ba83e8f6256e98321b7af7ea9107b39d8a4e42df441192fc9a12d3a5e",
+    "source/psd_full_canvas_layers/spirit_b_reflection_instance_6.png": "9a0dbc3e9f9d3097edaf43331cd4edae5debaaf2dce054c6e275a201e1062400",
+    "source/psd_full_canvas_layers/stone_chain_rail_l.png": "f4e65a091aba0819d2a9f26be96ab146e7b52e4b52e1783a17387d3747e1d2fb",
+    "source/psd_full_canvas_layers/stone_chain_rail_r.png": "5b539fdd357300703e59cb9241a15650f2d6d4e96045a41eab493ee8fba33548",
+    "source/psd_full_canvas_layers/tree_a_instance_1.png": "155c39d4c3bf049a4bb65068786819ad7bee10f7f6bde61314112aae21421d2b",
+    "source/psd_full_canvas_layers/tree_a_instance_4.png": "8f63634b635afad8bf0ad980e49c273c624ebf122488845b675a4f331b11702c",
+    "source/psd_full_canvas_layers/tree_b_instance_2.png": "90b6e79f637806ccd809d8a93927e76bef9eba0b52d72692acb3c23e489639b9",
+    "source/psd_full_canvas_layers/tree_b_instance_3.png": "f7c7b7d30ea672b6ecac2ffab444797f17de1c33608fe934252e3a1fc0703b60",
+    "source/psd_full_canvas_layers/water_rail_l.png": "082ebddae5372db24dcb68320273b1189bf46f6e03a4793cd011ad79785641a6",
+    "source/psd_full_canvas_layers/water_rail_r.png": "fbad59dcda9de061398df745d86bdfd2f2ac5ebc2755a22a031cfea2a94125bd",
+    "source/scene_sakura_revision_master.psd": "3a7c77fc38f02306382ee043f162761e8f3fff1f7a38cf0b165e4158b4432a37",
+    "verify_art_v01.py": "09355f85f938f960555c78e498f7a942ca5f1420902992c49b6da3f9fb56285b"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "checked_at": "2026-10-15T23:15:53.473595+08:00",
+  "schema_method": "Local checker covers required/type/enum/items/minItems/minLength/additionalProperties used by the current schemas; not a general JSON Schema implementation.",
+  "schema_checks": [
+    {
+      "path": "tasks/EXAMPLE-REVISION-ART-20261015/TASK.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/DELIVERABLE.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-ART-20261015/ARTIFACT_APPROVAL_GATE2.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-ART-20261015/ARTIFACT_APPROVAL_GATE1.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-CLIENT-20261015/TASK.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/client/EXAMPLE-REVISION-CLIENT-20261015/v0.1/DELIVERABLE.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-CLIENT-20261015/ARTIFACT_APPROVAL.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-FLOW-20261015/TASK.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/producer/EXAMPLE-REVISION-FLOW-20261015/v0.1/DELIVERABLE.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-FLOW-20261015/ARTIFACT_APPROVAL.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-TECH-20261015/TASK.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/tech_lead/EXAMPLE-REVISION-TECH-20261015/v0.1/DELIVERABLE.json",
+      "errors": []
+    },
+    {
+      "path": "tasks/EXAMPLE-REVISION-TECH-20261015/ARTIFACT_APPROVAL.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/MASTER_REVIEW.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/FLOW_MASTER_ACCEPTANCE.json",
+      "errors": []
+    },
+    {
+      "path": "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/TECH_MASTER_ACCEPTANCE.json",
+      "errors": []
+    }
+  ],
+  "acceptance": [
+    {
+      "task": "EXAMPLE-REVISION-ART-20261015",
+      "status": "USER_REVIEW",
+      "same_criteria_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task": "EXAMPLE-REVISION-CLIENT-20261015",
+      "status": "USER_REVIEW",
+      "same_criteria_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task": "EXAMPLE-REVISION-FLOW-20261015",
+      "status": "DONE",
+      "same_criteria_order": true,
+      "results": [
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task": "EXAMPLE-REVISION-TECH-20261015",
+      "status": "DONE",
+      "same_criteria_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    }
+  ],
+  "missing_artifacts": [],
+  "runtime_identity_files": 26,
+  "runtime_identity_mismatches": [],
+  "staged_files_before_this_record": 248,
+  "unexpected_staged_paths": [],
+  "whitespace": "Source/doc diff check passed excluding raw evidence .log; Creator raw CRLF/trailing spaces intentionally preserved with original hashes.",
+  "unapproved_art_imported": false,
+  "result": "PASS"
+}

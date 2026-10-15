@@ -1,5 +1,21 @@
 # 美术交付与 Cocos Creator 正式资源交接登记
 
+<!-- EXAMPLE-REVISION-20261015 START -->
+## 示例场景修订 v0.1｜仅计划交接，Gate2 已送用户审核
+
+来源：`deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/CUT_MANIFEST.json` 与同目录 `FILE_VERIFICATION.json`。新批次有七张导出 PNG，其中五张为新唯一输出；另两张桥前景导出沿用现行内容。以下计划路径尚未确定，客户端未导入，真实 UUID 均为无；不得把此表视为正式资产批准。
+
+| 稳定资产 ID | 美术实际路径（v0.1） | SHA-256 | 客户端正式路径 | 实际 UUID |
+|---|---|---|---|---|
+| `FAR_L_EYE_DARK_BASE` | `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_dark_base.png` | `ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940` | 计划中，Gate2 待批 | 无 |
+| `FAR_L_EYE_GLOW` | `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_glow.png` | `76faa9de3e47de8188eefdb28d8cd97bf4f57dbea02d85cf55c3a7e451fdb02b` | 计划中，Gate2 待批 | 无 |
+| `BRIDGE_STREET_MASTER_L` | `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_street_master.png`（右侧镜像复用同一母资源） | `2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8` | 计划中，Gate2 待批 | 无 |
+| `BRIDGE_BODY_L_CLEAN` | `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_l_clean.png` | `1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b` | 计划中，Gate2 待批 | 无 |
+| `BRIDGE_BODY_R_CLEAN` | `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_r_clean.png` | `cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82` | 计划中，Gate2 待批 | 无 |
+
+48 层母版：`deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/source/scene_sakura_revision_master.psd`，SHA-256 由 `FILE_VERIFICATION.json` 登记；母版是美术源文件，不是 Creator 导入文件。Art 正式送审包已齐，`ARTIFACT_APPROVAL_GATE2.json` 为 `USER_REVIEW`、用户决定未出；本登记仍仅是候选，正式客户端路径与 UUID 待获批接入后实录。
+<!-- EXAMPLE-REVISION-20261015 END -->
+
 当前登记版本：`UNIT-MENU-SCENE1-TECH-RUNTIME-001 v0.2`（已批准）。2026-10-05 Creator 3.8.8 已为四张获批 PNG 与镜头控制脚本生成 `.meta`，AssetDB Library 已重导。四张 PNG 的内容哈希与美术源文件一致；四份 SpriteFrame `.meta` 均为 `trimType=none`，对应 Library JSON 均为 `rect=2172×724`、`originalSize=2172×724`、`offset=(0,0)`，贴图 UUID 指向各自真实 Texture2D 子 UUID。身份与全画布几何映射已静态核验。当前仍无可交互 Editor 窗口、Prefab/Scene 和构建/运行证据。此表记录美术实际交付和 Creator 实际状态；更新需注明来源 Artifact、版本、责任人和变更原因；具体命名约定见 `deliverables/tech_lead/UNIT-MENU-SCENE1-TECH-RUNTIME-001/v0.2/RESOURCE_PATH_AND_NAMING_SPEC.md`.
 
 ## 示例1四层背景｜已批准美术交付，Creator身份与全画布导入已核验

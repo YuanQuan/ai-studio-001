@@ -1,0 +1,36 @@
+{
+  "id": "EXAMPLE-REVISION-ART-20261015",
+  "title": "示例场景与奶茶顾客调整 ART",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "落实用户已批准的示例调整，制作新切片至USER_REVIEW；独立旧资源代码完成构建运行核验。",
+  "inputs": [
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/APPROVED_PLAN.md",
+    "deliverables/master/EXAMPLE-REVISION-20261015/v0.1/USER_AUTHORIZATION.json",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/visual_production_contract.md",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/ART_BRIEF.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同批Art/Tech签认先于首图，遵循已批准局部制作、零生图及现有来源范围。",
+    "桥边缘清理、左街面镜像复用、眼睛拆层有实际PNG、完整分层PSD与同尺度重组，未改范围有核对证据。",
+    "新切片身份清单及限制明确，Gate2待用户决定，未接入工程。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；不得自行创建子任务或Git动作。",
+    "仅修改本角色交付目录及Master明确授权范围，不改历史批准；文档中文。",
+    "Art仅新交付目录/PSD切片；Client仅涉及的客户端源码/必要meta与自己交付；Tech仅自己交付；Producer可改本线Task/Approval及project状态里程碑审批复盘dashboard独立marker。",
+    "复用旧资源的代码可独立推进；新切片正式接入等待用户具体Gate2，禁止预判批准。"
+  ]
+}

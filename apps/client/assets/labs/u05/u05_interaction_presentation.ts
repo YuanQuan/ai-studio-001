@@ -21,6 +21,9 @@ export type PresentationTransaction = Readonly<{
   customerStartX: number;
 }>;
 
+export type PresentationDurations = Readonly<{ happyMs: number; sadMs: number }>;
+export const DEFAULT_PRESENTATION_DURATIONS: PresentationDurations = { happyMs: 1400, sadMs: 2800 };
+
 export type PresentationSample = {
   phase: PresentationPhase;
   face: FacePose;
@@ -69,6 +72,7 @@ export function samplePresentation(
   transaction: PresentationTransaction,
   nowMs: number,
   target?: PresentationSample,
+  durations: PresentationDurations = DEFAULT_PRESENTATION_DURATIONS,
 ): PresentationSample {
   const sample = target ?? { phase: 'complete', face: 'neutral', faceProgress: 1, phaseStartedAtMs: 0,
     phaseDurationMs: 0, progress: 1, complete: true, customerX: 309, bubbleVisible: false } as PresentationSample;
@@ -77,13 +81,13 @@ export function samplePresentation(
   let customerX: number; let bubbleVisible: boolean;
   if (transaction.result === 'wrong') {
     if (elapsed < 650) { phase = 'synthesis'; start = 0; duration = 650; face = 'neutral'; customerX = 309; bubbleVisible = true; }
-    else if (elapsed < 1000) { phase = 'disappointed'; start = 650; duration = 350; face = 'disappointed'; customerX = 309; bubbleVisible = true; }
-    else { phase = 'complete'; start = 1000; duration = 0; face = 'neutral'; customerX = 309; bubbleVisible = true; }
+    else if (elapsed < 650 + durations.sadMs) { phase = 'disappointed'; start = 650; duration = durations.sadMs; face = 'disappointed'; customerX = 309; bubbleVisible = true; }
+    else { phase = 'complete'; start = 650 + durations.sadMs; duration = 0; face = 'neutral'; customerX = 309; bubbleVisible = true; }
   } else if (transaction.result === 'expired') {
     if (transaction.customerStartX <= -72) { phase = 'complete'; start = 0; duration = 0; face = 'disappointed'; customerX = -72; bubbleVisible = false; }
-    else if (elapsed < 300) { phase = 'disappointed'; start = 0; duration = 300; face = 'disappointed'; customerX = transaction.customerStartX; bubbleVisible = true; }
-    else if (elapsed < 750) { phase = 'depart'; start = 300; duration = 450; face = 'disappointed'; customerX = transaction.customerStartX + (-72 - transaction.customerStartX) * easeIn((elapsed - 300) / 450); bubbleVisible = false; }
-    else { phase = 'complete'; start = 750; duration = 0; face = 'disappointed'; customerX = -72; bubbleVisible = false; }
+    else if (elapsed < durations.sadMs) { phase = 'disappointed'; start = 0; duration = durations.sadMs; face = 'disappointed'; customerX = transaction.customerStartX; bubbleVisible = true; }
+    else if (elapsed < durations.sadMs + 450) { phase = 'depart'; start = durations.sadMs; duration = 450; face = 'disappointed'; customerX = transaction.customerStartX + (-72 - transaction.customerStartX) * easeIn((elapsed - durations.sadMs) / 450); bubbleVisible = false; }
+    else { phase = 'complete'; start = durations.sadMs + 450; duration = 0; face = 'disappointed'; customerX = -72; bubbleVisible = false; }
   } else if (transaction.result === 'exited') {
     if (elapsed < 450) { phase = 'depart'; start = 0; duration = 450; face = 'neutral'; customerX = transaction.customerStartX + (-72 - transaction.customerStartX) * easeIn(elapsed / 450); bubbleVisible = false; }
     else { phase = 'complete'; start = 450; duration = 0; face = 'neutral'; customerX = -72; bubbleVisible = false; }
@@ -91,13 +95,13 @@ export function samplePresentation(
     if (elapsed < 450) { phase = 'arrive'; start = 0; duration = 450; face = 'neutral'; customerX = -72 + 381 * easeOut(elapsed / 450); bubbleVisible = false; }
     else { phase = 'complete'; start = 450; duration = 0; face = 'neutral'; customerX = 309; bubbleVisible = true; }
   } else if (elapsed < 650) { phase = 'synthesis'; start = 0; duration = 650; face = 'neutral'; customerX = 309; bubbleVisible = true; }
-  else if (elapsed < 950) { phase = 'happy'; start = 650; duration = 300; face = 'happy'; customerX = 309; bubbleVisible = true; }
-  else if (elapsed < 1400) { phase = 'depart'; start = 950; duration = 450; face = 'happy'; customerX = 309 - 381 * easeIn((elapsed - 950) / 450); bubbleVisible = false; }
-  else if (transaction.result === 'correct' && elapsed < 1850) {
-    phase = 'arrive'; start = 1400; duration = 450; face = 'neutral'; customerX = -72 + 381 * easeOut((elapsed - 1400) / 450); bubbleVisible = false;
+  else if (elapsed < 650 + durations.happyMs) { phase = 'happy'; start = 650; duration = durations.happyMs; face = 'happy'; customerX = 309; bubbleVisible = true; }
+  else if (elapsed < 650 + durations.happyMs + 450) { phase = 'depart'; start = 650 + durations.happyMs; duration = 450; face = 'happy'; customerX = 309 - 381 * easeIn((elapsed - 650 - durations.happyMs) / 450); bubbleVisible = false; }
+  else if (transaction.result === 'correct' && elapsed < 650 + durations.happyMs + 900) {
+    phase = 'arrive'; start = 650 + durations.happyMs + 450; duration = 450; face = 'neutral'; customerX = -72 + 381 * easeOut((elapsed - 650 - durations.happyMs - 450) / 450); bubbleVisible = false;
   } else {
-    phase = 'complete'; start = transaction.result === 'won' ? 1400 : 1850; duration = 0;
-    face = 'neutral'; customerX = transaction.result === 'won' ? -72 : 309; bubbleVisible = false;
+    phase = 'complete'; start = transaction.result === 'won' ? 650 + durations.happyMs + 450 : 650 + durations.happyMs + 900;
+    duration = 0; face = 'neutral'; customerX = transaction.result === 'won' ? -72 : 309; bubbleVisible = false;
   }
   const phaseElapsed = Math.max(0, elapsed - start);
   sample.phase = phase;
