@@ -13,6 +13,7 @@ import { TouristView } from './labs/u02/tourist_view';
 import { SHOP_IDS, SHOP_NAMES, SHOP_PREFAB_NAMES } from './labs/u03/shop_definitions';
 import { U01SakuraLayoutEditor } from './labs/u01/sakura_layout_editor';
 import { populateSakuraV03 } from './labs/u01/sakura_v03_environment';
+import { USER_LAYOUT_PROFILE } from './labs/u01/sakura_user_layout';
 import { U05MilkTeaLab } from './labs/u05/milk_tea_lab';
 
 const { ccclass, property } = _decorator;
@@ -22,11 +23,19 @@ const TEXT = new Color(230, 239, 247);
 const MUTED = new Color(155, 178, 199);
 const BLUE = new Color(108, 193, 224);
 const GOLD = new Color(246, 189, 109);
-const OVERVIEW_SHOP_BASELINE = [
-  { x: -1079, y: -234 }, { x: -780, y: -260 }, { x: -410, y: -235 },
-  { x: 350, y: -237 }, { x: 689, y: -249 }, { x: 1030, y: -249 },
-];
-const OVERVIEW_SHOP_BASELINE_SCALES = [0.34, 0.34, 0.34, 0.34, 0.34, 0.34];
+type UserShopLayoutEntry = (typeof USER_LAYOUT_PROFILE.instances[number]) & {
+  shopFootpoint: { groundContactLocalY: number };
+};
+const USER_SHOP_LAYOUT = USER_LAYOUT_PROFILE.instances
+  .filter(entry => entry.instanceId.startsWith('ORIGINAL-SHOP-'))
+  .slice().sort((a, b) => a.orderBottomToTop - b.orderBottomToTop) as UserShopLayoutEntry[];
+const OVERVIEW_SHOP_BASELINE = USER_SHOP_LAYOUT.map(entry => ({
+  x: entry.left + entry.sourceSize.width * entry.scale / 2 - USER_LAYOUT_PROFILE.canvas.width / 2,
+  y: USER_LAYOUT_PROFILE.canvas.height / 2 - (entry.top + entry.sourceSize.height * entry.scale / 2
+    - entry.shopFootpoint!.groundContactLocalY * entry.scale),
+}));
+const OVERVIEW_SHOP_BASELINE_SCALES = USER_SHOP_LAYOUT.map(entry => entry.scale);
+const OVERVIEW_SHOP_MIRRORS = USER_SHOP_LAYOUT.map(entry => entry.mirror);
 const OVERVIEW_TOURIST_COUNT = 1;
 const OVERVIEW_TOURIST_SCALE = 0.2;
 const U04_MANAGERS = [
@@ -1203,7 +1212,7 @@ export class UnitSampleGallery extends Component {
     const background = instantiate(this.streetBasePrefab!);
     background.name = 'U00StreetBase';
     this.overviewScene.addChild(background);
-    populateSakuraV03(background, this.overviewScene);
+    populateSakuraV03(background, this.overviewScene, USER_LAYOUT_PROFILE.instances);
     const layerNames = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
     this.overviewBackgroundLayers = layerNames.map(name => background.getChildByName(name))
       .filter((layer): layer is Node => !!layer);
@@ -1226,6 +1235,7 @@ export class UnitSampleGallery extends Component {
       shop.name = SHOP_IDS[i];
       this.overviewShops.addChild(shop);
       this.overviewShopNodes.push(shop);
+      shop.setSiblingIndex(i);
       this.applyOverviewShopFootpoint(i);
     }
 
@@ -1405,7 +1415,8 @@ export class UnitSampleGallery extends Component {
     const contactY = shop.getChildByName('ground_contact')?.position.y ?? -388;
     const scale = this.overviewShopScales[index] ?? OVERVIEW_SHOP_BASELINE_SCALES[index];
     shop.setPosition(footpoint.x, footpoint.y - contactY * scale);
-    shop.setScale(scale, scale, 1);
+    const scaleX = OVERVIEW_SHOP_MIRRORS[index] ? -scale : scale;
+    shop.setScale(scaleX, scale, 1);
   }
 
   private applyOverviewTouristScale(index: number): void {
@@ -1480,6 +1491,8 @@ export class UnitSampleGallery extends Component {
         footX: this.overviewShopFootpoints[index].x,
         footY: this.overviewShopFootpoints[index].y,
         scale: this.overviewShopScales[index] ?? OVERVIEW_SHOP_BASELINE_SCALES[index],
+        mirror: OVERVIEW_SHOP_MIRRORS[index],
+        orderBottomToTop: USER_SHOP_LAYOUT[index].orderBottomToTop,
       })),
       touristCount: this.overviewTourists.length,
     }, null, 2);

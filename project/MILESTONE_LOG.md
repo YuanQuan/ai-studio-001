@@ -1443,3 +1443,24 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `CLIENT_V03_USER_REVIEW_TECH_APPROVED_FOR_SUBMISSION`：Tech三Required实存，REVIEW.json APPROVED仅可交用户试玩，非完整运行PASS；Client Task REVIEW→USER_REVIEW，审批decided_at null。Producer38文件逐SHA/字节锁`FRONTEND_V03_USER_REVIEW_HASHES.json`自SHA 4b27602e…d8ed1de0，中文审核包SHA 3dd83b3f…761850b。已测脸/退出离散片段，正确交杯完整离场、逐帧、计时到零、五档未测；历史预算FAIL及构建退出36保留。
 - `RUNTIME_TECH_AUTO_DONE_CLIENT_USER_REVIEW`：Master核Tech三Required与五条验收，内部AUTO接受Task DONE；Producer重核Client v0.3送审38/38 SHA/字节及自SHA一致。此不改变Client USER_REVIEW、未测运行项或历史预算FAIL。
 <!-- U05-B-LANDING-20261014 END -->
+
+<!-- U00-U01-USER-LAYOUT-20261015 START -->
+## 2026-10-15｜U00／U01 用户布局更新关键节点
+
+- `INPUT_FROZEN`：Master 冻结 `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json` 与 `USER_AUTHORIZATION.json`；差异及输入校验分别见同目录 `PARAMETER_DIFF.json`、`INPUT_VALIDATION.json`。精确发生时刻未知。
+- `TASK_CREATED`：Master 建 Client、Tech、FLOW 三 Task；路径见 `tasks/U00-U01-USER-LAYOUT-{CLIENT,TECH,FLOW}-20261015/TASK.json`，精确时刻未知。
+- `FLOW_TASK_STARTED`：Producer 首产 `deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/FLOW_REPORT.md`，FLOW `READY→IN_PROGRESS`；首产精确时刻未知，可核记录时刻 2026-10-15T12:54:00Z 之后。
+- `CLIENT_TASK_STARTED`／`TECH_TASK_STARTED`：可核发现时刻 2026-10-15T12:54:50Z，实物 `deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/FEATURE_BRIEF.md` 与 `deliverables/tech_lead/U00-U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.md`、`DELIVERABLE.json`。两 Task `READY→IN_PROGRESS`，实际首写时刻未知。
+- `INPUT_HASH_DISCREPANCY`：Client Brief 所记 SHA 与冻结输入实算不符；Producer 告知 Master，待 Owner 更正，不把 Brief 的错误 SHA 当正式绑定。
+- `INPUT_HASH_CORRECTED`：Client Brief 已更正为冻结输入实算 SHA；可核发现时刻为 2026-10-15T12:55Z 后，精确写入时刻未知。
+- `CLIENT_STATIC_VALIDATION`：Client 自检报告实存，记录 53实例/47环境/6店/21原型、字段与脚点映射 PASS；路径 `deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json`，可核发现时刻截至 2026-10-15T12:59:19Z。仍待独立 Review 与运行。
+- `FIRST_CREATOR_BUILD_FAILED`：Client 证据 `creator-exit-code.txt` 为 -6，`creator-build-finish.json` 记 `2026-10-15T13:00:43.217325Z`、退出 -6；同目录 TypeScript 退出0。构建耗时字段 28801.217 秒与本轮窗口矛盾，暂不采信，待 Owner 复核并重试。
+- `CREATOR_RECOVERY_BUILD_SUCCEEDED`：Client 同目录 `creator-build-recovery-start.json`/`finish.json`/`exit-code.txt` 与 `creator-build.log` 实存，2026-10-15T13:03:13Z→13:03:53Z，单调时钟40.297秒、退出36；日志确认本 Task `Finished in (28 s)ms`，按 Creator 成功码登记。待构建身份与 HTTP/IAB。
+- `BUILD_IDENTITY_BOUND`：Client `deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json` 记录766输出文件、关键输出 SHA 和源码身份；同目录 `RESOURCE_SCOPE_VALIDATION.json` 自检素材身份 PASS。Root `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial.png` 初始截图已实存，完整运行结论待核。
+- `CLIENT_PACKET_SUBMITTED`：四份 Required（`FEATURE_BRIEF.md`、`IMPLEMENTATION_REPORT.md`、`RUN_VERIFICATION.md`、`DELIVERABLE.json`）实存，索引状态 `READY_FOR_REVIEW`、三项运行验收 `NOT_TESTED`；Task `IN_PROGRESS→REVIEW`。Root 已产生初始/重置/重入导出与画面文件，实际对比结论待记录。
+- `IAB_RUNTIME_PASS`：Master `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json` 于 `2026-10-15T13:10:55.563751Z` 记录 U01 初始/重置/重入53实例全字段 PASS、U00三态六店字段 PASS、U04兼容冒烟、浏览器警告错误空；截图与六份导出同目录 evidence。目标机/U04全回归未测。
+- `TECH_REVIEW_APPROVED`：`deliverables/tech_lead/U00-U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.json` 为 APPROVED，两 Required `REVIEW.md`、`DELIVERABLE.json` 实存且两验收 PASS；Tech Task `IN_PROGRESS→REVIEW`，待 Master 接受内部支持。
+- `TECH_INTERNAL_DONE`：Master `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/TECH_MASTER_ACCEPTANCE.json` APPROVED 后，Tech Task `REVIEW→DONE`；Tech Artifact `PROFESSIONAL_REVIEW`，Task approval字段为 `REVIEW`；准确运行版仍待用户。
+- `CLIENT_USER_REVIEW`：Master `MASTER_REVIEW.json` APPROVED，Client 四 Required／三验收 PASS；Producer 复核 `RUNTIME_IDENTITY.json` 36/36文件 SHA 匹配、清单 SHA `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`，`tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json` 指向准确 v0.1 `USER_REVIEW_PACKET.md`，Task `REVIEW→USER_REVIEW`，用户未批准。
+- `FLOW_INTERNAL_DONE`：Master `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`；专业Artifact `PROFESSIONAL_REVIEW`，用户运行版仍 `USER_REVIEW`。
+<!-- U00-U01-USER-LAYOUT-20261015 END -->

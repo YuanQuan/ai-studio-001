@@ -1185,3 +1185,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - Client v0.3用户审核准备：Producer核Client/Root/Tech合计38文件SHA/字节全匹配并锁清单，中文审核包实存；Tech独立评审APPROVED仅允许送用户试玩，不承诺完整运行通过。Root新增成功/失落脸、主动退出裁切与重开入场离散画布截图；这些观察没有可靠逐帧覆盖，正确交杯完整离场、计时到零和五档全通仍未知。浏览器与Tech各自完整执行起止时间未可靠提供，不猜其耗时或归因。建议Master将准确8879试玩链接、已测与未测范围及Creator退出36/Art预算FAIL同呈用户（复核点：用户对v0.3实际试玩明确决定）；Producer届时只按具体版本更新审批。Continuity：Client与Tech已交产物，Tech Task REVIEW待内部核收，Client USER_REVIEW待用户，当前无可继续的已授权制作；单元示例无正式QA。
 - Tech内部接受节点：Master核三Required与五条验收后接受只读Tech Task AUTO DONE，Producer再核Client v0.3送审38/38 SHA/字节与清单自SHA一致。Tech评审的活动起止仍无可靠时间，不猜；没有新增制作、返工或运行实测。建议Master展示已锁的中文试玩审核包与8879实际产物，复核点为用户是否接受准确v0.3；Producer只在用户明确决定后更新Client审批。Continuity：Tech已DONE，Client USER_REVIEW；当前无已授权未产的并行任务，用户决定是下一门禁。
 <!-- U05-B-LANDING-20261014 END -->
+
+<!-- U00-U01-USER-LAYOUT-20261015 START -->
+## WR-20261015-U00-U01-USER-LAYOUT-001｜准确运行版送审
+
+- 结果：Client四Required／三验收PASS，Tech Review APPROVED且Master接受DONE；Master HTTP/IAB六次导出PASS，Client准确v0.1处 `USER_REVIEW`，36/36身份SHA匹配，用户尚未决定。FLOW三Required获Master内部接受，Task DONE。证据与完整归因见 `deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md`。
+- 时间（UTC）：可核起点2026-10-15T12:50:58.639069Z，收尾2026-10-15T13:15:33.574981Z，跨节点24分34.9秒；含并行工作与观察，不是任一角色净制作。首Creator试运行约0.367秒失败；恢复构建单调时钟40.297秒成功。其余角色净工时、等待和排障不可可靠拆分；用户消息精确时间未知，审批等待尚未计入本周期。
+- 无同类基线，不认定“慢”。Brief初稿SHA笔误已修正；首次构建失败，错误派生耗时值未采信。建议Client下轮首产复算输入SHA与记录单调构建耗时，Tech核身份；Master冻结最终包后Producer逐SHA复核。复核点为下一参数包／CLI构建／准确送审。Continuity：Client真实USER_REVIEW、Tech DONE、FLOW DONE，无空挂READY/IN_PROGRESS。
+<!-- U00-U01-USER-LAYOUT-20261015 END -->

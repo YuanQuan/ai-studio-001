@@ -1,0 +1,33 @@
+{
+  "id": "U00-U01-USER-LAYOUT-CLIENT-20261015",
+  "title": "U00与U01用户53实例参数更新CLIENT",
+  "type": "bug",
+  "owner": "client",
+  "parent": null,
+  "objective": "按本次完整53实例JSON设置U01初始/重置/重入及U00六店和环境参数；U04保持现有环境；不生图不改图片或UUID。",
+  "inputs": [
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_AUTHORIZATION.json",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "U01初始、重置和重入53实例及21原型与用户JSON完全一致。",
+    "U00环境47实例与六店位置缩放镜像采用本次JSON，U04及图片UUID不变。",
+    "Creator3.8.8当前构建及内置浏览器实际检查通过；未测范围如实记录。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "用户本次明确授权参数修改，不重复申请；单元示例Owner自验，无QA。",
+    "Client允许修改labs/u01布局模块及必要新模块/meta和UnitSampleGallery.ts U00定点；共享U04默认参数保持。",
+    "Producer只处理本线任务/审批及project工作流、里程碑、审批、复盘、dashboard独立marker；保护既有未提交修改。",
+    "Tech先对齐轻量方案再复核；Root负责内置浏览器。所有专业Agent禁止Git动作与自行建子任务。"
+  ]
+}

@@ -1,5 +1,6 @@
 import { _decorator, Component, Node, resources, Sprite, SpriteFrame, UITransform, Vec3 } from 'cc';
 import { SAKURA_V03_LAYOUT } from './sakura_v03_layout';
+import type { UserLayoutEntry } from './sakura_user_layout';
 
 const LAYERS = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L05_WaterGrass'];
 const { ccclass } = _decorator;
@@ -62,8 +63,8 @@ export class SakuraV03Motion extends Component {
   }
 }
 
-/** Fill the stable five-layer Prefab interface with the shared Art v0.5 environment. */
-export function populateSakuraV03(root: Node, viewport: Node): void {
+/** Fill the stable five-layer Prefab interface; a missing profile preserves the shared U04 defaults. */
+export function populateSakuraV03(root: Node, viewport: Node, profile?: readonly UserLayoutEntry[]): void {
   void loadFrames().then(frames => {
     if (!root.isValid || root.getChildByName('SAKURA_V03_READY')) return;
     const layers = LAYERS.map(name => root.getChildByName(name));
@@ -78,7 +79,21 @@ export function populateSakuraV03(root: Node, viewport: Node): void {
       return group;
     });
     const floaters: Node[] = [];
-    for (const instance of SAKURA_V03_LAYOUT.instances) {
+    const instances = profile
+      ? profile.filter(instance => !instance.instanceId.startsWith('ORIGINAL-SHOP-')).map(instance => ({
+        instanceId: instance.instanceId, assetId: instance.assetId, layer: instance.layer,
+        width: instance.sourceSize.width, height: instance.sourceSize.height,
+        left: instance.left, top: instance.top, scale: instance.scale,
+        mirror: instance.mirror, motion: instance.motion, order: instance.orderBottomToTop,
+      })).sort((a, b) => a.order - b.order)
+      : SAKURA_V03_LAYOUT.instances.map((instance, order) => ({
+        instanceId: instance.instanceId, assetId: instance.assetId, layer: instance.layer,
+        width: instance.width, height: instance.height,
+        left: instance.x, top: instance.y, scale: 1,
+        mirror: instance.mirror, motion: instance.motion, order,
+      }));
+    const layerOrder = new Map<string, number>();
+    for (const instance of instances) {
       const proto = SAKURA_V03_LAYOUT.prototypes.find(item => item.id === instance.assetId);
       const frame = frames.get(instance.assetId);
       const layerIndex = LAYERS.indexOf(instance.layer);
@@ -91,11 +106,14 @@ export function populateSakuraV03(root: Node, viewport: Node): void {
       sprite.trim = false;
       sprite.spriteFrame = frame;
       transform.setContentSize(instance.width, instance.height);
-      const scaleX = instance.mirror ? -1 : 1;
-      node.setScale(scaleX, 1, 1);
-      node.setPosition(instance.x + instance.width / 2 - sourceWidth / 2,
-        sourceHeight / 2 - (instance.y + instance.height / 2), 0);
+      const scaleX = instance.mirror ? -instance.scale : instance.scale;
+      node.setScale(scaleX, instance.scale, 1);
+      node.setPosition(instance.left + instance.width * instance.scale / 2 - sourceWidth / 2,
+        sourceHeight / 2 - (instance.top + instance.height * instance.scale / 2), 0);
       parent.addChild(node);
+      const sibling = layerOrder.get(instance.layer) ?? 0;
+      node.setSiblingIndex(sibling);
+      layerOrder.set(instance.layer, sibling + 1);
       if (instance.motion === 'flame_float') floaters.push(node);
     }
     const marker = new Node('SAKURA_V03_READY');

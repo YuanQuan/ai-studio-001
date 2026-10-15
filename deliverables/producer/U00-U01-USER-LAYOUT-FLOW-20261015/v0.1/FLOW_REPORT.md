@@ -1,0 +1,7 @@
+# U00／U01 用户53实例布局参数更新流程报告 v0.1
+
+- 用户输入与范围：Master 冻结 `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json`、`USER_AUTHORIZATION.json`、`PARAMETER_DIFF.json`、`INPUT_VALIDATION.json`。新增两棵树、相对旧 U01 修改十实例；53唯一ID、21素材身份和坐标算式输入校验 PASS。用户授权修改 U01 初始/重置/重入和 U00 环境及六店参数；U04 保持、零生图。旧 U01 审批不变。
+- 状态链：三 Task `READY→IN_PROGRESS` 均有真实首产。Client 四 Required 与三验收 PASS，`IN_PROGRESS→REVIEW→USER_REVIEW`；Tech 两 Required、两验收及 `REVIEW.json` APPROVED，Master `TECH_MASTER_ACCEPTANCE.json` 接受后 `REVIEW→DONE`；本 FLOW 三 Required 已实产，Master `FLOW_MASTER_ACCEPTANCE.json` 接受后 `IN_PROGRESS→REVIEW→DONE`。
+- 运行证据：Client 53实例逐字段静态投影、21素材字节/UUID检查、TypeScript 退出0，Creator 3.8.8 web-mobile 隔离构建日志 `Finished in (28 s)ms`、恢复构建40.297秒/该版本成功码36及766输出文件身份；Master `HTTP_IDENTITY.json` 与 `IAB_VERIFICATION.json` 记录 U01 三态53全字段 PASS、U00三态六店字段 PASS、U04兼容冒烟及浏览器无警告/错误。Tech 对源码、构建、HTTP/IAB独立复核并批准。目标设备性能、微信/抖音、U04完整状态回归未测；单元示例无QA Agent。
+- 审批：Master `MASTER_REVIEW.json` APPROVED 仅表明可送审。`tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json` 指向准确 v0.1 `USER_REVIEW_PACKET.md`，状态 `USER_REVIEW`、`decided_at=null`；`RUNTIME_IDENTITY.json` 所列36文件 SHA 由 Producer 独立复算36/36匹配，清单自身 SHA-256 `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`。用户尚未批准准确运行版，Client 不可 DONE。
+- Continuity check：Client 已到真实用户门禁，Tech 已获 Master 接受，FLOW 三 Required 已获 Master 内部接受并 DONE；本线不存在仅以 READY/IN_PROGRESS 占位且可继续的任务。下一步为用户决定准确运行版；若升级正式功能／资源，重走适用QA与审批门禁。

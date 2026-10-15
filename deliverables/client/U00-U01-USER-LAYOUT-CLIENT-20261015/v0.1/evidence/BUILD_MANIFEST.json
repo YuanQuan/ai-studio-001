@@ -1,0 +1,83 @@
+{
+  "taskId": "U00-U01-USER-LAYOUT-CLIENT-20261015",
+  "creatorVersion": "3.8.8",
+  "typescriptVersion": "Creator bundled TypeScript 5.8.2",
+  "target": "web-mobile",
+  "buildAttempt1": {
+    "command": "Creator 3.8.8 isolated CLI using platform=web-mobile;debug=true;buildPath=...",
+    "exitCode": -6,
+    "stdoutBytes": 0,
+    "stderrBytes": 0,
+    "outputCreated": false,
+    "classification": "failed before build logs or outputs; no artifact accepted"
+  },
+  "buildAttempt2": {
+    "configPath": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json",
+    "configSha256": "119b0b085390bc5300e4f0c6a62855d0e170b6ce0c271d5c2c96e097c942698e",
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-user-layout-client-20261015-isolated-project --build 'configPath=/private/tmp/u00-u01-user-layout-client-20261015-isolated-project/build-unit-samples.json;platform=web-mobile'",
+    "creatorExitCode": 36,
+    "officialFinishedMarker": "build Task (U00-U01-USER-LAYOUT-CLIENT-20261015-v0.1) Finished in (28 s)ms",
+    "buildDurationSecondsFromLog": 28,
+    "elapsedSecondsMonotonicIncludingStartup": 40.297,
+    "stdout": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-build-recovery-stdout.log",
+    "stderr": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-build-recovery-stderr.log",
+    "buildLog": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-build.log",
+    "outputDirectory": "/private/tmp/u00-u01-user-layout-client-20261015-build/u00-u01-user-layout-client-20261015-web-mobile",
+    "outputFileCount": 766,
+    "outputHashes": {
+      "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "src/settings.json": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "assets/main/index.js": "1b988b456df1f66569063487f144980f5c92e43287201be13c72d49f603d8b7b",
+      "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+    },
+    "launchScene": {
+      "url": "db://assets/UnitSamples.scene",
+      "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+    },
+    "sourceSync": {
+      "project": "/private/tmp/u00-u01-user-layout-client-20261015-isolated-project",
+      "assetFileCount": 654,
+      "assetTreeSha256": "ffb81622dfd3b51c2b92c017d21abfa1591d0c9a2717106ba8a7d9c01e692254"
+    },
+    "sourceHashes": {
+      "apps/client/assets/UnitSampleGallery.ts": "a3e44dfc0d3725ddb633c8bd20e65c74aacdefea956a2ba0a5baef55e8c175e0",
+      "apps/client/assets/labs/u01/sakura_v03_environment.ts": "8197f79c998ef6552830c08a4a9e081f88e245ccfde5c44bf0b5f56633cb65c4",
+      "apps/client/assets/labs/u01/sakura_layout_editor.ts": "bb0f357b6a2a336de7596cd62354bb39bac446a83ff1f3092a79e92805b900be",
+      "apps/client/assets/labs/u01/sakura_user_layout.ts": "63cd90c4cc27f4c1388b9f808d47cc731b65f841bd0719a5a5077ee6b03bbe09",
+      "apps/client/assets/labs/u01/sakura_user_layout.ts.meta": "7cd38fb5fbb79ae1092c92a02ec95691b538a03b0fbbbdfe9498580bbde76dfc"
+    },
+    "staticParameterValidation": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json",
+    "runtimeBrowserStatus": "PASS_ROOT_IAB",
+    "runtimeExportComparison": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RUNTIME_EXPORT_COMPARISON.json",
+    "browserHttpUrl": "http://127.0.0.1:60440/",
+    "masterIabFinalRecord": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json",
+    "masterHttpIdentity": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json",
+    "browserWarningsErrors": 0,
+    "httpFilesStatus200AndHashMatch": 6
+  },
+  "typescript": {
+    "command": "node Creator bundled TypeScript tsc -p apps/client/tsconfig.json --noEmit --skipLibCheck --target ES2021 --lib ES2021,DOM",
+    "exitCode": 0,
+    "log": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/typescript-check.log"
+  },
+  "input": {
+    "path": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+    "sha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d",
+    "instances": 53,
+    "prototypes": 21
+  },
+  "preExistingSourceHashes": {
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts": "19db0ade275aba5d25a8c3a02287ee5aa277a072b164365ecff7045b0a9329f7",
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "df31c8af03fdf8b6702d74e3df58a94f5bd6d2c4f00cd3cf105912794f88974a",
+    "apps/client/assets/labs/u01/sakura_v03_environment.ts": "0f782aff96146f481f2f009f20cf8e4f34f8068839c7694ebaf0772a608f4c1d",
+    "apps/client/assets/UnitSampleGallery.ts": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35"
+  },
+  "sharedDefaultLayoutSha256": "df31c8af03fdf8b6702d74e3df58a94f5bd6d2c4f00cd3cf105912794f88974a",
+  "imageAndUuidChecks": {
+    "totalPrototypes": 21,
+    "passed": 21,
+    "detailsPath": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RESOURCE_SCOPE_VALIDATION.json"
+  }
+}

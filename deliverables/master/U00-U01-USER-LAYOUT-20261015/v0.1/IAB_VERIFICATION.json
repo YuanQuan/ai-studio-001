@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-15T13:10:55.563751+00:00",
+  "browser": "Codex In-app Browser via cua_repl",
+  "url": "http://127.0.0.1:60440/",
+  "viewport": {
+    "width": 720,
+    "height": 1280
+  },
+  "build_manifest": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+  "http_identity": "HTTP_IDENTITY.json",
+  "operations": {
+    "u01_initial": {
+      "status": "PASS",
+      "all_fields_equal_to_user_json": true,
+      "instances": 53,
+      "prototypes": 21,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial_export.json"
+    },
+    "u01_reset": {
+      "status": "PASS",
+      "all_fields_equal_to_user_json": true,
+      "instances": 53,
+      "prototypes": 21,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reset_export.json"
+    },
+    "u01_reentry": {
+      "status": "PASS",
+      "all_fields_equal_to_user_json": true,
+      "instances": 53,
+      "prototypes": 21,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reentry_export.json"
+    },
+    "u00_initial": {
+      "status": "PASS",
+      "six_shop_fields_equal": true,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_initial_export.json"
+    },
+    "u00_reset": {
+      "status": "PASS",
+      "six_shop_fields_equal": true,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_reset_export.json"
+    },
+    "u00_reentry": {
+      "status": "PASS",
+      "six_shop_fields_equal": true,
+      "evidence": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_reentry_export.json"
+    }
+  },
+  "visual": {
+    "u01": "Full panorama, both added trees, 47 environment instances and page 41-47 visible. Shop2 X+ and scale+ temporary editing followed by reset succeeded.",
+    "u00": "Actual camera drag shows left added tree, bridge, right trees and shops. Shop1 X+ then restore and reentry succeeded.",
+    "u04": "Dialogue background, old shops and character visible; return succeeded. Compatibility smoke only."
+  },
+  "screenshots": [
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_temporary_edit.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_bridge_right_tree.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_initial.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_right_shops.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_added_tree_left.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u00_temporary_edit.png",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/evidence/u04_shared_baseline.png"
+  ],
+  "warnings_errors": [],
+  "not_tested": [
+    "Target-device FPS, memory, DrawCall, GPU",
+    "WeChat/Douyin runtime",
+    "U04 full state regression"
+  ],
+  "qa": "Unit sample owner verification, no QA Agent."
+}

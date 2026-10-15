@@ -5,25 +5,9 @@ import { instantiate } from 'cc';
 const W = 3072, H = 1024;
 const PANEL = new Color(19, 34, 51), TEXT = new Color(230, 239, 247), GOLD = new Color(246, 189, 109), BLUE = new Color(108, 193, 224);
 import { SAKURA_V03_LAYOUT } from './sakura_v03_layout';
-const SHOP_POSITIONS: Array<[number, number]> = [[283,440],[582,466],[952,441],[1712,443],[2051,455],[2392,455]];
-const SHOP_NAMES = ['奶茶','糖画','现烤','理发','花灯','投壶'];
+import { USER_LAYOUT_PROFILE } from './sakura_user_layout';
 const PROTOTYPE_PATHS = new Map(SAKURA_V03_LAYOUT.prototypes.map(p => [p.id, `sakura_v03/${p.path.replace(/\.png$/i, '')}`]));
 type Item = { instanceId: string; prototypeId: string; name: string; left: number; top: number; width: number; height: number; scale: number; mirror: boolean; motion: string; order: number; node: Node; shopIndex?: number };
-type InitialLayoutOverride = Partial<Pick<Item, 'left' | 'top' | 'scale'>>;
-
-/** U01-only values from the approved frozen USER_LAYOUT.json; shared scene layout stays unchanged. */
-const U01_INITIAL_LAYOUT_OVERRIDES: Readonly<Record<string, InitialLayoutOverride>> = Object.freeze({
-  'SAK-V03-005': { left: -83.45679012345681, top: 172.09876543209884 },
-  'ORIGINAL-SHOP-1': { left: 274.35802469135797, top: 405.4320987654321 },
-  'ORIGINAL-SHOP-2': { left: 544.962962962963, top: 433.90123456790104, scale: 0.334 },
-  'ORIGINAL-SHOP-3': { left: 923.6049382716055, top: 405.19753086419746 },
-  'ORIGINAL-SHOP-4': { left: 1709.5308641975307, top: 402.2592592592591 },
-  'ORIGINAL-SHOP-5': { left: 2036.1851851851852, top: 415.49382716049365 },
-  'ORIGINAL-SHOP-6': { left: 2383.358024691358, top: 417.96296296296316, scale: 0.333 },
-  'SAK-V03-021': { left: -1.1368683772161603e-13, top: 640.0000000000001 },
-  'SAK-V03-022': { left: 2237.333333333332, top: 643.7037037037037 },
-});
-
 /** U01-only temporary layout editor. All positions and exports remain in source-canvas pixels. */
 export class U01SakuraLayoutEditor {
   private items: Item[] = [];
@@ -103,33 +87,40 @@ export class U01SakuraLayoutEditor {
     this.panel=this.node('U01LayerPanel',this.root,680,138,0,-515); const g=this.panel.addComponent(Graphics);g.fillColor=new Color(10,20,34,110);g.rect(-340,-69,680,138);g.fill();
     this.text(this.panel,'层列表（从上到下为前景至远景），点选被遮挡层后可拖动',0,48,655,22,13);
     for(let i=0;i<6;i++) this.button(this.panel,`店${i+1}`, -280+i*112, 14, 94, 34,()=>this.selectShop(i));
-    const pageSize=10, pageCount=Math.ceil(SAKURA_V03_LAYOUT.instances.length/pageSize); for(let page=0;page<pageCount;page++){const first=page*pageSize+1,last=Math.min((page+1)*pageSize,SAKURA_V03_LAYOUT.instances.length);this.button(this.panel,`实例 ${first}-${last}`, -224+page*112,-27,100,34,()=>this.selectPage(page,pageSize));}
+    const environmentCount=USER_LAYOUT_PROFILE.instances.length-6; const pageSize=10, pageCount=Math.ceil(environmentCount/pageSize); for(let page=0;page<pageCount;page++){const first=page*pageSize+1,last=Math.min((page+1)*pageSize,environmentCount);this.button(this.panel,`实例 ${first}-${last}`, -224+page*112,-27,100,34,()=>this.selectPage(page,pageSize));}
     this.variantButtons.set('lotus',this.button(this.panel,'莲花A+',-262,-51,90,28,()=>this.addSpiritVariant('lotus','tex_sakura_rr_spirit_a_lotus','tex_sakura_rr_spirit_b_lotus'))); this.variantButtons.set('reflection',this.button(this.panel,'倒影A+',-160,-51,90,28,()=>this.addSpiritVariant('reflection','tex_sakura_rr_spirit_a_reflection','tex_sakura_rr_spirit_b_reflection')));
     this.button(this.panel,'镜头复位',-53,-51,104,28,()=>{this.fitCanvas();}); this.button(this.panel,'缩放−',68,-51,76,28,()=>this.zoomCanvas(.9)); this.button(this.panel,'缩放+',155,-51,76,28,()=>this.zoomCanvas(1.1));
   }
   private createInitialItems(): void {
-    const bandOrder: Record<string, number> = { L01_Sky: 0, L02_Mountains: 1, L03_Ground: 2, L04_WaterBridge: 4, L05_WaterGrass: 5 };
-    const entries = [...SAKURA_V03_LAYOUT.instances].sort((a, b) =>
-      (bandOrder[a.layer] ?? 3) - (bandOrder[b.layer] ?? 3) || a.order - b.order);
-    const addEntries = (layers: string[]): void => {
-      for(const entry of entries.filter(item => layers.includes(item.layer))) {
-        const override=U01_INITIAL_LAYOUT_OVERRIDES[entry.instanceId];
-        const item: Item={instanceId:entry.instanceId,prototypeId:entry.assetId,name:entry.name,left:override?.left??entry.x,top:override?.top??entry.y,width:entry.width,height:entry.height,scale:override?.scale??1,mirror:entry.mirror,motion:entry.motion,order:this.items.length,node:new Node(entry.name)};
-        this.makeItemNode(item); this.items.push(item);
-      }
-    };
-    addEntries(['L01_Sky','L02_Mountains','L03_Ground']);
     const shops=(this.gallery as any).shopPrefabs as any[];
-    for(let i=0;i<6;i++) {
-      const instanceId=`ORIGINAL-SHOP-${i+1}`;
-      const [defaultLeft,defaultTop]=SHOP_POSITIONS[i];
-      const override=U01_INITIAL_LAYOUT_OVERRIDES[instanceId];
-      const item:Item={instanceId,prototypeId:'ORIGINAL-SHOP',name:`原店参考${String(i+1).padStart(2,'0')} ${SHOP_NAMES[i]}`,left:override?.left??defaultLeft,top:override?.top??defaultTop,width:1024,height:1024,scale:override?.scale??0.34,mirror:false,motion:'static',order:this.items.length+i*0.001,node:new Node(`原店参考${i+1}`),shopIndex:i};
-      const prefab=shops?.[i]; if(prefab){const instance=instantiate(prefab); item.node=instance; this.canvas.addChild(instance);}
+    for (const entry of USER_LAYOUT_PROFILE.instances) {
+      const shopIndex = entry.instanceId.startsWith('ORIGINAL-SHOP-')
+        ? Number(entry.instanceId.slice('ORIGINAL-SHOP-'.length)) - 1 : undefined;
+      const item: Item = {
+        instanceId: entry.instanceId,
+        prototypeId: entry.assetId,
+        name: entry.name,
+        left: entry.left,
+        top: entry.top,
+        width: entry.sourceSize.width,
+        height: entry.sourceSize.height,
+        scale: entry.scale,
+        mirror: entry.mirror,
+        motion: entry.motion,
+        order: entry.orderBottomToTop,
+        node: new Node(entry.name),
+        shopIndex,
+      };
+      if (shopIndex !== undefined) {
+        const prefab=shops?.[shopIndex];
+        if (prefab) { const instance=instantiate(prefab); instance.name=entry.name; this.canvas.addChild(instance); item.node=instance; }
+      } else {
+        this.makeItemNode(item);
+      }
       this.items.push(item);
     }
-    addEntries(['L04_WaterBridge','L05_WaterGrass']);
-    this.items.sort((a,b)=>a.order-b.order); this.reorder();
+    this.items.sort((a,b)=>a.order-b.order);
+    this.reorder();
   }
   private makeItemNode(item: Item): void { const n=new Node(item.name); const tr=n.addComponent(UITransform);const frame=this.frames.get(item.prototypeId); if(frame){const sprite=n.addComponent(Sprite);sprite.sizeMode=Sprite.SizeMode.CUSTOM;sprite.trim=false;sprite.spriteFrame=frame;}tr.setContentSize(item.width,item.height); this.canvas.addChild(n); item.node=n; this.applyItem(item); }
   private applyItem(item: Item): void {
@@ -153,7 +144,7 @@ export class U01SakuraLayoutEditor {
   private scaleSelected(f:number):void {const i=this.selected;if(!i)return;i.scale=Math.max(.1,Math.min(4,+(i.scale*f).toFixed(3)));this.applyItem(i);this.setSelected(i);}
   private mirrorSelected():void {if(!this.selected)return;this.selected.mirror=!this.selected.mirror;this.applyItem(this.selected);this.setSelected(this.selected);}
   private removeSelected():void {const i=this.selected;if(!i)return;i.node.destroy();this.items=this.items.filter(x=>x!==i);this.reorder();this.setSelected(null);}
-  private reset():void {this.dispose();this.root.destroy();this.items=[];this.frames.clear();this.disposed=false;this.open();this.status.string='已恢复 v0.5 基线；离开重入也会重新加载该基线。';}
+  private reset():void {this.dispose();this.root.destroy();this.items=[];this.frames.clear();this.disposed=false;this.open();this.status.string='已恢复用户冻结布局；离开重入也会重新加载该参数。';}
   private sourcePoint(p:Vec2):Vec2|null {const local=this.canvas.getComponent(UITransform)?.convertToNodeSpaceAR(new Vec3(p.x,p.y,0));if(!local)return null;return new Vec2(local.x+W/2,H/2-local.y);}
   private onTouchStart(e:any):void {const screen=e.getUILocation();if(this.onUi(screen))return;this.pointerActive=true;this.cameraStart.set(screen.x,screen.y);this.canvasStart.set(this.canvas.position.x,this.canvas.position.y);const p=this.sourcePoint(screen);if(this.mode==='edit'&&p){const hit=this.selectionLocked?this.selected:this.hitTest(p);if(hit&&!this.selectionLocked)this.setSelected(hit);if(this.selected&&hit){this.dragging=true;this.dragPoint=p;this.startTopLeft=[this.selected.left,this.selected.top];}}e.propagationStopped=true;}
   private onTouchMove(e:any):void {if(!this.pointerActive)return;if(this.dragging&&this.selected){const p=this.sourcePoint(e.getUILocation());if(!p)return;this.selected.left=this.startTopLeft[0]+p.x-this.dragPoint.x;this.selected.top=this.startTopLeft[1]+p.y-this.dragPoint.y;this.applyItem(this.selected);this.setSelected(this.selected);}else if(this.mode==='camera'){const p=e.getUILocation();this.canvas.setPosition(this.canvasStart.x+p.x-this.cameraStart.x,this.canvasStart.y+p.y-this.cameraStart.y,0);}}

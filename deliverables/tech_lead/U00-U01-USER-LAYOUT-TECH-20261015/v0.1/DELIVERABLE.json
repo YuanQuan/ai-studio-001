@@ -1,0 +1,29 @@
+{
+  "task_id": "U00-U01-USER-LAYOUT-TECH-20261015",
+  "owner": "tech_lead",
+  "summary": "U00/U01用户53实例参数技术评审通过：逐字段映射、六店脚点、U04默认隔离、资源UUID、Creator构建与当前HTTP/IAB导出均有可复核证据。",
+  "artifacts": [
+    "deliverables/tech_lead/U00-U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U00-U01-USER-LAYOUT-TECH-20261015/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/U00-U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.json",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "复核53实例21原型准确映射、U00店铺脚点换算及U04隔离。",
+      "result": "PASS",
+      "evidence": "REVIEW.md源码复核：53实例与21原型逐字段相等，53层映射一致；六店脚点对冻结值差0；U04调用无profile且默认layout SHA未变。Client PARAMETER_STATIC_VALIDATION.json同结论。"
+    },
+    {
+      "criterion": "复核当前构建与HTTP/IAB证据及最小实现，未测范围不冒称通过。",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8恢复构建Finished/退出36、TypeScript 0，BUILD_MANIFEST.json列766当前输出，Tech独立复算5源码及6输出SHA一致；HTTP_IDENTITY.json六文件200/SHA匹配；IAB_VERIFICATION.json六次实际导出PASS，Tech独立比较U01三份整对象与冻结输入精确相等、U00三份整对象相等且六店字段逐值匹配。"
+    }
+  ],
+  "risks": [
+    "目标设备帧率、DrawCall、内存、GPU与微信/抖音运行未测；U04仅做兼容冒烟，未做完整状态回归。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

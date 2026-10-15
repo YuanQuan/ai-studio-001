@@ -1,0 +1,41 @@
+{
+  "task_id": "U00-U01-USER-LAYOUT-CLIENT-20261015",
+  "owner": "client",
+  "summary": "U01初始、重置和重入从冻结53实例profile载入用户布局；U00 overview通过可选环境profile与六店冻结参数初始化；U04沿用默认共享布局。",
+  "artifacts": [
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RUNTIME_EXPORT_COMPARISON.json",
+    "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RESOURCE_SCOPE_VALIDATION.json",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json",
+    "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U01初始、重置和重入53实例及21原型与用户JSON完全一致。",
+      "result": "PASS",
+      "evidence": "同一构建U01初始、临时调整后重置、返回重入三份实际导出均与冻结JSON完全相等；均53实例、21原型。比较见evidence/RUNTIME_EXPORT_COMPARISON.json，完整IAB见Master deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json。"
+    },
+    {
+      "criterion": "U00环境47实例与六店位置缩放镜像采用本次JSON，U04及图片UUID不变。",
+      "result": "PASS",
+      "evidence": "同一构建U00初始、恢复、重入三份六店实导，6店footX/Y、scale、mirror、orderBottomToTop逐字段完全相等；47环境静态核对、新树/桥/店铺画面可见；U04默认共享环境和21项图片UUID不变。完整IAB与资源静态报告分别见Master IAB_VERIFICATION.json与evidence/RESOURCE_SCOPE_VALIDATION.json。"
+    },
+    {
+      "criterion": "Creator3.8.8当前构建及内置浏览器实际检查通过；未测范围如实记录。",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8 CLI exit36且本任务Finished，构建源/输出身份见evidence/BUILD_MANIFEST.json。Root内置浏览器在同一HTTP产物验证三阶段U01、三阶段U00、U04兼容冒烟；HTTP 6个文件均200且SHA匹配，warnings/errors为空，详见Master IAB_VERIFICATION.json和HTTP_IDENTITY.json。未测范围已列于RUN_VERIFICATION.md。"
+    }
+  ],
+  "assumptions": [
+    "新增树实例使用相同树原型所在的L03_Ground层；现有五层背景节点接口保持不变。",
+    "用户冻结JSON中的shopFootpoint.groundContactLocalY对应当前店铺Prefab ground_contact。"
+  ],
+  "risks": [
+    "未测试目标设备、GPU、真实触控设备与小游戏平台性能；单元示例Owner验证不构成正式QA结论。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

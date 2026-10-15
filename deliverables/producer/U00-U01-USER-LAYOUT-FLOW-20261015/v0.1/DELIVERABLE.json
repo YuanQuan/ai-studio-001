@@ -1,0 +1,26 @@
+{
+  "task_id": "U00-U01-USER-LAYOUT-FLOW-20261015",
+  "owner": "producer",
+  "summary": "本次U00/U01用户53实例参数更新已完成流程跟踪、36项身份复核与复盘；准确运行版处USER_REVIEW待用户决定。",
+  "artifacts": [
+    "deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "追踪本轮真实状态、审批、版本路径与连续执行结果。",
+      "result": "PASS",
+      "evidence": "FLOW_REPORT.md；project/WORKFLOW_STATUS.md、MILESTONE_LOG.md、APPROVAL_LOG.md及dashboard本线独立marker；Client准确包USER_REVIEW、Tech内部DONE，36/36 SHA复核匹配。"
+    },
+    {
+      "criterion": "完成有真实起止时间和证据的复盘，准确参数运行版停在USER_REVIEW。",
+      "result": "PASS",
+      "evidence": "WORK_RETROSPECTIVE.md记录可核UTC起止、墙钟及故障时间口径；tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json为USER_REVIEW、decided_at=null。"
+    }
+  ],
+  "risks": [
+    "准确参数运行版仍待用户明确批准；目标设备性能/小游戏平台/U04完整回归未测，单元示例无QA Agent。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

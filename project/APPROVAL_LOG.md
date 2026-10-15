@@ -697,3 +697,13 @@ Client v0.3实际实现已进入REVIEW待Tech独立运行评审；8878/8879浏�
 Client准确v0.3实际试玩已送USER_REVIEW，尚无用户决定：`tasks/U05-B-INTERACTION-CLIENT-20261014/ARTIFACT_APPROVAL_v0.3.json` decided_at null；Producer锁38文件SHA/字节审计`FRONTEND_V03_USER_REVIEW_HASHES.json`自SHA 4b27602e…d8ed1de0，中文审核包`USER_PLAY_REVIEW_PACKET.md` SHA 3dd83b3f…761850b。Tech APPROVED仅支持提交用户，正确交杯完整离场/逐帧、计时到零、五档未测，不是完整运行PASS。Art预算FAIL、Creator退出36/旧profile TypeError继续披露；单元示例无QA。
 Master已内部AUTO接受U05 v0.3运行Tech只读评审Task DONE，依据三Required实存、REVIEW.json APPROVED及五条逐项结论；Producer重核Client准确送审38/38 SHA/字节。Tech结论仅准提交用户试玩，不是用户实现批准；Client仍USER_REVIEW，未测与预算FAIL保持。
 <!-- U05-B-LANDING-20261014 END -->
+
+<!-- U00-U01-USER-LAYOUT-20261015 START -->
+## 2026-10-15｜U00／U01 53实例参数更新审批
+
+- `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_AUTHORIZATION.json` 记录用户对本次参数修改的明确授权；它不构成准确运行版成品批准，也不追认旧 U01 审批。
+- 本次准确运行版：尚无完成的同版 Review 与用户批准，后续仅凭准确版本 `USER_REVIEW` 记录等待用户决定。
+- Tech 内部支持：Master `TECH_MASTER_ACCEPTANCE.json` 决定 APPROVED，Task DONE、Tech Artifact `PROFESSIONAL_REVIEW`，Task approval字段 `REVIEW`；该内部接受不批准 Client 准确参数运行版。
+- Client 准确参数运行版 v0.1：`tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`；Master `MASTER_REVIEW.json` APPROVED，仅具送审资格。`RUNTIME_IDENTITY.json` 绑定36文件SHA，Producer独立复算36/36匹配，清单SHA `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`。旧 U01 用户审批保持原记录，不被本次修改授权追认。
+- FLOW内部支持：Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，`tasks/U00-U01-USER-LAYOUT-FLOW-20261015/ARTIFACT_APPROVAL.json` 记录 `PROFESSIONAL_REVIEW`，Task DONE；不构成Client用户批准。
+<!-- U00-U01-USER-LAYOUT-20261015 END -->

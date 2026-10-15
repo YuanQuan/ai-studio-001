@@ -1364,3 +1364,23 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Client v0.3实际试玩送审：Master已修Tech正式输入为Client v0.3及Root 8879浏览器报告，Tech三Required实存、REVIEW.json APPROVED仅“可提交用户实际试玩审核”，Tech Task REVIEW待Master内部核收。Producer `FRONTEND_V03_USER_REVIEW_HASHES.json`锁源码/Client交付/8879构建/Root截图与报告/Tech结论38文件SHA/字节全匹配（自SHA 4b27602e…d8ed1de0），中文`USER_PLAY_REVIEW_PACKET.md` SHA 3dd83b3f…761850b；Client准确v0.3 Task与Approval USER_REVIEW，decided_at null，未DONE。8879实测正确/错误提示清除、成功/失落脸离散片段、主动退出左移窗框裁切与重开入场；8878三杯/错杯/重试另作历史证据。正确交杯完整离场边缘、逐帧无缝、未捕获表情相位、计时到零、五档逐个通关及实体设备仍未测，不宣称完整运行PASS；Creator退出36/旧profile TypeError及Art历史预算FAIL保留。Continuity：已授权Client/Tech制作评审有实际产物，下一门禁为用户对准确v0.3试玩决定；此单元示例无QA。
 - 运行Tech内部核收：Master已阅读三Required、REVIEW.json APPROVED和五条验收范围，接受此只读评审Task AUTO DONE，仅支持Client v0.3提交用户试玩。Producer复核`FRONTEND_V03_USER_REVIEW_HASHES.json`当前38/38 SHA/字节匹配、自SHA 4b27602e…d8ed1de0；Client仍USER_REVIEW而非DONE，未测正确交杯完整离场/逐帧、计时到零和五档未补测，Art预算FAIL及Creator退出36保留。Continuity：独立Tech阶段已结案，下一个门禁为用户对准确试玩版本的明确决定。
 <!-- U05-B-LANDING-20261014 END -->
+
+<!-- U00-U01-USER-LAYOUT-20261015 START -->
+## 2026-10-15｜U00／U01 用户53实例参数更新
+
+- Master 冻结用户明确修改授权与 53 实例／21 原型输入，新增两棵树、相对旧 U01 修改十实例，输入校验通过；本次不修改旧 U01 准确版审批。正式三线 Task：`tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/TASK.json`、`tasks/U00-U01-USER-LAYOUT-TECH-20261015/TASK.json`、`tasks/U00-U01-USER-LAYOUT-FLOW-20261015/TASK.json`。
+- Producer 已首产 `deliverables/producer/U00-U01-USER-LAYOUT-FLOW-20261015/v0.1/FLOW_REPORT.md`，FLOW `IN_PROGRESS`。Client／Tech 已启动但待真实首产核证，Task 暂 `READY`。本轮零生图、无 QA Agent；U04 保持。
+- 本次准确运行版尚未完成验证或用户批准。Client 完成、Tech 与 Master 同版核查后送 `USER_REVIEW`；内部支持经 Master 接受可结案。最近复盘索引：`WR-20261015-U00-U01-USER-LAYOUT-001`。
+- Client `FEATURE_BRIEF.md`、Tech `REVIEW.md`/`DELIVERABLE.json` 已首产，双 Task `READY→IN_PROGRESS`；Tech 当前仅完成输入与方案预审，源码/构建/运行复核继续。Client Brief 记录的输入 SHA 与实际文件不符，已通知 Master 修正，未视为冻结身份通过。
+- Client 已将 Brief 输入 SHA 更正为实算 `094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d`；方案身份记录问题关闭，后续源码与运行仍待核。
+- Client 已产出 `deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json`，其自检报告 53/47/6/21 计数与字段映射 PASS；尚待独立 Tech/Master 与实际运行复核。
+- Client TypeScript 检查退出0；Creator 首次构建证据记录退出 -6，不能视为构建通过，需核工具故障及成功重试。其 elapsedSeconds 28801.217 与本轮时间口径不一致，未用于计算制作耗时。
+- Creator 一次恢复构建 `13:03:13→13:03:53Z`，单调时钟40.297秒、退出36；同次日志有本 Task `Finished in (28 s)ms` 与构建成功节点，按 Creator 成功码登记，待 Client 绑定构建产物身份与 HTTP/IAB。首构建0.367秒即退出 -6，原“28801.217秒”不采信。
+- Client `BUILD_MANIFEST.json` 已绑定 Creator 3.8.8 web-mobile 构建输出766文件、关键输出哈希、源码与隔离源身份；`RESOURCE_SCOPE_VALIDATION.json` 自检21素材字节/UUID PASS。Root 已开始实际浏览器截图，仍待完整初始／重置／重入与 U00/U04 结果。
+- Client 四份 Required 已实存，`DELIVERABLE.json` 自报 `READY_FOR_REVIEW`；三项运行相关验收仍 `NOT_TESTED`，Task `IN_PROGRESS→REVIEW`，待 Root 浏览器与 Tech 同版核查后再决定 USER_REVIEW。
+- Master `IAB_VERIFICATION.json` 于 `2026-10-15T13:10:55Z` 记录 U01 三态53实例全字段、U00三态六店字段 PASS，U04兼容冒烟与浏览器无警告/错误；目标机与U04全回归未测。仍待 Client 绑定这一证据、Tech 最终同版 Review 与 Master 接受。
+- Tech v0.1 两 Required 与 `REVIEW.json` 实存，两项验收 PASS、专业决定 APPROVED，Tech Task `IN_PROGRESS→REVIEW`；待 Master 接受内部支持后方可 DONE。Client 本版仍待 Master 绑定与送审。
+- Master `TECH_MASTER_ACCEPTANCE.json` APPROVED，Tech 两验收原文同序 PASS 且文件齐，内部支持 `REVIEW→DONE`，专业Artifact登记 `PROFESSIONAL_REVIEW`，Task approval字段仍为 `REVIEW`；不代替 Client 准确运行版用户批准。
+- Master `MASTER_REVIEW.json` APPROVED，Client 四 Required／三验收原文同序 PASS。`RUNTIME_IDENTITY.json` 36/36 SHA 由 Producer 独立复算匹配、清单 SHA `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`；准确 v0.1 `USER_REVIEW_PACKET.md` 已冻结，Client `REVIEW→USER_REVIEW`，用户未批准，不能 DONE。Tech 内部支持 DONE；FLOW 已获 Master 接受 DONE。Continuity：本线无空挂 READY/IN_PROGRESS，可继续的内部门禁均已完成，下一步为用户准确版决定。
+- Master `FLOW_MASTER_ACCEPTANCE.json` 核三 Required／两验收原文同序 PASS 并接受，FLOW `REVIEW→DONE`；专业 Artifact 记 `PROFESSIONAL_REVIEW`，Task approval 仍 `REVIEW`。Client 准确版 `USER_REVIEW`，待用户决定；本线 continuity 无空挂 READY/IN_PROGRESS。
+<!-- U00-U01-USER-LAYOUT-20261015 END -->

@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "inputPath": "deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+  "inputSha256": "094365e576c948009a04ffdd0c20a9829171c45f642ffaa5ff80a6366842537d",
+  "counts": {
+    "instances": 53,
+    "environment": 47,
+    "shops": 6,
+    "prototypes": 21
+  },
+  "profileFieldComparison": "All frozen instance fields equal; added layer is client render mapping only.",
+  "instanceChecks": "All 53 IDs, position, scale, mirror, orderBottomToTop, dimensions, and cocosCenter mappings match the frozen input exactly.",
+  "newTreeLayerMapping": [
+    {
+      "instanceId": "tex_sakura_rr_tree_b-added-1792068298163-2",
+      "assetId": "tex_sakura_rr_tree_b",
+      "layer": "L03_Ground",
+      "orderBottomToTop": 6.1
+    },
+    {
+      "instanceId": "tex_sakura_rr_tree_a-added-1792068072988-1",
+      "assetId": "tex_sakura_rr_tree_a",
+      "layer": "L03_Ground",
+      "orderBottomToTop": 7.1
+    }
+  ],
+  "shopFootpointProjection": [
+    {
+      "instanceId": "ORIGINAL-SHOP-1",
+      "footX": -1087.561975308642,
+      "footY": -199.4320987654321,
+      "scale": 0.34,
+      "mirror": false,
+      "orderBottomToTop": 17
+    },
+    {
+      "instanceId": "ORIGINAL-SHOP-2",
+      "footX": -820.0290370370369,
+      "footY": -222.50123456790107,
+      "scale": 0.334,
+      "mirror": false,
+      "orderBottomToTop": 18.001
+    },
+    {
+      "instanceId": "ORIGINAL-SHOP-3",
+      "footX": -438.31506172839454,
+      "footY": -199.19753086419746,
+      "scale": 0.34,
+      "mirror": false,
+      "orderBottomToTop": 19.002
+    },
+    {
+      "instanceId": "ORIGINAL-SHOP-4",
+      "footX": 347.61086419753065,
+      "footY": -196.25925925925912,
+      "scale": 0.34,
+      "mirror": false,
+      "orderBottomToTop": 20.003
+    },
+    {
+      "instanceId": "ORIGINAL-SHOP-5",
+      "footX": 727.0713076341658,
+      "footY": -209.49382716049377,
+      "scale": 0.34,
+      "mirror": false,
+      "orderBottomToTop": 21.004
+    },
+    {
+      "instanceId": "ORIGINAL-SHOP-6",
+      "footX": 1052.2928002015628,
+      "footY": -205.6629629629631,
+      "scale": 0.333,
+      "mirror": false,
+      "orderBottomToTop": 22.005
+    }
+  ],
+  "u04DefaultCall": "PASS: openDialogue retains populateSakuraV03(background, stage) without profile; shared default layout source remains unchanged.",
+  "resourceScope": "No image or existing .meta edited; existing prototype list reused from SAKURA_V03_LAYOUT.",
+  "u01EnvironmentPagination": "47 profile environment entries; createPanel pagination labels last page 41–47."
+}

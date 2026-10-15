@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-15T13:10:16.839909+00:00",
+  "url": "http://127.0.0.1:60440/",
+  "build_manifest": "deliverables/client/U00-U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+  "connection": "direct loopback; system proxy caused HTTP502 on first permitted read",
+  "files": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "matches_current_build": true
+    },
+    {
+      "path": "index.js",
+      "http_status": 200,
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "matches_current_build": true
+    },
+    {
+      "path": "application.js",
+      "http_status": 200,
+      "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "matches_current_build": true
+    },
+    {
+      "path": "src/settings.json",
+      "http_status": 200,
+      "sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/main/index.js",
+      "http_status": 200,
+      "sha256": "1b988b456df1f66569063487f144980f5c92e43287201be13c72d49f603d8b7b",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/main/config.json",
+      "http_status": 200,
+      "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "matches_current_build": true
+    }
+  ]
+}
