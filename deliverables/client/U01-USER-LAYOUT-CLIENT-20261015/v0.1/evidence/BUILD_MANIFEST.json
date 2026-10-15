@@ -1,0 +1,58 @@
+{
+  "taskId": "U01-USER-LAYOUT-CLIENT-20261015",
+  "creatorVersion": "3.8.8",
+  "typescriptVersion": "Creator bundled TypeScript 5.8.2",
+  "target": "web-mobile",
+  "launchScene": {
+    "url": "db://assets/UnitSamples.scene",
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae"
+  },
+  "config": "/private/tmp/u00-u01-bridge-v05-client-project/build-unit-samples.json",
+  "buildCommand": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u00-u01-bridge-v05-client-project --build 'configPath=/private/tmp/u00-u01-bridge-v05-client-project/build-unit-samples.json;platform=web-mobile'",
+  "buildExitCode": 36,
+  "buildExitMeaning": "Creator 3.8.8 official CLI success; stdout contains build Task Finished.",
+  "buildOutput": "/private/tmp/u01-user-layout-20261015-build",
+  "httpUrl": "http://127.0.0.1:8790/",
+  "httpServerSessionId": 21886,
+  "fileCount": 739,
+  "hashes": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+    "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+    "src/settings.json": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+    "assets/main/index.js": "16f586288b6b56620fe203b5a3eeb54ef207291af9b9a17e17b946571d97f17f",
+    "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+  },
+  "mainBundleSha256": "16f586288b6b56620fe203b5a3eeb54ef207291af9b9a17e17b946571d97f17f",
+  "sourceIdentity": {
+    "editorSha256": "19db0ade275aba5d25a8c3a02287ee5aa277a072b164365ecff7045b0a9329f7",
+    "sharedLayoutSha256": "df31c8af03fdf8b6702d74e3df58a94f5bd6d2c4f00cd3cf105912794f88974a",
+    "sharedEnvironmentSha256": "0f782aff96146f481f2f009f20cf8e4f34f8068839c7694ebaf0772a608f4c1d",
+    "gallerySha256": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35",
+    "sceneSha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+    "inputSha256": "f34af020733b3ad095c7845d028f8acdfcf5a00fee30ea7a01c547bfac02a364"
+  },
+  "sourceSync": "All 631 assets in isolated Creator project match current apps/client/assets; see SCOPE_AND_RESOURCE_VALIDATION.json.",
+  "typeCheck": {
+    "command": "node Creator bundled TypeScript tsc -p tsconfig.json --noEmit --skipLibCheck --target ES2021 --lib ES2021,DOM",
+    "exitCode": 0,
+    "log": "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/typescript-check.log"
+  },
+  "staticParameterValidation": "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json",
+  "browserStatus": "PASS_ROOT_IN_APP_BROWSER",
+  "browserEvidence": {
+    "iabVerification": "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json",
+    "httpIdentity": "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json",
+    "runtimeExportComparison": "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RUNTIME_EXPORT_COMPARISON.json",
+    "warningsErrors": "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/browser_warnings_errors.json",
+    "screenshots": [
+      "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial.jpg",
+      "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_temporary_edit.jpg",
+      "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_scene.jpg",
+      "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reentry.jpg"
+    ],
+    "httpFilesStatus200AndHashMatch": 6,
+    "consoleWarnings": 0,
+    "consoleErrors": 0
+  }
+}

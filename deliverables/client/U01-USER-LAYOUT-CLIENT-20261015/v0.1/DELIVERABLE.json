@@ -1,0 +1,54 @@
+{
+  "task_id": "U01-USER-LAYOUT-CLIENT-20261015",
+  "owner": "client",
+  "summary": "U01专属布局参数覆盖已实现；Creator 3.8.8构建、浏览器初始/重置/重入全JSON比对及HTTP身份检查通过，提交用户审阅。",
+  "artifacts": [
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/DELIVERABLE.json",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/pre-change/SOURCE_HASHES.txt",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/PARAMETER_STATIC_VALIDATION.json",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/SCOPE_AND_RESOURCE_VALIDATION.json",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/OUTPUT_FILES_SHA256.json",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/typescript-check.log",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/typescript-exit-code.txt",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-stdout.log",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-stderr.log",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/creator-exit-code.txt",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/evidence/RUNTIME_EXPORT_COMPARISON.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial_export.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reset_export.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reentry_export.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_initial.jpg",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_temporary_edit.jpg",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_reentry.jpg"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "U01初始、重置和重入的51实例参数及21原型身份与用户JSON一致，保留浮点精度。",
+      "result": "PASS",
+      "evidence": "Root内置浏览器初始、重置、返回重入三份51实例导出均与冻结用户JSON完整深度相等，21原型身份一致，保留精确浮点。对照见 evidence/RUNTIME_EXPORT_COMPARISON.json 与 master/U01-USER-LAYOUT-20261015/v0.1/evidence/u01_*_export.json。"
+    },
+    {
+      "criterion": "仅U01专属默认参数与必要读取逻辑变化，U00/U04共享数据和图像字节UUID不变。",
+      "result": "PASS",
+      "evidence": "仅修改apps/client/assets/labs/u01/sakura_layout_editor.ts；sakura_v03_layout.ts、sakura_v03_environment.ts、UnitSampleGallery.ts、UnitSamples.scene的前后SHA一致，21 PNG及meta UUID匹配输入。见evidence/SCOPE_AND_RESOURCE_VALIDATION.json。"
+    },
+    {
+      "criterion": "Creator3.8.8构建与真实内置浏览器导出逐项核对通过，编辑重置返回可用；零生图，未测项如实记录。",
+      "result": "PASS",
+      "evidence": "Creator3.8.8官方CLI隔离构建exit36且Finished；Root内置浏览器初次导出/临时改动后重置/返回重入均PASS，console warnings/errors为空，6个HTTP文件200且哈希匹配。零生图；设备性能未测。证据见BUILD_MANIFEST.json、master/U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json及HTTP_IDENTITY.json。"
+    }
+  ],
+  "assumptions": [
+    "保留冻结JSON中的完整IEEE浮点值，未进行整数化或四舍五入。"
+  ],
+  "risks": [
+    "目标设备、GPU及小游戏平台性能未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

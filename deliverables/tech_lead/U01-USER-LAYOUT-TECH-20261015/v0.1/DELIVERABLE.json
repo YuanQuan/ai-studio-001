@@ -1,0 +1,27 @@
+{
+  "task_id": "U01-USER-LAYOUT-TECH-20261015",
+  "owner": "tech_lead",
+  "summary": "U01用户布局参数技术复核通过：三份实际浏览器导出与冻结51实例全量精确相等；最小私有覆盖、共享范围、Creator构建及HTTP/IAB身份已有证据。目标设备性能未测。",
+  "artifacts": [
+    "deliverables/tech_lead/U01-USER-LAYOUT-TECH-20261015/v0.1/REVIEW.md",
+    "deliverables/tech_lead/U01-USER-LAYOUT-TECH-20261015/v0.1/IAB_EXACT_COMPARE.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/HTTP_IDENTITY.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/IAB_VERIFICATION.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "复核用户输入51实例到U01运行导出的参数和身份一致，U00/U04共享数据未改。",
+      "result": "PASS",
+      "evidence": "IAB_EXACT_COMPARE.json：21原型/51实例的初始、重置、重入实际导出与USER_LAYOUT.json完整精确相等；共享layout/environment/Gallery与HEAD字节一致，Client范围核验21PNG/UUID不变。"
+    },
+    {
+      "criterion": "复核最小实现、Creator构建与实际HTTP/IAB身份和证据；目标设备性能未测不冒称通过。",
+      "result": "PASS",
+      "evidence": "REVIEW.md；Client BUILD_MANIFEST.json（Creator 3.8.8构建完成、TypeScript通过、六关键产物SHA复算一致）；Master HTTP_IDENTITY.json六HTTP 200且SHA匹配，IAB_VERIFICATION.json实测操作PASS、警告错误空。目标设备性能标记未测。"
+    }
+  ],
+  "risks": [
+    "目标设备帧率、DrawCall、内存和GPU性能未测；不作为性能通过结论。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

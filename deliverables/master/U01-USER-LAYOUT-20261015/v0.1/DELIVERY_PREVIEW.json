@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:8790/",
+  "owner": "master",
+  "server_session_id": 72346,
+  "directory": "/private/tmp/u01-user-layout-20261015-build",
+  "purpose": "交付用户检查U01新默认布局，服务保留。",
+  "prior_client_server_session": 21886,
+  "prior_server_status": "Client已停止；Master同端口同产物重启。",
+  "build_identity": "HTTP_IDENTITY.json",
+  "main_bundle_sha256": "16f586288b6b56620fe203b5a3eeb54ef207291af9b9a17e17b946571d97f17f",
+  "checks": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "matches_build": true
+    },
+    {
+      "path": "index.js",
+      "status": 200,
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "matches_build": true
+    },
+    {
+      "path": "application.js",
+      "status": 200,
+      "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "matches_build": true
+    },
+    {
+      "path": "src/settings.json",
+      "status": 200,
+      "sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+      "matches_build": true
+    },
+    {
+      "path": "assets/main/index.js",
+      "status": 200,
+      "sha256": "16f586288b6b56620fe203b5a3eeb54ef207291af9b9a17e17b946571d97f17f",
+      "matches_build": true
+    },
+    {
+      "path": "assets/main/config.json",
+      "status": 200,
+      "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "matches_build": true
+    }
+  ],
+  "result": "PASS",
+  "time": "2026-10-15T01:03:33.593554+00:00"
+}

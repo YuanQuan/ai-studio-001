@@ -1,0 +1,40 @@
+{
+  "result": "PASS",
+  "browser": "Codex In-app Browser",
+  "url": "http://127.0.0.1:8790/",
+  "viewport": [
+    720,
+    1280
+  ],
+  "checks": [
+    {
+      "criterion": "初次进入导出与用户JSON全字段一致",
+      "result": "PASS",
+      "evidence": "evidence/u01_initial_export.json"
+    },
+    {
+      "criterion": "临时调整店2位置与缩放后重置，导出恢复用户JSON",
+      "result": "PASS",
+      "evidence": "evidence/u01_temporary_edit.jpg; evidence/u01_reset_export.json"
+    },
+    {
+      "criterion": "返回菜单重入导出恢复用户JSON",
+      "result": "PASS",
+      "evidence": "evidence/u01_reentry_export.json"
+    },
+    {
+      "criterion": "21原型及51实例完整导出，警告错误为空",
+      "result": "PASS",
+      "evidence": "evidence/browser_warnings_errors.json"
+    },
+    {
+      "criterion": "当前HTTP六关键文件200且hash与构建吻合",
+      "result": "PASS",
+      "evidence": "HTTP_IDENTITY.json"
+    }
+  ],
+  "limits": [
+    "本轮只调整U01专属默认参数；U00/U04共享源码与21PNG/UUID保持。",
+    "Web构建与当前浏览器检查，不作为目标设备性能测试。"
+  ]
+}

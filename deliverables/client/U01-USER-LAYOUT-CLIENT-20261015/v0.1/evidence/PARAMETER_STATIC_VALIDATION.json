@@ -1,0 +1,24 @@
+{
+  "taskId": "U01-USER-LAYOUT-CLIENT-20261015",
+  "inputSha256": "f34af020733b3ad095c7845d028f8acdfcf5a00fee30ea7a01c547bfac02a364",
+  "prototypeCount": 21,
+  "instanceCount": 51,
+  "overrideCount": 9,
+  "modeledInstanceParameterComparison": "PASS",
+  "mismatchCount": 0,
+  "mismatches": [],
+  "sharedFilesSha256": {
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "df31c8af03fdf8b6702d74e3df58a94f5bd6d2c4f00cd3cf105912794f88974a",
+    "apps/client/assets/labs/u01/sakura_v03_environment.ts": "0f782aff96146f481f2f009f20cf8e4f34f8068839c7694ebaf0772a608f4c1d",
+    "apps/client/assets/UnitSampleGallery.ts": "972e266273dc9733a8ab2d2e3c4536e18a024e48e5171e5bf5075c47a7003b35",
+    "apps/client/assets/UnitSamples.scene": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb"
+  },
+  "note": "Static projection follows editor layer-group insertion and shop insertion order; actual browser export comparison is separate runtime gate.",
+  "priorProjectionAttempt": {
+    "result": "FAIL_28_MODELED_ORDER_DIFFERENCES",
+    "classification": "validator-modeling-error; not source/runtime failure",
+    "cause": "The first offline projection sorted all environment layers before appending six shops, omitting the actual createInitialItems sequence: L01/L02/L03, then six shops, then L04/L05. This predicted front instances at order 17/18 instead of the correct 23/24.",
+    "resolution": "Rebuilt the projection using the editor’s actual segmented insertion sequence and preserved source ordering. Corrected full 51-instance parameter/identity comparison has zero differences.",
+    "sourceCodeChangedToFixAttempt": false
+  }
+}

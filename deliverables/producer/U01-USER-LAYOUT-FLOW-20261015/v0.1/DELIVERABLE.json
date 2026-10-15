@@ -1,0 +1,39 @@
+{
+  "task_id": "U01-USER-LAYOUT-FLOW-20261015",
+  "owner": "producer",
+  "summary": "持续追踪用户U01 51实例参数修订的输入身份、Client/Tech实际交付、运行USER_REVIEW及独立流程日志与复盘。",
+  "artifacts": [
+    "deliverables/producer/U01-USER-LAYOUT-FLOW-20261015/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U01-USER-LAYOUT-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U01-USER-LAYOUT-FLOW-20261015/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/dashboard/index.html",
+    "tasks/U01-USER-LAYOUT-CLIENT-20261015/TASK.json",
+    "tasks/U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json",
+    "tasks/U01-USER-LAYOUT-TECH-20261015/TASK.json",
+    "tasks/U01-USER-LAYOUT-TECH-20261015/ARTIFACT_APPROVAL.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/RUNTIME_IDENTITY.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/DELIVERY_PREVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "按真实产出持续登记本次参数修订阶段、版本、路径与用户来源；无新增资源审批。",
+      "result": "PASS",
+      "evidence": "FLOW_REPORT及WORKFLOW_STATUS本marker逐阶段记录Master USER_AUTHORIZATION、冻结USER_LAYOUT SHA、PARAMETER_DIFF、Client/Tech v0.1 Required和Master RUNTIME_IDENTITY/USER_REVIEW_PACKET；无新资源审批。"
+    },
+    {
+      "criterion": "维护独立marker日志看板，保护并发U05及旧审批历史，结束时连续检查和可靠时间复盘。",
+      "result": "PASS",
+      "evidence": "WORKFLOW/MILESTONE/APPROVAL/RETROSPECTIVE四日志与Dashboard仅本批独立marker维护，旧v0.5审批历史及U05保持；WORK_RETROSPECTIVE记可信08:48:15→09:04:51/09:05:17墙钟、未知净时、连续检查Tech DONE/Client USER_REVIEW/FLOW REVIEW。"
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "Client准确参数运行版尚待用户审阅，未标DONE。",
+    "目标设备性能未测；本单元示例无QA。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

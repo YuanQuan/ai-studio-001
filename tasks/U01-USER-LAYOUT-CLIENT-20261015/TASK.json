@@ -1,0 +1,35 @@
+{
+  "id": "U01-USER-LAYOUT-CLIENT-20261015",
+  "title": "U01用户布局参数落地CLIENT",
+  "type": "bug",
+  "owner": "client",
+  "parent": "U00-U01-BRIDGE-V05-CLIENT-20261014",
+  "objective": "将用户JSON设为U01默认布局并验证实际运行，U00/U04保持当前值。",
+  "inputs": [
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/USER_LAYOUT.json",
+    "deliverables/master/U01-USER-LAYOUT-20261015/v0.1/PARAMETER_DIFF.json",
+    "rules/cocos_cli_browser_workflow.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U01-USER-LAYOUT-CLIENT-20261015/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "U01初始、重置和重入的51实例参数及21原型身份与用户JSON一致，保留浮点精度。",
+    "仅U01专属默认参数与必要读取逻辑变化，U00/U04共享数据和图像字节UUID不变。",
+    "Creator3.8.8构建与真实内置浏览器导出逐项核对通过，编辑重置返回可用；零生图，未测项如实记录。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "用户参数修改已授权，不重复问许可；零生图，不改PNG/PSD，不动U00/U04及并发U05。",
+    "Client可改U01 editor及必要专属默认参数模块/meta、README；Tech仅本交付目录；Producer可改本任务阶段审批及project日志dashboard独立marker。",
+    "先轻量Brief与Tech对齐最小专属覆盖方案，禁止改共享sakura_v03_layout.ts/environment.ts。",
+    "Master统一Git，专业角色不提交不建子任务；单元示例Owner自验，无QA Agent。",
+    "Task.approval仅REVIEW；Required和验收保持Task原文同序。"
+  ]
+}

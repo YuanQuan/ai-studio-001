@@ -1,3 +1,11 @@
+<!-- U01-USER-LAYOUT-FLOW-20261015 START -->
+### WR-20261015-U01-USER-LAYOUT-001｜用户51实例布局参数落地
+- 结果：冻结输入SHA复算一致，9实例U01私有覆盖，21 PNG/UUID及U00/U04共享源不变。Client Creator3.8.8构建/Root三次初始、重置、重入实际JSON对用户输入exact/六HTTP身份均PASS；Master20文件身份0差，Tech内部DONE、Client准确v0.1运行版USER_REVIEW待用户，Producer三Required经Master接受DONE。证据见`deliverables/producer/U01-USER-LAYOUT-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md`与Master`RUNTIME_IDENTITY.json`/`USER_REVIEW_PACKET.md`。
+- 时间：可信起点08:48:15、用户授权登记08:49:18、Client运行门禁09:04:51，墙钟16分36秒；Producer Review材料09:05:17，墙钟17分02秒；Master内部接受登记09:07:35，墙钟19分20秒。用户原话精确时刻与各Owner净时未知，上轮用户等待不计，本轮新用户等待从09:04:51起。静态顺序模型曾误报28项、修正后0差，净排查时未知；Creator单次build日志约4秒不能代表全程。无同类基线和可证实慢因。
+- 建议：Client下次静态模型先模拟六店插层顺序；Tech继续分列静态/三次实导证据；Producer在Master scoped Git前复核本marker未覆盖U05。代价分别为模型维护、一次导出核、定向范围核；复核点为下次布局任务及本轮提交。
+- Continuity：Tech DONE、Client准确v0.1 USER_REVIEW、FLOW三Required经Master接受DONE；无空转READY/IN_PROGRESS。Root预览session72346保持，无QA单元示例、目标机性能未测。
+<!-- U01-USER-LAYOUT-FLOW-20261015 END -->
+
 <!-- U00-U01-BRIDGE-V05-FLOW-20261014 START -->
 ### WR-20261014-U00-U01-BRIDGE-V05-001｜获批桥资源接入及运行版送审
 

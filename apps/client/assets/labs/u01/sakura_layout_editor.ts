@@ -9,6 +9,20 @@ const SHOP_POSITIONS: Array<[number, number]> = [[283,440],[582,466],[952,441],[
 const SHOP_NAMES = ['奶茶','糖画','现烤','理发','花灯','投壶'];
 const PROTOTYPE_PATHS = new Map(SAKURA_V03_LAYOUT.prototypes.map(p => [p.id, `sakura_v03/${p.path.replace(/\.png$/i, '')}`]));
 type Item = { instanceId: string; prototypeId: string; name: string; left: number; top: number; width: number; height: number; scale: number; mirror: boolean; motion: string; order: number; node: Node; shopIndex?: number };
+type InitialLayoutOverride = Partial<Pick<Item, 'left' | 'top' | 'scale'>>;
+
+/** U01-only values from the approved frozen USER_LAYOUT.json; shared scene layout stays unchanged. */
+const U01_INITIAL_LAYOUT_OVERRIDES: Readonly<Record<string, InitialLayoutOverride>> = Object.freeze({
+  'SAK-V03-005': { left: -83.45679012345681, top: 172.09876543209884 },
+  'ORIGINAL-SHOP-1': { left: 274.35802469135797, top: 405.4320987654321 },
+  'ORIGINAL-SHOP-2': { left: 544.962962962963, top: 433.90123456790104, scale: 0.334 },
+  'ORIGINAL-SHOP-3': { left: 923.6049382716055, top: 405.19753086419746 },
+  'ORIGINAL-SHOP-4': { left: 1709.5308641975307, top: 402.2592592592591 },
+  'ORIGINAL-SHOP-5': { left: 2036.1851851851852, top: 415.49382716049365 },
+  'ORIGINAL-SHOP-6': { left: 2383.358024691358, top: 417.96296296296316, scale: 0.333 },
+  'SAK-V03-021': { left: -1.1368683772161603e-13, top: 640.0000000000001 },
+  'SAK-V03-022': { left: 2237.333333333332, top: 643.7037037037037 },
+});
 
 /** U01-only temporary layout editor. All positions and exports remain in source-canvas pixels. */
 export class U01SakuraLayoutEditor {
@@ -99,15 +113,18 @@ export class U01SakuraLayoutEditor {
       (bandOrder[a.layer] ?? 3) - (bandOrder[b.layer] ?? 3) || a.order - b.order);
     const addEntries = (layers: string[]): void => {
       for(const entry of entries.filter(item => layers.includes(item.layer))) {
-        const item: Item={instanceId:entry.instanceId,prototypeId:entry.assetId,name:entry.name,left:entry.x,top:entry.y,width:entry.width,height:entry.height,scale:1,mirror:entry.mirror,motion:entry.motion,order:this.items.length,node:new Node(entry.name)};
+        const override=U01_INITIAL_LAYOUT_OVERRIDES[entry.instanceId];
+        const item: Item={instanceId:entry.instanceId,prototypeId:entry.assetId,name:entry.name,left:override?.left??entry.x,top:override?.top??entry.y,width:entry.width,height:entry.height,scale:override?.scale??1,mirror:entry.mirror,motion:entry.motion,order:this.items.length,node:new Node(entry.name)};
         this.makeItemNode(item); this.items.push(item);
       }
     };
     addEntries(['L01_Sky','L02_Mountains','L03_Ground']);
     const shops=(this.gallery as any).shopPrefabs as any[];
     for(let i=0;i<6;i++) {
-      const [left,top]=SHOP_POSITIONS[i];
-      const item:Item={instanceId:`ORIGINAL-SHOP-${i+1}`,prototypeId:'ORIGINAL-SHOP',name:`原店参考${String(i+1).padStart(2,'0')} ${SHOP_NAMES[i]}`,left,top,width:1024,height:1024,scale:0.34,mirror:false,motion:'static',order:this.items.length+i*0.001,node:new Node(`原店参考${i+1}`),shopIndex:i};
+      const instanceId=`ORIGINAL-SHOP-${i+1}`;
+      const [defaultLeft,defaultTop]=SHOP_POSITIONS[i];
+      const override=U01_INITIAL_LAYOUT_OVERRIDES[instanceId];
+      const item:Item={instanceId,prototypeId:'ORIGINAL-SHOP',name:`原店参考${String(i+1).padStart(2,'0')} ${SHOP_NAMES[i]}`,left:override?.left??defaultLeft,top:override?.top??defaultTop,width:1024,height:1024,scale:override?.scale??0.34,mirror:false,motion:'static',order:this.items.length+i*0.001,node:new Node(`原店参考${i+1}`),shopIndex:i};
       const prefab=shops?.[i]; if(prefab){const instance=instantiate(prefab); item.node=instance; this.canvas.addChild(instance);}
       this.items.push(item);
     }
