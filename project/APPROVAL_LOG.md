@@ -738,3 +738,11 @@ Master已内部AUTO接受U05 v0.3运行Tech只读评审Task DONE，依据三Requ
 - 后续接入运行版 `v0.1-r6` 已独立送审：`tasks/EXAMPLE-INTEGRATION-CLIENT-20261016/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW/decided_at:null`，直接绑定Master `USER_REVIEW_PACKET.md` 与 `RUNTIME_IDENTITY.json` 21项身份；Master Review已通过，但用户尚未决定。Tech本轮内部支持经Master接受 `DONE/PROFESSIONAL_REVIEW`，不代替此用户审批。
 - Producer FLOW经Master `FLOW_MASTER_ACCEPTANCE.json` 内部接受 `DONE/PROFESSIONAL_REVIEW`；该内部状态同样不改变Client `USER_REVIEW`。
 <!-- EXAMPLE-INTEGRATION-20261016 END -->
+
+<!-- MINIGAME-ART-OPT-20261016 START -->
+## 2026-10-16｜小游戏美术优化审批边界
+
+- 用户最新PLEASE IMPLEMENT THIS PLAN授权执行总体流程，记录`deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/USER_AUTHORIZATION.json`。
+- 本轮具体Art/Tech/UI/VFX专业方案尚未完成和Review，所有本批审批DRAFT、decided_at=null；当前为模型BLOCKED，不存在可送审的精确资源制作包。
+- 不把总体授权、静态盘点、未来计划路径或既有图片批准冒充新方案Gate1/新切片Gate2；原任务审批均保持。
+<!-- MINIGAME-ART-OPT-20261016 END -->

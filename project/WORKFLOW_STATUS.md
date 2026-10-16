@@ -1428,3 +1428,12 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 最终r6：Client四Required与三条原文验收PASS，Master `MASTER_REVIEW.json` APPROVED；`RUNTIME_IDENTITY.json` 21/21路径与SHA复算一致，`USER_REVIEW_PACKET.md` 已冻结送审，Task `USER_REVIEW`，审批 `USER_REVIEW/decided_at:null`。Tech两Required、专业Review与Master `TECH_MASTER_ACCEPTANCE.json` 齐，内部Task `DONE`、审批 `PROFESSIONAL_REVIEW`。FLOW三Required及复盘齐，Task `REVIEW` 待Master内部接受。历史r3/r4眼睛差分框仅变化像素，r6实际99×54与实图通过；本轮未重复完整U05业务回归或目标机测试。旧运行版审批不变。
 - Master `FLOW_MASTER_ACCEPTANCE.json` 已接受FLOW三Required和原文验收、continuity与复盘；FLOW `REVIEW→DONE`、内部审批 `PROFESSIONAL_REVIEW`。最终本线Client仍为 `USER_REVIEW`，Tech/FLOW `DONE`，无空挂READY/IN_PROGRESS。
 <!-- EXAMPLE-INTEGRATION-20261016 END -->
+
+<!-- MINIGAME-ART-OPT-20261016 START -->
+## 2026-10-16｜小游戏美术整体评估与优化：指定模型阻塞
+
+- Master已冻结当前268PNG/UUID/源与最新栏杆Web构建，提交[实际评估](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/CURRENT_ASSESSMENT.md)、[逐张清单](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/ASSET_INVENTORY.md)和[阶段门禁](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/PHASE_DEPENDENCIES.md)。本轮零图片制作、零客户端修改。
+- Art/Tech/Producer的gpt-6-sol low调度分别2/3/2次均容量不足，无专业首产；UI/VFX未启动。父及五专业/流程Task均BLOCKED，审批DRAFT，不送USER_REVIEW。证据[调度阻塞](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/DISPATCH_BLOCK.json)。
+- 用户已授权整体计划；具体方案与未来切片没有获批。模型临时替换问题已询问，未答复，不擅自更换。
+- Master仅按本批Task故障应急授权登记事实，Producer监督/正式复盘尚未完成；[复盘草记](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/WORK_RETROSPECTIVE_DRAFT.md)。Continuity：本批无空挂READY/IN_PROGRESS，停止点是真实模型阻塞，恢复后继续至具体方案用户门禁。
+<!-- MINIGAME-ART-OPT-20261016 END -->

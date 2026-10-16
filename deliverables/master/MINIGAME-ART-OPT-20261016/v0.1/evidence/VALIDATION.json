@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-16T15:54:21+08:00",
+  "result": "PASS",
+  "scope": "仅本轮已产主控审计和故障登记的结构/身份校验；不是整体任务验收或专业Review通过",
+  "checks": [
+    {
+      "check": "任务/审批/主控交付结构",
+      "result": "PASS",
+      "method": "本地校验当前schema使用的type/required/enum/minLength/minItems/items/properties/additionalProperties；无第三方安装"
+    },
+    {
+      "check": "本轮前后assets/settings/profiles/package源身份不变",
+      "result": "PASS",
+      "checked_files": 687,
+      "changed_paths": []
+    },
+    {
+      "check": "268PNG清单汇总、尺寸与10组重复身份",
+      "result": "PASS",
+      "count": 268,
+      "duplicate_groups": 10
+    },
+    {
+      "check": "主控验收原文同序及已声明实际产物存在",
+      "result": "PASS"
+    },
+    {
+      "check": "完整优化/专业方案Review/运行与平台验收",
+      "result": "NOT_TESTED",
+      "reason": "指定模型容量不足；未改图片或代码，未实施后续阶段"
+    }
+  ],
+  "errors": []
+}
