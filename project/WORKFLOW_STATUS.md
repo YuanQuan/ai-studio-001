@@ -1408,3 +1408,23 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - 最终r2：Master `BROWSER_VERIFICATION.json` 对8884的720×1280布局画面PASS，三张截图均为r2，浏览器日志空；Client四Required／两验收原文同序PASS、Master Review APPROVED。Producer复算 `IDENTITY.json` 五项SHA全匹配，清单SHA `c41f63a8bb3b2ce4f13d40dc2769338642b42e391571715bd6adebb5e27d04c5`；Client Task `IN_PROGRESS→REVIEW→USER_REVIEW`，新布局版待用户决定。FLOW三Required/一验收PASS，Task `IN_PROGRESS→REVIEW` 待Master接受；最近复盘 `WR-20261016-U05-CUSTOMER-LAYOUT-001`。仅核布局，未重复上轮完整业务回归；无QA、无新图。Continuity无本线空挂READY/IN_PROGRESS。
 - Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`、内部Artifact `PROFESSIONAL_REVIEW`；Client准确布局r2仍 `USER_REVIEW`、用户决定为空，旧两审批保持。Continuity无空挂任务。
 <!-- U05-CUSTOMER-LAYOUT-20261016 END -->
+
+<!-- EXAMPLE-INTEGRATION-20261016 START -->
+## 2026-10-16｜获批示例切片接入与眼睛循环
+
+- 用户明确批准 U05 顾客布局 `v0.1-r2` 与 Art 桥/街面/眼睛具体切片 `v0.1`；两份准确审批已转 `USER_APPROVED`，对应旧 Task `DONE`。授权见 `deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/USER_AUTHORIZATION.json`；用户消息精确发送时间未知。原 `EXAMPLE-REVISION-CLIENT-20261015` 完整运行版审批保持，不能由本次批准代答。
+- Master已建立 Client、Tech、FLOW 三份独立接入 Task。Producer首份 `FLOW_REPORT.md` 实存、FLOW `IN_PROGRESS`；Client/Tech首Required待核暂 `READY`。五张获批PNG的工程实际路径/UUID、四秒眼睛循环、构建与HTTP/IAB待接入后实证；接入版仍需独立用户审核。单元示例无QA、无新生图。
+- Client首份 Required `deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/FEATURE_BRIEF.md` mtime09:04:45+08:00实存，Task `READY→IN_PROGRESS`。Brief定义暗底替换、亮眼子层、双桥身清理、左右街面母图/镜像与基础导出隔离；具体PNG导入/UUID及运行结论待实证。
+- 五张获批新PNG现已复制到 `apps/client/assets/resources/sakura_v03/`，Producer逐字节与Art v0.1 `exports/` 五件比对全匹配；此刻对应 `.meta` 尚未实存，真实Creator UUID与正式导入仍待，不能把文件复制记为接入完成。
+- Creator现已为五张新PNG生成对应 `.meta`；Producer逐件读取真实主UUID且再次核PNG字节5/5与Art源相同。Client正式接入清单及最终r2构建仍在写，资源登记待与Owner manifest交叉核对后冻结。
+- Client `ASSET_UUID_MANIFEST.json` 已实存，Producer逐5项核Art/工程PNG SHA、字节与Creator `.meta` 主UUID均一致，真实路径与UUID已写资源交接本线marker。`BUILD_MANIFEST.json` 记录TypeScript0、Creator3.8.8隔离构建exit36/Finished，8885 HTTP预览；Master实际IAB仍待，不提前判接入版运行通过。
+- Master r2实际浏览器导出发现三处运行 `path` 仍指旧图，失败证据 `deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-r2-failed-export.json`。新PNG字节/UUID导入核对仍有效，但资源运行引用未过；Client已定点改path，r3构建与重验中，r2不得作为最终送审身份。
+- Client `BUILD_MANIFEST.json` 已更新r3：TypeScript0、Creator3.8.8构建exit36/Finished、8886新预览；同文件保留r2 `FAIL_RUNTIME_ASSET_PATH`。r3实际IAB导出与画面待Master复核，不以成功构建代替接入验收。
+- r3内置浏览器定时眼睛截图差异仅34×34，未达到来源99×54比例；Client记录 `FAIL_EYE_OVERLAY_DIMENSIONS` 并调整SpriteFrame赋值后再设UITransform尺寸。r4 TypeScript0、Creator3.8.8构建exit36/Finished、781输出与8886预览已实存；r2路径和r3尺寸失败均留史，r4实际画面仍待Master核。
+- r4新端口眼睛差分仍呈近方形，尚未证明源99×54显示比例；Client未把它判通过。后续r5/r6为一次性诊断日志构建，r6 TypeScript0、Creator exit36/Finished、781输出、8889预览；Master r6实际日志显示overlay UITransform 99×54、父节点1536×720、SpriteFrame originalSize 99×54，但图像差分为何近方形仍待归因，不能以节点尺寸代替视觉通过。
+- Client `EYE_PIXEL_DIFF_INVESTIGATION.md` 澄清：34×34差分框只量两时点变化像素，单独不足以证明overlay尺寸失败；r6实际日志中配置与首帧UITransform均99×54、scale1，SpriteFrame originalSize99×54。此前r3/r4尺寸疑点保留调查历史，最终视觉结论仍待Master实际画面复核。
+- Master `IAB_VERIFICATION.json` 已记r6实际Web 720×1280 PASS：U01五新SpriteFrame UUID真实加载、初始/重置/重入55项完整JSON一致（原53几何不变+2街面）；U00手动镜头两侧新桥/镜像街面与遮挡、仅双眼局部明暗变化；U05已批布局保留，浏览器warning/error空。双眼4秒由实现/数值补证、目标设备性能和完整奶茶业务回归未测。Client/Tech最终Required与同版Review尚待，不提前USER_REVIEW。
+- Tech `REVIEW.json` 首Required mtime09:37:49+08:00、`DELIVERABLE.json` 两Required实存，Task `READY→IN_PROGRESS→REVIEW`；一条Task验收原文同序PASS，专业Review APPROVED。技术结论支持r6资源/UUID/构建/IAB，未测逐帧周期、far逐项镜像编辑、目标机与完整U05业务回归；待Master接受内部技术支持，不代替新接入版用户批准。
+- 最终r6：Client四Required与三条原文验收PASS，Master `MASTER_REVIEW.json` APPROVED；`RUNTIME_IDENTITY.json` 21/21路径与SHA复算一致，`USER_REVIEW_PACKET.md` 已冻结送审，Task `USER_REVIEW`，审批 `USER_REVIEW/decided_at:null`。Tech两Required、专业Review与Master `TECH_MASTER_ACCEPTANCE.json` 齐，内部Task `DONE`、审批 `PROFESSIONAL_REVIEW`。FLOW三Required及复盘齐，Task `REVIEW` 待Master内部接受。历史r3/r4眼睛差分框仅变化像素，r6实际99×54与实图通过；本轮未重复完整U05业务回归或目标机测试。旧运行版审批不变。
+- Master `FLOW_MASTER_ACCEPTANCE.json` 已接受FLOW三Required和原文验收、continuity与复盘；FLOW `REVIEW→DONE`、内部审批 `PROFESSIONAL_REVIEW`。最终本线Client仍为 `USER_REVIEW`，Tech/FLOW `DONE`，无空挂READY/IN_PROGRESS。
+<!-- EXAMPLE-INTEGRATION-20261016 END -->

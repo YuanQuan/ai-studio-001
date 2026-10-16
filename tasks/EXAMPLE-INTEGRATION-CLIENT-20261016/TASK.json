@@ -1,0 +1,31 @@
+{
+  "id": "EXAMPLE-INTEGRATION-CLIENT-20261016",
+  "title": "获批示例切片接入与眼睛循环 CLIENT",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "将用户批准的桥、镜像街面和骷髅眼睛切片接入共用示例，完成真实运行核验至用户审阅。",
+  "inputs": [
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/CUT_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "批准的5张唯一PNG按原字节导入，更新实际UUID与布局/镜像引用；桥前栏杆遮挡正确。",
+    "眼睛两眼同步4秒平滑循环、暗态微光，跟随远景镜像缩放，其余背景静止；U01导出重置重入不受瞬态影响。",
+    "Creator3.8.8导入构建及实际HTTP/IAB验证，共用示例和已批准U05布局保留。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派。Client仅相关apps/client代码、批准PNG/meta和自身交付；Tech只自身交付；Producer可本线Task及项目状态/审批/资源登记/复盘/dashboard独立marker。",
+    "禁止改变旧批准记录、删除旧图片、修改无关差异；无QA、无新生图、无Git动作给子Agent。"
+  ]
+}

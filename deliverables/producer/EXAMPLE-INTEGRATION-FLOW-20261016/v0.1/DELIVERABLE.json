@@ -1,0 +1,28 @@
+{
+  "task_id": "EXAMPLE-INTEGRATION-FLOW-20261016",
+  "owner": "producer",
+  "summary": "准确记录两项既有用户批准、五张新图真实路径与UUID、r2失败和r6运行版送审身份；流程复盘与连续执行检查完成。",
+  "artifacts": [
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "project/dashboard/index.html"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确记录顾客布局及Art Gate2批准；本次接入的版本、状态、证据与复盘持续可追溯，保护既有差异。",
+      "result": "PASS",
+      "evidence": "两份旧ARTIFACT_APPROVAL准确版本USER_APPROVED、旧Task DONE；新Client v0.1-r6 USER_REVIEW与21项SHA身份、Tech内部DONE、五张PNG真实UUID登记及FLOW_REPORT/WORK_RETROSPECTIVE均实存。共享文件仅本线独立marker。"
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "新接入运行版仍待用户审核；本轮无QA，未重复完整U05业务回归或目标设备性能测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

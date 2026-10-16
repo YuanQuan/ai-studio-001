@@ -1,0 +1,28 @@
+{
+  "id": "EXAMPLE-INTEGRATION-FLOW-20261016",
+  "title": "获批示例切片接入与眼睛循环 FLOW",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": null,
+  "objective": "将用户批准的桥、镜像街面和骷髅眼睛切片接入共用示例，完成真实运行核验至用户审阅。",
+  "inputs": [
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/CUT_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确记录顾客布局及Art Gate2批准；本次接入的版本、状态、证据与复盘持续可追溯，保护既有差异。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派。Client仅相关apps/client代码、批准PNG/meta和自身交付；Tech只自身交付；Producer可本线Task及项目状态/审批/资源登记/复盘/dashboard独立marker。",
+    "禁止改变旧批准记录、删除旧图片、修改无关差异；无QA、无新生图、无Git动作给子Agent。"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "result": "FAIL",
+  "reason": "运行实际SpriteFrame仍旧UUID，proto.path未换新文件，静态登记正确不能替代实际接入",
+  "observed": [
+    {
+      "assetId": "tex_sakura_rr_far_l",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+      "imageUuid": "d37c4dd2-997c-41ca-b297-c6f3025e7c33",
+      "spriteFrameUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@f9941"
+    },
+    {
+      "assetId": "tex_sakura_rr_bridge_body_l",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l.png",
+      "imageUuid": "f9728158-941b-4856-ab10-c2693bc98ba0",
+      "spriteFrameUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@f9941"
+    },
+    {
+      "assetId": "tex_sakura_rr_bridge_body_r",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r.png",
+      "imageUuid": "82838513-3eb1-4bbe-ab6d-610a0ca59a34",
+      "spriteFrameUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@f9941"
+    }
+  ],
+  "followup": "更正3条proto.path并构建r3再核"
+}

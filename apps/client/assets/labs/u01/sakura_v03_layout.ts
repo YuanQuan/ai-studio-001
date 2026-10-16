@@ -1,6 +1,6 @@
 // Generated from user-approved Art v0.5 CUT_MANIFEST.json; update only with a new approved layout.
 export const SAKURA_V03_LAYOUT = {
-  "sourceVersion": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5",
+  "sourceVersion": "SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5 + EXAMPLE-REVISION-ART-20261015/v0.1",
   "canvas": {
     "width": 3072,
     "height": 1024,
@@ -10,14 +10,15 @@ export const SAKURA_V03_LAYOUT = {
   "prototypes": [
     {
       "id": "tex_sakura_rr_far_l",
-      "imageUuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
-      "textureUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@6c48a",
-      "spriteFrameUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@f9941",
-      "path": "tex_sakura_rr_far_l.png",
+      "path": "tex_sakura_rr_far_l_eye_dark_base.png",
       "width": 1536,
       "height": 720,
-      "sha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_far_l.png"
+      "sha256": "ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940",
+      "artPath": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_dark_base.png",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_dark_base.png",
+      "imageUuid": "d37c4dd2-997c-41ca-b297-c6f3025e7c33",
+      "textureUuid": "d37c4dd2-997c-41ca-b297-c6f3025e7c33@6c48a",
+      "spriteFrameUuid": "d37c4dd2-997c-41ca-b297-c6f3025e7c33@f9941"
     },
     {
       "id": "tex_sakura_rr_far_r",
@@ -197,25 +198,27 @@ export const SAKURA_V03_LAYOUT = {
     },
     {
       "id": "tex_sakura_rr_bridge_body_l",
-      "imageUuid": "232fc449-73e5-4622-bd81-d97eeda73f21",
-      "textureUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@6c48a",
-      "spriteFrameUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@f9941",
-      "path": "tex_sakura_rr_bridge_body_l.png",
+      "path": "tex_sakura_rr_bridge_body_l_clean.png",
       "width": 1536,
       "height": 270,
-      "sha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_l.png"
+      "sha256": "1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b",
+      "artPath": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_l_clean.png",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l_clean.png",
+      "imageUuid": "f9728158-941b-4856-ab10-c2693bc98ba0",
+      "textureUuid": "f9728158-941b-4856-ab10-c2693bc98ba0@6c48a",
+      "spriteFrameUuid": "f9728158-941b-4856-ab10-c2693bc98ba0@f9941"
     },
     {
       "id": "tex_sakura_rr_bridge_body_r",
-      "imageUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8",
-      "textureUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@6c48a",
-      "spriteFrameUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@f9941",
-      "path": "tex_sakura_rr_bridge_body_r.png",
+      "path": "tex_sakura_rr_bridge_body_r_clean.png",
       "width": 1536,
       "height": 271,
-      "sha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_body_r.png"
+      "sha256": "cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82",
+      "artPath": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_r_clean.png",
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r_clean.png",
+      "imageUuid": "82838513-3eb1-4bbe-ab6d-610a0ca59a34",
+      "textureUuid": "82838513-3eb1-4bbe-ab6d-610a0ca59a34@6c48a",
+      "spriteFrameUuid": "82838513-3eb1-4bbe-ab6d-610a0ca59a34@f9941"
     },
     {
       "id": "tex_sakura_rr_bridge_front_l",
@@ -238,6 +241,28 @@ export const SAKURA_V03_LAYOUT = {
       "height": 177,
       "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
       "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png"
+    },
+    {
+      "id": "tex_sakura_rr_bridge_street_master",
+      "path": "tex_sakura_rr_bridge_street_master.png",
+      "width": 1172,
+      "height": 270,
+      "sha256": "2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8",
+      "artPath": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_street_master.png",
+      "imageUuid": "f7604c7c-e9aa-4551-8152-7fc26c82d40a",
+      "textureUuid": "f7604c7c-e9aa-4551-8152-7fc26c82d40a@6c48a",
+      "spriteFrameUuid": "f7604c7c-e9aa-4551-8152-7fc26c82d40a@f9941"
+    },
+    {
+      "id": "tex_sakura_rr_far_l_eye_glow",
+      "path": "tex_sakura_rr_far_l_eye_glow.png",
+      "width": 99,
+      "height": 54,
+      "sha256": "76faa9de3e47de8188eefdb28d8cd97bf4f57dbea02d85cf55c3a7e451fdb02b",
+      "artPath": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_far_l_eye_glow.png",
+      "imageUuid": "102e97c1-0e8b-4068-9354-1747e2287596",
+      "textureUuid": "102e97c1-0e8b-4068-9354-1747e2287596@6c48a",
+      "spriteFrameUuid": "102e97c1-0e8b-4068-9354-1747e2287596@f9941"
     }
   ],
   "instances": [
@@ -825,6 +850,32 @@ export const SAKURA_V03_LAYOUT = {
       "motion": "static",
       "order": 44,
       "layer": "L05_WaterGrass"
+    },
+    {
+      "instanceId": "BRIDGE-STREET-MASTER-L",
+      "assetId": "tex_sakura_rr_bridge_street_master",
+      "name": "ApprovedBridgeStreetLeft",
+      "x": 0,
+      "y": 598,
+      "width": 1172,
+      "height": 270,
+      "mirror": false,
+      "motion": "static",
+      "order": 14.5,
+      "layer": "L03_Ground"
+    },
+    {
+      "instanceId": "BRIDGE-STREET-MASTER-R",
+      "assetId": "tex_sakura_rr_bridge_street_master",
+      "name": "ApprovedBridgeStreetRightMirrored",
+      "x": 1900,
+      "y": 598,
+      "width": 1172,
+      "height": 270,
+      "mirror": true,
+      "motion": "static",
+      "order": 15.5,
+      "layer": "L03_Ground"
     }
   ]
 } as const;

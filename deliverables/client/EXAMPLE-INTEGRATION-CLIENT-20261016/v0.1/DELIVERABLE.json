@@ -1,0 +1,52 @@
+{
+  "task_id": "EXAMPLE-INTEGRATION-CLIENT-20261016",
+  "owner": "client",
+  "summary": "已接入用户批准的五张 Gate2 PNG，修正实际资源路径并完成 Creator 3.8.8 r6 构建与 720×1280 IAB；当前提交用户审阅。",
+  "artifacts": [
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/ASSET_UUID_MANIFEST.json",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/R2_RUNTIME_FAILURE.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/EYE_PIXEL_DIFF_INVESTIGATION.md",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-eye-diagnostics.json",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-initial.json",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-reset.json",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-reentry.json",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-left.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-bridge-a.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-bridge-b.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-right-bridge.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-final.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u05-final.png",
+    "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-browser-errors.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "批准的5张唯一PNG按原字节导入，更新实际UUID与布局/镜像引用；桥前栏杆遮挡正确。",
+      "result": "PASS",
+      "evidence": "evidence/ASSET_UUID_MANIFEST.json、evidence/BUILD_MANIFEST.json；Master实际运行核对 UUID、右街负X镜像及桥前栏杆层序，截图 u00-left.png、u00-bridge-a.png、u00-bridge-b.png、u00-right-bridge.png。"
+    },
+    {
+      "criterion": "眼睛两眼同步4秒平滑循环、暗态微光，跟随远景镜像缩放，其余背景静止；U01导出重置重入不受瞬态影响。",
+      "result": "PASS",
+      "evidence": "实现按4秒余弦透明度循环；Master r6固定镜头核实背景其余区域静止且双眼区域变化，实际日志确认overlay 99×54、父层1536×720、SpriteFrame身份正确，见 r6-eye-diagnostics.json、r6-u00-eyes-diff.json。U01初始/重置/重入55项JSON SHA-256完全一致，见 BUILD_MANIFEST.json。镜像/缩放继承由父子变换结构核验；本轮未逐项手动编辑far实例。"
+    },
+    {
+      "criterion": "Creator3.8.8导入构建及实际HTTP/IAB验证，共用示例和已批准U05布局保留。",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8 r6构建exit 36，成功标记、配置、源hash和产物hash见 evidence/BUILD_MANIFEST.json；Master在 http://127.0.0.1:8889/ 实际验证U00/U01/U05，warning/error为空，见 IAB_VERIFICATION.json、u01-final.png、u05-final.png。"
+    }
+  ],
+  "assumptions": [
+    "本交付只接入已获批准 Art Gate2 v0.1 PNG；没有生成额外美术资源。"
+  ],
+  "risks": [
+    "目标设备性能及逐帧精确周期录像未测；4秒周期由实现和数值核验补充。",
+    "本轮未重复上轮完整奶茶业务回归。",
+    "本轮未逐项手动操作far实例镜像/缩放；父子变换继承通过运行结构与代码核验。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "EXAMPLE-INTEGRATION-TECH-20261016",
+  "owner": "tech_lead",
+  "summary": "核对获批五张切片的实际字节和UUID、镜像/眼睛接入、r6 Creator构建及Codex内置浏览器运行；技术Review通过。",
+  "artifacts": [
+    "deliverables/tech_lead/EXAMPLE-INTEGRATION-TECH-20261016/v0.1/REVIEW.json",
+    "deliverables/tech_lead/EXAMPLE-INTEGRATION-TECH-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "核对批准资源字节、实际UUID、镜像坐标与动画实现，确认构建身份及实际浏览器证据。",
+      "result": "PASS",
+      "evidence": "ASSET_UUID_MANIFEST.json 与 Art CUT_MANIFEST 五图哈希、现行PNG/.meta及r6源哈希一致；r3/r6浏览器导出实际新帧UUID与新文件路径，右街复用同图负X镜像；r6 BUILD_MANIFEST exit36 Finished/781文件/本地输出哈希吻合。Master IAB_VERIFICATION.json在8889实测左右桥街、遮挡、眼睛变化、U01初始/重置/重入完全一致及U05布局保留；r6-eye-diagnostics.json确认99×54节点尺寸和批准帧身份。"
+    }
+  ],
+  "assumptions": [
+    "本轮为本游戏单元示例接入；Art Gate2授权路径见USER_AUTHORIZATION.json。"
+  ],
+  "risks": [
+    "4秒周期未逐帧录像，far镜像缩放继承未逐项手动编辑；依据实现公式与父子节点实值核定接口。",
+    "目标设备性能及小游戏平台专项NOT_TESTED；本轮未重复上一轮U05完整业务回归。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -785,3 +785,25 @@ v0.1已被用户退回；v0.2曾获U01示例资源使用批准并实际导入。
 
 四桥必须依批准`CUT_MANIFEST.json`位置及body→六店游客→front→岸链层序；退役后Creator 3.8.8构建、六核心HTTP200/SHA及最终内置浏览器复载已分别核过，证据为Client `BUILD_MANIFEST.json`、Master `FINAL_HTTP_IDENTITY.json` / `FINAL_IAB_VERIFICATION.json`；旧桥PNG/meta在退役前运行PASS及零活动引用核后备份移除。Client准确v0.1运行效果已由Master `RUNTIME_IDENTITY.json`绑定17项现行文件SHA，现行USER_REVIEW待用户决定；Tech内部支持DONE。U05并发资产不属本表改动范围。
 <!-- U00-U01-BRIDGE-V05-FLOW-20261014 ASSET_REGISTRY END -->
+
+<!-- EXAMPLE-INTEGRATION-20261016 START -->
+## 2026-10-16｜获批樱花示例五张新切片接入登记
+
+用户已批准 Art `EXAMPLE-REVISION-ART-20261015/v0.1` 具体切片 Gate2，身份见原 `CUT_MANIFEST.json` 与本项目登记的五张唯一 PNG。Client 正在按原字节接入；以下实际工程路径、导入UUID和镜像/眼睛实例关系须待 Creator 真正导入后据 Client 清单填写，未核前均为**计划**，不虚构 UUID。获批资源版本不等于接入运行版获批；原资产登记历史保留。
+
+过程节点：五张 PNG 已复制到计划目录 `apps/client/assets/resources/sakura_v03/`，Producer逐字节与Art v0.1源图5/5匹配；此时对应 `.meta` 尚未实存，UUID仍待Creator实际导入后核录，不能凭复制确认正式接入。
+
+Creator 导入后，Client `deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/ASSET_UUID_MANIFEST.json` 已登记五图真实路径与 UUID；Producer逐件复核Art源/工程PNG字节与SHA、工程 `.meta` 主UUID 5/5一致，清单SHA-256 `24979cda4b6f81f51b553e4ce74776b86b1aaefcf82d89a949259ec3d4ecb79b`。具体映射如下；接入后的运行版仍待验证及用户决定。
+
+| 稳定资产ID | Art v0.1 文件 | Client实际文件 | 图像主UUID | SHA-256 |
+|---|---|---|---|---|
+| `BRIDGE_BODY_L_CLEAN` | `exports/tex_sakura_rr_bridge_body_l_clean.png` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l_clean.png` | `f9728158-941b-4856-ab10-c2693bc98ba0` | `1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b` |
+| `BRIDGE_BODY_R_CLEAN` | `exports/tex_sakura_rr_bridge_body_r_clean.png` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r_clean.png` | `82838513-3eb1-4bbe-ab6d-610a0ca59a34` | `cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82` |
+| `BRIDGE_STREET_MASTER_L/R` | `exports/tex_sakura_rr_bridge_street_master.png` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_street_master.png` | `f7604c7c-e9aa-4551-8152-7fc26c82d40a` | `2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8` |
+| `FAR_L_EYE_DARK_BASE` | `exports/tex_sakura_rr_far_l_eye_dark_base.png` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_dark_base.png` | `d37c4dd2-997c-41ca-b297-c6f3025e7c33` | `ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940` |
+| `FAR_L_EYE_GLOW` | `exports/tex_sakura_rr_far_l_eye_glow.png` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_glow.png` | `102e97c1-0e8b-4068-9354-1747e2287596` | `76faa9de3e47de8188eefdb28d8cd97bf4f57dbea02d85cf55c3a7e451fdb02b` |
+
+表中 Art 相对路径以 `deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/` 为前缀；Texture2D/SpriteFrame 子UUID、实例镜像坐标与眼睛父子关系以 Client 同版清单为准。未删除或覆盖既有旧图。
+
+最终运行接入实测见Master `EXAMPLE-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json`：r6五新SpriteFrame UUID、桥/镜像街面与眼睛均在实际Web核对；新运行版准确 `v0.1-r6` 已独立进入 `USER_REVIEW`，用户尚未批准。原Art v0.1切片清单及文件保持不变。
+<!-- EXAMPLE-INTEGRATION-20261016 END -->

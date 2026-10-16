@@ -728,3 +728,13 @@ Master已内部AUTO接受U05 v0.3运行Tech只读评审Task DONE，依据三Requ
 - 本次布局准确 `v0.1-r2`：`tasks/U05-CUSTOMER-LAYOUT-CLIENT-20261016/ARTIFACT_APPROVAL.json` 指Master `USER_REVIEW_PACKET.md`，状态 `USER_REVIEW`、`decided_at=null`；`IDENTITY.json` 五项SHA全匹配，清单SHA `c41f63a8bb3b2ce4f13d40dc2769338642b42e391571715bd6adebb5e27d04c5`。此审批不替代旧两项待审版本的用户决定。
 - FLOW内部支持：Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，`tasks/U05-CUSTOMER-LAYOUT-FLOW-20261016/ARTIFACT_APPROVAL.json` 仅记 `PROFESSIONAL_REVIEW`，Task DONE；不替代布局版用户批准。
 <!-- U05-CUSTOMER-LAYOUT-20261016 END -->
+
+<!-- EXAMPLE-INTEGRATION-20261016 START -->
+## 2026-10-16｜两个具体版本获批与接入版新门禁
+
+- U05布局 `v0.1-r2`：用户“好的继续吧”，`tasks/U05-CUSTOMER-LAYOUT-CLIENT-20261016/ARTIFACT_APPROVAL.json` 为 `USER_APPROVED`；原准确五文件身份保持，Task DONE。
+- Art切片Gate2 `v0.1`：用户就桥清理、街面镜像、眼睛四秒循环答“一起批准，继续接入”，`tasks/EXAMPLE-REVISION-ART-20261015/ARTIFACT_APPROVAL_GATE2.json` 为 `USER_APPROVED`；原送审包/ZIP/PSD身份保持，Task DONE。两项证据均在 `deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/USER_AUTHORIZATION.json`，消息精确时间未知。
+- 本次获批仅解锁具体切片接入；新接入运行版尚未完成、未送审或获用户批准。原 `EXAMPLE-REVISION-CLIENT-20261015` 运行版审批不改。
+- 后续接入运行版 `v0.1-r6` 已独立送审：`tasks/EXAMPLE-INTEGRATION-CLIENT-20261016/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW/decided_at:null`，直接绑定Master `USER_REVIEW_PACKET.md` 与 `RUNTIME_IDENTITY.json` 21项身份；Master Review已通过，但用户尚未决定。Tech本轮内部支持经Master接受 `DONE/PROFESSIONAL_REVIEW`，不代替此用户审批。
+- Producer FLOW经Master `FLOW_MASTER_ACCEPTANCE.json` 内部接受 `DONE/PROFESSIONAL_REVIEW`；该内部状态同样不改变Client `USER_REVIEW`。
+<!-- EXAMPLE-INTEGRATION-20261016 END -->

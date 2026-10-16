@@ -1,0 +1,37 @@
+{
+  "version": "v0.1-r6",
+  "url": "http://127.0.0.1:8889/",
+  "status": "PASS",
+  "viewport": [
+    720,
+    1280
+  ],
+  "u01": {
+    "real_loaded_uuids": "5张新图片实际SpriteFrame UUID与获批导入值匹配，u01-initial.json",
+    "reset_equal": true,
+    "reentry_equal": true,
+    "count": 55,
+    "geometry": "原53项几何保持，另新增2街面；眼光不作为可拖拽实例"
+  },
+  "u00": {
+    "manual_pan": "PASS",
+    "bridge_edges_and_mirror": "实际近景左右桥/街面检查，桥前栏杆/店铺层序正常，无原硬切水块",
+    "eyes": "双眼局部亮暗变化；代码4秒周期及实际99x54/frame身份诊断吻合",
+    "evidence": [
+      "u00-left.png",
+      "u00-bridge-a.png",
+      "u00-bridge-b.png",
+      "u00-right-bridge.png",
+      "r6-eye-diagnostics.json",
+      "r6-u00-eyes-diff.json"
+    ]
+  },
+  "u05": "实际进入/开始/顾客入场及已批缩小气泡/奶茶布局保留，u05-final.png",
+  "warnings_errors": [],
+  "limits": [
+    "本轮未重复上轮完整奶茶业务回归。",
+    "目标设备性能及逐帧精确周期录像未测；4秒周期由实现和数值核对补充。",
+    "far实例镜像缩放继承通过父子节点实现及代码核验，本轮未逐项手动编辑远景。"
+  ],
+  "investigation": "r2错误path已实测修复；r3/r4截图差分框不等于图层实际尺寸，r6配置/首帧日志均99x54。保留诊断日志各一次。"
+}

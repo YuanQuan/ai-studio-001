@@ -1,0 +1,196 @@
+{
+  "taskId": "EXAMPLE-INTEGRATION-CLIENT-20261016",
+  "revision": "v0.1-r6",
+  "creatorVersion": "3.8.8",
+  "target": "web-mobile",
+  "sourceHashes": {
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "3153795d853948ea3a97a98ba59608c5abdee9ad0b6cde926e682ae777f50bb8",
+    "apps/client/assets/labs/u01/sakura_user_layout.ts": "eca586da4dab87e0683c04b5ca18bebdeeab490085ab366343f7cc02cb417579",
+    "apps/client/assets/labs/u01/sakura_v03_environment.ts": "c79936e6a4c60e5df86309abc3d5d4a413cddffd80496652c28cde2d50e7b2b1",
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts": "50aa439e94cc5b9d624f391aee0e71293b1d3aefa3bcd9cc90a88b2f3056471e"
+  },
+  "approvedPngHashes": {
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l_clean.png": "1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r_clean.png": "cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_street_master.png": "2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_dark_base.png": "ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_glow.png": "76faa9de3e47de8188eefdb28d8cd97bf4f57dbea02d85cf55c3a7e451fdb02b"
+  },
+  "metaHashes": {
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l_clean.png.meta": "988bcf2e484fcfa557534fd1ba10ca9f7058595262b80305f4ef7c895c4c0ce0",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r_clean.png.meta": "873624459eebd8fd6fd27c5eeef7c00158955ee6fe2ffa9364222c294c226857",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_street_master.png.meta": "2f9a641d6d6be5a4109bc3da77f244fa5586947e138c842959970201f3c30d2d",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_dark_base.png.meta": "ee81263d30a84daa2d4e8f0e6f0735d036212cfe5d8345346d4a43794fab9052",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l_eye_glow.png.meta": "a154bf9350479017de7134752170803ceeb0b0d4a7c5a3f44ab4f7d7cba1defa"
+  },
+  "isolatedSourceHashes": {
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "3153795d853948ea3a97a98ba59608c5abdee9ad0b6cde926e682ae777f50bb8",
+    "apps/client/assets/labs/u01/sakura_user_layout.ts": "eca586da4dab87e0683c04b5ca18bebdeeab490085ab366343f7cc02cb417579",
+    "apps/client/assets/labs/u01/sakura_v03_environment.ts": "c79936e6a4c60e5df86309abc3d5d4a413cddffd80496652c28cde2d50e7b2b1",
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts": "50aa439e94cc5b9d624f391aee0e71293b1d3aefa3bcd9cc90a88b2f3056471e"
+  },
+  "formalAndIsolatedSourceMatch": true,
+  "typescript": {
+    "result": "PASS",
+    "command": "Creator bundled tsc -p apps/client/tsconfig.json --noEmit --skipLibCheck --target ES2021 --lib ES2021,DOM",
+    "exitCode": 0,
+    "log": "evidence/typescript-check.log"
+  },
+  "creatorBuild": {
+    "result": "PASS",
+    "taskName": "EXAMPLE-INTEGRATION-CLIENT-20261016-v0.1-r6",
+    "exitCode": 36,
+    "successMarker": "build Task (EXAMPLE-INTEGRATION-CLIENT-20261016-v0.1-r6) Finished in (4 s)ms",
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/example-integration-client-20261016-isolated-project --build configPath=/private/tmp/example-integration-client-20261016-isolated-project/build-unit-samples.json;platform=web-mobile",
+    "configPath": "/private/tmp/example-integration-client-20261016-isolated-project/build-unit-samples.json",
+    "configSha256": "b005ffaa41b9e74da50b35478d6b77ab1f62d44198f0987cb4346e3331f256a2",
+    "outputDirectory": "/private/tmp/example-integration-client-20261016-build-r6/example-integration-client-20261016-web-mobile-r6",
+    "outputFileCount": 781,
+    "stdout": "evidence/creator-build-r6-stdout.log",
+    "stderr": "evidence/creator-build-r6-stderr.log",
+    "fullLog": "evidence/creator-build-r6.log",
+    "permission": "Creator CLI launch used authorized execution escalation; no system security settings changed"
+  },
+  "httpPreview": {
+    "url": "http://127.0.0.1:8889/",
+    "bind": "127.0.0.1",
+    "port": 8889,
+    "server": "Python http.server",
+    "pid": 66675,
+    "sessionId": 6983,
+    "directory": "/private/tmp/example-integration-client-20261016-build-r6/example-integration-client-20261016-web-mobile-r6",
+    "state": "retained for Master diagnostic IAB"
+  },
+  "outputHashes": {
+    "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+    "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+    "assets/main/index.js": "8106b118ca80c99848aac0f6483e6530428786e84a1e0602facbaf6308563632",
+    "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+  },
+  "staticLayoutAssertions": {
+    "originalFrozenInstanceGeometryUnchanged": true,
+    "originalInstanceCount": 53,
+    "newTotalInstanceCount": 55,
+    "newInstanceIds": [
+      "BRIDGE-STREET-MASTER-L",
+      "BRIDGE-STREET-MASTER-R"
+    ],
+    "rightStreetUsesNegativeScaleX": true,
+    "bothStreetsRenderBeforeCorrespondingBridgeBodies": true,
+    "waterGroupBaselineEntriesUnchanged": true,
+    "eyeOpacityNotIncludedInPositionExport": true
+  },
+  "iab": {
+    "result": "PASS",
+    "url": "http://127.0.0.1:8889/",
+    "viewport": [
+      720,
+      1280
+    ],
+    "realSpriteFrameUuids": "PASS; five approved imported SpriteFrame UUIDs match actual U01 export (u01-initial.json)",
+    "u01": {
+      "instanceCount": 55,
+      "initialResetReentryExactMatch": true,
+      "sha256": {
+        "initial": "ae9f2597ecf9a22be0c5ff4869023a5fbc1fc10f17d71000c163263a3e4212d1",
+        "reset": "ae9f2597ecf9a22be0c5ff4869023a5fbc1fc10f17d71000c163263a3e4212d1",
+        "reentry": "ae9f2597ecf9a22be0c5ff4869023a5fbc1fc10f17d71000c163263a3e4212d1"
+      },
+      "original53GeometryUnchanged": true,
+      "eyeOverlayExcludedFromDraggableInstances": true
+    },
+    "u00": {
+      "bridgeStreetMirrorAndRailOcclusion": "PASS",
+      "eyes": "PASS; changes confined to eye region in fixed-view comparison",
+      "eyeDiagnostics": "PASS; configured and first update each reported 99x54 overlay, parent 1536x720, approved SpriteFrame UUID and originalSize"
+    },
+    "u05": "PASS; selection/start/customer entry and approved customer layout retained",
+    "warningsErrors": [],
+    "masterEvidence": [
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-initial.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-reset.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-reentry.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-left.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-bridge-a.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-bridge-b.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u00-right-bridge.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-eye-diagnostics.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-u00-eyes-diff.json",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u01-final.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/u05-final.png",
+      "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-browser-errors.json"
+    ],
+    "limits": [
+      "本轮未重复上轮完整奶茶业务回归。",
+      "目标设备性能与逐帧精确周期录像未测；4秒周期由实现和数值核验补充。",
+      "未逐项手动操作远景实例缩放/镜像；父子变换继承由运行结构与代码核验。"
+    ]
+  },
+  "targetDevicePerformance": "NOT_TESTED",
+  "runtimeAssetPathAssertion": {
+    "compiledBundleContainsNewPaths": true,
+    "expectedSpriteFrameUuids": {
+      "farL": "d37c4dd2-997c-41ca-b297-c6f3025e7c33@f9941",
+      "bridgeL": "f9728158-941b-4856-ab10-c2693bc98ba0@f9941",
+      "bridgeR": "82838513-3eb1-4bbe-ab6d-610a0ca59a34@f9941"
+    },
+    "r3EyeDimensionFailure": {
+      "result": "FAIL",
+      "observedPixelDiffBoundingBox": "34x34",
+      "expectedSourceRatio": "99x54",
+      "masterEvidence": "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r3-eyes-diff.json",
+      "fix": "Set UITransform size after assigning Sprite.spriteFrame; r4 compiled bundle preserves this order."
+    },
+    "r4RuntimeIabConfirmation": "PENDING_MASTER"
+  },
+  "previousBuilds": [
+    {
+      "revision": "v0.1-r2",
+      "result": "FAIL_RUNTIME_ASSET_PATH",
+      "creatorExitCode": 36,
+      "issue": "U00 export reported old SpriteFrame UUIDs for far_l and bridge left/right; prototypes retained old filenames in path, while resources.load consumes proto.path and ignores clientPath.",
+      "preservedLogs": [
+        "evidence/creator-build-r2-stdout.log",
+        "evidence/creator-build-r2-stderr.log",
+        "evidence/creator-build-r2.log"
+      ]
+    },
+    {
+      "revision": "v0.1-r3/r4",
+      "result": "PIXEL_DIFF_INVESTIGATED_NODE_SIZE_CONFIRMED_IN_R6",
+      "creatorExitCode": 36,
+      "issue": "Master observed square pixel-difference bounding boxes in timed screenshots. This was an investigation signal, not a direct UITransform measurement; r6 runtime logs confirm configured and first-update overlay contentSize 99x54 and correct SpriteFrame metadata.",
+      "masterEvidence": [
+        "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r3-eyes-0.png",
+        "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r3-eyes-1.png",
+        "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r3-eyes-2.png",
+        "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r3-eyes-diff.json",
+        "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-eye-diagnostics.json"
+      ]
+    }
+  ],
+  "runtimeDiagnostics": {
+    "logs": [
+      "SAKURA_V03_EYE_GLOW_CONFIGURED",
+      "SAKURA_V03_EYE_GLOW_FIRST_UPDATE"
+    ],
+    "fields": [
+      "overlay contentSize",
+      "overlay scale",
+      "parent contentSize",
+      "parent scale",
+      "SpriteFrame UUID",
+      "SpriteFrame rect",
+      "SpriteFrame originalSize",
+      "Sprite sizeMode",
+      "Sprite trim"
+    ],
+    "frequency": "once after attach per overlay and once at first driver update",
+    "noAlphaOrLayoutMutation": true,
+    "logsAreJsonStrings": true,
+    "result": "PASS",
+    "evidence": "deliverables/master/EXAMPLE-INTEGRATION-20261016/v0.1/evidence/r6-eye-diagnostics.json"
+  }
+}

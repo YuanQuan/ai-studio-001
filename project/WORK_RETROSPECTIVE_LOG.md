@@ -1210,3 +1210,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - r1订单画面通过后，选择页文字做一次定点微调并重构建r2；额外净耗时未知，无可比速度基线。建议Client下次气泡缩放首轮同时核订单与选择页，下一次U05界面修订复核。Continuity：Client到真实用户门禁、FLOW有实产待接受，无空挂READY/IN_PROGRESS。
 - Master `FLOW_MASTER_ACCEPTANCE.json` 已接受流程复盘与连续执行检查，FLOW内部支持DONE；Client准确r2布局版仍待用户决定。
 <!-- U05-CUSTOMER-LAYOUT-20261016 END -->
+
+<!-- EXAMPLE-INTEGRATION-20261016 START -->
+## WR-20261016-EXAMPLE-INTEGRATION-001｜获批切片接入版送审
+
+- 两项既有批准准确登记并结案；Client v0.1-r6四Required/三验收PASS、21项身份复算通过，现为独立`USER_REVIEW`；Tech内部Review获Master接受`DONE`，FLOW三Required送Master内部接受。证据与建议见 `deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md`。
+- Producer可核09:03:55至09:40:44+08:00跨节点36分49秒，含并行制作、构建、IAB及流程核录，非任何角色净制作；用户消息精确时间、各分段净耗未知。r2运行path旧图错误已定点修复；r3/r4眼差分框曾引尺寸疑点，r6节点与源帧99×54及实图通过，不能把差分框当最终尺寸失败。无速度基线，不归责。
+- 下次资源替换由Client首构建核浏览器真实path，Tech遇像素差分疑点并核节点与帧尺寸，Producer送审前复算准确版本身份；复核点分别为下一U01首导出、下一眼图诊断、下一送审包。Continuity：Client真实USER_REVIEW、Tech DONE、FLOW真实REVIEW，无本线空挂READY/IN_PROGRESS；新运行版用户决定待续，未重复完整U05业务回归。
+<!-- EXAMPLE-INTEGRATION-20261016 END -->

@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, resources, Sprite, SpriteFrame, UITransform } from 'cc';
+import { _decorator, Component, Node, resources, Sprite, SpriteFrame, UITransform, UIOpacity } from 'cc';
 import { SAKURA_V03_LAYOUT } from './sakura_v03_layout';
 import type { UserLayoutEntry } from './sakura_user_layout';
 import { deriveWaterGroups, recaptureWaterGroupPositions, sampleWaterGroupCenter, WaterEntry } from './sakura_water_motion_math';
@@ -7,6 +7,8 @@ const LAYERS = ['L01_Sky', 'L02_Mountains', 'L03_Ground', 'L04_WaterBridge', 'L0
 const { ccclass } = _decorator;
 const sourceWidth = SAKURA_V03_LAYOUT.canvas.width;
 const sourceHeight = SAKURA_V03_LAYOUT.canvas.height;
+const EYE_GLOW_RECT = { left: 1284, top: 250, width: 99, height: 54 };
+const EYE_GLOW_MIN_ALPHA = 48;
 const frameCache = new Map<string, SpriteFrame>();
 let loadPromise: Promise<Map<string, SpriteFrame>> | null = null;
 
@@ -38,15 +40,62 @@ interface MovingGroup {
   startElapsed: number;
 }
 
+/** Attach the approved eye patch as a child so edits, scale and mirroring follow the far layer. */
+export function attachSakuraV03EyeGlow(parent: Node, frame: SpriteFrame): UIOpacity {
+  const overlay = new Node('SAKURA_V03_FarLEyeGlow');
+  const transform = overlay.addComponent(UITransform);
+  const parentSize = parent.getComponent(UITransform)?.contentSize;
+  const parentWidth = parentSize?.width ?? sourceWidth / 2;
+  const parentHeight = parentSize?.height ?? 720;
+  const sprite = overlay.addComponent(Sprite);
+  sprite.sizeMode = Sprite.SizeMode.CUSTOM;
+  sprite.trim = false;
+  sprite.spriteFrame = frame;
+  transform.setContentSize(EYE_GLOW_RECT.width, EYE_GLOW_RECT.height);
+  overlay.setPosition(
+    EYE_GLOW_RECT.left + EYE_GLOW_RECT.width / 2 - parentWidth / 2,
+    parentHeight / 2 - (EYE_GLOW_RECT.top + EYE_GLOW_RECT.height / 2), 0,
+  );
+  parent.addChild(overlay);
+  const opacity = overlay.addComponent(UIOpacity);
+  opacity.opacity = 255;
+  console.info(`[SAKURA_V03_EYE_GLOW_CONFIGURED] ${JSON.stringify(eyeGlowDiagnosticSnapshot(overlay, parent, sprite))}`);
+  return opacity;
+}
+
+function eyeGlowDiagnosticSnapshot(overlay: Node, parent: Node, sprite: Sprite): Record<string, unknown> {
+  const overlaySize = overlay.getComponent(UITransform)?.contentSize;
+  const parentTransform = parent.getComponent(UITransform);
+  const parentSize = parentTransform?.contentSize;
+  const frame = sprite.spriteFrame;
+  return {
+    overlayContentSize: overlaySize ? { width: overlaySize.width, height: overlaySize.height } : null,
+    overlayScale: { x: overlay.scale.x, y: overlay.scale.y, z: overlay.scale.z },
+    parentContentSize: parentSize ? { width: parentSize.width, height: parentSize.height } : null,
+    parentScale: { x: parent.scale.x, y: parent.scale.y, z: parent.scale.z },
+    spriteFrame: frame ? {
+      uuid: frame.uuid,
+      rect: { x: frame.rect.x, y: frame.rect.y, width: frame.rect.width, height: frame.rect.height },
+      originalSize: { width: frame.originalSize.width, height: frame.originalSize.height },
+    } : null,
+    spriteSizeMode: sprite.sizeMode,
+    spriteTrim: sprite.trim,
+  };
+}
+
 /** Shared horizontal river driver. It never changes static backgrounds or vertical coordinates. */
 @ccclass('SakuraV03Motion')
 export class SakuraV03Motion extends Component {
   private elapsed = 0;
   private groups: MovingGroup[] = [];
+  private eyeGlows: UIOpacity[] = [];
+  private eyeGlowFirstUpdateLogged = false;
 
-  public configureWater(groups: Array<{ nodes: Node[]; direction: 1 | -1 }>): void {
+  public configureWater(groups: Array<{ nodes: Node[]; direction: 1 | -1 }>, eyeGlows: UIOpacity[] = []): void {
     this.elapsed = 0;
     this.groups = groups.map(group => this.makeGroup(group.nodes, group.direction)).filter((group): group is MovingGroup => !!group);
+    this.eyeGlows = eyeGlows.filter(opacity => opacity?.isValid);
+    this.eyeGlowFirstUpdateLogged = false;
   }
 
   /** Re-capture user-edited baseline coordinates while removing the last preview offset. */
@@ -75,8 +124,23 @@ export class SakuraV03Motion extends Component {
   }
 
   protected update(dt: number): void {
-    if (!Number.isFinite(dt) || dt <= 0 || !this.groups.length) return;
+    if (!Number.isFinite(dt) || dt <= 0 || (!this.groups.length && !this.eyeGlows.length)) return;
     this.elapsed += dt;
+    if (this.eyeGlows.length) {
+      if (!this.eyeGlowFirstUpdateLogged) {
+        const opacity = this.eyeGlows.find(candidate => candidate.isValid);
+        const overlay = opacity?.node;
+        const sprite = overlay?.getComponent(Sprite);
+        const parent = overlay?.parent;
+        if (overlay && sprite && parent) {
+          console.info(`[SAKURA_V03_EYE_GLOW_FIRST_UPDATE] ${JSON.stringify(eyeGlowDiagnosticSnapshot(overlay, parent, sprite))}`);
+          this.eyeGlowFirstUpdateLogged = true;
+        }
+      }
+      const wave = (1 + Math.cos(this.elapsed * Math.PI / 2)) / 2;
+      const alpha = Math.round(EYE_GLOW_MIN_ALPHA + (255 - EYE_GLOW_MIN_ALPHA) * wave);
+      for (const opacity of this.eyeGlows) if (opacity.isValid) opacity.opacity = alpha;
+    }
     for (const group of this.groups) {
       const groupElapsed = Math.max(0, this.elapsed - group.startElapsed);
       const centerX = sampleWaterGroupCenter(group.baseLeft, group.width, group.direction, groupElapsed);
@@ -86,6 +150,11 @@ export class SakuraV03Motion extends Component {
       });
       group.appliedCenterX = centerX;
     }
+  }
+
+  protected onDestroy(): void {
+    this.groups = [];
+    this.eyeGlows = [];
   }
 
   private makeGroup(nodes: Node[], direction: 1 | -1): MovingGroup | null {
@@ -135,8 +204,8 @@ export function populateSakuraV03(root: Node, _viewport: Node, profile?: readonl
         instanceId: instance.instanceId, assetId: instance.assetId, layer: instance.layer,
         width: instance.width, height: instance.height,
         left: instance.x, top: instance.y, scale: 1,
-        mirror: instance.mirror, motion: instance.motion, order,
-      }));
+        mirror: instance.mirror, motion: instance.motion, order: instance.order ?? order,
+      })).sort((a, b) => a.order - b.order);
     const layerOrder = new Map<string, number>();
     const nodesById = new Map<string, Node>();
     for (const instance of instances) {
@@ -166,9 +235,16 @@ export function populateSakuraV03(root: Node, _viewport: Node, profile?: readonl
       nodes: definition.memberIds.map(id => nodesById.get(id)).filter((node): node is Node => !!node),
       direction: definition.direction,
     }));
+    const eyeFrame = frames.get('tex_sakura_rr_far_l_eye_glow');
+    const farLayerInstances = instances as Array<{ instanceId: string; assetId: string }>;
+    const eyeGlows = eyeFrame ? farLayerInstances
+      .filter(instance => instance.assetId === 'tex_sakura_rr_far_l')
+      .map(instance => nodesById.get(instance.instanceId))
+      .filter((node): node is Node => !!node)
+      .map(node => attachSakuraV03EyeGlow(node, eyeFrame)) : [];
     const marker = new Node('SAKURA_V03_READY');
     root.addChild(marker);
     const motion = root.addComponent(SakuraV03Motion);
-    motion.configureWater(waterGroups);
+    motion.configureWater(waterGroups, eyeGlows);
   }).catch(error => console.error('[SAKURA_V03] 环境资源加载失败：', error));
 }
