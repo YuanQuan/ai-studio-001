@@ -1,0 +1,20 @@
+{
+  "task_id": "MINIGAME-ART-OPT-20261016-VFX",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Art与Tech对现有特效约束同版Review APPROVED；实际序列帧与程序动画分类、时长/退出/层级有源码与manifest依据。"
+    },
+    {
+      "severity": "INFO",
+      "message": "40游客帧源与正式批准可核，4配件原源及旧静态PSD缺失如实标记；没有更改动作帧序、挂点或新造效果。"
+    },
+    {
+      "severity": "INFO",
+      "message": "运行、性能、小游戏SDK及真机全部NOT_TESTED；未将静态资源尺寸当GPU或帧率通过。"
+    }
+  ],
+  "next_action": "Producer复核同版身份与Required后将具体v0.1方案送USER_REVIEW；用户批准前不制作或正式实现，具体资源Gate2另办。"
+}

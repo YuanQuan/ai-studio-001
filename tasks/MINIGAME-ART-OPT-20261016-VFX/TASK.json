@@ -15,7 +15,9 @@
     "rules/artifact_contract.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
-    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MODEL_OVERRIDE_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/RESUME_BASELINE_CHECK.json"
   ],
   "deliverables": [
     "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md",
@@ -26,7 +28,7 @@
     "明确适配、透明叠加/过绘、复用与测量方法，不改已批视觉或动作语义，未测性能如实标记。"
   ],
   "dependencies": [],
-  "status": "BLOCKED",
+  "status": "USER_REVIEW",
   "approval": "REVIEW",
   "notes": [
     "Master唯一分派；先按ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS读取最新角色配置。",
@@ -36,6 +38,7 @@
     "与其他方案Draft并行用于本批联合专业Review；禁止作为Client正式输入。",
     "不执行Git；本轮由Master审查后统一处理日常提交推送。",
     "2026-10-16 Master故障事实应急登记授权：指定Owner因模型容量无法启动时，Master仅可记录本批BLOCKED、DRAFT审批、日志/看板与复盘草记；不代做专业Review、不签Producer接受、不改既有任务审批。",
-    "Owner未启动；本批指定专业模型持续容量不足，编排暂停。等待模型恢复或用户明确临时替换授权，不视为UI/VFX开工。"
+    "Owner未启动；本批指定专业模型持续容量不足，编排暂停。等待模型恢复或用户明确临时替换授权，不视为UI/VFX开工。",
+    "2026-10-16T17:26:37+08:00 用户已明确批准本轮文档/Review临时用gpt-6.1-sol low；原容量阻塞解除。旧阻塞描述只保留历史。长期配置和美术图片制作模型不变。"
   ]
 }

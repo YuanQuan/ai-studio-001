@@ -15,7 +15,9 @@
     "rules/artifact_contract.md",
     "rules/visual_production_contract.md",
     "rules/visual_fidelity_compute_contract.md",
-    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MODEL_OVERRIDE_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/RESUME_BASELINE_CHECK.json"
   ],
   "deliverables": [
     "deliverables/producer/MINIGAME-ART-OPT-20261016-FLOW/v0.1/FLOW_REPORT.md",
@@ -27,7 +29,7 @@
     "结束前完成continuity check与有真实时钟依据的复盘，不将总体实施授权写为未来具体资源批准。"
   ],
   "dependencies": [],
-  "status": "BLOCKED",
+  "status": "DONE",
   "approval": "AUTO",
   "notes": [
     "Master唯一分派；先按ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS读取最新角色配置。",
@@ -37,6 +39,8 @@
     "与其他方案Draft并行用于本批联合专业Review；禁止作为Client正式输入。",
     "不执行Git；本轮由Master审查后统一处理日常提交推送。",
     "2026-10-16 Master故障事实应急登记授权：指定Owner因模型容量无法启动时，Master仅可记录本批BLOCKED、DRAFT审批、日志/看板与复盘草记；不代做专业Review、不签Producer接受、不改既有任务审批。",
-    "AGENTS指定gpt-6-sol low不可调度：Tech三次、Art两次、Producer两次均返回Selected model is at capacity；专业Owner无实际首产。等待该模型恢复，或用户明确允许本轮临时替换模型。"
+    "AGENTS指定gpt-6-sol low不可调度：Tech三次、Art两次、Producer两次均返回Selected model is at capacity；专业Owner无实际首产。等待该模型恢复，或用户明确允许本轮临时替换模型。",
+    "2026-10-16T17:26:37+08:00 用户已明确批准本轮文档/Review临时用gpt-6.1-sol low；原容量阻塞解除。旧阻塞描述只保留历史。长期配置和美术图片制作模型不变。",
+    "2026-10-16T17:29:45+08:00 Producer已实际产出FLOW_REPORT.md，进入IN_PROGRESS；最终门禁/复盘待Master通知。"
   ]
 }

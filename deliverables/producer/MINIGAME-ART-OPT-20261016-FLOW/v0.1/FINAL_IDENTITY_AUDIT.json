@@ -1,0 +1,125 @@
+{
+  "recorded_at": "2026-10-16T17:46:22+08:00",
+  "identity_file": "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/REVIEW_IDENTITY.json",
+  "identity_sha256": "d37943279f625a3b43c6bc017c83ba853eed64e186ccf3bc4e52d5e15a045155",
+  "identity_checked": 34,
+  "identity_mismatch": [],
+  "source_checked": 687,
+  "source_changed": [],
+  "approved_schema_valid_reviews": [
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/UI_ART_REVIEW.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/VFX_ART_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_REVIEW_ART.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_REVIEW_TECH.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_REVIEW_UI.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_REVIEW_VFX.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/ART_PLAN_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/UI_SPEC_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/VFX_SPEC_REVIEW.json"
+  ],
+  "tasks": [
+    {
+      "task": "MINIGAME-ART-OPT-20261016-TECH",
+      "required_exists": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    },
+    {
+      "task": "MINIGAME-ART-OPT-20261016-FLOW",
+      "required_exists": [
+        true,
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    },
+    {
+      "task": "MINIGAME-ART-OPT-20261016-ART",
+      "required_exists": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    },
+    {
+      "task": "MINIGAME-ART-OPT-20261016",
+      "required_exists": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    },
+    {
+      "task": "MINIGAME-ART-OPT-20261016-VFX",
+      "required_exists": [
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    },
+    {
+      "task": "MINIGAME-ART-OPT-20261016-UI",
+      "required_exists": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "acceptance_exact_order": true
+    }
+  ],
+  "schema_method": "递归核对本仓库schema所有实际约束(type/enum/required/minLength/minItems/items/additionalProperties)，非通用引擎",
+  "approval_records": [
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016-TECH/ARTIFACT_APPROVAL.json",
+      "status": "USER_REVIEW",
+      "schema_errors": []
+    },
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016-FLOW/ARTIFACT_APPROVAL.json",
+      "status": "PROFESSIONAL_REVIEW",
+      "schema_errors": []
+    },
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016-ART/ARTIFACT_APPROVAL.json",
+      "status": "USER_REVIEW",
+      "schema_errors": []
+    },
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016/ARTIFACT_APPROVAL.json",
+      "status": "USER_REVIEW",
+      "schema_errors": []
+    },
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016-VFX/ARTIFACT_APPROVAL.json",
+      "status": "USER_REVIEW",
+      "schema_errors": []
+    },
+    {
+      "path": "tasks/MINIGAME-ART-OPT-20261016-UI/ARTIFACT_APPROVAL.json",
+      "status": "USER_REVIEW",
+      "schema_errors": []
+    }
+  ],
+  "continuity": {
+    "parent_and_four_specialists": "USER_REVIEW",
+    "flow": "DONE",
+    "empty_ready_or_in_progress": false,
+    "future_resource_gate": "未批准，锁定"
+  },
+  "flow_master_acceptance": "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/FLOW_MASTER_ACCEPTANCE.json",
+  "flow_approval": "PROFESSIONAL_REVIEW"
+}

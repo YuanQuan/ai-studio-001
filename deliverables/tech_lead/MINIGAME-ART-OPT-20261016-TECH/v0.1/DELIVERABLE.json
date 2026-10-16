@@ -1,0 +1,43 @@
+{
+  "task_id": "MINIGAME-ART-OPT-20261016-TECH",
+  "owner": "tech_lead",
+  "summary": "完成268PNG/导入/序列化与动态加载审计、唯一工程内适配及租约方案、完整验证矩阵和同批Art/UI/VFX文档技术Review；当前无资源或代码实施。",
+  "artifacts": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/ART_PLAN_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/ART_REVIEW_EVIDENCE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/AUDIT_EVIDENCE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/PLATFORM_AND_TEST_PLAN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/RESOURCE_AUDIT.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/UI_SPEC_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/UI_SPEC_REVIEW_EVIDENCE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/VFX_SPEC_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/VFX_SPEC_REVIEW_EVIDENCE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "盘点覆盖当前PNG/导入/引用/加载/构建证据，结论区分尺寸、下载、RGBA估算和实际驻留。",
+      "result": "PASS",
+      "evidence": "RESOURCE_AUDIT.md、AUDIT_EVIDENCE.json；268PNG重hash无差、10Scene/Prefab引用边及六店12Sprite默认trim审计；最新栏杆构建身份，尺寸/下载/RGBA/实际驻留分别说明。"
+    },
+    {
+      "criterion": "明确仅平台分包的依赖、延迟加载/释放、裁剪兼容与安全区接口方案，不绕过具体上游审批实施。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN.md；仅本地平台分包、延迟加载和共享引用租约/竞态、唯一trim=false原画布恢复、逻辑像素安全区适配及工程内模块路径；实施仍受具体审批。"
+    },
+    {
+      "criterion": "多视口/DPR/平台/生命周期验收与体积超限停止规则明确，Art方案同版技术Review可核。",
+      "result": "PASS",
+      "evidence": "PLATFORM_AND_TEST_PLAN.md六竖屏×DPR1/2/3及仅U04两横屏、安全区/20进出、IAB DPR能力限制和包体超限停止；ART_PLAN_REVIEW.json同版APPROVED，UI/VFX补充文档Review均APPROVED，冻结hash见各EVIDENCE。"
+    }
+  ],
+  "assumptions": [
+    "用户总体实施已授权，当前按门禁提交精确方案；同批Draft联合Review不作为正式Client输入。"
+  ],
+  "risks": [
+    "小游戏构建/平台IDE/真机/优化后运行及性能均NOT_TESTED；当前数据不保证包体必达。",
+    "4配件源/独立批准及部分母版、全量批准链须在受影响生产前闭环；系统字体许可与缺字须核。",
+    "裁剪导入若不能稳定保持真实originalSize/offset/UV，停止该候选并保持现有资源；不缩放或重绘。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

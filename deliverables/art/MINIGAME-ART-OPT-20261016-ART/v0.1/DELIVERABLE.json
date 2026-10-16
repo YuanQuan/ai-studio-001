@@ -1,0 +1,40 @@
+{
+  "task_id": "MINIGAME-ART-OPT-20261016-ART",
+  "owner": "art",
+  "summary": "中文无损裁剪方案与268项来源审计；仅文档，本精确方案尚待联合专业Review与用户Gate1。",
+  "artifacts": [
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/DELIVERABLE.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/UI_ART_REVIEW.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/VFX_ART_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "制作方案逐件绑定当前输入身份、现行来源/批准、母版和稳定ID，明确不重绘与修改边界。",
+      "result": "PASS",
+      "evidence": "SOURCE_APPROVAL_MAP.json逐项268身份/来源及未知；PRODUCTION_PLAN.md母版映射核清条件，不将未知伪称已核。"
+    },
+    {
+      "criterion": "店铺、游客、场景三类代表样本的裁剪/留边/坐标/重组和预算可执行，估算与未验证项如实区分。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md 10代表准确bbox+2/offset；PRODUCTION_PLAN.md零差比较/90分钟与2轮预算，静态/运行均未实作。"
+    },
+    {
+      "criterion": "当前零正式图片/PSD/切片产出，方案经同版专业Review后等待用户Gate1，未来Gate2不被替代。",
+      "result": "PASS",
+      "evidence": "本目录仅五份JSON/MD；PRODUCTION_PLAN.md明确本方案Gate1、同批预签、未来独立Gate2；当前READY_FOR_REVIEW而非已批准。"
+    }
+  ],
+  "assumptions": [
+    "静态零差路线不重绘，原尺寸/显示节点变换保持；技术具体设置由Tech复核。"
+  ],
+  "risks": [
+    "当前源匹配264/268，40游客帧已查VFX正式源与批准；4配件源/独立批准待核。全量原批准仍分已核/候选，10代表原批准已解；新方案Gate1/Gate2待批。",
+    "本轮PSD逐层可编辑性、实际裁片重组、运行与性能均NOT_TESTED。",
+    "默认Sprite.trim=true不能仅靠meta裁框保证对齐。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

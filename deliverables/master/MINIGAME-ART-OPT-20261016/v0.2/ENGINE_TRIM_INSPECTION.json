@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-16T17:29:22+08:00",
+  "inspection": "只读本机锁定Creator3.8.8引擎；没有修改工程或生成切片",
+  "findings": [
+    {
+      "file": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/cocos/2d/assembler/sprite/simple.ts",
+      "sha256": "e2c2da3e1f28b38b59d815f761724de884270aebf74fabc7736ced6153d2c7e6",
+      "lines": "157–173",
+      "fact": "sprite.trim=true将裁剪后的纹理区域铺满节点；sprite.trim=false按frame.originalSize和trimmedBorder恢复原画布映射"
+    },
+    {
+      "file": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/cocos/2d/components/sprite.ts",
+      "sha256": "d82794919dbeeefd0fc6fcf89e1e8addfec8969c3c0fc028eb4a315c82e1b385",
+      "lines": "474",
+      "fact": "默认_isTrimmedMode=true"
+    },
+    {
+      "file": "apps/client/assets/labs/u02/tourist_view.ts",
+      "sha256": "92ebfb29d19b28fda28f541341ab6b863ad323e9c02d4e28d454c03f88956318",
+      "lines": "91–92、158–163",
+      "fact": "游客body节点CUSTOM 512²；创建Sprite未显式改trim，裁后不调整将放大/错位"
+    }
+  ],
+  "required_plan_action": "明确裁剪图的原尺寸/offset/trim与镜像/脚点关系；在未来Client实施受影响Sprite使用trim=false或经批准的等价恢复方案；实际引擎导入和运行尚未执行",
+  "result": "STATIC_FINDING",
+  "runtime_result": "NOT_TESTED"
+}

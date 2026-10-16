@@ -1,0 +1,28 @@
+{
+  "task_id": "MINIGAME-ART-OPT-20261016-VFX",
+  "owner": "vfx",
+  "summary": "完成现有游客/环境/奶茶/独立灯笼特效静态审计及适配和测量约束；等待Art一致性与Tech联合Review。",
+  "artifacts": [
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "实际特效/动画资源、触发/时序/中断/层级与尺寸证据可核，未发现项不凭猜测填充。",
+      "result": "PASS",
+      "evidence": "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md：源码和manifest静态证据、缺失来源、时序与中断分别登记；性能运行为NOT_TESTED。"
+    },
+    {
+      "criterion": "明确适配、透明叠加/过绘、复用与测量方法，不改已批视觉或动作语义，未测性能如实标记。",
+      "result": "PASS",
+      "evidence": "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md：源码和manifest静态证据、缺失来源、时序与中断分别登记；性能运行为NOT_TESTED。"
+    }
+  ],
+  "assumptions": [
+    "本批TECH_DESIGN v0.1仅供联合Review，不正式消费。"
+  ],
+  "risks": [
+    "40帧静态PSD源路径当前缺失；4配件原Art源与独立批准未闭环。",
+    "小游戏、真机、性能和多分辨率运行均NOT_TESTED；不得凭尺寸判通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

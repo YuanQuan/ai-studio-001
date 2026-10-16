@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-10-16T17:45:44+08:00",
+  "result": "PASS",
+  "scope": "只核本轮实际文档/身份/审批结构与原工程未变，不是优化运行验收",
+  "checks": [
+    {
+      "check": "本项目schema所用全部关键字及验收原文同序/Required实存",
+      "result": "PASS",
+      "review_count": 10,
+      "method": "零依赖递归检查当前schema使用的type/required/enum/minLength/minItems/items/properties/additionalProperties；不是通用JSON Schema引擎"
+    },
+    {
+      "check": "送审身份文件实存/字节/SHA-256",
+      "result": "PASS",
+      "count": 34,
+      "mismatches": []
+    },
+    {
+      "check": "687工程文件仍保持冻结基线",
+      "result": "PASS",
+      "count": 687,
+      "changed_paths": []
+    },
+    {
+      "check": "本轮送审内容只有文档/审计与Review，无新图或客户端文件",
+      "result": "PASS",
+      "unexpected": []
+    },
+    {
+      "check": "Tech评审附带文件SHA再次复核",
+      "result": "PASS",
+      "checked": 14,
+      "mismatches": []
+    },
+    {
+      "check": "Creator新导入/构建、实际运行、平台、DPR与性能/20次进出",
+      "result": "NOT_TESTED",
+      "reason": "本轮停在具体方案用户门禁，未修改源码或生产切片，不冒称已测。"
+    },
+    {
+      "check": "最终流程状态与审批边界",
+      "result": "PASS",
+      "states": {
+        "parent": "USER_REVIEW",
+        "art": "USER_REVIEW",
+        "tech": "USER_REVIEW",
+        "ui": "USER_REVIEW",
+        "vfx": "USER_REVIEW",
+        "flow": "DONE/PROFESSIONAL_REVIEW"
+      },
+      "criterion": "用户待批准、decided_at null；内部FLOW接受不代替具体方案批准。"
+    }
+  ],
+  "issues": [],
+  "finalized_at": "2026-10-16T17:48:56+08:00"
+}

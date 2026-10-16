@@ -1,0 +1,39 @@
+{
+  "task_id": "MINIGAME-ART-OPT-20261016-UI",
+  "owner": "ui",
+  "summary": "U00至U05最小手机适配规格：保持原视觉、完整奶茶画幅与原操作位置，实测不达标组才使用默认关闭覆盖面板；U04横屏继承原底部九宫格/人物叠前/角花组合。全部结果仅规格自检，不代表运行PASS。",
+  "artifacts": [
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/COLOR_SYSTEM.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/components/COMPONENT_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "现有U00至U05页面布局问题与准确源码证据可核，竖屏及已有对话横屏边界明确。",
+      "result": "PASS",
+      "evidence": "规格自检通过：UI_SPEC.md基线与源码位置表；screens/LAYOUT_SPEC.md逐页竖屏及U04已有横屏边界；尚无实现运行验证。"
+    },
+    {
+      "criterion": "安全区、胶囊、文字可读性、48逻辑像素热区、短屏溢出和组件状态具有可实施规则。",
+      "result": "PASS",
+      "evidence": "规格自检通过：UI_SPEC.md唯一测量/字号/输入契约；screens/LAYOUT_SPEC.md短屏/代理规则；components/COMPONENT_SPEC.md状态矩阵；实机几何与触控NOT_TESTED。"
+    },
+    {
+      "criterion": "复用既有颜色/字体/图片并标许可状态，未生成新美术或修改客户端，待Art/Tech Review与用户审批。",
+      "result": "PASS",
+      "evidence": "规格自检通过：COLOR_SYSTEM.md源码原值，COMPONENT_SPEC.md既有BitmapFont与OFL证据及系统字体UNKNOWN；本批仅Markdown/JSON，不产图、不改客户端；待同版Art/Tech Review及用户批准。"
+    }
+  ],
+  "assumptions": [
+    "本批Tech接口Draft仅用于联合Review，尚非正式下游输入。",
+    "320×568正常手机在合法安全区下通过滚动/换行保持全部功能，极端R宽<240或高<280为受限窗口。"
+  ],
+  "risks": [
+    "实际Web与小游戏运行、触控、清晰度、对比度、性能全部NOT_TESTED。",
+    "系统字体名称及许可UNKNOWN，既有BitmapFont新增文本缺字需逐字核对；不得假通过正式生产。",
+    "最小安全覆盖代理、U00控制折叠需同版Art/Tech Review；不改变现有产品计时/选择/存档规则。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

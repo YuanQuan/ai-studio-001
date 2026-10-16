@@ -1436,4 +1436,27 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Art/Tech/Producer的gpt-6-sol low调度分别2/3/2次均容量不足，无专业首产；UI/VFX未启动。父及五专业/流程Task均BLOCKED，审批DRAFT，不送USER_REVIEW。证据[调度阻塞](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/DISPATCH_BLOCK.json)。
 - 用户已授权整体计划；具体方案与未来切片没有获批。模型临时替换问题已询问，未答复，不擅自更换。
 - Master仅按本批Task故障应急授权登记事实，Producer监督/正式复盘尚未完成；[复盘草记](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/WORK_RETROSPECTIVE_DRAFT.md)。Continuity：本批无空挂READY/IN_PROGRESS，停止点是真实模型阻塞，恢复后继续至具体方案用户门禁。
+
+### 2026-10-16 17:29 恢复执行（当前）
+
+- 用户明确批准本轮文档/Review临时模型替换，旧容量BLOCKED保留历史。当前Master v0.2已产出恢复基线与授权记录，父任务IN_PROGRESS。
+- Producer于17:29:45实际首产[FLOW_REPORT](../deliverables/producer/MINIGAME-ART-OPT-20261016-FLOW/v0.1/FLOW_REPORT.md)，FLOW IN_PROGRESS；Art/Tech已调度但尚无首产，UI/VFX待派发，四专业任务均READY。
+- 本批具体方案仍DRAFT、无新用户批准；不解锁资源生产或Client接入。Master持续执行，本条为中间检查点；最终continuity、验收与复盘待本轮真实结果。
+- 更新：Art已实际首产ART_BRIEF.md（Owner报17:29:49，Producer已核文件），ART IN_PROGRESS；TECH/UI/VFX尚无首产仍READY。
+
+## 17:40 中间监督更新
+
+- TECH首产17:30:29 RESOURCE_AUDIT.md，文件已核；仍IN_PROGRESS，联合Review进行中。
+- UI首产17:34:33 UI_SPEC.md、VFX首产17:36:04 VFX_SPEC.md，Required实存且任务均REVIEW。VFX完成Owner报17:37:42。
+- Art五Required实存、任务REVIEW；当前补SourceMap与UI/VFX一致性评审。40帧VFX来源已回核、44 unknown缩为4配件，10代表原批准链是历史来源，不能视为新裁剪Gate1。
+- UI按Master退修恢复六竖屏矩阵，U05不强制新常驻232托盘、U04横屏保持原底部panel组合；Art/Tech正在复核当前UI文件hash。最终Review身份尚未冻结。
+- Master v0.2/MASTER_REVIEW与REVIEW_IDENTITY尚未提交，不预签PASS，不进入USER_REVIEW；本轮独立逐源初核见SOURCE_IDENTITY_CHECK.json。
+
+### 2026-10-16T17:46:12+08:00 当前最终门禁
+
+- 父v0.2与ART/TECH/UI/VFX v0.1均USER_REVIEW；FLOW三Required齐、REVIEW待Master内部接受。
+- [准确用户审批包](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/USER_REVIEW_PACKET.md)；[身份](../deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/REVIEW_IDENTITY.json)，SHA256 `d37943279f625a3b43c6bc017c83ba853eed64e186ccf3bc4e52d5e15a045155`；[流程核录](../deliverables/producer/MINIGAME-ART-OPT-20261016-FLOW/v0.1/FLOW_REPORT.md)；[复盘](../deliverables/producer/MINIGAME-ART-OPT-20261016-FLOW/v0.1/WORK_RETROSPECTIVE.md)。
+- 34包文件及687源身份独立复算通过，10份Review同包APPROVED；具体方案尚待用户批准，不解锁未来资源/切片/接入。continuity无空挂READY/IN_PROGRESS。
+
+- 2026-10-16T17:47:59+08:00：Master内部接受FLOW v0.1（`deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/FLOW_MASTER_ACCEPTANCE.json`，APPROVED），FLOW→DONE，审批PROFESSIONAL_REVIEW关联该接受；父与四专业保持USER_REVIEW。最终continuity无空挂READY/IN_PROGRESS，未来具体资源门禁继续锁定。
 <!-- MINIGAME-ART-OPT-20261016 END -->
