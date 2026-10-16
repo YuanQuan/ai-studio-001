@@ -1,0 +1,28 @@
+{
+  "id": "U05-CUSTOMER-LAYOUT-CLIENT-20261016",
+  "title": "奶茶顾客与点单气泡布局修订 CLIENT",
+  "type": "feature",
+  "owner": "client",
+  "parent": null,
+  "objective": "顾客下移、订单气泡及奶茶图案缩小，提交实际效果供用户审阅。",
+  "inputs": [
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/USER_REQUEST.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "顾客下移，气泡和目标奶茶缩小且不越界；初始与动画中位置一致。",
+    "现有动画时序与业务不变，无新图片接入；Creator构建及真实浏览器截图可复核。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master授权仅本次布局源码与角色交付；Producer可维护本线Task及共享流程文件独立marker。",
+    "无QA；无Git授权给子Agent；用户未审本轮效果保持USER_REVIEW。"
+  ]
+}

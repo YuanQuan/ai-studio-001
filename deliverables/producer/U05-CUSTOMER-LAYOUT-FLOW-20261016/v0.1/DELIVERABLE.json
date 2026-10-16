@@ -1,0 +1,25 @@
+{
+  "task_id": "U05-CUSTOMER-LAYOUT-FLOW-20261016",
+  "owner": "producer",
+  "summary": "已登记本次U05布局修订的真实节点、准确r2用户送审版本及独立审批，并完成连续执行检查与可信时间复盘。",
+  "artifacts": [
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/dashboard/index.html"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录本轮准确版本、状态、证据与复盘；保护既有差异且不改变上轮Gate2。",
+      "result": "PASS",
+      "evidence": "FLOW_REPORT.md、WORK_RETROSPECTIVE.md、project独立marker；Client准确r2的IDENTITY.json五项SHA逐件匹配，旧Gate2和旧运行版审批未修改。"
+    }
+  ],
+  "assumptions": ["用户截图反馈的精确发送时间未知，本周期以Producer首次核Task时间计可核历时。"],
+  "risks": ["新布局版待用户决定；本轮仅核布局，未重复上轮完整业务回归，目标设备性能未测。"],
+  "status": "READY_FOR_REVIEW"
+}

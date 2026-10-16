@@ -1395,3 +1395,16 @@ Continuity check：本实现Task现唯一门禁为用户对v0.1实现Artifact作
 - Master `MASTER_REVIEW.json` APPROVED，Client 四 Required／三验收原文同序 PASS。`RUNTIME_IDENTITY.json` 36/36 SHA 由 Producer 独立复算匹配、清单 SHA `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`；准确 v0.1 `USER_REVIEW_PACKET.md` 已冻结，Client `REVIEW→USER_REVIEW`，用户未批准，不能 DONE。Tech 内部支持 DONE；FLOW 已获 Master 接受 DONE。Continuity：本线无空挂 READY/IN_PROGRESS，可继续的内部门禁均已完成，下一步为用户准确版决定。
 - Master `FLOW_MASTER_ACCEPTANCE.json` 核三 Required／两验收原文同序 PASS 并接受，FLOW `REVIEW→DONE`；专业 Artifact 记 `PROFESSIONAL_REVIEW`，Task approval 仍 `REVIEW`。Client 准确版 `USER_REVIEW`，待用户决定；本线 continuity 无空挂 READY/IN_PROGRESS。
 <!-- U00-U01-USER-LAYOUT-20261015 END -->
+
+<!-- U05-CUSTOMER-LAYOUT-20261016 START -->
+## 2026-10-16｜U05顾客与点单气泡布局修订
+
+- 用户截图要求顾客下移、气泡及目标奶茶图案缩小。Master已建立 Client 与 FLOW 两个独立Task，输入 `deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/USER_REQUEST.md`。Producer首份 `FLOW_REPORT.md` 实存、Task `IN_PROGRESS`；Client待首产，Task暂 `READY`。
+- 上轮Art具体新切片Gate2与已有资源r2运行版的两份 `USER_REVIEW` 审批保持原状态，本轮不是其批准。只修U05代码布局，无新图、无QA；本轮实际效果待Creator构建与浏览器核验后独立送审。
+- Client 首份 Required `deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/FEATURE_BRIEF.md` 于08:46:03+08:00实存，`milk_tea_lab.ts` 有本轮布局源码差异，Task `READY→IN_PROGRESS`；目标为顾客Y下移35、气泡300×188、杯图缩至0.55，仍待实际构建与画面确认。
+- Client `BUILD_MANIFEST.json` 记录 TypeScript退出0、Creator3.8.8隔离Web构建exit36及Finished标记，766文件，正式与隔离U05源码SHA一致；8883 HTTP预览已启，Master内置浏览器实图尚待，Task仍 `IN_PROGRESS`，不提前送审。
+- Master 已在720×1280内置浏览器实际点入U05、开始并等待顾客入场稳定，两张 `customer-layout.png`/`customer-detail.png` 实存；确认顾客下移、气泡与目标杯缩小且完整，browser warning/error空。Client最终 `DELIVERABLE.json` 与同版Master Review尚未齐，本轮新版本暂不送 `USER_REVIEW`；上一轮两份用户门禁不变。
+- Client基于选择页文字微调已重构建r2，`BUILD_MANIFEST.json` 记录Creator exit36、766输出及正式源码SHA，8884预览已启；Master `selection-layout.png` 实存。Client `DELIVERABLE.json` 当前第二验收仍 `NOT_TESTED`，待Master核最终r2画面及Client同版结论，Task仍 `IN_PROGRESS`，不提前送审。
+- 最终r2：Master `BROWSER_VERIFICATION.json` 对8884的720×1280布局画面PASS，三张截图均为r2，浏览器日志空；Client四Required／两验收原文同序PASS、Master Review APPROVED。Producer复算 `IDENTITY.json` 五项SHA全匹配，清单SHA `c41f63a8bb3b2ce4f13d40dc2769338642b42e391571715bd6adebb5e27d04c5`；Client Task `IN_PROGRESS→REVIEW→USER_REVIEW`，新布局版待用户决定。FLOW三Required/一验收PASS，Task `IN_PROGRESS→REVIEW` 待Master接受；最近复盘 `WR-20261016-U05-CUSTOMER-LAYOUT-001`。仅核布局，未重复上轮完整业务回归；无QA、无新图。Continuity无本线空挂READY/IN_PROGRESS。
+- Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`、内部Artifact `PROFESSIONAL_REVIEW`；Client准确布局r2仍 `USER_REVIEW`、用户决定为空，旧两审批保持。Continuity无空挂任务。
+<!-- U05-CUSTOMER-LAYOUT-20261016 END -->

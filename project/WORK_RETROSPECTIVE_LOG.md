@@ -1202,3 +1202,11 @@ Producer 按 `rules/work_retrospective.md` 在每个有明确结果的执行周�
 - 无可比基线，不认定角色慢。可证实的影响为首次 CLI 启动134后正规权限恢复，以及 r1 浏览器发现 U01 六店初始化重叠后定点修复、重构建并复测。建议 Client 下次首构建后先冒烟六店与重置/重入；Tech/Producer 下批预签核实图对象与清单，均在下一同类任务复核。Continuity：无本线空挂 READY/IN_PROGRESS。
 - Master `FLOW_MASTER_ACCEPTANCE.json` 已接受本轮流程复盘与连续执行检查，FLOW 内部支持 DONE；两份用户待审对象保持不变。
 <!-- EXAMPLE-REVISION-20261015 END -->
+
+<!-- U05-CUSTOMER-LAYOUT-20261016 START -->
+## WR-20261016-U05-CUSTOMER-LAYOUT-001｜U05布局修订送审
+
+- Client准确r2布局版已到 `USER_REVIEW`，FLOW待Master接受；上轮Art与运行版两项审批不变。可核周期08:45:02至08:51:27 +08:00，跨节点6分25秒，不代表个人净制作；各角色净工时与用户消息准确时间未知。完整证据与建议见 `deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md`。
+- r1订单画面通过后，选择页文字做一次定点微调并重构建r2；额外净耗时未知，无可比速度基线。建议Client下次气泡缩放首轮同时核订单与选择页，下一次U05界面修订复核。Continuity：Client到真实用户门禁、FLOW有实产待接受，无空挂READY/IN_PROGRESS。
+- Master `FLOW_MASTER_ACCEPTANCE.json` 已接受流程复盘与连续执行检查，FLOW内部支持DONE；Client准确r2布局版仍待用户决定。
+<!-- U05-CUSTOMER-LAYOUT-20261016 END -->

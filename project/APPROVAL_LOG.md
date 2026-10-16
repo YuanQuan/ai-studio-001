@@ -719,3 +719,12 @@ Master已内部AUTO接受U05 v0.3运行Tech只读评审Task DONE，依据三Requ
 - Tech内部支持：Master `TECH_MASTER_ACCEPTANCE.json` APPROVED，`tasks/EXAMPLE-REVISION-TECH-20261015/ARTIFACT_APPROVAL.json` 仅记 `PROFESSIONAL_REVIEW`，Task DONE；不构成Client或Art用户批准。
 - FLOW内部支持：Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，`tasks/EXAMPLE-REVISION-FLOW-20261015/ARTIFACT_APPROVAL.json` 仅记 `PROFESSIONAL_REVIEW`，Task DONE；Art与Client审批均未代答。
 <!-- EXAMPLE-REVISION-20261015 END -->
+
+<!-- U05-CUSTOMER-LAYOUT-20261016 START -->
+## 2026-10-16｜U05布局修订独立审批
+
+- 用户截图反馈授权本次顾客下移与气泡/目标奶茶缩小，正式输入 `USER_REQUEST.md`；本次实际布局效果尚未完成送审，不能预记用户批准。
+- 上轮Art新切片Gate2与Client已有资源r2运行版的审批仍分别为 `USER_REVIEW`、决定时间空；本次修订有独立Task与后续准确版本，不改写历史审批。
+- 本次布局准确 `v0.1-r2`：`tasks/U05-CUSTOMER-LAYOUT-CLIENT-20261016/ARTIFACT_APPROVAL.json` 指Master `USER_REVIEW_PACKET.md`，状态 `USER_REVIEW`、`decided_at=null`；`IDENTITY.json` 五项SHA全匹配，清单SHA `c41f63a8bb3b2ce4f13d40dc2769338642b42e391571715bd6adebb5e27d04c5`。此审批不替代旧两项待审版本的用户决定。
+- FLOW内部支持：Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，`tasks/U05-CUSTOMER-LAYOUT-FLOW-20261016/ARTIFACT_APPROVAL.json` 仅记 `PROFESSIONAL_REVIEW`，Task DONE；不替代布局版用户批准。
+<!-- U05-CUSTOMER-LAYOUT-20261016 END -->

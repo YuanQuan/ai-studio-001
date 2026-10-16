@@ -1488,3 +1488,17 @@ Producer 随节点发生记录；时间采用 Asia/Shanghai。
 - `CLIENT_USER_REVIEW`：Master `MASTER_REVIEW.json` APPROVED，Client 四 Required／三验收 PASS；Producer 复核 `RUNTIME_IDENTITY.json` 36/36文件 SHA 匹配、清单 SHA `d4e3a001afa1daa39d2826c07194fd50ac4d73e8d8a5249a1a63858b96b37a92`，`tasks/U00-U01-USER-LAYOUT-CLIENT-20261015/ARTIFACT_APPROVAL.json` 指向准确 v0.1 `USER_REVIEW_PACKET.md`，Task `REVIEW→USER_REVIEW`，用户未批准。
 - `FLOW_INTERNAL_DONE`：Master `deliverables/master/U00-U01-USER-LAYOUT-20261015/v0.1/FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`；专业Artifact `PROFESSIONAL_REVIEW`，用户运行版仍 `USER_REVIEW`。
 <!-- U00-U01-USER-LAYOUT-20261015 END -->
+
+<!-- U05-CUSTOMER-LAYOUT-20261016 START -->
+## 2026-10-16｜U05顾客与点单气泡布局修订
+
+- `USER_LAYOUT_FEEDBACK_RECORDED`：Master `deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/USER_REQUEST.md` 记录用户截图反馈，具体用户消息发送时间未知；仅现有U05布局调整。
+- `FLOW_TASK_STARTED`：Producer首份 `deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/FLOW_REPORT.md` 实存，2026-10-16T08:45:02+08:00核Task并开始记录，Task `READY→IN_PROGRESS`。Client首产待核仍READY，构建/浏览器未测。
+- `CLIENT_TASK_STARTED`：`deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/FEATURE_BRIEF.md` mtime 08:46:03+08:00，`milk_tea_lab.ts` 已有本轮布局源码差异，Task `READY→IN_PROGRESS`；构建/浏览器仍待。
+- `CREATOR_BUILD_READY_FOR_IAB`：Client `BUILD_MANIFEST.json` 记录TypeScript退出0、Creator3.8.8隔离Web构建exit36与Finished、766输出，正式与隔离U05源码SHA一致；8883预览已监听。Root IAB实图尚待，不能用构建代替视觉验收。
+- `MASTER_IAB_LAYOUT_PASS`：Master于720×1280实际点入U05、开始并待顾客入场稳定；`deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/customer-layout.png` 与 `customer-detail.png` mtime08:48:48+08:00，实图确认顾客下移、气泡/目标杯缩小且完整，浏览器warning/error空；Client第四Required与Master同版Review待补，不提前送审。
+- `R2_SELECTION_PENDING`：Client选择页文字微调后r2构建exit36、766输出、8884预览；`selection-layout.png` 实存。Client `DELIVERABLE.json` 第二验收仍NOT_TESTED，Master同版最终画面结论待补，不提前USER_REVIEW。
+- `CLIENT_R2_USER_REVIEW`：Master `BROWSER_VERIFICATION.json` 8884实际画面PASS、三张最终r2截图、日志空；Client四Required／两验收同序PASS，Master Review APPROVED。Producer复算 `IDENTITY.json` 五项SHA匹配、清单SHA `c41f63a8bb3b2ce4f13d40dc2769338642b42e391571715bd6adebb5e27d04c5`，Task `IN_PROGRESS→REVIEW→USER_REVIEW`；本轮只核布局、未重复完整业务回归。
+- `FLOW_SUBMITTED`：三Required与一条原文验收PASS、复盘实存，FLOW Task `IN_PROGRESS→REVIEW` 待Master内部接受；continuity无空挂任务。
+- `FLOW_INTERNAL_DONE`：Master `deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/FLOW_MASTER_ACCEPTANCE.json` APPROVED，FLOW Task `REVIEW→DONE`、内部Artifact `PROFESSIONAL_REVIEW`；Client布局r2仍待用户决定。
+<!-- U05-CUSTOMER-LAYOUT-20261016 END -->

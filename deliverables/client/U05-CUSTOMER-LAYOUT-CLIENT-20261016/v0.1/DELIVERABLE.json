@@ -1,0 +1,35 @@
+{
+  "task_id": "U05-CUSTOMER-LAYOUT-CLIENT-20261016",
+  "owner": "client",
+  "summary": "完成U05布局微调；Creator 3.8.8构建、TypeScript检查及Master在最终r2内置浏览器实测通过，提交用户审核。",
+  "artifacts": [
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/RUN_VERIFICATION.md",
+    "deliverables/client/U05-CUSTOMER-LAYOUT-CLIENT-20261016/v0.1/evidence/BUILD_MANIFEST.json",
+    "http://127.0.0.1:8884/",
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/BROWSER_VERIFICATION.json",
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/selection-layout.png",
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/customer-layout.png",
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/customer-detail.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "顾客下移，气泡和目标奶茶缩小且不越界；初始与动画中位置一致。",
+      "result": "PASS",
+      "evidence": "Master在最终r2构建、720×1280内置浏览器中实测顾客下移、原尺寸保留，订单气泡及目标奶茶缩小、居中且完整；选择页与订单画面截图及BROWSER_VERIFICATION.json已落盘。"
+    },
+    {
+      "criterion": "现有动画时序与业务不变，无新图片接入；Creator构建及真实浏览器截图可复核。",
+      "result": "PASS",
+      "evidence": "仅调整U05布局坐标与尺寸，没有改演出时长/业务结算或新增图片；Creator 3.8.8最终r2 exit 36、TypeScript PASS，Master实际浏览器r2 PASS且warn/error为0。完整业务回归未重复（仅布局修订）。"
+    }
+  ],
+  "assumptions": [
+    "下移35按源码布局使用的源坐标解释，复用现有角色prefab和尺寸。"
+  ],
+  "risks": [
+    "目标设备与小游戏平台性能未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

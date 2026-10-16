@@ -27,6 +27,9 @@ const GOLD = new Color(255, 194, 93);
 const DEEP_BROWN = new Color(94, 55, 33);
 const ROOF_TEXT = new Color(255, 234, 198);
 const ASSET_ROOT = 'u05_milk_tea/u05_b/';
+const CUSTOMER_SOURCE_CENTER_Y = 669.5;
+const ORDER_BUBBLE_CENTER: [number, number] = [620.5, 425.5];
+const ORDER_BUBBLE_SIZE: [number, number] = [300, 188];
 const ASSET_SIZES: Record<string, [number, number]> = {
   STATIC_BARE: [1024, 1536], STATIC_BARE_PATCH04: [1024, 1536],
   ORDER_BUBBLE_EMPTY: [375, 235], ORDER_CUP_BACK: [150, 170], ORDER_CUP_FRONT: [151, 180], ORDER_STRAW: [31, 86],
@@ -438,7 +441,7 @@ export class U05MilkTeaLab extends Component {
   }
   private renderSelection(tier: { tier_id: string; display_name: string; stages: Stage[] }): void {
     // Approved empty bubble covers the background's discarded ghost-bubble tail on the selection page.
-    this.showAsset(this.root!, 'ORDER_BUBBLE_EMPTY', this.sourcePos(654.5, 405.5), [375, 235]);
+    this.showAsset(this.root!, 'ORDER_BUBBLE_EMPTY', this.sourcePos(...ORDER_BUBBLE_CENTER), ORDER_BUBBLE_SIZE);
     const normal = this.readSessionProgress();
     this.text(this.root!, `熟练度 ${normal.xp} 已通关 ${normal.cleared.length}/5 档`, 0, 474, 16, TEXT, 660, 32);
     this.text(this.root!, `选择难度　${tier.display_name}`, 0, 427, 22, GOLD, 620, 38);
@@ -452,9 +455,9 @@ export class U05MilkTeaLab extends Component {
     const progress = this.readSessionProgress();
     const stage = chooseStage(this.config!, tier.tier_id, progress.xp, this.validation.enabled ? this.validation.stage : null);
     this.sourceText(`阶段 ${stage.stage_no}/2  每局 3 杯  ${stage.time_sec === null ? '不限时' : `${stage.time_sec} 秒`}`,
-      654.5, 376, 27, DEEP_BROWN, 340, 42);
+      ORDER_BUBBLE_CENTER[0], 396, 24, DEEP_BROWN, 280, 40);
     this.sourceText(`茶 ${stage.tea_options}/3  奶 ${stage.milk_options}/3  小料 ${stage.topping_options}/6`,
-      654.5, 435, 27, DEEP_BROWN, 340, 42);
+      ORDER_BUBBLE_CENTER[0], 455, 24, DEEP_BROWN, 280, 40);
     this.renderCustomerWindow(309);
     this.showAsset(this.root!, 'COUNTER_FRONT', this.sourcePos(512, 798), [556, 42]);
     this.renderIngredientGallery(stage);
@@ -555,7 +558,7 @@ export class U05MilkTeaLab extends Component {
     window.addComponent(Mask).type = Mask.Type.GRAPHICS_RECT;
     const customer = instantiate(assets.prefab); customer.name = 'UG_GHOST_01_Customer'; window.addChild(customer);
     customer.setPosition(((left + 166) - centerX) * sourceScale,
-      (centerY - 634.5) * sourceScale + 25, 0);
+      (centerY - CUSTOMER_SOURCE_CENTER_Y) * sourceScale + 25, 0);
     const view = new TouristView(customer);
     view.setStageHeight(270);
     const adapter = new ApprovedTouristAdapter(view, assets.frameManifest, assets.mountManifest,
@@ -566,10 +569,12 @@ export class U05MilkTeaLab extends Component {
   }
   private renderTargetCup(recipe: Run['orders'][number], bubbleVisible: boolean): Node {
     const group = new Node('OrderPresentation'); this.root!.addChild(group); group.active = bubbleVisible;
-    this.showAsset(group, 'ORDER_BUBBLE_EMPTY', this.sourcePos(654.5, 405.5), [375, 235]);
+    this.showAsset(group, 'ORDER_BUBBLE_EMPTY', this.sourcePos(...ORDER_BUBBLE_CENTER), ORDER_BUBBLE_SIZE);
     const centerX = 653; const centerY = 416; const unit = 720 / 1024;
-    const cup = new Node('OrderCupGroup'); group.addChild(cup); cup.setPosition(this.sourcePos(centerX, centerY).x, this.sourcePos(centerX, centerY).y);
-    cup.setScale(.78, .78, 1);
+    const cup = new Node('OrderCupGroup'); group.addChild(cup);
+    cup.setPosition(this.sourcePos(ORDER_BUBBLE_CENTER[0], ORDER_BUBBLE_CENTER[1]).x,
+      this.sourcePos(ORDER_BUBBLE_CENTER[0], ORDER_BUBBLE_CENTER[1]).y);
+    cup.setScale(.55, .55, 1);
     const relative = (id: string, x: number, y: number, size: [number, number]): Node => {
       const node = this.showAsset(cup, id, { x: (x - centerX) * unit, y: (centerY - y) * unit }, size);
       return node;
@@ -688,7 +693,7 @@ export class U05MilkTeaLab extends Component {
     if (customer?.isValid && customer.parent?.isValid) {
       const sourceScale = 720 / 1024; const windowCenterX = 505; const windowCenterY = 530.5;
       customer.setPosition(((sample.customerX + 166) - windowCenterX) * sourceScale,
-        (windowCenterY - 634.5) * sourceScale + 25, 0);
+        (windowCenterY - CUSTOMER_SOURCE_CENTER_Y) * sourceScale + 25, 0);
     }
     const elapsed = Math.max(0, nowMs - this.presentation.submittedAtMs);
     if (sample.phase === 'synthesis') {

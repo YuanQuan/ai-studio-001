@@ -1,0 +1,26 @@
+{
+  "id": "U05-CUSTOMER-LAYOUT-FLOW-20261016",
+  "title": "奶茶顾客与点单气泡布局修订 FLOW",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": null,
+  "objective": "顾客下移、订单气泡及奶茶图案缩小，提交实际效果供用户审阅。",
+  "inputs": [
+    "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/USER_REQUEST.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U05-CUSTOMER-LAYOUT-FLOW-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录本轮准确版本、状态、证据与复盘；保护既有差异且不改变上轮Gate2。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master授权仅本次布局源码与角色交付；Producer可维护本线Task及共享流程文件独立marker。",
+    "无QA；无Git授权给子Agent；用户未审本轮效果保持USER_REVIEW。"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "taskId": "U05-CUSTOMER-LAYOUT-CLIENT-20261016",
+  "revision": "v0.1-r2",
+  "creatorVersion": "3.8.8",
+  "typescriptVersion": "4.9.5-cocos.3",
+  "target": "web-mobile",
+  "build": {
+    "exitCode": 36,
+    "successMarker": "build Task (U05-CUSTOMER-LAYOUT-CLIENT-20261016-v0.1-r2) Finished in (4 s)ms",
+    "configPath": "/private/tmp/u05-customer-layout-client-20261016-isolated-project/build-unit-samples.json",
+    "configSha256": "c2ecfd18a1e3c4567150164b63d9777c0e9b98541e171ef4b51dcee794117edd",
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/u05-customer-layout-client-20261016-isolated-project --build 'configPath=/private/tmp/u05-customer-layout-client-20261016-isolated-project/build-unit-samples.json;platform=web-mobile'",
+    "stdout": "evidence/creator-build-r2-stdout.log",
+    "stderr": "evidence/creator-build-r2-stderr.log",
+    "stdoutSha256": "5afcd45163aadf2d868b924595cae135d61de50e884bd3ef134fc9e0d743e5af",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "launch": "使用Creator构建授权的正式执行环境升级，未修改系统安全设置"
+  },
+  "source": {
+    "formalPath": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+    "isolatedPath": "/private/tmp/u05-customer-layout-client-20261016-isolated-project/assets/labs/u05/milk_tea_lab.ts",
+    "formalSha256": "306128c61f4d9fb41c5e4c25852a7cf88cbe09e533819f0587b0fca0ae0933a7",
+    "isolatedSha256": "306128c61f4d9fb41c5e4c25852a7cf88cbe09e533819f0587b0fca0ae0933a7",
+    "metaSha256": "8d4ca5e5561ac576f3c873f1233efba8d2f9eff6baeafb5b48acde0f701cf134",
+    "formalAndIsolatedMatch": true,
+    "scope": "仅U05布局源码；meta不变，没有新增或修改图片；待审桥/眼睛资源未导入"
+  },
+  "typescript": {
+    "result": "PASS",
+    "command": "Creator bundled TypeScript tsc -p apps/client/tsconfig.json --noEmit --skipLibCheck --target ES2021 --lib ES2021,DOM",
+    "exitCode": 0,
+    "log": "evidence/typescript-check.log"
+  },
+  "output": {
+    "directory": "/private/tmp/u05-customer-layout-client-20261016-build-r2/u05-customer-layout-client-20261016-web-mobile-r2",
+    "fileCount": 766,
+    "hashes": {
+      "index.html": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "index.js": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "application.js": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "assets/main/index.js": "d1e55fcd79e430853a886e5a5a6cb107caef6f027b70c649b25265907b8e3ef1",
+      "assets/main/config.json": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+    }
+  },
+  "httpPreview": {
+    "url": "http://127.0.0.1:8884/",
+    "bind": "127.0.0.1",
+    "port": 8884,
+    "server": "Python http.server",
+    "pid": 57307,
+    "sessionId": 50480,
+    "directory": "/private/tmp/u05-customer-layout-client-20261016-build-r2/u05-customer-layout-client-20261016-web-mobile-r2",
+    "listenerObserved": true,
+    "serviceLog": "evidence/http-8884.log",
+    "state": "最终r2预览保留供审阅；旧r1端口8883已停止。"
+  },
+  "iab": {
+    "result": "PASS",
+    "owner": "Master",
+    "url": "http://127.0.0.1:8884/",
+    "build": "r2",
+    "viewport": {
+      "width": 720,
+      "height": 1280
+    },
+    "warningsErrors": 0,
+    "checks": [
+      "选择页文字完整位于缩小气泡内",
+      "顾客入场后下移，原有大小保留",
+      "点单气泡缩小，目标奶茶居中且完整，未覆盖操作区"
+    ],
+    "screenshots": [
+      "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/selection-layout.png",
+      "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/customer-layout.png",
+      "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/customer-detail.png"
+    ],
+    "browserEvidence": "deliverables/master/U05-CUSTOMER-LAYOUT-20261016/v0.1/BROWSER_VERIFICATION.json",
+    "limitation": "布局修订；未重复上轮完整业务场景回归。"
+  },
+  "targetDevicePerformance": "NOT_TESTED"
+}
