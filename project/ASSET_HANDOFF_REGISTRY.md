@@ -1,3 +1,11 @@
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 START -->
+## U04 表情修正生产候选登记｜2026-10-17T11:30:37+08:00
+- 六代表样张源及计划路径见 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SOURCE_REGISTRY.json` 与 `ART_PRODUCTION_PRESIGN.json`。当前无新版正式PNG/PSD/切片。
+- 稳定ID沿用既有U04三层语义；本批美术实际路径待产出后逐项登记。Client正式路径/UUID：未导入、未生成；既有v0.1路径和UUID仅作兼容对照。Gate2具体版本批准前禁止正式接入。
+- 2026-10-17首MT样张调用失败且无输出/ID；本批仍无可登记的新PNG/PSD/切片。输入文件后续同名重编码造成字节哈希变化，调用时原件不可复验，详Art `BLOCKER_REPORT.md`；不得把新输入或旧客户端UUID登记成已交付新资源。
+- Art-B独立账本 `deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/GENERATION_LEDGER.json` 0/24调用、0候选；本批总计主Art UNKNOWN 1/48、Art-B 0，仍无可登记新正式图片或UUID。
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 END -->
+
 # 美术交付与 Cocos Creator 正式资源交接登记
 
 <!-- EXAMPLE-REVISION-20261015 START -->

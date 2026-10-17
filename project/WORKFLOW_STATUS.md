@@ -1,11 +1,24 @@
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 START -->
+## U04 表情修正生产｜2026-10-17T11:30:37+08:00
+- Gate1：Art v0.2方案 DONE/USER_APPROVED，准确批准见 `deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json`；原用户消息精确时刻未知。
+- Art生产 IN_PROGRESS（首四Required实存）；Tech预签 IN_PROGRESS（同批首图预签APPROVED）；Client编码支持 READY（首Required未产）；Producer流程 IN_PROGRESS（首报告实存）。
+- 仅六代表样张放行；扩余24态待实样复签。48调用总额跟账本。Gate2具体切片/重组未获用户批准，Client正式接入锁。
+- 2026-10-17T11:46:56+08:00 更新：Art首MT_S2 image_gen连接失败，无输出/ID，UNKNOWN保守计1/48（A1/24、B0/24），Task BLOCKED；六样/PSD/切片0，Gate2 DRAFT。Tech待按样张缺失收口BLOCKED；Client编码支持已有4 Required并在REVIEW待Master接受。详 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BLOCKER_REPORT.md`。
+- 2026-10-17T11:49:03+08:00 Tech样张/扩批复签已据实际无图收口 `BLOCKED`，`SAMPLE_TECH_REVIEW.json`、`BATCH_EXPANSION_PRESIGN.json`均BLOCKED；首图前TECH_PRESIGN APPROVED为历史有效预签。Producer四Required齐、进入REVIEW待Master内部接受；Client支持REVIEW待Master接受。
+- 2026-10-17T11:54:30+08:00 Master内部接受编码支持：Client Pipeline `DONE/PROFESSIONAL_REVIEW`，证据 `deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/PIPELINE_MASTER_ACCEPTANCE.json`；Art/Tech仍BLOCKED。Producer `CONTINUITY_CHECK.json` 五线复核无空挂READY/IN_PROGRESS，当前FLOW REVIEW待Master。
+- 2026-10-17T11:56:28+08:00 最终六线：既有方案 DONE/USER_APPROVED；主Art、Art-B、Tech均真实BLOCKED（主Art未知1/48，Art-B零调用/零候选）；Client支持与Producer均内部DONE/PROFESSIONAL_REVIEW。Master `FLOW_MASTER_ACCEPTANCE.json` APPROVED，最终continuity无空挂READY/IN_PROGRESS。Gate2 DRAFT、正式接入锁。
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 END -->
+
 <!-- U04-EXPRESSION-REPAIR-20261017 START -->
 ## 2026-10-17｜U04 六店长表情修正具体方案
 
 - 用户 `PLEASE IMPLEMENT` 授权高层计划推进，原消息精确时间未知；Task 登记 10:57:55 +08:00。Art/Tech v0.1 因主工具路线不可执行被 Master 专业退回并保留历史，v0.2 为现行准确版本。
-- Art `U04-EXPRESSION-REPAIR-PLAN-20261017` v0.2：九 Required、五验收原文同序 PASS；Art/Tech 同版及 Master Review APPROVED。`PRODUCTION_PLAN.md` SHA `691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a`；`tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`，Task `USER_REVIEW`。准确八项身份见 `deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/REVIEW_IDENTITY.json`。
+- Art `U04-EXPRESSION-REPAIR-PLAN-20261017` v0.2：九 Required、五验收原文同序 PASS；Art/Tech 同版及 Master Review APPROVED。`PRODUCTION_PLAN.md` SHA `691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a`；`tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/ARTIFACT_APPROVAL.json` 在本轮送审快照为 `USER_REVIEW`、`decided_at=null`，当时 Task `USER_REVIEW`。准确八项身份见 `deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/REVIEW_IDENTITY.json`。
 - Tech `U04-EXPRESSION-REPAIR-TECH-20261017` v0.2：四 Required、三验收同序 PASS；`REVIEW_BINDING.json` 六项 Art SHA 匹配，经 Master 接受后 Task `DONE`、Approval `PROFESSIONAL_REVIEW`，仅内部方案可行性支持。
 - Producer `U04-EXPRESSION-REPAIR-FLOW-20261017` v0.1：四 Required、两验收同序 PASS，经 Master `FLOW_MASTER_ACCEPTANCE.json` 接受，Task `DONE`、Approval `PROFESSIONAL_REVIEW`；`CONTINUITY_CHECK.json` 无本线空挂 READY/IN_PROGRESS，复盘 `WR-20261017-U04-EXPRESSION-REPAIR-001` 见 `project/WORK_RETROSPECTIVE_LOG.md`。
-- Gate1 v0.2 仅待用户决定，正式图片/PSD/切片制作锁定；Gate2 未来实际切片与重组效果另审，Client 正式接入锁定。本轮无新图、无 Client 修改；单元示例无 QA。
+- 本段记录当时 Gate1 v0.2 待用户决定的历史送审状态；后续现行决定见下方更新。Gate2 实际切片与重组效果另审，Client 正式接入锁定；单元示例无 QA。
+
+- **现行更新（2026-10-17）**：用户已批准准确 Art v0.2 Gate1，方案 Task `DONE`、Approval `USER_APPROVED`；原送审Task/Approval快照已留存。生产线见 `deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/FLOW_REPORT.md`：首MT样张工具连接失败，无图/ID，Art/Tech `BLOCKED`，Gate2 `DRAFT`，Client正式接入仍锁。
 <!-- U04-EXPRESSION-REPAIR-20261017 END -->
 
 <!-- EXAMPLE-REVISION-20261015 START -->

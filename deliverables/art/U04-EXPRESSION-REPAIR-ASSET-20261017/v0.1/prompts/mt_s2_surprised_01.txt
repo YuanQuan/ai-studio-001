@@ -1,0 +1,6 @@
+Use case: precise-object-edit
+Asset type: 2D game character expression source crop, MT_S2 surprised.
+Input image 1 is the approved 256×256 face crop and the edit target. Keep its exact framing, head angle, face silhouette, identity, hair, skin tone, line weight, colors, shading, and facial feature coordinates. Input image 2, if supplied, is the current production face crop for alignment only, not the expression to copy.
+Primary request: Give Meng Tao a natural, clearly surprised expression. Lift the two brows in character, open the eyes a little with coherent eyelids, and form a small rounded open mouth that reads as surprise. Keep the original red-brown eyes, lashes, nose, cheek volume and anime paint style. The brows, eyes and mouth should feel drawn together, not pasted-on geometry.
+Composition/framing: exactly the same crop and feature positions as input image 1. Make changes only to brows, eyes, mouth, and the small adjacent skin/shading needed for natural integration. Preserve every other visible pixel conceptually. Transparent background if the source has transparency; do not add background or text.
+Avoid: fixed geometric mouth, eye resizing, rotated-brow shortcut, feature drift, new hair, changed head angle, changed character identity, altered costume, added props, thick white fringes, photorealism, face-wide redraw.

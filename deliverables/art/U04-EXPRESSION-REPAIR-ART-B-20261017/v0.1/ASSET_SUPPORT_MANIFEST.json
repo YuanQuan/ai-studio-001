@@ -1,0 +1,42 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+  "version": "v0.1",
+  "status": "BLOCKED",
+  "approved_source_registry": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SOURCE_REGISTRY.json",
+  "crop_manifest": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/CLIENT_INPUTS_MANIFEST.json",
+  "input_role": "已批准源图的局部参考裁图；不是新表情候选、PSD、正式切片或Gate2送审成品。",
+  "reference_inputs": [
+    {
+      "stage": "AJ_S2",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_approved_face_256.png",
+      "sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+      "size_px": [256, 256],
+      "source_rect_xyxy": [365, 130, 621, 386],
+      "source_crop_rgba_equal": true
+    },
+    {
+      "stage": "AD_S0",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+      "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+      "size_px": [256, 256],
+      "source_rect_xyxy": [310, 185, 566, 441],
+      "source_crop_rgba_equal": true
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+      "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+      "size_px": [256, 256],
+      "source_rect_xyxy": [330, 223, 586, 479],
+      "source_crop_rgba_equal": true
+    }
+  ],
+  "new_expression_candidates": [],
+  "new_candidate_count": 0,
+  "new_psd_count": 0,
+  "new_slice_count": 0,
+  "gate2_user_review_ready": false
+}

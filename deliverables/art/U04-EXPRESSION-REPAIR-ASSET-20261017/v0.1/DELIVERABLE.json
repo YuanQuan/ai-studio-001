@@ -1,0 +1,50 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "owner": "art",
+  "summary": "Gate1与同批Art/Tech预签完成，六阶段批准源和旧切片已核；首个MT_S2 surprised内置图像编辑调用遇连接发送错误，无新候选和请求ID，生产阻塞。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SOURCE_REGISTRY.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/CLIENT_INPUTS_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BLOCKER_REPORT.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/prompts/mt_s2_surprised_01_actual.txt"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确继承批准方案与六首批阶段、五态语义；同批预签完成后首图，六代表样张通过并复签后才扩24态，48调用预算可核。",
+      "result": "NOT_TESTED",
+      "evidence": "预签通过且一次实际调用已记账；工具无候选，六样通过及扩批未测试。见ART_PRODUCTION_PRESIGN.json、PRODUCTION_LEDGER.json和BLOCKER_REPORT.md。"
+    },
+    {
+      "criterion": "实际六份多层PSD、30脸片、基底与前遮挡存在，保持原尺寸坐标/稳定ID/Client三层契约；可编辑与合并区域如实说明。",
+      "result": "NOT_TESTED",
+      "evidence": "仅核旧源和输入坐标；本批新版PSD、脸片、基底与前遮挡均未产出。见BLOCKER_REPORT.md。"
+    },
+    {
+      "criterion": "同背景同视窗同尺度的实际重组与近景、ROI外保真、遮挡及小锦原圈纹单次显示可复核；辨识和局限有实际结果。",
+      "result": "NOT_TESTED",
+      "evidence": "只有旧组合参考输入；无新版实图可作重组、ROI或盲辨判断。见inputs/CLIENT_INPUTS_MANIFEST.json和BLOCKER_REPORT.md。"
+    },
+    {
+      "criterion": "来源权利、源与导出清单SHA、生成提示与账本、失败候选和预算记录齐备；不改历史或Client正式资源。",
+      "result": "NOT_TESTED",
+      "evidence": "源、工具条款、提示、失败调用及预算已登记；尚无新导出清单或候选，且首调用输入原字节因同名写入无法复验。见SOURCE_REGISTRY.json、PRODUCTION_LEDGER.json和BLOCKER_REPORT.md。"
+    },
+    {
+      "criterion": "Required与验收逐条同序，实际切片与重组版本直接提交Gate2用户审核，不冒称Client运行或正式QA通过。",
+      "result": "NOT_TESTED",
+      "evidence": "本文件按Task验收原顺序记录；无实际切片或重组，Gate2保持DRAFT，运行与QA未测试。见BLOCKER_REPORT.md。"
+    }
+  ],
+  "assumptions": [
+    "连接错误不能证明远端是否已消耗请求，本次按UNKNOWN保守计1次。",
+    "输入准备中的确定性裁剪不等于新版表情样张。"
+  ],
+  "risks": [
+    "无请求ID可查询首个image_gen结果；不得盲目重发同一高成本请求。",
+    "首次调用时的输入字节在随后同名写入后无法恢复；只保留调用前SHA、批准源与ROI，当前解码像素校验不能替代原字节复验。"
+  ],
+  "status": "BLOCKED"
+}

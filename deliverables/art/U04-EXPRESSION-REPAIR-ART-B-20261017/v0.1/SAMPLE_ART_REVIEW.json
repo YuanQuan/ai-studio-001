@@ -1,0 +1,16 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+  "reviewer": "art",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "AJ_S2 happy、AD_S0 happy、XJ_S0 happy新增样张均未生成，实图视觉、ROI外RGBA、PSD及同尺度重组均未测试；逐项证据见SAMPLE_CHECKS.json。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "主Art首个内置image_gen调用返回 image generation failed: connection failed: error sending request，结果未知且无可访问输出；Master要求本单元暂停新调用。本单元实际调用0。"
+    }
+  ],
+  "next_action": "内置工具恢复并由Master解除暂停后，仍仅按同批预签先做三代表样张；总六样Art/Master/Tech实图通过及扩批复签前不得继续余12态。"
+}

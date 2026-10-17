@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-10-17T11:57:47+08:00",
+  "validation": "递归校验四Schema实际使用的全部约束，无未支持关键字；阻塞任务未产Required如实列出，不假称全部齐备。",
+  "tasks": [
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+      "task_status": "BLOCKED",
+      "deliverable_status": "BLOCKED",
+      "required_count": 12,
+      "missing_required_due_to_blocker": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ASSET_MANIFEST.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/LAYER_EXPORT_MAP.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PSD_VALIDATION.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/COMBINATION_CHECK.json",
+        "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md"
+      ],
+      "pass_count": 0,
+      "not_tested_count": 5
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+      "task_status": "BLOCKED",
+      "deliverable_status": "BLOCKED",
+      "required_count": 5,
+      "missing_required_due_to_blocker": [],
+      "pass_count": 0,
+      "not_tested_count": 3
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+      "task_status": "BLOCKED",
+      "deliverable_status": "BLOCKED",
+      "required_count": 5,
+      "missing_required_due_to_blocker": [],
+      "pass_count": 2,
+      "not_tested_count": 1
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-PIPELINE-20261017",
+      "task_status": "DONE",
+      "deliverable_status": "READY_FOR_REVIEW",
+      "required_count": 4,
+      "missing_required_due_to_blocker": [],
+      "pass_count": 3,
+      "not_tested_count": 0
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017",
+      "task_status": "DONE",
+      "deliverable_status": "READY_FOR_REVIEW",
+      "required_count": 4,
+      "missing_required_due_to_blocker": [],
+      "pass_count": 2,
+      "not_tested_count": 0
+    }
+  ],
+  "gate1": "v0.2 USER_APPROVED; plan task DONE",
+  "new_expression_candidates_confirmed": 0,
+  "generation_calls_conservatively_counted": 1,
+  "generation_calls_remaining_conservative": 47,
+  "formal_gate2": "DRAFT_NOT_SUBMITTED",
+  "protected_client_dialogue_pngs_unchanged": 129,
+  "runtime_visual_and_new_psd": "NOT_TESTED"
+}

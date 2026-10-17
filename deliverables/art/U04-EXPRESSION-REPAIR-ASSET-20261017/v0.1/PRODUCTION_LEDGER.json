@@ -1,0 +1,40 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.1",
+  "budget_total_calls": 48,
+  "batch_calls_used_conservative": 1,
+  "batch_calls_remaining": 47,
+  "budget_repair_calls": 12,
+  "repair_calls_used": 0,
+  "art_a_allocated_calls": 24,
+  "art_a_calls_used_conservative": 1,
+  "art_a_calls_remaining": 23,
+  "calls": [
+    {
+      "sequence": 1,
+      "stage": "MT_S2",
+      "state": "surprised",
+      "tool": "Codex built-in image_gen.imagegen",
+      "input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
+      "input_sha256": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf",
+      "approved_source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+      "approved_source_sha256": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
+      "input_crop_command": "magick approved_original_mt_s2.png -crop 256x256+360+100 +repage mt_s2_approved_face_256.png",
+      "input_source_rect_xyxy": [360, 100, 616, 356],
+      "prompt_record": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/prompts/mt_s2_surprised_01_actual.txt",
+      "transparent_background": false,
+      "tool_result": "image generation failed: connection failed: error sending request",
+      "request_id": null,
+      "output_path": null,
+      "output_sha256": null,
+      "status": "UNKNOWN_COUNTED",
+      "candidate_count_confirmed": 0,
+      "started_at": null,
+      "finished_observed_at": "2026-10-17T11:41:29+08:00",
+      "elapsed_tool_seconds_approx": 121,
+      "followup_check": "2026-10-17T11:41:29+08:00 检查~/.codex/generated_images近10分钟无新文件；工具未返回可查询ID，停止同一请求重复提交。",
+      "input_path_later_replaced": "编码支持随后写入同名输入文件，当前SHA-256 fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603；按同一ImageMagick命令新路径重建SHA-256 76f00d018984bc8c44aa8844eb11ff7b4d91002a699c72e8193bbd6f3254ce07。两者解码RGBA与批准源同ROI裁切像素相同，但未恢复调用时57e874...原字节，不能复验该原件。"
+    }
+  ],
+  "note": "失败或未知调用保守计入。Art B另有独立账本；总批上限仍48，最终整合去重。"
+}

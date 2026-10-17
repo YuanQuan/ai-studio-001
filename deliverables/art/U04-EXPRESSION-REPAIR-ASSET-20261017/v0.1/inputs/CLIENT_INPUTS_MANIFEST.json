@@ -1,0 +1,265 @@
+{
+  "format": "u04-expression-inputs-v1",
+  "presign": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+  "samples": [
+    {
+      "stage": "MT_S2",
+      "approved": {
+        "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+        "source_sha256": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
+        "rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
+        "output_sha256": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_surprised.png",
+        "face_source_sha256": "fc50693ccb77f5c7ae1f3a414f6f2d9079bbc0a524edaca2ac1ac91b7d76b81a",
+        "source_size": [
+          256,
+          256
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_old_face_native_256.png",
+        "output_sha256": "0940f7dc17973e1a185dcd6704b97ccb6f16dbcb8626c7067956207e1e91c062",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_surprised.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_old_face_recomposed_source.png",
+        "recomposed_sha256": "7b3273e2e40bc3e6c5869f498c23f10759c9a2fed93aa9fdd466c5ab9e0a8a1c"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_old_face_256.png",
+        "sha256": "0940f7dc17973e1a185dcd6704b97ccb6f16dbcb8626c7067956207e1e91c062",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    },
+    {
+      "stage": "AT_S0",
+      "approved": {
+        "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+        "source_sha256": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+        "rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_approved_face_256.png",
+        "output_sha256": "c4b9af27a512f0e36825172881101e045343ae7f9e0c623a6cd143af42dd26d2",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+        "face_source_sha256": "8c7dda29aed25229d4ac74a3ba88cba67c4fd07e846d6792b68a71fbe85a842c",
+        "source_size": [
+          256,
+          256
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_old_face_native_256.png",
+        "output_sha256": "720c19c409484b2667519db4618f202357218efcbb926777c80c470a5663ed59",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_old_face_recomposed_source.png",
+        "recomposed_sha256": "80fc2b83d5b06d4cf1ff3464b83cac0cf161a36d88ff44b840f8fb65640bb3d6"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_old_face_256.png",
+        "sha256": "720c19c409484b2667519db4618f202357218efcbb926777c80c470a5663ed59",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    },
+    {
+      "stage": "AC_S0",
+      "approved": {
+        "source": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+        "source_sha256": "8a15c6febf0889b3dc014230974d700c8beadd2ba28fb9862640ba092a896a62",
+        "rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ac_s0_approved_face_256.png",
+        "output_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_angry.png",
+        "face_source_sha256": "51665d434b93f6f84c31d097ea702839b799ac963d32fec41f96532eae7addb2",
+        "source_size": [
+          256,
+          256
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ac_s0_old_face_native_256.png",
+        "output_sha256": "0d75b43851fa9ced6de772fd049d94b1039e2785dcbc3986073c21958a978bbe",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_angry.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_front_hair.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ac_s0_old_face_recomposed_source.png",
+        "recomposed_sha256": "7ae41e15c3345cb9b00e472ff62c59b393bed995f6eb121a5c6f855b93449f62"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ac_s0_old_face_256.png",
+        "sha256": "0d75b43851fa9ced6de772fd049d94b1039e2785dcbc3986073c21958a978bbe",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    },
+    {
+      "stage": "AJ_S2",
+      "approved": {
+        "source": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+        "source_sha256": "eaff9d5165a9b293fdda8cf13f12cea72a0bc8d04aa8fe81179f6f9732e018d1",
+        "rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_approved_face_256.png",
+        "output_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_happy.png",
+        "face_source_sha256": "5422ed63f176a7056a066a1920316dcc2845c120896ad921175cf5c840aac557",
+        "source_size": [
+          256,
+          256
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_old_face_native_256.png",
+        "output_sha256": "ef7ecc459f25ad51bbeb8d1d13550f2bc1c12a74fc4c68640f187422406919dc",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_happy.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_front_hair.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_old_face_recomposed_source.png",
+        "recomposed_sha256": "9b6e30ba1155f25f7a2579615299fa0b8b4354f68a6d08fd41ad2561241b37f2"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_old_face_256.png",
+        "sha256": "ef7ecc459f25ad51bbeb8d1d13550f2bc1c12a74fc4c68640f187422406919dc",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    },
+    {
+      "stage": "AD_S0",
+      "approved": {
+        "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+        "source_sha256": "fa4f47e03eedaea1d0d0dbe1b773d48d550d887027e971030cf83eadc80717c4",
+        "rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+        "output_sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_happy.png",
+        "face_source_sha256": "b7699543c73eb67e7cd62c154f49e427085f4bccdac398de99f68663ec4b505a",
+        "source_size": [
+          192,
+          192
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_old_face_native_192.png",
+        "output_sha256": "1a8e7027d8aba3aa700db402553423c63ae32ae94cdc7ba7493861cdb20d3209",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_happy.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_front_occlusion.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_old_face_recomposed_source.png",
+        "recomposed_sha256": "1680011790ba1f2de5c24735135ab906f1e27dd9764fc3f75d0159acfbf5cd53"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_old_face_256.png",
+        "sha256": "1a8e7027d8aba3aa700db402553423c63ae32ae94cdc7ba7493861cdb20d3209",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    },
+    {
+      "stage": "XJ_S0",
+      "approved": {
+        "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+        "source_sha256": "bbde4f30cfb84ddef890e6bfdea6ca3990f9669235a6f3abf27b78dc11b26dd9",
+        "rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+        "output_sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+        "operation": "RGBA原生坐标裁切，无重采样"
+      },
+      "old_native": {
+        "face_source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_happy.png",
+        "face_source_sha256": "7eb4e7e9eaef52a2719cdeccb385776a6bab5e1ce8c7f2fa809463f8d05a9f00",
+        "source_size": [
+          192,
+          192
+        ],
+        "output": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_native_192.png",
+        "output_sha256": "e077802e9d7ad8d2e9ed7fb53810d1af1ae13bcb5ca13b70ce0f5142235a7535",
+        "recompose_layers": [
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_base.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_happy.png",
+          "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_front_occlusion.png"
+        ],
+        "layer_export_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+        "base_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "front_reconstruction": "按source_rect_xyxy恢复到1024x1536坐标；如输出尺寸与source_rect不同，Lanczos确定性重采样",
+        "face_recomposition": "当前脸片按source_rect恢复画布，顺序base/face/front",
+        "recomposed_crop": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_recomposed_source.png",
+        "recomposed_sha256": "3f822954917344f4339bd32b88d3373392d0a877343ab89f02b2ff62cfb80d56"
+      },
+      "normalized_old_256": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_256.png",
+        "sha256": "e077802e9d7ad8d2e9ed7fb53810d1af1ae13bcb5ca13b70ce0f5142235a7535",
+        "resampling": "Lanczos；仅尺寸归一，不称原生无损"
+      }
+    }
+  ],
+  "identity_chain_incident": {
+    "stage": "MT_S2",
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
+    "first_art_call_sha256": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf",
+    "current_sha256": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+    "note": "Client写入同一路径导致文件字节身份变化；当前裁切与批准源ROI解码RGBA一致，但不得将当前SHA视为Art首次调用输入。"
+  }
+}

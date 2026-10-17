@@ -1,0 +1,41 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-PIPELINE-20261017",
+  "title": "表情局部合成与PSD导出支持工具",
+  "type": "tech",
+  "owner": "client",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "仅编写并核验资产生产用确定性配准/ROI合成、语义遮罩与PSD/重组/校验支持工具；不改apps/client正式资源或引擎源码。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "工具使用真实旧坐标/缩放和获准ROI，合成保护ROI外像素与清边alpha，保留旧文件；不得用几何嘴或五官变形制作新表情。",
+    "支持Art输入单态新候选与语义遮罩、base/face/front导出及PSD显隐/重组验证，报告可编辑限制；失败拒绝输出不伪造PASS。",
+    "有可复核使用说明和适当旧资源/合成边界检查，无Client正式资产或代码修改；脚本只位于本任务pipeline目录。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户2026-10-17本轮明确批准具体v0.2方案，主批准证据为Master USER_APPROVAL.json。",
+    "首图前同批预签、六代表样张/扩批门槛和总48调用额度继续；本任务不授权其他60态。",
+    "本单元示例无QA；Client接入等Gate2用户具体版本审批。",
+    "资源制作任务gpt-6-sol/high；编码支持gpt-6-luna/low；Tech/Producer gpt-6-sol/low。",
+    "跨职责授权：Client仅可在自己的deliverables/client/.../pipeline/编写资产支持脚本，不改apps/client。",
+    "Task创建时间 2026-10-17T11:24:07+08:00",
+    "Master PIPELINE_MASTER_ACCEPTANCE.json APPROVED；内部确定性支持工具完成，不构成新图/Gate2/正式Client接入批准。"
+  ]
+}

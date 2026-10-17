@@ -1,3 +1,12 @@
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 START -->
+## U04 表情修正生产 Gate1｜2026-10-17T11:30:37+08:00
+- 用户“批准”准确Art v0.2方案，Master观察11:24:07+08:00，原消息精确时刻未知。证据 `deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json`；方案SHA `691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a`，审核包SHA `4355126b412d08b008225d1be56b04702e67c34fe6099140d71c549977875817`，复算匹配。旧USER_REVIEW快照保留，现行USER_APPROVED。
+- Gate2具体图片/PSD/切片与同尺度重组未获批准；Client正式接入锁，其他60态未授权。
+- 首图工具错误属于生产阻塞，不是用户退回或新审批决定。Gate1 USER_APPROVED继续有效；Gate2仍DRAFT，具体PSD/切片未形成，Client正式接入继续锁定。
+- Client资产支持工具经Master `PIPELINE_MASTER_ACCEPTANCE.json` 内部接受，Task DONE、Approval PROFESSIONAL_REVIEW；不是用户Gate2成品批准，不解锁正式Client接入。
+- Producer本轮FLOW获Master `FLOW_MASTER_ACCEPTANCE.json` 内部接受，Task DONE/Approval PROFESSIONAL_REVIEW；此内部接受不代替Gate2具体资源用户批准。
+<!-- U04-EXPRESSION-REPAIR-PRODUCTION-20261017 END -->
+
 <!-- U04-EXPRESSION-REPAIR-20261017 START -->
 ## 2026-10-17｜U04 表情修正独立双门禁
 

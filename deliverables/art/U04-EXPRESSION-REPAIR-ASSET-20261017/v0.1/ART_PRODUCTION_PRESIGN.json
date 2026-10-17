@@ -1,0 +1,550 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.1",
+  "status": "ART_PRESIGNED_AWAITING_TECH",
+  "signed_by": "art",
+  "approved_plan_path": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+  "approved_plan_sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+  "gate1_user_approval": "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+  "scope": "先六代表样张；通过Art实图自评、Master独立看图、Tech兼容核验及扩批复签才做余24态",
+  "tool": {
+    "generation": "Codex内置image_gen逐态编辑，一次一候选",
+    "composite": "脸框内确定性合成，ROI外与现行显示基准RGBA相同",
+    "psd": "bggg-creator-image2psd assemble与现有image2psd_hidden_adapter.py，核五态互斥可见，不将生成平面图冒充原生PSD",
+    "rights": "本批不新增外部图片参考或字体。仅用现有项目批准源；OpenAI Terms of Use https://openai.com/policies/terms-of-use/ 的Content条款（2026-01-01生效）称用户保留Input权利，并在法律允许范围获得Output；输入权利责任仍属用户，输出可能不唯一。此条款不证明第三方输入权属或商用清权。"
+  },
+  "budget": {
+    "total_generation_calls_max": 48,
+    "first_expression_calls": 30,
+    "optional_base_or_occlusion_calls_max": 6,
+    "batch_repair_calls_max": 12,
+    "same_issue_repairs_max": 2,
+    "failed_or_unknown_calls_count_conservatively": true,
+    "sample_estimated_wall_minutes": 90,
+    "batch_estimated_wall_hours": 6,
+    "cost_gpu_time": "未知"
+  },
+  "fixed_contract": {
+    "composite_order": [
+      "base",
+      "oneface",
+      "front"
+    ],
+    "source_canvas_px": [
+      1024,
+      1536
+    ],
+    "face_export_px": {
+      "MT_S2": [
+        256,
+        256
+      ],
+      "AT_S0": [
+        256,
+        256
+      ],
+      "AC_S0": [
+        256,
+        256
+      ],
+      "AJ_S2": [
+        256,
+        256
+      ],
+      "AD_S0": [
+        192,
+        192
+      ],
+      "XJ_S0": [
+        192,
+        192
+      ]
+    },
+    "glasses": "小锦0魂圈纹高度近视镜保留，前遮挡唯一显示，2魂戴镜、3魂无镜",
+    "identity": "阿炭0魂黑眼圈保留；阿角男性",
+    "formal_client_import": "Gate2具体版本用户批准后"
+  },
+  "samples": [
+    {
+      "stage": "MT_S2",
+      "character": "孟桃",
+      "state": "surprised",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+        "sha256_actual": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s2_dialogue.psd",
+        "sha256": "262cd9fa30b3cd1e16c8e62fd5de34a050094c67b81dbe488af5f04064732551"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+        "sha256_actual": "7ae6eb58df509406896371a0bc551df89fbbc14e469fb16cbe518f46396a2369",
+        "size_px": [
+          651,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_surprised.png",
+        "sha256_actual": "fc50693ccb77f5c7ae1f3a414f6f2d9079bbc0a524edaca2ac1ac91b7d76b81a",
+        "size_px": [
+          256,
+          256
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "sha256_actual": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+        "size_px": [
+          51,
+          122
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_surprised.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base_px": [
+        142,
+        100
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_mt_s2_face_surprised.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_mt_s2_surprised_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    },
+    {
+      "stage": "AT_S0",
+      "character": "阿棠",
+      "state": "sad",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+        "sha256_actual": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+        "sha256": "e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "sha256_actual": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+        "size_px": [
+          503,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+        "sha256_actual": "8c7dda29aed25229d4ac74a3ba88cba67c4fd07e846d6792b68a71fbe85a842c",
+        "size_px": [
+          256,
+          256
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "sha256_actual": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+        "size_px": [
+          175,
+          75
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        380,
+        180,
+        636,
+        436
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        380,
+        180,
+        636,
+        436
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base_px": [
+        133,
+        180
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_at_s0_face_sad.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_at_s0_sad_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    },
+    {
+      "stage": "AC_S0",
+      "character": "阿炭",
+      "state": "angry",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+        "sha256_actual": "8a15c6febf0889b3dc014230974d700c8beadd2ba28fb9862640ba092a896a62",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_dialogue.psd",
+        "sha256": "959b74458ddc15b496f924addb6367a02a03c52d0708498b3b867cfdce2981a8"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_base.png",
+        "sha256_actual": "f6728d43b1f27a5b985fff87da4865dd7c9234460bc7f836df8cc8575d13c69a",
+        "size_px": [
+          454,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_angry.png",
+        "sha256_actual": "51665d434b93f6f84c31d097ea702839b799ac963d32fec41f96532eae7addb2",
+        "size_px": [
+          256,
+          256
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_front_hair.png",
+        "sha256_actual": "2566589ba09703b7662a299cb1f11df24864b8877226fffe815035ada338aa77",
+        "size_px": [
+          170,
+          148
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_angry.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_front_hair.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        350,
+        95,
+        606,
+        351
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        350,
+        95,
+        606,
+        351
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base_px": [
+        48,
+        95
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_angry_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_face_angry.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_angry_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    },
+    {
+      "stage": "AJ_S2",
+      "character": "阿角",
+      "state": "happy",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+        "sha256_actual": "eaff9d5165a9b293fdda8cf13f12cea72a0bc8d04aa8fe81179f6f9732e018d1",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s2_dialogue.psd",
+        "sha256": "83dbf749bbb137abac2c03adb6830e62f0641546609f2ff212dbf846553d931c"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_base.png",
+        "sha256_actual": "476da9443204134ba5278ba920893a6dd17d57f2cd7e9cbe42907e5ec7d19fc9",
+        "size_px": [
+          594,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_happy.png",
+        "sha256_actual": "5422ed63f176a7056a066a1920316dcc2845c120896ad921175cf5c840aac557",
+        "size_px": [
+          256,
+          256
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_front_hair.png",
+        "sha256_actual": "afd6dae5ec6b9204b4e93edb942e06e053dc13798e0bc30e85fb107fafa7ae30",
+        "size_px": [
+          186,
+          155
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_happy.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_front_hair.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        365,
+        130,
+        621,
+        386
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        365,
+        130,
+        621,
+        386
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base_px": [
+        120,
+        130
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_face_happy.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_aj_s2_happy_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    },
+    {
+      "stage": "AD_S0",
+      "character": "阿灯",
+      "state": "happy",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+        "sha256_actual": "fa4f47e03eedaea1d0d0dbe1b773d48d550d887027e971030cf83eadc80717c4",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+        "sha256": "9e4726cf571d67b226bcb7b9c9e4339a773d13d4581d645fd7f8d154a4076b1d"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_base.png",
+        "sha256_actual": "03d0bcfc7e79ba7c4dd10ceda46acc17465c8f6f0b29fd71b7b309b74306eda0",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_happy.png",
+        "sha256_actual": "b7699543c73eb67e7cd62c154f49e427085f4bccdac398de99f68663ec4b505a",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_front_occlusion.png",
+        "sha256_actual": "b85ceeb72e024b13c33e00d0767fd727d7c495d865826badd478f888de149eb1",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_happy.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_front_occlusion.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base_px": [
+        232,
+        139
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ad_s0_face_happy.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ad_s0_happy_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    },
+    {
+      "stage": "XJ_S0",
+      "character": "小锦",
+      "state": "happy",
+      "approved_identity_reference": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+        "sha256_actual": "bbde4f30cfb84ddef890e6bfdea6ca3990f9669235a6f3abf27b78dc11b26dd9",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+        "sha256": "93cff7468175ae955f655843f9f2995597668d158d8738bb22c80aa5ee2cfc70"
+      },
+      "current_display_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_base.png",
+        "sha256_actual": "9d51ed7fd12951adbe70e4e6e9732642651b1a9063ef16a345938649684c231b",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_face": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_happy.png",
+        "sha256_actual": "7eb4e7e9eaef52a2719cdeccb385776a6bab5e1ce8c7f2fa809463f8d05a9f00",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "current_display_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_front_occlusion.png",
+        "sha256_actual": "82a90e715aad5b7256294e9581a184de237c9a777692dc1588cf45a312bdbb02",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "input_edit_target": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+      "input_context": [
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_happy.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_base.png",
+        "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_front_occlusion.png"
+      ],
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "face_edit_roi_xyxy_source_canvas": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base_px": [
+        248,
+        167
+      ],
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+      "registered_slice_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_xj_s0_face_happy.png",
+      "same_scale_recompose_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_xj_s0_happy_recomposed.png",
+      "pixel_rule": "候选取脸框内眉眼嘴和必要相连皮肤阴影；ROI外沿用现行旧切片RGBA。实际mask须在候选审核后记录。"
+    }
+  ],
+  "pre_image_gate": {
+    "art_presign": "APPROVED",
+    "tech_presign": "PENDING",
+    "producer_gate1_done": "PENDING",
+    "first_image_allowed": false
+  },
+  "note": "图像输入首次编辑前逐张view_image核实；输出路径仅为目标，尚未生成。候选尺寸、配准或锚点漂移即拒用。"
+}

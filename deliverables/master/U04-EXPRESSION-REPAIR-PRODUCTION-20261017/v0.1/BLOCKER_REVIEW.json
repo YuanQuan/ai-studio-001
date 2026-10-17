@@ -1,0 +1,20 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "reviewer": "master",
+  "decision": "BLOCKED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "唯一MT_S2 surprised内置imagegen调用返回连接发送错误，无图片、请求ID或路径；确认新候选0，按UNKNOWN_COUNTED保守记1/48，不盲重发。"
+    },
+    {
+      "severity": "INFO",
+      "message": "用户批准具体Gate1与首图前同批预签均真实完成；当前停点是实际工具故障，不是等待用户再次批准方案或成品Gate2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六样实图、实际PSD/切片、扩批复签和30态均未完成，Gate2保持DRAFT未送审。旧参考裁剪不能作为新成果。"
+    }
+  ],
+  "next_action": "保留当前输入、提示、预算和阻塞证据；有内置工具恢复或可查输出的可靠证据后再核可执行分支。CLI/API备选须依imagegen技能由用户明确选择后才可用。"
+}

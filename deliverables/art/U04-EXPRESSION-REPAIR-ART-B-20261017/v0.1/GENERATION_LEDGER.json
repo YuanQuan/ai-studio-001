@@ -1,0 +1,46 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+  "version": "v0.1",
+  "updated_at": "2026-10-17T11:43:15+08:00",
+  "status": "PAUSED_BEFORE_FIRST_CALL",
+  "reason": "主 Art 首次内置 image_gen 调用发生连接失败且结果未知；Master 指示本单元暂停新调用，避免并发消耗未知额度。",
+  "budget": {
+    "unit_call_limit": 24,
+    "first_expression_limit": 15,
+    "base_or_occlusion_limit": 3,
+    "repair_limit": 6,
+    "calls_attempted": 0,
+    "calls_failed_or_unknown": 0,
+    "calls_remaining": 24
+  },
+  "inputs": [
+    {
+      "stage": "AJ_S2",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_approved_face_256.png",
+      "sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+      "actual_size_px": [256, 256],
+      "source_rect_xyxy": [365, 130, 621, 386],
+      "source_crop_rgba_equal": true
+    },
+    {
+      "stage": "AD_S0",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+      "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+      "actual_size_px": [256, 256],
+      "source_rect_xyxy": [310, 185, 566, 441],
+      "source_crop_rgba_equal": true
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+      "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+      "actual_size_px": [256, 256],
+      "source_rect_xyxy": [330, 223, 586, 479],
+      "source_crop_rgba_equal": true
+    }
+  ],
+  "calls": []
+}

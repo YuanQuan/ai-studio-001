@@ -1,0 +1,24 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PIPELINE-20261017",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "接受内部确定性支持工具。四Required实存、三验收原文同序PASS；核六阶段旧数据mask外RGBA保护、旧PSD可读及显隐检查。实际新候选/Art mask不存在，未声称新图视觉通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已修复坏base及非法坐标先写半截结果的问题：输入/geometry预校验、临时目录完成后提交、拒绝覆盖；用法明确透明oneface与已重组审图crop的区别，并说明AD/XJ192归一。坏base、非法ROI与有效提交检查通过。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "一次调用输入在准备过程中被同名重编码覆盖，首次字节原件无法复验；已保留调用前SHA与当前SHA和像素一致证据，此事实不被工具通过结论掩盖。"
+    },
+    {
+      "severity": "INFO",
+      "message": "支持脚本SHA256 a586b73d5242c1ad6fe4932151b9f8a0408205ca6997609726c5744d7133ef21；仅产准备输入与工具，不改正式Client资源或放行扩批。"
+    }
+  ],
+  "next_action": "Producer将Client支持Task置DONE并登记内部PROFESSIONAL_REVIEW，不新增用户审批；主Art/Art-B/Tech仍因新样缺失保持BLOCKED，Gate2 DRAFT。"
+}

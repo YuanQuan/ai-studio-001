@@ -1,0 +1,34 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+  "owner": "art",
+  "summary": "完成AJ、AD、XJ三阶段批准脸部输入的来源SHA、ROI裁切RGBA零差和实图锚点核对；主批内置image_gen连接失败后本单元按Master指示停在首张新图前，实际调用0、候选0。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/SAMPLE_CHECKS.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅制作阿角2魂、阿灯0魂、小锦0魂的批准代表样张与后续获放行12态；首样前同批预签、扩批前六样通过与复签，调用额度最多24且全局48内。",
+      "result": "NOT_TESTED",
+      "evidence": "同批首图预签存在，三张新样尚未生成；本单元未越过扩批门槛。"
+    },
+    {
+      "criterion": "逐态实际候选与提示、源坐标/hash、预算/失败记录真实，小锦保留原近视圈纹单次显示，头向/身份/画风不漂移。",
+      "result": "NOT_TESTED",
+      "evidence": "批准输入SHA、ROI和RGBA裁切核对通过；GENERATION_LEDGER记本单元0调用、0候选，SAMPLE_ART_REVIEW记旧图目视问题与新图未测试。"
+    },
+    {
+      "criterion": "输出交主Art总包引用或按sha整合，Required及验收同序，不改其他角色阶段、旧资源或Client，不自建任务。",
+      "result": "NOT_TESTED",
+      "evidence": "只有本单元支持文档及pipeline落盘的只读输入，无可整合的新候选、PSD或切片。"
+    }
+  ],
+  "risks": [
+    "主Art首个内置image_gen请求连接失败，无工具ID、无结果路径，调用状态按UNKNOWN保守计；本单元等待同工具恢复及Master解除暂停。",
+    "旧裁图和旧重组只用于参考，不能替代新样张或Gate2具体版本。"
+  ],
+  "status": "BLOCKED"
+}

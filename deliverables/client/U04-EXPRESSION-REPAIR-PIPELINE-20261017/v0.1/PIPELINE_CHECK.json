@@ -1,0 +1,218 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PIPELINE-20261017",
+  "version": "v0.1",
+  "scope": "工具能力与既有样本边界核对；不代表任何新表情候选视觉通过。",
+  "runtime_python": "/Users/yuanquan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "checks": {
+    "python_compile": "PASS",
+    "cli_help": "PASS",
+    "six_sample_roi_crop_rgba_match": "PASS",
+    "six_sample_old_psd_composite_readable": "PASS",
+    "six_sample_psd_single_expression_visibility_flags": "PASS",
+    "synthetic_same_candidate_roi_mask_boundary_six_stages": "PASS; each outside-mask RGBA changed pixels 0; input file hashes unchanged; canvas 1024x1536",
+    "overwrite_refusal": "PASS; pre-existing sentinel output left byte-identical",
+    "actual_art_candidate_with_semantic_mask": "NOT_TESTED; Art ledger records one imagegen request counted conservatively after connection failure with 0 confirmed candidate images; Art-B generation is paused by Master, no candidate or semantic mask available.",
+    "visual_anchor_acceptance": "NOT_DECIDED_BY_CLIENT_TOOL",
+    "atomic_failure_no_partial_output": "PASS; bad base path and negative/out-of-canvas face rect each exit 2, leave target output absent, and leave no staging directory.",
+    "oneface_input_guard": "PASS; canonical old MT face export is 256x256 with transparent alpha; recomposed source review crop has only 42 transparent pixels and is rejected by alpha guard.",
+    "output_commit": "PASS; all declared layers/spec paths/coordinates validated and rendered in sibling temporary directory; complete output directory is renamed into place only on success; existing output path refused.",
+    "valid_candidate_compose_atomic_commit": "PASS; valid synthetic candidate produced all four outputs together and retained NOT_DECIDED_BY_TOOL visual status."
+  },
+  "samples": [
+    {
+      "stage": "MT_S2",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+      "psd_sha256": "262cd9fa30b3cd1e16c8e62fd5de34a050094c67b81dbe488af5f04064732551",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS",
+      "sha256_used_by_first_art_call": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf"
+    },
+    {
+      "stage": "AT_S0",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "c4b9af27a512f0e36825172881101e045343ae7f9e0c623a6cd143af42dd26d2",
+      "psd_sha256": "e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS"
+    },
+    {
+      "stage": "AC_S0",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+      "psd_sha256": "959b74458ddc15b496f924addb6367a02a03c52d0708498b3b867cfdce2981a8",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS"
+    },
+    {
+      "stage": "AJ_S2",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+      "psd_sha256": "83dbf749bbb137abac2c03adb6830e62f0641546609f2ff212dbf846553d931c",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS"
+    },
+    {
+      "stage": "AD_S0",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+      "psd_sha256": "9e4726cf571d67b226bcb7b9c9e4339a773d13d4581d645fd7f8d154a4076b1d",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS"
+    },
+    {
+      "stage": "XJ_S0",
+      "approved_source_crop_rgba_match": "PASS",
+      "approved_input_sha256_current": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+      "psd_sha256": "93cff7468175ae955f655843f9f2995597668d158d8738bb22c80aa5ee2cfc70",
+      "psd_pillow_composite_readable": true,
+      "expression_layer_flags": {
+        "HAPPY": {
+          "visible": 0,
+          "count": 3
+        },
+        "SURPRISED": {
+          "visible": 0,
+          "count": 3
+        },
+        "SAD": {
+          "visible": 0,
+          "count": 3
+        },
+        "SMILE": {
+          "visible": 3,
+          "count": 3
+        },
+        "ANGRY": {
+          "visible": 0,
+          "count": 3
+        }
+      },
+      "exactly_one_expression_state_visible": "PASS"
+    }
+  ],
+  "mt_s2_identity_chain_incident": {
+    "approved_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
+    "sha256_used_by_first_art_call": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf",
+    "sha256_current_file": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+    "cause": "Client参考裁切写入与Art已创建的同路径文件，改变PNG文件字节身份。",
+    "pixel_check": "当前文件与批准源ROI解码RGBA逐像素相同；不代表字节身份相同。",
+    "limitation": "已无法从现文件恢复/证明首次调用使用文件的原字节；Art首次调用必须以其账本SHA为准，不得将当前SHA回填为首次调用输入。",
+    "note": "Ledger reports same-path write changed current file to fe652f...; a separate same-ROI ImageMagick reconstruction was SHA 76f00d...; both decode to the approved crop but neither restores or equals the original first-call SHA. Current file identity is fe652f...",
+    "also_rebuilt_reference_sha256": "76f00d018984bc8c44aa8844eb11ff7b4d91002a699c72e8193bbd6f3254ce07"
+  },
+  "art_observation": "Art-B 报告旧XJ组合眼镜/眼周有白边及边缘污染；本工具不自动修边，须由Art在明确mask和视觉锚点下处理。",
+  "psd_limit": "解析PSD v1顶层图层可见flag并由Pillow读取合成图；不等同Editor打开或证明笔触/矢量原生可编辑。",
+  "outcome": "READY_FOR_REVIEW",
+  "actual_art_candidate_with_semantic_mask": "NOT_TESTED; Art ledger records one imagegen request counted conservatively after connection failure, with 0 confirmed candidate images; Art-B generation paused by Master, no candidate or semantic mask available."
+}

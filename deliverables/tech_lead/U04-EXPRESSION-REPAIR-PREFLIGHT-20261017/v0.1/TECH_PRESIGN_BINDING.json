@@ -1,0 +1,12 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "review_path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+  "review_decision": "APPROVED",
+  "plan_sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+  "art_presign_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+  "art_presign_sha256": "6c52cb9edd7906ddceea2340c1711695c0d3ad1692fab6414377487916ec4eeb",
+  "scope": "六代表样张首图前；不含扩余24态或Gate2批准",
+  "checks": ["1024x1536源画布", "MT/AT/AC/AJ脸源及导出256x256、缩放1.0；AD/XJ脸源256x256、导出192x192、缩放0.75", "沿用稳定阶段ID、source rect、offset、pivot及base+oneface+front三层", "小锦S0圈纹镜仅front显示一次的制作约束", "30+至多6+至多12=48次生成调用预算，失败和未知保守计数", "image_gen候选需配准后ROI内回填，ROI外现行RGBA和清边alpha冻结", "PSD五态互斥须在样张验证；项目内已有hidden adapter文件"],
+  "not_tested": ["新候选、PSD、切片或重组实图", "ROI外RGBA零差及清边alpha", "小锦镜片仅一次实际显示", "PSD互斥可见与adapter运行", "贴图页数、驻留内存、DrawCall和运行画面"],
+  "producer_gate1": "Producer已回报Gate1同SHA核对并登记USER_APPROVED、方案Task DONE；首图前门禁就绪"
+}

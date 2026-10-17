@@ -1,0 +1,38 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PIPELINE-20261017",
+  "owner": "client",
+  "summary": "提交确定性表情 ROI 合成和 PSD 可读性检查支持工具，以及六样输入参考裁切登记。",
+  "artifacts": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-PIPELINE-20261017/v0.1/pipeline/expression_pipeline.py",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/CLIENT_INPUTS_MANIFEST.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "工具使用真实旧坐标/缩放和获准ROI，合成保护ROI外像素与清边alpha，保留旧文件；不得用几何嘴或五官变形制作新表情。",
+      "result": "PASS",
+      "evidence": "expression_pipeline.py 限定256x256 source ROI、Art RGBA mask合成及mask外RGBA拒绝条件；预核验全部输入、尺寸和源画布矩形，所有输出先写同级临时目录再原子提交；坏路径/非法矩形失败不留输出且拒绝覆盖。PIPELINE_CHECK.json记录边界检查。"
+    },
+    {
+      "criterion": "支持Art输入单态新候选与语义遮罩、base/face/front导出及PSD显隐/重组验证，报告可编辑限制；失败拒绝输出不伪造PASS。",
+      "result": "PASS",
+      "evidence": "六阶段同像候选+局部mask边界核查均为mask外RGBA差异0；六份旧PSD的合成图可读且五态互斥flag通过。新Art候选审美判断未测试：一次imagegen连接失败计入预算、确认候选0，Art-B暂停；见PIPELINE_CHECK.json。"
+    },
+    {
+      "criterion": "有可复核使用说明和适当旧资源/合成边界检查，无Client正式资产或代码修改；脚本只位于本任务pipeline目录。",
+      "result": "PASS",
+      "evidence": "PIPELINE_USAGE.md、PIPELINE_CHECK.json及sha登记可复核；工作区检查确认本任务未改apps/client及旧资源，支持文件仅在本任务pipeline目录。"
+    }
+  ],
+  "assumptions": [
+    "source_rect_xyxy 以已签批的1024x1536源画布坐标定义。",
+    "Art提供的RGBA遮罩alpha为唯一可修改范围，且由Art保留其语义来源。"
+  ],
+  "risks": [
+    "若 base/front 导出尺寸与源矩形不等，恢复操作会重采样，不能声称像素无损。",
+    "PSD工具的顶层图层可见状态检查不能证明原生绘画信息可编辑。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

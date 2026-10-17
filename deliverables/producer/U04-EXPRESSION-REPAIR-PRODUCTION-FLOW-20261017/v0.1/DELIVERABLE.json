@@ -1,0 +1,28 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017",
+  "owner": "producer",
+  "summary": "Gate1方案DONE/USER_APPROVED；主Art与Art-B、Tech真实BLOCKED，编码支持与Producer内部DONE；Gate2 DRAFT，Client正式接入锁。四Required及六线continuity已获Master接受。",
+  "artifacts": [
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "用户准确v0.2 Gate1批准、Task DONE与新生产线真实状态/预签/产物/预算持续可视化；Gate2未批准则Client锁。",
+      "result": "PASS",
+      "evidence": "FLOW_REPORT.md；project/WORKFLOW_STATUS.md、MILESTONE_LOG.md、APPROVAL_LOG.md、dashboard/index.html生产标记块；Art/Tech实际证据。"
+    },
+    {
+      "criterion": "Required、Master内部接受、continuity和有可靠起止的复盘齐备；不改其他并发任务内容，不虚报审美或运行通过。",
+      "result": "PASS",
+      "evidence": "四Required实存；CONTINUITY_CHECK.json六线最终PASS；Master FLOW_MASTER_ACCEPTANCE.json APPROVED。"
+    }
+  ],
+  "risks": [
+    "图像工具连接失败，无输出/请求ID，UNKNOWN占1/48；原调用输入文件后续同名重编码，原字节不可复验。",
+    "Gate2未批准；新正式资源和Client导入均未发生。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

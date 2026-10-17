@@ -1,0 +1,40 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017",
+  "title": "表情修正资源生产流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "记录用户准确Gate1批准与方案DONE；持续监督生产预签、实际样张、预算/版本、Gate2与Asset登记，完成continuity和复盘。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-PRODUCTION-FLOW-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "用户准确v0.2 Gate1批准、Task DONE与新生产线真实状态/预签/产物/预算持续可视化；Gate2未批准则Client锁。",
+    "Required、Master内部接受、continuity和有可靠起止的复盘齐备；不改其他并发任务内容，不虚报审美或运行通过。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户2026-10-17本轮明确批准具体v0.2方案，主批准证据为Master USER_APPROVAL.json。",
+    "首图前同批预签、六代表样张/扩批门槛和总48调用额度继续；本任务不授权其他60态。",
+    "本单元示例无QA；Client接入等Gate2用户具体版本审批。",
+    "资源制作任务gpt-6-sol/high；编码支持gpt-6-luna/low；Tech/Producer gpt-6-sol/low。",
+    "跨职责授权：Client仅可在自己的deliverables/client/.../pipeline/编写资产支持脚本，不改apps/client。",
+    "Task创建时间 2026-10-17T11:24:07+08:00",
+    "Master FLOW_MASTER_ACCEPTANCE.json APPROVED，四Required与六线continuity及复盘齐；内部流程DONE，不代表Gate2用户批准。"
+  ]
+}
