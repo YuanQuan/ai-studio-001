@@ -1,0 +1,69 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PILOT-20261017-ART",
+  "owner": "art",
+  "summary": "已完成获批范围内10件原像素裁片、10层PSD资源库母版、原尺寸重组、黑灰白及现行樱花场景静态对照；源→PSD实层→裁片→回置原画布的可见RGBA逐件零差。具体版本待用户Gate2，不作正式接入结论。",
+  "artifacts": [
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PREPRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ART_PRESIGN.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/source/optimization_pilot_master.psd",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/contact_sheet.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/COMPARISON_REPORT.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/USER_REVIEW_PACKET.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PRODUCTION_LEDGER.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_body.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_sign.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_walk_00.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_run_00.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_01.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_03.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_04.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_05.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_06.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_sakura_rr_spirit_a_flame.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/source/psd_manifest.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/source/process_notes.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/OWNER_VERIFICATION.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/shop_01_body_sign_recomposition.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/scene_flame_detail_source_vs_new.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/sample_review_bundle.zip",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/PACKAGE_MANIFEST.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/OUTPUT_INDEX.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/build_pilot.py",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/make_review.py"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "10件代表绑定批准的输入身份/范围、现有源和母版，首张输出前Art/Tech同批预签一致。",
+      "result": "PASS",
+      "evidence": "同批USER_AUTHORIZATION/INPUT_CHECK、原Gate1 USER_APPROVED、Art/Tech两份预签APPROVED且PREPRODUCTION_PLAN SHA一致；CUT_MANIFEST锁10件源SHA和原母版关系。"
+    },
+    {
+      "criterion": "10件裁片保持所有可见RGBA像素、2px保护边、原画布/offset/pivot，源与PSD层导出/重组映射可复核。",
+      "result": "PASS",
+      "evidence": "CUT_MANIFEST与PSD_LAYER_EXPORT_MAP逐项给出真实层帧号、裁框、原尺寸、offset和pivot；COMPARISON_REPORT记录10件alpha及可见RGB均0差、2px边验证PASS。"
+    },
+    {
+      "criterion": "PSD真实可读且分层/可编辑范围如实，原尺寸重组像素及同背景同尺度对照有证据，未改源工程。",
+      "result": "PASS",
+      "evidence": "ImageMagick实读10层PSD；process_notes明确栅格编辑限制；10张原尺寸重组、黑灰白同背景对照及樱花v0.3背景/同实例尺寸静态图均在review/，源工程由Master另行文件核对未变。真实Creator运行NOT_TESTED。"
+    },
+    {
+      "criterion": "提交具体样本清单、实际图像与同尺度效果直接待用户Gate2，未扩批或正式接入；预算和失败记录完整。",
+      "result": "PASS",
+      "evidence": "10实际PNG、contact_sheet、USER_REVIEW_PACKET、CUT_MANIFEST及PRODUCTION_LEDGER齐全；生成0调用、纠错0轮、无失败，仅10件；Gate2待审，Client未接入。"
+    }
+  ],
+  "assumptions": [
+    "现行获批PNG为本次源像素事实；奶茶/樱花既有PSD只读，游客旧原生PSD缺失时仅转换可编辑栅格层。",
+    "樱花场景对照以获批v0.3 PSD背景和原实例尺寸作静态投影，运行尺度与窗口效果以后续Creator实际验证为准。"
+  ],
+  "risks": [
+    "新切片尚未获用户Gate2批准；Client不能正式接入。",
+    "Creator导入后实际UUID、trim/offset、动作接缝、遮挡及平台性能均NOT_TESTED；PSD尚未在Photoshop/Photopea交互编辑验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

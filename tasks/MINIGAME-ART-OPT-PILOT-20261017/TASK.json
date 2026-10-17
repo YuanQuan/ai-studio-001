@@ -1,0 +1,35 @@
+{
+  "id": "MINIGAME-ART-OPT-PILOT-20261017",
+  "title": "无损代表样本制作与效果提交",
+  "type": "integration",
+  "owner": "master",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "承接已批具体方案，组织同批预签与10件无损代表生产，验证源/母版/切片重组后送具体Gate2，不扩批或改客户端。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/INPUT_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md"
+  ],
+  "deliverables": [
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/MASTER_SUMMARY.md",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确记录上轮方案批准与当前10件输入，Art/Tech首图前预签同SHA。",
+    "10件实际样本、PSD及映射、原尺寸重组与同尺度效果核验有真实证据，源工程未改。",
+    "具体Gate2版本送USER_REVIEW，Producer流程/连续执行/复盘闭环，未越过接入或扩批门禁。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "当前有本轮USER_AUTHORIZATION/INPUT_CHECK/MASTER_SUMMARY实产，不是占位。",
+    "仅当前游戏不改Studio规则；保留既有未提交工作。",
+    "Master统一日常Git提交推送，其他Owner不Git。",
+    "本阶段仅代表，不把上一轮文档批准或本轮静态验证等同新切片已获批或整体优化DONE。",
+    "2026-10-17T11:03:14+08:00 当前10件具体样本Gate2 USER_REVIEW，身份4957fffeeb78d0558ca2149e7a76f303da1981f1c03f86c96bee5531f992aea4；上一轮34方案已批保留快照，整体优化尚未完成。"
+  ]
+}

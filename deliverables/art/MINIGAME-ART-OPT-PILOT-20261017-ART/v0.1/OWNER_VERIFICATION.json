@@ -1,0 +1,27 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PILOT-20261017-ART",
+  "kind": "Owner文件、像素和静态视觉核对；非切图后专业效果门禁",
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "双预签与范围",
+      "result": "PASS",
+      "evidence": "Art/Tech两份预签均APPROVED并指向同一PREPRODUCTION_PLAN SHA-256 e2a2c7a74830c9929d7989964dc302537d198bafe5f5f96af4e7fde088312294；原方案Gate1已USER_APPROVED，10件源SHA与Master INPUT_CHECK一致。"
+    },
+    {
+      "name": "真实PSD层到导出",
+      "result": "PASS",
+      "evidence": "ImageMagick读取新PSD的10个真实栅格层；反向平移回原画布后逐件alpha与可见RGB零差，裁片回置原画布再比仍零差；逐件数值见review/COMPARISON_REPORT.json。"
+    },
+    {
+      "name": "视觉锚点",
+      "result": "PASS",
+      "evidence": "已目视contact_sheet、奶茶body+sign原位重组、游客walk/run/happy/sad极值、火焰现行樱花背景同实例尺寸静态投影。蓝瓦暖灯、悬杯、奶白蓝线及表情、青蓝弱光及莲座关系继承原图；招牌原有零星边缘可见像素保持。"
+    },
+    {
+      "name": "源工程与运行",
+      "result": "NOT_TESTED",
+      "evidence": "Art本轮未导入或改动客户端；Creator真实导入、UUID、节点trim、动作接缝、视窗运行和性能由后续Client/Tech另核。本记录不声称这些已通过。"
+    }
+  ]
+}

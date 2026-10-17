@@ -1,0 +1,43 @@
+{
+  "id": "MINIGAME-ART-OPT-PILOT-20261017-FLOW",
+  "title": "方案批准及代表样本流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "方案批准及代表样本流程监督，持续到当前具体样本用户门禁，不改正式客户端。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/INPUT_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/MINIGAME-ART-OPT-PILOT-20261017-FLOW/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/MINIGAME-ART-OPT-PILOT-20261017-FLOW/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/MINIGAME-ART-OPT-PILOT-20261017-FLOW/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录上一轮四专业准确方案用户批准，维护本批真实开工、预签、产物版本与门禁状态。",
+    "结束前独立核身份/Required/审批及continuity/真实时间复盘，样本Gate2未批准前禁止接入或扩批。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master唯一分派；先读最新角色五文件，不自行分派/Git；仅写自己交付与Owner状态，Producer另有本批全局维护授权。",
+    "保护当前未提交的其他工作；本任务不修改apps/client、原PNG/PSD/meta及已批34项方案。",
+    "无QA Agent：本批现有单元样本由Owner记录可复核证据。",
+    "本项整体优化文档/流程沿已明确临时gpt-6.1-sol low例外。",
+    "先独立核用户批准34身份，登记原ART/TECH/UI/VFX USER_APPROVED并据Master旧包Review接受原文档子任务DONE；旧总体父任务IN_PROGRESS，不能把整体优化DONE。",
+    "已授权维护本批/原总体本线Task与Approval及project状态/审批/里程碑/复盘/dashboard/资源登记独立marker；保留其他改动。",
+    "只有有首产才IN_PROGRESS；只解锁同SHA预签后的美术执行，具体切片待用户Gate2。",
+    "2026-10-17T10:47:46+08:00 Producer实际首产FLOW_REPORT.md，开始独立身份核验。",
+    "2026-10-17T11:03:14+08:00 独立87/74/41/34/687身份及Required/验收/门禁/continuity完成，提交Master内部接受。",
+    "最终接受 2026-10-17T11:04:23+08:00：Master `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FLOW_ACCEPTANCE.json` APPROVED，FLOW内部支持DONE。当前Art/本批Master阶段/旧总体检查点仍USER_REVIEW，具体Gate2未获批准；Tech DONE；无READY/IN_PROGRESS空挂，未接入或扩批。正式监督检查10:43:12至11:03:14共1202秒；至最终接受登记11:04:23总历时1271秒，末69秒为接受/收尾登记区间，精确执行与等待拆分未知。"
+  ]
+}

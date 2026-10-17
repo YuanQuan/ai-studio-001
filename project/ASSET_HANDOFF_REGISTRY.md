@@ -807,3 +807,30 @@ Creator 导入后，Client `deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261
 
 最终运行接入实测见Master `EXAMPLE-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json`：r6五新SpriteFrame UUID、桥/镜像街面与眼睛均在实际Web核对；新运行版准确 `v0.1-r6` 已独立进入 `USER_REVIEW`，用户尚未批准。原Art v0.1切片清单及文件保持不变。
 <!-- EXAMPLE-INTEGRATION-20261016 END -->
+
+<!-- MINIGAME-ART-OPT-PILOT-20261017 START -->
+## 2026-10-17 10件代表样本（计划，未导入）
+
+现行10件稳定ID、原PNG/UUID及计划输出见 `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/INPUT_CHECK.json`。新版本尚未导入，客户端正式路径仅计划；原UUID是现行基线身份，不冒充新导入UUID。具体Gate2未批准；样本产出后补登记真实美术路径/版本与身份。
+<!-- MINIGAME-ART-OPT-PILOT-20261017 END -->
+
+<!-- MINIGAME-ART-OPT-PILOT-20261017-FINAL START -->
+## 10件实际交付v0.1，Gate2待批准
+
+|稳定ID|Art实际v0.1文件|客户端计划路径|新导入UUID|
+|---|---|---|---|
+|U03_SHOP_01_BODY|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_body.png`|`apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png`|未导入，待核，可能沿用现UUID|
+|U03_SHOP_01_SIGN|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_sign.png`|`apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_WALK_00|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_walk_00.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_00.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_RUN_00|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_run_00.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_00.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_HAPPY_01|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_01.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_01.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_HAPPY_03|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_03.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_03.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_SAD_04|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_04.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_04.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_SAD_05|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_05.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_05.png`|未导入，待核，可能沿用现UUID|
+|UG_GHOST_01_SAD_06|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_06.png`|`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_06.png`|未导入，待核，可能沿用现UUID|
+|tex_sakura_rr_spirit_a_flame|`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_sakura_rr_spirit_a_flame.png`|`apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_a_flame.png`|未导入，待核，可能沿用现UUID|
+
+母版：`deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/source/optimization_pilot_master.psd`；逐件SHA/原画布/offset/重组见 `deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/CUT_MANIFEST.json`；冻结身份 4957fffeeb78d0558ca2149e7a76f303da1981f1c03f86c96bee5531f992aea4。未正式导入，运行未测。
+
+最终接受 2026-10-17T11:04:23+08:00：Master `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FLOW_ACCEPTANCE.json` APPROVED，FLOW内部支持DONE。当前Art/本批Master阶段/旧总体检查点仍USER_REVIEW，具体Gate2未获批准；Tech DONE；无READY/IN_PROGRESS空挂，未接入或扩批。正式监督检查10:43:12至11:03:14共1202秒；至最终接受登记11:04:23总历时1271秒，末69秒为接受/收尾登记区间，精确执行与等待拆分未知。
+<!-- MINIGAME-ART-OPT-PILOT-20261017-FINAL END -->

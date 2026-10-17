@@ -1,0 +1,39 @@
+{
+  "id": "MINIGAME-ART-OPT-PILOT-20261017-TECH",
+  "title": "无损代表首图前技术预签",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "无损代表首图前技术预签，持续到当前具体样本用户门禁，不改正式客户端。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/INPUT_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PILOT-20261017-TECH/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PILOT-20261017-TECH/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PILOT-20261017-TECH/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "核34批准身份及10代表真实源、原PSD适用性、裁边/坐标/像素归一/预算，Art同批预案SHA可执行。",
+    "首张正式PNG/PSD/切片前完成独立同批预签；仅预案技术支持，不增加自行切图的后置效果Review门禁或替代Gate2。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "AUTO",
+  "notes": [
+    "Master唯一分派；先读最新角色五文件，不自行分派/Git；仅写自己交付与Owner状态，Producer另有本批全局维护授权。",
+    "保护当前未提交的其他工作；本任务不修改apps/client、原PNG/PSD/meta及已批34项方案。",
+    "无QA Agent：本批现有单元样本由Owner记录可复核证据。",
+    "本项整体优化文档/专业评审沿已明确临时gpt-6.1-sol low例外。",
+    "先核输入/原PSD只读，待Art PREPRODUCTION_PLAN真实生成后复核同SHA，再写TECH_PRESIGN APPROVED；不得自行生产图或编写Client代码。",
+    "只做首图前预签，不做自产切片的后置专业效果Review，不加浏览器/Creator新预览门禁。"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "MINIGAME-ART-OPT-PILOT-20261017-ART",
+  "title": "10件无损代表切片与分层母版制作",
+  "type": "art",
+  "owner": "art",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "10件无损代表切片与分层母版制作，持续到当前具体样本用户门禁，不改正式客户端。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/INPUT_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "rules/artifact_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PREPRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ART_PRESIGN.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/CUT_MANIFEST.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/source/optimization_pilot_master.psd",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/contact_sheet.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/COMPARISON_REPORT.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/review/USER_REVIEW_PACKET.md",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/PRODUCTION_LEDGER.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/DELIVERABLE.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_body.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_mt_shop_01_sign.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_walk_00.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_run_00.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_01.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_03.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_04.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_05.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_06.png",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_sakura_rr_spirit_a_flame.png"
+  ],
+  "acceptance": [
+    "10件代表绑定批准的输入身份/范围、现有源和母版，首张输出前Art/Tech同批预签一致。",
+    "10件裁片保持所有可见RGBA像素、2px保护边、原画布/offset/pivot，源与PSD层导出/重组映射可复核。",
+    "PSD真实可读且分层/可编辑范围如实，原尺寸重组像素及同背景同尺度对照有证据，未改源工程。",
+    "提交具体样本清单、实际图像与同尺度效果直接待用户Gate2，未扩批或正式接入；预算和失败记录完整。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-20261016-ART",
+    "MINIGAME-ART-OPT-20261016-TECH"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；先读最新角色五文件，不自行分派/Git；仅写自己交付与Owner状态，Producer另有本批全局维护授权。",
+    "保护当前未提交的其他工作；本任务不修改apps/client、原PNG/PSD/meta及已批34项方案。",
+    "无QA Agent：本批现有单元样本由Owner记录可复核证据。",
+    "模型必须gpt-6-sol high；文档/Review临时模型例外不涵盖美术生产。",
+    "先实际读输入、写PREPRODUCTION_PLAN与ART_PRESIGN（只文档），报Master，再等同批TECH_PRESIGN APPROVED且SHA一致，严禁此前产正式PNG/PSD/切片。",
+    "批次只10件，0生成调用，保持原像素；不得重绘、缩放、扩批、触及4未知配件。",
+    "调用bggg-creator-image2psd组装必要PSD，遵守原计划的栅格可编辑范围；项目输出优先存本Task deliverables，不写个人skill目录（受项目事实源/权限边界限制）。",
+    "原方案one master PSD路径保持；可按实际existingPSD层评估决定复用引用和必要确定性栅格母版，不隐瞒缺失原PSD。",
+    "创建source/PSD/exports/review时所有输出登记；采样/静态投影与真实运行分开，尚未导入/运行NOT_TESTED。",
+    "2026-10-17 Art已实读冻结输入并产出PREPRODUCTION_PLAN.md及ART_PRESIGN.json；首图等待同一预案SHA的Tech预签APPROVED。",
+    "2026-10-17 Art已完成10件实图、10层PSD、原尺寸/背景零差、清单与用户Gate2审阅包；Owner提交REVIEW，待Producer推进USER_REVIEW，未接入客户端。",
+    "2026-10-17T11:03:14+08:00 当前10件具体样本Gate2 USER_REVIEW，身份4957fffeeb78d0558ca2149e7a76f303da1981f1c03f86c96bee5531f992aea4；上一轮34方案已批保留快照，整体优化尚未完成。"
+  ]
+}

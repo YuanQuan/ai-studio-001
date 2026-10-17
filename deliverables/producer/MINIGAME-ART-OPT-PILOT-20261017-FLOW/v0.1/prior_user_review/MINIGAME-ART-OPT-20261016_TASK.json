@@ -1,0 +1,46 @@
+{
+  "id": "MINIGAME-ART-OPT-20261016",
+  "title": "小游戏美术资源尺寸、体积与多分辨率整体优化",
+  "type": "integration",
+  "owner": "master",
+  "parent": null,
+  "objective": "按用户已确认计划连续执行当前授权，先形成真实资源评估及精确专业方案，至Gate1/UI/Tech规格USER_REVIEW；后续获批再生产/接入/验证。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/ASSET_INVENTORY.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/BASELINE_IDENTITY.json",
+    "AGENTS.md",
+    "project/DECISIONS.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "rules/artifact_contract.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MODEL_OVERRIDE_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/RESUME_BASELINE_CHECK.json"
+  ],
+  "deliverables": [
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MASTER_SUMMARY.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/ASSET_INVENTORY.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/REVIEW_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "当前基线逐资源可核，明确尺寸/包体/适配问题与优化优先级。",
+    "Art、Tech、UI、VFX专业方案及必要Review齐备，准确版本呈交用户，未绕过方案或切图审批。",
+    "Producer状态/日志/看板与continuity/复盘一致，后续生产和代码任务保留真实门禁。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "仅当前游戏Project Layer，不改Studio模板。",
+    "无QA Agent：本轮是现有单元示例审计与规格，实际测试尚未执行。",
+    "先前已存在工作区改动归原任务，保留不恢复。",
+    "所有专业任务是获准并行的独立现状评估/方案准备；相互草稿只用于同批联合评审，不作为正式下游实现输入。",
+    "2026-10-16 Master故障事实应急登记授权：指定Owner因模型容量无法启动时，Master仅可记录本批BLOCKED、DRAFT审批、日志/看板与复盘草记；不代做专业Review、不签Producer接受、不改既有任务审批。",
+    "AGENTS指定gpt-6-sol low不可调度：Tech三次、Art两次、Producer两次均返回Selected model is at capacity；专业Owner无实际首产。等待该模型恢复，或用户明确允许本轮临时替换模型。",
+    "2026-10-16T17:26:37+08:00 用户已明确批准本轮文档/Review临时用gpt-6.1-sol low；原容量阻塞解除。旧阻塞描述只保留历史。长期配置和美术图片制作模型不变。"
+  ]
+}

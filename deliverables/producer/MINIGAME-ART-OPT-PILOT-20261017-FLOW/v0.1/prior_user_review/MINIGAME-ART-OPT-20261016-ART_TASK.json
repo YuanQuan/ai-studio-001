@@ -1,0 +1,49 @@
+{
+  "id": "MINIGAME-ART-OPT-20261016-ART",
+  "title": "美术无损裁剪与同尺度保真制作方案",
+  "type": "art",
+  "owner": "art",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "美术无损裁剪与同尺度保真制作方案，作为第一阶段获准独立评估与方案准备，不实施正式资源或代码。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/ASSET_INVENTORY.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.1/evidence/BASELINE_IDENTITY.json",
+    "AGENTS.md",
+    "project/DECISIONS.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "rules/artifact_contract.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/MODEL_OVERRIDE_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-20261016/v0.2/RESUME_BASELINE_CHECK.json"
+  ],
+  "deliverables": [
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "制作方案逐件绑定当前输入身份、现行来源/批准、母版和稳定ID，明确不重绘与修改边界。",
+    "店铺、游客、场景三类代表样本的裁剪/留边/坐标/重组和预算可执行，估算与未验证项如实区分。",
+    "当前零正式图片/PSD/切片产出，方案经同版专业Review后等待用户Gate1，未来Gate2不被替代。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；先按ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS读取最新角色配置。",
+    "仅写自己deliverables目录和本TASK的Owner权限状态；Producer另授权追加本线project事实源、审批记录和dashboard独立marker。",
+    "不得修改PNG/PSD/meta/Scene/Prefab/业务TS/构建配置，不启动Creator，不自行分派正式任务。",
+    "可以只读脚本/在内存计算，输出审计JSON/Markdown；任何切片生产等待精确方案Gate1及同批预签。",
+    "与其他方案Draft并行用于本批联合专业Review；禁止作为Client正式输入。",
+    "不执行Git；本轮由Master审查后统一处理日常提交推送。",
+    "2026-10-16 Master故障事实应急登记授权：指定Owner因模型容量无法启动时，Master仅可记录本批BLOCKED、DRAFT审批、日志/看板与复盘草记；不代做专业Review、不签Producer接受、不改既有任务审批。",
+    "AGENTS指定gpt-6-sol low不可调度：Tech三次、Art两次、Producer两次均返回Selected model is at capacity；专业Owner无实际首产。等待该模型恢复，或用户明确允许本轮临时替换模型。",
+    "2026-10-16T17:26:37+08:00 用户已明确批准本轮文档/Review临时用gpt-6.1-sol low；原容量阻塞解除。旧阻塞描述只保留历史。长期配置和美术图片制作模型不变。",
+    "2026-10-16 Art真实文档五Required齐备；来源224/268同字节匹配，44未知，不产图，提交同版Review。"
+  ]
+}
