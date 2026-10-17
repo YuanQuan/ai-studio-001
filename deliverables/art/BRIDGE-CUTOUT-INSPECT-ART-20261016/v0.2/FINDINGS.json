@@ -1,0 +1,124 @@
+{
+  "task_id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "version": "v0.2",
+  "scope": "仅桥上方栏杆 front_l/r；v0.1 桥身与水面诊断保留为历史，不用于本轮位置对齐。",
+  "coordinate_system": "各 PNG 左上角为(0,0)，xyxy 均含端点；矩形是检查区域，不是精确删除蒙版。",
+  "inspection": "直接目视当前 front_l/r 原图、灰底3×圈图；与10/15导出逐字节核对。",
+  "sources": [
+    {
+      "id": "bridge_front_l",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_front_l.png",
+      "dimensions_px": [
+        225,
+        177
+      ],
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "byte_identical_to_export": true
+    },
+    {
+      "id": "bridge_front_r",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_front_r.png",
+      "dimensions_px": [
+        225,
+        177
+      ],
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "byte_identical_to_export": true
+    }
+  ],
+  "findings": [
+    {
+      "number": 1,
+      "name": "栏杆上缘蓝斜带",
+      "regions_xyxy_inclusive": {
+        "bridge_front_l": [
+          [
+            42,
+            42,
+            171,
+            103
+          ]
+        ],
+        "bridge_front_r": [
+          [
+            54,
+            42,
+            183,
+            103
+          ]
+        ]
+      },
+      "visible": "石栏杆上方有贴着弧度走向的连续深蓝斜带，左右均可见。",
+      "pixel_observation_confidence": "high",
+      "residue_judgment_confidence": "low",
+      "note": "可能是背后桥面/氛围色，也可能为切片残留，未取得视觉语义确认。"
+    },
+    {
+      "number": 2,
+      "name": "灯檐外蓝紫边",
+      "regions_xyxy_inclusive": {
+        "bridge_front_l": [
+          [
+            0,
+            51,
+            51,
+            87
+          ],
+          [
+            62,
+            0,
+            124,
+            34
+          ]
+        ],
+        "bridge_front_r": [
+          [
+            174,
+            51,
+            224,
+            87
+          ],
+          [
+            101,
+            0,
+            163,
+            34
+          ]
+        ]
+      },
+      "visible": "两盏灯屋檐外侧均有蓝紫色像素边，部分连接到灯周围光色。",
+      "pixel_observation_confidence": "high",
+      "residue_judgment_confidence": "low",
+      "note": "可能包含有意的灯光外辉；红圈只定位，不能整圈删除。"
+    },
+    {
+      "number": 3,
+      "name": "圆球帽外蓝边",
+      "regions_xyxy_inclusive": {
+        "bridge_front_l": [
+          [
+            151,
+            16,
+            199,
+            54
+          ]
+        ],
+        "bridge_front_r": [
+          [
+            26,
+            16,
+            74,
+            54
+          ]
+        ]
+      },
+      "visible": "圆球形栏杆端帽上缘和外侧有连续较深蓝边。",
+      "pixel_observation_confidence": "high",
+      "residue_judgment_confidence": "medium",
+      "note": "需用户确认是否应保留边缘阴影/后方结构。"
+    }
+  ],
+  "outcome": "待用户对齐位置；未改正式 PNG、PSD、接入或代码。"
+}

@@ -228,8 +228,8 @@ export const SAKURA_V03_LAYOUT = {
       "path": "tex_sakura_rr_bridge_front_l.png",
       "width": 225,
       "height": 177,
-      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_l.png"
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "artPath": "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_l.png"
     },
     {
       "id": "tex_sakura_rr_bridge_front_r",
@@ -239,8 +239,8 @@ export const SAKURA_V03_LAYOUT = {
       "path": "tex_sakura_rr_bridge_front_r.png",
       "width": 225,
       "height": 177,
-      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
-      "artPath": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.5/exports/tex_sakura_rr_bridge_front_r.png"
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "artPath": "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_r.png"
     },
     {
       "id": "tex_sakura_rr_bridge_street_master",

@@ -1,0 +1,32 @@
+{
+  "task_id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "owner": "art",
+  "summary": "按用户纠正，仅对当前桥上方 front_l/r 栏杆外缘制作编号圈图，等待位置对齐。",
+  "artifacts": [
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ART_BRIEF.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ANNOTATED_REVIEW.png",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/FINDINGS.json",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐张核对当前桥PNG与已批准导出的身份，并留检查范围。",
+      "result": "PASS",
+      "evidence": "FINDINGS.json 记录 front_l/r 的当前路径、尺寸、SHA-256 和与已导出 PNG 的逐字节对比。"
+    },
+    {
+      "criterion": "圈图编号与发现清单一一对应，保留原输出不修改。",
+      "result": "PASS",
+      "evidence": "ANNOTATED_REVIEW.png 的①②③与 FINDINGS.json 对应；只新增诊断图。"
+    },
+    {
+      "criterion": "问题位置先交用户对齐；修图、PSD更新及接入尚未执行。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 明确位置待确认，本轮未改正式资源。"
+    }
+  ],
+  "assumptions": ["红圈是检查范围，不是精确删除蒙版。"],
+  "risks": ["蓝紫边可能有部分属于设计背板、阴影或灯光，需要用户先确认视觉语义。"],
+  "status": "READY_FOR_REVIEW"
+}

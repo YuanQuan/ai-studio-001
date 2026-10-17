@@ -1,0 +1,256 @@
+{
+  "task_id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "version": "v0.1",
+  "coordinate_system": "各源PNG左上角为(0,0)，xyxy均含端点；方框是检查范围，不等同逐像素删除蒙版。",
+  "inspection": "当前原PNG目视；灰/白/深色背景透明合成；局部最近邻3×/4×；与上一轮exports逐字节核对。旧诊断图未用作当前判断。",
+  "sources": [
+    {
+      "id": "bridge_body_l_clean",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l_clean.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_l_clean.png",
+      "sha256": "1ad1777f7c084355532ba76c6aef0902062bfee8216b517a02a08b5d253e6e5b",
+      "dimensions_px": [
+        1536,
+        270
+      ],
+      "mode": "RGBA",
+      "byte_identical_to_export": true
+    },
+    {
+      "id": "bridge_body_r_clean",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r_clean.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_body_r_clean.png",
+      "sha256": "cbbcd7b4db089169bd48e57445fa2f97337c975999bc6a60d46c0b4c8f1a8b82",
+      "dimensions_px": [
+        1536,
+        271
+      ],
+      "mode": "RGBA",
+      "byte_identical_to_export": true
+    },
+    {
+      "id": "bridge_street_master",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_street_master.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_street_master.png",
+      "sha256": "2776d539b7acf3d73ead2dca112e35d0d14878065888930c6477641f4553a9d8",
+      "dimensions_px": [
+        1172,
+        270
+      ],
+      "mode": "RGBA",
+      "byte_identical_to_export": true
+    },
+    {
+      "id": "bridge_front_l",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_front_l.png",
+      "sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "dimensions_px": [
+        225,
+        177
+      ],
+      "mode": "RGBA",
+      "byte_identical_to_export": true
+    },
+    {
+      "id": "bridge_front_r",
+      "current_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "export_path": "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/exports/tex_sakura_rr_bridge_front_r.png",
+      "sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "dimensions_px": [
+        225,
+        177
+      ],
+      "mode": "RGBA",
+      "byte_identical_to_export": true
+    }
+  ],
+  "findings": [
+    {
+      "number": 1,
+      "category": "clear_water_residue",
+      "source_id": "bridge_body_l_clean",
+      "regions_xyxy_inclusive": [
+        [
+          1430,
+          92,
+          1535,
+          223
+        ]
+      ],
+      "visible": "左拱洞内蓝紫水面及粉色水平反光呈大片连续色块，左边沿贴石拱，右边到切片边界，下部逐渐透明。",
+      "observation_confidence": "high",
+      "residue_interpretation_confidence": "high",
+      "keep": "石拱、暗面石壁及轮廓阴影不在建议清理区；圈是检查区域，不是精确删除蒙版。"
+    },
+    {
+      "number": 2,
+      "category": "clear_water_residue",
+      "source_id": "bridge_body_l_clean",
+      "regions_xyxy_inclusive": [
+        [
+          1345,
+          226,
+          1420,
+          250
+        ],
+        [
+          1225,
+          249,
+          1300,
+          269
+        ]
+      ],
+      "visible": "左桥靠拱脚下有水平深蓝水色细条，街面下缘另有向下伸出的蓝色三角片。",
+      "observation_confidence": "high",
+      "residue_interpretation_confidence": "high",
+      "keep": "石块、苔藓和樱花花瓣须保留；边界由原像素复核。"
+    },
+    {
+      "number": 3,
+      "category": "clear_water_residue",
+      "source_id": "bridge_body_r_clean",
+      "regions_xyxy_inclusive": [
+        [
+          0,
+          92,
+          106,
+          223
+        ]
+      ],
+      "visible": "右拱洞内与左侧镜像相似的大片蓝紫水面及粉色水平反光，沿石拱内侧向下渐透明。",
+      "observation_confidence": "high",
+      "residue_interpretation_confidence": "high",
+      "keep": "石拱、暗面石壁及轮廓阴影不在建议清理区。"
+    },
+    {
+      "number": 4,
+      "category": "clear_water_residue",
+      "source_id": "bridge_body_r_clean",
+      "regions_xyxy_inclusive": [
+        [
+          105,
+          225,
+          180,
+          251
+        ],
+        [
+          210,
+          248,
+          300,
+          270
+        ]
+      ],
+      "visible": "右桥靠拱脚下有水平深蓝水色细条，街面下缘偏右有外伸蓝色三角片。",
+      "observation_confidence": "high",
+      "residue_interpretation_confidence": "high",
+      "keep": "石块、苔藓和樱花花瓣须保留。"
+    },
+    {
+      "number": 5,
+      "category": "needs_alignment",
+      "source_id": [
+        "bridge_front_l",
+        "bridge_front_r"
+      ],
+      "regions_xyxy_inclusive": {
+        "bridge_front_l": [
+          [
+            27,
+            42,
+            181,
+            105
+          ],
+          [
+            0,
+            51,
+            51,
+            85
+          ],
+          [
+            63,
+            0,
+            122,
+            31
+          ],
+          [
+            151,
+            17,
+            198,
+            52
+          ]
+        ],
+        "bridge_front_r": [
+          [
+            43,
+            42,
+            198,
+            105
+          ],
+          [
+            174,
+            50,
+            224,
+            85
+          ],
+          [
+            104,
+            0,
+            163,
+            31
+          ],
+          [
+            26,
+            17,
+            74,
+            52
+          ]
+        ]
+      },
+      "visible": "前栏上方蓝色斜带及两侧灯檐、圆球帽外有连续蓝/紫蓝边；左右切片均可见。",
+      "observation_confidence": "high",
+      "residue_interpretation_confidence": "low",
+      "interpretation": "可能是栏杆设计背板或灯光氛围边，也可能是背景残留；仅凭当前 PNG 不判删除。石栏主体是明确桥结构。"
+    },
+    {
+      "number": 6,
+      "category": "low_priority_edge_check",
+      "source_id": [
+        "bridge_body_l_clean",
+        "bridge_body_r_clean",
+        "bridge_street_master"
+      ],
+      "regions_xyxy_inclusive": {
+        "bridge_body_l_clean": [
+          [
+            1181,
+            89,
+            1307,
+            92
+          ]
+        ],
+        "bridge_body_r_clean": [
+          [
+            228,
+            90,
+            354,
+            93
+          ]
+        ],
+        "bridge_street_master": [
+          [
+            1087,
+            91,
+            1171,
+            93
+          ]
+        ]
+      },
+      "visible": "顶部裁切线附近有少量 1–3 像素的零散边缘像素或锯齿，白/深/灰底下可放大看见；街面母图主体顶边平直。",
+      "observation_confidence": "medium",
+      "residue_interpretation_confidence": "low",
+      "interpretation": "更可能是边缘抗锯齿或切片边缘；未确认实景可见缺陷，不列为确定修图项。"
+    }
+  ],
+  "outcome": "诊断待用户位置对齐；未修正式PNG、PSD或代码。"
+}

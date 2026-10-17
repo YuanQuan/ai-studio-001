@@ -1,0 +1,33 @@
+{
+  "task_id": "BRIDGE-RAILING-CLEANUP-FLOW-20261016",
+  "owner": "producer",
+  "summary": "栏杆定位确认、Gate1范围、同版预签、实际切片身份与Gate2待审准确登记；复盘和continuity完成。",
+  "artifacts": [
+    "deliverables/producer/BRIDGE-RAILING-CLEANUP-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/BRIDGE-RAILING-CLEANUP-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/BRIDGE-RAILING-CLEANUP-FLOW-20261016/v0.1/DELIVERABLE.json",
+    "project/WORKFLOW_STATUS.md",
+    "project/MILESTONE_LOG.md",
+    "project/APPROVAL_LOG.md",
+    "project/WORK_RETROSPECTIVE_LOG.md",
+    "project/ASSET_HANDOFF_REGISTRY.md",
+    "project/dashboard/index.html"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "追踪用户定位确认、同版预签、实产和准确Gate2送审版本，保留旧历史。",
+      "result": "PASS",
+      "evidence": "定位确认/范围批准、同SHA预签、Art十一Required与最终PNG/PSD SHA均在FLOW_REPORT；具体Gate2 USER_REVIEW且工程旧资源未替换。"
+    },
+    {
+      "criterion": "完成真实时间复盘与continuity check，无空挂可继续任务。",
+      "result": "PASS",
+      "evidence": "WORK_RETROSPECTIVE记录可核节点、返工与复核点；Art USER_REVIEW、Tech DONE、FLOW REVIEW，无空挂READY/IN_PROGRESS。"
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "具体新切片Gate2仍待用户决定；Creator导入和运行未测试。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

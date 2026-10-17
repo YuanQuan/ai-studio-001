@@ -1,0 +1,36 @@
+{
+  "task_id": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016",
+  "result": "PASS",
+  "url": "http://127.0.0.1:8890/",
+  "viewport": [
+    720,
+    1280
+  ],
+  "source_build": "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/BUILD_MANIFEST.json",
+  "http_identity": "HTTP_IDENTITY.json",
+  "checks": {
+    "U00": "真实进入与手动镜头定位左右桥，新图蓝边清理、暖光/顶线可见；同机位旧/新截图，保留前后层与桥身/水面。",
+    "U01": "23原型/55实例初始、临时拖动店2至桥上（栏杆在前遮挡）、重置、退出重进，真实DOM导出复算一致；仅两front来源四值更新。",
+    "U04": "共享背景及桥栏杆可见，切阿炭/微笑、返回菜单通过。",
+    "console_warnings_errors": []
+  },
+  "evidence": [
+    "evidence/new-u00-bridge.jpg",
+    "evidence/new-u00-bridge-detail.jpg",
+    "evidence/old-u00-bridge.jpg",
+    "evidence/u01-initial.json",
+    "evidence/u01-temporary-shop-move.json",
+    "evidence/u01-reset.json",
+    "evidence/u01-reentry.json",
+    "evidence/u01-shop-on-bridge.jpg",
+    "evidence/u01-reentry.jpg",
+    "evidence/u04-shared-scene.jpg",
+    "evidence/browser-warnings-errors.json",
+    "U01_EXACT_COMPARE.json"
+  ],
+  "limits": [
+    "仅本轮720×1280 Web内置浏览器环境；目标机性能未测。",
+    "未重复完整U05业务、眼睛循环或其他无关功能回归。"
+  ],
+  "approval": "实际运行效果仍待用户确认，非用户批准。"
+}

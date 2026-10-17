@@ -1,0 +1,26 @@
+{
+  "tool": "image_gen.imagegen (built-in)",
+  "calls_total": 2,
+  "transparent_background": true,
+  "prompt_provenance": "候选PNG没有保存提示词元数据；下列为实际提示意图的忠实记录，不冒称逐字工具调用转录。",
+  "calls": [
+    {
+      "side": "left",
+      "calls": 1,
+      "prompt_intent": "以左侧225×177透明栏杆原图为基准，仅清除栏杆上缘深蓝斜带、灯檐外蓝紫边、圆球帽外蓝边；保留石栏、双灯、暖光及尺寸，输出透明背景。",
+      "generated_path": "/Users/yuanquan/.codex/generated_images/01a14281-7b14-71c2-8bf6-c0fb8155039e/exec-1fe3d4ca-6c98-445d-ac22-b261ebfd75c4.png",
+      "retained_copy": "source/candidates/front_l_imagegen_candidate.png"
+    },
+    {
+      "side": "right",
+      "calls": 1,
+      "prompt_intent": "以右侧225×177透明栏杆原图为基准，仅清除栏杆上缘深蓝斜带、灯檐外蓝紫边、圆球帽外蓝边；保留石栏、双灯、暖光及尺寸，输出透明背景。",
+      "generated_path": "/Users/yuanquan/.codex/generated_images/01a14281-7b14-71c2-8bf6-c0fb8155039e/exec-4fe13d4a-e7b2-484d-9c55-ff2f892a986d.png",
+      "retained_copy": "source/candidates/front_r_imagegen_candidate.png"
+    }
+  ],
+  "candidate_size": [1414, 1112],
+  "decision": "拒绝候选RGB：石纹、暖边与灯饰存在明显重画。候选只作alpha轮廓参考；右侧蓝斜带未清，按左候选镜像轮廓在原图alpha上作一次确定性局部修正。对原图真实暖色连通材质恢复原alpha；右侧蓝带内5个悬空橙粉点不予恢复。最终输出RGB全来自原PNG。",
+  "reproducibility": ["source/apply_alpha_mask.py", "source/masks/front_l_result_alpha.png", "source/masks/front_r_result_alpha.png"],
+  "psd_conversion": "bggg-creator-image2psd/scripts/image2psd.py assemble --manifest PSD_MANIFEST.json；48层完整复制，仅两个front层alpha随新PNG更新。"
+}

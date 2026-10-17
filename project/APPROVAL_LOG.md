@@ -1040,3 +1040,32 @@ QA v0.2具体计划与Art样本v0.1具体Gate2、NEXT父当前USER_REVIEW；QA�
 
 Master NEXT/v0.1/FLOW_ACCEPTANCE.json已内部APPROVED接受本周期流程交付。周期交付commit `97acc226ab17ecb9d3290ed99c90df4736ee46ca` 已普通push成功，实际 `71b267e3..97acc226 main -> main`。此为Git收口登记时刻，不倒改17:28:25制作/独立核验结束点、1928秒周期或96.4分钟三角色保守上界，亦不将其当实际人工。QA计划/样本具体Gate2及NEXT仍USER_REVIEW，旧总体QA；批准状态和未测边界保持。冻结128文件不动，Producer不执行Git；Master另做本尾注小回执提交后结束本周期，不再开启执行循环。
 <!-- MINIGAME-ART-OPT-NEXT-20261017 END -->
+
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 START -->
+## 2026-10-16｜桥PNG诊断位置对齐门禁
+
+- Art v0.1 `tasks/BRIDGE-CUTOUT-INSPECT-ART-20261016/ARTIFACT_APPROVAL.json`：`USER_REVIEW/decided_at:null`，绑定 `deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/USER_REVIEW_PACKET.md` 与 Master 同版诊断呈交Review。请用户先确认①–④及⑤⑥拟处理范围；本记录不是修图批准，也不改变先前Art Gate2批准或接入运行版的待审状态。
+- FLOW内部经Master接受 `DONE/PROFESSIONAL_REVIEW`，见 `FLOW_MASTER_ACCEPTANCE.json`；不构成位置对齐的用户决定。
+- 用户纠正v0.1对象的检查范围：桥身/水面圈图不是本次所指，旧v0.1仅保留待审历史，不代表用户认可①–④位置。新v0.2仅栏杆front_l/r，待Art同版包提交后另登记门禁。
+- 栏杆专用v0.2：`tasks/BRIDGE-CUTOUT-INSPECT-ART-20261016/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW/decided_at:null`，绑定front_l/r圈图①②③与Master v0.2 Review。旧审批原样快照 `ARTIFACT_APPROVAL_v0.1.json` 仅留范围未对齐历史，不能解释为用户确认桥身/水面位置。FLOW v0.2内部经Master接受，`DONE/PROFESSIONAL_REVIEW`。
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 END -->
+
+<!-- BRIDGE-RAILING-CLEANUP-20261016 START -->
+## 2026-10-16｜栏杆局部清理双门禁
+
+- 用户“对的”确认Art诊断v0.2栏杆①②③位置；旧桥身/水面v0.1不属本轮。`tasks/BRIDGE-RAILING-CLEANUP-ART-20261016/ARTIFACT_APPROVAL_GATE1.json` 登记Master `APPROVED_SCOPE.md` 为 `USER_APPROVED` 范围授权，用户消息精确时间未知。这是本批Gate1，不是未来新PNG/PSD的Gate2批准。
+- 初始节点首图前Art/Tech同版预签待核、Gate2未送审；后续状态见下条，批准前Client不得接入。
+- 旧诊断Art v0.2准确审批经Master最终接受更新为 `USER_APPROVED`，决定对象仅为栏杆①②③定位，证据 `DIAGNOSTIC_FINAL_ACCEPTANCE.json`；当时新PNG审批尚未发生；后续Gate2送审见下条。
+- Tech同版预签经Master内部接受，`TECH_MASTER_ACCEPTANCE.json` APPROVED，Tech Task DONE/审批 `PROFESSIONAL_REVIEW`；不代替新切片Gate2。
+- Art具体新切片Gate2 `tasks/BRIDGE-RAILING-CLEANUP-ART-20261016/ARTIFACT_APPROVAL_GATE2.json` 为 `USER_REVIEW/decided_at:null`，绑定同版`USER_REVIEW_PACKET.md`、左右PNG与PSD准确SHA；Gate1范围批准和Tech预签均不代替此用户决定，工程未接入。
+- FLOW经Master内部接受，Task DONE/审批PROFESSIONAL_REVIEW；不代替Gate2。
+<!-- BRIDGE-RAILING-CLEANUP-20261016 END -->
+
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 START -->
+## 2026-10-16｜栏杆具体切片批准与接入运行新门禁
+
+- 用户“符合”批准`BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1`准确两PNG、PSD及对照效果，Master `USER_AUTHORIZATION.json` 固定五件SHA且复算5/5匹配；`ARTIFACT_APPROVAL_GATE2.json` 为`USER_APPROVED`、Task DONE。用户消息精确时间未知。
+- 本次仅解锁两片原位接入，新的实际运行版需独立用户审核；原有接入运行版审批不因本次图批复改变。
+- 新接入运行版v0.1：`tasks/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/ARTIFACT_APPROVAL.json`为`USER_REVIEW/decided_at:null`，绑定Master`USER_REVIEW_PACKET.md`与18项身份；Art图片已批只授权接入，用户尚未决定新运行效果。Tech本批经Master接受DONE/PROFESSIONAL_REVIEW，FLOW经Master内部接受DONE/PROFESSIONAL_REVIEW。
+- 2026-10-17用户“确认”批准当前v0.1接入运行效果，`ARTIFACT_APPROVAL.json`改`USER_APPROVED`、`decided_at:null`（用户消息精确时间未知）；Master `USER_RUNTIME_APPROVAL_20261017.json`锁审核包/身份/截图并复核六项交付证据。旧`ARTIFACT_APPROVAL_USER_REVIEW_20261016.json`保留送审历史；Client Task DONE，不扩大到后续改动。
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 END -->

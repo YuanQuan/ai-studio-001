@@ -1,0 +1,25 @@
+{
+  "task_id": "BRIDGE-RAILING-CLEANUP-TECH-20261016",
+  "owner": "tech_lead",
+  "summary": "已对Art v0.1同SHA制作预案完成首图前技术预签，锁定两张225×177切片与原3072×1024、48层PSD的坐标、支点、层级和候选预算；Art可按该批次预案制作。",
+  "artifacts": [
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/TECH_NOTE.md",
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "首次图片编辑前核同版预案的来源、画布、层级、切片尺寸与预算，并记录真实签认时间",
+      "result": "PASS",
+      "evidence": "TECH_PREFLIGHT.json记录2026-10-16T04:18:40Z签认、Art方案SHA dee5e764f2334147e8b2eb60a3f6e07a816d2768db855fe3e22780fa7801f963、原PSD及两PNG SHA、尺寸/层索引/位置与每侧一次候选预算；同版Art预签为APPROVED。"
+    },
+    {
+      "criterion": "给出保持现有导出尺寸和支点的切图意见；接入和性能未实测准确披露",
+      "result": "PASS",
+      "evidence": "TECH_NOTE.md固定225×177与原裁切框/场景位置/支点、46层逐SHA、无新增贴图面积；明确Creator导入、运行画面、DrawCall、驻留内存和目标机性能均NOT_TESTED。"
+    }
+  ],
+  "assumptions": ["用户已批准的本批范围以APPROVED_SCOPE.md为准；方案不改变其视觉语义。"],
+  "risks": ["局部蓝边与暖光有相邻像素，Art需通过同尺度对照和未改区零差异检查，无法守住主体时停止。", "本预签不代表具体切片Gate2批准或实际运行性能通过。"],
+  "status": "READY_FOR_REVIEW"
+}

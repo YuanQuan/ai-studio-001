@@ -1,0 +1,40 @@
+{
+  "id": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016",
+  "title": "已批栏杆切片接入 CLIENT",
+  "type": "integration",
+  "owner": "client",
+  "parent": null,
+  "objective": "将已批准的两张栏杆PNG原位接入并构建，交Master实际IAB核验至准确运行USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/VALIDATION.json",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md",
+    "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/BUILD_MANIFEST.json",
+    "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/PROVENANCE_AMENDMENT.md"
+  ],
+  "deliverables": [
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/BUILD_MANIFEST.json",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "已批两front PNG原位接入且与Art字节相同，稳定路径与真实UUID保持；仅更新两原型sha256/artPath登记，其他资源、业务代码和布局不变。",
+    "Creator当前同源构建有完成日志和实际产物，HTTP核心文件及新纹理身份可核。",
+    "在内置浏览器实查U00左右栏杆边缘和遮挡、U01导出及重置重入、U04共享场景，提交准确运行版本待用户审核。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派，不自行派子任务或Git。",
+    "Client只改apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png与front_r.png；保留meta/UUID，禁止改业务/布局或其他PNG；Creator生成必要导入元数据若变更须先核原因。",
+    "Client在/tmp隔离当前assets/settings/profiles副本构建，使用已装Creator3.8.8正规提权，不复用旧产物；可用空闲loopback端口（建议8890以上先核占用）。",
+    "Master负责实际IAB。Client请一旦构建/HTTP好立刻报URL、目录、源/输出SHA、服务PID/session，勿先填运行PASS。",
+    "Producer可维护本批三Task/Approval、已获批准Art任务状态与Gate2、project全局事实源/资源登记/dashboard本线独立marker，保留工作区其他改动。",
+    "本单元示例无QA；不重复眼睛动画或完整U05业务回归，不新增代码测试；目标机性能未测。",
+    "Master补充授权：Client可只改apps/client/assets/labs/u01/sakura_v03_layout.ts两front原型的sha256及artPath四个资源身份字符串，不改其他字段/代码/布局。原禁止源码条款对此四值必要登记作例外。"
+  ]
+}

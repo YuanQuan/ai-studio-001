@@ -1,0 +1,20 @@
+{
+  "task_id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "Master独立查看当前左右clean桥身、街面母图、左右front实图，并逐字节核对五件与10/15 Art exports相同。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "当前输出存在左右桥洞蓝紫水色及两桥脚底部蓝水细条/三角；已目视核ANNOTATED_SUMMARY.png中①③与②④分别指向这些实际区域。"
+    },
+    {
+      "severity": "INFO",
+      "message": "内部APPROVED仅接受诊断圈图可以呈用户；前栏灯檐/球帽/斜带蓝边仍待用户确认，顶边散点低置信，不授权修正式像素、PSD更新或Client接入。"
+    }
+  ],
+  "next_action": "用户先对齐圈定位置与拟清理范围，再由Master安排定向修图；本轮停USER_REVIEW，不判原图已修复。"
+}

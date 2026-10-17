@@ -1,0 +1,44 @@
+{
+  "task_id": "BRIDGE-RAILING-CLEANUP-ART-20261016",
+  "owner": "art",
+  "summary": "已完成左右栏杆已确认三类蓝边的透明度局部清理，保留原图RGB，交付两张切片与48层完整PSD供用户Gate2审阅。",
+  "artifacts": [
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ART_BRIEF.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/source/scene_sakura_railing_clean_master.psd",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_l.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_r.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/BEFORE_AFTER.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/scene_reassembled.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/VALIDATION.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/DELIVERABLE.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/PSD_MANIFEST.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/EDGE_BACKGROUNDS.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/IMAGEGEN_LEDGER.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/WARM_LINE_CHECK.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "出图前Art与Tech签认同版预案，制作限定用户确认栏杆①②③。",
+      "result": "PASS",
+      "evidence": "ART_PREFLIGHT.json和Tech同SHA预签；PRODUCTION_PLAN.md SHA dee5e764f2334147e8b2eb60a3f6e07a816d2768db855fe3e22780fa7801f963；IMAGEGEN_LEDGER.json记录两次候选及弃用RGB。"
+    },
+    {
+      "criterion": "两片225×177透明PNG与完整分层PSD、映射及同尺度对照实存，未改区域有零差异证据。",
+      "result": "PASS",
+      "evidence": "VALIDATION.json确认两片225×177 RGBA、原RGB逐像素相同、alpha只减、y>=126逐RGBA相同、46层原SHA不变、PSD48层且两片映射完全匹配；BEFORE_AFTER.png与scene_reassembled.png实存。"
+    },
+    {
+      "criterion": "实际切片直送用户Gate2，未获批准不接入客户端；桥身与水面未修改。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md提交具体切片待用户Gate2；本批仅Art目录，工程资源路径仅作映射；桥身、水面图层SHA不变。"
+    }
+  ],
+  "risks": [
+    "部分暖色混合边缘alpha降低（左100像素、右96像素）；右侧蓝带内5个悬空橙粉点已清除，真实暖色斜顶线锚点零差异，详见VALIDATION.json。",
+    "尚待用户对本具体版本Gate2审批；当前未接入工程。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

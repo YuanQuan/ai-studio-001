@@ -1497,3 +1497,27 @@ QA v0.2具体计划与Art样本v0.1具体Gate2、NEXT父当前USER_REVIEW；QA�
 
 Master NEXT/v0.1/FLOW_ACCEPTANCE.json已内部APPROVED接受本周期流程交付。周期交付commit `97acc226ab17ecb9d3290ed99c90df4736ee46ca` 已普通push成功，实际 `71b267e3..97acc226 main -> main`。此为Git收口登记时刻，不倒改17:28:25制作/独立核验结束点、1928秒周期或96.4分钟三角色保守上界，亦不将其当实际人工。QA计划/样本具体Gate2及NEXT仍USER_REVIEW，旧总体QA；批准状态和未测边界保持。冻结128文件不动，Producer不执行Git；Master另做本尾注小回执提交后结束本周期，不再开启执行循环。
 <!-- MINIGAME-ART-OPT-NEXT-20261017 END -->
+
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 START -->
+## WR-20261016-BRIDGE-CUTOUT-INSPECT-001｜桥切图诊断圈图送审
+
+- Art v0.1诊断圈图已到`USER_REVIEW`，FLOW经Master内部接受`DONE`；五张工程PNG与旧导出字节一致。完整证据、时间分解与建议见 `deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md`。
+- 可核Art首产10:21:25、首版详图10:25:20、Producer完整核版10:29:25（Asia/Shanghai）；个人净制作与用户消息时间未知，用户审批等待未计制作。无同类速度基线；④圈位校正及紧凑主图补制为可观察返工，净额外耗时未知。
+- 建议Art下轮首图前核原像素圈心，Producer送审前核SHA和圈号映射，分别于下一局部圈图及下一视觉诊断门禁复核。Continuity无空挂READY/IN_PROGRESS。
+- `WR-20261016-BRIDGE-CUTOUT-INSPECT-002`：用户纠正后Art front_l/r v0.2送USER_REVIEW、FLOW经Master内部接受DONE；v0.1桥身水面诊断范围不符。可信节点10:36:15前Producer首产、10:36:41 Art圈图mtime、10:38:43完整核版，个人净耗未知。建议Master下次先用局部示意核资产目标，下一视觉定位任务复核。证据见 `deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/v0.2/WORK_RETROSPECTIVE.md`。
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 END -->
+
+<!-- BRIDGE-RAILING-CLEANUP-20261016 START -->
+## WR-20261016-BRIDGE-RAILING-CLEANUP-001｜栏杆局部去边Gate2送审
+
+- Art最终两PNG与48层PSD到具体版本Gate2 `USER_REVIEW`，Tech同版预签内部DONE，FLOW经Master内部接受DONE；证据及建议见 `deliverables/producer/BRIDGE-RAILING-CLEANUP-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md`。
+- 可核首报告12:15:24前、Art预案12:17:59、Tech签12:18:40、最终PSD12:37:37、Art交付汇总12:38:13、Producer核版12:39:02（Asia/Shanghai）。跨节点约23分38秒包含并行/返工，个人净耗与用户消息精确时间未知。暖顶线误削和右片5个悬空暖点均定向修复；无同类速度基线。下一局部去边由Art前置核灰白深底暖线锚点，下一Gate2由Producer复核SHA。Continuity无空挂READY/IN_PROGRESS。
+<!-- BRIDGE-RAILING-CLEANUP-20261016 END -->
+
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 START -->
+## WR-20261016-BRIDGE-RAILING-INTEGRATION-001｜栏杆接入运行版送审
+
+- Client准确v0.1新运行版USER_REVIEW，Tech内部DONE，FLOW经Master内部接受DONE；完整证据与建议见`deliverables/producer/BRIDGE-RAILING-INTEGRATION-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md`。
+- 可核首报告13:43:12前、Client Brief13:45:06、Tech首Review13:46:44、规范Creator构建13:47:52→13:47:57、IAB文件mtime13:55:17、运行身份mtime13:58:13（Asia/Shanghai）。个人净耗未知，无同类速度基线。旧来源登记四字符串经Master补授权定点改；初次Creator参数引用问题未用于PASS，规范重跑成功。下次Client资源替换前核来源字段、Producer送审复算源/输出SHA，下一同类任务复核。Continuity无空挂READY/IN_PROGRESS。
+- `WR-20261017-BRIDGE-RAILING-RUNTIME-APPROVAL-001`：结果为用户“确认”批准准确v0.1、Master最终接受，Client DONE，Tech/FLOW原已DONE；证据`USER_RUNTIME_APPROVAL_20261017.json`、`FINAL_ACCEPTANCE_20261017.json`及本线审批记录。Asia/Shanghai本次可核起点22:25:23、Master接受22:27:33、Producer校验收口22:30:25，跨节点5分02秒；用户消息精确时刻与跨日审批等待时长未知，等待不计制作，个人净工时未知。无可比速度基线或可证实慢因；本轮无流程改动建议。Continuity：本线三Task均DONE，无READY/IN_PROGRESS空挂。
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 END -->

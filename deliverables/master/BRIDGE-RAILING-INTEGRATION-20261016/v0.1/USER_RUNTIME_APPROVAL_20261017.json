@@ -1,0 +1,63 @@
+{
+  "task_id": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016",
+  "version": "v0.1",
+  "status": "USER_APPROVED",
+  "user_quote": "确认",
+  "context": "用户确认上一轮呈现的桥上栏杆修图接入实际运行效果及细节截图。",
+  "registered_at": "2026-10-17T22:27:33+08:00",
+  "exact_user_message_time": null,
+  "time_note": "registered_at是登记时间；用户消息精确时间未提供。",
+  "approved_artifacts": [
+    {
+      "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/USER_REVIEW_PACKET.md",
+      "sha256": "c2595ec890f6a9f29f2c712edb7e0587be147a0f6d89089cbacce54b917bdf23",
+      "bytes": 1143
+    },
+    {
+      "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/RUNTIME_IDENTITY.json",
+      "sha256": "3d7e8f5cdb378f4137696d14a289e5a931e21580557bbb9c4acfe00e3e2a0fd5",
+      "bytes": 4447
+    },
+    {
+      "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/evidence/new-u00-bridge-detail.jpg",
+      "sha256": "3f1554a1b6297ec1d46f85cbb7eea71a19d904b3235a1b358fc5ad3b869ef131",
+      "bytes": 30744
+    }
+  ],
+  "review_evidence_check": {
+    "result": "PASS",
+    "frozen_evidence_files": [
+      {
+        "path": "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/BUILD_MANIFEST.json",
+        "sha256": "e56ab0e313876177f0d2a3ea216cfb179a52e53657fc7689c62d617027e83bf8",
+        "bytes": 8951
+      },
+      {
+        "path": "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+        "sha256": "030bf19f3a0546b3947486b39792fb8743fc9d20c5b76620125e2ff56c2781af",
+        "bytes": 2509
+      },
+      {
+        "path": "deliverables/tech_lead/BRIDGE-RAILING-INTEGRATION-TECH-20261016/v0.1/REVIEW.json",
+        "sha256": "7d6f15a2b88abd131b639409a28b4276d3e60b35838941ee7803f0a4ed5ff599",
+        "bytes": 1998
+      },
+      {
+        "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json",
+        "sha256": "bc9a87338b01552ac89177a1067c9b2090f0f2d55f7a41882946eeba86c62b5d",
+        "bytes": 1493
+      },
+      {
+        "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/HTTP_IDENTITY.json",
+        "sha256": "d70b0936f33b4fd0d6964ccb870b8af5db7b49c29ab24199ea080a4dc4710e0b",
+        "bytes": 1582
+      },
+      {
+        "path": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/U01_EXACT_COMPARE.json",
+        "sha256": "bd5d973412b740340c5eeffa1bdca4da0023e1392b7c0783521c6b56ee135db7",
+        "bytes": 1438
+      }
+    ]
+  },
+  "scope": "批准RUNTIME_IDENTITY.json锁定的v0.1运行版本；不扩大到其他任务或之后的工作区修改。"
+}

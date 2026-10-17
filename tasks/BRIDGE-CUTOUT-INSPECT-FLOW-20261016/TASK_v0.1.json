@@ -1,0 +1,28 @@
+{
+  "id": "BRIDGE-CUTOUT-INSPECT-FLOW-20261016",
+  "title": "桥切图问题对齐流程记录",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "objective": "追踪桥PNG诊断圈图，停在用户位置对齐门禁，保留已批准历史与其他工作区修改。",
+  "inputs": [
+    "tasks/BRIDGE-CUTOUT-INSPECT-ART-20261016/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "当前检查版本、真实圈图路径与用户待确认范围可追溯。",
+    "结束前完成continuity check与有可靠时间证据的简短复盘。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "PROFESSIONAL_REVIEW",
+  "notes": [
+    "Master授权维护本线两个Task状态及project/WORKFLOW_STATUS.md、MILESTONE_LOG.md、APPROVAL_LOG.md、WORK_RETROSPECTIVE_LOG.md、dashboard/index.html独立marker；保留其他未提交改动。",
+    "不修图、不改变过去批准、不自行Git；本轮无QA。",
+    "用户消息精确时间未知，以本轮实际文件mtime记录可靠节点。"
+  ]
+}

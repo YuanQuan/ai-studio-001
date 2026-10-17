@@ -1,0 +1,41 @@
+{
+  "task_id": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016",
+  "owner": "client",
+  "summary": "已接入两张用户已批准栏杆 PNG，保留资源 UUID、尺寸与 meta，仅更新 U01 两原型四项来源登记；Creator 3.8.8 隔离构建、loopback HTTP 身份核验及 Master IAB（U00/U01/U04）均通过，运行效果仍待用户审批。",
+  "artifacts": [
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/RESOURCE_IMPORT_MANIFEST.json",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/BUILD_MANIFEST.json",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/evidence/backups/RANGE_BASELINE.json",
+    "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/evidence/creator-build.log",
+    "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json",
+    "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/U01_EXACT_COMPARE.json",
+    "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/HTTP_IDENTITY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "已批准两 front PNG 原位接入且字节一致，稳定路径、meta、UUID、225×177 尺寸与 trimType 保持；原型仅有四个获准 sha256/artPath 字符串变化。",
+      "result": "PASS",
+      "evidence": "RESOURCE_IMPORT_MANIFEST.json、evidence/backups/RANGE_BASELINE.json、IMPLEMENTATION_REPORT.md；Tech 同批静态核验 PASS。"
+    },
+    {
+      "criterion": "当前 Creator 3.8.8 同源隔离构建有结束日志与实际产物；HTTP 核心入口和两个新纹理身份可核。",
+      "result": "PASS",
+      "evidence": "BUILD_MANIFEST.json 与 evidence/creator-build.log；exit 36、Finished、781 个输出文件、HTTP 200；assets/main/index.js 与两个打包 PNG 哈希已登记。"
+    },
+    {
+      "criterion": "内置浏览器实查 U00 栏杆边缘/遮挡、U01 导出及重置重入、U04 共享场景。",
+      "result": "PASS",
+      "evidence": "Master IAB PASS：deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json；U01 23原型/55实例 initial/reset/reentry一致且只有获准四项来源差异，详见 U01_EXACT_COMPARE.json；7个HTTP入口SHA与当前build一致，详见 HTTP_IDENTITY.json。"
+    }
+  ],
+  "assumptions": [
+    "仅按 Master 的来源登记补充授权更新 sakura_v03_layout.ts 中两 front 原型的 sha256 与 artPath；实际路径、UUID、尺寸、55 个实例及布局均保持。",
+    "本轮是单元示例接入，无 QA；目标设备性能不在本任务验证范围。"
+  ],
+  "risks": [
+    "目标设备性能未测；本单元示例无 QA 门禁。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

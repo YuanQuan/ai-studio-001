@@ -1,0 +1,27 @@
+{
+  "task_id": "BRIDGE-RAILING-CLEANUP-TECH-20261016",
+  "batch_id": "BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1",
+  "reviewer": "tech_lead",
+  "signed_at_utc": "2026-10-16T04:18:40Z",
+  "decision": "TECH_PRESIGNED_SAME_BATCH",
+  "art_plan_path": "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/PRODUCTION_PLAN.md",
+  "art_plan_sha256": "dee5e764f2334147e8b2eb60a3f6e07a816d2768db855fe3e22780fa7801f963",
+  "art_preflight_path": "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ART_PREFLIGHT.json",
+  "art_preflight_sha256": "6d2aec9cc0fc6615de6e3d5b5223f039df67cb76c48b4b43563c272dd5f0ec43",
+  "verified_source": {
+    "psd_sha256": "3a7c77fc38f02306382ee043f162761e8f3fff1f7a38cf0b165e4158b4432a37",
+    "canvas_px": [3072, 1024],
+    "layer_count": 48,
+    "front_l": {"sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277", "size_px": [225, 177], "scene_xy": [1311, 573], "layer_index_zero_based": 18},
+    "front_r": {"sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204", "size_px": [225, 177], "scene_xy": [1536, 573], "layer_index_zero_based": 21}
+  },
+  "conditions": [
+    "仅两张front_l/r获准①②③外缘；尺寸225×177、原裁切框、场景位置、支点、层顺序、遮挡及完整PSD画布3072×1024保持。",
+    "仅48层中索引18/21可修；其余46层逐SHA复用。最终使用原RGB及局部alpha遮罩，未改区RGBA零差异，石栏/灯体/暖光主体不得重画。",
+    "内置imagegen每侧最多一次、总计两次候选；候选仅作轮廓参考。允许同问题一次确定性遮罩修正，超范围或仍无法保真时停止并记录差异。",
+    "不新增贴图面积、页、外部素材、字体、依赖或动画；输出两张透明PNG、完整多层PSD、映射、同尺度对照、场景重组及差异统计。",
+    "自产切片直接提交用户具体PNG Gate2；获批前不得接入apps/client。"
+  ],
+  "not_tested": ["新PNG与PSD尚未制作", "Creator导入、图集打包、运行画面、DrawCall、驻留内存和目标机性能未实测"],
+  "reference_note": "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/TECH_NOTE.md"
+}

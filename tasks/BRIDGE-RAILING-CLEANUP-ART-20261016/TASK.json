@@ -1,0 +1,41 @@
+{
+  "id": "BRIDGE-RAILING-CLEANUP-ART-20261016",
+  "title": "桥上方栏杆局部去边 ART",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "按已确认三类边缘清理front_l/r，保存完整PSD并输出实际切片送用户审核。",
+  "inputs": [
+    "deliverables/master/BRIDGE-RAILING-CLEANUP-20261016/v0.1/APPROVED_SCOPE.md",
+    "deliverables/master/BRIDGE-RAILING-CLEANUP-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/FINDINGS.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PSD_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ART_BRIEF.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/source/scene_sakura_railing_clean_master.psd",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_l.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_r.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/BEFORE_AFTER.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/review/scene_reassembled.png",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/VALIDATION.json",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "出图前Art与Tech签认同版预案，制作限定用户确认栏杆①②③。",
+    "两片225×177透明PNG与完整分层PSD、映射及同尺度对照实存，未改区域有零差异证据。",
+    "实际切片直送用户Gate2，未获批准不接入客户端；桥身与水面未修改。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；不自行派子任务或Git，不改历史批准或未授权资源。",
+    "Art只写本批Art目录；Tech只写本批Tech目录；Producer可维护本批3Task/Approval及已确认诊断任务的用户决定与状态、project全局事实源独立marker。",
+    "正式apps/client资源与代码禁止写入，待新切片Gate2。",
+    "沿用既有角色配置与规则，无需重复无关文档。"
+  ]
+}

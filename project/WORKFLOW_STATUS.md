@@ -1768,3 +1768,35 @@ QA v0.2具体计划与Art样本v0.1具体Gate2、NEXT父当前USER_REVIEW；QA�
 
 Master NEXT/v0.1/FLOW_ACCEPTANCE.json已内部APPROVED接受本周期流程交付。周期交付commit `97acc226ab17ecb9d3290ed99c90df4736ee46ca` 已普通push成功，实际 `71b267e3..97acc226 main -> main`。此为Git收口登记时刻，不倒改17:28:25制作/独立核验结束点、1928秒周期或96.4分钟三角色保守上界，亦不将其当实际人工。QA计划/样本具体Gate2及NEXT仍USER_REVIEW，旧总体QA；批准状态和未测边界保持。冻结128文件不动，Producer不执行Git；Master另做本尾注小回执提交后结束本周期，不再开启执行循环。
 <!-- MINIGAME-ART-OPT-NEXT-20261017 END -->
+
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 START -->
+## 2026-10-16｜桥输出透明边缘诊断与位置对齐
+
+- Art v0.1 六件Required与紧凑主图实存，Master `MASTER_REVIEW.json` 对诊断呈交APPROVED。Producer复算当前工程五张桥PNG的SHA与旧Art exports逐字节均匹配。主圈图 `deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/ANNOTATED_SUMMARY.png` 标①–④；详细图 `ANNOTATED_REVIEW.png` 含⑤⑥，位置及解释见同版 `FINDINGS.json`/`USER_REVIEW_PACKET.md`。
+- ①③桥洞水色、②④桥脚蓝水条/三角拟请用户确认；⑤前栏蓝边可能属设计，⑥顶边薄点低置信，待确认。Art准确v0.1 `USER_REVIEW/decided_at:null`；FLOW三Required/两验收PASS、经Master内部接受`DONE/PROFESSIONAL_REVIEW`。最近复盘 `WR-20261016-BRIDGE-CUTOUT-INSPECT-001`。
+- 本轮只诊断与位置对齐，未修正式PNG/PSD、未改客户端、未改变旧Art Gate2批准或接入运行版独立待审。Continuity：Art真实USER_REVIEW、FLOW实产REVIEW，本线无空挂READY/IN_PROGRESS。
+- 用户随后纠正目标为桥上方栏杆，v0.1桥身/水面圈图仅留范围未对齐历史，不构成用户确认。Art v0.2 圈图首产实存、`IN_PROGRESS`；FLOW v0.2 `FLOW_REPORT.md` 已首产、`IN_PROGRESS`；只检查front_l/r，不修图。
+- 栏杆专用Art v0.2六Required/三验收PASS，Master同版诊断Review APPROVED；两张front PNG与旧导出字节/SHA 2/2匹配。`ANNOTATED_REVIEW.png` 的①上缘斜带、②灯檐外缘、③球帽外缘送 `USER_REVIEW/decided_at:null`。FLOW v0.2三Required/两验收PASS，经Master接受`DONE/PROFESSIONAL_REVIEW`；最近复盘 `WR-20261016-BRIDGE-CUTOUT-INSPECT-002`。Continuity无空挂READY/IN_PROGRESS。
+<!-- BRIDGE-CUTOUT-INSPECT-20261016 END -->
+
+<!-- BRIDGE-RAILING-CLEANUP-20261016 START -->
+## 2026-10-16｜桥上方栏杆局部清理
+
+- 用户对栏杆专用v0.2①②③位置回复“对的”；Master `APPROVED_SCOPE.md` 与 `USER_AUTHORIZATION.json` 将原修图指令绑定为本批Gate1 `APPROVED_SCOPE`，只含front_l/r栏杆，非新切片批准。旧桥身/水面v0.1为范围未对齐历史。旧诊断v0.2用户定位已确认，Master `DIAGNOSTIC_FINAL_ACCEPTANCE.json` 接受后诊断Task DONE，位置审批USER_APPROVED；不代替新图Gate2。
+- Master建立Art、Tech、FLOW三线；Producer `FLOW_REPORT.md` 首产后FLOW `IN_PROGRESS`，Tech `TECH_NOTE.md`首产后IN_PROGRESS；Art预案与Brief首产后IN_PROGRESS。首图前Art与Tech须对同版预案双签；当时正式PNG/PSD待产；Gate2新切片用户批准前Client持续锁定。无QA。
+- Art `PRODUCTION_PLAN.md` SHA `dee5e764…801f963` 与 `ART_PREFLIGHT.json` 通过；Tech `TECH_PREFLIGHT.json` 于2026-10-16T04:18:40Z对同一SHA签认，两者SHA经Producer复算一致，首图前双签门禁已满足。Tech三Required/两验收PASS，经Master内部接受Task `DONE/PROFESSIONAL_REVIEW`；该预签节点Art仍在制作、正式新PNG/PSD未完成；Gate2持续锁Client。
+- 首版两PNG/对照图已实存，但Master发现暖色栏杆顶线误削，Art随后定向恢复。首版不作为Gate2身份；imagegen候选2/2已用，不追加生图。该节点正式PSD与复验待核，最终结果见下条。
+- 最终Art十一Required/三验收PASS，左PNG SHA `39bb2ef5…ddc6c29`、右 `854d855a…e846a26`、48层PSD `f68c9ec2…57a885f`；具体切片Gate2 `USER_REVIEW/decided_at:null`。两片原RGB全保留、局部alpha只减，暖色混合边缘变化已披露。工程仍旧PNG/UUID，Client未接入。Tech内部DONE，FLOW三Required/两验收PASS、Master内部接受DONE/PROFESSIONAL_REVIEW；最近复盘`WR-20261016-BRIDGE-RAILING-CLEANUP-001`。Continuity无空挂READY/IN_PROGRESS。
+<!-- BRIDGE-RAILING-CLEANUP-20261016 END -->
+
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 START -->
+## 2026-10-16｜已批栏杆切片原位接入
+
+- 用户“符合”批准Art清理v0.1具体两PNG/PSD/对照；Master `USER_AUTHORIZATION.json` 五件SHA经Producer复算5/5匹配，`ART_FINAL_ACCEPTANCE.json` APPROVED。Art Gate2 `USER_APPROVED`、Task DONE；旧运行版独立审批不变。
+- Master建立Client/Tech/FLOW三线；Producer `FLOW_REPORT.md`首产后FLOW `IN_PROGRESS`。Client/Tech首产待核仍READY。仅两front PNG原位替换，并按Master `PROVENANCE_AMENDMENT.md` 更新两原型SHA/artPath四字符串；保留路径/meta/UUID及其他布局代码，当前实际接入、Creator新构建和IAB待证；新运行版需独立USER_REVIEW。本单元示例无QA。
+- Client `FEATURE_BRIEF.md` mtime13:45:06、Tech `REVIEW.json` mtime13:46:44实存，两Task `IN_PROGRESS`。Producer独立核工程两PNG与Art源字节及SHA 2/2一致、两meta与备份字节及SHA一致；真实UUID仍为左`25653ee5-158b-49d0-adf3-b0a58eee27d1`、右`f0c444d5-465b-4a90-8388-2084475df214`。两原型SHA/artPath四字符串已定点更新，Creator/HTTP/IAB仍待。
+- Client `BUILD_MANIFEST.json` 记Creator3.8.8本轮隔离构建exit36/Finished、781产物，Producer复算HTML/编译布局/两打包PNG关键输出SHA均匹配；8890 HTTP四核心端点200。Client第三项IAB验收仍NOT_TESTED，Tech Review仍PENDING_RUNTIME_EVIDENCE，待Master实际U00/U01/U04核验，不提前送USER_REVIEW。
+- Master本轮720×1280实际IAB `IAB_VERIFICATION.json` PASS：U00双桥清边与暖线、U01 55实例/23原型三导出及店2遮挡后重置重入、U04共享场景均通过，浏览器警告/错误空；`HTTP_IDENTITY.json`七项当前构建SHA匹配。Client/Tech正式最终交付与同版Review待齐，暂不把运行PASS等同用户批准；目标机/完整U05未测。
+- 最终Client五Required/三验收PASS、Master Review APPROVED；Producer独立复算`RUNTIME_IDENTITY.json`18项SHA/字节全匹配，准确v0.1新运行版`USER_REVIEW/decided_at:null`。Tech两Required/两验收PASS、专业Review与Master内部接受`DONE/PROFESSIONAL_REVIEW`。FLOW三Required/两验收PASS、Master内部接受DONE/PROFESSIONAL_REVIEW，最近复盘`WR-20261016-BRIDGE-RAILING-INTEGRATION-001`；8890预览保留。Continuity无空挂READY/IN_PROGRESS；目标机性能、完整U05业务未测。
+- 2026-10-17审批结案：用户“确认”批准冻结v0.1运行效果，Master `USER_RUNTIME_APPROVAL_20261017.json`/`FINAL_ACCEPTANCE_20261017.json`；Producer复核审核包/身份/截图及六项证据SHA 9/9一致。Client `USER_REVIEW→DONE`、审批`USER_APPROVED`，旧USER_REVIEW记录另存；Tech/FLOW均DONE。最近复盘`WR-20261017-BRIDGE-RAILING-RUNTIME-APPROVAL-001`。
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 END -->

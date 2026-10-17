@@ -1,0 +1,33 @@
+{
+  "task_id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "owner": "art",
+  "summary": "已核对当前五张桥相关 PNG 与 10/15 导出逐字节相同，并提交原像素圈图和编号发现，等待用户先对齐修图位置。",
+  "artifacts": [
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/ART_BRIEF.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/ANNOTATED_SUMMARY.png",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/ANNOTATED_REVIEW.png",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/FINDINGS.json",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/USER_REVIEW_PACKET.md"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐张核对当前桥PNG与已批准导出的身份，并留检查范围。",
+      "result": "PASS",
+      "evidence": "FINDINGS.json 的 sources 记录五张当前 PNG 的路径、尺寸、SHA-256、逐字节对比及检查方法。"
+    },
+    {
+      "criterion": "圈图编号与发现清单一一对应，保留原输出不修改。",
+      "result": "PASS",
+      "evidence": "ANNOTATED_SUMMARY.png 标①–④；ANNOTATED_REVIEW.png 标①–⑥；对应 FINDINGS.json，原 PNG 未写入。"
+    },
+    {
+      "criterion": "问题位置先交用户对齐；修图、PSD更新及接入尚未执行。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 明列确认项与暂不处理项；本任务仅新增诊断交付。"
+    }
+  ],
+  "assumptions": ["圈是目视检查范围，不作为精确像素清理蒙版；⑤⑥待用户对齐后才决定是否修。"],
+  "risks": ["前栏蓝边可能属于设计或光晕，不能据此直接删除。", "顶部极薄散点可能为正常抗锯齿；静态放大不能证明实景可见。"],
+  "status": "READY_FOR_REVIEW"
+}

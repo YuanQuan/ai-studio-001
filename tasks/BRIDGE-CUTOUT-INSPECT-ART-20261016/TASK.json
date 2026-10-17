@@ -1,0 +1,35 @@
+{
+  "id": "BRIDGE-CUTOUT-INSPECT-ART-20261016",
+  "title": "桥输出透明边缘检查与圈图对齐",
+  "type": "art",
+  "owner": "art",
+  "parent": null,
+  "objective": "按用户纠正只检查当前桥上方栏杆front_l/r，圈出外缘疑似未切净位置并先交用户对齐，不处理桥身或水面。",
+  "inputs": [
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.1/FINDINGS.json"
+  ],
+  "deliverables": [
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ART_BRIEF.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/ANNOTATED_REVIEW.png",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/FINDINGS.json",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "逐张核对当前桥PNG与已批准导出的身份，并留检查范围。",
+    "圈图编号与发现清单一一对应，保留原输出不修改。",
+    "问题位置先交用户对齐；修图、PSD更新及接入尚未执行。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；本轮只做诊断圈图，不修正式像素、不改PSD、不接入、不生图。",
+    "诊断标注可用确定性矢量覆盖并渲染，不能重生成底图。",
+    "只写本任务Art交付目录；无QA。",
+    "用户2026-10-16本轮纠正：只检查桥上面栏杆部分，旧主图桥身/水面不属于本轮目标。v0.1保留历史，v0.2只定位栏杆、灯柱外缘残留，先圈图对齐，不修图。"
+  ]
+}

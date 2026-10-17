@@ -1,0 +1,173 @@
+{
+  "taskId": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016",
+  "revision": "v0.1",
+  "creatorVersion": "3.8.8",
+  "target": "web-mobile",
+  "sourceProject": "apps/client",
+  "isolatedProject": "/private/tmp/bridge-railing-integration-client-20261016-isolated-project",
+  "isolatedInputs": [
+    "assets/ (complete current copy)",
+    "settings/ (complete current copy)",
+    "profiles/ (complete current copy)",
+    "package.json (current copy)"
+  ],
+  "formalAndIsolatedSourceMatch": true,
+  "sourceHashes": {
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png.meta": "62668e18be25ef356484e8b63063d247cafa6344a58f76e6cf49d72fbfdfb501",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png.meta": "550e3a7f9fdd015b783a2e1332b4cbd39c8cb917753c44eca709e00d77c232cd",
+    "apps/client/package.json": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a"
+  },
+  "isolatedSourceHashes": {
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png.meta": "62668e18be25ef356484e8b63063d247cafa6344a58f76e6cf49d72fbfdfb501",
+    "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png.meta": "550e3a7f9fdd015b783a2e1332b4cbd39c8cb917753c44eca709e00d77c232cd",
+    "apps/client/package.json": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a"
+  },
+  "build": {
+    "result": "PASS",
+    "taskName": "BRIDGE-RAILING-INTEGRATION-CLIENT-20261016-v0.1",
+    "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/bridge-railing-integration-client-20261016-isolated-project --build \"configPath=/private/tmp/bridge-railing-integration-client-20261016-isolated-project/build-unit-samples.json;platform=web-mobile\"",
+    "configPath": "/private/tmp/bridge-railing-integration-client-20261016-isolated-project/build-unit-samples.json",
+    "configSha256": "a5c5ec7e4d8312342cc352513ca9cca494761c5a14eecdfe54ac98425f0cb259",
+    "configTemplate": "deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261016/v0.1/evidence/BUILD_MANIFEST.json (successful UnitSamples/web-mobile config; paths and task identity updated)",
+    "exitCode": 36,
+    "successMarker": "build Task (BRIDGE-RAILING-INTEGRATION-CLIENT-20261016-v0.1) Finished in (5 s)ms",
+    "startedAt": "2026-10-16T13:47:52+08:00",
+    "finishedAt": "2026-10-16T13:47:57+08:00",
+    "durationSeconds": 5.363,
+    "fullLog": "deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/v0.1/evidence/creator-build.log",
+    "permission": "Creator CLI launched with require_escalated; isolated project; no formal Editor contention",
+    "outputDirectory": "/private/tmp/bridge-railing-integration-client-20261016-build/bridge-railing-integration-client-20261016-web-mobile",
+    "outputFileCount": 781,
+    "outputHashes": {
+      "index.html": {
+        "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+        "bytes": 2103
+      },
+      "index.js": {
+        "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+        "bytes": 818
+      },
+      "application.js": {
+        "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+        "bytes": 3300
+      },
+      "src/settings.json": {
+        "sha256": "47e2fdf3f669c637e951c44293f9e34710996d7051317ba00ca27accd41f2409",
+        "bytes": 22602
+      },
+      "assets/main/index.js": {
+        "sha256": "046a0bfe992c2600660f103edacf7bd8aa727de660b0434c91f784f286a7cf55",
+        "bytes": 484932
+      },
+      "assets/main/config.json": {
+        "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+        "bytes": 17579
+      },
+      "assets/resources/native/25/25653ee5-158b-49d0-adf3-b0a58eee27d1.png": {
+        "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+        "bytes": 51230
+      },
+      "assets/resources/native/f0/f0c444d5-465b-4a90-8388-2084475df214.png": {
+        "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+        "bytes": 51955
+      }
+    },
+    "firstInvocationNote": "初次shell调用的未引用分号导致Creator退出码无法单独读取；未用其状态作PASS依据。使用正确引用参数在同一隔离源与当前独立输出目录完成规范构建，日志Finished且退出码36。"
+  },
+  "resourcePackageMapping": [
+    {
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "imageUuid": "25653ee5-158b-49d0-adf3-b0a58eee27d1",
+      "spriteFrameUuid": "25653ee5-158b-49d0-adf3-b0a58eee27d1@f9941",
+      "buildPath": "assets/resources/native/25/25653ee5-158b-49d0-adf3-b0a58eee27d1.png",
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "matchesApprovedPngBytes": true
+    },
+    {
+      "clientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "imageUuid": "f0c444d5-465b-4a90-8388-2084475df214",
+      "spriteFrameUuid": "f0c444d5-465b-4a90-8388-2084475df214@f9941",
+      "buildPath": "assets/resources/native/f0/f0c444d5-465b-4a90-8388-2084475df214.png",
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "matchesApprovedPngBytes": true
+    }
+  ],
+  "compiledLayout": {
+    "path": "assets/main/index.js",
+    "containsApprovedArtPathsAndHashes": true,
+    "containsExistingImageTextureSpriteFrameUuids": true
+  },
+  "httpPreview": {
+    "url": "http://127.0.0.1:8890/",
+    "bind": "127.0.0.1",
+    "port": 8890,
+    "server": "Python http.server",
+    "pid": 86189,
+    "sessionId": 81323,
+    "directory": "/private/tmp/bridge-railing-integration-client-20261016-build/bridge-railing-integration-client-20261016-web-mobile",
+    "httpHeadStatus": 200,
+    "verificationPermission": "require_escalated",
+    "state": "retained for Master IAB",
+    "verifiedEndpoints": [
+      {
+        "path": "index.html",
+        "status": 200,
+        "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d"
+      },
+      {
+        "path": "index.js",
+        "status": 200,
+        "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd"
+      },
+      {
+        "path": "application.js",
+        "status": 200,
+        "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2"
+      },
+      {
+        "path": "assets/main/index.js",
+        "status": 200,
+        "sha256": "046a0bfe992c2600660f103edacf7bd8aa727de660b0434c91f784f286a7cf55"
+      },
+      {
+        "path": "assets/main/config.json",
+        "status": 200,
+        "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408"
+      },
+      {
+        "path": "assets/resources/native/25/25653ee5-158b-49d0-adf3-b0a58eee27d1.png",
+        "status": 200,
+        "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29"
+      },
+      {
+        "path": "assets/resources/native/f0/f0c444d5-465b-4a90-8388-2084475df214.png",
+        "status": 200,
+        "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26"
+      }
+    ]
+  },
+  "runtimeIab": {
+    "result": "PASS",
+    "verification": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/IAB_VERIFICATION.json",
+    "u01ExactCompare": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/U01_EXACT_COMPARE.json",
+    "httpIdentity": "deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/v0.1/HTTP_IDENTITY.json",
+    "resultSummary": {
+      "u00": "新图左右桥清边、暖光与顶线可见，前后层与桥身/水面保持。",
+      "u01": "23原型/55实例 initial-reset-reentry 一致；临时拖动 ORIGINAL-SHOP-2 至桥上后栏杆遮挡可见，重置恢复；与旧基线仅两front来源四值不同。",
+      "u04": "共享场景、阿炭微笑与返回菜单通过。",
+      "consoleWarningsErrors": []
+    },
+    "viewport": [
+      720,
+      1280
+    ],
+    "approval": "运行效果待用户确认；非用户批准。"
+  },
+  "targetDevicePerformance": "NOT_TESTED"
+}

@@ -1147,3 +1147,32 @@ QA v0.2具体计划与Art样本v0.1具体Gate2、NEXT父当前USER_REVIEW；QA�
 
 Master NEXT/v0.1/FLOW_ACCEPTANCE.json已内部APPROVED接受本周期流程交付。周期交付commit `97acc226ab17ecb9d3290ed99c90df4736ee46ca` 已普通push成功，实际 `71b267e3..97acc226 main -> main`。此为Git收口登记时刻，不倒改17:28:25制作/独立核验结束点、1928秒周期或96.4分钟三角色保守上界，亦不将其当实际人工。QA计划/样本具体Gate2及NEXT仍USER_REVIEW，旧总体QA；批准状态和未测边界保持。冻结128文件不动，Producer不执行Git；Master另做本尾注小回执提交后结束本周期，不再开启执行循环。
 <!-- MINIGAME-ART-OPT-NEXT-20261017 END -->
+
+<!-- BRIDGE-RAILING-CLEANUP-20261016 START -->
+## 2026-10-16｜栏杆局部修边候选交接（未导入）
+
+新Art v0.1两片仅为Gate2待审候选，来源 `deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/`，完整母版 `source/scene_sakura_railing_clean_master.psd` SHA `f68c9ec2cbd81830ade269f328d4598ff6f551016f24b7edd239463a657a885f`、48层3072×1024，非运行纹理。工程稳定路径中仍是旧PNG及旧UUID；下表“计划替换”只作后续交接意向，不表示本版已导入或取得新UUID。
+
+| 稳定资产ID | Art候选文件/SHA-256 | 工程当前真实文件/旧身份 | 新版导入状态 |
+|---|---|---|---|
+| `tex_sakura_rr_bridge_front_l` | `exports/tex_sakura_rr_bridge_front_l.png`／`39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png`／旧SHA `36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277`／现有UUID `25653ee5-158b-49d0-adf3-b0a58eee27d1` | 未导入；计划Gate2后在同路径替换，新内容UUID待实际核 |
+| `tex_sakura_rr_bridge_front_r` | `exports/tex_sakura_rr_bridge_front_r.png`／`854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png`／旧SHA `cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204`／现有UUID `f0c444d5-465b-4a90-8388-2084475df214` | 未导入；计划Gate2后在同路径替换，新内容UUID待实际核 |
+
+`review/BEFORE_AFTER.png`、`review/scene_reassembled.png`、母版及掩码为审阅/制作证据，不导入客户端。本表不代替用户Gate2审批或接入后运行核验。
+<!-- BRIDGE-RAILING-CLEANUP-20261016 END -->
+
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 START -->
+## 2026-10-16｜获批栏杆两片原位接入
+
+用户“符合”批准Art `BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1`，身份见Master `USER_AUTHORIZATION.json`。Client `RESOURCE_IMPORT_MANIFEST.json` 与Producer独立复核两PNG的Art/工程字节及SHA一致、两`.meta`与备份字节一致；以下为当前实际工程路径与保留的真实UUID。此接入事实不代表新运行画面获用户批准。
+
+| 稳定资产ID | 获批Art文件/SHA-256 | 工程当前文件/SHA-256 | 当前主UUID | 状态 |
+|---|---|---|---|---|
+| `tex_sakura_rr_bridge_front_l` | `deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_l.png`／`39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png`／同SHA | `25653ee5-158b-49d0-adf3-b0a58eee27d1` | 已原位替换，meta保持；当前新运行版待核 |
+| `tex_sakura_rr_bridge_front_r` | `deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_r.png`／`854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26` | `apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png`／同SHA | `f0c444d5-465b-4a90-8388-2084475df214` | 已原位替换，meta保持；当前新运行版待核 |
+
+Texture2D/SpriteFrame子UUID见Client同版`RESOURCE_IMPORT_MANIFEST.json`，沿用旧meta。母版PSD与审阅图不导入工程。Creator构建与实际Web画面另核。
+
+Creator3.8.8本轮隔离web-mobile构建将两图打包至同UUID命名PNG，Producer复算打包SHA与Art/工程相同；Master `IAB_VERIFICATION.json`实际Web验证U00/U01/U04通过。准确新运行v0.1仍`USER_REVIEW`，非用户已批准运行效果。
+- 2026-10-17：用户“确认”批准上述两片接入后的准确v0.1运行效果；Master `USER_RUNTIME_APPROVAL_20261017.json`与`FINAL_ACCEPTANCE_20261017.json`记录版本。工程路径和UUID登记不变，Client Task DONE。
+<!-- BRIDGE-RAILING-INTEGRATION-20261016 END -->

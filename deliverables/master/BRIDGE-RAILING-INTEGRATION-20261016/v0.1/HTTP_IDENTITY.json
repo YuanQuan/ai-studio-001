@@ -1,0 +1,49 @@
+{
+  "url": "http://127.0.0.1:8890/",
+  "request": "direct loopback GET without external proxy",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+      "matches_current_build": true
+    },
+    {
+      "path": "index.js",
+      "http_status": 200,
+      "sha256": "4317cb547b4d105f69346b925d961df7f951002fd5a4aaae807a361aa1ad49cd",
+      "matches_current_build": true
+    },
+    {
+      "path": "application.js",
+      "http_status": 200,
+      "sha256": "3876486e03ffd49f5cb8bce6d5a23b7ec392a533487229483a3b2429530093f2",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/main/index.js",
+      "http_status": 200,
+      "sha256": "046a0bfe992c2600660f103edacf7bd8aa727de660b0434c91f784f286a7cf55",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/main/config.json",
+      "http_status": 200,
+      "sha256": "7f6015c7bc3f79c99d480b647c12065af9fcf06e221f403743c82790a0a25408",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/resources/native/25/25653ee5-158b-49d0-adf3-b0a58eee27d1.png",
+      "http_status": 200,
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "matches_current_build": true
+    },
+    {
+      "path": "assets/resources/native/f0/f0c444d5-465b-4a90-8388-2084475df214.png",
+      "http_status": 200,
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "matches_current_build": true
+    }
+  ]
+}

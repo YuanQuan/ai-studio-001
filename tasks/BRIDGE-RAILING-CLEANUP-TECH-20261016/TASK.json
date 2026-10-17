@@ -1,0 +1,32 @@
+{
+  "id": "BRIDGE-RAILING-CLEANUP-TECH-20261016",
+  "title": "桥上方栏杆局部去边 TECH",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": null,
+  "objective": "首图前技术预签并提供保持尺寸/层级的切图意见，不增加切图效果复审门禁。",
+  "inputs": [
+    "deliverables/master/BRIDGE-RAILING-CLEANUP-20261016/v0.1/APPROVED_SCOPE.md",
+    "deliverables/master/BRIDGE-RAILING-CLEANUP-20261016/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/v0.2/FINDINGS.json",
+    "deliverables/art/EXAMPLE-REVISION-ART-20261015/v0.1/PSD_MANIFEST.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/TECH_PREFLIGHT.json",
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/TECH_NOTE.md",
+    "deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "首次图片编辑前核同版预案的来源、画布、层级、切片尺寸与预算，并记录真实签认时间。",
+    "给出保持现有导出尺寸和支点的切图意见；接入和性能未实测准确披露。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；不自行派子任务或Git，不改历史批准或未授权资源。",
+    "Art只写本批Art目录；Tech只写本批Tech目录；Producer可维护本批3Task/Approval及已确认诊断任务的用户决定与状态、project全局事实源独立marker。",
+    "正式apps/client资源与代码禁止写入，待新切片Gate2。",
+    "沿用既有角色配置与规则，无需重复无关文档。"
+  ]
+}
