@@ -1,0 +1,57 @@
+{
+  "id": "MINIGAME-ART-OPT-BATCH-20261017-ART",
+  "title": "全批范围复签及无损资源优化",
+  "type": "art",
+  "owner": "art",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "全批范围复签及无损资源优化，持续完成已授权无阻塞工作至下一确切版本门禁。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md"
+  ],
+  "deliverables": [
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/BATCH_PREPRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/ART_PRESIGN.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/PSD_LAYER_EXPORT_MAP.md",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/OWNER_VERIFICATION.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/PRODUCTION_LEDGER.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/review/USER_REVIEW_PACKET.md",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "全268现状逐项分类，实际源/批准/特殊UV及九宫格/原画布坐标/PSD与预算可追溯；未核项目明确保留不制作。",
+    "首张新图片前Art/Tech对同一全批范围及预案SHA复签，沿既有已批无损方法，不重绘降采样。",
+    "实际裁片由真实PSD层导出，原尺寸恢复可见RGBA零差，原源不变，帧序/动作身份与挂点保持。",
+    "交付实际分层母版、裁片/同尺度重组与清单直接送本批Gate2；具体新版本未批准不接入，停止项和预算如实。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-PILOT-20261017-ART"
+  ],
+  "status": "DONE",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派，不再自行分派，不Git；保护既有未提交工作。",
+    "所有结论依真实文件；缺少平台/真机证据NOT_TESTED。",
+    "先读本角色最新五文件及适用共享skill；Producer登记真实首产后才IN_PROGRESS。",
+    "美术图片制作必须gpt-6-sol high；本轮继续使用已读image2psd原像素路线，项目交付目录优先。",
+    "第一步仅范围盘点/源核对/文字预案及Art预签；报Master后等待Tech同SHA复签再产新图。",
+    "全批继承已批总体优化与10件Gate2方法；准确区分已批10件原样复用、不裁剪/旧图候选/特殊UV九宫格/4未知配件。不能把264同源匹配全说成均已独立批准。",
+    "沿用alpha>0 bbox+2px、originalSize/offset/pivot及cmp-v1；计划必须说明透明RGB、线性采样风险，禁止通用处理已有手工sourceRect对话或九宫格/自定义UV。",
+    "逐模块资源库PSD不当运行图集；运行图集只有技术可核收益和接口时再做，页<=2048。全批90分钟预算不能继承代表，须明确新范围/预算（默认确定性处理0生成，制作<=90分钟，静态核对<=45分钟，同问题<=2轮；超则报Master）。",
+    "现行PSD先评估、保留只读；允许批准源PNG栅格转换，标明限制；不新增权利未明素材。",
+    "不修改apps/client PNG/meta/TS，未批全批具体切片不得导入；自产切图完成Owner核对直接交用户，无切后专业效果Review。",
+    "2026-10-17T11:30:33+08:00 Producer核实当前真实首产 deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.1/ART_BRIEF.md；登记时间非文件创建准确时间。",
+    "Master范围修订：Tech PILOT_SAMPLING_DIAGNOSTIC发现店身/招牌/火焰3件CPU线性采样可能可见差，保留已批旧v0.1与73预案不覆盖；新Art v0.2按73新增+3采样修订=76候选，7已批不变+50无收益+135特殊保留。仅在alpha0回填同源RGB，visibleRGBA/alpha零差；v0.2独立预案与Art/Tech同SHA复签后才制作，具体76版本另Gate2。",
+    "2026-10-17T12:08:48+08:00 自产切图例外：Owner交付/核验实存，直接具体v0.2 Gate2 USER_REVIEW，未批准。",
+    "2026-10-17T12:56:16+08:00 精确Art v0.2用户Gate2已批准，250身份独立一致；依既有Owner核验与Master明确接受授权完成制作任务DONE，不等于客户端/运行完成。"
+  ]
+}

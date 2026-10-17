@@ -1,0 +1,57 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-ART",
+  "version": "v0.2",
+  "first_image_budget_start": "2026-10-17T11:58:33+08:00",
+  "production_assets_end": "2026-10-17T11:59:04+08:00",
+  "owner_static_and_packet_end": "2026-10-17T12:06:18+08:00",
+  "production_wall_seconds": 31.0,
+  "static_verification_and_packaging_wall_seconds": 434.087,
+  "total_post_first_image_wall_seconds": 465.087,
+  "budget_seconds": {
+    "production": 5400,
+    "static": 2700,
+    "total": 8100
+  },
+  "budget_result": "WITHIN_LIMIT",
+  "budget_clock_method": "从首次模块PSD生成前记录到14模块输出完成，再至Owner静态核对与审阅包文字完成；包含脚本/文档工作，不把单次运行秒数冒充全部工时。",
+  "preproduction": "v0.1/v0.2范围盘点、预案/双签及制作脚本准备在首张新图前；本账本无可靠完整起点，耗时未知，不计入135分钟预算；Tech预签等待与实际制作区分。",
+  "production_execution": {
+    "module_psds": 14,
+    "candidate_pngs": 76,
+    "psd_bytes_sum": 137574022,
+    "new_cut_png_bytes_sum": 13346084,
+    "source_png_bytes_sum": 18906721,
+    "first_module_scene_spirits_completed_at": "2026-10-17T11:58:52+08:00",
+    "last_module_completed_at": "2026-10-17T11:59:04+08:00"
+  },
+  "static_verification": {
+    "psd_layer_visible_rgba_zero_diff": 76,
+    "crop_full_rgba_zero_diff": 76,
+    "recomposition_visible_rgba_zero_diff": 76,
+    "cpu_linear9_explicit_items": 23,
+    "raw_rgba_identity_proof_items": 53,
+    "cpu_max_8bit_rgb_difference": 0,
+    "old_three_controls_max_difference": [
+      63.125980377197266,
+      63.1875,
+      62.69191360473633
+    ],
+    "client_source_files_unchanged": 268,
+    "old_pilot_files_unchanged": 87,
+    "creator_gpu_runtime": "NOT_TESTED"
+  },
+  "generation_calls": 0,
+  "image_redraws": 0,
+  "resampling_of_formal_cuts": 0,
+  "correction_rounds": 0,
+  "failures": [],
+  "old_v0_1_files_modified": 0,
+  "apps_client_files_modified": 0,
+  "outputs": {
+    "cut_manifest": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/CUT_MANIFEST.json",
+    "comparison_report": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/review/COMPARISON_REPORT.json",
+    "owner_verification": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/OWNER_VERIFICATION.json",
+    "user_review_packet": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/review/USER_REVIEW_PACKET.md"
+  },
+  "result": "PASS_READY_FOR_USER_GATE2"
+}

@@ -1,0 +1,24 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-ART",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "本 Art 首图前预签唯一对象为 BATCH_PREPRODUCTION_PLAN.md SHA-256 690c07d91e696ad67c04b8310e6ba9e31de39f7554ebe01dc9eb44ef1c6ac875；逐项 SCOPE_INVENTORY.json SHA-256 e5e68cf5012af2c3b17a1abc6d69feedae8107530814d880b4e898348b05f5ed。继承已批总体方案和10件样本身份，不覆盖重制。"
+    },
+    {
+      "severity": "INFO",
+      "message": "268项逐源SHA盘点：73项新增可制作、10项样本原样复用、50项无裁切收益、135项特殊或批准未核保留。73项逐件对应游客v0.2、六店v0.2、樱花v0.3或U05组件v0.2现行USER_APPROVED清单；4件配件无同SHA源，U05交互无Gate2。"
+    },
+    {
+      "severity": "INFO",
+      "message": "新批0生成调用、不重绘缩放；alpha>0 bbox+2、原尺寸/offset/pivot；真实PSD层读回的可见RGBA须零差，alpha0隐藏RGB若由转换清零则只从同件批准源同位置回填并计数，最终裁框RGBA全通道零差；不宣称线性采样或运行已通过。"
+    },
+    {
+      "severity": "INFO",
+      "message": "13个模块栅格PSD为非运行资源库；旧PSD只读、原生层限制明示。预算制作≤90分钟、静态核对≤45分钟、同问题纠错≤2轮；Tech同一SHA独立预签前不制作新PNG/PSD。自产切图完成Owner核验后直接交用户本批Gate2。"
+    }
+  ],
+  "next_action": "请Tech Lead只读审核 BATCH_PREPRODUCTION_PLAN.md SHA-256 690c07d91e696ad67c04b8310e6ba9e31de39f7554ebe01dc9eb44ef1c6ac875 与绑定的 SCOPE_INVENTORY.json，并独立签 TECH_PRESIGN.json APPROVED 同SHA；双签一致后 Art 才可生产73件新图。"
+}

@@ -1,0 +1,66 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-ART",
+  "owner": "art",
+  "version": "v0.2",
+  "checked_at": "2026-10-17T12:03:49+08:00",
+  "result": "PASS_READY_FOR_USER_GATE2",
+  "checks": [
+    {
+      "name": "双预签与冻结输入",
+      "result": "PASS",
+      "evidence": "Art/Tech同 BATCH_PREPRODUCTION_PLAN.md SHA fe1221f4069c0f062e80af8b385ef3f638084f9d84025f04f402e3a2d408f083，scope SHA ffcb38f0d1816517196743f4f189f7177c97c6c11b65839883f2fea326a00a26；Master BATCH_PRESIGN_ACCEPTANCE APPROVED。"
+    },
+    {
+      "name": "268范围及批准源",
+      "result": "PASS",
+      "evidence": "73新增、3旧样本采样修订、7原样引用、50无收益、135特殊保留；76源与现行客户端SHA逐件复核且原批准清单逐ID匹配，4未知配件不生产。"
+    },
+    {
+      "name": "真实PSD分层与导出",
+      "result": "PASS",
+      "evidence": "14 PSD共76实层；每层经ImageMagick读出，反向复位原尺寸，alpha与alpha>0 RGB相对批准源零差。PSD_LAYER_EXPORT_MAP逐件登记帧号、库坐标、裁框、offset。Photoshop/Photopea交互编辑NOT_TESTED。"
+    },
+    {
+      "name": "透明RGB与原尺寸零差",
+      "result": "PASS",
+      "evidence": "仅alpha=0裁框内回填同件批准源RGB累计297322像素，76裁框完整RGBA全等批准源，原尺寸重组可见RGBA和alpha零差；旧3件CPU采样风险修订候选不覆盖旧版。"
+    },
+    {
+      "name": "9相位CPU及静态背景",
+      "result": "PASS",
+      "evidence": "76件中23件原尺寸源/重组存在仅alpha0原始RGB差，对x/y=.25,.5,.75九相位直通RGBA双线性source-over逐相位实算黑灰白最大RGB差0、变化位置0；另53件原尺寸全RGBA完全恒等，因而九相位数学上必然同值。旧3件控制复现63.12598/63.1875/62.69191。CPU非Creator/GPU。"
+    },
+    {
+      "name": "同尺度背景与动作身份",
+      "result": "PASS",
+      "evidence": "批准樱花v0.3的43场景实例同视窗同尺寸离线投影源/新可见零差，六店body/sign原1024²重组零差；游客33帧ID/action/index/duration/mountRef保留，旧7只读。审阅缩略图不作为实际显示尺度。"
+    },
+    {
+      "name": "源与旧批准身份",
+      "result": "PASS",
+      "evidence": "本轮只读再核268客户端源0变化、旧Pilot FINAL_IDENTITY 87文件0变化；Art未改apps/client及旧v0.1。"
+    }
+  ],
+  "counts": {
+    "candidate_cuts": 76,
+    "module_psds": 14,
+    "unchanged_pilot_references": 7,
+    "sampling_revision_candidates": 3,
+    "alpha_zero_rgb_fill_pixels": 297322,
+    "source_png_bytes_sum": 18906721,
+    "new_cut_png_bytes_sum": 13346084,
+    "cpu_linear9_explicit_items": 23,
+    "raw_rgba_identity_proof_items": 53
+  },
+  "comparison_report_path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/review/COMPARISON_REPORT.json",
+  "comparison_report_sha256": "d4b5a0404ac053ef950a041c975b3f75443337e16e51dd3636c4499120ce76c6",
+  "not_tested": [
+    "Creator导入后真实UUID/trim/offset/UV及运行画面",
+    "目标平台GPU直线性采样、性能、包体/DrawCall",
+    "Photoshop/Photopea交互编辑PSD"
+  ],
+  "gate2": "PENDING_USER_APPROVAL",
+  "scope_changes": [],
+  "generation_calls": 0,
+  "correction_rounds": 0
+}

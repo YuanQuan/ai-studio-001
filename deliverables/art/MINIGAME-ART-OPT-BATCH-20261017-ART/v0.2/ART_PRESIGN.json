@@ -1,0 +1,12 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-ART",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "本 Art v0.2 首图前预签唯一对象为 BATCH_PREPRODUCTION_PLAN.md SHA-256 fe1221f4069c0f062e80af8b385ef3f638084f9d84025f04f402e3a2d408f083；逐项 SCOPE_INVENTORY.json SHA-256 ffcb38f0d1816517196743f4f189f7177c97c6c11b65839883f2fea326a00a26。保留Art v0.1预案与旧试点10件及原批准，不覆盖。"},
+    {"severity": "INFO", "message": "268项逐源SHA复核：73新增+3采样修订候选=76拟产，旧游客7件只读引用，50无收益、135特殊/未核保留。3修订与旧样本相同批准源、裁框、offset/pivot；旧版在新Gate2前继续有效。"},
+    {"severity": "INFO", "message": "Tech诊断旧店身/招牌/火焰3件CPU直通双线性采样可能可见差，非GPU实测。v0.2真实PSD层可见RGBA零差；alpha=0隐藏RGB仅从同件同坐标批准源回填，最终裁框RGBA全通道零差。无imagegen、不重绘或缩放。"},
+    {"severity": "INFO", "message": "14个模块栅格PSD非运行图集；制作不超过90分钟、静态核对不超过45分钟总135分钟，从首张新图开始；0生成、同问题不超过2轮。Tech对本v0.2同SHA独立签认前不产图；自产切图经Owner核验后直接送用户本批Gate2。"}
+  ],
+  "next_action": "请Tech Lead只读审核 Art v0.2 BATCH_PREPRODUCTION_PLAN.md SHA-256 fe1221f4069c0f062e80af8b385ef3f638084f9d84025f04f402e3a2d408f083 及绑定的 SCOPE_INVENTORY.json，并独立提交 TECH_PRESIGN.json APPROVED 同SHA；双签一致后Art才生产76件新候选。"
+}
