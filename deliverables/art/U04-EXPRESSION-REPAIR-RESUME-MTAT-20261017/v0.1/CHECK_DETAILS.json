@@ -1,0 +1,98 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "method": "逐张实际目视候选/蒙版/重组ROI/同背景U00；独立Master盲辨；现成extract-features及PSD隐藏层adapter验证。",
+  "candidate_calls_counted": 8,
+  "repair_calls_used": 0,
+  "unknown_or_failed_calls": 0,
+  "first_four_call_start_end_times": "UNKNOWN_NOT_RECORDED_BEFORE_CALL; generated file mtimes retained; no inferred duration",
+  "states": {
+    "MT_S2_happy": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "张口喜悦、眼神抬起；保留原红发发束。"
+    },
+    "MT_S2_sad": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "两眉悲伤上提、双眼含泪、嘴角下垂。"
+    },
+    "MT_S2_smile": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "闭口小幅微笑；明显弱于happy。"
+    },
+    "MT_S2_angry": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "双眉双眼收紧、紧绷下弯口；不擦除原发束。"
+    },
+    "MT_S2_surprised": {
+      "frozen_first_sample_export_sha_matches_snapshot": true,
+      "switch_psd_preview_vs_snapshot_diff_pixels": 0,
+      "visual_observation": "冻结首样；睁眼与圆口联动。"
+    },
+    "AT_S0_happy": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "困倦基调上眼睛点亮并张口高兴。"
+    },
+    "AT_S0_surprised": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "眉眼抬起、眼睑睁大、圆口；疲惫底色保留。"
+    },
+    "AT_S0_smile": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "半睁困倦眼与收敛闭口微笑。"
+    },
+    "AT_S0_angry": {
+      "semantic_recompose_rgba_diff_pixels": 0,
+      "roi_outside_union_rgba_diff_pixels": 0,
+      "oneface_alpha_outside_mask_nonzero_pixels": 0,
+      "visual_observation": "半睁眼收窄、两眉内压、紧口，与sad区分。"
+    },
+    "AT_S0_sad": {
+      "frozen_first_sample_export_sha_matches_snapshot": true,
+      "switch_psd_preview_vs_snapshot_diff_pixels": 0,
+      "visual_observation": "冻结首样；低垂眉眼与小垂口。"
+    }
+  },
+  "frozen_sample_psd_preview_pixel_difference": {
+    "MT_S2": 0,
+    "AT_S0": 0
+  },
+  "roi_outside_rgba_diff_pixels": {
+    "MT_S2_happy": 0,
+    "MT_S2_surprised": 0,
+    "MT_S2_sad": 0,
+    "MT_S2_smile": 0,
+    "MT_S2_angry": 0,
+    "AT_S0_happy": 0,
+    "AT_S0_surprised": 0,
+    "AT_S0_sad": 0,
+    "AT_S0_smile": 0,
+    "AT_S0_angry": 0
+  },
+  "blind_master_result": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_RESULT.json",
+    "sha256": "137d3b231890114a88753bcc2b5c19a06df1e97cb2b25dd3b65684fa0f417882",
+    "bytes": 2481
+  },
+  "blind_master_correct": 10,
+  "blind_master_total": 10,
+  "psd_switch_validation": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/PSD_SWITCH_VALIDATION.json",
+    "sha256": "1088da2f954a1bfb9f97d71d9297f25575c21fa72d07dd678df8b3d489c0eb4a",
+    "bytes": 16866
+  },
+  "visual_summary": "两人五态在原U00同背景、1280×720、人物约0.6缩放下均可辨；MT happy张口喜悦高于smile轻微闭口微笑，sad/angry双眉眼联动；AT保留困倦气质而happy/surprised读得出；未见面部拼贴边。",
+  "all_ten_psds_retained_and_reverified": true
+}

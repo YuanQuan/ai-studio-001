@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-17T14:22:53+08:00",
+  "schema_validation": "all schema keywords supported; recursive validation complete",
+  "validated": [
+    {
+      "task": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+      "required_count": 12,
+      "acceptance_count": 5,
+      "deliverable_status": "READY_FOR_REVIEW"
+    },
+    {
+      "task": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+      "required_count": 5,
+      "acceptance_count": 4,
+      "deliverable_status": "READY_FOR_REVIEW"
+    },
+    {
+      "task": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+      "required_count": 5,
+      "acceptance_count": 3,
+      "deliverable_status": "READY_FOR_REVIEW"
+    },
+    {
+      "task": "U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017",
+      "required_count": 4,
+      "acceptance_count": 3,
+      "deliverable_status": "READY_FOR_REVIEW"
+    },
+    {
+      "task": "U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017",
+      "required_count": 4,
+      "acceptance_count": 3,
+      "deliverable_status": "READY_FOR_REVIEW"
+    }
+  ],
+  "review_schemas_pass": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/FINAL_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_REVIEW.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY_REVIEW.json"
+  ],
+  "package_refs": {
+    "USER_REVIEW_PACKET.md": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+      "sha256": "9507a1b15c98024022b3fe6b505542db13b27f55f6a0903118b8689971fb4ed9"
+    },
+    "ASSET_MANIFEST.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ASSET_MANIFEST.json",
+      "sha256": "91d3d890aa1236e6f8545efb3078b8119c84d95419bf797d61b131e2a7eebd4a"
+    },
+    "DELIVERABLE.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/DELIVERABLE.json",
+      "sha256": "6ec0777c4a0c515375147245e6a7c036dda74f420449b83af852bfccd8cb9fa5"
+    },
+    "SAMPLE_ART_REVIEW.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+      "sha256": "92ccd74cdd38071681c24912e99e95cbcd119b97ee62752bfe22c5d88030b57f"
+    },
+    "PRODUCTION_LEDGER.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
+      "sha256": "8fb4aa644f354046cf36c2e12230ecc16ba68959f884134ca0049a339441cdb7"
+    },
+    "review/U04_30_STATE_NAMED_ACTUAL_SCALE.png": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+      "sha256": "890a022362659396a4f25b1287ba95a3cbf59a24b76f971d42cdc1065ef82ff0"
+    }
+  },
+  "artifact_collection_directories_allowed_if_exist": true
+}

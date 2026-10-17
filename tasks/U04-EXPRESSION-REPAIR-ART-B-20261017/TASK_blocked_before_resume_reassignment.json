@@ -1,0 +1,40 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-ART-B-20261017",
+  "title": "阿角阿灯小锦首批表情独立制作单元",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "在同已批准方案和同批预签内，生成AJ_S2 happy、AD_S0 happy、XJ_S0 happy代表样张；三样与总六样通过及复签后，完成这三阶段其余12态，并交Art Director整合。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ART-B-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "仅制作阿角2魂、阿灯0魂、小锦0魂的批准代表样张与后续获放行12态；首样前同批预签、扩批前六样通过与复签，调用额度最多24且全局48内。",
+    "逐态实际候选与提示、源坐标/hash、预算/失败记录真实，小锦保留原近视圈纹单次显示，头向/身份/画风不漂移。",
+    "输出交主Art总包引用或按sha整合，Required及验收同序，不改其他角色阶段、旧资源或Client，不自建任务。"
+  ],
+  "dependencies": [
+    "U04-EXPRESSION-REPAIR-PLAN-20261017"
+  ],
+  "status": "BLOCKED",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master明确分派独立执行单元，仍使用同批原样张state/ROI/路径，不改批准方案或门禁。",
+    "分配调用额度24（15情绪首候选+最多3基础候选+最多6返修），与主Art的24合计48；不能盲重试或超额。",
+    "允许仅写主Art生产目录candidates/中aj_s2/ad_s0/xj_s0前缀实际候选；账本与支持文件只写自身目录。",
+    "不参与Client正式接入；资源自产总包Gate2直交用户。",
+    "创建时间 2026-10-17T11:41:01+08:00",
+    "2026-10-17T11:43:15+08:00 Art-B 已完成首份Required及三输入源核对；本单元image_gen实际0调用。主Art首调用返回connection failed且结果未知，Master指示暂停本单元新调用；见本单元GENERATION_LEDGER与SAMPLE_ART_REVIEW，故BLOCKED。"
+  ]
+}

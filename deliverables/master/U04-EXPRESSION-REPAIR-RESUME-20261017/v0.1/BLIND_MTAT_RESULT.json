@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-10-17T13:52:36+08:00",
+  "pre_recorded_answers": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_ANSWERS.json",
+    "sha256": "043e686578e1ba4bfc95717e465dd4b6bf3744c10ee8cc7022771da689f6bfe8"
+  },
+  "observer": "master",
+  "scope": "actual U00 scale static blind recognition; no user Gate2 or runtime approval",
+  "correct": 10,
+  "total": 10,
+  "rows": [
+    {
+      "stage": "MT_S2",
+      "board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_A_TO_E.png",
+        "sha256": "40be1c079878ce7383cfd8c83b9eea554efbcb67dca009644043b821abea8d26"
+      },
+      "mapping": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_MAPPING.json",
+        "sha256": "149e0f28962dc1904f063d239d69135213eef75e81a2fdbff550f6d1c8d0c407"
+      },
+      "answers": {
+        "A": "smile",
+        "B": "angry",
+        "C": "surprised",
+        "D": "happy",
+        "E": "sad"
+      },
+      "correct": 5,
+      "total": 5,
+      "confusion_pairs": [],
+      "visual_observation": "五态均可辨；愤怒两眉眼张力明确，悲伤眉眼下垂与含泪/口角协调，惊讶眼口联动；高兴开口强于闭嘴微笑。",
+      "unscaled_u00_crop_px": [
+        230,
+        245
+      ],
+      "u00_character_scale": [
+        0.599609375,
+        0.6
+      ]
+    },
+    {
+      "stage": "AT_S0",
+      "board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_A_TO_E.png",
+        "sha256": "917f7ac9877e305701060ba223bc028fbe9f2168c80d64535e49f88042d9dabb"
+      },
+      "mapping": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_MAPPING.json",
+        "sha256": "947f4fe2db2aeb299af2a87a2da0e91e68d2947f1a31eeaaedeab48444537fea"
+      },
+      "answers": {
+        "A": "sad",
+        "B": "surprised",
+        "C": "smile",
+        "D": "angry",
+        "E": "happy"
+      },
+      "correct": 5,
+      "total": 5,
+      "confusion_pairs": [],
+      "visual_observation": "五态均可辨；保留0魂困倦基调，惊讶/高兴仍有独立眉眼口变化；高兴与微笑强度可区分，生气与悲伤眉眼张力不同。",
+      "unscaled_u00_crop_px": [
+        230,
+        245
+      ],
+      "u00_character_scale": [
+        0.599609375,
+        0.6
+      ]
+    }
+  ],
+  "result": "PASS"
+}

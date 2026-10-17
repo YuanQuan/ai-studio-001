@@ -1,0 +1,12 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity": "INFO", "message": "MT_S2/AT_S0 八余态分别用内置 imagegen 独立生成并实看，十态原生透明脸片与六语义栅格层已完成。逐态实看、源ROI外零差、源坐标、文件哈希及边界见 CHECK_DETAILS.json 与 ASSET_SUPPORT_MANIFEST.json。"},
+    {"severity": "INFO", "message": "两份最终PSD各48层，旧15层隐藏；实际保留十份单态可见配置PSD并逐份解析48层/仅当前六语义层可见。两冻结首样切换预览与冻结PSD预览像素零差，见 review/PSD_SWITCH_VALIDATION.json。"},
+    {"severity": "INFO", "message": "真实U00背景和1280×720视窗下各十态已看图；Master先看无情绪标签板再开映射，10/10全对、无判错对，见 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_RESULT.json。"},
+    {"severity": "MINOR", "message": "MT前四次生成在账本预占流程建立前完成，无法追补精确调用起止时间；已保留工具输出文件真实mtime、输入/提示/输出/SHA，并在 GENERATION_LEDGER.json 明示 UNKNOWN，不推断耗时。"}
+  ],
+  "next_action": "主Art按ASSET_SUPPORT_MANIFEST.json的精确路径和SHA整合30态；Tech独立复核像素与PSD开关，随后由Master提交具体切片和同尺度效果进入用户Gate2。此Art内部评审不代表用户批准或Client接入。"
+}

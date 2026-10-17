@@ -1,0 +1,347 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "stage": "XJ_S0",
+  "state": "happy",
+  "face_source_rect_xyxy": [
+    330,
+    223,
+    586,
+    479
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+  "candidate_sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+  "old_oneface_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_256.png",
+  "old_oneface_usage": "read-only provenance; old expression features discarded",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_mask_02.png",
+  "mask_sha256": "82c5545d226709485531e278ad58da5b1935411b11de29f62d8c27868e975b06",
+  "regions": [
+    {
+      "name": "LEFT_BROW",
+      "local_polygon_xy": [
+        [
+          49,
+          29
+        ],
+        [
+          59,
+          23
+        ],
+        [
+          81,
+          27
+        ],
+        [
+          105,
+          39
+        ],
+        [
+          112,
+          55
+        ],
+        [
+          108,
+          65
+        ],
+        [
+          89,
+          57
+        ],
+        [
+          58,
+          42
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          379,
+          252
+        ],
+        [
+          389,
+          246
+        ],
+        [
+          411,
+          250
+        ],
+        [
+          435,
+          262
+        ],
+        [
+          442,
+          278
+        ],
+        [
+          438,
+          288
+        ],
+        [
+          419,
+          280
+        ],
+        [
+          388,
+          265
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "LEFT_EYE",
+      "local_polygon_xy": [
+        [
+          57,
+          84
+        ],
+        [
+          62,
+          78
+        ],
+        [
+          75,
+          78
+        ],
+        [
+          89,
+          82
+        ],
+        [
+          96,
+          91
+        ],
+        [
+          96,
+          106
+        ],
+        [
+          88,
+          119
+        ],
+        [
+          68,
+          121
+        ],
+        [
+          58,
+          113
+        ],
+        [
+          53,
+          98
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          387,
+          307
+        ],
+        [
+          392,
+          301
+        ],
+        [
+          405,
+          301
+        ],
+        [
+          419,
+          305
+        ],
+        [
+          426,
+          314
+        ],
+        [
+          426,
+          329
+        ],
+        [
+          418,
+          342
+        ],
+        [
+          398,
+          344
+        ],
+        [
+          388,
+          336
+        ],
+        [
+          383,
+          321
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_EYE",
+      "local_polygon_xy": [
+        [
+          156,
+          106
+        ],
+        [
+          168,
+          102
+        ],
+        [
+          194,
+          102
+        ],
+        [
+          207,
+          105
+        ],
+        [
+          209,
+          116
+        ],
+        [
+          193,
+          121
+        ],
+        [
+          170,
+          120
+        ],
+        [
+          156,
+          116
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          486,
+          329
+        ],
+        [
+          498,
+          325
+        ],
+        [
+          524,
+          325
+        ],
+        [
+          537,
+          328
+        ],
+        [
+          539,
+          339
+        ],
+        [
+          523,
+          344
+        ],
+        [
+          500,
+          343
+        ],
+        [
+          486,
+          339
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "MOUTH",
+      "local_polygon_xy": [
+        [
+          92,
+          162
+        ],
+        [
+          100,
+          156
+        ],
+        [
+          119,
+          155
+        ],
+        [
+          137,
+          157
+        ],
+        [
+          145,
+          165
+        ],
+        [
+          144,
+          180
+        ],
+        [
+          134,
+          191
+        ],
+        [
+          111,
+          193
+        ],
+        [
+          97,
+          183
+        ],
+        [
+          90,
+          171
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          422,
+          385
+        ],
+        [
+          430,
+          379
+        ],
+        [
+          449,
+          378
+        ],
+        [
+          467,
+          380
+        ],
+        [
+          475,
+          388
+        ],
+        [
+          474,
+          403
+        ],
+        [
+          464,
+          414
+        ],
+        [
+          441,
+          416
+        ],
+        [
+          427,
+          406
+        ],
+        [
+          420,
+          394
+        ]
+      ],
+      "edge_feather_px": 3
+    }
+  ],
+  "status": "ART_MASK_DEFINITION_V02_FOR_VISUAL_TEST",
+  "notes": "Only candidate feature contours and small connected skin shading are eligible; outside mask retains current working base and original front. No candidate glasses rings or outer black/noise edges allowed.",
+  "supersedes": "xj_s0_happy_feature_definition_01.json",
+  "revision_reason": "First oneface visibly carried candidate golden lens lower arc into mouth region and gray optical arcs into eyes; tightened features to iris/lid and mouth alone."
+}

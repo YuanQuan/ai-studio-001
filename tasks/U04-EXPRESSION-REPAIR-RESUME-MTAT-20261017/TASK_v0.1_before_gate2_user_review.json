@@ -1,0 +1,43 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "title": "孟桃阿棠余八态定向制作与五态合版",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "六代表样通过并精确扩批复签后，制作MT_S2除surprised以外4态和AT_S0除sad以外4态，复用冻结首样与原基础，形成两阶段完整五态PSD和切片交主Art整合。",
+  "inputs": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/RESUME_AUTHORIZATION.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/sample_snapshots/",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/MT_S2_SURPRISED_COMPOSE_SPEC_01.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AT_S0_SAD_FEATURE_MASK_DEFINITION_02.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/FINAL_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "仅制作孟桃2魂、阿棠0魂余8态；必须六样全过且Art/Tech/Master精确放行后实际生图，独立单元调用最多10且全批48与12定向返修总额内，不重置历史预算。",
+    "内置imagegen逐态独立绘制眉眼口，实际输入/提示/输出与坐标、尺寸、SHA、起止、未知或失败均留证；不以旧眼变形或统一几何嘴造态，不改脸型、头向、身体和身份。",
+    "复用原清洁base/front和冻结首样，不执行已撤回MT擦除；各五态语义栅格PSD独立互斥、实际256切片与U00原显示映射重组、标签隐藏实际尺寸盲辨有真实结果；ROI外RGBA零差。",
+    "完整输出交主Art按路径与SHA整合，Required和原验收文字同序记录；不覆盖原PSD/原PNG/既有首样或改Client，不擅建任务，不将内部完成写成用户Gate2获批。"
+  ],
+  "dependencies": [
+    "U04-EXPRESSION-REPAIR-PLAN-20261017"
+  ],
+  "status": "IN_PROGRESS",
+  "approval": "APPROVAL",
+  "notes": [
+    "Master在已批准30态范围内拆分剩余24的内部并行分工；当前未放行生图，六样Art/Tech精确预签待齐。",
+    "美术模型gpt-6-sol/high，内置imagegen无CLI。新通用编码工具需Master转luna执行；可使用已接受的确定性工具和image2psd现成脚本。",
+    "计划分区main16（当前6）、本单元10（当前0）、ADXJ16（当前2）、Master保留6，总48。只有EXPANSION_RELEASE落盘才启用新分区，之前原24/18/6仍有效。",
+    "本单元8次首候选+最多2次有记录定向返修；同问题最多2次返修，失败/未知保守计预算，先核原结果不自动重发。",
+    "正式候选写主Art既定candidates/mt_s2与at_s0唯一前缀；其余新增数据/语义层/五态PSD/切片/盲辨图只写自身任务目录，避免与主Art并写。主Art负责30态固定Required与全体风格整合。",
+    "2026-10-17T13:26:43+08:00 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json; RELEASED_FOR_24_STATE_INTERNAL_PRODUCTION; unit_call_cap=10; 沿用已批准v0.2具体方案与用户恢复指令；不新增范围或审批门禁。"
+  ]
+}

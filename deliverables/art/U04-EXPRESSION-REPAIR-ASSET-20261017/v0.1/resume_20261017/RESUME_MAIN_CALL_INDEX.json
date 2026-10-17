@@ -1,0 +1,59 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "owner": "main_art",
+  "updated_at": "2026-10-17T12:53:36+08:00",
+  "batch_cap": 48,
+  "main_art_allocation_cap": 24,
+  "main_art_counted": 6,
+  "main_art_remaining": 18,
+  "parallel_adxj_counted": "SEPARATE_LEDGER_NOT_COPIED_HERE",
+  "repair_pool_counted_main_art": 2,
+  "repair_pool_cap_batch": 12,
+  "notes": "旧MT UNKNOWN1永久保留；MT受控独立recovery02及AJ一次定向返修各计1。并行ADXJ由Master合账，所有call_id唯一；此索引不代替工具结果原账。",
+  "calls": [
+    {
+      "call_id": "main-mt_s2-surprised-original-unknown",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
+      "status": "UNKNOWN_COUNTED",
+      "count": 1
+    },
+    {
+      "call_id": "main-at_s0-sad-01",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/GENERATION_LEDGER.json",
+      "status": "SUCCESS",
+      "count": 1
+    },
+    {
+      "call_id": "main-ac_s0-angry-01",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_003_AC_S0_ANGRY.json",
+      "status": "SUCCESS_LOCAL_OUTPUT",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_angry_imagegen_01.png",
+      "candidate_sha256": "fa220ad3df17f42c002dfc8c0ca52b85a927a07e270b5951affb3fbf733bc6f5",
+      "count": 1
+    },
+    {
+      "call_id": "main-aj_s2-happy-01",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_HAPPY_01.json",
+      "status": "SUCCESS_LOCAL_OUTPUT",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+      "candidate_sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+      "count": 1
+    },
+    {
+      "call_id": "main-mt_s2-surprised-recovery02",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_MT_S2_SURPRISED_RECOVERY02.json",
+      "status": "SUCCESS_LOCAL_OUTPUT",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "candidate_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "count": 1
+    },
+    {
+      "call_id": "main-aj_s2-happy-repair02",
+      "record_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_HAPPY_REPAIR02.json",
+      "status": "SUCCESS_LOCAL_OUTPUT",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+      "candidate_sha256": "d4bf188ae4eb6f04f51f05c36a03122f3c538cd80872bf64768f58a7d1b23d4f",
+      "count": 1
+    }
+  ]
+}

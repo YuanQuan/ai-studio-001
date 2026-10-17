@@ -1,0 +1,128 @@
+{
+  "status": "RELEASED_FOR_24_STATE_INTERNAL_PRODUCTION",
+  "recorded_at_utc": "2026-10-17 05:26:26 UTC",
+  "authorized_by": "master",
+  "user_authorization": "沿用已批准v0.2具体方案与用户恢复指令；不新增范围或审批门禁。",
+  "approved_plan_sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+  "evidence": {
+    "art_presign": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/EXPANSION_ART_PRESIGN.json",
+      "sha256": "9c7642ef20d41be092ec1388cfa0485f9d9ba7f9bb71dea1e372232c970739d4"
+    },
+    "art_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/SIX_SAMPLE_ART_REVIEW.json",
+      "sha256": "7e0625c259200580a3783965cc126bc91eff95b7e7b399fe2170de2fe6ea0123"
+    },
+    "tech_presign": {
+      "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/BATCH_EXPANSION_PRESIGN.json",
+      "sha256": "abbd1c31d97de8043d0950f68cd75a4f452a3a5bd9b701eea9ca3a115370fed7"
+    },
+    "tech_binding": {
+      "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_BINDING.json",
+      "sha256": "94e03d6ee614f8f186dee2a8ab75e408835023fd9717abd5753085c37e125e56"
+    },
+    "master_visual": {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/SIX_SAMPLE_MASTER_VISUAL_REVIEW.json",
+      "sha256": "5fe31c71f4fadfa30db7d077b7c1ec045cd0597f90a4753125e7f3d0e80c7fd6"
+    }
+  },
+  "master_validation": {
+    "reference_hashes_checked": 57,
+    "unique_paths": 55,
+    "all_match": true,
+    "strict_reviews": "Art、Tech、Master五字段Review schema通过且APPROVED",
+    "actual_six_views": "SIX_SAMPLE_MASTER_OBSERVATION.json",
+    "prep_wall_start": "2026-10-17T12:07:41+08:00",
+    "six_sample_cap_minutes": 90,
+    "six_sample_gate_passed_before_cap": true
+  },
+  "remaining_production": {
+    "U04-EXPRESSION-REPAIR-ASSET-20261017": {
+      "stages": [
+        "AC_S0",
+        "AJ_S2"
+      ],
+      "states_to_add": {
+        "AC_S0": [
+          "happy",
+          "surprised",
+          "sad",
+          "smile"
+        ],
+        "AJ_S2": [
+          "surprised",
+          "sad",
+          "smile",
+          "angry"
+        ]
+      },
+      "calls_cap_including_prior": 16,
+      "already_counted": 6
+    },
+    "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017": {
+      "stages": [
+        "MT_S2",
+        "AT_S0"
+      ],
+      "states_to_add": {
+        "MT_S2": [
+          "happy",
+          "sad",
+          "smile",
+          "angry"
+        ],
+        "AT_S0": [
+          "happy",
+          "surprised",
+          "smile",
+          "angry"
+        ]
+      },
+      "calls_cap": 10,
+      "already_counted": 0
+    },
+    "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017": {
+      "stages": [
+        "AD_S0",
+        "XJ_S0"
+      ],
+      "states_to_add": {
+        "AD_S0": [
+          "surprised",
+          "sad",
+          "smile",
+          "angry"
+        ],
+        "XJ_S0": [
+          "surprised",
+          "sad",
+          "smile",
+          "angry"
+        ]
+      },
+      "calls_cap_including_prior": 16,
+      "already_counted": 2
+    }
+  },
+  "budget": {
+    "global_cap": 48,
+    "counted": 8,
+    "confirmed_generated_images": 7,
+    "accepted_representative_samples": 6,
+    "old_rejected_aj_candidate_in_generated_count": 1,
+    "old_unknown_mt_in_counted": 1,
+    "repair_cap": 12,
+    "repair_used": 2,
+    "master_reserved_calls": 6,
+    "allocation_sum": 48,
+    "whole_batch_wall_cap_hours": 6,
+    "wall_start": "2026-10-17T12:07:41+08:00"
+  },
+  "guards": [
+    "首六当前版本冻结并保留，未来完整五态PSD写独立新文件；保留旧资源字节。",
+    "每态单独内置imagegen；CLI/API Key不参与。失败或未知计数并先查原结果；单问题最多2次返修且全局最多12。",
+    "身份、头向、身体/衣着/道具不改；小锦唯一front保留原近视圈纹，阿炭疲惫黑眼圈保留。",
+    "全部30态须真实切片重组、PSD互斥及实际尺寸无情绪标签盲辨，后续未产项不得写通过。",
+    "完成30态后直接提交Gate2具体切片与效果供用户审核；批准前不得Client正式导入。"
+  ]
+}

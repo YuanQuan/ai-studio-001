@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-17T13:55:05+08:00",
+  "pre_recorded_answers": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ACAJ_ANSWERS.json",
+    "sha256": "90b1b0c8ad84d59368d6eb3368a7d80d5bc433c033b354e1fd686107fad9855d"
+  },
+  "observer": "master",
+  "scope": "actual U00 scale static blind recognition; no user Gate2 or runtime approval",
+  "correct": 10,
+  "total": 10,
+  "rows": [
+    {
+      "stage": "AC_S0",
+      "board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_five_actual_scale_blind_01.png",
+        "sha256": "66b0b8880aeade67e1d2c331e27b2c97e2da15d530aeab00a86c1b8831c32983"
+      },
+      "mapping": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_BLIND_MAPPING_01.json",
+        "sha256": "077c2dacbb2192090a1ac280a876ac90ea71659bcfa4a192c6257c428cfc588e"
+      },
+      "answers": {
+        "A": "angry",
+        "B": "sad",
+        "C": "smile",
+        "D": "surprised",
+        "E": "happy"
+      },
+      "correct": 5,
+      "total": 5,
+      "confusion_pairs": [],
+      "visual_observation": "五态均可辨；怒眉/紧眼/抿嘴、伤心内眉下眼睑、疲惫轻笑、惊讶睁眼开口及高兴闭眼大笑区别明确，黑眼圈保持，未见旧横眉或肤色矩形接缝。",
+      "u00_crop_xyxy": [
+        115,
+        210,
+        365,
+        440
+      ],
+      "resize": "none, exact 1280x720 pixels"
+    },
+    {
+      "stage": "AJ_S2",
+      "board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_aj_s2_five_actual_scale_blind_01.png",
+        "sha256": "894c47d215222b776c59201eb94b7843f376c649a7009beda080059dd606e538"
+      },
+      "mapping": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AJ_S2_BLIND_MAPPING_01.json",
+        "sha256": "ff11e454729c607dff8913bbb68fbf4fabaf760855519d36a36fe6110b8c7441"
+      },
+      "answers": {
+        "A": "happy",
+        "B": "smile",
+        "C": "surprised",
+        "D": "angry",
+        "E": "sad"
+      },
+      "correct": 5,
+      "total": 5,
+      "confusion_pairs": [],
+      "visual_observation": "五态均可辨；高兴张口与闭嘴轻笑有幅度差；C为惊愕张口，D为收眉紧眼抿嘴怒，E内眉/下垂眼睑为伤心，狭长侧目角色身份保留。",
+      "u00_crop_xyxy": [
+        105,
+        205,
+        355,
+        435
+      ],
+      "resize": "none, exact 1280x720 pixels"
+    }
+  ],
+  "result": "PASS"
+}

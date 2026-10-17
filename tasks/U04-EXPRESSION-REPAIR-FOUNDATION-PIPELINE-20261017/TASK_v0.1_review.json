@@ -1,0 +1,38 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017",
+  "title": "旧五官与眼镜污染分层清理支持工具",
+  "type": "tech",
+  "owner": "client",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "依据Art实际源图与显式局部mask/邻域来源，为旧base提供确定性肤底补洞、为旧front清除五官污染；仅内部编码支持，不选择美术范围、不生成新表情或接入Client。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/RESUME_AUTHORIZATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_blank_base_256.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_front_overlay_256.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_FOUNDATION_DEFINITION_01.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AJ_S2_FOUNDATION_DEFINITION_01.json"
+  ],
+  "deliverables": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "仅按Art已定义的局部修复mask、原坐标和确定性补洞来源清base或擦front，原文件只读，mask外全部RGBA保持不变，不以几何嘴或五官变形生成情绪。",
+    "实际输入与mask/邻域来源、输出哈希和像素差异有记录，坏输入和覆盖拒绝不落半成品；不自动决定美术清理区域或视觉通过。",
+    "提供可复用命令及实际AC或其他批准阶段的单例检查证据，代码只在本任务pipeline目录，不改apps/client或其他Task已接受源码。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-17T12:35:54+08:00 Master由真实层污染证据创建必要内部支持任务，保持原48生图额度/六样/Gate2，工具本身0生图调用。",
+    "编码使用gpt-6-luna/low。Art提供源图、精确污染mask、需要保留的头发轮廓和取样/补洞约束；未收到不猜修复范围。",
+    "可实现局部alpha擦除；肤底补洞可用Art显式干净皮肤采样点的确定性插值或Art显式replacement图，方法必须由Art接受并实际目视验证；不引大型依赖、不改原资源。",
+    "输出为编码检查证据，正式新base/front由Art使用工具落版并审，稳定接口/源到192或256导出映射由Art/Tech继续核。",
+    "2026-10-17T12:41:03+08:00 MT基础清理v01草案被Art逐层核对撤回，Master确认禁用；原front为批准发束/透视轮廓，不执行擦除，当前仅AC/AJ/AD/XJ实证污染清理。",
+    "2026-10-17: Client实现foundation_cleanup.py；AC v04、AD v02、XJ v02实际运行，坏源/非法ROI/错误hair源SHA与拒覆盖边界通过；AC v02 cleanup01记录Art REJECTED，AC v04及AD/XJ仅工具候选、未宣称美术通过。四项Required提交Review，视觉复核交Art/Master。"
+  ]
+}

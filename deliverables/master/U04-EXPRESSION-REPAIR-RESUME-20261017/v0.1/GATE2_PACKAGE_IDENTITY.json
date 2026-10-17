@@ -1,0 +1,56 @@
+{
+  "artifact_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "artifact_version": "v0.1",
+  "gate": "Gate2",
+  "status": "FROZEN_FOR_USER_REVIEW_NOT_USER_APPROVED",
+  "frozen_at_utc": "2026-10-17 06:24:16 UTC",
+  "scope": "孟桃2魂、阿棠0魂、阿炭0魂、阿角2魂、阿灯0魂、小锦0魂各五态，共30态；六份完整五态PSD、原生三层资源及实际尺寸重组。",
+  "approved_plan_sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+  "package": {
+    "packet": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+      "sha256": "9507a1b15c98024022b3fe6b505542db13b27f55f6a0903118b8689971fb4ed9"
+    },
+    "manifest": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ASSET_MANIFEST.json",
+      "sha256": "91d3d890aa1236e6f8545efb3078b8119c84d95419bf797d61b131e2a7eebd4a"
+    },
+    "deliverable": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/DELIVERABLE.json",
+      "sha256": "6ec0777c4a0c515375147245e6a7c036dda74f420449b83af852bfccd8cb9fa5"
+    },
+    "art_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+      "sha256": "92ccd74cdd38071681c24912e99e95cbcd119b97ee62752bfe22c5d88030b57f"
+    },
+    "ledger": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
+      "sha256": "8fb4aa644f354046cf36c2e12230ecc16ba68959f884134ca0049a339441cdb7"
+    },
+    "named_board": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+      "sha256": "890a022362659396a4f25b1287ba95a3cbf59a24b76f971d42cdc1065ef82ff0"
+    }
+  },
+  "master_checks": {
+    "schema": "FINAL_PACKAGE_SCHEMA_CHECK.json",
+    "references": "FINAL_PACKAGE_REFERENCE_CHECK.json",
+    "reference_count": 441,
+    "unique_files": 288,
+    "states": 30,
+    "stages": 6,
+    "unique_calls": 32,
+    "blind": "THIRTY_STATE_MASTER_VISUAL_CHECK.json",
+    "blind_correct": 30,
+    "blind_total": 30,
+    "protected_resources": "FINAL_PROTECTION_CHECK.json",
+    "client_png_unchanged": 129,
+    "original_psd_and_approved_png_unchanged": 36
+  },
+  "timing_note": "MTAT前四次起止由本任务工具日志恢复可观察调用包络；原Unknown及before_recovery快照保留，事前未写账偏差仍记录。GPU/服务内部处理与费用未知。",
+  "not_authorized": [
+    "尚无具体版本Gate2用户批准；不得Client正式导入。",
+    "其余12阶段60态未扩批。",
+    "静态检查不代替接入后运行验证或适用QA。"
+  ]
+}

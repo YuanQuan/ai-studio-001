@@ -1,0 +1,432 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "global_dispatch_observation": "2/48 at task dispatch; current global counter unknown during parallel work",
+  "unit_budget_max": 16,
+  "unit_budget_count_conservative": 10,
+  "entries": [
+    {
+      "call_id": "ADXJ-01",
+      "stage": "AD_S0",
+      "state": "happy",
+      "source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "approved_crop": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+        "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c"
+      },
+      "old_recomposed_reference": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_old_face_recomposed_source.png",
+        "sha256": "1680011790ba1f2de5c24735135ab906f1e27dd9764fc3f75d0159acfbf5cd53"
+      },
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_happy_01.txt",
+        "sha256": "6266584de3637d9053158280015cea700701d8fe6d3a3d8c597cdcd8f431498b"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T12:29:34+08:00",
+      "end_time": "2026-10-17T12:30:25+08:00",
+      "result_sha256": "6aeca08b609af80d936443d03fbf2c2b132a3a1ebe702f12f4b16590d697d210",
+      "tool": "built-in image_gen",
+      "cost_gpu_time": "unknown",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-bc52bf4b-2ab4-42ca-90d6-dc05998dc1b1.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-02",
+      "stage": "XJ_S0",
+      "state": "happy",
+      "source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "approved_crop": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+        "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2"
+      },
+      "old_recomposed_reference": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_recomposed_source.png",
+        "sha256": "3f822954917344f4339bd32b88d3373392d0a877343ab89f02b2ff62cfb80d56"
+      },
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_happy_01.txt",
+        "sha256": "ea30151ed7445d6e3e9da234c7ec812a9c7109c03b6eacb041b80f69a160c0da"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T12:30:37+08:00",
+      "end_time": "2026-10-17T12:31:30+08:00",
+      "result_sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+      "tool": "built-in image_gen",
+      "cost_gpu_time": "unknown",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-8bf4666c-dae8-409d-a1bc-d980a40daddf.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-03",
+      "stage": "AD_S0",
+      "state": "surprised",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:29:47.562368+08:00",
+      "source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+          "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+          "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+          "role": "registration_and_intensity_reference"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_surprised_01.txt",
+        "sha256": "af7ca0ca9a4be635033580208c90d25b31300a7d59675d9378806a8d78d09d70"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_surprised_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:30:34.916252+08:00",
+      "result_sha256": "ce0821716f3c95f723f68792485669ebf5353a40c0b97a66adcb5fb7184fdf79",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-d64788d8-be73-48f7-be88-36237f59368b.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-04",
+      "stage": "AD_S0",
+      "state": "sad",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:30:55.734966+08:00",
+      "source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+          "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+          "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+          "role": "registration_and_intensity_reference"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_sad_01.txt",
+        "sha256": "9bf9cde40275bed3200d8720f41127d2b0a4b13ef09136c1b166af9593b633ea"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_sad_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:31:44.794502+08:00",
+      "result_sha256": "fb6742ec52e96c1083192b3ec02308b68fe794be0b4583092a03bbcd077a90a5",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-13f1fbff-0f8c-4643-a3a4-50b931568707.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-05",
+      "stage": "AD_S0",
+      "state": "smile",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:32:02.679103+08:00",
+      "source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+          "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+          "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+          "role": "registration_and_intensity_reference"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_smile_01.txt",
+        "sha256": "068a60b17ebf934ec22d14d1e4702c41cbadea2e5e7e1c69ec2fd00d503a3b9f"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_smile_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:32:47.587725+08:00",
+      "result_sha256": "1808255811ab2a294c94882e647149a90414b46c7c86de7cd90875267861621d",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-ef01f51d-1234-4057-adee-ce49d685f72c.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-06",
+      "stage": "AD_S0",
+      "state": "angry",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:33:08.186975+08:00",
+      "source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+          "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+          "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+          "role": "registration_and_intensity_reference"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_angry_01.txt",
+        "sha256": "e9c47b77b6e5087fee91e5000ca930b7d8ee2e7d3230ad4051ec87c35bf1ae1c"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_angry_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:34:05.811451+08:00",
+      "result_sha256": "c24ff2f1db1e31aeec8b27aa0b6816e5f0c6c10021f141f64c61f55307320e21",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-eeaca565-fa3d-4c11-87ed-37ad7d084781.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-07",
+      "stage": "XJ_S0",
+      "state": "surprised",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:35:11.757114+08:00",
+      "source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+          "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+          "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+          "role": "registration_and_intensity_reference"
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_surprised_eyes.png",
+          "sha256": "33772a3c2318e273cde63e81e75fa15711eeb84dc4b4ee65a45a6479bb807fd2",
+          "role": "old_both_eye_perspective_only"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_surprised_01.txt",
+        "sha256": "7afc5d64791cb0defa6db4c29662354e56e96da119f345b0e513e5e2981e0445"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_surprised_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:35:58.281693+08:00",
+      "result_sha256": "20fa2056340b3e87d326199ee846d21f7dd4cc802b6bd90e488230f02a5449d1",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-c1898f69-784b-407c-90a1-94f5e7227bd6.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-08",
+      "stage": "XJ_S0",
+      "state": "sad",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:36:23.570840+08:00",
+      "source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+          "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+          "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+          "role": "registration_and_intensity_reference"
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_sad_eyes.png",
+          "sha256": "0ed2cbfea16da0b3b2975b6c81c471d972ec33b21db9a065a5a2bf57ab373f54",
+          "role": "old_both_eye_perspective_only"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_sad_01.txt",
+        "sha256": "a1939838b35d82a519565db347c150a162e0eb737aa480a85e93f70dfc25eb5a"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_sad_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:37:15.249203+08:00",
+      "result_sha256": "13cbadc5f72f988b1179b42fee8d679de55b890d6174d133b6af1ed6a73d8f4f",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-742e5096-c507-4dfe-a5d4-b7e1de07e78b.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-09",
+      "stage": "XJ_S0",
+      "state": "smile",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:37:49.024902+08:00",
+      "source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+          "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+          "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+          "role": "registration_and_intensity_reference"
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_sad_eyes.png",
+          "sha256": "0ed2cbfea16da0b3b2975b6c81c471d972ec33b21db9a065a5a2bf57ab373f54",
+          "role": "old_both_eye_perspective_only"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_smile_01.txt",
+        "sha256": "4ec3deae749f922c590f02905fe20769b9e484c0525323fef0a191483d27302c"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_smile_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:39:08.053003+08:00",
+      "result_sha256": "107094215d17befb35ff10bb05c9fae6634b9a2f7e9801cea0899ccaf22dac5b",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-fac62c6f-099c-4cf4-be52-2067afebf460.png",
+      "result_id": null
+    },
+    {
+      "call_id": "ADXJ-10",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "tool": "built-in image_gen",
+      "status": "candidate_saved",
+      "start_time": "2026-10-17T13:39:34.224010+08:00",
+      "source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "inputs": [
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+          "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+          "role": "edit_target_identity_anchor"
+        },
+        {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+          "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+          "role": "registration_and_intensity_reference"
+        },
+        {
+          "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_angry_eyes.png",
+          "sha256": "3c9f087f5b6a41b6e98b91345867ed9a9ad62bda7e3518606b8c77df5e6182c0",
+          "role": "old_both_eye_perspective_only"
+        }
+      ],
+      "prompt": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_angry_01.txt",
+        "sha256": "f88d096f5765e1d5f8349d93e573434de543a879bc4e264c054c64fb9ba5f7ab"
+      },
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_angry_imagegen_01.png",
+      "cost_gpu_time": "unknown",
+      "end_time": "2026-10-17T13:40:34.290046+08:00",
+      "result_sha256": "60b029fc19855e828f41097c20b828515efd694710588197b6eaa7a07f251027",
+      "result_size_px": [
+        1254,
+        1254
+      ],
+      "result_mode": "RGB",
+      "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-ae5c8e25-f6cf-4d81-b68f-17aa528b8a9d.png",
+      "result_id": null
+    }
+  ],
+  "pre_release_cap": 18,
+  "budget_update_evidence": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json"
+}

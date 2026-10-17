@@ -1,0 +1,126 @@
+{
+  "status": "EXTRACTED_CANDIDATE_FOR_ART_REVIEW",
+  "visual_pass": "NOT_DECIDED_BY_CLIENT_TOOL",
+  "tool": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/pipeline/expression_pipeline.py",
+    "sha256": "52140d3b71cad87055e67ba6d98c921c72889309d198a68b8aed24c02c2a787a"
+  },
+  "definition": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_angry_FEATURE_MASK_DEFINITION.json",
+    "sha256": "790639e87958ee12ce4940f32ac4acfbeb9e2d9d4393eea4b1c0287c3fafe850"
+  },
+  "candidate": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_angry_mt_at_unit01.png",
+    "sha256": "32d95cb8ad47d47303b77a8508afdb84dcbc78a39d0bbf1e541e5c3128797a31",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "source_mode": "RGB",
+    "decoded_mode": "RGBA",
+    "normalized_size": [
+      256,
+      256
+    ],
+    "normalization": "uniform Lanczos fit; centered transparent padding only"
+  },
+  "feature_mask": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_angry_union_mask.png",
+    "sha256": "aa90a73f11640484728951eb6a780d70bb45c83580020984ff428a075f7e4d9e",
+    "size": [
+      256,
+      256
+    ],
+    "union_alpha_nonzero_pixels": 12561
+  },
+  "base": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_clean_face_integrated.png",
+    "sha256": "623b7275993c7905bdd5d6e43e79e33ce47812b2c657d1531ebbeb7d8eae07a3",
+    "source_rect_xyxy": [
+      0,
+      0,
+      1024,
+      1536
+    ]
+  },
+  "old_oneface": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_angry.png",
+    "sha256": "ad203b5d792fd50cf289c039ccf2f3703daa1e580993d088df31fd4d57ba47e8",
+    "role": "read-only provenance; all old expression pixels discarded"
+  },
+  "front": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_front_hair_integrated.png",
+    "sha256": "eab977ce075f6f198e8e4c98287660bc5a4db2489b017bf6d9f26e5530d656e9",
+    "source_rect_xyxy": [
+      0,
+      0,
+      1024,
+      1536
+    ]
+  },
+  "face_source_rect_xyxy": [
+    380,
+    180,
+    636,
+    436
+  ],
+  "semantic_layers_bottom_to_top": [
+    {
+      "name": "LEFT_BROW",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/01_left_brow.png",
+      "sha256": "53d7dc30a529a95e5914b4bf6d43107bbce6a9e20e57bc3191c02ad5c399be54",
+      "visible": true,
+      "assigned_alpha_pixels": 1248
+    },
+    {
+      "name": "RIGHT_BROW",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/02_right_brow.png",
+      "sha256": "62c300930dd0a022458de3c8578aa613cc49b717edb4aada6209f6c65d078320",
+      "visible": true,
+      "assigned_alpha_pixels": 1906
+    },
+    {
+      "name": "LEFT_EYE",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/03_left_eye.png",
+      "sha256": "6e6c79880fca2bf5eade2ff237a39f1f5b90be386abccd842c28d0eaa64779e1",
+      "visible": true,
+      "assigned_alpha_pixels": 3106
+    },
+    {
+      "name": "RIGHT_EYE",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/04_right_eye.png",
+      "sha256": "15c061f2fe2a0fd91e0786a3d18e65708172814971eda33a6b35ae58d01a8a36",
+      "visible": true,
+      "assigned_alpha_pixels": 4497
+    },
+    {
+      "name": "MOUTH",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/05_mouth.png",
+      "sha256": "2fc8657689da7bff2f09b2080d30d9f0694a3e1a9abf8823fdabdba79190ff6c",
+      "visible": true,
+      "assigned_alpha_pixels": 1319
+    },
+    {
+      "name": "NOSE_MINOR",
+      "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/06_nose_minor.png",
+      "sha256": "cf35a9589b9885263acb917b6bb29fe8fe0d39155f1c3b35f1b382059f45455c",
+      "visible": true,
+      "assigned_alpha_pixels": 485
+    }
+  ],
+  "mask_pixels_needing_centroid_semantic_fallback": 0,
+  "semantic_recompose_rgba_diff_pixels": 0,
+  "roi_outside_art_union_mask_vs_blank_base_front_diff_pixels": 0,
+  "outside_roi_same_scale_display_check": "NOT_PERFORMED_BY_THIS_COMMAND; full scene/UI comparison is an Art/Tech visual check",
+  "outputs": {
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/oneface_combined.png": "b40786748fa14a403cc0aae11540fb069564d4c0e8445dcd74ced5a4363729f3",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/recomposed_source_canvas.png": "0829d6656b7bbf0932614e66ebed3fbd435ec113673970cef1b301b518ddcfb6",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/recomposed_face_roi.png": "928fca4377b8bd6ed9aaf8bcc21a22e7f50a6c509017c47c55532f48959c1e6c",
+    "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/art_union_mask.png": "45814f4595e877fe3e073f57c00cdee741d59e0e634600e776ad64c5e601e6b0"
+  },
+  "skin_removal": "Only the Art-authored union-mask alpha controls extraction. One nonzero union-mask pixel fell outside the rasterized polygon feathers and was assigned to the nearest polygon centroid for semantic labeling; all other candidate pixels outside the union mask are excluded. Skin-like pixels inside the approved union mask are retained; Art visual review is required for any halo.",
+  "limits": [
+    "PNG semantic layers are raster layers, not native editable brush/vector strokes.",
+    "This output does not create or approve a PSD or client integration."
+  ]
+}

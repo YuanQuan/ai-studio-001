@@ -39,7 +39,7 @@
   "dependencies": [
     "U04-EXPRESSION-REPAIR-PLAN-20261017"
   ],
-  "status": "BLOCKED",
+  "status": "USER_REVIEW",
   "approval": "APPROVAL",
   "notes": [
     "用户2026-10-17本轮明确批准具体v0.2方案，主批准证据为Master USER_APPROVAL.json。",
@@ -50,6 +50,11 @@
     "Task创建时间 2026-10-17T11:24:07+08:00",
     "Art同批预签SHA-256 6c52cb9edd7906ddceea2340c1711695c0d3ad1692fab6414377487916ec4eeb，Tech已同版APPROVED，Producer已记录Gate1 DONE。",
     "首张MT_S2 surprised内置image_gen调用返回connection failed: error sending request，无候选/请求ID；UNKNOWN保守计1次，未重发。六样与后续资源未产，详deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BLOCKER_REPORT.md。Gate2仍DRAFT。",
-    "2026-10-17T12:04:26+08:00 用户授权CLI/API备选配置。独立环境与离线检查通过；缺OPENAI_API_KEY，仍BLOCKED，0新增API请求。见Master CLI_CONFIGURATION.json。"
+    "2026-10-17T12:04:26+08:00 用户授权CLI/API备选配置。独立环境与离线检查通过；缺OPENAI_API_KEY，仍BLOCKED，0新增API请求。见Master CLI_CONFIGURATION.json。",
+    "用户“恢复”后同版内置imagegen实际成功生成AT_S0 sad候选，SHA-256 284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176；resume账本合计2/48（旧MT未知1+本轮成功1）。当前仅候选，面部mask/三层重组与样张Review未通过，余24态和Gate2仍锁。",
+    "2026-10-17T12:26:53+08:00 Master续跑内部重分工：主Art执行MT/AT/AC/AJ并整合30态；AD/XJ由RESUME-ADXJ独立单元执行。主24、ADXJ18、Master保留6，全球48，含旧MT1未知及AT1成功。六样通过与复签前不扩批。",
+    "2026-10-17T13:26:43+08:00 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json; RELEASED_FOR_24_STATE_INTERNAL_PRODUCTION; unit_call_cap=16; 沿用已批准v0.2具体方案与用户恢复指令；不新增范围或审批门禁。",
+    "2026-10-17 主Art已实交12项Required、六份PSD/30脸/30真U00；SAMPLE_ART_REVIEW严格五字段APPROVED，DELIVERABLE READY_FOR_REVIEW；32/48调用。Master/Producer待以具体v0.1推进Gate2 USER_REVIEW；Client尚未导入、UUID为空。",
+    "主Art/两子包现行v0.1整批Gate2经Master GATE2_PACKAGE_ACCEPTANCE.json同版接受提交资格，冻结身份GATE2_PACKAGE_IDENTITY.json；当前仅待用户决定，未获USER_APPROVED、不DONE、不导入Client。"
   ]
 }

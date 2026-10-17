@@ -1,0 +1,482 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "execution_id": "resume_20261017",
+  "stage": "AT_S0",
+  "state": "sad",
+  "face_source_rect_xyxy": [
+    380,
+    180,
+    636,
+    436
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "method": "Discard old sad oneface features entirely; extract candidate pixels only through Art semantic polygons and feather to the current blank-skin base. Place front hair last.",
+  "background_sampling_constraints": [
+    "Only current approved base u04_at_s0_base.png supplies skin/background outside each semantic mask; never use old recomposed reference crop as transparent old_face.",
+    "Outside these polygons and their 2px feather, new oneface alpha must be zero; body, hair, clothing, cup and source ROI exterior remain old base/front pixels and alpha.",
+    "At polygon boundaries, composite candidate feature pixels against current base skin using feather; do not fill a rectangular skin patch or preserve old brow/eye/mouth pixels.",
+    "If a candidate skin-tone halo is still visible, stop visual acceptance and report; do not widen mask into hair or invent pixels."
+  ],
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+  "candidate_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+  "old_oneface_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+  "old_oneface_usage": "reference only; old five feature components are not copied into new oneface",
+  "regions": [
+    {
+      "name": "LEFT_BROW",
+      "local_polygon_xy": [
+        [
+          12,
+          93
+        ],
+        [
+          15,
+          85
+        ],
+        [
+          26,
+          79
+        ],
+        [
+          43,
+          79
+        ],
+        [
+          54,
+          85
+        ],
+        [
+          53,
+          94
+        ],
+        [
+          43,
+          101
+        ],
+        [
+          25,
+          103
+        ],
+        [
+          13,
+          100
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          392,
+          273
+        ],
+        [
+          395,
+          265
+        ],
+        [
+          406,
+          259
+        ],
+        [
+          423,
+          259
+        ],
+        [
+          434,
+          265
+        ],
+        [
+          433,
+          274
+        ],
+        [
+          423,
+          281
+        ],
+        [
+          405,
+          283
+        ],
+        [
+          393,
+          280
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_BROW",
+      "local_polygon_xy": [
+        [
+          88,
+          69
+        ],
+        [
+          97,
+          63
+        ],
+        [
+          139,
+          62
+        ],
+        [
+          156,
+          65
+        ],
+        [
+          160,
+          72
+        ],
+        [
+          151,
+          81
+        ],
+        [
+          109,
+          83
+        ],
+        [
+          93,
+          79
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          468,
+          249
+        ],
+        [
+          477,
+          243
+        ],
+        [
+          519,
+          242
+        ],
+        [
+          536,
+          245
+        ],
+        [
+          540,
+          252
+        ],
+        [
+          531,
+          261
+        ],
+        [
+          489,
+          263
+        ],
+        [
+          473,
+          259
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "LEFT_EYE",
+      "local_polygon_xy": [
+        [
+          19,
+          111
+        ],
+        [
+          29,
+          104
+        ],
+        [
+          53,
+          102
+        ],
+        [
+          70,
+          108
+        ],
+        [
+          76,
+          120
+        ],
+        [
+          71,
+          135
+        ],
+        [
+          60,
+          141
+        ],
+        [
+          36,
+          142
+        ],
+        [
+          21,
+          135
+        ],
+        [
+          17,
+          122
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          399,
+          291
+        ],
+        [
+          409,
+          284
+        ],
+        [
+          433,
+          282
+        ],
+        [
+          450,
+          288
+        ],
+        [
+          456,
+          300
+        ],
+        [
+          451,
+          315
+        ],
+        [
+          440,
+          321
+        ],
+        [
+          416,
+          322
+        ],
+        [
+          401,
+          315
+        ],
+        [
+          397,
+          302
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_EYE",
+      "local_polygon_xy": [
+        [
+          105,
+          97
+        ],
+        [
+          119,
+          89
+        ],
+        [
+          158,
+          87
+        ],
+        [
+          175,
+          92
+        ],
+        [
+          179,
+          103
+        ],
+        [
+          176,
+          119
+        ],
+        [
+          168,
+          132
+        ],
+        [
+          138,
+          138
+        ],
+        [
+          112,
+          130
+        ],
+        [
+          102,
+          114
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          485,
+          277
+        ],
+        [
+          499,
+          269
+        ],
+        [
+          538,
+          267
+        ],
+        [
+          555,
+          272
+        ],
+        [
+          559,
+          283
+        ],
+        [
+          556,
+          299
+        ],
+        [
+          548,
+          312
+        ],
+        [
+          518,
+          318
+        ],
+        [
+          492,
+          310
+        ],
+        [
+          482,
+          294
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "MOUTH",
+      "local_polygon_xy": [
+        [
+          86,
+          159
+        ],
+        [
+          96,
+          154
+        ],
+        [
+          111,
+          154
+        ],
+        [
+          120,
+          160
+        ],
+        [
+          120,
+          169
+        ],
+        [
+          113,
+          175
+        ],
+        [
+          97,
+          175
+        ],
+        [
+          87,
+          169
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          466,
+          339
+        ],
+        [
+          476,
+          334
+        ],
+        [
+          491,
+          334
+        ],
+        [
+          500,
+          340
+        ],
+        [
+          500,
+          349
+        ],
+        [
+          493,
+          355
+        ],
+        [
+          477,
+          355
+        ],
+        [
+          467,
+          349
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "NOSE_MINOR",
+      "local_polygon_xy": [
+        [
+          79,
+          139
+        ],
+        [
+          88,
+          139
+        ],
+        [
+          89,
+          150
+        ],
+        [
+          80,
+          151
+        ],
+        [
+          77,
+          145
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          459,
+          319
+        ],
+        [
+          468,
+          319
+        ],
+        [
+          469,
+          330
+        ],
+        [
+          460,
+          331
+        ],
+        [
+          457,
+          325
+        ]
+      ],
+      "edge_feather_px": 2
+    }
+  ],
+  "status": "ART_MASK_DEFINITION_V02_FOR_TECHNICAL_COMPOSITION",
+  "supersedes": "AT_S0_SAD_FEATURE_MASK_DEFINITION.json",
+  "revision_reason": "实际叠图看到初版左右眼mask触及侧发轮廓，收回外缘；仍完整围住候选五官。",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_feature_mask_02.png",
+  "mask_sha256": "198b659fb66b6ec5df084072ca17072aad4b44ca859342617f7fe7b388ee093c"
+}

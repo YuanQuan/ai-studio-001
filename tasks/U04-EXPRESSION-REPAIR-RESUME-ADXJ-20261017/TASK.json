@@ -1,0 +1,46 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "title": "阿灯小锦表情恢复独立制作单元",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "按原批准制作路线先做AD_S0 happy与XJ_S0 happy代表样；六样全部通过并Art/Tech复签后才制作两阶段余8态，交主Art整合。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/RESUME_AUTHORIZATION.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/pipeline/expression_pipeline.py",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AT_S0_SAD_FEATURE_MASK_DEFINITION_02.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "仅制作阿灯0魂、小锦0魂的批准代表样与后续获放行8态；首图同批预签、扩批前六样通过与复签，单元调用最多18且全局48内。",
+    "逐态实际候选、语义mask、分层PSD与切片重组、提示/源坐标/hash、预算/失败记录真实；小锦保留原近视圈纹单次显示，身份和透视不漂移。",
+    "实际输出交主Art总包按路径及SHA整合；Required与验收原文同序，不改其他阶段、原资源或Client，不自建任务。"
+  ],
+  "dependencies": [
+    "U04-EXPRESSION-REPAIR-PLAN-20261017"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-17T12:26:09+08:00 Master在原获批30态范围内重新分配内部并行单元；其余四阶段由主Art执行。",
+    "单元最多18调用，与主Art原24合42，余6为Master未分配保留，全球总48不可重置。开始前全批累计2（旧MT未知1+AT成功1），本单元0。",
+    "AD/XJ候选只能写主Art既定candidates/ad_s0与xj_s0前缀唯一名；其余输出写自身目录。图像用内置imagegen，禁止CLI。",
+    "首图前原同批Art/Tech预签绑定完全未变；本Task不要求用户重新批准制作方案。六样未齐不扩余8态，Gate2前不Client接入。",
+    "AD/XJ源ROI256，原生导出192/缩放0.75；base/front原始正式文件保留字节不变。小锦眼镜仅front显示一次，原圈纹不是错误，不改变0魂戴镜设定。",
+    "美术模型gpt-6-sol/high；若需要修改编码工具通过Master派发luna，不自行编码新的通用生产工具。",
+    "首Required GENERATION_LEDGER.json实存，AD_S0和XJ_S0两次内置调用均有实际候选与SHA；本任务据实READY→IN_PROGRESS。仅候选，未通过样张/扩批/Gate2。",
+    "2026-10-17T13:26:43+08:00 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json; RELEASED_FOR_24_STATE_INTERNAL_PRODUCTION; unit_call_cap=16; 沿用已批准v0.2具体方案与用户恢复指令；不新增范围或审批门禁。",
+    "主Art/两子包现行v0.1整批Gate2经Master GATE2_PACKAGE_ACCEPTANCE.json同版接受提交资格，冻结身份GATE2_PACKAGE_IDENTITY.json；当前仅待用户决定，未获USER_APPROVED、不DONE、不导入Client。"
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "stage": "AC_S0",
+  "source_roi_xyxy": [
+    350,
+    95,
+    606,
+    351
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "existing_base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_clean_base_full.png",
+  "existing_base_sha256": "89cf70ee6ba9e5ae795eb008f3300375fb507dab962202b764553834997a2609",
+  "existing_front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_front_full.png",
+  "existing_front_sha256": "0c7a148d50e516f0c79019c22381db39f15e27b41b63ecc468191343d2fa7739",
+  "base_repair_regions": [
+    {
+      "name": "left_blank_boundary",
+      "polygon": [
+        [
+          27,
+          64
+        ],
+        [
+          40,
+          61
+        ],
+        [
+          43,
+          106
+        ],
+        [
+          35,
+          113
+        ],
+        [
+          27,
+          102
+        ]
+      ],
+      "sample_points": [
+        [
+          48,
+          79
+        ],
+        [
+          53,
+          101
+        ],
+        [
+          49,
+          119
+        ]
+      ]
+    },
+    {
+      "name": "top_blank_boundary",
+      "polygon": [
+        [
+          113,
+          43
+        ],
+        [
+          190,
+          43
+        ],
+        [
+          190,
+          66
+        ],
+        [
+          181,
+          70
+        ],
+        [
+          150,
+          54
+        ],
+        [
+          118,
+          60
+        ]
+      ],
+      "sample_points": [
+        [
+          100,
+          46
+        ],
+        [
+          153,
+          67
+        ],
+        [
+          184,
+          80
+        ]
+      ]
+    },
+    {
+      "name": "lower_blank_boundary",
+      "polygon": [
+        [
+          33,
+          132
+        ],
+        [
+          66,
+          133
+        ],
+        [
+          102,
+          138
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          176,
+          137
+        ],
+        [
+          176,
+          153
+        ],
+        [
+          138,
+          151
+        ],
+        [
+          104,
+          155
+        ],
+        [
+          60,
+          150
+        ],
+        [
+          38,
+          145
+        ]
+      ],
+      "sample_points": [
+        [
+          70,
+          125
+        ],
+        [
+          122,
+          125
+        ],
+        [
+          166,
+          157
+        ]
+      ]
+    },
+    {
+      "name": "center_ghost_lines",
+      "polygon": [
+        [
+          89,
+          72
+        ],
+        [
+          109,
+          68
+        ],
+        [
+          121,
+          102
+        ],
+        [
+          107,
+          116
+        ],
+        [
+          91,
+          96
+        ]
+      ],
+      "sample_points": [
+        [
+          82,
+          80
+        ],
+        [
+          122,
+          88
+        ],
+        [
+          95,
+          120
+        ]
+      ]
+    }
+  ],
+  "front_erase_regions": [
+    {
+      "name": "left_old_brow_eye",
+      "polygon": [
+        [
+          31,
+          78
+        ],
+        [
+          94,
+          77
+        ],
+        [
+          119,
+          110
+        ],
+        [
+          111,
+          139
+        ],
+        [
+          76,
+          140
+        ],
+        [
+          37,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "right_old_brow_eye_bag",
+      "polygon": [
+        [
+          102,
+          65
+        ],
+        [
+          180,
+          65
+        ],
+        [
+          183,
+          126
+        ],
+        [
+          123,
+          133
+        ],
+        [
+          108,
+          112
+        ]
+      ]
+    }
+  ],
+  "protected_visual_regions": [
+    {
+      "name": "left_forelock",
+      "polygon": [
+        [
+          28,
+          54
+        ],
+        [
+          94,
+          54
+        ],
+        [
+          98,
+          70
+        ],
+        [
+          86,
+          86
+        ],
+        [
+          72,
+          91
+        ],
+        [
+          63,
+          120
+        ],
+        [
+          48,
+          151
+        ],
+        [
+          29,
+          151
+        ]
+      ]
+    },
+    {
+      "name": "center_forelock_tip",
+      "polygon": [
+        [
+          89,
+          52
+        ],
+        [
+          111,
+          52
+        ],
+        [
+          116,
+          71
+        ],
+        [
+          129,
+          87
+        ],
+        [
+          119,
+          120
+        ],
+        [
+          105,
+          117
+        ],
+        [
+          98,
+          98
+        ]
+      ]
+    },
+    {
+      "name": "right_forelock",
+      "polygon": [
+        [
+          141,
+          43
+        ],
+        [
+          188,
+          43
+        ],
+        [
+          189,
+          120
+        ],
+        [
+          176,
+          125
+        ],
+        [
+          168,
+          95
+        ],
+        [
+          149,
+          75
+        ]
+      ]
+    },
+    {
+      "name": "face_outline_ear",
+      "polygon": [
+        [
+          184,
+          91
+        ],
+        [
+          209,
+          66
+        ],
+        [
+          239,
+          65
+        ],
+        [
+          244,
+          132
+        ],
+        [
+          208,
+          154
+        ],
+        [
+          175,
+          194
+        ],
+        [
+          151,
+          209
+        ],
+        [
+          122,
+          211
+        ],
+        [
+          90,
+          198
+        ],
+        [
+          58,
+          172
+        ],
+        [
+          31,
+          140
+        ]
+      ]
+    }
+  ],
+  "masks": {
+    "base_repair": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_base_repair_01.png",
+      "sha256": "80760678b910c6c80b1d3befb6b2a6c2d9f6b5dfd36153f8615fb44798710bb8",
+      "alpha_nonzero_pixels": 9429
+    },
+    "front_erase": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_front_erase_01.png",
+      "sha256": "b6216c6b8c7ebb0bbc4166f1f9081335c85eac2e4c748db99ed2df8055bdf338",
+      "alpha_nonzero_pixels": 10220
+    },
+    "protect_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_protect_review_01.png",
+      "sha256": "85bf8bed739f9da8bfa6e5a07672e30047c2f2dfc214597519baba671bb0a0c9",
+      "alpha_nonzero_pixels": 25568
+    }
+  },
+  "skin_sampling_rule": "修补局部旧空脸灰矩形边界/幽灵线；只从同一current base的指定无五官肤点取色与邻域插值，保留真实耳、发、下颌和鼻位；不得用候选整脸或原获批整图覆盖。",
+  "hard_constraints": [
+    "仅源ROI内可改变base/front；ROI外RGBA逐像素零差。",
+    "旧眉眼口应从front消失且不透明肤底不能再挡新五官；新五官与hair/front互斥显示。",
+    "发丝/耳/脸轮廓线/鼻及原身体衣物必须从现行层保留；若擦除与保护区域冲突需逐像素看图，不能粗暴整多边形擦除。",
+    "候选新图仅用于已登记的五官语义mask，不可整脸覆盖。"
+  ],
+  "status": "ART_AUTHORED_FOUNDATION_DEFINITION_FOR_TOOL_AND_VISUAL_ITERATION"
+}

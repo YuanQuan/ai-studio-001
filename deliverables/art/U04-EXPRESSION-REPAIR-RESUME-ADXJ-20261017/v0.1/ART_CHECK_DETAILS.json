@@ -1,0 +1,166 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "owner": "art",
+  "status": "ART_SELF_REVIEW_PASS_PENDING_MAIN_ART_TECH_MASTER_GATE2",
+  "scope": "AD_S0 and XJ_S0, each five states; two happy representative samples preserved, eight expansion states added after six-sample Art/Tech release",
+  "checks": [
+    {
+      "stage": "AD_S0",
+      "state": "happy",
+      "revision": "final02",
+      "art_visual": "PASS",
+      "evidence": [
+        "review/final02/u04_ad_s0_happy_native_768.png",
+        "review/final02/u04_ad_s0_happy_u00_1280x720.png",
+        "review/final02/u04_ad_s0_old_vs_new_face_same_scale.png"
+      ],
+      "assessment": "阿灯暖色、头向、身份保持；上下眼与张口笑联动，口腔有体积；获批原图同坐标修复左发际窄米色旧斑。候选外围噪边未入实际切片。",
+      "technical": "base/source ROI外及Art mask外RGBA差0；原front 192逐字节不变；feature-only mask重组差0；PSD 23层，旧态隐藏，cache/preview差0。"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "revision": "final03",
+      "art_visual": "PASS",
+      "evidence": [
+        "review/final03/u04_xj_s0_happy_native_768.png",
+        "review/final03/u04_xj_s0_happy_u00_1280x720.png",
+        "review/final03/u04_xj_s0_old_vs_new_face_same_scale.png",
+        "review/final02/xj_s0_front_only_03.png",
+        "review/final02/xj_s0_base_face_no_front_03.png",
+        "review/final02/xj_s0_base_front_no_face_03.png"
+      ],
+      "assessment": "小锦高近视金蓝灰折射圈纹来自获批原画并仅在front可见；笑眼与张口联动。青发边缘旧肤斑定向恢复。与旧happy同尺度对照，口腔与笑眼表现更强。",
+      "technical": "旧base重复圈线已清，候选镜框没有进入oneface；front内眼窗18个淡肤旧像素精确擦alpha，获批圈纹未擦。source/native ROI外RGBA差0；PSD旧front隐藏，23层，cache/preview差0。"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "surprised",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "双眼睁大、内眉抬起与圆口配合；强度及口型不同于 happy。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "AD_S0",
+      "state": "sad",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "两眉内抬、眼睑垂下与下压嘴角配合；眼眶湿润但未改变身份头向。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "AD_S0",
+      "state": "smile",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "柔和眼神、轻闭嘴微笑；明显弱于 happy 张口笑。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "AD_S0",
+      "state": "angry",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "眉峰内压、双眼收紧、张口斥责；未与 sad 共用眉眼。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "surprised",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "双眼独立睁大、圆口；获批高近视圈纹由唯一 front 保留。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "sad",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "双眼各自下垂含泪、嘴角下压；未继承 happy 单眼眨眼。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "smile",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "双眼柔和、闭嘴轻笑；弱于 happy 眨眼张口笑。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "angry",
+      "revision": "expansion01",
+      "art_visual": "PASS",
+      "evidence": [
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_native768_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_u00_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_five_state_psd_preview_01.png",
+        "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png"
+      ],
+      "assessment": "双眼收窄且眉心压紧、嘴角收敛；与 sad 的湿润下垂方向不同。",
+      "technical": "Art mask feature-only; candidate exterior and generated glasses excluded; frozen foundation base/front shared; native ROI outside old base RGBA diff 0; 43-layer PSD one state visible, legacy layers hidden; preview delta at most 2 channel levels from integer rounding."
+    }
+  ],
+  "cross_sample_constraints": [
+    "两阶段各五态均来自各自独立候选，happy 强于 smile、surprised 眼口独立、angry 眉眼不与 sad 共用。",
+    "XJ 的批准高近视折射圈纹仅由同一 front 供应；新增四态双眼分别制作，happy 单眼眨眼未固定。",
+    "此次十态为 Art 内部通过并交主 Art/Tech 整合；未取得 Gate2 用户批准，未作 Client 接入或运行 QA。"
+  ],
+  "limitation": "本 Art 自评与 Master 静态盲辨 10/10 不替代主 Art/Tech 实图核查、Gate2 用户具体切片审批或接入后实际运行对照。",
+  "expansion_release": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json",
+    "sha256": "7ba9772a1cfd93314f46b95adc5812f3c4e0eba655e367bbf00bef8da31c70fc",
+    "bytes": 4285
+  },
+  "actual_scale_blind_result": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ADXJ_DRAFT01_RESULT.json",
+    "sha256": "5b1ff0f8c8cebfd88f68252e11ffb7a50bf46eb7ed901ba9eb725b23bbfd2a0c",
+    "bytes": 2313
+  },
+  "actual_scale_blind_score": "10/10; Master answers recorded before mappings read; all current U00 and board SHA unchanged after blind result"
+}

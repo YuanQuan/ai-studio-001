@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-17T12:17:19+08:00",
+  "old_mt_tool_result": "connection failed; no request ID or output path returned",
+  "old_mt_record_preserved": true,
+  "local_generated_pngs_in_original_failure_window": 0,
+  "scan_window": [
+    "2026-10-17T11:38:00+08:00",
+    "2026-10-17T11:46:00+08:00"
+  ],
+  "interpretation": "本地原时间窗未找回输出；没有远端查询ID，不能断言远端未消耗。旧调用仍计1。",
+  "master_recovery_decision": "原结果不可访问。待AT合成方式通过后，可对原获批MT_S2 surprised另建新序号/新唯一输入/独立账本，至多一次受控尝试并另扣预算；不自动重试，不覆盖旧条目，不重置48总上限。",
+  "new_generation_calls_issued_by_this_check": 0
+}

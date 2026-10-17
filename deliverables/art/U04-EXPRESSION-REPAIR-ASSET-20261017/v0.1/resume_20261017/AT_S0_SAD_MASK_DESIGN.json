@@ -1,0 +1,106 @@
+{
+  "stage": "AT_S0",
+  "state": "sad",
+  "source_face_rect_xyxy": [
+    380,
+    180,
+    636,
+    436
+  ],
+  "mask_canvas_px": [
+    256,
+    256
+  ],
+  "allowed_change": "眉、眼、嘴及相连的脸内皮肤和阴影；其余保留现行base/face/front RGBA",
+  "regions": [
+    {
+      "semantic": "left_brow",
+      "local_xyxy": [
+        7,
+        72,
+        63,
+        110
+      ],
+      "source_xyxy": [
+        387,
+        252,
+        443,
+        290
+      ],
+      "corner_radius_px": 15
+    },
+    {
+      "semantic": "right_brow",
+      "local_xyxy": [
+        86,
+        52,
+        164,
+        91
+      ],
+      "source_xyxy": [
+        466,
+        232,
+        544,
+        271
+      ],
+      "corner_radius_px": 15
+    },
+    {
+      "semantic": "left_eye",
+      "local_xyxy": [
+        8,
+        97,
+        105,
+        153
+      ],
+      "source_xyxy": [
+        388,
+        277,
+        485,
+        333
+      ],
+      "corner_radius_px": 19
+    },
+    {
+      "semantic": "right_eye",
+      "local_xyxy": [
+        93,
+        82,
+        201,
+        155
+      ],
+      "source_xyxy": [
+        473,
+        262,
+        581,
+        335
+      ],
+      "corner_radius_px": 22
+    },
+    {
+      "semantic": "mouth_and_skin",
+      "local_xyxy": [
+        74,
+        146,
+        136,
+        187
+      ],
+      "source_xyxy": [
+        454,
+        326,
+        516,
+        367
+      ],
+      "corner_radius_px": 16
+    }
+  ],
+  "edge": "五区域并集，256尺度4px Gaussian feather；语义区域内原oneface眉眼嘴被完整覆盖，边缘与旧基底渐变。",
+  "old_oneface_alpha_positive_pixels": 7855,
+  "old_feature_pixels_mask_below_250": 43,
+  "mask_sha256": "2462eaafb7fe1cadf2c9b75ee42d252a9a7178173ddd662bf1294851c6d60264",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_semantic_mask_01.png",
+  "spec_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_compose_spec_01.json",
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+  "candidate_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+  "note": "本遮罩由Art按脸部锚点定界；需看实际重组后再判PASS，不以几何或哈希自动代替审美。"
+}

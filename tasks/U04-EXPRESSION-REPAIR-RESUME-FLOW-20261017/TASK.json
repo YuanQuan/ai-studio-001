@@ -1,0 +1,40 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-RESUME-FLOW-20261017",
+  "title": "六店长表情内置生图恢复执行监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "按用户恢复指令跟踪内置生图真实执行、预算、候选检查、连续性与复盘，原批准和历史不改。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/RESUME_AUTHORIZATION.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "用户准确v0.2 Gate1批准、Task DONE与新生产线真实状态/预签/产物/预算持续可视化；Gate2未批准则Client锁。",
+    "Required、Master内部接受、continuity和有可靠起止的复盘齐备；不改其他并发任务内容，不虚报审美或运行通过。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-17T12:07:47+08:00 Master创建恢复执行流程任务；Producer拥有六共享文件本轮唯一区块及任务状态记录权限，保留历史。",
+    "其他既有DONE流程任务不倒退；当前Art生产Task可依据实际执行证据由BLOCKED恢复。",
+    "仅内置工具；不等API密钥；48次总额与未知MT1次保留。",
+    "本轮首Required FLOW_REPORT.md已实际产出；Art AT_S0实际调用尚待，RESUME_READY仅指生产准备。",
+    "本轮FLOW_REPORT、CONTINUITY_CHECK、WORK_RETROSPECTIVE、DELIVERABLE四Required齐；准确Gate2 USER_REVIEW已登记，待Master内部接受Producer流程。",
+    "Master PRODUCER_FINAL_SUPPORT_ACCEPTANCE.json strict5 APPROVED，本轮四Required与两验收PASS、最终continuity无空挂，Producer内部DONE；Art Gate2仍待用户批准。"
+  ]
+}

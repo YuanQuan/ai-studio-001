@@ -1,0 +1,36 @@
+{
+  "observed_at": "2026-10-17T12:07:47+08:00",
+  "user_instruction": "恢复",
+  "route": "built-in image_gen; no CLI/API key required",
+  "existing_gate1": "v0.2 USER_APPROVED",
+  "presign_binding": "existing exact Art/Tech batch binding unchanged and verified",
+  "start_target": "AT_S0 sad (never submitted)",
+  "prior_unknown_mt": "kept counted 1; no resubmission",
+  "budget_cap": 48,
+  "count_before_resume": 1,
+  "scope": "same six-stage 30-state batch; six representative sample checks before expansion; Gate2 before Client import",
+  "internal_execution_partitions": {
+    "main_art": {
+      "stages": [
+        "MT_S2",
+        "AT_S0",
+        "AC_S0",
+        "AJ_S2"
+      ],
+      "cap_including_prior": 24,
+      "count_observed": 2
+    },
+    "adxj_art": {
+      "task": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+      "stages": [
+        "AD_S0",
+        "XJ_S0"
+      ],
+      "cap": 18,
+      "count_at_dispatch": 0
+    },
+    "master_unallocated_reserve": 6,
+    "global_cap_unchanged": 48,
+    "reason": "同批内部角色与预算分工，不改变已批准资源阶段/情绪/视觉或门禁。"
+  }
+}

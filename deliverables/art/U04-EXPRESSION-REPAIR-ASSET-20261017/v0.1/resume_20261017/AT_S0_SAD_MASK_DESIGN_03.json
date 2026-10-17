@@ -1,0 +1,103 @@
+{
+  "stage": "AT_S0",
+  "state": "sad",
+  "source_face_rect_xyxy": [
+    380,
+    180,
+    636,
+    436
+  ],
+  "mask_canvas_px": [
+    256,
+    256
+  ],
+  "allowed_change": "眉、眼、嘴及邻接皮肤和阴影；外围不取生成图",
+  "regions": [
+    {
+      "semantic": "left_brow",
+      "local_xyxy": [
+        11,
+        78,
+        56,
+        106
+      ],
+      "source_xyxy": [
+        391,
+        258,
+        436,
+        286
+      ],
+      "corner_radius_px": 10
+    },
+    {
+      "semantic": "right_brow",
+      "local_xyxy": [
+        89,
+        58,
+        157,
+        82
+      ],
+      "source_xyxy": [
+        469,
+        238,
+        537,
+        262
+      ],
+      "corner_radius_px": 9
+    },
+    {
+      "semantic": "left_eye",
+      "local_xyxy": [
+        13,
+        98,
+        104,
+        149
+      ],
+      "source_xyxy": [
+        393,
+        278,
+        484,
+        329
+      ],
+      "corner_radius_px": 13
+    },
+    {
+      "semantic": "right_eye",
+      "local_xyxy": [
+        97,
+        86,
+        194,
+        147
+      ],
+      "source_xyxy": [
+        477,
+        266,
+        574,
+        327
+      ],
+      "corner_radius_px": 15
+    },
+    {
+      "semantic": "mouth_and_skin",
+      "local_xyxy": [
+        79,
+        153,
+        124,
+        179
+      ],
+      "source_xyxy": [
+        459,
+        333,
+        504,
+        359
+      ],
+      "corner_radius_px": 10
+    }
+  ],
+  "edge": "五区域并集，2px Gaussian feather；缩小面皮范围以减少色差接缝。",
+  "old_feature_pixels_mask_below_250": 0,
+  "mask_sha256": "352587f3182627f7f3fc04e2c9b7f913a133a5063fc5a6ef97c426edb576ae02",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_semantic_mask_03.png",
+  "revision_from": "at_s0_sad_semantic_mask_02.png",
+  "revision_reason": "02重组眉眼周围灰色边缝明显，收缩并断开皮肤范围。"
+}

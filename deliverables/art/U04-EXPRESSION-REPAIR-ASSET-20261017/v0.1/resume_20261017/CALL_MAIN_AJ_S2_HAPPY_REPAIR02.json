@@ -1,0 +1,49 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-aj_s2-happy-repair02",
+  "owner": "main_art",
+  "stage": "AJ_S2",
+  "state": "happy",
+  "attempt_kind": "targeted_repair_1_of_2_for_weak_happy",
+  "prior_call_id": "main-aj_s2-happy-01",
+  "prior_candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+  "prior_candidate_sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+  "prior_visual_review": "CHANGES_REQUESTED",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T12:32:44+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 24,
+    "main_art_counted_before": 5,
+    "main_art_if_sent": 6,
+    "global_known_before_excluding_parallel_adxj": 5,
+    "repair_pool_charge": 1,
+    "same_problem_repairs_used_before": 0,
+    "same_problem_repairs_if_sent": 1
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_happy_repair02_input_256.png",
+  "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_happy_prompt_repair02.txt",
+  "prompt_sha256": "3ea06addbf4a3e1ce5ef43cc98b611dd11955382b2f35fcea3667564bcbf3ae8",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "已再次实际查看获批原脸和首候选；首候选只有腮红+浅闭嘴微笑，happy与smile难区分。",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-d1f0bc79-9676-481b-a999-013601d2a333.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+  "output_sha256": "d4bf188ae4eb6f04f51f05c36a03122f3c538cd80872bf64768f58a7d1b23d4f",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T12:33:28+08:00",
+  "main_art_counted_after": 6,
+  "visual_candidate_note": "相较首候选，笑眼明显上提/收窄，嘴张开可见少量上齿，脸颊抬起；happy与smile强度区分更清楚。眉眼透视及嘴型仍须256与场景重组核验；外围生成噪边不可使用。"
+}

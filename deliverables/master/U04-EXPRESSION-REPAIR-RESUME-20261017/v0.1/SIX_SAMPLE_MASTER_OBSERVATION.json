@@ -1,0 +1,65 @@
+{
+  "recorded_at": "2026-10-17T13:20:34+08:00",
+  "basis": "Master逐张实际view source/ROI及真实1280×720 U00静态重组，非Client运行图",
+  "samples": [
+    {
+      "stage": "AT_S0",
+      "state": "sad",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_at_s0_sad_recomposed.png",
+      "sha256": "5ddd31524d502daf8f44978e1cb1de41a5dd10ba400dcf5162ba917e4e2b4bd3",
+      "visual_result": "PASS",
+      "observation": "悲伤眉眼口共同表达，疲倦身份保留，未见宽灰色贴片。"
+    },
+    {
+      "stage": "MT_S2",
+      "state": "surprised",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_mt_s2_surprised_recomposed.png",
+      "sha256": "3a01ea2b9a5a81bf011b59e93052e3b704b26575d848f23022cbf01aa741350b",
+      "visual_result": "PASS",
+      "observation": "惊讶眼睑/眉/张口协调；原发束/透视轮廓保留，撤回擦除未执行。"
+    },
+    {
+      "stage": "AC_S0",
+      "state": "angry",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_angry_u00_same_scale_1280x720.png",
+      "sha256": "84251c1288be0cdcd41042a876a8730d0ac0a150cae05c78b9411493f31eafdc",
+      "visual_result": "PASS",
+      "observation": "怒态收眉、眼睑、紧口协调；黑眼圈疲惫保留，旧眉碎点和矩形肤缝未见，前发连续。"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "happy",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_aj_s2_happy_u00_same_scale_1280x720.png",
+      "sha256": "e3212a2053743935ea976f60db594573ea70d9aa3ed947925f460cc0437983e0",
+      "visual_result": "PASS",
+      "observation": "明显张口笑/笑眼区别原浅笑；狭长眼、脸型、头向、轮廓与发形保留，无可见方口和白缝。"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "happy",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_happy_u00_1280x720.png",
+      "sha256": "5f2620707017c40638e1c7a1b5272762eecd60dd7ac794d7bfb89915c5303156",
+      "visual_result": "PASS",
+      "observation": "高兴张口与暖光自然，脸型/姿态保持，嘴有口腔体积，候选外围噪声未入图。"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "actual_view_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_happy_u00_1280x720.png",
+      "sha256": "2369c3344b8318890973c8712289b22bc6947212ad2ba37dd047aa6d3992331a",
+      "visual_result": "PASS",
+      "observation": "高兴口型/眨眼可辨；同心近视镜框由唯一front显示，原镜片灰蓝折射保留，旧外部重复环已清。"
+    }
+  ],
+  "limits": [
+    "目前只评各阶段1个代表态，五态盲辨、五新态PSD切换和其余24态尚未制作。",
+    "此为内部视觉通过，不替代Tech检查、Art/Tech扩批复签或用户Gate2具体切片批准。"
+  ],
+  "budget": {
+    "counted": 8,
+    "success": 7,
+    "unknown": 1,
+    "repair_used": 2,
+    "max": 48
+  }
+}

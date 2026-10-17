@@ -1,0 +1,20 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "reviewer": "master",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "MTAT_TIME_RECOVERY.json已从本任务实际工具会话逐条恢复前四次functions.exec调用发出与完成输出时间；按唯一transport call_id配对，每段仅一次imagegen，输入路径和完整prompt精确相同，每区间仅一个PNG且源图/候选SHA一致，未从mtime推断起止。"
+    },
+    {
+      "severity": "INFO",
+      "message": "已恢复的是可观察工具调用包络，不是图像服务内部开始、GPU耗时或计费时间；imagegen内部request_id仍无返回，exec transport call_id单独标注。完整最小证据保留在mtat_time_recovery/，不复制整段私人会话日志。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "前四次未事前写账仍为过程偏差，须保留原Unknown账本/交付/Review快照；后四次已改为调用前登记，32总次数及全部图像保持不变。"
+    }
+  ],
+  "next_action": "授权主Art在同角色MTAT记录中保留before_recovery快照后，将前四起止补为可观察包络值并引用Master恢复证据，单独保留原Unknown值和time_source；验收第2条可按恢复的实际输入/提示/起止/SHA记录改判PASS，继续保留事前写账偏差，更新该子DELIVERABLE/Review的当前说明。冻结asset manifest、像素和六样/Tech绑定不改；整批Gate2仍待用户批准。"
+}

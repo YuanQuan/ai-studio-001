@@ -1,0 +1,89 @@
+{
+  "stage": "XJ_S0",
+  "source_roi_xyxy": [
+    330,
+    223,
+    586,
+    479
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "existing_base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_clean_full.png",
+  "existing_base_sha256": "c870fa345f4075cfe27f621148d6010044a86d46eba875f6381b9b27f0df636b",
+  "existing_front": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_input_front_full_01.png",
+  "existing_front_sha256": "67ff5fcae33d58e20baf83a046fbcb7056d4a996491e7ca054cd73c60aa2a022",
+  "base_repair_regions": [
+    {
+      "name": "art_local_residual_cleanup",
+      "sample_points": [
+        [
+          64,
+          96
+        ],
+        [
+          183,
+          111
+        ]
+      ]
+    }
+  ],
+  "front_erase_regions": [],
+  "protected_visual_regions": [
+    {
+      "name": "front_hair_and_optics"
+    }
+  ],
+  "masks": {
+    "base_repair": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_base_duplicate_ring_cleanup_mask_01.png",
+      "sha256": "2c0b29e2ca2583f1ca141e108d34a1b95f0ed95d994617c717f7aff48e21582c",
+      "alpha_nonzero_pixels": 19054
+    },
+    "front_erase": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_front_erase_none_01.png",
+      "sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f",
+      "alpha_nonzero_pixels": 0
+    },
+    "protect_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_protect_review_01.png",
+      "sha256": "4628ca44d58d5ce87b22c62594cc5245002516567b021cc32ea886643b1d15da",
+      "alpha_nonzero_pixels": 28050
+    }
+  },
+  "source_binding": {
+    "original_front": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_front_occlusion.png",
+      "sha256": "342fb440d6829c8fe84cf5c32ad875254a8477322693129503d2a5e0e2a9da71"
+    },
+    "original_psd": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+      "sha256": "93cff7468175ae955f655843f9f2995597668d158d8738bb22c80aa5ee2cfc70"
+    },
+    "approved_original": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+      "sha256": "bbde4f30cfb84ddef890e6bfdea6ca3990f9669235a6f3abf27b78dc11b26dd9"
+    }
+  },
+  "status": "ART_AUTHORED_FOUNDATION_DEFINITION_FOR_TOOL_AND_VISUAL_ITERATION",
+  "approved_optics_transfer_binding": {
+    "approved_face": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+      "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2"
+    },
+    "annulus_mask": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_mask_02.png",
+      "sha256": "df553efac74fa8da64e7b7694704966478f9041c779c7c7a5d57c8486a880b72"
+    },
+    "derived_annulus": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_02.png",
+      "sha256": "3d2cba815e81d1d29e054e64fce455e16dc5ecd4ce505a4e7d5b4c5763d3ebd0"
+    },
+    "derived_roi_front": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_front_single_glasses_source_02.png",
+      "sha256": "58787649b1cbaf9d5647eb6d3f1ccc62726d16e18ccef46f4e619de42cb65779"
+    },
+    "assembly": "Art-derived annulus under untouched original front; prototype binding exact by SHA; eye windows alpha clear; no source ROI exterior pixels transferred"
+  }
+}

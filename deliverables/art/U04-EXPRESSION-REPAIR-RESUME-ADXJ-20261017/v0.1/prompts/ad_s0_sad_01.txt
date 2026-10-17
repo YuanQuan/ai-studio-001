@@ -1,0 +1,8 @@
+Use case: precise-object-edit
+Asset type: one 256×256 source-coordinate facial expression candidate for the existing AD_S0 dialogue sprite.
+Input image 1: approved original AD_S0 face crop; this is the edit target and identity anchor. Input image 2: current approved happy repaired face only for face registration and small-scale intensity comparison; do not copy its expression.
+Primary request: make 阿灯 read unambiguously as sad at an actual displayed face size around 142.5 px. A genuinely sad reaction: brows slope upward toward the center, lids lower with softened eyes and a small closed/downturned mouth. Subtle tear gloss is acceptable inside eyes; no large streaming tears, no smile. Sadness must read at small scale.
+Composition/framing: retain the exact source crop, perspective, eye centers, face/chin shape, hairline, cheek/neck and shoulder placement.
+Style/medium: match the approved soft hand-painted anime portrait, its line weight and warm lantern-lit skin, dark hair, navy outfit.
+Constraints: Preserve existing three-quarter head angle, eye placement, chin, hairline and dark foreground hair, face identity and warm hand-painted linework. Do not redraw hair, clothes, jewelry, or silhouette. Change expression only: brows, eyelids/eyes and mouth plus tiny connected face shading. One state only. No text, no watermark.
+Avoid: duplicate brows/eyes, expressions too similar to approved happy, crossed eye direction, changed age, changed pose, skin-tone rectangular patch, extra optical ring, noise at face edge.

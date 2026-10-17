@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-17T13:07:52+08:00",
+  "scope": "AC v06独立重复执行与实际视觉检查，0生图；正式来源仍为Art目录",
+  "definition": {
+    "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_FOUNDATION_DEFINITION_06.json",
+    "sha256": "dcee069e82e8509d7f0c9fef5311ab6801657df581eada7448669bd43ae74319",
+    "stage": "AC_S0",
+    "status": "DRAFT_FOR_TOOL_PREVIEW"
+  },
+  "pixel_checks": {
+    "base_roi_outside_mask_or_hair_recovery_changed_rgba_pixels": 0,
+    "front_roi_outside_mask_changed_rgba_pixels": 0,
+    "base_outside_source_roi_changed_rgba_pixels": 0,
+    "front_outside_source_roi_changed_rgba_pixels": 0,
+    "base_alpha_changed_pixels": 0,
+    "front_rgb_changed_pixels": 0
+  },
+  "independent_outputs": {
+    "derived_base_full.png": {
+      "art_sha": "698ad4f96e6d33aa9da3e89e44ca9d879f98257e88dacedece7c920080486df6",
+      "master_independent_sha": "17648ed88f635eee4cef8e173558e311bed62272f328dc5cb81f5ef55adc0cf3",
+      "changed_rgba_pixels": 0,
+      "max_channel_delta": 0
+    },
+    "derived_front_full.png": {
+      "art_sha": "bb0fb95ee39e3b33e9ed9790cd22439d32197481fa5764d7d4b1eb4dc6004547",
+      "master_independent_sha": "75f83d459abd5e1781c5bd1d343a68b5f2274544951aa0586ffc2ebe9b2b0b24",
+      "changed_rgba_pixels": 0,
+      "max_channel_delta": 0
+    },
+    "derived_base_roi.png": {
+      "art_sha": "1fb717fb2b57b9cc21051ef718cfb853270ed4b3e29e52fc94c07b04052ad795",
+      "master_independent_sha": "1fb717fb2b57b9cc21051ef718cfb853270ed4b3e29e52fc94c07b04052ad795",
+      "changed_rgba_pixels": 0,
+      "max_channel_delta": 0
+    },
+    "derived_front_roi.png": {
+      "art_sha": "7100b36c53d7bfa99c975a051b08a0c09625be5d7b9bbf25223e773ce4ea989d",
+      "master_independent_sha": "7100b36c53d7bfa99c975a051b08a0c09625be5d7b9bbf25223e773ce4ea989d",
+      "changed_rgba_pixels": 0,
+      "max_channel_delta": 0
+    }
+  },
+  "master_view": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_angry_feature_extract_02/recomposed_face_roi.png",
+    "sha256": "8872ee6f84af8b6fcfa08629ad52ab5b50bde1d5a72bf52ebd0acc5f47db497b",
+    "observation": "生气眉眼口联动、疲惫黑眼圈保留；旧额短眉和眼外双碎点消失，前发连续；待PSD及1280同尺度最终检查。"
+  },
+  "does_not_approve": "不是六样联审、扩展或Gate2批准",
+  "fullbody_observation": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_angry_recomposed_1280x720.png",
+    "sha256": "c23e62dba1567325d535665ed902961f1d0a616e61b0de8f822034ec3304cb52",
+    "result": "表情/前发/肤色连续可继续；该图不是既有U00同视窗与实际缩放，不能用于同尺度项，已请求Art另补，不因分辨率相同判通过。"
+  },
+  "last_observed_at": "2026-10-17T13:09:22+08:00"
+}

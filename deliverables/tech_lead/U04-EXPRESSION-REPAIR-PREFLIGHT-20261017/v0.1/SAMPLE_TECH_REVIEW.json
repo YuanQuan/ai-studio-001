@@ -1,10 +1,24 @@
 {
   "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
   "reviewer": "tech_lead",
-  "decision": "BLOCKED",
+  "decision": "APPROVED",
   "findings": [
-    {"severity": "MAJOR", "message": "六代表样张的新候选、PSD、切片和同尺度重组均不存在，实际层、坐标、alpha、眼镜单次显示与贴图面积均NOT_TESTED；不能作样张技术通过结论。"},
-    {"severity": "INFO", "message": "Art账本记首个MT_S2 surprised image_gen调用连接发送失败，无请求ID或输出，UNKNOWN_COUNTED占1/48；AT及其他样张未调用，确认新候选0。首图前TECH_PRESIGN APPROVED保留为预案历史结论。"}
+    {
+      "severity": "INFO",
+      "message": "六代表样当前PSD、脸片、base/front来源、定义与U00图已逐文件SHA绑定在SIX_SAMPLE_BINDING.json；已批v0.2方案SHA未变。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六PSD真实层标志均为旧五态15层隐藏、当前新态语义层与base/front可见；PSD内嵌合成对各自预览RGB逐像素差0。六样当前态的源ROI外RGBA/alpha保护、脸片尺寸/offset与三层接口通过，AJ新增实测见SIX_SAMPLE_TECH_CHECK.md。"
+    },
+    {
+      "severity": "INFO",
+      "message": "XJ圈纹镜仅当前唯一front显示，眼窗无冻结旧瞳孔/眼睑；MT沿用原base/front。AC/AJ新增原生base/front切片按旧矩形裁源原始RGBA零差，三层重组与源画布同区可见RGBA/alpha零差。Master六张真实U00视觉APPROVED，Art视觉及扩批复签由Art单独记录。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本结论只覆盖六代表样当前版本的静态技术核验；未来24态、五态全量切换、正式Client接入与目标机运行NOT_TESTED。"
+    }
   ],
-  "next_action": "待工具结果可查或连接恢复、Art取得六代表样张后，逐项核实际PSD互斥层、切片坐标、ROI外alpha、清边、小锦眼镜、同尺度重组和预算；此前不放行扩批。"
+  "next_action": "Tech可按同版六样绑定签余24态内部扩批技术预案；Master仍需核Art独立复签与预算门槛后释放生产。未来各态按原方案逐态检查，具体切片Gate2用户批准后方可正式接入。"
 }

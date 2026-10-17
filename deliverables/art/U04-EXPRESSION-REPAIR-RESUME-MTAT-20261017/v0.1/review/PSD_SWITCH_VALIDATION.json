@@ -1,0 +1,343 @@
+{
+  "method": "Use validated hidden-layer adapter to assemble and retain all ten exact PSD visibility settings (happy uses each final PSD; other eight under source/switch_checks). Parse each actual PSD layer flags, read PSD composite with Pillow, compare preview with base+selected native oneface+front. Manifests and previews retained.",
+  "states": [
+    {
+      "stage": "MT_S2",
+      "state": "happy",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/MT_S2_happy.json",
+      "manifest_sha256": "1742b2373924a4a051ba4e3cfdd57e28a7ec01599a93d72c006690a9a17a9242",
+      "temporary_psd_sha256": "438a12674e50ec9718e41eb514dc66366637741ce8a64598637045bcaa1d8404",
+      "temporary_psd_bytes": 15685356,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "HAPPY_NEW / 06_NOSE_MINOR",
+        "HAPPY_NEW / 05_MOUTH",
+        "HAPPY_NEW / 04_RIGHT_EYE",
+        "HAPPY_NEW / 03_LEFT_EYE",
+        "HAPPY_NEW / 02_RIGHT_BROW",
+        "HAPPY_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_happy_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "1511419e85e4c5ef5c587779c810df6dd788e07cbc4ebe81f9289fde20a04d04",
+      "preview_vs_base_oneface_front_max_rgba_delta": 2,
+      "preview_vs_expected_diff_pixels_including_rounding": 3092,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final.psd",
+        "sha256": "438a12674e50ec9718e41eb514dc66366637741ce8a64598637045bcaa1d8404",
+        "bytes": 15685356
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "MT_S2",
+      "state": "surprised",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/MT_S2_surprised.json",
+      "manifest_sha256": "85dab053abe71049c484b0c6b3ea22611b9e21450764d4224f58072fd94731e6",
+      "temporary_psd_sha256": "2446a40ea20a93e026937d2e2ee43696617de18d817f7ed10dca376741dee596",
+      "temporary_psd_bytes": 15685356,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SURPRISED_NEW / 06_MOUTH",
+        "SURPRISED_NEW / 05_NOSE_MINOR",
+        "SURPRISED_NEW / 04_RIGHT_EYE",
+        "SURPRISED_NEW / 03_LEFT_EYE",
+        "SURPRISED_NEW / 02_RIGHT_BROW",
+        "SURPRISED_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_surprised_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "a923277b97fd98cf9a61b2e97bfa9777448fb371b27cf3f13e37b878720a78a1",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 2916,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_surprised_switch.psd",
+        "sha256": "2446a40ea20a93e026937d2e2ee43696617de18d817f7ed10dca376741dee596",
+        "bytes": 15685356
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "MT_S2",
+      "state": "sad",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/MT_S2_sad.json",
+      "manifest_sha256": "efb4363915cc188a3568859489975ab98373c2d42c1e2f91a17c6edd5d77125d",
+      "temporary_psd_sha256": "cf541532828875727ebb67405636385b4daf8d403560db8d1f413507630e69f5",
+      "temporary_psd_bytes": 15685356,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SAD_NEW / 06_NOSE_MINOR",
+        "SAD_NEW / 05_MOUTH",
+        "SAD_NEW / 04_RIGHT_EYE",
+        "SAD_NEW / 03_LEFT_EYE",
+        "SAD_NEW / 02_RIGHT_BROW",
+        "SAD_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_sad_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "e87bf754527b20eb8f4579f4b03e5728df8c0c493a36791ef485126e19d044cf",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 2884,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_sad_switch.psd",
+        "sha256": "cf541532828875727ebb67405636385b4daf8d403560db8d1f413507630e69f5",
+        "bytes": 15685356
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "MT_S2",
+      "state": "smile",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/MT_S2_smile.json",
+      "manifest_sha256": "a37aaeb44058eacb24eeb24433b47cbfba8cab1210e2db2d96e7cb4f511df8ff",
+      "temporary_psd_sha256": "2e54aa67ef29a9dce83d34aae0a502dd36e69994804924a57ffddee7efa4833e",
+      "temporary_psd_bytes": 15685356,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SMILE_NEW / 06_NOSE_MINOR",
+        "SMILE_NEW / 05_MOUTH",
+        "SMILE_NEW / 04_RIGHT_EYE",
+        "SMILE_NEW / 03_LEFT_EYE",
+        "SMILE_NEW / 02_RIGHT_BROW",
+        "SMILE_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_smile_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "be01bece5b3a7d710088c44fa5debf66c5344f1a785d5344fdde2fc274ff6140",
+      "preview_vs_base_oneface_front_max_rgba_delta": 2,
+      "preview_vs_expected_diff_pixels_including_rounding": 2880,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_smile_switch.psd",
+        "sha256": "2e54aa67ef29a9dce83d34aae0a502dd36e69994804924a57ffddee7efa4833e",
+        "bytes": 15685356
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "MT_S2",
+      "state": "angry",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/MT_S2_angry.json",
+      "manifest_sha256": "5b3e13b11c8d536a26a22708dd9727011eec5912e28431a2f1f6631f0ec00dca",
+      "temporary_psd_sha256": "ef76ae91679c719eb1b822fe93123629867851917e360adb12d50af9ff047c16",
+      "temporary_psd_bytes": 15685356,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY_NEW / 06_NOSE_MINOR",
+        "ANGRY_NEW / 05_MOUTH",
+        "ANGRY_NEW / 04_RIGHT_EYE",
+        "ANGRY_NEW / 03_LEFT_EYE",
+        "ANGRY_NEW / 02_RIGHT_BROW",
+        "ANGRY_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_angry_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "d41680f8e6d06acb66dd572734b08afcd66297aacd681b85b62274c186e9a3c1",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 2673,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_angry_switch.psd",
+        "sha256": "ef76ae91679c719eb1b822fe93123629867851917e360adb12d50af9ff047c16",
+        "bytes": 15685356
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "AT_S0",
+      "state": "happy",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/AT_S0_happy.json",
+      "manifest_sha256": "dc494bb2146f41c1a976628f778b0a0b995f68b98dbd7d0f50b591e5e9941566",
+      "temporary_psd_sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+      "temporary_psd_bytes": 14404564,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "HAPPY_NEW / 06_NOSE_MINOR",
+        "HAPPY_NEW / 05_MOUTH",
+        "HAPPY_NEW / 04_RIGHT_EYE",
+        "HAPPY_NEW / 03_LEFT_EYE",
+        "HAPPY_NEW / 02_RIGHT_BROW",
+        "HAPPY_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_happy_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "4c387dfb6bedfa9d9d0bf17b1d7ac8a982532362e1c39b8a8ddcb80beec28c17",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 3437,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+        "sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+        "bytes": 14404564
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "AT_S0",
+      "state": "surprised",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/AT_S0_surprised.json",
+      "manifest_sha256": "f058d270261dc8fca5505a9d1090b1c1559009866753b923867f350ae466e486",
+      "temporary_psd_sha256": "bfb57bdc2bd6b459d06476fef778f6fcf8b2c790343faca84ae4fb005990ff7a",
+      "temporary_psd_bytes": 14404564,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SURPRISED_NEW / 06_NOSE_MINOR",
+        "SURPRISED_NEW / 05_MOUTH",
+        "SURPRISED_NEW / 04_RIGHT_EYE",
+        "SURPRISED_NEW / 03_LEFT_EYE",
+        "SURPRISED_NEW / 02_RIGHT_BROW",
+        "SURPRISED_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_surprised_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "2f72a071b184bea0fa235820ab1e39a9f584c92ed97c1b6178fee692a61e0287",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 3001,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_surprised_switch.psd",
+        "sha256": "bfb57bdc2bd6b459d06476fef778f6fcf8b2c790343faca84ae4fb005990ff7a",
+        "bytes": 14404564
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "AT_S0",
+      "state": "sad",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/AT_S0_sad.json",
+      "manifest_sha256": "c7d3bc9b11f6d52a0b431fb7bbcc815b05729165c207da0893459613cdd0d865",
+      "temporary_psd_sha256": "9838e45d174486ece919fbc0fe9d1713ac9eb650c74175cb28a5bf807d354fb5",
+      "temporary_psd_bytes": 14404564,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SAD_NEW / 06_NOSE_MINOR",
+        "SAD_NEW / 05_MOUTH",
+        "SAD_NEW / 04_RIGHT_EYE",
+        "SAD_NEW / 03_LEFT_EYE",
+        "SAD_NEW / 02_RIGHT_BROW",
+        "SAD_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_sad_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "1f2fccece5721ec488d9b345e6ba53ae3c5771075e6671b6d07165b8a3d6a11a",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 3082,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_sad_switch.psd",
+        "sha256": "9838e45d174486ece919fbc0fe9d1713ac9eb650c74175cb28a5bf807d354fb5",
+        "bytes": 14404564
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "AT_S0",
+      "state": "smile",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/AT_S0_smile.json",
+      "manifest_sha256": "7a69831321c7ce2ff0d99e782d45fd52826b8070f2d6127021b485eb486afc8d",
+      "temporary_psd_sha256": "e6b410752bf281005fc1b67424e254c946977ca20c7b392afc7a61bbc7122f9a",
+      "temporary_psd_bytes": 14404564,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SMILE_NEW / 06_NOSE_MINOR",
+        "SMILE_NEW / 05_MOUTH",
+        "SMILE_NEW / 04_RIGHT_EYE",
+        "SMILE_NEW / 03_LEFT_EYE",
+        "SMILE_NEW / 02_RIGHT_BROW",
+        "SMILE_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_smile_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "a4ff31cf376b21214c38c39ee6567934eb3bcd1ccaa3491bea0692566abd46bf",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 3305,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_smile_switch.psd",
+        "sha256": "e6b410752bf281005fc1b67424e254c946977ca20c7b392afc7a61bbc7122f9a",
+        "bytes": 14404564
+      },
+      "retained_psd_visibility_reverified": true
+    },
+    {
+      "stage": "AT_S0",
+      "state": "angry",
+      "manifest": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/switch_manifests/AT_S0_angry.json",
+      "manifest_sha256": "9868c0a726de2bd8edf6562f7ff504a32dbb4330416e4fc12f0269a5d8ebca58",
+      "temporary_psd_sha256": "5dcb59910830f09ba39da518d2ef39068bba05b5e448e2c2a2cc0328545c6a63",
+      "temporary_psd_bytes": 14404564,
+      "layers_total": 48,
+      "visible_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY_NEW / 06_NOSE_MINOR",
+        "ANGRY_NEW / 05_MOUTH",
+        "ANGRY_NEW / 04_RIGHT_EYE",
+        "ANGRY_NEW / 03_LEFT_EYE",
+        "ANGRY_NEW / 02_RIGHT_BROW",
+        "ANGRY_NEW / 01_LEFT_BROW",
+        "BASE / source silhouette + clean face"
+      ],
+      "visible_new_semantic_layers": 6,
+      "visible_legacy_expression_layers": 0,
+      "other_new_states_visible_layers": 0,
+      "pillow_psd_readable": true,
+      "preview": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_angry_PSD_SWITCH_PREVIEW.png",
+      "preview_sha256": "bb8b2e744d66ff2c7ea3b0bf41b4006d91a9690073597fb7b72a7d39faffe196",
+      "preview_vs_base_oneface_front_max_rgba_delta": 1,
+      "preview_vs_expected_diff_pixels_including_rounding": 2723,
+      "retained_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_angry_switch.psd",
+        "sha256": "5dcb59910830f09ba39da518d2ef39068bba05b5e448e2c2a2cc0328545c6a63",
+        "bytes": 14404564
+      },
+      "retained_psd_visibility_reverified": true
+    }
+  ],
+  "all_ten_switches_pass": true,
+  "outside_face_roi_rgba_diff_between_five_states_per_stage": {
+    "MT_S2": 0,
+    "AT_S0": 0
+  },
+  "all_state_pairs_have_nonzero_face_roi_difference": true,
+  "preview_max_rgba_delta_bound": 3,
+  "all_ten_psds_retained_and_reverified": true
+}

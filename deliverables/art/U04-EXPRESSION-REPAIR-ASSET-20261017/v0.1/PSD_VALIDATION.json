@@ -1,0 +1,116 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.1",
+  "result": "PASS_STATIC_ART_AND_TECH",
+  "psd_count": 6,
+  "state_switches_checked": 30,
+  "psds": {
+    "MT_S2": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final.psd",
+      "sha256": "438a12674e50ec9718e41eb514dc66366637741ce8a64598637045bcaa1d8404",
+      "bytes": 15685356,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    "AT_S0": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+      "sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+      "bytes": 14404564,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    "AC_S0": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/source/u04_ac_s0_expression_repair_full5_01.psd",
+      "sha256": "2328bdf53551270a3f516fce044cfdbdcd29f9282c5994198f03e986258c6de3",
+      "bytes": 14519452,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    "AJ_S2": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/source/u04_aj_s2_expression_repair_full5_01.psd",
+      "sha256": "2a2fd4cd036a4728cb6ea08f2cae135e129926701196b5bdd872b3804dafe101",
+      "bytes": 15546682,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    "AD_S0": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_happy_five_state_01.psd",
+      "sha256": "715a72173e56121e488fd32b515c7c0737663d856fd3294aa86f0603508376e3",
+      "bytes": 16219514,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    },
+    "XJ_S0": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_happy_five_state_01.psd",
+      "sha256": "8efbd9b2c020880b74611ff42169d828a305f3d1523f9279bd7d256042967245",
+      "bytes": 16057032,
+      "size_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB"
+    }
+  },
+  "layering": "MT/AT每份48层；AC47层、AJ48层，AC surprised空NOSE_MINOR未输出空层；AD/XJ每份43层。旧表情层在正式状态均隐藏，每次仅当前新语义层组可见。",
+  "editable_range": "眉/眼/嘴等非空语义层与固定base、front可逐层编辑；透明face PNG是语义层的合并导出。原冻结PSD仅作只读参考。",
+  "limits": "首样PSD历史快照保留；源全身画布在native base源矩形外未由三层切片覆盖，不能宣称全1024×1536逐像素相等。",
+  "supporting_checks": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_AJ_FULL5_PSD_STATE_SWITCH_CHECK_01.json",
+      "sha256": "f8dfaf4f663a42914fd1f9320c13bbb833046fb54ab46664b9006cadf8f9edf8",
+      "bytes": 12376
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_AJ_FULL5_PSD_ACTUAL_FLAGS_01.json",
+      "sha256": "41ba0878102048d476ee810a7b9a761194591f276b54ea561302f462c5727068",
+      "bytes": 4849
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/PSD_SWITCH_VALIDATION.json",
+      "sha256": "1088da2f954a1bfb9f97d71d9297f25575c21fa72d07dd678df8b3d489c0eb4a",
+      "bytes": 16866
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/five_state_psd_native_validation_01.json",
+      "sha256": "e5f1258a1b82da757ba4b53cc84aab97927793cf059b7eb5aa3ccde940856bdd",
+      "bytes": 26263
+    },
+    {
+      "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_MATRIX.json",
+      "sha256": "d824677d78b0e5739fae202740b30dfccd95881960f0a07014ef3b3452fe919c",
+      "bytes": 39117
+    },
+    {
+      "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_REVIEW.json",
+      "sha256": "063312acdb4d687bbd45b6bf8ff0f9eae04ad49618ce90b9eb8caee213d9ff02",
+      "bytes": 1282
+    }
+  ],
+  "tech_matrix_summary": {
+    "states_checked": 30,
+    "all_actual_psd_visibility_pass": true,
+    "all_actual_new_layer_alpha_and_visible_rgb_diff_zero": true,
+    "all_psd_cache_vs_own_preview_zero": true,
+    "all_bound_psd_manifest_preview_hashes_match": true,
+    "all_native_interface_recomposition_pass": true,
+    "all_state_outside_face_roi_pass": true,
+    "all_actual_u00_recompute_rgb_zero_diff": true,
+    "master_reported_budget": "32/48 total, repair 2/12；技术静态核验未独立审计生图服务调用账本",
+    "other_18_generation_calls": "NOT_PERFORMED"
+  }
+}

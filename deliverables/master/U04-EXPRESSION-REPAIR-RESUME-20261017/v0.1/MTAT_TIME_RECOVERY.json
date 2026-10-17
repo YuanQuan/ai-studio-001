@@ -1,0 +1,137 @@
+{
+  "recovered_at": "2026-10-17T14:17:20+08:00",
+  "scope": "MTAT first four actual imagegen calls: observable functions.exec call-message to completed-output envelope timestamps recovered from own task session log",
+  "source_ledger_before_recovery": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+    "sha256": "819c297fed6aa906e01943960b6e055dded0985d33529f520db3dc5a91025e12"
+  },
+  "count": 4,
+  "rows": [
+    {
+      "ledger_call_id": "MTAT-01",
+      "stage": "MT_S2",
+      "state": "happy",
+      "observable_envelope_started_at": "2026-10-17T05:29:56.458Z",
+      "observable_envelope_completed_at": "2026-10-17T05:30:20.621Z",
+      "observable_wall_seconds": 24.163,
+      "tool_reported_wall_seconds": 24.2,
+      "source_session_path": "/Users/yuanquan/.codex/sessions/2026/10/17/rollout-2026-10-17T13-28-24-01a14855-2ecc-79a3-9205-74f4db76eea6.jsonl",
+      "source_call_event_line": 110,
+      "source_output_event_line": 113,
+      "source_call_event_sha256": "5458ba33cbc842ccf31132882382c78c830c781ca9177fd3d4a02b65eb9642e6",
+      "source_output_event_sha256": "e21e61d03c67c4c9b4610398859c19aa2f9825851233a44b19a79f9354cf21d6",
+      "exec_transport_call_id": "call_9b0b0f3fe0db4f32b2b367cac868cf26",
+      "imagegen_request_id": null,
+      "exact_tool_input_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-01_tool_call_evidence.txt",
+        "sha256": "6f8e306448a88507bc8427d8000dbe718bb69dd042927deed717375e76f34907"
+      },
+      "ledger_input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "exact_prompt_utf8_sha256": "c16d9a19c8eafb2c453ede79f0edbd9e0d3c79470659f045ff71c6511b699be6",
+      "source_generated_png": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-97566d99-c237-4c3a-8cef-472230e1c766.png",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_happy_mt_at_unit01.png",
+      "candidate_sha256": "7483f2a3e16eaab2c28c2658fdc915023c34d5a55c721c1537e1ee0b23bf1e34",
+      "png_unique_within_observable_interval": true,
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:30:20.575846+08:00"
+    },
+    {
+      "ledger_call_id": "MTAT-02",
+      "stage": "MT_S2",
+      "state": "sad",
+      "observable_envelope_started_at": "2026-10-17T05:30:29.352Z",
+      "observable_envelope_completed_at": "2026-10-17T05:30:52.821Z",
+      "observable_wall_seconds": 23.469,
+      "tool_reported_wall_seconds": 23.5,
+      "source_session_path": "/Users/yuanquan/.codex/sessions/2026/10/17/rollout-2026-10-17T13-28-24-01a14855-2ecc-79a3-9205-74f4db76eea6.jsonl",
+      "source_call_event_line": 117,
+      "source_output_event_line": 120,
+      "source_call_event_sha256": "794175a3f6a46c0350f8e2088a7e1ab1a947665055b26c8b6fd2d1467fe09140",
+      "source_output_event_sha256": "82953ffcf29553dee5bf1f00d9e80ae36bb3000faf4255b02c4c8cd7c1315df8",
+      "exec_transport_call_id": "call_68df6a707fd64265afaa97b3e27a3b18",
+      "imagegen_request_id": null,
+      "exact_tool_input_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-02_tool_call_evidence.txt",
+        "sha256": "92e01a9baf6e5f9030d0e6badb4def041e582128e205666310d2e4b70a280491"
+      },
+      "ledger_input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "exact_prompt_utf8_sha256": "6189ea819ad52bf223aa3b6847a8e11565d68df15ec49a13a88392acc42b517f",
+      "source_generated_png": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-1822dfc8-b8b7-426c-8dff-b89d74cfb328.png",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_sad_mt_at_unit01.png",
+      "candidate_sha256": "e7b9156aa7f7896a55de7f2c3ade119100dac84eabb319638463a1426584a4e0",
+      "png_unique_within_observable_interval": true,
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:30:52.752665+08:00"
+    },
+    {
+      "ledger_call_id": "MTAT-03",
+      "stage": "MT_S2",
+      "state": "smile",
+      "observable_envelope_started_at": "2026-10-17T05:31:58.349Z",
+      "observable_envelope_completed_at": "2026-10-17T05:32:19.585Z",
+      "observable_wall_seconds": 21.236,
+      "tool_reported_wall_seconds": 21.2,
+      "source_session_path": "/Users/yuanquan/.codex/sessions/2026/10/17/rollout-2026-10-17T13-28-24-01a14855-2ecc-79a3-9205-74f4db76eea6.jsonl",
+      "source_call_event_line": 171,
+      "source_output_event_line": 174,
+      "source_call_event_sha256": "2385c2139e0307391e579e8fa3fa51bebba95ebf272c9d059a86ea02bf30b93b",
+      "source_output_event_sha256": "cacc2c8d23d6416fe97f690061d959faac1fbd14801ecfdc280136f01a72c4b0",
+      "exec_transport_call_id": "call_2ff6bda105c145e79773c7cb71acc1ab",
+      "imagegen_request_id": null,
+      "exact_tool_input_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-03_tool_call_evidence.txt",
+        "sha256": "1bef4a5a54085155b314dd3248405f8a42f3c1c130fd0d9bfcd2fb22c5787ee4"
+      },
+      "ledger_input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "exact_prompt_utf8_sha256": "3395e67417d33a9aa191a66eaca6604dd14aa728e794fdfc9948c34fe92fadae",
+      "source_generated_png": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-21c7cb62-0971-43f8-9b9f-c4c250f5750a.png",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_smile_mt_at_unit01.png",
+      "candidate_sha256": "1800102b292394177aead3776bc4f2e8122aecc653a8872985003b71a67b21e1",
+      "png_unique_within_observable_interval": true,
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:32:19.425444+08:00"
+    },
+    {
+      "ledger_call_id": "MTAT-04",
+      "stage": "MT_S2",
+      "state": "angry",
+      "observable_envelope_started_at": "2026-10-17T05:32:57.334Z",
+      "observable_envelope_completed_at": "2026-10-17T05:33:26.475Z",
+      "observable_wall_seconds": 29.141,
+      "tool_reported_wall_seconds": 29.1,
+      "source_session_path": "/Users/yuanquan/.codex/sessions/2026/10/17/rollout-2026-10-17T13-28-24-01a14855-2ecc-79a3-9205-74f4db76eea6.jsonl",
+      "source_call_event_line": 197,
+      "source_output_event_line": 200,
+      "source_call_event_sha256": "770b987e2656ae17b826ef63104bc8b8096e76be7d9c1112339a17bccea580fc",
+      "source_output_event_sha256": "a2d9466567aea3c6361b4a049a033efb19303b45e70020e0adac7c6f9fb2de83",
+      "exec_transport_call_id": "call_65b0881b49354f28a77aca4cc6bdf218",
+      "imagegen_request_id": null,
+      "exact_tool_input_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-04_tool_call_evidence.txt",
+        "sha256": "fb9c3526d112428e3bfe432d48bdcc94aea3dfc7982fbba3f2574fa22efe5f16"
+      },
+      "ledger_input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "exact_prompt_utf8_sha256": "e85a4b29b610f447b7b74ee4bafdef3be77ecf06054241b0e8db0b6da3e2611a",
+      "source_generated_png": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-04d7ed4e-e9d9-4dae-b3d4-574d17a608d7.png",
+      "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_angry_mt_at_unit01.png",
+      "candidate_sha256": "32b4598828bdb67eb5911a8de259d4d37b9ebf24c1f7e2f0c904542f462edacb",
+      "png_unique_within_observable_interval": true,
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:33:26.440770+08:00"
+    }
+  ],
+  "validation": [
+    "one imagegen call in each exact input script",
+    "exact ledger input path and exact prompt occur in corresponding script",
+    "paired custom_tool_call/output by unique transport call_id",
+    "exactly one generated PNG in each event interval, matching ledger source and copied image SHA",
+    "tool completed wall durations consistent with session envelope"
+  ],
+  "limits": [
+    "timestamps are observable tool-call transport envelopes, not internal server/GPU processing times",
+    "initial failure to pre-register calls remains a recorded process defect",
+    "original UNKNOWN fields must be retained in a before-recovery snapshot; do not silently overwrite history",
+    "no new image generation, changed images, altered budget, or user approval created"
+  ],
+  "master_result": "RECOVERED_OBSERVABLE_TOOL_ENVELOPES"
+}

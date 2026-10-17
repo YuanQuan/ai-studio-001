@@ -1,0 +1,50 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "owner": "art",
+  "summary": "孟桃2魂与阿棠0魂余8态已独立生成、语义分层并与冻结首样组成两套五态；十脸片、两份正式母版及十份互斥切换PSD实存，Master无标签实尺盲辨10/10。内部Art评审通过，Gate2仍待用户。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/FINAL_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/DELIVERABLE.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/CHECK_DETAILS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/MASK_POLYGON_POINTS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/PSD_SWITCH_VALIDATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_A_TO_E.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_A_TO_E.png"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅制作孟桃2魂、阿棠0魂余8态；必须六样全过且Art/Tech/Master精确放行后实际生图，独立单元调用最多10且全批48与12定向返修总额内，不重置历史预算。",
+      "result": "PASS",
+      "evidence": "EXPANSION_RELEASE.json已生效且绑定六样Art/Tech/Master实看；GENERATION_LEDGER.json 8/10，零返修、零失败/未知；本单元未重置历史预算。"
+    },
+    {
+      "criterion": "内置imagegen逐态独立绘制眉眼口，实际输入/提示/输出与坐标、尺寸、SHA、起止、未知或失败均留证；不以旧眼变形或统一几何嘴造态，不改脸型、头向、身体和身份。",
+      "result": "FAIL",
+      "evidence": "八态均独立候选，实际输入、原提示、输出路径/SHA/1254×1254、ROI坐标与目视结果已存GENERATION_LEDGER.json及ASSET_SUPPORT_MANIFEST.json；但最初MT四次调用的精确起止未预记录，只有生成文件mtime，明确UNKNOWN，不能补称全项满足。"
+    },
+    {
+      "criterion": "复用原清洁base/front和冻结首样，不执行已撤回MT擦除；各五态语义栅格PSD独立互斥、实际256切片与U00原显示映射重组、标签隐藏实际尺寸盲辨有真实结果；ROI外RGBA零差。",
+      "result": "PASS",
+      "evidence": "十个256×256 RGBA脸片、每态六语义栅格层、两份48层PSD均实存；十份PSD切换设置实际解析，仅一个新态六层可见；源ROI外十态RGBA零差；两首样PSD预览像素零差；Master实际U00尺寸盲辨10/10。证据 CHECK_DETAILS.json、review/PSD_SWITCH_VALIDATION.json、BLIND_MTAT_RESULT.json。"
+    },
+    {
+      "criterion": "完整输出交主Art按路径与SHA整合，Required和原验收文字同序记录；不覆盖原PSD/原PNG/既有首样或改Client，不擅建任务，不将内部完成写成用户Gate2获批。",
+      "result": "PASS",
+      "evidence": "全部新增数据/新PSD/新预览只在本Task目录，候选按既定main candidates唯一前缀；ASSET_SUPPORT_MANIFEST.json逐态列路径/SHA/源rect/pivot/offset与未接入标记。原首样与Client文件未覆盖；本次仅内部交主Art，未标用户Gate2批准。"
+    }
+  ],
+  "assumptions": [
+    "全程沿用已批准v0.2方案、原U00渲染映射和既定base/front；冻结首样字节只读。",
+    "生成候选外围黑噪声不进入语义mask或透明oneface；五官区之外由清洁base/front供像素。"
+  ],
+  "risks": [
+    "首四次调用精确起止时间未记录，账本如实标UNKNOWN与生成文件真实mtime；Task第2项的时间留证部分未完全满足。",
+    "PSD为可切换的语义栅格层，不是原生矢量或可恢复的画笔笔触；Client正式资源路径/UUID要等用户Gate2批准后由Client实际导入登记。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

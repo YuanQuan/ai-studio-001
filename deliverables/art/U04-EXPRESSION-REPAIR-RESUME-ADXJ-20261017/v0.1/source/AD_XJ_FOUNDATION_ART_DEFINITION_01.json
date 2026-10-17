@@ -1,0 +1,129 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "version": "v0.1",
+  "foundation_masks": [
+    {
+      "stage": "AD_S0",
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_roi_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+        "sha256": "fa4f47e03eedaea1d0d0dbe1b773d48d550d887027e971030cf83eadc80717c4"
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+        "sha256": "9e4726cf571d67b226bcb7b9c9e4339a773d13d4581d645fd7f8d154a4076b1d"
+      },
+      "base_full_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/ad_s0_clean_full.png",
+        "sha256": "18781102167e9984a870bdce29e4843ce6daf0a3838469e368bb8820dc7b1357"
+      },
+      "front_original_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/ad_s0_front_occlusion.png",
+        "sha256": "332ab947a55a8cc82ca1c43fbb42566a9c3f5c18aa29e47fd76da266d40b7313"
+      },
+      "base_cleanup_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_base_residual_cleanup_mask_01.png",
+        "sha256": "6a88be1ed7709d9eef74808bfd304f97b1d5276d8db3c7438f10283ac1ced0a2"
+      },
+      "base_cleanup_mask_canvas_px": [
+        256,
+        256
+      ],
+      "base_cleanup_mask_coordinates": "local ROI; add face_roi top-left for full source",
+      "clean_base_sample_points_local_xy": [
+        [
+          106,
+          62
+        ],
+        [
+          113,
+          118
+        ],
+        [
+          119,
+          72
+        ]
+      ],
+      "sample_points_note": "All are visually plain skin/lens centers outside cleanup-mask alpha; verify alpha=0 before use. AD point 106,62 is warm upper skin; 113,118 cheek center; 119,72 forehead. XJ 64,96 peach left lens center, 183,111 ivory right lens center.",
+      "front_erase_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_front_erase_none_01.png",
+        "sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f"
+      },
+      "front_erase_reason": "No opaque old eyebrow/eye component in inspected front eye interiors; retain front hair and approved myopia ring/optic pixels.",
+      "old_formal_files_modified": false,
+      "status": "ART_DEFINED_AWAITING_PIPELINE_RECOMPOSITION"
+    },
+    {
+      "stage": "XJ_S0",
+      "source_canvas_px": [
+        1024,
+        1536
+      ],
+      "face_roi_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+        "sha256": "bbde4f30cfb84ddef890e6bfdea6ca3990f9669235a6f3abf27b78dc11b26dd9"
+      },
+      "existing_psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+        "sha256": "93cff7468175ae955f655843f9f2995597668d158d8738bb22c80aa5ee2cfc70"
+      },
+      "base_full_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_clean_full.png",
+        "sha256": "c870fa345f4075cfe27f621148d6010044a86d46eba875f6381b9b27f0df636b"
+      },
+      "front_original_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_front_occlusion.png",
+        "sha256": "342fb440d6829c8fe84cf5c32ad875254a8477322693129503d2a5e0e2a9da71"
+      },
+      "base_cleanup_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_base_duplicate_ring_cleanup_mask_01.png",
+        "sha256": "2c0b29e2ca2583f1ca141e108d34a1b95f0ed95d994617c717f7aff48e21582c"
+      },
+      "base_cleanup_mask_canvas_px": [
+        256,
+        256
+      ],
+      "base_cleanup_mask_coordinates": "local ROI; add face_roi top-left for full source",
+      "clean_base_sample_points_local_xy": [
+        [
+          64,
+          96
+        ],
+        [
+          183,
+          111
+        ]
+      ],
+      "sample_points_note": "All are visually plain skin/lens centers outside cleanup-mask alpha; verify alpha=0 before use. AD point 106,62 is warm upper skin; 113,118 cheek center; 119,72 forehead. XJ 64,96 peach left lens center, 183,111 ivory right lens center.",
+      "front_erase_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_front_erase_none_01.png",
+        "sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f"
+      },
+      "front_erase_reason": "No opaque old eyebrow/eye component in inspected front eye interiors; retain front hair and approved myopia ring/optic pixels.",
+      "old_formal_files_modified": false,
+      "status": "ART_DEFINED_AWAITING_PIPELINE_RECOMPOSITION"
+    }
+  ],
+  "xj_ring_transfer": "Before cleaning duplicate base annulus, transfer its existing gold/gray ring pixels to derived front beneath unchanged original front pixels; resulting working front is sole ring display. Keep old front file immutable. The prototype transfer and preview are in this source folder.",
+  "constraints": [
+    "All changes local to face ROI; outside exact RGBA frozen.",
+    "Use old current base/front, not raw approved image, for final cutout fidelity.",
+    "No generated candidate outer black noise into output.",
+    "Art visual signoff after actual source/native recomposition; current definition is not a PASS."
+  ]
+}

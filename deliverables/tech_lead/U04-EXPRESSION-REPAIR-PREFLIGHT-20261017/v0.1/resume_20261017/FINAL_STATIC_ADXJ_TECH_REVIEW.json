@@ -1,0 +1,20 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "AD_S0/XJ_S0 十态静态技术核验通过：十份 PSD 各 43 层，旧五态及历史前遮挡层均隐藏；每态仅当态 4/5 个新语义层、一个 base 与一个 front 可见。实际语义层 alpha/可见 RGB 对对应源层 0 差。"
+    },
+    {
+      "severity": "INFO",
+      "message": "十态绑定文件 SHA 全匹配；PSD 嵌入 composite 对其 preview RGB 0 差。冻结 base+当态 face+front 原生 768 重组、脸片矩形外保真、实际 U00 同尺度映射重算均为逐像素 0 差。详见 FINAL_STATIC_ADXJ_TECH_CHECK.json。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本评审只覆盖 AD/XJ 已完成十态；其余二十态、全三十态矩阵、Gate2 用户审批与 Client/QA 运行均未由本记录测试或批准。"
+    }
+  ],
+  "next_action": "保留十态资产与本证据供 Master/Producer 汇总；待 AC/AJ 与 MT/AT 其余二十态正式落盘后，再按同一矩阵核全批。"
+}

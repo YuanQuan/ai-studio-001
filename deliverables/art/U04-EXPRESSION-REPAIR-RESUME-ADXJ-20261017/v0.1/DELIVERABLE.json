@@ -1,0 +1,51 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "owner": "art",
+  "summary": "完成 AD_S0、XJ_S0 各五态逐态内置生图、Art 语义掩膜、冻结 foundation 原生三层导出重组、U00 同尺度对照与五态互斥 43 层 PSD；Master 实际143px盲辨10/10。内部 Art 自检通过，交主 Art/Tech 核查与总包整合，Gate2 用户具体切片审核仍待进行。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/BATCH_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/ART_CHECK_DETAILS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/ASSET_SUPPORT_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/native_u00_recompose_report_01.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/five_state_psd_native_validation_01.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_happy_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_surprised_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_sad_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_smile_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_angry_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_happy_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_surprised_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_sad_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_smile_five_state_01.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_angry_five_state_01.psd"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅制作阿灯0魂、小锦0魂的批准代表样与后续获放行8态；首图同批预签、扩批前六样通过与复签，单元调用最多18且全局48内。",
+      "result": "PASS",
+      "evidence": "首图同批 Art/Tech 预签在 Task inputs；六样 Art/Tech 复签及正式扩批释放见 EXPANSION_RELEASE.json。仅 AD/XJ 两阶段各五态，共10次/正式收紧上限16；全球48即时计数由Master掌握，本单元不擅推。"
+    },
+    {
+      "criterion": "逐态实际候选、语义mask、分层PSD与切片重组、提示/源坐标/hash、预算/失败记录真实；小锦保留原近视圈纹单次显示，身份和透视不漂移。",
+      "result": "PASS",
+      "evidence": "ASSET_SUPPORT_MANIFEST.json 逐态列 candidate/提示/定义/mask/4–5语义栅格/native192/768/U00/43层PSD路径与SHA；GENERATION_LEDGER.json记10次成功、零未知；five_state_psd_native_validation_01.json实读全部PSD可见flag、唯一front、ROI外RGBA零差；Master实际143px盲辨10/10。XJ front冻结唯一获批光学圈纹，其他四态分别双眼。"
+    },
+    {
+      "criterion": "实际输出交主Art总包按路径及SHA整合；Required与验收原文同序，不改其他阶段、原资源或Client，不自建任务。",
+      "result": "PASS",
+      "evidence": "五项Required均更新且保持Task原验收三条同序；完整清单与SHA已发主Art/Master；仅本单元目录和指定 AD/XJ candidate前缀新建产物，原图/旧PSD/Client未修改，未自建任务。"
+    }
+  ],
+  "assumptions": [
+    "本单元内部Art完成与Master静态盲辨不等于Gate2用户批准。",
+    "原18调用上限按2026-10-17正式扩批 release 收紧为16，使用10；全球48由Master统一账本控制。"
+  ],
+  "risks": [
+    "主Art/Tech仍需对总包实际路径/SHA、XJ五态镜圈互斥及 U00 同尺度做整合核查；Gate2具体切片待用户审核。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

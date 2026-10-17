@@ -1,0 +1,43 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-ac_s0-happy-01",
+  "owner": "main_art",
+  "stage": "AC_S0",
+  "state": "happy",
+  "attempt_kind": "first_candidate",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T13:28:24+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 16,
+    "main_art_counted_before": 6,
+    "main_art_if_sent": 7,
+    "global_known_before": 8,
+    "repair_pool_charge": 0
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_happy_01_input_256.png",
+  "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_happy_01_prompt.txt",
+  "prompt_sha256": "9d72a651007d44cff0c1bd44c347a22e4c5ba4ffc775b8ce80b9efb85a1ac2b8",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_happy_imagegen_01.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "已实际查看批准原脸256及旧happy透明oneface；保留原身份/橙挑染/黑眼圈，要求快乐强于安静smile。",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-a7d7dce8-3d99-490c-93df-664b5bc1d5da.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_happy_imagegen_01.png",
+  "output_sha256": "372ceab68230e91b59dd7fa690a8f3c8a2e326481e9a5e627a8f9104a5d0639e",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T13:29:08+08:00",
+  "main_art_counted_after": 7,
+  "visual_candidate_note": "笑眼、脸颊和张口笑联动，橙挑染与黑眼圈保留；与安静smile强度区分明显。需要局部特征提取和同尺度重组；外围生成噪边弃用。"
+}

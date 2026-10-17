@@ -1,0 +1,61 @@
+{
+  "observed_at": "2026-10-17T13:10:29+08:00",
+  "actual_master_views": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+      "sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+      "observation": "AJ happy首候选仍原侧目闭嘴浅笑，与smile难分；Master实际对照退修。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+      "sha256": "d4bf188ae4eb6f04f51f05c36a03122f3c538cd80872bf64768f58a7d1b23d4f",
+      "observation": "AJ repair02笑眼/脸颊/张口强度更明确，Master实际看图可继续局部提取，尚未完整样张通过。"
+    },
+    {
+      "path": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AC_S0_foundation_cleanup_01/roi_before_after.png",
+      "sha256": "b99ab8f43cfea06a7160c754f57fc33ccf5eb208a3c707105803923c559d6b94",
+      "observation": "AC cleanup01出现矩形前发缺口，Master实际看图拒收；需Art定稿精确hair masks/approved原图RGB恢复，保留当前alpha；0新增生图。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/xj_s0_approved_old_new_face_compare_01.png",
+      "sha256": "a192b3a89f19872fb9a78070cf86cf85815ae658ca0b2d94c95c9eb14208adfb",
+      "observation": "XJ optics v02左镜灰蓝折射层次恢复，Master三栏实看支持方向，仍待Foundation规范/native导出/PSD验证。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_happy_u00_1280x720.png",
+      "sha256": "5f2620707017c40638e1c7a1b5272762eecd60dd7ac794d7bfb89915c5303156",
+      "observation": "Master实际查看1280×720重组：高兴张口与暖光自然，脸型/姿态保持；尚待Tech检查与六样联合门槛。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_happy_u00_1280x720.png",
+      "sha256": "2369c3344b8318890973c8712289b22bc6947212ad2ba37dd047aa6d3992331a",
+      "observation": "Master实际查看1280×720重组：高兴口型和眨眼可辨，批准的同心高度近视镜框只由单一前景承担；镜片原有折射保留，尚待Tech对独立眼窗和源证据核验。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_at_s0_sad_recomposed.png",
+      "sha256": "5ddd31524d502daf8f44978e1cb1de41a5dd10ba400dcf5162ba917e4e2b4bd3",
+      "observation": "Master重复实际查看真实1280对话视窗：悲伤眉眼口可辨，无明显贴片缝；保留疲倦身份，身体道具保持。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_mt_s2_surprised_recomposed.png",
+      "sha256": "3a01ea2b9a5a81bf011b59e93052e3b704b26575d848f23022cbf01aa741350b",
+      "observation": "Master重复实际查看真实1280对话视窗：惊讶眉眼口可辨，前发保持批准轮廓，不采用已撤回擦除。"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_angry_u00_same_scale_1280x720.png",
+      "sha256": "84251c1288be0cdcd41042a876a8730d0ac0a150cae05c78b9411493f31eafdc",
+      "observation": "Master实际查看真实1280对话视窗与0.6 portrait缩放：生气眉眼口清楚，黑眼圈疲惫保留，未见前发断裂或矩形肤色接缝。此前全身概览不计同尺度证据。"
+    }
+  ],
+  "mt_cleanup_draft": "v01撤回，Art逐层证明为原发束/透视轮廓，禁止执行；见Art MT_S2_FOUNDATION_RETRACTION_01.json",
+  "budget_observed": {
+    "main": 6,
+    "adxj": 2,
+    "global": 8,
+    "repair_used": 2,
+    "maximum_global": 48,
+    "maximum_repair": 12
+  },
+  "gate": "six representative sample gate not yet passed; no 24-state expansion; Gate2 DRAFT",
+  "status_note": "五首样已实际看图，四样Tech主要检查已反馈，AC Tech检查中，AJ仍制作；六样未齐，不扩24。"
+}

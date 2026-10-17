@@ -1,0 +1,43 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-ac_s0-sad-01",
+  "owner": "main_art",
+  "stage": "AC_S0",
+  "state": "sad",
+  "attempt_kind": "first_candidate",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T13:30:40+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 16,
+    "main_art_counted_before": 8,
+    "main_art_if_sent": 9,
+    "global_known_before_excluding_parallel": 10,
+    "repair_pool_charge": 0
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_sad_01_input_256.png",
+  "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_sad_01_prompt.txt",
+  "prompt_sha256": "baf9df97c4c127bc44e9ee549b02e1a22407f17afb76c11465aeacabce3b113e",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_sad_imagegen_01.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "Viewed approved source and old sad features; original old brow/eye/mouth weakly linked and mouth geometric.",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-58296ec2-9097-4173-972c-eba59a97462f.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_sad_imagegen_01.png",
+  "output_sha256": "63b662345136ddd4d0de87d1edc7bcea0b2eebe0be92bce8b7a9a87a8327ed80",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T13:31:17+08:00",
+  "main_art_counted_after": 9,
+  "visual_candidate_note": "Inner brows, heavy eyelids and downturned mouth read sad; tired under-eye shadow and hair identity retained. At 256/U00 strength still to verify; peripheral noise discarded."
+}

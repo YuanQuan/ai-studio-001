@@ -1267,3 +1267,9 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 
 最终接受 2026-10-17T11:04:23+08:00：Master `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FLOW_ACCEPTANCE.json` APPROVED，FLOW内部支持DONE。当前Art/本批Master阶段/旧总体检查点仍USER_REVIEW，具体Gate2未获批准；Tech DONE；无READY/IN_PROGRESS空挂，未接入或扩批。正式监督检查10:43:12至11:03:14共1202秒；至最终接受登记11:04:23总历时1271秒，末69秒为接受/收尾登记区间，精确执行与等待拆分未知。
 <!-- MINIGAME-ART-OPT-PILOT-20261017-FINAL END -->
+
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 START -->
+### WR-20261017-U04-EXPRESSION-REPAIR-RESUME-001｜Gate2送审与流程复盘
+- Art准备12:07:41→Gate2准确包登记14:25:20，墙钟2小时17分39秒，含跨角色制作、工具和核验，不是单人净工时。六样视觉72分53秒、完整release78分45秒，均<90分钟cap。具体证据、可证实返工环节及建议见 `deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/WORK_RETROSPECTIVE.md`。
+- MTAT前四次调用初漏pre-call登记，后从本Task真实session日志恢复可观察调用包络并留原Unknown快照；GPU/内部服务时长与费用未知。Gate2 USER_REVIEW待用户决定；Producer四Required经Master内部接受于2026-10-17T14:29:48+08:00 DONE；自12:07:41墙钟2:22:07含Gate2后的流程核录等待，不是图像制作耗时。
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 END -->

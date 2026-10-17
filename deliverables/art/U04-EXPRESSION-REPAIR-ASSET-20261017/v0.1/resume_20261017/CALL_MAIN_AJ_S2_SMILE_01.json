@@ -1,0 +1,43 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-aj_s2-smile-01",
+  "owner": "main_art",
+  "stage": "AJ_S2",
+  "state": "smile",
+  "attempt_kind": "first_candidate",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T13:35:11+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 16,
+    "main_art_counted_before": 12,
+    "main_art_if_sent": 13,
+    "global_known_before_excluding_parallel": 14,
+    "repair_pool_charge": 0
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_smile_01_input_256.png",
+  "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_smile_01_prompt.txt",
+  "prompt_sha256": "97e140162e9f904a4d5f387a491e7ff5293886141862256ec916178873adb0f0",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_smile_imagegen_01.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "Viewed approved AJ face and old smile feature; new smile must remain distinguishable from frozen AJ happy open laugh.",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-1a967803-5a55-4fbd-a13a-af1e43f8bdd5.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_smile_imagegen_01.png",
+  "output_sha256": "b40b1230cbb3ab634971347349e266a64a5b6ca13aad26715d47fa5262859637",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T13:35:53+08:00",
+  "main_art_counted_after": 13,
+  "visual_candidate_note": "Gentle closed-mouth smile with slight cheek/eyelid lift, side gaze and narrow eye identity preserved; clearly milder than frozen happy laugh. U00 pending."
+}

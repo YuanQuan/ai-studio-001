@@ -1,0 +1,204 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017",
+  "status": "REVIEW_EVIDENCE",
+  "tool": {
+    "path": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/pipeline/foundation_cleanup.py",
+    "sha256": "67eee04afc0dbf07889e8879d0472cb72dc35ec1d56574f3c9e49b06c474411b",
+    "runtime": "/Users/yuanquan/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "python_compile": "PASS"
+  },
+  "runs": [
+    {
+      "stage": "AC_S0",
+      "status": "TOOL_CANDIDATE_PENDING_ART_VISUAL_REVIEW",
+      "definition": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_FOUNDATION_DEFINITION_04.json",
+      "definition_sha256": "e218d634c4a143c3af968c4baa567c6f68613398687b2b68dc604664595233d8",
+      "report": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AC_S0_foundation_cleanup_02/cleanup_report.json",
+      "report_sha256": "2cb25f82b3b47916414b489483b1a3627b208ee2d1ded866f90a98053401dad2",
+      "preview": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AC_S0_foundation_cleanup_02/roi_before_after.png",
+      "preview_sha256": "52570e588e07d1e1bc806729b5e83893ee3f49fa7cb66ff0c44b459fb383e4c1",
+      "outputs": {
+        "derived_base_full.png": "17648ed88f635eee4cef8e173558e311bed62272f328dc5cb81f5ef55adc0cf3",
+        "derived_base_roi.png": "1fb717fb2b57b9cc21051ef718cfb853270ed4b3e29e52fc94c07b04052ad795",
+        "derived_front_roi.png": "c69fba6b37b373007b11c784b5b974039f1925dcae9fe8950eda211b869ab862",
+        "derived_front_full.png": "806b6b58cad0b995ab9e5cec81cfb1e4a1342a15760b00422039bbccb8aa1692",
+        "roi_before_after.png": "52570e588e07d1e1bc806729b5e83893ee3f49fa7cb66ff0c44b459fb383e4c1"
+      },
+      "pixel_checks": {
+        "base_roi_outside_mask_or_hair_recovery_changed_rgba_pixels": 0,
+        "front_roi_outside_mask_changed_rgba_pixels": 0,
+        "base_outside_source_roi_changed_rgba_pixels": 0,
+        "front_outside_source_roi_changed_rgba_pixels": 0,
+        "base_alpha_changed_pixels": 0,
+        "front_rgb_changed_pixels": 0
+      },
+      "art_visual_pass": "NOT_ESTABLISHED"
+    },
+    {
+      "stage": "AD_S0",
+      "status": "TOOL_CANDIDATE_PENDING_ART_VISUAL_REVIEW",
+      "definition": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_normalized_definition_02.json",
+      "definition_sha256": "e5a4051ef681c0edf55e62a26feb0dea005c03f5e24b709a84e01d61a5fafb81",
+      "report": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AD_S0_foundation_cleanup_02/cleanup_report.json",
+      "report_sha256": "3f0deba9e6dc749362505b40fcb1fbdede9c03b80deaddcb3ed9b140f3fd2831",
+      "preview": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AD_S0_foundation_cleanup_02/roi_before_after.png",
+      "preview_sha256": "34c06bd4f1aaa1c0abe0810efc214f710db37e596f8f530e61bdf272cede48b1",
+      "outputs": {
+        "derived_base_full.png": "f7671827a0790c3de7040688cea9bf1dbcf1cc60fe651ed7f4302efced8c0559",
+        "derived_base_roi.png": "58e0fddf7476ea561f38ecddadcee0ef9f62f0ca9cfba5e322407e875712c58c",
+        "derived_front_roi.png": "332ab947a55a8cc82ca1c43fbb42566a9c3f5c18aa29e47fd76da266d40b7313",
+        "derived_front_full.png": "b5764f5ce2663d4d0dca02f0c4ab0b4ceef58426a68d92a2a77779c5a4ac29e3",
+        "roi_before_after.png": "34c06bd4f1aaa1c0abe0810efc214f710db37e596f8f530e61bdf272cede48b1"
+      },
+      "pixel_checks": {
+        "base_roi_outside_mask_or_hair_recovery_changed_rgba_pixels": 0,
+        "front_roi_outside_mask_changed_rgba_pixels": 0,
+        "base_outside_source_roi_changed_rgba_pixels": 0,
+        "front_outside_source_roi_changed_rgba_pixels": 0,
+        "base_alpha_changed_pixels": 0,
+        "front_rgb_changed_pixels": 0
+      },
+      "art_visual_pass": "NOT_ESTABLISHED"
+    },
+    {
+      "stage": "XJ_S0",
+      "status": "TOOL_CANDIDATE_PENDING_ART_VISUAL_REVIEW",
+      "definition": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_normalized_definition_02.json",
+      "definition_sha256": "829c0100a2af0ccb100dfc8907b2d04f8604a4de181c9663d52d02eb6da072da",
+      "report": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/XJ_S0_foundation_cleanup_02/cleanup_report.json",
+      "report_sha256": "f8692c3ae63c6886b942cfb2668429373feb03c14d7835af9e7feccb36e114bb",
+      "preview": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/XJ_S0_foundation_cleanup_02/roi_before_after.png",
+      "preview_sha256": "ff92316eff32c9c132f3a4fb3e15a6940aab1807929f33e73df46c20c39887ff",
+      "outputs": {
+        "derived_base_full.png": "d80601a5c8fcd39a9c4771aa4a9f3d2ec618594cffa23405d151a60c728644e0",
+        "derived_base_roi.png": "e44b92bf806bceddfcf671fc619c8e27e0a41ba369b37e1c16c5e3aae2e443c9",
+        "derived_front_roi.png": "4158e5299acda690e13c33639c57bbc185d6a747974db25ec9e9c1e2994f6672",
+        "derived_front_full.png": "dde62996d58ac4955a1ca902dfa467a20d31970f5962779d704b4fb1ebb39109",
+        "roi_before_after.png": "ff92316eff32c9c132f3a4fb3e15a6940aab1807929f33e73df46c20c39887ff"
+      },
+      "pixel_checks": {
+        "base_roi_outside_mask_or_hair_recovery_changed_rgba_pixels": 0,
+        "front_roi_outside_mask_changed_rgba_pixels": 0,
+        "base_outside_source_roi_changed_rgba_pixels": 0,
+        "front_outside_source_roi_changed_rgba_pixels": 0,
+        "base_alpha_changed_pixels": 0,
+        "front_rgb_changed_pixels": 0
+      },
+      "art_visual_pass": "NOT_ESTABLISHED"
+    },
+    {
+      "stage": "AC_S0_DIAGNOSTIC_REJECTED",
+      "status": "ART_REJECTED_DIAGNOSTIC_ONLY",
+      "definition": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_FOUNDATION_DEFINITION_02.json",
+      "definition_sha256": "79a18c64af2a4c1e1ddac39175a89fd95ce2592b9084e26d24d194746f0678b9",
+      "report": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AC_S0_foundation_cleanup_01/cleanup_report.json",
+      "report_sha256": "2baec99d36293420644e9ca29ee326eb2971d1bfdea433d7c18dd24e5c10bff2",
+      "preview": "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/review/AC_S0_foundation_cleanup_01/roi_before_after.png",
+      "preview_sha256": "b99ab8f43cfea06a7160c754f57fc33ccf5eb208a3c707105803923c559d6b94",
+      "outputs": {
+        "derived_base_full.png": "919356d68e04a6b42c64638b5bea8481fc70e9ab3ae2e520baa18f58ce5dfdcb",
+        "derived_base_roi.png": "38dfa2868056012da9dace91700ec10220f4d89fca5ec9849fbf897aaca6cedb",
+        "derived_front_roi.png": "ff8ffda559b4360395c477e288701244649107c585f311a2e0876676b07ac461",
+        "derived_front_full.png": "b0287d447e5b2a8016c6beeab90b4cd067d9471dc52931f370821d5798c43233",
+        "roi_before_after.png": "b99ab8f43cfea06a7160c754f57fc33ccf5eb208a3c707105803923c559d6b94"
+      },
+      "pixel_checks": {
+        "base_roi_outside_mask_changed_rgba_pixels": 0,
+        "front_roi_outside_mask_changed_rgba_pixels": 0,
+        "base_outside_source_roi_changed_rgba_pixels": 0,
+        "front_outside_source_roi_changed_rgba_pixels": 0,
+        "base_alpha_changed_pixels": 0,
+        "front_rgb_changed_pixels": 0
+      },
+      "art_visual_pass": "REJECTED_BY_ART"
+    }
+  ],
+  "boundary_checks": {
+    "bad_base_path": {
+      "exit_code": 2,
+      "output_created": false
+    },
+    "illegal_roi": {
+      "exit_code": 2,
+      "output_created": false
+    },
+    "hair_source_sha_mismatch": {
+      "exit_code": 2,
+      "output_created": false
+    },
+    "existing_output_refusal": {
+      "exit_code": 2,
+      "existing_output_unchanged": true,
+      "verified_files": [
+        "AC_S0_foundation_cleanup_02/derived_base_full.png",
+        "AC_S0_foundation_cleanup_02/derived_base_roi.png",
+        "AC_S0_foundation_cleanup_02/derived_front_full.png",
+        "AC_S0_foundation_cleanup_02/derived_front_roi.png",
+        "AC_S0_foundation_cleanup_02/roi_before_after.png",
+        "AC_S0_foundation_cleanup_02/cleanup_report.json"
+      ]
+    },
+    "atomic_output_policy": "all inputs, hashes, source geometry and masks are validated before staging; complete staged directory is renamed only on success; existing destination is refused"
+  },
+  "xj_optics_binding": {
+    "checked_inputs": {
+      "approved_face": {
+        "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+        "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+        "size_px": [
+          256,
+          256
+        ]
+      },
+      "annulus_mask": {
+        "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_mask_02.png",
+        "sha256": "df553efac74fa8da64e7b7694704966478f9041c779c7c7a5d57c8486a880b72",
+        "size_px": [
+          256,
+          256
+        ]
+      },
+      "derived_annulus": {
+        "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_02.png",
+        "sha256": "3d2cba815e81d1d29e054e64fce455e16dc5ecd4ce505a4e7d5b4c5763d3ebd0",
+        "size_px": [
+          256,
+          256
+        ]
+      },
+      "derived_roi_front": {
+        "path": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_front_single_glasses_source_02.png",
+        "sha256": "58787649b1cbaf9d5647eb6d3f1ccc62726d16e18ccef46f4e619de42cb65779",
+        "size_px": [
+          256,
+          256
+        ]
+      }
+    },
+    "approved_face_sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+    "annulus_mask_sha256": "df553efac74fa8da64e7b7694704966478f9041c779c7c7a5d57c8486a880b72",
+    "annulus_mask_nonzero_pixels": 18774,
+    "full_front_roi_matches_art_derived_roi_front": true,
+    "full_front_roi_vs_prototype_changed_rgba_pixels": 0,
+    "assembly_policy": "Art-derived annulus under untouched original front; prototype binding exact by SHA; eye windows alpha clear; no source ROI exterior pixels transferred",
+    "operation": "binding-only verification; the Art-derived front input is used unchanged"
+  },
+  "constraints": {
+    "source_roi_only_changes": true,
+    "rgba_zero_diff_outside_union_of_art_base_repair_and_hair_masks": true,
+    "rgba_zero_diff_outside_art_front_erase_mask": true,
+    "base_alpha_preserved": true,
+    "front_rgb_preserved": true,
+    "old_art_source_files_modified": false,
+    "apps_client_modified": false,
+    "previously_accepted_feature_pipeline_modified": false,
+    "imagegen_calls": 0,
+    "visual_decisions_by_tool": false
+  },
+  "not_run_or_not_claimed": [
+    "MT_S2: Art/Master-retracted definition, prohibited; not executed.",
+    "AJ_S2: not run in this bounded support task.",
+    "Native 192x192 export: not generated; full-source 1024x1536 output preserves local source ROI and zero-difference exterior.",
+    "Candidate aesthetic approval: not asserted; AC v02 output explicitly Art-rejected and AC v04, AD v02, XJ v02 tool outputs remain subject to Art/Master visual review."
+  ]
+}

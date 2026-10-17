@@ -1,0 +1,44 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "title": "表情首批生产预签与样张技术核验",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "对同一首批生产预案完成首图前技术预签，核六样实际层/坐标与预算，扩批复签与静态技术证据；不设自产切图成品额外效果门禁。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_CHECK.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "首图前对Art同批预案SHA、实际来源、尺寸坐标、分层接口和48调用预算预签，不伪称实图/运行通过。",
+    "六代表样张的实际PSD、切片和同尺度重组技术核验有结果，通过后按同版内容复签扩批；失败不放行扩批。",
+    "交付严格Schema Review及验收、真实证据与NOT_TESTED边界；不改Client、历史资产或追加自产切图专业复审门禁。"
+  ],
+  "dependencies": [],
+  "status": "IN_PROGRESS",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户2026-10-17本轮明确批准具体v0.2方案，主批准证据为Master USER_APPROVAL.json。",
+    "首图前同批预签、六代表样张/扩批门槛和总48调用额度继续；本任务不授权其他60态。",
+    "本单元示例无QA；Client接入等Gate2用户具体版本审批。",
+    "资源制作任务gpt-6-sol/high；编码支持gpt-6-luna/low；Tech/Producer gpt-6-sol/low。",
+    "跨职责授权：Client仅可在自己的deliverables/client/.../pipeline/编写资产支持脚本，不改apps/client。",
+    "Task创建时间 2026-10-17T11:24:07+08:00",
+    "2026-10-17 首个Required Artifact TECH_PRESIGN.json 已实际产出，技术核验进行中；Art同批预签尚待核，不授权首图。",
+    "2026-10-17 首图前同批TECH_PRESIGN已APPROVED；Art首个MT_S2 surprised image_gen调用连接失败，无请求ID或新候选，UNKNOWN_COUNTED 1/48。六样实际PSD、切片和重组缺失，样张核验与扩批复签BLOCKED。",
+    "用户恢复后resume_20261017/TECH_RESUME_CHECK.md及中间SAMPLE_TECH_REVIEW.json实存，Tech现继续核Art实际样张；中间BLOCKED仅指六样未齐，非本Task已停止。"
+  ]
+}

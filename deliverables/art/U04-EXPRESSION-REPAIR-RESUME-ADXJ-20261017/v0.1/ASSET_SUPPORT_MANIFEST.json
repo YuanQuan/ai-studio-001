@@ -1,0 +1,2108 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "version": "v0.1",
+  "created_at": "2026-10-17T13:02:35.540822+08:00",
+  "current_samples": {
+    "ad_s0": {
+      "stage": "AD_S0",
+      "state": "happy",
+      "current_revision": "final02",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+        "sha256": "6aeca08b609af80d936443d03fbf2c2b132a3a1ebe702f12f4b16590d697d210",
+        "bytes": 1559342,
+        "size_px": [
+          1254,
+          1254
+        ],
+        "mode": "RGB"
+      },
+      "feature_definition": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_feature_definition_01.json",
+        "sha256": "b09d7007078ded60f1f8d3205755c176b9427181a4635bb89b2f0050789168aa",
+        "bytes": 6274
+      },
+      "feature_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_feature_mask_01.png",
+        "sha256": "ac4ee50cd40bef23416609b2e975bb12928aa6b6bc493f8310e9ad8294fdb37f",
+        "bytes": 10187,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "feature_report": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/feature_extract_report.json",
+        "sha256": "a29bb1ae3fc6ec95a6fb2d21daba670172d3339f643f6af9c19430e09f11d02e",
+        "bytes": 6712
+      },
+      "oneface_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/oneface_combined.png",
+        "sha256": "cacf1138549eb5a22273ffd9643ff43901af34921bd165751400a53b91d692ee",
+        "bytes": 46283,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "foundation_definition": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_normalized_definition_02.json",
+        "sha256": "e5a4051ef681c0edf55e62a26feb0dea005c03f5e24b709a84e01d61a5fafb81",
+        "bytes": 3341
+      },
+      "foundation_report": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_tool_output_02/cleanup_report.json",
+        "sha256": "1af30432cccec1a854cc7cd55057e30244ad0c586d3ad7b6346008ebb680983c",
+        "bytes": 11483
+      },
+      "foundation_hair_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_hair_edge_recovery_mask_01.png",
+        "sha256": "3a6276f7de94d2c8c43ef60280d861d0864d1e1dd4ccf6d063974f404dc223c7",
+        "bytes": 1617,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "base_full_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_tool_output_02/derived_base_full.png",
+        "sha256": "f7671827a0790c3de7040688cea9bf1dbcf1cc60fe651ed7f4302efced8c0559",
+        "bytes": 1578617,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA"
+      },
+      "front_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_tool_output_02/derived_front_roi.png",
+        "sha256": "332ab947a55a8cc82ca1c43fbb42566a9c3f5c18aa29e47fd76da266d40b7313",
+        "bytes": 99822,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "base_768": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_base_happy_repair_02.png",
+        "sha256": "878332ef3287017a4df7f6d36420a0e289318b2bf07da366ca9d3a76d1010885",
+        "bytes": 469075,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "face_192": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_happy_repair_02.png",
+        "sha256": "96a45f12b3e7fb5d42eda1453a91e1bf450168f78cf9aa3b11ab26080e81c58e",
+        "bytes": 31594,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "front_192": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_front_happy_repair_02.png",
+        "sha256": "b85ceeb72e024b13c33e00d0767fd727d7c495d865826badd478f888de149eb1",
+        "bytes": 8926,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_happy_repair_final02.psd",
+        "sha256": "df6a9d958ed856c984c364b3caffd7c075d6225a518faa4f564b889342473880",
+        "bytes": 15815750
+      },
+      "psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_repair_final02_layer_manifest.json",
+        "sha256": "6fbc223a23d7e9aabaa841bdc6562f26d530734e95e5d3d56cd8709d3562d137",
+        "bytes": 6531
+      },
+      "psd_preview": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_happy_psd_preview.png",
+        "sha256": "5cabef60026be28a835dfbae611579124924b37034c9a15a67c359c657395b4e",
+        "bytes": 829257,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "native_768": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_happy_native_768.png",
+        "sha256": "07279c7cbedf491eedfef74420bfb6c54322fa8cae1b9f0d87b9362ff3a639e6",
+        "bytes": 480132,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "same_scene_u00": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_happy_u00_1280x720.png",
+        "sha256": "5f2620707017c40638e1c7a1b5272762eecd60dd7ac794d7bfb89915c5303156",
+        "bytes": 1223520,
+        "size_px": [
+          1280,
+          720
+        ],
+        "mode": "RGB"
+      },
+      "old_new_face_same_scale": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/u04_ad_s0_old_vs_new_face_same_scale.png",
+        "sha256": "65a2f37837ce06b743a3aa573a88f8ef640f0db42e0999978392131c335220f5",
+        "bytes": 89208,
+        "size_px": [
+          384,
+          192
+        ],
+        "mode": "RGBA"
+      }
+    },
+    "xj_s0": {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "current_revision": "final03",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+        "sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+        "bytes": 1817355,
+        "size_px": [
+          1254,
+          1254
+        ],
+        "mode": "RGB"
+      },
+      "feature_definition": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_definition_03.json",
+        "sha256": "086569c51dc62011b724b60dbe44454546d9f59c9ad416e471951ca67046b76e",
+        "bytes": 5446
+      },
+      "feature_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_mask_03.png",
+        "sha256": "6db8f3618fe59fffe442dc68d48ee6422e30d3235a154b1c6b8050b5939b2aa4",
+        "bytes": 5746,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "feature_report": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/feature_extract_report.json",
+        "sha256": "05202729b925ad1680e77b0b027c9560b78fbec8c636402eb3725304d6164303",
+        "bytes": 6309
+      },
+      "oneface_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/oneface_combined.png",
+        "sha256": "b7ce34e6fb46f287eda250b5293a09dd686b33e1880a780e47588415ff4717c1",
+        "bytes": 17852,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "foundation_definition": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_normalized_definition_03.json",
+        "sha256": "07ef5c297019d63643ad95ae3d90aea992e50ad8468f10c691f5fb29e4ac3329",
+        "bytes": 5665
+      },
+      "foundation_report": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_tool_output_03/cleanup_report.json",
+        "sha256": "ffd3f2bec259abe528633ea93786f8e7bdd95f158ad8717f5d568c8e0e0ab55e",
+        "bytes": 15951
+      },
+      "foundation_hair_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_hair_edge_recovery_mask_01.png",
+        "sha256": "55a40138326b88f23770a52c0f5cd9de7bd2b25d0040f714b42140676257bbed",
+        "bytes": 1585,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "base_full_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_tool_output_03/derived_base_full.png",
+        "sha256": "d80601a5c8fcd39a9c4771aa4a9f3d2ec618594cffa23405d151a60c728644e0",
+        "bytes": 1517662,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGBA"
+      },
+      "front_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_foundation_tool_output_03/derived_front_roi.png",
+        "sha256": "9d851b15e83fe5b9b31755052aa73f3d64e73e39241a098d809e49c2420ade86",
+        "bytes": 72414,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "base_768": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "sha256": "7a5e4bcf6271c09b878f054e5999dacc44a2631f516fc6a5415d2ceeaefda9be",
+        "bytes": 433899,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "face_192": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_happy_repair_03.png",
+        "sha256": "2262a27c57b9c667c24da8a33ef7445ef01245f578b646850e9f11c05d237b42",
+        "bytes": 11492,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "front_192": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_front_happy_repair_03.png",
+        "sha256": "28af60dbeef3f651ff3cb5ff53abb602b96f720e2e31c40fca83dd547e4b090a",
+        "bytes": 46778,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_happy_repair_final03.psd",
+        "sha256": "787cf54c93a859453275f7ee8f7e1e14c135e3975e8386f5d2911200a75bf7df",
+        "bytes": 15781296
+      },
+      "psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_repair_final03_layer_manifest.json",
+        "sha256": "335616c84870d922c0e2efcba178f19d2c5cea43a4d11252a634fe679b68024d",
+        "bytes": 6542
+      },
+      "psd_preview": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_happy_psd_preview.png",
+        "sha256": "dac0ee1f6b575147873fd970a36e3c2934dad461b5432e90f72df3855de5a807",
+        "bytes": 719364,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "native_768": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_happy_native_768.png",
+        "sha256": "abf73bdea93d32d2fd783b4e927a2e07bd57291b41fa46787ca55d10568f3eed",
+        "bytes": 459109,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "same_scene_u00": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_happy_u00_1280x720.png",
+        "sha256": "2369c3344b8318890973c8712289b22bc6947212ad2ba37dd047aa6d3992331a",
+        "bytes": 1227756,
+        "size_px": [
+          1280,
+          720
+        ],
+        "mode": "RGB"
+      },
+      "old_new_face_same_scale": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final03/u04_xj_s0_old_vs_new_face_same_scale.png",
+        "sha256": "86d02385337b850fe060a47ace41ceeb2bb769cf505eaefa1d02efb2ead8c287",
+        "bytes": 124519,
+        "size_px": [
+          384,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "approved_optics_annulus_source": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_02.png",
+        "sha256": "3d2cba815e81d1d29e054e64fce455e16dc5ecd4ce505a4e7d5b4c5763d3ebd0",
+        "bytes": 58758,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "approved_optics_annulus_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_approved_optics_transfer_mask_02.png",
+        "sha256": "df553efac74fa8da64e7b7694704966478f9041c779c7c7a5d57c8486a880b72",
+        "bytes": 8825,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "front_eye_window_erase_mask": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_front_eye_window_speck_erase_mask_01.png",
+        "sha256": "e3199985b61f78704a63b0d41d63ff4ebd7207efaa912dbd57ef52411fc309b7",
+        "bytes": 905,
+        "size_px": [
+          256,
+          256
+        ],
+        "mode": "RGBA"
+      },
+      "front_only_audit": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/xj_s0_front_only_03.png",
+        "sha256": "96e0b17957f35446401e0b8247b5f281fd386ab18de5a7c1fc4b48e1cdb785d6",
+        "bytes": 92259,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "face_without_front_audit": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/xj_s0_base_face_no_front_03.png",
+        "sha256": "ea39935683ee10620ec7096de0252df3e72c92bef112c15dd3180fb53e48ae16",
+        "bytes": 123736,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "front_without_face_audit": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/final02/xj_s0_base_front_no_face_03.png",
+        "sha256": "fdff43bfcf92e7b62debc4db578f12750b9b7dba91288ea9911b4b38f68f21a3",
+        "bytes": 164065,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      }
+    }
+  },
+  "production_status": "TWO_INTERNAL_ART_SAMPLES_READY_FOR_MAIN_ART_TECH_MASTER_REVIEW; no Gate2 or client import",
+  "composition_order": [
+    "derived clean base",
+    "one Art-extracted feature-only happy face",
+    "single occlusion front"
+  ],
+  "source_canvas_px": [
+    1024,
+    1536
+  ],
+  "native_base_px": [
+    768,
+    768
+  ],
+  "native_face_front_px": [
+    192,
+    192
+  ],
+  "global_budget": "Unit 2/18; global live counter controlled by Master; no extra generation for foundation/PSD",
+  "optics_note": "XJ optical annuli from approved original, not imagegen; small approved rim marks are refraction material outside expressive eye windows; exact 18 pale old-front window flecks alpha-erased in final03.",
+  "updated_at": "2026-10-17T13:49:33.775073+08:00",
+  "status": "TEN_STATE_INTERNAL_ART_READY_FOR_MAIN_ART_TECH_REVIEW",
+  "expansion_release": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json",
+    "sha256": "7ba9772a1cfd93314f46b95adc5812f3c4e0eba655e367bbf00bef8da31c70fc",
+    "bytes": 4285
+  },
+  "blind_actual_scale_master_result": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ADXJ_DRAFT01_RESULT.json",
+    "sha256": "5b1ff0f8c8cebfd88f68252e11ffb7a50bf46eb7ed901ba9eb725b23bbfd2a0c",
+    "bytes": 2313
+  },
+  "native_u00_recompose_report": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/native_u00_recompose_report_01.json",
+    "sha256": "4c1b984b18db063e1f2d1d4940a24b722b6aa6539fefed270303fe5d5772e600",
+    "bytes": 11751
+  },
+  "five_state_psd_native_validation": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/five_state_psd_native_validation_01.json",
+    "sha256": "e5f1258a1b82da757ba4b53cc84aab97927793cf059b7eb5aa3ccde940856bdd",
+    "bytes": 26263
+  },
+  "unit_budget": {
+    "calls_used": 10,
+    "current_max": 16,
+    "pre_release_cap": 18,
+    "global_max": 48,
+    "global_live_count": "owned by Master; no self-inferred counter"
+  },
+  "stages": {
+    "ad_s0": {
+      "face_source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "native_offset_xy": [
+        232,
+        139
+      ],
+      "frozen_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_base_happy_repair_02.png",
+        "sha256": "878332ef3287017a4df7f6d36420a0e289318b2bf07da366ca9d3a76d1010885",
+        "bytes": 469075,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "frozen_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_front_happy_repair_02.png",
+        "sha256": "b85ceeb72e024b13c33e00d0767fd727d7c495d865826badd478f888de149eb1",
+        "bytes": 8926,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "default_visible_state": "happy",
+      "default_master_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_happy_five_state_01.psd",
+        "sha256": "715a72173e56121e488fd32b515c7c0737663d856fd3294aa86f0603508376e3",
+        "bytes": 16219514
+      },
+      "blind_board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png",
+        "sha256": "178880c4f79d9bfc76d9190c09ba32ef2a358f19c7dec85241ee9a8120b6ae9e",
+        "bytes": 88952,
+        "size_px": [
+          775,
+          179
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+            "sha256": "6aeca08b609af80d936443d03fbf2c2b132a3a1ebe702f12f4b16590d697d210",
+            "bytes": 1559342,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_happy_01.txt",
+            "sha256": "6266584de3637d9053158280015cea700701d8fe6d3a3d8c597cdcd8f431498b",
+            "bytes": 1256
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_feature_definition_01.json",
+            "sha256": "b09d7007078ded60f1f8d3205755c176b9427181a4635bb89b2f0050789168aa",
+            "bytes": 6274
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_feature_mask_01.png",
+            "sha256": "ac4ee50cd40bef23416609b2e975bb12928aa6b6bc493f8310e9ad8294fdb37f",
+            "bytes": 10187,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/feature_extract_report.json",
+            "sha256": "a29bb1ae3fc6ec95a6fb2d21daba670172d3339f643f6af9c19430e09f11d02e",
+            "bytes": 6712
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/oneface_combined.png",
+            "sha256": "cacf1138549eb5a22273ffd9643ff43901af34921bd165751400a53b91d692ee",
+            "bytes": 46283,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/semantic_layers/01_left_brow.png",
+              "sha256": "45f24ca8948b1612932a3d986a6e48ff8651e0b2051fa9386b14b0088ee2c630",
+              "bytes": 97812,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/semantic_layers/02_right_brow.png",
+              "sha256": "c9c0e62bc5b65b79d0226d13b5451dc77fd485b338cf01546f445c995c9fb30f",
+              "bytes": 97334,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/semantic_layers/03_left_eye.png",
+              "sha256": "2c709cda153c17c337922206d8be93847d2fe84925fc61c5203e120f9fec18fc",
+              "bytes": 98355,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/semantic_layers/04_right_eye.png",
+              "sha256": "c2b4bed11a7134ec8836266cb045546dda56b6ede6380d3abea89a6d698588b0",
+              "bytes": 98443,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/semantic_layers/05_mouth.png",
+              "sha256": "7564c51d2fc853e3448f5e517a0dea6e573f8c64fc257c92c082d10276c14d6c",
+              "bytes": 98052,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_happy_repair_expansion01.png",
+            "sha256": "96a45f12b3e7fb5d42eda1453a91e1bf450168f78cf9aa3b11ab26080e81c58e",
+            "bytes": 31594,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_happy_native768_01.png",
+            "sha256": "07279c7cbedf491eedfef74420bfb6c54322fa8cae1b9f0d87b9362ff3a639e6",
+            "bytes": 480132,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_happy_u00_01.png",
+            "sha256": "5f2620707017c40638e1c7a1b5272762eecd60dd7ac794d7bfb89915c5303156",
+            "bytes": 1223520,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_five_state_layer_manifest_01.json",
+            "sha256": "cccbfc49bc1c09e77cb442832c15543cdb2e2b652eebd7df733e4d31afed07b3",
+            "bytes": 12919
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_happy_five_state_01.psd",
+            "sha256": "715a72173e56121e488fd32b515c7c0737663d856fd3294aa86f0603508376e3",
+            "bytes": 16219514
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_happy_five_state_psd_preview_01.png",
+            "sha256": "5cabef60026be28a835dfbae611579124924b37034c9a15a67c359c657395b4e",
+            "bytes": 829257,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 1
+          }
+        },
+        "surprised": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_surprised_imagegen_01.png",
+            "sha256": "ce0821716f3c95f723f68792485669ebf5353a40c0b97a66adcb5fb7184fdf79",
+            "bytes": 1523812,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_surprised_01.txt",
+            "sha256": "af7ca0ca9a4be635033580208c90d25b31300a7d59675d9378806a8d78d09d70",
+            "bytes": 1537
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_feature_definition_01.json",
+            "sha256": "6fc09d9cdc95bf5ba2df833ded15fa54d807bddac3780271b8b79a9190f1ce67",
+            "bytes": 6264
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_feature_mask_01.png",
+            "sha256": "df8723c24e158b5e25e1d0263d81d088ef6c7815c60066f34e2c01de41d0eec2",
+            "bytes": 9032,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/feature_extract_report.json",
+            "sha256": "58b04eefc6aa53bacd7b3ef0dbbd72ec3d46995e3bcc9f053c056cef233f76f3",
+            "bytes": 6715
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/oneface_combined.png",
+            "sha256": "b6261cb45b3c0603bddbbfa3f9496e50aafb798bb66752dc9c75fe45b31633a8",
+            "bytes": 43804,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "463f62045b834b7b875ba92bcb15cf38f1d60d35cd2207a77a3b3764d55a1c12",
+              "bytes": 95354,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "0b1867a4f852ca083c1019ad7c81c2cf9b75ce6795e667e450b898bd0efccae5",
+              "bytes": 94854,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "581813607049da837185b12d9fcae11a64476d62e27ac244cce12d46eb008e0d",
+              "bytes": 95917,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "870261b1f70059c3e4fe1a3f35ba7e29f61ef9a9f0ddc7525dcd2899b6e18dc5",
+              "bytes": 95956,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "c9402c6efd26144069fd3254c7209dada9fdf58a7be03309d9a48ebc476e152a",
+              "bytes": 95918,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_surprised_repair_expansion01.png",
+            "sha256": "6a3a57df44f9c972d666d2e80e23f4cb264cf2fb43c6979ac2d1440701ab0b1a",
+            "bytes": 29422,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_native768_01.png",
+            "sha256": "1539dd11918164d2301a99d3100f54eaab26c356f48f4c113d5a3b3581fb3da6",
+            "bytes": 479750,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_u00_01.png",
+            "sha256": "e7b4e33a382b4ea36032b1734bf2ed517672fadee03af33d31ccd6504ffd52cb",
+            "bytes": 1223802,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_surprised_five_state_layer_manifest_01.json",
+            "sha256": "277b54e8b9bf0ef2b5ee58165a600be906819bda98583be29157f9854a8ec4e5",
+            "bytes": 12919
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_surprised_five_state_01.psd",
+            "sha256": "a41e6b9f8e2b1e3fb0716e1bf6fed2637fc7b498a3d90e150fb1dd01bbc4c0c8",
+            "bytes": 16219514
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_surprised_five_state_psd_preview_01.png",
+            "sha256": "83b55cfc8c6b1568c4d5d7ce60ad6eb82ac8b55748231f0e69844a6058f59dec",
+            "bytes": 828862,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "sad": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_sad_imagegen_01.png",
+            "sha256": "fb6742ec52e96c1083192b3ec02308b68fe794be0b4583092a03bbcd077a90a5",
+            "bytes": 1503214,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_sad_01.txt",
+            "sha256": "9bf9cde40275bed3200d8720f41127d2b0a4b13ef09136c1b166af9593b633ea",
+            "bytes": 1535
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_feature_definition_01.json",
+            "sha256": "4c998d61993a4f4d1cf4183778aae6510cdcb487abcd860cc1027ad3ddadb50c",
+            "bytes": 6146
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_feature_mask_01.png",
+            "sha256": "70e23bd6423c0e8f906eaf0380fa05da297c269fab5b00cf04892f3825939bb6",
+            "bytes": 9322,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/feature_extract_report.json",
+            "sha256": "d2be755bc6fa732c918e1ee9447f151b4fd4911fc3e0ea41816acd750d9ed509",
+            "bytes": 6643
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/oneface_combined.png",
+            "sha256": "08d90d825242515139bda1103d810707f2481f22304ae6f24cf38c339eaba263",
+            "bytes": 41722,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "0194999816a801f352452ee8b3b5f80ee1036a3566c969b6c026e4ff5124416c",
+              "bytes": 94630,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "b789e11bd4eaf3523b3eabe69b56134a3c93be05adadc053a5bcb7383d7d0a9e",
+              "bytes": 94225,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "22786e5913c13a87ace693f654525793e9f3bc3e8daeb3dfc8e0b5398da4c1ee",
+              "bytes": 94971,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "5a83639847a50759796a99fdd391d34b5820a77e6e9f07ad1707e178755b9800",
+              "bytes": 95228,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "2327d5b1ef8d9446dbbf546168eb64e69bd3875bb0fbd64d507fd35c768eee09",
+              "bytes": 94594,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_sad_repair_expansion01.png",
+            "sha256": "a623aef6f0b5eaa9189a62511aaad7bd375baed4f52b4f4e396d4709900e74fe",
+            "bytes": 28083,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_native768_01.png",
+            "sha256": "b1e7c69b55538ccc01ddb4aa2733ed6f98f7cc07dbc1c3adc43193bc6a1f1f8b",
+            "bytes": 479164,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_u00_01.png",
+            "sha256": "f6f9fd80cfcb2b88125bfba60ae03b8979967d63bb6d055e9c4ea6d9af10d65f",
+            "bytes": 1223229,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_sad_five_state_layer_manifest_01.json",
+            "sha256": "af2139580092202d8774d4de0456109d2b6c8ec18967b57fcddcedfe33abe9ba",
+            "bytes": 12919
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_sad_five_state_01.psd",
+            "sha256": "9ae213cd8c33a2901d6390aa5ad898894270ae7b67fbd45c5a691472963bcd4d",
+            "bytes": 16219514
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_sad_five_state_psd_preview_01.png",
+            "sha256": "11d22ad07a3860147af9d9794a875a90bd6be29dee4999e41de372c53248186a",
+            "bytes": 827578,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "smile": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_smile_imagegen_01.png",
+            "sha256": "1808255811ab2a294c94882e647149a90414b46c7c86de7cd90875267861621d",
+            "bytes": 1512665,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_smile_01.txt",
+            "sha256": "068a60b17ebf934ec22d14d1e4702c41cbadea2e5e7e1c69ec2fd00d503a3b9f",
+            "bytes": 1501
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_feature_definition_01.json",
+            "sha256": "b673ed74cc823bb2608916bd27b68fcab8088f0490ab81b63f78da0d08ddf177",
+            "bytes": 6152
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_feature_mask_01.png",
+            "sha256": "a5b4dc5d252f09b1190450e5a3691f2451eee4cecb2bcce092f01e58ab1c2e28",
+            "bytes": 8809,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/feature_extract_report.json",
+            "sha256": "07145bf56cf5c4b2cdf4c2cf9d1deb5250d771b58d95d674ac0568725243335a",
+            "bytes": 6667
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/oneface_combined.png",
+            "sha256": "62ae07332f52812b41fd28eb2e2f6ae9e01b4dd129bd4bbec248322bbd2a38f0",
+            "bytes": 41417,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "d7fd90578987a391eb12783cbdc690a5f533b8346954bd47cd13afe188ad2f22",
+              "bytes": 95004,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "1d6b031ab553fdbe4dc99395b94e13b99069f7b6742eaebe565f8d7b69c910a2",
+              "bytes": 94545,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "6edc779056ac75813da987eb9d1572429f2c4ed2bcf17994d1cbec4ea18c6a21",
+              "bytes": 95388,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "15d43cad501623f25e8c0440b17685726abae4d4687008641be24f10c6706a27",
+              "bytes": 95652,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "1f96cc4397bf986945279b22fdd26373cdd6d14b642bf8b3385ed262cb47ac42",
+              "bytes": 95099,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_smile_repair_expansion01.png",
+            "sha256": "d08921be53e578b7962462e73431a1d33e84c7505024fb3ec72188b968be5d03",
+            "bytes": 27779,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_native768_01.png",
+            "sha256": "cef8655d321b99aa20c099f47365a3c6cd044bcc56852dc5c2edded040f09975",
+            "bytes": 479208,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_u00_01.png",
+            "sha256": "cf156bd41489832cf14ff8697f40c5c3000eb1528a6e238f0703313e7df00cb4",
+            "bytes": 1223677,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_smile_five_state_layer_manifest_01.json",
+            "sha256": "9978724f94d0604b56dc9c35b31576eaee811abb2a8d7f5f8cdcf4e7c687140f",
+            "bytes": 12919
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_smile_five_state_01.psd",
+            "sha256": "7eca3094bfe38b996f1432f1828a81c9209823183766fb8c248c92f76930a203",
+            "bytes": 16219514
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_smile_five_state_psd_preview_01.png",
+            "sha256": "2802f46a7a118a70e65f029409e10bb2e6f7b890fa903819b8af85b2eaa42269",
+            "bytes": 827687,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "angry": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_angry_imagegen_01.png",
+            "sha256": "c24ff2f1db1e31aeec8b27aa0b6816e5f0c6c10021f141f64c61f55307320e21",
+            "bytes": 1526582,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_angry_01.txt",
+            "sha256": "e9c47b77b6e5087fee91e5000ca930b7d8ee2e7d3230ad4051ec87c35bf1ae1c",
+            "bytes": 1529
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_feature_definition_01.json",
+            "sha256": "b047085004e00e90919c17a96c49cadfa33edbafa40c7c09e3bc71d7d4344f08",
+            "bytes": 6399
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_feature_mask_01.png",
+            "sha256": "b0012cb7fab67bbd368bd6bfcd1ae7972fd7eba854fce8459d8bd62df7b25216",
+            "bytes": 9444,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/feature_extract_report.json",
+            "sha256": "cd8a6abfbdb15515c6d09b2db13554f350101a3733b39e52171e343f004be35c",
+            "bytes": 6667
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/oneface_combined.png",
+            "sha256": "6930174e85280478291b48583f69d105abddbb717c2d3ab3a398897990fdcc4b",
+            "bytes": 42633,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "cd1404e77a415c33e33ea1b54d3cfa616c696a066e359180d6d9f54a123df847",
+              "bytes": 95098,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "287cda93ce5c99b9213f232eca32ecc2bf34b02f2601398113ab8e667b5308ca",
+              "bytes": 95281,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "419da40be977be8dc0e3873bf6c2095e9c36f3525e8e04e87f0562287775b98a",
+              "bytes": 95486,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "9c57744cad19a764fb835b1a8fe1ebb69c16aee070e1d16a745b752f076558b3",
+              "bytes": 95763,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "505b7709ebf340f9251a6ea472e510564d38e3378a72b05b3129e92399d9d692",
+              "bytes": 96033,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_ad_s0_face_angry_repair_expansion01.png",
+            "sha256": "fdf4f4701fd1838096d396cd51a4cb1a1ff6e9b0160f3a66fe146de2dd47d38d",
+            "bytes": 28928,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_native768_01.png",
+            "sha256": "3ff836bc9cf26bbb95ef273592c4bba543753fa68bd47553d6050135eafa785c",
+            "bytes": 479733,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_u00_01.png",
+            "sha256": "8222ff22259d89cd6e3aebba56ca893a5815f0dea44da4cc257bff9f339d0bf3",
+            "bytes": 1223106,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_angry_five_state_layer_manifest_01.json",
+            "sha256": "2e93e5f7e2ca1427e8ed291e47cc0037d39918813985f19979404d1e49c0e225",
+            "bytes": 12919
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_ad_s0_angry_five_state_01.psd",
+            "sha256": "cabb785f6819a593a9db3666ce18d4d64cd20711744971a6cb1f8f7e13920ff2",
+            "bytes": 16219514
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_angry_five_state_psd_preview_01.png",
+            "sha256": "36973533af7fca52193b5b0ab1994cc8e4d3cad66a3854ce96c2185ab9e569fc",
+            "bytes": 828643,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        }
+      }
+    },
+    "xj_s0": {
+      "face_source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "native_offset_xy": [
+        248,
+        167
+      ],
+      "frozen_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "sha256": "7a5e4bcf6271c09b878f054e5999dacc44a2631f516fc6a5415d2ceeaefda9be",
+        "bytes": 433899,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "frozen_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_front_happy_repair_03.png",
+        "sha256": "28af60dbeef3f651ff3cb5ff53abb602b96f720e2e31c40fca83dd547e4b090a",
+        "bytes": 46778,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "default_visible_state": "happy",
+      "default_master_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_happy_five_state_01.psd",
+        "sha256": "8efbd9b2c020880b74611ff42169d828a305f3d1523f9279bd7d256042967245",
+        "bytes": 16057032
+      },
+      "blind_board": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png",
+        "sha256": "2cd756e2277679b49241e69b6943d3c8e680bc97386245623f45340adee7a291",
+        "bytes": 78271,
+        "size_px": [
+          775,
+          179
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+            "sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+            "bytes": 1817355,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_happy_01.txt",
+            "sha256": "ea30151ed7445d6e3e9da234c7ec812a9c7109c03b6eacb041b80f69a160c0da",
+            "bytes": 1486
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_definition_01.json",
+            "sha256": "2e3192fec652ad6e514c6a617d183463e8257dee82bd9dfd2e289d73c2d3d372",
+            "bytes": 5050
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_mask_01.png",
+            "sha256": "cce61f3f34f07f20876241753a4ebf2f2035a49f751269ff3e60281703903b4b",
+            "bytes": 7799,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/feature_extract_report.json",
+            "sha256": "05202729b925ad1680e77b0b027c9560b78fbec8c636402eb3725304d6164303",
+            "bytes": 6309
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/oneface_combined.png",
+            "sha256": "b7ce34e6fb46f287eda250b5293a09dd686b33e1880a780e47588415ff4717c1",
+            "bytes": 17852,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/semantic_layers/01_left_brow.png",
+              "sha256": "f12171b9547092974f929fd47d3d174a637583b04ee0cce03cc731c375fa55bd",
+              "bytes": 125473,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/semantic_layers/02_left_eye.png",
+              "sha256": "2f36b2220745c726c2da1af3774fdee5f0641132211039ec44c86f148be1795d",
+              "bytes": 125208,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/semantic_layers/03_right_eye.png",
+              "sha256": "09dbc244362cd84630dff166fa4ceb7ea687d03c4ed3627f515b98fae23e261a",
+              "bytes": 125030,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/semantic_layers/04_mouth.png",
+              "sha256": "a2937561adaf1780a135f13401a0cecec96123ed3121e0402ba82a69a62e74c7",
+              "bytes": 126317,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_happy_repair_expansion01.png",
+            "sha256": "2262a27c57b9c667c24da8a33ef7445ef01245f578b646850e9f11c05d237b42",
+            "bytes": 11492,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_happy_native768_01.png",
+            "sha256": "abf73bdea93d32d2fd783b4e927a2e07bd57291b41fa46787ca55d10568f3eed",
+            "bytes": 459109,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_happy_u00_01.png",
+            "sha256": "2369c3344b8318890973c8712289b22bc6947212ad2ba37dd047aa6d3992331a",
+            "bytes": 1227756,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_five_state_layer_manifest_01.json",
+            "sha256": "4bee57d8c23db03b89baa8477101fd98ba36080cd834aa39f3ba0b410d872d79",
+            "bytes": 12930
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_happy_five_state_01.psd",
+            "sha256": "8efbd9b2c020880b74611ff42169d828a305f3d1523f9279bd7d256042967245",
+            "bytes": 16057032
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_happy_five_state_psd_preview_01.png",
+            "sha256": "dac0ee1f6b575147873fd970a36e3c2934dad461b5432e90f72df3855de5a807",
+            "bytes": 719364,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "surprised": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_surprised_imagegen_01.png",
+            "sha256": "20fa2056340b3e87d326199ee846d21f7dd4cc802b6bd90e488230f02a5449d1",
+            "bytes": 1796620,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_surprised_01.txt",
+            "sha256": "7afc5d64791cb0defa6db4c29662354e56e96da119f345b0e513e5e2981e0445",
+            "bytes": 1932
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_feature_definition_01.json",
+            "sha256": "0d430eee4740992033af382816eefee37b36eff28796841edff0fd2a138825f5",
+            "bytes": 6263
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_feature_mask_01.png",
+            "sha256": "fc211e6f6492f4d4b857a966206156d657f847dd28e0df1ddb9c0d6b8bbb8b40",
+            "bytes": 8908,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/feature_extract_report.json",
+            "sha256": "5706c2bda921de662bdbfb2e9364f466de64f7f9ac74b8810b3d40774fbf4d49",
+            "bytes": 6715
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/oneface_combined.png",
+            "sha256": "cab0acbf8d17f7adef0a402d86fac2db6ad6966ee46dfae016bf83676c449422",
+            "bytes": 37992,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "00fa9b53885c7776db46080b337317ac41871f5361d0343069e7490f5b0fbaa7",
+              "bytes": 124838,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "bccf826c4b71abacb1977e99ae13f02b871398d7a413a78d5a1679ac992669b8",
+              "bytes": 124363,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "8a4e1b272d2c0cb1ff37c62525797b7bc35529f55132cb3ea0d91b5a62283beb",
+              "bytes": 124620,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "57a0690f42c089a49f17453e838d85ce6e7e883acf9560ab75a07ed053d537dc",
+              "bytes": 124609,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "b63becd7ff7b099c8e19c5fb694656a5b113d9f051f57fa6fad48afd871fd213",
+              "bytes": 124916,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_surprised_repair_expansion01.png",
+            "sha256": "4a27a9bd4c0a902d270cb2b199b4937c680260604123a2f4fb5380da1d17c108",
+            "bytes": 23710,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_native768_01.png",
+            "sha256": "dda1f9a096ad7ef8f46fa72f2b063db360684b7efa0764da4eb507a109f91e5c",
+            "bytes": 460166,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_u00_01.png",
+            "sha256": "53903ae0bee65cc4fb39fbd3b656a94aef7b359c90fa7ffffaaf52f0364f5aa0",
+            "bytes": 1228454,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_surprised_five_state_layer_manifest_01.json",
+            "sha256": "e44158b14670441a1965fab51ec16359052eee8d479230e74e48911a5fe9964f",
+            "bytes": 12929
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_surprised_five_state_01.psd",
+            "sha256": "ed5a94e6b61f52c80c5e48acf90c37ea4b9ad7a33e09f10e45bf3c68ea3e26c8",
+            "bytes": 16057032
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_surprised_five_state_psd_preview_01.png",
+            "sha256": "48c1f9d263e6bb30d20816baadff17ddbc463efeea0d5c730b5dc84173422986",
+            "bytes": 720820,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "sad": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_sad_imagegen_01.png",
+            "sha256": "13cbadc5f72f988b1179b42fee8d679de55b890d6174d133b6af1ed6a73d8f4f",
+            "bytes": 1778853,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_sad_01.txt",
+            "sha256": "a1939838b35d82a519565db347c150a162e0eb737aa480a85e93f70dfc25eb5a",
+            "bytes": 1874
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_feature_definition_01.json",
+            "sha256": "a5be9bd0b4cb756749ffdf2c13b998e588a75cadc80eedf7d264ecf90ac94a11",
+            "bytes": 5948
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_feature_mask_01.png",
+            "sha256": "233aafa96b74848d19a972c22a5d16fbdb1f56208a04f88231c8f49db3d3f757",
+            "bytes": 8381,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/feature_extract_report.json",
+            "sha256": "671fd84bc1c34cd3f4b01d67db8f344ef59dceb1e35554d34baa706cad698a74",
+            "bytes": 6643
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/oneface_combined.png",
+            "sha256": "9aae31624ad3c6f8d71ef3a9243d98dacb8b787c9c75f2477b32c81be6b5d16b",
+            "bytes": 36216,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "1740ad6a5198b57bd4149d2fbfd82188c62e79c4624075ec84315bf60f44e0fe",
+              "bytes": 124470,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "9e72ed1f01b4893a674f75fbd786b1f0fd62b2b0c034ab2401b3f49428b56d91",
+              "bytes": 124398,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "5ff6c9df202fcf23afc2fa5ddc200c20ce6396e7a5f1e274a24fa40f41e24626",
+              "bytes": 124626,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "2cdaef97ff92611cf5071b059ba429590ee81668560dc4de57466d81fe2afb95",
+              "bytes": 124634,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "249cf67398f2a0eabf87826e173b18294d73f3f5a2e68efee98d5759a2c2d8b2",
+              "bytes": 124818,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_sad_repair_expansion01.png",
+            "sha256": "a54ec1f8bd0230a0a1cffe9af00b896fc4693dfbbefde017650cb0b5ef22f36b",
+            "bytes": 22142,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_native768_01.png",
+            "sha256": "ebdecea57cbd32874465c04ab8502c7f4a395840bfd4eb9fde9474e370fce0bd",
+            "bytes": 459802,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_u00_01.png",
+            "sha256": "b597fa1a471f528bffdb296c065397d10662039f0700091d37b689b3e2e9ccdc",
+            "bytes": 1228375,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_sad_five_state_layer_manifest_01.json",
+            "sha256": "81634125415fff77293ecfc9c70024d6e6b5dffc0880c38c36635beaa7f8d5c3",
+            "bytes": 12929
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_sad_five_state_01.psd",
+            "sha256": "b57017810d6bead222be276def25e2ff05a78ec4f8cc2ab25ab33478aa6ae76c",
+            "bytes": 16057032
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_sad_five_state_psd_preview_01.png",
+            "sha256": "1ea328f5a617e1eaa82c23be0ecb38eb5e5a2ddb5f7a684862384c9f1c8a516d",
+            "bytes": 720897,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "smile": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_smile_imagegen_01.png",
+            "sha256": "107094215d17befb35ff10bb05c9fae6634b9a2f7e9801cea0899ccaf22dac5b",
+            "bytes": 1801114,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_smile_01.txt",
+            "sha256": "4ec3deae749f922c590f02905fe20769b9e484c0525323fef0a191483d27302c",
+            "bytes": 1859
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_feature_definition_01.json",
+            "sha256": "f291894ff6732c628952aee2cb1f4547d8cf6c43f9b009122ef489128165e4d4",
+            "bytes": 6052
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_feature_mask_01.png",
+            "sha256": "c3ad728adab96e7d59c1b8c103865d2d58abf6261bd7eaff87d150dd61ea80d0",
+            "bytes": 8292,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/feature_extract_report.json",
+            "sha256": "7b705979727a1ed15ba424756e2e0b005cd2d736eb6e807ba529a6ea77f30764",
+            "bytes": 6667
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/oneface_combined.png",
+            "sha256": "d93b9525a86558e484d783f0c4c511bd34b5fb3e3314f79c1cfdeb173bc531d4",
+            "bytes": 35615,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "86bf8f734176e4b7c834f40c42fca2253a69ffc93eb359a313f4dea0e6145361",
+              "bytes": 124636,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "2e70c8cb088a8d911ffee1f26a443678fe35028e35b66f0ae7aebaea0f789248",
+              "bytes": 124048,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "9d933295ab85ed8b15ca3c0204af64650da48ef1a0bde9045230f2b90a7e59a2",
+              "bytes": 124353,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "8e2374a229590c35cdacc0f9d6129dfe934398f2c89f3759b021c608ca1e6ddc",
+              "bytes": 124394,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "231a86294ac91c1a1feba90734d3c1fd4ab1fbfe2f00efdb85dd2150ec49e8ff",
+              "bytes": 124569,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_smile_repair_expansion01.png",
+            "sha256": "6afd0b8e2bbde74f50bf74ea6d8fb214f088c8c7ca5a1945ad8f70ee1ee08e65",
+            "bytes": 22034,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_native768_01.png",
+            "sha256": "23c245519721f0b71616db81f6c4fb638bc4e776a66d0f22a8c0fb486281f7ea",
+            "bytes": 459534,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_u00_01.png",
+            "sha256": "79a76e62a7dfa42a8f3a63650e6945e164bdc1cf871877453afa55e922987a31",
+            "bytes": 1228564,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_smile_five_state_layer_manifest_01.json",
+            "sha256": "dc0121de43bf8f600fd9f64798f658427647c55d0d614853d4996f8a2391291d",
+            "bytes": 12929
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_smile_five_state_01.psd",
+            "sha256": "63e3b2cf3840f921eabce7f59440a4769d938d253b9ba766d94ae893303f801d",
+            "bytes": 16057032
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_smile_five_state_psd_preview_01.png",
+            "sha256": "f918751b10c552df4b01a8e0f7ed560aae469e9ff5b938fe6c37b3a837c6cc32",
+            "bytes": 720349,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        },
+        "angry": {
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_angry_imagegen_01.png",
+            "sha256": "60b029fc19855e828f41097c20b828515efd694710588197b6eaa7a07f251027",
+            "bytes": 1768742,
+            "size_px": [
+              1254,
+              1254
+            ],
+            "mode": "RGB"
+          },
+          "prompt": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_angry_01.txt",
+            "sha256": "f88d096f5765e1d5f8349d93e573434de543a879bc4e264c054c64fb9ba5f7ab",
+            "bytes": 1880
+          },
+          "feature_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_feature_definition_01.json",
+            "sha256": "b90f42b7806437d25d70f7cc8a0f560f5fc8582ef099dbfa46dddccf90868517",
+            "bytes": 6101
+          },
+          "feature_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_feature_mask_01.png",
+            "sha256": "cb9609f0658fcc12ccf60fd6365c187625ac7f40fd8211f7704ea98a2f674879",
+            "bytes": 8792,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "feature_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/feature_extract_report.json",
+            "sha256": "a9a13f01d1d075c8b1584be7a8116f941009adf4a1f2ec4857a8e36cbe75c26d",
+            "bytes": 6667
+          },
+          "oneface_source256": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/oneface_combined.png",
+            "sha256": "2ae78fc126a4b0b32a66859e033b6184d40e22fb23b6a6990c8896f726798221",
+            "bytes": 38426,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/semantic_layers/01_left_brow.png",
+              "sha256": "681c2307cbfc8c54e8d967aaa2b2263366ed383ed95d375128fc9e6658feb501",
+              "bytes": 122901,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/semantic_layers/02_right_brow.png",
+              "sha256": "7d2ed6bfdce2693fdd22c340077cb0aacdef0d61be9365b39126309326ff2ced",
+              "bytes": 122715,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/semantic_layers/03_left_eye.png",
+              "sha256": "290feaf974aafd286020e3ae4bdb0fc9cf56805b196cedb725f116fe1ee97591",
+              "bytes": 122597,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/semantic_layers/04_right_eye.png",
+              "sha256": "2b8853da57088b0ce9d8ffb5ac93c3675017be33f1d72aa109b83b5a25a38119",
+              "bytes": 122481,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_extract_01/semantic_layers/05_mouth.png",
+              "sha256": "68d560e16da37084de8141673dc423995d2af494f63260c5d7120f47c17fb906",
+              "bytes": 122887,
+              "size_px": [
+                256,
+                256
+              ],
+              "mode": "RGBA"
+            }
+          ],
+          "native_face192": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_face_angry_repair_expansion01.png",
+            "sha256": "9483478a3dcfb4f59ed7d112c0e6403f528a36182efafb97d4ce2feea514aff2",
+            "bytes": 24052,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "native_portrait768": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_native768_01.png",
+            "sha256": "b8d039dc0e293d9bb766e0b44b4602fb25e57c8d07dd12317c4377befa538c4c",
+            "bytes": 459447,
+            "size_px": [
+              768,
+              768
+            ],
+            "mode": "RGBA"
+          },
+          "u00_1280x720": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_u00_01.png",
+            "sha256": "3682416a8f4bdb73ac82236b792624a037147f133af91b1c23f2bc11f61fc2ff",
+            "bytes": 1227604,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "five_state_psd_manifest": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_angry_five_state_layer_manifest_01.json",
+            "sha256": "23313d0c36ed1078a013338fd6abaf18edf2c083ab7ab5ebc187c68c60eb3ad3",
+            "bytes": 12929
+          },
+          "five_state_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/u04_xj_s0_angry_five_state_01.psd",
+            "sha256": "117e6440c772a87068a53fcd246a767169f925006673a29018015f581894ef6d",
+            "bytes": 16057032
+          },
+          "psd_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_angry_five_state_psd_preview_01.png",
+            "sha256": "b1060f617e6745271d2e26f75a935ce399bf915fb342d6e2953c07f847f767e9",
+            "bytes": 720264,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "validation": {
+            "psd_layer_count": 43,
+            "only_this_state_visible": true,
+            "old_states_hidden": true,
+            "front_count": 1,
+            "native_roi_outside_old_base_rgba_diff_pixels": 0,
+            "psd_preview_max_channel_delta": 2
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "execution_id": "resume_20261017",
+  "stage": "AT_S0",
+  "state": "sad",
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+  "candidate_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+  "assessment": "CANDIDATE_ONLY_PENDING_REGISTRATION_AND_RECOMPOSITION",
+  "observations": [
+    "眉眼嘴在脸部中心呈联动的低落神情，嘴线较旧版自然；琥珀瞳、半垂眼、头向和阿棠辨识度初看保留。",
+    "生成图为1254×1254 RGB；脸框外侧发丝/衣肩边出现黑区及彩色噪边，不能整图替换旧ROI或作为正式切片。",
+    "眼、口及脸轮廓需在原256脸框配准后复核；候选蒙版、ROI外RGBA零差、同尺度重组、PSD均未测试。"
+  ],
+  "next_action": "交Master独立看图；技术支持仅在批准脸框内做配准与遮罩候选检查，未通过不扩其余样张。"
+}

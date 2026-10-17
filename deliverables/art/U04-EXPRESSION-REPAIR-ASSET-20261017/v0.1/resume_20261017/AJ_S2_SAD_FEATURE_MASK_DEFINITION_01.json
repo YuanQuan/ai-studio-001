@@ -1,0 +1,481 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "execution_id": "resume_20261017_expansion",
+  "stage": "AJ_S2",
+  "state": "sad",
+  "face_source_rect_xyxy": [
+    365,
+    130,
+    621,
+    386
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "method": "Art-authored feature-only polygons for candidate eyebrows, eyes/cheeks, minor nose and mouth; same-stage frozen foundation base/front. No broad skin rectangle or generated periphery.",
+  "background_sampling_constraints": [
+    "Outside union mask alpha zero; use clean frozen foundation.",
+    "Hair silhouette and jaw/ear from existing base/front, not generated candidate.",
+    "Real U00 same-scale image requires separate Art judgment."
+  ],
+  "foundation_definition_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AJ_S2_FOUNDATION_DEFINITION_06.json",
+  "foundation_definition_sha256": "7ef9fda12fb9ee7c74ecb2e7d38e701fcffd79709a5a1e2fe6efaa164ac89e72",
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+  "candidate_sha256": "82f79a3d7d92e66d0feb868965cb4bbb7088af23fa751018ed1719075a87a45a",
+  "old_oneface_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_sad.png",
+  "old_oneface_usage": "read-only provenance; old expression pixels discarded",
+  "regions": [
+    {
+      "name": "LEFT_BROW",
+      "local_polygon_xy": [
+        [
+          30,
+          76
+        ],
+        [
+          54,
+          72
+        ],
+        [
+          79,
+          77
+        ],
+        [
+          100,
+          91
+        ],
+        [
+          102,
+          102
+        ],
+        [
+          85,
+          100
+        ],
+        [
+          59,
+          91
+        ],
+        [
+          34,
+          98
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          395,
+          206
+        ],
+        [
+          419,
+          202
+        ],
+        [
+          444,
+          207
+        ],
+        [
+          465,
+          221
+        ],
+        [
+          467,
+          232
+        ],
+        [
+          450,
+          230
+        ],
+        [
+          424,
+          221
+        ],
+        [
+          399,
+          228
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_BROW",
+      "local_polygon_xy": [
+        [
+          113,
+          62
+        ],
+        [
+          126,
+          48
+        ],
+        [
+          158,
+          39
+        ],
+        [
+          185,
+          43
+        ],
+        [
+          199,
+          61
+        ],
+        [
+          188,
+          73
+        ],
+        [
+          158,
+          58
+        ],
+        [
+          128,
+          67
+        ],
+        [
+          118,
+          79
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          478,
+          192
+        ],
+        [
+          491,
+          178
+        ],
+        [
+          523,
+          169
+        ],
+        [
+          550,
+          173
+        ],
+        [
+          564,
+          191
+        ],
+        [
+          553,
+          203
+        ],
+        [
+          523,
+          188
+        ],
+        [
+          493,
+          197
+        ],
+        [
+          483,
+          209
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "LEFT_EYE_CHEEK",
+      "local_polygon_xy": [
+        [
+          36,
+          97
+        ],
+        [
+          57,
+          90
+        ],
+        [
+          92,
+          98
+        ],
+        [
+          112,
+          117
+        ],
+        [
+          112,
+          139
+        ],
+        [
+          96,
+          151
+        ],
+        [
+          62,
+          143
+        ],
+        [
+          40,
+          132
+        ],
+        [
+          31,
+          111
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          401,
+          227
+        ],
+        [
+          422,
+          220
+        ],
+        [
+          457,
+          228
+        ],
+        [
+          477,
+          247
+        ],
+        [
+          477,
+          269
+        ],
+        [
+          461,
+          281
+        ],
+        [
+          427,
+          273
+        ],
+        [
+          405,
+          262
+        ],
+        [
+          396,
+          241
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_EYE_CHEEK",
+      "local_polygon_xy": [
+        [
+          110,
+          76
+        ],
+        [
+          133,
+          67
+        ],
+        [
+          167,
+          68
+        ],
+        [
+          205,
+          78
+        ],
+        [
+          213,
+          101
+        ],
+        [
+          205,
+          124
+        ],
+        [
+          183,
+          142
+        ],
+        [
+          147,
+          143
+        ],
+        [
+          119,
+          122
+        ],
+        [
+          110,
+          100
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          475,
+          206
+        ],
+        [
+          498,
+          197
+        ],
+        [
+          532,
+          198
+        ],
+        [
+          570,
+          208
+        ],
+        [
+          578,
+          231
+        ],
+        [
+          570,
+          254
+        ],
+        [
+          548,
+          272
+        ],
+        [
+          512,
+          273
+        ],
+        [
+          484,
+          252
+        ],
+        [
+          475,
+          230
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "NOSE_MINOR",
+      "local_polygon_xy": [
+        [
+          106,
+          129
+        ],
+        [
+          116,
+          127
+        ],
+        [
+          128,
+          139
+        ],
+        [
+          125,
+          157
+        ],
+        [
+          113,
+          162
+        ],
+        [
+          104,
+          148
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          471,
+          259
+        ],
+        [
+          481,
+          257
+        ],
+        [
+          493,
+          269
+        ],
+        [
+          490,
+          287
+        ],
+        [
+          478,
+          292
+        ],
+        [
+          469,
+          278
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "MOUTH",
+      "local_polygon_xy": [
+        [
+          108,
+          155
+        ],
+        [
+          126,
+          150
+        ],
+        [
+          155,
+          151
+        ],
+        [
+          173,
+          160
+        ],
+        [
+          178,
+          178
+        ],
+        [
+          160,
+          187
+        ],
+        [
+          124,
+          186
+        ],
+        [
+          106,
+          178
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          473,
+          285
+        ],
+        [
+          491,
+          280
+        ],
+        [
+          520,
+          281
+        ],
+        [
+          538,
+          290
+        ],
+        [
+          543,
+          308
+        ],
+        [
+          525,
+          317
+        ],
+        [
+          489,
+          316
+        ],
+        [
+          471,
+          308
+        ]
+      ],
+      "edge_feather_px": 2
+    }
+  ],
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_sad_feature_mask_01.png",
+  "mask_sha256": "d72c72f8b3b7244332d07dabff2e9b65d09785c1a3a2c3e93c751277eb14ea3b",
+  "status": "ART_MASK_DEFINITION_FOR_TECHNICAL_COMPOSITION"
+}

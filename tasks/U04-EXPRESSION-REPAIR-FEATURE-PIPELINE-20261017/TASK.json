@@ -1,0 +1,41 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017",
+  "title": "表情透明五官提取与重组支持修正",
+  "type": "tech",
+  "owner": "client",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "针对实际AT候选肤色贴片接缝，以Art语义多边形提取新透明五官，沿用空白旧base与front合成，按真实像素核验边界；不生成新美术、不接入客户端。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/RESUME_AUTHORIZATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AT_S0_SAD_FEATURE_MASK_DEFINITION.json"
+  ],
+  "deliverables": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "工具使用真实旧坐标/缩放和获准ROI，合成保护ROI外像素与清边alpha，保留旧文件；不得用几何嘴或五官变形制作新表情。",
+    "支持Art输入单态新候选与语义遮罩、base/face/front导出及PSD显隐/重组验证，报告可编辑限制；失败拒绝输出不伪造PASS。",
+    "有可复核使用说明和适当旧资源/合成边界检查，无Client正式资产或代码修改；脚本只位于本任务pipeline目录。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "2026-10-17T12:15:19+08:00 Master依据Art真实失败重组创建必要内部支持任务，原DONE工具版本保留。",
+    "编码使用gpt-6-luna/low；仅新任务deliverables/client目录实现，不写apps/client。",
+    "允许复制原工具至本任务pipeline后修正，原代码不改，已在原位置起草的本轮修改由Owner迁移并恢复其旧版本。",
+    "遵循Art mask，不自行定义画风或图形；生产代码与依赖不得引入新生图调用。",
+    "Master FEATURE_PIPELINE_MASTER_ACCEPTANCE.json APPROVED，内部确定性支持DONE；不代表六样或Gate2用户批准。"
+  ]
+}

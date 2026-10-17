@@ -802,3 +802,12 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 
 最终接受 2026-10-17T11:04:23+08:00：Master `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FLOW_ACCEPTANCE.json` APPROVED，FLOW内部支持DONE。当前Art/本批Master阶段/旧总体检查点仍USER_REVIEW，具体Gate2未获批准；Tech DONE；无READY/IN_PROGRESS空挂，未接入或扩批。正式监督检查10:43:12至11:03:14共1202秒；至最终接受登记11:04:23总历时1271秒，末69秒为接受/收尾登记区间，精确执行与等待拆分未知。
 <!-- MINIGAME-ART-OPT-PILOT-20261017-FINAL END -->
+
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 START -->
+## U04 表情修正恢复执行审批｜2026-10-17T14:25:45+08:00
+- Gate1：Art v0.2 USER_APPROVED；用户“恢复”沿用同版内置路线，非新增方案批准。
+- Gate2：准确Art v0.1审核包 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md` SHA `9507a1b15c98024022b3fe6b505542db13b27f55f6a0903118b8689971fb4ed9`；Manifest SHA `91d3d890aa1236e6f8545efb3078b8119c84d95419bf797d61b131e2a7eebd4a`；总板SHA `890a022362659396a4f25b1287ba95a3cbf59a24b76f971d42cdc1065ef82ff0`。Master `GATE2_PACKAGE_ACCEPTANCE.json`仅批准提交资格，`GATE2_PACKAGE_IDENTITY.json`冻结身份。主Art与ADXJ/MTAT Task及Approval均`USER_REVIEW`；**用户决定空、未USER_APPROVED**。Client正式导入锁，UUID未生成。
+- 六样与余24态为内部生产门禁；Tech静态APPROVED和两编码helper内部接受不代Gate2用户决定。
+- Tech现行30态静态支持经Master `TECH_FINAL_SUPPORT_ACCEPTANCE.json` 内部接受，Task DONE/PROFESSIONAL_REVIEW；Producer本轮流程包REVIEW待内部接受。两者均不代替Art v0.1 Gate2用户决定。
+- Producer最终流程包经Master `PRODUCER_FINAL_SUPPORT_ACCEPTANCE.json`内部接受，Task DONE/PROFESSIONAL_REVIEW；Gate2 Art v0.1 USER_REVIEW用户决定仍空，不能据此导入Client。
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 END -->

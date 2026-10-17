@@ -1,0 +1,39 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017",
+  "owner": "client",
+  "summary": "交付按Art明确source ROI、mask与样点运行的确定性底层清理支持工具；含获批原画局部RGB恢复、XJ眼镜前景绑定核验、真实AC/AD/XJ单例报告及失败拒覆盖边界检查。视觉判断保留给Art/Master。",
+  "artifacts": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FOUNDATION-PIPELINE-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "仅按Art已定义的局部修复mask、原坐标和确定性补洞来源清base或擦front，原文件只读，mask外全部RGBA保持不变，不以几何嘴或五官变形生成情绪。",
+      "result": "PASS",
+      "evidence": "AC v04、AD v02、XJ v02 操作均严格按 Art ROI/mask/samples/显式来源；cleanup_report 核出 base mask union 外、front erase mask 外、source ROI 外 RGBA 零差，base alpha unchanged。XJ 原 front ROI 与 Art derived_roi_front RGBA 零差。"
+    },
+    {
+      "criterion": "实际输入与mask/邻域来源、输出哈希和像素差异有记录，坏输入和覆盖拒绝不落半成品；不自动决定美术清理区域或视觉通过。",
+      "result": "PASS",
+      "evidence": "各实际运行报告绑定定义、源层、mask、样点与输出SHA。对坏base路径、非法ROI、hair source SHA不符的真实失败返回2且目标不存在；对已有 AC 输出拒绝覆盖并逐文件核 SHA 不变。"
+    },
+    {
+      "criterion": "提供可复用命令及实际AC或其他批准阶段的单例检查证据，代码只在本任务pipeline目录，不改apps/client或其他Task已接受源码。",
+      "result": "PASS",
+      "evidence": "本 Task pipeline 下脚本 py_compile 通过，AC v04/AD v02/XJ v02 单例实际运行并输出可复核图片/JSON；AC v02 cleanup_01 已按 Art 结论记为 REJECTED 诊断，未声称视觉通过。源码仅本 Task pipeline 有变更；未改 apps/client、其他 Task 源码或 Art 输入。"
+    }
+  ],
+  "assumptions": [
+    "Art定义中的mask和样点是清理范围与采样来源的唯一权威；工具不推导其美术含义。",
+    "全源图输出仅作为内部清理检查；正式Art资产由Art落版并另行审核。"
+  ],
+  "risks": [
+    "AC v04当前定义标记DRAFT_FOR_TOOL_PREVIEW；本次输出不能代替Art/Master视觉确认。",
+    "此前AC v02 cleanup_01已被Art拒绝，说明局部肤色插值不能恢复被旧空白块遮挡的头发；现通过显式同坐标hair_recovery处理，但边缘效果仍需人审。",
+    "本工具未生成原生192px导出；全源1024 ROI外零差不自动等价于经过重采样的导出ROI外零差。",
+    "MT草案已撤回且未执行；AJ阶段未运行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

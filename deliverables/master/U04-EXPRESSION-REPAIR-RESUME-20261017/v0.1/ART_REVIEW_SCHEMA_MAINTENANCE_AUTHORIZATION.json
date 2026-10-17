@@ -1,0 +1,15 @@
+{
+  "authorized_by": "master",
+  "actor": "art_parent_owner",
+  "scope": "同角色子交付的正式Review格式归一，保留原完整自检记录，不改变实际检查或门禁。",
+  "basis": "AGENTS.md 第7节：评审符合schemas/review.schema.json；第5节跨职责/子任务文件维护需明确授权。",
+  "targets": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/FINAL_ART_REVIEW.json"
+  ],
+  "requirements": [
+    "原丰富检查数据保留独立不可丢失的details文件，正式Review仅五字段并引用细节。",
+    "Required名称与验收原文字序不改；相关artifact清单和SHA同步。",
+    "不改变已过盲辨像素，不新增自产切片专业复审或用户门禁，不把内部自检写为用户批准。"
+  ]
+}

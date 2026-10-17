@@ -1,0 +1,110 @@
+{
+  "stage": "MT_S2",
+  "source_roi_xyxy": [
+    360,
+    100,
+    616,
+    356
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "existing_base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s2_clean_face_integrated.png",
+  "existing_base_sha256": "49795c0018bd319e67af94498d985c6404f45924623463fb0498619e8478a5d5",
+  "existing_front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s2_front_hair_integrated.png",
+  "existing_front_sha256": "e38f99495ba8ee1f32e2d268254e3d4f199eaae4b420ff95abd3dc3ecf6d026b",
+  "base_repair_regions": [],
+  "front_erase_regions": [
+    {
+      "name": "right_old_lash_tail",
+      "polygon": [
+        [
+          206,
+          128
+        ],
+        [
+          233,
+          129
+        ],
+        [
+          239,
+          146
+        ],
+        [
+          227,
+          162
+        ],
+        [
+          211,
+          158
+        ]
+      ]
+    }
+  ],
+  "protected_visual_regions": [
+    {
+      "name": "right_hair_and_face_contour",
+      "polygon": [
+        [
+          194,
+          0
+        ],
+        [
+          255,
+          0
+        ],
+        [
+          255,
+          210
+        ],
+        [
+          232,
+          185
+        ],
+        [
+          228,
+          160
+        ],
+        [
+          235,
+          143
+        ],
+        [
+          220,
+          112
+        ],
+        [
+          200,
+          98
+        ]
+      ]
+    }
+  ],
+  "masks": {
+    "base_repair": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_foundation_base_repair_01.png",
+      "sha256": "7f71b9db84609211e5604ae02ff4590933afb52115af3a24a93d7289c3d66350",
+      "alpha_nonzero_pixels": 0
+    },
+    "front_erase": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_foundation_front_erase_01.png",
+      "sha256": "31a6188608a849e023a769654538ff35880aebdf48fcf20612177dcaa1bb6c83",
+      "alpha_nonzero_pixels": 1131
+    },
+    "protect_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_foundation_protect_review_01.png",
+      "sha256": "bae1326003ebc406ea5889d0bfc300a1c84d5605a8eec65a2e7ef2b2cb32e7d8",
+      "alpha_nonzero_pixels": 9095
+    }
+  },
+  "skin_sampling_rule": "不修base；只擦旧front右外眼重叠睫毛，保留右侧卷发和脸缘线。若protect与擦除mask相交后旧睫毛仍在，须Art看图微调，不能自动扩大。",
+  "hard_constraints": [
+    "仅源ROI内可改变base/front；ROI外RGBA逐像素零差。",
+    "旧眉眼口应从front消失且不透明肤底不能再挡新五官；新五官与hair/front互斥显示。",
+    "发丝/耳/脸轮廓线/鼻及原身体衣物必须从现行层保留；若擦除与保护区域冲突需逐像素看图，不能粗暴整多边形擦除。",
+    "候选新图仅用于已登记的五官语义mask，不可整脸覆盖。"
+  ],
+  "status": "ART_REJECTED_DO_NOT_EXECUTE",
+  "correction": "实际逐层放大证实front仅含红发束，无旧右眼睫毛；深色外眼/脸边线亦在获批原脸和候选中，属于角色设计。禁止应用此处front擦除mask。"
+}

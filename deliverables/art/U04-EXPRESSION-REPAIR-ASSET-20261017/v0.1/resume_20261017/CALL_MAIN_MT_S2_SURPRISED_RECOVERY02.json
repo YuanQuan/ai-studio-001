@@ -1,0 +1,54 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-mt_s2-surprised-recovery02",
+  "owner": "main_art",
+  "stage": "MT_S2",
+  "state": "surprised",
+  "attempt_kind": "controlled_new_recovery_attempt",
+  "old_unknown_preserved": "original MT failure counted as 1, no ID/path; not retried or overwritten",
+  "recovery_review_path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MT_RECOVERY_REVIEW.json",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T12:31:21+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 24,
+    "main_art_counted_before": 4,
+    "main_art_if_sent": 5,
+    "global_known_before_excluding_parallel_adxj": 4,
+    "repair_pool_charge": 1
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_surprised_recovery02_input_256.png",
+  "unique_input_sha256": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "input_mode": "RGBA",
+  "approved_source_crop_decoded_rgba_diff_pixels": 0,
+  "source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+  "source_rect_xyxy": [
+    360,
+    100,
+    616,
+    356
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_surprised_prompt_recovery02.txt",
+  "prompt_sha256": "f3ce5c989f7c7668a620649538838bd1ef21a8fa1dd5e1152e8ab8544088adbe",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "已实际查看获批256原脸与旧surprised透明脸图；红发卷度、红眼非镜像透视、耳钉、脸型/头向冻结。",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-e4abcc20-93c3-443c-97f4-bc12845a2137.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+  "output_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T12:32:12+08:00",
+  "main_art_counted_after": 5,
+  "visual_candidate_note": "惊讶可辨：眼睑睁大、眉上扬、嘴微张，原红发/耳饰/头向身份大体保留；小圆口接近几何O形须经256与实际缩放审查，外围只可局部提取。"
+}

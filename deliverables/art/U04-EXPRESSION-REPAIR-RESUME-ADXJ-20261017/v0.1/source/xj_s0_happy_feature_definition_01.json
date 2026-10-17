@@ -1,0 +1,329 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+  "stage": "XJ_S0",
+  "state": "happy",
+  "face_source_rect_xyxy": [
+    330,
+    223,
+    586,
+    479
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+  "candidate_sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+  "old_oneface_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_256.png",
+  "old_oneface_usage": "read-only provenance; old expression features discarded",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_feature_mask_01.png",
+  "mask_sha256": "cce61f3f34f07f20876241753a4ebf2f2035a49f751269ff3e60281703903b4b",
+  "regions": [
+    {
+      "name": "LEFT_BROW",
+      "local_polygon_xy": [
+        [
+          49,
+          29
+        ],
+        [
+          59,
+          23
+        ],
+        [
+          81,
+          27
+        ],
+        [
+          105,
+          39
+        ],
+        [
+          112,
+          55
+        ],
+        [
+          108,
+          65
+        ],
+        [
+          89,
+          57
+        ],
+        [
+          58,
+          42
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          379,
+          252
+        ],
+        [
+          389,
+          246
+        ],
+        [
+          411,
+          250
+        ],
+        [
+          435,
+          262
+        ],
+        [
+          442,
+          278
+        ],
+        [
+          438,
+          288
+        ],
+        [
+          419,
+          280
+        ],
+        [
+          388,
+          265
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "LEFT_EYE",
+      "local_polygon_xy": [
+        [
+          55,
+          76
+        ],
+        [
+          71,
+          68
+        ],
+        [
+          89,
+          72
+        ],
+        [
+          101,
+          84
+        ],
+        [
+          104,
+          104
+        ],
+        [
+          95,
+          121
+        ],
+        [
+          75,
+          124
+        ],
+        [
+          58,
+          116
+        ],
+        [
+          51,
+          99
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          385,
+          299
+        ],
+        [
+          401,
+          291
+        ],
+        [
+          419,
+          295
+        ],
+        [
+          431,
+          307
+        ],
+        [
+          434,
+          327
+        ],
+        [
+          425,
+          344
+        ],
+        [
+          405,
+          347
+        ],
+        [
+          388,
+          339
+        ],
+        [
+          381,
+          322
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "RIGHT_EYE",
+      "local_polygon_xy": [
+        [
+          150,
+          102
+        ],
+        [
+          166,
+          96
+        ],
+        [
+          193,
+          96
+        ],
+        [
+          213,
+          101
+        ],
+        [
+          214,
+          117
+        ],
+        [
+          197,
+          124
+        ],
+        [
+          170,
+          122
+        ],
+        [
+          151,
+          116
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          480,
+          325
+        ],
+        [
+          496,
+          319
+        ],
+        [
+          523,
+          319
+        ],
+        [
+          543,
+          324
+        ],
+        [
+          544,
+          340
+        ],
+        [
+          527,
+          347
+        ],
+        [
+          500,
+          345
+        ],
+        [
+          481,
+          339
+        ]
+      ],
+      "edge_feather_px": 2
+    },
+    {
+      "name": "MOUTH",
+      "local_polygon_xy": [
+        [
+          112,
+          158
+        ],
+        [
+          128,
+          154
+        ],
+        [
+          153,
+          154
+        ],
+        [
+          176,
+          159
+        ],
+        [
+          177,
+          176
+        ],
+        [
+          165,
+          195
+        ],
+        [
+          137,
+          201
+        ],
+        [
+          115,
+          189
+        ],
+        [
+          109,
+          173
+        ]
+      ],
+      "source_polygon_xy": [
+        [
+          442,
+          381
+        ],
+        [
+          458,
+          377
+        ],
+        [
+          483,
+          377
+        ],
+        [
+          506,
+          382
+        ],
+        [
+          507,
+          399
+        ],
+        [
+          495,
+          418
+        ],
+        [
+          467,
+          424
+        ],
+        [
+          445,
+          412
+        ],
+        [
+          439,
+          396
+        ]
+      ],
+      "edge_feather_px": 3
+    }
+  ],
+  "status": "ART_MASK_DEFINITION_V01_FOR_VISUAL_TEST",
+  "notes": "Only candidate feature contours and small connected skin shading are eligible; outside mask retains current working base and original front. No candidate glasses rings or outer black/noise edges allowed."
+}

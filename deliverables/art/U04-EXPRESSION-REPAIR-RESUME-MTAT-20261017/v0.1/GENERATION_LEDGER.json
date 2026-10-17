@@ -1,0 +1,268 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "allocation_cap": 10,
+  "counted": 8,
+  "states": [
+    "MT_S2_happy",
+    "MT_S2_sad",
+    "MT_S2_smile",
+    "MT_S2_angry",
+    "AT_S0_happy",
+    "AT_S0_surprised",
+    "AT_S0_smile",
+    "AT_S0_angry"
+  ],
+  "calls": [
+    {
+      "call_id": "MTAT-01",
+      "stage": "MT_S2",
+      "state": "happy",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "prompt": "Use case: precise expression edit for a layered Chinese mobile game character asset. Edit this exact close-up of Meng Tao (auburn bob hair, red eyes, three-quarter face), preserving camera, face outline, eye spacing, nose position, hair strands, ear, lighting, color palette, scale and registration. Change only her eyebrows, both eyes and mouth to clearly HAPPY: relaxed lifted brows, joy in both eyes with gently raised lower eyelids, a broad natural open delighted smile with hand-painted anime contour. Keep her identity and expression drawing style. This state must read as visibly more joyful than a subtle smile. Do not move, erase or redraw any hair strand or side contour. One image, one expression, square close-up; no labels or text.",
+      "started_at": "2026-10-17T05:29:56.458Z",
+      "generated_file_mtime": "2026-10-17T13:30:20+08:00",
+      "completed_at": "2026-10-17T05:30:20.621Z",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-97566d99-c237-4c3a-8cef-472230e1c766.png",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_happy_mt_at_unit01.png",
+      "candidate_sha256": "7483f2a3e16eaab2c28c2658fdc915023c34d5a55c721c1537e1ee0b23bf1e34",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "明显张口喜悦；轮廓与发束保持，待组层同尺度复核。",
+      "prompt_source": "actual_tool_invocation_text",
+      "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+      "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+      "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+      "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+      "exec_transport_call_id": "call_9b0b0f3fe0db4f32b2b367cac868cf26",
+      "imagegen_request_id": null,
+      "pre_call_registration_missing": true,
+      "time_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-01_tool_call_evidence.txt",
+        "sha256": "6f8e306448a88507bc8427d8000dbe718bb69dd042927deed717375e76f34907"
+      },
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:30:20.575846+08:00"
+    },
+    {
+      "call_id": "MTAT-02",
+      "stage": "MT_S2",
+      "state": "sad",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "prompt": "Precise game asset expression edit of attached Meng Tao close-up. Preserve exact square composition, face registration, nose, red bob hair, ears, coloring and character identity. Change only brows, both eyes and mouth to a SAD expression: inner brows gently lifted and drawn together, both eyes watery and softened with lowered lids, mouth small and downturned. Hand-painted anime line work. No hair modifications. One image only, no text.",
+      "started_at": "2026-10-17T05:30:29.352Z",
+      "generated_file_mtime": "2026-10-17T13:30:52+08:00",
+      "completed_at": "2026-10-17T05:30:52.821Z",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-1822dfc8-b8b7-426c-8dff-b89d74cfb328.png",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_sad_mt_at_unit01.png",
+      "candidate_sha256": "e7b9156aa7f7896a55de7f2c3ade119100dac84eabb319638463a1426584a4e0",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "双眼含泪、两眉与下垂嘴联动；发束保持，待组层同尺度复核。",
+      "prompt_source": "actual_tool_invocation_text",
+      "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+      "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+      "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+      "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+      "exec_transport_call_id": "call_68df6a707fd64265afaa97b3e27a3b18",
+      "imagegen_request_id": null,
+      "pre_call_registration_missing": true,
+      "time_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-02_tool_call_evidence.txt",
+        "sha256": "92e01a9baf6e5f9030d0e6badb4def041e582128e205666310d2e4b70a280491"
+      },
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:30:52.752665+08:00"
+    },
+    {
+      "call_id": "MTAT-03",
+      "stage": "MT_S2",
+      "state": "smile",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "prompt": "Precise expression edit of attached Meng Tao face for a Chinese mobile game. Preserve exact square framing and registration, auburn bob hair, ear, face shape, head angle, red eyes, nose, lighting and hand-painted anime style. Draw SMILE as a restrained warm closed-mouth smile: slightly softened eyes and a tiny curved lip with one modest cheek lift; brows relaxed. This must be visibly subtler than the open HAPPY state. Change only brows, eyes and mouth, not hair or silhouette. One image; no text.",
+      "started_at": "2026-10-17T05:31:58.349Z",
+      "generated_file_mtime": "2026-10-17T13:32:19+08:00",
+      "completed_at": "2026-10-17T05:32:19.585Z",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-21c7cb62-0971-43f8-9b9f-c4c250f5750a.png",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_smile_mt_at_unit01.png",
+      "candidate_sha256": "1800102b292394177aead3776bc4f2e8122aecc653a8872985003b71a67b21e1",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "闭口轻微笑，与happy有明确幅度差，待同尺度复核。",
+      "prompt_source": "actual_tool_invocation_text",
+      "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+      "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+      "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+      "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+      "exec_transport_call_id": "call_2ff6bda105c145e79773c7cb71acc1ab",
+      "imagegen_request_id": null,
+      "pre_call_registration_missing": true,
+      "time_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-03_tool_call_evidence.txt",
+        "sha256": "1bef4a5a54085155b314dd3248405f8a42f3c1c130fd0d9bfcd2fb22c5787ee4"
+      },
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:32:19.425444+08:00"
+    },
+    {
+      "call_id": "MTAT-04",
+      "stage": "MT_S2",
+      "state": "angry",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+      "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+      "prompt": "Precise expression edit of attached Meng Tao face for a Chinese mobile game. Preserve exact square framing and registration, auburn bob hair including forehead strands, ear, cheek contour, head angle, red eyes, nose and lighting. Draw ANGRY: both brows lowered and angled inward in a coherent pair, both upper lids narrowed with firm gaze, controlled tense mouth with an asymmetrical frown. Hand-painted anime expression, clearly anger rather than sadness. Change only brows, eyes, mouth and their immediate skin shading. Do not alter hair or silhouette. One image; no text.",
+      "started_at": "2026-10-17T05:32:57.334Z",
+      "generated_file_mtime": "2026-10-17T13:33:26+08:00",
+      "completed_at": "2026-10-17T05:33:26.475Z",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-04d7ed4e-e9d9-4dae-b3d4-574d17a608d7.png",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_angry_mt_at_unit01.png",
+      "candidate_sha256": "32b4598828bdb67eb5911a8de259d4d37b9ebf24c1f7e2f0c904542f462edacb",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "双眉双眼收紧、紧张下弯嘴，发束轮廓未触碰；待同尺度复核。",
+      "prompt_source": "actual_tool_invocation_text",
+      "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+      "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+      "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+      "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+      "exec_transport_call_id": "call_65b0881b49354f28a77aca4cc6bdf218",
+      "imagegen_request_id": null,
+      "pre_call_registration_missing": true,
+      "time_evidence": {
+        "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-04_tool_call_evidence.txt",
+        "sha256": "fb9c3526d112428e3bfe432d48bdcc94aea3dfc7982fbba3f2574fa22efe5f16"
+      },
+      "source_mtime_support_only_not_time_source": "2026-10-17T13:33:26.440770+08:00"
+    },
+    {
+      "call_id": "MTAT-05",
+      "stage": "AT_S0",
+      "state": "happy",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+      "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+      "prompt": "Precise expression edit of attached A Tang close-up for Chinese mobile game. Keep exact square registration, chestnut curls/bangs, flower and bow, tired under-eye shading, golden eyes, head tilt, facial outline, lighting and identity. Change only eyebrows, both upper/lower eyelids, both eye gaze and mouth into clearly HAPPY: despite naturally sleepy character, eyes brighten and open modestly, brows ease, a visibly broad joyful open smile. More joyful than a subtle closed-mouth smile. No hair, accessory, body or silhouette change; one image, no text.",
+      "reserved_at": "2026-10-17T13:36:45+08:00",
+      "started_at": "2026-10-17T13:36:45+08:00",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_happy_mt_at_unit01.png",
+      "generated_file_mtime": "2026-10-17T13:37:37+08:00",
+      "completed_at": "2026-10-17T13:37:37+08:00",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-c5d0628a-545b-4d00-9bbe-12d0610e441f.png",
+      "candidate_sha256": "265bd1df2e2839bec452b36398992744f2cd804dbfc4bb0cb603f00553dad381",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "疲惫基调上明显张口喜悦、两眼和眉联动；外部黑噪声只在参考外围，不进入面片。",
+      "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+    },
+    {
+      "call_id": "MTAT-06",
+      "stage": "AT_S0",
+      "state": "surprised",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+      "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+      "prompt": "Precise expression edit of attached A Tang close-up; preserve exact square registration, chestnut curls/bangs, tired under-eye shading, golden eyes, head tilt, facial outline and identity. Change only brows, eyes and mouth to SURPRISED: both brows raised, both eyes opened wider despite natural fatigue, pupils attentive, small rounded startled mouth. Keep under-eye tired shading and hair unchanged. One image, no text.",
+      "reserved_at": "2026-10-17T13:38:49+08:00",
+      "started_at": "2026-10-17T13:38:49+08:00",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_surprised_mt_at_unit01.png",
+      "generated_file_mtime": "2026-10-17T13:39:35+08:00",
+      "completed_at": "2026-10-17T13:39:35+08:00",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-cdd0619e-d60c-4bb0-bb5d-7ed85e470939.png",
+      "candidate_sha256": "1f4e23727f13dea21f6584345ebbe50bd3ee76187b8119c51085a5ff82638e0f",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "双眼睁大、两眉抬起、小圆口，疲惫基调仍可辨。",
+      "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+    },
+    {
+      "call_id": "MTAT-07",
+      "stage": "AT_S0",
+      "state": "smile",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+      "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+      "prompt": "Precise edit of attached A Tang close-up. Preserve exact square registration, chestnut curls and bangs, flower/bow, tired under-eye warmth, golden eyes, head tilt and face identity. Draw SMILE: sleepy gentle eyes soften only slightly, eyebrows relax, a small closed-mouth curved smile with minimal cheek lift. It must remain more restrained than HAPPY. Change only brows, eyelids/eyes and mouth; no hair/accessory/outline change. One image, no text.",
+      "reserved_at": "2026-10-17T13:40:32+08:00",
+      "started_at": "2026-10-17T13:40:32+08:00",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_smile_mt_at_unit01.png",
+      "generated_file_mtime": "2026-10-17T13:41:30+08:00",
+      "completed_at": "2026-10-17T13:41:30+08:00",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-e7dedea3-2f6f-41b7-91ce-5acd66ffa6ae.png",
+      "candidate_sha256": "64407bfe8e4027997478541d7939642874b7630e6797179bb0737700bc041a67",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "疲惫半睁眼保留、小幅闭口笑，与happy张口明显区分。",
+      "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+    },
+    {
+      "call_id": "MTAT-08",
+      "stage": "AT_S0",
+      "state": "angry",
+      "kind": "first_candidate",
+      "status": "GENERATED_ART_QA_PENDING",
+      "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+      "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+      "prompt": "Precise edit of attached A Tang close-up. Preserve exact square registration, chestnut curls/bangs, flower/bow, tired under-eye warmth, golden eyes, head tilt, face shape and identity. Draw ANGRY as controlled sleepy irritation: both brows angled down inward, both upper lids narrowed into a firm gaze, a small tense downturned asymmetric mouth. Distinct from sad; retain tired character, no exaggerated rage. Change only brows, eyes and mouth; no hair/accessory/outline change. One image, no text.",
+      "reserved_at": "2026-10-17T13:42:24+08:00",
+      "started_at": "2026-10-17T13:42:24+08:00",
+      "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_angry_mt_at_unit01.png",
+      "generated_file_mtime": "2026-10-17T13:43:14+08:00",
+      "completed_at": "2026-10-17T13:43:14+08:00",
+      "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-c1143923-f916-4831-af2e-109b44c16346.png",
+      "candidate_sha256": "32d95cb8ad47d47303b77a8508afdb84dcbc78a39d0bbf1e541e5c3128797a31",
+      "dimensions_px": [
+        1254,
+        1254
+      ],
+      "visual_observation": "两眉两眼联动收紧、疲惫基调保留；与sad口眼有可见区别。",
+      "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+    }
+  ],
+  "prior_global_count_at_release": 8,
+  "prior_global_repairs_at_release": 2,
+  "release": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json",
+  "time_evidence_limit": "首四次未在调用前预登记，原UNKNOWN在before_recovery快照和每条original字段保留；实际会话工具调用/输出包络已由Master核证恢复，非内部GPU时间。",
+  "time_recovery": {
+    "result": "FIRST_FOUR_OBSERVABLE_ENVELOPES_RECOVERED",
+    "initial_ledger_snapshot": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.before_recovery.json",
+      "sha256": "819c297fed6aa906e01943960b6e055dded0985d33529f520db3dc5a91025e12",
+      "bytes": 14796
+    },
+    "master_evidence": {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY.json",
+      "sha256": "c3e6a470ec67253cdd844ff11ee7d3832c6acd16dfc107fa0c355dbb628d45ac",
+      "bytes": 9153
+    },
+    "master_review": {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY_REVIEW.json",
+      "sha256": "9f7de3ffa0b6a0c5069066f2ae46211559016dec1df8c904eeb42ccd8b99c02f",
+      "bytes": 1501
+    },
+    "scope_limit": "外层exec调用/输出包络，非图像服务内部/GPU/计费时刻；事前登记缺陷继续保留。"
+  }
+}

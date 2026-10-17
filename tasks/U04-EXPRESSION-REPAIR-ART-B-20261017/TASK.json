@@ -27,7 +27,7 @@
   "dependencies": [
     "U04-EXPRESSION-REPAIR-PLAN-20261017"
   ],
-  "status": "BLOCKED",
+  "status": "CANCELLED",
   "approval": "APPROVAL",
   "notes": [
     "Master明确分派独立执行单元，仍使用同批原样张state/ROI/路径，不改批准方案或门禁。",
@@ -35,6 +35,7 @@
     "允许仅写主Art生产目录candidates/中aj_s2/ad_s0/xj_s0前缀实际候选；账本与支持文件只写自身目录。",
     "不参与Client正式接入；资源自产总包Gate2直交用户。",
     "创建时间 2026-10-17T11:41:01+08:00",
-    "2026-10-17T11:43:15+08:00 Art-B 已完成首份Required及三输入源核对；本单元image_gen实际0调用。主Art首调用返回connection failed且结果未知，Master指示暂停本单元新调用；见本单元GENERATION_LEDGER与SAMPLE_ART_REVIEW，故BLOCKED。"
+    "2026-10-17T11:43:15+08:00 Art-B 已完成首份Required及三输入源核对；本单元image_gen实际0调用。主Art首调用返回connection failed且结果未知，Master指示暂停本单元新调用；见本单元GENERATION_LEDGER与SAMPLE_ART_REVIEW，故BLOCKED。",
+    "2026-10-17T12:56:08+08:00 Master取消此旧执行分派（非取消用户资源目标）：原0调用0候选保留历史；AJ由主Art整合执行，AD/XJ由RESUME-ADXJ新正式Task执行，无重叠分派。全球48上限不变。"
   ]
 }

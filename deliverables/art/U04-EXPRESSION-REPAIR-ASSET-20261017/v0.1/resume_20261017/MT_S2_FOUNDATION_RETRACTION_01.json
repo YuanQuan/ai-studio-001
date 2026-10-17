@@ -1,0 +1,17 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "recorded_at": "2026-10-17T12:40:44+08:00",
+  "retracted_definition": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/MT_S2_FOUNDATION_DEFINITION_01.json",
+  "retracted_front_erase_mask": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_foundation_front_erase_01.png",
+  "retracted_front_erase_mask_sha256": "31a6188608a849e023a769654538ff35880aebdf48fcf20612177dcaa1bb6c83",
+  "decision": "DO_NOT_APPLY_MT_FRONT_ERASE",
+  "reason": "旧front实际只有红发束，未含推测的右外眼旧睫毛；深色眼尾与脸边线在获批原脸和新候选中均已存在，是身份透视锚点。此前灰缝归因错误。",
+  "actual_visual_evidence": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_diag_base_right_eye.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_diag_candidate_right_eye.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_diag_front_right_eye.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_diag_approved_right_eye.png"
+  ],
+  "current_recompose_roi": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_surprised_feature_extract_01/recomposed_face_roi.png",
+  "production_instruction": "沿用现行base/front，不执行该草案mask；先同尺度与PSD复核。"
+}

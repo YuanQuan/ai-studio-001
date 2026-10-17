@@ -1,0 +1,108 @@
+{
+  "stage": "AT_S0",
+  "state": "sad",
+  "source_face_rect_xyxy": [
+    380,
+    180,
+    636,
+    436
+  ],
+  "mask_canvas_px": [
+    256,
+    256
+  ],
+  "allowed_change": "眉、眼、嘴及相连脸内皮肤和阴影；其余保留现行base/face/front RGBA",
+  "regions": [
+    {
+      "semantic": "left_brow",
+      "local_xyxy": [
+        7,
+        72,
+        63,
+        110
+      ],
+      "source_xyxy": [
+        387,
+        252,
+        443,
+        290
+      ],
+      "corner_radius_px": 15
+    },
+    {
+      "semantic": "right_brow",
+      "local_xyxy": [
+        86,
+        52,
+        164,
+        91
+      ],
+      "source_xyxy": [
+        466,
+        232,
+        544,
+        271
+      ],
+      "corner_radius_px": 15
+    },
+    {
+      "semantic": "left_eye",
+      "local_xyxy": [
+        8,
+        87,
+        110,
+        155
+      ],
+      "source_xyxy": [
+        388,
+        267,
+        490,
+        335
+      ],
+      "corner_radius_px": 18
+    },
+    {
+      "semantic": "right_eye",
+      "local_xyxy": [
+        93,
+        82,
+        201,
+        155
+      ],
+      "source_xyxy": [
+        473,
+        262,
+        581,
+        335
+      ],
+      "corner_radius_px": 22
+    },
+    {
+      "semantic": "mouth_and_skin",
+      "local_xyxy": [
+        74,
+        146,
+        136,
+        187
+      ],
+      "source_xyxy": [
+        454,
+        326,
+        516,
+        367
+      ],
+      "corner_radius_px": 16
+    }
+  ],
+  "edge": "五区域并集，256尺度4px Gaussian feather；原oneface中alpha>10的全部五官像素在mask alpha>=250区域内。",
+  "old_oneface_alpha_positive_pixels": 7855,
+  "old_feature_pixels_mask_below_250": 0,
+  "mask_sha256": "e7007ba545b268b9a21b008fabc44f33789816c33f01e89b6ac5aeb5b3a9fc3a",
+  "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_semantic_mask_02.png",
+  "spec_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_compose_spec_01.json",
+  "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+  "candidate_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+  "revision_from": "at_s0_sad_semantic_mask_01.png",
+  "revision_reason": "初稿上缘43个旧五官像素未获足量遮盖，扩大左眼上缘以避免残影。",
+  "note": "只为遮罩修正，无新生图调用；通过同尺度实图后再判视觉结论。"
+}

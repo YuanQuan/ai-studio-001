@@ -1,0 +1,286 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "reviewer": "tech_lead",
+  "scope": "AD_S0/XJ_S0 各五态扩批静态技术核验；只核已落盘十态，不代替 Art 视觉、Gate2 用户审批、Client 接入或 QA。",
+  "source_reports": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/five_state_psd_native_validation_01.json",
+      "sha256": "e5f1258a1b82da757ba4b53cc84aab97927793cf059b7eb5aa3ccde940856bdd"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/native_u00_recompose_report_01.json",
+      "sha256": "4c1b984b18db063e1f2d1d4940a24b722b6aa6539fefed270303fe5d5772e600"
+    }
+  ],
+  "method": "独立读取每态 PSD 实际帧、标签、可见标志、裁切层像素；逐一核报告绑定的六类文件 SHA；比较可见新语义层的 alpha 与非透明 RGB；PSD 嵌入 composite 与缓存 preview；以冻结 base+当前 face+冻结 front 重组原生 768，并比较脸片矩形外；按既有 nine-slice/背景/portrait 缩放/文字重算 U00。",
+  "results": {
+    "states_checked": 10,
+    "all_bound_hashes_match": true,
+    "all_psd_43_layers": true,
+    "all_legacy_hidden": true,
+    "all_exactly_one_base_and_front": true,
+    "all_semantic_layer_alpha_and_visible_rgb_zero_diff": true,
+    "all_psd_embedded_vs_preview_rgb_zero_diff": true,
+    "all_native768_recomposition_alpha_visible_rgb_zero_diff": true,
+    "all_outside_face_rectangle_vs_frozen_base_alpha_visible_rgb_zero_diff": true,
+    "all_u00_recomposition_rgb_zero_diff": true,
+    "u00_mapping": {
+      "background_crop_xyxy": [
+        360,
+        0,
+        2180,
+        1024
+      ],
+      "background_resize": [
+        1280,
+        720
+      ],
+      "native_portrait_resize": [
+        570,
+        570
+      ],
+      "native_portrait_position": [
+        10,
+        150
+      ],
+      "panel_nine_slice_size": [
+        1280,
+        195
+      ],
+      "panel_position": [
+        0,
+        525
+      ],
+      "text_positions": [
+        [
+          710,
+          560
+        ],
+        [
+          710,
+          612
+        ]
+      ]
+    }
+  },
+  "states": [
+    {
+      "stage": "ad_s0",
+      "state": "happy",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "HAPPY_NEW / 05_MOUTH",
+        "HAPPY_NEW / 04_RIGHT_EYE",
+        "HAPPY_NEW / 03_LEFT_EYE",
+        "HAPPY_NEW / 02_RIGHT_BROW",
+        "HAPPY_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 1
+    },
+    {
+      "stage": "ad_s0",
+      "state": "surprised",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SURPRISED_NEW / 05_MOUTH",
+        "SURPRISED_NEW / 04_RIGHT_EYE",
+        "SURPRISED_NEW / 03_LEFT_EYE",
+        "SURPRISED_NEW / 02_RIGHT_BROW",
+        "SURPRISED_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "ad_s0",
+      "state": "sad",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SAD_NEW / 05_MOUTH",
+        "SAD_NEW / 04_RIGHT_EYE",
+        "SAD_NEW / 03_LEFT_EYE",
+        "SAD_NEW / 02_RIGHT_BROW",
+        "SAD_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "ad_s0",
+      "state": "smile",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SMILE_NEW / 05_MOUTH",
+        "SMILE_NEW / 04_RIGHT_EYE",
+        "SMILE_NEW / 03_LEFT_EYE",
+        "SMILE_NEW / 02_RIGHT_BROW",
+        "SMILE_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "ad_s0",
+      "state": "angry",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "ANGRY_NEW / 05_MOUTH",
+        "ANGRY_NEW / 04_RIGHT_EYE",
+        "ANGRY_NEW / 03_LEFT_EYE",
+        "ANGRY_NEW / 02_RIGHT_BROW",
+        "ANGRY_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "xj_s0",
+      "state": "happy",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "HAPPY_NEW / 04_MOUTH",
+        "HAPPY_NEW / 03_RIGHT_EYE",
+        "HAPPY_NEW / 02_LEFT_EYE",
+        "HAPPY_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "xj_s0",
+      "state": "surprised",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SURPRISED_NEW / 05_MOUTH",
+        "SURPRISED_NEW / 04_RIGHT_EYE",
+        "SURPRISED_NEW / 03_LEFT_EYE",
+        "SURPRISED_NEW / 02_RIGHT_BROW",
+        "SURPRISED_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "xj_s0",
+      "state": "sad",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SAD_NEW / 05_MOUTH",
+        "SAD_NEW / 04_RIGHT_EYE",
+        "SAD_NEW / 03_LEFT_EYE",
+        "SAD_NEW / 02_RIGHT_BROW",
+        "SAD_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "xj_s0",
+      "state": "smile",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "SMILE_NEW / 05_MOUTH",
+        "SMILE_NEW / 04_RIGHT_EYE",
+        "SMILE_NEW / 03_LEFT_EYE",
+        "SMILE_NEW / 02_RIGHT_BROW",
+        "SMILE_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    },
+    {
+      "stage": "xj_s0",
+      "state": "angry",
+      "hashes_match": true,
+      "psd_layers": 43,
+      "visible_semantic": [
+        "ANGRY_NEW / 05_MOUTH",
+        "ANGRY_NEW / 04_RIGHT_EYE",
+        "ANGRY_NEW / 03_LEFT_EYE",
+        "ANGRY_NEW / 02_RIGHT_BROW",
+        "ANGRY_NEW / 01_LEFT_BROW"
+      ],
+      "visible_base": 1,
+      "visible_front": 1,
+      "visible_legacy": 0,
+      "semantic_layer_alpha_max_diff": 0,
+      "semantic_layer_visible_rgb_max_diff": 0,
+      "psd_embedded_vs_preview_rgb_max_diff": 0,
+      "art_report_native_outside_roi_diff": 0,
+      "art_report_preview_vs_feature_max_diff": 2
+    }
+  ],
+  "comparison_note": "PSD 嵌入 composite 对同 PSD 缓存 preview 为 0/255；Art 所报 feature 重组对 preview 为 1–2/255，是不同对象的比较，不将其记成 PSD 对 native 精确一致。透明像素的未定义 RGB 不计入可见色差。",
+  "boundaries": {
+    "other_20_expansion_states": "NOT_TESTED",
+    "full_30_state_technical_matrix": "NOT_TESTED",
+    "art_visual_and_expression_judgement": "NOT_TESTED_BY_TECH；引用 Art/Master 各自独立记录",
+    "user_gate2": "NOT_APPROVED",
+    "client_runtime": "NOT_TESTED",
+    "qa": "NOT_APPLICABLE_TO_SAMPLE"
+  }
+}

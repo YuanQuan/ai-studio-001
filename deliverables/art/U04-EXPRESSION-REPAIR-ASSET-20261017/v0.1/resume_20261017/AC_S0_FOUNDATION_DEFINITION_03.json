@@ -1,0 +1,492 @@
+{
+  "stage": "AC_S0",
+  "source_roi_xyxy": [
+    350,
+    95,
+    606,
+    351
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "existing_base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_clean_base_full.png",
+  "existing_base_sha256": "89cf70ee6ba9e5ae795eb008f3300375fb507dab962202b764553834997a2609",
+  "existing_front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_front_full.png",
+  "existing_front_sha256": "0c7a148d50e516f0c79019c22381db39f15e27b41b63ecc468191343d2fa7739",
+  "base_repair_regions": [
+    {
+      "name": "left_blank_boundary",
+      "polygon": [
+        [
+          27,
+          64
+        ],
+        [
+          40,
+          61
+        ],
+        [
+          43,
+          106
+        ],
+        [
+          35,
+          113
+        ],
+        [
+          27,
+          102
+        ]
+      ],
+      "sample_points": [
+        [
+          48,
+          79
+        ],
+        [
+          53,
+          101
+        ],
+        [
+          49,
+          119
+        ]
+      ]
+    },
+    {
+      "name": "top_blank_boundary",
+      "polygon": [
+        [
+          113,
+          43
+        ],
+        [
+          190,
+          43
+        ],
+        [
+          190,
+          66
+        ],
+        [
+          181,
+          70
+        ],
+        [
+          150,
+          54
+        ],
+        [
+          118,
+          60
+        ]
+      ],
+      "sample_points": [
+        [
+          100,
+          46
+        ],
+        [
+          153,
+          67
+        ],
+        [
+          170,
+          88
+        ]
+      ]
+    },
+    {
+      "name": "lower_blank_boundary",
+      "polygon": [
+        [
+          33,
+          132
+        ],
+        [
+          66,
+          133
+        ],
+        [
+          102,
+          138
+        ],
+        [
+          134,
+          134
+        ],
+        [
+          176,
+          137
+        ],
+        [
+          176,
+          153
+        ],
+        [
+          138,
+          151
+        ],
+        [
+          104,
+          155
+        ],
+        [
+          60,
+          150
+        ],
+        [
+          38,
+          145
+        ]
+      ],
+      "sample_points": [
+        [
+          70,
+          125
+        ],
+        [
+          122,
+          125
+        ],
+        [
+          173,
+          165
+        ]
+      ]
+    },
+    {
+      "name": "center_ghost_lines",
+      "polygon": [
+        [
+          89,
+          72
+        ],
+        [
+          109,
+          68
+        ],
+        [
+          121,
+          102
+        ],
+        [
+          107,
+          116
+        ],
+        [
+          91,
+          96
+        ]
+      ],
+      "sample_points": [
+        [
+          82,
+          80
+        ],
+        [
+          122,
+          88
+        ],
+        [
+          95,
+          120
+        ]
+      ]
+    }
+  ],
+  "front_erase_regions": [
+    {
+      "name": "left_old_brow_eye",
+      "polygon": [
+        [
+          31,
+          78
+        ],
+        [
+          94,
+          77
+        ],
+        [
+          119,
+          110
+        ],
+        [
+          111,
+          139
+        ],
+        [
+          76,
+          140
+        ],
+        [
+          37,
+          127
+        ]
+      ]
+    },
+    {
+      "name": "right_old_brow_eye_bag",
+      "polygon": [
+        [
+          102,
+          65
+        ],
+        [
+          180,
+          65
+        ],
+        [
+          183,
+          126
+        ],
+        [
+          123,
+          133
+        ],
+        [
+          108,
+          112
+        ]
+      ]
+    }
+  ],
+  "protected_visual_regions": [
+    {
+      "name": "LEFT_OUTER",
+      "polygon": [
+        [
+          22,
+          57
+        ],
+        [
+          43,
+          57
+        ],
+        [
+          42,
+          79
+        ],
+        [
+          35,
+          98
+        ],
+        [
+          39,
+          120
+        ],
+        [
+          54,
+          143
+        ],
+        [
+          54,
+          151
+        ],
+        [
+          32,
+          143
+        ],
+        [
+          24,
+          113
+        ]
+      ]
+    },
+    {
+      "name": "LEFT_INNER",
+      "polygon": [
+        [
+          43,
+          57
+        ],
+        [
+          60,
+          57
+        ],
+        [
+          68,
+          78
+        ],
+        [
+          69,
+          91
+        ],
+        [
+          60,
+          90
+        ],
+        [
+          50,
+          74
+        ]
+      ]
+    },
+    {
+      "name": "MID_FRINGE",
+      "polygon": [
+        [
+          63,
+          57
+        ],
+        [
+          80,
+          57
+        ],
+        [
+          92,
+          85
+        ],
+        [
+          111,
+          108
+        ],
+        [
+          114,
+          119
+        ],
+        [
+          98,
+          111
+        ],
+        [
+          78,
+          85
+        ]
+      ]
+    },
+    {
+      "name": "RIGHT_CENTER",
+      "polygon": [
+        [
+          137,
+          44
+        ],
+        [
+          154,
+          44
+        ],
+        [
+          158,
+          72
+        ],
+        [
+          166,
+          90
+        ],
+        [
+          156,
+          94
+        ],
+        [
+          145,
+          76
+        ]
+      ]
+    },
+    {
+      "name": "RIGHT_OUTER",
+      "polygon": [
+        [
+          160,
+          44
+        ],
+        [
+          180,
+          44
+        ],
+        [
+          185,
+          75
+        ],
+        [
+          194,
+          108
+        ],
+        [
+          192,
+          120
+        ],
+        [
+          180,
+          106
+        ],
+        [
+          171,
+          76
+        ]
+      ]
+    }
+  ],
+  "masks": {
+    "base_repair": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_base_repair_01.png",
+      "sha256": "80760678b910c6c80b1d3befb6b2a6c2d9f6b5dfd36153f8615fb44798710bb8",
+      "alpha_nonzero_pixels": 9429
+    },
+    "front_erase": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_front_erase_05.png",
+      "sha256": "da6a5cf5e8ceac04369158f5c6397e230a9e209a84894fe820fcfcae086dd210",
+      "alpha_nonzero_pixels": 9908
+    },
+    "protect_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_hair_keep_05.png",
+      "sha256": "5638d4ebb6f60be13944ad08f7e26d680d8b498b272973db37f0cf359c56220b",
+      "alpha_nonzero_pixels": 3783,
+      "role": "Art-traced exact current-front hair protection evidence; already subtracted from front_erase_05. Tool must not subtract again."
+    },
+    "hair_recovery": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_hair_recovery_03.png",
+      "sha256": "b720b1831b9ce5078d8d4918df4e8596f92f7ea8084365bbf9f4bbcf7c9d447e",
+      "alpha_nonzero_pixels": 2077
+    }
+  },
+  "skin_sampling_rule": "Only listed current-base skin points with RGBA checked on overlay; polluted sample (184,80) was replaced by clean (170,88) RGBA (249,213,186,252), mask alpha0. Do not sample hair/old shadow.",
+  "hard_constraints": [
+    "仅源ROI内可改变base/front；ROI外RGBA逐像素零差。",
+    "旧眉眼口应从front消失且不透明肤底不能再挡新五官；新五官与hair/front互斥显示。",
+    "发丝/耳/脸轮廓线/鼻及原身体衣物必须从现行层保留；若擦除与保护区域冲突需逐像素看图，不能粗暴整多边形擦除。",
+    "候选新图仅用于已登记的五官语义mask，不可整脸覆盖。"
+  ],
+  "status": "ART_AUTHORED_FOUNDATION_DEFINITION_V03_FOR_TOOL_REVIEW",
+  "supersedes": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_FOUNDATION_DEFINITION_02.json",
+  "revision_reason": "cleanup01实际看图顶部肤色矩形/断发和污染样点；v03保留精准发丝、上额从获批源定向恢复原发RGB，修正肤点，仅AC先审。",
+  "hair_recovery": {
+    "operation": "approved_source_rgb_under_art_mask",
+    "source_path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+    "source_sha256": "8a15c6febf0889b3dc014230974d700c8beadd2ba28fb9862640ba092a896a62",
+    "source_canvas_px": [
+      1024,
+      1536
+    ],
+    "source_rect_xyxy": [
+      350,
+      95,
+      606,
+      351
+    ],
+    "mask_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_foundation_hair_recovery_03.png",
+    "mask_sha256": "b720b1831b9ce5078d8d4918df4e8596f92f7ea8084365bbf9f4bbcf7c9d447e",
+    "mask_canvas_px": [
+      256,
+      256
+    ],
+    "base_alpha_rule": "keep existing base alpha exactly; blend only RGB under mask alpha",
+    "purpose": "restore original orange-black hair material at the upper forehead blank-patch notch only; do not copy old brow/eyes/mouth or full approved face"
+  },
+  "operation_order": [
+    "Apply base_repair RGB IDW from all Art sample points under base_repair mask, preserving base alpha.",
+    "Blend approved-source RGB at identical source coordinates under hair_recovery mask, preserving base alpha.",
+    "Apply final front_erase_05 alpha to original front once; this mask already excludes traced hair_keep_05 pixels.",
+    "Leave every pixel outside source ROI unchanged; compose cleaned base -> selected new oneface -> cleaned front for Art check."
+  ],
+  "front_erase_final_method": "Final mask is front_erase_01 multiplied by inverse of Art-traced current-front hair_keep_05; resulting front_erase_05 path/SHA is the only execution authority. No automatic geometric protection subtraction.",
+  "visual_precheck": {
+    "sample_swatch_overlay": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_base_sample_points_01.png",
+    "note": "Overlay 01 recorded polluted point6 and motivated v03 correction; corrected-swatch overlay follows.",
+    "front_hair_mask_overlay": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_front_hair_keep_erase_overlay_03.png",
+    "candidate_recompose_draft": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_angry_feature_recompose_draft01.png",
+    "candidate_recompose_limit": "Art exploratory preview only, uses cleanup01 base with old polluted sample; final review must use v03 tool output."
+  }
+}

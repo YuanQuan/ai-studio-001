@@ -1,50 +1,56 @@
 {
   "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
   "owner": "art",
-  "summary": "Gate1与同批Art/Tech预签完成，六阶段批准源和旧切片已核；首个MT_S2 surprised内置图像编辑调用遇连接发送错误，无新候选和请求ID，生产阻塞。",
+  "summary": "同一获批v0.2方案的六阶段30态实图、固定三层切片与六份多层PSD全部交付；真实U00显示、30/30匿名盲辨及Tech静态矩阵已核，现提交Gate2具体版本用户审核。",
   "artifacts": [
     "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_BRIEF.md",
     "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
     "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SOURCE_REGISTRY.json",
-    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/CLIENT_INPUTS_MANIFEST.json",
     "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
-    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BLOCKER_REPORT.md",
-    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/prompts/mt_s2_surprised_01_actual.txt"
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PSD_VALIDATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/COMBINATION_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.json"
   ],
   "acceptance_results": [
     {
       "criterion": "准确继承批准方案与六首批阶段、五态语义；同批预签完成后首图，六代表样张通过并复签后才扩24态，48调用预算可核。",
-      "result": "NOT_TESTED",
-      "evidence": "预签通过且一次实际调用已记账；工具无候选，六样通过及扩批未测试。见ART_PRODUCTION_PRESIGN.json、PRODUCTION_LEDGER.json和BLOCKER_REPORT.md。"
+      "result": "PASS",
+      "evidence": "BATCH_EXPANSION_PRESIGN.json逐份绑定同批准v0.2、首图同批Art/Tech、六首样双签与Master扩批release；PRODUCTION_LEDGER.json计数32/48、返修2/12。"
     },
     {
       "criterion": "实际六份多层PSD、30脸片、基底与前遮挡存在，保持原尺寸坐标/稳定ID/Client三层契约；可编辑与合并区域如实说明。",
-      "result": "NOT_TESTED",
-      "evidence": "仅核旧源和输入坐标；本批新版PSD、脸片、基底与前遮挡均未产出。见BLOCKER_REPORT.md。"
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.json列六份实际PSD、30张透明face与六阶段固定base/front的SHA、尺寸和稳定ID；LAYER_EXPORT_MAP.json记录源ROI/native偏移、三层契约与计划Client路径。"
     },
     {
       "criterion": "同背景同视窗同尺度的实际重组与近景、ROI外保真、遮挡及小锦原圈纹单次显示可复核；辨识和局限有实际结果。",
-      "result": "NOT_TESTED",
-      "evidence": "只有旧组合参考输入；无新版实图可作重组、ROI或盲辨判断。见inputs/CLIENT_INPUTS_MANIFEST.json和BLOCKER_REPORT.md。"
+      "result": "PASS",
+      "evidence": "COMBINATION_CHECK.json绑定30张真U00、具名总板和Master先盲辨后开映射30/30；PSD_VALIDATION.json和Tech全30矩阵核PSD/ROI/重算；XJ圈纹单front。"
     },
     {
       "criterion": "来源权利、源与导出清单SHA、生成提示与账本、失败候选和预算记录齐备；不改历史或Client正式资源。",
-      "result": "NOT_TESTED",
-      "evidence": "源、工具条款、提示、失败调用及预算已登记；尚无新导出清单或候选，且首调用输入原字节因同名写入无法复验。见SOURCE_REGISTRY.json、PRODUCTION_LEDGER.json和BLOCKER_REPORT.md。"
+      "result": "PASS",
+      "evidence": "SOURCE_REGISTRY.json记录来源与权利；PRODUCTION_LEDGER.json保留原MT连接故障、AJ旧退修候选和MTAT首4起止未知，全部候选SHA已核；FINAL_PROTECTION_CHECK.json核原165项不变。"
     },
     {
       "criterion": "Required与验收逐条同序，实际切片与重组版本直接提交Gate2用户审核，不冒称Client运行或正式QA通过。",
-      "result": "NOT_TESTED",
-      "evidence": "本文件按Task验收原顺序记录；无实际切片或重组，Gate2保持DRAFT，运行与QA未测试。见BLOCKER_REPORT.md。"
+      "result": "PASS",
+      "evidence": "12项Task Required均有实际文件，本包直接提交Gate2具体资源版本用户审核；Client正式导入、UUID、运行画面及QA均未宣称已完成。"
     }
   ],
   "assumptions": [
-    "连接错误不能证明远端是否已消耗请求，本次按UNKNOWN保守计1次。",
-    "输入准备中的确定性裁剪不等于新版表情样张。"
+    "本批是单元示例资源生产；正式Client导入与运行QA在Gate2具体版本用户批准后才发生。"
   ],
   "risks": [
-    "无请求ID可查询首个image_gen结果；不得盲目重发同一高成本请求。",
-    "首次调用时的输入字节在随后同名写入后无法恢复；只保留调用前SHA、批准源与ROI，当前解码像素校验不能替代原字节复验。"
+    "MTAT首4次imagegen调用未在事前账本记时，原UNKNOWN快照保留；Master从真实工具会话恢复可观察调用包络，仍非服务内部/GPU时间。",
+    "原MT首次连接错误无请求ID或产物且当时输入字节随后同名覆盖；原hash、工具错误、批准源ROI及保守预算计数保留。",
+    "本批只覆盖获批30态，其余60态未制作；Client正式路径仍为计划，UUID为空。"
   ],
-  "status": "BLOCKED"
+  "status": "READY_FOR_REVIEW"
 }

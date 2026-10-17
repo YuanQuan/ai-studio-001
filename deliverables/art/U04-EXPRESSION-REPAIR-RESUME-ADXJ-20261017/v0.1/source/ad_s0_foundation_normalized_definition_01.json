@@ -1,0 +1,74 @@
+{
+  "stage": "AD_S0",
+  "source_roi_xyxy": [
+    310,
+    185,
+    566,
+    441
+  ],
+  "local_canvas_px": [
+    256,
+    256
+  ],
+  "existing_base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/ad_s0_clean_full.png",
+  "existing_base_sha256": "18781102167e9984a870bdce29e4843ce6daf0a3838469e368bb8820dc7b1357",
+  "existing_front": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_input_front_full_01.png",
+  "existing_front_sha256": "ce54ccb5b7964f61e8d231b6dbddcdff5b8c68e696663796e584448a3cd62985",
+  "base_repair_regions": [
+    {
+      "name": "art_local_residual_cleanup",
+      "sample_points": [
+        [
+          106,
+          62
+        ],
+        [
+          113,
+          118
+        ],
+        [
+          119,
+          72
+        ]
+      ]
+    }
+  ],
+  "front_erase_regions": [],
+  "protected_visual_regions": [
+    {
+      "name": "front_hair_and_optics"
+    }
+  ],
+  "masks": {
+    "base_repair": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_base_residual_cleanup_mask_01.png",
+      "sha256": "6a88be1ed7709d9eef74808bfd304f97b1d5276d8db3c7438f10283ac1ced0a2",
+      "alpha_nonzero_pixels": 10324
+    },
+    "front_erase": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_front_erase_none_01.png",
+      "sha256": "aebc86755d7beb8b01bcd992ab44e1133afcb473511b7832eb82228be275473f",
+      "alpha_nonzero_pixels": 0
+    },
+    "protect_review": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_foundation_protect_review_01.png",
+      "sha256": "b243e07bdbc582671a13a0196d0fb205e4ab4f841687ada353b3ea2933754f3c",
+      "alpha_nonzero_pixels": 7494
+    }
+  },
+  "source_binding": {
+    "original_front": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/ad_s0_front_occlusion.png",
+      "sha256": "332ab947a55a8cc82ca1c43fbb42566a9c3f5c18aa29e47fd76da266d40b7313"
+    },
+    "original_psd": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+      "sha256": "9e4726cf571d67b226bcb7b9c9e4339a773d13d4581d645fd7f8d154a4076b1d"
+    },
+    "approved_original": {
+      "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+      "sha256": "fa4f47e03eedaea1d0d0dbe1b773d48d550d887027e971030cf83eadc80717c4"
+    }
+  },
+  "status": "ART_AUTHORED_FOUNDATION_DEFINITION_FOR_TOOL_AND_VISUAL_ITERATION"
+}

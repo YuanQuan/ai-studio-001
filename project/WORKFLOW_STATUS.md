@@ -1517,3 +1517,13 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 
 最终接受 2026-10-17T11:04:23+08:00：Master `deliverables/master/MINIGAME-ART-OPT-PILOT-20261017/v0.1/FLOW_ACCEPTANCE.json` APPROVED，FLOW内部支持DONE。当前Art/本批Master阶段/旧总体检查点仍USER_REVIEW，具体Gate2未获批准；Tech DONE；无READY/IN_PROGRESS空挂，未接入或扩批。正式监督检查10:43:12至11:03:14共1202秒；至最终接受登记11:04:23总历时1271秒，末69秒为接受/收尾登记区间，精确执行与等待拆分未知。
 <!-- MINIGAME-ART-OPT-PILOT-20261017-FINAL END -->
+
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 START -->
+## U04 表情修正恢复执行｜Gate2 USER_REVIEW｜2026-10-17T14:25:45+08:00
+- 现行内置imagegen路线完成本批六阶段30态；旧CLI缺Key与前轮连接阻塞仅为历史。Gate1 v0.2已USER_APPROVED；六样复签、余24态内部放行均完成。
+- 主Art `U04-EXPRESSION-REPAIR-ASSET-20261017`及ADXJ、MTAT两Art子包均`USER_REVIEW`：Master `GATE2_PACKAGE_ACCEPTANCE.json`仅接受准确v0.1提交资格，冻结身份 `GATE2_PACKAGE_IDENTITY.json`。具体审核包 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md`，总板 `review/U04_30_STATE_NAMED_ACTUAL_SCALE.png`；**用户尚未批准，三Art任务不DONE，Client不导入**。
+- Master无标签U00盲辨30/30、Tech全30静态APPROVED；129旧Client PNG+36原Art件SHA不变。31实际候选PNG/30唯一态，保守32/48（main14、MTAT8、ADXJ10），旧MT未知1、AJ旧退稿1、返修2/12，余16不自动扩60态。
+- Tech根Required归一/内部接受尚待；两编码helper内部DONE；Producer四Required与最终continuity正在收口。六样视觉72分53秒、完整release78分45秒（12:07:41起算）。
+- 2026-10-17T14:27:20+08:00 Tech现行五Required/三验收经Master `TECH_FINAL_SUPPORT_ACCEPTANCE.json` 内部接受，Task DONE/Approval PROFESSIONAL_REVIEW；三个编码支持Task均内部DONE，旧重复ART-B CANCELLED。Producer四Required齐、Task REVIEW待Master，`CONTINUITY_CHECK.json` 核本轮无空挂READY/IN_PROGRESS。Art三线仍USER_REVIEW，Gate2用户决定空。
+- 2026-10-17T14:29:48+08:00 Producer最终四Required与两验收经Master `PRODUCER_FINAL_SUPPORT_ACCEPTANCE.json`内部接受，Task DONE/Approval PROFESSIONAL_REVIEW。最终continuity：Art三线USER_REVIEW待用户决定；Plan/Tech/三helper/Producer DONE，旧重复ART-B CANCELLED，无空挂READY/IN_PROGRESS。
+<!-- U04-EXPRESSION-REPAIR-RESUME-20261017 END -->

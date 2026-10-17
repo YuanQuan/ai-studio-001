@@ -1,40 +1,2027 @@
 {
   "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
   "version": "v0.1",
-  "budget_total_calls": 48,
-  "batch_calls_used_conservative": 1,
-  "batch_calls_remaining": 47,
-  "budget_repair_calls": 12,
-  "repair_calls_used": 0,
-  "art_a_allocated_calls": 24,
-  "art_a_calls_used_conservative": 1,
-  "art_a_calls_remaining": 23,
+  "historical_initial_snapshot": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/PRODUCTION_LEDGER_INITIAL_SNAPSHOT.json",
+    "sha256": "a8c188ba391ab779676b028a75ababba3474b42bebde0b4f3871acaa5b35909c",
+    "bytes": 2314
+  },
+  "budget": {
+    "global_cap": 48,
+    "counted_calls": 32,
+    "unused_calls": 16,
+    "successful_candidate_files": 31,
+    "unknown_or_failed_counted": 1,
+    "repair_cap": 12,
+    "repair_counted": 2,
+    "repair_unused": 10,
+    "allocations": {
+      "main": {
+        "cap": 16,
+        "used": 14
+      },
+      "MTAT": {
+        "cap": 10,
+        "used": 8
+      },
+      "ADXJ": {
+        "cap": 16,
+        "used": 10
+      },
+      "master_reserve": {
+        "cap": 6,
+        "used": 0
+      }
+    }
+  },
+  "mtat_first_four_time_recovery": {
+    "evidence": {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY.json",
+      "sha256": "c3e6a470ec67253cdd844ff11ee7d3832c6acd16dfc107fa0c355dbb628d45ac",
+      "bytes": 9153
+    },
+    "master_review": {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY_REVIEW.json",
+      "sha256": "9f7de3ffa0b6a0c5069066f2ae46211559016dec1df8c904eeb42ccd8b99c02f",
+      "bytes": 1501
+    },
+    "original_unit_ledger_snapshot": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.before_recovery.json",
+      "sha256": "819c297fed6aa906e01943960b6e055dded0985d33529f520db3dc5a91025e12",
+      "bytes": 14796
+    }
+  },
+  "limits": [
+    "MTAT-01至04未事前登记仍是过程偏差，原UNKNOWN在before_recovery保留；由真实工具日志恢复的只是可观察exec调用包络，非服务内部/GPU时间，文件mtime不作起止来源。",
+    "首个MT调用无请求ID/候选，原输入同名覆盖前的字节无法恢复；原hash和获批ROI如实保留。",
+    "AJ happy首候选视觉退修并保留；repair02是正式入包版本。"
+  ],
   "calls": [
     {
-      "sequence": 1,
+      "call_id": "main-mt_s2-surprised-unknown01",
+      "owner_unit": "main",
       "stage": "MT_S2",
       "state": "surprised",
-      "tool": "Codex built-in image_gen.imagegen",
-      "input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
-      "input_sha256": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf",
-      "approved_source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
-      "approved_source_sha256": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
-      "input_crop_command": "magick approved_original_mt_s2.png -crop 256x256+360+100 +repage mt_s2_approved_face_256.png",
-      "input_source_rect_xyxy": [360, 100, 616, 356],
-      "prompt_record": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/prompts/mt_s2_surprised_01_actual.txt",
-      "transparent_background": false,
-      "tool_result": "image generation failed: connection failed: error sending request",
-      "request_id": null,
-      "output_path": null,
-      "output_sha256": null,
-      "status": "UNKNOWN_COUNTED",
-      "candidate_count_confirmed": 0,
+      "result": "UNKNOWN_COUNTED",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
       "started_at": null,
-      "finished_observed_at": "2026-10-17T11:41:29+08:00",
-      "elapsed_tool_seconds_approx": 121,
-      "followup_check": "2026-10-17T11:41:29+08:00 检查~/.codex/generated_images近10分钟无新文件；工具未返回可查询ID，停止同一请求重复提交。",
-      "input_path_later_replaced": "编码支持随后写入同名输入文件，当前SHA-256 fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603；按同一ImageMagick命令新路径重建SHA-256 76f00d018984bc8c44aa8844eb11ff7b4d91002a699c72e8193bbd6f3254ce07。两者解码RGBA与批准源同ROI裁切像素相同，但未恢复调用时57e874...原字节，不能复验该原件。"
+      "completed_at": "2026-10-17T11:41:29+08:00",
+      "candidate": null,
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/PRODUCTION_LEDGER_INITIAL_SNAPSHOT.json",
+        "sha256": "a8c188ba391ab779676b028a75ababba3474b42bebde0b4f3871acaa5b35909c",
+        "bytes": 2314
+      },
+      "record_as_written": {
+        "sequence": 1,
+        "stage": "MT_S2",
+        "state": "surprised",
+        "tool": "Codex built-in image_gen.imagegen",
+        "input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/mt_s2_approved_face_256.png",
+        "input_sha256": "57e8745efe0003225790ad87c2ed7f73ab4cb1a91137a23d7d4d57ad5fa97faf",
+        "approved_source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+        "approved_source_sha256": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
+        "input_crop_command": "magick approved_original_mt_s2.png -crop 256x256+360+100 +repage mt_s2_approved_face_256.png",
+        "input_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "prompt_record": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/prompts/mt_s2_surprised_01_actual.txt",
+        "transparent_background": false,
+        "tool_result": "image generation failed: connection failed: error sending request",
+        "request_id": null,
+        "output_path": null,
+        "output_sha256": null,
+        "status": "UNKNOWN_COUNTED",
+        "candidate_count_confirmed": 0,
+        "started_at": null,
+        "finished_observed_at": "2026-10-17T11:41:29+08:00",
+        "elapsed_tool_seconds_approx": 121,
+        "followup_check": "2026-10-17T11:41:29+08:00 检查~/.codex/generated_images近10分钟无新文件；工具未返回可查询ID，停止同一请求重复提交。",
+        "input_path_later_replaced": "编码支持随后写入同名输入文件，当前SHA-256 fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603；按同一ImageMagick命令新路径重建SHA-256 76f00d018984bc8c44aa8844eb11ff7b4d91002a699c72e8193bbd6f3254ce07。两者解码RGBA与批准源同ROI裁切像素相同，但未恢复调用时57e874...原字节，不能复验该原件。"
+      },
+      "evidence_note": "原调用返回connection failed，无ID/输出；原输入字节随后同名覆盖不可恢复。保守计1，不重发、不把mtime当开始时刻。"
+    },
+    {
+      "call_id": "main-at_s0-sad-01",
+      "owner_unit": "main",
+      "stage": "AT_S0",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T12:07:41+08:00",
+      "completed_at": "2026-10-17T12:08:45+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "bytes": 1620515
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/GENERATION_LEDGER.json",
+        "sha256": "c20b0efdf0063458d81417f2e25746048407623cd6057437ebd34b62ae8e10d0",
+        "bytes": 2796
+      },
+      "record_as_written": {
+        "sequence_in_batch": 2,
+        "stage": "AT_S0",
+        "state": "sad",
+        "tool": "Codex built-in image_gen.imagegen",
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_approved_face_256.png",
+        "unique_input_sha256": "c4b9af27a512f0e36825172881101e045343ae7f9e0c623a6cd143af42dd26d2",
+        "unique_input_actual_size_px": [
+          256,
+          256
+        ],
+        "source_original_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+        "source_original_sha256": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+        "source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_prompt_01.txt",
+        "prompt_sha256": "8b45d49f13caa37ae34ef23b3e6eea599836a092eed26efe3cc16926b8711e57",
+        "transparent_background": false,
+        "candidate_target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "status": "GENERATED_UNDER_REVIEW",
+        "tool_result_id": null,
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "output_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "tool_result": "SUCCESS",
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-099327cc-09ef-427d-a5de-e5ddd9131977.png",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "output_has_alpha": false,
+        "output_hint": "Generated images are saved to /Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7 as exec-099327cc-09ef-427d-a5de-e5ddd9131977.png by default."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-ac_s0-angry-01",
+      "owner_unit": "main",
+      "stage": "AC_S0",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T12:27:39+08:00",
+      "completed_at": "2026-10-17T12:28:20+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_angry_imagegen_01.png",
+        "sha256": "fa220ad3df17f42c002dfc8c0ca52b85a927a07e270b5951affb3fbf733bc6f5",
+        "bytes": 1559057
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_003_AC_S0_ANGRY.json",
+        "sha256": "717918851f4a5e6aa4f891178f2ccaf9b4fe1993bf8526d8398013fd6d6d925b",
+        "bytes": 2070
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "owner": "main_art",
+        "stage": "AC_S0",
+        "state": "angry",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T12:27:39+08:00",
+        "batch_budget": {
+          "maximum_calls": 48,
+          "counted_before": 2,
+          "counted_if_sent": 3,
+          "main_art_allocation_maximum": 24
+        },
+        "input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ac_s0_approved_face_256.png",
+        "input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "input_mode": "RGBA",
+        "source_path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+        "source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_angry_prompt_01.txt",
+        "prompt_sha256": "736d446f76e2e83caa13d106de9d968ccdb4ced6162d25e19ed856f14ea92407",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_angry_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "已实际查看获批256脸图及旧angry透明脸图；黑色乱发橘色挑染、偏头视角、黑眼圈、双眼原透视、灰衣冻结。",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-cf8baf70-04ea-4462-9d8b-79f0184d7c64.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_angry_imagegen_01.png",
+        "output_sha256": "fa220ad3df17f42c002dfc8c0ca52b85a927a07e270b5951affb3fbf733bc6f5",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T12:28:20+08:00",
+        "batch_counted_after": 3,
+        "batch_remaining_after": 45,
+        "call_id": "main-ac_s0-angry-01",
+        "main_art_call_order": 3
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-ac_s0-happy-01",
+      "owner_unit": "main",
+      "stage": "AC_S0",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:28:24+08:00",
+      "completed_at": "2026-10-17T13:29:08+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_happy_imagegen_01.png",
+        "sha256": "372ceab68230e91b59dd7fa690a8f3c8a2e326481e9a5e627a8f9104a5d0639e",
+        "bytes": 1570301
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AC_S0_HAPPY_01.json",
+        "sha256": "d00d669fddd1b99d900b31eed58d3409002d4d0759c896c8773e7216ab683255",
+        "bytes": 2091
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-ac_s0-happy-01",
+        "owner": "main_art",
+        "stage": "AC_S0",
+        "state": "happy",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:28:24+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 6,
+          "main_art_if_sent": 7,
+          "global_known_before": 8,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_happy_01_input_256.png",
+        "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_happy_01_prompt.txt",
+        "prompt_sha256": "9d72a651007d44cff0c1bd44c347a22e4c5ba4ffc775b8ce80b9efb85a1ac2b8",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_happy_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "已实际查看批准原脸256及旧happy透明oneface；保留原身份/橙挑染/黑眼圈，要求快乐强于安静smile。",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-a7d7dce8-3d99-490c-93df-664b5bc1d5da.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_happy_imagegen_01.png",
+        "output_sha256": "372ceab68230e91b59dd7fa690a8f3c8a2e326481e9a5e627a8f9104a5d0639e",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:29:08+08:00",
+        "main_art_counted_after": 7,
+        "visual_candidate_note": "笑眼、脸颊和张口笑联动，橙挑染与黑眼圈保留；与安静smile强度区分明显。需要局部特征提取和同尺度重组；外围生成噪边弃用。"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-ac_s0-sad-01",
+      "owner_unit": "main",
+      "stage": "AC_S0",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:30:40+08:00",
+      "completed_at": "2026-10-17T13:31:17+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_sad_imagegen_01.png",
+        "sha256": "63b662345136ddd4d0de87d1edc7bcea0b2eebe0be92bce8b7a9a87a8327ed80",
+        "bytes": 1574300
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AC_S0_SAD_01.json",
+        "sha256": "bec41b6e5268340538616dc118b074bd221b5ca59445ae7145e88ac50c1a84bb",
+        "bytes": 2079
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-ac_s0-sad-01",
+        "owner": "main_art",
+        "stage": "AC_S0",
+        "state": "sad",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:30:40+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 8,
+          "main_art_if_sent": 9,
+          "global_known_before_excluding_parallel": 10,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_sad_01_input_256.png",
+        "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_sad_01_prompt.txt",
+        "prompt_sha256": "baf9df97c4c127bc44e9ee549b02e1a22407f17afb76c11465aeacabce3b113e",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_sad_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved source and old sad features; original old brow/eye/mouth weakly linked and mouth geometric.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-58296ec2-9097-4173-972c-eba59a97462f.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_sad_imagegen_01.png",
+        "output_sha256": "63b662345136ddd4d0de87d1edc7bcea0b2eebe0be92bce8b7a9a87a8327ed80",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:31:17+08:00",
+        "main_art_counted_after": 9,
+        "visual_candidate_note": "Inner brows, heavy eyelids and downturned mouth read sad; tired under-eye shadow and hair identity retained. At 256/U00 strength still to verify; peripheral noise discarded."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-ac_s0-smile-01",
+      "owner_unit": "main",
+      "stage": "AC_S0",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:31:40+08:00",
+      "completed_at": "2026-10-17T13:32:19+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_smile_imagegen_01.png",
+        "sha256": "735450a4898c86db59a67530df246fd18eaff636c34f70e9ed47e1d5a5381a2b",
+        "bytes": 1554403
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AC_S0_SMILE_01.json",
+        "sha256": "a20c94900fb46bd9a05f04149e4e4ccb299a7fbe79e80da71ec6378a5c6f25ef",
+        "bytes": 2081
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-ac_s0-smile-01",
+        "owner": "main_art",
+        "stage": "AC_S0",
+        "state": "smile",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:31:40+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 9,
+          "main_art_if_sent": 10,
+          "global_known_before_excluding_parallel": 11,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_smile_01_input_256.png",
+        "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_smile_01_prompt.txt",
+        "prompt_sha256": "24cb1c99a762ee8fd140b033b0eeecfa25ae416c46f75d729b942ceb13db242f",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_smile_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved source and old smile transparent features. New restrained smile should remain quieter than generated AC happy.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-5ba889aa-2481-427f-8571-eada73b25d1e.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_smile_imagegen_01.png",
+        "output_sha256": "735450a4898c86db59a67530df246fd18eaff636c34f70e9ed47e1d5a5381a2b",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:32:19+08:00",
+        "main_art_counted_after": 10,
+        "visual_candidate_note": "Gentle closed-mouth smile, small cheek/eye softening and tired eye bags retained; distinct from strong happy candidate. U00 recompose pending."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-ac_s0-surprised-01",
+      "owner_unit": "main",
+      "stage": "AC_S0",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:29:39+08:00",
+      "completed_at": "2026-10-17T13:30:14+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_surprised_imagegen_01.png",
+        "sha256": "ce3d16b51b6e339f2ea8544f70e4f13742a25a2712af08cc88016b0e1dbd7864",
+        "bytes": 1581536
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AC_S0_SURPRISED_01.json",
+        "sha256": "77c9c4f6c44c4671916ca78ce5e0bff59a692de29a1616e37a93557e9ba15cb8",
+        "bytes": 2096
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-ac_s0-surprised-01",
+        "owner": "main_art",
+        "stage": "AC_S0",
+        "state": "surprised",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:29:39+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 7,
+          "main_art_if_sent": 8,
+          "global_known_before_excluding_parallel": 9,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_surprised_01_input_256.png",
+        "unique_input_sha256": "deacb66be823c010656fc94c61f038d7f41442c77157fcd5901fb1e24afb2aca",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/ac_s0_surprised_01_prompt.txt",
+        "prompt_sha256": "5602c06c8a0c0e8cf0de111f4f49526892c27a5fffc471bea08dc9932c9a2ea1",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_surprised_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved original face and old surprised transparent features; old surprise relied on geometric O mouth.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-d039c442-52c2-4ea3-b3a0-fd1c7593a1e9.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ac_s0_surprised_imagegen_01.png",
+        "output_sha256": "ce3d16b51b6e339f2ea8544f70e4f13742a25a2712af08cc88016b0e1dbd7864",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:30:14+08:00",
+        "main_art_counted_after": 8,
+        "visual_candidate_note": "Widened nonmirrored eyes with raised brows and dimensional parted mouth; dark under-eye shading retained. Strong surprise. Peripheral noise to discard."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-aj_s2-angry-01",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:36:21+08:00",
+      "completed_at": "2026-10-17T13:37:06+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_angry_imagegen_01.png",
+        "sha256": "f7c2bfb24b0cc735c9adb6ce6f61507775b4b969325741800fab9f31847045ae",
+        "bytes": 1673964
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_ANGRY_01.json",
+        "sha256": "35e794fb2cda805e29ea7c1148286daa4b7362fbd97c64906bdc8e528615abe4",
+        "bytes": 2129
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-angry-01",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "angry",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:36:21+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 13,
+          "main_art_if_sent": 14,
+          "global_known_before_excluding_parallel": 15,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_angry_01_input_256.png",
+        "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_angry_01_prompt.txt",
+        "prompt_sha256": "8877e145adaa80739ff2b872a6541e79f3e23b78fb59070543a2b84a92dce6c8",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_angry_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved face and old angry transparent features; retain slanted side-looking eyes and horn-like hair, make anger distinct from surprised/sad.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-ade7dd9b-e6a1-4863-ae00-b9368e2c6231.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_angry_imagegen_01.png",
+        "output_sha256": "f7c2bfb24b0cc735c9adb6ce6f61507775b4b969325741800fab9f31847045ae",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:37:06+08:00",
+        "main_art_counted_after": 14,
+        "visual_candidate_note": "Inward brow tension, focused narrow side gaze and pressed downturned lips read anger; identity retained. Feature extraction/U00 pending; compare with tense surprised."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-aj_s2-happy-01",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T12:30:08+08:00",
+      "completed_at": "2026-10-17T12:30:49+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+        "sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+        "bytes": 1662902
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_HAPPY_01.json",
+        "sha256": "20d703fe310786b4693c5462422f06977e389c6da58df39b2610c13aee6ee2a2",
+        "bytes": 2508
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-happy-01",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "happy",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T12:30:08+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 24,
+          "main_art_counted_before": 3,
+          "main_art_if_sent": 4,
+          "global_known_before_excluding_parallel_adxj": 3
+        },
+        "input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/aj_s2_approved_face_256.png",
+        "input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "input_mode": "RGBA",
+        "source_path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+        "source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_happy_prompt_01.txt",
+        "prompt_sha256": "09b81367d071536cab703ef2a2f86815c00e7d105565b703db911e45fea983dc",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "已实际查看获批256脸图及旧happy透明脸图；侧目视角、弧眉、额前散发、耳饰、蓝紫衣冻结。",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-4c668db4-9eb8-4b05-a935-da45cdd8f7f8.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+        "output_sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T12:30:49+08:00",
+        "main_art_counted_after": 4,
+        "visual_candidate_note": "正向快乐可辨：眉眼较旧态放松、口角温和上扬且脸颊有轻微暖色；身份、偏侧目光、发丝与服饰大体保留。外围噪边和脸外生成像素不得直接使用，须经局部mask重组。",
+        "visual_review": "CHANGES_REQUESTED",
+        "visual_rejection_reason": "用户原happy与本候选盲辨仍近似浅闭嘴smile：候选主要增加腮红，没有足够眉眼/上提脸颊/嘴形联动的快乐强度。"
+      },
+      "evidence_note": "AJ happy首候选保留为视觉退修证据，final采用repair02。"
+    },
+    {
+      "call_id": "main-aj_s2-happy-repair02",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 1,
+      "started_at": "2026-10-17T12:32:44+08:00",
+      "completed_at": "2026-10-17T12:33:28+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+        "sha256": "d4bf188ae4eb6f04f51f05c36a03122f3c538cd80872bf64768f58a7d1b23d4f",
+        "bytes": 1644937
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_HAPPY_REPAIR02.json",
+        "sha256": "67faae029167581b6601dae4536d74f8c8497546505aa5ced1877ac51b8b7193",
+        "bytes": 2588
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-happy-repair02",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "happy",
+        "attempt_kind": "targeted_repair_1_of_2_for_weak_happy",
+        "prior_call_id": "main-aj_s2-happy-01",
+        "prior_candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_01.png",
+        "prior_candidate_sha256": "67b47515a595c9f8ab38fbee2677ddaaf75c07e08c4a2c2ef706ccf43af027be",
+        "prior_visual_review": "CHANGES_REQUESTED",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T12:32:44+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 24,
+          "main_art_counted_before": 5,
+          "main_art_if_sent": 6,
+          "global_known_before_excluding_parallel_adxj": 5,
+          "repair_pool_charge": 1,
+          "same_problem_repairs_used_before": 0,
+          "same_problem_repairs_if_sent": 1
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_happy_repair02_input_256.png",
+        "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_happy_prompt_repair02.txt",
+        "prompt_sha256": "3ea06addbf4a3e1ce5ef43cc98b611dd11955382b2f35fcea3667564bcbf3ae8",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "已再次实际查看获批原脸和首候选；首候选只有腮红+浅闭嘴微笑，happy与smile难区分。",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-d1f0bc79-9676-481b-a999-013601d2a333.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_happy_imagegen_repair02.png",
+        "output_sha256": "d4bf188ae4eb6f04f51f05c36a03122f3c538cd80872bf64768f58a7d1b23d4f",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T12:33:28+08:00",
+        "main_art_counted_after": 6,
+        "visual_candidate_note": "相较首候选，笑眼明显上提/收窄，嘴张开可见少量上齿，脸颊抬起；happy与smile强度区分更清楚。眉眼透视及嘴型仍须256与场景重组核验；外围生成噪边不可使用。"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-aj_s2-sad-01",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:33:55+08:00",
+      "completed_at": "2026-10-17T13:34:40+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+        "sha256": "82f79a3d7d92e66d0feb868965cb4bbb7088af23fa751018ed1719075a87a45a",
+        "bytes": 1627410
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_SAD_01.json",
+        "sha256": "38abbd2bd3e8324849791d11d57f90fc708d1f321b0c49dc3c04ce8b2e7cf7fb",
+        "bytes": 2068
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-sad-01",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "sad",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:33:55+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 11,
+          "main_art_if_sent": 12,
+          "global_known_before_excluding_parallel": 13,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_sad_01_input_256.png",
+        "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_sad_01_prompt.txt",
+        "prompt_sha256": "1ab548fb0e9533b1a95ad53b556d0a78daa5ccc7bb49ae2631b0337f115d2b58",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved AJ face and old sad transparent feature; preserve slanted eyes, side gaze, horn-like hair.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-2e1ba72c-190e-4cf8-a3eb-b3e7ca2e8a01.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+        "output_sha256": "82f79a3d7d92e66d0feb868965cb4bbb7088af23fa751018ed1719075a87a45a",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:34:40+08:00",
+        "main_art_counted_after": 12,
+        "visual_candidate_note": "Heavy asymmetric lids, raised inner brows and downturned mouth read sadness; character side gaze and hair identity retained. Feature extraction and U00 pending."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-aj_s2-smile-01",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:35:11+08:00",
+      "completed_at": "2026-10-17T13:35:53+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_smile_imagegen_01.png",
+        "sha256": "b40b1230cbb3ab634971347349e266a64a5b6ca13aad26715d47fa5262859637",
+        "bytes": 1655546
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_SMILE_01.json",
+        "sha256": "16fb2dcafa5f1edfc1271eefc8f4f614701c96c5139fd4b89a2659fb43411387",
+        "bytes": 2085
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-smile-01",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "smile",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:35:11+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 12,
+          "main_art_if_sent": 13,
+          "global_known_before_excluding_parallel": 14,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_smile_01_input_256.png",
+        "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_smile_01_prompt.txt",
+        "prompt_sha256": "97e140162e9f904a4d5f387a491e7ff5293886141862256ec916178873adb0f0",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_smile_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved AJ face and old smile feature; new smile must remain distinguishable from frozen AJ happy open laugh.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-1a967803-5a55-4fbd-a13a-af1e43f8bdd5.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_smile_imagegen_01.png",
+        "output_sha256": "b40b1230cbb3ab634971347349e266a64a5b6ca13aad26715d47fa5262859637",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:35:53+08:00",
+        "main_art_counted_after": 13,
+        "visual_candidate_note": "Gentle closed-mouth smile with slight cheek/eyelid lift, side gaze and narrow eye identity preserved; clearly milder than frozen happy laugh. U00 pending."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-aj_s2-surprised-01",
+      "owner_unit": "main",
+      "stage": "AJ_S2",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:32:51+08:00",
+      "completed_at": "2026-10-17T13:33:31+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_surprised_imagegen_01.png",
+        "sha256": "3790aa9379925d538e9d6dc78d6a47542f24d9b64609c8a63fb6f4e55a8d419d",
+        "bytes": 1674740
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_AJ_S2_SURPRISED_01.json",
+        "sha256": "0c9ddc836870f44d2dff8c4f745be0f1ecf371ce7575d8215113a1fc9912f2bc",
+        "bytes": 2187
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-aj_s2-surprised-01",
+        "owner": "main_art",
+        "stage": "AJ_S2",
+        "state": "surprised",
+        "attempt_kind": "first_candidate",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T13:32:51+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 16,
+          "main_art_counted_before": 10,
+          "main_art_if_sent": 11,
+          "global_known_before_excluding_parallel": 12,
+          "repair_pool_charge": 0
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_surprised_01_input_256.png",
+        "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_surprised_01_prompt.txt",
+        "prompt_sha256": "b2e8ec4e50bed43d46a584d46e0e9854d4f50f3f05ed7b7e7bb5e9798d933190",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_surprised_imagegen_01.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "Viewed approved AJ side-looking face and old surprised transparent face; preserve narrow angled individual eyes and horn-like hair.",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-59676ee4-8302-4477-becf-6f7b458574ee.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_surprised_imagegen_01.png",
+        "output_sha256": "3790aa9379925d538e9d6dc78d6a47542f24d9b64609c8a63fb6f4e55a8d419d",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T13:33:31+08:00",
+        "main_art_counted_after": 11,
+        "visual_candidate_note": "Eyes widened individually and dimensional open mouth; original side gaze and face direction retained, but inner brow furrow reads slightly tense. Check U00 for surprise versus fear/anger before PASS or targeted repair."
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "main-mt_s2-surprised-recovery02",
+      "owner_unit": "main",
+      "stage": "MT_S2",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 1,
+      "started_at": "2026-10-17T12:31:21+08:00",
+      "completed_at": "2026-10-17T12:32:12+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "bytes": 1604687
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/CALL_MAIN_MT_S2_SURPRISED_RECOVERY02.json",
+        "sha256": "3e1b6f9e23ca784951e6cfb78530e41068c64c4d52bda2f584c08c3f8497124f",
+        "bytes": 2677
+      },
+      "record_as_written": {
+        "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+        "call_id": "main-mt_s2-surprised-recovery02",
+        "owner": "main_art",
+        "stage": "MT_S2",
+        "state": "surprised",
+        "attempt_kind": "controlled_new_recovery_attempt",
+        "old_unknown_preserved": "original MT failure counted as 1, no ID/path; not retried or overwritten",
+        "recovery_review_path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MT_RECOVERY_REVIEW.json",
+        "status": "GENERATED_UNDER_VISUAL_REVIEW",
+        "started_at": "2026-10-17T12:31:21+08:00",
+        "budget": {
+          "global_cap": 48,
+          "main_art_cap": 24,
+          "main_art_counted_before": 4,
+          "main_art_if_sent": 5,
+          "global_known_before_excluding_parallel_adxj": 4,
+          "repair_pool_charge": 1
+        },
+        "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_surprised_recovery02_input_256.png",
+        "unique_input_sha256": "fe652f718cf3fddd81c5f84fab05ea690be5c85b51d43b01cff5c14709769603",
+        "input_actual_size_px": [
+          256,
+          256
+        ],
+        "input_mode": "RGBA",
+        "approved_source_crop_decoded_rgba_diff_pixels": 0,
+        "source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+        "source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/mt_s2_surprised_prompt_recovery02.txt",
+        "prompt_sha256": "f3ce5c989f7c7668a620649538838bd1ef21a8fa1dd5e1152e8ab8544088adbe",
+        "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "tool": "Codex built-in image_gen.imagegen",
+        "transparent_background": false,
+        "pre_call_visual_check": "已实际查看获批256原脸与旧surprised透明脸图；红发卷度、红眼非镜像透视、耳钉、脸型/头向冻结。",
+        "tool_result": "SUCCESS_LOCAL_OUTPUT",
+        "tool_result_id": null,
+        "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-e4abcc20-93c3-443c-97f4-bc12845a2137.png",
+        "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "output_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "output_actual_size_px": [
+          1254,
+          1254
+        ],
+        "output_mode": "RGB",
+        "finished_at": "2026-10-17T12:32:12+08:00",
+        "main_art_counted_after": 5,
+        "visual_candidate_note": "惊讶可辨：眼睑睁大、眉上扬、嘴微张，原红发/耳饰/头向身份大体保留；小圆口接近几何O形须经256与实际缩放审查，外围只可局部提取。"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "MTAT-01",
+      "owner_unit": "MTAT",
+      "stage": "MT_S2",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T05:29:56.458Z",
+      "completed_at": "2026-10-17T05:30:20.621Z",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_happy_mt_at_unit01.png",
+        "sha256": "7483f2a3e16eaab2c28c2658fdc915023c34d5a55c721c1537e1ee0b23bf1e34",
+        "bytes": 1640760
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-01",
+        "stage": "MT_S2",
+        "state": "happy",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "prompt": "Use case: precise expression edit for a layered Chinese mobile game character asset. Edit this exact close-up of Meng Tao (auburn bob hair, red eyes, three-quarter face), preserving camera, face outline, eye spacing, nose position, hair strands, ear, lighting, color palette, scale and registration. Change only her eyebrows, both eyes and mouth to clearly HAPPY: relaxed lifted brows, joy in both eyes with gently raised lower eyelids, a broad natural open delighted smile with hand-painted anime contour. Keep her identity and expression drawing style. This state must read as visibly more joyful than a subtle smile. Do not move, erase or redraw any hair strand or side contour. One image, one expression, square close-up; no labels or text.",
+        "started_at": "2026-10-17T05:29:56.458Z",
+        "generated_file_mtime": "2026-10-17T13:30:20+08:00",
+        "completed_at": "2026-10-17T05:30:20.621Z",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-97566d99-c237-4c3a-8cef-472230e1c766.png",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_happy_mt_at_unit01.png",
+        "candidate_sha256": "7483f2a3e16eaab2c28c2658fdc915023c34d5a55c721c1537e1ee0b23bf1e34",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "明显张口喜悦；轮廓与发束保持，待组层同尺度复核。",
+        "prompt_source": "actual_tool_invocation_text",
+        "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+        "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+        "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+        "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+        "exec_transport_call_id": "call_9b0b0f3fe0db4f32b2b367cac868cf26",
+        "imagegen_request_id": null,
+        "pre_call_registration_missing": true,
+        "time_evidence": {
+          "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-01_tool_call_evidence.txt",
+          "sha256": "6f8e306448a88507bc8427d8000dbe718bb69dd042927deed717375e76f34907"
+        },
+        "source_mtime_support_only_not_time_source": "2026-10-17T13:30:20.575846+08:00"
+      },
+      "evidence_note": "首四次未事前记时，原UNKNOWN留before_recovery快照；Master从实际exec调用/输出事件恢复可观察包络，非服务内部/GPU时间。"
+    },
+    {
+      "call_id": "MTAT-02",
+      "owner_unit": "MTAT",
+      "stage": "MT_S2",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T05:30:29.352Z",
+      "completed_at": "2026-10-17T05:30:52.821Z",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_sad_mt_at_unit01.png",
+        "sha256": "e7b9156aa7f7896a55de7f2c3ade119100dac84eabb319638463a1426584a4e0",
+        "bytes": 1628967
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-02",
+        "stage": "MT_S2",
+        "state": "sad",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "prompt": "Precise game asset expression edit of attached Meng Tao close-up. Preserve exact square composition, face registration, nose, red bob hair, ears, coloring and character identity. Change only brows, both eyes and mouth to a SAD expression: inner brows gently lifted and drawn together, both eyes watery and softened with lowered lids, mouth small and downturned. Hand-painted anime line work. No hair modifications. One image only, no text.",
+        "started_at": "2026-10-17T05:30:29.352Z",
+        "generated_file_mtime": "2026-10-17T13:30:52+08:00",
+        "completed_at": "2026-10-17T05:30:52.821Z",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-1822dfc8-b8b7-426c-8dff-b89d74cfb328.png",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_sad_mt_at_unit01.png",
+        "candidate_sha256": "e7b9156aa7f7896a55de7f2c3ade119100dac84eabb319638463a1426584a4e0",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "双眼含泪、两眉与下垂嘴联动；发束保持，待组层同尺度复核。",
+        "prompt_source": "actual_tool_invocation_text",
+        "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+        "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+        "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+        "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+        "exec_transport_call_id": "call_68df6a707fd64265afaa97b3e27a3b18",
+        "imagegen_request_id": null,
+        "pre_call_registration_missing": true,
+        "time_evidence": {
+          "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-02_tool_call_evidence.txt",
+          "sha256": "92e01a9baf6e5f9030d0e6badb4def041e582128e205666310d2e4b70a280491"
+        },
+        "source_mtime_support_only_not_time_source": "2026-10-17T13:30:52.752665+08:00"
+      },
+      "evidence_note": "首四次未事前记时，原UNKNOWN留before_recovery快照；Master从实际exec调用/输出事件恢复可观察包络，非服务内部/GPU时间。"
+    },
+    {
+      "call_id": "MTAT-03",
+      "owner_unit": "MTAT",
+      "stage": "MT_S2",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T05:31:58.349Z",
+      "completed_at": "2026-10-17T05:32:19.585Z",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_smile_mt_at_unit01.png",
+        "sha256": "1800102b292394177aead3776bc4f2e8122aecc653a8872985003b71a67b21e1",
+        "bytes": 1627844
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-03",
+        "stage": "MT_S2",
+        "state": "smile",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "prompt": "Precise expression edit of attached Meng Tao face for a Chinese mobile game. Preserve exact square framing and registration, auburn bob hair, ear, face shape, head angle, red eyes, nose, lighting and hand-painted anime style. Draw SMILE as a restrained warm closed-mouth smile: slightly softened eyes and a tiny curved lip with one modest cheek lift; brows relaxed. This must be visibly subtler than the open HAPPY state. Change only brows, eyes and mouth, not hair or silhouette. One image; no text.",
+        "started_at": "2026-10-17T05:31:58.349Z",
+        "generated_file_mtime": "2026-10-17T13:32:19+08:00",
+        "completed_at": "2026-10-17T05:32:19.585Z",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-21c7cb62-0971-43f8-9b9f-c4c250f5750a.png",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_smile_mt_at_unit01.png",
+        "candidate_sha256": "1800102b292394177aead3776bc4f2e8122aecc653a8872985003b71a67b21e1",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "闭口轻微笑，与happy有明确幅度差，待同尺度复核。",
+        "prompt_source": "actual_tool_invocation_text",
+        "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+        "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+        "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+        "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+        "exec_transport_call_id": "call_2ff6bda105c145e79773c7cb71acc1ab",
+        "imagegen_request_id": null,
+        "pre_call_registration_missing": true,
+        "time_evidence": {
+          "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-03_tool_call_evidence.txt",
+          "sha256": "1bef4a5a54085155b314dd3248405f8a42f3c1c130fd0d9bfcd2fb22c5787ee4"
+        },
+        "source_mtime_support_only_not_time_source": "2026-10-17T13:32:19.425444+08:00"
+      },
+      "evidence_note": "首四次未事前记时，原UNKNOWN留before_recovery快照；Master从实际exec调用/输出事件恢复可观察包络，非服务内部/GPU时间。"
+    },
+    {
+      "call_id": "MTAT-04",
+      "owner_unit": "MTAT",
+      "stage": "MT_S2",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T05:32:57.334Z",
+      "completed_at": "2026-10-17T05:33:26.475Z",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_angry_mt_at_unit01.png",
+        "sha256": "32b4598828bdb67eb5911a8de259d4d37b9ebf24c1f7e2f0c904542f462edacb",
+        "bytes": 1638460
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-04",
+        "stage": "MT_S2",
+        "state": "angry",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_surprised_imagegen_recovery02.png",
+        "input_sha256": "5e26d2c4847831f4cd8dcb3f9be94aeb39937917ba8cfae1c48bbeaabd2bfdbf",
+        "prompt": "Precise expression edit of attached Meng Tao face for a Chinese mobile game. Preserve exact square framing and registration, auburn bob hair including forehead strands, ear, cheek contour, head angle, red eyes, nose and lighting. Draw ANGRY: both brows lowered and angled inward in a coherent pair, both upper lids narrowed with firm gaze, controlled tense mouth with an asymmetrical frown. Hand-painted anime expression, clearly anger rather than sadness. Change only brows, eyes, mouth and their immediate skin shading. Do not alter hair or silhouette. One image; no text.",
+        "started_at": "2026-10-17T05:32:57.334Z",
+        "generated_file_mtime": "2026-10-17T13:33:26+08:00",
+        "completed_at": "2026-10-17T05:33:26.475Z",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-04d7ed4e-e9d9-4dae-b3d4-574d17a608d7.png",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_angry_mt_at_unit01.png",
+        "candidate_sha256": "32b4598828bdb67eb5911a8de259d4d37b9ebf24c1f7e2f0c904542f462edacb",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "双眉双眼收紧、紧张下弯嘴，发束轮廓未触碰；待同尺度复核。",
+        "prompt_source": "actual_tool_invocation_text",
+        "time_limit": "Exact tool start/end not captured; only generated file mtime available; no inferred duration.",
+        "original_started_at_before_recovery": "UNKNOWN_NOT_RECORDED_BEFORE_CALL",
+        "original_completed_at_before_recovery": "UNKNOWN_NOT_RECORDED",
+        "time_source": "ACTUAL_EXEC_TRANSPORT_CALL_OUTPUT_ENVELOPE",
+        "exec_transport_call_id": "call_65b0881b49354f28a77aca4cc6bdf218",
+        "imagegen_request_id": null,
+        "pre_call_registration_missing": true,
+        "time_evidence": {
+          "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/mtat_time_recovery/MTAT-04_tool_call_evidence.txt",
+          "sha256": "fb9c3526d112428e3bfe432d48bdcc94aea3dfc7982fbba3f2574fa22efe5f16"
+        },
+        "source_mtime_support_only_not_time_source": "2026-10-17T13:33:26.440770+08:00"
+      },
+      "evidence_note": "首四次未事前记时，原UNKNOWN留before_recovery快照；Master从实际exec调用/输出事件恢复可观察包络，非服务内部/GPU时间。"
+    },
+    {
+      "call_id": "MTAT-05",
+      "owner_unit": "MTAT",
+      "stage": "AT_S0",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:36:45+08:00",
+      "completed_at": "2026-10-17T13:37:37+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_happy_mt_at_unit01.png",
+        "sha256": "265bd1df2e2839bec452b36398992744f2cd804dbfc4bb0cb603f00553dad381",
+        "bytes": 1654022
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-05",
+        "stage": "AT_S0",
+        "state": "happy",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "prompt": "Precise expression edit of attached A Tang close-up for Chinese mobile game. Keep exact square registration, chestnut curls/bangs, flower and bow, tired under-eye shading, golden eyes, head tilt, facial outline, lighting and identity. Change only eyebrows, both upper/lower eyelids, both eye gaze and mouth into clearly HAPPY: despite naturally sleepy character, eyes brighten and open modestly, brows ease, a visibly broad joyful open smile. More joyful than a subtle closed-mouth smile. No hair, accessory, body or silhouette change; one image, no text.",
+        "reserved_at": "2026-10-17T13:36:45+08:00",
+        "started_at": "2026-10-17T13:36:45+08:00",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_happy_mt_at_unit01.png",
+        "generated_file_mtime": "2026-10-17T13:37:37+08:00",
+        "completed_at": "2026-10-17T13:37:37+08:00",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-c5d0628a-545b-4d00-9bbe-12d0610e441f.png",
+        "candidate_sha256": "265bd1df2e2839bec452b36398992744f2cd804dbfc4bb0cb603f00553dad381",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "疲惫基调上明显张口喜悦、两眼和眉联动；外部黑噪声只在参考外围，不进入面片。",
+        "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "MTAT-06",
+      "owner_unit": "MTAT",
+      "stage": "AT_S0",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:38:49+08:00",
+      "completed_at": "2026-10-17T13:39:35+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_surprised_mt_at_unit01.png",
+        "sha256": "1f4e23727f13dea21f6584345ebbe50bd3ee76187b8119c51085a5ff82638e0f",
+        "bytes": 1674801
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-06",
+        "stage": "AT_S0",
+        "state": "surprised",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "prompt": "Precise expression edit of attached A Tang close-up; preserve exact square registration, chestnut curls/bangs, tired under-eye shading, golden eyes, head tilt, facial outline and identity. Change only brows, eyes and mouth to SURPRISED: both brows raised, both eyes opened wider despite natural fatigue, pupils attentive, small rounded startled mouth. Keep under-eye tired shading and hair unchanged. One image, no text.",
+        "reserved_at": "2026-10-17T13:38:49+08:00",
+        "started_at": "2026-10-17T13:38:49+08:00",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_surprised_mt_at_unit01.png",
+        "generated_file_mtime": "2026-10-17T13:39:35+08:00",
+        "completed_at": "2026-10-17T13:39:35+08:00",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-cdd0619e-d60c-4bb0-bb5d-7ed85e470939.png",
+        "candidate_sha256": "1f4e23727f13dea21f6584345ebbe50bd3ee76187b8119c51085a5ff82638e0f",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "双眼睁大、两眉抬起、小圆口，疲惫基调仍可辨。",
+        "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "MTAT-07",
+      "owner_unit": "MTAT",
+      "stage": "AT_S0",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:40:32+08:00",
+      "completed_at": "2026-10-17T13:41:30+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_smile_mt_at_unit01.png",
+        "sha256": "64407bfe8e4027997478541d7939642874b7630e6797179bb0737700bc041a67",
+        "bytes": 1660770
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-07",
+        "stage": "AT_S0",
+        "state": "smile",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "prompt": "Precise edit of attached A Tang close-up. Preserve exact square registration, chestnut curls and bangs, flower/bow, tired under-eye warmth, golden eyes, head tilt and face identity. Draw SMILE: sleepy gentle eyes soften only slightly, eyebrows relax, a small closed-mouth curved smile with minimal cheek lift. It must remain more restrained than HAPPY. Change only brows, eyelids/eyes and mouth; no hair/accessory/outline change. One image, no text.",
+        "reserved_at": "2026-10-17T13:40:32+08:00",
+        "started_at": "2026-10-17T13:40:32+08:00",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_smile_mt_at_unit01.png",
+        "generated_file_mtime": "2026-10-17T13:41:30+08:00",
+        "completed_at": "2026-10-17T13:41:30+08:00",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-e7dedea3-2f6f-41b7-91ce-5acd66ffa6ae.png",
+        "candidate_sha256": "64407bfe8e4027997478541d7939642874b7630e6797179bb0737700bc041a67",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "疲惫半睁眼保留、小幅闭口笑，与happy张口明显区分。",
+        "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "MTAT-08",
+      "owner_unit": "MTAT",
+      "stage": "AT_S0",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:42:24+08:00",
+      "completed_at": "2026-10-17T13:43:14+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_angry_mt_at_unit01.png",
+        "sha256": "32d95cb8ad47d47303b77a8508afdb84dcbc78a39d0bbf1e541e5c3128797a31",
+        "bytes": 1639844
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "8c2ba617b3fc93d173945b9e92b3a52804de18b858546d93ea6f8e3b83fb92cb",
+        "bytes": 18580
+      },
+      "record_as_written": {
+        "call_id": "MTAT-08",
+        "stage": "AT_S0",
+        "state": "angry",
+        "kind": "first_candidate",
+        "status": "GENERATED_ART_QA_PENDING",
+        "input": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+        "input_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+        "prompt": "Precise edit of attached A Tang close-up. Preserve exact square registration, chestnut curls/bangs, flower/bow, tired under-eye warmth, golden eyes, head tilt, face shape and identity. Draw ANGRY as controlled sleepy irritation: both brows angled down inward, both upper lids narrowed into a firm gaze, a small tense downturned asymmetric mouth. Distinct from sad; retain tired character, no exaggerated rage. Change only brows, eyes and mouth; no hair/accessory/outline change. One image, no text.",
+        "reserved_at": "2026-10-17T13:42:24+08:00",
+        "started_at": "2026-10-17T13:42:24+08:00",
+        "candidate": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_angry_mt_at_unit01.png",
+        "generated_file_mtime": "2026-10-17T13:43:14+08:00",
+        "completed_at": "2026-10-17T13:43:14+08:00",
+        "tool_output": "/Users/yuanquan/.codex/generated_images/01a14855-2ecc-79a3-9205-74f4db76eea6/exec-c1143923-f916-4831-af2e-109b44c16346.png",
+        "candidate_sha256": "32d95cb8ad47d47303b77a8508afdb84dcbc78a39d0bbf1e541e5c3128797a31",
+        "dimensions_px": [
+          1254,
+          1254
+        ],
+        "visual_observation": "两眉两眼联动收紧、疲惫基调保留；与sad口眼有可见区别。",
+        "prompt_source": "preallocated_ledger_then_actual_tool_invocation_text"
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-01",
+      "owner_unit": "ADXJ",
+      "stage": "AD_S0",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T12:29:34+08:00",
+      "completed_at": "2026-10-17T12:30:25+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+        "sha256": "6aeca08b609af80d936443d03fbf2c2b132a3a1ebe702f12f4b16590d697d210",
+        "bytes": 1559342
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-01",
+        "stage": "AD_S0",
+        "state": "happy",
+        "source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "approved_crop": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+          "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c"
+        },
+        "old_recomposed_reference": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_old_face_recomposed_source.png",
+          "sha256": "1680011790ba1f2de5c24735135ab906f1e27dd9764fc3f75d0159acfbf5cd53"
+        },
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_happy_01.txt",
+          "sha256": "6266584de3637d9053158280015cea700701d8fe6d3a3d8c597cdcd8f431498b"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_happy_imagegen_01.png",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T12:29:34+08:00",
+        "end_time": "2026-10-17T12:30:25+08:00",
+        "result_sha256": "6aeca08b609af80d936443d03fbf2c2b132a3a1ebe702f12f4b16590d697d210",
+        "tool": "built-in image_gen",
+        "cost_gpu_time": "unknown",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-bc52bf4b-2ab4-42ca-90d6-dc05998dc1b1.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-02",
+      "owner_unit": "ADXJ",
+      "stage": "XJ_S0",
+      "state": "happy",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T12:30:37+08:00",
+      "completed_at": "2026-10-17T12:31:30+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+        "sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+        "bytes": 1817355
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-02",
+        "stage": "XJ_S0",
+        "state": "happy",
+        "source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "approved_crop": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+          "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2"
+        },
+        "old_recomposed_reference": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_old_face_recomposed_source.png",
+          "sha256": "3f822954917344f4339bd32b88d3373392d0a877343ab89f02b2ff62cfb80d56"
+        },
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_happy_01.txt",
+          "sha256": "ea30151ed7445d6e3e9da234c7ec812a9c7109c03b6eacb041b80f69a160c0da"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_happy_imagegen_01.png",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T12:30:37+08:00",
+        "end_time": "2026-10-17T12:31:30+08:00",
+        "result_sha256": "62913ca20c01285979163f05d68ed7e0203c03a7b209e6c388bc58ae20f16fc9",
+        "tool": "built-in image_gen",
+        "cost_gpu_time": "unknown",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-8bf4666c-dae8-409d-a1bc-d980a40daddf.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-03",
+      "owner_unit": "ADXJ",
+      "stage": "AD_S0",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:29:47.562368+08:00",
+      "completed_at": "2026-10-17T13:30:34.916252+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_surprised_imagegen_01.png",
+        "sha256": "ce0821716f3c95f723f68792485669ebf5353a40c0b97a66adcb5fb7184fdf79",
+        "bytes": 1523812
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-03",
+        "stage": "AD_S0",
+        "state": "surprised",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:29:47.562368+08:00",
+        "source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+            "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+            "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+            "role": "registration_and_intensity_reference"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_surprised_01.txt",
+          "sha256": "af7ca0ca9a4be635033580208c90d25b31300a7d59675d9378806a8d78d09d70"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_surprised_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:30:34.916252+08:00",
+        "result_sha256": "ce0821716f3c95f723f68792485669ebf5353a40c0b97a66adcb5fb7184fdf79",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-d64788d8-be73-48f7-be88-36237f59368b.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-04",
+      "owner_unit": "ADXJ",
+      "stage": "AD_S0",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:30:55.734966+08:00",
+      "completed_at": "2026-10-17T13:31:44.794502+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_sad_imagegen_01.png",
+        "sha256": "fb6742ec52e96c1083192b3ec02308b68fe794be0b4583092a03bbcd077a90a5",
+        "bytes": 1503214
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-04",
+        "stage": "AD_S0",
+        "state": "sad",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:30:55.734966+08:00",
+        "source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+            "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+            "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+            "role": "registration_and_intensity_reference"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_sad_01.txt",
+          "sha256": "9bf9cde40275bed3200d8720f41127d2b0a4b13ef09136c1b166af9593b633ea"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_sad_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:31:44.794502+08:00",
+        "result_sha256": "fb6742ec52e96c1083192b3ec02308b68fe794be0b4583092a03bbcd077a90a5",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-13f1fbff-0f8c-4643-a3a4-50b931568707.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-05",
+      "owner_unit": "ADXJ",
+      "stage": "AD_S0",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:32:02.679103+08:00",
+      "completed_at": "2026-10-17T13:32:47.587725+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_smile_imagegen_01.png",
+        "sha256": "1808255811ab2a294c94882e647149a90414b46c7c86de7cd90875267861621d",
+        "bytes": 1512665
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-05",
+        "stage": "AD_S0",
+        "state": "smile",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:32:02.679103+08:00",
+        "source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+            "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+            "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+            "role": "registration_and_intensity_reference"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_smile_01.txt",
+          "sha256": "068a60b17ebf934ec22d14d1e4702c41cbadea2e5e7e1c69ec2fd00d503a3b9f"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_smile_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:32:47.587725+08:00",
+        "result_sha256": "1808255811ab2a294c94882e647149a90414b46c7c86de7cd90875267861621d",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-ef01f51d-1234-4057-adee-ce49d685f72c.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-06",
+      "owner_unit": "ADXJ",
+      "stage": "AD_S0",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:33:08.186975+08:00",
+      "completed_at": "2026-10-17T13:34:05.811451+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_angry_imagegen_01.png",
+        "sha256": "c24ff2f1db1e31aeec8b27aa0b6816e5f0c6c10021f141f64c61f55307320e21",
+        "bytes": 1526582
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-06",
+        "stage": "AD_S0",
+        "state": "angry",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:33:08.186975+08:00",
+        "source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/ad_s0_approved_face_256.png",
+            "sha256": "70ce5b08bb3ab2ace7078f40eb324e914a5c7b741f047c5f9107abe71e6b394c",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_happy_extract_final02/recomposed_face_roi.png",
+            "sha256": "73ff2ad29abde0a5420a5a9161cb0c003e08f41570b506d5ccd58164a97d4c01",
+            "role": "registration_and_intensity_reference"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/ad_s0_angry_01.txt",
+          "sha256": "e9c47b77b6e5087fee91e5000ca930b7d8ee2e7d3230ad4051ec87c35bf1ae1c"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/ad_s0_angry_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:34:05.811451+08:00",
+        "result_sha256": "c24ff2f1db1e31aeec8b27aa0b6816e5f0c6c10021f141f64c61f55307320e21",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-eeaca565-fa3d-4c11-87ed-37ad7d084781.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-07",
+      "owner_unit": "ADXJ",
+      "stage": "XJ_S0",
+      "state": "surprised",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:35:11.757114+08:00",
+      "completed_at": "2026-10-17T13:35:58.281693+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_surprised_imagegen_01.png",
+        "sha256": "20fa2056340b3e87d326199ee846d21f7dd4cc802b6bd90e488230f02a5449d1",
+        "bytes": 1796620
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-07",
+        "stage": "XJ_S0",
+        "state": "surprised",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:35:11.757114+08:00",
+        "source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+            "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+            "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+            "role": "registration_and_intensity_reference"
+          },
+          {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_surprised_eyes.png",
+            "sha256": "33772a3c2318e273cde63e81e75fa15711eeb84dc4b4ee65a45a6479bb807fd2",
+            "role": "old_both_eye_perspective_only"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_surprised_01.txt",
+          "sha256": "7afc5d64791cb0defa6db4c29662354e56e96da119f345b0e513e5e2981e0445"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_surprised_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:35:58.281693+08:00",
+        "result_sha256": "20fa2056340b3e87d326199ee846d21f7dd4cc802b6bd90e488230f02a5449d1",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-c1898f69-784b-407c-90a1-94f5e7227bd6.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-08",
+      "owner_unit": "ADXJ",
+      "stage": "XJ_S0",
+      "state": "sad",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:36:23.570840+08:00",
+      "completed_at": "2026-10-17T13:37:15.249203+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_sad_imagegen_01.png",
+        "sha256": "13cbadc5f72f988b1179b42fee8d679de55b890d6174d133b6af1ed6a73d8f4f",
+        "bytes": 1778853
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-08",
+        "stage": "XJ_S0",
+        "state": "sad",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:36:23.570840+08:00",
+        "source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+            "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+            "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+            "role": "registration_and_intensity_reference"
+          },
+          {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_sad_eyes.png",
+            "sha256": "0ed2cbfea16da0b3b2975b6c81c471d972ec33b21db9a065a5a2bf57ab373f54",
+            "role": "old_both_eye_perspective_only"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_sad_01.txt",
+          "sha256": "a1939838b35d82a519565db347c150a162e0eb737aa480a85e93f70dfc25eb5a"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_sad_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:37:15.249203+08:00",
+        "result_sha256": "13cbadc5f72f988b1179b42fee8d679de55b890d6174d133b6af1ed6a73d8f4f",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-742e5096-c507-4dfe-a5d4-b7e1de07e78b.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-09",
+      "owner_unit": "ADXJ",
+      "stage": "XJ_S0",
+      "state": "smile",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:37:49.024902+08:00",
+      "completed_at": "2026-10-17T13:39:08.053003+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_smile_imagegen_01.png",
+        "sha256": "107094215d17befb35ff10bb05c9fae6634b9a2f7e9801cea0899ccaf22dac5b",
+        "bytes": 1801114
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-09",
+        "stage": "XJ_S0",
+        "state": "smile",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:37:49.024902+08:00",
+        "source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+            "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+            "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+            "role": "registration_and_intensity_reference"
+          },
+          {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_sad_eyes.png",
+            "sha256": "0ed2cbfea16da0b3b2975b6c81c471d972ec33b21db9a065a5a2bf57ab373f54",
+            "role": "old_both_eye_perspective_only"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_smile_01.txt",
+          "sha256": "4ec3deae749f922c590f02905fe20769b9e484c0525323fef0a191483d27302c"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_smile_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:39:08.053003+08:00",
+        "result_sha256": "107094215d17befb35ff10bb05c9fae6634b9a2f7e9801cea0899ccaf22dac5b",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-fac62c6f-099c-4cf4-be52-2067afebf460.png",
+        "result_id": null
+      },
+      "evidence_note": null
+    },
+    {
+      "call_id": "ADXJ-10",
+      "owner_unit": "ADXJ",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "result": "SUCCESS",
+      "counts_budget": 1,
+      "counts_repair_pool": 0,
+      "started_at": "2026-10-17T13:39:34.224010+08:00",
+      "completed_at": "2026-10-17T13:40:34.290046+08:00",
+      "candidate": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_angry_imagegen_01.png",
+        "sha256": "60b029fc19855e828f41097c20b828515efd694710588197b6eaa7a07f251027",
+        "bytes": 1768742
+      },
+      "source_record": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/GENERATION_LEDGER.json",
+        "sha256": "43f596c63ebd14f994351576618a8f10e418a882ee8da348b81a50e465776f6c",
+        "bytes": 18267
+      },
+      "record_as_written": {
+        "call_id": "ADXJ-10",
+        "stage": "XJ_S0",
+        "state": "angry",
+        "tool": "built-in image_gen",
+        "status": "candidate_saved",
+        "start_time": "2026-10-17T13:39:34.224010+08:00",
+        "source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "inputs": [
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/xj_s0_approved_face_256.png",
+            "sha256": "693201498dd9da71384c478d00d3283562bf054df32879aea379052be9529df2",
+            "role": "edit_target_identity_anchor"
+          },
+          {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_happy_extract_final03/recomposed_face_roi.png",
+            "sha256": "aee8580ebc2586cf5572669fd26d03e8def223c6ea308e3d81075499790bd118",
+            "role": "registration_and_intensity_reference"
+          },
+          {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/xj_s0_angry_eyes.png",
+            "sha256": "3c9f087f5b6a41b6e98b91345867ed9a9ad62bda7e3518606b8c77df5e6182c0",
+            "role": "old_both_eye_perspective_only"
+          }
+        ],
+        "prompt": {
+          "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/prompts/xj_s0_angry_01.txt",
+          "sha256": "f88d096f5765e1d5f8349d93e573434de543a879bc4e264c054c64fb9ba5f7ab"
+        },
+        "candidate_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/xj_s0_angry_imagegen_01.png",
+        "cost_gpu_time": "unknown",
+        "end_time": "2026-10-17T13:40:34.290046+08:00",
+        "result_sha256": "60b029fc19855e828f41097c20b828515efd694710588197b6eaa7a07f251027",
+        "result_size_px": [
+          1254,
+          1254
+        ],
+        "result_mode": "RGB",
+        "builtin_source_path": "/Users/yuanquan/.codex/generated_images/01a1481c-754d-7582-92bf-3d013f8d9734/exec-ae5c8e25-f6cf-4d81-b68f-17aa528b8a9d.png",
+        "result_id": null
+      },
+      "evidence_note": null
     }
-  ],
-  "note": "失败或未知调用保守计入。Art B另有独立账本；总批上限仍48，最终整合去重。"
+  ]
 }

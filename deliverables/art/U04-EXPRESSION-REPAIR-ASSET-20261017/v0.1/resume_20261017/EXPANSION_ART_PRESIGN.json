@@ -1,0 +1,88 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.1",
+  "status": "ART_PRESIGNED_AWAITING_MASTER_RELEASE",
+  "signed_by": "art",
+  "signed_at": "2026-10-17T13:25:18.432224+08:00",
+  "scope": "同一批准U04表达修复方案的六首样内部扩批；仅余24态，不是Gate2用户具体切图审批。",
+  "approved_plan": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+    "bytes": 5822
+  },
+  "gate1_approval": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "sha256": "9a07486512450ce4eebc7ede4a54ce1fe7426926171bd1bae8d5f8d53b89e0b5",
+    "bytes": 812
+  },
+  "original_art_presign": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "sha256": "6c52cb9edd7906ddceea2340c1711695c0d3ad1692fab6414377487916ec4eeb",
+    "bytes": 20842
+  },
+  "six_sample_binding": {
+    "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_BINDING.json",
+    "sha256": "94e03d6ee614f8f186dee2a8ab75e408835023fd9717abd5753085c37e125e56",
+    "bytes": 13557
+  },
+  "native_export_addendum": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/SIX_SAMPLE_NATIVE_EXPORT_ADDENDUM.json",
+    "sha256": "70c206fecd261fd5aadaa5f03af1a8ccac6483905d1d6705f1ca0d822a302f44",
+    "bytes": 4269
+  },
+  "art_visual_review": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/SIX_SAMPLE_ART_REVIEW.json",
+    "sha256": "7e0625c259200580a3783965cc126bc91eff95b7e7b399fe2170de2fe6ea0123",
+    "bytes": 1961
+  },
+  "master_visual_review": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/SIX_SAMPLE_MASTER_VISUAL_REVIEW.json",
+    "sha256": "5fe31c71f4fadfa30db7d077b7c1ec045cd0597f90a4753125e7f3d0e80c7fd6",
+    "bytes": 1059
+  },
+  "tech_sample_review": {
+    "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SAMPLE_TECH_REVIEW.json",
+    "sha256": "4d26f514bf70ed9ef83789fd54ea130c1db34d1e7c1d9d997c5d605ee5c2d50f",
+    "bytes": 1487
+  },
+  "tech_expansion_presign": {
+    "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/BATCH_EXPANSION_PRESIGN.json",
+    "sha256": "abbd1c31d97de8043d0950f68cd75a4f452a3a5bd9b701eea9ca3a115370fed7",
+    "bytes": 1474
+  },
+  "samples_approved_for_expansion": [
+    "MT_S2_surprised",
+    "AT_S0_sad",
+    "AC_S0_angry",
+    "AJ_S2_happy",
+    "AD_S0_happy",
+    "XJ_S0_happy"
+  ],
+  "batch_budget": {
+    "total_generation_call_cap": 48,
+    "counted_used": 8,
+    "remaining_total": 40,
+    "failed_or_unknown_mt_counted": 1,
+    "repair_cap": 12,
+    "repair_used": 2,
+    "repair_remaining": 10,
+    "new_allocation_after_master_release": {
+      "main_AC_AJ_and_existing_six": 16,
+      "MT_AT_new_unit": 10,
+      "AD_XJ_unit": 16,
+      "master_reserved": 6
+    },
+    "allocation_note": "分区之和48；现有main6、ADXJ2已包含，余24首态 + 10全局可用返修/基础调用须按批准条件逐次计数。"
+  },
+  "expansion_states": {
+    "MT_S2_AT_S0": 8,
+    "AC_S0_AJ_S2": 8,
+    "AD_S0_XJ_S0": 8
+  },
+  "production_guards": [
+    "每态一资产一次内置imagegen；失败/未知照计，问题定向返修最多2次，全局不得超48。",
+    "沿用同批已签源ROI/当前stage base/front，保持身份/头向/发型/衣着及原批准视觉锚点；XJ圈纹近视镜单front，AC黑眼圈保留，AJ男性。",
+    "所有30态需固定真实native透明切片、PSD内同角色五态互斥、U00同背景同尺度、A–E无情绪标签盲辨板及映射分存，再Art/Tech检查。",
+    "不在Gate2具体用户批准前正式Client导入；不新增用户审批门禁。"
+  ]
+}

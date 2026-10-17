@@ -1,19 +1,46 @@
 {
   "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
   "owner": "tech_lead",
-  "summary": "首图前同批技术预签已通过；Art首个图像调用连接失败且无新候选，六样技术核验与余24态扩批复签阻塞。",
+  "summary": "首图前原预签保留；六代表样同版技术核验与余24态扩批复签通过；六角色三十态静态技术事实矩阵已完成，当前正式入口已归一。",
   "artifacts": [
     "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
-    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN_BINDING.json",
     "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/SAMPLE_TECH_REVIEW.json",
     "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
-    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_CHECK.md"
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_CHECK.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_BINDING.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_TECH_CHECK.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_MATRIX.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_REVIEW.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/THIRTY_STATE_MASTER_VISUAL_CHECK.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/history_before_resume/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/history_before_resume/BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/history_before_resume/TECH_CHECK.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/history_before_resume/DELIVERABLE.json"
   ],
   "acceptance_results": [
-    {"criterion": "首图前对Art同批预案SHA、实际来源、尺寸坐标、分层接口和48调用预算预签，不伪称实图/运行通过。", "result": "PASS", "evidence": "TECH_PRESIGN.json APPROVED；TECH_PRESIGN_BINDING.json绑定同一方案及Art预签SHA，六样旧文件与坐标已核，实图/运行明确未测。"},
-    {"criterion": "六代表样张的实际PSD、切片和同尺度重组技术核验有结果，通过后按同版内容复签扩批；失败不放行扩批。", "result": "NOT_TESTED", "evidence": "Art首调用连接错误，无请求ID、输出或候选；六样实际资源不存在。SAMPLE_TECH_REVIEW.json及BATCH_EXPANSION_PRESIGN.json均BLOCKED，余24态未放行。"},
-    {"criterion": "交付严格Schema Review及验收、真实证据与NOT_TESTED边界；不改Client、历史资产或追加自产切图专业复审门禁。", "result": "PASS", "evidence": "三份Review仅含review.schema规定五个顶层字段，DELIVERABLE按task原序逐条验收；TECH_CHECK.md记录UNKNOWN_COUNTED 1/48、实图及运行NOT_TESTED，未修改Client或历史资产。"}
+    {
+      "criterion": "首图前对Art同批预案SHA、实际来源、尺寸坐标、分层接口和48调用预算预签，不伪称实图/运行通过。",
+      "result": "PASS",
+      "evidence": "原预签 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json SHA 90d7e43212c600da656de4d1aeb20d947880cafaa3ea2da2e8c5e377be675c41；当前技术摘要 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_CHECK.md。首图前绑定已批方案及 Art 同批预案、尺寸坐标、三层接口和48预算；不把预签写作实图或运行通过。"
+    },
+    {
+      "criterion": "六代表样张的实际PSD、切片和同尺度重组技术核验有结果，通过后按同版内容复签扩批；失败不放行扩批。",
+      "result": "PASS",
+      "evidence": "六样版本 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_BINDING.json SHA 94e03d6ee614f8f186dee2a8ab75e408835023fd9717abd5753085c37e125e56，实际检查 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/SIX_SAMPLE_TECH_CHECK.md；根六样 Review deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/SAMPLE_TECH_REVIEW.json 与扩批预签 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json 均为同版 APPROVED。三十态静态矩阵 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_MATRIX.json 是后续实际生产核验，不改写当时六样扩批签认。"
+    },
+    {
+      "criterion": "交付严格Schema Review及验收、真实证据与NOT_TESTED边界；不改Client、历史资产或追加自产切图专业复审门禁。",
+      "result": "PASS",
+      "evidence": "根严格五字段 Review 与 deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_REVIEW.json 均记录实际通过项和 NOT_TESTED 边界；deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/THIRTY_STATE_MASTER_VISUAL_CHECK.json 记录 30/30 独立视觉；deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY.json 与 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/MTAT_TIME_RECOVERY_REVIEW.json 恢复四个可观察调用包络并保留原 MINOR 偏差。未改 Client、历史资产或另加自产切片专业复审门禁。"
+    }
   ],
-  "risks": ["工具无请求ID或输出，首调用消耗未明；按UNKNOWN_COUNTED保守占1/48且不盲重发。", "六代表样张缺失，实际兼容性与扩批条件均无法判断。"],
-  "status": "BLOCKED"
+  "risks": [
+    "Gate2具体切片尚未获得用户批准；Client正式导入、UUID与目标机运行NOT_TESTED。",
+    "AC/AJ原生base裁片矩形外有预期源像素遗漏；仅该矩形内证明native三层逐像素等价。",
+    "MT/AT首四次未事前写账的MINOR偏差保留；恢复的是工具调用可观察包络，服务内部GPU/计费时间未知。"
+  ],
+  "status": "READY_FOR_REVIEW"
 }

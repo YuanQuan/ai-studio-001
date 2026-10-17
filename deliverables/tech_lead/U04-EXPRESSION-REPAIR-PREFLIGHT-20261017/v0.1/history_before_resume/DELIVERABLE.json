@@ -1,0 +1,19 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "owner": "tech_lead",
+  "summary": "首图前同批技术预签已通过；Art首个图像调用连接失败且无新候选，六样技术核验与余24态扩批复签阻塞。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN_BINDING.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/SAMPLE_TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_CHECK.md"
+  ],
+  "acceptance_results": [
+    {"criterion": "首图前对Art同批预案SHA、实际来源、尺寸坐标、分层接口和48调用预算预签，不伪称实图/运行通过。", "result": "PASS", "evidence": "TECH_PRESIGN.json APPROVED；TECH_PRESIGN_BINDING.json绑定同一方案及Art预签SHA，六样旧文件与坐标已核，实图/运行明确未测。"},
+    {"criterion": "六代表样张的实际PSD、切片和同尺度重组技术核验有结果，通过后按同版内容复签扩批；失败不放行扩批。", "result": "NOT_TESTED", "evidence": "Art首调用连接错误，无请求ID、输出或候选；六样实际资源不存在。SAMPLE_TECH_REVIEW.json及BATCH_EXPANSION_PRESIGN.json均BLOCKED，余24态未放行。"},
+    {"criterion": "交付严格Schema Review及验收、真实证据与NOT_TESTED边界；不改Client、历史资产或追加自产切图专业复审门禁。", "result": "PASS", "evidence": "三份Review仅含review.schema规定五个顶层字段，DELIVERABLE按task原序逐条验收；TECH_CHECK.md记录UNKNOWN_COUNTED 1/48、实图及运行NOT_TESTED，未修改Client或历史资产。"}
+  ],
+  "risks": ["工具无请求ID或输出，首调用消耗未明；按UNKNOWN_COUNTED保守占1/48且不盲重发。", "六代表样张缺失，实际兼容性与扩批条件均无法判断。"],
+  "status": "BLOCKED"
+}

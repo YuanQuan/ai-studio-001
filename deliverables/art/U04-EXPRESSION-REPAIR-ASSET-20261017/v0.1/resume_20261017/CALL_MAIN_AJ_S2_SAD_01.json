@@ -1,0 +1,43 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-aj_s2-sad-01",
+  "owner": "main_art",
+  "stage": "AJ_S2",
+  "state": "sad",
+  "attempt_kind": "first_candidate",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T13:33:55+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 16,
+    "main_art_counted_before": 11,
+    "main_art_if_sent": 12,
+    "global_known_before_excluding_parallel": 13,
+    "repair_pool_charge": 0
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_sad_01_input_256.png",
+  "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_sad_01_prompt.txt",
+  "prompt_sha256": "1ab548fb0e9533b1a95ad53b556d0a78daa5ccc7bb49ae2631b0337f115d2b58",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "Viewed approved AJ face and old sad transparent feature; preserve slanted eyes, side gaze, horn-like hair.",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-2e1ba72c-190e-4cf8-a3eb-b3e7ca2e8a01.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_sad_imagegen_01.png",
+  "output_sha256": "82f79a3d7d92e66d0feb868965cb4bbb7088af23fa751018ed1719075a87a45a",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T13:34:40+08:00",
+  "main_art_counted_after": 12,
+  "visual_candidate_note": "Heavy asymmetric lids, raised inner brows and downturned mouth read sadness; character side gaze and hair identity retained. Feature extraction and U00 pending."
+}

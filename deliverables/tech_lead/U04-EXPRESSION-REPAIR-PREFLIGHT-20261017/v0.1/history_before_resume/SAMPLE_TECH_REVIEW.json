@@ -1,0 +1,10 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
+  "reviewer": "tech_lead",
+  "decision": "BLOCKED",
+  "findings": [
+    {"severity": "MAJOR", "message": "六代表样张的新候选、PSD、切片和同尺度重组均不存在，实际层、坐标、alpha、眼镜单次显示与贴图面积均NOT_TESTED；不能作样张技术通过结论。"},
+    {"severity": "INFO", "message": "Art账本记首个MT_S2 surprised image_gen调用连接发送失败，无请求ID或输出，UNKNOWN_COUNTED占1/48；AT及其他样张未调用，确认新候选0。首图前TECH_PRESIGN APPROVED保留为预案历史结论。"}
+  ],
+  "next_action": "待工具结果可查或连接恢复、Art取得六代表样张后，逐项核实际PSD互斥层、切片坐标、ROI外alpha、清边、小锦眼镜、同尺度重组和预算；此前不放行扩批。"
+}

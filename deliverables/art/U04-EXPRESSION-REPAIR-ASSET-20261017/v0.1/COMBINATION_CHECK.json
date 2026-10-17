@@ -1,0 +1,61 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.1",
+  "result": "PASS_ART_VISUAL_AND_STATIC_TECH",
+  "thirty_u00_same_scale": 30,
+  "named_actual_scale_board": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+    "sha256": "890a022362659396a4f25b1287ba95a3cbf59a24b76f971d42cdc1065ef82ff0",
+    "bytes": 646419
+  },
+  "named_board_pixel_provenance": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.json",
+    "sha256": "0f64e6a215e292a8ff0a7c797b4d13967f0e9b2e702f613a80742e7eb74f9290",
+    "bytes": 17385
+  },
+  "u00_source": "复用冻结旧场景背景、面板与角色原renderer；MT/AT/AC/AJ源1024×850→614×510置(-55,210)，AD/XJ原生768×768→570×570置(10,150)。各态完整1280×720路径/SHA逐项见ASSET_MANIFEST。",
+  "master_blind_actual_scale": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/THIRTY_STATE_MASTER_VISUAL_CHECK.json",
+    "sha256": "019c897ec57ec8096edda6328b5d879ce45bdc957d862ccf2536c3052f29e16c",
+    "bytes": 7917
+  },
+  "blind_results": [
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ACAJ_RESULT.json",
+      "sha256": "e8ec5acd1b7ecc77a82951db252565c91e53b2726bfae8791fc8b92b1bd1a3c4",
+      "bytes": 2566
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_RESULT.json",
+      "sha256": "137d3b231890114a88753bcc2b5c19a06df1e97cb2b25dd3b65684fa0f417882",
+      "bytes": 2481
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ADXJ_DRAFT01_RESULT.json",
+      "sha256": "5b1ff0f8c8cebfd88f68252e11ffb7a50bf46eb7ed901ba9eb725b23bbfd2a0c",
+      "bytes": 2313
+    }
+  ],
+  "native_and_roi_checks": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_AJ_FULL5_NATIVE_EXPORT_CHECK_01.json",
+      "sha256": "795bfe5e4c17d4cda251c7ea346525ee33925ed4e26397d1b325eed65b3bf4c5",
+      "bytes": 9372
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/native_u00_recompose_report_01.json",
+      "sha256": "4c1b984b18db063e1f2d1d4940a24b722b6aa6539fefed270303fe5d5772e600",
+      "bytes": 11751
+    },
+    {
+      "path": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/resume_20261017/FINAL_STATIC_30_TECH_MATRIX.json",
+      "sha256": "d824677d78b0e5739fae202740b30dfccd95881960f0a07014ef3b3452fe919c",
+      "bytes": 39117
+    }
+  ],
+  "optic_and_occlusion": "XJ获批金色/蓝灰圈纹保留单次front可见；旧front眼窗重复影18像素在子Art最终版定向alpha擦除。AC黑眼圈作为受控阴影保留；六人前发遮挡与脸向按实际U00核。",
+  "limitations": [
+    "这是静态相同背景/视窗/显示倍率的重组，非Client正式运行或QA结果。",
+    "30/30无标签盲辨是Master实图观察，不替代Gate2用户具体版本批准。"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "execution_id": "resume_20261017",
+  "status": "ONE_CANDIDATE_GENERATED_WAITING_REVIEW",
+  "started_at": "2026-10-17T12:07:41+08:00",
+  "approved_plan_path": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+  "approved_plan_sha256": "691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a",
+  "art_presign_sha256": "6c52cb9edd7906ddceea2340c1711695c0d3ad1692fab6414377487916ec4eeb",
+  "tech_presign": "deliverables/tech_lead/U04-EXPRESSION-REPAIR-PREFLIGHT-20261017/v0.1/TECH_PRESIGN.json",
+  "batch_budget": {
+    "maximum_calls": 48,
+    "prior_unknown_counted": 1,
+    "prior_known_result_count": 0,
+    "this_resume_attempts_before_call": 0,
+    "total_counted_before_call": 1,
+    "this_resume_attempts_after_call": 1,
+    "total_counted_after_call": 2,
+    "remaining_after_call": 46
+  },
+  "call": {
+    "sequence_in_batch": 2,
+    "stage": "AT_S0",
+    "state": "sad",
+    "tool": "Codex built-in image_gen.imagegen",
+    "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/inputs/at_s0_approved_face_256.png",
+    "unique_input_sha256": "c4b9af27a512f0e36825172881101e045343ae7f9e0c623a6cd143af42dd26d2",
+    "unique_input_actual_size_px": [
+      256,
+      256
+    ],
+    "source_original_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+    "source_original_sha256": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+    "source_rect_xyxy": [
+      380,
+      180,
+      636,
+      436
+    ],
+    "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/at_s0_sad_prompt_01.txt",
+    "prompt_sha256": "8b45d49f13caa37ae34ef23b3e6eea599836a092eed26efe3cc16926b8711e57",
+    "transparent_background": false,
+    "candidate_target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+    "status": "GENERATED_UNDER_REVIEW",
+    "tool_result_id": null,
+    "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_sad_imagegen_01.png",
+    "output_sha256": "284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176",
+    "tool_result": "SUCCESS",
+    "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-099327cc-09ef-427d-a5de-e5ddd9131977.png",
+    "output_actual_size_px": [
+      1254,
+      1254
+    ],
+    "output_mode": "RGB",
+    "output_has_alpha": false,
+    "output_hint": "Generated images are saved to /Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7 as exec-099327cc-09ef-427d-a5de-e5ddd9131977.png by default."
+  },
+  "finished_at": "2026-10-17T12:08:45+08:00"
+}

@@ -1,0 +1,1264 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017",
+  "version": "v0.1",
+  "status": "INTERNAL_ART_SUPPORT_READY_FOR_MAIN_ART_INTEGRATION_NOT_GATE2_APPROVED",
+  "source_canvas_px": [
+    1024,
+    1536
+  ],
+  "native_oneface_px": [
+    256,
+    256
+  ],
+  "u00_actual_viewport_px": [
+    1280,
+    720
+  ],
+  "u00_character_source_crop_xyxy": [
+    0,
+    0,
+    1024,
+    850
+  ],
+  "u00_character_display_px": [
+    614,
+    510
+  ],
+  "u00_character_display_offset_xy": [
+    -55,
+    210
+  ],
+  "stage_records": {
+    "MT_S2": {
+      "stage": "MT_S2",
+      "face_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_pivot_source_xy": [
+        488,
+        228
+      ],
+      "face_offset_in_base_export_xy": [
+        142,
+        100
+      ],
+      "base_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s2_clean_face_integrated.png",
+        "sha256": "49795c0018bd319e67af94498d985c6404f45924623463fb0498619e8478a5d5",
+        "bytes": 1376628
+      },
+      "front_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/mt_s2_front_hair_integrated.png",
+        "sha256": "e38f99495ba8ee1f32e2d268254e3d4f199eaae4b420ff95abd3dc3ecf6d026b",
+        "bytes": 358689
+      },
+      "original_export_contract": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      },
+      "psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final.psd",
+        "sha256": "438a12674e50ec9718e41eb514dc66366637741ce8a64598637045bcaa1d8404",
+        "bytes": 15685356
+      },
+      "psd_preview": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final_preview.png",
+        "sha256": "1511419e85e4c5ef5c587779c810df6dd788e07cbc4ebe81f9289fde20a04d04",
+        "bytes": 657495
+      },
+      "psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/MT_S2_FIVE_STATE_LAYER_MANIFEST.json",
+        "sha256": "1742b2373924a4a051ba4e3cfdd57e28a7ec01599a93d72c006690a9a17a9242",
+        "bytes": 14264
+      },
+      "psd_inspection": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_FINAL_PSD_INSPECTION.json",
+        "sha256": "035e8cc94598f0e951e4872b24713742c3361c175b514182413bf7bee2fc6e8b",
+        "bytes": 8290
+      },
+      "psd_total_layers": 48,
+      "psd_default_visible_new_state": "happy",
+      "old_15_expression_layers_hidden": true,
+      "all_five_new_states_switchable": true,
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_mt_s2_face_happy",
+          "state": "happy",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_happy.png",
+            "sha256": "a82817dedf7689791cf280050e4eeafa33acfc34bd366652fe0e75f1289121cd",
+            "bytes": 45924
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            360,
+            100,
+            616,
+            356
+          ],
+          "source_pivot_xy": [
+            488,
+            228
+          ],
+          "offset_in_base_export_xy": [
+            142,
+            100
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_happy_u00_after_1280x720.png",
+            "sha256": "7b705c8b781333ae9b9a9baeef6a85f32279d6684372a3c55ff2d55620527642",
+            "bytes": 1187496
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_happy_u00_before_1280x720.png",
+            "sha256": "d77e39ee9d9bacfb44d5147a1bb889af9ef72bb08198508750de7fb1e5b821df",
+            "bytes": 1185766
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_happy_PSD_SWITCH_PREVIEW.png",
+            "sha256": "1511419e85e4c5ef5c587779c810df6dd788e07cbc4ebe81f9289fde20a04d04",
+            "bytes": 657495
+          },
+          "visual_observation": "张口喜悦、眼神抬起；保留原红发发束。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_happy_mt_at_unit01.png",
+            "sha256": "7483f2a3e16eaab2c28c2658fdc915023c34d5a55c721c1537e1ee0b23bf1e34",
+            "bytes": 1640760
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_happy_FEATURE_MASK_DEFINITION.json",
+            "sha256": "832262db011e975ef7a543ad3c43d495b56364d307cd27b3097ae5010a4d9c04",
+            "bytes": 7383
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_happy_union_mask.png",
+            "sha256": "9c95e637d635376d12bf37f1e1267c60375a33f68645df67285413a35768554f",
+            "bytes": 9579
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/feature_extract_report.json",
+            "sha256": "f82fc883fb94e96e6e606f6bdf4b67711614fb431145ba8deb906af875d8b4f1",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/01_left_brow.png",
+              "sha256": "e258191d3540276a91fd04a20af95ecef22de386d9380818c342f53b368a7dfb",
+              "bytes": 107983
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/02_right_brow.png",
+              "sha256": "68651cfb95e40baae2ae7250642a766c90668e361b41b033eaddc6b6b9b40be7",
+              "bytes": 107452
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/03_left_eye.png",
+              "sha256": "5065ba60049e763de4a908bbb0c6368bae89d731ab5cfb3a682f60cb2126599d",
+              "bytes": 109049
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/04_right_eye.png",
+              "sha256": "bd05b807fb1e0fd54919eff3760ab7ede2f08fcbeea3960a495488212c3ed69b",
+              "bytes": 108614
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/05_mouth.png",
+              "sha256": "af2e0319bd5b6433b66ec64f31536979d8e648c8a6a4516ec580815cbd2f2b70",
+              "bytes": 108282
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_happy/semantic_layers/06_nose_minor.png",
+              "sha256": "e67dd4baaec50da70df5cd59777bf2b8fcc6ea72f4b055380dfdb4ef941b8bf6",
+              "bytes": 106996
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_mt_s2_five_state_final.psd",
+            "sha256": "438a12674e50ec9718e41eb514dc66366637741ce8a64598637045bcaa1d8404",
+            "bytes": 15685356
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_mt_s2_face_surprised",
+          "state": "surprised",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_surprised.png",
+            "sha256": "905b71d83cac6e59611af81cc6943c6ed952df3813ee901ff361074e77b15021",
+            "bytes": 42079
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            360,
+            100,
+            616,
+            356
+          ],
+          "source_pivot_xy": [
+            488,
+            228
+          ],
+          "offset_in_base_export_xy": [
+            142,
+            100
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_surprised_u00_after_1280x720.png",
+            "sha256": "3a01ea2b9a5a81bf011b59e93052e3b704b26575d848f23022cbf01aa741350b",
+            "bytes": 1186864
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_surprised_u00_before_1280x720.png",
+            "sha256": "c1626b8005555bc97089e6d45525dc688761510a0ce84e6189f4ed0c919679f7",
+            "bytes": 1186274
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_surprised_PSD_SWITCH_PREVIEW.png",
+            "sha256": "a923277b97fd98cf9a61b2e97bfa9777448fb371b27cf3f13e37b878720a78a1",
+            "bytes": 656143
+          },
+          "visual_observation": "冻结首样；睁眼与圆口联动。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "frozen_first_sample": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/sample_snapshots/MT_S2_SURPRISED_20261017/u04_mt_s2_face_surprised.png",
+            "sha256": "905b71d83cac6e59611af81cc6943c6ed952df3813ee901ff361074e77b15021",
+            "bytes": 42079
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_01_left_brow.png",
+              "sha256": "cbc2b3bdb0371e26d4896f7e804aa87bdba1312616501bc5d5c9fefa2bd24f47",
+              "bytes": 105820
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_02_right_brow.png",
+              "sha256": "fb833410255866c2a65b269be5c490227f53595d9efacc2bc308f579218fa4a3",
+              "bytes": 105233
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_03_left_eye.png",
+              "sha256": "144c391454bc68f58675df8175b278de48c706139d6905fc99d92b7eee4d3124",
+              "bytes": 106868
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_04_right_eye.png",
+              "sha256": "3e3a49591e50e580cf141046b49faf97f18d1d01e3f7812d64450591e04d5bb4",
+              "bytes": 106251
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_05_nose_minor.png",
+              "sha256": "7c6788d22e4f36ad6ead0b8dc9c9be9fbbd5e0c63e8596be8cbe97112bbfd695",
+              "bytes": 104852
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/MT_S2_mt_s2_surprised_new_06_mouth.png",
+              "sha256": "cbb0e2632bf5020b732ca72c03fafe0f1068e4c212d4cb793127fcf3f7522ea9",
+              "bytes": 105807
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_surprised_switch.psd",
+            "sha256": "2446a40ea20a93e026937d2e2ee43696617de18d817f7ed10dca376741dee596",
+            "bytes": 15685356
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_mt_s2_face_sad",
+          "state": "sad",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_sad.png",
+            "sha256": "89a62398f74770ce8cce68f46f75f58978e01229d2444a8f9aeecd30d1fe0b61",
+            "bytes": 41118
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            360,
+            100,
+            616,
+            356
+          ],
+          "source_pivot_xy": [
+            488,
+            228
+          ],
+          "offset_in_base_export_xy": [
+            142,
+            100
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_sad_u00_after_1280x720.png",
+            "sha256": "c03a03adb7fbdbe249cba739b48f5b2b105f3356a5274ba87caf84ec523c0ea2",
+            "bytes": 1186691
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_sad_u00_before_1280x720.png",
+            "sha256": "4390f0f29bcb994390412df069b53be6c8bced2f1b7893cddac167497c104d97",
+            "bytes": 1185499
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_sad_PSD_SWITCH_PREVIEW.png",
+            "sha256": "e87bf754527b20eb8f4579f4b03e5728df8c0c493a36791ef485126e19d044cf",
+            "bytes": 655875
+          },
+          "visual_observation": "两眉悲伤上提、双眼含泪、嘴角下垂。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_sad_mt_at_unit01.png",
+            "sha256": "e7b9156aa7f7896a55de7f2c3ade119100dac84eabb319638463a1426584a4e0",
+            "bytes": 1628967
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_sad_FEATURE_MASK_DEFINITION.json",
+            "sha256": "97b21f6009d7aaa215771833d07958c43060d61092240ac08d54c16213da88f2",
+            "bytes": 7278
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_sad_union_mask.png",
+            "sha256": "21f6430112ecb551ca67d5093ff5559809d92d02eb5b57cccb8a48796d3fd52f",
+            "bytes": 8685
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/feature_extract_report.json",
+            "sha256": "4a642af889a3b2e3ecc576ac0d4a54c99320d2ea7c68f2cf8839b705b14cf0f7",
+            "bytes": 6866
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/01_left_brow.png",
+              "sha256": "69400e5cdb343f48182fef07c402c500d66c7c7e4d0f2a8858e35dc6efa13638",
+              "bytes": 105789
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/02_right_brow.png",
+              "sha256": "0b0cd38c6e305f4ffc5f19cefa36954e34d892efa6c6cf9beb1260514f045492",
+              "bytes": 105448
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/03_left_eye.png",
+              "sha256": "04435c1404e7cbd94081a3914f9f17c50d6393205f05a265835afa346aa62cb1",
+              "bytes": 107454
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/04_right_eye.png",
+              "sha256": "300a4211e1c012c6e3ec6789224d2baf4311707e4caa2127ae37d500eb8f99cf",
+              "bytes": 106690
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/05_mouth.png",
+              "sha256": "46f47e5ff837669cdd8fe3a4d355cc05dcf6ca5b2fac57cb2bea08f02c8c8f82",
+              "bytes": 105805
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_sad/semantic_layers/06_nose_minor.png",
+              "sha256": "5a2e2613d3b4aed92933592559f4e75cdef5234840e68c09e7d92ca490da2bb5",
+              "bytes": 105148
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_sad_switch.psd",
+            "sha256": "cf541532828875727ebb67405636385b4daf8d403560db8d1f413507630e69f5",
+            "bytes": 15685356
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_mt_s2_face_smile",
+          "state": "smile",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_smile.png",
+            "sha256": "6460ffffcfb26f18b2b1e516a758d64934a84656100ab20c4f68c9942f031c0b",
+            "bytes": 40113
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            360,
+            100,
+            616,
+            356
+          ],
+          "source_pivot_xy": [
+            488,
+            228
+          ],
+          "offset_in_base_export_xy": [
+            142,
+            100
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_smile_u00_after_1280x720.png",
+            "sha256": "2ee4bab50f5e0770bdcd684ed79a4207a97137c4699b0b3d2ce58783e845fbdc",
+            "bytes": 1186523
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_smile_u00_before_1280x720.png",
+            "sha256": "ae36b7093091c7d70cbb0a01f523ae3a042804144b57bc5e00844c51d0a2c731",
+            "bytes": 1185593
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_smile_PSD_SWITCH_PREVIEW.png",
+            "sha256": "be01bece5b3a7d710088c44fa5debf66c5344f1a785d5344fdde2fc274ff6140",
+            "bytes": 654492
+          },
+          "visual_observation": "闭口小幅微笑；明显弱于happy。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_smile_mt_at_unit01.png",
+            "sha256": "1800102b292394177aead3776bc4f2e8122aecc653a8872985003b71a67b21e1",
+            "bytes": 1627844
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_smile_FEATURE_MASK_DEFINITION.json",
+            "sha256": "95a4bb6416014cd0c364da231f7b9c60c4b46f00532fe269b9b18258b106fe4c",
+            "bytes": 7284
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_smile_union_mask.png",
+            "sha256": "8a3dd77ac524bbd1c8b15dc508abe954476d135005a94117347ffc08a50736c9",
+            "bytes": 8796
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/feature_extract_report.json",
+            "sha256": "57775f4c38febfefde5f98bc7f2fefe09d1dea602e1faf9c0b0e1630b01d24da",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/01_left_brow.png",
+              "sha256": "c63093e9bebd34f86abcc873a9dcfd8166533965897691bfd0abbfa12c097bcc",
+              "bytes": 105006
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/02_right_brow.png",
+              "sha256": "e4e8f499a33da926ef6c5c3a5cebed402fdf923e68481153453710a2b293b525",
+              "bytes": 104425
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/03_left_eye.png",
+              "sha256": "719e7d23610065508e30a34800c0fa91caff8b2676dc0246f2a3b6e59322f16e",
+              "bytes": 106204
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/04_right_eye.png",
+              "sha256": "be7c312a4be44f57b6b19e2be62ec94ff63b6af96535a7b8951dcd6e31fd921c",
+              "bytes": 105470
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/05_mouth.png",
+              "sha256": "c541122d3587b83b9db69fe864405f4fc2e8e88c6d9ea45fd9c3bb5de7bc0d46",
+              "bytes": 104453
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_smile/semantic_layers/06_nose_minor.png",
+              "sha256": "8ee6fb9704b8bb9f155f149fc9a39eb14b7cfa8849ee0df1ed709c65ecf7de91",
+              "bytes": 103958
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_smile_switch.psd",
+            "sha256": "2e54aa67ef29a9dce83d34aae0a502dd36e69994804924a57ffddee7efa4833e",
+            "bytes": 15685356
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_mt_s2_face_angry",
+          "state": "angry",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_angry.png",
+            "sha256": "00185836c1e75b353facd859389a5f98231ddde1a3223125fde8fb21e4f7eb50",
+            "bytes": 38459
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            360,
+            100,
+            616,
+            356
+          ],
+          "source_pivot_xy": [
+            488,
+            228
+          ],
+          "offset_in_base_export_xy": [
+            142,
+            100
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_angry_u00_after_1280x720.png",
+            "sha256": "6114af1125f654ec235099c85244ca4bee51dace4a72251e606243a754b9e885",
+            "bytes": 1186670
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_angry_u00_before_1280x720.png",
+            "sha256": "d7345e228eb5fba0a0687ea6888720788df01ba023d7c478dfdffa6bd272841d",
+            "bytes": 1185555
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/MT_S2_angry_PSD_SWITCH_PREVIEW.png",
+            "sha256": "d41680f8e6d06acb66dd572734b08afcd66297aacd681b85b62274c186e9a3c1",
+            "bytes": 654262
+          },
+          "visual_observation": "双眉双眼收紧、紧绷下弯口；不擦除原发束。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/mt_s2_angry_mt_at_unit01.png",
+            "sha256": "32b4598828bdb67eb5911a8de259d4d37b9ebf24c1f7e2f0c904542f462edacb",
+            "bytes": 1638460
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_angry_FEATURE_MASK_DEFINITION.json",
+            "sha256": "6eae248eead4bbb754a2db4eccac4c8196bf55ec3ac1a45740cbb7dfcbf586fb",
+            "bytes": 7585
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/MT_S2_angry_union_mask.png",
+            "sha256": "459f0c4d36aa6b1661390d87da001f3c25230e63fb4a682ff83cf793285f2864",
+            "bytes": 8531
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/feature_extract_report.json",
+            "sha256": "07c4b42859d47bce0bf859726ecb030d277bed4babafa80ec01822bc7be446b9",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/01_left_brow.png",
+              "sha256": "0e5ccea201a76272b8897a238b27aef23cdb1019a574e8abc86522a5915f22dd",
+              "bytes": 105981
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/02_right_brow.png",
+              "sha256": "652d17e49fa356ae761a09d99d1973baff25ff03cb5b55a526fd56d4e018142a",
+              "bytes": 105352
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/03_left_eye.png",
+              "sha256": "18dca600307d6f9ad19a28715cb73b91d8c1c18fd3bff3c6fa52e79c1effa8c2",
+              "bytes": 106686
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/04_right_eye.png",
+              "sha256": "49038f359d0421c77d9d0506cbdee610c5b9a575b96194a4620b4b2fc586e6b4",
+              "bytes": 106433
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/05_mouth.png",
+              "sha256": "1b0f723bba80180f4749acd1823cb40b88bf62e051877b163d207dd55d809779",
+              "bytes": 105687
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/MT_S2_angry/semantic_layers/06_nose_minor.png",
+              "sha256": "b7660d96cafbd9bafb117056e4fd8f80c7993d56379e8267a34878f706ea988a",
+              "bytes": 104999
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_mt_s2_angry_switch.psd",
+            "sha256": "ef76ae91679c719eb1b822fe93123629867851917e360adb12d50af9ff047c16",
+            "bytes": 15685356
+          }
+        }
+      }
+    },
+    "AT_S0": {
+      "stage": "AT_S0",
+      "face_source_rect_xyxy": [
+        380,
+        180,
+        636,
+        436
+      ],
+      "face_pivot_source_xy": [
+        508,
+        308
+      ],
+      "face_offset_in_base_export_xy": [
+        133,
+        180
+      ],
+      "base_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_clean_face_integrated.png",
+        "sha256": "623b7275993c7905bdd5d6e43e79e33ce47812b2c657d1531ebbeb7d8eae07a3",
+        "bytes": 1379952
+      },
+      "front_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/at_s0_front_hair_integrated.png",
+        "sha256": "eab977ce075f6f198e8e4c98287660bc5a4db2489b017bf6d9f26e5530d656e9",
+        "bytes": 353048
+      },
+      "original_export_contract": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      },
+      "psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+        "sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+        "bytes": 14404564
+      },
+      "psd_preview": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final_preview.png",
+        "sha256": "4c387dfb6bedfa9d9d0bf17b1d7ac8a982532362e1c39b8a8ddcb80beec28c17",
+        "bytes": 636985
+      },
+      "psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/AT_S0_FIVE_STATE_LAYER_MANIFEST.json",
+        "sha256": "dc494bb2146f41c1a976628f778b0a0b995f68b98dbd7d0f50b591e5e9941566",
+        "bytes": 14264
+      },
+      "psd_inspection": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_FINAL_PSD_INSPECTION.json",
+        "sha256": "0194defc7ec00b092a89f851e8396775dc4d46311c3a940899a1901ca21f424c",
+        "bytes": 8292
+      },
+      "psd_total_layers": 48,
+      "psd_default_visible_new_state": "happy",
+      "old_15_expression_layers_hidden": true,
+      "all_five_new_states_switchable": true,
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_at_s0_face_happy",
+          "state": "happy",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_happy.png",
+            "sha256": "4888eb05feb0bb307a95fcd7a8605d7b7eea99cf7d855b8837a4d137e211ca59",
+            "bytes": 33620
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            380,
+            180,
+            636,
+            436
+          ],
+          "source_pivot_xy": [
+            508,
+            308
+          ],
+          "offset_in_base_export_xy": [
+            133,
+            180
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_happy_u00_after_1280x720.png",
+            "sha256": "1467dca802f4c939f24f5b520abf512a00128e6ae792c8ac2c9d363223fbc3fc",
+            "bytes": 1193113
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_happy_u00_before_1280x720.png",
+            "sha256": "41f2d2cb43051c7eab3ae4f1d58cc1f817d9408cdeb94b3f1cd947c9089dc572",
+            "bytes": 1191294
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_happy_PSD_SWITCH_PREVIEW.png",
+            "sha256": "4c387dfb6bedfa9d9d0bf17b1d7ac8a982532362e1c39b8a8ddcb80beec28c17",
+            "bytes": 636985
+          },
+          "visual_observation": "困倦基调上眼睛点亮并张口高兴。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_happy_mt_at_unit01.png",
+            "sha256": "265bd1df2e2839bec452b36398992744f2cd804dbfc4bb0cb603f00553dad381",
+            "bytes": 1654022
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_happy_FEATURE_MASK_DEFINITION.json",
+            "sha256": "c031c8a0672d6d31841d02ea8caf1cb0908804cce107749683826c68c1d2adf1",
+            "bytes": 7155
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_happy_union_mask.png",
+            "sha256": "ad5e3da9110fa05790494831744e13092100cafed3557a3f1aa09fb887660498",
+            "bytes": 7717
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/feature_extract_report.json",
+            "sha256": "42b82ef438073ab4c1cafcedb5d6a3238a1ccc85d8d98eb41fdd35b39ade8e84",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/01_left_brow.png",
+              "sha256": "4530af01a8ede543d8cb52290467c7d43689c48b05ded47c282294d994c3ae44",
+              "bytes": 110837
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/02_right_brow.png",
+              "sha256": "ac0af2481877d59ee88d4062ec567222469dceeac6aa3bc2c9b33c4d57333987",
+              "bytes": 111061
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/03_left_eye.png",
+              "sha256": "213dca15faa55006fc75e234c0addb67ad02c12678c6f5fa2b09f918f957cfe3",
+              "bytes": 111474
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/04_right_eye.png",
+              "sha256": "d2c4cc1c8451b2cea89af0d95f08c175e023c4e35569b568dce929c4e7820df2",
+              "bytes": 111769
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/05_mouth.png",
+              "sha256": "6e40336c07b316b65d7425146fae9263fc8da0a5025dd80e234ea212a52701e6",
+              "bytes": 111229
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_happy/semantic_layers/06_nose_minor.png",
+              "sha256": "b56c58dff4a870c129e356bac067cfbbbc307fb86f289b76f3cfea407bdbe44e",
+              "bytes": 110154
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+            "sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+            "bytes": 14404564
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_at_s0_face_surprised",
+          "state": "surprised",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_surprised.png",
+            "sha256": "2d486ddec9bb3c181dd6567db7b0718ecb135a3f5d732228e5d997d6293efc53",
+            "bytes": 33925
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            380,
+            180,
+            636,
+            436
+          ],
+          "source_pivot_xy": [
+            508,
+            308
+          ],
+          "offset_in_base_export_xy": [
+            133,
+            180
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_surprised_u00_after_1280x720.png",
+            "sha256": "4dc360cfe2c17a71d54abf3f52242317b6fca7b84daa174cf141a3a3285e8ecb",
+            "bytes": 1193250
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_surprised_u00_before_1280x720.png",
+            "sha256": "ee214ead55424285f6fad0184fb648a6bb9726360f2985b796e9a57f9e68e5e3",
+            "bytes": 1191826
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_surprised_PSD_SWITCH_PREVIEW.png",
+            "sha256": "2f72a071b184bea0fa235820ab1e39a9f584c92ed97c1b6178fee692a61e0287",
+            "bytes": 637201
+          },
+          "visual_observation": "眉眼抬起、眼睑睁大、圆口；疲惫底色保留。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_surprised_mt_at_unit01.png",
+            "sha256": "1f4e23727f13dea21f6584345ebbe50bd3ee76187b8119c51085a5ff82638e0f",
+            "bytes": 1674801
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_surprised_FEATURE_MASK_DEFINITION.json",
+            "sha256": "a78f5f5d26e222901758d09eddcb59e0059e57e6976b8501147f0a63143685d6",
+            "bytes": 6971
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_surprised_union_mask.png",
+            "sha256": "d45f824c8b2cd64249eacc3e865d830bd3bedb87b3848fd615729711b4c57358",
+            "bytes": 7778
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/feature_extract_report.json",
+            "sha256": "9c2db3cf78f56d2e3da9a6f697df1299787bf252eaddd0f68cfcd9381de7fc35",
+            "bytes": 6950
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/01_left_brow.png",
+              "sha256": "5ede171244d988478ac2a56168125bc5688ac4af1cdf5b990db701d1319708f9",
+              "bytes": 110214
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/02_right_brow.png",
+              "sha256": "f341e9553d8636fe8817b43b693138fa4b1bf5ab923fb2649ef4b48a85868e08",
+              "bytes": 110502
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/03_left_eye.png",
+              "sha256": "a7ddcb704e29f383ce13472ff15639f164b9cf1ea3f213e303e998b220091f1d",
+              "bytes": 111070
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/04_right_eye.png",
+              "sha256": "4553c067c54cbdf4adb026e8ef24782e119dc1d5e941c0c9aaaea8a68fa8f557",
+              "bytes": 111401
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/05_mouth.png",
+              "sha256": "4f38f333647e86e8837eb9664225b1f35efb5d6be09535ea2356f8c4066afec2",
+              "bytes": 110204
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_surprised/semantic_layers/06_nose_minor.png",
+              "sha256": "f2a9d382e0c439eb799fdd12610e132633e6dde64f57dcff7e8af8e414c5b05a",
+              "bytes": 109811
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_surprised_switch.psd",
+            "sha256": "bfb57bdc2bd6b459d06476fef778f6fcf8b2c790343faca84ae4fb005990ff7a",
+            "bytes": 14404564
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_at_s0_face_sad",
+          "state": "sad",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_sad.png",
+            "sha256": "8f0621cb20f46af99788731bfb9d08be46b17a92922d9b7e246e82a5584e38ed",
+            "bytes": 27813
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            380,
+            180,
+            636,
+            436
+          ],
+          "source_pivot_xy": [
+            508,
+            308
+          ],
+          "offset_in_base_export_xy": [
+            133,
+            180
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_sad_u00_after_1280x720.png",
+            "sha256": "3dbb3bfe2ce9cecab1c6aaf3fb2c1556def916b6e8247809cd62112e544b61cb",
+            "bytes": 1191818
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_sad_u00_before_1280x720.png",
+            "sha256": "8ec9a461bbba98649f7e84ef50d5e5092aaa9c44fd222807554fea625332f021",
+            "bytes": 1191321
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_sad_PSD_SWITCH_PREVIEW.png",
+            "sha256": "1f2fccece5721ec488d9b345e6ba53ae3c5771075e6671b6d07165b8a3d6a11a",
+            "bytes": 633046
+          },
+          "visual_observation": "冻结首样；低垂眉眼与小垂口。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "frozen_first_sample": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/sample_snapshots/AT_S0_SAD_20261017/u04_at_s0_face_sad.png",
+            "sha256": "8f0621cb20f46af99788731bfb9d08be46b17a92922d9b7e246e82a5584e38ed",
+            "bytes": 27813
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_01_left_brow.png",
+              "sha256": "7f1be0caa79aac5670a1725936429e9f89f2019b859775f636df12ef65fa7bb4",
+              "bytes": 106624
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_02_right_brow.png",
+              "sha256": "cbd3e783f670a3bd1cb7903421df7c4d4ce24d8119d5a2074664c48ee503df21",
+              "bytes": 106838
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_03_left_eye.png",
+              "sha256": "4509c6ca90589580ad80a75fd715a7e0374c2bc6c99d92c4f466679a280202b9",
+              "bytes": 107224
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_04_right_eye.png",
+              "sha256": "084e37c641d9d3b0af9d9b6c0aa62a3f81f990076010285713bb1793d31330c2",
+              "bytes": 107774
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_05_mouth.png",
+              "sha256": "ff90107576889e46982d5833341e0b0b9e20e0636938c7a56b6648707cb50656",
+              "bytes": 106491
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/frozen_sample_layers/AT_S0_at_s0_sad_new_06_nose_minor.png",
+              "sha256": "e05b071206ef4ad3241c520c12f71ae99c8baf1552edd0758ad0c1dbafe4a9dc",
+              "bytes": 105977
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_sad_switch.psd",
+            "sha256": "9838e45d174486ece919fbc0fe9d1713ac9eb650c74175cb28a5bf807d354fb5",
+            "bytes": 14404564
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_at_s0_face_smile",
+          "state": "smile",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_smile.png",
+            "sha256": "3d8057befa0e7f6060b99288f6be53a2ba43ebd8ec549845c9e361e5cf0e92df",
+            "bytes": 30546
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            380,
+            180,
+            636,
+            436
+          ],
+          "source_pivot_xy": [
+            508,
+            308
+          ],
+          "offset_in_base_export_xy": [
+            133,
+            180
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_smile_u00_after_1280x720.png",
+            "sha256": "59bcfd9640a839ec40c056f2b425e5a91fdec710acad4b619aeaba16a5b2990f",
+            "bytes": 1192226
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_smile_u00_before_1280x720.png",
+            "sha256": "592811307d6f1d449e061f97b161f4c83dd1131918b215f40ed3c6ba956f2153",
+            "bytes": 1191305
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_smile_PSD_SWITCH_PREVIEW.png",
+            "sha256": "a4ff31cf376b21214c38c39ee6567934eb3bcd1ccaa3491bea0692566abd46bf",
+            "bytes": 634520
+          },
+          "visual_observation": "半睁困倦眼与收敛闭口微笑。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_smile_mt_at_unit01.png",
+            "sha256": "64407bfe8e4027997478541d7939642874b7630e6797179bb0737700bc041a67",
+            "bytes": 1660770
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_smile_FEATURE_MASK_DEFINITION.json",
+            "sha256": "9e20c14a4ad6bb54be83e432378fcaad1e43cbfd76383eea2f00c1534bc86dcb",
+            "bytes": 7056
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_smile_union_mask.png",
+            "sha256": "68fe2fc6b13571203d29728f3463dafabf39bbbf1a2d981e616e180b38142351",
+            "bytes": 7946
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/feature_extract_report.json",
+            "sha256": "545a2ff62d33dc974830cdc521a5f2a4d85b5eb722bbf261d36772b8093f0857",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/01_left_brow.png",
+              "sha256": "80eca32a2393eba0327d1ff8ff2abbc7045e6c1f5bcdc79f1e317c93fdcb4ca6",
+              "bytes": 107494
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/02_right_brow.png",
+              "sha256": "930a8ef6aa4894907380d89121dc7cc9d67b471331cb61b776a0341f5ee9960c",
+              "bytes": 107593
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/03_left_eye.png",
+              "sha256": "06ba52780beb319d3c8e58d634caf3d8323eb8a24f7f13c1825746f16a46a3f8",
+              "bytes": 108203
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/04_right_eye.png",
+              "sha256": "a9376cbda82c093d76bd3462ed0c6d086b0b9c1e999ec04aa84bf7ff255605bb",
+              "bytes": 108688
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/05_mouth.png",
+              "sha256": "67d343b374c5805190bc2a803bfc485bc6185a21c4b91d14d258eb554b1f90c0",
+              "bytes": 107473
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_smile/semantic_layers/06_nose_minor.png",
+              "sha256": "d5daa474c2eb9afe82e86be62f1210d58252b4dce898d633b06ee0f87ae74be3",
+              "bytes": 106865
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_smile_switch.psd",
+            "sha256": "e6b410752bf281005fc1b67424e254c946977ca20c7b392afc7a61bbc7122f9a",
+            "bytes": 14404564
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_at_s0_face_angry",
+          "state": "angry",
+          "native_oneface": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_angry.png",
+            "sha256": "b40786748fa14a403cc0aae11540fb069564d4c0e8445dcd74ced5a4363729f3",
+            "bytes": 29725
+          },
+          "size_px": [
+            256,
+            256
+          ],
+          "mode": "RGBA",
+          "source_rect_xyxy": [
+            380,
+            180,
+            636,
+            436
+          ],
+          "source_pivot_xy": [
+            508,
+            308
+          ],
+          "offset_in_base_export_xy": [
+            133,
+            180
+          ],
+          "u00_after": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_angry_u00_after_1280x720.png",
+            "sha256": "bdb04a5534faa2537920ba54032e6a0b5675d03a93123d98d0d963a8c634f2c0",
+            "bytes": 1192395
+          },
+          "u00_before": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_angry_u00_before_1280x720.png",
+            "sha256": "cf2ecbbaf4c4948efa9aeec49ae76e88e4b516b01f8adb0b5f2edcca42cceee1",
+            "bytes": 1191273
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/AT_S0_angry_PSD_SWITCH_PREVIEW.png",
+            "sha256": "bb8b2e744d66ff2c7ea3b0bf41b4006d91a9690073597fb7b72a7d39faffe196",
+            "bytes": 634697
+          },
+          "visual_observation": "半睁眼收窄、两眉内压、紧口，与sad区分。",
+          "client_formal_path": null,
+          "client_import_uuid": null,
+          "client_import_status": "PLANNED_AFTER_GATE2",
+          "candidate": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/at_s0_angry_mt_at_unit01.png",
+            "sha256": "32d95cb8ad47d47303b77a8508afdb84dcbc78a39d0bbf1e541e5c3128797a31",
+            "bytes": 1639844
+          },
+          "art_mask_definition": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_angry_FEATURE_MASK_DEFINITION.json",
+            "sha256": "790639e87958ee12ce4940f32ac4acfbeb9e2d9d4393eea4b1c0287c3fafe850",
+            "bytes": 7157
+          },
+          "art_union_mask": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/masks/AT_S0_angry_union_mask.png",
+            "sha256": "aa90a73f11640484728951eb6a780d70bb45c83580020984ff428a075f7e4d9e",
+            "bytes": 7421
+          },
+          "feature_extract_report": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/feature_extract_report.json",
+            "sha256": "ad6e9ac76c2376d49f313e51f6756db8bc345af5ac1e87accafd400b7aaaf31c",
+            "bytes": 6894
+          },
+          "semantic_layers": [
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/01_left_brow.png",
+              "sha256": "53d7dc30a529a95e5914b4bf6d43107bbce6a9e20e57bc3191c02ad5c399be54",
+              "bytes": 108310
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/02_right_brow.png",
+              "sha256": "62c300930dd0a022458de3c8578aa613cc49b717edb4aada6209f6c65d078320",
+              "bytes": 108755
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/03_left_eye.png",
+              "sha256": "6e6c79880fca2bf5eade2ff237a39f1f5b90be386abccd842c28d0eaa64779e1",
+              "bytes": 108836
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/04_right_eye.png",
+              "sha256": "15c061f2fe2a0fd91e0786a3d18e65708172814971eda33a6b35ae58d01a8a36",
+              "bytes": 109251
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/05_mouth.png",
+              "sha256": "2fc8657689da7bff2f09b2080d30d9f0694a3e1a9abf8823fdabdba79190ff6c",
+              "bytes": 108510
+            },
+            {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/features/AT_S0_angry/semantic_layers/06_nose_minor.png",
+              "sha256": "cf35a9589b9885263acb917b6bb29fe8fe0d39155f1c3b35f1b382059f45455c",
+              "bytes": 107824
+            }
+          ],
+          "switch_validation_psd": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/switch_checks/u04_at_s0_angry_switch.psd",
+            "sha256": "5dcb59910830f09ba39da518d2ef39068bba05b5e448e2c2a2cc0328545c6a63",
+            "bytes": 14404564
+          }
+        }
+      }
+    }
+  },
+  "client_import": "PLANNED_AFTER_USER_GATE2_ONLY; no client formal path or UUID yet",
+  "source_rights": "本项目已获批原创源图与首样；未引入外部图片或新字体。",
+  "master_blind_result": {
+    "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_RESULT.json",
+    "sha256": "137d3b231890114a88753bcc2b5c19a06df1e97cb2b25dd3b65684fa0f417882",
+    "bytes": 2481
+  },
+  "named_before_after_boards": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_U00_NAMED_BEFORE_AFTER.png",
+      "sha256": "29762c02854b04cbac6e76ec7fd21d219697e935adba5d2bbfaa51a56c1b1def",
+      "bytes": 302305
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_U00_NAMED_BEFORE_AFTER.png",
+      "sha256": "76dcd81dd282bb8b2c56a2ed82f00f18ee18cc1159d0b35c00ba08db3e0275df",
+      "bytes": 282792
+    }
+  ],
+  "blind_boards": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_A_TO_E.png",
+      "sha256": "40be1c079878ce7383cfd8c83b9eea554efbcb67dca009644043b821abea8d26",
+      "bytes": 161300
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_A_TO_E.png",
+      "sha256": "917f7ac9877e305701060ba223bc028fbe9f2168c80d64535e49f88042d9dabb",
+      "bytes": 146977
+    }
+  ],
+  "psd_switch_validation": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/PSD_SWITCH_VALIDATION.json",
+    "sha256": "1088da2f954a1bfb9f97d71d9297f25575c21fa72d07dd678df8b3d489c0eb4a",
+    "bytes": 16866
+  },
+  "switch_check_psds_are_validation_only_not_client_import": true
+}

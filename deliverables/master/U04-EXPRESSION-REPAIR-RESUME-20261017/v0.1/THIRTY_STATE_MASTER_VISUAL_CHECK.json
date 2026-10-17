@@ -1,0 +1,202 @@
+{
+  "checked_at": "2026-10-17T13:55:05+08:00",
+  "observer": "master",
+  "method": "answers recorded before reading independent label mappings; real U00 scale crops; all six stages",
+  "correct": 30,
+  "total": 30,
+  "confusion_pairs": [],
+  "result": "PASS",
+  "results": [
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ADXJ_DRAFT01_RESULT.json",
+      "sha256": "5b1ff0f8c8cebfd88f68252e11ffb7a50bf46eb7ed901ba9eb725b23bbfd2a0c",
+      "correct": 10,
+      "total": 10,
+      "rows": [
+        {
+          "stage": "AD_S0",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/ad_s0_five_actual_scale_blind_01.png",
+            "sha256": "178880c4f79d9bfc76d9190c09ba32ef2a358f19c7dec85241ee9a8120b6ae9e"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/ad_s0_blind_mapping_private_01.json",
+            "sha256": "ec395fe2109da97a8a6e1d91256da48a373a1a2cbec04f71ea5a605413d69013"
+          },
+          "answers": {
+            "A": "surprised",
+            "B": "smile",
+            "C": "angry",
+            "D": "sad",
+            "E": "happy"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态可分别辨认；高兴开口强于闭嘴微笑，生气眉间及口型收紧，悲伤内眉/眼睑/口角协调，嘴有口腔体积。"
+        },
+        {
+          "stage": "XJ_S0",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/review/expansion_draft/xj_s0_five_actual_scale_blind_01.png",
+            "sha256": "2cd756e2277679b49241e69b6943d3c8e680bc97386245623f45340adee7a291"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/xj_s0_blind_mapping_private_01.json",
+            "sha256": "ad42e3d7d6a3ec0d3129c8f75b4ef0973d84a19006cf80c5397f1446f622030d"
+          },
+          "answers": {
+            "A": "sad",
+            "B": "surprised",
+            "C": "angry",
+            "D": "smile",
+            "E": "happy"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态可分别辨认；惊讶睁眼张口，高兴眨眼笑口，怒眼收紧、悲伤下垂、微笑弱于高兴；镜圈单一固定前景，未见外部重复鬼环。"
+        }
+      ]
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_MTAT_RESULT.json",
+      "sha256": "137d3b231890114a88753bcc2b5c19a06df1e97cb2b25dd3b65684fa0f417882",
+      "correct": 10,
+      "total": 10,
+      "rows": [
+        {
+          "stage": "MT_S2",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_A_TO_E.png",
+            "sha256": "40be1c079878ce7383cfd8c83b9eea554efbcb67dca009644043b821abea8d26"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/mt_s2_BLIND_MAPPING.json",
+            "sha256": "149e0f28962dc1904f063d239d69135213eef75e81a2fdbff550f6d1c8d0c407"
+          },
+          "answers": {
+            "A": "smile",
+            "B": "angry",
+            "C": "surprised",
+            "D": "happy",
+            "E": "sad"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态均可辨；愤怒两眉眼张力明确，悲伤眉眼下垂与含泪/口角协调，惊讶眼口联动；高兴开口强于闭嘴微笑。",
+          "unscaled_u00_crop_px": [
+            230,
+            245
+          ],
+          "u00_character_scale": [
+            0.599609375,
+            0.6
+          ]
+        },
+        {
+          "stage": "AT_S0",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_A_TO_E.png",
+            "sha256": "917f7ac9877e305701060ba223bc028fbe9f2168c80d64535e49f88042d9dabb"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_BLIND_MAPPING.json",
+            "sha256": "947f4fe2db2aeb299af2a87a2da0e91e68d2947f1a31eeaaedeab48444537fea"
+          },
+          "answers": {
+            "A": "sad",
+            "B": "surprised",
+            "C": "smile",
+            "D": "angry",
+            "E": "happy"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态均可辨；保留0魂困倦基调，惊讶/高兴仍有独立眉眼口变化；高兴与微笑强度可区分，生气与悲伤眉眼张力不同。",
+          "unscaled_u00_crop_px": [
+            230,
+            245
+          ],
+          "u00_character_scale": [
+            0.599609375,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/BLIND_ACAJ_RESULT.json",
+      "sha256": "e8ec5acd1b7ecc77a82951db252565c91e53b2726bfae8791fc8b92b1bd1a3c4",
+      "correct": 10,
+      "total": 10,
+      "rows": [
+        {
+          "stage": "AC_S0",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_five_actual_scale_blind_01.png",
+            "sha256": "66b0b8880aeade67e1d2c331e27b2c97e2da15d530aeab00a86c1b8831c32983"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AC_S0_BLIND_MAPPING_01.json",
+            "sha256": "077c2dacbb2192090a1ac280a876ac90ea71659bcfa4a192c6257c428cfc588e"
+          },
+          "answers": {
+            "A": "angry",
+            "B": "sad",
+            "C": "smile",
+            "D": "surprised",
+            "E": "happy"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态均可辨；怒眉/紧眼/抿嘴、伤心内眉下眼睑、疲惫轻笑、惊讶睁眼开口及高兴闭眼大笑区别明确，黑眼圈保持，未见旧横眉或肤色矩形接缝。",
+          "u00_crop_xyxy": [
+            115,
+            210,
+            365,
+            440
+          ],
+          "resize": "none, exact 1280x720 pixels"
+        },
+        {
+          "stage": "AJ_S2",
+          "board": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_aj_s2_five_actual_scale_blind_01.png",
+            "sha256": "894c47d215222b776c59201eb94b7843f376c649a7009beda080059dd606e538"
+          },
+          "mapping": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/AJ_S2_BLIND_MAPPING_01.json",
+            "sha256": "ff11e454729c607dff8913bbb68fbf4fabaf760855519d36a36fe6110b8c7441"
+          },
+          "answers": {
+            "A": "happy",
+            "B": "smile",
+            "C": "surprised",
+            "D": "angry",
+            "E": "sad"
+          },
+          "correct": 5,
+          "total": 5,
+          "confusion_pairs": [],
+          "visual_observation": "五态均可辨；高兴张口与闭嘴轻笑有幅度差；C为惊愕张口，D为收眉紧眼抿嘴怒，E内眉/下垂眼睑为伤心，狭长侧目角色身份保留。",
+          "u00_crop_xyxy": [
+            105,
+            205,
+            355,
+            435
+          ],
+          "resize": "none, exact 1280x720 pixels"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "single Master static visual observation",
+    "PSDs/native final technical checks still separate",
+    "not user Gate2 approval or Client runtime validation"
+  ]
+}

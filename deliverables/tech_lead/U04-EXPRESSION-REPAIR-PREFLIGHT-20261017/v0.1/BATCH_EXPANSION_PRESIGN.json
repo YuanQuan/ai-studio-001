@@ -1,10 +1,24 @@
 {
   "task_id": "U04-EXPRESSION-REPAIR-PREFLIGHT-20261017",
   "reviewer": "tech_lead",
-  "decision": "BLOCKED",
+  "decision": "APPROVED",
   "findings": [
-    {"severity": "MAJOR", "message": "六代表样张技术核验NOT_TESTED，Art实图判断与Master独立看图也无新版候选基础；余24态扩批前提未满足。"},
-    {"severity": "INFO", "message": "48调用总额度中1次UNKNOWN_COUNTED，保守余额47；不重置账本、不把首图预签解释为扩批复签。"}
+    {
+      "severity": "INFO",
+      "message": "按SIX_SAMPLE_BINDING.json精确六样版本、已批方案SHA 691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a，六代表样静态技术门槛通过；允许对同一原方案余24态作内部技术扩批预签。"
+    },
+    {
+      "severity": "INFO",
+      "message": "AC/AJ现行原生base/front正式切片已按旧source rect及offset裁出；Tech独立比源画布原始RGBA差0、原生三层重组同区可见RGBA及alpha差0，未改base+oneface+front契约。"
+    },
+    {
+      "severity": "INFO",
+      "message": "余24态按MT/AT 8、AC/AJ 8、AD/XJ 8并行制作，仍共享48总调用上限与12返修上限。现有8/48（含MT旧UNKNOWN 1）、返修2/12，余额分别40与10；未知/失败照旧计数，不按执行组重置。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Art六样视觉Review及Art扩批预签需独立落盘并由Master核后释放；本技术签认不代替Art决定，也不预先判未来24态、全五态互斥、盲辨、Gate2或Client运行通过。"
+    }
   ],
-  "next_action": "保持余24态不放行；六样通过后核同版来源、工具、格式、尺寸、层接口、预算余额及实际风险，再作扩批复签。"
+  "next_action": "Master核Art同版六样Review和独立扩批签认后，在原授权30态范围释放余24态；各Owner逐态登记实际调用、版本、mask/PSD/切片/同尺度及停止条件，完成后提交Gate2具体版本用户审批。"
 }

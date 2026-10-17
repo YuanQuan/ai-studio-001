@@ -1,0 +1,43 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017",
+  "owner": "client",
+  "summary": "提交Art语义mask驱动的透明新oneface提取工具、六语义栅格层及AT_S0真实候选重组/边界检查；不修改客户端正式资源。",
+  "artifacts": [
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_USAGE.md",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/PIPELINE_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/DELIVERABLE.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/pipeline/expression_pipeline.py",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/pipeline/ORIGINAL_PIPELINE_SNAPSHOT.py",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/review/AT_S0_SAD_feature_extract_04/",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/review/AT_S0_new_psd_inspection.json",
+    "deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/review/old_at_s0_psd_inspection.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "工具使用真实旧坐标/缩放和获准ROI，合成保护ROI外像素与清边alpha，保留旧文件；不得用几何嘴或五官变形制作新表情。",
+      "result": "PASS",
+      "evidence": "PIPELINE_CHECK.json记录AT_S0源ROI [380,180,636,436]、Art v02 mask/candidate SHA、uniform Lanczos归一及ROI union mask外0差；坏路径/非法矩形拒绝且无输出，已有目录拒覆盖并保持原报告SHA。旧工具副本摘要与原DONE版一致，原PSD/exports及apps/client未改。"
+    },
+    {
+      "criterion": "支持Art输入单态新候选与语义遮罩、base/face/front导出及PSD显隐/重组验证，报告可编辑限制；失败拒绝输出不伪造PASS。",
+      "result": "PASS",
+      "evidence": "实际candidate经Art union mask导出oneface和6语义PNG，逐层重组RGBA差0；Art生成PSD检查预览可读，6个SAD_NEW可见、15个旧表情层隐藏，base/front可见且reference隐藏。Art Agent消息报告视觉PASS；当前Art候选Review JSON仍为PENDING，正式记录由Art/Producer更新。工具自身将视觉判定记为非自动决定，并记录栅格编辑与PSD嵌套显隐限制。详见PIPELINE_CHECK.json及review/AT_S0_new_psd_inspection.json。"
+    },
+    {
+      "criterion": "有可复核使用说明和适当旧资源/合成边界检查，无Client正式资产或代码修改；脚本只位于本任务pipeline目录。",
+      "result": "PASS",
+      "evidence": "PIPELINE_USAGE.md给出实际命令、256px透明oneface约束、192px输入限制和PSD检查说明。PIPELINE_CHECK.json记录旧PSD/新PSD解析与失败拒绝边界；全部脚本在本任务pipeline目录，未修改apps/client、旧Task源码或旧资源。"
+    }
+  ],
+  "assumptions": [
+    "Art提供的union-mask PNG是候选五官像素的唯一提取alpha；语义多边形只用于给分层PNG分配名称，不变更mask范围。",
+    "Art完成的PSD与候选视觉审批仍按正式项目流程由Art、Master和Producer记录；本Client交付不代替审批。"
+  ],
+  "risks": [
+    "候选在Art mask内部的皮肤色像素会保留；工具不做自动抠肤或颜色键，出现skin halo时须由Art拒绝候选。",
+    "PSD检查器读取PSD v1合成预览与顶层可见flag，无法证明嵌套组切换或原生笔刷/矢量可编辑性。",
+    "源导出尺寸与源矩形不同会发生重采样，不能视为无损恢复原生像素。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,43 @@
+{
+  "batch_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "call_id": "main-aj_s2-angry-01",
+  "owner": "main_art",
+  "stage": "AJ_S2",
+  "state": "angry",
+  "attempt_kind": "first_candidate",
+  "status": "GENERATED_UNDER_VISUAL_REVIEW",
+  "started_at": "2026-10-17T13:36:21+08:00",
+  "budget": {
+    "global_cap": 48,
+    "main_art_cap": 16,
+    "main_art_counted_before": 13,
+    "main_art_if_sent": 14,
+    "global_known_before_excluding_parallel": 15,
+    "repair_pool_charge": 0
+  },
+  "unique_input_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_angry_01_input_256.png",
+  "unique_input_sha256": "a372552aba7fe65a44b2c20f2e3a2db0de46089a8ac16a1358e3181c403bb5d0",
+  "input_actual_size_px": [
+    256,
+    256
+  ],
+  "prompt_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/aj_s2_angry_01_prompt.txt",
+  "prompt_sha256": "8877e145adaa80739ff2b872a6541e79f3e23b78fb59070543a2b84a92dce6c8",
+  "target_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_angry_imagegen_01.png",
+  "tool": "Codex built-in image_gen.imagegen",
+  "transparent_background": false,
+  "pre_call_visual_check": "Viewed approved face and old angry transparent features; retain slanted side-looking eyes and horn-like hair, make anger distinct from surprised/sad.",
+  "tool_result": "SUCCESS_LOCAL_OUTPUT",
+  "tool_result_id": null,
+  "built_in_generated_path": "/Users/yuanquan/.codex/generated_images/01a147f3-43bb-7851-b11f-51ad6ab84ef7/exec-ade7dd9b-e6a1-4863-ae00-b9368e2c6231.png",
+  "output_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/candidates/aj_s2_angry_imagegen_01.png",
+  "output_sha256": "f7c2bfb24b0cc735c9adb6ce6f61507775b4b969325741800fab9f31847045ae",
+  "output_actual_size_px": [
+    1254,
+    1254
+  ],
+  "output_mode": "RGB",
+  "finished_at": "2026-10-17T13:37:06+08:00",
+  "main_art_counted_after": 14,
+  "visual_candidate_note": "Inward brow tension, focused narrow side gaze and pressed downturned lips read anger; identity retained. Feature extraction/U00 pending; compare with tense surprised."
+}
