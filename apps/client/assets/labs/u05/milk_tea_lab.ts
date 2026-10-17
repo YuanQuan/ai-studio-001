@@ -1004,7 +1004,7 @@ export class U05MilkTeaLab extends Component {
   }
   private renderResult(): void {
     this.modalActions.clear(); const won = this.run?.status === 'won';
-    const title = won ? '三杯完成！' : this.run?.status === 'failed' ? '时间到，本局失败' : '本局结束';
+    const title = won ? '三杯完成!' : this.run?.status === 'failed' ? '时间到，本局失败' : '本局结束';
     const rows = won ? [{ text: `本地示例熟练度 +${this.lastXp}` }] : [{ text: this.status || title }];
     const footer = won ? [
       { label: '再玩一局', action: () => this.retry() }, { label: '返回菜单', action: () => this.leave() },

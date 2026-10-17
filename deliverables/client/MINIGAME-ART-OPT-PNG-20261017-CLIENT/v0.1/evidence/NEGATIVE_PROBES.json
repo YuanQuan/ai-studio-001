@@ -1,0 +1,40 @@
+{
+  "scope": "temporary negative inputs only; formal stage/output paths remain untouched",
+  "results": [
+    {
+      "name": "damaged_candidate_bytes",
+      "rejected": true,
+      "message": "PNG override候选SHA/字节数漂移：tex_sakura_rr_sky_r",
+      "destinationCreated": false,
+      "result": "PASS"
+    },
+    {
+      "name": "FILE_IDENTITY_drift",
+      "rejected": true,
+      "message": "PNG override审批身份文件SHA不匹配",
+      "destinationCreated": false,
+      "result": "PASS"
+    },
+    {
+      "name": "duplicate_stable_ID",
+      "rejected": true,
+      "message": "PNG override越界、重复或stage路径不匹配：tex_sakura_rr_sky_r",
+      "destinationCreated": false,
+      "result": "PASS"
+    },
+    {
+      "name": "out_of_scope_ID",
+      "rejected": true,
+      "message": "PNG override越界、重复或stage路径不匹配：UNAPPROVED_ID",
+      "destinationCreated": false,
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_base_stage_SHA",
+      "rejected": true,
+      "message": "override清单未绑定准确冻结v0.8 stage",
+      "destinationCreated": false,
+      "result": "PASS"
+    }
+  ]
+}

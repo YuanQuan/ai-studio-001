@@ -1,0 +1,51 @@
+[
+  {
+    "at": "2026-10-17T21:13:08.139108+08:00",
+    "command": [
+      "node",
+      "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/framework-contract-tests-v0.4.cjs"
+    ],
+    "cwd": "/private/tmp/minigame-png-qa-frozen-repository-20261017",
+    "scriptSha256": "282aef40927a2159efa617217025f8eb3d75630f90e19967426fa933ed62c424",
+    "exit": 0,
+    "stdout": "{\n  \"result\": \"PASS\",\n  \"scope\": \"deterministic owner-controlled contract tests; not device/rendering or DPR matrix\",\n  \"leases\": {\n    \"sharedLoadCalls\": 1,\n    \"sharedRefCount\": 2,\n    \"dependencyReleaseOrder\": [\n      \"release:root\",\n      \"release:dep\"\n    ],\n    \"releaseFaultCleanupOrder\": [\n      \"root-fault\",\n      \"dep-fault\"\n    ],\n    \"rollbackReleaseErrorSettles\": true,\n    \"cancelOwnerContinuesAfterReleaseError\": [\n      \"owner-a\",\n      \"owner-b\"\n    ],\n    \"retryAttempts\": 2,\n    \"cancelSkippedRootLoad\": true,\n    \"cycles\": 20,\n    \"cyclesReleased\": 20\n  },\n  \"viewport\": {\n    \"centerMapsToOrigin\": true,\n    \"safeCapsuleMapped\": true,\n    \"capsuleAcrossSafeCenter\": {\n      \"x\": 0,\n      \"y\": 368,\n      \"width\": 400,\n      \"height\": 32\n    },\n    \"logical48DesignUnits\": 108,\n    \"resizeNotificationAfterRead\": true,\n    \"zeroSizeRetainsRevision\": true,\n    \"platformExceptionFallback\": true,\n    \"offscreenCanvasPoint\": {\n      \"x\": -150,\n      \"y\": 0\n    },\n    \"wechatPrimaryFallback\": {\n      \"width\": 390,\n      \"height\": 844\n    },\n    \"initialWidth\": 320\n  }\n}\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-17T21:13:09.069090+08:00",
+    "command": [
+      "node",
+      "tests/client/asset-integration/asset_integration.test.cjs",
+      "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable"
+    ],
+    "cwd": "/private/tmp/minigame-png-qa-frozen-repository-20261017",
+    "scriptSha256": "47706e2bd33997194678932034caa40f3c987116a8293e361c9ef688ef066208",
+    "exit": 0,
+    "stdout": "production manifest coverage passed: 419 runtime paths across 5 configured bundle roots\nasset integration checks passed: 83 source rows, generated-frame geometry, lease sharing/release, source immutability, bad hash rejection\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-17T21:13:09.392127+08:00",
+    "command": [
+      "node",
+      "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/creator-u04-method-probe.cjs"
+    ],
+    "cwd": "/private/tmp/minigame-png-qa-frozen-repository-20261017",
+    "scriptSha256": "48220fe210d13c63d26f6a937a43375338da5d128ed8dee38a2aa8f9caaa3c68",
+    "exit": 0,
+    "stdout": "PASS: actual Creator emitted JavaScript Gallery U04 reentry/supersede/exit methods suppress stale cancellations and expose current failures\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-17T21:13:09.439544+08:00",
+    "command": [
+      "node",
+      "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/creator-compiled-probe.cjs"
+    ],
+    "cwd": "/private/tmp/minigame-png-qa-frozen-repository-20261017",
+    "scriptSha256": "6b3f716dee165668b363209a30e484718d58bb61c0cebde531fb9f2a0d930ef7",
+    "exit": 0,
+    "stdout": "{\n  \"actualCreatorBundle\": true,\n  \"U05ConflictingGroups\": [\n    \"body\",\n    \"hud\"\n  ],\n  \"forOfMapIterator\": [\n    1,\n    2\n  ],\n  \"acquireModulesActual\": [\n    \"a\",\n    \"b\"\n  ],\n  \"getInFlightWithLoadingEntry\": 1,\n  \"cancelOwnerClearsOperations\": true,\n  \"cancelOwnerError\": null\n}\n",
+    "stderr": ""
+  }
+]

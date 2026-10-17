@@ -1,0 +1,3179 @@
+{
+  "created_at": "2026-10-17T22:43:40.754581+08:00",
+  "scope": "本轮8源文件、Client/QA/Tech历史与当前证据、Master输入和审阅材料。实际运行包v05；v06仅生产重放。",
+  "exclusions": "本身份文件自身、Master最终Review/DELIVERABLE/schema复核、Producer流程与Task/approval/shared markers、Git回执在独立记录中绑定，避免循环。",
+  "files": [
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "bytes": 87954,
+      "sha256": "86808200d37b4554c2e28ac33bba728232f8178cb025bc9530efa04c895a9ce5"
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png",
+      "bytes": 1599548,
+      "sha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760"
+    },
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png",
+      "bytes": 467239,
+      "sha256": "e2b749a9318d2fd80839b042422abb2345346807aa453a215f2a1f70991c9193"
+    },
+    {
+      "path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png",
+      "bytes": 931082,
+      "sha256": "ba0ac71e12cc88907a95afeab0bad057a9b71db4f3afe0186ce11fadc406ac31"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/PNG_OVERRIDE_USAGE.md",
+      "bytes": 5997,
+      "sha256": "da9b262eccab41c5c02fdcc27dbd53e3d8d780efb5ce95e73e09d4da81e4da57"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/approved_png_base_payload.json",
+      "bytes": 129578,
+      "sha256": "7f3bf66203ff90cf92233a3188f14e508c2dda4b3053d0b7eb19db7240d9f114"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/approved_png_overrides.json",
+      "bytes": 10748,
+      "sha256": "4fdd599e9733240afc702f90892e4daa890e4dc748ce7271b7ceff921ca8eefc"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/build_staging.cjs",
+      "bytes": 53428,
+      "sha256": "7c52440785e740fb94dd017bf38f7fe456a8241e2e165914a7a9cb4c9fd4d33e"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/BUILD_MANIFEST.json",
+      "bytes": 6767,
+      "sha256": "6402be335c95011a2a57d78affa784dc6c0981fd6e78b8341d68925e29d3bd6b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/DELIVERABLE.json",
+      "bytes": 2309,
+      "sha256": "e59d9d645dfcb831068dc00a9b15eb522ce46e6c3d93c1a82072ef69d13326df"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/IMPLEMENTATION.md",
+      "bytes": 2845,
+      "sha256": "f56667a944e68e4f8b8fa7313ebab2e93bafcae8f030bb3a7cedbaf6f4a8c9e5"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/VERIFICATION.json",
+      "bytes": 3153,
+      "sha256": "7fdf746ef60f5e6e99edb9ff6be70405ef29c3c63926eab6622f4a2ff6f5d8a9"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/ACTIVE_SOURCE_CHANGES.json",
+      "bytes": 3576,
+      "sha256": "fb228324c228f4a7bf5fbc220b2a974160c1f6ad24052e2154b8627b72366183"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/BUILD_OUTPUTS.json",
+      "bytes": 564590,
+      "sha256": "d9067eb040092d46ec7cd11f6e19756f5a88fd5d3699fad9957002b886e87033"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/CORRECTION_NOTE.md",
+      "bytes": 808,
+      "sha256": "19fc15c9cdb620acd763764cd8ad8ebf8c02f95e3fd9323d07fd528ba55359d0"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/DEPRECATED_UNEXECUTED.md",
+      "bytes": 363,
+      "sha256": "9b424074aca70458430708ba53be2a9a2c2003f08f89d00115039384d715aa5d"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/HTTP_SMOKE.json",
+      "bytes": 609,
+      "sha256": "5e278138e9508f3239d526a7750e99ea6049ba2e4ca3198c042af7ede7843ec6"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/IAB_SMOKE.json",
+      "bytes": 1372,
+      "sha256": "83b880722afaccf4c0ca58fac59a4c9044d458d8067a4475bb5d233a68afb872"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/NEGATIVE_PROBES.json",
+      "bytes": 1161,
+      "sha256": "34edd9dd43f3fb4b29dd11ff2204e66d9ca35fb00ea9b2dac61d67f583421579"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/PERSISTENT_PIPELINE_REPLAY.json",
+      "bytes": 1518,
+      "sha256": "37f4a3b3baca1b4879b0d981fc15ce7d55948c8ccbf17103cd755c74df20b30b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/POSTIMPORT_STAGE_DIFF.json",
+      "bytes": 41202,
+      "sha256": "780b967bcd38af9ec351d0244f9f24676ec159206eaac456c43ccc0d31895b1e"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/PREIMPORT_PAYLOAD.json",
+      "bytes": 130365,
+      "sha256": "2debe5a47bd73d6437f2af6adf5906b3ec74666bb88ccd753ea9aeac6a7ea3ad"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/creator-bytedance-mini-game.log",
+      "bytes": 57623,
+      "sha256": "388bab77d221b4810f13ed8411f1e7d6e3356c01205a8fac5b4f98315624b001"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/creator-web-mobile.log",
+      "bytes": 55320,
+      "sha256": "c6affda6615325f5bed7d4aa95832e8a3e5988fa604aa3a8f0d774b223680d9c"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/creator-wechatgame.log",
+      "bytes": 57748,
+      "sha256": "e6fd4393b810ac1628f558adbc4f92c3ce19c7137bd2ab50124044a74d2be09c"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/record_build_evidence.py",
+      "bytes": 8155,
+      "sha256": "e374b872e29275f183b645d280055eb56f9c4db8a275b2b139c4389f00817ed9"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-PNG-20261017-CLIENT/v0.1/evidence/run_negative_probes.cjs",
+      "bytes": 3060,
+      "sha256": "b1e9081ceb617378865a035bb119551fc9f02db9d5844491d0f73e71dd07bd02"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/ACTIVE_BASELINE_DELTA.json",
+      "bytes": 653,
+      "sha256": "16a6b4f402079d2a9274e4f06686e236126b38cd3f9bb9ddb7d3e4bd29dcdfe5"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/ACTUAL_BUILD_OUTPUT_DIFF.json",
+      "bytes": 9213,
+      "sha256": "137eacc1af0e7e486f0f58a45526036503c59e9aa564494f21982db1f57c631f"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/APPROVED_INPUT_CHECK.json",
+      "bytes": 31456,
+      "sha256": "94994f369583da45f272b045b121ab82ca959c39b6b8d58f78d431aae78c8564"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/CURRENT_SOURCE_IDENTITY.json",
+      "bytes": 1896,
+      "sha256": "5d77c9b32b9e05b51e0f8cd9269440ed4b265be9cd95ff45b07793bcd1ca61c9"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/F11_AUDIT_AUTHORIZATION.json",
+      "bytes": 978,
+      "sha256": "030903b1c939f471010d8e4f735d17d881227d4cc9cccc39033da965fbc6f9e1"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/FONT_PUNCTUATION_FIX_AUTHORIZATION.json",
+      "bytes": 878,
+      "sha256": "6940d03a9ba8055899abbc907a59d1e8b68166993520252a08a780dd00073c89"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/HTTP_RECOVERY_CHECK.json",
+      "bytes": 877,
+      "sha256": "7ecd7c5887f277da283a4774817f4b24a13904b2534f498170f78cc775d93883"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/MASTER_SUMMARY.md",
+      "bytes": 3216,
+      "sha256": "f95054d4b0d4f10c3f33b9e36e61c22724cdf7e4839d80e68f37ac455e039351"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/NEW_STAGE_PAYLOAD_CHECK.json",
+      "bytes": 30728,
+      "sha256": "e5510d83f57981822e62529cc97469ba93d2508789080053e7bb4e79d489c7d7"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/PACKAGE_MEASUREMENT.json",
+      "bytes": 817,
+      "sha256": "0ad35107925d3a4dfb7c7ab95ad3ca171dca681173aca9a36b6b0fb364b06eb9"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/PNG_PIXEL_CHECK.json",
+      "bytes": 2671,
+      "sha256": "3421980464db79588ddae5279213a7fdf5271c100413bb664fe155050db72a89"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/PRE_FINAL_IDENTITY_CHECK.json",
+      "bytes": 249,
+      "sha256": "d0f830129a7626954c26d418370048ccb3702a4b43630f8e7ae589a84b4e049f"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/QA_FINAL_INDEX_CHECK.json",
+      "bytes": 251,
+      "sha256": "ace69fd3b5a0f8706f881b3c5bbf587a98f70f0989281142ca7661b15c86a6f0"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/QA_FROZEN_COPY.json",
+      "bytes": 33840,
+      "sha256": "735231390341082db5d476d26bdbec2ed6959c50238e370d3b11922ebdc7b973"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/SCOPE.md",
+      "bytes": 2553,
+      "sha256": "2dde342e367e1f4baf91254ff1ed6039eabd84fe2172f48d0a02e5ec5b6cd743"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json",
+      "bytes": 776,
+      "sha256": "5f27b54ac2921a85875fd147311dbb276deaf82dd50834a228039662b9e63793"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_REVIEW_PACKET.md",
+      "bytes": 3221,
+      "sha256": "88804afedcfcca9a31e24383315b0cefaee146986235109cc28f6cd4420ad9a3"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/VISUAL_EVIDENCE_CHECK.md",
+      "bytes": 2397,
+      "sha256": "8ddf62d05f19736a0c081d04c8a19cc41b2305e0ffd2ea8d6608475afa42c391"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/BROWSER_EVIDENCE.json",
+      "bytes": 175970,
+      "sha256": "99e7623c13565fbdecd5beb5b1d1cc2df045c920afa07d1e583aa172a3b13b4b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/BROWSER_TOOL_LIMITS.md",
+      "bytes": 1045,
+      "sha256": "fd9191a382783f8c7a5ab298a1d1d98da7f47f0070faabb7d32b426b9753ae64"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CLIENT_TEST_RESULTS.md",
+      "bytes": 4551,
+      "sha256": "b99ffbcec7f5a30a4551bec3ca00fb95f726290835e75b72b8251d42485de1d9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CONSOLE.json",
+      "bytes": 59277,
+      "sha256": "f16b22872b1dab10c6d2de90a372986012d8c7bcb330ddec5da4fb75b06710ad"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CYCLES.json",
+      "bytes": 14169,
+      "sha256": "8e1c395a81607d76fdc74e4c887638dd458dc49d45e6b1cf39682aa9b4bca020"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/DELIVERABLE.json",
+      "bytes": 2005,
+      "sha256": "00806f9901cd1736c524a238175eb0c442f358f9be8041f66e4a4cd0ac0ce60b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/EVIDENCE_INDEX.json",
+      "bytes": 92417,
+      "sha256": "71423e3376975f4f36fabf60c19a8a86dec7cb62f43ef85f8003cad0c529d009"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/FROZEN_SOURCE_IDENTITY.json",
+      "bytes": 43067,
+      "sha256": "5e7c9fd09730afc63fae3f7d4eee08a1cce5e539b73fecdf8b7d25c201d2d6a5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/MATRIX_CONTACT.png",
+      "bytes": 2338611,
+      "sha256": "74cce4b689be2c506e107e8f69c469c9b89ace4f17b8412de02298c51ccfe923"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/OUTPUT_IDENTITY.json",
+      "bytes": 547008,
+      "sha256": "21491cc4bcf1f29eb1b252513d6b27ab750877f60fa1569d1563716ea5a410fb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/PACKAGE_MEASUREMENT.json",
+      "bytes": 2335,
+      "sha256": "d35a7152bbd70ec6cf86e20884bc152f65b2018a26bb5e10b8ea0f891e942d44"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/PROBE_EXECUTION.json",
+      "bytes": 3576,
+      "sha256": "166a28c64265fa6dac4ff14882ee38a2266b3b80c6c86e5c5eea0a68076c959b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/RELEASE_COUNTS.json",
+      "bytes": 4633,
+      "sha256": "02840ec35dd58d0500ab03b64444bf3240843ea8a57ab2fbb886cbbe67117619"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/STABLE_MATRIX_CONTACT.png",
+      "bytes": 2483386,
+      "sha256": "b0905f258e65958fa53709aaa2f4ee321353142abe31325e704a067ac44597a6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/TEST_REPORT.md",
+      "bytes": 4091,
+      "sha256": "011d3747c067ce6745b597f140b3c180399e6c4109f1422e2615e0964902e8af"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-320x568.png",
+      "bytes": 24732,
+      "sha256": "2ff73a65490159c80af69a6996e3da41ea5f96b993e9020b6136620a15a67db6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-360x640.png",
+      "bytes": 55429,
+      "sha256": "8e63e870145f0a743480a0340f676d0484a33823f842cb0600df0826ceb5b0e1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-390x844.png",
+      "bytes": 73924,
+      "sha256": "44076bac298c448d75dd1157072d28bf78b02a3b67c191b86179a5cf156912b9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-412x915.png",
+      "bytes": 69711,
+      "sha256": "525bf7cef5126f75e3f114ef0af6d3c5e154a2eb10f1cdd46895c5ec6331fcb0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-414x896.png",
+      "bytes": 77001,
+      "sha256": "cb457a99048961911e4ff7c0f859a167621c4e10ce1b14259b2f54292903c148"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-720x1280.png",
+      "bytes": 164195,
+      "sha256": "14c0022e14db48d97c70a948b6b5385de2b3043e2e960f47e8db98167d5f15ef"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-dl.png",
+      "bytes": 67507,
+      "sha256": "decfc3e372c735db54e09e2e2ab0c670ba4ef980b304abb38988a4142dad6814"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-down.png",
+      "bytes": 73864,
+      "sha256": "920a5c09d7e9412ca10ef4c6b54af704a4c8f0081d452d5119da7414484a2251"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-left.png",
+      "bytes": 67838,
+      "sha256": "413cc87869f135da8443617e56695c303fad36921cc045d27a17ff292b34a948"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-right.png",
+      "bytes": 73917,
+      "sha256": "bc075c54a98219af175b2cef348672cc5d61a6910416f4860605a312d453c8b6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-ul.png",
+      "bytes": 67541,
+      "sha256": "e30f8dce8376a932245e70edc8981e24d8a7ab9a6c6f15c7492e7ea46ed400c4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-up.png",
+      "bytes": 73866,
+      "sha256": "b4ccaa39c7ec01f32de8dea5bfb84da286a4235fcf8481badc4683d74dd5bce2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U00-drag-ur.png",
+      "bytes": 73896,
+      "sha256": "11e9e60f259e928a35c060eee690049bf45a4bbb1ebe275f7fc54744afb1f366"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-320x568.png",
+      "bytes": 21949,
+      "sha256": "21fef01a0af8f004cc9f0555db0a1b360a054d83b731f64e05a8d68de97912ee"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-360x640.png",
+      "bytes": 25429,
+      "sha256": "28d380752e03924e3b6df248cf0b45781f9a2a7800de244d63521f2dd5f12dd7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-390x844.png",
+      "bytes": 29619,
+      "sha256": "8bee24e659822dbec0982314a645d9cdd592a31ad34cb8dae1e3a676b36d7628"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-412x915.png",
+      "bytes": 27538,
+      "sha256": "878d3e6ca889daa8c672778e1734c7fa46eaaa84fbcc4b60bdf16c61466329ca"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-414x896.png",
+      "bytes": 31939,
+      "sha256": "6e9b15c28b56bf4eef54d5650a83304b5ac3a05b1f26724b094d52eafaa2ddf8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-720x1280.png",
+      "bytes": 77642,
+      "sha256": "bc90423f5126cc7a02dcb407db4ae3b88bcf9c2c3403a85a8e51cbffd10ec635"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-dl.png",
+      "bytes": 22148,
+      "sha256": "ad64217a37d6cef3a065659361c2abf49683a4be22706a2471ab4a38906c8022"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-down.png",
+      "bytes": 29567,
+      "sha256": "5cc09d04be60dd660ac14ab1142d1f2e95e7f7db7a991e703aa097d758af336e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-left.png",
+      "bytes": 22068,
+      "sha256": "503588f8c18d7d2e6a705e31cf505e76d1e67cdcf0d53560e33b25ae71f27ed4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-right.png",
+      "bytes": 29593,
+      "sha256": "6fed0119f9030fb4475f8f611750feea9af761fcc123e6537eb0985828555e4d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-scroll-down.png",
+      "bytes": 22042,
+      "sha256": "5594c3cb77e17951f71d02b5eb3a0f37f5b02615b567eb647a600a2ec56dae0a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-scroll-up.png",
+      "bytes": 20543,
+      "sha256": "a93c0d4f356652842e70beeab820f7f3f52d2e5637fd06b5f215e7ff70ba9114"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-ul.png",
+      "bytes": 21982,
+      "sha256": "750702380b0008f9e352e7c3efc737797594ee9f7ed7cd1a2deccf7eab2733b1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-up.png",
+      "bytes": 29779,
+      "sha256": "2545f5a36ba7eb445670b187065447d1fc0facc614dbb7a314873d1ca9d0a5e1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-camera-ur.png",
+      "bytes": 29586,
+      "sha256": "7c64bfbd6e8e157b047b8102cfb57195b4f0e705ac1ae5ef68a089f39f8f53af"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-first-close.png",
+      "bytes": 29656,
+      "sha256": "da231deb2208d8e85bc2a9ec6644d8de0ba02ab94489eaded0e4a79183b156fb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U01-panel-after-drag.png",
+      "bytes": 12909,
+      "sha256": "44226bfca945399cd462fac46e42ccaddc654c41f99d9481759dc30e1956a444"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-320x568.png",
+      "bytes": 14143,
+      "sha256": "659b68cca86d7790a707d9a429f8673267d361f43bd489295411471b9fd01bc5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-360x640.png",
+      "bytes": 25361,
+      "sha256": "8e834c82d5d67ecde4a7458c8dc3cb07f5a0a5e01d458e9b7dabe8b175e2e17c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-390x844.png",
+      "bytes": 26486,
+      "sha256": "e205330cdf955228149bd233d2f49d1e6ac090d27ed4e691bd1ccf304cbe9a27"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-412x915.png",
+      "bytes": 26042,
+      "sha256": "ed968bfb9f8c7dba942f562c2045bd4fdffa32c105dc97780af76dd89cad531b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-414x896.png",
+      "bytes": 26467,
+      "sha256": "fb77ad43e04ee17ba23052d48370e77b1f505b17f28fbc6667f2751d68d659cc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-720x1280.png",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-happy.png",
+      "bytes": 27457,
+      "sha256": "1c1bee9cbfec4753ff46e30dfca1a1c16e141fc9452b33e6d72e4803a6ee6eed"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-run.png",
+      "bytes": 26715,
+      "sha256": "f74112f29139e6c67e9ad873cbb22b291913ccf84f1b14198c586886c39117dd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-sad.png",
+      "bytes": 27242,
+      "sha256": "84085d037bc93c132debd0445aafdbc093fa05c8ceb16975bebd7cdf2348fe20"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U02-walk.png",
+      "bytes": 26628,
+      "sha256": "e6b324029bb1b9f7d09c4bee7a25fc48c3dc92f8367b57343861f006005b3deb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-320x568.png",
+      "bytes": 19995,
+      "sha256": "53ae795541c0e21315c318f85c4c66566adb8c1e20674388775c45a1686b6133"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-360x640.png",
+      "bytes": 23630,
+      "sha256": "2c50cd94a28c85370d107a3cd63c78880e4861cb8f11ae4943e440eb184728c2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-390x844.png",
+      "bytes": 24525,
+      "sha256": "ea48907e5f78833250a1cd36c1be3ec65fcc50f86145db960a9d40f37898d881"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-412x915.png",
+      "bytes": 25846,
+      "sha256": "f07f5c26e5626718fca523d1a23b6f0eab144a7bfed004ff2d00fc03bd62abec"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-414x896.png",
+      "bytes": 28111,
+      "sha256": "80e77591e91aec3d47dc57d9f52c43b14abf7778eb41c8eaa9391df4a5014753"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-720x1280.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-0.png",
+      "bytes": 11931,
+      "sha256": "c5a712c2ff793cec4600d141fe7ca968bb93ddc576aaf07556b7a86c09c45e4f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-1.png",
+      "bytes": 24951,
+      "sha256": "ac9c89108a850cf15af05df13dcbe2180ba6ba10191d941970a433869861ea10"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-10.png",
+      "bytes": 29953,
+      "sha256": "0919c33876ec48853c95e55bbedaa02d1f981ceac432ff35718ab4c18de9affb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-11.png",
+      "bytes": 27828,
+      "sha256": "8cdcdd3a2507326abd633b063c232302b54b74ae2647d288e2ee092ddcc1afc5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-2.png",
+      "bytes": 27824,
+      "sha256": "2134a8a5fcb2905b264504c22fbc60d1786d3198845c5f457d48188f50a18719"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-3.png",
+      "bytes": 28917,
+      "sha256": "cc9bc68e6ba07d077539d80a9674d65f4005cbb42568ff0609d0db5378697536"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-4.png",
+      "bytes": 29953,
+      "sha256": "0919c33876ec48853c95e55bbedaa02d1f981ceac432ff35718ab4c18de9affb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-5.png",
+      "bytes": 27828,
+      "sha256": "8cdcdd3a2507326abd633b063c232302b54b74ae2647d288e2ee092ddcc1afc5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-6.png",
+      "bytes": 27385,
+      "sha256": "54d3e31fc1b6e62343ec02d643292b26d25e08897094a448fdefed352307dbb3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-7.png",
+      "bytes": 24951,
+      "sha256": "ac9c89108a850cf15af05df13dcbe2180ba6ba10191d941970a433869861ea10"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-8.png",
+      "bytes": 27824,
+      "sha256": "2134a8a5fcb2905b264504c22fbc60d1786d3198845c5f457d48188f50a18719"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U03-shop-9.png",
+      "bytes": 28917,
+      "sha256": "cc9bc68e6ba07d077539d80a9674d65f4005cbb42568ff0609d0db5378697536"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-1280x720.png",
+      "bytes": 117595,
+      "sha256": "d0f406b98a05efbd1546f4db683a9003b0f233ec240c2405147621746f2f18ed"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-320x568.png",
+      "bytes": 17018,
+      "sha256": "d3c54aa3511c90081426e4bcf49bfdc48fc4b4f77903834ee5bf26f70516f651"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-360x640.png",
+      "bytes": 35884,
+      "sha256": "4e64075ec7932f9db9543ad95ecfeea64acb1a95586e481f7e3e726a23156cfa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-390x844.png",
+      "bytes": 46855,
+      "sha256": "8f2a2eafc7e75123d7012f432d5a53268868fb864b3ceeda3b8b74fb9ed72669"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-412x915.png",
+      "bytes": 45646,
+      "sha256": "1e419fc2c902fcbedcf104d5fc60edf0ca89ffbd2bbb13b451feded2bb7f4017"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-414x896.png",
+      "bytes": 47938,
+      "sha256": "f843bdab86a5c97b016a539aa18eae7aeea59dd539e0e9e2a4ca7593d28b34b7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-720x1280.png",
+      "bytes": 60296,
+      "sha256": "f6f22129aaefafec1a68e6e22ee401ef0d4fde2b6ecb6069121b88761acf0eaf"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-844x390.png",
+      "bytes": 46599,
+      "sha256": "8fe07af2a8783e0d7cea31a82ef8270389f5a6898b51b76ecfc94582457e057b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-after-early-reentry.png",
+      "bytes": 46916,
+      "sha256": "0dcf544d14791317bd837bc71e389979daaf33a4804487074465065bf5510dde"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-after90.png",
+      "bytes": 51855,
+      "sha256": "bf5a0871725b43062c2487b6603999ad3a8dac78e293392e0f880d60c565ec8f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-early-exit-loading.png",
+      "bytes": 4656,
+      "sha256": "bd19bab1fc1bff88595618cc6a7a7cd9cdeacb7ed4566565d6b97de9e60b8ed0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-early-exit-menu.png",
+      "bytes": 42794,
+      "sha256": "c0c4cffc02735232aa51d98ee4348b7db0c9ac60e917fd238fd1ceb610f7d72b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-early-exit-stable-menu.png",
+      "bytes": 42794,
+      "sha256": "c0c4cffc02735232aa51d98ee4348b7db0c9ac60e917fd238fd1ceb610f7d72b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s0-angry.png",
+      "bytes": 47034,
+      "sha256": "242d5d08039576b8f43b700ce853fac5f1254b1e672272024001052e6af128f9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s0-happy.png",
+      "bytes": 47232,
+      "sha256": "03d5be07b17175ff33cff1476750fe1a58dc0c1484103d782b366b79cc173c82"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s0-sad.png",
+      "bytes": 47104,
+      "sha256": "fd00c4e72eebba833445011af27601455c07b98bed14cd847373b186a836e316"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s0-smile.png",
+      "bytes": 47098,
+      "sha256": "df1042d9639cc6c8a26d890626cfa490c4d83fa5e976061cc92384cbc573b837"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s0-surprise.png",
+      "bytes": 47182,
+      "sha256": "8dab3b0b0e27510656f3f5c2f207c9d854d995a4529e8a6f4c17eb6925b80017"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s2-angry.png",
+      "bytes": 49070,
+      "sha256": "1e2b80c828c4e147d558e2a808e1e774823903dc93e36d026ab08950610d6849"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s2-happy.png",
+      "bytes": 49164,
+      "sha256": "b322a5803488ddbc6bc4cb3a6b1040752a8eab0db1304f4fa76038103723a712"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s2-sad.png",
+      "bytes": 49096,
+      "sha256": "df35e134d06e99f65cf0baa56d17a3f908489cb19e4d74954998cdada697b58d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s2-smile.png",
+      "bytes": 49111,
+      "sha256": "abc339521fe73c1c20e2f6604aa1a429ddc712754caf4cfb36d8828ed68bdd7c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s2-surprise.png",
+      "bytes": 49232,
+      "sha256": "84e082d23b784bc8592bc1b41d93094cdb79a54b63aa81b96e1ac9ad5e3ce7ea"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s3-angry.png",
+      "bytes": 50416,
+      "sha256": "da92e93c8c7f03c848694c2901a8884b8bd4b175336983887aca556411361f72"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s3-happy.png",
+      "bytes": 50465,
+      "sha256": "6a42ce47c8ced00a5254bf8f29d950da9565a586f6b7b57099a1648076eab89d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s3-sad.png",
+      "bytes": 50503,
+      "sha256": "bd92f20efeb9528ed28bb1223d55fb5a368ffe5d1cfc78b237cddfd4697b6e77"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s3-smile.png",
+      "bytes": 50491,
+      "sha256": "08c99ac64635d9c073ae3cb93c9d47e6881f6b9a0b7814bb69a52edf8250bbf2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-at-s3-surprise.png",
+      "bytes": 50518,
+      "sha256": "4048e9cb68f7fe8c5b8ec9a7a9bb55cc123e52188326e0cce48578e095a42d32"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-contact-0.png",
+      "bytes": 692254,
+      "sha256": "baa1faac3dd1aa9fc26d101ccf5d31f0b961ccf414f63c856785f2979b950f49"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-contact-1.png",
+      "bytes": 697078,
+      "sha256": "3bed6d14beeef8802a94cb3ebfa388cea1f078e3da9bd1914344f9252399a3b6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-contact-2.png",
+      "bytes": 672414,
+      "sha256": "3177b59ca13bc686036b705826c67d5e1307e2288ed87541cbb9b486999af275"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s0-angry.png",
+      "bytes": 46411,
+      "sha256": "d3609c810ca02d00dd2d5789d52b5e336511eb859b5e95aeca4483a3e0c2bf8d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s0-happy.png",
+      "bytes": 46505,
+      "sha256": "77e0c721a52fb57b70b8c2f90aebbe6ebd6285da9f211d801c76463c9b7c9320"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s0-sad.png",
+      "bytes": 46397,
+      "sha256": "4f5d7b8fe158a8c8970524a14b52cfa181e2b24abf1e0abb6fbec30063691daa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s0-smile.png",
+      "bytes": 46538,
+      "sha256": "4220fb397948b25fd285a508742e9024bcac6c132514df73dda1df430f449bca"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s0-surprise.png",
+      "bytes": 46483,
+      "sha256": "6841183e7a66fbf0d5c31391c929505abe5eea1aa479491ff4cb2a779baf1253"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s2-angry.png",
+      "bytes": 46716,
+      "sha256": "8ef5e4e116c94b279cee9b2d96840466d31be576c66d07c0fb7dc8992698da24"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s2-happy.png",
+      "bytes": 46844,
+      "sha256": "7035f2c97572921570bd746f2f1a283316f265170e7b3f9a5e183e11a95da96a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s2-sad.png",
+      "bytes": 46737,
+      "sha256": "450cf9491a898aa87bb80640ad578ad220986285e9a628e473de06bea7c77d8f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s2-smile.png",
+      "bytes": 46811,
+      "sha256": "96115af18b5d7c6b9dcbfb38fe1039c81ddb5aaaf0eeab380dd15bb28b926f79"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s2-surprise.png",
+      "bytes": 46813,
+      "sha256": "7991cc2359567eb85fa51f7ff352f1ca606a34675372d724486bb1ffe0900dc4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s3-angry.png",
+      "bytes": 47187,
+      "sha256": "8954a2e08dc12b6970f6c3938236a9a3bc325d11edf2d37285040bed9c6babbb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s3-happy.png",
+      "bytes": 47379,
+      "sha256": "1a9b7fa40191c218e731655ad701dcfcce392f29ad26fc724487233227cb70c0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s3-sad.png",
+      "bytes": 47301,
+      "sha256": "3d4b022ded8a6953282b6bbbf8934030ef1224438c5b2e0b279d4854a101e215"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s3-smile.png",
+      "bytes": 47386,
+      "sha256": "351b453ca38a621c1c9851e36da82365c50856a2ac1a5b996dceb2edfcb13b53"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-deng-s3-surprise.png",
+      "bytes": 47411,
+      "sha256": "31ba8aec622d99c211c03cca28cfd35c75b25e0a00f21f07146c40a232add881"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s0-angry.png",
+      "bytes": 47310,
+      "sha256": "fae53040650bfbef21bd49f2f6f3c79c972680a9349e3839140eb8153abb8aab"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s0-happy.png",
+      "bytes": 47467,
+      "sha256": "bf36be1906938c5889dc59ce80d6ac0876728455bc116c729c3debcdc45221c0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s0-sad.png",
+      "bytes": 47407,
+      "sha256": "a04390488150d393b3c9a7e2e4f96779bb4a98ee79f41c7653fef49372bbb6fc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s0-smile.png",
+      "bytes": 47377,
+      "sha256": "0cc09a66f1221db551d9ae731cfb0bba131c771accdd8cf42df7bc13a43de6a1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s0-surprise.png",
+      "bytes": 47428,
+      "sha256": "121beddc1403769908ef5db5b9c8a6b59213a17d25fb747102f778cfa3c00dec"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s2-angry.png",
+      "bytes": 48651,
+      "sha256": "a652f2075676df584727d74d64ad046b64a3b5a436f944ad300eb586a8deec31"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s2-happy.png",
+      "bytes": 48557,
+      "sha256": "038d62442696222e303f67090d204fa41b89ee4a9c93e1c466dc3a07f97bdb90"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s2-sad.png",
+      "bytes": 48675,
+      "sha256": "e2e0c5f80e06c4190efae3247fe4803f24d5fe030be1b2ccf98f7a2abd2932a4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s2-smile.png",
+      "bytes": 48745,
+      "sha256": "7a2da157cf749f139371152b9d18777fbf11c7023b95a70062983672e3b91a5e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s2-surprise.png",
+      "bytes": 48559,
+      "sha256": "ab29a897e23c7d227adc089f78628fd3b5f8e9e74e189529668bb0636ad63c6e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s3-angry.png",
+      "bytes": 48087,
+      "sha256": "44c40378d98e707a5985d69e5dfba445d15a87b1f16ae60accddc76573eb57ce"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s3-happy.png",
+      "bytes": 48101,
+      "sha256": "8f5da2b37aeb1fe0ec374b88070ba11e323d9e0066cc00e170aa6b09ea40b1d1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s3-sad.png",
+      "bytes": 48126,
+      "sha256": "dcc03bc220b8aba3d1d914161d3fb2a904432f4c736cab23b1e4fa8409c944da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s3-smile.png",
+      "bytes": 48192,
+      "sha256": "2124545406ee97afc1d72af48d7f983f2c5d045b61d4559884138a66ce217c58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-jiao-s3-surprise.png",
+      "bytes": 48060,
+      "sha256": "3bb5511cc192ffb292058e2e7a40cdc8bbb29e680093ea8a6dc4c1a488c5c4b3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s0-angry.png",
+      "bytes": 51405,
+      "sha256": "a6ba7bae51eca8dcef2316783c26a9dcff2f2d5133be95f1eb6690af7a75fd78"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s0-happy.png",
+      "bytes": 51407,
+      "sha256": "d93463739596c3041f0ed2c499871b6a382a2d2eff2bd816577e8147ccd6be95"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s0-sad.png",
+      "bytes": 51503,
+      "sha256": "7d2ce1b7e91b9b7c77200e54445bbfadb3b73f394bf03cf58754d58a60a447f1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s0-smile.png",
+      "bytes": 51432,
+      "sha256": "e7ecbe3532c10d508974390f55c26e5e3af2242e2e6c349b1aad260373960eb4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s0-surprise.png",
+      "bytes": 51552,
+      "sha256": "f1dfadd679b54cc574368fb3cef172af47ba11b9950822ca3383d896428c8787"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s2-angry.png",
+      "bytes": 51679,
+      "sha256": "4629151259e1fd9575539c8a6287d99ec615fe6e178b85a52f7d0e21cb69f4b6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s2-happy.png",
+      "bytes": 51585,
+      "sha256": "4e3e34a6aa0186a769516b9fb2b2974b7f777b95cc20ae75af83358fe56b6d0a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s2-sad.png",
+      "bytes": 51644,
+      "sha256": "674e7fca0abd12c06a556dfcd8c02c65d7ffa4e66f63e1cc2fb4281b9c73f24b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s2-smile.png",
+      "bytes": 51724,
+      "sha256": "747bbe2b708332d5cce1f6e65a22e830f109f57aafc9389c540330bc7928be6f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s2-surprise.png",
+      "bytes": 51549,
+      "sha256": "9f130278acce205417d0c37e3089cf1ef12994e550a7907e438b2a0c1a5e299e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s3-angry.png",
+      "bytes": 51773,
+      "sha256": "44337c365397a02821a376dc4a04fda09dca011661f145f63ebba15bfa161cb0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s3-happy.png",
+      "bytes": 51966,
+      "sha256": "b767acdf86de78acaef2558ce9fe4bed721207c70c92fd2e597293d54cfaa86c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s3-sad.png",
+      "bytes": 51760,
+      "sha256": "b4b7750b95d5fa28e8ba3a3d9462814d581815cf1dcb45c15ed1eca99772a550"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s3-smile.png",
+      "bytes": 51880,
+      "sha256": "322df55a487e8c8ec37819bcb615b73d72d822b2e9373bea239e1a4790705fe5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mian-s3-surprise.png",
+      "bytes": 51874,
+      "sha256": "e43e134bfa3d3781f31562f0596a54d982d05101a8b17e4e8bfa1c75c25fa25d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s0-angry.png",
+      "bytes": 46641,
+      "sha256": "5a4b385432b7b2446ceac663e14db7e2ae6c63e11640dea073bab7f517f4bd11"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s0-happy.png",
+      "bytes": 47031,
+      "sha256": "0a5ad9b91ee5e4d9c2bb219ce615fd2df17fa024a5a9c429f0af28c2e4244912"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s0-sad.png",
+      "bytes": 46918,
+      "sha256": "7caeac5df78b0a29e674ef6e24c6ff442eaa890b6a157763cd932223389f1945"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s0-smile.png",
+      "bytes": 46796,
+      "sha256": "c0773084f4710eebb3676e2db370124165cff5832ff51459b16876ab575ac24e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s0-surprise.png",
+      "bytes": 47087,
+      "sha256": "43d5705ddcce642db956ba3a1cd3b7d31f2c0ba15ab13c471161eebd5fcc1740"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s2-angry.png",
+      "bytes": 48256,
+      "sha256": "6d2963a5c32fc453977b41e76781c46ee893e90959138500d41efb53dd1355c1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s2-happy.png",
+      "bytes": 48247,
+      "sha256": "f85528f6ce025c49d80504a9b91cd597a1145ed76e7855570f03e602a5819eca"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s2-sad.png",
+      "bytes": 48360,
+      "sha256": "d2fe0e05683686a400dcae2a2fea91c8a064cc8bad245d9601423a9542a05d36"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s2-smile.png",
+      "bytes": 48412,
+      "sha256": "e092272c9455ee668643517f92a1bbaedd5306adc35f67bb6da34b7613466c14"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s2-surprise.png",
+      "bytes": 48363,
+      "sha256": "200cc9b17d38752af99b939e0946dcc2c2e21a3c20bae638fe954fa1c29aef88"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s3-angry.png",
+      "bytes": 48235,
+      "sha256": "3bce80732a0654e299bac70d21d4fd73a42e68d691e8d90f43a1c341b1193dc1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s3-happy.png",
+      "bytes": 48082,
+      "sha256": "2d95cd3459aac27e48b370ab359efa3ba2a8a315da940bfcff6598c2844574a4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s3-sad.png",
+      "bytes": 48126,
+      "sha256": "73535fa3b150870552ba7228984595b5210f7bb8d9e69ca05351be3618e39385"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s3-smile.png",
+      "bytes": 48247,
+      "sha256": "33392f733fd292f3d18ef33cdf4c3e40b8a006938edb73ff91c345c225673e25"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-mt-s3-surprise.png",
+      "bytes": 48134,
+      "sha256": "39fbc1e900ce40bffbee7f229ea3b6970c49a2f19697bc76a399b3af1da5fb40"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s0-angry.png",
+      "bytes": 45196,
+      "sha256": "49345af9cd7fb05628b83bdf84777b873361b991091b87e2f1f5f117ff77f156"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s0-happy.png",
+      "bytes": 45244,
+      "sha256": "35d1948b64dd25127d8b039ea84f77c9e122b96f12318f6fa8eeb58fd8ebf6e2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s0-sad.png",
+      "bytes": 45312,
+      "sha256": "25e939838ebe15c6ffc4ce9d5dc628d7660541e6d74e75ef6970299b2adfb20f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s0-smile.png",
+      "bytes": 45332,
+      "sha256": "e8b385700b8a6018b4845e6fa192bd5cf230a505f051f304018657e31060c23e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s0-surprise.png",
+      "bytes": 45374,
+      "sha256": "5e7df6a556839dd48266e5d553ac58392df9e9e218b915f8996dbdaee93079f0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s2-angry.png",
+      "bytes": 45551,
+      "sha256": "73803d0c60a2ff1615df0abcf678d160c45f39e2f6866e2b728e64eb6910aa54"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s2-happy.png",
+      "bytes": 45558,
+      "sha256": "8c661326b21da26282b963f5ddbc9a48dc30ba7a117aff508633d8a1e9a3333b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s2-sad.png",
+      "bytes": 45602,
+      "sha256": "0e500a0faa1c01c719bf55d6d7a61b765898413dc395d3fc9d61d897d17681ea"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s2-smile.png",
+      "bytes": 45656,
+      "sha256": "d17f53f5010f42587a4a4c3178a182cfc5fa33197fb5c5ffafeb58e3a1a7291f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s2-surprise.png",
+      "bytes": 45571,
+      "sha256": "200251bbf485d346193588d485a7f8c29da6cc260e830e9b42a120eda7727447"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s3-angry.png",
+      "bytes": 45807,
+      "sha256": "5c545fc56c767a95bf551f52e08c1cf763ab19b39f8b88105c72746b0c88961f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s3-happy.png",
+      "bytes": 45921,
+      "sha256": "e0fff721b2c574e2f730e209ecf2281467af5a2f1a1c8e824ad1a87a85f634a6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s3-sad.png",
+      "bytes": 45814,
+      "sha256": "fbb9f37f210b797f0fc0670f00d2c2ce1dfc6cd491a8232203663fbfeca9ff6d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s3-smile.png",
+      "bytes": 45812,
+      "sha256": "6b00615417ad7139739a7b3db3bbdf0ba7a06a5bd53a034f86bde8be5c4ae7bd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-full-tan-s3-surprise.png",
+      "bytes": 45847,
+      "sha256": "4d815de33d71f716cb5c1a0ff39c2db19484776f0d08799d450998b317c20db1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s0-angry.png",
+      "bytes": 23098,
+      "sha256": "1cb8ff5001690329cd4191361d5ae5b270e8b5a9f2cd6fa287dc12902ef9380b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s0-happy.png",
+      "bytes": 23104,
+      "sha256": "cfa857ed30452cadace0c87d2c673d4f0e8b8a46d705ca5d03e3fc6d2ff6a092"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s0-sad.png",
+      "bytes": 23125,
+      "sha256": "a9cd6be0610a928a854ee5443eca4d1f0b679f52a81671511ecbea33e4dbcb57"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s0-smile.png",
+      "bytes": 23120,
+      "sha256": "ef4f5e35e37f473533654d9d1bd3c5f5755af60f1e7f91efbba6f1f020016d9f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s0-surprise.png",
+      "bytes": 23113,
+      "sha256": "24511b4a233eb9c3474d96a8328491fbc15b37fa2403d6d42dcc8ab7f2e84276"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s2-angry.png",
+      "bytes": 23176,
+      "sha256": "37f8152a30d80d7120f71a2f2d35cb494c0d17a5120975df7ca9f1feb6ef0032"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s2-happy.png",
+      "bytes": 23186,
+      "sha256": "39c4c380cf5aec78e68a7394d887d2ce3a0145d966492430ddda26ba6cd3a9f6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s2-sad.png",
+      "bytes": 23221,
+      "sha256": "0e9348091bf006bd509c8846e98dc1b6bd78fcb4a7733dd235ca7f410d0565ef"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s2-smile.png",
+      "bytes": 23215,
+      "sha256": "56b0433ad064ffd0c84fdea5231a0161f758b7b2f44a81c990a2ca1ae7cebfa6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s2-surprise.png",
+      "bytes": 23190,
+      "sha256": "3968fbe297996f7a45b96da208731cb302f515c7352c4722e9af4a0e94f8223c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s3-angry.png",
+      "bytes": 23372,
+      "sha256": "0e6cd93b7d2b9c65cd271203b54c3de8abd9fab809a0ba7ccc4a771b70a687f0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s3-happy.png",
+      "bytes": 23369,
+      "sha256": "53f0381133167bdfb6a461a2e55e7fa18b39acefa9060e8b4a8e9241e200c2eb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s3-sad.png",
+      "bytes": 23408,
+      "sha256": "1ed5026f78455a4e8b76ac815023c2a68f0aa1e308dc4e19e4ab6cdaf4f4c15b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s3-smile.png",
+      "bytes": 23392,
+      "sha256": "25e23d381d1b9797f4a2c4fc5aee649ff825eea054dd3d731bcf726eced46c95"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-at-s3-surprise.png",
+      "bytes": 23382,
+      "sha256": "9d9dd267af04c781db494bffbf6e6bc486b0069e25d9cdf8fe9b860d3bcc7cb5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s0-angry.png",
+      "bytes": 23119,
+      "sha256": "37c31929c867ca70339b4565cdc5630c89fd7d0d198e8ceb6ecc04526df99da5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s0-happy.png",
+      "bytes": 23138,
+      "sha256": "1a7d57cd0fdf44b04cd0235e5fb9359b8d2f7e2387cc8a323b3a476d8e139f6e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s0-sad.png",
+      "bytes": 23139,
+      "sha256": "76ec5aba31fbc5e79f00ed756483406243f70781bacd4dffed70050c9d14a916"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s0-smile.png",
+      "bytes": 23127,
+      "sha256": "0c98503b8364af4f9f7f9494f7a9c8a72f3a23e9638b7df331a1e95416486e19"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s0-surprise.png",
+      "bytes": 23133,
+      "sha256": "f78403c9d7bd5b7411289106a0c747b2fa20ed05c84e77572eefaa412df81118"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s2-angry.png",
+      "bytes": 23127,
+      "sha256": "fcdf51378ddf3376fc9275bb8f73f55836349ff1f6b556e6b8201a37cb433796"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s2-happy.png",
+      "bytes": 23149,
+      "sha256": "cd4a14366dbb46d7fcc0dc2f2942e7fda3ba20423eee13ef34dc66adc5a613a8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s2-sad.png",
+      "bytes": 23156,
+      "sha256": "8b8b1224f46b92cd0258ca8be06fdbdcffa70a2cb02180ff0e5a04a51bc23d96"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s2-smile.png",
+      "bytes": 23162,
+      "sha256": "3fad42e2d7948480b56497ff1ddef296abfb53139a8fa50038517e235e577784"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s2-surprise.png",
+      "bytes": 23157,
+      "sha256": "3077ff939e3e7a72c5e6fba47fde420caae3396e389980be6401aa7fb31da053"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s3-angry.png",
+      "bytes": 23089,
+      "sha256": "e96fb28b2fb6b44b80ec4e6f2b3b4799fa370c30fe1cda539e5d6467eeb78492"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s3-happy.png",
+      "bytes": 23092,
+      "sha256": "7d2b4e2dd637840ef902fba878b20c847dc8d40f1508ec2c8029a7b7548a54bc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s3-sad.png",
+      "bytes": 23130,
+      "sha256": "fc186704d64cb7a05ddd6d1470b7bd5a8bbd5be124778bc10ba7796d8f418c45"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s3-smile.png",
+      "bytes": 23123,
+      "sha256": "04aa7adad539e63572b1482a40e8746d23c5113be76cd7aa994edb50d824fbf1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-deng-s3-surprise.png",
+      "bytes": 23099,
+      "sha256": "a90065ea734d7962fbda3c58638b9bb067069d5a5bf1836d1b8b26b515b8c719"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s0-angry.png",
+      "bytes": 23102,
+      "sha256": "5c9bc713e4da23d5fd16149d0b878f2fb6adbcd77dcff930aa9ca272a16126f6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s0-happy.png",
+      "bytes": 23101,
+      "sha256": "dc0eed66e0cceb4dd8e6347d97985f99cb1a29755c00197d1a028caa019760c9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s0-sad.png",
+      "bytes": 23131,
+      "sha256": "a14cfed44ee577c47f850a5f0f58451b01d8250bbf5909f901d5aaaebe148210"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s0-smile.png",
+      "bytes": 23123,
+      "sha256": "aec11d0ae5a27d16e8e2223df4a78fb61e6e4ef05c728cace5b67239351c0dcc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s0-surprise.png",
+      "bytes": 23118,
+      "sha256": "a02a1d969a066ef227e7daf5701f745d2b4f428b25c3ee15c565749a82d3178d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s2-angry.png",
+      "bytes": 23434,
+      "sha256": "192ee1bd5fbd5300b6780f2a8e590413c3ba7501f981543f371c2906976bc1f9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s2-happy.png",
+      "bytes": 23461,
+      "sha256": "a53a539dbebd70d40e5c4248338a3016db671aa07346f6eef73335a770f98461"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s2-sad.png",
+      "bytes": 23455,
+      "sha256": "551b94f3cb51c9bd586944f139b049e6986ff6409820f2940b49a89396c4cb13"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s2-smile.png",
+      "bytes": 23446,
+      "sha256": "b52ad4706267cf85f402e1f103fe3fd94effa4ff79247dbb371e0457c6e83ec8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s2-surprise.png",
+      "bytes": 23461,
+      "sha256": "2467a8fcaa3fdc035309f56e60577d7c4bd109cfd397bc1edf6ce10b15b13fff"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s3-angry.png",
+      "bytes": 23395,
+      "sha256": "38b5403deaa1046bb982d9e12bdd14963978a914b86225d345d01f95ebeccfe1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s3-happy.png",
+      "bytes": 23398,
+      "sha256": "f004a69cd5372c383b07ef13aa9963ad03670c1b3148e873e843de3eaed711e0"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s3-sad.png",
+      "bytes": 23408,
+      "sha256": "8a1701f0fd513fc79706a818f62ccaa3c2db7ab0772e9475e4fdd5bc2ab96002"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s3-smile.png",
+      "bytes": 23406,
+      "sha256": "b93205a88a5587e8cf8572c2c1f243a347f14132c742c816c359c1626bd26be7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-jiao-s3-surprise.png",
+      "bytes": 23417,
+      "sha256": "10a3fcfa09f183de9c41e00baf32e3fd323af090533da2ac439d6ab181f7c29c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s0-angry.png",
+      "bytes": 23239,
+      "sha256": "bd30cd86906e406aa79e89deba2dd27522eeda1d45ccfa34fc072dd838bf216c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s0-happy.png",
+      "bytes": 23215,
+      "sha256": "63e17ccf44a871b661d5ee6ae674e5eb3a94932164698bb88d2d34931453562f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s0-sad.png",
+      "bytes": 23234,
+      "sha256": "853c7ca6d775528ebfe7a982ada8f74e80cfc651aa0a9dfa4121f43ff2be9b3b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s0-smile.png",
+      "bytes": 23240,
+      "sha256": "2e65a62ba9a2c4ff0ba21cd467f368ad67ff2cc6783437b13e70e20a4b58448b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s0-surprise.png",
+      "bytes": 23246,
+      "sha256": "07f50533dabf8ee26ac8404938fd9d7006659f3414090a82ba9ef4e5168856d1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s2-angry.png",
+      "bytes": 23262,
+      "sha256": "b23833527fa71357c5187cb7905a3a9eda4eaebc84816bdb74ef6ed187cf32fd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s2-happy.png",
+      "bytes": 23255,
+      "sha256": "be9e89a2bc1337f76ed961ca5208cc005ea03cc06be1ddb778680d8fc16715cd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s2-sad.png",
+      "bytes": 23285,
+      "sha256": "7bbb2789f27bcc0c3541bc96b16ef198498b553132d8e3658e9ecdff19aca689"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s2-smile.png",
+      "bytes": 23273,
+      "sha256": "ed782b915705bad3e4dfff496bb090f47ca076087e61ed1cea38c291ba7bfa8f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s2-surprise.png",
+      "bytes": 23266,
+      "sha256": "bedd62f716119793524d515bd8d2e89c1dd44f7eec5da9ac0f3e25789dfc0637"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s3-angry.png",
+      "bytes": 23538,
+      "sha256": "5768ad53beac8757f7edca97cd646079e29f5f22503beedadf134b557c1df85b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s3-happy.png",
+      "bytes": 23575,
+      "sha256": "eb8051bf2faab0f92d1a8d7f51a6eea60efe56e0465b84e8b91fdfdf83b8827a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s3-sad.png",
+      "bytes": 23557,
+      "sha256": "8d83ca874da8bd8f577f464c90cf7200fe4ba57ba316edb912038c15098309aa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s3-smile.png",
+      "bytes": 23557,
+      "sha256": "08b6adf34dcd7f8d8edd3418308d67ea56dd1c74d4083b35df5685de41b83c1c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mian-s3-surprise.png",
+      "bytes": 23557,
+      "sha256": "039f24aa124f859c5664be4b1510c76dda692ec937509ffc5922bd278c64065b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s0-angry.png",
+      "bytes": 23178,
+      "sha256": "4127909869940eda1aba8fb607af42f01045f12ee0ff1dae2bfad3943c841f9c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s0-happy.png",
+      "bytes": 23181,
+      "sha256": "a608e849bece182a821142bd50831542ff183b47d4d801f0ab42bf58fa2d718b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s0-sad.png",
+      "bytes": 23206,
+      "sha256": "7ef308131f55af26ffa4e0e15ffab365d1024a9d6755b643c6463f51121d9b2d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s0-smile.png",
+      "bytes": 23221,
+      "sha256": "bb94627c76dde4646268a150a6e37a748935fd15c04dbdd02ad3c570a88f7d10"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s0-surprise.png",
+      "bytes": 23195,
+      "sha256": "019d9800a56c3e260ad79ba003f3f390e1dada91d7e8a410e694991e00197723"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s2-angry.png",
+      "bytes": 23372,
+      "sha256": "987fc7c21d01d9a8c86957260c2a5f0aefc459063fac7c66a6f68c4a13645337"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s2-happy.png",
+      "bytes": 23368,
+      "sha256": "566a7b9f7d57b3018f0e2bba17c351ea8e8f355c61aea2d273e6dcd03d98d06f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s2-sad.png",
+      "bytes": 23380,
+      "sha256": "4afa0b9cb2dd14a625330de7b2f0decdd7bade402166ba2454d66d451d5add05"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s2-smile.png",
+      "bytes": 23386,
+      "sha256": "3981d648ae9a802d214531cd57a9300bc12fe0d5c3afc2b5fe1a6c9bdb9ecec9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s2-surprise.png",
+      "bytes": 23386,
+      "sha256": "26c9c820c0451fe4e6b7f0851be8403ed60eb981cb59c1ffc67b1fc66c3cad54"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s3-angry.png",
+      "bytes": 23270,
+      "sha256": "4c185e6d15160351f0b692430462573eb17fd8a6e096efe1cf61c11540377223"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s3-happy.png",
+      "bytes": 23279,
+      "sha256": "125dbad754048ec58b61f22dd39ff30c9f9300d46548f576fd1813a61a500411"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s3-sad.png",
+      "bytes": 23293,
+      "sha256": "869298c34819b1964b9e7d6a1b002dfcd4f4a37a48057b5f05a2c9b015dfd8e2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s3-smile.png",
+      "bytes": 23298,
+      "sha256": "1b3bc89a7a484a35e8854777a71f87a6d86eca301e9121d35e72fcae1f76ab86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-mt-s3-surprise.png",
+      "bytes": 23290,
+      "sha256": "b40cc4fa499cafc75591540015410c42fe022f49e88e3a96aa397ffbca2362fe"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s0-angry.png",
+      "bytes": 22860,
+      "sha256": "730b47e8f4e932af188917883edfb193d3ae1c4ea1793ae11208786438a7a19b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s0-happy.png",
+      "bytes": 22865,
+      "sha256": "3996600cb1b245fd6a40abdf4f37bf7e60a98854481be3dd9919387ab108a17b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s0-sad.png",
+      "bytes": 22886,
+      "sha256": "eb9cadead1cf66dc76f3773eacb56c3a272f1d4058cfd783487da096c90d9814"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s0-smile.png",
+      "bytes": 22881,
+      "sha256": "114460b01c397346a060dc933155392543397c29695f8279d7858352dbc11704"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s0-surprise.png",
+      "bytes": 22869,
+      "sha256": "a37a610af41f1a325431918d4b290346f715332492403189c0dc37c8b1ea3411"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s2-angry.png",
+      "bytes": 22848,
+      "sha256": "ff991c4733c51df02f8382f0ac7b3f4a4596557c1aad675715c999fb584517d1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s2-happy.png",
+      "bytes": 22859,
+      "sha256": "883c0bacd57b75f8647b9508e4ed05544a734008384517c3c52dcc3fb98d823e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s2-sad.png",
+      "bytes": 22871,
+      "sha256": "54598e037a2096583d996174095bbd69e28f2baac7881fa3f874a73d9e848bb1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s2-smile.png",
+      "bytes": 22874,
+      "sha256": "ef333b27a4e717520ef5208116f1d057dd002bdd1379a362682ac5f8277e96e3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s2-surprise.png",
+      "bytes": 22860,
+      "sha256": "a317992ca04a574dd056e5d18560ac1ad40faa349037b72f84eb4c3964492ace"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s3-angry.png",
+      "bytes": 22931,
+      "sha256": "e7d8a9aade90ce395d40ef72f705bf857ac7cf9c607c5ff032fc869d53b05ead"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s3-happy.png",
+      "bytes": 22923,
+      "sha256": "c64888392e57b9efe58b8fc3f34ea0d67e753567724fb64829eae9f881f2ca9f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s3-sad.png",
+      "bytes": 22942,
+      "sha256": "28caa5e49db088fb4accd0d0e15dc3561655d1e19ea8632e525f2fb6f124ade4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s3-smile.png",
+      "bytes": 22935,
+      "sha256": "c6355e1c65e456958593c58912bfe09e50dcbb22674af994bca986b093311cb3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-state-tan-s3-surprise.png",
+      "bytes": 22930,
+      "sha256": "4d696557cb2cff432474a4ced31b84b4ab4c4a85259bfad45aabac1ac0f349f3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U04-sweep-90-complete.png",
+      "bytes": 23748,
+      "sha256": "a9c499eda75689409069d7c85254133e156f90160b7c7c1d9fa43fdfc497d775"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-320x568.png",
+      "bytes": 43956,
+      "sha256": "d6bc2d45739055bc260d0e622ddb4cf4000d24b5b6f25dac1040e8a5e537a7fa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-360x640.png",
+      "bytes": 53580,
+      "sha256": "728d21ec123318249c89ff4b61346ade5ae451c6f417f62ce7377d86725e24b2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-390x844.png",
+      "bytes": 61862,
+      "sha256": "378b517ac705c016414f4f1934c884a546d5085f5c16cd7c1b91ce4cae4a4c73"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-412x915.png",
+      "bytes": 61044,
+      "sha256": "ed5fe06a0da67ac98d3e2be273a89fd6260d6935e95cea8458f3d9a632e3b495"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-414x896.png",
+      "bytes": 67233,
+      "sha256": "9b29a7aa4cd3f825be079f63f02279f8130905ef516667c15fcef81dd6fee65e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-720x1280.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-cup1-selected.png",
+      "bytes": 18859,
+      "sha256": "0010c0208c2b3f458f918fcfdd917edd6def903d2920efdf25d6e7ecc3606f5a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-order2.png",
+      "bytes": 62735,
+      "sha256": "ab90766f696eaa724524edcf38687b53ecce62c848aa49ed9b3d92d8a967a16f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-order3.png",
+      "bytes": 62801,
+      "sha256": "6d013f9fa2aad0706b0121a3d98f14922bed25b489d05473bfbc4e7c413eb1e7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-recipe1.png",
+      "bytes": 10985,
+      "sha256": "845e3d983e3b6a5545589f6e5a3d33cb2ea194bb47c784abeb68e9ecfba3501b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-recipe2.png",
+      "bytes": 10973,
+      "sha256": "0c1bfd1d54efbd2cc2d6b30c56d702f219293599a642ea85c351131aac27c71f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-recipe3.png",
+      "bytes": 10925,
+      "sha256": "c08755e8640c29a876b45db95d145f9bf2031099382cacd8106b1257f74e552d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/U05-three-cups-complete.png",
+      "bytes": 11706,
+      "sha256": "2577deab0deb186e7120631bbaa9595992640e2542128eb88a5e258c94746d0f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/VALID_CYCLES.json",
+      "bytes": 13253,
+      "sha256": "1739f3bd65a73e0b5a82103a0810b4cc204e23c2b9b1aae0eb217e71c799d67c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/VALID_CYCLES_CONTACT.png",
+      "bytes": 1173846,
+      "sha256": "79c7685d14cd92f019d8d290908b45deadfa02705cb5e562bc9f5cf03204d416"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-01-U00.png",
+      "bytes": 16699,
+      "sha256": "eea2978a44f4be9d7419056378550e0e8b6c65aaf4303e60199c12a04b000c02"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-02-U01.png",
+      "bytes": 16699,
+      "sha256": "eea2978a44f4be9d7419056378550e0e8b6c65aaf4303e60199c12a04b000c02"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-03-U02.png",
+      "bytes": 169838,
+      "sha256": "72253f9b9dc576df29d761fa9d5cdc64a20de0c2c1dc973108afe8aface82174"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-04-U03.png",
+      "bytes": 16753,
+      "sha256": "f33b62a5bd5f0439e066b24bb1be8fd22afd6bd3951aa23c33da9a0e6e9863e8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-05-U04.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-06-U05.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-07-U00.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-08-U01.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-09-U02.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-10-U03.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-11-U04.png",
+      "bytes": 16712,
+      "sha256": "97a38c14eddde58d27cb582023b018dc8bbd17d242a0e00f0d427c32b7b4519d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-12-U05.png",
+      "bytes": 98054,
+      "sha256": "da80e977579e9893ff6ead534f1d91774a44726d4b86bd24200c5c598b1abd04"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-13-U00.png",
+      "bytes": 98083,
+      "sha256": "c1eb2365f6106aba13bbe2d9bfefe8b8466ccc2656e582e2084fc9170fc4a854"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-14-U01.png",
+      "bytes": 16692,
+      "sha256": "f96277f82f86b10b7ef6504b605b58b5afc5639b5063059be35bde77e0f92406"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-15-U02.png",
+      "bytes": 77663,
+      "sha256": "cb67fd9dafffc1c8e1f6d1471800eba766f16444dc27bcfe7fd0e14b36123c99"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-16-U03.png",
+      "bytes": 16753,
+      "sha256": "f33b62a5bd5f0439e066b24bb1be8fd22afd6bd3951aa23c33da9a0e6e9863e8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-17-U04.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-18-U05.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-19-U00.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/cycle-20-U01.png",
+      "bytes": 16731,
+      "sha256": "b129dced1b222d3f443fde56d27be4d96f509f222d73659e77f12eb9d6e2f8da"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-320x568.png",
+      "bytes": 47444,
+      "sha256": "33c2d23a1103ea433c69716115c552122d62b8b7813044f2f62d5d85505a0f61"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-360x640.png",
+      "bytes": 55556,
+      "sha256": "ab79fac7f90d5ff5e254fc758d016b1df1ab4a0d039af05ef129db13b9fe89a3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-390x844.png",
+      "bytes": 72512,
+      "sha256": "dea0ab24ca1121f939940098ed5117d45dde90bd9c5293a1fc57305dac294684"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-412x915.png",
+      "bytes": 79157,
+      "sha256": "3e0ca594c5f666443e47643a3367c36f228d8101bba840197f9eae053edf378b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-414x896.png",
+      "bytes": 77303,
+      "sha256": "beb191be6e605ed455bf2d87a726a3de689b3ba270c21c5549d92d555ae4d42c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U00-720x1280.png",
+      "bytes": 165020,
+      "sha256": "3addcc0450da8f5ae4db13957adc466647087b3ae69ab44dd2388999d1eb17b5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-320x568.png",
+      "bytes": 21929,
+      "sha256": "17daf156870ecc15f607d58f0a2b5a97907f94fc85780f3fb80691a2862de11e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-360x640.png",
+      "bytes": 25368,
+      "sha256": "0a3f129a96b6d8e0d7bb187d926087b3cb6cc224a80b4d0122fddea2abd7501d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-390x844.png",
+      "bytes": 29585,
+      "sha256": "dabdc7ff06c94ccd8303dcb678bea35c7a4a1764beab13adead82ad9813b1f00"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-412x915.png",
+      "bytes": 32384,
+      "sha256": "0ee9e6938fc15d7d1fd5c5e7b7537deb5a3f1ef45c9785e7b8782dc3d1df6686"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-414x896.png",
+      "bytes": 31960,
+      "sha256": "fb38b9b6a7292e497369fa281d2cad659c8f8b58e9043395ef7f5c628dcb62ad"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U01-720x1280.png",
+      "bytes": 77667,
+      "sha256": "6dca67872a660ca187a78ff52d12ef1d2a112ef92b29e2ceccd116168a4fe1c9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-320x568.png",
+      "bytes": 22951,
+      "sha256": "67b744485070388bb6992b2d456dec18b6c32f77530dc789355a93f257b75f97"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-360x640.png",
+      "bytes": 25361,
+      "sha256": "8e834c82d5d67ecde4a7458c8dc3cb07f5a0a5e01d458e9b7dabe8b175e2e17c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-390x844.png",
+      "bytes": 26486,
+      "sha256": "e205330cdf955228149bd233d2f49d1e6ac090d27ed4e691bd1ccf304cbe9a27"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-412x915.png",
+      "bytes": 27898,
+      "sha256": "c589889a6e6663d6ed8dc704a46add45797898a060f6015677e012582c06bade"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-414x896.png",
+      "bytes": 26467,
+      "sha256": "fb77ad43e04ee17ba23052d48370e77b1f505b17f28fbc6667f2751d68d659cc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U02-720x1280.png",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-320x568.png",
+      "bytes": 19995,
+      "sha256": "53ae795541c0e21315c318f85c4c66566adb8c1e20674388775c45a1686b6133"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-360x640.png",
+      "bytes": 23183,
+      "sha256": "a04008076b4541952c7582b5b39dc17a5eb0199f7e3ab7cf25990ab32b6d14dd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-390x844.png",
+      "bytes": 27385,
+      "sha256": "54d3e31fc1b6e62343ec02d643292b26d25e08897094a448fdefed352307dbb3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-412x915.png",
+      "bytes": 30215,
+      "sha256": "3e436faccbd4b34ae0de898b83c7fd2535fb8a139e09659b28fdbe365dd043f1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-414x896.png",
+      "bytes": 29518,
+      "sha256": "7973d3849f1e326799962fbc5c254619931eae0cffd7bbed607c583101b50492"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U03-720x1280.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-1280x720.png",
+      "bytes": 117525,
+      "sha256": "a8556961b83bfe31dad1702a8d071b3340485896cae49b09661512465c437b70"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-320x568.png",
+      "bytes": 30754,
+      "sha256": "b6bbc575617fd57838fa6678989a1d3cd4d9cd4f661364c1853ff4ee7e193064"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-360x640.png",
+      "bytes": 36727,
+      "sha256": "432659c1b7ff60ec771f7bec328e2011a8fe90feed1d42d20c417d8e88d0170d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-390x844.png",
+      "bytes": 46739,
+      "sha256": "c96a68500232527dddec63d25547fd748882b346377b44c9c4521e6e8c0dddb9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-412x915.png",
+      "bytes": 51254,
+      "sha256": "eb1b8a344e276feecc97ea891ee94e5122a246e95f73805a2364d84c70ae016a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-414x896.png",
+      "bytes": 50144,
+      "sha256": "e1ae1cf5e256a5c52b0aa040b2276d6669f7b518fbfbd79745d3e6fdcb009b96"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-720x1280.png",
+      "bytes": 97707,
+      "sha256": "e058d25ff794d7e494b36fea1e20987570b3722c2e72b3e3da4aa43dd4301088"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U04-844x390.png",
+      "bytes": 56495,
+      "sha256": "f8ba42e5253f0ef4102059fd0bab6007f1b9ae6b0d17ed190ed40cbf10a4cd55"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-320x568.png",
+      "bytes": 43956,
+      "sha256": "d6bc2d45739055bc260d0e622ddb4cf4000d24b5b6f25dac1040e8a5e537a7fa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-360x640.png",
+      "bytes": 53580,
+      "sha256": "728d21ec123318249c89ff4b61346ade5ae451c6f417f62ce7377d86725e24b2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-390x844.png",
+      "bytes": 61862,
+      "sha256": "378b517ac705c016414f4f1934c884a546d5085f5c16cd7c1b91ce4cae4a4c73"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-412x915.png",
+      "bytes": 66784,
+      "sha256": "8b194d15b5893541019d729ed1d99a3372b356db3f154416448594b91f7679b1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-414x896.png",
+      "bytes": 67233,
+      "sha256": "9b29a7aa4cd3f825be079f63f02279f8130905ef516667c15fcef81dd6fee65e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/stable-U05-720x1280.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-01-U05.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-02-U00.png",
+      "bytes": 168113,
+      "sha256": "ca9f95c965c69cf7201946d8441e3790dda0861dd5491544e88be04817cb092f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-03-U01.png",
+      "bytes": 77572,
+      "sha256": "448f6c570d726a87f4db22e2dd678234fe67a48bff64d2565ea7a767f07e63a8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-04-U02.png",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-05-U03.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-06-U04.png",
+      "bytes": 98308,
+      "sha256": "879117adf32c425fabe1c2f9f544d7b411c57f96dea88b82e87a316e7ea22aae"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-07-U05.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-08-U00.png",
+      "bytes": 168189,
+      "sha256": "e2f9c55121574dad83f60e3829c9ff0f1de1b74b0a9e9f4a2f2799eaf6ca5869"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-09-U01.png",
+      "bytes": 77546,
+      "sha256": "a595784780e3e8be48cad4a54d786a8e250b9cf94230b550df8ba055233f1077"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-10-U02.png",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-11-U03.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-12-U04.png",
+      "bytes": 97896,
+      "sha256": "d853ba9755b5d01a91d7a1cc860f147d0f36a0f2fca02089c79557a93efe88bb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-13-U05.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-14-U00.png",
+      "bytes": 170154,
+      "sha256": "2a0479b91e04c05a4b756c21c85f117c5215e75d21d3745bef892cc019acd147"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-15-U01.png",
+      "bytes": 77591,
+      "sha256": "db54dc3776bdd1988221bbc31ff7e12fe5c45838b32d163c280a62335849205d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-16-U02.png",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-17-U03.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-18-U04.png",
+      "bytes": 97891,
+      "sha256": "124ba89d8b7003392dfd14908d3290a82f2d3e94c7e20ecda68b7a71201ea771"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-19-U05.png",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/valid-cycle-20-U00.png",
+      "bytes": 169800,
+      "sha256": "bbad03678184da49b7b43c1951e665117d766c42aadf5ba2d4bddc1d46eb769e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CLIENT_TEST_RESULTS.md",
+      "bytes": 5842,
+      "sha256": "1e19f66c6eb1e06ccf5d5284142b33686449bbd7987da1cae0a008a35f33900e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/COMPILED_MANIFEST_AUDIT.json",
+      "bytes": 15414,
+      "sha256": "536e794441f573e168bd0273355794a753f0f8d3422d758b218cf9ab3aa185d9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CONSOLE_ALL_ORIGINS.json",
+      "bytes": 82035,
+      "sha256": "4eb2a84a42216ab09d887d3112db3e4f343f4b3f328aca66bc2d914d02724178"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CONSOLE_NEW_BUILD.json",
+      "bytes": 22760,
+      "sha256": "762fe920a24d0f141e32c1e13d32f8ae16b5094d56f0bdb257d654ff130a9c4e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-complete.json",
+      "bytes": 455,
+      "sha256": "43f0d6d1c8ae930644754d13671a4a2ef22b065eea3c02a311d1f763b9095037"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-complete.png",
+      "bytes": 57441,
+      "sha256": "5d345594f55536f1f4fbc6a530c1d605c402c830c8ba7fbb72708c0ff70e385f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-configuration.json",
+      "bytes": 460,
+      "sha256": "de9bb4ea8c313917cedb5277fa19e0ae52d0c6e404ff590ff4a4e3866a38619b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-configuration.png",
+      "bytes": 75770,
+      "sha256": "2d1fd5d7d7fc4e28565e32d057e4bd850eae3447667068e4e8f8e29d03d37701"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-cup1-recipe.png",
+      "bytes": 56498,
+      "sha256": "17652ee22a2d28b8c1f7c491cccce74bf65173a8bdf4e0475f5e918d8034e545"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-cup2-recipe.png",
+      "bytes": 56443,
+      "sha256": "d8c14840dd39aed031d7194802f66f1015c0f546e969bd979843bd60478b5c70"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D1-cup3-recipe.png",
+      "bytes": 56497,
+      "sha256": "9fa75ff19088ea7ff9e4414facb8e08b50b209aa2f0afbdf4b19510546dde480"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-configuration.json",
+      "bytes": 460,
+      "sha256": "94a89359dc40792cda14ac0f30e307075298a5880a5408982c6b0f65e0ac1ffb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-configuration.png",
+      "bytes": 75723,
+      "sha256": "caf1a1f8487a6ed6e6cbeb78f6eac3cfefd6a4ca8afadb36b02c22f6a733f367"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-cup1-recipe.png",
+      "bytes": 56487,
+      "sha256": "7830ced14ead4d0b896153642206604b910fdbc007ae4a2d4ccb5ce5b8cc007d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-cup2-recipe.png",
+      "bytes": 56529,
+      "sha256": "0e593f6f71bc409a8c51d5eb9681ad862a85cdf5375383a09b117e9b641deb46"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-cup3-recipe.png",
+      "bytes": 58050,
+      "sha256": "bc1fd41c31c80022be542a0ef02e708df883c7a1025b0e1a3a6b2fa47113165a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-final-result.json",
+      "bytes": 459,
+      "sha256": "6dbc15189d8ab6410b26d01dae286dceff7b23438a3dcb0ddba25eeba1dc10c3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/D2-final-result.png",
+      "bytes": 58050,
+      "sha256": "bc1fd41c31c80022be542a0ef02e708df883c7a1025b0e1a3a6b2fa47113165a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/DEFECT_CLOSURE.json",
+      "bytes": 1015,
+      "sha256": "098ea62c64694d0f57172387d8d36ac21c966017f5d5927152f473c537fd4fd8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/DELIVERABLE.json",
+      "bytes": 2265,
+      "sha256": "d39b7305c7af495aed710b05eb71506eabc5da8115acc91302fe9a0dd32d3786"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-complete.png",
+      "bytes": 57183,
+      "sha256": "44e678c4da54daa42b7e114ce21500f436a3f2c96bec91434e5ed536716b724c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-configuration.png",
+      "bytes": 75215,
+      "sha256": "0033672a713800efc8025ef221ceb7dde75f2e426404137c7768194ace5ed9aa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup1-recipe.png",
+      "bytes": 56200,
+      "sha256": "8f2fafe6a206e68f116ebd29b2a713da71c099b8203defaf84fd9e376f58a662"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup1-submit.png",
+      "bytes": 162762,
+      "sha256": "bbdb5e1eddc03b13da8dbc69260b27aae008cb9de225c6ad0c8203301e10351d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup2-recipe.png",
+      "bytes": 56253,
+      "sha256": "0508cad2081f9471bb173eada7a9de91893876e813a5618058c357d681e1890a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup2-submit.png",
+      "bytes": 162872,
+      "sha256": "2aeb58412ace1ab0b8c851146252b6af2b05eeed20f55c9c443515982de29f6a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup3-recipe.png",
+      "bytes": 56241,
+      "sha256": "47233012cdd4184510129f45654e06996020c3db927b57b1fa978c156fca446c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/E2-cup3-submit.png",
+      "bytes": 162764,
+      "sha256": "2e33cf6b13d5fd03e9c6b8f3a6433246fffb602ed57eba0b0629ef0458dafe82"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/EIGHT_WINS_CONTACT.png",
+      "bytes": 74213,
+      "sha256": "ea399f3adb19e1bd008955d3e92e4fb47d5bc87ff2443c3560433abc2a1f71ec"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/EVIDENCE_INDEX.json",
+      "bytes": 66080,
+      "sha256": "fa65ba47d124c4c654b8afb02bc4f1b58e968e8d74d49475cd8eb26dd1fab8fc"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/FINAL_VALIDATION.json",
+      "bytes": 381,
+      "sha256": "8b5983a6a2527a4c9b6fe6239f3c766be6c6845220395a98252793d26f19650c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/FONT_FIX_CONSOLE.json",
+      "bytes": 59496,
+      "sha256": "802e91fc5c63393c7ea446c8c035f84fb3d96037993b60f88294c16ace007369"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-complete.json",
+      "bytes": 455,
+      "sha256": "ac5481bb4bcb2a29244dd27da386af0b0b535b7375c83a3df5d6ba52091fcd26"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-complete.png",
+      "bytes": 57418,
+      "sha256": "45d6a21688ddcd9d85396826ffeaa6055baf5f73f5983dcdf275dfa3af2e480d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-configuration.json",
+      "bytes": 460,
+      "sha256": "b5da5dcd149346bcd880de88cee28c632c84a61227fde6b678fa7ad4716a1f5c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-configuration.png",
+      "bytes": 75802,
+      "sha256": "4b597f5feb26f9e54bd3575c85e7c9d4cad641acf2397358f1e9eeb99cd6ae09"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup1-recipe.png",
+      "bytes": 56444,
+      "sha256": "add8c882ba6ec3512423944b8772393e8f18af5fcec30503ecea035eab8b09eb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup1-submit.png",
+      "bytes": 164062,
+      "sha256": "4440694d7a60d93ccfef44f3b759f1f4c28acf651dd257de89b4eee613de1faf"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup2-recipe.png",
+      "bytes": 56532,
+      "sha256": "a838c3c0c94df3abb4d0436f8cb692d24183c4e3401df56157a5ca9eb1da5de3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup2-submit.png",
+      "bytes": 164307,
+      "sha256": "f63c82907a37e5498150714601391e1b282bc4979032bd37a5552df1019a3f9f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup3-recipe.png",
+      "bytes": 56505,
+      "sha256": "3c088a04462c11b2686d962ad6f61562f70c1baab7883de571a40118d5416df8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H1-cup3-submit.png",
+      "bytes": 164717,
+      "sha256": "48f85745dee015dd3416d45298e824505b62117b83c854779cec49192f4c1d8e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-configuration.png",
+      "bytes": 75796,
+      "sha256": "0109bcf5ae41274ff313461386d3196459d7f8fecdebcfe8a49808143f45953b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-cup1-recipe.png",
+      "bytes": 56466,
+      "sha256": "a9de177b7dd1bbed87d16c60bc6b2f57af7a6d6883945d17e1211d16290e6571"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-cup2-recipe.png",
+      "bytes": 56526,
+      "sha256": "afbaf686e379745a344d975bc07d3cb7c078d560b7318a3bf1402c1b3cef311f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-retry-complete.json",
+      "bytes": 461,
+      "sha256": "6c3d038d3034c394090d4793d1b4fba3a46fb656418424cf039866834d843627"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-retry-complete.png",
+      "bytes": 57491,
+      "sha256": "be4bf19f4f0cc47f17192ab0790c49ded34e93c4188acc6420c32c56c4fc754a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-retry-cup1-recipe.png",
+      "bytes": 56470,
+      "sha256": "b3d36732f155e62328f38fa0d06cb96fb576eadf4adb14a45d19fcab47816c32"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-retry-cup2-recipe.png",
+      "bytes": 56473,
+      "sha256": "5a81e886e2f76daa2c3faa7abc2cea06cfe3e0bfb1935410975989a866b53b62"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-retry-cup3-recipe.png",
+      "bytes": 56528,
+      "sha256": "b55ae21cb024931c74c5def4839665b7510231c27a62e8e4f1e6b1564d20120c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-timeout-during-evidence-diagnosis.json",
+      "bytes": 480,
+      "sha256": "566812db02acd00f1b0edd2effb5d1e24599883b458bb7243895bc1ccf929a1b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-timeout-during-evidence-diagnosis.png",
+      "bytes": 54788,
+      "sha256": "a44e858f06bf40aa17920cde2ffd157b7a0c887db8336903c174f0229101d599"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-timeout-result.json",
+      "bytes": 461,
+      "sha256": "4894d22c2038902d73dab38881d9276efe6a2a7fcd1ece219063350dc41fc954"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/H2-timeout-result.png",
+      "bytes": 58051,
+      "sha256": "68a28adb6012e2cb8a5fe401e03410657b0ce7bd4b07669ae3a225463949e8d3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-complete.json",
+      "bytes": 455,
+      "sha256": "19f76cf2990cce0e5d2076612b98008adeb30bd10753ed404416ba071076adf5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-complete.png",
+      "bytes": 57204,
+      "sha256": "afff8c8c9672c94556f4179d8c304e5bc1bd759a28198caf3d573787fda5ea6c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-configuration.json",
+      "bytes": 460,
+      "sha256": "0d07b956ffe089caf7884c4a1c93de2a813a6b38738c0966a430dcad8574a667"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-configuration.png",
+      "bytes": 75633,
+      "sha256": "b4599e996221fe9d6134a737f6f204b31649d8f4d8314699869de399e5ae0d42"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup1-recipe.png",
+      "bytes": 56351,
+      "sha256": "af0a271eae0b19032ac6e2c478dcfc0622971a42ac1d75f96d16c5fe1f3da97f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup1-submit.png",
+      "bytes": 163230,
+      "sha256": "4235012cdeab4b8fc330d6f6ede6b5544f9b946e69db944fa327ba2ed46fa35b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup2-recipe.png",
+      "bytes": 56267,
+      "sha256": "b2a408f8084d566ef2ae2c8c387ac34b42b37aaf603c1fee6e543779985ceee4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup2-submit.png",
+      "bytes": 163188,
+      "sha256": "f79dc0b11f7743f34d16790ad47a21a1dfe3354f96ff9ce08ecb065b2f652957"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup3-recipe.png",
+      "bytes": 56307,
+      "sha256": "f877af9be07452348ea7bce8b38cbed96d103b7f0a5a481998f54c78f2bb7625"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M1-cup3-submit.png",
+      "bytes": 163320,
+      "sha256": "3919611b05a63d3f0e40a4a4afb0a5d44e02cd1ac91b9fb9b62de291b5006aa3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-complete.png",
+      "bytes": 57453,
+      "sha256": "e05360e04d62e00713aff98ef0c6a8f386d3748a0b6b142c7ee21ce33901647b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-configuration.png",
+      "bytes": 75711,
+      "sha256": "823beda8896fe7a7f1469ae44e51319261f152903cd665560f8f996dd12fc0e1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup1-recipe.png",
+      "bytes": 56446,
+      "sha256": "f95b59ca99bb1df8658dbb2f80be901e5ede237527a00e5bd9357400928b622f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup1-submit.png",
+      "bytes": 164499,
+      "sha256": "0ad1062ba9c7257a575dbc8f7a6732965adf9d07fe15f04a2d2c7748e3da4572"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup2-recipe.png",
+      "bytes": 56500,
+      "sha256": "10c1f6dd8ebe31f16eacdad5d9623044c16e6e557c62a6960de9d9e2d8770261"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup2-submit.png",
+      "bytes": 164009,
+      "sha256": "9d5a73f044d222ad0fa06e885cd58ba1668bad29f7abbcc9a63829c1727d6392"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup3-recipe.png",
+      "bytes": 56541,
+      "sha256": "858578f48832dc04223f151d0964d0d136b20c14ef67e92bad216f0f34d01ae1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/M2-cup3-submit.png",
+      "bytes": 164363,
+      "sha256": "15b14bec53c3dbcb3e438725da33fbd777a8e6d6b816bcca68d34bf4897ca113"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-configuration.json",
+      "bytes": 460,
+      "sha256": "6d2305f4a17dfe39fa3a161e90daf423fef854fe82ab125be2b6a4f56e7188d3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-configuration.png",
+      "bytes": 75791,
+      "sha256": "a034d6eb55d2f991c30d059c27c2b7ffddbe77bac59e8172b6fb85d28ce43578"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-cup1-recipe.png",
+      "bytes": 56466,
+      "sha256": "dfd0334bfd93a8701b3111d5712a59552102a6b3af1767693554fa65f5c65926"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-cup2-recipe.png",
+      "bytes": 56422,
+      "sha256": "4d9c3c070a7930a9664c27ef2cbd326e7d934ba284d742191512d6cde64b792f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-cup3-recipe.png",
+      "bytes": 56510,
+      "sha256": "8a10102dec131416b0bf7f515a364c37f8a21b8729ecb71f0420ab3969198ac5"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-final-result.json",
+      "bytes": 459,
+      "sha256": "6336fb7ed6fbb41743778b65001b06bc9221d0ea4ed0d228f364a3811913af4d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N1-final-result.png",
+      "bytes": 57441,
+      "sha256": "2f8d9fa3b0204e7aae919b31b865323704202a95f6d038f970d60580405b5ce8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-configuration.json",
+      "bytes": 460,
+      "sha256": "84b9bb0bbc2f03cb2ec84b576680f77d03d9060548bd75293a4a4b862ecd1f18"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-configuration.png",
+      "bytes": 75628,
+      "sha256": "6279d9f73fd2c9a3339d1e6f7c87241dc67ba124077a504266b9db9686a9cb66"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-confirm-exited-to-selection.json",
+      "bytes": 474,
+      "sha256": "52dcf8935084cb139daca424b366955ca9c7f4d73f69fa4505cd334af48a0540"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-confirm-exited-to-selection.png",
+      "bytes": 162325,
+      "sha256": "a290d66ec5a9fbcc468b07698d126a31765597a5d133a6910798bf2a202a874b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-error-state.json",
+      "bytes": 458,
+      "sha256": "58353f254e02a96936ed52b5df1535bd900f0b1bd7c0a762b0bb458b7b3e4264"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-error-state.png",
+      "bytes": 73235,
+      "sha256": "a0a2a97b0f4545aaa09665d62d1e7206ddbf94522e87dea509db21dd3bd43c12"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-exit-cancel-continues.json",
+      "bytes": 468,
+      "sha256": "fcf9c2f3b289d2e4dafecda517ed57367e2377f32b07c419975d6308222ffd94"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-exit-cancel-continues.png",
+      "bytes": 163139,
+      "sha256": "2685d2fbf07ffed39b15e870bb9dd60dac9b73c94b9fadafc0190fcad4ed621f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-exit-confirm.json",
+      "bytes": 459,
+      "sha256": "97c3411fccf51eba6e7272f99ab48b1644f893c26994df85c0ff69c7ecc92c3b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-exit-confirm.png",
+      "bytes": 57535,
+      "sha256": "edf7de1e9bdca5d6f1040797ba474df441afc21f5a9b8a3618fe49464eb5371f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-wrong-feedback.json",
+      "bytes": 461,
+      "sha256": "91f3788361613f3ee496b6ce5c87bae17a56a372cd11179b6bc633dc3fc9258c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-wrong-feedback.png",
+      "bytes": 163077,
+      "sha256": "1d74adfdc3752967b12da58379eb118695622bdd18715549f76244e7382e153c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/N2-wrong-recipe-expected-3-3-2-given-1-1-6-recipe.png",
+      "bytes": 56515,
+      "sha256": "d15d2d3504356b99eb9df10be0027c5fbe64988cd792fb5147578fb1587bcffa"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/NEW_BUILD_IDENTITY.json",
+      "bytes": 578637,
+      "sha256": "2f2730a97176b4bf8da07e793dfd3295c28a2502e1dbef87bfe451deaadca81b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/NEW_DISPOSAL_COUNTS.json",
+      "bytes": 7460,
+      "sha256": "29c68500dfd9993eb12d18f6f5b10f54584e811785b4ca0ed9df0d4ac5d5d5c7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/PACKAGE_MEASUREMENT.json",
+      "bytes": 1194,
+      "sha256": "a0adaedd155e05b76af9e02ca9a28a7c2a89fd37f0a16d806f5c998517b1ebbd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/SIX_PNG_IDENTITY_RGBA.json",
+      "bytes": 5247,
+      "sha256": "3582f74470b9d08874f3775fff15c7ce48a8e3e084feef5fa209a495bfcf6113"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/TEST_REPORT.md",
+      "bytes": 5921,
+      "sha256": "04e51950f0db0121896adde5c1ed7c53926e594eefa552d6f5c25e7481cb0e3b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/TOURIST_64_CONTACT.png",
+      "bytes": 487316,
+      "sha256": "1cb606ee70e4beea01ab28b47f22e7f077a3e509b999d13b8c90c2149052c915"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/U00-service-recovered-loaded.png",
+      "bytes": 168067,
+      "sha256": "999875d725d184f0bebad2d3ad57ca8af3bd00688d3a0250c17f872e80eac8e8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/U00-service-recovered-menu.png",
+      "bytes": 86201,
+      "sha256": "cc26b62116d934d8ff6cb009a150a49b973187ceade7da02017f2ae408b9bf06"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/U00_RECOVERY_CONSOLE.json",
+      "bytes": 1935,
+      "sha256": "77a7fcac7885cb70605abd536dbd31e4d6186138be0b225cc83f00bcdfb44a94"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-run-cup1-submit.png",
+      "bytes": 162028,
+      "sha256": "5e00baa7f96e191eeadf82f16d82c1996b74c93cd8871452c270ef9ef0b98dd4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-run-cup2-submit.png",
+      "bytes": 162228,
+      "sha256": "f1a605f09197e89510a49df6e943c4d47836c82d9f5075bf5fef316942bc20d8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-run-recipe1.png",
+      "bytes": 56245,
+      "sha256": "cf91ca375480a9d0de390ebd12bc12d586c997d75c98a69b98be3e012d1589d8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-run-recipe2.png",
+      "bytes": 56234,
+      "sha256": "fb6c6f9229cdb14a8a731c06d6375dce4ef1706f7fa9143850fb36321155a0f7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-run-recipe3.png",
+      "bytes": 56206,
+      "sha256": "88b84afd363b5c5dffa918d90df847b4e4737d3979ceab0fbcd5a9c83831ea09"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/font-three-cups-complete.png",
+      "bytes": 57172,
+      "sha256": "33e56b893fb2f122055ee9bda9884c6b98cb83027c00ec1e208d7da4b80a73f3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-U00-full.json",
+      "bytes": 456,
+      "sha256": "f3a5bbc4dc48c93f0f64d36d39bb4426c685a5bdce170db1b9f63306c19787fe"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-U00-full.png",
+      "bytes": 31918,
+      "sha256": "944907aa8a18385cf3998af2f957ed53db75553108be3c5518ef852bb76e5a9a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-at-s3.png",
+      "bytes": 50572,
+      "sha256": "8f8548653700af4cd6c053d5e3e1721d9a2d7a52221f1ede3ec60194c9371607"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-final-menu.json",
+      "bytes": 458,
+      "sha256": "15b361bae79a5dc55eb35ebcd3f048a7e323f33c0c3a2f3e310b446bb4def035"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-final-menu.png",
+      "bytes": 31918,
+      "sha256": "944907aa8a18385cf3998af2f957ed53db75553108be3c5518ef852bb76e5a9a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-camera-max.png",
+      "bytes": 53467,
+      "sha256": "33520fdd0cce7987e29b516044e4918ce223c642a3e2f76685ec5b8585eea62a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-camera-min.png",
+      "bytes": 13690,
+      "sha256": "95619b118cfd96c42077b3c3526118207ddf2bfaffaad4953678d83cc30cc18f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-camera-zoom-out.png",
+      "bytes": 32725,
+      "sha256": "2db9924917dd9767d14ad23d01dd13a07c11b71d368e9a63cb217197613a9fb1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-dl.png",
+      "bytes": 55538,
+      "sha256": "338af65e32bb345a133dc0392ef0efe7a637dcd04e1744d6e2069f583dd7e398"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-down.png",
+      "bytes": 53325,
+      "sha256": "c6ee8382152aaad112d59ccfc5a2c9730f8955eaf2caf02200fe761939e63f29"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-left.png",
+      "bytes": 56980,
+      "sha256": "e54be56235e77ddddee2558be168c4f35734aeae339ccac790d1c7fa60fefd8a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-right.png",
+      "bytes": 53264,
+      "sha256": "c74de334139d1b87d63b09a50436b0ea1da8fc88ea614f89fe30364a278e362b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-ul.png",
+      "bytes": 55930,
+      "sha256": "8652031e71103e6b91e5e0e4010e4ab5238834c7af3171755f0dfe184be3734c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-up.png",
+      "bytes": 52389,
+      "sha256": "c8711e948799937d03f71384f3798ed3787f0f4dd32c59a6fc8844f26e5dd4b6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-max-drag-ur.png",
+      "bytes": 40887,
+      "sha256": "b66abcf8c98beac05f41566849eee00b32f1d0d3a52770d734046014565b3810"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-min-saturated.png",
+      "bytes": 13692,
+      "sha256": "e3fccecd7abb1aeb7b264018e9209806b7987b188bdf44dc63dac803429aca9d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-next-layer-after-drag.png",
+      "bytes": 29598,
+      "sha256": "b2c5c4fe51b43d8c401c9559085c9f15d6c151a5c422203c72ae2b79e764033b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/new-sky-reentry-restored.png",
+      "bytes": 29609,
+      "sha256": "d25456f61245790d31abebd11a0d597390702c79b0494ade4b7fe4f08da75023"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-0.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-1.png",
+      "bytes": 57420,
+      "sha256": "702963420955542f2a311a594307e9b41934cc927ef3537735f7d55a87ed3c6e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-10.png",
+      "bytes": 69480,
+      "sha256": "f0b6a8bcd7b977ce3a9b6e6cbd173760bfa3683497e475cf205a0f7ceabe6f0d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-11.png",
+      "bytes": 64727,
+      "sha256": "7a356f461d4e2921248e5ce605cf1739bae12b51d200f4ec5c833265cef45d23"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-2.png",
+      "bytes": 63423,
+      "sha256": "e0c310fef4e08d2ab9bff5c8d6e2842c864f36e864d70132e6368f9936d7d566"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-3.png",
+      "bytes": 67078,
+      "sha256": "a9cbf0b9c4fa6e85672ce063b5c1d18faef1e7cb8267280c494523d949255937"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-4.png",
+      "bytes": 69480,
+      "sha256": "f0b6a8bcd7b977ce3a9b6e6cbd173760bfa3683497e475cf205a0f7ceabe6f0d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-5.png",
+      "bytes": 64727,
+      "sha256": "7a356f461d4e2921248e5ce605cf1739bae12b51d200f4ec5c833265cef45d23"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-6.png",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-7.png",
+      "bytes": 57420,
+      "sha256": "702963420955542f2a311a594307e9b41934cc927ef3537735f7d55a87ed3c6e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-8.png",
+      "bytes": 63423,
+      "sha256": "e0c310fef4e08d2ab9bff5c8d6e2842c864f36e864d70132e6368f9936d7d566"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/shops-two-rounds-9.png",
+      "bytes": 67078,
+      "sha256": "a9cbf0b9c4fa6e85672ce063b5c1d18faef1e7cb8267280c494523d949255937"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots0-happy.png",
+      "bytes": 60086,
+      "sha256": "16a5f6a08c062a1fd9095d8599e900f65072f6ee4821319280daad9a41c22684"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots0-run.png",
+      "bytes": 58781,
+      "sha256": "fbfc11056cbb5170c6968c6f846a378c7f94620d0a82805242432a07b5f8a7e3"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots0-sad.png",
+      "bytes": 59724,
+      "sha256": "30db96196c03d8750b739974741c2bcab75064a8da716511ea8478cee6305344"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots0-walk.png",
+      "bytes": 58783,
+      "sha256": "43eea882fa99c60eebe6f5b1fa09d2e918d1a8c8b2e750368ccb3b144aaa0a74"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots1-happy.png",
+      "bytes": 64066,
+      "sha256": "34d55b20539e00401a397cd0e7aa7446fd7670abfa3f4e4ac7ba245f2880183a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots1-run.png",
+      "bytes": 63345,
+      "sha256": "a8973cd473526ec6a8a6626ddbc6e436a90883b9e8ef9c2600afeccf425a4235"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots1-sad.png",
+      "bytes": 64111,
+      "sha256": "eb553da3194cf30aad9c7cad52d77f39447feaa1c312d352b5b106ff040923ea"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots1-walk.png",
+      "bytes": 63322,
+      "sha256": "0bf89effd962d58e4692ea2c8431ea3e4d9d517efbd96377036adfb86aef16c4"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots2-happy.png",
+      "bytes": 63761,
+      "sha256": "ddd693b5d47ba3b310f41e0abcd914d93b8b825ee3ff7d48835c6a00ae5fc04f"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots2-run.png",
+      "bytes": 62518,
+      "sha256": "ce269c88a53183b808e7bf01e7bd1c9d289d70f295712357f5f0b2d9025c547a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots2-sad.png",
+      "bytes": 63428,
+      "sha256": "b170ca0fd5b0b483f7ee271682655ebed0807036160455a3b34e7dfd0a8a8336"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots2-walk.png",
+      "bytes": 62460,
+      "sha256": "085c0ecd2d88ab128a07226d981c0622570d6214208b6bd155d85a8a6c7fa1f9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots3-happy.png",
+      "bytes": 67606,
+      "sha256": "dc945837dd6337b34517aa1238c39535619c290a71a06eda174f9fed865b5b04"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots3-run.png",
+      "bytes": 66960,
+      "sha256": "bbe9042aaf88007b65d5a1a9a47b59475bee2126d304292f4a68f741a8b84eec"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots3-sad.png",
+      "bytes": 67707,
+      "sha256": "5e295d25b96f616e5b964c8363089324f44264aa4da70e3488502ab10f1230e1"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots3-walk.png",
+      "bytes": 66877,
+      "sha256": "8317261dcf241c4541f393ace9c62ee2c65bf3c6ad57b0782eedf571d001e686"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots4-happy.png",
+      "bytes": 63499,
+      "sha256": "aa872a9873d2ee6efbb805b766b8587ebdca05d904d82ba873af9b8f642fa966"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots4-run.png",
+      "bytes": 62222,
+      "sha256": "e25dd56b1e0169593a78eb1ddb975a2aac99bd2f54d9b517a4016edfcfc76b61"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots4-sad.png",
+      "bytes": 63147,
+      "sha256": "841778402b304af3113562950fcc54f85f8c6903f71e7634372a9b32dd647622"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots4-walk.png",
+      "bytes": 62216,
+      "sha256": "7292c3a19806f4065280aed9d8491b262760b10daf9b02a6ce491115970b461a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots5-happy.png",
+      "bytes": 67503,
+      "sha256": "6cfbcf31ed807756052a63ae910825872532c7344b2ac4589d54cac914441d27"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots5-run.png",
+      "bytes": 66820,
+      "sha256": "984bd012e7c8764ab19981ecfa62a9dc1ca4117cda73f1c640dde2cff739da9a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots5-sad.png",
+      "bytes": 67521,
+      "sha256": "c50e0ad4e0d9e0042ebcd698fa97cd752ef32a41405f363c4218f48962321934"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots5-walk.png",
+      "bytes": 66772,
+      "sha256": "1a79b4a35330508d962f0998294e1f8e0a237739b3294fa07087865d57c3ec22"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots6-happy.png",
+      "bytes": 67121,
+      "sha256": "433cadb6c45a029ce76749477f202e03d94b78067529942d8fdea04030fc31df"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots6-run.png",
+      "bytes": 65926,
+      "sha256": "fbc960f0150240c69ad7731a0157a0244bdd5753195c852799228cabd0ede775"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots6-sad.png",
+      "bytes": 66803,
+      "sha256": "02a85e3a0d875ec24712eb7cbffcacf94d69a726af73dcd1cbf6dfe58ea97412"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots6-walk.png",
+      "bytes": 65902,
+      "sha256": "60c3e26763a8c85baf0de5e123379c4d49bf3630682b95da5d6975c8674e1d5c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots7-happy.png",
+      "bytes": 71047,
+      "sha256": "b248f374c520ba90aab086ba9976c060c632d7e73eeac5a1e22ed160c44ed04d"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots7-run.png",
+      "bytes": 70416,
+      "sha256": "e55f9d52f6cc3fa956a93e24c94177fe023ff279c9cb100fc9d91018e6500c80"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots7-sad.png",
+      "bytes": 71124,
+      "sha256": "cd7e0524ceec860b7a9115b9c6d603e2a9cd96199eb3fb01b01faaaa23215605"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-left-slots7-walk.png",
+      "bytes": 70349,
+      "sha256": "26bcc9bd42f48ada41339217d4b7f229fc76a4daf6c8344906f9d39022357ff8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots0-happy.png",
+      "bytes": 60033,
+      "sha256": "d5d2d8f0f81ccd962928a88ad77b350f3da81627925942c27c1e20019e19f4e2"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots0-run.png",
+      "bytes": 58756,
+      "sha256": "22de38fd11cdc792b574fc36f9a2b07a931026197ee7e3e2deaaa86c11f69a51"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots0-sad.png",
+      "bytes": 59677,
+      "sha256": "2cc0eed3837b19f7ebd8d524e3cd7cf5de25edbc599688cd768d424ddacda710"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots0-walk.png",
+      "bytes": 58752,
+      "sha256": "bb60f5b64a54e5a8b30e8aaff92801599e4ae94bc9b170a79c67e5b29c6ec60b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots1-happy.png",
+      "bytes": 64002,
+      "sha256": "de45a9530fd5d81215397c46fe617ab44278b45edabadd443eed4487d8dda954"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots1-run.png",
+      "bytes": 63385,
+      "sha256": "aa681585f455ee62758bac60bebc30912166acfe2904eb4c59dfea53d2962a7e"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots1-sad.png",
+      "bytes": 64040,
+      "sha256": "3b28e50e712ae4caf2baa729b3592937dbee8720c27c62aaad7a91a363e65413"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots1-walk.png",
+      "bytes": 63281,
+      "sha256": "28e4b501ca9a30aca4a1440c880473fd74421712f4b34e6f1719e436a455ea3a"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots2-happy.png",
+      "bytes": 63731,
+      "sha256": "98fc6747cd7c07c0ac47ee83c8132a15b24d41cc0127d7aedf79e2b3fb4c2ac6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots2-run.png",
+      "bytes": 62518,
+      "sha256": "cb6e7ee5499cd9f465453bca2d03a045662fec759ee7ab064692ef577109be86"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots2-sad.png",
+      "bytes": 63394,
+      "sha256": "4c319986dafb54e2a1234b4dc8465bed8b87c044f4b90136ba7d785451b1dba7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots2-walk.png",
+      "bytes": 62441,
+      "sha256": "675d0c8e0bc2fc2c61daf22f41496a90dc07ddd4b4a7235976df4b1d59aa91c8"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots3-happy.png",
+      "bytes": 67570,
+      "sha256": "0921742570552d6af52077cf799381ed548d2fc4a0a88a85811a62d29749ab6c"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots3-run.png",
+      "bytes": 66924,
+      "sha256": "82951646d7c0cb21bd45faff9134b1a4dc7102620725ff0fa4b7cd7230123bf9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots3-sad.png",
+      "bytes": 67675,
+      "sha256": "7b245e7bd7a05615a9fa2a45c86b6c235dddec793f2e8647f344c85c3cc50c04"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots3-walk.png",
+      "bytes": 66812,
+      "sha256": "7d33f5e925c5a82c185f43b6ec35623f0eb58114044a6c108498a2899367d485"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots4-happy.png",
+      "bytes": 63462,
+      "sha256": "77e53815d49a53c062603516025efb366669c4dd6c53298de08f495419c48adf"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots4-run.png",
+      "bytes": 62191,
+      "sha256": "02ffa033db671886aa69a1285ed83475cb0a78a3e230ae416b6108af3614cbbb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots4-sad.png",
+      "bytes": 63095,
+      "sha256": "090ac778d1c31ea30fb7095285b15518b84a83f419badaf14457210d2ba9c2e9"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots4-walk.png",
+      "bytes": 62189,
+      "sha256": "990ccf58ebd7ca103b79a1742faeabd83b15744a0e9e3af3e8b4dc926f3446bb"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots5-happy.png",
+      "bytes": 67447,
+      "sha256": "a08db65137b740179193362f52caa002ac558aa20a6a192585b9f33a107b3440"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots5-run.png",
+      "bytes": 66846,
+      "sha256": "755327387897bd00317f99564373e032e05152ed534d25b742bcc06ae6b80cb6"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots5-sad.png",
+      "bytes": 67526,
+      "sha256": "bb2ee088e5a880e4015b8e95f3ff1f74bc774a4ed9dc4d5f342d901e4bc91071"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots5-walk.png",
+      "bytes": 66733,
+      "sha256": "4c3a31a34f7bc7585a89e8ba07cb5b17107e1e594cd30fe67548f977b6dd9519"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots6-happy.png",
+      "bytes": 67065,
+      "sha256": "d40d4a3a77437c99c27206ddd644c2c65664f1d5335cd5a1e2186284a87ba281"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots6-run.png",
+      "bytes": 65888,
+      "sha256": "ef634bc35427994eda2527955222d7bd496ae2d9bb5823aaa73b207cb4f9fb72"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots6-sad.png",
+      "bytes": 66795,
+      "sha256": "53b5e38091b1e4afe160b5df6c222522cf22c4ebd63585c09811d51f023f792b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots6-walk.png",
+      "bytes": 65862,
+      "sha256": "0bdc18cd9cfb0b6d094fd3eea326ba310d3a33025d68e163d8824c93892072d7"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots7-happy.png",
+      "bytes": 70991,
+      "sha256": "b0291307ebe9d56025000d46fc5042c5306e94d826354291292819129d22dafe"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots7-run.png",
+      "bytes": 70418,
+      "sha256": "4fd805a41f46081841a13ed2056a4eafd881cbc8270eb97b3911b2f2d3cf46fd"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots7-sad.png",
+      "bytes": 71124,
+      "sha256": "ba7ce0abbb0c5fc92a6e782bddddcd2dc6a00f99f553fd1316a5a8edd57ff893"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/tourist-right-slots7-walk.png",
+      "bytes": 70316,
+      "sha256": "c4a0a9a1c485eb2d64eebce289351eed8279bf499efbe1bfc6a532ad9a65a73b"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/validation-on-stage1.json",
+      "bytes": 464,
+      "sha256": "6bc1b602652dfe9cf9da8404985dc6aed3d317e6af4fefdd01d4e5f1c80add31"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/validation-on-stage1.png",
+      "bytes": 78374,
+      "sha256": "37a6e2d940e2c587a62a9687a08e3e29e9162c3c76f871492ee39bd24fc67844"
+    },
+    {
+      "path": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/validation-on-stage2.png",
+      "bytes": 78093,
+      "sha256": "56ddfdb7f306634d7650a9ea7ab5a27f977144aabdb16d9e2cd0e0c10a0b8a4a"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.1/DELIVERABLE.json",
+      "bytes": 1095,
+      "sha256": "a768b09d59dc91e8242f39e03ff0dbc7cfd1ce50d86342e13b530c09b677724e"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.1/REVIEW.json",
+      "bytes": 800,
+      "sha256": "e39408d798372159913d663589640a69a53aaf4e886ff978407d1ae1bcfe4fac"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.1/REVIEW.md",
+      "bytes": 3430,
+      "sha256": "843126b1f268c943fd57fe7566d02b646eac023edb149711163651415e0ee42e"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.2/BASELINE_PAYLOAD_DIFF.json",
+      "bytes": 356,
+      "sha256": "d8e63a847da58d7dac3b816eb8b6b3fc3a0fa512f2d45ecd88c03b9bca549f66"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.2/DELIVERABLE.json",
+      "bytes": 952,
+      "sha256": "88aa12c61a8f898c93b862f9011b210ef2c3924ae54258681b40df26adb0033f"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.2/REVIEW.json",
+      "bytes": 577,
+      "sha256": "8a0d6b7e237e2680932bcc4c3fb3ce28152c35d1985a420ca0e75afec16e50ab"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.2/REVIEW.md",
+      "bytes": 1751,
+      "sha256": "c71f19ad07d3ecb04ac97614523914c813cc2103828580ce33588cb19a3f70d2"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.2/VALIDATOR_PROBE.json",
+      "bytes": 1801,
+      "sha256": "4a3613e6100ea50bc98e103def7e2ae119de6e76de740e1c52910c610b1f408a"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/ACTUAL_OUTPUT_AUDIT.json",
+      "bytes": 8010,
+      "sha256": "06b15e41740a92bb4a1b1d3d118b8642d3cc234ebf435bebbbd45b3bd75d2a32"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/COLD_RECOVERY_AUDIT.json",
+      "bytes": 9378,
+      "sha256": "23ac03b6e7eafa3135a9b0c426f863cc575395f4a7eb4e84348b8ee83041d2d5"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/COMPILED_MANIFEST_AUDIT.json",
+      "bytes": 15414,
+      "sha256": "536e794441f573e168bd0273355794a753f0f8d3422d758b218cf9ab3aa185d9"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/DELIVERABLE.json",
+      "bytes": 2655,
+      "sha256": "93d0797da48beead17d99601fb773488b890c2634e35e504a6b6dcdc8005e134"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/FINAL_INPUT_BINDING.json",
+      "bytes": 4402,
+      "sha256": "8bfe2c5323d6a0bef7912b78ad28ceb9edef1e127294792cb281ae588aa3c87b"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/PERSISTENT_REPLAY_AUDIT.json",
+      "bytes": 395,
+      "sha256": "a319a1f0c0e03e2b54876e86f471599329923f8dff1f6cdc01dfa6e5448019be"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/PRE_POST_IMPORT_AUDIT.json",
+      "bytes": 2892,
+      "sha256": "2ad995276ecf7ec2f7c8921519f6a08adb9ca8d2d339ed3e5316b92a0efa9d90"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/QA_CONSOLE_BOUNDARY_AUDIT.json",
+      "bytes": 11142,
+      "sha256": "74b5f02d4dfd062fab75fc17193d84c86f31bbf610643f4e6fec2ed3726078f8"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.json",
+      "bytes": 829,
+      "sha256": "d0812774c985fb5382cf3d14c0c3221a39d4053c2dad365953358513d4021ac6"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.md",
+      "bytes": 6179,
+      "sha256": "adac975973c1898656aeeb6a37a105b66617d4c25a9ef79117014ced1ef61d3c"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/SCRIPT_DIFFERENCE.json",
+      "bytes": 2608,
+      "sha256": "7c49081ee55e60c12b564c8d3ab955c528661eb7e894e30818449a56e96bed0a"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/VALIDATOR_PROBE.json",
+      "bytes": 1494,
+      "sha256": "88f7db7e291483fcddffdcde1a7aa0c66d66b801e65080fb3608811140c9d728"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/compiled-manifest-audit.cjs",
+      "bytes": 6564,
+      "sha256": "2f9831f3886a577688712715ad682d3ca0856b5b4b8bc7984c50ce8ba9385531"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/script-difference.cjs",
+      "bytes": 3368,
+      "sha256": "a22a63ddb5d0ea1f7cce39ec5317e617e6f49f82e8735c3f9111030fa0e0d16a"
+    }
+  ],
+  "total_files": 634,
+  "total_bytes": 41902547
+}

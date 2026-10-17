@@ -1,0 +1,31 @@
+{
+  "target": "http://127.0.0.1:8937/",
+  "buildStage": "/private/tmp/minigame-art-opt-png-stage-20261017-v05",
+  "stageManifestSha256": "f50f08a1d4031355d8aaf2dfa75a400881c785b716cc8ba3c07968ae9fed00ac",
+  "viewport": "QA释放后采用浏览器原viewport；未设置viewport override",
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "首页Canvas加载",
+      "result": "PASS",
+      "observation": "显示“单元示例”选择菜单，U00-U03卡片正常绘制。"
+    },
+    {
+      "name": "交互路由至U03",
+      "result": "PASS",
+      "observation": "点击进入U03并连续切换店铺。"
+    },
+    {
+      "name": "获批U03灯笼铺PNG",
+      "result": "PASS",
+      "observation": "店铺05/06显示“花灯”牌匾及完整摊位图，画面正常。"
+    }
+  ],
+  "console": "本次工具表面无读取浏览器console的能力；未声称console clean。",
+  "tab": "临时IAB tab已关闭，未改全局viewport。",
+  "server": "继续保持127.0.0.1:8937供QA访问。",
+  "timeUtc": "2026-10-17T13:50Z",
+  "serverPid": 22228,
+  "servedOutputRoot": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/build-output/minigame-art-opt-png-20261017-client-v01-web-mobile",
+  "screenEvidence": "IAB screenshot was visually inspected in session during U03 05/06 interaction; canvas rendered the expected lantern shop sign and booth."
+}

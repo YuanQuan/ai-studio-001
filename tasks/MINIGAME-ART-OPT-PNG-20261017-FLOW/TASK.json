@@ -1,0 +1,35 @@
+{
+  "id": "MINIGAME-ART-OPT-PNG-20261017-FLOW",
+  "title": "审批流程维护",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "MINIGAME-ART-OPT-PNG-20261017",
+  "objective": "记录QA v0.2与六PNG批准、WebP不采用；维护六源审批及复盘，冻结历史不改",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/TEST_PLAN.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/CLIENT_TEST_CASES.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/MINIGAME-ART-OPT-PNG-20261017-FLOW/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/MINIGAME-ART-OPT-PNG-20261017-FLOW/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/MINIGAME-ART-OPT-PNG-20261017-FLOW/v0.1/FINAL_CHECK.json",
+    "deliverables/producer/MINIGAME-ART-OPT-PNG-20261017-FLOW/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "绑定准确批准输入及实际执行证据，保护其他会话差异。",
+    "静态、构建与运行分别给结果，缺失环境明确NOT_TESTED或BLOCKED。",
+    "中文结构化交付，不扩全库、不采用WebP，不新增画质档位。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master正式分派；读取角色五文件及适用规范；不得再分派或自行Git。",
+    "仅自身交付与任务；Client授权六PNG正式路径及隔离工程；Producer授权相关审批及六源本批块。",
+    "QA文档使用本轮许可gpt-6.1-sol low；编码gpt-6-luna low。",
+    "2026-10-17T21:10:44+08:00 四Required初稿真实产出，中间审批解锁监督，最终连续执行与结果待Client/QA继续后补，不是终结。",
+    "2026-10-17T22:44:50+08:00 最终634身份/Required/schema/验收与连续执行完成，提交Master接受；不等整体QA PASS。"
+  ]
+}

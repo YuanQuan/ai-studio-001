@@ -1,0 +1,43 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PNG-20261017-QA",
+  "owner": "qa",
+  "summary": "旧v08正式执行及新六PNG+字体补充QA已分基线交付；整体不可PASS，保留性能/未全测边界。",
+  "artifacts": [
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/TEST_REPORT.md",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CLIENT_TEST_RESULTS.md",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/EVIDENCE_INDEX.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/DEFECT_CLOSURE.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/NEW_BUILD_IDENTITY.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/SIX_PNG_IDENTITY_RGBA.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/COMPILED_MANIFEST_AUDIT.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CONSOLE_ALL_ORIGINS.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/CONSOLE_NEW_BUILD.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/NEW_DISPOSAL_COUNTS.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/U00_RECOVERY_CONSOLE.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/PACKAGE_MEASUREMENT.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "绑定准确批准输入及实际执行证据，保护其他会话差异。",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/NEW_BUILD_IDENTITY.json"
+    },
+    {
+      "criterion": "静态、构建与运行分别给结果，缺失环境明确NOT_TESTED或BLOCKED。",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/TEST_REPORT.md"
+    },
+    {
+      "criterion": "中文结构化交付，不扩全库、不采用WebP，不新增画质档位。",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.2/TEST_REPORT.md"
+    }
+  ],
+  "risks": [
+    "F14性能BLOCKED；功能总体不能PASS",
+    "5 PASS/9 PARTIAL/1 BLOCKED；3 RELEASE NOT_TESTED",
+    "P2验证设置循环字形缺失未关闭；旧全角标点缺字已关闭",
+    "新包没有20有效循环/完整时序或全419视觉叠图"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

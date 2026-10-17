@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PNG-20261017-QA",
+  "owner": "qa",
+  "summary": "冻结v08真实QA已取证；非整体通过，性能与未覆盖项保持未测；新PNG补充另记。",
+  "artifacts": [
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/TEST_REPORT.md",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CLIENT_TEST_RESULTS.md",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/EVIDENCE_INDEX.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/BROWSER_TOOL_LIMITS.md",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/FROZEN_SOURCE_IDENTITY.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/OUTPUT_IDENTITY.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/PROBE_EXECUTION.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/BROWSER_EVIDENCE.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CONSOLE.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/VALID_CYCLES.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/RELEASE_COUNTS.json",
+    "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/PACKAGE_MEASUREMENT.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确绑定获批输入及本轮证据",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/FROZEN_SOURCE_IDENTITY.json"
+    },
+    {
+      "criterion": "静态/产物/运行/未测分列",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/TEST_REPORT.md"
+    },
+    {
+      "criterion": "中文交付、不扩范围、不采用WebP或画质档",
+      "result": "PASS",
+      "evidence": "deliverables/qa/MINIGAME-ART-OPT-PNG-20261017-QA/v0.1/CLIENT_TEST_RESULTS.md"
+    }
+  ],
+  "risks": [
+    "必要性能指标BLOCKED，不能整体PASS",
+    "部分用例未覆盖子项见结果表",
+    "旧基线P2缺字待新包回归"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

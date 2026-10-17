@@ -1,0 +1,33 @@
+{
+  "id": "MINIGAME-ART-OPT-PNG-20261017",
+  "title": "六PNG接入与获批正式QA执行",
+  "type": "integration",
+  "owner": "master",
+  "parent": "MINIGAME-ART-OPT-NEXT-20261017",
+  "objective": "仅采用六件获批PNG候选，执行已批准QA计划；WebP排除，Web仅开发调试，微信与抖音为正式目标。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json"
+  ],
+  "deliverables": [
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/MASTER_SUMMARY.md",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确区分六PNG接入身份与冻结原实现QA基线。",
+    "Client与QA留存实际执行证据，明确缺失的平台与性能检查。",
+    "Producer记录审批、连续执行与复盘，推进至下一审阅或真实阻塞。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-PNG-20261017-CLIENT",
+    "MINIGAME-ART-OPT-PNG-20261017-QA",
+    "MINIGAME-ART-OPT-PNG-20261017-FLOW"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "No new art creation; no WebP integration or whole-library scope extension.",
+    "2026-10-17T22:44:50+08:00 本轮634精确身份及交付核验完成，USER_REVIEW仅确认准确报告/接入版本，不等于整体QA PASS/平台发布。"
+  ]
+}

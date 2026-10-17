@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PNG-20261017-TECH",
+  "owner": "tech_lead",
+  "summary": "六PNG生产接入技术与QA证据准确范围评审通过；不代表整体功能或发布通过。",
+  "artifacts": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/compiled-manifest-audit.cjs",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/ACTUAL_OUTPUT_AUDIT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/VALIDATOR_PROBE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/SCRIPT_DIFFERENCE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/script-difference.cjs",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/COLD_RECOVERY_AUDIT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/FINAL_INPUT_BINDING.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/PRE_POST_IMPORT_AUDIT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/PERSISTENT_REPLAY_AUDIT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/QA_CONSOLE_BOUNDARY_AUDIT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/COMPILED_MANIFEST_AUDIT.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "独立绑定六件获批PNG与源文件、生成路径、运行元数据及实际产物，保护其他任务。",
+      "result": "PASS",
+      "evidence": "FINAL_INPUT_BINDING.json、ACTUAL_OUTPUT_AUDIT.json、PERSISTENT_REPLAY_AUDIT.json；18native与六候选一致，运行meta/UUID/geometry保持。"
+    },
+    {
+      "criterion": "按准确证据边界评审Client CLI、运行与QA结果，明确缺失的平台和性能检查。",
+      "result": "PASS",
+      "evidence": "REVIEW.md及冻结QA四件；Client日志/IAB、旧新QA精确范围已审，未测平台/性能和PARTIAL/BLOCKED原样保留；此PASS表示评审工作完成。"
+    },
+    {
+      "criterion": "给出可执行发现及评审范围，不重画、不采用WebP、不新增依赖。",
+      "result": "PASS",
+      "evidence": "REVIEW.md、VALIDATOR_PROBE.json、COLD_RECOVERY_AUDIT.json、SCRIPT_DIFFERENCE.json；行动已关闭，代码健康及范围受控。"
+    }
+  ],
+  "risks": [
+    "QA-PNG-002循环缺字P2未关。",
+    "FUNCTIONAL5PASS/9PARTIAL/1BLOCKED，RELEASE三项NOT_TESTED；GPU、平台、174GUI及精确时序等未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

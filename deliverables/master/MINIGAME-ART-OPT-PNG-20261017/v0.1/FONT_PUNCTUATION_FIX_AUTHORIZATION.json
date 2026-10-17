@@ -1,0 +1,13 @@
+{
+  "authorized_by": "master",
+  "authorized_at": "2026-10-17T21:25:13.193913+08:00",
+  "reason": "Existing formal QA reproduced missing BMFont U+FF01; replace one punctuation with already licensed/current atlas glyph ASCII 33, no new art or gameplay change.",
+  "evidence": "QA original frozen v08 console 2026-10-17T13:20:25.613Z and U05-three-cups-complete.png",
+  "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+  "exact_occurrences": 1,
+  "before_text": "\u4e09\u676f\u5b8c\u6210\uff01",
+  "after_text": "\u4e09\u676f\u5b8c\u6210!",
+  "old_sha256": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e",
+  "new_sha256": "86808200d37b4554c2e28ac33bba728232f8178cb025bc9530efa04c895a9ce5",
+  "scope": "Persist source and official production input delta; new baseline separately audited and QA complete-three-cups retest; no other text or logic change."
+}

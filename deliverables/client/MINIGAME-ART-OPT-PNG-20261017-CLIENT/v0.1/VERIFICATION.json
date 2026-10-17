@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "taskId": "MINIGAME-ART-OPT-PNG-20261017-CLIENT",
+  "staticValidation": {
+    "result": "PASS",
+    "details": "六候选身份、授权、PNG签名/尺寸/SHA、唯一稳定ID、路径、UUID及几何绑定；三张全画布活动PNG与候选字节一致，三张裁切legacy画布保留并在stage映射；保护四路径SHA匹配。",
+    "negativeProbes": {
+      "result": "PASS",
+      "count": 5,
+      "cases": [
+        "损坏候选字节",
+        "FILE_IDENTITY漂移",
+        "重复stable ID",
+        "越界ID",
+        "错误base-stage SHA"
+      ],
+      "evidence": "evidence/NEGATIVE_PROBES.json"
+    }
+  },
+  "baselineValidation": {
+    "result": "PASS",
+    "details": "冻结历史builder重建baseline；与v0.8 preimport 667文件逐路径/SHA/bytes一致，详Tech v0.2 BASELINE_PAYLOAD_DIFF.json。正式持久化payload清单仅含667项，SHA 7f3bf66203ff90cf92233a3188f14e508c2dda4b3053d0b7eb19db7240d9f114，builder从仓库稳定路径读取；平台build-configs独立生成。实际已构建stage来自同一667项业务payload和3份配置。"
+  },
+  "creatorImport": {
+    "result": "PASS",
+    "details": "Creator 3.8.8导入；76个元数据规范化/新增差异已列明，native PNG和授权脚本变化符合预期；Tech v0.3核验18 native及几何/UUID。",
+    "evidence": "evidence/POSTIMPORT_STAGE_DIFF.json"
+  },
+  "cliBuilds": [
+    {
+      "platform": "web-mobile",
+      "result": "PASS",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "files": 803,
+      "bytes": 38404865,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-web-mobile.log"
+    },
+    {
+      "platform": "wechatgame",
+      "result": "PASS",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "files": 823,
+      "bytes": 38441508,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-wechatgame.log"
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "result": "PASS",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "files": 821,
+      "bytes": 38415854,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-bytedance-mini-game.log"
+    }
+  ],
+  "runtime": {
+    "webHttp": "PASS",
+    "webIab": "PASS",
+    "wechatRuntime": "NOT_TESTED",
+    "bytedanceRuntime": "NOT_TESTED",
+    "note": "Web首页及U03花灯铺交互已在IAB实产物通过；完整视觉矩阵/其他目标仍由QA按新stage回归，微信/抖音真机或模拟器未测。",
+    "webHttpEvidence": "evidence/HTTP_SMOKE.json",
+    "webIabEvidence": "evidence/IAB_SMOKE.json"
+  },
+  "visualOrGeometryReview": {
+    "result": "PASS",
+    "evidence": "Tech v0.3独立审查：18 native references、导入配置几何与UUID、raw diff 7、compiled整文件归一。"
+  },
+  "limitations": [
+    "Web已完成首页及U03花灯铺短IAB冒烟；完整QA视觉矩阵仍待QA独立回归。",
+    "微信、抖音平台实际运行/设备验证本轮未测；本轮仅有Creator CLI构建证据。",
+    "Creator导入后的76项meta变化含规范化，不宣称导入后meta文件SHA不变。"
+  ]
+}

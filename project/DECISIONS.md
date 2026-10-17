@@ -378,3 +378,11 @@ U04消费同一背景Prefab，因此随共用资源迁移保持原功能。仅�
 
 本次授权是制作方案Gate1及已有资源代码实施；新桥/眼睛切片与同尺度重组须另获用户Gate2批准后正式接入。仅当前游戏单元示例，无后端/QA Agent/Studio同步。旧资源及历史审批保留；代码、构建、浏览器与资源用户审核结论分别记录，不互相替代。
 <!-- EXAMPLE-REVISION-20261015 DECISION END -->
+
+<!-- MINIGAME-ART-OPT-PNG-20261017 DECISION START -->
+## DEC-20261017-ART-OPT-PNG — 本轮仅采用 PNG，Web 用于开发验证
+
+用户明确“不需要考虑webp格式……web只是用于测试开发调试验证用，其它的没有问题继续”。本轮停止推进 WebP 候选，保留历史样本与诊断证据；仅六件已提交的无损 PNG 候选及已展示静态效果获批进入接入验证，不扩展为全库处理。正式发布目标仍为微信和抖音小游戏，Web 的构建与运行结果仅用于开发验证，不替代目标平台与真机验证。
+
+同次确认批准正式 QA 计划 v0.2，解锁其冻结原实现的测试执行；六 PNG 接入生成的新基线与原 QA 基线分别记录，受影响部分补充回归。具体批准输入与范围见 `deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json`。本决定是本游戏资源格式与发布范围确认，不改变 Studio 组织规则。
+<!-- MINIGAME-ART-OPT-PNG-20261017 DECISION END -->

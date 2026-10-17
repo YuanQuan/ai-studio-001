@@ -1,0 +1,22 @@
+{
+  "scope": "使用持久化667项base payload inventory重放PNG+文字patch阶段；不重跑Creator/CLI。与已构建v05结果通过独立Tech实际输出逐hash对照相连。",
+  "result": "PASS",
+  "persistentBasePayload": {
+    "path": "apps/client/tools/asset-integration/approved_png_base_payload.json",
+    "sha256": "7f3bf66203ff90cf92233a3188f14e508c2dda4b3053d0b7eb19db7240d9f114",
+    "rows": 667,
+    "bytes": 36266325,
+    "allExpectedBaseRowsOrAuthorizedDeltasMatched": true
+  },
+  "currentOverrideManifestSha256": "4fdd599e9733240afc702f90892e4daa890e4dc748ce7271b7ceff921ca8eefc",
+  "replayedStageRoot": "/private/tmp/minigame-art-opt-png-stage-20261017-v06-reconstructed",
+  "replayedStageManifestSha256": "4b6286c1a5ebdde2eb56726268004964715037221d2b5304ee88be79fc4508dc",
+  "cliNotRepeated": true,
+  "actualCliStage": {
+    "path": "/private/tmp/minigame-art-opt-png-stage-20261017-v05",
+    "manifestSha256": "f50f08a1d4031355d8aaf2dfa75a400881c785b716cc8ba3c07968ae9fed00ac",
+    "cliEvidence": "evidence/BUILD_OUTPUTS.json",
+    "techOutputDiff": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/ACTUAL_BUILD_OUTPUT_DIFF.json"
+  },
+  "relationship": "新builder复现阶段中667项基础payload全部匹配，六PNG和授权脚本SHA命中；实际三端CLI产物已由Master/Tech逐文件核对，只七项平台差异为六PNG+一授权脚本，其余与冻结v08输出逐文件相同。新阶段仅因持久化清单定义精化及配置输出路径不同，未再次构建。"
+}

@@ -1,0 +1,44 @@
+{
+  "closed": [
+    {
+      "id": "QA-PNG-001",
+      "severity": "P2",
+      "scope": "U+FF01结算文案单字符修复",
+      "result": "已回归关闭",
+      "evidence": [
+        "font-three-cups-complete.png",
+        "CONSOLE_NEW_BUILD.json",
+        "EIGHT_WINS_CONTACT.png"
+      ]
+    }
+  ],
+  "open": [
+    {
+      "id": "QA-PNG-002",
+      "severity": "P2",
+      "scope": "现成验证设置循环二字缺glyph",
+      "codepoints": [
+        "U+5FAA",
+        "U+73AF"
+      ],
+      "result": "未关闭；不新增美术",
+      "evidence": [
+        "CONSOLE_NEW_BUILD.json",
+        "validation-on-stage1.png",
+        "validation-on-stage2.png"
+      ]
+    }
+  ],
+  "environment_events": [
+    {
+      "id": "QA-ENV-001",
+      "event": "8937服务退出后U00 status0；同目录重启后一次恢复成功",
+      "evidence": [
+        "new-U00-full.png",
+        "CONSOLE_NEW_BUILD.json",
+        "U00-service-recovered-loaded.png",
+        "U00_RECOVERY_CONSOLE.json"
+      ]
+    }
+  ]
+}

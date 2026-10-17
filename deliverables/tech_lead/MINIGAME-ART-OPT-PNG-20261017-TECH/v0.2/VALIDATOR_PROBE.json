@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-10-17T13:21:31.980Z",
+  "builderSha256": "a1faa153cecb8e5054ae9b1162a1d097e5c4cb7de9a88fcbf9ebf1492f9417ad",
+  "scope": "exported validator exact six/base-stage; mutation of temporary JSON only, no build/production writes",
+  "results": [
+    {
+      "name": "approved",
+      "accepted": true,
+      "count": 6,
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "candidateSHA",
+      "accepted": false,
+      "error": "PNG override与获批Art FILE_IDENTITY绑定不匹配：tex_sakura_rr_sky_r",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "identitySHA",
+      "accepted": false,
+      "error": "正式PNG override清单必须是本Task的精确六项",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "uuid",
+      "accepted": false,
+      "error": "PNG override与获批Art FILE_IDENTITY绑定不匹配：tex_sakura_rr_sky_r",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "duplicateId",
+      "accepted": false,
+      "error": "PNG override越界、重复或stage路径不匹配：tex_sakura_rr_sky_r",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "dimensions",
+      "accepted": false,
+      "error": "PNG override与获批Art FILE_IDENTITY绑定不匹配：tex_sakura_rr_sky_r",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "geometry",
+      "accepted": false,
+      "error": "PNG override与获批Art FILE_IDENTITY绑定不匹配：tex_u03_shop_05_sign",
+      "expected": true,
+      "result": "PASS"
+    },
+    {
+      "name": "authorization",
+      "accepted": false,
+      "error": "正式PNG override清单必须是本Task的精确六项",
+      "expected": true,
+      "result": "PASS"
+    }
+  ]
+}

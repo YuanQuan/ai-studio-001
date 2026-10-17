@@ -11,6 +11,16 @@ const MAP_PATH = 'deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v
 const BUNDLE_PATH = 'deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json';
 const GENERATED_PATH = 'deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/GENERATED_ASSET_MANIFEST.json';
 const OWNER_OVERRIDES_PATH = 'deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/OWNER_SOURCE_OVERRIDES.json';
+const APPROVED_PNG_OVERRIDES_PATH = 'apps/client/tools/asset-integration/approved_png_overrides.json';
+const APPROVED_PNG_IDENTITY_PATH = 'deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/FILE_IDENTITY.json';
+const APPROVED_PNG_IDENTITY_SHA256 = '19e840c2bbe61ba51e6bf56d484edf603367b1f9a03c0972efc90bf18ba148db';
+const APPROVED_PNG_AUTH_PATH = 'deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json';
+const APPROVED_PNG_AUTH_SHA256 = '5f27b54ac2921a85875fd147311dbb276deaf82dd50834a228039662b9e63793';
+const APPROVED_PNG_BASE_STAGE_SHA256 = '70c96497fc5e410ba4f49a9790ac8ae6a63bc2b602523c1da87c899570f56bcc';
+const APPROVED_PNG_BASE_STAGE_PAYLOAD_PATH = 'apps/client/tools/asset-integration/approved_png_base_payload.json';
+const APPROVED_PNG_BASE_STAGE_PAYLOAD_SHA256 = '7f3bf66203ff90cf92233a3188f14e508c2dda4b3053d0b7eb19db7240d9f114';
+const APPROVED_TEXT_PATCH_AUTH_PATH = 'deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/FONT_PUNCTUATION_FIX_AUTHORIZATION.json';
+const APPROVED_TEXT_PATCH_AUTH_SHA256 = '6940d03a9ba8055899abbc907a59d1e8b68166993520252a08a780dd00073c89';
 const PORTABLE_INPUT_AUTHORIZATION = 'deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/PORTABLE_INPUT_RECOVERY_AUTHORIZATION.json';
 const PORTABLE_INPUT_AUTHORIZATION_SHA256 = '76a6c02f6eb60736d1f921a400e7c1e76ce1c43c4374eaf3cee4fc0262ecd334';
 const PORTABLE_RECOVERY_EXPECTATIONS = [
@@ -43,7 +53,104 @@ function isPortableInputExcluded(sourcePath) {
     || sourcePath.startsWith('apps/client/profiles/');
 }
 
-function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot = ROOT) {
+function pngDimensions(bytes) {
+  if (bytes.length < 24 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a'
+    || bytes.subarray(12, 16).toString('ascii') !== 'IHDR') return null;
+  return [bytes.readUInt32BE(16), bytes.readUInt32BE(20)];
+}
+
+function loadApprovedPngOverrides(overridePath, rows, appRoot, sourceRoot, contentRoot = ROOT) {
+  if (!overridePath) return [];
+  const data = JSON.parse(fs.readFileSync(overridePath, 'utf8'));
+  const required = new Map([
+    ['tex_sakura_rr_sky_r', { stagePath: 'assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png', clientPath: 'apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png' }],
+    ['tex_u03_shop_05_sign', { stagePath: 'assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png', clientPath: 'apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png' }],
+    ['UG_GHOST_01_HAPPY_00', { stagePath: 'assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png', clientPath: 'apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png' }],
+    ['tex_u04_at_s3_base', { stagePath: 'assets/units/dialogue/portraits/tex_u04_at_s3_base.png', clientPath: 'apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png' }],
+    ['tex_u03_shop_05_body', { stagePath: 'assets/bundles/shops/lantern/textures/tex_u03_shop_05_body.png', clientPath: 'apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png' }],
+    ['U05_ART_FONT', { stagePath: 'assets/bundles/milk_tea/u05_milk_tea/u05_b/U05_ART_FONT.png', clientPath: 'apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png' }],
+  ]);
+  const entries = data.assets;
+  if (data.schemaVersion !== 1 || data.taskId !== 'MINIGAME-ART-OPT-PNG-20261017-CLIENT'
+    || data.sourceIdentityPath !== APPROVED_PNG_IDENTITY_PATH || data.sourceIdentitySha256 !== APPROVED_PNG_IDENTITY_SHA256
+    || data.artIdentitySha256 !== APPROVED_PNG_IDENTITY_SHA256
+    || data.authorizationPath !== APPROVED_PNG_AUTH_PATH || data.authorizationSha256 !== APPROVED_PNG_AUTH_SHA256
+    || !Array.isArray(entries) || entries.length !== required.size) {
+    throw new Error('正式PNG override清单必须是本Task的精确六项');
+  }
+  const identityBytes = fs.readFileSync(path.join(contentRoot, APPROVED_PNG_IDENTITY_PATH));
+  const authorizationBytes = fs.readFileSync(path.join(contentRoot, APPROVED_PNG_AUTH_PATH));
+  if (sha(identityBytes) !== APPROVED_PNG_IDENTITY_SHA256 || sha(authorizationBytes) !== APPROVED_PNG_AUTH_SHA256) {
+    throw new Error('PNG override审批身份文件SHA不匹配');
+  }
+  const identity = JSON.parse(identityBytes.toString('utf8'));
+  const approved = new Map(identity.assets.map(asset => [asset.id, asset]));
+  if (identity.gate1 !== 'USER_APPROVED' || approved.size !== required.size) throw new Error('Art样本身份未获准确Gate1批准或资产数量不符');
+  const authorization = JSON.parse(authorizationBytes.toString('utf8'));
+  if (!authorization.decisions?.some(text => text.includes('六PNG候选批'))
+    || !authorization.decisions?.some(text => text.includes('WebP不采用'))) throw new Error('六PNG用户授权内容不匹配');
+  const seenIds = new Set(), seenPaths = new Set();
+  for (const entry of entries) {
+    const expected = required.get(entry.stableAssetId);
+    if (!expected || entry.stagePath !== expected.stagePath || entry.clientPath !== expected.clientPath || seenIds.has(entry.stableAssetId)
+      || seenPaths.has(entry.stagePath)) throw new Error(`PNG override越界、重复或stage路径不匹配：${entry.stableAssetId}`);
+    seenIds.add(entry.stableAssetId); seenPaths.add(entry.stagePath);
+    const approvedAsset = approved.get(entry.stableAssetId);
+    const approvedCandidate = approvedAsset?.candidates?.find(candidate => candidate.kind === 'png_lossless');
+    if (!approvedAsset || approvedAsset.source.sha256 !== entry.sourceSha256
+      || approvedAsset.source.path !== entry.sourcePath || approvedAsset.original_client_path !== entry.clientPath
+      || approvedAsset.original_client_uuid !== entry.imageUuid
+      || approvedAsset.reference.path !== entry.referencePath || approvedCandidate?.path !== entry.candidatePath
+      || approvedCandidate?.sha256 !== entry.candidateSha256 || approvedAsset.source.dimensions?.join('x') !== entry.dimensions.join('x')
+      || JSON.stringify(approvedAsset.original_geometry) !== JSON.stringify(entry.geometry)) {
+      throw new Error(`PNG override与获批Art FILE_IDENTITY绑定不匹配：${entry.stableAssetId}`);
+    }
+    const sampleRoot = `deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/${entry.stableAssetId}/`;
+    if (entry.referencePath !== `${sampleRoot}reference.png` || entry.candidatePath !== `${sampleRoot}png_lossless.png`
+      || entry.metaPath !== `${entry.clientPath}.meta`) throw new Error(`PNG override候选/元数据路径不属于已批准资产：${entry.stableAssetId}`);
+    if (!/^[a-f0-9]{64}$/.test(entry.candidateSha256) || !/^[a-f0-9]{64}$/.test(entry.sourceSha256)
+      || !/^[a-f0-9]{64}$/.test(entry.metaSha256) || !Array.isArray(entry.dimensions) || entry.dimensions.length !== 2) throw new Error(`PNG override身份字段无效：${entry.stableAssetId}`);
+    const row = rows.find(item => item.stableAssetId === entry.stableAssetId);
+    if (row && row.approvedSha256 !== entry.sourceSha256) throw new Error(`PNG override源SHA与正式生成表不一致：${entry.stableAssetId}`);
+    const reference = fs.readFileSync(path.join(contentRoot, entry.referencePath));
+    const candidate = fs.readFileSync(path.join(contentRoot, entry.candidatePath));
+    const clientMetaPath = path.join(sourceRoot, entry.metaPath);
+    if (sha(fs.readFileSync(clientMetaPath)) !== entry.metaSha256) throw new Error(`PNG override源meta SHA漂移：${entry.stableAssetId}`);
+    const clientMeta = JSON.parse(fs.readFileSync(clientMetaPath, 'utf8'));
+    if (clientMeta.uuid !== entry.imageUuid) throw new Error(`PNG override源meta UUID不符：${entry.stableAssetId}`);
+    if (sha(reference) !== entry.sourceSha256) throw new Error(`PNG override参考源SHA漂移：${entry.stableAssetId}`);
+    if (sha(candidate) !== entry.candidateSha256 || candidate.length !== entry.candidateBytes) throw new Error(`PNG override候选SHA/字节数漂移：${entry.stableAssetId}`);
+    const size = pngDimensions(candidate);
+    if (!size || size[0] !== entry.dimensions[0] || size[1] !== entry.dimensions[1]) throw new Error(`PNG override格式或尺寸不符：${entry.stableAssetId}`);
+    if (appRoot) {
+      const target = path.join(appRoot, entry.stagePath), metaPath = `${target}.meta`;
+      if (!fs.existsSync(target) || sha(fs.readFileSync(target)) !== entry.sourceSha256) throw new Error(`PNG override目标基础SHA不符：${entry.stableAssetId}`);
+      if (!fs.existsSync(metaPath)) throw new Error(`PNG override目标meta缺失：${entry.stableAssetId}`);
+      const targetMeta = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+      const targetFrame = Object.values(targetMeta.subMetas ?? {}).find(item => item.importer === 'sprite-frame');
+      if (targetMeta.uuid !== entry.imageUuid || targetFrame?.uuid !== entry.frameUuid) throw new Error(`PNG override目标meta UUID不符：${entry.stableAssetId}`);
+    }
+  }
+  if (seenIds.size !== required.size || [...required.keys()].some(id => !seenIds.has(id))) throw new Error('PNG override缺少稳定资产ID');
+  return entries;
+}
+
+function loadApprovedTextPatches(contentRoot = ROOT) {
+  const authBytes = fs.readFileSync(path.join(contentRoot, APPROVED_TEXT_PATCH_AUTH_PATH));
+  if (sha(authBytes) !== APPROVED_TEXT_PATCH_AUTH_SHA256) throw new Error('正式文本patch授权SHA不匹配');
+  const auth = JSON.parse(authBytes.toString('utf8'));
+  if (auth.path !== 'apps/client/assets/labs/u05/milk_tea_lab.ts' || auth.exact_occurrences !== 1
+    || auth.before_text !== '三杯完成！' || auth.after_text !== '三杯完成!'
+    || auth.old_sha256 !== '9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e'
+    || auth.new_sha256 !== '86808200d37b4554c2e28ac33bba728232f8178cb025bc9530efa04c895a9ce5') {
+    throw new Error('正式文本patch未绑定获批的U05单字符修复');
+  }
+  return [{ path: auth.path, beforeText: auth.before_text, afterText: auth.after_text,
+    beforeSha256: auth.old_sha256, afterSha256: auth.new_sha256, authorizationPath: APPROVED_TEXT_PATCH_AUTH_PATH,
+    authorizationSha256: APPROVED_TEXT_PATCH_AUTH_SHA256 }];
+}
+
+function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot = ROOT, pngOverridesPath = null) {
   sourceRoot = path.resolve(sourceRoot);
   const freeze = readJson(FREEZE_PATH), addendum = readJson(FREEZE_ADDENDUM_PATH);
   const portableAuthBytes = fs.readFileSync(path.join(ROOT, PORTABLE_INPUT_AUTHORIZATION));
@@ -75,11 +182,23 @@ function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot 
   const rows = readJson(GENERATED_PATH).assets, map = readJson(MAP_PATH), bundlePlan = readJson(BUNDLE_PATH);
   if (freeze.files.length !== 711 || rows.length !== 83 || map.assets.length !== 83) throw new Error('冻结输入或83资源计数不匹配');
   const effectiveHash = new Map(freeze.files.map(entry => [entry.path, entry.sha256]));
+  const textPatches = loadApprovedTextPatches();
+  for (const patch of textPatches) {
+    const frozen = freeze.files.find(entry => entry.path === patch.path);
+    const current = fs.readFileSync(path.join(sourceRoot, patch.path));
+    if (!frozen || frozen.sha256 !== patch.beforeSha256 || sha(current) !== patch.afterSha256
+      || current.toString('utf8').split(patch.afterText).length - 1 !== 1
+      || current.toString('utf8').includes(patch.beforeText)) throw new Error(`正式文本patch源SHA/内容不符：${patch.path}`);
+    effectiveHash.set(patch.path, patch.afterSha256);
+  }
   for (const override of addendum.overrides ?? []) {
     if (effectiveHash.get(override.path) !== override.previous_sha256) throw new Error(`Freeze addendum基线不匹配：${override.path}`);
     effectiveHash.set(override.path, override.sha256);
   }
   const sourceDeltas = [], copied = [], frozenInputRecoveries = [], excludedFrozenInputs = [], portableRecoverySources = [];
+  for (const patch of textPatches) sourceDeltas.push({ path: patch.path, baseSha256: patch.beforeSha256,
+    sha256: patch.afterSha256, transformId: 'u05-approved-bmfont-punctuation-fix-v1',
+    authorizationPath: patch.authorizationPath, authorizationSha256: patch.authorizationSha256 });
   const sourceOwnerPaths = new Set(['apps/client/assets/labs/u01/sakura_layout_editor.ts',
     'apps/client/assets/labs/u05/milk_tea_lab.ts', 'apps/client/assets/labs/u01/sakura_v03_environment.ts',
     'apps/client/assets/UnitSampleGallery.ts', 'apps/client/assets/framework/asset-integration/gallery_asset_session.ts',
@@ -275,6 +394,20 @@ function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot 
       physicalIncluded: !productionExcluded,
       ...(productionExcluded ? { exclusionReason: 'Approved historical crop is not referenced by the current frozen Sakura layout; current path resolves to the distinct eye_dark_base PNG.' } : {}) });
   }
+  const pngOverrides = loadApprovedPngOverrides(pngOverridesPath, rows, appRoot, sourceRoot);
+  for (const override of pngOverrides) {
+    const target = path.join(appRoot, override.stagePath);
+    const bytes = fs.readFileSync(path.join(ROOT, override.candidatePath));
+    const beforeSha256 = sha(fs.readFileSync(target));
+    fs.writeFileSync(target, bytes);
+    if (sha(fs.readFileSync(target)) !== override.candidateSha256) throw new Error(`PNG override写入后SHA不符：${override.stableAssetId}`);
+    const generatedRow = generated.find(item => item.stableAssetId === override.stableAssetId && item.generatedPath === override.stagePath);
+    if (generatedRow) generatedRow.sha256 = override.candidateSha256;
+    override.beforeSha256 = beforeSha256;
+    override.afterSha256 = override.candidateSha256;
+    override.bytes = bytes.length;
+    override.metaSha256 = sha(fs.readFileSync(`${target}.meta`));
+  }
   const releaseExclusions = [];
   const sourceTextFiles = [];
   const collectTexts = dir => { for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -401,6 +534,11 @@ function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot 
     portableInputAuthorizationSha256: PORTABLE_INPUT_AUTHORIZATION_SHA256,
     builderSettingsDelta,
     authorizedDeltas: sourceDeltas,
+    approvedPngOverrides: pngOverrides,
+    ...(pngOverrides.length ? { approvedPngOverrideManifestPath: path.relative(ROOT, path.resolve(pngOverridesPath)),
+      approvedPngOverrideManifestSha256: sha(fs.readFileSync(path.isAbsolute(pngOverridesPath) ? pngOverridesPath : path.join(ROOT, pngOverridesPath))),
+      approvedPngIdentityPath: APPROVED_PNG_IDENTITY_PATH, approvedPngIdentitySha256: APPROVED_PNG_IDENTITY_SHA256,
+      approvedPngAuthorizationPath: APPROVED_PNG_AUTH_PATH, approvedPngAuthorizationSha256: APPROVED_PNG_AUTH_SHA256 } : {}),
     approvedAssetCount: generated.length, plannedUniqueGeneratedImages: destinations.size,
     uniqueGeneratedImages: uniquePhysicalDerivedImages, physicalGeneratedImages: physicallyGenerated,
     aliasUuidRemaps: [...oldUuids.entries()], generatedAssets: generated, bundleMeta, relocations: relocationLog,
@@ -416,10 +554,138 @@ function build(stageRoot, ownerOverridesPath = OWNER_OVERRIDES_PATH, sourceRoot 
   return report;
 }
 
-if (require.main === module) {
-  const stageRoot = path.resolve(process.argv[2] || '/private/tmp/minigame-art-opt-integration-staging-v0.1');
-  const overridesPath = process.argv[3] ? path.resolve(process.argv[3]) : OWNER_OVERRIDES_PATH;
-  const sourceRoot = process.argv[4] ? path.resolve(process.argv[4]) : ROOT;
-  try { build(stageRoot, overridesPath, sourceRoot); } catch (error) { console.error(`staging failed: ${error.stack || error}`); process.exitCode = 1; }
+function applyApprovedPngOverridesFromFrozenStage(baseStageRoot, stageRoot, overridePath, sourceRoot = ROOT, contentRoot = ROOT) {
+  baseStageRoot = path.resolve(baseStageRoot); stageRoot = path.resolve(stageRoot);
+  const overrideData = JSON.parse(fs.readFileSync(overridePath, 'utf8'));
+  if (path.resolve(overrideData.baseStagePath) !== baseStageRoot
+    || overrideData.baseStageManifestSha256 !== APPROVED_PNG_BASE_STAGE_SHA256) throw new Error('override清单未绑定准确冻结v0.8 stage');
+  const baseManifestPath = path.join(baseStageRoot, 'STAGING_INPUT_MANIFEST.json');
+  const baseManifestBytes = fs.readFileSync(baseManifestPath);
+  if (sha(baseManifestBytes) !== APPROVED_PNG_BASE_STAGE_SHA256) throw new Error('冻结v0.8 staging manifest SHA不匹配');
+  const frozenPayloadManifestBytes = fs.readFileSync(path.join(ROOT, APPROVED_PNG_BASE_STAGE_PAYLOAD_PATH));
+  if (sha(frozenPayloadManifestBytes) !== APPROVED_PNG_BASE_STAGE_PAYLOAD_SHA256) throw new Error('冻结v0.8 payload manifest SHA不匹配');
+  const frozenPayload = JSON.parse(frozenPayloadManifestBytes.toString('utf8'));
+  if (frozenPayload.baseStagePath !== baseStageRoot || frozenPayload.baseStageReportSha256 !== APPROVED_PNG_BASE_STAGE_SHA256) {
+    throw new Error('冻结v0.8 payload inventory未绑定准确stage/report');
+  }
+  const payloadRows = new Map(frozenPayload.files.map(row => [row.path, row.sha256]));
+  if (payloadRows.size !== frozenPayload.files.length) throw new Error('冻结v0.8 payload inventory包含重复路径');
+  const allowedOverrides = new Map(JSON.parse(fs.readFileSync(overridePath, 'utf8')).assets.map(item => [item.stagePath, item.sourceSha256]));
+  const actualPaths = new Set();
+  const walkBase = (dir, rel = '') => { for (const item of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, item.name), current = rel ? `${rel}/${item.name}` : item.name;
+    if (item.isDirectory() && ['evidence', 'build-output', 'build-configs'].includes(item.name)) continue;
+    if (item.isDirectory()) walkBase(full, current);
+    else if (current !== 'STAGING_INPUT_MANIFEST.json') {
+      const digest = sha(fs.readFileSync(full)); actualPaths.add(current);
+      const expected = payloadRows.get(current);
+      if (expected && digest !== expected) throw new Error(`冻结v0.8 payload漂移：${current}`);
+      if (!expected && !allowedOverrides.has(current)) throw new Error(`冻结v0.8 payload存在未登记文件：${current}`);
+      if (allowedOverrides.has(current) && digest !== allowedOverrides.get(current)) throw new Error(`六项候选的v0.8基础源SHA不符：${current}`);
+    }
+  } };
+  walkBase(baseStageRoot);
+  for (const rel of payloadRows.keys()) if (!actualPaths.has(rel)) throw new Error(`冻结v0.8 payload缺失：${rel}`);
+  if (actualPaths.size !== payloadRows.size) throw new Error('冻结v0.8 payload文件数量漂移');
+  if (fs.existsSync(stageRoot) && fs.readdirSync(stageRoot).length) throw new Error(`PNG override staging目标非空，拒绝覆盖：${stageRoot}`);
+  const rows = readJson(GENERATED_PATH).assets;
+  const overrides = loadApprovedPngOverrides(overridePath, rows, baseStageRoot, sourceRoot, contentRoot);
+  const textPatches = loadApprovedTextPatches(contentRoot);
+  for (const patch of textPatches) {
+    const baseFile = path.join(baseStageRoot, patch.path.replace(/^apps\/client\//, ''));
+    const live = fs.readFileSync(path.join(sourceRoot, patch.path));
+    if (sha(fs.readFileSync(baseFile)) !== patch.beforeSha256 || sha(live) !== patch.afterSha256
+      || live.toString('utf8').includes(patch.beforeText)) throw new Error(`U05文本patch基础/活动源身份不符：${patch.path}`);
+  }
+  fs.mkdirSync(stageRoot, { recursive: true });
+  for (const name of ['assets', 'settings', 'build-configs', 'package.json', 'STAGING_INPUT_MANIFEST.json']) {
+    const source = path.join(baseStageRoot, name), target = path.join(stageRoot, name);
+    if (!fs.existsSync(source)) throw new Error(`冻结stage缺少必要输入：${name}`);
+    fs.cpSync(source, target, { recursive: true, errorOnExist: true, force: false });
+  }
+  const manifest = JSON.parse(fs.readFileSync(path.join(stageRoot, 'STAGING_INPUT_MANIFEST.json'), 'utf8'));
+  const appliedTextPatches = [];
+  for (const patch of textPatches) {
+    const target = path.join(stageRoot, patch.path.replace(/^apps\/client\//, ''));
+    const before = fs.readFileSync(target), beforeSha256 = sha(before), text = before.toString('utf8');
+    if (beforeSha256 !== patch.beforeSha256 || text.split(patch.beforeText).length - 1 !== 1) throw new Error(`stage文本patch旧SHA/唯一锚点不符：${patch.path}`);
+    const after = Buffer.from(text.replace(patch.beforeText, patch.afterText), 'utf8');
+    if (sha(after) !== patch.afterSha256) throw new Error(`stage文本patch新SHA不符：${patch.path}`);
+    fs.writeFileSync(target, after);
+    const row = manifest.sourceFiles?.find(item => item.path === patch.path);
+    if (row) { row.sha256 = patch.afterSha256; row.bytes = after.length; }
+    manifest.authorizedDeltas = [...(manifest.authorizedDeltas ?? []), { path: patch.path, baseSha256: patch.beforeSha256,
+      sha256: patch.afterSha256, transformId: 'u05-approved-bmfont-punctuation-fix-v1', authorizationPath: patch.authorizationPath,
+      authorizationSha256: patch.authorizationSha256 }];
+    appliedTextPatches.push({ ...patch, beforeSha256, afterSha256: sha(after), bytesBefore: before.length, bytesAfter: after.length });
+  }
+  for (const entry of overrides) {
+    const target = path.join(stageRoot, entry.stagePath), metaPath = `${target}.meta`;
+    const before = fs.readFileSync(target), beforeMeta = fs.readFileSync(metaPath);
+    const beforeMetaHash = sha(beforeMeta), meta = JSON.parse(beforeMeta.toString('utf8'));
+    const frameMeta = Object.values(meta.subMetas ?? {}).find(item => item.importer === 'sprite-frame');
+    if (!frameMeta || meta.uuid !== entry.imageUuid || frameMeta.uuid !== entry.frameUuid) throw new Error(`冻结stage UUID/meta不符：${entry.stableAssetId}`);
+    const bytes = fs.readFileSync(path.join(contentRoot, entry.candidatePath));
+    fs.writeFileSync(target, bytes);
+    const afterMeta = fs.readFileSync(metaPath);
+    if (sha(afterMeta) !== beforeMetaHash || sha(fs.readFileSync(target)) !== entry.candidateSha256) throw new Error(`PNG override写入或meta保留失败：${entry.stableAssetId}`);
+    const generatedRow = manifest.generatedAssets?.find(item => item.stableAssetId === entry.stableAssetId && `assets/${item.generatedPath.replace(/^assets\//, '')}` === entry.stagePath);
+    if (generatedRow) generatedRow.sha256 = entry.candidateSha256;
+    const physical = manifest.physicalGeneratedImages?.find(item => item.path === entry.stagePath);
+    if (physical) { physical.sha256 = entry.candidateSha256; physical.bytes = bytes.length; }
+    entry.beforeSha256 = sha(before); entry.afterSha256 = entry.candidateSha256;
+    entry.metaSha256Before = beforeMetaHash; entry.metaSha256After = sha(afterMeta);
+    entry.metaUuid = meta.uuid; entry.frameUuid = frameMeta.uuid; entry.bytes = bytes.length;
+  }
+  for (const configPath of fs.readdirSync(path.join(stageRoot, 'build-configs')).filter(file => file.endsWith('.json'))) {
+    const full = path.join(stageRoot, 'build-configs', configPath), config = JSON.parse(fs.readFileSync(full, 'utf8'));
+    config.buildPath = path.join(stageRoot, 'build-output');
+    config.logDest = path.join(stageRoot, 'evidence', `creator-${config.platform}.log`);
+    config.outputName = `minigame-art-opt-png-20261017-client-v01-${config.platform}`;
+    config.taskName = `MINIGAME-ART-OPT-PNG-20261017-CLIENT-${config.platform}`;
+    fs.writeFileSync(full, `${JSON.stringify(config, null, 2)}\n`);
+  }
+  fs.mkdirSync(path.join(stageRoot, 'evidence'), { recursive: true });
+  manifest.status = 'SOURCE_STAGED_WITH_APPROVED_PNG_OVERRIDES_NOT_CREATOR_IMPORTED';
+  manifest.approvedPngOverrides = overrides;
+  manifest.approvedTextPatches = appliedTextPatches;
+  manifest.approvedTextPatchAuthorizationPath = APPROVED_TEXT_PATCH_AUTH_PATH;
+  manifest.approvedTextPatchAuthorizationSha256 = APPROVED_TEXT_PATCH_AUTH_SHA256;
+  manifest.approvedPngOverrideManifestPath = path.relative(ROOT, overridePath);
+  manifest.approvedPngOverrideManifestSha256 = sha(fs.readFileSync(overridePath));
+  manifest.approvedPngIdentityPath = APPROVED_PNG_IDENTITY_PATH;
+  manifest.approvedPngIdentitySha256 = APPROVED_PNG_IDENTITY_SHA256;
+  manifest.approvedPngAuthorizationPath = APPROVED_PNG_AUTH_PATH;
+  manifest.approvedPngAuthorizationSha256 = APPROVED_PNG_AUTH_SHA256;
+  manifest.baseStagePath = baseStageRoot;
+  manifest.baseStageManifestSha256 = APPROVED_PNG_BASE_STAGE_SHA256;
+  manifest.baseStagePayloadManifestPath = APPROVED_PNG_BASE_STAGE_PAYLOAD_PATH;
+  manifest.baseStagePayloadManifestSha256 = APPROVED_PNG_BASE_STAGE_PAYLOAD_SHA256;
+  fs.writeFileSync(path.join(stageRoot, 'STAGING_INPUT_MANIFEST.json'), `${JSON.stringify(manifest, null, 2)}\n`);
+  return { stageRoot, baseStageRoot, manifestSha256: sha(fs.readFileSync(path.join(stageRoot, 'STAGING_INPUT_MANIFEST.json'))), overrides };
 }
-module.exports = { build, isPortableInputExcluded };
+
+if (require.main === module) {
+  const args = process.argv.slice(2);
+  const takeFlag = flag => {
+    const index = args.indexOf(flag);
+    if (index < 0) return null;
+    if (!args[index + 1] || args[index + 1].startsWith('--')) throw new Error(`${flag}需要一个路径`);
+    const value = path.resolve(args[index + 1]); args.splice(index, 2); return value;
+  };
+  const pngOverridesPath = takeFlag('--candidate-overrides');
+  const baseStagePath = takeFlag('--base-stage');
+  const stageRoot = path.resolve(args[0] || '/private/tmp/minigame-art-opt-integration-staging-v0.1');
+  try {
+    if (baseStagePath) {
+      if (!pngOverridesPath) throw new Error('--base-stage必须同时提供--candidate-overrides');
+      const result = applyApprovedPngOverridesFromFrozenStage(baseStagePath, stageRoot, pngOverridesPath, ROOT);
+      console.log(JSON.stringify(result, null, 2));
+    } else {
+      const overridesPath = args[1] ? path.resolve(args[1]) : OWNER_OVERRIDES_PATH;
+      const sourceRoot = args[2] ? path.resolve(args[2]) : ROOT;
+      build(stageRoot, overridesPath, sourceRoot, pngOverridesPath);
+    }
+  } catch (error) { console.error(`staging failed: ${error.stack || error}`); process.exitCode = 1; }
+}
+module.exports = { build, isPortableInputExcluded, loadApprovedPngOverrides, applyApprovedPngOverridesFromFrozenStage };

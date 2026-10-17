@@ -1,0 +1,76 @@
+{
+  "recorded_at": "2026-10-17T22:44:50+08:00",
+  "identity_sha256": "3c214519ce79ff0a68fb274407139b2de945fd0f1d0527b0fff378ce876b398a",
+  "files": 634,
+  "bytes": 41902547,
+  "identity_result": "PASS",
+  "required_checks": [
+    {
+      "task_id": "MINIGAME-ART-OPT-PNG-20261017-CLIENT",
+      "required": 4,
+      "schema": "PASS",
+      "criteria_same_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-PNG-20261017-QA",
+      "required": 4,
+      "schema": "PASS",
+      "criteria_same_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-PNG-20261017-TECH",
+      "required": 3,
+      "schema": "PASS",
+      "criteria_same_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-PNG-20261017",
+      "required": 4,
+      "schema": "PASS",
+      "criteria_same_order": true,
+      "results": [
+        "PASS",
+        "PASS",
+        "NOT_TESTED"
+      ]
+    }
+  ],
+  "qa_functional": {
+    "PASS": 5,
+    "PARTIAL": 9,
+    "BLOCKED": 1
+  },
+  "qa_release_NOT_TESTED": 3,
+  "global_qa_pass": false,
+  "cycle_start": "UNKNOWN; Master21:07起产出仅下界",
+  "producer_first_output": "2026-10-17T21:10:44+08:00",
+  "verification_end": "2026-10-17T22:44:50+08:00",
+  "full_cycle_elapsed": "UNKNOWN",
+  "continuity": "本批Client/QA/Tech/Root USER_REVIEW，FLOW REVIEW；旧总体QA/INTEGRATION；无READY/IP空挂",
+  "master_third_criterion": "PASS（流程证据交付，非功能globalPASS）",
+  "bounded_final_confirmation_at": "2026-10-17T22:45:48+08:00",
+  "master_required": 4,
+  "final_states": {
+    "MINIGAME-ART-OPT-PNG-20261017-FLOW": "REVIEW",
+    "MINIGAME-ART-OPT-PNG-20261017-TECH": "USER_REVIEW",
+    "MINIGAME-ART-OPT-PNG-20261017-QA": "USER_REVIEW",
+    "MINIGAME-ART-OPT-PNG-20261017": "USER_REVIEW",
+    "MINIGAME-ART-OPT-PNG-20261017-CLIENT": "USER_REVIEW"
+  },
+  "schema_continuity_confirmation": "PASS"
+}

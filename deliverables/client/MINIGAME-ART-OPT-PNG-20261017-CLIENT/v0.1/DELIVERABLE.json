@@ -1,0 +1,48 @@
+{
+  "task_id": "MINIGAME-ART-OPT-PNG-20261017-CLIENT",
+  "owner": "client",
+  "summary": "六张获批PNG已按稳定ID接入隔离stage并同步三张全画布活动源；裁切legacy输入保持原语义。Creator导入、Web/微信/抖音CLI及Web首页/U03花灯铺短IAB冒烟通过；完整QA回归及微信/抖音目标设备运行仍待验证。",
+  "artifacts": [
+    "IMPLEMENTATION.md",
+    "BUILD_MANIFEST.json",
+    "VERIFICATION.json",
+    "evidence/BUILD_OUTPUTS.json",
+    "evidence/NEGATIVE_PROBES.json",
+    "evidence/ACTIVE_SOURCE_CHANGES.json",
+    "apps/client/tools/asset-integration/approved_png_overrides.json",
+    "apps/client/tools/asset-integration/approved_png_base_payload.json",
+    "apps/client/tools/asset-integration/PNG_OVERRIDE_USAGE.md",
+    "apps/client/tools/asset-integration/build_staging.cjs",
+    "evidence/PERSISTENT_PIPELINE_REPLAY.json",
+    "evidence/HTTP_SMOKE.json",
+    "evidence/IAB_SMOKE.json",
+    "evidence/creator-web-mobile.log",
+    "evidence/creator-wechatgame.log",
+    "evidence/creator-bytedance-mini-game.log"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "绑定准确批准输入及实际执行证据，保护其他会话差异。",
+      "result": "PASS",
+      "evidence": "BUILD_MANIFEST.json、evidence/ACTIVE_SOURCE_CHANGES.json、Tech v0.3 native/几何核验；其余会话差异SHA保持一致。"
+    },
+    {
+      "criterion": "静态、构建与运行分别给结果，缺失环境明确NOT_TESTED或BLOCKED。",
+      "result": "PASS",
+      "evidence": "VERIFICATION.json；静态、Creator及三端CLI结果分别记录；Web HTTP/IAB短冒烟PASS，微信/抖音设备运行明确列为NOT_TESTED。"
+    },
+    {
+      "criterion": "中文结构化交付，不扩全库、不采用WebP，不新增画质档位。",
+      "result": "PASS",
+      "evidence": "IMPLEMENTATION.md、approved_png_overrides.json；仅六PNG，不采用WebP、不新增画质档位。"
+    }
+  ],
+  "assumptions": [
+    "获批Art候选及授权文件在当前仓库的内容以记录SHA为准。",
+    "三张裁切PNG只进入指定stage bundle目标，活动legacy画布需保持旧loader兼容。"
+  ],
+  "risks": [
+    "完整新包QA视觉矩阵及微信/抖音目标设备运行仍待QA确认。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

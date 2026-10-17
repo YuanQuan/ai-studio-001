@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-17T22:35:37.839984+08:00",
+  "original_pid": 22228,
+  "original_pid_escalated_ps": {
+    "exit_code": 1,
+    "output": ""
+  },
+  "original_exit_timestamp": "UNKNOWN",
+  "sandbox_curl": "not evidence of host connectivity: isolated network",
+  "restart": {
+    "session": 80211,
+    "bind": "127.0.0.1:8937",
+    "directory": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/build-output/minigame-art-opt-png-20261017-client-v01-web-mobile",
+    "escalated_curl_http": 200,
+    "escalated_curl_bytes": 2103
+  },
+  "qa_recovery": "QA反馈同8937新tab U00完整加载、720x1280/DPR1/Canvas矩形一致，返回菜单；U00_RECOVERY_CONSOLE及两截图另见QA v0.2，原失败保留",
+  "cleanup": "Root对session80211发Ctrl-C；QA自己的tab已close/viewport reset，旧8921已由QA停止",
+  "closed_at": "2026-10-17T22:36:55.165485+08:00"
+}

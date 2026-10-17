@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "taskId": "MINIGAME-ART-OPT-PNG-20261017-CLIENT",
+  "scope": "六获批PNG + 一处已授权ASCII标点修复",
+  "creatorVersion": "3.8.8",
+  "artIdentity": {
+    "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/FILE_IDENTITY.json",
+    "sha256": "19e840c2bbe61ba51e6bf56d484edf603367b1f9a03c0972efc90bf18ba148db"
+  },
+  "pngAuthorization": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json",
+    "sha256": "5f27b54ac2921a85875fd147311dbb276deaf82dd50834a228039662b9e63793"
+  },
+  "textPatchAuthorization": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/FONT_PUNCTUATION_FIX_AUTHORIZATION.json",
+    "sha256": "6940d03a9ba8055899abbc907a59d1e8b68166993520252a08a780dd00073c89"
+  },
+  "overrideManifest": {
+    "path": "apps/client/tools/asset-integration/approved_png_overrides.json",
+    "sha256": "4fdd599e9733240afc702f90892e4daa890e4dc748ce7271b7ceff921ca8eefc"
+  },
+  "baseline": {
+    "source": "QA frozen repo historical builder at d123",
+    "builderSha256": "02c1bb3147a4189e92cc629213b628b757374e79f258166f68f2cc5fca438280",
+    "ownerOverridesPath": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/OWNER_SOURCE_OVERRIDES.json",
+    "ownerOverridesSha256": "d8e81b9c4ed88c89ac479589aef4052c20e5470d73077c78ced3e1dced4ee332",
+    "generatedManifestSha256": "0f4818da0b0f922e784f58aaa34b462a3191105c1d4093110c8f63d5d574c2e2",
+    "editorSettingsSha256": "252823ccfc1ddc591d264b636ca7da33be088bf181769bb918969708325c89c9",
+    "stageManifestSha256": "70c96497fc5e410ba4f49a9790ac8ae6a63bc2b602523c1da87c899570f56bcc",
+    "payloadInventory": {
+      "path": "apps/client/tools/asset-integration/approved_png_base_payload.json",
+      "sha256": "7f3bf66203ff90cf92233a3188f14e508c2dda4b3053d0b7eb19db7240d9f114",
+      "scope": "仅assets/settings/package共667项；排除build-configs并按stage重生成"
+    },
+    "frozenV08Comparison": "Tech v0.2 BASELINE_PAYLOAD_DIFF.json: 667 files/36,266,325 bytes; diff=[]",
+    "historicalExecutionInventory": {
+      "path": "/private/tmp/minigame-art-opt-base-stage-v08-payload.json",
+      "sha256": "cc0fd4fdeb8d75d868ce7ecd9a2dce7063f825fb975abdb00a10a87258f80df0",
+      "scope": "本次历史执行的完整670项盘点，含三个configs；临时辅助清单，不作为长期依赖"
+    }
+  },
+  "candidateStage": {
+    "path": "/private/tmp/minigame-art-opt-png-stage-20261017-v05",
+    "manifestSha256": "f50f08a1d4031355d8aaf2dfa75a400881c785b716cc8ba3c07968ae9fed00ac",
+    "preImportSnapshotNature": "事后重构的670项清单含667 payload+3 build-configs；正式持久化验证清单为667 payload",
+    "preImportFileCount": 670,
+    "preImportBytes": 36008293,
+    "preImportInventorySha256": "162273453ed1ac5b5a22dc8ee9cf8ed1ed0ca494941dddd9097cdf2aa25e739a",
+    "currentPersistentReplay": {
+      "path": "/private/tmp/minigame-art-opt-png-stage-20261017-v06-reconstructed",
+      "manifestSha256": "4b6286c1a5ebdde2eb56726268004964715037221d2b5304ee88be79fc4508dc",
+      "evidence": "evidence/PERSISTENT_PIPELINE_REPLAY.json",
+      "cliRebuilt": false
+    },
+    "historicalCliStage": {
+      "path": "/private/tmp/minigame-art-opt-png-stage-20261017-v05",
+      "manifestSha256": "f50f08a1d4031355d8aaf2dfa75a400881c785b716cc8ba3c07968ae9fed00ac",
+      "historicalOverrideManifestSha256": "f5645f334cddf3d1317cc98734ab84a47b840d5619aaee140e78e0e263e832fc",
+      "cliEvidence": "evidence/BUILD_OUTPUTS.json"
+    }
+  },
+  "platformBuilds": [
+    {
+      "platform": "web-mobile",
+      "outputRoot": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/build-output/minigame-art-opt-png-20261017-client-v01-web-mobile",
+      "files": 803,
+      "bytes": 38404865,
+      "fileInventorySha256": "e0bf4d0ce61d24dc8d7453fe5dd35a8ecf901c23a2bb070bd408764748b9e3a6",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-web-mobile.log",
+      "logSha256": "c6affda6615325f5bed7d4aa95832e8a3e5988fa604aa3a8f0d774b223680d9c"
+    },
+    {
+      "platform": "wechatgame",
+      "outputRoot": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/build-output/minigame-art-opt-png-20261017-client-v01-wechatgame",
+      "files": 823,
+      "bytes": 38441508,
+      "fileInventorySha256": "08ebe619ad399750c57053d069ed228c0d4f7647edb0804873217889ad99ebd5",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-wechatgame.log",
+      "logSha256": "e6fd4393b810ac1628f558adbc4f92c3ce19c7137bd2ab50124044a74d2be09c"
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "outputRoot": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/build-output/minigame-art-opt-png-20261017-client-v01-bytedance-mini-game",
+      "files": 821,
+      "bytes": 38415854,
+      "fileInventorySha256": "ee7b44fa0aa029cbc87c0bbcb9a37b77c17576a20c7711cf9d62190c6c87cde5",
+      "exitCode": 36,
+      "finishedMarker": true,
+      "log": "/private/tmp/minigame-art-opt-png-stage-20261017-v05/evidence/creator-bytedance-mini-game.log",
+      "logSha256": "388bab77d221b4810f13ed8411f1e7d6e3356c01205a8fac5b4f98315624b001"
+    }
+  ],
+  "protectedDifferences": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "expectedProtectedSha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "unchanged": true
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "expectedProtectedSha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "unchanged": true
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "expectedProtectedSha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "unchanged": true
+    },
+    {
+      "path": "apps/client/package.json",
+      "sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "expectedProtectedSha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "unchanged": true
+    }
+  ],
+  "evidence": [
+    "evidence/BUILD_OUTPUTS.json",
+    "evidence/PREIMPORT_PAYLOAD.json",
+    "evidence/POSTIMPORT_STAGE_DIFF.json",
+    "evidence/NEGATIVE_PROBES.json",
+    "evidence/ACTIVE_SOURCE_CHANGES.json",
+    "evidence/PERSISTENT_PIPELINE_REPLAY.json"
+  ]
+}
