@@ -1,0 +1,67 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.5",
+  "reason_for_revision": "真实Web v0.6中U01调节面板拖动后无法直接点关闭。触摸结束在按钮端停止冒泡，导致视口未清理pointer Y；通用按钮helper留下拖动状态，后续点击持续被抑制。",
+  "runtime_failure_evidence": {
+    "image": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U01-close-stuck-after-drag-320.jpg",
+    "root_cause": "Viewport TOUCH_END 被子Button TOUCH_END 的 propagationStopped 截断；panelScrollY/gesture残留。点击正文gap后viewport再收完整start/end，之后按钮才恢复。"
+  },
+  "changed_sources": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "prechange_sha256": "184f3610ffbd298e10dad79ec83e179f3e859b1a2fd3e9b612046b3180951a46",
+      "candidate_sha256": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042",
+      "changes": "通用button helper的每个TOUCH_START均重置本轮drag标记；TOUCH_END先缓存drag状态并清panelScrollY，只在未拖动时调用回调；TOUCH_CANCEL清指针并保留抑制；viewport取消也清指针并抑制取消动作。非关闭按钮特判。"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+      "candidate_sha256": "764af5ad01d0beebd549cdd34f3b43c7ad6df67e829fcfc97be68a979c5fea2d",
+      "changes": "通过Creator TS转译加载实际U01 source并触发button()生成的真实事件回调；覆盖drag-end→next tap、cancel→end与正常点击序列。"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+      "candidate_sha256": "6264033bf47114d1260601b225f5c16a64755ad30252f8bfb263bdb9d646eb66",
+      "changes": "更新U01拖动点击隔离断言以适配已修复的通用button helper；保留v0.4双向拖动、边界及调用点测试。"
+    }
+  ],
+  "unchanged_sources": [
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+      "note": "v0.4 Gallery不变。"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78"
+    },
+    {
+      "path": "apps/client/assets/framework/ui/scrollable_text_panel.ts",
+      "sha256": "8f54010f550d69a4c82da03b61eedfba577c13e268866f237b5b1bb8d5aa4567"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "sha256": "c31383a69473e53bbd3e6901f19a17d530553fed5d1cea62afe5d21dd05862f2"
+    }
+  ],
+  "prechange_snapshot": {
+    "v0_4_u01_candidate": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/evidence/prechange/sakura_layout_editor_candidate.ts",
+    "v0_4_u01_candidate_sha256": "184f3610ffbd298e10dad79ec83e179f3e859b1a2fd3e9b612046b3180951a46",
+    "v0_3_u01_baseline": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/evidence/prechange/sakura_layout_editor.ts",
+    "v0_3_u01_baseline_sha256": "612b253e8c0fa2fa9d52022eb721ca8838bbac2946d304428b33e9db38720d01",
+    "gallery_v0_4": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/evidence/prechange/UnitSampleGallery.ts",
+    "gallery_v0_4_sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3"
+  },
+  "validation": {
+    "creator_typescript_4_9_5_semantic_check": "PASS",
+    "actual_source_button_callback_sequence_probe": "PASS",
+    "scroll_direction_probe": "PASS",
+    "u04_reentry_probe": "PASS",
+    "module_asset_session_probe": "PASS",
+    "creator_web_build": "NOT_TESTED_PENDING_ROOT_BUILD",
+    "iab_u01_close_after_drag": "NOT_TESTED_PENDING_ROOT_BUILD"
+  }
+}

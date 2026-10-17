@@ -1,0 +1,43 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "source_change_manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/SOURCE_CHANGE_MANIFEST.json",
+  "source_identity": {
+    "UnitSampleGallery.ts": "c0f3f3b8d90eaea5287019b37e1c3960019f21d7975119bcc1d6ced5e8182848",
+    "gallery_asset_session.ts": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+    "gallery_asset_session.ts.meta": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+    "sakura_v03_environment.ts": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+    "gallery_asset_session_probe.cjs": "36cc69f69efb45bd723c347ecb088851b9c1a5ef5ff86b39fbe6887069849a3e"
+  },
+  "checks": [
+    {
+      "name": "Creator TypeScript semantic check",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit --skipLibCheck --lib es2018,dom -p apps/client/tsconfig.json",
+      "result": "PASS",
+      "exit_code": 0,
+      "notes": "Creator bundled TypeScript 4.9.5; no project lib upgrade."
+    },
+    {
+      "name": "Session effective-method probe and 20 synthetic dual-owner cycles",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/tests/gallery_asset_session_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "notes": "Exercises late derived acquire after dispose, stale handle release, Sprite CUSTOM/trim and geometry restoration, shared source/derived cache, other-owner survival, and refs returning to zero. These are Node method tests, not actual Web runtime cycles."
+    },
+    {
+      "name": "Cocos Creator 3.8.8 isolated import/build",
+      "result": "NOT_TESTED",
+      "notes": "Parent task owns the final unified staging source and build."
+    },
+    {
+      "name": "Actual browser/IAB page interaction and 20 Web page cycles",
+      "result": "NOT_TESTED",
+      "notes": "Parent task performs unified build and IAB verification; this artifact does not claim browser/runtime acceptance."
+    }
+  ],
+  "remaining_runtime_measurements": [
+    "Actual page-generation disposal and derived/module trend across 20 Web loops",
+    "Real Creator destroy/after-draw observation on the final imported source",
+    "Listener cleanup count; current optional session diagnostic explicitly emits NOT_TESTED",
+    "DPR2/3 and WeChat/Douyin native platform behavior"
+  ]
+}

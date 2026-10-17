@@ -1,0 +1,4418 @@
+{
+  "schemaVersion": 1,
+  "transformId": "approved-crop-derived-frame-v1",
+  "evidenceStatus": "SOURCE_VALIDATED_NOT_CREATOR_IMPORTED",
+  "assetCount": 83,
+  "bundleDefinitions": {
+    "world": {
+      "directory": "apps/client/assets/bundles/world",
+      "dependencies": [],
+      "consumers": [
+        "U00",
+        "U01",
+        "U04"
+      ]
+    },
+    "tourist": {
+      "directory": "apps/client/assets/bundles/tourist",
+      "dependencies": [],
+      "consumers": [
+        "U00",
+        "U02",
+        "milk-tea"
+      ]
+    },
+    "shops": {
+      "directory": "apps/client/assets/bundles/shops",
+      "dependencies": [],
+      "consumers": [
+        "U00",
+        "U01",
+        "U03",
+        "U04"
+      ]
+    },
+    "dialogue": {
+      "directory": "apps/client/assets/units/dialogue",
+      "dependencies": [
+        "world",
+        "shops"
+      ],
+      "consumers": [
+        "U04"
+      ]
+    },
+    "milk-tea": {
+      "directory": "apps/client/assets/bundles/milk_tea",
+      "dependencies": [
+        "tourist"
+      ],
+      "consumers": [
+        "U05"
+      ]
+    }
+  },
+  "moduleManifests": {
+    "world": {
+      "bundle": "world",
+      "dependencies": [],
+      "assets": {
+        "tex_sakura_rr_far_l": {
+          "path": "sakura_v03/tex_sakura_rr_far_l/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "55c7fcd62fe617426ddd6e384c2a0fcb3dbcc5f468e53d6ed46eb719c838e808"
+        },
+        "tex_sakura_rr_far_r": {
+          "path": "sakura_v03/tex_sakura_rr_far_r/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "4da48aa92e752893cd916944177475d7b917deaf5b30d3ca3f9fc6ef00b882f0"
+        },
+        "tex_sakura_rr_street_rail_half": {
+          "path": "sakura_v03/tex_sakura_rr_street_rail_half/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "fe874435a72a6ee43851bb09aef9d112676a0a104e5ac2e59d77d02f5b170868"
+        },
+        "tex_sakura_rr_water_rail_half": {
+          "path": "sakura_v03/tex_sakura_rr_water_rail_half/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "c0acb8a1cbc68a572fd546adeb6781b99b2f371d729efac4d39293236eeb4bae"
+        },
+        "tex_sakura_rr_foreground_left": {
+          "path": "sakura_v03/tex_sakura_rr_foreground_left/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "2a49cfe31c708e8e733c8cf5a4e572a776d33dc2629aef0610989fc534feade8"
+        },
+        "tex_sakura_rr_foreground_right": {
+          "path": "sakura_v03/tex_sakura_rr_foreground_right/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "51987d9c77e59dc958380c912092da19f32444cf9082985592f2c89196678f37"
+        },
+        "tex_sakura_rr_gate": {
+          "path": "sakura_v03/tex_sakura_rr_gate/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "553caea84081abd947b139bdb99be33fd3aac8407c1a30c5abe3c4eedfadac01"
+        },
+        "tex_sakura_rr_tree_a": {
+          "path": "sakura_v03/tex_sakura_rr_tree_a/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "0d854a69fb4f028da0b6268bd664435837409583122ce169c1c06c5a8489893e"
+        },
+        "tex_sakura_rr_tree_b": {
+          "path": "sakura_v03/tex_sakura_rr_tree_b/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f3e839a36663ec29ad9025f8c8fa6191baa48ed565620bf34807d89a467d0f7b"
+        },
+        "tex_sakura_rr_spirit_a_flame": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_a_flame/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "6d72e4804ff31d3beb6c76d9d81649ce6a79b576236fad9c27b2204c71cc6ffe"
+        },
+        "tex_sakura_rr_spirit_a_lotus": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_a_lotus/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "65c6e732e5abee0949c0edac126c3282d748d39e626b6731506628b6ddbc76c9"
+        },
+        "tex_sakura_rr_spirit_a_reflection": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_a_reflection/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "5b5b133b4e1ab30713ab5499ad79aacaab6834601c5963fe9662e87f40088221"
+        },
+        "tex_sakura_rr_spirit_b_flame": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_b_flame/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f82a400bdf54dc24bce625a4f0ee0ce241d158491d89aabedeab5d341d02999a"
+        },
+        "tex_sakura_rr_spirit_b_lotus": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_b_lotus/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "944d81f47e40ca91c9b9c789417504527703c0b0738ca19c241cd32dea4f46cb"
+        },
+        "tex_sakura_rr_spirit_b_reflection": {
+          "path": "sakura_v03/tex_sakura_rr_spirit_b_reflection/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "80903373438ce03cd1518bdf1e51f0f553bde7941da634b59c3db6be1c2e08f1"
+        }
+      }
+    },
+    "tourist": {
+      "bundle": "tourist",
+      "dependencies": [],
+      "assets": {
+        "UG_GHOST_01_HAPPY_00": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_00/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126"
+        },
+        "UG_GHOST_01_HAPPY_02": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "4ead93c2bdfe8e9093ed1628d5a4e96e559eee018a11dcac5153c2de5b972146"
+        },
+        "UG_GHOST_01_HAPPY_04": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_04/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "5bee8d0c0110c6f15633a3236cd94a9f618a937e53b23a047443f60933dcc431"
+        },
+        "UG_GHOST_01_HAPPY_05": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_05/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "92d689b318af6083ba02316bb36c7742f8dcbb39dc23e7f4c304dd63424fc686"
+        },
+        "UG_GHOST_01_HAPPY_06": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_06/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "3e7a874f9020fd4162756d37553f567f65cd214bd4f756004f93910b5e7abcee"
+        },
+        "UG_GHOST_01_HAPPY_07": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_07/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "d676c12829fedbbe43bb06137b3ce89995617aa0e7b908712a30c486934c80df"
+        },
+        "UG_GHOST_01_HAPPY_08": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_08/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "e7a41c2e87e31c3e2926b45649d1338ba61aa34ee47cd7a4ea04bdd2a5f908a1"
+        },
+        "UG_GHOST_01_HAPPY_09": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_09/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "c67fedc5fffe3d45b72d603819c9e924729318935f26bce5fba99b3f160b788a"
+        },
+        "UG_GHOST_01_RUN_01": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1461c915e0a788d422edacf20439da54f139e94d536360c3875fd82a84d6da09"
+        },
+        "UG_GHOST_01_RUN_02": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "dff2d47b0684ef45624b1e392436c13f48244759a2a8b375372f3e2ac550569d"
+        },
+        "UG_GHOST_01_RUN_03": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "aed6abc489621a516ff533f0964530bf282d6fff55c248cec35abc1d7cec168d"
+        },
+        "UG_GHOST_01_RUN_04": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_04/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "a804d255f90ac8a1cc3743053e851bdee5decdb894e1bd21cbd190545a0bc218"
+        },
+        "UG_GHOST_01_RUN_05": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_05/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "3de9d5f60f10c3de1addbaf43a1671f93b4689e992bb10a386c604227fa37963"
+        },
+        "UG_GHOST_01_RUN_06": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_06/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f2a797df8f738bc48de7c7b1ea6ca23b832460025c668513119d465011abf589"
+        },
+        "UG_GHOST_01_RUN_07": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_07/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "97b09cf8fffc76f78634a9b47575919a6f4e4ab2dde75c0841bd776872ef8d36"
+        },
+        "UG_GHOST_01_RUN_08": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_08/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1bd4cd445ea56c0d42a487e6471396af56fc36fcfd73ae921bf3028a1e2fbf37"
+        },
+        "UG_GHOST_01_RUN_09": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_09/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "892c504a46e0aa47babf115b2b7ce6bf21f38c5508e0f2dcd2ed5c279a176a4d"
+        },
+        "UG_GHOST_01_SAD_00": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_00/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "b84e371221a9ffe8d2f25f48eecab16270e956190b5d60133bfd5c92eea964e3"
+        },
+        "UG_GHOST_01_SAD_01": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "480dd66708b4b3a5fbc134d5c25c28e3bba35b9656412c6abbfa7321722c903c"
+        },
+        "UG_GHOST_01_SAD_02": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "8d912287335a1182a32dad140ab932bf3de93b204aec4959963ed0bbc438f5b0"
+        },
+        "UG_GHOST_01_SAD_03": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "7d7efa07a638176c5bc21068f7433642c260d8f54a866d151738d72048c15d36"
+        },
+        "UG_GHOST_01_SAD_07": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_07/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "37631caac2d4103d626f94cfe4c6fd3ccf14383c8407278444071892b9e11345"
+        },
+        "UG_GHOST_01_SAD_08": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_08/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "cbd2b01c3355af9a350514eca69b58c04f6485bb9999dedb4121bb693eaa1240"
+        },
+        "UG_GHOST_01_SAD_09": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_09/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "d1aadd74cc7b3170d551e15ba9b1e8f84a9f25f2c08f3943f5dac688ee732a9a"
+        },
+        "UG_GHOST_01_WALK_01": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1461c915e0a788d422edacf20439da54f139e94d536360c3875fd82a84d6da09"
+        },
+        "UG_GHOST_01_WALK_02": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "dff2d47b0684ef45624b1e392436c13f48244759a2a8b375372f3e2ac550569d"
+        },
+        "UG_GHOST_01_WALK_03": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "aed6abc489621a516ff533f0964530bf282d6fff55c248cec35abc1d7cec168d"
+        },
+        "UG_GHOST_01_WALK_04": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_04/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "a804d255f90ac8a1cc3743053e851bdee5decdb894e1bd21cbd190545a0bc218"
+        },
+        "UG_GHOST_01_WALK_05": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_05/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "3de9d5f60f10c3de1addbaf43a1671f93b4689e992bb10a386c604227fa37963"
+        },
+        "UG_GHOST_01_WALK_06": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_06/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f2a797df8f738bc48de7c7b1ea6ca23b832460025c668513119d465011abf589"
+        },
+        "UG_GHOST_01_WALK_07": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_07/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "97b09cf8fffc76f78634a9b47575919a6f4e4ab2dde75c0841bd776872ef8d36"
+        },
+        "UG_GHOST_01_WALK_08": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_08/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1bd4cd445ea56c0d42a487e6471396af56fc36fcfd73ae921bf3028a1e2fbf37"
+        },
+        "UG_GHOST_01_WALK_09": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_09/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "892c504a46e0aa47babf115b2b7ce6bf21f38c5508e0f2dcd2ed5c279a176a4d"
+        },
+        "UG_GHOST_01_HAPPY_01": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "a8bdb2593d2ac750711b3261dc1dada06d6f964d74fc21681c583f0a382d7da8"
+        },
+        "UG_GHOST_01_HAPPY_03": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_happy_03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "17682edcc74024e87f1fb0437f4c12ac8301975d5565f7423e88477ca2e9c135"
+        },
+        "UG_GHOST_01_RUN_00": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_00/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f5fce66eb9f7fdc59535a5a7fb03d8c28689d5cf0c3e9aece9024831d4e8539a"
+        },
+        "UG_GHOST_01_SAD_04": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_04/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "b4a003ddb3f317fba9e9415a205d90f8207b5ab824f8f97fb288edd737659458"
+        },
+        "UG_GHOST_01_SAD_05": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_05/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "6ccda94f92dd4efada98e30a781dea3de2de9461938f5a0f1f5da962d333e522"
+        },
+        "UG_GHOST_01_SAD_06": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_sad_06/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "8b64b104f99d7886cb15c22ceaccbb389bef5c68c9f8f580568abd1bea0e7fe3"
+        },
+        "UG_GHOST_01_WALK_00": {
+          "path": "ghost-customer/frames/tex_ug_ghost_01_run_00/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "f5fce66eb9f7fdc59535a5a7fb03d8c28689d5cf0c3e9aece9024831d4e8539a"
+        }
+      }
+    },
+    "shops": {
+      "bundle": "shops",
+      "dependencies": [],
+      "assets": {
+        "U03_SHOP_01_BODY": {
+          "path": "milk_tea/textures/tex_mt_shop_01_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "24aa31b7a7bc6a417e35664fc7779e1e4edb02b8c6c073e179c28e741b899888"
+        },
+        "U03_SHOP_01_SIGN": {
+          "path": "milk_tea/textures/tex_mt_shop_01_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "b52d240224b2575d3f6bfb6583c0688e3eb8b46dc98177877be3deebf34010e4"
+        },
+        "tex_u03_shop_02_body": {
+          "path": "sugar_art/textures/tex_u03_shop_02_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "9e7dff43071f0502992c887334b4fb1913d5654d3cdedf0198e95c736181bb56"
+        },
+        "tex_u03_shop_02_sign": {
+          "path": "sugar_art/textures/tex_u03_shop_02_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "e02e1d393cb34e982e25a81c56eb949064497f3b29221ea9a6962d4fdd816945"
+        },
+        "tex_u03_shop_03_body": {
+          "path": "charcoal_grill/textures/tex_u03_shop_03_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "412175b36a756fe763460b480be0fc93d50956b218cae242466e1a5f38973d8e"
+        },
+        "tex_u03_shop_03_sign": {
+          "path": "charcoal_grill/textures/tex_u03_shop_03_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "12f87f2d908b6b53da611f968ab5d25b72dfadc90f4771f6d27b7861b9ec9a23"
+        },
+        "tex_u03_shop_04_body": {
+          "path": "barber/textures/tex_u03_shop_04_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "c9d7fbd8adfdfff6dcc4a9bff3028b594d20ce0b740a4f806b7f11accff77150"
+        },
+        "tex_u03_shop_04_sign": {
+          "path": "barber/textures/tex_u03_shop_04_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "ae717ad3a1c751166877926af24acb81c635a4a6d0fd8859296fc1277fc2206a"
+        },
+        "tex_u03_shop_05_body": {
+          "path": "lantern/textures/tex_u03_shop_05_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1"
+        },
+        "tex_u03_shop_05_sign": {
+          "path": "lantern/textures/tex_u03_shop_05_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd"
+        },
+        "tex_u03_shop_06_body": {
+          "path": "pitch_pot/textures/tex_u03_shop_06_body/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "512e203b477ee3ce3f29c9265a24c45ae903d344555327ace35ce28ef897bf54"
+        },
+        "tex_u03_shop_06_sign": {
+          "path": "pitch_pot/textures/tex_u03_shop_06_sign/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "48625ea09e77b88a5dc6967e6211be5dd3e0e1edf46bc8b336b67c631df9433e"
+        }
+      }
+    },
+    "dialogue": {
+      "bundle": "dialogue",
+      "dependencies": [
+        "world",
+        "shops"
+      ],
+      "assets": {}
+    },
+    "milk-tea": {
+      "bundle": "milk-tea",
+      "dependencies": [
+        "tourist"
+      ],
+      "assets": {
+        "BTN_CONFIRM_TEXT": {
+          "path": "u05_milk_tea/u05_b/BTN_CONFIRM_TEXT/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "703c553b5d65101d06004d8a517315b1c5dd765c2981ef4d0cb252b433592327"
+        },
+        "CUP_MILK_M01": {
+          "path": "u05_milk_tea/u05_b/CUP_MILK_M01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "ff8e26f9955a6e52f1dd9805c91b0f14511169b3907dfd92b3f7280d6f26ef58"
+        },
+        "CUP_MILK_M02": {
+          "path": "u05_milk_tea/u05_b/CUP_MILK_M02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "0a92e87d5da3da931815d1916d6dde59046622a03d8329c6bed8f0ad625bfd2b"
+        },
+        "CUP_MILK_M03": {
+          "path": "u05_milk_tea/u05_b/CUP_MILK_M03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "5e7cb3c5ab8a4cb63f59cda3d2257a10c4b214de673c5db1180f2197f27da0e4"
+        },
+        "CUP_TEA_T01": {
+          "path": "u05_milk_tea/u05_b/CUP_TEA_T01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1071469c9906fb0f8caf3c86a44e21f941b6d65bd08200347c99a91995614773"
+        },
+        "CUP_TEA_T02": {
+          "path": "u05_milk_tea/u05_b/CUP_TEA_T02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "09032805703ab460b058035eb42a739666f6db6eff86caaf7990586dd91363a6"
+        },
+        "CUP_TEA_T03": {
+          "path": "u05_milk_tea/u05_b/CUP_TEA_T03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "17e7fed8c031b1f5942c72406df6aeb78c57fde54e741bc0a19523b18e3aead0"
+        },
+        "CUP_TOP_P01": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P01/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "ec0d15c4d0dcd25b9a07157539313e3dce0e823224cbd44e21cfb410e32b17f8"
+        },
+        "CUP_TOP_P02": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P02/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "0e0ba5721f475daa5aac0fef7fe5dad651c4e84f477a651576ce0e7a30c96d8c"
+        },
+        "CUP_TOP_P03": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P03/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "a51030de9685591b82f43a4e2d4fadc533ef2ff052e6e9f57cddff11d7a1add5"
+        },
+        "CUP_TOP_P04": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P04/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "b030f85a5329f5ba53abff56fa2a7fe2bda55d805de5fe7c8a4ba0b5379f839d"
+        },
+        "CUP_TOP_P05": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P05/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "de624b8e3f1fe77ce4b233bffcf1a2295eb38b144375e0ce17d7131d7b1d65b7"
+        },
+        "CUP_TOP_P06": {
+          "path": "u05_milk_tea/u05_b/CUP_TOP_P06/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "a928d52785b576eeeafa9e0e6aa05c9ab0312fd464695f35a8da32d76d2688b0"
+        },
+        "LOCK_MILK": {
+          "path": "u05_milk_tea/u05_b/LOCK_MILK/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "836f88ee0410426470a8b431a26368fa6380872ba798003aba5668f89d6a070b"
+        },
+        "LOCK_TEA": {
+          "path": "u05_milk_tea/u05_b/LOCK_TEA/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "1ffbe980a58f5fe3150e5fb34440b7723f2d7a51e94192ff54c6c45feebe863a"
+        },
+        "LOCK_TOP": {
+          "path": "u05_milk_tea/u05_b/LOCK_TOP/spriteFrame",
+          "type": "SpriteFrame",
+          "revision": "9cbecec62b1fe9c735fe5177eedb4234f42f55e67adbe2e1ee2121168ded6ef9"
+        }
+      }
+    }
+  },
+  "assets": [
+    {
+      "stableAssetId": "tex_sakura_rr_far_l",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_far_l.png",
+      "approvedSha256": "55c7fcd62fe617426ddd6e384c2a0fcb3dbcc5f468e53d6ed46eb719c838e808",
+      "originImageUuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
+      "originFrameUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_far_l.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_far_l/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1536,
+          720
+        ],
+        "rect": [
+          0,
+          0,
+          1536,
+          652
+        ],
+        "sourceCropRect": [
+          0,
+          68,
+          1536,
+          720
+        ],
+        "offset": [
+          0,
+          -34
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_far_l",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_far_l",
+      "plannedCanonicalImageUuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
+      "canonicalImageAssetId": "tex_sakura_rr_far_l"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_far_r",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_far_r.png",
+      "approvedSha256": "4da48aa92e752893cd916944177475d7b917deaf5b30d3ca3f9fc6ef00b882f0",
+      "originImageUuid": "f4f25524-13ec-4684-b29b-cf32a0cafd81",
+      "originFrameUuid": "f4f25524-13ec-4684-b29b-cf32a0cafd81@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_r.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_far_r.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_far_r/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1536,
+          720
+        ],
+        "rect": [
+          0,
+          0,
+          1536,
+          590
+        ],
+        "sourceCropRect": [
+          0,
+          130,
+          1536,
+          720
+        ],
+        "offset": [
+          0,
+          -65
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_far_r",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_far_r",
+      "plannedCanonicalImageUuid": "f4f25524-13ec-4684-b29b-cf32a0cafd81",
+      "canonicalImageAssetId": "tex_sakura_rr_far_r"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_street_rail_half",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_street_rail_half.png",
+      "approvedSha256": "fe874435a72a6ee43851bb09aef9d112676a0a104e5ac2e59d77d02f5b170868",
+      "originImageUuid": "bcb067ad-2d7a-41cc-9219-2f81afa0ad3e",
+      "originFrameUuid": "bcb067ad-2d7a-41cc-9219-2f81afa0ad3e@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_street_rail_half.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_street_rail_half.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_street_rail_half/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1536,
+          113
+        ],
+        "rect": [
+          0,
+          0,
+          1287,
+          107
+        ],
+        "sourceCropRect": [
+          0,
+          6,
+          1287,
+          113
+        ],
+        "offset": [
+          -124.5,
+          -3
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_street_rail_half",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_street_rail_half",
+      "plannedCanonicalImageUuid": "bcb067ad-2d7a-41cc-9219-2f81afa0ad3e",
+      "canonicalImageAssetId": "tex_sakura_rr_street_rail_half"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_water_rail_half",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_water_rail_half.png",
+      "approvedSha256": "c0acb8a1cbc68a572fd546adeb6781b99b2f371d729efac4d39293236eeb4bae",
+      "originImageUuid": "1933174c-2b51-46db-9908-31373134e21b",
+      "originFrameUuid": "1933174c-2b51-46db-9908-31373134e21b@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_water_rail_half.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_water_rail_half.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_water_rail_half/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1536,
+          344
+        ],
+        "rect": [
+          0,
+          0,
+          1536,
+          337
+        ],
+        "sourceCropRect": [
+          0,
+          7,
+          1536,
+          344
+        ],
+        "offset": [
+          0,
+          -3.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_water_rail_half",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_water_rail_half",
+      "plannedCanonicalImageUuid": "1933174c-2b51-46db-9908-31373134e21b",
+      "canonicalImageAssetId": "tex_sakura_rr_water_rail_half"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_foreground_left",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_foreground_left.png",
+      "approvedSha256": "2a49cfe31c708e8e733c8cf5a4e572a776d33dc2629aef0610989fc534feade8",
+      "originImageUuid": "58e51526-e350-462c-87a7-52c225ae97f7",
+      "originFrameUuid": "58e51526-e350-462c-87a7-52c225ae97f7@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_foreground_left.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_foreground_left.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_foreground_left/spriteFrame",
+      "frame": {
+        "originalSize": [
+          768,
+          384
+        ],
+        "rect": [
+          0,
+          0,
+          680,
+          384
+        ],
+        "sourceCropRect": [
+          0,
+          0,
+          680,
+          384
+        ],
+        "offset": [
+          -44,
+          0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_foreground_left",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_foreground_left",
+      "plannedCanonicalImageUuid": "58e51526-e350-462c-87a7-52c225ae97f7",
+      "canonicalImageAssetId": "tex_sakura_rr_foreground_left"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_foreground_right",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_foreground_right.png",
+      "approvedSha256": "51987d9c77e59dc958380c912092da19f32444cf9082985592f2c89196678f37",
+      "originImageUuid": "acb262f6-5d68-490d-9a12-eeed85106c74",
+      "originFrameUuid": "acb262f6-5d68-490d-9a12-eeed85106c74@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_foreground_right.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_foreground_right.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_foreground_right/spriteFrame",
+      "frame": {
+        "originalSize": [
+          768,
+          384
+        ],
+        "rect": [
+          0,
+          0,
+          559,
+          362
+        ],
+        "sourceCropRect": [
+          209,
+          22,
+          768,
+          384
+        ],
+        "offset": [
+          104.5,
+          -11
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_foreground_right",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_foreground_right",
+      "plannedCanonicalImageUuid": "acb262f6-5d68-490d-9a12-eeed85106c74",
+      "canonicalImageAssetId": "tex_sakura_rr_foreground_right"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_gate",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_gate.png",
+      "approvedSha256": "553caea84081abd947b139bdb99be33fd3aac8407c1a30c5abe3c4eedfadac01",
+      "originImageUuid": "85b1794e-2188-4211-918c-c6fe1b77e291",
+      "originFrameUuid": "85b1794e-2188-4211-918c-c6fe1b77e291@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_gate.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_gate.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_gate/spriteFrame",
+      "frame": {
+        "originalSize": [
+          380,
+          475
+        ],
+        "rect": [
+          0,
+          0,
+          380,
+          433
+        ],
+        "sourceCropRect": [
+          0,
+          24,
+          380,
+          457
+        ],
+        "offset": [
+          0,
+          -3
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_gate",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_gate",
+      "plannedCanonicalImageUuid": "85b1794e-2188-4211-918c-c6fe1b77e291",
+      "canonicalImageAssetId": "tex_sakura_rr_gate"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_tree_a",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_tree_a.png",
+      "approvedSha256": "0d854a69fb4f028da0b6268bd664435837409583122ce169c1c06c5a8489893e",
+      "originImageUuid": "a27240f5-698c-4727-aa8c-284ee1593725",
+      "originFrameUuid": "a27240f5-698c-4727-aa8c-284ee1593725@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_tree_a.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_tree_a.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_tree_a/spriteFrame",
+      "frame": {
+        "originalSize": [
+          600,
+          600
+        ],
+        "rect": [
+          0,
+          0,
+          592,
+          534
+        ],
+        "sourceCropRect": [
+          5,
+          39,
+          597,
+          573
+        ],
+        "offset": [
+          1,
+          -6
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_tree_a",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_tree_a",
+      "plannedCanonicalImageUuid": "a27240f5-698c-4727-aa8c-284ee1593725",
+      "canonicalImageAssetId": "tex_sakura_rr_tree_a"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_tree_b",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_tree_b.png",
+      "approvedSha256": "f3e839a36663ec29ad9025f8c8fa6191baa48ed565620bf34807d89a467d0f7b",
+      "originImageUuid": "8211da64-f623-4ed8-a025-06fa2089a97c",
+      "originFrameUuid": "8211da64-f623-4ed8-a025-06fa2089a97c@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_tree_b.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_tree_b.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_tree_b/spriteFrame",
+      "frame": {
+        "originalSize": [
+          340,
+          340
+        ],
+        "rect": [
+          0,
+          0,
+          333,
+          261
+        ],
+        "sourceCropRect": [
+          5,
+          42,
+          338,
+          303
+        ],
+        "offset": [
+          1.5,
+          -2.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_tree_b",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_tree_b",
+      "plannedCanonicalImageUuid": "8211da64-f623-4ed8-a025-06fa2089a97c",
+      "canonicalImageAssetId": "tex_sakura_rr_tree_b"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_a_flame",
+      "category": "SAMPLING_REVISION",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_a_flame.png",
+      "approvedSha256": "6d72e4804ff31d3beb6c76d9d81649ce6a79b576236fad9c27b2204c71cc6ffe",
+      "originImageUuid": "489d3dc6-92bd-4698-bf54-2affd660e430",
+      "originFrameUuid": "489d3dc6-92bd-4698-bf54-2affd660e430@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_a_flame.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_a_flame.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_a_flame/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          92,
+          94
+        ],
+        "sourceCropRect": [
+          34,
+          6,
+          126,
+          100
+        ],
+        "offset": [
+          0,
+          27
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_a_flame",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_a_flame",
+      "plannedCanonicalImageUuid": "489d3dc6-92bd-4698-bf54-2affd660e430",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_a_flame"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_a_lotus",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_a_lotus.png",
+      "approvedSha256": "65c6e732e5abee0949c0edac126c3282d748d39e626b6731506628b6ddbc76c9",
+      "originImageUuid": "80b613b7-7b48-4f74-a300-f7198864c771",
+      "originFrameUuid": "80b613b7-7b48-4f74-a300-f7198864c771@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_a_lotus.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_a_lotus.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_a_lotus/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          132,
+          28
+        ],
+        "sourceCropRect": [
+          14,
+          96,
+          146,
+          124
+        ],
+        "offset": [
+          0,
+          -30
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_a_lotus",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_a_lotus",
+      "plannedCanonicalImageUuid": "80b613b7-7b48-4f74-a300-f7198864c771",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_a_lotus"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_a_reflection",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_a_reflection.png",
+      "approvedSha256": "5b5b133b4e1ab30713ab5499ad79aacaab6834601c5963fe9662e87f40088221",
+      "originImageUuid": "2c21d356-cea0-4b0e-aa3f-ed45d317bb69",
+      "originFrameUuid": "2c21d356-cea0-4b0e-aa3f-ed45d317bb69@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_a_reflection.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_a_reflection.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_a_reflection/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          76,
+          34
+        ],
+        "sourceCropRect": [
+          43,
+          120,
+          119,
+          154
+        ],
+        "offset": [
+          1,
+          -57
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_a_reflection",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_a_reflection",
+      "plannedCanonicalImageUuid": "2c21d356-cea0-4b0e-aa3f-ed45d317bb69",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_a_reflection"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_b_flame",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_b_flame.png",
+      "approvedSha256": "f82a400bdf54dc24bce625a4f0ee0ce241d158491d89aabedeab5d341d02999a",
+      "originImageUuid": "3020e970-da94-442e-abd9-bb693321fb8d",
+      "originFrameUuid": "3020e970-da94-442e-abd9-bb693321fb8d@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_b_flame.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_b_flame.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_b_flame/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          99,
+          88
+        ],
+        "sourceCropRect": [
+          31,
+          12,
+          130,
+          100
+        ],
+        "offset": [
+          0.5,
+          24
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_b_flame",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_b_flame",
+      "plannedCanonicalImageUuid": "3020e970-da94-442e-abd9-bb693321fb8d",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_b_flame"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_b_lotus",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_b_lotus.png",
+      "approvedSha256": "944d81f47e40ca91c9b9c789417504527703c0b0738ca19c241cd32dea4f46cb",
+      "originImageUuid": "f30cd138-ed4f-410b-a950-31e4734de9a0",
+      "originFrameUuid": "f30cd138-ed4f-410b-a950-31e4734de9a0@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_b_lotus.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_b_lotus.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_b_lotus/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          117,
+          28
+        ],
+        "sourceCropRect": [
+          22,
+          96,
+          139,
+          124
+        ],
+        "offset": [
+          0.5,
+          -30
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_b_lotus",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_b_lotus",
+      "plannedCanonicalImageUuid": "f30cd138-ed4f-410b-a950-31e4734de9a0",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_b_lotus"
+    },
+    {
+      "stableAssetId": "tex_sakura_rr_spirit_b_reflection",
+      "category": "NEW_BATCH",
+      "bundle": "world",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_sakura_rr_spirit_b_reflection.png",
+      "approvedSha256": "80903373438ce03cd1518bdf1e51f0f553bde7941da634b59c3db6be1c2e08f1",
+      "originImageUuid": "85a559a1-2904-41ec-81eb-bfe93f835dbc",
+      "originFrameUuid": "85a559a1-2904-41ec-81eb-bfe93f835dbc@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_spirit_b_reflection.png",
+      "plannedGeneratedPath": "bundles/world/sakura_v03/tex_sakura_rr_spirit_b_reflection.png",
+      "resourcePath": "sakura_v03/tex_sakura_rr_spirit_b_reflection/spriteFrame",
+      "frame": {
+        "originalSize": [
+          160,
+          160
+        ],
+        "rect": [
+          0,
+          0,
+          64,
+          31
+        ],
+        "sourceCropRect": [
+          48,
+          120,
+          112,
+          151
+        ],
+        "offset": [
+          0,
+          -55.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_sakura_rr_spirit_b_reflection",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_sakura_rr_spirit_b_reflection",
+      "plannedCanonicalImageUuid": "85a559a1-2904-41ec-81eb-bfe93f835dbc",
+      "canonicalImageAssetId": "tex_sakura_rr_spirit_b_reflection"
+    },
+    {
+      "stableAssetId": "U03_SHOP_01_BODY",
+      "category": "SAMPLING_REVISION",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_mt_shop_01_body.png",
+      "approvedSha256": "24aa31b7a7bc6a417e35664fc7779e1e4edb02b8c6c073e179c28e741b899888",
+      "originImageUuid": "42d58716-abd2-44dc-9d5f-21fdbf0e8b54",
+      "originFrameUuid": "42d58716-abd2-44dc-9d5f-21fdbf0e8b54@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+      "plannedGeneratedPath": "bundles/shops/milk_tea/textures/tex_mt_shop_01_body.png",
+      "resourcePath": "milk_tea/textures/tex_mt_shop_01_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          749,
+          624
+        ],
+        "sourceCropRect": [
+          137,
+          280,
+          886,
+          904
+        ],
+        "offset": [
+          -0.5,
+          -80
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "U03_SHOP_01_BODY",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "U03_SHOP_01_BODY",
+      "plannedCanonicalImageUuid": "42d58716-abd2-44dc-9d5f-21fdbf0e8b54",
+      "canonicalImageAssetId": "U03_SHOP_01_BODY"
+    },
+    {
+      "stableAssetId": "U03_SHOP_01_SIGN",
+      "category": "SAMPLING_REVISION",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_mt_shop_01_sign.png",
+      "approvedSha256": "b52d240224b2575d3f6bfb6583c0688e3eb8b46dc98177877be3deebf34010e4",
+      "originImageUuid": "1049a90a-94b5-4504-9126-db86129b9589",
+      "originFrameUuid": "1049a90a-94b5-4504-9126-db86129b9589@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/milk_tea/textures/tex_mt_shop_01_sign.png",
+      "plannedGeneratedPath": "bundles/shops/milk_tea/textures/tex_mt_shop_01_sign.png",
+      "resourcePath": "milk_tea/textures/tex_mt_shop_01_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          93,
+          200
+        ],
+        "sourceCropRect": [
+          783,
+          533,
+          876,
+          733
+        ],
+        "offset": [
+          317.5,
+          -121
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "U03_SHOP_01_SIGN",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "U03_SHOP_01_SIGN",
+      "plannedCanonicalImageUuid": "1049a90a-94b5-4504-9126-db86129b9589",
+      "canonicalImageAssetId": "U03_SHOP_01_SIGN"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_02_body",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_02_body.png",
+      "approvedSha256": "9e7dff43071f0502992c887334b4fb1913d5654d3cdedf0198e95c736181bb56",
+      "originImageUuid": "7f567b64-ae6d-4c06-a5f9-95423840cd82",
+      "originFrameUuid": "7f567b64-ae6d-4c06-a5f9-95423840cd82@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/sugar_art/textures/tex_u03_shop_02_body.png",
+      "plannedGeneratedPath": "bundles/shops/sugar_art/textures/tex_u03_shop_02_body.png",
+      "resourcePath": "sugar_art/textures/tex_u03_shop_02_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          623,
+          760
+        ],
+        "sourceCropRect": [
+          250,
+          144,
+          873,
+          904
+        ],
+        "offset": [
+          49.5,
+          -12
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_02_body",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_02_body",
+      "plannedCanonicalImageUuid": "7f567b64-ae6d-4c06-a5f9-95423840cd82",
+      "canonicalImageAssetId": "tex_u03_shop_02_body"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_02_sign",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_02_sign.png",
+      "approvedSha256": "e02e1d393cb34e982e25a81c56eb949064497f3b29221ea9a6962d4fdd816945",
+      "originImageUuid": "f64135f1-70e9-48ba-af5b-d0f914b4aeaf",
+      "originFrameUuid": "f64135f1-70e9-48ba-af5b-d0f914b4aeaf@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/sugar_art/textures/tex_u03_shop_02_sign.png",
+      "plannedGeneratedPath": "bundles/shops/sugar_art/textures/tex_u03_shop_02_sign.png",
+      "resourcePath": "sugar_art/textures/tex_u03_shop_02_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          172,
+          255
+        ],
+        "sourceCropRect": [
+          581,
+          648,
+          753,
+          903
+        ],
+        "offset": [
+          155,
+          -263.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_02_sign",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_02_sign",
+      "plannedCanonicalImageUuid": "f64135f1-70e9-48ba-af5b-d0f914b4aeaf",
+      "canonicalImageAssetId": "tex_u03_shop_02_sign"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_03_body",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_03_body.png",
+      "approvedSha256": "412175b36a756fe763460b480be0fc93d50956b218cae242466e1a5f38973d8e",
+      "originImageUuid": "7f097214-3a15-48d5-b472-f8d663e37a46",
+      "originFrameUuid": "7f097214-3a15-48d5-b472-f8d663e37a46@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/charcoal_grill/textures/tex_u03_shop_03_body.png",
+      "plannedGeneratedPath": "bundles/shops/charcoal_grill/textures/tex_u03_shop_03_body.png",
+      "resourcePath": "charcoal_grill/textures/tex_u03_shop_03_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          771,
+          760
+        ],
+        "sourceCropRect": [
+          145,
+          144,
+          916,
+          904
+        ],
+        "offset": [
+          18.5,
+          -12
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_03_body",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_03_body",
+      "plannedCanonicalImageUuid": "7f097214-3a15-48d5-b472-f8d663e37a46",
+      "canonicalImageAssetId": "tex_u03_shop_03_body"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_03_sign",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_03_sign.png",
+      "approvedSha256": "12f87f2d908b6b53da611f968ab5d25b72dfadc90f4771f6d27b7861b9ec9a23",
+      "originImageUuid": "6cab562e-4834-4aa5-aaf4-dc34b2332b46",
+      "originFrameUuid": "6cab562e-4834-4aa5-aaf4-dc34b2332b46@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/charcoal_grill/textures/tex_u03_shop_03_sign.png",
+      "plannedGeneratedPath": "bundles/shops/charcoal_grill/textures/tex_u03_shop_03_sign.png",
+      "resourcePath": "charcoal_grill/textures/tex_u03_shop_03_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          150,
+          290
+        ],
+        "sourceCropRect": [
+          83,
+          468,
+          233,
+          758
+        ],
+        "offset": [
+          -354,
+          -101
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_03_sign",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_03_sign",
+      "plannedCanonicalImageUuid": "6cab562e-4834-4aa5-aaf4-dc34b2332b46",
+      "canonicalImageAssetId": "tex_u03_shop_03_sign"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_04_body",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_04_body.png",
+      "approvedSha256": "c9d7fbd8adfdfff6dcc4a9bff3028b594d20ce0b740a4f806b7f11accff77150",
+      "originImageUuid": "7901e957-4351-4d0a-853e-ad38440da629",
+      "originFrameUuid": "7901e957-4351-4d0a-853e-ad38440da629@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/barber/textures/tex_u03_shop_04_body.png",
+      "plannedGeneratedPath": "bundles/shops/barber/textures/tex_u03_shop_04_body.png",
+      "resourcePath": "barber/textures/tex_u03_shop_04_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          720,
+          676
+        ],
+        "sourceCropRect": [
+          152,
+          228,
+          872,
+          904
+        ],
+        "offset": [
+          0,
+          -54
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_04_body",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_04_body",
+      "plannedCanonicalImageUuid": "7901e957-4351-4d0a-853e-ad38440da629",
+      "canonicalImageAssetId": "tex_u03_shop_04_body"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_04_sign",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_04_sign.png",
+      "approvedSha256": "ae717ad3a1c751166877926af24acb81c635a4a6d0fd8859296fc1277fc2206a",
+      "originImageUuid": "5dc373ee-63e4-4b2e-b9e1-47eb1f7b5090",
+      "originFrameUuid": "5dc373ee-63e4-4b2e-b9e1-47eb1f7b5090@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/barber/textures/tex_u03_shop_04_sign.png",
+      "plannedGeneratedPath": "bundles/shops/barber/textures/tex_u03_shop_04_sign.png",
+      "resourcePath": "barber/textures/tex_u03_shop_04_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          370,
+          170
+        ],
+        "sourceCropRect": [
+          333,
+          403,
+          703,
+          573
+        ],
+        "offset": [
+          6,
+          24
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_04_sign",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_04_sign",
+      "plannedCanonicalImageUuid": "5dc373ee-63e4-4b2e-b9e1-47eb1f7b5090",
+      "canonicalImageAssetId": "tex_u03_shop_04_sign"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_05_body",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png",
+      "approvedSha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+      "originImageUuid": "39974e01-9f8e-4eae-8d7b-768ff8f6b076",
+      "originFrameUuid": "39974e01-9f8e-4eae-8d7b-768ff8f6b076@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png",
+      "plannedGeneratedPath": "bundles/shops/lantern/textures/tex_u03_shop_05_body.png",
+      "resourcePath": "lantern/textures/tex_u03_shop_05_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          773,
+          741
+        ],
+        "sourceCropRect": [
+          130,
+          164,
+          903,
+          905
+        ],
+        "offset": [
+          4.5,
+          -22.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_05_body",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_05_body",
+      "plannedCanonicalImageUuid": "39974e01-9f8e-4eae-8d7b-768ff8f6b076",
+      "canonicalImageAssetId": "tex_u03_shop_05_body"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_05_sign",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_sign.png",
+      "approvedSha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+      "originImageUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "originFrameUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "plannedGeneratedPath": "bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "resourcePath": "lantern/textures/tex_u03_shop_05_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          375,
+          140
+        ],
+        "sourceCropRect": [
+          288,
+          243,
+          663,
+          383
+        ],
+        "offset": [
+          -36.5,
+          199
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_05_sign",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_05_sign",
+      "plannedCanonicalImageUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "canonicalImageAssetId": "tex_u03_shop_05_sign"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_06_body",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_06_body.png",
+      "approvedSha256": "512e203b477ee3ce3f29c9265a24c45ae903d344555327ace35ce28ef897bf54",
+      "originImageUuid": "1d7587b3-5af4-4d6e-b6b5-e486cb315c91",
+      "originFrameUuid": "1d7587b3-5af4-4d6e-b6b5-e486cb315c91@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/pitch_pot/textures/tex_u03_shop_06_body.png",
+      "plannedGeneratedPath": "bundles/shops/pitch_pot/textures/tex_u03_shop_06_body.png",
+      "resourcePath": "pitch_pot/textures/tex_u03_shop_06_body/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          761,
+          759
+        ],
+        "sourceCropRect": [
+          151,
+          145,
+          912,
+          904
+        ],
+        "offset": [
+          19.5,
+          -12.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_06_body",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_06_body",
+      "plannedCanonicalImageUuid": "1d7587b3-5af4-4d6e-b6b5-e486cb315c91",
+      "canonicalImageAssetId": "tex_u03_shop_06_body"
+    },
+    {
+      "stableAssetId": "tex_u03_shop_06_sign",
+      "category": "NEW_BATCH",
+      "bundle": "shops",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_06_sign.png",
+      "approvedSha256": "48625ea09e77b88a5dc6967e6211be5dd3e0e1edf46bc8b336b67c631df9433e",
+      "originImageUuid": "86d8f54c-48a6-47cd-a240-e2802ca127a9",
+      "originFrameUuid": "86d8f54c-48a6-47cd-a240-e2802ca127a9@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/shops/pitch_pot/textures/tex_u03_shop_06_sign.png",
+      "plannedGeneratedPath": "bundles/shops/pitch_pot/textures/tex_u03_shop_06_sign.png",
+      "resourcePath": "pitch_pot/textures/tex_u03_shop_06_sign/spriteFrame",
+      "frame": {
+        "originalSize": [
+          1024,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          153,
+          281
+        ],
+        "sourceCropRect": [
+          763,
+          338,
+          916,
+          619
+        ],
+        "offset": [
+          327.5,
+          33.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "tex_u03_shop_06_sign",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "tex_u03_shop_06_sign",
+      "plannedCanonicalImageUuid": "86d8f54c-48a6-47cd-a240-e2802ca127a9",
+      "canonicalImageAssetId": "tex_u03_shop_06_sign"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_00",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_00.png",
+      "approvedSha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+      "originImageUuid": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "originFrameUuid": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_00/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          367
+        ],
+        "sourceCropRect": [
+          90,
+          75,
+          417,
+          442
+        ],
+        "offset": [
+          -2.5,
+          -2.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_00",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_00",
+      "plannedCanonicalImageUuid": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_00"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_02",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_02.png",
+      "approvedSha256": "4ead93c2bdfe8e9093ed1628d5a4e96e559eee018a11dcac5153c2de5b972146",
+      "originImageUuid": "c29c59de-59e1-4942-9255-96e6ce6d979d",
+      "originFrameUuid": "c29c59de-59e1-4942-9255-96e6ce6d979d@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_02.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_02.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          314,
+          396
+        ],
+        "sourceCropRect": [
+          98,
+          46,
+          412,
+          442
+        ],
+        "offset": [
+          -1,
+          12
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_02",
+      "plannedCanonicalImageUuid": "c29c59de-59e1-4942-9255-96e6ce6d979d",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_02"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_04",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_04.png",
+      "approvedSha256": "5bee8d0c0110c6f15633a3236cd94a9f618a937e53b23a047443f60933dcc431",
+      "originImageUuid": "9d551bc3-176d-4cd4-abf3-db539ecbbe38",
+      "originFrameUuid": "9d551bc3-176d-4cd4-abf3-db539ecbbe38@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_04.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_04.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_04/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          322,
+          380
+        ],
+        "sourceCropRect": [
+          95,
+          28,
+          417,
+          408
+        ],
+        "offset": [
+          0,
+          38
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_04",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_04",
+      "plannedCanonicalImageUuid": "9d551bc3-176d-4cd4-abf3-db539ecbbe38",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_04"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_05",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_05.png",
+      "approvedSha256": "92d689b318af6083ba02316bb36c7742f8dcbb39dc23e7f4c304dd63424fc686",
+      "originImageUuid": "8f87d256-9982-4d39-9a05-6cecef2861a9",
+      "originFrameUuid": "8f87d256-9982-4d39-9a05-6cecef2861a9@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_05.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_05.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_05/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          325,
+          374
+        ],
+        "sourceCropRect": [
+          93,
+          38,
+          418,
+          412
+        ],
+        "offset": [
+          -0.5,
+          31
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_05",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_05",
+      "plannedCanonicalImageUuid": "8f87d256-9982-4d39-9a05-6cecef2861a9",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_05"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_06",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_06.png",
+      "approvedSha256": "3e7a874f9020fd4162756d37553f567f65cd214bd4f756004f93910b5e7abcee",
+      "originImageUuid": "39d507d7-12a4-43de-bab1-d0ed4bd3b630",
+      "originFrameUuid": "39d507d7-12a4-43de-bab1-d0ed4bd3b630@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_06.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_06.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_06/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          320,
+          384
+        ],
+        "sourceCropRect": [
+          95,
+          46,
+          415,
+          430
+        ],
+        "offset": [
+          -1,
+          18
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_06",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_06",
+      "plannedCanonicalImageUuid": "39d507d7-12a4-43de-bab1-d0ed4bd3b630",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_06"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_07",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_07.png",
+      "approvedSha256": "d676c12829fedbbe43bb06137b3ce89995617aa0e7b908712a30c486934c80df",
+      "originImageUuid": "d787e6cd-f651-4faf-8fe1-9225fbac48a3",
+      "originFrameUuid": "d787e6cd-f651-4faf-8fe1-9225fbac48a3@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_07.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_07.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_07/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          340,
+          344
+        ],
+        "sourceCropRect": [
+          84,
+          103,
+          424,
+          447
+        ],
+        "offset": [
+          -2,
+          -19
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_07",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_07",
+      "plannedCanonicalImageUuid": "d787e6cd-f651-4faf-8fe1-9225fbac48a3",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_07"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_08",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_08.png",
+      "approvedSha256": "e7a41c2e87e31c3e2926b45649d1338ba61aa34ee47cd7a4ea04bdd2a5f908a1",
+      "originImageUuid": "d06ea138-6f67-42fd-9241-4a799b970527",
+      "originFrameUuid": "d06ea138-6f67-42fd-9241-4a799b970527@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_08.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_08.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_08/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          331,
+          362
+        ],
+        "sourceCropRect": [
+          88,
+          82,
+          419,
+          444
+        ],
+        "offset": [
+          -2.5,
+          -7
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_08",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_08",
+      "plannedCanonicalImageUuid": "d06ea138-6f67-42fd-9241-4a799b970527",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_08"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_09",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_09.png",
+      "approvedSha256": "c67fedc5fffe3d45b72d603819c9e924729318935f26bce5fba99b3f160b788a",
+      "originImageUuid": "17c09814-d653-452e-a9d0-177321fee392",
+      "originFrameUuid": "17c09814-d653-452e-a9d0-177321fee392@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_09.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_09.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_09/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          370
+        ],
+        "sourceCropRect": [
+          90,
+          74,
+          417,
+          444
+        ],
+        "offset": [
+          -2.5,
+          -3
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_09",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_09",
+      "plannedCanonicalImageUuid": "17c09814-d653-452e-a9d0-177321fee392",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_09"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_01",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_01.png",
+      "approvedSha256": "1461c915e0a788d422edacf20439da54f139e94d536360c3875fd82a84d6da09",
+      "originImageUuid": "700ebf50-5a0f-4c41-868e-a5317685db6f",
+      "originFrameUuid": "700ebf50-5a0f-4c41-868e-a5317685db6f@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_01.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_01.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          325,
+          359
+        ],
+        "sourceCropRect": [
+          91,
+          68,
+          416,
+          427
+        ],
+        "offset": [
+          -2.5,
+          8.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_01",
+      "plannedCanonicalImageUuid": "700ebf50-5a0f-4c41-868e-a5317685db6f",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_01"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_02",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_02.png",
+      "approvedSha256": "dff2d47b0684ef45624b1e392436c13f48244759a2a8b375372f3e2ac550569d",
+      "originImageUuid": "dc9b1f93-3e14-4ad9-9401-9933e82680ed",
+      "originFrameUuid": "dc9b1f93-3e14-4ad9-9401-9933e82680ed@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_02.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_02.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          325,
+          359
+        ],
+        "sourceCropRect": [
+          91,
+          69,
+          416,
+          428
+        ],
+        "offset": [
+          -2.5,
+          7.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_02",
+      "plannedCanonicalImageUuid": "dc9b1f93-3e14-4ad9-9401-9933e82680ed",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_02"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_03",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_03.png",
+      "approvedSha256": "aed6abc489621a516ff533f0964530bf282d6fff55c248cec35abc1d7cec168d",
+      "originImageUuid": "23ef1e76-a087-408b-bc35-1fdb8b21fdc2",
+      "originFrameUuid": "23ef1e76-a087-408b-bc35-1fdb8b21fdc2@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_03.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_03.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          326,
+          363
+        ],
+        "sourceCropRect": [
+          90,
+          70,
+          416,
+          433
+        ],
+        "offset": [
+          -3,
+          4.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_03",
+      "plannedCanonicalImageUuid": "23ef1e76-a087-408b-bc35-1fdb8b21fdc2",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_03"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_04",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_04.png",
+      "approvedSha256": "a804d255f90ac8a1cc3743053e851bdee5decdb894e1bd21cbd190545a0bc218",
+      "originImageUuid": "903653b5-1712-4295-8490-6dd0fb973abf",
+      "originFrameUuid": "903653b5-1712-4295-8490-6dd0fb973abf@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_04.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_04.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_04/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          367
+        ],
+        "sourceCropRect": [
+          89,
+          69,
+          416,
+          436
+        ],
+        "offset": [
+          -3.5,
+          3.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_04",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_04",
+      "plannedCanonicalImageUuid": "903653b5-1712-4295-8490-6dd0fb973abf",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_04"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_05",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_05.png",
+      "approvedSha256": "3de9d5f60f10c3de1addbaf43a1671f93b4689e992bb10a386c604227fa37963",
+      "originImageUuid": "d21a1a1e-aacd-43b1-8ac0-4de386d1400e",
+      "originFrameUuid": "d21a1a1e-aacd-43b1-8ac0-4de386d1400e@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_05.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_05.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_05/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          330,
+          368
+        ],
+        "sourceCropRect": [
+          86,
+          68,
+          416,
+          436
+        ],
+        "offset": [
+          -5,
+          4
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_05",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_05",
+      "plannedCanonicalImageUuid": "d21a1a1e-aacd-43b1-8ac0-4de386d1400e",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_05"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_06",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_06.png",
+      "approvedSha256": "f2a797df8f738bc48de7c7b1ea6ca23b832460025c668513119d465011abf589",
+      "originImageUuid": "2d3d8d11-3aaa-4e24-a56c-48902ef7ceff",
+      "originFrameUuid": "2d3d8d11-3aaa-4e24-a56c-48902ef7ceff@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_06.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_06.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_06/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          365
+        ],
+        "sourceCropRect": [
+          84,
+          67,
+          416,
+          432
+        ],
+        "offset": [
+          -6,
+          6.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_06",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_06",
+      "plannedCanonicalImageUuid": "2d3d8d11-3aaa-4e24-a56c-48902ef7ceff",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_06"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_07",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_07.png",
+      "approvedSha256": "97b09cf8fffc76f78634a9b47575919a6f4e4ab2dde75c0841bd776872ef8d36",
+      "originImageUuid": "671e2e7a-304a-4144-9380-af5d1915de98",
+      "originFrameUuid": "671e2e7a-304a-4144-9380-af5d1915de98@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_07.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_07.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_07/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          363
+        ],
+        "sourceCropRect": [
+          84,
+          66,
+          416,
+          429
+        ],
+        "offset": [
+          -6,
+          8.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_07",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_07",
+      "plannedCanonicalImageUuid": "671e2e7a-304a-4144-9380-af5d1915de98",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_07"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_08",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_08.png",
+      "approvedSha256": "1bd4cd445ea56c0d42a487e6471396af56fc36fcfd73ae921bf3028a1e2fbf37",
+      "originImageUuid": "9e5306a5-4252-4e6f-b781-346ed7a5b3f5",
+      "originFrameUuid": "9e5306a5-4252-4e6f-b781-346ed7a5b3f5@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_08.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_08.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_08/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          362
+        ],
+        "sourceCropRect": [
+          84,
+          65,
+          416,
+          427
+        ],
+        "offset": [
+          -6,
+          10
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_08",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_08",
+      "plannedCanonicalImageUuid": "9e5306a5-4252-4e6f-b781-346ed7a5b3f5",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_08"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_09",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_run_09.png",
+      "approvedSha256": "892c504a46e0aa47babf115b2b7ce6bf21f38c5508e0f2dcd2ed5c279a176a4d",
+      "originImageUuid": "6e527c28-2ae1-4151-9e7e-fa5d898b2ff7",
+      "originFrameUuid": "6e527c28-2ae1-4151-9e7e-fa5d898b2ff7@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_09.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_09.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_09/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          330,
+          359
+        ],
+        "sourceCropRect": [
+          86,
+          66,
+          416,
+          425
+        ],
+        "offset": [
+          -5,
+          10.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_09",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_09",
+      "plannedCanonicalImageUuid": "6e527c28-2ae1-4151-9e7e-fa5d898b2ff7",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_09"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_00",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_00.png",
+      "approvedSha256": "b84e371221a9ffe8d2f25f48eecab16270e956190b5d60133bfd5c92eea964e3",
+      "originImageUuid": "4d3dcbf1-c2ca-4bae-9e83-86eff796d3ea",
+      "originFrameUuid": "4d3dcbf1-c2ca-4bae-9e83-86eff796d3ea@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_00.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_00.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_00/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          328,
+          350
+        ],
+        "sourceCropRect": [
+          90,
+          92,
+          418,
+          442
+        ],
+        "offset": [
+          -2,
+          -11
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_00",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_00",
+      "plannedCanonicalImageUuid": "4d3dcbf1-c2ca-4bae-9e83-86eff796d3ea",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_00"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_01",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_01.png",
+      "approvedSha256": "480dd66708b4b3a5fbc134d5c25c28e3bba35b9656412c6abbfa7321722c903c",
+      "originImageUuid": "3e995d94-0329-43a3-ab0d-696ecba2421e",
+      "originFrameUuid": "3e995d94-0329-43a3-ab0d-696ecba2421e@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_01.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_01.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          334,
+          346
+        ],
+        "sourceCropRect": [
+          89,
+          98,
+          423,
+          444
+        ],
+        "offset": [
+          0,
+          -15
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_01",
+      "plannedCanonicalImageUuid": "3e995d94-0329-43a3-ab0d-696ecba2421e",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_01"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_02",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_02.png",
+      "approvedSha256": "8d912287335a1182a32dad140ab932bf3de93b204aec4959963ed0bbc438f5b0",
+      "originImageUuid": "4d08b9e2-6d12-43c5-a135-4c237bbf342a",
+      "originFrameUuid": "4d08b9e2-6d12-43c5-a135-4c237bbf342a@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_02.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_02.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          343,
+          336
+        ],
+        "sourceCropRect": [
+          89,
+          110,
+          432,
+          446
+        ],
+        "offset": [
+          4.5,
+          -22
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_02",
+      "plannedCanonicalImageUuid": "4d08b9e2-6d12-43c5-a135-4c237bbf342a",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_02"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_03",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_03.png",
+      "approvedSha256": "7d7efa07a638176c5bc21068f7433642c260d8f54a866d151738d72048c15d36",
+      "originImageUuid": "437a2fe6-ccee-40f0-ba18-62afa48853ce",
+      "originFrameUuid": "437a2fe6-ccee-40f0-ba18-62afa48853ce@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_03.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_03.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          350,
+          326
+        ],
+        "sourceCropRect": [
+          89,
+          121,
+          439,
+          447
+        ],
+        "offset": [
+          8,
+          -28
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_03",
+      "plannedCanonicalImageUuid": "437a2fe6-ccee-40f0-ba18-62afa48853ce",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_03"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_07",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_07.png",
+      "approvedSha256": "37631caac2d4103d626f94cfe4c6fd3ccf14383c8407278444071892b9e11345",
+      "originImageUuid": "63c8093a-b93b-47e1-9ebd-60bdc00bd004",
+      "originFrameUuid": "63c8093a-b93b-47e1-9ebd-60bdc00bd004@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_07.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_07.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_07/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          350,
+          326
+        ],
+        "sourceCropRect": [
+          89,
+          121,
+          439,
+          447
+        ],
+        "offset": [
+          8,
+          -28
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_07",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_07",
+      "plannedCanonicalImageUuid": "63c8093a-b93b-47e1-9ebd-60bdc00bd004",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_07"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_08",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_08.png",
+      "approvedSha256": "cbd2b01c3355af9a350514eca69b58c04f6485bb9999dedb4121bb693eaa1240",
+      "originImageUuid": "94c9ea84-7e0f-4f30-a241-cfe0fecb124a",
+      "originFrameUuid": "94c9ea84-7e0f-4f30-a241-cfe0fecb124a@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_08.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_08.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_08/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          342,
+          336
+        ],
+        "sourceCropRect": [
+          89,
+          109,
+          431,
+          445
+        ],
+        "offset": [
+          4,
+          -21
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_08",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_08",
+      "plannedCanonicalImageUuid": "94c9ea84-7e0f-4f30-a241-cfe0fecb124a",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_08"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_09",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_sad_09.png",
+      "approvedSha256": "d1aadd74cc7b3170d551e15ba9b1e8f84a9f25f2c08f3943f5dac688ee732a9a",
+      "originImageUuid": "485d62ca-ad54-42d9-aeec-c6dd47906b6c",
+      "originFrameUuid": "485d62ca-ad54-42d9-aeec-c6dd47906b6c@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_09.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_09.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_09/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          333,
+          347
+        ],
+        "sourceCropRect": [
+          89,
+          96,
+          422,
+          443
+        ],
+        "offset": [
+          -0.5,
+          -13.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_09",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_09",
+      "plannedCanonicalImageUuid": "485d62ca-ad54-42d9-aeec-c6dd47906b6c",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_09"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_01",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_01.png",
+      "approvedSha256": "1461c915e0a788d422edacf20439da54f139e94d536360c3875fd82a84d6da09",
+      "originImageUuid": "235b904b-1438-48be-8d94-86920e746627",
+      "originFrameUuid": "235b904b-1438-48be-8d94-86920e746627@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_01.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_01.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          325,
+          359
+        ],
+        "sourceCropRect": [
+          91,
+          68,
+          416,
+          427
+        ],
+        "offset": [
+          -2.5,
+          8.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_01",
+      "plannedCanonicalImageUuid": "700ebf50-5a0f-4c41-868e-a5317685db6f",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_01"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_02",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_02.png",
+      "approvedSha256": "dff2d47b0684ef45624b1e392436c13f48244759a2a8b375372f3e2ac550569d",
+      "originImageUuid": "17403781-e304-48f3-aa9a-152dc7d9a205",
+      "originFrameUuid": "17403781-e304-48f3-aa9a-152dc7d9a205@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_02.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_02.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          325,
+          359
+        ],
+        "sourceCropRect": [
+          91,
+          69,
+          416,
+          428
+        ],
+        "offset": [
+          -2.5,
+          7.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_02",
+      "plannedCanonicalImageUuid": "dc9b1f93-3e14-4ad9-9401-9933e82680ed",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_02"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_03",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_03.png",
+      "approvedSha256": "aed6abc489621a516ff533f0964530bf282d6fff55c248cec35abc1d7cec168d",
+      "originImageUuid": "da6566ee-af6d-410e-82b5-0a15461e211c",
+      "originFrameUuid": "da6566ee-af6d-410e-82b5-0a15461e211c@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_03.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_03.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          326,
+          363
+        ],
+        "sourceCropRect": [
+          90,
+          70,
+          416,
+          433
+        ],
+        "offset": [
+          -3,
+          4.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_03",
+      "plannedCanonicalImageUuid": "23ef1e76-a087-408b-bc35-1fdb8b21fdc2",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_03"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_04",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_04.png",
+      "approvedSha256": "a804d255f90ac8a1cc3743053e851bdee5decdb894e1bd21cbd190545a0bc218",
+      "originImageUuid": "1c384962-1072-4c09-a08f-fbbf24c94fe8",
+      "originFrameUuid": "1c384962-1072-4c09-a08f-fbbf24c94fe8@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_04.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_04.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_04/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          367
+        ],
+        "sourceCropRect": [
+          89,
+          69,
+          416,
+          436
+        ],
+        "offset": [
+          -3.5,
+          3.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_04",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_04",
+      "plannedCanonicalImageUuid": "903653b5-1712-4295-8490-6dd0fb973abf",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_04"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_05",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_05.png",
+      "approvedSha256": "3de9d5f60f10c3de1addbaf43a1671f93b4689e992bb10a386c604227fa37963",
+      "originImageUuid": "0c80e506-10d6-4b43-bfbf-0943bdfe0313",
+      "originFrameUuid": "0c80e506-10d6-4b43-bfbf-0943bdfe0313@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_05.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_05.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_05/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          330,
+          368
+        ],
+        "sourceCropRect": [
+          86,
+          68,
+          416,
+          436
+        ],
+        "offset": [
+          -5,
+          4
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_05",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_05",
+      "plannedCanonicalImageUuid": "d21a1a1e-aacd-43b1-8ac0-4de386d1400e",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_05"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_06",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_06.png",
+      "approvedSha256": "f2a797df8f738bc48de7c7b1ea6ca23b832460025c668513119d465011abf589",
+      "originImageUuid": "e41498ea-1a72-42fa-9cd6-b81f6f39d44d",
+      "originFrameUuid": "e41498ea-1a72-42fa-9cd6-b81f6f39d44d@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_06.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_06.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_06/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          365
+        ],
+        "sourceCropRect": [
+          84,
+          67,
+          416,
+          432
+        ],
+        "offset": [
+          -6,
+          6.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_06",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_06",
+      "plannedCanonicalImageUuid": "2d3d8d11-3aaa-4e24-a56c-48902ef7ceff",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_06"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_07",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_07.png",
+      "approvedSha256": "97b09cf8fffc76f78634a9b47575919a6f4e4ab2dde75c0841bd776872ef8d36",
+      "originImageUuid": "09800c62-c816-444c-a9a8-19b44a55d360",
+      "originFrameUuid": "09800c62-c816-444c-a9a8-19b44a55d360@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_07.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_07.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_07/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          363
+        ],
+        "sourceCropRect": [
+          84,
+          66,
+          416,
+          429
+        ],
+        "offset": [
+          -6,
+          8.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_07",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_07",
+      "plannedCanonicalImageUuid": "671e2e7a-304a-4144-9380-af5d1915de98",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_07"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_08",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_08.png",
+      "approvedSha256": "1bd4cd445ea56c0d42a487e6471396af56fc36fcfd73ae921bf3028a1e2fbf37",
+      "originImageUuid": "08ec2a8a-30e5-4dfa-aef6-b89d643481a8",
+      "originFrameUuid": "08ec2a8a-30e5-4dfa-aef6-b89d643481a8@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_08.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_08.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_08/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          332,
+          362
+        ],
+        "sourceCropRect": [
+          84,
+          65,
+          416,
+          427
+        ],
+        "offset": [
+          -6,
+          10
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_08",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_08",
+      "plannedCanonicalImageUuid": "9e5306a5-4252-4e6f-b781-346ed7a5b3f5",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_08"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_09",
+      "category": "NEW_BATCH",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_walk_09.png",
+      "approvedSha256": "892c504a46e0aa47babf115b2b7ce6bf21f38c5508e0f2dcd2ed5c279a176a4d",
+      "originImageUuid": "99c788e9-c945-4f72-a60c-9fe9f65a9a44",
+      "originFrameUuid": "99c788e9-c945-4f72-a60c-9fe9f65a9a44@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_09.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_09.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_09/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          330,
+          359
+        ],
+        "sourceCropRect": [
+          86,
+          66,
+          416,
+          425
+        ],
+        "offset": [
+          -5,
+          10.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_09",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_09",
+      "plannedCanonicalImageUuid": "6e527c28-2ae1-4151-9e7e-fa5d898b2ff7",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_09"
+    },
+    {
+      "stableAssetId": "BTN_CONFIRM_TEXT",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/BTN_CONFIRM_TEXT.png",
+      "approvedSha256": "703c553b5d65101d06004d8a517315b1c5dd765c2981ef4d0cb252b433592327",
+      "originImageUuid": "6dd5b8be-fdda-4235-8d66-75f469bf73ed",
+      "originFrameUuid": "6dd5b8be-fdda-4235-8d66-75f469bf73ed@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/BTN_CONFIRM_TEXT.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/BTN_CONFIRM_TEXT.png",
+      "resourcePath": "u05_milk_tea/u05_b/BTN_CONFIRM_TEXT/spriteFrame",
+      "frame": {
+        "originalSize": [
+          236,
+          80
+        ],
+        "rect": [
+          0,
+          0,
+          83,
+          45
+        ],
+        "sourceCropRect": [
+          78,
+          18,
+          161,
+          63
+        ],
+        "offset": [
+          1.5,
+          -0.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "BTN_CONFIRM_TEXT",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "BTN_CONFIRM_TEXT",
+      "plannedCanonicalImageUuid": "6dd5b8be-fdda-4235-8d66-75f469bf73ed",
+      "canonicalImageAssetId": "BTN_CONFIRM_TEXT"
+    },
+    {
+      "stableAssetId": "CUP_MILK_M01",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_MILK_M01.png",
+      "approvedSha256": "ff8e26f9955a6e52f1dd9805c91b0f14511169b3907dfd92b3f7280d6f26ef58",
+      "originImageUuid": "2f77fe40-f372-4b76-9918-8210db13fe47",
+      "originFrameUuid": "2f77fe40-f372-4b76-9918-8210db13fe47@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_MILK_M01.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_MILK_M01.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_MILK_M01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          103,
+          124
+        ],
+        "sourceCropRect": [
+          43,
+          75,
+          146,
+          199
+        ],
+        "offset": [
+          3,
+          -20.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_MILK_M01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_MILK_M01",
+      "plannedCanonicalImageUuid": "2f77fe40-f372-4b76-9918-8210db13fe47",
+      "canonicalImageAssetId": "CUP_MILK_M01"
+    },
+    {
+      "stableAssetId": "CUP_MILK_M02",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_MILK_M02.png",
+      "approvedSha256": "0a92e87d5da3da931815d1916d6dde59046622a03d8329c6bed8f0ad625bfd2b",
+      "originImageUuid": "711255ea-aa58-4e61-8688-77fc73bac164",
+      "originFrameUuid": "711255ea-aa58-4e61-8688-77fc73bac164@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_MILK_M02.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_MILK_M02.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_MILK_M02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          85,
+          109
+        ],
+        "sourceCropRect": [
+          49,
+          89,
+          134,
+          198
+        ],
+        "offset": [
+          0,
+          -27
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_MILK_M02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_MILK_M02",
+      "plannedCanonicalImageUuid": "711255ea-aa58-4e61-8688-77fc73bac164",
+      "canonicalImageAssetId": "CUP_MILK_M02"
+    },
+    {
+      "stableAssetId": "CUP_MILK_M03",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_MILK_M03.png",
+      "approvedSha256": "5e7cb3c5ab8a4cb63f59cda3d2257a10c4b214de673c5db1180f2197f27da0e4",
+      "originImageUuid": "bd771fb3-77a5-4022-ab4c-d0d08a86a0ba",
+      "originFrameUuid": "bd771fb3-77a5-4022-ab4c-d0d08a86a0ba@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_MILK_M03.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_MILK_M03.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_MILK_M03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          105,
+          124
+        ],
+        "sourceCropRect": [
+          42,
+          85,
+          147,
+          209
+        ],
+        "offset": [
+          3,
+          -30.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_MILK_M03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_MILK_M03",
+      "plannedCanonicalImageUuid": "bd771fb3-77a5-4022-ab4c-d0d08a86a0ba",
+      "canonicalImageAssetId": "CUP_MILK_M03"
+    },
+    {
+      "stableAssetId": "CUP_TEA_T01",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TEA_T01.png",
+      "approvedSha256": "1071469c9906fb0f8caf3c86a44e21f941b6d65bd08200347c99a91995614773",
+      "originImageUuid": "edea07c7-7ff2-4fe6-8198-c767ec48a927",
+      "originFrameUuid": "edea07c7-7ff2-4fe6-8198-c767ec48a927@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TEA_T01.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TEA_T01.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TEA_T01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          117,
+          163
+        ],
+        "sourceCropRect": [
+          33,
+          59,
+          150,
+          222
+        ],
+        "offset": [
+          0,
+          -24
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TEA_T01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TEA_T01",
+      "plannedCanonicalImageUuid": "edea07c7-7ff2-4fe6-8198-c767ec48a927",
+      "canonicalImageAssetId": "CUP_TEA_T01"
+    },
+    {
+      "stableAssetId": "CUP_TEA_T02",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TEA_T02.png",
+      "approvedSha256": "09032805703ab460b058035eb42a739666f6db6eff86caaf7990586dd91363a6",
+      "originImageUuid": "28474978-1554-4626-a658-88936fd98ff0",
+      "originFrameUuid": "28474978-1554-4626-a658-88936fd98ff0@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TEA_T02.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TEA_T02.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TEA_T02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          117,
+          163
+        ],
+        "sourceCropRect": [
+          33,
+          59,
+          150,
+          222
+        ],
+        "offset": [
+          0,
+          -24
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TEA_T02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TEA_T02",
+      "plannedCanonicalImageUuid": "28474978-1554-4626-a658-88936fd98ff0",
+      "canonicalImageAssetId": "CUP_TEA_T02"
+    },
+    {
+      "stableAssetId": "CUP_TEA_T03",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TEA_T03.png",
+      "approvedSha256": "17e7fed8c031b1f5942c72406df6aeb78c57fde54e741bc0a19523b18e3aead0",
+      "originImageUuid": "a2996580-6c5a-44ce-b5a7-23aaaaa0284a",
+      "originFrameUuid": "a2996580-6c5a-44ce-b5a7-23aaaaa0284a@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TEA_T03.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TEA_T03.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TEA_T03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          117,
+          163
+        ],
+        "sourceCropRect": [
+          33,
+          59,
+          150,
+          222
+        ],
+        "offset": [
+          0,
+          -24
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TEA_T03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TEA_T03",
+      "plannedCanonicalImageUuid": "a2996580-6c5a-44ce-b5a7-23aaaaa0284a",
+      "canonicalImageAssetId": "CUP_TEA_T03"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P01",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P01.png",
+      "approvedSha256": "ec0d15c4d0dcd25b9a07157539313e3dce0e823224cbd44e21cfb410e32b17f8",
+      "originImageUuid": "62310f05-8069-4617-8624-4f2a7040ed4e",
+      "originFrameUuid": "62310f05-8069-4617-8624-4f2a7040ed4e@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P01.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P01.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          95,
+          39
+        ],
+        "sourceCropRect": [
+          44,
+          171,
+          139,
+          210
+        ],
+        "offset": [
+          0,
+          -74
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P01",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P01",
+      "plannedCanonicalImageUuid": "62310f05-8069-4617-8624-4f2a7040ed4e",
+      "canonicalImageAssetId": "CUP_TOP_P01"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P02",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P02.png",
+      "approvedSha256": "0e0ba5721f475daa5aac0fef7fe5dad651c4e84f477a651576ce0e7a30c96d8c",
+      "originImageUuid": "37fbefb4-4b23-4b6b-9074-34e2203329ef",
+      "originFrameUuid": "37fbefb4-4b23-4b6b-9074-34e2203329ef@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P02.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P02.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P02/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          95,
+          34
+        ],
+        "sourceCropRect": [
+          44,
+          171,
+          139,
+          205
+        ],
+        "offset": [
+          0,
+          -71.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P02",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P02",
+      "plannedCanonicalImageUuid": "37fbefb4-4b23-4b6b-9074-34e2203329ef",
+      "canonicalImageAssetId": "CUP_TOP_P02"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P03",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P03.png",
+      "approvedSha256": "a51030de9685591b82f43a4e2d4fadc533ef2ff052e6e9f57cddff11d7a1add5",
+      "originImageUuid": "2caf8984-5c08-4713-ac0c-ed55ed8dc128",
+      "originFrameUuid": "2caf8984-5c08-4713-ac0c-ed55ed8dc128@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P03.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P03.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          95,
+          30
+        ],
+        "sourceCropRect": [
+          44,
+          174,
+          139,
+          204
+        ],
+        "offset": [
+          0,
+          -72.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P03",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P03",
+      "plannedCanonicalImageUuid": "2caf8984-5c08-4713-ac0c-ed55ed8dc128",
+      "canonicalImageAssetId": "CUP_TOP_P03"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P04",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P04.png",
+      "approvedSha256": "b030f85a5329f5ba53abff56fa2a7fe2bda55d805de5fe7c8a4ba0b5379f839d",
+      "originImageUuid": "25c7afc2-0a6c-465c-a87f-ba2d6e5cd16e",
+      "originFrameUuid": "25c7afc2-0a6c-465c-a87f-ba2d6e5cd16e@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P04.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P04.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P04/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          96,
+          44
+        ],
+        "sourceCropRect": [
+          43,
+          169,
+          139,
+          213
+        ],
+        "offset": [
+          -0.5,
+          -74.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P04",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P04",
+      "plannedCanonicalImageUuid": "25c7afc2-0a6c-465c-a87f-ba2d6e5cd16e",
+      "canonicalImageAssetId": "CUP_TOP_P04"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P05",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P05.png",
+      "approvedSha256": "de624b8e3f1fe77ce4b233bffcf1a2295eb38b144375e0ce17d7131d7b1d65b7",
+      "originImageUuid": "f44f73c1-42d4-4baa-9e77-8ac95cb6aea1",
+      "originFrameUuid": "f44f73c1-42d4-4baa-9e77-8ac95cb6aea1@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P05.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P05.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P05/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          96,
+          38
+        ],
+        "sourceCropRect": [
+          43,
+          171,
+          139,
+          209
+        ],
+        "offset": [
+          -0.5,
+          -73.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P05",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P05",
+      "plannedCanonicalImageUuid": "f44f73c1-42d4-4baa-9e77-8ac95cb6aea1",
+      "canonicalImageAssetId": "CUP_TOP_P05"
+    },
+    {
+      "stableAssetId": "CUP_TOP_P06",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/CUP_TOP_P06.png",
+      "approvedSha256": "a928d52785b576eeeafa9e0e6aa05c9ab0312fd464695f35a8da32d76d2688b0",
+      "originImageUuid": "613c17a6-f96b-4a86-8b09-7122af6f9d0f",
+      "originFrameUuid": "613c17a6-f96b-4a86-8b09-7122af6f9d0f@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/CUP_TOP_P06.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/CUP_TOP_P06.png",
+      "resourcePath": "u05_milk_tea/u05_b/CUP_TOP_P06/spriteFrame",
+      "frame": {
+        "originalSize": [
+          183,
+          233
+        ],
+        "rect": [
+          0,
+          0,
+          96,
+          40
+        ],
+        "sourceCropRect": [
+          43,
+          169,
+          139,
+          209
+        ],
+        "offset": [
+          -0.5,
+          -72.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "CUP_TOP_P06",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "CUP_TOP_P06",
+      "plannedCanonicalImageUuid": "613c17a6-f96b-4a86-8b09-7122af6f9d0f",
+      "canonicalImageAssetId": "CUP_TOP_P06"
+    },
+    {
+      "stableAssetId": "LOCK_MILK",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/LOCK_MILK.png",
+      "approvedSha256": "836f88ee0410426470a8b431a26368fa6380872ba798003aba5668f89d6a070b",
+      "originImageUuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb",
+      "originFrameUuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_MILK.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/LOCK_MILK.png",
+      "resourcePath": "u05_milk_tea/u05_b/LOCK_MILK/spriteFrame",
+      "frame": {
+        "originalSize": [
+          142,
+          183
+        ],
+        "rect": [
+          0,
+          0,
+          136,
+          177
+        ],
+        "sourceCropRect": [
+          3,
+          3,
+          139,
+          180
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "LOCK_MILK",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "LOCK_MILK",
+      "plannedCanonicalImageUuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb",
+      "canonicalImageAssetId": "LOCK_MILK"
+    },
+    {
+      "stableAssetId": "LOCK_TEA",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/LOCK_TEA.png",
+      "approvedSha256": "1ffbe980a58f5fe3150e5fb34440b7723f2d7a51e94192ff54c6c45feebe863a",
+      "originImageUuid": "0557f56a-4162-4d67-a726-7a36f66e9f85",
+      "originFrameUuid": "0557f56a-4162-4d67-a726-7a36f66e9f85@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TEA.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/LOCK_TEA.png",
+      "resourcePath": "u05_milk_tea/u05_b/LOCK_TEA/spriteFrame",
+      "frame": {
+        "originalSize": [
+          163,
+          183
+        ],
+        "rect": [
+          0,
+          0,
+          157,
+          177
+        ],
+        "sourceCropRect": [
+          3,
+          3,
+          160,
+          180
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "LOCK_TEA",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "LOCK_TEA",
+      "plannedCanonicalImageUuid": "0557f56a-4162-4d67-a726-7a36f66e9f85",
+      "canonicalImageAssetId": "LOCK_TEA"
+    },
+    {
+      "stableAssetId": "LOCK_TOP",
+      "category": "NEW_BATCH",
+      "bundle": "milk-tea",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/LOCK_TOP.png",
+      "approvedSha256": "9cbecec62b1fe9c735fe5177eedb4234f42f55e67adbe2e1ee2121168ded6ef9",
+      "originImageUuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1",
+      "originFrameUuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TOP.png",
+      "plannedGeneratedPath": "bundles/milk_tea/u05_milk_tea/u05_b/LOCK_TOP.png",
+      "resourcePath": "u05_milk_tea/u05_b/LOCK_TOP/spriteFrame",
+      "frame": {
+        "originalSize": [
+          168,
+          121
+        ],
+        "rect": [
+          0,
+          0,
+          162,
+          115
+        ],
+        "sourceCropRect": [
+          3,
+          3,
+          165,
+          118
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "LOCK_TOP",
+      "sourceState": "APPROVED_V02_NOT_IMPORTED",
+      "sourceAssetId": "LOCK_TOP",
+      "plannedCanonicalImageUuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1",
+      "canonicalImageAssetId": "LOCK_TOP"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_01",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_01.png",
+      "approvedSha256": "a8bdb2593d2ac750711b3261dc1dada06d6f964d74fc21681c583f0a382d7da8",
+      "originImageUuid": "0f530afa-fd8e-4b4e-ab34-38642f9b8223",
+      "originFrameUuid": "0f530afa-fd8e-4b4e-ab34-38642f9b8223@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_01.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_01.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_01/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          343,
+          338
+        ],
+        "sourceCropRect": [
+          82,
+          110,
+          425,
+          448
+        ],
+        "offset": [
+          -2.5,
+          -23
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_01",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_01",
+      "plannedCanonicalImageUuid": "0f530afa-fd8e-4b4e-ab34-38642f9b8223",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_01"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_HAPPY_03",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_happy_03.png",
+      "approvedSha256": "17682edcc74024e87f1fb0437f4c12ac8301975d5565f7423e88477ca2e9c135",
+      "originImageUuid": "43bf88bc-e1bc-438b-921e-d2958f010f7f",
+      "originFrameUuid": "43bf88bc-e1bc-438b-921e-d2958f010f7f@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_03.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_03.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_happy_03/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          315,
+          395
+        ],
+        "sourceCropRect": [
+          98,
+          23,
+          413,
+          418
+        ],
+        "offset": [
+          -0.5,
+          35.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_HAPPY_03",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_HAPPY_03",
+      "plannedCanonicalImageUuid": "43bf88bc-e1bc-438b-921e-d2958f010f7f",
+      "canonicalImageAssetId": "UG_GHOST_01_HAPPY_03"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_RUN_00",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_run_00.png",
+      "approvedSha256": "f5fce66eb9f7fdc59535a5a7fb03d8c28689d5cf0c3e9aece9024831d4e8539a",
+      "originImageUuid": "eb43fddf-7b13-4969-807a-ed9fd595df29",
+      "originFrameUuid": "eb43fddf-7b13-4969-807a-ed9fd595df29@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_run_00.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_00.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_00/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          359
+        ],
+        "sourceCropRect": [
+          89,
+          67,
+          416,
+          426
+        ],
+        "offset": [
+          -3.5,
+          9.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_RUN_00",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_RUN_00",
+      "plannedCanonicalImageUuid": "eb43fddf-7b13-4969-807a-ed9fd595df29",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_00"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_04",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_04.png",
+      "approvedSha256": "b4a003ddb3f317fba9e9415a205d90f8207b5ab824f8f97fb288edd737659458",
+      "originImageUuid": "9c60a0cf-e5eb-43f8-8bd8-889749e2adb9",
+      "originFrameUuid": "9c60a0cf-e5eb-43f8-8bd8-889749e2adb9@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_04.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_04.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_04/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          354,
+          322
+        ],
+        "sourceCropRect": [
+          89,
+          126,
+          443,
+          448
+        ],
+        "offset": [
+          10,
+          -31
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_04",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_04",
+      "plannedCanonicalImageUuid": "9c60a0cf-e5eb-43f8-8bd8-889749e2adb9",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_04"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_05",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_05.png",
+      "approvedSha256": "6ccda94f92dd4efada98e30a781dea3de2de9461938f5a0f1f5da962d333e522",
+      "originImageUuid": "630853ea-0f85-4620-a8b4-4f938d91c6cc",
+      "originFrameUuid": "630853ea-0f85-4620-a8b4-4f938d91c6cc@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_05.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_05.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_05/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          355,
+          321
+        ],
+        "sourceCropRect": [
+          89,
+          127,
+          444,
+          448
+        ],
+        "offset": [
+          10.5,
+          -31.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_05",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_05",
+      "plannedCanonicalImageUuid": "630853ea-0f85-4620-a8b4-4f938d91c6cc",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_05"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_SAD_06",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_sad_06.png",
+      "approvedSha256": "8b64b104f99d7886cb15c22ceaccbb389bef5c68c9f8f580568abd1bea0e7fe3",
+      "originImageUuid": "5c0c4c73-052e-478b-b0bf-9354680ef06f",
+      "originFrameUuid": "5c0c4c73-052e-478b-b0bf-9354680ef06f@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_sad_06.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_sad_06.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_sad_06/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          354,
+          323
+        ],
+        "sourceCropRect": [
+          89,
+          125,
+          443,
+          448
+        ],
+        "offset": [
+          10,
+          -30.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_SAD_06",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_SAD_06",
+      "plannedCanonicalImageUuid": "5c0c4c73-052e-478b-b0bf-9354680ef06f",
+      "canonicalImageAssetId": "UG_GHOST_01_SAD_06"
+    },
+    {
+      "stableAssetId": "UG_GHOST_01_WALK_00",
+      "category": "APPROVED_PILOT_REUSE",
+      "bundle": "tourist",
+      "approvedExport": "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/exports/tex_ug_ghost_01_walk_00.png",
+      "approvedSha256": "f5fce66eb9f7fdc59535a5a7fb03d8c28689d5cf0c3e9aece9024831d4e8539a",
+      "originImageUuid": "413f37b4-9a83-4d77-8fe7-7853fa1335ef",
+      "originFrameUuid": "413f37b4-9a83-4d77-8fe7-7853fa1335ef@f9941",
+      "importedImageUuid": null,
+      "importedFrameUuid": null,
+      "originalClientPath": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_walk_00.png",
+      "plannedGeneratedPath": "bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_run_00.png",
+      "resourcePath": "ghost-customer/frames/tex_ug_ghost_01_run_00/spriteFrame",
+      "frame": {
+        "originalSize": [
+          512,
+          512
+        ],
+        "rect": [
+          0,
+          0,
+          327,
+          359
+        ],
+        "sourceCropRect": [
+          89,
+          67,
+          416,
+          426
+        ],
+        "offset": [
+          -3.5,
+          9.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "rotated": false
+      },
+      "logicalFrameId": "UG_GHOST_01_WALK_00",
+      "sourceState": "APPROVED_PILOT_NOT_IMPORTED",
+      "sourceAssetId": "UG_GHOST_01_WALK_00",
+      "plannedCanonicalImageUuid": "eb43fddf-7b13-4969-807a-ed9fd595df29",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_00"
+    }
+  ],
+  "aliases": [
+    {
+      "sha256": "1461c915e0a788d422edacf20439da54f139e94d536360c3875fd82a84d6da09",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_01",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_01",
+        "UG_GHOST_01_WALK_01"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "dff2d47b0684ef45624b1e392436c13f48244759a2a8b375372f3e2ac550569d",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_02",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_02",
+        "UG_GHOST_01_WALK_02"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "aed6abc489621a516ff533f0964530bf282d6fff55c248cec35abc1d7cec168d",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_03",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_03",
+        "UG_GHOST_01_WALK_03"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "a804d255f90ac8a1cc3743053e851bdee5decdb894e1bd21cbd190545a0bc218",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_04",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_04",
+        "UG_GHOST_01_WALK_04"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "3de9d5f60f10c3de1addbaf43a1671f93b4689e992bb10a386c604227fa37963",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_05",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_05",
+        "UG_GHOST_01_WALK_05"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "f2a797df8f738bc48de7c7b1ea6ca23b832460025c668513119d465011abf589",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_06",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_06",
+        "UG_GHOST_01_WALK_06"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "97b09cf8fffc76f78634a9b47575919a6f4e4ab2dde75c0841bd776872ef8d36",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_07",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_07",
+        "UG_GHOST_01_WALK_07"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "1bd4cd445ea56c0d42a487e6471396af56fc36fcfd73ae921bf3028a1e2fbf37",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_08",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_08",
+        "UG_GHOST_01_WALK_08"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "892c504a46e0aa47babf115b2b7ce6bf21f38c5508e0f2dcd2ed5c279a176a4d",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_09",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_09",
+        "UG_GHOST_01_WALK_09"
+      ],
+      "shareImageOnly": true
+    },
+    {
+      "sha256": "f5fce66eb9f7fdc59535a5a7fb03d8c28689d5cf0c3e9aece9024831d4e8539a",
+      "canonicalImageAssetId": "UG_GHOST_01_RUN_00",
+      "logicalAssetIds": [
+        "UG_GHOST_01_RUN_00",
+        "UG_GHOST_01_WALK_00"
+      ],
+      "shareImageOnly": true
+    }
+  ]
+}

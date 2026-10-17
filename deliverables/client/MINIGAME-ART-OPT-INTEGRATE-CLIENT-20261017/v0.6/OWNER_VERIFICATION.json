@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.6",
+  "scope": "Client Owner负责stage验证；最终CLI与部分IAB实际烟测由Root完成。",
+  "checks": [
+    {
+      "name": "已冻结源码与明确手势覆盖",
+      "result": "PASS",
+      "evidence": "Staging manifest 201afbc1c2882abc73cdf11b874b6224ebc114ece585c99ec11e35e90e83c26f 绑定711项冻结输入及批准的Gallery/U01源码哈希。"
+    },
+    {
+      "name": "生产manifest到staging路径覆盖",
+      "result": "PASS",
+      "evidence": "asset_integration.test.cjs 通过：419个生产路径覆盖五个Bundle根。"
+    },
+    {
+      "name": "Staging生成与资源集成检查",
+      "result": "PASS",
+      "evidence": "83条资源记录、派生帧几何、租约共享/释放、源文件不变性及错误哈希拒绝检查均通过。"
+    },
+    {
+      "name": "三平台最终Creator CLI构建",
+      "result": "PASS",
+      "evidence": "Web 36+Finished（11秒）、微信36+Finished（9秒）、抖音36+Finished（9秒）；日志和最终配置哈希见evidence/。"
+    },
+    {
+      "name": "小游戏分包和物理文件清单",
+      "result": "PASS",
+      "evidence": "微信与抖音game.json均列八个分包根；2,447个输出文件均有单文件SHA-256。物理字节不代表上传配额。"
+    },
+    {
+      "name": "320×568菜单拖动与滚轮",
+      "result": "PASS",
+      "evidence": "Root确认上拖到底、下拖返回顶部、滚轮到底且拖动不误触菜单项；截图hash记录在evidence/GESTURE_SMOKE_RESULTS.json。"
+    },
+    {
+      "name": "小屏进入U05并提交配方",
+      "result": "PASS",
+      "evidence": "Root确认从小屏菜单进入U05并正确提交至订单2/3；截图引用见evidence/GESTURE_SMOKE_RESULTS.json。"
+    },
+    {
+      "name": "其他手势、完整退出/释放循环及完整矩阵",
+      "result": "NOT_TESTED",
+      "evidence": "Root仍继续这些实际运行检查，不能由菜单/U05部分烟测推断完成。"
+    },
+    {
+      "name": "v0.5历史生命周期循环",
+      "result": "PASS",
+      "evidence": "v0.5存档证据记录20/20退出计数归零且无warn/error；仅作历史记录，不是v0.6当前版本证明。"
+    }
+  ]
+}

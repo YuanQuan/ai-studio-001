@@ -1,0 +1,50 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.3",
+  "owner": "client",
+  "summary": "修复生产ES5转译下Set/Map spread相关的模块取消/计数、派生释放和U05代理组遗漏；保留v0.2运行失败证据，Root正在执行v0.3实际Web验证。微信真实subpackage待Tech修正bundle meta序列化并重构建。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/DELIVERABLE.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/OWNER_SOURCE_OVERRIDES.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+      "result": "PASS",
+      "evidence": "沿用Brief v0.1及Tech对齐；同一Client阶段实现。"
+    },
+    {
+      "criterion": "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+      "result": "NOT_TESTED",
+      "evidence": "83 source/geometry测试PASS；Creator导入UUID及真实画面等待Root当前构建。"
+    },
+    {
+      "criterion": "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+      "result": "PARTIAL",
+      "evidence": "staging和本地Bundle根已生成；v0.2真实微信构建未输出目标subpackage，v0.3须再次审计game.json及各模块分包。"
+    },
+    {
+      "criterion": "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "ES5 lowering模拟检查通过；Root正在进行v0.3实编译/运行，20轮和视觉未测。"
+    },
+    {
+      "criterion": "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。",
+      "result": "NOT_TESTED",
+      "evidence": "源输入、UUID与配置可追溯；Creator实际UUID/压缩物理包体及收益待实际输出。"
+    }
+  ],
+  "risks": [
+    "v0.2实际Web页面失败；v0.3由Root在运行验证。",
+    "v0.2微信CLI退出成功但没有生成小游戏subpackage；新候选尚未证明实际分包。",
+    "Creator导入/发布体积/页面循环和GPU证据仍不完整。"
+  ],
+  "status": "REVISION"
+}

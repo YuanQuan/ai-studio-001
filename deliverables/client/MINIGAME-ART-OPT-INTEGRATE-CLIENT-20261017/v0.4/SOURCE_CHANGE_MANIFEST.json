@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.4",
+  "baseFreeze": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+    "sha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+    "fileCount": 711
+  },
+  "readerAddendumSha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68",
+  "ownerSourceOverrides": {
+    "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/OWNER_SOURCE_OVERRIDES.json",
+    "sha256": "8be3a0c5cf25c08277d5ee7e690b0100751895a6a91dd1858b497c2a4f1a1a62"
+  },
+  "authorizedFrozenInputRecovery": {
+    "authorization": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/PROFILE_RECOVERY_AUTHORIZATION.json",
+    "authorizationSha256": "83fc7a29266755ac15987053953a7aca15ecacc88e2c2320ba6b49e6ef7bfbe4",
+    "files": [
+      {
+        "path": "apps/client/profiles/v2/packages/reference-image.json",
+        "liveSha256AtGeneration": "2f648e7a580b19c9adf2afd466909eec078e9ce121019226545bbebc1741fed4",
+        "snapshot": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/reference-image.json",
+        "stagedSha256": "b43f39e5f12e2e81dc3260076aec1ea2deba26bafb8ac14a720107b1c5353316"
+      },
+      {
+        "path": "apps/client/profiles/v2/packages/scene.json",
+        "liveSha256AtGeneration": "892d75df83b27f583a78d1829c50a1727200bac3f6ee22f7964d7bd26e3008d2",
+        "snapshot": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/scene.json",
+        "stagedSha256": "1abdb324d367ea78ca670d1c8e648ddedea7d70f9d0c97392655bc4ed13bb7b2"
+      }
+    ]
+  },
+  "nativeBundleSettingsInput": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/editor-bundle-probe/CREATOR_EXPORTED_BUILDER_SETTINGS.json",
+    "sha256": "252823ccfc1ddc591d264b636ca7da33be088bf181769bb918969708325c89c9",
+    "transform": "merge only Creator-exported bundleConfig into generated settings/v2/packages/builder.json; source project settings untouched"
+  },
+  "codeChanges": [
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "sha256": "5fcdc784b4fd0f03a2bcafd594a93bb8df700318e767ffb487d7802c9b354e3f",
+      "change": "Merge extra entries from filtered approvedProduction; retire far_l and STATIC_BARE; retain LOCK_MILK/LOCK_TEA/LOCK_TOP."
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/module_assets.ts",
+      "sha256": "08776264692d93888212a57340118de511e9bc5faeb593bd265fc83797bf8641",
+      "change": "Materialize Map/Set iterables with Array.from for Creator legacy transpilation."
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "sha256": "71c0f9c220ec88305ca1e222380d8e984a8d3135b7ae0ff3f1d71aa2387adb8c",
+      "change": "Use Array.from for active Set cleanup."
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "sha256": "c31383a69473e53bbd3e6901f19a17d530553fed5d1cea62afe5d21dd05862f2",
+      "change": "Use Array.from to preserve proxy conflict groups after Creator transpilation."
+    },
+    {
+      "path": "apps/client/tools/asset-integration/build_staging.cjs",
+      "sha256": "0fb6d311d969ec67ed180b7f8bca1d16430d9106b8409c2125bffcb73f74581f",
+      "change": "Generate explicit local Bundle staging, recover only authorized frozen profiles, merge Creator-exported mini-game settings, and audit physical outputs."
+    },
+    {
+      "path": "tests/client/asset-integration/asset_integration.test.cjs",
+      "sha256": "47706e2bd33997194678932034caa40f3c987116a8293e361c9ef688ef066208",
+      "change": "Execute production manifest and iterable regression checks; validate every manifest descriptor against generated assets and all configured bundle roots."
+    }
+  ],
+  "historicalFailureEvidence": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v03/u00-missing-retired-path.jpg",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v03/CONSOLE-pre-fix.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.20/MANIFEST_AUDIT.json"
+  ],
+  "generatedStage": "/private/tmp/minigame-art-opt-integration-staging-v0.4d",
+  "generatedManifestSha256": "ca8d32769cfa2bf9a5b5eb3461b49b774f9dc3143133db65e88e756ae2368ff8"
+}

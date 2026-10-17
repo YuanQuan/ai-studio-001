@@ -1,0 +1,31 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "version": "v0.3",
+  "scope": "修复主 Client v0.7 320x568 页面运行中代理分类 TypeError，以及 BMFont 缺字图标文本；保持 U05 v0.2 已通过的四项专业审查范围。",
+  "lineage": [
+    {"stage": "v0.2 Owner source freeze; v0.2 artifacts and Tech v0.6 approval remain preserved", "sha256": "6acf1f15946fba1d863be26b6b0618d3430e9c9438e205bc3b47f315445d0a29", "evidence": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/SOURCE_CHANGE_MANIFEST.json"},
+    {"stage": "v0.3 repaired source", "path": "apps/client/assets/labs/u05/milk_tea_lab.ts", "sha256": "159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726"}
+  ],
+  "changed_files": [
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "sha256": "159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726",
+      "changes": "applyProxyGroups now type-checks unknown IDs; numeric/unknown IDs fail closed to one operation panel containing all gameplay groups, and HUD conflict filtering is type-safe. Replaced BMFont-uncovered check/arrows with covered Chinese labels 已选/上/下."
+    }
+  ],
+  "unchanged_u05_files": [
+    {"path": "apps/client/assets/labs/u05/u05_accessibility.ts", "sha256": "15e0b7b81b37bf078f25c065684b7456ee45bc202faf24b588ca1c56de49a0f7"},
+    {"path": "apps/client/assets/labs/u05/u05_accessibility.ts.meta", "sha256": "6b80533172db008fc4b1ed5ad9d45e09bb090973b98f38e0d202f42878d59c81", "uuid": "9a868daf-9e47-43ca-a0e7-8d127b9c1a65", "creator_import_verified": false},
+    {"path": "apps/client/assets/labs/u05/milk_tea_state.ts", "modified": false},
+    {"path": "apps/client/assets/labs/u05/u05_interaction_presentation.ts", "modified": false}
+  ],
+  "historical_failure_evidence_preserved": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/CONSOLE.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/U05_STARTED_320x568.jpg"
+  ],
+  "review_evidence": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.6/U05_CODE_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.6/U05_REVIEW_IDENTITY.json"
+  ],
+  "no_png_meta_existing_identity_state_presentation_gallery_framework_scene_prefab_edits": true
+}

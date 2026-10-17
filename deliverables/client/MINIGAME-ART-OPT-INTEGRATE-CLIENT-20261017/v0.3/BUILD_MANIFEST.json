@@ -1,0 +1,141 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.3",
+  "status": "ROOT_WEB_BUILD_IN_PROGRESS_NATIVE_SUBPACKAGE_UNVERIFIED",
+  "stageRoot": "/private/tmp/minigame-art-opt-integration-staging-v0.3c",
+  "reproduce": [
+    "node apps/client/tools/asset-integration/build_staging.cjs <empty-stage-root> deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/OWNER_SOURCE_OVERRIDES.json",
+    "node apps/client/tools/asset-integration/generate_build_configs.cjs <stage-root>",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <stage-root> --build 'configPath=<stage-root>/build-configs/web-mobile.json;platform=web-mobile'",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <stage-root> --build 'configPath=<stage-root>/build-configs/wechatgame.json;platform=wechatgame'",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <stage-root> --build 'configPath=<stage-root>/build-configs/bytedance-mini-game.json;platform=bytedance-mini-game'"
+  ],
+  "scene": {
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+    "onlyScene": true
+  },
+  "configs": [
+    {
+      "platform": "web-mobile",
+      "configPath": "build-configs/web-mobile.json",
+      "sha256": "bad8434ba68ab5d5ff7afafb3f6422f8c6d6a172f774c4ff4876bddff0eeb77b",
+      "mainBundleCompressionType": "merge_dep",
+      "bundleRoots": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        }
+      ]
+    },
+    {
+      "platform": "wechatgame",
+      "configPath": "build-configs/wechatgame.json",
+      "sha256": "3f06bc398e1a5aff478e5cc8baeeaa02f0107f830a6877dd201477f58c97747d",
+      "mainBundleCompressionType": "subpackage",
+      "bundleRoots": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "subpackage",
+          "isRemote": false
+        }
+      ]
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "configPath": "build-configs/bytedance-mini-game.json",
+      "sha256": "4dc193717c3ca31f7b4c0746e264c4478940abf61e82a9c27dc3a1ee9aea55fd",
+      "mainBundleCompressionType": "subpackage",
+      "bundleRoots": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "subpackage",
+          "isRemote": false
+        }
+      ]
+    }
+  ],
+  "v0_2FailureEvidence": {
+    "browserArtifacts": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/",
+    "buildArtifacts": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-integration-v02/",
+    "compiledWebBundle": "/private/tmp/minigame-art-opt-integration-final-v0.2/build-output/minigame-art-opt-integration-final-v0.2-web-mobile/assets/main/index.js",
+    "summary": "Creator CLI exited 36 and Finished for Web/WeChat, but Web business flow failed on Set spread transpilation; WeChat output had only internal/main in game.json and five configured modules were not emitted as true subpackages."
+  },
+  "v0_3Runtime": "Root Web build/runtime in progress; no result claimed yet.",
+  "nativeSubpackage": "NOT_TESTED until actual game.json/subpackages/<module>.json output is present; v0.2 output failed this criterion."
+}

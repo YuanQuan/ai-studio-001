@@ -1,0 +1,43 @@
+{
+    "deviceOrientation": "portrait",
+    "networkTimeout": {
+        "request": 5000,
+        "connectSocket": 5000,
+        "uploadFile": 5000,
+        "downloadFile": 500000
+    },
+    "subpackages": [
+        {
+            "name": "internal",
+            "root": "subpackages/internal/"
+        },
+        {
+            "name": "resources",
+            "root": "subpackages/resources/"
+        },
+        {
+            "name": "main",
+            "root": "subpackages/main/"
+        },
+        {
+            "name": "dialogue",
+            "root": "subpackages/dialogue/"
+        },
+        {
+            "name": "milk-tea",
+            "root": "subpackages/milk-tea/"
+        },
+        {
+            "name": "shops",
+            "root": "subpackages/shops/"
+        },
+        {
+            "name": "tourist",
+            "root": "subpackages/tourist/"
+        },
+        {
+            "name": "world",
+            "root": "subpackages/world/"
+        }
+    ]
+}

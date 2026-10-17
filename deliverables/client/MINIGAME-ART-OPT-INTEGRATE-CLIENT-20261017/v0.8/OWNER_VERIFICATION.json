@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.8",
+  "scope": "Portable staging utility delta only. Runtime source, assets, Scene and UI are unchanged from the v0.7-u01fix candidate. Root owns Creator final build; Tech owns independent output/script equivalence review.",
+  "checks": [
+    {
+      "name": "Portable clean-like staging and authorized recovery",
+      "result": "PASS",
+      "evidence": "evidence/PORTABLE_INPUT_RECOVERY_TEST.json: 9 .DS_Store and 13 profiles excluded; four exact snapshots recovered; remaining frozen inputs strict."
+    },
+    {
+      "name": "Unauthorized frozen-source drift rejection",
+      "result": "PASS",
+      "evidence": "evidence/PORTABLE_INPUT_RECOVERY_TEST.json mutates tex_sakura_rr_far_l.png in temporary tree and confirms rejection."
+    },
+    {
+      "name": "Pre-import payload equality",
+      "result": "PASS",
+      "evidence": "667 staging assets/settings/package files, 36,266,325 bytes, inventory SHA ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172 match v0.7 and clean-like outputs."
+    },
+    {
+      "name": "Generic integration and U01 helper regression probes",
+      "result": "PASS",
+      "evidence": "evidence/CREATOR_PORTABLE_BUILD_AND_EQUIVALENCE.json records the exact commands, results and source hashes."
+    },
+    {
+      "name": "Three-platform Creator builds",
+      "result": "PASS",
+      "evidence": "Root exit 36 + Finished logs and config hashes in evidence/CREATOR_PORTABLE_BUILD_AND_EQUIVALENCE.json."
+    },
+    {
+      "name": "82 logical geometry rows / 72 physical image UUIDs / production path coverage",
+      "result": "PASS",
+      "evidence": "Tech v0.30 IMPORT_GEOMETRY_AND_PACKAGE_AUDIT.json SHA a673c38fa84e459c5b56b5cb8addf36927b4704ffaf8c5365dfa8c4f1e622605; 419 production paths."
+    },
+    {
+      "name": "Output byte identity and generated-script semantics",
+      "result": "PASS",
+      "evidence": "Root PORTABLE_BUILD_EQUIVALENCE.json and Tech v0.30 SCRIPT_EQUIVALENCE.json; all files except platform main scripts raw-identical, main script lengths unchanged and normalized complete script equality proven."
+    },
+    {
+      "name": "v0.7 runtime evidence inheritance",
+      "result": "PASS",
+      "evidence": "Bounded only: Tech v0.30 PORTABLE_EQUIVALENCE_REVIEW.json approves equivalence for v0.7 behavior evidence because only generated registration UUIDs and scope-resolved variable aliases differ. This is not a claim that v0.8 itself repeated all runtime cases."
+    },
+    {
+      "name": "Direct v0.8 full 20-cycle IAB and complete visual matrix",
+      "result": "NOT_TESTED",
+      "evidence": "Root has not rerun the full 20-cycle IAB matrix on v0.8. v0.7 actual run may be associated only through the narrow Tech-approved equivalence above; GPU and target-device checks remain NOT_TESTED."
+    },
+    {
+      "name": "Target GPU measurements and platform account upload limits",
+      "result": "NOT_TESTED",
+      "evidence": "No target-device GPU measurement or account-specific upload test is in the current evidence."
+    }
+  ]
+}

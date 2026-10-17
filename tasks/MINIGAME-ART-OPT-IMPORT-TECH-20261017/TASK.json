@@ -1,0 +1,45 @@
+{
+  "id": "MINIGAME-ART-OPT-IMPORT-TECH-20261017",
+  "title": "获批裁片的Cocos导入与本地分包接入核查",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "依已批76具体资源及技术规格，核实Creator真实导入、原画布恢复、重复映射、本地Bundle引用边界，给出可执行Client输入；不制作新图或改玩法。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_GATE2_USER_APPROVAL.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_IDENTITY.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/CUT_MANIFEST.json",
+    "deliverables/art/MINIGAME-ART-OPT-PILOT-20261017-ART/v0.1/CUT_MANIFEST.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/TECH_PREFLIGHT.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/IMPORT_PROBE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/CLIENT_HANDOFF.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "批准的精确250身份、76切片与7旧样本引用逐项可追溯，原尺寸、偏移、支点及动作ID不混版。",
+    "依本地3.8.8引擎及导入实现核原画布恢复、trim=false及CUSTOM路线，代表店铺、游客、场景真实导入；非GPU证据不冒充运行。",
+    "明确启动硬引用、模块共享依赖、重复别名、旧发布输入排除和本地Bundle迁移边界，避免跨包复制及远程资源。",
+    "交接及未决约束有真实文件；若超出已批技术契约或需删减、降画质，先提交差异，不擅自实施。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-BATCH-20261017-ART",
+    "MINIGAME-ART-OPT-20261016-TECH"
+  ],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master正式分派；只技术核查、隔离探针及本Task交付，不并写当前Main/U05源码，不Git或再分派。",
+    "依用户本轮临时许可，方案及专业核查用gpt-6.1-sol low，长期配置不变。",
+    "先读Tech角色五文件、cocos-cli-browser skill及scene-and-assets参考；实际首产后才IN_PROGRESS。",
+    "本Task消费已批Tech/UI/Art契约，不把正在实施的Client代码视作已获用户正式批准；不绕过下游交付门禁。",
+    "可只读引擎代码并在隔离副本核真实导入字段、UUID；不得修改apps/client正式PNG/meta/Scene/Prefab。正式生产接入由Master另派正确模型Client。",
+    "目录、接口或视觉路线若超出已批契约，明确提出差异和适用门禁；不静默扩大。",
+    "仅平台本地分包，无CDN；运行图集每边不超过2048，计空洞和保护边，无收益不强行图集。"
+  ]
+}

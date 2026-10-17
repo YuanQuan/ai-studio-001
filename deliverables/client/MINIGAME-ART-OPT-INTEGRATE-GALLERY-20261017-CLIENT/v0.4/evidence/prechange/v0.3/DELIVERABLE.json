@@ -1,0 +1,48 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "owner": "client",
+  "summary": "修复U04重入导致的重复选择加载与过期取消误报；当前错误仍显示并以JSON保留可诊断消息。Creator TypeScript语义检查、实际Gallery方法探针及session回归探针通过；新候选Creator Web与IAB尚待Root构建验证。v0.2失败证据及修复前源码快照保留。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/u04_request_reentry_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/gallery_asset_session_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/evidence/prechange/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只改Gallery、新session helper及sakura_v03_environment.ts的页面预载帧入口/必要meta与有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+      "result": "PASS",
+      "evidence": "本次仅修改Gallery的U04请求去重、代次与错误回调；新增实际方法探针及本版交付文档。session、environment、meta、布局、动作、素材和layout数据均未修改。Brief和Tech对齐记录沿用已批准v0.1及v0.2交付。"
+    },
+    {
+      "criterion": "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+      "result": "NOT_TESTED",
+      "evidence": "U04异步方法探针覆盖重复选择、已有映射、过期取消及当前错误；此候选尚未Creator Web重建和IAB实测，故整条生产页面验收留待父Task验证。"
+    },
+    {
+      "criterion": "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+      "result": "NOT_TESTED",
+      "evidence": "有效方法探针覆盖共享owner竞争及20轮合成释放循环；本版新的Creator Web实际运行及真实20轮尚未执行，故整条含实际运行要求的验收留待Root重建后验证。方法级结果与实际运行结果已明确区分。"
+    },
+    {
+      "criterion": "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+      "result": "PASS",
+      "evidence": "本版不修改既有绑定路径；有效方法回归探针继续通过CUSTOM/trim=false并保持非CUSTOM Prefab克隆原UITransform几何。游客帧/挂点实现与本版修复无关，沿用已审源码。"
+    },
+    {
+      "criterion": "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。",
+      "result": "PASS",
+      "evidence": "Provider/session代码未修改，沿用v0.2对应源码与既有校验；本版Creator TypeScript 4.9.5语义检查通过，新增U04真实方法探针通过。集成Creator Web及IAB仍由父Task执行。"
+    }
+  ],
+  "assumptions": [
+    "本版是Master明确授权的U04真实运行缺陷修复，不引入新的玩法或产品语义。"
+  ],
+  "risks": [
+    "候选Gallery尚未进入Root新建的Creator构建及IAB验证；不能据方法测试推断实际运行问题已最终消失。",
+    "父Task需在本版新构建后重跑实际20循环；v0.4修复前的运行日志保持为失败历史证据。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

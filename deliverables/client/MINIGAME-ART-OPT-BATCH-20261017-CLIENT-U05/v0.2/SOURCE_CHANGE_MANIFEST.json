@@ -1,0 +1,58 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "version": "v0.2",
+  "scope": "U05 Client implementation revision in response to Tech Lead v0.3 review; no cross-role interface change.",
+  "lineage": [
+    {
+      "stage": "initial U05 source snapshot",
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/prechange/milk_tea_lab.ts",
+      "sha256": "306128c61f4d9fb41c5e4c25852a7cf88cbe09e533819f0587b0fca0ae0933a7"
+    },
+    {
+      "stage": "main Client handoff with viewport adapter hookup; preserved and not rolled back",
+      "sha256": "e618b5ab4de6e24d10864426efe6805960a6403f550009758fd9ad3ca65004ac"
+    },
+    {
+      "stage": "v0.1 U05 implementation reviewed by Tech; retained as v0.2 prechange evidence",
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/evidence/prechange/milk_tea_lab.ts",
+      "sha256": "7da20f49e400fe8a202f9c91a08d3a4aec40aaaf3b93e963df3ed42771064d3f"
+    },
+    {
+      "stage": "v0.2 final source",
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "sha256": "6acf1f15946fba1d863be26b6b0618d3430e9c9438e205bc3b47f315445d0a29"
+    }
+  ],
+  "changed_files": [
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "sha256": "6acf1f15946fba1d863be26b6b0618d3430e9c9438e205bc3b47f315445d0a29",
+      "changes": "U05 safe-contained art/HUD layout, CSS-axis font/hit/label and cross-group measurement, default-closed operation proxy, full-content safe dialogs, pointer cancellation, resize preservation. configureViewportAdapter remains stable. Proxy timer HUD explicitly uses >=24 CSS px font and >=32 CSS px line-height with expanded label box; operation and return HUD positions remain separated."
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "sha256": "15e0b7b81b37bf078f25c065684b7456ee45bc202faf24b588ca1c56de49a0f7",
+      "changes": "Reusable U05 geometry, per-axis readable text layout, wrapping and hit-group collision helpers."
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts.meta",
+      "sha256": "6b80533172db008fc4b1ed5ad9d45e09bb090973b98f38e0d202f42878d59c81",
+      "changes": "New helper sidecar present in workspace with UUID 9a868daf-9e47-43ca-a0e7-8d127b9c1a65. This is not evidence of Creator import; the U05 v0.2 code revision did not edit an existing meta identity. Main Client must verify import in its isolated Creator check."
+    }
+  ],
+  "review_evidence": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.3/U05_CODE_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.3/U05_SEMANTIC_CHECK.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/U05_REVIEW_IDENTITY.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.5/U05_CODE_REVIEW.json"
+  ],
+  "actual_creator_import_verified": false,
+  "excluded_paths_not_edited_by_this_U05_v0.2_revision": [
+    "apps/client/assets/labs/u05/milk_tea_state.ts",
+    "apps/client/assets/labs/u05/u05_interaction_presentation.ts",
+    "apps/client/assets/framework/",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/resources/",
+    "Scene/Prefab"
+  ]
+}

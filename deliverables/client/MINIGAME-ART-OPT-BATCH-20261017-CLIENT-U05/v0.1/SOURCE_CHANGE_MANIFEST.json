@@ -1,0 +1,89 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "owner": "client",
+  "version": "v0.1",
+  "baseline": {
+    "approved_client_brief": {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+      "sha256": "e9ad048785a285d4ef04a8f4a6655658223a27c2e7e49f94e0bccf06008d7caf"
+    },
+    "tech_review": {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/CLIENT_BRIEF_REVIEW.json",
+      "decision": "APPROVED"
+    },
+    "initial_u05_source": {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/prechange/milk_tea_lab.ts",
+      "sha256": "e618b5ab4de6e24d10864426efe6805960a6403f550009758fd9ad3ca65004ac",
+      "meaning": "准确保存的主 Client handoff 起点；含此前 Adapter 接线，不回滚"
+    },
+    "original_u05_prechange": {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "sha256": "306128c61f4d9fb41c5e4c25852a7cf88cbe09e533819f0587b0fca0ae0933a7",
+      "meaning": "主 Client U05 修改前的初始源码摘要；不是本次 handoff"
+    }
+  },
+  "changed_files": [
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "change": "U05安全区contain/HUD、双轴逻辑字号及热区、动态操作代理、滚动弹窗、resize手势清理；继承handoff中的Adapter接线",
+      "sha256": "7da20f49e400fe8a202f9c91a08d3a4aec40aaaf3b93e963df3ed42771064d3f"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "change": "新增几何、轴向字号/热区下限、代理检测和滚动文本小工具",
+      "sha256": "bbacc3aadee8695d3dd36194ef884dc323f45e1709515a229885fef68de0d761"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts.meta",
+      "change": "新增TS对应Creator meta；文件手工创建，UUID为当前记录值，尚未由Creator导入核验",
+      "uuid": "9a868daf-9e47-43ca-a0e7-8d127b9c1a65",
+      "sha256": "6b80533172db008fc4b1ed5ad9d45e09bb090973b98f38e0d202f42878d59c81",
+      "creator_import_verified": false
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+      "change": "记录已批范围、handoff及实现契约"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/IMPLEMENTATION_REPORT.md",
+      "change": "实现结果和验证边界"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/SOURCE_CHANGE_MANIFEST.json",
+      "change": "源码阶段基线、当前文件、摘要及meta来源"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/VERIFICATION.json",
+      "change": "命令、结果和未测项"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/DELIVERABLE.json",
+      "change": "结构化交付及验收结果"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/prechange/milk_tea_lab.ts",
+      "change": "handoff字节备份；sha256=e618b5ab4de6e24d10864426efe6805960a6403f550009758fd9ad3ca65004ac"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_accessibility.check.js",
+      "change": "非等比投影与安全几何/触控规则检查"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/milk_tea_state_current.check.js",
+      "change": "按当前三维配置契约运行的状态回归检查副本"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_transpile.check.js",
+      "change": "使用Creator随附TypeScript对两份U05源码做可重跑转译检查"
+    }
+  ],
+  "scope_exclusions": [
+    "未修改Gallery或framework；未修改milk_tea_state.ts及u05_interaction_presentation.ts；未修改PNG、旧meta、Scene或Prefab。",
+    "未创建/分派新任务，未执行Git操作。",
+    "Creator CLI、导入身份和内置浏览器运行待主Client集成验证；本子任务不单独构建。"
+  ],
+  "source_freeze": {
+    "sha256": "7da20f49e400fe8a202f9c91a08d3a4aec40aaaf3b93e963df3ed42771064d3f",
+    "note": "当前milk_tea_lab.ts源码冻结摘要；待主Client合并验证"
+  }
+}

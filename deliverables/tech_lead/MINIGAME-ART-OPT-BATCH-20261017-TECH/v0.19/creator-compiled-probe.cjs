@@ -1,0 +1,11 @@
+const fs=require('fs'),assert=require('assert'),path=require('path');
+const root='/private/tmp/minigame-art-opt-integration-final-v0.2/build-output/minigame-art-opt-integration-final-v0.2-web-mobile';
+const regs=new Map(),cache=new Map();const System={register(id,deps,declare){if(Array.isArray(id)){const m=deps(()=>{},{});m.execute();return;}regs.set(id,{deps,declare});}};
+for(const file of ['assets/main/index.js','src/chunks/bundle.js','assets/internal/index.js'])Function('System',fs.readFileSync(path.join(root,file),'utf8'))(System);
+const cc={cclegacy:{_RF:{push(){},pop(){}}},SpriteFrame:class{},Sprite:class{},UITransform:class{}};
+function load(id){if(id==='cc')return cc;if(cache.has(id))return cache.get(id);const rec=regs.get(id);if(!rec)throw Error(id);const exp={};cache.set(id,exp);const decl=rec.declare((key,val)=>{if(typeof key==='object')Object.assign(exp,key);else exp[key]=val;return val;},{meta:{}});rec.deps.forEach((dep,i)=>decl.setters[i](load(dep.startsWith('.')?'chunks:///_virtual/'+path.basename(dep):dep)));decl.execute();return exp;}
+const helper=load('chunks:///_virtual/rollupPluginModLoBabelHelpers.js');let vals=[];const next=helper.createForOfIteratorHelperLoose(new Map([['a',1],['b',2]]).values());for(let n;!(n=next()).done;)vals.push(n.value);assert.deepEqual(vals,[1,2]);
+const {GalleryAssetSession}=load('chunks:///_virtual/gallery_asset_session.ts');let got=[];const session=new GalleryAssetSession({}, {}, {}, [],'probe',1,()=>true);session.acquireModule=async id=>{got.push(id)};
+const {ModuleAssets}=load('chunks:///_virtual/module_assets.ts');const modules=new ModuleAssets({},{load(){},release(){}});modules.entries.set('x',{state:'loading'});assert.equal(modules.getInFlightCount(),0);
+let cancelError;modules.operations.set('p',new Set([{cancelled:false,held:[],owner:{token:'p'}}]));try{modules.cancelOwner('p')}catch(e){cancelError=e.message}assert(cancelError);
+(async()=>{await session.acquireModules(['a','b','a']);assert(got[0] instanceof Set);console.log(JSON.stringify({actualCreatorBundle:true,forOfMapIterator:vals,acquireModulesWrongArgumentType:got[0].constructor.name,getInFlightExpected1Actual:modules.getInFlightCount(),cancelOwnerError:cancelError},null,2));})().catch(e=>{console.error(e);process.exitCode=1});

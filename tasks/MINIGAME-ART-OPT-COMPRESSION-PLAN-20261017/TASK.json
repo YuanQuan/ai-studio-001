@@ -1,0 +1,39 @@
+{
+  "id": "MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017",
+  "title": "总包超限后的压缩对照样本制作方案",
+  "type": "art",
+  "owner": "art",
+  "parent": "MINIGAME-ART-OPT-BATCH-20261017",
+  "objective": "依据实际平台物理产物差额，形成可审批的中文压缩样本制作方案与视觉锚点、来源和预算；本任务只写方案，不制作图片、不替换已批准资源、不新增质量档位或远程托管。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BUILD_V04_PACKAGE_MEASUREMENTS.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/APPROVED83_STORAGE_ARITHMETIC.json",
+    "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/ASSET_MANIFEST.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "真实物理包体与上传/账号结论分开，列默认20MB参考下的差额，不承诺压缩后必达标。",
+    "样本选取覆盖包体大项和可见细节，逐件登记冻结来源路径/hash/UUID及已知审批来源；不消费其他会话新未批图片。",
+    "方案列可复核视觉锚点、同背景同视窗同尺度对照、技术兼容待测项、停止条件、负责人和制作/静态验证预算，引用现行效果继承规范。",
+    "不输出图片或改变既有Art身份，方案待用户批准后方可按适用同批Art/Tech预签制作；样本另需具体版本批准才能正式接入。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；仅中文文档方案，按用户本轮临时模型许可使用gpt-6.1-sol low，不改变长期配置。",
+    "读Art角色固定配置和相关规则；只写本Task交付目录，不改共享看板/源码，不自行分派。",
+    "本任务对应用户原计划中无损优化后仍超限时提供差额和压缩样本的条件分支；当前先补具体制作方案，不绕过新质量选择及美术门禁。",
+    "原获批76切片/7样本不重复审批，当前Client接入继续独立验证，不因本方案暂缓。",
+    "2026-10-17T15:30:11+08:00 Producer核实四Required实际文档已存在，Owner仍修正来源批准/许可说明，实际执行IN_PROGRESS；无新图/不提前USER_REVIEW。",
+    "2026-10-17T15:39:28+08:00 四文档修正完毕，Tech v0.23 APPROVED；具体压缩制作方案Gate1 USER_REVIEW待用户，未授权制作且无图。"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "owner": "client",
+  "summary": "完成窗口/ModuleAssets与单元示例适配，修复超长U01详情的有界文本渲染；v0.10 Creator隔离构建和实际IAB reader专项验证通过，真实设备DPR2/3及GPU驻留仍未测。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/page-layout-probes-v0.5.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/u01-export-reader-probe-v0.5.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/typescript-semantic-v0.5.log"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先产轻量Brief并通过Tech沟通，复用现有能力，跨端窗口/安全区/胶囊/逻辑坐标接口符合已批规格。",
+      "result": "PASS",
+      "evidence": "v0.1 FEATURE_BRIEF 与 Tech CLIENT_BRIEF_REVIEW APPROVED；框架契约测试及源码见 SOURCE_CHANGE_MANIFEST.json。"
+    },
+    {
+      "criterion": "实现ModuleAssets共享在途/依赖/代际与幂等释放，覆盖竞争、错误、取消及20次循环的有效测试，不把测试替代GPU实测。",
+      "result": "PASS",
+      "evidence": "evidence/framework-contract-tests-v0.4.json：共享加载/取消/异常清理/20次循环；测试不替代GPU实测。"
+    },
+    {
+      "criterion": "将已批页面适配要求落实到当前单元示例入口，保持U05完整画幅/规则时序与U04横屏组合，竖屏、文本/热区/滚动按规格，未测项明确。",
+      "result": "PASS",
+      "evidence": "IMPLEMENTATION_REPORT.md逐页对应实现；page-layout-probes-v0.5.json、U01生产形态文本探针；Root browser-v10/REPORT.json确认reader六个CSS视口底部以及320视口顶/底/滚轮/关闭交互。"
+    },
+    {
+      "criterion": "按Creator3.8.8 CLI和HTTP实际Web产物验证，无缺资源/运行错误；提交准确源码/构建及Owner证据供Tech Review和用户审核。",
+      "result": "PASS",
+      "evidence": "Creator3.8.8 v0.10隔离构建及781项SHA见BUILD_MANIFEST.json；Root browser-v10/CONSOLE.json无新增warn/error，实际reader运行通过。此次reader修复范围外页面不重复全矩阵；DPR2/3、nativeSafe、GPU peak/residency仍NOT_TESTED，见VERIFICATION.json。"
+    }
+  ],
+  "assumptions": [
+    "沿用已批准Brief、TECH_DESIGN、LAYOUT_SPEC、VFX_SPEC及v0.4冻结源。",
+    "本轮仅接管ScrollablTextPanel helper，其他28项源码基于v0.4冻结快照；U05使用Owner冻结SHA。"
+  ],
+  "risks": [
+    "本轮IAB限定U01 reader与6个CSS竖屏尾屏截图，其他页面复用此前v0.9整页矩阵且未重新运行。",
+    "真实设备DPR2/3、native safe area、GPU峰值和完整资源生命周期驻留未测。",
+    "Scene/Prefab全帧和店铺Prefab硬引用仍在，包体与GPU驻留收益未证明。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

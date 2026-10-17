@@ -1,0 +1,26 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner": "client",
+  "summary": "已提交同一Client阶段的83资源来源校验生成器、计划本地Bundle与UUID追溯manifest、SpriteFrame派生/ModuleAssets租约解析器及可执行测试。待主Client v0.4冻结源快照后完成隔离staging、Creator导入、页面接线、运行与包体证据；当前为实现中证据，不代表完成或QA通过。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/GENERATED_ASSET_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/OWNER_STATUS.json"
+  ],
+  "acceptance_results": [
+    {"criterion":"先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。","result":"PASS","evidence":"FEATURE_BRIEF.md SHA-256 36d879472e4d4bff9f5ab1314f63e6c2fbf8b5c3d539e4c043b2d321f732dc72；Tech v0.2 CLIENT_BRIEF_REVIEW APPROVED。"},
+    {"criterion":"83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。","result":"NOT_TESTED","evidence":"生成器校验83项源图hash、PNG裁片尺寸和frame几何；Node执行公开reset参数/租约mock并验证10组共享别名。Creator staging导入、UUID/frame回读、真实引擎视觉与动作检查尚待冻结源码快照。"},
+    {"criterion":"可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。","result":"NOT_TESTED","evidence":"生成manifest列出计划唯一bundle、依赖、源路径和别名；尚未生成隔离staging工程或解除Scene启动硬引用，不能证明真实发布可达性/源树保护。"},
+    {"criterion":"页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。","result":"NOT_TESTED","evidence":"解析器测试覆盖派生frame共享/末引用销毁/底层lease释放；页面调用点、真实HTTP运行、同尺度视觉、20轮生命周期尚未接入或执行。"},
+    {"criterion":"准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。","result":"NOT_TESTED","evidence":"源导出hash、批准UUID、尺寸/offset/依赖路径均在GENERATED_ASSET_MANIFEST.json可追溯；真实导入UUID、构建输入/物理包体/GPU收益和平台限制待Creator staging。"}
+  ],
+  "assumptions": ["bundle 与 module ID依Tech v0.1 map一致；staging只复制批准map资产并以冻结源快照为代码输入。", "脚本meta当前为Owner候选格式，Creator导入后准确meta/UUID回读仍以Creator结果为准。"],
+  "risks": ["主Client v0.4准确冻结输入尚未送达，Scene/Prefab启动硬引用与页面生命周期未能安全聚合。", "Creator导入回读、实际Web/小游戏运行、HTTP视觉、平台物理包体与设备显存未测。", "项目默认TypeScript配置对Creator declarations/lib不兼容；兼容静态检查命令通过，Creator Import/Build仍需在staging执行。"],
+  "status": "READY_FOR_REVIEW"
+}

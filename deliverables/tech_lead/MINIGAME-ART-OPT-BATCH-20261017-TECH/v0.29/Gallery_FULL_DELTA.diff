@@ -1,0 +1,79 @@
+--- deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/evidence/prechange/UnitSampleGallery.ts
++++ /private/tmp/minigame-art-opt-integration-final-v0.7-u01fix/assets/UnitSampleGallery.ts
+@@ -745,12 +745,17 @@
+       const y = event.getUILocation().y;
+       if (this.menuScrollY !== null) {
+         if (this.menuScrollStartY!==null&&Math.abs(y-this.menuScrollStartY)>8) this.menuScrollGesture = true;
+-        this.menuScrollOffset = Math.max(0, Math.min(this.menuMaxScroll, this.menuScrollOffset + this.menuScrollY - y));
++        this.menuScrollOffset = this.fingerScrollOffset(this.menuScrollOffset, this.menuMaxScroll, this.menuScrollY, y);
+         this.menuScrollY = y; this.layoutScene();
+       }
+     });
+     this.menuContent.on(Node.EventType.TOUCH_END, () => { this.menuScrollY=this.menuScrollStartY=null; });
+     this.menuContent.on(Node.EventType.TOUCH_CANCEL, () => { this.menuScrollY=this.menuScrollStartY=null; });
++    this.menuContent.on(Node.EventType.MOUSE_WHEEL, (event: EventMouse) => {
++      this.menuScrollOffset = Math.max(0, Math.min(this.menuMaxScroll, this.menuScrollOffset - event.getScrollY() * 0.4));
++      this.layoutScene();
++      event.propagationStopped = true;
++    });
+     const legacyOverviewReady = !this.useOptimizedBundles && !!this.streetBasePrefab && !!this.touristPrefab && this.shopPrefabs.length === 6
+       && !!this.touristFrameManifest?.json && !!this.touristMountManifest?.json
+       && !!this.touristAccessoryManifest?.json && this.touristBodyFrames.length === 40;
+@@ -1350,7 +1355,7 @@
+     readViewport.on(Node.EventType.TOUCH_MOVE, (event: EventTouch) => {
+       const y = event.getUILocation().y;
+       if (this.u04ReadPointerY !== null) {
+-        this.u04ReadOffset = Math.max(0, Math.min(this.u04ReadMaxScroll, this.u04ReadOffset + this.u04ReadPointerY - y));
++        this.u04ReadOffset = this.fingerScrollOffset(this.u04ReadOffset, this.u04ReadMaxScroll, this.u04ReadPointerY, y);
+         this.u04ReadPointerY = y; this.layoutDialogue(view.getVisibleSize());
+       }
+       event.propagationStopped = true;
+@@ -1813,7 +1818,7 @@
+     overlay.on(Node.EventType.TOUCH_MOVE, (event: EventTouch) => {
+       const y=event.getUILocation().y;
+       if(this.overviewShopScrollY!==null){if(this.overviewShopScrollStartY!==null&&Math.abs(this.overviewShopScrollStartY-y)>8)this.overviewShopScrollGesture=true;
+-        this.overviewShopScrollOffset=Math.max(0,Math.min(this.overviewShopMaxScroll,this.overviewShopScrollOffset+this.overviewShopScrollY-y));
++        this.overviewShopScrollOffset=this.fingerScrollOffset(this.overviewShopScrollOffset,this.overviewShopMaxScroll,this.overviewShopScrollY,y);
+         this.overviewShopScrollY=y;this.layoutOverview();}
+       event.propagationStopped=true;
+     });
+@@ -2549,6 +2554,10 @@
+     this.touristTrayViewport!.getComponent(UITransform)!.setContentSize(trayWidth,trayHeight);this.positionTouristTrayContent();
+   }
+ 
++  private fingerScrollOffset(offset: number, maxScroll: number, previousY: number, currentY: number): number {
++    return Math.max(0, Math.min(maxScroll, offset + currentY - previousY));
++  }
++
+   private positionTouristTrayContent(): void {
+     const tray = this.touristTrayViewport;
+     if (!tray?.isValid || !this.touristTrayContent?.isValid) return;
+@@ -2575,7 +2584,7 @@
+     if (this.touristTouchY !== null) {
+       if (this.touristTouchStartY !== null
+         && Math.abs(this.touristTouchStartY - currentY) > 8) this.touristScrollGesture = true;
+-      this.scrollTouristTray(this.touristTouchY - currentY);
++      this.scrollTouristTray(currentY - this.touristTouchY);
+     }
+     this.touristTouchY = currentY;
+     event.propagationStopped = true;
+@@ -2602,7 +2611,7 @@
+     const currentY = event.getUILocation().y;
+     if (this.touristMouseStartY !== null
+       && Math.abs(this.touristMouseStartY - currentY) > 8) this.touristScrollGesture = true;
+-    this.scrollTouristTray(this.touristMouseY - currentY);
++    this.scrollTouristTray(currentY - this.touristMouseY);
+     this.touristMouseY = currentY;
+     event.propagationStopped = true;
+   }
+@@ -2648,8 +2657,8 @@
+     if (this.menuScrollY === null || !this.menuContent?.activeInHierarchy) return;
+     const y = event.getUILocation().y;
+     if (this.menuScrollStartY!==null&&Math.abs(y-this.menuScrollStartY)>8) this.menuScrollGesture = true;
+-    const delta = this.menuScrollY - y;
+-    this.menuScrollOffset = Math.max(0, Math.min(this.menuMaxScroll, this.menuScrollOffset + delta));
++    const delta = y - this.menuScrollY;
++    this.menuScrollOffset = this.fingerScrollOffset(this.menuScrollOffset, this.menuMaxScroll, this.menuScrollY, y);
+     this.menuScrollY = y;
+     this.layoutScene();
+   }

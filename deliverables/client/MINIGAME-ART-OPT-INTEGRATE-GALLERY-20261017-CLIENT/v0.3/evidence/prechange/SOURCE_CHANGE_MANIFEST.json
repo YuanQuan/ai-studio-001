@@ -1,0 +1,68 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.2",
+  "reason_for_revision": "实际 Web v0.2 U00 报错 Module manifest missing module [object Set]；Creator Babel 将 Set spread 降级为数组 concat，源模块集合没有展开。",
+  "historical_failure": {
+    "preserved_version": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/",
+    "prechange_source_snapshot": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/evidence/prechange/",
+    "runtime_evidence": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/",
+    "result": "FAIL",
+    "observed_error": "模块清单缺少模块：[object Set]；Root从Creator构建产物确认Set spread变为[].concat(new Set(...))。"
+  },
+  "tech_alignment": {
+    "feature_brief": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "feature_brief_sha256": "15896c9c9dee3a04052f3e96b32d0c7f8cfc01f4cb9fa2bf8bf472f118f35abb",
+    "initial_review": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.15/GALLERY_BRIEF_REVIEW.json",
+    "review_sha256": "eb85333304486bab525dcd3f894314f9691b30c64ebe1ee7a7ae0ee6a1233157",
+    "note": "本版为针对运行缺陷的已授权返工；实现审查需绑定本版新源码。"
+  },
+  "changed_files": [
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "sha256": "425f1ae683961bd25b5d0fa67a43c55639bfff36551b3146d1ce77ac90098efe",
+      "changes": "将唯一Array.entries()迭代改为forEach；原有Array/Object spread均保留。"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0",
+      "changes": "Set去重先Array.from；Map values/Set遍历和Map values spread改为Array.from后数组遍历/索引，避免Creator Babel遗失迭代语义。"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/tests/gallery_asset_session_probe.cjs",
+      "sha256": "a4723d67103767f4f77fc730cabb3581c86fa3d2735e2b2e80a9e05979495c0b",
+      "changes": "增加Set输入、Map values和pending Set清理覆盖；保留竞态、共享缓存与20轮方法测试。"
+    }
+  ],
+  "prechange_hashes": {
+    "UnitSampleGallery.ts": "c0f3f3b8d90eaea5287019b37e1c3960019f21d7975119bcc1d6ced5e8182848",
+    "gallery_asset_session.ts": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+    "sakura_v03_environment.ts": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+    "gallery_asset_session.ts.meta": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+    "gallery_asset_session_probe.cjs": "36cc69f69efb45bd723c347ecb088851b9c1a5ef5ff86b39fbe6887069849a3e"
+  },
+  "unchanged_by_this_owner": [
+    "Scene/Prefab/layout/PNG and existing UUID identities",
+    "sakura_v03_layout.ts",
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts (resource Owner integration)",
+    "U05 Owner source, module registry, approved registry and resolver"
+  ],
+  "validation": {
+    "creator_typescript_4_9_5_semantic_check": "PASS",
+    "owner_effective_method_probe": "PASS",
+    "creator_web_build_of_v0_2_candidate": "NOT_TESTED_PENDING_PARENT_BUILD",
+    "actual_iab_of_v0_2_candidate": "NOT_TESTED_PENDING_PARENT_BUILD"
+  },
+  "unchanged_files_this_revision": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+      "changes": "本次未修改，保留v0.1可选页面预载帧实现。"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "uuid": "2398be67-f94e-4a40-9c45-02924cc5a731",
+      "changes": "未修改v0.1新增脚本导入身份。"
+    }
+  ]
+}

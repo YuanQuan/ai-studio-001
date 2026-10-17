@@ -1,0 +1,85 @@
+{
+  "version": "v0.8",
+  "creatorBuilds": {
+    "web-mobile": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": "2026-10-17 16:37:16",
+      "files": 803,
+      "physicalOutputBytes": 38670790,
+      "onlyRawHashDifferenceFromV07": "assets/main/index.js",
+      "configSha256": "f0ce4ed01f3d37844dd87200871193488ff005f8f2dd8cba03a371582262f337",
+      "logSha256": "578febb09e90b89248a96e711cc21686a8552b9aa8874684bcaa822d17de8919"
+    },
+    "wechatgame": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": "2026-10-17 16:37:59",
+      "files": 823,
+      "physicalOutputBytes": 38707433,
+      "onlyRawHashDifferenceFromV07": "subpackages/main/game.js",
+      "configSha256": "b039c85547fbc7faf9a6efa084ec491c759ebca3bf7e99f7e4636209dad94cf7",
+      "logSha256": "dd39c8922a1bc97965fd8d761ca70b10026045798ed6e90c128f302552b1871d",
+      "gameJsonSubpackageCount": 8
+    },
+    "bytedance-mini-game": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": "2026-10-17 16:38:39",
+      "files": 821,
+      "physicalOutputBytes": 38681779,
+      "onlyRawHashDifferenceFromV07": "subpackages/main/game.js",
+      "configSha256": "1558b0511a3254dc3cf69bcb956ff4dcf2e6d2d4c219c9ca7db9f530fe106050",
+      "logSha256": "851fff08207c9ac7d37285b39a76a01ca188934f860a812ae512bf655f948442",
+      "gameJsonSubpackageCount": 8
+    }
+  },
+  "preImportPayloadDefinition": {
+    "scope": "staging assets/** + settings/** + package.json only; excludes build-configs/**, STAGING_INPUT_MANIFEST.json, generated evidence, .DS_Store and local profiles.",
+    "files": 667,
+    "bytes": 36266325,
+    "inventorySha256": "ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172",
+    "baselineV07EqualsCleanLike": true,
+    "baselineV07EqualsPortableV08": true
+  },
+  "postCreatorOutputComparison": {
+    "rootEvidence": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/PORTABLE_BUILD_EQUIVALENCE.json",
+    "rootEvidenceSha256": "9d7a847e39ee7302f868f065a1440423d30f95fdcee5fa4b6ffaa35026d91bf1",
+    "techReview": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/PORTABLE_EQUIVALENCE_REVIEW.json",
+    "techReviewSha256": "541e9fc13fe1deaddc7dacbd095d2b1a8a5d666f3ed901528a026d3a091112a1",
+    "techScriptProbe": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/SCRIPT_EQUIVALENCE.json",
+    "techScriptProbeSha256": "031b20c3a70df6d4db9639d4207da3f2ad612c7878d754876890dfa8023289da",
+    "result": "All per-platform files other than each platform main script are raw-hash identical; main scripts are equal after the narrowly documented _RF.push script UUID and scope-resolved variable alias normalization. Script lengths are unchanged (Web 408079 bytes; native 402728 bytes).",
+    "boundedBehavioralEquivalence": "Tech approved bounded inheritance of v0.7 runtime evidence; v0.8 did not itself repeat the 20-cycle IAB run."
+  },
+  "geometryImportAudit": {
+    "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/IMPORT_GEOMETRY_AND_PACKAGE_AUDIT.json",
+    "sha256": "a673c38fa84e459c5b56b5cb8addf36927b4704ffaf8c5365dfa8c4f1e622605",
+    "productionPathCount": 419,
+    "physicalLogicalRows": 82,
+    "uniqueImageUuids": 72,
+    "result": "PASS per Tech audit; source inventory represents 83 approved resource rows including aliases."
+  },
+  "legacyUnitProbes": [
+    {
+      "command": "node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.8-portable",
+      "result": "PASS",
+      "sourceSha256": "47706e2bd33997194678932034caa40f3c987116a8293e361c9ef688ef066208",
+      "output": "419 production paths across five configured bundle roots; 83 source rows; derived frame geometry; lease sharing/release; source immutability; invalid hash rejection."
+    },
+    {
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+      "result": "PASS",
+      "sourceSha256": "764af5ad01d0beebd549cdd34f3b43c7ad6df67e829fcfc97be68a979c5fea2d"
+    },
+    {
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+      "result": "PASS",
+      "sourceSha256": "6264033bf47114d1260601b225f5c16a64755ad30252f8bfb263bdb9d646eb66"
+    }
+  ],
+  "limitations": [
+    "The v0.8 build passed for all three platforms, but v0.8 did not itself repeat the full 20-cycle IAB runtime run; behavior equivalence is limited to Tech-reviewed main-script normalization plus unchanged remaining output files.",
+    "GPU memory/performance on target devices and platform-account upload limits remain NOT_TESTED."
+  ]
+}

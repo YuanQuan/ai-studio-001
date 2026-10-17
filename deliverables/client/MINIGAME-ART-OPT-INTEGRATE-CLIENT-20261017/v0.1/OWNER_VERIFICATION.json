@@ -1,0 +1,14 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner": "client",
+  "role": "示例Owner自检；不是QA Agent或正式QA结论",
+  "checks": [
+    {"name":"approved source manifest checks","result":"PASS","command":"node apps/client/tools/asset-integration/asset_manifest_generator.cjs deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/GENERATED_ASSET_MANIFEST.json","evidence":"83条资源；SHA、PNG IHDR/crop尺寸、几何边界、bundle归属可验证；10组相同图像alias保留逻辑ID。"},
+    {"name":"derived frame and lease tests","result":"PASS","command":"node tests/client/asset-integration/asset_integration.test.cjs","evidence":"执行TypeScript转译输出；reset原画布/rect/offset、并发底层路径共享、derived引用计数与最终释放、源frame不变、坏hash拒绝。"},
+    {"name":"project TypeScript semantic check","result":"PASS","command":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false","evidence":"Creator 3.8.8 bundled TypeScript compiler; compatibility flags avoid existing declaration/lib baseline errors. NoEmit. This is not Creator Import/Build."},
+    {"name":"Creator import and generated TS meta readback","result":"NOT_TESTED","evidence":"Owner hand-created TypeScript meta is candidate only; isolated staging import pending."},
+    {"name":"full page lifecycle and actual HTTP run","result":"NOT_TESTED","evidence":"页面调用点仍由主Client持有，等准确冻结快照合并；没有页面/浏览器运行证据。"},
+    {"name":"mini-game package size, GPU memory, atlas benefit","result":"NOT_TESTED","evidence":"需真实Creator staging目标构建及实际平台工具；未以Web包体代替。"}
+  ],
+  "caveats": ["当前manifest为来源和计划校验，不是Creator导入回读。", "Node测试中的cc类为可执行几何mock，不代替Cocos运行。", "真实staging、HTTP、截图/录屏、20轮页面加载/释放、目标平台包体和显存仍未测。"]
+}

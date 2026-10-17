@@ -1,0 +1,12 @@
+{
+  "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "reviewer":"tech_lead",
+  "decision":"CHANGES_REQUESTED",
+  "findings":[
+    {"severity":"INFO","message":"冻结U05 v0.2首尾SHA一致：milk_tea_lab.ts 5fe31bbb894c97b2ba9e9d4845f46c69d0da096611d943e058a9c5bfd6a74ea8；helper 15e0b7b81b37bf078f25c065684b7456ee45bc202faf24b588ca1c56de49a0f7。源码/meta/五测试准确身份见U05_REVIEW_IDENTITY.json（SHA bef01777bafa3105d3dc480ef6f96def84a60d37c6075dfec1cbdca1d31ee5fb），旧v0.3失败记录保留。"},
+    {"severity":"INFO","message":"原4问题全部关闭：真实renderSelection(proxySelection=true)分支已重读独立layout变量并执行通过；真实text()按双轴字号换行扩高，不再固定原框裁字，dimensionHitTargets纳入扩高标签并在render跨组/HUD冲突迭代代理；真实pointer处理器覆盖MOVE累计8逻辑像素/CANCEL/ID/第二指针/revision与代际；真实renderSafeDialog按文本flow拆行并循环滚动到BODY-END-MARKER。五检查本轮独立重跑PASS，U05_TEST_RERUN.json保留完整输出。"},
+    {"severity":"MAJOR","message":"[P2] milk_tea_lab.ts:953-959 proxyTimer把倒计时交给renderSafeHudButton的通用button文字，后者字体最多24本地单位且text()只保证16逻辑像素。当前没有将safeTimerLabel独立设24/32；小屏contain css/local=0.5083时，执行真实text方法结果font=16CSS、line=18.5415CSS，低于已批LAYOUT_SPEC倒计时24/32。详u05-timer-probe.cjs及U05_TIMER_PROBE.txt；这不是GPU或视觉推测。给代理倒计时显式24逻辑字号/32逻辑行高，依同双轴换算并扩足框，返回动作保持唯一且入口不重叠；补真实HUD路径字号/行高检查。"},
+    {"severity":"INFO","message":"原修复代码方向与单元证据已接受，剩余请求仅上述现行规格数值。实际Cocos字形度量、所有代理组实际画面/HUD重叠与极端受限窗口仍需当前Creator/HTTP运行；新meta身份需导入核验。页面其他模块及整版、平台/DPR/GPU性能不在本独立U05审查通过范围，均不宣称运行通过。"}
+  ],
+  "next_action":"Master交U05 Owner修复倒计时24/32这一明确剩余项并提交稳定SHA及真实HUD方法检查；原4项不重复返工。之后复核源码子范围，最终整版仍待Main构建和HTTP运行，不做切后美术效果Review。"
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "basis": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json",
+  "execution_state": "PLAN_VALIDATED_ONLY; NOT_STAGED",
+  "planned_local_bundles": {
+    "world": {"directory":"apps/client/assets/bundles/world","dependencies":[],"consumers":["U00","U01","U04"]},
+    "tourist": {"directory":"apps/client/assets/bundles/tourist","dependencies":[],"consumers":["U00","U02","milk-tea"]},
+    "shops": {"directory":"apps/client/assets/bundles/shops","dependencies":[],"consumers":["U00","U01","U03","U04"]},
+    "dialogue": {"directory":"apps/client/assets/units/dialogue","dependencies":["world","shops"],"consumers":["U04"]},
+    "milk-tea": {"directory":"apps/client/assets/bundles/milk_tea","dependencies":["tourist"],"consumers":["U05"]}
+  },
+  "entry_dependencies": {"U00":["world","tourist","shops"],"U01":["world","shops"],"U02":["tourist"],"U03":["shops"],"U04":["dialogue"],"U05":["milk-tea"]},
+  "approved83_asset_counts_by_bundle": {"world":15,"shops":12,"tourist":40,"milk-tea":16},
+  "startup_hard_reference_exclusion": "NOT_TESTED; UnitSamples scene source snapshot differs from handoff-map baseline and main v0.4 freeze is pending.",
+  "physical_asset_bundle_ownership": "NOT_TESTED; generated manifest declares intended unique bundle per asset but no staging copy/import has occurred.",
+  "web_asset_bundle_build": "NOT_TESTED",
+  "mini_game_physical_package": "NOT_TESTED",
+  "atlas": {"status":"NOT_IMPLEMENTED","reason":"按Tech v0.2先单图导入/运行及UV验证；测得页数、padding、过滤、纹理内存与物理包体收益后再决定，暂不强行图集化。"}
+}

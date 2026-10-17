@@ -1,0 +1,34 @@
+{
+  "actualBuild": "v0.8-portable",
+  "result": "PASS_SCOPED",
+  "metrics": {
+    "canvas": [
+      {
+        "cssHeight": 1280,
+        "cssWidth": 720,
+        "height": 1280,
+        "width": 720
+      }
+    ],
+    "dpr": 1,
+    "height": 1280,
+    "width": 720
+  },
+  "checks": [
+    "menu-loaded",
+    "U01-320-loaded",
+    "U01-drag-first-close",
+    "U01-return",
+    "U04-720-loaded",
+    "U04-return"
+  ],
+  "warningsErrors": [],
+  "notTested": [
+    "v0.8 full20cycle rerun",
+    "DPR2",
+    "DPR3",
+    "native safe area",
+    "GPU/heap peak",
+    "platform DevTools"
+  ]
+}

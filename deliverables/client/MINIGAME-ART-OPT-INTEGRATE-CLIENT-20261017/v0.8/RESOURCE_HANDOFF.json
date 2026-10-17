@@ -1,0 +1,35 @@
+{
+  "version": "v0.8",
+  "runtimeSourceChanges": [],
+  "stagingRoot": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable",
+  "stagingManifestSha256": "77ab51753aa906f2dbc78cfe9b9af18cbcc94aedb3de7ee7ad121ad252d6a7d0",
+  "portableInputRecoveryTest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/evidence/PORTABLE_INPUT_RECOVERY_TEST.json",
+  "note": "Stage contains same assets/settings/package payload as v0.7; final Creator-output equivalence pending Root.",
+  "creatorFinalRoot": "/private/tmp/minigame-art-opt-integration-final-v0.8-portable",
+  "creatorBuildEquivalence": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/PORTABLE_BUILD_EQUIVALENCE.json",
+  "creatorBuildEquivalenceSha256": "9d7a847e39ee7302f868f065a1440423d30f95fdcee5fa4b6ffaa35026d91bf1",
+  "techReview": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/PORTABLE_EQUIVALENCE_REVIEW.json",
+  "techReviewSha256": "541e9fc13fe1deaddc7dacbd095d2b1a8a5d666f3ed901528a026d3a091112a1",
+  "geometryImportAudit": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/IMPORT_GEOMETRY_AND_PACKAGE_AUDIT.json",
+  "geometryImportAuditSha256": "a673c38fa84e459c5b56b5cb8addf36927b4704ffaf8c5365dfa8c4f1e622605",
+  "creatorBuilds": {
+    "web-mobile": {
+      "result": "PASS",
+      "physicalOutputFiles": 803,
+      "physicalOutputBytes": 38670790
+    },
+    "wechatgame": {
+      "result": "PASS",
+      "physicalOutputFiles": 823,
+      "physicalOutputBytes": 38707433,
+      "localSubpackages": 8
+    },
+    "bytedance-mini-game": {
+      "result": "PASS",
+      "physicalOutputFiles": 821,
+      "physicalOutputBytes": 38681779,
+      "localSubpackages": 8
+    }
+  },
+  "runtimeEvidence": "Bounded inheritance from v0.7 only under Tech-approved output/script equivalence; v0.8 itself has not repeated full 20-cycle IAB."
+}

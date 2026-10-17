@@ -1,0 +1,41 @@
+{
+  "id": "MINIGAME-ART-OPT-BATCH-20261017-FLOW",
+  "title": "样本批准登记及全批适配流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "样本批准登记及全批适配流程监督，持续完成已授权无阻塞工作至下一确切版本门禁。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "独立核87身份并记录样本具体Gate2批准，旧样本Art/阶段DONE，总体继续；准确维护本批真实首产、依赖、预签、版本与门禁。",
+    "结束前独立核Required/验收/身份与continuity，按实际结束点记录复盘；不将当前新切片或实现报告虚记USER_APPROVED。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "AUTO",
+  "notes": [
+    "Master唯一分派，不再自行分派，不Git；保护既有未提交工作。",
+    "所有结论依真实文件；缺少平台/真机证据NOT_TESTED。",
+    "先读本角色最新五文件及适用共享skill；Producer登记真实首产后才IN_PROGRESS。",
+    "文档临时gpt-6.1-sol low例外沿用。",
+    "明确跨职责授权：维护本批与上批相关Task/Approval，project六源仅本批独立marker，其他角色只动Owner Task。",
+    "旧样本主审批批准态先独立快照再切换总体当前指针，样本Art/阶段按用户批准和Master文件接受最终DONE；只完样本不完总体。",
+    "新marker统一MINIGAME-ART-OPT-BATCH-20261017，全部新增事实与接受记录置marker内，避免未标注全局修改。",
+    "2026-10-17T11:24:21+08:00 真实首产FLOW_REPORT.md，开始独立审批核验。",
+    "2026-10-17T16:50:22+08:00 最终身份/Required/schema/验收/continuous与真实周期复盘已完成，提交Master接受。"
+  ]
+}

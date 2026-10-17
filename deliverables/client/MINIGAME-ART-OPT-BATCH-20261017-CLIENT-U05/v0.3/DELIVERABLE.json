@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "owner": "client",
+  "summary": "修复 v0.7 窄屏启动时数值代理组 ID 触发 startsWith 异常，并替换现有 BMFont 缺失的勾选/箭头标记；保留历史页面失败并交 v0.8 集成运行。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "沿用已批Client Brief和同版Tech对齐，保持configureViewportAdapter接口与原画、唯一run/presentation及现有业务/动作时序。",
+      "result": "PASS",
+      "evidence": "沿用获批 v0.1 Brief 和既有接口；`configureViewportAdapter`、同一 run/presentation 与 state/presentation 源均未改。本版只修 U05 代理 ID 鲁棒性及现有字库已覆盖的标记字符；语义检查通过。"
+    },
+    {
+      "criterion": "实测目标逻辑字号/热区及重叠，仅不达标组转入默认关闭代理，迁入原热区停用且同动作只有一入口，弹窗遮罩阻断底层但不暂停倒计时。",
+      "result": "NOT_TESTED",
+      "evidence": "实际方法级运行阶段回归 PASS（数值组 ID、真实 Run 的 preparation/playing 操作面板、原入口唯一调用及 BMFont 字符）；320×568 v0.7页面失败已保留，本版没有重跑 Creator 页面，v0.8 需集成运行。"
+    },
+    {
+      "criterion": "返回/配方/退出确认/验证/结算按统一safe/capsule布局，正文可滚动到末尾，旋转/重排保留状态并取消过期手势，未测运行不伪称通过。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.7 320×568 页面启动黑屏失败证据已保留；本版仅有代码级和真实方法体状态回归，完整 safe/capsule 页面及弹窗运行/旋转验证未执行。"
+    },
+    {
+      "criterion": "仅改U05源码与本交付，提供有效单测/静态核验及真实变更清单，由主Client合并CLI构建验证；不修改PNG/meta/现有资源身份。",
+      "result": "NOT_TESTED",
+      "evidence": "U05 文件和本 v0.3 交付已记录；没有运行主 Client v0.8 Creator CLI。无 PNG、已有 meta/资源身份、State、presentation、Gallery/framework、Scene 或 Prefab 修改。"
+    }
+  ],
+  "assumptions": [
+    "沿用获批 U05 v0.1 FEATURE_BRIEF；本次不改变玩法、接口或呈现时序。"
+  ],
+  "risks": [
+    "未知代理 ID 使用 fail-closed 的全操作组代理；需要主 Client 在 v0.8 目标引擎运行确认所有入口/布局。",
+    "320×568 v0.7 页面有黑屏失败；本版没有 Creator/IAB 运行证据，不能声称页面修复通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

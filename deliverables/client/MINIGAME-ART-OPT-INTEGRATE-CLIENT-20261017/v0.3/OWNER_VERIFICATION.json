@@ -1,0 +1,52 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.3",
+  "owner": "client",
+  "role": "Owner自检，不是QA或正式Review结论",
+  "checks": [
+    {
+      "name": "asset and dependency integration tests with ES5 lowering",
+      "result": "PASS",
+      "command": "node tests/client/asset-integration/asset_integration.test.cjs",
+      "evidence": "83 rows, geometry/cache/ownership regressions; actual transpiled cancelOwner Set, in-flight Map.values, U05 proxy group materialization."
+    },
+    {
+      "name": "Creator TypeScript semantic check",
+      "result": "PASS",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false"
+    },
+    {
+      "name": "staging source integrity",
+      "result": "PASS",
+      "evidence": "717 files; 83 logical entries / 72 physical derived images / 849 unique asset UUIDs; stage manifest SHA 933819de722f0c92f50d18a9e544aa80381b8f210d0ddbc5ae69a802186830f6"
+    },
+    {
+      "name": "Creator Web build and runtime",
+      "result": "IN_PROGRESS_ROOT"
+    },
+    {
+      "name": "Creator WeChat/ByteDance true subpackage serialization",
+      "result": "NOT_TESTED_PENDING_TECH_CONFIG_FIX",
+      "evidence": "v0.2 failed actual package inspection; current bundle folder meta defaults compressionType 0; Tech verifying per-platform Creator schema."
+    },
+    {
+      "name": "83 Creator import UUID readback and visual review",
+      "result": "NOT_TESTED_PENDING_ROOT"
+    },
+    {
+      "name": "browser/device 20-cycle lifecycle and GPU",
+      "result": "NOT_TESTED"
+    }
+  ],
+  "historicalFailureEvidence": {
+    "browserArtifacts": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/",
+    "buildArtifacts": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-integration-v02/",
+    "compiledWebBundle": "/private/tmp/minigame-art-opt-integration-final-v0.2/build-output/minigame-art-opt-integration-final-v0.2-web-mobile/assets/main/index.js",
+    "summary": "Creator CLI exited 36 and Finished for Web/WeChat, but Web business flow failed on Set spread transpilation; WeChat output had only internal/main in game.json and five configured modules were not emitted as true subpackages."
+  },
+  "caveats": [
+    "ES5 lowering test reproduces the known TS iterable spread lowering; it is not a Creator compiled bundle. Actual v0.3 compiled-bundle probe/runtime belongs to Root evidence.",
+    "Staged bytes are not physical package bytes.",
+    "Do not mark mini-game subpackage as passed until game.json and per-module subpackages are present."
+  ]
+}

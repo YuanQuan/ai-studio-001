@@ -1,0 +1,13 @@
+{
+  "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "reviewer":"tech_lead",
+  "decision":"APPROVED",
+  "findings":[
+    {"severity":"INFO","message":"仅批准冻结framework范围的代码契约复核；准确19文件SHA见同目录FRAMEWORK_REVIEW_IDENTITY.json，其SHA-256为452b0b4ef56e0b897356712f77e3d3b0d55ad1493a37fd64452aecc8a9a704fa。module_assets.ts SHA-256 443adfbc2f9ab59ac50fec02fa8b8d54cd639edcebf36374abf98228ae3fb800。原v0.1 CHANGES_REQUESTED及失败探针保留，不覆盖。本结论不批准仍施工的页面、最终整版或运行。"},
+    {"severity":"INFO","message":"原5项问题已核修复并重跑同一独立探针：胶囊跨safe中线返回y368/h32不重叠；部分出窗Canvas保留完整投影，window x0正确映成-150；48目标保守双轴换算实际宽48；释放异常仍将依赖refs清0，重复release不漏；微信主读取抛错成功fallback390×844并诊断。证据FRAMEWORK_REVIEW_PROBES.json。"},
+    {"severity":"INFO","message":"独立新增cleanup-exception-probes.cjs覆盖Root指出的误遗漏路径，CLEANUP_EXCEPTION_RESULTS.json为PASS：根加载失败且依赖释放再抛错，外部acquire在100ms竞速内reject并携带双错误，不悬挂；cancelOwner首operation释放抛错仍清后续operation；取消在途后迟到成功，其底层release抛错仍无unhandledRejection。refs、operations与inflight归零。"},
+    {"severity":"INFO","message":"更新后的Client扩展契约测试本轮独立重跑PASS，结果FRAMEWORK_TEST_RERUN.json。共享inflight/独立Owner同generation、依赖逆序、错误重试、取消迟到、重复释放、20循环、Canvas坐标、read先于resize通知、0尺寸与平台异常fallback均有确定性证据。释放接口本身失败仍须显式诊断，逻辑计数清0不能声称底层GPU资源已成功释放。"},
+    {"severity":"INFO","message":"平台能力与安全区仍为保守实现：抖音横屏方向不明时诊断fallback；capsule不可用为null；实际SDK screen/window原点、真实旋转/安全区、DPR矩阵和GPU/驻留/性能均NOT_TESTED。最终需核Gallery/U05是否使用单一映射和资源池、resize状态保留、当前Creator构建与HTTP真实运行，不能以本框架测试代替。"}
+  ],
+  "next_action":"Master可接受本冻结框架子范围，继续页面实现；最终合并代码及构建/HTTP证据形成后再做整版代码Review。本Task不提前DONE，不增加自产切片后置效果Review。"
+}

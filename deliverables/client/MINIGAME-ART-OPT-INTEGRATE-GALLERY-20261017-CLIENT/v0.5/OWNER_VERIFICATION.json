@@ -1,0 +1,59 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.5",
+  "source_change_manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+  "checks": [
+    {
+      "name": "Creator TypeScript 4.9.5 semantic check",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit --skipLibCheck --lib es2018,dom -p apps/client/tsconfig.json",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "U01 actual-source button gesture callback sequence",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "coverage": [
+        "Creator-TS-transpiles and loads the current U01SakuraLayoutEditor source, then invokes actual button() registered handlers",
+        "drag end does not invoke the callback and clears panelScrollY even when viewport end propagation was stopped",
+        "a direct next header/close tap resets the stale gesture and invokes the callback immediately",
+        "cancel followed by a trailing end does not invoke the callback; subsequent ordinary tap works"
+      ],
+      "limit": "Effective-source callback harness, not actual rendered IAB input."
+    },
+    {
+      "name": "Gallery/U01 scroll direction effective-method regression",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "U04 reentry regression",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/u04_request_reentry_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "ModuleAssets/DerivedResolver effective-method regression",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/gallery_asset_session_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "limit": "Includes synthetic 20-cycle method coverage; no new real Web cycle run in this U01-only revision."
+    },
+    {
+      "name": "Creator Web build and IAB U01 drag→next close/cancel verification",
+      "result": "NOT_TESTED_PENDING_ROOT_BUILD"
+    }
+  ],
+  "candidate_identity": {
+    "UnitSampleGallery.ts": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+    "sakura_layout_editor.ts": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042",
+    "gallery_asset_session.ts": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0"
+  },
+  "runtime_failure_evidence": {
+    "image": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U01-close-stuck-after-drag-320.jpg",
+    "master_diagnosis": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/U01_DRAG_LIFECYCLE_FAILURE.md",
+    "result_for_v0_5": "PENDING_ROOT_BUILD_AND_IAB"
+  }
+}

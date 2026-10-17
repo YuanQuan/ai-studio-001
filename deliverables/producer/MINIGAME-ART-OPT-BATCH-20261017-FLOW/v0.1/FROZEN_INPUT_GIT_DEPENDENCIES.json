@@ -1,0 +1,312 @@
+{
+  "recorded_at": "2026-10-17T16:28:36+08:00",
+  "scope": "只读比较711冻结输入+reader addendum+v0.7 overrides。相关Source清单可能包含输入依赖而非Own编辑，已明确将layout/桥PNG/package及profiles识别为非本次Own源码提交。未复制/暂存/修改原文件。",
+  "effective_input_count": 717,
+  "own_manifest_sources": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/evidence/prechange/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/evidence/prechange/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/evidence/prechange/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.3/evidence/pre-runtime-fix/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/prechange-v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/prechange-v0.3/evidence/pre-runtime-fix/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/prechange-v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/prechange-v0.4/evidence/prechange-v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/prechange-v0.4/evidence/prechange-v0.3/evidence/pre-runtime-fix/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.3/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/SOURCE_CHANGE_MANIFEST.json"
+  ],
+  "associated_artifact_search_roots": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1",
+    "deliverables/master/MINIGAME-ART-OPT-20261016",
+    "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016",
+    "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013"
+  ],
+  "non_own_inputs_differing_from_HEAD": [
+    {
+      "path": "apps/client/assets/.DS_Store",
+      "frozen_sha256": "a428e703b8d17af186eb94afeff53743b7210ae283cf6fdff16f1ee58aac3c28",
+      "current_sha256": "a428e703b8d17af186eb94afeff53743b7210ae283cf6fdff16f1ee58aac3c28",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/labs/.DS_Store",
+      "frozen_sha256": "bc774fe46fb9b48ac26f42600631d02d6714ce4df8647f67a4322d3ba774982b",
+      "current_sha256": "bc774fe46fb9b48ac26f42600631d02d6714ce4df8647f67a4322d3ba774982b",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/resources/.DS_Store",
+      "frozen_sha256": "7269e9b247cf53e2a8ce7a2058a6e8eb0e1d0935dbf1e68a9dd93c79c3b50fe3",
+      "current_sha256": "7269e9b247cf53e2a8ce7a2058a6e8eb0e1d0935dbf1e68a9dd93c79c3b50fe3",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "frozen_sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "current_sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "HEAD_sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "git_status": "M apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [
+        "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_l.png"
+      ],
+      "resolution": "EXISTING_ARTIFACT_BYTES_FOUND_MASTER_DECISION_REQUIRED"
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "frozen_sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "current_sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "HEAD_sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "git_status": "M apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [
+        "deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/v0.1/exports/tex_sakura_rr_bridge_front_r.png"
+      ],
+      "resolution": "EXISTING_ARTIFACT_BYTES_FOUND_MASTER_DECISION_REQUIRED"
+    },
+    {
+      "path": "apps/client/assets/units/.DS_Store",
+      "frozen_sha256": "2501ebd337ff7fa1c9b18d86c51088495856c3139d3ea30b6ceefe11b3dc3bf4",
+      "current_sha256": "2501ebd337ff7fa1c9b18d86c51088495856c3139d3ea30b6ceefe11b3dc3bf4",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/units/background/.DS_Store",
+      "frozen_sha256": "19641d5a1423e6df5c06dd71613c54fd4480d492c34c6424307697b0d21c4c3f",
+      "current_sha256": "19641d5a1423e6df5c06dd71613c54fd4480d492c34c6424307697b0d21c4c3f",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/units/dialogue/.DS_Store",
+      "frozen_sha256": "2a1ea2e2f6f171ea64f90ea34cdb09d5212f6c6414a2092e07428c6b83ed8973",
+      "current_sha256": "2a1ea2e2f6f171ea64f90ea34cdb09d5212f6c6414a2092e07428c6b83ed8973",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/units/ghost-customer/.DS_Store",
+      "frozen_sha256": "2f82b152ac0ca9aec1acc8c16758e58e7ba48cfc9b162590fc2eecef55527265",
+      "current_sha256": "2f82b152ac0ca9aec1acc8c16758e58e7ba48cfc9b162590fc2eecef55527265",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/units/shops/.DS_Store",
+      "frozen_sha256": "1d0ba2c8e54edda2ff5e403a6659d9c0fd4a8f6cd845476a6224c5fdcbb712d7",
+      "current_sha256": "1d0ba2c8e54edda2ff5e403a6659d9c0fd4a8f6cd845476a6224c5fdcbb712d7",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/assets/units/shops/lantern/.DS_Store",
+      "frozen_sha256": "77a906fd918c770fc77c3183bae1aeb555685c075c341009505291f15f17abe7",
+      "current_sha256": "77a906fd918c770fc77c3183bae1aeb555685c075c341009505291f15f17abe7",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_OS_METADATA_NOT_PRODUCTION_SOURCE"
+    },
+    {
+      "path": "apps/client/package.json",
+      "frozen_sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "current_sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "HEAD_sha256": "ae7329118191bf64a9f2bc747e300a72e98c0e1850376ea6628594412467f1b3",
+      "git_status": "M apps/client/package.json",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "UNRESOLVED_FROZEN_INPUT_DEPENDENCY"
+    },
+    {
+      "path": "apps/client/profiles/v2/editor/packages.json",
+      "frozen_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "current_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/adsense-h5g-plugin.json",
+      "frozen_sha256": "e03aff1db95d8d1f64662b432c1919f262f31282f99fd3b966d07f409c33b489",
+      "current_sha256": "e03aff1db95d8d1f64662b432c1919f262f31282f99fd3b966d07f409c33b489",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/builder.json",
+      "frozen_sha256": "657f680d65891f9488f588e1433c701e27e1b97595b14f5e6ec79bfe5c79f4e3",
+      "current_sha256": "657f680d65891f9488f588e1433c701e27e1b97595b14f5e6ec79bfe5c79f4e3",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/cocos-service.json",
+      "frozen_sha256": "0c2b6084a4e714d0ba135681153ac7433cff9e9c7f14a0811004b09c964b877c",
+      "current_sha256": "0c2b6084a4e714d0ba135681153ac7433cff9e9c7f14a0811004b09c964b877c",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/device.json",
+      "frozen_sha256": "93af91e0b90038cedc84d08651f845e1c2e2ae460321c19f083c27a178e451f8",
+      "current_sha256": "93af91e0b90038cedc84d08651f845e1c2e2ae460321c19f083c27a178e451f8",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/engine.json",
+      "frozen_sha256": "e3755683f34745346f06b4dd665d172252183004e1aa50f90ca579837c2f244f",
+      "current_sha256": "e3755683f34745346f06b4dd665d172252183004e1aa50f90ca579837c2f244f",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/program.json",
+      "frozen_sha256": "d914f9f19ffe02724337936d8c7907798c8666566902b78243eb1aa8da0baedd",
+      "current_sha256": "d914f9f19ffe02724337936d8c7907798c8666566902b78243eb1aa8da0baedd",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/project.json",
+      "frozen_sha256": "86e60258fc615fe023aef88ff8d66f6e8cf0c784fcef5c02d75b08a42b204241",
+      "current_sha256": "86e60258fc615fe023aef88ff8d66f6e8cf0c784fcef5c02d75b08a42b204241",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/server.json",
+      "frozen_sha256": "e02c85356446e696f75d83e70db83d2629eb6dd8e76d0e69ce1b457f5c3df3b9",
+      "current_sha256": "e02c85356446e696f75d83e70db83d2629eb6dd8e76d0e69ce1b457f5c3df3b9",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/web-desktop.json",
+      "frozen_sha256": "cee4eef092e7b95bc7a17142283425ec42c2634f212640a61ec334ba78fe00dc",
+      "current_sha256": "cee4eef092e7b95bc7a17142283425ec42c2634f212640a61ec334ba78fe00dc",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/web-mobile.json",
+      "frozen_sha256": "b6cc800badbd1bac383e665348203b80f95bf4dd8facf088a56e7d36859930fe",
+      "current_sha256": "b6cc800badbd1bac383e665348203b80f95bf4dd8facf088a56e7d36859930fe",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "IGNORED_CREATOR_PROFILE_REBUILD_REQUIREMENT_TO_DOCUMENT"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "frozen_sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "current_sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "HEAD_sha256": "3153795d853948ea3a97a98ba59608c5abdee9ad0b6cde926e682ae777f50bb8",
+      "git_status": "M apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "UNRESOLVED_FROZEN_INPUT_DEPENDENCY"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/reference-image.json",
+      "frozen_sha256": "b43f39e5f12e2e81dc3260076aec1ea2deba26bafb8ac14a720107b1c5353316",
+      "current_sha256": "2f648e7a580b19c9adf2afd466909eec078e9ce121019226545bbebc1741fed4",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "AUTHORIZED_PROFILE_RECOVERY_NOT_UNRESOLVED",
+      "authorization": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/PROFILE_RECOVERY_AUTHORIZATION.json"
+    },
+    {
+      "path": "apps/client/profiles/v2/packages/scene.json",
+      "frozen_sha256": "1abdb324d367ea78ca670d1c8e648ddedea7d70f9d0c97392655bc4ed13bb7b2",
+      "current_sha256": "892d75df83b27f583a78d1829c50a1727200bac3f6ee22f7964d7bd26e3008d2",
+      "HEAD_sha256": null,
+      "git_status": "",
+      "in_current_own_source_commit_manifest": false,
+      "artifact_same_sha_recovery_paths": [],
+      "resolution": "AUTHORIZED_PROFILE_RECOVERY_NOT_UNRESOLVED",
+      "authorization": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/PROFILE_RECOVERY_AUTHORIZATION.json"
+    }
+  ],
+  "conclusion": "当前本机冻结输入重建不等于干净HEAD checkout重建；需Master决定可追溯快照/来源补全或明确重建限制。两profile已有授权恢复，不列未解决。",
+  "limitation": "未搜索无关Artifact或全盘；存在可恢复同SHA文件不代表已获准将他项原文件加入本轮源码提交。"
+}

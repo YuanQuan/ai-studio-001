@@ -1,0 +1,47 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "owner": "client",
+  "summary": "修正Gallery菜单、游客托盘、U00/U04阅读区及U01调节面板共七处反向拖动位移；新增菜单滚轮支持。Creator TS语义与有效方法探针通过；本候选新Creator Web和IAB实际触控待Root验证。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/tests/scroll_direction_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/evidence/prechange/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只改Gallery、新session helper、sakura_v03_environment.ts的页面预载帧入口/必要meta，以及Master明确授权的U01调节面板滚动手势和有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+      "result": "PASS",
+      "evidence": "本版只改UnitSampleGallery.ts与Master授权的sakura_layout_editor.ts滚动手势，新增有效方法探针和v0.4交付文档；新session、environment、meta、layout、素材、UI布局与玩法动作均未改。Brief与Tech对齐记录保留在v0.1/v0.2历史交付。"
+    },
+    {
+      "criterion": "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+      "result": "NOT_TESTED",
+      "evidence": "本版未改生产资源加载逻辑，但新的整合源码尚未Creator Web重建与IAB回归；等Root新候选运行后核验。"
+    },
+    {
+      "criterion": "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+      "result": "NOT_TESTED",
+      "evidence": "ModuleAssets/session源SHA与v0.5真实20循环通过时相同，且本版未修改该源；v0.4有效方法探针中的合成循环通过。不过当前手势候选尚未实际运行，真实20轮结果仅作为前一候选证据引用，不宣称本版通过。"
+    },
+    {
+      "criterion": "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+      "result": "PASS",
+      "evidence": "本版不改Prefab派生绑定；session有效方法探针仍通过CUSTOM/trim=false并保持克隆几何，资源和游客帧/挂点实现源码未改。"
+    },
+    {
+      "criterion": "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。",
+      "result": "PASS",
+      "evidence": "本版未改Provider/session调用契约；全项目Creator TypeScript 4.9.5语义检查及session有效方法回归通过。新Creator Web/IAB集成仍由父Task执行。"
+    }
+  ],
+  "assumptions": [
+    "触拖方向以Cocos getUILocation()坐标向上递增、Gallery内容正offset向上移动为准；按照Master授权修复，不改变原交互布局和语义。"
+  ],
+  "risks": [
+    "当前候选尚未Creator重建或真实IAB触控；菜单上拖到U05、下拖回顶以及U00/U01/U02/U04面板的真实触拖仍待Root核验。",
+    "v0.5真实资源释放20循环绑定的是前一候选；本版没有重新实际运行该循环。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

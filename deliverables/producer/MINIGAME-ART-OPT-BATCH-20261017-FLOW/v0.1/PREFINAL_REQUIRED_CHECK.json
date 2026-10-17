@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-17T15:54:44+08:00",
+  "status": "PRECHECK_PENDING_RUNTIME",
+  "checks": [
+    {
+      "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+      "required_count": 5,
+      "missing": [],
+      "criteria_same_order": true,
+      "schema_issue": null,
+      "acceptance_results": [
+        "PASS",
+        "NOT_TESTED",
+        "NOT_TESTED",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+      "required_count": 8,
+      "missing": [],
+      "criteria_same_order": true,
+      "schema_issue": "$.acceptance_results4.result:NOT_TESTED_PENDING_ROOT",
+      "acceptance_results": [
+        "PASS",
+        "NOT_TESTED",
+        "NOT_TESTED",
+        "NOT_TESTED",
+        "NOT_TESTED_PENDING_ROOT"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017",
+      "required_count": 4,
+      "missing": [],
+      "criteria_same_order": true,
+      "schema_issue": null,
+      "acceptance_results": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    }
+  ]
+}

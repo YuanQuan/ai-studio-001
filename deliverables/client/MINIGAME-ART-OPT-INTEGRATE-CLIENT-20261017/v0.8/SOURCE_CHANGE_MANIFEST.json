@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.8",
+  "scope": "仅发布输入生成器与回归测试工具层；Runtime、图片、Scene、UI及Creator工程源均未修改。",
+  "authorization": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/PORTABLE_INPUT_RECOVERY_AUTHORIZATION.json",
+    "sha256": "76a6c02f6eb60736d1f921a400e7c1e76ce1c43c4374eaf3cee4fc0262ecd334",
+    "bytes": 3372
+  },
+  "dependencyAudit": {
+    "path": "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/FROZEN_INPUT_GIT_DEPENDENCIES.json",
+    "sha256": "fe747ec4f9a8a410356b735c02a88051415b7902b4a8a343ca5601c36b42b3ef",
+    "bytes": 17843
+  },
+  "changes": [
+    {
+      "path": "apps/client/tools/asset-integration/build_staging.cjs",
+      "baseSha256": null,
+      "sha256": "02c1bb3147a4189e92cc629213b628b757374e79f258166f68f2cc5fca438280",
+      "transformId": "portable-frozen-input-recovery-v1",
+      "summary": "新增严格授权快照恢复、排除9个.DS_Store和13个本机Editor profiles、接受可选sourceRoot以验证clean-like非Git输入；非四条白名单源仍按freeze严格校验。"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/portable_input_recovery.test.cjs",
+      "baseSha256": null,
+      "sha256": "c1718afc92874f9b7baa03c1bae87f555349a97050e6801787db2fe3f1d771a3",
+      "transformId": "portable-cleanlike-payload-regression-v1",
+      "summary": "构造不含profiles/.DS_Store的普通临时输入树，用4条HEAD字节验证精确快照恢复，并比较v0.7/v0.8 payload及非授权漂移拒绝。"
+    }
+  ],
+  "stagingManifest": {
+    "path": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable/STAGING_INPUT_MANIFEST.json",
+    "sha256": "77ab51753aa906f2dbc78cfe9b9af18cbcc94aedb3de7ee7ad121ad252d6a7d0",
+    "bytes": 240118
+  },
+  "runtimeSourceChanges": []
+}

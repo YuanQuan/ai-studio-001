@@ -1,0 +1,69 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.1",
+  "feature_brief_sha256": "15896c9c9dee3a04052f3e96b32d0c7f8cfc01f4cb9fa2bf8bf472f118f35abb",
+  "tech_alignment": {
+    "status": "APPROVED_LIGHT_REVIEW",
+    "artifact": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.15/GALLERY_BRIEF_REVIEW.json",
+    "sha256": "eb85333304486bab525dcd3f894314f9691b30c64ebe1ee7a7ae0ee6a1233157",
+    "reviewed_brief_sha256": "77d16d47d9461cc31e92053960651b854a04f345d025b07ca63f3268b021f7d8",
+    "owner_corrected_brief_sha256": "15896c9c9dee3a04052f3e96b32d0c7f8cfc01f4cb9fa2bf8bf472f118f35abb",
+    "correction_note": "Owner仅修正layout源码SHA与far_l PNG SHA身份；Task语义/范围不变，Master接受更正后的Brief。"
+  },
+  "changed_files": [
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "sha256": "c0f3f3b8d90eaea5287019b37e1c3960019f21d7975119bcc1d6ced5e8182848",
+      "changes": "单一Gallery runtime、按页session加载/失败重试、U00-U05依赖、U01捕获provider与shops绑定器、derived Prefab替换、退场清引用/延迟释放。"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+      "changes": "新增page-scoped ModuleAssets/DerivedAssetResolver会话、路径索引、provider资源回调、generation检查、迟到handle回收及derived frame tree binder。"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "uuid": "2398be67-f94e-4a40-9c45-02924cc5a731",
+      "changes": "新增TypeScript脚本导入身份；Creator隔离导入核验仍待父Task。"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+      "changes": "populateSakuraV03新增可选页面预载帧Map；无Map时保留legacy loadFrames路径。"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/tests/gallery_asset_session_probe.cjs",
+      "sha256": "36cc69f69efb45bd723c347ecb088851b9c1a5ef5ff86b39fbe6887069849a3e",
+      "changes": "新增不引入依赖的方法级竞争、派生帧几何与20轮共享释放探针。"
+    }
+  ],
+  "approved_identity_inputs": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "modified": false
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_layout.ts actual far_l source PNG",
+      "sha256": "ee02f590849e6aa4cb51244147d78a11a5c2e5560969d689e4c9db72cd5e3940",
+      "modified": false
+    }
+  ],
+  "unchanged_by_this_owner": [
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts (resource Owner change; bindPrefab integration verified by source and semantic check, not authored here)",
+    "apps/client/assets/labs/u05/**",
+    "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+    "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+    "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+    "Scene/Prefab/layout/PNG/existing UUID"
+  ],
+  "validation": {
+    "creator_typescript_4_9_5_semantic_check": "PASS",
+    "session_method_probe_and_20_synthetic_owner_cycles": "PASS",
+    "creator_import": "NOT_TESTED_PARENT_TASK",
+    "creator_build": "NOT_TESTED_PARENT_TASK",
+    "actual_web_20_page_cycles": "NOT_TESTED_PARENT_TASK",
+    "actual_iab": "NOT_TESTED_PARENT_TASK"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "basis": "RESOURCE_STAGING_INPUT_FREEZE.json plus its authorized reader addendum; only explicit Client-owned deltas below may replace frozen code for this generated staging run.",
+  "overrides": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "baseSha256": "99f0193fa8f9e20238f5ebbc7c75be5db39863c3df7a19fb6cf6e1d2c28efd2c",
+      "sha256": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042",
+      "transformId": "u01-button-drag-end-lifecycle-fix-v5",
+      "reason": "Gallery Owner v0.5 fix clears panel pointer/drag state on button end/cancel and ensures each new gesture begins cleanly; source delta from v0.6 candidate 184f3610ffbd298e10dad79ec83e179f3e859b1a2fd3e9b612046b3180951a46."
+    },
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "baseSha256": "159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726",
+      "sha256": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e",
+      "transformId": "u05-configure-page-resource-provider-v1",
+      "reason": "U05 captured page resource provider and generation-safe callbacks"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "baseSha256": "c79936e6a4c60e5df86309abc3d5d4a413cddffd80496652c28cde2d50e7b2b1",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+      "transformId": "u01-environment-accepts-page-owned-frames-v1",
+      "reason": "Main-owned U01 page frame injection"
+    },
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "baseSha256": "fc660686f4059ddbbec69bfe0eb414b8f26b374229c25f55f51d6cfb5be106df",
+      "sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+      "transformId": "gallery-small-screen-gesture-direction-v4",
+      "reason": "Master-approved Gallery v0.4 small-screen gesture delta direction/callback fix; bound to source manifest 0f93418bcea5ec3fb8af87a8dcba6a85dca16ea634e23584c3f70cf578ad1774."
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/cocos_bundle_loader.ts",
+      "baseSha256": "f759319dd64e8238b60f233e5b40dad21106d550ffd297d32339b2605c3902c1",
+      "sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218",
+      "transformId": "bundle-loader-refcount-ownership-v1",
+      "reason": "Per-asset addRef/decRef ownership without forced release"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/module_assets.ts",
+      "baseSha256": "f36696b39384994fdd334d325cea549e183bc46e18aee6143857c2280f478a80",
+      "sha256": "08776264692d93888212a57340118de511e9bc5faeb593bd265fc83797bf8641",
+      "transformId": "module-assets-arrayfrom-iterables-v2",
+      "reason": "Materialize Set/Map iterables with Array.from under Creator legacy downlevel output"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "baseSha256": "15e0b7b81b37bf078f25c065684b7456ee45bc202faf24b588ca1c56de49a0f7",
+      "sha256": "c31383a69473e53bbd3e6901f19a17d530553fed5d1cea62afe5d21dd05862f2",
+      "transformId": "u05-accessibility-set-arrayfrom-v2",
+      "reason": "Materialize conflicting hit group Set with Array.from so proxy groups survive production transform"
+    }
+  ],
+  "additions": [
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+      "sha256": "42674f344b1eccca8e67b0609102bf730a4c568af1810bf89abbe6b1fbbf1df9",
+      "transformId": "approved-asset-registry-v1",
+      "reason": "Approved asset identity mapping"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "sha256": "5fcdc784b4fd0f03a2bcafd594a93bb8df700318e767ffb487d7802c9b354e3f",
+      "transformId": "client-module-manifests-v3-production-filtered-merge",
+      "reason": "Production manifest merges filtered approvals and omits retired far_l and STATIC_BARE while preserving all approved live resources."
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "sha256": "71c0f9c220ec88305ca1e222380d8e984a8d3135b7ae0ff3f1d71aa2387adb8c",
+      "transformId": "derived-frame-resolver-arrayfrom-v3",
+      "reason": "Derived frame resolver with iterable-safe cleanup"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta",
+      "sha256": "15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b",
+      "transformId": "derived-frame-resolver-meta-v1",
+      "reason": "Creator metadata"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0",
+      "transformId": "gallery-session-arrayfrom-v2",
+      "reason": "Main-owned per-page session helper after Set/Map iterable fixes"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "transformId": "gallery-page-session-meta-v1",
+      "reason": "Creator metadata"
+    }
+  ],
+  "gallerySourceFreeze": {
+    "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "sha256": "db9ebf650c2ea0835fee9c6b9a636b8e49a88c49570f28a7cea9b2bebd378eac",
+    "galleryPath": "apps/client/assets/UnitSampleGallery.ts",
+    "gallerySha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+    "u01Path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+    "u01Sha256": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042"
+  },
+  "preparationStatus": "GALLERY_V0_5_SOURCE_CANDIDATE_BOUND"
+}

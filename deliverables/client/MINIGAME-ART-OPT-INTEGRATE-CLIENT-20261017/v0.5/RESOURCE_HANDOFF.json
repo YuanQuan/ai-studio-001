@@ -1,0 +1,17 @@
+{
+  "schemaVersion":1,
+  "status":"THREE_PLATFORM_BUILDS_PASS_U04_MATRIX_PENDING",
+  "stagingRoot":"/private/tmp/minigame-art-opt-integration-staging-v0.5-u04fix",
+  "stagingManifestSha256":"6204555aa424f066b43bd4f6da617bf4c0da6f287a9f097927dee5d67a069fc3",
+  "overridesSha256":"add9b8418930f2690a9deb02d8099ccc539961aab18319de55fcd40ae24c0700",
+  "approvedIdentityCount":83,
+  "physicalDerivedImageCount":72,
+  "uniqueAssetUuidCount":858,
+  "gallerySource":{"manifestPath":"deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/SOURCE_CHANGE_MANIFEST.json","manifestSha256":"243d396bf07befbe28e2902acfd0ca465bc7d08afa9e9ac10e1a8ab8898016dd","sourcePath":"apps/client/assets/UnitSampleGallery.ts","sourceSha256":"00fc815b9edec3b9c1dcd3c6ed00ee1d38fd9243bbe8d0e752604fdc4e1d944b"},
+  "u04Regression":"Actual v0.4 failure evidence retained. In v0.5, two U04 reentries and 20 mixed-page enter/exit cycles completed with zero console warn/error and zero post-exit lease/request/derived-frame counts. A separate 320x568 menu drag exposed reversed UILocation delta; evidence/menu-reversed-drag.jpg. Gallery/U01 gesture correction is assigned for v0.6. Full 90-item inspection and final matrix remain pending.",
+  "creatorBuilds":"PASS: Web/WeChat/ByteDance each exit 36 + Finished.",
+  "nativeSubpackages":"PASS: both game.json outputs list 8 roots including all five local module bundles.",
+  "physicalOutputs":{"wechatgame":{"bytes":38706903,"mainPackageExcludingSubpackagesBytes":3256025},"bytedance-mini-game":{"bytes":38681249,"mainPackageExcludingSubpackagesBytes":3230374},"web-mobile":{"bytes":38670260}},
+  "measurementLimit":"Physical output bytes do not establish upload/transfer size or account/platform quota. Full U04 page matrix and lifecycle loop evidence remains pending.",
+  "sourcePreservation":"The old /private/tmp/minigame-art-opt-integration-staging-v0.5 directory was preserved because it contained a prior stale staging project. This candidate uses a distinct path. Original PNG files and other project changes remain untouched."
+}

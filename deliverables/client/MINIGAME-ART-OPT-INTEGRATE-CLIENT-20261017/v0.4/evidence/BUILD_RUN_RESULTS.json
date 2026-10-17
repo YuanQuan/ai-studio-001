@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "stagingInput": "/private/tmp/minigame-art-opt-integration-staging-v0.4d",
+  "creatorVersion": "3.8.8",
+  "resultSource": "Root-managed isolated Creator CLI run; logs are preserved beside this file.",
+  "platforms": [
+    {
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "finished": true,
+      "config": "configs/web-mobile.json",
+      "log": "creator-web-mobile.log",
+      "outputDirectory": "minigame-art-opt-integration-staging-v0.4d-web-mobile"
+    },
+    {
+      "platform": "wechatgame",
+      "exitCode": 36,
+      "finished": true,
+      "config": "configs/wechatgame.json",
+      "log": "creator-wechatgame.log",
+      "outputDirectory": "minigame-art-opt-integration-staging-v0.4d-wechatgame",
+      "gameJson": "game-json/wechatgame-game.json",
+      "gameJsonSha256": "336792c7f7551e3dc8198e05c1c1edeeed60c93dce4049a2437a94894857cfb5",
+      "subpackageCount": 8,
+      "subpackageNames": ["internal", "resources", "main", "dialogue", "milk-tea", "shops", "tourist", "world"]
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "exitCode": 36,
+      "finished": true,
+      "config": "configs/bytedance-mini-game.json",
+      "log": "creator-bytedance-mini-game.log",
+      "outputDirectory": "minigame-art-opt-integration-staging-v0.4d-bytedance-mini-game",
+      "gameJson": "game-json/bytedance-mini-game-game.json",
+      "gameJsonSha256": "e74f355a02931b7ba75886b81b59c1b125511f01d29461711a433a744e8da758",
+      "subpackageCount": 8,
+      "subpackageNames": ["internal", "resources", "main", "dialogue", "milk-tea", "shops", "tourist", "world"]
+    }
+  ],
+  "packagePhysicalByteMeasurements": {
+    "wechatgame": {"allOutputFiles": 38706193, "mainExcludingSubpackages": 3256025},
+    "bytedance-mini-game": {"allOutputFiles": 38680539, "mainExcludingSubpackages": 3230374},
+    "web-mobile": {"allOutputFiles": 38669550, "mainExcludingSubpackages": null}
+  },
+  "measurementLimit": "These are physical generated file sizes from the build output, not upload/transfer sizes, account quotas, upload validation, or measured download sizes. DPR-specific behavior, device performance, and actual GPU memory are NOT_TESTED. No 20-cycle claim is made here.",
+  "outputHashInventory": {"path":"OUTPUT_FILE_HASHES.json","sha256":"2008116515bb7ec6ef1cf25d461e2fa03b0b54e09ecba1035d452ae32003e345","fileCount":2447,"totalPhysicalBytes":116056282}
+}

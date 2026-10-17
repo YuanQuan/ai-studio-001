@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "STAGING_READY_FINAL_BUILD_PENDING",
+  "stagingRoot": "/private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix",
+  "stagingManifestSha256": "a9e9b81a641e544ac859e9aadf22d3cdf7fb90305224f4dd5b839ab4248bbc24",
+  "freezeSha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+  "readerAddendumSha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68",
+  "ownerSourceOverridesPath": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/OWNER_SOURCE_OVERRIDES.json",
+  "ownerSourceOverridesSha256": "d8e81b9c4ed88c89ac479589aef4052c20e5470d73077c78ced3e1dced4ee332",
+  "generatedStageConfigHashes": {
+    "web-mobile": "a3b1d41ffa3ee5ff833b044b380002af8504751428edc95bf6945fd8bdc955c9",
+    "wechatgame": "f870c1e93c279909c365af6ec4a92e4a9219dc3a5511dad677c463b57a30d7cf",
+    "bytedance-mini-game": "fd6fb7f6c6a3df42c3b5332bdf85b7159f1c037fbd3fe06268120e1beb98bf35"
+  },
+  "finalBuildRoot": "/private/tmp/minigame-art-opt-integration-final-v0.7-u01fix",
+  "finalBuildConfigGeneration": "NOT_TESTED; Root to regenerate after copying staging.",
+  "finalBuildConfigSha256": "NOT_TESTED",
+  "creatorBuild": {
+    "web-mobile": "NOT_TESTED",
+    "wechatgame": "NOT_TESTED",
+    "bytedance-mini-game": "NOT_TESTED"
+  },
+  "nativeGameJson": "NOT_TESTED in v0.7",
+  "actualU01GestureRuntime": "NOT_TESTED in v0.7; v0.6 historical U01 drag→direct close FAIL.",
+  "historicalV06": {
+    "creatorBuild": {
+      "web-mobile": "PASS exit36 + Finished (11s)",
+      "wechatgame": "PASS exit36 + Finished (9s)",
+      "bytedance-mini-game": "PASS exit36 + Finished (9s)"
+    },
+    "finalConfigSha256": {
+      "webMobile": "a1e465f27d852916809c4aba592299c063e1d155f49bef5e31af7c1cb380a2b3",
+      "wechatgame": "55d86f3cf472f4693494a5d80b0bc72b8d707906c7e861f557d50944b9fdd186",
+      "bytedanceMiniGame": "11a0b9420e16fbe94c8c1b62cb3094d6bfe7e53d17c5f1dd24920086cfcce949"
+    },
+    "historicalU01Failure": "Direct close tap after U01 panel drag failed; see failure report and screenshot."
+  },
+  "requiredBuildCommand": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <finalRoot> --build 'configPath=<absolute-final-config>;platform=<platform>'"
+}

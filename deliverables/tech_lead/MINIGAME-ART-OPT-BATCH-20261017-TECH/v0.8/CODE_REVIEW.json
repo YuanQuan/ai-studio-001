@@ -1,0 +1,12 @@
+{
+ "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+ "reviewer":"tech_lead",
+ "decision":"APPROVED",
+ "findings":[
+  {"severity":"INFO","message":"仅接受最终候选源码范围，准确身份CODE_REVIEW_IDENTITY.json：Gallery d1a568771437a1c2e98f8d871e3c54a479ff28564acd22071c59d8ee702564e1；U01 b6c13a3563f8e5fd1fc29ef2ad4434e65d0a39e7355d81f1f0a74ebd5dd10d7a；reader 5a23c5ae0f1a9389677d11a28efbaf5efab4555471e74090b93e9c5539121dbf。ModuleAssets f36696与U05 6acf1f沿已核批准，不重做已关问题。历史Review不覆盖。"},
+  {"severity":"INFO","message":"v0.7唯一剩余reader全局input隔离已关闭：Gallery mouseDown/move/up检测reader及U00modal并清旧目标/滚动；U01 touch/mouse start/move/wheel及onUi检查reader，清pointer/dragging；Reader打开/关闭触发callback取消旧手势。独立重跑实际方法probe，U00底层actions=0、U01 worldCalls=0、targets/pointer/dragging均清。不是镜像公式断言，源方法实际抽取执行。"},
+  {"severity":"INFO","message":"Root实际预检所见U00modal顶层及tiny HUD修订已实读：modal提升到最后sibling并取消旧手势；Gallery syncButtonDrawing与U01 redrawButton从uiScale设置16/24与足够文本框；实际方法probe为PASS。Reader body/footer实际布局无重叠，按fullHeight滚动位置使全文末尾抵达body底，测试保留尾部证据。PAGE_PROBES_RERUN.json包含以上真实方法结果。"},
+  {"severity":"INFO","message":"源码层面没有本轮未关闭阻断项；原6项与Error兼容沿v0.7已核结果。该APPROVED仅源码子范围，不表示最终CLI、资源导入或HTTP/IAB运行PASS。Root v0.6已实际菜单及U00/U01预检且历史Error启动不再复现；本v0.7候选仍须独立构建身份与实际IAB证据。平台/DPR/GPU性能仍NOT_TESTED，不增加自产切片后置效果Review。"}
+ ],
+ "next_action":"等待Master交最终候选Creator构建/源码身份及v0.7 HTTP/IAB实际结果，再填写本Tech Task所需最终REVIEW.md、REVIEW.json、DELIVERABLE；当前不将构建/运行写PASS，不提前DONE。"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "title": "Gallery按页模块租约及裁片接入调用点",
+  "type": "integration",
+  "owner": "client",
+  "parent": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "objective": "在同一Client实现阶段内部，接入已批资源/已批ModuleAssets契约，负责Gallery统一按页加载、取消、退出与派生帧绑定；不改变已验证UI布局和玩法。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/SAME_PHASE_INTEGRATION_DECISION.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE_ADDENDUM.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.2/STAGING_PLAN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/GESTURE_FAILURE_REPORT.md"
+  ],
+  "deliverables": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "只改Gallery、新session helper、sakura_v03_environment.ts的页面预载帧入口/必要meta，以及Master明确授权的U01调节面板滚动手势和有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+    "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+    "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+    "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+    "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。"
+  ],
+  "dependencies": [],
+  "status": "REVISION",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派，不自行创建子任务或Git；模型gpt-6-luna low。",
+    "本任务接管apps/client/assets/UnitSampleGallery.ts及新framework/asset-integration/gallery_asset_session.ts，资源Owner不同时写；U01/U05/registry/resolver/staging脚本仍资源Owner。",
+    "API协调：public loadPageResource(path:string,type:any,callback:(error:Error|null,asset:any)=>void):void；public releasePageResource(path:string,type:any):void。每页独立token/generation；父Owner在U01/U05调用这些方法，页面dispose不自行释放他人共享texture。",
+    "新增@property public useOptimizedBundles=false；只在生成Scene将其设置true并解除非启动硬refs。原工程legacy行为保留，生产flag启用后错误不得回退旧路径掩盖。",
+    "当前createClientAssetRuntime()返回{modules,derived}，CLIENT_ASSET_MODULE_MANIFEST/APPROVED_DERIVED_ASSET_MANIFEST由资源Owner维护；使用已批ModuleAssets接口，不另建第二Bundle manager。缺实际路径登记需报Master协调。",
+    "生产按页会话可收集module leases、derived leases及原路径→资产字典；所有resource callbacks异步且检查当前session/token，dispose幂等。原U04独立池需在生产改同一个runtime.modules。",
+    "Prefab序列化CUSTOM/trim=false转换由资源Owner负责；本任务runtime绑定先设CUSTOM/trim=false，留原UIT尺寸，不能修改全局缓存importedFrame或Prefab。",
+    "最终全部Client准确实现聚合Tech Review→USER_REVIEW，Task拆分不加中间用户门禁。",
+    "Master于2026-10-17授权同Owner修改apps/client/assets/labs/u01/sakura_v03_environment.ts：populateSakuraV03可接受可选页面预载帧映射，production不进入全局frameCache，legacy无参数保持原行为；sakura_v03_layout.ts禁止修改。逻辑far_l实际引用far_l_eye_dark_base.png，bridge_body_l/r实际引用*_clean.png，按真实路径解析，不按逻辑ID替换旧图。",
+    "2026-10-17实际Creator compiled集合spread变concat及U00失败触发修订；原候选保留失败证据。Resource另获授权修u05_accessibility.ts集合展开并纳入逐源override，不改项目ES目标。最终真实分包尚待配置生效核对。",
+    "2026-10-17 U04实际重入取消误报触发已授权返工；当前实现Required指针已更新，历史证据保留，不新增美术或UI审批门禁。",
+    "2026-10-17 Master授权同一Client阶段修正实际小屏触拖反向；Gallery Owner另负责U01滚动手势，资源Owner只更新明确哈希和隔离候选。"
+  ]
+}

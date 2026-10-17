@@ -1,0 +1,11 @@
+{
+ "task_id":"MINIGAME-ART-OPT-IMPORT-TECH-20261017",
+ "reviewer":"tech_lead",
+ "decision":"APPROVED",
+ "findings":[
+  {"severity":"INFO","message":"门禁边界纠正：现有已批TECH_DESIGN/UI/Art83准确映射及完整实现/本地分包授权已齐。框架与资源接入属于同Client实现阶段的内部代码聚合，Task拆分不新增中间用户门禁；v0.1对内部复用要求先独立用户批准的解释过严，本版保留旧记录并澄清。最终全部Client准确交付仍TechReview→USER_REVIEW及适用QA，不得供其他正式下游冒充已批上游。"},
+  {"severity":"INFO","message":"staging路线在已批合同内可行：独立生成工程锁原始输入hash、保留原路径/历史/其他dirty，canonical一UUID一物理源一bundle；仅生成目录解除启动硬引用/转换加载/注入public frame.reset，不移动原工程。生成器、引用转换与最终生成代码也须审查和真实构建运行，不能免门禁。具体见STAGING_PLAN.md与CLIENT_HANDOFF.json。"},
+  {"severity":"INFO","message":"本版只细化执行和门禁解释，不重做Art Gate2、不改Studio、不改玩法/UV/字体/画质/帧数，不授权CDN。Importer/83映射真实证据沿v0.1与Master IMPORT_HANDOFF_MASTER_REVIEW；Web bundle不等于目标小游戏真实分包，平台/GPU仍NOT_TESTED。"}
+ ],
+ "next_action":"Master内部核本版并Review已派Client Owner Brief后继续同阶段staging实现；任何真实新契约或缺批准输入先报差异，最终准确Client交付照常用户审批。"
+}

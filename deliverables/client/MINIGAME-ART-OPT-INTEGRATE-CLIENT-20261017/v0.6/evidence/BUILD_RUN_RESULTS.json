@@ -1,0 +1,277 @@
+{
+  "version": "v0.6",
+  "finalRoot": "/private/tmp/minigame-art-opt-integration-final-v0.6-gesturefix",
+  "creatorBuilds": {
+    "web-mobile": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": true,
+      "durationSeconds": 11,
+      "finishedAt": "2026-10-17T16:11:57+08:00",
+      "finalConfigSha256": "a1e465f27d852916809c4aba592299c063e1d155f49bef5e31af7c1cb380a2b3"
+    },
+    "wechatgame": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": true,
+      "durationSeconds": 9,
+      "finishedAt": "2026-10-17T16:12:52+08:00",
+      "finalConfigSha256": "55d86f3cf472f4693494a5d80b0bc72b8d707906c7e861f557d50944b9fdd186"
+    },
+    "bytedance-mini-game": {
+      "result": "PASS",
+      "exitCode": 36,
+      "finished": true,
+      "durationSeconds": 9,
+      "finishedAt": "2026-10-17T16:14:02+08:00",
+      "finalConfigSha256": "11a0b9420e16fbe94c8c1b62cb3094d6bfe7e53d17c5f1dd24920086cfcce949"
+    }
+  },
+  "copiedFinalConfigHashes": {
+    "web-mobile": {
+      "path": "evidence/configs/web-mobile.json",
+      "sha256": "a1e465f27d852916809c4aba592299c063e1d155f49bef5e31af7c1cb380a2b3"
+    },
+    "wechatgame": {
+      "path": "evidence/configs/wechatgame.json",
+      "sha256": "55d86f3cf472f4693494a5d80b0bc72b8d707906c7e861f557d50944b9fdd186"
+    },
+    "bytedance-mini-game": {
+      "path": "evidence/configs/bytedance-mini-game.json",
+      "sha256": "11a0b9420e16fbe94c8c1b62cb3094d6bfe7e53d17c5f1dd24920086cfcce949"
+    }
+  },
+  "logs": {
+    "web-mobile": {
+      "path": "evidence/creator-web-mobile.log",
+      "sha256": "d5f8674723f6138e7799cd7359ec3d3a0527076871897e609e164394f1c18f71",
+      "bytes": 83694
+    },
+    "wechatgame": {
+      "path": "evidence/creator-wechatgame.log",
+      "sha256": "dbc864f0aeb3018ac8d68d7b31c9b89df7521f88bd9932043c044a3e68a402ae",
+      "bytes": 87261
+    },
+    "bytedance-mini-game": {
+      "path": "evidence/creator-bytedance-mini-game.log",
+      "sha256": "2c8cde616c844af28a7476b661cdb5dda055787e9b0f1e16197601684f388d1e",
+      "bytes": 84417
+    }
+  },
+  "gameJson": {
+    "wechatgame": {
+      "path": "evidence/game-json/wechatgame-game.json",
+      "sha256": "336792c7f7551e3dc8198e05c1c1edeeed60c93dce4049a2437a94894857cfb5",
+      "subPackages": [
+        {
+          "name": "internal",
+          "root": "subpackages/internal/"
+        },
+        {
+          "name": "resources",
+          "root": "subpackages/resources/"
+        },
+        {
+          "name": "main",
+          "root": "subpackages/main/"
+        },
+        {
+          "name": "dialogue",
+          "root": "subpackages/dialogue/"
+        },
+        {
+          "name": "milk-tea",
+          "root": "subpackages/milk-tea/"
+        },
+        {
+          "name": "shops",
+          "root": "subpackages/shops/"
+        },
+        {
+          "name": "tourist",
+          "root": "subpackages/tourist/"
+        },
+        {
+          "name": "world",
+          "root": "subpackages/world/"
+        }
+      ],
+      "roots": [
+        "subpackages/internal/",
+        "subpackages/resources/",
+        "subpackages/main/",
+        "subpackages/dialogue/",
+        "subpackages/milk-tea/",
+        "subpackages/shops/",
+        "subpackages/tourist/",
+        "subpackages/world/"
+      ]
+    },
+    "bytedance-mini-game": {
+      "path": "evidence/game-json/bytedance-mini-game-game.json",
+      "sha256": "e74f355a02931b7ba75886b81b59c1b125511f01d29461711a433a744e8da758",
+      "subPackages": [
+        {
+          "name": "internal",
+          "root": "subpackages/internal/"
+        },
+        {
+          "name": "resources",
+          "root": "subpackages/resources/"
+        },
+        {
+          "name": "main",
+          "root": "subpackages/main/"
+        },
+        {
+          "name": "dialogue",
+          "root": "subpackages/dialogue/"
+        },
+        {
+          "name": "milk-tea",
+          "root": "subpackages/milk-tea/"
+        },
+        {
+          "name": "shops",
+          "root": "subpackages/shops/"
+        },
+        {
+          "name": "tourist",
+          "root": "subpackages/tourist/"
+        },
+        {
+          "name": "world",
+          "root": "subpackages/world/"
+        }
+      ],
+      "roots": [
+        "subpackages/internal/",
+        "subpackages/resources/",
+        "subpackages/main/",
+        "subpackages/dialogue/",
+        "subpackages/milk-tea/",
+        "subpackages/shops/",
+        "subpackages/tourist/",
+        "subpackages/world/"
+      ]
+    }
+  },
+  "outputs": {
+    "web-mobile": {
+      "fileCount": 803,
+      "physicalBytes": 38670624,
+      "mainFileCountExcludingSubpackages": 803,
+      "mainPackageExcludingSubpackagesBytes": 38670624,
+      "subpackages": {},
+      "inventoryPath": "evidence/OUTPUT_FILES_web-mobile.json",
+      "inventorySha256": "42301c34fe792ed2171375ba29f3607f74510b921308a57b19f7a1a6f4a5308f"
+    },
+    "wechatgame": {
+      "fileCount": 823,
+      "physicalBytes": 38707267,
+      "mainFileCountExcludingSubpackages": 23,
+      "mainPackageExcludingSubpackagesBytes": 3256025,
+      "subpackages": {
+        "internal": {
+          "path": "subpackages/internal",
+          "fileCount": 17,
+          "physicalBytes": 242484
+        },
+        "resources": {
+          "path": "subpackages/resources",
+          "fileCount": 1,
+          "physicalBytes": 44
+        },
+        "main": {
+          "path": "subpackages/main",
+          "fileCount": 5,
+          "physicalBytes": 405676
+        },
+        "dialogue": {
+          "path": "subpackages/dialogue",
+          "fileCount": 391,
+          "physicalBytes": 14333271
+        },
+        "milk-tea": {
+          "path": "subpackages/milk-tea",
+          "fileCount": 167,
+          "physicalBytes": 3303228
+        },
+        "shops": {
+          "path": "subpackages/shops",
+          "fileCount": 33,
+          "physicalBytes": 5033970
+        },
+        "tourist": {
+          "path": "subpackages/tourist",
+          "fileCount": 113,
+          "physicalBytes": 3442951
+        },
+        "world": {
+          "path": "subpackages/world",
+          "fileCount": 73,
+          "physicalBytes": 8689618
+        }
+      },
+      "subpackageSumBytes": 35451242,
+      "inventoryPath": "evidence/OUTPUT_FILES_wechatgame.json",
+      "inventorySha256": "389869e19f4081a5b4124e2026fe5280af7f2589660246ebd24b3841f3d011b9"
+    },
+    "bytedance-mini-game": {
+      "fileCount": 821,
+      "physicalBytes": 38681613,
+      "mainFileCountExcludingSubpackages": 21,
+      "mainPackageExcludingSubpackagesBytes": 3230374,
+      "subpackages": {
+        "internal": {
+          "path": "subpackages/internal",
+          "fileCount": 17,
+          "physicalBytes": 242484
+        },
+        "resources": {
+          "path": "subpackages/resources",
+          "fileCount": 1,
+          "physicalBytes": 41
+        },
+        "main": {
+          "path": "subpackages/main",
+          "fileCount": 5,
+          "physicalBytes": 405676
+        },
+        "dialogue": {
+          "path": "subpackages/dialogue",
+          "fileCount": 391,
+          "physicalBytes": 14333271
+        },
+        "milk-tea": {
+          "path": "subpackages/milk-tea",
+          "fileCount": 167,
+          "physicalBytes": 3303228
+        },
+        "shops": {
+          "path": "subpackages/shops",
+          "fileCount": 33,
+          "physicalBytes": 5033970
+        },
+        "tourist": {
+          "path": "subpackages/tourist",
+          "fileCount": 113,
+          "physicalBytes": 3442951
+        },
+        "world": {
+          "path": "subpackages/world",
+          "fileCount": 73,
+          "physicalBytes": 8689618
+        }
+      },
+      "subpackageSumBytes": 35451239,
+      "inventoryPath": "evidence/OUTPUT_FILES_bytedance-mini-game.json",
+      "inventorySha256": "275857d3f02f17fc809ffcaa45f0fc6cab5ed78105225362c78e6bc33f4dd59b"
+    }
+  },
+  "aggregate": {
+    "fileCount": 2447,
+    "physicalBytes": 116059504
+  },
+  "note": "Physical generated file sums are not upload/transfer size or platform quota measurements."
+}

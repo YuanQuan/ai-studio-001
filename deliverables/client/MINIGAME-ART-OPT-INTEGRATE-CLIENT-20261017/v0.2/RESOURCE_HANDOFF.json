@@ -1,0 +1,38 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "approval_basis": {
+    "art_gate2": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_GATE2_USER_APPROVAL.json",
+    "art_identity": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_IDENTITY.json",
+    "asset_map": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+    "bundle_map": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json",
+    "tech_staging": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.2/STAGING_PLAN.md",
+    "tech_client_review": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.2/CLIENT_BRIEF_REVIEW.json"
+  },
+  "manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/GENERATED_ASSET_MANIFEST.json",
+  "manifest_sha256": "f6f42a43ba34b93652925d9f07f14c6ecf8df8d3c40205e2a13c1dd217d41fb6",
+  "count": 83,
+  "source_categories": {
+    "NEW_BATCH": 73,
+    "SAMPLING_REVISION": 3,
+    "APPROVED_PILOT_REUSE": 7
+  },
+  "uuid_semantics": {
+    "originImageUuid": "approved handoff's current/origin identifier; not evidence of current staging import",
+    "originFrameUuid": "approved handoff's current/origin frame identifier",
+    "plannedCanonicalImageUuid": "planning-only image UUID retained at canonical source; aliases trace their origin UUIDs separately",
+    "importedImageUuid": null,
+    "importedFrameUuid": null,
+    "actualCreatorReadback": "NOT_TESTED; staging snapshot and Creator import pending"
+  },
+  "image_aliases": {
+    "count": 10,
+    "policy": "仅共享相同SHA图像源；logical asset/frame IDs及动画时长/顺序保留。每个别名旧UUID可追溯到canonical图像；真实导入UUID以Creator回读为准。",
+    "candidates": "GENERATED_ASSET_MANIFEST.json aliases"
+  },
+  "state": "STAGED_SOURCE_AND_GEOMETRY_VALIDATED_CREATOR_IMPORT_NOT_TESTED",
+  "version": "v0.2",
+  "staging_manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/staging-project/STAGING_INPUT_MANIFEST.json",
+  "staging_manifest_sha256": "06c45add324c58de264ddff8c6e1169f592739f159e4f9d32cd1da8c09745223",
+  "creator_import_uuid_readback": "NOT_TESTED",
+  "source_tree_immutability": "staging was copied from frozen inputs; original assets are untouched by relocation/exclusions."
+}

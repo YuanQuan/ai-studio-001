@@ -1,0 +1,20 @@
+{
+  "schemaVersion":1,
+  "role":"client",
+  "version":"v0.4",
+  "scope":"Client Owner implementation and static validation only; not QA certification or final Master acceptance.",
+  "checks":[
+    {"name":"Manifest-to-stage production coverage","result":"PASS","evidence":"node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.4d; 419 production module resource paths resolved across five configured roots; retired far_l excluded, LOCK crops retained."},
+    {"name":"Creator TypeScript semantic check","result":"PASS","evidence":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false"},
+    {"name":"Generator output physical-file and digest audit","result":"PASS","evidence":"STAGING_INPUT_MANIFEST.json confirms 72 unique generated physical images exist with matching SHA-256; 83 identity/geometry rows retained; two frozen profile recoveries match explicit Master authorization."},
+    {"name":"Isolated Creator CLI builds and native subpackages","result":"PASS","evidence":"Root-managed Creator 3.8.8 CLI: web-mobile, wechatgame and bytedance-mini-game each exited 36 and logged Finished. Both mini-game game.json files list 8 entries including all five local module bundles. Full logs/configs/game.json and output SHA-256 inventory are in evidence/."},
+    {"name":"Actual Creator import and UUID readback","result":"NOT_TESTED","evidence":"The successful builds establish import/build completion, but no separate Creator database UUID readback evidence was supplied in this handoff."},
+    {"name":"Actual Web page/runtime and lifecycle loop","result":"NOT_TESTED","evidence":"Root reports U00/U03 and six shops passed in actual Web runtime; remaining pages, page release/reentry/error/cancel behavior and the required 20-cycle evidence are still pending. Screenshots are referenced in deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v04/."},
+    {"name":"Physical package measurement and device performance","result":"NOT_TESTED","evidence":"Physical build-output byte measurements are recorded. Upload/transfer size, platform quota/submission, DPR-specific behavior, device performance and actual GPU memory remain NOT_TESTED."},
+    {"name":"Actual same-scale visual comparison/device runtime","result":"NOT_TESTED","evidence":"No Owner runtime screenshot or device measurement in v0.4 evidence."}
+  ],
+  "failedHistoricalEvidencePreserved":[
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v03/u00-missing-retired-path.jpg",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v03/CONSOLE-pre-fix.json"
+  ]
+}

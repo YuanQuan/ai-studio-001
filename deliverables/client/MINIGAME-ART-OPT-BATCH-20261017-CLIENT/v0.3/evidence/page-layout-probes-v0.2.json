@@ -1,0 +1,116 @@
+{
+  "checks": {
+    "u00ModalTopLayerAndGestureCancel": {
+      "overlayIndex": 2,
+      "lastIndex": 2,
+      "panelActive": true,
+      "staleTargetsCleared": true,
+      "gesturesCleared": true,
+      "passes": true
+    },
+    "galleryReaderBlocksBackgroundInput": {
+      "actions": 0,
+      "targetsCleared": true,
+      "passes": true
+    },
+    "u01ReaderBlocksWorldInput": {
+      "worldCalls": 0,
+      "pointerCleared": true,
+      "draggingCleared": true,
+      "passes": true
+    },
+    "galleryButtonLogicalFont": {
+      "fontSize": 16,
+      "lineHeight": 24,
+      "overflow": 1,
+      "textWidth": 30,
+      "passes": true
+    },
+    "u01ButtonLogicalFont": {
+      "fontSize": 16,
+      "lineHeight": 24,
+      "passes": true
+    },
+    "u04Navigation": {
+      "controlsY": 242,
+      "backLocalY": 0,
+      "backWorldY": 242,
+      "expectedWorldY": 242,
+      "titleLocalX": 22,
+      "expectedTitleLocalX": 22,
+      "passes": true
+    },
+    "u01SafeNavigation": {
+      "parentX": 22,
+      "backLocalX": -110,
+      "expectedLocalX": -110,
+      "worldX": -88,
+      "expectedWorldX": -88,
+      "safeLeft": -132,
+      "backWidth": 88,
+      "cameraScale": 0.6,
+      "cameraX": 73,
+      "cameraY": 91,
+      "reflowCalled": true,
+      "passes": true
+    },
+    "u01CameraPreserved": {
+      "zoomBefore": 1.2,
+      "zoomAfter": 1.2,
+      "offsetXBefore": 146,
+      "offsetXAfter": 146,
+      "offsetYBefore": 182,
+      "offsetYAfter": 181.99999999999997,
+      "passes": true
+    },
+    "u00SafeNavigation": {
+      "parentX": 22,
+      "backLocalX": -108,
+      "backWorldX": -86,
+      "expectedBackWorldX": -86,
+      "passes": true
+    },
+    "bodyClipping": {
+      "u00GraphicsRectMask": true,
+      "u00LayoutDrawsViewportRect": true,
+      "u01GraphicsRectMask": true,
+      "reusableReaderMask": true,
+      "reusableReaderSizesLabelToFullHeight": true
+    },
+    "retryUsesReload": true,
+    "u03FullErrorReader": true,
+    "u02LogicalLayout": true,
+    "u02ProjectedHitAndFont": {
+      "designHitHeight": 108,
+      "projectedCssHitHeight": 48,
+      "designFont": 36,
+      "projectedCssFont": 16,
+      "adornmentCssFont": 14,
+      "contentScaleY": 1,
+      "passes": true
+    },
+    "reusableReaderFooterAndScroll": {
+      "panelHeight": 600,
+      "viewportBounds": [
+        -244,
+        244
+      ],
+      "actionBounds": [
+        -300,
+        -252
+      ],
+      "gap": 8,
+      "fullHeight": 5768,
+      "bodyHeight": 488,
+      "maxOffset": 5280,
+      "textBottomAtEnd": -244,
+      "expectedTextBottom": -244,
+      "passes": true
+    }
+  },
+  "source": {
+    "gallery": "d1a568771437a1c2e98f8d871e3c54a479ff28564acd22071c59d8ee702564e1",
+    "u01": "b6c13a3563f8e5fd1fc29ef2ad4434e65d0a39e7355d81f1f0a74ebd5dd10d7a",
+    "reader": "5a23c5ae0f1a9389677d11a28efbaf5efab4555471e74090b93e9c5539121dbf"
+  }
+}

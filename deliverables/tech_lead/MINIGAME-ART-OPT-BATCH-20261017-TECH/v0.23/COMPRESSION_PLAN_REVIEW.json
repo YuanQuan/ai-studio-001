@@ -1,0 +1,24 @@
+{
+  "task_id": "MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "已复核四文档准确SHA，见COMPRESSION_REVIEW_IDENTITY.json。v0.22唯一MAJOR已关闭：无损判定要求固定解码/ICC下全RGBA逐像素零差含alpha0隐藏RGB；不允许归一清洗掩盖；WebP显式-exact/API exact=1，任一hidden差异仅诊断不得生产。实际straight-alpha线性采样/缩放相位和同背景同尺度回归已写入。官方工具依据 https://developers.google.com/speed/webp/docs/cwebp ，实际工具版本/生效参数仍须执行时核。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六项真实输入与原批准/字体授权补核保持，可沿用v0.22六PNG和TTF/OFL实际身份核验；6项最多18候选+6参考、0生成式调用、150人分钟、2轮且不扩候选/时间上限。零降质为生产条件，quality95仅风险诊断，不是新增正式质量档位。20MiB与20MB双单位差额算术正确，不承诺靠PNG必达；实际文件/包体/GPU概念已区分。"
+    },
+    {
+      "severity": "INFO",
+      "message": "本Review批准文档进入现有用户Gate1，非首图预签或生产/接入授权。Gate1批本准确版本后，首图前同批Art/Tech对工具/尺寸/预算/格式签认，具体样本Gate2后方正式接入；不重复旧76/7批准，不新增后置切图效果专业Review及额外预览环境门槛。"
+    },
+    {
+      "severity": "INFO",
+      "message": "WebP Creator实际导入/构建/目标平台解码、是否再编码、透明/ICC/字体图集行为、收益与CPU/GPU驻留均NOT_TESTED；不由方案批准推断兼容或运行通过。若格式不支持或无收益，停对应支线保留源参考，差异需求另报Master。"
+    }
+  ],
+  "next_action": "Master可呈交四文件本版准确身份供用户Gate1审批；批准后依同批预签与预算执行，不提前制作或替换既有图。"
+}

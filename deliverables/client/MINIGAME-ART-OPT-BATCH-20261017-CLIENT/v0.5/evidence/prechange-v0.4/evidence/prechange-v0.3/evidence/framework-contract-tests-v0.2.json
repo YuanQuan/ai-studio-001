@@ -1,0 +1,48 @@
+{
+  "result": "PASS",
+  "scope": "deterministic owner-controlled contract tests; not device/rendering or DPR matrix",
+  "leases": {
+    "sharedLoadCalls": 1,
+    "sharedRefCount": 2,
+    "dependencyReleaseOrder": [
+      "release:root",
+      "release:dep"
+    ],
+    "releaseFaultCleanupOrder": [
+      "root-fault",
+      "dep-fault"
+    ],
+    "rollbackReleaseErrorSettles": true,
+    "cancelOwnerContinuesAfterReleaseError": [
+      "owner-a",
+      "owner-b"
+    ],
+    "retryAttempts": 2,
+    "cancelSkippedRootLoad": true,
+    "cycles": 20,
+    "cyclesReleased": 20
+  },
+  "viewport": {
+    "centerMapsToOrigin": true,
+    "safeCapsuleMapped": true,
+    "capsuleAcrossSafeCenter": {
+      "x": 0,
+      "y": 368,
+      "width": 400,
+      "height": 32
+    },
+    "logical48DesignUnits": 108,
+    "resizeNotificationAfterRead": true,
+    "zeroSizeRetainsRevision": true,
+    "platformExceptionFallback": true,
+    "offscreenCanvasPoint": {
+      "x": -150,
+      "y": 0
+    },
+    "wechatPrimaryFallback": {
+      "width": 390,
+      "height": 844
+    },
+    "initialWidth": 320
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "owner": "client",
+  "summary": "完成统一viewport与ModuleAssets接口及单元示例适配；修复U00实际面板步长名和固定页脚查找失配，Creator v0.9隔离构建成功。Root对唯一v0.9 Web产物的IAB和Tech最终delta Review尚在进行。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/page-layout-probes-v0.4.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/framework-contract-tests-v0.4.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/typescript-semantic-v0.4.log"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先产轻量Brief并通过Tech沟通，复用现有能力，跨端窗口/安全区/胶囊/逻辑坐标接口符合已批规格。",
+      "result": "PASS",
+      "evidence": "v0.1 FEATURE_BRIEF 与 Tech CLIENT_BRIEF_REVIEW APPROVED；源码路径及框架测试见SOURCE_CHANGE_MANIFEST.json、evidence/framework-contract-tests-v0.4.json。"
+    },
+    {
+      "criterion": "实现ModuleAssets共享在途/依赖/代际与幂等释放，覆盖竞争、错误、取消及20次循环的有效测试，不把测试替代GPU实测。",
+      "result": "PASS",
+      "evidence": "evidence/framework-contract-tests-v0.4.json 覆盖共享在途/依赖释放/代际取消/错误清理/幂等释放及20次循环；GPU实测限制见报告。"
+    },
+    {
+      "criterion": "将已批页面适配要求落实到当前单元示例入口，保持U05完整画幅/规则时序与U04横屏组合，竖屏、文本/热区/滚动按规格，未测项明确。",
+      "result": "PASS",
+      "evidence": "IMPLEMENTATION_REPORT.md逐页列U00-U05；U00本轮实际源方法全操作节点探针PASS；U05使用Owner冻结SHA并记录运行证据，未测项目标记。"
+    },
+    {
+      "criterion": "按Creator3.8.8 CLI和HTTP实际Web产物验证，无缺资源/运行错误；提交准确源码/构建及Owner证据供Tech Review和用户审核。",
+      "result": "NOT_TESTED",
+      "evidence": "Creator CLI v0.9构建已成功并记录781文件SHA；Root唯一URL内置浏览器运行和Tech最终Review仍进行中，等待结果后更新。"
+    }
+  ],
+  "assumptions": [
+    "沿用已批准Brief、TECH_DESIGN、LAYOUT_SPEC、VFX_SPEC；不依赖未过Gate2新切片。",
+    "U05采用独立Client-U05 Owner冻结源码及其证据，本Client不编辑labs/u05。"
+  ],
+  "risks": [
+    "原Scene/Prefab全帧和店铺Prefab硬引用仍存在，启动包/GPU生命周期收益未证明。",
+    "Root v0.9 IAB及Tech对U00最新delta的最终Review待登记；真实设备DPR矩阵、资源错误注入和GPU residency仍未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

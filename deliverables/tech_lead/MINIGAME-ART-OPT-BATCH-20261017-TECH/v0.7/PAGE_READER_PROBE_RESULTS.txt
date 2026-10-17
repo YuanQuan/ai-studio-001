@@ -1,0 +1,82 @@
+{
+  "checks": {
+    "u04Navigation": {
+      "controlsY": 242,
+      "backLocalY": 0,
+      "backWorldY": 242,
+      "expectedWorldY": 242,
+      "titleLocalX": 22,
+      "expectedTitleLocalX": 22,
+      "passes": true
+    },
+    "u01SafeNavigation": {
+      "parentX": 22,
+      "backLocalX": -110,
+      "expectedLocalX": -110,
+      "worldX": -88,
+      "expectedWorldX": -88,
+      "safeLeft": -132,
+      "backWidth": 88,
+      "cameraScale": 0.6,
+      "cameraX": 73,
+      "cameraY": 91,
+      "reflowCalled": true,
+      "passes": true
+    },
+    "u01CameraPreserved": {
+      "zoomBefore": 1.2,
+      "zoomAfter": 1.2,
+      "offsetXBefore": 146,
+      "offsetXAfter": 146,
+      "offsetYBefore": 182,
+      "offsetYAfter": 181.99999999999997,
+      "passes": true
+    },
+    "u00SafeNavigation": {
+      "parentX": 22,
+      "backLocalX": -108,
+      "backWorldX": -86,
+      "expectedBackWorldX": -86,
+      "passes": true
+    },
+    "bodyClipping": {
+      "u00GraphicsRectMask": true,
+      "u00LayoutDrawsViewportRect": true,
+      "u01GraphicsRectMask": true,
+      "reusableReaderMask": true,
+      "reusableReaderSizesLabelToFullHeight": true
+    },
+    "retryUsesReload": true,
+    "u03FullErrorReader": true,
+    "u02LogicalLayout": true,
+    "u02ProjectedHitAndFont": {
+      "designHitHeight": 108,
+      "projectedCssHitHeight": 48,
+      "designFont": 36,
+      "projectedCssFont": 16,
+      "adornmentCssFont": 14,
+      "contentScaleY": 1,
+      "passes": true
+    }
+  },
+  "source": {
+    "gallery": "4eacad0607c1d079b099d4f5a3777f836d710e4a95f0a5805c028a53946f0fc9",
+    "u01": "ea5f889113234093cb5a5be63946dda3363006ec03610911115ac44417574970",
+    "reader": "b5c24bcbcd68a7fb93b88500c392ceed8e4c455d7038e87a6a84841394482b76"
+  }
+}
+{
+  "actualReaderLayout": true,
+  "panelHeight": 680,
+  "bodyBottom": -284,
+  "bodyTop": 284,
+  "footerBottom": -340,
+  "footerTop": -292,
+  "bodyOverlapsFooter": false,
+  "bodyBelowPanel": false
+}
+{
+  "actualGlobalMouseHandlersWithReaderOpen": true,
+  "underlyingActions": 1,
+  "u01ActualOnUiBlocksReader": false
+}

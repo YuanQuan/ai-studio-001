@@ -1,0 +1,55 @@
+{
+  "version": "v0.1",
+  "authority": "Master按已批准可复现发布输入范围授权",
+  "source_inventory": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+  "producer_audit": "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/FROZEN_INPUT_GIT_DEPENDENCIES.json",
+  "recoveries": [
+    {
+      "original_path": "apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "expected_sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/sakura_v03_layout.ts",
+      "bytes": 28061,
+      "HEAD_sha256": "3153795d853948ea3a97a98ba59608c5abdee9ad0b6cde926e682ae777f50bb8",
+      "original_path_commit_authorized": false,
+      "purpose": "仅恢复本轮冻结发布输入；不修改原路径，不继承其它任务的后续变化。"
+    },
+    {
+      "original_path": "apps/client/package.json",
+      "expected_sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/package.json",
+      "bytes": 157,
+      "HEAD_sha256": "ae7329118191bf64a9f2bc747e300a72e98c0e1850376ea6628594412467f1b3",
+      "original_path_commit_authorized": false,
+      "purpose": "仅恢复本轮冻结发布输入；不修改原路径，不继承其它任务的后续变化。"
+    },
+    {
+      "original_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "expected_sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/tex_sakura_rr_bridge_front_l.png",
+      "bytes": 51230,
+      "HEAD_sha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277",
+      "original_path_commit_authorized": false,
+      "purpose": "仅恢复本轮冻结发布输入；不修改原路径，不继承其它任务的后续变化。"
+    },
+    {
+      "original_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "expected_sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/tex_sakura_rr_bridge_front_r.png",
+      "bytes": 51955,
+      "HEAD_sha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204",
+      "original_path_commit_authorized": false,
+      "purpose": "仅恢复本轮冻结发布输入；不修改原路径，不继承其它任务的后续变化。"
+    }
+  ],
+  "excluded_nonproduction_patterns": [
+    "**/.DS_Store",
+    "apps/client/profiles/**"
+  ],
+  "exclusion_reason": "系统元数据和本机编辑器偏好不作为可移植发布输入。保留settings/v2/packages与明确CLI config，需实际构建及payload/输出对照确认。",
+  "boundaries": [
+    "不可覆盖/暂存原4路径。",
+    "除明确非生产排除及4项精确恢复外，冻结/override校验不放宽。",
+    "不能声称原干净HEAD已含本轮Own改动；clean-like检查须列自己增加/覆盖的精确文件。",
+    "4快照只记录已实际使用的冻结字节，不改变当前获批视觉或接入新的其它会话图片。"
+  ]
+}

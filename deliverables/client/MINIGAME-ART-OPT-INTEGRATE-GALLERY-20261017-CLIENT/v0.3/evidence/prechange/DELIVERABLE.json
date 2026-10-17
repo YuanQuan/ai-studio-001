@@ -1,0 +1,46 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "owner": "client",
+  "summary": "修复Gallery在Creator Babel产物中的Set/Map/iterator迭代兼容问题；保存v0.1失败源码/交付快照并增加有效容器迭代探针。候选已通过Creator TypeScript 4.9.5语义检查和方法级20轮竞争释放测试；新Creator构建与IAB尚待父Task运行。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/tests/gallery_asset_session_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/evidence/prechange/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只改Gallery、新session helper及sakura_v03_environment.ts的页面预载帧入口/必要meta与有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+      "result": "PASS",
+      "evidence": "v0.2 diff only changes Gallery/session iterable compatibility and probe; prechange snapshots and v0.1 report/manifest preserved. No UI, layout, assets, Scene/Prefab or environment helper edits."
+    },
+    {
+      "criterion": "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+      "result": "NOT_TESTED",
+      "evidence": "Candidate source retains page loading/retry/generation behavior; actual Creator Web build and U00 IAB retest pending parent unified build."
+    },
+    {
+      "criterion": "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+      "result": "PASS",
+      "evidence": "Real ModuleAssets/DerivedAssetResolver method probe executes Set/Map iteration, competing owners and 20 synthetic release cycles to zero; actual Web cycles remain untested."
+    },
+    {
+      "criterion": "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+      "result": "PASS",
+      "evidence": "v0.1 effective-method test still verifies CUSTOM/trim=false and geometry preservation; v0.2 does not change binding implementation."
+    },
+    {
+      "criterion": "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。",
+      "result": "PASS",
+      "evidence": "v0.2 changes only iterable compatibility; v0.1 semantic and provider method checks remain. New whole-project TS4.9.5 check passes; final Creator/IAB integration pending parent."
+    }
+  ],
+  "assumptions": [
+    "This is an authorized runtime defect repair within the existing Gallery Client task; no new product behavior is introduced."
+  ],
+  "risks": [
+    "The new source candidate has not yet been Creator-built or browser-tested; v0.1 actual U00 failure remains preserved as historical evidence."
+  ],
+  "status": "READY_FOR_REVIEW"
+}

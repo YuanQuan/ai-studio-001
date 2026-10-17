@@ -1,0 +1,395 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.2",
+  "status": "STAGED_INPUT_CANDIDATE_CREATOR_IMPORT_PENDING",
+  "authorizedFreeze": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+    "sha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+    "fileCount": 711
+  },
+  "authorizedAddendum": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE_ADDENDUM.json",
+    "sha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68"
+  },
+  "sourceOverrides": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "baseSha256": "99f0193fa8f9e20238f5ebbc7c75be5db39863c3df7a19fb6cf6e1d2c28efd2c",
+      "sha256": "612b253e8c0fa2fa9d52022eb721ca8838bbac2946d304428b33e9db38720d01",
+      "transformId": "u01-use-page-resource-api-bind-prefab-v2",
+      "reason": "U01 page-scoped provider, exact approved resource paths, shop prefab binding"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "baseSha256": "159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726",
+      "sha256": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e",
+      "transformId": "u05-configure-page-resource-provider-v1",
+      "reason": "U05 page-scoped provider with generation-safe callback and no provider-mode legacy fallback"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "baseSha256": "c79936e6a4c60e5df86309abc3d5d4a413cddffd80496652c28cde2d50e7b2b1",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+      "transformId": "u01-environment-accepts-page-owned-frames-v1",
+      "reason": "Main-owned approved U01 environment receiving captured page-owned frames"
+    },
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "baseSha256": "fc660686f4059ddbbec69bfe0eb414b8f26b374229c25f55f51d6cfb5be106df",
+      "sha256": "c0f3f3b8d90eaea5287019b37e1c3960019f21d7975119bcc1d6ced5e8182848",
+      "transformId": "gallery-page-resource-session-integration-v1",
+      "reason": "Main-owned Gallery integration: optimized bundle switch and per-page resource session API"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/cocos_bundle_loader.ts",
+      "baseSha256": "f759319dd64e8238b60f233e5b40dad21106d550ffd297d32339b2605c3902c1",
+      "sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218",
+      "transformId": "bundle-loader-refcount-ownership-v1",
+      "reason": "Retain per successful asset reference and release only owned references; no force release"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+      "baseSha256": null,
+      "sha256": "42674f344b1eccca8e67b0609102bf730a4c568af1810bf89abbe6b1fbbf1df9",
+      "transformId": "approved-asset-registry-v1",
+      "reason": "Approved crop and canonical logical asset identity registry",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "baseSha256": null,
+      "sha256": "4bcaf19f3e0c958c675053cb57ea081a0c3a95dba795298f90608ebc7b08ce68",
+      "transformId": "client-module-manifests-v2",
+      "reason": "Client runtime module manifests mapped to exact canonical source paths",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "baseSha256": null,
+      "sha256": "2dbc50c2e68d03c5fa9061f49411f3cde414dbf5d1ecd5a7737cf8633c8858c0",
+      "transformId": "derived-frame-resolver-v2",
+      "reason": "Per-texture derived SpriteFrame resolver with standalone geometry and cache identity",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta",
+      "baseSha256": null,
+      "sha256": "15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b",
+      "transformId": "derived-frame-resolver-meta-v1",
+      "reason": "Creator metadata for the authorized derived frame resolver source",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "baseSha256": null,
+      "sha256": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+      "transformId": "gallery-page-asset-session-v1",
+      "reason": "Gallery per-page asset session runtime helper from Main handoff candidate",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "baseSha256": null,
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "transformId": "gallery-page-session-meta-v1",
+      "reason": "Creator metadata for the Gallery page session helper",
+      "kind": "AUTHORIZED_ADDITION"
+    }
+  ],
+  "sourceAdditions": [
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+      "baseSha256": null,
+      "sha256": "42674f344b1eccca8e67b0609102bf730a4c568af1810bf89abbe6b1fbbf1df9",
+      "transformId": "approved-asset-registry-v1",
+      "reason": "Approved crop and canonical logical asset identity registry",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "baseSha256": null,
+      "sha256": "4bcaf19f3e0c958c675053cb57ea081a0c3a95dba795298f90608ebc7b08ce68",
+      "transformId": "client-module-manifests-v2",
+      "reason": "Client runtime module manifests mapped to exact canonical source paths",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "baseSha256": null,
+      "sha256": "2dbc50c2e68d03c5fa9061f49411f3cde414dbf5d1ecd5a7737cf8633c8858c0",
+      "transformId": "derived-frame-resolver-v2",
+      "reason": "Per-texture derived SpriteFrame resolver with standalone geometry and cache identity",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta",
+      "baseSha256": null,
+      "sha256": "15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b",
+      "transformId": "derived-frame-resolver-meta-v1",
+      "reason": "Creator metadata for the authorized derived frame resolver source",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "baseSha256": null,
+      "sha256": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+      "transformId": "gallery-page-asset-session-v1",
+      "reason": "Gallery per-page asset session runtime helper from Main handoff candidate",
+      "kind": "AUTHORIZED_ADDITION"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "baseSha256": null,
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "transformId": "gallery-page-session-meta-v1",
+      "reason": "Creator metadata for the Gallery page session helper",
+      "kind": "AUTHORIZED_ADDITION"
+    }
+  ],
+  "stagingTransforms": [
+    {
+      "transformId": "stage-project-copy-v1",
+      "description": "711冻结输入、reader单文件addendum、显式Owner delta/additions的隔离复制；不移动或覆盖原工程资产。"
+    },
+    {
+      "transformId": "relocate-owner-trees-v1",
+      "paths": [
+        {
+          "from": "assets/units/background",
+          "to": "assets/bundles/world",
+          "transformId": "relocate-world-prefab-tree-v1"
+        },
+        {
+          "from": "assets/units/ghost-customer",
+          "to": "assets/bundles/tourist/ghost-customer",
+          "transformId": "relocate-tourist-tree-v1"
+        },
+        {
+          "from": "assets/units/shops",
+          "to": "assets/bundles/shops",
+          "transformId": "relocate-shop-trees-v1"
+        },
+        {
+          "from": "assets/resources/sakura_v03",
+          "to": "assets/bundles/world/sakura_v03",
+          "transformId": "relocate-world-source-textures-v1"
+        },
+        {
+          "from": "assets/resources/u05_milk_tea",
+          "to": "assets/bundles/milk_tea/u05_milk_tea",
+          "transformId": "relocate-milk-tea-source-tree-v1"
+        }
+      ]
+    },
+    {
+      "transformId": "remove-non-startup-gallery-hard-references-and-enable-page-bundles-v2",
+      "sceneDelta": {
+        "path": "assets/UnitSamples.scene",
+        "fromSha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+        "toSha256": "d2c300470a8eda6acbc91974213bca8546e41d3631dba451cdc2db7b80a44659",
+        "transformId": "remove-non-startup-gallery-hard-references-and-enable-page-bundles-v2",
+        "removedHardReferences": {
+          "streetBasePrefab": 1,
+          "touristPrefab": 1,
+          "touristFrameManifest": 1,
+          "touristMountManifest": 1,
+          "touristAccessoryManifest": 1,
+          "touristBodyFrames": 40,
+          "touristAccessoryFrames": 4,
+          "shopPrefabs": 6
+        },
+        "useOptimizedBundles": {
+          "before": false,
+          "after": true
+        }
+      }
+    },
+    {
+      "transformId": "materialize-approved-crops-v1",
+      "approvedAssetCount": 83,
+      "physicalImages": 72,
+      "excluded": [
+        {
+          "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+          "originalSha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16",
+          "originalBytes": 1281645,
+          "currentOutputPath": null,
+          "currentOutputSha256": null,
+          "disposition": "EXCLUDED_APPROVED_BUT_UNREFERENCED_CROP_AND_LEGACY_IMAGE",
+          "uuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
+          "spriteFrameUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@f9941",
+          "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+          "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+        },
+        {
+          "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l.png",
+          "originalSha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+          "originalBytes": 434325,
+          "currentOutputPath": null,
+          "currentOutputSha256": null,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE",
+          "uuid": "232fc449-73e5-4622-bd81-d97eeda73f21",
+          "spriteFrameUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@f9941",
+          "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+          "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+        },
+        {
+          "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r.png",
+          "originalSha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+          "originalBytes": 435246,
+          "currentOutputPath": null,
+          "currentOutputSha256": null,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE",
+          "uuid": "91356d07-e497-4935-a689-6a2e2fe19cd8",
+          "spriteFrameUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@f9941",
+          "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+          "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+        }
+      ]
+    },
+    {
+      "transformId": "exclude-unreferenced-u05-legacy-v1",
+      "excluded": [
+        {
+          "path": "apps/client/assets/resources/u05_milk_tea/u05_b/CUSTOMER_GHOST.png",
+          "uuid": "80f3c233-d3e4-4dff-a894-d5618d563255",
+          "spriteFrameUuid": "80f3c233-d3e4-4dff-a894-d5618d563255@f9941",
+          "bytes": 133562,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+          "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+        },
+        {
+          "path": "apps/client/assets/resources/u05_milk_tea/u05_b/STATIC_BARE.png",
+          "uuid": "b5052b34-a7ce-4f98-9fa0-2a9830c8aab3",
+          "spriteFrameUuid": "b5052b34-a7ce-4f98-9fa0-2a9830c8aab3@f9941",
+          "bytes": 1689016,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+          "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+        },
+        {
+          "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_MILK.png",
+          "uuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb",
+          "spriteFrameUuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb@f9941",
+          "bytes": 914,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+          "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+        },
+        {
+          "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TEA.png",
+          "uuid": "0557f56a-4162-4d67-a726-7a36f66e9f85",
+          "spriteFrameUuid": "0557f56a-4162-4d67-a726-7a36f66e9f85@f9941",
+          "bytes": 932,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+          "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+        },
+        {
+          "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TOP.png",
+          "uuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1",
+          "spriteFrameUuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1@f9941",
+          "bytes": 735,
+          "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+          "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+        }
+      ]
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "apps/client/tools/asset-integration/asset_manifest_generator.cjs",
+      "sha256": "b1e91ef253655d22cfffa06b1ceaab6555f34f87c01adba6ca147ea41afa54d6"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/build_staging.cjs",
+      "sha256": "a6eafcd25a69b2654805123b42d31ed55fe613680301cf64e216df8f7b507ed8"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/generate_build_configs.cjs",
+      "sha256": "e2da1923a20928b2b174c9f95d0afda2a4390b1fb9b48572fb7f3cf663c3d418"
+    },
+    {
+      "path": "tests/client/asset-integration/asset_integration.test.cjs",
+      "sha256": "ae09617677535bc34ec922bdeb2158aed3358e92fd2585eb4dfed7db3250841e"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "sha256": "612b253e8c0fa2fa9d52022eb721ca8838bbac2946d304428b33e9db38720d01",
+      "baseSha256": "99f0193fa8f9e20238f5ebbc7c75be5db39863c3df7a19fb6cf6e1d2c28efd2c",
+      "transformId": "u01-use-page-resource-api-bind-prefab-v2",
+      "reason": "U01 page-scoped provider, exact approved resource paths, shop prefab binding"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "sha256": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e",
+      "baseSha256": "159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726",
+      "transformId": "u05-configure-page-resource-provider-v1",
+      "reason": "U05 page-scoped provider with generation-safe callback and no provider-mode legacy fallback"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+      "baseSha256": "c79936e6a4c60e5df86309abc3d5d4a413cddffd80496652c28cde2d50e7b2b1",
+      "transformId": "u01-environment-accepts-page-owned-frames-v1",
+      "reason": "Main-owned approved U01 environment receiving captured page-owned frames"
+    },
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "sha256": "c0f3f3b8d90eaea5287019b37e1c3960019f21d7975119bcc1d6ced5e8182848",
+      "baseSha256": "fc660686f4059ddbbec69bfe0eb414b8f26b374229c25f55f51d6cfb5be106df",
+      "transformId": "gallery-page-resource-session-integration-v1",
+      "reason": "Main-owned Gallery integration: optimized bundle switch and per-page resource session API"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/cocos_bundle_loader.ts",
+      "sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218",
+      "baseSha256": "f759319dd64e8238b60f233e5b40dad21106d550ffd297d32339b2605c3902c1",
+      "transformId": "bundle-loader-refcount-ownership-v1",
+      "reason": "Retain per successful asset reference and release only owned references; no force release"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+      "sha256": "42674f344b1eccca8e67b0609102bf730a4c568af1810bf89abbe6b1fbbf1df9",
+      "baseSha256": null,
+      "transformId": "approved-asset-registry-v1",
+      "reason": "Approved crop and canonical logical asset identity registry"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "sha256": "4bcaf19f3e0c958c675053cb57ea081a0c3a95dba795298f90608ebc7b08ce68",
+      "baseSha256": null,
+      "transformId": "client-module-manifests-v2",
+      "reason": "Client runtime module manifests mapped to exact canonical source paths"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "sha256": "2dbc50c2e68d03c5fa9061f49411f3cde414dbf5d1ecd5a7737cf8633c8858c0",
+      "baseSha256": null,
+      "transformId": "derived-frame-resolver-v2",
+      "reason": "Per-texture derived SpriteFrame resolver with standalone geometry and cache identity"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta",
+      "sha256": "15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b",
+      "baseSha256": null,
+      "transformId": "derived-frame-resolver-meta-v1",
+      "reason": "Creator metadata for the authorized derived frame resolver source"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "439453de0a0a4c114da450324487f9cbae7ab1bc7da70830882218e8f42ce40f",
+      "baseSha256": null,
+      "transformId": "gallery-page-asset-session-v1",
+      "reason": "Gallery per-page asset session runtime helper from Main handoff candidate"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096",
+      "baseSha256": null,
+      "transformId": "gallery-page-session-meta-v1",
+      "reason": "Creator metadata for the Gallery page session helper"
+    }
+  ],
+  "stageManifestSha256": "06c45add324c58de264ddff8c6e1169f592739f159e4f9d32cd1da8c09745223",
+  "stagingPath": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/staging-project",
+  "stagingIsReproducibleOutput": true,
+  "stagingDirectoryGitPolicy": "不提交重复711源树；从生成命令重建，Creator Library/Temp/build-output不纳入交付。"
+}

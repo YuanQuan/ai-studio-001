@@ -1,0 +1,28 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "批准轻Brief进入同Client阶段实现，绑定SHA 77d16d47d9461cc31e92053960651b854a04f345d025b07ca63f3268b021f7d8。一个Gallery runtime共享modules/derived与U04；page session token/epoch、依赖齐再原子显示、失败新代重试、生产禁legacy fallback、先取消/清引用/毁节点后安全生命周期释放、离线Prefab CUSTOM/trim=false保持几何方向符合现行契约。此为内部实现Review，不新增用户门禁。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实施约束：loadPageResource/releasePageResource按捕获的页面session与path+type匹配持有；cache hit回调也异步，旧代不能绑新页；重复资源共享、重复release/dispose和回调抛错不应破坏其他租约。U04借同池不能dispose全池；按Creator真实after-draw/销毁生命周期验证，不能仅mock证明安全。"
+    },
+    {
+      "severity": "INFO",
+      "message": "路径依据当前layout prototype.path：far_l为eye_dark_base，桥身为clean；环境生产传入页面预载map，不进入全局frameCache/resources。历史83审批映射不强制所有旧裁片发布；生产manifest须只含可达资源，尤其ModuleAssets.acquire会加载module全部assets，排除旧far_l输入时也必须排除生产world旧条目及不可用derivative，不能只做到调用者不get。保留历史清单与别名追溯。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "Brief所记layout source SHA ee02f…与当前源909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82不符。路径内容独立核对正确，开工可推进；交付须纠正文档身份并绑定真实源码。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v0.5实际web-desktop build log与main/config.json均包含UnitSamples和LanternPilot两个Scene；旧Scene进入输出已证实，店01body/sign具体复制原因仍需逐UUID依赖边归因。下一构建显式只UnitSamples，并审真实各bundle输出UUID/依赖/重复/启动请求；源UUID唯一不等于输出唯一。Web不证明目标分包，最终需微信/抖音CLI输出、game.json与包依赖审计；DevTools/真机缺失记录NOT_TESTED。"
+    }
+  ],
+  "next_action": "Master可放行实现；Owner补准确manifest与源码身份，最终冻结后复核真实Source-Cocos生命周期、20循环、构建输出和运行证据，整批聚合仍待USER_REVIEW。"
+}

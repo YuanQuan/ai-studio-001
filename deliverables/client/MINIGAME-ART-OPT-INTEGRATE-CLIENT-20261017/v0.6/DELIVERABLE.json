@@ -1,0 +1,48 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner": "client",
+  "summary": "v0.6 将 Master 批准的 Gallery 与 U01 小屏手势修正绑定到冻结资源 staging。三平台 Creator 构建及指定的 320×568 菜单/U05 配方流程烟测通过，其余手势与完整退出循环仍待 Root 验证。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+      "result": "PASS",
+      "evidence": "承接此前已对齐的 Brief 和已批准技术/视觉输入；本候选只接入同一 Client 阶段实现及 Master 批准的两项手势源变更。"
+    },
+    {
+      "criterion": "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.6 三平台构建已完成，但本版 Creator UUID/frame 几何回读和完整派生图对照证据尚未归档，暂记 NOT_TESTED。"
+    },
+    {
+      "criterion": "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+      "result": "NOT_TESTED",
+      "evidence": "冻结 staging 与实际构建包含五个本地模块 Bundle，两个 game.json 各列八个分包根；完整启动引用范围和剩余页面矩阵仍待核，暂记 NOT_TESTED。"
+    },
+    {
+      "criterion": "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "HTTP 小屏烟测确认菜单上拖、下拖、滚轮及不误触，并从菜单进入 U05 提交配方至订单 2/3（见 evidence/GESTURE_SMOKE_RESULTS.json）；其他面板手势及退出/释放循环仍待验证，因此本项整体暂记 NOT_TESTED。"
+    },
+    {
+      "criterion": "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。",
+      "result": "NOT_TESTED",
+      "evidence": "已归档源码/冻结、final config 哈希、2,447个输出文件哈希、物理字节统计和三平台构建；上传限制、性能收益及设备/GPU测量仍为 NOT_TESTED。"
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "Root仍在验证其余触控面板、页面退出/资源释放及完整运行矩阵。",
+    "生成文件的物理字节合计不能代替压缩上传体积或平台配额结论。",
+    "v0.5 的20次生命周期循环通过仅属历史事实，不是v0.6循环证据。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

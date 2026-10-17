@@ -1,0 +1,47 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.2",
+  "source_change_manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/SOURCE_CHANGE_MANIFEST.json",
+  "checks": [
+    {
+      "name": "Creator TypeScript 4.9.5 semantic check",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit --skipLibCheck --lib es2018,dom -p apps/client/tsconfig.json",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "session effective-method probe",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.2/tests/gallery_asset_session_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "coverage": [
+        "Creator-affected Set input normalizes to string module ids and deduplicates",
+        "dispose iterates all pending Set members and module/derived/frame Map values",
+        "late derived acquire and stale frame handles release on generation disposal",
+        "derived Sprite binding sets CUSTOM/trim=false and restores original transform geometry",
+        "two page owners share one source load and derived frame; one release preserves the other owner",
+        "20 dual-owner session cycles end with derived cache and source reference counts at zero"
+      ],
+      "limit": "Node effective-method test; not proof of Creator-generated code or Web runtime."
+    },
+    {
+      "name": "direct iterable audit in Gallery scope",
+      "result": "PASS_SOURCE_AUDIT",
+      "details": "No direct Set/Map iteration or iterator spread remains in Gallery/session files. Map.values and Set iteration use Array.from before array traversal. Remaining for-of sources are Arrays or Object.entries arrays; Array.entries use was replaced with forEach."
+    },
+    {
+      "name": "Creator Web build and compiled bundle inspection for this candidate",
+      "result": "NOT_TESTED_PENDING_PARENT_BUILD"
+    },
+    {
+      "name": "actual IAB U00 load, menu and page loop",
+      "result": "NOT_TESTED_PENDING_PARENT_BUILD"
+    }
+  ],
+  "failure_input": {
+    "result": "FAIL",
+    "evidence": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/u00-load-failure-720.jpg",
+    "console": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/CONSOLE-pre-fix.json",
+    "root_cause": "Creator-generated `assets/main/index.js` lowered Set spread to `[].concat(new Set(...))`; acquireModules received the Set object instead of module ID array."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "reviewer":"tech_lead",
+  "decision":"CHANGES_REQUESTED",
+  "findings":[
+    {"severity":"INFO","message":"独立审查冻结U05源码：milk_tea_lab.ts SHA-256 7da20f49e400fe8a202f9c91a08d3a4aec40aaaf3b93e963df3ed42771064d3f，helper SHA-256 bbacc3aadee8695d3dd36194ef884dc323f45e1709515a229885fef68de0d761，身份另存U05_REVIEW_IDENTITY.json。三项交付检查独立重跑PASS；仅helper几何/业务状态/转译检查，不证明页面真实布局或运行。已核当前安全区顶边及双轴换算已修，不沿用此前问题。"},
+    {"severity":"MAJOR","message":"[P1] milk_tea_lab.ts:525 renderSelection在proxySelection分支使用未定义size、fit、safe。三者是render方法局部，不在renderSelection作用域；手机46高/7间距触发proxySelection后首屏即ReferenceError。独立TypeScript语义诊断2304见U05_SEMANTIC_CHECK.json。该方法内重新读取同版visible/safe/fit或传明确layout参数，并以真实renderSelection分支测试，不能只transpileModule。"},
+    {"severity":"MAJOR","message":"[P2] milk_tea_lab.ts:344-357、907-930 字号放大后仍沿旧文本框高度并CLAMP，代理判定只看同组hit碰撞，未判断字号和真实字形可容纳。例390×844、安全宽366时CSS/local约0.5083，阶段sourceText框40×720/1024=28.125local即14.30CSS高，字体最低16CSS且lineHeight更高，文字必被裁；单茶选项无碰撞仍不代理。应测每组文字和实际框，未达规格的组进入默认关代理并停原热区，代理完整显示信息；合格原控件保留。测试需实际方法的label高度/字体/动作集合，不仅helper。"},
+    {"severity":"MAJOR","message":"[P2] milk_tea_lab.ts:433-436仅DOWN/UP、START/END，没有移动阈值、TOUCH_CANCEL和指针身份；拖动超过8逻辑像素再回原按钮仍点击，第二触点会覆盖down，系统取消也不清。按已批UI输入契约记录pointer/revision/generation与起点，MOVE超过8取消点击、CANCEL/离页/resize撤销；mouse/touch共用消费与去重。补真实处理器测试，确保拖动或第二指针不能提交/选择。"},
+    {"severity":"MAJOR","message":"[P2] milk_tea_lab.ts:983-1006 renderSafeDialog按rows数量滚动，每row固定48逻辑像素且text使用CLAMP，长状态/错误/配方行未按测量结果拆行或增高；因此滚动到该行仍看不到被裁尾部。operationPanel对state做wrap不能覆盖result/validation/recipe等通用弹窗。正文按真实可用宽和字形换行、计算完整行高并纳入滚动，长ID允许断行；补超过两行的真实dialog正文可达性检查。"},
+    {"severity":"INFO","message":"可确认：完整画幅contain、root/HUD同一平移缩放、safe/capsule映射、run/presentation对象保留、modal命中候选限制和原业务update持续执行的方向正确。仍须修后核代理组/HUD与普通组跨组相交、返回可达与窗口受限布局。当前没有Creator导入/HTTP运行证据，新helper meta仅手工UUID，运行/视觉/平台/GPU均NOT_TESTED，不可由静态审查替代。"}
+  ],
+  "next_action":"Master将4项实码问题交Client-U05修复并增加调用实际页面方法的有效测试；另路径新版本提交，保留本Review和源码身份。主Client合并后补Creator导入/真实HTTP运行及最终整版Review；不增加美术切片后置效果Review。"
+}

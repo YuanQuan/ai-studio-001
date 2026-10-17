@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "CREATOR_BUILD_PASS_UUID_READBACK_NOT_TESTED",
+  "identitySource": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+  "approvedIdentityCount": 83,
+  "generatedDerivedImageCount": 72,
+  "generatedPhysicalPngBytes": 11728804,
+  "stage": "/private/tmp/minigame-art-opt-integration-staging-v0.4d",
+  "generatedManifest": {
+    "path": "STAGING_INPUT_MANIFEST.json",
+    "sha256": "ca8d32769cfa2bf9a5b5eb3461b49b774f9dc3143133db65e88e756ae2368ff8"
+  },
+  "identityAndGeometry": "See STAGING_INPUT_MANIFEST.json generatedAssets for stable IDs, canonical image IDs, generated paths, source and frame UUIDs, crop rect, originalSize, offset, pivot and per-image SHA-256. Creator 3.8.8 builds completed for Web, WeChat and ByteDance, but independent Creator database UUID/frame-field readback is NOT_TESTED.",
+  "excludedProductionInputs": {
+    "retiredWorldImages": [
+      "tex_sakura_rr_far_l.png",
+      "tex_sakura_rr_bridge_body_l.png",
+      "tex_sakura_rr_bridge_body_r.png"
+    ],
+    "retiredMilkTeaImages": ["CUSTOMER_GHOST.png", "STATIC_BARE.png"],
+    "retainedApprovedLockCrops": ["LOCK_MILK", "LOCK_TEA", "LOCK_TOP"],
+    "preservation": "Exclusions apply only to generated release staging. Original project source files remain in place. Historical approved identity rows remain in the manifest, including the unused far_l crop descriptor marked physicalIncluded=false."
+  },
+  "uuidUniqueness": {
+    "stagedAssetUuidCount": 858,
+    "sameUuidPhysicalCopies": 0,
+    "verification": "Generator stages one physical ownership path per UUID; Creator database import/readback remains NOT_TESTED."
+  },
+  "sourceRetention": "No source PNG or other Owner working-tree content was moved, overwritten or deleted. Two profile inputs were recovered from Master-authorized immutable snapshots only for the generated staging copy; live profile bytes were left untouched.",
+  "runtimeEvidence": {
+    "creatorBuildResults": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/evidence/BUILD_RUN_RESULTS.json",
+    "outputFileHashList": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/evidence/OUTPUT_FILE_HASHES.json",
+    "miniGameSubpackages": "Both WeChat and ByteDance outputs contain game.json with 8 entries including world, tourist, shops, dialogue and milk-tea.",
+    "actualWebRuntime": "Root verified U00/U03 and six shops. Other pages and lifecycle loops remain NOT_TESTED."
+  }
+}

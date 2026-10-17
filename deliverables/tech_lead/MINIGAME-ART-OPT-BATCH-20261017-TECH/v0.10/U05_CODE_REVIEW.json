@@ -1,0 +1,12 @@
+{
+ "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+ "reviewer":"tech_lead",
+ "decision":"APPROVED",
+ "findings":[
+  {"severity":"INFO","message":"仅批准U05 v0.3源码修复子范围，milk_tea_lab.ts SHA159e914c6d6f11909eccf81dc798d5eb49bf28b1989ab83c1d04b570103c8726，helper不变。实际Run/config/presentation/fnt/方法检查完整身份见U05_REVIEW_IDENTITY.json；v0.7实际IAB失败及v0.9记录保留。"},
+  {"severity":"INFO","message":"实读applyProxyGroups与HUD冲突filter/isProxiedGroup均做类型辨别，不再对非字符串调用startsWith；已识别字符串仅迁移命中组，未知数值保守迁移所有现有操作组且停旧入口，不产生新规则。实际方法回归独立PASS：数值混合组不抛错；用真实config.makeRun与arrival presentation执行实际renderOperationPanel，准备时动作不能改Run.selected，playing同一动作恰调用既有选择入口一次并更新同一个Run。"},
+  {"severity":"INFO","message":"✓/▲/▼改为现有BMFont已覆盖的已选/上/下，未增字体资产；实际方法输出与fnt码位检查通过。此前proxy首屏、文字完整框/scroll-tail、指针取消、24/32等方法回归均随同脚本PASS。证据U05_METHODS_RERUN.txt，不是仅字符串regex或静态代理构造。"},
+  {"severity":"INFO","message":"未知组根因及Creator编译后运行仍需新build v0.8实际preparation→playing回归；本源码APPROVED不抵消v0.7黑屏，不宣称HTTP/IAB/GPU/平台已经通过。整版以Client v0.3和准确v0.8构建证据继续TechReview。"}
+ ],
+ "next_action":"Master合并冻结U05 v0.3到v0.8并实际复测进入准备/选料/返回/滚动与console，之后汇入整版Required最终Review；Art批准不重复办理。"
+}

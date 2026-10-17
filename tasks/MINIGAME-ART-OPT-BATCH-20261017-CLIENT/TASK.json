@@ -1,0 +1,62 @@
+{
+  "id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "title": "统一窗口适配与资源租约的客户端实现",
+  "type": "feature",
+  "owner": "client",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "统一窗口适配与资源租约的客户端实现，持续完成已授权无阻塞工作至下一确切版本门禁。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/task_snapshots/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-before-v0.2.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.4/PAGE_CODE_REVIEW.json"
+  ],
+  "deliverables": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "先产轻量Brief并通过Tech沟通，复用现有能力，跨端窗口/安全区/胶囊/逻辑坐标接口符合已批规格。",
+    "实现ModuleAssets共享在途/依赖/代际与幂等释放，覆盖竞争、错误、取消及20次循环的有效测试，不把测试替代GPU实测。",
+    "将已批页面适配要求落实到当前单元示例入口，保持U05完整画幅/规则时序与U04横屏组合，竖屏、文本/热区/滚动按规格，未测项明确。",
+    "按Creator3.8.8 CLI和HTTP实际Web产物验证，无缺资源/运行错误；提交准确源码/构建及Owner证据供Tech Review和用户审核。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-20261016-TECH",
+    "MINIGAME-ART-OPT-20261016-UI"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派，不再自行分派，不Git；保护既有未提交工作。",
+    "所有结论依真实文件；缺少平台/真机证据NOT_TESTED。",
+    "先读本角色最新五文件及适用共享skill；Producer登记真实首产后才IN_PROGRESS。",
+    "编码必须gpt-6-luna low，不自行改模型/分派/Git；只改apps/client允许TS/meta及测试/构建证据，新增framework/viewport、framework/module-assets，不能引入大型依赖。",
+    "先FEATURE_BRIEF与Master/Tech确认后编码；已批准Tech/UI/VFX规格可用，不依赖新切片。",
+    "本批不替换任何PNG，不改现有UUID/Prefab/Scene硬引用或做未批准全批切片接入；分包实际目录/序列化迁移留到全批Gate2后，避免跨模块资源身份冲突。",
+    "当前UnitSampleGallery.ts约2055行，优先新增清晰组件/模块，避免继续堆巨类；U05在labs/u05，保留游戏状态/时相。",
+    "启动口现有全帧/店铺Prefab硬引用仍未解除时须如实报告生命周期/包体未完成；不可因为做了通用租约就称实际页面已无全量驻留。",
+    "直接改原gallery可授权，但先记录当前字节备份；保留已有源dirty修改，不改sakura_v03_layout.ts与两栏杆PNG/package.json现有他项内容。",
+    "这是现有单元示例实现阶段，由Owner记录有效运行证据，无QA Agent；若改为正式功能/资源接入必须重新门禁，不能自称QA通过。",
+    "必要测试应验证代际/共享/失败逻辑与坐标性质，不写镜像实现的低价值测试；six viewport xDPR不能用CSS伪造，IAB不能设置DPR项NOT_TESTED。",
+    "构建用隔离副本避免Creator资产库争用，参考上一轮BUILD_MANIFEST，HTTP loopback，自建服务归属明示。",
+    "2026-10-17T11:30:33+08:00 Producer核实当前真实首产 deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md；登记时间非文件创建准确时间。",
+    "Master在本轮将U05交给独立同角色子任务 -CLIENT-U05，主Client不再编辑labs/u05。主Client负责U00-U04/framework/主测试与合并后构建，原四项验收中U05部分引用子任务真实交付与集成验证，不隐去其状态。原U05已做26行接线明确保留交新Owner，不回滚。",
+    "Master明确修订交付至v0.2，保留v0.1及失败Review历史；既有批准FEATURE_BRIEF和业务/资源边界不变，此为已授权实现修复，不重复审批同一方案。",
+    "2026-10-17T12:28:27+08:00 Tech真实代码Review退修，Owner在v0.2实际修订；FEATURE_BRIEF沿已批v0.1，Required当前路径按Master已更新，不改范围或验收。",
+    "2026-10-17T13:06:12+08:00 当前v0.2全部Required实存，Tech源码v0.8 APPROVED；Master唯一v0.7 URL实际页面矩阵核验进行中，REVIEW非DONE/USER_REVIEW。",
+    "2026-10-17T13:14:50+08:00 实际v0.7运行发现问题，依据Tech v0.9 RUNTIME_FINDINGS_V07.json修订到v0.3，旧版本/Task快照保留；原Brief与验收不改。",
+    "2026-10-17T13:49:21+08:00 v0.5六Required/四验收同序PASS及Tech v0.13 reader源码Review已核；Main局部交付REVIEW待同阶段资源整体集成，不独立加用户门禁。源码所有权已移交资源Owner。",
+    "2026-10-17T16:50:22+08:00 同阶段聚合精确实现USER_REVIEW，FINAL_IDENTITY 405f33048277a7d4cd42a851fef836ca908d1a0f99d825e9a9878710d3385843；历史源码快照由current_sources显式覆盖，不追加中间用户门禁。未整体DONE。"
+  ]
+}

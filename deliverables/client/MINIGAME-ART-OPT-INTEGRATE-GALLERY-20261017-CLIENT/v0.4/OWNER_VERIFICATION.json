@@ -1,0 +1,56 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.4",
+  "source_change_manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/SOURCE_CHANGE_MANIFEST.json",
+  "checks": [
+    {
+      "name": "Creator TypeScript 4.9.5 semantic check",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit --skipLibCheck --lib es2018,dom -p apps/client/tsconfig.json",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "scroll direction effective-method probe",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/tests/scroll_direction_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "coverage": [
+        "Invokes actual Gallery fingerScrollOffset, onMenuMouseMove, onMenuMouseUp, activateMenuEntry, onTouristTouchMove and onTouristMouseMove methods after Creator TypeScript transpilation",
+        "Invokes actual U01 applyPanelFingerMove method after Creator TypeScript transpilation",
+        "Upward finger/mouse movement increases scroll offset; downward movement decreases it; both ends clamp",
+        "A menu drag above the existing threshold does not activate an entry; a subsequent ordinary entry activation still works",
+        "Tourist touch/mouse deltas, U00/U04 helper call sites, U01 click isolation, and menu MOUSE_WHEEL wiring are checked"
+      ],
+      "limit": "Method and call-site harness; not a rendered Creator Web/IAB verification."
+    },
+    {
+      "name": "U04 request reentry regression probe",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/u04_request_reentry_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0
+    },
+    {
+      "name": "ModuleAssets/DerivedResolver effective-method regression probe",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.3/tests/gallery_asset_session_probe.cjs",
+      "result": "PASS",
+      "exit_code": 0,
+      "limit": "Includes effective-method 20 synthetic cycles; not actual Web runtime cycles for this gesture candidate."
+    },
+    {
+      "name": "Creator Web rebuild of this candidate and IAB touch matrix",
+      "result": "NOT_TESTED_PENDING_ROOT_BUILD"
+    }
+  ],
+  "candidate_identity": {
+    "UnitSampleGallery.ts": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+    "sakura_layout_editor.ts": "184f3610ffbd298e10dad79ec83e179f3e859b1a2fd3e9b612046b3180951a46",
+    "gallery_asset_session.ts": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0",
+    "sakura_v03_environment.ts": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78",
+    "ScrollableTextPanel.ts": "8f54010f550d69a4c82da03b61eedfba577c13e268866f237b5b1bb8d5aa4567"
+  },
+  "runtime_evidence": {
+    "previous_candidate_real_20_cycle_result": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/cycles.json",
+    "previous_candidate_note": "Root报告资源释放20次真实循环通过；该运行不是本手势修订源构建，不代替新候选复测。",
+    "current_candidate_result": "PENDING_ROOT_CREATOR_BUILD_AND_IAB"
+  }
+}

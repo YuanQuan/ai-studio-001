@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "scope": "deterministic owner-controlled contract tests; not device/rendering or DPR matrix",
+  "leases": {
+    "sharedLoadCalls": 1,
+    "sharedRefCount": 2,
+    "dependencyReleaseOrder": [
+      "release:root",
+      "release:dep"
+    ],
+    "retryAttempts": 2,
+    "cancelSkippedRootLoad": true,
+    "cycles": 20,
+    "cyclesReleased": 20
+  },
+  "viewport": {
+    "centerMapsToOrigin": true,
+    "safeCapsuleMapped": true,
+    "logical48DesignUnits": 80.84210526315789,
+    "resizeNotificationAfterRead": true,
+    "zeroSizeRetainsRevision": true,
+    "platformExceptionFallback": true,
+    "initialWidth": 320
+  }
+}

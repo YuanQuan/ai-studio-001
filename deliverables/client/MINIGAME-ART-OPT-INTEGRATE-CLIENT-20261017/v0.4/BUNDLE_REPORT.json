@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "CREATOR_SUBPACKAGES_CONFIRMED_WEB_RUNTIME_PARTIAL",
+  "bundles": [
+    {"id":"world","root":"db://assets/bundles/world","uuid":"b02cb7ec-0cfd-5b98-a48c-9058e7b1d150","dependencies":[]},
+    {"id":"tourist","root":"db://assets/bundles/tourist","uuid":"c737f72e-46f9-55cd-93ae-64ff11bd2c7c","dependencies":[]},
+    {"id":"shops","root":"db://assets/bundles/shops","uuid":"48d5ace1-82a0-5e91-86c1-7e9819961cdf","dependencies":[]},
+    {"id":"dialogue","root":"db://assets/units/dialogue","uuid":"285d02b9-ff17-5b9e-9c54-e1ecbe2a63b4","dependencies":["world","shops"]},
+    {"id":"milk-tea","root":"db://assets/bundles/milk_tea","uuid":"b097e0b1-5025-581c-9d67-47cae3b11229","dependencies":["tourist"]}
+  ],
+  "sourceScene": {
+    "path":"assets/UnitSamples.scene",
+    "beforeSha256":"05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+    "stagedSha256":"d2c300470a8eda6acbc91974213bca8546e41d3631dba451cdc2db7b80a44659",
+    "moduleAssetSerializedHardReferencesRemoved":true,
+    "useOptimizedBundles":true
+  },
+  "coverage": {
+    "productionManifestResourcePaths":419,
+    "configuredLocalRoots":5,
+    "result":"PASS",
+    "evidence":"node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.4d",
+    "scope":"All current production module descriptors map to staged assets and configured Bundle roots. This is not the actual startup Scene recursive dependency count."
+  },
+  "nativeMiniGameBundleSettings": {
+    "source":"deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/editor-bundle-probe/CREATOR_EXPORTED_BUILDER_SETTINGS.json",
+    "sourceSha256":"252823ccfc1ddc591d264b636ca7da33be088bf181769bb918969708325c89c9",
+    "stagedSettingsPath":"settings/v2/packages/builder.json",
+    "weChatAndByteDanceCompressionType":"subpackage",
+    "isRemote":false,
+    "actualGameJsonSubpackages":"PASS: both mini-game game.json outputs contain 8 subpackage entries: internal, resources, main, dialogue, milk-tea, shops, tourist, world."
+  },
+  "actualCreatorBuilds":"PASS: web-mobile, wechatgame and bytedance-mini-game Creator 3.8.8 builds exited 36 and logged Finished; see evidence/BUILD_RUN_RESULTS.json and full logs.",
+  "webHttpRuntime":"PARTIAL: Root reports U00 and U03, including six shops, passed in the v0.4 browser run; screenshot evidence remains in deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v04/. Other page/lifecycle/cycle checks remain NOT_TESTED.",
+  "packagePhysicalBytes":{"wechatgame":{"allOutputFiles":38706193,"mainExcludingSubpackages":3256025},"bytedance-mini-game":{"allOutputFiles":38680539,"mainExcludingSubpackages":3230374}},
+  "packageSizeLimit":"Physical output file totals are not upload/transmission sizes, account quota checks or verified platform submissions.",
+  "dprAndDeviceGpuPerformance":"NOT_TESTED",
+  "cdn":"Not configured; all five roots are local staging Bundles."
+}

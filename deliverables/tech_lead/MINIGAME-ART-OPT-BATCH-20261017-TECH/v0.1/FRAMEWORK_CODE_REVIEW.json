@@ -1,0 +1,15 @@
+{
+  "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "reviewer":"tech_lead",
+  "decision":"CHANGES_REQUESTED",
+  "findings":[
+    {"severity":"INFO","message":"独立Review仅冻结framework及framework-contract-tests.cjs，准确19文件SHA见FRAMEWORK_REVIEW_IDENTITY.json。原测试本轮独立重跑PASS（FRAMEWORK_TEST_RERUN.json），覆盖共享、依赖逆序、失败重试、取消迟到、20循环、read/resize竞态、0尺寸和Web异常；附加只读探针FRAMEWORK_REVIEW_PROBES.json揭示以下未覆盖问题。不批准尚在施工的页面或整版构建。"},
+    {"severity":"MAJOR","message":"[P2] viewport_mapper.ts:38-40按cutY再次判断半区会选错保留侧，导致保护区仍与胶囊重叠。复现safe y=300,h=100，capsule y=330,h=30，gap8后中心345在safe上半区，应返回y=368,h=32；实际返回y=300,h=68，覆盖整个胶囊。按胶囊中心一次决定上下分支，各自裁对应边，并测试胶囊跨safe中线/边界/紧凑safe。"},
+    {"severity":"MAJOR","message":"[P2] viewport_adapter.ts:133 content=clampRect(content,window)把投影内容矩形裁小，Mapper随后把局部可见Canvas错误当整幅visibleSize，产生触点/布局偏移。探针Canvas left=-50,width400、window width300、visible width400时，window x=0真实UI x=-150，实际-200。保留完整真实content投影矩形，只对safe/可用窗口求交，不裁映射基准；增加Canvas部分出窗/负viewport origin的逆映射测试。"},
+    {"severity":"MAJOR","message":"[P2] viewport_mapper.ts:11-17采用min(sx,sy)生成通用逻辑像素尺寸；当允许的输入轴比例不同，会使48热区某轴不足48。现有测试content320×760/visible720×1280，返回80.842 UI，实际逻辑宽仅35.930。采用明确x/y尺寸换算，或对保证最小宽高的标量采用保守max并明确字体策略；若依赖统一缩放则验证并拒绝不一致metrics，不能测试固定min当验收。"},
+    {"severity":"MAJOR","message":"[P2] module_assets.ts:181-188释放一个entry抛异常会中止逆序清理，剩余依赖永久保留；lease已released/operation已cancelled，重复release也无法恢复。探针root release抛错后dep refs仍1、repeat仍1。每项释放异常分别收集但继续全部held清理，finally删除Owner operation，最后统一诊断/抛错；补释放异常时其余依赖归零与重复释放测试。"},
+    {"severity":"MAJOR","message":"[P2] viewport_adapter.ts:172-174微信getWindowInfo存在但抛错时不会回退getSystemInfoSync，Base只保留初始1×1；探针备用接口可返回390×844仍read为1×1。对首选读取独立try/catch并尝试备用，携带诊断；onWindowResize/off注册与释放也需异常隔离，避免可选平台能力故障令Adapter构造/销毁直接抛出。保留真正已有效snapshot的现行兜底。"},
+    {"severity":"INFO","message":"可确认的边界：MiniProgram缺safe/抖音横屏无法辨方向时保守窗口fallback并诊断；capsule能力异常返回null；DPR未重复乘到Mapper。ModuleAssets共享inflight与独立Owner、取消不续载root、失败后重试、20循环基本契约通过。平台实际screen/window原点与旋转、GPU释放/性能均NOT_TESTED；不能由mock测试证明平台运行。U04注册表单池能否真正替代旧池待合并页面代码Review。"}
+  ],
+  "next_action":"Master将5项可复现问题交Client修正并补针对性契约测试，更新准确SHA后Tech复核冻结框架。页面继续已授权工作；最终整版仍需真实合并代码、Creator构建与HTTP运行证据，不对自产切片设置后置效果Review。"
+}

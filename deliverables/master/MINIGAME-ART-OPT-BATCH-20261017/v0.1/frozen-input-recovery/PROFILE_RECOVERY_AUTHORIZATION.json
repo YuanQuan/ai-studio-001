@@ -1,0 +1,19 @@
+{
+  "scope": "Only these observed editor profile drifts; same frozen hashes, no adoption or rollback of live profile changes",
+  "recoveries": [
+    {
+      "original_path": "apps/client/profiles/v2/packages/reference-image.json",
+      "expected_sha256": "b43f39e5f12e2e81dc3260076aec1ea2deba26bafb8ac14a720107b1c5353316",
+      "live_sha256_observed": "2f648e7a580b19c9adf2afd466909eec078e9ce121019226545bbebc1741fed4",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/reference-image.json",
+      "source_candidate": "/private/tmp/minigame-art-opt-integration-staging-v0.3c/profiles/v2/packages/reference-image.json"
+    },
+    {
+      "original_path": "apps/client/profiles/v2/packages/scene.json",
+      "expected_sha256": "1abdb324d367ea78ca670d1c8e648ddedea7d70f9d0c97392655bc4ed13bb7b2",
+      "live_sha256_observed": "892d75df83b27f583a78d1829c50a1727200bac3f6ee22f7964d7bd26e3008d2",
+      "snapshot_path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/scene.json",
+      "source_candidate": "/private/tmp/minigame-art-opt-integration-staging-v0.3c/profiles/v2/packages/scene.json"
+    }
+  ]
+}

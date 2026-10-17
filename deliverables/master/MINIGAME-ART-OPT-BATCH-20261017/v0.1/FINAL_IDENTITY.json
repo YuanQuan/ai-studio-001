@@ -1,0 +1,745 @@
+{
+  "version": "batch-final-client-20261017",
+  "created_at": "2026-10-17T08:50:09.311509+00:00",
+  "scope": "Main v0.5 + U05 v0.3 + Gallery v0.5 + Resource v0.8 aggregate; old source snapshots are historical, current source list below is authoritative",
+  "art76_approved_identity": "44140520215db9146c3c0398266d363f08d63024093304df4a908388dec312a8",
+  "current_sources": [
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "bytes": 163389,
+      "sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts",
+      "bytes": 38276,
+      "sha256": "42674f344b1eccca8e67b0609102bf730a4c568af1810bf89abbe6b1fbbf1df9"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/approved_asset_registry.ts.meta",
+      "bytes": 171,
+      "sha256": "fd1bf4f626b2be0cd51efb6a62a2daec3ecc5e49d0772552edd31863c1338eac"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts",
+      "bytes": 5477,
+      "sha256": "5fcdc784b4fd0f03a2bcafd594a93bb8df700318e767ffb487d7802c9b354e3f"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/client_asset_modules.ts.meta",
+      "bytes": 171,
+      "sha256": "165f46af8895e604f0e8ba17094ba605f475cf2dd9722f4ebbd448c9b616bbb1"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts",
+      "bytes": 8015,
+      "sha256": "71c0f9c220ec88305ca1e222380d8e984a8d3135b7ae0ff3f1d71aa2387adb8c"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta",
+      "bytes": 171,
+      "sha256": "15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "bytes": 16237,
+      "sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts.meta",
+      "bytes": 171,
+      "sha256": "4064bbb1f60634f984a45fff9fb0cf6f493bb2c69b3a4dd2ca18ed5e40840096"
+    },
+    {
+      "path": "apps/client/assets/framework/asset-integration.meta",
+      "bytes": 169,
+      "sha256": "6f34af7ded8eeb27e295f1eb7ddd67d7485bb7670551c7a719a7643da576328a"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/cocos_bundle_loader.ts",
+      "bytes": 3229,
+      "sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/cocos_bundle_loader.ts.meta",
+      "bytes": 171,
+      "sha256": "1e91613eaaa379c62611287769a1e0a6eaf1e72499cb61f1ea4a4c135caa0aa4"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/index.ts",
+      "bytes": 111,
+      "sha256": "9b4350af4a9809efccd3ba9e6bfeacd67399e498d2dd1d8b6736fb0139ddc5dc"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/index.ts.meta",
+      "bytes": 171,
+      "sha256": "7abfe7c4b4a44f48eaeafc066195310b8adbc51676db4518c06aef634dca8ffd"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/module_assets.ts",
+      "bytes": 10561,
+      "sha256": "08776264692d93888212a57340118de511e9bc5faeb593bd265fc83797bf8641"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/module_assets.ts.meta",
+      "bytes": 171,
+      "sha256": "f1697d9910f607ad9b46bd1963088cd09dae6990bb87d6ee4a7d00e191ae8e96"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/u04_module_registry.ts",
+      "bytes": 1576,
+      "sha256": "54a557162df6fd843a6b95cd84f5dd696aa15f917226c62c30f93f3d888a79a5"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets/u04_module_registry.ts.meta",
+      "bytes": 171,
+      "sha256": "d749f69de8ef8f7493a68d1a9dd420a527dcc242f75a0da53d8b777bba51ce65"
+    },
+    {
+      "path": "apps/client/assets/framework/module-assets.meta",
+      "bytes": 169,
+      "sha256": "a53a136c1a5f7550ab3fefa3e1cc414184ff675bb537b82e4bc9dca1258eab9e"
+    },
+    {
+      "path": "apps/client/assets/framework/ui/scrollable_text_panel.ts",
+      "bytes": 13487,
+      "sha256": "8f54010f550d69a4c82da03b61eedfba577c13e268866f237b5b1bb8d5aa4567"
+    },
+    {
+      "path": "apps/client/assets/framework/ui/scrollable_text_panel.ts.meta",
+      "bytes": 171,
+      "sha256": "da4c9d50ad6c3af23feaad259fdd52c688371d1c58dc4eaf6d7027fc37fae6bc"
+    },
+    {
+      "path": "apps/client/assets/framework/ui.meta",
+      "bytes": 169,
+      "sha256": "bee64927cbee3f7bae08863c38ecfb04d9deb31803e787e74ebce490de8e9645"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/index.ts",
+      "bytes": 96,
+      "sha256": "f9e09a3e4db74386d1d3e247e1162caa00b3a3498e1ef294eeab1bddd2b04bdd"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/index.ts.meta",
+      "bytes": 171,
+      "sha256": "1aeca23d0589c9c0b7fc2e2ea7aed29303193d91b21616ca8226d9db3d56a1fb"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/types.ts",
+      "bytes": 735,
+      "sha256": "9da8973f273c4e9cc6e5b5696b0ea078779c90cabc3acd25bd1bf835a21686f5"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/types.ts.meta",
+      "bytes": 171,
+      "sha256": "f0fd1d51b82c4268e17f2aa95eedf2f4d3d001b44e14b69a6cd63f6a71187c1a"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/viewport_adapter.ts",
+      "bytes": 13566,
+      "sha256": "173b56fa3e34e958bcb15eceb64ca74d3b7fa46d94a91c1073b3c249ddcdfb24"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/viewport_adapter.ts.meta",
+      "bytes": 171,
+      "sha256": "7183b60e4fd70b94e52a9ca295e920ac4b47179f186a6e88c96b07f2468a6f32"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/viewport_mapper.ts",
+      "bytes": 3412,
+      "sha256": "12809ad3621a741917bde482758775ce3c589fba29df1258f4caae74b4ac898c"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport/viewport_mapper.ts.meta",
+      "bytes": 171,
+      "sha256": "80c17a0a92723efbf408c238344ce824ed1c197c5658c00645ee2e352ffd9920"
+    },
+    {
+      "path": "apps/client/assets/framework/viewport.meta",
+      "bytes": 169,
+      "sha256": "e712726794f944adc3b95b114297f3c6508a258d66af37631962c3adac4a6c68"
+    },
+    {
+      "path": "apps/client/assets/framework.meta",
+      "bytes": 169,
+      "sha256": "7d7bd7081301bba914483f48902ccd9fb74c6a9b37e9619daa9e32b5227cb5a6"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "bytes": 40093,
+      "sha256": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "bytes": 12483,
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/milk_tea_lab.ts",
+      "bytes": 87956,
+      "sha256": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "bytes": 4255,
+      "sha256": "c31383a69473e53bbd3e6901f19a17d530553fed5d1cea62afe5d21dd05862f2"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts.meta",
+      "bytes": 171,
+      "sha256": "6b80533172db008fc4b1ed5ad9d45e09bb090973b98f38e0d202f42878d59c81"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/asset_manifest_generator.cjs",
+      "bytes": 9143,
+      "sha256": "b1e91ef253655d22cfffa06b1ceaab6555f34f87c01adba6ca147ea41afa54d6"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/build_staging.cjs",
+      "bytes": 31451,
+      "sha256": "02c1bb3147a4189e92cc629213b628b757374e79f258166f68f2cc5fca438280"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/generate_build_configs.cjs",
+      "bytes": 3653,
+      "sha256": "e2da1923a20928b2b174c9f95d0afda2a4390b1fb9b48572fb7f3cf663c3d418"
+    },
+    {
+      "path": "apps/client/tools/asset-integration/portable_input_recovery.test.cjs",
+      "bytes": 9835,
+      "sha256": "c1718afc92874f9b7baa03c1bae87f555349a97050e6801787db2fe3f1d771a3"
+    },
+    {
+      "path": "tests/client/asset-integration/asset_integration.test.cjs",
+      "bytes": 19752,
+      "sha256": "47706e2bd33997194678932034caa40f3c987116a8293e361c9ef688ef066208"
+    }
+  ],
+  "artifact_files": [
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ART_BRIEF.md",
+      "bytes": 3468,
+      "sha256": "37611b86c84ef624b3b72374865857654077bd5f679f67bdd86798f29dac5d84"
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+      "bytes": 12097,
+      "sha256": "7850497ac8c53655ca61b26076bbeaa294361bcec1fdf438da23fdc6d0780261"
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/DELIVERABLE.json",
+      "bytes": 2525,
+      "sha256": "123ae1caacf26c69e3da36492407e1a8cc1d425640225d7b5f82e65f4d2c4feb"
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+      "bytes": 6570,
+      "sha256": "ab306ec1c2cb290cd4f40ee11c80650ed50429004e2db7c34da5070b271042df"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+      "bytes": 2186,
+      "sha256": "e1228ba13719c7255d9820710659db9f7daf92229f7cf0e7c8f06a6a22d873b0"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/DELIVERABLE.json",
+      "bytes": 3084,
+      "sha256": "53bb97f52a6b0c4ac4d984861acd281829c922e2f958431f18ac954241617f97"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/IMPLEMENTATION_REPORT.md",
+      "bytes": 1938,
+      "sha256": "b2a3d4d1333b4315858dfbdd946481005d48236bc56573b456d3cefa8eba3f18"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/SOURCE_CHANGE_MANIFEST.json",
+      "bytes": 2332,
+      "sha256": "a2aacec0634dc186a41a5b7da794f117e4040664c851028310ece77906f2dadb"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/VERIFICATION.json",
+      "bytes": 3242,
+      "sha256": "590c410e0d3c1d7f87aaa3f2622bf57c5a7aa8da2c89d4c32e45815e528e00e6"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+      "bytes": 5890,
+      "sha256": "e9ad048785a285d4ef04a8f4a6655658223a27c2e7e49f94e0bccf06008d7caf"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/BUILD_MANIFEST.json",
+      "bytes": 158739,
+      "sha256": "e4da8ad3dd917fc86daaa684bd149437509faba7a2f8b59928f3f7f0e6f88127"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/DELIVERABLE.json",
+      "bytes": 3402,
+      "sha256": "6e8d2b83c550400704b6b8dfe436d0390f4918711102d3e2769043738bbd68d1"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/IMPLEMENTATION_REPORT.md",
+      "bytes": 7641,
+      "sha256": "107c2ea886799d7e79db31594ee87fea5e20b9c16a736168ea2e1a050bbc7f3b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+      "bytes": 8467,
+      "sha256": "ed0aedacc5829e1f8736917d57436d464451d2b454ac998f0a819e55caf9397b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/VERIFICATION.json",
+      "bytes": 1588,
+      "sha256": "52e8a9e47b5238eb1a7f95911b4c57c803c777da3c7b65262f0820650793bf33"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+      "bytes": 5444,
+      "sha256": "36d879472e4d4bff9f5ab1314f63e6c2fbf8b5c3d539e4c043b2d321f732dc72"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUILD_MANIFEST.json",
+      "bytes": 4299,
+      "sha256": "40ff99302f71e8cfadc3845076a311547016e87053913b35695f351f392647bd"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUNDLE_REPORT.json",
+      "bytes": 2724,
+      "sha256": "3656bada20ef539e0e604325ee0172c3ffb169f93639cce28c782d07da2e914b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/DELIVERABLE.json",
+      "bytes": 4004,
+      "sha256": "33613eb893394c2cfc93bc012013b0d8126c42a57be577c32b1027e16bd0a30d"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/IMPLEMENTATION.md",
+      "bytes": 3178,
+      "sha256": "508382a0585246db5afefdd4a5f6ef398f9129c38b8430606cfe8d28938b1906"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/OWNER_VERIFICATION.json",
+      "bytes": 3070,
+      "sha256": "a80a4cfbe9f348ed2bd9e0ae1e15e04d35358be71481f8113514cc4d7a5628df"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/RESOURCE_HANDOFF.json",
+      "bytes": 1865,
+      "sha256": "8f69644f9e9b9068f33cf32163279287f5c42120e14d48ed55fce040c4712822"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/SOURCE_CHANGE_MANIFEST.json",
+      "bytes": 1869,
+      "sha256": "f667545bf97632a927cf90f697c5ad88719d72690aa9408381c13f01a2d7a81f"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+      "bytes": 5438,
+      "sha256": "15896c9c9dee3a04052f3e96b32d0c7f8cfc01f4cb9fa2bf8bf472f118f35abb"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/DELIVERABLE.json",
+      "bytes": 3810,
+      "sha256": "0463fe77d64d83f976f0d687607b1c2af9bcc4eee20ea39a67750bd9315067aa"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/IMPLEMENTATION.md",
+      "bytes": 1914,
+      "sha256": "3090b2c3085f7c56925273a9b55e5d2a09105200241e67b5a57f5ade6d7ec757"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/OWNER_VERIFICATION.json",
+      "bytes": 3102,
+      "sha256": "ce7ca63035313c42e32f6b1da0544a5e38945eab7d212922f8975295ae06c19b"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+      "bytes": 4111,
+      "sha256": "db9ebf650c2ea0835fee9c6b9a636b8e49a88c49570f28a7cea9b2bebd378eac"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/MASTER_SUMMARY.md",
+      "bytes": 3114,
+      "sha256": "bf3a180988f75ca9abd6ab2effaaa58e025939bf9e53df2fa01ed06a34a66b3b"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/PORTABLE_BUILD_EQUIVALENCE.json",
+      "bytes": 1004893,
+      "sha256": "9d7a847e39ee7302f868f065a1440423d30f95fdcee5fa4b6ffaa35026d91bf1"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json",
+      "bytes": 144369,
+      "sha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE_ADDENDUM.json",
+      "bytes": 969,
+      "sha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RUNTIME_VERIFICATION.md",
+      "bytes": 4035,
+      "sha256": "04b4ec4cdd57addc72051339b31e20b442f2f7d5c7a8acca722aaee72c349b9d"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_REVIEW_PACKET.md",
+      "bytes": 2668,
+      "sha256": "80a7f81ca0456cd8edf428a986126ca7f152ee8f1c37990671cd62cabfbc9bbb"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/CONSOLE.json",
+      "bytes": 33760,
+      "sha256": "445d11454becb80a9432c868cf6214cc438d3f1b84518c74ae35437cd91ff754"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/CONTACT_20_VALID.jpg",
+      "bytes": 199989,
+      "sha256": "fed05e53927c73b52eb47326ff7f0a86f935fc1e0fc81228987e7e138aa7fcbf"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/DISPOSAL_RESULTS.json",
+      "bytes": 14493,
+      "sha256": "d03860961ca42667bd401689f3c6294fdd941ecdcaa250e80fda68e75c68dcf4"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/EARLY_CANCEL_ATTEMPTS.json",
+      "bytes": 510,
+      "sha256": "3718e2e0d20c69d58da177b2759b229deb7e585269d13004cc264197f1632109"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-320x568-drag-bottom.jpg",
+      "bytes": 25355,
+      "sha256": "e432baaad5c2b55e6bff1c1d0d9fb860d4c7bb11a51dd46e50ed4c60a76c6eaf"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-320x568-top.jpg",
+      "bytes": 27685,
+      "sha256": "be23f9fffb160ddd4dee8dc79229fa00309a3d3d333961a40a1fa0a51a049020"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-360x640-top.jpg",
+      "bytes": 32649,
+      "sha256": "a2b390b9f91e14ae0090a531aeb72b05786bd4837066727bef62aef408830b21"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-390x844-top.jpg",
+      "bytes": 42794,
+      "sha256": "c0c4cffc02735232aa51d98ee4348b7db0c9ac60e917fd238fd1ceb610f7d72b"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-412x915-top.jpg",
+      "bytes": 47440,
+      "sha256": "630e1bf481524cfbd237392ff07b4d921dcde711f583533c79f6c095c466f458"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-414x896-top.jpg",
+      "bytes": 43805,
+      "sha256": "6d85d2169a08159a6cda6c928041206eb1f11c308f8e4dd0efbe5fa3f3a87b07"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-720x1280-top.jpg",
+      "bytes": 86201,
+      "sha256": "cc26b62116d934d8ff6cb009a150a49b973187ceade7da02017f2ae408b9bf06"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU-to-U05-320x568.jpg",
+      "bytes": 43956,
+      "sha256": "d6bc2d45739055bc260d0e622ddb4cf4000d24b5b6f25dac1040e8a5e537a7fa"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/MENU_SIX_VIEWPORTS.jpg",
+      "bytes": 70246,
+      "sha256": "0db4cd5fffa27bed469c9cfcd179e15aa83bf86604b495d01c643420079ada66"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/U01-drag-before-close-320.jpg",
+      "bytes": 6819,
+      "sha256": "31403be119f0132bd536df4275e54bf639353fc4d9002bfe4d5c64092557c56a"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/U01-first-close-after-drag-320.jpg",
+      "bytes": 21948,
+      "sha256": "8c50347913f4f2ff1b6962b00def6282a615042d90dae245afd78735b9cdece8"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/U01-next-button-after-drag-320.jpg",
+      "bytes": 22180,
+      "sha256": "c578f297aacc4f10329cccf78c2d8f48c19e66f72ffec0aaf0b97724c0283b06"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-01-U01.jpg",
+      "bytes": 22150,
+      "sha256": "ba13d2a1aab2a4d844d0a7f77941e914848f84cb5779b8d04c6886614ae34976"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-02-U00.jpg",
+      "bytes": 98118,
+      "sha256": "4de29c65021790b945430071138360ee97c82df5578f3a1c522d0b4becad450d"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-03-U02.jpg",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-04-U03.jpg",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-05-U04.jpg",
+      "bytes": 98360,
+      "sha256": "7ada9385d8eae92e01696219f25c4ff152efe995160837d122cdce0564dcb2a5"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-06-U05.jpg",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-07-U04.jpg",
+      "bytes": 97727,
+      "sha256": "8c29284f3f042b3caa965a8e2ec18eb63b87f8ae036236193ece75e1fcffc263"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-08-U00.jpg",
+      "bytes": 169837,
+      "sha256": "24dfe852e2df56df5531b8daab0430559ec97f9e0802ded60c35ae225e1751ef"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-09-U01.jpg",
+      "bytes": 77727,
+      "sha256": "625abfe597822ee4bf82cb9c5973e7bb9249e12af41b4298c386186e062cf528"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-10-U04.jpg",
+      "bytes": 97970,
+      "sha256": "8f9ea9abb4cf8e5c7a7bb9dd0fe246113ecb0dccaf2926ac76099ff12bd99b97"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-11-U02.jpg",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-12-U03.jpg",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-13-U04.jpg",
+      "bytes": 97916,
+      "sha256": "3922c6588bd5b3f04073ffac2231fe875df5bea680678e2e80a6ad0d797722e6"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-14-U05.jpg",
+      "bytes": 156991,
+      "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-15-U04.jpg",
+      "bytes": 98335,
+      "sha256": "d746eadbbb85e65a13b2831494b055f58656e5f18ffd66492fac5eb3e264a097"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-16-U00.jpg",
+      "bytes": 169624,
+      "sha256": "73006d9409b243dbcb67a88cfcf3763102c9805fc30cc1ccdefa875453bb13f4"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-17-U02.jpg",
+      "bytes": 58436,
+      "sha256": "fff8e6666bfd300a68813e33742b6b4b2c31e0bb5665320d6435ac2866472b86"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-18-U03.jpg",
+      "bytes": 63293,
+      "sha256": "2e7381da1b081665e419bad5a8a44fdd9cb9ff37bb8647b8bbbbab63f49c41e6"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-19-U04.jpg",
+      "bytes": 97734,
+      "sha256": "35036ba1d2d97ae5af9a857bdc12516badfd7752a9cb4de4a1ae1bcb8f6b51ec"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-20-U01.jpg",
+      "bytes": 77432,
+      "sha256": "cfbe37dc4c35d9a0b737cdcf51f748f8d57ca008252ed114cd1db4737a3b9fc5"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycle-21-U04.jpg",
+      "bytes": 98211,
+      "sha256": "70cb790b40bd63713c56395cf4aa450c57fcb399e1602e83e059d71938e208cd"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v07/cycles.json",
+      "bytes": 2743,
+      "sha256": "13963f68e204e94296092f0754ee2afaa481118c5e5e5e42d6a2d323c8fb5b78"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/CONSOLE.json",
+      "bytes": 4094,
+      "sha256": "36df269e3186ec1ff036fe7483f9c46fbcad99e29719e24375853af157bc16af"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/MENU-720x1280.jpg",
+      "bytes": 86201,
+      "sha256": "cc26b62116d934d8ff6cb009a150a49b973187ceade7da02017f2ae408b9bf06"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/REPORT.json",
+      "bytes": 584,
+      "sha256": "095bfe7e713d2c66945311c8968e0a8b151e7c1d1cc35057c9589a5cdfd5f033"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/U01-first-close-after-drag-320x568.jpg",
+      "bytes": 21882,
+      "sha256": "349bea1859146187210a28d2a3ec67a9dd44cfeb2c1fd634ff944e13c4a1d72d"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/U01-loaded-320x568.jpg",
+      "bytes": 21913,
+      "sha256": "acb7d32cca6c6a2ac6fbfc6e5f3dcb02f01aa36cb3a77b59b967c98d1147b761"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v08/U04-loaded-720x1280.jpg",
+      "bytes": 98122,
+      "sha256": "0fd92d5433f08892a2a666c5828d3816cc645cfcc563c2aef757e02b2c99bd2f"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/frozen-manifests/STAGING_INPUT_MANIFEST.json",
+      "bytes": 240118,
+      "sha256": "77ab51753aa906f2dbc78cfe9b9af18cbcc94aedb3de7ee7ad121ad252d6a7d0"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/build-configs/bytedance-mini-game.json",
+      "bytes": 2674,
+      "sha256": "b19d05487147913426dd5ff8ac74bcd9926ee0f4fab3875c3475121538299b6d"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/build-configs/web-mobile.json",
+      "bytes": 2632,
+      "sha256": "43fdee9e1d1af6e6d8d1559fd914447458ca20a0b466dde886bac3399ccd2e87"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/build-configs/wechatgame.json",
+      "bytes": 2638,
+      "sha256": "e4d8cd739cf746fb5263ba5d7498087d998f8ddfdba41324d58a88a34934952b"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/evidence/creator-bytedance-mini-game.log",
+      "bytes": 83729,
+      "sha256": "0677411c7b982bbdaf5b42dd25ee6b55ed635a706628193f429ad462c81e9dd2"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/evidence/creator-web-mobile.log",
+      "bytes": 81529,
+      "sha256": "cbb2fd18da1e04705e1a40986c0430691bcc871ccc80467deb948834424252ce"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.7-u01fix/evidence/creator-wechatgame.log",
+      "bytes": 83536,
+      "sha256": "d2d7ef875839bed478f46b271468295c58cda6be039af2c7b1da19794f0c0484"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/build-configs/bytedance-mini-game.json",
+      "bytes": 2680,
+      "sha256": "1558b0511a3254dc3cf69bcb956ff4dcf2e6d2d4c219c9ca7db9f530fe106050"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/build-configs/web-mobile.json",
+      "bytes": 2638,
+      "sha256": "f0ce4ed01f3d37844dd87200871193488ff005f8f2dd8cba03a371582262f337"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/build-configs/wechatgame.json",
+      "bytes": 2644,
+      "sha256": "b039c85547fbc7faf9a6efa084ec491c759ebca3bf7e99f7e4636209dad94cf7"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/evidence/creator-bytedance-mini-game.log",
+      "bytes": 84223,
+      "sha256": "851fff08207c9ac7d37285b39a76a01ca188934f860a812ae512bf655f948442"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/evidence/creator-web-mobile.log",
+      "bytes": 81623,
+      "sha256": "578febb09e90b89248a96e711cc21686a8552b9aa8874684bcaa822d17de8919"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-portable-v08/v0.8-portable/evidence/creator-wechatgame.log",
+      "bytes": 86310,
+      "sha256": "dd39c8922a1bc97965fd8d761ca70b10026045798ed6e90c128f302552b1871d"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/PORTABLE_INPUT_RECOVERY_AUTHORIZATION.json",
+      "bytes": 3372,
+      "sha256": "76a6c02f6eb60736d1f921a400e7c1e76ce1c43c4374eaf3cee4fc0262ecd334"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/package.json",
+      "bytes": 157,
+      "sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/sakura_v03_layout.ts",
+      "bytes": 28061,
+      "sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/tex_sakura_rr_bridge_front_l.png",
+      "bytes": 51230,
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/tex_sakura_rr_bridge_front_r.png",
+      "bytes": 51955,
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/BATCH_REVIEW.md",
+      "bytes": 5571,
+      "sha256": "6f91e454e9386356bfc6bcf55549cb61c1c7b0363f658f464dd5b5327f8b45e3"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/CLIENT_BRIEF_REVIEW.json",
+      "bytes": 4274,
+      "sha256": "4a107ef816a04b664851c99d964fce78cae43c4f586d3f9268170f923d72933b"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/DELIVERABLE.json",
+      "bytes": 2854,
+      "sha256": "219d5081422e2ce3ee0372a5e2a2d272c534da662ee97a4e38bff1d12c8e8464"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/FINAL_ARTIFACT_HASHES.json",
+      "bytes": 1094,
+      "sha256": "aaf92bbf15d659a744b1b97fc6f04d86564da1d33f911f9835f6e038d8feca08"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/FINAL_REVIEW_IDENTITY.json",
+      "bytes": 9064,
+      "sha256": "e420903936342517ca3ee399b2512f494fd15039392731587d40b6f92cebcc85"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/REVIEW.json",
+      "bytes": 2037,
+      "sha256": "eadf7faaaaf40045a74fa427bae278af08698ae807f1e4faa26f86fe2d4830c6"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/REVIEW.md",
+      "bytes": 7748,
+      "sha256": "72e02f94941a00a5e9459e22742d91b3934083d37146e0dbf9c58a218742a90f"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/TECH_PRESIGN.json",
+      "bytes": 2789,
+      "sha256": "29d0cd5693ea1d8c932bf536be0425cfee860121706cb3ad03310a978454a2dc"
+    }
+  ],
+  "identity_excludes": [
+    "this identity file",
+    "Root/Producer final decision files and git receipt (avoid circular hashes)"
+  ],
+  "approval_boundary": "CLIENT_IMPLEMENTATION_USER_REVIEW_AND_COMPRESSION_PLAN_GATE1; not QA or platform release approval"
+}

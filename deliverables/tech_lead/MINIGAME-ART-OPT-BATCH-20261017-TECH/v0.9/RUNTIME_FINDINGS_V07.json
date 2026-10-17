@@ -1,0 +1,52 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-TECH",
+  "source": "Master actual IAB v0.7 evidence, Tech independently read MATRIX/CONSOLE and viewed U00 panel screenshot",
+  "runtime_status": "CHANGES_REQUESTED",
+  "matrix_actual_dpr": 1,
+  "matrix_rows": 44,
+  "issues": [
+    "U00 panel tiny controls/long coordinate wrapping",
+    "U01 panel title below16CSS",
+    "U02 navbar title clipped",
+    "U05 start preparation throws startsWith; blank canvas",
+    "U05 BMFont missing check and arrow glyphs"
+  ],
+  "evidence_identity": [
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/MATRIX.json",
+      "sha256": "8ddfc9787f27da7389f322a245fbe052c46b78b370978f9b506787f96acc7cb6"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/CONSOLE.json",
+      "sha256": "3d765cdcc3560af7954fbf682b2fad5dfd6d7455ecc6c0027947364986bbf541"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/U00_PANEL_320x568.jpg",
+      "sha256": "d6f95c6fb9059646ac76434b227b5e8ac3107dae0207febb38593cdd3c1cd4f3"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/U01_PANEL_320x568.jpg",
+      "sha256": "62bc9a786e8d195b54f3542e1440de44ddfdb85832832a5946865b678ff6c351"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/U05_STARTED_320x568.jpg",
+      "sha256": "01bcb4928aa6433dce825aac0f12dd3dd0204b0edc9bc883727bb5a4003ac360"
+    }
+  ],
+  "independent_findings": [
+    "U00实际专用面板X/Y/步长/缩放文字过小，通用button helper测试不能证明迁移bodyContent后的专用控件布局正确。",
+    "U01面板标题未达规格，需核实际标题方法及父scale，非仅redrawButton。",
+    "U02长nav标题裁切，需核真实标题框与布局。",
+    "U05 preparation后applyProxyGroups触发t.startsWith非函数，需将实际状态数据流和编译后类型/标识接入回归。",
+    "BMFont缺✓/▲/▼，需采用已授权字体覆盖内文案或明确合规来源方案，不能静默缺字。"
+  ],
+  "prior_review_scope_limit": "先前APPROVED仅绑定源码与局部方法，不覆盖此次真实运行；v0.7失败不能被静态PASS覆盖。",
+  "next_candidate": "Client/U05 v0.3 required artifacts and build v0.8; v0.2/v0.7 historical records retained",
+  "not_tested": [
+    "DPR2/3",
+    "platformSafeArea",
+    "WeChat/Douyin target devices",
+    "GPU/performance"
+  ],
+  "art_boundary": "76具体资源Gate2已获批，不对美术效果重做Review或重复Gate2；本报告只针对Client运行"
+}

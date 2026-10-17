@@ -1,0 +1,24 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-TECH",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "当前CocosBundleLoader.release调用bundle.release，它在本机Creator3.8.8 bundle.ts:594调用tryRelease(asset,true)，_free(force=true)跳过引用计数。ModuleAssets只计显式path，不计Prefab间接SpriteFrame依赖：另一Owner仅持Prefab时，显式frame最后租约释放会强制毁掉Prefab仍引用的frame。需使用配对addRef/decRef非force所有权，或严格完整依赖租约方案；必须测A持Prefab/B持frame，释放B后A仍有效、最终释放才回收及取消late load。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "applyDerivedFramesInTree当前先赋spriteFrame再设CUSTOM/trim=false，且未保存恢复原UITransform。与Task要求先设CUSTOM/trim=false、保留原UIT不符；原Sprite为RAW/TRIMMED时frame setter可改尺寸。需先mode/trim再frame并验证原UIT/anchor/position/scale不变，不能只以staging已CUSTOM的双测替代。"
+    },
+    {
+      "severity": "INFO",
+      "message": "取消需验证await边界：getDerivedFrame/getEntryAsset/prepareDerivedFrames在await acquireDerived返回后再注册handle，没有独立assertCurrent；设计微任务插入dispose于handle产生与外层续体之间，确保新handle被释放、不返回已destroy帧或重新向disposed会话写引用。dispose已先清已登记frameHandles，但derivedLeases仅Promise持有，需覆盖尚未交付的handle。"
+    },
+    {
+      "severity": "INFO",
+      "message": "当前为持续制作中的风险预检，不是冻结版最终Review。findPath已做canonical bundle/path/type/revision等价去重，loadPageResource查找已放Promise链异步；未重报已修原问题。最终仍需session实际方法20循环、两个owner共享、失败重试、旧provider回调、真实Creator依赖及IAB。"
+    }
+  ],
+  "next_action": "Master协调对应Owner修正；完成精确冻结及有效探针后再复核，不据本预检批准整体接入。"
+}

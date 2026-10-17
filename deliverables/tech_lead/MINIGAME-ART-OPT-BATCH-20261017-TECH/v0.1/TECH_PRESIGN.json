@@ -1,0 +1,14 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-TECH",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {"severity":"INFO","message":"唯一预签对象Art v0.2 BATCH_PREPRODUCTION_PLAN.md SHA-256 fe1221f4069c0f062e80af8b385ef3f638084f9d84025f04f402e3a2d408f083；SCOPE_INVENTORY.json SHA-256 ffcb38f0d1816517196743f4f189f7177c97c6c11b65839883f2fea326a00a26。已核Art同SHA APPROVED，仅批准76件制作预案，不签未来图像或GPU通过。"},
+    {"severity":"INFO","message":"268=73新增+3采样修订+7引用+50无收益+135特殊未核；原73源与坐标完全未改，沿用BATCH_INPUT_VERIFICATION独立证据。仅3项category/psd_route/reason变动，已独立复算批准源SHA、裁框、offset/pivot同旧样本PASS，详BATCH_V02_DELTA_VERIFICATION。旧10原件及批准保留，新3件另路径待本批Gate2。"},
+    {"severity":"INFO","message":"14PSD/76层为非运行资源库。shop01两个1024方槽在2048×1024内；scene_spirits六160方槽在960×160内；U05十六源均可容纳256槽。各真实层须按库坐标反向恢复原尺寸画布后裁取，实际生产核槽位互不污染及可见RGBA零差，不从源PNG直裁绕过PSD。"},
+    {"severity":"INFO","message":"仅alpha=0且裁框内允许从同件批准源同坐标回填隐藏RGB，记录回填数；真实PSD层alpha与alpha>0 RGB保持零差，最终裁框全RGBA零差。Owner复用PILOT_SAMPLING_DIAGNOSTIC的straight-RGBA双线性9相位(.25/.5/.75)及黑灰白source-over比较，目标零差并记最大差/变化数；原画布丢弃alpha0外沿不能产生有alpha采样差。保留2px透明保护边，不改可见/弱透明像素。CPU数值验证不等于Creator/GPU采样通过。"},
+    {"severity":"INFO","message":"scene14为普通CUSTOM/trim=false Sprite及节点运动，不手改UV；眼光独立sourceRect不裁。U05杯/锁/按钮文字保持原尺寸和叠放语义，未来LOCK与BTN也须原画布恢复。字体UV、九宫格、对话sourceRect、lantern固定UV、配件未核源等185项不产不改。"},
+    {"severity":"INFO","message":"从首张新图计制作90分钟+静态45分钟总135分钟，0生成调用、同问题最多2轮；预算/hash/PSD层/可见像素/特殊UV异常停止受影响件报Master。自产切图Owner核文件/映射/重组后直接用户Gate2，不加后置专业效果Review或Creator前置环境。Client已批技术/UI实现可继续，未批新切片不接入；平台、GPU、性能与导入运行NOT_TESTED，代码Review另待真实实现。"}
+  ],
+  "next_action": "Master核Art/Tech同v0.2 SHA后释放76候选制作；Owner完成实际层链、透明RGB与采样静态证据后直送用户Gate2。Tech保留任务等待Client真实代码Review，不做自产切片后置效果Review。"
+}

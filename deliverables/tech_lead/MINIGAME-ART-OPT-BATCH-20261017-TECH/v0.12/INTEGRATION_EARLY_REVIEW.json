@@ -1,0 +1,13 @@
+{
+ "task_id":"MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+ "reviewer":"tech_lead",
+ "decision":"APPROVED",
+ "findings":[
+  {"severity":"INFO","message":"仅接受本次早期generator/derived resolver的3项修订，不批准仍实现中的staging/页面/最终资源接入。代码在本轮读查期间Owner已修，准确checkpoint及只读副本见INTEGRATION_REVIEW_IDENTITY.json/source_snapshot。首次读取时旧rect/字符串texture-key/仅originalSize bounds问题真实存在，不把已修状态冒称旧版正确。"},
+  {"severity":"INFO","message":"生成器现83项standalone rect均[0,0,cropW,cropH]，源画布crop另存sourceCropRect；derived resolver按WeakMap实际texture对象分桶，再用几何/revision键，不依赖空UUID或同名。实际textureSize边界在reset前核，越界释放module lease后拒绝。独立执行实际编译函数probe：83非零standalone原点=0；两个同时活跃、同名/空UUID且不同Texture double对象不会共frame或串texture；16×16纹理请求32×32 rect被拒绝。INTEGRATION_PROBE_RESULTS.json存证，非Creator/GPU证据。"},
+  {"severity":"MINOR","message":"Owner新增ghostOther后共享计数测试曾仍断言总load=1而失败，本轮后续修正为两个canonical路径各加载一次，独立rerun已PASS（OWNER_TEST_RERUN.json）。但现Owner对不同texture的断言在runLease/walkLease释放后才acquire other，不能抓活跃cache碰撞；请Master让Owner纳入Tech本轮同时持有两种texture的probe，且各frame.texture严格对应源对象，空uuid及同名均覆盖。不可退回single mock texture。"},
+  {"severity":"INFO","message":"本轮仅standalone，不接受未来atlas rect基于originalSize验证的推论；真实边界以texture尺寸为准。83逻辑ID/frame顺序/时长和10组alias仍须在staging UUID转换/实际导入中核。Derived acquire的在途取消需在最终调用点以唯一owner token/cancelOwner或显式cancellable acquire闭环；目前只读模块不能证明页面离开已取消、20循环或GPU释放。"},
+  {"severity":"INFO","message":"生成器来源hash与PNG尺寸检查、派生frame不改导入源、共享refs最后释放具备可验证基础。完整staging白名单/唯一UUID/启动硬引用解除/物理Bundle依赖/实际运行尚待Owner产出和最终聚合TechReview，不以本早Review替代用户对全部准确Client交付的USER_REVIEW。"}
+ ],
+ "next_action":"Master可让Owner继续同阶段实现，并补并发不同texture测试及最终调用点取消/真实导入/包体依赖证据；本代码checkpoint内部Review不新增用户门禁，最终资源+UI全部代码另聚合审查。"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion":1,
+  "version":"v0.5",
+  "scope":"Client Owner static and staging verification; actual Web and platform CLI are Root-managed.",
+  "checks":[
+    {"name":"Source freeze and explicit override","result":"PASS","evidence":"Staging manifest binds 711-file freeze, authorized reader addendum, owner overrides SHA add9b841... and Gallery v0.3 source/manifest exact hashes."},
+    {"name":"Production manifest-to-stage coverage","result":"PASS","evidence":"node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.5-u04fix; 419 production paths map across five configured Bundle roots."},
+    {"name":"Creator TypeScript semantic check","result":"PASS","evidence":"Creator 3.8.8 bundled TS 4.9.5: tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false."},
+    {"name":"Three-platform Creator CLI builds","result":"PASS","evidence":"Root isolated final builds: Web 36 + Finished (9s), WeChat 36 + Finished (10s), ByteDance 36 + Finished (13s); final config hashes/logs and all output file hashes are archived in evidence/."},
+    {"name":"Actual mini-game subpackage output","result":"PASS","evidence":"WeChat and ByteDance game.json each contain eight roots including internal/resources/main and the five configured local bundles; copied game.json and hash records are in evidence/."},
+    {"name":"20 actual page load/exit cycles","result":"PASS","evidence":"evidence/cycles.json has 20 cycles; evidence/DISPOSAL_RESULTS.json has 20 exits with post-exit moduleLeases/pendingRequests/heldDerivedFrames/moduleInflight/derivedLive all zero and pageBindingsCleared=true. evidence/CONSOLE.json contains 70 log/info entries and no warn/error events. Listener cleanup remains NOT_TESTED."},
+    {"name":"U04 browser reentry / normal cancellation error","result":"PASS","evidence":"Root reports two actual U04 reentries with no console errors; screenshots are preserved under deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/cycle-01-U04.jpg and cycle-02-U04.jpg; the 20-cycle run also includes repeated U04 cycles."},
+    {"name":"Small-screen menu scroll drag direction","result":"FAIL","evidence":"Actual 320x568 menu drag moves in the reverse direction because UILocation delta sign is inverted; visual evidence: evidence/menu-reversed-drag.jpg. Master assigned Gallery/U01-only callback/scroll formula fix for v0.6; this Owner did not edit those source files."},
+    {"name":"90-item scan and full final matrix","result":"NOT_TESTED","evidence":"Root is continuing these checks after the small-screen gesture correction."},
+    {"name":"Other pages, page lifecycle and 20-cycle run","result":"NOT_TESTED","evidence":"Not inferred from the U04 fix."},
+    {"name":"DPR/device/GPU/upload size","result":"NOT_TESTED","evidence":"No device or platform upload validation in Owner evidence."}
+  ],
+  "historicalFailure":{"path":"deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v04/CONSOLE_ALL_BEFORE_U04_FIX.json","sha256":"ff62ca907c88fe8cfb10ca997aabd2ee4a7b084f2886d47357625fa450c62b94"}
+}

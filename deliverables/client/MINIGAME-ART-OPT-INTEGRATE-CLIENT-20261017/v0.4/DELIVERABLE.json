@@ -1,0 +1,26 @@
+{
+  "task_id":"MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner":"client",
+  "summary":"v0.4 修复生产模块清单回流 retired far_l 的缺陷，保留已批准 LOCK 裁片，生成含五个本地 Bundle 根、平台构建配置和精确冻结输入的可复现 staging，并补生产清单到 staging/config.paths 的覆盖检查。Creator 导入、实际页面与目标平台输出仍需隔离运行验证。",
+  "artifacts":[
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/OWNER_SOURCE_OVERRIDES.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.4/OWNER_STATUS.json"
+  ],
+  "acceptance_results":[
+    {"criterion":"先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。","result":"PASS","evidence":"已有 v0.1/FEATURE_BRIEF.md；Tech对齐/接受记录由Master维护。本版源代码仍记录为同Client阶段实现。"},
+    {"criterion":"83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。","result":"NOT_TESTED","evidence":"Creator 3.8.8 三平台构建成功，但独立 Creator UUID/frame 字段回读、完整同尺度画面验证及10组共享引擎运行结果尚未提供。"},
+    {"criterion":"可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。","result":"PASS","evidence":"v0.4 staging 可重生成，五个本地Bundle归属/依赖通过生产清单到路径覆盖；隔离 Creator 微信/抖音构建均成功，game.json 确认8个subpackages（含五个本地Bundle），Web U00/U03实际运行并覆盖六店通过。源 PNG/脏文件不移动或覆盖；实际上传限制/真机指标不包含在本criterion。详细日志、config、game.json和hash清单见v0.4/evidence。"},
+    {"criterion":"页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。","result":"NOT_TESTED","evidence":"模块加载器/派生资源/页面接线的Owner代码和静态测试可复核；页面生命周期、隔离HTTP运行、同尺度对照和循环尚未由Owner实测，均明确NOT_TESTED。"},
+    {"criterion":"准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。","result":"NOT_TESTED","evidence":"源码/资产几何和 UUID、三平台构建config、Creator日志、game.json、输出文件SHA-256清单及 physical byte measurements 已追溯。物理文件字节不等同上传包体或平台配额校验；DPR、真机GPU/性能和真实收益仍待测。"}
+  ],
+  "assumptions":[],
+  "risks":["本版只提交可供集成审查的候选实现。实际Creator导入、构建、Web运行、native分包和包体收益没有由Owner验证。"],
+  "status":"READY_FOR_REVIEW"
+}

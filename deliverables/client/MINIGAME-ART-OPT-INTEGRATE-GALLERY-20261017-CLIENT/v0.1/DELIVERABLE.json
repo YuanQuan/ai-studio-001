@@ -1,0 +1,48 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "owner": "client",
+  "summary": "实现Gallery单一runtime与按页资源会话，加入U01 world+shops资源准备和捕获式Prefab绑定器，并为樱花环境提供可选页面预载帧映射。Creator TypeScript语义检查与有效方法级共享/释放探针通过；统一Creator构建和IAB实测留给父Task。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.1/tests/gallery_asset_session_probe.cjs"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只改Gallery、新session helper及sakura_v03_environment.ts的页面预载帧入口/必要meta与有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+      "result": "PASS",
+      "evidence": "SOURCE_CHANGE_MANIFEST.json准确列出本Owner改动；Brief SHA 15896c9c...；Tech v0.15轻评和Master接受记录可追溯。未改Scene/Prefab/PNG/layout/现有UUID。"
+    },
+    {
+      "criterion": "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+      "result": "NOT_TESTED",
+      "evidence": "代码实现按页依赖、异步失败/重试和generation检查；Creator实际导入、生产Scene flag与六页真实运行留待父Task统一构建/IAB验证。"
+    },
+    {
+      "criterion": "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+      "result": "PASS",
+      "evidence": "Creator TS语义通过；Owner方法探针执行真实ModuleAssets/DerivedAssetResolver方法与20轮双Owner竞争/释放，引用归零且共享页存活正确。实际20轮Web另列NOT_TESTED。"
+    },
+    {
+      "criterion": "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+      "result": "PASS",
+      "evidence": "实际session binder方法探针以非CUSTOM Sprite执行替换并断言UITransform、anchor、position、scale保留；U01 provider调用位于shops克隆addChild之前。最终Creator Prefab实渲染由父Task验证。"
+    },
+    {
+      "criterion": "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。",
+      "result": "PASS",
+      "evidence": "捕获session provider供U01/U05，optimized与legacy分支独立；路径查找缺失失败关闭且回调异步。完整TypeScript 4.9.5语义检查PASS；统一CLI/IAB尚由父Task进行。"
+    }
+  ],
+  "assumptions": [
+    "U01 editor的可选bindPrefab(root,moduleId)由资源Owner接线，Gallery provider保持捕获当前页session。",
+    "模块/Prefab资源路径、Prefab反序列化硬引用与staging由资源Owner的冻结清单提供；生产映射缺失不得回退到全局resources加载。"
+  ],
+  "risks": [
+    "Creator隔离导入/统一构建与真实浏览器尚未由本子Task执行；不能据此宣称运行或包体收益。",
+    "实际Web循环、监听清理计数、DPR2/3与原生平台仍未测。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

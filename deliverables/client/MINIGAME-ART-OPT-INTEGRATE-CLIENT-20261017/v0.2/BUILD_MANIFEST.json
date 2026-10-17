@@ -1,0 +1,138 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.2",
+  "status": "CONFIGS_READY_CREATOR_BUILD_PENDING",
+  "inputProject": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/staging-project",
+  "reproduce": [
+    "node apps/client/tools/asset-integration/build_staging.cjs <absolute-stage-root>",
+    "node apps/client/tools/asset-integration/generate_build_configs.cjs <absolute-stage-root>",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <absolute-stage-root> --build 'configPath=<absolute-stage-root>/build-configs/web-mobile.json;platform=web-mobile'",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <absolute-stage-root> --build 'configPath=<absolute-stage-root>/build-configs/wechatgame.json;platform=wechatgame'",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <absolute-stage-root> --build 'configPath=<absolute-stage-root>/build-configs/bytedance-mini-game.json;platform=bytedance-mini-game'"
+  ],
+  "scene": {
+    "uuid": "01e65005-5a46-45a1-9a16-820ac4b919ae",
+    "url": "db://assets/UnitSamples.scene",
+    "onlyScene": true
+  },
+  "configs": [
+    {
+      "platform": "web-mobile",
+      "path": "build-configs/web-mobile.json",
+      "sha256": "e07caac726f250343c9811663fc969af5876d58b3ac8a494787202ee395e9889",
+      "mainBundleCompressionType": "merge_dep",
+      "bundleConfigs": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "merge_dep",
+          "isRemote": false
+        }
+      ]
+    },
+    {
+      "platform": "wechatgame",
+      "path": "build-configs/wechatgame.json",
+      "sha256": "2a4d5da6f4daceab31b2d8818d740a00d205b62d279db07268801640924232d4",
+      "mainBundleCompressionType": "subpackage",
+      "bundleConfigs": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "subpackage",
+          "isRemote": false
+        }
+      ]
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "path": "build-configs/bytedance-mini-game.json",
+      "sha256": "46eabb7d2050143d79d6c55dc4bddcdea802b2fb98af79ac5557f582095d12b1",
+      "mainBundleCompressionType": "subpackage",
+      "bundleConfigs": [
+        {
+          "name": "world",
+          "root": "db://assets/bundles/world",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "tourist",
+          "root": "db://assets/bundles/tourist",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "shops",
+          "root": "db://assets/bundles/shops",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "dialogue",
+          "root": "db://assets/units/dialogue",
+          "compressionType": "subpackage",
+          "isRemote": false
+        },
+        {
+          "name": "milk-tea",
+          "root": "db://assets/bundles/milk_tea",
+          "compressionType": "subpackage",
+          "isRemote": false
+        }
+      ]
+    }
+  ],
+  "creatorCli": "NOT_RUN_BY_OWNER; handed to Root for isolated build and output audit",
+  "platformDeviceValidation": "NOT_TESTED; target tool/device evidence unavailable in this execution.",
+  "isolatedBuildOutputPathPattern": "<absolute-stage-root>/build-output/<outputName>",
+  "noRemoteBundles": true
+}

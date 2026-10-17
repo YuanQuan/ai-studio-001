@@ -179,8 +179,12 @@ export class SakuraV03Motion extends Component {
 }
 
 /** Populate approved v0.5 source instances; river motion is a transient runtime transform. */
-export function populateSakuraV03(root: Node, _viewport: Node, profile?: readonly UserLayoutEntry[]): void {
-  void loadFrames().then(frames => {
+export function populateSakuraV03(root: Node, _viewport: Node, profile?: readonly UserLayoutEntry[],
+  preloadedFrames?: ReadonlyMap<string, SpriteFrame>): void {
+  // Production pages pass a page-owned map so this function neither reaches into
+  // the global resources cache nor extends those frames beyond that page lease.
+  const framesPromise = preloadedFrames ? Promise.resolve(preloadedFrames) : loadFrames();
+  void framesPromise.then(frames => {
     if (!root.isValid || root.getChildByName('SAKURA_V03_READY')) return;
     const layers = LAYERS.map(name => root.getChildByName(name));
     if (layers.some(layer => !layer)) {

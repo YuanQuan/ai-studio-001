@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "V07_STAGING_AND_STATIC_TESTS_PASS_CREATOR_RUNTIME_PENDING",
+  "bundles": [
+    {
+      "id": "world",
+      "root": "db://assets/bundles/world",
+      "dependencies": []
+    },
+    {
+      "id": "tourist",
+      "root": "db://assets/bundles/tourist",
+      "dependencies": []
+    },
+    {
+      "id": "shops",
+      "root": "db://assets/bundles/shops",
+      "dependencies": []
+    },
+    {
+      "id": "dialogue",
+      "root": "db://assets/units/dialogue",
+      "dependencies": [
+        "world",
+        "shops"
+      ]
+    },
+    {
+      "id": "milk-tea",
+      "root": "db://assets/bundles/milk_tea",
+      "dependencies": [
+        "tourist"
+      ]
+    }
+  ],
+  "manifestCoverage": {
+    "productionPaths": 419,
+    "configuredRoots": 5,
+    "result": "PASS",
+    "evidence": "node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix"
+  },
+  "stagingBuildConfigHashes": {
+    "web-mobile": "a3b1d41ffa3ee5ff833b044b380002af8504751428edc95bf6945fd8bdc955c9",
+    "wechatgame": "f870c1e93c279909c365af6ec4a92e4a9219dc3a5511dad677c463b57a30d7cf",
+    "bytedance-mini-game": "fd6fb7f6c6a3df42c3b5332bdf85b7159f1c037fbd3fe06268120e1beb98bf35"
+  },
+  "finalBuildConfigHashes": "NOT_TESTED; Root regenerates after copying to final-v0.7-u01fix.",
+  "creatorCliBuilds": "NOT_TESTED for v0.7.",
+  "nativeGameJsonSubpackages": "NOT_TESTED for v0.7; v0.6 historically passed with eight roots per game.json.",
+  "runtimeV07": {
+    "u01DragThenDirectClose": "NOT_TESTED",
+    "dragEndClickIsolation": "NOT_TESTED",
+    "cancelThenEndSuppressed": "NOT_TESTED",
+    "nextTapRestored": "NOT_TESTED"
+  },
+  "historicalV06": {
+    "threePlatformCli": "PASS",
+    "nativeSubpackages": "PASS",
+    "menuTouristU01DirectionU00DragAndCloseU05RecipeAndExit": "PASS",
+    "u01DragThenClose": "FAIL"
+  },
+  "physicalPackageMetrics": "NOT_TESTED for v0.7; see prior v0.6 BUNDLE_REPORT and evidence for historical physical file sizes; these do not equal upload quota."
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "owner": "client",
+  "summary": "已完成 viewport/module-assets 框架、U00–U04 布局及完整文本访问修订，并集成已通过Tech审查的U05子任务源。Owner源码方法探针、框架契约测试、Creator TypeScript语义检查与Creator 3.8.8隔离web-mobile构建通过；本版IAB实际运行仍待Master复核。保留历史v0.1与Review退修证据。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/evidence/framework-contract-tests-v0.2.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/evidence/page-layout-probes-v0.2.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/evidence/typescript-semantic-v0.2.log",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.2/evidence/creator-build-v0.7.log"
+  ],
+  "acceptance_results": [
+    {"criterion":"已批ViewportAdapter/Mapper接口与共享ModuleAssets契约实现并覆盖关键竞争、取消、异常清理及循环。","result":"PASS","evidence":"evidence/framework-contract-tests-v0.2.json; Tech框架Review v0.2 APPROVED"},
+    {"criterion":"U00–U05按批准LAYOUT_SPEC落实当前单元示例改动，U05使用独立Owner冻结版。","result":"PASS","evidence":"IMPLEMENTATION_REPORT.md逐页映射；U05 Tech Review v0.6 APPROVED；page-layout-probes-v0.2.json"},
+    {"criterion":"准确源码和新增Cocos meta身份可追溯，并与Creator隔离web-mobile构建绑定。","result":"PASS","evidence":"SOURCE_CHANGE_MANIFEST.json; BUILD_MANIFEST.json; Creator CLI exit36/Finished marker"},
+    {"criterion":"本版Web产物在Codex内置浏览器启动并完成实际交互/画面验证。","result":"NOT_TESTED","evidence":"Root已收到v0.7输出路径，等待其IAB实际运行结论；不得以v0.6替代。"}
+  ],
+  "assumptions": [
+    "Creator 3.8.8在本项目已验证成功返回码为36，且须同时检查对应Build Task Finished marker和输出身份。",
+    "独立U05 Owner交付的冻结源码与meta UUID按其已通过Tech Review的身份并入，不由主Client修改。"
+  ],
+  "risks": [
+    "IAB真实启动/交互和多尺寸渲染待Master复核；未验证平台DPR矩阵及U04横屏实际视觉。",
+    "Gallery/Scene原有全帧与Prefab硬引用仍在，无法报告启动包/完整生命周期驻留改善。",
+    "Art候选裁片尚未通过Gate2，未导入，不改变现有资源身份。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "title": "奶茶完整画幅的逻辑尺寸与安全代理面板实现",
+  "type": "feature",
+  "owner": "client",
+  "parent": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "objective": "在已批准的原画完整contain和同一run/presentation下，落实U05可读字号、48逻辑热区、按实测分组代理与安全可滚动弹窗，不改规则与时序。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/CLIENT_BRIEF_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/task_snapshots/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05-before-v0.2.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.3/U05_CODE_REVIEW.json"
+  ],
+  "deliverables": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "沿用已批Client Brief和同版Tech对齐，保持configureViewportAdapter接口与原画、唯一run/presentation及现有业务/动作时序。",
+    "实测目标逻辑字号/热区及重叠，仅不达标组转入默认关闭代理，迁入原热区停用且同动作只有一入口，弹窗遮罩阻断底层但不暂停倒计时。",
+    "返回/配方/退出确认/验证/结算按统一safe/capsule布局，正文可滚动到末尾，旋转/重排保留状态并取消过期手势，未测运行不伪称通过。",
+    "仅改U05源码与本交付，提供有效单测/静态核验及真实变更清单，由主Client合并CLI构建验证；不修改PNG/meta/现有资源身份。"
+  ],
+  "dependencies": [
+    "MINIGAME-ART-OPT-20261016-TECH",
+    "MINIGAME-ART-OPT-20261016-UI"
+  ],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master正式分派，编码gpt-6-luna low，不再分派，不Git。",
+    "仅允许写apps/client/assets/labs/u05/内本任务必要TS与新增TS对应meta、以及本Task交付/自身Owner状态；不改milk_tea_state.ts的玩法逻辑，不改u05_interaction_presentation.ts时序，不改Gallery/framework/图片/旧meta/Scene/Prefab。",
+    "复用当前主Client已经修改的26行Adapter接线，先存当前真实字节/hash，再明确继承上一已批Brief范围；自身FEATURE_BRIEF先实存，若没有新接口/语义即沿既有同范围Tech批准继续编码，不必重复阻塞同一批准；新决定先报Master。",
+    "稳定公共接口configureViewportAdapter(adapter:ViewportAdapter|null)，shared Adapter生命周期属Gallery，仅自己取消订阅/手势，不dispose共享实例；Source/types模块已有typed API，不能静默改它。",
+    "U05完整1024×1536等比contain在安全R，不增加常驻托盘；HUD独立安全父级，不持续挤压画幅。",
+    "按实际content.width/visible.width与root fit换算逻辑像素，正文/按钮>=16、辅助>=14，主热区>=48x48、间8，不能放大CLAMP导致字裁切或扩大热区重叠。",
+    "逐revision实际测量各组难度/开始、茶、奶、小料、撤销/提交、配方/说明；合格原位保留，不合格先尝试安全独立热区，仍冲突才整组迁入默认关闭操作/配方弹窗，禁用迁入组原热区，不能双入口。",
+    "订单/状态小字提供可读全文，必要倒计时/杯序提供安全可读主数值；面板正文滚动、窄屏减列或单列，不缩字号。控制与唯一run.selected同步，不创建复制的业务状态。",
+    "退出确认/设置/配方/结算全部统一安全可滚动弹窗，头56/底48逻辑；遮罩拦截底层；不暂停倒计时，不改锁输入/结算/返回不计熟练度规则。",
+    "保持选择、订单、剩余时间、表现时相及scroll clamp；不得以重启controller或重置页面完成resize。",
+    "这仍是现有单元示例，Owner验证不安排QA Agent；IAB当前Root两次旧基线超时且主Client读取Browser is not available，实际运行缺项记NOT_TESTED，不能用静态/模拟当运行PASS。",
+    "你完成U05代码/有效测试后报Master，不单独发正式Creator构建；主Client等集成你的源后统一隔离副本CLI，避免并发库争用。",
+    "2026-10-17T12:08:48+08:00 Producer已核FEATURE_BRIEF真实首产，Master已指定独立Owner编码防并写。",
+    "Master明确修订交付至v0.2，保留v0.1及失败Review历史；既有批准FEATURE_BRIEF和业务/资源边界不变，此为已授权实现修复，不重复审批同一方案。",
+    "2026-10-17T12:28:27+08:00 Tech真实代码Review退修，Owner在v0.2实际修订；FEATURE_BRIEF沿已批v0.1，Required当前路径按Master已更新，不改范围或验收。",
+    "2026-10-17T12:41:43+08:00 Tech v0.6 U05_CODE_REVIEW APPROVED准确源码/helper版本，进入REVIEW等待Main当前集成运行；非DONE，不代表整版通过。"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "version": "v0.7",
+  "candidateStage": "/private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix",
+  "stageManifestSha256": "a9e9b81a641e544ac859e9aadf22d3cdf7fb90305224f4dd5b839ab4248bbc24",
+  "commands": [
+    {
+      "command": "node apps/client/tools/asset-integration/build_staging.cjs /private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix <v0.7 OWNER_SOURCE_OVERRIDES.json>",
+      "result": "PASS",
+      "output": "717 frozen source files; 83 approved asset rows; 72 physical derived images; 858 asset UUIDs."
+    },
+    {
+      "command": "node apps/client/tools/asset-integration/generate_build_configs.cjs /private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix",
+      "result": "PASS",
+      "configSha256": {
+        "web-mobile": "a3b1d41ffa3ee5ff833b044b380002af8504751428edc95bf6945fd8bdc955c9",
+        "wechatgame": "f870c1e93c279909c365af6ec4a92e4a9219dc3a5511dad677c463b57a30d7cf",
+        "bytedance-mini-game": "fd6fb7f6c6a3df42c3b5332bdf85b7159f1c037fbd3fe06268120e1beb98bf35"
+      }
+    },
+    {
+      "command": "node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix",
+      "result": "PASS",
+      "output": "419 production paths over five configured bundle roots; 83 rows, derived geometry, lease behavior, source immutability and bad hash rejection."
+    },
+    {
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+      "result": "PASS",
+      "output": "Actual U01 button helper sequence: drag-end then next tap, cancel then end, and ordinary tap."
+    },
+    {
+      "command": "node deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+      "result": "PASS",
+      "output": "Actual Gallery/U01 scroll methods advance on upward drags, clamp both ends, preserve click isolation, wire menu wheel."
+    }
+  ],
+  "testSources": [
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+      "sha256": "764af5ad01d0beebd549cdd34f3b43c7ad6df67e829fcfc97be68a979c5fea2d"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+      "sha256": "6264033bf47114d1260601b225f5c16a64755ad30252f8bfb263bdb9d646eb66"
+    }
+  ],
+  "limitations": "v0.7 Creator final builds and real IAB sequence have not been run yet."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "MINIGAME-ART-OPT-BATCH-20261017-TECH",
+  "title": "全批首图前技术复签及客户端实现审查",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "全批首图前技术复签及客户端实现审查，持续完成已授权无阻塞工作至下一确切版本门禁。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-20261016-ART/v0.1/SOURCE_APPROVAL_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/screens/LAYOUT_SPEC.md",
+    "deliverables/vfx/MINIGAME-ART-OPT-20261016-VFX/v0.1/VFX_SPEC.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/BATCH_REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/CLIENT_BRIEF_REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "独立核全批预案源/范围/坐标、特殊资源排除、PSD/采样/预算，首图前与Art同SHA签认，未审批的不导入。",
+    "Client Brief经技术对齐后才实现；按已批契约核跨端API、租约竞争/释放、适配、视觉保留及代码健康。",
+    "结合真实代码/测试/Creator构建/HTTP运行证据给逐项Review，平台/性能缺证据不通过，不增加自产切图后置Review。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "AUTO",
+  "notes": [
+    "Master唯一分派，不再自行分派，不Git；保护既有未提交工作。",
+    "所有结论依真实文件；缺少平台/真机证据NOT_TESTED。",
+    "先读本角色最新五文件及适用共享skill；Producer登记真实首产后才IN_PROGRESS。",
+    "文档/Review临时gpt-6.1-sol low例外沿用，不编码不产图。",
+    "先完成全批预签（等待Art实际文字预案），同时可Review Client轻量Brief；之后等待Master唤回代码Review，不能仅预签就提前DONE。",
+    "首图技术签认不能以未来PNG/图集/运行尚未产出为由虚构通过；不能设置切后效果Review门禁。",
+    "独立确认wx/tt当前API及坐标语义，优先本机锁定SDK/引擎资料，缺项官方资料核验。",
+    "2026-10-17T11:30:33+08:00 Producer核实当前真实首产 deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.1/BATCH_REVIEW.md；登记时间非文件创建准确时间。"
+  ]
+}

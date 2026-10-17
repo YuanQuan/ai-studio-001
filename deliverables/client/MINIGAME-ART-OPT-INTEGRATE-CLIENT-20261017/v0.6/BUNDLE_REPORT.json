@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "status": "THREE_PLATFORM_BUILDS_AND_NATIVE_SUBPACKAGES_PASS_PARTIAL_RUNTIME_PASS",
+  "bundles": [
+    {
+      "id": "world",
+      "root": "db://assets/bundles/world",
+      "dependencies": []
+    },
+    {
+      "id": "tourist",
+      "root": "db://assets/bundles/tourist",
+      "dependencies": []
+    },
+    {
+      "id": "shops",
+      "root": "db://assets/bundles/shops",
+      "dependencies": []
+    },
+    {
+      "id": "dialogue",
+      "root": "db://assets/units/dialogue",
+      "dependencies": [
+        "world",
+        "shops"
+      ]
+    },
+    {
+      "id": "milk-tea",
+      "root": "db://assets/bundles/milk_tea",
+      "dependencies": [
+        "tourist"
+      ]
+    }
+  ],
+  "manifestCoverage": {
+    "productionPaths": 419,
+    "configuredRoots": 5,
+    "result": "PASS",
+    "evidence": "node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.6-gesturefix"
+  },
+  "stagingBuildConfigs": {
+    "web-mobile": "e030948df9e72ad77dfb4a7538c8832e60da3947365727bbffcd9c814964e363",
+    "wechatgame": "d8f1e57711b72be1277528983f226fa4f5eeccab164514de2fda994664de633b",
+    "bytedance-mini-game": "e268fd52bb93c85c1b3fe41f9eee529466d4c00872f31f367c03fe69df8544d7"
+  },
+  "finalConfigHashes": {
+    "webMobile": "a1e465f27d852916809c4aba592299c063e1d155f49bef5e31af7c1cb380a2b3",
+    "wechatgame": "55d86f3cf472f4693494a5d80b0bc72b8d707906c7e861f557d50944b9fdd186",
+    "bytedanceMiniGame": "11a0b9420e16fbe94c8c1b62cb3094d6bfe7e53d17c5f1dd24920086cfcce949"
+  },
+  "creatorCliBuilds": "PASS: Web 36 + Finished (11s); WeChat 36 + Finished (9s); ByteDance 36 + Finished (9s). Logs and final config hashes are in evidence/BUILD_RUN_RESULTS.json.",
+  "nativeGameJsonSubpackages": "PASS: WeChat and ByteDance each emit 8 actual roots: internal, resources, main, dialogue, milk-tea, shops, tourist, world.",
+  "gestureRuntime": "NOT_TESTED; Root to verify corrected menu and U01 gestures plus page-exit smoke.",
+  "packageBytes": {
+    "web-mobile": {
+      "fileCount": 803,
+      "physicalBytes": 38670624,
+      "mainFileCountExcludingSubpackages": 803,
+      "mainPackageExcludingSubpackagesBytes": 38670624,
+      "subpackages": {},
+      "inventoryPath": "evidence/OUTPUT_FILES_web-mobile.json",
+      "inventorySha256": "42301c34fe792ed2171375ba29f3607f74510b921308a57b19f7a1a6f4a5308f"
+    },
+    "wechatgame": {
+      "fileCount": 823,
+      "physicalBytes": 38707267,
+      "mainFileCountExcludingSubpackages": 23,
+      "mainPackageExcludingSubpackagesBytes": 3256025,
+      "subpackages": {
+        "internal": {
+          "path": "subpackages/internal",
+          "fileCount": 17,
+          "physicalBytes": 242484
+        },
+        "resources": {
+          "path": "subpackages/resources",
+          "fileCount": 1,
+          "physicalBytes": 44
+        },
+        "main": {
+          "path": "subpackages/main",
+          "fileCount": 5,
+          "physicalBytes": 405676
+        },
+        "dialogue": {
+          "path": "subpackages/dialogue",
+          "fileCount": 391,
+          "physicalBytes": 14333271
+        },
+        "milk-tea": {
+          "path": "subpackages/milk-tea",
+          "fileCount": 167,
+          "physicalBytes": 3303228
+        },
+        "shops": {
+          "path": "subpackages/shops",
+          "fileCount": 33,
+          "physicalBytes": 5033970
+        },
+        "tourist": {
+          "path": "subpackages/tourist",
+          "fileCount": 113,
+          "physicalBytes": 3442951
+        },
+        "world": {
+          "path": "subpackages/world",
+          "fileCount": 73,
+          "physicalBytes": 8689618
+        }
+      },
+      "subpackageSumBytes": 35451242,
+      "inventoryPath": "evidence/OUTPUT_FILES_wechatgame.json",
+      "inventorySha256": "389869e19f4081a5b4124e2026fe5280af7f2589660246ebd24b3841f3d011b9"
+    },
+    "bytedance-mini-game": {
+      "fileCount": 821,
+      "physicalBytes": 38681613,
+      "mainFileCountExcludingSubpackages": 21,
+      "mainPackageExcludingSubpackagesBytes": 3230374,
+      "subpackages": {
+        "internal": {
+          "path": "subpackages/internal",
+          "fileCount": 17,
+          "physicalBytes": 242484
+        },
+        "resources": {
+          "path": "subpackages/resources",
+          "fileCount": 1,
+          "physicalBytes": 41
+        },
+        "main": {
+          "path": "subpackages/main",
+          "fileCount": 5,
+          "physicalBytes": 405676
+        },
+        "dialogue": {
+          "path": "subpackages/dialogue",
+          "fileCount": 391,
+          "physicalBytes": 14333271
+        },
+        "milk-tea": {
+          "path": "subpackages/milk-tea",
+          "fileCount": 167,
+          "physicalBytes": 3303228
+        },
+        "shops": {
+          "path": "subpackages/shops",
+          "fileCount": 33,
+          "physicalBytes": 5033970
+        },
+        "tourist": {
+          "path": "subpackages/tourist",
+          "fileCount": 113,
+          "physicalBytes": 3442951
+        },
+        "world": {
+          "path": "subpackages/world",
+          "fileCount": 73,
+          "physicalBytes": 8689618
+        }
+      },
+      "subpackageSumBytes": 35451239,
+      "inventoryPath": "evidence/OUTPUT_FILES_bytedance-mini-game.json",
+      "inventorySha256": "275857d3f02f17fc809ffcaa45f0fc6cab5ed78105225362c78e6bc33f4dd59b"
+    }
+  },
+  "historicalV05": {
+    "cycles": 20,
+    "postExitCountersZero": true,
+    "consoleWarnErrorCount": 0,
+    "gestureFailure": "320x568 menu drag direction reversed; fixed source hashes are bound only in this v0.6 candidate."
+  },
+  "runtimeV06": {
+    "menuSmallScreen": "PASS: up-drag to bottom, down-drag back to top, wheel to bottom, no accidental activation",
+    "u05Recipe": "PASS: entry from small menu and valid submission through order 2/3",
+    "otherTouchPanels": "NOT_TESTED",
+    "fullPageExitAndReleaseLoop": "NOT_TESTED"
+  },
+  "packageHashInventory": "evidence/OUTPUT_FILE_HASHES.json and evidence/OUTPUT_FILES_*.json; 2,447 output files individually SHA-256 inventoried.",
+  "packageSizeLimit": "Physical output file sums do not establish upload/transfer compression or platform account quota."
+}

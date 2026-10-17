@@ -1,0 +1,24 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "version": "v0.3",
+  "owner_verification_only": true,
+  "checks": [
+    {"name": "helper geometry/text assertions", "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/evidence/u05_accessibility.check.js", "result": "PASS", "scope": "CSS-axis heat zones, readable fonts, proxy geometry, text layout, scroll clamp, modal targets and asymmetric safe contain."},
+    {"name": "existing current state regression", "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/evidence/milk_tea_state_current.check.js", "result": "PASS", "scope": "Existing business state behavior; no State source changes in this revision."},
+    {"name": "TypeScript transpile", "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/evidence/u05_transpile.check.js", "result": "PASS", "scope": "U05 lab and accessibility helper sources transpile with diagnostics."},
+    {"name": "TypeScript semantic analysis", "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/evidence/u05_semantic.check.js", "result": "PASS", "scope": "No diagnostics point to either U05 source file using Creator declarations."},
+    {"name": "actual U05 method and run-state regression", "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.3/evidence/u05_methods.check.js", "result": "PASS", "scope": "Executes actual applyProxyGroups with numeric/mixed IDs; actual renderOperationPanel with a Run built by the real makeRun and actual arrival PresentationTransaction preparation lock, then playing action. Confirms preparation cannot alter selection and playing invokes the existing choose path once and updates the same Run.selected. Also checks earlier real-method layout, pointer, timer HUD, dialog and glyph coverage cases."},
+    {"name": "v0.7 integrated 320x568 runtime attempt", "result": "FAIL", "scope": "Historical pre-fix failure retained at deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/CONSOLE.json and U05_STARTED_320x568.jpg. Stack reports TypeError: t.startsWith is not a function from applyProxyGroups during render/update."},
+    {"name": "v0.8 integrated Creator build and page runtime", "result": "NOT_TESTED", "scope": "Main Client owns the next integrated build/runtime after this source fix; no Owner Creator/IAB run is claimed."}
+  ],
+  "additional_checks": [
+    "All remaining U05 display markers in source are 已选 / 上 / 下; test confirms these glyphs exist in the existing BMFont and source contains none of ✓ / ▲ / ▼ in labels.",
+    "DELIVERABLE schema shape/enums and four acceptance strings/order are checked against the current Task packet.",
+    "v0.2 source/review/artifacts are retained and not overwritten by this v0.3 package."
+  ],
+  "limitations": [
+    "The PASS method harness runs extracted actual method bodies with light Cocos doubles; it does not establish full engine integration.",
+    "The v0.7 runtime failure is historical and remains a FAIL record. The fix's integrated v0.8 page runtime is NOT_TESTED pending Main Client.",
+    "Not a QA Agent report and not formal QA approval."
+  ]
+}

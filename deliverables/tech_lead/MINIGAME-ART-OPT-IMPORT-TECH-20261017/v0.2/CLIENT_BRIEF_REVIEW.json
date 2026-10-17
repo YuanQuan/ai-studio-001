@@ -1,0 +1,32 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "同版Brief SHA-256 36d879472e4d4bff9f5ab1314f63e6c2fbf8b5c3d539e4c043b2d321f732dc72，范围与已批TECH_DESIGN/UI/Art83及同Client阶段staging方案一致。可先生成器/派生帧模块，页面所有权仍待Master明确交接；不产生新用户中间门禁，最终全部准确Client仍TechReview→USER_REVIEW。"
+    },
+    {
+      "severity": "INFO",
+      "message": "10对同字节候选先核几何/原尺寸/offset/pivot同一，再用唯一canonical Image/Texture（必要时独立derived frame）共享。每个旧逻辑asset ID、动作frameId/index/duration/方向保持；逐alias记录old image/frame UUID→canonical导入actual image/texture/frame UUID→runtime衍生几何。合并alias后旧UUID不必在staging各保留物理图，否则会复制；旧源/meta/批准历史仍原地保留。所有旧序列化/脚本引用在staging白名单转换，不留悬空旧UUID，probe UUID禁止生产使用。"
+    },
+    {
+      "severity": "INFO",
+      "message": "生成发布输入锁白名单源路径/SHA/批准与transform ID，原工程和其他dirty只读不移动。staging每UUID含subasset唯一物理归属，world只一份；生成前后核源身份，输出canonical路径/hash/bundle和UUID remap manifest。不能复制未知活跃dirty状态为正式输入；必要共享文件先由Master冻结准确版本。生成Scene删除/重排完整更新__id__/PrefabInfo/override，再核全部引用依赖。"
+    },
+    {
+      "severity": "INFO",
+      "message": "public SpriteFrame.reset用导入texture、真实crop/atlas rect、originalSize/offset、isRotate=false；保留pivot0.5及原Node/UITransform/挂点，SIMPLE/CUSTOM/trim=false，无二次bbox位置补偿。Importer回读原尺寸重算为crop是已知实际结果，不要求其自然保存注入值；分别记录imported原始frame字段与runtime衍生frame字段/真实几何，不能私改library。依赖租约先acquire后release，clear Sprite refs/derived后释放底层canonical owner，不新增第二Bundle manager。"
+    },
+    {
+      "severity": "INFO",
+      "message": "启动菜单递归依赖须从生成Scene/Prefab/脚本registry和实际构建bundle config验证，不只看83图已移动；Main现有40帧/4配件/6店prefab硬引用必须在生成输入解除。生成工程内验证本地模块物理落包与共享依赖，Web Bundle不冒充小游戏本地分包或GPU收益。平台包体超限/需要新接口/视觉改动报Master，不降图不减帧不CDN。"
+    },
+    {
+      "severity": "INFO",
+      "message": "185特殊与无收益项按v0.2 scope分类保留；sourceRect、九宫格、字体UV与未核新交互资源不走通用crop。所有生成代码/转换manifest/最终83 UUID回读/实际HTTP效果和20循环证据进入最终交付，不因是生成物免Review。Root最新U05实际试玩进订单2/3为即将归档证据，当前Brief Review不把该运行当本接入后通过。"
+    }
+  ],
+  "next_action": "Master可内部接受本Brief并释放生成器与独立派生帧实现，页面调用点待其明确交接；完成后交准确生成输入/源码/导入/构建与实际运行证据，最终聚合用户审核。"
+}

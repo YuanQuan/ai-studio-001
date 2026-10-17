@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "version": "v0.7",
+  "scope": "Client Owner负责staging与方法级回归；Root负责v0.7 final CLI和IAB实际页面验证。",
+  "checks": [
+    {
+      "name": "源冻结与U01变更绑定",
+      "result": "PASS",
+      "evidence": "staging manifest a9e9b81a641e544ac859e9aadf22d3cdf7fb90305224f4dd5b839ab4248bbc24绑定711项冻结输入和Master冻结的Gallery/U01候选哈希。"
+    },
+    {
+      "name": "生产manifest路径覆盖",
+      "result": "PASS",
+      "evidence": "asset_integration.test.cjs通过：419个生产路径覆盖五个Bundle根。"
+    },
+    {
+      "name": "U01按钮拖动结束与取消回调序列探针",
+      "result": "PASS",
+      "evidence": "Gallery v0.5 u01_button_gesture_probe.cjs调用实际U01 button helper，验证拖动末尾抑制动作、清理后新tap、cancel→end抑制、普通tap恢复，全部通过。"
+    },
+    {
+      "name": "滚动方向与点击隔离探针",
+      "result": "PASS",
+      "evidence": "Gallery v0.5 scroll_direction_probe.cjs检查U01滚动方向、边界与拖动点击隔离，通过。"
+    },
+    {
+      "name": "资产几何、租约与staging生成",
+      "result": "PASS",
+      "evidence": "83条资源记录、派生帧几何、租约共享/释放、源文件不变性及错误哈希拒绝均通过。"
+    },
+    {
+      "name": "v0.7三平台Creator CLI和八个分包",
+      "result": "NOT_TESTED",
+      "evidence": "Root尚未构建v0.7 final。v0.6旧版本三端构建与八个包作为历史证据保留，不替代本版构建。"
+    },
+    {
+      "name": "v0.7 U01拖动后直接关闭、取消后恢复、按钮隔离",
+      "result": "NOT_TESTED",
+      "evidence": "Owner真实helper回调探针通过；v0.7 IAB实际页面复核待Root执行。v0.6实测直接关闭失败已保留。"
+    },
+    {
+      "name": "v0.6其余已通过运行范围",
+      "result": "PASS",
+      "evidence": "Root报告菜单/游客/U01方向、U00双向拖动与关闭，以及U05配方2/3和退出通过；误标的U00截图不计入。"
+    },
+    {
+      "name": "完整页面退出释放循环与其余触控矩阵",
+      "result": "NOT_TESTED",
+      "evidence": "目前没有v0.7完整循环/矩阵证据，不能从前版局部验证推断。"
+    },
+    {
+      "name": "v0.6已知U01拖动后直接点击关闭失败",
+      "result": "FAIL",
+      "evidence": "Root实际IAB报告记录：拖动U01面板后直接点击关闭不响应；故障报告及截图哈希在SOURCE_CHANGE_MANIFEST.json。该失败属于前版，不表示v0.7修复已通过。"
+    }
+  ]
+}

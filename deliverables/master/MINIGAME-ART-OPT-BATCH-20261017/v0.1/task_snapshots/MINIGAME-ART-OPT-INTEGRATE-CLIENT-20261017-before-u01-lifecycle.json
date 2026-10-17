@@ -1,0 +1,52 @@
+{
+  "id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "title": "已批83资源接入、本地Bundle与发布输入优化",
+  "type": "integration",
+  "owner": "client",
+  "parent": "MINIGAME-ART-OPT-BATCH-20261017",
+  "objective": "继续同一Client实现阶段，将76已批全批切片与7已批样本引用正式接入，按已批技术契约实现原画布派生帧、重复图共享、按模块本地Bundle及页面按需生命周期；不新增中间用户门禁，最终聚合实现经Tech Review后USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_GATE2_USER_APPROVAL.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/ui/MINIGAME-ART-OPT-20261016-UI/v0.1/UI_SPEC.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/GESTURE_FAILURE_REPORT.md"
+  ],
+  "deliverables": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+    "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+    "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+    "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+    "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。"
+  ],
+  "dependencies": [],
+  "status": "REVISION",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派，Owner不自行创建子任务、不Git；编码模型gpt-6-luna low。",
+    "先读角色五文件及Cocos共享skill。先产Brief供Tech沟通，Master释放实施；这不是新的用户审批阶段。",
+    "资源接入仍属当前Client专业实现阶段，最终聚合代码Review与用户批准之前不向QA/其他正式专业阶段交付；不修改Studio规则。",
+    "先写独立发布输入生成器/派生帧模块，主Gallery/U01/U05源码暂由main Owner持有；接管须Master明确通知，避免并发写。",
+    "优先可复现Cocos发布staging工程：保留原源图、母版及当前未提交内容，生成工程内去除旧发布输入、同UUID仅一份。此路线须Tech按既有契约核查；如需新项目架构/接口/降画质先提差异。",
+    "不得操作git分支/工作树/历史；隔离Cocos工程是普通可复现输出，不是Git checkout。",
+    "2026-10-17T13:24:27+08:00 Producer核实FEATURE_BRIEF与OWNER_STATUS实际首产，同版技术与Master接受后开始生成器/派生帧/resolver，不并写Main三页。",
+    "Master于2026-10-17依据Tech v0.16实际引擎预检，授权本Owner修改framework/module-assets/cocos_bundle_loader.ts及有意义的依赖图测试：成功load成对addRef/decRef，禁止bundle.release强制销毁间接依赖；旧UI v0.5源码清单保留历史，最终准确源override/manifest覆盖此必要修正。Gallery/helper/environment仍另一Client Owner独占。",
+    "Master指定最终Required实现报告升级v0.2，Brief沿已对齐v0.1。v0.2候选生成输入可再生；真实Creator仅在/private/tmp/minigame-art-opt-integration-final-v0.2执行，源及正式报告不吸入library/temp/build-output。",
+    "2026-10-17实际Creator compiled集合spread变concat及U00失败触发修订；原候选保留失败证据。Resource另获授权修u05_accessibility.ts集合展开并纳入逐源override，不改项目ES目标。最终真实分包尚待配置生效核对。",
+    "实际v0.3 Web发现extra合并从全历史manifest再次加入已移除far_l，Owner返工v0.4并补实际runtime manifest→staging/Creator config.paths覆盖核验。v0.3失败证据保留，Gallery v0.2代码可沿用。",
+    "2026-10-17 U04实际重入取消误报触发已授权返工；当前实现Required指针已更新，历史证据保留，不新增美术或UI审批门禁。",
+    "2026-10-17 Master授权同一Client阶段修正实际小屏触拖反向；Gallery Owner另负责U01滚动手势，资源Owner只更新明确哈希和隔离候选。"
+  ]
+}

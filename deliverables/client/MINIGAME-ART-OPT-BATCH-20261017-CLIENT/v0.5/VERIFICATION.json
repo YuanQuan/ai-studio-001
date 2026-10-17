@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "version": "v0.5",
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks": [
+    {
+      "name": "framework_contract_tests",
+      "result": "PASS",
+      "evidence": "v0.4 frozen evidence/framework-contract-tests-v0.4.json"
+    },
+    {
+      "name": "page_layout_source_probes",
+      "result": "PASS",
+      "evidence": "evidence/page-layout-probes-v0.5.json"
+    },
+    {
+      "name": "production_shaped_u01_reader_virtualization",
+      "result": "PASS",
+      "evidence": "evidence/u01-export-reader-probe-v0.5.json; method-level source-shaped test, not GPU/DPR proof"
+    },
+    {
+      "name": "creator_typescript_semantic_check",
+      "result": "PASS",
+      "evidence": "evidence/typescript-semantic-v0.5.log; isolated project Creator 3.8.8 TypeScript, exit 0"
+    },
+    {
+      "name": "creator_web_mobile_build",
+      "result": "PASS",
+      "evidence": "BUILD_MANIFEST.json; Creator CLI exit 36, Finished 11s, 781 output hashes recorded"
+    },
+    {
+      "name": "root_iab_runtime_reader_review",
+      "result": "PASS",
+      "evidence": "../../../../master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v10/REPORT.json and CONSOLE.json; real IAB DPR1: top/body readable, bottom jumps to counts and final `}}`, return top, nativewheel, close restores world; six portrait bottom screenshots; no console entries."
+    },
+    {
+      "name": "real_device_dpr_matrix_and_gpu_residency",
+      "result": "NOT_TESTED",
+      "evidence": "No real-device DPR1/2/3 or GPU lifecycle residency data in this version"
+    }
+  ]
+}

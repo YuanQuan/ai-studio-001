@@ -1,0 +1,46 @@
+{
+  "task_id": "MINIGAME-ART-OPT-IMPORT-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "已批83资源接入技术核查交接完成：真实Importer不能保持原画布元数据，确定使用已批runtime reset fallback；当前待Master Review。",
+  "artifacts": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/TECH_PREFLIGHT.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/IMPORT_PROBE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/CLIENT_HANDOFF.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/ENGINE_GEOMETRY_RESULT.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/ENGINE_IDENTITY.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/PROBE_SETUP.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/creator-import-probe.log",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/engine-geometry-probe.cjs"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "批准的精确250身份、76切片与7旧样本引用逐项可追溯，原尺寸、偏移、支点及动作ID不混版。",
+      "result": "PASS",
+      "evidence": "250批准身份重算及APPROVED_ASSET_HANDOFF_MAP.json 83逐件原尺寸/偏移/支点/UUID；76sha/尺寸和7引用核对。"
+    },
+    {
+      "criterion": "依本地3.8.8引擎及导入实现核原画布恢复、trim=false及CUSTOM路线，代表店铺、游客、场景真实导入；非GPU证据不冒充运行。",
+      "result": "PASS",
+      "evidence": "IMPORT_PROBE.json真实6导入及library回读、CLI36；ENGINE_GEOMETRY_RESULT.json真实函数体CPU顶点；GPU/场景运行NOT_TESTED。"
+    },
+    {
+      "criterion": "明确启动硬引用、模块共享依赖、重复别名、旧发布输入排除和本地Bundle迁移边界，避免跨包复制及远程资源。",
+      "result": "PASS",
+      "evidence": "BUNDLE_REFERENCE_MAP.json硬引用/当前本地Bundle/计划world共享/10组别名/旧publish排除。"
+    },
+    {
+      "criterion": "交接及未决约束有真实文件；若超出已批技术契约或需删减、降画质，先提交差异，不擅自实施。",
+      "result": "PASS",
+      "evidence": "CLIENT_HANDOFF.json限制与顺序，runtime fallback沿已批TECH_DESIGN；无新语义/降画质/未批实现依赖。"
+    }
+  ],
+  "risks": [
+    "CPU引擎几何不替代UV/GPU/真实场景显示，仍须Client运行核验。",
+    "本地Bundle迁移和实际平台包限制/GPU收益尚未实施验证。",
+    "临时探针UUID不是生产UUID，正式接入必须保留/回读真实meta身份。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

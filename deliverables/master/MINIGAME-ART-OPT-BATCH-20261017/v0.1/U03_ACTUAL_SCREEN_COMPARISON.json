@@ -1,0 +1,14 @@
+{
+  "scope": "Real IAB JPEG screenshots, same720x1280 viewport, U03 shop01 stage only; excludes footer identity/UUID text",
+  "old": "browser-v09/U03_720x1280.jpg",
+  "new": "browser-integration-v04/U03_720x1280.jpg",
+  "region": [
+    100,
+    400,
+    620,
+    900
+  ],
+  "max_channel_delta": 5,
+  "nonzero_pixels": 890,
+  "limitation": "JPEG screenshots are lossy; zero delta only if exact same decoded pixels. Not a target GPU/DPR2/3 proof."
+}

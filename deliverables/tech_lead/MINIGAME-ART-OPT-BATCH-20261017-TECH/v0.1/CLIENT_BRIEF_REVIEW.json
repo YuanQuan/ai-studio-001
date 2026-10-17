@@ -1,0 +1,40 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "技术对齐对象 deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.1/FEATURE_BRIEF.md SHA-256 e9ad048785a285d4ef04a8f4a6655658223a27c2e7e49f94e0bccf06008d7caf；范围APPROVED，允许按已批Tech/UI实现且不替换PNG/meta/UUID/Scene/Prefab，不含全批新切片接入。以下为实现和后续代码Review必须核验的契约。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Mapper只接受窗口左上原点逻辑像素。Web由Adapter读取Canvas boundingClientRect，再结合view.getViewportRect（引擎像素）与backbuffer实际比例计算内容矩形：不能把整个Canvas DOM矩形直接当内容矩形，也不能把getViewportRect直接当CSS像素。包含letterbox L/T、safe与Canvas求交、矩形四角映射；DPR仅用于明确backbuffer到逻辑单位换算，不二次乘入布局。测试须含Canvas非零origin、letterbox和非1DPR。"
+    },
+    {
+      "severity": "INFO",
+      "message": "Cocos3.8.8 Touch.getUILocation已调用view._convertToUISpace，内部已扣viewport并除scale；不得再喂入窗口Mapper扣Canvas原点/letterbox。选唯一输入路线：DOM clientX/clientY先进入窗口逻辑Mapper；或getUILocation用UITransform.convertToNodeSpaceAR/明确UI坐标原点转换。getLocation/getLocationInView亦非浏览器client坐标，不可凭名称当CSS值。mouse/touch共用最终UI命中和revision/generation取消，不能重复映射。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ModuleAssets以Owner唯一token+generation区分租约，不能仅以数值generation作为全局Owner身份。依赖先acquire、失败逆序release，加载前每Owner独立预占；错误清inflight并回滚所有失败等待者预占，可显式重试。release可在Promise完成前取消该Owner；迟到成功只释放其份额，不影响仍有效共享Owner。refs=0且inflight完成后才能底层释放；依赖循环必须拒绝；重复release幂等。页面generation失效不等于取消全局请求。"
+    },
+    {
+      "severity": "INFO",
+      "message": "U04迁移保持唯一底层所有者：同一bundle/path/type/revision由ModuleAssets唯一加载/释放。旧页面/选择集合可保存Lease引用但不能继续bundle.release/refCount管理同一资产；manifest也须声明所有权。销毁SpriteFrame/节点引用后release，页面迟到回调先判generation；全帧/Prefab序列化硬引用未解除时报告真实驻留限制，通用池测试不等于GPU释放。"
+    },
+    {
+      "severity": "INFO",
+      "message": "tt官方小游戏getSystemInfoSync safeArea是竖屏正方向，deviceOrientation仅portrait/landscape不提供左右旋转身份。Adapter须能力检测并锁实际方向/原点证据；不能复制Creator旧iOS旋转HACK宣称所有横屏正确。无法辨别旋转或screen到window origin时诊断并保守fallback，不伪造capsule。微信getWindowInfo优先/系统信息回退与胶囊能力检测；未知capsule返回null，safe缺失回退窗口。平台不能验证的路径NOT_TESTED，不阻塞Web已批实现。"
+    },
+    {
+      "severity": "INFO",
+      "message": "resize只更新布局：保留U00镜头、U01参数、U02动作时相/装扮/方向、U03店ID、U04人/魂/表情、U05唯一run/presentation与订单/剩余时间；scroll clamp保留。不通过重建业务Controller或重进页面实现旋转。U05完整contain且仅实测不达标组默认关闭代理；弹窗取消手势但不暂停或重置时序；U04横屏原组合不改。"
+    },
+    {
+      "severity": "INFO",
+      "message": "实现须提供共享/失败重试/取消迟到/依赖逆序/两Owner同generation/重复释放/20次循环有效测试和当前Creator隔离构建、HTTP实际运行证据；DPR无法设置和平台/性能缺证据逐项NOT_TESTED。没有新切后效果Review前置门禁。"
+    }
+  ],
+  "next_action": "Master可启动Client按本Brief及上述可执行契约编码；后续真实代码/测试/构建/HTTP运行再由Tech审查。全批首图预签另等Art真实预案，本记录不授权新切片接入。"
+}

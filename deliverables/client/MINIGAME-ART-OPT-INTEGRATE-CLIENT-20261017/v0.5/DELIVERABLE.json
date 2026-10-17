@@ -1,0 +1,25 @@
+{
+  "task_id":"MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner":"client",
+  "summary":"v0.5 candidate binds the Master-approved Gallery U04 reentry/cancellation guard to the exact 711-source freeze, regenerates local Bundle staging, and validates manifest coverage and TypeScript semantics. Root runtime/build verification is pending.",
+  "artifacts":[
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/OWNER_SOURCE_OVERRIDES.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.5/REBUILD_PLAN.md"
+  ],
+  "acceptance_results":[
+    {"criterion":"先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。","result":"PASS","evidence":"承接v0.1 FEATURE_BRIEF 和已批准输入；本版仅接入同阶段 Gallery Owner 经Master接受的源码修复。"},
+    {"criterion":"83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。","result":"NOT_TESTED","evidence":"Staging保留83身份/几何映射，独立 Creator UUID/frame 回读与本版真实画面验证尚未完成。"},
+    {"criterion":"可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。","result":"NOT_TESTED","evidence":"本版五个本地Bundle、生产路径覆盖及三平台CLI构建已通过，微信/抖音game.json均含8个子包；完整启动递归依赖与剩余页面仍待Root最终矩阵。原PNG和其他任务脏文件不移动或覆盖。"},
+    {"criterion":"页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。","result":"FAIL","evidence":"v0.5真实Web完成20次跨页进入/退出，20/20退出后租约、请求、派生帧与绑定计数归零，console共70条log/info且无warn/error；两次U04重入也未报错。但实际320x568菜单拖动滚动方向反向（evidence/menu-reversed-drag.jpg），因此页面输入验收未满足，90项巡检与最终矩阵仍待v0.6修复后复验。"},
+    {"criterion":"准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。","result":"NOT_TESTED","evidence":"源码冻结、资产几何和stage输入hash已绑定；final配置hash与平台物理包体已归档。完整性能收益、上传体积/平台限制差额以及U04最终矩阵仍待Root运行证据补齐。"}
+  ],
+  "assumptions":[],
+  "risks":["U04页面运行与取消日志在实际 v0.5 Web 构建前尚未确认；其他验收不能由该修复单项推断。"],
+  "status":"FAILED"
+}

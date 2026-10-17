@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "status": "THREE_PLATFORM_CREATOR_BUILDS_PASS_RUNTIME_PARTIAL",
+  "stagingRoot": "/private/tmp/minigame-art-opt-integration-staging-v0.6-gesturefix",
+  "stagingManifestSha256": "201afbc1c2882abc73cdf11b874b6224ebc114ece585c99ec11e35e90e83c26f",
+  "freezeSha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+  "readerAddendumSha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68",
+  "ownerSourceOverridesPath": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.6/OWNER_SOURCE_OVERRIDES.json",
+  "ownerSourceOverridesSha256": "990dd592cf8518ed537c59c28e2c06f54a1e7c5796fd39d7319d624017b54fab",
+  "generatedStageConfigHashes": {
+    "web-mobile": "e030948df9e72ad77dfb4a7538c8832e60da3947365727bbffcd9c814964e363",
+    "wechatgame": "d8f1e57711b72be1277528983f226fa4f5eeccab164514de2fda994664de633b",
+    "bytedance-mini-game": "e268fd52bb93c85c1b3fe41f9eee529466d4c00872f31f367c03fe69df8544d7"
+  },
+  "finalBuildRoot": "/private/tmp/minigame-art-opt-integration-final-v0.6-gesturefix",
+  "finalBuildConfigGeneration": "PASS: Root regenerated after staging copy; see evidence/BUILD_RUN_RESULTS.json",
+  "finalBuildConfigSha256": {
+    "webMobile": "a1e465f27d852916809c4aba592299c063e1d155f49bef5e31af7c1cb380a2b3",
+    "wechatgame": "55d86f3cf472f4693494a5d80b0bc72b8d707906c7e861f557d50944b9fdd186",
+    "bytedanceMiniGame": "11a0b9420e16fbe94c8c1b62cb3094d6bfe7e53d17c5f1dd24920086cfcce949"
+  },
+  "creatorBuild": {
+    "web-mobile": "PASS exit36 + Finished (11s; 2026-10-17 16:11:57 +08:00)",
+    "wechatgame": "PASS exit36 + Finished (9s; 2026-10-17 16:12:52 +08:00)",
+    "bytedance-mini-game": "PASS exit36 + Finished (9s; 2026-10-17 16:14:02 +08:00)"
+  },
+  "gestureRuntime": "PARTIAL_PASS: 320x568 menu upward/downward drag, wheel-to-bottom, no accidental activation, and small-menu entry to valid U05 recipe order2/3. Remaining touch panels and full exit/resource-release loop NOT_TESTED.",
+  "historicalV05Runtime": {
+    "cycles": 20,
+    "zeroAfterExit": true,
+    "warnError": 0,
+    "notApplicableToV06": true
+  },
+  "requiredBuildCommand": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project <finalRoot> --build 'configPath=<absolute-final-config>;platform=<platform>'",
+  "gameJson": {
+    "wechatgame": {
+      "path": "evidence/game-json/wechatgame-game.json",
+      "sha256": "336792c7f7551e3dc8198e05c1c1edeeed60c93dce4049a2437a94894857cfb5",
+      "subpackageCount": 8
+    },
+    "bytedance-mini-game": {
+      "path": "evidence/game-json/bytedance-mini-game-game.json",
+      "sha256": "e74f355a02931b7ba75886b81b59c1b125511f01d29461711a433a744e8da758",
+      "subpackageCount": 8
+    }
+  },
+  "creatorRunEvidence": "evidence/BUILD_RUN_RESULTS.json; three full CLI logs copied under evidence/",
+  "outputFileHashInventory": {
+    "path": "evidence/OUTPUT_FILE_HASHES.json",
+    "fileCount": 2447,
+    "totalAcrossAllOutputsBytes": 116059504
+  },
+  "actualGestureSmoke": "PASS for 320x568 menu up/down/wheel/no accidental activation and U05 recipe submit through order2/3; other panels and page-exit loop NOT_TESTED"
+}

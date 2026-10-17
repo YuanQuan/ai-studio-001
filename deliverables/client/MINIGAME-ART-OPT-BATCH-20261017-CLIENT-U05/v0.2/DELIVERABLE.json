@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "owner": "client",
+  "summary": "修复 Tech v0.3 指出的 U05 语义作用域、可读文本/跨组几何、指针取消与长正文弹窗问题；交付实际方法级检查，Creator/页面运行仍待主 Client 集成验证。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "沿用已批Client Brief和同版Tech对齐，保持configureViewportAdapter接口与原画、唯一run/presentation及现有业务/动作时序。",
+      "result": "PASS",
+      "evidence": "Approved brief/review references, public configureViewportAdapter signature, original fit/run/presentation/time update and state ownership checked by source inspection and semantic check. 代理倒计时路径同时由实际方法检查确认24 CSS px字号、32 CSS px行高和文本框高度。"
+    },
+    {
+      "criterion": "实测目标逻辑字号/热区及重叠，仅不达标组转入默认关闭代理，迁入原热区停用且同动作只有一入口，弹窗遮罩阻断底层但不暂停倒计时。",
+      "result": "NOT_TESTED",
+      "evidence": "Geometry/helper and actual-method checks PASS in VERIFICATION.json; full Cocos scene/runtime target-size, proxy uniqueness and timer-under-modal run is not tested. 已补代理计时器24/32 CSS HUD方法检查及HUD入口8px分离测试；页面级实测仍未执行。"
+    },
+    {
+      "criterion": "返回/配方/退出确认/验证/结算按统一safe/capsule布局，正文可滚动到末尾，旋转/重排保留状态并取消过期手势，未测运行不伪称通过。",
+      "result": "NOT_TESTED",
+      "evidence": "Actual dialog method scroll-to-tail and pointer-handler checks PASS; integrated safe/capsule visual layout, resize/rotation state preservation and runtime are not tested."
+    },
+    {
+      "criterion": "仅改U05源码与本交付，提供有效单测/静态核验及真实变更清单，由主Client合并CLI构建验证；不修改PNG/meta/现有资源身份。",
+      "result": "NOT_TESTED",
+      "evidence": "U05 source/tests and manifest are recorded; Creator import and integrated CLI build remain for main Client. Existing PNG/meta/resource identities were not edited by this v0.2 revision; new helper meta UUID is recorded, import not verified."
+    }
+  ],
+  "assumptions": [
+    "沿用获批 U05 v0.1 FEATURE_BRIEF 和 Tech CLIENT_BRIEF_REVIEW APPROVED；此版本只修已授权实现，不更改需求或跨角色接口。"
+  ],
+  "risks": [
+    "主 Client 集成后需以 Creator 隔离 CLI 构建核对框架与新 helper 导入。",
+    "页面 runtime、视觉、设备、倒计时遮罩交互与 resize 仍未测试；不能由 Owner 方法级模拟检查推断通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

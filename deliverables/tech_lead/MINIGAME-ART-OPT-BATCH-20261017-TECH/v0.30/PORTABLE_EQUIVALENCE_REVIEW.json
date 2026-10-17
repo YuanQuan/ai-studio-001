@@ -1,0 +1,24 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-TECH",
+  "reviewer": "tech_lead",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v07→v08便携输出逐relative文件SHA独立复核：各平台仅main脚本不同，其余输出文件、game/application/settings及原生game.json入口均相同。脚本长度同为Web408079bytes、native402728bytes。差异不是新增166bytes；最终v08物理Web38670790/WX38707433/TT38681779bytes。"
+    },
+    {
+      "severity": "INFO",
+      "message": "SCRIPT_EQUIVALENCE严格证明：只归一两生成模块approved_asset_registry/client_asset_modules的_RF.push脚本UUID，以及client_asset_modules词法作用域解析后的n/u（Loader/ModuleAssets）和execute内I/M（ID/定义）绑定交换后，三个完整脚本严格相等。未归一属性名/路径/数据/控制流；两生成TS源本身byteidentical。两模块无序列化Component类，其他文件/入口相同，故为注册元数据和一致变量改名，支持有界继承v07运行证据；仍不称脚本byteidentical或v08实测IAB。"
+    },
+    {
+      "severity": "INFO",
+      "message": "v08实际compiled U01完整button序列、七方向、U04取消/当前失败、System集合/U05groups重跑PASS；三平台419descriptor零缺口，82logical/72物理图/10alias/meta/library/PNG与派生geometry/release0一致；跨包同字节PNG组0，两native8本地subpackage含5业务包。GPU/平台真机仍NOT_TESTED。"
+    },
+    {
+      "severity": "INFO",
+      "message": "独立按Owner payloadInventory定义重算pre-import baselineStage与portableStage：assets+settings+package.json排.DS_Store，均667files/36266325bytes，inventory SHA ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172，与PORTABLE_INPUT_RECOVERY_TEST精确一致。见PREIMPORT_PAYLOAD_RECHECK.json。该集合与Creator postimport生成/整理后的assets集合不同，不混作上传或最终产物计量。"
+    }
+  ],
+  "next_action": "Master可按编译行为等价将v07真实运行证据有界关联v08，保留真实测试build标签；待完整runtime报告后锁主Task最终Required。"
+}

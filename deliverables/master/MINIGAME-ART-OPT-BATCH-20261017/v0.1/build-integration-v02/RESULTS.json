@@ -1,0 +1,50 @@
+{
+  "scope": "Intermediate candidate retained for failure trace; not final acceptance",
+  "results": [
+    {
+      "platform": "web-mobile",
+      "build_cli_exit_code": 36,
+      "output_file_count": 794,
+      "physical_bytes": 38664220,
+      "game_json_subpackages": null,
+      "business_runtime": "FAIL_U00_MODULE_ID_BECAME_SET",
+      "five_business_subpackages": "NOT_APPLICABLE"
+    },
+    {
+      "platform": "wechatgame",
+      "build_cli_exit_code": 36,
+      "output_file_count": 813,
+      "physical_bytes": 38700201,
+      "game_json_subpackages": [
+        {
+          "name": "internal",
+          "root": "subpackages/internal/"
+        },
+        {
+          "name": "main",
+          "root": "subpackages/main/"
+        }
+      ],
+      "business_runtime": "NOT_TESTED",
+      "five_business_subpackages": "FAIL"
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "build_cli_exit_code": 36,
+      "output_file_count": 811,
+      "physical_bytes": 38674550,
+      "game_json_subpackages": [
+        {
+          "name": "internal",
+          "root": "subpackages/internal/"
+        },
+        {
+          "name": "main",
+          "root": "subpackages/main/"
+        }
+      ],
+      "business_runtime": "NOT_TESTED",
+      "five_business_subpackages": "FAIL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "result": "PASS",
+  "failedAcquireSettlesWithCleanupError": {
+    "state": "rejected",
+    "error": "Error: Error: root_load_failure；请求失败后清理也失败：Error: 释放模块资源时有 1 项失败：Error: dep_release_failure"
+  },
+  "multiOperationCancellationContinues": [
+    "a",
+    "b"
+  ],
+  "lateCancelledLoadCleanupExceptionHandled": true,
+  "unhandledRejections": [],
+  "scope": "pure framework logic; no platform/GPU/page approval"
+}

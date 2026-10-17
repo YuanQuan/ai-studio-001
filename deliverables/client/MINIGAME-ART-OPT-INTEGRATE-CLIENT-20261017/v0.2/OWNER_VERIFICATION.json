@@ -1,0 +1,164 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.2",
+  "owner": "client",
+  "role": "Owner自检，不是QA Agent或正式QA结论",
+  "checks": [
+    {
+      "name": "83 asset integrity, derived frame and dependency lease tests",
+      "result": "PASS",
+      "command": "node tests/client/asset-integration/asset_integration.test.cjs"
+    },
+    {
+      "name": "Creator TypeScript semantic check",
+      "result": "PASS",
+      "command": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/node_modules/typescript/bin/tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false"
+    },
+    {
+      "name": "staging generator and source integrity",
+      "result": "PASS",
+      "evidence": "STAGING_INPUT_MANIFEST.json: 717 copied items; 711 frozen inputs plus explicit additions; 83 logical crop rows / 72 physical images; 849 unique asset UUIDs; source changes are explicit and hashed."
+    },
+    {
+      "name": "build config generation",
+      "result": "PASS",
+      "evidence": [
+        {
+          "platform": "web-mobile",
+          "path": "build-configs/web-mobile.json",
+          "sha256": "e07caac726f250343c9811663fc969af5876d58b3ac8a494787202ee395e9889",
+          "mainBundleCompressionType": "merge_dep",
+          "bundleConfigs": [
+            {
+              "name": "world",
+              "root": "db://assets/bundles/world",
+              "compressionType": "merge_dep",
+              "isRemote": false
+            },
+            {
+              "name": "tourist",
+              "root": "db://assets/bundles/tourist",
+              "compressionType": "merge_dep",
+              "isRemote": false
+            },
+            {
+              "name": "shops",
+              "root": "db://assets/bundles/shops",
+              "compressionType": "merge_dep",
+              "isRemote": false
+            },
+            {
+              "name": "dialogue",
+              "root": "db://assets/units/dialogue",
+              "compressionType": "merge_dep",
+              "isRemote": false
+            },
+            {
+              "name": "milk-tea",
+              "root": "db://assets/bundles/milk_tea",
+              "compressionType": "merge_dep",
+              "isRemote": false
+            }
+          ]
+        },
+        {
+          "platform": "wechatgame",
+          "path": "build-configs/wechatgame.json",
+          "sha256": "2a4d5da6f4daceab31b2d8818d740a00d205b62d279db07268801640924232d4",
+          "mainBundleCompressionType": "subpackage",
+          "bundleConfigs": [
+            {
+              "name": "world",
+              "root": "db://assets/bundles/world",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "tourist",
+              "root": "db://assets/bundles/tourist",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "shops",
+              "root": "db://assets/bundles/shops",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "dialogue",
+              "root": "db://assets/units/dialogue",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "milk-tea",
+              "root": "db://assets/bundles/milk_tea",
+              "compressionType": "subpackage",
+              "isRemote": false
+            }
+          ]
+        },
+        {
+          "platform": "bytedance-mini-game",
+          "path": "build-configs/bytedance-mini-game.json",
+          "sha256": "46eabb7d2050143d79d6c55dc4bddcdea802b2fb98af79ac5557f582095d12b1",
+          "mainBundleCompressionType": "subpackage",
+          "bundleConfigs": [
+            {
+              "name": "world",
+              "root": "db://assets/bundles/world",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "tourist",
+              "root": "db://assets/bundles/tourist",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "shops",
+              "root": "db://assets/bundles/shops",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "dialogue",
+              "root": "db://assets/units/dialogue",
+              "compressionType": "subpackage",
+              "isRemote": false
+            },
+            {
+              "name": "milk-tea",
+              "root": "db://assets/bundles/milk_tea",
+              "compressionType": "subpackage",
+              "isRemote": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Creator import UUID/frame readback",
+      "result": "NOT_TESTED"
+    },
+    {
+      "name": "Creator Web/WeChat/ByteDance build, output UUID placement and package bytes",
+      "result": "NOT_TESTED_PENDING_ROOT"
+    },
+    {
+      "name": "runtime browser/device lifecycle, visual comparison, 20 cycles",
+      "result": "NOT_TESTED"
+    },
+    {
+      "name": "actual GPU memory and atlas savings",
+      "result": "NOT_TESTED"
+    }
+  ],
+  "caveats": [
+    "staging是可再生输入；避免提交重复711源树和Creator Library/Temp/build-output。",
+    "meta是候选副本，Creator导入前不宣称真实UUID回读。",
+    "staging文件字节不代表构建物理包体；未测设备运行。"
+  ]
+}

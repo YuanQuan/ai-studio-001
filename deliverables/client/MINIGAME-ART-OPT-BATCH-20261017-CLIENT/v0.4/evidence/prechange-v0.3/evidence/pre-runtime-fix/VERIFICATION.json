@@ -1,0 +1,27 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "version": "v0.2",
+  "status": "READY_FOR_REVIEW",
+  "checks": [
+    {"name":"framework_contract_tests","result":"PASS","evidence":"evidence/framework-contract-tests-v0.2.json"},
+    {"name":"actual_page_method_probes","result":"PASS","evidence":"evidence/page-layout-probes-v0.2.json"},
+    {"name":"creator_typescript_semantic_check","result":"PASS","evidence":"evidence/typescript-semantic-v0.2.log; TypeScript 4.9.5; exit 0"},
+    {"name":"tech_source_code_review_v0_8","result":"PASS","evidence":"deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.8/CODE_REVIEW.json; binds Gallery/U01/reader source hashes in CODE_REVIEW_IDENTITY.json"},
+    {"name":"creator_3_8_8_web_mobile_build","result":"PASS","evidence":"evidence/creator-build-v0.7.log; CLI exit 36 and matching Finished marker; output identity in BUILD_MANIFEST.json"},
+    {"name":"root_iab_v0_7_real_canvas_run","result":"NOT_TESTED","evidence":"Root requested IAB validation against the new output directory; v0.6 prior run is historical only and exposed the now-addressed small-button/modal-layer issues. Awaiting v0.7 actual IAB result."},
+    {"name":"six_portrait_viewports_and_dpr_1_2_3","result":"NOT_TESTED","evidence":"No claim is made from CSS projection or owner method probes; requires measured actual browser/device DPR evidence."},
+    {"name":"u04_landscape_real_render","result":"NOT_TESTED","evidence":"Source method geometry is verified; actual landscape IAB rendering remains pending."},
+    {"name":"runtime_asset_failure_and_20_cycle_gpu_residency","result":"NOT_TESTED","evidence":"20 deterministic lease cycles pass; actual GPU/resource lifetime and failure UI have not been measured in running Cocos UI."}
+  ],
+  "resource_scope": {
+    "existing_scene_prefab_frame_hard_references_remain": true,
+    "claim_of_startup_bundle_or_full_lifecycle_memory_savings": false,
+    "u04_dialogue_bundle_and_path_moved": false
+  },
+  "protected_inputs": {
+    "user_parameter_file_edited": false,
+    "png_assets_edited_by_this_task": false,
+    "existing_scene_prefab_or_uuid_modified_by_this_task": false,
+    "package_json_modified_by_this_task": false
+  }
+}

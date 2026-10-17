@@ -1,0 +1,64 @@
+{
+  "version": "v0.8",
+  "status": "PASS_WITH_BOUNDED_RUNTIME_INHERITANCE",
+  "source": "Creator output comparison is to v0.7-u01fix; physical output bytes are complete build-output directory sizes, not uploaded archive sizes.",
+  "runtimeSourceChanges": [],
+  "payloadComparison": {
+    "files": 667,
+    "bytes": 36266325,
+    "inventorySha256": "ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172",
+    "v07EqualsCleanLike": true,
+    "v07EqualsPortable": true
+  },
+  "actualFinalCreatorOutputComparison": "NOT_TESTED_PENDING_ROOT",
+  "productionPathCount": 419,
+  "physicalLogicalRows": 82,
+  "uniqueImageUuids": 72,
+  "preImportPayload": {
+    "scope": "staging assets/** + settings/** + package.json only; excludes build-configs/**, STAGING_INPUT_MANIFEST.json, generated evidence, .DS_Store and local profiles.",
+    "files": 667,
+    "bytes": 36266325,
+    "inventorySha256": "ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172",
+    "baselineV07EqualsCleanLike": true,
+    "baselineV07EqualsPortableV08": true
+  },
+  "creatorOutputs": {
+    "web-mobile": {
+      "files": 803,
+      "bytes": 38670790,
+      "result": "PASS"
+    },
+    "wechatgame": {
+      "files": 823,
+      "bytes": 38707433,
+      "result": "PASS"
+    },
+    "bytedance-mini-game": {
+      "files": 821,
+      "bytes": 38681779,
+      "result": "PASS"
+    }
+  },
+  "nativeSubpackages": {
+    "wechatgame": 8,
+    "bytedance-mini-game": 8,
+    "businessBundles": [
+      "dialogue",
+      "milk-tea",
+      "shops",
+      "tourist",
+      "world"
+    ],
+    "result": "PASS, verified in each built game.json"
+  },
+  "outputComparison": {
+    "rootEvidence": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/PORTABLE_BUILD_EQUIVALENCE.json",
+    "rootEvidenceSha256": "9d7a847e39ee7302f868f065a1440423d30f95fdcee5fa4b6ffaa35026d91bf1",
+    "techReview": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/PORTABLE_EQUIVALENCE_REVIEW.json",
+    "techReviewSha256": "541e9fc13fe1deaddc7dacbd095d2b1a8a5d666f3ed901528a026d3a091112a1",
+    "techScriptProbe": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/SCRIPT_EQUIVALENCE.json",
+    "techScriptProbeSha256": "031b20c3a70df6d4db9639d4207da3f2ad612c7878d754876890dfa8023289da",
+    "result": "All per-platform files other than each platform main script are raw-hash identical; main scripts are equal after the narrowly documented _RF.push script UUID and scope-resolved variable alias normalization. Script lengths are unchanged (Web 408079 bytes; native 402728 bytes).",
+    "boundedBehavioralEquivalence": "Tech approved bounded inheritance of v0.7 runtime evidence; v0.8 did not itself repeat the 20-cycle IAB run."
+  }
+}

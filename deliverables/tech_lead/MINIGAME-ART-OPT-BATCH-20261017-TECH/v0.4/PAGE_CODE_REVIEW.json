@@ -1,0 +1,16 @@
+{
+  "task_id":"MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "reviewer":"tech_lead",
+  "decision":"CHANGES_REQUESTED",
+  "findings":[
+    {"severity":"INFO","message":"仅审冻结Gallery/U01，开审与结束SHA均一致：Gallery a434c2d40b792ee4e7c3265edd852899f3461d23aaf9a30708611f6c24513d47；U01 f3c7fc6c1ee96cc15fd3c8ca8787d33e0998375088d72e34568d1147e2e6b0af。adapter同一运行逻辑的sameSnapshot类型兼容修订重绑SHA 173b56fa3e34e958bcb15eceb64ca74d3b7fa46d94a91c1073b3c249ddcdfb24，不推翻v0.2框架子范围结论。详PAGE_REVIEW_IDENTITY。U05修订不在本次。"},
+    {"severity":"MAJOR","message":"[P1] Gallery:1269、1281-1286 U04导航父U04Controls已移到top-navHeight/2，Back/Title/PeopleToggle三个子节点又把local y设同一值，世界y翻倍。实际layoutDialogue前段探针safe.top276/nav56，父248+子248=496，远超568高窗口顶部284，返回/人物设置不可达。子节点使用父局部y=0或保持父原点，修后同时核portrait/landscape安全边界。PAGE_LAYOUT_PROBE_RESULTS已执行实际方法前段。"},
+    {"severity":"MAJOR","message":"[P2] Gallery:2004-2009及U01 editor:183-185导航父节点先平移safe中心，子Back/Toggle又使用safe.left/right绝对坐标，非对称safe时重复加centerX，使右按钮越safe。例safe left=-100/right196，center48，右边实际244而许可196。U01 status同属top却设页面bottom坐标，也叠父位移。统一局部坐标或先转父空间，并用左右不对称safe验证返回/工具均在R内。"},
+    {"severity":"MAJOR","message":"[P2] Gallery:1947-1999 U00模态滚动只有整panel Mask，没有body独立viewport/命中裁切；滚动行与固定标题/关闭/底部按钮是同父。普通panelH560时body viewport432、content476、maxScroll44，首行中心236/高48覆盖固定标题中心252与关闭区。应将可滚内容置于body专属Mask/容器，只滚该容器，固定header/footer不参与；移出body的按钮不能接收输入。慢速累积滚动也须按起点总位移取消click，不能只看每步>8。"},
+    {"severity":"MAJOR","message":"[P2] U01 editor:188 layoutControls每次无条件fitCanvas；resize、打开面板或滚动工具都会覆盖用户镜头缩放/平移。实际fitCanvas探针从scale0.6/x73/y91变为0.09115/x0/y12。布局应保留相对镜头状态，仅显式镜头复位或首次进入执行fit；resize按新可用视窗映射且取消在途拖动，不能静默重置相机。"},
+    {"severity":"MAJOR","message":"[P2] Gallery:2224-2226 U02托盘只setScale(1,uiPixels(1))，子控件/字号仍旧x设计单位，形成非等比文字且手机宽度未达16逻辑像素。320宽/720设计时25字号横向仅11.11CSS，y虽放大也不能补足x；配饰按钮初始字号18.24横向更小。逐控件按统一逻辑像素设置宽高与字体/行高，重排或滚动而不把托盘单轴拉伸；补320/390真实字号和底部朝向可达检查。"},
+    {"severity":"MAJOR","message":"[P2] Gallery:2128、2150-2152 U03失败信息仅固定96逻辑像素、line24且CLAMP，未有全文滚动/展开；超4行的长错误ID永不可读，独立retry虽已具备不能替代错误全文。增加安全区内可滚全文或详情入口保留完整原错误，并保证retry/上一下一/返回彼此独立可达。"},
+    {"severity":"INFO","message":"静态肯定项：菜单单列Mask滚动及卡片等比控制、U03独立retry、U04共享ModuleAssets三层原子提交及generation迟到保护/旧组合失败保留/reader框架已存在。独立unbound-local语义检查无2304（PAGE_SEMANTIC_CHECK），不是完整cc项目类型通过。PAGE_LAYOUT_PROBE_RESULTS含实际U04方法前段、U01fit方法执行和明确标示的U02/U03公式诊断。Creator/HTTP运行、像素视觉、DPR/平台/GPU性能仍NOT_TESTED，最终整版需新源码身份和构建运行证据。"}
+  ],
+  "next_action":"Master将6项确定实码问题交Main按已批LAYOUT_SPEC修，保留本版；修后提交稳定SHA与真实方法/短屏/不对称safe探针，再做代码复核和当前构建HTTP验证。不要据本报告批准整版或扩大需求，不增加美术切片后置效果Review。"
+}

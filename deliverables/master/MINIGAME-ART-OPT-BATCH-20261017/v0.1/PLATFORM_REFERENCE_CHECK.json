@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-17",
+  "sources": [
+    {
+      "title": "Cocos Creator 3.8 小游戏分包",
+      "url": "https://docs.cocos.com/creator/3.8/manual/zh/editor/publish/subpackage.html",
+      "verified": "目标平台Bundle压缩类型设小游戏分包，构建主Bundle同类配置；实际生成subpackages及game.json；只允许本地，不设remote。不是Web目录出现AssetBundle就已验证分包。"
+    },
+    {
+      "title": "抖音开放平台：代码包",
+      "url": "https://developer.open-douyin.com/docs/resource/zh-CN/mini-game/develop/framework/subpackages",
+      "verified": "当前普通分包默认整体20MB、主包4MB、单分包20MB；虚拟支付账户另有限制，本轮不新增付费。最终上传及账号口径未验证。"
+    }
+  ],
+  "local_creator": {
+    "version": "3.8.8",
+    "archive": "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/app.asar",
+    "package_manifests": [
+      {
+        "path": "modules/platform-extensions/extensions/wechatgame/package.json",
+        "name": "wechatgame",
+        "version": "1.0.4"
+      },
+      {
+        "path": "modules/platform-extensions/extensions/bytedance-mini-game/package.json",
+        "name": "bytedance-mini-game",
+        "version": "1.0.3"
+      }
+    ],
+    "developer_tools": "/Applications库存仅检出WeChat.app，未据此声称任何开发工具/账号或真机已通过"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "feature_brief_sha256": "36d879472e4d4bff9f5ab1314f63e6c2fbf8b5c3d539e4c043b2d321f732dc72",
+  "tech_alignment": {
+    "artifact": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.2/CLIENT_BRIEF_REVIEW.json",
+    "sha256": "c230c2e3f0a716d1187051d9404f6ff1368f4f11cf80d876b138d88ea04e17ee",
+    "status": "APPROVED"
+  },
+  "approved_source_inputs": [
+    {"path":"deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json","sha256":"05aacacd035fa024a3527ab51b6902249cce0d6886ace8762dc49e2e95fe719f"},
+    {"path":"deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json","sha256":"9795dce96b0e472413aa59951d0dfe291757d16142e7fd96df5115f9fd0a86d0"},
+    {"path":"deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.2/STAGING_PLAN.md","sha256":"25bc87db0ee36971d68a1c12fa04966665cc9827be23c4598482986b65892cf5"}
+  ],
+  "phase": "IN_PROGRESS_INDEPENDENT_IMPLEMENTATION",
+  "source_snapshot": "WAITING_MASTER_FROZEN_MAIN_CLIENT_V0.4",
+  "changes": [
+    {"path":"apps/client/tools/asset-integration/asset_manifest_generator.cjs","sha256":"28fcdb851b3a18cd28bfe1c5d76fdaf4c38d798ff8139a73c98f332a52c026eb","change":"新增确定性读取/校验已批83资源映射和本地Bundle归属的生成器；未复制/改动原资源。"},
+    {"path":"apps/client/assets/framework/asset-integration/derived_asset_resolver.ts","sha256":"f7bd1cafd97f3ea17da4aa0ccd93a700862468a9f1d462f3c0f606634413614a","change":"新增基于现有ModuleAssets租约和Cocos公共SpriteFrame.reset的派生帧解析器。"},
+    {"path":"apps/client/assets/framework/asset-integration/derived_asset_resolver.ts.meta","sha256":"15275dfed3cae58739824b11bbad11c6b92cf8c8ac6fb28a2c47edc34989945b","change":"Owner手工候选TypeScript meta（UUID 71a6e24b-e56c-43d1-a71c-4f20cc4ee0c7），待Creator隔离导入回读，不宣称已导入。"},
+    {"path":"tests/client/asset-integration/asset_integration.test.cjs","sha256":"43aa6b113a70d7e11dbb206f3817f3dad0142c2624690358a6a1c593626f78a0","change":"新增实际transpile并执行派生解析器的有效测试与生成器拒绝坏输入检查。"},
+    {"path":"deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/GENERATED_ASSET_MANIFEST.json","sha256":"f6f42a43ba34b93652925d9f07f14c6ecf8df8d3c40205e2a13c1dd217d41fb6","change":"生成83项计划来源/几何/Bundles/别名清单；不是staging或Creator Import产物。"}
+  ],
+  "untouched_by_this_owner": ["Gallery/U00", "U01", "U05", "Scene/Prefab", "approved source images", "existing shared ModuleAssets source"],
+  "validation": {
+    "asset_integration_test": "PASS",
+    "creator_typescript_semantic_check_with_compat_lib": "PASS",
+    "creator_import": "NOT_TESTED",
+    "creator_build": "NOT_TESTED"
+  }
+}

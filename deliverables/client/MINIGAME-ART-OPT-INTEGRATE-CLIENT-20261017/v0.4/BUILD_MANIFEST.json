@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "status": "CREATOR_BUILDS_PASS_RUNTIME_PARTIAL",
+  "stagingDirectory": "/private/tmp/minigame-art-opt-integration-staging-v0.4d",
+  "inputManifestPath": "STAGING_INPUT_MANIFEST.json",
+  "inputManifestSha256": "ca8d32769cfa2bf9a5b5eb3461b49b774f9dc3143133db65e88e756ae2368ff8",
+  "freezeSha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+  "freezeAddendumSha256": "44b5b8a52b8f1553de4e591c24d50abcca5d3711655953eb54d60621c33a8a68",
+  "configs": [
+    {"platform":"web-mobile","path":"build-configs/web-mobile.json","sha256":"1cc537bf8b895b39db63d5454e61357f6409f3f92747e9ac48cc52e0923fc1ea"},
+    {"platform":"wechatgame","path":"build-configs/wechatgame.json","sha256":"7edd9a63bde3f5ce9bca4d03cc971e89e4bb8308633884bcd93c4442468329aa"},
+    {"platform":"bytedance-mini-game","path":"build-configs/bytedance-mini-game.json","sha256":"901d0483638360ed21372bf29b929d5559ed6d5860d36e55b8d30842888bcaba"}
+  ],
+  "creatorExecutable":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator",
+  "commandTemplate":"<Creator> --project <isolated-staging-copy> --build 'configPath=<absolute-build-config>;platform=<platform>'",
+  "sceneUuid":"01e65005-5a46-45a1-9a16-820ac4b919ae",
+  "verifiedByOwner":{"stagingGenerator":"PASS","manifestToStageCoverage":"PASS","typescriptSemantic":"PASS"},
+  "isolatedCreatorRun":{"web-mobile":"PASS exit 36 + Finished","wechatgame":"PASS exit 36 + Finished; actual 8-entry game.json subpackages","bytedance-mini-game":"PASS exit 36 + Finished; actual 8-entry game.json subpackages","evidence":"evidence/BUILD_RUN_RESULTS.json, platform logs, game-json copies and OUTPUT_FILE_HASHES.json"},
+  "webRuntime":"PARTIAL: Root reports U00/U03 and six shops pass; remaining pages and 20 lifecycle cycles are pending. See deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v04/.",
+  "packageMeasurement":"Physical file totals recorded; upload-size/account/platform submission verification is NOT_TESTED. Device DPR and actual GPU memory/performance are NOT_TESTED.",
+  "reproductionCommands":[
+    "node apps/client/tools/asset-integration/build_staging.cjs /private/tmp/minigame-art-opt-integration-staging-v0.4d",
+    "node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.4d",
+    "tsc --noEmit -p apps/client/tsconfig.json --skipLibCheck --lib es2018,dom --pretty false"
+  ],
+  "generatedStagingTreeIsReproducibleAndTemporary":true,
+  "doNotCommitGeneratedStagingTree":true
+}

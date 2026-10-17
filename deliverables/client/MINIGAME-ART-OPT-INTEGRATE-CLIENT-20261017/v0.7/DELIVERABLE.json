@@ -1,0 +1,47 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner": "client",
+  "summary": "v0.7候选将U01拖动结束/取消后的按钮状态修正绑定到冻结资源staging。方法级回调和资源staging检查通过；v0.7最终构建与IAB页面复核仍待Root执行。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.7/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+      "result": "PASS",
+      "evidence": "沿用此前已对齐的Brief和已批准技术/视觉输入；本版只接入同一Client阶段内的U01生命周期修正。"
+    },
+    {
+      "criterion": "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.7尚无最终Creator构建与页面运行证据，详见OWNER_VERIFICATION.json。v0.6历史结果单独标注，不代替本版验证。"
+    },
+    {
+      "criterion": "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.7尚无最终Creator构建与页面运行证据，详见OWNER_VERIFICATION.json。v0.6历史结果单独标注，不代替本版验证。"
+    },
+    {
+      "criterion": "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.7方法级按钮回调探针通过；本版Creator HTTP页面的拖动后直接关闭、取消和后续tap，以及页面离开释放仍未由Root实测，暂记NOT_TESTED。"
+    },
+    {
+      "criterion": "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。",
+      "result": "NOT_TESTED",
+      "evidence": "v0.7尚无最终Creator构建与页面运行证据，详见OWNER_VERIFICATION.json。v0.6历史结果单独标注，不代替本版验证。"
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "v0.6实测U01面板拖动后直接点关闭仍失败；需v0.7实际页面验证确认修复。",
+    "v0.7三平台Creator构建、U01实际取消/关闭序列与完整页面退出释放矩阵待Root执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

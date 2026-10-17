@@ -1,0 +1,42 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT",
+  "version": "v0.4",
+  "status": "PENDING_REVIEW",
+  "checks": [
+    {
+      "name": "framework_contract_tests",
+      "result": "PASS",
+      "evidence": "evidence/framework-contract-tests-v0.4.json"
+    },
+    {
+      "name": "u00_actual_panel_layout_probe",
+      "result": "PASS",
+      "evidence": "evidence/page-layout-probes-v0.4.json; source SHA fc660686f4059ddbbec69bfe0eb414b8f26b374229c25f55f51d6cfb5be106df"
+    },
+    {
+      "name": "page_layout_source_probes",
+      "result": "PASS",
+      "evidence": "evidence/page-layout-probes-v0.4.json"
+    },
+    {
+      "name": "creator_typescript_semantic_check",
+      "result": "PASS",
+      "evidence": "evidence/typescript-semantic-v0.4.log; Creator 3.8.8 TypeScript 4.9.5; exit 0"
+    },
+    {
+      "name": "creator_web_mobile_build",
+      "result": "PASS",
+      "evidence": "BUILD_MANIFEST.json; Creator CLI exit 36; Finished marker; 781 output files SHA recorded"
+    },
+    {
+      "name": "root_iab_runtime_review",
+      "result": "NOT_TESTED",
+      "evidence": "Root is currently reviewing unique v0.9 output directory; update only after result is recorded"
+    },
+    {
+      "name": "real_device_dpr_matrix_and_gpu_residency",
+      "result": "NOT_TESTED",
+      "evidence": "No real device DPR 1/2/3 or GPU full lifecycle evidence in this version"
+    }
+  ]
+}

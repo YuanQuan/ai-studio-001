@@ -1,0 +1,146 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.3",
+  "status": "STAGING_BYTES_ONLY_TRUE_SUBPACKAGE_UNVERIFIED",
+  "bundles": [
+    {
+      "id": "world",
+      "root": "assets/bundles/world",
+      "dependencies": [],
+      "local": true,
+      "stagedSourceBytes": 8683383,
+      "creatorPhysicalBundleBytes": "NOT_TESTED"
+    },
+    {
+      "id": "tourist",
+      "root": "assets/bundles/tourist",
+      "dependencies": [
+        "world"
+      ],
+      "local": true,
+      "stagedSourceBytes": 3519227,
+      "creatorPhysicalBundleBytes": "NOT_TESTED"
+    },
+    {
+      "id": "shops",
+      "root": "assets/bundles/shops",
+      "dependencies": [
+        "world"
+      ],
+      "local": true,
+      "stagedSourceBytes": 5071916,
+      "creatorPhysicalBundleBytes": "NOT_TESTED"
+    },
+    {
+      "id": "dialogue",
+      "root": "assets/units/dialogue",
+      "dependencies": [],
+      "local": true,
+      "stagedSourceBytes": 14218104,
+      "creatorPhysicalBundleBytes": "NOT_TESTED"
+    },
+    {
+      "id": "milk-tea",
+      "root": "assets/bundles/milk_tea",
+      "dependencies": [],
+      "local": true,
+      "stagedSourceBytes": 3288508,
+      "creatorPhysicalBundleBytes": "NOT_TESTED"
+    }
+  ],
+  "worldExclusions": [
+    {
+      "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+      "originalSha256": "84d16573289457e4f3fe57791fe020a875e070ab6e8346f329e42a62c1fb9d16",
+      "originalBytes": 1281645,
+      "currentOutputPath": null,
+      "currentOutputSha256": null,
+      "disposition": "EXCLUDED_APPROVED_BUT_UNREFERENCED_CROP_AND_LEGACY_IMAGE",
+      "uuid": "13252d37-a37a-4a92-9dfb-488c314b7196",
+      "spriteFrameUuid": "13252d37-a37a-4a92-9dfb-488c314b7196@f9941",
+      "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+      "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+    },
+    {
+      "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l.png",
+      "originalSha256": "c604091848bc74f010a9d321e9303deedb1d5b88316c78d485b955d446fe0ae9",
+      "originalBytes": 434325,
+      "currentOutputPath": null,
+      "currentOutputSha256": null,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE",
+      "uuid": "232fc449-73e5-4622-bd81-d97eeda73f21",
+      "spriteFrameUuid": "232fc449-73e5-4622-bd81-d97eeda73f21@f9941",
+      "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+      "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+    },
+    {
+      "sourcePath": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r.png",
+      "originalSha256": "712defca0acd346f2be2bbaf563af878add813f8a7bf29f158874c1e1259e316",
+      "originalBytes": 435246,
+      "currentOutputPath": null,
+      "currentOutputSha256": null,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE",
+      "uuid": "91356d07-e497-4935-a689-6a2e2fe19cd8",
+      "spriteFrameUuid": "91356d07-e497-4935-a689-6a2e2fe19cd8@f9941",
+      "transformId": "exclude-unreferenced-legacy-world-texture-v1",
+      "evidence": "no exact filename or UUID references in staged Scene/Prefab/TS/JSON/Anim/Fire payloads after approved paths are staged"
+    }
+  ],
+  "u05Exclusions": [
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/CUSTOMER_GHOST.png",
+      "uuid": "80f3c233-d3e4-4dff-a894-d5618d563255",
+      "spriteFrameUuid": "80f3c233-d3e4-4dff-a894-d5618d563255@f9941",
+      "bytes": 133562,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+      "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+    },
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/STATIC_BARE.png",
+      "uuid": "b5052b34-a7ce-4f98-9fa0-2a9830c8aab3",
+      "spriteFrameUuid": "b5052b34-a7ce-4f98-9fa0-2a9830c8aab3@f9941",
+      "bytes": 1689016,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+      "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+    },
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_MILK.png",
+      "uuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb",
+      "spriteFrameUuid": "2b2b6409-dcb3-46a2-be7b-c658290b8ceb@f9941",
+      "bytes": 914,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+      "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+    },
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TEA.png",
+      "uuid": "0557f56a-4162-4d67-a726-7a36f66e9f85",
+      "spriteFrameUuid": "0557f56a-4162-4d67-a726-7a36f66e9f85@f9941",
+      "bytes": 932,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+      "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+    },
+    {
+      "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TOP.png",
+      "uuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1",
+      "spriteFrameUuid": "81866f28-f4bf-4b17-a666-cea97b21ebe1@f9941",
+      "bytes": 735,
+      "disposition": "EXCLUDED_UNREFERENCED_LEGACY_U05_IMAGE",
+      "evidence": "no exact PNG filename or image/frame UUID reference in staged Scene/Prefab/TS/JSON/Anim/Fire payloads"
+    }
+  ],
+  "imageCounts": {
+    "approvedLogicalRows": 83,
+    "physicalDerivedPngs": 72,
+    "aliases": 10
+  },
+  "actualSubpackageProof": "NOT_TESTED; v0.2 WeChat output exposed only internal/main in game.json despite requested bundleConfigs. Tech is checking Creator folder meta per-platform serialization; do not describe current candidate as subpackage PASS.",
+  "atlas": {
+    "status": "NOT_IMPLEMENTED",
+    "reason": "No actual atlas/UV/GPU proof of net savings; independent textures retained."
+  },
+  "caveats": [
+    "stagedSourceBytes are filesystem bytes, not compressed package size.",
+    "Creator may promote/copy shared dependencies into main or other bundles; actual UUID-level Creator output audit pending.",
+    "No GPU-memory measurement."
+  ]
+}

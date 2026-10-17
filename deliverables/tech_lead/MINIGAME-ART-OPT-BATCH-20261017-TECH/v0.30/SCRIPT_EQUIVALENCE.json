@@ -1,0 +1,75 @@
+{
+  "result": "PASS",
+  "transform": "Normalize only _RF.push script UUID literals, then scope-resolved n/u and I/M binding exchanges ONLY inside client_asset_modules System.register factory; no property/literal/control-flow edits; strict whole-file equality.",
+  "rows": [
+    {
+      "platform": "web-mobile",
+      "before": "/private/tmp/minigame-art-opt-integration-final-v0.7-u01fix/build-output/minigame-art-opt-integration-final-v0.7-u01fix-web-mobile/assets/main/index.js",
+      "after": "/private/tmp/minigame-art-opt-integration-final-v0.8-portable/build-output/minigame-art-opt-integration-final-v0.8-portable-web-mobile/assets/main/index.js",
+      "beforeBytes": 408079,
+      "afterBytes": 408079,
+      "beforeSHA256": "a70098762c067d5d620fa3a2d008a708781003cf71a4388e130c738de9329786",
+      "afterSHA256": "8a5ddf6abc52d1eccd463ce253a139a2170075f28be90bb5c02b376d85ca90e4",
+      "changedRegistrationMetadata": [
+        {
+          "module": "approved_asset_registry",
+          "before": "a4bfdLhAOVGh4g8lKdIrwuL",
+          "after": "d805ej23vJJ0qJTk9puGodj"
+        },
+        {
+          "module": "client_asset_modules",
+          "before": "c0addZnVLJLCa/nZwgnD487",
+          "after": "ffe3ffuWYtMTKpQVpf+zY7j"
+        }
+      ],
+      "renamedRootBindingOccurrences": 13,
+      "strictlyEqualAfterOnlyRFUuidAndScopedAliasSwap": true
+    },
+    {
+      "platform": "wechatgame",
+      "before": "/private/tmp/minigame-art-opt-integration-final-v0.7-u01fix/build-output/minigame-art-opt-integration-final-v0.7-u01fix-wechatgame/subpackages/main/game.js",
+      "after": "/private/tmp/minigame-art-opt-integration-final-v0.8-portable/build-output/minigame-art-opt-integration-final-v0.8-portable-wechatgame/subpackages/main/game.js",
+      "beforeBytes": 402728,
+      "afterBytes": 402728,
+      "beforeSHA256": "b019e3cf6aa917db4e2bdfacf00e28728170bacc95afdca7b8619169cb043189",
+      "afterSHA256": "769c9dae4eba9f146c49d55b61a736aad4ab4eb708d285016c66739e40ba1969",
+      "changedRegistrationMetadata": [
+        {
+          "module": "approved_asset_registry",
+          "before": "a4bfdLhAOVGh4g8lKdIrwuL",
+          "after": "d805ej23vJJ0qJTk9puGodj"
+        },
+        {
+          "module": "client_asset_modules",
+          "before": "c0addZnVLJLCa/nZwgnD487",
+          "after": "ffe3ffuWYtMTKpQVpf+zY7j"
+        }
+      ],
+      "renamedRootBindingOccurrences": 13,
+      "strictlyEqualAfterOnlyRFUuidAndScopedAliasSwap": true
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "before": "/private/tmp/minigame-art-opt-integration-final-v0.7-u01fix/build-output/minigame-art-opt-integration-final-v0.7-u01fix-bytedance-mini-game/subpackages/main/game.js",
+      "after": "/private/tmp/minigame-art-opt-integration-final-v0.8-portable/build-output/minigame-art-opt-integration-final-v0.8-portable-bytedance-mini-game/subpackages/main/game.js",
+      "beforeBytes": 402728,
+      "afterBytes": 402728,
+      "beforeSHA256": "b019e3cf6aa917db4e2bdfacf00e28728170bacc95afdca7b8619169cb043189",
+      "afterSHA256": "769c9dae4eba9f146c49d55b61a736aad4ab4eb708d285016c66739e40ba1969",
+      "changedRegistrationMetadata": [
+        {
+          "module": "approved_asset_registry",
+          "before": "a4bfdLhAOVGh4g8lKdIrwuL",
+          "after": "d805ej23vJJ0qJTk9puGodj"
+        },
+        {
+          "module": "client_asset_modules",
+          "before": "c0addZnVLJLCa/nZwgnD487",
+          "after": "ffe3ffuWYtMTKpQVpf+zY7j"
+        }
+      ],
+      "renamedRootBindingOccurrences": 13,
+      "strictlyEqualAfterOnlyRFUuidAndScopedAliasSwap": true
+    }
+  ]
+}

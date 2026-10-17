@@ -1,0 +1,43 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "owner_check": "Client Owner self-verification for this unit example; not formal QA",
+  "runtime": "NOT_TESTED",
+  "results": [
+    {
+      "name": "U05 accessibility and projection geometry",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_accessibility.check.js",
+      "result": "PASS",
+      "evidence": "Covers x/y nonuniform CSS projection, 48 CSS px per hit axis, 16/14 CSS font floors per axis, asymmetric safe/capsule contain, 8px separation, topping proxy threshold, scroll clamp, text wrapping and modal hit isolation."
+    },
+    {
+      "name": "Current milk-tea state regression",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/milk_tea_state_current.check.js",
+      "result": "PASS",
+      "evidence": "Five tiers, two stage option pools, xp_from boundary, invalid/missing cup handling, undo, three correct cups, one-time settlement, deadline boundaries, unlock conditions, permanent unlock and corrupted save."
+    },
+    {
+      "name": "TypeScript syntax transpilation",
+      "command": "node deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_transpile.check.js",
+      "result": "PASS",
+      "evidence": "Both changed U05 TypeScript files transpile with the installed Creator TypeScript compiler without syntax diagnostics. This check is not a Creator project build."
+    },
+    {
+      "name": "Historical state check from earlier sample",
+      "command": "node deliverables/client/U05-MILK-TEA-FRONTEND-SAMPLE-20261012/v0.1/evidence/milk_tea_state.check.js",
+      "result": "FAIL",
+      "evidence": "Fails the first EASY/1 options assertion because the historic check expects obsolete options_per_dim; current config uses tea_options, milk_options and topping_options. Original file was left untouched; the current-contract regression above passes."
+    },
+    {
+      "name": "Creator CLI build and generated/imported meta identity",
+      "command": "Main Client integrated isolated CLI build",
+      "result": "NOT_TESTED",
+      "evidence": "Per task handoff, build is deferred until main Client integrates all source. New meta UUID 9a868daf-9e47-43ca-a0e7-8d127b9c1a65 is recorded but not Creator import verified."
+    },
+    {
+      "name": "In-app browser runtime/visual inspection",
+      "command": "Codex in-app browser",
+      "result": "NOT_TESTED",
+      "evidence": "Browser surface reported unavailable in this workstream; no external browser/CDP route used."
+    }
+  ]
+}

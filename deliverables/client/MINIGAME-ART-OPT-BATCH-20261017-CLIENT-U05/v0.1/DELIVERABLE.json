@@ -1,0 +1,49 @@
+{
+  "task_id": "MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05",
+  "owner": "client",
+  "summary": "完成 U05 全画幅 safe/capsule contain、双轴字号/热区测量、按实测代理操作与安全滚动弹窗实现，保持现有 run/presentation 与时序入口；提交主 Client 集成及 Tech Review。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_accessibility.check.js",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/milk_tea_state_current.check.js",
+    "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/v0.1/evidence/u05_transpile.check.js",
+    "apps/client/assets/labs/u05/milk_tea_lab.ts",
+    "apps/client/assets/labs/u05/u05_accessibility.ts",
+    "apps/client/assets/labs/u05/u05_accessibility.ts.meta"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "沿用已批Client Brief和同版Tech对齐，保持configureViewportAdapter接口与原画、唯一run/presentation及现有业务/动作时序。",
+      "result": "PASS",
+      "evidence": "FEATURE_BRIEF 与 SOURCE_CHANGE_MANIFEST 绑定已批准 Brief、APPROVED Tech Review及 handoff SHA；变更继续使用原 beginRun/choose/confirmExit/settlement 路径。"
+    },
+    {
+      "criterion": "实测目标逻辑字号/热区及重叠，仅不达标组转入默认关闭代理，迁入原热区停用且同动作只有一入口，弹窗遮罩阻断底层但不暂停倒计时。",
+      "result": "NOT_TESTED",
+      "evidence": "helper 几何检查和源码转译通过；本轮没有 Creator 页面运行，无法把代理组实际布局/唯一入口与倒计时行为作为页面实测PASS。代码已按content/visible和root fit双轴测量并停用迁入组原hit，待主Client集成运行/Tech审查核实。"
+    },
+    {
+      "criterion": "返回/配方/退出确认/验证/结算按统一safe/capsule布局，正文可滚动到末尾，旋转/重排保留状态并取消过期手势，未测运行不伪称通过。",
+      "result": "NOT_TESTED",
+      "evidence": "代码路径实现统一安全区弹窗、遮罩、正文滚动与resize手势清理；clamp/遮罩helper检查通过。但未在Creator页面验证安全区内实际排版、滚动到末尾、resize期间时序及状态保持。"
+    },
+    {
+      "criterion": "仅改U05源码与本交付，提供有效单测/静态核验及真实变更清单，由主Client合并CLI构建验证；不修改PNG/meta/现有资源身份。",
+      "result": "NOT_TESTED",
+      "evidence": "本子Owner交付源码、测试、报告和真实变更清单；新增TS meta手工写入记录UUID但未由Creator确认导入身份。主Client需在合并后统一CLI构建核对；禁止修改范围依本子Owner的文件清单核对，尚待集成审查。"
+    }
+  ],
+  "assumptions": [
+    "ViewportSnapshot.content 为浏览器 CSS content 矩形，visibleSize 为 Cocos UI 逻辑尺寸；x/y分别换算以覆盖非等比投影。",
+    "小料手势命中范围按源素材与名称标签并集测量，按当前资源配置逐组判断代理。"
+  ],
+  "risks": [
+    "新手工生成的 u05_accessibility.ts.meta UUID 尚待 Creator 导入身份核验。",
+    "没有本轮 Creator CLI 构建或内置浏览器实际运行证据；集成后需复核 safe/capsule、弹窗滚动、触控唯一入口和倒计时持续。",
+    "较长订单/状态全文依靠面板滚动阅读，设备端字号与实际文本排版仍需运行对照。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

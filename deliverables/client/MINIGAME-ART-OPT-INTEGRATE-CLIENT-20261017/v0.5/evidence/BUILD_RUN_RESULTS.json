@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "project": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.5",
+  "finalRoot": "/private/tmp/minigame-art-opt-integration-final-v0.5-u04fix",
+  "stagingRoot": "/private/tmp/minigame-art-opt-integration-staging-v0.5-u04fix",
+  "stagingManifestSha256": "6204555aa424f066b43bd4f6da617bf4c0da6f287a9f097927dee5d67a069fc3",
+  "ownerOverridesSha256": "add9b8418930f2690a9deb02d8099ccc539961aab18319de55fcd40ae24c0700",
+  "creatorVersion": "3.8.8",
+  "finalBuilderSettings": {"path":"builder-settings.json","sha256":"252823ccfc1ddc591d264b636ca7da33be088bf181769bb918969708325c89c9","note":"Creator-exported mini-game Bundle settings copied into staging before final build."},
+  "commands": {
+    "web-mobile":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/minigame-art-opt-integration-final-v0.5-u04fix --build 'configPath=/private/tmp/minigame-art-opt-integration-final-v0.5-u04fix/build-configs/web-mobile.json;platform=web-mobile'",
+    "wechatgame":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/minigame-art-opt-integration-final-v0.5-u04fix --build 'configPath=/private/tmp/minigame-art-opt-integration-final-v0.5-u04fix/build-configs/wechatgame.json;platform=wechatgame'",
+    "bytedance-mini-game":"/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/MacOS/CocosCreator --project /private/tmp/minigame-art-opt-integration-final-v0.5-u04fix --build 'configPath=/private/tmp/minigame-art-opt-integration-final-v0.5-u04fix/build-configs/bytedance-mini-game.json;platform=bytedance-mini-game'"
+  },
+  "runResults": [
+    {
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "finished": true,
+      "finish": "2026-10-17 15:46:59, 9 seconds",
+      "log": "creator-web-mobile.log"
+    },
+    {
+      "platform": "wechatgame",
+      "exitCode": 36,
+      "finished": true,
+      "finish": "2026-10-17 15:47:52, 10 seconds",
+      "log": "creator-wechatgame.log",
+      "gameJson": "game-json/wechatgame-game.json"
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "exitCode": 36,
+      "finished": true,
+      "finish": "2026-10-17 15:48:45, 13 seconds",
+      "log": "creator-bytedance-mini-game.log",
+      "gameJson": "game-json/bytedance-mini-game-game.json"
+    }
+  ],
+  "platformMeasurements": [
+    {
+      "platform": "web-mobile",
+      "config": {
+        "path": "configs/web-mobile.json",
+        "bytes": 2632,
+        "sha256": "abf6342c622000eebf3eaaf147b0c6a4540f57945bb624e657c3e099cfb3b85f"
+      },
+      "outputDirectory": "minigame-art-opt-integration-final-v0.5-u04fix-web-mobile",
+      "fileCount": 803,
+      "totalPhysicalBytes": 38670260
+    },
+    {
+      "platform": "wechatgame",
+      "config": {
+        "path": "configs/wechatgame.json",
+        "bytes": 2638,
+        "sha256": "4008d403bb69cee513303b6d5a1dba51d1462a7545164834471574b2ee257a4d"
+      },
+      "outputDirectory": "minigame-art-opt-integration-final-v0.5-u04fix-wechatgame",
+      "fileCount": 823,
+      "totalPhysicalBytes": 38706903,
+      "gameJson": {
+        "path": "game-json/wechatgame-game.json",
+        "sha256": "336792c7f7551e3dc8198e05c1c1edeeed60c93dce4049a2437a94894857cfb5",
+        "subpackages": [
+          {
+            "name": "internal",
+            "root": "subpackages/internal/",
+            "fileCount": 17,
+            "physicalBytes": 242484
+          },
+          {
+            "name": "resources",
+            "root": "subpackages/resources/",
+            "fileCount": 1,
+            "physicalBytes": 44
+          },
+          {
+            "name": "main",
+            "root": "subpackages/main/",
+            "fileCount": 5,
+            "physicalBytes": 405312
+          },
+          {
+            "name": "dialogue",
+            "root": "subpackages/dialogue/",
+            "fileCount": 391,
+            "physicalBytes": 14333271
+          },
+          {
+            "name": "milk-tea",
+            "root": "subpackages/milk-tea/",
+            "fileCount": 167,
+            "physicalBytes": 3303228
+          },
+          {
+            "name": "shops",
+            "root": "subpackages/shops/",
+            "fileCount": 33,
+            "physicalBytes": 5033970
+          },
+          {
+            "name": "tourist",
+            "root": "subpackages/tourist/",
+            "fileCount": 113,
+            "physicalBytes": 3442951
+          },
+          {
+            "name": "world",
+            "root": "subpackages/world/",
+            "fileCount": 73,
+            "physicalBytes": 8689618
+          }
+        ]
+      },
+      "mainPackageExcludingSubpackagesBytes": 3256025
+    },
+    {
+      "platform": "bytedance-mini-game",
+      "config": {
+        "path": "configs/bytedance-mini-game.json",
+        "bytes": 2674,
+        "sha256": "5dbb99fd87b8dfc06b2d22ed0b487235de2058327528852d0f3ed42620603113"
+      },
+      "outputDirectory": "minigame-art-opt-integration-final-v0.5-u04fix-bytedance-mini-game",
+      "fileCount": 821,
+      "totalPhysicalBytes": 38681249,
+      "gameJson": {
+        "path": "game-json/bytedance-mini-game-game.json",
+        "sha256": "e74f355a02931b7ba75886b81b59c1b125511f01d29461711a433a744e8da758",
+        "subpackages": [
+          {
+            "name": "internal",
+            "root": "subpackages/internal/",
+            "fileCount": 17,
+            "physicalBytes": 242484
+          },
+          {
+            "name": "resources",
+            "root": "subpackages/resources/",
+            "fileCount": 1,
+            "physicalBytes": 41
+          },
+          {
+            "name": "main",
+            "root": "subpackages/main/",
+            "fileCount": 5,
+            "physicalBytes": 405312
+          },
+          {
+            "name": "dialogue",
+            "root": "subpackages/dialogue/",
+            "fileCount": 391,
+            "physicalBytes": 14333271
+          },
+          {
+            "name": "milk-tea",
+            "root": "subpackages/milk-tea/",
+            "fileCount": 167,
+            "physicalBytes": 3303228
+          },
+          {
+            "name": "shops",
+            "root": "subpackages/shops/",
+            "fileCount": 33,
+            "physicalBytes": 5033970
+          },
+          {
+            "name": "tourist",
+            "root": "subpackages/tourist/",
+            "fileCount": 113,
+            "physicalBytes": 3442951
+          },
+          {
+            "name": "world",
+            "root": "subpackages/world/",
+            "fileCount": 73,
+            "physicalBytes": 8689618
+          }
+        ]
+      },
+      "mainPackageExcludingSubpackagesBytes": 3230374
+    }
+  ],
+  "measurementMethod": "Sum stat sizes of every regular file recursively in each platform output directory; subpackage sizes are recursive file sums at game.json roots; mainPackageExcludingSubpackagesBytes is total minus those 8 subpackage directories.",
+  "measurementLimits": "These are generated physical file bytes, not compressed upload/transfer sizes, quota/account checks, or verified platform submission sizes. Device DPR, frame rate, real GPU allocation and 20-cycle results are NOT_TESTED here.",
+  "outputsNotCopiedIntoDeliverable": "Only this file-level hash inventory is archived; build-output, library and temp directories are not copied."
+}

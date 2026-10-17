@@ -1,0 +1,46 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "owner": "client",
+  "summary": "v0.8 adds portable frozen-input recovery and excludes local metadata/preferences; clean-like output matches v0.7 payload. Root built Web, WeChat and ByteDance targets successfully. Tech independently verified that each output differs from v0.7 only in generated main-script registration UUIDs and scope-resolved alias names, with normalized whole-script equality; bounded v0.7 runtime evidence can be associated, but v0.8 did not itself repeat the full 20-cycle IAB run.",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+      "result": "PASS",
+      "evidence": "沿用v0.1已对齐Brief及批准输入；此版本只修复可复现生成器。"
+    },
+    {
+      "criterion": "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+      "result": "PASS",
+      "evidence": "Creator import geometry audit in Tech v0.30 records 82 logical rows, 72 image UUIDs and 419 production paths; v0.7 runtime sources are unchanged and v0.8 output equivalence supports bounded inheritance. See evidence/CREATOR_PORTABLE_BUILD_AND_EQUIVALENCE.json."
+    },
+    {
+      "criterion": "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+      "result": "PASS",
+      "evidence": "Three platform builds passed; both native game.json files declare 8 local subpackages including the five business bundles. Pre-import payload comparison and actual Creator output counts/bytes are in BUILD_MANIFEST.json and BUNDLE_REPORT.json."
+    },
+    {
+      "criterion": "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "Root actual v0.7 lifecycle evidence is inherited only in Tech-approved bounded scope: all non-main outputs identical and main scripts normalize to strict equality after documented generated UUID/variable renaming. v0.8 itself did not repeat 20 cycles; direct v0.8 IAB is explicitly NOT_TESTED in OWNER_VERIFICATION.json."
+    },
+    {
+      "criterion": "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。",
+      "result": "PASS",
+      "evidence": "Source/staging provenance, Creator-import geometry, three platform output inventories and physical output bytes are recorded in SOURCE_CHANGE_MANIFEST.json, RESOURCE_HANDOFF.json, BUNDLE_REPORT.json and BUILD_MANIFEST.json. GPU/device measurements remain NOT_TESTED."
+    }
+  ],
+  "assumptions": [],
+  "risks": [
+    "Root需用单独final副本重生成平台configs并检查Creator输出payload hashes；若不同，v0.7运行证据不可复用。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

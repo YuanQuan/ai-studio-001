@@ -1,0 +1,15 @@
+{
+  "base_freeze": "RESOURCE_STAGING_INPUT_FREEZE.json",
+  "base_freeze_sha256": "e1a4b752ee1847371247b3c6200079b994e0a9cd94dda58d3dec20992b4ea0bb",
+  "same_phase_internal_code": true,
+  "overrides": [
+    {
+      "path": "apps/client/assets/framework/ui/scrollable_text_panel.ts",
+      "previous_sha256": "5a23c5ae0f1a9389677d11a28efbaf5efab4555471e74090b93e9c5539121dbf",
+      "sha256": "8f54010f550d69a4c82da03b61eedfba577c13e268866f237b5b1bb8d5aa4567",
+      "snapshot": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.5/evidence/scrollable_text_panel-v0.5.ts",
+      "reason": "同一Client实现阶段修复真实长JSON阅读白条；保留全文逻辑滚动，限制可见Label渲染。当前代码探针PASS，实际v0.10正在构建验证，不冒称已User批准。"
+    }
+  ],
+  "allow_other_owner_changes": "Resource Task explicitly owned loader/caller/module/staging changes must be separately bound; other baseline assets stay exact."
+}

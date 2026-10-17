@@ -1,0 +1,20 @@
+{
+  "task_id": "MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "PRODUCTION_PLAN无损判定只要求alpha与可见RGBA零差，alpha0隐藏RGB单列但未禁止作为零损生产候选通过。本项目PILOT_SAMPLING_DIAGNOSTIC已有straight-alpha双线性可见差异证据。必须全RGBA含alpha0精确保存；若编码器改hiddenRGB，仅诊断，不可认零降质通过。cwebp官方说明-lossless默认仍可改透明RGB，应-exact或API exact=1，保持ICC/明确统一色彩及实际采样/混合配置。依据 https://developers.google.com/speed/webp/docs/cwebp 和 https://developers.google.com/speed/webp/docs/api 。"
+    },
+    {
+      "severity": "INFO",
+      "message": "六PNG实际SHA/字节及TTF/OFL SHA已独立核一致；人物与字体原批准补核区分旧索引未绑定，文档未生成新图片。6件最多18候选+6参考、0生成式调用、150人分钟、每问题2轮不扩上限合理。候选PNG/WebP只记录实际字节，WebP Creator导入/构建/平台解码尚需实测，未预称支持。"
+    },
+    {
+      "severity": "INFO",
+      "message": "总包物理38680539bytes，20MiB差17709019bytes与十进制20MB差18680539bytes算术正确；13,009,351裁图字节不足覆盖差额，不承诺必达。PNG字节优化不等于GPU峰值减少。新方案用户Gate1→同批Art/Tech预签→具体样本Gate2后正式接入符合现行规则；自切图不加后置专业效果Review或额外预览门槛。"
+    }
+  ],
+  "next_action": "Master协调Art仅补准确全RGBA/透明RGB/ICC与采样条件，保留此Review身份；修后新SHA轻复核即可提交原既定用户Gate1，不新增门禁或制作授权。"
+}

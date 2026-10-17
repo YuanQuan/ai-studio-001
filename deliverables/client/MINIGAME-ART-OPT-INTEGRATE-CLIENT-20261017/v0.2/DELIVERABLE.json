@@ -1,0 +1,54 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.2",
+  "owner": "client",
+  "summary": "完成83资源可再生staging候选、页面资源provider接线和本地Bundle构建配置；单测及Creator TS静态检查通过。Creator导入/平台构建/实际运行由Root继续，本版仍是Client实现候选。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/RESOURCE_HANDOFF.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/BUNDLE_REPORT.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/BUILD_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/DELIVERABLE.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.2/staging-project"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "先交轻量Brief与Tech对齐；正式输入为已批技术/视觉契约和83映射，当前代码只作同Client阶段内部实现，不冒称独立获批上游。",
+      "result": "PASS",
+      "evidence": "沿用Brief v0.1 SHA-256 36d879472e4d4bff9f5ab1314f63e6c2fbf8b5c3d539e4c043b2d321f732dc72；Tech CLIENT_BRIEF_REVIEW v0.2 APPROVED。"
+    },
+    {
+      "criterion": "83资源经真实Creator导入并回读UUID，公开派生SpriteFrame.reset恢复原画布/offset，保持脚点、镜像、顺序、挂点、U05构图及动作时序；重复10组仅共享图片。",
+      "result": "NOT_TESTED",
+      "evidence": "83项来源/几何检查已通过；Creator导入、frame/UUID回读和实际画面/动作对照待Root执行。"
+    },
+    {
+      "criterion": "可复现发布输入仅保留启动菜单必需引用，本地world/游客/店铺/对话/奶茶明确唯一归属及依赖，原源图与其他任务脏文件不移动或覆盖，无CDN、降采样、删内容。",
+      "result": "PARTIAL",
+      "evidence": "隔离staging含本地Bundle配置、清Scene硬引用、按需标记；实际Creator输出依赖/包体归属待测。"
+    },
+    {
+      "criterion": "页面按需加载/离开释放及错误/取消/重入得到有效验证，实际HTTP产物同背景同尺度对照与循环证据可复核；非实测项明确NOT_TESTED。",
+      "result": "NOT_TESTED",
+      "evidence": "模块lease mock通过；实际HTTP/浏览器运行、取消重入、同尺度视觉和20轮循环未测。"
+    },
+    {
+      "criterion": "准确源码、资产UUID/尺寸/偏移、构建依赖/物理包体与真实收益可追溯；平台构建能力据实尝试，超过限制交真实差额而不擅自降画质。",
+      "result": "NOT_TESTED",
+      "evidence": "源SHA/UUID/尺寸/offset/staging可追溯；Creator实际UUID、压缩物理包体和GPU收益待测。"
+    }
+  ],
+  "assumptions": [
+    "以Master冻结的711输入和reader addendum为基线；仅纳入明确登记的Owner overrides/additions。",
+    "小游戏bundle根路径、subpackage方式根据本地Creator公开Builder选项配置，最终实际输出须核验。"
+  ],
+  "risks": [
+    "Creator import/构建及物理bundle包体未测。",
+    "浏览器/设备运行、20轮生命周期未测。",
+    "目前体积为未压缩staging源文件字节，不是发布包体或GPU收益。"
+  ],
+  "status": "IN_PROGRESS"
+}

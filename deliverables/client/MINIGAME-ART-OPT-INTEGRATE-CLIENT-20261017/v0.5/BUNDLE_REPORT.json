@@ -1,0 +1,22 @@
+{
+  "schemaVersion":1,
+  "status":"CREATOR_BUILDS_PASS_RUNTIME_MATRIX_PENDING",
+  "bundles":[
+    {"id":"world","root":"db://assets/bundles/world","dependencies":[]},
+    {"id":"tourist","root":"db://assets/bundles/tourist","dependencies":[]},
+    {"id":"shops","root":"db://assets/bundles/shops","dependencies":[]},
+    {"id":"dialogue","root":"db://assets/units/dialogue","dependencies":["world","shops"]},
+    {"id":"milk-tea","root":"db://assets/bundles/milk_tea","dependencies":["tourist"]}
+  ],
+  "manifestCoverage":{"productionPaths":419,"configuredRoots":5,"result":"PASS","evidence":"node tests/client/asset-integration/asset_integration.test.cjs /private/tmp/minigame-art-opt-integration-staging-v0.5-u04fix"},
+  "stagingBuildConfigs":{"web-mobile":"8e318d9f39fe3f6bb2e482f1cbca8fbe451e983df43f2c0c7b815c7cc50df61e","wechatgame":"6da8528b2783663d7bb6b13c8dd5e7a6f3f2c20e4bc16ed6ad683251a571526e","bytedance-mini-game":"b82235207d28f8f0a6eac906d07ca8c14858ff04a1fd85bbed0d97107da81418"},
+  "finalConfigHashes":{"web-mobile":"abf6342c622000eebf3eaaf147b0c6a4540f57945bb624e657c3e099cfb3b85f","wechatgame":"4008d403bb69cee513303b6d5a1dba51d1462a7545164834471574b2ee257a4d","bytedance-mini-game":"5dbb99fd87b8dfc06b2d22ed0b487235de2058327528852d0f3ed42620603113"},
+  "creatorCliBuilds":"PASS: Web 36 + Finished (9s); WeChat 36 + Finished (10s); ByteDance 36 + Finished (13s). Full logs preserved under evidence/.",
+  "nativeGameJsonSubpackages":"PASS: WeChat and ByteDance each emit 8 game.json subpackage roots: internal, resources, main, dialogue, milk-tea, shops, tourist, world.",
+  "webRuntimeU04":"PASS: two Root-run U04 reentries had no console errors; 20 mixed-page cycles show all post-exit resource counters zero and no console warn/error. Separate 320x568 menu drag test FAILED due reversed UILocation delta; full scan/matrix remains pending v0.6 correction.",
+  "packageBytes":{"web-mobile":{"files":803,"physicalBytes":38670260},"wechatgame":{"files":823,"physicalBytes":38706903,"mainPackageExcludingSubpackagesBytes":3256025},"bytedance-mini-game":{"files":821,"physicalBytes":38681249,"mainPackageExcludingSubpackagesBytes":3230374}},
+  "subpackagePhysicalBytes":{"internal":242484,"resources":{"wechatgame":44,"bytedance-mini-game":41},"main":405312,"dialogue":14333271,"milk-tea":3303228,"shops":5033970,"tourist":3442951,"world":8689618},
+  "packageHashInventory":"evidence/OUTPUT_FILE_HASHES.json; 2,447 generated files across three target outputs are listed individually. No build-output tree is copied into the repository.",
+  "packageSizeLimit":"Physical file sums are not upload/transfer size, account quota checks, or verified platform submissions.",
+  "deviceDprGpu":"NOT_TESTED"
+}

@@ -1,0 +1,120 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017",
+  "version": "v0.2",
+  "status": "STAGING_BYTES_MEASURED_CREATOR_OUTPUT_PENDING",
+  "scope": "staging目录中非meta文件字节；不是压缩包体、下载量、GPU显存或运行时峰值。",
+  "localBundles": [
+    {
+      "id": "world",
+      "root": "assets/bundles/world",
+      "priority": 1,
+      "isRemote": false,
+      "dependencies": [],
+      "stagedPayloadBytes": 8683383
+    },
+    {
+      "id": "tourist",
+      "root": "assets/bundles/tourist",
+      "priority": 1,
+      "isRemote": false,
+      "dependencies": [
+        "world"
+      ],
+      "stagedPayloadBytes": 3519227
+    },
+    {
+      "id": "shops",
+      "root": "assets/bundles/shops",
+      "priority": 1,
+      "isRemote": false,
+      "dependencies": [
+        "world"
+      ],
+      "stagedPayloadBytes": 5071916
+    },
+    {
+      "id": "dialogue",
+      "root": "assets/units/dialogue",
+      "priority": 1,
+      "isRemote": false,
+      "dependencies": [],
+      "stagedPayloadBytes": 14218104
+    },
+    {
+      "id": "milk-tea",
+      "root": "assets/bundles/milk_tea",
+      "priority": 1,
+      "isRemote": false,
+      "dependencies": [],
+      "stagedPayloadBytes": 3288508
+    }
+  ],
+  "mainBundle": {
+    "startupSceneOnly": "UnitSamples UUID 01e65005-5a46-45a1-9a16-820ac4b919ae",
+    "assetHardReferencesRemoved": {
+      "streetBasePrefab": 1,
+      "touristPrefab": 1,
+      "touristFrameManifest": 1,
+      "touristMountManifest": 1,
+      "touristAccessoryManifest": 1,
+      "touristBodyFrames": 40,
+      "touristAccessoryFrames": 4,
+      "shopPrefabs": 6
+    },
+    "useOptimizedBundles": true,
+    "creatorActualMainBundleBytes": "NOT_TESTED"
+  },
+  "bundleOutputBytes": "NOT_TESTED until Creator build",
+  "atlas": {
+    "implemented": false,
+    "reason": "首阶段保留独立纹理映射与采样边；无实际Atlas UV/GPU对照及收益数据，不强制打包。"
+  },
+  "imageSet": {
+    "approvedHistoricalRows": 83,
+    "uniquePhysicalDerivedPngs": 72,
+    "aliases": 10,
+    "unreferencedU05Removed": [
+      {
+        "path": "apps/client/assets/resources/u05_milk_tea/u05_b/CUSTOMER_GHOST.png",
+        "bytes": 133562
+      },
+      {
+        "path": "apps/client/assets/resources/u05_milk_tea/u05_b/STATIC_BARE.png",
+        "bytes": 1689016
+      },
+      {
+        "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_MILK.png",
+        "bytes": 914
+      },
+      {
+        "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TEA.png",
+        "bytes": 932
+      },
+      {
+        "path": "apps/client/assets/resources/u05_milk_tea/u05_b/LOCK_TOP.png",
+        "bytes": 735
+      }
+    ],
+    "unreferencedWorldRemoved": [
+      {
+        "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+        "bytes": 1281645,
+        "disposition": "EXCLUDED_APPROVED_BUT_UNREFERENCED_CROP_AND_LEGACY_IMAGE"
+      },
+      {
+        "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_l.png",
+        "bytes": 434325,
+        "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE"
+      },
+      {
+        "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_body_r.png",
+        "bytes": 435246,
+        "disposition": "EXCLUDED_UNREFERENCED_LEGACY_IMAGE"
+      }
+    ]
+  },
+  "measurementCaveats": [
+    "Creator可能重分配资源至main或其他bundle，须据实际输出/日志按UUID核验。",
+    "未测显存/峰值GPU；PNG源字节不等于显存。"
+  ]
+}

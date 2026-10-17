@@ -1,0 +1,58 @@
+{
+  "task_id": "MINIGAME-ART-OPT-IMPORT-TECH-20261017",
+  "state": "TECHNICAL_HANDOFF_READY_FOR_MASTER_REVIEW",
+  "approved_inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ART_GATE2_USER_APPROVAL.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-20261016-TECH/v0.1/TECH_DESIGN.md"
+  ],
+  "exact_resources": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/APPROVED_ASSET_HANDOFF_MAP.json",
+  "count": 83,
+  "counts": {
+    "new_approved_v02": 76,
+    "unchanged_approved_pilot": 7
+  },
+  "importer_conclusion": "Creator3.8.8真实none/custom六导入均覆盖rawWidth/rawHeight/offset；禁止靠手改.meta持久恢复原画布",
+  "chosen_approved_route": {
+    "method": "runtime derived SpriteFrame reset, without mutating imported cached SpriteFrame",
+    "input": "imported approved crop SpriteFrame/texture acquired through one owner lease",
+    "reset_fields": {
+      "texture": "importedFrame.texture",
+      "rect": "(0,0,cropWidth,cropHeight) for standalone; actual atlas rect if later separately reviewed atlas",
+      "originalSize": "frozen original W/H from approved handoff row",
+      "offset": "frozen x/y from approved handoff row",
+      "isRotate": false
+    },
+    "pivot": "all83 approved entries are (0.5,0.5); preserve existing Node/UITransform anchor, position, scale, foot/mounts; no second manual crop-position compensation",
+    "sprite": "SIMPLE/CUSTOM/trim=false, UITransform keeps original logical dimensions",
+    "packable": "keep static standalone cropping for first integration; no dynamic atlas/rotation until actual rect/UV/texture ownership validation",
+    "no_private_engine_write": "do not write _originalSize/_offset or patched library JSON; use public reset API",
+    "geometry_evidence": "ENGINE_GEOMETRY_RESULT.json executes actual engine methods on CPU, not UV/GPU/Creator scene rendering",
+    "before_first_use": "construct derivative after asset load and before assigning sprite; fail closed if manifest/hash/dimensions mismatch; keep original approved frame mapping available",
+    "lifetime": "cache derived frame by canonical texture/path/revision+originalSize+offset+rect; each page has own lease. Clear Sprite.spriteFrame references/destroy nodes, release derived frame at zero consumers, then release imported source through canonical ModuleAssets; never release shared texture directly or mutate globally cached frame",
+    "per_module_checks": [
+      "shops body/sign original1024 square and ground_contact; test all6/mirror",
+      "tourist all40 action IDs/order/durations and foot/accessories remain separate despite same texture alias; test extrema/cycle",
+      "scene keep source instance dimensions/order/mirror, far eye patch sourceRect independent, water motion original units",
+      "U05 16 component original canvas and LOCK/BTN as well as CUP trim=false; keep nine-slice/font/sourceRect excluded"
+    ]
+  },
+  "bundle_migration": "deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/v0.1/BUNDLE_REFERENCE_MAP.json",
+  "implementation_sequence": [
+    "Master internal review of this handoff and required Client kickoff gate; current pending Client delivery is not an approved upstream input",
+    "Client own task retains current source hash and old resource backup/UUID mapping",
+    "Integrate approved83 in isolated branch/task by one module, preserve actual original meta UUIDs; probe UUIDs never copied to production",
+    "Replace startup hard refs with stable IDs and explicit dependency leases; migrate resources paths into single local owner bundle",
+    "Rebuild Creator and re-read production UUID/frame reset diagnostics plus bundle dependency/physical placement report",
+    "Serve exact new output via HTTP and compare same background/viewport/scale to approved Art, test mirror/extrema/eye/water/U05",
+    "Only after checks accept migration; failures revert current module mapping to approved original without deleting history"
+  ],
+  "formal_upstream_limit": "Unapproved current Client implementation is read-only environment/reference evidence, not required approved implementation contract; reuse only after its user gate or reimplement from approved Tech contract under Master task",
+  "gates_and_limits": [
+    "No new art production or visual semantics",
+    "No CDN, no shrink/dropframes, no purchase/new large dependency",
+    "Local actual platform subpackage generation/limits and GPU memory/DrawCall are NOT_TESTED",
+    "Runtime/UV/device evidence still required; CPU geometry does not stand for scene rendering",
+    "If runtime resource ownership/API beyond existing contract or bundle migration changes semantics, report difference to Master before execution"
+  ],
+  "contract_delta": "No new product/visual/interface policy; runtime reset fallback already explicitly authorized by approved TECH_DESIGN. Exact local bundle planned directory names are proposed handoff detail, not current moved assets."
+}

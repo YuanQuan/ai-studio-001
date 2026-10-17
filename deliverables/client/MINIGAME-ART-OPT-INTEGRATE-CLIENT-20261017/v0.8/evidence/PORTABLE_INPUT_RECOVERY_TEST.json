@@ -1,0 +1,75 @@
+{
+  "result": "PASS",
+  "sourceRootKind": "TEMPORARY_NON_GIT_CLEAN_LIKE_INPUT_TREE",
+  "excluded": {
+    "dsStore": 9,
+    "editorProfiles": 13,
+    "total": 22
+  },
+  "includedFrozenInputCount": 689,
+  "recoveries": [
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_layout.ts",
+      "sourceKind": "AUTHORIZED_FROZEN_SNAPSHOT",
+      "sha256": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+      "headSha256": "3153795d853948ea3a97a98ba59608c5abdee9ad0b6cde926e682ae777f50bb8"
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png",
+      "sourceKind": "AUTHORIZED_FROZEN_SNAPSHOT",
+      "sha256": "39bb2ef51072ee99aac4edd0b04728f75420e9087bb732c27c64e7eafddc6c29",
+      "headSha256": "36cf1106837bd6fa760c471df484de07c1997fa75de268878e2a09174a3d2277"
+    },
+    {
+      "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png",
+      "sourceKind": "AUTHORIZED_FROZEN_SNAPSHOT",
+      "sha256": "854d855ac88d3030078ae7c25b34a0406d9087c99ca5f73f4a1ae851ee846a26",
+      "headSha256": "cf4d30b9a036cd5627dc015dab756e78a10952e684c98cd7afc6a21473fe0204"
+    },
+    {
+      "path": "apps/client/package.json",
+      "sourceKind": "AUTHORIZED_FROZEN_SNAPSHOT",
+      "sha256": "3382ee4d451fe205b37501db2fc4b4d0735c2cc9fc5b783cc3abf447d5e21b2a",
+      "headSha256": "ae7329118191bf64a9f2bc747e300a72e98c0e1850376ea6628594412467f1b3"
+    }
+  ],
+  "payload": {
+    "files": 667,
+    "bytes": 36266325,
+    "inventorySha256": "ea20600a5423fa653850746b749dde4d1ba42aa0b564bcca235f06b13b19d172",
+    "baselineEqualsCleanLike": true,
+    "baselineEqualsPortableStage": true
+  },
+  "unauthorizedNonRecoveryDriftRejected": {
+    "path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_far_l.png",
+    "result": "PASS",
+    "diagnostic": "冻结输入漂移"
+  },
+  "baselineStage": "/private/tmp/minigame-art-opt-integration-staging-v0.7-u01fix",
+  "portableStage": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable",
+  "authorization": {
+    "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/portable-inputs/PORTABLE_INPUT_RECOVERY_AUTHORIZATION.json",
+    "sha256": "76a6c02f6eb60736d1f921a400e7c1e76ce1c43c4374eaf3cee4fc0262ecd334",
+    "bytes": 3372
+  },
+  "producerDependencyAudit": {
+    "path": "deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/v0.1/FROZEN_INPUT_GIT_DEPENDENCIES.json",
+    "sha256": "fe747ec4f9a8a410356b735c02a88051415b7902b4a8a343ca5601c36b42b3ef",
+    "bytes": 17843
+  },
+  "generator": {
+    "path": "apps/client/tools/asset-integration/build_staging.cjs",
+    "sha256": "02c1bb3147a4189e92cc629213b628b757374e79f258166f68f2cc5fca438280",
+    "bytes": 31451
+  },
+  "test": {
+    "path": "apps/client/tools/asset-integration/portable_input_recovery.test.cjs",
+    "sha256": "c1718afc92874f9b7baa03c1bae87f555349a97050e6801787db2fe3f1d771a3",
+    "bytes": 9835
+  },
+  "stageManifest": {
+    "path": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable/STAGING_INPUT_MANIFEST.json",
+    "sha256": "77ab51753aa906f2dbc78cfe9b9af18cbcc94aedb3de7ee7ad121ad252d6a7d0",
+    "bytes": 240118
+  }
+}

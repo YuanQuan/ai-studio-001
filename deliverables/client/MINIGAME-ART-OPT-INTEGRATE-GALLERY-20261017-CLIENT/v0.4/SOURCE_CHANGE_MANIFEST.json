@@ -1,0 +1,63 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "version": "v0.4",
+  "reason_for_revision": "真实Web小屏菜单拖动方向反向；审计发现Gallery和U01调节面板共七处相同反向式。本版修复实际触拖方向并保留点击隔离。",
+  "runtime_failure_evidence": {
+    "report": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/GESTURE_FAILURE_REPORT.md",
+    "menu_drag_no_move": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/menu-bottom-320.jpg",
+    "reverse_drag_reveals_items": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/menu-reversed-drag.jpg",
+    "pre_fix_runtime_result": "FAIL"
+  },
+  "changed_sources": [
+    {
+      "path": "apps/client/assets/UnitSampleGallery.ts",
+      "prechange_sha256": "00fc815b9edec3b9c1dcd3c6ed00ee1d38fd9243bbe8d0e752604fdc4e1d944b",
+      "candidate_sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+      "changes": "以currentY-previousY更新菜单Touch/Mouse、游客托盘Touch/Mouse、U00调节面板、U04阅读面板；菜单增加沿用现有wheel方向的原生滚轮事件。提取统一限幅fingerScrollOffset计算。保持阈值、取消、点击隔离。"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_layout_editor.ts",
+      "prechange_sha256": "612b253e8c0fa2fa9d52022eb721ca8838bbac2946d304428b33e9db38720d01",
+      "candidate_sha256": "184f3610ffbd298e10dad79ec83e179f3e859b1a2fd3e9b612046b3180951a46",
+      "changes": "U01触控面板使用currentY-previousY计算，并抽出applyPanelFingerMove用于有效方法探针；保留移动阈值、限幅、布局更新和按钮拖动隔离。"
+    },
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/tests/scroll_direction_probe.cjs",
+      "candidate_sha256": "14dac9e8b06c4128937f0ce190bc58d7ac155a097f1364dcfbb1c4015cb5ac1d",
+      "changes": "新增基于Creator TypeScript转译的Gallery/U01实际方法探针，覆盖双向拖动、offset边界、游客触控/鼠标、拖动后不误点及U00/U04/U01方向接线。"
+    }
+  ],
+  "unchanged_sources": [
+    {
+      "path": "apps/client/assets/framework/asset-integration/gallery_asset_session.ts",
+      "sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0"
+    },
+    {
+      "path": "apps/client/assets/labs/u01/sakura_v03_environment.ts",
+      "sha256": "7959af0c2f64600cc2624b10d07590c5c2f130371ded33d93f0ff3df94f1cc78"
+    },
+    {
+      "path": "apps/client/assets/framework/ui/scrollable_text_panel.ts",
+      "sha256": "8f54010f550d69a4c82da03b61eedfba577c13e268866f237b5b1bb8d5aa4567",
+      "note": "触拖方向此前正确，本版未修改。"
+    },
+    {
+      "path": "apps/client/assets/labs/u05/u05_accessibility.ts",
+      "note": "U05仅使用已有上下按钮，本版未修改。"
+    }
+  ],
+  "prechange_snapshot": {
+    "gallery": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/evidence/prechange/UnitSampleGallery.ts",
+    "gallery_sha256": "00fc815b9edec3b9c1dcd3c6ed00ee1d38fd9243bbe8d0e752604fdc4e1d944b",
+    "u01": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.4/evidence/prechange/sakura_layout_editor.ts",
+    "u01_sha256": "612b253e8c0fa2fa9d52022eb721ca8838bbac2946d304428b33e9db38720d01"
+  },
+  "validation": {
+    "creator_typescript_4_9_5_semantic_check": "PASS",
+    "scroll_direction_actual_method_probe": "PASS",
+    "u04_reentry_probe": "PASS",
+    "module_asset_session_probe": "PASS",
+    "new_creator_web_build": "NOT_TESTED_PENDING_ROOT_BUILD",
+    "new_iab_menu_and_panel_touch": "NOT_TESTED_PENDING_ROOT_BUILD"
+  }
+}

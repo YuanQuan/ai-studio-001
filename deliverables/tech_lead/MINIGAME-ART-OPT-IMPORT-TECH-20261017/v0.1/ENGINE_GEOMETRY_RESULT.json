@@ -1,0 +1,155 @@
+{
+  "result": "PASS",
+  "method": "Execute unmodified Creator3.8.8 SpriteFrame.reset, _calcTrimmedBorder and simple.updateVertexData method bodies with plain CPU component doubles; UV calculation/texture/GPU not executed",
+  "engine_files": [
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/cocos/2d/assets/sprite-frame.ts",
+    "/Applications/Cocos/Creator/3.8.8/CocosCreator.app/Contents/Resources/resources/3d/engine/cocos/2d/assembler/sprite/simple.ts"
+  ],
+  "results": [
+    {
+      "asset": "tex_sakura_rr_far_l",
+      "actual_vertices": [
+        {
+          "x": -768,
+          "y": -360
+        },
+        {
+          "x": 768,
+          "y": -360
+        },
+        {
+          "x": -768,
+          "y": 292
+        },
+        {
+          "x": 768,
+          "y": 292
+        }
+      ],
+      "expected_vertices": [
+        {
+          "x": -768,
+          "y": -360
+        },
+        {
+          "x": 768,
+          "y": -360
+        },
+        {
+          "x": -768,
+          "y": 292
+        },
+        {
+          "x": 768,
+          "y": 292
+        }
+      ],
+      "pass": true,
+      "original_size_after_reset": [
+        1536,
+        720
+      ],
+      "offset_after_reset": [
+        0,
+        -34
+      ]
+    },
+    {
+      "asset": "U03_SHOP_01_BODY",
+      "actual_vertices": [
+        {
+          "x": -375,
+          "y": -392
+        },
+        {
+          "x": 374,
+          "y": -392
+        },
+        {
+          "x": -375,
+          "y": 232
+        },
+        {
+          "x": 374,
+          "y": 232
+        }
+      ],
+      "expected_vertices": [
+        {
+          "x": -375,
+          "y": -392
+        },
+        {
+          "x": 374,
+          "y": -392
+        },
+        {
+          "x": -375,
+          "y": 232
+        },
+        {
+          "x": 374,
+          "y": 232
+        }
+      ],
+      "pass": true,
+      "original_size_after_reset": [
+        1024,
+        1024
+      ],
+      "offset_after_reset": [
+        -0.5,
+        -80
+      ]
+    },
+    {
+      "asset": "UG_GHOST_01_WALK_01",
+      "actual_vertices": [
+        {
+          "x": -165,
+          "y": -171
+        },
+        {
+          "x": 160,
+          "y": -171
+        },
+        {
+          "x": -165,
+          "y": 188
+        },
+        {
+          "x": 160,
+          "y": 188
+        }
+      ],
+      "expected_vertices": [
+        {
+          "x": -165,
+          "y": -171
+        },
+        {
+          "x": 160,
+          "y": -171
+        },
+        {
+          "x": -165,
+          "y": 188
+        },
+        {
+          "x": 160,
+          "y": 188
+        }
+      ],
+      "pass": true,
+      "original_size_after_reset": [
+        512,
+        512
+      ],
+      "offset_after_reset": [
+        -2.5,
+        8.5
+      ]
+    }
+  ],
+  "gpu_runtime": "NOT_TESTED"
+}

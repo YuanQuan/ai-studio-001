@@ -1,0 +1,47 @@
+{
+  "task_id": "MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT",
+  "owner": "client",
+  "summary": "修复U01调节面板触摸结束/取消清理：拖动结束后下一次关闭或普通点击立即生效；拖动/取消本身不误触。只修改U01源，Gallery v0.4保持不变。Creator TS语义及实际source按钮回调序列探针通过，IAB复测待Root新构建。",
+  "artifacts": [
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/IMPLEMENTATION.md",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/SOURCE_CHANGE_MANIFEST.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/OWNER_VERIFICATION.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/u01_button_gesture_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/tests/scroll_direction_probe.cjs",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/v0.5/evidence/prechange/"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "只改Gallery、新session helper、sakura_v03_environment.ts的页面预载帧入口/必要meta，以及Master明确授权的U01调节面板滚动手势和有效测试，不改已验证UI布局、动作/时序、原素材或layout数据；轻量Brief与Tech对齐可追溯。",
+      "result": "PASS",
+      "evidence": "本次只改Master授权范围内的U01调节面板button/viewport触摸结束及取消清理，并新增有效方法探针；Gallery保持v0.4 SHA e403e977…，session、environment、meta、素材、layout和布局不变。保留v0.4源快照及本次失败证据。"
+    },
+    {
+      "criterion": "生产Scene useOptimizedBundles=true时菜单只依模块定义、不依未加载Inspector字段；进入U00/U01/U02/U03/U04/U05按依赖取得资源并原子显示，失败可重试、旧generation不迟到绑定。",
+      "result": "NOT_TESTED",
+      "evidence": "本次只修U01按钮pointer状态，不改页面资源接入逻辑；当前候选尚未Creator Web重建及IAB复测。"
+    },
+    {
+      "criterion": "同一Gallery runtime使用一个ModuleAssets与DerivedResolver，U04复用此池；取消/清除Sprite与页面强引用后释放，依赖和共享纹理不提前销毁，20循环有效方法/实际运行证据区分。",
+      "result": "NOT_TESTED",
+      "evidence": "session源码未改，既有方法探针通过；v0.5 U01生命周期修复候选尚未重新实跑Web循环，故当前候选的实际运行结果待Root验证。"
+    },
+    {
+      "criterion": "world/shops Prefab克隆在加入场景前用缓存派生帧替换；先CUSTOM/trim=false保留原UIT/anchor/position/scale，游客40逻辑帧和挂点不改变；未裁特殊资源保持。",
+      "result": "PASS",
+      "evidence": "U01通用button触摸生命周期之外的Prefab/派生帧/游客帧与挂点源码未修改；session有效方法回归继续通过。"
+    },
+    {
+      "criterion": "提供per-page loadPageResource/releasePageResource给U01/U05，legacy原工程维持原资源路径行为，生产路径不回退隐藏加载错误；准确源码及验证交Tech，实际集成由父Task统一CLI/IAB。",
+      "result": "PASS",
+      "evidence": "Provider及资源session源码未修改；全项目Creator TypeScript 4.9.5语义检查和session方法回归通过。新候选统一构建/IAB由父Task执行。"
+    }
+  ],
+  "assumptions": [
+    "拖动/取消手势只抑制当前回调；新TOUCH_START会开始一轮新手势，因此不影响后续普通tap。"
+  ],
+  "risks": [
+    "候选尚未Creator重建或IAB实测；320px真实拖动后直接关闭、取消后结束、普通tap恢复需Root验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

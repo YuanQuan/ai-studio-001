@@ -1,0 +1,91 @@
+{
+  "version": "v0.6",
+  "source": "Root actual IAB runtime report; evidence images are stored in Master browser-integration-v06.",
+  "viewport": "320x568 CSS px",
+  "checks": [
+    {
+      "name": "Menu upward drag to lower entries",
+      "result": "PASS",
+      "evidence": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-up-drag-bottom-320.jpg",
+        "sha256": "e432baaad5c2b55e6bff1c1d0d9fb860d4c7bb11a51dd46e50ed4c60a76c6eaf",
+        "description": "Menu after upward drag reaches bottom entries"
+      }
+    },
+    {
+      "name": "Menu downward drag back to top",
+      "result": "PASS",
+      "evidence": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-down-drag-top-320.jpg",
+        "sha256": "be23f9fffb160ddd4dee8dc79229fa00309a3d3d333961a40a1fa0a51a049020",
+        "description": "Downward drag returns to top"
+      }
+    },
+    {
+      "name": "Menu wheel reaches lower entries",
+      "result": "PASS",
+      "evidence": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-wheel-bottom-320.jpg",
+        "sha256": "e432baaad5c2b55e6bff1c1d0d9fb860d4c7bb11a51dd46e50ed4c60a76c6eaf",
+        "description": "Wheel reaches bottom entries"
+      }
+    },
+    {
+      "name": "Dragging does not activate a menu entry accidentally",
+      "result": "PASS",
+      "evidence": "Root reports actual touch checks with no accidental activation; screenshot refs show the top/bottom states."
+    },
+    {
+      "name": "Enter U05 from small-screen menu and submit recipe",
+      "result": "PASS",
+      "evidence": "Root reports the recipe flow reaches order 2/3. Screenshots: deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U05-from-small-menu-320.jpg; deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U05-order2-320.jpg"
+    },
+    {
+      "name": "Full remaining touch/scroll panel coverage and page exit/release loop",
+      "result": "NOT_TESTED",
+      "evidence": "Root is continuing these runtime checks; not inferred from the menu/U05 sample."
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-top-320.jpg",
+      "sha256": "be23f9fffb160ddd4dee8dc79229fa00309a3d3d333961a40a1fa0a51a049020",
+      "description": "Initial top of menu"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-up-drag-bottom-320.jpg",
+      "sha256": "e432baaad5c2b55e6bff1c1d0d9fb860d4c7bb11a51dd46e50ed4c60a76c6eaf",
+      "description": "Menu after upward drag reaches bottom entries"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-down-drag-top-320.jpg",
+      "sha256": "be23f9fffb160ddd4dee8dc79229fa00309a3d3d333961a40a1fa0a51a049020",
+      "description": "Downward drag returns to top"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/menu-wheel-bottom-320.jpg",
+      "sha256": "e432baaad5c2b55e6bff1c1d0d9fb860d4c7bb11a51dd46e50ed4c60a76c6eaf",
+      "description": "Wheel reaches bottom entries"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U05-from-small-menu-320.jpg",
+      "sha256": "d6bc2d45739055bc260d0e622ddb4cf4000d24b5b6f25dac1040e8a5e537a7fa",
+      "description": "U05 entered from small-screen menu"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U05-order2-320.jpg",
+      "sha256": "a146e12519d9d43a293cc0cb8a7e8ecdcfe9061f3152f6561f0371bd66e5bd4b",
+      "description": "Recipe submission reaches order 2/3"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U02-drag-bottom-320.jpg",
+      "sha256": "54a8f2c135cc6bed0cf7d41f2da77007ef3a81bfd0b7f7118cbbf681ea4fbbbf",
+      "description": "U02 drag panel reaches lower content"
+    },
+    {
+      "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v06/U02-drag-return-and-walk-320.jpg",
+      "sha256": "6b5582c345d297437bb71b7856b309c6119e38e5c951b793db7a68c1efee7b9f",
+      "description": "U02 returns after drag"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017",
+  "owner": "art",
+  "summary": "仅提交小批压缩对照样本制作方案，等待专业Review与新Gate1；未生成或修改图片。",
+  "artifacts": [
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "真实物理包体与上传/账号结论分开，列默认20MB参考下的差额，不承诺压缩后必达标。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md：物理口径及两种20MB差额、无必达承诺。"
+    },
+    {
+      "criterion": "样本选取覆盖包体大项和可见细节，逐件登记冻结来源路径/hash/UUID及已知审批来源；不消费其他会话新未批图片。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.md：6项真实来源SHA/原UUID；人物具体bundle Gate2、字体保留subset批准及实际TTF/OFL SHA已补核。"
+    },
+    {
+      "criterion": "方案列可复核视觉锚点、同背景同视窗同尺度对照、技术兼容待测项、停止条件、负责人和制作/静态验证预算，引用现行效果继承规范。",
+      "result": "PASS",
+      "evidence": "ART_BRIEF.md、PRODUCTION_PLAN.md及ASSET_MANIFEST.md：全RGBA含隐藏RGB精确、WebP exact参数及实际同采样回归；同尺度、兼容待测、预算和停止条件。"
+    },
+    {
+      "criterion": "不输出图片或改变既有Art身份，方案待用户批准后方可按适用同批Art/Tech预签制作；样本另需具体版本批准才能正式接入。",
+      "result": "PASS",
+      "evidence": "四件仅文档交付；PRODUCTION_PLAN.md审批链及旧身份保护。"
+    }
+  ],
+  "assumptions": [
+    "20MiB与十进制20MB并列作参考，平台实际口径待核。"
+  ],
+  "risks": [
+    "本新压缩方案Gate1未批准，不能继承原资源批准为候选制作或接入授权；正式分发完整OFL待后续核验。",
+    "WebP导入、双平台兼容及实际收益NOT_TESTED。",
+    "不承诺压缩样本足以达到20MB。",
+    "WebP lossless未启用-exact或API exact=1可能改变隐藏RGB；任一全RGBA差异仅诊断，不可记生产无损通过。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
