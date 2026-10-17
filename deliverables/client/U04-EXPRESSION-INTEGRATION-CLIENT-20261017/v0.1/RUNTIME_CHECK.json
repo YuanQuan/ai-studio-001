@@ -1,0 +1,94 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+  "version": "v0.1",
+  "status": "PASS_SCOPED_WEB_RUNTIME_READY_FOR_USER_REVIEW",
+  "build_identity": {
+    "creator_version": "3.8.8",
+    "platform": "web-mobile",
+    "build": "v2_recovery",
+    "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "source_manifest_sha256": "b6c07c976475e95b3657e73777188b704a7c63c49542f897af7fc083ee2a1d5c",
+    "output_manifest_sha256": "7758c3fdee91371e059652d3d1d83c0cb84869f4973af77c278d1ca87acce626",
+    "settings_sha256": "0710ee9bb6ed057ba75cad6d41b44b0fd2febe6a5c7289ca39adfdbcc39f6464",
+    "http_url": "http://127.0.0.1:8765/",
+    "http_server_pid": 3333,
+    "output_root": "/private/tmp/u04-expression-integration-client-20261017-v2/build-output/u04-expression-integration-client-web-mobile-recovery"
+  },
+  "runtime_verification": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/RUNTIME_VERIFICATION.json",
+  "checks": [
+    {
+      "criterion": "九处目标/共享层状态画面核对",
+      "status": "PASS",
+      "owner": "master",
+      "evidence": [
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_runtime_five_state_contact.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_runtime_five_state_contact.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_runtime_five_state_contact.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_runtime_five_state_contact.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_runtime_five_state_contact.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_runtime_five_state_contact.png"
+      ],
+      "result": "Master/Tech逐图核验六组联系图；AC额发断带消除、AJ悲伤眉发接续、AD旧眉未复显、XJ青眉/镜圈分离；AC黑眼圈和姿态保留。"
+    },
+    {
+      "criterion": "30个新增状态加载/切换",
+      "status": "PASS",
+      "owner": "master",
+      "evidence": [
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/thirty_state_actions.json",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/U04_30_STATE_ACTUAL_RUNTIME_CONTACT.png"
+      ],
+      "result": "六组各5态，30/30通过真实可见Canvas控件切换及截图，三层就绪。"
+    },
+    {
+      "criterion": "完整90态加载巡检与连续切换",
+      "status": "PASS",
+      "owner": "master",
+      "evidence": [
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_sweep90_pass_90of90_zero_failed_7042ms.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/rapid_switch_final_AJ_S2_sad.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/rapid_switch_settled_AJ_S2_sad.png"
+      ],
+      "result": "90/90通过，0失败，7042ms；快速切换后AJ_S2 sad稳定。"
+    },
+    {
+      "criterion": "三轴保留/返回重入/窄屏实际检查",
+      "status": "PASS",
+      "owner": "master",
+      "evidence": [
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_base_AD_S0_sad.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_expression_only_AD_S0_surprised.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_manager_only_AJ_S0_surprised.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_stage_only_AJ_S2_surprised.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/return_menu_after_switches.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/reentry_loaded_MT_S0.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/mobile_390x844_AD_S0_surprised.png",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/mobile_390x844_XJ_S0_surprised.png"
+      ],
+      "result": "逐轴变化时其余两轴保留；一次返回/重入成功；390×844实际切换AD/XJ，状态与布局可见。"
+    },
+    {
+      "criterion": "HTTP加载错误/控制台核查",
+      "status": "PASS",
+      "owner": "master",
+      "evidence": [
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_console.json",
+        "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_console_warn_error.json"
+      ],
+      "result": "v2重载起点过滤历史v1问题后warning/error均为0。"
+    }
+  ],
+  "platform_limits": [
+    "仅Web web-mobile构建和浏览器视窗验证；未测微信/抖音SDK、原生平台、真机DPR2/3、GPU峰值、内存或DrawCall专项。",
+    "本单元示例由Owner自证，无QA Agent正式QA结论。"
+  ],
+  "prior_failure": {
+    "attempt": "v1",
+    "result": "FAILED_RUNTIME",
+    "evidence": [
+      "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v1_failed_bundle_load.png",
+      "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v1_console_errors.json"
+    ],
+    "recovery_count": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "at_utc": "2026-10-17T09:02:08.094056+00:00",
+  "old_stage": "/private/tmp/minigame-art-opt-integration-final-v0.8-portable",
+  "readonly_comparison": [
+    {
+      "path": "assets/UnitSampleGallery.ts",
+      "current_sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+      "old_staged_sha256": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+      "same": true
+    },
+    {
+      "path": "assets/UnitSampleGallery.ts.meta",
+      "current_sha256": "c8cb85b221fdb6a6d412506a0cc3cf9be820435942fbe5f870e5f118b9c89123",
+      "old_staged_sha256": "c8cb85b221fdb6a6d412506a0cc3cf9be820435942fbe5f870e5f118b9c89123",
+      "same": true
+    },
+    {
+      "path": "assets/UnitSamples.scene",
+      "current_sha256": "05efb099721c0490867a70dfc889ea40a0206902990b8723545a639a1b758dfb",
+      "old_staged_sha256": "d2c300470a8eda6acbc91974213bca8546e41d3631dba451cdc2db7b80a44659",
+      "same": false
+    },
+    {
+      "path": "assets/framework/module-assets/module_assets.ts",
+      "current_sha256": "08776264692d93888212a57340118de511e9bc5faeb593bd265fc83797bf8641",
+      "old_staged_sha256": "08776264692d93888212a57340118de511e9bc5faeb593bd265fc83797bf8641",
+      "same": true
+    },
+    {
+      "path": "assets/framework/module-assets/cocos_bundle_loader.ts",
+      "current_sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218",
+      "old_staged_sha256": "bd24e29665bc2863ec982a1e4bab22786f18fcab8c471d68dbfca90a429b1218",
+      "same": true
+    },
+    {
+      "path": "assets/framework/asset-integration/gallery_asset_session.ts",
+      "current_sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0",
+      "old_staged_sha256": "6bd4115fb01a31e2db8247fe324fb9e8f1eaa13a4db8f383d96e3ff29fe6b6e0",
+      "same": true
+    }
+  ],
+  "failure": "v1 plain snapshot omitted existing staging transformation; only internal/main/dialogue bundles emitted, world missing",
+  "recovery_boundary": "新隔离v2重用既有stage结构和已批准资源，覆盖现有冻结源码及获批42 PNG，保留旧stage/v1、原工程其他差异；只一次有据恢复build"
+}

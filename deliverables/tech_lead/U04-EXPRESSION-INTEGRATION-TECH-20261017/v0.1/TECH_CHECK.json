@@ -1,0 +1,101 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-TECH-20261017",
+  "version": "v0.1",
+  "status": "V2_RUNTIME_PASS",
+  "approved_art_manifest_sha256": "4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d",
+  "checks": [
+    {
+      "item": "Gate2授权身份",
+      "result": "PASS",
+      "evidence": "Master批准的Art packet/manifest/map/30态板四个SHA与当前文件逐个匹配；批准仅六阶段30态加base/front。"
+    },
+    {
+      "item": "42 native输入与几何",
+      "result": "PASS",
+      "evidence": "Art manifest六阶段42张native PNG的尺寸与模式匹配登记；旧Client handoff_normalized六组source rect、base/face/front offset与Art v0.3实片尺寸及源几何一致；AD仅使用native PNG。"
+    },
+    {
+      "item": "旧UUID/meta基线",
+      "result": "PASS",
+      "evidence": "旧RESOURCE_IMPORT_MAP登记的42个目标路径均实存；当前42个.meta SHA与旧登记完全一致。"
+    },
+    {
+      "item": "Client本轮目标PNG/导入map",
+      "result": "PASS",
+      "evidence": "独立复核Client目标42/42 PNG SHA等于Art manifest，42目标.meta SHA与旧登记相同；其余60 face和24 portrait集合摘要与接入前一致；Gallery.ts及u04_module_registry.ts SHA保持开工基线。Client RESOURCE_IMPORT_MAP列42稳定ID/源路径SHA/目标路径UUID/尺寸，工程mapping六组integration_provenance与批准manifest SHA一致，handoff_normalized几何及其他12组保持旧值。normalized内旧base/front路径属于原几何来源，本轮生产来源以顶层当前资源字段、integration_provenance及RESOURCE_IMPORT_MAP为准；需在实现说明明确。"
+    },
+    {
+      "item": "Creator3.8.8隔离新构建及Web身份",
+      "result": "PASS",
+      "evidence": "v1构建虽CLI exit36但IAB缺四bundle失败，已保留反证。唯一恢复v2取旧成熟bundle stage全新隔离副本、覆盖本轮dialogue全树；671文件SOURCE_MANIFEST逐条SHA0错，42ArtPNG/90face/31TS/六组几何核验通过。v2 Creator任务日志完成，输出projectBundles含internal/main/dialogue/milk-tea/shops/tourist/world，四旧缺bundle均有config/index，dialogue native42 UUID路径SHA0错。v2 index模板SHA与v1相同，需用v2 settings/bundle/source快照身份区别；Master IAB以该v2输出实际运行并完成30态截图与90态巡检。"
+    },
+    {
+      "item": "同版实际运行九圈态/30新态/90巡检",
+      "result": "PASS",
+      "evidence": "v1 IAB缺bundle失败反证保留。v2 Master以同一HTTP输出、可见Canvas控制逐态点击得到六组各五态30张1280×720截图和30事件，Tech独立审阅六组contact与九个用户圈态，眉发/眼镜与表情切换稳定；可见UI巡检显示90/90、0失败、7042ms。连续切换AJ sad结束/稳定截图和返回菜单再进入MT原态截图均显示目标界面正常。该证据为Web单元示例视觉与交互巡检，非目标设备性能或正式QA结论。 Master同版IAB v2_console_warn_error.json为空数组。"
+    }
+  ],
+  "protected_code_baseline_sha256": {
+    "apps/client/assets/UnitSampleGallery.ts": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+    "apps/client/assets/framework/module-assets/u04_module_registry.ts": "54a557162df6fd843a6b95cd84f5dd696aa15f917226c62c30f93f3d888a79a5"
+  },
+  "unaffected_png_baseline": {
+    "method": "sort filenames; join each filename + space + file sha256 with LF; SHA256 of UTF-8 joined string",
+    "faces_other_60_count": 60,
+    "faces_other_60_aggregate_sha256": "7328bc24f0fea129c3029e4e591706ca2ad605b14c5562118a4df1a903c5a2dc",
+    "portraits_other_24_count": 24,
+    "portraits_other_24_aggregate_sha256": "a54a472c61fea6ff36722d9134f4fed1d39de369f32225f4f2396c6505da335f"
+  },
+  "snapshot_prebuild_check": {
+    "snapshot_manifest_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/build/source_snapshot/SOURCE_SNAPSHOT_MANIFEST.json",
+    "file_count": 722,
+    "approved_42_png_in_snapshot_sha_mismatch": 0,
+    "snapshot_mapping_sha256": "0f3f1c2fa957c5bcd2c750b961ed43b750a1ee2a38f1552301d9f4ef212152ea",
+    "live_mapping_same_at_check": true,
+    "protected_gallery_sha256_in_snapshot": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3"
+  },
+  "build_identity": {
+    "snapshot_manifest_sha256": "fd7626ba25f3dde96c41bc36f57b6605d9bcbec0666f67a08a0a7e55a5f018b8",
+    "build_config_sha256": "0acab42ab04b84014123a2c4553a70ade4a5af5b47e3620c3b7c7932e4d995ae",
+    "output_index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "output_native_42_sha_mismatch": 0,
+    "creator_exit_code": 36
+  },
+  "recovery_diagnosis": {
+    "root_cause": "v1隔离快照没有assets/bundles/world,tourist,shops,milk_tea目录；复用的配置以这些根导出bundle，实际只生成internal/main/dialogue。当前world资源分在units/background(prefabs)与resources/sakura_v03，不能仅换一个root修复。",
+    "read_only_evidence": "Creator输出assets只有internal/main/dialogue；旧成熟stage /private/tmp/minigame-art-opt-integration-final-v0.8-portable 含完整bundle树、优化Scene；它与当前工程全部31个TS SHA一致且六组U04 handoff_normalized几何完全一致。",
+    "single_recovery_boundary": "复制旧stage到全新v2隔离副本，覆盖当前完整dialogue目录（42新生产PNG与其余60态及meta/map），核42 Art SHA及代码身份，使用已有bundle目录与新输出路径仅再构建一次；不改live apps非scope文件、不修改旧stage。"
+  },
+  "recovery_build_identity": {
+    "source_manifest_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/build/recovery_stage_v2/SOURCE_MANIFEST.json",
+    "source_manifest_file_count": 671,
+    "source_manifest_mismatch": 0,
+    "output_root": "/private/tmp/u04-expression-integration-client-20261017-v2/build-output/u04-expression-integration-client-web-mobile-recovery",
+    "settings_sha256": "0710ee9bb6ed057ba75cad6d41b44b0fd2febe6a5c7289ca39adfdbcc39f6464",
+    "project_bundles": [
+      "internal",
+      "main",
+      "dialogue",
+      "milk-tea",
+      "shops",
+      "tourist",
+      "world"
+    ],
+    "output_dialogue_native_42_sha_mismatch": 0
+  },
+  "runtime_evidence": {
+    "root": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime",
+    "thirty_state_events": "thirty_state_actions.json",
+    "thirty_state_contact": "U04_30_STATE_ACTUAL_RUNTIME_CONTACT.png",
+    "sweep_90": "v2_sweep90_pass_90of90_zero_failed_7042ms.png",
+    "rapid_switch": [
+      "rapid_switch_final_AJ_S2_sad.png",
+      "rapid_switch_settled_AJ_S2_sad.png"
+    ],
+    "return_reentry": [
+      "return_menu_after_switches.png",
+      "reentry_loaded_MT_S0.png"
+    ],
+    "console": "v2_console_warn_error.json：空数组，实际IAB记录无warn/error；v1_console_errors.json保留失败反证。"
+  }
+}

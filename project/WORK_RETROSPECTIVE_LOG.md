@@ -1,3 +1,8 @@
+<!-- U04-EXPRESSION-INTEGRATION-20261017 START -->
+### WR-20261017-U04-EXPRESSION-INTEGRATION-001｜执行中
+- 用户批准记录2026-10-17T08:50:51.219833Z；Producer已登记首产`deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/FLOW_REPORT.md`，Client/Tech实际执行和周期终点待证据。用户审批等待已结束，接入制作/构建/运行耗时未知；结果后按`WORK_RETROSPECTIVE.md`收口。
+- **收口09:17:16Z**：用户批准记录08:50:51.219833Z至Producer复盘UTC墙钟26分25秒，含接入、v1失败、一次v2恢复、浏览器运行与跨角色核验，非任一角色净工时；用户对Client成果审核尚未开始。原因与建议`deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md`。
+<!-- U04-EXPRESSION-INTEGRATION-20261017 END -->
 <!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
 ### WR-20261017-U04-EXPRESSION-LINE-REVISION-001｜执行中
 - 本轮用户退回记录时间`2026-10-17T08:03:11Z`；Art已实际开始诊断、Producer已登记，Tech待本轮证据。结果/各角色净时长与等待分段尚未知；收口复盘见`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md`，不会用前轮PASS替代本轮断线核验。

@@ -1,0 +1,38 @@
+{
+  "id": "U04-EXPRESSION-INTEGRATION-FLOW-20261017",
+  "title": "U04 v0.3批准与接入流程监督",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "objective": "U04 v0.3批准与接入流程监督；用户已批准资源与接入，持续执行至真实运行结果提交USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/LAYER_EXPORT_MAP.json",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "将用户“好的批准接入”绑定准确Art v0.3与SHA，保留退回历史，更新审批/任务/资源交接登记及看板。",
+    "持续记录接入实际证据、必要技术Review和运行门禁，周期末复盘可靠耗时并核无空挂，未用户验收的Client成果不提前DONE。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "获批资源仅native PNG原字节接入，不重新生图/锐化/缩放导出。",
+    "单元示例，无QA Agent；Client gpt-6-luna/low、Tech与Producer gpt-6-sol/low。",
+    "Master负责正式Task/Git与内置浏览器运行；Owner不得创建子任务或执行Git。",
+    "Client只修改获批对应的apps/client/assets/units/dialogue PNG、必要元数据/几何及本交付目录；需要改代码先报Master。不改现有脏Gallery.ts/其他单元；构建使用隔离当前工程快照避免争用，准确登记输入。",
+    "Producer可更新本三Task、Art批准/接受记录与项目状态六文档；Tech只改自身交付目录，交叉修改需Master明确授权。",
+    "2026-10-17T08:51:26Z 首Required FLOW_REPORT.md已实存，Producer READY→IN_PROGRESS；Client/Tech待各自首Required，不占位。",
+    "2026-10-17T09:17:16Z 四Required/两验收原文同序PASS，continuity无空挂，待Master内部接受。",
+    "2026-10-17 Master PRODUCER_SUPPORT_ACCEPTANCE.json APPROVED绑定本轮四Required与两验收；Producer内部DONE，不替代Client用户决定。"
+  ]
+}

@@ -1,3 +1,9 @@
+<!-- U04-EXPRESSION-INTEGRATION-20261017 START -->
+### U04 表情v0.3正式接入交接
+- 用户已批准准确Art v0.3，证据`deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json`；现行稳定ID、美术路径与SHA以`deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json`为准。Client真实路径/UUID待导入后由`RESOURCE_IMPORT_MAP.json`登记；当前仍计划/NOT_IMPORTED。仅获批六阶段30态与对应base/front，原生PNG字节必须保持；AD高分源PSD继承差异已披露，禁止重新导出替代获批native PNG。
+- Client `deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RESOURCE_IMPORT_MAP.json`现登记42资源的稳定ID、获批来源路径/SHA、客户端真实路径、UUID、几何；42/42原生PNG字节、meta/UUID与几何一致。资源复制已实际完成，但Creator新构建与运行仍NOT_TESTED，不能将此静态交接称最终接入验收。
+- **现行42资源已实际导入**：`deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RESOURCE_IMPORT_MAP.json`逐项记录稳定ID、获批来源SHA、Client真实路径、UUID及几何，42/42源图字节、meta UUID与几何一致。Creator3.8.8 v2新构建/IAB真实运行PASS；Web服务`http://127.0.0.1:8765/`，输出身份见`deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/BUILD_CHECK.json`和Master `RUNTIME_VERIFICATION.json`。Client成果待用户审核，其他60态及无关资源未改。
+<!-- U04-EXPRESSION-INTEGRATION-20261017 END -->
 <!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
 ### U04 表情断线/重影修订 v0.3 现行候审资产
 - 准确30态、六阶段及各稳定资产ID、美术真实路径、SHA、尺寸与沿用版本见 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json`（早期中间清单232引用，最终247引用SHA见下行）。本轮15张face变更：AC四态、AJ sad、AD五态、XJ五态；AD/XJ共用front变更。base与MT/AT沿用旧hash，旧v0.1/v0.2均保留历史。PSD母版与实际U00重组在同一Manifest/审核包对应登记。

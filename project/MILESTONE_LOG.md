@@ -1,3 +1,18 @@
+<!-- U04-EXPRESSION-INTEGRATION-20261017 START -->
+### U04 表情v0.3批准与接入
+- `2026-10-17T08:50:51.219833Z ART_V03_USER_APPROVED`：用户“好的批准接入”，准确身份`deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json`，Art Task DONE/Approval USER_APPROVED；v0.2退回与v0.3送审快照保留。
+- `PRODUCER_TASK_STARTED`：首Required`deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/FLOW_REPORT.md`实存，FLOW READY→IN_PROGRESS；Client/Tech待真实首产。
+- `TECH_TASK_STARTED`：首Required `deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_DESIGN.md`实存，Tech IN_PROGRESS；42 PNG与旧importmap几何已核，待真实导入/构建。
+- `CLIENT_TASK_STARTED`：首Required `deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/FEATURE_BRIEF.md`实存；42目标PNG已hash/备份/复制，Creator3.8.8路径已核。Client IN_PROGRESS，实际新构建和运行待证据。
+- `CLIENT_BUILD_PASS_BROWSER_PENDING`：Creator3.8.8隔离722文件快照web-mobile新构建通过，index SHA`02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d`，loopback HTTP运行；Client `RUNTIME_CHECK.json`浏览器九目标/30/90态仍NOT_TESTED。
+- `IAB_RUNTIME_FAIL_4928`：当前实际Web世界bundle `assets/world/index.js`加载4928，映射/装饰失败；Master截图/console留证，Client/Tech诊断并限一次有证据恢复。Client IN_PROGRESS且有实际证据，运行未PASS。历史v0.4 import map误改由Master受控恢复，不纳本轮提交。
+- `RECOVERY_BOUNDARY_APPROVED`：Tech独立核旧成熟stage与当前31 TS SHA全同、六组几何同；v1缺既有world bundle整理/Scene优化。Master `BUILD_RECOVERY_BOUNDARY.json`限定仅一次v2隔离复制旧成熟stage、覆盖获批42PNG+map，不改旧stage；待新构建/浏览器复验。
+- `V2_RECOVERY_BUILD_PASS`：一次允许的隔离恢复构建完成，Client BUILD_CHECK选`v2_recovery`，输出manifest SHA`7758c3fdee91371e059652d3d1d83c0cb84869f4973af77c278d1ca87acce626`、42目标native SHA匹配；loopback HTTP待Master同版IAB。v1失败证据留档。
+- `V2_IAB_RUNTIME_PARTIAL`：Master当前实际构建30/30新态可见画布切换PASS、90/90巡检0失败；九处目标/共享层视觉及快速切换/重入/窄屏仍IN_PROGRESS。Client Task继续执行，不能提前USER_REVIEW。
+- `V2_IAB_RUNTIME_FINAL_PASS`：Master `RUNTIME_VERIFICATION.json`绑定52截图SHA/v2源与输出；九圈/共享层、30态、90/90零失败、快速切换/返回重入/console0错误PASS。服务PID3333留用户验收；Client最终包待齐，不提前DONE。
+- `09:17:16Z CLIENT_V01_USER_REVIEW`：Master `CLIENT_INTEGRATION_REVIEW.json`接受七Required/四验收后送用户；Tech `TECH_SUPPORT_ACCEPTANCE.json`内部DONE。`PRODUCER_REVIEW`：四Required齐、continuity无空挂、复盘UTC墙钟26分25秒，待Master内部接受。
+- `PRODUCER_INTERNAL_DONE`：Master `deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/PRODUCER_SUPPORT_ACCEPTANCE.json` APPROVED绑定Producer DELIVERABLE SHA `afcca398d4fc3fce93e1678c4838647d77520ffadc3b717a16f1eb970615a15a`；Task DONE/Approval PROFESSIONAL_REVIEW。Client仍USER_REVIEW，用户决定空。
+<!-- U04-EXPRESSION-INTEGRATION-20261017 END -->
 <!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
 ### U04 断线与重影再次返工
 - `2026-10-17T08:03:11Z USER_CHANGES_REQUESTED_V02`：用户退回准确v0.2，证据`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json`；旧Approval现行REJECTED及before快照留存；Art v0.3 DRAFT。

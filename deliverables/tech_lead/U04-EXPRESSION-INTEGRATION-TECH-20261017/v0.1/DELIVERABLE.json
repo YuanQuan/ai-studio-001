@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "U04获批v0.3六阶段42张native PNG准确接入稳定UUID路径；Creator3.8.8隔离v2构建及Web实际运行通过，30态与90态可见UI巡检完成。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "核获批资源到稳定客户端路径/UUID/几何/生产PNG的准确性，保护未改资源与已有代码差异。",
+      "result": "PASS",
+      "evidence": "TECH_CHECK：42/42 Art到客户端PNG SHA一致，meta/UUID保持，六组几何吻合；其余60 face、24 portrait及既有Gallery/registry代码摘要未变。"
+    },
+    {
+      "criterion": "核Creator版本兼容的实际新构建/导入与Web产物身份，不接受旧包或拷错源。",
+      "result": "PASS",
+      "evidence": "TECH_CHECK：v1 IAB失败已记录；唯一v2隔离恢复快照671文件与42资产SHA匹配，Creator3.8.8实际新构建七bundle/42 native输出一致，Master IAB加载的是v2 HTTP输出。"
+    },
+    {
+      "criterion": "独立审阅同版运行截图、状态切换及巡检证据，明确单元示例与未测平台界限。",
+      "result": "PASS",
+      "evidence": "Master同版Web运行30张逐态截图及可见UI事件；Tech独立审六组contact/九圈态；90/90零失败、AJ连续切换与返回重入截图可复核。仅Web单元示例，目标设备/其他平台及正式QA未测。"
+    }
+  ],
+  "risks": [
+    "v1构建因缺world/tourist/shops/milk-tea bundle而实际失败，现以v2完整bundle快照恢复；旧失败作为历史证据保留。",
+    "本轮仅Web浏览器单元示例验证；未作目标平台、真机性能或正式QA判定。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

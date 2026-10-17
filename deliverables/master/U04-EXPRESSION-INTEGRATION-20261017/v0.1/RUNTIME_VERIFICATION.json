@@ -1,0 +1,307 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+  "checked_at_utc": "2026-10-17T09:14:23.532683+00:00",
+  "result": "PASS_SCOPED_WEB_RUNTIME_READY_FOR_USER_REVIEW",
+  "build": "v2_recovery",
+  "http_url": "http://127.0.0.1:8765/",
+  "browser": "Codex in-app browser",
+  "interaction": "真实可见Canvas按钮/滚动；不注入引擎状态，不读取__U04_RUNTIME__",
+  "session": {
+    "url": "http://127.0.0.1:8765/",
+    "startedAt": "2026-10-17T09:05:07.452Z",
+    "finishedAt": "2026-10-17T09:13:15.951Z",
+    "finalViewport": {
+      "dpr": 1,
+      "height": 720,
+      "width": 1280
+    },
+    "testedViewports": [
+      {
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      }
+    ],
+    "viewportOverrideReset": true,
+    "tabId": "1"
+  },
+  "build_identity": {
+    "source_manifest_sha256": "b6c07c976475e95b3657e73777188b704a7c63c49542f897af7fc083ee2a1d5c",
+    "output_manifest_sha256": "7758c3fdee91371e059652d3d1d83c0cb84869f4973af77c278d1ca87acce626",
+    "settings_sha256": "0710ee9bb6ed057ba75cad6d41b44b0fd2febe6a5c7289ca39adfdbcc39f6464",
+    "output_root": "/private/tmp/u04-expression-integration-client-20261017-v2/build-output/u04-expression-integration-client-web-mobile-recovery",
+    "index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+    "note": "index与v1模板相同不能单独区分；以source/settings/output manifest和四bundle文件齐备绑定新构建。"
+  },
+  "checks": [
+    {
+      "item": "30个获批新态实际视觉/三层切换",
+      "result": "PASS",
+      "evidence": "runtime/thirty_state_actions.json、30张全屏PNG、U04_30_STATE_ACTUAL_RUNTIME_CONTACT.png；六组各五态真实控件切换且状态条三层就绪。"
+    },
+    {
+      "item": "九处圈选及共享层效果",
+      "result": "PASS",
+      "evidence": "六组runtime_five_state_contact.png逐张实际目视；AC额发断带消除、AJ悲伤眉发接续、AD五态旧眉未复显、XJ五态青眉/镜圈分离；AC批准黑眼圈、姿态保留。"
+    },
+    {
+      "item": "完整90组合加载巡检",
+      "result": "PASS",
+      "evidence": "v2_sweep90_pass_90of90_zero_failed_7042ms.png；通过实际巡检按钮，90/90，0失败，7042ms。这是加载/三层就绪与姓名检查，不冒充全部90态新美术视觉验收。"
+    },
+    {
+      "item": "三轴保留",
+      "result": "PASS",
+      "evidence": "axis_base_AD_S0_sad→axis_expression_only_AD_S0_surprised→axis_manager_only_AJ_S0_surprised→axis_stage_only_AJ_S2_surprised.png，逐次只改一轴，另外两轴保持。"
+    },
+    {
+      "item": "连续快速切换",
+      "result": "PASS",
+      "evidence": "rapid_switch_final_AJ_S2_sad.png及rapid_switch_settled_AJ_S2_sad.png；六人物快速点击、四表情连续切换，最后AJ2悲伤稳定，没有旧态回写。"
+    },
+    {
+      "item": "返回/重入",
+      "result": "PASS",
+      "evidence": "return_menu_after_switches.png、reentry_loaded_MT_S0.png，实际返回与重新进入，默认MT0微笑三层就绪。仅本次一次返回重入，不沿用旧20轮。"
+    },
+    {
+      "item": "手机视窗390×844",
+      "result": "PASS",
+      "evidence": "mobile_390x844_AD_S0_surprised.png及XJ_S0_surprised.png；DOM测viewport/canvas390×844、DPR1；真实人物控件从AD切XJ，表情/0魂保持，眉镜效果与布局可见。"
+    },
+    {
+      "item": "当前v2控制台",
+      "result": "PASS",
+      "evidence": "v2_console.json、v2_console_warn_error.json，按v2重载起点过滤旧v1错误，warning/error 0。"
+    },
+    {
+      "item": "平台/性能边界",
+      "result": "NOT_TESTED",
+      "evidence": "未做微信/抖音SDK、真机DPR2/3、GPU峰值/内存/DrawCall专项；单元示例Owner自证，无QA Agent。"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_angry_1280x720.png",
+      "sha256": "3f135a9ce8bb83c5794b781709584a967afea0f924922a8c526b9a6396a674eb"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_happy_1280x720.png",
+      "sha256": "df1b8163d24d4d7e3b14fd3ba6e08aa57076fff4b3e57abf3f33d16230d76c89"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_runtime_five_state_contact.png",
+      "sha256": "a533d7cd2b00d83911e4d655c4be83b155aedd4815269f18161dd4dd7b2d9b03"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_sad_1280x720.png",
+      "sha256": "a5a496a736e912c278741fa9248cf9e87d2a1744d4d925bccaffe27e44a531c7"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_smile_1280x720.png",
+      "sha256": "cf466994f97a0c9af0b004a349abd6bc463693ba5af3227bb4e941de0343f576"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AC_S0_surprised_1280x720.png",
+      "sha256": "54867d6f8602ca2135b39ef88df033ec2db2c6f4ebcfce3c26552b5b5f43a3f4"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_angry_1280x720.png",
+      "sha256": "63ede9c498ef6ecb6cd81e4bebde27241796c48b9af8b21ce6c757ae25959b53"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_happy_1280x720.png",
+      "sha256": "1e213ad5ffee31f1d039fd67e604afb52cdeb3779322f424edcab805f0be9743"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_runtime_five_state_contact.png",
+      "sha256": "e34b07f13e7d9ae760f71907c2bde40f0b21d7a8fdb34525e4284ce2daf22b61"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_sad_1280x720.png",
+      "sha256": "bce9cba9c4f14db5a16ab79e78aa68b420fabb7795783eb7781a1d4e2b685579"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_smile_1280x720.png",
+      "sha256": "3837ab08a6c5e5b6e9ec637e6e36e33d34d2d0b0994e07d88524e5e1919b0c96"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AD_S0_surprised_1280x720.png",
+      "sha256": "d00cb06ddfd6b5c610ccb9aa7739c783d59289f5eaae0b3bd917c6bebe462c96"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_angry_1280x720.png",
+      "sha256": "966205164582f72f8c5a8e8cebef6a706805a8e7e4a49ab17f61cfb7032fe2d2"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_happy_1280x720.png",
+      "sha256": "4a7f36b8a54af1caf1bb2d4fa47af55c73df33ba2281772a21c7effdf556c8f2"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_runtime_five_state_contact.png",
+      "sha256": "8f3a3eceea291a6fcaf1f3361a7280e813c0168b165a94948abe3963def9c6ab"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_sad_1280x720.png",
+      "sha256": "ff286d1f2fb9cee268e826accb6ace5931dfd3598e7920f7df1a5ee08d2a3bc5"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_smile_1280x720.png",
+      "sha256": "2b836b9e2029a033727ad6c7d3994ab2204d03db21352b08aae3e75f4ee3b92b"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AJ_S2_surprised_1280x720.png",
+      "sha256": "0a69e735ee2294cf78b36b9b66f8bfd509b3e9b709acf5faf8bdee0c5921a0c5"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_angry_1280x720.png",
+      "sha256": "1e9e21edf15d58300f746e964189a667baf82fa9062f40022a5b3ff78d5fd350"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_happy_1280x720.png",
+      "sha256": "e464bb0ff4942bff19c2201f145a86d577fe1ece2694ab0c863d4eb69209391a"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_runtime_five_state_contact.png",
+      "sha256": "55e93dcba1ee4289f3591f5240aa5a097c6f8847cb16cf8fb6c8aa94cb93f9a3"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_sad_1280x720.png",
+      "sha256": "ebb0f212a2b74bdc5e76d226cf4861c3a2f52977aa61724a52697f9c5e79bffe"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_smile_1280x720.png",
+      "sha256": "7fa0bc18837ea0f73582b5cb3ce14861c92231bf87234c15485f1f9e4b4fb91b"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/AT_S0_surprised_1280x720.png",
+      "sha256": "274302e7a86c31cdb4b8f9d07d3d20aa546a237cda4c450d3ac50c71fa6a0ded"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_angry_1280x720.png",
+      "sha256": "e086b1687d69ecf0c31fe06e11b1105d75127418fa3b057c977bae49d51f0e79"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_happy_1280x720.png",
+      "sha256": "81955139efbf01eea8d079878e7ad384dbfae494dbfab6226afd92993f162adf"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_runtime_five_state_contact.png",
+      "sha256": "17c3b3674691c72d31c5d017518ae2b06f173f637ba2a954760b741924a1aa41"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_sad_1280x720.png",
+      "sha256": "8f1b8087b25f6a143abbcddb6abd10a962f068f8d672d8dec0cca54d20261ecd"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_smile_1280x720.png",
+      "sha256": "e20ebf5d7621e2a42ab09f87addc8f76cee576c9b2331f3f768fc67634a5af98"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/MT_S2_surprised_1280x720.png",
+      "sha256": "f4cbdb0255665f070f950ce9bb337d77a3a0740fe38e4ef613f9f92c0deb9d0e"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/U04_30_STATE_ACTUAL_RUNTIME_CONTACT.png",
+      "sha256": "4ec77a568049dd27832c452429a198589826b143752af53e0cb0b7bf746f88e8"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_angry_1280x720.png",
+      "sha256": "9853ea2a9e5151107454b4917cfe24539afefbec472a817e88b2e4866c2cfb1a"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_happy_1280x720.png",
+      "sha256": "c2e95be1ef15f3351d4ee8581e3ef82b99e71f03533963c5b9eb17ca7aa37c7c"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_runtime_five_state_contact.png",
+      "sha256": "a03c1c45f7fdc8552b4589a4678ad1288fd93d897171a534b50a43d2f15b7587"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_sad_1280x720.png",
+      "sha256": "8766868e208892f4411fb16852d4215d473163f4a86fde89b861ee86c17a5097"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_smile_1280x720.png",
+      "sha256": "e6a785e7ba34d282b21250b4a6ff71b96c8c68c176ad1f5becd7e93299aa5189"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/XJ_S0_surprised_1280x720.png",
+      "sha256": "4d0a9bd4d556e6b2064ea789ad51d95b4fc82d9ebac0944ddde0580840af5fa4"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_base_AD_S0_sad.png",
+      "sha256": "b44347d63f006e06d11b360c3e4d27e443d2272d9e65c470fa575e027da73365"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_expression_only_AD_S0_surprised.png",
+      "sha256": "89a9446f6167f2f7813687d5a0f55b5928556da37d5e05d4714d75fd642359f9"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_manager_only_AJ_S0_surprised.png",
+      "sha256": "141217182072ad8afa3c05b0b028c5e7bb19c487bcbb94066df683fc1cfbb7a3"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/axis_stage_only_AJ_S2_surprised.png",
+      "sha256": "918cb00ed696a332def47c70d4a84817672c2c1592e1cf76e05dba3cbd2e9199"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/final_default_view_XJ_S0_surprised.png",
+      "sha256": "0356971a5fb7216b84760903b1f063126bb8afd99f1903dff05fbb3b9bce83d8"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/mobile_390x844_AD_S0_surprised.png",
+      "sha256": "a37bd43738ac7f1e27d4e1bcf1870855c2f66706b72d7e0bbd6ee5753d8c89d3"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/mobile_390x844_XJ_S0_surprised.png",
+      "sha256": "b59aaeb86838ece3f64119b65b503781e3c8941130aebe660502d8aa32616faa"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/rapid_switch_final_AJ_S2_sad.png",
+      "sha256": "35cd6c7af90cf2f13615d2ac510d8d5bbbaad69edfd2d9643a6fb79b9141cd33"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/rapid_switch_settled_AJ_S2_sad.png",
+      "sha256": "0bbb74579c69bc58eef0886746c61ddf701712af434a556b15c5de8f3e16be7c"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/reentry_loaded_MT_S0.png",
+      "sha256": "7531370c38abf6f2fff560677467b06646ce9dd8d44f4065a0491c42bfd4e970"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/return_menu_after_switches.png",
+      "sha256": "dd61db7e88e8569983db3c27ae501d61bd450afefc5392e3d2455b569b5d21a9"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v1_failed_bundle_load.png",
+      "sha256": "c0a145f1cb3030e674608356457f571059d77ec77373ccf248ad7b96cde4d8b1"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_loaded_MT_S0_original.png",
+      "sha256": "1ac9f35bfd7583f0081fdaec1247f8fd17623c7d8363079f61a14ed938b1536d"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_sweep90_pass_90of90_zero_failed_7042ms.png",
+      "sha256": "380f6c4ded21f036f9c2d5e0762dc5b65fb575b58a1883aa6686305bd0c54b8a"
+    },
+    {
+      "path": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/runtime/v2_sweep90_started.png",
+      "sha256": "f1310cc9a9b350680d0657d087a530aff67ab7b2237b705e72a1e940f67b8f11"
+    }
+  ],
+  "prior_failure": {
+    "version": "v1",
+    "result": "FAILED_RUNTIME",
+    "evidence": [
+      "runtime/v1_failed_bundle_load.png",
+      "runtime/v1_console_errors.json"
+    ],
+    "recovery_count": 1
+  },
+  "client_result_gate": "USER_REVIEW pending explicit user acceptance; Art v0.3 already approved"
+}

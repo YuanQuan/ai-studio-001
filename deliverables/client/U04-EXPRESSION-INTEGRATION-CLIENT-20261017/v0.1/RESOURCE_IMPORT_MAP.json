@@ -1,0 +1,2748 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+  "version": "v0.1",
+  "source_artifact": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+  "source_manifest_sha256": "4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d",
+  "layer_export_map_sha256": "03f670e553c025bb1316061f5bb848fc350c64372bebae16581e97183027fee7",
+  "source_client_import_map": "deliverables/client/U04-DIALOGUE-CLIENT-001/v0.4/RESOURCE_IMPORT_MAP.json",
+  "creator_version": "3.8.8",
+  "bundle": "dialogue",
+  "assets": [
+    {
+      "stable_asset_id": "u04_portrait_mt_s2_base",
+      "asset_id": "U04_PORTRAIT_MT_S2_BASE",
+      "kind": "base",
+      "stage": "MT_S2",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+      "source_sha256": "d1cc0cf6361afed707a864a5ead6c6d3683baea87551b9df6638996abe2ee1f3",
+      "source_bytes": 754020,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_mt_s2_base.png",
+      "client_sha256": "d1cc0cf6361afed707a864a5ead6c6d3683baea87551b9df6638996abe2ee1f3",
+      "previous_client_sha256": "7ae6eb58df509406896371a0bc551df89fbbc14e469fb16cbe518f46396a2369",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_mt_s2_base.png",
+      "uuid": "13dc86fd-29a9-4aca-8b44-00103e392405",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_mt_s2_base.png.meta",
+      "meta_sha256": "e309887d3a3743f2356570bfcc0c9545907064a5676159aba5569893ad6bf26f",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_mt_s2_base",
+      "dimensions_px": [
+        651,
+        1024
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_mt_s2",
+      "asset_id": "U04_FRONT_MT_S2",
+      "kind": "front",
+      "stage": "MT_S2",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+      "source_sha256": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+      "source_bytes": 10289,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_mt_s2_front.png",
+      "client_sha256": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+      "previous_client_sha256": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+      "backup_path": null,
+      "uuid": "cf79d145-1f1b-4e03-9c42-95e43a9330ec",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_mt_s2_front.png.meta",
+      "meta_sha256": "2cd95bc59ab36b28726963929d83df1829fa0103c4651e517968e4a81d3ba88d",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_mt_s2_front",
+      "dimensions_px": [
+        51,
+        122
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_mt_s2_happy",
+      "asset_id": "U04_FACE_MT_S2_HAPPY",
+      "kind": "face:happy",
+      "stage": "MT_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_happy.png",
+      "source_sha256": "a82817dedf7689791cf280050e4eeafa33acfc34bd366652fe0e75f1289121cd",
+      "source_bytes": 45924,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_happy.png",
+      "client_sha256": "a82817dedf7689791cf280050e4eeafa33acfc34bd366652fe0e75f1289121cd",
+      "previous_client_sha256": "0c577c526fd118353e5b180ceb81d1ef96177f0f2313d2670b371627092da09e",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_happy.png",
+      "uuid": "53bf3d56-efea-4efb-b3bd-174dcff9e667",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_happy.png.meta",
+      "meta_sha256": "0a209e061447bfa2ebb693e5e77aad38a5ca4fe64ecab8e3a46d0eaf3beed516",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_mt_s2_face_happy",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_mt_s2_surprised",
+      "asset_id": "U04_FACE_MT_S2_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "MT_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_surprised.png",
+      "source_sha256": "905b71d83cac6e59611af81cc6943c6ed952df3813ee901ff361074e77b15021",
+      "source_bytes": 42079,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_surprised.png",
+      "client_sha256": "905b71d83cac6e59611af81cc6943c6ed952df3813ee901ff361074e77b15021",
+      "previous_client_sha256": "fc50693ccb77f5c7ae1f3a414f6f2d9079bbc0a524edaca2ac1ac91b7d76b81a",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_surprised.png",
+      "uuid": "071e4923-77ff-4bfa-9af1-1ff175b4b981",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_surprised.png.meta",
+      "meta_sha256": "2b09d80ba406804d32a4c00812a1c62ff9179e5a20a4d9de5891ec395ddfe0c5",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_mt_s2_face_surprised",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_mt_s2_sad",
+      "asset_id": "U04_FACE_MT_S2_SAD",
+      "kind": "face:sad",
+      "stage": "MT_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_sad.png",
+      "source_sha256": "89a62398f74770ce8cce68f46f75f58978e01229d2444a8f9aeecd30d1fe0b61",
+      "source_bytes": 41118,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_sad.png",
+      "client_sha256": "89a62398f74770ce8cce68f46f75f58978e01229d2444a8f9aeecd30d1fe0b61",
+      "previous_client_sha256": "a36a6bc87cac9eea8aba4e7877edcb0b17f5a942bf95bed68c08c8c5bf605ac3",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_sad.png",
+      "uuid": "70c05fef-cefe-47d0-8b83-90f356ace2db",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_sad.png.meta",
+      "meta_sha256": "5ca604274366cdf4c54d0c7b3e71d284f695a50a34b879db3f1892f95d5bcdc3",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_mt_s2_face_sad",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_mt_s2_smile",
+      "asset_id": "U04_FACE_MT_S2_SMILE",
+      "kind": "face:smile",
+      "stage": "MT_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_smile.png",
+      "source_sha256": "6460ffffcfb26f18b2b1e516a758d64934a84656100ab20c4f68c9942f031c0b",
+      "source_bytes": 40113,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_smile.png",
+      "client_sha256": "6460ffffcfb26f18b2b1e516a758d64934a84656100ab20c4f68c9942f031c0b",
+      "previous_client_sha256": "37a18b7b2ad141e59ca1baf88d3e93a51606e003a5b4cd96a0a831523cdb48fb",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_smile.png",
+      "uuid": "536c2586-d298-4ce5-bc42-2157560300e2",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_smile.png.meta",
+      "meta_sha256": "cc45381e4d6bc03a7edefaa9bf5f79b5e5cb6f45c50e0f0e4978d30bfbfe6ac2",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_mt_s2_face_smile",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_mt_s2_angry",
+      "asset_id": "U04_FACE_MT_S2_ANGRY",
+      "kind": "face:angry",
+      "stage": "MT_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_angry.png",
+      "source_sha256": "00185836c1e75b353facd859389a5f98231ddde1a3223125fde8fb21e4f7eb50",
+      "source_bytes": 38459,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_angry.png",
+      "client_sha256": "00185836c1e75b353facd859389a5f98231ddde1a3223125fde8fb21e4f7eb50",
+      "previous_client_sha256": "fdf8249eb674328732f9da74172baa2cdeb20f2dfa9b59c2a7582fe46c9f24fb",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_angry.png",
+      "uuid": "980ba1b6-30b1-47b3-9c3c-237094b1901b",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_mt_s2_face_angry.png.meta",
+      "meta_sha256": "934648c56707bdd0833aa62095034e8c74262634a6e11efe118e9bd00e6ce3f5",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_mt_s2_face_angry",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          218,
+          0,
+          869,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          360,
+          100,
+          616,
+          356
+        ],
+        "face_source_pivot_xy": [
+          488,
+          228
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          142,
+          100
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          292,
+          97
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_portrait_at_s0_base",
+      "asset_id": "U04_PORTRAIT_AT_S0_BASE",
+      "kind": "base",
+      "stage": "AT_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+      "source_sha256": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+      "source_bytes": 664669,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s0_base.png",
+      "client_sha256": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+      "previous_client_sha256": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+      "backup_path": null,
+      "uuid": "0d1ede14-e7c2-4c2e-9f69-6b67352e2d5d",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s0_base.png.meta",
+      "meta_sha256": "f796b61ac90beeefb25d83753c904847b24824d7d251625c596016c9104e5990",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_at_s0_base",
+      "dimensions_px": [
+        503,
+        1024
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_at_s0",
+      "asset_id": "U04_FRONT_AT_S0",
+      "kind": "front",
+      "stage": "AT_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+      "source_sha256": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+      "source_bytes": 18576,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s0_front.png",
+      "client_sha256": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+      "previous_client_sha256": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+      "backup_path": null,
+      "uuid": "ad47078f-71f8-4f85-a8f1-c805653a6abb",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s0_front.png.meta",
+      "meta_sha256": "dfbeba48f70dad13a792c36068c7ccb97b058a725cde0e6b2892de783dbffda9",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_at_s0_front",
+      "dimensions_px": [
+        175,
+        75
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_at_s0_happy",
+      "asset_id": "U04_FACE_AT_S0_HAPPY",
+      "kind": "face:happy",
+      "stage": "AT_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_happy.png",
+      "source_sha256": "4888eb05feb0bb307a95fcd7a8605d7b7eea99cf7d855b8837a4d137e211ca59",
+      "source_bytes": 33620,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_happy.png",
+      "client_sha256": "4888eb05feb0bb307a95fcd7a8605d7b7eea99cf7d855b8837a4d137e211ca59",
+      "previous_client_sha256": "d88437ea2785df7920a96e051efce9012379ea8852a03c3f08665768e2aa0205",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_happy.png",
+      "uuid": "a66016e4-e641-42da-9226-5794ae3cf0ba",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_happy.png.meta",
+      "meta_sha256": "5772a831df7efc545534ecbff025f11a77d4229dedf926a99e70f3d27f5a1003",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_at_s0_face_happy",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_at_s0_surprised",
+      "asset_id": "U04_FACE_AT_S0_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "AT_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_surprised.png",
+      "source_sha256": "2d486ddec9bb3c181dd6567db7b0718ecb135a3f5d732228e5d997d6293efc53",
+      "source_bytes": 33925,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_surprised.png",
+      "client_sha256": "2d486ddec9bb3c181dd6567db7b0718ecb135a3f5d732228e5d997d6293efc53",
+      "previous_client_sha256": "c857fbd8a30c2fefdc8caa1a4b7be88e16b04f0af986cd19dd20ab732e61c458",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_surprised.png",
+      "uuid": "9e6bed45-32fa-4053-be50-15c46319eafc",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_surprised.png.meta",
+      "meta_sha256": "e9a7e2aaee54b3be98ff4ab57ae6e61b620090eb3efecbaf89fd6039d2c3d60e",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_at_s0_face_surprised",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_at_s0_sad",
+      "asset_id": "U04_FACE_AT_S0_SAD",
+      "kind": "face:sad",
+      "stage": "AT_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_sad.png",
+      "source_sha256": "8f0621cb20f46af99788731bfb9d08be46b17a92922d9b7e246e82a5584e38ed",
+      "source_bytes": 27813,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_sad.png",
+      "client_sha256": "8f0621cb20f46af99788731bfb9d08be46b17a92922d9b7e246e82a5584e38ed",
+      "previous_client_sha256": "8c7dda29aed25229d4ac74a3ba88cba67c4fd07e846d6792b68a71fbe85a842c",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_sad.png",
+      "uuid": "490e8992-0332-42a1-990f-08bd9dfa1736",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_sad.png.meta",
+      "meta_sha256": "ead7b4380da09a6d9475e9e9f9e5b30be6bd8e46a30607f5af895f00be7e4f77",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_at_s0_face_sad",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_at_s0_smile",
+      "asset_id": "U04_FACE_AT_S0_SMILE",
+      "kind": "face:smile",
+      "stage": "AT_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_smile.png",
+      "source_sha256": "3d8057befa0e7f6060b99288f6be53a2ba43ebd8ec549845c9e361e5cf0e92df",
+      "source_bytes": 30546,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_smile.png",
+      "client_sha256": "3d8057befa0e7f6060b99288f6be53a2ba43ebd8ec549845c9e361e5cf0e92df",
+      "previous_client_sha256": "42a5b240dda15f50635acfb93412979130c5fb12c5b40f82b7028db4f38410b9",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_smile.png",
+      "uuid": "e4ba7f17-d2b4-4b0a-8538-0a9877ff5aca",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_smile.png.meta",
+      "meta_sha256": "e66c9bcbbc64d3cb2d34bbd7beb8abcb01759dc4358d91ca370ffee77b6c525a",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_at_s0_face_smile",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_at_s0_angry",
+      "asset_id": "U04_FACE_AT_S0_ANGRY",
+      "kind": "face:angry",
+      "stage": "AT_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_angry.png",
+      "source_sha256": "b40786748fa14a403cc0aae11540fb069564d4c0e8445dcd74ced5a4363729f3",
+      "source_bytes": 29725,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_angry.png",
+      "client_sha256": "b40786748fa14a403cc0aae11540fb069564d4c0e8445dcd74ced5a4363729f3",
+      "previous_client_sha256": "ad203b5d792fd50cf289c039ccf2f3703daa1e580993d088df31fd4d57ba47e8",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_angry.png",
+      "uuid": "48b0aeae-2bff-4ee6-9e31-5b3f9be9e585",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_at_s0_face_angry.png.meta",
+      "meta_sha256": "fbe569d7d786ab1f5edb74a815aaf942e349b9b971367ea71123b7ef6cf7fcf0",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_at_s0_face_angry",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "base_source_rect_xyxy": [
+          247,
+          0,
+          750,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          380,
+          180,
+          636,
+          436
+        ],
+        "face_source_pivot_xy": [
+          508,
+          308
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          133,
+          180
+        ],
+        "front": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "front_offset_in_base_export_xy": [
+          148,
+          177
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_portrait_ac_s0_base",
+      "asset_id": "U04_PORTRAIT_AC_S0_BASE",
+      "kind": "base",
+      "stage": "AC_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+      "source_sha256": "a5a3306c286914bfa80fd0151a1e4842e18cfd2cf79db67692cc9e3883d25edb",
+      "source_bytes": 547019,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_base.png",
+      "client_sha256": "a5a3306c286914bfa80fd0151a1e4842e18cfd2cf79db67692cc9e3883d25edb",
+      "previous_client_sha256": "f6728d43b1f27a5b985fff87da4865dd7c9234460bc7f836df8cc8575d13c69a",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_base.png",
+      "uuid": "3783e906-23b9-4e4a-9948-4c1b24c0cd86",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_base.png.meta",
+      "meta_sha256": "f62c90d323929ae251ba310e663e4c80ae9fb579618766e956540eb2b9ee8a51",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_ac_s0_base",
+      "dimensions_px": [
+        454,
+        1024
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_ac_s0",
+      "asset_id": "U04_FRONT_AC_S0",
+      "kind": "front",
+      "stage": "AC_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+      "source_sha256": "313fa85a0c957a7df3deafc62836fe0deab1ad07a27ce7faaf10e3628d449dd2",
+      "source_bytes": 46577,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_front.png",
+      "client_sha256": "313fa85a0c957a7df3deafc62836fe0deab1ad07a27ce7faaf10e3628d449dd2",
+      "previous_client_sha256": "2566589ba09703b7662a299cb1f11df24864b8877226fffe815035ada338aa77",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_front.png",
+      "uuid": "cdb66901-bf79-4ed6-8002-d8d426a55da3",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ac_s0_front.png.meta",
+      "meta_sha256": "71a0669cc06c98bb335b11d29278cdc4ee69b2cf7fe9db4d6883800a451b7aee",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_ac_s0_front",
+      "dimensions_px": [
+        170,
+        148
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ac_s0_happy",
+      "asset_id": "U04_FACE_AC_S0_HAPPY",
+      "kind": "face:happy",
+      "stage": "AC_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_happy_v03.png",
+      "source_sha256": "4fc7c252b7b2e0ab4345f23827bc10c7d1d452194c0f313676b414bf9ef51450",
+      "source_bytes": 44380,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_happy.png",
+      "client_sha256": "4fc7c252b7b2e0ab4345f23827bc10c7d1d452194c0f313676b414bf9ef51450",
+      "previous_client_sha256": "4143286615f4021e4b9cb6c25cc11e8a19ebd8e1281876ca4ab0da3b114ec448",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_happy.png",
+      "uuid": "c014dd1e-aa7e-4368-abc2-bf43b6b038a7",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_happy.png.meta",
+      "meta_sha256": "be70b01750f46ec12b845902eafbacafc9a8ba9c4c43e575d5dc214cf9b466a4",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ac_s0_face_happy",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ac_s0_surprised",
+      "asset_id": "U04_FACE_AC_S0_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "AC_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_face_surprised_repair_full5_01.png",
+      "source_sha256": "43a23cd58bf4304f180cb683e655f39bc2d4fad74a6f774a70306d73cc5d3636",
+      "source_bytes": 46516,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_surprised.png",
+      "client_sha256": "43a23cd58bf4304f180cb683e655f39bc2d4fad74a6f774a70306d73cc5d3636",
+      "previous_client_sha256": "b4eec27d15c63b2d54d81a366266d55da0341868ff223868e3b17e40cf6d7140",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_surprised.png",
+      "uuid": "1cfbe791-67e3-41d4-98bc-bfa63318f4bd",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_surprised.png.meta",
+      "meta_sha256": "19e6efa939aa0c0f8d13b40b54989bb56a23db694ab8f1b602e98f109ae00a99",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ac_s0_face_surprised",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ac_s0_sad",
+      "asset_id": "U04_FACE_AC_S0_SAD",
+      "kind": "face:sad",
+      "stage": "AC_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_sad_v03.png",
+      "source_sha256": "507e54d9ef50fbb9aa6785c158a004f56689c3f3611a4a9ea9a18073f1fff616",
+      "source_bytes": 42289,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_sad.png",
+      "client_sha256": "507e54d9ef50fbb9aa6785c158a004f56689c3f3611a4a9ea9a18073f1fff616",
+      "previous_client_sha256": "3802a5b4b001b474cce82ba211f337ee2df5ab958a021f4d60c0dc8fceeb3378",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_sad.png",
+      "uuid": "a1ce54d8-e54a-4d20-8059-c1ffbf1e5f4e",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_sad.png.meta",
+      "meta_sha256": "6b57881614bddfe0ad03a4af4d2c83b94529c0118c6c0187af46f188a4a18fba",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ac_s0_face_sad",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ac_s0_smile",
+      "asset_id": "U04_FACE_AC_S0_SMILE",
+      "kind": "face:smile",
+      "stage": "AC_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_smile_v03.png",
+      "source_sha256": "ab71a56cb0f4a30e413e9cc436d00573efc25b106d006e1d515170c52e87f155",
+      "source_bytes": 41541,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_smile.png",
+      "client_sha256": "ab71a56cb0f4a30e413e9cc436d00573efc25b106d006e1d515170c52e87f155",
+      "previous_client_sha256": "e543923fd386207a0350693111bd885491d2c69b7b07f7c5666bf27607cad584",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_smile.png",
+      "uuid": "479fd261-4230-4757-9bdc-abd7c2d11c7c",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_smile.png.meta",
+      "meta_sha256": "52545cf994bd071a2ae91a7fb4dd359daba29dcb0b32ef5d61a9d15e85e26d1e",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ac_s0_face_smile",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ac_s0_angry",
+      "asset_id": "U04_FACE_AC_S0_ANGRY",
+      "kind": "face:angry",
+      "stage": "AC_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_angry_v03.png",
+      "source_sha256": "6b8b88794c0065a809fa98ebd4ff6bd43351e418ad83ab1dbecdfe683386de01",
+      "source_bytes": 42322,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_angry.png",
+      "client_sha256": "6b8b88794c0065a809fa98ebd4ff6bd43351e418ad83ab1dbecdfe683386de01",
+      "previous_client_sha256": "51665d434b93f6f84c31d097ea702839b799ac963d32fec41f96532eae7addb2",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_angry.png",
+      "uuid": "6fff3970-5eea-4492-be0f-5c1bfb2202b2",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ac_s0_face_angry.png.meta",
+      "meta_sha256": "b7ba3cac5daecf8292592bc0b72a4e035aabac0c778fc4a1072113414f1880f8",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ac_s0_face_angry",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "base_source_rect_xyxy": [
+          302,
+          0,
+          756,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          350,
+          95,
+          606,
+          351
+        ],
+        "face_source_pivot_xy": [
+          478,
+          223
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          48,
+          95
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          72,
+          140
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_portrait_aj_s2_base",
+      "asset_id": "U04_PORTRAIT_AJ_S2_BASE",
+      "kind": "base",
+      "stage": "AJ_S2",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+      "source_sha256": "aa9a148662de3c5374d0529a8bcc95625549e8583075516f16310fb9fe953402",
+      "source_bytes": 796780,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_base.png",
+      "client_sha256": "aa9a148662de3c5374d0529a8bcc95625549e8583075516f16310fb9fe953402",
+      "previous_client_sha256": "476da9443204134ba5278ba920893a6dd17d57f2cd7e9cbe42907e5ec7d19fc9",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_base.png",
+      "uuid": "febd5c8f-0540-4348-84a1-fc0d94354b74",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_base.png.meta",
+      "meta_sha256": "bdbf585e6368475fdeda33fb058633542252d5cb014fbe8fd065355b1bd873c4",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_aj_s2_base",
+      "dimensions_px": [
+        594,
+        1024
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_aj_s2",
+      "asset_id": "U04_FRONT_AJ_S2",
+      "kind": "front",
+      "stage": "AJ_S2",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+      "source_sha256": "375bc3717aec833d9846c3a92f36aa43c6f78c04bed6f3853861ad56881e5b38",
+      "source_bytes": 49539,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_front.png",
+      "client_sha256": "375bc3717aec833d9846c3a92f36aa43c6f78c04bed6f3853861ad56881e5b38",
+      "previous_client_sha256": "afd6dae5ec6b9204b4e93edb942e06e053dc13798e0bc30e85fb107fafa7ae30",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_front.png",
+      "uuid": "4c35ff96-d933-43f3-bf97-8b53c1418eb7",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_aj_s2_front.png.meta",
+      "meta_sha256": "af6ebba841b517728c0a55c7d293282f5dca4fe0954d2817c6f41c1f1fa72d8a",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_aj_s2_front",
+      "dimensions_px": [
+        186,
+        155
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_aj_s2_happy",
+      "asset_id": "U04_FACE_AJ_S2_HAPPY",
+      "kind": "face:happy",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_happy_edge_repair.png",
+      "source_sha256": "6c7e052edd32db79404229e0cdc91e8011da28881b8981f82ea491502e626bf3",
+      "source_bytes": 48123,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_happy.png",
+      "client_sha256": "6c7e052edd32db79404229e0cdc91e8011da28881b8981f82ea491502e626bf3",
+      "previous_client_sha256": "5422ed63f176a7056a066a1920316dcc2845c120896ad921175cf5c840aac557",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_happy.png",
+      "uuid": "619cc861-d2f4-42cd-8d7c-7ccde6916bd2",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_happy.png.meta",
+      "meta_sha256": "7a7a6cf8daecc6e70d6b85796696f31774a0c28d0e8d07e3e5d47cccaa3eb105",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_aj_s2_face_happy",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_aj_s2_surprised",
+      "asset_id": "U04_FACE_AJ_S2_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_face_surprised_repair_full5_01.png",
+      "source_sha256": "2ed200e435f071521ad515e09130a9edff3d930b91da7ec6c50e149a0ecaa929",
+      "source_bytes": 50074,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_surprised.png",
+      "client_sha256": "2ed200e435f071521ad515e09130a9edff3d930b91da7ec6c50e149a0ecaa929",
+      "previous_client_sha256": "392174852734e717cb553208726be730cfffcda0c34cb6ee13ffd0d0bd10f647",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_surprised.png",
+      "uuid": "0d8e469a-6907-4495-9433-e961f0eb4ed0",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_surprised.png.meta",
+      "meta_sha256": "bd71c2a23ae4969b81f3c0d0ad9feaea5696c64805acf75cac84f3fa27d6a9ce",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_aj_s2_face_surprised",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_aj_s2_sad",
+      "asset_id": "U04_FACE_AJ_S2_SAD",
+      "kind": "face:sad",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_aj_s2_face_sad_v03.png",
+      "source_sha256": "d6c90d70b73de15f8673a8f45df2b92757a478fb2ad2ce9489b4a5effd89e5b9",
+      "source_bytes": 45914,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_sad.png",
+      "client_sha256": "d6c90d70b73de15f8673a8f45df2b92757a478fb2ad2ce9489b4a5effd89e5b9",
+      "previous_client_sha256": "77099734643d76b75a2950b2d52ded1b46d403487b1420081f3b888b578465ef",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_sad.png",
+      "uuid": "f8517a4e-a3f4-49f3-bd63-2ddbd83ddf2b",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_sad.png.meta",
+      "meta_sha256": "15610138a0a4c16b5efa22f6403a95d3827887220f68b75e5697f902d9ca988d",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_aj_s2_face_sad",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_aj_s2_smile",
+      "asset_id": "U04_FACE_AJ_S2_SMILE",
+      "kind": "face:smile",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_smile_edge_repair.png",
+      "source_sha256": "6eab924a3c96b3096783ead7b3a23957493751a3e92c5ddd45ebfb0091a46207",
+      "source_bytes": 46402,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_smile.png",
+      "client_sha256": "6eab924a3c96b3096783ead7b3a23957493751a3e92c5ddd45ebfb0091a46207",
+      "previous_client_sha256": "e23da1753f2e533089b408a011c43727777ced0bf19f8a08aeb19cec9d0dd117",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_smile.png",
+      "uuid": "0bef018d-280a-467a-aaa3-af4f10170c97",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_smile.png.meta",
+      "meta_sha256": "f736ea9b31a491e1b28be1cc1eacb97d44d1396e06c585d4f09f79047ea7d350",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_aj_s2_face_smile",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_aj_s2_angry",
+      "asset_id": "U04_FACE_AJ_S2_ANGRY",
+      "kind": "face:angry",
+      "stage": "AJ_S2",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_angry_edge_repair.png",
+      "source_sha256": "c67045c68deaff0e07327fdb2b049d6bb7cfd54105fb72ede07780f2f7235b23",
+      "source_bytes": 46256,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_angry.png",
+      "client_sha256": "c67045c68deaff0e07327fdb2b049d6bb7cfd54105fb72ede07780f2f7235b23",
+      "previous_client_sha256": "19254d8dc2ad7f7155dedca648e0c7c08a10c3a1d67686678b9e7a023331acd2",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_angry.png",
+      "uuid": "479aebf9-2a47-4eb6-9925-df0c3675249a",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_aj_s2_face_angry.png.meta",
+      "meta_sha256": "4a02735753d9eafa2de0b1febf7cd6cdb0e8979290caa2b7af4912e20385ac13",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_aj_s2_face_angry",
+      "dimensions_px": [
+        256,
+        256
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          245,
+          0,
+          839,
+          1024
+        ],
+        "base_source_to_export_scale": 1,
+        "face_source_rect_xyxy": [
+          365,
+          130,
+          621,
+          386
+        ],
+        "face_source_pivot_xy": [
+          493,
+          258
+        ],
+        "face_export_canvas_px": [
+          256,
+          256
+        ],
+        "face_offset_in_base_export_xy": [
+          120,
+          130
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "front_offset_in_base_export_xy": [
+          149,
+          170
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_portrait_ad_s0_base",
+      "asset_id": "U04_PORTRAIT_AD_S0_BASE",
+      "kind": "base",
+      "stage": "AD_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+      "source_sha256": "dc3e69729cbd8696333dfef3ba077dfc1dd728a31c17526e95cb41a114d3b594",
+      "source_bytes": 469047,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_base.png",
+      "client_sha256": "dc3e69729cbd8696333dfef3ba077dfc1dd728a31c17526e95cb41a114d3b594",
+      "previous_client_sha256": "03d0bcfc7e79ba7c4dd10ceda46acc17465c8f6f0b29fd71b7b309b74306eda0",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_base.png",
+      "uuid": "b13d386f-7a98-422c-a030-914e532377ba",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_base.png.meta",
+      "meta_sha256": "031bed1dffa4606e6ef0504d32f9660cfe6b6aca84d9dc5d4336e9ef2c5b8824",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_ad_s0_base",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_ad_s0",
+      "asset_id": "U04_FRONT_AD_S0",
+      "kind": "front",
+      "stage": "AD_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+      "source_sha256": "aab62f21a2d0a13fc9618a005a9c559dd3cde375da5be4c6fbc442d5f7b88c41",
+      "source_bytes": 8613,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_front.png",
+      "client_sha256": "aab62f21a2d0a13fc9618a005a9c559dd3cde375da5be4c6fbc442d5f7b88c41",
+      "previous_client_sha256": "b85ceeb72e024b13c33e00d0767fd727d7c495d865826badd478f888de149eb1",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_front.png",
+      "uuid": "4dcaa619-72c5-4164-82fb-1dd30e6cf946",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_ad_s0_front.png.meta",
+      "meta_sha256": "3b0a9a8ffcb0696ebccb5c2029084b4ba78bc206d010d36dbfc02459d519cfb5",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_ad_s0_front",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ad_s0_happy",
+      "asset_id": "U04_FACE_AD_S0_HAPPY",
+      "kind": "face:happy",
+      "stage": "AD_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_happy_v03.png",
+      "source_sha256": "58befe5a79d9d6030c149dfacc5c21dea5f4e7739729aa5426dbace8526b615d",
+      "source_bytes": 31817,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_happy.png",
+      "client_sha256": "58befe5a79d9d6030c149dfacc5c21dea5f4e7739729aa5426dbace8526b615d",
+      "previous_client_sha256": "b7699543c73eb67e7cd62c154f49e427085f4bccdac398de99f68663ec4b505a",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_happy.png",
+      "uuid": "cc5a3d24-87f2-4fd6-bbdd-814a3ff1bbd5",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_happy.png.meta",
+      "meta_sha256": "9c5b4c5748d5efc371c75d5e7bade1c20a62e85c6baa2d67dd20d4604112cb6d",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ad_s0_face_happy",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ad_s0_surprised",
+      "asset_id": "U04_FACE_AD_S0_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "AD_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_surprised_v03.png",
+      "source_sha256": "157124cae9a09bce0187badaf2d6c16ab4f2c7c5752e9fd601aa217bf3abb00a",
+      "source_bytes": 30907,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_surprised.png",
+      "client_sha256": "157124cae9a09bce0187badaf2d6c16ab4f2c7c5752e9fd601aa217bf3abb00a",
+      "previous_client_sha256": "290458c6efff5955d2675b0cc45ca5738c63161586471f9896d3ffee32da397a",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_surprised.png",
+      "uuid": "8792e58d-b5d3-4dd6-ab00-0e1aba5c34ae",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_surprised.png.meta",
+      "meta_sha256": "33e36ecf4181cf7d96fec9f57f2a348076a8fecedc0d701838e7f8535cfa7de0",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ad_s0_face_surprised",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ad_s0_sad",
+      "asset_id": "U04_FACE_AD_S0_SAD",
+      "kind": "face:sad",
+      "stage": "AD_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_sad_v03.png",
+      "source_sha256": "a9456dc04798ea43383af138a8f31067a7f344643b481f3755dba95630c9b61f",
+      "source_bytes": 29377,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_sad.png",
+      "client_sha256": "a9456dc04798ea43383af138a8f31067a7f344643b481f3755dba95630c9b61f",
+      "previous_client_sha256": "f5b3fbd1da5e34197926a7c9eab301b3bdf5d3a0f9b2cc02ef596fca1f6cf8fe",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_sad.png",
+      "uuid": "e0badc1e-519f-4603-a95b-65df4dff189d",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_sad.png.meta",
+      "meta_sha256": "45df24a71323386e8e03484e7398ac5b18a9975735dcf792848d7637503a273d",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ad_s0_face_sad",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ad_s0_smile",
+      "asset_id": "U04_FACE_AD_S0_SMILE",
+      "kind": "face:smile",
+      "stage": "AD_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_smile_v03.png",
+      "source_sha256": "26a6d598941052e547eaa540775071ddf7287030ae210b23c6292101dc3017f4",
+      "source_bytes": 28282,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_smile.png",
+      "client_sha256": "26a6d598941052e547eaa540775071ddf7287030ae210b23c6292101dc3017f4",
+      "previous_client_sha256": "6e17d59ba54b7511eb106381729881e21723fc0493df2b87e2c3768bf47e3fbd",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_smile.png",
+      "uuid": "cd8d60cb-0164-4009-8430-5169d7591dac",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_smile.png.meta",
+      "meta_sha256": "83635282422e12f4ea2b3e20deb0e30de9b0e7db53f6e6cc661472434021baae",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ad_s0_face_smile",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_ad_s0_angry",
+      "asset_id": "U04_FACE_AD_S0_ANGRY",
+      "kind": "face:angry",
+      "stage": "AD_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_angry_v03.png",
+      "source_sha256": "6b8b0516e7cbe139afb671b96d0844da39f54b6e9ea572178e51f2ba5b2e7a93",
+      "source_bytes": 32311,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_angry.png",
+      "client_sha256": "6b8b0516e7cbe139afb671b96d0844da39f54b6e9ea572178e51f2ba5b2e7a93",
+      "previous_client_sha256": "83f6b29b38d480007d14a44c32c3baa61bb44d5f94e539f2af90172b79e3c338",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_angry.png",
+      "uuid": "ea49bc77-d041-4896-9f09-b9f6373932a9",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_ad_s0_face_angry.png.meta",
+      "meta_sha256": "69b358fab11789e3250736ae3f537edd77639a244acb546a1792dee43be3e2f3",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_ad_s0_face_angry",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          310,
+          185,
+          566,
+          441
+        ],
+        "face_source_pivot_xy": [
+          438,
+          313
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          232,
+          139
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_portrait_xj_s0_base",
+      "asset_id": "U04_PORTRAIT_XJ_S0_BASE",
+      "kind": "base",
+      "stage": "XJ_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+      "source_sha256": "7a5e4bcf6271c09b878f054e5999dacc44a2631f516fc6a5415d2ceeaefda9be",
+      "source_bytes": 433899,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_base.png",
+      "client_sha256": "7a5e4bcf6271c09b878f054e5999dacc44a2631f516fc6a5415d2ceeaefda9be",
+      "previous_client_sha256": "9d51ed7fd12951adbe70e4e6e9732642651b1a9063ef16a345938649684c231b",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_base.png",
+      "uuid": "37b45aed-507c-401e-8259-ea89d03290a6",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_base.png.meta",
+      "meta_sha256": "1459cdcc3be52d14dd916bb9b36136eb9981c7123ea134122388559e4c4f7175",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_xj_s0_base",
+      "dimensions_px": [
+        768,
+        768
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_front_xj_s0",
+      "asset_id": "U04_FRONT_XJ_S0",
+      "kind": "front",
+      "stage": "XJ_S0",
+      "state": null,
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+      "source_sha256": "34dd233b7d3a1f262a424c2ede8f19c950462a2e5a4a14e103179c57c0557ea5",
+      "source_bytes": 45461,
+      "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_front.png",
+      "client_sha256": "34dd233b7d3a1f262a424c2ede8f19c950462a2e5a4a14e103179c57c0557ea5",
+      "previous_client_sha256": "82a90e715aad5b7256294e9581a184de237c9a777692dc1588cf45a312bdbb02",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_front.png",
+      "uuid": "43d2611a-41bf-4de4-98da-6cfd164e9827",
+      "meta_path": "apps/client/assets/units/dialogue/portraits/tex_u04_xj_s0_front.png.meta",
+      "meta_sha256": "a306e34b72703160d9807e3e1e6fe3d2aece060f29806ee6ccdb6d416c426b40",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "portraits/tex_u04_xj_s0_front",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_xj_s0_happy",
+      "asset_id": "U04_FACE_XJ_S0_HAPPY",
+      "kind": "face:happy",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_happy_v03.png",
+      "source_sha256": "4936e53163c099c5db7462254f2a54ba600566ba515e2028e3c898fd2e6b7550",
+      "source_bytes": 17317,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_happy.png",
+      "client_sha256": "4936e53163c099c5db7462254f2a54ba600566ba515e2028e3c898fd2e6b7550",
+      "previous_client_sha256": "7eb4e7e9eaef52a2719cdeccb385776a6bab5e1ce8c7f2fa809463f8d05a9f00",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_happy.png",
+      "uuid": "5e20b54c-8709-4eb7-ad89-32c351d654dd",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_happy.png.meta",
+      "meta_sha256": "4503c4b0d0bd8c242ae68e53c28c3f7d6f99a4ec6aeed456e39029c75c40dd96",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_xj_s0_face_happy",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_xj_s0_surprised",
+      "asset_id": "U04_FACE_XJ_S0_SURPRISED",
+      "kind": "face:surprised",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_surprised_v03.png",
+      "source_sha256": "0e103f4927988c3d16f3c42998b739a6b9fbc54cf2c9641b0adc4b0937caa79f",
+      "source_bytes": 27554,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_surprised.png",
+      "client_sha256": "0e103f4927988c3d16f3c42998b739a6b9fbc54cf2c9641b0adc4b0937caa79f",
+      "previous_client_sha256": "0cdcaf9a10c16384f343120349c281dd5b0a0681beab38218967b4576f1e347c",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_surprised.png",
+      "uuid": "f7a6e95e-a6f2-4d49-821a-4abe11e10f8e",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_surprised.png.meta",
+      "meta_sha256": "51bf6456e7e97e52de5e6856e74970fc667c10db00b0def4d2713c1d676d0bd5",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_xj_s0_face_surprised",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_xj_s0_sad",
+      "asset_id": "U04_FACE_XJ_S0_SAD",
+      "kind": "face:sad",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_sad_v03.png",
+      "source_sha256": "1e920451a6a9f6a9666884955924e6fc3d4d68b75910ead293d3a7fe70b258e1",
+      "source_bytes": 26229,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_sad.png",
+      "client_sha256": "1e920451a6a9f6a9666884955924e6fc3d4d68b75910ead293d3a7fe70b258e1",
+      "previous_client_sha256": "16eb8ab34f4ae26828533419c82a1dd3d7863219934941c9dc9fbc738941f58d",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_sad.png",
+      "uuid": "7af4fcf2-13e2-4001-a7f5-07a1023fb23f",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_sad.png.meta",
+      "meta_sha256": "6e6029cfc426a45d604c8088dc6b9bb8aad4eb23a81de0abdb0e97be3d84555b",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_xj_s0_face_sad",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_xj_s0_smile",
+      "asset_id": "U04_FACE_XJ_S0_SMILE",
+      "kind": "face:smile",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_smile_v03.png",
+      "source_sha256": "26b2b87e22d08e03424e9530a708c7cd9f64b6d47c835a7a34e87dc2e0262ebd",
+      "source_bytes": 25975,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_smile.png",
+      "client_sha256": "26b2b87e22d08e03424e9530a708c7cd9f64b6d47c835a7a34e87dc2e0262ebd",
+      "previous_client_sha256": "f34f31263fdf15e27b8a90d36e64421be80c88310bc74dfd4756efa6b8bdcda3",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_smile.png",
+      "uuid": "c4a844cc-a9fc-4375-ab61-1185d92a0378",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_smile.png.meta",
+      "meta_sha256": "1f88eecf4dccd5e69f27d7839c09b77dcbe669ad22e99f7e2fb6b055730aaeb0",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_xj_s0_face_smile",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    },
+    {
+      "stable_asset_id": "u04_face_xj_s0_angry",
+      "asset_id": "U04_FACE_XJ_S0_ANGRY",
+      "kind": "face:angry",
+      "stage": "XJ_S0",
+      "state": "angry",
+      "approved_source_version": "v0.3",
+      "source_path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_angry_v03.png",
+      "source_sha256": "cec84118591887be469052cd5be7bfd9568d06f5e5301929f49ddafb2866c3b4",
+      "source_bytes": 26979,
+      "client_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_angry.png",
+      "client_sha256": "cec84118591887be469052cd5be7bfd9568d06f5e5301929f49ddafb2866c3b4",
+      "previous_client_sha256": "5e70f626ec149777c778e35143e3b5bf1d3617e15936615ceb4755aade75c3ba",
+      "backup_path": "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/backup/pre_import/apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_angry.png",
+      "uuid": "5d75ea95-3583-4b40-9182-5b4fb8d15e97",
+      "meta_path": "apps/client/assets/units/dialogue/faces/tex_u04_xj_s0_face_angry.png.meta",
+      "meta_sha256": "de84a0ad511b4b6e2e40183864483b903683aefc7d9fb14913a48af8e9f60326",
+      "meta_unchanged": true,
+      "bundle": "dialogue",
+      "bundle_relative_path": "faces/tex_u04_xj_s0_face_angry",
+      "dimensions_px": [
+        192,
+        192
+      ],
+      "geometry_source": "apps/client/assets/units/dialogue/u04_layer_export_map.json handoff_normalized",
+      "geometry": {
+        "base": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "base_source_rect_xyxy": [
+          0,
+          0,
+          1024,
+          1024
+        ],
+        "base_source_to_export_scale": 0.75,
+        "face_source_rect_xyxy": [
+          330,
+          223,
+          586,
+          479
+        ],
+        "face_source_pivot_xy": [
+          458,
+          351
+        ],
+        "face_export_canvas_px": [
+          192,
+          192
+        ],
+        "face_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "front": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "front_offset_in_base_export_xy": [
+          248,
+          167
+        ],
+        "composition_order": [
+          "base",
+          "one face state",
+          "front"
+        ],
+        "switch_rule": "切店长或魂阶段时替换本组基底/表情/遮挡并同步姓名；只改表情时保留店长与魂阶段"
+      }
+    }
+  ],
+  "count": 42,
+  "geometry_preserved": true,
+  "all_source_bytes_preserved": true,
+  "all_meta_and_uuids_preserved": true,
+  "runtime_status": "NOT_TESTED_PENDING_MASTER_IN_APP_BROWSER",
+  "source_path_semantics": "For selected six stages, handoff_normalized.base/front path fields preserve historic geometry-source paths. These paths document the geometry provenance only; current production source path and SHA are each asset record source_path/source_sha256 and the stage base/front top-level path/hash in apps/client/assets/units/dialogue/u04_layer_export_map.json."
+}

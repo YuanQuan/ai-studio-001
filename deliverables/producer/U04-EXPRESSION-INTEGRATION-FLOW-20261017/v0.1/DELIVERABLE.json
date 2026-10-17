@@ -1,0 +1,30 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-FLOW-20261017",
+  "owner": "producer",
+  "summary": "准确Art v0.3用户批准、42资源接入及Creator v2新构建/IAB运行证据已登记；Client v0.1待用户审核，连续性无空挂。",
+  "artifacts": [
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "将用户“好的批准接入”绑定准确Art v0.3与SHA，保留退回历史，更新审批/任务/资源交接登记及看板。",
+      "result": "PASS",
+      "evidence": "Master USER_APPROVAL_AND_HANDOFF.json；本轮FLOW_REPORT.md、project审批/状态/资产登记/看板。"
+    },
+    {
+      "criterion": "持续记录接入实际证据、必要技术Review和运行门禁，周期末复盘可靠耗时并核无空挂，未用户验收的Client成果不提前DONE。",
+      "result": "PASS",
+      "evidence": "本目录CONTINUITY_CHECK.json与WORK_RETROSPECTIVE.md；Master CLIENT_INTEGRATION_REVIEW.json、TECH_SUPPORT_ACCEPTANCE.json和RUNTIME_VERIFICATION.json。"
+    }
+  ],
+  "assumptions": [
+    "单元示例不分派QA；Web结论不替代未测平台。"
+  ],
+  "risks": [
+    "Client v0.1运行成果尚待用户明确决定，不得标DONE。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

@@ -1,0 +1,20 @@
+{
+  "attempt": "v1",
+  "result": "BUILD_COMPLETED_BUT_RUNTIME_BLOCKED",
+  "creator_exit_code": 36,
+  "creator_finished_marker": "build Task (U04-EXPRESSION-INTEGRATION-CLIENT-20261017-web-mobile) Finished in (7 s)ms",
+  "project_snapshot_manifest_sha256": "fd7626ba25f3dde96c41bc36f57b6605d9bcbec0666f67a08a0a7e55a5f018b8",
+  "build_config_sha256": "0acab42ab04b84014123a2c4553a70ade4a5af5b47e3620c3b7c7932e4d995ae",
+  "output_index_sha256": "02a48cd131c0f6287f4ce5841b9084b34dfd4c13bd7d62eedc0a22d79f03981d",
+  "creator_cli_capture_sha256": "a468d317077dbda6109c1ac7f5ab2f8d5aae6cc44693bf4587b205b3062b90c3",
+  "creator_task_log_sha256": "a7382f9c259292c1b61df884ac1fbba31976afb3f8734cbbb9e27d4c8c5062a3",
+  "root_causes_confirmed": [
+    "配置bundle roots指向原快照不存在的assets/bundles/{world,tourist,shops,milk_tea}目录；v1只生成main/dialogue。",
+    "Master内置浏览器记录assets/world/index.js加载4928、SAKURA_V03 resources path失败。"
+  ],
+  "browser_failure_evidence": [
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v1_failed_bundle_load.png",
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v1_console_errors.json"
+  ],
+  "recovery": "改用已验证v0.8 portable staged asset tree作为只读基线，独立复制成v2；不改业务逻辑，仅覆盖本轮dialogue资源和映射，并使用新的buildPath/outputName。"
+}

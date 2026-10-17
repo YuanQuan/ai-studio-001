@@ -1,0 +1,42 @@
+{
+  "id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+  "title": "获批U04表情v0.3接入与实际Web构建",
+  "type": "integration",
+  "owner": "client",
+  "parent": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "objective": "获批U04表情v0.3接入与实际Web构建；用户已批准资源与接入，持续执行至真实运行结果提交USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/LAYER_EXPORT_MAP.json",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/BUILD_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RUNTIME_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确接入获批六阶段30态及其base/front，图片字节等于Art清单，稳定路径/meta UUID不变，其他60态与无关工作区改动保留。",
+    "Creator3.8.8真实导入和CLI新构建成功，固化输入/输出身份、可用HTTP实际Web入口及加载错误检查，不拿旧包充新包。",
+    "实际Web验证九处目标/共享层状态与30新态、90整体加载巡检/连续切换，记录截图与结论，未测平台/指标明确界限。",
+    "逐资源稳定ID/来源版本路径SHA/Client真实路径/UUID/几何登记及实现说明齐备，准确运行成果送用户审核。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "获批资源仅native PNG原字节接入，不重新生图/锐化/缩放导出。",
+    "单元示例，无QA Agent；Client gpt-6-luna/low、Tech与Producer gpt-6-sol/low。",
+    "Master负责正式Task/Git与内置浏览器运行；Owner不得创建子任务或执行Git。",
+    "Client只修改获批对应的apps/client/assets/units/dialogue PNG、必要元数据/几何及本交付目录；需要改代码先报Master。不改现有脏Gallery.ts/其他单元；构建使用隔离当前工程快照避免争用，准确登记输入。",
+    "Producer可更新本三Task、Art批准/接受记录与项目状态六文档；Tech只改自身交付目录，交叉修改需Master明确授权。",
+    "2026-10-17 首Required FEATURE_BRIEF.md实存；42目标PNG hash/备份/复制已实际执行，Creator3.8.8路径已核。新隔离Web构建/实际运行尚待。",
+    "2026-10-17 Master CLIENT_INTEGRATION_REVIEW.json APPROVED，准确Client v0.1运行成果送用户审核；用户决定空。"
+  ]
+}

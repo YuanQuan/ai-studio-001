@@ -30,7 +30,7 @@
     "准确v0.3直接呈用户审核，不导入Client、不称运行QA通过；原失败历史、累计调用与本轮实际尝试如实记录。"
   ],
   "dependencies": [],
-  "status": "USER_REVIEW",
+  "status": "DONE",
   "approval": "APPROVAL",
   "notes": [
     "用户明确要求局部修复，范围与语义不变；Art/Tech受影响范围复签后输出。",
@@ -45,6 +45,7 @@
     "2026-10-17 Tech独立实链复核：正确base+face(48,95)+front(72,140)native与source crop RGBA差0，U00 ROI差0；前述AC竖缝仅诊断拼图front错位假象。历史BLOCKED/误诊保留，本轮无第三次资产修改，第二轮实际成立，解除阻塞继续最终包。",
     "2026-10-17 Art v0.3八Required/四验收原文同序全PASS，Master核packet/manifest与视觉结果，准确自切图直送Gate2；用户决定空，Client锁。",
     "2026-10-17 Tech终核发现AD继承v0.2 base源与native约467px差异，部分可见；Art/Tech按Master最小收口路线补AD五态native768三层验证PSD，不修改PNG/旧fullPSD，不新增生图或修图轮次。现行v0.3身份待重绑，暂撤USER_REVIEW回IN_PROGRESS。",
-    "2026-10-17T08:42Z 准确v0.3经Master ART_PACKAGE_IDENTITY.json重绑247refs，直送Gate2 USER_REVIEW，用户决定空。"
+    "2026-10-17T08:42Z 准确v0.3经Master ART_PACKAGE_IDENTITY.json重绑247refs，直送Gate2 USER_REVIEW，用户决定空。",
+    "用户2026-10-17T08:50:51.219833Z批准准确v0.3并接入，Master deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json 同版冻结身份；Art固定产物及验收全PASS，单元示例无QA，Task DONE。"
   ]
 }

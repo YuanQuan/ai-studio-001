@@ -1,0 +1,55 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+  "owner": "client",
+  "summary": "获批Art v0.3 U04六阶段30态及对应base/front已按稳定路径接入；Creator 3.8.8隔离v2 Web构建和实际内置浏览器运行验证完成，提交用户审核。",
+  "artifacts": [
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/FEATURE_BRIEF.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RESOURCE_IMPORT_MAP.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/BUILD_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/RUNTIME_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/IMPLEMENTATION_REPORT.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v1-failure/BUILD_CHECK.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v1-failure/CREATOR_CLI_CAPTURE.txt",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v1-failure/CREATOR_TASK_LOG.txt",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v1-failure/V1_FAILURE_SUMMARY.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/SOURCE_MANIFEST.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/creator_input.tar.gz",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/web-mobile-recovery.json",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/CREATOR_CLI_CAPTURE.txt",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/CREATOR_TASK_LOG.txt",
+    "deliverables/client/U04-EXPRESSION-INTEGRATION-CLIENT-20261017/v0.1/evidence/build-v2/BUILD_OUTPUT_MANIFEST.json",
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/RUNTIME_VERIFICATION.json",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确接入获批六阶段30态及其base/front，图片字节等于Art清单，稳定路径/meta UUID不变，其他60态与无关工作区改动保留。",
+      "result": "PASS",
+      "evidence": "42张获批native PNG均与Art v0.3来源SHA一致，稳定客户端路径及.meta UUID保留；其余60态和无关工作区改动保护检查通过。见RESOURCE_IMPORT_MAP.json、BUILD_CHECK.json及Master IMPORT_IDENTITY_PROTECTION_CHECK.json。"
+    },
+    {
+      "criterion": "Creator3.8.8真实导入和CLI新构建成功，固化输入/输出身份、可用HTTP实际Web入口及加载错误检查，不拿旧包充新包。",
+      "result": "PASS",
+      "evidence": "Creator 3.8.8隔离v2恢复构建成功，输入/输出/设置清单及日志已固化；HTTP入口 http://127.0.0.1:8765/ 由Master内置浏览器实测，v2控制台warning/error 0。v1失败与唯一恢复记录完整保留。"
+    },
+    {
+      "criterion": "实际Web验证九处目标/共享层状态与30新态、90整体加载巡检/连续切换，记录截图与结论，未测平台/指标明确界限。",
+      "result": "PASS",
+      "evidence": "Master实际Web验证30新态、九处圈选与共享层、90态巡检/连续切换、三轴保留、返回重入及390×844视窗；52张截图均有SHA。未测平台及性能边界已明确记录。"
+    },
+    {
+      "criterion": "逐资源稳定ID/来源版本路径SHA/Client真实路径/UUID/几何登记及实现说明齐备，准确运行成果送用户审核。",
+      "result": "PASS",
+      "evidence": "逐资源stable ID、来源版本/path/SHA、客户端路径/UUID/meta/几何登记完整；实现说明及运行结果齐备并提交用户审核。handoff_normalized内base/front路径标注为历史几何来源，当前生产来源以顶层及本版资源清单为准。"
+    }
+  ],
+  "assumptions": [
+    "仅对批准的六组42个PNG执行原字节覆盖；handoff_normalized中的旧base/front源路径只用于历史几何溯源。"
+  ],
+  "risks": [
+    "仅验证Web web-mobile，不代表小游戏/原生平台兼容或真机性能通过。",
+    "示例任务由Client Owner自证，无QA Agent正式QA结论。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

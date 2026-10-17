@@ -1,0 +1,29 @@
+{
+  "task_id": "U04-EXPRESSION-INTEGRATION-FLOW-20261017",
+  "checked_at_utc": "2026-10-17T09:17:16Z",
+  "current_gate": "CLIENT_V0.1_USER_REVIEW_PENDING_USER_DECISION",
+  "tasks": [
+    {
+      "task_id": "U04-EXPRESSION-INTEGRATION-CLIENT-20261017",
+      "status": "USER_REVIEW",
+      "evidence": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/CLIENT_INTEGRATION_REVIEW.json"
+    },
+    {
+      "task_id": "U04-EXPRESSION-INTEGRATION-TECH-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/TECH_SUPPORT_ACCEPTANCE.json"
+    },
+    {
+      "task_id": "U04-EXPRESSION-INTEGRATION-FLOW-20261017",
+      "status": "REVIEW",
+      "evidence": "deliverables/producer/U04-EXPRESSION-INTEGRATION-FLOW-20261017/v0.1/FLOW_REPORT.md"
+    }
+  ],
+  "empty_ready_or_in_progress": [],
+  "build": "v2_recovery_PASS",
+  "runtime": "PASS_SCOPED_WEB_RUNTIME_READY_FOR_USER_REVIEW",
+  "http_url": "http://127.0.0.1:8765/",
+  "client_user_decision": null,
+  "qa": "NOT_APPLICABLE_UNIT_EXAMPLE",
+  "result": "PASS_NEXT_GATE_USER_REVIEW"
+}

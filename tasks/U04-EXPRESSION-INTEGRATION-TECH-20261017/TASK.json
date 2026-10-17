@@ -1,0 +1,39 @@
+{
+  "id": "U04-EXPRESSION-INTEGRATION-TECH-20261017",
+  "title": "U04 v0.3接入技术支持与运行同版审查",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "objective": "U04 v0.3接入技术支持与运行同版审查；用户已批准资源与接入，持续执行至真实运行结果提交USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-INTEGRATION-20261017/v0.1/USER_APPROVAL_AND_HANDOFF.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/LAYER_EXPORT_MAP.json",
+    "rules/cocos_cli_browser_workflow.md",
+    "agents/shared/skills/cocos-cli-browser/SKILL.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "核获批资源到稳定客户端路径/UUID/几何/生产PNG的准确性，保护未改资源与已有代码差异。",
+    "核Creator版本兼容的实际新构建/导入与Web产物身份，不接受旧包或拷错源。",
+    "独立审阅同版运行截图、状态切换及巡检证据，明确单元示例与未测平台界限。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "获批资源仅native PNG原字节接入，不重新生图/锐化/缩放导出。",
+    "单元示例，无QA Agent；Client gpt-6-luna/low、Tech与Producer gpt-6-sol/low。",
+    "Master负责正式Task/Git与内置浏览器运行；Owner不得创建子任务或执行Git。",
+    "Client只修改获批对应的apps/client/assets/units/dialogue PNG、必要元数据/几何及本交付目录；需要改代码先报Master。不改现有脏Gallery.ts/其他单元；构建使用隔离当前工程快照避免争用，准确登记输入。",
+    "Producer可更新本三Task、Art批准/接受记录与项目状态六文档；Tech只改自身交付目录，交叉修改需Master明确授权。",
+    "2026-10-17 Tech首Required deliverables/tech_lead/U04-EXPRESSION-INTEGRATION-TECH-20261017/v0.1/TECH_DESIGN.md实存；已核六阶段42 PNG与旧importmap几何一致，正在等实际导入/新构建。",
+    "2026-10-17 四Required齐、REVIEW APPROVED、DELIVERABLE READY_FOR_REVIEW；三验收与Task原文逐字同序，待Master内部接受。v1失败历史保留，v2构建/运行支持不代替Client用户决定。",
+    "2026-10-17 Master TECH_SUPPORT_ACCEPTANCE.json APPROVED，内部技术支持完成；不代替Client成果用户决定。"
+  ]
+}
