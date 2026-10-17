@@ -1,0 +1,37 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "脸缘局部修订 v0.2 已完成独立静态技术核验，同批预签与最终切片/PSD源链可追溯；具体效果直送用户 Gate2 审核。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DIAGNOSIS.md",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/REVISION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ASSET_MANIFEST.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "独立核圈出位置与实际alpha/遮挡链，区分采样和真实层污染。",
+      "result": "PASS",
+      "evidence": "DIAGNOSIS.md 和 TECH_CHECK.json：AJ 眉额发face半透明侵入、下颊base原像素软化分因；透明front RGB与可见alpha分开判断；先验ROI经总板坐标核正。"
+    },
+    {
+      "criterion": "同批局部方案预签，固定尺寸坐标和三层契约；切片直接交用户不增效果复审门槛。",
+      "result": "PASS",
+      "evidence": "REVISION_PRESIGN.json 绑定Art三份v0.2预案SHA与签时；0生成、最多两轮、原生几何与base→单态face→front不变。"
+    },
+    {
+      "criterion": "核实际受影响资源/PSD重组和修改区外差异，明确静态与未运行界限。",
+      "result": "PASS",
+      "evidence": "TECH_CHECK.json：受影响切片与U00差异区外0；四组20态语义层重组逐像素相等、PSD嵌入层代表链可见RGB/alpha相等；最终manifest 230条SHA匹配、30态总板逐格原裁匹配。"
+    }
+  ],
+  "assumptions": [
+    "用户圈图原附件没有本地路径，允许ROI以Master可视圈框和原30态总板坐标登记；实际修改仅在预登记窄边且区外零差异。"
+  ],
+  "risks": [
+    "AJ新眉语义层内仍有低alpha阴影，进一步宽幅清除会暴露旧眉碎段；Art保留拒绝试验与视觉说明，交用户按v0.2实际效果判断。",
+    "目标平台采样、压缩、色彩与运行遮挡尚未实测，须待Gate2批准并正式接入后验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

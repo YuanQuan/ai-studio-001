@@ -1273,3 +1273,8 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 - Art准备12:07:41→Gate2准确包登记14:25:20，墙钟2小时17分39秒，含跨角色制作、工具和核验，不是单人净工时。六样视觉72分53秒、完整release78分45秒，均<90分钟cap。具体证据、可证实返工环节及建议见 `deliverables/producer/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/WORK_RETROSPECTIVE.md`。
 - MTAT前四次调用初漏pre-call登记，后从本Task真实session日志恢复可观察调用包络并留原Unknown快照；GPU/内部服务时长与费用未知。Gate2 USER_REVIEW待用户决定；Producer四Required经Master内部接受于2026-10-17T14:29:48+08:00 DONE；自12:07:41墙钟2:22:07含Gate2后的流程核录等待，不是图像制作耗时。
 <!-- U04-EXPRESSION-REPAIR-RESUME-20261017 END -->
+
+<!-- U04-EXPRESSION-EDGE-REVISION-20261017 START -->
+### WR-20261017-U04-EXPRESSION-EDGE-REVISION-001｜Gate2 v0.2 送审
+- 用户退回 `2026-10-17T07:13:13Z` 至Producer收口 `07:50:33Z`，UTC墙钟37分20秒，含诊断、修复、Tech静态核、跨角色交接与流程登记，不是任一角色净制作时间；分段净时长与用户审批等待未知。Art v0.2 `USER_REVIEW`、Tech内部`DONE`，Client锁。可证实返工为两类边缘污染与两项拒绝试验，尚无同类时限基线；建议及复核点详`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md`。
+<!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

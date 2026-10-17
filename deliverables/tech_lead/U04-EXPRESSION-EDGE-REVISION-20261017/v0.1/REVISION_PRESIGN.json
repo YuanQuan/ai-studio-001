@@ -1,0 +1,32 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "batch": "U04-EXPRESSION-EDGE-REVISION-20261017",
+  "art_batch_version": "v0.2",
+  "art_inputs": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_PRESIGN.json"
+  ],
+  "status": "TECH_PRESIGNED_BEFORE_AJ_HAPPY_SAMPLE",
+  "decision": "同意本批既有PSD/alpha的局部确定性修复，先AJ_S2 happy代表样，通过后才扩到诊断证实的同类态。",
+  "technical_conditions": [
+    "1024x1536母版、face原生尺寸/矩形/偏移/pivot及base→单态face→front顺序不变。",
+    "仅修改证实污染的feature/face alpha与必要可见base/front边，保留新五官与原发眉轮廓；透明RGB单独记录，不当成可见污染。",
+    "修图前先将用户圈选范围映射并登记为source/native允许ROI；事后diffmask只核结果，不能反定义授权ROI；原眉发恢复须避开旧五官表情。",
+    "代表样交前后原生及同背景同视窗真实U00、PSD重组、差异遮罩与ROI外RGBA零差异；同一归一化alpha合成条件比较。",
+    "生成调用0，代表候选1，最多两轮有诊断的局部修订；如需补洞或扩大视觉语义/区域，停止并交Master决定。",
+    "旧v0.1只读；只重导失效层并保留路径/hash映射。自产切图Gate2直接呈用户，技术检查不构成额外成品效果复审门槛。",
+    "首样前按原30态总板裁切坐标核正圈区映射：AJ happy下颊中心约native(197,180)，MT happy下颊中心约native(193,205)；原先验ROI未覆盖，须修订先验ROI后动笔。"
+  ],
+  "limitations": [
+    "本预签不等于代表样或30态成品通过",
+    "静态重组不能替代Client实际导入/目标机采样、用户Gate2批准或适用QA"
+  ],
+  "signed_at_utc": "2026-10-17T07:17:33Z",
+  "art_input_sha256": {
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ART_BRIEF.md": "bca079c9284e7dca1f18783c5a4df769e878bf86d019281820f61e15d9a8fffc",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS.json": "f5e1a95048062bf985f6e75f7e6a02a73e7c5f64f6f65ac90b86510b79fc6465",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_PRESIGN.json": "e0680d96973c3bff6552591bc45b6d250c0645258851e9abfe9ecc2087bd756c"
+  },
+  "change_control": "同批预签绑定以上文件SHA；后续补充诊断写addendum或新报告，不静默改写预签输入。"
+}

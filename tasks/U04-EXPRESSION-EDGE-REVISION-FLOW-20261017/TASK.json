@@ -1,0 +1,34 @@
+{
+  "id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+  "title": "维护用户退回、修订版本和流程",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "维护用户退回、修订版本和流程；在既有方案内局部返工，止于具体版本USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/USER_REVISION_AUTHORIZATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "记录v0.1用户退回及局部授权，维护开工里程碑、审批、看板，Client锁不变。",
+    "最终版本和Required齐备，连续性和可核耗时复盘完整，不增用户门禁，不将未批资源DONE。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户明确要求局部修复，范围与语义不变；Art/Tech受影响范围复签后输出。",
+    "美术gpt-6-sol/high，Tech/Producer gpt-6-sol/low。Master负责Git；专业Agent不执行Git、不创建子任务。",
+    "2026-10-17T07:15:58Z Producer已实写FLOW_REPORT.md并登记旧v0.1用户退回；Art/Tech经Master转报已有实际诊断动作，现IN_PROGRESS，待正式文件落盘后绑定。",
+    "2026-10-17T07:50:33Z 四Required与两验收齐，continuity PASS_NEXT_GATE_USER_REVIEW；待Master内部接受。",
+    "2026-10-17 Master PRODUCER_SUPPORT_ACCEPTANCE.json APPROVED：四Required与两验收原文同序PASS；内部支持DONE，不代替Art Gate2用户决定。"
+  ]
+}

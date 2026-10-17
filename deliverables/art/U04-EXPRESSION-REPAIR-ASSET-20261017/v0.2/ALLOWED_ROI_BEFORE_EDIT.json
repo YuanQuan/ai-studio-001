@@ -1,0 +1,69 @@
+{
+  "version": "v0.2",
+  "record_type": "先验允许区域，建立于首张样图修订前；差异遮罩只作事后验证，不得据结果倒推本文件",
+  "status": "REGISTERED_BEFORE_FIRST_EDIT",
+  "coordinate_rule": "所有 xyxy 为左上含、右下不含的切片原生像素坐标；源画布换算见各 stage 的 source_rect 与 scale；仅允许在矩形内部的发丝/眉缘/颊缘窄边修改，不授权矩形整体重铺",
+  "stages": {
+    "AJ_S2": {
+      "states": ["happy", "sad", "smile", "angry"],
+      "native_face_px": [256, 256],
+      "source_rect_xyxy": [365, 130, 621, 386],
+      "native_to_source_scale": [1, 1],
+      "regions_xyxy": {
+        "image_right_forehead_hair_brow": [116, 30, 207, 105],
+        "image_right_cheek_upper_hair": [172, 94, 224, 152],
+        "image_right_lower_cheek_edge": [165, 143, 230, 220],
+        "image_left_cheek_outline_if_marked": [22, 133, 90, 185]
+      },
+      "protected": "新表情眼型、瞳孔、眉主体、嘴、脸中央及原有窄发丝线；不得复制旧眉眼状态"
+    },
+    "AJ_S2_same_base_surprised": {
+      "states": ["surprised"],
+      "native_face_px": [256, 256],
+      "source_rect_xyxy": [365, 130, 621, 386],
+      "native_to_source_scale": [1, 1],
+      "regions_xyxy": {"image_right_lower_cheek_edge": [165, 143, 230, 220]},
+      "protected": "仅当确认共用 base 的同一颊线污染时修改；新 surprised 五官绝不变"
+    },
+    "MT_S2": {
+      "states": ["happy"],
+      "native_face_px": [256, 256],
+      "source_rect_xyxy": [360, 100, 616, 356],
+      "native_to_source_scale": [1, 1],
+      "regions_xyxy": {
+        "image_right_cheek_hair": [139, 67, 227, 171],
+        "image_right_lower_cheek_edge": [149, 168, 244, 247]
+      },
+      "protected": "眼睛、嘴、脸中央及额发轮廓"
+    },
+    "MT_S2_same_base_other_states": {
+      "states": ["surprised", "sad", "smile", "angry"],
+      "native_face_px": [256, 256],
+      "source_rect_xyxy": [360, 100, 616, 356],
+      "native_to_source_scale": [1, 1],
+      "regions_xyxy": {"image_right_lower_cheek_edge": [149, 168, 244, 247]},
+      "protected": "仅共用 base 同一颊线污染；四态 face 及五官不修改"
+    },
+    "AD_S0": {
+      "states": ["surprised", "sad", "angry"],
+      "native_face_px": [192, 192],
+      "source_rect_xyxy": [310, 185, 566, 441],
+      "native_to_source_scale": [1.3333333333, 1.3333333333],
+      "regions_xyxy": {
+        "image_left_forehead_hair_brow": [23, 10, 95, 78],
+        "image_right_forehead_hair_brow": [91, 6, 169, 76]
+      },
+      "protected": "新状态眉形与眼型主体、额发实线与脸中央"
+    },
+    "XJ_S0": {
+      "states": ["surprised"],
+      "native_face_px": [192, 192],
+      "source_rect_xyxy": [330, 223, 586, 479],
+      "native_to_source_scale": [1.3333333333, 1.3333333333],
+      "regions_xyxy": {"image_left_forehead_hair_brow": [8, 4, 111, 72]},
+      "protected": "眼镜、瞳孔、右额发、表情眉形与嘴"
+    }
+  },
+  "other_21_states": "先逐态视觉扫描；仅确认与用户圈区相同的边界缺陷后，先补登记对应 ROI 再编辑",
+  "basis": "用户授权中的画面方位文字、v0.1 30态真实显示板与原生透明切片放大检查；Master 再核用户圈外接并按旧总板映射 AJ 下颊 native≈[165,143,230,220]、MT≈[149,168,244,247]。AJ 共用 base 的 surprised 下颊先列同类观察/修正许可。以上均在正式 v0.2 图片编辑前记录；本文件为允许范围的上界，实际笔触应更窄。"
+}

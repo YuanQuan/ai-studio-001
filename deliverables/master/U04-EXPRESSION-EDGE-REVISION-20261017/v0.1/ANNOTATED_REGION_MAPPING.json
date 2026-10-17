@@ -1,0 +1,61 @@
+{
+  "recorded_at_utc": "2026-10-17 07:20:53 UTC",
+  "coordinate_basis": "用户第二张红圈标注图；与原1107×1290总板同坐标；人工读取的近似外接框，并非用户上传原文件或精确蒙版。",
+  "board_metadata": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/U04_30_STATE_NAMED_ACTUAL_SCALE.json",
+  "conversion": "MT/AT/AC/AJ: U00=(-55,210)+(614/1024*x,510/850*y)。由board_xy和U00 crop反算source，再减face_source_rect左上。",
+  "lower_cheek_regions": [
+    {
+      "stage": "MT_S2",
+      "state": "happy",
+      "board_xyxy_approx": [
+        208,
+        163,
+        265,
+        210
+      ],
+      "native_xyxy_approx": [
+        149,
+        168,
+        244,
+        247
+      ]
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "happy",
+      "board_xyxy_approx": [
+        218,
+        763,
+        257,
+        809
+      ],
+      "native_xyxy_approx": [
+        165,
+        143,
+        230,
+        220
+      ]
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "smile",
+      "board_xyxy_approx": [
+        795,
+        766,
+        852,
+        805
+      ]
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "angry",
+      "board_xyxy_approx": [
+        990,
+        770,
+        1038,
+        815
+      ]
+    }
+  ],
+  "note": "圈内中心可能alpha0，仍须核圈域近嘴角/发缘处羽化和base局部；只改确诊窄边，不整块重铺。"
+}

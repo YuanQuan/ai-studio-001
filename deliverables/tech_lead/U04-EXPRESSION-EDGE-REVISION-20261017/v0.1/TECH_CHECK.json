@@ -1,0 +1,98 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "version": "v0.1",
+  "stage": "final_v0.2_static_technical_check",
+  "status": "PASS_FOR_GATE2_USER_REVIEW_STATIC_ONLY",
+  "source_sample": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/sample_aj_happy",
+  "sample_produced_at_utc": "2026-10-17T07:24:00Z",
+  "checks": [
+    {
+      "item": "pre_registered_roi",
+      "result": "PASS",
+      "evidence": "v0.2/ALLOWED_ROI_BEFORE_EDIT.json 在正式样图前登记；AJ 下颊修正为 native [165,143,230,220]。"
+    },
+    {
+      "item": "face_sample_against_v01",
+      "result": "PASS",
+      "evidence": "256x256 RGBA，差异308像素，bbox native [144,37,201,121]，全部落允许眉额发 ROI；alpha 变化308像素，RGB变化72像素。"
+    },
+    {
+      "item": "base_face_roi_against_v01",
+      "result": "PASS",
+      "evidence": "从旧base按face offset [120,130]裁256x256与新base ROI比较，差异725像素，bbox native [165,145,230,213]，全部落先验下颊 ROI。"
+    },
+    {
+      "item": "u00_same_scale_against_v01",
+      "result": "PASS",
+      "evidence": "1280x720 RGB 差异518像素，bbox U00 [248,311,303,416]；投影受影响区加过滤边界外差异0。"
+    },
+    {
+      "item": "visual_sample",
+      "result": "PASS",
+      "evidence": "查看眉额发与下颊12倍前后对照：发丝暗线和颌线连续性改善，新眼嘴可见形态未见变化；此为技术样张放行扩批，不替代Art判断与用户Gate2。"
+    },
+    {
+      "item": "AJ_S2_all_five_states_native_and_u00",
+      "result": "PASS",
+      "evidence": "五态face差异 happy308/surprised0/sad309/smile309/angry309像素；四张变更face bbox仅[144,36/37,201,121]，均在先验眉额发ROI，surprised沿用旧face。五张1280x720 U00差异518/287/502/501/485像素，均局限同一眉额发及下颊投影区。新AJ共用base下颊差异bbox[165,145,230,213]，在先验ROI。"
+    },
+    {
+      "item": "AJ_S2_PSD_structure",
+      "result": "PASS",
+      "evidence": "新版PSD头为1024x1536 RGB 8-bit；ImageMagick识别49个image records（复合图+48层），源层manifest登记五态互斥及8个局部语义层；尚未把结构检查冒称运行接入。"
+    },
+    {
+      "item": "MT_S2_native_base_five_states_u00",
+      "result": "PASS",
+      "evidence": "新native base与旧均651x1024 RGBA，差异891像素，native base bbox[291,268,377,324]，按face offset[142,100]为face native[149,168,235,224]，完全在预登记MT下颊ROI[149,168,244,247]。五态face沿用旧hash；五张U00仅受共用base影响，差异402/402/407/402/405像素，bbox落[248,369/370,303,406]。"
+    },
+    {
+      "item": "AD_S0_native_base_faces_u00",
+      "result": "PASS",
+      "evidence": "768x768 native base差异292像素 bbox[313,149,332,177]在先验共用base追加ROI[307,149,332,188]；surprised/sad face变28/14像素，bbox分别[25,11,146,34]/[32,11,113,34]在双眉ROI；happy/smile/angry face像素零变化。五U00差异212/238/209/216/214像素，局限额发与眉缘投影。"
+    },
+    {
+      "item": "XJ_S0_faces_u00",
+      "result": "PASS",
+      "evidence": "native base未变；仅surprised face变380像素 bbox[31,10,111,46]在先验左眉ROI[8,4,111,72]；其U00变172像素 bbox[217,282,245,301]，其他四态face和U00均零差。"
+    },
+    {
+      "item": "semantic_layers_to_face_all_affected_stages",
+      "result": "PASS",
+      "evidence": "独立读取新版语义层清单并按层序合成：AJ/MT各五态256² RGBA与正式face逐像素完全相等；AD/XJ各五态先256²合成，再Pillow LANCZOS缩到192²，与正式face逐像素完全相等。"
+    },
+    {
+      "item": "PSD_visibility_and_source_chain",
+      "result": "PASS",
+      "evidence": "解析PSD v1 layer-record flags：AJ/MT各48层，默认仅happy新组六层+base/front可见；AD五份各43层，分别仅对应态新组五层+base/front可见；XJ新版主PSD43层，默认surprised新组五层+base/front可见，旧组隐藏。XJ stage主PSD已指v0.2。"
+    },
+    {
+      "item": "manifest_identity",
+      "result": "PASS",
+      "evidence": "最终Art v0.2 ASSET_MANIFEST SHA-256 f05f2c773c21a078df906237d06f2d15eed81134cfd2d82b8b8399b43224e189；递归230条path/SHA引用全部存在且匹配。"
+    },
+    {
+      "item": "embedded_PSD_bitmap_representatives",
+      "result": "PASS",
+      "evidence": "独立由ImageMagick逐层解码PSD嵌入位图，按PSD图层偏移对源PNG裁片比较可见RGB与alpha：AJ共用base、AJ angry右眉、AD共用base、AD surprised右眉、XJ surprised左眉共5条代表链均alpha差0/可见RGB差0。透明像素隐藏RGB不计视觉差。此检查跨共用base、256 face、256→192 face路径。"
+    },
+    {
+      "item": "final_psd_slices_30_states",
+      "result": "PASS",
+      "evidence": "修订四组20态语义层逐态合成与face像素相等；PSD实际嵌入位图五条代表链与源PNG可见RGB/alpha相等；AJ/MT/AD/XJ受影响native切片差异均在先验ROI；AT/AC保持旧hash。"
+    },
+    {
+      "item": "thirty_state_actual_scale_board",
+      "result": "PASS",
+      "evidence": "v0.2总板30格均与各1280x720 U00源图172x172直裁像素完全相等，board SHA匹配其索引；未重复缩放。"
+    },
+    {
+      "item": "client_runtime",
+      "result": "NOT_TESTED",
+      "evidence": "未正式接入，Gate2待用户批准。"
+    }
+  ],
+  "decision": "v0.2静态技术检查通过，可直送用户Gate2具体切片与重组审核；本结论不构成独立成品效果专业复审门槛，也不替代用户批准、Client导入/UUID、目标机运行或适用QA。",
+  "checked_at_utc": "2026-10-17T07:46:20Z",
+  "art_manifest_sha256": "f05f2c773c21a078df906237d06f2d15eed81134cfd2d82b8b8399b43224e189"
+}

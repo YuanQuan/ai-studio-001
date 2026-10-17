@@ -1,0 +1,34 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "version": "v0.2",
+  "status": "ART_AND_TECH_STATIC_PASS_PENDING_GATE2_USER_REVIEW",
+  "old_v01_files_checked": 1344,
+  "old_v01_hash_mismatches": [],
+  "changed_base_slices": [
+    "MT_S2",
+    "AJ_S2",
+    "AD_S0"
+  ],
+  "changed_face_slices": [
+    "AJ_S2_happy",
+    "AJ_S2_sad",
+    "AJ_S2_smile",
+    "AJ_S2_angry",
+    "AD_S0_surprised",
+    "AD_S0_sad",
+    "XJ_S0_surprised"
+  ],
+  "changed_u00_count": 16,
+  "unchanged_u00_count_in_revised_four_stages": 4,
+  "all_base_face_diff_pixels_outside_pre_registered_roi": 0,
+  "all_u00_diff_pixels_outside_projected_pre_registered_roi": 0,
+  "semantic_state_recompositions_exact": 20,
+  "asset_manifest_path_sha_entries_verified": 230,
+  "asset_manifest_path_sha_mismatches": 0,
+  "review_board_30_cells": "review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+  "circle_comparisons": 13,
+  "diff_masks": 30,
+  "note": "AT_S0 与 AC_S0 十态直接引用 v0.1 原 hash；XJ 另四态 U00 与 face 不改。未做 Client 正式导入或运行 QA。",
+  "tech_final_check": "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_CHECK.json",
+  "thirty_state_scan": "THIRTY_STATE_VISUAL_SCAN.json"
+}

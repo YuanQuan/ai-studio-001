@@ -1,0 +1,55 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "owner": "art",
+  "summary": "v0.2 对用户圈出的额发、眉缘和下颊低频肤色糊层定向修订；四组受影响PSD/切片和16张变化U00、30态新总板、前后圈区图及差异遮罩齐备，Art/Tech静态核验通过，提交具体版本 Gate2 用户审核。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS_FINAL_ADDENDUM.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ALLOWED_ROI_BEFORE_EDIT.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ALLOWED_ROI_AD_SHARED_BASE_ADDENDUM_BEFORE_EDIT.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_DIFF_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/SEMANTIC_STATE_RECOMPOSE_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/THIRTY_STATE_VISUAL_SCAN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/PRODUCTION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/TRIAL_LOG.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/U04_30_STATE_NAMED_ACTUAL_SCALE.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/circle_before_after/INDEX.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐处定位圈出缺陷及30态同类项，记录源层/蒙版原因与修改区域，不误删原画正确线条。",
+      "result": "PASS",
+      "evidence": "DIAGNOSIS_FINAL_ADDENDUM.json、两份先验ROI、THIRTY_STATE_VISUAL_SCAN.json；AJ眉灰拒绝试验保留正常柔边。"
+    },
+    {
+      "criterion": "当前PSD与切片局部修订，未改区域零差异，表情身份不变，旧v0.1保留。",
+      "result": "PASS",
+      "evidence": "REVISION_DIFF_CHECK.json列3 base、7 face、20 U00差异遮罩且ROI外0；Master基线1344文件SHA复核0变更；13圈区前后图。"
+    },
+    {
+      "criterion": "受影响PSD、透明切片、同尺度U00重组与前后近图实际存在并一致，未影响文件沿用原hash。",
+      "result": "PASS",
+      "evidence": "ASSET_MANIFEST.json 230引用SHA全匹配；SEMANTIC_STATE_RECOMPOSE_CHECK.json四组20态精确一致；Tech最终TECH_CHECK.json核PSD嵌入层、native三层及总板30格直裁。"
+    },
+    {
+      "criterion": "准确v0.2具体资源直接送用户审核，不导入Client，不称运行QA通过；预算与限制如实记录。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md、PRODUCTION_LEDGER.json记本轮imagegen 0与接受1/拒绝2；正式Client路径仅计划、UUID为空，Gate2待用户审。"
+    }
+  ],
+  "assumptions": [
+    "本轮退回是同已获批制作方案内局部返工；共享base改变使MT/AJ/AD各五态U00继承同一修订，AT/AC不动。"
+  ],
+  "risks": [
+    "AJ右眉新版语义层内部低alpha柔边保留；更强收边会露旧眉碎段，相关试验已拒绝并留证。",
+    "静态U00与PSD核验不能代替批准后的Client真实运行及适用QA。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

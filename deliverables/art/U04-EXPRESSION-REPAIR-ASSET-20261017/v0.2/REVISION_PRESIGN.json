@@ -1,0 +1,13 @@
+{
+  "version": "v0.2",
+  "batch": "U04-EXPRESSION-EDGE-REVISION-20261017",
+  "status": "ART_SIGNED_AWAITING_TECH",
+  "art_signoff": "同意仅对诊断证实的眉缘、额发、颊缘污染做现有 PSD/alpha 局部修订，先 AJ_S2 happy 代表样，符合零差异和同尺度效果才扩批。",
+  "scope": ["MT_S2:happy", "AJ_S2:happy,sad,smile,angry", "AD_S0:surprised,sad,angry", "XJ_S0:surprised", "30态同类项仅经逐态证实后纳入"],
+  "source": "v0.1 PSD、face、base/front、mask 和 U00 画面，旧文件只读",
+  "output": "v0.2 局部 PSD、face PNG、U00 同尺度图、30态总板、前后近图、差异遮罩、映射与清单",
+  "invariants": ["1024x1536 母版坐标", "既有 face 原生尺寸与 pivot", "base→单态face→front", "未改区域 RGBA 零差异", "表情语义、身份、身体、服装、道具不变"],
+  "method": "确定性本地蒙版/alpha 修订；不锐化整图、不重新生成、不引入新素材",
+  "budget": {"imagegen_calls_max": 0, "candidate_sample_count": 1, "revision_rounds_max": 2, "time_limit": "未获定量上限；记录实际墙钟", "cost_limit": "无工具调用费用，其他费用未知"},
+  "gate": "Tech 对同一版本预签后才出首张 AJ 代表样；Gate2 用户具体资源审批前 Client 禁止正式接入"
+}

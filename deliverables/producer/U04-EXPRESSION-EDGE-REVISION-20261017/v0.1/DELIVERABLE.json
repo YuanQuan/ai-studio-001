@@ -1,0 +1,30 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+  "owner": "producer",
+  "summary": "准确v0.1用户退回与v0.2现行Gate2版本链、旧链承接、Client锁和跨角色里程碑已同步；连续性检查无空挂任务，待Master内部接受。",
+  "artifacts": [
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录v0.1用户退回及局部授权，维护开工里程碑、审批、看板，Client锁不变。",
+      "result": "PASS",
+      "evidence": "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/FLOW_REPORT.md；project/APPROVAL_LOG.md、WORKFLOW_STATUS.md及dashboard独立本轮块。"
+    },
+    {
+      "criterion": "最终版本和Required齐备，连续性和可核耗时复盘完整，不增用户门禁，不将未批资源DONE。",
+      "result": "PASS",
+      "evidence": "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/CONTINUITY_CHECK.json；deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md；Master GATE2_PACKAGE_IDENTITY.json。"
+    }
+  ],
+  "assumptions": [
+    "旧v0.1三Task为退回历史链，无独立v0.2待办；新Art Task统一承接。"
+  ],
+  "risks": [
+    "准确v0.2尚待用户明确决定，Client正式导入与运行画面验证未开始。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

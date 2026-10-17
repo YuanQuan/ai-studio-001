@@ -1,0 +1,32 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+  "checked_at_utc": "2026-10-17T07:50:33Z",
+  "current_gate": "ART_V0.2_USER_REVIEW_PENDING_USER_DECISION",
+  "open_tasks": [
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+      "status": "USER_REVIEW",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md"
+    },
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_SUPPORT_ACCEPTANCE.json"
+    },
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/PRODUCER_SUPPORT_ACCEPTANCE.json"
+    }
+  ],
+  "historical_revision_chain": [
+    "U04-EXPRESSION-REPAIR-ASSET-20261017",
+    "U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017",
+    "U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017"
+  ],
+  "historical_chain_note": "准确v0.1用户退回/Approval REJECTED，已由新Art v0.2整包承接，无独立待办",
+  "empty_ready_or_in_progress": [],
+  "client_formal_import": "LOCKED_PENDING_V0.2_GATE2_USER_APPROVAL",
+  "qa": "NOT_APPLICABLE_UNIT_EXAMPLE",
+  "result": "PASS_NEXT_GATE_USER_REVIEW_PRODUCER_INTERNAL_DONE"
+}

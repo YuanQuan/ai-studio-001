@@ -1,0 +1,12 @@
+{
+  "record_type": "预签诊断的成品补记；ART_BRIEF、DIAGNOSIS、REVISION_PRESIGN 保持签认时原 SHA，不回写",
+  "causes": {
+    "MT_S2": "五态共用底图的右下颊/发缘被清脸基础层的低频羽化磨成灰断带。只用已获批原画同位像素还原窄颌线；face、front 五态均不改。",
+    "AJ_S2": "happy/sad/smile/angry 的 face 羽化肤色叠到基底深发丝与右眉额发附近；五态共用 base 的右下颊线另有基础层低频污染。前者只减局部语义层 alpha、保留新眉眼；后者沿已获批原图窄带还原。surprised face 不改，只继承共用 base。左颊观察框本轮未改。",
+    "AD_S0": "五态共用 base 的中央额发尖清脸羽化变灰，获批原图有可追溯清晰发尖；在先验补登记的 native [75,10,100,49) 只还原深发尖，避开原左右眉。surprised/sad face 的两处眉缘另有极少量肤色羽化，分别只调整 28/14 像素；angry face 本身未检测到需改的同类残边，保持旧 hash，但同样继承共享发尖底图校正。happy/smile 也只继承共用底图。",
+    "XJ_S0": "surprised 左额发与眉缘的 face 肤色低频软边压在原青发眉线上；只在先验 ROI 内收 380 个 face 像素的语义层 alpha。base、front 与其他四态 face/U00 不改。"
+  },
+  "aj_right_brow_residual_gray": "代表样上右眉紧邻灰柔边位于新版眉语义层内部，为原候选保留的低 alpha 阴影/抗锯齿；进一步清空或压暗会露出旧眉碎段，两个拒绝试验均已记录。它不同于本轮修复的肤色蒙在基底发丝上的灰糊，故没有强行锐化。",
+  "protection": "原眼型、嘴、表情眉主体及 front 遮挡保持；所有编辑均先登记允许 ROI，差异遮罩只用于事后检验。",
+  "uncertainty": "逐像素结论来自现有可检 PSD/语义层、透明切片与同尺度 U00；没有声称 Client 运行 QA 已完成。"
+}

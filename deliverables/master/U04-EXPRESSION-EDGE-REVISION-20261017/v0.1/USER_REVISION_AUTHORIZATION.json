@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-17T07:13:13Z",
+  "user_instruction": "脸部画圈的有一层模糊的地方需要修一下",
+  "decision": "CHANGES_REQUESTED",
+  "previous_package": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+  "previous_version": "v0.1",
+  "authorized_scope": "定位并修正用户圈出的脸缘、发丝及眉缘模糊与蒙版污染，核30态同类缺陷。在当前PSD及原像素局部修订；保持表情、身份、身体、服装、道具、坐标。六阶段30态不扩批。",
+  "marked_regions": [
+    "MT_S2 happy 画面右颊缘/发丝",
+    "AJ_S2 happy/sad/smile/angry 画面右眉额发及颊缘",
+    "AD_S0 surprised/sad/angry 眉毛额发交界",
+    "XJ_S0 surprised 画面左额发与眉缘"
+  ],
+  "method": "优先诊断合成/alpha并修订现有PSD蒙版和遮挡；需生成补洞先向Master报告并完成受影响范围复签。内置imagegen，无CLI。",
+  "budget": "预期新增生成0，最多两轮局部修订；旧版保留。",
+  "gate2": "用户未批准，Client锁定",
+  "original_plan": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md"
+}

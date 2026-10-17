@@ -1,0 +1,28 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "started_at_utc": "2026-10-17T07:15:58Z",
+  "finished_at_utc": "2026-10-17T07:48:40Z",
+  "elapsed_wall_clock_minutes": 32.7,
+  "version": "v0.2",
+  "revision_budget_basis": "沿用原获批本批预计 6 小时墙钟的停工复核额度，而非本修订另获 6 小时；原 imagegen 候选/调用总上限 32/48 已在 v0.1 原账本记录。",
+  "imagegen_calls_this_revision": 0,
+  "imagegen_total_prior_batch": 32,
+  "imagegen_budget_total_prior_batch": 48,
+  "deterministic_aj_happy_trials": {
+    "count": 3,
+    "accepted": 1,
+    "rejected": 2,
+    "revision_rounds_counted": 2,
+    "parameter_and_evidence": "TRIAL_LOG.json 与 review/rejected_trials 两张图；接受样为局部保护深发丝 alpha 收边+颌线原像素窄带，拒绝试验依次为全清 alpha、眉语义层暗 alpha 幂次 1.5（含底层亮度门槛变体）。后二者会露出旧眉碎段，已停止该分支。"
+  },
+  "other_processing": "AJ、MT、AD、XJ 扩批均沿首样已确认的确定性局部方案及既有 PSD 语义层；临时处理脚本放 /tmp，未计为 imagegen 调用；未做整图锐化或重新生成。",
+  "artifacts": [
+    "AJ_GROUP_BUILD.json",
+    "MT_GROUP_BUILD.json",
+    "ADXJ_GROUP_BUILD.json",
+    "REVISION_DIFF_CHECK.json",
+    "SEMANTIC_STATE_RECOMPOSE_CHECK.json"
+  ],
+  "time_note": "仅用可核 UTC 会话起止记录墙钟；无法拆分各工具内部/GPU耗时，未推测。",
+  "elapsed_basis": "07:15:58Z Art owner actual diagnosis start through 07:48:40Z package verification/freeze; wall-clock includes local file tools and Tech handoff, not GPU time."
+}

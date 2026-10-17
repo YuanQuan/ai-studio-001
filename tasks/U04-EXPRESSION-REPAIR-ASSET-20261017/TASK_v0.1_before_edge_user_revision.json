@@ -1,0 +1,60 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "title": "六店长首批30态表情修正生产",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "objective": "按已批准v0.2方案完成六代表样张、必要脸底修复、首批30态局部编辑与六份PSD及切片、同尺度重组；止于Gate2 USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-PRODUCTION-20261017/v0.1/USER_APPROVAL.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/SOURCE_PSD_AUDIT.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ART_PRODUCTION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SOURCE_REGISTRY.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PRODUCTION_LEDGER.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/SAMPLE_ART_REVIEW.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BATCH_EXPANSION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/PSD_VALIDATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/COMBINATION_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "准确继承批准方案与六首批阶段、五态语义；同批预签完成后首图，六代表样张通过并复签后才扩24态，48调用预算可核。",
+    "实际六份多层PSD、30脸片、基底与前遮挡存在，保持原尺寸坐标/稳定ID/Client三层契约；可编辑与合并区域如实说明。",
+    "同背景同视窗同尺度的实际重组与近景、ROI外保真、遮挡及小锦原圈纹单次显示可复核；辨识和局限有实际结果。",
+    "来源权利、源与导出清单SHA、生成提示与账本、失败候选和预算记录齐备；不改历史或Client正式资源。",
+    "Required与验收逐条同序，实际切片与重组版本直接提交Gate2用户审核，不冒称Client运行或正式QA通过。"
+  ],
+  "dependencies": [
+    "U04-EXPRESSION-REPAIR-PLAN-20261017"
+  ],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户2026-10-17本轮明确批准具体v0.2方案，主批准证据为Master USER_APPROVAL.json。",
+    "首图前同批预签、六代表样张/扩批门槛和总48调用额度继续；本任务不授权其他60态。",
+    "本单元示例无QA；Client接入等Gate2用户具体版本审批。",
+    "资源制作任务gpt-6-sol/high；编码支持gpt-6-luna/low；Tech/Producer gpt-6-sol/low。",
+    "跨职责授权：Client仅可在自己的deliverables/client/.../pipeline/编写资产支持脚本，不改apps/client。",
+    "Task创建时间 2026-10-17T11:24:07+08:00",
+    "Art同批预签SHA-256 6c52cb9edd7906ddceea2340c1711695c0d3ad1692fab6414377487916ec4eeb，Tech已同版APPROVED，Producer已记录Gate1 DONE。",
+    "首张MT_S2 surprised内置image_gen调用返回connection failed: error sending request，无候选/请求ID；UNKNOWN保守计1次，未重发。六样与后续资源未产，详deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/BLOCKER_REPORT.md。Gate2仍DRAFT。",
+    "2026-10-17T12:04:26+08:00 用户授权CLI/API备选配置。独立环境与离线检查通过；缺OPENAI_API_KEY，仍BLOCKED，0新增API请求。见Master CLI_CONFIGURATION.json。",
+    "用户“恢复”后同版内置imagegen实际成功生成AT_S0 sad候选，SHA-256 284af40cb10421c96c800dc814fee0f62e6683ac1484c30f20ee47936fc79176；resume账本合计2/48（旧MT未知1+本轮成功1）。当前仅候选，面部mask/三层重组与样张Review未通过，余24态和Gate2仍锁。",
+    "2026-10-17T12:26:53+08:00 Master续跑内部重分工：主Art执行MT/AT/AC/AJ并整合30态；AD/XJ由RESUME-ADXJ独立单元执行。主24、ADXJ18、Master保留6，全球48，含旧MT1未知及AT1成功。六样通过与复签前不扩批。",
+    "2026-10-17T13:26:43+08:00 deliverables/master/U04-EXPRESSION-REPAIR-RESUME-20261017/v0.1/EXPANSION_RELEASE.json; RELEASED_FOR_24_STATE_INTERNAL_PRODUCTION; unit_call_cap=16; 沿用已批准v0.2具体方案与用户恢复指令；不新增范围或审批门禁。",
+    "2026-10-17 主Art已实交12项Required、六份PSD/30脸/30真U00；SAMPLE_ART_REVIEW严格五字段APPROVED，DELIVERABLE READY_FOR_REVIEW；32/48调用。Master/Producer待以具体v0.1推进Gate2 USER_REVIEW；Client尚未导入、UUID为空。",
+    "主Art/两子包现行v0.1整批Gate2经Master GATE2_PACKAGE_ACCEPTANCE.json同版接受提交资格，冻结身份GATE2_PACKAGE_IDENTITY.json；当前仅待用户决定，未获USER_APPROVED、不DONE、不导入Client。"
+  ]
+}

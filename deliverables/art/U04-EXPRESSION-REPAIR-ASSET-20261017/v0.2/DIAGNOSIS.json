@@ -1,0 +1,16 @@
+{
+  "version": "v0.2",
+  "status": "PRELIMINARY_BEFORE_SAMPLE",
+  "source_v01": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1",
+  "user_marked_states": ["MT_S2:happy", "AJ_S2:happy", "AJ_S2:sad", "AJ_S2:smile", "AJ_S2:angry", "AD_S0:surprised", "AD_S0:sad", "AD_S0:angry", "XJ_S0:surprised"],
+  "representative": "AJ_S2:happy",
+  "observations": [
+    "AJ happy 的 v0.1 face 256x256 切片含有额发与眉线及颊缘外扩皮色；透明边肉眼可见低频发灰，base/front 同区域有原眉发轮廓，可检查局部恢复。",
+    "旧 make_expansion_masks.py 第32行对 AJ/AC 特征遮罩使用 GaussianBlur(8)；它是 AJ 羽化过宽的直接工艺线索，但仍需结合具体 face 及底层像素验证，不推断全部舞台同一根因。",
+    "AJ happy 的特征 union mask 与 face alpha 均覆盖靠近原发丝、眉缘的区域；旧 base 有正确发丝但也含待替换旧表情，不能简单删除整块 face。"
+  ],
+  "root_cause_hypothesis": "表情特征/face 遮罩羽化跨越五官区域并压到原发丝/眉缘，局部合成使皮色半透明叠在深色线条上；MT、AD、XJ 需分别验证遮罩/alpha/前景遮挡链。",
+  "planned_fix": "以原 base/front 正确线条为保护边界，局部收紧 face alpha 或修订对应语义层蒙版；在必须保留新五官的区域保持旧 face 原像素。先 AJ happy 同尺度验收，再扩确证的同类项。",
+  "generated_image_calls": 0,
+  "pending": ["Tech 同批预签", "AJ happy 代表样检验", "30态逐态扫描与根因分组"]
+}

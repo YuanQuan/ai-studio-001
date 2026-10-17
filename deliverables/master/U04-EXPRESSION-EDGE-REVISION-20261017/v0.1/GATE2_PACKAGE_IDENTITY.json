@@ -1,0 +1,50 @@
+{
+  "artifact_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "production_task": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "artifact_version": "v0.2",
+  "frozen_at_utc": "2026-10-17T07:49:02Z",
+  "status": "FROZEN_FOR_GATE2_USER_REVIEW_NOT_USER_APPROVED",
+  "scope": "六阶段30态整包；3个共用base和7张face局部修订，实际16组合变化，14组合保持原像素。",
+  "user_authorization": "USER_REVISION_AUTHORIZATION.json",
+  "package": {
+    "USER_REVIEW_PACKET.md": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md",
+      "sha256": "d1f72a3a622e9663ef033642d1f60a218e7e1f98c4ef5617a1a898a2c9d9e0e5"
+    },
+    "ASSET_MANIFEST.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ASSET_MANIFEST.json",
+      "sha256": "f05f2c773c21a078df906237d06f2d15eed81134cfd2d82b8b8399b43224e189"
+    },
+    "DELIVERABLE.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DELIVERABLE.json",
+      "sha256": "a6c08cefcbb1931b46dc9036a3a41727e0d1e93a71340d283af31d1d777357b9"
+    },
+    "LAYER_EXPORT_MAP.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/LAYER_EXPORT_MAP.json",
+      "sha256": "8ea6ee8b0479aaf4af90693d0d7d2e4c3cf5a92dc9fa7864eb91d5eec52a547b"
+    },
+    "REVISION_CHECK.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_CHECK.json",
+      "sha256": "56d1d53a65da017efadd79742934b237b627363715386385ddfd70877b9d8a43"
+    },
+    "PRODUCTION_LEDGER.json": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/PRODUCTION_LEDGER.json",
+      "sha256": "d8640db5a816993da7994ed9c73c157574306781c2c43666e612e30e949e8ddd"
+    },
+    "review/U04_30_STATE_NAMED_ACTUAL_SCALE.png": {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+      "sha256": "43bad960d22e4124ab5f1a623fe3098571c29fca80ee6a13d4e2df6f38f01a42"
+    }
+  },
+  "checks": {
+    "schema_references": "FINAL_PACKAGE_CHECK.json",
+    "visual_observation": "FINAL_VISUAL_OBSERVATION.json",
+    "protected_resources": "FINAL_PROTECTION_CHECK.json",
+    "tech_support_acceptance": "TECH_SUPPORT_ACCEPTANCE.json"
+  },
+  "limits": [
+    "AJ眉层原有抗锯齿/阴影柔边保留，拒绝两次造成旧眉碎线的试验。",
+    "0新增imagegen；静态资源核验不替代用户效果决定或接入后运行验证。",
+    "用户未批准准确v0.2，Client未正式导入。"
+  ]
+}

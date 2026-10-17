@@ -906,3 +906,23 @@ Creator 导入后，Client `deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261
 - 同尺度U00重组及每态SHA见现行 `ASSET_MANIFEST.json`；Gate2审核总板和中文包见 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md`。静态检查不代表正式Client运行。
 - Producer本轮流程内部DONE；本表48项为具体Gate2待审美术身份与计划路径。30脸片和12 base/front未导入新版Client、UUID未生成；6 PSD仅美术母版，Client路径/UUID为N/A。
 <!-- U04-EXPRESSION-REPAIR-RESUME-20261017 END -->
+
+<!-- U04-EXPRESSION-EDGE-REVISION-20261017 START -->
+### U04 表情边缘修订 v0.2 现行候审资源
+- 准确清单：`deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ASSET_MANIFEST.json`，30态/六PSD、路径与SHA的逐项事实以此为准。旧v0.1清单为退回历史；本轮仅3张base与7张face改动，四组PSD重组，其他图沿用原路径与hash。Gate2用户未批准，以下Client路径均`PLANNED_ONLY`，真实UUID`NOT_IMPORTED`。
+
+| 稳定资产ID | 美术现行路径 / SHA-256 | Client状态 / UUID |
+| --- | --- | --- |
+| `U04_MT_S2_BASE` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png` / `d1cc0cf6361afed707a864a5ead6c6d3683baea87551b9df6638996abe2ee1f3` | 计划 / NOT_IMPORTED |
+| `U04_AJ_S2_BASE` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png` / `aa9a148662de3c5374d0529a8bcc95625549e8583075516f16310fb9fe953402` | 计划 / NOT_IMPORTED |
+| `U04_AD_S0_BASE` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png` / `dc3e69729cbd8696333dfef3ba077dfc1dd728a31c17526e95cb41a114d3b594` | 计划 / NOT_IMPORTED |
+| `u04_aj_s2_face_happy` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_happy_edge_repair.png` / `6c7e052edd32db79404229e0cdc91e8011da28881b8981f82ea491502e626bf3` | 计划 / NOT_IMPORTED |
+| `u04_aj_s2_face_sad` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_sad_edge_repair.png` / `38fa9e6097b2d75d2b89d71bed4f43288b94733525b9efd57e1341b9b9a54d09` | 计划 / NOT_IMPORTED |
+| `u04_aj_s2_face_smile` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_smile_edge_repair.png` / `6eab924a3c96b3096783ead7b3a23957493751a3e92c5ddd45ebfb0091a46207` | 计划 / NOT_IMPORTED |
+| `u04_aj_s2_face_angry` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_angry_edge_repair.png` / `c67045c68deaff0e07327fdb2b049d6bb7cfd54105fb72ede07780f2f7235b23` | 计划 / NOT_IMPORTED |
+| `u04_ad_s0_face_surprised` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_face_surprised_edge_repair.png` / `b10ade735df8cff686be8464226df3d69b4a4f05a0d094606e2d5d3fb5f98d76` | 计划 / NOT_IMPORTED |
+| `u04_ad_s0_face_sad` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_face_sad_edge_repair.png` / `44965aa2d60a15fd21c946a1f409aff68a377c5bc35b4e17b547218f156768f7` | 计划 / NOT_IMPORTED |
+| `u04_xj_s0_face_surprised` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_xj_s0_face_surprised_edge_repair.png` / `6eba12eae10971285e02c212c46320646000bd173e3f566886084391dcc3d72e` | 计划 / NOT_IMPORTED |
+
+- PSD母版：MT/AJ/AD/XJ在现行Manifest逐组记录真实路径与SHA，仅供美术编辑，不作为Client运行资源；AT/AC与未改态沿用旧SHA。Client正式接入仍锁。
+<!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

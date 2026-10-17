@@ -1,0 +1,15 @@
+{
+  "record_type": "AD 共用 base 额发修订的先验追加登记；本文件写于 AD 首次像素修改前，原 ALLOWED_ROI_BEFORE_EDIT.json 保持不变",
+  "stage": "AD_S0",
+  "states_affected_by_shared_base": ["happy", "surprised", "sad", "smile", "angry"],
+  "reason": "五态共用 base 在中央额发尖同位置有清脸羽化低频灰带；用户圈中三态可见，修一份共用 base 后五态重组均会改变；happy/smile 只继承该同类共用底图校正，不改各自 face",
+  "native_face_px": [192, 192],
+  "native_face_roi_xyxy": [75, 10, 100, 49],
+  "native_portrait768_offset_xy": [232, 139],
+  "native_portrait768_roi_xyxy": [307, 149, 332, 188],
+  "source_canvas_1024x1536_face_rect_xyxy": [310, 185, 566, 441],
+  "source_canvas_1024x1536_roi_xyxy_approx": [410, 198, 444, 251],
+  "allowed_brush": "只还原获批原图中中央额发的深色发尖及原紧邻抗锯齿；实际像素需落先验框内，避开原左右眉坐标及新表情眉眼。",
+  "protected": "所有各态眉形、眼型、嘴及左/右眉区域；其他画布全保留",
+  "edited_pixels_before_this_record": 0
+}

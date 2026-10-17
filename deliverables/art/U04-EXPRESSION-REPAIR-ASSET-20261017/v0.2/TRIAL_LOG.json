@@ -1,0 +1,29 @@
+{
+  "task": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "sample": "AJ_S2:happy",
+  "imagegen_calls": 0,
+  "local_deterministic_trial_count": 3,
+  "revision_rounds_counted": 2,
+  "accepted": {
+    "method": "在原 base 深色窄发丝处按亮度收 face alpha；共用 base 颌线从旧 approved reference 的原像素窄带恢复；全程裁到预登记 ROI",
+    "evidence": "review/sample_aj_happy/aj_happy_u00_sample_1280x720.png",
+    "tech_sample_check": "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_CHECK.json"
+  },
+  "rejected": [
+    {
+      "round": 1,
+      "method": "窄发丝线内不辨底层深色，直接清全部 face alpha",
+      "result": "露出旧眉/旧眼碎段并使新右眼局部断裂；拒绝，不扩批",
+      "evidence": "review/rejected_trials/aj_happy_full_alpha_clear_rejected.png",
+      "script": "/tmp/aj_happy_trial2.py"
+    },
+    {
+      "round": 2,
+      "method": "尝试对右眉语义层内低 alpha 暗像素施加 alpha 幂次1.5，仅限眉额发 ROI；底层亮度>180 限定版也检过",
+      "result": "眉下显出不连续深色旧眉残段，未改善用户目标；拒绝，保留候选层已有正常柔边，不再额外试锐化",
+      "evidence": "review/rejected_trials/aj_happy_dark_alpha_curve_rejected.png",
+      "script": "/tmp/aj_happy_gray_trial.py"
+    }
+  ],
+  "budget_decision": "同类边缘沿通过的确定性首样方法扩批；对同一眉灰问题不再自动尝试第三轮。"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "title": "修正30态脸部蒙版模糊与遮挡污染",
+  "type": "art",
+  "owner": "art",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "修正30态脸部蒙版模糊与遮挡污染；在既有方案内局部返工，止于具体版本USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/USER_REVISION_AUTHORIZATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/REVISION_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "逐处定位圈出缺陷及30态同类项，记录源层/蒙版原因与修改区域，不误删原画正确线条。",
+    "当前PSD与切片局部修订，未改区域零差异，表情身份不变，旧v0.1保留。",
+    "受影响PSD、透明切片、同尺度U00重组与前后近图实际存在并一致，未影响文件沿用原hash。",
+    "准确v0.2具体资源直接送用户审核，不导入Client，不称运行QA通过；预算与限制如实记录。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户明确要求局部修复，范围与语义不变；Art/Tech受影响范围复签后输出。",
+    "美术gpt-6-sol/high，Tech/Producer gpt-6-sol/low。Master负责Git；专业Agent不执行Git、不创建子任务。",
+    "2026-10-17T07:15:58Z Master转报Owner实际诊断已开始：Art检查AJ脸片及make_expansion_masks.py的GaussianBlur(8)路径。待正式DIAGNOSIS落盘后绑定文件路径。",
+    "2026-10-17T07:49:45Z 准确v0.2整包由Master FINAL_PACKAGE_CHECK.json核Required/Schema/版本身份，直接进入Gate2用户审核；用户决定空，Client锁。"
+  ]
+}

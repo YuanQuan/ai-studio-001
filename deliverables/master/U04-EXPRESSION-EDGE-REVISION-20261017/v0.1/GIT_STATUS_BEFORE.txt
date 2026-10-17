@@ -1,0 +1,121 @@
+ M apps/client/assets/UnitSampleGallery.ts
+ M apps/client/assets/labs/u01/sakura_layout_editor.ts
+ M apps/client/assets/labs/u01/sakura_v03_environment.ts
+ M apps/client/assets/labs/u01/sakura_v03_layout.ts
+ M apps/client/assets/labs/u05/milk_tea_lab.ts
+ M apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_l.png
+ M apps/client/assets/resources/sakura_v03/tex_sakura_rr_bridge_front_r.png
+ M apps/client/package.json
+ M deliverables/producer/EXAMPLE-INTEGRATION-FLOW-20261016/v0.1/WORK_RETROSPECTIVE.md
+ M project/APPROVAL_LOG.md
+ M project/ASSET_HANDOFF_REGISTRY.md
+ M project/MILESTONE_LOG.md
+ M project/WORKFLOW_STATUS.md
+ M project/WORK_RETROSPECTIVE_LOG.md
+ M project/dashboard/index.html
+?? apps/client/.creator/asset-template/
+?? apps/client/assets/framework.meta
+?? apps/client/assets/framework/
+?? apps/client/assets/labs/u05/u05_accessibility.ts
+?? apps/client/assets/labs/u05/u05_accessibility.ts.meta
+?? apps/client/tools/asset-integration/
+?? deliverables/art/BRIDGE-CUTOUT-INSPECT-ART-20261016/
+?? deliverables/art/BRIDGE-RAILING-CLEANUP-ART-20261016/
+?? deliverables/art/SCENE-ANIME-FIVE-CONCEPT-20261010/
+?? deliverables/art/SCENE-FIVE-STYLE-CONCEPT-20261010/
+?? deliverables/art/SCENE-SAKURA-LAYERED-ASSET-20261011/
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/apply_mtat_time_recovery.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/build_aggregate_manifest.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/build_review_board.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/finalize_art_package.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/make_expansion_masks.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/render_u00_expansion.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/resume_20261017/write_user_packet.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/assemble_expansion_native_01.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/author_expansion_masks_01.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/build_five_state_psds_01.py
+?? deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/source/verify_expansion_psd_01.py
+?? deliverables/client/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/
+?? deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/
+?? deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/
+?? deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/
+?? deliverables/client/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/
+?? deliverables/client/SCENE-CLARITY-CLIENT-20261010/v0.1/evidence/serve_web.py
+?? deliverables/client/U01-SAKURA-LAYOUT-EDITOR-20261011/
+?? deliverables/client/U04-EXPRESSION-REPAIR-FEATURE-PIPELINE-20261017/v0.1/pipeline/__pycache__/
+?? deliverables/master/BRIDGE-CUTOUT-INSPECT-20261016/
+?? deliverables/master/BRIDGE-RAILING-CLEANUP-20261016/
+?? deliverables/master/BRIDGE-RAILING-INTEGRATION-20261016/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/ACTUAL_PATH_MAPPING_DECISION.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/APPROVED83_STORAGE_ARITHMETIC.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BASELINE_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BATCH_PRESIGN_ACCEPTANCE.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BROWSER_PREFLIGHT_BLACK.jpg
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BROWSER_PREFLIGHT_ERRORS.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/BROWSER_PREFLIGHT_REPORT.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/EXECUTION_NOTES.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/FRAMEWORK_TEST_RERUN.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/IMPORT_HANDOFF_MASTER_REVIEW.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/IMPORT_MAP_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/INITIAL_GIT_STATUS.txt
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/INTEGRATE_BRIEF_MASTER_ACCEPTANCE.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/LEGACY_SCENE_REFERENCE_AUDIT.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/MASTER_SUMMARY.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/PLATFORM_REFERENCE_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/RESOURCE_STAGING_INPUT_FREEZE_ADDENDUM.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/SAME_PHASE_INTEGRATION_DECISION.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/SCOPE_REVISION.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/SOURCE_BASELINE_CURRENT_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/SOURCE_BASELINE_MID_INTEGRATION_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/USER_REVIEW_PACKET.md
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/V06_U00_320x568.jpg
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/V06_U00_PANEL_320x568.jpg
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/V06_U01_320x568.jpg
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/V08_BUILD_FILE_CHECK.json
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v02/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v03/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v07/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v08/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v09/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-v10/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/build-integration-v02/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/frozen-input-recovery/
+?? deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/task_snapshots/
+?? deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/
+?? deliverables/producer/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/
+?? deliverables/producer/BRIDGE-RAILING-CLEANUP-FLOW-20261016/
+?? deliverables/producer/BRIDGE-RAILING-INTEGRATION-FLOW-20261016/
+?? deliverables/producer/MINIGAME-ART-OPT-BATCH-20261017-FLOW/
+?? deliverables/tech_lead/BRIDGE-RAILING-CLEANUP-TECH-20261016/
+?? deliverables/tech_lead/BRIDGE-RAILING-INTEGRATION-TECH-20261016/
+?? deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/
+?? deliverables/tech_lead/MINIGAME-ART-OPT-IMPORT-TECH-20261017/
+?? deliverables/tech_lead/SCENE-SAKURA-TECH-PREFLIGHT-20261011/
+?? deliverables/tech_lead/U01-SAKURA-LAYOUT-EDITOR-TECH-20261011/
+?? tasks/BRIDGE-CUTOUT-INSPECT-ART-20261016/
+?? tasks/BRIDGE-CUTOUT-INSPECT-FLOW-20261016/
+?? tasks/BRIDGE-RAILING-CLEANUP-ART-20261016/
+?? tasks/BRIDGE-RAILING-CLEANUP-FLOW-20261016/
+?? tasks/BRIDGE-RAILING-CLEANUP-TECH-20261016/
+?? tasks/BRIDGE-RAILING-INTEGRATION-CLIENT-20261016/
+?? tasks/BRIDGE-RAILING-INTEGRATION-FLOW-20261016/
+?? tasks/BRIDGE-RAILING-INTEGRATION-TECH-20261016/
+?? tasks/MINIGAME-ART-OPT-BATCH-20261017-CLIENT-U05/
+?? tasks/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/
+?? tasks/MINIGAME-ART-OPT-BATCH-20261017-FLOW/
+?? tasks/MINIGAME-ART-OPT-BATCH-20261017-TECH/
+?? tasks/MINIGAME-ART-OPT-BATCH-20261017/
+?? tasks/MINIGAME-ART-OPT-IMPORT-TECH-20261017/
+?? tasks/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/
+?? tasks/MINIGAME-ART-OPT-INTEGRATE-GALLERY-20261017-CLIENT/
+?? tasks/SCENE-ANIME-FIVE-CONCEPT-20261010/
+?? tasks/SCENE-FIVE-STYLE-CONCEPT-20261010/
+?? tasks/SCENE-SAKURA-LAYERED-ASSET-20261011/
+?? tasks/SCENE-SAKURA-TECH-PREFLIGHT-20261011/
+?? tasks/U01-SAKURA-LAYOUT-EDITOR-20261011/
+?? tasks/U01-SAKURA-LAYOUT-EDITOR-TECH-20261011/
+?? tasks/U04-EXPRESSION-EDGE-REVISION-ART-20261017/
+?? tasks/U04-EXPRESSION-EDGE-REVISION-FLOW-20261017/
+?? tasks/U04-EXPRESSION-EDGE-REVISION-TECH-20261017/
+?? tests/client/
