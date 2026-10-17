@@ -1,0 +1,24 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "reviewer": "art",
+  "decision": "APPROVED",
+  "findings": [
+    {
+      "severity": "INFO",
+      "message": "v0.2改为当前Agent可调用的内置imagegen逐态面部ROI编辑；30情绪首候选+最多6脸底/遮挡首候选+最多12返修，调用总上限48，失败/未知计入。"
+    },
+    {
+      "severity": "INFO",
+      "message": "18旧PSD只读核验；圈纹高度近视镜和阿角男性身份保留。候选配准、ROI外确定性保真、语义栅格可编辑限制及隐藏层互斥均列为样张门槛。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "具体实图、工具落地行为与商业权利链未在Gate1文档阶段全部验证；正式制作和接入阶段按方案核实。"
+    },
+    {
+      "severity": "INFO",
+      "message": "ROI外冻结基准为现行PSD实际可见层/旧切片重组以保留清边alpha；获批原立绘供身份/缺失参考。SKIN/SHADING仅在PSD内支持，最终合并oneface；不能精确拆分时记录局部合并编辑限制。"
+    }
+  ],
+  "next_action": "交Master和Tech复核v0.2方案，再送Gate1用户审核；获批准前不制作正式图片、PSD或切片。"
+}

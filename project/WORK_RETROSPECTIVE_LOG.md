@@ -1,3 +1,10 @@
+<!-- U04-EXPRESSION-REPAIR-20261017 START -->
+### WR-20261017-U04-EXPRESSION-REPAIR-001｜六店长表情修正方案 Gate1 送审
+
+- Task 登记 2026-10-17 10:57:55 +08:00 至 Producer 复盘 11:11:53，墙钟 13 分 58 秒；Art v0.2 `USER_REVIEW`、Tech v0.2 内部 `DONE`、Producer `DONE`（Master 内部接受）。详见 `deliverables/producer/U04-EXPRESSION-REPAIR-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md` 与 `CONTINUITY_CHECK.json`。用户原消息和各 Owner 净制作时间未知，用户审批等待尚未发生。
+- 可观察返工：v0.1 人工绘画主路线不可执行，经 Master 专业 Review 改为 v0.2 imagegen ROI 路线；没有同类时长基线，不作角色慢因归责。建议 Art 下次首次交付前列出可实际调用工具与最小操作步骤、Tech 首版核可执行性；下一次 Gate1 复核是否再因工具路线返工，代价为前置检查时间。
+<!-- U04-EXPRESSION-REPAIR-20261017 END -->
+
 <!-- U01-USER-LAYOUT-FLOW-20261015 START -->
 ### WR-20261015-U01-USER-LAYOUT-001｜用户51实例布局参数落地
 - 结果：冻结输入SHA复算一致，9实例U01私有覆盖，21 PNG/UUID及U00/U04共享源不变。Client Creator3.8.8构建/Root三次初始、重置、重入实际JSON对用户输入exact/六HTTP身份均PASS；Master20文件身份0差，Tech内部DONE、Client准确v0.1运行版USER_REVIEW待用户，Producer三Required经Master接受DONE。证据见`deliverables/producer/U01-USER-LAYOUT-FLOW-20261015/v0.1/WORK_RETROSPECTIVE.md`与Master`RUNTIME_IDENTITY.json`/`USER_REVIEW_PACKET.md`。

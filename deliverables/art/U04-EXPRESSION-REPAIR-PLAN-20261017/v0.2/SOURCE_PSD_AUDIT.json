@@ -1,0 +1,4048 @@
+{
+  "scope": "18 existing stage PSDs, read-only",
+  "source_map": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+  "psd_stages": {
+    "MT_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s0_dialogue.psd",
+      "psd_sha256_actual": "fed01a0e14190e1c0973d49b529e647a589dc1b6530987fa9547a0a77b9fbdb9",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "109x176",
+        "101x57",
+        "226x110",
+        "196x83",
+        "45x14",
+        "191x72",
+        "124x53",
+        "48x17",
+        "191x74",
+        "130x50",
+        "26x37",
+        "191x86",
+        "128x66",
+        "52x30",
+        "191x72",
+        "129x61",
+        "673x1508",
+        "939x1508"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s0.png",
+        "sha256_actual": "6bd4cccdac4351ccda863d7df4a5f079727fc38a2614e559b827b74f7d330ecb",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_base.png",
+        "sha256_actual": "765e1f0f4c48971d58a18462a45cdaaed8efe40fab283306407fb5633e79c42d",
+        "size_px": [
+          673,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        167,
+        100
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_front_hair.png",
+        "sha256_actual": "14b59c4a76aa6b4f4088bf64d25cc9220e9af4d7ee4b42695f86f9341611f41d",
+        "size_px": [
+          128,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_happy.png",
+            "sha256_actual": "06d6da58c775432cc1bfb7bfd4bed9d57157730591ddd8c1536763a73c3ae937",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_surprised.png",
+            "sha256_actual": "f274a72d5448b1a03b633f6f16911355f840e60e625489aa3c87671c9f1b2f36",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_sad.png",
+            "sha256_actual": "449a33b02be5c2a6ba241518ed71063f12ec69952e558cc8bbd77586b88b2679",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_smile.png",
+            "sha256_actual": "c0a1d0f9c965eca9a8849276a7162715c51ea4266e186a21242b0c13f1c4c6b2",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s0_face_angry.png",
+            "sha256_actual": "76e2f1eff2a3ac7ad711d89be1b1f5cb84ec8a820b3aed78100c739e8ee0ecb2",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "MT_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s2_dialogue.psd",
+      "psd_sha256_actual": "262cd9fa30b3cd1e16c8e62fd5de34a050094c67b81dbe488af5f04064732551",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "51x122",
+        "40x13",
+        "176x75",
+        "132x59",
+        "46x19",
+        "176x85",
+        "130x60",
+        "37x15",
+        "176x79",
+        "131x54",
+        "24x30",
+        "176x96",
+        "131x71",
+        "48x28",
+        "176x72",
+        "130x65",
+        "651x1513",
+        "1004x1513"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s2.png",
+        "sha256_actual": "edfcb4fde3b221b6cc4a74da42c9f3cac8d2dc29745c96a4de298f98255173d4",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_base.png",
+        "sha256_actual": "7ae6eb58df509406896371a0bc551df89fbbc14e469fb16cbe518f46396a2369",
+        "size_px": [
+          651,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        142,
+        100
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "sha256_actual": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+        "size_px": [
+          51,
+          122
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_happy.png",
+            "sha256_actual": "0c577c526fd118353e5b180ceb81d1ef96177f0f2313d2670b371627092da09e",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_surprised.png",
+            "sha256_actual": "fc50693ccb77f5c7ae1f3a414f6f2d9079bbc0a524edaca2ac1ac91b7d76b81a",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_sad.png",
+            "sha256_actual": "a36a6bc87cac9eea8aba4e7877edcb0b17f5a942bf95bed68c08c8c5bf605ac3",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_smile.png",
+            "sha256_actual": "37a18b7b2ad141e59ca1baf88d3e93a51606e003a5b4cd96a0a831523cdb48fb",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_face_angry.png",
+            "sha256_actual": "fdf8249eb674328732f9da74172baa2cdeb20f2dfa9b59c2a7582fe46c9f24fb",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "MT_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_mt_s3_dialogue.psd",
+      "psd_sha256_actual": "db4e8c2bd97854eaae1ae9c7ee47ac3521902d947a6f46e9baae1e1ff337bd5e",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "51x123",
+        "40x13",
+        "181x75",
+        "129x58",
+        "45x19",
+        "181x85",
+        "132x58",
+        "37x15",
+        "181x79",
+        "133x53",
+        "24x30",
+        "181x95",
+        "130x69",
+        "48x28",
+        "181x72",
+        "131x63",
+        "668x1484",
+        "969x1504"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_mt_s3.png",
+        "sha256_actual": "4e39650f90f5c4cb2353285f0544490d825a9d3a7ec72608b66736a9fce4c337",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_base.png",
+        "sha256_actual": "ff19dae136a3be65e522f9720a96bb9b343c56462553a082821da2031bb99da0",
+        "size_px": [
+          668,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        162,
+        100
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_front_hair.png",
+        "sha256_actual": "52062c911b97f5a048c4ec794a512731f785b1709a876c3d07c3f9ef203f260b",
+        "size_px": [
+          51,
+          123
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_happy.png",
+            "sha256_actual": "9d7aeae4e0ec21fb2c3e6b8f4df04dc6ff7290972d450f1db737c869f732ff09",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_surprised.png",
+            "sha256_actual": "6f51581da2b5d0307ac0b183656a2d1dcfeff4b636240726a1a27cbc1543f7fa",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_sad.png",
+            "sha256_actual": "7c7e0b08a009ada3bcc9af797236105229e4a0089d5a3f1aebf0eb2a264b3b79",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_smile.png",
+            "sha256_actual": "65d3d63d197b3b1cd199d329885e0bcf0e89aeeacb0de6f9498b7a870fd732a6",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s3_face_angry.png",
+            "sha256_actual": "c1b72fc0865dd77e3a96de49d73e8fd0e66b71f32c8dfb74ea9d545ec292353b",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AT_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s0_dialogue.psd",
+      "psd_sha256_actual": "e0b3e0569024ad33cb724e69e0188d5b5c87c8a6359b29ba25276b6f6ae168cc",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "175x75",
+        "40x13",
+        "171x47",
+        "133x32",
+        "40x13",
+        "171x55",
+        "134x35",
+        "37x15",
+        "171x50",
+        "134x40",
+        "24x30",
+        "171x65",
+        "134x33",
+        "48x28",
+        "171x45",
+        "133x33",
+        "503x1510",
+        "987x1510"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s0.png",
+        "sha256_actual": "84521286b2119dee7d11256c289cdf389a114bf831feebce92d532ce63b13811",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "sha256_actual": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+        "size_px": [
+          503,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        380,
+        180,
+        636,
+        436
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        133,
+        180
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "sha256_actual": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+        "size_px": [
+          175,
+          75
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_happy.png",
+            "sha256_actual": "d88437ea2785df7920a96e051efce9012379ea8852a03c3f08665768e2aa0205",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_surprised.png",
+            "sha256_actual": "c857fbd8a30c2fefdc8caa1a4b7be88e16b04f0af986cd19dd20ab732e61c458",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_sad.png",
+            "sha256_actual": "8c7dda29aed25229d4ac74a3ba88cba67c4fd07e846d6792b68a71fbe85a842c",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_smile.png",
+            "sha256_actual": "42a5b240dda15f50635acfb93412979130c5fb12c5b40f82b7028db4f38410b9",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_face_angry.png",
+            "sha256_actual": "ad203b5d792fd50cf289c039ccf2f3703daa1e580993d088df31fd4d57ba47e8",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AT_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s2_dialogue.psd",
+      "psd_sha256_actual": "f932e26fe06562230ea0a6c2587313c0e7d1ab09d220b810a706308d4d9e5e4b",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "177x64",
+        "40x13",
+        "163x78",
+        "128x56",
+        "22x11",
+        "163x89",
+        "128x52",
+        "37x15",
+        "163x81",
+        "126x54",
+        "24x30",
+        "163x101",
+        "127x53",
+        "48x28",
+        "163x74",
+        "128x53",
+        "516x1512",
+        "971x1513"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s2.png",
+        "sha256_actual": "57f5a61bd5892cc259c1fcbea2fb2584955a4bba8f12f23c394b9e19ff1a4c6a",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_base.png",
+        "sha256_actual": "8775dfff141141e3adf3dbd0d334a5ae9432294c763b1b8f123ce42029e46b3b",
+        "size_px": [
+          516,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        380,
+        160,
+        636,
+        416
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        151,
+        160
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_front_hair.png",
+        "sha256_actual": "455ccc1525af5c50fb91b7a0cdf49ef6bbc4a9c30043f350d227a302badb84dc",
+        "size_px": [
+          177,
+          64
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_happy.png",
+            "sha256_actual": "320e33dcc872110d7f051bb0106a25845e9339b94ca981dc0aad36a8270713cf",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_surprised.png",
+            "sha256_actual": "36556daf85074da2bc75de4549c91bf82e83197ed7226b793eeb1f0872165ec5",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_sad.png",
+            "sha256_actual": "4de0a4180ace7bc09abb4447b80d2a9aca5932e2cd62cdaec6da05c3fc7e6b41",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_smile.png",
+            "sha256_actual": "cf7fcfe30c496fb3693ef83365145e4c9c1877f4f5069e275e6a2388cac5265e",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s2_face_angry.png",
+            "sha256_actual": "0c41ca5922f987e9bc38f4dd52eb3e8651a079ddf45f17bc2df12779667a8492",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AT_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s3_dialogue.psd",
+      "psd_sha256_actual": "7c9713d86e28efc7de0a125a7940f70c717156186027ac4547eb014c1d3daf0f",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / approved source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / source silhouette + clean face",
+        "REFERENCE_APPROVED / original locked for comparison"
+      ],
+      "layer_bounds_px": [
+        "176x71",
+        "40x13",
+        "177x74",
+        "150x54",
+        "40x13",
+        "177x84",
+        "150x55",
+        "37x15",
+        "177x75",
+        "151x59",
+        "24x30",
+        "177x95",
+        "150x54",
+        "54x52",
+        "177x68",
+        "150x55",
+        "768x1499",
+        "977x1512"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_at_s3.png",
+        "sha256_actual": "e364d4ab68a42c7f743e9b464acaedac2a8d9f889bf46b9ab1aeac6f14828685",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+        "sha256_actual": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+        "size_px": [
+          768,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        380,
+        150,
+        636,
+        406
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        225,
+        150
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_front_hair.png",
+        "sha256_actual": "f0083c44159815596cfd7ee3b06a93f15a23fa6e345e90f6cc0d6ba7ebb7bee7",
+        "size_px": [
+          176,
+          71
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_happy.png",
+            "sha256_actual": "973144e71f03c2a6547ce91856c100e749b754970df096df96e84b1ccdd9735f",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_surprised.png",
+            "sha256_actual": "991daac0acc467196a7dc38b34f725c9ebef3a639646518c296eeeb5cc654e7a",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_sad.png",
+            "sha256_actual": "e91a66e62c94d3b20a92c51e97bfe437b8fe9510e30828c09f5e7641a30511f9",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_smile.png",
+            "sha256_actual": "97b9b62e44df8773444ed3d90b94fe284feab9359fc125e6e80991904402e2a2",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_face_angry.png",
+            "sha256_actual": "c8e1545b6c6838b06ea0b1bb6ab61cbdc13c1fa4df0dc916dc1d3097466fd5ca",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AC_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s0_dialogue.psd",
+      "psd_sha256_actual": "959b74458ddc15b496f924addb6367a02a03c52d0708498b3b867cfdce2981a8",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "170x148",
+        "44x14",
+        "155x62",
+        "150x74",
+        "95x60",
+        "154x70",
+        "146x63",
+        "45x19",
+        "154x62",
+        "146x68",
+        "24x34",
+        "154x85",
+        "147x64",
+        "53x30",
+        "154x56",
+        "147x65",
+        "446x1515",
+        "993x1523"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s0.png",
+        "sha256_actual": "8a15c6febf0889b3dc014230974d700c8beadd2ba28fb9862640ba092a896a62",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_base.png",
+        "sha256_actual": "f6728d43b1f27a5b985fff87da4865dd7c9234460bc7f836df8cc8575d13c69a",
+        "size_px": [
+          454,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        350,
+        95,
+        606,
+        351
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        48,
+        95
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_front_hair.png",
+        "sha256_actual": "2566589ba09703b7662a299cb1f11df24864b8877226fffe815035ada338aa77",
+        "size_px": [
+          170,
+          148
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_happy.png",
+            "sha256_actual": "4143286615f4021e4b9cb6c25cc11e8a19ebd8e1281876ca4ab0da3b114ec448",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_surprised.png",
+            "sha256_actual": "b4eec27d15c63b2d54d81a366266d55da0341868ff223868e3b17e40cf6d7140",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_sad.png",
+            "sha256_actual": "3802a5b4b001b474cce82ba211f337ee2df5ab958a021f4d60c0dc8fceeb3378",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_smile.png",
+            "sha256_actual": "e543923fd386207a0350693111bd885491d2c69b7b07f7c5666bf27607cad584",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s0_face_angry.png",
+            "sha256_actual": "51665d434b93f6f84c31d097ea702839b799ac963d32fec41f96532eae7addb2",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AC_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s2_dialogue.psd",
+      "psd_sha256_actual": "7c4b18d33e5c081358ed1f2047a5dc2eb49d8b984bad946446e17f9eccbd13c5",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "172x135",
+        "44x14",
+        "170x67",
+        "147x78",
+        "99x53",
+        "167x78",
+        "155x67",
+        "45x18",
+        "167x69",
+        "155x68",
+        "24x33",
+        "167x92",
+        "149x70",
+        "53x30",
+        "167x62",
+        "149x72",
+        "505x1514",
+        "983x1536"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s2.png",
+        "sha256_actual": "5ed6504c1f247fc582862a574bd9e245c0a9a800e8d5ea59bd32be87074b243c",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_base.png",
+        "sha256_actual": "263a7f8b1090051b6b5a1de0e9204a9b4cde4b2b925eecbb8a320f74786c3b2d",
+        "size_px": [
+          513,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        355,
+        75,
+        611,
+        331
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        89,
+        75
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_front_hair.png",
+        "sha256_actual": "88c02392193647652bfc9570493dc5212f240b35e9cf01a0e0fcbba1e094c490",
+        "size_px": [
+          172,
+          135
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_happy.png",
+            "sha256_actual": "9149588931db2ccda5d12853e30e465fd9c131663b0f3852aab979e43236f330",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_surprised.png",
+            "sha256_actual": "a1e93a621a5888a4e54a08511c7b1456f37b990fec558ecc99ca0b0707d51878",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_sad.png",
+            "sha256_actual": "e124a94fddd8c4e422ba6bdda6b8eda96a2698c5da71fd2f15cdd5e221c2d79e",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_smile.png",
+            "sha256_actual": "08840f848b0ef7c9bb041f527b49187ae22c2666e5e6be1b2abf959b28bfc144",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s2_face_angry.png",
+            "sha256_actual": "198f91606d3ae964ed1caa6cb62232c3299aea1c8a8f800c9ce0a75d162d7bdd",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AC_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ac_s3_dialogue.psd",
+      "psd_sha256_actual": "2bbc3677bbe521508aac7c8f0673930adccede55cedfd051481cac0d977efd42",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "166x150",
+        "44x14",
+        "163x56",
+        "158x79",
+        "86x56",
+        "160x63",
+        "153x75",
+        "45x19",
+        "160x55",
+        "152x82",
+        "24x34",
+        "160x72",
+        "155x76",
+        "53x30",
+        "160x51",
+        "156x76",
+        "601x1517",
+        "996x1534"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_ac_s3.png",
+        "sha256_actual": "af95761311e86b025239cffde5e9780b319d629f281761bad393e13470a3b61e",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_base.png",
+        "sha256_actual": "b21424859c98cb516bd8af77af3de1b6e2851520031247327b738100d226c051",
+        "size_px": [
+          609,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        365,
+        65,
+        621,
+        321
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        154,
+        65
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_front_hair.png",
+        "sha256_actual": "984836ebe6481cbe1f1b7a4d8936420b1805ad7673931ae86952bb38bce83722",
+        "size_px": [
+          166,
+          150
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_happy.png",
+            "sha256_actual": "eec28847a2a5e0d951cd9b0080186becd5ad68471d1d59248277856a473919ff",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_surprised.png",
+            "sha256_actual": "229f73064396cb0693929f31d9150b66ee60bceb88f020bc5a136e2f4c41ea9e",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_sad.png",
+            "sha256_actual": "6251c19232672472af91da01087f082db7764a94613560042e30e88b67fb65d0",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_smile.png",
+            "sha256_actual": "196f758816adebb44e4f3da5ef8b956a090c05af4291923c0bd574afd02b5b97",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ac_s3_face_angry.png",
+            "sha256_actual": "c957eacf48b47726962cf90ff471a25ce9afaf77d1cfffa54cbf8a6872ce7824",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AJ_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s0_dialogue.psd",
+      "psd_sha256_actual": "ce44251de210f7bf889a06d148e0d0ec098fbaf94d057daf000993226f9dc516",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "186x167",
+        "44x14",
+        "183x91",
+        "160x92",
+        "92x57",
+        "182x101",
+        "155x81",
+        "45x19",
+        "182x91",
+        "154x86",
+        "25x34",
+        "182x116",
+        "157x83",
+        "52x30",
+        "182x82",
+        "158x84",
+        "586x1511",
+        "1012x1524"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s0.png",
+        "sha256_actual": "86e5adbca5197ec7c976dab738fa627bda736349d9935ada4b7a621f921aa089",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_base.png",
+        "sha256_actual": "3443cf6cc29c5c407e957472245c41ca88807d6123e1d5a9e7dbed206a2cc337",
+        "size_px": [
+          593,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        355,
+        130,
+        611,
+        386
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        117,
+        130
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_front_hair.png",
+        "sha256_actual": "3dfde897a368e22b08ea4d091a9eb7511ea00659eed824d82672a8c2caca0c3a",
+        "size_px": [
+          186,
+          167
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_happy.png",
+            "sha256_actual": "aaf0f7f9db5d96e38d5a026dced3218dd65850d5f47a07c94c51e4104fa0bf75",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_surprised.png",
+            "sha256_actual": "7b1a31a9b07d178944b8266a3d13a654b2f4f1407f37bcb36d9b9a6fde17b732",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_sad.png",
+            "sha256_actual": "fb4ff3b67d9384179056dc67e3c55011db16ae38f2ace8242e5098bc29af2291",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_smile.png",
+            "sha256_actual": "41edf591497bb2cf493f38f7976c6266ceb38015e0c9a628012fa87fefa34c05",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s0_face_angry.png",
+            "sha256_actual": "c7a793752ee5e72b90617cb5e30eb7a25706ebf9cc92346db161aca4159eee18",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AJ_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s2_dialogue.psd",
+      "psd_sha256_actual": "83dbf749bbb137abac2c03adb6830e62f0641546609f2ff212dbf846553d931c",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "186x155",
+        "44x14",
+        "174x85",
+        "169x90",
+        "108x66",
+        "174x92",
+        "166x80",
+        "45x19",
+        "174x83",
+        "169x78",
+        "25x34",
+        "174x107",
+        "168x82",
+        "52x30",
+        "174x76",
+        "168x82",
+        "586x1514",
+        "977x1525"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s2.png",
+        "sha256_actual": "eaff9d5165a9b293fdda8cf13f12cea72a0bc8d04aa8fe81179f6f9732e018d1",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_base.png",
+        "sha256_actual": "476da9443204134ba5278ba920893a6dd17d57f2cd7e9cbe42907e5ec7d19fc9",
+        "size_px": [
+          594,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        365,
+        130,
+        621,
+        386
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        120,
+        130
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_front_hair.png",
+        "sha256_actual": "afd6dae5ec6b9204b4e93edb942e06e053dc13798e0bc30e85fb107fafa7ae30",
+        "size_px": [
+          186,
+          155
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_happy.png",
+            "sha256_actual": "5422ed63f176a7056a066a1920316dcc2845c120896ad921175cf5c840aac557",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_surprised.png",
+            "sha256_actual": "392174852734e717cb553208726be730cfffcda0c34cb6ee13ffd0d0bd10f647",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_sad.png",
+            "sha256_actual": "77099734643d76b75a2950b2d52ded1b46d403487b1420081f3b888b578465ef",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_smile.png",
+            "sha256_actual": "e23da1753f2e533089b408a011c43727777ced0bf19f8a08aeb19cec9d0dd117",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s2_face_angry.png",
+            "sha256_actual": "19254d8dc2ad7f7155dedca648e0c7c08a10c3a1d67686678b9e7a023331acd2",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AJ_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_aj_s3_dialogue.psd",
+      "psd_sha256_actual": "ef5a5fba75596a73d72096c51a0535c5390f783a01165fe34c757e170fa8f3d6",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR / source occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / clean silhouette and face",
+        "REFERENCE_APPROVED / hidden source"
+      ],
+      "layer_bounds_px": [
+        "186x153",
+        "44x14",
+        "177x88",
+        "174x87",
+        "110x69",
+        "175x93",
+        "172x74",
+        "45x19",
+        "175x83",
+        "170x72",
+        "25x34",
+        "175x106",
+        "173x77",
+        "52x30",
+        "175x76",
+        "173x79",
+        "566x1495",
+        "943x1504"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": null,
+      "approved_source": {
+        "path": "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/characters/mgr_aj_s3.png",
+        "sha256_actual": "254ff2dbb0ef763376a2c5bb4ec69e487573bdd0234ed69baa57d52f231d7363",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_base.png",
+        "sha256_actual": "72e34e5b0de76d62be16a173a55ac975a61577ca9199c2f0a36e2198e9e8d6a1",
+        "size_px": [
+          574,
+          1024
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        365,
+        145,
+        621,
+        401
+      ],
+      "face_export_canvas_px": [
+        256,
+        256
+      ],
+      "face_offset_in_base": [
+        110,
+        145
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_front_hair.png",
+        "sha256_actual": "454faeb5cbeb0b4a4b8c61abd812e39a4aa7e277b0ba1fdefe230304dce10d4d",
+        "size_px": [
+          186,
+          153
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_happy.png",
+            "sha256_actual": "d84cff21ddd48263328aa68b3d00e8089bc960ff4316e3f51e37dfb74680b56f",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_surprised.png",
+            "sha256_actual": "c8a7e9f74749414f75038ae6219d692aa01eed7d6221f74cc6b8d3ec6fa26be7",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_sad.png",
+            "sha256_actual": "67e3647e5e05d0ecdc9e05bd8666d302d830e8f94c11a1586b2ab6f224e6170d",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_smile.png",
+            "sha256_actual": "cd94543dc93d06b4d254309074a78a55ccf2f0e4a47042f68c935f7f9c2b1086",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_aj_s3_face_angry.png",
+            "sha256_actual": "905fe222909c588ea8186a43e9f25fb2b23ceacad334dfa736d4976064588543",
+            "size_px": [
+              256,
+              256
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": null
+    },
+    "AD_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s0_dialogue.psd",
+      "psd_sha256_actual": "9e4726cf571d67b226bcb7b9c9e4339a773d13d4581d645fd7f8d154a4076b1d",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "173x138",
+        "48x14",
+        "192x76",
+        "158x31",
+        "54x36",
+        "192x92",
+        "158x34",
+        "46x16",
+        "192x79",
+        "154x36",
+        "27x34",
+        "192x101",
+        "156x32",
+        "63x39",
+        "192x76",
+        "156x34",
+        "726x1496",
+        "1002x1520"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s0.png",
+        "sha256_actual": "fa4f47e03eedaea1d0d0dbe1b773d48d550d887027e971030cf83eadc80717c4",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_base.png",
+        "sha256_actual": "03d0bcfc7e79ba7c4dd10ceda46acc17465c8f6f0b29fd71b7b309b74306eda0",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        232,
+        139
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_front_occlusion.png",
+        "sha256_actual": "b85ceeb72e024b13c33e00d0767fd727d7c495d865826badd478f888de149eb1",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_happy.png",
+            "sha256_actual": "b7699543c73eb67e7cd62c154f49e427085f4bccdac398de99f68663ec4b505a",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_surprised.png",
+            "sha256_actual": "290458c6efff5955d2675b0cc45ca5738c63161586471f9896d3ffee32da397a",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_sad.png",
+            "sha256_actual": "f5b3fbd1da5e34197926a7c9eab301b3bdf5d3a0f9b2cc02ef596fca1f6cf8fe",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_smile.png",
+            "sha256_actual": "6e17d59ba54b7511eb106381729881e21723fc0493df2b87e2c3768bf47e3fbd",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s0_face_angry.png",
+            "sha256_actual": "83f6b29b38d480007d14a44c32c3baa61bb44d5f94e539f2af90172b79e3c338",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": false
+    },
+    "AD_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s2_dialogue.psd",
+      "psd_sha256_actual": "79c67dc635b21fcbc4e75d810762accadd3d7c04fc4ac8bc9e5b493764d2e63c",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "175x139",
+        "46x14",
+        "191x76",
+        "159x31",
+        "50x37",
+        "191x91",
+        "159x34",
+        "45x16",
+        "191x78",
+        "155x36",
+        "27x34",
+        "191x101",
+        "157x32",
+        "61x39",
+        "191x76",
+        "157x34",
+        "772x1499",
+        "1004x1506"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s2.png",
+        "sha256_actual": "8707280cab50da42a963baa921fd57b159522739a40a4983decaaa1327997e69",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_base.png",
+        "sha256_actual": "64ed096a0a7b91183ffe6829ccd46d14c9b137772b7207792d7464bb18ebae4a",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        308,
+        184,
+        564,
+        440
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        231,
+        138
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_front_occlusion.png",
+        "sha256_actual": "c82d8d089eb1a550a419feea3131ca429140a6acf7473c594410d44dc3adcb64",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_happy.png",
+            "sha256_actual": "ff6f9ce86ef01eb924d8503e2c26f1af049bc67d60a37b8eb5861bc057316d42",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_surprised.png",
+            "sha256_actual": "597008efed574047fa56cb6a7e66c307e9236d984d258a6532e0348618308661",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_sad.png",
+            "sha256_actual": "04902357e1738857e510dcaa724d5f34b2f93d583c9d6e341ad76b3fb2ac048b",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_smile.png",
+            "sha256_actual": "0907f559af4ac616a9040c72b685b93b90b113c312b792167e8ea90bc606797c",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s2_face_angry.png",
+            "sha256_actual": "9fe87ebd2b7b112ab7156c2a4b8f327324781c19deb4faf3a9390e4cd62b9d26",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": false
+    },
+    "AD_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_ad_s3_dialogue.psd",
+      "psd_sha256_actual": "b6093e46d422073530bb59249065e40f12c7a1e7dcdb8d12580329d8eb09eadd",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "173x139",
+        "52x14",
+        "197x76",
+        "161x31",
+        "57x47",
+        "197x92",
+        "160x34",
+        "50x16",
+        "197x79",
+        "157x36",
+        "28x34",
+        "197x103",
+        "159x33",
+        "70x39",
+        "197x76",
+        "159x34",
+        "880x1501",
+        "994x1506"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_ad_s3.png",
+        "sha256_actual": "7c31f425877d7d869893c0c97abd09c3228c70f80066f5c7ed67452ccfd62a01",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_base.png",
+        "sha256_actual": "9cb5a56a0ec08c9829d87c79333244024de8a87ce2462feb85d188a9e5f2f3cd",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        310,
+        184,
+        566,
+        440
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        232,
+        138
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_front_occlusion.png",
+        "sha256_actual": "58075b31e95b50a40df7c6bdbed1b94df00acda013c08030d08e5ba9dbab944a",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_happy.png",
+            "sha256_actual": "0bf303b5bb0f6ec16de37606ff134964080273ef006a3c688e6a1f2421802a30",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_surprised.png",
+            "sha256_actual": "df5637690211f489a3e52cdfe1551c87eef036f32e0353128218400b212d2720",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_sad.png",
+            "sha256_actual": "bfcb88490d2776bee3aa258d9047e5fa7079dd13a63843b98128254e44bedd8d",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_smile.png",
+            "sha256_actual": "367aff93063069c4f080e1ee7f82266e45894b69c5740c72921d428ba6307ad9",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_ad_s3_face_angry.png",
+            "sha256_actual": "440e777c27fb128999e82144b94a213aca87b42688067e3280c684a502604e08",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": false
+    },
+    "XJ_S0": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s0_dialogue.psd",
+      "psd_sha256_actual": "93cff7468175ae955f655843f9f2995597668d158d8738bb22c80aa5ee2cfc70",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "246x160",
+        "32x14",
+        "196x62",
+        "144x47",
+        "25x14",
+        "200x77",
+        "146x46",
+        "32x16",
+        "196x65",
+        "144x45",
+        "28x35",
+        "196x87",
+        "145x46",
+        "42x39",
+        "200x62",
+        "146x45",
+        "811x1472",
+        "925x1486"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s0.png",
+        "sha256_actual": "bbde4f30cfb84ddef890e6bfdea6ca3990f9669235a6f3abf27b78dc11b26dd9",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_base.png",
+        "sha256_actual": "9d51ed7fd12951adbe70e4e6e9732642651b1a9063ef16a345938649684c231b",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        248,
+        167
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_front_occlusion.png",
+        "sha256_actual": "82a90e715aad5b7256294e9581a184de237c9a777692dc1588cf45a312bdbb02",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_happy.png",
+            "sha256_actual": "7eb4e7e9eaef52a2719cdeccb385776a6bab5e1ce8c7f2fa809463f8d05a9f00",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_surprised.png",
+            "sha256_actual": "0cdcaf9a10c16384f343120349c281dd5b0a0681beab38218967b4576f1e347c",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_sad.png",
+            "sha256_actual": "16eb8ab34f4ae26828533419c82a1dd3d7863219934941c9dc9fbc738941f58d",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_smile.png",
+            "sha256_actual": "f34f31263fdf15e27b8a90d36e64421be80c88310bc74dfd4756efa6b8bdcda3",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s0_face_angry.png",
+            "sha256_actual": "5e70f626ec149777c778e35143e3b5bf1d3617e15936615ceb4755aade75c3ba",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": true
+    },
+    "XJ_S2": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s2_dialogue.psd",
+      "psd_sha256_actual": "32fb169e24afac43fc04935420d6bf4c8cb337668e44b4a2158299c7512f1d1a",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "246x158",
+        "43x14",
+        "200x63",
+        "145x46",
+        "43x15",
+        "200x77",
+        "147x45",
+        "42x16",
+        "200x66",
+        "145x44",
+        "28x35",
+        "200x86",
+        "146x45",
+        "58x39",
+        "200x63",
+        "147x44",
+        "816x1478",
+        "927x1486"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s2.png",
+        "sha256_actual": "6b5f7a4781dd233ec02acde3782afee0f3174ad42078670d36745cea5d75ceb8",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_base.png",
+        "sha256_actual": "0bd44ba7a2e9e1a0d37a2da3e42ed10c6a1720daf0043e2de159b255ca3da080",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        330,
+        222,
+        586,
+        478
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        248,
+        166
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_front_occlusion.png",
+        "sha256_actual": "337b7b5b199af3c9b8888e989d7940bf28fcdf2c5d9d8364b2064c5fde57cddc",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_happy.png",
+            "sha256_actual": "fb9a3abc6fe6af515dba67f8d543d2b2c3d2cb50a051c94f197607143b6a794d",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_surprised.png",
+            "sha256_actual": "3c2c879e1e57b152688974da0e8b01172df094f6496620589ec2e2f3db89dc21",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_sad.png",
+            "sha256_actual": "53cffe33cf02be6260da89b264db1aa1a3cffea9151978ef245b926b56d34836",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_smile.png",
+            "sha256_actual": "6b16205354078f3a21a935ce55863df3d247dcea7ac0a96599fa58bb18bae77d",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s2_face_angry.png",
+            "sha256_actual": "675fd461ef406311be37af1bde8f6f07a356dd7615161637e10c97ba07ac4695",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": true
+    },
+    "XJ_S3": {
+      "psd_path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_xj_s3_dialogue.psd",
+      "psd_sha256_actual": "ef4999c36c6de70c3eaacdc87b1927392629e770e541e2594945a0ef5ddb4a54",
+      "psd_sha_matches_map": true,
+      "psd_canvas_px": "1024x1536",
+      "identify_exit": 0,
+      "layer_names": [
+        "FRONT HAIR + GLASSES / approved stage occlusion",
+        "ANGRY / mouth",
+        "ANGRY / eyes",
+        "ANGRY / brows",
+        "SMILE / mouth",
+        "SMILE / eyes",
+        "SMILE / brows",
+        "SAD / mouth",
+        "SAD / eyes",
+        "SAD / brows",
+        "SURPRISED / mouth",
+        "SURPRISED / eyes",
+        "SURPRISED / brows",
+        "HAPPY / mouth",
+        "HAPPY / eyes",
+        "HAPPY / brows",
+        "BASE / approved silhouette and clean face",
+        "REFERENCE_APPROVED / original locked"
+      ],
+      "layer_bounds_px": [
+        "163x133",
+        "60x14",
+        "185x76",
+        "155x36",
+        "63x39",
+        "185x93",
+        "156x37",
+        "58x16",
+        "185x79",
+        "155x37",
+        "28x34",
+        "185x104",
+        "156x32",
+        "82x39",
+        "185x76",
+        "156x35",
+        "838x1513",
+        "951x1536"
+      ],
+      "layer_count_excluding_composite": 18,
+      "manifest_layer_names": [
+        "REFERENCE_APPROVED / original locked",
+        "BASE / approved silhouette and clean face",
+        "HAPPY / brows",
+        "HAPPY / eyes",
+        "HAPPY / mouth",
+        "SURPRISED / brows",
+        "SURPRISED / eyes",
+        "SURPRISED / mouth",
+        "SAD / brows",
+        "SAD / eyes",
+        "SAD / mouth",
+        "SMILE / brows",
+        "SMILE / eyes",
+        "SMILE / mouth",
+        "ANGRY / brows",
+        "ANGRY / eyes",
+        "ANGRY / mouth",
+        "FRONT HAIR + GLASSES / approved stage occlusion"
+      ],
+      "approved_source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/approved_original_xj_s3.png",
+        "sha256_actual": "b14d8db0b874aab07f0c342fdd2c1ff651ac220e07400a620189d23012429097",
+        "size_px": [
+          1024,
+          1536
+        ],
+        "manifest_sha_match": true
+      },
+      "base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_base.png",
+        "sha256_actual": "1809aeb5563f49a69839a3bc7755950695844382838a6a003e416b54a3d2e38e",
+        "size_px": [
+          768,
+          768
+        ],
+        "manifest_sha_match": true
+      },
+      "face_source_rect_xyxy": [
+        320,
+        190,
+        576,
+        446
+      ],
+      "face_export_canvas_px": [
+        192,
+        192
+      ],
+      "face_offset_in_base": [
+        240,
+        142
+      ],
+      "front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_front_occlusion.png",
+        "sha256_actual": "16f32ddeb5c57f4ef7a32c6e9a1a92ac49dc851883ae9b832ad25d56de9c486d",
+        "size_px": [
+          192,
+          192
+        ],
+        "manifest_sha_match": true
+      },
+      "states": {
+        "happy": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_happy.png",
+            "sha256_actual": "314ad6efea454c3340f490cdc82574f460785a3f205355c4dd5ebf19bf8758fe",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "surprised": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_surprised.png",
+            "sha256_actual": "5c224f1b8d75fe1a5d40b52990946aa063fabe60ea0c549765914d6d8679e1cd",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "sad": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_sad.png",
+            "sha256_actual": "49a02d43f0e9fdb8db3e05214bd16d7f3df75fce1a2a553a23bdc14ee8d29e6d",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "smile": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_smile.png",
+            "sha256_actual": "af6d3b4ff41cdb62427e6c8745190a5b538e6efb4e69320ea3f73bb46a87b00e",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        },
+        "angry": {
+          "combined": {
+            "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_xj_s3_face_angry.png",
+            "sha256_actual": "6920a98049e9ca9c239b75cb48bd7dfada8a47445d7695493d0617e3cfac0db2",
+            "size_px": [
+              192,
+              192
+            ],
+            "manifest_sha_match": true
+          },
+          "editable_source_sizes": {
+            "brows": [
+              256,
+              256
+            ],
+            "eyes": [
+              256,
+              256
+            ],
+            "mouth": [
+              256,
+              256
+            ]
+          }
+        }
+      },
+      "glasses_in_front_map": false
+    }
+  },
+  "notes": [
+    "identify lists decoded PSD layer labels/bounds, not proof of native vector editability or visual approval.",
+    "No source modified or resource exported."
+  ]
+}

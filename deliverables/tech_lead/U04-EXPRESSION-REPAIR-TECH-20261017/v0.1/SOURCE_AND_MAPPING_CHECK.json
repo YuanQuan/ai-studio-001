@@ -1,0 +1,45 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-TECH-20261017",
+  "checked_at": "2026-10-17T11:01:21.272929+08:00",
+  "method": "只读解析JSON、SHA-256文件身份和客户端源码静态检查；未执行Cocos或视觉运行",
+  "summary": {
+    "stage_count": 18,
+    "state_count": 90,
+    "states": [
+      "happy",
+      "surprised",
+      "sad",
+      "smile",
+      "angry"
+    ],
+    "pilot_stages": [
+      "MT_S2",
+      "AT_S0",
+      "AC_S0",
+      "AJ_S2",
+      "AD_S0",
+      "XJ_S0"
+    ],
+    "pilot_state_count": 30,
+    "map_json_equal": true,
+    "map_sha256_art": "71f9f7a6ce536d633e7d21701ffced23b50d71371511c706f0709e5b25ef7799",
+    "map_sha256_client": "d941ee459d51d73928cf4a635d103dad208e7b5796ec494e147790860f769852",
+    "manifest_assets": 129,
+    "source_refs": 426,
+    "source_refs_all_exist": true,
+    "source_refs_all_hash_match": true,
+    "approved_reference_files": 30,
+    "approved_reference_all_exist_and_match": true,
+    "client_source_has_layer_loading": true,
+    "client_source_has_map_load": true,
+    "client_source_has_order": true
+  },
+  "mismatches": [],
+  "approved_mismatches": [],
+  "client_mapping_note": "JSON全量结构相等；客户端路径由stage+expression计算，实际显示尺寸/运行效果尚未测试。",
+  "limitations": [
+    "PSD存在且SHA匹配仅证明文件身份，不证明内部原生语义分层或可定向编辑；需Art逐层审计",
+    "未改变文件；旧资源UUID/路径须在生产和正式接入时再核",
+    "未做目标设备性能或视觉判断"
+  ]
+}

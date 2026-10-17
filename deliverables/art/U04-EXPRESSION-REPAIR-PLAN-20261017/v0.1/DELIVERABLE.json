@@ -1,0 +1,52 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "owner": "art",
+  "summary": "六店长首批30态具体Gate1制作方案、18份旧PSD只读核验、预算与用户审核包。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/VISUAL_ANCHORS.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/SOURCE_PSD_AUDIT.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/RIGHTS_AND_SOURCE.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/ART_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐项定位六人缺陷，锁定六个首批阶段和30态，保留既有身份、成长及身体衣装道具。",
+      "result": "PASS",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md"
+    },
+    {
+      "criterion": "只读核对现有18阶段PSD/PNG/源版本，给出源哈希、语义图层、坐标与小锦眼镜污染修复规则和编辑限制。",
+      "result": "PASS",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/SOURCE_PSD_AUDIT.json"
+    },
+    {
+      "criterion": "明确实际工具、逐态局部重绘/合成/PSD回写与导出方法，禁止机械五官变换充当主要生产方法；定义代表样张与扩批门槛。",
+      "result": "PASS",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md"
+    },
+    {
+      "criterion": "方案含稳定ID及计划路径、可核数字预算、失败停止、同尺度视觉辨识和保真验证；未制作正式资源或改Client。",
+      "result": "PASS",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md"
+    },
+    {
+      "criterion": "Required实存且验收逐项同序，Art方案Review与可供用户审批的中文审核包齐备。",
+      "result": "PASS",
+      "evidence": "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md"
+    }
+  ],
+  "assumptions": [
+    "首批30态先试，余60态另提扩批。",
+    "既有审图板和历史Runtime截图不代表新版运行通过。"
+  ],
+  "risks": [
+    "视觉自然度须以样张与盲辨验证，文件/哈希合格不足以通过。",
+    "外部参考及商业权利链未独立完整核实，正式生产前复查。",
+    "生成式ROI候选可能改尺寸/遮挡，须确定性回拷ROI外并手工回写语义层。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

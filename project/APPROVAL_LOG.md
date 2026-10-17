@@ -1,3 +1,12 @@
+<!-- U04-EXPRESSION-REPAIR-20261017 START -->
+## 2026-10-17｜U04 表情修正独立双门禁
+
+- 本轮 `PLEASE IMPLEMENT` 授权只读检查与方案形成，登记于 `deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/USER_AUTHORIZATION.json`；它不批准具体资源制作。Art/Tech v0.1 专业退回，历史保留，未送用户批准。
+- Gate1：Art v0.2 `deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.2/PRODUCTION_PLAN.md` SHA `691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a`，中文包 `USER_REVIEW_PACKET.md`；`tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/ARTIFACT_APPROVAL.json` 状态 `USER_REVIEW`、`decided_at=null`。Art/Tech/Master 专业 Review 已通过，用户尚未批准，正式资源制作锁定。八件身份见 `deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/REVIEW_IDENTITY.json`。
+- Gate2：未来具体切片、PSD与同尺度重组效果 `NOT_STARTED`，须独立用户决定；Client 正式接入锁定。Gate1 未来批准也不自动批准 Gate2。
+- Tech v0.2 内部支持经 Master 接受，`tasks/U04-EXPRESSION-REPAIR-TECH-20261017/ARTIFACT_APPROVAL.json` 为 `PROFESSIONAL_REVIEW`、非用户决定。Producer v0.1 已获 Master 内部接受，`DONE/PROFESSIONAL_REVIEW`；单元示例无 QA。
+<!-- U04-EXPRESSION-REPAIR-20261017 END -->
+
 <!-- U01-USER-LAYOUT-FLOW-20261015 START -->
 2026-10-15 08:49:18 +08:00登记：用户原文“调涨U01参数”由Master `USER_AUTHORIZATION.json`冻结为U01布局参数修改授权，`USER_LAYOUT.json` SHA=`f34af020733b3ad095c7845d028f8acdfcf5a00fee30ea7a01c547bfac02a364`，Producer复算一致。此项是实现授权，不是新参数运行版的用户效果批准；旧`U00-U01-BRIDGE-V05-CLIENT-20261014`准确v0.1运行USER_REVIEW历史保留，且不自动延伸到本版。无新增资源/生图审批。
 2026-10-15 09:03:45 +08:00登记：Master `TECH_MASTER_ACCEPTANCE.json`接受Tech本批技术支持，Tech Task DONE/现行Artifact Approval=PROFESSIONAL_REVIEW；`MASTER_REVIEW.json`已通过Client本轮范围，但准确参数版运行USER_REVIEW仍待身份清单绑定，未记用户效果批准。旧v0.5运行审批历史保持。

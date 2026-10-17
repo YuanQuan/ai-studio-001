@@ -1,0 +1,31 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-FLOW-20261017",
+  "checked_at": "2026-10-17T11:14:11+08:00",
+  "result": "PASS",
+  "lines": [
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+      "status": "USER_REVIEW",
+      "evidence": "tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/ARTIFACT_APPROVAL.json",
+      "next_action": "用户审阅准确v0.2 Gate1方案；决定前锁正式资源"
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-TECH-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/TECH_MASTER_ACCEPTANCE.json",
+      "next_action": "内部支持结束"
+    },
+    {
+      "task_id": "U04-EXPRESSION-REPAIR-FLOW-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/FLOW_MASTER_ACCEPTANCE.json",
+      "next_action": "内部支持完成"
+    }
+  ],
+  "idle_ready_or_in_progress": [],
+  "gate1_user_approved": false,
+  "gate2_user_approved": false,
+  "formal_resource_production_unlocked": false,
+  "client_integration_unlocked": false,
+  "qa": "单元示例无QA"
+}

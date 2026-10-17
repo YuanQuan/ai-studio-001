@@ -1,0 +1,38 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "完成Art v0.2真实工具路线的静态技术评审，可随方案送Gate1用户审核；旧v0.1结论仅留内部审计。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.2/SOURCE_AND_MAPPING_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.2/TECH_REVIEW.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.2/TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.2/REVIEW_BINDING.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "核对现行18阶段与90态源/客户端映射、源图/PSD存在和只读身份，并记录明确的编辑/导出限制。",
+      "result": "PASS",
+      "evidence": "SOURCE_AND_MAPPING_CHECK.json；Art SOURCE_PSD_AUDIT.json；TECH_REVIEW.md 源和映射节。"
+    },
+    {
+      "criterion": "对同版Art方案的工具路线、脸区与配饰分层、首批30态及预算、扩批和验收方法给出可执行Review；不得把计划写作实测。",
+      "result": "PASS",
+      "evidence": "TECH_REVIEW.md 制作路线、预算和后续验收节；REVIEW_BINDING.json 绑定Art方案与清单SHA。"
+    },
+    {
+      "criterion": "输出引用准确方案SHA的专业Review和逐项验收，未改Client、图片、PSD或执行新运行。",
+      "result": "PASS",
+      "evidence": "REVIEW_BINDING.json reviewed_artifacts_sha256；本任务仅写Tech交付与自身Task状态，未做新运行。"
+    }
+  ],
+  "assumptions": [
+    "方案/清单/审核包以TECH_REVIEW.json所列SHA为审阅版本；任一审阅文件变动需复核。",
+    "预算与PSD/像素/视觉检查目前为生产计划和人工约束，未有新图实测。"
+  ],
+  "risks": [
+    "image_gen输出无法保证尺寸、像素配准、精确蒙版、多层PSD或本地路径；候选无法落地或配准即停。",
+    "现有PSD层名与SHA不能证明内部语义可编辑性，首图前与代表样张需核实。",
+    "真实UUID、内存、DrawCall及目标设备显示待正式接入检查。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

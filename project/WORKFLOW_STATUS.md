@@ -1,3 +1,13 @@
+<!-- U04-EXPRESSION-REPAIR-20261017 START -->
+## 2026-10-17｜U04 六店长表情修正具体方案
+
+- 用户 `PLEASE IMPLEMENT` 授权高层计划推进，原消息精确时间未知；Task 登记 10:57:55 +08:00。Art/Tech v0.1 因主工具路线不可执行被 Master 专业退回并保留历史，v0.2 为现行准确版本。
+- Art `U04-EXPRESSION-REPAIR-PLAN-20261017` v0.2：九 Required、五验收原文同序 PASS；Art/Tech 同版及 Master Review APPROVED。`PRODUCTION_PLAN.md` SHA `691699afcd70db3df4c82490cf7be27be1f3c055f72ac1a69907b2945e9e955a`；`tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/ARTIFACT_APPROVAL.json` 为 `USER_REVIEW`、`decided_at=null`，Task `USER_REVIEW`。准确八项身份见 `deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/REVIEW_IDENTITY.json`。
+- Tech `U04-EXPRESSION-REPAIR-TECH-20261017` v0.2：四 Required、三验收同序 PASS；`REVIEW_BINDING.json` 六项 Art SHA 匹配，经 Master 接受后 Task `DONE`、Approval `PROFESSIONAL_REVIEW`，仅内部方案可行性支持。
+- Producer `U04-EXPRESSION-REPAIR-FLOW-20261017` v0.1：四 Required、两验收同序 PASS，经 Master `FLOW_MASTER_ACCEPTANCE.json` 接受，Task `DONE`、Approval `PROFESSIONAL_REVIEW`；`CONTINUITY_CHECK.json` 无本线空挂 READY/IN_PROGRESS，复盘 `WR-20261017-U04-EXPRESSION-REPAIR-001` 见 `project/WORK_RETROSPECTIVE_LOG.md`。
+- Gate1 v0.2 仅待用户决定，正式图片/PSD/切片制作锁定；Gate2 未来实际切片与重组效果另审，Client 正式接入锁定。本轮无新图、无 Client 修改；单元示例无 QA。
+<!-- U04-EXPRESSION-REPAIR-20261017 END -->
+
 <!-- EXAMPLE-REVISION-20261015 START -->
 ## 2026-10-15｜示例场景与奶茶顾客调整
 

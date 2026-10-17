@@ -1,0 +1,46 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-TECH-20261017",
+  "title": "六店长表情修正方案技术可行性评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "objective": "审阅同版Art方案，检查只读源与现行Client映射、PSD可操作性、小锦配饰分层和预算、验证策略；不做首图生产预签、不改代码或资产。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "AGENTS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/all_90_combinations.png",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-PLAN-20261017/v0.1/SOURCE_PSD_AUDIT.json",
+    "apps/client/assets/UnitSampleGallery.ts",
+    "apps/client/assets/units/dialogue/u04_layer_export_map.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/TECH_REVIEW.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/TECH_REVIEW.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/SOURCE_AND_MAPPING_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "核对现行18阶段与90态源/客户端映射、源图/PSD存在和只读身份，并记录明确的编辑/导出限制。",
+    "对同版Art方案的工具路线、脸区与配饰分层、首批30态及预算、扩批和验收方法给出可执行Review；不得把计划写作实测。",
+    "输出引用准确方案SHA的专业Review和逐项验收，未改Client、图片、PSD或执行新运行。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "APPROVAL",
+  "notes": [
+    "本轮只制作文档/只读检查证据，不生成正式图片、PSD或切片。",
+    "单元示例不分派QA。",
+    "专业方案评审可并行准备，不代表提前消费未获批资源；Tech/Producer仅内部支持，接受后不新增用户门禁。",
+    "用户消息精确时间未知；Task登记时间 2026-10-17T10:57:55+08:00",
+    "遵循AGENTS最新日常提交推送授权；仅Master汇总处理Git，不提交其他既有差异。",
+    "2026-10-17：已生成首个Required Artifact SOURCE_AND_MAPPING_CHECK.json，完成只读映射与源身份核对；等待同版Art方案评审。",
+    "2026-10-17：已完成同版Art方案SHA绑定TECH_REVIEW及DELIVERABLE，待Master专业接受；本Review非首图前Art/Tech同批预签。"
+  ]
+}

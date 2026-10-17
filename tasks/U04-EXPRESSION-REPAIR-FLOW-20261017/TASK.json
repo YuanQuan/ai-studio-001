@@ -1,0 +1,41 @@
+{
+  "id": "U04-EXPRESSION-REPAIR-FLOW-20261017",
+  "title": "六店长表情修正方案流程与审批追踪",
+  "type": "coordination",
+  "owner": "producer",
+  "parent": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "objective": "持续登记本轮Art/Tech真实开工、方案版本和Review，核Gate1独立用户批准，最后做continuity与带可靠时间的简短复盘；保护其他任务差异。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/U04-EXPRESSION-REPAIR-20261017/v0.1/DIAGNOSIS.md",
+    "AGENTS.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/ASSET_MANIFEST.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/review/all_90_combinations.png",
+    "deliverables/art/U04-MANAGER-PORTRAITS-001/v0.3/APPROVED_COMBINATION_MANIFEST.json",
+    "tasks/U04-EXPRESSION-REPAIR-PLAN-20261017/TASK.json",
+    "tasks/U04-EXPRESSION-REPAIR-TECH-20261017/TASK.json"
+  ],
+  "deliverables": [
+    "deliverables/producer/U04-EXPRESSION-REPAIR-FLOW-20261017/v0.1/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-FLOW-20261017/v0.1/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-FLOW-20261017/v0.1/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-REPAIR-FLOW-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "本线Task、Artifact及Review版本/真实路径与状态持续登记，Gate1/Gate2不混用，无未经批准制作或接入。",
+    "Required及验收、Master接受、continuity与有时间证据的简短复盘齐备，无空转任务；共享状态与Dashboard保留既有内容。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "本轮只制作文档/只读检查证据，不生成正式图片、PSD或切片。",
+    "单元示例不分派QA。",
+    "专业方案评审可并行准备，不代表提前消费未获批资源；Tech/Producer仅内部支持，接受后不新增用户门禁。",
+    "用户消息精确时间未知；Task登记时间 2026-10-17T10:57:55+08:00",
+    "遵循AGENTS最新日常提交推送授权；仅Master汇总处理Git，不提交其他既有差异。"
+  ]
+}

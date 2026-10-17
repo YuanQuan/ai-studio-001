@@ -1,0 +1,20 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-PLAN-20261017",
+  "reviewer": "master",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "v0.1主路线依赖手绘/数位板/PSD笔刷，但当前Agent没有已验证的绘画工具，0次生成和40人工工时不能构成可执行制作路线。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "须改为内置imagegen逐态ROI编辑及确定性像素保护/语义拆层/PSD组装，记录工具无法保证原尺寸、精确遮罩和原生分层的限制，并给有限调用预算。"
+    },
+    {
+      "severity": "INFO",
+      "message": "18份旧PSD/324层与源映射核查有效；v0.1方案与Tech Review留历史，不用于新版用户送审或首图预签。"
+    }
+  ],
+  "next_action": "Art/Tech分别提交v0.2；同版专业Review与Master接受后，由Producer将具体Gate1 v0.2送用户审核。"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "已完成六店长表情修正Gate1方案的静态身份核查及技术可行性评审，结论可送用户审核。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/SOURCE_AND_MAPPING_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/TECH_REVIEW.md",
+    "deliverables/tech_lead/U04-EXPRESSION-REPAIR-TECH-20261017/v0.1/TECH_REVIEW.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "核对现行18阶段与90态源/客户端映射、源图/PSD存在和只读身份，并记录明确的编辑/导出限制。",
+      "result": "PASS",
+      "evidence": "SOURCE_AND_MAPPING_CHECK.json；Art SOURCE_PSD_AUDIT.json；TECH_REVIEW.md 静态身份和现行映射节。"
+    },
+    {
+      "criterion": "对同版Art方案的工具路线、脸区与配饰分层、首批30态及预算、扩批和验收方法给出可执行Review；不得把计划写作实测。",
+      "result": "PASS",
+      "evidence": "TECH_REVIEW.md 路线和边界、批次预算和验收节；TECH_REVIEW.json 绑定方案SHA。"
+    },
+    {
+      "criterion": "输出引用准确方案SHA的专业Review和逐项验收，未改Client、图片、PSD或执行新运行。",
+      "result": "PASS",
+      "evidence": "TECH_REVIEW.json reviewed_sha256；本任务仅写Tech交付与自身Task状态，未做新运行。"
+    }
+  ],
+  "assumptions": [
+    "方案SHA对应Art v0.1当前字节；后续若方案字节变化，本结论需复核。",
+    "预算与PSD操作目前为方案和人工约束，尚无新图实测。"
+  ],
+  "risks": [
+    "PSD层名与文件SHA不能证明内部语义可编辑性；首图前预签和代表样张时核实。",
+    "生成式ROI不能保证像素精确或多层；未改区域须确定性回填。",
+    "正式资源的真实UUID、贴图内存、DrawCall和目标设备显示待接入后检查。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
