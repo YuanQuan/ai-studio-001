@@ -1,3 +1,16 @@
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
+### U04 断线与重影再次返工
+- `2026-10-17T08:03:11Z USER_CHANGES_REQUESTED_V02`：用户退回准确v0.2，证据`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json`；旧Approval现行REJECTED及before快照留存；Art v0.3 DRAFT。
+- `ART_TASK_STARTED`：Master转报Art已实际读新Task/Auth和AJ源/base/front/语义层；Art IN_PROGRESS。`PRODUCER_TASK_STARTED`：首Required`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md`实存，Producer IN_PROGRESS；Tech新轮DIAGNOSIS.md实存、已IN_PROGRESS。
+- `ART_LAYER_DIAGNOSIS`：AJ sad旧base眉碎段与新face半透明叠线已实际定位；新法从原候选重提连续新眉并清旧线。具体坐标与方法见Producer本轮`FLOW_REPORT.md`，Art正式诊断待落盘。
+- `08:09:17Z TECH_TASK_STARTED`：本轮首Required `deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DIAGNOSIS.md`实存，Tech READY→IN_PROGRESS。
+- `08:12:57Z ART_TECH_V03_PRESIGN`：Art预案与Tech同批SHA绑定预签，AJ sad首样放行；Tech要求证明可见复合画面断口/双线消除，不把隐藏base段清理冒充改善。证据Tech v0.2 `REVISION_PRESIGN.json`。
+- `AJ_SAD_ROUND2_REPRESENTATIVE_PASS`：Tech向Master实报代表通过并放同法扩九圈态；差异2563px/ROI外0，100%与×6视觉改善获Master查看。Art样张生成时pending报告待更新，不开第三轮；0新增生成。
+- AC分支两轮后仍有灰缝（face坐标x22..30,y85..101）；front旧肤色归因经坐标反证已撤回，根因未确证；Tech规则73判第三次须停，Art映射assert已中止无输出。Master撤回先前放行判断；Art整体BLOCKED，v0.3不入全成功USER_REVIEW，0新增生成。
+- `AC_BLOCKER_RESOLVED_BY_CORRECT_COMPOSITION`：Tech独立复核native/base+face(48,95)+front(72,140)与source crop RGBA及U00 ROI均零差；此前竖缝为诊断拼图front错位假象。保留误诊/停工历史，无第三次资产编辑；Art恢复IN_PROGRESS继续整包，Gate2未送、Client锁。
+- `08:43:05Z V03_GATE2_IDENTITY_FROZEN`：`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/ART_PACKAGE_IDENTITY.json`重绑manifest/packet/DELIVERABLE及247引用；Art USER_REVIEW，用户决定空。`TECH_INTERNAL_DONE`：Master `TECH_SUPPORT_ACCEPTANCE.json`接受本轮静态支持。`PRODUCER_REVIEW`：四Required齐、continuity无空挂、复盘墙钟39分54秒；待Master内部接受。
+- `PRODUCER_INTERNAL_DONE`：Master `deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/PRODUCER_SUPPORT_ACCEPTANCE.json` APPROVED绑定本轮Producer DELIVERABLE SHA `2a86b89a0c9deca98ef57ab47ec8eead01d5d75941d1cae674f6fd225ba7e7d5`；Task DONE/Approval PROFESSIONAL_REVIEW，不代替Art Gate2。
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 END -->
 <!-- U04-EXPRESSION-REPAIR-CLI-20261017 START -->
 ## U04 CLI配置｜2026-10-17T12:04:26+08:00
 - 用户已授权CLI/API备选配置；独立环境和离线检查通过。缺OPENAI_API_KEY，生产仍BLOCKED；新增调用0，累计保守1/48，Gate2仍DRAFT。
@@ -1638,4 +1651,5 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 - `AJ_MT_ADXJ_BUILT`：三组构建、两项额外眉软边试验拒绝并停分支，证据Art v0.2 `AJ_GROUP_BUILD.json`、`MT_GROUP_BUILD.json`、`ADXJ_GROUP_BUILD.json`、`TRIAL_LOG.json`；0新增生成。
 - `07:49:02Z V02_GATE2_IDENTITY_FROZEN`：`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/GATE2_PACKAGE_IDENTITY.json`冻结准确Art v0.2；`FINAL_PACKAGE_CHECK.json`核全部Required/Schema/230引用SHA/30链接。Art `USER_REVIEW`待用户；Tech经`TECH_SUPPORT_ACCEPTANCE.json`内部`DONE`。`07:50:33Z PRODUCER_REVIEW`：四Required齐、continuity/复盘完成，经Master内部接受；Client锁。
 - `PRODUCER_INTERNAL_DONE`：Master `deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/PRODUCER_SUPPORT_ACCEPTANCE.json`接受四Required与两验收；Producer Task DONE/Approval PROFESSIONAL_REVIEW，最终continuity无空挂任务。
+- 历史状态提示：准确v0.2已被2026-10-17第二次用户退回，现行状态与v0.3续修以本文件 `U04-EXPRESSION-LINE-REVISION-20261017` 块为准。
 <!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

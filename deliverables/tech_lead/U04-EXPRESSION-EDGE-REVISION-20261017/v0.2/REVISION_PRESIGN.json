@@ -1,0 +1,29 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "version": "v0.2",
+  "art_batch_version": "v0.3",
+  "status": "TECH_PRESIGNED_BEFORE_AJ_SAD_SAMPLE",
+  "signed_at_utc": "2026-10-17T08:12:57Z",
+  "bound_inputs_sha256": {
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ART_BRIEF.md": "97587f2d1c73ce9b0622245a189a27bcf6d44ea90cb778159b7a5308667acc15",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/DIAGNOSIS.json": "2024463cf48c5c7ad44888498d501a0888f3af85bae8aa93a236325b2d896c3d",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ALLOWED_ROI_BEFORE_EDIT.json": "3c7042e4f3aa20dca2e61f193398f83565a07b7dfa67c705860db6af436e1550",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/REVISION_PRESIGN.json": "57386db772e11915b609cf4bc6e2f7380ddfcb4a03f577b96e0ae19d250a9c17",
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json": "549949588e09c3092ca4fd0c2313bae7dfae531197f752c263025541138ff4ee",
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/NATIVE_REGION_MAPPING.json": "35e63343cf01e0c6d5ce2020625100a308a49d99285413f17ba327c58179cec3"
+  },
+  "decision": "同意先AJ sad小样：定位当前可见双线的逐层贡献，清真实透出的旧线/清脸擦除带，从正确候选原位重提单根连续实色眉眼/前发；若原候选缺笔画才在授权内局部imagegen。",
+  "conditions": [
+    "首样前先验ROI已登记；实际笔触须窄于红圈上界，区外RGBA零差异。",
+    "旧base在AJ x150..160,y85..94虽有黑段却多数被face alpha255遮住，不能把清隐藏段冒充可见改善；首样须证明face新线与复合的视觉断口/双线被消除。",
+    "保持1024x1536母版、native脸片尺寸/矩形/支点与base→单态face→front；眼嘴主体、AC黑眼圈、XJ镜圈、MT/AT已修效果保护。",
+    "本轮内置imagegen最多4次、总额32/48延续，0CLI；新方法最多2轮，45分钟及原批累计6小时较早停工，未知调用保守计数。",
+    "代表样含原候选/语义层/base/face/front贡献、PSD内实际位图、native三层实片、真实1280x720 U00和圈区前后；目标是单线连续无旧五官残影，不以hash一致代替视觉。",
+    "代表样成立后再扩九态及证实的共用层影响态；自产切图成品直送用户Gate2，不增专业成品效果复审门槛。"
+  ],
+  "limitations": [
+    "本预签仅放行首样制作，不是v0.3效果通过或用户Gate2批准。",
+    "Client未导入，运行画面和QA未测。"
+  ],
+  "change_control": "上述签认输入按SHA绑定，后续诊断补充另写addendum；若改变新修法或授权范围须同批复签。"
+}

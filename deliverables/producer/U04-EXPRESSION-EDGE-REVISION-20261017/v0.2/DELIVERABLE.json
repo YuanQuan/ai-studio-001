@@ -1,0 +1,30 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+  "owner": "producer",
+  "summary": "准确v0.2退回、新法v0.3资源/技术版本链及累计预算已登记；连续性无空挂，Gate2待用户决定。",
+  "artifacts": [
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "记录准确v0.2用户退回及本轮续修授权、方法改变和历史累计预算，持续维护里程碑/审批/看板与Client锁。",
+      "result": "PASS",
+      "evidence": "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md及project四日志、Dashboard、资产登记LINE块。"
+    },
+    {
+      "criterion": "最终当前版本和Required齐备，连续性及可靠耗时复盘完整，不增用户门禁，不将未批资源DONE。",
+      "result": "PASS",
+      "evidence": "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/CONTINUITY_CHECK.json；deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md；Master ART_PACKAGE_IDENTITY.json。"
+    }
+  ],
+  "assumptions": [
+    "本轮无额外QA或Client正式接入。"
+  ],
+  "risks": [
+    "准确v0.3尚待用户明确批准；AD旧fullPSD继承差异已披露，现行native三层PSD参照已入包。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

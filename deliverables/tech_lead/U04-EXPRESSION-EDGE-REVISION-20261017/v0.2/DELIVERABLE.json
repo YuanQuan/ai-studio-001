@@ -1,0 +1,33 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "owner": "tech_lead",
+  "summary": "已完成第二轮圈域断线/重影独立诊断、同批新方法预签及Art v0.3静态技术核验。AD旧full PSD与native base继承局部缩放差已单列，补充五态native三层PSD真实切片参照已读回通过；用户Gate2效果与Client运行尚未测试。",
+  "artifacts": [
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DIAGNOSIS.md",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/REVISION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/TECH_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "独立核圈出位置与实际alpha/遮挡链，区分采样和真实层污染。",
+      "result": "PASS",
+      "evidence": "DIAGNOSIS.md与TECH_CHECK.json：逐层隔离AJ face低alpha、AC base清脸带及AD/XJ共享front旧眉；撤回AJ隐藏base旧片和AC错位front竖缝两项误因。"
+    },
+    {
+      "criterion": "同批局部方案预签，固定尺寸坐标和三层契约；切片直接交用户不增效果复审门槛。",
+      "result": "PASS",
+      "evidence": "REVISION_PRESIGN.json在AJ sad首样前同批绑定Art方案/诊断/ROI/签名与Master授权；source/native固定坐标和base→face→front互斥，Art自行切图直接交用户Gate2。"
+    },
+    {
+      "criterion": "核实际受影响资源/PSD重组和修改区外差异，明确静态与未运行界限。",
+      "result": "PASS",
+      "evidence": "TECH_CHECK.json：Art最终manifest SHA 4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d，247引用哈希0错；受影响切片先验ROI外0，12份full PSD语义可见性及代表嵌入层、AD五份native三层PSD与preview读回、AC/AJ真实三层重组及30格U00原像素裁图均已核。AD旧fullPSD/native局部非零差已披露；Client运行未测试。"
+    }
+  ],
+  "risks": [
+    "AD旧1024 full PSD的base与当前native768 base在眉圈处有继承的467像素RGB差；经相同face/front合成后各态仍96–204像素局部差。新增native三层PSD是当前实际切片的准确参照。",
+    "本检查是静态技术支持，不代替用户对v0.3具体切图与同尺度效果的Gate2决定；Client导入、真实UUID与运行画面尚未验证。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

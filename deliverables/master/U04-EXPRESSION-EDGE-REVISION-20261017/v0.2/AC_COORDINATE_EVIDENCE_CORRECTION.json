@@ -1,0 +1,32 @@
+{
+  "recorded_at_utc": "2026-10-17T08:31:33.664765+00:00",
+  "status": "AC_SECOND_ROUND_SUCCEEDED_NO_THIRD_ASSET_EDIT",
+  "supersedes_current_conclusion": "AC_BRANCH_STOP_DECISION.json (preserved history, not deleted)",
+  "evidence_error": "native comparison initially placed front at face origin (48,95); correct front is (72,140), offset(+24,+45). This created a false gray vertical seam. Comparison evidence only corrected; asset and U00 unchanged.",
+  "independent_tech_check": {
+    "native_canvas_px": [
+      454,
+      1024
+    ],
+    "face_at": [
+      48,
+      95
+    ],
+    "front_at": [
+      72,
+      140
+    ],
+    "source_crop_rect": [
+      302,
+      0,
+      756,
+      1024
+    ],
+    "native_vs_source_rgba_changed_pixels": 0,
+    "u00_hair_roi_visible_rgb_difference": 0,
+    "renderer": "source upper850 Lanczos to614x510 @(-55,210)"
+  },
+  "master_image_observation": "Corrected native4x and U00 actual1x both viewed. Forehair continuous; false seam absent. AC approved fatigue/dark circles remain.",
+  "budget": "two actual AC asset repair rounds, zero third-round asset edits, zero imagegen calls; diagnostic composition correction is recorded separately, not a hidden repair",
+  "next_action": "Finalize exact v0.3 resources and present direct user Gate2; Client locked."
+}

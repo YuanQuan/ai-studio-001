@@ -1,0 +1,35 @@
+{
+  "id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "title": "诊断并预签面部边缘局部修复方法",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "objective": "诊断并预签面部边缘局部修复方法；在既有方案内局部返工，止于具体版本USER_REVIEW。",
+  "inputs": [
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/USER_REVISION_AUTHORIZATION.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "rules/visual_production_contract.md",
+    "rules/visual_fidelity_compute_contract.md"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DIAGNOSIS.md",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/REVISION_PRESIGN.json",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_CHECK.json",
+    "deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "独立核圈出位置与实际alpha/遮挡链，区分采样和真实层污染。",
+    "同批局部方案预签，固定尺寸坐标和三层契约；切片直接交用户不增效果复审门槛。",
+    "核实际受影响资源/PSD重组和修改区外差异，明确静态与未运行界限。"
+  ],
+  "dependencies": [],
+  "status": "DONE",
+  "approval": "APPROVAL",
+  "notes": [
+    "用户明确要求局部修复，范围与语义不变；Art/Tech受影响范围复签后输出。",
+    "美术gpt-6-sol/high，Tech/Producer gpt-6-sol/low。Master负责Git；专业Agent不执行Git、不创建子任务。",
+    "2026-10-17T07:15:58Z Master转报Owner实际诊断已开始：Tech读取AJ happy 256²脸片8595半透明像素、front仅1384半透明像素，脸区front多数alpha0。待正式DIAGNOSIS落盘后绑定文件路径。",
+    "2026-10-17T07:46:31Z 四Required实存，TECH_CHECK最终静态核验与DELIVERABLE READY_FOR_REVIEW；待Master内部接受。具体切图效果仍直接用户Gate2，不加专业复审门禁。",
+    "2026-10-17T07:49:45Z Master TECH_SUPPORT_ACCEPTANCE.json接受内部静态技术支持；不构成Gate2效果批准。"
+  ]
+}

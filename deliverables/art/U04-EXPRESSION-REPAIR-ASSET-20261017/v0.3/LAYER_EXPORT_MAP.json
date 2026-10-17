@@ -1,0 +1,1601 @@
+{
+  "task_id": "U04-EXPRESSION-REPAIR-ASSET-20261017",
+  "version": "v0.3",
+  "composition_contract": "同stage固定base+任选且仅一态透明face+固定front；stage PSD内旧表情层隐藏，新态互斥。",
+  "source_canvas_px": [
+    1024,
+    1536
+  ],
+  "source_of_exact_files": {
+    "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+    "sha256": "4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d",
+    "bytes": 101558
+  },
+  "client_import_status": "PLANNED_ONLY_PENDING_GATE2; UUID尚未生成",
+  "stages": {
+    "MT_S2": {
+      "stage": "MT_S2",
+      "original_source_rect_xyxy": [
+        360,
+        100,
+        616,
+        356
+      ],
+      "face_pivot_source_xy": [
+        488,
+        228
+      ],
+      "native_face_px": [
+        256,
+        256
+      ],
+      "face_offset_in_native_base_xy": [
+        142,
+        100
+      ],
+      "legacy_base_source_rect_xyxy": [
+        218,
+        0,
+        869,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_mt_s2_base_edge_repair.png",
+        "sha256": "d1cc0cf6361afed707a864a5ead6c6d3683baea87551b9df6638996abe2ee1f3",
+        "bytes": 754020,
+        "size_px": [
+          651,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_mt_s2_front_hair.png",
+        "sha256": "7be4bd869cd993fff6fd639cfcf4bfaef6dfb2bc8a287c043679682882deba7e",
+        "bytes": 10289,
+        "size_px": [
+          51,
+          122
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/source/u04_mt_s2_expression_edge_repair.psd",
+        "sha256": "3fbb12df3c94014e368d25180b1b441ea4497c2fe60f4787cec290454ea816d7",
+        "bytes": 15685356,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_mt_s2_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_happy.png",
+            "sha256": "a82817dedf7689791cf280050e4eeafa33acfc34bd366652fe0e75f1289121cd",
+            "bytes": 45924,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/mt_s2_happy_u00_1280x720.png",
+            "sha256": "bfb1d539e42bb3b16ff2a35207c7d96b717f44b3a663f385932608b8f58f039c",
+            "bytes": 1187576,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "surprised": {
+          "stable_asset_id": "u04_mt_s2_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_surprised.png",
+            "sha256": "905b71d83cac6e59611af81cc6943c6ed952df3813ee901ff361074e77b15021",
+            "bytes": 42079,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/mt_s2_surprised_u00_1280x720.png",
+            "sha256": "b9ad8d3da25e28346e2db7d9e5b7e7b907bf05cfe62eacbda2bb0b6dd2a0b6c7",
+            "bytes": 1186939,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "sad": {
+          "stable_asset_id": "u04_mt_s2_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_sad.png",
+            "sha256": "89a62398f74770ce8cce68f46f75f58978e01229d2444a8f9aeecd30d1fe0b61",
+            "bytes": 41118,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/mt_s2_sad_u00_1280x720.png",
+            "sha256": "eb2c9a1f09e53ff10d146df0e9ab57a9021d87d3acf0ecad0b2c47d53c01c9ec",
+            "bytes": 1186744,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "smile": {
+          "stable_asset_id": "u04_mt_s2_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_smile.png",
+            "sha256": "6460ffffcfb26f18b2b1e516a758d64934a84656100ab20c4f68c9942f031c0b",
+            "bytes": 40113,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/mt_s2_smile_u00_1280x720.png",
+            "sha256": "9acff013567ab9c56a511373a634d5495bbc95f2652ada6aea05545135554190",
+            "bytes": 1186590,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "angry": {
+          "stable_asset_id": "u04_mt_s2_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_mt_s2_face_angry.png",
+            "sha256": "00185836c1e75b353facd859389a5f98231ddde1a3223125fde8fb21e4f7eb50",
+            "bytes": 38459,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/mt_s2_angry_u00_1280x720.png",
+            "sha256": "69a2cd40d95058aa28c37b0d732475897417f8deb9581433f76431abbd2190ee",
+            "bytes": 1186737,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        }
+      }
+    },
+    "AT_S0": {
+      "stage": "AT_S0",
+      "original_source_rect_xyxy": [
+        380,
+        180,
+        636,
+        436
+      ],
+      "face_pivot_source_xy": [
+        508,
+        308
+      ],
+      "native_face_px": [
+        256,
+        256
+      ],
+      "face_offset_in_native_base_xy": [
+        133,
+        180
+      ],
+      "legacy_base_source_rect_xyxy": [
+        247,
+        0,
+        750,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_base.png",
+        "sha256": "b4f267875351c54dfca07156325f495f1d4be1f738321794c305d48403293acb",
+        "bytes": 664669,
+        "size_px": [
+          503,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s0_front_hair.png",
+        "sha256": "25cb2fe9acfddd1bb1f8bd708b4c4f977f8f842ee634adc1f7c6e2cdcd499bf2",
+        "bytes": 18576,
+        "size_px": [
+          175,
+          75
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/source/u04_at_s0_five_state_final.psd",
+        "sha256": "041ad81cc29f2ad4dac5241c7a609fb1c8788cb9d548ca881eda5ae62783eab7",
+        "bytes": 14404564,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_at_s0_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_happy.png",
+            "sha256": "4888eb05feb0bb307a95fcd7a8605d7b7eea99cf7d855b8837a4d137e211ca59",
+            "bytes": 33620,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_happy_u00_after_1280x720.png",
+            "sha256": "1467dca802f4c939f24f5b520abf512a00128e6ae792c8ac2c9d363223fbc3fc",
+            "bytes": 1193113,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "surprised": {
+          "stable_asset_id": "u04_at_s0_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_surprised.png",
+            "sha256": "2d486ddec9bb3c181dd6567db7b0718ecb135a3f5d732228e5d997d6293efc53",
+            "bytes": 33925,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_surprised_u00_after_1280x720.png",
+            "sha256": "4dc360cfe2c17a71d54abf3f52242317b6fca7b84daa174cf141a3a3285e8ecb",
+            "bytes": 1193250,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "sad": {
+          "stable_asset_id": "u04_at_s0_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_sad.png",
+            "sha256": "8f0621cb20f46af99788731bfb9d08be46b17a92922d9b7e246e82a5584e38ed",
+            "bytes": 27813,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_sad_u00_after_1280x720.png",
+            "sha256": "3dbb3bfe2ce9cecab1c6aaf3fb2c1556def916b6e8247809cd62112e544b61cb",
+            "bytes": 1191818,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "smile": {
+          "stable_asset_id": "u04_at_s0_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_smile.png",
+            "sha256": "3d8057befa0e7f6060b99288f6be53a2ba43ebd8ec549845c9e361e5cf0e92df",
+            "bytes": 30546,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_smile_u00_after_1280x720.png",
+            "sha256": "59bcfd9640a839ec40c056f2b425e5a91fdec710acad4b619aeaba16a5b2990f",
+            "bytes": 1192226,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        },
+        "angry": {
+          "stable_asset_id": "u04_at_s0_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/exports/u04_at_s0_face_angry.png",
+            "sha256": "b40786748fa14a403cc0aae11540fb069564d4c0e8445dcd74ced5a4363729f3",
+            "bytes": 29725,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-MTAT-20261017/v0.1/review/at_s0_angry_u00_after_1280x720.png",
+            "sha256": "bdb04a5534faa2537920ba54032e6a0b5675d03a93123d98d0d963a8c634f2c0",
+            "bytes": 1192395,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null
+        }
+      }
+    },
+    "AC_S0": {
+      "stage": "AC_S0",
+      "original_source_rect_xyxy": [
+        350,
+        95,
+        606,
+        351
+      ],
+      "face_pivot_source_xy": [
+        478,
+        223
+      ],
+      "native_face_px": [
+        256,
+        256
+      ],
+      "face_offset_in_native_base_xy": [
+        48,
+        95
+      ],
+      "legacy_base_source_rect_xyxy": [
+        302,
+        0,
+        756,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_base_repair.png",
+        "sha256": "a5a3306c286914bfa80fd0151a1e4842e18cfd2cf79db67692cc9e3883d25edb",
+        "bytes": 547019,
+        "size_px": [
+          454,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_front_repair.png",
+        "sha256": "313fa85a0c957a7df3deafc62836fe0deab1ad07a27ce7faaf10e3628d449dd2",
+        "bytes": 46577,
+        "size_px": [
+          170,
+          148
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ac_s0_expression_v03.psd",
+        "sha256": "0361e869f19454e827b9a61b7c95d6a4b6b605faebbaecdca393c18cd384b2eb",
+        "bytes": 14701500,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_ac_s0_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_happy_v03.png",
+            "sha256": "4fc7c252b7b2e0ab4345f23827bc10c7d1d452194c0f313676b414bf9ef51450",
+            "bytes": 44380,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_happy_u00_1280x720.png",
+            "sha256": "a10d123f52f6295177efdf587aafb0b47248062b22bf53598140606c8015b2be",
+            "bytes": 1173455,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/ac_s0_happy_source_canvas.png",
+            "sha256": "9c47fefd8ecc880e3a3d4a3d81ba9002f42a07a2c26edea0bcd009f326fe628b",
+            "bytes": 1274916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_ac_s0_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_ac_s0_face_surprised_repair_full5_01.png",
+            "sha256": "43a23cd58bf4304f180cb683e655f39bc2d4fad74a6f774a70306d73cc5d3636",
+            "bytes": 46516,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/review/u04_ac_s0_surprised_u00_full5_01_1280x720.png",
+            "sha256": "a2236f38f65003c419a8c194dbef04c727ef55cc5c01b5a36520f73f83b4490b",
+            "bytes": 1173686,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/ac_s0_surprised_source_canvas.png",
+            "sha256": "a57176a9f36691b2330c36146a97a32f6b61bfd5815d713b28db8b1faca21edd",
+            "bytes": 1274923,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_ac_s0_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_sad_v03.png",
+            "sha256": "507e54d9ef50fbb9aa6785c158a004f56689c3f3611a4a9ea9a18073f1fff616",
+            "bytes": 42289,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_sad_u00_1280x720.png",
+            "sha256": "eb21f2881200b3ff0f1b9247900417c187f21c8ea333d46c1221690ba7a90683",
+            "bytes": 1173152,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/ac_s0_sad_source_canvas.png",
+            "sha256": "721b428c6c3773e3275ff37a32525f6e8e7a80e699441c1c5dfc25dd5cc1d9ed",
+            "bytes": 1273394,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_ac_s0_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_smile_v03.png",
+            "sha256": "ab71a56cb0f4a30e413e9cc436d00573efc25b106d006e1d515170c52e87f155",
+            "bytes": 41541,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_smile_u00_1280x720.png",
+            "sha256": "e689322c1563af1af5a57b5aa99c0d979009981275e6b99069323c95cc4aea2c",
+            "bytes": 1172982,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/ac_s0_smile_source_canvas.png",
+            "sha256": "45c8b2884105a9f5bf14d0fb8ff4657c8d421b519b221bb12acf49e187a17025",
+            "bytes": 1272945,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_ac_s0_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ac_s0_face_angry_v03.png",
+            "sha256": "6b8b88794c0065a809fa98ebd4ff6bd43351e418ad83ab1dbecdfe683386de01",
+            "bytes": 42322,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_angry_u00_1280x720.png",
+            "sha256": "8636f5e879c1f082da745dacf111e651883c30f0562183ddbc09a37f545889bd",
+            "bytes": 1173106,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/ac_s0_angry_source_canvas.png",
+            "sha256": "421d9ffb3703b7c53c1129b9e1f370aff904c3bd560b7059cb694a5f59ad29ac",
+            "bytes": 1272434,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        }
+      },
+      "current_psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/ac_s0_v03_layer_manifest.json",
+        "sha256": "603fb0028037f44b05082c83422d946c9328683d795470295d831ec4efb1cab9",
+        "bytes": 15689
+      },
+      "psd_default_state": "angry"
+    },
+    "AJ_S2": {
+      "stage": "AJ_S2",
+      "original_source_rect_xyxy": [
+        365,
+        130,
+        621,
+        386
+      ],
+      "face_pivot_source_xy": [
+        493,
+        258
+      ],
+      "native_face_px": [
+        256,
+        256
+      ],
+      "face_offset_in_native_base_xy": [
+        120,
+        130
+      ],
+      "legacy_base_source_rect_xyxy": [
+        245,
+        0,
+        839,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_base_edge_repair.png",
+        "sha256": "aa9a148662de3c5374d0529a8bcc95625549e8583075516f16310fb9fe953402",
+        "bytes": 796780,
+        "size_px": [
+          594,
+          1024
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_front_repair.png",
+        "sha256": "375bc3717aec833d9846c3a92f36aa43c6f78c04bed6f3853861ad56881e5b38",
+        "bytes": 49539,
+        "size_px": [
+          186,
+          155
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_aj_s2_expression_v03.psd",
+        "sha256": "40b831e9da041e11174b21bc96a311ee84122fb70e1f60ec45da250acbbbc6df",
+        "bytes": 15576492,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_aj_s2_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_happy_edge_repair.png",
+            "sha256": "6c7e052edd32db79404229e0cdc91e8011da28881b8981f82ea491502e626bf3",
+            "bytes": 48123,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/aj_s2_happy_u00_1280x720.png",
+            "sha256": "ca9d1b4478fdf4b212681619847e0d4edd7049f0e28ac86df6273c7dbd656039",
+            "bytes": 1212795,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/aj_s2_happy_source_canvas.png",
+            "sha256": "34174debb4c78c20dc6b761c5c2b1258d1983dc3e0e7103957ada33be31fba9f",
+            "bytes": 1550581,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_aj_s2_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/exports/u04_aj_s2_face_surprised_repair_full5_01.png",
+            "sha256": "2ed200e435f071521ad515e09130a9edff3d930b91da7ec6c50e149a0ecaa929",
+            "bytes": 50074,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/aj_s2_surprised_u00_1280x720.png",
+            "sha256": "09989c750846d21586537be76626d8f0c423a14f83de2451447ea1b1658e197d",
+            "bytes": 1212686,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/aj_s2_surprised_source_canvas.png",
+            "sha256": "3a3acb7725bfbdbf50eef77606814f6a7a1887d157eb6b510a5fa0094f2b3913",
+            "bytes": 1549350,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_aj_s2_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_aj_s2_face_sad_v03.png",
+            "sha256": "d6c90d70b73de15f8673a8f45df2b92757a478fb2ad2ce9489b4a5effd89e5b9",
+            "bytes": 45914,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_sad_u00_1280x720.png",
+            "sha256": "7427e13895a4d9bace72c197f1edfcec9bf6488235085e34d152a5f340634a1f",
+            "bytes": 1211701,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/aj_s2_sad_source_canvas.png",
+            "sha256": "41f91340b75f5b75224db339c5ec8e28e31f656a9a499ab33271b02d19aabcc7",
+            "bytes": 1546727,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_aj_s2_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_smile_edge_repair.png",
+            "sha256": "6eab924a3c96b3096783ead7b3a23957493751a3e92c5ddd45ebfb0091a46207",
+            "bytes": 46402,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/aj_s2_smile_u00_1280x720.png",
+            "sha256": "f45596fd686d56521db5c0790bc79c437c99985ba7f031cd01942ae8ee376c94",
+            "bytes": 1212142,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/aj_s2_smile_source_canvas.png",
+            "sha256": "37f32e806eb06758233d63df86b5c0629baa3594e3b8eaa2ada79372377e428b",
+            "bytes": 1548700,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_aj_s2_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_aj_s2_face_angry_edge_repair.png",
+            "sha256": "c67045c68deaff0e07327fdb2b049d6bb7cfd54105fb72ede07780f2f7235b23",
+            "bytes": 46256,
+            "size_px": [
+              256,
+              256
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/u00/aj_s2_angry_u00_1280x720.png",
+            "sha256": "38d78502e08845928c65e3ff054b5946c2b638552fb389dea6110384e4a28eaa",
+            "bytes": 1212105,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/psd_switch/aj_s2_angry_source_canvas.png",
+            "sha256": "b938ae5c8c58ceeb45c4629fb8417899f7e5c89679dd61f1a9dcbf8dac5d670c",
+            "bytes": 1548123,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGBA"
+          }
+        }
+      },
+      "current_psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/aj_s2_v03_layer_manifest.json",
+        "sha256": "5d865f534bed676cf4ce0f9cabaa07b416d600f55cf535b498c05b2b5426f434",
+        "bytes": 14820
+      },
+      "psd_default_state": "happy"
+    },
+    "AD_S0": {
+      "stage": "AD_S0",
+      "original_source_rect_xyxy": [
+        310,
+        185,
+        566,
+        441
+      ],
+      "face_pivot_source_xy": [
+        438,
+        313
+      ],
+      "native_face_px": [
+        192,
+        192
+      ],
+      "face_offset_in_native_base_xy": [
+        232,
+        139
+      ],
+      "legacy_base_source_rect_xyxy": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_ad_s0_base_edge_repair.png",
+        "sha256": "dc3e69729cbd8696333dfef3ba077dfc1dd728a31c17526e95cb41a114d3b594",
+        "bytes": 469047,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_front_v03.png",
+        "sha256": "aab62f21a2d0a13fc9618a005a9c559dd3cde375da5be4c6fbc442d5f7b88c41",
+        "bytes": 8613,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_expression_v03.psd",
+        "sha256": "a0d666ff6f2e9ed4f57bd23564efaecd1c916c0a800e9ed31a4ad34d4b47eecf",
+        "bytes": 16413430,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_ad_s0_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_happy_v03.png",
+            "sha256": "58befe5a79d9d6030c149dfacc5c21dea5f4e7739729aa5426dbace8526b615d",
+            "bytes": 31817,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_happy_u00_1280x720.png",
+            "sha256": "32403e3418daf862f4ce57e08f2ff815b67dcc5b7dead53e3d710d49ea036571",
+            "bytes": 1223583,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_expression_v03.psd",
+            "sha256": "a0d666ff6f2e9ed4f57bd23564efaecd1c916c0a800e9ed31a4ad34d4b47eecf",
+            "bytes": 16413430,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_expression_v03_preview.png",
+            "sha256": "5532d072f2039f5fa51e4bd9c2302f6cbfde9c4dbcfe6438d4aeb774e0b91851",
+            "bytes": 829470,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_ad_s0_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_surprised_v03.png",
+            "sha256": "157124cae9a09bce0187badaf2d6c16ab4f2c7c5752e9fd601aa217bf3abb00a",
+            "bytes": 30907,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_surprised_u00_1280x720.png",
+            "sha256": "663201482b2cba4d3dd61335a84b8cd105080e0b376e2c08eeab435a810c457f",
+            "bytes": 1223906,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_expression_v03.psd",
+            "sha256": "3ddd77e94b1f6d8354fed362a4cb25687cf6c5e77caa9c58da4fecb2b5bd5070",
+            "bytes": 16413430,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_expression_v03_preview.png",
+            "sha256": "9474e1d92c0e1f0612b9446bf3aeaf72d73e8fbe3201577405dbfb84d526f2a1",
+            "bytes": 828904,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_ad_s0_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_sad_v03.png",
+            "sha256": "a9456dc04798ea43383af138a8f31067a7f344643b481f3755dba95630c9b61f",
+            "bytes": 29377,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_sad_u00_1280x720.png",
+            "sha256": "6eb32769482ec08b63538a118b975d3552c9a00ef5e626e1243f639c1cb655b2",
+            "bytes": 1223281,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_expression_v03.psd",
+            "sha256": "24110bcc461a2d3273e5c11fd0c352f8306bf644e039465d521f2802462ac636",
+            "bytes": 16413430,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_expression_v03_preview.png",
+            "sha256": "058e6be3cae44d0d6ddf660019087ccf456980e1b254b5a03f9977d2427dddae",
+            "bytes": 827521,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_ad_s0_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_smile_v03.png",
+            "sha256": "26a6d598941052e547eaa540775071ddf7287030ae210b23c6292101dc3017f4",
+            "bytes": 28282,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_smile_u00_1280x720.png",
+            "sha256": "8d2188804dd58ac26605ed9db039fd38126b67d82a6779eaf01b0525465dd937",
+            "bytes": 1223729,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_expression_v03.psd",
+            "sha256": "a2c51865df0114a03854e2f98aab6b919f0bb31072e0823913d94175ec45f115",
+            "bytes": 16413430,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_expression_v03_preview.png",
+            "sha256": "44074cdfbe4a4b044444046a143cbf9b9a049ea35a85332c9a36d8728a557cfc",
+            "bytes": 827829,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_ad_s0_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_ad_s0_face_angry_v03.png",
+            "sha256": "6b8b0516e7cbe139afb671b96d0844da39f54b6e9ea572178e51f2ba5b2e7a93",
+            "bytes": 32311,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_angry_u00_1280x720.png",
+            "sha256": "be7e860ad457778a441bc0f8ccc2b3bba0a94831cde8ade840bba39ad5f7b3f5",
+            "bytes": 1223195,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_expression_v03.psd",
+            "sha256": "51908d8865700fefbf0247e5dd62bfedbc830e734fff49970bdf9c53fba2bc87",
+            "bytes": 16413430,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_expression_v03_preview.png",
+            "sha256": "eb76d28a524dcf22e33a2a22371811c2faf97ce01be1547a7f5fd8a7ef430a87",
+            "bytes": 829179,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        }
+      },
+      "current_psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/ad_s0_happy_v03_layer_manifest.json",
+        "sha256": "3b37ab47ef3fe25c547c970e177c9f93a597c142a9f4ad28fdb11ee790303da9",
+        "bytes": 14835
+      },
+      "psd_default_state": "happy",
+      "native_composition_reference": {
+        "purpose": "NATIVE_COMPOSITION_REFERENCE: current 768 base + exactly one current 192 face + current 192 front at native offset [232,139]; verification PSD does not replace 1024 source semantic master PSD.",
+        "canvas_px": [
+          768,
+          768
+        ],
+        "offset_xy": [
+          232,
+          139
+        ],
+        "states": {
+          "happy": {
+            "psd": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_native_composition_reference_v03.psd",
+              "sha256": "1b384c8d99c86b3f8658cbe1e6dd9571aa5c92513b758de98d26ce7bc8b78c6d",
+              "bytes": 3569812,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            },
+            "layer_manifest": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_native_composition_reference_v03_layers.json",
+              "sha256": "bf233f3bc11f8c24fcaa92f80063db4d53d0aa02717763506342e94700f49162",
+              "bytes": 973
+            },
+            "preview": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_native_composition_reference_v03_preview.png",
+              "sha256": "1c08d1df036392cfc05f7e6fd7e8d169045bc849fac24ab3e9707592078b9c5d",
+              "bytes": 395995,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            }
+          },
+          "surprised": {
+            "psd": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_native_composition_reference_v03.psd",
+              "sha256": "68e936334ba10fbf6448387ff0c7466dab2c16ec058409a63b5a9088619023c5",
+              "bytes": 3572036,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            },
+            "layer_manifest": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_native_composition_reference_v03_layers.json",
+              "sha256": "e73a6722cec7fd35df98754d4799770f46cd1bae5208b1641254272b794f4ac7",
+              "bytes": 981
+            },
+            "preview": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_native_composition_reference_v03_preview.png",
+              "sha256": "a9fd16db367baff5290387aed675ef14b2d15aea3842181e3b0974f2d35ca9b5",
+              "bytes": 395818,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            }
+          },
+          "sad": {
+            "psd": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_native_composition_reference_v03.psd",
+              "sha256": "734f36a7b23314e6ef4277d506c947c76409b95df5cf2cc1ba9dc38e2ebd77c5",
+              "bytes": 3561968,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            },
+            "layer_manifest": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_native_composition_reference_v03_layers.json",
+              "sha256": "44ab5f5db996b197468e5863131e14b706fa45eb385902aa0caa9c58dad510b1",
+              "bytes": 969
+            },
+            "preview": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_native_composition_reference_v03_preview.png",
+              "sha256": "19baf96d5bafb4707aa776983e33bd722c31036de59d8134d720604cf36c9368",
+              "bytes": 395061,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            }
+          },
+          "smile": {
+            "psd": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_native_composition_reference_v03.psd",
+              "sha256": "826638fd2637572cb134fc8bbb4628076f3dfa71b41001a0495ffef85c9b68f4",
+              "bytes": 3561352,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            },
+            "layer_manifest": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_native_composition_reference_v03_layers.json",
+              "sha256": "3e804012b290f1a0d668c548971d3f3dad136b0b4762369057439c7ed8d32987",
+              "bytes": 973
+            },
+            "preview": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_native_composition_reference_v03_preview.png",
+              "sha256": "68458b6f8555156d9cebcdee55a41f0f5e4b83edaf788886f73765294350e46e",
+              "bytes": 395191,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            }
+          },
+          "angry": {
+            "psd": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_native_composition_reference_v03.psd",
+              "sha256": "e8d79073e738075ff152d3856aae93ade6984c6c2641a82f07f344f70cf0c169",
+              "bytes": 3570984,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            },
+            "layer_manifest": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_native_composition_reference_v03_layers.json",
+              "sha256": "8152ad3dbb4944f7866b1b8a942b7c3ad2b7115029030a4ac9890c9f5e78268c",
+              "bytes": 973
+            },
+            "preview": {
+              "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_native_composition_reference_v03_preview.png",
+              "sha256": "2e46e00c07d9d2004919835244bed1ab2c0d2d5c0c2a01ee4b37882736954386",
+              "bytes": 395783,
+              "size_px": [
+                768,
+                768
+              ],
+              "mode": "RGB"
+            }
+          }
+        }
+      },
+      "source_to_native_limit": "Inherited v0.2 AD base: 1024 source BASE_REPAIR full resized to 768 differs from shipped native base in 467 pixels (bbox native [310,146,336,179]); the 1024 source PSD is semantic editing master, not pixel-exact evidence of native base. Five native composition reference PSDs document the actual current base/face/front slicing."
+    },
+    "XJ_S0": {
+      "stage": "XJ_S0",
+      "original_source_rect_xyxy": [
+        330,
+        223,
+        586,
+        479
+      ],
+      "face_pivot_source_xy": [
+        458,
+        351
+      ],
+      "native_face_px": [
+        192,
+        192
+      ],
+      "face_offset_in_native_base_xy": [
+        248,
+        167
+      ],
+      "legacy_base_source_rect_xyxy": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "legacy_front_source_rect_xyxy": null,
+      "current_base": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-RESUME-ADXJ-20261017/v0.1/exports/u04_xj_s0_base_happy_repair_03.png",
+        "sha256": "7a5e4bcf6271c09b878f054e5999dacc44a2631f516fc6a5415d2ceeaefda9be",
+        "bytes": 433899,
+        "size_px": [
+          768,
+          768
+        ],
+        "mode": "RGBA"
+      },
+      "current_front": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_front_v03.png",
+        "sha256": "34dd233b7d3a1f262a424c2ede8f19c950462a2e5a4a14e103179c57c0557ea5",
+        "bytes": 45461,
+        "size_px": [
+          192,
+          192
+        ],
+        "mode": "RGBA"
+      },
+      "current_psd": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_surprised_expression_v03.psd",
+        "sha256": "ffb7d0220c6681ec8ece3d1a52cd2768e81fd35945361e9173610e5e0ff95e80",
+        "bytes": 16242916,
+        "size_px": [
+          1024,
+          1536
+        ],
+        "mode": "RGB"
+      },
+      "states": {
+        "happy": {
+          "stable_asset_id": "u04_xj_s0_face_happy",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_happy_v03.png",
+            "sha256": "4936e53163c099c5db7462254f2a54ba600566ba515e2028e3c898fd2e6b7550",
+            "bytes": 17317,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_happy_u00_1280x720.png",
+            "sha256": "3b2fe03a47db5e06e89b21ced14a8ca49d2e2bbac675804843db3be64aed4234",
+            "bytes": 1227749,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_happy_expression_v03.psd",
+            "sha256": "b588731833da28ce7aa910c26b76cc3574448a4a23c667ca7e2c8f060ee02261",
+            "bytes": 16242916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_happy_expression_v03_preview.png",
+            "sha256": "f57eac91a797a82104b0cb98f857abf32a278d49ff21d60237cd0a91198eb922",
+            "bytes": 719236,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "surprised": {
+          "stable_asset_id": "u04_xj_s0_face_surprised",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_surprised_v03.png",
+            "sha256": "0e103f4927988c3d16f3c42998b739a6b9fbc54cf2c9641b0adc4b0937caa79f",
+            "bytes": 27554,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_surprised_u00_1280x720.png",
+            "sha256": "439b1915862c74867a248136363e710f48f024ac41732a31b27ac425f6f55681",
+            "bytes": 1228307,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_surprised_expression_v03.psd",
+            "sha256": "ffb7d0220c6681ec8ece3d1a52cd2768e81fd35945361e9173610e5e0ff95e80",
+            "bytes": 16242916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_surprised_expression_v03_preview.png",
+            "sha256": "61b73fd2520d473cfcdd6130767783f32236e8b02a08f1049d0d727b92e3192d",
+            "bytes": 720356,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "sad": {
+          "stable_asset_id": "u04_xj_s0_face_sad",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_sad_v03.png",
+            "sha256": "1e920451a6a9f6a9666884955924e6fc3d4d68b75910ead293d3a7fe70b258e1",
+            "bytes": 26229,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_sad_u00_1280x720.png",
+            "sha256": "bcd88b4c8e2fa88e7a4db8a47f94f91d148dffe13c4c58e6bf532cfb05007e73",
+            "bytes": 1228081,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_sad_expression_v03.psd",
+            "sha256": "4e1feaf05b030cea0a89f4fb1f5ec8ec8f3a5dc4a354298a3679e1eaa196b872",
+            "bytes": 16242916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_sad_expression_v03_preview.png",
+            "sha256": "bcbe19532ded6998e04965cdc9aa80c793a563b2e6870b4f43c45075100b981b",
+            "bytes": 720483,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "smile": {
+          "stable_asset_id": "u04_xj_s0_face_smile",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_smile_v03.png",
+            "sha256": "26b2b87e22d08e03424e9530a708c7cd9f64b6d47c835a7a34e87dc2e0262ebd",
+            "bytes": 25975,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_smile_u00_1280x720.png",
+            "sha256": "fcaf45e5f6b6f74d4b197f692c9a86cf369802cd95c4830cd74890020155cf51",
+            "bytes": 1228516,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_smile_expression_v03.psd",
+            "sha256": "50d0ba1b6de8216d396837eb4088c5b171908f53c8f508e5bcde1d1c52512ed3",
+            "bytes": 16242916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_smile_expression_v03_preview.png",
+            "sha256": "29d88ed48eb0f9f98ecbf2b59bdc39e31d58b64861c567d9c998fa773fabcf55",
+            "bytes": 720234,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        },
+        "angry": {
+          "stable_asset_id": "u04_xj_s0_face_angry",
+          "face": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/exports/u04_xj_s0_face_angry_v03.png",
+            "sha256": "cec84118591887be469052cd5be7bfd9568d06f5e5301929f49ddafb2866c3b4",
+            "bytes": 26979,
+            "size_px": [
+              192,
+              192
+            ],
+            "mode": "RGBA"
+          },
+          "u00_same_scale": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_angry_u00_1280x720.png",
+            "sha256": "1c995e0da6b1cd32c6d26e1d8bf242d98b65f4b191b668e64e167f5f7d85fe87",
+            "bytes": 1227306,
+            "size_px": [
+              1280,
+              720
+            ],
+            "mode": "RGB"
+          },
+          "client_formal_path": "PLANNED_ONLY",
+          "client_uuid": null,
+          "psd_state": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_angry_expression_v03.psd",
+            "sha256": "eb1f9dcbd986cb42817c6f9cb9d94ce14d6e08c9bad53305ba1c64d1c2c32a96",
+            "bytes": 16242916,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          },
+          "psd_switch_preview": {
+            "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_xj_s0_angry_expression_v03_preview.png",
+            "sha256": "683043c78387c4b116d3e8123be55ba65836587887cf294534e0ac953f7063b1",
+            "bytes": 719149,
+            "size_px": [
+              1024,
+              1536
+            ],
+            "mode": "RGB"
+          }
+        }
+      },
+      "current_psd_layer_manifest": {
+        "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/xj_s0_surprised_v03_layer_manifest.json",
+        "sha256": "08a739e75c9ed64122d88e8453582e331d4c99ffbee6136a3dd8872fe9694804",
+        "bytes": 14929
+      },
+      "psd_default_state": "surprised"
+    }
+  },
+  "revision_note": "v0.3 current native three-layer and U00 chain; AD 1024 source BASE_REPAIR inherited 467px resampling/export difference, documented via five native reference PSDs; AC false front-offset comparison corrected; no generator calls."
+}

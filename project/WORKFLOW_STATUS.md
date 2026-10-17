@@ -1,3 +1,13 @@
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
+### U04 表情断线与重影再次返工｜v0.3制作中
+- 用户再次退回准确Gate2 v0.2，证据`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json`；旧v0.2 Approval REJECTED/旧冻结图与Review保留。现行Art v0.3 DRAFT、Task IN_PROGRESS，Tech新轮 IN_PROGRESS，首Required `deliverables/tech_lead/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DIAGNOSIS.md`实存，Producer IN_PROGRESS。前轮Tech/Producer DONE仅历史结论，不能证明本轮断线/重影合格。
+- 本轮九目标态、AJ sad代表先行；新法清除旧线再连续局部重建，最多新增4次imagegen计旧32/48、0CLI。Client正式导入锁；具体v0.3仍需用户审核。本轮流程`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md`。
+- AJ sad round2代表获Tech实际视觉检查放行同法扩九圈态；0新增生成，未做第三轮。完整v0.3仍制作中、未送审。
+- AC分支两轮后仍有灰缝（face坐标x22..30,y85..101）；front旧肤色归因经坐标反证已撤回，根因未确证；Tech规则73判第三次须停，Art映射assert已中止无输出。Master撤回先前放行判断；Art整体BLOCKED，v0.3不入全成功USER_REVIEW，0新增生成。
+- `AC_BLOCKER_RESOLVED_BY_CORRECT_COMPOSITION`：Tech独立复核native/base+face(48,95)+front(72,140)与source crop RGBA及U00 ROI均零差；此前竖缝为诊断拼图front错位假象。保留误诊/停工历史，无第三次资产编辑；Art恢复IN_PROGRESS继续整包，Gate2未送、Client锁。
+- **现行收口08:43:05Z**：准确Art v0.3经`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/ART_PACKAGE_IDENTITY.json`重绑247引用，`USER_REVIEW`/用户决定空；Tech新轮经`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/TECH_SUPPORT_ACCEPTANCE.json`内部DONE；Producer四Required齐、REVIEW待Master内部接受。AC停工→坐标反证→正确三层复核历史保留，无第三次资产修订。新增imagegen0，历史32/48；Client锁。`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/CONTINUITY_CHECK.json`无空挂。
+- `PRODUCER_INTERNAL_DONE`：Master `deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/PRODUCER_SUPPORT_ACCEPTANCE.json` APPROVED绑定本轮Producer DELIVERABLE SHA `2a86b89a0c9deca98ef57ab47ec8eead01d5d75941d1cae674f6fd225ba7e7d5`；Task DONE/Approval PROFESSIONAL_REVIEW，不代替Art Gate2。
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 END -->
 <!-- U04-EXPRESSION-REPAIR-CLI-20261017 START -->
 ## U04 CLI配置｜2026-10-17T12:04:26+08:00
 - 用户已授权CLI/API备选配置；独立环境和离线检查通过。缺OPENAI_API_KEY，生产仍BLOCKED；新增调用0，累计保守1/48，Gate2仍DRAFT。
@@ -1533,4 +1543,5 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 - 用户准确v0.1 `CHANGES_REQUESTED`，证据 `deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/USER_REVISION_AUTHORIZATION.json`；旧主Art及ADXJ/MTAT Task `REVISION`、Approval `REJECTED`，仅历史退回链，无独立待办。旧包与Review原文保留。盲辨30/30只支持表情辨识，不是边缘质量PASS。
 - 现行新Art `U04-EXPRESSION-EDGE-REVISION-ART-20261017` `USER_REVIEW`、Approval v0.2 `USER_REVIEW`/用户决定空；准确图包 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md`，冻结身份 `deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/GATE2_PACKAGE_IDENTITY.json`。3 base+7 face局部改动、16组合变化，其余原像素保留，新增生成0。Tech支持`DONE/PROFESSIONAL_REVIEW`，Master内部接受见`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/TECH_SUPPORT_ACCEPTANCE.json`。
 - Producer `DONE/PROFESSIONAL_REVIEW`，Master内部接受`deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/PRODUCER_SUPPORT_ACCEPTANCE.json`；`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/CONTINUITY_CHECK.json`无空挂READY/IN_PROGRESS，下一门禁为用户审核具体v0.2。Client正式导入锁、UUID未生成；本单元示例无QA。复盘`WR-20261017-U04-EXPRESSION-EDGE-REVISION-001`。
+- 历史状态提示：准确v0.2已被2026-10-17第二次用户退回，现行状态与v0.3续修以本文件 `U04-EXPRESSION-LINE-REVISION-20261017` 块为准。
 <!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

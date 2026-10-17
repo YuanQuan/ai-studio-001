@@ -1,0 +1,38 @@
+{
+  "version": "v0.3",
+  "status": "FINAL_SOURCE_LAYER_DIAGNOSIS_ADDENDUM",
+  "prior_presigned_diagnosis": "DIAGNOSIS.json is unchanged; Tech presign SHA remains valid",
+  "AJ_S2_sad": {
+    "visible_cause": "旧face右眉语义层在原候选深色笔画上alpha局部过低，三层合成形成灰断/双边；base native x150..160,y85..94有旧碎段，但其上face多数alpha255遮住，非可见缺陷主因。front在本圈主体透明。",
+    "fix": "1254原候选同位眉+竖发+斜前发的连续局部不透明层覆盖可见灰线；未改隐藏base残段，因为不影响当前视觉且本轮两次首样已用完。"
+  },
+  "AC_S0_four_states": {
+    "visible_cause": "原base额发区域的皮色清脸擦除带，逐态新face没有该前发连续段；从四态1254候选各重提同位前发/眉交叉局部补层。",
+    "diagnostic_correction": "08:27左右先前native对照误将front贴于face原点(48,95)，而真正front在base native(72,140)，相对face(+24,+45)。假对照显出x22..30灰竖缝；正确base+face+front/source/U00实链显示同位发丝连续。此前 ALLOWED_ROI_AC_FRONT_SKIN_ADDENDUM 只是停工前未执行设想，其“旧肤色front”归因撤回。front文件保留原hash；没有第三次资产修改。",
+    "correct_native_offset": {
+      "face": [
+        48,
+        95
+      ],
+      "front": [
+        72,
+        140
+      ]
+    },
+    "corrected_comparisons": [
+      "review/compare/ac_s0_happy_native4x.png",
+      "review/compare/ac_s0_sad_native4x.png",
+      "review/compare/ac_s0_smile_native4x.png",
+      "review/compare/ac_s0_angry_native4x.png"
+    ]
+  },
+  "AD_S0_five_states": {
+    "visible_cause": "共享front源层含历史右眉短黑线，叠在逐态face新右眉上；face部分边界过软，故出现双线/断口。",
+    "fix": "在先验共享front窄ROI清旧右眉alpha，保留前发；三目标态与happy/smile连带态均用各自原候选右眉/左眉必要局部层接续。"
+  },
+  "XJ_S0_five_states": {
+    "visible_cause": "共享front的镜圈上方保留旧青眉/皮色罩，叠在face新青眉上；face自身新线局部过软。",
+    "fix": "只在先验front窄ROI清旧青眉，保护金色镜圈和青发；五态各自原候选左青眉局部重建，surprised及连带四态检查。"
+  },
+  "fidelity_limits": "本轮没有imagegen调用、没有整脸锐化；正常真发丝、眼嘴、AC眼袋、XJ镜圈和圈区外像素保持。用户审批及真实运行QA未发生。"
+}

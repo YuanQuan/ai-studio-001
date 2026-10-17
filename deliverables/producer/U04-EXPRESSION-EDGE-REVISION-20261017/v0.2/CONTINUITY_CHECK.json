@@ -1,0 +1,27 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+  "checked_at_utc": "2026-10-17T08:43:05Z",
+  "current_gate": "ART_V0.3_USER_REVIEW_PENDING_USER_DECISION",
+  "tasks": [
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+      "status": "USER_REVIEW",
+      "evidence": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/ART_PACKAGE_IDENTITY.json"
+    },
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+      "status": "DONE",
+      "evidence": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/TECH_SUPPORT_ACCEPTANCE.json"
+    },
+    {
+      "task_id": "U04-EXPRESSION-EDGE-REVISION-FLOW-20261017",
+      "status": "REVIEW",
+      "evidence": "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md"
+    }
+  ],
+  "empty_ready_or_in_progress": [],
+  "history": "v0.2用户CHANGES_REQUESTED/REJECTED，前轮Tech/Producer DONE仅历史；AC停工和坐标反证保留，新版具体图待用户。",
+  "client_formal_import": "LOCKED_NOT_IMPORTED",
+  "qa": "NOT_APPLICABLE_UNIT_EXAMPLE",
+  "result": "PASS_NEXT_GATE_USER_REVIEW"
+}

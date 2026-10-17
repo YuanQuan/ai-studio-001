@@ -1,0 +1,14 @@
+{
+  "version": "v0.3-pre-sample",
+  "recorded_at_utc": "2026-10-17T08:12:06Z",
+  "status": "SOURCE_LAYER_DIAGNOSIS_BEFORE_AJ_SAD_FIRST_EDIT",
+  "red_circle_basis": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/ANNOTATED_REGIONS.json 和 NATIVE_REGION_MAPPING.json；九态圈域映射为先验范围上界",
+  "method": "对比原1254候选按原生尺寸Lanczos正规化、现有语义层、base/front与三层实际合成；确认可见缺陷像素后再编辑",
+  "findings": {
+    "AJ_S2_sad": "原候选在右眉与竖发交叉处呈一根连续黑线。v0.2 base native x150..160,y85..94有旧黑碎段，但对应face绝大多数alpha=255，旧段当前被遮住，不能作可见重影主因。v0.2右眉语义层在新线native约x150..170,y60..65的alpha局部仅2..185，使候选RGB本应深色的线叠成低频灰断，宽skin覆盖又使边缘双线。front此圈几乎透明。新方法：仅在真实新眉/发交叉路径从原候选重提连续实色像素并去除对应灰残影；潜伏旧base碎段另以窄域清理并作切换保护，不能把隐藏段当可见改善。",
+    "AC_S0_four_states": "happy原1254候选的前发与眉眼线连续；v0.2 base在额前发丝横穿处已有清脸留下的大块肤色水平擦除带，face只含眉眼嘴，不能补回该发丝。四态同一base，须优先以获批原画/正确候选在原位恢复前发实线，并查每态face与base旧眉眼是否出现真实透出；AC疲惫黑眼圈不得误抹。",
+    "AD_S0_three_states": "原候选额发尖与眉线相互分明；v0.2复合的右眉出现额外暗带/断点，需逐态查当前face低透明及base旧眉是否透出。圈框上界越过face，必须连同base/front源画布复核，不能只改face。",
+    "XJ_S0_surprised": "原候选左青眉与额发为单线；v0.2复合左眉下方出现第二灰线，实际来源待逐像素base/face/front关层确认；眼镜光学圈纹单front及眼球不改。圈框上界超face，查base/front。"
+  },
+  "not_a_final_pass": "本文件是首样前诊断与新修法签认输入；不以旧v0.2 Tech PASS或正常AA判断替代v0.3实图。"
+}

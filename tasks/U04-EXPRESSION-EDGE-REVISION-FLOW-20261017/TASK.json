@@ -4,22 +4,24 @@
   "type": "coordination",
   "owner": "producer",
   "parent": "U04-EXPRESSION-REPAIR-ASSET-20261017",
-  "objective": "维护用户退回、修订版本和流程；在既有方案内局部返工，止于具体版本USER_REVIEW。",
+  "objective": "记录准确v0.2再次退回、方法变化与累计预算，维护当前v0.3版本链、实际执行和用户审核门禁。",
   "inputs": [
     "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/USER_REVISION_AUTHORIZATION.json",
     "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.1/USER_REVIEW_PACKET.md",
     "rules/visual_production_contract.md",
-    "rules/visual_fidelity_compute_contract.md"
+    "rules/visual_fidelity_compute_contract.md",
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json",
+    "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/ANNOTATED_REGIONS.json"
   ],
   "deliverables": [
-    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/FLOW_REPORT.md",
-    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/CONTINUITY_CHECK.json",
-    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md",
-    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/DELIVERABLE.json"
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/FLOW_REPORT.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/CONTINUITY_CHECK.json",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md",
+    "deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/DELIVERABLE.json"
   ],
   "acceptance": [
-    "记录v0.1用户退回及局部授权，维护开工里程碑、审批、看板，Client锁不变。",
-    "最终版本和Required齐备，连续性和可核耗时复盘完整，不增用户门禁，不将未批资源DONE。"
+    "记录准确v0.2用户退回及本轮续修授权、方法改变和历史累计预算，持续维护里程碑/审批/看板与Client锁。",
+    "最终当前版本和Required齐备，连续性及可靠耗时复盘完整，不增用户门禁，不将未批资源DONE。"
   ],
   "dependencies": [],
   "status": "DONE",
@@ -29,6 +31,12 @@
     "美术gpt-6-sol/high，Tech/Producer gpt-6-sol/low。Master负责Git；专业Agent不执行Git、不创建子任务。",
     "2026-10-17T07:15:58Z Producer已实写FLOW_REPORT.md并登记旧v0.1用户退回；Art/Tech经Master转报已有实际诊断动作，现IN_PROGRESS，待正式文件落盘后绑定。",
     "2026-10-17T07:50:33Z 四Required与两验收齐，continuity PASS_NEXT_GATE_USER_REVIEW；待Master内部接受。",
-    "2026-10-17 Master PRODUCER_SUPPORT_ACCEPTANCE.json APPROVED：四Required与两验收原文同序PASS；内部支持DONE，不代替Art Gate2用户决定。"
+    "2026-10-17 Master PRODUCER_SUPPORT_ACCEPTANCE.json APPROVED：四Required与两验收原文同序PASS；内部支持DONE，不代替Art Gate2用户决定。",
+    "本轮用户明确要求再次修复同批资源，非新角色/新阶段扩批；旧v0.1/v0.2资源与技术检查只读留档。",
+    "先诊断清旧线+连续局部重建的新方法，Art/Tech同批预签后首样；本轮最多4次内置imagegen，计原48总额，0CLI。",
+    "Master负责Git，Art gpt-6-sol/high，Tech/Producer gpt-6-sol/low；专业Agent不创建子任务、不执行Git。",
+    "2026-10-17 v0.2再次用户退回，准确授权 deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/USER_REVISION_AUTHORIZATION.json；Producer v0.2 FLOW_REPORT实写开工。",
+    "2026-10-17T08:43:05Z 四Required齐、两验收原文同序PASS，continuity无空挂，待Master内部接受。",
+    "2026-10-17 Master deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/PRODUCER_SUPPORT_ACCEPTANCE.json APPROVED：本轮四Required/两验收原文同序，Producer内部DONE；准确Art v0.3仍待用户Gate2。"
   ]
 }

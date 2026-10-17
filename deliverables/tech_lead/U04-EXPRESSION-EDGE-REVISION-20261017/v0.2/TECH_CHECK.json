@@ -1,0 +1,47 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-TECH-20261017",
+  "version": "v0.2",
+  "art_version": "v0.3",
+  "status": "STATIC_TECH_SUPPORT_COMPLETE_WITH_DOCUMENTED_INHERITED_FULL_PSD_LIMIT",
+  "art_manifest_sha256_at_initial_freeze": "d58728de50c4a18e469860498c06ba9fb599d6d1085f7cb0741d7e99b68f2298",
+  "checks": [
+    {
+      "item": "圈域根因与方法",
+      "result": "PASS",
+      "evidence": "AJ sad候选单线、face眉/前发低alpha灰断；base旧片大多被alpha255遮挡；AC源base清脸擦除带与候选真发断口；AD/XJ共用front旧眉可见贡献。AC所谓残余front肤色竖缝是诊断图错误把front放在face原点，正确front相对face(24,45)后不成立；AC front未编辑。"
+    },
+    {
+      "item": "同批预签与局部资源",
+      "result": "PASS",
+      "evidence": "Tech预签绑定Art四输入及Master授权/圈映射，AJ sad首样前签。Art先验ROI及shared-front/inherited-face/AC connected-strand addenda在对应修改前登记。AJ/AC各两轮，0 imagegen。"
+    },
+    {
+      "item": "manifest与总板",
+      "result": "PASS",
+      "evidence": "Art最终ASSET_MANIFEST SHA 4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d；递归247处path/SHA均实存且0异常；LAYER_EXPORT_MAP与总板JSON绑定此SHA；30格总板与真实U00的172×172裁图逐像素一致。"
+    },
+    {
+      "item": "实际PSD语义/位图",
+      "result": "PASS",
+      "evidence": "12份full PSD解析实际图层flags：AC/AJ各1、AD/XJ各5，均恰1态新表情+1 BASE+1 FRONT可见，旧层0可见；AC angry与AJ sad EDGE_REBUILD、AD/XJ FRONT各代表层嵌入位图与源PNG非透明裁切逐像素相同。Art 20态语义层重组成face=0差。 AD新增五份768×768 native三层PSD实际读回：每份3层均可见，嵌入各层裁剪像素与清单native base/逐态face/front逐像素相同，offset(0,0)/(232,139)/(232,139)正确；每份PSD merged page对随附preview RGB差0。独立PIL三层合成对PSD预览仅1–2通道舍入差。"
+    },
+    {
+      "item": "native三层/U00/ROI",
+      "result": "PASS",
+      "evidence": "AC/AJ各五态实际native base+face+front按原source rect重组，在base覆盖范围与逐态source画布RGBA=0差；AC front源正确偏移(374,140)，face(350,95)，前述错位诊断已撤回。v0.2→v0.3：AC四face、AJ sad face、AD/XJ五态face及各共享front，全部实际差异在先验ROI/扩充ROI，区外0；其余face/front/base未改。20张受影响U00变化仅局部圈域；AD/XJ五态shared-front联动均重组。"
+    },
+    {
+      "item": "AD旧source full与native base继承偏差",
+      "result": "LIMITATION",
+      "evidence": "AD v0.2即存在：full PSD BASE源1024 crop后Lanczos→768与清单native base有467px RGB差，bbox native[310,146,336,179]，alpha均253，最大通道差104。叠同v0.3 face/front后各态仍96–204可见native像素差，bbox[310,146,328,179]，最大通道差49，落用户眉圈。两版本base与full PSD引用未改；不能声称full PSD预览与native切片严格等价。Master已选新增768native三层PSD作当前准确编辑/重组参照，待Art补充后复核。 新增五份AD native PSD提供与用户实际切片一致的可编辑母版/审图参照；原full PSD保留作历史语义图层源，不能以它证明native严格等价。"
+    },
+    {
+      "item": "用户效果与运行",
+      "result": "NOT_TESTED",
+      "evidence": "用户Gate2未批准；Client未正式导入、无真实UUID与运行画面、无QA。自产切图携实际切片/同尺度图直接交用户，不设成品效果专业复审。"
+    }
+  ],
+  "decision": "v0.3圈区局部修订、先验ROI边界、实际PSD嵌入及互斥、AD补充native三层PSD、U00/30格总板的静态支持核验完成。旧AD full1024 PSD与native base的继承缩放偏差仍明确保留，不将其表述为严格同像素；具体切片及同尺度效果直接交用户Gate2审核，不设置专业成品效果复审。Client导入/实际运行未测试。",
+  "final_art_manifest_sha256": "4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d",
+  "checked_at_utc": "2026-10-17T08:41:59Z"
+}

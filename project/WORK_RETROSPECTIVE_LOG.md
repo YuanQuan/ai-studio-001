@@ -1,3 +1,8 @@
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
+### WR-20261017-U04-EXPRESSION-LINE-REVISION-001｜执行中
+- 本轮用户退回记录时间`2026-10-17T08:03:11Z`；Art已实际开始诊断、Producer已登记，Tech待本轮证据。结果/各角色净时长与等待分段尚未知；收口复盘见`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md`，不会用前轮PASS替代本轮断线核验。
+- **收口08:43:05Z**：从用户退回08:03:11Z至Producer复盘为UTC墙钟39分54秒，含Art修订、Tech核验、AC坐标误诊复核与流程登记，角色净工时未知；用户审核尚未开始。结果及建议见`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/WORK_RETROSPECTIVE.md`。
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 END -->
 <!-- U04-EXPRESSION-REPAIR-CLI-20261017 START -->
 ## U04 CLI配置｜2026-10-17T12:04:26+08:00
 - 用户已授权CLI/API备选配置；独立环境和离线检查通过。缺OPENAI_API_KEY，生产仍BLOCKED；新增调用0，累计保守1/48，Gate2仍DRAFT。
@@ -1277,4 +1282,5 @@ Art、本批Master阶段与旧总体当前指针均USER_REVIEW，具体样本尚
 <!-- U04-EXPRESSION-EDGE-REVISION-20261017 START -->
 ### WR-20261017-U04-EXPRESSION-EDGE-REVISION-001｜Gate2 v0.2 送审
 - 用户退回 `2026-10-17T07:13:13Z` 至Producer收口 `07:50:33Z`，UTC墙钟37分20秒，含诊断、修复、Tech静态核、跨角色交接与流程登记，不是任一角色净制作时间；分段净时长与用户审批等待未知。Art v0.2 `USER_REVIEW`、Tech内部`DONE`，Client锁。可证实返工为两类边缘污染与两项拒绝试验，尚无同类时限基线；建议及复核点详`deliverables/producer/U04-EXPRESSION-EDGE-REVISION-20261017/v0.1/WORK_RETROSPECTIVE.md`。
+- 历史状态提示：准确v0.2已被2026-10-17第二次用户退回，现行状态与v0.3续修以本文件 `U04-EXPRESSION-LINE-REVISION-20261017` 块为准。
 <!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

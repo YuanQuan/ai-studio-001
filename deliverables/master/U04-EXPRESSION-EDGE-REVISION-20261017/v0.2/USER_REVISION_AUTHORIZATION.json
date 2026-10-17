@@ -1,0 +1,44 @@
+{
+  "recorded_at_utc": "2026-10-17T08:03:11Z",
+  "user_instruction": "画圈的地方还有断开，重影等问题，再修一下",
+  "decision": "CHANGES_REQUESTED",
+  "rejected_version": "v0.2",
+  "rejected_artifact": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/USER_REVIEW_PACKET.md",
+  "board": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+  "scope": "六阶段30态内，修AC_S0四态、AJ_S2悲伤、AD_S0惊讶/悲伤/生气、XJ_S0惊讶的眉眼发丝断线、双线和残影；同时检查由同一基础层引起的其他态。保持MT/AT已修效果、姿态身份和AC0黑眼圈疲惫设定。",
+  "method_change": "先分别核原始候选、语义层、base/front，清除旧五官，再重建连续的新眉眼/发丝边界；不用再次整体降低alpha或锐化掩盖重影。确需栅格补绘时使用内置imagegen局部编辑，不走CLI。",
+  "retry_authorization": "用户最新明确要求再次修复，授权在本次圈选缺陷范围改方法续修；保留此前两次失败试验和累计计数，不借改任务/版本清零。先AJ sad单个代表，改法成立再扩。",
+  "budget": {
+    "global_imagegen_used_before": 32,
+    "global_imagegen_cap": 48,
+    "current_round_imagegen_cap": 4,
+    "representative_first": 1,
+    "automatic_new_method_rounds_max": 2,
+    "wall_time": "本轮45分钟停工复核，且不延长原批次6小时累计额度，以较早为准；起点使用本记录工具时间。",
+    "fees_gpu": "未知",
+    "rules": "失败/未知保守计数；同一问题两轮仍不成立停止该分支并提交具体差异。"
+  },
+  "client_import": "LOCKED_NOT_IMPORTED",
+  "objectives": {
+    "ART": "修复本轮圈选眉眼发丝的断线和重影，以清除旧线与连续局部重建取代上一轮alpha收边；输出准确v0.3整包供用户审核。",
+    "TECH": "独立拆解本轮断线/重影的像素来源，同批预签新修法及预算，核新版PSD实际图层、三层切片与目标尺度。",
+    "FLOW": "记录准确v0.2再次退回、方法变化与累计预算，维护当前v0.3版本链、实际执行和用户审核门禁。"
+  },
+  "acceptance": {
+    "ART": [
+      "逐处定位本轮圈选的断线与重影，分别核原候选、语义层、base和front，不将可见双线或断口直接解释为正常抗锯齿。",
+      "按同批预签的局部重建方法修订当前PSD及切片；未改区域零差异，旧版保留，表情身份及AC0疲惫设定保持。",
+      "目标九态及共享层受影响态具备真实PSD、透明切片、同尺度重组和清晰前后近图，眉眼发丝连续且无旧五官残影。",
+      "准确v0.3直接呈用户审核，不导入Client、不称运行QA通过；原失败历史、累计调用与本轮实际尝试如实记录。"
+    ],
+    "FLOW": [
+      "记录准确v0.2用户退回及本轮续修授权、方法改变和历史累计预算，持续维护里程碑/审批/看板与Client锁。",
+      "最终当前版本和Required齐备，连续性及可靠耗时复盘完整，不增用户门禁，不将未批资源DONE。"
+    ]
+  },
+  "task_notes": [
+    "本轮用户明确要求再次修复同批资源，非新角色/新阶段扩批；旧v0.1/v0.2资源与技术检查只读留档。",
+    "先诊断清旧线+连续局部重建的新方法，Art/Tech同批预签后首样；本轮最多4次内置imagegen，计原48总额，0CLI。",
+    "Master负责Git，Art gpt-6-sol/high，Tech/Producer gpt-6-sol/low；专业Agent不创建子任务、不执行Git。"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "owner": "art",
+  "summary": "v0.3按原候选重建九个圈态眉/发交叉，清AD/XJ共享front旧眉并修连带态；30态母版、透明切片、U00和真实前后图已齐。AC假残缝是诊断图front错位，已纠正证据，资产无第三轮改动。",
+  "artifacts": [
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ART_BRIEF.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/DIAGNOSIS.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/REVISION_PRESIGN.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/LAYER_EXPORT_MAP.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/REVISION_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/USER_REVIEW_PACKET.md",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/DELIVERABLE.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/NINE_CIRCLED_STATES_NATIVE1X_BEFORE_AFTER.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/NINE_CIRCLED_STATES_U00_ACTUAL1X_BEFORE_AFTER.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/SEMANTIC_SWITCH_CHECK.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/DIAGNOSIS_ADDENDUM.json",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_happy_native_composition_reference_v03.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_surprised_native_composition_reference_v03.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_sad_native_composition_reference_v03.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_smile_native_composition_reference_v03.psd",
+    "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/source/u04_ad_s0_angry_native_composition_reference_v03.psd"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "逐处定位本轮圈选的断线与重影，分别核原候选、语义层、base和front，不将可见双线或断口直接解释为正常抗锯齿。",
+      "result": "PASS",
+      "evidence": "DIAGNOSIS.json、DIAGNOSIS_ADDENDUM.json、review/sample_aj_sad_round2/ 和九态原生对照；AD/XJ 共享front旧眉实层单独核，AC错误front摆位已明确撤回。"
+    },
+    {
+      "criterion": "按同批预签的局部重建方法修订当前PSD及切片；未改区域零差异，旧版保留，表情身份及AC0疲惫设定保持。",
+      "result": "PASS",
+      "evidence": "REVISION_PRESIGN.json + Tech同批预签；ASSET_MANIFEST.json、LAYER_EXPORT_MAP.json、SEMANTIC_SWITCH_CHECK.json；15态face源语义重组差0，先验ROI外差0；旧v0.1/v0.2只读，AC眼袋/各态眼口保留。"
+    },
+    {
+      "criterion": "目标九态及共享层受影响态具备真实PSD、透明切片、同尺度重组和清晰前后近图，眉眼发丝连续且无旧五官残影。",
+      "result": "PASS",
+      "evidence": "12份v0.3新PSD、透明face/front和真实U00，30态板逐格与U00像素相等；九态原生与实际尺寸前后近图在review/，AD/XJ共享层连带六态逐态重组。Art静态视觉通过，Tech最终检查待独立记录。"
+    },
+    {
+      "criterion": "准确v0.3直接呈用户审核，不导入Client、不称运行QA通过；原失败历史、累计调用与本轮实际尝试如实记录。",
+      "result": "PASS",
+      "evidence": "USER_REVIEW_PACKET.md 为准确v0.3用户Gate2审阅入口；REVISION_CHECK.json含AJ与AC各两轮、旧v0.2失败/误诊更正及0次本轮imagegen；Client未导入，未宣称运行QA。"
+    }
+  ],
+  "assumptions": [
+    "用户本轮圈域按Master NATIVE_REGION_MAPPING与Art先验ROI/补登记解释；AC正确front原点按source bbox而非face原点。"
+  ],
+  "risks": [
+    "Photoshop界面人工打开、Client接入和正式运行QA尚未执行；均不得作为本次Gate2静态资源通过证明。",
+    "Tech最终独立静态签核和用户Gate2明确批准待Master/Producer收口。",
+    "AD v0.2继承的1024源BASE_REPAIR缩至768后与已交付原生base有467像素差异；保留原源母版作为语义编辑证据，另提供五份768原生切片组合验证PSD作为实际合成依据。未修改任何效果像素。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

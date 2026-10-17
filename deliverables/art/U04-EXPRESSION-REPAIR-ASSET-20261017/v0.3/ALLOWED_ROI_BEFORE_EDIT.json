@@ -1,0 +1,13 @@
+{
+  "version": "v0.3",
+  "status": "REGISTERED_BEFORE_AJ_SAD_FIRST_EDIT",
+  "coordinate_rule": "左上含右下不含；矩形是用户红圈映射上界，实际补绘仅限可见断口/双线与必要清旧线的窄蒙版；不得用结果差异反定义ROI。native框越界部分转source检查base/front。",
+  "source_mapping": "deliverables/master/U04-EXPRESSION-EDGE-REVISION-20261017/v0.2/NATIVE_REGION_MAPPING.json",
+  "regions": [
+    {"stage":"AC_S0","states":["happy","sad","smile","angry"],"native_face_upper_bound_xyxy":[30,21,186,165],"source_canvas_upper_bound_xyxy":[380,116,536,260],"actual_brush":"共同前发清脸擦除带与逐态眉眼真实残线，避AC黑眼圈"},
+    {"stage":"AJ_S2","states":["sad"],"native_face_upper_bound_xyxy":[108,8,256,119],"source_canvas_upper_bound_xyxy":[473,138,631,249],"planned_narrow_brow_band_xyxy":[108,43,207,78],"planned_latent_old_base_fragment_xyxy":[145,78,168,99],"actual_brush":"原候选一根新眉/发交叉及必要旧线擦除；x>=256部分查base/front，不预设改"},
+    {"stage":"AD_S0","states":["surprised","sad","angry"],"native_face_upper_bound_xyxy":[19,0,192,105],"source_canvas_upper_bound_xyxy":[336,163,587,325],"actual_brush":"逐态眉线与额发断口，source y<face顶查base/front"},
+    {"stage":"XJ_S0","states":["surprised"],"native_face_upper_bound_xyxy":[26,0,120,83],"source_canvas_upper_bound_xyxy":[365,208,490,333],"actual_brush":"左青眉/发遮挡线，source y<face顶查base/front，眼镜不改"}
+  ],
+  "protected": "MT/AT全像素；其他未确认同源区域；各态眼嘴主体、身份姿态、AC黑眼圈、XJ眼镜单圈与全部ROI外像素。"
+}

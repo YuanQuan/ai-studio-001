@@ -1,0 +1,10 @@
+{
+  "version": "v0.3",
+  "status": "REGISTERED_BEFORE_SHARED_FRONT_EDIT",
+  "reason": "AD/XJ 逐层关层图显示可见双眉中的旧线实际来自所有五态共用的 front alpha，而非 face 正常抗锯齿；face 局部候选补绘单独不能消除该旧线。仅清除旧眉对应 front 像素，保留真正前发和 XJ 眼镜圈。因 front 为同阶段共享，五态输出须共同重组核验。",
+  "regions": [
+    {"stage":"AD_S0","states_inheriting_shared_front":["happy","surprised","sad","smile","angry"],"native_front_old_right_brow_upper_bound_xyxy":[91,8,154,46],"source_full_source_front_upper_bound_xyxy":[431,196,515,246],"actual_edit":"仅旧右眉 alpha 清除；与前发交接保护；surprised/sad/angry 新候选右眉由 face 语义补层呈现；happy/smile 原 face 新眉保持"},
+    {"stage":"XJ_S0","states_inheriting_shared_front":["happy","surprised","sad","smile","angry"],"native_front_old_left_brow_upper_bound_xyxy":[26,10,109,53],"source_full_source_front_upper_bound_xyxy":[365,236,476,307],"actual_edit":"仅旧左青眉及旧皮色罩 alpha 清除；眼镜圈、眉上发片、周边保护；surprised 新候选左眉由 face 语义补层呈现；其他四态现有 face 新眉须检查"}
+  ],
+  "protected": "AC/AJ/MT/AT不受本补充影响；两阶段 source/front 非旧眉像素、XJ 眼镜圈及共享层所有登记框外像素保持旧hash；face 更改仍服从原先验ROI。"
+}

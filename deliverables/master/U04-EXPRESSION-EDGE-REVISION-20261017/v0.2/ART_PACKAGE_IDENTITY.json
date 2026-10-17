@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-17T08:42:16.966965+00:00",
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "decision": "READY_FOR_DIRECT_USER_REVIEW",
+  "version": "v0.3",
+  "artifact_identities": [
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json",
+      "sha256": "4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/LAYER_EXPORT_MAP.json",
+      "sha256": "03f670e553c025bb1316061f5bb848fc350c64372bebae16581e97183027fee7"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/DELIVERABLE.json",
+      "sha256": "ef6b2a539aa50b4b3676b2f2f773fce00c71a59c6330d2024f5798cd48ac51ea"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/USER_REVIEW_PACKET.md",
+      "sha256": "062b2b7730b1f39ab44e07b2ab38d227a78ab79a3787d5dc4353d7dcbd02c587"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+      "sha256": "51b3e8292840a481a73843f3046ec5dda591887223d8617a22ffa946b2d1dbec"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/NINE_CIRCLED_STATES_NATIVE1X_BEFORE_AFTER.png",
+      "sha256": "19671624ad6c7831f987004223073dc56cd62bd43683cfe4499a0a44cdb2ab66"
+    },
+    {
+      "path": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/NINE_CIRCLED_STATES_U00_ACTUAL1X_BEFORE_AFTER.png",
+      "sha256": "4529fda15862d3774acc31320dac97302726019883b527e6fa5b0d02769a03f2"
+    }
+  ],
+  "required_count": 8,
+  "exact_task_acceptance_count": 4,
+  "manifest_references_verified": 247,
+  "unique_manifest_files": 232,
+  "stage_count": 6,
+  "state_count": 30,
+  "master_observation": "FINAL_IMAGE_OBSERVATION.json",
+  "source_protection": "FINAL_PROTECTION_CHECK.json",
+  "gate_note": "本记录仅核当前交付身份/完整性，非增设专业效果复审；自产切片准确v0.3直接交用户Gate2。用户决定为空，Client未导入，运行/QA未测。",
+  "ad_native_psd_addendum": {
+    "new_psds": 5,
+    "native_canvas_px": [
+      768,
+      768
+    ],
+    "all_original_pngs_and_12_source_psds_unchanged": true,
+    "layer_embedded_pixels_and_offsets": "Tech independently verified equal to current slices",
+    "native_psd_merged_vs_tool_preview": "RGB zero difference",
+    "native_psd_vs_independent_PIL": "1-2 channel rounding difference declared",
+    "inherited_source_psd_limit": "AD previous source1024→native768 base467px mismatch (visible96–204 per state, max49) retained and disclosed; full-source PSD is not asserted identical to native output"
+  }
+}

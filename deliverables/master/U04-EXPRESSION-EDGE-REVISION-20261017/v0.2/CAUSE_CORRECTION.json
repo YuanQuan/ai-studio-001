@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-10-17T08:08:16Z",
+  "scope": "AJ_S2 sad 本轮圈选右眉/额发重影区域",
+  "superseded_statement": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/DIAGNOSIS_FINAL_ADDENDUM.json中把AJ右眉残灰直接归为正常低alpha阴影/抗锯齿的结论，对本轮圈区撤回。",
+  "basis": [
+    "用户再次圈出该处断线/重影并明确退回v0.2。",
+    "Art逐层初诊：原1254候选缩至256的新右眉连续，v0.2 base仍有native约x150..160,y85..94的旧眉碎线，新face周围半透明皮色叠加后出现双线。",
+    "Master实际查看aj_s2_sad_imagegen_01.png，原候选右眉为连续清楚的单条主线；切片重组需要恢复其连贯性。"
+  ],
+  "correction": "新方法先清底图旧五官残线，再由正确原候选重建连续眉线及必要前发交叉局部语义层；不能仅降低新眉alpha而继续暴露旧线。具体ROI/像素拆解与结果以本轮Art/Tech实际证据补齐。",
+  "history": "旧文件与两个失败试验只读保留；本轮是用户明确授权后的改方法续修，累计历史不清零。",
+  "diagnosis_status": "代表样第2轮已验证可见修订：face新眉覆盖不完整形成灰断与双影，右斜发段base/face混合形成灰横带。原候选局部实色重提取修复。隐藏的base旧黑段不记为可见改善。",
+  "tech_counter_evidence": "Tech独立读native x150..160,y85..94，face同区110像素仅1低于alpha255，中心155,89完全覆盖旧base；该已遮住碎段本身不能解释可见双线。首样需以实际可见断口/重影处的base、face、front贡献及正确原候选重提取为证。"
+}

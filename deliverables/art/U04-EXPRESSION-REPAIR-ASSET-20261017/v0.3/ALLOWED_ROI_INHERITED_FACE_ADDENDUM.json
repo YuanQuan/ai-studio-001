@@ -1,0 +1,10 @@
+{
+  "version": "v0.3",
+  "status": "REGISTERED_BEFORE_INHERITED_FACE_EDIT",
+  "reason": "共用 front 旧眉清除后，AD happy/smile 与 XJ 其余四态底层 face 中的逐态新眉也必须接续显示，不能让被旧 front 遮住的断线显露。以各态原1254候选同位眉线局部补层，仅作用于与共用旧眉重叠的原先圈域投影，五态同源检查；不得移动眼/嘴或镜圈。",
+  "regions": [
+    {"stage":"AD_S0","additional_states":["happy","smile"],"native_face_upper_bound_xyxy":[91,8,161,53],"source_canvas_upper_bound_xyxy":[431,196,525,257],"actual_edit":"仅右眉与额发交接，保留其他表情"},
+    {"stage":"XJ_S0","additional_states":["happy","sad","smile","angry"],"native_face_upper_bound_xyxy":[26,0,120,83],"source_canvas_upper_bound_xyxy":[365,208,490,333],"actual_edit":"仅左青眉/发遮挡线；原候选逐态情绪弧度；镜圈、眼嘴保持"}
+  ],
+  "protected": "登记外差异为0，MT/AT/AC/AJ不因本补充变化；所有原始候选和旧版本只读。"
+}

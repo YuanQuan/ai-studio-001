@@ -1,0 +1,55 @@
+{
+  "recorded_at_utc": "2026-10-17T08:28:38.576467+00:00",
+  "scope": "AC_S0同一左前发残灰窄缝",
+  "status": "STOPPED_AFTER_TWO_UNSUCCESSFUL_LOCAL_ROUNDS",
+  "reason": "Two candidate face repair rounds still leave a thin gray seam. The proposed front skin cause was disproved by correct coordinates.",
+  "rule": "rules/visual_fidelity_compute_contract.md:73",
+  "rule_quote": "同一问题默认最多两轮自动修正，累计计数不因换任务、换工具或换提示清零；仍失败停止该支线并提交诊断",
+  "master_correction": "Master先前把清front归第二轮必要完成的判断已撤回；不得改名或合并记账规避第三次修正。",
+  "actual_execution": "Art报告在full→native裁切映射assert中止，新AC front从未落盘；没有第三次修正产物；此断言故障需在日志保留。",
+  "remaining_work": "Readonly base/face/front contribution diagnosis in correct coordinates; deliver other finished repairs. No further AC editing or tuning.",
+  "generation_calls_this_round": 0,
+  "client_import": "LOCKED",
+  "coordinate_counterevidence": {
+    "recorded_at_utc": "2026-10-17T08:29:27.432775+00:00",
+    "source": "Tech readonly coordinate verification",
+    "face_source_rect_origin": [
+      350,
+      95
+    ],
+    "front_source_rect_origin": [
+      374,
+      140
+    ],
+    "front_relative_face": [
+      24,
+      45
+    ],
+    "face_target_box": [
+      22,
+      83,
+      32,
+      104
+    ],
+    "correct_front_target_box": [
+      0,
+      38,
+      8,
+      59
+    ],
+    "correct_visible_front": "168 real dark hair pixels; RGB approx (57,49,50), alpha251-252; not skin",
+    "incorrect_raw_local_box": [
+      22,
+      83,
+      32,
+      104
+    ],
+    "incorrect_raw_box_maps_to_face": [
+      46,
+      128,
+      56,
+      149
+    ],
+    "conclusion": "Old front skin hypothesis disproved by coordinate mapping; no cleaning allowed; residual seam cause unconfirmed"
+  }
+}

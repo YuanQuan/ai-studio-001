@@ -1,3 +1,9 @@
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 START -->
+### U04 表情断线/重影修订 v0.3 现行候审资产
+- 准确30态、六阶段及各稳定资产ID、美术真实路径、SHA、尺寸与沿用版本见 `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json`（早期中间清单232引用，最终247引用SHA见下行）。本轮15张face变更：AC四态、AJ sad、AD五态、XJ五态；AD/XJ共用front变更。base与MT/AT沿用旧hash，旧v0.1/v0.2均保留历史。PSD母版与实际U00重组在同一Manifest/审核包对应登记。
+- v0.3具体切片正在Gate2用户审核，尚未USER_APPROVED；全部Client正式路径仍为`PLANNED_ONLY`，真实UUID`NOT_IMPORTED`。未批前Client不得正式导入。
+- 最终准确v0.3 Manifest SHA更新为`4bb0fc9474634d35c98bf2088d7751a26a302d41de56e68854bbaab93b21b83d`，共247路径/hash引用；AD五态追加native三层PSD参照，旧fullPSD及旧版资源保留并披露继承缩放差。路径与稳定ID以`deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/ASSET_MANIFEST.json`为准。Gate2未获用户批准，Client计划路径、UUID未生成。
+<!-- U04-EXPRESSION-LINE-REVISION-20261017 END -->
 <!-- U04-EXPRESSION-REPAIR-CLI-20261017 START -->
 ## U04 CLI配置｜2026-10-17T12:04:26+08:00
 - 用户已授权CLI/API备选配置；独立环境和离线检查通过。缺OPENAI_API_KEY，生产仍BLOCKED；新增调用0，累计保守1/48，Gate2仍DRAFT。
@@ -925,4 +931,5 @@ Creator 导入后，Client `deliverables/client/EXAMPLE-INTEGRATION-CLIENT-20261
 | `u04_xj_s0_face_surprised` | `deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.2/exports/u04_xj_s0_face_surprised_edge_repair.png` / `6eba12eae10971285e02c212c46320646000bd173e3f566886084391dcc3d72e` | 计划 / NOT_IMPORTED |
 
 - PSD母版：MT/AJ/AD/XJ在现行Manifest逐组记录真实路径与SHA，仅供美术编辑，不作为Client运行资源；AT/AC与未改态沿用旧SHA。Client正式接入仍锁。
+- 历史状态提示：准确v0.2已被2026-10-17第二次用户退回，现行状态与v0.3续修以本文件 `U04-EXPRESSION-LINE-REVISION-20261017` 块为准。
 <!-- U04-EXPRESSION-EDGE-REVISION-20261017 END -->

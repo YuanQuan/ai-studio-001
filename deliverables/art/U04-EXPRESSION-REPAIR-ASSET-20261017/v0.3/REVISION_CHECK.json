@@ -1,0 +1,389 @@
+{
+  "version": "v0.3",
+  "status": "ART_STATIC_VISUAL_PASS_PENDING_TECH_AND_USER_GATE2",
+  "task_id": "U04-EXPRESSION-EDGE-REVISION-ART-20261017",
+  "art_work_started_utc": "2026-10-17T08:06:08Z",
+  "art_presign_utc": "2026-10-17T08:12:06Z",
+  "tech_presign_utc": "2026-10-17T08:12:57Z",
+  "stop_review_deadline_utc": "2026-10-17T08:48:11Z",
+  "imagegen_calls_this_revision": 0,
+  "imagegen_cumulative_before_and_after": "32/48",
+  "time_limit": "沿用原批次6小时总限；本轮45分钟停工复核，不另造审批",
+  "actual_attempt_ledger": [
+    {
+      "scope": "AJ sad",
+      "round": 1,
+      "method": "原候选右眉+竖发局部层",
+      "result": "眉改善但右斜前发灰带残留，拒绝放行",
+      "evidence": "review/sample_aj_sad_round1/"
+    },
+    {
+      "scope": "AJ sad",
+      "round": 2,
+      "method": "在已预签ROI内原候选补右斜前发，眉眼不重修",
+      "result": "Tech首样放行，face 2563px、ROI外0",
+      "evidence": "review/sample_aj_sad_round2/"
+    },
+    {
+      "scope": "AC four states",
+      "round": 1,
+      "method": "原候选四态分别重提前发/眉眼交叉",
+      "result": "解决主要水平皮色断带；错误摆front的诊断图误显残灰，故未立即放行",
+      "evidence": "ASSET_BUILD_REPORT.json plus pre-correction temp comparison not used as final evidence"
+    },
+    {
+      "scope": "AC four states",
+      "round": 2,
+      "method": "同一发丝左邻x22..31候选窄条接续",
+      "result": "真实source三层下前发连续；后续怀疑front旧皮色是对照坐标误配，已撤回，未执行front改动",
+      "evidence": "review/compare/ac_s0_happy_native4x.png and DIAGNOSIS_ADDENDUM.json"
+    },
+    {
+      "scope": "AD/XJ inherited groups",
+      "round": "按AJ成立新方法扩批",
+      "method": "先清共享front真旧眉，再逐态原候选局部重建face；各自先验ROI已登记",
+      "result": "五态各自source语义重组→native face零差，前后图可审",
+      "evidence": "SEMANTIC_SWITCH_CHECK.json"
+    }
+  ],
+  "front_source_diff_pixels": {
+    "AC_S0": 0,
+    "AJ_S2": 0,
+    "AD_S0": 505,
+    "XJ_S0": 1029
+  },
+  "state_checks": [
+    {
+      "stage": "AC_S0",
+      "state": "happy",
+      "face_changed_pixels": 4926,
+      "u00_changed_pixels": 1608,
+      "face_diff_bbox": [
+        22,
+        45,
+        186,
+        114
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_happy_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_happy_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_happy_native1x.png"
+    },
+    {
+      "stage": "AC_S0",
+      "state": "surprised",
+      "face_changed_pixels": 0,
+      "u00_changed_pixels": 0,
+      "face_diff_bbox": null,
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_surprised_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_surprised_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_surprised_native1x.png"
+    },
+    {
+      "stage": "AC_S0",
+      "state": "sad",
+      "face_changed_pixels": 4926,
+      "u00_changed_pixels": 1602,
+      "face_diff_bbox": [
+        22,
+        45,
+        186,
+        114
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_sad_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_sad_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_sad_native1x.png"
+    },
+    {
+      "stage": "AC_S0",
+      "state": "smile",
+      "face_changed_pixels": 4926,
+      "u00_changed_pixels": 1587,
+      "face_diff_bbox": [
+        22,
+        45,
+        186,
+        114
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_smile_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_smile_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_smile_native1x.png"
+    },
+    {
+      "stage": "AC_S0",
+      "state": "angry",
+      "face_changed_pixels": 5288,
+      "u00_changed_pixels": 1728,
+      "face_diff_bbox": [
+        22,
+        45,
+        186,
+        114
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ac_s0_angry_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_angry_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ac_s0_angry_native1x.png"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "happy",
+      "face_changed_pixels": 0,
+      "u00_changed_pixels": 0,
+      "face_diff_bbox": null,
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_happy_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_happy_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_happy_native1x.png"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "surprised",
+      "face_changed_pixels": 0,
+      "u00_changed_pixels": 0,
+      "face_diff_bbox": null,
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_surprised_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_surprised_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_surprised_native1x.png"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "sad",
+      "face_changed_pixels": 2563,
+      "u00_changed_pixels": 952,
+      "face_diff_bbox": [
+        108,
+        22,
+        204,
+        91
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_sad_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_sad_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_sad_native1x.png"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "smile",
+      "face_changed_pixels": 0,
+      "u00_changed_pixels": 0,
+      "face_diff_bbox": null,
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_smile_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_smile_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_smile_native1x.png"
+    },
+    {
+      "stage": "AJ_S2",
+      "state": "angry",
+      "face_changed_pixels": 0,
+      "u00_changed_pixels": 0,
+      "face_diff_bbox": null,
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/aj_s2_angry_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_angry_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/aj_s2_angry_native1x.png"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "happy",
+      "face_changed_pixels": 1901,
+      "u00_changed_pixels": 1123,
+      "face_diff_bbox": [
+        93,
+        10,
+        160,
+        52
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_happy_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_happy_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_happy_native1x.png"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "surprised",
+      "face_changed_pixels": 3263,
+      "u00_changed_pixels": 1805,
+      "face_diff_bbox": [
+        21,
+        7,
+        164,
+        62
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_surprised_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_surprised_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_surprised_native1x.png"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "sad",
+      "face_changed_pixels": 3362,
+      "u00_changed_pixels": 1888,
+      "face_diff_bbox": [
+        21,
+        7,
+        165,
+        62
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_sad_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_sad_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_sad_native1x.png"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "smile",
+      "face_changed_pixels": 1549,
+      "u00_changed_pixels": 963,
+      "face_diff_bbox": [
+        93,
+        10,
+        160,
+        52
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_smile_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_smile_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_smile_native1x.png"
+    },
+    {
+      "stage": "AD_S0",
+      "state": "angry",
+      "face_changed_pixels": 3976,
+      "u00_changed_pixels": 2087,
+      "face_diff_bbox": [
+        21,
+        7,
+        164,
+        62
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/ad_s0_angry_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_angry_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/ad_s0_angry_native1x.png"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "happy",
+      "face_changed_pixels": 2678,
+      "u00_changed_pixels": 1257,
+      "face_diff_bbox": [
+        28,
+        9,
+        119,
+        71
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_happy_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_happy_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_happy_native1x.png"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "surprised",
+      "face_changed_pixels": 2769,
+      "u00_changed_pixels": 1282,
+      "face_diff_bbox": [
+        28,
+        9,
+        119,
+        71
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_surprised_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_surprised_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_surprised_native1x.png"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "sad",
+      "face_changed_pixels": 2658,
+      "u00_changed_pixels": 1255,
+      "face_diff_bbox": [
+        28,
+        9,
+        119,
+        72
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_sad_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_sad_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_sad_native1x.png"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "smile",
+      "face_changed_pixels": 2695,
+      "u00_changed_pixels": 1261,
+      "face_diff_bbox": [
+        28,
+        9,
+        119,
+        71
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_smile_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_smile_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_smile_native1x.png"
+    },
+    {
+      "stage": "XJ_S0",
+      "state": "angry",
+      "face_changed_pixels": 2591,
+      "u00_changed_pixels": 1265,
+      "face_diff_bbox": [
+        28,
+        9,
+        119,
+        71
+      ],
+      "face_outside_pre_registered_roi_pixels": 0,
+      "u00": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/u00/xj_s0_angry_u00_1280x720.png",
+      "actual_scale_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_angry_u00_actual1x.png",
+      "native_1x_comparison": "deliverables/art/U04-EXPRESSION-REPAIR-ASSET-20261017/v0.3/review/compare/xj_s0_angry_native1x.png"
+    }
+  ],
+  "unchanged": "MT_S2和AT_S0全部引用旧hash；AC surprised U00/face/front不变；AJ除sad外face/U00不变；v0.1/v0.2全只读。",
+  "integrity": {
+    "manifest_reference_count": 247,
+    "manifest_hash_mismatch_count": 0,
+    "board_cell_count": 30,
+    "board_cell_pixel_mismatch_count": 0,
+    "semantic_state_count": 20,
+    "semantic_recompose_face_mismatch_count": 0,
+    "roi_native_face_outside_diff_count": 0,
+    "psd_count_new": 17,
+    "photoshop_gui_open": "NOT_TESTED",
+    "client_runtime": "NOT_TESTED",
+    "formal_qa": "NOT_TESTED",
+    "source_semantic_psd_count_new": 12,
+    "ad_native_composition_reference_psd_count_new": 5,
+    "ad_inherited_source_to_native_base_diff_pixels": 467,
+    "ad_inherited_source_to_native_base_diff_native_bbox_xyxy": [
+      310,
+      146,
+      336,
+      179
+    ],
+    "ad_native_reference_three_layer_offset_xy": [
+      232,
+      139
+    ],
+    "ad_native_reference_psd_tech_check": "PASS: five 768x768 PSDs, three visible layers; embedded clipped pixels equal current base/face/front, offsets (0,0)/(232,139)/(232,139), PSD page0 equals supplied preview RGB; PIL separate alpha composition differs by at most 1–2 RGB channels from PSD preview due rounding."
+  },
+  "review_paths": {
+    "nine_circled_native1x": "review/NINE_CIRCLED_STATES_NATIVE1X_BEFORE_AFTER.png",
+    "nine_circled_u00_actual1x": "review/NINE_CIRCLED_STATES_U00_ACTUAL1X_BEFORE_AFTER.png",
+    "board_30": "review/U04_30_STATE_NAMED_ACTUAL_SCALE.png",
+    "manifest": "ASSET_MANIFEST.json",
+    "layer_map": "LAYER_EXPORT_MAP.json"
+  },
+  "art_visual_decision": "九个原圈态及AD/XJ共享front连带态按正确三层对照，眉/发线条连续；AC疲惫眼袋和XJ镜圈保留；最终仍待Tech静态核/用户Gate2。",
+  "source_to_native_limit": "AD v0.2 carried 467 base pixels where resized 1024 source BASE_REPAIR full differs from delivered 768 native base; some are visible. v0.3 preserved both byte-for-byte and adds five 768 native three-layer reference PSDs. Do not claim the 1024 AD source PSD is pixel-exact to native base."
+}
