@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-17T09:33:46.025821+00:00",
+  "delivery_commit": "97acc226ab17ecb9d3290ed99c90df4736ee46ca",
+  "push": {
+    "result": "PASS",
+    "from": "71b267e3",
+    "to": "97acc226",
+    "remote": "origin",
+    "branch": "main"
+  },
+  "final_identity_sha256": "7ab1db82d3c1d081c37d72578f1446c2f26ea91ab7f46019b9133d45899f0899",
+  "index_verification": {
+    "frozen_entries_exact": 128,
+    "staged_files": 186,
+    "client_code_or_assets_staged": false,
+    "generated_caches_staged": false,
+    "credential_pattern_hits": 0,
+    "non_log_whitespace": "PASS",
+    "verbatim_log_exception": "6份Creator原始日志含CR/LF，git diff --check会报CR trailing whitespace；为保留冻结字节与真实证据未清洗。"
+  },
+  "gate": "QA_PLAN_V02_AND_ART_SAMPLES_V01_USER_REVIEW",
+  "release_ready": false,
+  "followup_scope": "本回执和Producer接受/推送尾注；不改变128冻结文件"
+}
