@@ -1,0 +1,40 @@
+{
+  "id": "MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN",
+  "title": "压缩代表样本Art首图前预签",
+  "type": "art",
+  "owner": "art",
+  "parent": "MINIGAME-ART-OPT-NEXT-20261017",
+  "objective": "对已批准六件方案冻结实际源、来源许可/原PSD映射、视觉锚点、同尺度参数及工具/预算批次，未完成同批Tech签名前零产图。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/FINAL_IDENTITY.json"
+  ],
+  "deliverables": [
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/BATCH_PLAN.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ART_PRESIGN.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "同已批六件源SHA/尺寸/许可及原PSD身份，不消费他会话新图；方案本身不被重写。",
+    "确定同背景同视窗同尺度静态参考参数与技术参数/ICC/全RGBA exact，实际运行与静态边界清楚。",
+    "批次预案供Tech同SHA签名，最多18候选6参考150人分钟0付费/生成调用；本任务不制作图片。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；Owner读本角色ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS及适用规范；不得自行分派/Git。",
+    "只写自己交付与允许Task，Producer跨职责授权维护相关审批/Task及六源本批marker；不改冻结146项或他任务内容。",
+    "文档/Review/QA使用本轮已许可gpt-6.1-sol low；实际图片资源制作另由gpt-6-sol high执行，编码类如需另派gpt-6-luna low。",
+    "未真实开始产出保持READY，有证据才IN_PROGRESS；中文交付、未知明确NOT_TESTED，不新增Gate或伪造批准。",
+    "2026-10-17 本轮已开始源文件只读哈希、尺寸及PSD映射核对。",
+    "Art五件已产出并交REVIEW；BATCH_PLAN SHA256 ebc39edc37d26ecfb9847b22ca2a8cde454b04deac7a93ec172b4ef79e01ae09；本任务0产图。",
+    "最终源码公式自检：U01 fit centerY=+12 CSS；最终BATCH_PLAN SHA256 8318b936bb6af3f54555cc3f5ea229150e55557987b3551ee4aa29bce083e5ee，替代此前预报SHA。JSON已逐件解析；jsonschema库不可用，按固定schema字段/枚举手核。",
+    "Tech参数对齐-metadata icc并补U04/U05源码公式，最终SHA a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23；此前预报SHA均失效。"
+  ]
+}

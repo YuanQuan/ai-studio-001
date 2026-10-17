@@ -1,0 +1,22 @@
+# coding: utf-8
+from pathlib import Path
+from PIL import Image
+import json,hashlib,datetime,shutil,re
+p=Path(__file__).parent;setup=json.loads((p/'IMPORT_PROBE_SETUP.json').read_text());sha=lambda f:hashlib.sha256(f.read_bytes()).hexdigest();baseline=Path('/private/tmp/minigame-art-opt-integration-final-v0.8-portable');records=[];builds=[]
+for c in setup['copies']:
+ project=Path(c['project'])
+ for platform in ['web-mobile','wechatgame','bytedance-mini-game']:
+  out=project/'build-output'/(project.name+'-'+platform);log=project/'evidence'/('creator-'+platform+'.log');text=log.read_bytes().decode('utf8','replace');assert 'Finished in' in text
+  logfile=p/'import-build-evidence'/(c['kind']+'-'+platform+'.log');logfile.parent.mkdir(exist_ok=True);shutil.copyfile(log,logfile)
+  build={'kind':c['kind'],'platform':platform,'exitCode':36,'finishedLines':[line.strip() for line in text.splitlines() if 'Finished in' in line],'configSHA256':sha(project/'build-configs'/(platform+'.json')),'log':str(logfile),'logSHA256':sha(log),'physicalOutputBytes':sum(f.stat().st_size for f in out.rglob('*') if f.is_file()),'builderErrorLines':[line.strip() for line in text.splitlines() if 'Error:' in line]};builds.append(build)
+  for a in c['changes']:
+   source=project/a['relative'];md=json.loads(Path(str(source)+'.meta').read_text());assert md['importer']=='image' and md['uuid']==a['imageUuid'] and md['subMetas']['f9941']['uuid']==a['frameUuid'];lib=project/'library'/a['imageUuid'][:2]/(a['frameUuid']+'.json');geometry=json.loads(lib.read_text())['content'];baseframe=baseline/'library'/a['imageUuid'][:2]/(a['frameUuid']+'.json');expected=json.loads(baseframe.read_text())['content'];keys=['rect','offset','originalSize','rotated','capInsets'];assert all(geometry[k]==expected[k] for k in keys)
+   found=[f for f in out.rglob(a['imageUuid']+'.*') if '/native/' in str(f)];assert len(found)==1;native=found[0];raw=native.read_bytes();magic='PNG' if raw.startswith(b'\x89PNG\r\n\x1a\n') else 'WEBP' if raw[:4]==b'RIFF' and raw[8:12]==b'WEBP' else 'UNKNOWN';assert sha(native)==a['candidateSha256'];assert magic==('PNG' if c['kind']=='png_lossless' else 'WEBP')
+   im=Image.open(native);im.load();sourceim=Image.open(source);sourceim.load();assert im.convert('RGBA').tobytes()==sourceim.convert('RGBA').tobytes()
+   bundle=a['relative'].split('/')[2];cfg=out/('assets' if platform=='web-mobile' else 'subpackages')/bundle/'config.json';config=json.loads(cfg.read_text());stem='/'.join(a['relative'].split('/')[3:]).rsplit('.',1)[0];assert any(v[0]==stem+'/spriteFrame' and config['types'][v[1]]=='cc.SpriteFrame' for v in config['paths'].values())
+   records.append({'kind':c['kind'],'platform':platform,'assetId':a['id'],'inputPath':str(source),'inputSHA256':sha(source),'imageUUID':md['uuid'],'frameUUID':a['frameUuid'],'geometryKeysEqualImportedBaseline':keys,'actualImportedGeometry':{k:geometry[k] for k in keys},'nativePath':str(native),'nativeBytes':len(raw),'nativeMagic':magic,'nativeSHA256':sha(native),'candidateBytesPreserved':True,'nativeDecodedRGBAEqualsCandidate':True,'SpriteFrameConfigPathPresent':True,'imageAssetLibrary':json.loads((project/'library'/a['imageUuid'][:2]/(a['imageUuid']+'.json')).read_text())})
+originals=[]
+for a in setup['copies'][0]['changes']:
+ f=Path(setup['copies'][0]['sourceStage'])/a['originalRelative'];originals.append({'path':str(f),'sha256':sha(f)})
+r={'task_id':'MINIGAME-ART-OPT-NEXT-20261017-TECH','scope':'仅已授权3件PNG/WebP私有副本Importer/native字节技术诊断，非正式接入/QA/样本前置门槛','startedAt':setup['startedAt'],'finishedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'copies':setup['copies'],'builds':builds,'importAndNativeChecks':records,'unchangedOriginalStageSourceChecks':originals,'result':'PASS_WITH_LIMITS','limitations':['桌面Creator实际Importer及三平台构建/native保存成功，不代表小游戏基础库最低版本、DevTools/上传、真机/GPU/实际运行采样通过。','原始导入SpriteFrame与现行baseline一样为裁片originalSize/零offset；不能因此宣称原画布offset已持久保留，正式已有派生reset路线不变。','PNG-TT启动stdout曾见用户全局Editor layout.json Unexpected end of JSON input；构建仍Finished/36，未修改或修复用户偏好文件。','WebP-WX日志有build-script子进程SIGTERM debug记录，仍完整Finished/36且三native字节逐项吻合；不宣称工具零噪声。','本次未启动HTTP/IAB或正式QA，不修改正式工程/原stage/final；新图仍待具体Gate2。','quality95支线未解锁：即使Creator导入/打包成功，目标平台实际透明管线仍未证实。']}
+(p/'IMPORT_DIAGNOSTIC.json').write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print('PASS',len(builds),'builds',len(records),'native checks')

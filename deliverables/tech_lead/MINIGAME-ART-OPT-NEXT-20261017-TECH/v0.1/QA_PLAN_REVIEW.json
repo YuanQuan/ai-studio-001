@@ -1,0 +1,28 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "reviewer": "tech_lead",
+  "decision": "CHANGES_REQUESTED",
+  "findings": [
+    {
+      "severity": "MAJOR",
+      "message": "F05“场景边界无空白”易把已批U01 contain留白判缺陷。须区分U00 cover拖到两端无非预期露底/接缝，与U01完整画布contain保留获批letterbox；明确各页相机/编辑层操作及面板不抢输入，不能要求消除已批留白。"
+    },
+    {
+      "severity": "MAJOR",
+      "message": "F04/F12称“已有隔离受控入口”，但计划/环境未列实际脚本路径、命令、受控输入、预期输出及目标源码绑定方式。请补可读当前入口清单，说明用冻结v08执行副本而非可变workspace、如何记录script/build SHA、哪些是TS/实际Creator compiled/浏览器模拟；无可用入口则具体单项BLOCKED交Master，不自行注入新测试hook或把mock当实际平台。性能F14同样列已有可用采样入口/原始序列来源，缺DrawCall/GPU工具保持NT，不杜撰可采。"
+    },
+    {
+      "severity": "INFO",
+      "message": "四文档已精确绑定QA_PLAN_REVIEW_IDENTITY。18例F01-F15/R01-R03范围合理，当前冻v08不消费未来压缩候选，历史Owner证据不转QA PASS；计划用户批准后才执行，当前0执行。FUNCTIONAL本地Web与RELEASE平台/DPR/真机分离正确，RELEASE未知不变成功能隐形阻塞。"
+    },
+    {
+      "severity": "INFO",
+      "message": "DEMO001待批55FPS/p95/5秒未套用，20循环五项引用归零/无持续增长有既定目标。其余性能只测值无已批预算不判达标；缺性能结论不得冒充性能PASS，但可分开给已完成FUNCTIONAL子项结果，勿因未批数值目标自动否定所有功能。用户可在本次具体计划同批批测量口径，不加Gate。"
+    },
+    {
+      "severity": "MINOR",
+      "message": "F03实际master browser-integration-v05/matrix.json存在，非文件缺失；建议写完整现存路径及1280x720、844x390两横屏精确值，免执行时依赖模糊“旧matrix”。TEST_PLAN历史RUNTIME_VERIFICATION指同目录应明确为Master目录，QA目录无该文件。"
+    }
+  ],
+  "next_action": "Master协调QAOwner只修上述具体可执行入口与期望表述，保存准确新版本身份后Tech轻复核，用户批具体计划前不执行正式QA。"
+}

@@ -1,0 +1,617 @@
+{
+  "batch_id": "COMPRESSION-SIX-20261017-v01",
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN",
+  "gate1": "USER_APPROVED；精确四文件见Root USER_AUTHORIZATION，旧文字不倒写",
+  "authority": "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+  "approved_plan_identity": {
+    "ART_BRIEF.md": "37611b86c84ef624b3b72374865857654077bd5f679f67bdd86798f29dac5d84",
+    "PRODUCTION_PLAN.md": "ab306ec1c2cb290cd4f40ee11c80650ed50429004e2db7c34da5070b271042df",
+    "ASSET_MANIFEST.md": "7850497ac8c53655ca61b26076bbeaa294361bcec1fdf438da23fdc6d0780261",
+    "DELIVERABLE.json": "123ae1caacf26c69e3da36492407e1a8cc1d425640225d7b5f82e65f4d2c4feb"
+  },
+  "old_final_identity_sha256": "405f33048277a7d4cd42a851fef836ca908d1a0f99d825e9a9878710d3385843",
+  "assets": [
+    {
+      "id": "tex_u04_at_s3_base",
+      "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+      "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+      "bytes": 996683,
+      "dimensions": [
+        768,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        5,
+        768,
+        1024
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "113e2f0d9097a9eaa96196235129e27a37b6acc547ea7137530d341efc4224e1",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s3_dialogue.psd",
+      "psd_sha256": "7c9713d86e28efc7de0a125a7940f70c717156186027ac4547eb014c1d3daf0f",
+      "layer_mapping": "BASE（原登记kind=base；18语义层，仅PNG编码不重导）",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "tex_u04_at_s3_base\n- 来源PNG：`deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png`；SHA-256 `b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210`；996,683字节；768×1024，PNG。\n- 原客户端路径：`apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png`；原meta UUID `c0d35672-567b-4553-ba31-cdec8534459a`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png`；原源SHA `b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210`。\n- 审批：当前原资源已获 `tasks/U04-DIALOGUE-LAYERED-ASSET-001/ARTIFACT_APPROVAL.json` v0.1 USER_APPROVED，覆盖本项具体PNG与统一bundle；原inventory的SAME_SHA_SOURCE_APPROVAL_NOT_BOUND仅为历史索引未绑定状态，详见末节精确SHA与日志。\n- 权利：项目既有明确获批人物源复用，不添加外部参考；具体bundle原批准与实际SHA见末节。原始生成工具/商业许可的完整逐件凭证本轮未重新核验，不虚构。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          768,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          3,
+          768,
+          1024
+        ],
+        "offset_if_applicable": [
+          0.0,
+          -1.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/matrix-U04-720x1280.jpg",
+        "sha256": "4bc6c5c9318f75e013d8dbee7fea0a1df6687f4fecbda067845a5ef935d35091",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "U04 AT S3基准base；原768×1024，无face/front替代",
+          "formula": "沿冻结UnitSampleGallery.applyU04Portrait与layoutU04原sourceRect、portrait.layout.scale、portraitMask scale及cropWidth/500高度；实际已显示状态与精确投影矩形尚未从截图证明",
+          "status": "NOT_TESTED；只可先全RGBA编码及1:1静态，实际尺度结论/该项完整效果提交前需补齐状态与投影，不得猜测",
+          "supplemental_source_facts": {
+            "AT_S3_base_rect": [
+              155,
+              0,
+              923,
+              1024
+            ],
+            "base_node_center": [
+              27,
+              256
+            ],
+            "layout_scale": 0.73,
+            "waist": 0.69,
+            "crop_export_width": 768,
+            "crop_height": 500,
+            "unscaled_mask_width": 560.64,
+            "formula": "applyU04Geometry: cropWidth=768/exportedScale*.73; waistBottom=706.56; portraitY=-250-(768-706.56)*.73=-294.8512; layoutDialogue applies portraitScale and mask. Actual handoff_normalized/state/portrait-landscape NOT_TESTED."
+          }
+        }
+      }
+    },
+    {
+      "id": "tex_sakura_rr_sky_r",
+      "source": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_sky_r.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+      "bytes": 1737963,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "fd509df050363aca9dba3d596a71b536900ea93657b69e40142e4a3658ec0d57",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/scene_sakura_reuse_master.psd",
+      "psd_sha256": "f4d01b7c7048c1ad3f5aeeb58af6801e99992728dcb60bfd3c7ca5f236e3252e",
+      "layer_mapping": "sky_r / source/psd_full_canvas_layers/02_sky_r.png",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "tex_sakura_rr_sky_r\n- 来源PNG：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_sky_r.png`；SHA-256 `47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d`；1,737,963字节；1536×1024，PNG。\n- 原客户端路径：`apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png`；原meta UUID `54e670e6-3690-4dc9-bd87-ccc1c5651053`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_sky_r.png`；原源SHA `47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d`。\n- 审批：源清单 `EXACT_USER_APPROVED`；记录 `tasks/SCENE-SAKURA-REDRAW-REUSE-20261013/ARTIFACT_APPROVAL.json`。\n- 权利：项目已有USER_APPROVED资源复用；不添加外部字体/图片。无新增外部参考；原始生成工具/商业许可的完整逐件凭证本轮未核，不虚构。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          1536,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "offset_if_applicable": [
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/matrix-U01-720x1280.jpg",
+        "sha256": "72a60a48d9d9ec3679159f93cc21e971346adae62317a82f5661604619b8d2de",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "U01编辑器reset camera初始fit，3072×1024坐标；无拖动/缩放",
+          "instance": "右天空left=1536 top=0 width=1536 height=1024",
+          "formula": "DPR1，无安全区/capsule时fit=min((viewportWidth-40)/3072,(viewportHeight-168)/1024)，完整画布居中，centerY=+12 CSS像素；天空右半位置沿USER_LAYOUT_PROFILE实际instance；存在profile差异先停止",
+          "display_dimensions_720": [
+            340,
+            226.66666666666666
+          ],
+          "display_dimensions_320": [
+            140,
+            93.33333333333333
+          ],
+          "meaning": "源码推导静态投影；非本轮运行实测"
+        }
+      }
+    },
+    {
+      "id": "tex_u03_shop_05_body",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png",
+      "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+      "bytes": 851634,
+      "dimensions": [
+        773,
+        741
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        2,
+        2,
+        771,
+        739
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "f3721cb03ffaa093defd95b0ed2bc345d7bccff56d85cfdb150a2026a418fbde",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/shop_05.psd",
+      "psd_sha256": "77185eec18ff3afe3f3939238085d4b9b40d638f2b029505bfddd17b8d1cda07",
+      "layer_mapping": "tex_u03_shop_05_body 帧2",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "tex_u03_shop_05_body\n- 来源PNG：`deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png`；SHA-256 `520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1`；851,634字节；773×741，PNG。\n- 原客户端路径：`apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png`；原meta UUID `39974e01-9f8e-4eae-8d7b-768ff8f6b076`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_05_body_full_redraw_v01.png`；原源SHA `68eb92873edb01e4f76d472fe109016fa2f9c1747f3239ed6bae5c2332c2cd5f`。\n- 审批：本批v0.2具体76件Gate2批准，见上述批准日志；继承其PSD与图层映射，当前压缩候选不继承批准。\n- 权利：项目已有USER_APPROVED资源复用；不添加外部字体/图片。无新增外部参考；原始生成工具/商业许可的完整逐件凭证本轮未核，不虚构。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          130,
+          164,
+          903,
+          905
+        ],
+        "offset_if_applicable": [
+          4.5,
+          -22.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/shop-5-720.jpg",
+        "sha256": "f0b6a8bcd7b977ce3a9b6e6cbd173760bfa3683497e475cf205a0f7ceabe6f0d",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "U03第05灯笼店body/sign同1024×1024原画布；根scale=min(stageWidth,stageHeight)/1024",
+          "formula": "DPR1无安全区/capsule、retry关闭：stageTop=H/2-72，stageBottom=-H/2+130，stageHeight=H-202；stageWidth=min(W-24,H-202,620)，centerY=29；用original_geometry.crop_rect_if_applicable在原1024画布位置映射，不把裁后PNG拉满1024",
+          "scale_720": 0.60546875,
+          "scale_320": 0.2890625,
+          "meaning": "源码推导静态投影；Prefab子层原位置/裁框原样继承，非运行实测"
+        }
+      }
+    },
+    {
+      "id": "tex_u03_shop_05_sign",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_sign.png",
+      "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+      "bytes": 100820,
+      "dimensions": [
+        375,
+        140
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        2,
+        2,
+        373,
+        138
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "50f52218461db3d164ba97e66855cd2880ff030529b46faf85b9fb27f6b54925",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/shop_05.psd",
+      "psd_sha256": "77185eec18ff3afe3f3939238085d4b9b40d638f2b029505bfddd17b8d1cda07",
+      "layer_mapping": "tex_u03_shop_05_sign 帧1",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "tex_u03_shop_05_sign\n- 来源PNG：`deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_sign.png`；SHA-256 `6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd`；100,820字节；375×140，PNG。\n- 原客户端路径：`apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png`；原meta UUID `19b9cfd6-4cb1-4c8e-aaf8-56af722c154f`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/art/U03-SHOP-FULL-REDRAW-20261009/v0.1/exports/tex_u03_shop_05_sign_full_redraw_v01.png`；原源SHA `e905a19688013636f55ff5904aa7940e3db685eae4077daa746be423f6e29949`。\n- 审批：本批v0.2具体76件Gate2批准，见上述批准日志；继承其PSD与图层映射，当前压缩候选不继承批准。\n- 权利：项目已有USER_APPROVED资源复用；不添加外部字体/图片。无新增外部参考；原始生成工具/商业许可的完整逐件凭证本轮未核，不虚构。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          288,
+          243,
+          663,
+          383
+        ],
+        "offset_if_applicable": [
+          -36.5,
+          199.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/shop-5-720.jpg",
+        "sha256": "f0b6a8bcd7b977ce3a9b6e6cbd173760bfa3683497e475cf205a0f7ceabe6f0d",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "U03第05灯笼店body/sign同1024×1024原画布；根scale=min(stageWidth,stageHeight)/1024",
+          "formula": "DPR1无安全区/capsule、retry关闭：stageTop=H/2-72，stageBottom=-H/2+130，stageHeight=H-202；stageWidth=min(W-24,H-202,620)，centerY=29；用original_geometry.crop_rect_if_applicable在原1024画布位置映射，不把裁后PNG拉满1024",
+          "scale_720": 0.60546875,
+          "scale_320": 0.2890625,
+          "meaning": "源码推导静态投影；Prefab子层原位置/裁框原样继承，非运行实测"
+        }
+      }
+    },
+    {
+      "id": "UG_GHOST_01_HAPPY_00",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_00.png",
+      "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+      "bytes": 112883,
+      "dimensions": [
+        327,
+        367
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        2,
+        2,
+        325,
+        365
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "cc08d82690723c09b120b7e326f20ee18a0af7808c4dc769942567c622744b40",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/tourist_happy.psd",
+      "psd_sha256": "6cbdf5746e4ca9711a5597e0eb01ef527e4a13109503958ee1487044b2d1bbbf",
+      "layer_mapping": "UG_GHOST_01_HAPPY_00 帧8",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "UG_GHOST_01_HAPPY_00\n- 来源PNG：`deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_00.png`；SHA-256 `1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126`；112,883字节；327×367，PNG。\n- 原客户端路径：`apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png`；原meta UUID `6c32aaeb-f325-4b82-98da-4666357899fe`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/vfx/U02-TOURIST-VFX-FRAMES-001/v0.2/frames/ug_ghost_01_happy_00.png`；原源SHA `1a2488c43988a860b70c3ae97bc00d0b04afcb9439e72697c0e4a3512787c1a6`。\n- 审批：本批v0.2具体76件Gate2批准，见上述批准日志；继承其PSD与图层映射，当前压缩候选不继承批准。\n- 权利：项目已有USER_APPROVED资源复用；不添加外部字体/图片。无新增外部参考；原始生成工具/商业许可的完整逐件凭证本轮未核，不虚构。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          512,
+          512
+        ],
+        "crop_rect_if_applicable": [
+          90,
+          75,
+          417,
+          442
+        ],
+        "offset_if_applicable": [
+          -2.5,
+          -2.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/tourist-happy.jpg",
+        "sha256": "d5d2d8f0f81ccd962928a88ad77b350f3da81627925942c27c1e20019e19f4e2",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "U02 happy第0帧、右朝向、无装饰；原512画布与foot元数据",
+          "formula": "layoutTourist按冻结源码DPR1完整window safe inset12/8，stageHeight由nav/tray计算，mirrorScale=min(.9,max(.4,(stageHeightUI-60)/356))；512画布BodySprite位置=(256-foot.x,foot.y-256)，mirrorY=-192*scale；裁后327×367按原cropRect恢复512画布，禁止拉伸",
+          "fixed_state": "happy frame00；邻接动画/时间NOT_TESTED",
+          "meaning": "同一源码公式静态投影；本轮未执行函数/运行截取，不填实测尺寸"
+        }
+      }
+    },
+    {
+      "id": "U05_ART_FONT",
+      "source": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png",
+      "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+      "bytes": 474372,
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "mode": "RGBA",
+      "alpha_bbox": [
+        2,
+        2,
+        1017,
+        874
+      ],
+      "icc_bytes": 0,
+      "decoded_rgba_sha256": "31c6d8a06155130f42b13b13194589897a6c7d37e2c6ef87cb121290cb7bca34",
+      "source_recheck": "PASS",
+      "psd": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+      "psd_sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+      "layer_mapping": "字体图集独立保留；LAYER_MANIFEST.font_atlas=v0.1 byte-identical，非伪造PSD字体层",
+      "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS",
+      "original_approval_and_rights": "U05_ART_FONT\n- 来源PNG：`deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png`；SHA-256 `b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41`；474,372字节；1024×1024，PNG。\n- 原客户端路径：`apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png`；原meta UUID `feffffab-7e69-451d-a595-9274950e80ab`。此为原资源UUID，当前接入结果由Client登记，本方案不冒充新导入。\n- 原历史源：`deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png`；原源SHA `b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41`。\n- 审批：当前原字体子集已获 `tasks/U05-B-COMPONENT-ASSETS-20261014/ARTIFACT_APPROVAL_FONT_SUBSET_v0.1.json` v0.1-font-retained USER_APPROVED；准确范围为 `deliverables/producer/U05-B-LANDING-FLOW-20261014/v0.1/APPROVED_FONT_SUBSET.json`，v0.2 PNG与其同SHA。原inventory未绑定仅为历史索引状态，详见末节。\n- 权利：ZCOOL KuaiLe原TTF与完整SIL OFL1.1实际证据位于 `deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/font/`，两文件SHA与已批subset一致；见末节来源、哈希及分发条件。无新增字体或外部参考，原批准不等于新压缩候选获批。\n",
+      "runtime_result": "NOT_TESTED",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          0,
+          1019,
+          876
+        ],
+        "offset_if_applicable": [
+          -2.5,
+          74.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png"
+      },
+      "frozen_screenshot": {
+        "path": "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/browser-integration-v05/matrix-U05-720x1280.jpg",
+        "sha256": "b098f567406264fbe3af6dd0ca4d469f15b1777676924ccc8c4c6f89be7b9e58",
+        "size": [
+          720,
+          1280
+        ],
+        "use": "冻结既有运行背景/视觉定位参考；JPEG不是零像素参考；不以候选叠图冒充运行"
+      },
+      "comparison": {
+        "native": "全图原尺寸1:1，不裁切；全RGBA包含alpha0隐藏RGB",
+        "edge_backgrounds": [
+          "#D3D3D3",
+          "#202020"
+        ],
+        "viewport": [
+          [
+            720,
+            1280
+          ],
+          [
+            320,
+            568
+          ]
+        ],
+        "dpr": 1,
+        "sample": "straight-alpha，线性双线性，像素中心相位0.5；源/候选必须相同；不预乘清洗",
+        "crop": "整个PNG与alpha bbox独立核，禁止重裁",
+        "runtime_measured_projection": "NOT_TESTED",
+        "source_projection": {
+          "space": "独立1024图集；font_metrics完整glyph x/y/width/height，size34 lineHeight44 base36固定",
+          "formula": "1:1逐glyph坐标及整图；目标U05文本实际字号取冻结milk_tea_lab.ts与axes，不把整图缩略当实际中文效果",
+          "status": "NOT_TESTED；完整目标文本投影需补齐label/axes，停止该项实际尺度PASS，不阻断全RGBA只读诊断",
+          "supplemental_source_facts": {
+            "source": "milk_tea_lab.ts text()378-395, renderSafeHudButton()1144-1160",
+            "metrics": {
+              "atlas": [
+                1024,
+                1024
+              ],
+              "size": 34,
+              "lineHeight": 44,
+              "base": 36
+            },
+            "formula": "axesX=contentWidth/visible.width*layoutFit; axesY likewise. layoutAccessibleText(value,w,h,size,axesX,axesY,minCss16or14); BitmapText.bindLabel preserves glyph coordinates. timerPrimary size=max(24/axesX,24/axesY), lineHeight=max(32/axesX,32/axesY). Exact label/text/axes NOT_TESTED; atlas has no single game projection."
+          }
+        }
+      }
+    }
+  ],
+  "source_code_identity": {
+    "apps/client/assets/UnitSampleGallery.ts": "e403e97715f2f4fd7dfba60482fd39a62fac9a9017c7050b70803dac100214b3",
+    "apps/client/assets/labs/u01/sakura_layout_editor.ts": "ee3bf82a3a0426f72881f496c35c3bddaf8f7d9a0c0fac2d62da96c9480f8042",
+    "apps/client/assets/labs/u01/sakura_v03_layout.ts": "909978eaa52cd53461ebd9edf16efb0850b6d78d7cd714d3c018bb02f3021e82",
+    "apps/client/assets/labs/u01/sakura_user_layout.ts": "eca586da4dab87e0683c04b5ca18bebdeeab490085ab366343f7cc02cb417579",
+    "apps/client/assets/labs/u02/tourist_view.ts": "92ebfb29d19b28fda28f541341ab6b863ad323e9c02d4e28d454c03f88956318",
+    "apps/client/assets/framework/viewport/viewport_mapper.ts": "12809ad3621a741917bde482758775ce3c589fba29df1258f4caae74b4ac898c",
+    "apps/client/assets/units/shops/lantern/prefabs/pf_shop_05.prefab": "7f684187935a88fe4ceeafa502343c0bcccf1113a232d0763535e46856bf4712",
+    "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/font_metrics.json": "f38f6c14909c6f9781d35173e90fd0a2b60824d980e33f53529c77debee322bc",
+    "apps/client/assets/units/dialogue/u04_layer_export_map.json": "0f3f1c2fa957c5bcd2c750b961ed43b750a1ee2a38f1552301d9f4ef212152ea",
+    "apps/client/assets/labs/u05/milk_tea_lab.ts": "9032ccdff921a569acb19a55de154267dede14beacafad4dcc095021fec91d6e"
+  },
+  "font_rights_recheck": [
+    {
+      "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/font/ZCOOLKuaiLe-Regular.ttf",
+      "sha256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d",
+      "bytes": 1514968
+    },
+    {
+      "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/font/OFL.txt",
+      "sha256": "538078469839b4a2e7ad22bef4ebe41681a4e53749bb2a072144024f1d6d703d",
+      "bytes": 4398
+    }
+  ],
+  "rights_conclusion": "沿用六件当前获批项目源；未新增外部参考/字体。字体SIL OFL1.1源TTF及完整许可重算一致，正式分发许可是否随包仍NOT_TESTED；其他源原生成工具完整商业凭证未重新取证，当前项目批准复用不冒充独立法律认证。",
+  "pipeline": {
+    "PNG": "Pillow11.3.0 convert RGBA8 save PNG optimize=True compress_level=9；无量化/无ICC转换",
+    "WebP": "cwebp1.5.0 -lossless -exact -m 6 -q 100 -metadata icc input.png -o output.webp；dwebp1.5.0解码并用Pillow11.3.0读RGBA8；必须保留隐藏RGB",
+    "ICC": "六源均无ICC/gAMA/sRGB chunk；固定按sRGB解释，不注入profile、不做色彩转换；元数据与decodedRGBA分别记录",
+    "lossy95": "LOCKED_NOT_TESTED：目标平台/Cocos透明管线支持未证，不执行",
+    "technical_source": "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/TECH_DESIGN.md",
+    "comparison": "原尺寸全RGBA最大差0、变化像素0（含alpha0）；任一差异停止无损支线。线性采样/同背景静态对照不是运行回归。"
+  },
+  "budget": {
+    "candidates_max": 18,
+    "references_max": 6,
+    "current_planned_candidates": 12,
+    "generated_calls_max": 0,
+    "external_paid_cost_max": 0,
+    "person_minutes_max": 150,
+    "per_issue_revisions_max": 2,
+    "enforcement": "人工账本约束；无自动拦截器；耗时/潜在失败计入上限；未知费用不虚填"
+  },
+  "sequence": [
+    "等待Art与Tech对本文件同SHA预签后才首图",
+    "天空、招牌、游客首批PNG/WebP lossless；分别逐项记录收益/零差/静态锚点，失败支线停，不扩全库",
+    "代表成功后Art/Tech同批扩余三确认；人物/字体实际投影缺项先补事实，无法补则该静态尺度项保持NOT_TESTED并报Master，不能交成完整效果PASS",
+    "具体样本与同尺度对照版本清单直接交用户Gate2；不增加同方案用户Gate、不正式接入"
+  ],
+  "stop_conditions": [
+    "源/权利/尺寸/UV/工具变化需停并复签受影响范围",
+    "全RGBA任何差异、色带/字形/脸/透明边漂移、无收益或不兼容停止对应支线",
+    "无准确投影事实时不得声称实际尺度视觉PASS；保留源1:1诊断并向Master报告待补",
+    "达到任一预算上限停止；不重画、不降采样、不GPU压缩、不新增依赖、不改PSD/meta/正式工程"
+  ],
+  "execution_ledger_required": [
+    "输入输出SHA/路径/字节",
+    "工具实际版本/完整参数/ICC",
+    "每次开始结束时间/人分钟/剩余额度",
+    "源全RGBA/alpha/隐藏RGB差异",
+    "源/候选同公式投影、背景、视窗、phase",
+    "逐锚点结论与限制/失败原因"
+  ],
+  "image_outputs_this_task": 0,
+  "runtime": "NOT_TESTED"
+}

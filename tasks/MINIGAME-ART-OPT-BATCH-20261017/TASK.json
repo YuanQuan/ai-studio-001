@@ -29,7 +29,7 @@
     "当前准确新Artifact送用户审核或真实阻塞，Producer连续执行/复盘/看板一致，不冒称整体DONE。"
   ],
   "dependencies": [],
-  "status": "USER_REVIEW",
+  "status": "QA",
   "approval": "REVIEW",
   "notes": [
     "Master唯一分派；专业Owner不得自行分派或Git，Master按用户持续授权统一提交推送，保护既有未提交工作。",
@@ -38,6 +38,7 @@
     "本轮当前已实际产USER_AUTHORIZATION/BASELINE_CHECK/MASTER_SUMMARY。",
     "Master统一Git提交推送；新切片不改源，Client只改已派TS等，不误将他项未提交内容带入。",
     "当前范围按SAME_PHASE_INTEGRATION_DECISION执行：用户已批76切片后，资源接入与viewport同Client实现阶段聚合Review，无额外UI子阶段审批。",
-    "2026-10-17T16:50:22+08:00 同阶段聚合精确实现USER_REVIEW，FINAL_IDENTITY 405f33048277a7d4cd42a851fef836ca908d1a0f99d825e9a9878710d3385843；历史源码快照由current_sources显式覆盖，不追加中间用户门禁。未整体DONE。"
+    "2026-10-17T16:50:22+08:00 同阶段聚合精确实现USER_REVIEW，FINAL_IDENTITY 405f33048277a7d4cd42a851fef836ca908d1a0f99d825e9a9878710d3385843；历史源码快照由current_sources显式覆盖，不追加中间用户门禁。未整体DONE。",
+    "2026-10-17T16:57:48+08:00 用户两项明确批准身份已核，父任务进入QA，尚未整体DONE。"
   ]
 }

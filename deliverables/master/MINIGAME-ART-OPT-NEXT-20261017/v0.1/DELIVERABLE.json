@@ -1,0 +1,41 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017",
+  "owner": "master",
+  "summary": "批准登记后完成正式QA计划及无损代表样本，已到下一具体用户门禁；未执行正式QA、不替换正式资源。",
+  "artifacts": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/MASTER_SUMMARY.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "两项用户批准身份准确登记，上游冻结不覆盖。",
+      "result": "PASS",
+      "evidence": "USER_AUTHORIZATION.json；Producer approved_snapshots及两项USER_APPROVED登记；原146身份未改"
+    },
+    {
+      "criterion": "QA计划及压缩样本真实产物/评审/限制可复核，不将旧Owner结果视作QA。",
+      "result": "PASS",
+      "evidence": "Art v0.1 FILE_IDENTITY/PIXEL_VERIFICATION/具体样本包；Tech预签/IMPORT_DIAGNOSTIC/QA v0.2 Review；MASTER_SUMMARY.md"
+    },
+    {
+      "criterion": "Producer审批/连续执行/看板/复盘一致，下一具体门禁或真实阻塞准确呈交。",
+      "result": "PASS",
+      "evidence": "本包FINAL_IDENTITY与USER_REVIEW_PACKET；Producer最终检查/六源/continuity/WORK_RETROSPECTIVE与Master内部接受"
+    }
+  ],
+  "risks": [
+    "新PNG六文件省6.2214%、WebP省32.7562%只是六件文件收益，未全库扩批或GPU证明。",
+    "正式总包仍约36.9MiB，首三隔离WebP诊断也未达20MiB参考。",
+    "人物/字体实际尺度、完整组合/运行、其余三Importer、真实平台/设备/GPU等NOT_TESTED。",
+    "QA正式计划及样本具体Gate2待用户，当前没有QA TEST_REPORT。"
+  ],
+  "assumptions": [
+    "当前APPROVED仅内部周期交付接受，用户门禁与专业效果判断没有替代。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

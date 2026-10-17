@@ -1,0 +1,823 @@
+{
+  "task": "MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES",
+  "batch_plan_sha256": "a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23",
+  "gate1": "USER_APPROVED",
+  "gate2": "PENDING_USER_REVIEW",
+  "assets": [
+    {
+      "id": "tex_sakura_rr_sky_r",
+      "source": {
+        "path": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_sky_r.png",
+        "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+        "bytes": 1737963,
+        "dimensions": [
+          1536,
+          1024
+        ],
+        "decoded_rgba_sha256": "fd509df050363aca9dba3d596a71b536900ea93657b69e40142e4a3658ec0d57"
+      },
+      "original_client_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png",
+      "original_geometry": {
+        "original_size": [
+          1536,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          0,
+          1536,
+          1024
+        ],
+        "offset_if_applicable": [
+          0.0,
+          0.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/resources/sakura_v03/tex_sakura_rr_sky_r.png"
+      },
+      "psd": {
+        "path": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/source/scene_sakura_reuse_master.psd",
+        "sha256": "f4d01b7c7048c1ad3f5aeeb58af6801e99992728dcb60bfd3c7ca5f236e3252e",
+        "layer_mapping": "sky_r / source/psd_full_canvas_layers/02_sky_r.png",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/reference.png",
+        "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+        "bytes": 1737963
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/png_lossless.png",
+          "sha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+          "bytes": 1599548,
+          "saved_bytes": 138415,
+          "saved_percent": 7.9642,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:09:44.183538+00:00",
+          "finished_at": "2026-10-17T09:09:50.936132+00:00",
+          "elapsed_seconds": 6.753,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/webp_lossless.webp",
+          "sha256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+          "bytes": 1200052,
+          "saved_bytes": 537911,
+          "saved_percent": 30.9507,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:09:50.936621+00:00",
+          "finished_at": "2026-10-17T09:10:13.017790+00:00",
+          "elapsed_seconds": 22.081,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "54e670e6-3690-4dc9-bd87-ccc1c5651053"
+    },
+    {
+      "id": "tex_u03_shop_05_sign",
+      "source": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_sign.png",
+        "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+        "bytes": 100820,
+        "dimensions": [
+          375,
+          140
+        ],
+        "decoded_rgba_sha256": "50f52218461db3d164ba97e66855cd2880ff030529b46faf85b9fb27f6b54925"
+      },
+      "original_client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          288,
+          243,
+          663,
+          383
+        ],
+        "offset_if_applicable": [
+          -36.5,
+          199.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_sign.png"
+      },
+      "psd": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/shop_05.psd",
+        "sha256": "77185eec18ff3afe3f3939238085d4b9b40d638f2b029505bfddd17b8d1cda07",
+        "layer_mapping": "tex_u03_shop_05_sign 帧1",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/reference.png",
+        "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+        "bytes": 100820
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/png_lossless.png",
+          "sha256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+          "bytes": 96452,
+          "saved_bytes": 4368,
+          "saved_percent": 4.3325,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:10:13.021901+00:00",
+          "finished_at": "2026-10-17T09:10:13.119676+00:00",
+          "elapsed_seconds": 0.098,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/webp_lossless.webp",
+          "sha256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+          "bytes": 71186,
+          "saved_bytes": 29634,
+          "saved_percent": 29.393,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:10:13.120492+00:00",
+          "finished_at": "2026-10-17T09:10:14.923272+00:00",
+          "elapsed_seconds": 1.803,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f"
+    },
+    {
+      "id": "UG_GHOST_01_HAPPY_00",
+      "source": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_00.png",
+        "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+        "bytes": 112883,
+        "dimensions": [
+          327,
+          367
+        ],
+        "decoded_rgba_sha256": "cc08d82690723c09b120b7e326f20ee18a0af7808c4dc769942567c622744b40"
+      },
+      "original_client_path": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "original_geometry": {
+        "original_size": [
+          512,
+          512
+        ],
+        "crop_rect_if_applicable": [
+          90,
+          75,
+          417,
+          442
+        ],
+        "offset_if_applicable": [
+          -2.5,
+          -2.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/ghost-customer/frames/tex_ug_ghost_01_happy_00.png"
+      },
+      "psd": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/tourist_happy.psd",
+        "sha256": "6cbdf5746e4ca9711a5597e0eb01ef527e4a13109503958ee1487044b2d1bbbf",
+        "layer_mapping": "UG_GHOST_01_HAPPY_00 帧8",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/reference.png",
+        "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+        "bytes": 112883
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/png_lossless.png",
+          "sha256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+          "bytes": 106000,
+          "saved_bytes": 6883,
+          "saved_percent": 6.0975,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:10:14.928547+00:00",
+          "finished_at": "2026-10-17T09:10:15.254240+00:00",
+          "elapsed_seconds": 0.326,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/webp_lossless.webp",
+          "sha256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+          "bytes": 71340,
+          "saved_bytes": 41543,
+          "saved_percent": 36.8018,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:10:15.255392+00:00",
+          "finished_at": "2026-10-17T09:10:19.519385+00:00",
+          "elapsed_seconds": 4.264,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "6c32aaeb-f325-4b82-98da-4666357899fe"
+    },
+    {
+      "id": "tex_u04_at_s3_base",
+      "source": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+        "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+        "bytes": 996683,
+        "dimensions": [
+          768,
+          1024
+        ],
+        "decoded_rgba_sha256": "113e2f0d9097a9eaa96196235129e27a37b6acc547ea7137530d341efc4224e1"
+      },
+      "original_client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png",
+      "original_geometry": {
+        "original_size": [
+          768,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          3,
+          768,
+          1024
+        ],
+        "offset_if_applicable": [
+          0.0,
+          -1.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/dialogue/portraits/tex_u04_at_s3_base.png"
+      },
+      "psd": {
+        "path": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/source/u04_at_s3_dialogue.psd",
+        "sha256": "7c9713d86e28efc7de0a125a7940f70c717156186027ac4547eb014c1d3daf0f",
+        "layer_mapping": "BASE（原登记kind=base；18语义层，仅PNG编码不重导）",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/reference.png",
+        "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+        "bytes": 996683
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/png_lossless.png",
+          "sha256": "ba0ac71e12cc88907a95afeab0bad057a9b71db4f3afe0186ce11fadc406ac31",
+          "bytes": 931082,
+          "saved_bytes": 65601,
+          "saved_percent": 6.5819,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:15:51.144089+00:00",
+          "finished_at": "2026-10-17T09:15:53.339609+00:00",
+          "elapsed_seconds": 2.196,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/webp_lossless.webp",
+          "sha256": "58c5b395598f04ff042a9aa5363a1621a0f99c214ca0c58666ac585bfa75f4bd",
+          "bytes": 619712,
+          "saved_bytes": 376971,
+          "saved_percent": 37.8226,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:15:53.340263+00:00",
+          "finished_at": "2026-10-17T09:16:02.829184+00:00",
+          "elapsed_seconds": 9.489,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "c0d35672-567b-4553-ba31-cdec8534459a"
+    },
+    {
+      "id": "tex_u03_shop_05_body",
+      "source": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png",
+        "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+        "bytes": 851634,
+        "dimensions": [
+          773,
+          741
+        ],
+        "decoded_rgba_sha256": "f3721cb03ffaa093defd95b0ed2bc345d7bccff56d85cfdb150a2026a418fbde"
+      },
+      "original_client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          130,
+          164,
+          903,
+          905
+        ],
+        "offset_if_applicable": [
+          4.5,
+          -22.5
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/units/shops/lantern/textures/tex_u03_shop_05_body.png"
+      },
+      "psd": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/source/psd/shop_05.psd",
+        "sha256": "77185eec18ff3afe3f3939238085d4b9b40d638f2b029505bfddd17b8d1cda07",
+        "layer_mapping": "tex_u03_shop_05_body 帧2",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/reference.png",
+        "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+        "bytes": 851634
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/png_lossless.png",
+          "sha256": "a166631850df1645fce2e5c92deedb492770650a319db763068be115345b8326",
+          "bytes": 808111,
+          "saved_bytes": 43523,
+          "saved_percent": 5.1105,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:02.851559+00:00",
+          "finished_at": "2026-10-17T09:16:03.625900+00:00",
+          "elapsed_seconds": 0.774,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/webp_lossless.webp",
+          "sha256": "eff41f4d7980bca232e328313603cf479c43c2d827780751dc00adab88c8db01",
+          "bytes": 628964,
+          "saved_bytes": 222670,
+          "saved_percent": 26.1462,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:03.626847+00:00",
+          "finished_at": "2026-10-17T09:16:19.885770+00:00",
+          "elapsed_seconds": 16.259,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "39974e01-9f8e-4eae-8d7b-768ff8f6b076"
+    },
+    {
+      "id": "U05_ART_FONT",
+      "source": {
+        "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png",
+        "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+        "bytes": 474372,
+        "dimensions": [
+          1024,
+          1024
+        ],
+        "decoded_rgba_sha256": "31c6d8a06155130f42b13b13194589897a6c7d37e2c6ef87cb121290cb7bca34"
+      },
+      "original_client_path": "apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png",
+      "original_geometry": {
+        "original_size": [
+          1024,
+          1024
+        ],
+        "crop_rect_if_applicable": [
+          0,
+          0,
+          1019,
+          876
+        ],
+        "offset_if_applicable": [
+          -2.5,
+          74.0
+        ],
+        "pivot": [
+          0.5,
+          0.5
+        ],
+        "client_path": "apps/client/assets/resources/u05_milk_tea/u05_b/U05_ART_FONT.png"
+      },
+      "psd": {
+        "path": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/source/workspace_b_master.psd",
+        "sha256": "edc39b807dc6f83f104730407493f86c6a96ad7ed6492dd60f31b1de13d776eb",
+        "layer_mapping": "字体图集独立保留；LAYER_MANIFEST.font_atlas=v0.1 byte-identical，非伪造PSD字体层",
+        "mapping_scope": "原交付映射与PSD实际文件/层数存在性核对；未重新PSD渲染，非像素层重组PASS"
+      },
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/reference.png",
+        "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+        "bytes": 474372
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/png_lossless.png",
+          "sha256": "e2b749a9318d2fd80839b042422abb2345346807aa453a215f2a1f70991c9193",
+          "bytes": 467239,
+          "saved_bytes": 7133,
+          "saved_percent": 1.5037,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:19.912075+00:00",
+          "finished_at": "2026-10-17T09:16:21.350175+00:00",
+          "elapsed_seconds": 1.438,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/webp_lossless.webp",
+          "sha256": "bd18483d3f694803487da8c27526ae74893623e5a178e716a4db46a8b963ca9a",
+          "bytes": 282986,
+          "saved_bytes": 191386,
+          "saved_percent": 40.3451,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:21.350934+00:00",
+          "finished_at": "2026-10-17T09:16:32.096190+00:00",
+          "elapsed_seconds": 10.745,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "new_client_uuid": null,
+      "runtime": "NOT_TESTED",
+      "original_client_uuid": "feffffab-7e69-451d-a595-9274950e80ab"
+    }
+  ],
+  "produced_files": [
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/png_lossless_diff_rgba.png",
+      "sha256": "1eb50a3ee3fcac0adc60c0e90baa6d051c642f3a930330ac9aec9dd92996f3f7",
+      "bytes": 1097
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "fe4c8893c065b24c248b05019050fc4b65839205026b67c80a8219429b949cb1",
+      "bytes": 1172471
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "0b4bd6d6bab5018924ddfb0f2d481a5d814d08c400e23d46f665673e11e565a1",
+      "bytes": 470823
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "1eb50a3ee3fcac0adc60c0e90baa6d051c642f3a930330ac9aec9dd92996f3f7",
+      "bytes": 1097
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "fe4c8893c065b24c248b05019050fc4b65839205026b67c80a8219429b949cb1",
+      "bytes": 1172471
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "0b4bd6d6bab5018924ddfb0f2d481a5d814d08c400e23d46f665673e11e565a1",
+      "bytes": 470823
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/png_lossless.png",
+      "sha256": "e2b749a9318d2fd80839b042422abb2345346807aa453a215f2a1f70991c9193",
+      "bytes": 467239
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/reference.png",
+      "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+      "bytes": 474372
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/webp_lossless.webp",
+      "sha256": "bd18483d3f694803487da8c27526ae74893623e5a178e716a4db46a8b963ca9a",
+      "bytes": 282986
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/png_lossless_diff_rgba.png",
+      "sha256": "dffd8c113364cb2cb9c354ec84cd14be621506198eb1fa198cb34850dc0b2a25",
+      "bytes": 197
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "b9d7700fcab84de0faec6d27e49ba25a1845f740f8142a1be9a6ac820b33b750",
+      "bytes": 191967
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "7d68a1507b784010d062a866e6db9ba586f978fac8c25291b5de8d1ea08b4245",
+      "bytes": 97297
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/png_lossless_static_projection_320x568.png",
+      "sha256": "4984a57bee74ed5a722c8489464c289409ae0977eb62d47ac7614699b40cdc85",
+      "bytes": 23144
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/png_lossless_static_projection_720x1280.png",
+      "sha256": "29bf3e001c4ec7a56991bb6eb07a0459a398b474836072aeeb1cdabfaa7731ec",
+      "bytes": 91578
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "dffd8c113364cb2cb9c354ec84cd14be621506198eb1fa198cb34850dc0b2a25",
+      "bytes": 197
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "b9d7700fcab84de0faec6d27e49ba25a1845f740f8142a1be9a6ac820b33b750",
+      "bytes": 191967
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "7d68a1507b784010d062a866e6db9ba586f978fac8c25291b5de8d1ea08b4245",
+      "bytes": 97297
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/webp_lossless_static_projection_320x568.png",
+      "sha256": "4984a57bee74ed5a722c8489464c289409ae0977eb62d47ac7614699b40cdc85",
+      "bytes": 23144
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/evidence/webp_lossless_static_projection_720x1280.png",
+      "sha256": "29bf3e001c4ec7a56991bb6eb07a0459a398b474836072aeeb1cdabfaa7731ec",
+      "bytes": 91578
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/png_lossless.png",
+      "sha256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "bytes": 106000
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/reference.png",
+      "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+      "bytes": 112883
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/webp_lossless.webp",
+      "sha256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "bytes": 71340
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/png_lossless_diff_rgba.png",
+      "sha256": "9cda97ab0082012560c8745934b4a7fc2cec4272e38205e38372ae1ff6db0e03",
+      "bytes": 1605
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "4185f398d96458077c7c149904b874e6a2134a6fd49a3d05bfb3884f587e5f58",
+      "bytes": 2991464
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "03bf9cda6a54d3d6091a41d5340c8d9fc681dffc4c9f1e45f9a13b29466047ea",
+      "bytes": 1495795
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/png_lossless_static_projection_320x568.png",
+      "sha256": "1fdbc0e9e97f6de561370f5d0c187a885430b84d935f7d044de1d567a5e01151",
+      "bytes": 28381
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/png_lossless_static_projection_720x1280.png",
+      "sha256": "bdd306f7c84c0c40f8c8d6ee1949ba286ddfcf78b12911f5ff8432131dc948b6",
+      "bytes": 134741
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "9cda97ab0082012560c8745934b4a7fc2cec4272e38205e38372ae1ff6db0e03",
+      "bytes": 1605
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "4185f398d96458077c7c149904b874e6a2134a6fd49a3d05bfb3884f587e5f58",
+      "bytes": 2991464
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "03bf9cda6a54d3d6091a41d5340c8d9fc681dffc4c9f1e45f9a13b29466047ea",
+      "bytes": 1495795
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/webp_lossless_static_projection_320x568.png",
+      "sha256": "1fdbc0e9e97f6de561370f5d0c187a885430b84d935f7d044de1d567a5e01151",
+      "bytes": 28381
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/evidence/webp_lossless_static_projection_720x1280.png",
+      "sha256": "bdd306f7c84c0c40f8c8d6ee1949ba286ddfcf78b12911f5ff8432131dc948b6",
+      "bytes": 134741
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/png_lossless.png",
+      "sha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "bytes": 1599548
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/reference.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+      "bytes": 1737963
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/webp_lossless.webp",
+      "sha256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "bytes": 1200052
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/png_lossless_diff_rgba.png",
+      "sha256": "d07fbad6e3428f7779dc60cfdd53a95c43cf98ac2aba0d8c9cfc99d709560a85",
+      "bytes": 635
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "8e67f28eba3bbb9e2d466f7471e41042914f9ddbddf83589b9bcd69777007304",
+      "bytes": 1215781
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "f65578a5f48db4eabe1b6f53221777273b65bf832cba7ed551a01e9efef0348f",
+      "bytes": 618565
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "d07fbad6e3428f7779dc60cfdd53a95c43cf98ac2aba0d8c9cfc99d709560a85",
+      "bytes": 635
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "8e67f28eba3bbb9e2d466f7471e41042914f9ddbddf83589b9bcd69777007304",
+      "bytes": 1215781
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "f65578a5f48db4eabe1b6f53221777273b65bf832cba7ed551a01e9efef0348f",
+      "bytes": 618565
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/png_lossless.png",
+      "sha256": "a166631850df1645fce2e5c92deedb492770650a319db763068be115345b8326",
+      "bytes": 808111
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/reference.png",
+      "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+      "bytes": 851634
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/webp_lossless.webp",
+      "sha256": "eff41f4d7980bca232e328313603cf479c43c2d827780751dc00adab88c8db01",
+      "bytes": 628964
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/png_lossless_diff_rgba.png",
+      "sha256": "35ec6584c4a9b7277b16550452789fc3d2d137ff8b56c78fcf9be1add028af0e",
+      "bytes": 130
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "3bed3bf97d32b3c3c044d2d28812595936571b2ac5c23b2bc1f8c7b1463a6c35",
+      "bytes": 165208
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "52dc93aa6aedf0358e690a7d65fc5191596c7dee93b4fba13283b13079151a59",
+      "bytes": 82853
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/png_lossless_static_projection_320x568.png",
+      "sha256": "376565d5ce21b72a868d1018d7a34311b2aad1f1980fdfbacaf03e678e9bf8cc",
+      "bytes": 11545
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/png_lossless_static_projection_720x1280.png",
+      "sha256": "ac0d62d7f1281c4fd5064d8f05f44d19c4c62a2a7a2c4bc09a166d476c224fef",
+      "bytes": 45595
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "35ec6584c4a9b7277b16550452789fc3d2d137ff8b56c78fcf9be1add028af0e",
+      "bytes": 130
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "3bed3bf97d32b3c3c044d2d28812595936571b2ac5c23b2bc1f8c7b1463a6c35",
+      "bytes": 165208
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "52dc93aa6aedf0358e690a7d65fc5191596c7dee93b4fba13283b13079151a59",
+      "bytes": 82853
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/webp_lossless_static_projection_320x568.png",
+      "sha256": "376565d5ce21b72a868d1018d7a34311b2aad1f1980fdfbacaf03e678e9bf8cc",
+      "bytes": 11545
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/evidence/webp_lossless_static_projection_720x1280.png",
+      "sha256": "ac0d62d7f1281c4fd5064d8f05f44d19c4c62a2a7a2c4bc09a166d476c224fef",
+      "bytes": 45595
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/png_lossless.png",
+      "sha256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "bytes": 96452
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/reference.png",
+      "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+      "bytes": 100820
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/webp_lossless.webp",
+      "sha256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "bytes": 71186
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/png_lossless_diff_rgba.png",
+      "sha256": "0eaea74c6ca0dba66640a6fdb417567edbced63bcfc580e998ce6087953ef5e3",
+      "bytes": 843
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/png_lossless_light_dark_1to1.png",
+      "sha256": "34cdc4815c43496b5819e9592f033683aa2c372b8289e146997c5ff27d95b5ed",
+      "bytes": 1268195
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/png_lossless_side_by_side_1to1.png",
+      "sha256": "e68ae183640fac6863337a1472a36dd1e9b291b6ccb3fb6afb0a3f68450a9fa5",
+      "bytes": 641135
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/webp_lossless_diff_rgba.png",
+      "sha256": "0eaea74c6ca0dba66640a6fdb417567edbced63bcfc580e998ce6087953ef5e3",
+      "bytes": 843
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/webp_lossless_light_dark_1to1.png",
+      "sha256": "34cdc4815c43496b5819e9592f033683aa2c372b8289e146997c5ff27d95b5ed",
+      "bytes": 1268195
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/evidence/webp_lossless_side_by_side_1to1.png",
+      "sha256": "e68ae183640fac6863337a1472a36dd1e9b291b6ccb3fb6afb0a3f68450a9fa5",
+      "bytes": 641135
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/png_lossless.png",
+      "sha256": "ba0ac71e12cc88907a95afeab0bad057a9b71db4f3afe0186ce11fadc406ac31",
+      "bytes": 931082
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/reference.png",
+      "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+      "bytes": 996683
+    },
+    {
+      "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/webp_lossless.webp",
+      "sha256": "58c5b395598f04ff042a9aa5363a1621a0f99c214ca0c58666ac585bfa75f4bd",
+      "bytes": 619712
+    }
+  ],
+  "produced_file_count": 66,
+  "frozen_sources_modified": false,
+  "formal_client_modified": false,
+  "overview": {
+    "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/OVERVIEW_6x3_STATIC.png",
+    "sha256": "1a3e896d26ca61d8848a674ea7a5aa8c0a6f4d011c4a51be9fab812a6f344604",
+    "bytes": 312688,
+    "nature": "静态缩略总览，非实际显示尺度或运行截图"
+  }
+}

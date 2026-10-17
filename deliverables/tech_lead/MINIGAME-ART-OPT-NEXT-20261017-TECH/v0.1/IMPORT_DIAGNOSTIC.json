@@ -1,0 +1,1165 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-TECH",
+  "scope": "仅已授权3件PNG/WebP私有副本Importer/native字节技术诊断，非正式接入/QA/样本前置门槛",
+  "startedAt": "2026-10-17T09:15:35.711357+00:00",
+  "finishedAt": "2026-10-17T09:19:58.195943+00:00",
+  "copies": [
+    {
+      "kind": "png_lossless",
+      "project": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017",
+      "sourceStage": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable",
+      "changes": [
+        {
+          "id": "tex_sakura_rr_sky_r",
+          "relative": "assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+          "originalRelative": "assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+          "candidateSha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+          "imageUuid": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+          "frameUuid": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+          "originalMetaSha256": "b65410ecccbd5f8a605237fa272147d9acfa63a80a1866ec74a2cd6e69c17cd6"
+        },
+        {
+          "id": "tex_u03_shop_05_sign",
+          "relative": "assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+          "originalRelative": "assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+          "candidateSha256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+          "imageUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+          "frameUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+          "originalMetaSha256": "7674fe18e59083c765f15557320361156bf352e1decbb314ef47ea0ac3f570bd"
+        },
+        {
+          "id": "UG_GHOST_01_HAPPY_00",
+          "relative": "assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+          "originalRelative": "assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+          "candidateSha256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+          "imageUuid": "6c32aaeb-f325-4b82-98da-4666357899fe",
+          "frameUuid": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+          "originalMetaSha256": "fdfa858c1bea625b12d391263c43cc7a1d21dec91a98a350b2a5cef6f6afbbf4"
+        }
+      ]
+    },
+    {
+      "kind": "webp_lossless",
+      "project": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017",
+      "sourceStage": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable",
+      "changes": [
+        {
+          "id": "tex_sakura_rr_sky_r",
+          "relative": "assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.webp",
+          "originalRelative": "assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+          "candidateSha256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+          "imageUuid": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+          "frameUuid": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+          "originalMetaSha256": "b65410ecccbd5f8a605237fa272147d9acfa63a80a1866ec74a2cd6e69c17cd6"
+        },
+        {
+          "id": "tex_u03_shop_05_sign",
+          "relative": "assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.webp",
+          "originalRelative": "assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+          "candidateSha256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+          "imageUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+          "frameUuid": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+          "originalMetaSha256": "7674fe18e59083c765f15557320361156bf352e1decbb314ef47ea0ac3f570bd"
+        },
+        {
+          "id": "UG_GHOST_01_HAPPY_00",
+          "relative": "assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.webp",
+          "originalRelative": "assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+          "candidateSha256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+          "imageUuid": "6c32aaeb-f325-4b82-98da-4666357899fe",
+          "frameUuid": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+          "originalMetaSha256": "fdfa858c1bea625b12d391263c43cc7a1d21dec91a98a350b2a5cef6f6afbbf4"
+        }
+      ]
+    }
+  ],
+  "builds": [
+    {
+      "kind": "png_lossless",
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:16:50 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-web-mobile) Finished in (8 s)ms ================================"
+      ],
+      "configSHA256": "9ef02c3f4ec4574321fc26516d773f0e530df10a9b742d82ed5bc76ca7ec5648",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/png_lossless-web-mobile.log",
+      "logSHA256": "e35f9e681f539c8843fb4077fa3ee1219c870483224ade6a833af589c5b47c4f",
+      "physicalOutputBytes": 38521124,
+      "builderErrorLines": [
+        "2026-10-17 17:16:49 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "wechatgame",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:17:30 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-wechatgame) Finished in (11 s)ms ================================"
+      ],
+      "configSHA256": "361baba5f50b7a8cffdad3b6596991f1c33b40eea439f27bc864037e0d6082f3",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/png_lossless-wechatgame.log",
+      "logSHA256": "e8f4f9699dbbe0b30c15fa6e5978b860f26257a5e6d4b8ef4e6063ceec7568f7",
+      "physicalOutputBytes": 38557767,
+      "builderErrorLines": [
+        "2026-10-17 17:17:29 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "bytedance-mini-game",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:18:16 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-bytedance-mini-game) Finished in (15 s)ms ================================"
+      ],
+      "configSHA256": "2c4cb499dd240648a02cc8cd9cab057352b8a19d04874e60f3fa60fe3b3ed15f",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/png_lossless-bytedance-mini-game.log",
+      "logSHA256": "89ee9276aa287aa2a62c70fb5cc05773031085f43aa7ac1a7a699cee8fad3b7a",
+      "physicalOutputBytes": 38532113,
+      "builderErrorLines": [
+        "2026-10-17 17:18:15 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "web-mobile",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:17:41 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-web-mobile) Finished in (9 s)ms ================================"
+      ],
+      "configSHA256": "b5e4fc65ca726d34dd4f7bfc469f4f852b31c17b1432f9c5bef62d80cc1aee0f",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/webp_lossless-web-mobile.log",
+      "logSHA256": "2aadb07d42e30aff01e172e935ef1a8d5427d2e39aac43f94f5672eabe474152",
+      "physicalOutputBytes": 38061702,
+      "builderErrorLines": [
+        "2026-10-17 17:17:40 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "wechatgame",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:18:26 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-wechatgame) Finished in (7 s)ms ================================"
+      ],
+      "configSHA256": "012fb71df293b349ffaa01df4917c229d5f13254a880aef2d61bddb65f635990",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/webp_lossless-wechatgame.log",
+      "logSHA256": "7d3f2fcac784e21bc738cdde07d39b84ad0b45621ecb8e5252adb5a294e87e9e",
+      "physicalOutputBytes": 38098345,
+      "builderErrorLines": [
+        "2026-10-17 17:18:26 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "bytedance-mini-game",
+      "exitCode": 36,
+      "finishedLines": [
+        "2026-10-17 17:19:10 - debug: ================================ build Task (MINIGAME-ART-OPT-INTEGRATE-CLIENT-bytedance-mini-game) Finished in (7 s)ms ================================"
+      ],
+      "configSHA256": "5a29484efe29a7c445f912e50b58325dd3121c157b721f5ecd898212acb8b9e9",
+      "log": "/Users/yuanquan/Desktop/project/ai-studio-template/ai-studio-001/deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/import-build-evidence/webp_lossless-bytedance-mini-game.log",
+      "logSHA256": "c2ee956c26bad9442978c5c1921c93aa123ffa8a5b159083013a958a0e6d14e1",
+      "physicalOutputBytes": 38072691,
+      "builderErrorLines": [
+        "2026-10-17 17:19:10 - debug: Error: Exit process with code:null, signal:SIGTERM in task build-script"
+      ]
+    }
+  ],
+  "importAndNativeChecks": [
+    {
+      "kind": "png_lossless",
+      "platform": "web-mobile",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+      "inputSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-web-mobile/assets/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.png",
+      "nativeBytes": 1599548,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "web-mobile",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "inputSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-web-mobile/assets/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.png",
+      "nativeBytes": 96452,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "web-mobile",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "inputSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-web-mobile/assets/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.png",
+      "nativeBytes": 106000,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "wechatgame",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+      "inputSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-wechatgame/subpackages/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.png",
+      "nativeBytes": 1599548,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "wechatgame",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "inputSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-wechatgame/subpackages/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.png",
+      "nativeBytes": 96452,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "wechatgame",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "inputSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-wechatgame/subpackages/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.png",
+      "nativeBytes": 106000,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+      "inputSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-bytedance-mini-game/subpackages/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.png",
+      "nativeBytes": 1599548,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "inputSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-bytedance-mini-game/subpackages/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.png",
+      "nativeBytes": 96452,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "png_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "inputSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-png_lossless-20261017/build-output/minigame-compression-tech-probe-png_lossless-20261017-bytedance-mini-game/subpackages/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.png",
+      "nativeBytes": 106000,
+      "nativeMagic": "PNG",
+      "nativeSHA256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "0",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "web-mobile",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.webp",
+      "inputSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-web-mobile/assets/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.webp",
+      "nativeBytes": 1200052,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "web-mobile",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.webp",
+      "inputSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-web-mobile/assets/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.webp",
+      "nativeBytes": 71186,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "web-mobile",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.webp",
+      "inputSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-web-mobile/assets/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.webp",
+      "nativeBytes": 71340,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "wechatgame",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.webp",
+      "inputSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-wechatgame/subpackages/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.webp",
+      "nativeBytes": 1200052,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "wechatgame",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.webp",
+      "inputSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-wechatgame/subpackages/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.webp",
+      "nativeBytes": 71186,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "wechatgame",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.webp",
+      "inputSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-wechatgame/subpackages/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.webp",
+      "nativeBytes": 71340,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "tex_sakura_rr_sky_r",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.webp",
+      "inputSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "imageUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053",
+      "frameUUID": "54e670e6-3690-4dc9-bd87-ccc1c5651053@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1536,
+          "height": 1024
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 1536,
+          "height": 1024
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-bytedance-mini-game/subpackages/world/native/54/54e670e6-3690-4dc9-bd87-ccc1c5651053.webp",
+      "nativeBytes": 1200052,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "tex_u03_shop_05_sign",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.webp",
+      "inputSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "imageUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f",
+      "frameUUID": "19b9cfd6-4cb1-4c8e-aaf8-56af722c154f@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 140
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 375,
+          "height": 140
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-bytedance-mini-game/subpackages/shops/native/19/19b9cfd6-4cb1-4c8e-aaf8-56af722c154f.webp",
+      "nativeBytes": 71186,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "kind": "webp_lossless",
+      "platform": "bytedance-mini-game",
+      "assetId": "UG_GHOST_01_HAPPY_00",
+      "inputPath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.webp",
+      "inputSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "imageUUID": "6c32aaeb-f325-4b82-98da-4666357899fe",
+      "frameUUID": "6c32aaeb-f325-4b82-98da-4666357899fe@f9941",
+      "geometryKeysEqualImportedBaseline": [
+        "rect",
+        "offset",
+        "originalSize",
+        "rotated",
+        "capInsets"
+      ],
+      "actualImportedGeometry": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 327,
+          "height": 367
+        },
+        "offset": {
+          "x": 0,
+          "y": 0
+        },
+        "originalSize": {
+          "width": 327,
+          "height": 367
+        },
+        "rotated": false,
+        "capInsets": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "nativePath": "/private/tmp/minigame-compression-tech-probe-webp_lossless-20261017/build-output/minigame-compression-tech-probe-webp_lossless-20261017-bytedance-mini-game/subpackages/tourist/native/6c/6c32aaeb-f325-4b82-98da-4666357899fe.webp",
+      "nativeBytes": 71340,
+      "nativeMagic": "WEBP",
+      "nativeSHA256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "candidateBytesPreserved": true,
+      "nativeDecodedRGBAEqualsCandidate": true,
+      "SpriteFrameConfigPathPresent": true,
+      "imageAssetLibrary": {
+        "__type__": "cc.ImageAsset",
+        "content": {
+          "fmt": "4",
+          "w": 0,
+          "h": 0
+        }
+      }
+    }
+  ],
+  "unchangedOriginalStageSourceChecks": [
+    {
+      "path": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable/assets/bundles/world/sakura_v03/tex_sakura_rr_sky_r.png",
+      "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d"
+    },
+    {
+      "path": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable/assets/bundles/shops/lantern/textures/tex_u03_shop_05_sign.png",
+      "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd"
+    },
+    {
+      "path": "/private/tmp/minigame-art-opt-integration-staging-v0.8-portable/assets/bundles/tourist/ghost-customer/frames/tex_ug_ghost_01_happy_00.png",
+      "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126"
+    }
+  ],
+  "result": "PASS_WITH_LIMITS",
+  "limitations": [
+    "桌面Creator实际Importer及三平台构建/native保存成功，不代表小游戏基础库最低版本、DevTools/上传、真机/GPU/实际运行采样通过。",
+    "原始导入SpriteFrame与现行baseline一样为裁片originalSize/零offset；不能因此宣称原画布offset已持久保留，正式已有派生reset路线不变。",
+    "PNG-TT启动stdout曾见用户全局Editor layout.json Unexpected end of JSON input；构建仍Finished/36，未修改或修复用户偏好文件。",
+    "WebP-WX日志有build-script子进程SIGTERM debug记录，仍完整Finished/36且三native字节逐项吻合；不宣称工具零噪声。",
+    "本次未启动HTTP/IAB或正式QA，不修改正式工程/原stage/final；新图仍待具体Gate2。",
+    "quality95支线未解锁：即使Creator导入/打包成功，目标平台实际透明管线仍未证实。"
+  ]
+}

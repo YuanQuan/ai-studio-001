@@ -1,0 +1,76 @@
+{
+  "recorded_at": "2026-10-17T17:28:25+08:00",
+  "identity_sha256": "7ab1db82d3c1d081c37d72578f1446c2f26ea91ab7f46019b9133d45899f0899",
+  "new_files": 128,
+  "new_bytes": 33669216,
+  "previous_files_unchanged": 146,
+  "candidate_count": 12,
+  "reference_count": 6,
+  "sample_evidence_files": 66,
+  "required_checks": [
+    {
+      "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+      "required": 4,
+      "criteria_same_order": true,
+      "schema": "PASS",
+      "acceptance": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-NEXT-20261017-TECH",
+      "required": 6,
+      "criteria_same_order": true,
+      "schema": "PASS",
+      "acceptance": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES",
+      "required": 7,
+      "criteria_same_order": true,
+      "schema": "PASS",
+      "acceptance": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN",
+      "required": 5,
+      "criteria_same_order": true,
+      "schema": "PASS",
+      "acceptance": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    },
+    {
+      "task_id": "MINIGAME-ART-OPT-NEXT-20261017",
+      "required": 7,
+      "criteria_same_order": true,
+      "schema": "PASS",
+      "acceptance": [
+        "PASS",
+        "PASS",
+        "PASS"
+      ]
+    }
+  ],
+  "budget_conservative_upper_bound_minutes": 86.08508570000001,
+  "actual_person_minutes": "UNKNOWN",
+  "cycle_start": "2026-10-17T16:56:17+08:00",
+  "cycle_end": "2026-10-17T17:28:25+08:00",
+  "cycle_seconds": 1928,
+  "continuity": "QA/Samples/NEXT USER_REVIEW；Presign/Tech内部REVIEW；FLOW REVIEW；旧总体QA；无READY/IP空挂",
+  "result": "PASS",
+  "final_three_role_full_cycle_conservative_upper_bound_minutes": 96.4,
+  "budget_scope_note": "将最终流程核验结束前完整周期也全计每制作角色，含制作结束后的格式/流程收口，为更保守上界；非实际人工。冻结原BUDGET_CHECK不改。"
+}

@@ -1,0 +1,76 @@
+{
+  "review": {
+    "task_id": "MINIGAME-ART-OPT-NEXT-20261017-TECH",
+    "reviewer": "tech_lead",
+    "decision": "APPROVED",
+    "findings": [
+      {
+        "severity": "INFO",
+        "message": "同批a6bc7013…首3源6候选实际SHA/尺寸/全RGBA含alpha0/untagged及字节独立复算一致，均有收益；Pillow11.3 PNG参数与cwebp1.5 lossless/exact/metadataicc+dwebp PAM符合预签。仅确认技术扩余三，不做切图效果专业Review。"
+      },
+      {
+        "severity": "INFO",
+        "message": "允许同批其余人物/店身/字体按已批六源计划和预算继续无损样本；人物/字体实际尺度投影缺口如实NT，补事实版本化，不虚构效果通过。新图仍锁Gate2，WebP平台/Importer/GPU尚未验证，quality95不解锁。"
+      }
+    ],
+    "next_action": "Master可释放余三制作；保留失败/无收益及累计150人分钟/18候选上限，不扩范围。"
+  },
+  "batch_plan_sha256": "a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23",
+  "authorization_sha256": "0beb595ace90b930e1a01b1dc77dbd37eab55471b4505f46d1f247b5def2821f",
+  "candidateFacts": [
+    {
+      "asset": "tex_sakura_rr_sky_r",
+      "kind": "png_lossless",
+      "sha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+      "fullRGBAZeroDifference": true,
+      "bytes": 1599548,
+      "savedBytes": 138415,
+      "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9"
+    },
+    {
+      "asset": "tex_sakura_rr_sky_r",
+      "kind": "webp_lossless",
+      "sha256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+      "fullRGBAZeroDifference": true,
+      "bytes": 1200052,
+      "savedBytes": 537911,
+      "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam"
+    },
+    {
+      "asset": "tex_u03_shop_05_sign",
+      "kind": "png_lossless",
+      "sha256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+      "fullRGBAZeroDifference": true,
+      "bytes": 96452,
+      "savedBytes": 4368,
+      "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9"
+    },
+    {
+      "asset": "tex_u03_shop_05_sign",
+      "kind": "webp_lossless",
+      "sha256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+      "fullRGBAZeroDifference": true,
+      "bytes": 71186,
+      "savedBytes": 29634,
+      "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam"
+    },
+    {
+      "asset": "UG_GHOST_01_HAPPY_00",
+      "kind": "png_lossless",
+      "sha256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+      "fullRGBAZeroDifference": true,
+      "bytes": 106000,
+      "savedBytes": 6883,
+      "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9"
+    },
+    {
+      "asset": "UG_GHOST_01_HAPPY_00",
+      "kind": "webp_lossless",
+      "sha256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+      "fullRGBAZeroDifference": true,
+      "bytes": 71340,
+      "savedBytes": 41543,
+      "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "MINIGAME-ART-OPT-NEXT-20261017-TECH",
+  "title": "压缩批次预签与QA计划技术评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "MINIGAME-ART-OPT-NEXT-20261017",
+  "objective": "核工具、Cocos导入能力和精确色彩/透明约束；对Art同批计划首图前预签，后续只做技术诊断和QA计划审查，不新增切图效果专业复审。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/PRODUCTION_PLAN.md",
+    "deliverables/art/MINIGAME-ART-OPT-COMPRESSION-PLAN-20261017/v0.1/ASSET_MANIFEST.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/IMPORT_DIAGNOSTIC_AUTHORIZATION.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/IMPORT_DIAGNOSTIC.json"
+  ],
+  "acceptance": [
+    "独立核Art同批源/尺寸/工具真实可用及参数，首图前同SHA签认；不预称平台真机兼容。",
+    "明确PNG/WebP exact/ICC/完整RGBA及候选收益口径，保留失败/无收益，不能改变生产画质。",
+    "QA正式计划覆盖批准输入与边界，审批未过不执行正式测试；最终技术结果/未知可复核。"
+  ],
+  "dependencies": [],
+  "status": "REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；Owner读本角色ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS及适用规范；不得自行分派/Git。",
+    "只写自己交付与允许Task，Producer跨职责授权维护相关审批/Task及六源本批marker；不改冻结146项或他任务内容。",
+    "文档/Review/QA使用本轮已许可gpt-6.1-sol low；实际图片资源制作另由gpt-6-sol high执行，编码类如需另派gpt-6-luna low。",
+    "未真实开始产出保持READY，有证据才IN_PROGRESS；中文交付、未知明确NOT_TESTED，不新增Gate或伪造批准。",
+    "Master明确授权首3件private-copy Importer/native格式技术诊断，见IMPORT_DIAGNOSTIC_AUTHORIZATION；不是正式接入/QA/额外样本送审门禁，预算35分钟内，已批实现146项不变。"
+  ]
+}

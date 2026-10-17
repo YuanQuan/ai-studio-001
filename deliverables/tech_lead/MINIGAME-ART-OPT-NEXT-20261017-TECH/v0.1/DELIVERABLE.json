@@ -1,0 +1,41 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-TECH",
+  "owner": "tech_lead",
+  "summary": "完成同批预签、首3技术扩余三、QA v0.2计划Review及授权Importer/native技术诊断；内部技术交付待接受，不是样本/QA/发布批准。",
+  "artifacts": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/TECH_DESIGN.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/TECH_PRESIGN.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/DELIVERABLE.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/IMPORT_DIAGNOSTIC.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/BATCH_EXTENSION_CONFIRMATION.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/QA_PLAN_REVIEW_v0.2.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/REVIEW_IDENTITY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "独立核Art同批源/尺寸/工具真实可用及参数，首图前同SHA签认；不预称平台真机兼容。",
+      "result": "PASS",
+      "evidence": "TECH_PRESIGN/PRESIGN_INPUT_CHECK同a6bc…；工具及6源实际核验，平台真机未测明确NT。"
+    },
+    {
+      "criterion": "明确PNG/WebP exact/ICC/完整RGBA及候选收益口径，保留失败/无收益，不能改变生产画质。",
+      "result": "PASS",
+      "evidence": "TECH_DESIGN、首3技术确认与IMPORT_DIAGNOSTIC的18实际native检查；全RGBA/exact/ICC、真实字节及限制独立。"
+    },
+    {
+      "criterion": "QA正式计划覆盖批准输入与边界，审批未过不执行正式测试；最终技术结果/未知可复核。",
+      "result": "PASS",
+      "evidence": "QA_PLAN_REVIEW_v0.2+4SHA，18例当前冻结v08/阶段边界正确；未批具体计划未执行QA；REVIEW.md列全部未知。"
+    }
+  ],
+  "risks": [
+    "新样本未Gate2，不得正式接入；人物/字体实际投影缺口仍NT。",
+    "QA v0.2具体计划未用户批准，不执行正式测试。",
+    "三端构建保存WebP原字节不证明平台最低基础库、真机透明/色彩、上传或GPU通过。",
+    "总包仍超过20MB/MiB参考；无损样本收益不保证全包达标，quality95支线不解锁。",
+    "Creator全局偏好读取/子进程清理噪声已记，未修用户设置或掩盖日志。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

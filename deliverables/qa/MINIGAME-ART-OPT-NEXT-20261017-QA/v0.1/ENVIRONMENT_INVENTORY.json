@@ -1,0 +1,34 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "recorded_at": "2026-10-17T09:03:36.870255+00:00",
+  "method": "只读目录和文件盘点，未启动浏览器/Editor/构建/测试",
+  "creator": {
+    "declared_version": "3.8.8",
+    "source": "apps/client/package.json",
+    "installed_directory": "/Applications/Cocos/Creator/3.8.8",
+    "directory_exists": true,
+    "execution": "NOT_TESTED"
+  },
+  "web": {
+    "manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUILD_MANIFEST.json",
+    "manifest_exists": true,
+    "historical_runtime": "RUNTIME_VERIFICATION记录真实HTTP Web与内置浏览器DPR1，仅作线索",
+    "current_browser_session": "未调用；可访问性NOT_TESTED"
+  },
+  "platform_tools": {
+    "inventory": "只读/Applications可见WeChat.app，未见明确微信/抖音开发工具app，不代表全机不存在",
+    "wechat_devtools": "NOT_TESTED",
+    "douyin_devtools": "NOT_TESTED",
+    "upload_accounts": "NOT_TESTED"
+  },
+  "physical_devices": "未连接核验，NOT_TESTED",
+  "DPR2_3": "NOT_TESTED",
+  "real_safe_capsule": "NOT_TESTED",
+  "performance": {
+    "DrawCall": "NOT_TESTED",
+    "GPU": "NOT_TESTED",
+    "heap_peak": "NOT_TESTED",
+    "budget": "现有v0.1待审批且仅DEMO-001，不直接用作当前数值门槛"
+  },
+  "not_test_report": true
+}

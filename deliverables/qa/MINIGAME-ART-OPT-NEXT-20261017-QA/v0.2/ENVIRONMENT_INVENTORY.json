@@ -1,0 +1,54 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "recorded_at": "2026-10-17T09:11:36.871719+00:00",
+  "method": "只读目录和文件盘点，未启动浏览器/Editor/构建/测试",
+  "creator": {
+    "declared_version": "3.8.8",
+    "source": "apps/client/package.json",
+    "installed_directory": "/Applications/Cocos/Creator/3.8.8",
+    "directory_exists": true,
+    "execution": "NOT_TESTED"
+  },
+  "web": {
+    "manifest": "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUILD_MANIFEST.json",
+    "manifest_exists": true,
+    "historical_runtime": "RUNTIME_VERIFICATION记录真实HTTP Web与内置浏览器DPR1，仅作线索",
+    "current_browser_session": "未调用；可访问性NOT_TESTED"
+  },
+  "platform_tools": {
+    "inventory": "只读/Applications可见WeChat.app，未见明确微信/抖音开发工具app，不代表全机不存在",
+    "wechat_devtools": "NOT_TESTED",
+    "douyin_devtools": "NOT_TESTED",
+    "upload_accounts": "NOT_TESTED"
+  },
+  "physical_devices": "未连接核验，NOT_TESTED",
+  "DPR2_3": "NOT_TESTED",
+  "real_safe_capsule": "NOT_TESTED",
+  "performance": {
+    "DrawCall": "NOT_TESTED",
+    "GPU": "NOT_TESTED",
+    "heap_peak": "NOT_TESTED",
+    "budget": "现有v0.1待审批且仅DEMO-001，不直接用作当前数值门槛",
+    "sampling_status": "无已确认原生采样接口；DrawCall/GPU/heap/帧序列NOT_TESTED，无法取得时单项BLOCKED，不注入hook"
+  },
+  "not_test_report": true,
+  "readonly_probe_inventory": [
+    {
+      "path": "deliverables/client/MINIGAME-ART-OPT-BATCH-20261017-CLIENT/v0.4/evidence/framework-contract-tests-v0.4.cjs",
+      "sha256": "282aef40927a2159efa617217025f8eb3d75630f90e19967426fa933ed62c424"
+    },
+    {
+      "path": "tests/client/asset-integration/asset_integration.test.cjs",
+      "sha256": "47706e2bd33997194678932034caa40f3c987116a8293e361c9ef688ef066208"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/creator-u04-method-probe.cjs",
+      "sha256": "48220fe210d13c63d26f6a937a43375338da5d128ed8dee38a2aa8f9caaa3c68"
+    },
+    {
+      "path": "deliverables/tech_lead/MINIGAME-ART-OPT-BATCH-20261017-TECH/v0.30/creator-compiled-probe.cjs",
+      "sha256": "6b3f716dee165668b363209a30e484718d58bb61c0cebde531fb9f2a0d930ef7"
+    }
+  ],
+  "probe_execution": "未执行；SHA为当前文件只读计算；未来须核冻结副本绑定，非活动workspace"
+}

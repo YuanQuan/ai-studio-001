@@ -1,0 +1,35 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN",
+  "owner": "art",
+  "summary": "完成六件源身份与首图前Art文字预签；同批Tech签名待核，0产图。",
+  "artifacts": [
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/BATCH_PLAN.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ART_PRESIGN.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-PRESIGN/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同已批六件源SHA/尺寸/许可及原PSD身份，不消费他会话新图；方案本身不被重写。",
+      "result": "PASS",
+      "evidence": "BATCH_PLAN.assets与font_rights_recheck；原完整生成商业凭证未重取限制明确"
+    },
+    {
+      "criterion": "确定同背景同视窗同尺度静态参考参数与技术参数/ICC/全RGBA exact，实际运行与静态边界清楚。",
+      "result": "PASS",
+      "evidence": "BATCH_PLAN.pipeline/budget/comparison；人物/字体最终投影未证部分明确停止实际尺度PASS"
+    },
+    {
+      "criterion": "批次预案供Tech同SHA签名，最多18候选6参考150人分钟0付费/生成调用；本任务不制作图片。",
+      "result": "PASS",
+      "evidence": "BATCH_PLAN.json已提交供Tech对同SHA预签，budget明确最多18候选、6参考、150人分钟、0生成调用、0外部付费；ART_PRESIGN.json记录images_written=0。本任务仅五件文字/JSON交付，未制作图片；此结论不代表候选视觉、运行或平台兼容通过。"
+    }
+  ],
+  "risks": [
+    "Tech同SHA预签未在本文件写成已完成",
+    "人物/字体最终投影待补；不允许伪称完整同尺度效果通过",
+    "WebP兼容、平台/真机/GPU及正式分发许可仍NOT_TESTED"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

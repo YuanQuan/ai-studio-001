@@ -1,0 +1,318 @@
+{
+  "task": "MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES",
+  "phase": "USER_REVIEW_PREPARATION",
+  "batch_plan_sha256": "a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23",
+  "authority": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/FIRST_SAMPLE_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/REMAINING_SAMPLE_AUTHORIZATION.json"
+  ],
+  "tool_wall_clock_windows_utc": [
+    {
+      "started_at": "2026-10-17T09:09:44.113633+00:00",
+      "finished_at": "2026-10-17T09:10:19.520600+00:00"
+    },
+    {
+      "started_at": "2026-10-17T09:15:51.109858+00:00",
+      "finished_at": "2026-10-17T09:16:32.098193+00:00"
+    }
+  ],
+  "read_only_preparation_wall_clock": "UNKNOWN_START; completed before first encoding",
+  "documentation_wall_clock": "IN_PROGRESS_AT_PACKAGING; exact duration not measured",
+  "person_minutes_used": "UNKNOWN_NOT_INFERRED_FROM_TOOL_WALL_CLOCK",
+  "person_minutes_max": 150,
+  "known_tool_elapsed_seconds": 76.255,
+  "candidate_count": 12,
+  "candidate_limit": 18,
+  "candidate_remaining": 6,
+  "reference_count": 6,
+  "reference_limit": 6,
+  "reference_remaining": 0,
+  "generated_calls": 0,
+  "external_paid_cost": 0,
+  "compute_bill": "UNKNOWN_NOT_MEASURED",
+  "lossy95": "LOCKED_NOT_TESTED",
+  "runtime": "NOT_TESTED",
+  "source_total_bytes": 4274355,
+  "file_totals": {
+    "png_lossless": {
+      "bytes": 4008432,
+      "saved_bytes": 265923,
+      "saved_percent": 6.2214
+    },
+    "webp_lossless": {
+      "bytes": 2874240,
+      "saved_bytes": 1400115,
+      "saved_percent": 32.7562
+    }
+  },
+  "events": [
+    {
+      "asset_id": "tex_sakura_rr_sky_r",
+      "source": "deliverables/art/SCENE-SAKURA-REDRAW-REUSE-20261013/v0.3/exports/tex_sakura_rr_sky_r.png",
+      "source_sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+      "source_bytes": 1737963,
+      "started_at": "2026-10-17T09:09:44.176383+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/reference.png",
+        "sha256": "47a0d302ea835336127078da6b1b1a90dedb0f545e87b341a25dece9bbbd962d",
+        "bytes": 1737963
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/png_lossless.png",
+          "sha256": "95524bce79791503b3caca19b4e9bdc27853279e13b9a15a72b69597c2665760",
+          "bytes": 1599548,
+          "saved_bytes": 138415,
+          "saved_percent": 7.9642,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:09:44.183538+00:00",
+          "finished_at": "2026-10-17T09:09:50.936132+00:00",
+          "elapsed_seconds": 6.753,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_sakura_rr_sky_r/webp_lossless.webp",
+          "sha256": "8f1b488953060cea1a53dd5d5b891463f6904674828b51d3f64cdc931fd0d223",
+          "bytes": 1200052,
+          "saved_bytes": 537911,
+          "saved_percent": 30.9507,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:09:50.936621+00:00",
+          "finished_at": "2026-10-17T09:10:13.017790+00:00",
+          "elapsed_seconds": 22.081,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:10:13.018782+00:00",
+      "elapsed_seconds": 28.843
+    },
+    {
+      "asset_id": "tex_u03_shop_05_sign",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_sign.png",
+      "source_sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+      "source_bytes": 100820,
+      "started_at": "2026-10-17T09:10:13.021370+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/reference.png",
+        "sha256": "6174c91490d91007b8dbdaab01a8e5c7c5bbad73098144f3b7a0fe50476e25cd",
+        "bytes": 100820
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/png_lossless.png",
+          "sha256": "66f3421ef4a36301ee94ab6569859612d71fba892be59d3749602fbe49c243b0",
+          "bytes": 96452,
+          "saved_bytes": 4368,
+          "saved_percent": 4.3325,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:10:13.021901+00:00",
+          "finished_at": "2026-10-17T09:10:13.119676+00:00",
+          "elapsed_seconds": 0.098,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_sign/webp_lossless.webp",
+          "sha256": "fcc1ff13bef72069df2dca891d90ef24bcacbcd39c9babcd0ad96b60255bcd59",
+          "bytes": 71186,
+          "saved_bytes": 29634,
+          "saved_percent": 29.393,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:10:13.120492+00:00",
+          "finished_at": "2026-10-17T09:10:14.923272+00:00",
+          "elapsed_seconds": 1.803,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:10:14.924824+00:00",
+      "elapsed_seconds": 1.903
+    },
+    {
+      "asset_id": "UG_GHOST_01_HAPPY_00",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_ug_ghost_01_happy_00.png",
+      "source_sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+      "source_bytes": 112883,
+      "started_at": "2026-10-17T09:10:14.928047+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/reference.png",
+        "sha256": "1b8eb1f4796b88b84ab0d3b25711aafeeff7a9e56013b34653b06e606acb6126",
+        "bytes": 112883
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/png_lossless.png",
+          "sha256": "fde00b25121f729ac157456c4d5f646965273384d5782557a408072eed588ab8",
+          "bytes": 106000,
+          "saved_bytes": 6883,
+          "saved_percent": 6.0975,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:10:14.928547+00:00",
+          "finished_at": "2026-10-17T09:10:15.254240+00:00",
+          "elapsed_seconds": 0.326,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/UG_GHOST_01_HAPPY_00/webp_lossless.webp",
+          "sha256": "b07312d66877ceb80fd9106a9ac6e78abd6525197d0d9633bcbe4c192dd336ea",
+          "bytes": 71340,
+          "saved_bytes": 41543,
+          "saved_percent": 36.8018,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:10:15.255392+00:00",
+          "finished_at": "2026-10-17T09:10:19.519385+00:00",
+          "elapsed_seconds": 4.264,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:10:19.520277+00:00",
+      "elapsed_seconds": 4.592
+    },
+    {
+      "asset_id": "tex_u04_at_s3_base",
+      "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+      "source_sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+      "source_bytes": 996683,
+      "started_at": "2026-10-17T09:15:51.138530+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/reference.png",
+        "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+        "bytes": 996683
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/png_lossless.png",
+          "sha256": "ba0ac71e12cc88907a95afeab0bad057a9b71db4f3afe0186ce11fadc406ac31",
+          "bytes": 931082,
+          "saved_bytes": 65601,
+          "saved_percent": 6.5819,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:15:51.144089+00:00",
+          "finished_at": "2026-10-17T09:15:53.339609+00:00",
+          "elapsed_seconds": 2.196,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/webp_lossless.webp",
+          "sha256": "58c5b395598f04ff042a9aa5363a1621a0f99c214ca0c58666ac585bfa75f4bd",
+          "bytes": 619712,
+          "saved_bytes": 376971,
+          "saved_percent": 37.8226,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:15:53.340263+00:00",
+          "finished_at": "2026-10-17T09:16:02.829184+00:00",
+          "elapsed_seconds": 9.489,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:02.830052+00:00",
+      "elapsed_seconds": 11.692
+    },
+    {
+      "asset_id": "tex_u03_shop_05_body",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png",
+      "source_sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+      "source_bytes": 851634,
+      "started_at": "2026-10-17T09:16:02.849476+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/reference.png",
+        "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+        "bytes": 851634
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/png_lossless.png",
+          "sha256": "a166631850df1645fce2e5c92deedb492770650a319db763068be115345b8326",
+          "bytes": 808111,
+          "saved_bytes": 43523,
+          "saved_percent": 5.1105,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:02.851559+00:00",
+          "finished_at": "2026-10-17T09:16:03.625900+00:00",
+          "elapsed_seconds": 0.774,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/webp_lossless.webp",
+          "sha256": "eff41f4d7980bca232e328313603cf479c43c2d827780751dc00adab88c8db01",
+          "bytes": 628964,
+          "saved_bytes": 222670,
+          "saved_percent": 26.1462,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:03.626847+00:00",
+          "finished_at": "2026-10-17T09:16:19.885770+00:00",
+          "elapsed_seconds": 16.259,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:19.886772+00:00",
+      "elapsed_seconds": 17.038
+    },
+    {
+      "asset_id": "U05_ART_FONT",
+      "source": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png",
+      "source_sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+      "source_bytes": 474372,
+      "started_at": "2026-10-17T09:16:19.910390+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/reference.png",
+        "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+        "bytes": 474372
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/png_lossless.png",
+          "sha256": "e2b749a9318d2fd80839b042422abb2345346807aa453a215f2a1f70991c9193",
+          "bytes": 467239,
+          "saved_bytes": 7133,
+          "saved_percent": 1.5037,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:19.912075+00:00",
+          "finished_at": "2026-10-17T09:16:21.350175+00:00",
+          "elapsed_seconds": 1.438,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/webp_lossless.webp",
+          "sha256": "bd18483d3f694803487da8c27526ae74893623e5a178e716a4db46a8b963ca9a",
+          "bytes": 282986,
+          "saved_bytes": 191386,
+          "saved_percent": 40.3451,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:21.350934+00:00",
+          "finished_at": "2026-10-17T09:16:32.096190+00:00",
+          "elapsed_seconds": 10.745,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:32.097561+00:00",
+      "elapsed_seconds": 12.187
+    }
+  ],
+  "failed_candidates": [],
+  "revisions": 0,
+  "note": "文件总字节不是native包、下载量、GPU或纹理内存收益；等待/技术扩展与工具执行分开记录。",
+  "batch_id": "COMPRESSION-SIX-20261017-v01"
+}

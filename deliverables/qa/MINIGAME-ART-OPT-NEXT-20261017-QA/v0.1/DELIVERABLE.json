@@ -1,0 +1,35 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "owner": "qa",
+  "summary": "提交冻结实现的FUNCTIONAL计划、18项用例和只读环境盘点；执行待具体计划用户批准。",
+  "artifacts": [
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.1/TEST_PLAN.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.1/CLIENT_TEST_CASES.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.1/ENVIRONMENT_INVENTORY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "准确冻结输入与Owner证据边界",
+      "result": "PASS",
+      "evidence": "TEST_PLAN；FINAL_IDENTITY SHA只读核对一致。此为计划文档检查。"
+    },
+    {
+      "criterion": "覆盖适配资源交互视觉性能及分阶段未测项",
+      "result": "PASS",
+      "evidence": "CLIENT_TEST_CASES F01-F15/R01-R03和环境清单。"
+    },
+    {
+      "criterion": "正式QA执行结果",
+      "result": "NOT_TESTED",
+      "evidence": "具体计划待批准；无TEST_REPORT。"
+    }
+  ],
+  "assumptions": [
+    "固定Web为FUNCTIONAL；RELEASE另锁平台设备范围。"
+  ],
+  "risks": [
+    "性能工具和适用预算待Review明确，必要指标缺失不得整体PASS。",
+    "需Tech Review与用户批准后执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

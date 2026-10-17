@@ -1,0 +1,36 @@
+{
+  "id": "MINIGAME-ART-OPT-NEXT-20261017",
+  "title": "批准后QA准备与压缩代表样本推进",
+  "type": "integration",
+  "owner": "master",
+  "parent": "MINIGAME-ART-OPT-20261016",
+  "objective": "登记明确批准并编排并行QA准备/同批预签及确定性压缩样本，连续推进到下一具体审核门禁。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md"
+  ],
+  "deliverables": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/MASTER_SUMMARY.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/MASTER_REVIEW.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/FINAL_IDENTITY.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "两项用户批准身份准确登记，上游冻结不覆盖。",
+    "QA计划及压缩样本真实产物/评审/限制可复核，不将旧Owner结果视作QA。",
+    "Producer审批/连续执行/看板/复盘一致，下一具体门禁或真实阻塞准确呈交。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；Owner读本角色ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS及适用规范；不得自行分派/Git。",
+    "只写自己交付与允许Task，Producer跨职责授权维护相关审批/Task及六源本批marker；不改冻结146项或他任务内容。",
+    "文档/Review/QA使用本轮已许可gpt-6.1-sol low；实际图片资源制作另由gpt-6-sol high执行，编码类如需另派gpt-6-luna low。",
+    "未真实开始产出保持READY，有证据才IN_PROGRESS；中文交付、未知明确NOT_TESTED，不新增Gate或伪造批准。",
+    "2026-10-17T17:28:25+08:00 准确QA计划/样本效果联合送审，128身份核验一致，未正式执行QA或接入新候选，整体未DONE。"
+  ]
+}

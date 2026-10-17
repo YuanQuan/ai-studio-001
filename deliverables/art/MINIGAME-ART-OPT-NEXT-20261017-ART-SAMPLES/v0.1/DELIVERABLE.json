@@ -1,0 +1,44 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES",
+  "owner": "art",
+  "summary": "在同SHA的Art/Tech双签及Master分批授权下，完成六件已批准源的12个无损技术候选、六份只读参考、全RGBA双路径核验、静态视觉对照及具体身份清单；候选待用户Gate2，未正式接入。",
+  "artifacts": [
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/ART_BRIEF.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/ASSET_MANIFEST.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/EXECUTION_LEDGER.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/PIXEL_VERIFICATION.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/STATIC_PROJECTION.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/FILE_IDENTITY.json",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/OVERVIEW_6x3_STATIC.png",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/USER_REVIEW_PACKET.md",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/",
+    "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/DELIVERABLE.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "同批Art/Tech预签及源身份真实齐备后才产图，锁定原尺寸/画布/UV/alpha/颜色；新外部资源/生图0。",
+      "result": "PASS",
+      "evidence": "BATCH_PLAN a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23、双方预签、Master首批及扩批授权；FILE_IDENTITY.json、EXECUTION_LEDGER.json。"
+    },
+    {
+      "criterion": "全RGBA含alpha0 hidden RGB exact与ICC一致；逐件收益/失败/实际采样及同尺度证据真实，未做运行记NOT_TESTED。",
+      "result": "PASS",
+      "evidence": "PIXEL_VERIFICATION.json逐件12候选Pillow RGBA8含alpha0全部0差，六WebP经dwebp-PAM第二路径同SHA；六源仅IHDR/IDAT/IEND。每件文件收益/浅深背景/1:1证据齐，前三件720/320源码纯色舞台静态投影零差。人物/字体实际尺度和完整场景、Cocos/GPU/目标设备运行均明确NOT_TESTED，不把静态诊断当运行通过。"
+    },
+    {
+      "criterion": "源/候选/差异/并排及真实文件hash、预算和PSD映射齐，最多18候选6参考150人分钟，未批不进入正式工程。",
+      "result": "PASS",
+      "evidence": "FILE_IDENTITY.json登记六源/六参考/十二候选及66份实际样本/证据文件SHA与六PSD映射；ASSET_MANIFEST.md和USER_REVIEW_PACKET.md可复核。候选12≤18、参考6/6、失败0、生图0、付费0；工具实际墙钟两段约35.4秒与41.0秒，实际人分钟未精确计量，Master按本周期三执行角色总墙钟保守上界另核≤150。具体候选Gate2尚未获批，正式client零改动。"
+    }
+  ],
+  "assumptions": [
+    "静态投影使用冻结源码公式与原图几何，在无safe capsule的DPR1条件下按相同参数比较源和候选；仅证明单件平面效果。",
+    "六源无ICC/gAMA/sRGB时固定按sRGB解释，不注入profile；不把静态结果推为平台GPU结果。"
+  ],
+  "risks": [
+    "WebP的Creator导入、微信/抖音目标平台支持、是否回编PNG以及真实打包和纹理内存收益仍待技术与运行验证。",
+    "U04人物与U05字体的最终状态/实际文本投影未充分冻结，不能据1:1证据声称实际显示尺度通过。",
+    "压缩候选的具体Gate2用户批准尚未取得，不能正式接入客户端。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}

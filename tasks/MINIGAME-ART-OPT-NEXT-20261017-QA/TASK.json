@@ -1,0 +1,42 @@
+{
+  "id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "title": "资源及适配正式QA计划",
+  "type": "test",
+  "owner": "qa",
+  "parent": "MINIGAME-ART-OPT-NEXT-20261017",
+  "objective": "对获批整体实现形成可执行的正式QA计划/客户端视觉用例与环境盘点，先提交具体计划用户审批，未批准不执行正式QA。",
+  "inputs": [
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-NEXT-20261017/v0.1/SCOPE.md",
+    "deliverables/master/MINIGAME-ART-OPT-BATCH-20261017/v0.1/FINAL_IDENTITY.json",
+    "rules/artifact_contract.md",
+    "agents/qa/VISUAL_QA_GUIDE.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-NEXT-20261017-TECH/v0.1/QA_PLAN_REVIEW.json"
+  ],
+  "deliverables": [
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/TEST_PLAN.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/CLIENT_TEST_CASES.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/ENVIRONMENT_INVENTORY.json",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "引用准确获批实现/视觉/Tech/UI输入及范围，Owner证据只作已有线索不转记QA通过。",
+    "覆盖目标分辨率/加载释放/动作店铺对话奶茶/视觉及性能包体，区分可测环境与NOT_TESTED/平台依赖；无Server变更不虚构Server用例。",
+    "计划和用例可复核含步骤/期望/证据/优先级，正式执行待该具体TEST_PLAN获批，不索要假定硬件或虚构测试报告。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Master唯一分派；Owner读本角色ROLE→CAPABILITIES→CONSTRAINTS→DECISIONS→SKILLS及适用规范；不得自行分派/Git。",
+    "只写自己交付与允许Task，Producer跨职责授权维护相关审批/Task及六源本批marker；不改冻结146项或他任务内容。",
+    "文档/Review/QA使用本轮已许可gpt-6.1-sol low；实际图片资源制作另由gpt-6-sol high执行，编码类如需另派gpt-6-luna low。",
+    "未真实开始产出保持READY，有证据才IN_PROGRESS；中文交付、未知明确NOT_TESTED，不新增Gate或伪造批准。",
+    "QA已实际产出v0.1 TEST_PLAN.md；仅计划设计，正式执行锁定。",
+    "四项Required v0.1已提交；待Tech Review与具体计划用户批准，未执行正式测试。",
+    "Tech对具体计划v0.1提出受控入口/采样来源/contain留白/准确路径问题，修订v0.2保留旧文件；无正式QA执行，原测试范围与用户门禁不变。",
+    "QA v0.2四Required已修订，保留v0.1；只读核探针SHA，未正式执行，待Tech轻复核及用户批准。",
+    "2026-10-17T17:15:53+08:00 具体v0.2四文件计划获Tech APPROVED及Master内部接受，USER_REVIEW待用户，未正式执行QA或DONE。",
+    "2026-10-17T17:28:25+08:00 准确QA计划/样本效果联合送审，128身份核验一致，未正式执行QA或接入新候选，整体未DONE。"
+  ]
+}

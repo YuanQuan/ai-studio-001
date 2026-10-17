@@ -1,0 +1,150 @@
+{
+  "task": "MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES",
+  "batch_plan_sha256": "a6bc70139a292edfa241235a3cf28666fc2174e3d7e7a08e8e475f83b9c1ef23",
+  "scope": [
+    "tex_u04_at_s3_base",
+    "tex_u03_shop_05_body",
+    "U05_ART_FONT"
+  ],
+  "started_at": "2026-10-17T09:15:51.109858+00:00",
+  "finished_at": "2026-10-17T09:16:32.098193+00:00",
+  "candidate_limit": 18,
+  "reference_limit": 6,
+  "generated_calls": 0,
+  "external_paid_cost": 0,
+  "runtime": "NOT_TESTED",
+  "events": [
+    {
+      "asset_id": "tex_u04_at_s3_base",
+      "source": "deliverables/art/U04-DIALOGUE-LAYERED-ASSET-001/v0.1/exports/u04_at_s3_base.png",
+      "source_sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+      "source_bytes": 996683,
+      "started_at": "2026-10-17T09:15:51.138530+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/reference.png",
+        "sha256": "b2381c8750733201c948dab82a03e918acb6c67d80dfebf71c4fd4fb740d7210",
+        "bytes": 996683
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/png_lossless.png",
+          "sha256": "ba0ac71e12cc88907a95afeab0bad057a9b71db4f3afe0186ce11fadc406ac31",
+          "bytes": 931082,
+          "saved_bytes": 65601,
+          "saved_percent": 6.5819,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:15:51.144089+00:00",
+          "finished_at": "2026-10-17T09:15:53.339609+00:00",
+          "elapsed_seconds": 2.196,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u04_at_s3_base/webp_lossless.webp",
+          "sha256": "58c5b395598f04ff042a9aa5363a1621a0f99c214ca0c58666ac585bfa75f4bd",
+          "bytes": 619712,
+          "saved_bytes": 376971,
+          "saved_percent": 37.8226,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:15:53.340263+00:00",
+          "finished_at": "2026-10-17T09:16:02.829184+00:00",
+          "elapsed_seconds": 9.489,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:02.830052+00:00",
+      "elapsed_seconds": 11.692
+    },
+    {
+      "asset_id": "tex_u03_shop_05_body",
+      "source": "deliverables/art/MINIGAME-ART-OPT-BATCH-20261017-ART/v0.2/exports/tex_u03_shop_05_body.png",
+      "source_sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+      "source_bytes": 851634,
+      "started_at": "2026-10-17T09:16:02.849476+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/reference.png",
+        "sha256": "520918abbfe180f0c66ccc1584f12e27c684057e73599de4e011e2934bdf9ad1",
+        "bytes": 851634
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/png_lossless.png",
+          "sha256": "a166631850df1645fce2e5c92deedb492770650a319db763068be115345b8326",
+          "bytes": 808111,
+          "saved_bytes": 43523,
+          "saved_percent": 5.1105,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:02.851559+00:00",
+          "finished_at": "2026-10-17T09:16:03.625900+00:00",
+          "elapsed_seconds": 0.774,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/tex_u03_shop_05_body/webp_lossless.webp",
+          "sha256": "eff41f4d7980bca232e328313603cf479c43c2d827780751dc00adab88c8db01",
+          "bytes": 628964,
+          "saved_bytes": 222670,
+          "saved_percent": 26.1462,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:03.626847+00:00",
+          "finished_at": "2026-10-17T09:16:19.885770+00:00",
+          "elapsed_seconds": 16.259,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:19.886772+00:00",
+      "elapsed_seconds": 17.038
+    },
+    {
+      "asset_id": "U05_ART_FONT",
+      "source": "deliverables/art/U05-B-COMPONENT-ASSETS-20261014/v0.2/exports/U05_ART_FONT.png",
+      "source_sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+      "source_bytes": 474372,
+      "started_at": "2026-10-17T09:16:19.910390+00:00",
+      "reference": {
+        "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/reference.png",
+        "sha256": "b1afe3e4ebb623f97c9c4bb87600075476bab8421531212ad08e9cee07efeb41",
+        "bytes": 474372
+      },
+      "candidates": [
+        {
+          "kind": "png_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/png_lossless.png",
+          "sha256": "e2b749a9318d2fd80839b042422abb2345346807aa453a215f2a1f70991c9193",
+          "bytes": 467239,
+          "saved_bytes": 7133,
+          "saved_percent": 1.5037,
+          "parameters": "Pillow 11.3.0 RGBA8; PNG optimize=True compress_level=9",
+          "started_at": "2026-10-17T09:16:19.912075+00:00",
+          "finished_at": "2026-10-17T09:16:21.350175+00:00",
+          "elapsed_seconds": 1.438,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        },
+        {
+          "kind": "webp_lossless",
+          "path": "deliverables/art/MINIGAME-ART-OPT-NEXT-20261017-ART-SAMPLES/v0.1/samples/U05_ART_FONT/webp_lossless.webp",
+          "sha256": "bd18483d3f694803487da8c27526ae74893623e5a178e716a4db46a8b963ca9a",
+          "bytes": 282986,
+          "saved_bytes": 191386,
+          "saved_percent": 40.3451,
+          "parameters": "cwebp 1.5.0 -lossless -exact -q 100 -m 6 -metadata icc; dwebp 1.5.0 -pam",
+          "started_at": "2026-10-17T09:16:21.350934+00:00",
+          "finished_at": "2026-10-17T09:16:32.096190+00:00",
+          "elapsed_seconds": 10.745,
+          "pixel_result": "PASS",
+          "benefit_result": "PASS"
+        }
+      ],
+      "finished_at": "2026-10-17T09:16:32.097561+00:00",
+      "elapsed_seconds": 12.187
+    }
+  ]
+}

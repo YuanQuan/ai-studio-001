@@ -1,0 +1,35 @@
+{
+  "task_id": "MINIGAME-ART-OPT-NEXT-20261017-QA",
+  "owner": "qa",
+  "summary": "v0.2修订：区分U00 cover/U01 contain；补真实受控入口、冻结副本与SHA、采样缺口和准确矩阵路径；未执行测试。",
+  "artifacts": [
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/TEST_PLAN.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/CLIENT_TEST_CASES.md",
+    "deliverables/qa/MINIGAME-ART-OPT-NEXT-20261017-QA/v0.2/ENVIRONMENT_INVENTORY.json"
+  ],
+  "acceptance_results": [
+    {
+      "criterion": "引用准确获批实现/视觉/Tech/UI输入及范围，Owner证据只作已有线索不转记QA通过。",
+      "result": "PASS",
+      "evidence": "TEST_PLAN冻结身份及历史证据边界。"
+    },
+    {
+      "criterion": "覆盖目标分辨率/加载释放/动作店铺对话奶茶/视觉及性能包体，区分可测环境与NOT_TESTED/平台依赖；无Server变更不虚构Server用例。",
+      "result": "PASS",
+      "evidence": "CLIENT_TEST_CASES F01-F15/R01-R03分阶段；环境盘点及采样缺口。"
+    },
+    {
+      "criterion": "计划和用例可复核含步骤/期望/证据/优先级，正式执行待该具体TEST_PLAN获批，不索要假定硬件或虚构测试报告。",
+      "result": "PASS",
+      "evidence": "TEST_PLAN v0.2入口、SHA、输入输出、步骤期望和门禁；本轮0执行，无报告。"
+    }
+  ],
+  "assumptions": [
+    "固定Web为FUNCTIONAL；RELEASE另锁平台设备范围。"
+  ],
+  "risks": [
+    "性能工具和适用预算待Review明确，必要指标缺失不得整体PASS。",
+    "需Tech Review与用户批准后执行。"
+  ],
+  "status": "READY_FOR_REVIEW"
+}
