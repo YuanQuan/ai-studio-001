@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-18T09:51:19.443239+08:00",
+  "repository": "YuanQuan/ai-studio-001",
+  "branch": "main",
+  "implementation_commit": "59c68ac3003db1dec6f91b2c71973b4dd114f8fb",
+  "previous_head": "6257838dd2db867a54e2b6988e344edf8ed38fe7",
+  "push": {
+    "command": "git push origin main",
+    "exit_code": 0,
+    "result": "6257838d..59c68ac3 main -> main"
+  },
+  "scope": {
+    "staged_files": 670,
+    "unexpected_paths": [],
+    "frozen_identity_files": 634,
+    "staged_frozen_mismatches": [],
+    "shared_files": "seven files, only this cycle marker blocks",
+    "raw_creator_logs": "three explicitly force-added evidence logs, original bytes retained"
+  },
+  "checks": {
+    "schemas": 24,
+    "schema_errors": 0,
+    "required_or_criteria_errors": 0,
+    "diff_check": "PASS excluding original raw .log CRLF",
+    "secret_scan": "110 text evidence/task files, heuristic no potential secret paths"
+  },
+  "preserved": "other tasks/package.json and shared document changes remain unstaged; no branch/history rewrite",
+  "approval_scope": "USER_REVIEW, not DONE or overall QA/release pass",
+  "note": "本回执在主要推送成功后单独提交；不将回执提交自身循环写回，也不从跨日观察推算执行耗时。"
+}
