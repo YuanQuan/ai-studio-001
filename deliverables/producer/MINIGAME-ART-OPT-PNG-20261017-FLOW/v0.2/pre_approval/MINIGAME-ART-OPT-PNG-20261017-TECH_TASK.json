@@ -1,0 +1,40 @@
+{
+  "id": "MINIGAME-ART-OPT-PNG-20261017-TECH",
+  "title": "六PNG生产接入与QA证据独立评审",
+  "type": "tech",
+  "owner": "tech_lead",
+  "parent": "MINIGAME-ART-OPT-PNG-20261017",
+  "objective": "独立评审PNG生产路径、稳定元数据、实际native产物及Client和QA证据，不制作图片或采用WebP。",
+  "inputs": [
+    "tasks/MINIGAME-ART-OPT-PNG-20261017-CLIENT/TASK.json",
+    "tasks/MINIGAME-ART-OPT-PNG-20261017-QA/TASK.json",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/USER_AUTHORIZATION.json",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/QA_FROZEN_COPY.json",
+    "deliverables/client/MINIGAME-ART-OPT-INTEGRATE-CLIENT-20261017/v0.8/BUILD_MANIFEST.json",
+    "deliverables/master/MINIGAME-ART-OPT-PNG-20261017/v0.1/FONT_PUNCTUATION_FIX_AUTHORIZATION.json"
+  ],
+  "deliverables": [
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.md",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/REVIEW.json",
+    "deliverables/tech_lead/MINIGAME-ART-OPT-PNG-20261017-TECH/v0.3/DELIVERABLE.json"
+  ],
+  "acceptance": [
+    "独立绑定六件获批PNG与源文件、生成路径、运行元数据及实际产物，保护其他任务。",
+    "按准确证据边界评审Client CLI、运行与QA结果，明确缺失的平台和性能检查。",
+    "给出可执行发现及评审范围，不重画、不采用WebP、不新增依赖。"
+  ],
+  "dependencies": [],
+  "status": "USER_REVIEW",
+  "approval": "REVIEW",
+  "notes": [
+    "Read role five files and applicable rules; do not delegate or Git.",
+    "Document/review temporary model gpt-6.1-sol low authorized for this optimization round.",
+    "Write own deliverables and Task only; start with real current path/input diagnosis, final review only once delivery exists.",
+    "首阶段已实际完成六输入/SHA/尺寸/UUID诊断及工具审查，证据见v0.1 REVIEW；最终Review待Client/QA交付后Master followup。",
+    "Master final review revision v0.2; preserve first-round v0.1 CHANGES_REQUESTED and findings; actual new build evidence pending.",
+    "Master authorizes exact single punctuation fix in milk_tea_lab.ts:1007 from U+FF01 to existing BMFont ASCII33; persist exact source/production delta, preserve original QA baseline, retest complete-three-cups on new output.",
+    "Master final review revision v0.3 preserves interim v0.1/v0.2 findings and evidence; actual final outputs now available under v05.",
+    "v0.3最终独立技术Review APPROVED限定生产接入及已提交证据准确范围；QA v0.2四件已锁SHA，203索引吻合。用户审批与Master接受未代替，未DONE。",
+    "2026-10-17T22:44:50+08:00 本轮634精确身份及交付核验完成，USER_REVIEW仅确认准确报告/接入版本，不等于整体QA PASS/平台发布。"
+  ]
+}
